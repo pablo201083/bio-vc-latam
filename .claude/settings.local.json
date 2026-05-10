@@ -10,7 +10,10 @@
       "Bash(git branch *)",
       "Bash(git add *)",
       "Bash(git commit -m ' *)",
-      "Bash(where python *)"
+      "Bash(where python *)",
+      "Bash(python -m venv .venv)",
+      "Bash(.venv/Scripts/python.exe -m pip install --upgrade pip)",
+      "Bash(.venv/Scripts/python.exe db/import_csvs.py)"
     ]
   }
 }

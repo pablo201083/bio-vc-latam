@@ -30,6 +30,11 @@ import time
 from datetime import datetime, timezone
 from typing import Any
 
+# Forzar stdout en UTF-8 para Windows (la consola cp1252 no soporta → ñ é etc.)
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+
 # Asegurar que src/ es importable cuando se ejecuta desde la raíz
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
@@ -123,12 +128,19 @@ SX_NUMERIC = {"data_quality_score", "taxonomy_confidence"}
 
 
 def import_master_dataset(conn: sqlite3.Connection) -> dict[str, int]:
-    """Importa startup_master_dataset.csv. Retorna conteos por tabla."""
+    """Importa startup_master_dataset.csv. Retorna conteos por tabla.
+
+    Si la entidad ya existe (ej: insertada en paso anterior por canonical_entities),
+    UPDATE manteniendo el slug existente. Si no existe, INSERT con slug único.
+    Esto evita que INSERT OR REPLACE borre filas por colisión de slug.
+    """
     rows = load_csv(MASTER_DATASET_CSV)
     print(f"  Cargado: {len(rows)} filas desde {MASTER_DATASET_CSV.name}")
 
-    counts = {"entities": 0, "startups": 0, "sources": 0, "startup_extended": 0}
+    counts = {"entities_inserted": 0, "entities_updated": 0, "startups": 0,
+              "sources": 0, "startup_extended": 0}
     cur = conn.cursor()
+    used_slugs: set[str] = set()
 
     for row in rows:
         startup_id = clean(row.get("startup_id"))
@@ -141,18 +153,35 @@ def import_master_dataset(conn: sqlite3.Connection) -> dict[str, int]:
         scope_decision = clean(row.get("scope_decision"))
         status = scope_to_entity_status(scope_decision)
         summary = repair_mojibake(row.get("startup_summary_v1"))
-        slug = slugify(startup_name)
 
-        # entities (INSERT OR REPLACE — master_dataset es fuente de verdad)
-        cur.execute(
-            """INSERT OR REPLACE INTO entities
-               (entity_id, entity_type, canonical_name, slug, short_description,
-                country_code, website, status, last_verified_at)
-               VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)""",
-            (startup_id, "startup", startup_name, slug, summary[:500] if summary else None,
-             country, website, status, clean(row.get("last_reviewed_at")) or None),
-        )
-        counts["entities"] += 1
+        existing = cur.execute(
+            "SELECT slug FROM entities WHERE entity_id = ?", (startup_id,)
+        ).fetchone()
+        if existing:
+            # UPDATE manteniendo slug existente
+            cur.execute(
+                """UPDATE entities
+                   SET entity_type = ?, canonical_name = ?, short_description = ?,
+                       country_code = ?, website = ?, status = ?, last_verified_at = ?
+                   WHERE entity_id = ?""",
+                ("startup", startup_name, summary[:500] if summary else None,
+                 country, website, status,
+                 clean(row.get("last_reviewed_at")) or None, startup_id),
+            )
+            counts["entities_updated"] += 1
+        else:
+            slug = _unique_slug(cur, slugify(startup_name), used_slugs)
+            cur.execute(
+                """INSERT INTO entities
+                   (entity_id, entity_type, canonical_name, slug, short_description,
+                    country_code, website, status, last_verified_at)
+                   VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+                (startup_id, "startup", startup_name, slug,
+                 summary[:500] if summary else None,
+                 country, website, status,
+                 clean(row.get("last_reviewed_at")) or None),
+            )
+            counts["entities_inserted"] += 1
 
         # startups (schema base)
         cur.execute(
@@ -224,6 +253,21 @@ def import_master_dataset(conn: sqlite3.Connection) -> dict[str, int]:
 # canonical_entities.csv → entities (UPSERT) + stubs en investors/organizations
 # ---------------------------------------------------------------------------
 
+def _unique_slug(cur: sqlite3.Cursor, base: str, used: set[str]) -> str:
+    """Devuelve un slug único, agregando -2, -3, ... si colisiona con el set en memoria o la DB."""
+    if not base:
+        base = "entity"
+    candidate = base
+    n = 2
+    while candidate in used or cur.execute(
+        "SELECT 1 FROM entities WHERE slug = ?", (candidate,)
+    ).fetchone():
+        candidate = f"{base}-{n}"
+        n += 1
+    used.add(candidate)
+    return candidate
+
+
 def import_canonical_entities(conn: sqlite3.Connection) -> dict[str, int]:
     rows = load_csv(CANONICAL_ENTITIES_CSV)
     print(f"  Cargado: {len(rows)} filas desde {CANONICAL_ENTITIES_CSV.name}")
@@ -231,6 +275,7 @@ def import_canonical_entities(conn: sqlite3.Connection) -> dict[str, int]:
     counts = {"entities_inserted": 0, "entities_skipped": 0, "investors": 0,
               "organizations": 0, "corporates": 0, "esos": 0}
     cur = conn.cursor()
+    used_slugs: set[str] = set()
 
     for row in rows:
         entity_id = clean(row.get("entity_id"))
@@ -246,7 +291,8 @@ def import_canonical_entities(conn: sqlite3.Connection) -> dict[str, int]:
         if existing:
             counts["entities_skipped"] += 1
         else:
-            slug = clean(row.get("slug")) or slugify(canonical_name)
+            raw_slug = clean(row.get("slug")) or slugify(canonical_name)
+            slug = _unique_slug(cur, raw_slug, used_slugs)
             cur.execute(
                 """INSERT INTO entities (entity_id, entity_type, canonical_name, slug, status)
                    VALUES (?, ?, ?, ?, ?)""",
@@ -363,6 +409,16 @@ def import_investment_edges(conn: sqlite3.Connection) -> dict[str, int]:
         notes = repair_mojibake(row.get("notes"))[:1000]
         relation_type = clean(row.get("relation_type_raw")) or None
 
+        # source_file del CSV es una URL pública, no un FK válido a sources.source_id.
+        # Lo guardamos como nota junto a las otras notes para no perder la trazabilidad.
+        source_file = clean(row.get("source_file"))
+        combined_notes_parts = []
+        if source_file:
+            combined_notes_parts.append(f"source: {source_file}")
+        if notes:
+            combined_notes_parts.append(notes)
+        combined_notes = " | ".join(combined_notes_parts) if combined_notes_parts else None
+
         cur.execute(
             """INSERT OR REPLACE INTO investment_edges
                (investment_id, investor_id, startup_id, round_name, round_stage,
@@ -376,8 +432,8 @@ def import_investment_edges(conn: sqlite3.Connection) -> dict[str, int]:
                 clean(row.get("direction_status")) or None,
                 None,  # announced_date no está en canonical edges actuales
                 to_float(row.get("confidence_score")),
-                clean(row.get("source_file")) or None,
-                notes or None,
+                None,  # source_id: FK válido sólo cuando exista una fila en sources
+                combined_notes,
             ),
         )
         counts["inserted"] += 1
@@ -402,15 +458,52 @@ def post_import_validation(conn: sqlite3.Connection) -> dict[str, Any]:
            WHERE sx.scope_decision = 'include' AND (e.website IS NULL OR e.website = '')"""
     ).fetchone()[0]
 
-    # 2. Nombres normalizados duplicados
-    # SQLite no tiene la función normalize_key — la simulamos con LOWER + replace
-    # (la dedupe real ya fue hecha por build_canonical_layer; esto es un sanity check)
-    duplicates = cur.execute(
-        """SELECT lower(canonical_name) AS k, count(*) c
-           FROM entities GROUP BY k HAVING c > 1"""
+    # 2. Nombres con normalize_key duplicado → candidatos a merge editorial.
+    # Esto SUPERA el dedupe del canonical layer: detecta entity_id que el canonical
+    # dejó como separados (ej: "Agrojusto" en canonical_entities vs "agrojusto"
+    # en master_dataset), pero que claramente refieren a la misma entidad.
+    # Se exporta a quality/duplicate_canonical_name_candidates.csv para revisión humana.
+    conn.create_function(
+        "norm_key",
+        1,
+        lambda s: __import__("re").sub(
+            r"[^a-z0-9]+",
+            "",
+            "".join(
+                ch for ch in __import__("unicodedata").normalize("NFD", (s or "").lower())
+                if __import__("unicodedata").category(ch) != "Mn"
+            ),
+        ),
+    )
+    duplicate_groups = cur.execute(
+        """SELECT norm_key(canonical_name) AS k,
+                  count(*) AS c,
+                  GROUP_CONCAT(entity_id, '|') AS ids,
+                  GROUP_CONCAT(canonical_name, '|') AS names,
+                  GROUP_CONCAT(entity_type, '|') AS types
+           FROM entities WHERE canonical_name IS NOT NULL AND canonical_name != ''
+           GROUP BY k HAVING c > 1
+           ORDER BY c DESC, k"""
     ).fetchall()
-    results["duplicate_names_count"] = len(duplicates)
-    results["duplicate_names_sample"] = duplicates[:5]
+    results["duplicate_names_count"] = len(duplicate_groups)
+    results["duplicate_names_sample"] = [(g[0], g[1]) for g in duplicate_groups[:5]]
+
+    # Exportar a CSV para revisión editorial
+    if duplicate_groups:
+        from src.utils import write_csv  # noqa
+        dup_rows = []
+        for k, c, ids, names, types in duplicate_groups:
+            dup_rows.append({
+                "normalized_key": k,
+                "count": c,
+                "entity_ids": ids,
+                "canonical_names": names,
+                "entity_types": types,
+            })
+        dup_csv_path = ROOT / "quality" / "duplicate_canonical_name_candidates.csv"
+        write_csv(dup_csv_path, dup_rows,
+                  fieldnames=["normalized_key", "count", "entity_ids", "canonical_names", "entity_types"])
+        results["duplicate_names_csv"] = str(dup_csv_path.relative_to(ROOT))
 
     # 3. Edges a entidades inexistentes (FK check blando)
     results["edges_to_missing_entities"] = cur.execute(
@@ -463,8 +556,9 @@ def main() -> int:
 
     print("\n[3/5] Importando startup_master_dataset.csv...")
     md_counts = import_master_dataset(conn)
-    print(f"  → entities: {md_counts['entities']}, startups: {md_counts['startups']}, "
-          f"sources: {md_counts['sources']}, startup_extended: {md_counts['startup_extended']}")
+    print(f"  → entities inserted: {md_counts['entities_inserted']}, updated: {md_counts['entities_updated']}")
+    print(f"  → startups: {md_counts['startups']}, sources: {md_counts['sources']}, "
+          f"startup_extended: {md_counts['startup_extended']}")
 
     print("\n[4/5] Importando canonical_aliases.csv...")
     alias_count = import_aliases(conn)
@@ -478,14 +572,14 @@ def main() -> int:
     print("\n[5/5] Validaciones post-import...")
     validation = post_import_validation(conn)
     print(f"  include startups sin source_url:    {validation['include_without_source']}")
-    print(f"  nombres canonicos duplicados:       {validation['duplicate_names_count']}")
+    print(f"  candidatos a merge (norm_key dup):   {validation['duplicate_names_count']}")
     print(f"  edges a entidades inexistentes:     {validation['edges_to_missing_entities']}")
     print(f"  aliases a entidades inexistentes:   {validation['aliases_to_missing_entities']}")
     print(f"  FK violations (PRAGMA check):       {validation['fk_violations']}")
     if validation["fk_violations_sample"]:
         print(f"  FK sample: {validation['fk_violations_sample']}")
-    if validation["duplicate_names_sample"]:
-        print(f"  Dup names sample: {validation['duplicate_names_sample']}")
+    if validation.get("duplicate_names_csv"):
+        print(f"  → revisión editorial: {validation['duplicate_names_csv']}")
 
     # Activar FK enforcement para futuro uso (validar que el estado actual es válido)
     conn.execute("PRAGMA foreign_keys = ON")
