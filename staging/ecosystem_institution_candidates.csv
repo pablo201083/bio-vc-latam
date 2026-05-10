@@ -1,0 +1,27 @@
+entity_id,label,entity_type,source_basis,notes
+uba,Universidad de Buenos Aires,university,rich_graph_extracted,Prominent hub in reference image and extracted graph strings
+unl,Universidad Nacional del Litoral,university,rich_graph_extracted,Present in reference image and extracted graph strings
+unr,Universidad Nacional de Rosario,university,rich_graph_extracted,Present in reference image and extracted graph strings
+unc,Universidad Nacional de Córdoba,university,rich_graph_extracted,Present in reference image and extracted graph strings
+uncuyo,Universidad Nacional de Cuyo,university,rich_graph_extracted,Present in reference image and extracted graph strings
+unt,Universidad Nacional de Tucumán,university,rich_graph_extracted,Extracted from graph strings
+unlp,Universidad Nacional de La Plata,university,rich_graph_extracted,Present in reference image
+itba,ITBA,university,rich_graph_extracted,Extracted as ITBA (Engineering)
+instituto_leloir,Fundación Instituto Leloir,research_institute,rich_graph_extracted,Extracted as Instituto Leloir
+conicet,CONICET,research_institute,rich_graph_extracted,Extracted directly and implied in several institutes
+inta,INTA Castelar,research_institute,rich_graph_extracted,Extracted as INTA Castelar
+ifir,IFIR (Instituto de Física Rosario),research_institute,rich_graph_extracted,Extracted from graph strings
+iprobyq,IPROBYQ (CONICET/UNR),research_institute,rich_graph_extracted,Extracted from graph strings
+ial,IAL (CONICET-UNL),research_institute,rich_graph_extracted,Extracted from graph strings
+iquibicen,IQUIBICEN,research_institute,rich_graph_extracted,Extracted from graph strings
+institut_pasteur_montevideo,Institut Pasteur Montevideo,research_institute,rich_graph_extracted,Extracted from graph strings
+udesa,UdeSA,university,rich_graph_extracted,Extracted as UDeSA (Business)
+iae,IAE Business School,university,rich_graph_extracted,Extracted from graph strings
+ucema,UCEMA,university,rich_graph_extracted,Extracted from graph strings
+draper_university,Draper University,accelerator,rich_graph_extracted,Extracted from graph strings
+techstars,Techstars,accelerator,rich_graph_extracted,Extracted from graph strings
+ycombinator,Y Combinator,accelerator,rich_graph_extracted,Extracted from graph strings
+fivehundred,500 Startups,accelerator,rich_graph_extracted,Extracted from graph strings
+wayra,Wayra Hispam,accelerator,rich_graph_extracted,Extracted from graph strings
+brinc,Brinc,accelerator,rich_graph_extracted,Extracted from graph strings
+indiebio,IndieBio,accelerator,canonical_and_rich_graph,Investor/accelerator from existing graph plus extracted strings

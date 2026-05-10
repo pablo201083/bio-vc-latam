@@ -1,0 +1,11 @@
+dimension,field_name,description,example_values,role_in_product
+Emergent Theme,emergent_theme,"Cluster emergente derivado del lenguaje de startups","programmable biomaterials; microbial ag inputs; continuous biomanufacturing",Primary theme view similar to CFT
+Market Label,market_label,"Nombre legible alineado con lenguaje de fondos y market actors","bioindustry; food and agriculture; materials; deep biotech",Readable legend and investor-facing taxonomy
+Transition Function,transition_function,"Que transicion material o productiva habilita la startup","fossil-to-bio inputs; extractive-to-regenerative agriculture; waste-to-feedstock valorization",Narrative and strategy lens
+Technical Stack,technical_stack,"Mecanismo tecnico principal","precision fermentation; synthetic biology; industrial fermentation; enzyme engineering",Technical navigation and clustering support
+Output Class,output_class,"Tipo de producto o servicio","biomaterials; ag inputs; food ingredients; manufacturing platform",Market-facing comparability
+Feedstock,feedstock,"Materia prima o sustrato principal","ag residues; CO2; biomass; minerals; side streams",Material transition and supply-chain lens
+Industry Destination,industry_destination,"Industria o uso final objetivo","agriculture; food; textiles; packaging; chemicals; health",Downstream market mapping
+Market Interface,market_interface,"Como entra al mercado","ingredient supplier; full-stack product; platform; licensing; hardware-enabled bio",Business-model lens
+Maturity Path,maturity_path,"Estado de traduccion ciencia -> mercado","research-heavy; pilot; validation; scale-up; commercial deployment",Stage and ecosystem design lens
+Evidence Bundle,evidence_bundle,"Conjunto de textos y fuentes que justifican clasificacion","website about; crunchbase description; linkedin overview",Auditability and human review

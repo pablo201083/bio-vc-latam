@@ -1,0 +1,1419 @@
+﻿{
+    "generated_at":  "2026-05-01T20:14:27",
+    "description":  "Subgrafo bipartito de inversores top y startups conectadas",
+    "nodes":  [
+                  {
+                      "id":  "GridX",
+                      "label":  "GridX",
+                      "type":  "investor",
+                      "degree":  181,
+                      "source_presence":  "nodes_csv|graphml",
+                      "confidence_score":  "0.9"
+                  },
+                  {
+                      "id":  "SF500",
+                      "label":  "SF500",
+                      "type":  "investor",
+                      "degree":  48,
+                      "source_presence":  "nodes_csv|graphml",
+                      "confidence_score":  "0.9"
+                  },
+                  {
+                      "id":  "DraperCygnus",
+                      "label":  "DraperCygnus",
+                      "type":  "investor",
+                      "degree":  41,
+                      "source_presence":  "nodes_csv",
+                      "confidence_score":  "0.6"
+                  },
+                  {
+                      "id":  "The Ganesha Lab",
+                      "label":  "The Ganesha Lab",
+                      "type":  "investor",
+                      "degree":  35,
+                      "source_presence":  "nodes_csv",
+                      "confidence_score":  "0.6"
+                  },
+                  {
+                      "id":  "AIR Capital",
+                      "label":  "AIR Capital",
+                      "type":  "investor",
+                      "degree":  30,
+                      "source_presence":  "nodes_csv",
+                      "confidence_score":  "0.6"
+                  },
+                  {
+                      "id":  "CITES",
+                      "label":  "CITES",
+                      "type":  "investor",
+                      "degree":  27,
+                      "source_presence":  "nodes_csv|graphml",
+                      "confidence_score":  "0.9"
+                  },
+                  {
+                      "id":  "sp_ventures",
+                      "label":  "SP Ventures",
+                      "type":  "investor",
+                      "degree":  26,
+                      "source_presence":  "graphml",
+                      "confidence_score":  "0.6"
+                  },
+                  {
+                      "id":  "Antom",
+                      "label":  "Antom",
+                      "type":  "investor",
+                      "degree":  21,
+                      "source_presence":  "nodes_csv|graphml",
+                      "confidence_score":  "0.9"
+                  },
+                  {
+                      "id":  "kamay_ventures",
+                      "label":  "Kamay Ventures",
+                      "type":  "investor",
+                      "degree":  19,
+                      "source_presence":  "graphml",
+                      "confidence_score":  "0.6"
+                  },
+                  {
+                      "id":  "SOSV_IndieBio",
+                      "label":  "SOSV_IndieBio",
+                      "type":  "investor",
+                      "degree":  16,
+                      "source_presence":  "nodes_csv",
+                      "confidence_score":  "0.6"
+                  },
+                  {
+                      "id":  "inventure",
+                      "label":  "Inventure",
+                      "type":  "investor",
+                      "degree":  12,
+                      "source_presence":  "graphml",
+                      "confidence_score":  "0.6"
+                  },
+                  {
+                      "id":  "the_yield_lab_latam",
+                      "label":  "The Yield Lab LATAM",
+                      "type":  "investor",
+                      "degree":  11,
+                      "source_presence":  "graphml",
+                      "confidence_score":  "0.6"
+                  },
+                  {
+                      "id":  "argenTAG",
+                      "label":  "argenTAG",
+                      "type":  "startup",
+                      "degree":  6,
+                      "source_presence":  "nodes_csv|graphml",
+                      "confidence_score":  "0.9"
+                  },
+                  {
+                      "id":  "Satellites On Fire",
+                      "label":  "Satellites On Fire",
+                      "type":  "startup",
+                      "degree":  7,
+                      "source_presence":  "nodes_csv",
+                      "confidence_score":  "0.6"
+                  },
+                  {
+                      "id":  "Onco Precision",
+                      "label":  "Onco Precision",
+                      "type":  "startup",
+                      "degree":  5,
+                      "source_presence":  "nodes_csv",
+                      "confidence_score":  "0.6"
+                  },
+                  {
+                      "id":  "Puna Bio",
+                      "label":  "Puna Bio",
+                      "type":  "startup",
+                      "degree":  4,
+                      "source_presence":  "nodes_csv",
+                      "confidence_score":  "0.6"
+                  },
+                  {
+                      "id":  "UNIBAIO",
+                      "label":  "UNIBAIO",
+                      "type":  "startup",
+                      "degree":  4,
+                      "source_presence":  "nodes_csv|graphml",
+                      "confidence_score":  "0.9"
+                  },
+                  {
+                      "id":  "Sylvarum",
+                      "label":  "Sylvarum",
+                      "type":  "startup",
+                      "degree":  3,
+                      "source_presence":  "nodes_csv|graphml",
+                      "confidence_score":  "0.9"
+                  },
+                  {
+                      "id":  "stamm",
+                      "label":  "StÃ¤mm",
+                      "type":  "startup",
+                      "degree":  3,
+                      "source_presence":  "graphml",
+                      "confidence_score":  "0.6"
+                  },
+                  {
+                      "id":  "Oncoliq",
+                      "label":  "Oncoliq",
+                      "type":  "startup",
+                      "degree":  3,
+                      "source_presence":  "nodes_csv|graphml",
+                      "confidence_score":  "0.9"
+                  },
+                  {
+                      "id":  "Limay Biosciences",
+                      "label":  "Limay Biosciences",
+                      "type":  "startup",
+                      "degree":  3,
+                      "source_presence":  "nodes_csv",
+                      "confidence_score":  "0.6"
+                  },
+                  {
+                      "id":  "Skyloom",
+                      "label":  "Skyloom",
+                      "type":  "startup",
+                      "degree":  4,
+                      "source_presence":  "nodes_csv|graphml",
+                      "confidence_score":  "0.9"
+                  },
+                  {
+                      "id":  "Nat4Bio",
+                      "label":  "Nat4Bio",
+                      "type":  "startup",
+                      "degree":  3,
+                      "source_presence":  "nodes_csv|graphml",
+                      "confidence_score":  "0.9"
+                  },
+                  {
+                      "id":  "michroma",
+                      "label":  "michroma",
+                      "type":  "startup",
+                      "degree":  3,
+                      "source_presence":  "nodes_csv|graphml",
+                      "confidence_score":  "0.9"
+                  },
+                  {
+                      "id":  "WerkénVac",
+                      "label":  "WerkénVac",
+                      "type":  "startup",
+                      "degree":  3,
+                      "source_presence":  "nodes_csv",
+                      "confidence_score":  "0.6"
+                  },
+                  {
+                      "id":  "Nanotransfer",
+                      "label":  "Nanotransfer",
+                      "type":  "startup",
+                      "degree":  3,
+                      "source_presence":  "nodes_csv|graphml",
+                      "confidence_score":  "0.9"
+                  },
+                  {
+                      "id":  "microgenesis",
+                      "label":  "microgenesis",
+                      "type":  "startup",
+                      "degree":  3,
+                      "source_presence":  "nodes_csv|graphml",
+                      "confidence_score":  "0.9"
+                  },
+                  {
+                      "id":  "Kigui",
+                      "label":  "Kigui",
+                      "type":  "startup",
+                      "degree":  3,
+                      "source_presence":  "nodes_csv|graphml",
+                      "confidence_score":  "0.9"
+                  },
+                  {
+                      "id":  "SiloReal",
+                      "label":  "SiloReal",
+                      "type":  "startup",
+                      "degree":  3,
+                      "source_presence":  "nodes_csv|graphml",
+                      "confidence_score":  "0.9"
+                  },
+                  {
+                      "id":  "Fungi Life",
+                      "label":  "Fungi Life",
+                      "type":  "startup",
+                      "degree":  3,
+                      "source_presence":  "nodes_csv",
+                      "confidence_score":  "0.6"
+                  },
+                  {
+                      "id":  "Kilimo",
+                      "label":  "Kilimo",
+                      "type":  "startup",
+                      "degree":  4,
+                      "source_presence":  "nodes_csv|graphml",
+                      "confidence_score":  "0.9"
+                  },
+                  {
+                      "id":  "Novo Space",
+                      "label":  "Novo Space",
+                      "type":  "startup",
+                      "degree":  3,
+                      "source_presence":  "nodes_csv",
+                      "confidence_score":  "0.6"
+                  },
+                  {
+                      "id":  "Aquit",
+                      "label":  "Aquit",
+                      "type":  "startup",
+                      "degree":  3,
+                      "source_presence":  "nodes_csv|graphml",
+                      "confidence_score":  "0.9"
+                  },
+                  {
+                      "id":  "Beeflow",
+                      "label":  "Beeflow",
+                      "type":  "startup",
+                      "degree":  3,
+                      "source_presence":  "nodes_csv|graphml",
+                      "confidence_score":  "0.9"
+                  },
+                  {
+                      "id":  "TELL",
+                      "label":  "TELL",
+                      "type":  "startup",
+                      "degree":  3,
+                      "source_presence":  "nodes_csv|graphml",
+                      "confidence_score":  "0.9"
+                  },
+                  {
+                      "id":  "Epiliquid",
+                      "label":  "Epiliquid",
+                      "type":  "startup",
+                      "degree":  3,
+                      "source_presence":  "nodes_csv|graphml",
+                      "confidence_score":  "0.9"
+                  },
+                  {
+                      "id":  "Ayuvant",
+                      "label":  "Ayuvant",
+                      "type":  "startup",
+                      "degree":  3,
+                      "source_presence":  "nodes_csv|graphml",
+                      "confidence_score":  "0.9"
+                  },
+                  {
+                      "id":  "Lemon",
+                      "label":  "Lemon",
+                      "type":  "startup",
+                      "degree":  3,
+                      "source_presence":  "nodes_csv|graphml",
+                      "confidence_score":  "0.9"
+                  },
+                  {
+                      "id":  "0",
+                      "label":  "Stämm",
+                      "type":  "startup",
+                      "degree":  3,
+                      "source_presence":  "nodes_csv",
+                      "confidence_score":  "0.6"
+                  },
+                  {
+                      "id":  "GlycoX",
+                      "label":  "GlycoX",
+                      "type":  "startup",
+                      "degree":  2,
+                      "source_presence":  "nodes_csv|graphml",
+                      "confidence_score":  "0.9"
+                  },
+                  {
+                      "id":  "HIAMET",
+                      "label":  "HIAMET",
+                      "type":  "startup",
+                      "degree":  2,
+                      "source_presence":  "nodes_csv",
+                      "confidence_score":  "0.6"
+                  },
+                  {
+                      "id":  "elytron_biotech",
+                      "label":  "Elytron Biotech",
+                      "type":  "startup",
+                      "degree":  2,
+                      "source_presence":  "graphml",
+                      "confidence_score":  "0.6"
+                  },
+                  {
+                      "id":  "Geoprot",
+                      "label":  "Geoprot",
+                      "type":  "startup",
+                      "degree":  2,
+                      "source_presence":  "nodes_csv|graphml",
+                      "confidence_score":  "0.9"
+                  },
+                  {
+                      "id":  "Gisens Biotech",
+                      "label":  "Gisens Biotech",
+                      "type":  "startup",
+                      "degree":  2,
+                      "source_presence":  "nodes_csv",
+                      "confidence_score":  "0.6"
+                  },
+                  {
+                      "id":  "MicroIN",
+                      "label":  "MicroIN",
+                      "type":  "startup",
+                      "degree":  2,
+                      "source_presence":  "nodes_csv|graphml",
+                      "confidence_score":  "0.9"
+                  },
+                  {
+                      "id":  "Migma",
+                      "label":  "Migma",
+                      "type":  "startup",
+                      "degree":  2,
+                      "source_presence":  "nodes_csv|graphml",
+                      "confidence_score":  "0.9"
+                  },
+                  {
+                      "id":  "MZP",
+                      "label":  "MZP",
+                      "type":  "startup",
+                      "degree":  2,
+                      "source_presence":  "nodes_csv|graphml",
+                      "confidence_score":  "0.9"
+                  },
+                  {
+                      "id":  "Bioplastix",
+                      "label":  "Bioplastix",
+                      "type":  "startup",
+                      "degree":  2,
+                      "source_presence":  "nodes_csv|graphml",
+                      "confidence_score":  "0.9"
+                  },
+                  {
+                      "id":  "NanoInGreen",
+                      "label":  "NanoInGreen",
+                      "type":  "startup",
+                      "degree":  2,
+                      "source_presence":  "nodes_csv|graphml",
+                      "confidence_score":  "0.9"
+                  },
+                  {
+                      "id":  "Invitrall",
+                      "label":  "Invitrall",
+                      "type":  "startup",
+                      "degree":  2,
+                      "source_presence":  "nodes_csv|graphml",
+                      "confidence_score":  "0.9"
+                  },
+                  {
+                      "id":  "Bioeutectics",
+                      "label":  "Bioeutectics",
+                      "type":  "startup",
+                      "degree":  2,
+                      "source_presence":  "nodes_csv|graphml",
+                      "confidence_score":  "0.9"
+                  },
+                  {
+                      "id":  "Future Biome",
+                      "label":  "Future Biome",
+                      "type":  "startup",
+                      "degree":  2,
+                      "source_presence":  "nodes_csv",
+                      "confidence_score":  "0.6"
+                  },
+                  {
+                      "id":  "CellRep",
+                      "label":  "CellRep",
+                      "type":  "startup",
+                      "degree":  2,
+                      "source_presence":  "nodes_csv|graphml",
+                      "confidence_score":  "0.9"
+                  },
+                  {
+                      "id":  "caspr",
+                      "label":  "CASPR",
+                      "type":  "startup",
+                      "degree":  2,
+                      "source_presence":  "graphml",
+                      "confidence_score":  "0.6"
+                  },
+                  {
+                      "id":  "Caligenia",
+                      "label":  "Caligenia",
+                      "type":  "startup",
+                      "degree":  2,
+                      "source_presence":  "nodes_csv|graphml",
+                      "confidence_score":  "0.9"
+                  },
+                  {
+                      "id":  "Cryosmetics",
+                      "label":  "Cryosmetics",
+                      "type":  "startup",
+                      "degree":  2,
+                      "source_presence":  "nodes_csv|graphml",
+                      "confidence_score":  "0.9"
+                  },
+                  {
+                      "id":  "CyanoMin",
+                      "label":  "CyanoMin",
+                      "type":  "startup",
+                      "degree":  2,
+                      "source_presence":  "nodes_csv|graphml",
+                      "confidence_score":  "0.9"
+                  },
+                  {
+                      "id":  "Dogma Biotech",
+                      "label":  "Dogma Biotech",
+                      "type":  "startup",
+                      "degree":  2,
+                      "source_presence":  "nodes_csv",
+                      "confidence_score":  "0.6"
+                  },
+                  {
+                      "id":  "EINSTED",
+                      "label":  "EINSTED",
+                      "type":  "startup",
+                      "degree":  2,
+                      "source_presence":  "nodes_csv|graphml",
+                      "confidence_score":  "0.9"
+                  },
+                  {
+                      "id":  "ByBug",
+                      "label":  "ByBug",
+                      "type":  "startup",
+                      "degree":  2,
+                      "source_presence":  "nodes_csv|graphml",
+                      "confidence_score":  "0.9"
+                  }
+              ],
+    "edges":  [
+                  {
+                      "id":  "229",
+                      "source":  "AIR Capital",
+                      "target":  "0",
+                      "confidence_score":  "0.95",
+                      "source_file":  "edgeseco.csv"
+                  },
+                  {
+                      "id":  "135",
+                      "source":  "AIR Capital",
+                      "target":  "argenTAG",
+                      "confidence_score":  "0.95",
+                      "source_file":  "edgeseco.csv"
+                  },
+                  {
+                      "id":  "129",
+                      "source":  "AIR Capital",
+                      "target":  "Ayuvant",
+                      "confidence_score":  "0.95",
+                      "source_file":  "edgeseco.csv"
+                  },
+                  {
+                      "id":  "134",
+                      "source":  "AIR Capital",
+                      "target":  "Epiliquid",
+                      "confidence_score":  "0.95",
+                      "source_file":  "edgeseco.csv"
+                  },
+                  {
+                      "id":  "120",
+                      "source":  "AIR Capital",
+                      "target":  "Lemon",
+                      "confidence_score":  "0.95",
+                      "source_file":  "edgeseco.csv"
+                  },
+                  {
+                      "id":  "117",
+                      "source":  "AIR Capital",
+                      "target":  "Novo Space",
+                      "confidence_score":  "0.95",
+                      "source_file":  "edgeseco.csv"
+                  },
+                  {
+                      "id":  "139",
+                      "source":  "AIR Capital",
+                      "target":  "Onco Precision",
+                      "confidence_score":  "0.95",
+                      "source_file":  "edgeseco.csv"
+                  },
+                  {
+                      "id":  "131",
+                      "source":  "AIR Capital",
+                      "target":  "Oncoliq",
+                      "confidence_score":  "0.95",
+                      "source_file":  "edgeseco.csv"
+                  },
+                  {
+                      "id":  "125",
+                      "source":  "AIR Capital",
+                      "target":  "Puna Bio",
+                      "confidence_score":  "0.95",
+                      "source_file":  "edgeseco.csv"
+                  },
+                  {
+                      "id":  "138",
+                      "source":  "AIR Capital",
+                      "target":  "Satellites On Fire",
+                      "confidence_score":  "0.95",
+                      "source_file":  "edgeseco.csv"
+                  },
+                  {
+                      "id":  "121",
+                      "source":  "AIR Capital",
+                      "target":  "Skyloom",
+                      "confidence_score":  "0.95",
+                      "source_file":  "edgeseco.csv"
+                  },
+                  {
+                      "id":  "136",
+                      "source":  "AIR Capital",
+                      "target":  "Sylvarum",
+                      "confidence_score":  "0.95",
+                      "source_file":  "edgeseco.csv"
+                  },
+                  {
+                      "id":  "e119",
+                      "source":  "Antom",
+                      "target":  "Kigui",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "195",
+                      "source":  "Antom",
+                      "target":  "Kigui",
+                      "confidence_score":  "0.95",
+                      "source_file":  "edgeseco.csv"
+                  },
+                  {
+                      "id":  "e116",
+                      "source":  "Antom",
+                      "target":  "Kilimo",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "192",
+                      "source":  "Antom",
+                      "target":  "Kilimo",
+                      "confidence_score":  "0.95",
+                      "source_file":  "edgeseco.csv"
+                  },
+                  {
+                      "id":  "e121",
+                      "source":  "Antom",
+                      "target":  "Satellites On Fire",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "197",
+                      "source":  "Antom",
+                      "target":  "Satellites On Fire",
+                      "confidence_score":  "0.95",
+                      "source_file":  "edgeseco.csv"
+                  },
+                  {
+                      "id":  "e165",
+                      "source":  "CITES",
+                      "target":  "Epiliquid",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "154",
+                      "source":  "CITES",
+                      "target":  "Epiliquid",
+                      "confidence_score":  "0.95",
+                      "source_file":  "edgeseco.csv"
+                  },
+                  {
+                      "id":  "e168",
+                      "source":  "CITES",
+                      "target":  "Limay Biosciences",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "231",
+                      "source":  "DraperCygnus",
+                      "target":  "0",
+                      "confidence_score":  "0.95",
+                      "source_file":  "edgeseco.csv"
+                  },
+                  {
+                      "id":  "e217",
+                      "source":  "DraperCygnus",
+                      "target":  "argenTAG",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "171",
+                      "source":  "DraperCygnus",
+                      "target":  "argenTAG",
+                      "confidence_score":  "0.95",
+                      "source_file":  "edgeseco.csv"
+                  },
+                  {
+                      "id":  "e214",
+                      "source":  "DraperCygnus",
+                      "target":  "Ayuvant",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "168",
+                      "source":  "DraperCygnus",
+                      "target":  "Ayuvant",
+                      "confidence_score":  "0.95",
+                      "source_file":  "edgeseco.csv"
+                  },
+                  {
+                      "id":  "e213",
+                      "source":  "DraperCygnus",
+                      "target":  "Lemon",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "167",
+                      "source":  "DraperCygnus",
+                      "target":  "Lemon",
+                      "confidence_score":  "0.95",
+                      "source_file":  "edgeseco.csv"
+                  },
+                  {
+                      "id":  "e212",
+                      "source":  "DraperCygnus",
+                      "target":  "Novo Space",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "166",
+                      "source":  "DraperCygnus",
+                      "target":  "Novo Space",
+                      "confidence_score":  "0.95",
+                      "source_file":  "edgeseco.csv"
+                  },
+                  {
+                      "id":  "e225",
+                      "source":  "DraperCygnus",
+                      "target":  "Satellites On Fire",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "179",
+                      "source":  "DraperCygnus",
+                      "target":  "Satellites On Fire",
+                      "confidence_score":  "0.95",
+                      "source_file":  "edgeseco.csv"
+                  },
+                  {
+                      "id":  "e224",
+                      "source":  "DraperCygnus",
+                      "target":  "SiloReal",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "178",
+                      "source":  "DraperCygnus",
+                      "target":  "SiloReal",
+                      "confidence_score":  "0.95",
+                      "source_file":  "edgeseco.csv"
+                  },
+                  {
+                      "id":  "e210",
+                      "source":  "DraperCygnus",
+                      "target":  "Skyloom",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "164",
+                      "source":  "DraperCygnus",
+                      "target":  "Skyloom",
+                      "confidence_score":  "0.95",
+                      "source_file":  "edgeseco.csv"
+                  },
+                  {
+                      "id":  "e3",
+                      "source":  "DraperCygnus",
+                      "target":  "stamm",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "230",
+                      "source":  "GridX",
+                      "target":  "0",
+                      "confidence_score":  "0.95",
+                      "source_file":  "edgeseco.csv"
+                  },
+                  {
+                      "id":  "e62",
+                      "source":  "GridX",
+                      "target":  "Aquit",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "25",
+                      "source":  "GridX",
+                      "target":  "Aquit",
+                      "confidence_score":  "0.95",
+                      "source_file":  "edgeseco.csv"
+                  },
+                  {
+                      "id":  "e63",
+                      "source":  "GridX",
+                      "target":  "argenTAG",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "58",
+                      "source":  "GridX",
+                      "target":  "argenTAG",
+                      "confidence_score":  "0.95",
+                      "source_file":  "edgeseco.csv"
+                  },
+                  {
+                      "id":  "e17",
+                      "source":  "GridX",
+                      "target":  "Beeflow",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "76",
+                      "source":  "GridX",
+                      "target":  "Beeflow",
+                      "confidence_score":  "0.95",
+                      "source_file":  "edgeseco.csv"
+                  },
+                  {
+                      "id":  "e65",
+                      "source":  "GridX",
+                      "target":  "Bioeutectics",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "57",
+                      "source":  "GridX",
+                      "target":  "Bioeutectics",
+                      "confidence_score":  "0.95",
+                      "source_file":  "edgeseco.csv"
+                  },
+                  {
+                      "id":  "e234",
+                      "source":  "GridX",
+                      "target":  "Bioplastix",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "8",
+                      "source":  "GridX",
+                      "target":  "Bioplastix",
+                      "confidence_score":  "0.95",
+                      "source_file":  "edgeseco.csv"
+                  },
+                  {
+                      "id":  "e69",
+                      "source":  "GridX",
+                      "target":  "ByBug",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "28",
+                      "source":  "GridX",
+                      "target":  "ByBug",
+                      "confidence_score":  "0.95",
+                      "source_file":  "edgeseco.csv"
+                  },
+                  {
+                      "id":  "e236",
+                      "source":  "GridX",
+                      "target":  "Caligenia",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "27",
+                      "source":  "GridX",
+                      "target":  "Caligenia",
+                      "confidence_score":  "0.95",
+                      "source_file":  "edgeseco.csv"
+                  },
+                  {
+                      "id":  "e26",
+                      "source":  "GridX",
+                      "target":  "caspr",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "e238",
+                      "source":  "GridX",
+                      "target":  "CellRep",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "3",
+                      "source":  "GridX",
+                      "target":  "CellRep",
+                      "confidence_score":  "0.95",
+                      "source_file":  "edgeseco.csv"
+                  },
+                  {
+                      "id":  "e71",
+                      "source":  "GridX",
+                      "target":  "Cryosmetics",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "59",
+                      "source":  "GridX",
+                      "target":  "Cryosmetics",
+                      "confidence_score":  "0.95",
+                      "source_file":  "edgeseco.csv"
+                  },
+                  {
+                      "id":  "e239",
+                      "source":  "GridX",
+                      "target":  "CyanoMin",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "13",
+                      "source":  "GridX",
+                      "target":  "CyanoMin",
+                      "confidence_score":  "0.95",
+                      "source_file":  "edgeseco.csv"
+                  },
+                  {
+                      "id":  "e240",
+                      "source":  "GridX",
+                      "target":  "Dogma Biotech",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "23",
+                      "source":  "GridX",
+                      "target":  "Dogma Biotech",
+                      "confidence_score":  "0.95",
+                      "source_file":  "edgeseco.csv"
+                  },
+                  {
+                      "id":  "e73",
+                      "source":  "GridX",
+                      "target":  "EINSTED",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "65",
+                      "source":  "GridX",
+                      "target":  "EINSTED",
+                      "confidence_score":  "0.95",
+                      "source_file":  "edgeseco.csv"
+                  },
+                  {
+                      "id":  "e59",
+                      "source":  "GridX",
+                      "target":  "elytron_biotech",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "e78",
+                      "source":  "GridX",
+                      "target":  "Fungi Life",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "e242",
+                      "source":  "GridX",
+                      "target":  "Fungi Life",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "29",
+                      "source":  "GridX",
+                      "target":  "Fungi Life",
+                      "confidence_score":  "0.95",
+                      "source_file":  "edgeseco.csv"
+                  },
+                  {
+                      "id":  "e79",
+                      "source":  "GridX",
+                      "target":  "Future Biome",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "36",
+                      "source":  "GridX",
+                      "target":  "Future Biome",
+                      "confidence_score":  "0.95",
+                      "source_file":  "edgeseco.csv"
+                  },
+                  {
+                      "id":  "e243",
+                      "source":  "GridX",
+                      "target":  "Geoprot",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "31",
+                      "source":  "GridX",
+                      "target":  "Geoprot",
+                      "confidence_score":  "0.95",
+                      "source_file":  "edgeseco.csv"
+                  },
+                  {
+                      "id":  "e80",
+                      "source":  "GridX",
+                      "target":  "Gisens Biotech",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "52",
+                      "source":  "GridX",
+                      "target":  "Gisens Biotech",
+                      "confidence_score":  "0.95",
+                      "source_file":  "edgeseco.csv"
+                  },
+                  {
+                      "id":  "e244",
+                      "source":  "GridX",
+                      "target":  "GlycoX",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "1",
+                      "source":  "GridX",
+                      "target":  "GlycoX",
+                      "confidence_score":  "0.95",
+                      "source_file":  "edgeseco.csv"
+                  },
+                  {
+                      "id":  "manual-gridx-hiamet",
+                      "source":  "GridX",
+                      "target":  "HIAMET",
+                      "confidence_score":  "0.96",
+                      "source_file":  "https://www.gridexponential.com/portfolio"
+                  },
+                  {
+                      "id":  "62",
+                      "source":  "GridX",
+                      "target":  "HIAMET",
+                      "confidence_score":  "0.95",
+                      "source_file":  "edgeseco.csv"
+                  },
+                  {
+                      "id":  "e245",
+                      "source":  "GridX",
+                      "target":  "Invitrall",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "4",
+                      "source":  "GridX",
+                      "target":  "Invitrall",
+                      "confidence_score":  "0.95",
+                      "source_file":  "edgeseco.csv"
+                  },
+                  {
+                      "id":  "e84",
+                      "source":  "GridX",
+                      "target":  "michroma",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "77",
+                      "source":  "GridX",
+                      "target":  "michroma",
+                      "confidence_score":  "0.95",
+                      "source_file":  "edgeseco.csv"
+                  },
+                  {
+                      "id":  "e47",
+                      "source":  "GridX",
+                      "target":  "microgenesis",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "64",
+                      "source":  "GridX",
+                      "target":  "microgenesis",
+                      "confidence_score":  "0.95",
+                      "source_file":  "edgeseco.csv"
+                  },
+                  {
+                      "id":  "e246",
+                      "source":  "GridX",
+                      "target":  "MicroIN",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "10",
+                      "source":  "GridX",
+                      "target":  "MicroIN",
+                      "confidence_score":  "0.95",
+                      "source_file":  "edgeseco.csv"
+                  },
+                  {
+                      "id":  "e247",
+                      "source":  "GridX",
+                      "target":  "Migma",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "5",
+                      "source":  "GridX",
+                      "target":  "Migma",
+                      "confidence_score":  "0.95",
+                      "source_file":  "edgeseco.csv"
+                  },
+                  {
+                      "id":  "e83",
+                      "source":  "GridX",
+                      "target":  "MZP",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "69",
+                      "source":  "GridX",
+                      "target":  "MZP",
+                      "confidence_score":  "0.95",
+                      "source_file":  "edgeseco.csv"
+                  },
+                  {
+                      "id":  "e87",
+                      "source":  "GridX",
+                      "target":  "NanoInGreen",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "38",
+                      "source":  "GridX",
+                      "target":  "NanoInGreen",
+                      "confidence_score":  "0.95",
+                      "source_file":  "edgeseco.csv"
+                  },
+                  {
+                      "id":  "e88",
+                      "source":  "GridX",
+                      "target":  "Nanotransfer",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "48",
+                      "source":  "GridX",
+                      "target":  "Nanotransfer",
+                      "confidence_score":  "0.95",
+                      "source_file":  "edgeseco.csv"
+                  },
+                  {
+                      "id":  "e89",
+                      "source":  "GridX",
+                      "target":  "Nat4Bio",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "43",
+                      "source":  "GridX",
+                      "target":  "Nat4Bio",
+                      "confidence_score":  "0.95",
+                      "source_file":  "edgeseco.csv"
+                  },
+                  {
+                      "id":  "e93",
+                      "source":  "GridX",
+                      "target":  "Onco Precision",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "e252",
+                      "source":  "GridX",
+                      "target":  "Onco Precision",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "49",
+                      "source":  "GridX",
+                      "target":  "Onco Precision",
+                      "confidence_score":  "0.95",
+                      "source_file":  "edgeseco.csv"
+                  },
+                  {
+                      "id":  "e95",
+                      "source":  "GridX",
+                      "target":  "Puna Bio",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "55",
+                      "source":  "GridX",
+                      "target":  "Puna Bio",
+                      "confidence_score":  "0.95",
+                      "source_file":  "edgeseco.csv"
+                  },
+                  {
+                      "id":  "e4",
+                      "source":  "GridX",
+                      "target":  "stamm",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "e98",
+                      "source":  "GridX",
+                      "target":  "Sylvarum",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "44",
+                      "source":  "GridX",
+                      "target":  "Sylvarum",
+                      "confidence_score":  "0.95",
+                      "source_file":  "edgeseco.csv"
+                  },
+                  {
+                      "id":  "e261",
+                      "source":  "GridX",
+                      "target":  "WerkénVac",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "e102",
+                      "source":  "GridX",
+                      "target":  "WerkénVac",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "39",
+                      "source":  "GridX",
+                      "target":  "WerkénVac",
+                      "confidence_score":  "0.95",
+                      "source_file":  "edgeseco.csv"
+                  },
+                  {
+                      "id":  "e106",
+                      "source":  "inventure",
+                      "target":  "elytron_biotech",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "e115",
+                      "source":  "inventure",
+                      "target":  "Kigui",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "e113",
+                      "source":  "inventure",
+                      "target":  "Nat4Bio",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "e107",
+                      "source":  "inventure",
+                      "target":  "Satellites On Fire",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "e109",
+                      "source":  "inventure",
+                      "target":  "SiloReal",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "e114",
+                      "source":  "inventure",
+                      "target":  "UNIBAIO",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "e192",
+                      "source":  "kamay_ventures",
+                      "target":  "Kilimo",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "e128",
+                      "source":  "SF500",
+                      "target":  "Limay Biosciences",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "203",
+                      "source":  "SF500",
+                      "target":  "Limay Biosciences",
+                      "confidence_score":  "0.95",
+                      "source_file":  "edgeseco.csv"
+                  },
+                  {
+                      "id":  "e127",
+                      "source":  "SF500",
+                      "target":  "Oncoliq",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "202",
+                      "source":  "SF500",
+                      "target":  "Oncoliq",
+                      "confidence_score":  "0.95",
+                      "source_file":  "edgeseco.csv"
+                  },
+                  {
+                      "id":  "e130",
+                      "source":  "SF500",
+                      "target":  "TELL",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "205",
+                      "source":  "SF500",
+                      "target":  "TELL",
+                      "confidence_score":  "0.95",
+                      "source_file":  "edgeseco.csv"
+                  },
+                  {
+                      "id":  "e144",
+                      "source":  "SF500",
+                      "target":  "UNIBAIO",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "219",
+                      "source":  "SF500",
+                      "target":  "UNIBAIO",
+                      "confidence_score":  "0.95",
+                      "source_file":  "edgeseco.csv"
+                  },
+                  {
+                      "id":  "e55",
+                      "source":  "SOSV_IndieBio",
+                      "target":  "argenTAG",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "e11",
+                      "source":  "SOSV_IndieBio",
+                      "target":  "Beeflow",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "e21",
+                      "source":  "SOSV_IndieBio",
+                      "target":  "caspr",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "e40",
+                      "source":  "SOSV_IndieBio",
+                      "target":  "michroma",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "e43",
+                      "source":  "SOSV_IndieBio",
+                      "target":  "microgenesis",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "e50",
+                      "source":  "SOSV_IndieBio",
+                      "target":  "Onco Precision",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "e56",
+                      "source":  "SOSV_IndieBio",
+                      "target":  "Puna Bio",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "e0",
+                      "source":  "SOSV_IndieBio",
+                      "target":  "stamm",
+                      "confidence_score":  "0.9",
+                      "source_file":  "latam_coinvest_network_v3.graphml"
+                  },
+                  {
+                      "id":  "87",
+                      "source":  "The Ganesha Lab",
+                      "target":  "Aquit",
+                      "confidence_score":  "0.95",
+                      "source_file":  "edgeseco.csv"
+                  },
+                  {
+                      "id":  "80",
+                      "source":  "The Ganesha Lab",
+                      "target":  "Nanotransfer",
+                      "confidence_score":  "0.95",
+                      "source_file":  "edgeseco.csv"
+                  },
+                  {
+                      "id":  "78",
+                      "source":  "The Ganesha Lab",
+                      "target":  "TELL",
+                      "confidence_score":  "0.95",
+                      "source_file":  "edgeseco.csv"
+                  },
+                  {
+                      "id":  "96",
+                      "source":  "The Ganesha Lab",
+                      "target":  "UNIBAIO",
+                      "confidence_score":  "0.95",
+                      "source_file":  "edgeseco.csv"
+                  }
+              ]
+}

@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Semantic Taxonomy Beta</title>
+  <link rel="stylesheet" href="./styles.css?v=20260422l">
+  <style>
+    .candidate-list,
+    .cluster-list {
+      display: grid;
+      gap: 10px;
+    }
+    .decision-map {
+      display: grid;
+      grid-template-columns: repeat(8, minmax(96px, 1fr));
+      gap: 10px;
+    }
+    .decision-node {
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: rgba(255,255,255,0.82);
+      padding: 12px;
+      display: grid;
+      gap: 8px;
+      cursor: pointer;
+      text-align: left;
+      color: inherit;
+      font: inherit;
+    }
+    .decision-node.active {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(23, 139, 135, 0.12);
+    }
+    .decision-node strong {
+      font-size: 1.25rem;
+    }
+    .decision-axis {
+      display: grid;
+      gap: 6px;
+    }
+    .decision-axis-label {
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+      color: var(--muted);
+      font-size: 0.78rem;
+    }
+    .candidate-item,
+    .cluster-item {
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: #fff;
+    }
+    .candidate-item {
+      padding: 14px;
+    }
+    .candidate-item.active {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(23, 139, 135, 0.12);
+    }
+    .candidate-button {
+      all: unset;
+      cursor: pointer;
+      color: inherit;
+      display: block;
+      width: 100%;
+    }
+    .metric-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 14px;
+    }
+    .kpi-card {
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: #fff;
+      padding: 14px;
+    }
+    .kpi-label {
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+    .kpi-value {
+      font-size: 1.7rem;
+      font-weight: 700;
+      line-height: 1.05;
+    }
+    .candidate-top,
+    .cluster-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: baseline;
+    }
+    .candidate-sub,
+    .cluster-sub {
+      margin-top: 8px;
+      color: var(--muted);
+      line-height: 1.5;
+      font-size: 0.94rem;
+    }
+    .mini-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 12px;
+    }
+    .mini-stat {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: #fcf8f1;
+      padding: 10px;
+    }
+    .mini-label {
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+    .mini-value {
+      font-size: 1rem;
+      font-weight: 700;
+    }
+    .bar-track,
+    .quality-track {
+      width: 100%;
+      height: 10px;
+      border-radius: 999px;
+      background: #eadfce;
+      overflow: hidden;
+      margin-top: 8px;
+    }
+    .bar-fill,
+    .quality-fill {
+      height: 100%;
+      border-radius: 999px;
+      background: linear-gradient(90deg, #ef4444, #f59e0b 52%, #22c55e);
+    }
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+    }
+    .theme-pill {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 6px 10px;
+      background: #fff;
+      font-size: 0.9rem;
+    }
+    .cluster-item {
+      display: grid;
+      gap: 14px;
+      padding: 16px;
+    }
+    .cluster-quality-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+    }
+    .cluster-kpi {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: #fcf8f1;
+      padding: 10px;
+    }
+    .cluster-columns {
+      display: grid;
+      grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+      gap: 14px;
+    }
+    .tradeoff-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 14px;
+    }
+    .tradeoff-card {
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: rgba(255,255,255,0.76);
+      padding: 12px;
+    }
+    .tradeoff-card strong {
+      display: block;
+      margin-bottom: 6px;
+    }
+    .content-block {
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: rgba(255,255,255,0.72);
+      padding: 12px;
+    }
+    .cluster-section-title {
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+    .token-cloud,
+    .startup-chip-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .token-chip,
+    .startup-chip {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: #fff;
+      padding: 6px 10px;
+      font-size: 0.88rem;
+      line-height: 1.2;
+    }
+    .startup-chip {
+      background: #f7f2e8;
+    }
+    @media (max-width: 1180px) {
+      .metric-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .decision-map,
+      .tradeoff-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .cluster-quality-grid,
+      .cluster-columns,
+      .mini-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Beta</p>
+        <h1>Decision de clusters semanticos</h1>
+        <p class="lede">Una pantalla para comparar cortes <code>k</code>, ver compresion, separacion, ambiguedad y contenido semantico antes de decidir cuantas categorias conviene usar.</p>
+      </div>
+      <div class="hero-meta">
+        <div class="meta-card">
+          <span class="meta-label">Universo</span>
+          <strong id="single-universe">Cargando...</strong>
+        </div>
+        <div class="meta-card">
+          <span class="meta-label">Mejor score</span>
+          <strong id="single-recommended">Cargando...</strong>
+        </div>
+        <div class="meta-card">
+          <span class="meta-label">Volver</span>
+          <strong><a href="./startup-themes.html" style="color:inherit">Startup themes</a></strong>
+        </div>
+      </div>
+    </header>
+
+    <section class="metric-grid" id="single-metrics"></section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <h2>Como leer esta beta</h2>
+        <span class="pill">Decision k</span>
+      </div>
+      <div class="item-meta">
+        Cada <code>k</code> compite en una sola capa. La pregunta no es solo cual puntua mas alto, sino cual comprime mejor sin perder explicabilidad: buena separacion entre clusters, bajo porcentaje de low confidence, tamanos razonables y nombres que no se repitan ni se vuelvan demasiado finos.
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <h2>Mapa de decision</h2>
+        <span class="pill muted">Compresion vs explicabilidad</span>
+      </div>
+      <div id="k-decision-map" class="decision-map"></div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <h2 id="detail-title">Detalle del corte</h2>
+        <span class="pill muted" id="detail-pill">k</span>
+      </div>
+      <div id="detail-body"></div>
+    </section>
+
+    <section class="panel" style="margin-top:20px;">
+      <div class="panel-head">
+        <h2>Comparacion de k</h2>
+        <span class="pill" id="candidate-count">0</span>
+      </div>
+      <div class="candidate-list" id="candidate-list"></div>
+    </section>
+  </div>
+
+  <script src="./text-clean.js?v=20260422l"></script>
+  <script src="./semantic-single-level-data.js?v=20260428n"></script>
+  <script src="./semantic-single-level.js?v=20260428n"></script>
+</body>
+</html>

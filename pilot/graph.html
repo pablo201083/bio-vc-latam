@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Capital Graph Pilot</title>
+  <link rel="stylesheet" href="./styles.css">
+  <style>
+    .graph-shell {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 340px;
+      gap: 20px;
+    }
+    .graph-stage {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      box-shadow: var(--shadow);
+      padding: 18px;
+      min-height: 760px;
+      position: relative;
+      overflow: hidden;
+    }
+    .graph-toolbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    .graph-wrap {
+      position: relative;
+      overflow: auto;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.88), rgba(247,242,234,0.96));
+      min-height: 670px;
+    }
+    .graph-controls {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+    }
+    .graph-button {
+      border: 1px solid var(--line);
+      background: #fff;
+      border-radius: 999px;
+      padding: 8px 14px;
+      font: inherit;
+      cursor: pointer;
+      color: var(--ink);
+    }
+    .graph-button:hover {
+      border-color: var(--accent);
+    }
+    .graph-legend {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+    .legend-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 4px 10px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: #fff;
+    }
+    .swatch {
+      width: 10px;
+      height: 10px;
+      border-radius: 999px;
+      display: inline-block;
+    }
+    .detail-stack {
+      display: grid;
+      gap: 20px;
+    }
+    .graph-empty {
+      color: var(--muted);
+    }
+    .toolbar-link {
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.92rem;
+    }
+    .toolbar-link:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 1100px) {
+      .graph-shell {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Graph Pilot</p>
+        <h1>Grafo de capital biotech</h1>
+        <p class="lede">Una vista mas acotada del sistema de capital. Sirve para mirar coinversion y estructura inversor-startup sin mezclarla con la lectura ecosistemica completa.</p>
+      </div>
+      <div class="hero-meta">
+        <div class="meta-card">
+          <span class="meta-label">Vista</span>
+          <strong>Bipartita inversores-startups</strong>
+        </div>
+        <div class="meta-card">
+          <span class="meta-label">Modo de uso</span>
+          <strong>Explorar, seleccionar, comparar</strong>
+        </div>
+      </div>
+    </header>
+
+    <section class="graph-shell">
+      <main class="graph-stage">
+        <div class="graph-toolbar">
+          <div class="graph-legend">
+            <span class="legend-chip"><span class="swatch" style="background:#0f766e"></span> Inversores</span>
+            <span class="legend-chip"><span class="swatch" style="background:#9a3412"></span> Startups</span>
+          </div>
+          <a class="toolbar-link" href="./index.html">Volver al piloto</a>
+        </div>
+        <div class="graph-controls">
+          <button id="run-layout" class="graph-button" type="button">Reordenar con Force Atlas</button>
+          <button id="reset-layout" class="graph-button" type="button">Volver a bipartita</button>
+        </div>
+        <div class="graph-wrap">
+          <svg id="graph-svg" width="1400" height="900" viewBox="0 0 1400 900" aria-label="Grafo bipartito"></svg>
+        </div>
+      </main>
+
+      <aside class="detail-stack">
+        <section class="panel">
+          <div class="panel-head">
+            <h2>Resumen</h2>
+            <span class="pill">Grafo</span>
+          </div>
+          <div id="graph-summary" class="detail-text">Cargando...</div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-head">
+            <h2>Detalle</h2>
+            <span id="graph-detail-badge" class="pill muted">Sin selección</span>
+          </div>
+          <div id="graph-detail" class="graph-empty">Haz click en un nodo para ver relaciones y metadatos.</div>
+        </section>
+      </aside>
+    </section>
+  </div>
+
+  <script src="./text-clean.js?v=20260421c"></script>
+  <script src="./data/embedded-data.js"></script>
+  <script src="./graph-force.js"></script>
+</body>
+</html>

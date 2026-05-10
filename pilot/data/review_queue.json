@@ -1,0 +1,443 @@
+﻿[
+    {
+        "review_type":  "merge_candidate_below_threshold",
+        "canonical_entity_id":  "Nano Jump Bio",
+        "canonical_name":  "Nano Jump Bio",
+        "alias_entity_id":  "nanojump_bio",
+        "alias_name":  "NanoJump Bio",
+        "merge_confidence":  "0.96",
+        "notes":  "Same normalized name with spacing variation"
+    },
+    {
+        "review_type":  "merge_candidate_below_threshold",
+        "canonical_entity_id":  "0",
+        "canonical_name":  "Stämm",
+        "alias_entity_id":  "stamm",
+        "alias_name":  "StÃ¤mm",
+        "merge_confidence":  "0.95",
+        "notes":  "Encoding issue and same normalized identity"
+    },
+    {
+        "review_type":  "merge_candidate_below_threshold",
+        "canonical_entity_id":  "BreakPET",
+        "canonical_name":  "BreakPET",
+        "alias_entity_id":  "break_pet",
+        "alias_name":  "Break Pet",
+        "merge_confidence":  "0.95",
+        "notes":  "Same normalized name with branding variation"
+    },
+    {
+        "review_type":  "merge_candidate_below_threshold",
+        "canonical_entity_id":  "AlgaeBio+",
+        "canonical_name":  "AlgaeBio+",
+        "alias_entity_id":  "algaebio",
+        "alias_name":  "algaebio+",
+        "merge_confidence":  "0.96",
+        "notes":  "Same normalized name with case variation"
+    },
+    {
+        "review_type":  "merge_candidate_below_threshold",
+        "canonical_entity_id":  "DraperCygnus",
+        "canonical_name":  "DraperCygnus",
+        "alias_entity_id":  "draper_cygnus",
+        "alias_name":  "Draper Cygnus",
+        "merge_confidence":  "0.95",
+        "notes":  "Same normalized name with spacing variation"
+    },
+    {
+        "review_type":  "merge_candidate_below_threshold",
+        "canonical_entity_id":  "Kresko RNATech",
+        "canonical_name":  "Kresko RNATech",
+        "alias_entity_id":  "kresko_rnatech",
+        "alias_name":  "Kresko RNAtech",
+        "merge_confidence":  "0.94",
+        "notes":  "Same normalized name with style variation"
+    },
+    {
+        "review_type":  "merge_candidate_below_threshold",
+        "canonical_entity_id":  "Feed Vax",
+        "canonical_name":  "Feed Vax",
+        "alias_entity_id":  "Feedvax",
+        "alias_name":  "Feedvax",
+        "merge_confidence":  "0.93",
+        "notes":  "Possible branding variation likely same startup"
+    },
+    {
+        "review_type":  "edge_excluded_manual_rule",
+        "canonical_entity_id":  "duhau",
+        "canonical_name":  "aplife",
+        "alias_entity_id":  "e18",
+        "alias_name":  "latam_coinvest_network_v3.graphml",
+        "merge_confidence":  "0.9",
+        "notes":  "Low-density graphml-only family annotation without public portfolio support"
+    },
+    {
+        "review_type":  "edge_excluded_manual_rule",
+        "canonical_entity_id":  "sillicon_catalyst",
+        "canonical_name":  "aplife",
+        "alias_entity_id":  "e19",
+        "alias_name":  "latam_coinvest_network_v3.graphml",
+        "merge_confidence":  "0.9",
+        "notes":  "Singleton graphml-only investment note with no public portfolio backing"
+    },
+    {
+        "review_type":  "edge_excluded_manual_rule",
+        "canonical_entity_id":  "draper_university",
+        "canonical_name":  "argenTAG",
+        "alias_entity_id":  "e54",
+        "alias_name":  "latam_coinvest_network_v3.graphml",
+        "merge_confidence":  "0.9",
+        "notes":  "Singleton graphml-only investment note with no public portfolio backing"
+    },
+    {
+        "review_type":  "edge_excluded_manual_rule",
+        "canonical_entity_id":  "future_ventures",
+        "canonical_name":  "Beeflow",
+        "alias_entity_id":  "e14",
+        "alias_name":  "latam_coinvest_network_v3.graphml",
+        "merge_confidence":  "0.9",
+        "notes":  "Singleton graphml-only investment note with no public portfolio backing"
+    },
+    {
+        "review_type":  "edge_excluded_manual_rule",
+        "canonical_entity_id":  "jeff_wilke",
+        "canonical_name":  "Beeflow",
+        "alias_entity_id":  "e16",
+        "alias_name":  "latam_coinvest_network_v3.graphml",
+        "merge_confidence":  "0.9",
+        "notes":  "Singleton graphml-only investor note with no public portfolio backing"
+    },
+    {
+        "review_type":  "edge_excluded_manual_rule",
+        "canonical_entity_id":  "ospraie",
+        "canonical_name":  "Beeflow",
+        "alias_entity_id":  "e12",
+        "alias_name":  "latam_coinvest_network_v3.graphml",
+        "merge_confidence":  "0.9",
+        "notes":  "Singleton graphml-only investment note with no public portfolio backing"
+    },
+    {
+        "review_type":  "edge_excluded_manual_rule",
+        "canonical_entity_id":  "sosv",
+        "canonical_name":  "Beeflow",
+        "alias_entity_id":  "e15",
+        "alias_name":  "latam_coinvest_network_v3.graphml",
+        "merge_confidence":  "0.9",
+        "notes":  "Parent SOSV graphml edges are less precise than the IndieBio-specific entity for this thesis"
+    },
+    {
+        "review_type":  "edge_excluded_manual_rule",
+        "canonical_entity_id":  "vectr",
+        "canonical_name":  "Beeflow",
+        "alias_entity_id":  "e13",
+        "alias_name":  "latam_coinvest_network_v3.graphml",
+        "merge_confidence":  "0.9",
+        "notes":  "Singleton graphml-only investment note with no public portfolio backing"
+    },
+    {
+        "review_type":  "edge_excluded_manual_rule",
+        "canonical_entity_id":  "DragonesVP",
+        "canonical_name":  "caspr",
+        "alias_entity_id":  "e25",
+        "alias_name":  "latam_coinvest_network_v3.graphml",
+        "merge_confidence":  "0.9",
+        "notes":  "Low-density graphml-only annotation superseded by cleaner DragonesVP entity"
+    },
+    {
+        "review_type":  "edge_excluded_manual_rule",
+        "canonical_entity_id":  "paul_mcewan",
+        "canonical_name":  "caspr",
+        "alias_entity_id":  "e22",
+        "alias_name":  "latam_coinvest_network_v3.graphml",
+        "merge_confidence":  "0.9",
+        "notes":  "Singleton graphml-only investor note with no public portfolio backing"
+    },
+    {
+        "review_type":  "edge_excluded_manual_rule",
+        "canonical_entity_id":  "photon_fund",
+        "canonical_name":  "caspr",
+        "alias_entity_id":  "e23",
+        "alias_name":  "latam_coinvest_network_v3.graphml",
+        "merge_confidence":  "0.9",
+        "notes":  "Singleton graphml-only investment note with no public portfolio backing"
+    },
+    {
+        "review_type":  "edge_excluded_manual_rule",
+        "canonical_entity_id":  "sosv",
+        "canonical_name":  "caspr",
+        "alias_entity_id":  "e24",
+        "alias_name":  "latam_coinvest_network_v3.graphml",
+        "merge_confidence":  "0.9",
+        "notes":  "Parent SOSV graphml edges are less precise than the IndieBio-specific entity for this thesis"
+    },
+    {
+        "review_type":  "edge_excluded_manual_rule",
+        "canonical_entity_id":  "brinc",
+        "canonical_name":  "cell_farm",
+        "alias_entity_id":  "e34",
+        "alias_name":  "latam_coinvest_network_v3.graphml",
+        "merge_confidence":  "0.9",
+        "notes":  "Singleton graphml-only investment note with no public portfolio backing"
+    },
+    {
+        "review_type":  "edge_excluded_manual_rule",
+        "canonical_entity_id":  "lartirigoyen",
+        "canonical_name":  "elytron_biotech",
+        "alias_entity_id":  "e58",
+        "alias_name":  "latam_coinvest_network_v3.graphml",
+        "merge_confidence":  "0.9",
+        "notes":  "Singleton graphml-only investment note with no public portfolio backing"
+    },
+    {
+        "review_type":  "edge_excluded_manual_rule",
+        "canonical_entity_id":  "conservation_international",
+        "canonical_name":  "Feed Vax",
+        "alias_entity_id":  "e32",
+        "alias_name":  "latam_coinvest_network_v3.graphml",
+        "merge_confidence":  "0.9",
+        "notes":  "Singleton graphml-only investment note with no public portfolio backing"
+    },
+    {
+        "review_type":  "edge_excluded_manual_rule",
+        "canonical_entity_id":  "duhau",
+        "canonical_name":  "Feed Vax",
+        "alias_entity_id":  "e31",
+        "alias_name":  "latam_coinvest_network_v3.graphml",
+        "merge_confidence":  "0.9",
+        "notes":  "Low-density graphml-only family annotation without public portfolio support"
+    },
+    {
+        "review_type":  "edge_excluded_manual_rule",
+        "canonical_entity_id":  "hatch",
+        "canonical_name":  "Feed Vax",
+        "alias_entity_id":  "e30",
+        "alias_name":  "latam_coinvest_network_v3.graphml",
+        "merge_confidence":  "0.9",
+        "notes":  "Singleton graphml-only investment note until public portfolio is mapped"
+    },
+    {
+        "review_type":  "edge_excluded_manual_rule",
+        "canonical_entity_id":  "kairetsu_angels",
+        "canonical_name":  "michroma",
+        "alias_entity_id":  "e41",
+        "alias_name":  "latam_coinvest_network_v3.graphml",
+        "merge_confidence":  "0.9",
+        "notes":  "Singleton graphml-only investment note with no public portfolio backing"
+    },
+    {
+        "review_type":  "edge_excluded_manual_rule",
+        "canonical_entity_id":  "other_angels",
+        "canonical_name":  "michroma",
+        "alias_entity_id":  "e42",
+        "alias_name":  "latam_coinvest_network_v3.graphml",
+        "merge_confidence":  "0.9",
+        "notes":  "Synthetic aggregate investor label not useful for public portfolio analysis"
+    },
+    {
+        "review_type":  "edge_excluded_manual_rule",
+        "canonical_entity_id":  "happiness",
+        "canonical_name":  "microgenesis",
+        "alias_entity_id":  "e44",
+        "alias_name":  "latam_coinvest_network_v3.graphml",
+        "merge_confidence":  "0.9",
+        "notes":  "Singleton graphml-only investment note with no public portfolio backing"
+    },
+    {
+        "review_type":  "edge_excluded_manual_rule",
+        "canonical_entity_id":  "kwb",
+        "canonical_name":  "microgenesis",
+        "alias_entity_id":  "e46",
+        "alias_name":  "latam_coinvest_network_v3.graphml",
+        "merge_confidence":  "0.9",
+        "notes":  "Singleton graphml-only investment note with no public portfolio backing"
+    },
+    {
+        "review_type":  "edge_excluded_manual_rule",
+        "canonical_entity_id":  "sosv",
+        "canonical_name":  "microgenesis",
+        "alias_entity_id":  "e45",
+        "alias_name":  "latam_coinvest_network_v3.graphml",
+        "merge_confidence":  "0.9",
+        "notes":  "Parent SOSV graphml edges are less precise than the IndieBio-specific entity for this thesis"
+    },
+    {
+        "review_type":  "edge_excluded_manual_rule",
+        "canonical_entity_id":  "creative_ventures",
+        "canonical_name":  "Onco Precision",
+        "alias_entity_id":  "e53",
+        "alias_name":  "latam_coinvest_network_v3.graphml",
+        "merge_confidence":  "0.9",
+        "notes":  "Singleton graphml-only investment note with no public portfolio backing"
+    },
+    {
+        "review_type":  "edge_excluded_manual_rule",
+        "canonical_entity_id":  "fundacion_para_el_progreso_de_la_medicina",
+        "canonical_name":  "Onco Precision",
+        "alias_entity_id":  "e52",
+        "alias_name":  "latam_coinvest_network_v3.graphml",
+        "merge_confidence":  "0.9",
+        "notes":  "Singleton graphml-only investment note with no public portfolio backing"
+    },
+    {
+        "review_type":  "edge_excluded_manual_rule",
+        "canonical_entity_id":  "genesis_consortium",
+        "canonical_name":  "Onco Precision",
+        "alias_entity_id":  "e51",
+        "alias_name":  "latam_coinvest_network_v3.graphml",
+        "merge_confidence":  "0.9",
+        "notes":  "Singleton graphml-only investment note with no public portfolio backing"
+    },
+    {
+        "review_type":  "edge_excluded_manual_rule",
+        "canonical_entity_id":  "sp_ventures",
+        "canonical_name":  "Puna Bio",
+        "alias_entity_id":  "e57",
+        "alias_name":  "latam_coinvest_network_v3.graphml",
+        "merge_confidence":  "0.9",
+        "notes":  "Singleton graphml-only note until public SP Ventures portfolio edges are loaded"
+    },
+    {
+        "review_type":  "edge_excluded_manual_rule",
+        "canonical_entity_id":  "DragonesVP",
+        "canonical_name":  "stamm",
+        "alias_entity_id":  "e9",
+        "alias_name":  "latam_coinvest_network_v3.graphml",
+        "merge_confidence":  "0.9",
+        "notes":  "Low-density graphml-only annotation superseded by cleaner DragonesVP entity"
+    },
+    {
+        "review_type":  "edge_excluded_manual_rule",
+        "canonical_entity_id":  "draper_associates",
+        "canonical_name":  "stamm",
+        "alias_entity_id":  "e1",
+        "alias_name":  "latam_coinvest_network_v3.graphml",
+        "merge_confidence":  "0.9",
+        "notes":  "Singleton graphml-only investment note with no public portfolio backing"
+    },
+    {
+        "review_type":  "edge_excluded_manual_rule",
+        "canonical_entity_id":  "flia_duhau",
+        "canonical_name":  "stamm",
+        "alias_entity_id":  "e6",
+        "alias_name":  "latam_coinvest_network_v3.graphml",
+        "merge_confidence":  "0.9",
+        "notes":  "Singleton graphml-only family annotation without public portfolio support"
+    },
+    {
+        "review_type":  "edge_excluded_manual_rule",
+        "canonical_entity_id":  "losa_group",
+        "canonical_name":  "stamm",
+        "alias_entity_id":  "e8",
+        "alias_name":  "latam_coinvest_network_v3.graphml",
+        "merge_confidence":  "0.9",
+        "notes":  "Singleton graphml-only investment note with no public portfolio backing"
+    },
+    {
+        "review_type":  "edge_excluded_manual_rule",
+        "canonical_entity_id":  "other_small_investors",
+        "canonical_name":  "stamm",
+        "alias_entity_id":  "e5",
+        "alias_name":  "latam_coinvest_network_v3.graphml",
+        "merge_confidence":  "0.9",
+        "notes":  "Synthetic aggregate investor label not useful for public portfolio analysis"
+    },
+    {
+        "review_type":  "edge_excluded_manual_rule",
+        "canonical_entity_id":  "sosv",
+        "canonical_name":  "stamm",
+        "alias_entity_id":  "e2",
+        "alias_name":  "latam_coinvest_network_v3.graphml",
+        "merge_confidence":  "0.9",
+        "notes":  "Parent SOSV graphml edges are less precise than the IndieBio-specific entity for this thesis"
+    },
+    {
+        "review_type":  "edge_excluded_manual_rule",
+        "canonical_entity_id":  "varana_capital",
+        "canonical_name":  "stamm",
+        "alias_entity_id":  "e7",
+        "alias_name":  "latam_coinvest_network_v3.graphml",
+        "merge_confidence":  "0.9",
+        "notes":  "Singleton graphml-only investment note with no public portfolio backing"
+    },
+    {
+        "review_type":  "edge_excluded_manual_rule",
+        "canonical_entity_id":  "vx_fund",
+        "canonical_name":  "stamm",
+        "alias_entity_id":  "e10",
+        "alias_name":  "latam_coinvest_network_v3.graphml",
+        "merge_confidence":  "0.9",
+        "notes":  "Singleton graphml-only investment note with no public portfolio backing"
+    },
+    {
+        "review_type":  "edge_excluded_manual_rule",
+        "canonical_entity_id":  "blue_horizon",
+        "canonical_name":  "syocin_bio",
+        "alias_entity_id":  "e49",
+        "alias_name":  "latam_coinvest_network_v3.graphml",
+        "merge_confidence":  "0.9",
+        "notes":  "Singleton graphml-only investment note with no public portfolio backing"
+    },
+    {
+        "review_type":  "edge_excluded_manual_rule",
+        "canonical_entity_id":  "thrive",
+        "canonical_name":  "syocin_bio",
+        "alias_entity_id":  "e48",
+        "alias_name":  "latam_coinvest_network_v3.graphml",
+        "merge_confidence":  "0.9",
+        "notes":  "Singleton graphml-only investment note with no public portfolio backing"
+    },
+    {
+        "review_type":  "edge_excluded_manual_rule",
+        "canonical_entity_id":  "bago",
+        "canonical_name":  "tomorrow",
+        "alias_entity_id":  "e35",
+        "alias_name":  "latam_coinvest_network_v3.graphml",
+        "merge_confidence":  "0.9",
+        "notes":  "Singleton graphml-only investment note with no public portfolio backing"
+    },
+    {
+        "review_type":  "edge_excluded_manual_rule",
+        "canonical_entity_id":  "grupo_insud",
+        "canonical_name":  "tomorrow",
+        "alias_entity_id":  "e36",
+        "alias_name":  "latam_coinvest_network_v3.graphml",
+        "merge_confidence":  "0.9",
+        "notes":  "Singleton graphml-only investment note with no public portfolio backing"
+    },
+    {
+        "review_type":  "edge_excluded_manual_rule",
+        "canonical_entity_id":  "managro",
+        "canonical_name":  "tomorrow",
+        "alias_entity_id":  "e37",
+        "alias_name":  "latam_coinvest_network_v3.graphml",
+        "merge_confidence":  "0.9",
+        "notes":  "Singleton graphml-only investment note with no public portfolio backing"
+    },
+    {
+        "review_type":  "edge_excluded_manual_rule",
+        "canonical_entity_id":  "other_small_investors",
+        "canonical_name":  "tomorrow",
+        "alias_entity_id":  "e39",
+        "alias_name":  "latam_coinvest_network_v3.graphml",
+        "merge_confidence":  "0.9",
+        "notes":  "Synthetic aggregate investor label not useful for public portfolio analysis"
+    },
+    {
+        "review_type":  "edge_excluded_manual_rule",
+        "canonical_entity_id":  "grupo_peruanos",
+        "canonical_name":  "ZEV Biotech",
+        "alias_entity_id":  "e28",
+        "alias_name":  "latam_coinvest_network_v3.graphml",
+        "merge_confidence":  "0.9",
+        "notes":  "Singleton graphml-only group annotation with no public portfolio backing"
+    },
+    {
+        "review_type":  "edge_excluded_manual_rule",
+        "canonical_entity_id":  "peruanos",
+        "canonical_name":  "ZEV Biotech",
+        "alias_entity_id":  "e27",
+        "alias_name":  "latam_coinvest_network_v3.graphml",
+        "merge_confidence":  "0.9",
+        "notes":  "Singleton graphml-only group annotation with no public portfolio backing"
+    }
+]

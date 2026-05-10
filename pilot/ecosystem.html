@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Biotech Ecosystem Map</title>
+  <link rel="stylesheet" href="./styles.css?v=20260421c">
+  <style>
+    .ecosystem-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 340px;
+      gap: 20px;
+    }
+    .stage {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      box-shadow: var(--shadow);
+      padding: 18px;
+      min-height: 790px;
+    }
+    .stage-wrap {
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: #f7f4ee;
+      overflow: hidden;
+      min-height: 700px;
+      position: relative;
+    }
+    .toolbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    .toolbar-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .toolbar-button {
+      border: 1px solid var(--line);
+      background: #fff;
+      border-radius: 999px;
+      padding: 8px 14px;
+      font: inherit;
+      cursor: pointer;
+    }
+    .toolbar-button:hover {
+      border-color: var(--accent);
+    }
+    .legend {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    .legend-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 4px 10px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: #fff;
+    }
+    .swatch {
+      width: 10px;
+      height: 10px;
+      border-radius: 999px;
+      display: inline-block;
+    }
+    .sidebar-stack {
+      display: grid;
+      gap: 20px;
+    }
+    .muted-note {
+      color: var(--muted);
+      font-size: 0.92rem;
+      line-height: 1.5;
+    }
+    .graph-controls {
+      position: absolute;
+      right: 16px;
+      bottom: 16px;
+      display: grid;
+      gap: 8px;
+      z-index: 2;
+    }
+    .graph-control {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.96);
+      box-shadow: var(--shadow);
+      font: inherit;
+      font-size: 1.1rem;
+      cursor: pointer;
+    }
+    .graph-control:hover {
+      border-color: var(--accent);
+    }
+    @media (max-width: 1100px) {
+      .ecosystem-layout {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Ecosystem Pilot</p>
+        <h1>Mapa ecosistemico biotech</h1>
+        <p class="lede">Vista ecosistemica alimentada por el .gephi completo, pero recortada con el mismo universo thesis-first que usa la vista de startups. Esta pantalla prioriza estructura de red; la solidez editorial se sigue mejor en Profiles y Quality.</p>
+      </div>
+      <div class="hero-meta">
+        <div class="meta-card">
+          <span class="meta-label">Objetivo visual</span>
+          <strong>Mas cerca de Gephi / ForceAtlas</strong>
+        </div>
+        <div class="meta-card">
+          <span class="meta-label">Base conectada</span>
+          <strong>Red integrada + cobertura Gephi</strong>
+        </div>
+        <div class="meta-card">
+          <span class="meta-label">Navegacion</span>
+          <strong><a href="./index.html" style="color:inherit">Volver al piloto</a></strong>
+        </div>
+      </div>
+    </header>
+
+    <section class="ecosystem-layout">
+      <main class="stage">
+        <div class="toolbar">
+          <div class="legend">
+            <span class="legend-chip"><span class="swatch" style="background:#2ca25f"></span> Capital</span>
+            <span class="legend-chip"><span class="swatch" style="background:#f97316"></span> Universidad / institucion</span>
+            <span class="legend-chip"><span class="swatch" style="background:#d96ad9"></span> Founder</span>
+            <span class="legend-chip"><span class="swatch" style="background:#7c83fd"></span> Startup</span>
+          </div>
+          <div class="toolbar-actions">
+            <button id="ecosystem-relayout" class="toolbar-button" type="button">Reordenar</button>
+            <button id="ecosystem-recenter" class="toolbar-button" type="button">Recentar</button>
+          </div>
+        </div>
+        <div class="stage-wrap">
+          <svg id="ecosystem-svg" width="100%" height="780" viewBox="0 0 1700 980" preserveAspectRatio="xMidYMid meet"></svg>
+          <div class="graph-controls">
+            <button id="ecosystem-zoom-in" class="graph-control" type="button">+</button>
+            <button id="ecosystem-zoom-out" class="graph-control" type="button">-</button>
+            <button id="ecosystem-reset-view" class="graph-control" type="button">R</button>
+          </div>
+        </div>
+      </main>
+
+      <aside class="sidebar-stack">
+        <section class="panel">
+          <div class="panel-head">
+            <h2>Resumen</h2>
+            <span class="pill">Vista</span>
+          </div>
+          <div id="ecosystem-summary" class="muted-note">Cargando...</div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-head">
+            <h2>Cobertura Gephi</h2>
+            <span class="pill">Base rica</span>
+          </div>
+          <div id="ecosystem-coverage" class="muted-note">Cargando...</div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-head">
+            <h2>Detalle</h2>
+            <span id="ecosystem-badge" class="pill muted">Sin seleccion</span>
+          </div>
+          <div id="ecosystem-detail" class="muted-note">Haz click en un nodo para inspeccionar su vecindad y ver que tipo de actor es dentro del recorte thesis-first.</div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-head">
+            <h2>Como leer este mapa</h2>
+            <span class="pill warning">Pilot</span>
+          </div>
+          <div class="muted-note">
+            Esta pantalla muestra solo nodos conectados para preservar legibilidad. Comparte el mismo recorte de startups que la vista de themes, pero la estructura total incluye fondos, founders e instituciones. No implica que todo lo visible tenga el mismo nivel de confirmacion editorial.
+          </div>
+        </section>
+      </aside>
+    </section>
+  </div>
+
+  <script src="./text-clean.js?v=20260421c"></script>
+  <script src="./ecosystem-integrated-data.js?v=20260421c"></script>
+  <script src="./ecosystem-force.js?v=20260421c"></script>
+</body>
+</html>

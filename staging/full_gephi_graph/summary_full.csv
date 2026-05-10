@@ -1,0 +1,26 @@
+metric,value
+nodes_total,1099
+edges_total,1419
+is_directed,true
+node_table_columns,14
+edge_table_columns,5
+node_type_Startup,305
+node_type_Founder,561
+node_type_Knowledge Hub,123
+node_type_Chamber,2
+node_type_Investor,108
+relationship_funded_by,413
+relationship_has_founder,498
+relationship_accelerated_at,24
+relationship_member_of,35
+relationship_built_by,12
+relationship_spin_off_from,6
+relationship_collaborates_with,6
+relationship_incubated_at,9
+relationship_validated_by,1
+relationship_supplier_of,2
+relationship_studied_at,340
+relationship_researched_at,40
+relationship_graduated_from,31
+relationship_strategic_partner,1
+relationship_scientifically_advised_by,1

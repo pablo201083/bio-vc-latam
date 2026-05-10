@@ -1,0 +1,37 @@
+investor_id,source_file,reason
+bago,latam_coinvest_network_v3.graphml,Singleton graphml-only investment note with no public portfolio backing
+blue_horizon,latam_coinvest_network_v3.graphml,Singleton graphml-only investment note with no public portfolio backing
+brinc,latam_coinvest_network_v3.graphml,Singleton graphml-only investment note with no public portfolio backing
+conservation_international,latam_coinvest_network_v3.graphml,Singleton graphml-only investment note with no public portfolio backing
+creative_ventures,latam_coinvest_network_v3.graphml,Singleton graphml-only investment note with no public portfolio backing
+dragones,latam_coinvest_network_v3.graphml,Low-density graphml-only annotation superseded by cleaner DragonesVP entity
+draper_associates,latam_coinvest_network_v3.graphml,Singleton graphml-only investment note with no public portfolio backing
+draper_university,latam_coinvest_network_v3.graphml,Singleton graphml-only investment note with no public portfolio backing
+duhau,latam_coinvest_network_v3.graphml,Low-density graphml-only family annotation without public portfolio support
+flia_duhau,latam_coinvest_network_v3.graphml,Singleton graphml-only family annotation without public portfolio support
+fundacion_para_el_progreso_de_la_medicina,latam_coinvest_network_v3.graphml,Singleton graphml-only investment note with no public portfolio backing
+future_ventures,latam_coinvest_network_v3.graphml,Singleton graphml-only investment note with no public portfolio backing
+genesis_consortium,latam_coinvest_network_v3.graphml,Singleton graphml-only investment note with no public portfolio backing
+grupo_insud,latam_coinvest_network_v3.graphml,Singleton graphml-only investment note with no public portfolio backing
+grupo_peruanos,latam_coinvest_network_v3.graphml,Singleton graphml-only group annotation with no public portfolio backing
+happiness,latam_coinvest_network_v3.graphml,Singleton graphml-only investment note with no public portfolio backing
+hatch,latam_coinvest_network_v3.graphml,Singleton graphml-only investment note until public portfolio is mapped
+jeff_wilke,latam_coinvest_network_v3.graphml,Singleton graphml-only investor note with no public portfolio backing
+kairetsu_angels,latam_coinvest_network_v3.graphml,Singleton graphml-only investment note with no public portfolio backing
+kwb,latam_coinvest_network_v3.graphml,Singleton graphml-only investment note with no public portfolio backing
+lartirigoyen,latam_coinvest_network_v3.graphml,Singleton graphml-only investment note with no public portfolio backing
+losa_group,latam_coinvest_network_v3.graphml,Singleton graphml-only investment note with no public portfolio backing
+managro,latam_coinvest_network_v3.graphml,Singleton graphml-only investment note with no public portfolio backing
+ospraie,latam_coinvest_network_v3.graphml,Singleton graphml-only investment note with no public portfolio backing
+other_angels,latam_coinvest_network_v3.graphml,Synthetic aggregate investor label not useful for public portfolio analysis
+other_small_investors,latam_coinvest_network_v3.graphml,Synthetic aggregate investor label not useful for public portfolio analysis
+paul_mcewan,latam_coinvest_network_v3.graphml,Singleton graphml-only investor note with no public portfolio backing
+peruanos,latam_coinvest_network_v3.graphml,Singleton graphml-only group annotation with no public portfolio backing
+photon_fund,latam_coinvest_network_v3.graphml,Singleton graphml-only investment note with no public portfolio backing
+sillicon_catalyst,latam_coinvest_network_v3.graphml,Singleton graphml-only investment note with no public portfolio backing
+sosv,latam_coinvest_network_v3.graphml,Parent SOSV graphml edges are less precise than the IndieBio-specific entity for this thesis
+sp_ventures,latam_coinvest_network_v3.graphml,Singleton graphml-only note until public SP Ventures portfolio edges are loaded
+thrive,latam_coinvest_network_v3.graphml,Singleton graphml-only investment note with no public portfolio backing
+varana_capital,latam_coinvest_network_v3.graphml,Singleton graphml-only investment note with no public portfolio backing
+vectr,latam_coinvest_network_v3.graphml,Singleton graphml-only investment note with no public portfolio backing
+vx_fund,latam_coinvest_network_v3.graphml,Singleton graphml-only investment note with no public portfolio backing

@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BIO VC LATAM Command Center</title>
+  <link rel="stylesheet" href="./styles.css?v=20260502command">
+  <style>
+    body.command-page .page-shell {
+      max-width: 1660px;
+      padding: 18px 24px 28px;
+    }
+    .command-hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.62fr) minmax(360px, 0.7fr);
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+    .command-hero .hero-copy {
+      padding: clamp(24px, 3vw, 42px);
+      background:
+        radial-gradient(circle at 88% 12%, rgba(15, 118, 110, 0.16), transparent 18rem),
+        radial-gradient(circle at 7% 86%, rgba(154, 52, 18, 0.08), transparent 20rem),
+        linear-gradient(135deg, rgba(255,255,255,0.95), rgba(246,240,230,0.74));
+    }
+    .command-hero h1 {
+      max-width: 980px;
+      font-size: clamp(2.8rem, 5vw, 6.4rem);
+      line-height: 0.88;
+      letter-spacing: -0.045em;
+      margin-bottom: 16px;
+    }
+    .command-hero .lede {
+      max-width: 76rem;
+      font-size: clamp(1rem, 1.25vw, 1.22rem);
+      line-height: 1.52;
+    }
+    .command-hero .hero-meta {
+      grid-template-columns: 1fr;
+      gap: 10px;
+      padding: 12px;
+      background: rgba(255, 252, 246, 0.76);
+    }
+    .command-hero .meta-card {
+      min-height: 88px;
+    }
+    .primary-grid {
+      display: grid;
+      grid-template-columns: 1.12fr 1.12fr 0.94fr;
+      gap: 16px;
+      margin-bottom: 18px;
+    }
+    .primary-card {
+      position: relative;
+      min-height: 360px;
+      border: 1px solid var(--line);
+      border-radius: 30px;
+      background:
+        radial-gradient(circle at 86% 14%, rgba(58, 168, 163, 0.2), transparent 12rem),
+        linear-gradient(145deg, rgba(255,255,255,0.94), rgba(248,242,232,0.82));
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      padding: 24px;
+      display: grid;
+      align-content: space-between;
+      gap: 26px;
+      color: inherit;
+      text-decoration: none;
+    }
+    .primary-card:hover {
+      text-decoration: none;
+      border-color: var(--accent);
+      transform: translateY(-2px);
+      box-shadow: 0 24px 70px rgba(54, 45, 35, 0.13);
+    }
+    .primary-card::after {
+      content: "";
+      position: absolute;
+      inset: auto -20% -38% 20%;
+      height: 190px;
+      border-radius: 50%;
+      background: rgba(15, 118, 110, 0.06);
+      pointer-events: none;
+    }
+    .primary-card.capital {
+      background:
+        radial-gradient(circle at 84% 16%, rgba(15, 118, 110, 0.24), transparent 14rem),
+        radial-gradient(circle at 22% 78%, rgba(31, 78, 108, 0.12), transparent 16rem),
+        linear-gradient(145deg, rgba(255,255,255,0.96), rgba(242,238,228,0.86));
+    }
+    .primary-card.match {
+      background:
+        radial-gradient(circle at 82% 14%, rgba(154, 52, 18, 0.14), transparent 12rem),
+        radial-gradient(circle at 12% 86%, rgba(15, 118, 110, 0.12), transparent 15rem),
+        linear-gradient(145deg, rgba(255,255,255,0.96), rgba(250,243,232,0.86));
+    }
+    .card-kicker {
+      margin: 0 0 10px;
+      color: var(--accent);
+      font-size: 0.74rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      font-weight: 900;
+    }
+    .primary-card h2 {
+      max-width: 520px;
+      margin: 0 0 12px;
+      font-size: clamp(2rem, 2.8vw, 3.7rem);
+      line-height: 0.92;
+      letter-spacing: -0.035em;
+    }
+    .primary-card p {
+      max-width: 560px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 1rem;
+      line-height: 1.48;
+    }
+    .card-footer {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      z-index: 1;
+    }
+    .metric-strip {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .metric-pill {
+      border: 1px solid rgba(217, 206, 190, 0.86);
+      border-radius: 999px;
+      background: rgba(255,255,255,0.78);
+      padding: 6px 10px;
+      color: var(--muted);
+      font-size: 0.82rem;
+      line-height: 1;
+    }
+    .open-cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      background: var(--ink);
+      color: #fffaf1;
+      padding: 10px 14px;
+      font-size: 0.9rem;
+      font-weight: 800;
+    }
+    .support-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(320px, 0.46fr);
+      gap: 16px;
+    }
+    .tool-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+    }
+    .tool-card {
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: rgba(255, 250, 241, 0.88);
+      box-shadow: var(--shadow);
+      padding: 16px;
+      display: grid;
+      gap: 10px;
+      color: inherit;
+      text-decoration: none;
+      min-height: 150px;
+    }
+    .tool-card:hover {
+      text-decoration: none;
+      border-color: var(--accent);
+      background: rgba(255,255,255,0.92);
+    }
+    .tool-card h3 {
+      margin: 0;
+      font-size: 1.25rem;
+      line-height: 1.05;
+    }
+    .tool-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.92rem;
+      line-height: 1.42;
+    }
+    .status-panel {
+      padding: 18px;
+      display: grid;
+      gap: 14px;
+      align-content: start;
+    }
+    .status-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+    .status-card {
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: rgba(255,255,255,0.76);
+      padding: 12px;
+    }
+    .status-card span {
+      display: block;
+      color: var(--muted);
+      font-size: 0.78rem;
+      margin-bottom: 6px;
+    }
+    .status-card strong {
+      display: block;
+      font-size: 1.35rem;
+      line-height: 1;
+    }
+    .workflow {
+      display: grid;
+      gap: 10px;
+      margin-top: 2px;
+    }
+    .workflow-step {
+      display: grid;
+      grid-template-columns: 28px minmax(0, 1fr);
+      gap: 10px;
+      align-items: start;
+      color: var(--muted);
+      font-size: 0.92rem;
+      line-height: 1.38;
+    }
+    .workflow-step strong {
+      color: var(--ink);
+    }
+    .step-dot {
+      width: 28px;
+      height: 28px;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-weight: 900;
+      font-size: 0.82rem;
+    }
+    @media (max-width: 1180px) {
+      .command-hero,
+      .primary-grid,
+      .support-layout {
+        grid-template-columns: 1fr;
+      }
+      .tool-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+    @media (max-width: 720px) {
+      body.command-page .page-shell {
+        padding: 14px;
+      }
+      .tool-grid,
+      .status-grid {
+        grid-template-columns: 1fr;
+      }
+      .primary-card {
+        min-height: 300px;
+      }
+    }
+  </style>
+</head>
+<body class="command-page">
+  <div class="page-shell">
+    <header class="hero command-hero">
+      <div class="hero-copy">
+        <p class="eyebrow">BIO VC LATAM</p>
+        <h1>Command center del ecosistema BIO</h1>
+        <p class="lede">Tres formas principales de leer la base: el mapa semantico de startups, el atlas de capital y el matchmaker entre startups y fondos. Todo lo demas queda como soporte de curaduria, calidad y auditoria.</p>
+      </div>
+      <div class="hero-meta">
+        <div class="meta-card">
+          <span class="meta-label">Vista recomendada para empezar</span>
+          <strong><a href="./startup-themes.html" style="color:inherit">Mapa BIO por proximidad semantica</a></strong>
+        </div>
+        <div class="meta-card">
+          <span class="meta-label">Base generada</span>
+          <strong id="generated-at">Cargando...</strong>
+        </div>
+        <div class="meta-card">
+          <span class="meta-label">Modo de trabajo</span>
+          <strong>Mapa, capital, matching y curaduria</strong>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="primary-grid" aria-label="Vistas principales">
+        <a class="primary-card map" href="./startup-themes.html">
+          <div>
+            <p class="card-kicker">1. Universo BIO</p>
+            <h2>Mapa semantico de startups</h2>
+            <p>La vista principal para entender que empresas hay, como se agrupan, que categorias emergen y donde hay casos raros o mal clasificados.</p>
+          </div>
+          <div class="card-footer">
+            <div class="metric-strip">
+              <span class="metric-pill" id="metric-startups">Startups: ...</span>
+              <span class="metric-pill">Themes + filtros</span>
+              <span class="metric-pill">Tamanos relativos</span>
+            </div>
+            <span class="open-cta">Abrir mapa</span>
+          </div>
+        </a>
+
+        <a class="primary-card capital" href="./capital-atlas.html">
+          <div>
+            <p class="card-kicker">2. Capital network</p>
+            <h2>Atlas de capital y conectividad</h2>
+            <p>El mapa para ver quien financia a quien, hubs, carteras, vacios de capital, fuentes publicas y estructura real del ecosistema.</p>
+          </div>
+          <div class="card-footer">
+            <div class="metric-strip">
+              <span class="metric-pill" id="metric-investors">Fondos: ...</span>
+              <span class="metric-pill" id="metric-edges">Edges: ...</span>
+              <span class="metric-pill">Weighted degree</span>
+            </div>
+            <span class="open-cta">Abrir atlas</span>
+          </div>
+        </a>
+
+        <a class="primary-card match" href="./matchmaking.html">
+          <div>
+            <p class="card-kicker">3. Relevancia accionable</p>
+            <h2>Matchmaker startup-fondo</h2>
+            <p>Advisor explicable para responder: si soy startup, a que fondos contacto; si soy fondo, que startups deberia mirar.</p>
+          </div>
+          <div class="card-footer">
+            <div class="metric-strip">
+              <span class="metric-pill">Score explicable</span>
+              <span class="metric-pill">Comparables</span>
+              <span class="metric-pill">Razones</span>
+            </div>
+            <span class="open-cta">Abrir advisor</span>
+          </div>
+        </a>
+      </section>
+
+      <section class="support-layout">
+        <section class="tool-grid" aria-label="Herramientas secundarias">
+          <a class="tool-card" href="./startup-profiles.html">
+            <span class="pill">Base</span>
+            <h3>Perfiles de startups</h3>
+            <p>Fichas, fuentes, resumenes, calidad, scope y estado editorial por startup.</p>
+          </a>
+          <a class="tool-card" href="./quality.html">
+            <span class="pill">Calidad</span>
+            <h3>Base Quality Tracker</h3>
+            <p>Cobertura source-backed, fragilidad, estados y colas de curaduria.</p>
+          </a>
+          <a class="tool-card" href="./capital-quality.html">
+            <span class="pill">Capital</span>
+            <h3>Capital Quality Tracker</h3>
+            <p>Cobertura de aristas, evidencia publica, hubs, gaps y colas de mejora del grafo.</p>
+          </a>
+          <a class="tool-card" href="./funds.html">
+            <span class="pill">Fondos</span>
+            <h3>Analitica de fondos</h3>
+            <p>Comparativa de carteras, themes, cobertura de fuentes y roles BIO.</p>
+          </a>
+          <a class="tool-card" href="./semantic-single-level.html">
+            <span class="pill muted">Metodo</span>
+            <h3>Exploracion semantica</h3>
+            <p>Selector de k y pesos para entender cortes alternativos de clustering.</p>
+          </a>
+          <a class="tool-card" href="./semantic-taxonomy-beta.html">
+            <span class="pill muted">Beta</span>
+            <h3>Semantic Taxonomy Beta</h3>
+            <p>Auditoria metodologica de clusters, componentes y explicabilidad.</p>
+          </a>
+          <a class="tool-card" href="./ecosystem.html">
+            <span class="pill muted">Legacy</span>
+            <h3>Mapa ecosistemico</h3>
+            <p>Vista exploratoria anterior para relaciones institucionales y grafo general.</p>
+          </a>
+        </section>
+
+        <aside class="panel status-panel">
+          <div class="panel-head">
+            <h2>Estado rapido</h2>
+            <span class="pill">Live</span>
+          </div>
+          <div class="status-grid" id="status-grid">
+            <div class="status-card"><span>Entidades</span><strong>...</strong></div>
+            <div class="status-card"><span>Startups</span><strong>...</strong></div>
+            <div class="status-card"><span>Inversores</span><strong>...</strong></div>
+            <div class="status-card"><span>Aristas</span><strong>...</strong></div>
+          </div>
+          <div class="workflow">
+            <div class="workflow-step"><span class="step-dot">1</span><div><strong>Leer universo</strong><br>Empezar por el mapa semantico para entender categorias y outliers.</div></div>
+            <div class="workflow-step"><span class="step-dot">2</span><div><strong>Leer capital</strong><br>Pasar al atlas para ver hubs, vacios y evidencia de relaciones.</div></div>
+            <div class="workflow-step"><span class="step-dot">3</span><div><strong>Actuar</strong><br>Usar el matchmaker para priorizar contactos o discovery de startups.</div></div>
+            <div class="workflow-step"><span class="step-dot">4</span><div><strong>Curar</strong><br>Volver a perfiles/calidad para reforzar fuente, scope y taxonomia.</div></div>
+          </div>
+        </aside>
+      </section>
+    </main>
+  </div>
+
+  <script src="./text-clean.js?v=20260421c"></script>
+  <script src="./data/embedded-data.js?v=20260421c"></script>
+  <script>
+    (function () {
+      const payload = window.deepRepairData ? window.deepRepairData(window.PILOT_DATA || {}) : (window.PILOT_DATA || {});
+      const dashboard = payload.dashboard || {};
+      const summary = dashboard.summary || {};
+      const generatedAt = document.getElementById("generated-at");
+      const statusGrid = document.getElementById("status-grid");
+      const metricStartups = document.getElementById("metric-startups");
+      const metricInvestors = document.getElementById("metric-investors");
+      const metricEdges = document.getElementById("metric-edges");
+
+      function number(value) {
+        return Number(value || 0).toLocaleString("en-US");
+      }
+
+      generatedAt.textContent = dashboard.generated_at || "n/d";
+      metricStartups.textContent = `Startups: ${number(summary.startups_total)}`;
+      metricInvestors.textContent = `Fondos: ${number(summary.investors_total)}`;
+      metricEdges.textContent = `Edges: ${number(summary.investment_edges_total)}`;
+      statusGrid.innerHTML = [
+        ["Entidades", summary.entities_total],
+        ["Startups", summary.startups_total],
+        ["Inversores", summary.investors_total],
+        ["Aristas", summary.investment_edges_total],
+        ["Aliases", summary.aliases_total],
+        ["Review queue", summary.review_queue_total]
+      ].map(([label, value]) => `
+        <div class="status-card">
+          <span>${label}</span>
+          <strong>${number(value)}</strong>
+        </div>
+      `).join("");
+    })();
+  </script>
+</body>
+</html>

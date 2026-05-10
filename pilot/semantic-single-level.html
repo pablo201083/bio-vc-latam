@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dynamic Semantic Taxonomy Lab</title>
+  <link rel="stylesheet" href="./styles.css?v=20260422f">
+  <style>
+    body {
+      background:
+        radial-gradient(circle at 12% 0%, rgba(15, 118, 110, 0.12), transparent 28rem),
+        linear-gradient(135deg, #f8f1e5 0%, #efe6d7 46%, #f7efe2 100%);
+    }
+    .page-shell { max-width: 1500px; }
+    .hero {
+      grid-template-columns: minmax(0, 1fr) 360px;
+      margin-bottom: 16px;
+    }
+    .hero-copy {
+      min-height: 0;
+      padding: 26px 30px;
+      background:
+        linear-gradient(135deg, rgba(255, 255, 255, 0.84), rgba(255, 250, 241, 0.94)),
+        radial-gradient(circle at 88% 18%, rgba(15, 118, 110, 0.12), transparent 18rem);
+    }
+    .hero-copy h1 {
+      max-width: 900px;
+      letter-spacing: -0.04em;
+    }
+    .hero-meta {
+      padding: 14px;
+      gap: 10px;
+    }
+    .meta-card { padding: 12px 14px; }
+    .metric-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+    .kpi-card {
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: rgba(255,255,255,0.84);
+      padding: 14px 16px;
+    }
+    .kpi-label {
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin-bottom: 7px;
+    }
+    .kpi-value {
+      font-size: 1.32rem;
+      font-weight: 700;
+      line-height: 1.08;
+      word-break: break-word;
+    }
+    .lab-note {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 16px;
+      align-items: start;
+      margin-bottom: 18px;
+      padding: 14px 18px;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      background: rgba(255,250,241,0.78);
+      color: var(--muted);
+      line-height: 1.45;
+    }
+    .single-grid {
+      display: grid;
+      grid-template-columns: 380px minmax(0, 1fr);
+      gap: 20px;
+      align-items: start;
+    }
+    .sticky-panel {
+      position: sticky;
+      top: 16px;
+      max-height: calc(100vh - 32px);
+      overflow: auto;
+    }
+    .control-strip {
+      display: grid;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+    .control-strip label {
+      color: var(--muted);
+      font-size: 0.82rem;
+      font-weight: 700;
+    }
+    .candidate-list,
+    .cluster-list {
+      display: grid;
+      gap: 12px;
+    }
+    .candidate-item,
+    .cluster-item {
+      border: 1px solid var(--line);
+      border-radius: 20px;
+    }
+    .candidate-item {
+      padding: 12px;
+      background: rgba(255,255,255,0.82);
+    }
+    .candidate-item.active {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(23, 139, 135, 0.12);
+    }
+    .candidate-button {
+      all: unset;
+      color: inherit;
+      cursor: pointer;
+      display: block;
+      width: 100%;
+    }
+    .candidate-top,
+    .cluster-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: baseline;
+    }
+    .candidate-sub,
+    .cluster-sub {
+      color: var(--muted);
+      font-size: 0.92rem;
+      line-height: 1.45;
+      margin-top: 8px;
+    }
+    .bar-track,
+    .quality-track {
+      width: 100%;
+      border-radius: 999px;
+      background: #eadfce;
+      overflow: hidden;
+    }
+    .bar-track { height: 9px; margin-top: 9px; }
+    .quality-track { height: 8px; margin: 12px 0; }
+    .bar-fill,
+    .quality-fill {
+      height: 100%;
+      border-radius: 999px;
+      background: linear-gradient(90deg, #ef4444, #f59e0b 46%, #0f766e);
+    }
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin-top: 10px;
+    }
+    .theme-pill {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 5px 9px;
+      background: #fff;
+      font-size: 0.82rem;
+    }
+    .tradeoff-grid,
+    .mini-grid {
+      display: grid;
+      gap: 10px;
+    }
+    .tradeoff-grid {
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+    .mini-grid {
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+      margin-top: 12px;
+    }
+    .tradeoff-card,
+    .mini-stat,
+    .cluster-kpi,
+    .content-block {
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: rgba(255,255,255,0.72);
+      padding: 12px;
+    }
+    .mini-label {
+      color: var(--muted);
+      font-size: 0.76rem;
+      margin-bottom: 6px;
+    }
+    .mini-value {
+      font-size: 1rem;
+      font-weight: 700;
+    }
+    .detail-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      margin: 18px 0 12px;
+    }
+    .cluster-item {
+      padding: 18px;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.92), rgba(255,250,241,0.96));
+    }
+    .cluster-quality-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+    .cluster-columns {
+      display: grid;
+      grid-template-columns: 0.85fr 1.15fr;
+      gap: 12px;
+    }
+    .cluster-section-title {
+      color: var(--muted);
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+    }
+    .token-cloud,
+    .startup-chip-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      max-height: 172px;
+      overflow: auto;
+    }
+    .token-chip,
+    .startup-chip {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: #fff;
+      font-size: 0.82rem;
+      line-height: 1.2;
+      padding: 5px 9px;
+    }
+    .token-chip {
+      background: var(--accent-soft);
+      border-color: rgba(15, 118, 110, 0.18);
+      color: var(--accent);
+      font-weight: 700;
+    }
+    @media (max-width: 1180px) {
+      .hero,
+      .single-grid,
+      .lab-note,
+      .tradeoff-grid,
+      .mini-grid,
+      .cluster-quality-grid,
+      .cluster-columns {
+        grid-template-columns: 1fr;
+      }
+      .sticky-panel {
+        position: static;
+        max-height: none;
+      }
+      .metric-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Beta</p>
+        <h1>Dynamic Semantic Taxonomy Lab</h1>
+        <p class="lede">Laboratorio para comparar clusters semánticos en un solo nivel. Cambiá <code>k</code> y el peso de texto, tecnologías e industrias para ver qué taxonomía comprime mejor sin perder explicabilidad.</p>
+      </div>
+      <div class="hero-meta">
+        <div class="meta-card">
+          <span class="meta-label">Universo</span>
+          <strong id="single-universe">Cargando...</strong>
+        </div>
+        <div class="meta-card">
+          <span class="meta-label">Mejor score</span>
+          <strong id="single-recommended">Cargando...</strong>
+        </div>
+        <div class="meta-card">
+          <span class="meta-label">Volver</span>
+          <strong><a href="./semantic-taxonomy-beta.html" style="color:inherit">Semantic Taxonomy Beta</a></strong>
+        </div>
+      </div>
+    </header>
+
+    <section class="metric-grid" id="single-metrics"></section>
+
+    <section class="lab-note">
+      <div>
+        Cada <code>k</code> compite en una sola capa. Cada perfil cambia el peso de tres familias de features: texto auditado, tecnologías usadas e industrias/destinos. El mejor score automático no es necesariamente la taxonomía adoptada; esta vista sirve para auditar tradeoffs.
+      </div>
+      <span class="pill">Single-level lab</span>
+    </section>
+
+    <section class="single-grid">
+      <aside class="panel sticky-panel">
+        <div class="panel-head">
+          <h2>Candidatos k</h2>
+          <span class="pill" id="candidate-count">0</span>
+        </div>
+        <div class="control-strip">
+          <label for="feature-profile-select">Peso de features</label>
+          <select id="feature-profile-select"></select>
+          <div class="candidate-sub" id="feature-profile-note"></div>
+        </div>
+        <div id="candidate-list" class="candidate-list"></div>
+      </aside>
+
+      <main class="panel">
+        <div class="panel-head">
+          <h2 id="detail-title">Detalle</h2>
+          <span class="pill muted" id="detail-pill">k</span>
+        </div>
+        <div id="detail-body"></div>
+      </main>
+    </section>
+  </div>
+
+  <script src="./text-clean.js?v=20260422f"></script>
+  <script src="./semantic-single-level-data.js?v=20260430english-semantic"></script>
+  <script src="./semantic-single-level.js?v=20260429a"></script>
+</body>
+</html>

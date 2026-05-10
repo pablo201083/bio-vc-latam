@@ -1,0 +1,6 @@
+"merge_group","canonical_entity_id","canonical_name","alias_entity_id","alias_name","entity_type","merge_confidence","merge_reason"
+"cites","CITES","CITES","cites","cites","investor","0.99","Manual canonical merge for same investor with capitalization variation"
+"drapercygnus","DraperCygnus","DraperCygnus","draper_cygnus","Draper Cygnus","investor","0.99","Manual canonical merge for same investor with spacing variation"
+"dragones","DragonesVP","DragonesVP","dragones","Dragones","investor","0.99","Manual canonical merge to keep Dragones family under one canonical fund id"
+"gridx","GridX","GridX","gridx","gridx","investor","0.99","Manual canonical merge for same investor with lowercase variation"
+"indiebio","SOSV_IndieBio","SOSV_IndieBio","indiebio","IndieBio","investor","0.99","Manual canonical merge to keep IndieBio program under one canonical investor id"

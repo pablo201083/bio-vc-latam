@@ -1,0 +1,18 @@
+concept_type,canonical_label,aliases_or_signals,dimension_target,notes
+technical_stack,continuous bioprocessing,"continuous bioreactor; continuous production; plug and play bioprocessor",technical_stack,Strong in Stämm-like infrastructure companies
+technical_stack,precision fermentation,"precision fermentation; fermentation platform; fungal fermentation",technical_stack,Useful for Michroma and adjacent startups
+technical_stack,extremophile microbiology,"extremophiles; microbial inoculant; seed treatment biological",technical_stack,Strong for Puna Bio
+technical_stack,gene editing crop traits,"gene-edited crops; herbicide tolerance; crop management system",technical_stack,Strong for BioHeuris
+technical_stack,computer vision for agriculture,"weed detection; selective spraying; monitoring and diagnostics",technical_stack,Useful for DeepAgro
+technical_stack,water intelligence platform,"water optimization; volumetric water benefit; watershed",technical_stack,Useful for Kilimo-like companies
+output_class,manufacturing platform,"platform; infrastructure; process layer; manufacturing solution",output_class,Separates enablers from end-product startups
+output_class,food ingredient,"colorant; ingredient; protein system; food additive",output_class,Useful for Michroma and Tomorrow Foods
+output_class,ag input,"biostimulant; inoculant; crop trait; weed control",output_class,Useful for Puna Bio and BioHeuris
+output_class,green solvent,"solvent; deep eutectic; petrochemical replacement",output_class,Useful for Bioeutectics
+transition_function,degraded-soils-to-productive-soils,"regenerate soils; degraded soils; crop performance",transition_function,Useful for agricultural biologicals
+transition_function,petrochemical-to-biobased-industrial-chemistry,"replace petrochemical solvents; green chemistry; natural solvents",transition_function,Useful for chemistry and materials
+transition_function,animal-to-alt-protein-food-systems,"plant protein; alternative proteins; healthier and sustainable food",transition_function,Useful for Tomorrow Foods and cultured food startups
+transition_function,input-intensive-to-precision-application,"selective spraying; reduced agrochemicals; precision agriculture",transition_function,Useful for AI ag companies
+market_interface,ingredient supplier,"B2B ingredients; formulation partner; food industry solutions",market_interface,Common for food and chemistry startups
+market_interface,platform provider,"platform; infrastructure; enabling technology",market_interface,Common for manufacturing and tooling startups
+market_interface,services_plus_technology,"service plus proprietary tech; managed solution",market_interface,Common for Beeflow-like businesses

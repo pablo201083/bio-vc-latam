@@ -1,0 +1,3632 @@
+﻿[
+    {
+        "entity_id":  "1200_vc",
+        "entity_type":  "investor",
+        "canonical_name":  "1200 VC",
+        "slug":  "1200-vc",
+        "source_presence":  "manual_external",
+        "quality_flags":  "",
+        "confidence_score":  "0.86",
+        "staging_entity_id":  "1200_vc"
+    },
+    {
+        "entity_id":  "500_latam",
+        "entity_type":  "investor",
+        "canonical_name":  "500 LatAm",
+        "slug":  "500-latam",
+        "source_presence":  "manual_external",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "500_latam"
+    },
+    {
+        "entity_id":  "aceleradora_litoral",
+        "entity_type":  "investor",
+        "canonical_name":  "Aceleradora Litoral",
+        "slug":  "aceleradora-litoral",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "aceleradora_litoral"
+    },
+    {
+        "entity_id":  "AIR Capital",
+        "entity_type":  "investor",
+        "canonical_name":  "AIR Capital",
+        "slug":  "air-capital",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "AIR Capital"
+    },
+    {
+        "entity_id":  "amador",
+        "entity_type":  "investor",
+        "canonical_name":  "Amador",
+        "slug":  "amador",
+        "source_presence":  "manual_external",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "amador"
+    },
+    {
+        "entity_id":  "Antom",
+        "entity_type":  "investor",
+        "canonical_name":  "Antom",
+        "slug":  "antom",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "Antom"
+    },
+    {
+        "entity_id":  "araucaria_venture",
+        "entity_type":  "investor",
+        "canonical_name":  "Araucaria Venture",
+        "slug":  "araucaria-venture",
+        "source_presence":  "external_fund_map_delta",
+        "quality_flags":  "",
+        "confidence_score":  "0.82",
+        "staging_entity_id":  "araucaria_venture"
+    },
+    {
+        "entity_id":  "bago",
+        "entity_type":  "investor",
+        "canonical_name":  "Bago",
+        "slug":  "bago",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "bago"
+    },
+    {
+        "entity_id":  "blue_horizon",
+        "entity_type":  "investor",
+        "canonical_name":  "Blue Horizon",
+        "slug":  "blue-horizon",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "blue_horizon"
+    },
+    {
+        "entity_id":  "brinc",
+        "entity_type":  "investor",
+        "canonical_name":  "Brinc",
+        "slug":  "brinc",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "brinc"
+    },
+    {
+        "entity_id":  "chileglobal_ventures",
+        "entity_type":  "investor",
+        "canonical_name":  "ChileGlobal Ventures",
+        "slug":  "chileglobal-ventures",
+        "source_presence":  "manual_external",
+        "quality_flags":  "",
+        "confidence_score":  "0.90",
+        "staging_entity_id":  "chileglobal_ventures"
+    },
+    {
+        "entity_id":  "CITES",
+        "entity_type":  "investor",
+        "canonical_name":  "CITES",
+        "slug":  "cites",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "CITES"
+    },
+    {
+        "entity_id":  "conservation_international",
+        "entity_type":  "investor",
+        "canonical_name":  "conservation international",
+        "slug":  "conservation-international",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "conservation_international"
+    },
+    {
+        "entity_id":  "creative_ventures",
+        "entity_type":  "investor",
+        "canonical_name":  "creative ventures",
+        "slug":  "creative-ventures",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "creative_ventures"
+    },
+    {
+        "entity_id":  "dalus_capital",
+        "entity_type":  "investor",
+        "canonical_name":  "Dalus Capital",
+        "slug":  "dalus-capital",
+        "source_presence":  "external_fund_map_delta",
+        "quality_flags":  "",
+        "confidence_score":  "0.82",
+        "staging_entity_id":  "dalus_capital"
+    },
+    {
+        "entity_id":  "DragonesVP",
+        "entity_type":  "investor",
+        "canonical_name":  "DragonesVP",
+        "slug":  "dragonesvp",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "DragonesVP"
+    },
+    {
+        "entity_id":  "draper_associates",
+        "entity_type":  "investor",
+        "canonical_name":  "Draper Associates",
+        "slug":  "draper-associates",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "draper_associates"
+    },
+    {
+        "entity_id":  "draper_university",
+        "entity_type":  "investor",
+        "canonical_name":  "Draper University",
+        "slug":  "draper-university",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "draper_university"
+    },
+    {
+        "entity_id":  "DraperCygnus",
+        "entity_type":  "investor",
+        "canonical_name":  "DraperCygnus",
+        "slug":  "drapercygnus",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "DraperCygnus"
+    },
+    {
+        "entity_id":  "duhau",
+        "entity_type":  "investor",
+        "canonical_name":  "Duhau",
+        "slug":  "duhau",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "duhau"
+    },
+    {
+        "entity_id":  "eatable_adventures",
+        "entity_type":  "investor",
+        "canonical_name":  "Eatable Adventures",
+        "slug":  "eatable-adventures",
+        "source_presence":  "manual_external",
+        "quality_flags":  "",
+        "confidence_score":  "0.92",
+        "staging_entity_id":  "eatable_adventures"
+    },
+    {
+        "entity_id":  "flia_duhau",
+        "entity_type":  "investor",
+        "canonical_name":  "Flia. Duhau",
+        "slug":  "flia-duhau",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "flia_duhau"
+    },
+    {
+        "entity_id":  "fundacion_para_el_progreso_de_la_medicina",
+        "entity_type":  "investor",
+        "canonical_name":  "Fundacion para el progreso de la medicina",
+        "slug":  "fundacion-para-el-progreso-de-la-medicina",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "fundacion_para_el_progreso_de_la_medicina"
+    },
+    {
+        "entity_id":  "future_ventures",
+        "entity_type":  "investor",
+        "canonical_name":  "Future Ventures",
+        "slug":  "future-ventures",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "future_ventures"
+    },
+    {
+        "entity_id":  "genesis_consortium",
+        "entity_type":  "investor",
+        "canonical_name":  "Genesis Consortium",
+        "slug":  "genesis-consortium",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "genesis_consortium"
+    },
+    {
+        "entity_id":  "glocal",
+        "entity_type":  "investor",
+        "canonical_name":  "GLOCAL",
+        "slug":  "glocal",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "glocal"
+    },
+    {
+        "entity_id":  "GridX",
+        "entity_type":  "investor",
+        "canonical_name":  "GridX",
+        "slug":  "gridx",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "GridX"
+    },
+    {
+        "entity_id":  "grupo_insud",
+        "entity_type":  "investor",
+        "canonical_name":  "Grupo Insud",
+        "slug":  "grupo-insud",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "grupo_insud"
+    },
+    {
+        "entity_id":  "grupo_peruanos",
+        "entity_type":  "investor",
+        "canonical_name":  "Grupo Peruanos",
+        "slug":  "grupo-peruanos",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "grupo_peruanos"
+    },
+    {
+        "entity_id":  "happiness",
+        "entity_type":  "investor",
+        "canonical_name":  "Happiness",
+        "slug":  "happiness",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "happiness"
+    },
+    {
+        "entity_id":  "hatch",
+        "entity_type":  "investor",
+        "canonical_name":  "Hatch",
+        "slug":  "hatch",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "hatch"
+    },
+    {
+        "entity_id":  "idb_invest",
+        "entity_type":  "investor",
+        "canonical_name":  "IDB Invest",
+        "slug":  "idb-invest",
+        "source_presence":  "manual_institutional_capital",
+        "quality_flags":  "capital_allocator",
+        "confidence_score":  "0.96",
+        "staging_entity_id":  "idb_invest"
+    },
+    {
+        "entity_id":  "idb_lab",
+        "entity_type":  "investor",
+        "canonical_name":  "IDB Lab",
+        "slug":  "idb-lab",
+        "source_presence":  "manual_institutional_capital",
+        "quality_flags":  "capital_allocator",
+        "confidence_score":  "0.96",
+        "staging_entity_id":  "idb_lab"
+    },
+    {
+        "entity_id":  "innogen_capital",
+        "entity_type":  "investor",
+        "canonical_name":  "Innogen Capital",
+        "slug":  "innogen-capital",
+        "source_presence":  "manual_external",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "innogen_capital"
+    },
+    {
+        "entity_id":  "invariantes_fund",
+        "entity_type":  "investor",
+        "canonical_name":  "Invariantes Fund",
+        "slug":  "invariantes-fund",
+        "source_presence":  "external_fund_map_delta",
+        "quality_flags":  "fund_of_funds",
+        "confidence_score":  "0.82",
+        "staging_entity_id":  "invariantes_fund"
+    },
+    {
+        "entity_id":  "inventure",
+        "entity_type":  "investor",
+        "canonical_name":  "Inventure",
+        "slug":  "inventure",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "inventure"
+    },
+    {
+        "entity_id":  "jeff_wilke",
+        "entity_type":  "investor",
+        "canonical_name":  "Jeff Wilke",
+        "slug":  "jeff-wilke",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "jeff_wilke"
+    },
+    {
+        "entity_id":  "jica",
+        "entity_type":  "investor",
+        "canonical_name":  "JICA",
+        "slug":  "jica",
+        "source_presence":  "manual_institutional_capital",
+        "quality_flags":  "capital_allocator",
+        "confidence_score":  "0.92",
+        "staging_entity_id":  "jica"
+    },
+    {
+        "entity_id":  "kairetsu_angels",
+        "entity_type":  "investor",
+        "canonical_name":  "Kairetsu Angels",
+        "slug":  "kairetsu-angels",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "kairetsu_angels"
+    },
+    {
+        "entity_id":  "kamay_ventures",
+        "entity_type":  "investor",
+        "canonical_name":  "Kamay Ventures",
+        "slug":  "kamay-ventures",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "kamay_ventures"
+    },
+    {
+        "entity_id":  "KEM Ventures",
+        "entity_type":  "investor",
+        "canonical_name":  "KEM Ventures",
+        "slug":  "kem-ventures",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "KEM Ventures"
+    },
+    {
+        "entity_id":  "kptl",
+        "entity_type":  "investor",
+        "canonical_name":  "KPTL",
+        "slug":  "kptl",
+        "source_presence":  "manual_external",
+        "quality_flags":  "",
+        "confidence_score":  "0.86",
+        "staging_entity_id":  "kptl"
+    },
+    {
+        "entity_id":  "kwb",
+        "entity_type":  "investor",
+        "canonical_name":  "KWB",
+        "slug":  "kwb",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "kwb"
+    },
+    {
+        "entity_id":  "lartirigoyen",
+        "entity_type":  "investor",
+        "canonical_name":  "Lartirigoyen",
+        "slug":  "lartirigoyen",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "lartirigoyen"
+    },
+    {
+        "entity_id":  "lavca",
+        "entity_type":  "investor",
+        "canonical_name":  "LAVCA",
+        "slug":  "lavca",
+        "source_presence":  "manual_ecosystem_infrastructure",
+        "quality_flags":  "ecosystem_builder",
+        "confidence_score":  "0.86",
+        "staging_entity_id":  "lavca"
+    },
+    {
+        "entity_id":  "losa_group",
+        "entity_type":  "investor",
+        "canonical_name":  "Losa Group",
+        "slug":  "losa-group",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "losa_group"
+    },
+    {
+        "entity_id":  "managro",
+        "entity_type":  "investor",
+        "canonical_name":  "ManAgro",
+        "slug":  "managro",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "managro"
+    },
+    {
+        "entity_id":  "newtopia_vc",
+        "entity_type":  "investor",
+        "canonical_name":  "Newtopia VC",
+        "slug":  "newtopia-vc",
+        "source_presence":  "external_fund_map_delta",
+        "quality_flags":  "",
+        "confidence_score":  "0.84",
+        "staging_entity_id":  "newtopia_vc"
+    },
+    {
+        "entity_id":  "ospraie",
+        "entity_type":  "investor",
+        "canonical_name":  "Ospraie",
+        "slug":  "ospraie",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "ospraie"
+    },
+    {
+        "entity_id":  "other_angels",
+        "entity_type":  "investor",
+        "canonical_name":  "other angels",
+        "slug":  "other-angels",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "other_angels"
+    },
+    {
+        "entity_id":  "other_small_investors",
+        "entity_type":  "investor",
+        "canonical_name":  "other small investors",
+        "slug":  "other-small-investors",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "other_small_investors"
+    },
+    {
+        "entity_id":  "pampa_start",
+        "entity_type":  "investor",
+        "canonical_name":  "Pampa Start",
+        "slug":  "pampa-start",
+        "source_presence":  "manual_external",
+        "quality_flags":  "",
+        "confidence_score":  "0.92",
+        "staging_entity_id":  "pampa_start"
+    },
+    {
+        "entity_id":  "partners_for_growth",
+        "entity_type":  "investor",
+        "canonical_name":  "Partners for Growth",
+        "slug":  "partners-for-growth",
+        "source_presence":  "manual_external",
+        "quality_flags":  "",
+        "confidence_score":  "0.88",
+        "staging_entity_id":  "partners_for_growth"
+    },
+    {
+        "entity_id":  "paul_mcewan",
+        "entity_type":  "investor",
+        "canonical_name":  "Paul McEwan",
+        "slug":  "paul-mcewan",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "paul_mcewan"
+    },
+    {
+        "entity_id":  "peruanos",
+        "entity_type":  "investor",
+        "canonical_name":  "Peruanos",
+        "slug":  "peruanos",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "peruanos"
+    },
+    {
+        "entity_id":  "photon_fund",
+        "entity_type":  "investor",
+        "canonical_name":  "Photon Fund",
+        "slug":  "photon-fund",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "photon_fund"
+    },
+    {
+        "entity_id":  "positive_ventures",
+        "entity_type":  "investor",
+        "canonical_name":  "Positive Ventures",
+        "slug":  "positive-ventures",
+        "source_presence":  "manual_external",
+        "quality_flags":  "",
+        "confidence_score":  "0.86",
+        "staging_entity_id":  "positive_ventures"
+    },
+    {
+        "entity_id":  "salkantay_ventures",
+        "entity_type":  "investor",
+        "canonical_name":  "Salkantay Ventures",
+        "slug":  "salkantay-ventures",
+        "source_presence":  "external_fund_map_delta",
+        "quality_flags":  "",
+        "confidence_score":  "0.82",
+        "staging_entity_id":  "salkantay_ventures"
+    },
+    {
+        "entity_id":  "savia_ventures",
+        "entity_type":  "investor",
+        "canonical_name":  "Savia Ventures",
+        "slug":  "savia-ventures",
+        "source_presence":  "manual_external",
+        "quality_flags":  "",
+        "confidence_score":  "0.92",
+        "staging_entity_id":  "savia_ventures"
+    },
+    {
+        "entity_id":  "SF500",
+        "entity_type":  "investor",
+        "canonical_name":  "SF500",
+        "slug":  "sf500",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "SF500"
+    },
+    {
+        "entity_id":  "sillicon_catalyst",
+        "entity_type":  "investor",
+        "canonical_name":  "Sillicon Catalyst",
+        "slug":  "sillicon-catalyst",
+        "source_presence":  "graphml",
+        "quality_flags":  "possible_typo",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "sillicon_catalyst"
+    },
+    {
+        "entity_id":  "sosv",
+        "entity_type":  "investor",
+        "canonical_name":  "SOSV",
+        "slug":  "sosv",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "sosv"
+    },
+    {
+        "entity_id":  "SOSV_IndieBio",
+        "entity_type":  "investor",
+        "canonical_name":  "SOSV_IndieBio",
+        "slug":  "sosv-indiebio",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "SOSV_IndieBio"
+    },
+    {
+        "entity_id":  "sp_ventures",
+        "entity_type":  "investor",
+        "canonical_name":  "SP Ventures",
+        "slug":  "sp-ventures",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "sp_ventures"
+    },
+    {
+        "entity_id":  "svb_financial_group",
+        "entity_type":  "investor",
+        "canonical_name":  "SVB Financial Group",
+        "slug":  "svb-financial-group",
+        "source_presence":  "manual_institutional_capital",
+        "quality_flags":  "capital_allocator",
+        "confidence_score":  "0.86",
+        "staging_entity_id":  "svb_financial_group"
+    },
+    {
+        "entity_id":  "The Ganesha Lab",
+        "entity_type":  "investor",
+        "canonical_name":  "The Ganesha Lab",
+        "slug":  "the-ganesha-lab",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "The Ganesha Lab"
+    },
+    {
+        "entity_id":  "the_yield_lab_latam",
+        "entity_type":  "investor",
+        "canonical_name":  "The Yield Lab LATAM",
+        "slug":  "the-yield-lab-latam",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "the_yield_lab_latam"
+    },
+    {
+        "entity_id":  "thrive",
+        "entity_type":  "investor",
+        "canonical_name":  "Thrive",
+        "slug":  "thrive",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "thrive"
+    },
+    {
+        "entity_id":  "valor_capital_group",
+        "entity_type":  "investor",
+        "canonical_name":  "Valor Capital Group",
+        "slug":  "valor-capital-group",
+        "source_presence":  "manual_external",
+        "quality_flags":  "",
+        "confidence_score":  "0.92",
+        "staging_entity_id":  "valor_capital_group"
+    },
+    {
+        "entity_id":  "varana_capital",
+        "entity_type":  "investor",
+        "canonical_name":  "Varana Capital",
+        "slug":  "varana-capital",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "varana_capital"
+    },
+    {
+        "entity_id":  "vectr",
+        "entity_type":  "investor",
+        "canonical_name":  "VECTR",
+        "slug":  "vectr",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "vectr"
+    },
+    {
+        "entity_id":  "veronorte",
+        "entity_type":  "investor",
+        "canonical_name":  "Veronorte",
+        "slug":  "veronorte",
+        "source_presence":  "external_fund_map_delta",
+        "quality_flags":  "",
+        "confidence_score":  "0.82",
+        "staging_entity_id":  "veronorte"
+    },
+    {
+        "entity_id":  "vox_capital",
+        "entity_type":  "investor",
+        "canonical_name":  "Vox Capital",
+        "slug":  "vox-capital",
+        "source_presence":  "external_fund_map_delta",
+        "quality_flags":  "",
+        "confidence_score":  "0.82",
+        "staging_entity_id":  "vox_capital"
+    },
+    {
+        "entity_id":  "vx_fund",
+        "entity_type":  "investor",
+        "canonical_name":  "VX Fund",
+        "slug":  "vx-fund",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "vx_fund"
+    },
+    {
+        "entity_id":  "zentynel",
+        "entity_type":  "investor",
+        "canonical_name":  "Zentynel",
+        "slug":  "zentynel",
+        "source_presence":  "manual_external",
+        "quality_flags":  "",
+        "confidence_score":  "0.95",
+        "staging_entity_id":  "zentynel"
+    },
+    {
+        "entity_id":  "tech",
+        "entity_type":  "startup",
+        "canonical_name":  "@Tech",
+        "slug":  "tech",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "tech"
+    },
+    {
+        "entity_id":  "abastra",
+        "entity_type":  "startup",
+        "canonical_name":  "AbAstra",
+        "slug":  "abastra",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "abastra"
+    },
+    {
+        "entity_id":  "aerialoop",
+        "entity_type":  "startup",
+        "canonical_name":  "Aerialoop",
+        "slug":  "aerialoop",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "aerialoop"
+    },
+    {
+        "entity_id":  "agree",
+        "entity_type":  "startup",
+        "canonical_name":  "Agree",
+        "slug":  "agree",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "agree"
+    },
+    {
+        "entity_id":  "agroforte",
+        "entity_type":  "startup",
+        "canonical_name":  "Agroforte",
+        "slug":  "agroforte",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "agroforte"
+    },
+    {
+        "entity_id":  "Agrojusto",
+        "entity_type":  "startup",
+        "canonical_name":  "Agrojusto",
+        "slug":  "agrojusto",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "Agrojusto"
+    },
+    {
+        "entity_id":  "Aictive",
+        "entity_type":  "startup",
+        "canonical_name":  "Aictive",
+        "slug":  "aictive",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Aictive"
+    },
+    {
+        "entity_id":  "AlgaeBio+",
+        "entity_type":  "startup",
+        "canonical_name":  "AlgaeBio+",
+        "slug":  "algaebio",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "AlgaeBio+"
+    },
+    {
+        "entity_id":  "algaebio",
+        "entity_type":  "startup",
+        "canonical_name":  "algaebio+",
+        "slug":  "algaebio",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "algaebio"
+    },
+    {
+        "entity_id":  "AlgaLife",
+        "entity_type":  "startup",
+        "canonical_name":  "AlgaLife",
+        "slug":  "algalife",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "AlgaLife"
+    },
+    {
+        "entity_id":  "Alkemio",
+        "entity_type":  "startup",
+        "canonical_name":  "Alkemio",
+        "slug":  "alkemio",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "Alkemio"
+    },
+    {
+        "entity_id":  "altscore",
+        "entity_type":  "startup",
+        "canonical_name":  "Altscore",
+        "slug":  "altscore",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "altscore"
+    },
+    {
+        "entity_id":  "Alytix",
+        "entity_type":  "startup",
+        "canonical_name":  "Alytix",
+        "slug":  "alytix",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "Alytix"
+    },
+    {
+        "entity_id":  "Amai Proteins",
+        "entity_type":  "startup",
+        "canonical_name":  "Amai Proteins",
+        "slug":  "amai-proteins",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Amai Proteins"
+    },
+    {
+        "entity_id":  "Amplify Dynamics",
+        "entity_type":  "startup",
+        "canonical_name":  "Amplify Dynamics",
+        "slug":  "amplify-dynamics",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Amplify Dynamics"
+    },
+    {
+        "entity_id":  "Antarka",
+        "entity_type":  "startup",
+        "canonical_name":  "Antarka",
+        "slug":  "antarka",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "Antarka"
+    },
+    {
+        "entity_id":  "Apasomics",
+        "entity_type":  "startup",
+        "canonical_name":  "Apasomics",
+        "slug":  "apasomics",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "Apasomics"
+    },
+    {
+        "entity_id":  "APEXzymes",
+        "entity_type":  "startup",
+        "canonical_name":  "APEXzymes",
+        "slug":  "apexzymes",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "APEXzymes"
+    },
+    {
+        "entity_id":  "aplife",
+        "entity_type":  "startup",
+        "canonical_name":  "Aplife",
+        "slug":  "aplife",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "aplife"
+    },
+    {
+        "entity_id":  "Aplife Biotech",
+        "entity_type":  "startup",
+        "canonical_name":  "Aplife Biotech",
+        "slug":  "aplife-biotech",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Aplife Biotech"
+    },
+    {
+        "entity_id":  "Aquit",
+        "entity_type":  "startup",
+        "canonical_name":  "Aquit",
+        "slug":  "aquit",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "Aquit"
+    },
+    {
+        "entity_id":  "arakion",
+        "entity_type":  "startup",
+        "canonical_name":  "Arakion",
+        "slug":  "arakion",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "arakion"
+    },
+    {
+        "entity_id":  "arcomedLab",
+        "entity_type":  "startup",
+        "canonical_name":  "arcomedLab",
+        "slug":  "arcomedlab",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "arcomedLab"
+    },
+    {
+        "entity_id":  "ardan",
+        "entity_type":  "startup",
+        "canonical_name":  "Ardan",
+        "slug":  "ardan",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "ardan"
+    },
+    {
+        "entity_id":  "Ardan Pharma",
+        "entity_type":  "startup",
+        "canonical_name":  "Ardan Pharma",
+        "slug":  "ardan-pharma",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Ardan Pharma"
+    },
+    {
+        "entity_id":  "argenTAG",
+        "entity_type":  "startup",
+        "canonical_name":  "argenTAG",
+        "slug":  "argentag",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "argenTAG"
+    },
+    {
+        "entity_id":  "Armenta",
+        "entity_type":  "startup",
+        "canonical_name":  "Armenta",
+        "slug":  "armenta",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Armenta"
+    },
+    {
+        "entity_id":  "arqlite",
+        "entity_type":  "startup",
+        "canonical_name":  "Arqlite",
+        "slug":  "arqlite",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "arqlite"
+    },
+    {
+        "entity_id":  "auravant",
+        "entity_type":  "startup",
+        "canonical_name":  "Auravant",
+        "slug":  "auravant",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "auravant"
+    },
+    {
+        "entity_id":  "Auth0",
+        "entity_type":  "startup",
+        "canonical_name":  "Auth0",
+        "slug":  "auth0",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "Auth0"
+    },
+    {
+        "entity_id":  "AVaTAR",
+        "entity_type":  "startup",
+        "canonical_name":  "AVaTAR",
+        "slug":  "avatar",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "AVaTAR"
+    },
+    {
+        "entity_id":  "avatar_medtech",
+        "entity_type":  "startup",
+        "canonical_name":  "AVaTAR MedTech",
+        "slug":  "avatar-medtech",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "avatar_medtech"
+    },
+    {
+        "entity_id":  "Ayuvant",
+        "entity_type":  "startup",
+        "canonical_name":  "Ayuvant",
+        "slug":  "ayuvant",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "Ayuvant"
+    },
+    {
+        "entity_id":  "bacu",
+        "entity_type":  "startup",
+        "canonical_name":  "BACU",
+        "slug":  "bacu",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "bacu"
+    },
+    {
+        "entity_id":  "BEAM CropTech",
+        "entity_type":  "startup",
+        "canonical_name":  "BEAM CropTech",
+        "slug":  "beam-croptech",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "BEAM CropTech"
+    },
+    {
+        "entity_id":  "Bee Technology",
+        "entity_type":  "startup",
+        "canonical_name":  "Bee Technology",
+        "slug":  "bee-technology",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Bee Technology"
+    },
+    {
+        "entity_id":  "Beeflow",
+        "entity_type":  "startup",
+        "canonical_name":  "Beeflow",
+        "slug":  "beeflow",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "Beeflow"
+    },
+    {
+        "entity_id":  "Bifidice",
+        "entity_type":  "startup",
+        "canonical_name":  "Bifidice",
+        "slug":  "bifidice",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Bifidice"
+    },
+    {
+        "entity_id":  "BioBlends",
+        "entity_type":  "startup",
+        "canonical_name":  "BioBlends",
+        "slug":  "bioblends",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "BioBlends"
+    },
+    {
+        "entity_id":  "biocle",
+        "entity_type":  "startup",
+        "canonical_name":  "BioClÃ©",
+        "slug":  "biocl",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "biocle"
+    },
+    {
+        "entity_id":  "Biodiversity Intelligence",
+        "entity_type":  "startup",
+        "canonical_name":  "Biodiversity Intelligence",
+        "slug":  "biodiversity-intelligence",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Biodiversity Intelligence"
+    },
+    {
+        "entity_id":  "Bioeutectics",
+        "entity_type":  "startup",
+        "canonical_name":  "Bioeutectics",
+        "slug":  "bioeutectics",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "Bioeutectics"
+    },
+    {
+        "entity_id":  "Biogea",
+        "entity_type":  "startup",
+        "canonical_name":  "Biogea",
+        "slug":  "biogea",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Biogea"
+    },
+    {
+        "entity_id":  "bioheuris",
+        "entity_type":  "startup",
+        "canonical_name":  "Bioheuris",
+        "slug":  "bioheuris",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "bioheuris"
+    },
+    {
+        "entity_id":  "Biome Resources",
+        "entity_type":  "startup",
+        "canonical_name":  "Biome Resources",
+        "slug":  "biome-resources",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Biome Resources"
+    },
+    {
+        "entity_id":  "BioMetallum",
+        "entity_type":  "startup",
+        "canonical_name":  "BioMetallum",
+        "slug":  "biometallum",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "BioMetallum"
+    },
+    {
+        "entity_id":  "Bionirs",
+        "entity_type":  "startup",
+        "canonical_name":  "Bionirs",
+        "slug":  "bionirs",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Bionirs"
+    },
+    {
+        "entity_id":  "BioPlaster Research",
+        "entity_type":  "startup",
+        "canonical_name":  "BioPlaster Research",
+        "slug":  "bioplaster-research",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "BioPlaster Research"
+    },
+    {
+        "entity_id":  "bioplaster_research_inc",
+        "entity_type":  "startup",
+        "canonical_name":  "BioPlaster Research Inc",
+        "slug":  "bioplaster-research-inc",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "bioplaster_research_inc"
+    },
+    {
+        "entity_id":  "Bioplastix",
+        "entity_type":  "startup",
+        "canonical_name":  "Bioplastix",
+        "slug":  "bioplastix",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "Bioplastix"
+    },
+    {
+        "entity_id":  "bioseek",
+        "entity_type":  "startup",
+        "canonical_name":  "Bioseek",
+        "slug":  "bioseek",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "bioseek"
+    },
+    {
+        "entity_id":  "biosynaptica",
+        "entity_type":  "startup",
+        "canonical_name":  "BioSynaptica",
+        "slug":  "biosynaptica",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "biosynaptica"
+    },
+    {
+        "entity_id":  "Biotalife",
+        "entity_type":  "startup",
+        "canonical_name":  "Biotalife",
+        "slug":  "biotalife",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "Biotalife"
+    },
+    {
+        "entity_id":  "Bitgenia",
+        "entity_type":  "startup",
+        "canonical_name":  "Bitgenia",
+        "slug":  "bitgenia",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "Bitgenia"
+    },
+    {
+        "entity_id":  "BitMEX",
+        "entity_type":  "startup",
+        "canonical_name":  "BitMEX",
+        "slug":  "bitmex",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "BitMEX"
+    },
+    {
+        "entity_id":  "Bleps Vision",
+        "entity_type":  "startup",
+        "canonical_name":  "Bleps Vision",
+        "slug":  "bleps-vision",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Bleps Vision"
+    },
+    {
+        "entity_id":  "Blerify",
+        "entity_type":  "startup",
+        "canonical_name":  "Blerify",
+        "slug":  "blerify",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Blerify"
+    },
+    {
+        "entity_id":  "Botanical Solutions",
+        "entity_type":  "startup",
+        "canonical_name":  "Botanical Solutions",
+        "slug":  "botanical-solutions",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Botanical Solutions"
+    },
+    {
+        "entity_id":  "Branch Energy",
+        "entity_type":  "startup",
+        "canonical_name":  "Branch Energy",
+        "slug":  "branch-energy",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Branch Energy"
+    },
+    {
+        "entity_id":  "break_pet",
+        "entity_type":  "startup",
+        "canonical_name":  "Break Pet",
+        "slug":  "break-pet",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "break_pet"
+    },
+    {
+        "entity_id":  "BreakPET",
+        "entity_type":  "startup",
+        "canonical_name":  "BreakPET",
+        "slug":  "breakpet",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "BreakPET"
+    },
+    {
+        "entity_id":  "Bsafe Biotech",
+        "entity_type":  "startup",
+        "canonical_name":  "Bsafe Biotech",
+        "slug":  "bsafe-biotech",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Bsafe Biotech"
+    },
+    {
+        "entity_id":  "ByBug",
+        "entity_type":  "startup",
+        "canonical_name":  "ByBug",
+        "slug":  "bybug",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "ByBug"
+    },
+    {
+        "entity_id":  "calfix",
+        "entity_type":  "startup",
+        "canonical_name":  "Calfix",
+        "slug":  "calfix",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "calfix"
+    },
+    {
+        "entity_id":  "calice",
+        "entity_type":  "startup",
+        "canonical_name":  "Calice",
+        "slug":  "calice",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "calice"
+    },
+    {
+        "entity_id":  "Caligenia",
+        "entity_type":  "startup",
+        "canonical_name":  "Caligenia",
+        "slug":  "caligenia",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "Caligenia"
+    },
+    {
+        "entity_id":  "CargoProduce",
+        "entity_type":  "startup",
+        "canonical_name":  "CargoProduce",
+        "slug":  "cargoproduce",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "CargoProduce"
+    },
+    {
+        "entity_id":  "caspr",
+        "entity_type":  "startup",
+        "canonical_name":  "CASPR",
+        "slug":  "caspr",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "caspr"
+    },
+    {
+        "entity_id":  "Caspr Biotech",
+        "entity_type":  "startup",
+        "canonical_name":  "Caspr Biotech",
+        "slug":  "caspr-biotech",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Caspr Biotech"
+    },
+    {
+        "entity_id":  "cell_farm",
+        "entity_type":  "startup",
+        "canonical_name":  "Cell Farm",
+        "slug":  "cell-farm",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "cell_farm"
+    },
+    {
+        "entity_id":  "cellco",
+        "entity_type":  "startup",
+        "canonical_name":  "CellCo",
+        "slug":  "cellco",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "cellco"
+    },
+    {
+        "entity_id":  "CellRep",
+        "entity_type":  "startup",
+        "canonical_name":  "CellRep",
+        "slug":  "cellrep",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "CellRep"
+    },
+    {
+        "entity_id":  "Cellva",
+        "entity_type":  "startup",
+        "canonical_name":  "Cellva",
+        "slug":  "cellva",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Cellva"
+    },
+    {
+        "entity_id":  "circa_therapeutics",
+        "entity_type":  "startup",
+        "canonical_name":  "Circa Therapeutics",
+        "slug":  "circa-therapeutics",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "circa_therapeutics"
+    },
+    {
+        "entity_id":  "CIRCCLO",
+        "entity_type":  "startup",
+        "canonical_name":  "CIRCCLO",
+        "slug":  "circclo",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "CIRCCLO"
+    },
+    {
+        "entity_id":  "circular",
+        "entity_type":  "startup",
+        "canonical_name":  "Circular",
+        "slug":  "circular",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "circular"
+    },
+    {
+        "entity_id":  "clivi",
+        "entity_type":  "startup",
+        "canonical_name":  "Clivi",
+        "slug":  "clivi",
+        "source_presence":  "manual_external",
+        "quality_flags":  "",
+        "confidence_score":  "0.86",
+        "staging_entity_id":  "clivi"
+    },
+    {
+        "entity_id":  "clover",
+        "entity_type":  "startup",
+        "canonical_name":  "Clover",
+        "slug":  "clover",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "clover"
+    },
+    {
+        "entity_id":  "Conciencia",
+        "entity_type":  "startup",
+        "canonical_name":  "Conciencia",
+        "slug":  "conciencia",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "Conciencia"
+    },
+    {
+        "entity_id":  "courageous_land",
+        "entity_type":  "startup",
+        "canonical_name":  "Courageous Land",
+        "slug":  "courageous-land",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "courageous_land"
+    },
+    {
+        "entity_id":  "Crinsurance",
+        "entity_type":  "startup",
+        "canonical_name":  "Crinsurance",
+        "slug":  "crinsurance",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "Crinsurance"
+    },
+    {
+        "entity_id":  "Cryosmetics",
+        "entity_type":  "startup",
+        "canonical_name":  "Cryosmetics",
+        "slug":  "cryosmetics",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "Cryosmetics"
+    },
+    {
+        "entity_id":  "CuperScience",
+        "entity_type":  "startup",
+        "canonical_name":  "CuperScience",
+        "slug":  "cuperscience",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "CuperScience"
+    },
+    {
+        "entity_id":  "CyanoMin",
+        "entity_type":  "startup",
+        "canonical_name":  "CyanoMin",
+        "slug":  "cyanomin",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "CyanoMin"
+    },
+    {
+        "entity_id":  "cytbac",
+        "entity_type":  "startup",
+        "canonical_name":  "Cytbac",
+        "slug":  "cytbac",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "cytbac"
+    },
+    {
+        "entity_id":  "deepagro",
+        "entity_type":  "startup",
+        "canonical_name":  "DeepAgro",
+        "slug":  "deepagro",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "deepagro"
+    },
+    {
+        "entity_id":  "Delee",
+        "entity_type":  "startup",
+        "canonical_name":  "Delee",
+        "slug":  "delee",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Delee"
+    },
+    {
+        "entity_id":  "Dharma BioScience",
+        "entity_type":  "startup",
+        "canonical_name":  "Dharma BioScience",
+        "slug":  "dharma-bioscience",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Dharma BioScience"
+    },
+    {
+        "entity_id":  "Dogma Biotech",
+        "entity_type":  "startup",
+        "canonical_name":  "Dogma Biotech",
+        "slug":  "dogma-biotech",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Dogma Biotech"
+    },
+    {
+        "entity_id":  "Done Properly",
+        "entity_type":  "startup",
+        "canonical_name":  "Done Properly",
+        "slug":  "done-properly",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Done Properly"
+    },
+    {
+        "entity_id":  "Dynami",
+        "entity_type":  "startup",
+        "canonical_name":  "Dynami",
+        "slug":  "dynami",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "Dynami"
+    },
+    {
+        "entity_id":  "EcoAustralis",
+        "entity_type":  "startup",
+        "canonical_name":  "EcoAustralis",
+        "slug":  "ecoaustralis",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "EcoAustralis"
+    },
+    {
+        "entity_id":  "Egg",
+        "entity_type":  "startup",
+        "canonical_name":  "Egg",
+        "slug":  "egg",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Egg"
+    },
+    {
+        "entity_id":  "EINSTED",
+        "entity_type":  "startup",
+        "canonical_name":  "EINSTED",
+        "slug":  "einsted",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "EINSTED"
+    },
+    {
+        "entity_id":  "eiru",
+        "entity_type":  "startup",
+        "canonical_name":  "EirÃº",
+        "slug":  "eir",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "eiru"
+    },
+    {
+        "entity_id":  "Eirú",
+        "entity_type":  "startup",
+        "canonical_name":  "Eirú",
+        "slug":  "eir",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Eirú"
+    },
+    {
+        "entity_id":  "eiwa",
+        "entity_type":  "startup",
+        "canonical_name":  "Eiwa",
+        "slug":  "eiwa",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "eiwa"
+    },
+    {
+        "entity_id":  "Elytron",
+        "entity_type":  "startup",
+        "canonical_name":  "Elytron",
+        "slug":  "elytron",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Elytron"
+    },
+    {
+        "entity_id":  "elytron_biotech",
+        "entity_type":  "startup",
+        "canonical_name":  "Elytron Biotech",
+        "slug":  "elytron-biotech",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "elytron_biotech"
+    },
+    {
+        "entity_id":  "Embryoxite",
+        "entity_type":  "startup",
+        "canonical_name":  "Embryoxite",
+        "slug":  "embryoxite",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "Embryoxite"
+    },
+    {
+        "entity_id":  "Enteria",
+        "entity_type":  "startup",
+        "canonical_name":  "Enteria",
+        "slug":  "enteria",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "Enteria"
+    },
+    {
+        "entity_id":  "enzyva",
+        "entity_type":  "startup",
+        "canonical_name":  "Enzyva",
+        "slug":  "enzyva",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "enzyva"
+    },
+    {
+        "entity_id":  "Eolo Pharma",
+        "entity_type":  "startup",
+        "canonical_name":  "Eolo Pharma",
+        "slug":  "eolo-pharma",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Eolo Pharma"
+    },
+    {
+        "entity_id":  "Epiliquid",
+        "entity_type":  "startup",
+        "canonical_name":  "Epiliquid",
+        "slug":  "epiliquid",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "Epiliquid"
+    },
+    {
+        "entity_id":  "ergo_bioscience",
+        "entity_type":  "startup",
+        "canonical_name":  "Ergo Bioscience",
+        "slug":  "ergo-bioscience",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "ergo_bioscience"
+    },
+    {
+        "entity_id":  "Ergo Foods",
+        "entity_type":  "startup",
+        "canonical_name":  "Ergo Foods",
+        "slug":  "ergo-foods",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Ergo Foods"
+    },
+    {
+        "entity_id":  "Ethos",
+        "entity_type":  "startup",
+        "canonical_name":  "Ethos",
+        "slug":  "ethos",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Ethos"
+    },
+    {
+        "entity_id":  "Eureka",
+        "entity_type":  "startup",
+        "canonical_name":  "Eureka",
+        "slug":  "eureka",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "Eureka"
+    },
+    {
+        "entity_id":  "Exomas",
+        "entity_type":  "startup",
+        "canonical_name":  "Exomas",
+        "slug":  "exomas",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "Exomas"
+    },
+    {
+        "entity_id":  "Eywa",
+        "entity_type":  "startup",
+        "canonical_name":  "Eywa",
+        "slug":  "eywa",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Eywa"
+    },
+    {
+        "entity_id":  "eywa_biotech",
+        "entity_type":  "startup",
+        "canonical_name":  "Eywa Biotech",
+        "slug":  "eywa-biotech",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "eywa_biotech"
+    },
+    {
+        "entity_id":  "F4U",
+        "entity_type":  "startup",
+        "canonical_name":  "F4U",
+        "slug":  "f4u",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "F4U"
+    },
+    {
+        "entity_id":  "Falcomm",
+        "entity_type":  "startup",
+        "canonical_name":  "Falcomm",
+        "slug":  "falcomm",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "Falcomm"
+    },
+    {
+        "entity_id":  "Farmtastica",
+        "entity_type":  "startup",
+        "canonical_name":  "Farmtastica",
+        "slug":  "farmtastica",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Farmtastica"
+    },
+    {
+        "entity_id":  "fecundis",
+        "entity_type":  "startup",
+        "canonical_name":  "fecundis",
+        "slug":  "fecundis",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "fecundis"
+    },
+    {
+        "entity_id":  "Feed Vax",
+        "entity_type":  "startup",
+        "canonical_name":  "Feed Vax",
+        "slug":  "feed-vax",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Feed Vax"
+    },
+    {
+        "entity_id":  "Feedvax",
+        "entity_type":  "startup",
+        "canonical_name":  "Feedvax",
+        "slug":  "feedvax",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "Feedvax"
+    },
+    {
+        "entity_id":  "FixUP",
+        "entity_type":  "startup",
+        "canonical_name":  "FixUP",
+        "slug":  "fixup",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "FixUP"
+    },
+    {
+        "entity_id":  "food4you",
+        "entity_type":  "startup",
+        "canonical_name":  "Food4You",
+        "slug":  "food4you",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "food4you"
+    },
+    {
+        "entity_id":  "Formlabs",
+        "entity_type":  "startup",
+        "canonical_name":  "Formlabs",
+        "slug":  "formlabs",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Formlabs"
+    },
+    {
+        "entity_id":  "Fungi Life",
+        "entity_type":  "startup",
+        "canonical_name":  "Fungi Life",
+        "slug":  "fungi-life",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Fungi Life"
+    },
+    {
+        "entity_id":  "Future Biome",
+        "entity_type":  "startup",
+        "canonical_name":  "Future Biome",
+        "slug":  "future-biome",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Future Biome"
+    },
+    {
+        "entity_id":  "Gameet",
+        "entity_type":  "startup",
+        "canonical_name":  "Gameet",
+        "slug":  "gameet",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "Gameet"
+    },
+    {
+        "entity_id":  "GBM",
+        "entity_type":  "startup",
+        "canonical_name":  "GBM",
+        "slug":  "gbm",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "GBM"
+    },
+    {
+        "entity_id":  "Gbot",
+        "entity_type":  "startup",
+        "canonical_name":  "Gbot",
+        "slug":  "gbot",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Gbot"
+    },
+    {
+        "entity_id":  "Geoprot",
+        "entity_type":  "startup",
+        "canonical_name":  "Geoprot",
+        "slug":  "geoprot",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "Geoprot"
+    },
+    {
+        "entity_id":  "Gigablue",
+        "entity_type":  "startup",
+        "canonical_name":  "Gigablue",
+        "slug":  "gigablue",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Gigablue"
+    },
+    {
+        "entity_id":  "Gisens Biotech",
+        "entity_type":  "startup",
+        "canonical_name":  "Gisens Biotech",
+        "slug":  "gisens-biotech",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Gisens Biotech"
+    },
+    {
+        "entity_id":  "GlucoLib",
+        "entity_type":  "startup",
+        "canonical_name":  "GlucoLib",
+        "slug":  "glucolib",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "GlucoLib"
+    },
+    {
+        "entity_id":  "GlycoX",
+        "entity_type":  "startup",
+        "canonical_name":  "GlycoX",
+        "slug":  "glycox",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "GlycoX"
+    },
+    {
+        "entity_id":  "heartbest",
+        "entity_type":  "startup",
+        "canonical_name":  "Heartbest",
+        "slug":  "heartbest",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "heartbest"
+    },
+    {
+        "entity_id":  "HIAMET",
+        "entity_type":  "startup",
+        "canonical_name":  "HIAMET",
+        "slug":  "hiamet",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "HIAMET"
+    },
+    {
+        "entity_id":  "hiamet_s_a",
+        "entity_type":  "startup",
+        "canonical_name":  "Hiamet S.A",
+        "slug":  "hiamet-s-a",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "hiamet_s_a"
+    },
+    {
+        "entity_id":  "Huiro",
+        "entity_type":  "startup",
+        "canonical_name":  "Huiro",
+        "slug":  "huiro",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "Huiro"
+    },
+    {
+        "entity_id":  "imvalv",
+        "entity_type":  "startup",
+        "canonical_name":  "Imvalv",
+        "slug":  "imvalv",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "imvalv"
+    },
+    {
+        "entity_id":  "inbioar",
+        "entity_type":  "startup",
+        "canonical_name":  "Inbioar",
+        "slug":  "inbioar",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "inbioar"
+    },
+    {
+        "entity_id":  "infira",
+        "entity_type":  "startup",
+        "canonical_name":  "Infira",
+        "slug":  "infira",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "infira"
+    },
+    {
+        "entity_id":  "ini",
+        "entity_type":  "startup",
+        "canonical_name":  "INI",
+        "slug":  "ini",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "ini"
+    },
+    {
+        "entity_id":  "INMET",
+        "entity_type":  "startup",
+        "canonical_name":  "INMET",
+        "slug":  "inmet",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "INMET"
+    },
+    {
+        "entity_id":  "Inner Cosmos",
+        "entity_type":  "startup",
+        "canonical_name":  "Inner Cosmos",
+        "slug":  "inner-cosmos",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Inner Cosmos"
+    },
+    {
+        "entity_id":  "Innovai",
+        "entity_type":  "startup",
+        "canonical_name":  "Innovai",
+        "slug":  "innovai",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Innovai"
+    },
+    {
+        "entity_id":  "Invitrall",
+        "entity_type":  "startup",
+        "canonical_name":  "Invitrall",
+        "slug":  "invitrall",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "Invitrall"
+    },
+    {
+        "entity_id":  "Kigui",
+        "entity_type":  "startup",
+        "canonical_name":  "Kigui",
+        "slug":  "kigui",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "name_mismatch_between_sources",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "Kigui"
+    },
+    {
+        "entity_id":  "Kilimo",
+        "entity_type":  "startup",
+        "canonical_name":  "Kilimo",
+        "slug":  "kilimo",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "Kilimo"
+    },
+    {
+        "entity_id":  "kresko_rnatech",
+        "entity_type":  "startup",
+        "canonical_name":  "Kresko RNAtech",
+        "slug":  "kresko-rnatech",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "kresko_rnatech"
+    },
+    {
+        "entity_id":  "Kresko RNATech",
+        "entity_type":  "startup",
+        "canonical_name":  "Kresko RNATech",
+        "slug":  "kresko-rnatech",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Kresko RNATech"
+    },
+    {
+        "entity_id":  "Laurus",
+        "entity_type":  "startup",
+        "canonical_name":  "Laurus",
+        "slug":  "laurus",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Laurus"
+    },
+    {
+        "entity_id":  "Lemon",
+        "entity_type":  "startup",
+        "canonical_name":  "Lemon",
+        "slug":  "lemon",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "Lemon"
+    },
+    {
+        "entity_id":  "levya",
+        "entity_type":  "startup",
+        "canonical_name":  "Levya",
+        "slug":  "levya",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "levya"
+    },
+    {
+        "entity_id":  "Libera",
+        "entity_type":  "startup",
+        "canonical_name":  "Libera",
+        "slug":  "libera",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "Libera"
+    },
+    {
+        "entity_id":  "Limay Biosciences",
+        "entity_type":  "startup",
+        "canonical_name":  "Limay Biosciences",
+        "slug":  "limay-biosciences",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Limay Biosciences"
+    },
+    {
+        "entity_id":  "lipock",
+        "entity_type":  "startup",
+        "canonical_name":  "Lipock",
+        "slug":  "lipock",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "lipock"
+    },
+    {
+        "entity_id":  "logshare",
+        "entity_type":  "startup",
+        "canonical_name":  "LogShare",
+        "slug":  "logshare",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "logshare"
+    },
+    {
+        "entity_id":  "Luyef",
+        "entity_type":  "startup",
+        "canonical_name":  "Luyef",
+        "slug":  "luyef",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Luyef"
+    },
+    {
+        "entity_id":  "M4Life",
+        "entity_type":  "startup",
+        "canonical_name":  "M4Life",
+        "slug":  "m4life",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "M4Life"
+    },
+    {
+        "entity_id":  "mavios",
+        "entity_type":  "startup",
+        "canonical_name":  "Mavios",
+        "slug":  "mavios",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "mavios"
+    },
+    {
+        "entity_id":  "Menta",
+        "entity_type":  "startup",
+        "canonical_name":  "Menta",
+        "slug":  "menta",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Menta"
+    },
+    {
+        "entity_id":  "Menta Tickets",
+        "entity_type":  "startup",
+        "canonical_name":  "Menta Tickets",
+        "slug":  "menta-tickets",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Menta Tickets"
+    },
+    {
+        "entity_id":  "mentatech",
+        "entity_type":  "startup",
+        "canonical_name":  "MentaTech",
+        "slug":  "mentatech",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "mentatech"
+    },
+    {
+        "entity_id":  "Mesenchyal-T",
+        "entity_type":  "startup",
+        "canonical_name":  "Mesenchyal-T",
+        "slug":  "mesenchyal-t",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Mesenchyal-T"
+    },
+    {
+        "entity_id":  "Metabix Biotech",
+        "entity_type":  "startup",
+        "canonical_name":  "Metabix Biotech",
+        "slug":  "metabix-biotech",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Metabix Biotech"
+    },
+    {
+        "entity_id":  "michroma",
+        "entity_type":  "startup",
+        "canonical_name":  "michroma",
+        "slug":  "michroma",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "michroma"
+    },
+    {
+        "entity_id":  "microgenesis",
+        "entity_type":  "startup",
+        "canonical_name":  "microgenesis",
+        "slug":  "microgenesis",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "microgenesis"
+    },
+    {
+        "entity_id":  "MicroIN",
+        "entity_type":  "startup",
+        "canonical_name":  "MicroIN",
+        "slug":  "microin",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "MicroIN"
+    },
+    {
+        "entity_id":  "Microterra",
+        "entity_type":  "startup",
+        "canonical_name":  "Microterra",
+        "slug":  "microterra",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "Microterra"
+    },
+    {
+        "entity_id":  "Migma",
+        "entity_type":  "startup",
+        "canonical_name":  "Migma",
+        "slug":  "migma",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "Migma"
+    },
+    {
+        "entity_id":  "monte_caldera",
+        "entity_type":  "startup",
+        "canonical_name":  "Monte Caldera",
+        "slug":  "monte-caldera",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "monte_caldera"
+    },
+    {
+        "entity_id":  "Monte Caldera Technology",
+        "entity_type":  "startup",
+        "canonical_name":  "Monte Caldera Technology",
+        "slug":  "monte-caldera-technology",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Monte Caldera Technology"
+    },
+    {
+        "entity_id":  "MultiplAI Health",
+        "entity_type":  "startup",
+        "canonical_name":  "MultiplAI Health",
+        "slug":  "multiplai-health",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "MultiplAI Health"
+    },
+    {
+        "entity_id":  "muta",
+        "entity_type":  "startup",
+        "canonical_name":  "MUTA",
+        "slug":  "muta",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "muta"
+    },
+    {
+        "entity_id":  "Mycorium Biotech",
+        "entity_type":  "startup",
+        "canonical_name":  "Mycorium Biotech",
+        "slug":  "mycorium-biotech",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Mycorium Biotech"
+    },
+    {
+        "entity_id":  "MZP",
+        "entity_type":  "startup",
+        "canonical_name":  "MZP",
+        "slug":  "mzp",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "MZP"
+    },
+    {
+        "entity_id":  "nairotech",
+        "entity_type":  "startup",
+        "canonical_name":  "Nairotech",
+        "slug":  "nairotech",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "nairotech"
+    },
+    {
+        "entity_id":  "nano_jump",
+        "entity_type":  "startup",
+        "canonical_name":  "Nano Jump",
+        "slug":  "nano-jump",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "nano_jump"
+    },
+    {
+        "entity_id":  "Nano Jump Bio",
+        "entity_type":  "startup",
+        "canonical_name":  "Nano Jump Bio",
+        "slug":  "nano-jump-bio",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Nano Jump Bio"
+    },
+    {
+        "entity_id":  "Nanogrow",
+        "entity_type":  "startup",
+        "canonical_name":  "Nanogrow",
+        "slug":  "nanogrow",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Nanogrow"
+    },
+    {
+        "entity_id":  "nanogrow_biotech",
+        "entity_type":  "startup",
+        "canonical_name":  "Nanogrow Biotech",
+        "slug":  "nanogrow-biotech",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "nanogrow_biotech"
+    },
+    {
+        "entity_id":  "NanoInGreen",
+        "entity_type":  "startup",
+        "canonical_name":  "NanoInGreen",
+        "slug":  "nanoingreen",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "NanoInGreen"
+    },
+    {
+        "entity_id":  "nanojump_bio",
+        "entity_type":  "startup",
+        "canonical_name":  "NanoJump Bio",
+        "slug":  "nanojump-bio",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "nanojump_bio"
+    },
+    {
+        "entity_id":  "nanoprox",
+        "entity_type":  "startup",
+        "canonical_name":  "NanoproX",
+        "slug":  "nanoprox",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "nanoprox"
+    },
+    {
+        "entity_id":  "Nanotransfer",
+        "entity_type":  "startup",
+        "canonical_name":  "Nanotransfer",
+        "slug":  "nanotransfer",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "Nanotransfer"
+    },
+    {
+        "entity_id":  "Nat4Bio",
+        "entity_type":  "startup",
+        "canonical_name":  "Nat4Bio",
+        "slug":  "nat4bio",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "Nat4Bio"
+    },
+    {
+        "entity_id":  "Naturannova",
+        "entity_type":  "startup",
+        "canonical_name":  "Naturannova",
+        "slug":  "naturannova",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "Naturannova"
+    },
+    {
+        "entity_id":  "naturanova",
+        "entity_type":  "startup",
+        "canonical_name":  "Naturanova",
+        "slug":  "naturanova",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "naturanova"
+    },
+    {
+        "entity_id":  "neocell",
+        "entity_type":  "startup",
+        "canonical_name":  "Neocell",
+        "slug":  "neocell",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "neocell"
+    },
+    {
+        "entity_id":  "Neptune Robotics",
+        "entity_type":  "startup",
+        "canonical_name":  "Neptune Robotics",
+        "slug":  "neptune-robotics",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Neptune Robotics"
+    },
+    {
+        "entity_id":  "New Organs",
+        "entity_type":  "startup",
+        "canonical_name":  "New Organs",
+        "slug":  "new-organs",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "New Organs"
+    },
+    {
+        "entity_id":  "new_organs_biotech",
+        "entity_type":  "startup",
+        "canonical_name":  "New Organs Biotech",
+        "slug":  "new-organs-biotech",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "new_organs_biotech"
+    },
+    {
+        "entity_id":  "ngc Partners",
+        "entity_type":  "startup",
+        "canonical_name":  "ngc Partners",
+        "slug":  "ngc-partners",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "ngc Partners"
+    },
+    {
+        "entity_id":  "Nideport",
+        "entity_type":  "startup",
+        "canonical_name":  "Nideport",
+        "slug":  "nideport",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "Nideport"
+    },
+    {
+        "entity_id":  "NotCo",
+        "entity_type":  "startup",
+        "canonical_name":  "NotCo",
+        "slug":  "notco",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "NotCo"
+    },
+    {
+        "entity_id":  "NotFossil",
+        "entity_type":  "startup",
+        "canonical_name":  "NotFossil",
+        "slug":  "notfossil",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "NotFossil"
+    },
+    {
+        "entity_id":  "Novo Space",
+        "entity_type":  "startup",
+        "canonical_name":  "Novo Space",
+        "slug":  "novo-space",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Novo Space"
+    },
+    {
+        "entity_id":  "nude",
+        "entity_type":  "startup",
+        "canonical_name":  "Nude",
+        "slug":  "nude",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "nude"
+    },
+    {
+        "entity_id":  "Nunatak Biotech",
+        "entity_type":  "startup",
+        "canonical_name":  "Nunatak Biotech",
+        "slug":  "nunatak-biotech",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Nunatak Biotech"
+    },
+    {
+        "entity_id":  "Oasys",
+        "entity_type":  "startup",
+        "canonical_name":  "Oasys",
+        "slug":  "oasys",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Oasys"
+    },
+    {
+        "entity_id":  "ocular_bio_design",
+        "entity_type":  "startup",
+        "canonical_name":  "Ocular Bio Design",
+        "slug":  "ocular-bio-design",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "ocular_bio_design"
+    },
+    {
+        "entity_id":  "Onco Precision",
+        "entity_type":  "startup",
+        "canonical_name":  "Onco Precision",
+        "slug":  "onco-precision",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Onco Precision"
+    },
+    {
+        "entity_id":  "Oncoliq",
+        "entity_type":  "startup",
+        "canonical_name":  "Oncoliq",
+        "slug":  "oncoliq",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "Oncoliq"
+    },
+    {
+        "entity_id":  "Oneinfinite",
+        "entity_type":  "startup",
+        "canonical_name":  "Oneinfinite",
+        "slug":  "oneinfinite",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "Oneinfinite"
+    },
+    {
+        "entity_id":  "Open Water",
+        "entity_type":  "startup",
+        "canonical_name":  "Open Water",
+        "slug":  "open-water",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Open Water"
+    },
+    {
+        "entity_id":  "Opentrons",
+        "entity_type":  "startup",
+        "canonical_name":  "Opentrons",
+        "slug":  "opentrons",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Opentrons"
+    },
+    {
+        "entity_id":  "Outpost",
+        "entity_type":  "startup",
+        "canonical_name":  "Outpost",
+        "slug":  "outpost",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Outpost"
+    },
+    {
+        "entity_id":  "Pannex",
+        "entity_type":  "startup",
+        "canonical_name":  "Pannex",
+        "slug":  "pannex",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Pannex"
+    },
+    {
+        "entity_id":  "Patagon Fiber",
+        "entity_type":  "startup",
+        "canonical_name":  "Patagon Fiber",
+        "slug":  "patagon-fiber",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Patagon Fiber"
+    },
+    {
+        "entity_id":  "Peek",
+        "entity_type":  "startup",
+        "canonical_name":  "Peek",
+        "slug":  "peek",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Peek"
+    },
+    {
+        "entity_id":  "pepton",
+        "entity_type":  "startup",
+        "canonical_name":  "Pepton",
+        "slug":  "pepton",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "pepton"
+    },
+    {
+        "entity_id":  "phylumtech",
+        "entity_type":  "startup",
+        "canonical_name":  "PhylumTech",
+        "slug":  "phylumtech",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "phylumtech"
+    },
+    {
+        "entity_id":  "Pill.AR",
+        "entity_type":  "startup",
+        "canonical_name":  "Pill.AR",
+        "slug":  "pill-ar",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Pill.AR"
+    },
+    {
+        "entity_id":  "plamic",
+        "entity_type":  "startup",
+        "canonical_name":  "Plamic",
+        "slug":  "plamic",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "plamic"
+    },
+    {
+        "entity_id":  "poas_bioenergy",
+        "entity_type":  "startup",
+        "canonical_name":  "PoÃ¡s Bioenergy",
+        "slug":  "po-s-bioenergy",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "poas_bioenergy"
+    },
+    {
+        "entity_id":  "Polymera",
+        "entity_type":  "startup",
+        "canonical_name":  "Polymera",
+        "slug":  "polymera",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "Polymera"
+    },
+    {
+        "entity_id":  "pregen",
+        "entity_type":  "startup",
+        "canonical_name":  "PreGen",
+        "slug":  "pregen",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "pregen"
+    },
+    {
+        "entity_id":  "Prolific Machines",
+        "entity_type":  "startup",
+        "canonical_name":  "Prolific Machines",
+        "slug":  "prolific-machines",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Prolific Machines"
+    },
+    {
+        "entity_id":  "Protiva",
+        "entity_type":  "startup",
+        "canonical_name":  "Protiva",
+        "slug":  "protiva",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "Protiva"
+    },
+    {
+        "entity_id":  "Puna Bio",
+        "entity_type":  "startup",
+        "canonical_name":  "Puna Bio",
+        "slug":  "puna-bio",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Puna Bio"
+    },
+    {
+        "entity_id":  "Purple Dental",
+        "entity_type":  "startup",
+        "canonical_name":  "Purple Dental",
+        "slug":  "purple-dental",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Purple Dental"
+    },
+    {
+        "entity_id":  "Qnity",
+        "entity_type":  "startup",
+        "canonical_name":  "Qnity",
+        "slug":  "qnity",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "Qnity"
+    },
+    {
+        "entity_id":  "Qumir Nano",
+        "entity_type":  "startup",
+        "canonical_name":  "Qumir Nano",
+        "slug":  "qumir-nano",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Qumir Nano"
+    },
+    {
+        "entity_id":  "RadBio",
+        "entity_type":  "startup",
+        "canonical_name":  "RadBio",
+        "slug":  "radbio",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "RadBio"
+    },
+    {
+        "entity_id":  "Radial",
+        "entity_type":  "startup",
+        "canonical_name":  "Radial",
+        "slug":  "radial",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "Radial"
+    },
+    {
+        "entity_id":  "resistia",
+        "entity_type":  "startup",
+        "canonical_name":  "Resistia",
+        "slug":  "resistia",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "resistia"
+    },
+    {
+        "entity_id":  "Retidiag",
+        "entity_type":  "startup",
+        "canonical_name":  "Retidiag",
+        "slug":  "retidiag",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Retidiag"
+    },
+    {
+        "entity_id":  "retrypay",
+        "entity_type":  "startup",
+        "canonical_name":  "Retrypay",
+        "slug":  "retrypay",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "retrypay"
+    },
+    {
+        "entity_id":  "Risas Pendientes",
+        "entity_type":  "startup",
+        "canonical_name":  "Risas Pendientes",
+        "slug":  "risas-pendientes",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Risas Pendientes"
+    },
+    {
+        "entity_id":  "ruedata",
+        "entity_type":  "startup",
+        "canonical_name":  "Ruedata",
+        "slug":  "ruedata",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "ruedata"
+    },
+    {
+        "entity_id":  "Ruuts",
+        "entity_type":  "startup",
+        "canonical_name":  "Ruuts",
+        "slug":  "ruuts",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "Ruuts"
+    },
+    {
+        "entity_id":  "Satellites On Fire",
+        "entity_type":  "startup",
+        "canonical_name":  "Satellites On Fire",
+        "slug":  "satellites-on-fire",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Satellites On Fire"
+    },
+    {
+        "entity_id":  "Satellogic",
+        "entity_type":  "startup",
+        "canonical_name":  "Satellogic",
+        "slug":  "satellogic",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "Satellogic"
+    },
+    {
+        "entity_id":  "SciPhage",
+        "entity_type":  "startup",
+        "canonical_name":  "SciPhage",
+        "slug":  "sciphage",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "SciPhage"
+    },
+    {
+        "entity_id":  "Scitherm",
+        "entity_type":  "startup",
+        "canonical_name":  "Scitherm",
+        "slug":  "scitherm",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Scitherm"
+    },
+    {
+        "entity_id":  "scitherm_therapeutics",
+        "entity_type":  "startup",
+        "canonical_name":  "Scitherm Therapeutics",
+        "slug":  "scitherm-therapeutics",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "scitherm_therapeutics"
+    },
+    {
+        "entity_id":  "seedmatriz",
+        "entity_type":  "startup",
+        "canonical_name":  "SeedMatriz",
+        "slug":  "seedmatriz",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "seedmatriz"
+    },
+    {
+        "entity_id":  "Semion",
+        "entity_type":  "startup",
+        "canonical_name":  "Semion",
+        "slug":  "semion",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "Semion"
+    },
+    {
+        "entity_id":  "Semtive",
+        "entity_type":  "startup",
+        "canonical_name":  "Semtive",
+        "slug":  "semtive",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Semtive"
+    },
+    {
+        "entity_id":  "sensei",
+        "entity_type":  "startup",
+        "canonical_name":  "Sensei",
+        "slug":  "sensei",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "sensei"
+    },
+    {
+        "entity_id":  "sensify",
+        "entity_type":  "startup",
+        "canonical_name":  "Sensify",
+        "slug":  "sensify",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "sensify"
+    },
+    {
+        "entity_id":  "SiloReal",
+        "entity_type":  "startup",
+        "canonical_name":  "SiloReal",
+        "slug":  "siloreal",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "SiloReal"
+    },
+    {
+        "entity_id":  "single_strand_biotech",
+        "entity_type":  "startup",
+        "canonical_name":  "Single Strand Biotech",
+        "slug":  "single-strand-biotech",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "single_strand_biotech"
+    },
+    {
+        "entity_id":  "Skyloom",
+        "entity_type":  "startup",
+        "canonical_name":  "Skyloom",
+        "slug":  "skyloom",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "Skyloom"
+    },
+    {
+        "entity_id":  "Smart Tissues",
+        "entity_type":  "startup",
+        "canonical_name":  "Smart Tissues",
+        "slug":  "smart-tissues",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Smart Tissues"
+    },
+    {
+        "entity_id":  "Smartex",
+        "entity_type":  "startup",
+        "canonical_name":  "Smartex",
+        "slug":  "smartex",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Smartex"
+    },
+    {
+        "entity_id":  "Soleit",
+        "entity_type":  "startup",
+        "canonical_name":  "Soleit",
+        "slug":  "soleit",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Soleit"
+    },
+    {
+        "entity_id":  "solfium",
+        "entity_type":  "startup",
+        "canonical_name":  "Solfium",
+        "slug":  "solfium",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "solfium"
+    },
+    {
+        "entity_id":  "SoyGREEN",
+        "entity_type":  "startup",
+        "canonical_name":  "SoyGREEN",
+        "slug":  "soygreen",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "SoyGREEN"
+    },
+    {
+        "entity_id":  "Spectrum",
+        "entity_type":  "startup",
+        "canonical_name":  "Spectrum",
+        "slug":  "spectrum",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "Spectrum"
+    },
+    {
+        "entity_id":  "SphereBio",
+        "entity_type":  "startup",
+        "canonical_name":  "SphereBio",
+        "slug":  "spherebio",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "SphereBio"
+    },
+    {
+        "entity_id":  "Splight",
+        "entity_type":  "startup",
+        "canonical_name":  "Splight",
+        "slug":  "splight",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "Splight"
+    },
+    {
+        "entity_id":  "stamm",
+        "entity_type":  "startup",
+        "canonical_name":  "StÃ¤mm",
+        "slug":  "st-mm",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "stamm"
+    },
+    {
+        "entity_id":  "0",
+        "entity_type":  "startup",
+        "canonical_name":  "Stämm",
+        "slug":  "st-mm",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "0"
+    },
+    {
+        "entity_id":  "Starlight Ventures",
+        "entity_type":  "startup",
+        "canonical_name":  "Starlight Ventures",
+        "slug":  "starlight-ventures",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Starlight Ventures"
+    },
+    {
+        "entity_id":  "Stradot",
+        "entity_type":  "startup",
+        "canonical_name":  "Stradot",
+        "slug":  "stradot",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "Stradot"
+    },
+    {
+        "entity_id":  "Sylvarum",
+        "entity_type":  "startup",
+        "canonical_name":  "Sylvarum",
+        "slug":  "sylvarum",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "Sylvarum"
+    },
+    {
+        "entity_id":  "Synergic Bio Solutions",
+        "entity_type":  "startup",
+        "canonical_name":  "Synergic Bio Solutions",
+        "slug":  "synergic-bio-solutions",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Synergic Bio Solutions"
+    },
+    {
+        "entity_id":  "Synthetic Ocular Restoration",
+        "entity_type":  "startup",
+        "canonical_name":  "Synthetic Ocular Restoration",
+        "slug":  "synthetic-ocular-restoration",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Synthetic Ocular Restoration"
+    },
+    {
+        "entity_id":  "syocin_bio",
+        "entity_type":  "startup",
+        "canonical_name":  "Syocin Bio",
+        "slug":  "syocin-bio",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "syocin_bio"
+    },
+    {
+        "entity_id":  "Syocin Biotech",
+        "entity_type":  "startup",
+        "canonical_name":  "Syocin Biotech",
+        "slug":  "syocin-biotech",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Syocin Biotech"
+    },
+    {
+        "entity_id":  "TELL",
+        "entity_type":  "startup",
+        "canonical_name":  "TELL",
+        "slug":  "tell",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "TELL"
+    },
+    {
+        "entity_id":  "Tensor Care",
+        "entity_type":  "startup",
+        "canonical_name":  "Tensor Care",
+        "slug":  "tensor-care",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Tensor Care"
+    },
+    {
+        "entity_id":  "teramot",
+        "entity_type":  "startup",
+        "canonical_name":  "Teramot",
+        "slug":  "teramot",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "teramot"
+    },
+    {
+        "entity_id":  "tesabio_ai",
+        "entity_type":  "startup",
+        "canonical_name":  "Tesabio.ai",
+        "slug":  "tesabio-ai",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "tesabio_ai"
+    },
+    {
+        "entity_id":  "The Earth Says",
+        "entity_type":  "startup",
+        "canonical_name":  "The Earth Says",
+        "slug":  "the-earth-says",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "The Earth Says"
+    },
+    {
+        "entity_id":  "Tintte",
+        "entity_type":  "startup",
+        "canonical_name":  "Tintte",
+        "slug":  "tintte",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "Tintte"
+    },
+    {
+        "entity_id":  "Tissue Dynamics",
+        "entity_type":  "startup",
+        "canonical_name":  "Tissue Dynamics",
+        "slug":  "tissue-dynamics",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Tissue Dynamics"
+    },
+    {
+        "entity_id":  "tomorrow",
+        "entity_type":  "startup",
+        "canonical_name":  "Tomorrow",
+        "slug":  "tomorrow",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "tomorrow"
+    },
+    {
+        "entity_id":  "Tomorrow Foods",
+        "entity_type":  "startup",
+        "canonical_name":  "Tomorrow Foods",
+        "slug":  "tomorrow-foods",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Tomorrow Foods"
+    },
+    {
+        "entity_id":  "tracestory",
+        "entity_type":  "startup",
+        "canonical_name":  "Tracestory",
+        "slug":  "tracestory",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "tracestory"
+    },
+    {
+        "entity_id":  "TravelX",
+        "entity_type":  "startup",
+        "canonical_name":  "TravelX",
+        "slug":  "travelx",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "TravelX"
+    },
+    {
+        "entity_id":  "Trears Biomarkers",
+        "entity_type":  "startup",
+        "canonical_name":  "Trears Biomarkers",
+        "slug":  "trears-biomarkers",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Trears Biomarkers"
+    },
+    {
+        "entity_id":  "Trebe Biotech",
+        "entity_type":  "startup",
+        "canonical_name":  "Trebe Biotech",
+        "slug":  "trebe-biotech",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Trebe Biotech"
+    },
+    {
+        "entity_id":  "Ubique Bio",
+        "entity_type":  "startup",
+        "canonical_name":  "Ubique Bio",
+        "slug":  "ubique-bio",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Ubique Bio"
+    },
+    {
+        "entity_id":  "UNIBAIO",
+        "entity_type":  "startup",
+        "canonical_name":  "UNIBAIO",
+        "slug":  "unibaio",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "UNIBAIO"
+    },
+    {
+        "entity_id":  "Unleash Immuno Oncolytics",
+        "entity_type":  "startup",
+        "canonical_name":  "Unleash Immuno Oncolytics",
+        "slug":  "unleash-immuno-oncolytics",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Unleash Immuno Oncolytics"
+    },
+    {
+        "entity_id":  "unSpun",
+        "entity_type":  "startup",
+        "canonical_name":  "unSpun",
+        "slug":  "unspun",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "unSpun"
+    },
+    {
+        "entity_id":  "untech",
+        "entity_type":  "startup",
+        "canonical_name":  "UnTech",
+        "slug":  "untech",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "untech"
+    },
+    {
+        "entity_id":  "UpDairy",
+        "entity_type":  "startup",
+        "canonical_name":  "UpDairy",
+        "slug":  "updairy",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "UpDairy"
+    },
+    {
+        "entity_id":  "Vali",
+        "entity_type":  "startup",
+        "canonical_name":  "Vali",
+        "slug":  "vali",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Vali"
+    },
+    {
+        "entity_id":  "Vexxel Biotech",
+        "entity_type":  "startup",
+        "canonical_name":  "Vexxel Biotech",
+        "slug":  "vexxel-biotech",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Vexxel Biotech"
+    },
+    {
+        "entity_id":  "ViewMind",
+        "entity_type":  "startup",
+        "canonical_name":  "ViewMind",
+        "slug":  "viewmind",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "ViewMind"
+    },
+    {
+        "entity_id":  "Vmind",
+        "entity_type":  "startup",
+        "canonical_name":  "Vmind",
+        "slug":  "vmind",
+        "source_presence":  "nodes_csv|graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.9",
+        "staging_entity_id":  "Vmind"
+    },
+    {
+        "entity_id":  "webee",
+        "entity_type":  "startup",
+        "canonical_name":  "Webee",
+        "slug":  "webee",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "webee"
+    },
+    {
+        "entity_id":  "WerkénVac",
+        "entity_type":  "startup",
+        "canonical_name":  "WerkénVac",
+        "slug":  "werk-nvac",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "WerkénVac"
+    },
+    {
+        "entity_id":  "wiagro",
+        "entity_type":  "startup",
+        "canonical_name":  "Wiagro",
+        "slug":  "wiagro",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "wiagro"
+    },
+    {
+        "entity_id":  "wisy",
+        "entity_type":  "startup",
+        "canonical_name":  "Wisy",
+        "slug":  "wisy",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "wisy"
+    },
+    {
+        "entity_id":  "Zavia Bio",
+        "entity_type":  "startup",
+        "canonical_name":  "Zavia Bio",
+        "slug":  "zavia-bio",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "Zavia Bio"
+    },
+    {
+        "entity_id":  "ZEV Biotech",
+        "entity_type":  "startup",
+        "canonical_name":  "ZEV Biotech",
+        "slug":  "zev-biotech",
+        "source_presence":  "nodes_csv",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "ZEV Biotech"
+    },
+    {
+        "entity_id":  "zipnova",
+        "entity_type":  "startup",
+        "canonical_name":  "Zipnova",
+        "slug":  "zipnova",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "zipnova"
+    },
+    {
+        "entity_id":  "zoomagri",
+        "entity_type":  "startup",
+        "canonical_name":  "ZoomAgri",
+        "slug":  "zoomagri",
+        "source_presence":  "graphml",
+        "quality_flags":  "",
+        "confidence_score":  "0.6",
+        "staging_entity_id":  "zoomagri"
+    }
+]

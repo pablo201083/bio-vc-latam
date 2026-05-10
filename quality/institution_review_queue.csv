@@ -1,0 +1,6 @@
+﻿"entity_id","canonical_name","canonical_type","confidence_score","integrated_sources","quality_flags"
+"universidad-nacional-de-asunci","Universidad Nacional de Asunci","institution_candidate","0.65","historical|historical_clean","name_repaired"
+"universidad-nacional-de-c","Universidad Nacional de C","institution_candidate","0.65","historical|historical_clean","name_repaired"
+"universidad-nacional-de-r","Universidad Nacional de R","institution_candidate","0.65","historical|historical_clean","name_repaired"
+"universidad-nacional-de-san-mart","Universidad Nacional de San Mart","institution_candidate","0.65","historical|historical_clean","name_repaired"
+"universidad-nacional-de-tucum","Universidad Nacional de Tucum","institution_candidate","0.65","historical|historical_clean","name_repaired"

@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fondos BIO VC LATAM</title>
+  <link rel="stylesheet" href="./styles.css?v=20260424g">
+  <style>
+    body.funds-page .page-shell {
+      max-width: 1640px;
+      padding-top: 16px;
+    }
+    .fund-hero {
+      margin-bottom: 12px;
+      display: grid;
+      grid-template-columns: minmax(0, 1.75fr) minmax(320px, 0.75fr);
+      gap: 14px;
+    }
+    .fund-hero h1 {
+      font-size: clamp(2rem, 3vw, 3.45rem);
+      line-height: 0.96;
+      margin-bottom: 10px;
+    }
+    .fund-hero .lede {
+      max-width: 64rem;
+      font-size: 0.98rem;
+      line-height: 1.42;
+    }
+    .fund-hero .hero-copy {
+      padding: 22px 28px;
+    }
+    .fund-hero .hero-meta {
+      align-content: stretch;
+      gap: 10px;
+      padding: 12px;
+    }
+    .funds-page .summary-grid {
+      grid-template-columns: repeat(7, minmax(0, 1fr));
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .funds-page .summary-card {
+      padding: 15px 16px;
+      min-height: 112px;
+    }
+    .fund-layout {
+      display: grid;
+      grid-template-columns: minmax(360px, 420px) minmax(0, 1fr);
+      gap: 20px;
+    }
+    .fund-sidebar,
+    .fund-main {
+      display: grid;
+      gap: 20px;
+      min-width: 0;
+      align-content: start;
+    }
+    .fund-list {
+      display: grid;
+      gap: 10px;
+      max-height: calc(100vh - 330px);
+      overflow: auto;
+      padding-right: 4px;
+    }
+    .fund-row {
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: rgba(255,255,255,0.86);
+      padding: 12px;
+      cursor: pointer;
+      display: grid;
+      gap: 8px;
+      width: 100%;
+      text-align: left;
+    }
+    .fund-row:hover,
+    .fund-row.active {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.08);
+    }
+    .fund-row-top,
+    .table-topline {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    .fund-row-meta,
+    .chip-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .fund-filters {
+      display: grid;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+    .fund-filter-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+    }
+    .fund-input,
+    .fund-select {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 13px;
+      background: #fff;
+      color: var(--ink);
+      font: inherit;
+      padding: 9px 11px;
+    }
+    .metric-grid-4 {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+    }
+    .insight-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+    }
+    .theme-stack,
+    .allocator-list,
+    .overlap-list,
+    .startup-list {
+      display: grid;
+      gap: 10px;
+    }
+    .bar-row {
+      display: grid;
+      gap: 6px;
+    }
+    .bar-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      font-size: 0.92rem;
+    }
+    .bar-track {
+      width: 100%;
+      height: 8px;
+      border-radius: 999px;
+      background: #eadfce;
+      overflow: hidden;
+    }
+    .bar-fill {
+      height: 100%;
+      border-radius: 999px;
+    }
+    .detail-grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+    .detail-box,
+    .table-item {
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: rgba(255,255,255,0.86);
+      padding: 12px;
+      display: grid;
+      gap: 6px;
+    }
+    .detail-box span {
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+    .detail-box strong {
+      font-size: 1rem;
+      line-height: 1.3;
+    }
+    .item-title,
+    .table-sub,
+    .detail-box strong {
+      overflow-wrap: anywhere;
+    }
+    .item-title {
+      font-weight: 700;
+    }
+    .table-sub,
+    .item-meta {
+      color: var(--muted);
+      font-size: 0.9rem;
+      line-height: 1.45;
+    }
+    @media (max-width: 1180px) {
+      .fund-hero,
+      .fund-layout {
+        grid-template-columns: 1fr;
+      }
+      .funds-page .summary-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .metric-grid-4,
+      .detail-grid-2,
+      .insight-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .fund-list {
+        max-height: none;
+      }
+    }
+    @media (max-width: 760px) {
+      .funds-page .summary-grid,
+      .metric-grid-4,
+      .detail-grid-2,
+      .insight-grid,
+      .fund-filter-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body class="funds-page">
+  <div class="page-shell">
+    <header class="hero fund-hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Capital map</p>
+        <h1>Mapa de fondos y capital BIO VC LATAM</h1>
+        <p class="lede">Una lectura comparativa de actores de capital: VCs, company builders, aceleradoras, corporates, allocators y fondos de fondos. La vista prioriza cartera BIO confirmada, calidad de evidencia y foco tematico.</p>
+      </div>
+      <div class="hero-meta">
+        <div class="meta-card">
+          <span class="meta-label">Cobertura</span>
+          <strong id="funds-generated-at">Cargando...</strong>
+        </div>
+        <div class="meta-card">
+          <span class="meta-label">Lectura</span>
+          <strong>Tipo de capital + cartera BIO</strong>
+        </div>
+        <div class="meta-card">
+          <span class="meta-label">Navegacion</span>
+          <strong><a href="./index.html" style="color:inherit">Volver al piloto</a></strong>
+        </div>
+      </div>
+    </header>
+
+    <section class="summary-grid" id="fund-summary-metrics"></section>
+
+    <section class="fund-layout">
+      <aside class="fund-sidebar">
+        <section class="panel">
+          <div class="panel-head">
+            <h2>Actores de capital</h2>
+            <span class="pill" id="fund-count">0</span>
+          </div>
+          <div class="fund-filters">
+            <input id="fund-search" class="fund-input" type="search" placeholder="Buscar fondo, builder, allocator...">
+            <div class="fund-filter-grid">
+              <select id="fund-type-filter" class="fund-select"><option value="all">Todos los tipos</option></select>
+              <select id="fund-role-filter" class="fund-select"><option value="all">Todos los roles BIO</option></select>
+            </div>
+          </div>
+          <div id="fund-list" class="fund-list"></div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-head">
+            <h2>Tipos de actor</h2>
+            <span class="pill muted">Clasificacion</span>
+          </div>
+          <div id="actor-type-mix" class="theme-stack"></div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-head">
+            <h2>Themes mas financiados</h2>
+            <span class="pill muted">Universo include</span>
+          </div>
+          <div id="global-theme-mix" class="theme-stack"></div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-head">
+            <h2>Capital institucional</h2>
+            <span class="pill muted">LP / FoF</span>
+          </div>
+          <div id="capital-allocator-list" class="allocator-list"></div>
+        </section>
+      </aside>
+
+      <main class="fund-main">
+        <section class="panel">
+          <div class="panel-head">
+            <h2>Detalle del actor</h2>
+            <span class="pill muted" id="fund-detail-badge">Sin seleccion</span>
+          </div>
+          <div id="fund-detail"></div>
+        </section>
+
+        <section class="metric-grid-4" id="fund-kpis"></section>
+        <section class="insight-grid" id="fund-insights"></section>
+
+        <section class="panel">
+          <div class="panel-head">
+            <h2>Comparables mas cercanos</h2>
+            <span class="pill muted">Solapamiento de cartera</span>
+          </div>
+          <div id="fund-overlaps" class="overlap-list"></div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-head">
+            <h2>Startups del actor</h2>
+            <span class="pill muted">Include confirmadas primero</span>
+          </div>
+          <div id="fund-top-startups" class="startup-list"></div>
+        </section>
+      </main>
+    </section>
+  </div>
+
+  <script src="./text-clean.js?v=20260424g"></script>
+  <script src="./theme-system.js?v=20260424themes"></script>
+  <script src="./fund-analytics-data.js?v=20260501funds"></script>
+  <script src="./funds.js?v=20260501funds"></script>
+</body>
+</html>

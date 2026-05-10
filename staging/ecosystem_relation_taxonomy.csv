@@ -1,0 +1,12 @@
+relation_type,source_basis,notes
+funded_by,rich_graph_extracted,Detected in Gephi graphstore strings
+has_founder,rich_graph_extracted,Detected in Gephi graphstore strings
+studied_at,rich_graph_extracted,Detected in Gephi graphstore strings
+researched_at,rich_graph_extracted,Detected in Gephi graphstore strings
+member_of,rich_graph_extracted,Detected in Gephi graphstore strings
+graduated_from,rich_graph_extracted,Detected in Gephi graphstore strings
+accelerated_at,rich_graph_extracted,Detected in Gephi graphstore strings
+incubated_at,rich_graph_extracted,Detected in Gephi graphstore strings
+spin_off_from,rich_graph_extracted,Detected in Gephi graphstore strings
+collaborates_with,rich_graph_extracted,Detected in Gephi graphstore strings
+built_by,rich_graph_extracted,Detected in Gephi graphstore strings

@@ -1,0 +1,39 @@
+merge_group,canonical_entity_id,canonical_name,alias_entity_id,alias_name,entity_type,merge_confidence,merge_reason
+werkenvac,WerkénVac,WerkénVac,werken_vac,Werken Vac,startup,0.98,Same normalized name with spacing and accent variation
+werkenvac,WerkénVac,WerkénVac,werkenvac,WerkenVac,startup,0.98,Same normalized name with spacing and accent variation
+fungilife,Fungi Life,Fungi Life,fungi_life,Fungi Life,startup,0.99,Exact same name across sources
+fungilife,Fungi Life,Fungi Life,fungilife,Fungilife,startup,0.97,Same normalized name with capitalization variation
+oncoprecision,Onco Precision,Onco Precision,onco_precision,Onco Precision,startup,0.99,Exact same name across sources
+oncoprecision,Onco Precision,Onco Precision,OncoPrecision,OncoPrecision,startup,0.97,Same normalized name without space
+novospace,Novo Space,Novo Space,novo_space,Novo Space,startup,0.99,Exact same name across sources
+novospace,Novo Space,Novo Space,NovoSpace,NovoSpace,startup,0.97,Same normalized name without space
+punabio,Puna Bio,Puna Bio,puna_bio,Puna Bio,startup,0.99,Exact same name across sources
+qumirnano,Qumir Nano,Qumir Nano,qumir_nano,Qumir Nano,startup,0.99,Exact same name across sources
+nunatakbiotech,Nunatak Biotech,Nunatak Biotech,nunatak_biotech,Nunatak Biotech,startup,0.99,Exact same name across sources
+nanojumpbio,Nano Jump Bio,Nano Jump Bio,nanojump_bio,NanoJump Bio,startup,0.96,Same normalized name with spacing variation
+pillar,Pill.AR,Pill.AR,pill_ar,Pill.AR,startup,0.99,Exact same name across sources
+vexxelbiotech,Vexxel Biotech,Vexxel Biotech,vexxel_biotech,Vexxel Biotech,startup,0.99,Exact same name across sources
+ubiquebio,Ubique Bio,Ubique Bio,ubique_bio,Ubique Bio,startup,0.99,Exact same name across sources
+zevbiotech,ZEV Biotech,ZEV Biotech,zev_biotech,ZEV Biotech,startup,0.99,Exact same name across sources
+zaviabio,Zavia Bio,Zavia Bio,zavia_bio,Zavia Bio,startup,0.99,Exact same name across sources
+stamm,0,Stämm,stamm,StÃ¤mm,startup,0.95,Encoding issue and same normalized identity
+satellitesonfire,Satellites On Fire,Satellites On Fire,satellites_on_fire,Satellites on Fire,startup,0.97,Same normalized name with case variation
+trebebiotech,Trebe Biotech,Trebe Biotech,trebe_biotech,Trebe Biotech,startup,0.99,Exact same name across sources
+syntheticocularrestoration,Synthetic Ocular Restoration,Synthetic Ocular Restoration,synthetic_ocular_restoration,Synthetic Ocular Restoration,startup,0.99,Exact same name across sources
+mycoriumbiotech,Mycorium Biotech,Mycorium Biotech,mycorium_biotech,Mycorium Biotech,startup,0.99,Exact same name across sources
+bsafebiotech,Bsafe Biotech,Bsafe Biotech,bsafe_biotech,Bsafe Biotech,startup,0.99,Exact same name across sources
+breakpet,BreakPET,BreakPET,break_pet,Break Pet,startup,0.95,Same normalized name with branding variation
+dogmabiotech,Dogma Biotech,Dogma Biotech,dogma_biotech,Dogma Biotech,startup,0.99,Exact same name across sources
+dharmabioscience,Dharma BioScience,Dharma BioScience,dharma_bioscience,Dharma BioScience,startup,0.99,Exact same name across sources
+algaebio,AlgaeBio+,AlgaeBio+,algaebio,algaebio+,startup,0.96,Same normalized name with case variation
+drapercygnus,DraperCygnus,DraperCygnus,draper_cygnus,Draper Cygnus,investor,0.95,Same normalized name with spacing variation
+biodiversityintelligence,Biodiversity Intelligence,Biodiversity Intelligence,biodiversity_intelligence,Biodiversity Intelligence,startup,0.99,Exact same name across sources
+beamcroptech,BEAM CropTech,BEAM CropTech,beam_croptech,BEAM CropTech,startup,0.99,Exact same name across sources
+limaybiosciences,Limay Biosciences,Limay Biosciences,limay_biosciences,Limay Biosciences,startup,0.99,Exact same name across sources
+kreskornatech,Kresko RNATech,Kresko RNATech,kresko_rnatech,Kresko RNAtech,startup,0.94,Same normalized name with style variation
+multiplaihealth,MultiplAI Health,MultiplAI Health,multiplai_health,MultiplAI Health,startup,0.99,Exact same name across sources
+mesenchyalt,Mesenchyal-T,Mesenchyal-T,mesenchyal_t,Mesenchyal-T,startup,0.99,Exact same name across sources
+feedvax,Feed Vax,Feed Vax,Feedvax,Feedvax,startup,0.93,Possible branding variation likely same startup
+eolopharma,Eolo Pharma,Eolo Pharma,eolo_pharma,Eolo Pharma,startup,0.99,Exact same name across sources
+gisensbiotech,Gisens Biotech,Gisens Biotech,gisens_biotech,Gisens Biotech,startup,0.99,Exact same name across sources
+futurebiome,Future Biome,Future Biome,future_biome,Future Biome,startup,0.99,Exact same name across sources

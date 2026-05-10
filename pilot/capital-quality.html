@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Capital Quality Tracker</title>
+  <link rel="stylesheet" href="./styles.css?v=20260424system">
+  <style>
+    body {
+      background:
+        radial-gradient(circle at 12% 8%, rgba(15, 118, 110, 0.08), transparent 24rem),
+        radial-gradient(circle at 90% 16%, rgba(183, 121, 31, 0.10), transparent 25rem),
+        var(--paper);
+    }
+    .capital-hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.45fr) minmax(320px, 0.66fr);
+      gap: 18px;
+      align-items: stretch;
+      margin-bottom: 18px;
+    }
+    .capital-hero-main,
+    .capital-hero-side,
+    .readiness-card,
+    .focus-card,
+    .insight-strip,
+    .capital-section {
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      background: rgba(255,250,242,0.84);
+      box-shadow: var(--shadow);
+    }
+    .capital-hero-main {
+      padding: clamp(24px, 4vw, 42px);
+      background:
+        radial-gradient(circle at 88% 14%, rgba(114, 203, 194, 0.30), transparent 29%),
+        linear-gradient(140deg, rgba(255,250,242,0.96), rgba(242,235,224,0.88));
+    }
+    .capital-hero-main h1 {
+      margin: 4px 0 10px;
+      max-width: 980px;
+      font-size: clamp(3rem, 6vw, 5.8rem);
+      letter-spacing: -0.075em;
+      line-height: 0.91;
+    }
+    .capital-hero-main .lede {
+      max-width: 890px;
+    }
+    .capital-hero-side {
+      padding: 18px;
+      display: grid;
+      gap: 12px;
+      align-content: start;
+      background: linear-gradient(180deg, rgba(255,255,255,0.72), rgba(247,241,232,0.82));
+    }
+    .capital-meta-card {
+      border: 1px solid rgba(217,206,190,0.86);
+      border-radius: 18px;
+      background: rgba(255,255,255,0.68);
+      padding: 13px 14px;
+      display: grid;
+      gap: 3px;
+    }
+    .capital-meta-card span,
+    .row-sub,
+    .capital-note {
+      color: var(--muted);
+    }
+    .capital-meta-card strong {
+      font-size: 1.08rem;
+      line-height: 1.18;
+    }
+    .quality-overview {
+      display: grid;
+      grid-template-columns: minmax(280px, 0.82fr) minmax(0, 1.35fr) minmax(260px, 0.82fr);
+      gap: 16px;
+      align-items: stretch;
+      margin-bottom: 18px;
+    }
+    .readiness-card,
+    .focus-card,
+    .insight-strip,
+    .capital-section {
+      padding: 18px;
+    }
+    .readiness-card {
+      display: grid;
+      gap: 12px;
+      background:
+        radial-gradient(circle at 74% 16%, rgba(15, 118, 110, 0.20), transparent 35%),
+        linear-gradient(145deg, #fffaf2, #f3eadc);
+    }
+    .score-label,
+    .section-kicker {
+      color: #04766e;
+      font-size: 0.78rem;
+      font-weight: 900;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+    .readiness-card strong {
+      font-size: clamp(4rem, 8vw, 6.8rem);
+      letter-spacing: -0.08em;
+      line-height: 0.86;
+    }
+    .score-meter,
+    .bar-track {
+      width: 100%;
+      border-radius: 999px;
+      background: #e7dbc9;
+      overflow: hidden;
+    }
+    .score-meter {
+      height: 13px;
+    }
+    .score-meter span,
+    .bar-fill {
+      display: block;
+      height: 100%;
+      border-radius: inherit;
+      background: linear-gradient(90deg, #f97316, #0f766e);
+    }
+    .focus-card {
+      display: grid;
+      gap: 12px;
+      background: rgba(255,255,255,0.64);
+    }
+    .focus-card h2 {
+      margin: 0;
+      font-size: clamp(1.55rem, 2.7vw, 2.4rem);
+      line-height: 0.98;
+    }
+    .focus-list {
+      display: grid;
+      gap: 8px;
+    }
+    .focus-item {
+      display: grid;
+      grid-template-columns: 34px minmax(0, 1fr) auto;
+      gap: 10px;
+      align-items: center;
+      border: 1px solid rgba(217,206,190,0.74);
+      border-radius: 15px;
+      padding: 10px;
+      background: rgba(255,250,242,0.72);
+    }
+    .focus-rank {
+      width: 28px;
+      height: 28px;
+      border-radius: 999px;
+      display: grid;
+      place-items: center;
+      background: #0f766e;
+      color: #fffaf2;
+      font-weight: 900;
+    }
+    .insight-strip {
+      display: grid;
+      gap: 12px;
+      background:
+        radial-gradient(circle at 85% 8%, rgba(249, 115, 22, 0.14), transparent 42%),
+        rgba(255,255,255,0.62);
+    }
+    .insight-number {
+      font-size: clamp(2rem, 4vw, 3.5rem);
+      font-weight: 900;
+      letter-spacing: -0.06em;
+      line-height: 0.9;
+    }
+    .metric-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+    .capital-quality-grid {
+      display: grid;
+      grid-template-columns: minmax(280px, 0.34fr) minmax(0, 1fr);
+      gap: 16px;
+    }
+    .capital-quality-sidebar,
+    .capital-quality-main {
+      display: grid;
+      gap: 16px;
+      align-content: start;
+    }
+    .progress-list,
+    .bar-list,
+    .queue-list,
+    .strategy-list,
+    .evidence-ladder,
+    .component-grid {
+      display: grid;
+      gap: 10px;
+    }
+    .summary-card,
+    .progress-row,
+    .capital-row,
+    .strategy-card,
+    .component-card,
+    .queue-item,
+    .evidence-level {
+      border: 1px solid var(--line);
+      border-radius: 17px;
+      background: rgba(255,255,255,0.78);
+      padding: 13px;
+    }
+    .summary-card,
+    .progress-row,
+    .capital-row,
+    .strategy-card,
+    .component-card {
+      display: grid;
+      gap: 8px;
+    }
+    .summary-card .label,
+    .row-label {
+      color: var(--muted);
+      font-size: 0.82rem;
+      font-weight: 700;
+    }
+    .summary-card .value {
+      font-size: 1.8rem;
+      letter-spacing: -0.045em;
+      line-height: 0.95;
+    }
+    .row-top,
+    .section-title {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: baseline;
+      font-weight: 800;
+    }
+    .section-title {
+      align-items: start;
+      margin-bottom: 12px;
+    }
+    .section-title h2 {
+      margin: 0;
+    }
+    .row-sub {
+      font-size: 0.88rem;
+      line-height: 1.42;
+    }
+    .capital-note {
+      line-height: 1.5;
+      margin-top: 0;
+    }
+    .bar-track {
+      height: 10px;
+    }
+    .bar-fill {
+      background: linear-gradient(90deg, var(--accent), #22c55e);
+    }
+    .bar-fill.warm {
+      background: linear-gradient(90deg, #f97316, #ef4444);
+    }
+    .bar-fill.muted {
+      background: linear-gradient(90deg, #94a3b8, #64748b);
+    }
+    .bar-fill.good {
+      background: linear-gradient(90deg, #0f766e, #22c55e);
+    }
+    .two-col,
+    .component-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+    .three-col {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+    }
+    .queue-item {
+      display: grid;
+      grid-template-columns: minmax(170px, 0.8fr) minmax(260px, 1.3fr) minmax(150px, auto);
+      gap: 12px;
+      align-items: center;
+    }
+    .queue-item strong,
+    .evidence-level strong,
+    .component-card strong {
+      display: block;
+      line-height: 1.15;
+    }
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      justify-content: flex-end;
+    }
+    .evidence-level {
+      display: grid;
+      grid-template-columns: 44px minmax(0, 1fr) minmax(120px, auto);
+      gap: 12px;
+      align-items: center;
+    }
+    .evidence-number {
+      width: 38px;
+      height: 38px;
+      border-radius: 999px;
+      display: grid;
+      place-items: center;
+      font-weight: 900;
+      color: #fffaf2;
+      background: var(--accent);
+    }
+    .evidence-level.low .evidence-number {
+      background: #9a3412;
+    }
+    .evidence-level.mid .evidence-number {
+      background: #b7791f;
+    }
+    .evidence-level.high .evidence-number {
+      background: #047857;
+    }
+    .ladder-track {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+    .ladder-segment {
+      min-height: 76px;
+      border-radius: 16px;
+      padding: 10px;
+      border: 1px solid rgba(217,206,190,0.75);
+      background: rgba(255,255,255,0.72);
+      display: grid;
+      align-content: space-between;
+      gap: 6px;
+    }
+    .ladder-segment strong {
+      font-size: 1.35rem;
+      line-height: 1;
+    }
+    .component-card:first-child {
+      background:
+        radial-gradient(circle at 90% 8%, rgba(15,118,110,0.16), transparent 38%),
+        rgba(255,255,255,0.82);
+      border-color: rgba(15,118,110,0.26);
+    }
+    .component-card strong {
+      font-size: 1.5rem;
+    }
+    .compact-section {
+      max-height: 580px;
+      overflow: auto;
+      padding-right: 2px;
+    }
+    .priority-section .queue-item:first-child,
+    .priority-section .capital-row:first-child {
+      border-color: rgba(15,118,110,0.35);
+      box-shadow: 0 10px 24px rgba(15, 118, 110, 0.08);
+    }
+    @media (max-width: 1120px) {
+      .capital-hero,
+      .quality-overview,
+      .capital-quality-grid,
+      .two-col,
+      .three-col,
+      .component-grid {
+        grid-template-columns: 1fr;
+      }
+      .metric-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .queue-item,
+      .evidence-level {
+        grid-template-columns: 1fr;
+      }
+      .badge-row {
+        justify-content: flex-start;
+      }
+      .ladder-track {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="capital-hero">
+      <div class="capital-hero-main">
+        <p class="eyebrow">Capital Quality</p>
+        <h1>Calidad del grafo de capital BIO</h1>
+        <p class="lede">Tablero para convertir el atlas en inteligencia defendible: cobertura de startups BIO, evidencia auditable de aristas, estructura de hubs, coinversiones, continente principal y vacios priorizados.</p>
+      </div>
+      <div class="capital-hero-side">
+        <div class="capital-meta-card">
+          <span>Seguimiento</span>
+          <strong id="capital-quality-generated-at">Cargando...</strong>
+        </div>
+        <div class="capital-meta-card">
+          <span>Vista conectiva</span>
+          <strong><a href="./capital-atlas.html" style="color:inherit">Abrir Capital Atlas</a></strong>
+        </div>
+        <div class="capital-meta-card">
+          <span>Volver</span>
+          <strong><a href="./index.html" style="color:inherit">Command center</a></strong>
+        </div>
+      </div>
+    </header>
+
+    <section class="quality-overview">
+      <article class="readiness-card">
+        <span class="score-label">Readiness de capital</span>
+        <strong id="capital-readiness">...</strong>
+        <div class="score-meter"><span id="capital-readiness-meter" style="width:0%"></span></div>
+        <div class="row-sub">Score compuesto: cobertura BIO, evidencia publica, confianza, fondos activos, coinversion y menor dependencia de un unico hub.</div>
+      </article>
+      <article class="focus-card">
+        <span class="score-label">Proximo salto eficiente</span>
+        <h2 id="capital-next-action-title">Cargando prioridades...</h2>
+        <div id="capital-next-actions" class="focus-list"></div>
+      </article>
+      <article class="insight-strip">
+        <span class="score-label">Lectura estructural</span>
+        <div><span class="insight-number" id="capital-main-continent">...</span><div class="row-sub">del grafo BIO + fondos vive en el continente principal.</div></div>
+        <div><span class="insight-number" id="capital-floating-islands">...</span><div class="row-sub">islas no triviales siguen flotantes.</div></div>
+      </article>
+    </section>
+
+    <section class="metric-grid" id="capital-quality-metrics"></section>
+
+    <main class="capital-quality-grid">
+      <aside class="capital-quality-sidebar">
+        <section class="capital-section">
+          <div class="panel-head">
+            <h2>Progreso</h2>
+            <span class="pill">Dimensiones</span>
+          </div>
+          <div id="capital-progress" class="progress-list"></div>
+        </section>
+        <section class="capital-section">
+          <div class="panel-head">
+            <h2>Estrategia</h2>
+            <span class="pill muted">Proceso</span>
+          </div>
+          <div id="capital-strategy" class="strategy-list"></div>
+        </section>
+      </aside>
+
+      <section class="capital-quality-main">
+        <section class="capital-section">
+          <div class="section-title">
+            <h2>Que estructura buscamos</h2>
+            <span class="pill">Explicatividad</span>
+          </div>
+          <p class="capital-note">Un buen grafo de capital no es el que tiene mas nodos: es el que muestra startups BIO relevantes conectadas con fuentes auditables, fondos con tesis visibles, suficientes coinversiones para revelar comunidades y pocos vacios sistematicos por theme o pais.</p>
+          <div class="three-col" id="capital-structure"></div>
+        </section>
+
+        <section class="capital-section">
+          <div class="section-title">
+            <h2>Continentes e islas</h2>
+            <span class="pill">Topologia</span>
+          </div>
+          <p class="capital-note">La calidad estructural sube cuando las islas flotantes se conectan con aristas reales y publicas, no con puentes decorativos.</p>
+          <div id="capital-components" class="component-grid"></div>
+        </section>
+
+        <section class="capital-section">
+          <div class="section-title">
+            <h2>Escalera de evidencia</h2>
+            <span class="pill">Proximo salto</span>
+          </div>
+          <p class="capital-note">Separar "hay una URL publica del fondo" de "la relacion startup-fondo esta explicitamente respaldada" evita inflar calidad. El siguiente salto eficiente es convertir nivel 2 en nivel 3 o 4.</p>
+          <div id="evidence-ladder-track" class="ladder-track"></div>
+          <div id="evidence-ladder" class="evidence-ladder"></div>
+        </section>
+
+        <section class="two-col">
+          <section class="capital-section priority-section">
+            <div class="panel-head">
+              <h2>Gaps por theme</h2>
+              <span class="pill muted">Atacar primero</span>
+            </div>
+            <div id="theme-coverage" class="bar-list"></div>
+          </section>
+          <section class="capital-section priority-section">
+            <div class="panel-head">
+              <h2>Gaps por pais</h2>
+              <span class="pill muted">Cobertura regional</span>
+            </div>
+            <div id="country-coverage" class="bar-list"></div>
+          </section>
+        </section>
+
+        <section class="two-col">
+          <section class="capital-section">
+            <div class="panel-head">
+              <h2>Fondos mas defendibles</h2>
+              <span class="pill">Calidad cartera</span>
+            </div>
+            <div id="fund-quality" class="bar-list"></div>
+          </section>
+          <section class="capital-section priority-section">
+            <div class="panel-head">
+              <h2>Fondos a reforzar</h2>
+              <span class="pill warning">Fuente/depth</span>
+            </div>
+            <div id="fund-risk" class="bar-list"></div>
+          </section>
+        </section>
+
+        <section class="capital-section priority-section">
+          <div class="panel-head">
+            <h2>Cola: cubrir ausencias</h2>
+            <span class="pill" id="gap-queue-total">...</span>
+          </div>
+          <div id="gap-queue" class="queue-list compact-section"></div>
+        </section>
+
+        <section class="capital-section priority-section">
+          <div class="panel-head">
+            <h2>Cola: subir evidencia de aristas</h2>
+            <span class="pill warning" id="edge-queue-total">...</span>
+          </div>
+          <div id="edge-upgrade-queue" class="queue-list compact-section"></div>
+        </section>
+
+        <section class="capital-section priority-section">
+          <div class="panel-head">
+            <h2>Cola: auditar fondos top</h2>
+            <span class="pill">Edge-level</span>
+          </div>
+          <div id="fund-specific-evidence-queue" class="queue-list compact-section"></div>
+        </section>
+      </section>
+    </main>
+  </div>
+
+  <script src="./text-clean.js?v=20260422aa"></script>
+  <script src="./capital-quality-data.js?v=20260508capital-ui"></script>
+  <script src="./capital-quality.js?v=20260508capital-ui"></script>
+</body>
+</html>

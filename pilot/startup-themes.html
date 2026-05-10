@@ -1,0 +1,689 @@
+﻿<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Universo BIO ordenado por proximidad semantica</title>
+  <link rel="stylesheet" href="./styles.css?v=20260422p">
+  <style>
+    .hero-subtitle {
+      margin: 2px 0 10px;
+      font-size: 1.2rem;
+      line-height: 1.35;
+      color: var(--muted);
+      max-width: 50rem;
+    }
+    .hero.hero-compact {
+      grid-template-columns: minmax(0, 1.45fr) minmax(360px, 0.95fr);
+      align-items: stretch;
+      margin-bottom: 18px;
+    }
+    .hero-compact .hero-copy {
+      padding: 24px 28px;
+      background:
+        radial-gradient(circle at 92% 10%, rgba(58, 168, 163, 0.12), transparent 14rem),
+        linear-gradient(135deg, rgba(255,255,255,0.92), rgba(246,240,230,0.72));
+    }
+    .hero-compact h1 {
+      margin-bottom: 4px;
+    }
+    .hero-compact .lede {
+      font-size: 0.98rem;
+      line-height: 1.55;
+      max-width: 64rem;
+    }
+    .hero-compact .hero-meta {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+      padding: 14px;
+      align-content: stretch;
+    }
+    .hero-compact .meta-card {
+      padding: 13px 14px;
+      border-radius: 16px;
+      display: grid;
+      align-content: center;
+    }
+    .hero-compact .meta-card strong {
+      font-size: 0.94rem;
+      line-height: 1.25;
+    }
+    .themes-layout {
+      display: grid;
+      grid-template-columns: 430px minmax(0, 1fr);
+      gap: 20px;
+    }
+    .themes-sidebar,
+    .themes-stage {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      box-shadow: var(--shadow);
+    }
+    .themes-sidebar {
+      padding: 0;
+      overflow: hidden;
+    }
+    .themes-sidebar-head {
+      padding: 18px 18px 12px;
+      border-bottom: 1px solid var(--line);
+      display: grid;
+      gap: 12px;
+    }
+    .method-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .themes-sidebar-body {
+      padding: 18px;
+      display: grid;
+      gap: 18px;
+    }
+    .theme-list {
+      display: grid;
+      gap: 10px;
+    }
+    .theme-row {
+      display: grid;
+      gap: 8px;
+      padding: 12px 12px;
+      border: 1px solid rgba(217, 206, 190, 0.8);
+      border-radius: 14px;
+      background: rgba(255,255,255,0.82);
+      cursor: pointer;
+      text-align: left;
+    }
+    .theme-row:hover,
+    .theme-row.active {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(23, 139, 135, 0.08);
+    }
+    .theme-row-top {
+      display: grid;
+      grid-template-columns: 12px minmax(0, 1fr) auto auto;
+      gap: 10px;
+      align-items: center;
+    }
+    .theme-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 999px;
+    }
+    .theme-name {
+      font-size: 0.95rem;
+      color: var(--ink);
+      line-height: 1.25;
+      font-weight: 700;
+    }
+    .theme-count,
+    .theme-pct {
+      color: var(--muted);
+      font-size: 0.85rem;
+      white-space: nowrap;
+    }
+    .theme-bar {
+      width: 100%;
+      height: 8px;
+      border-radius: 999px;
+      background: #eadfce;
+      overflow: hidden;
+    }
+    .theme-bar-fill {
+      height: 100%;
+      border-radius: 999px;
+    }
+    .theme-description {
+      color: var(--muted);
+      font-size: 0.84rem;
+      line-height: 1.35;
+    }
+    .theme-token-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .theme-token {
+      border-radius: 999px;
+      border: 1px solid rgba(217, 206, 190, 0.84);
+      background: rgba(255,255,255,0.88);
+      color: var(--muted);
+      font-size: 0.75rem;
+      line-height: 1;
+      padding: 4px 8px;
+    }
+    .theme-company-line {
+      color: var(--muted);
+      font-size: 0.8rem;
+      line-height: 1.25;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .theme-company-label {
+      color: var(--ink);
+      font-weight: 700;
+    }
+    .theme-quality-line {
+      color: var(--muted);
+      font-size: 0.78rem;
+      line-height: 1.25;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      align-items: center;
+    }
+    .theme-quality-pill {
+      border-radius: 999px;
+      background: rgba(58, 168, 163, 0.12);
+      color: var(--accent);
+      font-weight: 700;
+      padding: 3px 7px;
+    }
+    .theme-quality-pill.warn {
+      background: rgba(240, 138, 36, 0.13);
+      color: #9a5a12;
+    }
+    .snapshot-box {
+      border-top: 1px solid var(--line);
+      padding-top: 18px;
+      color: var(--muted);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+    .themes-stage {
+      padding: 16px;
+    }
+    .themes-toolbar {
+      display: grid;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    .themes-select {
+      min-width: 0;
+      max-width: none;
+      width: 100%;
+    }
+    .map-toolbar-head {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 12px;
+      align-items: start;
+      padding: 12px 14px;
+      border: 1px solid rgba(217, 206, 190, 0.78);
+      border-radius: 18px;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.86), rgba(249,245,237,0.8));
+    }
+    .map-toolbar-title {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+      color: var(--ink);
+      font-weight: 800;
+      margin-bottom: 4px;
+    }
+    .map-toolbar-title span {
+      color: var(--accent);
+      font-size: 0.78rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+    .map-toolbar-actions {
+      display: flex;
+      justify-content: flex-end;
+      gap: 8px;
+      align-items: center;
+    }
+    .map-control-panel {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(260px, 0.78fr) auto;
+      gap: 10px;
+      align-items: end;
+      padding: 12px;
+      border: 1px solid rgba(217, 206, 190, 0.78);
+      border-radius: 18px;
+      background: rgba(255,255,255,0.68);
+    }
+    .control-group-taxonomy {
+      grid-column: 1 / -1;
+    }
+    .control-group {
+      display: grid;
+      gap: 6px;
+      min-width: 0;
+    }
+    .control-label {
+      color: var(--muted);
+      font-size: 0.74rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .cluster-control-grid {
+      display: grid;
+      grid-template-columns: minmax(190px, 1fr) minmax(150px, 0.75fr) minmax(78px, 0.36fr);
+      gap: 8px;
+      align-items: center;
+    }
+    .highlight-control-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 8px;
+      align-items: center;
+    }
+    .cluster-control-grid select {
+      min-width: 0;
+      width: 100%;
+    }
+    .highlight-control-grid select {
+      min-width: 0;
+      width: 100%;
+    }
+    .startup-search-wrap {
+      position: relative;
+      min-width: 0;
+    }
+    .startup-search-input {
+      width: 100%;
+      min-width: 0;
+    }
+    .startup-search-results {
+      position: absolute;
+      z-index: 6;
+      top: calc(100% + 6px);
+      left: 0;
+      right: 0;
+      display: none;
+      max-height: 260px;
+      overflow: auto;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: rgba(255, 252, 246, 0.98);
+      box-shadow: var(--shadow);
+      padding: 6px;
+    }
+    .startup-search-results.open {
+      display: grid;
+      gap: 4px;
+    }
+    .startup-search-result {
+      border: 0;
+      border-radius: 10px;
+      background: transparent;
+      color: var(--ink);
+      cursor: pointer;
+      display: grid;
+      gap: 2px;
+      padding: 8px 10px;
+      text-align: left;
+      font: inherit;
+    }
+    .startup-search-result:hover,
+    .startup-search-result.active {
+      background: rgba(58, 168, 163, 0.12);
+    }
+    .startup-search-result small {
+      color: var(--muted);
+      font-size: 0.76rem;
+    }
+    .themes-toolbar-left {
+      display: grid;
+      gap: 10px;
+      min-width: 0;
+    }
+    .scope-toggle-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .scope-toggle {
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--muted);
+      border-radius: 999px;
+      padding: 7px 12px;
+      font: inherit;
+      font-size: 0.88rem;
+      cursor: pointer;
+    }
+    .scope-toggle.active {
+      background: rgba(58, 168, 163, 0.12);
+      border-color: var(--accent);
+      color: var(--ink);
+    }
+    .scope-toggle.muted {
+      background: rgba(255,255,255,0.72);
+      color: var(--muted);
+      border-color: var(--line);
+    }
+    .themes-wrap {
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(15, 118, 110, 0.04), transparent 18rem),
+        radial-gradient(circle at 80% 15%, rgba(154, 52, 18, 0.05), transparent 20rem),
+        #f7f4ee;
+      overflow: hidden;
+      min-height: 760px;
+      position: relative;
+    }
+    .themes-note {
+      color: var(--muted);
+      font-size: 0.86rem;
+      max-width: 68rem;
+      line-height: 1.5;
+    }
+    .themes-controls {
+      position: absolute;
+      right: 16px;
+      bottom: 16px;
+      display: grid;
+      gap: 8px;
+      z-index: 2;
+    }
+    .themes-control-btn {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.95);
+      box-shadow: var(--shadow);
+      font: inherit;
+      font-size: 1.1rem;
+      cursor: pointer;
+    }
+    .themes-control-btn:hover {
+      border-color: var(--accent);
+    }
+    .hover-card {
+      position: absolute;
+      min-width: 280px;
+      max-width: 340px;
+      padding: 12px 14px;
+      border: 1px solid rgba(217, 206, 190, 0.9);
+      border-radius: 16px;
+      background: rgba(255, 252, 247, 0.96);
+      box-shadow: 0 18px 36px rgba(44, 36, 22, 0.16);
+      pointer-events: none;
+      opacity: 0;
+      transform: translateY(6px);
+      transition: opacity 120ms ease, transform 120ms ease;
+      z-index: 3;
+    }
+    .hover-card.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .hover-title {
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--ink);
+      margin-bottom: 8px;
+    }
+    .hover-chip-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 10px;
+    }
+    .hover-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 3px 9px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.94);
+      border: 1px solid var(--line);
+      font-size: 0.78rem;
+      color: var(--muted);
+      line-height: 1;
+    }
+    .hover-chip-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      flex: 0 0 auto;
+    }
+    .hover-summary {
+      font-size: 0.88rem;
+      color: var(--ink);
+      line-height: 1.45;
+      margin-bottom: 10px;
+    }
+    .hover-meta {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+    }
+    .hover-meta-item {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: rgba(255,255,255,0.72);
+      padding: 8px;
+    }
+    .hover-meta-label {
+      font-size: 0.72rem;
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+    .hover-meta-value {
+      font-size: 0.84rem;
+      color: var(--ink);
+      font-weight: 700;
+      line-height: 1.25;
+    }
+    .detail-box {
+      border-top: 1px solid var(--line);
+      padding-top: 18px;
+      display: grid;
+      gap: 10px;
+    }
+    .detail-grid {
+      display: grid;
+      gap: 12px;
+    }
+    .detail-stat-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+    .detail-stat {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: rgba(255,255,255,0.8);
+      padding: 10px;
+    }
+    .detail-stat-label {
+      font-size: 0.76rem;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+    .detail-stat-value {
+      font-size: 0.98rem;
+      font-weight: 700;
+      line-height: 1.25;
+    }
+    .detail-chip-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .detail-chip {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 999px;
+      padding: 4px 10px;
+      background: #fff;
+      border: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+    .detail-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .detail-action-btn {
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--muted);
+      border-radius: 999px;
+      padding: 7px 12px;
+      font: inherit;
+      font-size: 0.84rem;
+      cursor: pointer;
+    }
+    .detail-action-btn:hover {
+      border-color: var(--accent);
+      color: var(--ink);
+    }
+    @media (max-width: 1180px) {
+      .themes-layout {
+        grid-template-columns: 1fr;
+      }
+      .hero.hero-compact,
+      .map-toolbar-head,
+      .map-control-panel {
+        grid-template-columns: 1fr;
+      }
+      .control-group-taxonomy {
+        grid-column: auto;
+      }
+      .detail-stat-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero hero-compact">
+      <div class="hero-copy">
+        <p class="eyebrow">Mapa semantico adoptado</p>
+        <h1>Universo BIO</h1>
+        <p class="hero-subtitle">Ordenado por proximidad semantica</p>
+        <p class="lede">Aqui “BIO” no significa solo biotech estricta: incluye startups bio-based, biocentricas y gestoras de limites planetarios cuando operan directamente sobre sistemas vivos, cadenas materiales bio-basadas o infraestructura critica para su transicion.</p>
+      </div>
+      <div class="hero-meta">
+        <div class="meta-card">
+          <span class="meta-label">Taxonomia operativa</span>
+          <strong>7 categorias adoptadas</strong>
+        </div>
+        <div class="meta-card">
+          <span class="meta-label">Cobertura usada</span>
+          <strong>Include + confirmed + source-backed</strong>
+        </div>
+        <div class="meta-card">
+          <span class="meta-label">Interaccion</span>
+          <strong>Zoom, drag, select, clear</strong>
+        </div>
+        <div class="meta-card">
+          <span class="meta-label">Navegacion</span>
+          <strong><a href="./index.html" style="color:inherit">Volver al piloto</a></strong>
+        </div>
+      </div>
+    </header>
+
+    <section class="themes-layout">
+      <aside class="themes-sidebar">
+        <div class="themes-sidebar-head">
+          <div id="startup-count" class="item-title">0 startups</div>
+          <div class="method-row">
+            <span class="pill">Thesis-first</span>
+            <span class="pill muted">Include + confirmed</span>
+            <span id="cluster-mode-pill" class="pill muted">Base operativa guardada</span>
+          </div>
+        </div>
+        <div class="themes-sidebar-body">
+          <div>
+            <div id="theme-intro" class="item-meta" style="margin-bottom:8px;">Cada tarjeta resume una categoria: color, total, subtitulo y empresas tipo. La posicion del mapa sale de similitud semantica entre startups confirmadas del universo BIO.</div>
+            <div id="theme-list" class="theme-list"></div>
+          </div>
+          <div class="snapshot-box">
+            <div class="item-title" style="margin-bottom:10px;">Como leer este mapa adoptado</div>
+            <div id="snapshot-text">
+              En esta vista definimos BIO de forma amplia pero material: entran startups bio-based, biocentricas y de stewardship de limites planetarios si actuan sobre sistemas vivos, bioprocesos, materiales bio-basados, diagnostico/intervencion biologica o infraestructura critica para monitorear, coordinar o regenerar esos sistemas. Hay dos capas: la <strong>base operativa congelada k=7</strong>, estable para comparar capital y cobertura, y la <strong>exploracion semantica dinamica</strong>, donde el selector k puede mostrar otro corte, hoy recomendado en k=10. Primero, mira distancia entre grupos; segundo, usa barras para peso relativo; tercero, entra al detalle para fuente, evidencia y taxonomia fina.
+            </div>
+          </div>
+          <div class="detail-box">
+            <div class="item-title">Detalle</div>
+            <div id="startup-detail" class="item-meta">Haz click en una startup para ver primero que hace, por que entra, que evidencia tiene y recien despues la taxonomia fina. Puedes hacer zoom con la rueda y arrastrar para navegar.</div>
+          </div>
+        </div>
+      </aside>
+
+      <main class="themes-stage">
+        <div class="themes-toolbar">
+          <div class="map-toolbar-head">
+            <div>
+              <div class="map-toolbar-title"><span>Mapa interactivo</span> Clusters BIO por proximidad semantica</div>
+              <div id="themes-note" class="themes-note">Esta pantalla distingue dos cosas: <strong>base operativa congelada k=7</strong> para lectura estable y <strong>exploracion semantica dinamica</strong> para probar k alternativos. La pantalla <a href="./semantic-taxonomy-beta.html" style="color:inherit"><strong>Semantic Taxonomy</strong></a> queda como auditoria metodologica y comparacion de cortes.</div>
+            </div>
+            <div class="map-toolbar-actions">
+              <button id="toggle-labels" class="scope-toggle active" type="button">Labels on</button>
+            </div>
+          </div>
+          <div class="map-control-panel">
+            <div class="control-group control-group-taxonomy">
+              <div class="control-label">Taxonomia</div>
+              <div class="cluster-control-grid">
+                <select id="cluster-view-select" class="themes-select">
+                  <option value="adopted">Base operativa guardada</option>
+                  <option value="semantic">Exploracion semantica dinamica</option>
+                </select>
+                <select id="semantic-profile-select" class="themes-select"></select>
+                <select id="semantic-k-select" class="themes-select"></select>
+              </div>
+            </div>
+            <div class="control-group">
+              <div class="control-label">Buscar startup</div>
+              <div class="startup-search-wrap">
+                <input id="startup-search" class="themes-select startup-search-input" type="search" placeholder="Nombre de startup..." autocomplete="off">
+                <div id="startup-search-results" class="startup-search-results"></div>
+              </div>
+            </div>
+            <div class="control-group">
+              <div class="control-label">Iluminar</div>
+              <div class="highlight-control-grid">
+                <select id="theme-select" class="themes-select">
+                  <option value="all">All startup themes</option>
+                </select>
+                <select id="country-select" class="themes-select">
+                  <option value="all">Todos los paises</option>
+                </select>
+                <select id="investor-select" class="themes-select">
+                  <option value="all">Todos los fondos</option>
+                </select>
+              </div>
+            </div>
+            <div class="control-group">
+              <div class="control-label">Reset</div>
+              <button id="clear-highlights" class="scope-toggle" type="button">Limpiar luces</button>
+            </div>
+          </div>
+        </div>
+        <div class="themes-wrap">
+          <svg id="startup-themes-svg" width="100%" height="760" viewBox="0 0 1700 980" preserveAspectRatio="xMidYMid meet"></svg>
+          <div id="startup-hover-card" class="hover-card"></div>
+          <div class="themes-controls">
+            <button id="themes-zoom-in" class="themes-control-btn" type="button">+</button>
+            <button id="themes-zoom-out" class="themes-control-btn" type="button">-</button>
+            <button id="themes-reset" class="themes-control-btn" type="button">R</button>
+          </div>
+        </div>
+      </main>
+    </section>
+  </div>
+
+  <script src="./text-clean.js?v=20260422aa"></script>
+  <script src="./theme-system.js?v=20260430english-semantic"></script>
+  <script src="./ecosystem-integrated-data.js?v=20260428excludeq"></script>
+  <script src="./startup-taxonomy-data.js?v=20260428excludeq"></script>
+  <script src="./startup-profiles-data.js?v=20260428excludeq"></script>
+  <script src="./semantic-single-level-data.js?v=20260430english-semantic"></script>
+  <script src="./startup-themes.js?v=20260508shared-taxonomy"></script>
+</body>
+</html>
+

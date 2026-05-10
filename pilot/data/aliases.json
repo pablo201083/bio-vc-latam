@@ -1,0 +1,652 @@
+﻿[
+    {
+        "alias_id":  "alias-1200-vc",
+        "entity_id":  "1200_vc",
+        "alias":  "1200 VC",
+        "alias_type":  "manual_external",
+        "is_preferred":  "1",
+        "source_entity_id":  "1200_vc",
+        "merge_confidence":  "0.99",
+        "merge_reason":  "Official investor name"
+    },
+    {
+        "alias_id":  "alias-araucaria-venture",
+        "entity_id":  "araucaria_venture",
+        "alias":  "Araucaria Venture",
+        "alias_type":  "external_fund_map",
+        "is_preferred":  "1",
+        "source_entity_id":  "Araucaria Venture",
+        "merge_confidence":  "0.92",
+        "merge_reason":  "High-relevance external fund map entity"
+    },
+    {
+        "alias_id":  "alias-beam_croptech",
+        "entity_id":  "BEAM CropTech",
+        "alias":  "BEAM CropTech",
+        "alias_type":  "merge_from_staging",
+        "is_preferred":  "0",
+        "source_entity_id":  "beam_croptech",
+        "merge_confidence":  "0.99",
+        "merge_reason":  "Exact same name across sources"
+    },
+    {
+        "alias_id":  "alias-biodiversity_intelligence",
+        "entity_id":  "Biodiversity Intelligence",
+        "alias":  "Biodiversity Intelligence",
+        "alias_type":  "merge_from_staging",
+        "is_preferred":  "0",
+        "source_entity_id":  "biodiversity_intelligence",
+        "merge_confidence":  "0.99",
+        "merge_reason":  "Exact same name across sources"
+    },
+    {
+        "alias_id":  "alias-bsafe_biotech",
+        "entity_id":  "Bsafe Biotech",
+        "alias":  "Bsafe Biotech",
+        "alias_type":  "merge_from_staging",
+        "is_preferred":  "0",
+        "source_entity_id":  "bsafe_biotech",
+        "merge_confidence":  "0.99",
+        "merge_reason":  "Exact same name across sources"
+    },
+    {
+        "alias_id":  "alias-chileglobal-ventures",
+        "entity_id":  "chileglobal_ventures",
+        "alias":  "ChileGlobal Ventures",
+        "alias_type":  "manual_external",
+        "is_preferred":  "1",
+        "source_entity_id":  "chileglobal_ventures",
+        "merge_confidence":  "0.99",
+        "merge_reason":  "Official investor name"
+    },
+    {
+        "alias_id":  "alias-cites",
+        "entity_id":  "CITES",
+        "alias":  "cites",
+        "alias_type":  "merge_from_staging",
+        "is_preferred":  "0",
+        "source_entity_id":  "cites",
+        "merge_confidence":  "0.99",
+        "merge_reason":  "Manual canonical merge for same investor with capitalization variation"
+    },
+    {
+        "alias_id":  "alias-clivi",
+        "entity_id":  "clivi",
+        "alias":  "Clivi",
+        "alias_type":  "manual_external",
+        "is_preferred":  "1",
+        "source_entity_id":  "clivi",
+        "merge_confidence":  "0.99",
+        "merge_reason":  "Official startup name"
+    },
+    {
+        "alias_id":  "alias-dalus-capital",
+        "entity_id":  "dalus_capital",
+        "alias":  "Dalus Capital",
+        "alias_type":  "external_fund_map",
+        "is_preferred":  "1",
+        "source_entity_id":  "Dalus Capital",
+        "merge_confidence":  "0.92",
+        "merge_reason":  "High-relevance external fund map entity"
+    },
+    {
+        "alias_id":  "alias-dharma_bioscience",
+        "entity_id":  "Dharma BioScience",
+        "alias":  "Dharma BioScience",
+        "alias_type":  "merge_from_staging",
+        "is_preferred":  "0",
+        "source_entity_id":  "dharma_bioscience",
+        "merge_confidence":  "0.99",
+        "merge_reason":  "Exact same name across sources"
+    },
+    {
+        "alias_id":  "alias-dogma_biotech",
+        "entity_id":  "Dogma Biotech",
+        "alias":  "Dogma Biotech",
+        "alias_type":  "merge_from_staging",
+        "is_preferred":  "0",
+        "source_entity_id":  "dogma_biotech",
+        "merge_confidence":  "0.99",
+        "merge_reason":  "Exact same name across sources"
+    },
+    {
+        "alias_id":  "alias-dragones-canonical-name",
+        "entity_id":  "DragonesVP",
+        "alias":  "Dragones",
+        "alias_type":  "merged_canonical_name",
+        "is_preferred":  "0",
+        "source_entity_id":  "dragones",
+        "merge_confidence":  "0.99",
+        "merge_reason":  "Manual canonical merge to keep Dragones family under one canonical fund id"
+    },
+    {
+        "alias_id":  "alias-dragones",
+        "entity_id":  "DragonesVP",
+        "alias":  "Dragones",
+        "alias_type":  "merge_from_staging",
+        "is_preferred":  "0",
+        "source_entity_id":  "dragones",
+        "merge_confidence":  "0.99",
+        "merge_reason":  "Manual canonical merge to keep Dragones family under one canonical fund id"
+    },
+    {
+        "alias_id":  "alias-draper_cygnus",
+        "entity_id":  "DraperCygnus",
+        "alias":  "Draper Cygnus",
+        "alias_type":  "merge_from_staging",
+        "is_preferred":  "0",
+        "source_entity_id":  "draper_cygnus",
+        "merge_confidence":  "0.99",
+        "merge_reason":  "Manual canonical merge for same investor with spacing variation"
+    },
+    {
+        "alias_id":  "alias-draper_cygnus-canonical-name",
+        "entity_id":  "DraperCygnus",
+        "alias":  "Draper Cygnus",
+        "alias_type":  "merged_canonical_name",
+        "is_preferred":  "0",
+        "source_entity_id":  "draper_cygnus",
+        "merge_confidence":  "0.99",
+        "merge_reason":  "Manual canonical merge for same investor with spacing variation"
+    },
+    {
+        "alias_id":  "alias-eatable-adventures",
+        "entity_id":  "eatable_adventures",
+        "alias":  "Eatable Adventures",
+        "alias_type":  "manual_external",
+        "is_preferred":  "1",
+        "source_entity_id":  "eatable_adventures",
+        "merge_confidence":  "0.99",
+        "merge_reason":  "Official investor name"
+    },
+    {
+        "alias_id":  "alias-eolo_pharma",
+        "entity_id":  "Eolo Pharma",
+        "alias":  "Eolo Pharma",
+        "alias_type":  "merge_from_staging",
+        "is_preferred":  "0",
+        "source_entity_id":  "eolo_pharma",
+        "merge_confidence":  "0.99",
+        "merge_reason":  "Exact same name across sources"
+    },
+    {
+        "alias_id":  "alias-fungi_life",
+        "entity_id":  "Fungi Life",
+        "alias":  "Fungi Life",
+        "alias_type":  "merge_from_staging",
+        "is_preferred":  "0",
+        "source_entity_id":  "fungi_life",
+        "merge_confidence":  "0.99",
+        "merge_reason":  "Exact same name across sources"
+    },
+    {
+        "alias_id":  "alias-fungilife",
+        "entity_id":  "Fungi Life",
+        "alias":  "Fungilife",
+        "alias_type":  "merge_from_staging",
+        "is_preferred":  "0",
+        "source_entity_id":  "fungilife",
+        "merge_confidence":  "0.97",
+        "merge_reason":  "Same normalized name with capitalization variation"
+    },
+    {
+        "alias_id":  "alias-fungilife-canonical-name",
+        "entity_id":  "Fungi Life",
+        "alias":  "Fungilife",
+        "alias_type":  "merged_canonical_name",
+        "is_preferred":  "0",
+        "source_entity_id":  "fungilife",
+        "merge_confidence":  "0.97",
+        "merge_reason":  "Same normalized name with capitalization variation"
+    },
+    {
+        "alias_id":  "alias-future_biome",
+        "entity_id":  "Future Biome",
+        "alias":  "Future Biome",
+        "alias_type":  "merge_from_staging",
+        "is_preferred":  "0",
+        "source_entity_id":  "future_biome",
+        "merge_confidence":  "0.99",
+        "merge_reason":  "Exact same name across sources"
+    },
+    {
+        "alias_id":  "alias-gisens_biotech",
+        "entity_id":  "Gisens Biotech",
+        "alias":  "Gisens Biotech",
+        "alias_type":  "merge_from_staging",
+        "is_preferred":  "0",
+        "source_entity_id":  "gisens_biotech",
+        "merge_confidence":  "0.99",
+        "merge_reason":  "Exact same name across sources"
+    },
+    {
+        "alias_id":  "alias-grid-exponential",
+        "entity_id":  "GridX",
+        "alias":  "Grid Exponential",
+        "alias_type":  "external_fund_map_alias",
+        "is_preferred":  "0",
+        "source_entity_id":  "Grid Exponential",
+        "merge_confidence":  "0.98",
+        "merge_reason":  "External fund map alias for existing GridX canonical investor"
+    },
+    {
+        "alias_id":  "alias-gridx",
+        "entity_id":  "GridX",
+        "alias":  "gridx",
+        "alias_type":  "merge_from_staging",
+        "is_preferred":  "0",
+        "source_entity_id":  "gridx",
+        "merge_confidence":  "0.99",
+        "merge_reason":  "Manual canonical merge for same investor with lowercase variation"
+    },
+    {
+        "alias_id":  "alias-gridx-grid-exponential",
+        "entity_id":  "GridX",
+        "alias":  "GridX / Grid Exponential",
+        "alias_type":  "external_fund_map_alias",
+        "is_preferred":  "0",
+        "source_entity_id":  "GridX / Grid Exponential",
+        "merge_confidence":  "0.98",
+        "merge_reason":  "External fund map alias for existing GridX canonical investor"
+    },
+    {
+        "alias_id":  "alias-invariantes-fund",
+        "entity_id":  "invariantes_fund",
+        "alias":  "Invariantes Fund",
+        "alias_type":  "external_fund_map",
+        "is_preferred":  "1",
+        "source_entity_id":  "Invariantes Fund",
+        "merge_confidence":  "0.92",
+        "merge_reason":  "High-relevance external fund map entity"
+    },
+    {
+        "alias_id":  "alias-Kigui-graphml",
+        "entity_id":  "Kigui",
+        "alias":  "KigÃ¼i",
+        "alias_type":  "source_name_graphml",
+        "is_preferred":  "0",
+        "source_entity_id":  "Kigui",
+        "merge_confidence":  "",
+        "merge_reason":  "Alternative source label from GraphML"
+    },
+    {
+        "alias_id":  "alias-kptl",
+        "entity_id":  "kptl",
+        "alias":  "KPTL",
+        "alias_type":  "manual_external",
+        "is_preferred":  "1",
+        "source_entity_id":  "kptl",
+        "merge_confidence":  "0.99",
+        "merge_reason":  "Official investor name"
+    },
+    {
+        "alias_id":  "alias-limay_biosciences",
+        "entity_id":  "Limay Biosciences",
+        "alias":  "Limay Biosciences",
+        "alias_type":  "merge_from_staging",
+        "is_preferred":  "0",
+        "source_entity_id":  "limay_biosciences",
+        "merge_confidence":  "0.99",
+        "merge_reason":  "Exact same name across sources"
+    },
+    {
+        "alias_id":  "alias-mesenchyal_t",
+        "entity_id":  "Mesenchyal-T",
+        "alias":  "Mesenchyal-T",
+        "alias_type":  "merge_from_staging",
+        "is_preferred":  "0",
+        "source_entity_id":  "mesenchyal_t",
+        "merge_confidence":  "0.99",
+        "merge_reason":  "Exact same name across sources"
+    },
+    {
+        "alias_id":  "alias-multiplai_health",
+        "entity_id":  "MultiplAI Health",
+        "alias":  "MultiplAI Health",
+        "alias_type":  "merge_from_staging",
+        "is_preferred":  "0",
+        "source_entity_id":  "multiplai_health",
+        "merge_confidence":  "0.99",
+        "merge_reason":  "Exact same name across sources"
+    },
+    {
+        "alias_id":  "alias-mycorium_biotech",
+        "entity_id":  "Mycorium Biotech",
+        "alias":  "Mycorium Biotech",
+        "alias_type":  "merge_from_staging",
+        "is_preferred":  "0",
+        "source_entity_id":  "mycorium_biotech",
+        "merge_confidence":  "0.99",
+        "merge_reason":  "Exact same name across sources"
+    },
+    {
+        "alias_id":  "alias-newtopia",
+        "entity_id":  "newtopia_vc",
+        "alias":  "Newtopia",
+        "alias_type":  "manual_external",
+        "is_preferred":  "0",
+        "source_entity_id":  "Newtopia",
+        "merge_confidence":  "0.94",
+        "merge_reason":  "Short alias for Newtopia VC"
+    },
+    {
+        "alias_id":  "alias-newtopia-vc",
+        "entity_id":  "newtopia_vc",
+        "alias":  "Newtopia VC",
+        "alias_type":  "external_fund_map",
+        "is_preferred":  "1",
+        "source_entity_id":  "Newtopia VC",
+        "merge_confidence":  "0.94",
+        "merge_reason":  "External fund map entity and official portfolio source"
+    },
+    {
+        "alias_id":  "alias-novo_space",
+        "entity_id":  "Novo Space",
+        "alias":  "Novo Space",
+        "alias_type":  "merge_from_staging",
+        "is_preferred":  "0",
+        "source_entity_id":  "novo_space",
+        "merge_confidence":  "0.99",
+        "merge_reason":  "Exact same name across sources"
+    },
+    {
+        "alias_id":  "alias-NovoSpace",
+        "entity_id":  "Novo Space",
+        "alias":  "NovoSpace",
+        "alias_type":  "merge_from_staging",
+        "is_preferred":  "0",
+        "source_entity_id":  "NovoSpace",
+        "merge_confidence":  "0.97",
+        "merge_reason":  "Same normalized name without space"
+    },
+    {
+        "alias_id":  "alias-NovoSpace-canonical-name",
+        "entity_id":  "Novo Space",
+        "alias":  "NovoSpace",
+        "alias_type":  "merged_canonical_name",
+        "is_preferred":  "0",
+        "source_entity_id":  "NovoSpace",
+        "merge_confidence":  "0.97",
+        "merge_reason":  "Same normalized name without space"
+    },
+    {
+        "alias_id":  "alias-nunatak_biotech",
+        "entity_id":  "Nunatak Biotech",
+        "alias":  "Nunatak Biotech",
+        "alias_type":  "merge_from_staging",
+        "is_preferred":  "0",
+        "source_entity_id":  "nunatak_biotech",
+        "merge_confidence":  "0.99",
+        "merge_reason":  "Exact same name across sources"
+    },
+    {
+        "alias_id":  "alias-onco_precision",
+        "entity_id":  "Onco Precision",
+        "alias":  "Onco Precision",
+        "alias_type":  "merge_from_staging",
+        "is_preferred":  "0",
+        "source_entity_id":  "onco_precision",
+        "merge_confidence":  "0.99",
+        "merge_reason":  "Exact same name across sources"
+    },
+    {
+        "alias_id":  "alias-OncoPrecision-canonical-name",
+        "entity_id":  "Onco Precision",
+        "alias":  "OncoPrecision",
+        "alias_type":  "merged_canonical_name",
+        "is_preferred":  "0",
+        "source_entity_id":  "OncoPrecision",
+        "merge_confidence":  "0.97",
+        "merge_reason":  "Same normalized name without space"
+    },
+    {
+        "alias_id":  "alias-OncoPrecision",
+        "entity_id":  "Onco Precision",
+        "alias":  "OncoPrecision",
+        "alias_type":  "merge_from_staging",
+        "is_preferred":  "0",
+        "source_entity_id":  "OncoPrecision",
+        "merge_confidence":  "0.97",
+        "merge_reason":  "Same normalized name without space"
+    },
+    {
+        "alias_id":  "alias-pampa-start",
+        "entity_id":  "pampa_start",
+        "alias":  "Pampa Start",
+        "alias_type":  "manual_external",
+        "is_preferred":  "1",
+        "source_entity_id":  "pampa_start",
+        "merge_confidence":  "0.99",
+        "merge_reason":  "Official investor name"
+    },
+    {
+        "alias_id":  "alias-pampa-start-vc",
+        "entity_id":  "pampa_start",
+        "alias":  "Pampa Start VC",
+        "alias_type":  "external_fund_map_alias",
+        "is_preferred":  "0",
+        "source_entity_id":  "Pampa Start VC",
+        "merge_confidence":  "0.98",
+        "merge_reason":  "External fund map alias for existing Pampa Start canonical investor"
+    },
+    {
+        "alias_id":  "alias-pill_ar",
+        "entity_id":  "Pill.AR",
+        "alias":  "Pill.AR",
+        "alias_type":  "merge_from_staging",
+        "is_preferred":  "0",
+        "source_entity_id":  "pill_ar",
+        "merge_confidence":  "0.99",
+        "merge_reason":  "Exact same name across sources"
+    },
+    {
+        "alias_id":  "alias-positive-ventures",
+        "entity_id":  "positive_ventures",
+        "alias":  "Positive Ventures",
+        "alias_type":  "manual_external",
+        "is_preferred":  "1",
+        "source_entity_id":  "positive_ventures",
+        "merge_confidence":  "0.99",
+        "merge_reason":  "Official investor name"
+    },
+    {
+        "alias_id":  "alias-puna_bio",
+        "entity_id":  "Puna Bio",
+        "alias":  "Puna Bio",
+        "alias_type":  "merge_from_staging",
+        "is_preferred":  "0",
+        "source_entity_id":  "puna_bio",
+        "merge_confidence":  "0.99",
+        "merge_reason":  "Exact same name across sources"
+    },
+    {
+        "alias_id":  "alias-qumir_nano",
+        "entity_id":  "Qumir Nano",
+        "alias":  "Qumir Nano",
+        "alias_type":  "merge_from_staging",
+        "is_preferred":  "0",
+        "source_entity_id":  "qumir_nano",
+        "merge_confidence":  "0.99",
+        "merge_reason":  "Exact same name across sources"
+    },
+    {
+        "alias_id":  "alias-salkantay-ventures",
+        "entity_id":  "salkantay_ventures",
+        "alias":  "Salkantay Ventures",
+        "alias_type":  "external_fund_map",
+        "is_preferred":  "1",
+        "source_entity_id":  "Salkantay Ventures",
+        "merge_confidence":  "0.92",
+        "merge_reason":  "High-relevance external fund map entity"
+    },
+    {
+        "alias_id":  "alias-satellites_on_fire",
+        "entity_id":  "Satellites On Fire",
+        "alias":  "Satellites on Fire",
+        "alias_type":  "merge_from_staging",
+        "is_preferred":  "0",
+        "source_entity_id":  "satellites_on_fire",
+        "merge_confidence":  "0.97",
+        "merge_reason":  "Same normalized name with case variation"
+    },
+    {
+        "alias_id":  "alias-indiebio-canonical-name",
+        "entity_id":  "SOSV_IndieBio",
+        "alias":  "IndieBio",
+        "alias_type":  "merged_canonical_name",
+        "is_preferred":  "0",
+        "source_entity_id":  "indiebio",
+        "merge_confidence":  "0.99",
+        "merge_reason":  "Manual canonical merge to keep IndieBio program under one canonical investor id"
+    },
+    {
+        "alias_id":  "alias-indiebio",
+        "entity_id":  "SOSV_IndieBio",
+        "alias":  "IndieBio",
+        "alias_type":  "merge_from_staging",
+        "is_preferred":  "0",
+        "source_entity_id":  "indiebio",
+        "merge_confidence":  "0.99",
+        "merge_reason":  "Manual canonical merge to keep IndieBio program under one canonical investor id"
+    },
+    {
+        "alias_id":  "alias-synthetic_ocular_restoration",
+        "entity_id":  "Synthetic Ocular Restoration",
+        "alias":  "Synthetic Ocular Restoration",
+        "alias_type":  "merge_from_staging",
+        "is_preferred":  "0",
+        "source_entity_id":  "synthetic_ocular_restoration",
+        "merge_confidence":  "0.99",
+        "merge_reason":  "Exact same name across sources"
+    },
+    {
+        "alias_id":  "alias-trebe_biotech",
+        "entity_id":  "Trebe Biotech",
+        "alias":  "Trebe Biotech",
+        "alias_type":  "merge_from_staging",
+        "is_preferred":  "0",
+        "source_entity_id":  "trebe_biotech",
+        "merge_confidence":  "0.99",
+        "merge_reason":  "Exact same name across sources"
+    },
+    {
+        "alias_id":  "alias-ubique_bio",
+        "entity_id":  "Ubique Bio",
+        "alias":  "Ubique Bio",
+        "alias_type":  "merge_from_staging",
+        "is_preferred":  "0",
+        "source_entity_id":  "ubique_bio",
+        "merge_confidence":  "0.99",
+        "merge_reason":  "Exact same name across sources"
+    },
+    {
+        "alias_id":  "alias-veronorte",
+        "entity_id":  "veronorte",
+        "alias":  "Veronorte",
+        "alias_type":  "external_fund_map",
+        "is_preferred":  "1",
+        "source_entity_id":  "Veronorte",
+        "merge_confidence":  "0.92",
+        "merge_reason":  "High-relevance external fund map entity"
+    },
+    {
+        "alias_id":  "alias-vexxel_biotech",
+        "entity_id":  "Vexxel Biotech",
+        "alias":  "Vexxel Biotech",
+        "alias_type":  "merge_from_staging",
+        "is_preferred":  "0",
+        "source_entity_id":  "vexxel_biotech",
+        "merge_confidence":  "0.99",
+        "merge_reason":  "Exact same name across sources"
+    },
+    {
+        "alias_id":  "alias-vox-capital",
+        "entity_id":  "vox_capital",
+        "alias":  "Vox Capital",
+        "alias_type":  "external_fund_map",
+        "is_preferred":  "1",
+        "source_entity_id":  "Vox Capital",
+        "merge_confidence":  "0.92",
+        "merge_reason":  "High-relevance external fund map entity"
+    },
+    {
+        "alias_id":  "alias-vx-fund-ventures",
+        "entity_id":  "vx_fund",
+        "alias":  "VX Ventures",
+        "alias_type":  "external_fund_map_alias",
+        "is_preferred":  "0",
+        "source_entity_id":  "VX Ventures",
+        "merge_confidence":  "0.9",
+        "merge_reason":  "Potential alias between external fund map VX Ventures and existing VX Fund; review if separate CVC vehicle is confirmed"
+    },
+    {
+        "alias_id":  "alias-werken_vac-canonical-name",
+        "entity_id":  "WerkénVac",
+        "alias":  "Werken Vac",
+        "alias_type":  "merged_canonical_name",
+        "is_preferred":  "0",
+        "source_entity_id":  "werken_vac",
+        "merge_confidence":  "0.98",
+        "merge_reason":  "Same normalized name with spacing and accent variation"
+    },
+    {
+        "alias_id":  "alias-werken_vac",
+        "entity_id":  "WerkénVac",
+        "alias":  "Werken Vac",
+        "alias_type":  "merge_from_staging",
+        "is_preferred":  "0",
+        "source_entity_id":  "werken_vac",
+        "merge_confidence":  "0.98",
+        "merge_reason":  "Same normalized name with spacing and accent variation"
+    },
+    {
+        "alias_id":  "alias-werkenvac",
+        "entity_id":  "WerkénVac",
+        "alias":  "WerkenVac",
+        "alias_type":  "merge_from_staging",
+        "is_preferred":  "0",
+        "source_entity_id":  "werkenvac",
+        "merge_confidence":  "0.98",
+        "merge_reason":  "Same normalized name with spacing and accent variation"
+    },
+    {
+        "alias_id":  "alias-werkenvac-canonical-name",
+        "entity_id":  "WerkénVac",
+        "alias":  "WerkenVac",
+        "alias_type":  "merged_canonical_name",
+        "is_preferred":  "0",
+        "source_entity_id":  "werkenvac",
+        "merge_confidence":  "0.98",
+        "merge_reason":  "Same normalized name with spacing and accent variation"
+    },
+    {
+        "alias_id":  "alias-zavia_bio",
+        "entity_id":  "Zavia Bio",
+        "alias":  "Zavia Bio",
+        "alias_type":  "merge_from_staging",
+        "is_preferred":  "0",
+        "source_entity_id":  "zavia_bio",
+        "merge_confidence":  "0.99",
+        "merge_reason":  "Exact same name across sources"
+    },
+    {
+        "alias_id":  "alias-zentynel",
+        "entity_id":  "zentynel",
+        "alias":  "Zentynel",
+        "alias_type":  "manual_external",
+        "is_preferred":  "1",
+        "source_entity_id":  "zentynel",
+        "merge_confidence":  "0.99",
+        "merge_reason":  "Official investor name"
+    },
+    {
+        "alias_id":  "alias-zev_biotech",
+        "entity_id":  "ZEV Biotech",
+        "alias":  "ZEV Biotech",
+        "alias_type":  "merge_from_staging",
+        "is_preferred":  "0",
+        "source_entity_id":  "zev_biotech",
+        "merge_confidence":  "0.99",
+        "merge_reason":  "Exact same name across sources"
+    }
+]

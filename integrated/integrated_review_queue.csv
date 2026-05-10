@@ -1,0 +1,6 @@
+﻿"review_type","candidate_name","candidate_type","notes"
+"id_collision","Eir","startup","nodoseco.csv"
+"merge_candidate_below_threshold","Feedvax","alias_merge","Possible branding variation likely same startup"
+"missing_manual_alias_canonical","WerkÃƒÂ©nVac","manual_alias","Werken Vac"
+"missing_seed_endpoint","IFIR -> Michroma","researched_at","rich_graph_signal"
+"missing_seed_endpoint","IPROBYQ -> Beeflow","researched_at","rich_graph_signal"

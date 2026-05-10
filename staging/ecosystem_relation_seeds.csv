@@ -1,0 +1,59 @@
+source_name,target_name,relation_type,confidence,source_basis,notes
+GridX,Stämm,funded_by,high,reference_and_capital_graph,Capital relation seen in current graph stack
+GridX,Beeflow,funded_by,high,reference_and_capital_graph,Capital relation seen in current graph stack
+GridX,Michroma,funded_by,high,reference_and_capital_graph,Capital relation seen in current graph stack
+GridX,Puna Bio,funded_by,high,reference_and_capital_graph,Capital relation seen in current graph stack
+GridX,Feedvax,funded_by,high,reference_and_capital_graph,Capital relation seen in current graph stack
+GridX,Cell Farm,funded_by,high,reference_and_capital_graph,Capital relation seen in current graph stack
+GridX,ArgenTAG,funded_by,high,reference_and_capital_graph,Capital relation seen in current graph stack
+GridX,Tomorrow Foods,funded_by,high,reference_and_capital_graph,Capital relation seen in current graph stack
+GridX,Bioeutectics,funded_by,high,reference_and_capital_graph,Capital relation seen in current graph stack
+GridX,ZEV Biotech,funded_by,high,reference_and_capital_graph,Capital relation seen in current graph stack
+GridX,Limay Biosciences,funded_by,high,reference_and_capital_graph,Capital relation seen in current graph stack
+GridX,Vexxel Biotech,funded_by,high,reference_and_capital_graph,Capital relation seen in current graph stack
+GridX,Ubique Bio,funded_by,high,reference_and_capital_graph,Capital relation seen in current graph stack
+GridX,Kresko RNATech,funded_by,high,reference_and_capital_graph,Capital relation seen in current graph stack
+Air Capital,Stämm,funded_by,high,reference_and_capital_graph,Capital relation seen in current graph stack
+Air Capital,Beeflow,funded_by,high,reference_and_capital_graph,Capital relation seen in current graph stack
+Air Capital,CASPR,funded_by,high,reference_and_capital_graph,Capital relation seen in current graph stack
+Air Capital,Michroma,funded_by,high,reference_and_capital_graph,Capital relation seen in current graph stack
+Air Capital,Puna Bio,funded_by,high,reference_and_capital_graph,Capital relation seen in current graph stack
+SF500,Bioeutectics,funded_by,high,reference_and_capital_graph,Capital relation seen in current graph stack
+SF500,Limay Biosciences,funded_by,high,reference_and_capital_graph,Capital relation seen in current graph stack
+SF500,ZEV Biotech,funded_by,high,reference_and_capital_graph,Capital relation seen in current graph stack
+Cites,Vexxel Biotech,funded_by,high,reference_and_capital_graph,Capital relation seen in current graph stack
+Cites,Limay Biosciences,funded_by,high,reference_and_capital_graph,Capital relation seen in current graph stack
+Kamay Ventures,Kilimo,funded_by,medium,reference_visual,Seen in reference image cluster
+Kamay Ventures,Bioeutectics,funded_by,medium,reference_visual,Seen in reference image cluster
+Draper Cygnus,Stämm,funded_by,high,reference_and_capital_graph,Capital relation seen in current graph stack
+Draper Cygnus,Beeflow,funded_by,high,reference_and_capital_graph,Capital relation seen in current graph stack
+Antom,Kilimo,funded_by,high,reference_and_capital_graph,Capital relation seen in current graph stack
+Nxtp Labs,Auth0,funded_by,medium,reference_visual,Seen in reference image cluster
+Nxtp Labs,Satellogic,funded_by,medium,reference_visual,Seen in reference image cluster
+IndieBio,Stämm,accelerated_at,medium,rich_graph_signal,Accelerator/capital relation suggested by historical graph
+IndieBio,Beeflow,accelerated_at,medium,rich_graph_signal,Accelerator/capital relation suggested by historical graph
+Universidad de Buenos Aires,Stämm,studied_at,medium,rich_graph_signal,Institutional relation inferred from rich graph image/signals
+Universidad de Buenos Aires,CASPR,studied_at,medium,rich_graph_signal,Institutional relation inferred from rich graph image/signals
+Universidad de Buenos Aires,Cell Farm,researched_at,medium,rich_graph_signal,Institutional relation inferred from rich graph image/signals
+Universidad de Buenos Aires,Onco Precision,researched_at,medium,rich_graph_signal,Institutional relation inferred from rich graph image/signals
+Universidad Nacional del Litoral,Bioeutectics,researched_at,medium,rich_graph_signal,Institutional relation inferred from rich graph image/signals
+Universidad Nacional del Litoral,Limay Biosciences,researched_at,medium,rich_graph_signal,Institutional relation inferred from rich graph image/signals
+Universidad Nacional de Rosario,Beeflow,researched_at,medium,rich_graph_signal,Institutional relation inferred from rich graph image/signals
+Universidad Nacional de Rosario,Feedvax,researched_at,medium,rich_graph_signal,Institutional relation inferred from rich graph image/signals
+Universidad Nacional de Cordoba,Michroma,researched_at,medium,rich_graph_signal,Institutional relation inferred from rich graph image/signals
+Universidad Nacional de Cordoba,Kresko RNATech,researched_at,medium,rich_graph_signal,Institutional relation inferred from rich graph image/signals
+Universidad Nacional de Cuyo,Kilimo,studied_at,medium,rich_graph_signal,Institutional relation inferred from rich graph image/signals
+Universidad Nacional de La Plata,ArgenTAG,studied_at,medium,rich_graph_signal,Institutional relation inferred from rich graph image/signals
+ITBA,Stämm,studied_at,medium,rich_graph_signal,Institutional relation inferred from rich graph image/signals
+Instituto Leloir,Vexxel Biotech,researched_at,medium,rich_graph_signal,Institutional relation inferred from rich graph image/signals
+Instituto Leloir,New Organs Biotech,researched_at,medium,rich_graph_signal,Institutional relation inferred from rich graph image/signals
+CONICET,Stämm,researched_at,medium,rich_graph_signal,Institutional relation inferred from rich graph image/signals
+CONICET,Beeflow,researched_at,medium,rich_graph_signal,Institutional relation inferred from rich graph image/signals
+CONICET,Michroma,researched_at,medium,rich_graph_signal,Institutional relation inferred from rich graph image/signals
+CONICET,Puna Bio,researched_at,medium,rich_graph_signal,Institutional relation inferred from rich graph image/signals
+INTA Castelar,Puna Bio,collaborates_with,low,rich_graph_signal,Institutional relation inferred from historical signals
+IFIR,Michroma,researched_at,low,rich_graph_signal,Institutional relation inferred from historical signals
+IPROBYQ,Beeflow,researched_at,low,rich_graph_signal,Institutional relation inferred from historical signals
+IAL (CONICET-UNL),Bioeutectics,researched_at,low,rich_graph_signal,Institutional relation inferred from historical signals
+IQUIBICEN,Cell Farm,researched_at,low,rich_graph_signal,Institutional relation inferred from historical signals
+Institut Pasteur Montevideo,Onco Precision,researched_at,low,rich_graph_signal,Institutional relation inferred from historical signals

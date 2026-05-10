@@ -1,0 +1,27 @@
+source_name,source_type,official_url,language_signal,proposed_dimension,notes
+GRIDX,fund,https://www.gridexponential.com/,"Agri·food·land use",market_label,Official domain from thesis page
+GRIDX,fund,https://www.gridexponential.com/,"Bio·Industry",market_label,Official domain from thesis page
+GRIDX,fund,https://www.gridexponential.com/,"Human health",market_label,Official domain from thesis page
+GRIDX,fund,https://www.gridexponential.com/,"Deep·biotech",market_label,Official domain from thesis page
+GRIDX,fund,https://www.gridexponential.com/,"food, materials and energy",transition_function,GRIDX frames biology + digital tools + advanced engineering around rebuilding production systems
+SOSV,fund,https://sosv.com/,"human and planetary health",macro_narrative,Official umbrella framing
+SOSV,fund,https://sosv.com/,"food, agriculture, industrial decarbonization and AI to therapeutics and diagnostics",market_label,Official breadth signal from IndieBio/SOSV language
+SOSV,fund,https://sosv.com/announcing-the-2024-sosv-climate-tech-100/,"food and agriculture",market_label,Official category language
+SOSV,fund,https://sosv.com/announcing-the-2024-sosv-climate-tech-100/,"green fuels",market_label,Official category language
+SOSV,fund,https://sosv.com/announcing-the-2024-sosv-climate-tech-100/,"batteries and energy storage",market_label,Official category language
+SOSV,fund,https://sosv.com/announcing-the-2024-sosv-climate-tech-100/,"sustainable apparel",market_label,Official category language
+SOSV,fund,https://sosv.com/the-2022-sosv-climate-tech-100/,"manufacturing",market_label,Official category language
+DCVC Bio,fund,https://www.dcvc.com/bio,"human health, agriculture, and synthetic biology",market_label,Official Bio focus
+DCVC Bio,fund,https://www.dcvc.com/about/,"genetics, chemistry, molecular biology, agriculture, industrial fermentation, and AI",technical_stack,Official expertise framing
+DCVC,fund,https://www.dcvc.com/companies/ginkgo-bioworks,"food to materials to therapeutics",output_class,Useful cross-market wording
+DCVC,fund,https://www.dcvc.com/companies/visolis,"bio-based specialty materials",output_class,Clear market-output phrase
+DCVC,fund,https://www.dcvc.com/companies/zymergen,"molecular manufacturing",market_label,Strong top-down phrase
+Deep Science Ventures,venture_builder,https://www.deepscienceventures.com/sectors/agriculture,"Restorative Cultivation",transition_function,Official sector framing
+Deep Science Ventures,venture_builder,https://www.deepscienceventures.com/articles/enabling-circular-bioeconomies-with-biomass-processing,"circular bioeconomies",macro_narrative,Strong top-down system language
+Deep Science Ventures,venture_builder,https://www.deepscienceventures.com/content/unlocking-the-potential-of-agricultural-residues,"agricultural residues",feedstock,Useful feedstock frame
+Deep Science Ventures,venture_builder,https://www.deepscienceventures.com/articles/creating-circular-bioeconomies-through-next-generation-crops,"crops are molecular factories",technical_stack,Conceptual technical framing
+Breakthrough Energy,investor_platform,https://www.breakthroughenergy.org/innovation/?company=aeroseal,"Agriculture",market_label,Sector label used in public innovation pages
+Breakthrough Energy,investor_platform,https://www.breakthroughenergy.org/innovation/?company=aeroseal,"Manufacturing",market_label,Sector label used in public innovation pages
+Breakthrough Energy,investor_platform,https://www.breakthroughenergy.org/fellows/jules-thiery/,"Materials",market_label,Sector label used in fellows pages
+Breakthrough Energy,investor_platform,https://www.breakthroughenergy.org/fellows/mattia-saccoccio/,"Food and Agriculture",market_label,Sector label used in fellows pages
+Breakthrough Energy,investor_platform,https://www.breakthroughenergy.org/lookbook/aspiring-materials/,"cement, fertilizers, electric vehicle batteries, refractories, and water treatment",industry_destination,Good example of downstream industry labels

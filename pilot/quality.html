@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Base Quality Tracker</title>
+  <link rel="stylesheet" href="./styles.css?v=20260424system">
+  <style>
+    .quality-grid {
+      display: grid;
+      grid-template-columns: 320px minmax(0, 1fr);
+      gap: 20px;
+    }
+    .quality-sidebar,
+    .quality-main {
+      display: grid;
+      gap: 20px;
+    }
+    .metric-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 14px;
+    }
+    .progress-hero {
+      display: grid;
+      grid-template-columns: 280px minmax(0, 1fr);
+      gap: 18px;
+      align-items: stretch;
+    }
+    .readiness-score {
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      padding: 22px;
+      background:
+        radial-gradient(circle at 80% 10%, rgba(20, 184, 166, 0.22), transparent 34%),
+        linear-gradient(145deg, #fffaf2, #f4efe5);
+      display: grid;
+      align-content: center;
+      gap: 10px;
+      min-height: 190px;
+    }
+    .readiness-score .score-number {
+      font-size: clamp(3rem, 7vw, 5.6rem);
+      line-height: 0.95;
+      font-weight: 800;
+      letter-spacing: -0.07em;
+    }
+    .readiness-score .score-label {
+      color: var(--muted);
+      line-height: 1.45;
+    }
+    .progress-list {
+      display: grid;
+      gap: 10px;
+    }
+    .progress-row {
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 13px 14px;
+      background: rgba(255, 255, 255, 0.72);
+      display: grid;
+      gap: 7px;
+    }
+    .progress-title {
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+      font-weight: 700;
+    }
+    .progress-note {
+      color: var(--muted);
+      font-size: 0.86rem;
+    }
+    .queue-list {
+      display: grid;
+      gap: 10px;
+    }
+    .queue-item {
+      display: grid;
+      grid-template-columns: minmax(140px, 1fr) minmax(180px, 1.4fr) auto;
+      gap: 12px;
+      align-items: center;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.78);
+      padding: 12px;
+    }
+    .queue-item strong {
+      display: block;
+      line-height: 1.2;
+    }
+    .queue-meta {
+      color: var(--muted);
+      font-size: 0.86rem;
+      line-height: 1.35;
+    }
+    .status-strip {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+    }
+    .status-chip {
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 12px;
+      background: #fff;
+    }
+    .status-chip span {
+      display: block;
+      color: var(--muted);
+      font-size: 0.84rem;
+      margin-bottom: 4px;
+    }
+    .status-chip strong {
+      font-size: 1.25rem;
+    }
+    .workstream-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+    }
+    .workstream-card {
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 14px;
+      background: rgba(255, 255, 255, 0.78);
+      display: grid;
+      gap: 8px;
+    }
+    .workstream-card strong {
+      font-size: 1.8rem;
+      letter-spacing: -0.04em;
+    }
+    .mini-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .readiness-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+    }
+    .readiness-card {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      padding: 12px;
+      display: grid;
+      gap: 8px;
+    }
+    .readiness-card strong {
+      font-size: 1.35rem;
+    }
+    .stack-list {
+      display: grid;
+      gap: 10px;
+    }
+    .bar-row {
+      display: grid;
+      gap: 6px;
+    }
+    .bar-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    .bar-track {
+      width: 100%;
+      height: 10px;
+      border-radius: 999px;
+      background: #eadfce;
+      overflow: hidden;
+    }
+    .bar-fill {
+      height: 100%;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--accent), #22c55e);
+    }
+    .bar-fill.warm {
+      background: linear-gradient(90deg, #f97316, #ef4444);
+    }
+    .bar-fill.muted {
+      background: linear-gradient(90deg, #94a3b8, #64748b);
+    }
+    .table-list {
+      display: grid;
+      gap: 10px;
+    }
+    .table-item {
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: #fff;
+      padding: 13px;
+    }
+    .table-topline {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: baseline;
+    }
+    .table-sub {
+      color: var(--muted);
+      font-size: 0.9rem;
+      line-height: 1.45;
+      margin-top: 6px;
+    }
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 8px;
+    }
+    .quality-note {
+      color: var(--muted);
+      line-height: 1.6;
+      font-size: 0.94rem;
+    }
+    @media (max-width: 1100px) {
+      .quality-grid {
+        grid-template-columns: 1fr;
+      }
+      .metric-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .progress-hero,
+      .status-strip,
+      .workstream-grid {
+        grid-template-columns: 1fr;
+      }
+      .queue-item {
+        grid-template-columns: 1fr;
+      }
+      .mini-grid {
+        grid-template-columns: 1fr;
+      }
+      .readiness-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Quality</p>
+        <h1>Base Quality Tracker</h1>
+        <p class="lede">Tablero de avance para convertir la base BIO VC LATAM en una referencia defendible: fuente externa, frontera include/exclude, summaries curados y estabilidad semantica.</p>
+      </div>
+      <div class="hero-meta">
+        <div class="meta-card">
+          <span class="meta-label">Seguimiento</span>
+          <strong id="quality-generated-at">Cargando...</strong>
+        </div>
+        <div class="meta-card">
+          <span class="meta-label">Universo</span>
+          <strong id="quality-universe">Cargando...</strong>
+        </div>
+        <div class="meta-card">
+          <span class="meta-label">Navegacion</span>
+          <strong><a href="./index.html" style="color:inherit">Volver al piloto</a></strong>
+        </div>
+      </div>
+    </header>
+
+    <section class="progress-hero">
+      <article class="readiness-score">
+        <span class="eyebrow">Progreso global</span>
+        <strong class="score-number" id="overall-readiness">--%</strong>
+        <span class="score-label">Promedio de fuente externa, reviewed, alta calidad, confianza semantica y frontera exclude revisada.</span>
+      </article>
+      <section class="panel">
+        <div class="panel-head">
+          <h2>Curaduria hacia base excelente</h2>
+          <span class="pill">Proceso vivo</span>
+        </div>
+        <div id="curation-progress" class="progress-list"></div>
+      </section>
+    </section>
+
+    <section class="metric-grid" id="quality-metrics"></section>
+
+    <section class="status-strip" id="quality-status-strip"></section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <h2>Colas de curaduria rapida</h2>
+        <span class="pill">Batch mode</span>
+      </div>
+      <div id="curation-workstreams" class="workstream-grid"></div>
+    </section>
+
+    <section class="panel">
+          <div class="panel-head">
+            <h2>Preparacion operativa</h2>
+            <span class="pill muted">Include universe</span>
+          </div>
+      <div id="readiness-dimensions" class="readiness-grid"></div>
+    </section>
+
+    <section class="quality-grid">
+      <aside class="quality-sidebar">
+        <section class="panel">
+          <div class="panel-head">
+            <h2>Bandas de calidad</h2>
+            <span class="pill">0-10</span>
+          </div>
+          <div id="quality-bands" class="stack-list"></div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-head">
+            <h2>Scope</h2>
+            <span class="pill">Universo</span>
+          </div>
+          <div id="scope-counts" class="stack-list"></div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-head">
+            <h2>Flags principales</h2>
+            <span class="pill warning">Huecos</span>
+          </div>
+          <div id="top-flags" class="stack-list"></div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-head">
+            <h2>Fuentes por confianza</h2>
+            <span class="pill muted">Registry</span>
+          </div>
+          <div id="source-trust" class="stack-list"></div>
+        </section>
+      </aside>
+
+      <main class="quality-main">
+        <section class="panel">
+          <div class="panel-head">
+            <h2>Validacion del pipeline</h2>
+            <span class="pill warning" id="validation-total">0</span>
+          </div>
+          <div id="validation-list" class="table-list"></div>
+        </section>
+
+        <section class="mini-grid">
+          <section class="panel">
+            <div class="panel-head">
+            <h2>Categorias semanticas mas expuestas</h2>
+            <span class="pill">Single-level</span>
+          </div>
+          <div id="semantic-themes" class="stack-list"></div>
+          </section>
+
+          <section class="panel">
+            <div class="panel-head">
+            <h2>Ejemplos de calidad alta</h2>
+              <span class="pill">Referencia editorial</span>
+            </div>
+            <div id="best-quality" class="table-list"></div>
+          </section>
+        </section>
+
+        <section class="mini-grid">
+          <section class="panel">
+            <div class="panel-head">
+              <h2>Bio lens tags</h2>
+              <span class="pill">Multi-label</span>
+            </div>
+            <div id="bio-lens-tags" class="stack-list"></div>
+          </section>
+
+          <section class="panel">
+            <div class="panel-head">
+              <h2>Dominios estrategicos</h2>
+              <span class="pill muted">Include</span>
+            </div>
+            <div id="domain-tags" class="stack-list"></div>
+          </section>
+        </section>
+
+        <section class="panel">
+          <div class="panel-head">
+            <h2>Siguiente batch de curaduria</h2>
+            <span class="pill warning" id="review-total">0</span>
+          </div>
+          <div id="review-queue" class="queue-list"></div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-head">
+            <h2>Como leer este tablero</h2>
+            <span class="pill muted">Guia</span>
+          </div>
+          <div class="quality-note">
+            Esta pantalla no mide que startup es mejor. Mide si la base ya es defendible como referencia. El progreso sube cuando los include tienen fuente externa, summary curado, estado reviewed, confianza semantica alta y cuando los exclude tambien estan revisados para defender el recorte del universo BIO.
+          </div>
+        </section>
+      </main>
+    </section>
+  </div>
+
+  <script src="./text-clean.js?v=20260424system"></script>
+  <script src="./quality-dashboard-data.js?v=20260506progress"></script>
+  <script src="./quality.js?v=20260506progress"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+﻿"workstream","count","purpose","output"
+"easy_review_promotions","0","Cheap reviewed gains from already complete official-source records.","quality\easy_review_promotions.csv"
+"official_seeded_enrichment","0","Official-source include records that only need template rewrite and structured-field completion.","quality\official_seeded_enrichment.csv"
+"source_upgrade_batch","0","Find direct sources for seeded include records still backed by portfolio/external/candidate evidence.","quality\source_upgrade_batch.csv"
+"semantic_conflict_batch","56","Good or medium records whose semantic placement remains uncertain.","quality\semantic_conflict_batch.csv"
+"exclude_defense_batch","50","Weak excludes to close the boundary of the BIO universe.","quality\exclude_defense_batch.csv"

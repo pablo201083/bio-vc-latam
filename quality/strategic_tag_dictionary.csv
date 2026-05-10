@@ -1,0 +1,38 @@
+tag_group,tag_id,label,definition
+bio_lens,biobased,Biobased,Uses biomass, biology, living systems or bio-derived materials as part of the core value proposition.
+bio_lens,biocentric,Biocentric,Protects, monitors, improves or regenerates living systems, ecosystems or biological production systems.
+bio_lens,planetary-boundary,Planetary boundary,Addresses climate, biodiversity, land use, freshwater, pollution, nutrient cycles or other planetary-boundary pressures.
+bio_lens,regenerative,Regenerative,Improves ecosystem or productive-system capacity rather than only reducing harm.
+bio_lens,circular,Circular,Closes material loops, valorizes waste or displaces extractive inputs.
+bio_lens,human-health-bio,Human health bio,Applies biology to diagnostics, therapeutics, medtech, regenerative medicine or clinical systems.
+bio_lens,bio-enabled-industrial-transition,Bio-enabled industrial transition,Enables industry to shift toward biology-based production, bioprocesses, enzymes or biomanufacturing.
+domain,agri-food,Agri-food,Crop, livestock, food, ingredients or agroindustrial systems.
+domain,human-health,Human health,Clinical, therapeutic, diagnostic, medical-device or health-system use cases.
+domain,biomaterials,Biomaterials,Materials, textiles, packaging, polymers, construction materials or chemistry with bio/circular signal.
+domain,biomanufacturing,Biomanufacturing,Bioprocessing, fermentation, enzymes, cell culture, lab automation or industrial biotech infrastructure.
+domain,climate-resource,Climate and resource systems,Climate mitigation/adaptation, energy, water, waste, remediation or resource efficiency.
+domain,biodiversity-nature,Biodiversity and nature,Ecosystem conservation, biodiversity, forests, wildfire, land restoration or nature intelligence.
+domain,industrial-biotech,Industrial biotech,Industrial applications of biological systems, enzymes, microbes or bio-based production.
+domain,diagnostics-medtech,Diagnostics and medtech,Diagnostics, devices, clinical monitoring or medical platforms.
+domain,therapeutics-regenerative,Therapeutics and regenerative bio,Therapies, drug discovery, gene/cell therapy, regenerative medicine or pharma bio platforms.
+technology,ai-data,AI and data,AI, analytics, decision intelligence, software or data infrastructure materially coupled to BIO systems.
+technology,remote-sensing,Remote sensing,Satellite, drone, imaging, geospatial or sensor-based observation.
+technology,iot,Iot,Internet-of-things sensors, connected field devices or telemetry.
+technology,synthetic-biology,Synthetic biology,Genetic engineering, engineered organisms, synthetic biology or advanced biological design.
+technology,fermentation,Fermentation,Fermentation, microbial production or fermentation-enabled products.
+technology,precision-fermentation,Precision fermentation,Precision fermentation or fermentation for specific proteins, molecules or ingredients.
+technology,biomanufacturing,Biomanufacturing,Bioreactors, bioprocess scale-up, lab automation, cell culture or industrial bio production.
+technology,biomaterials,Biomaterials,Bio-derived or circular materials, polymers, textiles, packaging or construction materials.
+technology,diagnostics,Diagnostics,Diagnostic tests, biomarkers, clinical devices or pathogen detection.
+technology,therapeutics,Therapeutics,Therapeutics, drug discovery, pharma bio, gene/cell therapy or regenerative medicine.
+technology,bioinputs,Bioinputs,Biological inputs, microbes, biofertilizers, biostimulants, crop protection or pollination biology.
+technology,enzymes,Enzymes,Enzymes or enzyme-enabled processes.
+technology,carbon-mrv,Carbon MRV,Carbon measurement, reporting, verification or climate accounting.
+technology,remediation,Remediation,Pollution treatment, waste transformation, soil/water remediation or prevention of ecological damage.
+scale,molecular-scale,Molecular scale,Molecules, genes, proteins, cells, microbes or lab-scale biological mechanisms.
+scale,human-scale,Human scale,Human health, clinical, consumer health, nutrition or personalized medicine.
+scale,product-scale,Product scale,Materials, ingredients, devices, textiles, packaging or object-level applications.
+scale,industrial-scale,Industrial scale,Factories, supply chains, bioprocesses, industrial production or infrastructure.
+scale,agroecosystem-scale,Agroecosystem scale,Farms, crops, livestock, soil, inputs, irrigation or agri-food production systems.
+scale,territorial-scale,Territorial scale,Forests, watersheds, landscapes, cities, mines, fire zones or land-use systems.
+scale,planetary-scale,Planetary scale,Climate, biodiversity, planetary-boundary or large-scale Earth-system pressures.

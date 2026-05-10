@@ -1,0 +1,10 @@
+priority,startup_id,startup_name,why_now,web_research_status,next_step
+1,stamm,Stämm,High centrality and strong fit for infrastructure layer,seeded,Expand corpus and compare against manufacturing/platform peers
+2,beeflow,Beeflow,High centrality and clear ag-bio language,seeded,Add more evidence and test if it clusters with ag services or biological inputs
+3,puna_bio,Puna Bio,Clear biological input and soil regeneration case,seeded,Use as anchor for extremophile/ag biologicals cluster
+4,michroma,Michroma,Clear precision fermentation and ingredient case,seeded,Use as anchor for fermented ingredient cluster
+5,bioeutectics,Bioeutectics,Clear material transition and green chemistry case,seeded,Use as anchor for bio-based solvents/material transition cluster
+6,bioheuris,BioHeuris,Clear crop-traits and weed-control case,seeded,Use as anchor for genome-enabled ag biotech cluster
+7,tomorrow,Tomorrow Foods,Important food systems and plant protein case,seeded,Use to compare with precision fermentation and food ingredient startups
+8,deepagro,DeepAgro,Important for ag transition but boundary case versus pure biotech,seeded,Stress-test taxonomic boundaries
+9,kilimo,Kilimo,Important ecosystem company but also boundary case,seeded,Decide if it belongs in startup themes product by default or by filter

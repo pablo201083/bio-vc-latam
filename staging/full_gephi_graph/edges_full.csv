@@ -1,0 +1,1420 @@
+id,source,source_label,target,target_label,weight,directed,d12
+0,123seguro,123Seguro,nxtp_labs,Nxtp Labs,1,true,funded_by
+1,123seguro,123Seguro,f_martin_ferrari_123seguro,Martin Ferrari,1,true,has_founder
+2,123seguro,123Seguro,f_bruno_ferrari_123seguro,Bruno Ferrari,1,true,has_founder
+3,123seguro,123Seguro,alaya_capital,Alaya Capital,1,true,funded_by
+4,abastra,AbAstra,cites,Cites,1,true,funded_by
+5,abastra,AbAstra,f_german_serrano,Germán Serrano,1,true,has_founder
+6,aerialoop,Aerialoop,kamay_ventures,Kamay Ventures,1,true,funded_by
+7,aerialoop,Aerialoop,f_pedro_m_aerialoop,Pedro M. (Aerialoop),1,true,has_founder
+8,aerialoop,Aerialoop,f_pedro_meneses,Pedro Meneses,1,true,has_founder
+9,agree,Agree,the_yield_lab_latam,The Yield Lab Latam,1,true,funded_by
+10,agree,Agree,f_gabriel_m_agree,Gabriel M. (Agree),1,true,has_founder
+11,agree,Agree,f_sebastian_g_agree,Sebastian G. (Agree),1,true,has_founder
+12,agree,Agree,f_nicolas_m_agree,Nicolas M. (Agree),1,true,has_founder
+13,agrired,Agrired,xperiment,Xperiment,1,true,funded_by
+14,agrired,Agrired,f_gabriel_vidal_agrired,Gabriel Vidal,1,true,has_founder
+15,agrired,Agrired,f_nicolas_peire_agrired,Nicolas Peire,1,true,has_founder
+16,agrired,Agrired,f_manuel_mrejen_agrired,Manuel Mrejen,1,true,has_founder
+17,agroforte,Agroforte,the_yield_lab_latam,The Yield Lab Latam,1,true,funded_by
+18,agroforte,Agroforte,f_gustavo_silva_de_andrade_agroforte,Gustavo Silva De Andrade,1,true,has_founder
+19,agroforte,Agroforte,f_felipe_d_avila_agroforte,Felipe D'Avila,1,true,has_founder
+20,agroforte,Agroforte,f_felipe_davila,Felipe D'Avila,1,true,has_founder
+21,agrojusto,Agrojusto,antom,Antom,1,true,funded_by
+22,agrojusto,Agrojusto,glocal,Glocal,1,true,funded_by
+23,agrojusto,Agrojusto,f_ma_fernanda_b,Maria Fernanda B.,1,true,has_founder
+24,agrojusto,Agrojusto,f_alfonso_b,Alfonso B.,1,true,has_founder
+25,agrojusto,Agrojusto,f_aluen_b,Aluen B.,1,true,has_founder
+26,agrojusto,Agrojusto,u_glocal,Glocal (AgriFood),1,true,accelerated_at
+27,agrotoken,Agrotoken,xperiment,Xperiment,1,true,funded_by
+28,agrotoken,Agrotoken,f_eduardo_novillo_astrada_agrotoken,Eduardo Novillo Astrada,1,true,has_founder
+29,agrotoken,Agrotoken,f_ariel_scaliter_agrotoken,Ariel Scaliter,1,true,has_founder
+30,agrotoken,Agrotoken,u_endeavor,Endeavor (Scale-up),1,true,accelerated_at
+31,agrotoken,Agrotoken,newtopia_vc,Newtopia VC,1,true,funded_by
+32,algaebio,algaebio+,gridx,Gridx,1,true,funded_by
+33,algaebio,algaebio+,f_ma_fernanda_togni,Maria Fernanda Togni,1,true,has_founder
+34,algaebio,algaebio+,f_ma_pia_togni,Maria Pia Togni,1,true,has_founder
+35,algaebio,algaebio+,f_ma_belen_togni,Maria Belen Togni,1,true,has_founder
+36,alkemio,Alkemio,gridx,Gridx,1,true,funded_by
+37,alkemio,Alkemio,f_neil_smyth,Neil Smyth,1,true,has_founder
+38,alkemio,Alkemio,u_yes_delft,YES! Delft (Incubator),1,true,accelerated_at
+39,aloi,Aloi,nxtp_labs,Nxtp Labs,1,true,funded_by
+40,aloi,Aloi,f_sonika_manandhar_aloi,Sonika Manandhar,1,true,has_founder
+41,aloi,Aloi,f_tiffany_tong_aloi,Tiffany Tong,1,true,has_founder
+42,aloi,Aloi,f_sonika_manandhar,Sonika Manandhar,1,true,has_founder
+43,aloi,Aloi,f_tiffany_tong,Tiffany Tong,1,true,has_founder
+44,altscore,Altscore,kamay_ventures,Kamay Ventures,1,true,funded_by
+45,altscore,Altscore,f_hugo_a_altscore,Hugo A. (Altscore),1,true,has_founder
+46,altscore,Altscore,f_ricardo_p_altscore,Ricardo P. (Altscore),1,true,has_founder
+47,alytix,Alytix,gridx,Gridx,1,true,funded_by
+48,alytix,Alytix,f_juan_vultaggio,Juan Francisco Vultaggio,1,true,has_founder
+49,alytix,Alytix,f_ivan_dalessandro,Ivan D'Alessandro,1,true,has_founder
+50,amaro,Amaro,nxtp_labs,Nxtp Labs,1,true,funded_by
+51,amaro,Amaro,f_lodovico_brioschi_amaro,Lodovico Brioschi,1,true,has_founder
+52,amaro,Amaro,f_dominique_oliver_schweingruber_amaro,Dominique Oliver Schweingruber,1,true,has_founder
+53,amaro,Amaro,f_roberto_thiele_amaro,Roberto Thiele,1,true,has_founder
+54,antarka,Antarka,gridx,Gridx,1,true,funded_by
+55,antarka,Antarka,f_luis_fh,Luis F. H.,1,true,has_founder
+56,antarka,Antarka,f_gaston_clement,Gastón Clement,1,true,has_founder
+57,apasomics,Apasomics,gridx,Gridx,1,true,funded_by
+58,apasomics,Apasomics,f_mavis_montero,Mavis Montero,1,true,has_founder
+59,apexzymes,APEXzymes,gridx,Gridx,1,true,funded_by
+60,apexzymes,APEXzymes,f_lucas_parreiras,Lucas Salera Parreiras,1,true,has_founder
+61,apexzymes,APEXzymes,f_lucas_fonseca,Lucas Fonseca,1,true,has_founder
+62,apexzymes,APEXzymes,f_larissa_viana,Larissa Viana,1,true,has_founder
+63,aplife,Aplife,duhau,Duhau,1,true,funded_by
+64,aplife,Aplife,sillicon_catalyst,Sillicon Catalyst,1,true,funded_by
+65,aplife,Aplife,gridx,Gridx,1,true,funded_by
+66,aplife,Aplife,f_alan_gontmaher,Alan Gontmaher,1,true,has_founder
+67,aplife,Aplife,f_federico_ariel,Federico Ariel,1,true,has_founder
+68,aplife_biotech,Aplife Biotech,air_capital,Air Capital,1,true,funded_by
+69,aplife_biotech,Aplife Biotech,f_guido_rozenblum_aplife_biotech,Guido Rozenblum,1,true,has_founder
+70,aplife_biotech,Aplife Biotech,f_pablo_belluscio_aplife_biotech,Pablo Belluscio,1,true,has_founder
+71,aplife_biotech,Aplife Biotech,f_abigail_stricker_aplife_biotech,Abigail Stricker,1,true,has_founder
+72,aquit,Aquit,gridx,Gridx,1,true,funded_by
+73,aquit,Aquit,f_gaston_lapidus,Gaston Lapidus,1,true,has_founder
+74,aquit,Aquit,f_matias_madorno,Matias Madorno,1,true,has_founder
+75,aquit,Aquit,f_rodrigo_diaz,Rodrigo L. Diaz,1,true,has_founder
+76,arakion,Arakion,gridx,Gridx,1,true,funded_by
+77,arakion,Arakion,f_juan_manuel_hurtado_arakion,Juan Manuel Hurtado,1,true,has_founder
+78,arakion,Arakion,f_gerardo_corzo_arakion,Gerardo Corzo,1,true,has_founder
+79,arakion,Arakion,f_santiago_maddaloni_arakion,Santiago Maddaloni,1,true,has_founder
+80,arakion,Arakion,f_omar_pina_arakion,Omar Piña,1,true,has_founder
+81,arcomed,Arcomed,air_capital,Air Capital,1,true,funded_by
+82,arcomed,Arcomed,f_ilan_rosenberg,Ilan Rosenberg,1,true,has_founder
+83,arcus,Arcus,nxtp_labs,Nxtp Labs,1,true,funded_by
+84,arcus,Arcus,f_edrizio_de_la_cruz_arcus,Edrizio De La Cruz,1,true,has_founder
+85,arcus,Arcus,f_juan_maldonado_arcus,Juan Maldonado,1,true,has_founder
+86,arcus,Arcus,f_inigo_rumayor_belausteguigoitia_arcus,Inigo Rumayor Belausteguigoitia,1,true,has_founder
+87,ardan,Ardan,cites,Cites,1,true,funded_by
+88,ardan,Ardan,f_marcelo_hill,Marcelo Hill,1,true,has_founder
+89,ardan,Ardan,f_pablo_oppezzo,Pablo Oppezzo,1,true,has_founder
+90,argentag,ArgenTAG,draper_university,Draper University,1,true,funded_by
+91,argentag,ArgenTAG,indiebio,Indiebio,1,true,funded_by
+92,argentag,ArgenTAG,gridx,Gridx,1,true,funded_by
+93,argentag,ArgenTAG,draper_cygnus,Draper Cygnus,1,true,funded_by
+94,argentag,ArgenTAG,air_capital,Air Capital,1,true,funded_by
+95,argentag,ArgenTAG,f_demian_barsky,Demian T. Barsky,1,true,has_founder
+96,argentag,ArgenTAG,f_gaston_melaragno,Gaston N. Melaragno,1,true,has_founder
+97,argentag,ArgenTAG,u_draper_uni,Draper University,1,true,accelerated_at
+98,argentag,ArgenTAG,asoc_cab,Cámara Argentina de Biotecnología (CAB),1,true,member_of
+99,arqlite,Arqlite,kamay_ventures,Kamay Ventures,1,true,funded_by
+100,arqlite,Arqlite,f_sebastian_s_arqlite,Sebastian S. (Arqlite),1,true,has_founder
+101,arqlite,Arqlite,oikos_cap,Oikos Cap,1,true,funded_by
+102,auravant,Auravant,the_yield_lab_latam,The Yield Lab Latam,1,true,funded_by
+103,auravant,Auravant,kamay_ventures,Kamay Ventures,1,true,funded_by
+104,auravant,Auravant,f_fernando_c_auravant,Fernando C. (Auravant),1,true,has_founder
+105,auravant,Auravant,f_nicolas_larrandart,Nicolás Larrandart,1,true,has_founder
+106,auravant,Auravant,u_kamay,Kamay Ventures (Coca-Cola/Arcor),1,true,accelerated_at
+107,auth0,Auth0,draper_cygnus,Draper Cygnus,1,true,funded_by
+108,auth0,Auth0,i_salesforce_ventures,I Salesforce Ventures,1,true,funded_by
+109,auth0,Auth0,i_bessemer,I Bessemer,1,true,funded_by
+110,auth0,Auth0,i_sapphire_ventures,I Sapphire Ventures,1,true,funded_by
+111,auth0,Auth0,i_trinity_ventures,I Trinity Ventures,1,true,funded_by
+112,auth0,Auth0,i_k9_ventures,I K9 Ventures,1,true,funded_by
+113,auth0,Auth0,i_telstra_ventures,I Telstra Ventures,1,true,funded_by
+114,auth0,Auth0,i_world_innovation_lab,I World Innovation Lab,1,true,funded_by
+115,auth0,Auth0,i_meritech_capital,I Meritech Capital,1,true,funded_by
+116,auth0,Auth0,i_dtcp,I Dtcp,1,true,funded_by
+117,auth0,Auth0,i_ntt_docomo_ventures,I Ntt Docomo Ventures,1,true,funded_by
+118,auth0,Auth0,i_svb,I Svb,1,true,funded_by
+119,auth0,Auth0,i_portland_seed_fund,I Portland Seed Fund,1,true,funded_by
+120,auth0,Auth0,nxtp_labs,Nxtp Labs,1,true,funded_by
+121,auth0,Auth0,f_eugenio_pace_auth0,Eugenio Pace,1,true,has_founder
+122,auth0,Auth0,f_matias_woloski_auth0,Matias Woloski,1,true,has_founder
+123,auth0,Auth0,u_endeavor,Endeavor (Scale-up),1,true,accelerated_at
+124,auth0,Auth0,nxtp_ventures,NXTP Ventures,1,true,funded_by
+125,auth0,Auth0,bessemer,Bessemer Venture Partners,1,true,funded_by
+126,auth0,Auth0,dtcp,DTCP (Deutsche Telekom),1,true,funded_by
+127,avatar_medtech,AVaTAR MedTech,gridx,Gridx,1,true,funded_by
+128,avatar_medtech,AVaTAR MedTech,f_tomas_armendariz,Tomás Armendáriz,1,true,has_founder
+129,avatar_medtech,AVaTAR MedTech,f_ignacio_lugones,Ignacio Lugones,1,true,has_founder
+130,axenya,Axenya,nxtp_labs,Nxtp Labs,1,true,funded_by
+131,axenya,Axenya,f_mariano_garcia_valino_axenya,Mariano Garcia Valino,1,true,has_founder
+132,axenya,Axenya,f_esteban_rubin_axenya,Esteban Rubin,1,true,has_founder
+133,axenya,Axenya,f_renato_de_giorgi_axenya,Renato De Giorgi,1,true,has_founder
+134,ayuvant,Ayuvant,draper_cygnus,Draper Cygnus,1,true,funded_by
+135,ayuvant,Ayuvant,air_capital,Air Capital,1,true,funded_by
+136,ayuvant,Ayuvant,f_lucas_czentner_ayuvant,Lucas Czentner,1,true,has_founder
+137,bacu,BACU,kamay_ventures,Kamay Ventures,1,true,funded_by
+138,bacu,BACU,f_mateo_albarracin_duque_bacu,Mateo Albarracin Duque,1,true,has_founder
+139,bacu,BACU,f_juan_osuna_bacu,Juan Osuna,1,true,has_founder
+140,barte,Barte,nxtp_labs,Nxtp Labs,1,true,funded_by
+141,barte,Barte,f_raphael_dyxklay_barte,Raphael Dyxklay,1,true,has_founder
+142,barte,Barte,f_caetano_lacerda_barte,Caetano Lacerda,1,true,has_founder
+143,beam_croptech,BEAM CropTech,sf500,Sf500,1,true,funded_by
+144,beam_croptech,BEAM CropTech,f_valeria_arredondo,Valeria Arredondo,1,true,has_founder
+145,beeflow,Beeflow,indiebio,Indiebio,1,true,funded_by
+146,beeflow,Beeflow,ospraie,Ospraie,1,true,funded_by
+147,beeflow,Beeflow,vectr,Vectr,1,true,funded_by
+148,beeflow,Beeflow,future_ventures,Future Ventures,1,true,funded_by
+149,beeflow,Beeflow,sosv,Sosv,1,true,funded_by
+150,beeflow,Beeflow,jeff_wilke,Jeff Wilke,1,true,funded_by
+151,beeflow,Beeflow,gridx,Gridx,1,true,built_by
+152,beeflow,Beeflow,air_capital,Air Capital,1,true,funded_by
+153,beeflow,Beeflow,f_matias_viel,Matias Viel,1,true,has_founder
+154,beeflow,Beeflow,f_agustin_saez,Agustin Saez,1,true,has_founder
+155,beeflow,Beeflow,f_pedro_negri,Pedro Negri,1,true,has_founder
+156,beeflow,Beeflow,f_matias_viel_beeflow,Matias Viel,1,true,has_founder
+157,beeflow,Beeflow,universidad_nacional_de_mar_del_plata,Universidad Nacional de Mar del Plata,1,true,spin_off_from
+158,beeflow,Beeflow,u_conicet_inibioma,INIBIOMA (Bariloche/Comahue),1,true,spin_off_from
+159,beeflow,Beeflow,u_indiebio,IndieBio (USA),1,true,accelerated_at
+160,beeflow,Beeflow,ospraie_ag_science,Ospraie Ag Science,1,true,funded_by
+161,beeflow,Beeflow,steve_jurvetson,Steve Jurvetson,1,true,funded_by
+162,beeflow,Beeflow,asoc_cab,Cámara Argentina de Biotecnología (CAB),1,true,member_of
+163,bekeu,Bekeu,xperiment,Xperiment,1,true,funded_by
+164,bekeu,Bekeu,f_alan_lojk_bekeu,Alan Lojk,1,true,has_founder
+165,bekeu,Bekeu,f_alejandra_lojk_bekeu,Alejandra Lojk,1,true,has_founder
+166,betterfly,Betterfly,nxtp_labs,Nxtp Labs,1,true,funded_by
+167,betterfly,Betterfly,f_eduardo_della_maggiora_betterfly,Eduardo Della Maggiora,1,true,has_founder
+168,betterfly,Betterfly,f_cristobal_della_maggiora_betterfly,Cristobal Della Maggiora,1,true,has_founder
+169,betterfly,Betterfly,f_todd_sullivan_betterfly,Todd Sullivan,1,true,has_founder
+170,bioblends,BioBlends,gridx,Gridx,1,true,funded_by
+171,bioblends,BioBlends,f_sebastian_zaera,Sebastián Zaera,1,true,has_founder
+172,bioblends,BioBlends,f_pia_di_peto,Pía Di Peto,1,true,has_founder
+173,bioblends,BioBlends,f_nadia_chalfoun,Nadia Regina Chalfoun,1,true,has_founder
+174,bioblends,BioBlends,f_ma_laura_tortora,María Laura Tortora,1,true,has_founder
+175,biocle,BioClé,gridx,Gridx,1,true,funded_by
+176,biocle,BioClé,f_juan_cassini,Juan Cassini,1,true,has_founder
+177,biodiversity_intelligence,Biodiversity Intelligence,gridx,Gridx,1,true,funded_by
+178,biodiversity_intelligence,Biodiversity Intelligence,f_nahuel_schenone,Nahuel Schenone,1,true,has_founder
+179,bioeutectics,Bioeutectics,gridx,Gridx,1,true,funded_by
+180,bioeutectics,Bioeutectics,f_tomas_rovito,Tomás Rovito,1,true,has_founder
+181,bioeutectics,Bioeutectics,f_ma_natalia_gomez,Maria Natalia Gomez,1,true,has_founder
+182,bioeutectics,Bioeutectics,f_maria_fernanda_gomez,María Fernanda Gómez,1,true,has_founder
+183,bioheuris,Bioheuris,aceleradora_litoral,Aceleradora Litoral,1,true,funded_by
+184,bioheuris,Bioheuris,f_lucas_lieber,Lucas Lieber,1,true,has_founder
+185,bioheuris,Bioheuris,f_hugo_permingeat,Hugo Permingeat,1,true,has_founder
+186,bioheuris,Bioheuris,f_carlos_perez,Carlos Perez,1,true,has_founder
+187,bioheuris,Bioheuris,f_rinaldo_gosparini,Rinaldo Gosparini,1,true,has_founder
+188,bioheuris,Bioheuris,u_inta,INTA (Instituto Nacional de Tecnología Agropecuaria),1,true,collaborates_with
+189,bioheuris,Bioheuris,asoc_cab,Cámara Argentina de Biotecnología (CAB),1,true,member_of
+190,biometallum,BioMetallum,sf500,Sf500,1,true,funded_by
+191,biometallum,BioMetallum,f_marcos_pacchiele,Marcos Pacchiele,1,true,has_founder
+192,biometallum,BioMetallum,f_sebastian_cogliati,Sebastián Cogliati,1,true,has_founder
+193,bioplaster_research_inc,BioPlaster Research Inc,gridx,Gridx,1,true,funded_by
+194,bioplaster_research_inc,BioPlaster Research Inc,f_jeronimo_trivi,Jeronimo Trivi,1,true,has_founder
+195,bioplaster_research_inc,BioPlaster Research Inc,f_jose_fernandez,Jose M. Fernandez,1,true,has_founder
+196,bioplastix,Bioplastix,gridx,Gridx,1,true,funded_by
+197,bioplastix,Bioplastix,f_karina_campos,Karina Campos,1,true,has_founder
+198,bioseek,Bioseek,cites,Cites,1,true,funded_by
+199,bioseek,Bioseek,f_rossen_genchev_bioseek,Rossen Genchev,1,true,has_founder
+200,bioseek,Bioseek,f_boyan_dimitrov_bioseek,Boyan Dimitrov,1,true,has_founder
+201,biosynaptica,BioSynaptica,aceleradora_litoral,Aceleradora Litoral,1,true,funded_by
+202,biosynaptica,BioSynaptica,f_milagros_burgi,Milagros Bürgi,1,true,has_founder
+203,biosynaptica,BioSynaptica,f_matias_depetris,Matías Depetris,1,true,has_founder
+204,biosynaptica,BioSynaptica,f_ricardo_kratje,Ricardo Kratje,1,true,has_founder
+205,biosynaptica,BioSynaptica,f_marcos_oggero,Marcos Oggero Eberhardt,1,true,has_founder
+206,biotalife,Biotalife,sf500,Sf500,1,true,funded_by
+207,biotalife,Biotalife,f_vivian_labovsky,Vivian Labovsky,1,true,has_founder
+208,bitgenia,Bitgenia,gridx,Gridx,1,true,funded_by
+209,bitgenia,Bitgenia,f_federico_pereiro,Federico Pereiro,1,true,has_founder
+210,bitgenia,Bitgenia,f_martin_gonzalez,Martin P. Gonzalez,1,true,has_founder
+211,bleps_vision,Bleps Vision,f_gabriel_correa,Gabriel Correa,1,true,has_founder
+212,bleps_vision,Bleps Vision,f_gabriel_villegas,Gabriel Villegas,1,true,has_founder
+213,blerify,Blerify,air_capital,Air Capital,1,true,funded_by
+214,blerify,Blerify,f_marcos_allende_lopez_blerify,Marcos Allende Lopez,1,true,has_founder
+215,blerify,Blerify,f_andrew_a_piscione_blerify,Andrew A Piscione,1,true,has_founder
+216,blerify,Blerify,f_sergio_ceron_figueroa_blerify,Sergio Ceron Figueroa,1,true,has_founder
+217,blerify,Blerify,f_marcos_allende,Marcos Allende López,1,true,has_founder
+218,branch_energy,Branch Energy,air_capital,Air Capital,1,true,funded_by
+219,break_pet,Break Pet,gridx,Gridx,1,true,funded_by
+220,break_pet,Break Pet,f_rosalie_van_putten,Rosalie van Putten,1,true,has_founder
+221,break_pet,Break Pet,f_pilar_ml,Pilar M. L.,1,true,has_founder
+222,breakpet,BreakPET,gridx,Gridx,1,true,funded_by
+223,breakpet,BreakPET,f_jesus_es,Jesus E. S.,1,true,has_founder
+224,breakpet,BreakPET,f_carla_fp,Carla F. P.,1,true,has_founder
+225,bsafe_biotech,Bsafe Biotech,gridx,Gridx,1,true,funded_by
+226,bsafe_biotech,Bsafe Biotech,f_ianina_servin,Ianina Servin,1,true,has_founder
+227,bsafe_biotech,Bsafe Biotech,f_gabriel_gutkind,Gabriel O. Gutkind,1,true,has_founder
+228,bybug,ByBug,gridx,Gridx,1,true,funded_by
+229,bybug,ByBug,f_adriana_diaz,Adriana L. E. Diaz,1,true,has_founder
+230,bybug,ByBug,f_cecilia_lg,Cecilia L. G.,1,true,has_founder
+231,calfix,Calfix,gridx,Gridx,1,true,funded_by
+232,calice,Calice,inventure,Inventure,1,true,funded_by
+233,calice,Calice,air_capital,Air Capital,1,true,funded_by
+234,calice,Calice,f_andres_t,Andres T.,1,true,has_founder
+235,calice,Calice,f_martin_c,Martin C.,1,true,has_founder
+236,calice_biotech,Calice Biotech,f_rocio_pardo,Rocío Pardo,1,true,has_founder
+237,calice_biotech,Calice Biotech,f_mariana_galdos,Mariana Galdós,1,true,has_founder
+238,caligenia,Caligenia,gridx,Gridx,1,true,funded_by
+239,caligenia,Caligenia,f_nick_barbarosch,Nick Barbarosch,1,true,has_founder
+240,capim,Capim,nxtp_labs,Nxtp Labs,1,true,funded_by
+241,capim,Capim,f_roberto_biselli,Roberto Biselli,1,true,has_founder
+242,cargo_sapiens,Cargo Sapiens,nxtp_labs,Nxtp Labs,1,true,funded_by
+243,cargo_sapiens,Cargo Sapiens,f_david_pinheiro,David Pinheiro,1,true,has_founder
+244,caspr,CASPR,indiebio,Indiebio,1,true,funded_by
+245,caspr,CASPR,paul_mcewan,Paul Mcewan,1,true,funded_by
+246,caspr,CASPR,photon_fund,Photon Fund,1,true,funded_by
+247,caspr,CASPR,sosv,Sosv,1,true,funded_by
+248,caspr,CASPR,dragones,Dragones,1,true,funded_by
+249,caspr,CASPR,gridx,Gridx,1,true,built_by
+250,caspr,CASPR,f_franco_goytia,Franco Goytia,1,true,has_founder
+251,caspr,CASPR,f_carla_gimenez,Carla Giménez,1,true,has_founder
+252,caspr,CASPR,f_lucas_gonzalez,Lucas E. Gonzalez,1,true,has_founder
+253,caspr,CASPR,u_conicet_ibs,IBS (Instituto de Biología Subtropical - Misiones),1,true,collaborates_with
+254,caspr,CASPR,u_indiebio,IndieBio (USA),1,true,accelerated_at
+255,caspr,CASPR,asoc_cab,Cámara Argentina de Biotecnología (CAB),1,true,member_of
+256,caspr_biotech,Caspr Biotech,f_franco_goytia_cb,Franco Goytia,1,true,has_founder
+257,caspr_biotech,Caspr Biotech,f_guillermo_perez,Guillermo Pérez,1,true,has_founder
+258,cell_farm,Cell Farm,brinc,Brinc,1,true,funded_by
+259,cell_farm,Cell Farm,gridx,Gridx,1,true,funded_by
+260,cell_farm,Cell Farm,f_sofia_torres,Sofia G. Torres,1,true,has_founder
+261,cell_farm,Cell Farm,f_carolina_bluguermann,Carolina Bluguermann,1,true,has_founder
+262,cell_farm,Cell Farm,f_sofia_giampaoli,Sofía Giampaoli,1,true,has_founder
+263,cellargen_biotech,Cellargen Biotech,f_cristian_acevedo,Cristian Acevedo,1,true,has_founder
+264,cellco,CellCo,gridx,Gridx,1,true,funded_by
+265,cellco,CellCo,f_ramiro_dr,Ramiro D. R.,1,true,has_founder
+266,cellrep,CellRep,gridx,Gridx,1,true,funded_by
+267,cellrep,CellRep,f_florencia_vs,Florencia V. S.,1,true,has_founder
+268,cellva,Cellva,air_capital,Air Capital,1,true,funded_by
+269,centralo,Centralo,xperiment,Xperiment,1,true,funded_by
+270,centralo,Centralo,f_tomas_manrique,Tomás Manrique,1,true,has_founder
+271,chazki,Chazki,nxtp_labs,Nxtp Labs,1,true,funded_by
+272,chazki,Chazki,f_luis_miguel_frisancho_pendavis_chazki,Luis Miguel Frisancho Pendavis,1,true,has_founder
+273,circa_therapeutics,Circa Therapeutics,cites,Cites,1,true,funded_by
+274,circa_therapeutics,Circa Therapeutics,f_haythem_riahi,Haythem Riahi,1,true,has_founder
+275,circa_therapeutics,Circa Therapeutics,f_liudmila_prozorova,Liudmila Prozorova,1,true,has_founder
+276,circclo,CIRCCLO,antom,Antom,1,true,funded_by
+277,circclo,CIRCCLO,f_bautista_garzon,Bautista Garzón,1,true,has_founder
+278,circular,Circular,the_yield_lab_latam,The Yield Lab Latam,1,true,funded_by
+279,circular,Circular,f_andres_augspach,Andrés Augspach,1,true,has_founder
+280,clover,Clover,cites,Cites,1,true,incubated_at
+281,cobli,Cobli,nxtp_labs,Nxtp Labs,1,true,funded_by
+282,cobli,Cobli,f_parker_treacy_cobli,Parker Treacy,1,true,has_founder
+283,conciencia,Conciencia,antom,Antom,1,true,funded_by
+284,conciencia,Conciencia,glocal,Glocal,1,true,funded_by
+285,courageous_land,Courageous Land,the_yield_lab_latam,The Yield Lab Latam,1,true,funded_by
+286,courageous_land,Courageous Land,f_andres_l_courageous,Andres L. (Courageous Land),1,true,has_founder
+287,courageous_land,Courageous Land,f_philip_kauders,Philip Kauders,1,true,has_founder
+288,courageous_land,Courageous Land,f_gilberto_terra,Gilberto Terra,1,true,has_founder
+289,crinsurance,CRInsurance,cites,Cites,1,true,funded_by
+290,cryosmetics,Cryosmetics,gridx,Gridx,1,true,funded_by
+291,cryosmetics,Cryosmetics,f_ma_gabriela_garrido,Maria Gabriela Garrido,1,true,has_founder
+292,cryosmetics,Cryosmetics,f_ma_eugenia_ruiz,Maria Eugenia Ruiz,1,true,has_founder
+293,curseduca,Curseduca,nxtp_labs,Nxtp Labs,1,true,funded_by
+294,cyanomin,CyanoMin,gridx,Gridx,1,true,funded_by
+295,cyanomin,CyanoMin,f_ma_es,Maria E. S.,1,true,has_founder
+296,cyanomin,CyanoMin,f_ma_fa,Maria F. A.,1,true,has_founder
+297,cytbac,Cytbac,gridx,Gridx,1,true,funded_by
+298,cytbac,Cytbac,f_sebastian_vintimilla,J. Sebastian Vintimilla,1,true,has_founder
+299,cytbac,Cytbac,f_ma_julia_roca,Maria Julia Roca,1,true,has_founder
+300,deepagro,DeepAgro,inventure,Inventure,1,true,funded_by
+301,deepagro,DeepAgro,glocal,Glocal,1,true,funded_by
+302,deepagro,DeepAgro,f_juan_baruffaldi,Juan Manuel Baruffaldi,1,true,has_founder
+303,deepagro,DeepAgro,f_juan_cavalieri,Juan Ignacio Cavalieri,1,true,has_founder
+304,deepagro,DeepAgro,f_juan_fea,Juan Francisco Fea,1,true,has_founder
+305,deepagro,DeepAgro,f_ariel_roberti,Ariel Roberti,1,true,has_founder
+306,deepagro,DeepAgro,f_leandro_sabignoso,Leandro Sabignoso,1,true,has_founder
+307,deepagro,DeepAgro,u_inta,INTA (Instituto Nacional de Tecnología Agropecuaria),1,true,validated_by
+308,deepagro,DeepAgro,f_marcos_mammarella,Marcos Mammarella,1,true,has_founder
+309,deepagro,DeepAgro,u_glocal,Glocal (AgriFood),1,true,accelerated_at
+310,deepagro,DeepAgro,universidad_nacional_de_rosario,Universidad Nacional de Rosario,1,true,spin_off_from
+311,deepagro,DeepAgro,the_yield_lab_latam,The Yield Lab Latam,1,true,funded_by
+312,dharma_bioscience,Dharma BioScience,sf500,Sf500,1,true,built_by
+313,dharma_bioscience,Dharma BioScience,f_franco_cescotti,Franco Cescotti,1,true,has_founder
+314,dharma_bioscience,Dharma BioScience,f_diego_croci,Diego Croci,1,true,has_founder
+315,dogma_biotech,Dogma Biotech,gridx,Gridx,1,true,funded_by
+316,dogma_biotech,Dogma Biotech,f_vanesa_m,Vanesa M.,1,true,has_founder
+317,dogma_biotech,Dogma Biotech,f_javier_almeciga,Javier Alméciga,1,true,has_founder
+318,dogma_biotech,Dogma Biotech,f_angela_espejo,Angela Espejo,1,true,has_founder
+319,done_properly,Done Properly,air_capital,Air Capital,1,true,funded_by
+320,done_properly,Done Properly,f_freddy_boehmwald,Freddy Boehmwald,1,true,has_founder
+321,dprotein,DProtein,f_luis_h_rodriguez,Luis H. Rodríguez,1,true,has_founder
+322,dprotein,DProtein,f_mijal_borenstein,Mijal Borenstein,1,true,has_founder
+323,dprotein,DProtein,f_joel_delariestra,Joel de la Riestra,1,true,has_founder
+324,dymaxion_labs,Dymaxion Labs,f_ricardo_figueiredo,Ricardo Figueiredo,1,true,has_founder
+325,dymaxion_labs,Dymaxion Labs,f_matias_petre,Matías Petre,1,true,has_founder
+326,dynami,Dynami,draper_cygnus,Draper Cygnus,1,true,funded_by
+327,dynami,Dynami,f_bruno_r_dynami,Bruno R. (Dynami),1,true,has_founder
+328,dynami,Dynami,f_agustina_m_dynami,Agustina M. (Dynami),1,true,has_founder
+329,egg,Egg,air_capital,Air Capital,1,true,funded_by
+330,egg,Egg,f_ignacio_gomez_portillo,Ignacio Gómez Portillo,1,true,has_founder
+331,einsted,Einsted,gridx,Gridx,1,true,funded_by
+332,einsted,Einsted,f_gabriel_lifsitz,Gabriel Lifsitz,1,true,has_founder
+333,einsted,Einsted,f_matias_alvarez,Matías Álvarez,1,true,has_founder
+334,eiru,Eirú,antom,Antom,1,true,funded_by
+335,eiru,Eirú,sf500,Sf500,1,true,funded_by
+336,eiru,Eirú,glocal,Glocal,1,true,funded_by
+337,eiru,Eirú,f_alfonsina_b,Alfonsina B.,1,true,has_founder
+338,eiru,Eirú,f_lucas_garibaldi,Lucas Garibaldi,1,true,has_founder
+339,eiwa,Eiwa,inventure,Inventure,1,true,funded_by
+340,eiwa,Eiwa,the_yield_lab_latam,The Yield Lab Latam,1,true,funded_by
+341,eiwa,Eiwa,xperiment,Xperiment,1,true,funded_by
+342,eiwa,Eiwa,f_luis_gerundo,Luis E. Gerundo,1,true,has_founder
+343,eiwa,Eiwa,f_nicolas_otamendi,Nicolas Otamendi,1,true,has_founder
+344,elytron,Elytron,f_juan_agustin_gomez,Juan Agustín Gómez,1,true,has_founder
+345,elytron_biotech,Elytron Biotech,lartirigoyen,Lartirigoyen,1,true,funded_by
+346,elytron_biotech,Elytron Biotech,gridx,Gridx,1,true,funded_by
+347,elytron_biotech,Elytron Biotech,inventure,Inventure,1,true,funded_by
+348,elytron_biotech,Elytron Biotech,f_tomas_strappini,Tomas Strappini,1,true,has_founder
+349,elytron_biotech,Elytron Biotech,f_ornela_palumbo,Ornela Palumbo,1,true,has_founder
+350,elytron_biotech,Elytron Biotech,asoc_cab,Cámara Argentina de Biotecnología (CAB),1,true,member_of
+351,embryoxite,Embryoxite,gridx,Gridx,1,true,funded_by
+352,embryoxite,Embryoxite,f_daniel_salamone,Daniel F. Salamone,1,true,has_founder
+353,embryoxite,Embryoxite,f_andres_gambini,Andres Gambini,1,true,has_founder
+354,endless,Endless,nxtp_labs,Nxtp Labs,1,true,funded_by
+355,endless,Endless,f_matt_dalio,Matt Dalio,1,true,has_founder
+356,enteria,Enteria,gridx,Gridx,1,true,funded_by
+357,enteria,Enteria,f_victoria_guerci,Victoria Güerci,1,true,has_founder
+358,enteria,Enteria,f_belen_musso,Belen Musso,1,true,has_founder
+359,enzyva,Enzyva,gridx,Gridx,1,true,funded_by
+360,eolo_pharma,Eolo Pharma,cites,Cites,1,true,incubated_at
+361,eolo_pharma,Eolo Pharma,f_pia_garat,Pía Garat,1,true,has_founder
+362,eolo_pharma,Eolo Pharma,f_carlos_escande,Carlos Escande,1,true,has_founder
+363,eolo_pharma,Eolo Pharma,sancor_seguros_ventures,Sancor Seguros Ventures,1,true,funded_by
+364,epiliquid,Epiliquid,cites,Cites,1,true,funded_by
+365,epiliquid,Epiliquid,f_adriana_de_siervi,Adriana De Siervi,1,true,has_founder
+366,ergo_bioscience,Ergo Bioscience,cites,Cites,1,true,funded_by
+367,ergo_bioscience,Ergo Bioscience,f_mf_ergo,M. F. (Ergo),1,true,has_founder
+368,ergo_bioscience,Ergo Bioscience,f_alejandro_barbarini,Alejandro Barbarini,1,true,has_founder
+369,ergo_foods,Ergo Foods,air_capital,Air Capital,1,true,funded_by
+370,ethos,Ethos,air_capital,Air Capital,1,true,funded_by
+371,eureka,Eureka,sf500,Sf500,1,true,funded_by
+372,eureka,Eureka,f_damian_alvarez,Damián Álvarez Paggi,1,true,has_founder
+373,exactly,Exactly,nxtp_labs,Nxtp Labs,1,true,funded_by
+374,exactly,Exactly,f_gabriel_gruber,Gabriel Gruber,1,true,has_founder
+375,exomas,Exomas,sf500,Sf500,1,true,funded_by
+376,exomas,Exomas,f_hugo_gramajo,Hugo Gramajo,1,true,has_founder
+377,eywa,Eywa,f_juan_agustin_gomez_eywa,Juan Agustín Gómez,1,true,has_founder
+378,eywa_biotech,Eywa Biotech,gridx,Gridx,1,true,funded_by
+379,f4u,F4u,f_luciana_lopez,Luciana López,1,true,has_founder
+380,facturama,Facturama,nxtp_labs,Nxtp Labs,1,true,funded_by
+381,falcomm,Falcomm,draper_cygnus,Draper Cygnus,1,true,funded_by
+382,falcomm,Falcomm,f_santiago_t_falcomm,Santiago T. (Falcomm),1,true,has_founder
+383,fecundis,Fecundis,gridx,Gridx,1,true,funded_by
+384,fecundis,Fecundis,f_ma_laura_cima,Maria Laura CIMA,1,true,has_founder
+385,fecundis,Fecundis,f_dario_krapf,Darío KRAPF,1,true,has_founder
+386,fecundis,Fecundis,f_mariano_buffone,Mariano Gabriel BUFFONE,1,true,has_founder
+387,fecundis,Fecundis,asoc_cab,Cámara Argentina de Biotecnología (CAB),1,true,member_of
+388,feedvax,Feedvax,hatch,Hatch,1,true,funded_by
+389,feedvax,Feedvax,duhau,Duhau,1,true,funded_by
+390,feedvax,Feedvax,conservation_international,Conservation International,1,true,funded_by
+391,feedvax,Feedvax,gridx,Gridx,1,true,funded_by
+392,feedvax,Feedvax,air_capital,Air Capital,1,true,funded_by
+393,feedvax,Feedvax,f_luis_barletta,Luis Barletta,1,true,has_founder
+394,flexza,Flexza,nxtp_labs,Nxtp Labs,1,true,funded_by
+395,fligoo,Fligoo,nxtp_labs,Nxtp Labs,1,true,funded_by
+396,food4you,Food4You,gridx,Gridx,1,true,funded_by
+397,food4you,Food4You,f_antonieta_rodriguez,Antonieta Rodríguez de Olmos,1,true,has_founder
+398,food4you,Food4You,f_francisco_gil,Francisco Gil Garbagnoli,1,true,has_founder
+399,frete_com,Frete Com,nxtp_labs,Nxtp Labs,1,true,funded_by
+400,fungi_life,Fungi Life,gridx,Gridx,1,true,funded_by
+401,fungi_life,Fungi Life,f_cecilia_carrillo,Cecilia Carrillo,1,true,has_founder
+402,fungi_life,Fungi Life,f_roxana_hercolini,Roxana Hercolini,1,true,has_founder
+403,fungi_life,Fungi Life,f_emanuel_orellana,Emanuel Orellana,1,true,has_founder
+404,fungilife,Fungilife,gridx,Gridx,1,true,funded_by
+405,future_biome,Future Biome,gridx,Gridx,1,true,funded_by
+406,future_biome,Future Biome,f_soledad_gurovic,Soledad Gurovic,1,true,has_founder
+407,gameet,Gameet,sf500,Sf500,1,true,funded_by
+408,gameet,Gameet,f_maximiliano_tourmente,Maximiliano Tourmente,1,true,has_founder
+409,gbm,GBM,draper_cygnus,Draper Cygnus,1,true,funded_by
+410,geoprot,Geoprot,gridx,Gridx,1,true,funded_by
+411,geoprot,Geoprot,f_alejandro_c,Alejandro C.,1,true,has_founder
+412,geoprot,Geoprot,f_cassiana_f,Cassiana F.,1,true,has_founder
+413,gigablue,Gigablue,air_capital,Air Capital,1,true,funded_by
+414,gigablue,Gigablue,f_nicolas_ugalde,Nicolás Ugalde,1,true,has_founder
+415,gigablue,Gigablue,f_raquel_parodi,Raquel Parodi,1,true,has_founder
+416,gisens_biotech,Gisens Biotech,gridx,Gridx,1,true,funded_by
+417,gisens_biotech,Gisens Biotech,f_esteban_piccinini,Esteban Piccinini,1,true,has_founder
+418,gisens_biotech,Gisens Biotech,u_conicet_inifta,INIFTA (UNLP-CONICET),1,true,spin_off_from
+419,gisens_biotech,Gisens Biotech,asoc_cab,Cámara Argentina de Biotecnología (CAB),1,true,member_of
+420,glycox,GlycoX,gridx,Gridx,1,true,funded_by
+421,grandata,Grandata,nxtp_labs,Nxtp Labs,1,true,funded_by
+422,heartbest,Heartbest,the_yield_lab_latam,The Yield Lab Latam,1,true,funded_by
+423,hiamet_s_a,Hiamet S.A,gridx,Gridx,1,true,funded_by
+424,hiamet_s_a,Hiamet S.A,f_braulio_kreczmann,Braulio Kreczmann,1,true,has_founder
+425,hiamet_s_a,Hiamet S.A,f_matias_liloia,Matías Liloia,1,true,has_founder
+426,hiamet_s_a,Hiamet S.A,f_cristian_perez,Cristian Perez,1,true,has_founder
+427,hiamet_s_a,Hiamet S.A,f_enzo_zamboni,Enzo Zamboni,1,true,has_founder
+428,hiamet_s_a,Hiamet S.A,asoc_cab,Cámara Argentina de Biotecnología (CAB),1,true,member_of
+429,huiro,Huiro,antom,Antom,1,true,funded_by
+430,huiro,Huiro,f_matias_p,Matias P.,1,true,has_founder
+431,huiro,Huiro,f_frank_p,Frank P.,1,true,has_founder
+432,huiro,Huiro,f_cristobal_h,Cristobal H.,1,true,has_founder
+433,huiro,Huiro,f_sebastian_gatica,Sebastián Gatica,1,true,has_founder
+434,hybridon,Hybridon,f_ricardo_r_miguel,Ricardo R. Miguel,1,true,has_founder
+435,imvalv,Imvalv,cites,Cites,1,true,funded_by
+436,imvalv,Imvalv,f_tomas_armendariz,Tomás Armendáriz,1,true,has_founder
+437,inbioar,Inbioar,aceleradora_litoral,Aceleradora Litoral,1,true,funded_by
+438,inbioar,Inbioar,f_gustavo_sosa,Gustavo Sosa,1,true,has_founder
+439,inbioar,Inbioar,f_lucia_inbioar,Lucía (Inbioar CSO),1,true,has_founder
+440,infira,Infira,aceleradora_litoral,Aceleradora Litoral,1,true,funded_by
+441,infira,Infira,f_renata_reinheimer,Renata Reinheimer,1,true,has_founder
+442,infira,Infira,f_pilar_marochi,Pilar Marochi,1,true,has_founder
+443,ini,INI,kamay_ventures,Kamay Ventures,1,true,funded_by
+444,ini,INI,f_juan_pn_ini,Juan P. N. (INI),1,true,has_founder
+445,inmet,INMET,sf500,Sf500,1,true,funded_by
+446,inmet,INMET,f_nicolas_colombres,Nicolás Colombres,1,true,has_founder
+447,inner_cosmos,Inner Cosmos,air_capital,Air Capital,1,true,funded_by
+448,innova_space,Innova Space,f_alejandro_ugartemendia,Alejandro Ugartemendia,1,true,has_founder
+449,innova_space,Innova Space,f_alejandro_cordero,Alejandro Cordero,1,true,has_founder
+450,inventa,Inventa,nxtp_labs,Nxtp Labs,1,true,funded_by
+451,invitrall,Invitrall,gridx,Gridx,1,true,funded_by
+452,invitrall,Invitrall,f_veronica_white,Verónica White,1,true,has_founder
+453,iof,Iof,xperiment,Xperiment,1,true,funded_by
+454,jampp,Jampp,nxtp_labs,Nxtp Labs,1,true,funded_by
+455,kangu,Kangu,nxtp_labs,Nxtp Labs,1,true,funded_by
+456,keclon,Keclon,f_martin_p_lutteral,Martín P. Lutteral,1,true,has_founder
+457,keclon,Keclon,f_hugo_menzella,Hugo Menzella,1,true,has_founder
+458,keclon,Keclon,f_salvador_peiro,Salvador Peiró,1,true,has_founder
+459,keclon,Keclon,asoc_cab,Cámara Argentina de Biotecnología (CAB),1,true,member_of
+460,kigui,Kigüi,inventure,Inventure,1,true,funded_by
+461,kigui,Kigüi,antom,Antom,1,true,funded_by
+462,kigui,Kigüi,f_mauricio_k,Mauricio K.,1,true,has_founder
+463,kigui,Kigüi,f_maximiliano_v,Maximiliano V.,1,true,has_founder
+464,kigui,Kigüi,f_gonzalo_v,Gonzalo V.,1,true,has_founder
+465,kigui,Kigüi,f_mauricio_kremer,Mauricio Kremer,1,true,has_founder
+466,kigui,Kigüi,newtopia_vc,Newtopia VC,1,true,funded_by
+467,kilimo,Kilimo,antom,Antom,1,true,funded_by
+468,kilimo,Kilimo,glocal,Glocal,1,true,funded_by
+469,kilimo,Kilimo,kamay_ventures,Kamay Ventures,1,true,funded_by
+470,kilimo,Kilimo,i_emerald_tech,I Emerald Tech,1,true,funded_by
+471,kilimo,Kilimo,i_the_yield_lab,I The Yield Lab,1,true,funded_by
+472,kilimo,Kilimo,i_alaya_capital,I Alaya Capital,1,true,funded_by
+473,kilimo,Kilimo,i_salkantay_ventures,I Salkantay Ventures,1,true,funded_by
+474,kilimo,Kilimo,i_xpand_ventures,I Xpand Ventures,1,true,funded_by
+475,kilimo,Kilimo,i_hcl_tech,I Hcl Tech,1,true,funded_by
+476,kilimo,Kilimo,xperiment,Xperiment,1,true,funded_by
+477,kilimo,Kilimo,f_jairo_trad,Jairo Trad,1,true,has_founder
+478,kilimo,Kilimo,f_rodrigo_tissera,Rodrigo Tissera,1,true,has_founder
+479,kilimo,Kilimo,f_toni_abdala,Toni Abdala,1,true,has_founder
+480,kilimo,Kilimo,u_glocal,Glocal (AgriFood),1,true,accelerated_at
+481,kilimo,Kilimo,u_kamay,Kamay Ventures (Coca-Cola/Arcor),1,true,accelerated_at
+482,kilimo,Kilimo,alaya_capital,Alaya Capital,1,true,funded_by
+483,kresko_rnatech,Kresko RNAtech,gridx,Gridx,1,true,funded_by
+484,kresko_rnatech,Kresko RNAtech,f_carla_borini,Carla Borini,1,true,has_founder
+485,kresko_rnatech,Kresko RNAtech,f_silvana_spinelli,Silvana Spinelli,1,true,has_founder
+486,kresko_rnatech,Kresko RNAtech,f_valeria_arredondo,Valeria Arredondo,1,true,has_founder
+487,laurus,Laurus,air_capital,Air Capital,1,true,funded_by
+488,laurus_ag_tech,Laurus AG Tech,f_esteban_c_cruz,Esteban C. Cruz,1,true,has_founder
+489,lemon,Lemon,draper_cygnus,Draper Cygnus,1,true,funded_by
+490,lemon,Lemon,air_capital,Air Capital,1,true,funded_by
+491,lemon,Lemon,f_marcelo_c_lemon,Marcelo C. (Lemon),1,true,has_founder
+492,lemon,Lemon,f_wenceslao_c_lemon,Wenceslao C. (Lemon),1,true,has_founder
+493,lemon,Lemon,f_borja_m_lemon,Borja M. (Lemon),1,true,has_founder
+494,lemon,Lemon,f_marcelo_cavazzoli_lemon,Marcelo Cavazzoli,1,true,has_founder
+495,lemon,Lemon,f_alan_boryszanski_lemon,Alan Boryszanski,1,true,has_founder
+496,lemon,Lemon,f_borja_martel_lemon,Borja Martel,1,true,has_founder
+497,levya,Levya,gridx,Gridx,1,true,funded_by
+498,lia_aeospace,LIA Aeospace,f_marcos_falcone_lia,Marcos Falcone,1,true,has_founder
+499,lia_aeospace,LIA Aeospace,f_dan_etenberg,Dan Etenberg,1,true,has_founder
+500,lia_aeospace,LIA Aeospace,f_federico_brito,Federico Brito,1,true,has_founder
+501,libera,Libera,sf500,Sf500,1,true,built_by
+502,libera,Libera,f_matias_vidal,Matías Vidal,1,true,has_founder
+503,libera,Libera,f_matias_vidal_l,Matías Vidal,1,true,has_founder
+504,lifit,Lifit,nxtp_labs,Nxtp Labs,1,true,funded_by
+505,limay,Limay,f_guillermo_perez_l,Guillermo Perez,1,true,has_founder
+506,limay_biosciences,Limay Biosciences,sf500,Sf500,1,true,funded_by
+507,limay_biosciences,Limay Biosciences,cites,Cites,1,true,funded_by
+508,limay_biosciences,Limay Biosciences,f_marcelo_kaufmann,Marcelo Kaufmann,1,true,has_founder
+509,lipock,Lipock,gridx,Gridx,1,true,funded_by
+510,lipock,Lipock,f_maria_luz_mateo,María Luz Mateo,1,true,has_founder
+511,logan,Logan,nxtp_labs,Nxtp Labs,1,true,funded_by
+512,logshare,LogShare,kamay_ventures,Kamay Ventures,1,true,funded_by
+513,luzid,Luzid,nxtp_labs,Nxtp Labs,1,true,funded_by
+514,m4life,M4Life,sf500,Sf500,1,true,funded_by
+515,m4life,M4Life,f_federico_wajnerman,Federico Wajnerman,1,true,has_founder
+516,mavios,Mavios,gridx,Gridx,1,true,funded_by
+517,mavios,Mavios,f_bruno_severin,Bruno Severin,1,true,has_founder
+518,menta_tickets,Menta Tickets,air_capital,Air Capital,1,true,funded_by
+519,mentatech,MentaTech,draper_cygnus,Draper Cygnus,1,true,funded_by
+520,mentatech,MentaTech,f_matias_r_menta,Matias R. (MentaTech),1,true,has_founder
+521,mentatech,MentaTech,f_alejandro_h_menta,Alejandro H. (MentaTech),1,true,has_founder
+522,mentatech,MentaTech,f_juan_m_menta,Juan P. M. (MentaTech),1,true,has_founder
+523,mesenchyal_t,Mesenchyal-T,sf500,Sf500,1,true,funded_by
+524,mesenchyal_t,Mesenchyal-T,f_laura_alaniz,Laura Alaniz,1,true,has_founder
+525,michroma,Michroma,indiebio,Indiebio,1,true,funded_by
+526,michroma,Michroma,kairetsu_angels,Kairetsu Angels,1,true,funded_by
+527,michroma,Michroma,other_angels,Other Angels,1,true,funded_by
+528,michroma,Michroma,gridx,Gridx,1,true,built_by
+529,michroma,Michroma,f_ricky_cassini,Ricky Cassini,1,true,has_founder
+530,michroma,Michroma,f_mauricio_braia,Mauricio Braia,1,true,has_founder
+531,michroma,Michroma,u_indiebio,IndieBio (USA),1,true,accelerated_at
+532,michroma,Michroma,supply_change_capital,Supply Change Capital,1,true,funded_by
+533,michroma,Michroma,sosv,Sosv,1,true,funded_by
+534,michroma,Michroma,asoc_cab,Cámara Argentina de Biotecnología (CAB),1,true,member_of
+535,microgenesis,Microgenesis,indiebio,Indiebio,1,true,funded_by
+536,microgenesis,Microgenesis,happiness,Happiness,1,true,funded_by
+537,microgenesis,Microgenesis,sosv,Sosv,1,true,funded_by
+538,microgenesis,Microgenesis,kwb,Kwb,1,true,funded_by
+539,microgenesis,Microgenesis,gridx,Gridx,1,true,built_by
+540,microgenesis,Microgenesis,f_gabriela_gutierrez,Gabriela Gutiérrez,1,true,has_founder
+541,microgenesis,Microgenesis,asoc_cab,Cámara Argentina de Biotecnología (CAB),1,true,member_of
+542,microin,MicroIN,gridx,Gridx,1,true,funded_by
+543,microin,MicroIN,f_pamela_y,Pamela Y.,1,true,has_founder
+544,microin,MicroIN,f_leandro_cuffia,Leandro Cuffia,1,true,has_founder
+545,microscopia,microscopIA,f_nicolas_l_macias,Nicolás L. Macias,1,true,has_founder
+546,microterra,MicroTerra,draper_cygnus,Draper Cygnus,1,true,funded_by
+547,microterra,MicroTerra,f_marissa_c_microterra,Marissa C. (MicroTerra),1,true,has_founder
+548,microterra,MicroTerra,f_marissa_cuevas_mt,Marissa Cuevas,1,true,has_founder
+549,microterra,MicroTerra,u_indiebio,IndieBio (USA),1,true,accelerated_at
+550,migma,MIGMA,gridx,Gridx,1,true,funded_by
+551,migma,MIGMA,f_federico_w,Federico W.,1,true,has_founder
+552,migma,MIGMA,f_matias_galan,Matías Galan,1,true,has_founder
+553,monte_caldera,Monte Caldera,gridx,Gridx,1,true,funded_by
+554,monte_caldera,Monte Caldera,f_juan_fe,Juan F. E.,1,true,has_founder
+555,monte_caldera,Monte Caldera,f_juan_francisco_fea,Juan Francisco Fea,1,true,has_founder
+556,multiplai,MultiplAI,f_gonzalo_montiel,Gonzalo Montiel,1,true,has_founder
+557,multiplai_health,MultiplAI Health,sf500,Sf500,1,true,funded_by
+558,multiplai_health,MultiplAI Health,f_santiago_miriuka,Santiago Miriuka,1,true,has_founder
+559,mural,Mural,nxtp_labs,Nxtp Labs,1,true,funded_by
+560,mural,Mural,nxtp_ventures,NXTP Ventures,1,true,funded_by
+561,mural,Mural,insight_partners,Insight Partners,1,true,funded_by
+562,mural,Mural,tiger_global,Tiger Global Management,1,true,funded_by
+563,muta,MUTA,kamay_ventures,Kamay Ventures,1,true,funded_by
+564,mycorium_biotech,Mycorium Biotech,sf500,Sf500,1,true,funded_by
+565,mycorium_biotech,Mycorium Biotech,f_agustin_schiavio,Agustín Schiavio,1,true,has_founder
+566,mycorium_biotech,Mycorium Biotech,f_maria_luz_martinez,María Luz Martínez,1,true,has_founder
+567,mzp,MZP,gridx,Gridx,1,true,funded_by
+568,nairotech,Nairotech,aceleradora_litoral,Aceleradora Litoral,1,true,funded_by
+569,nairotech,Nairotech,f_rosario_ensenat,Rosario Ensenat,1,true,has_founder
+570,nano_jump,Nano Jump,gridx,Gridx,1,true,funded_by
+571,nanogrow_biotech,Nanogrow Biotech,gridx,Gridx,1,true,funded_by
+572,nanogrow_biotech,Nanogrow Biotech,f_nicolas_galmarini,Nicolás Galmarini,1,true,has_founder
+573,nanogrow_biotech,Nanogrow Biotech,f_lucia_vanrell,Lucía Vanrell,1,true,has_founder
+574,nanoingreen,Nanoingreen,gridx,Gridx,1,true,funded_by
+575,nanoingreen,Nanoingreen,f_carolina_aguila,Carolina Aguila,1,true,has_founder
+576,nanoingreen,Nanoingreen,f_andrea_gomez_zavaglia,Andrea Gómez-Zavaglia,1,true,has_founder
+577,nanoingreen,Nanoingreen,f_esteban_gerbino,Esteban Gerbino,1,true,has_founder
+578,nanoingreen,Nanoingreen,f_liliana_kunz,Liliana Kunz,1,true,has_founder
+579,nanoingreen,Nanoingreen,u_conicet_cidca,CIDCA (CONICET-UNLP),1,true,spin_off_from
+580,nanojump_bio,NanoJump Bio,gridx,Gridx,1,true,funded_by
+581,nanoprox,NanoproX,gridx,Gridx,1,true,funded_by
+582,nanotica,Nanotica,f_santiago_reche,Santiago Reche,1,true,has_founder
+583,nanotransfer,Nanotransfer,gridx,Gridx,1,true,funded_by
+584,nanotransfer,Nanotransfer,f_carla_giacomelli,Carla Giacomelli,1,true,has_founder
+585,nanotransfer,Nanotransfer,f_cecilia_vasti,Cecilia Vasti,1,true,has_founder
+586,nanotransfer,Nanotransfer,f_brian_reznik,Brian Reznik,1,true,has_founder
+587,nat4bio,Nat4Bio,gridx,Gridx,1,true,funded_by
+588,nat4bio,Nat4Bio,inventure,Inventure,1,true,funded_by
+589,nat4bio,Nat4Bio,f_julia_farina,Julia Inés Fariña,1,true,has_founder
+590,nat4bio,Nat4Bio,f_leandro_sanchez,Leandro Sánchez,1,true,has_founder
+591,nat4bio,Nat4Bio,f_joaquin_fisch,Joaquín Fisch,1,true,has_founder
+592,naturannova,Naturannova,gridx,Gridx,1,true,funded_by
+593,naturanova,Naturanova,gridx,Gridx,1,true,funded_by
+594,neocell,Neocell,gridx,Gridx,1,true,funded_by
+595,neocell,Neocell,f_laura_perez,Laura Pérez,1,true,has_founder
+596,new_organs_biotech,New Organs Biotech,gridx,Gridx,1,true,funded_by
+597,new_organs_biotech,New Organs Biotech,f_gaston_la_motta,Gastón La Motta,1,true,has_founder
+598,nideport,Nideport,antom,Antom,1,true,funded_by
+599,notfossil,NotFossil,sf500,Sf500,1,true,funded_by
+600,notfossil,NotFossil,f_camila_olivera,Camila Olivera,1,true,has_founder
+601,novo_space,NOVO SPACE,draper_cygnus,Draper Cygnus,1,true,funded_by
+602,novo_space,NOVO SPACE,air_capital,Air Capital,1,true,funded_by
+603,novo_space,NOVO SPACE,f_alejandro_f_novo,Alejandro F. (Novo Space),1,true,has_founder
+604,novo_space,NOVO SPACE,f_luciano_c_novo,Luciano C. (Novo Space),1,true,has_founder
+605,novo_space,NOVO SPACE,f_rodrigo_t_novo,Rodrigo T. (Novo Space),1,true,has_founder
+606,nude,Nude,kamay_ventures,Kamay Ventures,1,true,funded_by
+607,nunatak_biotech,Nunatak Biotech,gridx,Gridx,1,true,funded_by
+608,nunatak_biotech,Nunatak Biotech,f_julia_mensa,Julia Mensa,1,true,has_founder
+609,nunatak_biotech,Nunatak Biotech,f_lucas_ruberto,Lucas Ruberto,1,true,has_founder
+610,nuvemshop,Nuvemshop,nxtp_labs,Nxtp Labs,1,true,funded_by
+611,nuvemshop,Nuvemshop,f_santiago_sosa,Santiago Sosa,1,true,has_founder
+612,nuvemshop,Nuvemshop,f_martin_palombo,Martín Palombo,1,true,has_founder
+613,nuvemshop,Nuvemshop,kaszek,Kaszek,1,true,funded_by
+614,nuvemshop,Nuvemshop,accel,Accel,1,true,funded_by
+615,nuvemshop,Nuvemshop,insight_partners,Insight Partners,1,true,funded_by
+616,nuvemshop,Nuvemshop,tiger_global,Tiger Global Management,1,true,funded_by
+617,nuvemshop,Nuvemshop,qualcomm_ventures,Qualcomm Ventures,1,true,funded_by
+618,nuvia,Nuvia,nxtp_labs,Nxtp Labs,1,true,funded_by
+619,nuvia,Nuvia,f_gerard_williams,Gerard Williams III,1,true,has_founder
+620,ocular_bio_design,Ocular Bio Design,gridx,Gridx,1,true,funded_by
+621,ocular_bio_design,Ocular Bio Design,f_jorge_valdez,Jorge Valdez García,1,true,has_founder
+622,ocular_bio_design,Ocular Bio Design,f_judith_zavala,Judith Zavala Arcos,1,true,has_founder
+623,omica,Omica,f_ricardo_v_c_silva,Ricardo V. C. Silva,1,true,has_founder
+624,onco_precision,Onco Precision,air_capital,Air Capital,1,true,funded_by
+625,oncoliq,Oncoliq,sf500,Sf500,1,true,funded_by
+626,oncoliq,Oncoliq,air_capital,Air Capital,1,true,funded_by
+627,oncoliq,Oncoliq,f_marina_simian,Marina Simian,1,true,has_founder
+628,oncoliq,Oncoliq,f_adriana_de_siervi,Adriana De Siervi,1,true,has_founder
+629,oncoliq,Oncoliq,gridx,Gridx,1,true,built_by
+630,oncoprecision,OncoPrecision,gridx,Gridx,1,true,funded_by
+631,oncoprecision,OncoPrecision,indiebio,Indiebio,1,true,funded_by
+632,oncoprecision,OncoPrecision,genesis_consortium,Genesis Consortium,1,true,funded_by
+633,oncoprecision,OncoPrecision,fundacion_para_el_progreso_de_la_medicina,Fundacion Para El Progreso De La Medicina,1,true,funded_by
+634,oncoprecision,OncoPrecision,creative_ventures,Creative Ventures,1,true,funded_by
+635,oncoprecision,OncoPrecision,f_teresita_m,Teresita M.,1,true,has_founder
+636,oncoprecision,OncoPrecision,f_sandra_c,Sandra C.,1,true,has_founder
+637,oneinfinite,OneInfinite,draper_cygnus,Draper Cygnus,1,true,funded_by
+638,oneinfinite,OneInfinite,f_martin_a_oneinfinite,Martin A. (OneInfinite),1,true,has_founder
+639,oneinfinite,OneInfinite,f_gaston_m_oneinfinite,Gaston M. (OneInfinite),1,true,has_founder
+640,openlayer,Openlayer,nxtp_labs,Nxtp Labs,1,true,funded_by
+641,openlayer,Openlayer,f_vikas_nair,Vikas Nair,1,true,has_founder
+642,openlayer,Openlayer,f_gabriel_kalejaiye,Gabriel Kalejaiye,1,true,has_founder
+643,outpost,Outpost,air_capital,Air Capital,1,true,funded_by
+644,outpost,Outpost,f_shubham_kaushal,Shubham Kaushal,1,true,has_founder
+645,payjoy,Payjoy,nxtp_labs,Nxtp Labs,1,true,funded_by
+646,payjoy,Payjoy,f_mark_heynen_payjoy,Mark Heynen,1,true,has_founder
+647,payjoy,Payjoy,f_doug_ricket_payjoy,Doug Ricket,1,true,has_founder
+648,payjoy,Payjoy,f_gib_lopez_payjoy,Gib Lopez,1,true,has_founder
+649,pepton,Pepton,cites,Cites,1,true,funded_by
+650,pepton,Pepton,f_kamil_tamiola,Kamil Tamiola,1,true,has_founder
+651,phylumtech,PhylumTech,cites,Cites,1,true,incubated_at
+652,phylumtech,PhylumTech,f_matias_c_phylum,Matías C. (PhylumTech),1,true,has_founder
+653,phylumtech,PhylumTech,f_sergio_simonetta,Sergio Simonetta,1,true,has_founder
+654,phylumtech,PhylumTech,u_leloir,Fundación Instituto Leloir,1,true,spin_off_from
+655,pill_ar,Pill.AR,sf500,Sf500,1,true,funded_by
+656,pill_ar,Pill.AR,f_enzo_moriconi,Enzo Moriconi,1,true,has_founder
+657,plamic,Plamic,gridx,Gridx,1,true,funded_by
+658,plamic,Plamic,f_marta_melgarejo,Marta Melgarejo,1,true,has_founder
+659,plamic,Plamic,f_alberto_acevedo,Alberto Acevedo,1,true,has_founder
+660,plamic_biotech,Plamic Biotech,f_guillermo_p_perez,Guillermo P. Pérez,1,true,has_founder
+661,poas_bioenergy,Poás Bioenergy,antom,Antom,1,true,funded_by
+662,poas_bioenergy,Poás Bioenergy,f_luis_d,Luis D.,1,true,has_founder
+663,pods,Pods,nxtp_labs,Nxtp Labs,1,true,funded_by
+664,pods,Pods,f_rafaella_baraldo,Rafaella Baraldo,1,true,has_founder
+665,pods,Pods,f_guilherme_guimaraes,Guilherme Guimarães,1,true,has_founder
+666,polymera,POLYMERA,gridx,Gridx,1,true,funded_by
+667,polymera,POLYMERA,f_bianca_b,Bianca B.,1,true,has_founder
+668,polymera,POLYMERA,f_bianca_balzarini,Bianca Balzarini,1,true,has_founder
+669,pomelo,Pomelo,nxtp_labs,Nxtp Labs,1,true,funded_by
+670,pomelo,Pomelo,f_gaston_irigoyen_pomelo,Gaston Irigoyen,1,true,has_founder
+671,pomelo,Pomelo,f_juan_fantoni_pomelo,Juan Fantoni,1,true,has_founder
+672,pomelo,Pomelo,f_hernan_corral_pomelo,Hernan Corral,1,true,has_founder
+673,pregen,PreGen,gridx,Gridx,1,true,funded_by
+674,pregen,PreGen,f_nicolas_mucci,Nicolás Mucci,1,true,has_founder
+675,prima,Prima,nxtp_labs,Nxtp Labs,1,true,funded_by
+676,prima,Prima,f_daniel_autrique,Daniel Autrique,1,true,has_founder
+677,properati,Properati,nxtp_labs,Nxtp Labs,1,true,funded_by
+678,properati,Properati,f_gabriel_gruber_properati,Gabriel Gruber,1,true,has_founder
+679,properati,Properati,f_martin_sarsale_properati,Martin Sarsale,1,true,has_founder
+680,properati,Properati,f_damian_martinelli_properati,Damian Martinelli,1,true,has_founder
+681,properati,Properati,f_lorenzo_raggio_properati,Lorenzo Raggio,1,true,has_founder
+682,protiva,Protiva,gridx,Gridx,1,true,funded_by
+683,protiva,Protiva,f_natalia_g,Natalia G.,1,true,has_founder
+684,protiva,Protiva,f_leonardo_e,Leonardo E.,1,true,has_founder
+685,puna_bio,Puna Bio,gridx,Gridx,1,true,built_by
+686,puna_bio,Puna Bio,air_capital,Air Capital,1,true,funded_by
+687,puna_bio,Puna Bio,f_franco_martinez_levis_puna_bio,Franco Martinez Levis,1,true,has_founder
+688,puna_bio,Puna Bio,f_maria_eugenia_farias_puna_bio,Maria Eugenia Farias,1,true,has_founder
+689,puna_bio,Puna Bio,f_elisa_bertini_puna_bio,Elisa Bertini,1,true,has_founder
+690,puna_bio,Puna Bio,f_carolina_belfiore_puna_bio,Carolina Belfiore,1,true,has_founder
+691,puna_bio,Puna Bio,f_franco_martinez_puna_bio,Franco Martinez,1,true,has_founder
+692,puna_bio,Puna Bio,f_ellis_rocca_puna_bio,Ellis Rocca,1,true,has_founder
+693,puna_bio,Puna Bio,f_carolina_g_amenabar_puna_bio,Carolina G. Amenabar,1,true,has_founder
+694,puna_bio,Puna Bio,f_carolina_belfiore,Carolina Belfiore,1,true,has_founder
+695,puna_bio,Puna Bio,f_elisa_bertini,Elisa Bertini,1,true,has_founder
+696,puna_bio,Puna Bio,f_maria_eugenia_farias,María Eugenia Farías,1,true,has_founder
+697,puna_bio,Puna Bio,gates_foundation,Bill & Melinda Gates Foundation,1,true,funded_by
+698,puna_bio,Puna Bio,corteva_catalyst,Corteva Catalyst,1,true,funded_by
+699,puna_bio,Puna Bio,dalus_capital,Dalus Capital,1,true,funded_by
+700,puna_bio,Puna Bio,at_one_ventures,At One Ventures,1,true,funded_by
+701,punabio,PunaBio,indiebio,Indiebio,1,true,funded_by
+702,punabio,PunaBio,sp_ventures,Sp Ventures,1,true,funded_by
+703,punabio,PunaBio,gridx,Gridx,1,true,funded_by
+704,punabio,PunaBio,f_franco_martinez_punabio,Franco Martinez,1,true,has_founder
+705,punabio,PunaBio,f_ellis_rocca_punabio,Ellis Rocca,1,true,has_founder
+706,punabio,PunaBio,f_carolina_g_amenabar_punabio,Carolina G. Amenabar,1,true,has_founder
+707,qive,Qive,nxtp_labs,Nxtp Labs,1,true,funded_by
+708,qive,Qive,f_isis_abbud,Isis Abbud,1,true,has_founder
+709,qive,Qive,f_bruno_oliveira,Bruno Henrique Oliveira,1,true,has_founder
+710,qnity,Qnity,gridx,Gridx,1,true,funded_by
+711,quadminds,Quadminds,nxtp_labs,Nxtp Labs,1,true,funded_by
+712,quadminds,Quadminds,f_ariel_filotti,Ariel Filotti,1,true,has_founder
+713,quadminds,Quadminds,f_federico_storni,Federico Storni,1,true,has_founder
+714,quantum_south,Quantum South,f_marcos_a_amarante,Marcos A. Amarante,1,true,has_founder
+715,qumir_nano,Qumir Nano,gridx,Gridx,1,true,funded_by
+716,qumir_nano,Qumir Nano,f_cintia_romero,Cintia Romero,1,true,has_founder
+717,qumir_nano,Qumir Nano,f_jose_davila,Jose S. Dávila Costa,1,true,has_founder
+718,qumir_nano,Qumir Nano,f_franco_ciaffone,Franco Ciaffone,1,true,has_founder
+719,qumir_nano,Qumir Nano,f_jose_davila_costa,José S. Dávila Costa,1,true,has_founder
+720,radbio,Radbio,cites,Cites,1,true,incubated_at
+721,radbio,Radbio,f_ricardo_dewey,Ricardo A. Dewey,1,true,has_founder
+722,radbio,Radbio,f_monica_coronel,Mónica Coronel,1,true,has_founder
+723,radial,Radial,gridx,Gridx,1,true,funded_by
+724,resistia,Resistia,gridx,Gridx,1,true,funded_by
+725,resistia,Resistia,f_danilo_legnani,Danilo Legnani,1,true,has_founder
+726,retargetly,Retargetly,nxtp_labs,Nxtp Labs,1,true,funded_by
+727,retargetly,Retargetly,f_paula_ambrogi_retargetly,Paula Ambrogi,1,true,has_founder
+728,retargetly,Retargetly,f_daniel_czaplinski_retargetly,Daniel Czaplinski,1,true,has_founder
+729,retargetly,Retargetly,f_federico_nieves_retargetly,Federico Nieves,1,true,has_founder
+730,retargetly,Retargetly,f_daniel_czaplinski,Daniel Czaplinski,1,true,has_founder
+731,retargetly,Retargetly,u_wayra,Wayra Hispam (Telefónica),1,true,accelerated_at
+732,retargetly,Retargetly,wayra_hispam,Wayra Hispam,1,true,funded_by
+733,retrypay,Retrypay,kamay_ventures,Kamay Ventures,1,true,funded_by
+734,retrypay,Retrypay,f_mauricio_g_retrypay,Mauricio G. (Retrypay),1,true,has_founder
+735,retrypay,Retrypay,f_martin_s_retrypay,Martin S. (Retrypay),1,true,has_founder
+736,ripio,Ripio,nxtp_labs,Nxtp Labs,1,true,funded_by
+737,ripio,Ripio,f_luciana_gruszeczka_ripio,Luciana Gruszeczka,1,true,has_founder
+738,ripio,Ripio,f_mugur_marculescu_ripio,Mugur Marculescu,1,true,has_founder
+739,ripio,Ripio,f_sebastian_serrano_ripio,Sebastian Serrano,1,true,has_founder
+740,ripio,Ripio,f_sebastian_serrano,Sebastián Serrano,1,true,has_founder
+741,rsk,Rsk,nxtp_labs,Nxtp Labs,1,true,funded_by
+742,rsk,Rsk,f_diego_gutierrez_zaldivar,Diego Gutiérrez Zaldívar,1,true,has_founder
+743,ruedata,Ruedata,kamay_ventures,Kamay Ventures,1,true,funded_by
+744,ruedata,Ruedata,f_ezequiel_m_ruedata,Ezequiel M. (Ruedata),1,true,has_founder
+745,ruedata,Ruedata,f_stefano_t_ruedata,Stefano T. (Ruedata),1,true,has_founder
+746,rumina,Rumina,xperiment,Xperiment,1,true,funded_by
+747,rumina,Rumina,f_lucio_santana,Lúcio Santana,1,true,has_founder
+748,rumina,Rumina,f_pedro_peixoto,Pedro Peixoto,1,true,has_founder
+749,ruuts,Ruuts,antom,Antom,1,true,funded_by
+750,ruuts,Ruuts,glocal,Glocal,1,true,funded_by
+751,ruuts,Ruuts,f_stephanie_p,Stephanie P.,1,true,has_founder
+752,satellites_on_fire,Satellites on Fire,inventure,Inventure,1,true,funded_by
+753,satellites_on_fire,Satellites on Fire,antom,Antom,1,true,funded_by
+754,satellites_on_fire,Satellites on Fire,draper_cygnus,Draper Cygnus,1,true,funded_by
+755,satellites_on_fire,Satellites on Fire,air_capital,Air Capital,1,true,funded_by
+756,satellites_on_fire,Satellites on Fire,f_federico_gonzalez,Federico Gonzalez,1,true,has_founder
+757,satellites_on_fire,Satellites on Fire,f_ariel_aguilar,Ariel Aguilar,1,true,has_founder
+758,satellites_on_fire,Satellites on Fire,f_franco_rodriguez_viau,Franco Rodríguez Viau,1,true,has_founder
+759,satellogic,Satellogic,draper_cygnus,Draper Cygnus,1,true,funded_by
+760,satellogic,Satellogic,i_tencent,I Tencent,1,true,funded_by
+761,satellogic,Satellogic,nxtp_labs,Nxtp Labs,1,true,funded_by
+762,satellogic,Satellogic,i_valor_capital_group,I Valor Capital Group,1,true,funded_by
+763,satellogic,Satellogic,i_liberty_strategic,I Liberty Strategic,1,true,funded_by
+764,satellogic,Satellogic,i_idb,I Idb,1,true,funded_by
+765,satellogic,Satellogic,i_tuesday_capital,I Tuesday Capital,1,true,funded_by
+766,satellogic,Satellogic,i_tether_investments,I Tether Investments,1,true,funded_by
+767,satellogic,Satellogic,i_european_union,I European Union,1,true,funded_by
+768,satellogic,Satellogic,f_emiliano_kargieman_satellogic,Emiliano Kargieman,1,true,has_founder
+769,satellogic,Satellogic,f_gerardo_richarte_satellogic,Gerardo Richarte,1,true,has_founder
+770,satellogic,Satellogic,f_emiliano_kargieman,Emiliano Kargieman,1,true,has_founder
+771,satellogic,Satellogic,f_gerardo_richarte,Gerardo Richarte,1,true,has_founder
+772,satellogic,Satellogic,u_endeavor,Endeavor (Scale-up),1,true,accelerated_at
+773,satellogic,Satellogic,nxtp_ventures,NXTP Ventures,1,true,funded_by
+774,satellogic,Satellogic,tencent,Tencent,1,true,funded_by
+775,scitherm_therapeutics,Scitherm Therapeutics,gridx,Gridx,1,true,funded_by
+776,scitherm_therapeutics,Scitherm Therapeutics,f_rosana_nc,Rosana N. C.,1,true,has_founder
+777,scitherm_therapeutics,Scitherm Therapeutics,f_alejandro_torres,Alejandro Torres,1,true,has_founder
+778,securitize,Securitize,nxtp_labs,Nxtp Labs,1,true,funded_by
+779,securitize,Securitize,f_carlos_domingo_securitize,Carlos Domingo,1,true,has_founder
+780,securitize,Securitize,f_jamie_h_finn_securitize,Jamie H Finn,1,true,has_founder
+781,securitize,Securitize,f_shay_finkelstein_securitize,Shay Finkelstein,1,true,has_founder
+782,securitize,Securitize,f_tim_reynders_securitize,Tim Reynders,1,true,has_founder
+783,seedmatriz,SeedMatriz,aceleradora_litoral,Aceleradora Litoral,1,true,funded_by
+784,seedmatriz,SeedMatriz,f_federico_cola,Federico Cola,1,true,has_founder
+785,seedmatriz,SeedMatriz,f_jorge_suino,Jorge Suino,1,true,has_founder
+786,seedmatriz,SeedMatriz,f_daniel_marro,Daniel Marro,1,true,has_founder
+787,seedmatriz,SeedMatriz,f_alejandro_gordillo,Alejandro Gordillo,1,true,has_founder
+788,seedmatriz,SeedMatriz,f_george_stromeyer,George Stromeyer,1,true,has_founder
+789,seedmatriz,SeedMatriz,f_geronimo_pages,Gerónimo Pages,1,true,has_founder
+790,semion,Semion,gridx,Gridx,1,true,funded_by
+791,semion,Semion,f_emilio_molina,Emilio Molina,1,true,has_founder
+792,semion,Semion,f_victoria_coll_araoz,Victoria Coll Araoz,1,true,has_founder
+793,sensei,Sensei,kamay_ventures,Kamay Ventures,1,true,funded_by
+794,sensify,Sensify,inventure,Inventure,1,true,funded_by
+795,sensify,Sensify,kamay_ventures,Kamay Ventures,1,true,funded_by
+796,sensify,Sensify,f_alejandro_muther,Alejandro Muther,1,true,has_founder
+797,sensify,Sensify,f_guillermo_salvatierra,Guillermo Salvatierra,1,true,has_founder
+798,silohub,Silohub,xperiment,Xperiment,1,true,funded_by
+799,siloreal,SiloReal,inventure,Inventure,1,true,funded_by
+800,siloreal,SiloReal,draper_cygnus,Draper Cygnus,1,true,funded_by
+801,siloreal,SiloReal,f_jimmy_g,Jimmy G.,1,true,has_founder
+802,sima,Sima,xperiment,Xperiment,1,true,funded_by
+803,sima,Sima,f_andres_yerkovich_sima,Andres Yerkovich,1,true,has_founder
+804,sima,Sima,f_geronimo_oliva_sima,Geronimo Oliva,1,true,has_founder
+805,sima,Sima,f_federico_bert_sima,Federico Bert,1,true,has_founder
+806,sima,Sima,u_glocal,Glocal (AgriFood),1,true,accelerated_at
+807,sima,Sima,alaya_capital,Alaya Capital,1,true,funded_by
+808,single_strand_biotech,Single Strand Biotech,cites,Cites,1,true,funded_by
+809,sirena,Sirena,nxtp_labs,Nxtp Labs,1,true,funded_by
+810,sirena,Sirena,u_wayra,Wayra Hispam (Telefónica),1,true,accelerated_at
+811,sirena,Sirena,wayra_hispam,Wayra Hispam,1,true,funded_by
+812,skyloom,Skyloom,draper_cygnus,Draper Cygnus,1,true,funded_by
+813,skyloom,Skyloom,air_capital,Air Capital,1,true,funded_by
+814,skyloom,Skyloom,f_marcos_f_skyloom,Marcos F. (Skyloom),1,true,has_founder
+815,skyloom,Skyloom,f_santiago_t_skyloom,Santiago T. (Skyloom),1,true,has_founder
+816,skyloom,Skyloom,u_instituto_balseiro,Instituto Balseiro (CNEA-UNCuyo),1,true,collaborates_with
+817,skyloom,Skyloom,f_marcos_franceschini,Marcos Franceschini,1,true,has_founder
+818,skyloom,Skyloom,u_draper_uni,Draper University,1,true,accelerated_at
+819,solfium,Solfium,kamay_ventures,Kamay Ventures,1,true,funded_by
+820,solfium,Solfium,f_andres_b_solfium,Andres B. (Solfium),1,true,has_founder
+821,solfium,Solfium,f_juan_p_solfium,Juan P. (Solfium),1,true,has_founder
+822,solfium,Solfium,u_ypf_ventures,YPF Ventures,1,true,funded_by
+823,soygreen,SoyGREEN,sf500,Sf500,1,true,funded_by
+824,soygreen,SoyGREEN,f_daniela_torres,Daniela Torres,1,true,has_founder
+825,spectrum,Spectrum,sf500,Sf500,1,true,funded_by
+826,spectrum,Spectrum,f_matias_vidal,Matías Vidal,1,true,has_founder
+827,spherebio,SphereBio,gridx,Gridx,1,true,funded_by
+828,spherebio,SphereBio,f_julieta_luz_porta,Julieta Luz Porta,1,true,has_founder
+829,spherebio,SphereBio,f_guido_molina,Guido Nicolás Molina,1,true,has_founder
+830,splight,Splight,draper_cygnus,Draper Cygnus,1,true,funded_by
+831,splight,Splight,f_juan_c_splight,Juan J. C. (Splight),1,true,has_founder
+832,splight,Splight,f_jose_b_splight,Jose B. (Splight),1,true,has_founder
+833,splight,Splight,f_fernando_llaver,Fernando Llaver,1,true,has_founder
+834,splight,Splight,newtopia_vc,Newtopia VC,1,true,funded_by
+835,spline,Spline,nxtp_labs,Nxtp Labs,1,true,funded_by
+836,stamm,Stämm,indiebio,Indiebio,1,true,funded_by
+837,stamm,Stämm,draper_associates,Draper Associates,1,true,funded_by
+838,stamm,Stämm,sosv,Sosv,1,true,funded_by
+839,stamm,Stämm,draper_cygnus,Draper Cygnus,1,true,funded_by
+840,stamm,Stämm,gridx,Gridx,1,true,built_by
+841,stamm,Stämm,other_small_investors,Other Small Investors,1,true,funded_by
+842,stamm,Stämm,flia_duhau,Flia Duhau,1,true,funded_by
+843,stamm,Stämm,varana_capital,Varana Capital,1,true,funded_by
+844,stamm,Stämm,losa_group,Losa Group,1,true,funded_by
+845,stamm,Stämm,dragones,Dragones,1,true,funded_by
+846,stamm,Stämm,vx_fund,Vx Fund,1,true,funded_by
+847,stamm,Stämm,i_vista_equity,I Vista Equity,1,true,funded_by
+848,stamm,Stämm,i_abundance_venture,I Abundance Venture,1,true,funded_by
+849,stamm,Stämm,air_capital,Air Capital,1,true,funded_by
+850,stamm,Stämm,f_yuyo_llamazares,Federico (Yuyo) Llamazares,1,true,has_founder
+851,stamm,Stämm,f_mercedes_vila,Mercedes Vila,1,true,has_founder
+852,stamm,Stämm,u_bioark_switzerland,BioArk (Switzerland),1,true,accelerated_at
+853,stamm,Stämm,u_indiebio,IndieBio (USA),1,true,accelerated_at
+854,stamm,Stämm,vista_equity,Vista Equity Partners,1,true,funded_by
+855,stamm,Stämm,asoc_cab,Cámara Argentina de Biotecnología (CAB),1,true,member_of
+856,starlight_ventures,Starlight Ventures,air_capital,Air Capital,1,true,funded_by
+857,stradot,Stradot,cites,Cites,1,true,incubated_at
+858,stradot,Stradot,f_jose_iriarte,José Iriarte,1,true,has_founder
+859,stradot,Stradot,f_nicolas_hernandez,Nicolas Hernandez,1,true,has_founder
+860,strike,Strike,nxtp_labs,Nxtp Labs,1,true,funded_by
+861,sylvarum,Sylvarum,gridx,Gridx,1,true,funded_by
+862,sylvarum,Sylvarum,air_capital,Air Capital,1,true,funded_by
+863,sylvarum,Sylvarum,f_guadalupe_murga,Guadalupe Murga,1,true,has_founder
+864,sylvarum,Sylvarum,f_manuel_sobrino,Manuel Sobrino,1,true,has_founder
+865,synthetic_ocular_restoration,Synthetic Ocular Restoration,gridx,Gridx,1,true,funded_by
+866,synthetic_ocular_restoration,Synthetic Ocular Restoration,f_jorge_valdez,Jorge Valdez García,1,true,has_founder
+867,synthetic_ocular_restoration,Synthetic Ocular Restoration,f_judith_zavala,Judith Zavala Arcos,1,true,has_founder
+868,synthetic_ocular_restoration,Synthetic Ocular Restoration,f_amin_mahmoudsalehi,Amin Orash Mahmoudsalehi,1,true,has_founder
+869,synthetic_ocular_restoration,Synthetic Ocular Restoration,f_maryam_soleimani,Maryam Soleimani,1,true,has_founder
+870,synthetic_ocular_restoration,Synthetic Ocular Restoration,f_dr_ortega,Dr. Ortega,1,true,has_founder
+871,synthetic_ocular_restoration,Synthetic Ocular Restoration,f_narsimha_mamidi,Narsimha Mamidi,1,true,has_founder
+872,syocin_bio,Syocin Bio,thrive,Thrive,1,true,funded_by
+873,syocin_bio,Syocin Bio,blue_horizon,Blue Horizon,1,true,funded_by
+874,syocin_bio,Syocin Bio,gridx,Gridx,1,true,funded_by
+875,syocin_bio,Syocin Bio,f_julia_roulet,Julia Roulet,1,true,has_founder
+876,teachy,Teachy,nxtp_labs,Nxtp Labs,1,true,funded_by
+877,tech,@Tech,the_yield_lab_latam,The Yield Lab Latam,1,true,funded_by
+878,tell,Tell,sf500,Sf500,1,true,funded_by
+879,tell,Tell,f_fernando_johann,Fernando Johann,1,true,has_founder
+880,teramot,Teramot,cites,Cites,1,true,funded_by
+881,teramot,Teramot,u_instituto_balseiro,Instituto Balseiro (CNEA-UNCuyo),1,true,incubated_at
+882,teramot,Teramot,f_lucas_uzal,Lucas Uzal,1,true,has_founder
+883,tesabio_ai,Tesabio.ai,gridx,Gridx,1,true,funded_by
+884,tesabio_ai,Tesabio.ai,f_diego_galeano,Diego Galeano,1,true,has_founder
+885,tintte,Tintte,sf500,Sf500,1,true,funded_by
+886,tintte,Tintte,f_gustavo_freytes,Gustavo Freytes,1,true,has_founder
+887,tissue_dynamics,Tissue Dynamics,air_capital,Air Capital,1,true,funded_by
+888,tissue_dynamics,Tissue Dynamics,f_nahuel_villegas,Nahuel Villegas,1,true,has_founder
+889,tomorrow,Tomorrow,bago,Bago,1,true,funded_by
+890,tomorrow,Tomorrow,grupo_insud,Grupo Insud,1,true,funded_by
+891,tomorrow,Tomorrow,managro,Managro,1,true,funded_by
+892,tomorrow,Tomorrow,gridx,Gridx,1,true,funded_by
+893,tomorrow,Tomorrow,other_small_investors,Other Small Investors,1,true,funded_by
+894,tomorrow,Tomorrow,f_guillermo_lentz,Guillermo Lentz,1,true,has_founder
+895,tomorrow,Tomorrow,f_agustin_bellomo,Agustín Bellomo,1,true,has_founder
+896,tomorrow_foods,Tomorrow Foods,gridx,Gridx,1,true,funded_by
+897,tomorrow_foods,Tomorrow Foods,f_agustin_belloso,Agustín Belloso,1,true,has_founder
+898,tracestory,Tracestory,inventure,Inventure,1,true,funded_by
+899,tracestory,Tracestory,xperiment,Xperiment,1,true,funded_by
+900,tracestory,Tracestory,f_federico_b,Federico B.,1,true,has_founder
+901,tracestory,Tracestory,f_joaquin_g,Joaquin G.,1,true,has_founder
+902,tracestory,Tracestory,f_jorge_suino,Jorge Suino,1,true,has_founder
+903,travelx,TravelX,draper_cygnus,Draper Cygnus,1,true,funded_by
+904,travelx,TravelX,f_juan_l_travelx,Juan Pablo L. (TravelX),1,true,has_founder
+905,travelx,TravelX,f_facundo_d_travelx,Facundo D. (TravelX),1,true,has_founder
+906,travelx,TravelX,f_juan_pablo_lafosse_tx,Juan Pablo Lafosse,1,true,has_founder
+907,trebe_biotech,Trebe Biotech,sf500,Sf500,1,true,built_by
+908,trebe_biotech,Trebe Biotech,f_manuel_pacin,Manuel Pacín,1,true,has_founder
+909,trebe_biotech,Trebe Biotech,asoc_cab,Cámara Argentina de Biotecnología (CAB),1,true,member_of
+910,ubique_bio,Ubique Bio,gridx,Gridx,1,true,funded_by
+911,unibaio,Unibaio,inventure,Inventure,1,true,funded_by
+912,unibaio,Unibaio,sf500,Sf500,1,true,funded_by
+913,unibaio,Unibaio,f_carolina_e,Carolina E.,1,true,has_founder
+914,unibaio,Unibaio,f_cecilia_l,Cecilia L.,1,true,has_founder
+915,unibaio,Unibaio,f_matias_figliozzi,Matías Figliozzi,1,true,has_founder
+916,unibaio,Unibaio,f_matias_garmendia,Matías Garmendia,1,true,has_founder
+917,unibaio,Unibaio,f_claudia_casalongue,Claudia Casalongué,1,true,has_founder
+918,unibaio,Unibaio,bioceres,Bioceres,1,true,collaborates_with
+919,unibaio,Unibaio,asoc_cab,Cámara Argentina de Biotecnología (CAB),1,true,member_of
+920,untech,UnTech,aceleradora_litoral,Aceleradora Litoral,1,true,funded_by
+921,untech,UnTech,f_ruben_salim,Rubén Salim,1,true,has_founder
+922,untech,UnTech,f_alberto_ramos,Alberto Ramos,1,true,has_founder
+923,updairy,Updairy,gridx,Gridx,1,true,funded_by
+924,updairy,Updairy,f_valentina_m,Valentina M.,1,true,has_founder
+925,updairy,Updairy,f_grace_hsia,Grace Hsia,1,true,has_founder
+926,vercel,Vercel,nxtp_labs,Nxtp Labs,1,true,funded_by
+927,vercel,Vercel,f_guillermo_rauch,Guillermo Rauch,1,true,has_founder
+928,vexxel_biotech,Vexxel Biotech,gridx,Gridx,1,true,funded_by
+929,vexxel_biotech,Vexxel Biotech,f_milagros_burgi,Milagros Bürgi,1,true,has_founder
+930,vexxel_biotech,Vexxel Biotech,sf500,Sf500,1,true,built_by
+931,viewmind,ViewMind,cites,Cites,1,true,incubated_at
+932,viewmind,ViewMind,f_matias_a_viewmind,Matias A. (ViewMind),1,true,has_founder
+933,viewmind,ViewMind,f_matias_shayo,Matías Shayo,1,true,has_founder
+934,vixtra,Vixtra,nxtp_labs,Nxtp Labs,1,true,funded_by
+935,vmind,VMind,draper_cygnus,Draper Cygnus,1,true,funded_by
+936,vmind,VMind,f_matias_a_viewmind,Matias A. (ViewMind),1,true,has_founder
+937,vu,Vu,nxtp_labs,Nxtp Labs,1,true,funded_by
+938,webee,Webee,kamay_ventures,Kamay Ventures,1,true,funded_by
+939,webee,Webee,f_lucas_f_webee,Lucas F. (Webee),1,true,has_founder
+940,webee,Webee,f_cecilia_c_webee,Cecilia C. (Webee),1,true,has_founder
+941,webee,Webee,f_lucas_funes,Lucas Funes,1,true,has_founder
+942,webee,Webee,f_cecilia_flores,Cecilia Flores,1,true,has_founder
+943,werkenvac,WerkenVac,gridx,Gridx,1,true,funded_by
+944,werkenvac,WerkenVac,f_sebastian_cavalitto,Sebastián Cavalitto,1,true,has_founder
+945,werkenvac,WerkenVac,f_claudio_prieto,Claudio Prieto,1,true,has_founder
+946,wiagro,Wiagro,kamay_ventures,Kamay Ventures,1,true,funded_by
+947,wiagro,Wiagro,f_martin_c_wiagro,Martin C. (Wiagro),1,true,has_founder
+948,wiagro,Wiagro,f_jose_s_wiagro,Jose S. (Wiagro),1,true,has_founder
+949,wisy,Wisy,kamay_ventures,Kamay Ventures,1,true,funded_by
+950,wisy,Wisy,f_min_c_wisy,Min C. (Wisy),1,true,has_founder
+951,wisy,Wisy,f_ricardo_j_wisy,Ricardo J. (Wisy),1,true,has_founder
+952,wisy,Wisy,f_nabil_k_wisy,Nabil K. (Wisy),1,true,has_founder
+953,workana,Workana,nxtp_labs,Nxtp Labs,1,true,funded_by
+954,zavia_bio,Zavia Bio,gridx,Gridx,1,true,built_by
+955,zavia_bio,Zavia Bio,f_paula_casati,Paula M. Casati,1,true,has_founder
+956,zavia_bio,Zavia Bio,f_martin_vazquez,Martin M. Vazquez,1,true,has_founder
+957,zavia_bio,Zavia Bio,f_paz_alvarez,Paz Álvarez,1,true,has_founder
+958,zavia_bio,Zavia Bio,kamay_ventures,Kamay Ventures,1,true,funded_by
+959,zev_biotech,ZEV Biotech,peruanos,Peruanos,1,true,funded_by
+960,zev_biotech,ZEV Biotech,grupo_peruanos,Grupo Peruanos,1,true,funded_by
+961,zev_biotech,ZEV Biotech,gridx,Gridx,1,true,funded_by
+962,zev_biotech,ZEV Biotech,f_maximiliano_irissari,Maximiliano Irisarri,1,true,has_founder
+963,zev_biotech,ZEV Biotech,f_gilberto_ugalde,Gilberto Ugalde,1,true,has_founder
+964,zev_biotech,ZEV Biotech,f_maximiliano_irisarri,Maximiliano Irisarri,1,true,has_founder
+965,zipnova,Zipnova,kamay_ventures,Kamay Ventures,1,true,funded_by
+966,zipnova,Zipnova,f_daniel_c_zipnova,Daniel C. (Zipnova),1,true,has_founder
+967,zoomagri,ZoomAgri,inventure,Inventure,1,true,funded_by
+968,zoomagri,ZoomAgri,f_matias_r,Matias R.,1,true,has_founder
+969,zoomagri,ZoomAgri,f_fernando_m,Fernando M.,1,true,has_founder
+970,zoomagri,ZoomAgri,f_jaap_v,Jaap V.,1,true,has_founder
+971,zoomagri,ZoomAgri,f_matias_spagolla,Matías Spagolla,1,true,has_founder
+972,nuclearis,Nuclearis,u_cnea,Comisión Nacional de Energía Atómica (CNEA),1,true,supplier_of
+973,nuclearis,Nuclearis,u_nasa_nuclear,Nucleoeléctrica Argentina S.A.,1,true,supplier_of
+974,mabloc,Mabloc,u_butantan,Instituto Butantan (Brasil),1,true,collaborates_with
+975,mudafy,Mudafy,u_y_combinator,Y Combinator (USA),1,true,accelerated_at
+976,frubana,Frubana,u_y_combinator,Y Combinator (USA),1,true,accelerated_at
+977,houm,Houm,u_y_combinator,Y Combinator (USA),1,true,accelerated_at
+978,uala,Ualá,softbank,SoftBank,1,true,funded_by
+979,uala,Ualá,tencent,Tencent,1,true,funded_by
+980,galtec,Galtec Life,f_gabriel_rabinovich,Gabriel Rabinovich,1,true,has_founder
+981,chemtest,Chemtest,asoc_cab,Cámara Argentina de Biotecnología (CAB),1,true,member_of
+982,f_abastra_founder,AbAstra Founder,universidad_nacional_de_san_martin_unsam,Universidad Nacional de San Martín (UNSAM),1,true,studied_at
+983,f_adriana_de_siervi,Adriana De Siervi,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+984,f_adriana_diaz,Adriana L. E. Diaz,universidad_nacional_de_cordoba,Universidad Nacional de Córdoba,1,true,studied_at
+985,f_agustin_bellomo,Agustín Bellomo,instituto_tecnologico_de_buenos_aires_itba,Instituto Tecnológico de Buenos Aires (ITBA),1,true,studied_at
+986,f_agustin_saez,Agustin Saez,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+987,f_agustin_schiavio,Agustín Schiavio,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+988,f_agustina_m_dynami,Agustina M. (Dynami),universidad_de_san_andres,Universidad de San Andrés,1,true,studied_at
+989,f_agustina_mosso,Agustina Mosso,universidad_de_san_andres,Universidad de San Andrés,1,true,studied_at
+990,f_alan_gontmaher,Alan Gontmaher,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+991,f_alberto_ramos,Alberto Ramos,universidad_nacional_de_tucuman,Universidad Nacional de Tucumán,1,true,studied_at
+992,f_alberto_ramos,Alberto Ramos,u_inquinoa,INQUINOA (CONICET-UNT),1,true,researched_at
+993,f_alejandro_c,Alejandro C.,universidad_nacional_del_litoral,Universidad Nacional del Litoral,1,true,studied_at
+994,f_alejandro_f_novo,Alejandro F. (Novo Space),universidad_nacional_de_la_plata,Universidad Nacional de La Plata,1,true,studied_at
+995,f_alejandro_h_menta,Alejandro H. (MentaTech),universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+996,f_alejandro_muther,Alejandro Muther,universidad_tecnologica_nacional_utn,Universidad Tecnológica Nacional (UTN),1,true,studied_at
+997,f_alejandro_muther,Alejandro Muther,universidad_de_san_andres,Universidad de San Andrés,1,true,studied_at
+998,f_alejandro_ugartemendia,Alejandro Ugartemendia,universidad_nacional_de_la_plata,Universidad Nacional de La Plata,1,true,studied_at
+999,f_alexis_roman_rama,Alexis Roman Rama,tecnologico_de_monterrey_itesm,Tecnológico de Monterrey (ITESM),1,true,studied_at
+1000,f_alfonsina_b,Alfonsina B.,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1001,f_alfonso_b,Alfonso B.,u_uncuyo,Universidad Nacional de Cuyo (UNCuyo),1,true,studied_at
+1002,f_alkemio_f,Alkemio Founder,universidad_nacional_de_la_plata,Universidad Nacional de La Plata,1,true,studied_at
+1003,f_aluen_b,Aluen B.,universidad_tecnologica_nacional_utn,Universidad Tecnológica Nacional (UTN),1,true,studied_at
+1004,f_amin_mahmoudsalehi,Amin Orash Mahmoudsalehi,tecnologico_de_monterrey_itesm,Tecnológico de Monterrey (ITESM),1,true,studied_at
+1005,f_andrea_gomez_zavaglia,Andrea Gómez-Zavaglia,u_conicet_cidca,CIDCA (CONICET-UNLP),1,true,researched_at
+1006,f_andres_b_solfium,Andres B. (Solfium),ie_business_school,IE Business School,1,true,studied_at
+1007,f_andres_bernhardt,Andres Bernhardt,ie_business_school,IE Business School,1,true,studied_at
+1008,f_andres_gambini,Andres Gambini,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1009,f_andres_loza,Andres Loza (Courageous),u_anahuac_mx,Universidad Anáhuac,1,true,studied_at
+1010,f_andres_t,Andres T.,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1011,f_antonieta_rodriguez,Antonieta Rodríguez de Olmos,universidad_siglo_21,Universidad Siglo 21,1,true,studied_at
+1012,f_ariel_aguilar,Ariel Aguilar,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1013,f_ariel_roberti,Ariel Roberti,universidad_nacional_de_rosario,Universidad Nacional de Rosario,1,true,studied_at
+1014,f_ayuvant_f,Ayuvant Founder,universidad_nacional_de_la_plata,Universidad Nacional de La Plata,1,true,studied_at
+1015,f_ayuvant_founder,Ayuvant Founder,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1016,f_belen_musso,Belen Musso,universidad_de_la_republica_uruguay,Universidad de la República (Uruguay),1,true,studied_at
+1017,f_bianca_b,Bianca B.,universidad_ort_uruguay,Universidad ORT Uruguay,1,true,studied_at
+1018,f_bioseek_f,Bioseek Founder,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1019,f_bioseek_founder,Bioseek Founder,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1020,f_borja_m_lemon,Borja M. (Lemon),universidad_de_san_andres,Universidad de San Andrés,1,true,studied_at
+1021,f_braulio_kreczmann,Braulio Kreczmann,universidad_nacional_del_litoral,Universidad Nacional del Litoral,1,true,studied_at
+1022,f_brian_reznik,Brian Reznik,universidad_nacional_de_cordoba,Universidad Nacional de Córdoba,1,true,studied_at
+1023,f_bruno_r_dynami,Bruno R. (Dynami),instituto_tecnologico_de_buenos_aires_itba,Instituto Tecnológico de Buenos Aires (ITBA),1,true,studied_at
+1024,f_bruno_rota,Bruno Rota,instituto_tecnologico_de_buenos_aires_itba,Instituto Tecnológico de Buenos Aires (ITBA),1,true,studied_at
+1025,f_camila_olivera,Camila Olivera,universidad_nacional_de_mar_del_plata,Universidad Nacional de Mar del Plata,1,true,studied_at
+1026,f_carla_fp,Carla F. P.,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1027,f_carla_giacomelli,Carla Giacomelli,universidad_nacional_de_cordoba,Universidad Nacional de Córdoba,1,true,studied_at
+1028,f_carla_gimenez,Carla Giménez,universidad_nacional_de_quilmes,Universidad Nacional de Quilmes,1,true,studied_at
+1029,f_carla_gimenez,Carla Giménez,universidad_catolica_argentina_uca,Universidad Católica Argentina (UCA),1,true,graduated_from
+1030,f_carolina_aguila,Carolina Aguila,universidad_de_santiago_de_chile_usach,Universidad de Santiago de Chile (USACH),1,true,studied_at
+1031,f_carolina_bluguermann,Carolina Bluguermann,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1032,f_carolina_bluguermann,Carolina Bluguermann,u_conicet_imed,IMED (Instituto de Medicina),1,true,researched_at
+1033,f_carolina_e,Carolina E.,universidad_nacional_de_la_plata,Universidad Nacional de La Plata,1,true,studied_at
+1034,f_cassiana_f,Cassiana F.,universidad_nacional_del_litoral,Universidad Nacional del Litoral,1,true,studied_at
+1035,f_cecilia_c_webee,Cecilia C. (Webee),universidad_nacional_de_cordoba,Universidad Nacional de Córdoba,1,true,studied_at
+1036,f_cecilia_carrillo,Cecilia Carrillo,universidad_nacional_de_mar_del_plata,Universidad Nacional de Mar del Plata,1,true,studied_at
+1037,f_cecilia_l,Cecilia L.,universidad_nacional_de_la_plata,Universidad Nacional de La Plata,1,true,studied_at
+1038,f_cecilia_lg,Cecilia L. G.,universidad_nacional_de_cordoba,Universidad Nacional de Córdoba,1,true,studied_at
+1039,f_cecilia_vasti,Cecilia Vasti,universidad_nacional_de_cordoba,Universidad Nacional de Córdoba,1,true,studied_at
+1040,f_claudio_prieto,Claudio Prieto,universidad_nacional_de_la_plata,Universidad Nacional de La Plata,1,true,studied_at
+1041,f_clover_f,Clover Founder,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1042,f_clover_founder,Clover Founder,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1043,f_crinsurance_f,CRInsurance Founder,u_uai_chile,Universidad Adolfo Ibáñez,1,true,studied_at
+1044,f_cristian_acevedo,Cristian Acevedo,universidad_nacional_del_litoral,Universidad Nacional del Litoral,1,true,studied_at
+1045,f_cristian_perez,Cristian Perez,universidad_nacional_del_litoral,Universidad Nacional del Litoral,1,true,studied_at
+1046,f_cristobal_h,Cristobal H.,u_uai_chile,Universidad Adolfo Ibáñez,1,true,studied_at
+1047,f_damian_alvarez,Damián Álvarez Paggi,u_uncuyo,Universidad Nacional de Cuyo (UNCuyo),1,true,studied_at
+1048,f_daniel_c_zipnova,Daniel C. (Zipnova),u_pacifico_pe,Universidad del Pacífico,1,true,studied_at
+1049,f_daniel_salamone,Daniel F. Salamone,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1050,f_daniela_torres,Daniela Torres,universidad_nacional_de_rosario,Universidad Nacional de Rosario,1,true,studied_at
+1051,f_dario_krapf,Darío KRAPF,universidad_nacional_de_rosario,Universidad Nacional de Rosario,1,true,studied_at
+1052,f_demian_barsky,Demian T. Barsky,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1053,f_diego_galeano,Diego Galeano,u_una_paraguay,Universidad Nacional de Asunción (FIUNA),1,true,studied_at
+1054,f_diego_galeano,Diego Galeano,u_rhul,Royal Holloway,1,true,studied_at
+1055,f_diego_galeano,Diego Galeano,u_yale,Yale University,1,true,studied_at
+1056,f_diego_galeano,Diego Galeano,u_fgv,Fundação Getulio Vargas,1,true,studied_at
+1057,f_emiliano_kargieman,Emiliano Kargieman,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1058,f_emiliano_kargieman,Emiliano Kargieman,singularity_university,Singularity University,1,true,studied_at
+1059,f_enzo_moriconi,Enzo Moriconi,u_uncuyo,Universidad Nacional de Cuyo (UNCuyo),1,true,studied_at
+1060,f_enzo_zamboni,Enzo Zamboni,universidad_nacional_del_litoral,Universidad Nacional del Litoral,1,true,studied_at
+1061,f_eolo_pharma_f,Eolo Pharma Founder,u_pasteur_montevideo,Institut Pasteur de Montevideo,1,true,studied_at
+1062,f_eolo_pharma_f,Eolo Pharma Founder,universidad_de_la_republica_uruguay,Universidad de la República (Uruguay),1,true,studied_at
+1063,f_esteban_c_cruz,Esteban C. Cruz,universidad_ort_uruguay,Universidad ORT Uruguay,1,true,studied_at
+1064,f_esteban_piccinini,Esteban Piccinini,universidad_nacional_de_la_plata,Universidad Nacional de La Plata,1,true,studied_at
+1065,f_esteban_piccinini,Esteban Piccinini,u_conicet_inifta,INIFTA (UNLP-CONICET),1,true,researched_at
+1066,f_eugenio_pace,Eugenio Pace,instituto_tecnologico_de_buenos_aires_itba,Instituto Tecnológico de Buenos Aires (ITBA),1,true,studied_at
+1067,f_ezequiel_m_ruedata,Ezequiel M. (Ruedata),universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1068,f_ezequiel_m_ruedata,Ezequiel M. (Ruedata),universidad_de_san_andres,Universidad de San Andrés,1,true,studied_at
+1069,f_facundo_d_travelx,Facundo D. (TravelX),universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1070,f_federico_ariel,Federico Ariel,universidad_nacional_del_litoral,Universidad Nacional del Litoral,1,true,studied_at
+1071,f_federico_b,Federico B.,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1072,f_federico_cola,Federico Cola,u_rio_cuarto,Universidad Nacional de Río Cuarto,1,true,studied_at
+1073,f_federico_gonzalez,Federico Gonzalez,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1074,f_federico_pereiro,Federico Pereiro,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1075,f_federico_trucco,Federico Trucco,universidad_de_illinois_urbana_champaign_phd,University of Illinois Urbana-Champaign (PhD),1,true,studied_at
+1076,f_federico_trucco,Federico Trucco,universidad_nacional_de_rosario,Universidad Nacional de Rosario,1,true,studied_at
+1077,f_federico_w,Federico W.,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1078,f_federico_w,Federico W.,u_palermo,Universidad de Palermo (UP),1,true,studied_at
+1079,f_federico_wajnerman,Federico Wajnerman,universidad_nacional_del_litoral,Universidad Nacional del Litoral,1,true,studied_at
+1080,f_fernando_c_auravant,Fernando C. (Auravant),instituto_tecnologico_de_buenos_aires_itba,Instituto Tecnológico de Buenos Aires (ITBA),1,true,studied_at
+1081,f_fernando_c_auravant,Fernando C. (Auravant),u_iae_biz,IAE Business School,1,true,studied_at
+1082,f_fernando_johann,Fernando Johann,u_pucrs_br,PUCRS (Brasil),1,true,studied_at
+1083,f_fernando_m,Fernando M.,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1084,f_florencia_vs,Florencia V. S.,universidad_nacional_de_san_martin_unsam,Universidad Nacional de San Martín (UNSAM),1,true,studied_at
+1085,f_franco_cescotti,Franco Cescotti,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1086,f_franco_goytia,Franco Goytia,universidad_nacional_de_quilmes,Universidad Nacional de Quilmes,1,true,studied_at
+1087,f_franco_goytia,Franco Goytia,universidad_de_san_andres,Universidad de San Andrés,1,true,graduated_from
+1088,f_franco_goytia_cb,Franco Goytia,universidad_nacional_de_quilmes,Universidad Nacional de Quilmes,1,true,studied_at
+1089,f_frank_p,Frank P.,u_uai_chile,Universidad Adolfo Ibáñez,1,true,studied_at
+1090,f_gabriel_correa,Gabriel Correa,tecnologico_de_monterrey_itesm,Tecnológico de Monterrey (ITESM),1,true,studied_at
+1091,f_gabriel_gutkind,Gabriel O. Gutkind,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1092,f_gabriel_lifsitz,Gabriel Lifsitz,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1093,f_gabriel_m_agree,Gabriel M. (Agree),universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1094,f_gabriel_marchesi,Gabriel Marchesi,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1095,f_gabriel_villegas,Gabriel Villegas,tecnologico_de_monterrey_itesm,Tecnológico de Monterrey (ITESM),1,true,studied_at
+1096,f_gabriela_catalano,Gabriela Catalano,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1097,f_gabriela_gutierrez,Gabriela Gutiérrez,u_conicet_imex,IMEX (Instituto de Medicina Experimental),1,true,researched_at
+1098,f_gaston_la_motta,Gastón La Motta,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1099,f_gaston_la_motta,Gastón La Motta,u_favaloro,Universidad Favaloro,1,true,graduated_from
+1100,f_gaston_lapidus,Gaston Lapidus,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1101,f_gaston_m_oneinfinite,Gaston M. (OneInfinite),universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1102,f_gaston_melaragno,Gaston N. Melaragno,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1103,f_gastón_paladini,Gastón Paladini,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1104,f_gonzalo_montiel,Gonzalo Montiel,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1105,f_gonzalo_v,Gonzalo V.,universidad_nacional_de_cordoba,Universidad Nacional de Córdoba,1,true,studied_at
+1106,f_guadalupe_murga,Guadalupe Murga,universidad_nacional_de_tucuman,Universidad Nacional de Tucumán,1,true,graduated_from
+1107,f_guillermo_lentz,Guillermo Lentz,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,graduated_from
+1108,f_guillermo_p_perez,Guillermo P. Pérez,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1109,f_guillermo_perez,Guillermo Pérez,universidad_nacional_de_quilmes,Universidad Nacional de Quilmes,1,true,studied_at
+1110,f_guillermo_perez_l,Guillermo Perez,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1111,f_guillermo_salvatierra,Guillermo Salvatierra,universidad_tecnologica_nacional_utn,Universidad Tecnológica Nacional (UTN),1,true,studied_at
+1112,f_gustavo_freytes,Gustavo Freytes,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1113,f_gustavo_freytes,Gustavo Freytes,universidad_nacional_de_cordoba,Universidad Nacional de Córdoba,1,true,researched_at
+1114,f_gustavo_sosa,Gustavo Sosa,u_santiago_del_estero,Universidad Nacional de Santiago del Estero,1,true,studied_at
+1115,f_gustavo_sosa,Gustavo Sosa,universidad_nacional_de_rosario,Universidad Nacional de Rosario,1,true,studied_at
+1116,f_gustavo_sosa,Gustavo Sosa,u_ohio_state,The Ohio State University,1,true,studied_at
+1117,f_heartbest_f,Heartbest Founder,tecnologico_de_monterrey_itesm,Tecnológico de Monterrey (ITESM),1,true,studied_at
+1118,f_hugo_a_altscore,Hugo A. (Altscore),u_anahuac_mx,Universidad Anáhuac,1,true,studied_at
+1119,f_hugo_gramajo,Hugo Gramajo,u_uncuyo,Universidad Nacional de Cuyo (UNCuyo),1,true,studied_at
+1120,f_hugo_gramajo,Hugo Gramajo,universidad_nacional_de_rosario,Universidad Nacional de Rosario,1,true,studied_at
+1121,f_hugo_permingeat,Hugo Permingeat,universidad_nacional_de_rosario,Universidad Nacional de Rosario,1,true,studied_at
+1122,f_ianina_servin,Ianina Servin,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1123,f_ignacio_lugones,Ignacio Lugones,universidad_nacional_de_la_plata,Universidad Nacional de La Plata,1,true,studied_at
+1124,f_imvalv_f,Imvalv Founder,universidad_nacional_de_tucuman,Universidad Nacional de Tucumán,1,true,studied_at
+1125,f_inmet_f,Nicolás Colombres,universidad_nacional_de_tucuman,Universidad Nacional de Tucumán,1,true,studied_at
+1126,f_ivan_dalessandro,Ivan D'Alessandro,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1127,f_jaap_v,Jaap V.,u_tu_delft,Delft University of Technology (TU Delft),1,true,studied_at
+1128,f_jairo_trad,Jairo Trad,universidad_nacional_de_cordoba,Universidad Nacional de Córdoba,1,true,graduated_from
+1129,f_jairo_trad,Jairo Trad,u_iese,IESE Business School,1,true,studied_at
+1130,f_jeronimo_trivi,Jeronimo Trivi,universidad_nacional_de_quilmes,Universidad Nacional de Quilmes,1,true,studied_at
+1131,f_jesus_es,Jesus E. S.,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1132,f_jimmy_g,Jimmy G.,universidad_austral,Universidad Austral,1,true,studied_at
+1133,f_joaquin_fisch,Joaquín Fisch,universidad_nacional_de_tucuman,Universidad Nacional de Tucumán,1,true,studied_at
+1134,f_joaquin_g,Joaquin G.,instituto_tecnologico_de_buenos_aires_itba,Instituto Tecnológico de Buenos Aires (ITBA),1,true,studied_at
+1135,f_jorge_suino,Jorge Suino,u_rio_cuarto,Universidad Nacional de Río Cuarto,1,true,studied_at
+1136,f_jorge_valdez,Jorge Valdez García,tecnologico_de_monterrey_itesm,Tecnológico de Monterrey (ITESM),1,true,studied_at
+1137,f_jose_b_splight,Jose B. (Splight),universidad_tecnologica_nacional_utn,Universidad Tecnológica Nacional (UTN),1,true,studied_at
+1138,f_jose_fernandez,Jose M. Fernandez,universidad_nacional_de_quilmes,Universidad Nacional de Quilmes,1,true,studied_at
+1139,f_jose_s_wiagro,Jose S. (Wiagro),universidad_tecnologica_nacional_utn,Universidad Tecnológica Nacional (UTN),1,true,studied_at
+1140,f_juan_agustin_gomez,Juan Agustín Gómez,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1141,f_juan_agustin_gomez_eywa,Juan Agustín Gómez,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1142,f_juan_baruffaldi,Juan Manuel Baruffaldi,universidad_nacional_de_rosario,Universidad Nacional de Rosario,1,true,graduated_from
+1143,f_juan_c_splight,Juan J. C. (Splight),universidad_tecnologica_nacional_utn,Universidad Tecnológica Nacional (UTN),1,true,studied_at
+1144,f_juan_c_splight,Juan J. C. (Splight),universidad_de_san_andres,Universidad de San Andrés,1,true,studied_at
+1145,f_juan_cavalieri,Juan Ignacio Cavalieri,universidad_nacional_de_rosario,Universidad Nacional de Rosario,1,true,studied_at
+1146,f_juan_fe,Juan F. E.,u_chile,Universidad de Chile,1,true,studied_at
+1147,f_juan_fea,Juan Francisco Fea,universidad_nacional_de_rosario,Universidad Nacional de Rosario,1,true,studied_at
+1148,f_juan_m_menta,Juan P. M. (MentaTech),universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1149,f_juan_p_solfium,Juan P. (Solfium),tecnologico_de_monterrey_itesm,Tecnológico de Monterrey (ITESM),1,true,studied_at
+1150,f_juan_pablo_castellon,Juan Pablo Castellon,tecnologico_de_monterrey_itesm,Tecnológico de Monterrey (ITESM),1,true,studied_at
+1151,f_juan_pablo_lafosse,Juan Pablo Lafosse,u_belgrano,Universidad de Belgrano (UB),1,true,studied_at
+1152,f_juan_pn_ini,Juan P. N. (INI),u_uade,Universidad Argentina de la Empresa (UADE),1,true,studied_at
+1153,f_juan_vultaggio,Juan Francisco Vultaggio,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1154,f_judith_zavala,Judith Zavala Arcos,tecnologico_de_monterrey_itesm,Tecnológico de Monterrey (ITESM),1,true,studied_at
+1155,f_judith_zavala,Judith Zavala Arcos,universidad_autonoma_de_nuevo_leon,Universidad Autónoma de Nuevo León,1,true,studied_at
+1156,f_julia_farina,Julia Inés Fariña,universidad_nacional_de_tucuman,Universidad Nacional de Tucumán,1,true,studied_at
+1157,f_julia_roulet,Julia Roulet,universidad_nacional_de_rosario,Universidad Nacional de Rosario,1,true,studied_at
+1158,f_julia_roulet,Julia Roulet,universidad_nacional_del_litoral,Universidad Nacional del Litoral,1,true,studied_at
+1159,f_karina_campos,Karina Campos,u_uade,Universidad Argentina de la Empresa (UADE),1,true,studied_at
+1160,f_larissa_viana,Larissa Viana,u_ufmg_br,Universidade Federal de Minas Gerais (UFMG),1,true,studied_at
+1161,f_laura_alaniz,Laura Alaniz,universidad_nacional_de_cordoba,Universidad Nacional de Córdoba,1,true,studied_at
+1162,f_laura_alaniz,Laura Alaniz,universidad_nacional_de_la_plata,Universidad Nacional de La Plata,1,true,studied_at
+1163,f_leandro_sabignoso,Leandro Sabignoso,universidad_nacional_de_rosario,Universidad Nacional de Rosario,1,true,studied_at
+1164,f_leandro_sabignoso,Leandro Sabignoso,instituto_tecnologico_de_buenos_aires_itba,Instituto Tecnológico de Buenos Aires (ITBA),1,true,graduated_from
+1165,f_leandro_sanchez,Leandro Sánchez,universidad_nacional_de_tucuman,Universidad Nacional de Tucumán,1,true,studied_at
+1166,f_leonardo_e,Leonardo E.,universidad_nacional_del_litoral,Universidad Nacional del Litoral,1,true,studied_at
+1167,f_lucas_f_webee,Lucas F. (Webee),universidad_siglo_21,Universidad Siglo 21,1,true,studied_at
+1168,f_lucas_fonseca,Lucas Fonseca,u_ufmg_br,Universidade Federal de Minas Gerais (UFMG),1,true,studied_at
+1169,f_lucas_garibaldi,Lucas Garibaldi,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1170,f_lucas_garibaldi,Lucas Garibaldi,u_unrn,Universidad Nacional de Río Negro,1,true,researched_at
+1171,f_lucas_gonzalez,Lucas E. Gonzalez,universidad_nacional_de_quilmes,Universidad Nacional de Quilmes,1,true,studied_at
+1172,f_lucas_lieber,Lucas Lieber,universidad_nacional_de_rosario,Universidad Nacional de Rosario,1,true,studied_at
+1173,f_lucas_lieber,Lucas Lieber,imperial_college_london,Imperial College London,1,true,studied_at
+1174,f_lucas_parreiras,Lucas Salera Parreiras,u_toronto,University of Toronto,1,true,studied_at
+1175,f_lucia_vanrell,Lucía Vanrell,universidad_ort_uruguay,Universidad ORT Uruguay,1,true,studied_at
+1176,f_lucia_vanrell,Lucía Vanrell,universidad_de_la_republica_uruguay,Universidad de la República (Uruguay),1,true,studied_at
+1177,f_luciana_lopez,Luciana López,universidad_siglo_21,Universidad Siglo 21,1,true,studied_at
+1178,f_luciano_c_novo,Luciano C. (Novo Space),universidad_nacional_de_la_plata,Universidad Nacional de La Plata,1,true,studied_at
+1179,f_luis_barletta,Luis Barletta,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1180,f_luis_barletta,Luis Barletta,universidad_catolica_argentina_uca,Universidad Católica Argentina (UCA),1,true,graduated_from
+1181,f_luis_d,Luis D.,u_incae,INCAE Business School,1,true,studied_at
+1182,f_luis_fh,Luis F. H.,u_utec_peru,UTEC (Perú),1,true,studied_at
+1183,f_luis_fh,Luis F. H.,u_piura_peru,Universidad de Piura,1,true,studied_at
+1184,f_luis_gerundo,Luis E. Gerundo,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1185,f_luis_h_rodriguez,Luis H. Rodríguez,tecnologico_de_monterrey_itesm,Tecnológico de Monterrey (ITESM),1,true,studied_at
+1186,f_ma_belen_togni,Maria Belen Togni,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1187,f_ma_es,Maria E. S.,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1188,f_ma_eugenia_ruiz,Maria Eugenia Ruiz,u_unam_misiones,Universidad Nacional de Misiones (UNaM),1,true,studied_at
+1189,f_ma_fa,Maria F. A.,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1190,f_ma_fernanda_b,Maria Fernanda B.,u_uncuyo,Universidad Nacional de Cuyo (UNCuyo),1,true,studied_at
+1191,f_ma_fernanda_togni,Maria Fernanda Togni,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1192,f_ma_gabriela_garrido,Maria Gabriela Garrido,u_unam_misiones,Universidad Nacional de Misiones (UNaM),1,true,studied_at
+1193,f_ma_julia_roca,Maria Julia Roca,universidad_nacional_de_rosario,Universidad Nacional de Rosario,1,true,studied_at
+1194,f_ma_laura_cima,Maria Laura CIMA,universidad_nacional_de_rosario,Universidad Nacional de Rosario,1,true,studied_at
+1195,f_ma_laura_tortora,María Laura Tortora,universidad_nacional_de_tucuman,Universidad Nacional de Tucumán,1,true,studied_at
+1196,f_ma_natalia_gomez,Maria Natalia Gomez,universidad_nacional_de_cordoba,Universidad Nacional de Córdoba,1,true,studied_at
+1197,f_ma_pia_togni,Maria Pia Togni,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1198,f_manuel_pacin,Manuel Pacín,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1199,f_manuel_pacin,Manuel Pacín,universidad_nacional_de_san_martin_unsam,Universidad Nacional de San Martín (UNSAM),1,true,studied_at
+1200,f_manuel_pacin,Manuel Pacín,u_indear,INDEAR (Instituto de Agrobiotecnología Rosario),1,true,researched_at
+1201,f_marcelo_c_lemon,Marcelo C. (Lemon),u_uade,Universidad Argentina de la Empresa (UADE),1,true,studied_at
+1202,f_marcelo_kaufmann,Marcelo Kaufmann,universidad_nacional_del_litoral,Universidad Nacional del Litoral,1,true,studied_at
+1203,f_marcos_a_amarante,Marcos A. Amarante,universidad_de_la_republica_uruguay,Universidad de la República (Uruguay),1,true,studied_at
+1204,f_marcos_f_skyloom,Marcos F. (Skyloom),universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1205,f_marcos_falcone_lia,Marcos Falcone,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1206,f_marcos_oggero,Marcos Oggero Eberhardt,universidad_nacional_del_litoral,Universidad Nacional del Litoral,1,true,studied_at
+1207,f_marcos_pacchiele,Marcos Pacchiele,universidad_nacional_de_san_martin_unsam,Universidad Nacional de San Martín (UNSAM),1,true,studied_at
+1208,f_mariana_galdos,Mariana Galdós,universidad_nacional_de_quilmes,Universidad Nacional de Quilmes,1,true,studied_at
+1209,f_mariano_buffone,Mariano Gabriel BUFFONE,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1210,f_marina_simian,Marina Simian,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1211,f_marina_simian,Marina Simian,universidad_nacional_de_san_martin_unsam,Universidad Nacional de San Martín (UNSAM),1,true,studied_at
+1212,f_marina_simian,Marina Simian,u_conicet_unsam,UNSAM (Biotech),1,true,researched_at
+1213,f_marissa_c_microterra,Marissa C. (MicroTerra),u_penn,University of Pennsylvania,1,true,studied_at
+1214,f_marissa_c_microterra,Marissa C. (MicroTerra),tecnologico_de_monterrey_itesm,Tecnológico de Monterrey (ITESM),1,true,studied_at
+1215,f_marissa_cuevas,Marissa Cuevas,u_penn,University of Pennsylvania,1,true,studied_at
+1216,f_marissa_cuevas,Marissa Cuevas,tecnologico_de_monterrey_itesm,Tecnológico de Monterrey (ITESM),1,true,studied_at
+1217,f_marissa_cuevas_mt,Marissa Cuevas,imperial_college_london,Imperial College London,1,true,studied_at
+1218,f_martin_a_oneinfinite,Martin A. (OneInfinite),universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1219,f_martin_c,Martin C.,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1220,f_martin_c_wiagro,Martin C. (Wiagro),u_palermo,Universidad de Palermo (UP),1,true,studied_at
+1221,f_martin_gonzalez,Martin P. Gonzalez,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1222,f_martin_p_lutteral,Martín P. Lutteral,universidad_nacional_de_rosario,Universidad Nacional de Rosario,1,true,studied_at
+1223,f_martin_s_retrypay,Martin S. (Retrypay),universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1224,f_martin_socolovsky,Martín Socolovsky,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1225,f_martin_vazquez,Martin M. Vazquez,universidad_nacional_de_rosario,Universidad Nacional de Rosario,1,true,studied_at
+1226,f_matias_a_viewmind,Matias A. (ViewMind),universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1227,f_matias_acevedo,Matias Acevedo,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1228,f_matias_alvarez,Matías Álvarez,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1229,f_matias_c_phylum,Matías C. (PhylumTech),universidad_nacional_de_quilmes,Universidad Nacional de Quilmes,1,true,studied_at
+1230,f_matias_calvo,Matias Calvo,universidad_nacional_de_quilmes,Universidad Nacional de Quilmes,1,true,studied_at
+1231,f_matias_depetris,Matías Depetris,universidad_nacional_del_litoral,Universidad Nacional del Litoral,1,true,studied_at
+1232,f_matias_figliozzi,Matías Figliozzi,universidad_nacional_de_la_plata,Universidad Nacional de La Plata,1,true,studied_at
+1233,f_matias_liloia,Matías Liloia,universidad_nacional_del_litoral,Universidad Nacional del Litoral,1,true,studied_at
+1234,f_matias_madorno,Matias Madorno,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1235,f_matias_p,Matias P.,u_uai_chile,Universidad Adolfo Ibáñez,1,true,studied_at
+1236,f_matias_petre,Matías Petre,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1237,f_matias_r,Matias R.,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1238,f_matias_r_menta,Matias R. (MentaTech),universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1239,f_matias_vidal,Matías Vidal,universidad_nacional_de_cordoba,Universidad Nacional de Córdoba,1,true,studied_at
+1240,f_matias_vidal,Matías Vidal,u_uncuyo,Universidad Nacional de Cuyo (UNCuyo),1,true,studied_at
+1241,f_matias_vidal_l,Matías Vidal,universidad_nacional_de_cordoba,Universidad Nacional de Córdoba,1,true,studied_at
+1242,f_matias_viel,Matias Viel,universidad_de_san_andres,Universidad de San Andrés,1,true,graduated_from
+1243,f_matias_viel,Matias Viel,u_harvard_biz,Harvard Business School,1,true,studied_at
+1244,f_matias_woloski,Matías Woloski,instituto_tecnologico_de_buenos_aires_itba,Instituto Tecnológico de Buenos Aires (ITBA),1,true,studied_at
+1245,f_mauricio_braia,Mauricio Braia,u_conicet_iprobyq,IPROBYQ (CONICET-UNR),1,true,researched_at
+1246,f_mauricio_g_retrypay,Mauricio G. (Retrypay),u_belgrano,Universidad de Belgrano (UB),1,true,studied_at
+1247,f_mauricio_giraudo,Mauricio Giraudo,u_belgrano,Universidad de Belgrano (UB),1,true,studied_at
+1248,f_mauricio_k,Mauricio K.,universidad_nacional_de_cordoba,Universidad Nacional de Córdoba,1,true,studied_at
+1249,f_mavis_montero,Mavis Montero,u_costa_rica,Universidad de Costa Rica,1,true,studied_at
+1250,f_mavis_montero,Mavis Montero,u_ucr_costa_rica,Universidad de Costa Rica,1,true,researched_at
+1251,f_maximiliano_tourmente,Maximiliano Tourmente,u_uncuyo,Universidad Nacional de Cuyo (UNCuyo),1,true,studied_at
+1252,f_maximiliano_v,Maximiliano V.,universidad_nacional_de_cordoba,Universidad Nacional de Córdoba,1,true,studied_at
+1253,f_mf_ergo,M. F. (Ergo),universidad_nacional_de_rosario,Universidad Nacional de Rosario,1,true,studied_at
+1254,f_milagros_burgi,Milagros Bürgi,universidad_nacional_del_litoral,Universidad Nacional del Litoral,1,true,studied_at
+1255,f_milagros_burgi,Milagros Bürgi,u_conicet_ial,IAL (CONICET-UNL),1,true,researched_at
+1256,f_min_c_wisy,Min C. (Wisy),u_yonsei,Yonsei University,1,true,studied_at
+1257,f_min_chen,Min Chen,u_yonsei,Yonsei University,1,true,studied_at
+1258,f_min_chen,Min Chen,u_fsu_panama,Florida State University Panama,1,true,studied_at
+1259,f_mycorium_f,Agustín Schiavio,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1260,f_mzp_f,MZP Founder,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1261,f_mzp_founder,MZP Founder,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1262,f_nabil_k_wisy,Nabil K. (Wisy),u_aiu_syria,Arab International University,1,true,studied_at
+1263,f_nabil_kafoury,Nabil Kafoury,u_aiu_syria,Arab International University,1,true,studied_at
+1264,f_nadia_chalfoun,Nadia Regina Chalfoun,universidad_nacional_de_tucuman,Universidad Nacional de Tucumán,1,true,studied_at
+1265,f_nahuel_schenone,Nahuel Schenone,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1266,f_nanojump_f,Nano Jump Founder,universidad_nacional_de_la_plata,Universidad Nacional de La Plata,1,true,studied_at
+1267,f_nanonova_f,Naturanova Founder,tecnologico_de_monterrey_itesm,Tecnológico de Monterrey (ITESM),1,true,studied_at
+1268,f_narsimha_mamidi,Narsimha Mamidi,u_uw_madison,University of Wisconsin-Madison,1,true,studied_at
+1269,f_narsimha_mamidi,Narsimha Mamidi,tecnologico_de_monterrey_itesm,Tecnológico de Monterrey (ITESM),1,true,studied_at
+1270,f_natalia_g,Natalia G.,universidad_nacional_del_litoral,Universidad Nacional del Litoral,1,true,studied_at
+1271,f_nick_barbarosch,Nick Barbarosch,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1272,f_nicolas_colombres,Nicolás Colombres,universidad_nacional_de_tucuman,Universidad Nacional de Tucumán,1,true,studied_at
+1273,f_nicolas_galmarini,Nicolás Galmarini,universidad_ort_uruguay,Universidad ORT Uruguay,1,true,studied_at
+1274,f_nicolas_l_macias,Nicolás L. Macias,universidad_nacional_de_tucuman,Universidad Nacional de Tucumán,1,true,studied_at
+1275,f_nicolas_m_agree,Nicolas M. (Agree),universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1276,f_nicolas_mathieu,Nicolas Mathieu,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1277,f_nicolas_otamendi,Nicolas Otamendi,universidad_austral,Universidad Austral,1,true,studied_at
+1278,f_ornela_palumbo,Ornela Palumbo,universidad_nacional_de_rosario,Universidad Nacional de Rosario,1,true,studied_at
+1279,f_pamela_y,Pamela Y.,universidad_nacional_de_rosario,Universidad Nacional de Rosario,1,true,studied_at
+1280,f_paula_casati,Paula M. Casati,universidad_nacional_de_rosario,Universidad Nacional de Rosario,1,true,studied_at
+1281,f_pedro_m_aerialoop,Pedro M. (Aerialoop),u_purdue,Purdue University,1,true,studied_at
+1282,f_pedro_negri,Pedro Negri,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1283,f_pia_di_peto,Pía Di Peto,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1284,f_pilar_ml,Pilar M. L.,universidad_de_san_andres,Universidad de San Andrés,1,true,studied_at
+1285,f_plamic_f,Plamic Founder,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1286,f_radbio_f,Radbio Founder,universidad_nacional_de_san_martin_unsam,Universidad Nacional de San Martín (UNSAM),1,true,studied_at
+1287,f_radial_f,Radial Founder,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1288,f_radial_founder,Radial Founder,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1289,f_ramiro_dr,Ramiro D. R.,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1290,f_ricardo_figueiredo,Ricardo Figueiredo,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1291,f_ricardo_j_wisy,Ricardo J. (Wisy),u_usma_panama,Universidad Católica Santa María La Antigua (USMA),1,true,studied_at
+1292,f_ricardo_jaen,Ricardo Jaen,u_usma_panama,Universidad Católica Santa María La Antigua (USMA),1,true,studied_at
+1293,f_ricardo_kratje,Ricardo Kratje,universidad_nacional_del_litoral,Universidad Nacional del Litoral,1,true,studied_at
+1294,f_ricardo_p_altscore,Ricardo P. (Altscore),tecnologico_de_monterrey_itesm,Tecnológico de Monterrey (ITESM),1,true,studied_at
+1295,f_ricardo_r_miguel,Ricardo R. Miguel,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1296,f_ricardo_v_c_silva,Ricardo V. C. Silva,tecnologico_de_monterrey_itesm,Tecnológico de Monterrey (ITESM),1,true,studied_at
+1297,f_ricky_cassini,Ricky Cassini,universidad_austral,Universidad Austral,1,true,graduated_from
+1298,f_rocio_pardo,Rocío Pardo,universidad_nacional_de_quilmes,Universidad Nacional de Quilmes,1,true,studied_at
+1299,f_rodrigo_diaz,Rodrigo L. Diaz,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1300,f_rodrigo_t_novo,Rodrigo T. (Novo Space),universidad_nacional_de_la_plata,Universidad Nacional de La Plata,1,true,studied_at
+1301,f_rodrigo_tissera,Rodrigo Tissera,universidad_nacional_de_cordoba,Universidad Nacional de Córdoba,1,true,studied_at
+1302,f_rosalie_van_putten,Rosalie van Putten,u_wageningen,Wageningen University & Research,1,true,studied_at
+1303,f_rosana_nc,Rosana N. C.,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1304,f_rosario_ensenat,Rosario Ensenat,u_uade,Universidad Argentina de la Empresa (UADE),1,true,studied_at
+1305,f_roxana_hercolini,Roxana Hercolini,universidad_nacional_de_mar_del_plata,Universidad Nacional de Mar del Plata,1,true,studied_at
+1306,f_ruben_salim,Rubén Salim,universidad_nacional_de_tucuman,Universidad Nacional de Tucumán,1,true,studied_at
+1307,f_sandra_c,Sandra C.,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1308,f_santiago_miriuka,Santiago Miriuka,universidad_de_san_andres,Universidad de San Andrés,1,true,studied_at
+1309,f_santiago_miriuka,Santiago Miriuka,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1310,f_santiago_reche,Santiago Reche,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1311,f_santiago_t_falcomm,Santiago T. (Falcomm),u_georgia_tech,Georgia Institute of Technology (Georgia Tech),1,true,studied_at
+1312,f_santiago_t_skyloom,Santiago T. (Skyloom),instituto_tecnologico_de_buenos_aires_itba,Instituto Tecnológico de Buenos Aires (ITBA),1,true,studied_at
+1313,f_santiago_tene,Santiago Tene,u_georgia_tech,Georgia Institute of Technology (Georgia Tech),1,true,studied_at
+1314,f_sebastian_cavalitto,Sebastián Cavalitto,universidad_nacional_de_la_plata,Universidad Nacional de La Plata,1,true,studied_at
+1315,f_sebastian_cavalitto,Sebastián Cavalitto,u_cindefi,CINDEFI (CONICET-UNLP),1,true,researched_at
+1316,f_sebastian_g_agree,Sebastian G. (Agree),universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1317,f_sebastian_garcia,Sebastian Garcia,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1318,f_sebastian_s_arqlite,Sebastian S. (Arqlite),universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1319,f_sebastian_sajoux,Sebastian Sajoux,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1320,f_sebastian_vintimilla,J. Sebastian Vintimilla,universidad_nacional_de_rosario,Universidad Nacional de Rosario,1,true,studied_at
+1321,f_sebastian_zaera,Sebastián Zaera,u_uade,Universidad Argentina de la Empresa (UADE),1,true,studied_at
+1322,f_single_f,Single Strand Founder,universidad_nacional_de_san_martin_unsam,Universidad Nacional de San Martín (UNSAM),1,true,studied_at
+1323,f_sofia_torres,Sofia G. Torres,universidad_catolica_argentina_uca,Universidad Católica Argentina (UCA),1,true,studied_at
+1324,f_stefano_t_ruedata,Stefano T. (Ruedata),universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1325,f_stephanie_p,Stephanie P.,universidad_de_san_andres,Universidad de San Andrés,1,true,studied_at
+1326,f_teramot_f,Teramot Founder,u_uncuyo,Universidad Nacional de Cuyo (UNCuyo),1,true,studied_at
+1327,f_teresita_m,Teresita M.,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1328,f_tintte_f,Gustavo Freytes,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1329,f_tomas_armendariz,Tomás Armendáriz,u_uncuyo,Universidad Nacional de Cuyo (UNCuyo),1,true,studied_at
+1330,f_tomas_armendariz,Tomás Armendáriz,instituto_tecnologico_de_buenos_aires_itba,Instituto Tecnológico de Buenos Aires (ITBA),1,true,graduated_from
+1331,f_tomas_rovito,Tomás Rovito,universidad_nacional_de_cordoba,Universidad Nacional de Córdoba,1,true,studied_at
+1332,f_tomas_strappini,Tomas Strappini,universidad_nacional_de_rosario,Universidad Nacional de Rosario,1,true,studied_at
+1333,f_toni_abdala,Toni Abdala,universidad_nacional_de_cordoba,Universidad Nacional de Córdoba,1,true,studied_at
+1334,f_trebe_f,Manuel Pacin,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1335,f_valentina_m,Valentina M.,universidad_de_la_republica_uruguay,Universidad de la República (Uruguay),1,true,studied_at
+1336,f_valeria_arredondo,Valeria Arredondo,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,studied_at
+1337,f_vanesa_m,Vanesa M.,universidad_nacional_del_litoral,Universidad Nacional del Litoral,1,true,studied_at
+1338,f_victoria_guerci,Victoria Güerci,universidad_de_la_republica_uruguay,Universidad de la República (Uruguay),1,true,studied_at
+1339,f_vivian_labovsky,Vivian Labovsky,universidad_nacional_de_san_martin_unsam,Universidad Nacional de San Martín (UNSAM),1,true,studied_at
+1340,f_wenceslao_c_lemon,Wenceslao C. (Lemon),u_uade,Universidad Argentina de la Empresa (UADE),1,true,studied_at
+1341,f_marcelo_hill,Marcelo Hill,u_pasteur_montevideo,Institut Pasteur de Montevideo,1,true,researched_at
+1342,f_angela_espejo,Angela Espejo,u_javeriana_co,Pontificia Universidad Javeriana,1,true,researched_at
+1343,f_diego_croci,Diego Croci,u_conicet_ibr,IBR (CONICET),1,true,researched_at
+1344,f_pilar_marochi,Pilar Marochi,u_conicet_ial,IAL (CONICET-UNL),1,true,researched_at
+1345,f_renata_reinheimer,Renata Reinheimer,u_conicet_ial,IAL (CONICET-UNL),1,true,researched_at
+1346,f_veronica_white,Verónica White,u_conicet_iquibicen,IQUIBICEN (Química Biológica),1,true,researched_at
+1347,f_carolina_belfiore,Carolina Belfiore,u_conicet_proimi,PROIMI (CONICET),1,true,researched_at
+1348,f_elisa_bertini,Elisa Bertini,u_conicet_proimi,PROIMI (CONICET),1,true,researched_at
+1349,f_franco_martinez_levis,Franco Martínez Levis,universidad_de_san_andres,Universidad de San Andrés,1,true,graduated_from
+1350,f_sergio_simonetta,Sergio Simonetta,u_conicet_leloir,Fundación Instituto Leloir,1,true,researched_at
+1351,f_sergio_simonetta,Sergio Simonetta,u_leloir_inst,Fundación Instituto Leloir,1,true,researched_at
+1352,f_hugo_menzella,Hugo Menzella,u_conicet_iprobyq,IPROBYQ (CONICET-UNR),1,true,researched_at
+1353,f_claudia_casalongue,Claudia Casalongué,u_conicet_ial,IAL (CONICET-UNL),1,true,researched_at
+1354,f_claudia_casalongue,Claudia Casalongué,u_conicet_inbiotec,INBIOTEC (CONICET-Mar del Plata),1,true,researched_at
+1355,f_lucas_uzal,Lucas Uzal,u_instituto_balseiro,Instituto Balseiro (CNEA-UNCuyo),1,true,graduated_from
+1356,f_marcos_franceschini,Marcos Franceschini,u_instituto_balseiro,Instituto Balseiro (CNEA-UNCuyo),1,true,graduated_from
+1357,f_philip_kauders,Philip Kauders,u_cornell,Cornell University,1,true,graduated_from
+1358,f_gilberto_terra,Gilberto Terra,u_ufscar,UFSCar (Brasil),1,true,graduated_from
+1359,f_pia_garat,Pía Garat,u_pasteur_montevideo,Institut Pasteur de Montevideo,1,true,researched_at
+1360,f_ignacio_gomez_portillo,Ignacio Gómez Portillo,u_conicet_ifir,IFIR (Instituto de Física Rosario),1,true,researched_at
+1361,f_maximiliano_irissari,Maximiliano Irisarri,u_uns_ar,Universidad Nacional del Sur (UNS),1,true,studied_at
+1362,f_ricardo_dewey,Ricardo A. Dewey,u_iib_intech_unsam,IIB-INTECH (CONICET/UNSAM),1,true,researched_at
+1363,f_ricardo_dewey,Ricardo A. Dewey,u_unsam_ar,UNSAM - Univ. Nacional de San Martín,1,true,studied_at
+1364,f_cintia_romero,Cintia Romero,u_unt_ar,Universidad Nacional de Tucumán (UNT),1,true,studied_at
+1365,f_vikas_nair,Vikas Nair,u_nyu_us,New York University (NYU),1,true,studied_at
+1366,f_santiago_sosa,Santiago Sosa,universidad_de_san_andres,Universidad de San Andrés,1,true,graduated_from
+1367,f_victoria_coll_araoz,Victoria Coll Araoz,universidad_nacional_de_tucuman,Universidad Nacional de Tucumán,1,true,researched_at
+1368,f_julieta_luz_porta,Julieta Luz Porta,u_nasa_space_apps,NASA Space Apps Challenge,1,true,accelerated_at
+1369,f_grace_hsia,Grace Hsia,u_nus_singapore,National University of Singapore,1,true,graduated_from
+1370,f_agustin_belloso,Agustín Belloso,universidad_nacional_de_rosario,Universidad Nacional de Rosario,1,true,graduated_from
+1371,f_agustin_belloso,Agustín Belloso,universidad_austral,Universidad Austral,1,true,graduated_from
+1372,f_sebastian_cogliati,Sebastián Cogliati,universidad_nacional_de_rosario,Universidad Nacional de Rosario,1,true,researched_at
+1373,f_marcos_allende,Marcos Allende López,u_bid_lab,BID Lab (Spin-off / Alumni),1,true,incubated_at
+1374,f_maria_fernanda_gomez,María Fernanda Gómez,universidad_nacional_del_litoral,Universidad Nacional del Litoral,1,true,researched_at
+1375,f_mijal_borenstein,Mijal Borenstein,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,researched_at
+1376,f_nahuel_villegas,Nahuel Villegas,u_hebrew_uni,Hebrew University of Jerusalem,1,true,collaborates_with
+1377,f_maria_eugenia_farias,María Eugenia Farías,u_conicet_proimi,PROIMI (CONICET),1,true,researched_at
+1378,f_marcos_mammarella,Marcos Mammarella,universidad_nacional_de_rosario,Universidad Nacional de Rosario,1,true,graduated_from
+1379,f_rita_krapf,nan,universidad_nacional_de_rosario,Universidad Nacional de Rosario,1,true,graduated_from
+1380,f_federico_marquez,nan,universidad_nacional_de_mar_del_plata,Universidad Nacional de Mar del Plata,1,true,researched_at
+1381,f_marta_melgarejo,Marta Melgarejo,u_inta_castelar,INTA Castelar (Centro de Investigación),1,true,researched_at
+1382,f_alberto_acevedo,Alberto Acevedo,u_inta_castelar,INTA Castelar (Centro de Investigación),1,true,researched_at
+1383,f_danilo_legnani,Danilo Legnani,universidad_nacional_del_litoral,Universidad Nacional del Litoral,1,true,graduated_from
+1384,f_nicolas_mucci,Nicolás Mucci,u_inta_castelar,INTA Castelar (Centro de Investigación),1,true,researched_at
+1385,f_maria_luz_mateo,María Luz Mateo,u_ptlc_litoral,PTLC (Parque Tecnológico Litoral Centro),1,true,incubated_at
+1386,f_leandro_cuffia,Leandro Cuffia,universidad_nacional_del_litoral,Universidad Nacional del Litoral,1,true,researched_at
+1387,f_bruno_severin,Bruno Severin,universidad_nacional_de_rosario,Universidad Nacional de Rosario,1,true,graduated_from
+1388,f_matias_galan,Matías Galan,u_instituto_balseiro,Instituto Balseiro (CNEA-UNCuyo),1,true,graduated_from
+1389,f_sebastian_gatica,Sebastián Gatica,u_puc_chile,Pontificia Universidad Católica de Chile (PUC),1,true,studied_at
+1390,f_bianca_balzarini,Bianca Balzarini,universidad_nacional_de_rosario,Universidad Nacional de Rosario,1,true,studied_at
+1391,f_juan_francisco_fea,Juan Francisco Fea,instituto_tecnologico_de_buenos_aires_itba,Instituto Tecnológico de Buenos Aires (ITBA),1,true,graduated_from
+1392,f_pierpaolo_barbieri,Pierpaolo Barbieri,u_harvard,Harvard Business School,1,true,graduated_from
+1393,f_patricio_jutard,Patricio Jutard,universidad_de_buenos_aires,Universidad de Buenos Aires,1,true,graduated_from
+1394,f_nicolas_szekasy,Nicolas Szekasy,u_stanford,Stanford University,1,true,graduated_from
+1395,f_nicolas_larrandart,Nicolás Larrandart,instituto_tecnologico_de_buenos_aires_itba,Instituto Tecnológico de Buenos Aires (ITBA),1,true,graduated_from
+1396,f_raquel_chan,Raquel Chan,u_conicet_ial,IAL (CONICET-UNL),1,true,researched_at
+1397,bago,Bago,asoc_cab,Cámara Argentina de Biotecnología (CAB),1,true,member_of
+1398,cites,Cites,sancor_seguros_ventures,Sancor Seguros Ventures,1,true,strategic_partner
+1399,cites,Cites,asoc_arcap,ARCAP (Asociación Argentina de Capital Privado),1,true,member_of
+1400,draper_cygnus,Draper Cygnus,asoc_arcap,ARCAP (Asociación Argentina de Capital Privado),1,true,member_of
+1401,gridx,Gridx,asoc_arcap,ARCAP (Asociación Argentina de Capital Privado),1,true,member_of
+1402,grupo_insud,Grupo Insud,asoc_cab,Cámara Argentina de Biotecnología (CAB),1,true,member_of
+1403,kamay_ventures,Kamay Ventures,asoc_arcap,ARCAP (Asociación Argentina de Capital Privado),1,true,member_of
+1404,sf500,Sf500,asoc_arcap,ARCAP (Asociación Argentina de Capital Privado),1,true,member_of
+1405,alaya_capital,Alaya Capital,asoc_arcap,ARCAP (Asociación Argentina de Capital Privado),1,true,member_of
+1406,newtopia_vc,Newtopia VC,asoc_arcap,ARCAP (Asociación Argentina de Capital Privado),1,true,member_of
+1407,nxtp_ventures,NXTP Ventures,asoc_arcap,ARCAP (Asociación Argentina de Capital Privado),1,true,member_of
+1408,sancor_seguros_ventures,Sancor Seguros Ventures,asoc_arcap,ARCAP (Asociación Argentina de Capital Privado),1,true,member_of
+1409,wayra_hispam,Wayra Hispam,asoc_arcap,ARCAP (Asociación Argentina de Capital Privado),1,true,member_of
+1410,globant_ventures,Globant Ventures,asoc_arcap,ARCAP (Asociación Argentina de Capital Privado),1,true,member_of
+1411,oikos_cap,Oikos Cap,asoc_arcap,ARCAP (Asociación Argentina de Capital Privado),1,true,member_of
+1412,victoria_capital,Victoria Capital Partners,asoc_arcap,ARCAP (Asociación Argentina de Capital Privado),1,true,member_of
+1413,capria_ventures,Capria Ventures,asoc_arcap,ARCAP (Asociación Argentina de Capital Privado),1,true,member_of
+1414,bioceres,Bioceres,f_raquel_chan,Raquel Chan,1,true,scientifically_advised_by
+1415,bioceres,Bioceres,asoc_cab,Cámara Argentina de Biotecnología (CAB),1,true,member_of
+1416,arcor,Arcor,asoc_cab,Cámara Argentina de Biotecnología (CAB),1,true,member_of
+1417,ledesma,Ledesma,asoc_cab,Cámara Argentina de Biotecnología (CAB),1,true,member_of
+1418,molinos_rio_de_la_plata,Molinos Rio De La Plata,asoc_cab,Cámara Argentina de Biotecnología (CAB),1,true,member_of

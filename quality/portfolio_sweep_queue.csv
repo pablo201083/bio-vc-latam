@@ -1,0 +1,18 @@
+investor_name,tier,portfolio_signal_strength,current_network_hub_rank,expected_value,scope_usefulness,recommended_action,notes
+GRIDX,A,strong,1,Confirm scope + source + summary + aliases,high,done_reference_sweep,Benchmark method already validated
+IndieBio / SOSV,A,strong,11,Confirm source-backed biotech startups in batch,high,run_full_sweep,Very likely to improve biotech and platform clusters
+SF500,A,strong,4,Confirm agri-food and biotech startups from portfolio,high,run_full_sweep,Strong thesis alignment for food and bioindustry edge
+The Yield Lab LATAM,A,strong,13,Confirm ag/food startups and sharpen ag biologicals cluster,high,run_full_sweep,Useful for agriculture and resilience layer
+CITES,B,medium-high,6,Add auditable descriptions for deeptech and biotech ventures,medium,run_sweep_then_review,Useful but less thesis-specific than GRIDX
+The Ganesha Lab,B,medium-high,2,Recover biotech startup descriptions from accelerator portfolio,medium,run_sweep_then_review,Good density in current graph
+AIR Capital,B,medium,3,Improve source coverage on climate/material/resource edge cases,medium,run_targeted_sweep,May help with planetary-limits frontier
+Kamay Ventures,B,medium,7,Confirm material/ag/industrial startups already in graph,medium,run_targeted_sweep,Good bridge between corporate problems and startups
+DraperCygnus,B,medium,5,Recover source-backed summaries for deeptech companies,medium,targeted_only,Useful for existence and one-liner more than thesis fit
+Antom,C,lens_only,9,Not a portfolio sweep but useful for nature-tech boundary cases,low,use_as_scope_lens,Better for categorization than startup sourcing
+1200 VC,C,medium,unranked,Map direct investments and underlying fund exposure,medium,done_targeted_sweep,Official investments page found one LATAM direct startup edge to Clivi plus several non-LATAM BIO/climate candidates and fund-of-funds relationships
+SP Ventures,A,strong,unranked,Map AgVentures portfolio and ag/food/climate thesis,high,run_full_sweep,IDB Lab and JICA-backed AgVentures III is directly aligned with agtech foodtech climate-resilient agriculture
+500 LatAm,B,medium,unranked,Map broad seed portfolio and identify BIO/health/ag/climate needles,medium,run_targeted_sweep,IDB Lab-backed Seed Fund IV expands LAC seed coverage but broad software mix requires filtering
+Amador,B,medium,unranked,Map Central America/Mexico/Chile/Colombia seed portfolio,medium,run_targeted_sweep,IDB Lab-backed fund includes digital health and regional resilience but likely broad software
+Innogen Capital,B,medium,unranked,Map Central America portfolio and recover agtech/healthtech/logistics cases,medium,run_targeted_sweep,IDB Lab-backed Innogen Delta I is a Central America discovery channel
+Valor Capital Group,B,medium,unranked,Map growth portfolio and climate/health/ag crossover,medium,targeted_only,IDB Invest-backed Valor Growth Americas III is growth-stage and broad tech-enabled
+Partners for Growth / Latam Growth Lending Fund,C,medium,unranked,Map venture debt relationships for later-stage innovative companies,low,targeted_only,Useful capital layer for life sciences healthcare agritech but not a pure equity VC portfolio

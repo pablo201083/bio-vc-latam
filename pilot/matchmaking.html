@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Matchmaking BIO VC LATAM</title>
+  <link rel="stylesheet" href="./styles.css?v=20260424g">
+  <style>
+    body.matchmaking-page .page-shell {
+      max-width: 100%;
+      padding: 14px 22px 24px;
+    }
+    .match-hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.7fr) minmax(360px, 0.74fr);
+      gap: 14px;
+      margin-bottom: 12px;
+    }
+    .match-hero .hero-copy {
+      padding: 20px 26px;
+      background:
+        radial-gradient(circle at 86% 10%, rgba(15, 118, 110, 0.13), transparent 15rem),
+        linear-gradient(135deg, rgba(255,255,255,0.94), rgba(246,240,230,0.72));
+    }
+    .match-hero h1 {
+      font-size: clamp(2.15rem, 3.4vw, 4.1rem);
+      line-height: 0.94;
+      max-width: 920px;
+      margin-bottom: 10px;
+    }
+    .match-hero .lede {
+      max-width: 74rem;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+    .match-grid {
+      display: grid;
+      grid-template-columns: minmax(390px, 470px) minmax(0, 1fr);
+      gap: 18px;
+      align-items: start;
+    }
+    .match-sidebar {
+      position: sticky;
+      top: 14px;
+      max-height: calc(100vh - 28px);
+      overflow: hidden;
+    }
+    .match-sidebar,
+    .match-main {
+      display: grid;
+      gap: 16px;
+      min-width: 0;
+    }
+    .mode-switch {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+    }
+    .mode-button,
+    .match-button {
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.84);
+      color: var(--ink);
+      border-radius: 999px;
+      padding: 10px 14px;
+      font: inherit;
+      cursor: pointer;
+    }
+    .mode-button.active,
+    .match-button.active {
+      border-color: var(--accent);
+      background: var(--pill);
+      color: var(--accent);
+      font-weight: 800;
+      box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.08);
+    }
+    .match-controls {
+      display: grid;
+      gap: 10px;
+    }
+    .match-input,
+    .match-select {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 15px;
+      background: #fff;
+      color: var(--ink);
+      font: inherit;
+      padding: 11px 13px;
+      min-width: 0;
+    }
+    .candidate-list {
+      display: grid;
+      gap: 9px;
+      max-height: calc(100vh - 416px);
+      overflow: auto;
+      padding-right: 4px;
+    }
+    .candidate-row {
+      width: 100%;
+      text-align: left;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 11px 12px;
+      background:
+        linear-gradient(135deg, rgba(255,255,255,0.94), rgba(250,245,237,0.72));
+      cursor: pointer;
+      display: grid;
+      gap: 6px;
+      color: var(--ink);
+      font: inherit;
+    }
+    .candidate-row:hover,
+    .candidate-row.active {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.08);
+    }
+    .candidate-row.active {
+      background:
+        radial-gradient(circle at 96% 12%, rgba(58, 168, 163, 0.18), transparent 6rem),
+        linear-gradient(135deg, rgba(255,255,255,0.98), rgba(246,240,230,0.86));
+    }
+    .candidate-top,
+    .recommendation-top,
+    .reason-line {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: flex-start;
+    }
+    .candidate-title,
+    .recommendation-title {
+      font-weight: 900;
+      line-height: 1.15;
+      overflow-wrap: anywhere;
+    }
+    .match-summary {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+    .explain-panel {
+      padding: 18px;
+      display: grid;
+      gap: 12px;
+    }
+    .profile-card {
+      padding: 18px 20px;
+      display: grid;
+      gap: 13px;
+      background:
+        radial-gradient(circle at 90% 0%, rgba(58, 168, 163, 0.13), transparent 15rem),
+        rgba(255, 252, 246, 0.86);
+    }
+    .profile-title {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .profile-title h2 {
+      margin: 0;
+      font-size: clamp(1.65rem, 2.2vw, 2.5rem);
+      line-height: 1;
+    }
+    .profile-meta,
+    .reason-stack,
+    .peer-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .recommendation-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+    .recommendation-card {
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: rgba(255,255,255,0.86);
+      padding: 15px;
+      display: grid;
+      gap: 12px;
+      min-width: 0;
+      transition: transform 140ms ease, border-color 140ms ease, box-shadow 140ms ease;
+    }
+    .recommendation-card:hover {
+      transform: translateY(-1px);
+      border-color: rgba(15, 118, 110, 0.45);
+      box-shadow: 0 14px 42px rgba(54, 45, 35, 0.09);
+    }
+    .score-badge {
+      min-width: 68px;
+      text-align: center;
+      border-radius: 14px;
+      padding: 8px 10px;
+      color: #062923;
+      background: linear-gradient(135deg, #c9f5eb, #f5ead8);
+      border: 1px solid var(--line);
+      font-weight: 900;
+    }
+    .score-track {
+      height: 9px;
+      border-radius: 999px;
+      overflow: hidden;
+      background: #eadfce;
+    }
+    .score-fill {
+      height: 100%;
+      border-radius: 999px;
+      background: linear-gradient(90deg, #ef6b4a, #f2b84b, #4fb95f, #0f766e);
+    }
+    .score-badge span {
+      display: block;
+      font-size: 0.72rem;
+      color: var(--muted);
+      font-weight: 700;
+    }
+    .reason-list {
+      display: grid;
+      gap: 6px;
+    }
+    .reason-line {
+      border-top: 1px solid rgba(213, 196, 170, 0.6);
+      padding-top: 6px;
+      color: var(--muted);
+      font-size: 0.9rem;
+      line-height: 1.35;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 48px;
+      align-items: center;
+    }
+    .reason-weight {
+      display: grid;
+      gap: 3px;
+      text-align: right;
+      color: var(--ink);
+      font-weight: 800;
+      font-size: 0.82rem;
+    }
+    .reason-weight-bar {
+      height: 5px;
+      border-radius: 999px;
+      background: #0f766e;
+      justify-self: end;
+      min-width: 4px;
+    }
+    .advisor-note {
+      border: 1px solid rgba(15, 118, 110, 0.18);
+      border-radius: 16px;
+      padding: 11px 12px;
+      background: rgba(216, 245, 239, 0.45);
+      color: #24534d;
+      font-size: 0.92rem;
+      line-height: 1.4;
+    }
+    .match-empty {
+      color: var(--muted);
+      padding: 18px;
+      border: 1px dashed var(--line);
+      border-radius: 18px;
+      background: rgba(255,255,255,0.55);
+    }
+    .pill.score-very_high {
+      background: #c9f5eb;
+      color: #00695c;
+    }
+    .pill.score-high {
+      background: #dceecb;
+      color: #3d6b1d;
+    }
+    .pill.score-medium {
+      background: #f0e4cc;
+      color: #7a5b24;
+    }
+    .pill.score-exploratory {
+      background: #f5ded8;
+      color: #8f3a2e;
+    }
+    @media (max-width: 980px) {
+      .match-hero,
+      .match-grid {
+        grid-template-columns: 1fr;
+      }
+      .match-sidebar {
+        position: static;
+        max-height: none;
+      }
+      .recommendation-list {
+        grid-template-columns: 1fr;
+      }
+      .match-summary {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .candidate-list {
+        max-height: 420px;
+      }
+    }
+  </style>
+</head>
+<body class="matchmaking-page">
+  <div class="page-shell">
+    <header class="hero match-hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Capital relevance advisor</p>
+        <h1>Matchmaking BIO VC LATAM</h1>
+        <p class="lede">Una vista para responder dos preguntas practicas: si soy una startup BIO, que fondos deberia priorizar; si soy un fondo, que startups relevantes o parecidas a mi cartera deberia mirar. Cada recomendacion muestra razones, comparables y calidad de evidencia.</p>
+      </div>
+      <div class="hero-meta">
+        <div class="meta-card">
+          <span class="meta-label">Metodo</span>
+          <strong>Score explicable</strong>
+        </div>
+        <div class="meta-card">
+          <span class="meta-label">Datos</span>
+          <strong id="match-generated">Cargando...</strong>
+        </div>
+        <div class="meta-card">
+          <span class="meta-label">Volver</span>
+          <strong><a href="./index.html" style="color:inherit">Piloto</a></strong>
+        </div>
+        <div class="meta-card">
+          <span class="meta-label">Red capital</span>
+          <strong><a href="./capital-atlas.html" style="color:inherit">Abrir atlas</a></strong>
+        </div>
+      </div>
+    </header>
+
+    <section class="summary-grid match-summary" id="match-summary"></section>
+
+    <section class="match-grid">
+      <aside class="match-sidebar">
+        <section class="panel explain-panel">
+          <h2>Elegir perspectiva</h2>
+          <div class="mode-switch">
+            <button class="mode-button active" type="button" data-mode="startup">Soy startup</button>
+            <button class="mode-button" type="button" data-mode="fund">Soy fondo</button>
+          </div>
+          <p class="item-meta" id="mode-explainer">Busca una startup y prioriza fondos por fit tematico, pais, tags BIO, profundidad de cartera y calidad de evidencia.</p>
+        </section>
+
+        <section class="panel explain-panel">
+          <div class="panel-head">
+            <h2 id="candidate-title">Startups</h2>
+            <span id="candidate-count" class="pill">0</span>
+          </div>
+          <div class="match-controls">
+            <input id="match-search" class="match-input" type="search" placeholder="Buscar startup, fondo, theme o pais...">
+            <select id="theme-filter" class="match-select">
+              <option value="all">Todos los themes</option>
+            </select>
+          </div>
+          <div id="candidate-list" class="candidate-list"></div>
+        </section>
+      </aside>
+
+      <main class="match-main">
+        <section class="panel profile-card">
+          <div class="profile-title">
+            <div>
+              <p class="eyebrow" id="profile-kicker">Seleccion</p>
+              <h2 id="profile-name">Cargando...</h2>
+            </div>
+            <span id="profile-badge" class="pill">Advisor</span>
+          </div>
+          <p id="profile-description" class="lede"></p>
+          <div id="profile-meta" class="profile-meta"></div>
+        </section>
+
+        <section class="panel explain-panel">
+          <div class="panel-head">
+            <h2 id="recommendation-heading">Fondos recomendados</h2>
+            <span id="recommendation-count" class="pill">0</span>
+          </div>
+          <div id="recommendation-list" class="recommendation-list"></div>
+        </section>
+      </main>
+    </section>
+  </div>
+
+  <script src="./text-clean.js?v=20260421c"></script>
+  <script src="./theme-system.js?v=20260502matchmaking"></script>
+  <script src="./matchmaking-data.js?v=20260502matchmaking"></script>
+  <script src="./matchmaking.js?v=20260502matchmaking"></script>
+</body>
+</html>
