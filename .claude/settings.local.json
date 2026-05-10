@@ -13,7 +13,10 @@
       "Bash(where python *)",
       "Bash(python -m venv .venv)",
       "Bash(.venv/Scripts/python.exe -m pip install --upgrade pip)",
-      "Bash(.venv/Scripts/python.exe db/import_csvs.py)"
+      "Bash(.venv/Scripts/python.exe db/import_csvs.py)",
+      "Bash(.venv/Scripts/python.exe -m pip install networkx python-louvain)",
+      "Bash(.venv/Scripts/python.exe -m src.graph_analytics)",
+      "Bash(.venv/Scripts/python.exe -m pip install scipy)"
     ]
   }
 }
