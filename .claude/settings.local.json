@@ -8,7 +8,9 @@
       "PowerShell(Get-ChildItem -Path \"C:\\\\Users\\\\Pablo A\\\\Desktop\\\\Exploración Semantica y Grafo\" -Recurse -Force | Select-Object FullName | Sort-Object FullName | ForEach-Object { $_.FullName })",
       "Bash(git init *)",
       "Bash(git branch *)",
-      "Bash(git add *)"
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(where python *)"
     ]
   }
 }
