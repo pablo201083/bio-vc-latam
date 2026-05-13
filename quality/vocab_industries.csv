@@ -1,0 +1,22 @@
+code,canonical_label,aliases,group
+animal_protein,Animal Protein,"animal protein;animal protein supply chains;livestock;cattle;dairy;poultry;swine;beef;animal nutrition;ranching",agri-food
+aquaculture,Aquaculture,"aquaculture;fish farming;shrimp;salmon;seafood;aquatic farming",agri-food
+row_crops,Row Crops & Field Agriculture,"agriculture;crop production;field agriculture;row crops;cereals;grains;soybean;corn;wheat;crop monitoring;crop management;agronomy;agribusiness;crop and livestock farm management;agriculture and crop protection;agriculture and agribusiness;smallholder agriculture;crop protection and sustainable agriculture;agri-food;agri-food chains",agri-food
+specialty_crops,Specialty Crops & Horticulture,"horticulture;fresh produce;fresh produce and food retail;fruits;vegetables;flowers;wine;coffee;cocoa",agri-food
+food_ingredients,Food & Ingredients,"food;food and beverage;food ingredients;novel ingredients;alternative proteins;plant-based;food formulation;beverages",agri-food
+soil_health,Soil Health & Inputs,"soil health;soil;regenerative agriculture;crop nutrition;crop nutrition and sustainable agriculture;fertilizers and agrochemicals;seed;seeds;seed development",agri-food
+human_health,Human Health,"human health;health;healthcare;medicine;animal and human health;biotech and healthcare;healthcare and labs;hospitals",health
+therapeutics_industry,Therapeutics (industry),"therapeutics-regenerative;biopharma;pharma;pharma and research labs;drug development;oncology;obesity and metabolic disease;transplant medicine;tissue repair;biopharmaceuticals",health
+diagnostics_industry,Diagnostics (industry),"diagnostics-medtech;healthcare diagnostics;diagnostic services;molecular diagnostics",health
+veterinary,Veterinary & Animal Health,"animal health;veterinary;pet health;pet health and veterinary therapeutics",health
+personal_care,Personal Care & Cosmetics,"personal care;cosmetics;beauty;beauty and longevity products",health
+specialty_chem,Specialty Chemicals,"specialty chemicals;chemicals;industrial chemistry;industrial-biotech",materials
+materials_packaging,Materials & Packaging,"materials;biomaterials;packaging;plastics alternatives;bio-based materials",materials
+energy,Energy,"energy;clean energy;renewable energy;lithium",climate
+carbon,Carbon & Climate,"climate-resource;carbon markets;climate adaptation;climate data",climate
+water,Water,"water;wastewater;water utilities;irrigation;irrigation and agrifood sustainability",climate
+biodiversity,Biodiversity & Nature,"biodiversity-nature;conservation;ecosystem services;forestry;native species",climate
+waste_circular,Waste & Circular,"waste;circular economy;recycling;upcycling;valorization",climate
+ag_finance,Ag Finance & Rural,"ag credit;agribusiness credit;rural finance;investors and rural finance;small producers;smallholder finance;agribusiness commerce and finance",finance
+biomanufacturing_industry,Biomanufacturing (industry),"biomanufacturing;contract manufacturing;cmo;cdmo",manufacturing
+research_labs,Research & Labs,"research labs;public agencies and food value chains;pharma and research labs;academic labs;cros",research

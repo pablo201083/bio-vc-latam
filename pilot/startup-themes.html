@@ -1,689 +1,1380 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="es">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Universo BIO ordenado por proximidad semantica</title>
+  <title>BIO LATAM — Ecosistema de Innovación</title>
   <link rel="stylesheet" href="./styles.css?v=20260422p">
   <style>
-    .hero-subtitle {
-      margin: 2px 0 10px;
-      font-size: 1.2rem;
-      line-height: 1.35;
-      color: var(--muted);
-      max-width: 50rem;
-    }
-    .hero.hero-compact {
-      grid-template-columns: minmax(0, 1.45fr) minmax(360px, 0.95fr);
-      align-items: stretch;
-      margin-bottom: 18px;
-    }
-    .hero-compact .hero-copy {
-      padding: 24px 28px;
-      background:
-        radial-gradient(circle at 92% 10%, rgba(58, 168, 163, 0.12), transparent 14rem),
-        linear-gradient(135deg, rgba(255,255,255,0.92), rgba(246,240,230,0.72));
-    }
-    .hero-compact h1 {
-      margin-bottom: 4px;
-    }
-    .hero-compact .lede {
-      font-size: 0.98rem;
-      line-height: 1.55;
-      max-width: 64rem;
-    }
-    .hero-compact .hero-meta {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 10px;
-      padding: 14px;
-      align-content: stretch;
-    }
-    .hero-compact .meta-card {
-      padding: 13px 14px;
-      border-radius: 16px;
-      display: grid;
-      align-content: center;
-    }
-    .hero-compact .meta-card strong {
-      font-size: 0.94rem;
-      line-height: 1.25;
-    }
-    .themes-layout {
-      display: grid;
-      grid-template-columns: 430px minmax(0, 1fr);
-      gap: 20px;
-    }
-    .themes-sidebar,
-    .themes-stage {
-      background: var(--panel);
-      border: 1px solid var(--line);
-      border-radius: 22px;
-      box-shadow: var(--shadow);
-    }
-    .themes-sidebar {
-      padding: 0;
-      overflow: hidden;
-    }
-    .themes-sidebar-head {
-      padding: 18px 18px 12px;
-      border-bottom: 1px solid var(--line);
-      display: grid;
-      gap: 12px;
-    }
-    .method-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-    .themes-sidebar-body {
-      padding: 18px;
-      display: grid;
-      gap: 18px;
-    }
-    .theme-list {
-      display: grid;
-      gap: 10px;
-    }
-    .theme-row {
-      display: grid;
-      gap: 8px;
-      padding: 12px 12px;
-      border: 1px solid rgba(217, 206, 190, 0.8);
-      border-radius: 14px;
-      background: rgba(255,255,255,0.82);
-      cursor: pointer;
-      text-align: left;
-    }
-    .theme-row:hover,
-    .theme-row.active {
-      border-color: var(--accent);
-      box-shadow: 0 0 0 3px rgba(23, 139, 135, 0.08);
-    }
-    .theme-row-top {
-      display: grid;
-      grid-template-columns: 12px minmax(0, 1fr) auto auto;
-      gap: 10px;
-      align-items: center;
-    }
-    .theme-dot {
-      width: 12px;
-      height: 12px;
-      border-radius: 999px;
-    }
-    .theme-name {
-      font-size: 0.95rem;
-      color: var(--ink);
-      line-height: 1.25;
-      font-weight: 700;
-    }
-    .theme-count,
-    .theme-pct {
-      color: var(--muted);
-      font-size: 0.85rem;
-      white-space: nowrap;
-    }
-    .theme-bar {
-      width: 100%;
-      height: 8px;
-      border-radius: 999px;
-      background: #eadfce;
-      overflow: hidden;
-    }
-    .theme-bar-fill {
-      height: 100%;
-      border-radius: 999px;
-    }
-    .theme-description {
-      color: var(--muted);
-      font-size: 0.84rem;
-      line-height: 1.35;
-    }
-    .theme-token-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-    }
-    .theme-token {
-      border-radius: 999px;
-      border: 1px solid rgba(217, 206, 190, 0.84);
-      background: rgba(255,255,255,0.88);
-      color: var(--muted);
-      font-size: 0.75rem;
-      line-height: 1;
-      padding: 4px 8px;
-    }
-    .theme-company-line {
-      color: var(--muted);
-      font-size: 0.8rem;
-      line-height: 1.25;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-    }
-    .theme-company-label {
-      color: var(--ink);
-      font-weight: 700;
-    }
-    .theme-quality-line {
-      color: var(--muted);
-      font-size: 0.78rem;
-      line-height: 1.25;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-      align-items: center;
-    }
-    .theme-quality-pill {
-      border-radius: 999px;
-      background: rgba(58, 168, 163, 0.12);
-      color: var(--accent);
-      font-weight: 700;
-      padding: 3px 7px;
-    }
-    .theme-quality-pill.warn {
-      background: rgba(240, 138, 36, 0.13);
-      color: #9a5a12;
-    }
-    .snapshot-box {
-      border-top: 1px solid var(--line);
-      padding-top: 18px;
-      color: var(--muted);
-      font-size: 0.95rem;
-      line-height: 1.6;
-    }
-    .themes-stage {
-      padding: 16px;
-    }
-    .themes-toolbar {
-      display: grid;
-      gap: 12px;
-      margin-bottom: 12px;
-    }
-    .themes-select {
-      min-width: 0;
-      max-width: none;
-      width: 100%;
-    }
-    .map-toolbar-head {
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) auto;
-      gap: 12px;
-      align-items: start;
-      padding: 12px 14px;
-      border: 1px solid rgba(217, 206, 190, 0.78);
-      border-radius: 18px;
-      background:
-        linear-gradient(180deg, rgba(255,255,255,0.86), rgba(249,245,237,0.8));
-    }
-    .map-toolbar-title {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      align-items: center;
-      color: var(--ink);
-      font-weight: 800;
-      margin-bottom: 4px;
-    }
-    .map-toolbar-title span {
-      color: var(--accent);
-      font-size: 0.78rem;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-    }
-    .map-toolbar-actions {
-      display: flex;
-      justify-content: flex-end;
-      gap: 8px;
-      align-items: center;
-    }
-    .map-control-panel {
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) minmax(260px, 0.78fr) auto;
-      gap: 10px;
-      align-items: end;
-      padding: 12px;
-      border: 1px solid rgba(217, 206, 190, 0.78);
-      border-radius: 18px;
-      background: rgba(255,255,255,0.68);
-    }
-    .control-group-taxonomy {
-      grid-column: 1 / -1;
-    }
-    .control-group {
-      display: grid;
-      gap: 6px;
-      min-width: 0;
-    }
-    .control-label {
-      color: var(--muted);
-      font-size: 0.74rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-    }
-    .cluster-control-grid {
-      display: grid;
-      grid-template-columns: minmax(190px, 1fr) minmax(150px, 0.75fr) minmax(78px, 0.36fr);
-      gap: 8px;
-      align-items: center;
-    }
-    .highlight-control-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 8px;
-      align-items: center;
-    }
-    .cluster-control-grid select {
-      min-width: 0;
-      width: 100%;
-    }
-    .highlight-control-grid select {
-      min-width: 0;
-      width: 100%;
-    }
-    .startup-search-wrap {
-      position: relative;
-      min-width: 0;
-    }
-    .startup-search-input {
-      width: 100%;
-      min-width: 0;
-    }
-    .startup-search-results {
-      position: absolute;
-      z-index: 6;
-      top: calc(100% + 6px);
-      left: 0;
-      right: 0;
-      display: none;
-      max-height: 260px;
-      overflow: auto;
-      border: 1px solid var(--line);
-      border-radius: 14px;
-      background: rgba(255, 252, 246, 0.98);
-      box-shadow: var(--shadow);
-      padding: 6px;
-    }
-    .startup-search-results.open {
-      display: grid;
-      gap: 4px;
-    }
-    .startup-search-result {
-      border: 0;
-      border-radius: 10px;
-      background: transparent;
-      color: var(--ink);
-      cursor: pointer;
-      display: grid;
-      gap: 2px;
-      padding: 8px 10px;
-      text-align: left;
-      font: inherit;
-    }
-    .startup-search-result:hover,
-    .startup-search-result.active {
-      background: rgba(58, 168, 163, 0.12);
-    }
-    .startup-search-result small {
-      color: var(--muted);
-      font-size: 0.76rem;
-    }
-    .themes-toolbar-left {
-      display: grid;
-      gap: 10px;
-      min-width: 0;
-    }
-    .scope-toggle-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-    .scope-toggle {
-      border: 1px solid var(--line);
-      background: #fff;
-      color: var(--muted);
-      border-radius: 999px;
-      padding: 7px 12px;
-      font: inherit;
-      font-size: 0.88rem;
-      cursor: pointer;
-    }
-    .scope-toggle.active {
-      background: rgba(58, 168, 163, 0.12);
-      border-color: var(--accent);
-      color: var(--ink);
-    }
-    .scope-toggle.muted {
-      background: rgba(255,255,255,0.72);
-      color: var(--muted);
-      border-color: var(--line);
-    }
-    .themes-wrap {
-      border: 1px solid var(--line);
-      border-radius: 18px;
-      background:
-        radial-gradient(circle at 20% 20%, rgba(15, 118, 110, 0.04), transparent 18rem),
-        radial-gradient(circle at 80% 15%, rgba(154, 52, 18, 0.05), transparent 20rem),
-        #f7f4ee;
-      overflow: hidden;
-      min-height: 760px;
-      position: relative;
-    }
-    .themes-note {
-      color: var(--muted);
-      font-size: 0.86rem;
-      max-width: 68rem;
-      line-height: 1.5;
-    }
-    .themes-controls {
-      position: absolute;
-      right: 16px;
-      bottom: 16px;
-      display: grid;
-      gap: 8px;
-      z-index: 2;
-    }
-    .themes-control-btn {
-      width: 42px;
-      height: 42px;
-      border-radius: 12px;
-      border: 1px solid var(--line);
-      background: rgba(255,255,255,0.95);
-      box-shadow: var(--shadow);
-      font: inherit;
-      font-size: 1.1rem;
-      cursor: pointer;
-    }
-    .themes-control-btn:hover {
-      border-color: var(--accent);
-    }
-    .hover-card {
-      position: absolute;
-      min-width: 280px;
-      max-width: 340px;
-      padding: 12px 14px;
-      border: 1px solid rgba(217, 206, 190, 0.9);
-      border-radius: 16px;
-      background: rgba(255, 252, 247, 0.96);
-      box-shadow: 0 18px 36px rgba(44, 36, 22, 0.16);
-      pointer-events: none;
-      opacity: 0;
-      transform: translateY(6px);
-      transition: opacity 120ms ease, transform 120ms ease;
-      z-index: 3;
-    }
-    .hover-card.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    .hover-title {
-      font-size: 1rem;
-      font-weight: 700;
-      line-height: 1.2;
-      color: var(--ink);
-      margin-bottom: 8px;
-    }
-    .hover-chip-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-      margin-bottom: 10px;
-    }
-    .hover-chip {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      padding: 3px 9px;
-      border-radius: 999px;
-      background: rgba(255,255,255,0.94);
-      border: 1px solid var(--line);
-      font-size: 0.78rem;
-      color: var(--muted);
-      line-height: 1;
-    }
-    .hover-chip-dot {
-      width: 8px;
-      height: 8px;
-      border-radius: 999px;
-      flex: 0 0 auto;
-    }
-    .hover-summary {
-      font-size: 0.88rem;
-      color: var(--ink);
-      line-height: 1.45;
-      margin-bottom: 10px;
-    }
-    .hover-meta {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 8px;
-    }
-    .hover-meta-item {
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      background: rgba(255,255,255,0.72);
-      padding: 8px;
-    }
-    .hover-meta-label {
-      font-size: 0.72rem;
-      color: var(--muted);
-      margin-bottom: 4px;
-    }
-    .hover-meta-value {
-      font-size: 0.84rem;
-      color: var(--ink);
-      font-weight: 700;
-      line-height: 1.25;
-    }
-    .detail-box {
-      border-top: 1px solid var(--line);
-      padding-top: 18px;
-      display: grid;
-      gap: 10px;
-    }
-    .detail-grid {
-      display: grid;
-      gap: 12px;
-    }
-    .detail-stat-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 10px;
-    }
-    .detail-stat {
-      border: 1px solid var(--line);
-      border-radius: 14px;
-      background: rgba(255,255,255,0.8);
-      padding: 10px;
-    }
-    .detail-stat-label {
-      font-size: 0.76rem;
-      color: var(--muted);
-      margin-bottom: 6px;
-    }
-    .detail-stat-value {
-      font-size: 0.98rem;
-      font-weight: 700;
-      line-height: 1.25;
-    }
-    .detail-chip-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-    .detail-chip {
-      display: inline-flex;
-      align-items: center;
-      border-radius: 999px;
-      padding: 4px 10px;
-      background: #fff;
-      border: 1px solid var(--line);
-      color: var(--muted);
-      font-size: 0.82rem;
-    }
-    .detail-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-    .detail-action-btn {
-      border: 1px solid var(--line);
-      background: #fff;
-      color: var(--muted);
-      border-radius: 999px;
-      padding: 7px 12px;
-      font: inherit;
-      font-size: 0.84rem;
-      cursor: pointer;
-    }
-    .detail-action-btn:hover {
-      border-color: var(--accent);
-      color: var(--ink);
-    }
-    @media (max-width: 1180px) {
-      .themes-layout {
-        grid-template-columns: 1fr;
-      }
-      .hero.hero-compact,
-      .map-toolbar-head,
-      .map-control-panel {
-        grid-template-columns: 1fr;
-      }
-      .control-group-taxonomy {
-        grid-column: auto;
-      }
-      .detail-stat-grid {
-        grid-template-columns: 1fr;
-      }
-    }
+    .hero-subtitle{margin:2px 0 10px;font-size:1.15rem;line-height:1.35;color:var(--muted)}
+    .hero.hero-compact{grid-template-columns:minmax(0,1.45fr) minmax(320px,.85fr);align-items:stretch;margin-bottom:18px}
+    .hero-compact .hero-copy{padding:24px 28px;background:radial-gradient(circle at 92% 10%,rgba(58,168,163,.12),transparent 14rem),linear-gradient(135deg,rgba(255,255,255,.92),rgba(246,240,230,.72))}
+    .hero-compact h1{margin-bottom:4px}
+    .hero-compact .lede{font-size:.95rem;line-height:1.55;max-width:64rem}
+    .hero-compact .hero-meta{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;padding:14px;align-content:stretch}
+    .hero-compact .meta-card{padding:12px 14px;border-radius:16px;display:grid;align-content:center}
+    .hero-compact .meta-card strong{font-size:.9rem;line-height:1.25}
+
+    .themes-layout{display:grid;grid-template-columns:340px minmax(0,1fr);gap:20px}
+    .themes-sidebar,.themes-stage{background:var(--panel);border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow)}
+    .themes-sidebar{padding:0;overflow:hidden;display:flex;flex-direction:column;max-height:870px}
+    .sidebar-head{padding:14px 16px 10px;border-bottom:1px solid var(--line);flex:0 0 auto}
+    .sidebar-stats{display:flex;flex-wrap:wrap;gap:5px;margin-top:7px}
+    .s-chip{border-radius:999px;padding:2px 9px;font-size:.73rem;font-weight:700}
+    .s-chip-teal{background:rgba(58,168,163,.12);color:var(--accent)}
+    .s-chip-muted{background:rgba(0,0,0,.06);color:var(--muted)}
+
+    .cluster-list{flex:1 1 auto;overflow-y:auto;padding:10px;display:grid;gap:5px}
+    .cr{padding:9px 11px;border:1px solid rgba(217,206,190,.8);border-radius:13px;background:rgba(255,255,255,.82);cursor:pointer;transition:border-color .15s,box-shadow .15s,opacity .15s}
+    .cr:hover,.cr.active{border-color:var(--accent);box-shadow:0 0 0 3px rgba(23,139,135,.08)}
+    .cr.dimmed{opacity:.35}
+    .cr-top{display:grid;grid-template-columns:11px minmax(0,1fr) auto;gap:7px;align-items:center;margin-bottom:5px}
+    .cr-dot{width:11px;height:11px;border-radius:999px;flex:0 0 auto}
+    .cr-name{font-size:.83rem;font-weight:700;color:var(--ink);line-height:1.2}
+    .cr-count{font-size:.75rem;color:var(--muted);white-space:nowrap}
+    .cr-tags{display:flex;flex-wrap:wrap;gap:3px}
+    .ct{border-radius:999px;border:1px solid rgba(217,206,190,.84);background:rgba(255,255,255,.88);color:var(--muted);font-size:.67rem;padding:2px 6px;line-height:1.3}
+    .ct-tech{background:rgba(58,168,163,.07);color:var(--accent);border-color:rgba(58,168,163,.3)}
+    .ct-ind{background:rgba(154,52,18,.06);color:#7a2e12;border-color:rgba(154,52,18,.22)}
+
+    .detail-pane{flex:0 0 auto;border-top:1px solid var(--line);padding:12px 14px;font-size:.83rem;color:var(--muted);line-height:1.45;max-height:220px;overflow-y:auto}
+    .dp-title{font-weight:700;color:var(--ink);font-size:.92rem;margin-bottom:5px}
+    .dp-chips{display:flex;flex-wrap:wrap;gap:4px;margin-top:6px}
+    .dp-chip{border-radius:999px;border:1px solid var(--line);background:#fff;padding:2px 8px;font-size:.73rem;color:var(--muted)}
+    .dp-chip-tech{background:rgba(58,168,163,.09);color:var(--accent);border-color:rgba(58,168,163,.3)}
+    .dp-chip-ind{background:rgba(154,52,18,.07);color:#7a2e12;border-color:rgba(154,52,18,.22)}
+    .dp-link{color:var(--accent);text-decoration:none;font-size:.78rem}
+    .dp-link:hover{text-decoration:underline}
+
+    .themes-stage{padding:14px;display:flex;flex-direction:column;gap:10px;position:relative;overflow:visible}
+    .tb-row{display:flex;flex-wrap:wrap;gap:7px;align-items:center}
+    .tb-between{display:flex;flex-wrap:wrap;gap:7px;align-items:center;justify-content:space-between}
+    .vt-group{display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:#fff}
+    .vt-btn{border:0;background:transparent;color:var(--muted);padding:5px 14px;font:inherit;font-size:.83rem;cursor:pointer;transition:background .15s,color .15s}
+    .vt-btn.active{background:var(--accent);color:#fff;font-weight:700}
+    .fc-row{display:flex;flex-wrap:wrap;gap:4px}
+    .fc{border-radius:7px;border:1.5px solid rgba(210,202,190,.75);background:#fff;color:var(--muted);font:inherit;font-size:.74rem;padding:4px 11px;cursor:pointer;transition:background .11s,color .11s,border-color .11s,box-shadow .11s;line-height:1.4;white-space:nowrap;user-select:none}
+    .fc:hover{border-color:var(--accent);color:var(--ink);background:rgba(23,139,135,.04);box-shadow:0 1px 4px rgba(23,139,135,.1)}
+    /* Seleccionado: fondo sólido + blanco + × al final */
+    .fc.active-tech{background:var(--accent);color:#fff;border-color:var(--accent);box-shadow:0 1px 6px rgba(23,139,135,.22)}
+    .fc.active-tech::after{content:" ×";opacity:.75;font-size:.88em;font-weight:400}
+    .fc.active-ind{background:#7a2e12;color:#fff;border-color:#7a2e12;box-shadow:0 1px 6px rgba(122,46,18,.22)}
+    .fc.active-ind::after{content:" ×";opacity:.75;font-size:.88em;font-weight:400}
+    .fc.active-country{background:#1e3a8a;color:#fff;border-color:#1e3a8a;box-shadow:0 1px 6px rgba(30,58,138,.22)}
+    .fc.active-country::after{content:" ×";opacity:.75;font-size:.88em;font-weight:400}
+    .chip-lbl{font-size:.69rem;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;align-self:center}
+    .clear-fc{font-size:.72rem;padding:3px 9px;color:var(--muted);border-color:rgba(200,192,180,.5);background:transparent}
+    .clear-fc:hover{color:var(--ink);border-color:var(--muted);background:rgba(0,0,0,.04)}
+    /* Sección de filtro con label + clear inline */
+    .fp-sec-head{display:flex;align-items:center;gap:8px;margin-bottom:3px}
+    .fp-sec-lbl{font-size:.67rem;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;flex:0 0 auto}
+    .fp-sec-clr{font-size:.67rem;color:var(--accent);background:none;border:none;cursor:pointer;padding:0 2px;line-height:1;display:none}
+    .fp-sec-clr.vis{display:inline}
+    .fp-sec-clr:hover{text-decoration:underline}
+
+    .canvas-wrap{border:1px solid var(--line);border-radius:16px;background:radial-gradient(circle at 20% 20%,rgba(15,118,110,.04),transparent 18rem),radial-gradient(circle at 80% 15%,rgba(154,52,18,.04),transparent 20rem),#f8f5ef;overflow:hidden;position:relative;flex:1 1 auto;min-height:640px}
+    #themes-svg{display:block;width:100%;height:100%}
+    .z-ctrl{position:absolute;right:12px;bottom:12px;display:grid;gap:5px;z-index:2}
+    .z-btn{width:34px;height:34px;border-radius:9px;border:1px solid var(--line);background:rgba(255,255,255,.95);box-shadow:var(--shadow);font:inherit;font-size:.95rem;cursor:pointer}
+    .z-btn:hover{border-color:var(--accent)}
+
+    .hov{position:absolute;min-width:250px;max-width:310px;padding:11px 13px;border:1px solid rgba(217,206,190,.9);border-radius:15px;background:rgba(255,252,247,.97);box-shadow:0 16px 32px rgba(44,36,22,.15);pointer-events:none;opacity:0;transform:translateY(5px);transition:opacity 110ms ease,transform 110ms ease;z-index:10}
+    .hov.vis{opacity:1;transform:translateY(0)}
+    .hov-title{font-size:.95rem;font-weight:700;color:var(--ink);margin-bottom:5px}
+    .hov-chips{display:flex;flex-wrap:wrap;gap:3px;margin-bottom:7px}
+    .hov-chip{border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.94);padding:2px 7px;font-size:.71rem;color:var(--muted);display:inline-flex;align-items:center;gap:4px}
+    .hov-dot{width:7px;height:7px;border-radius:999px;flex:0 0 auto}
+    .hov-body{font-size:.82rem;color:var(--ink);line-height:1.38;margin-bottom:7px}
+    .hov-small{font-size:.72rem;color:var(--muted)}
+
+    .srch-wrap{position:relative}
+    .srch-res{position:absolute;z-index:6;top:calc(100% + 4px);left:0;right:0;display:none;max-height:200px;overflow:auto;border:1px solid var(--line);border-radius:11px;background:rgba(255,252,246,.98);box-shadow:var(--shadow);padding:3px}
+    .srch-res.open{display:grid;gap:2px}
+    .srch-item{border:0;border-radius:8px;background:transparent;color:var(--ink);cursor:pointer;display:grid;gap:1px;padding:5px 8px;text-align:left;font:inherit;font-size:.83rem}
+    .srch-item:hover{background:rgba(58,168,163,.09)}
+    .srch-item small{color:var(--muted);font-size:.71rem}
+    .lbl-btn{border:1px solid var(--line);background:#fff;color:var(--muted);border-radius:999px;padding:5px 11px;font:inherit;font-size:.81rem;cursor:pointer}
+    .lbl-btn.on{background:rgba(58,168,163,.1);border-color:var(--accent);color:var(--ink)}
+    .conf-leg{display:flex;align-items:center;gap:5px;font-size:.71rem;color:var(--muted);margin-left:auto}
+    .cs{width:9px;height:9px;border-radius:999px;border:1px solid rgba(0,0,0,.1)}
+
+    /* ── Breadcrumbs — overlay sobre el canvas, no afecta su tamaño ── */
+    .breadcrumbs{display:none;flex-wrap:wrap;gap:5px;align-items:center;min-height:26px;
+      position:absolute;top:58px;left:14px;right:14px;z-index:7;
+      background:rgba(248,245,239,.88);backdrop-filter:blur(4px);
+      border-radius:10px;padding:4px 8px}
+    .bc-pill{border:1px solid rgba(23,139,135,.35);background:rgba(23,139,135,.08);color:var(--accent);border-radius:999px;padding:3px 10px;font:inherit;font-size:.73rem;cursor:pointer;display:inline-flex;align-items:center;gap:5px;transition:background .12s}
+    .bc-pill:hover{background:rgba(23,139,135,.16)}
+    .bc-pill .bc-x{font-size:.8rem;line-height:1;opacity:.7}
+    .bc-all{border-color:rgba(154,52,18,.3);background:rgba(154,52,18,.07);color:#7a2e12}
+    .bc-all:hover{background:rgba(154,52,18,.15)}
+    .bc-lbl{font-size:.67rem;color:var(--muted);letter-spacing:.09em;text-transform:uppercase;white-space:nowrap}
+
+    /* ── Filter panel — overlay flotante, no entra en el flex-flow ── */
+    .filter-panel{display:none;border:1px solid var(--line);border-radius:14px;background:rgba(255,252,247,.98);padding:10px 14px;gap:7px;flex-direction:column}
+    .filter-panel.open{
+      display:flex;
+      position:absolute;
+      top:54px;left:0;right:0;
+      z-index:9;
+      box-shadow:0 6px 24px rgba(44,36,22,.13);
+    }
+    .fp-row{display:flex;flex-direction:column;gap:4px}
+    .fp-chips{display:flex;flex-wrap:nowrap;gap:5px;overflow-x:auto;padding-bottom:3px;scrollbar-width:none}
+    .fp-chips::-webkit-scrollbar{display:none}
+    .filter-active{background:rgba(58,168,163,.1)!important;border-color:var(--accent)!important;color:var(--ink)!important}
+
+    /* ── Cluster halo labels (floating on SVG) ── */
+    .halo-lbl{font-weight:700;pointer-events:none;font-family:inherit}
+
+    @media(max-width:1100px){.themes-layout{grid-template-columns:1fr}.hero.hero-compact{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
-  <div class="page-shell">
-    <header class="hero hero-compact">
-      <div class="hero-copy">
-        <p class="eyebrow">Mapa semantico adoptado</p>
-        <h1>Universo BIO</h1>
-        <p class="hero-subtitle">Ordenado por proximidad semantica</p>
-        <p class="lede">Aqui “BIO” no significa solo biotech estricta: incluye startups bio-based, biocentricas y gestoras de limites planetarios cuando operan directamente sobre sistemas vivos, cadenas materiales bio-basadas o infraestructura critica para su transicion.</p>
+<div class="page-shell">
+  <header class="hero hero-compact">
+    <div class="hero-copy">
+      <p class="eyebrow">Clusters semánticos · T3</p>
+      <h1>BIO LATAM</h1>
+      <p class="hero-subtitle">Ecosistema de innovación · 283 organizaciones · 14 clusters temáticos</p>
+      <p class="lede">Cada nodo es una startup del ecosistema BIO LATAM. El <strong>color</strong> identifica el cluster temático. El <strong>diámetro</strong> refleja el nivel de desarrollo (<em>valuation tier</em>): las organizaciones más avanzadas ocupan más espacio visual. El <strong>anillo punteado</strong> indica que la empresa tiene rondas de inversión documentadas. Los chips de tecnología e industria permiten explorar dimensiones transversales.</p>
+    </div>
+    <div class="hero-meta">
+      <div class="meta-card"><span class="meta-label">Modelo</span><strong id="meta-model">—</strong></div>
+      <div class="meta-card"><span class="meta-label">Startups include</span><strong id="meta-total">—</strong></div>
+      <div class="meta-card"><span class="meta-label">Clusters</span><strong id="meta-clusters">—</strong></div>
+      <div class="meta-card"><span class="meta-label">Navegación</span><strong><a href="./index.html" style="color:inherit">← Piloto</a></strong></div>
+    </div>
+  </header>
+
+  <section class="themes-layout">
+    <aside class="themes-sidebar">
+      <div class="sidebar-head">
+        <div class="item-title">Clusters semánticos</div>
+        <div class="sidebar-stats">
+          <span id="s-total" class="s-chip s-chip-teal">—</span>
+          <span id="s-featured" class="s-chip s-chip-teal">—</span>
+          <span id="s-funded" class="s-chip s-chip-muted">—</span>
+        </div>
       </div>
-      <div class="hero-meta">
-        <div class="meta-card">
-          <span class="meta-label">Taxonomia operativa</span>
-          <strong>7 categorias adoptadas</strong>
+      <div id="cluster-list" class="cluster-list"></div>
+      <div id="detail-pane" class="detail-pane">
+        <span style="color:var(--muted);font-size:.82rem;">Hacé clic en una startup o en un cluster para ver el detalle.</span>
+      </div>
+    </aside>
+
+    <main class="themes-stage">
+      <div class="tb-between">
+        <div class="tb-row">
+          <div class="vt-group">
+            <button id="btn-map" class="vt-btn active" type="button">UMAP</button>
+            <button id="btn-cluster" class="vt-btn" type="button">Clusters</button>
+            <button id="btn-graph" class="vt-btn" type="button">Red</button>
+          </div>
+          <button id="btn-labels" class="lbl-btn on" type="button">Nombres</button>
+          <button id="btn-filter" class="lbl-btn" type="button">Filtros</button>
+          <div class="srch-wrap">
+            <input id="srch-in" class="themes-select" type="search" placeholder="Buscar startup…" autocomplete="off" style="min-width:150px">
+            <div id="srch-res" class="srch-res"></div>
+          </div>
         </div>
-        <div class="meta-card">
-          <span class="meta-label">Cobertura usada</span>
-          <strong>Include + confirmed + source-backed</strong>
-        </div>
-        <div class="meta-card">
-          <span class="meta-label">Interaccion</span>
-          <strong>Zoom, drag, select, clear</strong>
-        </div>
-        <div class="meta-card">
-          <span class="meta-label">Navegacion</span>
-          <strong><a href="./index.html" style="color:inherit">Volver al piloto</a></strong>
+        <div class="conf-leg">
+          <span class="cs" style="width:6px;height:6px;background:#aaa"></span>emergente
+          <span class="cs" style="width:9px;height:9px;background:#888"></span>tier 1
+          <span class="cs" style="width:13px;height:13px;background:var(--accent)"></span>tier 2+
+          <span class="cs" style="width:9px;height:9px;background:none;border:1.5px dashed #555"></span>con inversión
         </div>
       </div>
-    </header>
+      <div id="filter-panel" class="filter-panel">
+        <div class="fp-row">
+          <div class="fp-sec-head"><span class="fp-sec-lbl">País</span><button id="clr-country" class="fp-sec-clr" type="button">limpiar selección</button></div>
+          <div id="country-chips" class="fp-chips"></div>
+        </div>
+        <div class="fp-row">
+          <div class="fp-sec-head"><span class="fp-sec-lbl">Tecnología</span><button id="clr-tech" class="fp-sec-clr" type="button">limpiar selección</button></div>
+          <div id="tech-chips" class="fp-chips"></div>
+        </div>
+        <div class="fp-row">
+          <div class="fp-sec-head"><span class="fp-sec-lbl">Industria</span><button id="clr-ind" class="fp-sec-clr" type="button">limpiar selección</button></div>
+          <div id="ind-chips" class="fp-chips"></div>
+        </div>
+      </div>
+      <div id="breadcrumbs" class="breadcrumbs"></div>
+      <div class="canvas-wrap" id="canvas-wrap">
+        <svg id="themes-svg"></svg>
+        <div id="hov-card" class="hov"></div>
+        <div class="z-ctrl">
+          <button id="z-in" class="z-btn" type="button">+</button>
+          <button id="z-out" class="z-btn" type="button">−</button>
+          <button id="z-reset" class="z-btn" type="button" title="Reset">↺</button>
+        </div>
+      </div>
+    </main>
+  </section>
+</div>
 
-    <section class="themes-layout">
-      <aside class="themes-sidebar">
-        <div class="themes-sidebar-head">
-          <div id="startup-count" class="item-title">0 startups</div>
-          <div class="method-row">
-            <span class="pill">Thesis-first</span>
-            <span class="pill muted">Include + confirmed</span>
-            <span id="cluster-mode-pill" class="pill muted">Base operativa guardada</span>
-          </div>
-        </div>
-        <div class="themes-sidebar-body">
-          <div>
-            <div id="theme-intro" class="item-meta" style="margin-bottom:8px;">Cada tarjeta resume una categoria: color, total, subtitulo y empresas tipo. La posicion del mapa sale de similitud semantica entre startups confirmadas del universo BIO.</div>
-            <div id="theme-list" class="theme-list"></div>
-          </div>
-          <div class="snapshot-box">
-            <div class="item-title" style="margin-bottom:10px;">Como leer este mapa adoptado</div>
-            <div id="snapshot-text">
-              En esta vista definimos BIO de forma amplia pero material: entran startups bio-based, biocentricas y de stewardship de limites planetarios si actuan sobre sistemas vivos, bioprocesos, materiales bio-basados, diagnostico/intervencion biologica o infraestructura critica para monitorear, coordinar o regenerar esos sistemas. Hay dos capas: la <strong>base operativa congelada k=7</strong>, estable para comparar capital y cobertura, y la <strong>exploracion semantica dinamica</strong>, donde el selector k puede mostrar otro corte, hoy recomendado en k=10. Primero, mira distancia entre grupos; segundo, usa barras para peso relativo; tercero, entra al detalle para fuente, evidencia y taxonomia fina.
-            </div>
-          </div>
-          <div class="detail-box">
-            <div class="item-title">Detalle</div>
-            <div id="startup-detail" class="item-meta">Haz click en una startup para ver primero que hace, por que entra, que evidencia tiene y recien despues la taxonomia fina. Puedes hacer zoom con la rueda y arrastrar para navegar.</div>
-          </div>
-        </div>
-      </aside>
+<script src="./text-clean.js?v=20260422aa"></script>
+<script src="./startup-themes-data.js"></script>
+<script>
+(function(){
+"use strict";
 
-      <main class="themes-stage">
-        <div class="themes-toolbar">
-          <div class="map-toolbar-head">
-            <div>
-              <div class="map-toolbar-title"><span>Mapa interactivo</span> Clusters BIO por proximidad semantica</div>
-              <div id="themes-note" class="themes-note">Esta pantalla distingue dos cosas: <strong>base operativa congelada k=7</strong> para lectura estable y <strong>exploracion semantica dinamica</strong> para probar k alternativos. La pantalla <a href="./semantic-taxonomy-beta.html" style="color:inherit"><strong>Semantic Taxonomy</strong></a> queda como auditoria metodologica y comparacion de cortes.</div>
-            </div>
-            <div class="map-toolbar-actions">
-              <button id="toggle-labels" class="scope-toggle active" type="button">Labels on</button>
-            </div>
-          </div>
-          <div class="map-control-panel">
-            <div class="control-group control-group-taxonomy">
-              <div class="control-label">Taxonomia</div>
-              <div class="cluster-control-grid">
-                <select id="cluster-view-select" class="themes-select">
-                  <option value="adopted">Base operativa guardada</option>
-                  <option value="semantic">Exploracion semantica dinamica</option>
-                </select>
-                <select id="semantic-profile-select" class="themes-select"></select>
-                <select id="semantic-k-select" class="themes-select"></select>
-              </div>
-            </div>
-            <div class="control-group">
-              <div class="control-label">Buscar startup</div>
-              <div class="startup-search-wrap">
-                <input id="startup-search" class="themes-select startup-search-input" type="search" placeholder="Nombre de startup..." autocomplete="off">
-                <div id="startup-search-results" class="startup-search-results"></div>
-              </div>
-            </div>
-            <div class="control-group">
-              <div class="control-label">Iluminar</div>
-              <div class="highlight-control-grid">
-                <select id="theme-select" class="themes-select">
-                  <option value="all">All startup themes</option>
-                </select>
-                <select id="country-select" class="themes-select">
-                  <option value="all">Todos los paises</option>
-                </select>
-                <select id="investor-select" class="themes-select">
-                  <option value="all">Todos los fondos</option>
-                </select>
-              </div>
-            </div>
-            <div class="control-group">
-              <div class="control-label">Reset</div>
-              <button id="clear-highlights" class="scope-toggle" type="button">Limpiar luces</button>
-            </div>
-          </div>
-        </div>
-        <div class="themes-wrap">
-          <svg id="startup-themes-svg" width="100%" height="760" viewBox="0 0 1700 980" preserveAspectRatio="xMidYMid meet"></svg>
-          <div id="startup-hover-card" class="hover-card"></div>
-          <div class="themes-controls">
-            <button id="themes-zoom-in" class="themes-control-btn" type="button">+</button>
-            <button id="themes-zoom-out" class="themes-control-btn" type="button">-</button>
-            <button id="themes-reset" class="themes-control-btn" type="button">R</button>
-          </div>
-        </div>
-      </main>
-    </section>
-  </div>
+const D = window.STARTUP_THEMES_DATA;
+if(!D||!D.startups||!D.startups.length){
+  document.getElementById("detail-pane").textContent="Sin datos. Ejecutá: python -m src.clustering";
+  return;
+}
 
-  <script src="./text-clean.js?v=20260422aa"></script>
-  <script src="./theme-system.js?v=20260430english-semantic"></script>
-  <script src="./ecosystem-integrated-data.js?v=20260428excludeq"></script>
-  <script src="./startup-taxonomy-data.js?v=20260428excludeq"></script>
-  <script src="./startup-profiles-data.js?v=20260428excludeq"></script>
-  <script src="./semantic-single-level-data.js?v=20260430english-semantic"></script>
-  <script src="./startup-themes.js?v=20260508shared-taxonomy"></script>
+// ── Palette ──────────────────────────────────────────────────────────────────
+const PAL=[
+  "#178b87","#4a8f5c","#8cbf55","#c84b31","#e8973a",
+  "#d95f28","#5b7fa0","#1f5c3a","#3a5478","#52b788",
+  "#a8c832","#b07d2e","#7b4522","#9b72cf","#c27a58"
+];
+function clCol(cid){
+  return PAL[((cid%PAL.length)+PAL.length)%PAL.length];
+}
+
+// ── Startup data prep ─────────────────────────────────────────────────────
+const startups=D.startups;
+const clusters=D.clusters||[];
+const vTech=D.vocab_tech||{};
+const vInd=D.vocab_industry||{};
+const clMap=new Map(clusters.map(c=>[c.cluster_id,c]));
+
+// Stats header
+document.getElementById("meta-model").textContent=D.model;
+document.getElementById("meta-total").textContent=D.stats.total_startups+" startups";
+document.getElementById("meta-clusters").textContent=D.stats.n_clusters+" clusters · "+D.stats.featured_count+" destacadas";
+document.getElementById("s-total").textContent=D.stats.total_startups+" startups";
+document.getElementById("s-featured").textContent=D.stats.featured_count+" destacadas";
+document.getElementById("s-funded").textContent=D.stats.funded_count+" con inversión";
+
+// ── Node objects ──────────────────────────────────────────────────────────
+const W0=900,H0=600;
+let W=W0,H=H0;
+const nodes=startups.map(s=>({
+  d:s,
+  mx:0,my:0,    // UMAP map position
+  kx:0,ky:0,   // Cluster arrangement position
+  gxs:0,gys:0, // Graph/network position (screen coords)
+  cx:0,cy:0,   // current rendered position
+  circEl:null,ringEl:null,lblEl:null
+}));
+const nodeMap=new Map(nodes.map(n=>[n.d.id,n]));
+
+// ── UMAP map positions ─────────────────────────────────────────────────────
+function computeMapPos(){
+  const pad=55;
+  const xs=startups.map(s=>s.x),ys=startups.map(s=>s.y);
+  const minX=Math.min(...xs),maxX=Math.max(...xs);
+  const minY=Math.min(...ys),maxY=Math.max(...ys);
+  const rx=maxX-minX||1,ry=maxY-minY||1;
+  nodes.forEach(n=>{
+    n.mx=pad+(n.d.x-minX)/rx*(W-pad*2);
+    n.my=pad+(n.d.y-minY)/ry*(H-pad*2);
+  });
+}
+
+// Collision repulsion on UMAP positions — relaxed for visual appeal
+function relaxMapPos(iters=65){
+  for(let it=0;it<iters;it++){
+    for(let i=0;i<nodes.length;i++){
+      for(let j=i+1;j<nodes.length;j++){
+        const a=nodes[i],b=nodes[j];
+        const dx=a.mx-b.mx,dy=a.my-b.my;
+        const d2=dx*dx+dy*dy;
+        const minD=nRadius(a.d)+nRadius(b.d)+10; // node-size-aware min distance
+        if(d2<minD*minD&&d2>0.001){
+          const d=Math.sqrt(d2);
+          const push=(minD-d)*0.38/d;
+          a.mx+=dx*push;a.my+=dy*push;
+          b.mx-=dx*push;b.my-=dy*push;
+        }
+      }
+    }
+  }
+  const pad=24;
+  nodes.forEach(n=>{
+    n.mx=Math.max(pad,Math.min(W-pad,n.mx));
+    n.my=Math.max(pad,Math.min(H-pad,n.my));
+  });
+}
+
+// ── Cluster arrangement positions ─────────────────────────────────────────
+function computeClusterPos(){
+  const validClusters=clusters.slice().sort((a,b)=>b.size-a.size);
+  const ncols=Math.ceil(Math.sqrt(validClusters.length));
+  const nrows=Math.ceil(validClusters.length/ncols);
+  const cellW=W/ncols,cellH=H/nrows;
+
+  // Group nodes per cluster
+  const clusterNodes={};
+  nodes.forEach(n=>{
+    const cid=n.d.cluster_id;
+    if(!clusterNodes[cid])clusterNodes[cid]=[];
+    clusterNodes[cid].push(n);
+  });
+
+  // First pass: compute raw ring positions using node-size-aware spacing
+  validClusters.forEach((cl,i)=>{
+    const col=i%ncols,row=Math.floor(i/ncols);
+    const zx=cellW*(col+.5),zy=cellH*(row+.5);
+    const cNodes=(clusterNodes[cl.cluster_id]||[]).slice()
+      .sort((a,b)=>(b.d.valuation_tier||0)-(a.d.valuation_tier||0));
+    if(!cNodes.length)return;
+
+    // Spacing = avg node diameter + gap, never below 20px
+    const avgR=cNodes.reduce((s,n)=>s+nRadius(n.d),0)/cNodes.length;
+    const spacing=Math.max(avgR*2+10,20);
+
+    let placed=0,ring=0;
+    while(placed<cNodes.length&&ring<30){
+      const r=ring===0?0:ring*spacing;
+      const cap=ring===0?1:Math.max(1,Math.floor(2*Math.PI*r/spacing));
+      const slice=cNodes.slice(placed,placed+cap);
+      slice.forEach((n,j)=>{
+        if(ring===0){n.kx=zx;n.ky=zy;}
+        else{
+          const angle=(2*Math.PI*j/slice.length)-(Math.PI/2);
+          n.kx=zx+Math.cos(angle)*r;
+          n.ky=zy+Math.sin(angle)*r;
+        }
+      });
+      placed+=slice.length;
+      ring++;
+    }
+  });
+
+  // Second pass: scale all kx/ky to fill canvas without overflow
+  const pad=44;
+  const allKx=nodes.map(n=>n.kx),allKy=nodes.map(n=>n.ky);
+  const mnX=Math.min(...allKx),mxX=Math.max(...allKx);
+  const mnY=Math.min(...allKy),mxY=Math.max(...allKy);
+  const scX=(W-pad*2)/(mxX-mnX||1),scY=(H-pad*2)/(mxY-mnY||1);
+  const sc=Math.min(scX,scY);
+  const ox=pad+(W-pad*2-(mxX-mnX)*sc)/2-mnX*sc;
+  const oy=pad+(H-pad*2-(mxY-mnY)*sc)/2-mnY*sc;
+  nodes.forEach(n=>{n.kx=n.kx*sc+ox;n.ky=n.ky*sc+oy});
+}
+
+// ── SVG setup ─────────────────────────────────────────────────────────────
+const wrap=document.getElementById("canvas-wrap");
+const svgEl=document.getElementById("themes-svg");
+const NS="http://www.w3.org/2000/svg";
+let panX=0,panY=0,scale=1;
+let isPan=false,panSX=0,panSY=0,panSPX=0,panSPY=0;
+
+function setDims(){
+  W=wrap.clientWidth||W0;H=wrap.clientHeight||H0;
+  svgEl.setAttribute("viewBox",`0 0 ${W} ${H}`);
+}
+setDims();
+
+const gRoot=document.createElementNS(NS,"g");
+svgEl.appendChild(gRoot);
+const gEdges=document.createElementNS(NS,"g");    // investment edges (bottom)
+const gHalos=document.createElementNS(NS,"g");    // cluster background halos
+const gNodes=document.createElementNS(NS,"g");    // startup circles
+const gLabels=document.createElementNS(NS,"g");   // startup labels
+const gInvNodes=document.createElementNS(NS,"g"); // investor nodes (top)
+const gInvLabels=document.createElementNS(NS,"g");// investor labels
+gRoot.appendChild(gEdges);
+gRoot.appendChild(gHalos);
+gRoot.appendChild(gNodes);
+gRoot.appendChild(gLabels);
+gRoot.appendChild(gInvNodes);
+gRoot.appendChild(gInvLabels);
+
+// ── Graph / network data ──────────────────────────────────────────────────
+const graphData=D.graph||{investor_nodes:[],edges:[]};
+const INV_COL="#1f5c3a";
+// Investor node objects with screen coords (gxs, gys)
+const invNodes=graphData.investor_nodes.map(iv=>({...iv,gxs:0,gys:0,circEl:null,lblEl:null}));
+const invMap=new Map(invNodes.map(iv=>[iv.id,iv]));
+
+function invRadius(iv){return Math.max(7,Math.min(22,5+Math.sqrt(iv.n_investments)*2.8))}
+
+let graphLayoutReady=false;
+const faPositions=new Map(); // 's:id' / 'i:id' → {nx,ny} normalizado [0,1]
+
+function computeGraphPos(){
+  const pad=52;
+  nodes.forEach(n=>{
+    const p=faPositions.get('s:'+n.d.id);
+    if(p){n.gxs=pad+p.nx*(W-pad*2);n.gys=pad+p.ny*(H-pad*2);}
+    else{n.gxs=W/2;n.gys=H/2;}
+  });
+  invNodes.forEach(iv=>{
+    const p=faPositions.get('i:'+iv.id);
+    if(p){iv.gxs=pad+p.nx*(W-pad*2);iv.gys=pad+p.ny*(H-pad*2);}
+    else{iv.gxs=W/2;iv.gys=H/2;}
+  });
+}
+
+function runForceAtlas(iterations){
+  iterations=iterations||280;
+  const centerX=W/2,centerY=H/2;
+  const repulsion=75000,attraction=0.014,gravity=0.0012,desired=85;
+
+  // Unified node array: startups primero, inversores al final
+  const fa=[];
+  const sIdxMap=new Map(),iIdxMap=new Map();
+  nodes.forEach(n=>{sIdxMap.set(n.d.id,fa.length);fa.push({x:0,y:0,vx:0,vy:0,isInv:false,ref:n})});
+  invNodes.forEach(iv=>{iIdxMap.set(iv.id,fa.length);fa.push({x:0,y:0,vx:0,vy:0,isInv:true,ref:iv})});
+
+  // Posiciones iniciales: círculo con jitter
+  fa.forEach((a,i)=>{
+    const angle=Math.PI*2*i/Math.max(1,fa.length);
+    const r=180+(i%7)*18;
+    a.x=centerX+Math.cos(angle)*r+(Math.random()-.5)*40;
+    a.y=centerY+Math.sin(angle)*r+(Math.random()-.5)*40;
+  });
+
+  // Índice de aristas
+  const faEdges=[];
+  graphData.edges.forEach(e=>{
+    const si=sIdxMap.get(e.startup_id),ii=iIdxMap.get(e.investor_id);
+    if(si!=null&&ii!=null)faEdges.push({si,ii});
+  });
+
+  // Simulación Force Atlas
+  for(let step=0;step<iterations;step++){
+    fa.forEach(a=>{a.vx=0;a.vy=0;});
+
+    // Repulsión entre todos los pares
+    for(let i=0;i<fa.length;i++){
+      for(let j=i+1;j<fa.length;j++){
+        const a=fa[i],b=fa[j];
+        const dx=a.x-b.x,dy=a.y-b.y;
+        const d2=Math.max(120,dx*dx+dy*dy);
+        const d=Math.sqrt(d2);
+        const f=repulsion/d2;
+        const fx=(dx/d)*f,fy=(dy/d)*f;
+        a.vx+=fx;a.vy+=fy;
+        b.vx-=fx;b.vy-=fy;
+      }
+    }
+
+    // Atracción por aristas (spring)
+    faEdges.forEach(({si,ii})=>{
+      const s=fa[si],v=fa[ii];
+      const dx=v.x-s.x,dy=v.y-s.y;
+      const dist=Math.max(1,Math.sqrt(dx*dx+dy*dy));
+      const spring=(dist-desired)*attraction;
+      const fx=(dx/dist)*spring,fy=(dy/dist)*spring;
+      s.vx+=fx;s.vy+=fy;
+      v.vx-=fx;v.vy-=fy;
+    });
+
+    // Gravedad + clamp
+    fa.forEach(a=>{
+      a.vx+=(centerX-a.x)*gravity;
+      a.vy+=(centerY-a.y)*gravity;
+      a.x=Math.max(40,Math.min(W-40,a.x+a.vx));
+      a.y=Math.max(30,Math.min(H-30,a.y+a.vy));
+    });
+  }
+
+  // Normalizar a [0,1] y guardar
+  const allX=fa.map(a=>a.x),allY=fa.map(a=>a.y);
+  const mnX=Math.min(...allX),mxX=Math.max(...allX);
+  const mnY=Math.min(...allY),mxY=Math.max(...allY);
+  const rX=mxX-mnX||1,rY=mxY-mnY||1;
+  fa.forEach(a=>{
+    const key=a.isInv?'i:'+a.ref.id:'s:'+a.ref.d.id;
+    faPositions.set(key,{nx:(a.x-mnX)/rX,ny:(a.y-mnY)/rY});
+  });
+
+  graphLayoutReady=true;
+  computeGraphPos();
+}
+
+// Edge elements (created once)
+const edgeEls=[];
+function buildGraphElements(){
+  while(gEdges.firstChild)gEdges.removeChild(gEdges.firstChild);
+  while(gInvNodes.firstChild)gInvNodes.removeChild(gInvNodes.firstChild);
+  while(gInvLabels.firstChild)gInvLabels.removeChild(gInvLabels.firstChild);
+  edgeEls.length=0;
+
+  graphData.edges.forEach(e=>{
+    const sn=nodeMap.get(e.startup_id);
+    const iv=invMap.get(e.investor_id);
+    if(!sn||!iv)return;
+    const path=document.createElementNS(NS,"path");
+    path.setAttribute("fill","none");
+    path.setAttribute("stroke",clCol(sn.d.cluster_id));
+    path.setAttribute("stroke-width","1.2");
+    path.setAttribute("stroke-opacity","0.25");
+    path.setAttribute("pointer-events","none");
+    gEdges.appendChild(path);
+    edgeEls.push({path,sn,iv});
+  });
+
+  invNodes.forEach(iv=>{
+    const r=invRadius(iv);
+    const circ=document.createElementNS(NS,"circle");
+    circ.setAttribute("r",r);
+    circ.setAttribute("fill",INV_COL);
+    circ.setAttribute("stroke","rgba(255,255,255,.85)");
+    circ.setAttribute("stroke-width","1.5");
+    circ.setAttribute("opacity","0.92");
+    circ.style.cursor="pointer";
+    gInvNodes.appendChild(circ);
+    iv.circEl=circ;
+
+    const lbl=document.createElementNS(NS,"text");
+    lbl.setAttribute("text-anchor","middle");
+    lbl.setAttribute("font-size","8.5");
+    lbl.setAttribute("font-weight","700");
+    lbl.setAttribute("font-family","inherit");
+    lbl.setAttribute("fill",INV_COL);
+    lbl.setAttribute("stroke","rgba(248,245,239,0.95)");
+    lbl.setAttribute("stroke-width","3");
+    lbl.setAttribute("stroke-linejoin","round");
+    lbl.setAttribute("paint-order","stroke");
+    lbl.setAttribute("pointer-events","none");
+    lbl.textContent=iv.name.replace(/\s+(S\.?A\.?|S\.?R\.?L\.?|AG|LLC|Ltd\.?)$/i,"").split(/\s+/).slice(0,3).join(" ");
+    gInvLabels.appendChild(lbl);
+    iv.lblEl=lbl;
+
+    // Tooltip on hover
+    circ.addEventListener("mouseenter",e2=>{
+      const rect=wrap.getBoundingClientRect();
+      hovCard.innerHTML=`<div class="hov-title">${iv.name}</div><div class="hov-chips"><span class="hov-chip" style="color:#1f5c3a">Inversor · ${iv.n_investments} startup${iv.n_investments>1?"s":""}</span></div>`;
+      let x=e2.clientX-rect.left+14,y=e2.clientY-rect.top-10;
+      if(x+310>W)x=e2.clientX-rect.left-320;
+      hovCard.style.left=x+"px";hovCard.style.top=y+"px";
+      hovCard.classList.add("vis");
+    });
+    circ.addEventListener("mouseleave",hideHov);
+  });
+}
+
+function updateGraphElements(){
+  edgeEls.forEach(({path,sn,iv})=>{
+    const sx=sn.cx,sy=sn.cy,tx=iv.gxs,ty=iv.gys;
+    const dx=Math.abs(tx-sx)*0.35;
+    path.setAttribute("d",`M ${sx} ${sy} C ${sx+dx} ${sy}, ${tx-dx} ${ty}, ${tx} ${ty}`);
+  });
+  invNodes.forEach(iv=>{
+    if(iv.circEl){iv.circEl.setAttribute("cx",iv.gxs);iv.circEl.setAttribute("cy",iv.gys)}
+    if(iv.lblEl){iv.lblEl.setAttribute("x",iv.gxs);iv.lblEl.setAttribute("y",iv.gys+invRadius(iv)+11)}
+  });
+}
+
+function applyTf(){gRoot.setAttribute("transform",`translate(${panX},${panY}) scale(${scale})`)}
+
+// Node visual properties — size by valuation_tier (investor signal)
+function nRadius(s){
+  const t=s.valuation_tier;
+  if(t>=4)return 16;
+  if(t>=3)return 12;
+  if(t>=2)return 9;
+  if(t>=1.5)return 7.5;
+  if(t>=1)return 6;
+  return 4.5;
+}
+function nOpacity(s){return s.quality_band==="high"?0.88:0.72}
+// Whether a startup gets a persistent label (tier 2+ always labeled)
+function nFeatured(s){return s.valuation_tier!==null&&s.valuation_tier>=2}
+
+// ── Filter state — multi-selección con Sets ───────────────────────────────
+const activeTechs=new Set();      // OR dentro de la categoría
+const activeInds=new Set();       // OR dentro de la categoría
+const activeCountries=new Set();  // OR dentro de la categoría
+let activeCluster=null,searchId=null,showLabels=true;
+let viewMode="map"; // "map" | "cluster" | "graph"
+
+function isHl(s){
+  if(searchId&&s.id!==searchId)return false;
+  if(activeCountries.size&&!(s.countries||[]).some(c=>activeCountries.has(c)))return false;
+  if(activeCluster!==null&&s.cluster_id!==activeCluster)return false;
+  if(activeTechs.size&&!(s.tech_codes||[]).some(c=>activeTechs.has(c)))return false;
+  if(activeInds.size&&!(s.industry_codes||[]).some(c=>activeInds.has(c)))return false;
+  return true;
+}
+function anyFilter(){return !!(searchId||activeCountries.size||activeCluster!==null||activeTechs.size||activeInds.size)}
+
+// ── Build SVG ──────────────────────────────────────────────────────────────
+function buildSVG(){
+  while(gNodes.firstChild)gNodes.removeChild(gNodes.firstChild);
+  while(gLabels.firstChild)gLabels.removeChild(gLabels.firstChild);
+  while(gHalos.firstChild)gHalos.removeChild(gHalos.firstChild);
+
+  // Render smaller/lower-tier nodes first → higher-tier appear on top (z-order)
+  nodes.sort((a,b)=>(a.d.valuation_tier||0)-(b.d.valuation_tier||0));
+
+  nodes.forEach(n=>{
+    const s=n.d;
+    const color=clCol(s.cluster_id);
+    const r=nRadius(s);
+
+    // Investment ring (behind the node)
+    if(s.n_rounds>0){
+      const ring=document.createElementNS(NS,"circle");
+      ring.setAttribute("r",r+4);
+      ring.setAttribute("fill","none");
+      ring.setAttribute("stroke",color);
+      ring.setAttribute("stroke-width","2");
+      ring.setAttribute("stroke-opacity","0.62");
+      ring.setAttribute("stroke-dasharray","3.5 2.5");
+      ring.setAttribute("pointer-events","none");
+      gNodes.appendChild(ring);
+      n.ringEl=ring;
+    }
+
+    const circ=document.createElementNS(NS,"circle");
+    circ.setAttribute("r",r);
+    circ.setAttribute("fill",color);
+    circ.setAttribute("stroke","rgba(255,255,255,.8)");
+    circ.setAttribute("stroke-width","1.2");
+    circ.setAttribute("opacity",nOpacity(s));
+    circ.style.cursor="pointer";
+    circ.dataset.id=s.id;
+    gNodes.appendChild(circ);
+    n.circEl=circ;
+
+    // Labels: always visible for tier 2+; others follow showLabels toggle
+    const featured=nFeatured(s);
+    const lbl=document.createElementNS(NS,"text");
+    lbl.setAttribute("text-anchor","middle");
+    lbl.setAttribute("font-size",featured?"9.5":"7.5");
+    lbl.setAttribute("font-weight",featured?"700":"400");
+    lbl.setAttribute("font-family","inherit");
+    lbl.setAttribute("fill","#2a2218");
+    lbl.setAttribute("stroke","rgba(248,245,239,0.95)");
+    lbl.setAttribute("stroke-width","3");
+    lbl.setAttribute("stroke-linejoin","round");
+    lbl.setAttribute("paint-order","stroke");
+    lbl.setAttribute("pointer-events","none");
+    lbl.setAttribute("opacity",featured?"1":"0.82");
+    lbl.textContent=s.name.replace(/\s*S\.?\s*[AP]\.?S?\.?$/i,"").split(/\s+/).slice(0,2).join(" ");
+    lbl.style.display=(featured||showLabels)?"":"none";
+    gLabels.appendChild(lbl);
+    n.lblEl=lbl;
+
+    circ.addEventListener("mouseenter",e=>showHov(s,e));
+    circ.addEventListener("mouseleave",hideHov);
+    circ.addEventListener("click",()=>selectStartup(s));
+  });
+}
+
+function updatePositions(){
+  nodes.forEach(n=>{
+    if(n.ringEl){n.ringEl.setAttribute("cx",n.cx);n.ringEl.setAttribute("cy",n.cy)}
+    if(n.circEl){n.circEl.setAttribute("cx",n.cx);n.circEl.setAttribute("cy",n.cy)}
+    if(n.lblEl){
+      n.lblEl.setAttribute("x",n.cx);
+      n.lblEl.setAttribute("y",n.cy+nRadius(n.d)+11);
+    }
+  });
+  updateHalos();
+}
+
+// ── Convex hull (Jarvis march) ─────────────────────────────────────────────
+function convexHull(pts){
+  if(pts.length<3)return pts;
+  let lo=0;
+  for(let i=1;i<pts.length;i++)if(pts[i][0]<pts[lo][0]||(pts[i][0]===pts[lo][0]&&pts[i][1]<pts[lo][1]))lo=i;
+  const hull=[],n=pts.length;let cur=lo;
+  do{
+    hull.push(pts[cur]);
+    let next=(cur+1)%n;
+    for(let i=0;i<n;i++){
+      const cross=(pts[next][0]-pts[cur][0])*(pts[i][1]-pts[cur][1])-(pts[next][1]-pts[cur][1])*(pts[i][0]-pts[cur][0]);
+      if(cross<0)next=i;
+    }
+    cur=next;
+  }while(cur!==lo&&hull.length<=n);
+  return hull;
+}
+
+// Smooth blob path: inflate hull from centroid, connect with quadratic beziers
+function blobPath(pts,pad=22){
+  if(!pts||pts.length<2)return null;
+  const cx=pts.reduce((s,p)=>s+p[0],0)/pts.length;
+  const cy=pts.reduce((s,p)=>s+p[1],0)/pts.length;
+  const inf=pts.map(([x,y])=>{
+    const dx=x-cx,dy=y-cy,d=Math.sqrt(dx*dx+dy*dy)||1;
+    return[x+dx/d*pad,y+dy/d*pad];
+  });
+  const n=inf.length;
+  const mids=inf.map(([x,y],i)=>{const nx=inf[(i+1)%n];return[(x+nx[0])/2,(y+nx[1])/2]});
+  let d=`M${mids[0][0].toFixed(1)},${mids[0][1].toFixed(1)}`;
+  for(let i=0;i<n;i++){
+    const c=inf[i],e=mids[(i+1)%n];
+    d+=` Q${c[0].toFixed(1)},${c[1].toFixed(1)} ${e[0].toFixed(1)},${e[1].toFixed(1)}`;
+  }
+  return d+"Z";
+}
+
+function updateHalos(){
+  while(gHalos.firstChild)gHalos.removeChild(gHalos.firstChild);
+
+  const any=anyFilter();
+
+  // Group nodes by cluster
+  const byCluster={};
+  nodes.forEach(n=>{
+    const cid=n.d.cluster_id;
+    if(!byCluster[cid])byCluster[cid]=[];
+    byCluster[cid].push(n);
+  });
+
+  Object.entries(byCluster).forEach(([cidStr,cNodes])=>{
+    const cid=parseInt(cidStr);
+    const cl=clMap.get(cid);
+    const pts=cNodes.map(n=>[n.cx,n.cy]);
+    const cx=pts.reduce((s,p)=>s+p[0],0)/pts.length;
+    const cy=pts.reduce((s,p)=>s+p[1],0)/pts.length;
+
+    // ¿Tiene algún nodo que pase el filtro activo?
+    const clusterHasMatch=any?cNodes.some(n=>isHl(n.d)):true;
+    const color=clusterHasMatch?clCol(cid):"#b5aea6";
+    const fillOp=clusterHasMatch?(viewMode==="cluster"?"0.07":"0.09"):"0.04";
+    const strokeOp=clusterHasMatch?(viewMode==="cluster"?"0.18":"0.22"):"0.08";
+
+    if(viewMode==="cluster"){
+      // Simple circle halo in cluster arrangement view
+      const maxR=Math.max(...pts.map(([x,y])=>Math.sqrt((x-cx)**2+(y-cy)**2)));
+      const el=document.createElementNS(NS,"circle");
+      el.setAttribute("cx",cx);el.setAttribute("cy",cy);
+      el.setAttribute("r",Math.max(maxR+20,22));
+      el.setAttribute("fill",color);el.setAttribute("opacity",fillOp);
+      el.setAttribute("stroke",color);el.setAttribute("stroke-width","1.5");
+      el.setAttribute("stroke-opacity",strokeOp);el.setAttribute("pointer-events","none");
+      gHalos.appendChild(el);
+    }else{
+      // Convex hull blob in UMAP map view
+      const hull=convexHull(pts);
+      const path=blobPath(hull,pts.length===1?24:pts.length<4?18:20);
+      if(path){
+        const el=document.createElementNS(NS,"path");
+        el.setAttribute("d",path);
+        el.setAttribute("fill",color);el.setAttribute("opacity",fillOp);
+        el.setAttribute("stroke",color);el.setAttribute("stroke-width","1.5");
+        el.setAttribute("stroke-opacity",strokeOp);el.setAttribute("pointer-events","none");
+        gHalos.appendChild(el);
+      }
+    }
+
+    // Floating label above the halo (both views)
+    if(cl&&cid!==-1){
+      // Find topmost point in current positions
+      const topY=Math.min(...pts.map(p=>p[1]));
+      const txt=document.createElementNS(NS,"text");
+      txt.setAttribute("x",cx);txt.setAttribute("y",topY-14);
+      txt.setAttribute("text-anchor","middle");
+      txt.setAttribute("font-size","10");
+      txt.setAttribute("font-weight","700");
+      txt.setAttribute("fill",color);
+      txt.setAttribute("opacity",clusterHasMatch?"0.9":"0.22");
+      txt.setAttribute("pointer-events","none");
+      txt.setAttribute("letter-spacing","0.02em");
+      // Show only first segment of the label to keep it short
+      txt.textContent=(cl.label||"cluster "+cid).split(" · ")[0];
+      gHalos.appendChild(txt);
+    }
+  });
+}
+
+const GRAY_FILL="#bab3aa";  // gris cálido neutro para nodos no-seleccionados
+const GRAY_RING="#c2bbB2";
+
+function syncFilterBtn(){
+  const btn=document.getElementById("btn-filter");
+  if(!btn)return;
+  btn.classList.toggle("filter-active",!!(activeTechs.size||activeInds.size||activeCountries.size));
+  // Mostrar/ocultar "limpiar selección" por sección
+  const clrC=document.getElementById("clr-country");
+  const clrT=document.getElementById("clr-tech");
+  const clrI=document.getElementById("clr-ind");
+  if(clrC)clrC.classList.toggle("vis",activeCountries.size>0);
+  if(clrT)clrT.classList.toggle("vis",activeTechs.size>0);
+  if(clrI)clrI.classList.toggle("vis",activeInds.size>0);
+}
+function updateHighlights(){
+  const any=anyFilter();
+  syncFilterBtn();
+  nodes.forEach(n=>{
+    const s=n.d;
+    const hi=isHl(s);
+    const baseOp=nOpacity(s);
+    const featured=nFeatured(s);
+    const color=clCol(s.cluster_id);
+
+    // Anillo de inversión: color cluster si match, gris si no
+    if(n.ringEl){
+      n.ringEl.setAttribute("stroke",any&&!hi?GRAY_RING:color);
+      n.ringEl.setAttribute("stroke-opacity",any?(hi?"0.62":"0.18"):"0.62");
+    }
+    // Círculo: color cluster si match, gris si no — no desaparece, solo se apaga
+    if(n.circEl){
+      n.circEl.setAttribute("fill",any&&!hi?GRAY_FILL:color);
+      n.circEl.setAttribute("opacity",any?(hi?baseOp:0.35):baseOp);
+      n.circEl.setAttribute("r",hi&&searchId===s.id?nRadius(s)+3:nRadius(s));
+    }
+    // Etiquetas: solo las del match (o las featured si no hay filtro activo)
+    if(n.lblEl){
+      const show=any?(hi&&(featured||showLabels)):(featured||showLabels);
+      n.lblEl.style.display=show?"":"none";
+      n.lblEl.setAttribute("font-weight",searchId===s.id||featured?"700":"400");
+    }
+  });
+}
+
+// ── Transition between views ───────────────────────────────────────────────
+let transitioning=false,transP=1;
+let transFrom={},transTo={};
+const TRANS_F=45;
+
+function startTrans(toMode){
+  transFrom={};transTo={};
+  nodes.forEach(n=>{
+    transFrom[n.d.id]={x:n.cx,y:n.cy};
+    const t=toMode==="map"?{x:n.mx,y:n.my}:toMode==="cluster"?{x:n.kx,y:n.ky}:{x:n.gxs,y:n.gys};
+    transTo[n.d.id]=t;
+  });
+  transP=0;transitioning=true;
+}
+function eio(t){return t<.5?2*t*t:-1+(4-2*t)*t}
+
+// ── Zoom to cluster ────────────────────────────────────────────────────────
+function zoomToCluster(cid){
+  const cNodes=nodes.filter(n=>n.d.cluster_id===cid);
+  if(!cNodes.length)return;
+  const xs=cNodes.map(n=>n.cx),ys=cNodes.map(n=>n.cy);
+  const minX=Math.min(...xs)-40,maxX=Math.max(...xs)+40;
+  const minY=Math.min(...ys)-40,maxY=Math.max(...ys)+40;
+  const bW=maxX-minX||80,bH=maxY-minY||80;
+  const tScale=Math.min(8,Math.min(W/bW,H/bH)*0.82);
+  const tPX=W/2-((minX+maxX)/2)*tScale;
+  const tPY=H/2-((minY+maxY)/2)*tScale;
+  const s0=scale,px0=panX,py0=panY;
+  const dur=420,t0=performance.now();
+  function step(t){
+    const p=Math.min((t-t0)/dur,1),e=eio(p);
+    scale=s0+(tScale-s0)*e;panX=px0+(tPX-px0)*e;panY=py0+(tPY-py0)*e;
+    applyTf();if(p<1)requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+}
+
+// ── Breadcrumbs ────────────────────────────────────────────────────────────
+function updateBreadcrumbs(){
+  const bc=document.getElementById("breadcrumbs");
+  bc.innerHTML="";
+  const filters=[];
+  if(activeCluster!==null){
+    const cl=clMap.get(activeCluster);
+    filters.push({
+      label:"Cluster: "+(cl?.label||"cluster "+activeCluster).split(" · ")[0],
+      clear(){
+        activeCluster=null;
+        document.querySelectorAll(".cr").forEach(r=>r.classList.remove("active","dimmed"));
+        updateHighlights();updateBreadcrumbs();
+      }
+    });
+  }
+  if(activeTechs.size){
+    const lbls=[...activeTechs].map(c=>(vTech[c]?.label||c).split("/")[0].trim());
+    filters.push({
+      label:"Tech: "+lbls.slice(0,2).join(", ")+(lbls.length>2?` +${lbls.length-2}`:""),
+      clear(){
+        activeTechs.clear();
+        document.querySelectorAll("#tech-chips .fc").forEach(c=>c.classList.remove("active-tech"));
+        updateHighlights();updateBreadcrumbs();
+      }
+    });
+  }
+  if(activeInds.size){
+    const lbls=[...activeInds].map(c=>(vInd[c]?.label||c).split("(")[0].trim().split("&")[0].trim());
+    filters.push({
+      label:"Industria: "+lbls.slice(0,2).join(", ")+(lbls.length>2?` +${lbls.length-2}`:""),
+      clear(){
+        activeInds.clear();
+        document.querySelectorAll("#ind-chips .fc").forEach(c=>c.classList.remove("active-ind"));
+        updateHighlights();updateBreadcrumbs();
+      }
+    });
+  }
+  if(activeCountries.size){
+    const lbls=[...[...activeCountries].map(c=>(FLAG_MAP[c]||"")+c)];
+    filters.push({
+      label:"País: "+lbls.slice(0,2).join(", ")+(lbls.length>2?` +${lbls.length-2}`:""),
+      clear(){
+        activeCountries.clear();
+        document.querySelectorAll("#country-chips .fc").forEach(c=>c.classList.remove("active-country"));
+        updateHighlights();updateBreadcrumbs();
+      }
+    });
+  }
+  if(searchId){
+    const s=startups.find(s=>s.id===searchId);
+    filters.push({
+      label:"↓ "+(s?.name||searchId),
+      clear(){
+        searchId=null;srchIn.value="";
+        updateHighlights();updateBreadcrumbs();
+      }
+    });
+  }
+  if(!filters.length){bc.style.display="none";return;}
+  bc.style.display="flex";
+  const lbl=document.createElement("span");lbl.className="bc-lbl";lbl.textContent="Filtros";
+  bc.appendChild(lbl);
+  filters.forEach(f=>{
+    const pill=document.createElement("button");pill.className="bc-pill";pill.type="button";
+    pill.innerHTML=f.label+' <span class="bc-x">×</span>';
+    pill.addEventListener("click",f.clear);
+    bc.appendChild(pill);
+  });
+  const all=document.createElement("button");all.className="bc-pill bc-all";all.type="button";all.textContent="Limpiar todo";
+  all.addEventListener("click",()=>{
+    activeCluster=null;activeTechs.clear();activeInds.clear();activeCountries.clear();searchId=null;
+    srchIn.value="";
+    document.querySelectorAll(".fc").forEach(c=>c.classList.remove("active-tech","active-ind","active-country"));
+    document.querySelectorAll(".cr").forEach(r=>r.classList.remove("active","dimmed"));
+    updateHighlights();updateBreadcrumbs();
+  });
+  bc.appendChild(all);
+}
+
+// ── Animation loop ─────────────────────────────────────────────────────────
+let animId=null;
+let graphOp=0; // graph overlay opacity 0→1
+function loop(){
+  if(transitioning){
+    transP+=1/TRANS_F;
+    if(transP>=1){transP=1;transitioning=false}
+    const t=eio(transP);
+    nodes.forEach(n=>{
+      const f=transFrom[n.d.id],to=transTo[n.d.id];
+      if(f&&to){n.cx=f.x+(to.x-f.x)*t;n.cy=f.y+(to.y-f.y)*t}
+    });
+  }else{
+    nodes.forEach(n=>{
+      n.cx=viewMode==="map"?n.mx:viewMode==="cluster"?n.kx:n.gxs;
+      n.cy=viewMode==="map"?n.my:viewMode==="cluster"?n.ky:n.gys;
+    });
+  }
+  // Fade graph overlay in/out
+  const targetOp=viewMode==="graph"?1:0;
+  graphOp+=(targetOp-graphOp)*0.08;
+  if(Math.abs(graphOp-targetOp)<0.005)graphOp=targetOp;
+  const goStr=graphOp.toFixed(3);
+  gEdges.setAttribute("opacity",goStr);
+  gInvNodes.setAttribute("opacity",goStr);
+  gInvLabels.setAttribute("opacity",goStr);
+  updateGraphElements();
+  updatePositions();
+  animId=requestAnimationFrame(loop);
+}
+
+// ── Cluster sidebar ────────────────────────────────────────────────────────
+function buildClusterList(){
+  const list=document.getElementById("cluster-list");
+  list.innerHTML="";
+  const sorted=[...clusters].sort((a,b)=>{
+    if(a.cluster_id===-1)return 1;
+    if(b.cluster_id===-1)return -1;
+    return b.size-a.size;
+  });
+  sorted.forEach(c=>{
+    const color=clCol(c.cluster_id);
+    const row=document.createElement("div");
+    row.className="cr";row.dataset.cid=c.cluster_id;
+
+    const top=document.createElement("div");top.className="cr-top";
+    const dot=document.createElement("span");dot.className="cr-dot";dot.style.background=color;
+    const name=document.createElement("span");name.className="cr-name";
+    name.textContent=c.label||"cluster "+c.cluster_id;
+    const cnt=document.createElement("span");cnt.className="cr-count";
+    cnt.textContent=c.size;
+    top.appendChild(dot);top.appendChild(name);top.appendChild(cnt);
+    row.appendChild(top);
+
+    const tags=document.createElement("div");tags.className="cr-tags";
+    // Top countries (con emoji de bandera)
+    Object.entries(c.countries||{}).sort((a,b)=>b[1]-a[1]).slice(0,2).forEach(([cc])=>{
+      const t=document.createElement("span");t.className="ct";
+      const flag=FLAG_MAP[cc]||"";
+      t.textContent=(flag?flag+" ":"")+cc;
+      tags.appendChild(t);
+    });
+    // Top tech
+    Object.entries(c.tech_codes||{}).sort((a,b)=>b[1]-a[1]).slice(0,2).forEach(([code])=>{
+      const t=document.createElement("span");t.className="ct ct-tech";
+      t.textContent=(vTech[code]?.label||code).split("/")[0].trim();tags.appendChild(t);
+    });
+    // Funded badge
+    if(c.n_funded>0){
+      const t=document.createElement("span");t.className="ct";
+      t.style.cssText="color:#1f5c3a;border-color:rgba(31,92,58,.28);background:rgba(31,92,58,.06);";
+      t.textContent="⬤ "+c.n_funded+"R";tags.appendChild(t);
+    }
+    row.appendChild(tags);
+
+    row.addEventListener("click",()=>{
+      if(activeCluster===c.cluster_id){
+        activeCluster=null;row.classList.remove("active");
+        document.querySelectorAll(".cr").forEach(r=>r.classList.remove("dimmed","active"));
+      }else{
+        activeCluster=c.cluster_id;
+        document.querySelectorAll(".cr").forEach(r=>{
+          r.classList.remove("active");
+          r.classList.toggle("dimmed",parseInt(r.dataset.cid)!==c.cluster_id);
+        });
+        row.classList.add("active");row.classList.remove("dimmed");
+        zoomToCluster(c.cluster_id);
+      }
+      updateHighlights();
+      updateBreadcrumbs();
+      renderClusterDetail(c);
+    });
+    list.appendChild(row);
+  });
+}
+
+function renderClusterDetail(c){
+  const pane=document.getElementById("detail-pane");
+  if(!c){pane.innerHTML='<span style="color:var(--muted);font-size:.82rem;">Clic en startup o cluster.</span>';return}
+  const color=clCol(c.cluster_id);
+  const topTech=Object.entries(c.tech_codes||{}).sort((a,b)=>b[1]-a[1]).slice(0,5);
+  const topInd=Object.entries(c.industry_codes||{}).sort((a,b)=>b[1]-a[1]).slice(0,4);
+  const topCountries=Object.entries(c.countries||{}).sort((a,b)=>b[1]-a[1]).slice(0,4);
+  // Top companies by tier then name
+  const topCompanies=nodes
+    .filter(n=>n.d.cluster_id===c.cluster_id)
+    .sort((a,b)=>(b.d.valuation_tier||0)-(a.d.valuation_tier||0)||a.d.name.localeCompare(b.d.name))
+    .slice(0,6);
+  pane.innerHTML=`
+    <div class="dp-title" style="display:flex;align-items:center;gap:7px;">
+      <span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:${color};flex:0 0 auto"></span>
+      ${c.label||"cluster "+c.cluster_id}
+    </div>
+    <div class="dp-chips" style="margin-bottom:7px;">
+      <span class="dp-chip">${c.size} organizaciones</span>
+      ${c.n_featured>0?`<span class="dp-chip" style="font-weight:700;color:var(--ink);">${c.n_featured} destacada${c.n_featured>1?"s":""}</span>`:""}
+      ${c.n_funded>0?`<span class="dp-chip" style="color:#1f5c3a;">⬤ ${c.n_funded} con inversión</span>`:""}
+    </div>
+    ${topCountries.length?`<div style="font-size:.69rem;color:var(--muted);margin-bottom:3px;text-transform:uppercase;letter-spacing:.07em;">Países</div><div class="dp-chips" style="margin-bottom:6px;">${topCountries.map(([cc,n])=>`<span class="dp-chip" style="cursor:pointer;" data-country="${cc}">${(FLAG_MAP[cc]||"")} ${cc} <span style="opacity:.55">(${n})</span></span>`).join("")}</div>`:""}
+    ${topTech.length?`<div style="font-size:.69rem;color:var(--muted);margin-bottom:2px;text-transform:uppercase;letter-spacing:.07em;">Tecnologías</div><div class="dp-chips" style="margin-bottom:5px;">${topTech.map(([code,n])=>`<span class="dp-chip dp-chip-tech">${vTech[code]?.label||code} (${n})</span>`).join("")}</div>`:""}
+    ${topInd.length?`<div style="font-size:.69rem;color:var(--muted);margin-bottom:2px;text-transform:uppercase;letter-spacing:.07em;">Industrias</div><div class="dp-chips" style="margin-bottom:6px;">${topInd.map(([code,n])=>`<span class="dp-chip dp-chip-ind">${vInd[code]?.label||code} (${n})</span>`).join("")}</div>`:""}
+    <div style="font-size:.69rem;color:var(--muted);margin-bottom:3px;text-transform:uppercase;letter-spacing:.07em;">Organizaciones destacadas</div>
+    <div style="display:grid;gap:2px;">${topCompanies.map(n=>{
+      const t=n.d.valuation_tier;
+      return `<span style="font-size:.78rem;color:var(--ink);display:flex;justify-content:space-between;gap:8px;">
+        <span>${n.d.name}</span>
+        <span style="color:var(--muted);white-space:nowrap;">${t!=null?"Tier "+t:"—"}${n.d.n_rounds>0?" · "+n.d.n_rounds+"R":""}</span>
+      </span>`;
+    }).join("")}</div>
+  `;
+}
+
+// Delegación de clicks en el detail-pane (chips de país)
+document.getElementById("detail-pane").addEventListener("click",e=>{
+  const chip=e.target.closest("[data-country]");
+  if(!chip)return;
+  const country=chip.dataset.country;
+  if(!country)return;
+  activeCountries.has(country)?activeCountries.delete(country):activeCountries.add(country);
+  document.querySelectorAll("#country-chips .fc").forEach(c=>c.classList.toggle("active-country",activeCountries.has(c.dataset.country)));
+  updateHighlights();updateBreadcrumbs();
+});
+
+// ── Startup detail ─────────────────────────────────────────────────────────
+function selectStartup(s){
+  searchId=s.id;
+  document.getElementById("srch-in").value=s.name;
+  updateHighlights();updateBreadcrumbs();
+  const pane=document.getElementById("detail-pane");
+  const color=clCol(s.cluster_id);
+  const cl=clMap.get(s.cluster_id);
+  const tierLabel=s.valuation_tier!=null?`Tier ${s.valuation_tier}`:"Emergente";
+  const roundsStr=s.n_rounds>0?`${s.n_rounds} ronda${s.n_rounds>1?"s":""} de inversión documentada${s.n_rounds>1?"s":""}`:null;
+  pane.innerHTML=`
+    <div class="dp-title">${s.website?`<a class="dp-link" href="${s.website}" target="_blank" rel="noopener">${s.name} ↗</a>`:s.name}</div>
+    <div style="font-size:.82rem;color:var(--ink);line-height:1.45;margin:4px 0 8px;">${s.one_liner||(s.summary||"").slice(0,200)||""}</div>
+    <div class="dp-chips" style="margin-bottom:7px;">
+      <span class="dp-chip" style="font-weight:700;color:var(--ink);">${tierLabel}</span>
+      ${(s.countries||[]).map(c=>`<span class="dp-chip">${c}</span>`).join("")}
+      ${s.quality_band?`<span class="dp-chip">${s.quality_band==="high"?"Datos completos":"Datos parciales"}</span>`:""}
+      ${roundsStr?`<span class="dp-chip" style="color:#1f5c3a;border-color:rgba(31,92,58,.3);">⬤ ${roundsStr}</span>`:""}
+    </div>
+    <div style="display:flex;align-items:center;gap:5px;margin-bottom:6px;">
+      <span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:${color};flex:0 0 auto"></span>
+      <span style="font-size:.78rem;color:var(--ink);">${cl?.label||"—"}</span>
+    </div>
+    <div class="dp-chips">
+      ${(s.tech_codes||[]).map(c=>`<span class="dp-chip dp-chip-tech">${vTech[c]?.label||c}</span>`).join("")}
+      ${(s.industry_codes||[]).map(c=>`<span class="dp-chip dp-chip-ind">${vInd[c]?.label||c}</span>`).join("")}
+    </div>
+  `;
+}
+
+// ── Hover card ─────────────────────────────────────────────────────────────
+const hovCard=document.getElementById("hov-card");
+let hovTmr=null;
+function showHov(s,e){
+  clearTimeout(hovTmr);
+  const color=clCol(s.cluster_id);
+  const cl=clMap.get(s.cluster_id);
+  const tierLabel=s.valuation_tier!=null?`Tier ${s.valuation_tier}`:"Emergente";
+  const roundsLabel=s.n_rounds>0?`${s.n_rounds} ronda${s.n_rounds>1?"s":""} documentada${s.n_rounds>1?"s":""}`:null;
+  hovCard.innerHTML=`
+    ${s.one_liner?`<div class="hov-body" style="margin-bottom:6px;">${s.one_liner.slice(0,180)}</div>`:""}
+    <div class="hov-title" style="margin-bottom:4px;">${s.name}</div>
+    <div class="hov-chips">
+      <span class="hov-chip"><span class="hov-dot" style="background:${color}"></span>${cl?.label||"—"}</span>
+      ${(s.countries||[]).length?`<span class="hov-chip">${(s.countries).join(" · ")}</span>`:""}
+      <span class="hov-chip" style="font-weight:700;color:var(--ink)">${tierLabel}</span>
+      ${roundsLabel?`<span class="hov-chip" style="color:#1f5c3a">⬤ ${roundsLabel}</span>`:""}
+    </div>
+    <div class="hov-small">${[...(s.tech_codes||[]).map(c=>vTech[c]?.label||c),...(s.industry_codes||[]).map(c=>vInd[c]?.label||c)].slice(0,4).join(" · ")}</div>
+  `;
+  const rect=wrap.getBoundingClientRect();
+  let x=e.clientX-rect.left+14,y=e.clientY-rect.top-10;
+  if(x+310>W)x=e.clientX-rect.left-320;
+  if(y+180>H)y=e.clientY-rect.top-180;
+  hovCard.style.left=x+"px";hovCard.style.top=y+"px";
+  hovCard.classList.add("vis");
+}
+function hideHov(){hovTmr=setTimeout(()=>hovCard.classList.remove("vis"),90)}
+
+// ── Filter chips ──────────────────────────────────────────────────────────
+const FLAG_MAP={
+  'Argentina':'🇦🇷','Brazil':'🇧🇷','Brasil':'🇧🇷','Chile':'🇨🇱',
+  'Colombia':'🇨🇴','Mexico':'🇲🇽','México':'🇲🇽','Peru':'🇵🇪','Perú':'🇵🇪',
+  'Uruguay':'🇺🇾','Ecuador':'🇪🇨','Paraguay':'🇵🇾','Bolivia':'🇧🇴',
+  'Venezuela':'🇻🇪','Costa Rica':'🇨🇷','Panama':'🇵🇦','Guatemala':'🇬🇹',
+  'USA':'🇺🇸','US':'🇺🇸','UK':'🇬🇧','Spain':'🇪🇸','España':'🇪🇸'
+};
+
+function buildChips(){
+  const tc={},ic={},cc={};
+  startups.forEach(s=>{
+    (s.tech_codes||[]).forEach(c=>{tc[c]=(tc[c]||0)+1});
+    (s.industry_codes||[]).forEach(c=>{ic[c]=(ic[c]||0)+1});
+    (s.countries||[]).forEach(c=>{cc[c]=(cc[c]||0)+1});
+  });
+  const tWrap=document.getElementById("tech-chips");
+  const iWrap=document.getElementById("ind-chips");
+  const cWrap=document.getElementById("country-chips");
+  tWrap.innerHTML="";iWrap.innerHTML="";cWrap.innerHTML="";
+
+  // País — multi-select
+  Object.entries(cc).sort((a,b)=>b[1]-a[1]).forEach(([country,count])=>{
+    const btn=document.createElement("button");
+    btn.className="fc";btn.type="button";btn.dataset.country=country;
+    const flag=FLAG_MAP[country]||"";
+    btn.textContent=(flag?flag+" ":"")+country+" ("+count+")";
+    btn.addEventListener("click",()=>{
+      activeCountries.has(country)?activeCountries.delete(country):activeCountries.add(country);
+      cWrap.querySelectorAll(".fc").forEach(c=>c.classList.toggle("active-country",activeCountries.has(c.dataset.country)));
+      updateHighlights();updateBreadcrumbs();
+    });
+    cWrap.appendChild(btn);
+  });
+
+  // Tecnología — multi-select
+  Object.entries(tc).sort((a,b)=>b[1]-a[1]).forEach(([code,count])=>{
+    const btn=document.createElement("button");
+    btn.className="fc";btn.type="button";btn.dataset.code=code;
+    btn.textContent=(vTech[code]?.label||code).split("/")[0].trim()+" ("+count+")";
+    btn.addEventListener("click",()=>{
+      activeTechs.has(code)?activeTechs.delete(code):activeTechs.add(code);
+      tWrap.querySelectorAll(".fc").forEach(c=>c.classList.toggle("active-tech",activeTechs.has(c.dataset.code)));
+      updateHighlights();updateBreadcrumbs();
+    });
+    tWrap.appendChild(btn);
+  });
+
+  // Industria — multi-select
+  Object.entries(ic).sort((a,b)=>b[1]-a[1]).forEach(([code,count])=>{
+    const btn=document.createElement("button");
+    btn.className="fc";btn.type="button";btn.dataset.code=code;
+    btn.textContent=(vInd[code]?.label||code).split("(")[0].trim().split("&")[0].trim()+" ("+count+")";
+    btn.addEventListener("click",()=>{
+      activeInds.has(code)?activeInds.delete(code):activeInds.add(code);
+      iWrap.querySelectorAll(".fc").forEach(c=>c.classList.toggle("active-ind",activeInds.has(c.dataset.code)));
+      updateHighlights();updateBreadcrumbs();
+    });
+    iWrap.appendChild(btn);
+  });
+
+  // Botones "limpiar selección" por sección
+  document.getElementById("clr-country").addEventListener("click",()=>{
+    activeCountries.clear();
+    cWrap.querySelectorAll(".fc").forEach(c=>c.classList.remove("active-country"));
+    updateHighlights();updateBreadcrumbs();
+  });
+  document.getElementById("clr-tech").addEventListener("click",()=>{
+    activeTechs.clear();
+    tWrap.querySelectorAll(".fc").forEach(c=>c.classList.remove("active-tech"));
+    updateHighlights();updateBreadcrumbs();
+  });
+  document.getElementById("clr-ind").addEventListener("click",()=>{
+    activeInds.clear();
+    iWrap.querySelectorAll(".fc").forEach(c=>c.classList.remove("active-ind"));
+    updateHighlights();updateBreadcrumbs();
+  });
+}
+
+// ── Search ────────────────────────────────────────────────────────────────
+const srchIn=document.getElementById("srch-in");
+const srchRes=document.getElementById("srch-res");
+function norm(s){return String(s||"").normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase().replace(/[^a-z0-9]+/g," ").trim()}
+srchIn.addEventListener("input",()=>{
+  const q=norm(srchIn.value);
+  if(!q||q.length<2){srchRes.innerHTML="";srchRes.classList.remove("open");return}
+  const hits=startups.filter(s=>norm(s.name).includes(q)||norm(s.one_liner).includes(q)).slice(0,10);
+  srchRes.innerHTML="";
+  hits.forEach(s=>{
+    const btn=document.createElement("button");btn.className="srch-item";
+    btn.innerHTML=`<span>${s.name}</span><small>${s.country||""} · ${clMap.get(s.cluster_id)?.label||"—"}</small>`;
+    btn.addEventListener("click",()=>{
+      srchIn.value=s.name;srchRes.classList.remove("open");
+      searchId=s.id;updateHighlights();updateBreadcrumbs();selectStartup(s);
+      const n=nodeMap.get(s.id);
+      if(n){panX=W/2-n.cx*scale;panY=H/2-n.cy*scale;applyTf()}
+    });
+    srchRes.appendChild(btn);
+  });
+  srchRes.classList.toggle("open",hits.length>0);
+});
+function resetAll(){
+  activeCluster=null;activeTechs.clear();activeInds.clear();activeCountries.clear();searchId=null;
+  srchIn.value="";srchRes.classList.remove("open");
+  document.querySelectorAll(".fc").forEach(c=>c.classList.remove("active-tech","active-ind","active-country"));
+  document.querySelectorAll(".cr").forEach(r=>r.classList.remove("active","dimmed"));
+  const fp=document.getElementById("filter-panel");
+  fp.classList.remove("open");
+  document.getElementById("btn-filter").classList.remove("on","filter-active");
+  document.getElementById("detail-pane").innerHTML='<span style="color:var(--muted);font-size:.82rem;">Hacé clic en una startup o en un cluster para ver el detalle.</span>';
+  panX=0;panY=0;scale=1;applyTf();
+  if(viewMode!=="map"){
+    viewMode="map";
+    document.getElementById("btn-map").classList.add("active");
+    document.getElementById("btn-cluster").classList.remove("active");
+    document.getElementById("btn-graph").classList.remove("active");
+    startTrans("map");
+  }
+  updateHighlights();updateBreadcrumbs();
+}
+document.addEventListener("keydown",e=>{if(e.key==="Escape")resetAll()});
+document.addEventListener("click",e=>{if(!srchIn.contains(e.target))srchRes.classList.remove("open")});
+
+// ── Controls ──────────────────────────────────────────────────────────────
+document.getElementById("btn-map").addEventListener("click",()=>{
+  if(viewMode==="map")return;
+  viewMode="map";
+  document.getElementById("btn-map").classList.add("active");
+  document.getElementById("btn-cluster").classList.remove("active");
+  document.getElementById("btn-graph").classList.remove("active");
+  startTrans("map");
+});
+document.getElementById("btn-cluster").addEventListener("click",()=>{
+  if(viewMode==="cluster")return;
+  viewMode="cluster";
+  document.getElementById("btn-cluster").classList.add("active");
+  document.getElementById("btn-map").classList.remove("active");
+  document.getElementById("btn-graph").classList.remove("active");
+  startTrans("cluster");
+});
+document.getElementById("btn-graph").addEventListener("click",function(){
+  if(viewMode==="graph")return;
+  viewMode="graph";
+  this.classList.add("active");
+  document.getElementById("btn-map").classList.remove("active");
+  document.getElementById("btn-cluster").classList.remove("active");
+  if(!graphLayoutReady){
+    const btn=this;
+    btn.textContent="Calculando…";btn.disabled=true;
+    setTimeout(()=>{
+      runForceAtlas();
+      startTrans("graph");
+      btn.textContent="Red";btn.disabled=false;
+    },20);
+  }else{
+    startTrans("graph");
+  }
+});
+document.getElementById("btn-labels").addEventListener("click",function(){
+  showLabels=!showLabels;this.classList.toggle("on",showLabels);
+  nodes.forEach(n=>{if(n.lblEl)n.lblEl.style.display=(nFeatured(n.d)||showLabels)?"":"none"});
+  updateHighlights();
+});
+document.getElementById("btn-filter").addEventListener("click",function(){
+  const panel=document.getElementById("filter-panel");
+  panel.classList.toggle("open");
+  this.classList.toggle("on",panel.classList.contains("open"));
+});
+// Pan + zoom
+svgEl.addEventListener("mousedown",e=>{
+  if(e.target.tagName==="circle")return;
+  isPan=true;panSX=e.clientX;panSY=e.clientY;panSPX=panX;panSPY=panY;svgEl.style.cursor="grabbing";
+});
+window.addEventListener("mousemove",e=>{
+  if(!isPan)return;panX=panSPX+(e.clientX-panSX);panY=panSPY+(e.clientY-panSY);applyTf();
+});
+window.addEventListener("mouseup",()=>{isPan=false;svgEl.style.cursor=""});
+svgEl.addEventListener("wheel",e=>{
+  e.preventDefault();
+  const rect=svgEl.getBoundingClientRect();
+  const mx=e.clientX-rect.left,my=e.clientY-rect.top;
+  const f=e.deltaY<0?1.12:.89;
+  const ns=Math.max(.25,Math.min(8,scale*f));
+  panX=mx-(mx-panX)*(ns/scale);panY=my-(my-panY)*(ns/scale);scale=ns;applyTf();
+},{passive:false});
+document.getElementById("z-in").addEventListener("click",()=>{scale=Math.min(8,scale*1.2);applyTf()});
+document.getElementById("z-out").addEventListener("click",()=>{scale=Math.max(.25,scale/1.2);applyTf()});
+document.getElementById("z-reset").addEventListener("click",()=>{panX=0;panY=0;scale=1;applyTf()});
+
+// Resize — debounced para evitar recálculo por apertura de filtros/breadcrumbs
+let roLastW=0,roLastH=0,roTmr=null;
+const ro=new ResizeObserver(()=>{
+  clearTimeout(roTmr);
+  roTmr=setTimeout(()=>{
+    const nW=wrap.clientWidth||W0,nH=wrap.clientHeight||H0;
+    if(nW===roLastW&&nH===roLastH)return; // sin cambio real
+    // Preservar posición del viewport ajustando el pan proporcionalmente
+    if(roLastW&&roLastH){
+      panX=panX*nW/roLastW;
+      panY=panY*nH/roLastH;
+    }
+    roLastW=nW;roLastH=nH;
+    setDims();computeMapPos();relaxMapPos();computeClusterPos();computeGraphPos();
+    nodes.forEach(n=>{
+      n.cx=viewMode==="map"?n.mx:viewMode==="cluster"?n.kx:n.gxs;
+      n.cy=viewMode==="map"?n.my:viewMode==="cluster"?n.ky:n.gys;
+    });
+    updatePositions();updateGraphElements();updateHighlights();
+    applyTf();
+  },120);
+});
+ro.observe(wrap);
+
+// ── Init ──────────────────────────────────────────────────────────────────
+computeMapPos();
+relaxMapPos();
+computeClusterPos();
+computeGraphPos();
+buildGraphElements();
+gEdges.setAttribute("opacity","0");
+gInvNodes.setAttribute("opacity","0");
+gInvLabels.setAttribute("opacity","0");
+// Start in Map mode: set cx/cy from map positions
+nodes.forEach(n=>{n.cx=n.mx;n.cy=n.my});
+buildSVG();
+buildClusterList();
+buildChips();
+applyTf();
+loop();
+
+})();
+</script>
 </body>
 </html>
-

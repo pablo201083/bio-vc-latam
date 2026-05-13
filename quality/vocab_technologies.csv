@@ -1,0 +1,27 @@
+code,canonical_label,aliases,group
+ai_ml,AI / Machine Learning,"ai;ai-data;machine learning;computer vision;ml;deep learning;data science;big data;analytics;artificial intelligence;agronomic intelligence",digital
+iot,IoT & Sensors,"iot;sensors;smart ear tags;wearables;smart devices;edge computing",digital
+remote_sensing,Remote Sensing,"remote sensing;remote-sensing;satellite imagery;satellite;drones;uav;aerial imagery;crop monitoring",digital
+bioinformatics,Bioinformatics,"bioinformatics;genomics;sequencing;multi-omics;omics;ngs;dna sequencing;computational genomics",digital
+computational_bio,Computational Biology,"computational biology;in silico;simulation;molecular modeling;structural biology;molecular dynamics",digital
+robotics,Robotics & Automation,"robotics;automation;automated systems;robotic process",digital
+blockchain,Blockchain & Traceability,"blockchain;traceability;distributed ledger;web3",digital
+synbio,Synthetic Biology,"synthetic biology;synthetic-biology;synbio;gene editing;crispr;gene-editing;crispr-cas;recombinant proteins;recombinant;genetic engineering;cell programming",bio
+fermentation,Fermentation,"fermentation;precision fermentation;precision-fermentation;industrial fermentation;microbial fermentation;biofermentation;solid state fermentation",bio
+microbial,Microbial / Microbiome,"microorganisms;microbial;microbiome;bacteria;probiotics;yeast;fungi;mycelium;mycelia;microbial ecology",bio
+enzymatic,Enzymatic Engineering,"enzymes;enzymatic;biocatalysis;protein engineering;directed evolution;enzyme engineering",bio
+biomanufacturing,Biomanufacturing,"biomanufacturing;bioprocess;bioprocessing;bioreactor;upstream processing;downstream processing;cell culture;scale-up",bio
+therapeutics,Therapeutics,"therapeutics;therapeutic;drug discovery;drug development;antibody;antibodies;immunotherapy;cell therapy;gene therapy;tissue repair;regenerative medicine",bio
+diagnostics,Diagnostics,"diagnostics;diagnostic;in vitro diagnostics;molecular diagnostics;point of care;pcr;assay;assays;biosensor;biosensors",bio
+medical_devices,Medical Devices,"medical devices;medtech;wearable health;implant;implants;medical hardware",bio
+ag_inputs,Agricultural Inputs,"bioinputs;biostimulants;biofertilizers;biopesticides;biocontrol;crop protection;fertilizers;agrochemicals;seed treatment",bio
+plant_breeding,Plant Breeding & Genetics,"plant breeding;genetics;seed development;breeding;cultivar;trait;trait engineering",bio
+biomaterials,Biomaterials,"biomaterials;biopolymers;bioplastics;mycelium materials;biofilms;biocomposites;biobased materials;bio-based",materials
+nanotech,Nanotechnology,"nanotechnology;nano;nanomaterials;nanoparticles;nanostructures",materials
+green_chem,Green Chemistry,"green chemistry;sustainable chemistry;bioactive compounds;biorefinery;biorefining",materials
+carbon_tech,Carbon Tech,"carbon credits;carbon-mrv;carbon mrv;carbon capture;carbon sequestration;ccus;biochar;carbon monitoring",climate
+clean_energy,Clean Energy,"renewable energy;solar;wind;biogas;biofuels;biomass;hydrogen;energy storage;battery;lithium",climate
+water_tech,Water Technology,"water treatment;water purification;wastewater;desalination;water remediation;remediation",climate
+formulation,Formulation,"formulation;food formulation;ingredient formulation;controlled release",process
+vertical_farming,Vertical Farming / CEA,"vertical farming;controlled environment agriculture;hydroponics;aeroponics;indoor farming;greenhouse tech",process
+saas_marketplace,SaaS / Marketplace,"saas;b2b marketplace;marketplace;platform;digital platform;ag credit;rural finance;ag financing",digital
