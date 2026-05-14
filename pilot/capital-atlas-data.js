@@ -1,17 +1,17 @@
 window.CAPITAL_ATLAS_DATA = {
-  "generated_at": "2026-05-14T22:21:40",
+  "generated_at": "2026-05-14T22:39:56",
   "source": "pipeline:build-atlas (SQLite)",
   "summary": {
     "nodes_total": 542,
     "funds_total": 78,
     "startups_total": 456,
     "allocators_total": 8,
-    "edges_total": 425,
-    "investment_edges_total": 404,
+    "edges_total": 433,
+    "investment_edges_total": 412,
     "allocator_edges_total": 21,
     "include_startups_total": 372,
-    "source_backed_include_startups_total": 333,
-    "public_source_edges_total": 160
+    "source_backed_include_startups_total": 335,
+    "public_source_edges_total": 166
   },
   "nodes": [
     {
@@ -60,7 +60,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Argentine deeptech and science-based VC backing biotech agtech and health innovation ventures across Argentina and Latin America.",
       "country": "AR",
-      "degree": 30
+      "degree": 32
     },
     {
       "id": "amador",
@@ -288,7 +288,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Argentine VC fund investing in climate health and technology ventures in Argentina and Latin America. Backed by 1200 VC as part of its LATAM emerging fund portfolio.",
       "country": "AR",
-      "degree": 3
+      "degree": 4
     },
     {
       "id": "flia_duhau",
@@ -576,7 +576,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Brazilian impact VC and fund manager focused on the Amazon bioeconomy biodiversity-positive ventures and sustainable agriculture across Brazil and the Amazon basin. Co-manages Amazonia ReGenerate with IDB Lab.",
       "country": "BR",
-      "degree": 8
+      "degree": 10
     },
     {
       "id": "kwb",
@@ -900,7 +900,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Agrifoodtech impact VC focused on food agriculture and climate-resilient innovation in Latin America. Manages the Opportunity Fund backed by IDB Lab and GEF. Targets 30 agrifoodtech companies per fund.",
       "country": "US",
-      "degree": 23
+      "degree": 26
     },
     {
       "id": "third_sphere",
@@ -5018,7 +5018,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -5368,7 +5368,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
-      "degree": 1,
+      "degree": 2,
       "capital_status": "capital_mapped"
     },
     {
@@ -5793,7 +5793,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
-      "degree": 1,
+      "degree": 2,
       "capital_status": "capital_mapped"
     },
     {
@@ -5968,8 +5968,8 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
-      "degree": 0,
-      "capital_status": "no_capital_edge"
+      "degree": 1,
+      "capital_status": "capital_mapped"
     },
     {
       "id": "dymaxion_labs",
@@ -7068,8 +7068,8 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
-      "degree": 0,
-      "capital_status": "no_capital_edge"
+      "degree": 1,
+      "capital_status": "capital_mapped"
     },
     {
       "id": "leaf",
@@ -9443,7 +9443,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
-      "degree": 1,
+      "degree": 2,
       "capital_status": "capital_mapped"
     },
     {
@@ -10718,7 +10718,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
-      "degree": 1,
+      "degree": 2,
       "capital_status": "capital_mapped"
     },
     {
@@ -11318,7 +11318,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
-      "degree": 1,
+      "degree": 2,
       "capital_status": "capital_mapped"
     },
     {
@@ -18469,19 +18469,124 @@ window.CAPITAL_ATLAS_DATA = {
       "target": "microterra",
       "type": "portfolio_investment",
       "confidence": 0.9,
-      "source_url": "",
-      "evidence": "No public URL available.",
-      "audited": false,
-      "evidence_tier": "canonical_internal",
-      "capital_evidence_level": 0,
-      "capital_evidence_label": "missing_or_internal",
-      "capital_evidence_note": "No public URL available.",
+      "source_url": "https://zentynel.com/en/portfolio/",
+      "evidence": "Public source appears tied to a specific startup-fund relationship.",
+      "audited": true,
+      "evidence_tier": "public_url",
+      "capital_evidence_level": 3,
+      "capital_evidence_label": "startup_specific_public",
+      "capital_evidence_note": "Public source appears tied to a specific startup-fund relationship.",
       "weight": 2.24
     },
     {
       "id": "manual-barn_investimentos-agrolend-f79dbc",
       "source": "barn_investimentos",
       "target": "agrolend",
+      "type": "portfolio_investment",
+      "confidence": 0.9,
+      "source_url": "https://barninvest.com.br/en/blog/",
+      "evidence": "Public URL but not portfolio-specific.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 1,
+      "capital_evidence_label": "historical_graph",
+      "capital_evidence_note": "Public URL but not portfolio-specific.",
+      "weight": 2.24
+    },
+    {
+      "id": "manual-barn_investimentos-strider-br-d888e8",
+      "source": "barn_investimentos",
+      "target": "strider-br",
+      "type": "portfolio_investment",
+      "confidence": 0.9,
+      "source_url": "https://tracxn.com/d/venture-capital/barn-invest/",
+      "evidence": "Public URL but not portfolio-specific.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 1,
+      "capital_evidence_label": "historical_graph",
+      "capital_evidence_note": "Public URL but not portfolio-specific.",
+      "weight": 2.24
+    },
+    {
+      "id": "manual-the_yield_lab_latam-verqor-dd83a4",
+      "source": "the_yield_lab_latam",
+      "target": "verqor",
+      "type": "portfolio_investment",
+      "confidence": 0.9,
+      "source_url": "https://theyieldlablatam.com/portfolio/",
+      "evidence": "Public source appears tied to a specific startup-fund relationship.",
+      "audited": true,
+      "evidence_tier": "public_url",
+      "capital_evidence_level": 3,
+      "capital_evidence_label": "startup_specific_public",
+      "capital_evidence_note": "Public source appears tied to a specific startup-fund relationship.",
+      "weight": 2.24
+    },
+    {
+      "id": "manual-the_yield_lab_latam-blooms-66a937",
+      "source": "the_yield_lab_latam",
+      "target": "blooms",
+      "type": "portfolio_investment",
+      "confidence": 0.9,
+      "source_url": "https://theyieldlablatam.com/portfolio/",
+      "evidence": "Public source appears tied to a specific startup-fund relationship.",
+      "audited": true,
+      "evidence_tier": "public_url",
+      "capital_evidence_level": 3,
+      "capital_evidence_label": "startup_specific_public",
+      "capital_evidence_note": "Public source appears tied to a specific startup-fund relationship.",
+      "weight": 2.24
+    },
+    {
+      "id": "manual-the_yield_lab_latam-beeflow-e9cef3",
+      "source": "the_yield_lab_latam",
+      "target": "beeflow",
+      "type": "portfolio_investment",
+      "confidence": 0.9,
+      "source_url": "https://theyieldlablatam.com/portfolio/",
+      "evidence": "Public source appears tied to a specific startup-fund relationship.",
+      "audited": true,
+      "evidence_tier": "public_url",
+      "capital_evidence_level": 3,
+      "capital_evidence_label": "startup_specific_public",
+      "capital_evidence_note": "Public source appears tied to a specific startup-fund relationship.",
+      "weight": 2.24
+    },
+    {
+      "id": "manual-AIR Capital-laurus_ag_tech-92830b",
+      "source": "AIR Capital",
+      "target": "laurus_ag_tech",
+      "type": "portfolio_investment",
+      "confidence": 0.9,
+      "source_url": "https://www.linkedin.com/company/air-capital",
+      "evidence": "Public source appears tied to a specific startup-fund relationship.",
+      "audited": true,
+      "evidence_tier": "public_url",
+      "capital_evidence_level": 3,
+      "capital_evidence_label": "startup_specific_public",
+      "capital_evidence_note": "Public source appears tied to a specific startup-fund relationship.",
+      "weight": 2.24
+    },
+    {
+      "id": "manual-AIR Capital-stamm-ar-efc1df",
+      "source": "AIR Capital",
+      "target": "stamm-ar",
+      "type": "portfolio_investment",
+      "confidence": 0.9,
+      "source_url": "https://www.linkedin.com/company/air-capital",
+      "evidence": "Public source appears tied to a specific startup-fund relationship.",
+      "audited": true,
+      "evidence_tier": "public_url",
+      "capital_evidence_level": 3,
+      "capital_evidence_label": "startup_specific_public",
+      "capital_evidence_note": "Public source appears tied to a specific startup-fund relationship.",
+      "weight": 2.24
+    },
+    {
+      "id": "manual-endurance_28-dprotein-180587",
+      "source": "endurance_28",
+      "target": "dprotein",
       "type": "portfolio_investment",
       "confidence": 0.9,
       "source_url": "",
@@ -18494,9 +18599,24 @@ window.CAPITAL_ATLAS_DATA = {
       "weight": 2.24
     },
     {
-      "id": "manual-barn_investimentos-strider-br-d888e8",
-      "source": "barn_investimentos",
-      "target": "strider-br",
+      "id": "manual-kptl-ecotrace-br-a97ffa",
+      "source": "kptl",
+      "target": "ecotrace-br",
+      "type": "portfolio_investment",
+      "confidence": 0.9,
+      "source_url": "",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.24
+    },
+    {
+      "id": "manual-kptl-culttivo-eafac2",
+      "source": "kptl",
+      "target": "culttivo",
       "type": "portfolio_investment",
       "confidence": 0.9,
       "source_url": "",

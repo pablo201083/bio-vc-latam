@@ -1,14 +1,14 @@
 window.ECOSYSTEM_DIAGNOSTICS_DATA = {
-  "computed_at": "2026-05-14T22:21:35+00:00",
+  "computed_at": "2026-05-14T22:28:24+00:00",
   "stats": {
     "total_nodes": 643,
-    "total_edges": 455,
+    "total_edges": 463,
     "communities": 18,
-    "isolated_startups": 181,
-    "bridges": 9,
+    "isolated_startups": 179,
+    "bridges": 10,
     "bottlenecks_critical": 12,
-    "bottlenecks_high": 5,
-    "bottlenecks_moderate": 3,
+    "bottlenecks_high": 6,
+    "bottlenecks_moderate": 2,
     "whitespace_cells": 54,
     "uncovered_cells": 4
   },
@@ -19,8 +19,8 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
       "entity_id": "GridX",
       "community_id": 7,
       "coverage_pct": 100.0,
-      "deals": 93,
-      "community_size": 93,
+      "deals": 92,
+      "community_size": 92,
       "risk": "critical"
     },
     {
@@ -37,7 +37,7 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
       "fund_name": "SOSV_IndieBio",
       "fund_country": "US",
       "entity_id": "SOSV_IndieBio",
-      "community_id": 8,
+      "community_id": 9,
       "coverage_pct": 100.0,
       "deals": 13,
       "community_size": 13,
@@ -48,16 +48,6 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
       "fund_country": "AR",
       "entity_id": "aceleradora_litoral",
       "community_id": 2,
-      "coverage_pct": 100.0,
-      "deals": 7,
-      "community_size": 7,
-      "risk": "critical"
-    },
-    {
-      "fund_name": "KPTL",
-      "fund_country": "BR",
-      "entity_id": "kptl",
-      "community_id": 15,
       "coverage_pct": 100.0,
       "deals": 7,
       "community_size": 7,
@@ -87,20 +77,10 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
       "fund_name": "SP Ventures",
       "fund_country": "BR",
       "entity_id": "sp_ventures",
-      "community_id": 18,
-      "coverage_pct": 90.0,
-      "deals": 36,
-      "community_size": 40,
-      "risk": "critical"
-    },
-    {
-      "fund_name": "SF500",
-      "fund_country": "AR",
-      "entity_id": "SF500",
-      "community_id": 12,
-      "coverage_pct": 64.7,
-      "deals": 22,
-      "community_size": 34,
+      "community_id": 17,
+      "coverage_pct": 89.5,
+      "deals": 34,
+      "community_size": 38,
       "risk": "critical"
     },
     {
@@ -108,19 +88,9 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
       "fund_country": "US",
       "entity_id": "the_yield_lab_latam",
       "community_id": 4,
-      "coverage_pct": 64.5,
-      "deals": 20,
-      "community_size": 31,
-      "risk": "critical"
-    },
-    {
-      "fund_name": "AIR Capital",
-      "fund_country": "AR",
-      "entity_id": "AIR Capital",
-      "community_id": 6,
-      "coverage_pct": 53.3,
-      "deals": 24,
-      "community_size": 45,
+      "coverage_pct": 75.0,
+      "deals": 21,
+      "community_size": 28,
       "risk": "critical"
     },
     {
@@ -128,26 +98,66 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
       "fund_country": "AR",
       "entity_id": "kamay_ventures",
       "community_id": 3,
-      "coverage_pct": 51.4,
-      "deals": 18,
+      "coverage_pct": 73.9,
+      "deals": 17,
+      "community_size": 23,
+      "risk": "critical"
+    },
+    {
+      "fund_name": "SF500",
+      "fund_country": "AR",
+      "entity_id": "SF500",
+      "community_id": 13,
+      "coverage_pct": 62.9,
+      "deals": 22,
       "community_size": 35,
       "risk": "critical"
+    },
+    {
+      "fund_name": "AIR Capital",
+      "fund_country": "AR",
+      "entity_id": "AIR Capital",
+      "community_id": 6,
+      "coverage_pct": 55.3,
+      "deals": 26,
+      "community_size": 47,
+      "risk": "critical"
+    },
+    {
+      "fund_name": "Inventure",
+      "fund_country": "FI",
+      "entity_id": "inventure",
+      "community_id": 8,
+      "coverage_pct": 50.0,
+      "deals": 12,
+      "community_size": 24,
+      "risk": "critical"
+    },
+    {
+      "fund_name": "Antom",
+      "fund_country": "CR",
+      "entity_id": "Antom",
+      "community_id": 8,
+      "coverage_pct": 45.8,
+      "deals": 11,
+      "community_size": 24,
+      "risk": "high"
     },
     {
       "fund_name": "DraperCygnus",
       "fund_country": "AR",
       "entity_id": "DraperCygnus",
       "community_id": 6,
-      "coverage_pct": 44.4,
+      "coverage_pct": 42.6,
       "deals": 20,
-      "community_size": 45,
+      "community_size": 47,
       "risk": "high"
     },
     {
       "fund_name": "GridX",
       "fund_country": "AR",
       "entity_id": "GridX",
-      "community_id": 8,
+      "community_id": 9,
       "coverage_pct": 38.5,
       "deals": 5,
       "community_size": 13,
@@ -157,29 +167,9 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
       "fund_name": "Zentynel",
       "fund_country": "MX",
       "entity_id": "zentynel",
-      "community_id": 12,
-      "coverage_pct": 38.2,
+      "community_id": 13,
+      "coverage_pct": 37.1,
       "deals": 13,
-      "community_size": 34,
-      "risk": "high"
-    },
-    {
-      "fund_name": "Inventure",
-      "fund_country": "FI",
-      "entity_id": "inventure",
-      "community_id": 4,
-      "coverage_pct": 32.3,
-      "deals": 10,
-      "community_size": 31,
-      "risk": "high"
-    },
-    {
-      "fund_name": "Antom",
-      "fund_country": "CR",
-      "entity_id": "Antom",
-      "community_id": 3,
-      "coverage_pct": 31.4,
-      "deals": 11,
       "community_size": 35,
       "risk": "high"
     },
@@ -188,9 +178,29 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
       "fund_country": "CL",
       "entity_id": "savia_ventures",
       "community_id": 3,
-      "coverage_pct": 25.7,
+      "coverage_pct": 34.8,
+      "deals": 8,
+      "community_size": 23,
+      "risk": "high"
+    },
+    {
+      "fund_name": "KPTL",
+      "fund_country": "BR",
+      "entity_id": "kptl",
+      "community_id": 4,
+      "coverage_pct": 32.1,
       "deals": 9,
-      "community_size": 35,
+      "community_size": 28,
+      "risk": "high"
+    },
+    {
+      "fund_name": "GLOCAL",
+      "fund_country": "AR",
+      "entity_id": "glocal",
+      "community_id": 8,
+      "coverage_pct": 29.2,
+      "deals": 7,
+      "community_size": 24,
       "risk": "moderate"
     },
     {
@@ -198,19 +208,9 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
       "fund_country": "CR",
       "entity_id": "DragonesVP",
       "community_id": 6,
-      "coverage_pct": 22.2,
+      "coverage_pct": 21.3,
       "deals": 10,
-      "community_size": 45,
-      "risk": "moderate"
-    },
-    {
-      "fund_name": "GLOCAL",
-      "fund_country": "AR",
-      "entity_id": "glocal",
-      "community_id": 3,
-      "coverage_pct": 20.0,
-      "deals": 7,
-      "community_size": 35,
+      "community_size": 47,
       "risk": "moderate"
     }
   ],
@@ -218,14 +218,20 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
     {
       "fund_name": "GridX",
       "entity_id": "GridX",
-      "bridges": 20,
-      "communities_reached": 6
+      "bridges": 21,
+      "communities_reached": 5
     },
     {
       "fund_name": "AIR Capital",
       "entity_id": "AIR Capital",
       "bridges": 6,
-      "communities_reached": 4
+      "communities_reached": 5
+    },
+    {
+      "fund_name": "SP Ventures",
+      "entity_id": "sp_ventures",
+      "bridges": 4,
+      "communities_reached": 2
     },
     {
       "fund_name": "DraperCygnus",
@@ -246,22 +252,22 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
       "communities_reached": 3
     },
     {
-      "fund_name": "SF500",
-      "entity_id": "SF500",
-      "bridges": 2,
-      "communities_reached": 2
+      "fund_name": "The Yield Lab LATAM",
+      "entity_id": "the_yield_lab_latam",
+      "bridges": 3,
+      "communities_reached": 3
     },
     {
-      "fund_name": "Inventure",
-      "entity_id": "inventure",
+      "fund_name": "SF500",
+      "entity_id": "SF500",
       "bridges": 2,
       "communities_reached": 1
     },
     {
-      "fund_name": "SP Ventures",
-      "entity_id": "sp_ventures",
+      "fund_name": "Kamay Ventures",
+      "entity_id": "kamay_ventures",
       "bridges": 2,
-      "communities_reached": 2
+      "communities_reached": 1
     },
     {
       "fund_name": "Zentynel",
@@ -376,14 +382,6 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
       "is_uncovered": false
     },
     {
-      "macro_theme": "food biotech and novel ingredients",
-      "country_code": "AR",
-      "startup_count": 17,
-      "investor_count": 7,
-      "opportunity_score": 2.43,
-      "is_uncovered": false
-    },
-    {
       "macro_theme": "therapeutics and regenerative medicine",
       "country_code": "CL",
       "startup_count": 9,
@@ -405,6 +403,14 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
       "startup_count": 9,
       "investor_count": 4,
       "opportunity_score": 2.25,
+      "is_uncovered": false
+    },
+    {
+      "macro_theme": "food biotech and novel ingredients",
+      "country_code": "AR",
+      "startup_count": 17,
+      "investor_count": 8,
+      "opportunity_score": 2.12,
       "is_uncovered": false
     },
     {
@@ -544,14 +550,6 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
       "is_uncovered": false
     },
     {
-      "macro_theme": "ag biologicals and crop resilience",
-      "country_code": "US",
-      "startup_count": 2,
-      "investor_count": 2,
-      "opportunity_score": 1.0,
-      "is_uncovered": false
-    },
-    {
       "macro_theme": "therapeutics and regenerative medicine",
       "country_code": "CR",
       "startup_count": 1,
@@ -681,6 +679,14 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
     },
     {
       "macro_theme": "climate, energy and resource systems",
+      "country_code": "US",
+      "startup_count": 2,
+      "investor_count": 3,
+      "opportunity_score": 0.67,
+      "is_uncovered": false
+    },
+    {
+      "macro_theme": "ag biologicals and crop resilience",
       "country_code": "US",
       "startup_count": 2,
       "investor_count": 3,

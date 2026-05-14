@@ -157,7 +157,7 @@ def run(force: bool = False, db_path: pathlib.Path = DB_PATH) -> dict:
     print("  Vectorizando...")
     vectors = model.encode(
         texts,
-        batch_size=32,
+        batch_size=8,
         show_progress_bar=True,
         normalize_embeddings=True,  # importante para cosine
         convert_to_numpy=True,
