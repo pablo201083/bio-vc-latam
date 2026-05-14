@@ -1,17 +1,17 @@
 window.CAPITAL_ATLAS_DATA = {
-  "generated_at": "2026-05-14T11:35:41",
+  "generated_at": "2026-05-14T11:52:59",
   "source": "pipeline:build-atlas (SQLite)",
   "summary": {
     "nodes_total": 536,
-    "funds_total": 79,
+    "funds_total": 78,
     "startups_total": 450,
-    "allocators_total": 7,
-    "edges_total": 376,
-    "investment_edges_total": 355,
+    "allocators_total": 8,
+    "edges_total": 390,
+    "investment_edges_total": 369,
     "allocator_edges_total": 21,
     "include_startups_total": 367,
-    "source_backed_include_startups_total": 294,
-    "public_source_edges_total": 62
+    "source_backed_include_startups_total": 307,
+    "public_source_edges_total": 66
   },
   "nodes": [
     {
@@ -30,12 +30,12 @@ window.CAPITAL_ATLAS_DATA = {
       "id": "500_latam",
       "type": "fund",
       "label": "500 LatAm",
-      "investor_type": "investor",
-      "investor_subtype": "investor",
+      "investor_type": "vc",
+      "investor_subtype": "vc",
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
       "thesis": "",
-      "country": "",
+      "country": "US",
       "degree": 1
     },
     {
@@ -46,7 +46,7 @@ window.CAPITAL_ATLAS_DATA = {
       "investor_subtype": "accelerator",
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
-      "thesis": "Science-based startups in life sciences, biotech, health, agribusiness. Backed by UNL, PTLC, and Banco Credicoop.",
+      "thesis": "Argentine university-linked accelerator based in Santa Fe backing deeptech biotech agtech and health startups from universities in the Litoral and Paraná river corridor region.",
       "country": "AR",
       "degree": 7
     },
@@ -58,7 +58,7 @@ window.CAPITAL_ATLAS_DATA = {
       "investor_subtype": "vc",
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
-      "thesis": "Early-stage VC for disruptive deep tech. Biotech, space, agtech, climatetech, AI. Backs founders surfing the technology tsunami.",
+      "thesis": "Argentine deeptech and science-based VC backing biotech agtech and health innovation ventures across Argentina and Latin America.",
       "country": "AR",
       "degree": 30
     },
@@ -66,48 +66,48 @@ window.CAPITAL_ATLAS_DATA = {
       "id": "amador",
       "type": "fund",
       "label": "Amador",
-      "investor_type": "investor",
-      "investor_subtype": "investor",
+      "investor_type": "vc",
+      "investor_subtype": "vc",
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
       "thesis": "",
-      "country": "",
+      "country": "CR",
       "degree": 1
     },
     {
       "id": "Antom",
       "type": "fund",
       "label": "Antom",
-      "investor_type": "impact_fund",
-      "investor_subtype": "impact_fund",
+      "investor_type": "accelerator",
+      "investor_subtype": "accelerator",
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
-      "thesis": "Pre-seed and seed impact fund. Climatech, circular economy, regenerative agtech, sustainable food. Equity (SAFE) + revenue share model.",
-      "country": "AR",
+      "thesis": "Costa Rican accelerator and early-stage investor backing biotech agtech and innovation-driven startups across Central America and Latin America. Runs structured acceleration programs with equity.",
+      "country": "CR",
       "degree": 11
     },
     {
       "id": "araucaria_venture",
       "type": "fund",
       "label": "Araucaria Venture",
-      "investor_type": "investor",
-      "investor_subtype": "investor",
+      "investor_type": "vc",
+      "investor_subtype": "vc",
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
       "thesis": "",
-      "country": "",
+      "country": "CL",
       "degree": 0
     },
     {
       "id": "bago",
       "type": "fund",
       "label": "Bago",
-      "investor_type": "investor",
-      "investor_subtype": "investor",
+      "investor_type": "corporate_vc",
+      "investor_subtype": "corporate_vc",
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
       "thesis": "",
-      "country": "",
+      "country": "AR",
       "degree": 0
     },
     {
@@ -120,7 +120,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "",
-      "degree": 0
+      "degree": 1
     },
     {
       "id": "brinc",
@@ -131,7 +131,7 @@ window.CAPITAL_ATLAS_DATA = {
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
       "thesis": "",
-      "country": "",
+      "country": "HK",
       "degree": 0
     },
     {
@@ -143,18 +143,18 @@ window.CAPITAL_ATLAS_DATA = {
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
       "thesis": "",
-      "country": "",
+      "country": "US",
       "degree": 1
     },
     {
       "id": "chileglobal_ventures",
       "type": "fund",
       "label": "ChileGlobal Ventures",
-      "investor_type": "corporate_vc",
-      "investor_subtype": "corporate_vc",
+      "investor_type": "vc",
+      "investor_subtype": "vc",
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
-      "thesis": "Entrepreneurship, innovation and investment arm of Fundacion Chile. VC, angel, corporate venturing, and green/sustainability programs.",
+      "thesis": "Chilean VC backed by Endeavor Chile supporting high-growth startups in agtech biotech and innovation-driven sectors across Chile and Latin America. Active portfolio of 20+ companies.",
       "country": "CL",
       "degree": 2
     },
@@ -162,36 +162,36 @@ window.CAPITAL_ATLAS_DATA = {
       "id": "CITES",
       "type": "fund",
       "label": "CITES",
-      "investor_type": "company_builder",
-      "investor_subtype": "company_builder",
+      "investor_type": "vc",
+      "investor_subtype": "vc",
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
-      "thesis": "Company builder for science-based startups. Transforms complex R&D into viable businesses. Subsidiary of Sancor Seguros Group.",
-      "country": "AR",
+      "thesis": "Chilean deeptech VC backing biotech medtech and climate ventures with a scientific foundation. Active in university spinout investment across Latin America.",
+      "country": "CL",
       "degree": 21
     },
     {
       "id": "conservation_international",
-      "type": "fund",
+      "type": "allocator",
       "label": "conservation international",
-      "investor_type": "investor",
-      "investor_subtype": "investor",
+      "investor_type": "multilateral",
+      "investor_subtype": "multilateral",
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
       "thesis": "",
-      "country": "",
+      "country": "US",
       "degree": 0
     },
     {
       "id": "creative_ventures",
       "type": "fund",
       "label": "creative ventures",
-      "investor_type": "investor",
-      "investor_subtype": "investor",
+      "investor_type": "vc",
+      "investor_subtype": "vc",
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
       "thesis": "",
-      "country": "",
+      "country": "US",
       "degree": 0
     },
     {
@@ -202,9 +202,9 @@ window.CAPITAL_ATLAS_DATA = {
       "investor_subtype": "vc",
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
-      "thesis": "",
-      "country": "",
-      "degree": 0
+      "thesis": "Mexican VC focused on deeptech agtech healthtech and sustainability ventures in Mexico and Latin America. Backs science-based founders building the next generation of transformative companies.",
+      "country": "MX",
+      "degree": 2
     },
     {
       "id": "DragonesVP",
@@ -214,32 +214,32 @@ window.CAPITAL_ATLAS_DATA = {
       "investor_subtype": "vc",
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
-      "thesis": "Early-stage VC for LATAM and Israel. Combines Latin American creativity with Israeli deep tech expertise. 19 companies, 1 IPO (Satellogic).",
-      "country": "AR",
+      "thesis": "Central American and Latin American VC backing biotech agtech and science-based founders across Costa Rica and the broader LATAM region.",
+      "country": "CR",
       "degree": 10
     },
     {
       "id": "draper_associates",
       "type": "fund",
       "label": "Draper Associates",
-      "investor_type": "investor",
-      "investor_subtype": "investor",
+      "investor_type": "vc",
+      "investor_subtype": "vc",
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
       "thesis": "",
-      "country": "",
+      "country": "US",
       "degree": 0
     },
     {
       "id": "draper_university",
       "type": "fund",
       "label": "Draper University",
-      "investor_type": "investor",
-      "investor_subtype": "investor",
+      "investor_type": "accelerator",
+      "investor_subtype": "accelerator",
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
       "thesis": "",
-      "country": "",
+      "country": "US",
       "degree": 0
     },
     {
@@ -250,7 +250,7 @@ window.CAPITAL_ATLAS_DATA = {
       "investor_subtype": "vc",
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
-      "thesis": "Deep tech VC for Latino founders. Conviction over convention. Biomanufacturing, space, cloud, energy, AI. Offices in Buenos Aires, Miami, San Mateo.",
+      "thesis": "Latin American deeptech VC with Argentine roots investing in science-based biotech agtech and innovation-driven ventures. Part of the Draper Venture Network.",
       "country": "AR",
       "degree": 23
     },
@@ -274,7 +274,7 @@ window.CAPITAL_ATLAS_DATA = {
       "investor_subtype": "accelerator",
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
-      "thesis": "Agrifood tech accelerator and fund. EUR 30M fund focused on Europe/Spain/Italy but active in LATAM. Biotech, AI, IoT in food systems.",
+      "thesis": "Spanish agrifood accelerator and investor specializing in food systems innovation alternative proteins fermentation and sustainable foodtech. Strong programming in Latin America through Spanish-language cohorts.",
       "country": "ES",
       "degree": 2
     },
@@ -286,8 +286,8 @@ window.CAPITAL_ATLAS_DATA = {
       "investor_subtype": "vc",
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
-      "thesis": "Early-stage VC backing ambitious founders tackling climate, health, and digital challenges. Global, SF-based.",
-      "country": "US",
+      "thesis": "Argentine VC fund investing in climate health and technology ventures in Argentina and Latin America. Backed by 1200 VC as part of its LATAM emerging fund portfolio.",
+      "country": "AR",
       "degree": 3
     },
     {
@@ -323,7 +323,7 @@ window.CAPITAL_ATLAS_DATA = {
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
       "thesis": "",
-      "country": "",
+      "country": "US",
       "degree": 0
     },
     {
@@ -334,8 +334,8 @@ window.CAPITAL_ATLAS_DATA = {
       "investor_subtype": "multilateral",
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
-      "thesis": "",
-      "country": "",
+      "thesis": "The Global Environment Facility provides grants and concessional financing for biodiversity climate and ecosystem sustainability. Committed $6M to The Yield Lab LATAM Opportunity Fund for decarbonized food systems.",
+      "country": "US",
       "degree": 1
     },
     {
@@ -354,11 +354,11 @@ window.CAPITAL_ATLAS_DATA = {
       "id": "glocal",
       "type": "fund",
       "label": "GLOCAL",
-      "investor_type": "impact_fund",
-      "investor_subtype": "impact_fund",
+      "investor_type": "vc",
+      "investor_subtype": "vc",
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
-      "thesis": "B Corp acceleration fund. Triple bottom line approach. AgriFoodTech and ClimateTech. Combines acceleration services with direct investment + corporate matchmaking.",
+      "thesis": "Argentine VC investing in science-based deeptech biotech and agtech ventures in Latin America. Backs founders at seed and series-A with follow-on capacity.",
       "country": "AR",
       "degree": 8
     },
@@ -366,11 +366,11 @@ window.CAPITAL_ATLAS_DATA = {
       "id": "GridX",
       "type": "fund",
       "label": "GridX",
-      "investor_type": "accelerator_fund",
-      "investor_subtype": "accelerator_fund",
+      "investor_type": "company_builder",
+      "investor_subtype": "company_builder",
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
-      "thesis": "Life-centered fund for the bioeconomy revolution. Invests and accelerates science-based startups across agri-food, bio-industry, human health, and deep biotech.",
+      "thesis": "Deeptech company builder and early-stage fund based in Buenos Aires accelerating biotech climate health and science-based ventures across Latin America. Manages GridX II fund backed by IDB Lab.",
       "country": "AR",
       "degree": 113
     },
@@ -419,19 +419,19 @@ window.CAPITAL_ATLAS_DATA = {
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
       "thesis": "",
-      "country": "",
-      "degree": 0
+      "country": "NO",
+      "degree": 1
     },
     {
       "id": "idb_invest",
       "type": "allocator",
       "label": "IDB Invest",
-      "investor_type": "multilateral",
-      "investor_subtype": "multilateral",
+      "investor_type": "development_finance",
+      "investor_subtype": "development_finance",
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
-      "thesis": "",
-      "country": "",
+      "thesis": "IDB Invest is the private sector arm of the Inter-American Development Bank Group providing equity and debt financing to companies and VC funds in Latin America. Backed Valor Growth Americas III and Partners for Growth.",
+      "country": "US",
       "degree": 3
     },
     {
@@ -442,8 +442,8 @@ window.CAPITAL_ATLAS_DATA = {
       "investor_subtype": "multilateral",
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
-      "thesis": "",
-      "country": "",
+      "thesis": "IDB Lab is the innovation lab of the Inter-American Development Bank Group backing high-impact entrepreneurship in Latin America through direct investments LP commitments and ecosystem support. LP in GridX SP Ventures The Yield Lab Amador 500 LatAm Kaete and others.",
+      "country": "US",
       "degree": 9
     },
     {
@@ -455,7 +455,7 @@ window.CAPITAL_ATLAS_DATA = {
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
       "thesis": "",
-      "country": "",
+      "country": "US",
       "degree": 1
     },
     {
@@ -490,8 +490,8 @@ window.CAPITAL_ATLAS_DATA = {
       "investor_subtype": "vc",
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
-      "thesis": "AgTech and biotech focused fund from Argentina. Backed by agricultural producers and experts. Up to  tickets in early-stage agtech startups.",
-      "country": "AR",
+      "thesis": "Finnish early-stage VC investing in science and technology startups across the Nordics and selectively in emerging markets including Latin America. Backs biotech agtech and healthtech founders.",
+      "country": "FI",
       "degree": 12
     },
     {
@@ -510,24 +510,24 @@ window.CAPITAL_ATLAS_DATA = {
       "id": "jica",
       "type": "allocator",
       "label": "JICA",
-      "investor_type": "multilateral",
-      "investor_subtype": "multilateral",
+      "investor_type": "development_finance",
+      "investor_subtype": "development_finance",
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
-      "thesis": "",
-      "country": "",
+      "thesis": "Japan International Cooperation Agency supports agricultural development and innovation in Latin America through LP commitments to regional VC funds. Named LP partner in SP Ventures AgVentures III alongside IDB Lab.",
+      "country": "JP",
       "degree": 1
     },
     {
       "id": "kaete_investimentos",
       "type": "fund",
       "label": "Kaete Investimentos",
-      "investor_type": "investor",
-      "investor_subtype": "investor",
+      "investor_type": "impact_fund",
+      "investor_subtype": "impact_fund",
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
-      "thesis": "",
-      "country": "",
+      "thesis": "Brazilian impact investor managing the Amazonia ReGenerate Accelerator and Investment Trust. Focuses on Amazon bioeconomy biodiversity-positive ventures and regenerative agriculture. Backed by IDB Lab and IDB Natural Capital Lab.",
+      "country": "BR",
       "degree": 2
     },
     {
@@ -546,11 +546,11 @@ window.CAPITAL_ATLAS_DATA = {
       "id": "kamay_ventures",
       "type": "fund",
       "label": "Kamay Ventures",
-      "investor_type": "corporate_vc",
-      "investor_subtype": "corporate_vc",
+      "investor_type": "vc",
+      "investor_subtype": "vc",
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
-      "thesis": "Multi-corporate CVC backed by Coca-Cola LatAm, Arcor, Bimbo, DFC, BID LAB. Bridges corporations and entrepreneurs in food/ag value chains.",
+      "thesis": "Argentine VC focused on biotech agtech and deep-science ventures building sustainable solutions for agriculture food systems and human health across Latin America.",
       "country": "AR",
       "degree": 19
     },
@@ -570,13 +570,13 @@ window.CAPITAL_ATLAS_DATA = {
       "id": "kptl",
       "type": "fund",
       "label": "KPTL",
-      "investor_type": "vc",
-      "investor_subtype": "vc",
+      "investor_type": "impact_fund",
+      "investor_subtype": "impact_fund",
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
-      "thesis": "Deeptech, biotech, agtech, and govtech VC. 9 funds, 136+ investments. Result of merger between A5 Capital Partners and Inseed Investimentos.",
+      "thesis": "Brazilian impact VC and fund manager focused on the Amazon bioeconomy biodiversity-positive ventures and sustainable agriculture across Brazil and the Amazon basin. Co-manages Amazonia ReGenerate with IDB Lab.",
       "country": "BR",
-      "degree": 6
+      "degree": 8
     },
     {
       "id": "kwb",
@@ -611,7 +611,7 @@ window.CAPITAL_ATLAS_DATA = {
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
       "thesis": "",
-      "country": "",
+      "country": "US",
       "degree": 1
     },
     {
@@ -634,8 +634,8 @@ window.CAPITAL_ATLAS_DATA = {
       "investor_subtype": "vc",
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
-      "thesis": "",
-      "country": "",
+      "thesis": "US-based climate-focused VC backing companies that cut and capture carbon including biotech agtech synthetic biology and clean energy ventures globally. Has invested in LATAM climate-bio crossovers.",
+      "country": "US",
       "degree": 1
     },
     {
@@ -658,9 +658,9 @@ window.CAPITAL_ATLAS_DATA = {
       "investor_subtype": "vc",
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
-      "thesis": "LATAM tech ecosystem fund. Entrepreneurs supporting entrepreneurs. Pre-seed through Series A.",
+      "thesis": "Argentine VC investing in frontier-tech agtech health and consumer startups across Latin America. Focus on founders building platform businesses with network effects and scalable models.",
       "country": "AR",
-      "degree": 2
+      "degree": 4
     },
     {
       "id": "onevc",
@@ -671,7 +671,7 @@ window.CAPITAL_ATLAS_DATA = {
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
       "thesis": "",
-      "country": "",
+      "country": "BR",
       "degree": 1
     },
     {
@@ -683,7 +683,7 @@ window.CAPITAL_ATLAS_DATA = {
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
       "thesis": "",
-      "country": "",
+      "country": "US",
       "degree": 0
     },
     {
@@ -714,11 +714,11 @@ window.CAPITAL_ATLAS_DATA = {
       "id": "pampa_start",
       "type": "fund",
       "label": "Pampa Start",
-      "investor_type": "vc",
-      "investor_subtype": "vc",
+      "investor_type": "accelerator",
+      "investor_subtype": "accelerator",
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
-      "thesis": "AgriFoodTech VC born in Cordoba, Argentina. Early-stage. Focus on agrifood and biotech in the productive core of Argentina.",
+      "thesis": "Argentine accelerator focused on agtech biotech and rural technology startups primarily from Córdoba and the Pampas agricultural region. Pre-seed focused with university linkages.",
       "country": "AR",
       "degree": 5
     },
@@ -726,12 +726,12 @@ window.CAPITAL_ATLAS_DATA = {
       "id": "partners_for_growth",
       "type": "fund",
       "label": "Partners for Growth",
-      "investor_type": "investor",
-      "investor_subtype": "investor",
+      "investor_type": "vc",
+      "investor_subtype": "vc",
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
       "thesis": "",
-      "country": "",
+      "country": "US",
       "degree": 2
     },
     {
@@ -774,12 +774,12 @@ window.CAPITAL_ATLAS_DATA = {
       "id": "positive_ventures",
       "type": "fund",
       "label": "Positive Ventures",
-      "investor_type": "vc",
-      "investor_subtype": "vc",
+      "investor_type": "impact_fund",
+      "investor_subtype": "impact_fund",
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
       "thesis": "",
-      "country": "",
+      "country": "ES",
       "degree": 0
     },
     {
@@ -791,7 +791,7 @@ window.CAPITAL_ATLAS_DATA = {
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
       "thesis": "",
-      "country": "",
+      "country": "PE",
       "degree": 0
     },
     {
@@ -802,19 +802,19 @@ window.CAPITAL_ATLAS_DATA = {
       "investor_subtype": "vc",
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
-      "thesis": "Climate tech VC for Latin America. Energy, mobility, blue economy, agtech/foodtech, climate fintech, industry. 15+ portfolio companies.",
-      "country": "AR",
+      "thesis": "Chilean VC focused on impact-driven agtech biotech and climate innovation. Backs science-based founders in sustainable agriculture food systems and environmental tech across Chile and Latin America.",
+      "country": "CL",
       "degree": 5
     },
     {
       "id": "SF500",
       "type": "fund",
       "label": "SF500",
-      "investor_type": "company_builder",
-      "investor_subtype": "company_builder",
+      "investor_type": "accelerator",
+      "investor_subtype": "accelerator",
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
-      "thesis": "Converts scientific projects into biotech startups. Intensive 12-week company builder program. Goal: 500 companies from Santa Fe, Argentina.",
+      "thesis": "Argentine accelerator for science and deeptech startups from Latin American universities. Focuses on biotech agtech and health. Backed portfolio of 24+ LATAM science-based ventures.",
       "country": "AR",
       "degree": 24
     },
@@ -834,12 +834,12 @@ window.CAPITAL_ATLAS_DATA = {
       "id": "sosv",
       "type": "fund",
       "label": "SOSV",
-      "investor_type": "investor",
-      "investor_subtype": "investor",
+      "investor_type": "vc",
+      "investor_subtype": "vc",
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
       "thesis": "",
-      "country": "",
+      "country": "US",
       "degree": 0
     },
     {
@@ -850,7 +850,7 @@ window.CAPITAL_ATLAS_DATA = {
       "investor_subtype": "accelerator",
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
-      "thesis": "World leading biotech accelerator. Deep scientific insights for human and planetary health. Therapeutics, future of food, biomaterials, synbio, diagnostics. .5B AUM.",
+      "thesis": "IndieBio is SOSV's life sciences accelerator backing founders using biology to solve the greatest challenges in disease agriculture and climate. Program based in SF and NYC with global reach including LATAM.",
       "country": "US",
       "degree": 16
     },
@@ -862,20 +862,20 @@ window.CAPITAL_ATLAS_DATA = {
       "investor_subtype": "vc",
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
-      "thesis": "AgFoodTech and ClimateTech at the intersection of food security and climate resilience. 50+ portfolio companies, + deployed.",
+      "thesis": "Brazilian agtech and foodtech VC managing the AgVentures fund series focused on food agriculture and climate-resilient biotechnology in Latin America. Backed by IDB Lab IDB Invest and JICA.",
       "country": "BR",
-      "degree": 30
+      "degree": 33
     },
     {
       "id": "svb_financial_group",
       "type": "allocator",
       "label": "SVB Financial Group",
-      "investor_type": "investor",
-      "investor_subtype": "investor",
+      "investor_type": "vc",
+      "investor_subtype": "vc",
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
       "thesis": "",
-      "country": "",
+      "country": "US",
       "degree": 1
     },
     {
@@ -886,7 +886,7 @@ window.CAPITAL_ATLAS_DATA = {
       "investor_subtype": "accelerator",
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
-      "thesis": "Global life sciences scale-up lab based in LATAM. Transforms high-potential science-based startups into scalable international businesses.",
+      "thesis": "Argentine biotech and deeptech accelerator building the pipeline of science-based startups from universities and research institutes across Latin America. Focuses on pre-seed biotechnology translation.",
       "country": "AR",
       "degree": 35
     },
@@ -894,13 +894,13 @@ window.CAPITAL_ATLAS_DATA = {
       "id": "the_yield_lab_latam",
       "type": "fund",
       "label": "The Yield Lab LATAM",
-      "investor_type": "vc",
-      "investor_subtype": "vc",
+      "investor_type": "impact_fund",
+      "investor_subtype": "impact_fund",
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
-      "thesis": "Early-stage AgriFoodTech. Part of global Yield Lab Network. 70+ innovation categories across 12 agrifood sectors.",
-      "country": "AR",
-      "degree": 13
+      "thesis": "Agrifoodtech impact VC focused on food agriculture and climate-resilient innovation in Latin America. Manages the Opportunity Fund backed by IDB Lab and GEF. Targets 30 agrifoodtech companies per fund.",
+      "country": "US",
+      "degree": 15
     },
     {
       "id": "third_sphere",
@@ -911,7 +911,7 @@ window.CAPITAL_ATLAS_DATA = {
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
       "thesis": "",
-      "country": "",
+      "country": "US",
       "degree": 1
     },
     {
@@ -934,8 +934,8 @@ window.CAPITAL_ATLAS_DATA = {
       "investor_subtype": "vc",
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
-      "thesis": "",
-      "country": "",
+      "thesis": "US-Brazil VC focused on growth-stage technology companies across Brazil including climate AI fintech healthcare and agtech. Manages Valor Growth Americas III backed by IDB Invest ($30M).",
+      "country": "US",
       "degree": 1
     },
     {
@@ -978,13 +978,13 @@ window.CAPITAL_ATLAS_DATA = {
       "id": "vox_capital",
       "type": "fund",
       "label": "Vox Capital",
-      "investor_type": "vc",
-      "investor_subtype": "vc",
+      "investor_type": "impact_fund",
+      "investor_subtype": "impact_fund",
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
-      "thesis": "",
-      "country": "",
-      "degree": 0
+      "thesis": "Brazilian impact VC investing in technology-enabled solutions that serve low-income populations in Brazil across health education financial inclusion and climate sectors.",
+      "country": "BR",
+      "degree": 1
     },
     {
       "id": "vx_fund",
@@ -1006,8 +1006,8 @@ window.CAPITAL_ATLAS_DATA = {
       "investor_subtype": "vc",
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
-      "thesis": "First specialized biotech VC fund in LATAM. One Health approach: human, animal, environmental health. Combines capital with scientific depth.",
-      "country": "CL",
+      "thesis": "Mexican VC supporting deeptech biotech and health innovation startups across Mexico and Latin America. Focus on science-based founders building scalable solutions.",
+      "country": "MX",
       "degree": 10
     },
     {
@@ -4518,8 +4518,8 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
-      "degree": 0,
-      "capital_status": "no_capital_edge"
+      "degree": 2,
+      "capital_status": "capital_mapped"
     },
     {
       "id": "agrotoken",
@@ -5193,8 +5193,8 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
-      "degree": 0,
-      "capital_status": "no_capital_edge"
+      "degree": 1,
+      "capital_status": "capital_mapped"
     },
     {
       "id": "biometallum",
@@ -5568,8 +5568,8 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
-      "degree": 0,
-      "capital_status": "no_capital_edge"
+      "degree": 1,
+      "capital_status": "capital_mapped"
     },
     {
       "id": "caspr_biotech",
@@ -5993,8 +5993,8 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
-      "degree": 0,
-      "capital_status": "no_capital_edge"
+      "degree": 1,
+      "capital_status": "capital_mapped"
     },
     {
       "id": "einsted",
@@ -6293,8 +6293,8 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
-      "degree": 0,
-      "capital_status": "no_capital_edge"
+      "degree": 1,
+      "capital_status": "capital_mapped"
     },
     {
       "id": "galtec",
@@ -10168,8 +10168,8 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
-      "degree": 0,
-      "capital_status": "no_capital_edge"
+      "degree": 1,
+      "capital_status": "capital_mapped"
     },
     {
       "id": "giraffe-bio-ar",
@@ -10593,8 +10593,8 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
-      "degree": 0,
-      "capital_status": "no_capital_edge"
+      "degree": 1,
+      "capital_status": "capital_mapped"
     },
     {
       "id": "geneprodx-mx",
@@ -10693,8 +10693,8 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
-      "degree": 0,
-      "capital_status": "no_capital_edge"
+      "degree": 1,
+      "capital_status": "capital_mapped"
     },
     {
       "id": "stamm-ar",
@@ -10793,8 +10793,8 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
-      "degree": 0,
-      "capital_status": "no_capital_edge"
+      "degree": 1,
+      "capital_status": "capital_mapped"
     },
     {
       "id": "hilab-br",
@@ -10818,8 +10818,8 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
-      "degree": 0,
-      "capital_status": "no_capital_edge"
+      "degree": 1,
+      "capital_status": "capital_mapped"
     },
     {
       "id": "neoprospecta-br",
@@ -11218,8 +11218,8 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
-      "degree": 0,
-      "capital_status": "no_capital_edge"
+      "degree": 1,
+      "capital_status": "capital_mapped"
     },
     {
       "id": "solena-mx",
@@ -11318,8 +11318,8 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
-      "degree": 0,
-      "capital_status": "no_capital_edge"
+      "degree": 1,
+      "capital_status": "capital_mapped"
     },
     {
       "id": "levita-magnetics-cl",
@@ -11743,8 +11743,8 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
-      "degree": 0,
-      "capital_status": "no_capital_edge"
+      "degree": 1,
+      "capital_status": "capital_mapped"
     },
     {
       "id": "naiad-drug-design-br",
@@ -17569,13 +17569,13 @@ window.CAPITAL_ATLAS_DATA = {
       "target": "rumina",
       "type": "portfolio_investment",
       "confidence": 0.9,
-      "source_url": "",
-      "evidence": "No public URL available.",
-      "audited": false,
-      "evidence_tier": "canonical_internal",
-      "capital_evidence_level": 0,
-      "capital_evidence_label": "missing_or_internal",
-      "capital_evidence_note": "No public URL available.",
+      "source_url": "https://www.barn.ag/portfolio",
+      "evidence": "Public source appears tied to a specific startup-fund relationship.",
+      "audited": true,
+      "evidence_tier": "public_url",
+      "capital_evidence_level": 3,
+      "capital_evidence_label": "startup_specific_public",
+      "capital_evidence_note": "Public source appears tied to a specific startup-fund relationship.",
       "weight": 2.24
     },
     {
@@ -17584,19 +17584,49 @@ window.CAPITAL_ATLAS_DATA = {
       "target": "agrotoken",
       "type": "portfolio_investment",
       "confidence": 0.9,
-      "source_url": "",
-      "evidence": "No public URL available.",
-      "audited": false,
-      "evidence_tier": "canonical_internal",
-      "capital_evidence_level": 0,
-      "capital_evidence_label": "missing_or_internal",
-      "capital_evidence_note": "No public URL available.",
+      "source_url": "https://www.barn.ag/portfolio",
+      "evidence": "Public source appears tied to a specific startup-fund relationship.",
+      "audited": true,
+      "evidence_tier": "public_url",
+      "capital_evidence_level": 3,
+      "capital_evidence_label": "startup_specific_public",
+      "capital_evidence_note": "Public source appears tied to a specific startup-fund relationship.",
       "weight": 2.24
     },
     {
       "id": "manual-fen_ventures-andes-biotechnologies-cl-34189c",
       "source": "fen_ventures",
       "target": "andes-biotechnologies-cl",
+      "type": "portfolio_investment",
+      "confidence": 0.9,
+      "source_url": "https://fenventures.com/portfolio",
+      "evidence": "Public source appears tied to a specific startup-fund relationship.",
+      "audited": true,
+      "evidence_tier": "public_url",
+      "capital_evidence_level": 3,
+      "capital_evidence_label": "startup_specific_public",
+      "capital_evidence_note": "Public source appears tied to a specific startup-fund relationship.",
+      "weight": 2.24
+    },
+    {
+      "id": "manual-monashees-strider-br-b6161a",
+      "source": "monashees",
+      "target": "strider-br",
+      "type": "portfolio_investment",
+      "confidence": 0.9,
+      "source_url": "https://www.monashees.com.br/en/portfolio",
+      "evidence": "Public source appears tied to a specific startup-fund relationship.",
+      "audited": true,
+      "evidence_tier": "public_url",
+      "capital_evidence_level": 3,
+      "capital_evidence_label": "startup_specific_public",
+      "capital_evidence_note": "Public source appears tied to a specific startup-fund relationship.",
+      "weight": 2.24
+    },
+    {
+      "id": "manual-sp_ventures-agrosmart-910480",
+      "source": "sp_ventures",
+      "target": "agrosmart",
       "type": "portfolio_investment",
       "confidence": 0.9,
       "source_url": "",
@@ -17609,9 +17639,189 @@ window.CAPITAL_ATLAS_DATA = {
       "weight": 2.24
     },
     {
-      "id": "manual-monashees-strider-br-b6161a",
-      "source": "monashees",
-      "target": "strider-br",
+      "id": "manual-sp_ventures-cowmed-br-3f6bdd",
+      "source": "sp_ventures",
+      "target": "cowmed-br",
+      "type": "portfolio_investment",
+      "confidence": 0.9,
+      "source_url": "",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.24
+    },
+    {
+      "id": "manual-sp_ventures-agronow-br-61f2f3",
+      "source": "sp_ventures",
+      "target": "agronow-br",
+      "type": "portfolio_investment",
+      "confidence": 0.9,
+      "source_url": "",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.24
+    },
+    {
+      "id": "manual-the_yield_lab_latam-agrosmart-7fdc21",
+      "source": "the_yield_lab_latam",
+      "target": "agrosmart",
+      "type": "portfolio_investment",
+      "confidence": 0.9,
+      "source_url": "",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.24
+    },
+    {
+      "id": "manual-the_yield_lab_latam-ecotrace-br-cef6d1",
+      "source": "the_yield_lab_latam",
+      "target": "ecotrace-br",
+      "type": "portfolio_investment",
+      "confidence": 0.9,
+      "source_url": "",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.24
+    },
+    {
+      "id": "manual-kptl-biomas-844d82",
+      "source": "kptl",
+      "target": "biomas",
+      "type": "portfolio_investment",
+      "confidence": 0.9,
+      "source_url": "",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.24
+    },
+    {
+      "id": "manual-kptl-carbonext-defb7e",
+      "source": "kptl",
+      "target": "carbonext",
+      "type": "portfolio_investment",
+      "confidence": 0.9,
+      "source_url": "",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.24
+    },
+    {
+      "id": "manual-blue_horizon-future_cow-4128be",
+      "source": "blue_horizon",
+      "target": "future_cow",
+      "type": "portfolio_investment",
+      "confidence": 0.9,
+      "source_url": "",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.24
+    },
+    {
+      "id": "manual-dalus_capital-unima-mx-325db0",
+      "source": "dalus_capital",
+      "target": "unima-mx",
+      "type": "portfolio_investment",
+      "confidence": 0.9,
+      "source_url": "",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.24
+    },
+    {
+      "id": "manual-dalus_capital-kura-biotec-mx-d3701e",
+      "source": "dalus_capital",
+      "target": "kura-biotec-mx",
+      "type": "portfolio_investment",
+      "confidence": 0.9,
+      "source_url": "",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.24
+    },
+    {
+      "id": "manual-hatch-atarraya-mx-cc2761",
+      "source": "hatch",
+      "target": "atarraya-mx",
+      "type": "portfolio_investment",
+      "confidence": 0.9,
+      "source_url": "",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.24
+    },
+    {
+      "id": "manual-vox_capital-hilab-br-58dfb7",
+      "source": "vox_capital",
+      "target": "hilab-br",
+      "type": "portfolio_investment",
+      "confidence": 0.9,
+      "source_url": "",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.24
+    },
+    {
+      "id": "manual-newtopia_vc-calice-ai-ar-f7c76c",
+      "source": "newtopia_vc",
+      "target": "calice-ai-ar",
+      "type": "portfolio_investment",
+      "confidence": 0.9,
+      "source_url": "",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.24
+    },
+    {
+      "id": "manual-newtopia_vc-dymaxion_labs-f5a867",
+      "source": "newtopia_vc",
+      "target": "dymaxion_labs",
       "type": "portfolio_investment",
       "confidence": 0.9,
       "source_url": "",

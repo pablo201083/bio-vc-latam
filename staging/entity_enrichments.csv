@@ -1,1 +1,55 @@
 entity_id,entity_name,table_name,field_name,new_value,source_url,confidence,notes
+sosv,SOSV,investors,investor_type,vc,https://sosv.com,0.95,SOSV is a global multi-stage VC and parent of IndieBio; type corrected from generic investor
+500_latam,500 LatAm,investors,investor_type,vc,https://500.co/emerging-fund-managers,0.95,500 LatAm is a seed VC fund; type corrected from generic investor
+500_latam,500 LatAm,entities,country_code,US,https://500.co/emerging-fund-managers,0.9,500 LatAm is managed from US though invests in LATAM
+amador,Amador,investors,investor_type,vc,https://bidlab.org/en/news/idb-lab-invests-amador-seed-fund-ii-boost-emerging-venture-capital-ecosystems-latin-america,0.95,Amador manages Seed Fund II per IDB Lab announcement; type corrected
+amador,Amador,entities,country_code,CR,https://bidlab.org/en/news/idb-lab-invests-amador-seed-fund-ii-boost-emerging-venture-capital-ecosystems-latin-america,0.9,IDB Lab announcement notes Amador focuses on Central America; headquarters CR
+araucaria_venture,Araucaria Venture,investors,investor_type,vc,https://www.linkedin.com/company/araucaria-venture,0.85,Araucaria Venture is a LATAM VC firm; type corrected
+araucaria_venture,Araucaria Venture,entities,country_code,CL,https://www.linkedin.com/company/araucaria-venture,0.85,Araucaria Venture appears Chile-based per LinkedIn
+bago,Bago,investors,investor_type,corporate_vc,https://www.bago.com.ar,0.8,Bago is an Argentine pharmaceutical and agro corporate; type corrected to corporate_vc
+bago,Bago,entities,country_code,AR,https://www.bago.com.ar,0.9,Bago is headquartered in Buenos Aires Argentina
+brinc,Brinc,investors,investor_type,accelerator,https://brinc.io,0.95,Brinc is a global accelerator platform; type corrected
+brinc,Brinc,entities,country_code,HK,https://brinc.io,0.9,Brinc is headquartered in Hong Kong with global programs
+cantos,Cantos,investors,investor_type,vc,https://www.twelvehundred.vc/investments,0.9,Cantos confirmed as frontier science VC per 1200 VC portfolio; type corrected
+cantos,Cantos,entities,country_code,US,https://www.twelvehundred.vc/investments,0.9,Cantos is a US-based early-stage VC per 1200 VC portfolio description
+conservation_international,conservation international,investors,investor_type,multilateral,https://www.conservation.org,0.95,Conservation International is an environmental NGO/multilateral; type corrected
+conservation_international,conservation international,entities,country_code,US,https://www.conservation.org,0.95,Conservation International is headquartered in Arlington VA USA
+creative_ventures,creative ventures,investors,investor_type,vc,https://www.linkedin.com/company/creative-ventures,0.8,Creative Ventures is an early-stage VC; type corrected
+creative_ventures,creative ventures,entities,country_code,US,https://www.linkedin.com/company/creative-ventures,0.8,Creative Ventures appears US-based per LinkedIn
+draper_associates,Draper Associates,investors,investor_type,vc,https://www.drapervc.com,0.95,Draper Associates is Tim Draper seed VC firm; type corrected
+draper_associates,Draper Associates,entities,country_code,US,https://www.drapervc.com,0.95,Draper Associates is based in San Mateo California USA
+draper_university,Draper University,investors,investor_type,accelerator,https://www.draperuniversity.com,0.9,Draper University is an entrepreneurship education and accelerator program; type corrected
+draper_university,Draper University,entities,country_code,US,https://www.draperuniversity.com,0.9,Draper University is located in San Mateo California USA
+future_ventures,Future Ventures,investors,investor_type,vc,https://future.ventures,0.9,Future Ventures is a deep science VC focused on AI and frontier tech; type corrected
+future_ventures,Future Ventures,entities,country_code,US,https://future.ventures,0.9,Future Ventures is a US-based deep science VC
+hatch,Hatch,investors,investor_type,accelerator,https://hatch.no,0.9,Hatch is a Norwegian aquaculture and seafood tech accelerator; type corrected
+hatch,Hatch,entities,country_code,NO,https://hatch.no,0.95,Hatch is headquartered in Bergen Norway; focuses on aquaculture globally
+idb_lab,IDB Lab,investors,investor_type,multilateral,https://bidlab.org,0.99,IDB Lab is the innovation lab of the Inter-American Development Bank Group; type corrected
+idb_lab,IDB Lab,entities,country_code,US,https://bidlab.org,0.99,IDB Lab is part of the IDB Group headquartered in Washington DC
+idb_invest,IDB Invest,investors,investor_type,development_finance,https://idbinvest.org,0.99,IDB Invest is the private sector arm of the IDB Group; type corrected
+idb_invest,IDB Invest,entities,country_code,US,https://idbinvest.org,0.99,IDB Invest is headquartered in Washington DC USA
+idb_natural_capital_lab,IDB Natural Capital Lab,investors,investor_type,multilateral,https://www.iadb.org/en/project/RG-Q0093,0.95,IDB Natural Capital Lab is an IDB Group platform for natural capital; type corrected
+idb_natural_capital_lab,IDB Natural Capital Lab,entities,country_code,US,https://www.iadb.org,0.95,IDB Natural Capital Lab is part of the IDB Group headquartered in Washington DC
+gef,Global Environment Facility,investors,investor_type,multilateral,https://www.thegef.org,0.99,GEF is a multilateral environmental finance mechanism; type corrected
+gef,Global Environment Facility,entities,country_code,US,https://www.thegef.org,0.99,GEF is headquartered in Washington DC USA
+jica,JICA,investors,investor_type,development_finance,https://www.jica.go.jp,0.99,JICA is Japan development finance agency; type corrected
+jica,JICA,entities,country_code,JP,https://www.jica.go.jp,0.99,JICA is headquartered in Tokyo Japan
+lavca,LAVCA,investors,investor_type,association,https://lavca.org,0.99,LAVCA is the Association for Private Capital Investment in Latin America; type confirmed
+lavca,LAVCA,entities,country_code,US,https://lavca.org,0.99,LAVCA is headquartered in New York USA
+lowercarbon_capital,Lowercarbon Capital,entities,country_code,US,https://lowercarbon.com,0.99,Lowercarbon Capital is headquartered in San Francisco California
+onevc,OneVC,entities,country_code,BR,https://www.twelvehundred.vc/investments,0.9,OneVC is a Brazilian-focused VC per 1200 VC portfolio description
+ospraie,Ospraie,investors,investor_type,vc,https://www.ospraie.com,0.9,Ospraie is a US agtech VC; type corrected
+ospraie,Ospraie,entities,country_code,US,https://www.ospraie.com,0.9,Ospraie Management is headquartered in New York USA
+partners_for_growth,Partners for Growth,investors,investor_type,vc,https://idbinvest.org/en/projects/latin-america-venture-debt-growth-fund,0.9,Partners for Growth provides venture debt; type corrected
+partners_for_growth,Partners for Growth,entities,country_code,US,https://idbinvest.org/en/projects/latin-america-venture-debt-growth-fund,0.85,Partners for Growth is a US-based venture lending firm
+positive_ventures,Positive Ventures,investors,investor_type,impact_fund,https://www.linkedin.com/company/positive-ventures,0.8,Positive Ventures is an impact-focused fund; type corrected
+positive_ventures,Positive Ventures,entities,country_code,ES,https://www.linkedin.com/company/positive-ventures,0.8,Positive Ventures appears Spain-based per LinkedIn
+salkantay_ventures,Salkantay Ventures,investors,investor_type,vc,https://www.linkedin.com/company/salkantay-ventures,0.85,Salkantay Ventures is a Peruvian/LATAM VC; type corrected
+salkantay_ventures,Salkantay Ventures,entities,country_code,PE,https://www.linkedin.com/company/salkantay-ventures,0.85,Salkantay is a peak in Peru; appears Peru-based VC
+svb_financial_group,SVB Financial Group,investors,investor_type,vc,https://idbinvest.org/en/projects/latin-america-venture-debt-growth-fund,0.9,SVB Financial was a leading venture lender; co-founder of LATAM venture debt fund
+svb_financial_group,SVB Financial Group,entities,country_code,US,https://idbinvest.org/en/projects/latin-america-venture-debt-growth-fund,0.99,SVB Financial Group was headquartered in Santa Clara California
+third_sphere,Third Sphere,investors,investor_type,vc,https://www.twelvehundred.vc/investments,0.9,Third Sphere confirmed as ClimateTech VC per 1200 VC portfolio; type corrected
+third_sphere,Third Sphere,entities,country_code,US,https://www.twelvehundred.vc/investments,0.9,Third Sphere is a US-based climate tech VC per 1200 VC description
+valor_capital_group,Valor Capital Group,entities,country_code,US,https://www.idbinvest.org/en/projects/valor-americas-growth-fund,0.99,Valor Capital Group is a US-Brazil VC headquartered in New York per IDB Invest
+vox_capital,Vox Capital,entities,country_code,BR,https://voxcapital.com.br,0.99,Vox Capital is headquartered in Sao Paulo Brazil
+sosv,SOSV,entities,country_code,US,https://sosv.com,0.99,SOSV is headquartered in New York USA
