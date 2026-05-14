@@ -110,6 +110,64 @@
       gridx: "Out of domain",
       antom: "Outside thesis",
       position: { x: 0.1, y: 0.9 }
+    },
+
+    // ── v3 Editorial Taxonomy (7 categories) ─────────────────────────────────
+    "Therapeutics": {
+      label: "Therapeutics",
+      color: "#7033BC",
+      description: "Drugs, biologics, cell & gene therapies, animal health medicines, wound care.",
+      gridx: "Human health",
+      antom: "Biocentric / therapeutic",
+      position: { x: 0.22, y: 0.24 }
+    },
+    "Diagnostics & Health Access": {
+      label: "Diagnostics & Health Access",
+      color: "#1A6DB5",
+      description: "Diagnostic devices, lab-on-chip, digital health, point-of-care testing.",
+      gridx: "Human health",
+      antom: "Clinical intervention / diagnostics",
+      position: { x: 0.76, y: 0.18 }
+    },
+    "Food Systems & Alt Proteins": {
+      label: "Food Systems & Alt Proteins",
+      color: "#C25A2A",
+      description: "Alternative proteins, precision fermentation for food, aquaculture biotech, functional foods.",
+      gridx: "Agri-food-land use / Bio-industry",
+      antom: "Material deployment / food",
+      position: { x: 0.44, y: 0.62 }
+    },
+    "Bioinputs & Crop Resilience": {
+      label: "Bioinputs & Crop Resilience",
+      color: "#2A7A42",
+      description: "Biofertilizers, biocontrol, biopesticides, CRISPR crops, precision breeding, seed treatments.",
+      gridx: "Agri-food-land use",
+      antom: "Deployment / intervention",
+      position: { x: 0.68, y: 0.38 }
+    },
+    "Nature & Ecosystem Tech": {
+      label: "Nature & Ecosystem Tech",
+      color: "#127A6E",
+      description: "Ecosystem monitoring, biodiversity finance, carbon/nature markets, agri-monitoring platforms.",
+      gridx: "Climate systems / Agri-food-land use",
+      antom: "MRV / coordination / deployment",
+      position: { x: 0.82, y: 0.56 }
+    },
+    "Farm Intelligence": {
+      label: "Farm Intelligence",
+      color: "#2E4E8C",
+      description: "Precision agriculture platforms, agrifintech, IoT sensors, agronomic decision tools.",
+      gridx: "Agri-food-land use",
+      antom: "Connection / intelligence",
+      position: { x: 0.28, y: 0.74 }
+    },
+    "Biomaterials & Circular Economy": {
+      label: "Biomaterials & Circular Economy",
+      color: "#8B6D14",
+      description: "Bioplastics, industrial enzymes, green chemistry, e-fuels, mycelium materials, biobased chemicals.",
+      gridx: "Bio-industry / Deep-biotech",
+      antom: "Material deployment / circular",
+      position: { x: 0.56, y: 0.46 }
     }
   };
 

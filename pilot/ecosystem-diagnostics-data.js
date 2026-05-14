@@ -1,63 +1,63 @@
 window.ECOSYSTEM_DIAGNOSTICS_DATA = {
-  "computed_at": "2026-05-10T21:36:08+00:00",
+  "computed_at": "2026-05-14T11:22:13+00:00",
   "stats": {
-    "total_nodes": 672,
-    "total_edges": 528,
-    "communities": 12,
-    "isolated_startups": 250,
+    "total_nodes": 637,
+    "total_edges": 405,
+    "communities": 18,
+    "isolated_startups": 215,
     "bridges": 9,
     "bottlenecks_critical": 14,
-    "bottlenecks_high": 3,
-    "bottlenecks_moderate": 3,
-    "whitespace_cells": 75,
-    "uncovered_cells": 30
+    "bottlenecks_high": 4,
+    "bottlenecks_moderate": 2,
+    "whitespace_cells": 54,
+    "uncovered_cells": 5
   },
   "bottlenecks": [
     {
       "fund_name": "GridX",
-      "fund_country": "",
+      "fund_country": "AR",
       "entity_id": "GridX",
-      "community_id": 9,
+      "community_id": 7,
       "coverage_pct": 100.0,
-      "deals": 98,
-      "community_size": 98,
+      "deals": 94,
+      "community_size": 94,
       "risk": "critical"
     },
     {
       "fund_name": "SP Ventures",
-      "fund_country": "",
+      "fund_country": "BR",
       "entity_id": "sp_ventures",
-      "community_id": 15,
+      "community_id": 4,
       "coverage_pct": 100.0,
       "deals": 26,
       "community_size": 26,
       "risk": "critical"
     },
     {
-      "fund_name": "SF500",
-      "fund_country": "",
-      "entity_id": "SF500",
-      "community_id": 11,
+      "fund_name": "CITES",
+      "fund_country": "AR",
+      "entity_id": "CITES",
+      "community_id": 1,
       "coverage_pct": 100.0,
-      "deals": 21,
-      "community_size": 21,
+      "deals": 20,
+      "community_size": 20,
       "risk": "critical"
     },
     {
-      "fund_name": "CITES",
-      "fund_country": "",
-      "entity_id": "CITES",
-      "community_id": 2,
+      "fund_name": "Kamay Ventures",
+      "fund_country": "AR",
+      "entity_id": "kamay_ventures",
+      "community_id": 18,
       "coverage_pct": 100.0,
-      "deals": 19,
-      "community_size": 19,
+      "deals": 14,
+      "community_size": 14,
       "risk": "critical"
     },
     {
       "fund_name": "SOSV_IndieBio",
-      "fund_country": "",
+      "fund_country": "US",
       "entity_id": "SOSV_IndieBio",
-      "community_id": 12,
+      "community_id": 10,
       "coverage_pct": 100.0,
       "deals": 13,
       "community_size": 13,
@@ -65,9 +65,9 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
     },
     {
       "fund_name": "DragonesVP",
-      "fund_country": "",
+      "fund_country": "AR",
       "entity_id": "DragonesVP",
-      "community_id": 0,
+      "community_id": 8,
       "coverage_pct": 100.0,
       "deals": 10,
       "community_size": 10,
@@ -75,9 +75,9 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
     },
     {
       "fund_name": "Aceleradora Litoral",
-      "fund_country": "",
+      "fund_country": "AR",
       "entity_id": "aceleradora_litoral",
-      "community_id": 3,
+      "community_id": 2,
       "coverage_pct": 100.0,
       "deals": 7,
       "community_size": 7,
@@ -85,9 +85,9 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
     },
     {
       "fund_name": "KPTL",
-      "fund_country": "",
+      "fund_country": "BR",
       "entity_id": "kptl",
-      "community_id": 6,
+      "community_id": 16,
       "coverage_pct": 100.0,
       "deals": 5,
       "community_size": 5,
@@ -95,7 +95,7 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
     },
     {
       "fund_name": "The Ganesha Lab",
-      "fund_country": "",
+      "fund_country": "AR",
       "entity_id": "The Ganesha Lab",
       "community_id": 5,
       "coverage_pct": 97.0,
@@ -104,110 +104,110 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
       "risk": "critical"
     },
     {
-      "fund_name": "Zentynel",
-      "fund_country": "",
-      "entity_id": "zentynel",
-      "community_id": 7,
+      "fund_name": "Antom",
+      "fund_country": "AR",
+      "entity_id": "Antom",
+      "community_id": 3,
       "coverage_pct": 90.9,
       "deals": 10,
       "community_size": 11,
       "risk": "critical"
     },
     {
-      "fund_name": "AIR Capital",
-      "fund_country": "",
-      "entity_id": "AIR Capital",
-      "community_id": 8,
-      "coverage_pct": 64.9,
-      "deals": 24,
-      "community_size": 37,
-      "risk": "critical"
-    },
-    {
-      "fund_name": "Kamay Ventures",
-      "fund_country": "",
-      "entity_id": "kamay_ventures",
-      "community_id": 4,
-      "coverage_pct": 54.8,
-      "deals": 17,
+      "fund_name": "SF500",
+      "fund_country": "AR",
+      "entity_id": "SF500",
+      "community_id": 15,
+      "coverage_pct": 71.0,
+      "deals": 22,
       "community_size": 31,
       "risk": "critical"
     },
     {
-      "fund_name": "DraperCygnus",
-      "fund_country": "",
-      "entity_id": "DraperCygnus",
-      "community_id": 8,
-      "coverage_pct": 51.4,
-      "deals": 19,
-      "community_size": 37,
+      "fund_name": "AIR Capital",
+      "fund_country": "AR",
+      "entity_id": "AIR Capital",
+      "community_id": 12,
+      "coverage_pct": 62.5,
+      "deals": 25,
+      "community_size": 40,
+      "risk": "critical"
+    },
+    {
+      "fund_name": "GLOCAL",
+      "fund_country": "AR",
+      "entity_id": "glocal",
+      "community_id": 3,
+      "coverage_pct": 54.5,
+      "deals": 6,
+      "community_size": 11,
       "risk": "critical"
     },
     {
       "fund_name": "The Yield Lab LATAM",
-      "fund_country": "",
+      "fund_country": "AR",
       "entity_id": "the_yield_lab_latam",
-      "community_id": 13,
+      "community_id": 11,
       "coverage_pct": 50.0,
       "deals": 11,
       "community_size": 22,
       "risk": "critical"
     },
     {
+      "fund_name": "DraperCygnus",
+      "fund_country": "AR",
+      "entity_id": "DraperCygnus",
+      "community_id": 12,
+      "coverage_pct": 47.5,
+      "deals": 19,
+      "community_size": 40,
+      "risk": "high"
+    },
+    {
       "fund_name": "Inventure",
-      "fund_country": "",
+      "fund_country": "AR",
       "entity_id": "inventure",
-      "community_id": 13,
+      "community_id": 11,
       "coverage_pct": 45.5,
       "deals": 10,
       "community_size": 22,
       "risk": "high"
     },
     {
-      "fund_name": "Antom",
-      "fund_country": "",
-      "entity_id": "Antom",
-      "community_id": 4,
-      "coverage_pct": 38.7,
-      "deals": 12,
-      "community_size": 31,
-      "risk": "high"
-    },
-    {
       "fund_name": "GridX",
-      "fund_country": "",
+      "fund_country": "AR",
       "entity_id": "GridX",
-      "community_id": 12,
+      "community_id": 10,
       "coverage_pct": 38.5,
       "deals": 5,
       "community_size": 13,
       "risk": "high"
     },
     {
+      "fund_name": "Zentynel",
+      "fund_country": "CL",
+      "entity_id": "zentynel",
+      "community_id": 15,
+      "coverage_pct": 32.3,
+      "deals": 10,
+      "community_size": 31,
+      "risk": "high"
+    },
+    {
       "fund_name": "Pampa Start",
-      "fund_country": "",
+      "fund_country": "AR",
       "entity_id": "pampa_start",
-      "community_id": 13,
+      "community_id": 11,
       "coverage_pct": 22.7,
       "deals": 5,
       "community_size": 22,
       "risk": "moderate"
     },
     {
-      "fund_name": "GLOCAL",
-      "fund_country": "",
-      "entity_id": "glocal",
-      "community_id": 4,
-      "coverage_pct": 22.6,
-      "deals": 7,
-      "community_size": 31,
-      "risk": "moderate"
-    },
-    {
       "fund_name": "DraperCygnus",
-      "fund_country": "",
+      "fund_country": "AR",
       "entity_id": "DraperCygnus",
-      "community_id": 0,
+      "community_id": 8,
       "coverage_pct": 20.0,
       "deals": 2,
       "community_size": 10,
@@ -218,24 +218,24 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
     {
       "fund_name": "GridX",
       "entity_id": "GridX",
-      "bridges": 19,
+      "bridges": 18,
       "communities_reached": 6
     },
     {
       "fund_name": "AIR Capital",
       "entity_id": "AIR Capital",
-      "bridges": 6,
-      "communities_reached": 4
+      "bridges": 5,
+      "communities_reached": 5
     },
     {
-      "fund_name": "DraperCygnus",
-      "entity_id": "DraperCygnus",
+      "fund_name": "Kamay Ventures",
+      "entity_id": "kamay_ventures",
       "bridges": 5,
       "communities_reached": 3
     },
     {
-      "fund_name": "SF500",
-      "entity_id": "SF500",
+      "fund_name": "DraperCygnus",
+      "entity_id": "DraperCygnus",
       "bridges": 4,
       "communities_reached": 3
     },
@@ -252,8 +252,14 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
       "communities_reached": 3
     },
     {
-      "fund_name": "CITES",
-      "entity_id": "CITES",
+      "fund_name": "SF500",
+      "entity_id": "SF500",
+      "bridges": 2,
+      "communities_reached": 2
+    },
+    {
+      "fund_name": "GLOCAL",
+      "entity_id": "glocal",
       "bridges": 2,
       "communities_reached": 2
     },
@@ -261,123 +267,77 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
       "fund_name": "Inventure",
       "entity_id": "inventure",
       "bridges": 2,
-      "communities_reached": 1
-    },
-    {
-      "fund_name": "Kamay Ventures",
-      "entity_id": "kamay_ventures",
-      "bridges": 2,
-      "communities_reached": 1
+      "communities_reached": 2
     }
   ],
   "whitespace": [
     {
       "macro_theme": "ag biologicals and crop resilience",
       "country_code": "BR",
-      "startup_count": 12,
-      "investor_count": 1,
-      "opportunity_score": 12.0,
+      "startup_count": 23,
+      "investor_count": 3,
+      "opportunity_score": 7.67,
       "is_uncovered": false
     },
     {
       "macro_theme": "therapeutics and regenerative medicine",
       "country_code": "AR",
-      "startup_count": 24,
-      "investor_count": 3,
-      "opportunity_score": 8.0,
+      "startup_count": 32,
+      "investor_count": 5,
+      "opportunity_score": 6.4,
       "is_uncovered": false
     },
     {
-      "macro_theme": "food biotech and novel ingredients",
-      "country_code": "AR",
-      "startup_count": 14,
-      "investor_count": 2,
-      "opportunity_score": 7.0,
+      "macro_theme": "climate, energy and resource systems",
+      "country_code": "BR",
+      "startup_count": 19,
+      "investor_count": 3,
+      "opportunity_score": 6.33,
       "is_uncovered": false
     },
     {
       "macro_theme": "precision agriculture and resource intelligence",
       "country_code": "BR",
-      "startup_count": 17,
-      "investor_count": 3,
-      "opportunity_score": 5.67,
+      "startup_count": 24,
+      "investor_count": 4,
+      "opportunity_score": 6.0,
       "is_uncovered": false
     },
     {
-      "macro_theme": "climate, energy and resource systems",
+      "macro_theme": "precision agriculture and resource intelligence",
+      "country_code": "CL",
+      "startup_count": 5,
+      "investor_count": 1,
+      "opportunity_score": 5.0,
+      "is_uncovered": false
+    },
+    {
+      "macro_theme": "therapeutics and regenerative medicine",
       "country_code": "BR",
-      "startup_count": 17,
+      "startup_count": 13,
       "investor_count": 3,
-      "opportunity_score": 5.67,
+      "opportunity_score": 4.33,
       "is_uncovered": false
     },
     {
       "macro_theme": "biobased chemistry and advanced materials",
       "country_code": "AR",
-      "startup_count": 11,
+      "startup_count": 13,
+      "investor_count": 3,
+      "opportunity_score": 4.33,
+      "is_uncovered": false
+    },
+    {
+      "macro_theme": "therapeutics and regenerative medicine",
+      "country_code": "CL",
+      "startup_count": 8,
       "investor_count": 2,
-      "opportunity_score": 5.5,
-      "is_uncovered": false
-    },
-    {
-      "macro_theme": "diagnostics and medtech",
-      "country_code": "AR",
-      "startup_count": 21,
-      "investor_count": 4,
-      "opportunity_score": 5.25,
-      "is_uncovered": false
-    },
-    {
-      "macro_theme": "food biotech and novel ingredients",
-      "country_code": "CL",
-      "startup_count": 5,
-      "investor_count": 1,
-      "opportunity_score": 5.0,
-      "is_uncovered": false
-    },
-    {
-      "macro_theme": "food biotech and novel ingredients",
-      "country_code": "BR",
-      "startup_count": 5,
-      "investor_count": 1,
-      "opportunity_score": 5.0,
-      "is_uncovered": false
-    },
-    {
-      "macro_theme": "computational biology and scientific software",
-      "country_code": "AR",
-      "startup_count": 5,
-      "investor_count": 1,
-      "opportunity_score": 5.0,
-      "is_uncovered": false
-    },
-    {
-      "macro_theme": "climate, energy and resource systems",
-      "country_code": "AR",
-      "startup_count": 17,
-      "investor_count": 4,
-      "opportunity_score": 4.25,
-      "is_uncovered": false
-    },
-    {
-      "macro_theme": "ag biologicals and crop resilience",
-      "country_code": "AR",
-      "startup_count": 20,
-      "investor_count": 5,
       "opportunity_score": 4.0,
       "is_uncovered": false
     },
     {
       "macro_theme": "diagnostics and medtech",
-      "country_code": "CL",
-      "startup_count": 4,
-      "investor_count": 0,
-      "opportunity_score": 4.0,
-      "is_uncovered": true
-    },
-    {
-      "macro_theme": "diagnostics and medtech",
-      "country_code": "BR",
+      "country_code": "MX",
       "startup_count": 4,
       "investor_count": 1,
       "opportunity_score": 4.0,
@@ -392,8 +352,32 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
       "is_uncovered": false
     },
     {
-      "macro_theme": "climate, energy and resource systems",
-      "country_code": "CL",
+      "macro_theme": "ag biologicals and crop resilience",
+      "country_code": "MX",
+      "startup_count": 4,
+      "investor_count": 0,
+      "opportunity_score": 4.0,
+      "is_uncovered": true
+    },
+    {
+      "macro_theme": "diagnostics and medtech",
+      "country_code": "AR",
+      "startup_count": 28,
+      "investor_count": 9,
+      "opportunity_score": 3.11,
+      "is_uncovered": false
+    },
+    {
+      "macro_theme": "diagnostics and medtech",
+      "country_code": "BR",
+      "startup_count": 9,
+      "investor_count": 3,
+      "opportunity_score": 3.0,
+      "is_uncovered": false
+    },
+    {
+      "macro_theme": "precision agriculture and resource intelligence",
+      "country_code": "MX",
       "startup_count": 3,
       "investor_count": 0,
       "opportunity_score": 3.0,
@@ -409,193 +393,169 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
     },
     {
       "macro_theme": "biobased chemistry and advanced materials",
-      "country_code": "CL",
+      "country_code": "MX",
       "startup_count": 3,
-      "investor_count": 0,
+      "investor_count": 1,
       "opportunity_score": 3.0,
-      "is_uncovered": true
+      "is_uncovered": false
+    },
+    {
+      "macro_theme": "climate, energy and resource systems",
+      "country_code": "MX",
+      "startup_count": 5,
+      "investor_count": 2,
+      "opportunity_score": 2.5,
+      "is_uncovered": false
+    },
+    {
+      "macro_theme": "climate, energy and resource systems",
+      "country_code": "CL",
+      "startup_count": 5,
+      "investor_count": 2,
+      "opportunity_score": 2.5,
+      "is_uncovered": false
+    },
+    {
+      "macro_theme": "food biotech and novel ingredients",
+      "country_code": "AR",
+      "startup_count": 17,
+      "investor_count": 7,
+      "opportunity_score": 2.43,
+      "is_uncovered": false
+    },
+    {
+      "macro_theme": "diagnostics and medtech",
+      "country_code": "CL",
+      "startup_count": 7,
+      "investor_count": 3,
+      "opportunity_score": 2.33,
+      "is_uncovered": false
     },
     {
       "macro_theme": "precision agriculture and resource intelligence",
       "country_code": "AR",
-      "startup_count": 12,
-      "investor_count": 5,
-      "opportunity_score": 2.4,
+      "startup_count": 15,
+      "investor_count": 7,
+      "opportunity_score": 2.14,
       "is_uncovered": false
     },
     {
       "macro_theme": "biomanufacturing and bioindustrial platforms",
       "country_code": "AR",
-      "startup_count": 9,
-      "investor_count": 4,
-      "opportunity_score": 2.25,
-      "is_uncovered": false
-    },
-    {
-      "macro_theme": "therapeutics and regenerative medicine",
-      "country_code": "UY",
-      "startup_count": 2,
-      "investor_count": 1,
-      "opportunity_score": 2.0,
-      "is_uncovered": false
-    },
-    {
-      "macro_theme": "therapeutics and regenerative medicine",
-      "country_code": "US/AR",
-      "startup_count": 2,
-      "investor_count": 1,
+      "startup_count": 10,
+      "investor_count": 5,
       "opportunity_score": 2.0,
       "is_uncovered": false
     },
     {
       "macro_theme": "food biotech and novel ingredients",
-      "country_code": "MX",
-      "startup_count": 2,
-      "investor_count": 1,
-      "opportunity_score": 2.0,
-      "is_uncovered": false
-    },
-    {
-      "macro_theme": "computational biology and scientific software",
       "country_code": "BR",
-      "startup_count": 2,
-      "investor_count": 1,
+      "startup_count": 6,
+      "investor_count": 3,
       "opportunity_score": 2.0,
       "is_uncovered": false
     },
     {
-      "macro_theme": "climate, energy and resource systems",
+      "macro_theme": "ag biologicals and crop resilience",
+      "country_code": "CL",
+      "startup_count": 6,
+      "investor_count": 3,
+      "opportunity_score": 2.0,
+      "is_uncovered": false
+    },
+    {
+      "macro_theme": "biobased chemistry and advanced materials",
+      "country_code": "CL",
+      "startup_count": 4,
+      "investor_count": 2,
+      "opportunity_score": 2.0,
+      "is_uncovered": false
+    },
+    {
+      "macro_theme": "therapeutics and regenerative medicine",
       "country_code": "MX",
       "startup_count": 2,
-      "investor_count": 0,
+      "investor_count": 1,
       "opportunity_score": 2.0,
-      "is_uncovered": true
+      "is_uncovered": false
     },
     {
       "macro_theme": "biobased chemistry and advanced materials",
       "country_code": "UY",
       "startup_count": 2,
-      "investor_count": 0,
-      "opportunity_score": 2.0,
-      "is_uncovered": true
-    },
-    {
-      "macro_theme": "biobased chemistry and advanced materials",
-      "country_code": "MX",
-      "startup_count": 2,
       "investor_count": 1,
       "opportunity_score": 2.0,
       "is_uncovered": false
     },
     {
       "macro_theme": "ag biologicals and crop resilience",
-      "country_code": "US/AR",
-      "startup_count": 2,
-      "investor_count": 0,
-      "opportunity_score": 2.0,
-      "is_uncovered": true
-    },
-    {
-      "macro_theme": "ag biologicals and crop resilience",
-      "country_code": "CL/US",
-      "startup_count": 2,
-      "investor_count": 1,
-      "opportunity_score": 2.0,
+      "country_code": "AR",
+      "startup_count": 21,
+      "investor_count": 11,
+      "opportunity_score": 1.91,
       "is_uncovered": false
     },
     {
-      "macro_theme": "diagnostics and medtech",
-      "country_code": "AR/US",
+      "macro_theme": "computational biology and scientific software",
+      "country_code": "BR",
+      "startup_count": 5,
+      "investor_count": 3,
+      "opportunity_score": 1.67,
+      "is_uncovered": false
+    },
+    {
+      "macro_theme": "climate, energy and resource systems",
+      "country_code": "AR",
+      "startup_count": 23,
+      "investor_count": 14,
+      "opportunity_score": 1.64,
+      "is_uncovered": false
+    },
+    {
+      "macro_theme": "therapeutics and regenerative medicine",
+      "country_code": "UY",
       "startup_count": 3,
       "investor_count": 2,
       "opportunity_score": 1.5,
       "is_uncovered": false
     },
     {
-      "macro_theme": "therapeutics and regenerative medicine",
-      "country_code": "BR",
-      "startup_count": 3,
-      "investor_count": 3,
-      "opportunity_score": 1.0,
-      "is_uncovered": false
-    },
-    {
-      "macro_theme": "climate, energy and resource systems",
-      "country_code": "AR/US",
-      "startup_count": 3,
-      "investor_count": 3,
-      "opportunity_score": 1.0,
-      "is_uncovered": false
-    },
-    {
       "macro_theme": "food biotech and novel ingredients",
-      "country_code": "AR/US",
-      "startup_count": 2,
-      "investor_count": 2,
-      "opportunity_score": 1.0,
-      "is_uncovered": false
-    },
-    {
-      "macro_theme": "climate, energy and resource systems",
-      "country_code": "MX/AR",
-      "startup_count": 2,
-      "investor_count": 2,
-      "opportunity_score": 1.0,
-      "is_uncovered": false
-    },
-    {
-      "macro_theme": "climate, energy and resource systems",
-      "country_code": "AR/LatAm",
-      "startup_count": 2,
-      "investor_count": 2,
-      "opportunity_score": 1.0,
-      "is_uncovered": false
-    },
-    {
-      "macro_theme": "therapeutics and regenerative medicine",
-      "country_code": "UY/AR",
-      "startup_count": 1,
-      "investor_count": 1,
-      "opportunity_score": 1.0,
-      "is_uncovered": false
-    },
-    {
-      "macro_theme": "therapeutics and regenerative medicine",
-      "country_code": "US/CL/MX",
-      "startup_count": 1,
-      "investor_count": 1,
-      "opportunity_score": 1.0,
-      "is_uncovered": false
-    },
-    {
-      "macro_theme": "therapeutics and regenerative medicine",
-      "country_code": "US/BR",
-      "startup_count": 1,
-      "investor_count": 1,
-      "opportunity_score": 1.0,
+      "country_code": "CL",
+      "startup_count": 8,
+      "investor_count": 6,
+      "opportunity_score": 1.33,
       "is_uncovered": false
     },
     {
       "macro_theme": "therapeutics and regenerative medicine",
       "country_code": "US",
-      "startup_count": 1,
-      "investor_count": 0,
-      "opportunity_score": 1.0,
-      "is_uncovered": true
+      "startup_count": 5,
+      "investor_count": 4,
+      "opportunity_score": 1.25,
+      "is_uncovered": false
     },
     {
-      "macro_theme": "therapeutics and regenerative medicine",
-      "country_code": "NL",
-      "startup_count": 1,
-      "investor_count": 0,
+      "macro_theme": "computational biology and scientific software",
+      "country_code": "AR",
+      "startup_count": 5,
+      "investor_count": 5,
       "opportunity_score": 1.0,
-      "is_uncovered": true
+      "is_uncovered": false
     },
     {
-      "macro_theme": "therapeutics and regenerative medicine",
-      "country_code": "MX/US",
-      "startup_count": 1,
-      "investor_count": 1,
+      "macro_theme": "food biotech and novel ingredients",
+      "country_code": "MX",
+      "startup_count": 2,
+      "investor_count": 2,
+      "opportunity_score": 1.0,
+      "is_uncovered": false
+    },
+    {
+      "macro_theme": "ag biologicals and crop resilience",
+      "country_code": "US",
+      "startup_count": 2,
+      "investor_count": 2,
       "opportunity_score": 1.0,
       "is_uncovered": false
     },
@@ -603,21 +563,13 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "country_code": "CR",
       "startup_count": 1,
-      "investor_count": 0,
+      "investor_count": 1,
       "opportunity_score": 1.0,
-      "is_uncovered": true
+      "is_uncovered": false
     },
     {
       "macro_theme": "therapeutics and regenerative medicine",
       "country_code": "CO",
-      "startup_count": 1,
-      "investor_count": 0,
-      "opportunity_score": 1.0,
-      "is_uncovered": true
-    },
-    {
-      "macro_theme": "therapeutics and regenerative medicine",
-      "country_code": "CL/US",
       "startup_count": 1,
       "investor_count": 1,
       "opportunity_score": 1.0,
@@ -625,23 +577,7 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
     },
     {
       "macro_theme": "therapeutics and regenerative medicine",
-      "country_code": "CL",
-      "startup_count": 1,
-      "investor_count": 0,
-      "opportunity_score": 1.0,
-      "is_uncovered": true
-    },
-    {
-      "macro_theme": "therapeutics and regenerative medicine",
-      "country_code": "AR/US",
-      "startup_count": 1,
-      "investor_count": 0,
-      "opportunity_score": 1.0,
-      "is_uncovered": true
-    },
-    {
-      "macro_theme": "therapeutics and regenerative medicine",
-      "country_code": "AE/AR",
+      "country_code": "AE",
       "startup_count": 1,
       "investor_count": 1,
       "opportunity_score": 1.0,
@@ -649,7 +585,7 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
     },
     {
       "macro_theme": "precision agriculture and resource intelligence",
-      "country_code": "US/BR",
+      "country_code": "US",
       "startup_count": 1,
       "investor_count": 1,
       "opportunity_score": 1.0,
@@ -672,48 +608,8 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
       "is_uncovered": true
     },
     {
-      "macro_theme": "precision agriculture and resource intelligence",
-      "country_code": "CL",
-      "startup_count": 1,
-      "investor_count": 0,
-      "opportunity_score": 1.0,
-      "is_uncovered": true
-    },
-    {
-      "macro_theme": "precision agriculture and resource intelligence",
-      "country_code": "BR/LatAm",
-      "startup_count": 1,
-      "investor_count": 0,
-      "opportunity_score": 1.0,
-      "is_uncovered": true
-    },
-    {
-      "macro_theme": "precision agriculture and resource intelligence",
-      "country_code": "AR/ES",
-      "startup_count": 1,
-      "investor_count": 1,
-      "opportunity_score": 1.0,
-      "is_uncovered": false
-    },
-    {
       "macro_theme": "food biotech and novel ingredients",
-      "country_code": "SG/AR",
-      "startup_count": 1,
-      "investor_count": 0,
-      "opportunity_score": 1.0,
-      "is_uncovered": true
-    },
-    {
-      "macro_theme": "food biotech and novel ingredients",
-      "country_code": "BR/US",
-      "startup_count": 1,
-      "investor_count": 1,
-      "opportunity_score": 1.0,
-      "is_uncovered": false
-    },
-    {
-      "macro_theme": "food biotech and novel ingredients",
-      "country_code": "AR/BR",
+      "country_code": "SG",
       "startup_count": 1,
       "investor_count": 1,
       "opportunity_score": 1.0,
@@ -723,12 +619,28 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
       "macro_theme": "diagnostics and medtech",
       "country_code": "UY",
       "startup_count": 1,
-      "investor_count": 0,
+      "investor_count": 1,
       "opportunity_score": 1.0,
-      "is_uncovered": true
+      "is_uncovered": false
     },
     {
       "macro_theme": "diagnostics and medtech",
+      "country_code": "CO",
+      "startup_count": 1,
+      "investor_count": 1,
+      "opportunity_score": 1.0,
+      "is_uncovered": false
+    },
+    {
+      "macro_theme": "computational biology and scientific software",
+      "country_code": "US",
+      "startup_count": 1,
+      "investor_count": 1,
+      "opportunity_score": 1.0,
+      "is_uncovered": false
+    },
+    {
+      "macro_theme": "computational biology and scientific software",
       "country_code": "MX",
       "startup_count": 1,
       "investor_count": 0,
@@ -736,60 +648,12 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
       "is_uncovered": true
     },
     {
-      "macro_theme": "diagnostics and medtech",
-      "country_code": "CO/US",
+      "macro_theme": "climate, energy and resource systems",
+      "country_code": "NL",
       "startup_count": 1,
       "investor_count": 1,
       "opportunity_score": 1.0,
       "is_uncovered": false
-    },
-    {
-      "macro_theme": "diagnostics and medtech",
-      "country_code": "BR/US",
-      "startup_count": 1,
-      "investor_count": 1,
-      "opportunity_score": 1.0,
-      "is_uncovered": false
-    },
-    {
-      "macro_theme": "diagnostics and medtech",
-      "country_code": "AR/UK",
-      "startup_count": 1,
-      "investor_count": 0,
-      "opportunity_score": 1.0,
-      "is_uncovered": true
-    },
-    {
-      "macro_theme": "computational biology and scientific software",
-      "country_code": "US/AR",
-      "startup_count": 1,
-      "investor_count": 0,
-      "opportunity_score": 1.0,
-      "is_uncovered": true
-    },
-    {
-      "macro_theme": "climate, energy and resource systems",
-      "country_code": "US/AR",
-      "startup_count": 1,
-      "investor_count": 0,
-      "opportunity_score": 1.0,
-      "is_uncovered": true
-    },
-    {
-      "macro_theme": "climate, energy and resource systems",
-      "country_code": "US",
-      "startup_count": 1,
-      "investor_count": 0,
-      "opportunity_score": 1.0,
-      "is_uncovered": true
-    },
-    {
-      "macro_theme": "climate, energy and resource systems",
-      "country_code": "NL/AR",
-      "startup_count": 1,
-      "investor_count": 0,
-      "opportunity_score": 1.0,
-      "is_uncovered": true
     },
     {
       "macro_theme": "climate, energy and resource systems",
@@ -800,20 +664,12 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
       "is_uncovered": false
     },
     {
-      "macro_theme": "climate, energy and resource systems",
-      "country_code": "AR/UY",
-      "startup_count": 1,
-      "investor_count": 0,
-      "opportunity_score": 1.0,
-      "is_uncovered": true
-    },
-    {
       "macro_theme": "biomanufacturing and bioindustrial platforms",
       "country_code": "CO",
       "startup_count": 1,
-      "investor_count": 0,
+      "investor_count": 1,
       "opportunity_score": 1.0,
-      "is_uncovered": true
+      "is_uncovered": false
     },
     {
       "macro_theme": "biobased chemistry and advanced materials",
@@ -824,48 +680,24 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
       "is_uncovered": false
     },
     {
-      "macro_theme": "biobased chemistry and advanced materials",
-      "country_code": "AR/US",
-      "startup_count": 1,
-      "investor_count": 0,
-      "opportunity_score": 1.0,
-      "is_uncovered": true
+      "macro_theme": "climate, energy and resource systems",
+      "country_code": "US",
+      "startup_count": 2,
+      "investor_count": 3,
+      "opportunity_score": 0.67,
+      "is_uncovered": false
     },
     {
-      "macro_theme": "biobased chemistry and advanced materials",
-      "country_code": "AR/MX",
+      "macro_theme": "therapeutics and regenerative medicine",
+      "country_code": "NL",
       "startup_count": 1,
-      "investor_count": 0,
-      "opportunity_score": 1.0,
-      "is_uncovered": true
+      "investor_count": 2,
+      "opportunity_score": 0.5,
+      "is_uncovered": false
     },
     {
       "macro_theme": "ag biologicals and crop resilience",
       "country_code": "CO",
-      "startup_count": 1,
-      "investor_count": 0,
-      "opportunity_score": 1.0,
-      "is_uncovered": true
-    },
-    {
-      "macro_theme": "ag biologicals and crop resilience",
-      "country_code": "CL",
-      "startup_count": 1,
-      "investor_count": 0,
-      "opportunity_score": 1.0,
-      "is_uncovered": true
-    },
-    {
-      "macro_theme": "ag biologicals and crop resilience",
-      "country_code": "AR/US",
-      "startup_count": 1,
-      "investor_count": 1,
-      "opportunity_score": 1.0,
-      "is_uncovered": false
-    },
-    {
-      "macro_theme": "diagnostics and medtech",
-      "country_code": "AR/MX/BR",
       "startup_count": 1,
       "investor_count": 2,
       "opportunity_score": 0.5,

@@ -53,13 +53,17 @@ DIM = 384
 def make_embed_text(row: dict) -> str:
     """Combina los campos del row en un texto para embedding.
 
+    Usa startup_summary_en (inglés normalizado) como señal primaria.
+    Cae back a startup_summary_v1 si no hay versión EN todavía.
     Repite el summary para darle más peso (los modelos tipo e5 son sensibles
     a la frecuencia de tokens). El prefijo 'passage:' es la convención de e5
     para indicar que es un documento (no una query).
     """
+    # Prefer the English-normalized summary; fall back to original
+    summary = (row.get("startup_summary_en") or row.get("startup_summary_v1") or "").strip()
     parts = [
-        row.get("startup_summary_v1") or "",
-        row.get("startup_summary_v1") or "",  # peso doble al summary
+        summary,
+        summary,  # double weight on summary
         row.get("business_one_liner") or "",
         row.get("macro_theme") or "",
         row.get("emergent_theme") or "",
@@ -79,7 +83,8 @@ def fetch_startups(conn: sqlite3.Connection) -> list[dict]:
     cur = conn.cursor()
     cur.execute(
         """SELECT sx.startup_id,
-                  sx.startup_summary_v1, sx.business_one_liner,
+                  sx.startup_summary_en, sx.startup_summary_v1,
+                  sx.business_one_liner,
                   sx.macro_theme, sx.emergent_theme,
                   sx.technical_stack, sx.technology_tags,
                   sx.industry_destination, sx.domain_tags,

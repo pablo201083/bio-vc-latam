@@ -168,8 +168,8 @@
         <div class="tb-row">
           <div class="vt-group">
             <button id="btn-map" class="vt-btn active" type="button">UMAP</button>
-            <button id="btn-cluster" class="vt-btn" type="button">Clusters</button>
-            <button id="btn-graph" class="vt-btn" type="button">Red</button>
+            <button id="btn-cluster" class="vt-btn" type="button">Themes</button>
+            <button id="btn-graph" class="vt-btn" type="button">Network</button>
           </div>
           <button id="btn-labels" class="lbl-btn on" type="button">Nombres</button>
           <button id="btn-filter" class="lbl-btn" type="button">Filtros</button>
@@ -225,15 +225,30 @@ if(!D||!D.startups||!D.startups.length){
   return;
 }
 
-// ── Palette ──────────────────────────────────────────────────────────────────
-const PAL=[
-  "#178b87","#4a8f5c","#8cbf55","#c84b31","#e8973a",
-  "#d95f28","#5b7fa0","#1f5c3a","#3a5478","#52b788",
-  "#a8c832","#b07d2e","#7b4522","#9b72cf","#c27a58"
+// ── Editorial category palette — 7 bottom-up categories ─────────────────────
+const THEME_PAL={
+  "Therapeutics":                  "#7033BC",
+  "Diagnostics & Health Access":   "#1A6DB5",
+  "Food Systems & Alt Proteins":   "#C25A2A",
+  "Bioinputs & Crop Resilience":   "#2A7A42",
+  "Nature & Ecosystem Tech":       "#127A6E",
+  "Farm Intelligence":             "#2E4E8C",
+  "Biomaterials & Circular Economy":"#8B6D14",
+};
+const THEME_ADJ="#8a7d70"; // eco-adjacent / unclassified
+
+// Ordered list for sidebar + theme-grid view
+const THEME_ORDER=[
+  "Therapeutics","Diagnostics & Health Access","Food Systems & Alt Proteins",
+  "Bioinputs & Crop Resilience","Nature & Ecosystem Tech",
+  "Farm Intelligence","Biomaterials & Circular Economy"
 ];
-function clCol(cid){
-  return PAL[((cid%PAL.length)+PAL.length)%PAL.length];
+
+function themeCol(bio_theme){
+  return THEME_PAL[bio_theme]||THEME_ADJ;
 }
+// Legacy alias (for graph edges that still use cluster_id)
+function clCol(cid){ return THEME_ADJ; }
 
 // ── Startup data prep ─────────────────────────────────────────────────────
 const startups=D.startups;
@@ -242,10 +257,35 @@ const vTech=D.vocab_tech||{};
 const vInd=D.vocab_industry||{};
 const clMap=new Map(clusters.map(c=>[c.cluster_id,c]));
 
+// ── Theme map (primary nav) — built from startup bio_theme field ──────────
+const themeMap=new Map();
+startups.forEach(s=>{
+  const t=s.bio_theme||"Uncategorized";
+  if(!themeMap.has(t)){
+    themeMap.set(t,{
+      name:t,color:themeCol(t),count:0,
+      subClusters:new Map(), // label→count within theme
+      countries:{},n_funded:0,n_featured:0,
+    });
+  }
+  const tm=themeMap.get(t);
+  tm.count++;
+  if(s.cluster_label){
+    const kw=s.cluster_keywords||"";
+    tm.subClusters.set(s.cluster_label,(tm.subClusters.get(s.cluster_label)||0)+1);
+  }
+  (s.countries||[]).forEach(c=>tm.countries[c]=(tm.countries[c]||0)+1);
+  if(s.n_rounds>0)tm.n_funded++;
+  if(s.valuation_tier!=null&&s.valuation_tier>=2)tm.n_featured++;
+});
+
+// Active theme filter (replaces activeCluster for primary navigation)
+let activeTheme=null;
+
 // Stats header
 document.getElementById("meta-model").textContent=D.model;
 document.getElementById("meta-total").textContent=D.stats.total_startups+" startups";
-document.getElementById("meta-clusters").textContent=D.stats.n_clusters+" clusters · "+D.stats.featured_count+" destacadas";
+document.getElementById("meta-clusters").textContent=THEME_ORDER.filter(t=>themeMap.has(t)).length+" bio themes · "+D.stats.featured_count+" featured";
 document.getElementById("s-total").textContent=D.stats.total_startups+" startups";
 document.getElementById("s-featured").textContent=D.stats.featured_count+" destacadas";
 document.getElementById("s-funded").textContent=D.stats.funded_count+" con inversión";
@@ -301,26 +341,28 @@ function relaxMapPos(iters=65){
   });
 }
 
-// ── Cluster arrangement positions ─────────────────────────────────────────
+// ── Theme grid positions (replaces cluster arrangement) ───────────────────
 function computeClusterPos(){
-  const validClusters=clusters.slice().sort((a,b)=>b.size-a.size);
-  const ncols=Math.ceil(Math.sqrt(validClusters.length));
-  const nrows=Math.ceil(validClusters.length/ncols);
+  // Group nodes by bio_theme, respecting THEME_ORDER
+  const themeNodes={};
+  nodes.forEach(n=>{
+    const t=n.d.bio_theme||"Uncategorized";
+    if(!themeNodes[t])themeNodes[t]=[];
+    themeNodes[t].push(n);
+  });
+  const activeThemes=THEME_ORDER.filter(t=>themeNodes[t]?.length>0);
+  // Add any unlisted themes (eco-adjacent, etc.)
+  Object.keys(themeNodes).forEach(t=>{if(!activeThemes.includes(t))activeThemes.push(t);});
+
+  const ncols=Math.ceil(Math.sqrt(activeThemes.length));
+  const nrows=Math.ceil(activeThemes.length/ncols);
   const cellW=W/ncols,cellH=H/nrows;
 
-  // Group nodes per cluster
-  const clusterNodes={};
-  nodes.forEach(n=>{
-    const cid=n.d.cluster_id;
-    if(!clusterNodes[cid])clusterNodes[cid]=[];
-    clusterNodes[cid].push(n);
-  });
-
   // First pass: compute raw ring positions using node-size-aware spacing
-  validClusters.forEach((cl,i)=>{
+  activeThemes.forEach((theme,i)=>{
     const col=i%ncols,row=Math.floor(i/ncols);
     const zx=cellW*(col+.5),zy=cellH*(row+.5);
-    const cNodes=(clusterNodes[cl.cluster_id]||[]).slice()
+    const cNodes=(themeNodes[theme]||[]).slice()
       .sort((a,b)=>(b.d.valuation_tier||0)-(a.d.valuation_tier||0));
     if(!cNodes.length)return;
 
@@ -504,7 +546,7 @@ function buildGraphElements(){
     if(!sn||!iv)return;
     const path=document.createElementNS(NS,"path");
     path.setAttribute("fill","none");
-    path.setAttribute("stroke",clCol(sn.d.cluster_id));
+    path.setAttribute("stroke",themeCol(sn.d.bio_theme));
     path.setAttribute("stroke-width","1.2");
     path.setAttribute("stroke-opacity","0.25");
     path.setAttribute("pointer-events","none");
@@ -584,18 +626,18 @@ function nFeatured(s){return s.valuation_tier!==null&&s.valuation_tier>=2}
 const activeTechs=new Set();      // OR dentro de la categoría
 const activeInds=new Set();       // OR dentro de la categoría
 const activeCountries=new Set();  // OR dentro de la categoría
-let activeCluster=null,searchId=null,showLabels=true;
+let searchId=null,showLabels=true;
 let viewMode="map"; // "map" | "cluster" | "graph"
 
 function isHl(s){
   if(searchId&&s.id!==searchId)return false;
   if(activeCountries.size&&!(s.countries||[]).some(c=>activeCountries.has(c)))return false;
-  if(activeCluster!==null&&s.cluster_id!==activeCluster)return false;
+  if(activeTheme!==null&&(s.bio_theme||"Uncategorized")!==activeTheme)return false;
   if(activeTechs.size&&!(s.tech_codes||[]).some(c=>activeTechs.has(c)))return false;
   if(activeInds.size&&!(s.industry_codes||[]).some(c=>activeInds.has(c)))return false;
   return true;
 }
-function anyFilter(){return !!(searchId||activeCountries.size||activeCluster!==null||activeTechs.size||activeInds.size)}
+function anyFilter(){return !!(searchId||activeCountries.size||activeTheme!==null||activeTechs.size||activeInds.size)}
 
 // ── Build SVG ──────────────────────────────────────────────────────────────
 function buildSVG(){
@@ -608,7 +650,7 @@ function buildSVG(){
 
   nodes.forEach(n=>{
     const s=n.d;
-    const color=clCol(s.cluster_id);
+    const color=themeCol(s.bio_theme);
     const r=nRadius(s);
 
     // Investment ring (behind the node)
@@ -715,33 +757,30 @@ function updateHalos(){
 
   const any=anyFilter();
 
-  // Group nodes by cluster
-  const byCluster={};
+  // Group nodes by bio_theme
+  const byTheme={};
   nodes.forEach(n=>{
-    const cid=n.d.cluster_id;
-    if(!byCluster[cid])byCluster[cid]=[];
-    byCluster[cid].push(n);
+    const t=n.d.bio_theme||"Uncategorized";
+    if(!byTheme[t])byTheme[t]=[];
+    byTheme[t].push(n);
   });
 
-  Object.entries(byCluster).forEach(([cidStr,cNodes])=>{
-    const cid=parseInt(cidStr);
-    const cl=clMap.get(cid);
+  Object.entries(byTheme).forEach(([theme,cNodes])=>{
     const pts=cNodes.map(n=>[n.cx,n.cy]);
     const cx=pts.reduce((s,p)=>s+p[0],0)/pts.length;
     const cy=pts.reduce((s,p)=>s+p[1],0)/pts.length;
 
-    // ¿Tiene algún nodo que pase el filtro activo?
-    const clusterHasMatch=any?cNodes.some(n=>isHl(n.d)):true;
-    const color=clusterHasMatch?clCol(cid):"#b5aea6";
-    const fillOp=clusterHasMatch?(viewMode==="cluster"?"0.07":"0.09"):"0.04";
-    const strokeOp=clusterHasMatch?(viewMode==="cluster"?"0.18":"0.22"):"0.08";
+    const themeHasMatch=any?cNodes.some(n=>isHl(n.d)):true;
+    const color=themeHasMatch?themeCol(theme):"#b5aea6";
+    const fillOp=themeHasMatch?(viewMode==="cluster"?"0.08":"0.07"):"0.03";
+    const strokeOp=themeHasMatch?(viewMode==="cluster"?"0.22":"0.18"):"0.06";
 
     if(viewMode==="cluster"){
-      // Simple circle halo in cluster arrangement view
+      // Solid circle halo in theme-grid view
       const maxR=Math.max(...pts.map(([x,y])=>Math.sqrt((x-cx)**2+(y-cy)**2)));
       const el=document.createElementNS(NS,"circle");
       el.setAttribute("cx",cx);el.setAttribute("cy",cy);
-      el.setAttribute("r",Math.max(maxR+20,22));
+      el.setAttribute("r",Math.max(maxR+22,28));
       el.setAttribute("fill",color);el.setAttribute("opacity",fillOp);
       el.setAttribute("stroke",color);el.setAttribute("stroke-width","1.5");
       el.setAttribute("stroke-opacity",strokeOp);el.setAttribute("pointer-events","none");
@@ -749,32 +788,31 @@ function updateHalos(){
     }else{
       // Convex hull blob in UMAP map view
       const hull=convexHull(pts);
-      const path=blobPath(hull,pts.length===1?24:pts.length<4?18:20);
+      const path=blobPath(hull,pts.length===1?28:pts.length<4?20:22);
       if(path){
         const el=document.createElementNS(NS,"path");
         el.setAttribute("d",path);
         el.setAttribute("fill",color);el.setAttribute("opacity",fillOp);
-        el.setAttribute("stroke",color);el.setAttribute("stroke-width","1.5");
+        el.setAttribute("stroke",color);el.setAttribute("stroke-width","1.8");
         el.setAttribute("stroke-opacity",strokeOp);el.setAttribute("pointer-events","none");
         gHalos.appendChild(el);
       }
     }
 
-    // Floating label above the halo (both views)
-    if(cl&&cid!==-1){
-      // Find topmost point in current positions
+    // Floating theme label above the halo
+    {
       const topY=Math.min(...pts.map(p=>p[1]));
+      const shortName=theme.replace(" & Access","").replace(" Engineering","").replace(" Economy","").replace(" Transition","").replace(" Biology","");
       const txt=document.createElementNS(NS,"text");
-      txt.setAttribute("x",cx);txt.setAttribute("y",topY-14);
+      txt.setAttribute("x",cx);txt.setAttribute("y",topY-(viewMode==="cluster"?22:16));
       txt.setAttribute("text-anchor","middle");
-      txt.setAttribute("font-size","10");
+      txt.setAttribute("font-size",viewMode==="cluster"?"11":"9.5");
       txt.setAttribute("font-weight","700");
       txt.setAttribute("fill",color);
-      txt.setAttribute("opacity",clusterHasMatch?"0.9":"0.22");
+      txt.setAttribute("opacity",themeHasMatch?"0.92":"0.18");
       txt.setAttribute("pointer-events","none");
-      txt.setAttribute("letter-spacing","0.02em");
-      // Show only first segment of the label to keep it short
-      txt.textContent=(cl.label||"cluster "+cid).split(" · ")[0];
+      txt.setAttribute("letter-spacing","0.03em");
+      txt.textContent=shortName;
       gHalos.appendChild(txt);
     }
   });
@@ -803,9 +841,9 @@ function updateHighlights(){
     const hi=isHl(s);
     const baseOp=nOpacity(s);
     const featured=nFeatured(s);
-    const color=clCol(s.cluster_id);
+    const color=themeCol(s.bio_theme);
 
-    // Anillo de inversión: color cluster si match, gris si no
+    // Anillo de inversión: color theme si match, gris si no
     if(n.ringEl){
       n.ringEl.setAttribute("stroke",any&&!hi?GRAY_RING:color);
       n.ringEl.setAttribute("stroke-opacity",any?(hi?"0.62":"0.18"):"0.62");
@@ -841,9 +879,9 @@ function startTrans(toMode){
 }
 function eio(t){return t<.5?2*t*t:-1+(4-2*t)*t}
 
-// ── Zoom to cluster ────────────────────────────────────────────────────────
-function zoomToCluster(cid){
-  const cNodes=nodes.filter(n=>n.d.cluster_id===cid);
+// ── Zoom to theme ─────────────────────────────────────────────────────────
+function zoomToCluster(theme){
+  const cNodes=nodes.filter(n=>(n.d.bio_theme||"Uncategorized")===theme);
   if(!cNodes.length)return;
   const xs=cNodes.map(n=>n.cx),ys=cNodes.map(n=>n.cy);
   const minX=Math.min(...xs)-40,maxX=Math.max(...xs)+40;
@@ -867,12 +905,11 @@ function updateBreadcrumbs(){
   const bc=document.getElementById("breadcrumbs");
   bc.innerHTML="";
   const filters=[];
-  if(activeCluster!==null){
-    const cl=clMap.get(activeCluster);
+  if(activeTheme!==null){
     filters.push({
-      label:"Cluster: "+(cl?.label||"cluster "+activeCluster).split(" · ")[0],
+      label:"Theme: "+activeTheme,
       clear(){
-        activeCluster=null;
+        activeTheme=null;
         document.querySelectorAll(".cr").forEach(r=>r.classList.remove("active","dimmed"));
         updateHighlights();updateBreadcrumbs();
       }
@@ -933,7 +970,7 @@ function updateBreadcrumbs(){
   });
   const all=document.createElement("button");all.className="bc-pill bc-all";all.type="button";all.textContent="Limpiar todo";
   all.addEventListener("click",()=>{
-    activeCluster=null;activeTechs.clear();activeInds.clear();activeCountries.clear();searchId=null;
+    activeTheme=null;activeTechs.clear();activeInds.clear();activeCountries.clear();searchId=null;
     srchIn.value="";
     document.querySelectorAll(".fc").forEach(c=>c.classList.remove("active-tech","active-ind","active-country"));
     document.querySelectorAll(".cr").forEach(r=>r.classList.remove("active","dimmed"));
@@ -973,97 +1010,102 @@ function loop(){
   animId=requestAnimationFrame(loop);
 }
 
-// ── Cluster sidebar ────────────────────────────────────────────────────────
+// ── Theme sidebar ──────────────────────────────────────────────────────────
 function buildClusterList(){
   const list=document.getElementById("cluster-list");
   list.innerHTML="";
-  const sorted=[...clusters].sort((a,b)=>{
-    if(a.cluster_id===-1)return 1;
-    if(b.cluster_id===-1)return -1;
-    return b.size-a.size;
-  });
-  sorted.forEach(c=>{
-    const color=clCol(c.cluster_id);
+
+  // Show themes in canonical order, then any extras (eco-adjacent, etc.)
+  const ordered=[
+    ...THEME_ORDER.filter(t=>themeMap.has(t)),
+    ...[...themeMap.keys()].filter(t=>!THEME_ORDER.includes(t)),
+  ];
+
+  ordered.forEach(theme=>{
+    const tm=themeMap.get(theme);
+    if(!tm)return;
+    const color=tm.color;
     const row=document.createElement("div");
-    row.className="cr";row.dataset.cid=c.cluster_id;
+    row.className="cr";row.dataset.theme=theme;
 
     const top=document.createElement("div");top.className="cr-top";
     const dot=document.createElement("span");dot.className="cr-dot";dot.style.background=color;
     const name=document.createElement("span");name.className="cr-name";
-    name.textContent=c.label||"cluster "+c.cluster_id;
+    name.textContent=theme;
     const cnt=document.createElement("span");cnt.className="cr-count";
-    cnt.textContent=c.size;
+    cnt.textContent=tm.count;
     top.appendChild(dot);top.appendChild(name);top.appendChild(cnt);
     row.appendChild(top);
 
     const tags=document.createElement("div");tags.className="cr-tags";
-    // Top countries (con emoji de bandera)
-    Object.entries(c.countries||{}).sort((a,b)=>b[1]-a[1]).slice(0,2).forEach(([cc])=>{
+    // Top countries
+    Object.entries(tm.countries).sort((a,b)=>b[1]-a[1]).slice(0,2).forEach(([cc])=>{
       const t=document.createElement("span");t.className="ct";
       const flag=FLAG_MAP[cc]||"";
       t.textContent=(flag?flag+" ":"")+cc;
       tags.appendChild(t);
     });
-    // Top tech
-    Object.entries(c.tech_codes||{}).sort((a,b)=>b[1]-a[1]).slice(0,2).forEach(([code])=>{
-      const t=document.createElement("span");t.className="ct ct-tech";
-      t.textContent=(vTech[code]?.label||code).split("/")[0].trim();tags.appendChild(t);
+    // Sub-clusters as tiny chips (top 2)
+    [...tm.subClusters.entries()].sort((a,b)=>b[1]-a[1]).slice(0,2).forEach(([lbl])=>{
+      const t=document.createElement("span");t.className="ct";
+      t.style.cssText="color:#555;font-style:italic;font-size:.62rem;";
+      t.textContent=lbl.split(" — ")[1]||lbl; // show only disambiguator part
+      tags.appendChild(t);
     });
     // Funded badge
-    if(c.n_funded>0){
+    if(tm.n_funded>0){
       const t=document.createElement("span");t.className="ct";
       t.style.cssText="color:#1f5c3a;border-color:rgba(31,92,58,.28);background:rgba(31,92,58,.06);";
-      t.textContent="⬤ "+c.n_funded+"R";tags.appendChild(t);
+      t.textContent="⬤ "+tm.n_funded+"R";tags.appendChild(t);
     }
     row.appendChild(tags);
 
     row.addEventListener("click",()=>{
-      if(activeCluster===c.cluster_id){
-        activeCluster=null;row.classList.remove("active");
+      if(activeTheme===theme){
+        activeTheme=null;row.classList.remove("active");
         document.querySelectorAll(".cr").forEach(r=>r.classList.remove("dimmed","active"));
       }else{
-        activeCluster=c.cluster_id;
+        activeTheme=theme;
         document.querySelectorAll(".cr").forEach(r=>{
           r.classList.remove("active");
-          r.classList.toggle("dimmed",parseInt(r.dataset.cid)!==c.cluster_id);
+          r.classList.toggle("dimmed",r.dataset.theme!==theme);
         });
         row.classList.add("active");row.classList.remove("dimmed");
-        zoomToCluster(c.cluster_id);
+        zoomToCluster(theme);
+        renderThemeDetail(tm);
       }
       updateHighlights();
       updateBreadcrumbs();
-      renderClusterDetail(c);
     });
     list.appendChild(row);
   });
 }
 
-function renderClusterDetail(c){
+function renderThemeDetail(tm){
   const pane=document.getElementById("detail-pane");
-  if(!c){pane.innerHTML='<span style="color:var(--muted);font-size:.82rem;">Clic en startup o cluster.</span>';return}
-  const color=clCol(c.cluster_id);
-  const topTech=Object.entries(c.tech_codes||{}).sort((a,b)=>b[1]-a[1]).slice(0,5);
-  const topInd=Object.entries(c.industry_codes||{}).sort((a,b)=>b[1]-a[1]).slice(0,4);
-  const topCountries=Object.entries(c.countries||{}).sort((a,b)=>b[1]-a[1]).slice(0,4);
+  if(!tm){pane.innerHTML='<span style="color:var(--muted);font-size:.82rem;">Click a startup or theme to see details.</span>';return}
+  const color=tm.color;
+  const topCountries=Object.entries(tm.countries).sort((a,b)=>b[1]-a[1]).slice(0,4);
   // Top companies by tier then name
   const topCompanies=nodes
-    .filter(n=>n.d.cluster_id===c.cluster_id)
+    .filter(n=>(n.d.bio_theme||"Uncategorized")===tm.name)
     .sort((a,b)=>(b.d.valuation_tier||0)-(a.d.valuation_tier||0)||a.d.name.localeCompare(b.d.name))
     .slice(0,6);
+  // Sub-cluster neighborhoods
+  const subCl=[...tm.subClusters.entries()].sort((a,b)=>b[1]-a[1]);
   pane.innerHTML=`
     <div class="dp-title" style="display:flex;align-items:center;gap:7px;">
       <span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:${color};flex:0 0 auto"></span>
-      ${c.label||"cluster "+c.cluster_id}
+      ${tm.name}
     </div>
     <div class="dp-chips" style="margin-bottom:7px;">
-      <span class="dp-chip">${c.size} organizaciones</span>
-      ${c.n_featured>0?`<span class="dp-chip" style="font-weight:700;color:var(--ink);">${c.n_featured} destacada${c.n_featured>1?"s":""}</span>`:""}
-      ${c.n_funded>0?`<span class="dp-chip" style="color:#1f5c3a;">⬤ ${c.n_funded} con inversión</span>`:""}
+      <span class="dp-chip">${tm.count} startups</span>
+      ${tm.n_featured>0?`<span class="dp-chip" style="font-weight:700;color:var(--ink);">${tm.n_featured} featured</span>`:""}
+      ${tm.n_funded>0?`<span class="dp-chip" style="color:#1f5c3a;">⬤ ${tm.n_funded} with investment</span>`:""}
     </div>
-    ${topCountries.length?`<div style="font-size:.69rem;color:var(--muted);margin-bottom:3px;text-transform:uppercase;letter-spacing:.07em;">Países</div><div class="dp-chips" style="margin-bottom:6px;">${topCountries.map(([cc,n])=>`<span class="dp-chip" style="cursor:pointer;" data-country="${cc}">${(FLAG_MAP[cc]||"")} ${cc} <span style="opacity:.55">(${n})</span></span>`).join("")}</div>`:""}
-    ${topTech.length?`<div style="font-size:.69rem;color:var(--muted);margin-bottom:2px;text-transform:uppercase;letter-spacing:.07em;">Tecnologías</div><div class="dp-chips" style="margin-bottom:5px;">${topTech.map(([code,n])=>`<span class="dp-chip dp-chip-tech">${vTech[code]?.label||code} (${n})</span>`).join("")}</div>`:""}
-    ${topInd.length?`<div style="font-size:.69rem;color:var(--muted);margin-bottom:2px;text-transform:uppercase;letter-spacing:.07em;">Industrias</div><div class="dp-chips" style="margin-bottom:6px;">${topInd.map(([code,n])=>`<span class="dp-chip dp-chip-ind">${vInd[code]?.label||code} (${n})</span>`).join("")}</div>`:""}
-    <div style="font-size:.69rem;color:var(--muted);margin-bottom:3px;text-transform:uppercase;letter-spacing:.07em;">Organizaciones destacadas</div>
+    ${topCountries.length?`<div style="font-size:.69rem;color:var(--muted);margin-bottom:3px;text-transform:uppercase;letter-spacing:.07em;">Countries</div><div class="dp-chips" style="margin-bottom:6px;">${topCountries.map(([cc,n])=>`<span class="dp-chip" style="cursor:pointer;" data-country="${cc}">${(FLAG_MAP[cc]||"")} ${cc} <span style="opacity:.55">(${n})</span></span>`).join("")}</div>`:""}
+    ${subCl.length?`<div style="font-size:.69rem;color:var(--muted);margin-bottom:3px;text-transform:uppercase;letter-spacing:.07em;">Semantic neighborhoods</div><div class="dp-chips" style="margin-bottom:6px;">${subCl.map(([lbl,n])=>`<span class="dp-chip" style="font-style:italic;">${lbl} <span style="opacity:.5">(${n})</span></span>`).join("")}</div>`:""}
+    <div style="font-size:.69rem;color:var(--muted);margin-bottom:3px;text-transform:uppercase;letter-spacing:.07em;">Top startups</div>
     <div style="display:grid;gap:2px;">${topCompanies.map(n=>{
       const t=n.d.valuation_tier;
       return `<span style="font-size:.78rem;color:var(--ink);display:flex;justify-content:space-between;gap:8px;">
@@ -1073,6 +1115,7 @@ function renderClusterDetail(c){
     }).join("")}</div>
   `;
 }
+function renderClusterDetail(c){ renderThemeDetail(null); }
 
 // Delegación de clicks en el detail-pane (chips de país)
 document.getElementById("detail-pane").addEventListener("click",e=>{
@@ -1091,23 +1134,24 @@ function selectStartup(s){
   document.getElementById("srch-in").value=s.name;
   updateHighlights();updateBreadcrumbs();
   const pane=document.getElementById("detail-pane");
-  const color=clCol(s.cluster_id);
-  const cl=clMap.get(s.cluster_id);
-  const tierLabel=s.valuation_tier!=null?`Tier ${s.valuation_tier}`:"Emergente";
-  const roundsStr=s.n_rounds>0?`${s.n_rounds} ronda${s.n_rounds>1?"s":""} de inversión documentada${s.n_rounds>1?"s":""}`:null;
+  const color=themeCol(s.bio_theme);
+  const tierLabel=s.valuation_tier!=null?`Tier ${s.valuation_tier}`:"Emerging";
+  const roundsStr=s.n_rounds>0?`${s.n_rounds} investment round${s.n_rounds>1?"s":""}`:null;
   pane.innerHTML=`
     <div class="dp-title">${s.website?`<a class="dp-link" href="${s.website}" target="_blank" rel="noopener">${s.name} ↗</a>`:s.name}</div>
     <div style="font-size:.82rem;color:var(--ink);line-height:1.45;margin:4px 0 8px;">${s.one_liner||(s.summary||"").slice(0,200)||""}</div>
     <div class="dp-chips" style="margin-bottom:7px;">
       <span class="dp-chip" style="font-weight:700;color:var(--ink);">${tierLabel}</span>
       ${(s.countries||[]).map(c=>`<span class="dp-chip">${c}</span>`).join("")}
-      ${s.quality_band?`<span class="dp-chip">${s.quality_band==="high"?"Datos completos":"Datos parciales"}</span>`:""}
+      ${s.quality_band?`<span class="dp-chip">${s.quality_band==="high"?"Complete data":"Partial data"}</span>`:""}
       ${roundsStr?`<span class="dp-chip" style="color:#1f5c3a;border-color:rgba(31,92,58,.3);">⬤ ${roundsStr}</span>`:""}
     </div>
-    <div style="display:flex;align-items:center;gap:5px;margin-bottom:6px;">
+    <div style="display:flex;align-items:center;gap:5px;margin-bottom:3px;">
       <span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:${color};flex:0 0 auto"></span>
-      <span style="font-size:.78rem;color:var(--ink);">${cl?.label||"—"}</span>
+      <span style="font-size:.82rem;font-weight:700;color:var(--ink);">${s.bio_theme||"—"}</span>
     </div>
+    ${s.bio_theme_secondary?`<div style="font-size:.75rem;color:var(--muted);margin-bottom:4px;padding-left:13px;">+ ${s.bio_theme_secondary}</div>`:""}
+    ${s.cluster_label?`<div style="font-size:.74rem;color:var(--muted);padding-left:13px;margin-bottom:6px;font-style:italic;">${s.cluster_label}${s.cluster_keywords?` — <span style="opacity:.7">${s.cluster_keywords}</span>`:""}</div>`:""}
     <div class="dp-chips">
       ${(s.tech_codes||[]).map(c=>`<span class="dp-chip dp-chip-tech">${vTech[c]?.label||c}</span>`).join("")}
       ${(s.industry_codes||[]).map(c=>`<span class="dp-chip dp-chip-ind">${vInd[c]?.label||c}</span>`).join("")}
@@ -1120,20 +1164,19 @@ const hovCard=document.getElementById("hov-card");
 let hovTmr=null;
 function showHov(s,e){
   clearTimeout(hovTmr);
-  const color=clCol(s.cluster_id);
-  const cl=clMap.get(s.cluster_id);
-  const tierLabel=s.valuation_tier!=null?`Tier ${s.valuation_tier}`:"Emergente";
-  const roundsLabel=s.n_rounds>0?`${s.n_rounds} ronda${s.n_rounds>1?"s":""} documentada${s.n_rounds>1?"s":""}`:null;
+  const color=themeCol(s.bio_theme);
+  const tierLabel=s.valuation_tier!=null?`Tier ${s.valuation_tier}`:"Emerging";
+  const roundsLabel=s.n_rounds>0?`${s.n_rounds} round${s.n_rounds>1?"s":""}`:null;
   hovCard.innerHTML=`
     ${s.one_liner?`<div class="hov-body" style="margin-bottom:6px;">${s.one_liner.slice(0,180)}</div>`:""}
     <div class="hov-title" style="margin-bottom:4px;">${s.name}</div>
     <div class="hov-chips">
-      <span class="hov-chip"><span class="hov-dot" style="background:${color}"></span>${cl?.label||"—"}</span>
+      <span class="hov-chip"><span class="hov-dot" style="background:${color}"></span>${s.bio_theme||"—"}</span>
       ${(s.countries||[]).length?`<span class="hov-chip">${(s.countries).join(" · ")}</span>`:""}
       <span class="hov-chip" style="font-weight:700;color:var(--ink)">${tierLabel}</span>
       ${roundsLabel?`<span class="hov-chip" style="color:#1f5c3a">⬤ ${roundsLabel}</span>`:""}
     </div>
-    <div class="hov-small">${[...(s.tech_codes||[]).map(c=>vTech[c]?.label||c),...(s.industry_codes||[]).map(c=>vInd[c]?.label||c)].slice(0,4).join(" · ")}</div>
+    <div class="hov-small">${s.cluster_label?`<em>${s.cluster_label}</em>`:""}</div>
   `;
   const rect=wrap.getBoundingClientRect();
   let x=e.clientX-rect.left+14,y=e.clientY-rect.top-10;
@@ -1234,7 +1277,7 @@ srchIn.addEventListener("input",()=>{
   srchRes.innerHTML="";
   hits.forEach(s=>{
     const btn=document.createElement("button");btn.className="srch-item";
-    btn.innerHTML=`<span>${s.name}</span><small>${s.country||""} · ${clMap.get(s.cluster_id)?.label||"—"}</small>`;
+    btn.innerHTML=`<span>${s.name}</span><small>${s.country||""} · ${s.bio_theme||"—"}</small>`;
     btn.addEventListener("click",()=>{
       srchIn.value=s.name;srchRes.classList.remove("open");
       searchId=s.id;updateHighlights();updateBreadcrumbs();selectStartup(s);
@@ -1246,14 +1289,14 @@ srchIn.addEventListener("input",()=>{
   srchRes.classList.toggle("open",hits.length>0);
 });
 function resetAll(){
-  activeCluster=null;activeTechs.clear();activeInds.clear();activeCountries.clear();searchId=null;
+  activeTheme=null;activeTechs.clear();activeInds.clear();activeCountries.clear();searchId=null;
   srchIn.value="";srchRes.classList.remove("open");
   document.querySelectorAll(".fc").forEach(c=>c.classList.remove("active-tech","active-ind","active-country"));
   document.querySelectorAll(".cr").forEach(r=>r.classList.remove("active","dimmed"));
   const fp=document.getElementById("filter-panel");
   fp.classList.remove("open");
   document.getElementById("btn-filter").classList.remove("on","filter-active");
-  document.getElementById("detail-pane").innerHTML='<span style="color:var(--muted);font-size:.82rem;">Hacé clic en una startup o en un cluster para ver el detalle.</span>';
+  document.getElementById("detail-pane").innerHTML='<span style="color:var(--muted);font-size:.82rem;">Click a startup or a theme to see details.</span>';
   panX=0;panY=0;scale=1;applyTf();
   if(viewMode!=="map"){
     viewMode="map";

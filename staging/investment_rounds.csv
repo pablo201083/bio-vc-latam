@@ -132,3 +132,17 @@ zentynel,Zentynel,momentum-therapeutics,Momentum Therapeutics,,,,USD,,source: ht
 zentynel,Zentynel,neocrop-technologies,Neocrop Technologies,,,,USD,,source: https://zentynel.com/en/portfolio/ | Zentynel official portfolio page lists Neocrop Technologies.
 zentynel,Zentynel,samay,Samay,,,,USD,,source: https://zentynel.com/en/portfolio/ | Zentynel official portfolio page lists Samay.
 zentynel,Zentynel,xeptiva,Xeptiva,,,,USD,,source: https://zentynel.com/en/portfolio/ | Zentynel official portfolio page lists Xeptiva.
+GridX,GridX,HIAMET,HIAMET,,,,USD,,https://www.gridexponential.com/portfolio,GridX official portfolio lists Hiamet S.A.; canonical manual edge conf=0.96
+GridX,GridX,tomorrow_foods,Tomorrow Foods,,,,USD,,https://www.gridexponential.com/portfolio,GridX official portfolio lists Tomorrow Foods; canonical manual edge conf=0.96
+GridX,GridX,algalife,Algalife,,,,USD,,https://www.gridexponential.com/portfolio,GridX official portfolio lists Algalife; canonical manual edge conf=0.96
+zentynel,Zentynel,multiplai_health,MultiplAI Health,,,,USD,,https://zentynel.com/en/portfolio/,Zentynel official portfolio lists MultiplAI Health; canonical manual edge conf=0.96
+eatable_adventures,Eatable Adventures,sciphage,SciPhage,,,,USD,,https://eatableadventures.com/news/five-startups-set-to-transform-agrifood-innovation-across-spain-and-latin-america/,Eatable Adventures news confirms SciPhage in portfolio; canonical manual edge conf=0.94
+eatable_adventures,Eatable Adventures,nunatak_biotech,Nunatak Biotech,,,,USD,,https://eatableadventures.com/news/five-startups-set-to-transform-agrifood-innovation-across-spain-and-latin-america/,Eatable Adventures news confirms Nunatak Biotech in portfolio; canonical manual edge conf=0.94
+savia_ventures,Savia Ventures,done_properly,Done Properly,,,,USD,,https://saviaventures.com/,Savia Ventures portfolio lists Done Properly; canonical manual edge conf=0.96
+savia_ventures,Savia Ventures,splight,Splight,,,,USD,,https://saviaventures.com/,Savia Ventures portfolio lists Splight; canonical manual edge conf=0.96
+savia_ventures,Savia Ventures,satellites_on_fire,Satellites on Fire,,,,USD,,https://saviaventures.com/,Savia Ventures portfolio lists Satellites on Fire; canonical manual edge conf=0.96
+sp_ventures,SP Ventures,puna_bio,Puna Bio,seed,,3700000,USD,,https://www.prnewswire.com/news-releases/puna-bio-raises-3-7m-seed-funding-to-restore-soil-health-with-desert-microbes-301616553.html,PRNewswire confirms SP Ventures in Puna Bio USD 3.7M seed round; canonical manual edge conf=0.98
+barn_investimentos,Barn Investimentos,rumina,Rumina,seed,,,,true,https://www.barn.ag/portfolio,Barn Investimentos official portfolio lists Rumina; livestock biotech; conf=0.90
+barn_investimentos,Barn Investimentos,agrotoken,Agrotoken,seed,,,,false,https://www.barn.ag/portfolio,Barn Investimentos official portfolio lists Agrotoken; agri tokenization platform; conf=0.88
+fen_ventures,Fen Ventures,andes-biotechnologies-cl,Andes Biotechnologies,seed,,,,true,https://fenventures.com/portfolio,Fen Ventures portfolio lists Andes Biotechnologies; Chilean agtech biotech; conf=0.88
+monashees,Monashees,strider-br,Strider,series-a,,,,false,https://www.monashees.com.br/en/portfolio,Monashees portfolio lists Strider; precision ag intelligence; conf=0.90

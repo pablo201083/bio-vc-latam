@@ -83,6 +83,18 @@ def run_hdbscan(reduced_10d: np.ndarray, params: dict) -> tuple[np.ndarray, np.n
     return labels, probs.astype(np.float32)
 
 
+_BIO_THEME_SHORT: dict[str | None, str] = {
+    "Soil & Microbiome":          "Soil & Microbiome",
+    "Crop & Plant Engineering":   "Crop & Plant Eng.",
+    "Fermentation Economy":       "Fermentation Economy",
+    "Protein Transition":         "Protein Transition",
+    "Human Diagnostics & Access": "Human Diagnostics",
+    "Therapeutics":               "Therapeutics",
+    "Planetary Biology":          "Planetary Biology",
+    "Bio x Data":                 "Bio x Data",
+}
+
+
 def auto_label_clusters(
     labels: np.ndarray,
     texts: list[str],
@@ -91,14 +103,20 @@ def auto_label_clusters(
     ids: list[str] | None = None,
     top_k: int = 4,
     min_df: int = 2,
+    bio_themes: dict[str, str] | None = None,
 ) -> dict[int, str]:
-    """Etiqueta cada cluster con TF-IDF sobre summaries (más discriminativo que codes).
+    """Etiqueta cada cluster con un nombre de dos capas:
 
-    Los códigos de vocabulario se usan sólo para enriquecer casos donde TF-IDF
-    produce términos genéricos. TF-IDF ya tiene IDF implícito que descuenta
-    términos comunes a todos los clusters, haciendo labels más distintivos.
+    - Capa 1 (clean name): bio_theme dominante + top TF-IDF keyword como
+      disambiguador. Ej: "Therapeutics — cancer targeting".
+    - Capa 2 (keywords): top-4 TF-IDF terms, separados por ·.
+
+    El string retornado usa "||" como separador: "Clean Name||kw1 · kw2 · kw3".
+    Si los dos componentes son iguales (fallback), se guarda solo el nombre.
     """
+    from collections import Counter
     from sklearn.feature_extraction.text import TfidfVectorizer
+
     unique_clusters = sorted(set(int(c) for c in labels if c != -1))
     if not unique_clusters:
         return {}
@@ -116,7 +134,7 @@ def auto_label_clusters(
         min_df=min_df,
         stop_words=list(stopwords),
         token_pattern=r"(?u)\b[a-zñáéíóúü]{3,}\b",
-        sublinear_tf=True,  # log(1+tf) — suaviza dominio de términos muy frecuentes
+        sublinear_tf=True,
     )
     try:
         tfidf = vec.fit_transform(docs)
@@ -124,23 +142,76 @@ def auto_label_clusters(
         return {c: f"cluster {c}" for c in unique_clusters}
 
     vocab = np.array(vec.get_feature_names_out())
+
+    # Pre-compute bio_theme distribution per cluster
+    cluster_bio_dist: dict[int, Counter] = {c: Counter() for c in unique_clusters}
+    if bio_themes and ids is not None:
+        for sid, lbl in zip(ids, labels):
+            c = int(lbl)
+            if c != -1:
+                cluster_bio_dist[c][bio_themes.get(sid)] += 1
+
     labels_map: dict[int, str] = {}
     for i, c in enumerate(unique_clusters):
         row = tfidf[i].toarray().ravel()
-        top_idx = np.argsort(row)[::-1][:top_k * 4]  # extra candidates for dedup
+        top_idx = np.argsort(row)[::-1][:top_k * 4]
         candidates = [vocab[j] for j in top_idx if row[j] > 0]
-        # Dedup: skip term if any of its words already appeared in selected terms
+
+        # Phrases that are noisy as labels (reversed bigrams, generic verbs, etc.)
+        _bad_phrases = {
+            "food novel", "novel food", "develops biological", "develops innovative",
+            "develops advanced", "sources develops", "indicators sources",
+            "sources indicators", "resistant vesper", "includes latam",
+            # Translation artifacts from curatorial notes
+            "enter thesis", "enters thesis", "entra tesis", "thesis company",
+            "thesis startup", "enter thesis company",
+            # VC/investor names that leaked into summaries
+            "vesper ventures", "gridx", "gridx portfolio", "gridx complex",
+            "portfolio company", "portfolio startup",
+            "biological based", "based biological",
+        }
+
+        # Dedup TF-IDF terms (no word overlap between selected terms)
         selected: list[str] = []
         seen_words: set[str] = set()
         for term in candidates:
+            if term in _bad_phrases:
+                continue
             words = set(term.split())
-            if words & seen_words:  # any overlap → skip
+            if words & seen_words:
                 continue
             selected.append(term)
             seen_words.update(words)
             if len(selected) >= top_k:
                 break
-        labels_map[c] = " · ".join(selected) if selected else f"cluster {c}"
+        keywords = " · ".join(selected) if selected else ""
+
+        # ── Build clean name ──────────────────────────────────────────
+        dist = cluster_bio_dist[c]
+        if dist:
+            total = sum(dist.values())
+            most_common = dist.most_common()
+            dominant_theme, dominant_n = most_common[0]
+            dominant_pct = dominant_n / total
+
+            base = _BIO_THEME_SHORT.get(dominant_theme, dominant_theme or "Mixed")
+
+            # Top TF-IDF term as disambiguator (prefer bigrams — more specific)
+            bigrams = [t for t in selected if " " in t]
+            unigrams = [t for t in selected if " " not in t]
+            disambig = (bigrams[0] if bigrams else (unigrams[0] if unigrams else "")).title()
+
+            if dominant_pct >= 0.65 and not disambig:
+                clean = base
+            else:
+                clean = f"{base} — {disambig}" if disambig else base
+        else:
+            # No bio_theme data: fall back to top TF-IDF term
+            clean = selected[0].title() if selected else f"Cluster {c}"
+
+        label = f"{clean}||{keywords}" if keywords else clean
+        labels_map[c] = label
+
     return labels_map
 
 
@@ -163,11 +234,21 @@ def _load_stopwords() -> set[str]:
         "improve", "improving", "increase", "increasing",
         "care", "search", "busca", "seek", "seeks", "aim", "aims", "aimed",
         "production", "produccion", "producción",
-        "biotech", "biotechnology",  # demasiado genérico para este corpus
-        "develop", "development", "solution", "solutions", "model", "models",
+        "biotech", "biotechnology",  # too generic for this corpus
+        "develop", "develops", "development", "solution", "solutions", "model", "models",
         "company", "companies", "based", "bases", "level", "levels",
         "management", "optimization", "monitoring", "detection", "analysis",
         "supply", "chain", "chains", "value", "values", "network", "networks",
+        # phrases that produce noisy labels
+        "develops biological", "develops innovative", "develops advanced",
+        "novel food", "food novel", "sources develops", "indicators sources",
+        "sources indicators", "resistant vesper",
+        # Translation artifacts (from "entra en tesis por" → "enters thesis by")
+        "enter", "enters", "thesis", "entra",
+        # VC/investor names that leaked into summaries
+        "vesper", "gridx", "portfolio",
+        # Over-generic in this corpus
+        "complex", "synthesis", "backed",
     }
     es = {
         "que", "para", "con", "una", "los", "las", "del", "por", "como", "sus",
@@ -377,14 +458,16 @@ def write_dashboard_data(conn: sqlite3.Connection) -> None:
     rows = conn.execute("""
         SELECT sx.startup_id, e.canonical_name, e.country_code, e.website,
                sx.macro_theme, sx.emergent_theme,
-               sx.startup_summary_v1, sx.business_one_liner,
+               COALESCE(NULLIF(sx.startup_summary_en,''), sx.startup_summary_v1) AS startup_summary_v1,
+               sx.business_one_liner,
                sx.cluster_id, sx.cluster_label, sx.cluster_confidence,
                sx.umap_x, sx.umap_y, sx.is_outlier,
                sx.tech_codes, sx.industry_codes,
                sx.data_quality_score, sx.quality_band,
                sx.community_id, sx.pagerank,
                sx.valuation_tier,
-               COUNT(ie.investment_id) AS n_rounds
+               COUNT(ie.investment_id) AS n_rounds,
+               sx.bio_theme_primary, sx.bio_theme_secondary, sx.is_bio_universe
         FROM startup_extended sx
         JOIN entities e ON e.entity_id = sx.startup_id
         LEFT JOIN investment_edges ie ON ie.startup_id = sx.startup_id
@@ -397,6 +480,12 @@ def write_dashboard_data(conn: sqlite3.Connection) -> None:
     for r in rows:
         tier_raw = r[20]
         countries_list = _parse_countries(r[2])
+        # Split "Clean Name||kw1 · kw2" from cluster_label
+        raw_label = r[9] or ""
+        if "||" in raw_label:
+            cl_name, cl_kw = raw_label.split("||", 1)
+        else:
+            cl_name, cl_kw = raw_label, ""
         startups.append({
             "id": r[0],
             "name": r[1],
@@ -408,7 +497,8 @@ def write_dashboard_data(conn: sqlite3.Connection) -> None:
             "summary": (r[6] or "")[:600],
             "one_liner": r[7] or "",
             "cluster_id": r[8] if r[8] is not None else -1,
-            "cluster_label": r[9] or "",
+            "cluster_label": cl_name.strip(),
+            "cluster_keywords": cl_kw.strip(),
             "cluster_confidence": round(float(r[10] or 0), 3),
             "x": round(float(r[11] or 0), 3),
             "y": round(float(r[12] or 0), 3),
@@ -421,6 +511,9 @@ def write_dashboard_data(conn: sqlite3.Connection) -> None:
             "pagerank": float(r[19] or 0),
             "valuation_tier": float(tier_raw) if tier_raw is not None else None,
             "n_rounds": int(r[21]),
+            "bio_theme": r[22] or "",
+            "bio_theme_secondary": r[23] or "",
+            "is_bio_universe": r[24],
         })
 
     # Cluster summary con métricas para inversor
@@ -431,8 +524,9 @@ def write_dashboard_data(conn: sqlite3.Connection) -> None:
             cluster_summary[c] = {
                 "cluster_id": c,
                 "label": s["cluster_label"],
+                "keywords": s["cluster_keywords"],
                 "size": 0,
-                "macro_themes": {},
+                "bio_themes": {},
                 "tech_codes": {},
                 "industry_codes": {},
                 "countries": {},
@@ -441,8 +535,8 @@ def write_dashboard_data(conn: sqlite3.Connection) -> None:
             }
         cs = cluster_summary[c]
         cs["size"] += 1
-        m = s["macro_theme"] or "—"
-        cs["macro_themes"][m] = cs["macro_themes"].get(m, 0) + 1
+        b = s["bio_theme"] or "—"
+        cs["bio_themes"][b] = cs["bio_themes"].get(b, 0) + 1
         for t in s["tech_codes"]:
             cs["tech_codes"][t] = cs["tech_codes"].get(t, 0) + 1
         for i in s["industry_codes"]:
@@ -515,6 +609,14 @@ def write_dashboard_data(conn: sqlite3.Connection) -> None:
     print(f"  Dashboard data: {out_path.relative_to(ROOT)} ({out_path.stat().st_size // 1024} KB)")
 
 
+def _clean_label(raw: str) -> tuple[str, str]:
+    """Splits 'Clean Name||kw1 · kw2' → ('Clean Name', 'kw1 · kw2')."""
+    if "||" in raw:
+        name, kw = raw.split("||", 1)
+        return name.strip(), kw.strip()
+    return raw.strip(), ""
+
+
 def print_cluster_summary(
     conn: sqlite3.Connection,
     ids: list[str],
@@ -530,30 +632,38 @@ def print_cluster_summary(
         c = int(lbl)
         counts[c] = counts.get(c, 0) + 1
     for c in sorted(counts.keys()):
-        marker = "outlier" if c == -1 else cluster_labels.get(c, f"cluster {c}")
+        if c == -1:
+            marker = "outlier"
+        else:
+            raw = cluster_labels.get(c, f"cluster {c}")
+            name, kw = _clean_label(raw)
+            marker = f"{name}  [{kw}]" if kw else name
         print(f"{c:>4} {counts[c]:>4}  {marker}")
 
-    # Compare con macro_theme editorial
-    names_for = dict(conn.execute("SELECT entity_id, canonical_name FROM entities").fetchall())
-    macro_for = dict(conn.execute(
-        "SELECT startup_id, macro_theme FROM startup_extended WHERE scope_decision='include'"
+    # Compare con bio_theme_primary
+    bio_for = dict(conn.execute(
+        "SELECT startup_id, bio_theme_primary FROM startup_extended WHERE scope_decision='include'"
     ).fetchall())
 
-    # Para cada cluster (no outlier) mostrar distribución de macro_theme editorial
-    print("\n=== CLUSTER vs MACRO_THEME EDITORIAL (top 5 por cluster) ===")
-    cluster_to_macros: dict[int, dict[str, int]] = {}
+    print("\n=== CLUSTER vs BIO THEME (top 5 per cluster) ===")
+    cluster_to_bio: dict[int, dict[str, int]] = {}
     for sid, lbl in zip(ids, labels):
         c = int(lbl)
-        if c == -1: continue
-        m = (macro_for.get(sid) or "").strip() or "—"
-        cluster_to_macros.setdefault(c, {})[m] = cluster_to_macros.setdefault(c, {}).get(m, 0) + 1
+        if c == -1:
+            continue
+        b = (bio_for.get(sid) or "").strip() or "—"
+        cluster_to_bio.setdefault(c, {})[b] = cluster_to_bio.setdefault(c, {}).get(b, 0) + 1
 
-    for c in sorted(cluster_to_macros.keys()):
-        cl = cluster_labels.get(c, f"cluster {c}")
-        print(f"\n  [{c}] {cl}  ({counts[c]} startups)")
-        macros = sorted(cluster_to_macros[c].items(), key=lambda kv: kv[1], reverse=True)
-        for m, n in macros[:5]:
-            print(f"     {n:>3}  {m[:70]}")
+    for c in sorted(cluster_to_bio.keys()):
+        raw = cluster_labels.get(c, f"cluster {c}")
+        name, kw = _clean_label(raw)
+        print(f"\n  [{c}] {name}  ({counts[c]} startups)")
+        if kw:
+            print(f"       keywords: {kw}")
+        bios = sorted(cluster_to_bio[c].items(), key=lambda kv: kv[1], reverse=True)
+        for b, n in bios[:5]:
+            pct = round(100 * n / counts[c])
+            print(f"     {n:>3}  ({pct:>2}%)  {b[:65]}")
 
 
 def run(
@@ -594,8 +704,10 @@ def run(
     # 5. Auto-label
     conn = sqlite3.connect(db_path)
     texts_for_label = []
+    # Prefer English-normalized summary for TF-IDF labels; fall back to original
     rows_by_id = dict(conn.execute(
-        "SELECT startup_id, startup_summary_v1 FROM startup_extended"
+        "SELECT startup_id, COALESCE(NULLIF(startup_summary_en,''), startup_summary_v1) "
+        "FROM startup_extended"
     ).fetchall())
     for sid in ids:
         texts_for_label.append(rows_by_id.get(sid) or "")
@@ -603,9 +715,16 @@ def run(
     print("  Extrayendo tech_codes e industry_codes desde vocabularios...")
     tech_map, ind_map = extract_codes_for_all(conn, ids)
 
+    # Mapa startup_id → bio_theme_primary para enriquecer los cluster labels
+    bio_themes_map: dict[str, str] = dict(conn.execute(
+        "SELECT startup_id, bio_theme_primary FROM startup_extended "
+        "WHERE bio_theme_primary IS NOT NULL AND bio_theme_primary != ''"
+    ).fetchall())
+
     cluster_labels = auto_label_clusters(
         labels, texts_for_label,
         tech_map=tech_map, ind_map=ind_map, ids=ids,
+        bio_themes=bio_themes_map,
     )
     print(f"  Labels auto-generados: {len(cluster_labels)}")
 
