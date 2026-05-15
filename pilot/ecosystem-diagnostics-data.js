@@ -1,16 +1,16 @@
 window.ECOSYSTEM_DIAGNOSTICS_DATA = {
-  "computed_at": "2026-05-15T00:22:29+00:00",
+  "computed_at": "2026-05-15T00:54:17+00:00",
   "stats": {
     "total_nodes": 643,
-    "total_edges": 463,
+    "total_edges": 466,
     "communities": 18,
-    "isolated_startups": 179,
+    "isolated_startups": 176,
     "bridges": 10,
     "bottlenecks_critical": 12,
-    "bottlenecks_high": 6,
-    "bottlenecks_moderate": 2,
+    "bottlenecks_high": 5,
+    "bottlenecks_moderate": 4,
     "whitespace_cells": 56,
-    "uncovered_cells": 4
+    "uncovered_cells": 2
   },
   "bottlenecks": [
     {
@@ -37,7 +37,7 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
       "fund_name": "SOSV_IndieBio",
       "fund_country": "US",
       "entity_id": "SOSV_IndieBio",
-      "community_id": 9,
+      "community_id": 8,
       "coverage_pct": 100.0,
       "deals": 13,
       "community_size": 13,
@@ -84,23 +84,23 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
       "risk": "critical"
     },
     {
+      "fund_name": "Inventure",
+      "fund_country": "FI",
+      "entity_id": "inventure",
+      "community_id": 10,
+      "coverage_pct": 83.3,
+      "deals": 10,
+      "community_size": 12,
+      "risk": "critical"
+    },
+    {
       "fund_name": "The Yield Lab LATAM",
       "fund_country": "US",
       "entity_id": "the_yield_lab_latam",
       "community_id": 4,
-      "coverage_pct": 75.0,
-      "deals": 21,
-      "community_size": 28,
-      "risk": "critical"
-    },
-    {
-      "fund_name": "Kamay Ventures",
-      "fund_country": "AR",
-      "entity_id": "kamay_ventures",
-      "community_id": 3,
-      "coverage_pct": 73.9,
-      "deals": 17,
-      "community_size": 23,
+      "coverage_pct": 77.4,
+      "deals": 24,
+      "community_size": 31,
       "risk": "critical"
     },
     {
@@ -124,24 +124,14 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
       "risk": "critical"
     },
     {
-      "fund_name": "Inventure",
-      "fund_country": "FI",
-      "entity_id": "inventure",
-      "community_id": 8,
-      "coverage_pct": 50.0,
-      "deals": 12,
-      "community_size": 24,
+      "fund_name": "Kamay Ventures",
+      "fund_country": "AR",
+      "entity_id": "kamay_ventures",
+      "community_id": 3,
+      "coverage_pct": 51.4,
+      "deals": 18,
+      "community_size": 35,
       "risk": "critical"
-    },
-    {
-      "fund_name": "Antom",
-      "fund_country": "CR",
-      "entity_id": "Antom",
-      "community_id": 8,
-      "coverage_pct": 45.8,
-      "deals": 11,
-      "community_size": 24,
-      "risk": "high"
     },
     {
       "fund_name": "DraperCygnus",
@@ -157,7 +147,7 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
       "fund_name": "GridX",
       "fund_country": "AR",
       "entity_id": "GridX",
-      "community_id": 9,
+      "community_id": 8,
       "coverage_pct": 38.5,
       "deals": 5,
       "community_size": 13,
@@ -174,13 +164,23 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
       "risk": "high"
     },
     {
-      "fund_name": "Savia Ventures",
-      "fund_country": "CL",
-      "entity_id": "savia_ventures",
+      "fund_name": "Pampa Start",
+      "fund_country": "AR",
+      "entity_id": "pampa_start",
+      "community_id": 10,
+      "coverage_pct": 33.3,
+      "deals": 4,
+      "community_size": 12,
+      "risk": "high"
+    },
+    {
+      "fund_name": "Antom",
+      "fund_country": "CR",
+      "entity_id": "Antom",
       "community_id": 3,
-      "coverage_pct": 34.8,
-      "deals": 8,
-      "community_size": 23,
+      "coverage_pct": 31.4,
+      "deals": 11,
+      "community_size": 35,
       "risk": "high"
     },
     {
@@ -188,19 +188,19 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
       "fund_country": "BR",
       "entity_id": "kptl",
       "community_id": 4,
-      "coverage_pct": 32.1,
+      "coverage_pct": 29.0,
       "deals": 9,
-      "community_size": 28,
-      "risk": "high"
+      "community_size": 31,
+      "risk": "moderate"
     },
     {
-      "fund_name": "GLOCAL",
-      "fund_country": "AR",
-      "entity_id": "glocal",
-      "community_id": 8,
-      "coverage_pct": 29.2,
-      "deals": 7,
-      "community_size": 24,
+      "fund_name": "Savia Ventures",
+      "fund_country": "CL",
+      "entity_id": "savia_ventures",
+      "community_id": 3,
+      "coverage_pct": 25.7,
+      "deals": 9,
+      "community_size": 35,
       "risk": "moderate"
     },
     {
@@ -212,6 +212,16 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
       "deals": 10,
       "community_size": 47,
       "risk": "moderate"
+    },
+    {
+      "fund_name": "GLOCAL",
+      "fund_country": "AR",
+      "entity_id": "glocal",
+      "community_id": 3,
+      "coverage_pct": 20.0,
+      "deals": 7,
+      "community_size": 35,
+      "risk": "moderate"
     }
   ],
   "super_connectors": [
@@ -219,13 +229,13 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
       "fund_name": "GridX",
       "entity_id": "GridX",
       "bridges": 21,
-      "communities_reached": 5
+      "communities_reached": 6
     },
     {
       "fund_name": "AIR Capital",
       "entity_id": "AIR Capital",
       "bridges": 6,
-      "communities_reached": 5
+      "communities_reached": 4
     },
     {
       "fund_name": "SP Ventures",
@@ -261,11 +271,11 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
       "fund_name": "SF500",
       "entity_id": "SF500",
       "bridges": 2,
-      "communities_reached": 1
+      "communities_reached": 2
     },
     {
-      "fund_name": "Kamay Ventures",
-      "entity_id": "kamay_ventures",
+      "fund_name": "Inventure",
+      "entity_id": "inventure",
       "bridges": 2,
       "communities_reached": 1
     },
@@ -577,17 +587,17 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
       "macro_theme": "precision agriculture and resource intelligence",
       "country_code": "PE",
       "startup_count": 1,
-      "investor_count": 0,
+      "investor_count": 1,
       "opportunity_score": 1.0,
-      "is_uncovered": true
+      "is_uncovered": false
     },
     {
       "macro_theme": "precision agriculture and resource intelligence",
       "country_code": "CO",
       "startup_count": 1,
-      "investor_count": 0,
+      "investor_count": 1,
       "opportunity_score": 1.0,
-      "is_uncovered": true
+      "is_uncovered": false
     },
     {
       "macro_theme": "food biotech and novel ingredients",
