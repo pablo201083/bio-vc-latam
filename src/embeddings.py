@@ -151,8 +151,10 @@ def run(force: bool = False, db_path: pathlib.Path = DB_PATH) -> dict:
 
     # Cargar el modelo (descarga la primera vez)
     print("  Cargando modelo (puede descargar ~120 MB la primera vez)...")
+    import os
+    os.environ.setdefault("TOKENIZERS_PARALLELISM", "false")  # evita segfault en Windows
     from sentence_transformers import SentenceTransformer
-    model = SentenceTransformer(MODEL_NAME)
+    model = SentenceTransformer(MODEL_NAME, device="cpu")  # device='cpu' evita segfault en Windows
 
     print("  Vectorizando...")
     vectors = model.encode(

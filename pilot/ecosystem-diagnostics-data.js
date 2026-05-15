@@ -1,5 +1,5 @@
 window.ECOSYSTEM_DIAGNOSTICS_DATA = {
-  "computed_at": "2026-05-14T22:28:24+00:00",
+  "computed_at": "2026-05-15T00:22:29+00:00",
   "stats": {
     "total_nodes": 643,
     "total_edges": 463,
@@ -9,7 +9,7 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
     "bottlenecks_critical": 12,
     "bottlenecks_high": 6,
     "bottlenecks_moderate": 2,
-    "whitespace_cells": 54,
+    "whitespace_cells": 56,
     "uncovered_cells": 4
   },
   "bottlenecks": [
@@ -294,14 +294,6 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
       "is_uncovered": false
     },
     {
-      "macro_theme": "precision agriculture and resource intelligence",
-      "country_code": "BR",
-      "startup_count": 24,
-      "investor_count": 5,
-      "opportunity_score": 4.8,
-      "is_uncovered": false
-    },
-    {
       "macro_theme": "therapeutics and regenerative medicine",
       "country_code": "AR",
       "startup_count": 32,
@@ -323,6 +315,14 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
       "startup_count": 13,
       "investor_count": 3,
       "opportunity_score": 4.33,
+      "is_uncovered": false
+    },
+    {
+      "macro_theme": "precision agriculture and resource intelligence",
+      "country_code": "BR",
+      "startup_count": 21,
+      "investor_count": 5,
+      "opportunity_score": 4.2,
       "is_uncovered": false
     },
     {
@@ -414,6 +414,14 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
       "is_uncovered": false
     },
     {
+      "macro_theme": "precision agriculture and resource intelligence",
+      "country_code": "AR",
+      "startup_count": 12,
+      "investor_count": 6,
+      "opportunity_score": 2.0,
+      "is_uncovered": false
+    },
+    {
       "macro_theme": "biomanufacturing and bioindustrial platforms",
       "country_code": "AR",
       "startup_count": 10,
@@ -459,14 +467,6 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
       "startup_count": 21,
       "investor_count": 11,
       "opportunity_score": 1.91,
-      "is_uncovered": false
-    },
-    {
-      "macro_theme": "precision agriculture and resource intelligence",
-      "country_code": "AR",
-      "startup_count": 15,
-      "investor_count": 8,
-      "opportunity_score": 1.88,
       "is_uncovered": false
     },
     {
@@ -575,14 +575,6 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
     },
     {
       "macro_theme": "precision agriculture and resource intelligence",
-      "country_code": "US",
-      "startup_count": 1,
-      "investor_count": 1,
-      "opportunity_score": 1.0,
-      "is_uncovered": false
-    },
-    {
-      "macro_theme": "precision agriculture and resource intelligence",
       "country_code": "PE",
       "startup_count": 1,
       "investor_count": 0,
@@ -670,6 +662,22 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
       "is_uncovered": false
     },
     {
+      "macro_theme": "agricultural market infrastructure and data systems",
+      "country_code": "US",
+      "startup_count": 1,
+      "investor_count": 1,
+      "opportunity_score": 1.0,
+      "is_uncovered": false
+    },
+    {
+      "macro_theme": "agricultural market infrastructure and data systems",
+      "country_code": "BR",
+      "startup_count": 3,
+      "investor_count": 4,
+      "opportunity_score": 0.75,
+      "is_uncovered": false
+    },
+    {
       "macro_theme": "food biotech and novel ingredients",
       "country_code": "MX",
       "startup_count": 2,
@@ -691,6 +699,14 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
       "startup_count": 2,
       "investor_count": 3,
       "opportunity_score": 0.67,
+      "is_uncovered": false
+    },
+    {
+      "macro_theme": "agricultural market infrastructure and data systems",
+      "country_code": "AR",
+      "startup_count": 3,
+      "investor_count": 5,
+      "opportunity_score": 0.6,
       "is_uncovered": false
     },
     {

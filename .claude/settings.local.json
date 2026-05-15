@@ -16,7 +16,27 @@
       "Bash(.venv/Scripts/python.exe db/import_csvs.py)",
       "Bash(.venv/Scripts/python.exe -m pip install networkx python-louvain)",
       "Bash(.venv/Scripts/python.exe -m src.graph_analytics)",
-      "Bash(.venv/Scripts/python.exe -m pip install scipy)"
+      "Bash(.venv/Scripts/python.exe -m pip install scipy)",
+      "Bash(node pilot/server.js)",
+      "Bash(../.venv/Scripts/python.exe -m http.server 4173 --bind 127.0.0.1)",
+      "Bash(curl -s -o /dev/null -w \"ecosystem-diagnostics.html: HTTP %{http_code} - %{size_download} bytes\\\\n\" http://127.0.0.1:4173/ecosystem-diagnostics.html)",
+      "Bash(curl -s -o /dev/null -w \"data file:                  HTTP %{http_code} - %{size_download} bytes\\\\n\" http://127.0.0.1:4173/ecosystem-diagnostics-data.js)",
+      "Bash(curl -s -o /dev/null -w \"styles.css:                 HTTP %{http_code} - %{size_download} bytes\\\\n\" http://127.0.0.1:4173/styles.css)",
+      "Bash(.venv/Scripts/python.exe -c \"import networkx; print\\('networkx', networkx.__version__\\)\")",
+      "WebSearch",
+      "WebFetch(domain:reports.cuanticovp.com)",
+      "WebFetch(domain:www.startuplinks.world)",
+      "WebFetch(domain:revistapesquisa.fapesp.br)",
+      "WebFetch(domain:daluscapital.com)",
+      "WebFetch(domain:www.failory.com)",
+      "WebFetch(domain:contxto.com)",
+      "Bash(python pipeline.py ingest-discovered)",
+      "WebFetch(domain:www.ycombinator.com)",
+      "WebFetch(domain:agencia.fapesp.br)",
+      "WebFetch(domain:biofabrica.com.mx)",
+      "WebFetch(domain:www.labiotech.eu)",
+      "Bash(python -c ' *)",
+      "WebFetch(domain:www.greenrock.vc)"
     ]
   }
 }
