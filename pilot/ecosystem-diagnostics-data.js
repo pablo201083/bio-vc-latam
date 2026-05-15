@@ -1,14 +1,14 @@
 window.ECOSYSTEM_DIAGNOSTICS_DATA = {
-  "computed_at": "2026-05-15T00:54:17+00:00",
+  "computed_at": "2026-05-15T18:33:11+00:00",
   "stats": {
-    "total_nodes": 643,
-    "total_edges": 466,
-    "communities": 18,
-    "isolated_startups": 176,
+    "total_nodes": 655,
+    "total_edges": 487,
+    "communities": 28,
+    "isolated_startups": 161,
     "bridges": 10,
-    "bottlenecks_critical": 12,
-    "bottlenecks_high": 5,
-    "bottlenecks_moderate": 4,
+    "bottlenecks_critical": 11,
+    "bottlenecks_high": 7,
+    "bottlenecks_moderate": 2,
     "whitespace_cells": 56,
     "uncovered_cells": 2
   },
@@ -37,7 +37,7 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
       "fund_name": "SOSV_IndieBio",
       "fund_country": "US",
       "entity_id": "SOSV_IndieBio",
-      "community_id": 8,
+      "community_id": 9,
       "coverage_pct": 100.0,
       "deals": 13,
       "community_size": 13,
@@ -57,7 +57,7 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
       "fund_name": "Newtopia VC",
       "fund_country": "AR",
       "entity_id": "newtopia_vc",
-      "community_id": 16,
+      "community_id": 18,
       "coverage_pct": 100.0,
       "deals": 4,
       "community_size": 4,
@@ -77,20 +77,10 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
       "fund_name": "SP Ventures",
       "fund_country": "BR",
       "entity_id": "sp_ventures",
-      "community_id": 17,
-      "coverage_pct": 89.5,
-      "deals": 34,
-      "community_size": 38,
-      "risk": "critical"
-    },
-    {
-      "fund_name": "Inventure",
-      "fund_country": "FI",
-      "entity_id": "inventure",
-      "community_id": 10,
-      "coverage_pct": 83.3,
-      "deals": 10,
-      "community_size": 12,
+      "community_id": 20,
+      "coverage_pct": 89.7,
+      "deals": 35,
+      "community_size": 39,
       "risk": "critical"
     },
     {
@@ -101,6 +91,16 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
       "coverage_pct": 77.4,
       "deals": 24,
       "community_size": 31,
+      "risk": "critical"
+    },
+    {
+      "fund_name": "Kamay Ventures",
+      "fund_country": "AR",
+      "entity_id": "kamay_ventures",
+      "community_id": 3,
+      "coverage_pct": 73.9,
+      "deals": 17,
+      "community_size": 23,
       "risk": "critical"
     },
     {
@@ -124,14 +124,14 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
       "risk": "critical"
     },
     {
-      "fund_name": "Kamay Ventures",
-      "fund_country": "AR",
-      "entity_id": "kamay_ventures",
-      "community_id": 3,
-      "coverage_pct": 51.4,
-      "deals": 18,
-      "community_size": 35,
-      "risk": "critical"
+      "fund_name": "Inventure",
+      "fund_country": "FI",
+      "entity_id": "inventure",
+      "community_id": 8,
+      "coverage_pct": 44.4,
+      "deals": 12,
+      "community_size": 27,
+      "risk": "high"
     },
     {
       "fund_name": "DraperCygnus",
@@ -144,10 +144,20 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
       "risk": "high"
     },
     {
+      "fund_name": "Antom",
+      "fund_country": "CR",
+      "entity_id": "Antom",
+      "community_id": 8,
+      "coverage_pct": 40.7,
+      "deals": 11,
+      "community_size": 27,
+      "risk": "high"
+    },
+    {
       "fund_name": "GridX",
       "fund_country": "AR",
       "entity_id": "GridX",
-      "community_id": 8,
+      "community_id": 9,
       "coverage_pct": 38.5,
       "deals": 5,
       "community_size": 13,
@@ -164,23 +174,23 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
       "risk": "high"
     },
     {
-      "fund_name": "Pampa Start",
-      "fund_country": "AR",
-      "entity_id": "pampa_start",
-      "community_id": 10,
-      "coverage_pct": 33.3,
-      "deals": 4,
-      "community_size": 12,
+      "fund_name": "Savia Ventures",
+      "fund_country": "CL",
+      "entity_id": "savia_ventures",
+      "community_id": 3,
+      "coverage_pct": 34.8,
+      "deals": 8,
+      "community_size": 23,
       "risk": "high"
     },
     {
-      "fund_name": "Antom",
-      "fund_country": "CR",
-      "entity_id": "Antom",
-      "community_id": 3,
-      "coverage_pct": 31.4,
-      "deals": 11,
-      "community_size": 35,
+      "fund_name": "GLOCAL",
+      "fund_country": "AR",
+      "entity_id": "glocal",
+      "community_id": 8,
+      "coverage_pct": 33.3,
+      "deals": 9,
+      "community_size": 27,
       "risk": "high"
     },
     {
@@ -194,16 +204,6 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
       "risk": "moderate"
     },
     {
-      "fund_name": "Savia Ventures",
-      "fund_country": "CL",
-      "entity_id": "savia_ventures",
-      "community_id": 3,
-      "coverage_pct": 25.7,
-      "deals": 9,
-      "community_size": 35,
-      "risk": "moderate"
-    },
-    {
       "fund_name": "DragonesVP",
       "fund_country": "CR",
       "entity_id": "DragonesVP",
@@ -212,16 +212,6 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
       "deals": 10,
       "community_size": 47,
       "risk": "moderate"
-    },
-    {
-      "fund_name": "GLOCAL",
-      "fund_country": "AR",
-      "entity_id": "glocal",
-      "community_id": 3,
-      "coverage_pct": 20.0,
-      "deals": 7,
-      "community_size": 35,
-      "risk": "moderate"
     }
   ],
   "super_connectors": [
@@ -229,13 +219,19 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
       "fund_name": "GridX",
       "entity_id": "GridX",
       "bridges": 21,
-      "communities_reached": 6
+      "communities_reached": 5
     },
     {
       "fund_name": "AIR Capital",
       "entity_id": "AIR Capital",
       "bridges": 6,
-      "communities_reached": 4
+      "communities_reached": 5
+    },
+    {
+      "fund_name": "The Yield Lab LATAM",
+      "entity_id": "the_yield_lab_latam",
+      "bridges": 5,
+      "communities_reached": 3
     },
     {
       "fund_name": "SP Ventures",
@@ -262,20 +258,14 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
       "communities_reached": 3
     },
     {
-      "fund_name": "The Yield Lab LATAM",
-      "entity_id": "the_yield_lab_latam",
-      "bridges": 3,
-      "communities_reached": 3
-    },
-    {
       "fund_name": "SF500",
       "entity_id": "SF500",
       "bridges": 2,
-      "communities_reached": 2
+      "communities_reached": 1
     },
     {
-      "fund_name": "Inventure",
-      "entity_id": "inventure",
+      "fund_name": "Kamay Ventures",
+      "entity_id": "kamay_ventures",
       "bridges": 2,
       "communities_reached": 1
     },
@@ -287,22 +277,6 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
     }
   ],
   "whitespace": [
-    {
-      "macro_theme": "ag biologicals and crop resilience",
-      "country_code": "BR",
-      "startup_count": 23,
-      "investor_count": 4,
-      "opportunity_score": 5.75,
-      "is_uncovered": false
-    },
-    {
-      "macro_theme": "precision agriculture and resource intelligence",
-      "country_code": "CL",
-      "startup_count": 5,
-      "investor_count": 1,
-      "opportunity_score": 5.0,
-      "is_uncovered": false
-    },
     {
       "macro_theme": "therapeutics and regenerative medicine",
       "country_code": "AR",
@@ -328,14 +302,6 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
       "is_uncovered": false
     },
     {
-      "macro_theme": "precision agriculture and resource intelligence",
-      "country_code": "BR",
-      "startup_count": 21,
-      "investor_count": 5,
-      "opportunity_score": 4.2,
-      "is_uncovered": false
-    },
-    {
       "macro_theme": "ag biologicals and crop resilience",
       "country_code": "MX",
       "startup_count": 4,
@@ -344,11 +310,11 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
       "is_uncovered": false
     },
     {
-      "macro_theme": "climate, energy and resource systems",
+      "macro_theme": "ag biologicals and crop resilience",
       "country_code": "BR",
-      "startup_count": 19,
-      "investor_count": 5,
-      "opportunity_score": 3.8,
+      "startup_count": 23,
+      "investor_count": 7,
+      "opportunity_score": 3.29,
       "is_uncovered": false
     },
     {
@@ -357,6 +323,14 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
       "startup_count": 28,
       "investor_count": 9,
       "opportunity_score": 3.11,
+      "is_uncovered": false
+    },
+    {
+      "macro_theme": "precision agriculture and resource intelligence",
+      "country_code": "BR",
+      "startup_count": 21,
+      "investor_count": 7,
+      "opportunity_score": 3.0,
       "is_uncovered": false
     },
     {
@@ -385,22 +359,14 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
     },
     {
       "macro_theme": "climate, energy and resource systems",
-      "country_code": "CL",
-      "startup_count": 5,
-      "investor_count": 2,
-      "opportunity_score": 2.5,
+      "country_code": "BR",
+      "startup_count": 19,
+      "investor_count": 8,
+      "opportunity_score": 2.38,
       "is_uncovered": false
     },
     {
       "macro_theme": "therapeutics and regenerative medicine",
-      "country_code": "CL",
-      "startup_count": 9,
-      "investor_count": 4,
-      "opportunity_score": 2.25,
-      "is_uncovered": false
-    },
-    {
-      "macro_theme": "diagnostics and medtech",
       "country_code": "CL",
       "startup_count": 9,
       "investor_count": 4,
@@ -428,14 +394,6 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
       "country_code": "AR",
       "startup_count": 12,
       "investor_count": 6,
-      "opportunity_score": 2.0,
-      "is_uncovered": false
-    },
-    {
-      "macro_theme": "biomanufacturing and bioindustrial platforms",
-      "country_code": "AR",
-      "startup_count": 10,
-      "investor_count": 5,
       "opportunity_score": 2.0,
       "is_uncovered": false
     },
@@ -480,6 +438,30 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
       "is_uncovered": false
     },
     {
+      "macro_theme": "diagnostics and medtech",
+      "country_code": "CL",
+      "startup_count": 9,
+      "investor_count": 5,
+      "opportunity_score": 1.8,
+      "is_uncovered": false
+    },
+    {
+      "macro_theme": "biomanufacturing and bioindustrial platforms",
+      "country_code": "AR",
+      "startup_count": 10,
+      "investor_count": 6,
+      "opportunity_score": 1.67,
+      "is_uncovered": false
+    },
+    {
+      "macro_theme": "precision agriculture and resource intelligence",
+      "country_code": "CL",
+      "startup_count": 5,
+      "investor_count": 3,
+      "opportunity_score": 1.67,
+      "is_uncovered": false
+    },
+    {
       "macro_theme": "computational biology and scientific software",
       "country_code": "BR",
       "startup_count": 5,
@@ -504,14 +486,6 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
       "is_uncovered": false
     },
     {
-      "macro_theme": "food biotech and novel ingredients",
-      "country_code": "CL",
-      "startup_count": 9,
-      "investor_count": 6,
-      "opportunity_score": 1.5,
-      "is_uncovered": false
-    },
-    {
       "macro_theme": "therapeutics and regenerative medicine",
       "country_code": "UY",
       "startup_count": 3,
@@ -529,7 +503,7 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
     },
     {
       "macro_theme": "climate, energy and resource systems",
-      "country_code": "MX",
+      "country_code": "CL",
       "startup_count": 5,
       "investor_count": 4,
       "opportunity_score": 1.25,
@@ -541,6 +515,14 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
       "startup_count": 6,
       "investor_count": 5,
       "opportunity_score": 1.2,
+      "is_uncovered": false
+    },
+    {
+      "macro_theme": "food biotech and novel ingredients",
+      "country_code": "CL",
+      "startup_count": 9,
+      "investor_count": 8,
+      "opportunity_score": 1.12,
       "is_uncovered": false
     },
     {
@@ -677,6 +659,14 @@ window.ECOSYSTEM_DIAGNOSTICS_DATA = {
       "startup_count": 1,
       "investor_count": 1,
       "opportunity_score": 1.0,
+      "is_uncovered": false
+    },
+    {
+      "macro_theme": "climate, energy and resource systems",
+      "country_code": "MX",
+      "startup_count": 5,
+      "investor_count": 6,
+      "opportunity_score": 0.83,
       "is_uncovered": false
     },
     {
