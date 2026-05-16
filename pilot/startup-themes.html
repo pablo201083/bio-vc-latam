@@ -830,7 +830,7 @@ function updateHalos(){
       }
     }
 
-    // Calcular posición inicial: borde superior del blob
+    // Nombres cortos para que los labels sean más compactos
     const LABEL_SHORT={
       "Therapeutics":"Therapeutics",
       "Diagnostics & Health Access":"Diagnostics",
@@ -843,12 +843,26 @@ function updateHalos(){
     };
     const shortName=LABEL_SHORT[theme]||theme.split(" ")[0];
     const fs=11;
-    const w=shortName.length*fs*0.58+16, h=fs+9;
+    const w=shortName.length*fs*0.58+18, h=fs+10;
     const blobPad=hullPts.length<=1?28:hullPts.length<4?20:22;
-    const hullTopY=hullPts.length>0?Math.min(...hullPts.map(p=>p[1])):cy;
-    const ay=Math.max(h/2+8, hullTopY-blobPad+h/2+2);
+
+    // Radio efectivo del blob desde el centroide
+    const blobR=hullPts.length>0
+      ?Math.max(28,...hullPts.map(p=>Math.sqrt((p[0]-cx)**2+(p[1]-cy)**2)))+blobPad
+      :38;
+
+    // Dirección radial: desde el centro del canvas hacia el centroide del cluster
+    // → el label se posiciona en el espacio exterior al blob
+    const canvasCx=W/2, canvasCy=H/2;
+    const dirX=cx-canvasCx||0.001, dirY=cy-canvasCy||0.001;
+    const dirLen=Math.sqrt(dirX*dirX+dirY*dirY);
+    const ndx=dirX/dirLen, ndy=dirY/dirLen;
+    const pushDist=blobR+h*0.6+4;
+    const ax=Math.max(w/2+10,Math.min(W-w/2-10, cx+ndx*pushDist));
+    const ay=Math.max(h/2+10,Math.min(H-h/2-10, cy+ndy*pushDist));
+
     lbls.push({
-      x:cx, y:ay, ax:cx, ay,
+      x:ax, y:ay, ax, ay,
       w, h, fs, shortName, color,
       alpha:themeHasMatch?"0.9":"0.3",
       textOp:themeHasMatch?"0.95":"0.2",
@@ -856,39 +870,34 @@ function updateHalos(){
   });
 
   // ── Pasada 2: force-repulsion entre etiquetas ────────────────────────────
-  for(let it=0;it<280;it++){
-    const attract=it<200?0.012:0.006; // atracción más débil — labels pueden alejarse más
+  for(let it=0;it<220;it++){
+    const attract=0.008; // atracción débil — las labels pueden alejarse bastante
     for(let i=0;i<lbls.length;i++){
       for(let j=i+1;j<lbls.length;j++){
         const a=lbls[i],b=lbls[j];
-        const gapX=(a.w+b.w)/2+12, gapY=(a.h+b.h)/2+10;
-        const dx=a.x-b.x, dy=a.y-b.y;
+        const gapX=(a.w+b.w)/2+14, gapY=(a.h+b.h)/2+10;
+        const dx=a.x-b.x||0.01, dy=a.y-b.y||0.01;
         const ox=gapX-Math.abs(dx), oy=gapY-Math.abs(dy);
         if(ox>0&&oy>0){
-          if(ox<oy){
-            const push=ox*0.55*(dx>=0?1:-1);
-            a.x+=push;b.x-=push;
-          }else{
-            const push=oy*0.55*(dy>=0?1:-1);
-            a.y+=push;b.y-=push;
-          }
+          if(ox<oy){const p=ox*0.6*(dx>=0?1:-1);a.x+=p;b.x-=p;}
+          else{const p=oy*0.6*(dy>=0?1:-1);a.y+=p;b.y-=p;}
         }
       }
     }
     lbls.forEach(l=>{
       l.x+=(l.ax-l.x)*attract;
       l.y+=(l.ay-l.y)*attract;
-      l.x=Math.max(l.w/2+8,Math.min(W-l.w/2-8,l.x));
-      l.y=Math.max(l.h/2+8,Math.min(H-l.h/2-8,l.y));
+      l.x=Math.max(l.w/2+10,Math.min(W-l.w/2-10,l.x));
+      l.y=Math.max(l.h/2+10,Math.min(H-l.h/2-10,l.y));
     });
   }
-  // Pasada de separación final garantizada (push=1.0 — resolución dura)
-  for(let pass=0;pass<8;pass++){
+  // Pasada final: separación dura garantizada
+  for(let pass=0;pass<10;pass++){
     for(let i=0;i<lbls.length;i++){
       for(let j=i+1;j<lbls.length;j++){
         const a=lbls[i],b=lbls[j];
-        const gapX=(a.w+b.w)/2+10, gapY=(a.h+b.h)/2+8;
-        const dx=a.x-b.x||0.1, dy=a.y-b.y||0.1;
+        const gapX=(a.w+b.w)/2+12, gapY=(a.h+b.h)/2+8;
+        const dx=a.x-b.x||0.01, dy=a.y-b.y||0.01;
         const ox=gapX-Math.abs(dx), oy=gapY-Math.abs(dy);
         if(ox>0&&oy>0){
           if(ox<oy){const p=ox*0.5*(dx>=0?1:-1);a.x+=p;b.x-=p;}
@@ -897,8 +906,8 @@ function updateHalos(){
       }
     }
     lbls.forEach(l=>{
-      l.x=Math.max(l.w/2+8,Math.min(W-l.w/2-8,l.x));
-      l.y=Math.max(l.h/2+8,Math.min(H-l.h/2-8,l.y));
+      l.x=Math.max(l.w/2+10,Math.min(W-l.w/2-10,l.x));
+      l.y=Math.max(l.h/2+10,Math.min(H-l.h/2-10,l.y));
     });
   }
 
