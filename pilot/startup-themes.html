@@ -846,18 +846,20 @@ function updateHalos(){
     const w=shortName.length*fs*0.58+18, h=fs+10;
     const blobPad=hullPts.length<=1?28:hullPts.length<4?20:22;
 
-    // Radio efectivo del blob desde el centroide
-    const blobR=hullPts.length>0
+    // Radio efectivo del blob — cappado para que el label no se vaya demasiado lejos
+    const rawBlobR=hullPts.length>0
       ?Math.max(28,...hullPts.map(p=>Math.sqrt((p[0]-cx)**2+(p[1]-cy)**2)))+blobPad
       :38;
+    const blobR=Math.min(rawBlobR, 90); // cap: clusters grandes no empujan demasiado
 
-    // Dirección radial: desde el centro del canvas hacia el centroide del cluster
-    // → el label se posiciona en el espacio exterior al blob
+    // Dirección radial desde el centro del canvas hacia el centroide del cluster
     const canvasCx=W/2, canvasCy=H/2;
-    const dirX=cx-canvasCx||0.001, dirY=cy-canvasCy||0.001;
+    const dirX=cx-canvasCx, dirY=cy-canvasCy;
     const dirLen=Math.sqrt(dirX*dirX+dirY*dirY);
-    const ndx=dirX/dirLen, ndy=dirY/dirLen;
-    const pushDist=blobR+h*0.6+4;
+    // Si el cluster está muy cerca del centro del canvas, usar dirección hacia arriba
+    const ndx=dirLen>60?dirX/dirLen:0;
+    const ndy=dirLen>60?dirY/dirLen:-1;
+    const pushDist=blobR+h+6;
     const ax=Math.max(w/2+10,Math.min(W-w/2-10, cx+ndx*pushDist));
     const ay=Math.max(h/2+10,Math.min(H-h/2-10, cy+ndy*pushDist));
 
@@ -869,47 +871,39 @@ function updateHalos(){
     });
   });
 
-  // ── Pasada 2: force-repulsion entre etiquetas ────────────────────────────
-  for(let it=0;it<220;it++){
-    const attract=0.008; // atracción débil — las labels pueden alejarse bastante
-    for(let i=0;i<lbls.length;i++){
-      for(let j=i+1;j<lbls.length;j++){
-        const a=lbls[i],b=lbls[j];
-        const gapX=(a.w+b.w)/2+14, gapY=(a.h+b.h)/2+10;
-        const dx=a.x-b.x||0.01, dy=a.y-b.y||0.01;
-        const ox=gapX-Math.abs(dx), oy=gapY-Math.abs(dy);
-        if(ox>0&&oy>0){
-          if(ox<oy){const p=ox*0.6*(dx>=0?1:-1);a.x+=p;b.x-=p;}
-          else{const p=oy*0.6*(dy>=0?1:-1);a.y+=p;b.y-=p;}
-        }
-      }
-    }
-    lbls.forEach(l=>{
-      l.x+=(l.ax-l.x)*attract;
-      l.y+=(l.ay-l.y)*attract;
-      l.x=Math.max(l.w/2+10,Math.min(W-l.w/2-10,l.x));
-      l.y=Math.max(l.h/2+10,Math.min(H-l.h/2-10,l.y));
+  // ── Pasada 2: búsqueda espiral garantizada ──────────────────────────────
+  // Ordena por tamaño de cluster desc: los más grandes tienen prioridad de posición
+  lbls.sort((a,b)=>(b.count||0)-(a.count||0));
+
+  function overlaps(lbl, placed){
+    return placed.some(p=>{
+      const gx=(lbl.w+p.w)/2+12, gy=(lbl.h+p.h)/2+9;
+      return Math.abs(lbl.x-p.x)<gx && Math.abs(lbl.y-p.y)<gy;
     });
   }
-  // Pasada final: separación dura garantizada
-  for(let pass=0;pass<10;pass++){
-    for(let i=0;i<lbls.length;i++){
-      for(let j=i+1;j<lbls.length;j++){
-        const a=lbls[i],b=lbls[j];
-        const gapX=(a.w+b.w)/2+12, gapY=(a.h+b.h)/2+8;
-        const dx=a.x-b.x||0.01, dy=a.y-b.y||0.01;
-        const ox=gapX-Math.abs(dx), oy=gapY-Math.abs(dy);
-        if(ox>0&&oy>0){
-          if(ox<oy){const p=ox*0.5*(dx>=0?1:-1);a.x+=p;b.x-=p;}
-          else{const p=oy*0.5*(dy>=0?1:-1);a.y+=p;b.y-=p;}
-        }
+
+  const placed=[];
+  lbls.forEach(lbl=>{
+    // Empieza en la posición ancla
+    lbl.x=lbl.ax; lbl.y=lbl.ay;
+    if(!overlaps(lbl, placed)){placed.push(lbl);return;}
+
+    // Espiral outward: distancia r en pasos de 8px, 24 ángulos por vuelta
+    const step=8, maxR=Math.min(W,H)*0.42;
+    let found=false;
+    outer: for(let r=step;r<=maxR;r+=step){
+      const nAngles=Math.max(8, Math.round(2*Math.PI*r/step));
+      for(let a=0;a<nAngles;a++){
+        const angle=2*Math.PI*a/nAngles;
+        const tx=Math.max(lbl.w/2+10,Math.min(W-lbl.w/2-10, lbl.ax+r*Math.cos(angle)));
+        const ty=Math.max(lbl.h/2+10,Math.min(H-lbl.h/2-10, lbl.ay+r*Math.sin(angle)));
+        lbl.x=tx; lbl.y=ty;
+        if(!overlaps(lbl, placed)){found=true;break outer;}
       }
     }
-    lbls.forEach(l=>{
-      l.x=Math.max(l.w/2+10,Math.min(W-l.w/2-10,l.x));
-      l.y=Math.max(l.h/2+10,Math.min(H-l.h/2-10,l.y));
-    });
-  }
+    if(!found){lbl.x=lbl.ax;lbl.y=lbl.ay;} // fallback
+    placed.push(lbl);
+  });
 
   // ── Pasada 3: dibujar labels en posiciones optimizadas ────────────────────
   lbls.forEach(l=>{
