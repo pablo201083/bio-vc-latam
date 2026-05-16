@@ -873,12 +873,16 @@ function updateHalos(){
   });
 
   // ── Pasada 2: búsqueda espiral garantizada ──────────────────────────────
-  // Solo evita otros labels — los dots de otros themes son aceptables cerca del borde
+  const dotPts=nodes.map(n=>[n.cx,n.cy]);
+
   function overlaps(lbl, placed){
-    return placed.some(p=>{
+    // Evitar otros labels
+    if(placed.some(p=>{
       const gx=(lbl.w+p.w)/2+12, gy=(lbl.h+p.h)/2+9;
       return Math.abs(lbl.x-p.x)<gx && Math.abs(lbl.y-p.y)<gy;
-    });
+    })) return true;
+    // Evitar dots dentro del bounding box exacto del label (sin padding extra)
+    return dotPts.some(([dx,dy])=>Math.abs(lbl.x-dx)<lbl.w/2 && Math.abs(lbl.y-dy)<lbl.h/2);
   }
 
   const placed=[];
