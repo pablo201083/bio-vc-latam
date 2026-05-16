@@ -471,7 +471,7 @@ def write_dashboard_data(conn: sqlite3.Connection) -> None:
                sx.data_quality_score, sx.quality_band,
                sx.community_id, sx.pagerank,
                sx.valuation_tier,
-               COUNT(ie.investment_id) AS n_rounds,
+               COUNT(ie.investment_id) AS n_investors_mapped,
                sx.bio_theme_primary, sx.bio_theme_secondary, sx.is_bio_universe,
                sx.sub_cluster_label,
                sx.funding_stage, sx.funding_bucket_usd, sx.valuation_bucket_usd
@@ -517,7 +517,7 @@ def write_dashboard_data(conn: sqlite3.Connection) -> None:
             "community_id": r[18],
             "pagerank": float(r[19] or 0),
             "valuation_tier": float(tier_raw) if tier_raw is not None else None,
-            "n_rounds": int(r[21]),
+            "n_investors_mapped": int(r[21]),
             "bio_theme": r[22] or "",
             "bio_theme_secondary": r[23] or "",
             "is_bio_universe": r[24],
@@ -554,7 +554,7 @@ def write_dashboard_data(conn: sqlite3.Connection) -> None:
             cs["industry_codes"][i] = cs["industry_codes"].get(i, 0) + 1
         for co in (s["countries"] or ["—"]):
             cs["countries"][co] = cs["countries"].get(co, 0) + 1
-        if s["n_rounds"] > 0:
+        if s["n_investors_mapped"] > 0:
             cs["n_funded"] += 1
         if s["valuation_tier"] is not None and s["valuation_tier"] >= 2:
             cs["n_featured"] += 1
@@ -594,7 +594,7 @@ def write_dashboard_data(conn: sqlite3.Connection) -> None:
     ]
 
     print(f"  Grafo: {len(investor_nodes)} inversores, {len(graph_edges)} aristas "
-          f"({len([s for s in startups if s['n_rounds']>0])} startups con inversión)")
+          f"({len([s for s in startups if s['n_investors_mapped']>0])} startups con inversión)")
 
     # Curated one-line descriptions per bio_theme for investor-facing UI
     bio_theme_descriptions = {
@@ -639,7 +639,7 @@ def write_dashboard_data(conn: sqlite3.Connection) -> None:
             "total_startups": len(startups),
             "n_clusters": len(clusters_list),
             "featured_count": sum(1 for s in startups if s["valuation_tier"] is not None and s["valuation_tier"] >= 2),
-            "funded_count": sum(1 for s in startups if s["n_rounds"] > 0),
+            "funded_count": sum(1 for s in startups if s["n_investors_mapped"] > 0),
         },
         "bio_theme_descriptions": bio_theme_descriptions,
         "startups": startups,
