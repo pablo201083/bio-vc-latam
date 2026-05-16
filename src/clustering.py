@@ -47,12 +47,17 @@ UMAP_CLUSTER_PARAMS = {
     "random_state": 42,
 }
 
-# UMAP params para visualización 2D
+# UMAP params para visualización 2D — toma el 10D como input (euclidean).
+# FIX 2025-05: se usa reduced_10d (no 384D raw) como input para que la
+# posición 2D refleje la misma topología que HDBSCAN.  Antes, el viz UMAP
+# corría independientemente desde los 384D originales y el eje dominante
+# pasaba a codificar longitud de descripción (r=0.73) en lugar de semántica.
 UMAP_VIZ_PARAMS = {
     "n_components": 2,
     "n_neighbors": 15,
-    "min_dist": 0.15,
-    "metric": "cosine",
+    "min_dist": 0.15,      # compacto — queremos clusters agrupados, no extendidos
+    "metric": "euclidean",  # 10D UMAP output es euclidean, no cosine
+    "spread": 1.0,          # default — el 1.5 anterior generaba clusters demasiado distantes
     "random_state": 42,
 }
 
@@ -467,7 +472,8 @@ def write_dashboard_data(conn: sqlite3.Connection) -> None:
                sx.community_id, sx.pagerank,
                sx.valuation_tier,
                COUNT(ie.investment_id) AS n_rounds,
-               sx.bio_theme_primary, sx.bio_theme_secondary, sx.is_bio_universe
+               sx.bio_theme_primary, sx.bio_theme_secondary, sx.is_bio_universe,
+               sx.sub_cluster_label
         FROM startup_extended sx
         JOIN entities e ON e.entity_id = sx.startup_id
         LEFT JOIN investment_edges ie ON ie.startup_id = sx.startup_id
@@ -514,6 +520,7 @@ def write_dashboard_data(conn: sqlite3.Connection) -> None:
             "bio_theme": r[22] or "",
             "bio_theme_secondary": r[23] or "",
             "is_bio_universe": r[24],
+            "sub_cluster_label": r[25] or "",
         })
 
     # Cluster summary con métricas para inversor
@@ -585,6 +592,42 @@ def write_dashboard_data(conn: sqlite3.Connection) -> None:
     print(f"  Grafo: {len(investor_nodes)} inversores, {len(graph_edges)} aristas "
           f"({len([s for s in startups if s['n_rounds']>0])} startups con inversión)")
 
+    # Curated one-line descriptions per bio_theme for investor-facing UI
+    bio_theme_descriptions = {
+        "Therapeutics": (
+            "Medicina regenerativa, terapia celular, biologics y desarrollo clínico de fármacos "
+            "para oncología, enfermedades crónicas y neurología."
+        ),
+        "Diagnostics & Health Access": (
+            "Diagnóstico molecular, medtech no-invasivo y genómica clínica — incluyendo "
+            "diagnósticos guiados por terapia y liquid biopsy."
+        ),
+        "Food Systems & Alt Proteins": (
+            "Proteínas alternativas, ingredientes funcionales, alimentos fermentados y biotech "
+            "para sistemas alimentarios sostenibles."
+        ),
+        "Bioinputs & Crop Resilience": (
+            "Biofertilizantes, biocontrol microbiano, bioinsumos CDMO y microbiómica del suelo "
+            "para agricultura regenerativa."
+        ),
+        "Nature & Ecosystem Tech": (
+            "Trazabilidad ambiental ESG, climate-fintech, monitoreo satelital y tecnología "
+            "para conservación de ecosistemas y carbono."
+        ),
+        "Farm Intelligence": (
+            "Agricultura de precisión con sensores IoT, satélite, visión computacional e IA "
+            "para optimización de la producción agropecuaria."
+        ),
+        "Biomaterials & Circular Economy": (
+            "Biomateriales avanzados, química verde y bioprocesos circulares que reemplazan "
+            "petroquímicos en packaging, textiles e industria."
+        ),
+        "Biomanufacturing & Fermentation Economy": (
+            "Fermentación de precisión, plataformas de síntesis biológica y biofabricación "
+            "industrial para producir moléculas, ingredientes y materiales a escala."
+        ),
+    }
+
     payload = {
         "computed_at": time.strftime("%Y-%m-%dT%H:%M:%S"),
         "model": "intfloat/multilingual-e5-small",
@@ -594,6 +637,7 @@ def write_dashboard_data(conn: sqlite3.Connection) -> None:
             "featured_count": sum(1 for s in startups if s["valuation_tier"] is not None and s["valuation_tier"] >= 2),
             "funded_count": sum(1 for s in startups if s["n_rounds"] > 0),
         },
+        "bio_theme_descriptions": bio_theme_descriptions,
         "startups": startups,
         "clusters": clusters_list,
         "vocab_tech": vocab_to_dict(tech_vocab),
@@ -685,8 +729,10 @@ def run(
     # 2. UMAP a 10D para clustering
     reduced_10d = run_umap(vectors, UMAP_CLUSTER_PARAMS, "clustering")
 
-    # 3. UMAP a 2D para visualización
-    coords_2d = run_umap(vectors, UMAP_VIZ_PARAMS, "viz")
+    # 3. UMAP a 2D para visualización — usa el 10D como input (no el 384D raw).
+    # De esta forma la topología 2D es coherente con la topología que HDBSCAN
+    # usó para asignar clusters: puntos cercanos en 2D → cercanos en 10D → mismo cluster.
+    coords_2d = run_umap(reduced_10d, UMAP_VIZ_PARAMS, "viz")
 
     # 4. HDBSCAN
     params = dict(HDBSCAN_PARAMS)

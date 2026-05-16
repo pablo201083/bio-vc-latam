@@ -50,6 +50,12 @@ MODEL_NAME = "intfloat/multilingual-e5-small"
 DIM = 384
 
 
+SUMMARY_MAX_CHARS = 350  # FIX 2025-05: evita que la longitud de descripción
+                         # domine el espacio de embedding y cause artefactos en UMAP.
+                         # p50 del corpus ≈ 265 chars; truncar a 350 normaliza sin
+                         # perder información esencial de los summaries ricos.
+
+
 def make_embed_text(row: dict) -> str:
     """Combina los campos del row en un texto para embedding.
 
@@ -58,9 +64,15 @@ def make_embed_text(row: dict) -> str:
     Repite el summary para darle más peso (los modelos tipo e5 son sensibles
     a la frecuencia de tokens). El prefijo 'passage:' es la convención de e5
     para indicar que es un documento (no una query).
+
+    El summary se trunca a SUMMARY_MAX_CHARS para evitar que la longitud de
+    descripción (que varía de 150 a 591 chars en el corpus actual) se convierta
+    en la señal dominante en el espacio de embedding. Sin truncamiento,
+    r(len, umap_x) alcanzaba +0.73 en Cluster 3 (Ag Biologicals).
     """
     # Prefer the English-normalized summary; fall back to original
     summary = (row.get("startup_summary_en") or row.get("startup_summary_v1") or "").strip()
+    summary = summary[:SUMMARY_MAX_CHARS]  # normalize length
     parts = [
         summary,
         summary,  # double weight on summary

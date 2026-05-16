@@ -4,16 +4,21 @@ src/merge_clusters.py — post-hoc cluster merge.
 Fusiona los N clusters de HDBSCAN en k clusters semánticamente coherentes
 sin necesidad de re-embeder. Actualiza startup_extended y regenera el JS.
 
-Merge map (17 → 9):
-  new 0  Therapeutics — Regenerative & Cell Medicine       old 0
-  new 1  Therapeutics — Drug Discovery & Development       old 8
-  new 2  Diagnostics & MedTech                             old 9
-  new 3  Ag Biologicals & Bioinputs                        old 4, 12, 13
-  new 4  Farm Intelligence & Precision Agriculture         old 11, 14
-  new 5  Food Systems & Alt Proteins                       old 5
-  new 6  Biomanufacturing & Precision Fermentation         old 1, 10
-  new 7  Nature, Climate & Ecosystem Tech                  old 6, 7, 15, 16
-  new 8  Biomaterials & Circular Chemistry                 old 2, 3
+IMPORTANTE: el merge map debe recalibrarse cada vez que cambian los embeddings
+o los parámetros de HDBSCAN, ya que los raw IDs se renumeran entre corridas.
+Para recalibrar: correr pipeline.py rebuild --phase clustering, inspeccionar
+los CLUSTERS DETECTADOS en stdout, y actualizar MERGE_MAP aquí.
+
+Merge map (14 raw → 9) — revisado 2026-05 tras enriquecimiento web de 18 periphery:
+  new 0  Therapeutics — Regenerative & Cell Medicine       old 4           (53)
+  new 1  Therapeutics — Drug Discovery & Development       old 5           (48)
+  new 2  Diagnostics & MedTech                             old 0           (32)
+  new 3  Ag Biologicals & Bioinputs                        old 6, 8        (59)
+  new 4  Farm Intelligence & Precision Agriculture         old 10, 11      (56)
+  new 5  Food Systems & Alt Proteins                       old 1           (27)
+  new 6  Biomanufacturing & Precision Fermentation         old 3           (10)
+  new 7  Nature, Climate & Ecosystem Tech                  old 7, 9,12,13  (52)
+  new 8  Biomaterials & Circular Chemistry                 old 2           (36)
 """
 from __future__ import annotations
 
@@ -28,24 +33,22 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 DB_PATH = ROOT / "db" / "bio_latam.db"
 
 # Map: old_cluster_id → new_cluster_id
+# Revisado 2026-05: 14 raw clusters → 9 finales (post enriquecimiento web)
 MERGE_MAP: dict[int, int] = {
-    0: 0,   # Therapeutics Regenerative (52)
-    8: 1,   # Therapeutics Drug (49)
-    9: 2,   # Diagnostics (34)
-    4: 3,   # Ag Biologicals
-    12: 3,  # Ag Biologicals (merge)
-    13: 3,  # Ag Biologicals (merge)
-    11: 4,  # Farm Intelligence
-    14: 4,  # Farm Intelligence (merge)
-    5: 5,   # Food & Alt Proteins (24)
-    1: 6,   # Biomanufacturing → Precision Fermentation group
-    10: 6,  # Precision Fermentation (merge)
-    6: 7,   # Nature & Climate
-    7: 7,   # Nature & Climate (merge)
-    15: 7,  # Nature & Climate (merge)
-    16: 7,  # Nature & Climate (merge)
-    2: 8,   # Biomaterials
-    3: 8,   # Biomaterials (merge)
+    4: 0,   # Therapeutics Regenerative (53, 94% Therapeutics)
+    5: 1,   # Drug Discovery/mixed (48, 42% Diagnostics + 40% Therapeutics)
+    0: 2,   # Diagnostics (32, 97% Diagnostics)
+    6: 3,   # Ag Biologicals (40, 70% Bioinputs)
+    8: 3,   # Ag Biologicals/Biocontrol (19, 74% Bioinputs)
+    10: 4,  # Farm Intelligence (50)
+    11: 4,  # Farm Intelligence small (6)
+    1: 5,   # Food Novel Ingredients (27, 74% Food)
+    3: 6,   # Biomanufacturing/Precision Fermentation (10)
+    7: 7,   # Nature/Clean Energy (12, 75% Nature)
+    9: 7,   # Nature/Biodiversity (18, 100% Nature)
+    12: 7,  # Nature/Traceability (9)
+    13: 7,  # Nature/Finance/Climate (13)
+    2: 8,   # Biomaterials & Circular Economy (36, 75% Biomaterials)
 }
 
 # Labels for merged clusters: "Display Name||kw1 · kw2 · kw3 · kw4"

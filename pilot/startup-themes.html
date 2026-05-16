@@ -37,7 +37,7 @@
     .ct-tech{background:rgba(58,168,163,.07);color:var(--accent);border-color:rgba(58,168,163,.3)}
     .ct-ind{background:rgba(154,52,18,.06);color:#7a2e12;border-color:rgba(154,52,18,.22)}
 
-    .detail-pane{flex:0 0 auto;border-top:1px solid var(--line);padding:12px 14px;font-size:.83rem;color:var(--muted);line-height:1.45;max-height:220px;overflow-y:auto}
+    .detail-pane{flex:0 0 auto;border-top:1px solid var(--line);padding:12px 14px;font-size:.83rem;color:var(--muted);line-height:1.45;max-height:290px;overflow-y:auto}
     .dp-title{font-weight:700;color:var(--ink);font-size:.92rem;margin-bottom:5px}
     .dp-chips{display:flex;flex-wrap:wrap;gap:4px;margin-top:6px}
     .dp-chip{border-radius:999px;border:1px solid var(--line);background:#fff;padding:2px 8px;font-size:.73rem;color:var(--muted)}
@@ -171,7 +171,7 @@
             <button id="btn-cluster" class="vt-btn" type="button">Themes</button>
             <button id="btn-graph" class="vt-btn" type="button">Network</button>
           </div>
-          <button id="btn-labels" class="lbl-btn on" type="button">Nombres</button>
+          <button id="btn-labels" class="lbl-btn" type="button">Nombres</button>
           <button id="btn-filter" class="lbl-btn" type="button">Filtros</button>
           <div class="srch-wrap">
             <input id="srch-in" class="themes-select" type="search" placeholder="Buscar startup…" autocomplete="off" style="min-width:150px">
@@ -182,7 +182,7 @@
           <span class="cs" style="width:6px;height:6px;background:#aaa"></span>emergente
           <span class="cs" style="width:9px;height:9px;background:#888"></span>tier 1
           <span class="cs" style="width:13px;height:13px;background:var(--accent)"></span>tier 2+
-          <span class="cs" style="width:9px;height:9px;background:none;border:1.5px dashed #555"></span>con inversión
+          <span class="cs" style="width:13px;height:13px;background:var(--accent)"></span>+ rondas → mayor diámetro
         </div>
       </div>
       <div id="filter-panel" class="filter-panel">
@@ -224,6 +224,9 @@ if(!D||!D.startups||!D.startups.length){
   document.getElementById("detail-pane").textContent="Sin datos. Ejecutá: python -m src.clustering";
   return;
 }
+
+// ── Bio-theme descriptions (curated, editorial) ───────────────────────────────
+const THEME_DESC = D.bio_theme_descriptions || {};
 
 // ── Editorial category palette — 7 bottom-up categories ─────────────────────
 const THEME_PAL={
@@ -305,8 +308,12 @@ const nodeMap=new Map(nodes.map(n=>[n.d.id,n]));
 
 // ── UMAP map positions ─────────────────────────────────────────────────────
 function computeMapPos(){
-  const pad=55;
-  const xs=startups.map(s=>s.x),ys=startups.map(s=>s.y);
+  const pad=38;
+  // Use only core (non-outlier) nodes to define the canvas range —
+  // prevents 2-3 extreme outliers from compressing the main cluster region.
+  // Outlier nodes that fall outside this range get clamped naturally by relaxMapPos.
+  const core=startups.filter(s=>!s.is_outlier);
+  const xs=core.map(s=>s.x), ys=core.map(s=>s.y);
   const minX=Math.min(...xs),maxX=Math.max(...xs);
   const minY=Math.min(...ys),maxY=Math.max(...ys);
   const rx=maxX-minX||1,ry=maxY-minY||1;
@@ -316,23 +323,32 @@ function computeMapPos(){
   });
 }
 
-// Collision repulsion on UMAP positions — relaxed for visual appeal
-function relaxMapPos(iters=65){
+// Collision repulsion + gentle gravity toward canvas center
+function relaxMapPos(iters=140){
+  const gcx=W*0.5, gcy=H*0.48; // ligeramente arriba del centro geométrico
   for(let it=0;it<iters;it++){
+    // 1. Repulsión entre nodos solapados
     for(let i=0;i<nodes.length;i++){
       for(let j=i+1;j<nodes.length;j++){
         const a=nodes[i],b=nodes[j];
         const dx=a.mx-b.mx,dy=a.my-b.my;
         const d2=dx*dx+dy*dy;
-        const minD=nRadius(a.d)+nRadius(b.d)+10; // node-size-aware min distance
+        const minD=nRadius(a.d)+nRadius(b.d)+3;
         if(d2<minD*minD&&d2>0.001){
           const d=Math.sqrt(d2);
-          const push=(minD-d)*0.38/d;
+          const push=(minD-d)*0.5/d;
           a.mx+=dx*push;a.my+=dy*push;
           b.mx-=dx*push;b.my-=dy*push;
         }
       }
     }
+    // 2. Gravedad suave hacia el centro — decae en las últimas iteraciones
+    //    para que la repulsión final refine posiciones sin over-compactar
+    const g=0.005*(1-it/(iters*1.4));
+    nodes.forEach(n=>{
+      n.mx+=(gcx-n.mx)*g;
+      n.my+=(gcy-n.my)*g;
+    });
   }
   const pad=24;
   nodes.forEach(n=>{
@@ -340,6 +356,9 @@ function relaxMapPos(iters=65){
     n.my=Math.max(pad,Math.min(H-pad,n.my));
   });
 }
+
+// no-op placeholder — cluster centroid pushing breaks UMAP topology
+function pushThemeCentroids(){}
 
 // ── Theme grid positions (replaces cluster arrangement) ───────────────────
 function computeClusterPos(){
@@ -610,23 +629,22 @@ function applyTf(){gRoot.setAttribute("transform",`translate(${panX},${panY}) sc
 
 // Node visual properties — size by valuation_tier (investor signal)
 function nRadius(s){
-  const t=s.valuation_tier;
-  if(t>=4)return 16;
-  if(t>=3)return 12;
-  if(t>=2)return 9;
-  if(t>=1.5)return 7.5;
-  if(t>=1)return 6;
-  return 4.5;
+  const t=s.valuation_tier||0;
+  const r=s.n_rounds||0;
+  const base=t>=4?19:t>=3?15:t>=2?12:t>=1.5?9:t>=1?7:5.5;
+  return base+Math.min(r*0.8,4.5);
 }
 function nOpacity(s){return s.quality_band==="high"?0.88:0.72}
 // Whether a startup gets a persistent label (tier 2+ always labeled)
 function nFeatured(s){return s.valuation_tier!==null&&s.valuation_tier>=2}
+// Nodos que merecen label cuando "Nombres" está ON (tier ≥ 1, excluye emergentes sin señal)
+function nLabeled(s){return (s.valuation_tier||0)>=1}
 
 // ── Filter state — multi-selección con Sets ───────────────────────────────
 const activeTechs=new Set();      // OR dentro de la categoría
 const activeInds=new Set();       // OR dentro de la categoría
 const activeCountries=new Set();  // OR dentro de la categoría
-let searchId=null,showLabels=true;
+let searchId=null,showLabels=false;
 let viewMode="map"; // "map" | "cluster" | "graph"
 
 function isHl(s){
@@ -653,20 +671,6 @@ function buildSVG(){
     const color=themeCol(s.bio_theme);
     const r=nRadius(s);
 
-    // Investment ring (behind the node)
-    if(s.n_rounds>0){
-      const ring=document.createElementNS(NS,"circle");
-      ring.setAttribute("r",r+4);
-      ring.setAttribute("fill","none");
-      ring.setAttribute("stroke",color);
-      ring.setAttribute("stroke-width","2");
-      ring.setAttribute("stroke-opacity","0.62");
-      ring.setAttribute("stroke-dasharray","3.5 2.5");
-      ring.setAttribute("pointer-events","none");
-      gNodes.appendChild(ring);
-      n.ringEl=ring;
-    }
-
     const circ=document.createElementNS(NS,"circle");
     circ.setAttribute("r",r);
     circ.setAttribute("fill",color);
@@ -682,18 +686,19 @@ function buildSVG(){
     const featured=nFeatured(s);
     const lbl=document.createElementNS(NS,"text");
     lbl.setAttribute("text-anchor","middle");
+    lbl.setAttribute("dominant-baseline","middle");
     lbl.setAttribute("font-size",featured?"9.5":"7.5");
     lbl.setAttribute("font-weight",featured?"700":"400");
     lbl.setAttribute("font-family","inherit");
     lbl.setAttribute("fill","#2a2218");
-    lbl.setAttribute("stroke","rgba(248,245,239,0.95)");
-    lbl.setAttribute("stroke-width","3");
+    lbl.setAttribute("stroke","rgba(248,245,239,0.97)");
+    lbl.setAttribute("stroke-width","3.5");
     lbl.setAttribute("stroke-linejoin","round");
     lbl.setAttribute("paint-order","stroke");
     lbl.setAttribute("pointer-events","none");
-    lbl.setAttribute("opacity",featured?"1":"0.82");
+    lbl.setAttribute("opacity",featured?"1":"0.85");
     lbl.textContent=s.name.replace(/\s*S\.?\s*[AP]\.?S?\.?$/i,"").split(/\s+/).slice(0,2).join(" ");
-    lbl.style.display=(featured||showLabels)?"":"none";
+    lbl.style.display=(featured||(showLabels&&nLabeled(s)))?"":"none";
     gLabels.appendChild(lbl);
     n.lblEl=lbl;
 
@@ -705,11 +710,10 @@ function buildSVG(){
 
 function updatePositions(){
   nodes.forEach(n=>{
-    if(n.ringEl){n.ringEl.setAttribute("cx",n.cx);n.ringEl.setAttribute("cy",n.cy)}
     if(n.circEl){n.circEl.setAttribute("cx",n.cx);n.circEl.setAttribute("cy",n.cy)}
     if(n.lblEl){
       n.lblEl.setAttribute("x",n.cx);
-      n.lblEl.setAttribute("y",n.cy+nRadius(n.d)+11);
+      n.lblEl.setAttribute("y",n.cy);
     }
   });
   updateHalos();
@@ -752,12 +756,22 @@ function blobPath(pts,pad=22){
   return d+"Z";
 }
 
+// Remove points > maxSigma std-devs from centroid (outlier-robust hull)
+function corePoints(pts, maxSigma=2.2){
+  if(pts.length<6)return pts; // too few to filter
+  const cx=pts.reduce((s,p)=>s+p[0],0)/pts.length;
+  const cy=pts.reduce((s,p)=>s+p[1],0)/pts.length;
+  const dists=pts.map(([x,y])=>Math.sqrt((x-cx)**2+(y-cy)**2));
+  const mean=dists.reduce((s,d)=>s+d,0)/dists.length;
+  const sd=Math.sqrt(dists.reduce((s,d)=>s+(d-mean)**2,0)/dists.length)||1;
+  const filtered=pts.filter((_,i)=>dists[i]<=mean+maxSigma*sd);
+  return filtered.length>=3?filtered:pts;
+}
+
 function updateHalos(){
   while(gHalos.firstChild)gHalos.removeChild(gHalos.firstChild);
-
   const any=anyFilter();
 
-  // Group nodes by bio_theme
   const byTheme={};
   nodes.forEach(n=>{
     const t=n.d.bio_theme||"Uncategorized";
@@ -765,10 +779,17 @@ function updateHalos(){
     byTheme[t].push(n);
   });
 
+  // ── Pasada 1: dibujar blobs y colectar candidatos de label ────────────────
+  const lbls=[];
   Object.entries(byTheme).forEach(([theme,cNodes])=>{
-    const pts=cNodes.map(n=>[n.cx,n.cy]);
-    const cx=pts.reduce((s,p)=>s+p[0],0)/pts.length;
-    const cy=pts.reduce((s,p)=>s+p[1],0)/pts.length;
+    const allPts=cNodes.map(n=>[n.cx,n.cy]);
+    const corePts=(()=>{
+      const nonOut=cNodes.filter(n=>!n.d.is_outlier).map(n=>[n.cx,n.cy]);
+      return nonOut.length>=3?nonOut:allPts;
+    })();
+    const hullPts=corePoints(corePts);
+    const cx=allPts.reduce((s,p)=>s+p[0],0)/allPts.length;
+    const cy=allPts.reduce((s,p)=>s+p[1],0)/allPts.length;
 
     const themeHasMatch=any?cNodes.some(n=>isHl(n.d)):true;
     const color=themeHasMatch?themeCol(theme):"#b5aea6";
@@ -776,8 +797,7 @@ function updateHalos(){
     const strokeOp=themeHasMatch?(viewMode==="cluster"?"0.22":"0.18"):"0.06";
 
     if(viewMode==="cluster"){
-      // Solid circle halo in theme-grid view
-      const maxR=Math.max(...pts.map(([x,y])=>Math.sqrt((x-cx)**2+(y-cy)**2)));
+      const maxR=Math.max(...allPts.map(([x,y])=>Math.sqrt((x-cx)**2+(y-cy)**2)));
       const el=document.createElementNS(NS,"circle");
       el.setAttribute("cx",cx);el.setAttribute("cy",cy);
       el.setAttribute("r",Math.max(maxR+22,28));
@@ -786,9 +806,8 @@ function updateHalos(){
       el.setAttribute("stroke-opacity",strokeOp);el.setAttribute("pointer-events","none");
       gHalos.appendChild(el);
     }else{
-      // Convex hull blob in UMAP map view
-      const hull=convexHull(pts);
-      const path=blobPath(hull,pts.length===1?28:pts.length<4?20:22);
+      const hull=convexHull(hullPts);
+      const path=blobPath(hull,hullPts.length===1?28:hullPts.length<4?20:22);
       if(path){
         const el=document.createElementNS(NS,"path");
         el.setAttribute("d",path);
@@ -799,22 +818,79 @@ function updateHalos(){
       }
     }
 
-    // Floating theme label above the halo
-    {
-      const topY=Math.min(...pts.map(p=>p[1]));
-      const shortName=theme.replace(" & Access","").replace(" Engineering","").replace(" Economy","").replace(" Transition","").replace(" Biology","");
-      const txt=document.createElementNS(NS,"text");
-      txt.setAttribute("x",cx);txt.setAttribute("y",topY-(viewMode==="cluster"?22:16));
-      txt.setAttribute("text-anchor","middle");
-      txt.setAttribute("font-size",viewMode==="cluster"?"11":"9.5");
-      txt.setAttribute("font-weight","700");
-      txt.setAttribute("fill",color);
-      txt.setAttribute("opacity",themeHasMatch?"0.92":"0.18");
-      txt.setAttribute("pointer-events","none");
-      txt.setAttribute("letter-spacing","0.03em");
-      txt.textContent=shortName;
-      gHalos.appendChild(txt);
+    // Calcular posición inicial: borde superior del blob
+    const shortName=theme
+      .replace(" & Access","").replace(" & Circular Economy","")
+      .replace(" Engineering","").replace(" Transition","").replace(" Biology","");
+    const fs=viewMode==="cluster"?11:10;
+    const w=shortName.length*fs*0.61+14, h=fs+8;
+    const blobPad=hullPts.length<=1?28:hullPts.length<4?20:22;
+    const hullTopY=hullPts.length>0?Math.min(...hullPts.map(p=>p[1])):cy;
+    lbls.push({
+      x:cx, y:hullTopY-blobPad+h/2+4,   // anchor: top of blob
+      ax:cx, ay:hullTopY-blobPad+h/2+4, // attraction target
+      w, h, fs, shortName, color,
+      alpha:themeHasMatch?"0.88":"0.3",
+      textOp:themeHasMatch?"0.95":"0.2",
+    });
+  });
+
+  // ── Pasada 2: force-repulsion entre etiquetas para encontrar huecos ────────
+  const nodePts=nodes.map(n=>[n.cx,n.cy]);
+  for(let it=0;it<160;it++){
+    // Repulsión rect-a-rect entre pares de labels
+    for(let i=0;i<lbls.length;i++){
+      for(let j=i+1;j<lbls.length;j++){
+        const a=lbls[i],b=lbls[j];
+        const gapX=(a.w+b.w)/2+6, gapY=(a.h+b.h)/2+4;
+        const dx=a.x-b.x, dy=a.y-b.y;
+        const ox=gapX-Math.abs(dx), oy=gapY-Math.abs(dy);
+        if(ox>0&&oy>0){
+          // Resolver por el eje de menor solapamiento
+          if(ox<oy){
+            const push=ox*0.4*(dx>=0?1:-1);
+            a.x+=push;b.x-=push;
+          }else{
+            const push=oy*0.4*(dy>=0?1:-1);
+            a.y+=push;b.y-=push;
+          }
+        }
+      }
     }
+    // Atracción suave hacia la posición ancla
+    lbls.forEach(l=>{
+      l.x+=(l.ax-l.x)*0.03;
+      l.y+=(l.ay-l.y)*0.03;
+      // Clamp al canvas
+      l.x=Math.max(l.w/2+6,Math.min(W-l.w/2-6,l.x));
+      l.y=Math.max(l.h/2+6,Math.min(H-l.h/2-6,l.y));
+    });
+  }
+
+  // ── Pasada 3: dibujar labels en posiciones optimizadas ────────────────────
+  lbls.forEach(l=>{
+    const bg=document.createElementNS(NS,"rect");
+    bg.setAttribute("x",(l.x-l.w/2).toFixed(1));
+    bg.setAttribute("y",(l.y-l.h/2).toFixed(1));
+    bg.setAttribute("width",l.w.toFixed(1));
+    bg.setAttribute("height",l.h.toFixed(1));
+    bg.setAttribute("fill","rgba(255,252,247,0.9)");
+    bg.setAttribute("rx","5");
+    bg.setAttribute("pointer-events","none");
+    bg.setAttribute("opacity",l.alpha);
+    gHalos.appendChild(bg);
+    const txt=document.createElementNS(NS,"text");
+    txt.setAttribute("x",l.x);txt.setAttribute("y",l.y);
+    txt.setAttribute("text-anchor","middle");
+    txt.setAttribute("dominant-baseline","middle");
+    txt.setAttribute("font-size",l.fs);
+    txt.setAttribute("font-weight","700");
+    txt.setAttribute("fill",l.color);
+    txt.setAttribute("opacity",l.textOp);
+    txt.setAttribute("pointer-events","none");
+    txt.setAttribute("letter-spacing","0.04em");
+    txt.textContent=l.shortName;
+    gHalos.appendChild(txt);
   });
 }
 
@@ -843,11 +919,6 @@ function updateHighlights(){
     const featured=nFeatured(s);
     const color=themeCol(s.bio_theme);
 
-    // Anillo de inversión: color theme si match, gris si no
-    if(n.ringEl){
-      n.ringEl.setAttribute("stroke",any&&!hi?GRAY_RING:color);
-      n.ringEl.setAttribute("stroke-opacity",any?(hi?"0.62":"0.18"):"0.62");
-    }
     // Círculo: color cluster si match, gris si no — no desaparece, solo se apaga
     if(n.circEl){
       n.circEl.setAttribute("fill",any&&!hi?GRAY_FILL:color);
@@ -856,7 +927,7 @@ function updateHighlights(){
     }
     // Etiquetas: solo las del match (o las featured si no hay filtro activo)
     if(n.lblEl){
-      const show=any?(hi&&(featured||showLabels)):(featured||showLabels);
+      const show=any?(hi&&(featured||(showLabels&&nLabeled(s)))):(featured||(showLabels&&nLabeled(s)));
       n.lblEl.style.display=show?"":"none";
       n.lblEl.setAttribute("font-weight",searchId===s.id||featured?"700":"400");
     }
@@ -1037,26 +1108,29 @@ function buildClusterList(){
     top.appendChild(dot);top.appendChild(name);top.appendChild(cnt);
     row.appendChild(top);
 
+    // Description line
+    const desc=THEME_DESC[theme];
+    if(desc){
+      const dl=document.createElement("div");
+      dl.style.cssText="font-size:.72rem;color:var(--muted);line-height:1.38;margin-bottom:5px;padding-right:4px;";
+      dl.textContent=desc;
+      row.appendChild(dl);
+    }
+
     const tags=document.createElement("div");tags.className="cr-tags";
-    // Top countries
-    Object.entries(tm.countries).sort((a,b)=>b[1]-a[1]).slice(0,2).forEach(([cc])=>{
-      const t=document.createElement("span");t.className="ct";
-      const flag=FLAG_MAP[cc]||"";
-      t.textContent=(flag?flag+" ":"")+cc;
-      tags.appendChild(t);
-    });
-    // Sub-clusters as tiny chips (top 2)
-    [...tm.subClusters.entries()].sort((a,b)=>b[1]-a[1]).slice(0,2).forEach(([lbl])=>{
-      const t=document.createElement("span");t.className="ct";
-      t.style.cssText="color:#555;font-style:italic;font-size:.62rem;";
-      t.textContent=lbl.split(" — ")[1]||lbl; // show only disambiguator part
+    // Keyword chips from sub-clusters (most representative, top 3)
+    [...tm.subClusters.entries()].sort((a,b)=>b[1]-a[1]).slice(0,3).forEach(([lbl,n])=>{
+      const t=document.createElement("span");t.className="ct ct-tech";
+      // Extract keyword part after " — " or use full label shortened
+      const kw=(lbl.split(" — ")[1]||lbl).replace(/^\w+ — /,"");
+      t.textContent=kw;
       tags.appendChild(t);
     });
     // Funded badge
     if(tm.n_funded>0){
       const t=document.createElement("span");t.className="ct";
       t.style.cssText="color:#1f5c3a;border-color:rgba(31,92,58,.28);background:rgba(31,92,58,.06);";
-      t.textContent="⬤ "+tm.n_funded+"R";tags.appendChild(t);
+      t.textContent="⬤ "+tm.n_funded+" inv.";tags.appendChild(t);
     }
     row.appendChild(tags);
 
@@ -1083,36 +1157,53 @@ function buildClusterList(){
 
 function renderThemeDetail(tm){
   const pane=document.getElementById("detail-pane");
-  if(!tm){pane.innerHTML='<span style="color:var(--muted);font-size:.82rem;">Click a startup or theme to see details.</span>';return}
+  if(!tm){pane.innerHTML='<span style="color:var(--muted);font-size:.82rem;">Hacé clic en un cluster para ver el detalle.</span>';return}
   const color=tm.color;
-  const topCountries=Object.entries(tm.countries).sort((a,b)=>b[1]-a[1]).slice(0,4);
+  const desc=THEME_DESC[tm.name]||"";
+  const topCountries=Object.entries(tm.countries).sort((a,b)=>b[1]-a[1]).slice(0,5);
   // Top companies by tier then name
-  const topCompanies=nodes
-    .filter(n=>(n.d.bio_theme||"Uncategorized")===tm.name)
+  const themeNodes=nodes.filter(n=>(n.d.bio_theme||"Uncategorized")===tm.name);
+  const topCompanies=themeNodes
     .sort((a,b)=>(b.d.valuation_tier||0)-(a.d.valuation_tier||0)||a.d.name.localeCompare(b.d.name))
     .slice(0,6);
   // Sub-cluster neighborhoods
   const subCl=[...tm.subClusters.entries()].sort((a,b)=>b[1]-a[1]);
+  // Sub-labels (e.g. CL1 bimodality) — collect from startups in this theme
+  const subLabels=new Map();
+  themeNodes.forEach(n=>{
+    const sl=n.d.sub_cluster_label;
+    if(sl)subLabels.set(sl,(subLabels.get(sl)||0)+1);
+  });
+
   pane.innerHTML=`
-    <div class="dp-title" style="display:flex;align-items:center;gap:7px;">
+    <div class="dp-title" style="display:flex;align-items:center;gap:7px;margin-bottom:4px;">
       <span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:${color};flex:0 0 auto"></span>
       ${tm.name}
     </div>
-    <div class="dp-chips" style="margin-bottom:7px;">
+    <div class="dp-chips" style="margin-bottom:6px;">
       <span class="dp-chip">${tm.count} startups</span>
-      ${tm.n_featured>0?`<span class="dp-chip" style="font-weight:700;color:var(--ink);">${tm.n_featured} featured</span>`:""}
-      ${tm.n_funded>0?`<span class="dp-chip" style="color:#1f5c3a;">⬤ ${tm.n_funded} with investment</span>`:""}
+      ${tm.n_featured>0?`<span class="dp-chip" style="font-weight:700;color:var(--ink);">${tm.n_featured} destacadas</span>`:""}
+      ${tm.n_funded>0?`<span class="dp-chip" style="color:#1f5c3a;">⬤ ${tm.n_funded} con inversión</span>`:""}
     </div>
-    ${topCountries.length?`<div style="font-size:.69rem;color:var(--muted);margin-bottom:3px;text-transform:uppercase;letter-spacing:.07em;">Countries</div><div class="dp-chips" style="margin-bottom:6px;">${topCountries.map(([cc,n])=>`<span class="dp-chip" style="cursor:pointer;" data-country="${cc}">${(FLAG_MAP[cc]||"")} ${cc} <span style="opacity:.55">(${n})</span></span>`).join("")}</div>`:""}
-    ${subCl.length?`<div style="font-size:.69rem;color:var(--muted);margin-bottom:3px;text-transform:uppercase;letter-spacing:.07em;">Semantic neighborhoods</div><div class="dp-chips" style="margin-bottom:6px;">${subCl.map(([lbl,n])=>`<span class="dp-chip" style="font-style:italic;">${lbl} <span style="opacity:.5">(${n})</span></span>`).join("")}</div>`:""}
-    <div style="font-size:.69rem;color:var(--muted);margin-bottom:3px;text-transform:uppercase;letter-spacing:.07em;">Top startups</div>
-    <div style="display:grid;gap:2px;">${topCompanies.map(n=>{
+    ${desc?`<div style="font-size:.79rem;color:var(--ink);line-height:1.45;margin-bottom:8px;padding-bottom:7px;border-bottom:1px solid var(--line);">${desc}</div>`:""}
+    ${subLabels.size?`
+      <div style="font-size:.67rem;color:var(--muted);margin-bottom:3px;text-transform:uppercase;letter-spacing:.07em;">Sub-grupos semánticos</div>
+      <div class="dp-chips" style="margin-bottom:7px;">${[...subLabels.entries()].map(([lbl,n])=>`
+        <span class="dp-chip dp-chip-tech" style="font-size:.74rem;">${lbl} <span style="opacity:.55">(${n})</span></span>
+      `).join("")}</div>`:""}
+    ${subCl.length?`
+      <div style="font-size:.67rem;color:var(--muted);margin-bottom:3px;text-transform:uppercase;letter-spacing:.07em;">Clusters semánticos</div>
+      <div class="dp-chips" style="margin-bottom:7px;">${subCl.map(([lbl,n])=>`<span class="dp-chip" style="font-style:italic;font-size:.72rem;">${lbl} <span style="opacity:.5">(${n})</span></span>`).join("")}</div>`:""}
+    <div style="font-size:.67rem;color:var(--muted);margin-bottom:3px;text-transform:uppercase;letter-spacing:.07em;">Top startups</div>
+    <div style="display:grid;gap:2px;margin-bottom:6px;">${topCompanies.map(n=>{
       const t=n.d.valuation_tier;
+      const sl=n.d.sub_cluster_label;
       return `<span style="font-size:.78rem;color:var(--ink);display:flex;justify-content:space-between;gap:8px;">
-        <span>${n.d.name}</span>
-        <span style="color:var(--muted);white-space:nowrap;">${t!=null?"Tier "+t:"—"}${n.d.n_rounds>0?" · "+n.d.n_rounds+"R":""}</span>
+        <span>${n.d.name}${sl?`<span style="color:var(--muted);font-size:.68rem;margin-left:4px;">${sl}</span>`:""}</span>
+        <span style="color:var(--muted);white-space:nowrap;">${t!=null?"T"+t:"—"}${n.d.n_rounds>0?" · "+n.d.n_rounds+"R":""}</span>
       </span>`;
     }).join("")}</div>
+    ${topCountries.length?`<div style="font-size:.67rem;color:var(--muted);margin-bottom:3px;text-transform:uppercase;letter-spacing:.07em;">Geografía</div><div class="dp-chips">${topCountries.map(([cc,n])=>`<span class="dp-chip" style="cursor:pointer;" data-country="${cc}">${(FLAG_MAP[cc]||"")} ${cc} <span style="opacity:.55">(${n})</span></span>`).join("")}</div>`:""}
   `;
 }
 function renderClusterDetail(c){ renderThemeDetail(null); }
@@ -1347,7 +1438,7 @@ document.getElementById("btn-graph").addEventListener("click",function(){
 });
 document.getElementById("btn-labels").addEventListener("click",function(){
   showLabels=!showLabels;this.classList.toggle("on",showLabels);
-  nodes.forEach(n=>{if(n.lblEl)n.lblEl.style.display=(nFeatured(n.d)||showLabels)?"":"none"});
+  nodes.forEach(n=>{if(n.lblEl)n.lblEl.style.display=(nFeatured(n.d)||(showLabels&&nLabeled(n.d)))?"":"none"});
   updateHighlights();
 });
 document.getElementById("btn-filter").addEventListener("click",function(){
@@ -1389,7 +1480,7 @@ const ro=new ResizeObserver(()=>{
       panY=panY*nH/roLastH;
     }
     roLastW=nW;roLastH=nH;
-    setDims();computeMapPos();relaxMapPos();computeClusterPos();computeGraphPos();
+    setDims();computeMapPos();relaxMapPos();pushThemeCentroids();computeClusterPos();computeGraphPos();
     nodes.forEach(n=>{
       n.cx=viewMode==="map"?n.mx:viewMode==="cluster"?n.kx:n.gxs;
       n.cy=viewMode==="map"?n.my:viewMode==="cluster"?n.ky:n.gys;
@@ -1403,6 +1494,7 @@ ro.observe(wrap);
 // ── Init ──────────────────────────────────────────────────────────────────
 computeMapPos();
 relaxMapPos();
+pushThemeCentroids();
 computeClusterPos();
 computeGraphPos();
 buildGraphElements();
