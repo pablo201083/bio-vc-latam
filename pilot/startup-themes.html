@@ -851,7 +851,7 @@ function updateHalos(){
     const rawBlobR=corePts.length>0
       ?Math.max(28,...corePts.map(p=>Math.sqrt((p[0]-cx)**2+(p[1]-cy)**2)))+blobPad
       :38;
-    const blobR=Math.min(rawBlobR, Math.min(W,H)*0.45);
+    const blobR=Math.min(rawBlobR, 100);
 
     // Dirección radial desde el centro del canvas hacia el centroide del cluster
     const canvasCx=W/2, canvasCy=H/2;
@@ -873,18 +873,12 @@ function updateHalos(){
   });
 
   // ── Pasada 2: búsqueda espiral garantizada ──────────────────────────────
-  // Posiciones de todos los nodos para evitar que labels caigan sobre puntos
-  const dotPts=nodes.map(n=>[n.cx,n.cy]);
-
+  // Solo evita otros labels — los dots de otros themes son aceptables cerca del borde
   function overlaps(lbl, placed){
-    // Evitar otros labels
-    if(placed.some(p=>{
+    return placed.some(p=>{
       const gx=(lbl.w+p.w)/2+12, gy=(lbl.h+p.h)/2+9;
       return Math.abs(lbl.x-p.x)<gx && Math.abs(lbl.y-p.y)<gy;
-    })) return true;
-    // Evitar startup dots — cualquier dot dentro del bounding box del label
-    const hw=lbl.w/2+6, hh=lbl.h/2+6;
-    return dotPts.some(([dx,dy])=>Math.abs(lbl.x-dx)<hw && Math.abs(lbl.y-dy)<hh);
+    });
   }
 
   const placed=[];
