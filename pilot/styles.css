@@ -1,14 +1,15 @@
 :root {
-  --bg: #f4efe5;
-  --panel: #fffaf1;
-  --ink: #1d1b18;
-  --muted: #6f675d;
-  --line: #d9cebe;
-  --accent: #0f766e;
-  --accent-soft: #d9f3ef;
+  --bg: #f2ede3;
+  --panel: #fdfaf4;
+  --ink: #181714;
+  --muted: #6a6258;
+  --line: #d8ccc0;
+  --accent: #0B8F87;
+  --accent-soft: #d2f0ee;
   --warm: #9a3412;
   --warm-soft: #ffe6d9;
-  --shadow: 0 16px 32px rgba(41, 31, 18, 0.08);
+  --shadow: 0 12px 28px rgba(30, 22, 12, 0.09);
+  --sans: 'DM Sans', system-ui, -apple-system, sans-serif;
 }
 
 * {
@@ -17,10 +18,10 @@
 
 body {
   margin: 0;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--sans);
   background:
-    radial-gradient(circle at top left, rgba(15, 118, 110, 0.08), transparent 24rem),
-    radial-gradient(circle at top right, rgba(154, 52, 18, 0.1), transparent 26rem),
+    radial-gradient(circle at top left, rgba(11, 143, 135, 0.07), transparent 24rem),
+    radial-gradient(circle at top right, rgba(154, 52, 18, 0.08), transparent 26rem),
     var(--bg);
   color: var(--ink);
 }
@@ -61,7 +62,7 @@ code {
 .summary-card {
   background: var(--panel);
   border: 1px solid var(--line);
-  border-radius: 22px;
+  border-radius: 18px;
   box-shadow: var(--shadow);
 }
 

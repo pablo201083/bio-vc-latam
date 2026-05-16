@@ -4,54 +4,65 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>BIO LATAM — Ecosistema de Innovación</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css?v=20260422p">
   <style>
-    .hero-subtitle{margin:2px 0 10px;font-size:1.15rem;line-height:1.35;color:var(--muted)}
-    .hero.hero-compact{grid-template-columns:minmax(0,1.45fr) minmax(320px,.85fr);align-items:stretch;margin-bottom:18px}
-    .hero-compact .hero-copy{padding:24px 28px;background:radial-gradient(circle at 92% 10%,rgba(58,168,163,.12),transparent 14rem),linear-gradient(135deg,rgba(255,255,255,.92),rgba(246,240,230,.72))}
-    .hero-compact h1{margin-bottom:4px}
-    .hero-compact .lede{font-size:.95rem;line-height:1.55;max-width:64rem}
-    .hero-compact .hero-meta{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;padding:14px;align-content:stretch}
-    .hero-compact .meta-card{padding:12px 14px;border-radius:16px;display:grid;align-content:center}
-    .hero-compact .meta-card strong{font-size:.9rem;line-height:1.25}
+    .topbar{display:flex;align-items:center;gap:28px;padding:14px 22px;background:var(--panel);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);margin-bottom:18px}
+    .topbar-brand{flex:1;min-width:0}
+    .topbar-eyebrow{margin:0 0 4px;font-size:.62rem;text-transform:uppercase;letter-spacing:.18em;color:var(--accent);display:block;font-weight:600;font-family:var(--sans)}
+    .topbar-title{margin:0 0 4px;font-size:1.9rem;line-height:1;letter-spacing:-.03em;font-family:Georgia,"Times New Roman",serif}
+    .topbar-sub{margin:0;font-size:.8rem;color:var(--muted);font-family:var(--sans)}
+    .topbar-stats{display:flex;gap:24px;align-items:center;padding:0 4px;border-left:1px solid var(--line);border-right:1px solid var(--line);padding:0 28px}
+    .topbar-stat{display:flex;flex-direction:column;align-items:center;text-align:center;min-width:52px}
+    .topbar-stat strong{font-size:1.5rem;font-weight:700;line-height:1;display:block}
+    .topbar-stat span{font-size:.61rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-top:3px;display:block}
+    .topbar-link{font-size:.8rem;color:var(--muted);text-decoration:none;white-space:nowrap;border:1px solid var(--line);border-radius:7px;padding:6px 12px;transition:color .12s,border-color .12s;background:rgba(255,255,255,.7)}
+    .topbar-link:hover{color:var(--ink);border-color:rgba(150,140,130,.5)}
 
     .themes-layout{display:grid;grid-template-columns:340px minmax(0,1fr);gap:20px}
-    .themes-sidebar,.themes-stage{background:var(--panel);border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow)}
+    .themes-sidebar,.themes-stage{background:var(--panel);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow)}
     .themes-sidebar{padding:0;overflow:hidden;display:flex;flex-direction:column;max-height:870px}
-    .sidebar-head{padding:14px 16px 10px;border-bottom:1px solid var(--line);flex:0 0 auto}
-    .sidebar-stats{display:flex;flex-wrap:wrap;gap:5px;margin-top:7px}
-    .s-chip{border-radius:999px;padding:2px 9px;font-size:.73rem;font-weight:700}
-    .s-chip-teal{background:rgba(58,168,163,.12);color:var(--accent)}
+    .sidebar-head{padding:14px 16px 11px;border-bottom:2px solid var(--line);flex:0 0 auto}
+    .sidebar-head .item-title{font-size:.67rem;font-weight:700;text-transform:uppercase;letter-spacing:.15em;color:var(--ink);margin-bottom:0;font-family:var(--sans)}
+    .sidebar-stats{display:flex;flex-wrap:wrap;gap:4px;margin-top:8px}
+    .s-chip{border-radius:4px;padding:2px 7px;font-size:.67rem;font-weight:600;letter-spacing:.04em;font-family:var(--sans)}
+    .s-chip-teal{background:rgba(11,143,135,.11);color:var(--accent)}
     .s-chip-muted{background:rgba(0,0,0,.06);color:var(--muted)}
 
-    .cluster-list{flex:1 1 auto;overflow-y:auto;padding:10px;display:grid;gap:5px}
-    .cr{padding:9px 11px;border:1px solid rgba(217,206,190,.8);border-radius:13px;background:rgba(255,255,255,.82);cursor:pointer;transition:border-color .15s,box-shadow .15s,opacity .15s}
-    .cr:hover,.cr.active{border-color:var(--accent);box-shadow:0 0 0 3px rgba(23,139,135,.08)}
-    .cr.dimmed{opacity:.35}
-    .cr-top{display:grid;grid-template-columns:11px minmax(0,1fr) auto;gap:7px;align-items:center;margin-bottom:5px}
-    .cr-dot{width:11px;height:11px;border-radius:999px;flex:0 0 auto}
-    .cr-name{font-size:.83rem;font-weight:700;color:var(--ink);line-height:1.2}
-    .cr-count{font-size:.75rem;color:var(--muted);white-space:nowrap}
+    .cluster-list{flex:1 1 auto;overflow-y:auto;padding:8px 10px;display:grid;gap:4px}
+    .cr{padding:9px 11px;border:1px solid rgba(217,206,190,.65);border-left:3px solid var(--cr-color,rgba(217,206,190,.65));border-radius:9px;background:rgba(255,255,255,.78);cursor:pointer;transition:background .13s,box-shadow .13s,opacity .13s}
+    .cr:hover{background:rgba(255,255,255,.98);box-shadow:0 2px 8px rgba(0,0,0,.07)}
+    .cr.active{background:rgba(255,255,255,.98);box-shadow:0 3px 14px rgba(0,0,0,.1)}
+    .cr.dimmed{opacity:.25}
+    .cr-top{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:7px;align-items:center;margin-bottom:4px}
+    .cr-dot{display:none}
+    .cr-name{font-size:.875rem;font-weight:700;color:var(--ink);line-height:1.2;letter-spacing:-.01em}
+    .cr-count{font-size:.69rem;color:var(--muted);background:rgba(0,0,0,.06);border-radius:5px;padding:1px 6px;white-space:nowrap;font-weight:600;font-variant-numeric:tabular-nums}
+    .cr-desc{font-size:.71rem;color:var(--muted);line-height:1.38;margin-bottom:5px;font-style:italic}
     .cr-tags{display:flex;flex-wrap:wrap;gap:3px}
-    .ct{border-radius:999px;border:1px solid rgba(217,206,190,.84);background:rgba(255,255,255,.88);color:var(--muted);font-size:.67rem;padding:2px 6px;line-height:1.3}
-    .ct-tech{background:rgba(58,168,163,.07);color:var(--accent);border-color:rgba(58,168,163,.3)}
+    .ct{border-radius:5px;border:1px solid rgba(217,206,190,.84);background:rgba(255,255,255,.88);color:var(--muted);font-size:.66rem;padding:2px 6px;line-height:1.3}
+    .ct-tech{background:rgba(11,143,135,.07);color:var(--accent);border-color:rgba(11,143,135,.3)}
     .ct-ind{background:rgba(154,52,18,.06);color:#7a2e12;border-color:rgba(154,52,18,.22)}
 
-    .detail-pane{flex:0 0 auto;border-top:1px solid var(--line);padding:12px 14px;font-size:.83rem;color:var(--muted);line-height:1.45;max-height:290px;overflow-y:auto}
-    .dp-title{font-weight:700;color:var(--ink);font-size:.92rem;margin-bottom:5px}
-    .dp-chips{display:flex;flex-wrap:wrap;gap:4px;margin-top:6px}
-    .dp-chip{border-radius:999px;border:1px solid var(--line);background:#fff;padding:2px 8px;font-size:.73rem;color:var(--muted)}
-    .dp-chip-tech{background:rgba(58,168,163,.09);color:var(--accent);border-color:rgba(58,168,163,.3)}
+    .detail-pane{flex:0 0 auto;border-bottom:1px solid var(--line);padding:12px 15px;font-size:.81rem;color:var(--muted);line-height:1.5;max-height:260px;overflow-y:auto;background:rgba(248,245,239,.4)}
+    .dp-hint{font-size:.75rem;color:var(--muted);opacity:.55;display:block}
+    .dp-title{font-weight:700;color:var(--ink);font-size:.9rem;margin-bottom:6px;line-height:1.3}
+    .dp-chips{display:flex;flex-wrap:wrap;gap:4px;margin-top:7px}
+    .dp-chip{border-radius:5px;border:1px solid var(--line);background:#fff;padding:2px 8px;font-size:.7rem;color:var(--muted)}
+    .dp-chip-tech{background:rgba(11,143,135,.09);color:var(--accent);border-color:rgba(11,143,135,.3)}
     .dp-chip-ind{background:rgba(154,52,18,.07);color:#7a2e12;border-color:rgba(154,52,18,.22)}
-    .dp-link{color:var(--accent);text-decoration:none;font-size:.78rem}
+    .dp-link{color:var(--accent);text-decoration:none;font-size:.77rem}
     .dp-link:hover{text-decoration:underline}
 
     .themes-stage{padding:14px;display:flex;flex-direction:column;gap:10px;position:relative;overflow:visible}
     .tb-row{display:flex;flex-wrap:wrap;gap:7px;align-items:center}
     .tb-between{display:flex;flex-wrap:wrap;gap:7px;align-items:center;justify-content:space-between}
-    .vt-group{display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:#fff}
-    .vt-btn{border:0;background:transparent;color:var(--muted);padding:5px 14px;font:inherit;font-size:.83rem;cursor:pointer;transition:background .15s,color .15s}
+    .vt-group{display:flex;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:rgba(255,255,255,.85)}
+    .vt-btn{border:0;border-right:1px solid var(--line);background:transparent;color:var(--muted);padding:5px 13px;font:inherit;font-size:.81rem;font-weight:500;cursor:pointer;transition:background .12s,color .12s;letter-spacing:.01em}
+    .vt-btn:last-child{border-right:0}
     .vt-btn.active{background:var(--accent);color:#fff;font-weight:700}
+    .vt-btn:hover:not(.active){background:rgba(0,0,0,.04);color:var(--ink)}
     .fc-row{display:flex;flex-wrap:wrap;gap:4px}
     .fc{border-radius:7px;border:1.5px solid rgba(210,202,190,.75);background:#fff;color:var(--muted);font:inherit;font-size:.74rem;padding:4px 11px;cursor:pointer;transition:background .11s,color .11s,border-color .11s,box-shadow .11s;line-height:1.4;white-space:nowrap;user-select:none}
     .fc:hover{border-color:var(--accent);color:var(--ink);background:rgba(23,139,135,.04);box-shadow:0 1px 4px rgba(23,139,135,.1)}
@@ -72,31 +83,32 @@
     .fp-sec-clr.vis{display:inline}
     .fp-sec-clr:hover{text-decoration:underline}
 
-    .canvas-wrap{border:1px solid var(--line);border-radius:16px;background:radial-gradient(circle at 20% 20%,rgba(15,118,110,.04),transparent 18rem),radial-gradient(circle at 80% 15%,rgba(154,52,18,.04),transparent 20rem),#f8f5ef;overflow:hidden;position:relative;flex:1 1 auto;min-height:640px}
+    .canvas-wrap{border:1px solid var(--line);border-radius:16px;background:radial-gradient(circle at 20% 20%,rgba(11,143,135,.04),transparent 18rem),radial-gradient(circle at 80% 15%,rgba(154,52,18,.04),transparent 20rem),#f7f4ee;overflow:hidden;position:relative;flex:1 1 auto;min-height:640px}
     #themes-svg{display:block;width:100%;height:100%}
     .z-ctrl{position:absolute;right:12px;bottom:12px;display:grid;gap:5px;z-index:2}
     .z-btn{width:34px;height:34px;border-radius:9px;border:1px solid var(--line);background:rgba(255,255,255,.95);box-shadow:var(--shadow);font:inherit;font-size:.95rem;cursor:pointer}
     .z-btn:hover{border-color:var(--accent)}
 
-    .hov{position:absolute;min-width:250px;max-width:310px;padding:11px 13px;border:1px solid rgba(217,206,190,.9);border-radius:15px;background:rgba(255,252,247,.97);box-shadow:0 16px 32px rgba(44,36,22,.15);pointer-events:none;opacity:0;transform:translateY(5px);transition:opacity 110ms ease,transform 110ms ease;z-index:10}
+    .hov{position:absolute;min-width:260px;max-width:320px;padding:12px 14px;border:1px solid rgba(200,190,178,.8);border-radius:12px;background:rgba(255,253,249,.98);box-shadow:0 8px 28px rgba(44,36,22,.14),0 2px 6px rgba(44,36,22,.07);pointer-events:none;opacity:0;transform:translateY(4px);transition:opacity 100ms ease,transform 100ms ease;z-index:10}
     .hov.vis{opacity:1;transform:translateY(0)}
-    .hov-title{font-size:.95rem;font-weight:700;color:var(--ink);margin-bottom:5px}
+    .hov-title{font-size:.93rem;font-weight:700;color:var(--ink);margin-bottom:6px;line-height:1.3}
     .hov-chips{display:flex;flex-wrap:wrap;gap:3px;margin-bottom:7px}
-    .hov-chip{border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.94);padding:2px 7px;font-size:.71rem;color:var(--muted);display:inline-flex;align-items:center;gap:4px}
+    .hov-chip{border-radius:5px;border:1px solid var(--line);background:rgba(255,255,255,.94);padding:2px 7px;font-size:.7rem;color:var(--muted);display:inline-flex;align-items:center;gap:4px}
     .hov-dot{width:7px;height:7px;border-radius:999px;flex:0 0 auto}
-    .hov-body{font-size:.82rem;color:var(--ink);line-height:1.38;margin-bottom:7px}
-    .hov-small{font-size:.72rem;color:var(--muted)}
+    .hov-body{font-size:.81rem;color:var(--ink);line-height:1.42;margin-bottom:7px}
+    .hov-small{font-size:.71rem;color:var(--muted)}
 
     .srch-wrap{position:relative}
     .srch-res{position:absolute;z-index:6;top:calc(100% + 4px);left:0;right:0;display:none;max-height:200px;overflow:auto;border:1px solid var(--line);border-radius:11px;background:rgba(255,252,246,.98);box-shadow:var(--shadow);padding:3px}
     .srch-res.open{display:grid;gap:2px}
     .srch-item{border:0;border-radius:8px;background:transparent;color:var(--ink);cursor:pointer;display:grid;gap:1px;padding:5px 8px;text-align:left;font:inherit;font-size:.83rem}
-    .srch-item:hover{background:rgba(58,168,163,.09)}
+    .srch-item:hover{background:rgba(11,143,135,.09)}
     .srch-item small{color:var(--muted);font-size:.71rem}
-    .lbl-btn{border:1px solid var(--line);background:#fff;color:var(--muted);border-radius:999px;padding:5px 11px;font:inherit;font-size:.81rem;cursor:pointer}
-    .lbl-btn.on{background:rgba(58,168,163,.1);border-color:var(--accent);color:var(--ink)}
-    .conf-leg{display:flex;align-items:center;gap:5px;font-size:.71rem;color:var(--muted);margin-left:auto}
-    .cs{width:9px;height:9px;border-radius:999px;border:1px solid rgba(0,0,0,.1)}
+    .lbl-btn{border:1px solid var(--line);background:rgba(255,255,255,.85);color:var(--muted);border-radius:8px;padding:5px 11px;font:inherit;font-size:.81rem;font-weight:500;cursor:pointer;transition:background .12s,border-color .12s,color .12s}
+    .lbl-btn:hover{background:#fff;color:var(--ink)}
+    .lbl-btn.on{background:rgba(11,143,135,.1);border-color:var(--accent);color:var(--accent);font-weight:600}
+    .conf-leg{display:flex;align-items:center;gap:6px;font-size:.65rem;color:var(--muted);margin-left:auto;letter-spacing:.06em;text-transform:uppercase;font-weight:500}
+    .cs{width:9px;height:9px;border-radius:999px;border:1px solid rgba(0,0,0,.12)}
 
     /* ── Breadcrumbs — overlay sobre el canvas, no afecta su tamaño ── */
     .breadcrumbs{display:none;flex-wrap:wrap;gap:5px;align-items:center;min-height:26px;
@@ -122,29 +134,29 @@
     .fp-row{display:flex;flex-direction:column;gap:4px}
     .fp-chips{display:flex;flex-wrap:nowrap;gap:5px;overflow-x:auto;padding-bottom:3px;scrollbar-width:none}
     .fp-chips::-webkit-scrollbar{display:none}
-    .filter-active{background:rgba(58,168,163,.1)!important;border-color:var(--accent)!important;color:var(--ink)!important}
+    .filter-active{background:rgba(11,143,135,.1)!important;border-color:var(--accent)!important;color:var(--ink)!important}
 
     /* ── Cluster halo labels (floating on SVG) ── */
     .halo-lbl{font-weight:700;pointer-events:none;font-family:inherit}
 
-    @media(max-width:1100px){.themes-layout{grid-template-columns:1fr}.hero.hero-compact{grid-template-columns:1fr}}
+    @media(max-width:1100px){.themes-layout{grid-template-columns:1fr}.topbar{flex-wrap:wrap;gap:16px}}
+    @media(max-width:680px){.topbar-stats{display:none}}
   </style>
 </head>
 <body>
 <div class="page-shell">
-  <header class="hero hero-compact">
-    <div class="hero-copy">
-      <p class="eyebrow">Clusters semánticos · T3</p>
-      <h1>BIO LATAM</h1>
-      <p class="hero-subtitle">Ecosistema de innovación · 283 organizaciones · 14 clusters temáticos</p>
-      <p class="lede">Cada nodo es una startup del ecosistema BIO LATAM. El <strong>color</strong> identifica el cluster temático. El <strong>diámetro</strong> refleja el nivel de desarrollo (<em>valuation tier</em>): las organizaciones más avanzadas ocupan más espacio visual. El <strong>anillo punteado</strong> indica que la empresa tiene rondas de inversión documentadas. Los chips de tecnología e industria permiten explorar dimensiones transversales.</p>
+  <header class="topbar">
+    <div class="topbar-brand">
+      <p class="topbar-eyebrow">Clusters semánticos · T3</p>
+      <h1 class="topbar-title">BIO LATAM</h1>
+      <p class="topbar-sub">Mapa semántico del ecosistema biotech latinoamericano</p>
     </div>
-    <div class="hero-meta">
-      <div class="meta-card"><span class="meta-label">Modelo</span><strong id="meta-model">—</strong></div>
-      <div class="meta-card"><span class="meta-label">Startups include</span><strong id="meta-total">—</strong></div>
-      <div class="meta-card"><span class="meta-label">Clusters</span><strong id="meta-clusters">—</strong></div>
-      <div class="meta-card"><span class="meta-label">Navegación</span><strong><a href="./index.html" style="color:inherit">← Piloto</a></strong></div>
+    <div class="topbar-stats">
+      <div class="topbar-stat"><strong id="meta-total">—</strong><span>startups</span></div>
+      <div class="topbar-stat"><strong id="meta-clusters">—</strong><span>clusters</span></div>
+      <div class="topbar-stat"><strong id="meta-model">—</strong><span>modelo</span></div>
     </div>
+    <a href="./index.html" class="topbar-link">← Piloto</a>
   </header>
 
   <section class="themes-layout">
@@ -157,10 +169,10 @@
           <span id="s-funded" class="s-chip s-chip-muted">—</span>
         </div>
       </div>
-      <div id="cluster-list" class="cluster-list"></div>
       <div id="detail-pane" class="detail-pane">
-        <span style="color:var(--muted);font-size:.82rem;">Hacé clic en una startup o en un cluster para ver el detalle.</span>
+        <span class="dp-hint">Seleccioná un cluster o startup para explorar →</span>
       </div>
+      <div id="cluster-list" class="cluster-list"></div>
     </aside>
 
     <main class="themes-stage">
@@ -1098,6 +1110,7 @@ function buildClusterList(){
     const color=tm.color;
     const row=document.createElement("div");
     row.className="cr";row.dataset.theme=theme;
+    row.style.setProperty('--cr-color', color);
 
     const top=document.createElement("div");top.className="cr-top";
     const dot=document.createElement("span");dot.className="cr-dot";dot.style.background=color;
@@ -1112,7 +1125,7 @@ function buildClusterList(){
     const desc=THEME_DESC[theme];
     if(desc){
       const dl=document.createElement("div");
-      dl.style.cssText="font-size:.72rem;color:var(--muted);line-height:1.38;margin-bottom:5px;padding-right:4px;";
+      dl.className="cr-desc";
       dl.textContent=desc;
       row.appendChild(dl);
     }
