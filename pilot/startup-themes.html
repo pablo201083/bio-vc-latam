@@ -831,51 +831,74 @@ function updateHalos(){
     }
 
     // Calcular posición inicial: borde superior del blob
-    const shortName=theme
-      .replace(" & Access","").replace(" & Circular Economy","")
-      .replace(" Engineering","").replace(" Transition","").replace(" Biology","");
-    const fs=viewMode==="cluster"?11:10;
-    const w=shortName.length*fs*0.61+14, h=fs+8;
+    const LABEL_SHORT={
+      "Therapeutics":"Therapeutics",
+      "Diagnostics & Health Access":"Diagnostics",
+      "Food Systems & Alt Proteins":"Food Systems",
+      "Bioinputs & Crop Resilience":"Bioinputs",
+      "Nature & Ecosystem Tech":"Nature Tech",
+      "Farm Intelligence":"Farm Intel.",
+      "Biomaterials & Circular Economy":"Biomaterials",
+      "Biomanufacturing":"Biomanufact.",
+    };
+    const shortName=LABEL_SHORT[theme]||theme.split(" ")[0];
+    const fs=11;
+    const w=shortName.length*fs*0.58+16, h=fs+9;
     const blobPad=hullPts.length<=1?28:hullPts.length<4?20:22;
     const hullTopY=hullPts.length>0?Math.min(...hullPts.map(p=>p[1])):cy;
+    const ay=Math.max(h/2+8, hullTopY-blobPad+h/2+2);
     lbls.push({
-      x:cx, y:hullTopY-blobPad+h/2+4,   // anchor: top of blob
-      ax:cx, ay:hullTopY-blobPad+h/2+4, // attraction target
+      x:cx, y:ay, ax:cx, ay,
       w, h, fs, shortName, color,
-      alpha:themeHasMatch?"0.88":"0.3",
+      alpha:themeHasMatch?"0.9":"0.3",
       textOp:themeHasMatch?"0.95":"0.2",
     });
   });
 
-  // ── Pasada 2: force-repulsion entre etiquetas para encontrar huecos ────────
-  const nodePts=nodes.map(n=>[n.cx,n.cy]);
-  for(let it=0;it<160;it++){
-    // Repulsión rect-a-rect entre pares de labels
+  // ── Pasada 2: force-repulsion entre etiquetas ────────────────────────────
+  for(let it=0;it<280;it++){
+    const attract=it<200?0.012:0.006; // atracción más débil — labels pueden alejarse más
     for(let i=0;i<lbls.length;i++){
       for(let j=i+1;j<lbls.length;j++){
         const a=lbls[i],b=lbls[j];
-        const gapX=(a.w+b.w)/2+6, gapY=(a.h+b.h)/2+4;
+        const gapX=(a.w+b.w)/2+12, gapY=(a.h+b.h)/2+10;
         const dx=a.x-b.x, dy=a.y-b.y;
         const ox=gapX-Math.abs(dx), oy=gapY-Math.abs(dy);
         if(ox>0&&oy>0){
-          // Resolver por el eje de menor solapamiento
           if(ox<oy){
-            const push=ox*0.4*(dx>=0?1:-1);
+            const push=ox*0.55*(dx>=0?1:-1);
             a.x+=push;b.x-=push;
           }else{
-            const push=oy*0.4*(dy>=0?1:-1);
+            const push=oy*0.55*(dy>=0?1:-1);
             a.y+=push;b.y-=push;
           }
         }
       }
     }
-    // Atracción suave hacia la posición ancla
     lbls.forEach(l=>{
-      l.x+=(l.ax-l.x)*0.03;
-      l.y+=(l.ay-l.y)*0.03;
-      // Clamp al canvas
-      l.x=Math.max(l.w/2+6,Math.min(W-l.w/2-6,l.x));
-      l.y=Math.max(l.h/2+6,Math.min(H-l.h/2-6,l.y));
+      l.x+=(l.ax-l.x)*attract;
+      l.y+=(l.ay-l.y)*attract;
+      l.x=Math.max(l.w/2+8,Math.min(W-l.w/2-8,l.x));
+      l.y=Math.max(l.h/2+8,Math.min(H-l.h/2-8,l.y));
+    });
+  }
+  // Pasada de separación final garantizada (push=1.0 — resolución dura)
+  for(let pass=0;pass<8;pass++){
+    for(let i=0;i<lbls.length;i++){
+      for(let j=i+1;j<lbls.length;j++){
+        const a=lbls[i],b=lbls[j];
+        const gapX=(a.w+b.w)/2+10, gapY=(a.h+b.h)/2+8;
+        const dx=a.x-b.x||0.1, dy=a.y-b.y||0.1;
+        const ox=gapX-Math.abs(dx), oy=gapY-Math.abs(dy);
+        if(ox>0&&oy>0){
+          if(ox<oy){const p=ox*0.5*(dx>=0?1:-1);a.x+=p;b.x-=p;}
+          else{const p=oy*0.5*(dy>=0?1:-1);a.y+=p;b.y-=p;}
+        }
+      }
+    }
+    lbls.forEach(l=>{
+      l.x=Math.max(l.w/2+8,Math.min(W-l.w/2-8,l.x));
+      l.y=Math.max(l.h/2+8,Math.min(H-l.h/2-8,l.y));
     });
   }
 
