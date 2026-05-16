@@ -73,6 +73,8 @@
     .fc.active-ind::after{content:" ×";opacity:.75;font-size:.88em;font-weight:400}
     .fc.active-country{background:#1e3a8a;color:#fff;border-color:#1e3a8a;box-shadow:0 1px 6px rgba(30,58,138,.22)}
     .fc.active-country::after{content:" ×";opacity:.75;font-size:.88em;font-weight:400}
+    .fc.active-stage{background:#5b2d8e;color:#fff;border-color:#5b2d8e;box-shadow:0 1px 6px rgba(91,45,142,.22)}
+    .fc.active-stage::after{content:" ×";opacity:.75;font-size:.88em;font-weight:400}
     .chip-lbl{font-size:.69rem;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;align-self:center}
     .clear-fc{font-size:.72rem;padding:3px 9px;color:var(--muted);border-color:rgba(200,192,180,.5);background:transparent}
     .clear-fc:hover{color:var(--ink);border-color:var(--muted);background:rgba(0,0,0,.04)}
@@ -191,10 +193,10 @@
           </div>
         </div>
         <div class="conf-leg">
-          <span class="cs" style="width:6px;height:6px;background:#aaa"></span>emergente
-          <span class="cs" style="width:9px;height:9px;background:#888"></span>tier 1
-          <span class="cs" style="width:13px;height:13px;background:var(--accent)"></span>tier 2+
-          <span class="cs" style="width:13px;height:13px;background:var(--accent)"></span>+ rondas → mayor diámetro
+          <span class="cs" style="width:5px;height:5px;background:#bbb"></span>pre-seed
+          <span class="cs" style="width:7px;height:7px;background:#999"></span>seed
+          <span class="cs" style="width:10px;height:10px;background:var(--accent)"></span>serie A
+          <span class="cs" style="width:14px;height:14px;background:var(--accent)"></span>serie B+
         </div>
       </div>
       <div id="filter-panel" class="filter-panel">
@@ -209,6 +211,10 @@
         <div class="fp-row">
           <div class="fp-sec-head"><span class="fp-sec-lbl">Industria</span><button id="clr-ind" class="fp-sec-clr" type="button">limpiar selección</button></div>
           <div id="ind-chips" class="fp-chips"></div>
+        </div>
+        <div class="fp-row">
+          <div class="fp-sec-head"><span class="fp-sec-lbl">Etapa</span><button id="clr-stage" class="fp-sec-clr" type="button">limpiar selección</button></div>
+          <div id="stage-chips" class="fp-chips"></div>
         </div>
       </div>
       <div id="breadcrumbs" class="breadcrumbs"></div>
@@ -226,7 +232,7 @@
 </div>
 
 <script src="./text-clean.js?v=20260422aa"></script>
-<script src="./startup-themes-data.js"></script>
+<script src="./startup-themes-data.js?v=20260516b"></script>
 <script>
 (function(){
 "use strict";
@@ -643,23 +649,30 @@ function updateGraphElements(){
 
 function applyTf(){gRoot.setAttribute("transform",`translate(${panX},${panY}) scale(${scale})`)}
 
-// Node visual properties — size by valuation_tier (investor signal)
+// Node visual properties — size driven by funding_stage; fallback a valuation_tier
+const STAGE_R={"pre-seed":5,"seed":7,"series-a":10,"series-b":14,"series-c+":18,"growth":22};
 function nRadius(s){
-  const t=s.valuation_tier||0;
+  const stage=s.funding_stage;
   const r=s.n_rounds||0;
-  const base=t>=4?19:t>=3?15:t>=2?12:t>=1.5?9:t>=1?7:5.5;
-  return base+Math.min(r*0.8,4.5);
+  const base=stage?(STAGE_R[stage]||5.5)
+    :(s.valuation_tier>=4?19:s.valuation_tier>=3?15:s.valuation_tier>=2?12:s.valuation_tier>=1?7:5.5);
+  return base+Math.min(r*0.5,3);
 }
 function nOpacity(s){return s.quality_band==="high"?0.88:0.72}
-// Whether a startup gets a persistent label (tier 2+ always labeled)
-function nFeatured(s){return s.valuation_tier!==null&&s.valuation_tier>=2}
-// Nodos que merecen label cuando "Nombres" está ON (tier ≥ 1, excluye emergentes sin señal)
-function nLabeled(s){return (s.valuation_tier||0)>=1}
+function nFeatured(s){
+  if(s.funding_stage&&["series-b","series-c+","growth"].includes(s.funding_stage))return true;
+  return s.valuation_tier!=null&&s.valuation_tier>=2;
+}
+function nLabeled(s){
+  if(s.funding_stage&&s.funding_stage!=="pre-seed")return true;
+  return (s.valuation_tier||0)>=1;
+}
 
 // ── Filter state — multi-selección con Sets ───────────────────────────────
 const activeTechs=new Set();      // OR dentro de la categoría
 const activeInds=new Set();       // OR dentro de la categoría
 const activeCountries=new Set();  // OR dentro de la categoría
+const activeStages=new Set();     // OR — pre-seed | seed | series-a | series-b | series-c+ | growth
 let searchId=null,showLabels=false;
 let viewMode="map"; // "map" | "cluster" | "graph"
 
@@ -669,9 +682,10 @@ function isHl(s){
   if(activeTheme!==null&&(s.bio_theme||"Uncategorized")!==activeTheme)return false;
   if(activeTechs.size&&!(s.tech_codes||[]).some(c=>activeTechs.has(c)))return false;
   if(activeInds.size&&!(s.industry_codes||[]).some(c=>activeInds.has(c)))return false;
+  if(activeStages.size&&!activeStages.has(s.funding_stage||"sin-dato"))return false;
   return true;
 }
-function anyFilter(){return !!(searchId||activeCountries.size||activeTheme!==null||activeTechs.size||activeInds.size)}
+function anyFilter(){return !!(searchId||activeCountries.size||activeTheme!==null||activeTechs.size||activeInds.size||activeStages.size)}
 
 // ── Build SVG ──────────────────────────────────────────────────────────────
 function buildSVG(){
@@ -945,14 +959,15 @@ const GRAY_RING="#c2bbB2";
 function syncFilterBtn(){
   const btn=document.getElementById("btn-filter");
   if(!btn)return;
-  btn.classList.toggle("filter-active",!!(activeTechs.size||activeInds.size||activeCountries.size));
-  // Mostrar/ocultar "limpiar selección" por sección
+  btn.classList.toggle("filter-active",!!(activeTechs.size||activeInds.size||activeCountries.size||activeStages.size));
   const clrC=document.getElementById("clr-country");
   const clrT=document.getElementById("clr-tech");
   const clrI=document.getElementById("clr-ind");
+  const clrS=document.getElementById("clr-stage");
   if(clrC)clrC.classList.toggle("vis",activeCountries.size>0);
   if(clrT)clrT.classList.toggle("vis",activeTechs.size>0);
   if(clrI)clrI.classList.toggle("vis",activeInds.size>0);
+  if(clrS)clrS.classList.toggle("vis",activeStages.size>0);
 }
 function updateHighlights(){
   const any=anyFilter();
@@ -1272,15 +1287,17 @@ function selectStartup(s){
   updateHighlights();updateBreadcrumbs();
   const pane=document.getElementById("detail-pane");
   const color=themeCol(s.bio_theme);
-  const tierLabel=s.valuation_tier!=null?`Tier ${s.valuation_tier}`:"Emerging";
-  const roundsStr=s.n_rounds>0?`${s.n_rounds} investment round${s.n_rounds>1?"s":""}`:null;
+  const stageLabel=s.funding_stage
+    ?{"pre-seed":"Pre-seed","seed":"Seed","series-a":"Serie A","series-b":"Serie B","series-c+":"Serie C+","growth":"Growth"}[s.funding_stage]||s.funding_stage
+    :(s.valuation_tier!=null?`Tier ${s.valuation_tier}`:"Emergente");
+  const roundsStr=s.n_rounds>0?`${s.n_rounds} ronda${s.n_rounds>1?"s":""}`:null;
   pane.innerHTML=`
     <div class="dp-title">${s.website?`<a class="dp-link" href="${s.website}" target="_blank" rel="noopener">${s.name} ↗</a>`:s.name}</div>
     <div style="font-size:.82rem;color:var(--ink);line-height:1.45;margin:4px 0 8px;">${s.one_liner||(s.summary||"").slice(0,200)||""}</div>
     <div class="dp-chips" style="margin-bottom:7px;">
-      <span class="dp-chip" style="font-weight:700;color:var(--ink);">${tierLabel}</span>
+      <span class="dp-chip" style="font-weight:700;color:var(--ink);">${stageLabel}</span>
       ${(s.countries||[]).map(c=>`<span class="dp-chip">${c}</span>`).join("")}
-      ${s.quality_band?`<span class="dp-chip">${s.quality_band==="high"?"Complete data":"Partial data"}</span>`:""}
+      ${s.quality_band?`<span class="dp-chip">${s.quality_band==="high"?"Datos completos":"Datos parciales"}</span>`:""}
       ${roundsStr?`<span class="dp-chip" style="color:#1f5c3a;border-color:rgba(31,92,58,.3);">⬤ ${roundsStr}</span>`:""}
     </div>
     <div style="display:flex;align-items:center;gap:5px;margin-bottom:3px;">
@@ -1302,15 +1319,17 @@ let hovTmr=null;
 function showHov(s,e){
   clearTimeout(hovTmr);
   const color=themeCol(s.bio_theme);
-  const tierLabel=s.valuation_tier!=null?`Tier ${s.valuation_tier}`:"Emerging";
-  const roundsLabel=s.n_rounds>0?`${s.n_rounds} round${s.n_rounds>1?"s":""}`:null;
+  const stageLabel=s.funding_stage
+    ?{"pre-seed":"Pre-seed","seed":"Seed","series-a":"Serie A","series-b":"Serie B","series-c+":"Serie C+","growth":"Growth"}[s.funding_stage]||s.funding_stage
+    :(s.valuation_tier!=null?`Tier ${s.valuation_tier}`:"Emergente");
+  const roundsLabel=s.n_rounds>0?`${s.n_rounds} ronda${s.n_rounds>1?"s":""}`:null;
   hovCard.innerHTML=`
     ${s.one_liner?`<div class="hov-body" style="margin-bottom:6px;">${s.one_liner.slice(0,180)}</div>`:""}
     <div class="hov-title" style="margin-bottom:4px;">${s.name}</div>
     <div class="hov-chips">
       <span class="hov-chip"><span class="hov-dot" style="background:${color}"></span>${s.bio_theme||"—"}</span>
       ${(s.countries||[]).length?`<span class="hov-chip">${(s.countries).join(" · ")}</span>`:""}
-      <span class="hov-chip" style="font-weight:700;color:var(--ink)">${tierLabel}</span>
+      <span class="hov-chip" style="font-weight:700;color:var(--ink)">${stageLabel}</span>
       ${roundsLabel?`<span class="hov-chip" style="color:#1f5c3a">⬤ ${roundsLabel}</span>`:""}
     </div>
     <div class="hov-small">${s.cluster_label?`<em>${s.cluster_label}</em>`:""}</div>
@@ -1385,6 +1404,25 @@ function buildChips(){
     iWrap.appendChild(btn);
   });
 
+  // Etapa — chips en orden fijo de menor a mayor
+  const STAGE_LABELS={"pre-seed":"Pre-seed","seed":"Seed","series-a":"Serie A","series-b":"Serie B","series-c+":"Serie C+","growth":"Growth"};
+  const sWrap=document.getElementById("stage-chips");
+  sWrap.innerHTML="";
+  const stageCounts={};
+  startups.forEach(s=>{const k=s.funding_stage||"sin-dato";stageCounts[k]=(stageCounts[k]||0)+1;});
+  const STAGE_ORDER=["pre-seed","seed","series-a","series-b","series-c+","growth","sin-dato"];
+  STAGE_ORDER.filter(k=>stageCounts[k]).forEach(k=>{
+    const btn=document.createElement("button");
+    btn.className="fc";btn.type="button";btn.dataset.stage=k;
+    btn.textContent=(STAGE_LABELS[k]||k)+" ("+stageCounts[k]+")";
+    btn.addEventListener("click",()=>{
+      activeStages.has(k)?activeStages.delete(k):activeStages.add(k);
+      sWrap.querySelectorAll(".fc").forEach(c=>c.classList.toggle("active-stage",activeStages.has(c.dataset.stage)));
+      updateHighlights();updateBreadcrumbs();
+    });
+    sWrap.appendChild(btn);
+  });
+
   // Botones "limpiar selección" por sección
   document.getElementById("clr-country").addEventListener("click",()=>{
     activeCountries.clear();
@@ -1399,6 +1437,11 @@ function buildChips(){
   document.getElementById("clr-ind").addEventListener("click",()=>{
     activeInds.clear();
     iWrap.querySelectorAll(".fc").forEach(c=>c.classList.remove("active-ind"));
+    updateHighlights();updateBreadcrumbs();
+  });
+  document.getElementById("clr-stage").addEventListener("click",()=>{
+    activeStages.clear();
+    sWrap.querySelectorAll(".fc").forEach(c=>c.classList.remove("active-stage"));
     updateHighlights();updateBreadcrumbs();
   });
 }
