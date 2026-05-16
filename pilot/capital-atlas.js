@@ -45,6 +45,24 @@
     "Biomaterials & Circular Economy":        "#8B6D14",
     "Biomanufacturing & Fermentation Economy":"#6B8C3A",
   };
+  // Orden canónico del selector (mismo que startup-themes.html)
+  const THEME_ORDER = [
+    "Therapeutics","Diagnostics & Health Access","Food Systems & Alt Proteins",
+    "Bioinputs & Crop Resilience","Nature & Ecosystem Tech",
+    "Farm Intelligence","Biomaterials & Circular Economy",
+    "Biomanufacturing & Fermentation Economy",
+  ];
+  // Mapa de taxonomía vieja → editorial bio-theme
+  const LEGACY_THEME_MAP = {
+    "therapeutics and regenerative medicine":    "Therapeutics",
+    "diagnostics and medtech":                   "Diagnostics & Health Access",
+    "food biotech and novel ingredients":        "Food Systems & Alt Proteins",
+    "ag biologicals and crop resilience":        "Bioinputs & Crop Resilience",
+    "precision agriculture and resource intelligence": "Farm Intelligence",
+    "climate, energy and resource systems":      "Nature & Ecosystem Tech",
+    "biobased chemistry and advanced materials": "Biomaterials & Circular Economy",
+    "computational biology and scientific software": "Biomanufacturing & Fermentation Economy",
+  };
   const SHARED_TAXONOMY_STATE_KEY = "bioVcLatam.activeSemanticTaxonomy";
   const DYNAMIC_THEME_PALETTE = [
     "#ff7043", "#d66aa2", "#b64050", "#09a7b7", "#235a7c", "#7d58c7",
@@ -215,7 +233,8 @@
   function themeKey(node) {
     const dynamic = dynamicAssignmentForNode(node);
     if (dynamic) return dynamic.cluster_label;
-    return clean(node.theme) || "needs review";
+    const raw = clean(node.theme);
+    return LEGACY_THEME_MAP[raw] || raw || "needs review";
   }
 
   function themeLabel(theme) {
@@ -527,12 +546,10 @@
 
   function populateFilters() {
     const startupNodes = (payload.nodes || []).filter((node) => node.type === "startup" && node.scope_decision === "include");
-    const themes = Array.from(new Set(startupNodes.map(themeKey).filter(Boolean)))
-      .sort((a, b) => themeLabel(a).localeCompare(themeLabel(b), "es"));
     const countries = Array.from(new Set(startupNodes.map((node) => clean(node.country)).filter(Boolean)))
       .sort((a, b) => a.localeCompare(b, "es"));
     themeSelect.innerHTML = '<option value="all">Todas las categorias</option>' +
-      themes.map((theme) => `<option value="${escapeHtml(theme)}">${escapeHtml(themeLabel(theme))}</option>`).join("");
+      THEME_ORDER.map((theme) => `<option value="${escapeHtml(theme)}">${escapeHtml(theme)}</option>`).join("");
     countrySelect.innerHTML = '<option value="all">Todos los paises</option>' +
       countries.map((country) => `<option value="${escapeHtml(country)}">${escapeHtml(country)}</option>`).join("");
   }
