@@ -839,18 +839,19 @@ function updateHalos(){
       "Nature & Ecosystem Tech":"Nature Tech",
       "Farm Intelligence":"Farm Intel.",
       "Biomaterials & Circular Economy":"Biomaterials",
-      "Biomanufacturing":"Biomanufact.",
+      "Biomanufacturing & Fermentation Economy":"Biomanufact.",
     };
     const shortName=LABEL_SHORT[theme]||theme.split(" ")[0];
     const fs=11;
     const w=shortName.length*fs*0.58+18, h=fs+10;
     const blobPad=hullPts.length<=1?28:hullPts.length<4?20:22;
 
-    // Radio efectivo del blob — cappado para que el label no se vaya demasiado lejos
-    const rawBlobR=hullPts.length>0
-      ?Math.max(28,...hullPts.map(p=>Math.sqrt((p[0]-cx)**2+(p[1]-cy)**2)))+blobPad
+    // Radio efectivo del blob: usa corePts (no-outliers) en lugar de los hull-pts sigma-filtrados,
+    // para que el label se empuje fuera del cluster real, no solo del núcleo sigma-filtrado
+    const rawBlobR=corePts.length>0
+      ?Math.max(28,...corePts.map(p=>Math.sqrt((p[0]-cx)**2+(p[1]-cy)**2)))+blobPad
       :38;
-    const blobR=Math.min(rawBlobR, 90); // cap: clusters grandes no empujan demasiado
+    const blobR=Math.min(rawBlobR, Math.min(W,H)*0.45);
 
     // Dirección radial desde el centro del canvas hacia el centroide del cluster
     const canvasCx=W/2, canvasCy=H/2;
@@ -859,7 +860,7 @@ function updateHalos(){
     // Si el cluster está muy cerca del centro del canvas, usar dirección hacia arriba
     const ndx=dirLen>60?dirX/dirLen:0;
     const ndy=dirLen>60?dirY/dirLen:-1;
-    const pushDist=blobR+h+6;
+    const pushDist=blobR+h+8;
     const ax=Math.max(w/2+10,Math.min(W-w/2-10, cx+ndx*pushDist));
     const ay=Math.max(h/2+10,Math.min(H-h/2-10, cy+ndy*pushDist));
 
@@ -872,24 +873,27 @@ function updateHalos(){
   });
 
   // ── Pasada 2: búsqueda espiral garantizada ──────────────────────────────
-  // Ordena por tamaño de cluster desc: los más grandes tienen prioridad de posición
-  lbls.sort((a,b)=>(b.count||0)-(a.count||0));
+  // Posiciones de todos los nodos para evitar que labels caigan sobre puntos
+  const dotPts=nodes.map(n=>[n.cx,n.cy]);
 
   function overlaps(lbl, placed){
-    return placed.some(p=>{
+    // Evitar otros labels
+    if(placed.some(p=>{
       const gx=(lbl.w+p.w)/2+12, gy=(lbl.h+p.h)/2+9;
       return Math.abs(lbl.x-p.x)<gx && Math.abs(lbl.y-p.y)<gy;
-    });
+    })) return true;
+    // Evitar startup dots — cualquier dot dentro del bounding box del label
+    const hw=lbl.w/2+6, hh=lbl.h/2+6;
+    return dotPts.some(([dx,dy])=>Math.abs(lbl.x-dx)<hw && Math.abs(lbl.y-dy)<hh);
   }
 
   const placed=[];
   lbls.forEach(lbl=>{
-    // Empieza en la posición ancla
     lbl.x=lbl.ax; lbl.y=lbl.ay;
     if(!overlaps(lbl, placed)){placed.push(lbl);return;}
 
-    // Espiral outward: distancia r en pasos de 8px, 24 ángulos por vuelta
-    const step=8, maxR=Math.min(W,H)*0.42;
+    // Espiral outward: distancia r en pasos de 8px
+    const step=8, maxR=Math.min(W,H)*0.5;
     let found=false;
     outer: for(let r=step;r<=maxR;r+=step){
       const nAngles=Math.max(8, Math.round(2*Math.PI*r/step));
@@ -901,7 +905,7 @@ function updateHalos(){
         if(!overlaps(lbl, placed)){found=true;break outer;}
       }
     }
-    if(!found){lbl.x=lbl.ax;lbl.y=lbl.ay;} // fallback
+    if(!found){lbl.x=lbl.ax;lbl.y=lbl.ay;}
     placed.push(lbl);
   });
 
