@@ -1,5 +1,5 @@
 window.STARTUP_THEMES_DATA = {
-  "computed_at": "2026-05-16T15:54:55",
+  "computed_at": "2026-05-16T16:00:45",
   "model": "intfloat/multilingual-e5-small",
   "stats": {
     "total_startups": 373,
@@ -56,7 +56,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 1.5,
+      "valuation_estimate_source": "emergente"
     },
     {
       "id": "biomakers",
@@ -99,7 +101,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": 10
+      "valuation_bucket_usd": 10,
+      "valuation_estimate_usd": 10.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "bleps_vision",
@@ -140,7 +144,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "brain4care-br",
@@ -175,7 +181,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": 15
+      "valuation_bucket_usd": 15,
+      "valuation_estimate_usd": 15.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "caspr_biotech",
@@ -217,7 +225,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "chemtest",
@@ -257,7 +267,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 1.5,
+      "valuation_estimate_source": "emergente"
     },
     {
       "id": "daeki-cl",
@@ -292,7 +304,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 1.5,
+      "valuation_estimate_source": "emergente"
     },
     {
       "id": "embryoxite",
@@ -333,7 +347,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "enteria",
@@ -373,7 +389,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "eva-mx",
@@ -408,7 +426,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "series-a",
       "funding_bucket_usd": 10,
-      "valuation_bucket_usd": 50
+      "valuation_bucket_usd": 50,
+      "valuation_estimate_usd": 50.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "geneprodx-mx",
@@ -443,7 +463,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "series-a",
       "funding_bucket_usd": 5,
-      "valuation_bucket_usd": 25
+      "valuation_bucket_usd": 25,
+      "valuation_estimate_usd": 25.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "gisens_biotech",
@@ -485,7 +507,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "hilab-br",
@@ -520,7 +544,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "series-b",
       "funding_bucket_usd": 25,
-      "valuation_bucket_usd": 50
+      "valuation_bucket_usd": 50,
+      "valuation_estimate_usd": 50.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "kura-biotec-mx",
@@ -555,7 +581,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "levita-magnetics-cl",
@@ -590,7 +618,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "series-b",
       "funding_bucket_usd": 25,
-      "valuation_bucket_usd": 100
+      "valuation_bucket_usd": 100,
+      "valuation_estimate_usd": 100.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "limay_biosciences",
@@ -632,7 +662,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "microgenesis",
@@ -672,7 +704,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "microscopia",
@@ -714,7 +748,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 0
+      "valuation_bucket_usd": 0,
+      "valuation_estimate_usd": 0.8,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "multiplai_health",
@@ -756,7 +792,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": 15
+      "valuation_bucket_usd": 15,
+      "valuation_estimate_usd": 15.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "mzp",
@@ -796,7 +834,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "mzp-tecnologia-ar",
@@ -831,7 +871,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 1.5,
+      "valuation_estimate_source": "emergente"
     },
     {
       "id": "nanojump_bio",
@@ -871,7 +913,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "neomed-br",
@@ -906,7 +950,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 1.5,
+      "valuation_estimate_source": "emergente"
     },
     {
       "id": "oncoliq",
@@ -946,7 +992,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "pregen",
@@ -989,7 +1037,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "reddot-bio-br",
@@ -1024,7 +1074,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "samay",
@@ -1065,7 +1117,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": 15
+      "valuation_bucket_usd": 15,
+      "valuation_estimate_usd": 15.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "tell",
@@ -1106,7 +1160,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "terragene-ar",
@@ -1141,7 +1197,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": 15
+      "valuation_bucket_usd": 15,
+      "valuation_estimate_usd": 15.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "ubique_bio",
@@ -1181,7 +1239,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "unima-mx",
@@ -1216,7 +1276,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "seed",
       "funding_bucket_usd": 1,
-      "valuation_bucket_usd": 0
+      "valuation_bucket_usd": 0,
+      "valuation_estimate_usd": 0.8,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "zev_biotech",
@@ -1258,7 +1320,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "algaebio",
@@ -1302,7 +1366,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "aquit",
@@ -1345,7 +1411,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "bioblends",
@@ -1383,7 +1451,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "cell_farm",
@@ -1423,7 +1493,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "cellva",
@@ -1461,7 +1533,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "done_properly",
@@ -1505,7 +1579,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "dprotein",
@@ -1547,7 +1623,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "ergo_bioscience",
@@ -1591,7 +1669,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "ergo_foods",
@@ -1635,7 +1715,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "food4you",
@@ -1678,7 +1760,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "glycox",
@@ -1720,7 +1804,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "innovai",
@@ -1761,7 +1847,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "kran-nanobubble-cl",
@@ -1796,7 +1884,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 1.5,
+      "valuation_estimate_source": "emergente"
     },
     {
       "id": "kresko_rnatech",
@@ -1835,7 +1925,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "levya",
@@ -1881,7 +1973,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "luyef-biotechnologies-cl",
@@ -1916,7 +2010,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "matchetune",
@@ -1959,7 +2055,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "microterra",
@@ -1998,7 +2096,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "seed",
       "funding_bucket_usd": 1,
-      "valuation_bucket_usd": 5
+      "valuation_bucket_usd": 5,
+      "valuation_estimate_usd": 5.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "nanoingreen",
@@ -2046,7 +2146,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "nat4bio",
@@ -2092,7 +2194,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "naturannova",
@@ -2133,7 +2237,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "nutrition-from-water-cl",
@@ -2168,7 +2274,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "rnatech-ar",
@@ -2203,7 +2311,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 1.5,
+      "valuation_estimate_source": "emergente"
     },
     {
       "id": "savefruit-mx",
@@ -2238,7 +2348,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 1.5,
+      "valuation_estimate_source": "emergente"
     },
     {
       "id": "tomorrow_foods",
@@ -2281,7 +2393,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": 15
+      "valuation_bucket_usd": 15,
+      "valuation_estimate_usd": 15.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "trebe_biotech",
@@ -2325,7 +2439,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 0
+      "valuation_bucket_usd": 0,
+      "valuation_estimate_usd": 0.8,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "werk-nvac",
@@ -2364,7 +2480,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "HIAMET",
@@ -2407,7 +2525,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "ages",
@@ -2452,7 +2572,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "alkemio",
@@ -2493,7 +2615,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "arqlite",
@@ -2536,7 +2660,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "atacama-biomaterials-cl",
@@ -2571,7 +2697,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 1.5,
+      "valuation_estimate_source": "emergente"
     },
     {
       "id": "bioelements-cl",
@@ -2606,7 +2734,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 1.5,
+      "valuation_estimate_source": "emergente"
     },
     {
       "id": "bioeutectics",
@@ -2653,7 +2783,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "biometallum",
@@ -2698,7 +2830,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "bioplaster_research",
@@ -2739,7 +2873,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "bioplaster_research_inc",
@@ -2780,7 +2916,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "bioplastix",
@@ -2825,7 +2963,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "break_pet",
@@ -2870,7 +3010,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "calfix",
@@ -2911,7 +3053,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "circclo",
@@ -2954,7 +3098,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "cyanomin",
@@ -2997,7 +3143,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "ecoshell-mx",
@@ -3032,7 +3180,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 1.5,
+      "valuation_estimate_source": "emergente"
     },
     {
       "id": "ejido-verde-mx",
@@ -3067,7 +3217,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "elytron_biotech",
@@ -3111,7 +3263,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "fungi_life",
@@ -3158,7 +3312,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "giraffe-bio-ar",
@@ -3193,7 +3349,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 1.5,
+      "valuation_estimate_source": "emergente"
     },
     {
       "id": "inmet",
@@ -3235,7 +3393,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "living-ink-us",
@@ -3270,7 +3430,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "michroma",
@@ -3316,7 +3478,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "series-a",
       "funding_bucket_usd": 5,
-      "valuation_bucket_usd": 25
+      "valuation_bucket_usd": 25,
+      "valuation_estimate_usd": 25.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "monte-caldera-technology",
@@ -3360,7 +3524,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "mothership-materials-cl",
@@ -3395,7 +3561,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "mycorium_biotech",
@@ -3436,7 +3604,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "nairotech",
@@ -3480,7 +3650,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "neocell",
@@ -3525,7 +3697,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "patagon-fiber",
@@ -3568,7 +3742,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "polymera",
@@ -3615,7 +3791,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "protiva",
@@ -3656,7 +3834,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "radial",
@@ -3698,7 +3878,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "sistema-bio-mx",
@@ -3735,7 +3917,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "series-a",
       "funding_bucket_usd": 15,
-      "valuation_bucket_usd": 50
+      "valuation_bucket_usd": 50,
+      "valuation_estimate_usd": 50.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "stamm",
@@ -3778,7 +3962,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "series-a",
       "funding_bucket_usd": 15,
-      "valuation_bucket_usd": 100
+      "valuation_bucket_usd": 100,
+      "valuation_estimate_usd": 100.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "strong-by-form-cl",
@@ -3813,7 +3999,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "series-a",
       "funding_bucket_usd": 5,
-      "valuation_bucket_usd": 25
+      "valuation_bucket_usd": 25,
+      "valuation_estimate_usd": 25.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "tintte",
@@ -3858,7 +4046,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "apexzymes",
@@ -3903,7 +4093,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "cellargen_biotech",
@@ -3951,7 +4143,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "enzyva",
@@ -3997,7 +4191,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "future_biome",
@@ -4041,7 +4237,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "keclon",
@@ -4088,7 +4286,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": 25
+      "valuation_bucket_usd": 25,
+      "valuation_estimate_usd": 25.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "laurus",
@@ -4137,7 +4337,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "mavios",
@@ -4181,7 +4383,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "omica",
@@ -4227,7 +4431,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "outpost",
@@ -4272,7 +4478,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "stamm-ar",
@@ -4307,7 +4515,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "algenis-cl",
@@ -4342,7 +4552,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 0
+      "valuation_bucket_usd": 0,
+      "valuation_estimate_usd": 0.8,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "amnova-biotech-cl",
@@ -4377,7 +4589,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "andes-biotechnologies-cl",
@@ -4412,7 +4626,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "apasomics",
@@ -4456,7 +4672,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "aplife_biotech",
@@ -4501,7 +4719,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "seed",
       "funding_bucket_usd": 1,
-      "valuation_bucket_usd": 15
+      "valuation_bucket_usd": 15,
+      "valuation_estimate_usd": 15.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "aptah-bio-br",
@@ -4536,7 +4756,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 1.5,
+      "valuation_estimate_source": "emergente"
     },
     {
       "id": "ardan",
@@ -4577,7 +4799,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "asclepii",
@@ -4622,7 +4846,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "autem-medical",
@@ -4665,7 +4891,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "series-a",
       "funding_bucket_usd": 10,
-      "valuation_bucket_usd": 50
+      "valuation_bucket_usd": 50,
+      "valuation_estimate_usd": 50.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "autem-therapeutics-br",
@@ -4700,7 +4928,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 1.5,
+      "valuation_estimate_source": "emergente"
     },
     {
       "id": "ayuvant",
@@ -4742,7 +4972,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "biocle",
@@ -4784,7 +5016,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "bioseek",
@@ -4825,7 +5059,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "bitgenia",
@@ -4867,7 +5103,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "cellco",
@@ -4910,7 +5148,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "cellertz-bio-br",
@@ -4945,7 +5185,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "cellrep",
@@ -4986,7 +5228,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "cells-for-cells-cl",
@@ -5021,7 +5265,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "series-a",
       "funding_bucket_usd": 5,
-      "valuation_bucket_usd": 25
+      "valuation_bucket_usd": 25,
+      "valuation_estimate_usd": 25.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "circa_therapeutics",
@@ -5062,7 +5308,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "dharma_bioscience",
@@ -5106,7 +5354,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "dogma_biotech",
@@ -5147,7 +5397,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "eolo_pharma",
@@ -5188,7 +5440,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": 15
+      "valuation_bucket_usd": 15,
+      "valuation_estimate_usd": 15.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "exomas",
@@ -5228,7 +5482,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "eywa_biotech",
@@ -5270,7 +5526,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "fecundis",
@@ -5310,7 +5568,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "gen-t-br",
@@ -5345,7 +5605,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "seed",
       "funding_bucket_usd": 1,
-      "valuation_bucket_usd": 10
+      "valuation_bucket_usd": 10,
+      "valuation_estimate_usd": 10.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "hexembio",
@@ -5386,7 +5648,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "invitrall",
@@ -5427,7 +5691,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "libera",
@@ -5470,7 +5736,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "mesenchyal_t",
@@ -5511,7 +5779,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "mirscience-therapeutics-br",
@@ -5546,7 +5816,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "momentum-therapeutics",
@@ -5590,7 +5862,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "naiad-drug-design-br",
@@ -5625,7 +5899,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 1.5,
+      "valuation_estimate_source": "emergente"
     },
     {
       "id": "nanogrow_biotech",
@@ -5666,7 +5942,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "nanopharmacia-group-mx",
@@ -5701,7 +5979,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 1.5,
+      "valuation_estimate_source": "emergente"
     },
     {
       "id": "nanoprox",
@@ -5747,7 +6027,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "nanotransfer",
@@ -5789,7 +6071,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "nchemi-br",
@@ -5824,7 +6108,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 1.5,
+      "valuation_estimate_source": "emergente"
     },
     {
       "id": "nintx-br",
@@ -5859,7 +6145,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": 15
+      "valuation_bucket_usd": 15,
+      "valuation_estimate_usd": 15.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "ocular_bio_design",
@@ -5904,7 +6192,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "omics",
@@ -5947,7 +6237,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "onco_precision",
@@ -5988,7 +6280,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": 15
+      "valuation_bucket_usd": 15,
+      "valuation_estimate_usd": 15.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "peptidus-biotech-br",
@@ -6023,7 +6317,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 1.5,
+      "valuation_estimate_source": "emergente"
     },
     {
       "id": "praxis-biotech-cl",
@@ -6060,7 +6356,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 1.5,
+      "valuation_estimate_source": "emergente"
     },
     {
       "id": "quantis-br",
@@ -6095,7 +6393,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 1.5,
+      "valuation_estimate_source": "emergente"
     },
     {
       "id": "scitherm_therapeutics",
@@ -6136,7 +6436,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "single_strand_biotech",
@@ -6176,7 +6478,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "spherebio",
@@ -6220,7 +6524,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "synthetic_ocular_restoration",
@@ -6266,7 +6572,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "taugc-bioinformatics-br",
@@ -6301,7 +6609,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 1.5,
+      "valuation_estimate_source": "emergente"
     },
     {
       "id": "tesabio_ai",
@@ -6342,7 +6652,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "vyro-bio-br",
@@ -6377,7 +6689,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "seed",
       "funding_bucket_usd": 1,
-      "valuation_bucket_usd": 5
+      "valuation_bucket_usd": 5,
+      "valuation_estimate_usd": 5.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "xeptiva",
@@ -6420,7 +6734,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "algalife",
@@ -6461,7 +6777,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "alytix",
@@ -6505,7 +6823,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "Diagnostic-Therapeutic Convergence",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "amplify-dynamics",
@@ -6551,7 +6871,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "Drug Discovery & Biologics",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "antarka",
@@ -6597,7 +6919,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "argentag",
@@ -6641,7 +6965,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "Diagnostic-Therapeutic Convergence",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "avatar_medtech",
@@ -6684,7 +7010,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "Diagnostic-Therapeutic Convergence",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "baxxis-medtech-cl",
@@ -6722,7 +7050,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "Diagnostic-Therapeutic Convergence",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "biosidus-ar",
@@ -6757,7 +7087,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "Drug Discovery & Biologics",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "biosynaptica",
@@ -6798,7 +7130,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "Drug Discovery & Biologics",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 0
+      "valuation_bucket_usd": 0,
+      "valuation_estimate_usd": 0.8,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "biotalife",
@@ -6843,7 +7177,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "Diagnostic-Therapeutic Convergence",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "botanical-solutions",
@@ -6886,7 +7222,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": 25
+      "valuation_bucket_usd": 25,
+      "valuation_estimate_usd": 25.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "bybug",
@@ -6936,7 +7274,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "cellter-cl",
@@ -6971,7 +7311,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "Diagnostic-Therapeutic Convergence",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 1.5,
+      "valuation_estimate_source": "emergente"
     },
     {
       "id": "cryosmetics",
@@ -7018,7 +7360,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "cytbac",
@@ -7062,7 +7406,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "Drug Discovery & Biologics",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "delee",
@@ -7103,7 +7449,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "Diagnostic-Therapeutic Convergence",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "epiliquid",
@@ -7145,7 +7493,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "Diagnostic-Therapeutic Convergence",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "galtec",
@@ -7186,7 +7536,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "Drug Discovery & Biologics",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 1.5,
+      "valuation_estimate_source": "emergente"
     },
     {
       "id": "gameet",
@@ -7227,7 +7579,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "Diagnostic-Therapeutic Convergence",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "genotyping",
@@ -7270,7 +7624,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "Diagnostic-Therapeutic Convergence",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "heartbest",
@@ -7313,7 +7669,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "hybridon",
@@ -7357,7 +7715,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "imvalv",
@@ -7399,7 +7759,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "Diagnostic-Therapeutic Convergence",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "inmunova-ar",
@@ -7434,7 +7796,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "Drug Discovery & Biologics",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "inner_cosmos",
@@ -7476,7 +7840,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "Diagnostic-Therapeutic Convergence",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "kheiron-biotech-ar",
@@ -7511,7 +7877,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 1.5,
+      "valuation_estimate_source": "emergente"
     },
     {
       "id": "lipock",
@@ -7557,7 +7925,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "Drug Discovery & Biologics",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "mabxience-ar",
@@ -7592,7 +7962,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "Drug Discovery & Biologics",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "magnamed",
@@ -7633,7 +8005,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "Diagnostic-Therapeutic Convergence",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "merken-biotech-cl",
@@ -7668,7 +8042,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "Drug Discovery & Biologics",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 1.5,
+      "valuation_estimate_source": "emergente"
     },
     {
       "id": "metabix-biotech",
@@ -7713,7 +8089,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "Diagnostic-Therapeutic Convergence",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "migma",
@@ -7758,7 +8136,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "new_organs_biotech",
@@ -7800,7 +8180,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "Drug Discovery & Biologics",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "pepton",
@@ -7842,7 +8224,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "Drug Discovery & Biologics",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "phagelab",
@@ -7889,7 +8273,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "Diagnostic-Therapeutic Convergence",
       "funding_stage": "series-b",
       "funding_bucket_usd": 25,
-      "valuation_bucket_usd": 100
+      "valuation_bucket_usd": 100,
+      "valuation_estimate_usd": 100.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "pharmalens-br",
@@ -7927,7 +8313,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "Drug Discovery & Biologics",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 1.5,
+      "valuation_estimate_source": "emergente"
     },
     {
       "id": "phylumtech",
@@ -7971,7 +8359,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "Drug Discovery & Biologics",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "pill_ar",
@@ -8016,7 +8406,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "Diagnostic-Therapeutic Convergence",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "plamic",
@@ -8062,7 +8454,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "Drug Discovery & Biologics",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "plamic_biotech",
@@ -8106,7 +8500,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "Drug Discovery & Biologics",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "qnity",
@@ -8148,7 +8544,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "Drug Discovery & Biologics",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "radbio",
@@ -8192,7 +8590,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "Drug Discovery & Biologics",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "resistia",
@@ -8235,7 +8635,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "Drug Discovery & Biologics",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "sciphage",
@@ -8280,7 +8682,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "Diagnostic-Therapeutic Convergence",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "tensor-care",
@@ -8322,7 +8726,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "Diagnostic-Therapeutic Convergence",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "untech",
@@ -8365,7 +8771,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "Diagnostic-Therapeutic Convergence",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "viewmind",
@@ -8407,7 +8815,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "Diagnostic-Therapeutic Convergence",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "webio-ar",
@@ -8442,7 +8852,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "Drug Discovery & Biologics",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 1.5,
+      "valuation_estimate_source": "emergente"
     },
     {
       "id": "agrosustain-mx",
@@ -8481,7 +8893,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 1.5,
+      "valuation_estimate_source": "emergente"
     },
     {
       "id": "arakion",
@@ -8521,7 +8935,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "atarraya-mx",
@@ -8556,7 +8972,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "beam_croptech",
@@ -8597,7 +9015,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "bio-insumos-nativa-cl",
@@ -8632,7 +9052,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 1.5,
+      "valuation_estimate_source": "emergente"
     },
     {
       "id": "biocentis-br",
@@ -8667,7 +9089,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 1.5,
+      "valuation_estimate_source": "emergente"
     },
     {
       "id": "biofabrica-siglo-xxi-mx",
@@ -8706,7 +9130,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 1.5,
+      "valuation_estimate_source": "emergente"
     },
     {
       "id": "bioheuris",
@@ -8746,7 +9172,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": 15
+      "valuation_bucket_usd": 15,
+      "valuation_estimate_usd": 15.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "botanical-solution-inc-cl",
@@ -8784,7 +9212,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 1.5,
+      "valuation_estimate_source": "emergente"
     },
     {
       "id": "bruna-by-altum-lab-cl",
@@ -8819,7 +9249,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 1.5,
+      "valuation_estimate_source": "emergente"
     },
     {
       "id": "bsafe_biotech",
@@ -8860,7 +9292,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "calice",
@@ -8902,7 +9336,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "calice-ai-ar",
@@ -8940,7 +9376,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "caligenia",
@@ -8983,7 +9421,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "eiru",
@@ -9022,7 +9462,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 10.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "exacta-bioscience-cl",
@@ -9057,7 +9499,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 1.5,
+      "valuation_estimate_source": "emergente"
     },
     {
       "id": "feedvax",
@@ -9099,7 +9543,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "seed",
       "funding_bucket_usd": 1,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "food-for-the-future-cl",
@@ -9134,7 +9580,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "hapiseeds-br",
@@ -9169,7 +9617,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 1.5,
+      "valuation_estimate_source": "emergente"
     },
     {
       "id": "inbioar",
@@ -9209,7 +9659,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "inedita-bio-br",
@@ -9244,7 +9696,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "seed",
       "funding_bucket_usd": 1,
-      "valuation_bucket_usd": 10
+      "valuation_bucket_usd": 10,
+      "valuation_estimate_usd": 10.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "infira",
@@ -9287,7 +9741,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 0
+      "valuation_bucket_usd": 0,
+      "valuation_estimate_usd": 0.8,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "m4life",
@@ -9326,7 +9782,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "microin",
@@ -9366,7 +9824,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "neocrop-technologies",
@@ -9409,7 +9869,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "neoprospecta-br",
@@ -9447,7 +9909,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "seed",
       "funding_bucket_usd": 1,
-      "valuation_bucket_usd": 10
+      "valuation_bucket_usd": 10,
+      "valuation_estimate_usd": 10.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "nunatak_biotech",
@@ -9489,7 +9953,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "patagonia-biotechnology-cl",
@@ -9524,7 +9990,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 1.5,
+      "valuation_estimate_source": "emergente"
     },
     {
       "id": "puna_bio",
@@ -9566,7 +10034,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": 15
+      "valuation_bucket_usd": 15,
+      "valuation_estimate_usd": 15.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "qumir_nano",
@@ -9610,7 +10080,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "semion",
@@ -9647,7 +10119,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "solena-mx",
@@ -9682,7 +10156,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 1.5,
+      "valuation_estimate_source": "emergente"
     },
     {
       "id": "soygreen",
@@ -9722,7 +10198,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "sylvarum",
@@ -9765,7 +10243,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "symbiomics",
@@ -9809,7 +10289,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "seed",
       "funding_bucket_usd": 1,
-      "valuation_bucket_usd": 10
+      "valuation_bucket_usd": 10,
+      "valuation_estimate_usd": 10.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "syocin-biotech",
@@ -9855,7 +10337,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "the-live-green-co-cl",
@@ -9890,7 +10374,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "series-a",
       "funding_bucket_usd": 15,
-      "valuation_bucket_usd": 25
+      "valuation_bucket_usd": 25,
+      "valuation_estimate_usd": 25.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "unibaio",
@@ -9930,7 +10416,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "vexxel_biotech",
@@ -9970,7 +10458,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "zavia_bio",
@@ -10013,7 +10503,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "branch_energy",
@@ -10056,7 +10548,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "earth-ocean-farms-mx",
@@ -10091,7 +10585,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 1.5,
+      "valuation_estimate_source": "emergente"
     },
     {
       "id": "einsted",
@@ -10132,7 +10628,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "gigablue",
@@ -10173,7 +10671,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "hif-global-cl",
@@ -10210,7 +10710,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "huiro",
@@ -10249,7 +10751,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "kigui",
@@ -10290,7 +10794,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "muta",
@@ -10331,7 +10837,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "poas_bioenergy",
@@ -10374,7 +10882,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "ruuts",
@@ -10415,7 +10925,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "solfium",
@@ -10456,7 +10968,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "splight",
@@ -10498,7 +11012,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "agrion-agrisolutions-br",
@@ -10533,7 +11049,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 1.5,
+      "valuation_estimate_source": "emergente"
     },
     {
       "id": "agrivalle",
@@ -10577,7 +11095,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 1.5,
+      "valuation_estimate_source": "emergente"
     },
     {
       "id": "biolinker",
@@ -10623,7 +11143,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "biotrop-br",
@@ -10658,7 +11180,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 1.5,
+      "valuation_estimate_source": "emergente"
     },
     {
       "id": "bug_agentes_biologicos",
@@ -10697,7 +11221,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "decoy",
@@ -10736,7 +11262,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "decoy-smart-control-br",
@@ -10771,7 +11299,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "seed",
       "funding_bucket_usd": 1,
-      "valuation_bucket_usd": 10
+      "valuation_bucket_usd": 10,
+      "valuation_estimate_usd": 10.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "future_cow",
@@ -10815,7 +11345,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "genica",
@@ -10859,7 +11391,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "series-a",
       "funding_bucket_usd": 5,
-      "valuation_bucket_usd": 25
+      "valuation_bucket_usd": 25,
+      "valuation_estimate_usd": 25.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "harmony-biosciences",
@@ -10902,7 +11436,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "series-a",
       "funding_bucket_usd": 5,
-      "valuation_bucket_usd": 25
+      "valuation_bucket_usd": 25,
+      "valuation_estimate_usd": 25.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "ideelab",
@@ -10948,7 +11484,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 1.5,
+      "valuation_estimate_source": "emergente"
     },
     {
       "id": "imeve",
@@ -10994,7 +11532,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "inprenha",
@@ -11035,7 +11575,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "krilltech",
@@ -11076,7 +11618,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 1.5,
+      "valuation_estimate_source": "emergente"
     },
     {
       "id": "promip",
@@ -11116,7 +11660,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "series-a",
       "funding_bucket_usd": 5,
-      "valuation_bucket_usd": 25
+      "valuation_bucket_usd": 25,
+      "valuation_estimate_usd": 25.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "solubio",
@@ -11157,7 +11703,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 1.5,
+      "valuation_estimate_source": "emergente"
     },
     {
       "id": "solubio-br",
@@ -11192,7 +11740,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "updairy",
@@ -11236,7 +11786,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "vitales-br",
@@ -11271,7 +11823,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 1.5,
+      "valuation_estimate_source": "emergente"
     },
     {
       "id": "biodiversity_intelligence",
@@ -11312,7 +11866,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "biomas",
@@ -11352,7 +11908,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "carbonext",
@@ -11394,7 +11952,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "courageous_land",
@@ -11436,7 +11996,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "innova_space",
@@ -11479,7 +12041,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "kilimo",
@@ -11521,7 +12085,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 10.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "lemu",
@@ -11564,7 +12130,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "series-a",
       "funding_bucket_usd": 5,
-      "valuation_bucket_usd": 10
+      "valuation_bucket_usd": 10,
+      "valuation_estimate_usd": 10.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "mombak",
@@ -11604,7 +12172,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 10.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "moss",
@@ -11645,7 +12215,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "nativas",
@@ -11689,7 +12261,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 1.5,
+      "valuation_estimate_source": "emergente"
     },
     {
       "id": "nideport",
@@ -11730,7 +12304,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "notfossil",
@@ -11770,7 +12346,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "re_green",
@@ -11811,7 +12389,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 1.5,
+      "valuation_estimate_source": "emergente"
     },
     {
       "id": "satellites_on_fire",
@@ -11852,7 +12432,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 25.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "satellogic",
@@ -11893,7 +12475,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "series-c+",
       "funding_bucket_usd": 100,
-      "valuation_bucket_usd": 100
+      "valuation_bucket_usd": 100,
+      "valuation_estimate_usd": 100.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "treevia-br",
@@ -11932,7 +12516,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 1.5,
+      "valuation_estimate_source": "emergente"
     },
     {
       "id": "um_grau_e_meio",
@@ -11973,7 +12559,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "waterplan",
@@ -12013,7 +12601,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "aegro",
@@ -12054,7 +12644,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "agronow-br",
@@ -12089,7 +12681,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "agrosmart",
@@ -12130,7 +12724,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "agrourbana",
@@ -12173,7 +12769,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "aimirim-br",
@@ -12212,7 +12810,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 1.5,
+      "valuation_estimate_source": "emergente"
     },
     {
       "id": "arado",
@@ -12254,7 +12854,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "auravant",
@@ -12295,7 +12897,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "beeflow",
@@ -12335,7 +12939,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "series-a",
       "funding_bucket_usd": 10,
-      "valuation_bucket_usd": 25
+      "valuation_bucket_usd": 25,
+      "valuation_estimate_usd": 25.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "bemagro",
@@ -12377,7 +12983,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "bioin-br",
@@ -12415,7 +13023,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 0
+      "valuation_bucket_usd": 0,
+      "valuation_estimate_usd": 0.8,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "cerradox",
@@ -12455,7 +13065,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "cowmed-br",
@@ -12490,7 +13102,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "deepagro",
@@ -12531,7 +13145,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "digifarmz-br",
@@ -12566,7 +13182,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "frizata",
@@ -12608,7 +13226,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "geoprot",
@@ -12649,7 +13269,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "Drug Discovery & Biologics",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "goflux",
@@ -12690,7 +13312,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "horus_aeronaves",
@@ -12733,7 +13357,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": 10
+      "valuation_bucket_usd": 10,
+      "valuation_estimate_usd": 10.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "inceres",
@@ -12774,7 +13400,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "inspectral-br",
@@ -12809,7 +13437,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 1.5,
+      "valuation_estimate_source": "emergente"
     },
     {
       "id": "instacrops-cl",
@@ -12844,7 +13474,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "jetbov",
@@ -12885,7 +13517,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "laurus_ag_tech",
@@ -12926,7 +13560,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "leaf",
@@ -12966,7 +13602,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "logshare",
@@ -13008,7 +13646,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "nanotica",
@@ -13049,7 +13689,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "nexxto",
@@ -13092,7 +13734,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "nilus",
@@ -13134,7 +13778,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "nocarbon_milk",
@@ -13173,7 +13819,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 1.5,
+      "valuation_estimate_source": "emergente"
     },
     {
       "id": "nude",
@@ -13214,7 +13862,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "pink-farms",
@@ -13256,7 +13906,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "precision_ag",
@@ -13297,7 +13949,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 1.5,
+      "valuation_estimate_source": "emergente"
     },
     {
       "id": "rumina",
@@ -13337,7 +13991,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "seedmatriz",
@@ -13376,7 +14032,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "seedz",
@@ -13416,7 +14074,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "sensify",
@@ -13459,7 +14119,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "sensix",
@@ -13500,7 +14162,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 1.5,
+      "valuation_estimate_source": "emergente"
     },
     {
       "id": "sima",
@@ -13539,7 +14203,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "smartbreeder",
@@ -13579,7 +14245,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "solinftec",
@@ -13619,7 +14287,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "spaceag",
@@ -13659,7 +14329,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "speclab",
@@ -13702,7 +14374,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "strider-br",
@@ -13737,7 +14411,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "tarvos-br",
@@ -13775,7 +14451,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 1.5,
+      "valuation_estimate_source": "emergente"
     },
     {
       "id": "tbit",
@@ -13815,7 +14493,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "the-earth-says",
@@ -13857,7 +14537,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 0
+      "valuation_bucket_usd": 0,
+      "valuation_estimate_usd": 0.8,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "tuplaza",
@@ -13899,7 +14581,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 1.5,
+      "valuation_estimate_source": "emergente"
     },
     {
       "id": "voa",
@@ -13940,7 +14624,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "wiagro",
@@ -13982,7 +14668,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "wiseconn-cl",
@@ -14017,7 +14705,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "dymaxion_labs",
@@ -14057,7 +14747,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 0
+      "valuation_bucket_usd": 0,
+      "valuation_estimate_usd": 0.8,
+      "valuation_estimate_source": "gridx_valuation"
     },
     {
       "id": "eiwa",
@@ -14097,7 +14789,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 10.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "silohub",
@@ -14136,7 +14830,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 1.5,
+      "valuation_estimate_source": "emergente"
     },
     {
       "id": "sioma",
@@ -14176,7 +14872,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "tech",
@@ -14217,7 +14915,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "zoomagri",
@@ -14257,7 +14957,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "agree",
@@ -14299,7 +15001,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "agrired",
@@ -14340,7 +15044,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "agrojusto",
@@ -14382,7 +15088,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "agrotoken",
@@ -14424,7 +15132,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "agrotools",
@@ -14465,7 +15175,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "ecotrace-br",
@@ -14504,7 +15216,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "produzindo-certo",
@@ -14545,7 +15259,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "tracestory",
@@ -14588,7 +15304,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "ucrop-it-ar",
@@ -14626,7 +15344,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "agricapital",
@@ -14667,7 +15387,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "agroforte",
@@ -14709,7 +15431,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "agrofy",
@@ -14753,7 +15477,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "agrolend",
@@ -14794,7 +15520,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "blooms",
@@ -14834,7 +15562,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "brain_ag",
@@ -14875,7 +15605,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "culttivo",
@@ -14917,7 +15649,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "incluirtec",
@@ -14958,7 +15692,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "sette",
@@ -15000,7 +15736,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "siloreal",
@@ -15040,7 +15778,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "terramagna",
@@ -15080,7 +15820,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "traive",
@@ -15121,7 +15863,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     },
     {
       "id": "verqor",
@@ -15162,7 +15906,9 @@ window.STARTUP_THEMES_DATA = {
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
-      "valuation_bucket_usd": null
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy"
     }
   ],
   "clusters": [

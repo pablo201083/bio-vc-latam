@@ -193,10 +193,10 @@
           </div>
         </div>
         <div class="conf-leg">
-          <span class="cs" style="width:6px;height:6px;background:#bbb"></span>emergente
-          <span class="cs" style="width:9px;height:9px;background:#999"></span>con señal
-          <span class="cs" style="width:13px;height:13px;background:var(--accent)"></span>destacada
-          <span class="cs" style="width:13px;height:13px;background:var(--accent)"></span>+ inversores mapeados → mayor diámetro
+          <span class="cs" style="width:4px;height:4px;background:#bbb"></span>~$1M
+          <span class="cs" style="width:8px;height:8px;background:#999"></span>~$10M
+          <span class="cs" style="width:12px;height:12px;background:var(--accent)"></span>~$50M
+          <span class="cs" style="width:17px;height:17px;background:var(--accent)"></span>~$200M · escala log
         </div>
       </div>
       <div id="filter-panel" class="filter-panel">
@@ -649,13 +649,14 @@ function updateGraphElements(){
 
 function applyTf(){gRoot.setAttribute("transform",`translate(${panX},${panY}) scale(${scale})`)}
 
-// Node visual properties — size by valuation_tier (señal curada, 100% cobertura)
-// funding_stage se muestra solo como texto hasta tener cobertura completa (Pitchbook)
+// Node visual properties — tamaño por valuation_estimate_usd (escala log)
+// Rango: $0.8M (min) → $1000M (techo Pitchbook) → 4px → 20px
+// valuation_estimate_source documenta la confianza: gridx_valuation > stage_estimate > investors_proxy > emergente
+const VAL_R_MIN=4, VAL_R_MAX=20, VAL_MIN=0.8, VAL_MAX=1000;
 function nRadius(s){
-  const t=s.valuation_tier||0;
-  const r=s.n_investors_mapped||0;
-  const base=t>=4?19:t>=3?15:t>=2?12:t>=1.5?9:t>=1?7:5.5;
-  return base+Math.min(r*0.8,4.5);
+  const v=s.valuation_estimate_usd||VAL_MIN;
+  const logRatio=Math.log2(Math.max(v,VAL_MIN)/VAL_MIN)/Math.log2(VAL_MAX/VAL_MIN);
+  return VAL_R_MIN+(VAL_R_MAX-VAL_R_MIN)*Math.min(logRatio,1);
 }
 function nOpacity(s){return s.quality_band==="high"?0.88:0.72}
 function nFeatured(s){return s.valuation_tier!=null&&s.valuation_tier>=2;}
@@ -1282,16 +1283,23 @@ function selectStartup(s){
   const color=themeCol(s.bio_theme);
   const stageLabel=s.funding_stage
     ?{"pre-seed":"Pre-seed","seed":"Seed","series-a":"Serie A","series-b":"Serie B","series-c+":"Serie C+","growth":"Growth"}[s.funding_stage]||s.funding_stage
-    :(s.valuation_tier!=null?`Tier ${s.valuation_tier}`:"Emergente");
-  const roundsStr=s.n_investors_mapped>0?`${s.n_investors_mapped} inversor${s.n_investors_mapped>1?"es":""} mapeado${s.n_investors_mapped>1?"s":""}`:null;
+    :null;
+  const valM=s.valuation_estimate_usd;
+  const valSrc=s.valuation_estimate_source;
+  const valLabel=valM!=null
+    ?(valM>=1000?`~$${(valM/1000).toFixed(1)}B`:valM>=1?`~$${Math.round(valM)}M`:`~$${Math.round(valM*1000)}k`)
+    :null;
+  const valNote=({gridx_valuation:"GRIDX",stage_estimate:"estimado · etapa",investors_proxy:"estimado · inversores",emergente:"sin dato"})[valSrc]||"";
+  const invStr=s.n_investors_mapped>0?`${s.n_investors_mapped} inversor${s.n_investors_mapped>1?"es":""} mapeado${s.n_investors_mapped>1?"s":""}`:null;
   pane.innerHTML=`
     <div class="dp-title">${s.website?`<a class="dp-link" href="${s.website}" target="_blank" rel="noopener">${s.name} ↗</a>`:s.name}</div>
     <div style="font-size:.82rem;color:var(--ink);line-height:1.45;margin:4px 0 8px;">${s.one_liner||(s.summary||"").slice(0,200)||""}</div>
     <div class="dp-chips" style="margin-bottom:7px;">
-      <span class="dp-chip" style="font-weight:700;color:var(--ink);">${stageLabel}</span>
+      ${valLabel?`<span class="dp-chip" style="font-weight:700;color:var(--ink);">${valLabel} <span style="font-weight:400;color:var(--muted);font-size:.65rem;">${valNote}</span></span>`:""}
+      ${stageLabel?`<span class="dp-chip">${stageLabel}</span>`:""}
       ${(s.countries||[]).map(c=>`<span class="dp-chip">${c}</span>`).join("")}
       ${s.quality_band?`<span class="dp-chip">${s.quality_band==="high"?"Datos completos":"Datos parciales"}</span>`:""}
-      ${roundsStr?`<span class="dp-chip" style="color:#1f5c3a;border-color:rgba(31,92,58,.3);">⬤ ${roundsStr}</span>`:""}
+      ${invStr?`<span class="dp-chip" style="color:#1f5c3a;border-color:rgba(31,92,58,.3);">⬤ ${invStr}</span>`:""}
     </div>
     <div style="display:flex;align-items:center;gap:5px;margin-bottom:3px;">
       <span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:${color};flex:0 0 auto"></span>
@@ -1314,16 +1322,23 @@ function showHov(s,e){
   const color=themeCol(s.bio_theme);
   const stageLabel=s.funding_stage
     ?{"pre-seed":"Pre-seed","seed":"Seed","series-a":"Serie A","series-b":"Serie B","series-c+":"Serie C+","growth":"Growth"}[s.funding_stage]||s.funding_stage
-    :(s.valuation_tier!=null?`Tier ${s.valuation_tier}`:"Emergente");
-  const roundsLabel=s.n_investors_mapped>0?`${s.n_investors_mapped} inv. mapeado${s.n_investors_mapped>1?"s":""}`:null;
+    :null;
+  const valM=s.valuation_estimate_usd;
+  const valSrc=s.valuation_estimate_source;
+  const valLabel=valM!=null
+    ?(valM>=1000?`~$${(valM/1000).toFixed(1)}B`:valM>=1?`~$${Math.round(valM)}M`:`~$${Math.round(valM*1000)}k`)
+    +({gridx_valuation:"",stage_estimate:" est.",investors_proxy:" est.",emergente:" sin dato"}[valSrc]||"")
+    :null;
+  const invLabel=s.n_investors_mapped>0?`${s.n_investors_mapped} inv. mapeado${s.n_investors_mapped>1?"s":""}`:null;
   hovCard.innerHTML=`
     ${s.one_liner?`<div class="hov-body" style="margin-bottom:6px;">${s.one_liner.slice(0,180)}</div>`:""}
     <div class="hov-title" style="margin-bottom:4px;">${s.name}</div>
     <div class="hov-chips">
       <span class="hov-chip"><span class="hov-dot" style="background:${color}"></span>${s.bio_theme||"—"}</span>
       ${(s.countries||[]).length?`<span class="hov-chip">${(s.countries).join(" · ")}</span>`:""}
-      <span class="hov-chip" style="font-weight:700;color:var(--ink)">${stageLabel}</span>
-      ${roundsLabel?`<span class="hov-chip" style="color:#1f5c3a">⬤ ${roundsLabel}</span>`:""}
+      ${stageLabel?`<span class="hov-chip" style="font-weight:600;">${stageLabel}</span>`:""}
+      ${valLabel?`<span class="hov-chip" style="font-weight:700;color:var(--ink)">${valLabel}</span>`:""}
+      ${invLabel?`<span class="hov-chip" style="color:#1f5c3a">⬤ ${invLabel}</span>`:""}
     </div>
     <div class="hov-small">${s.cluster_label?`<em>${s.cluster_label}</em>`:""}</div>
   `;
