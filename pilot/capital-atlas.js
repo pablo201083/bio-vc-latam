@@ -34,6 +34,17 @@
   const FUND_COLOR = "#0f766e";
   const ALLOCATOR_COLOR = "#b7791f";
   const STARTUP_FALLBACK = "#7c83fd";
+  // Paleta canónica de bio-themes — idéntica a startup-themes.html
+  const THEME_PAL = {
+    "Therapeutics":                           "#7033BC",
+    "Diagnostics & Health Access":            "#1A6DB5",
+    "Food Systems & Alt Proteins":            "#C25A2A",
+    "Bioinputs & Crop Resilience":            "#2A7A42",
+    "Nature & Ecosystem Tech":               "#127A6E",
+    "Farm Intelligence":                      "#2E4E8C",
+    "Biomaterials & Circular Economy":        "#8B6D14",
+    "Biomanufacturing & Fermentation Economy":"#6B8C3A",
+  };
   const SHARED_TAXONOMY_STATE_KEY = "bioVcLatam.activeSemanticTaxonomy";
   const DYNAMIC_THEME_PALETTE = [
     "#ff7043", "#d66aa2", "#b64050", "#09a7b7", "#235a7c", "#7d58c7",
@@ -218,12 +229,14 @@
     if (node.type === "allocator") return ALLOCATOR_COLOR;
     const key = themeKey(node);
     if (dynamicThemeColorByKey.has(key)) return dynamicThemeColorByKey.get(key);
+    if (THEME_PAL[key]) return THEME_PAL[key];
     if (themeSystem) return themeSystem.themeColor(key);
     return STARTUP_FALLBACK;
   }
 
   function themeColor(theme) {
     if (dynamicThemeColorByKey.has(theme)) return dynamicThemeColorByKey.get(theme);
+    if (THEME_PAL[theme]) return THEME_PAL[theme];
     if (themeSystem) return themeSystem.themeColor(theme);
     return STARTUP_FALLBACK;
   }
