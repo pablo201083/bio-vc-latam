@@ -473,7 +473,8 @@ def write_dashboard_data(conn: sqlite3.Connection) -> None:
                sx.valuation_tier,
                COUNT(ie.investment_id) AS n_rounds,
                sx.bio_theme_primary, sx.bio_theme_secondary, sx.is_bio_universe,
-               sx.sub_cluster_label
+               sx.sub_cluster_label,
+               sx.funding_stage, sx.funding_bucket_usd, sx.valuation_bucket_usd
         FROM startup_extended sx
         JOIN entities e ON e.entity_id = sx.startup_id
         LEFT JOIN investment_edges ie ON ie.startup_id = sx.startup_id
@@ -521,6 +522,9 @@ def write_dashboard_data(conn: sqlite3.Connection) -> None:
             "bio_theme_secondary": r[23] or "",
             "is_bio_universe": r[24],
             "sub_cluster_label": r[25] or "",
+            "funding_stage": r[26] or None,
+            "funding_bucket_usd": int(r[27]) if r[27] is not None else None,
+            "valuation_bucket_usd": int(r[28]) if r[28] is not None else None,
         })
 
     # Cluster summary con métricas para inversor
