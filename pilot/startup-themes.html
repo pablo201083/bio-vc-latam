@@ -193,10 +193,10 @@
           </div>
         </div>
         <div class="conf-leg">
-          <span class="cs" style="width:5px;height:5px;background:#bbb"></span>pre-seed
-          <span class="cs" style="width:7px;height:7px;background:#999"></span>seed
-          <span class="cs" style="width:10px;height:10px;background:var(--accent)"></span>serie A
-          <span class="cs" style="width:14px;height:14px;background:var(--accent)"></span>serie B+
+          <span class="cs" style="width:6px;height:6px;background:#bbb"></span>emergente
+          <span class="cs" style="width:9px;height:9px;background:#999"></span>con señal
+          <span class="cs" style="width:13px;height:13px;background:var(--accent)"></span>destacada
+          <span class="cs" style="width:13px;height:13px;background:var(--accent)"></span>+ rondas → mayor diámetro
         </div>
       </div>
       <div id="filter-panel" class="filter-panel">
@@ -649,24 +649,17 @@ function updateGraphElements(){
 
 function applyTf(){gRoot.setAttribute("transform",`translate(${panX},${panY}) scale(${scale})`)}
 
-// Node visual properties — size driven by funding_stage; fallback a valuation_tier
-const STAGE_R={"pre-seed":5,"seed":7,"series-a":10,"series-b":14,"series-c+":18,"growth":22};
+// Node visual properties — size by valuation_tier (señal curada, 100% cobertura)
+// funding_stage se muestra solo como texto hasta tener cobertura completa (Pitchbook)
 function nRadius(s){
-  const stage=s.funding_stage;
+  const t=s.valuation_tier||0;
   const r=s.n_rounds||0;
-  const base=stage?(STAGE_R[stage]||5.5)
-    :(s.valuation_tier>=4?19:s.valuation_tier>=3?15:s.valuation_tier>=2?12:s.valuation_tier>=1?7:5.5);
-  return base+Math.min(r*0.5,3);
+  const base=t>=4?19:t>=3?15:t>=2?12:t>=1.5?9:t>=1?7:5.5;
+  return base+Math.min(r*0.8,4.5);
 }
 function nOpacity(s){return s.quality_band==="high"?0.88:0.72}
-function nFeatured(s){
-  if(s.funding_stage&&["series-b","series-c+","growth"].includes(s.funding_stage))return true;
-  return s.valuation_tier!=null&&s.valuation_tier>=2;
-}
-function nLabeled(s){
-  if(s.funding_stage&&s.funding_stage!=="pre-seed")return true;
-  return (s.valuation_tier||0)>=1;
-}
+function nFeatured(s){return s.valuation_tier!=null&&s.valuation_tier>=2;}
+function nLabeled(s){return (s.valuation_tier||0)>=1;}
 
 // ── Filter state — multi-selección con Sets ───────────────────────────────
 const activeTechs=new Set();      // OR dentro de la categoría
