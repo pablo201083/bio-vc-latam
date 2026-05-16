@@ -448,18 +448,20 @@ setDims();
 
 const gRoot=document.createElementNS(NS,"g");
 svgEl.appendChild(gRoot);
-const gEdges=document.createElementNS(NS,"g");    // investment edges (bottom)
-const gHalos=document.createElementNS(NS,"g");    // cluster background halos
-const gNodes=document.createElementNS(NS,"g");    // startup circles
-const gLabels=document.createElementNS(NS,"g");   // startup labels
-const gInvNodes=document.createElementNS(NS,"g"); // investor nodes (top)
-const gInvLabels=document.createElementNS(NS,"g");// investor labels
+const gEdges=document.createElementNS(NS,"g");       // investment edges (bottom)
+const gHalos=document.createElementNS(NS,"g");       // cluster background blobs
+const gNodes=document.createElementNS(NS,"g");       // startup circles
+const gLabels=document.createElementNS(NS,"g");      // startup labels
+const gInvNodes=document.createElementNS(NS,"g");    // investor nodes
+const gInvLabels=document.createElementNS(NS,"g");   // investor labels
+const gThemeLabels=document.createElementNS(NS,"g"); // bio-theme labels — always on top
 gRoot.appendChild(gEdges);
 gRoot.appendChild(gHalos);
 gRoot.appendChild(gNodes);
 gRoot.appendChild(gLabels);
 gRoot.appendChild(gInvNodes);
 gRoot.appendChild(gInvLabels);
+gRoot.appendChild(gThemeLabels);
 
 // ── Graph / network data ──────────────────────────────────────────────────
 const graphData=D.graph||{investor_nodes:[],edges:[]};
@@ -784,6 +786,7 @@ function corePoints(pts, maxSigma=2.2){
 
 function updateHalos(){
   while(gHalos.firstChild)gHalos.removeChild(gHalos.firstChild);
+  while(gThemeLabels.firstChild)gThemeLabels.removeChild(gThemeLabels.firstChild);
   const any=anyFilter();
 
   const byTheme={};
@@ -839,9 +842,9 @@ function updateHalos(){
       "Food Systems & Alt Proteins":"Food Systems",
       "Bioinputs & Crop Resilience":"Bioinputs",
       "Nature & Ecosystem Tech":"Nature Tech",
-      "Farm Intelligence":"Farm Intel.",
+      "Farm Intelligence":"Farm Intel",
       "Biomaterials & Circular Economy":"Biomaterials",
-      "Biomanufacturing & Fermentation Economy":"Biomanufact.",
+      "Biomanufacturing & Fermentation Economy":"Biomanufacturing",
     };
     const shortName=LABEL_SHORT[theme]||theme.split(" ")[0];
     const fs=11;
@@ -920,7 +923,7 @@ function updateHalos(){
     bg.setAttribute("rx","5");
     bg.setAttribute("pointer-events","none");
     bg.setAttribute("opacity",l.alpha);
-    gHalos.appendChild(bg);
+    gThemeLabels.appendChild(bg);
     const txt=document.createElementNS(NS,"text");
     txt.setAttribute("x",l.x);txt.setAttribute("y",l.y);
     txt.setAttribute("text-anchor","middle");
@@ -932,7 +935,7 @@ function updateHalos(){
     txt.setAttribute("pointer-events","none");
     txt.setAttribute("letter-spacing","0.04em");
     txt.textContent=l.shortName;
-    gHalos.appendChild(txt);
+    gThemeLabels.appendChild(txt);
   });
 }
 
