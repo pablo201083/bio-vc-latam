@@ -1,5 +1,5 @@
 window.CAPITAL_ATLAS_DATA = {
-  "generated_at": "2026-05-18T22:15:28",
+  "generated_at": "2026-05-18T22:20:35",
   "source": "pipeline:build-atlas (SQLite)",
   "summary": {
     "nodes_total": 737,
@@ -5196,7 +5196,7 @@ window.CAPITAL_ATLAS_DATA = {
       "scope_decision": "include",
       "theme": "Bioinputs & Crop Resilience",
       "legacy_macro_theme": "ag biologicals and crop resilience",
-      "emergent_theme": "Bioinputs & Crop Resilience",
+      "emergent_theme": "Therapeutics",
       "semantic_single_theme": "Food Systems & Alt Proteins — Fish||fish · aquaculture · antibiotics · meat",
       "semantic_single_confidence": "",
       "semantic_single_score": "",

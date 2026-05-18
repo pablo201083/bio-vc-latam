@@ -1,5 +1,5 @@
 window.STARTUP_THEMES_DATA = {
-  "computed_at": "2026-05-18T19:15:24",
+  "computed_at": "2026-05-18T19:20:34",
   "model": "intfloat/multilingual-e5-small",
   "stats": {
     "total_startups": 487,
@@ -3381,7 +3381,7 @@ window.STARTUP_THEMES_DATA = {
       "valuation_tier": 1.0,
       "n_investors_mapped": 2,
       "bio_theme": "Bioinputs & Crop Resilience",
-      "bio_theme_secondary": "Bioinputs & Crop Resilience",
+      "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
       "sub_cluster_label": "",
       "funding_stage": "pre-seed",
