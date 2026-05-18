@@ -152,9 +152,9 @@
       position: relative;
       overflow: hidden;
       background:
-        radial-gradient(ellipse at 48% 52%, rgba(15,118,110,.05), transparent 40rem),
+        radial-gradient(ellipse at 48% 52%, rgba(217,119,6,.04), transparent 40rem),
         linear-gradient(135deg, rgba(255,252,246,.9), rgba(244,238,228,.72));
-      height: 520px;
+      height: max(700px, calc(100vh - 240px));
     }
 
     /* ── Legend chips ───────────────────────────────────────────────── */
@@ -586,12 +586,15 @@
 
           <div class="ca-section-lbl">Leyenda</div>
           <div class="ca-legend">
-            <span class="ca-legend-item"><span class="ca-legend-dot" style="background:#0f766e"></span>Fondo</span>
-            <span class="ca-legend-item"><span class="ca-legend-diamond" style="background:#b7791f"></span>Allocator/LP</span>
+            <span class="ca-legend-item"><span class="ca-legend-dot" style="background:#d97706"></span>Fondo</span>
+            <span class="ca-legend-item"><span class="ca-legend-diamond" style="background:#6d28d9"></span>Allocator/LP</span>
             <span class="ca-legend-item"><span class="ca-legend-dot" style="background:#7033BC"></span>Startup BIO</span>
             <span class="ca-legend-item"><span class="ca-legend-dot" style="background:#c8bda9"></span>Sin capital</span>
             <span class="ca-legend-item"><span class="ca-legend-line"></span>URL pública</span>
             <span class="ca-legend-item"><span class="ca-legend-line dashed"></span>Fuente canónica</span>
+          </div>
+          <div style="color:var(--muted);font-size:.68rem;line-height:1.5;margin-top:6px;padding:0 2px">
+            <strong style="color:var(--ink)">Tamaño:</strong> Startups → valuación estimada · Fondos → valuación agregada del portfolio
           </div>
 
           <hr class="ca-divider">
@@ -688,8 +691,8 @@
 
           <div class="ca-section-lbl" style="margin-top:4px">Tipos de actor</div>
           <div class="ca-legend" style="flex-direction:column;align-items:start;gap:4px">
-            <span class="ca-legend-item" style="font-size:.68rem"><span class="ca-legend-dot" style="background:#0f766e"></span>Fondo VC / aceleradora</span>
-            <span class="ca-legend-item" style="font-size:.68rem"><span class="ca-legend-diamond" style="background:#b7791f"></span>Allocator / LP / DFI</span>
+            <span class="ca-legend-item" style="font-size:.68rem"><span class="ca-legend-dot" style="background:#d97706"></span>Fondo VC / aceleradora</span>
+            <span class="ca-legend-item" style="font-size:.68rem"><span class="ca-legend-diamond" style="background:#6d28d9"></span>Allocator / LP / DFI</span>
           </div>
         </div>
       </aside>

@@ -31,8 +31,8 @@
   const WIDTH = 1900;
   const HEIGHT = 900;
   const LAYOUT_MARGIN = 190;
-  const FUND_COLOR = "#0f766e";
-  const ALLOCATOR_COLOR = "#b7791f";
+  const FUND_COLOR = "#d97706";       // amber — clearly distinct from all bio-theme colors
+  const ALLOCATOR_COLOR = "#6d28d9"; // deep violet — LP tier
   const STARTUP_FALLBACK = "#7c83fd";
   // Paleta canónica de bio-themes — idéntica a startup-themes.html
   const THEME_PAL = {
@@ -74,9 +74,9 @@
     portfolio_or_acceleration: "rgba(96, 92, 180, 0.42)",
     investment_or_membership: "rgba(92, 82, 70, 0.34)",
     co_investment: "rgba(10, 104, 96, 0.5)",
-    lp_commitment_to_vc_fund: "rgba(183, 121, 31, 0.58)",
-    lp_partner_in_vc_fund: "rgba(183, 121, 31, 0.48)",
-    equity_investment_to_growth_fund: "rgba(183, 121, 31, 0.58)"
+    lp_commitment_to_vc_fund: "rgba(109, 40, 217, 0.52)",
+    lp_partner_in_vc_fund: "rgba(109, 40, 217, 0.42)",
+    equity_investment_to_growth_fund: "rgba(109, 40, 217, 0.52)"
   };
 
   if (!svg || !payload.nodes?.length) return;
@@ -352,13 +352,32 @@
   function nodeRadius(node) {
     const weight = nodeWeight(node);
     if (modeSelect?.value === "coverage_gaps" && node.type === "startup") return 7 + seeded(node.id, "gap-size") * 4.2;
+
     if (node.type === "startup") {
+      // Primary signal: estimated valuation (M USD, log scale)
+      // 1M→3.5  4M→5.6  10M→8.2  25M→11.6  100M→16.4  500M→21.8  1000M→24
+      const valM = Number(node.valuation_usd || 0);
+      if (valM > 0) {
+        return Math.max(3.5, Math.min(26, 2.6 + Math.log10(valM + 1) * 9.2));
+      }
+      // Fallback: capital signal from degree when no valuation
       const signal = startupCapitalSignal(node);
       if (signal <= 0) return 2.8;
-      return Math.max(5.4, Math.min(29, 4.8 + Math.sqrt(signal) * 4.2 + Math.min(5.6, Number(node.visible_capital_degree || 0) * 0.82)));
+      return Math.max(4.2, Math.min(14, 3.5 + Math.sqrt(signal) * 2.6));
     }
-    if (node.type === "allocator") return Math.max(17, Math.min(38, 15 + Math.sqrt(weight + 1) * 4.8));
-    if (node.type === "fund") return Math.max(16, Math.min(54, 12 + Math.sqrt(weight + 1) * 5.6));
+
+    if (node.type === "fund") {
+      // Size by aggregate portfolio valuation (M USD, log scale)
+      // 10M→14  50M→18  200M→23  500M→27  1500M→32
+      const portVal = Number(node.portfolio_valuation_usd || 0);
+      if (portVal > 0) {
+        return Math.max(13, Math.min(48, 8 + Math.log10(portVal + 1) * 10.5));
+      }
+      // Fallback: degree-based when no portfolio data
+      return Math.max(13, Math.min(32, 11 + Math.sqrt(weight + 1) * 4.8));
+    }
+
+    if (node.type === "allocator") return Math.max(16, Math.min(36, 13 + Math.sqrt(weight + 1) * 4.4));
     return Math.max(7.4, Math.min(28, 5.6 + Math.sqrt(weight + 1) * 4.25));
   }
 
@@ -975,10 +994,14 @@
       </div>
       ${node.summary ? `<div class="tooltip-meta">${escapeHtml(node.summary).slice(0, 185)}${node.summary.length > 185 ? "..." : ""}</div>` : ""}
       <div class="tooltip-stats">
-        <div class="tooltip-stat"><span>Weighted degree</span><strong>${nodeWeight(node).toFixed(1)}</strong></div>
-        ${node.type === "startup" ? `<div class="tooltip-stat"><span>Diametro</span><strong>${startupCapitalSignal(node).toFixed(1)}</strong></div>` : ""}
-        <div class="tooltip-stat"><span>Edges</span><strong>${connected.length}</strong></div>
-        <div class="tooltip-stat"><span>Publicas</span><strong>${publicEdges}</strong></div>
+        ${node.type === "startup" && Number(node.valuation_usd || 0) > 0
+          ? `<div class="tooltip-stat"><span>Valuación est.</span><strong>$${Number(node.valuation_usd) >= 1000 ? (Number(node.valuation_usd)/1000).toFixed(1)+"B" : Number(node.valuation_usd)+"M"}</strong></div>`
+          : ""}
+        ${node.type === "fund" && Number(node.portfolio_valuation_usd || 0) > 0
+          ? `<div class="tooltip-stat"><span>Portfolio val.</span><strong>$${Number(node.portfolio_valuation_usd) >= 1000 ? (Number(node.portfolio_valuation_usd)/1000).toFixed(1)+"B" : Math.round(Number(node.portfolio_valuation_usd))+"M"}</strong></div>`
+          : ""}
+        <div class="tooltip-stat"><span>Conexiones</span><strong>${connected.length}</strong></div>
+        <div class="tooltip-stat"><span>Fuentes públicas</span><strong>${publicEdges}</strong></div>
       </div>
       ${topNeighbors.length ? `<div class="tooltip-meta"><strong>Conecta con:</strong> ${escapeHtml(topNeighbors.join(", "))}</div>` : ""}
       <div class="tooltip-meta">Click para fijar este vecindario.</div>

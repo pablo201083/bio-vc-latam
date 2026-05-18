@@ -1,5 +1,5 @@
 window.CAPITAL_ATLAS_DATA = {
-  "generated_at": "2026-05-18T01:45:35",
+  "generated_at": "2026-05-18T15:01:55",
   "source": "pipeline:build-atlas (SQLite)",
   "summary": {
     "nodes_total": 737,
@@ -24,7 +24,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Fund-of-funds investing in LATAM biotech and deep tech VCs",
       "country": "US",
-      "degree": 7
+      "degree": 7,
+      "portfolio_valuation_usd": 0.0
     },
     {
       "id": "500_latam",
@@ -36,7 +37,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "US",
-      "degree": 1
+      "degree": 1,
+      "portfolio_valuation_usd": 0.0
     },
     {
       "id": "aceleradora_litoral",
@@ -48,7 +50,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Argentine university-linked accelerator based in Santa Fe backing deeptech biotech agtech and health startups from universities in the Litoral and Paraná river corridor region.",
       "country": "AR",
-      "degree": 7
+      "degree": 7,
+      "portfolio_valuation_usd": 26.6
     },
     {
       "id": "AIR Capital",
@@ -60,7 +63,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Argentine deeptech and science-based VC backing biotech agtech and health innovation ventures across Argentina and Latin America.",
       "country": "AR",
-      "degree": 32
+      "degree": 32,
+      "portfolio_valuation_usd": 212.0
     },
     {
       "id": "amador",
@@ -72,7 +76,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "CR",
-      "degree": 1
+      "degree": 1,
+      "portfolio_valuation_usd": 0.0
     },
     {
       "id": "Antom",
@@ -84,7 +89,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Costa Rican accelerator and early-stage investor backing biotech agtech and innovation-driven startups across Central America and Latin America. Runs structured acceleration programs with equity.",
       "country": "CR",
-      "degree": 11
+      "degree": 11,
+      "portfolio_valuation_usd": 69.0
     },
     {
       "id": "araucaria_venture",
@@ -96,7 +102,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "CL",
-      "degree": 0
+      "degree": 0,
+      "portfolio_valuation_usd": 0.0
     },
     {
       "id": "bago",
@@ -108,7 +115,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "AR",
-      "degree": 0
+      "degree": 0,
+      "portfolio_valuation_usd": 0.0
     },
     {
       "id": "blue_horizon",
@@ -120,7 +128,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "",
-      "degree": 1
+      "degree": 1,
+      "portfolio_valuation_usd": 4.0
     },
     {
       "id": "brinc",
@@ -132,7 +141,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "HK",
-      "degree": 0
+      "degree": 0,
+      "portfolio_valuation_usd": 0.0
     },
     {
       "id": "cantos",
@@ -144,7 +154,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "US",
-      "degree": 1
+      "degree": 1,
+      "portfolio_valuation_usd": 0.0
     },
     {
       "id": "chileglobal_ventures",
@@ -156,7 +167,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Chilean VC backed by Endeavor Chile supporting high-growth startups in agtech biotech and innovation-driven sectors across Chile and Latin America. Active portfolio of 20+ companies.",
       "country": "CL",
-      "degree": 3
+      "degree": 3,
+      "portfolio_valuation_usd": 12.0
     },
     {
       "id": "CITES",
@@ -168,7 +180,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Chilean deeptech VC backing biotech medtech and climate ventures with a scientific foundation. Active in university spinout investment across Latin America.",
       "country": "CL",
-      "degree": 23
+      "degree": 23,
+      "portfolio_valuation_usd": 50.0
     },
     {
       "id": "conservation_international",
@@ -180,7 +193,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "US",
-      "degree": 0
+      "degree": 0,
+      "portfolio_valuation_usd": 0.0
     },
     {
       "id": "creative_ventures",
@@ -192,7 +206,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "US",
-      "degree": 0
+      "degree": 0,
+      "portfolio_valuation_usd": 0.0
     },
     {
       "id": "dalus_capital",
@@ -204,7 +219,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Mexican VC focused on deeptech agtech healthtech and sustainability ventures in Mexico and Latin America. Backs science-based founders building the next generation of transformative companies.",
       "country": "MX",
-      "degree": 2
+      "degree": 2,
+      "portfolio_valuation_usd": 1.8
     },
     {
       "id": "DragonesVP",
@@ -216,7 +232,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Central American and Latin American VC backing biotech agtech and science-based founders across Costa Rica and the broader LATAM region.",
       "country": "CR",
-      "degree": 10
+      "degree": 10,
+      "portfolio_valuation_usd": 104.0
     },
     {
       "id": "draper_associates",
@@ -228,7 +245,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "US",
-      "degree": 0
+      "degree": 0,
+      "portfolio_valuation_usd": 0.0
     },
     {
       "id": "draper_university",
@@ -240,7 +258,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "US",
-      "degree": 0
+      "degree": 0,
+      "portfolio_valuation_usd": 0.0
     },
     {
       "id": "DraperCygnus",
@@ -252,7 +271,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Latin American deeptech VC with Argentine roots investing in science-based biotech agtech and innovation-driven ventures. Part of the Draper Venture Network.",
       "country": "AR",
-      "degree": 23
+      "degree": 23,
+      "portfolio_valuation_usd": 243.0
     },
     {
       "id": "duhau",
@@ -264,7 +284,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "",
-      "degree": 0
+      "degree": 0,
+      "portfolio_valuation_usd": 0.0
     },
     {
       "id": "eatable_adventures",
@@ -276,7 +297,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Spanish agrifood accelerator and investor specializing in food systems innovation alternative proteins fermentation and sustainable foodtech. Strong programming in Latin America through Spanish-language cohorts.",
       "country": "ES",
-      "degree": 2
+      "degree": 2,
+      "portfolio_valuation_usd": 5.0
     },
     {
       "id": "endurance_28",
@@ -288,7 +310,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Argentine VC fund investing in climate health and technology ventures in Argentina and Latin America. Backed by 1200 VC as part of its LATAM emerging fund portfolio.",
       "country": "AR",
-      "degree": 4
+      "degree": 4,
+      "portfolio_valuation_usd": 12.0
     },
     {
       "id": "flia_duhau",
@@ -300,7 +323,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "",
-      "degree": 0
+      "degree": 0,
+      "portfolio_valuation_usd": 0.0
     },
     {
       "id": "fundacion_para_el_progreso_de_la_medicina",
@@ -312,7 +336,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "",
-      "degree": 0
+      "degree": 0,
+      "portfolio_valuation_usd": 0.0
     },
     {
       "id": "future_ventures",
@@ -324,7 +349,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "US",
-      "degree": 0
+      "degree": 0,
+      "portfolio_valuation_usd": 0.0
     },
     {
       "id": "gef",
@@ -336,7 +362,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "The Global Environment Facility provides grants and concessional financing for biodiversity climate and ecosystem sustainability. Committed $6M to The Yield Lab LATAM Opportunity Fund for decarbonized food systems.",
       "country": "US",
-      "degree": 2
+      "degree": 2,
+      "portfolio_valuation_usd": 4.0
     },
     {
       "id": "genesis_consortium",
@@ -348,7 +375,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "",
-      "degree": 0
+      "degree": 0,
+      "portfolio_valuation_usd": 0.0
     },
     {
       "id": "glocal",
@@ -360,7 +388,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Argentine VC investing in science-based deeptech biotech and agtech ventures in Latin America. Backs founders at seed and series-A with follow-on capacity.",
       "country": "AR",
-      "degree": 10
+      "degree": 10,
+      "portfolio_valuation_usd": 53.0
     },
     {
       "id": "GridX",
@@ -372,7 +401,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Deeptech company builder and early-stage fund based in Buenos Aires accelerating biotech climate health and science-based ventures across Latin America. Manages GridX II fund backed by IDB Lab.",
       "country": "AR",
-      "degree": 114
+      "degree": 114,
+      "portfolio_valuation_usd": 435.0
     },
     {
       "id": "grupo_insud",
@@ -384,7 +414,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "",
-      "degree": 3
+      "degree": 3,
+      "portfolio_valuation_usd": 12.0
     },
     {
       "id": "grupo_peruanos",
@@ -396,7 +427,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "",
-      "degree": 0
+      "degree": 0,
+      "portfolio_valuation_usd": 0.0
     },
     {
       "id": "happiness",
@@ -408,7 +440,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "",
-      "degree": 0
+      "degree": 0,
+      "portfolio_valuation_usd": 0.0
     },
     {
       "id": "hatch",
@@ -420,7 +453,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "NO",
-      "degree": 1
+      "degree": 1,
+      "portfolio_valuation_usd": 4.0
     },
     {
       "id": "idb_invest",
@@ -432,7 +466,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "IDB Invest is the private sector arm of the Inter-American Development Bank Group providing equity and debt financing to companies and VC funds in Latin America. Backed Valor Growth Americas III and Partners for Growth.",
       "country": "US",
-      "degree": 4
+      "degree": 4,
+      "portfolio_valuation_usd": 4.0
     },
     {
       "id": "idb_lab",
@@ -444,7 +479,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "IDB Lab is the innovation lab of the Inter-American Development Bank Group backing high-impact entrepreneurship in Latin America through direct investments LP commitments and ecosystem support. LP in GridX SP Ventures The Yield Lab Amador 500 LatAm Kaete and others.",
       "country": "US",
-      "degree": 9
+      "degree": 9,
+      "portfolio_valuation_usd": 0.0
     },
     {
       "id": "idb_natural_capital_lab",
@@ -456,7 +492,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "US",
-      "degree": 1
+      "degree": 1,
+      "portfolio_valuation_usd": 0.0
     },
     {
       "id": "innogen_capital",
@@ -468,7 +505,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "",
-      "degree": 1
+      "degree": 1,
+      "portfolio_valuation_usd": 0.0
     },
     {
       "id": "invariantes_fund",
@@ -480,7 +518,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "",
-      "degree": 0
+      "degree": 0,
+      "portfolio_valuation_usd": 0.0
     },
     {
       "id": "inventure",
@@ -492,7 +531,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Finnish early-stage VC investing in science and technology startups across the Nordics and selectively in emerging markets including Latin America. Backs biotech agtech and healthtech founders.",
       "country": "FI",
-      "degree": 12
+      "degree": 12,
+      "portfolio_valuation_usd": 59.0
     },
     {
       "id": "jeff_wilke",
@@ -504,7 +544,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "",
-      "degree": 0
+      "degree": 0,
+      "portfolio_valuation_usd": 0.0
     },
     {
       "id": "jica",
@@ -516,7 +557,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Japan International Cooperation Agency supports agricultural development and innovation in Latin America through LP commitments to regional VC funds. Named LP partner in SP Ventures AgVentures III alongside IDB Lab.",
       "country": "JP",
-      "degree": 1
+      "degree": 1,
+      "portfolio_valuation_usd": 0.0
     },
     {
       "id": "kaete_investimentos",
@@ -528,7 +570,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Brazilian impact investor managing the Amazonia ReGenerate Accelerator and Investment Trust. Focuses on Amazon bioeconomy biodiversity-positive ventures and regenerative agriculture. Backed by IDB Lab and IDB Natural Capital Lab.",
       "country": "BR",
-      "degree": 2
+      "degree": 2,
+      "portfolio_valuation_usd": 0.0
     },
     {
       "id": "kairetsu_angels",
@@ -540,7 +583,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "",
-      "degree": 0
+      "degree": 0,
+      "portfolio_valuation_usd": 0.0
     },
     {
       "id": "kamay_ventures",
@@ -552,7 +596,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Argentine VC focused on biotech agtech and deep-science ventures building sustainable solutions for agriculture food systems and human health across Latin America.",
       "country": "AR",
-      "degree": 19
+      "degree": 19,
+      "portfolio_valuation_usd": 42.0
     },
     {
       "id": "KEM Ventures",
@@ -564,7 +609,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "",
-      "degree": 0
+      "degree": 0,
+      "portfolio_valuation_usd": 0.0
     },
     {
       "id": "kptl",
@@ -576,7 +622,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Brazilian impact VC and fund manager focused on the Amazon bioeconomy biodiversity-positive ventures and sustainable agriculture across Brazil and the Amazon basin. Co-manages Amazonia ReGenerate with IDB Lab.",
       "country": "BR",
-      "degree": 10
+      "degree": 10,
+      "portfolio_valuation_usd": 36.0
     },
     {
       "id": "kwb",
@@ -588,7 +635,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "",
-      "degree": 0
+      "degree": 0,
+      "portfolio_valuation_usd": 0.0
     },
     {
       "id": "lartirigoyen",
@@ -600,7 +648,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "",
-      "degree": 0
+      "degree": 0,
+      "portfolio_valuation_usd": 0.0
     },
     {
       "id": "lavca",
@@ -612,7 +661,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "US",
-      "degree": 1
+      "degree": 1,
+      "portfolio_valuation_usd": 0.0
     },
     {
       "id": "losa_group",
@@ -624,7 +674,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "",
-      "degree": 0
+      "degree": 0,
+      "portfolio_valuation_usd": 0.0
     },
     {
       "id": "lowercarbon_capital",
@@ -636,7 +687,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "US-based climate-focused VC backing companies that cut and capture carbon including biotech agtech synthetic biology and clean energy ventures globally. Has invested in LATAM climate-bio crossovers.",
       "country": "US",
-      "degree": 2
+      "degree": 2,
+      "portfolio_valuation_usd": 10.0
     },
     {
       "id": "managro",
@@ -648,7 +700,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "",
-      "degree": 0
+      "degree": 0,
+      "portfolio_valuation_usd": 0.0
     },
     {
       "id": "newtopia_vc",
@@ -660,7 +713,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Argentine VC investing in frontier-tech agtech health and consumer startups across Latin America. Focus on founders building platform businesses with network effects and scalable models.",
       "country": "AR",
-      "degree": 4
+      "degree": 4,
+      "portfolio_valuation_usd": 12.8
     },
     {
       "id": "onevc",
@@ -672,7 +726,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "BR",
-      "degree": 3
+      "degree": 3,
+      "portfolio_valuation_usd": 8.0
     },
     {
       "id": "ospraie",
@@ -684,7 +739,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "US",
-      "degree": 0
+      "degree": 0,
+      "portfolio_valuation_usd": 0.0
     },
     {
       "id": "other_angels",
@@ -696,7 +752,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "",
-      "degree": 0
+      "degree": 0,
+      "portfolio_valuation_usd": 0.0
     },
     {
       "id": "other_small_investors",
@@ -708,7 +765,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "",
-      "degree": 0
+      "degree": 0,
+      "portfolio_valuation_usd": 0.0
     },
     {
       "id": "pampa_start",
@@ -720,7 +778,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Argentine accelerator focused on agtech biotech and rural technology startups primarily from Córdoba and the Pampas agricultural region. Pre-seed focused with university linkages.",
       "country": "AR",
-      "degree": 5
+      "degree": 5,
+      "portfolio_valuation_usd": 19.0
     },
     {
       "id": "partners_for_growth",
@@ -732,7 +791,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "US",
-      "degree": 2
+      "degree": 2,
+      "portfolio_valuation_usd": 0.0
     },
     {
       "id": "paul_mcewan",
@@ -744,7 +804,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "",
-      "degree": 0
+      "degree": 0,
+      "portfolio_valuation_usd": 0.0
     },
     {
       "id": "peruanos",
@@ -756,7 +817,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "",
-      "degree": 0
+      "degree": 0,
+      "portfolio_valuation_usd": 0.0
     },
     {
       "id": "photon_fund",
@@ -768,7 +830,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "",
-      "degree": 0
+      "degree": 0,
+      "portfolio_valuation_usd": 0.0
     },
     {
       "id": "positive_ventures",
@@ -780,7 +843,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "ES",
-      "degree": 0
+      "degree": 0,
+      "portfolio_valuation_usd": 0.0
     },
     {
       "id": "salkantay_ventures",
@@ -792,7 +856,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "PE",
-      "degree": 1
+      "degree": 1,
+      "portfolio_valuation_usd": 10.0
     },
     {
       "id": "savia_ventures",
@@ -804,7 +869,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Chilean VC focused on impact-driven agtech biotech and climate innovation. Backs science-based founders in sustainable agriculture food systems and environmental tech across Chile and Latin America.",
       "country": "CL",
-      "degree": 9
+      "degree": 9,
+      "portfolio_valuation_usd": 71.0
     },
     {
       "id": "SF500",
@@ -816,7 +882,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Argentine accelerator for science and deeptech startups from Latin American universities. Focuses on biotech agtech and health. Backed portfolio of 24+ LATAM science-based ventures.",
       "country": "AR",
-      "degree": 24
+      "degree": 24,
+      "portfolio_valuation_usd": 89.8
     },
     {
       "id": "sillicon_catalyst",
@@ -828,7 +895,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "",
-      "degree": 0
+      "degree": 0,
+      "portfolio_valuation_usd": 0.0
     },
     {
       "id": "sosv",
@@ -840,7 +908,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "US",
-      "degree": 0
+      "degree": 0,
+      "portfolio_valuation_usd": 0.0
     },
     {
       "id": "SOSV_IndieBio",
@@ -852,7 +921,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "IndieBio is SOSV's life sciences accelerator backing founders using biology to solve the greatest challenges in disease agriculture and climate. Program based in SF and NYC with global reach including LATAM.",
       "country": "US",
-      "degree": 16
+      "degree": 16,
+      "portfolio_valuation_usd": 182.0
     },
     {
       "id": "sp_ventures",
@@ -864,7 +934,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Brazilian agtech and foodtech VC managing the AgVentures fund series focused on food agriculture and climate-resilient biotechnology in Latin America. Backed by IDB Lab IDB Invest and JICA.",
       "country": "BR",
-      "degree": 43
+      "degree": 43,
+      "portfolio_valuation_usd": 195.5
     },
     {
       "id": "svb_financial_group",
@@ -876,7 +947,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "US",
-      "degree": 1
+      "degree": 1,
+      "portfolio_valuation_usd": 0.0
     },
     {
       "id": "The Ganesha Lab",
@@ -888,7 +960,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Argentine biotech and deeptech accelerator building the pipeline of science-based startups from universities and research institutes across Latin America. Focuses on pre-seed biotechnology translation.",
       "country": "AR",
-      "degree": 35
+      "degree": 35,
+      "portfolio_valuation_usd": 55.8
     },
     {
       "id": "the_yield_lab_latam",
@@ -900,7 +973,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Agrifoodtech impact VC focused on food agriculture and climate-resilient innovation in Latin America. Manages the Opportunity Fund backed by IDB Lab and GEF. Targets 30 agrifoodtech companies per fund.",
       "country": "US",
-      "degree": 31
+      "degree": 31,
+      "portfolio_valuation_usd": 241.0
     },
     {
       "id": "third_sphere",
@@ -912,7 +986,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "US",
-      "degree": 1
+      "degree": 1,
+      "portfolio_valuation_usd": 0.0
     },
     {
       "id": "thrive",
@@ -924,7 +999,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "",
-      "degree": 0
+      "degree": 0,
+      "portfolio_valuation_usd": 0.0
     },
     {
       "id": "valor_capital_group",
@@ -936,7 +1012,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "US-Brazil VC focused on growth-stage technology companies across Brazil including climate AI fintech healthcare and agtech. Manages Valor Growth Americas III backed by IDB Invest ($30M).",
       "country": "US",
-      "degree": 4
+      "degree": 4,
+      "portfolio_valuation_usd": 108.0
     },
     {
       "id": "varana_capital",
@@ -948,7 +1025,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "",
-      "degree": 0
+      "degree": 0,
+      "portfolio_valuation_usd": 0.0
     },
     {
       "id": "vectr",
@@ -960,7 +1038,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "",
-      "degree": 0
+      "degree": 0,
+      "portfolio_valuation_usd": 0.0
     },
     {
       "id": "veronorte",
@@ -972,7 +1051,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "",
-      "degree": 0
+      "degree": 0,
+      "portfolio_valuation_usd": 0.0
     },
     {
       "id": "vox_capital",
@@ -984,7 +1064,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Brazilian impact VC investing in technology-enabled solutions that serve low-income populations in Brazil across health education financial inclusion and climate sectors.",
       "country": "BR",
-      "degree": 4
+      "degree": 4,
+      "portfolio_valuation_usd": 83.0
     },
     {
       "id": "vx_fund",
@@ -996,7 +1077,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "",
-      "degree": 0
+      "degree": 0,
+      "portfolio_valuation_usd": 0.0
     },
     {
       "id": "zentynel",
@@ -1008,7 +1090,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Mexican VC supporting deeptech biotech and health innovation startups across Mexico and Latin America. Focus on science-based founders building scalable solutions.",
       "country": "MX",
-      "degree": 15
+      "degree": 15,
+      "portfolio_valuation_usd": 146.0
     },
     {
       "id": "barn_investimentos",
@@ -1020,7 +1103,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Brazilian agtech VC backing founders building the future of food and agriculture in Latin America with focus on rural economy digitization and sustainable ag inputs.",
       "country": "BR",
-      "degree": 4
+      "degree": 4,
+      "portfolio_valuation_usd": 16.0
     },
     {
       "id": "fen_ventures",
@@ -1032,7 +1116,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Chilean early-stage VC investing in biotech agtech and deeptech ventures across Latin America with a scientific-founder focus.",
       "country": "CL",
-      "degree": 1
+      "degree": 1,
+      "portfolio_valuation_usd": 1.0
     },
     {
       "id": "monashees",
@@ -1044,7 +1129,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "One of Brazil's leading early-stage VCs with a diversified portfolio spanning healthtech agtech and digital infrastructure across LATAM.",
       "country": "BR",
-      "degree": 1
+      "degree": 1,
+      "portfolio_valuation_usd": 4.0
     },
     {
       "id": "kaszek",
@@ -1056,7 +1142,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "One of Latin America's largest and most active early-stage VC funds with 130+ portfolio companies including 13 unicorns; invests in technology companies from seed to growth across the region.",
       "country": "BR",
-      "degree": 1
+      "degree": 1,
+      "portfolio_valuation_usd": 10.0
     },
     {
       "id": "union_square_ventures",
@@ -1068,7 +1155,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "New York-based thematic VC fund investing in large networks of engaged users with growing focus on climate tech and nature-based solutions.",
       "country": "US",
-      "degree": 1
+      "degree": 1,
+      "portfolio_valuation_usd": 10.0
     },
     {
       "id": "lightsmith_group",
@@ -1080,7 +1168,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Climate adaptation technology investor backing companies that help the world adapt to climate change through data analytics and digital solutions for agriculture water and infrastructure.",
       "country": "US",
-      "degree": 1
+      "degree": 1,
+      "portfolio_valuation_usd": 4.0
     },
     {
       "id": "porsche_ag",
@@ -1092,7 +1181,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "German automotive manufacturer making strategic corporate investments in sustainable mobility and clean energy including eFuels production technology.",
       "country": "DE",
-      "degree": 1
+      "degree": 1,
+      "portfolio_valuation_usd": 4.0
     },
     {
       "id": "aqua_capital",
@@ -1104,7 +1194,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Brazilian private equity and venture capital firm focused on agribusiness food and beverage value chains with investments across the agricultural input production and distribution sectors.",
       "country": "BR",
-      "degree": 2
+      "degree": 2,
+      "portfolio_valuation_usd": 5.5
     },
     {
       "id": "carao_ventures",
@@ -1116,7 +1207,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Early-stage VC firm founded in 2012 in San Jose Costa Rica investing in technology companies across Spanish-speaking Latin America with focus on smaller markets in Central America and Andean region.",
       "country": "CR",
-      "degree": 1
+      "degree": 1,
+      "portfolio_valuation_usd": 100.0
     },
     {
       "id": "axventures_pymar",
@@ -1128,7 +1220,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Argentine early-stage technology venture capital fund managed by Ax Ventures backed by IDB Multilateral Investment Fund and Spanish COFIDES; invested in biotech deeptech and software companies in Argentina targeting global markets.",
       "country": "AR",
-      "degree": 1
+      "degree": 1,
+      "portfolio_valuation_usd": 25.0
     },
     {
       "id": "arauco_ventures",
@@ -1140,7 +1233,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Corporate venture capital arm of ARAUCO the Chilean forestry and pulp giant; invests in nature-tech forestry innovation and sustainability companies with focus on Chilean startups and global green economy.",
       "country": "CL",
-      "degree": 1
+      "degree": 1,
+      "portfolio_valuation_usd": 10.0
     },
     {
       "id": "kayyak_ventures",
@@ -1152,7 +1246,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Chilean-Mexican early-stage VC firm founded in 2020 investing in seed and Series A technology companies across Latin America; focus on foodtech fintech healthtech and climate.",
       "country": "CL",
-      "degree": 1
+      "degree": 1,
+      "portfolio_valuation_usd": 4.0
     },
     {
       "id": "morningside_group",
@@ -1164,7 +1259,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Hong Kong-based family office and technology investor making strategic investments in science and technology companies globally including Latin America.",
       "country": "HK",
-      "degree": 1
+      "degree": 1,
+      "portfolio_valuation_usd": 4.0
     },
     {
       "id": "fondo_alerce",
@@ -1176,7 +1272,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Chilean venture capital fund (FIP ALERCE VC) created in 2016 by Endurance Investments and Pontificia Universidad Católica de Chile with CORFO support; focuses on deep technology in mining agriculture aquaculture food and forest industries.",
       "country": "CL",
-      "degree": 1
+      "degree": 1,
+      "portfolio_valuation_usd": 25.0
     },
     {
       "id": "corteva_catalyst",
@@ -1188,7 +1285,8 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Corporate venture capital arm of Corteva Agriscience (formerly DowDuPont Agriculture) investing in ag biologicals crop protection digital agriculture and sustainability startups globally.",
       "country": "US",
-      "degree": 1
+      "degree": 1,
+      "portfolio_valuation_usd": 10.0
     },
     {
       "id": "agree",
@@ -1212,6 +1310,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -1237,6 +1336,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -1262,6 +1362,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -1287,6 +1388,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -1312,6 +1414,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -1337,6 +1440,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -1362,6 +1466,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -1387,6 +1492,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.0,
       "degree": 2,
       "capital_status": "capital_mapped"
     },
@@ -1412,6 +1518,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -1437,6 +1544,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -1462,6 +1570,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -1487,6 +1596,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -1512,6 +1622,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 2,
       "capital_status": "capital_mapped"
     },
@@ -1537,6 +1648,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -1562,6 +1674,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -1587,6 +1700,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -1612,6 +1726,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -1637,6 +1752,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -1662,6 +1778,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -1687,6 +1804,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 15.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -1712,6 +1830,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -1737,6 +1856,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -1762,6 +1882,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -1787,6 +1908,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -1812,6 +1934,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.8,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -1837,6 +1960,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -1862,6 +1986,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -1887,6 +2012,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -1912,6 +2038,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -1937,6 +2064,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -1962,6 +2090,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.0,
       "degree": 2,
       "capital_status": "capital_mapped"
     },
@@ -1987,6 +2116,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -2012,6 +2142,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -2037,6 +2168,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -2062,6 +2194,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -2087,6 +2220,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -2112,6 +2246,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -2137,6 +2272,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -2162,6 +2298,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 3,
       "capital_status": "capital_mapped"
     },
@@ -2187,6 +2324,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -2212,6 +2350,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 10.0,
       "degree": 3,
       "capital_status": "capital_mapped"
     },
@@ -2237,6 +2376,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 10.0,
       "degree": 3,
       "capital_status": "capital_mapped"
     },
@@ -2262,6 +2402,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -2287,6 +2428,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 2,
       "capital_status": "capital_mapped"
     },
@@ -2312,6 +2454,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -2337,6 +2480,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -2362,6 +2506,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.0,
       "degree": 2,
       "capital_status": "capital_mapped"
     },
@@ -2387,6 +2532,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -2412,6 +2558,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -2437,6 +2584,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -2462,6 +2610,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 2,
       "capital_status": "capital_mapped"
     },
@@ -2487,6 +2636,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.0,
       "degree": 2,
       "capital_status": "capital_mapped"
     },
@@ -2512,6 +2662,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -2537,6 +2688,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -2562,6 +2714,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -2587,6 +2740,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -2612,6 +2766,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -2637,6 +2792,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -2662,6 +2818,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -2687,6 +2844,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -2712,6 +2870,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -2737,6 +2896,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -2762,6 +2922,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -2787,6 +2948,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.8,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -2812,6 +2974,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.0,
       "degree": 2,
       "capital_status": "capital_mapped"
     },
@@ -2837,6 +3000,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -2862,6 +3026,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -2887,6 +3052,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -2912,6 +3078,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 2,
       "capital_status": "capital_mapped"
     },
@@ -2937,6 +3104,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -2962,6 +3130,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -2987,6 +3156,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -3012,6 +3182,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 25.0,
       "degree": 2,
       "capital_status": "capital_mapped"
     },
@@ -3037,6 +3208,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 2,
       "capital_status": "capital_mapped"
     },
@@ -3062,6 +3234,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -3087,6 +3260,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -3112,6 +3286,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -3137,6 +3312,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -3162,6 +3338,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -3187,6 +3364,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -3212,6 +3390,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -3237,6 +3416,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -3262,6 +3442,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -3287,6 +3468,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -3312,6 +3494,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -3337,6 +3520,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -3362,6 +3546,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -3387,6 +3572,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -3412,6 +3598,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -3437,6 +3624,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -3462,6 +3650,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -3487,6 +3676,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -3512,6 +3702,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -3537,6 +3728,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -3562,6 +3754,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -3587,6 +3780,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -3612,6 +3806,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -3637,6 +3832,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -3662,6 +3858,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -3687,6 +3884,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -3712,6 +3910,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -3737,6 +3936,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -3762,6 +3962,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -3787,6 +3988,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -3812,6 +4014,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -3837,6 +4040,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -3862,6 +4066,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -3887,6 +4092,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -3912,6 +4118,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -3937,6 +4144,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -3962,6 +4170,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 2,
       "capital_status": "capital_mapped"
     },
@@ -3987,6 +4196,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -4012,6 +4222,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -4037,6 +4248,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -4062,6 +4274,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -4087,6 +4300,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 2,
       "capital_status": "capital_mapped"
     },
@@ -4112,6 +4326,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 100.0,
       "degree": 4,
       "capital_status": "capital_mapped"
     },
@@ -4137,6 +4352,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -4162,6 +4378,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -4187,6 +4404,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -4212,6 +4430,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -4237,6 +4456,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -4262,6 +4482,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -4287,6 +4508,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -4312,6 +4534,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -4337,6 +4560,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -4362,6 +4586,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -4387,6 +4612,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -4412,6 +4638,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -4437,6 +4664,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -4462,6 +4690,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -4487,6 +4716,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -4512,6 +4742,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -4537,6 +4768,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -4562,6 +4794,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -4587,6 +4820,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -4612,6 +4846,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 2,
       "capital_status": "capital_mapped"
     },
@@ -4637,6 +4872,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 3,
       "capital_status": "capital_mapped"
     },
@@ -4662,6 +4898,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 2,
       "capital_status": "capital_mapped"
     },
@@ -4687,6 +4924,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -4712,6 +4950,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -4737,6 +4976,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -4762,6 +5002,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -4787,6 +5028,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -4812,6 +5054,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -4837,6 +5080,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -4862,6 +5106,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 2,
       "capital_status": "capital_mapped"
     },
@@ -4887,6 +5132,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -4912,6 +5158,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -4937,6 +5184,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 15.0,
       "degree": 2,
       "capital_status": "capital_mapped"
     },
@@ -4962,6 +5210,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 2,
       "capital_status": "capital_mapped"
     },
@@ -4987,6 +5236,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 2,
       "capital_status": "capital_mapped"
     },
@@ -5012,6 +5262,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -5037,6 +5288,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 4,
       "capital_status": "capital_mapped"
     },
@@ -5062,6 +5314,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -5087,6 +5340,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 50.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -5112,6 +5366,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 2,
       "capital_status": "capital_mapped"
     },
@@ -5137,6 +5392,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -5162,6 +5418,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 25.0,
       "degree": 3,
       "capital_status": "capital_mapped"
     },
@@ -5187,6 +5444,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -5212,6 +5470,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -5237,6 +5496,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -5262,6 +5522,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -5287,6 +5548,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -5312,6 +5574,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 10.0,
       "degree": 2,
       "capital_status": "capital_mapped"
     },
@@ -5337,6 +5600,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -5362,6 +5626,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -5387,6 +5652,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -5412,6 +5678,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -5437,6 +5704,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -5462,6 +5730,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -5487,6 +5756,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -5512,6 +5782,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 2,
       "capital_status": "capital_mapped"
     },
@@ -5537,6 +5808,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 25.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -5562,6 +5834,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -5587,6 +5860,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -5612,6 +5886,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -5637,6 +5912,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -5662,6 +5938,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -5687,6 +5964,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -5712,6 +5990,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -5737,6 +6016,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 2,
       "capital_status": "capital_mapped"
     },
@@ -5762,6 +6042,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -5787,6 +6068,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -5812,6 +6094,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -5837,6 +6120,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -5862,6 +6146,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -5887,6 +6172,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -5912,6 +6198,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -5937,6 +6224,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 2,
       "capital_status": "capital_mapped"
     },
@@ -5962,6 +6250,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -5987,6 +6276,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -6012,6 +6302,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -6037,6 +6328,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -6062,6 +6354,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -6087,6 +6380,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 3,
       "capital_status": "capital_mapped"
     },
@@ -6112,6 +6406,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -6137,6 +6432,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.8,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -6162,6 +6458,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -6187,6 +6484,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -6212,6 +6510,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -6237,6 +6536,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 15.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -6262,6 +6562,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 2,
       "capital_status": "capital_mapped"
     },
@@ -6287,6 +6588,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -6312,6 +6614,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -6337,6 +6640,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -6362,6 +6666,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -6387,6 +6692,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -6412,6 +6718,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -6437,6 +6744,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -6462,6 +6770,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -6487,6 +6796,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -6512,6 +6822,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 25.0,
       "degree": 2,
       "capital_status": "capital_mapped"
     },
@@ -6537,6 +6848,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -6562,6 +6874,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -6587,6 +6900,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -6612,6 +6926,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -6637,6 +6952,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -6662,6 +6978,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -6687,6 +7004,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 25.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -6712,6 +7030,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -6737,6 +7056,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 10.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -6762,6 +7082,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -6787,6 +7108,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -6812,6 +7134,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -6837,6 +7160,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -6862,6 +7186,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -6887,6 +7212,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -6912,6 +7238,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -6937,6 +7264,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -6962,6 +7290,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -6987,6 +7316,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -7012,6 +7342,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -7037,6 +7368,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -7062,6 +7394,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -7087,6 +7420,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 25.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -7112,6 +7446,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -7137,6 +7472,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 10.0,
       "degree": 4,
       "capital_status": "capital_mapped"
     },
@@ -7162,6 +7498,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -7187,6 +7524,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -7212,6 +7550,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -7237,6 +7576,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -7262,6 +7602,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 10.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -7287,6 +7628,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -7312,6 +7654,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 2,
       "capital_status": "capital_mapped"
     },
@@ -7337,6 +7680,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -7362,6 +7706,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 2,
       "capital_status": "capital_mapped"
     },
@@ -7387,6 +7732,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -7412,6 +7758,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -7437,6 +7784,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -7462,6 +7810,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -7487,6 +7836,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.8,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -7512,6 +7862,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 5.0,
       "degree": 2,
       "capital_status": "capital_mapped"
     },
@@ -7537,6 +7888,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -7562,6 +7914,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 10.0,
       "degree": 3,
       "capital_status": "capital_mapped"
     },
@@ -7587,6 +7940,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -7612,6 +7966,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -7637,6 +7992,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -7662,6 +8018,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 15.0,
       "degree": 2,
       "capital_status": "capital_mapped"
     },
@@ -7687,6 +8044,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -7712,6 +8070,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -7737,6 +8096,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -7762,6 +8122,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -7787,6 +8148,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 2,
       "capital_status": "capital_mapped"
     },
@@ -7812,6 +8174,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 2,
       "capital_status": "capital_mapped"
     },
@@ -7837,6 +8200,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -7862,6 +8226,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -7887,6 +8252,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -7912,6 +8278,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -7937,6 +8304,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -7962,6 +8330,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -7987,6 +8356,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -8012,6 +8382,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -8037,6 +8408,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 2,
       "capital_status": "capital_mapped"
     },
@@ -8062,6 +8434,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -8087,6 +8460,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -8112,6 +8486,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 15.0,
       "degree": 3,
       "capital_status": "capital_mapped"
     },
@@ -8137,6 +8512,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 3,
       "capital_status": "capital_mapped"
     },
@@ -8162,6 +8538,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -8187,6 +8564,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -8212,6 +8590,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 100.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -8237,6 +8616,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -8262,6 +8642,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -8287,6 +8668,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -8312,6 +8694,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -8337,6 +8720,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -8362,6 +8746,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -8387,6 +8772,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 25.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -8412,6 +8798,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -8437,6 +8824,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 15.0,
       "degree": 5,
       "capital_status": "capital_mapped"
     },
@@ -8462,6 +8850,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -8487,6 +8876,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -8512,6 +8902,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -8537,6 +8928,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -8562,6 +8954,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -8587,6 +8980,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -8612,6 +9006,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 2,
       "capital_status": "capital_mapped"
     },
@@ -8637,6 +9032,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 15.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -8662,6 +9058,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 25.0,
       "degree": 5,
       "capital_status": "capital_mapped"
     },
@@ -8687,6 +9084,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 100.0,
       "degree": 3,
       "capital_status": "capital_mapped"
     },
@@ -8712,6 +9110,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 2,
       "capital_status": "capital_mapped"
     },
@@ -8737,6 +9136,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -8762,6 +9162,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -8787,6 +9188,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -8812,6 +9214,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -8837,6 +9240,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -8862,6 +9266,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 2,
       "capital_status": "capital_mapped"
     },
@@ -8887,6 +9292,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -8912,6 +9318,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -8937,6 +9344,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -8962,6 +9370,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -8987,6 +9396,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 2,
       "capital_status": "capital_mapped"
     },
@@ -9012,6 +9422,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -9037,6 +9448,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -9062,6 +9474,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -9087,6 +9500,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -9112,6 +9526,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 2,
       "capital_status": "capital_mapped"
     },
@@ -9137,6 +9552,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 2,
       "capital_status": "capital_mapped"
     },
@@ -9162,6 +9578,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 10.0,
       "degree": 2,
       "capital_status": "capital_mapped"
     },
@@ -9187,6 +9604,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -9212,6 +9630,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -9237,6 +9656,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -9262,6 +9682,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 2,
       "capital_status": "capital_mapped"
     },
@@ -9287,6 +9708,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -9312,6 +9734,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 2,
       "capital_status": "capital_mapped"
     },
@@ -9337,6 +9760,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.8,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -9362,6 +9786,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -9387,6 +9812,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 15.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -9412,6 +9838,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 2,
       "capital_status": "capital_mapped"
     },
@@ -9437,6 +9864,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.8,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -9462,6 +9890,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -9487,6 +9916,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -9512,6 +9942,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -9537,6 +9968,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 3,
       "capital_status": "capital_mapped"
     },
@@ -9562,6 +9994,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -9587,6 +10020,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 2,
       "capital_status": "capital_mapped"
     },
@@ -9612,6 +10046,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -9637,6 +10072,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 2,
       "capital_status": "capital_mapped"
     },
@@ -9662,6 +10098,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -9687,6 +10124,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -9712,6 +10150,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -9737,6 +10176,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -9762,6 +10202,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -9787,6 +10228,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -9812,6 +10254,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -9837,6 +10280,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -9862,6 +10306,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -9887,6 +10332,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -9912,6 +10358,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 15.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -9937,6 +10384,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -9962,6 +10410,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -9987,6 +10436,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -10012,6 +10462,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -10037,6 +10488,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 5.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -10062,6 +10514,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 10.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -10087,6 +10540,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -10112,6 +10566,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 15.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -10137,6 +10592,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 10.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -10162,6 +10618,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -10187,6 +10644,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -10212,6 +10670,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -10237,6 +10696,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -10262,6 +10722,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -10287,6 +10748,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 2,
       "capital_status": "capital_mapped"
     },
@@ -10312,6 +10774,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -10337,6 +10800,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -10362,6 +10826,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -10387,6 +10852,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -10412,6 +10878,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -10437,6 +10904,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 25.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -10462,6 +10930,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -10487,6 +10956,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -10512,6 +10982,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.8,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -10537,6 +11008,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -10562,6 +11034,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -10587,6 +11060,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -10612,6 +11086,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -10637,6 +11112,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 5.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -10662,6 +11138,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -10687,6 +11164,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -10712,6 +11190,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 50.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -10737,6 +11216,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.8,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -10762,6 +11242,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 25.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -10787,6 +11268,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -10812,6 +11294,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -10837,6 +11320,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -10862,6 +11346,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 2,
       "capital_status": "capital_mapped"
     },
@@ -10887,6 +11372,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -10912,6 +11398,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -10937,6 +11424,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -10962,6 +11450,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 50.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -10987,6 +11476,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 10.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -11012,6 +11502,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -11037,6 +11528,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -11062,6 +11554,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -11087,6 +11580,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -11112,6 +11606,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -11137,6 +11632,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 10.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -11162,6 +11658,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -11187,6 +11684,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -11212,6 +11710,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -11237,6 +11736,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -11262,6 +11762,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -11287,6 +11788,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -11312,6 +11814,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -11337,6 +11840,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -11362,6 +11866,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -11387,6 +11892,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -11412,6 +11918,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -11437,6 +11944,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -11462,6 +11970,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 2,
       "capital_status": "capital_mapped"
     },
@@ -11487,6 +11996,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 100.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -11512,6 +12022,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -11537,6 +12048,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -11562,6 +12074,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -11587,6 +12100,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -11612,6 +12126,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -11637,6 +12152,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -11662,6 +12178,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -11687,6 +12204,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 2,
       "capital_status": "capital_mapped"
     },
@@ -11712,6 +12230,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 2,
       "capital_status": "capital_mapped"
     },
@@ -11737,6 +12256,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -11762,6 +12282,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -11787,6 +12308,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -11812,6 +12334,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -11837,6 +12360,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.8,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -11862,6 +12386,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -11887,6 +12412,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -11912,6 +12438,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -11937,6 +12464,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -11962,6 +12490,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -11987,6 +12516,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 15.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -12012,6 +12542,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -12037,6 +12568,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 50.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -12062,6 +12594,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -12087,6 +12620,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -12112,6 +12646,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 25.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -12137,6 +12672,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -12162,6 +12698,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -12187,6 +12724,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -12212,6 +12750,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -12237,6 +12776,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -12262,6 +12802,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -12287,6 +12828,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -12312,6 +12854,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -12337,6 +12880,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -12362,6 +12906,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -12387,6 +12932,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -12412,6 +12958,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.5,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -12437,6 +12984,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 2,
       "capital_status": "capital_mapped"
     },
@@ -12462,6 +13010,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 25.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -12487,6 +13036,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -12512,6 +13062,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -12537,6 +13088,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -12562,6 +13114,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -12587,6 +13140,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 4.0,
       "degree": 1,
       "capital_status": "capital_mapped"
     },
@@ -12612,6 +13166,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1000.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -12637,6 +13192,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 500.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -12662,6 +13218,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 100.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -12687,6 +13244,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 100.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -12712,6 +13270,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 100.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -12737,6 +13296,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 100.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -12762,6 +13322,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 100.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -12787,6 +13348,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 50.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -12812,6 +13374,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 50.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -12837,6 +13400,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 50.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -12862,6 +13426,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 50.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -12887,6 +13452,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 50.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -12912,6 +13478,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 50.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -12937,6 +13504,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 50.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -12962,6 +13530,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 50.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -12987,6 +13556,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 25.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -13012,6 +13582,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 25.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -13037,6 +13608,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 25.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -13062,6 +13634,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 25.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -13087,6 +13660,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 25.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -13112,6 +13686,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 25.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -13137,6 +13712,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 25.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -13162,6 +13738,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 25.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -13187,6 +13764,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 25.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -13212,6 +13790,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 25.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -13237,6 +13816,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 25.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -13262,6 +13842,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 25.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -13287,6 +13868,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 25.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -13312,6 +13894,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 25.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -13337,6 +13920,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 25.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -13362,6 +13946,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 25.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -13387,6 +13972,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 15.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -13412,6 +13998,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 15.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -13437,6 +14024,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 15.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -13462,6 +14050,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 15.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -13487,6 +14076,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 15.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -13512,6 +14102,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 15.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -13537,6 +14128,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 15.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -13562,6 +14154,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 15.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -13587,6 +14180,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 15.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -13612,6 +14206,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 15.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -13637,6 +14232,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 15.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -13662,6 +14258,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 15.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -13687,6 +14284,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 10.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -13712,6 +14310,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 10.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -13737,6 +14336,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 10.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -13762,6 +14362,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 10.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -13787,6 +14388,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 10.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -13812,6 +14414,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 10.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -13837,6 +14440,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 10.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -13862,6 +14466,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 10.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -13887,6 +14492,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 10.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -13912,6 +14518,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -13937,6 +14544,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 10.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -13962,6 +14570,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 10.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -13987,6 +14596,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 10.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -14012,6 +14622,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 10.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -14037,6 +14648,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 5.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -14062,6 +14674,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 5.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -14087,6 +14700,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 5.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -14112,6 +14726,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 5.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -14137,6 +14752,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 5.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -14162,6 +14778,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 5.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -14187,6 +14804,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 5.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -14212,6 +14830,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 5.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -14237,6 +14856,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 5.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -14262,6 +14882,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 5.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -14287,6 +14908,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 5.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -14312,6 +14934,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 5.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -14337,6 +14960,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 5.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -14362,6 +14986,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -14387,6 +15012,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -14412,6 +15038,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -14437,6 +15064,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -14462,6 +15090,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -14487,6 +15116,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -14512,6 +15142,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -14537,6 +15168,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -14562,6 +15194,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -14587,6 +15220,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -14612,6 +15246,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -14637,6 +15272,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -14662,6 +15298,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -14687,6 +15324,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -14712,6 +15350,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -14737,6 +15376,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -14762,6 +15402,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -14787,6 +15428,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -14812,6 +15454,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -14837,6 +15480,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -14862,6 +15506,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -14887,6 +15532,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -14912,6 +15558,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -14937,6 +15584,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -14962,6 +15610,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -14987,6 +15636,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -15012,6 +15662,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -15037,6 +15688,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -15062,6 +15714,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -15087,6 +15740,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -15112,6 +15766,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -15137,6 +15792,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -15162,6 +15818,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -15187,6 +15844,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -15212,6 +15870,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -15237,6 +15896,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -15262,6 +15922,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -15287,6 +15948,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -15312,6 +15974,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -15337,6 +16000,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -15362,6 +16026,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -15387,6 +16052,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -15412,6 +16078,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -15437,6 +16104,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -15462,6 +16130,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -15487,6 +16156,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -15512,6 +16182,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -15537,6 +16208,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -15562,6 +16234,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -15587,6 +16260,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -15612,6 +16286,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -15637,6 +16312,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -15662,6 +16338,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -15687,6 +16364,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -15712,6 +16390,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -15737,6 +16416,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -15762,6 +16442,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -15787,6 +16468,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -15812,6 +16494,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -15837,6 +16520,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -15862,6 +16546,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -15887,6 +16572,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -15912,6 +16598,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -15937,6 +16624,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -15962,6 +16650,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -15987,6 +16676,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -16012,6 +16702,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -16037,6 +16728,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -16062,6 +16754,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -16087,6 +16780,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -16112,6 +16806,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -16137,6 +16832,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -16162,6 +16858,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -16187,6 +16884,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -16212,6 +16910,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -16237,6 +16936,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -16262,6 +16962,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -16287,6 +16988,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -16312,6 +17014,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -16337,6 +17040,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -16362,6 +17066,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -16387,6 +17092,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 1.0,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -16412,6 +17118,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.8,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -16437,6 +17144,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.8,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -16462,6 +17170,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.8,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -16487,6 +17196,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.8,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -16512,6 +17222,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.8,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -16537,6 +17248,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.8,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -16562,6 +17274,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.8,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -16587,6 +17300,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.8,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -16612,6 +17326,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.8,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -16637,6 +17352,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.8,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -16662,6 +17378,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.8,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -16687,6 +17404,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.8,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -16712,6 +17430,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.8,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -16737,6 +17456,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.8,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -16762,6 +17482,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.8,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -16787,6 +17508,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.8,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -16812,6 +17534,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.8,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -16837,6 +17560,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.8,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -16862,6 +17586,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.8,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -16887,6 +17612,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.8,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -16912,6 +17638,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.8,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -16937,6 +17664,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.8,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -16962,6 +17690,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.8,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -16987,6 +17716,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.8,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -17012,6 +17742,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.8,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -17037,6 +17768,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.8,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -17062,6 +17794,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.8,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -17087,6 +17820,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.8,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -17112,6 +17846,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.8,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -17137,6 +17872,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.8,
       "degree": 0,
       "capital_status": "no_capital_edge"
     },
@@ -17162,6 +17898,7 @@ window.CAPITAL_ATLAS_DATA = {
       "domain_tags": "",
       "technology_tags": "",
       "scale_tags": "",
+      "valuation_usd": 0.8,
       "degree": 0,
       "capital_status": "no_capital_edge"
     }

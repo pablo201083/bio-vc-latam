@@ -185,7 +185,8 @@ def run(db_path: Path = DB_PATH, out_path: Path = OUT_PATH) -> dict:
                sx.bio_theme_secondary, sx.is_bio_universe,
                sx.startup_summary_en, sx.startup_summary_v1,
                sx.business_one_liner,
-               sx.cluster_label
+               sx.cluster_label,
+               COALESCE(sx.valuation_estimate_usd, sx.valuation_bucket_usd, 0) AS valuation_usd
         FROM entities e
         LEFT JOIN startup_extended sx ON sx.startup_id = e.entity_id
         WHERE e.entity_type = 'startup'
@@ -224,6 +225,7 @@ def run(db_path: Path = DB_PATH, out_path: Path = OUT_PATH) -> dict:
             "domain_tags": "",
             "technology_tags": "",
             "scale_tags": "",
+            "valuation_usd": float(r["valuation_usd"] or 0),
             "degree": 0,  # calculated below
             "capital_status": "no_capital_edge",  # updated below
         })
@@ -352,10 +354,21 @@ def run(db_path: Path = DB_PATH, out_path: Path = OUT_PATH) -> dict:
         if e["target"] in node_by_id and node_by_id[e["target"]]["type"] == "startup":
             startups_with_capital.add(e["target"])
 
+    # Build portfolio valuation per investor (sum of connected startup valuations)
+    portfolio_val: dict[str, float] = {}
+    for e in investment_edges:
+        inv_id = e["source"]
+        st_node = node_by_id.get(e["target"])
+        if st_node and st_node["type"] == "startup":
+            val = float(st_node.get("valuation_usd") or 0)
+            portfolio_val[inv_id] = portfolio_val.get(inv_id, 0.0) + val
+
     for nid, node in node_by_id.items():
         node["degree"] = degree_map.get(nid, 0)
         if node["type"] == "startup":
             node["capital_status"] = "capital_mapped" if nid in startups_with_capital else "no_capital_edge"
+        if node["type"] in ("fund", "allocator"):
+            node["portfolio_valuation_usd"] = round(portfolio_val.get(nid, 0.0), 1)
 
     # ── 7. Prune orphan edges (both endpoints must exist) ────────────────────
     valid_investment_edges = [
