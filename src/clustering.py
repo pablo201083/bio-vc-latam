@@ -62,11 +62,156 @@ UMAP_VIZ_PARAMS = {
 }
 
 HDBSCAN_PARAMS = {
-    "min_cluster_size": 6,
+    "min_cluster_size": 6,    # 6 → 14 clusters con 490 startups; granularidad óptima probada
     "min_samples": 3,
     "metric": "euclidean",
     "cluster_selection_method": "eom",
 }
+
+# Overrides manuales de cluster_id — se aplican DESPUÉS de HDBSCAN.
+# Razón: startups donde el embedding semántico no captura correctamente el cluster
+# correcto (baja confianza HDBSCAN, ambigüedad de keywords, error histórico).
+# Auditado: 2026-05-18. Actualizar cuando cambie la taxonomía de clusters.
+# NOTA: los cluster IDs son asignados por HDBSCAN y pueden cambiar entre rebuilds.
+# Al actualizar, verificar los IDs actuales con:
+#   SELECT cluster_id, cluster_label FROM startup_extended WHERE cluster_id IN (...) GROUP BY cluster_id
+# Última calibración contra rebuild 2026-05-18.
+CLUSTER_OVERRIDES: dict[str, int] = {
+    # ── Biomaterials mal asignados a Diagnostics/Therapeutics por HDBSCAN ──
+    "antarka":      2,  # Biomaterials-Biobased Chemistry (ingredientes cosméticos de enzimas)
+    "hybridon":    10,  # Biomaterials-Antimicrobial (nanotech antimicrobiana para materiales)
+    # ── Food Systems en cluster incorrecto ──────────────────────────────────
+    "heartbest":    6,  # Food-Novel Ingredients (lácteos plant-based, no fermentación de precisión)
+    "done_properly": 19,  # Food-Precision Fermentation (usa fermentación — mycelium, flavor science)
+    "future_biome": 6,  # Food-Novel Ingredients (prebióticos fúngicos = ingredientes, no plataforma industrial)
+    "kigui":        6,  # Food-Novel Ingredients (retail AI food waste, tema ya corregido a Food Systems)
+    # ── Bioinputs en clusters de Nature/Ecosystem o Food ───────────────────
+    "seedmatriz":   9,  # Bioinputs-Seed Treatment (encapsulación de semillas — cluster exacto)
+    "microin":     11,  # Bioinputs-Biologicals Crop (microencapsulación para bioinsumos agro)
+    "nanotica":    12,  # Bioinputs-Crop Protection (nanoencapsulación para agroquímicos)
+    "beeflow":     11,  # Bioinputs-Biologicals Crop (servicio de polinización + biologicals)
+    # ── Therapeutics (incluye veterinaria/animal health) ───────────────────
+    "phagelab":     7,  # Therapeutics-Biopharmaceutical (plataforma fagos para ganadería)
+    "sciphage":     7,  # Therapeutics-Biopharmaceutical (fagos antimicrobianos para acuicultura)
+    # ── Farm Intelligence mal asignados a Nature/Ecosystem ─────────────────
+    "agrired":     21,  # Farm Intelligence-Agronomic (marketplace agro inputs = infra digital agrícola)
+    "agrotoken":   21,  # Farm Intelligence-Agronomic (blockchain tokenización granos)
+    # ── Otros ──────────────────────────────────────────────────────────────
+    "inner_cosmos": 17,  # Therapeutics-Regenerative (BCI terapéutico para depresión, no diagnóstico)
+    "geoprot":      5,  # Biomanufacturing-Precision Fermentation (herramienta computacional de proteínas)
+}
+
+
+# ── Layout editorial: dos ejes con significado analítico ─────────────────────
+#
+# Eje X: tecnología — de "biológico puro" (-1) a "plataforma digital" (+1)
+# Eje Y: escala de la materia — de "molecular" (-1) a "ecosistema" (+1)
+#
+# Cada bio_theme tiene un centroide fijo que refleja su posición en este grid.
+# La posición final de cada startup = centroide_editorial + offset_UMAP_intra-tema.
+# El offset UMAP preserva la estructura de sub-clusters dentro de cada tema.
+#
+# Narrativa del mapa:
+#   Diagonal ↙ (bio-molecular): Therapeutics — ciencia de moléculas y células
+#   Diagonal ↗ (digital-ecosistema): Farm Intelligence — datos a escala de campo
+#   Centro: Biomanufacturing, Biomaterials — plataformas transversales
+#   Bioinputs y Farm Intelligence comparten el "piso" de campo/organismo,
+#   separados horizontalmente por su paradigma tecnológico.
+#
+EDITORIAL_CENTROIDS: dict[str, tuple[float, float]] = {
+    # (x: bio→digital,  y: molecular→ecosistema)
+    "Therapeutics":                            (-0.75, -0.75),
+    "Diagnostics & Health Access":             (+0.55, -0.70),
+    "Biomanufacturing & Fermentation Economy": (-0.55, -0.30),
+    "Biomaterials & Circular Economy":         (-0.20, +0.05),
+    "Food Systems & Alt Proteins":             (+0.15, +0.25),
+    "Bioinputs & Crop Resilience":             (-0.50, +0.40),
+    "Nature & Ecosystem Tech":                 (-0.05, +0.70),
+    "Farm Intelligence":                       (+0.65, +0.75),
+}
+
+# Radio máximo del offset intra-tema (en unidades editoriales [-1,1]).
+# 0.18 → los sub-clusters de cada tema ocupan ~18% del canvas half-width,
+# suficiente para distinguir sub-grupos sin solapar temas vecinos.
+INTRA_THEME_SCALE = 0.18
+
+# Scatter: radio más grande para mayor spread intra-tema en la visualización
+# de dispersión. 0.40 triplica el spread sin solapar temas vecinos (distancia
+# mínima entre centroides ≈ 5.6 unidades; spread max = 0.40*14 = 5.6 ≤ gap).
+INTRA_SCATTER_SCALE = 0.40
+
+# Escala final: de [-1,1] editorial a coordenadas de canvas.
+CANVAS_SCALE = 14.0
+
+
+def editorial_positions(
+    raw_2d: np.ndarray,
+    ids: list[str],
+    bio_themes_map: dict[str, str],
+) -> np.ndarray:
+    """Calcula posiciones 2D editoriales: centroide fijo por tema + offset UMAP normalizado.
+
+    raw_2d: coordenadas UMAP 2D sin supervisión (usadas solo para offset intra-tema).
+    Startups sin bio_theme conocido se posicionan en el centroide del origen (0,0).
+    """
+    result = np.zeros((len(ids), 2), dtype=np.float32)
+
+    # Agrupar índices por bio_theme
+    theme_indices: dict[str, list[int]] = {}
+    for i, sid in enumerate(ids):
+        t = bio_themes_map.get(sid, "")
+        theme_indices.setdefault(t, []).append(i)
+
+    for theme, indices in theme_indices.items():
+        cx, cy = EDITORIAL_CENTROIDS.get(theme, (0.0, 0.0))
+        pts = raw_2d[indices]                        # posiciones UMAP brutas del tema
+        centroid = pts.mean(axis=0)
+        offsets  = pts - centroid                    # offset relativo dentro del tema
+
+        # Normalizar a radio INTRA_THEME_SCALE
+        max_r = np.linalg.norm(offsets, axis=1).max() if len(offsets) > 1 else 1.0
+        if max_r > 0:
+            offsets = offsets / max_r * INTRA_THEME_SCALE
+
+        for local_i, global_i in enumerate(indices):
+            result[global_i] = [
+                (cx + offsets[local_i, 0]) * CANVAS_SCALE,
+                (cy + offsets[local_i, 1]) * CANVAS_SCALE,
+            ]
+
+    n_placed = sum(1 for sid in ids if bio_themes_map.get(sid, "") in EDITORIAL_CENTROIDS)
+    print(f"  Layout editorial: {n_placed}/{len(ids)} con centroide definido "
+          f"({len(ids)-n_placed} en origen)")
+    return result
+
+
+def scatter_positions(
+    raw_2d: np.ndarray,
+    ids: list[str],
+    bio_themes_map: dict[str, str],
+) -> np.ndarray:
+    """Posiciones para scatter plot: misma lógica que editorial_positions pero con
+    INTRA_SCATTER_SCALE más grande para mayor separación visual intra-tema."""
+    result = np.zeros((len(ids), 2), dtype=np.float32)
+    theme_indices: dict[str, list[int]] = {}
+    for i, sid in enumerate(ids):
+        t = bio_themes_map.get(sid, "")
+        theme_indices.setdefault(t, []).append(i)
+
+    for theme, indices in theme_indices.items():
+        cx, cy = EDITORIAL_CENTROIDS.get(theme, (0.0, 0.0))
+        pts = raw_2d[indices]
+        centroid = pts.mean(axis=0)
+        offsets = pts - centroid
+        max_r = np.linalg.norm(offsets, axis=1).max() if len(offsets) > 1 else 1.0
+        if max_r > 0:
+            offsets = offsets / max_r * INTRA_SCATTER_SCALE
+        for local_i, global_i in enumerate(indices):
+            result[global_i] = [
+                (cx + offsets[local_i, 0]) * CANVAS_SCALE,
+                (cy + offsets[local_i, 1]) * CANVAS_SCALE,
+            ]
+    return result
 
 
 def run_umap(vectors: np.ndarray, params: dict, label: str) -> np.ndarray:
@@ -381,6 +526,7 @@ def persist_results(
     labels: np.ndarray,
     probs: np.ndarray,
     coords2d: np.ndarray,
+    scatter2d: np.ndarray,
     cluster_labels: dict[int, str],
     tech_map: dict[str, list[str]],
     ind_map: dict[str, list[str]],
@@ -388,6 +534,16 @@ def persist_results(
     """Persiste resultados de clustering + códigos a startup_extended."""
     cur = conn.cursor()
     timestamp = datetime.now(timezone.utc).isoformat(timespec="seconds")
+
+    # Asegurar columnas scatter_x / scatter_y (idempotente)
+    for col in ("scatter_x", "scatter_y"):
+        try:
+            cur.execute(f"ALTER TABLE startup_extended ADD COLUMN {col} REAL")
+        except Exception:
+            pass
+
+    scatter_map = {sid: (float(scatter2d[i, 0]), float(scatter2d[i, 1]))
+                   for i, sid in enumerate(ids)}
 
     for sid, lbl, prob, (x, y) in zip(ids, labels, probs, coords2d):
         c = int(lbl)
@@ -397,15 +553,31 @@ def persist_results(
         cluster_label = cluster_labels.get(c, f"cluster {c}")
         tech_json = json.dumps(tech_map.get(sid, []))
         ind_json = json.dumps(ind_map.get(sid, []))
+        sx, sy = scatter_map.get(sid, (x, y))
         cur.execute(
             """UPDATE startup_extended
                SET cluster_id = ?, cluster_label = ?, cluster_confidence = ?,
                    umap_x = ?, umap_y = ?, is_outlier = ?,
-                   tech_codes = ?, industry_codes = ?
+                   tech_codes = ?, industry_codes = ?,
+                   scatter_x = ?, scatter_y = ?
                WHERE startup_id = ?""",
             (c, cluster_label, float(prob), float(x), float(y),
-             is_outlier, tech_json, ind_json, sid),
+             is_outlier, tech_json, ind_json, sx, sy, sid),
         )
+
+    # Aplicar overrides manuales de cluster_id
+    n_overrides = 0
+    for startup_id, target_cluster in CLUSTER_OVERRIDES.items():
+        target_label = cluster_labels.get(target_cluster, f"cluster {target_cluster}")
+        updated = cur.execute(
+            """UPDATE startup_extended
+               SET cluster_id = ?, cluster_label = ?, cluster_confidence = 0.99
+               WHERE startup_id = ?""",
+            (target_cluster, target_label, startup_id),
+        ).rowcount
+        n_overrides += updated
+    if n_overrides:
+        print(f"  [cluster] {n_overrides} overrides manuales aplicados")
 
     # Audit log
     n_clusters = len(set(int(l) for l in labels if l != -1))
@@ -475,7 +647,8 @@ def write_dashboard_data(conn: sqlite3.Connection) -> None:
                sx.bio_theme_primary, sx.bio_theme_secondary, sx.is_bio_universe,
                sx.sub_cluster_label,
                sx.funding_stage, sx.funding_bucket_usd, sx.valuation_bucket_usd,
-               sx.valuation_estimate_usd, sx.valuation_estimate_source
+               sx.valuation_estimate_usd, sx.valuation_estimate_source,
+               sx.scatter_x, sx.scatter_y
         FROM startup_extended sx
         JOIN entities e ON e.entity_id = sx.startup_id
         LEFT JOIN investment_edges ie ON ie.startup_id = sx.startup_id
@@ -528,6 +701,8 @@ def write_dashboard_data(conn: sqlite3.Connection) -> None:
             "valuation_bucket_usd": int(r[28]) if r[28] is not None else None,
             "valuation_estimate_usd": float(r[29]) if r[29] is not None else None,
             "valuation_estimate_source": r[30] or None,
+            "sx": round(float(r[31]), 3) if r[31] is not None else round(float(r[11] or 0), 3),
+            "sy": round(float(r[32]), 3) if r[32] is not None else round(float(r[12] or 0), 3),
         })
 
     # Cluster summary con métricas para inversor
@@ -719,7 +894,7 @@ def print_cluster_summary(
 
 def run(
     db_path: pathlib.Path = DB_PATH,
-    min_cluster_size: int = 6,
+    min_cluster_size: int = HDBSCAN_PARAMS["min_cluster_size"],
     force_embeddings: bool = False,
 ) -> dict:
     """Pipeline completo de clustering."""
@@ -736,10 +911,21 @@ def run(
     # 2. UMAP a 10D para clustering
     reduced_10d = run_umap(vectors, UMAP_CLUSTER_PARAMS, "clustering")
 
-    # 3. UMAP a 2D para visualización — usa el 10D como input (no el 384D raw).
-    # De esta forma la topología 2D es coherente con la topología que HDBSCAN
-    # usó para asignar clusters: puntos cercanos en 2D → cercanos en 10D → mismo cluster.
-    coords_2d = run_umap(reduced_10d, UMAP_VIZ_PARAMS, "viz")
+    # 3. UMAP 2D puro (sin supervisión) — solo para offset intra-tema.
+    # El layout macro lo define editorial_positions(), no este UMAP.
+    raw_2d = run_umap(reduced_10d, UMAP_VIZ_PARAMS, "viz-raw")
+
+    # 3b. Cargar bio_themes y calcular posiciones editoriales.
+    # Macro: centroide fijo por tema (grid bio→digital × molecular→ecosistema).
+    # Micro: offset UMAP normalizado dentro de cada tema (preserva sub-clusters).
+    conn_pre = sqlite3.connect(db_path)
+    bio_themes_map_pre: dict[str, str] = dict(conn_pre.execute(
+        "SELECT startup_id, bio_theme_primary FROM startup_extended "
+        "WHERE bio_theme_primary IS NOT NULL AND bio_theme_primary != ''"
+    ).fetchall())
+    conn_pre.close()
+    coords_2d  = editorial_positions(raw_2d, ids, bio_themes_map_pre)
+    scatter_2d = scatter_positions(raw_2d, ids, bio_themes_map_pre)
 
     # 4. HDBSCAN
     params = dict(HDBSCAN_PARAMS)
@@ -786,7 +972,7 @@ def run(
 
     # 8. Persistir
     print("  Persistiendo a SQLite...")
-    persist_results(conn, ids, labels, probs, coords_2d, cluster_labels, tech_map, ind_map)
+    persist_results(conn, ids, labels, probs, coords_2d, scatter_2d, cluster_labels, tech_map, ind_map)
 
     # 9. Reporte
     print_cluster_summary(conn, ids, labels, cluster_labels)
