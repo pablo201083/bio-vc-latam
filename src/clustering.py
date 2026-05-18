@@ -68,37 +68,37 @@ HDBSCAN_PARAMS = {
     "cluster_selection_method": "eom",
 }
 
-# Overrides manuales de cluster_id — se aplican DESPUÉS de HDBSCAN.
-# Razón: startups donde el embedding semántico no captura correctamente el cluster
-# correcto (baja confianza HDBSCAN, ambigüedad de keywords, error histórico).
-# Auditado: 2026-05-18. Actualizar cuando cambie la taxonomía de clusters.
-# NOTA: los cluster IDs son asignados por HDBSCAN y pueden cambiar entre rebuilds.
-# Al actualizar, verificar los IDs actuales con:
-#   SELECT cluster_id, cluster_label FROM startup_extended WHERE cluster_id IN (...) GROUP BY cluster_id
-# Última calibración contra rebuild 2026-05-18.
-CLUSTER_OVERRIDES: dict[str, int] = {
-    # ── Biomaterials mal asignados a Diagnostics/Therapeutics por HDBSCAN ──
-    "antarka":      2,  # Biomaterials-Biobased Chemistry (ingredientes cosméticos de enzimas)
-    "hybridon":    10,  # Biomaterials-Antimicrobial (nanotech antimicrobiana para materiales)
+# Overrides de cluster — robustos a reasignación de IDs por HDBSCAN.
+# Formato: startup_id -> (bio_theme_esperado, keyword_en_cluster_label)
+# El runtime resuelve el cluster_id buscando el cluster cuyo label contenga el keyword
+# dentro del bio_theme correcto. Si no hay match exacto, usa el cluster más numeroso del tema.
+# Razón de cada override: el embedding semántico no capturó el cluster correcto
+# (baja confianza HDBSCAN, ambigüedad de keywords, error histórico de tema).
+# Auditado: 2026-05-18.
+CLUSTER_OVERRIDES: dict[str, tuple[str, str]] = {
+    # startup_id: (bio_theme_esperado, keyword_en_label)
+    # ── Biomaterials mal asignados a Diagnostics/Therapeutics ───────────────
+    "antarka":       ("Biomaterials & Circular Economy",         "biobased"),
+    "hybridon":      ("Biomaterials & Circular Economy",         "antimicrobial"),
     # ── Food Systems en cluster incorrecto ──────────────────────────────────
-    "heartbest":    6,  # Food-Novel Ingredients (lácteos plant-based, no fermentación de precisión)
-    "done_properly": 19,  # Food-Precision Fermentation (usa fermentación — mycelium, flavor science)
-    "future_biome": 6,  # Food-Novel Ingredients (prebióticos fúngicos = ingredientes, no plataforma industrial)
-    "kigui":        6,  # Food-Novel Ingredients (retail AI food waste, tema ya corregido a Food Systems)
-    # ── Bioinputs en clusters de Nature/Ecosystem o Food ───────────────────
-    "seedmatriz":   9,  # Bioinputs-Seed Treatment (encapsulación de semillas — cluster exacto)
-    "microin":     11,  # Bioinputs-Biologicals Crop (microencapsulación para bioinsumos agro)
-    "nanotica":    12,  # Bioinputs-Crop Protection (nanoencapsulación para agroquímicos)
-    "beeflow":     11,  # Bioinputs-Biologicals Crop (servicio de polinización + biologicals)
-    # ── Therapeutics (incluye veterinaria/animal health) ───────────────────
-    "phagelab":     7,  # Therapeutics-Biopharmaceutical (plataforma fagos para ganadería)
-    "sciphage":     7,  # Therapeutics-Biopharmaceutical (fagos antimicrobianos para acuicultura)
-    # ── Farm Intelligence mal asignados a Nature/Ecosystem ─────────────────
-    "agrired":     21,  # Farm Intelligence-Agronomic (marketplace agro inputs = infra digital agrícola)
-    "agrotoken":   21,  # Farm Intelligence-Agronomic (blockchain tokenización granos)
-    # ── Otros ──────────────────────────────────────────────────────────────
-    "inner_cosmos": 17,  # Therapeutics-Regenerative (BCI terapéutico para depresión, no diagnóstico)
-    "geoprot":      5,  # Biomanufacturing-Precision Fermentation (herramienta computacional de proteínas)
+    "heartbest":     ("Food Systems & Alt Proteins",             "novel"),
+    "done_properly": ("Food Systems & Alt Proteins",             "ferment"),
+    "future_biome":  ("Food Systems & Alt Proteins",             "novel"),
+    "kigui":         ("Food Systems & Alt Proteins",             "novel"),
+    # ── Bioinputs en clusters de Nature/Ecosystem o Food ────────────────────
+    "seedmatriz":    ("Bioinputs & Crop Resilience",             "seed"),
+    "microin":       ("Bioinputs & Crop Resilience",             "biolog"),
+    "nanotica":      ("Bioinputs & Crop Resilience",             "crop protect"),
+    "beeflow":       ("Bioinputs & Crop Resilience",             "biolog"),
+    # ── Therapeutics veterinaria/animal health ──────────────────────────────
+    "phagelab":      ("Therapeutics",                            "biopharm"),
+    "sciphage":      ("Therapeutics",                            "biopharm"),
+    # ── Farm Intelligence mal asignados a Nature/Ecosystem ──────────────────
+    "agrired":       ("Farm Intelligence",                       "agron"),
+    "agrotoken":     ("Farm Intelligence",                       "agron"),
+    # ── Otros ───────────────────────────────────────────────────────────────
+    "inner_cosmos":  ("Therapeutics",                            "regenerat"),
+    "geoprot":       ("Biomanufacturing & Fermentation Economy", "precis"),
 }
 
 
@@ -119,15 +119,24 @@ CLUSTER_OVERRIDES: dict[str, int] = {
 #   separados horizontalmente por su paradigma tecnológico.
 #
 EDITORIAL_CENTROIDS: dict[str, tuple[float, float]] = {
-    # (x: bio→digital,  y: molecular→ecosistema)
-    "Therapeutics":                            (-0.75, -0.75),
-    "Diagnostics & Health Access":             (+0.55, -0.70),
-    "Biomanufacturing & Fermentation Economy": (-0.55, -0.30),
-    "Biomaterials & Circular Economy":         (-0.20, +0.05),
-    "Food Systems & Alt Proteins":             (+0.15, +0.25),
-    "Bioinputs & Crop Resilience":             (-0.50, +0.40),
-    "Nature & Ecosystem Tech":                 (-0.05, +0.70),
-    "Farm Intelligence":                       (+0.65, +0.75),
+    # Eje X — instrumento activo principal:
+    #   -1 = el organismo/molécula/material ES la herramienta (bio-físico)
+    #   +1 = el dato/modelo/plataforma ES la herramienta (bio-informacional)
+    # Eje Y — escala del sistema intervenido:
+    #   -1 = sub-organismo (molécula, célula, tejido)
+    #   +1 = supra-organismo (campo, cuenca, mercado, bioma)
+    #
+    # Cada centroide se deriva del marco, no se elige individualmente.
+    # Última revisión sistemática: 2026-05-18.
+    #
+    "Therapeutics":                            (-0.80, -0.70),  # instrumento=molécula/célula; escala=intraorganismo
+    "Diagnostics & Health Access":             (-0.30, -0.65),  # instrumento=biosensor/secuenciador (bio); output=dato; escala=molecular
+    "Biomanufacturing & Fermentation Economy": (-0.65, -0.15),  # instrumento=microorganismo/bioreactor; escala=proceso industrial
+    "Biomaterials & Circular Economy":         (-0.15, +0.10),  # instrumento=síntesis bio+química; escala=material; nodo crosscutting
+    "Food Systems & Alt Proteins":             (+0.15, +0.15),  # mix bio+digital; escala=alimento/organismo
+    "Bioinputs & Crop Resilience":             (-0.50, +0.45),  # instrumento=biológico (microbio, extracto); escala=campo/planta
+    "Nature & Ecosystem Tech":                 (+0.05, +0.75),  # mix monitoreo-bio y plataformas; escala=ecosistema
+    "Farm Intelligence":                       (+0.70, +0.60),  # instrumento=modelo/sensor/dato (digital); escala=campo/finca
 }
 
 # Radio máximo del offset intra-tema (en unidades editoriales [-1,1]).
@@ -565,10 +574,53 @@ def persist_results(
              is_outlier, tech_json, ind_json, sx, sy, sid),
         )
 
-    # Aplicar overrides manuales de cluster_id
+    # Aplicar overrides manuales — resolución por (bio_theme, keyword) en lugar de ID fijo.
+    # Construir índice: (bio_theme_dominant, keyword) -> cluster_id para resolución en runtime.
+    # bio_theme_dominant = tema más frecuente dentro del cluster.
+    from collections import Counter as _Counter
+    cluster_theme_dist: dict[int, _Counter] = {}
+    for row in conn.execute(
+        "SELECT cluster_id, bio_theme_primary FROM startup_extended WHERE scope_decision='include'"
+    ).fetchall():
+        c = row[0]
+        if c is None:
+            continue
+        cluster_theme_dist.setdefault(c, _Counter())[row[1] or ""] += 1
+
+    def _resolve_cluster(bio_theme: str, keyword: str) -> tuple[int, str] | None:
+        """Encuentra el cluster cuyo label contiene keyword y cuyo tema dominante es bio_theme."""
+        kw = keyword.lower()
+        candidates = []
+        for cid, lbl in cluster_labels.items():
+            lbl_low = (lbl or "").lower()
+            if kw not in lbl_low:
+                continue
+            dist = cluster_theme_dist.get(cid, _Counter())
+            top = dist.most_common(1)
+            dominant = top[0][0] if top else ""
+            if dominant == bio_theme:
+                candidates.append((dist.total(), cid, lbl))
+        if candidates:
+            candidates.sort(reverse=True)
+            return candidates[0][1], candidates[0][2]
+        # Fallback: mayor cluster del bio_theme sin importar keyword
+        fallback = [
+            (cluster_theme_dist.get(cid, _Counter()).get(bio_theme, 0), cid, lbl)
+            for cid, lbl in cluster_labels.items()
+        ]
+        fallback.sort(reverse=True)
+        for score, cid, lbl in fallback:
+            if score > 0:
+                return cid, lbl
+        return None
+
     n_overrides = 0
-    for startup_id, target_cluster in CLUSTER_OVERRIDES.items():
-        target_label = cluster_labels.get(target_cluster, f"cluster {target_cluster}")
+    for startup_id, (bio_theme, keyword) in CLUSTER_OVERRIDES.items():
+        result = _resolve_cluster(bio_theme, keyword)
+        if result is None:
+            print(f"  [cluster-override] {startup_id}: no cluster encontrado para ({bio_theme}, {keyword!r})")
+            continue
+        target_cluster, target_label = result
         updated = cur.execute(
             """UPDATE startup_extended
                SET cluster_id = ?, cluster_label = ?, cluster_confidence = 0.99

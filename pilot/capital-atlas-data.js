@@ -1,5 +1,5 @@
 window.CAPITAL_ATLAS_DATA = {
-  "generated_at": "2026-05-18T22:20:35",
+  "generated_at": "2026-05-18T22:34:31",
   "source": "pipeline:build-atlas (SQLite)",
   "summary": {
     "nodes_total": 737,
