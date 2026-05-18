@@ -381,6 +381,92 @@ def cmd_build_atlas(args: argparse.Namespace) -> None:
     print(f"\n  Summary: {stats}\n")
 
 
+def cmd_ingest_intake(args: argparse.Namespace) -> None:
+    """staging/capital_intake.csv → canonical → investment_edges → build-atlas."""
+    import csv, subprocess
+    intake_file = getattr(args, "file", None)
+    dry = getattr(args, "dry_run", False)
+
+    # Step 1: intake_to_canonical.py convierte staging CSV → manual_canonical_investment_edges.csv
+    cmd = [sys.executable, "scripts/intake_to_canonical.py"]
+    if intake_file:
+        cmd += ["--file", str(intake_file)]
+    if dry:
+        cmd += ["--dry-run"]
+    print("\n  ── Step 1: intake → manual_canonical ───────────────────────")
+    result = subprocess.run(cmd, cwd=str(ROOT))
+    if result.returncode != 0 or dry:
+        if dry:
+            print("\n  [dry-run] Nada escrito — stopping.")
+        return
+
+    # Step 2: manual_canonical_investment_edges.csv → investment_edges
+    print("\n  ── Step 2: canonical → investment_edges ────────────────────")
+    canonical_path = ROOT / "canonical" / "manual_canonical_investment_edges.csv"
+    if not canonical_path.exists():
+        print(f"  [ERROR] {canonical_path} no existe")
+        return
+
+    conn = sqlite3.connect(DB_PATH)
+    conn.execute("PRAGMA journal_mode=WAL")
+
+    with canonical_path.open("r", encoding="utf-8-sig") as f:
+        can_rows = list(csv.DictReader(f))
+
+    created = skipped = errors = 0
+    for row in can_rows:
+        inv_id = (row.get("investor_id_candidate") or "").strip()
+        sta_id = (row.get("startup_id_candidate") or "").strip()
+        edge_id = (row.get("raw_edge_id") or "").strip()
+        if not inv_id or not sta_id or not edge_id:
+            continue
+
+        # Skip if already exists
+        exists = conn.execute(
+            "SELECT 1 FROM investment_edges WHERE investor_id=? AND startup_id=?",
+            (inv_id, sta_id),
+        ).fetchone()
+        if exists:
+            skipped += 1
+            continue
+
+        # Verify entities exist
+        inv_ok = conn.execute("SELECT 1 FROM entities WHERE entity_id=?", (inv_id,)).fetchone()
+        sta_ok = conn.execute("SELECT 1 FROM entities WHERE entity_id=?", (sta_id,)).fetchone()
+        if not inv_ok or not sta_ok:
+            print(f"  [warn] entidad no encontrada: {inv_id if not inv_ok else sta_id} — skip")
+            errors += 1
+            continue
+
+        conf = float(row.get("confidence_score") or 0.9)
+        src_url = (row.get("source_file") or "").strip()
+        notes = (row.get("notes") or "").strip()
+        rel = (row.get("relation_type_raw") or "official_portfolio_investment").strip()
+
+        conn.execute("""
+            INSERT INTO investment_edges
+              (investment_id, investor_id, startup_id, round_name, round_stage,
+               announced_date, amount, currency, is_lead, confidence_score, source_id, notes)
+            VALUES (?,?,?,?,?,?,?,?,?,?,?,?)
+        """, (edge_id, inv_id, sta_id, rel, None, None, None, None, None, conf, src_url, notes))
+        created += 1
+
+    conn.commit()
+    conn.close()
+    print(f"  Creadas: {created} | Ya existían: {skipped} | Errores: {errors}")
+
+    if created == 0:
+        print("  Nada nuevo — build-atlas omitido.")
+        return
+
+    # Step 3: build atlas
+    print("\n  ── Step 3: build-atlas ─────────────────────────────────────")
+    from src.capital_atlas import run as run_atlas
+    atlas_stats = run_atlas(DB_PATH)
+    print(f"  {atlas_stats}")
+    print()
+
+
 def cmd_fund_sweep_status(args: argparse.Namespace) -> None:
     from scripts.capital_sweep_status import run as run_status
     run_status(DB_PATH)
@@ -431,6 +517,9 @@ def main() -> None:
     mde = sub.add_parser("merge-duplicate-entities", help="CRITICO: migrar edges de entity_ids duplicados (PascalCase) al canonical slug con startup_extended")
     mde.add_argument("--dry-run", action="store_true", help="Ver pares sin modificar DB")
     sub.add_parser("build-atlas", help="Regenerar pilot/capital-atlas-data.js desde SQLite (investment_edges + capital_relations)")
+    ii = sub.add_parser("ingest-intake", help="staging/capital_intake.csv → canonical → build-atlas (ciclo completo en un paso)")
+    ii.add_argument("--file", type=str, default=None, help="CSV de intake custom (default: staging/capital_intake.csv)")
+    ii.add_argument("--dry-run", action="store_true", help="Solo muestra qué se ingresaría, sin escribir")
     sub.add_parser("fund-sweep-status", help="Dashboard de cobertura del grafo de capital + guía para el sweep")
     sub.add_parser("quality-report", help="Genera pilot/quality-tracker.html con métricas de calidad")
 
@@ -465,6 +554,7 @@ def main() -> None:
         "dedup-investment-edges": cmd_dedup_investment_edges,
         "merge-duplicate-entities": cmd_merge_duplicate_entities,
         "build-atlas": cmd_build_atlas,
+        "ingest-intake": cmd_ingest_intake,
         "fund-sweep-status": cmd_fund_sweep_status,
         "quality-report": cmd_quality_report,
         "reclassify-themes": cmd_reclassify,

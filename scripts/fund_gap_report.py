@@ -34,7 +34,8 @@ DB_PATH = ROOT / "db" / "bio_latam.db"
 OUT     = ROOT / "quality" / "fund_gap_candidates.csv"
 
 
-def main(min_quality: float = 6.0, only_investor: str | None = None) -> None:
+def main(min_quality: float = 7.0, only_investor: str | None = None,
+         require_tema: bool = True, top_per_investor: int = 40) -> None:
     conn = sqlite3.connect(DB_PATH)
     conn.row_factory = sqlite3.Row
 
@@ -125,39 +126,55 @@ def main(min_quality: float = 6.0, only_investor: str | None = None) -> None:
         cntries = inv_countries[iid]
         url     = inv_url.get(iid, "")
 
+        inv_candidates = []
         for s in startups:
             sid = s["startup_id"]
             if sid in covered:
                 continue  # ya mapeado
 
-            # Calcular razón de match
-            reasons = []
             s_theme   = s.get("bio_theme") or ""
             s_country = s.get("country") or ""
 
-            if s_theme and s_theme in themes:
-                reasons.append(f"tema_match:{s_theme}")
-            if s_country and s_country in cntries:
-                reasons.append(f"pais_match:{s_country}")
+            tema_ok  = bool(s_theme and s_theme in themes)
+            pais_ok  = bool(s_country and s_country in cntries)
 
-            # Solo incluir si hay al menos una razón de match
-            if not reasons:
+            # Require at least tema match; boost score if also pais matches
+            if require_tema and not tema_ok:
+                continue
+            if not tema_ok and not pais_ok:
                 continue
 
-            rows_out.append({
-                "investor_id":         iid,
-                "investor_name":       iv["investor_name"],
-                "investor_type":       iv["investor_type"],
-                "portfolio_url":       url,
+            reasons = []
+            score = 0
+            if tema_ok:
+                reasons.append(f"tema:{s_theme}")
+                score += 2
+            if pais_ok:
+                reasons.append(f"pais:{s_country}")
+                score += 1
+
+            inv_candidates.append({
+                "investor_id":            iid,
+                "investor_name":          iv["investor_name"],
+                "investor_type":          iv["investor_type"],
+                "portfolio_url":          url,
                 "candidate_startup_id":   sid,
                 "candidate_startup_name": s["name"],
-                "bio_theme":           s_theme,
-                "country":             s_country,
-                "data_quality_score":       s.get("data_quality_score") or "",
-                "match_reason":        " | ".join(reasons),
-                "action":              "",  # curador llena: confirm / discard / review
-                "notes":               "",  # curador llena
+                "bio_theme":              s_theme,
+                "country":                s_country,
+                "data_quality_score":     s.get("data_quality_score") or "",
+                "match_score":            score,
+                "match_reason":           " | ".join(reasons),
+                "action":                 "",
+                "notes":                  "",
             })
+
+        # Sort by match_score desc then quality, keep top N per investor
+        inv_candidates.sort(key=lambda r: (
+            -r["match_score"],
+            -(float(r["data_quality_score"]) if r["data_quality_score"] else 0)
+        ))
+        rows_out.extend(inv_candidates[:top_per_investor])
 
     conn.close()
 
@@ -174,7 +191,7 @@ def main(min_quality: float = 6.0, only_investor: str | None = None) -> None:
         "investor_id", "investor_name", "investor_type", "portfolio_url",
         "candidate_startup_id", "candidate_startup_name",
         "bio_theme", "country", "data_quality_score",
-        "match_reason", "action", "notes",
+        "match_score", "match_reason", "action", "notes",
     ]
     with OUT.open("w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=COLS)
@@ -200,9 +217,14 @@ def main(min_quality: float = 6.0, only_investor: str | None = None) -> None:
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--min-quality", type=float, default=6.0,
-                        help="Score mínimo de calidad de startup (default 6.0)")
+    parser.add_argument("--min-quality", type=float, default=7.0,
+                        help="Score mínimo de calidad de startup (default 7.0)")
     parser.add_argument("--investor", type=str, default=None,
                         help="Filtrar por investor_id (ej: sp_ventures)")
+    parser.add_argument("--no-tema-filter", action="store_true",
+                        help="Incluir candidatos sin tema match (solo pais match)")
+    parser.add_argument("--top", type=int, default=40,
+                        help="Máx candidatos por inversor (default 40)")
     args = parser.parse_args()
-    main(min_quality=args.min_quality, only_investor=args.investor)
+    main(min_quality=args.min_quality, only_investor=args.investor,
+         require_tema=not args.no_tema_filter, top_per_investor=args.top)

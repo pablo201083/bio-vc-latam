@@ -200,29 +200,36 @@ def run(db_path: pathlib.Path = DB_PATH) -> None:
         port  = len(inv_portfolio[iid])
         print(f"  {iname:<30} {port:>9}  {n_gaps:>9}")
 
-    # ── 10 inversores INACTIVOS con mayor potencial ──────────────────────────
-    inactive = conn.execute("""
+    # ── Inversores INACTIVOS — Carril A ──────────────────────────────────────
+    TYPE_PRIORITY = {
+        "multilateral": 0, "development_finance": 1, "vc": 2,
+        "impact_fund": 3, "accelerator": 4, "corporate_vc": 5,
+        "association": 6, "investor": 7,
+    }
+    inactive_all = conn.execute("""
         SELECT i.investor_id, e.canonical_name AS name, i.investor_type,
-               e.website, i.geography_focus, i.vertical_focus
+               e.website, e.country_code, i.geography_focus, i.vertical_focus
         FROM investors i
         JOIN entities e ON e.entity_id = i.investor_id
         WHERE i.investor_id NOT IN (SELECT DISTINCT investor_id FROM investment_edges)
-          AND e.website IS NOT NULL
-          AND i.investor_type IN ('vc','impact_fund','accelerator','corporate_vc','multilateral','development_finance')
-        ORDER BY i.investor_type
-        LIMIT 15
+        ORDER BY e.canonical_name
     """).fetchall()
+    inactive_all = sorted(inactive_all,
+        key=lambda r: TYPE_PRIORITY.get(r["investor_type"] or "", 99))
 
     print(f"\n{'─'*62}")
-    print("  INVERSORES INACTIVOS CON WEBSITE (Carril A — sweepear)")
+    print(f"  CARRIL A — {len(inactive_all)} INVERSORES INACTIVOS (sin ninguna edge)")
+    print(f"  Prioridad: multilateral/DFI > VC > impact fund > aceleradora")
     print(sep)
-    print(f"  {'Inversor':<26} {'Tipo':<20} {'Website'}")
+    print(f"  {'Inversor':<28} {'Tipo':<14} {'País'} {'Website'}")
     print(sep)
-    for r in inactive:
-        name = (r["name"] or r["investor_id"])[:25]
-        tipo = (r["investor_type"] or "?")[:19]
-        site = (r["website"] or "—")[:40]
-        print(f"  {name:<26} {tipo:<20} {site}")
+    for r in inactive_all:
+        name = (r["name"] or r["investor_id"])[:27]
+        tipo = (r["investor_type"] or "?")[:13]
+        pais = (r["country_code"] or "—")[:3]
+        site = (r["website"] or "—")[:38]
+        marker = " *" if r["website"] else "  "
+        print(f" {marker}{name:<28} {tipo:<14} {pais:<4} {site}")
 
     # ── Edges sin source (Carril C) ──────────────────────────────────────────
     no_src_top = conn.execute("""
@@ -243,12 +250,19 @@ def run(db_path: pathlib.Path = DB_PATH) -> None:
         print(f"  {(r['investor_name'] or r['investor_id']):<30} {r['n']:>4} edges sin source")
 
     print(f"\n{'─'*62}")
-    print("  COMANDOS UTILES")
+    print("  WORKFLOW DE CURACIÓN")
     print(sep)
-    print("  python scripts/fund_gap_report.py              # genera quality/fund_gap_candidates.csv")
-    print("  python scripts/export_sweep_workfiles.py       # exporta CSVs de trabajo para curaduría")
-    print("  python pipeline.py rebuild --phase canonical   # re-canonizar después de editar manual_*.csv")
-    print("  python pipeline.py build-atlas                 # regenerar dashboard de capital")
+    print("  CARRIL A — Sweep de inversores inactivos:")
+    print("    1. Visitar portfolio page del inversor (ver lista arriba)")
+    print("    2. Llenar staging/capital_intake.csv:")
+    print("       investor_id | startup_name | round_stage | source_url")
+    print("    3. python pipeline.py ingest-intake  (canoniza + rebuild + atlas)")
+    print()
+    print("  CARRIL B — Cross-check inversores activos:")
+    print("    1. python scripts/fund_gap_report.py  # genera quality/fund_gap_candidates.csv")
+    print("    2. Abrir CSV, columna 'action' = confirm para las que son reales")
+    print("    3. Copiar las confirmadas a staging/capital_intake.csv")
+    print("    4. python pipeline.py ingest-intake")
     print(f"{'─'*62}\n")
 
     conn.close()
