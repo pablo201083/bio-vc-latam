@@ -1,30 +1,30 @@
 startup_id,canonical_name,bio_theme,mscale,mscale_name,mscale_x,mparadigm,confidence,data_source,mscale_scores,top_keywords,one_liner
 tech,@Tech,Farm Intelligence,5,Campo/Sistema,7.2,3.0,high,primary,"{1: 3, 2: 2, 3: 0, 4: 0, 5: 8, 6: 0}",agtech,Animal protein optimization and traceability with AI and IoT.
-ages,AGES,Biomaterials & Circular Economy,6,Paisaje/Planeta,12.0,1.67,high,primary,"{1: 3, 2: 0, 3: 2, 4: 2, 5: 0, 6: 10}",biodiversity; amazon,Amazonian bioactive compounds platform.
+ages,AGES,Biomaterials & Circular Economy,6,Paisaje/Planeta,12.0,1.67,medium,primary,"{1: 9, 2: 0, 3: 2, 4: 2, 5: 0, 6: 10}",biodiversity; amazon,Amazonian bioactive compounds platform.
 agrotools,AGROTOOLS,Nature & Ecosystem Tech,6,Paisaje/Planeta,12.0,3.0,high,primary,"{1: 0, 2: 2, 3: 0, 4: 0, 5: 6, 6: 16}",planetary; territorial; geospatial; environmental monitoring,"Agricultural risk, supply-chain and ESG intelligence platform."
-apexzymes,APEXzymes,Biomanufacturing & Fermentation Economy,1,Molecular,-12.0,1.67,medium,primary,"{1: 5, 2: 4, 3: 0, 4: 0, 5: 3, 6: 0}",enzyme ,Industrial enzyme company using circular feedstocks.
+apexzymes,APEXzymes,Biomanufacturing & Fermentation Economy,2,Celular,-7.2,1.67,medium,primary,"{1: 5, 2: 7, 3: 0, 4: 0, 5: 3, 6: 0}",industrial enzyme,Industrial enzyme company using circular feedstocks.
 avatar_medtech,AVaTAR MedTech,Diagnostics & Health Access,3,Organismo,-2.4,1.0,high,primary,"{1: 0, 2: 2, 3: 12, 4: 2, 5: 0, 6: 0}",patient; pediatric,Autologous tissue heart-valve reconstruction devices.
-activaq,ActivaQ,Bioinputs & Crop Resilience,3,Organismo,-2.4,2.0,low,primary,"{1: 0, 2: 0, 3: 6, 4: 0, 5: 6, 6: 0}",veterinary; animal health,
-advanced_biocontrollers,Advanced Biocontrollers,Bioinputs & Crop Resilience,5,Campo/Sistema,7.2,1.0,high,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 3, 6: 0}",pest management,
+activaq,ActivaQ,Bioinputs & Crop Resilience,5,Campo/Sistema,7.2,2.0,medium,primary,"{1: 0, 2: 0, 3: 6, 4: 0, 5: 12, 6: 0}",farm; farming; aquaculture; fish farm,
+advanced_biocontrollers,Advanced Biocontrollers,Bioinputs & Crop Resilience,4,Lote/Producto,2.4,1.0,low,primary,"{1: 0, 2: 0, 3: 0, 4: 3, 5: 3, 6: 0}",biopesticide,
 aegro,Aegro,Nature & Ecosystem Tech,5,Campo/Sistema,7.2,3.0,high,primary,"{1: 0, 2: 2, 3: 0, 4: 0, 5: 12, 6: 2}",farm; field; farm operation,Farm operations and financial management platform.
-ages_bioactive,Ages Bioactive,Therapeutics,4,Lote/Producto,2.4,2.0,high,primary,"{1: 0, 2: 0, 3: 0, 4: 3, 5: 0, 6: 0}",nutraceutical,
+ages_bioactive,Ages Bioactive,Therapeutics,1,Molecular,-12.0,2.0,medium,primary,"{1: 6, 2: 0, 3: 0, 4: 3, 5: 0, 6: 0}",active compound; bioactive compound,
 agree,Agree,Nature & Ecosystem Tech,5,Campo/Sistema,7.2,3.0,high,primary,"{1: 0, 2: 2, 3: 0, 4: 0, 5: 6, 6: 2}",grain,Agri-food chain traceability and market infrastructure.
 agricapital,Agricapital,Nature & Ecosystem Tech,5,Campo/Sistema,7.2,3.0,high,primary,"{1: 0, 2: 2, 3: 0, 4: 0, 5: 18, 6: 2}",farm; farmer; harvest; smallholder; agricultural finance,Smallholder agricultural financing platform.
 agrion-agrisolutions-br,Agrion Agrisolutions,Bioinputs & Crop Resilience,5,Campo/Sistema,7.2,1.0,high,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 6, 6: 0}",farm; farmer,
 agrired,Agrired,Bioinputs & Crop Resilience,5,Campo/Sistema,7.2,3.0,medium,primary,"{1: 0, 2: 2, 3: 0, 4: 0, 5: 3, 6: 0}",,B2B ag-input market infrastructure.
-agrivalle,Agrivalle,Bioinputs & Crop Resilience,2,Celular,-7.2,1.0,medium,primary,"{1: 2, 2: 9, 3: 2, 4: 0, 5: 5, 6: 0}",bioreactor,"Biological fertilizers, inoculants and biostimulants company."
-agrosustain-mx,AgroSustain,Bioinputs & Crop Resilience,5,Campo/Sistema,7.2,1.57,high,primary,"{1: 0, 2: 2, 3: 0, 4: 0, 5: 13, 6: 0}",farm; farmer; harvest,Develops eco-friendly biopesticides targeting fungal crop infections to reduce chemical pesticide dependency for Mexican
+agrivalle,Agrivalle,Bioinputs & Crop Resilience,2,Celular,-7.2,1.0,medium,primary,"{1: 2, 2: 9, 3: 2, 4: 3, 5: 5, 6: 0}",bioreactor,"Biological fertilizers, inoculants and biostimulants company."
+agrosustain-mx,AgroSustain,Bioinputs & Crop Resilience,5,Campo/Sistema,7.2,1.57,high,primary,"{1: 0, 2: 2, 3: 0, 4: 3, 5: 13, 6: 0}",farm; farmer; harvest,Develops eco-friendly biopesticides targeting fungal crop infections to reduce chemical pesticide dependency for Mexican
 agroforte,Agroforte,Nature & Ecosystem Tech,3,Organismo,-2.4,3.0,medium,primary,"{1: 3, 2: 2, 3: 5, 4: 0, 5: 3, 6: 2}",animal health,Animal production financial infrastructure.
 agrofy,Agrofy,Nature & Ecosystem Tech,5,Campo/Sistema,7.2,2.33,medium,primary,"{1: 0, 2: 2, 3: 0, 4: 0, 5: 8, 6: 7}",agribusiness,Digital agribusiness marketplace and agfintech ecosystem.
 agrojusto,Agrojusto,Nature & Ecosystem Tech,5,Campo/Sistema,7.2,3.0,medium,primary,"{1: 0, 2: 2, 3: 0, 4: 3, 5: 6, 6: 3}",smallholder,Traceability and market-access platform for smallholder food systems.
 agrolend,Agrolend,Nature & Ecosystem Tech,5,Campo/Sistema,7.2,3.0,high,primary,"{1: 0, 2: 2, 3: 0, 4: 0, 5: 6, 6: 2}",agribusiness,"Agricultural credit, receivables and risk-monitoring platform."
-agronow-br,Agronow,Farm Intelligence,5,Campo/Sistema,7.2,2.0,high,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 15, 6: 3}",farm; agronomic; harvest; crop monitoring; rural credit,
-agrorganica,Agrorganica,Bioinputs & Crop Resilience,3,Organismo,-2.4,2.0,low,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",,
+agronow-br,Agronow,Farm Intelligence,5,Campo/Sistema,7.2,2.0,high,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 15, 6: 6}",farm; agronomic; harvest; crop monitoring; rural credit,
+agrorganica,Agrorganica,Bioinputs & Crop Resilience,4,Lote/Producto,2.4,2.0,high,primary,"{1: 0, 2: 0, 3: 0, 4: 3, 5: 0, 6: 0}",crop protection product,
 agrosmart,Agrosmart,Nature & Ecosystem Tech,5,Campo/Sistema,7.2,3.0,medium,primary,"{1: 0, 2: 2, 3: 0, 4: 6, 5: 12, 6: 2}",farm; irrigation; agronomic,Climate-smart agronomic and irrigation intelligence platform.
 agrotoken,Agrotoken,Nature & Ecosystem Tech,5,Campo/Sistema,7.2,3.0,high,primary,"{1: 0, 2: 2, 3: 0, 4: 0, 5: 9, 6: 2}",grain; agribusiness,Real-world asset and traceability infrastructure for agribusiness.
 agrourbana,Agrourbana,Nature & Ecosystem Tech,5,Campo/Sistema,7.2,3.0,medium,primary,"{1: 0, 2: 2, 3: 2, 4: 8, 5: 9, 6: 4}",farm; farming,Controlled-environment vertical farming for fresh produce.
-aimirim-br,Aimirim,Farm Intelligence,2,Celular,-7.2,3.0,high,primary,"{1: 0, 2: 6, 3: 0, 4: 0, 5: 2, 6: 0}",fermentation; ferment,Digital twin and IoT platform that optimizes industrial fermentation and energy processes in sugarcane biorefineries.
-aintech,Aintech,Biomaterials & Circular Economy,3,Organismo,-2.4,2.0,low,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",,
+aimirim-br,Aimirim,Farm Intelligence,2,Celular,-7.2,3.0,high,primary,"{1: 0, 2: 9, 3: 0, 4: 0, 5: 2, 6: 0}",fermentation; ferment; industrial ferment,Digital twin and IoT platform that optimizes industrial fermentation and energy processes in sugarcane biorefineries.
+aintech,Aintech,Biomaterials & Circular Economy,1,Molecular,-12.0,2.0,high,primary,"{1: 6, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",nanotechnolog; nanotech,
 algalife,Algalife,Biomanufacturing & Fermentation Economy,2,Celular,-7.2,2.0,high,primary,"{1: 0, 2: 10, 3: 0, 4: 0, 5: 0, 6: 0}",bioprocess; microalgae,Microalgae process optimization platform.
 algenis-cl,Algenis,Therapeutics,1,Molecular,-12.0,2.0,low,primary,"{1: 3, 2: 3, 3: 0, 4: 0, 5: 0, 6: 0}",compound ,
 alkemio,Alkemio,Biomaterials & Circular Economy,6,Paisaje/Planeta,12.0,3.0,high,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 4}",,Modular sustainable rare earth refining platform.
@@ -32,23 +32,23 @@ alytix,Alytix,Diagnostics & Health Access,3,Organismo,-2.4,2.0,medium,primary,"{
 amnova-biotech-cl,Amnova Biotech,Therapeutics,1,Molecular,-12.0,1.0,high,primary,"{1: 3, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",cell-free,
 amplify-dynamics,Amplify Dynamics,Therapeutics,1,Molecular,-12.0,1.44,medium,primary,"{1: 10, 2: 7, 3: 4, 4: 0, 5: 0, 6: 0}",gene ; nanoparticle,Contactless ultrasound purification for lipid nanoparticles.
 andes-biotechnologies-cl,Andes Biotechnologies,Therapeutics,1,Molecular,-12.0,2.0,high,primary,"{1: 9, 2: 0, 3: 3, 4: 0, 5: 0, 6: 0}", dna ; nucleotid; oligonucleotide,
-antarka,Antarka,Biomaterials & Circular Economy,1,Molecular,-12.0,1.0,medium,primary,"{1: 8, 2: 4, 3: 2, 4: 2, 5: 0, 6: 2}", dna ; enzyme ,Extremophile enzyme skin DNA repair ingredients.
+antarka,Antarka,Biomaterials & Circular Economy,1,Molecular,-12.0,1.0,high,primary,"{1: 11, 2: 4, 3: 2, 4: 5, 5: 0, 6: 2}", dna ; enzyme ; active ingredient,Extremophile enzyme skin DNA repair ingredients.
 apasomics,Apasomics,Therapeutics,5,Campo/Sistema,7.2,1.0,medium,primary,"{1: 2, 2: 0, 3: 4, 4: 2, 5: 5, 6: 0}",farm,Bone-targeted drug delivery startup.
 aplife_biotech,Aplife Biotech,Diagnostics & Health Access,1,Molecular,-12.0,2.5,medium,primary,"{1: 8, 2: 0, 3: 4, 4: 0, 5: 2, 6: 0}",drug discovery; aptamer,High-throughput discovery and aptamer platform for life sciences.
 aptah,Aptah,Therapeutics,1,Molecular,-12.0,2.0,high,primary,"{1: 3, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}", rna ,
 aptah-bio-br,Aptah Bio,Therapeutics,1,Molecular,-12.0,2.0,high,primary,"{1: 6, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}", rna ; mrna,
-aquit,Aquit,Bioinputs & Crop Resilience,3,Organismo,-2.4,3.0,medium,primary,"{1: 2, 2: 0, 3: 5, 4: 0, 5: 4, 6: 0}",animal health,Fish immunity biotech for sustainable aquaculture.
+aquit,Aquit,Bioinputs & Crop Resilience,5,Campo/Sistema,7.2,3.0,medium,primary,"{1: 2, 2: 0, 3: 5, 4: 0, 5: 7, 6: 0}",aquaculture,Fish immunity biotech for sustainable aquaculture.
 arado,Arado,Nature & Ecosystem Tech,6,Paisaje/Planeta,12.0,3.0,medium,primary,"{1: 0, 2: 2, 3: 0, 4: 0, 5: 3, 6: 4}",,Fresh food marketplace connecting producers and buyers.
-arakion,Arakion,Bioinputs & Crop Resilience,5,Campo/Sistema,7.2,2.0,medium,primary,"{1: 2, 2: 0, 3: 0, 4: 0, 5: 4, 6: 0}",,Arachnid-venom bioinsecticide platform.
-aravan_labs,Aravan Labs,Biomanufacturing & Fermentation Economy,3,Organismo,-2.4,1.0,low,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",,
+arakion,Arakion,Bioinputs & Crop Resilience,5,Campo/Sistema,7.2,2.0,medium,primary,"{1: 2, 2: 0, 3: 0, 4: 3, 5: 4, 6: 0}",,Arachnid-venom bioinsecticide platform.
+aravan_labs,Aravan Labs,Biomanufacturing & Fermentation Economy,2,Celular,-7.2,1.0,low,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",,
 arcomed,Arcomed,Diagnostics & Health Access,3,Organismo,-2.4,2.0,high,primary,"{1: 0, 2: 0, 3: 7, 4: 0, 5: 0, 6: 0}",hospital,Advanced infusion systems and hospital medtech.
 ardan,Ardan,Therapeutics,3,Organismo,-2.4,2.0,high,primary,"{1: 3, 2: 0, 3: 10, 4: 0, 5: 0, 6: 0}",therapeutic ; oncology,Targeted cancer immunotherapy platform.
-argentag,ArgenTAG,Diagnostics & Health Access,1,Molecular,-12.0,2.33,high,primary,"{1: 16, 2: 2, 3: 6, 4: 2, 5: 0, 6: 3}", rna ; genomic; sequencing kit; transcriptom,Single-cell long-read sequencing kit and workflow.
+argentag,ArgenTAG,Diagnostics & Health Access,1,Molecular,-12.0,2.33,high,primary,"{1: 19, 2: 2, 3: 6, 4: 2, 5: 0, 6: 3}", rna ; genomic; sequencing kit; transcriptom; genomics,Single-cell long-read sequencing kit and workflow.
 arqlite,Arqlite,Biomaterials & Circular Economy,6,Paisaje/Planeta,12.0,1.0,medium,primary,"{1: 2, 2: 4, 3: 0, 4: 2, 5: 0, 6: 5}",planetary,Circular materials company converting hard-to-recycle plastic into construction aggregates.
-asclepii,Asclepii,Therapeutics,3,Organismo,-2.4,1.44,medium,primary,"{1: 4, 2: 0, 3: 7, 4: 2, 5: 0, 6: 2}",wound care,Regenerative wound-care matrix and nanosilver hydrogel platform.
-atacama-biomaterials-cl,Atacama Biomaterials,Biomaterials & Circular Economy,3,Organismo,-2.4,2.0,low,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",,
+asclepii,Asclepii,Therapeutics,3,Organismo,-2.4,1.44,medium,primary,"{1: 4, 2: 0, 3: 7, 4: 5, 5: 0, 6: 2}",wound care,Regenerative wound-care matrix and nanosilver hydrogel platform.
+atacama-biomaterials-cl,Atacama Biomaterials,Biomaterials & Circular Economy,4,Lote/Producto,2.4,2.0,high,primary,"{1: 0, 2: 0, 3: 0, 4: 3, 5: 0, 6: 0}",packaging,
 atarraya-mx,Atarraya,Food Systems & Alt Proteins,5,Campo/Sistema,7.2,2.0,medium,primary,"{1: 3, 2: 0, 3: 0, 4: 0, 5: 6, 6: 0}",farm; farming,
-auravant,Auravant,Farm Intelligence,5,Campo/Sistema,7.2,3.0,high,primary,"{1: 0, 2: 2, 3: 0, 4: 0, 5: 12, 6: 5}",field; precision agriculture; agronomic,Precision agriculture and agronomic decision platform.
+auravant,Auravant,Farm Intelligence,5,Campo/Sistema,7.2,3.0,medium,primary,"{1: 0, 2: 2, 3: 0, 4: 0, 5: 12, 6: 8}",field; precision agriculture; agronomic,Precision agriculture and agronomic decision platform.
 autem-medical,Autem Medical,Diagnostics & Health Access,3,Organismo,-2.4,2.0,high,primary,"{1: 2, 2: 2, 3: 15, 4: 0, 5: 0, 6: 0}",patient; therapeutic ; oncology,Non-invasive electromagnetic oncology treatment platform.
 autem-therapeutics-br,Autem Therapeutics,Therapeutics,3,Organismo,-2.4,2.0,low,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",,
 ayuvant,Ayuvant,Therapeutics,1,Molecular,-12.0,1.67,medium,primary,"{1: 8, 2: 0, 3: 7, 4: 0, 5: 0, 6: 0}", rna ; nanoparticle,Biotech terapeutica basada en RNA nanoparticle immunotherapy.
@@ -61,53 +61,53 @@ bemagro,BemAgro,Nature & Ecosystem Tech,5,Campo/Sistema,7.2,3.0,high,primary,"{1
 bentenbiotech,BentenBiotech,Therapeutics,1,Molecular,-12.0,2.0,high,primary,"{1: 3, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",antibod,
 bialtec,Bialtec,Bioinputs & Crop Resilience,3,Organismo,-2.4,2.0,medium,primary,"{1: 0, 2: 3, 3: 6, 4: 0, 5: 0, 6: 3}",livestock health; animal nutrition,
 bio_bureau_biotechnology,Bio Bureau Biotechnology,Biomanufacturing & Fermentation Economy,2,Celular,-7.2,2.0,high,primary,"{1: 0, 2: 3, 3: 0, 4: 0, 5: 0, 6: 0}",industrial biotechnology,
-bio-insumos-nativa-cl,Bio Insumos Nativa,Bioinputs & Crop Resilience,5,Campo/Sistema,7.2,1.0,medium,primary,"{1: 0, 2: 3, 3: 0, 4: 0, 5: 6, 6: 0}",farm; farmer,
+bio-insumos-nativa-cl,Bio Insumos Nativa,Bioinputs & Crop Resilience,5,Campo/Sistema,7.2,1.0,medium,primary,"{1: 0, 2: 3, 3: 0, 4: 3, 5: 6, 6: 0}",farm; farmer,
 bioblends,BioBlends,Food Systems & Alt Proteins,4,Lote/Producto,2.4,2.0,high,primary,"{1: 0, 2: 0, 3: 0, 4: 5, 5: 0, 6: 0}",novel ingredient,Food preservation biotech for clean-label shelf-life extension.
 biobreyer,BioBreyer,Biomanufacturing & Fermentation Economy,2,Celular,-7.2,2.0,high,primary,"{1: 0, 2: 9, 3: 0, 4: 0, 5: 3, 6: 0}",fermentation; bioprocess; ferment,
 biocle,BioCl,Therapeutics,3,Organismo,-2.4,1.67,medium,primary,"{1: 0, 2: 2, 3: 4, 4: 0, 5: 0, 6: 0}",,Bacterial vesicles for digestive health delivery.
-bioelements-cl,BioElements,Biomaterials & Circular Economy,3,Organismo,-2.4,2.0,low,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",,
+bioelements-cl,BioElements,Biomaterials & Circular Economy,1,Molecular,-12.0,2.0,medium,primary,"{1: 6, 2: 0, 3: 0, 4: 3, 5: 0, 6: 0}",active compound; bioactive compound,
 biofab,BioFab,Therapeutics,3,Organismo,-2.4,2.0,low,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",,
 biometallum,BioMetallum,Biomaterials & Circular Economy,6,Paisaje/Planeta,12.0,1.67,medium,primary,"{1: 4, 2: 7, 3: 0, 4: 0, 5: 0, 6: 10}",planetary; biome,Biomining and direct lithium extraction company.
-bioplaster_research,BioPlaster Research,Biomaterials & Circular Economy,4,Lote/Producto,2.4,1.0,high,primary,"{1: 0, 2: 0, 3: 0, 4: 2, 5: 0, 6: 0}",,Sargassum-based biodegradable packaging materials.
-bioplaster_research_inc,BioPlaster Research Inc,Biomaterials & Circular Economy,4,Lote/Producto,2.4,1.0,high,primary,"{1: 0, 2: 0, 3: 0, 4: 2, 5: 0, 6: 0}",,Seaweed biomaterials and compostable packaging company.
+bioplaster_research,BioPlaster Research,Biomaterials & Circular Economy,4,Lote/Producto,2.4,1.0,high,primary,"{1: 0, 2: 0, 3: 0, 4: 5, 5: 0, 6: 0}",packaging,Sargassum-based biodegradable packaging materials.
+bioplaster_research_inc,BioPlaster Research Inc,Biomaterials & Circular Economy,4,Lote/Producto,2.4,1.0,high,primary,"{1: 0, 2: 0, 3: 0, 4: 5, 5: 0, 6: 0}",packaging,Seaweed biomaterials and compostable packaging company.
 biosynaptica,BioSynaptica,Therapeutics,3,Organismo,-2.4,2.0,high,primary,"{1: 0, 2: 0, 3: 7, 4: 0, 5: 0, 6: 2}",therapeutic ,Biopharmaceutical platform for neurodegenerative diseases.
-biocentis-br,Biocentis,Bioinputs & Crop Resilience,5,Campo/Sistema,7.2,2.0,high,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 3, 6: 0}",field,
+biocentis-br,Biocentis,Bioinputs & Crop Resilience,1,Molecular,-12.0,2.0,low,primary,"{1: 3, 2: 0, 3: 0, 4: 0, 5: 3, 6: 0}",genome ,
 bioceres_sa,Bioceres S.A.,Bioinputs & Crop Resilience,5,Campo/Sistema,7.2,1.0,high,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 6, 6: 0}",farm; farmer,
-biodiversity_intelligence,Biodiversity Intelligence,Nature & Ecosystem Tech,6,Paisaje/Planeta,12.0,3.0,high,primary,"{1: 3, 2: 2, 3: 0, 4: 0, 5: 0, 6: 18}",ecosystem; biodiversity; planetary; conservation,Nature measurement and biodiversity reporting platform.
-bioeutectics,Bioeutectics,Biomaterials & Circular Economy,4,Lote/Producto,2.4,1.5,medium,primary,"{1: 2, 2: 2, 3: 2, 4: 4, 5: 0, 6: 0}",,Natural deep eutectic solvent systems for petrochemical replacement.
+biodiversity_intelligence,Biodiversity Intelligence,Nature & Ecosystem Tech,6,Paisaje/Planeta,12.0,3.0,high,primary,"{1: 3, 2: 2, 3: 0, 4: 0, 5: 0, 6: 21}",ecosystem; biodiversity; planetary; conservation; satellite ,Nature measurement and biodiversity reporting platform.
+bioeutectics,Bioeutectics,Biomaterials & Circular Economy,4,Lote/Producto,2.4,1.5,high,primary,"{1: 2, 2: 2, 3: 2, 4: 7, 5: 0, 6: 0}",cosmetic,Natural deep eutectic solvent systems for petrochemical replacement.
 biofabrica-siglo-xxi-mx,Biofabrica Siglo XXI,Bioinputs & Crop Resilience,2,Celular,-7.2,1.57,medium,primary,"{1: 0, 2: 5, 3: 0, 4: 0, 5: 4, 6: 0}",microorganism,Develops microbial biofertilizers and bioinputs using beneficial microorganisms as sustainable alternatives to chemical 
 bioheuris,Bioheuris,Bioinputs & Crop Resilience,1,Molecular,-12.0,1.0,low,primary,"{1: 4, 2: 0, 3: 0, 4: 0, 5: 4, 6: 0}",,Crop trait biotech for resilient agriculture.
-biolinker,Biolinker Synthetic Biology,Biomanufacturing & Fermentation Economy,1,Molecular,-12.0,1.57,high,primary,"{1: 19, 2: 4, 3: 2, 4: 2, 5: 3, 6: 0}",protein ; mrna; gene ; recombinant protein; cell-free,Cell-free protein expression and synthetic-biology platform.
-biomakers,Biomakers,Diagnostics & Health Access,3,Organismo,-2.4,2.0,high,primary,"{1: 3, 2: 0, 3: 9, 4: 0, 5: 0, 6: 0}",therapeutic ,Genomic precision-treatment platform.
+biolinker,Biolinker Synthetic Biology,Biomanufacturing & Fermentation Economy,1,Molecular,-12.0,1.57,high,primary,"{1: 19, 2: 4, 3: 2, 4: 5, 5: 3, 6: 0}",protein ; mrna; gene ; recombinant protein; cell-free,Cell-free protein expression and synthetic-biology platform.
+biomakers,Biomakers,Diagnostics & Health Access,3,Organismo,-2.4,2.0,high,primary,"{1: 3, 2: 0, 3: 12, 4: 0, 5: 0, 6: 0}",therapeutic ; personalized treatment,Genomic precision-treatment platform.
 biomas,Biomas,Nature & Ecosystem Tech,6,Paisaje/Planeta,12.0,2.0,high,primary,"{1: 0, 2: 2, 3: 0, 4: 0, 5: 0, 6: 12}",ecosystem; biodiversity,Large-scale ecological restoration business.
 biomimetic_solutions,Biomimetic Solutions,Therapeutics,3,Organismo,-2.4,2.0,high,primary,"{1: 0, 2: 0, 3: 3, 4: 0, 5: 0, 6: 0}",wound care,
-bioplastix,Bioplastix,Biomaterials & Circular Economy,2,Celular,-7.2,1.0,high,primary,"{1: 4, 2: 13, 3: 0, 4: 2, 5: 3, 6: 2}",fermentation; precision fermentation; ferment,Bioplastics production technology company.
-biorgani,Biorgani,Biomaterials & Circular Economy,4,Lote/Producto,2.4,2.0,high,primary,"{1: 0, 2: 0, 3: 0, 4: 3, 5: 0, 6: 0}",plant-based,
+bioplastix,Bioplastix,Biomaterials & Circular Economy,2,Celular,-7.2,1.0,high,primary,"{1: 4, 2: 13, 3: 0, 4: 5, 5: 3, 6: 2}",fermentation; precision fermentation; ferment,Bioplastics production technology company.
+biorgani,Biorgani,Biomaterials & Circular Economy,4,Lote/Producto,2.4,2.0,high,primary,"{1: 0, 2: 0, 3: 0, 4: 9, 5: 0, 6: 0}",plant-based; biopolymer; packaging,
 bioseek,Bioseek,Therapeutics,3,Organismo,-2.4,2.2,high,primary,"{1: 0, 2: 0, 3: 2, 4: 0, 5: 0, 6: 0}",,Semantic search engine for life sciences.
 biosens,Biosens,Diagnostics & Health Access,3,Organismo,-2.4,2.0,low,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",,
 biosidus-ar,Biosidus,Therapeutics,1,Molecular,-12.0,1.0,high,primary,"{1: 9, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",antibod; monoclonal; biosimilar,
-biosolvit,Biosolvit,Nature & Ecosystem Tech,3,Organismo,-2.4,2.0,low,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",,
-biotalife,Biotalife,Diagnostics & Health Access,3,Organismo,-2.4,2.0,medium,primary,"{1: 2, 2: 4, 3: 9, 4: 2, 5: 5, 6: 8}",medical device,Microbiome medical devices for vaginal health.
+biosolvit,Biosolvit,Nature & Ecosystem Tech,6,Paisaje/Planeta,12.0,2.0,low,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",,
+biotalife,Biotalife,Diagnostics & Health Access,3,Organismo,-2.4,2.0,medium,primary,"{1: 2, 2: 4, 3: 9, 4: 5, 5: 5, 6: 8}",medical device,Microbiome medical devices for vaginal health.
 biotecnofe,Biotecnofe,Therapeutics,1,Molecular,-12.0,2.0,low,primary,"{1: 3, 2: 0, 3: 3, 4: 0, 5: 0, 6: 0}",cell-free,
 biotic,Biotic,Nature & Ecosystem Tech,6,Paisaje/Planeta,12.0,2.0,high,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 3}",environmental monitoring,
 biotimize,Biotimize,Biomanufacturing & Fermentation Economy,2,Celular,-7.2,2.0,high,primary,"{1: 0, 2: 6, 3: 0, 4: 0, 5: 0, 6: 0}",bioprocess; yeast,
 biotrop-br,Biotrop,Bioinputs & Crop Resilience,5,Campo/Sistema,7.2,1.0,high,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 9, 6: 0}",farm; farmer; soybean,
-bitgenia,Bitgenia,Therapeutics,1,Molecular,-12.0,2.43,high,primary,"{1: 10, 2: 0, 3: 4, 4: 0, 5: 0, 6: 0}",gene ; genomic,Genomics and bioinformatics platform.
+bitgenia,Bitgenia,Therapeutics,1,Molecular,-12.0,2.43,high,primary,"{1: 16, 2: 0, 3: 4, 4: 0, 5: 0, 6: 0}",gene ; genomic; genome ; genomics,Genomics and bioinformatics platform.
 bitmec,Bitmec,Diagnostics & Health Access,3,Organismo,-2.4,2.0,high,primary,"{1: 0, 2: 0, 3: 3, 4: 0, 5: 0, 6: 0}",healthcare,
 bleps_vision,Bleps Vision,Diagnostics & Health Access,3,Organismo,-2.4,3.0,medium,primary,"{1: 0, 2: 0, 3: 4, 4: 2, 5: 0, 6: 0}",,Dispositivo portatil de salud visual para diagnostico corneal.
 blooms,Blooms,Nature & Ecosystem Tech,5,Campo/Sistema,7.2,3.0,medium,primary,"{1: 0, 2: 2, 3: 0, 4: 0, 5: 3, 6: 2}",,Agricultural exporter finance platform.
-botanical-solution-inc-cl,Botanical Solution Inc,Bioinputs & Crop Resilience,2,Celular,-7.2,2.0,high,primary,"{1: 0, 2: 2, 3: 0, 4: 0, 5: 0, 6: 0}",,Cultivates Quillaja saponaria trees via plant tissue culture as biofactories for biofungicide and vaccine adjuvant QS-21
-botanical-solutions,Botanical Solutions,Bioinputs & Crop Resilience,5,Campo/Sistema,7.2,1.5,medium,primary,"{1: 2, 2: 7, 3: 2, 4: 2, 5: 8, 6: 0}",field,Botanical active ingredients from plant tissue culture.
+botanical-solution-inc-cl,Botanical Solution Inc,Bioinputs & Crop Resilience,4,Lote/Producto,2.4,2.0,medium,primary,"{1: 0, 2: 2, 3: 0, 4: 3, 5: 0, 6: 0}",biofungicide,Cultivates Quillaja saponaria trees via plant tissue culture as biofactories for biofungicide and vaccine adjuvant QS-21
+botanical-solutions,Botanical Solutions,Bioinputs & Crop Resilience,5,Campo/Sistema,7.2,1.5,medium,primary,"{1: 5, 2: 7, 3: 2, 4: 2, 5: 8, 6: 0}",field,Botanical active ingredients from plant tissue culture.
 brain_ag,Brain.ag,Farm Intelligence,5,Campo/Sistema,7.2,3.0,high,primary,"{1: 0, 2: 2, 3: 0, 4: 0, 5: 9, 6: 4}",agribusiness; rural credit,Big-data platform for agribusiness credit and socioenvironmental analysis.
 brain4care-br,Brain4care,Diagnostics & Health Access,3,Organismo,-2.4,2.0,high,primary,"{1: 0, 2: 0, 3: 3, 4: 0, 5: 0, 6: 0}",hospital,
 branch_energy,Branch Energy,Nature & Ecosystem Tech,3,Organismo,-2.4,3.0,low,primary,"{1: 0, 2: 2, 3: 5, 4: 2, 5: 0, 6: 5}",medical device,On-site batteries and clean-energy management platform.
-break_pet,BreakPET,Biomaterials & Circular Economy,1,Molecular,-12.0,2.0,high,primary,"{1: 5, 2: 2, 3: 0, 4: 2, 5: 2, 6: 0}",enzymatic,Enzymatic PET recycling platform.
-brtc,Brtc,Biomaterials & Circular Economy,3,Organismo,-2.4,2.0,high,primary,"{1: 0, 2: 0, 3: 6, 4: 0, 5: 0, 6: 0}",healthcare; hospital,
-bruna-by-altum-lab-cl,Bruna by Altum Lab,Food Systems & Alt Proteins,5,Campo/Sistema,7.2,2.0,high,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 6, 6: 0}",farm; farm management,
+break_pet,BreakPET,Biomaterials & Circular Economy,1,Molecular,-12.0,2.0,low,primary,"{1: 5, 2: 2, 3: 0, 4: 5, 5: 2, 6: 0}",enzymatic,Enzymatic PET recycling platform.
+brtc,Brtc,Biomaterials & Circular Economy,1,Molecular,-12.0,2.0,low,primary,"{1: 6, 2: 0, 3: 6, 4: 0, 5: 0, 6: 0}",nanotechnolog; nanotech,
+bruna-by-altum-lab-cl,Bruna by Altum Lab,Food Systems & Alt Proteins,5,Campo/Sistema,7.2,2.0,high,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 9, 6: 0}",farm; farm management; aquaculture,
 bsafe_biotech,Bsafe Biotech,Bioinputs & Crop Resilience,5,Campo/Sistema,7.2,1.0,medium,primary,"{1: 2, 2: 5, 3: 0, 4: 0, 5: 9, 6: 0}",pest management,Biological control company for agriculture.
-by_my_cell,By My Cell,Biomanufacturing & Fermentation Economy,1,Molecular,-12.0,2.0,low,primary,"{1: 3, 2: 0, 3: 3, 4: 0, 5: 0, 6: 0}",genomic,
+by_my_cell,By My Cell,Biomanufacturing & Fermentation Economy,1,Molecular,-12.0,2.0,medium,primary,"{1: 6, 2: 0, 3: 3, 4: 0, 5: 0, 6: 0}",genomic; genomics,
 bybug,ByBug,Biomanufacturing & Fermentation Economy,1,Molecular,-12.0,1.31,medium,primary,"{1: 10, 2: 7, 3: 5, 4: 0, 5: 8, 6: 2}",enzyme ; recombinant protein,Engineered insect bioreactors for recombinant proteins and bioinputs.
-circclo,CIRCCLO,Biomaterials & Circular Economy,6,Paisaje/Planeta,12.0,2.33,high,primary,"{1: 0, 2: 2, 3: 0, 4: 2, 5: 0, 6: 5}",planetary,Reusable-packaging circularity platform.
+circclo,CIRCCLO,Biomaterials & Circular Economy,4,Lote/Producto,2.4,2.33,low,primary,"{1: 0, 2: 2, 3: 0, 4: 5, 5: 0, 6: 5}",packaging,Reusable-packaging circularity platform.
 calfix,Calfix,Biomaterials & Circular Economy,1,Molecular,-12.0,1.57,low,primary,"{1: 2, 2: 2, 3: 0, 4: 2, 5: 0, 6: 2}",,Biotech concrete crack repair platform.
 calice,Calice,Farm Intelligence,5,Campo/Sistema,7.2,3.0,high,primary,"{1: 2, 2: 2, 3: 0, 4: 2, 5: 12, 6: 0}",field; agronomic; agtech,Virtual agronomic trials and product-placement intelligence for ag inputs.
 calice-ai-ar,Calice AI,Farm Intelligence,5,Campo/Sistema,7.2,3.0,high,primary,"{1: 2, 2: 0, 3: 0, 4: 0, 5: 6, 6: 0}",field; crop yield,Virtual field trials platform that simulates millions of crop product performance scenarios using G×E×M modeling.
@@ -115,7 +115,7 @@ calice_biotech,Calice Biotech,Bioinputs & Crop Resilience,1,Molecular,-12.0,2.0,
 caligenia,Caligenia,Bioinputs & Crop Resilience,2,Celular,-7.2,2.0,medium,primary,"{1: 2, 2: 7, 3: 0, 4: 2, 5: 5, 6: 4}",microorganism,BACTERCHAR soil-regeneration and carbon-storage amendment.
 carbonext,Carbonext,Nature & Ecosystem Tech,6,Paisaje/Planeta,12.0,3.0,high,primary,"{1: 0, 2: 2, 3: 0, 4: 0, 5: 0, 6: 15}",conservation; nature-based; biome,Nature-based carbon and forest conservation platform.
 carigenetics,Carigenetics,Diagnostics & Health Access,1,Molecular,-12.0,2.0,high,primary,"{1: 3, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",genomic,
-caspr_biotech,Caspr Biotech,Diagnostics & Health Access,1,Molecular,-12.0,3.0,medium,primary,"{1: 8, 2: 0, 3: 4, 4: 0, 5: 0, 6: 0}",crispr; molecular diagnostic,CRISPR diagnostics company.
+caspr_biotech,Caspr Biotech,Diagnostics & Health Access,1,Molecular,-12.0,3.0,medium,primary,"{1: 8, 2: 0, 3: 7, 4: 0, 5: 0, 6: 0}",crispr; molecular diagnostic,CRISPR diagnostics company.
 caspr_biotech_acq_by_amazon,Caspr Biotech (acq. by Amazon),Diagnostics & Health Access,3,Organismo,-2.4,2.0,low,primary,"{1: 0, 2: 0, 3: 3, 4: 0, 5: 0, 6: 3}",point-of-care,
 celer_biotecnologia,Celer Biotecnologia,Diagnostics & Health Access,1,Molecular,-12.0,2.0,high,primary,"{1: 3, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",reagent,
 cell_farm,Cell Farm,Food Systems & Alt Proteins,1,Molecular,-12.0,3.0,medium,primary,"{1: 5, 2: 2, 3: 0, 4: 2, 5: 3, 6: 4}",protein ,Cultivated meat production infrastructure.
@@ -124,7 +124,7 @@ cellrep,CellRep,Therapeutics,1,Molecular,-12.0,2.0,medium,primary,"{1: 8, 2: 0, 
 cellargen_biotech,Cellargen Biotech,Biomanufacturing & Fermentation Economy,3,Organismo,-2.4,1.5,high,primary,"{1: 4, 2: 4, 3: 12, 4: 0, 5: 0, 6: 0}",animal health; therapeutic ,Recombinant biotherapeutics and vaccine company.
 cellertz-bio-br,Cellertz Bio,Therapeutics,1,Molecular,-12.0,3.0,low,primary,"{1: 3, 2: 3, 3: 0, 4: 0, 5: 0, 6: 0}",gene ,
 cells-for-cells-cl,Cells for Cells,Therapeutics,3,Organismo,-2.4,2.0,low,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",,
-cellter-cl,Cellter,Diagnostics & Health Access,1,Molecular,-12.0,2.0,high,primary,"{1: 3, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",drug design,
+cellter-cl,Cellter,Diagnostics & Health Access,1,Molecular,-12.0,2.0,high,primary,"{1: 6, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",drug design; nano ,
 celluris,Celluris,Therapeutics,1,Molecular,-12.0,2.0,high,primary,"{1: 3, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",receptor,
 cellva,Cellva,Food Systems & Alt Proteins,4,Lote/Producto,2.4,2.0,high,primary,"{1: 0, 2: 0, 3: 0, 4: 11, 5: 2, 6: 2}",food ingredient; food ingredient; novel ingredient,Microencapsulated functional ingredients for food and beverage.
 cenibiot,Cenibiot,Biomanufacturing & Fermentation Economy,2,Celular,-7.2,2.0,high,primary,"{1: 0, 2: 3, 3: 0, 4: 0, 5: 0, 6: 0}",bioprocess,
@@ -132,22 +132,22 @@ cerradox,CerradoX,Farm Intelligence,5,Campo/Sistema,7.2,3.0,high,primary,"{1: 0,
 chemtest,Chemtest,Diagnostics & Health Access,3,Organismo,-2.4,2.0,high,primary,"{1: 0, 2: 0, 3: 4, 4: 0, 5: 0, 6: 0}",,Infectious disease diagnostics company.
 circa_therapeutics,Circa Therapeutics,Therapeutics,1,Molecular,-12.0,1.0,medium,primary,"{1: 8, 2: 0, 3: 4, 4: 0, 5: 0, 6: 0}",protein ; small molecule,Targeted protein degradation therapeutics.
 clearleaf,ClearLeaf,Bioinputs & Crop Resilience,3,Organismo,-2.4,1.0,high,primary,"{1: 0, 2: 0, 3: 3, 4: 0, 5: 0, 6: 0}",human health,
-contech_brasil,Contech Brasil,Biomaterials & Circular Economy,3,Organismo,-2.4,2.0,low,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",,
-copper3d,Copper3D,Biomaterials & Circular Economy,3,Organismo,-2.4,2.0,low,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",,
+contech_brasil,Contech Brasil,Biomaterials & Circular Economy,2,Celular,-7.2,2.0,high,primary,"{1: 0, 2: 3, 3: 0, 4: 0, 5: 0, 6: 0}",bio-based chemical,
+copper3d,Copper3D,Biomaterials & Circular Economy,1,Molecular,-12.0,2.0,high,primary,"{1: 9, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",nanomaterial; nanotechnolog; nanotech,
 copptech,Copptech,Biomaterials & Circular Economy,3,Organismo,-2.4,2.0,high,primary,"{1: 0, 2: 0, 3: 3, 4: 0, 5: 0, 6: 0}",healthcare,
-corsync,Cor.Sync,Diagnostics & Health Access,3,Organismo,-2.4,2.0,low,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",,
+corsync,Cor.Sync,Diagnostics & Health Access,1,Molecular,-12.0,2.0,high,primary,"{1: 3, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",biomarker ,
 courageous_land,Courageous Land,Nature & Ecosystem Tech,6,Paisaje/Planeta,12.0,3.0,high,primary,"{1: 0, 2: 2, 3: 0, 4: 2, 5: 6, 6: 21}",biodiversity; planetary; reforestation; conservation; forestry,Large-scale regenerative agroforestry and carbon platform.
 cowmed-br,CowMed,Farm Intelligence,3,Organismo,-2.4,2.0,high,primary,"{1: 0, 2: 0, 3: 3, 4: 0, 5: 0, 6: 0}",per-animal,
-cryosmetics,Cryosmetics,Biomaterials & Circular Economy,3,Organismo,-2.4,1.5,low,primary,"{1: 2, 2: 2, 3: 4, 4: 4, 5: 2, 6: 3}",,Natural microbiome-positive skincare.
-culttivo,Culttivo,Nature & Ecosystem Tech,5,Campo/Sistema,7.2,3.0,medium,primary,"{1: 0, 2: 2, 3: 0, 4: 0, 5: 12, 6: 7}",farm; farming; coffee,Climate-aware credit and risk platform for coffee producers.
-cutting_edge_superconductors,Cutting Edge Superconductors,Diagnostics & Health Access,3,Organismo,-2.4,2.0,low,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",,
-cyanomin,CyanoMin,Biomaterials & Circular Economy,2,Celular,-7.2,2.0,low,primary,"{1: 0, 2: 4, 3: 0, 4: 0, 5: 2, 6: 4}",,Biological desalination and mineral recovery from hypersaline brines.
-cytbac,Cytbac,Therapeutics,1,Molecular,-12.0,2.33,low,primary,"{1: 7, 2: 0, 3: 7, 4: 0, 5: 0, 6: 2}",genomic,Genetically engineered vaccine and immunotherapy platform.
+cryosmetics,Cryosmetics,Biomaterials & Circular Economy,4,Lote/Producto,2.4,1.5,medium,primary,"{1: 2, 2: 2, 3: 4, 4: 7, 5: 2, 6: 3}",skincare,Natural microbiome-positive skincare.
+culttivo,Culttivo,Nature & Ecosystem Tech,5,Campo/Sistema,7.2,3.0,medium,primary,"{1: 0, 2: 2, 3: 0, 4: 0, 5: 12, 6: 10}",farm; farming; coffee,Climate-aware credit and risk platform for coffee producers.
+cutting_edge_superconductors,Cutting Edge Superconductors,Diagnostics & Health Access,1,Molecular,-12.0,2.0,high,primary,"{1: 3, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",superconducting,
+cyanomin,CyanoMin,Biomaterials & Circular Economy,2,Celular,-7.2,2.0,medium,primary,"{1: 0, 2: 7, 3: 0, 4: 0, 5: 2, 6: 4}",desalinat,Biological desalination and mineral recovery from hypersaline brines.
+cytbac,Cytbac,Therapeutics,1,Molecular,-12.0,2.33,medium,primary,"{1: 10, 2: 0, 3: 7, 4: 0, 5: 0, 6: 2}",genomic; genomics,Genetically engineered vaccine and immunotherapy platform.
 dart_by_teledx,DART by Teledx,Diagnostics & Health Access,3,Organismo,-2.4,2.0,low,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",,
 dprotein,DProtein,Food Systems & Alt Proteins,2,Celular,-7.2,2.0,medium,primary,"{1: 7, 2: 11, 3: 2, 4: 5, 5: 0, 6: 2}",fermentation; precision fermentation; ferment,Engineered sustainable proteins without plants or animals.
-daeki-cl,Daeki,Diagnostics & Health Access,3,Organismo,-2.4,2.0,medium,primary,"{1: 3, 2: 0, 3: 6, 4: 0, 5: 0, 6: 0}",point-of-care; diagnostic device,
+daeki-cl,Daeki,Diagnostics & Health Access,1,Molecular,-12.0,2.0,low,primary,"{1: 6, 2: 0, 3: 6, 4: 0, 5: 0, 6: 0}",antibod; biomarker ,
 decoy,Decoy,Bioinputs & Crop Resilience,5,Campo/Sistema,7.2,1.0,high,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 4, 6: 0}",,Innovative biological pesticides for livestock and agriculture.
-decoy-smart-control-br,Decoy Smart Control,Bioinputs & Crop Resilience,5,Campo/Sistema,7.2,1.0,high,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 3, 6: 0}",field,
+decoy-smart-control-br,Decoy Smart Control,Bioinputs & Crop Resilience,4,Lote/Producto,2.4,1.0,low,primary,"{1: 0, 2: 0, 3: 0, 4: 3, 5: 3, 6: 0}",biopesticide,
 deepagro,DeepAgro,Farm Intelligence,5,Campo/Sistema,7.2,3.0,high,primary,"{1: 0, 2: 2, 3: 0, 4: 0, 5: 15, 6: 2}",agronomic; crop monitoring; soybean; corn ,AI-powered selective spraying for crop input reduction.
 delee,Delee,Diagnostics & Health Access,3,Organismo,-2.4,3.0,medium,primary,"{1: 2, 2: 5, 3: 7, 4: 0, 5: 0, 6: 2}",oncology,Automated circulating tumor cell liquid-biopsy platform.
 detx_mol,Detx Mol,Diagnostics & Health Access,1,Molecular,-12.0,2.0,high,primary,"{1: 3, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",molecular diagnostic,
@@ -155,40 +155,40 @@ dharma_bioscience,Dharma BioScience,Diagnostics & Health Access,3,Organismo,-2.4
 diagnosis_biotech,Diagnosis Biotech,Diagnostics & Health Access,3,Organismo,-2.4,2.0,high,primary,"{1: 0, 2: 0, 3: 3, 4: 0, 5: 0, 6: 0}",point-of-care,
 diagtech,Diagtech,Diagnostics & Health Access,1,Molecular,-12.0,2.0,high,primary,"{1: 3, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",molecular diagnostic,
 digifarmz-br,DigiFarmz,Farm Intelligence,5,Campo/Sistema,7.2,2.0,high,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 18, 6: 0}",farm; field; farmer; agronomic; field data,
-dioxd,Dioxd,Bioinputs & Crop Resilience,3,Organismo,-2.4,2.0,low,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",,
+dioxd,Dioxd,Bioinputs & Crop Resilience,5,Campo/Sistema,7.2,2.0,low,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",,
 dogma_biotech,Dogma Biotech,Therapeutics,3,Organismo,-2.4,2.0,high,primary,"{1: 0, 2: 0, 3: 4, 4: 0, 5: 0, 6: 0}",,AI-discovered sugars for better therapeutics.
 domolif,Domolif,Nature & Ecosystem Tech,6,Paisaje/Planeta,12.0,2.0,high,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 3}",climate change,
 done_properly,Done Properly,Food Systems & Alt Proteins,2,Celular,-7.2,1.67,high,primary,"{1: 3, 2: 12, 3: 2, 4: 5, 5: 2, 6: 0}",fermentation; ferment,Fermented sustainable bio-ingredients for the food industry.
 dymaxion_labs,Dymaxion Labs,Farm Intelligence,5,Campo/Sistema,7.2,3.0,high,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 14, 6: 4}",field; precision agriculture; agronomic; agtech,AI and data science for agronomic operations.
-earth-ocean-farms-mx,Earth Ocean Farms,Nature & Ecosystem Tech,5,Campo/Sistema,7.2,2.0,high,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 3, 6: 0}",farm,
-ecosea,EcoSea,Food Systems & Alt Proteins,5,Campo/Sistema,7.2,2.0,medium,primary,"{1: 3, 2: 0, 3: 0, 4: 0, 5: 6, 6: 0}",farm; farming,
+earth-ocean-farms-mx,Earth Ocean Farms,Nature & Ecosystem Tech,5,Campo/Sistema,7.2,2.0,high,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 6, 6: 0}",farm; aquaculture,
+ecosea,EcoSea,Food Systems & Alt Proteins,5,Campo/Sistema,7.2,2.0,high,primary,"{1: 3, 2: 0, 3: 0, 4: 0, 5: 9, 6: 0}",farm; farming; aquaculture,
 ecosativa,Ecosativa,Bioinputs & Crop Resilience,5,Campo/Sistema,7.2,2.0,medium,primary,"{1: 0, 2: 0, 3: 0, 4: 3, 5: 6, 6: 0}",farm; farming,
-ecoshell-mx,Ecoshell,Biomaterials & Circular Economy,4,Lote/Producto,2.4,2.0,high,primary,"{1: 0, 2: 0, 3: 0, 4: 3, 5: 0, 6: 0}",plant-based,
+ecoshell-mx,Ecoshell,Biomaterials & Circular Economy,4,Lote/Producto,2.4,2.0,high,primary,"{1: 0, 2: 0, 3: 0, 4: 6, 5: 0, 6: 0}",plant-based; packaging,
 ecotrace-br,Ecotrace,Nature & Ecosystem Tech,5,Campo/Sistema,7.2,3.0,high,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 5, 6: 0}",agribusiness,"Blockchain, IoT and AI platform tracking agribusiness commodity supply chains end-to-end, having traced 6M+ tons across "
-einsted,Einsted,Nature & Ecosystem Tech,1,Molecular,-12.0,1.0,low,primary,"{1: 2, 2: 2, 3: 0, 4: 0, 5: 0, 6: 2}",,Plasma pyrolysis for clean hydrogen and conductive carbon.
+einsted,Einsted,Nature & Ecosystem Tech,6,Paisaje/Planeta,12.0,1.0,high,primary,"{1: 2, 2: 2, 3: 0, 4: 0, 5: 0, 6: 8}",clean hydrogen; plasma pyrolysis,Plasma pyrolysis for clean hydrogen and conductive carbon.
 eiru,Eirú,Bioinputs & Crop Resilience,5,Campo/Sistema,7.2,1.0,high,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 7, 6: 2}",agtech,Advanced pollination optimization through simulated bee dynamics.
 eiwa,Eiwa,Farm Intelligence,5,Campo/Sistema,7.2,3.0,high,primary,"{1: 0, 2: 2, 3: 0, 4: 0, 5: 12, 6: 2}",precision agriculture; agronomic; agtech,Agronomic data intelligence platform.
-ejido-verde-mx,Ejido Verde,Biomaterials & Circular Economy,3,Organismo,-2.4,2.0,low,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",,
-elytron_biotech,Elytron Biotech,Biomaterials & Circular Economy,1,Molecular,-12.0,2.0,high,primary,"{1: 12, 2: 4, 3: 0, 4: 2, 5: 3, 6: 0}",gene ; genomic,AI-driven biological product development platform.
+ejido-verde-mx,Ejido Verde,Biomaterials & Circular Economy,4,Lote/Producto,2.4,2.0,low,primary,"{1: 0, 2: 0, 3: 0, 4: 3, 5: 3, 6: 0}",pine resin,
+elytron_biotech,Elytron Biotech,Biomaterials & Circular Economy,1,Molecular,-12.0,2.0,high,primary,"{1: 18, 2: 4, 3: 0, 4: 2, 5: 3, 6: 0}",gene ; genomic; genomics; molecular biology,AI-driven biological product development platform.
 embryoxite,Embryoxite,Diagnostics & Health Access,3,Organismo,-2.4,2.0,high,primary,"{1: 0, 2: 0, 3: 6, 4: 0, 5: 0, 6: 0}",,Non-invasive IVF diagnostic.
 enteria,Enteria,Diagnostics & Health Access,3,Organismo,-2.4,2.0,high,primary,"{1: 0, 2: 0, 3: 7, 4: 0, 5: 0, 6: 3}",healthcare,Microbiota-based diagnostics.
 enzyva,Enzyva,Biomanufacturing & Fermentation Economy,1,Molecular,-12.0,2.0,medium,primary,"{1: 5, 2: 4, 3: 2, 4: 0, 5: 2, 6: 0}",enzyme ,Programmable biology platform.
 eolo_pharma,Eolo Pharma,Therapeutics,3,Organismo,-2.4,1.0,high,primary,"{1: 2, 2: 0, 3: 7, 4: 0, 5: 0, 6: 0}",therapeutic ,Thermogenesis-based obesity therapeutics.
-epicca,Epicca,Biomaterials & Circular Economy,3,Organismo,-2.4,1.0,low,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",,
-epiliquid,Epiliquid,Diagnostics & Health Access,1,Molecular,-12.0,3.0,medium,primary,"{1: 5, 2: 2, 3: 4, 4: 0, 5: 0, 6: 2}",biomarker detection,Liquid-biopsy biomarker platform for early cancer detection.
+epicca,Epicca,Biomaterials & Circular Economy,4,Lote/Producto,2.4,1.0,high,primary,"{1: 0, 2: 0, 3: 0, 4: 6, 5: 0, 6: 0}",bioplastic; packaging,
+epiliquid,Epiliquid,Diagnostics & Health Access,1,Molecular,-12.0,3.0,medium,primary,"{1: 11, 2: 2, 3: 10, 4: 0, 5: 0, 6: 2}",biomarker detection; biomarker ; biomarkers,Liquid-biopsy biomarker platform for early cancer detection.
 ergo_bioscience,Ergo Bioscience,Food Systems & Alt Proteins,2,Celular,-7.2,2.33,low,primary,"{1: 2, 2: 5, 3: 2, 4: 5, 5: 2, 6: 2}",cell culture,Plant-cell biotechnology for sustainable ingredients.
 ergo_foods,Ergo Foods,Food Systems & Alt Proteins,1,Molecular,-12.0,2.14,medium,primary,"{1: 7, 2: 0, 3: 2, 4: 5, 5: 4, 6: 0}",recombinant protein,Plant cell biotechnology ingredients platform.
 establishment_labs,Establishment Labs,Diagnostics & Health Access,3,Organismo,-2.4,2.0,high,primary,"{1: 0, 2: 0, 3: 6, 4: 0, 5: 0, 6: 0}",patient; surgery,
 eternal_mycofood,Eternal Mycofood,Food Systems & Alt Proteins,2,Celular,-7.2,2.0,low,primary,"{1: 3, 2: 6, 3: 0, 4: 6, 5: 0, 6: 0}",fermentation; ferment,
-eva-mx,Eva,Diagnostics & Health Access,3,Organismo,-2.4,2.0,low,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",,
-exacta-bioscience-cl,Exacta BioScience,Bioinputs & Crop Resilience,3,Organismo,-2.4,2.0,low,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",,
+eva-mx,Eva,Diagnostics & Health Access,3,Organismo,-2.4,2.0,high,primary,"{1: 0, 2: 0, 3: 3, 4: 0, 5: 0, 6: 0}",cancer screening,
+exacta-bioscience-cl,Exacta BioScience,Bioinputs & Crop Resilience,4,Lote/Producto,2.4,2.0,high,primary,"{1: 0, 2: 0, 3: 0, 4: 3, 5: 0, 6: 0}",crop protection product,
 exomas,Exomas,Therapeutics,3,Organismo,-2.4,1.0,medium,primary,"{1: 2, 2: 0, 3: 4, 4: 0, 5: 0, 6: 0}",,Terapias neuroregenerativas basadas en exosomas.
 eywa_biotech,Eywa Biotech,Therapeutics,2,Celular,-7.2,1.0,medium,primary,"{1: 0, 2: 5, 3: 4, 4: 0, 5: 0, 6: 0}",biosynthesis,Psychedelic biotech using biosynthesis.
 fk_biotecnologia,FK Biotecnologia,Therapeutics,3,Organismo,-2.4,2.0,high,primary,"{1: 0, 2: 0, 3: 9, 4: 0, 5: 0, 6: 0}",patient; therapeutic ; surgery,
 fabns,FabNS,Diagnostics & Health Access,1,Molecular,-12.0,2.0,high,primary,"{1: 3, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",molecular diagnostic,
 fecundis,Fecundis,Therapeutics,3,Organismo,-2.4,1.0,medium,primary,"{1: 2, 2: 0, 3: 4, 4: 0, 5: 0, 6: 0}",,Fertility biotech built on reproductive biology.
-feedvax,Feedvax,Bioinputs & Crop Resilience,5,Campo/Sistema,7.2,3.0,medium,primary,"{1: 0, 2: 0, 3: 2, 4: 0, 5: 4, 6: 0}",,Oral vaccine platform for aquaculture.
-food-for-the-future-cl,Food for the Future,Food Systems & Alt Proteins,1,Molecular,-12.0,1.0,high,primary,"{1: 3, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",protein ,"Transforms organic food waste into insect-based protein and biostimulants for aquaculture, poultry and agriculture using"
+feedvax,Feedvax,Bioinputs & Crop Resilience,5,Campo/Sistema,7.2,3.0,high,primary,"{1: 0, 2: 0, 3: 2, 4: 0, 5: 7, 6: 0}",aquaculture,Oral vaccine platform for aquaculture.
+food-for-the-future-cl,Food for the Future,Food Systems & Alt Proteins,1,Molecular,-12.0,1.0,low,primary,"{1: 3, 2: 0, 3: 0, 4: 0, 5: 3, 6: 0}",protein ,"Transforms organic food waste into insect-based protein and biostimulants for aquaculture, poultry and agriculture using"
 food4you,Food4You,Food Systems & Alt Proteins,4,Lote/Producto,2.4,1.5,high,primary,"{1: 2, 2: 4, 3: 0, 4: 10, 5: 2, 6: 0}",plant-based; novel ingredient,Bacteria-enabled plant-based food enhancement.
 frizata,Frizata,Food Systems & Alt Proteins,4,Lote/Producto,2.4,2.0,high,primary,"{1: 0, 2: 2, 3: 2, 4: 10, 5: 0, 6: 0}",alternative protein; food company,Flexitarian frozen food platform.
 fungi_life,Fungi Life,Biomaterials & Circular Economy,2,Celular,-7.2,2.0,medium,primary,"{1: 0, 2: 8, 3: 0, 4: 2, 5: 6, 6: 0}",fermentation; ferment,Fungal biosurfactants to replace petroleum-derived surfactants.
@@ -197,92 +197,92 @@ future_biome,Future Biome,Biomanufacturing & Fermentation Economy,2,Celular,-7.2
 future_cow,Future Cow,Food Systems & Alt Proteins,2,Celular,-7.2,1.67,medium,primary,"{1: 8, 2: 15, 3: 0, 4: 2, 5: 0, 6: 2}",fermentation; precision fermentation; ferment,Precision-fermented animal-free dairy protein.
 galtec,Galtec Life,Therapeutics,3,Organismo,-2.4,2.0,high,primary,"{1: 3, 2: 0, 3: 7, 4: 0, 5: 0, 6: 2}",therapeutic ,Galectin-modulating immunotherapies for cancer and inflammatory disease.
 gameet,Gameet,Diagnostics & Health Access,3,Organismo,-2.4,3.0,medium,primary,"{1: 0, 2: 0, 3: 4, 4: 2, 5: 0, 6: 2}",,3D-printed microdevice platform for assisted reproduction.
-gen-t-br,Gen-t,Therapeutics,3,Organismo,-2.4,2.0,low,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",,
+gen-t-br,Gen-t,Therapeutics,1,Molecular,-12.0,2.0,high,primary,"{1: 6, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",genome ; genetic data,
 geneprodx-mx,GeneProDx,Diagnostics & Health Access,1,Molecular,-12.0,2.0,medium,primary,"{1: 6, 2: 0, 3: 3, 4: 0, 5: 0, 6: 0}",genomic; molecular diagnostic,
 genomika_diagnosticos,Genomika Diagnosticos,Diagnostics & Health Access,1,Molecular,-12.0,2.0,medium,primary,"{1: 6, 2: 0, 3: 3, 4: 0, 5: 0, 6: 0}",genomic; immunolog,
-genotyping,Genotyping,Diagnostics & Health Access,1,Molecular,-12.0,3.0,low,primary,"{1: 7, 2: 2, 3: 7, 4: 0, 5: 3, 6: 0}",genomic,Genetic diagnostics and molecular analysis platform.
+genotyping,Genotyping,Diagnostics & Health Access,1,Molecular,-12.0,3.0,high,primary,"{1: 19, 2: 2, 3: 7, 4: 0, 5: 3, 6: 0}",genomic; genomics; genotyping; genetic diagnostic; molecular biology,Genetic diagnostics and molecular analysis platform.
 gentec,Gentec,Biomanufacturing & Fermentation Economy,1,Molecular,-12.0,2.0,high,primary,"{1: 6, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",gene ; crispr,
 geoprot,Geoprot,Therapeutics,5,Campo/Sistema,7.2,2.33,high,primary,"{1: 3, 2: 2, 3: 0, 4: 0, 5: 7, 6: 2}",,Protein-function analysis and prediction platform.
 gigablue,Gigablue,Nature & Ecosystem Tech,6,Paisaje/Planeta,12.0,3.0,high,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 10}",planetary; ocean,Ocean carbon removal and marine resilience platform.
 giraffe-bio-ar,Giraffe Bio,Biomaterials & Circular Economy,1,Molecular,-12.0,2.0,high,primary,"{1: 3, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",biomolecul,
-gisens_biotech,Gisens Biotech,Diagnostics & Health Access,3,Organismo,-2.4,2.0,high,primary,"{1: 2, 2: 0, 3: 7, 4: 0, 5: 2, 6: 0}",healthcare,Nanotechnology diagnostics everywhere.
+gisens_biotech,Gisens Biotech,Diagnostics & Health Access,1,Molecular,-12.0,2.0,medium,primary,"{1: 8, 2: 0, 3: 7, 4: 0, 5: 2, 6: 0}",nanotechnolog; nanotech,Nanotechnology diagnostics everywhere.
 glucogear,GlucoGear,Diagnostics & Health Access,3,Organismo,-2.4,2.0,low,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",,
 glycox,GlycoX,Food Systems & Alt Proteins,4,Lote/Producto,2.4,2.0,high,primary,"{1: 0, 2: 0, 3: 2, 4: 10, 5: 0, 6: 0}",plant-based; ingredient platform,Metabolic health functional ingredient platform.
-granatum_bioworks,Granatum Bioworks,Biomanufacturing & Fermentation Economy,3,Organismo,-2.4,2.0,low,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",,
+granatum_bioworks,Granatum Bioworks,Biomanufacturing & Fermentation Economy,2,Celular,-7.2,2.0,low,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",,
 green_biofactory,Green Biofactory,Biomanufacturing & Fermentation Economy,1,Molecular,-12.0,1.0,medium,primary,"{1: 6, 2: 3, 3: 0, 4: 0, 5: 0, 6: 0}",biomolecul; recombinant protein,
 gricha,Gricha,Food Systems & Alt Proteins,4,Lote/Producto,2.4,2.0,medium,primary,"{1: 3, 2: 0, 3: 0, 4: 6, 5: 0, 6: 0}",food product; functional food,
 grupo_diagnostico_aries,Grupo Diagnostico Aries,Diagnostics & Health Access,3,Organismo,-2.4,2.0,high,primary,"{1: 0, 2: 0, 3: 3, 4: 0, 5: 0, 6: 0}",patient,
 genica,Gênica,Bioinputs & Crop Resilience,5,Campo/Sistema,7.2,2.0,medium,primary,"{1: 4, 2: 5, 3: 2, 4: 0, 5: 10, 6: 0}",crop management; soil health,Soil health and agricultural biologicals platform.
 harmony-biosciences,HARMONY,Food Systems & Alt Proteins,2,Celular,-7.2,1.67,medium,primary,"{1: 2, 2: 11, 3: 2, 4: 7, 5: 0, 6: 0}",fermentation; precision fermentation; ferment,Precision-fermented infant nutrition platform.
-HIAMET,HIAMET,Biomaterials & Circular Economy,2,Celular,-7.2,3.0,low,primary,"{1: 0, 2: 2, 3: 0, 4: 0, 5: 2, 6: 2}",,Biotech solutions for biogas and organic-waste-to-energy conversion.
-hif-global-cl,HIF Global,Nature & Ecosystem Tech,3,Organismo,-2.4,2.0,low,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",,Converts renewable energy and captured CO₂ into drop-in synthetic e-fuels compatible with existing engines and infrastru
+HIAMET,HIAMET,Biomaterials & Circular Economy,2,Celular,-7.2,3.0,high,primary,"{1: 0, 2: 5, 3: 0, 4: 0, 5: 2, 6: 2}",biogas,Biotech solutions for biogas and organic-waste-to-energy conversion.
+hif-global-cl,HIF Global,Nature & Ecosystem Tech,6,Paisaje/Planeta,12.0,2.0,high,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 12}",e-fuel; efuel; synthetic fuel; green hydrogen,Converts renewable energy and captured CO₂ into drop-in synthetic e-fuels compatible with existing engines and infrastru
 hoobox_one,HOOBOX ONE,Diagnostics & Health Access,3,Organismo,-2.4,2.0,high,primary,"{1: 0, 2: 0, 3: 6, 4: 0, 5: 0, 6: 0}",patient; healthcare,
-hapiseeds-br,Hapiseeds,Bioinputs & Crop Resilience,1,Molecular,-12.0,2.0,medium,primary,"{1: 9, 2: 0, 3: 0, 4: 0, 5: 6, 6: 0}", rna ; gene ; genomic,
+hapiseeds-br,Hapiseeds,Bioinputs & Crop Resilience,1,Molecular,-12.0,2.0,high,primary,"{1: 15, 2: 0, 3: 0, 4: 0, 5: 6, 6: 0}", rna ; gene ; genomic; genomics; biomarkers,
 hexembio,HeXemBio,Therapeutics,3,Organismo,-2.4,2.0,medium,primary,"{1: 5, 2: 2, 3: 7, 4: 0, 5: 0, 6: 0}",patient,Hematopoietic stem-cell rejuvenation therapy platform.
 heartbest,Heartbest,Food Systems & Alt Proteins,4,Lote/Producto,2.4,1.0,high,primary,"{1: 0, 2: 4, 3: 2, 4: 16, 5: 3, 6: 2}",plant-based; foodtech; dairy alternative; food system,Plant-based dairy foodtech.
 hemoalgae,Hemoalgae,Biomanufacturing & Fermentation Economy,2,Celular,-7.2,2.0,high,primary,"{1: 0, 2: 6, 3: 0, 4: 0, 5: 0, 6: 0}",bioproduction; microalgae,
-heritas,Heritas,Diagnostics & Health Access,1,Molecular,-12.0,2.0,low,primary,"{1: 3, 2: 0, 3: 3, 4: 0, 5: 0, 6: 3}",genomic,
+heritas,Heritas,Diagnostics & Health Access,1,Molecular,-12.0,2.0,high,primary,"{1: 9, 2: 0, 3: 3, 4: 0, 5: 0, 6: 3}",genomic; genomics; genetic test,
 hilab-br,Hilab,Diagnostics & Health Access,3,Organismo,-2.4,3.0,high,primary,"{1: 0, 2: 0, 3: 6, 4: 0, 5: 0, 6: 0}",point-of-care; diagnostic device,
 horus_aeronaves,Horus Aeronaves,Farm Intelligence,5,Campo/Sistema,7.2,2.5,high,primary,"{1: 0, 2: 4, 3: 0, 4: 8, 5: 17, 6: 2}",farm; field; agronomic; crop monitoring,Agricultural drone and aerial mapping platform.
 huiro,Huiro,Nature & Ecosystem Tech,6,Paisaje/Planeta,12.0,2.0,high,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 2, 6: 8}",ecosystem; planetary,Regenerative seaweed cultivation for marine restoration and coastal livelihoods.
-huna,Huna,Diagnostics & Health Access,3,Organismo,-2.4,2.0,low,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",,
-hybridon,Hybridon,Biomaterials & Circular Economy,1,Molecular,-12.0,1.8,high,primary,"{1: 6, 2: 2, 3: 2, 4: 2, 5: 0, 6: 0}",,Antimicrobial nanotechnology for bioactive materials and surfaces.
-inmet,INMET,Biomaterials & Circular Economy,1,Molecular,-12.0,1.0,medium,primary,"{1: 4, 2: 2, 3: 0, 4: 2, 5: 3, 6: 2}",,Compostable PHB biopolymer from agro-industrial waste.
-ictiobiotic,Ictiobiotic,Bioinputs & Crop Resilience,4,Lote/Producto,2.4,2.0,low,primary,"{1: 0, 2: 0, 3: 0, 4: 3, 5: 3, 6: 3}",probiotic product,
-ideelab,IdeeLab,Bioinputs & Crop Resilience,2,Celular,-7.2,1.33,high,primary,"{1: 4, 2: 14, 3: 0, 4: 0, 5: 5, 6: 0}",fermentation; ferment,Ag biologicals CDMO and bioinput production platform.
-imeve,Imeve,Bioinputs & Crop Resilience,2,Celular,-7.2,1.0,medium,primary,"{1: 0, 2: 10, 3: 7, 4: 0, 5: 2, 6: 0}",fermentation; ferment,Animal health and probiotic biotechnology company.
+huna,Huna,Diagnostics & Health Access,3,Organismo,-2.4,2.0,high,primary,"{1: 0, 2: 0, 3: 6, 4: 0, 5: 0, 6: 0}",cancer screening; cancer detection,
+hybridon,Hybridon,Biomaterials & Circular Economy,1,Molecular,-12.0,1.8,high,primary,"{1: 12, 2: 2, 3: 2, 4: 2, 5: 0, 6: 0}",nanotechnolog; nanotech,Antimicrobial nanotechnology for bioactive materials and surfaces.
+inmet,INMET,Biomaterials & Circular Economy,4,Lote/Producto,2.4,1.0,medium,primary,"{1: 4, 2: 2, 3: 0, 4: 5, 5: 3, 6: 2}",biopolymer,Compostable PHB biopolymer from agro-industrial waste.
+ictiobiotic,Ictiobiotic,Bioinputs & Crop Resilience,3,Organismo,-2.4,2.0,low,primary,"{1: 0, 2: 0, 3: 6, 4: 3, 5: 6, 6: 3}",farmed fish; fish health,
+ideelab,IdeeLab,Bioinputs & Crop Resilience,2,Celular,-7.2,1.33,high,primary,"{1: 4, 2: 17, 3: 0, 4: 0, 5: 5, 6: 0}",fermentation; ferment; industrial ferment,Ag biologicals CDMO and bioinput production platform.
+imeve,Imeve,Bioinputs & Crop Resilience,2,Celular,-7.2,1.0,medium,primary,"{1: 0, 2: 10, 3: 7, 4: 0, 5: 5, 6: 0}",fermentation; ferment,Animal health and probiotic biotechnology company.
 imvalv,Imvalv,Diagnostics & Health Access,3,Organismo,-2.4,3.0,high,primary,"{1: 0, 2: 2, 3: 6, 4: 2, 5: 2, 6: 0}",,Implantable glaucoma microvalve and pressure-sensing device.
-inceres,InCeres,Farm Intelligence,5,Campo/Sistema,7.2,3.0,high,primary,"{1: 0, 2: 2, 3: 0, 4: 0, 5: 9, 6: 2}",agronomic; harvest,Agronomic management and soil/fertility intelligence platform.
+inceres,InCeres,Farm Intelligence,5,Campo/Sistema,7.2,3.0,medium,primary,"{1: 0, 2: 2, 3: 0, 4: 0, 5: 9, 6: 5}",agronomic; harvest,Agronomic management and soil/fertility intelligence platform.
 inedita-bio-br,InEdita Bio,Bioinputs & Crop Resilience,1,Molecular,-12.0,2.0,medium,primary,"{1: 6, 2: 0, 3: 0, 4: 0, 5: 3, 6: 0}",gene ; crispr,
 inpulse_medical,InPulse Medical,Diagnostics & Health Access,3,Organismo,-2.4,2.0,high,primary,"{1: 0, 2: 0, 3: 3, 4: 0, 5: 0, 6: 0}",healthcare,
 insitu,InSitu,Therapeutics,2,Celular,-7.2,2.0,high,primary,"{1: 0, 2: 3, 3: 0, 4: 0, 5: 0, 6: 0}",cell therapy,
-inbioar,Inbioar,Bioinputs & Crop Resilience,5,Campo/Sistema,7.2,1.57,high,primary,"{1: 3, 2: 0, 3: 0, 4: 2, 5: 7, 6: 2}",field,Botanical crop-protection ingredient discovery platform.
+inbioar,Inbioar,Bioinputs & Crop Resilience,5,Campo/Sistema,7.2,1.57,medium,primary,"{1: 6, 2: 0, 3: 0, 4: 2, 5: 7, 6: 2}",field,Botanical crop-protection ingredient discovery platform.
 incluirtec,Incluirtec,Nature & Ecosystem Tech,5,Campo/Sistema,7.2,3.0,high,primary,"{1: 0, 2: 2, 3: 0, 4: 0, 5: 6, 6: 2}",smallholder,Agfintech infrastructure for smallholder credit inclusion.
 infira,Infira,Bioinputs & Crop Resilience,5,Campo/Sistema,7.2,2.0,high,primary,"{1: 4, 2: 0, 3: 0, 4: 0, 5: 9, 6: 0}",soil health,Perennial crop genetics and plant resilience platform.
 inmunova-ar,Inmunova,Therapeutics,1,Molecular,-12.0,2.0,high,primary,"{1: 6, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",mrna; biologics ,
 inner_cosmos,Inner Cosmos,Diagnostics & Health Access,3,Organismo,-2.4,2.0,high,primary,"{1: 0, 2: 0, 3: 7, 4: 2, 5: 0, 6: 2}",therapeutic ,Embedded brain-computer-interface therapy for depression.
-innova_space,Innova Space,Nature & Ecosystem Tech,6,Paisaje/Planeta,12.0,3.0,medium,primary,"{1: 0, 2: 2, 3: 0, 4: 0, 5: 5, 6: 7}",planetary,"Satellite IoT for environmental, water and agriculture monitoring."
-innovai,Innovai,Food Systems & Alt Proteins,4,Lote/Producto,2.4,2.0,high,primary,"{1: 0, 2: 2, 3: 0, 4: 5, 5: 0, 6: 0}",foodtech,Seafood shelf-life bioactive coating platform.
+innova_space,Innova Space,Nature & Ecosystem Tech,6,Paisaje/Planeta,12.0,3.0,medium,primary,"{1: 0, 2: 2, 3: 0, 4: 0, 5: 8, 6: 10}",planetary; satellite ,"Satellite IoT for environmental, water and agriculture monitoring."
+innovai,Innovai,Food Systems & Alt Proteins,1,Molecular,-12.0,2.0,medium,primary,"{1: 6, 2: 2, 3: 0, 4: 5, 5: 0, 6: 0}",active compound; bioactive compound,Seafood shelf-life bioactive coating platform.
 inprenha,Inprenha,Bioinputs & Crop Resilience,5,Campo/Sistema,7.2,3.0,medium,primary,"{1: 0, 2: 0, 3: 0, 4: 2, 5: 4, 6: 0}",,Protein-based animal reproduction biotech.
-inspectral-br,Inspectral,Nature & Ecosystem Tech,5,Campo/Sistema,7.2,2.0,low,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 3, 6: 3}",crop disease,
-instacrops-cl,Instacrops,Farm Intelligence,5,Campo/Sistema,7.2,2.0,high,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 12, 6: 3}",field; irrigation; agronomic; crop monitoring,
+inspectral-br,Inspectral,Nature & Ecosystem Tech,6,Paisaje/Planeta,12.0,2.0,medium,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 6, 6: 12}",satellite imager; satellite ; multispectral; hyperspectral,
+instacrops-cl,Instacrops,Farm Intelligence,5,Campo/Sistema,7.2,2.0,medium,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 12, 6: 6}",field; irrigation; agronomic; crop monitoring,
 invitrall,Invitrall,Therapeutics,3,Organismo,-2.4,1.0,medium,primary,"{1: 6, 2: 2, 3: 7, 4: 6, 5: 0, 6: 4}",therapeutic ,In-vitro human organ models for efficacy and toxicity testing.
 isla_pharmaceuticals,Isla Pharmaceuticals,Therapeutics,3,Organismo,-2.4,2.0,low,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",,
 jetbov,JetBov,Farm Intelligence,5,Campo/Sistema,7.2,3.0,high,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 8, 6: 0}",precision agriculture; agtech,Beef cattle management intelligence platform.
-kura-biotec-mx,KURA Biotec,Diagnostics & Health Access,1,Molecular,-12.0,2.0,high,primary,"{1: 9, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",genomic; reagent; enzymatic,
-kaiima,Kaiima,Bioinputs & Crop Resilience,1,Molecular,-12.0,2.0,low,primary,"{1: 3, 2: 0, 3: 0, 4: 0, 5: 3, 6: 0}",genomic,
-keclon,Keclon,Biomanufacturing & Fermentation Economy,2,Celular,-7.2,1.4,high,primary,"{1: 5, 2: 20, 3: 0, 4: 0, 5: 0, 6: 0}",fermentation; precision fermentation; ferment; microorganism,Precision fermentation biosolutions platform.
+kura-biotec-mx,KURA Biotec,Diagnostics & Health Access,1,Molecular,-12.0,2.0,high,primary,"{1: 12, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",genomic; reagent; enzymatic; genomics,
+kaiima,Kaiima,Bioinputs & Crop Resilience,1,Molecular,-12.0,2.0,medium,primary,"{1: 6, 2: 0, 3: 0, 4: 0, 5: 3, 6: 0}",genomic; genomics,
+keclon,Keclon,Biomanufacturing & Fermentation Economy,2,Celular,-7.2,1.4,high,primary,"{1: 5, 2: 23, 3: 0, 4: 0, 5: 0, 6: 0}",fermentation; precision fermentation; ferment; microorganism; industrial enzyme,Precision fermentation biosolutions platform.
 kheiron-biotech-ar,Kheiron Biotech,Bioinputs & Crop Resilience,1,Molecular,-12.0,2.0,high,primary,"{1: 6, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",gene ; genomic,
 kigui,Kigüi,Nature & Ecosystem Tech,6,Paisaje/Planeta,12.0,3.0,high,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 2}",,AI copilot for retail waste and rotation management.
-kilimo,Kilimo,Nature & Ecosystem Tech,5,Campo/Sistema,7.2,3.0,medium,primary,"{1: 0, 2: 2, 3: 0, 4: 0, 5: 15, 6: 10}",farm; irrigation; farmer; agronomic,Water-positive irrigation and watershed stewardship platform.
-kran-nanobubble-cl,Kran Nanobubble,Food Systems & Alt Proteins,3,Organismo,-2.4,2.0,low,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",,
+kilimo,Kilimo,Nature & Ecosystem Tech,5,Campo/Sistema,7.2,3.0,medium,primary,"{1: 0, 2: 2, 3: 0, 4: 0, 5: 18, 6: 10}",farm; irrigation; farmer; agronomic; watershed,Water-positive irrigation and watershed stewardship platform.
+kran-nanobubble-cl,Kran Nanobubble,Food Systems & Alt Proteins,5,Campo/Sistema,7.2,2.0,high,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 6, 6: 0}",aquaculture; nanobubble,
 kresko_rnatech,Kresko RNAtech,Food Systems & Alt Proteins,4,Lote/Producto,2.4,2.0,medium,primary,"{1: 3, 2: 0, 3: 2, 4: 5, 5: 0, 6: 0}",novel ingredient,Bioactive RNA extracts from fresh food.
 krilltech,Krilltech,Bioinputs & Crop Resilience,5,Campo/Sistema,7.2,1.57,high,primary,"{1: 2, 2: 2, 3: 2, 4: 2, 5: 8, 6: 2}",agtech,Nano-biofertilizer and plant physiology platform.
-laurus,Laurus,Biomanufacturing & Fermentation Economy,2,Celular,-7.2,1.36,medium,primary,"{1: 10, 2: 15, 3: 4, 4: 0, 5: 3, 6: 2}",fermentation; precision fermentation; ferment,Precision fermentation and recombinant biomanufacturing company.
+laurus,Laurus,Biomanufacturing & Fermentation Economy,2,Celular,-7.2,1.36,medium,primary,"{1: 10, 2: 15, 3: 4, 4: 3, 5: 3, 6: 2}",fermentation; precision fermentation; ferment,Precision fermentation and recombinant biomanufacturing company.
 laurus_ag_tech,Laurus AG Tech,Nature & Ecosystem Tech,5,Campo/Sistema,7.2,3.0,high,primary,"{1: 0, 2: 2, 3: 0, 4: 0, 5: 9, 6: 4}",farm; farming,Autonomous urban farming network.
 leaf,Leaf,Farm Intelligence,5,Campo/Sistema,7.2,3.0,medium,primary,"{1: 0, 2: 2, 3: 0, 4: 0, 5: 9, 6: 7}",field; agronomic,Unified API and data infrastructure for food and agriculture.
-lemu,Lemu,Nature & Ecosystem Tech,6,Paisaje/Planeta,12.0,3.0,high,primary,"{1: 0, 2: 2, 3: 0, 4: 0, 5: 3, 6: 17}",satellite imager; biodiversity; planetary,Nature intelligence and biodiversity MRV platform.
+lemu,Lemu,Nature & Ecosystem Tech,6,Paisaje/Planeta,12.0,3.0,high,primary,"{1: 0, 2: 2, 3: 0, 4: 0, 5: 3, 6: 20}",satellite imager; biodiversity; planetary; satellite ,Nature intelligence and biodiversity MRV platform.
 levita-magnetics-cl,Levita Magnetics,Diagnostics & Health Access,3,Organismo,-2.4,2.0,high,primary,"{1: 0, 2: 0, 3: 3, 4: 0, 5: 0, 6: 0}",surgery,
-levya,Levya,Food Systems & Alt Proteins,2,Celular,-7.2,1.0,medium,primary,"{1: 0, 2: 16, 3: 0, 4: 10, 5: 0, 6: 0}",fermentation; precision fermentation; yeast; ferment,Precision-fermented sustainable fats and oils.
+levya,Levya,Food Systems & Alt Proteins,2,Celular,-7.2,1.0,medium,primary,"{1: 0, 2: 16, 3: 0, 4: 13, 5: 0, 6: 0}",fermentation; precision fermentation; yeast; ferment,Precision-fermented sustainable fats and oils.
 libera,Libera,Therapeutics,3,Organismo,-2.4,2.0,medium,primary,"{1: 0, 2: 0, 3: 4, 4: 0, 5: 2, 6: 2}",,Extracellular vesicles to fight inflammatory diseases.
 limay,Limay,Diagnostics & Health Access,1,Molecular,-12.0,2.0,high,primary,"{1: 3, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",molecular diagnostic,
 limay_biosciences,Limay Biosciences,Diagnostics & Health Access,1,Molecular,-12.0,2.0,medium,primary,"{1: 5, 2: 0, 3: 4, 4: 2, 5: 0, 6: 0}",molecular diagnostic,Portable molecular diagnostics company.
 linda_lifetech,Linda Lifetech,Diagnostics & Health Access,3,Organismo,-2.4,2.0,low,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",,
-lipock,Lipock,Therapeutics,3,Organismo,-2.4,1.5,low,primary,"{1: 2, 2: 2, 3: 4, 4: 4, 5: 0, 6: 2}",,Lipid nanocapsule platform for volatile and hydrophobic actives.
-living-ink-us,Living Ink,Biomaterials & Circular Economy,3,Organismo,-2.4,2.0,low,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",,
+lipock,Lipock,Therapeutics,4,Lote/Producto,2.4,1.5,medium,primary,"{1: 5, 2: 2, 3: 4, 4: 10, 5: 0, 6: 2}",cosmetic; health product,Lipid nanocapsule platform for volatile and hydrophobic actives.
+living-ink-us,Living Ink,Biomaterials & Circular Economy,4,Lote/Producto,2.4,2.0,low,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",,
 lizarbio,LizarBio,Therapeutics,3,Organismo,-2.4,2.0,low,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",,
 logshare,LogShare,Nature & Ecosystem Tech,6,Paisaje/Planeta,12.0,3.0,high,primary,"{1: 0, 2: 2, 3: 0, 4: 0, 5: 3, 6: 9}",planetary,Collaborative freight-sharing platform for lower-emission logistics.
 luyef-biotechnologies-cl,Luyef Biotechnologies,Food Systems & Alt Proteins,2,Celular,-7.2,2.0,high,primary,"{1: 0, 2: 9, 3: 0, 4: 0, 5: 0, 6: 0}",fermentation; precision fermentation; ferment,
 m4life,M4Life,Bioinputs & Crop Resilience,5,Campo/Sistema,7.2,3.0,high,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 4, 6: 0}",,Biological plant resilience enhancer to abiotic stress.
-migma,MIGMA,Food Systems & Alt Proteins,3,Organismo,-2.4,1.67,medium,primary,"{1: 0, 2: 0, 3: 5, 4: 4, 5: 0, 6: 0}",animal nutrition,AI-designed antioxidant systems for shelf-life extension.
+migma,MIGMA,Food Systems & Alt Proteins,4,Lote/Producto,2.4,1.67,medium,primary,"{1: 0, 2: 0, 3: 5, 4: 7, 5: 0, 6: 0}",cosmetic,AI-designed antioxidant systems for shelf-life extension.
 muta,MUTA,Biomaterials & Circular Economy,6,Paisaje/Planeta,12.0,3.0,high,primary,"{1: 0, 2: 2, 3: 0, 4: 0, 5: 0, 6: 5}",planetary,B2B circular recycling and traceability platform.
 mzp,MZP,Diagnostics & Health Access,3,Organismo,-2.4,2.0,high,primary,"{1: 0, 2: 2, 3: 10, 4: 0, 5: 0, 6: 0}",point-of-care; surgery,Advanced coagulation diagnostics for critical care.
 mzp-tecnologia-ar,MZP Tecnologia,Diagnostics & Health Access,3,Organismo,-2.4,2.0,high,primary,"{1: 0, 2: 0, 3: 3, 4: 0, 5: 0, 6: 0}",point-of-care,
 magnamed,Magnamed,Diagnostics & Health Access,3,Organismo,-2.4,2.0,medium,primary,"{1: 0, 2: 2, 3: 7, 4: 2, 5: 0, 6: 4}",hospital,Mechanical ventilation and respiratory critical-care devices.
-matchetune,Matchetune,Food Systems & Alt Proteins,4,Lote/Producto,2.4,1.67,high,primary,"{1: 2, 2: 0, 3: 0, 4: 16, 5: 0, 6: 2}",food ingredient; functional food; nutraceutical; food ingredient,Nanoencapsulated functional food ingredients platform.
+matchetune,Matchetune,Food Systems & Alt Proteins,4,Lote/Producto,2.4,1.67,medium,primary,"{1: 8, 2: 0, 3: 0, 4: 16, 5: 0, 6: 2}",food ingredient; functional food; nutraceutical; food ingredient,Nanoencapsulated functional food ingredients platform.
 mavios,Mavios,Biomanufacturing & Fermentation Economy,2,Celular,-7.2,2.0,high,primary,"{1: 2, 2: 18, 3: 0, 4: 0, 5: 3, 6: 2}",fermentation; precision fermentation; bioprocess; ferment,AI-based digital twin for bioprocess scale-up.
-mendelics,Mendelics,Diagnostics & Health Access,1,Molecular,-12.0,2.0,high,primary,"{1: 6, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}", dna ; genomic,
-merken-biotech-cl,Merken Biotech,Therapeutics,2,Celular,-7.2,2.0,high,primary,"{1: 0, 2: 3, 3: 0, 4: 0, 5: 0, 6: 0}",microbiology,
+mendelics,Mendelics,Diagnostics & Health Access,1,Molecular,-12.0,2.0,high,primary,"{1: 15, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}", dna ; genomic; genomics; genetic test; dna sequen,
+merken-biotech-cl,Merken Biotech,Therapeutics,1,Molecular,-12.0,2.0,high,primary,"{1: 9, 2: 3, 3: 0, 4: 0, 5: 0, 6: 0}",molecular biology; active compound; bioactive compound,
 mesenchyal_t,Mesenchyal-T,Therapeutics,2,Celular,-7.2,2.0,medium,primary,"{1: 2, 2: 5, 3: 4, 4: 2, 5: 0, 6: 0}",cell therapy,AI-powered mesenchymal stem-cell therapy for bone regeneration.
 metabix_bio,Metabix Bio,Nature & Ecosystem Tech,4,Lote/Producto,2.4,2.0,high,primary,"{1: 0, 2: 0, 3: 0, 4: 3, 5: 0, 6: 0}",food system,
 meton,Meton,Therapeutics,1,Molecular,-12.0,2.0,high,primary,"{1: 3, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",drug design,
@@ -300,66 +300,66 @@ monte-caldera-technology,Monte Caldera Technology,Biomaterials & Circular Econom
 moolec,Moolec,Food Systems & Alt Proteins,5,Campo/Sistema,7.2,2.0,medium,primary,"{1: 0, 2: 0, 3: 0, 4: 3, 5: 6, 6: 0}",farm; farming,
 moondo,Moondo,Food Systems & Alt Proteins,2,Celular,-7.2,2.0,high,primary,"{1: 0, 2: 3, 3: 0, 4: 0, 5: 0, 6: 0}",cell culture,
 moss,Moss,Nature & Ecosystem Tech,6,Paisaje/Planeta,12.0,3.0,high,primary,"{1: 0, 2: 2, 3: 0, 4: 0, 5: 0, 6: 12}",carbon credit; planetary,Carbon credit and nature-finance infrastructure.
-mothership-materials-cl,Mothership Materials,Biomaterials & Circular Economy,3,Organismo,-2.4,2.0,low,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",,
-multiplai_health,MultiplAI Health,Diagnostics & Health Access,1,Molecular,-12.0,3.0,high,primary,"{1: 13, 2: 2, 3: 4, 4: 0, 5: 0, 6: 2}", rna ; genomic; transcriptom,RNA sequencing and AI screening for cardiovascular disease.
+mothership-materials-cl,Mothership Materials,Biomaterials & Circular Economy,4,Lote/Producto,2.4,2.0,low,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",,
+multiplai_health,MultiplAI Health,Diagnostics & Health Access,1,Molecular,-12.0,3.0,high,primary,"{1: 16, 2: 2, 3: 4, 4: 0, 5: 0, 6: 2}", rna ; genomic; transcriptom; rna sequen,RNA sequencing and AI screening for cardiovascular disease.
 mycorium_biotech,Mycorium Biotech,Biomaterials & Circular Economy,2,Celular,-7.2,1.0,low,primary,"{1: 0, 2: 2, 3: 0, 4: 2, 5: 0, 6: 0}",,Upcycling waste using mycelium to produce bio-leather.
-naiad-drug-design-br,NAIAD Drug Design,Therapeutics,1,Molecular,-12.0,2.0,high,primary,"{1: 6, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",drug discovery; drug design,
+naiad-drug-design-br,NAIAD Drug Design,Therapeutics,1,Molecular,-12.0,2.0,high,primary,"{1: 9, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",drug discovery; drug design; active compound,
 naiad,Naiad,Therapeutics,1,Molecular,-12.0,2.0,medium,primary,"{1: 6, 2: 0, 3: 3, 4: 0, 5: 0, 6: 0}",drug discovery; drug design,
-nairotech,Nairotech,Biomaterials & Circular Economy,1,Molecular,-12.0,1.5,low,primary,"{1: 4, 2: 4, 3: 2, 4: 2, 5: 0, 6: 2}",,Antimicrobial polymer and nanotechnology materials platform.
-nanojump_bio,Nano Jump Bio,Diagnostics & Health Access,1,Molecular,-12.0,2.0,low,primary,"{1: 5, 2: 0, 3: 4, 4: 0, 5: 5, 6: 0}",molecular tool,Portable genetic material extraction tool.
+nairotech,Nairotech,Biomaterials & Circular Economy,1,Molecular,-12.0,1.5,medium,primary,"{1: 10, 2: 4, 3: 2, 4: 5, 5: 0, 6: 2}",nanotechnolog; nanotech,Antimicrobial polymer and nanotechnology materials platform.
+nanojump_bio,Nano Jump Bio,Diagnostics & Health Access,1,Molecular,-12.0,2.0,medium,primary,"{1: 8, 2: 0, 3: 4, 4: 0, 5: 5, 6: 0}",molecular tool; molecular biology,Portable genetic material extraction tool.
 nanotropic_tecnologia,NanoTropic Tecnologia,Biomaterials & Circular Economy,3,Organismo,-2.4,2.0,high,primary,"{1: 0, 2: 0, 3: 3, 4: 0, 5: 0, 6: 0}",healthcare,
-nanoblast,Nanoblast,Therapeutics,3,Organismo,-2.4,2.0,high,primary,"{1: 0, 2: 0, 3: 3, 4: 0, 5: 0, 6: 0}",dermatology,
-nanofreeze,Nanofreeze,Biomaterials & Circular Economy,1,Molecular,-12.0,2.0,high,primary,"{1: 3, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",compound ,
+nanoblast,Nanoblast,Therapeutics,1,Molecular,-12.0,2.0,medium,primary,"{1: 6, 2: 0, 3: 3, 4: 0, 5: 0, 6: 0}",nanotechnolog; nanotech,
+nanofreeze,Nanofreeze,Biomaterials & Circular Economy,1,Molecular,-12.0,2.0,high,primary,"{1: 12, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",compound ; nanotechnolog; nano ; nanotech,
 nanogrow_biotech,Nanogrow Biotech,Therapeutics,3,Organismo,-2.4,2.0,high,primary,"{1: 3, 2: 0, 3: 7, 4: 2, 5: 0, 6: 0}",therapeutic ,Single-domain antibody therapeutics platform.
 nanoingreen,Nanoingreen,Food Systems & Alt Proteins,2,Celular,-7.2,1.4,medium,primary,"{1: 4, 2: 15, 3: 2, 4: 8, 5: 3, 6: 2}",fermentation; ferment; microorganism,Microbial fermentation platform for sustainable food ingredients.
-nanopharmacia-group-mx,Nanopharmacia Group,Therapeutics,1,Molecular,-12.0,2.0,low,primary,"{1: 3, 2: 0, 3: 3, 4: 0, 5: 0, 6: 0}",genomic,
+nanopharmacia-group-mx,Nanopharmacia Group,Therapeutics,1,Molecular,-12.0,2.0,high,primary,"{1: 9, 2: 0, 3: 3, 4: 0, 5: 0, 6: 0}",genomic; nanotechnolog; nanotech,
 nanoprox,NanoproX,Therapeutics,3,Organismo,-2.4,2.0,medium,primary,"{1: 5, 2: 0, 3: 9, 4: 2, 5: 4, 6: 2}",oncology,Bismuth-sulfide nanoparticle radiosensitizer for oncology.
 nanotica,Nanotica,Bioinputs & Crop Resilience,5,Campo/Sistema,7.2,1.0,high,primary,"{1: 4, 2: 2, 3: 0, 4: 0, 5: 16, 6: 4}",farm; field; farmer,In-field nanoencapsulation system for agricultural inputs.
 nanotransfer,Nanotransfer,Therapeutics,1,Molecular,-12.0,1.57,high,primary,"{1: 10, 2: 0, 3: 4, 4: 0, 5: 0, 6: 0}",gene ; nanoparticle,Non-viral gene delivery platform.
-nanovetores_group,Nanovetores Group,Therapeutics,3,Organismo,-2.4,2.0,high,primary,"{1: 0, 2: 0, 3: 3, 4: 0, 5: 0, 6: 0}",therapeutic ,
-nat4bio,Nat4Bio,Food Systems & Alt Proteins,5,Campo/Sistema,7.2,1.57,medium,primary,"{1: 7, 2: 5, 3: 0, 4: 2, 5: 8, 6: 4}",harvest; citrus,Natural zero-residue edible coatings for fresh fruit.
-nativas,Nativas,Nature & Ecosystem Tech,6,Paisaje/Planeta,12.0,3.0,high,primary,"{1: 0, 2: 2, 3: 0, 4: 0, 5: 3, 6: 10}",ecosystem; ecosystem service,Regenerative agriculture and ecosystem-services platform.
+nanovetores_group,Nanovetores Group,Therapeutics,1,Molecular,-12.0,2.0,low,primary,"{1: 3, 2: 0, 3: 3, 4: 3, 5: 0, 6: 0}",nano ,
+nat4bio,Nat4Bio,Food Systems & Alt Proteins,5,Campo/Sistema,7.2,1.57,medium,primary,"{1: 7, 2: 5, 3: 0, 4: 5, 5: 8, 6: 4}",harvest; citrus,Natural zero-residue edible coatings for fresh fruit.
+nativas,Nativas,Nature & Ecosystem Tech,6,Paisaje/Planeta,12.0,3.0,high,primary,"{1: 0, 2: 2, 3: 0, 4: 0, 5: 3, 6: 13}",ecosystem; ecosystem service; satellite ,Regenerative agriculture and ecosystem-services platform.
 naturannova,Naturannova,Food Systems & Alt Proteins,4,Lote/Producto,2.4,3.0,medium,primary,"{1: 5, 2: 3, 3: 0, 4: 8, 5: 2, 6: 2}",foodtech; protein ingredient,AI and bioinformatics for sustainable protein ingredients.
 neomed-br,NeoMed,Diagnostics & Health Access,3,Organismo,-2.4,3.0,high,primary,"{1: 0, 2: 0, 3: 3, 4: 0, 5: 0, 6: 0}",hospital,
 neocell,Neocell,Biomanufacturing & Fermentation Economy,1,Molecular,-12.0,1.5,medium,primary,"{1: 5, 2: 4, 3: 2, 4: 2, 5: 0, 6: 0}",biosimilar,Biopharma development and biosimilar platform.
 neocrop-technologies,Neocrop Technologies,Bioinputs & Crop Resilience,1,Molecular,-12.0,2.0,medium,primary,"{1: 7, 2: 0, 3: 0, 4: 0, 5: 6, 6: 2}",gene ,Precision gene editing crop platform.
-neoprospecta-br,Neoprospecta,Biomanufacturing & Fermentation Economy,1,Molecular,-12.0,3.0,high,primary,"{1: 8, 2: 0, 3: 2, 4: 0, 5: 0, 6: 3}", dna ; genomic,"Microbial risk mapping for food and pharma using DNA sequencing, PCR-LAMP and AI to predict contamination before it happ"
+neoprospecta-br,Neoprospecta,Biomanufacturing & Fermentation Economy,1,Molecular,-12.0,3.0,high,primary,"{1: 14, 2: 0, 3: 2, 4: 0, 5: 0, 6: 3}", dna ; genomic; genomics; dna sequen,"Microbial risk mapping for food and pharma using DNA sequencing, PCR-LAMP and AI to predict contamination before it happ"
 neuralmed,NeuralMed,Diagnostics & Health Access,3,Organismo,-2.4,2.0,high,primary,"{1: 0, 2: 0, 3: 3, 4: 0, 5: 0, 6: 0}",healthcare,
-neurognos,Neurognos,Diagnostics & Health Access,3,Organismo,-2.4,2.0,low,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",,
+neurognos,Neurognos,Diagnostics & Health Access,1,Molecular,-12.0,2.0,high,primary,"{1: 3, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",biomarker ,
 new_organs_biotech,New Organs Biotech,Therapeutics,1,Molecular,-12.0,1.67,low,primary,"{1: 7, 2: 2, 3: 7, 4: 0, 5: 0, 6: 2}",gene ,Gene-edited regenerative medicine for organ shortage.
-nexxto,Nexxto,Nature & Ecosystem Tech,2,Celular,-7.2,3.0,low,primary,"{1: 0, 2: 2, 3: 2, 4: 2, 5: 2, 6: 2}",,IoT monitoring for health-product cold-chain quality.
+nexxto,Nexxto,Nature & Ecosystem Tech,4,Lote/Producto,2.4,3.0,high,primary,"{1: 0, 2: 2, 3: 2, 4: 5, 5: 2, 6: 2}",health product,IoT monitoring for health-product cold-chain quality.
 nideport,Nideport,Nature & Ecosystem Tech,6,Paisaje/Planeta,12.0,3.0,high,primary,"{1: 0, 2: 2, 3: 0, 4: 0, 5: 0, 6: 27}",ecosystem; biodiversity; planetary; reforestation; conservation,Nature restoration and carbon-credit platform.
 nilus,Nilus,Nature & Ecosystem Tech,6,Paisaje/Planeta,12.0,3.0,medium,primary,"{1: 0, 2: 2, 3: 0, 4: 3, 5: 0, 6: 4}",,Food rescue and low-cost food access platform.
 nintx-br,Nintx,Therapeutics,1,Molecular,-12.0,2.0,low,primary,"{1: 3, 2: 0, 3: 0, 4: 3, 5: 0, 6: 3}",drug discovery,
 nocarbon_milk,NoCarbon Milk,Food Systems & Alt Proteins,4,Lote/Producto,2.4,2.0,medium,primary,"{1: 3, 2: 0, 3: 0, 4: 5, 5: 2, 6: 2}",novel ingredient,Carbon-neutral organic dairy brand.
 notfossil,NotFossil,Nature & Ecosystem Tech,2,Celular,-7.2,3.0,low,primary,"{1: 2, 2: 5, 3: 0, 4: 0, 5: 2, 6: 5}",microorganism,Microbial biofilters for hydrocarbon degradation.
-novagenic_affinity,Novagenic Affinity,Diagnostics & Health Access,3,Organismo,-2.4,2.0,high,primary,"{1: 0, 2: 0, 3: 3, 4: 0, 5: 0, 6: 0}",personalized medicine,
+novagenic_affinity,Novagenic Affinity,Diagnostics & Health Access,1,Molecular,-12.0,2.0,low,primary,"{1: 3, 2: 0, 3: 3, 4: 0, 5: 0, 6: 0}",genetic test,
 novalact,Novalact,Bioinputs & Crop Resilience,5,Campo/Sistema,7.2,2.0,medium,primary,"{1: 0, 2: 0, 3: 3, 4: 0, 5: 6, 6: 3}",farm; farming,
 nude,Nude,Food Systems & Alt Proteins,4,Lote/Producto,2.4,1.0,high,primary,"{1: 0, 2: 0, 3: 0, 4: 13, 5: 0, 6: 2}",plant-based; foodtech; food brand,Oat-based plant dairy and climate-transparent food brand.
 nunatak_biotech,Nunatak Biotech,Bioinputs & Crop Resilience,2,Celular,-7.2,2.0,medium,primary,"{1: 2, 2: 7, 3: 0, 4: 0, 5: 3, 6: 5}",microorganism,Plant-microbiome platform for soil restoration and crop resilience.
 nutrition-from-water-cl,Nutrition from Water,Food Systems & Alt Proteins,1,Molecular,-12.0,2.0,low,primary,"{1: 3, 2: 3, 3: 0, 4: 3, 5: 0, 6: 0}",protein ,
 omics,OMICS,Therapeutics,3,Organismo,-2.4,2.33,high,primary,"{1: 2, 2: 3, 3: 10, 4: 0, 5: 2, 6: 0}",veterinary; animal health,Veterinary stem-cell therapy platform.
-ocular_bio_design,Ocular Bio Design,Therapeutics,3,Organismo,-2.4,1.0,medium,primary,"{1: 2, 2: 2, 3: 4, 4: 2, 5: 0, 6: 2}",,Bioengineered corneal tissue for vision restoration.
-odd_industries,Odd Industries,Nature & Ecosystem Tech,6,Paisaje/Planeta,12.0,2.0,high,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 9}",ecosystem; conservation; earth observation,
-olho_do_dono,Olho do Dono,Farm Intelligence,3,Organismo,-2.4,2.0,low,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",,
-omica,Omica,Diagnostics & Health Access,3,Organismo,-2.4,2.5,high,primary,"{1: 4, 2: 2, 3: 12, 4: 3, 5: 3, 6: 4}",patient; therapeutic ,Digital biobank for underrepresented patient populations.
+ocular_bio_design,Ocular Bio Design,Therapeutics,2,Celular,-7.2,1.0,medium,primary,"{1: 2, 2: 5, 3: 4, 4: 2, 5: 0, 6: 2}",biosynthetic ,Bioengineered corneal tissue for vision restoration.
+odd_industries,Odd Industries,Nature & Ecosystem Tech,6,Paisaje/Planeta,12.0,2.0,high,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 15}",ecosystem; conservation; earth observation; satellite ; biosphere,
+olho_do_dono,Olho do Dono,Farm Intelligence,5,Campo/Sistema,7.2,2.0,low,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",,
+omica,Omica,Diagnostics & Health Access,3,Organismo,-2.4,2.5,medium,primary,"{1: 7, 2: 2, 3: 12, 4: 3, 5: 3, 6: 4}",patient; therapeutic ,Digital biobank for underrepresented patient populations.
 onco_precision,Onco Precision,Therapeutics,3,Organismo,-2.4,2.2,high,primary,"{1: 3, 2: 0, 3: 13, 4: 0, 5: 0, 6: 0}",patient; therapeutic ; oncology,Patient-centric oncology antibody discovery platform.
-oncoliq,Oncoliq,Diagnostics & Health Access,3,Organismo,-2.4,2.0,high,primary,"{1: 0, 2: 0, 3: 10, 4: 0, 5: 0, 6: 0}",healthcare; oncology,Non-invasive early cancer detection.
-outpost,Outpost,Biomanufacturing & Fermentation Economy,3,Organismo,-2.4,1.67,medium,primary,"{1: 2, 2: 5, 3: 9, 4: 2, 5: 0, 6: 5}",medical device,Closed-loop microbiome predictive-biology platform.
+oncoliq,Oncoliq,Diagnostics & Health Access,3,Organismo,-2.4,2.0,high,primary,"{1: 0, 2: 0, 3: 13, 4: 0, 5: 0, 6: 0}",healthcare; oncology; cancer detection,Non-invasive early cancer detection.
+outpost,Outpost,Biomanufacturing & Fermentation Economy,3,Organismo,-2.4,1.67,medium,primary,"{1: 2, 2: 5, 3: 9, 4: 5, 5: 0, 6: 5}",medical device,Closed-loop microbiome predictive-biology platform.
 php_biotech,PHP Biotech,Therapeutics,3,Organismo,-2.4,2.0,high,primary,"{1: 0, 2: 0, 3: 3, 4: 0, 5: 0, 6: 0}",oncology,
-polymera,POLYMERA,Biomaterials & Circular Economy,2,Celular,-7.2,1.62,medium,primary,"{1: 2, 2: 6, 3: 0, 4: 2, 5: 5, 6: 2}",,Bio-based biodegradable superabsorbent polymers.
+polymera,POLYMERA,Biomaterials & Circular Economy,2,Celular,-7.2,1.62,medium,primary,"{1: 2, 2: 6, 3: 0, 4: 5, 5: 5, 6: 2}",,Bio-based biodegradable superabsorbent polymers.
 pow_foods,POW! Foods,Food Systems & Alt Proteins,4,Lote/Producto,2.4,2.0,high,primary,"{1: 3, 2: 0, 3: 0, 4: 9, 5: 0, 6: 3}",plant-based; meat alternative; food system,
 prosperia,PROSPERiA,Diagnostics & Health Access,3,Organismo,-2.4,2.0,low,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",,
 panarum,Panarum,Therapeutics,3,Organismo,-2.4,2.0,high,primary,"{1: 0, 2: 0, 3: 9, 4: 0, 5: 0, 6: 0}",clinical use; therapeutic ; healthcare,
 pannex_therapeutics,Pannex Therapeutics,Therapeutics,3,Organismo,-2.4,2.0,low,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",,
 patagon-fiber,Patagon Fiber,Biomaterials & Circular Economy,2,Celular,-7.2,1.0,low,primary,"{1: 0, 2: 2, 3: 0, 4: 2, 5: 2, 6: 0}",,Bacteria-derived sustainable inks and textile biomaterials.
-patagonia-biotechnology-cl,Patagonia Biotechnology,Bioinputs & Crop Resilience,5,Campo/Sistema,7.2,1.0,high,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 3, 6: 0}",crop yield,
-pathovet,Pathovet,Diagnostics & Health Access,3,Organismo,-2.4,2.0,medium,primary,"{1: 0, 2: 0, 3: 6, 4: 0, 5: 3, 6: 0}",veterinary; animal health,
+patagonia-biotechnology-cl,Patagonia Biotechnology,Bioinputs & Crop Resilience,1,Molecular,-12.0,1.0,medium,primary,"{1: 6, 2: 0, 3: 0, 4: 0, 5: 3, 6: 0}",active compound; bioactive compound,
+pathovet,Pathovet,Diagnostics & Health Access,3,Organismo,-2.4,2.0,high,primary,"{1: 0, 2: 0, 3: 9, 4: 0, 5: 3, 6: 0}",veterinary; animal health; farmed fish,
 peptidus-biotech-br,Peptidus Biotech,Therapeutics,3,Organismo,-2.4,2.0,medium,primary,"{1: 3, 2: 0, 3: 6, 4: 0, 5: 0, 6: 0}",veterinary; therapeutic ,
 pepton,Pepton,Therapeutics,3,Organismo,-2.4,1.67,medium,primary,"{1: 5, 2: 2, 3: 10, 4: 0, 5: 2, 6: 2}",human health; animal health,Advanced biomolecular alternatives to antibiotics.
 phagelab,PhageLab,Diagnostics & Health Access,5,Campo/Sistema,7.2,2.33,medium,primary,"{1: 5, 2: 0, 3: 6, 4: 0, 5: 7, 6: 0}",farm,AI-guided bacteriophage animal-health platform.
 pharmalens-br,Pharmalens,Therapeutics,3,Organismo,-2.4,3.0,low,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",,Applies computer vision and machine learning to automate visual defect detection and quality control in pharmaceutical a
-photio,Photio,Nature & Ecosystem Tech,3,Organismo,-2.4,2.0,low,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",,
+photio,Photio,Nature & Ecosystem Tech,1,Molecular,-12.0,2.0,medium,primary,"{1: 6, 2: 0, 3: 0, 4: 0, 5: 0, 6: 3}",nanotechnolog; nanotech,
 phylumtech,PhylumTech,Therapeutics,1,Molecular,-12.0,2.6,medium,primary,"{1: 8, 2: 2, 3: 4, 4: 0, 5: 2, 6: 0}",drug discovery; compound ,Small-animal drug discovery automation platform.
 pickcells,Pickcells,Diagnostics & Health Access,3,Organismo,-2.4,2.0,high,primary,"{1: 0, 2: 0, 3: 3, 4: 0, 5: 0, 6: 0}",healthcare,
 pill_ar,Pill.AR,Diagnostics & Health Access,3,Organismo,-2.4,1.67,high,primary,"{1: 0, 2: 2, 3: 12, 4: 4, 5: 0, 6: 2}",patient; personalized medicine,3D-printed personalized medicines platform.
@@ -367,33 +367,33 @@ pink-farms,Pink Farms,Nature & Ecosystem Tech,5,Campo/Sistema,7.2,3.0,medium,pri
 pixed,Pixed,Diagnostics & Health Access,6,Paisaje/Planeta,12.0,2.0,high,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 3}",biome,
 plamic,Plamic,Therapeutics,6,Paisaje/Planeta,12.0,1.4,medium,primary,"{1: 5, 2: 4, 3: 4, 4: 2, 5: 3, 6: 7}",biome,Microfluidic lab-on-a-chip platform for nanomedicine manufacturing.
 plamic_biotech,Plamic Biotech,Therapeutics,3,Organismo,-2.4,1.67,high,primary,"{1: 2, 2: 2, 3: 12, 4: 0, 5: 0, 6: 0}",personalized medicine; oncology,Microfluidic lab-on-a-chip cancer platform.
-polybion,Polybion,Biomaterials & Circular Economy,3,Organismo,-2.4,2.0,low,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",,
+polybion,Polybion,Biomaterials & Circular Economy,4,Lote/Producto,2.4,2.0,low,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",,
 poas_bioenergy,Poás Bioenergy,Nature & Ecosystem Tech,6,Paisaje/Planeta,12.0,3.0,high,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 2, 6: 6}",,Residue-to-energy and biochar platform.
 praxis-biotech-cl,Praxis Biotech,Therapeutics,1,Molecular,-12.0,1.0,medium,primary,"{1: 3, 2: 0, 3: 2, 4: 0, 5: 0, 6: 0}",drug discovery,"Drug discovery company targeting apoptosis and cell survival pathways for cancer and neurodegenerative diseases, spun fr"
 pregen,PreGen,Diagnostics & Health Access,1,Molecular,-12.0,3.0,low,primary,"{1: 7, 2: 0, 3: 7, 4: 0, 5: 2, 6: 2}",genomic,Affordable genomic cancer prognosis tests.
 precision_ag,Precision Ag,Nature & Ecosystem Tech,5,Campo/Sistema,7.2,3.0,medium,primary,"{1: 0, 2: 2, 3: 0, 4: 0, 5: 12, 6: 7}",field; crop management; crop monitoring,Agricultural drone spraying and crop-monitoring services.
 produzindo-certo,Produzindo Certo,Nature & Ecosystem Tech,5,Campo/Sistema,7.2,3.0,high,primary,"{1: 0, 2: 2, 3: 0, 4: 0, 5: 9, 6: 2}",agribusiness; agricultural production,Agribusiness transparency and compliance platform.
-progal,Progal,Food Systems & Alt Proteins,4,Lote/Producto,2.4,2.0,medium,primary,"{1: 0, 2: 0, 3: 0, 4: 6, 5: 0, 6: 3}",food ingredient; food ingredient,
+progal,Progal,Food Systems & Alt Proteins,4,Lote/Producto,2.4,2.0,medium,primary,"{1: 3, 2: 0, 3: 0, 4: 6, 5: 0, 6: 3}",food ingredient; food ingredient,
 promip,Promip,Bioinputs & Crop Resilience,5,Campo/Sistema,7.2,1.0,high,primary,"{1: 0, 2: 2, 3: 0, 4: 0, 5: 8, 6: 2}",pest management,Biological pest-control products and integrated pest management.
 protiva,Protiva,Biomaterials & Circular Economy,4,Lote/Producto,2.4,1.8,high,primary,"{1: 0, 2: 0, 3: 0, 4: 2, 5: 0, 6: 0}",,Bio-based colors for textile processes.
 puna_bio,Puna Bio,Bioinputs & Crop Resilience,5,Campo/Sistema,7.2,1.57,low,primary,"{1: 2, 2: 5, 3: 5, 4: 0, 5: 7, 6: 7}",field,Extremophile microbial seed treatments for crop resilience.
 qnity,Qnity,Therapeutics,1,Molecular,-12.0,2.33,high,primary,"{1: 5, 2: 0, 3: 2, 4: 2, 5: 2, 6: 0}",drug discovery,Quantum-electrochemical molecular screening for drug discovery.
-quantis-br,Quantis,Therapeutics,1,Molecular,-12.0,2.0,low,primary,"{1: 3, 2: 0, 3: 3, 4: 0, 5: 0, 6: 0}",protein ,
-qumir_nano,Qumir Nano,Bioinputs & Crop Resilience,1,Molecular,-12.0,1.5,medium,primary,"{1: 10, 2: 2, 3: 2, 4: 8, 5: 4, 6: 2}",metabolit; cell-free,Microbial-metabolite nanodelivery platform for crop inputs.
+quantis-br,Quantis,Therapeutics,1,Molecular,-12.0,2.0,low,primary,"{1: 3, 2: 0, 3: 3, 4: 3, 5: 0, 6: 0}",protein ,
+qumir_nano,Qumir Nano,Bioinputs & Crop Resilience,1,Molecular,-12.0,1.5,high,primary,"{1: 19, 2: 2, 3: 2, 4: 8, 5: 4, 6: 2}",metabolit; cell-free; nanotechnolog; nano ; nanotech,Microbial-metabolite nanodelivery platform for crop inputs.
 recepta_biopharma,RECEPTA Biopharma,Therapeutics,3,Organismo,-2.4,2.0,high,primary,"{1: 0, 2: 0, 3: 6, 4: 0, 5: 0, 6: 0}",therapeutic ; oncology,
-rnatech-ar,RNAtech,Food Systems & Alt Proteins,1,Molecular,-12.0,2.0,low,primary,"{1: 3, 2: 0, 3: 0, 4: 3, 5: 0, 6: 0}", rna ,Discovers RNA-based bioactive functional ingredients from natural sources using the Serkanto-AI platform for supplements
+rnatech-ar,RNAtech,Food Systems & Alt Proteins,4,Lote/Producto,2.4,2.0,medium,primary,"{1: 3, 2: 0, 3: 0, 4: 6, 5: 0, 6: 0}",functional food; cosmetic,Discovers RNA-based bioactive functional ingredients from natural sources using the Serkanto-AI platform for supplements
 radbio,Radbio,Therapeutics,3,Organismo,-2.4,2.0,medium,primary,"{1: 3, 2: 0, 3: 9, 4: 0, 5: 2, 6: 5}",therapeutic ,TGF-beta biologic therapeutics for fibrosis and cancer.
-radial,Radial,Biomaterials & Circular Economy,2,Celular,-7.2,1.57,low,primary,"{1: 0, 2: 2, 3: 0, 4: 2, 5: 0, 6: 2}",,Fungal biomaterials made from residues.
-reddot-bio-br,Reddot Bio,Farm Intelligence,3,Organismo,-2.4,2.0,low,primary,"{1: 3, 2: 0, 3: 6, 4: 0, 5: 6, 6: 0}",animal health; point-of-care,
+radial,Radial,Biomaterials & Circular Economy,4,Lote/Producto,2.4,1.57,high,primary,"{1: 0, 2: 2, 3: 0, 4: 11, 5: 0, 6: 2}",biomaterial product; material product; biobased material,Fungal biomaterials made from residues.
+reddot-bio-br,Reddot Bio,Farm Intelligence,1,Molecular,-12.0,2.0,medium,primary,"{1: 9, 2: 0, 3: 6, 4: 0, 5: 6, 6: 0}",molecular diagnostic; nano ; molecular biology,
 resistia,Resistia,Therapeutics,3,Organismo,-2.4,2.0,medium,primary,"{1: 2, 2: 0, 3: 4, 4: 2, 5: 2, 6: 0}",,Anti-biofilm antimicrobial biotech platform.
-rizoflora_biotechnology_acq_by_stoller,Rizoflora Biotechnology (acq. by Stoller)),Bioinputs & Crop Resilience,3,Organismo,-2.4,2.0,low,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",,
+rizoflora_biotechnology_acq_by_stoller,Rizoflora Biotechnology (acq. by Stoller)),Bioinputs & Crop Resilience,5,Campo/Sistema,7.2,2.0,low,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",,
 rumina,Rumina,Nature & Ecosystem Tech,5,Campo/Sistema,7.2,3.0,medium,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 8, 6: 5}",farm; farming,Technology platform for sustainable dairy production.
 ruuts,Ruuts,Nature & Ecosystem Tech,4,Lote/Producto,2.4,3.0,medium,primary,"{1: 0, 2: 2, 3: 0, 4: 8, 5: 6, 6: 7}",food ingredient; food ingredient,Regenerative agriculture incentives and ecological outcome measurement.
 samay,Samay,Diagnostics & Health Access,3,Organismo,-2.4,3.0,high,primary,"{1: 0, 2: 0, 3: 2, 4: 0, 5: 0, 6: 0}",,AI respiratory diagnosis and monitoring platform.
-satellites_on_fire,Satellites on Fire,Nature & Ecosystem Tech,6,Paisaje/Planeta,12.0,3.0,high,primary,"{1: 0, 2: 2, 3: 2, 4: 2, 5: 0, 6: 18}",ecosystem; biodiversity; planetary; carbon stock,"Real-time wildfire detection using satellites, cameras and AI."
-satellogic,Satellogic,Nature & Ecosystem Tech,6,Paisaje/Planeta,12.0,3.0,high,primary,"{1: 0, 2: 2, 3: 0, 4: 0, 5: 0, 6: 21}",ecosystem; satellite imager; planetary; conservation; climate risk,Earth-observation satellites for environmental and climate monitoring.
-savefruit-mx,SaveFruit,Food Systems & Alt Proteins,5,Campo/Sistema,7.2,2.0,high,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 3, 6: 0}",harvest,
-sciphage,SciPhage,Diagnostics & Health Access,3,Organismo,-2.4,2.33,low,primary,"{1: 2, 2: 4, 3: 5, 4: 0, 5: 5, 6: 0}",animal health,Bacteriophage bioproducts for animal health and food safety.
+satellites_on_fire,Satellites on Fire,Nature & Ecosystem Tech,6,Paisaje/Planeta,12.0,3.0,high,primary,"{1: 0, 2: 2, 3: 2, 4: 2, 5: 0, 6: 21}",ecosystem; biodiversity; planetary; carbon stock; satellite ,"Real-time wildfire detection using satellites, cameras and AI."
+satellogic,Satellogic,Nature & Ecosystem Tech,6,Paisaje/Planeta,12.0,3.0,high,primary,"{1: 0, 2: 2, 3: 0, 4: 0, 5: 0, 6: 24}",ecosystem; satellite imager; planetary; conservation; climate risk,Earth-observation satellites for environmental and climate monitoring.
+savefruit-mx,SaveFruit,Food Systems & Alt Proteins,1,Molecular,-12.0,2.0,medium,primary,"{1: 6, 2: 0, 3: 0, 4: 0, 5: 3, 6: 0}",nanotechnolog; nanotech,
+sciphage,SciPhage,Diagnostics & Health Access,5,Campo/Sistema,7.2,2.33,medium,primary,"{1: 2, 2: 4, 3: 5, 4: 0, 5: 8, 6: 0}",aquaculture,Bacteriophage bioproducts for animal health and food safety.
 scitherm_therapeutics,Scitherm Therapeutics,Therapeutics,1,Molecular,-12.0,2.0,low,primary,"{1: 4, 2: 0, 3: 4, 4: 0, 5: 0, 6: 0}",,Thermogenic obesity therapeutics.
 seedmatriz,SeedMatriz,Bioinputs & Crop Resilience,5,Campo/Sistema,7.2,3.0,medium,primary,"{1: 0, 2: 2, 3: 5, 4: 0, 5: 9, 6: 2}",field; agronomic,Seed encapsulation and crop-establishment technology platform.
 seedz,Seedz,Bioinputs & Crop Resilience,5,Campo/Sistema,7.2,3.0,high,primary,"{1: 0, 2: 2, 3: 0, 4: 0, 5: 12, 6: 2}",farm; agribusiness; agtech,"Agribusiness loyalty, marketplace and producer-intelligence platform."
@@ -408,29 +408,29 @@ sima,Sima,Farm Intelligence,5,Campo/Sistema,7.2,3.0,high,primary,"{1: 0, 2: 0, 3
 single_strand_biotech,Single Strand Biotech,Therapeutics,3,Organismo,-2.4,1.0,medium,primary,"{1: 6, 2: 0, 3: 7, 4: 0, 5: 0, 6: 0}",therapeutic ,Synthetic oligonucleotide therapeutics company.
 sioma,Sioma,Farm Intelligence,5,Campo/Sistema,7.2,3.0,high,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 8, 6: 0}",precision agriculture; agtech,Tropical crop traceability and operational intelligence platform.
 siquimia,Siquimia,Biomanufacturing & Fermentation Economy,1,Molecular,-12.0,2.0,high,primary,"{1: 6, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",peptide; reagent,
-sistema-bio-mx,Sistema.bio,Biomaterials & Circular Economy,5,Campo/Sistema,7.2,1.0,high,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 12, 6: 0}",farm; farmer; smallholder; smallholder farmer,Designs modular biodigesters that convert animal waste into biogas and organic fertilizer for smallholder farmers.
+sistema-bio-mx,Sistema.bio,Biomaterials & Circular Economy,5,Campo/Sistema,7.2,1.0,high,primary,"{1: 0, 2: 3, 3: 0, 4: 0, 5: 12, 6: 0}",farm; farmer; smallholder; smallholder farmer,Designs modular biodigesters that convert animal waste into biogas and organic fertilizer for smallholder farmers.
 smartbreeder,SmartBreeder,Farm Intelligence,5,Campo/Sistema,7.2,3.0,high,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 11, 6: 0}",precision agriculture; agronomic; agtech,AI agronomic forecasting platform.
 smatter,Smatter,Biomaterials & Circular Economy,2,Celular,-7.2,1.0,high,primary,"{1: 0, 2: 3, 3: 0, 4: 0, 5: 0, 6: 0}",microorganism,
-solena-mx,Solena,Bioinputs & Crop Resilience,5,Campo/Sistema,7.2,1.0,medium,primary,"{1: 3, 2: 0, 3: 0, 4: 0, 5: 6, 6: 3}",farm; farmer,
+solena-mx,Solena,Bioinputs & Crop Resilience,1,Molecular,-12.0,1.0,low,primary,"{1: 6, 2: 0, 3: 0, 4: 0, 5: 6, 6: 3}",genomic; genomics,
 solfium,Solfium,Nature & Ecosystem Tech,6,Paisaje/Planeta,12.0,3.0,high,primary,"{1: 0, 2: 2, 3: 0, 4: 0, 5: 0, 6: 5}",planetary,"Solar, storage and e-mobility deployment platform for value-chain decarbonization."
 solinftec,Solinftec,Farm Intelligence,5,Campo/Sistema,7.2,3.0,medium,primary,"{1: 0, 2: 2, 3: 0, 4: 6, 5: 9, 6: 2}",agribusiness; agtech,AI and autonomous agriculture platform.
 solubio,Solubio Tecnologias Agricolas,Bioinputs & Crop Resilience,5,Campo/Sistema,7.2,1.57,high,primary,"{1: 2, 2: 4, 3: 0, 4: 0, 5: 11, 6: 0}",farm; farmer,On-farm biological input production system.
 soygreen,SoyGREEN,Bioinputs & Crop Resilience,5,Campo/Sistema,7.2,1.0,medium,primary,"{1: 2, 2: 3, 3: 0, 4: 0, 5: 10, 6: 5}",farm; farming,Agricultural microbiology bioinputs for climate mitigation.
-spaceag,SpaceAG,Farm Intelligence,5,Campo/Sistema,7.2,3.0,high,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 14, 6: 2}",field; precision agriculture; agronomic; agtech,High-value crop agronomic workflow platform.
+spaceag,SpaceAG,Farm Intelligence,5,Campo/Sistema,7.2,3.0,high,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 14, 6: 5}",field; precision agriculture; agronomic; agtech,High-value crop agronomic workflow platform.
 speclab,SpecLab,Diagnostics & Health Access,3,Organismo,-2.4,2.5,medium,primary,"{1: 0, 2: 2, 3: 4, 4: 0, 5: 3, 6: 0}",,AI spectral analytics and laboratory digitization platform.
 speratum,Speratum,Therapeutics,1,Molecular,-12.0,2.0,low,primary,"{1: 3, 2: 0, 3: 3, 4: 0, 5: 0, 6: 0}", rna ,
-spherebio,SphereBio,Therapeutics,1,Molecular,-12.0,1.8,medium,primary,"{1: 8, 2: 0, 3: 7, 4: 0, 5: 0, 6: 0}",,Personalized cancer vaccine and therapeutic platform.
+spherebio,SphereBio,Therapeutics,1,Molecular,-12.0,1.8,medium,primary,"{1: 14, 2: 0, 3: 7, 4: 0, 5: 0, 6: 0}",nanotechnolog; nanotech,Personalized cancer vaccine and therapeutic platform.
 splight,Splight,Nature & Ecosystem Tech,6,Paisaje/Planeta,12.0,3.0,medium,primary,"{1: 0, 2: 2, 3: 0, 4: 0, 5: 3, 6: 5}",planetary,AI for grid optimization and renewable energy integration.
-spora_biotech,Spora Biotech,Biomaterials & Circular Economy,3,Organismo,-2.4,1.0,low,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",,
-strider-br,Strider,Farm Intelligence,3,Organismo,-2.4,3.0,low,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",,
-strong-by-form-cl,Strong by Form,Biomaterials & Circular Economy,3,Organismo,-2.4,2.0,low,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",,
+spora_biotech,Spora Biotech,Biomaterials & Circular Economy,4,Lote/Producto,2.4,1.0,low,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",,
+strider-br,Strider,Farm Intelligence,5,Campo/Sistema,7.2,3.0,low,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",,
+strong-by-form-cl,Strong by Form,Biomaterials & Circular Economy,4,Lote/Producto,2.4,2.0,low,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",,
 stamm,Stämm,Biomanufacturing & Fermentation Economy,2,Celular,-7.2,2.2,medium,primary,"{1: 8, 2: 10, 3: 0, 4: 0, 5: 0, 6: 0}",bioreactor; bioprocess,High-throughput bioprocessing and Bio AI for biologics manufacturing.
 sylvarum,Sylvarum,Bioinputs & Crop Resilience,5,Campo/Sistema,7.2,2.0,medium,primary,"{1: 2, 2: 2, 3: 3, 4: 0, 5: 8, 6: 4}",agtech,Non-thermal plasma seed-performance platform.
-symbiomics,Symbiomics,Bioinputs & Crop Resilience,1,Molecular,-12.0,1.8,low,primary,"{1: 7, 2: 7, 3: 2, 4: 0, 5: 5, 6: 7}",genomic,Microbial discovery platform for high-performance agricultural biologicals.
+symbiomics,Symbiomics,Bioinputs & Crop Resilience,1,Molecular,-12.0,1.8,low,primary,"{1: 7, 2: 7, 3: 2, 4: 3, 5: 5, 6: 7}",genomic,Microbial discovery platform for high-performance agricultural biologicals.
 synthetic_ocular_restoration,Synthetic Ocular Restoration,Therapeutics,3,Organismo,-2.4,1.5,medium,primary,"{1: 2, 2: 2, 3: 4, 4: 2, 5: 0, 6: 2}",,Engineered corneal tissue platform.
 syocin-biotech,Syocin Biotech,Bioinputs & Crop Resilience,1,Molecular,-12.0,1.33,medium,primary,"{1: 7, 2: 4, 3: 2, 4: 0, 5: 4, 6: 3}",protein ,Precision protein biobactericides for crop protection.
 tbit,TBIT,Farm Intelligence,5,Campo/Sistema,7.2,3.0,high,primary,"{1: 0, 2: 2, 3: 0, 4: 2, 5: 9, 6: 2}",grain; agtech,AI seed and grain analysis platform.
-tarvos-br,Tarvos,Farm Intelligence,5,Campo/Sistema,7.2,3.0,high,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 12, 6: 5}",field; crop monitoring; soybean; cotton,Deploys AI-powered automated traps with computer vision to monitor and predict agricultural pest infestations at 95% acc
+tarvos-br,Tarvos,Farm Intelligence,5,Campo/Sistema,7.2,3.0,medium,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 12, 6: 8}",field; crop monitoring; soybean; cotton,Deploys AI-powered automated traps with computer vision to monitor and predict agricultural pest infestations at 95% acc
 taugc-bioinformatics-br,TauGC Bioinformatics,Therapeutics,1,Molecular,-12.0,2.0,low,primary,"{1: 3, 2: 0, 3: 3, 4: 0, 5: 0, 6: 0}",genomic,
 tell,Tell,Diagnostics & Health Access,3,Organismo,-2.4,3.0,medium,primary,"{1: 2, 2: 0, 3: 4, 4: 2, 5: 0, 6: 0}",,Speech-based neurodegeneration detection platform.
 tensor-care,Tensor Care,Diagnostics & Health Access,3,Organismo,-2.4,3.0,medium,primary,"{1: 0, 2: 2, 3: 4, 4: 0, 5: 0, 6: 2}",,Quantitative MRI analytics for joint diagnostics.
@@ -438,9 +438,9 @@ terramagna,TerraMagna,Nature & Ecosystem Tech,5,Campo/Sistema,7.2,3.0,high,prima
 terragene-ar,Terragene,Diagnostics & Health Access,3,Organismo,-2.4,1.0,medium,primary,"{1: 3, 2: 0, 3: 6, 4: 0, 5: 0, 6: 0}",healthcare; hospital,
 tesabio_ai,Tesabio.ai,Therapeutics,3,Organismo,-2.4,2.0,high,primary,"{1: 3, 2: 0, 3: 7, 4: 0, 5: 0, 6: 0}",therapeutic ,AI-driven microRNA therapeutics platform.
 the-earth-says,The Earth Says,Nature & Ecosystem Tech,5,Campo/Sistema,7.2,2.33,high,primary,"{1: 0, 2: 2, 3: 0, 4: 0, 5: 13, 6: 6}",agtech; crop yield,AI pollination optimization platform.
-the-live-green-co-cl,The Live Green Co,Food Systems & Alt Proteins,4,Lote/Producto,2.4,2.0,high,primary,"{1: 0, 2: 0, 3: 0, 4: 3, 5: 0, 6: 0}",plant-based,
+the-live-green-co-cl,The Live Green Co,Food Systems & Alt Proteins,4,Lote/Producto,2.4,2.0,high,primary,"{1: 0, 2: 0, 3: 0, 4: 6, 5: 0, 6: 0}",plant-based; personal care,
 theravax,TheraVax,Therapeutics,3,Organismo,-2.4,2.0,high,primary,"{1: 0, 2: 0, 3: 6, 4: 0, 5: 0, 6: 0}",patient; therapeutic ,
-thermy,Thermy,Diagnostics & Health Access,3,Organismo,-2.4,2.0,high,primary,"{1: 0, 2: 0, 3: 3, 4: 0, 5: 0, 6: 0}",healthcare,
+thermy,Thermy,Diagnostics & Health Access,3,Organismo,-2.4,2.0,high,primary,"{1: 0, 2: 0, 3: 6, 4: 0, 5: 0, 6: 0}",healthcare; cancer detection,
 thyroidprint,ThyroidPrint,Diagnostics & Health Access,1,Molecular,-12.0,2.0,high,primary,"{1: 3, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",molecular diagnostic,
 tintte,Tintte,Biomaterials & Circular Economy,2,Celular,-7.2,1.0,high,primary,"{1: 4, 2: 14, 3: 0, 4: 2, 5: 0, 6: 0}",bioprocess; microorganism,Microbial biopigments for sustainable textile dyeing.
 tismoo,Tismoo,Diagnostics & Health Access,1,Molecular,-12.0,2.0,low,primary,"{1: 3, 2: 0, 3: 3, 4: 0, 5: 0, 6: 0}",genomic,
@@ -464,26 +464,26 @@ vetpix,Vetpix,Diagnostics & Health Access,3,Organismo,-2.4,2.0,high,primary,"{1:
 vexxel_biotech,Vexxel Biotech,Bioinputs & Crop Resilience,5,Campo/Sistema,7.2,1.0,medium,primary,"{1: 3, 2: 0, 3: 0, 4: 0, 5: 4, 6: 2}",,Smart protein-based encapsulation.
 viewmind,ViewMind,Diagnostics & Health Access,3,Organismo,-2.4,1.0,high,primary,"{1: 0, 2: 2, 3: 6, 4: 2, 5: 0, 6: 0}",,Ocular digital phenotyping for neurocognitive diagnostics.
 virtech_bio,Virtech Bio,Therapeutics,3,Organismo,-2.4,2.0,low,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",,
-vitales-br,Vitales,Bioinputs & Crop Resilience,5,Campo/Sistema,7.2,2.0,medium,primary,"{1: 0, 2: 6, 3: 0, 4: 0, 5: 9, 6: 0}",farm; farming; soybean,
+vitales-br,Vitales,Bioinputs & Crop Resilience,5,Campo/Sistema,7.2,2.0,medium,primary,"{1: 0, 2: 6, 3: 0, 4: 3, 5: 9, 6: 0}",farm; farming; soybean,
 voa,Voa,Farm Intelligence,5,Campo/Sistema,7.2,2.14,high,primary,"{1: 2, 2: 2, 3: 2, 4: 0, 5: 20, 6: 2}",farm; field; field monitoring; crop monitoring; agricultural production,Drone-enabled crop monitoring and biological-input application.
 vyro-bio-br,Vyro Bio,Therapeutics,3,Organismo,-2.4,2.0,high,primary,"{1: 0, 2: 0, 3: 6, 4: 0, 5: 0, 6: 0}",therapeutic ; pediatric,
-waterplan,Waterplan,Nature & Ecosystem Tech,6,Paisaje/Planeta,12.0,3.0,high,primary,"{1: 0, 2: 2, 3: 0, 4: 0, 5: 0, 6: 7}",planetary,AI-native water-risk and stewardship platform.
-wayakit,Wayakit,Biomaterials & Circular Economy,3,Organismo,-2.4,1.0,low,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",,
+waterplan,Waterplan,Nature & Ecosystem Tech,6,Paisaje/Planeta,12.0,3.0,high,primary,"{1: 0, 2: 2, 3: 0, 4: 0, 5: 3, 6: 7}",planetary,AI-native water-risk and stewardship platform.
+wayakit,Wayakit,Biomaterials & Circular Economy,4,Lote/Producto,2.4,1.0,high,primary,"{1: 0, 2: 0, 3: 0, 4: 3, 5: 0, 6: 0}",microbial product,
 webio-ar,WeBio,Therapeutics,3,Organismo,-2.4,2.0,low,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",,
-werk-nvac,WerkénVac,Bioinputs & Crop Resilience,3,Organismo,-2.4,2.0,medium,primary,"{1: 3, 2: 0, 3: 5, 4: 0, 5: 2, 6: 0}",animal health,Self-amplifying RNA vaccine for fish.
-wiagro,Wiagro,Farm Intelligence,5,Campo/Sistema,7.2,3.0,medium,primary,"{1: 0, 2: 2, 3: 0, 4: 0, 5: 11, 6: 6}",harvest; grain,Post-harvest grain monitoring and traceability platform.
+werk-nvac,WerkénVac,Bioinputs & Crop Resilience,3,Organismo,-2.4,2.0,low,primary,"{1: 3, 2: 0, 3: 5, 4: 0, 5: 5, 6: 0}",animal health,Self-amplifying RNA vaccine for fish.
+wiagro,Wiagro,Farm Intelligence,5,Campo/Sistema,7.2,3.0,medium,primary,"{1: 0, 2: 2, 3: 0, 4: 0, 5: 11, 6: 9}",harvest; grain,Post-harvest grain monitoring and traceability platform.
 wiseconn-cl,Wiseconn,Farm Intelligence,5,Campo/Sistema,7.2,3.0,high,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 12, 6: 0}",farm; field; irrigation; farmer,
 xeptiva,Xeptiva,Therapeutics,3,Organismo,-2.4,2.33,high,primary,"{1: 0, 2: 0, 3: 10, 4: 0, 5: 2, 6: 0}",animal health; therapeutic ,Pet immunotherapy and therapeutic vaccine platform.
 ymmunobio,Ymmunobio,Therapeutics,1,Molecular,-12.0,2.0,high,primary,"{1: 3, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",antibod,
 zev_biotech,ZEV Biotech,Diagnostics & Health Access,3,Organismo,-2.4,3.0,medium,primary,"{1: 5, 2: 0, 3: 7, 4: 0, 5: 0, 6: 0}",healthcare,Lab-deployable molecular diagnostics platform.
 zavia_bio,Zavia Bio,Bioinputs & Crop Resilience,1,Molecular,-12.0,1.89,medium,primary,"{1: 13, 2: 10, 3: 0, 4: 0, 5: 5, 6: 2}",protein ; peptide; biomolecul,Designer-protein biological inputs for crop resilience.
 zoomagri,ZoomAgri,Farm Intelligence,5,Campo/Sistema,7.2,3.0,high,primary,"{1: 0, 2: 2, 3: 0, 4: 2, 5: 9, 6: 2}",precision agriculture; agtech,Computer-vision inspection and certification for agri commodities and food.
-algaebio,algaebio+,Food Systems & Alt Proteins,4,Lote/Producto,2.4,1.0,medium,primary,"{1: 0, 2: 7, 3: 2, 4: 11, 5: 0, 6: 0}",functional food; nutraceutical; novel ingredient,Microalgae functional ingredients company.
+algaebio,algaebio+,Food Systems & Alt Proteins,4,Lote/Producto,2.4,1.0,medium,primary,"{1: 0, 2: 7, 3: 2, 4: 14, 5: 3, 6: 0}",functional food; nutraceutical; novel ingredient; cosmetic,Microalgae functional ingredients company.
 goflux,goFlux,Nature & Ecosystem Tech,5,Campo/Sistema,7.2,3.0,medium,primary,"{1: 0, 2: 2, 3: 0, 4: 2, 5: 3, 6: 2}",,B2B freight management and carbon-aware logistics platform.
-growpack,growPack,Biomaterials & Circular Economy,3,Organismo,-2.4,1.0,low,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",,
+growpack,growPack,Biomaterials & Circular Economy,4,Lote/Producto,2.4,1.0,high,primary,"{1: 0, 2: 0, 3: 0, 4: 6, 5: 0, 6: 0}",packaging; bio-based packaging,
 mabxience-ar,mAbxience,Therapeutics,1,Molecular,-12.0,2.0,high,primary,"{1: 12, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",antibod; monoclonal; biologics ; biosimilar,
 metabix-biotech,metaBIX Biotech,Diagnostics & Health Access,3,Organismo,-2.4,3.0,medium,primary,"{1: 0, 2: 2, 3: 4, 4: 0, 5: 2, 6: 2}",,Environmental sampling and AI bio-vigilance platform.
 microscopia,microscopIA,Diagnostics & Health Access,3,Organismo,-2.4,3.0,high,primary,"{1: 0, 2: 2, 3: 7, 4: 2, 5: 3, 6: 0}",veterinary,AI-enabled automated microscopy devices.
 nchemi-br,nChemi,Therapeutics,1,Molecular,-12.0,2.0,high,primary,"{1: 3, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}",nanoparticle,
 re_green,re.green,Nature & Ecosystem Tech,6,Paisaje/Planeta,12.0,3.0,high,primary,"{1: 0, 2: 2, 3: 0, 4: 0, 5: 0, 6: 15}",ecosystem; carbon credit; biodiversity,Tropical forest restoration and carbon credit platform.
-ucrop-it-ar,ucrop.it,Nature & Ecosystem Tech,5,Campo/Sistema,7.2,3.0,medium,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 9, 6: 8}",field; agribusiness; field data,Satellite-backed traceability platform that verifies sustainable agricultural practices across agribusiness supply chain
+ucrop-it-ar,ucrop.it,Nature & Ecosystem Tech,6,Paisaje/Planeta,12.0,3.0,medium,primary,"{1: 0, 2: 0, 3: 0, 4: 0, 5: 9, 6: 11}",deforestation; deforest; satellite ,Satellite-backed traceability platform that verifies sustainable agricultural practices across agribusiness supply chain

@@ -63,8 +63,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.655,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -2.31,
-      "py": 0.548
+      "px": -1.059,
+      "py": 0.593
     },
     {
       "id": "biomakers",
@@ -114,8 +114,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.907,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -3.525,
-      "py": 0.67
+      "px": -2.906,
+      "py": 0.373
     },
     {
       "id": "biosens",
@@ -157,8 +157,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.102,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -3.309,
-      "py": 0.002
+      "px": -1.938,
+      "py": -0.231
     },
     {
       "id": "bitmec",
@@ -200,8 +200,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.035,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -3.453,
-      "py": 0.086
+      "px": -3.269,
+      "py": -0.227
     },
     {
       "id": "bleps_vision",
@@ -249,8 +249,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.698,
       "mscale": 3,
       "mpar": 3.0,
-      "px": -3.591,
-      "py": 8.302
+      "px": -2.155,
+      "py": 9.829
     },
     {
       "id": "brain4care-br",
@@ -292,8 +292,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.896,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -3.009,
-      "py": -0.704
+      "px": -2.256,
+      "py": -0.166
     },
     {
       "id": "carigenetics",
@@ -335,8 +335,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.086,
       "mscale": 1,
       "mpar": 2.0,
-      "px": -13.227,
-      "py": 0.396
+      "px": -11.163,
+      "py": -0.394
     },
     {
       "id": "caspr_biotech",
@@ -385,8 +385,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.71,
       "mscale": 1,
       "mpar": 3.0,
-      "px": -10.512,
-      "py": 8.868
+      "px": -12.046,
+      "py": 9.242
     },
     {
       "id": "caspr_biotech_acq_by_amazon",
@@ -428,8 +428,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.219,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -1.653,
-      "py": -0.912
+      "px": -3.646,
+      "py": 0.581
     },
     {
       "id": "celer_biotecnologia",
@@ -471,8 +471,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.122,
       "mscale": 1,
       "mpar": 2.0,
-      "px": -12.483,
-      "py": -0.094
+      "px": -11.522,
+      "py": 0.566
     },
     {
       "id": "chemtest",
@@ -519,8 +519,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.711,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -1.752,
-      "py": -0.542
+      "px": -2.331,
+      "py": 0.031
     },
     {
       "id": "corsync",
@@ -560,10 +560,10 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_source": "gridx_valuation",
       "sx": 6.708,
       "sy": -10.145,
-      "mscale": 3,
+      "mscale": 1,
       "mpar": 2.0,
-      "px": -2.646,
-      "py": 0.208
+      "px": -10.767,
+      "py": -0.36
     },
     {
       "id": "cutting_edge_superconductors",
@@ -603,10 +603,10 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_source": "gridx_valuation",
       "sx": 6.633,
       "sy": -10.039,
-      "mscale": 3,
+      "mscale": 1,
       "mpar": 2.0,
-      "px": -2.502,
-      "py": 0.73
+      "px": -12.419,
+      "py": 0.137
     },
     {
       "id": "daeki-cl",
@@ -646,10 +646,10 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_source": "emergente",
       "sx": 6.652,
       "sy": -10.245,
-      "mscale": 3,
+      "mscale": 1,
       "mpar": 2.0,
-      "px": -3.69,
-      "py": -0.124
+      "px": -11.917,
+      "py": -0.678
     },
     {
       "id": "dart_by_teledx",
@@ -691,8 +691,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.224,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -2.109,
-      "py": -0.57
+      "px": -3.0,
+      "py": 0.471
     },
     {
       "id": "detx_mol",
@@ -734,8 +734,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.856,
       "mscale": 1,
       "mpar": 2.0,
-      "px": -11.112,
-      "py": 0.23
+      "px": -13.163,
+      "py": -0.341
     },
     {
       "id": "diagnosis_biotech",
@@ -777,8 +777,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.11,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -2.562,
-      "py": -0.384
+      "px": -2.215,
+      "py": -0.339
     },
     {
       "id": "diagtech",
@@ -820,8 +820,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.115,
       "mscale": 1,
       "mpar": 2.0,
-      "px": -12.825,
-      "py": -0.062
+      "px": -13.476,
+      "py": 0.998
     },
     {
       "id": "embryoxite",
@@ -869,8 +869,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.675,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -2.586,
-      "py": 0.432
+      "px": -0.961,
+      "py": -0.599
     },
     {
       "id": "enteria",
@@ -917,8 +917,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.645,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -1.566,
-      "py": -0.356
+      "px": -1.453,
+      "py": -0.571
     },
     {
       "id": "establishment_labs",
@@ -960,8 +960,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.372,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -0.975,
-      "py": 0.316
+      "px": -1.908,
+      "py": -0.169
     },
     {
       "id": "eva-mx",
@@ -1003,8 +1003,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.198,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -2.856,
-      "py": -0.49
+      "px": -0.917,
+      "py": -0.706
     },
     {
       "id": "fabns",
@@ -1046,8 +1046,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.12,
       "mscale": 1,
       "mpar": 2.0,
-      "px": -10.89,
-      "py": 0.798
+      "px": -12.576,
+      "py": 0.253
     },
     {
       "id": "gen-t-br",
@@ -1087,10 +1087,10 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_source": "gridx_valuation",
       "sx": -15.818,
       "sy": -12.255,
-      "mscale": 3,
+      "mscale": 1,
       "mpar": 2.0,
-      "px": -2.025,
-      "py": -0.558
+      "px": -11.55,
+      "py": 0.164
     },
     {
       "id": "geneprodx-mx",
@@ -1132,8 +1132,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.223,
       "mscale": 1,
       "mpar": 2.0,
-      "px": -13.407,
-      "py": -0.364
+      "px": -13.463,
+      "py": -0.259
     },
     {
       "id": "genomika_diagnosticos",
@@ -1175,8 +1175,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.103,
       "mscale": 1,
       "mpar": 2.0,
-      "px": -10.524,
-      "py": 0.062
+      "px": -12.882,
+      "py": 0.17
     },
     {
       "id": "gentec",
@@ -1218,8 +1218,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -1.584,
       "mscale": 1,
       "mpar": 2.0,
-      "px": -11.235,
-      "py": 0.724
+      "px": -13.278,
+      "py": -0.998
     },
     {
       "id": "gisens_biotech",
@@ -1266,10 +1266,10 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_source": "gridx_valuation",
       "sx": 6.34,
       "sy": -9.639,
-      "mscale": 3,
+      "mscale": 1,
       "mpar": 2.0,
-      "px": -3.177,
-      "py": 0.53
+      "px": -12.889,
+      "py": 0.723
     },
     {
       "id": "glucogear",
@@ -1311,8 +1311,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.186,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -2.946,
-      "py": -0.974
+      "px": -3.144,
+      "py": -0.764
     },
     {
       "id": "grupo_diagnostico_aries",
@@ -1354,8 +1354,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.13,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -2.454,
-      "py": -0.028
+      "px": -2.044,
+      "py": -0.526
     },
     {
       "id": "heritas",
@@ -1397,8 +1397,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.03,
       "mscale": 1,
       "mpar": 2.0,
-      "px": -11.526,
-      "py": -0.952
+      "px": -10.76,
+      "py": -0.16
     },
     {
       "id": "hilab-br",
@@ -1440,8 +1440,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.222,
       "mscale": 3,
       "mpar": 3.0,
-      "px": -2.274,
-      "py": 9.768
+      "px": -3.53,
+      "py": 9.389
     },
     {
       "id": "hoobox_one",
@@ -1483,8 +1483,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.233,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -1.878,
-      "py": 0.228
+      "px": -2.794,
+      "py": 0.217
     },
     {
       "id": "huna",
@@ -1526,8 +1526,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.205,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -3.42,
-      "py": 0.584
+      "px": -3.06,
+      "py": 0.727
     },
     {
       "id": "inpulse_medical",
@@ -1569,8 +1569,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.041,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -1.734,
-      "py": 0.47
+      "px": -1.9,
+      "py": -0.28
     },
     {
       "id": "kheiron-biotech-ar",
@@ -1612,8 +1612,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 3.559,
       "mscale": 1,
       "mpar": 2.0,
-      "px": -12.315,
-      "py": 0.784
+      "px": -11.599,
+      "py": 0.276
     },
     {
       "id": "levita-magnetics-cl",
@@ -1655,8 +1655,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.074,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -3.723,
-      "py": -0.704
+      "px": -3.463,
+      "py": 0.825
     },
     {
       "id": "limay",
@@ -1698,8 +1698,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.116,
       "mscale": 1,
       "mpar": 2.0,
-      "px": -11.382,
-      "py": 0.814
+      "px": -12.823,
+      "py": -0.06
     },
     {
       "id": "limay_biosciences",
@@ -1748,8 +1748,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.748,
       "mscale": 1,
       "mpar": 2.0,
-      "px": -11.073,
-      "py": -0.116
+      "px": -10.627,
+      "py": -0.953
     },
     {
       "id": "linda_lifetech",
@@ -1791,8 +1791,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.183,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -2.226,
-      "py": -0.826
+      "px": -2.197,
+      "py": 0.349
     },
     {
       "id": "mendelics",
@@ -1834,8 +1834,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.083,
       "mscale": 1,
       "mpar": 2.0,
-      "px": -11.442,
-      "py": -0.034
+      "px": -13.429,
+      "py": 0.256
     },
     {
       "id": "microgenesis",
@@ -1882,8 +1882,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.659,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -2.148,
-      "py": 0.526
+      "px": -1.868,
+      "py": -0.67
     },
     {
       "id": "microscopia",
@@ -1932,8 +1932,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.318,
       "mscale": 3,
       "mpar": 3.0,
-      "px": -1.431,
-      "py": 9.71
+      "px": -1.657,
+      "py": 9.971
     },
     {
       "id": "mirai_3d",
@@ -1975,8 +1975,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -8.631,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -3.234,
-      "py": 0.168
+      "px": -2.223,
+      "py": -0.408
     },
     {
       "id": "multiplai_health",
@@ -2025,8 +2025,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.899,
       "mscale": 1,
       "mpar": 3.0,
-      "px": -11.265,
-      "py": 8.458
+      "px": -11.543,
+      "py": 8.791
     },
     {
       "id": "mzp",
@@ -2073,8 +2073,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.652,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -1.479,
-      "py": 0.374
+      "px": -1.603,
+      "py": -0.027
     },
     {
       "id": "mzp-tecnologia-ar",
@@ -2116,8 +2116,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.738,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -3.237,
-      "py": -0.806
+      "px": -3.367,
+      "py": -0.91
     },
     {
       "id": "nanojump_bio",
@@ -2164,8 +2164,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.642,
       "mscale": 1,
       "mpar": 2.0,
-      "px": -12.153,
-      "py": -0.802
+      "px": -13.191,
+      "py": -0.819
     },
     {
       "id": "neomed-br",
@@ -2207,8 +2207,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.321,
       "mscale": 3,
       "mpar": 3.0,
-      "px": -2.199,
-      "py": 8.882
+      "px": -1.954,
+      "py": 8.593
     },
     {
       "id": "neuralmed",
@@ -2250,8 +2250,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.127,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -2.037,
-      "py": -0.86
+      "px": -1.097,
+      "py": 0.526
     },
     {
       "id": "neurognos",
@@ -2291,10 +2291,10 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_source": "gridx_valuation",
       "sx": 6.808,
       "sy": -10.201,
-      "mscale": 3,
+      "mscale": 1,
       "mpar": 2.0,
-      "px": -1.275,
-      "py": 0.688
+      "px": -11.352,
+      "py": -0.233
     },
     {
       "id": "novagenic_affinity",
@@ -2334,10 +2334,10 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_source": "gridx_valuation",
       "sx": 6.362,
       "sy": -10.117,
-      "mscale": 3,
+      "mscale": 1,
       "mpar": 2.0,
-      "px": -2.415,
-      "py": 0.94
+      "px": -11.891,
+      "py": -0.499
     },
     {
       "id": "oncoliq",
@@ -2384,8 +2384,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.657,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -1.98,
-      "py": 0.972
+      "px": -3.785,
+      "py": 0.863
     },
     {
       "id": "pathovet",
@@ -2427,8 +2427,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.304,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -2.946,
-      "py": 0.22
+      "px": -3.552,
+      "py": -0.274
     },
     {
       "id": "pharmalens-br",
@@ -2473,8 +2473,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -12.67,
       "mscale": 3,
       "mpar": 3.0,
-      "px": -2.373,
-      "py": 9.574
+      "px": -3.334,
+      "py": 8.228
     },
     {
       "id": "pickcells",
@@ -2516,8 +2516,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.277,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -3.585,
-      "py": -0.076
+      "px": -2.376,
+      "py": 0.908
     },
     {
       "id": "pixed",
@@ -2559,8 +2559,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.047,
       "mscale": 6,
       "mpar": 2.0,
-      "px": 12.591,
-      "py": -0.738
+      "px": 13.015,
+      "py": -0.591
     },
     {
       "id": "pregen",
@@ -2610,8 +2610,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.891,
       "mscale": 1,
       "mpar": 3.0,
-      "px": -11.925,
-      "py": 8.426
+      "px": -10.5,
+      "py": 9.117
     },
     {
       "id": "prosperia",
@@ -2653,8 +2653,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.172,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -2.991,
-      "py": -0.066
+      "px": -3.587,
+      "py": 0.337
     },
     {
       "id": "reddot-bio-br",
@@ -2694,10 +2694,10 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_source": "gridx_valuation",
       "sx": 3.787,
       "sy": 12.27,
-      "mscale": 3,
+      "mscale": 1,
       "mpar": 2.0,
-      "px": -0.921,
-      "py": -0.018
+      "px": -10.645,
+      "py": 0.356
     },
     {
       "id": "samay",
@@ -2745,8 +2745,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.757,
       "mscale": 3,
       "mpar": 3.0,
-      "px": -0.93,
-      "py": 8.008
+      "px": -1.644,
+      "py": 9.394
     },
     {
       "id": "selectivity",
@@ -2788,8 +2788,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.034,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -1.968,
-      "py": 0.888
+      "px": -2.867,
+      "py": 0.591
     },
     {
       "id": "taugc-bioinformatics-br",
@@ -2831,8 +2831,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.174,
       "mscale": 1,
       "mpar": 2.0,
-      "px": -13.401,
-      "py": -0.658
+      "px": -13.208,
+      "py": -0.045
     },
     {
       "id": "tell",
@@ -2880,8 +2880,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.888,
       "mscale": 3,
       "mpar": 3.0,
-      "px": -3.285,
-      "py": 9.542
+      "px": -1.36,
+      "py": 9.777
     },
     {
       "id": "terragene-ar",
@@ -2923,8 +2923,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.143,
       "mscale": 3,
       "mpar": 1.0,
-      "px": -1.836,
-      "py": -8.626
+      "px": -3.613,
+      "py": -9.16
     },
     {
       "id": "thermy",
@@ -2966,8 +2966,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.163,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -1.263,
-      "py": -0.968
+      "px": -3.892,
+      "py": 0.549
     },
     {
       "id": "thyroidprint",
@@ -3009,8 +3009,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.099,
       "mscale": 1,
       "mpar": 2.0,
-      "px": -13.122,
-      "py": -0.664
+      "px": -13.023,
+      "py": -0.722
     },
     {
       "id": "tismoo",
@@ -3052,8 +3052,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.155,
       "mscale": 1,
       "mpar": 2.0,
-      "px": -11.796,
-      "py": 0.578
+      "px": -10.661,
+      "py": 0.491
     },
     {
       "id": "ubique_bio",
@@ -3100,8 +3100,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.619,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -1.971,
-      "py": -0.016
+      "px": -2.555,
+      "py": -0.995
     },
     {
       "id": "unima-mx",
@@ -3143,8 +3143,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.239,
       "mscale": 1,
       "mpar": 3.0,
-      "px": -12.753,
-      "py": 9.212
+      "px": -11.445,
+      "py": 9.776
     },
     {
       "id": "vetpix",
@@ -3186,8 +3186,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.301,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -3.807,
-      "py": -0.816
+      "px": -2.049,
+      "py": 0.027
     },
     {
       "id": "zev_biotech",
@@ -3236,8 +3236,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.618,
       "mscale": 3,
       "mpar": 3.0,
-      "px": -3.78,
-      "py": 8.704
+      "px": -3.444,
+      "py": 8.029
     },
     {
       "id": "aintech",
@@ -3277,10 +3277,10 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_source": "gridx_valuation",
       "sx": -8.323,
       "sy": 1.533,
-      "mscale": 3,
+      "mscale": 1,
       "mpar": 2.0,
-      "px": -2.898,
-      "py": -0.024
+      "px": -13.234,
+      "py": 0.527
     },
     {
       "id": "brtc",
@@ -3320,10 +3320,10 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_source": "gridx_valuation",
       "sx": -8.33,
       "sy": 1.517,
-      "mscale": 3,
+      "mscale": 1,
       "mpar": 2.0,
-      "px": -3.792,
-      "py": -0.1
+      "px": -13.195,
+      "py": 0.895
     },
     {
       "id": "copper3d",
@@ -3363,10 +3363,10 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_source": "gridx_valuation",
       "sx": -8.312,
       "sy": 1.527,
-      "mscale": 3,
+      "mscale": 1,
       "mpar": 2.0,
-      "px": -2.952,
-      "py": -0.496
+      "px": -11.012,
+      "py": -0.953
     },
     {
       "id": "copptech",
@@ -3408,8 +3408,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 1.512,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -3.666,
-      "py": -0.788
+      "px": -2.623,
+      "py": -0.494
     },
     {
       "id": "nanoblast",
@@ -3449,10 +3449,10 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_source": "gridx_valuation",
       "sx": -10.087,
       "sy": -9.865,
-      "mscale": 3,
+      "mscale": 1,
       "mpar": 2.0,
-      "px": -2.124,
-      "py": -0.868
+      "px": -10.812,
+      "py": -0.062
     },
     {
       "id": "nanopharmacia-group-mx",
@@ -3494,8 +3494,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.882,
       "mscale": 1,
       "mpar": 2.0,
-      "px": -12.288,
-      "py": 0.938
+      "px": -12.332,
+      "py": -0.628
     },
     {
       "id": "nanotropic_tecnologia",
@@ -3537,8 +3537,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 1.534,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -0.915,
-      "py": -0.526
+      "px": -3.174,
+      "py": 0.051
     },
     {
       "id": "nanovetores_group",
@@ -3578,10 +3578,10 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_source": "gridx_valuation",
       "sx": -9.95,
       "sy": -9.827,
-      "mscale": 3,
+      "mscale": 1,
       "mpar": 2.0,
-      "px": -3.87,
-      "py": 0.824
+      "px": -13.219,
+      "py": 0.315
     },
     {
       "id": "nchemi-br",
@@ -3623,8 +3623,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.715,
       "mscale": 1,
       "mpar": 2.0,
-      "px": -10.794,
-      "py": -0.454
+      "px": -13.44,
+      "py": 0.706
     },
     {
       "id": "apexzymes",
@@ -3674,10 +3674,10 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_source": "investors_proxy",
       "sx": -6.135,
       "sy": -5.317,
-      "mscale": 1,
+      "mscale": 2,
       "mpar": 1.67,
-      "px": -12.324,
-      "py": -2.864
+      "px": -6.498,
+      "py": -2.999
     },
     {
       "id": "bybug",
@@ -3734,8 +3734,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -4.919,
       "mscale": 1,
       "mpar": 1.31,
-      "px": -10.749,
-      "py": -6.046
+      "px": -13.404,
+      "py": -6.176
     },
     {
       "id": "cellargen_biotech",
@@ -3790,8 +3790,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -6.676,
       "mscale": 3,
       "mpar": 1.5,
-      "px": -3.735,
-      "py": -5.318
+      "px": -2.394,
+      "py": -4.373
     },
     {
       "id": "done_properly",
@@ -3842,8 +3842,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 4.147,
       "mscale": 2,
       "mpar": 1.67,
-      "px": -7.596,
-      "py": -3.486
+      "px": -6.149,
+      "py": -3.201
     },
     {
       "id": "enzyva",
@@ -3896,8 +3896,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -4.734,
       "mscale": 1,
       "mpar": 2.0,
-      "px": -13.455,
-      "py": 0.698
+      "px": -13.475,
+      "py": 0.197
     },
     {
       "id": "food-for-the-future-cl",
@@ -3939,8 +3939,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 3.249,
       "mscale": 1,
       "mpar": 1.0,
-      "px": -12.15,
-      "py": -9.928
+      "px": -13.05,
+      "py": -8.992
     },
     {
       "id": "future_biome",
@@ -3991,8 +3991,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.197,
       "mscale": 2,
       "mpar": 1.67,
-      "px": -7.008,
-      "py": -3.964
+      "px": -6.574,
+      "py": -3.229
     },
     {
       "id": "geoprot",
@@ -4040,8 +4040,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -12.418,
       "mscale": 5,
       "mpar": 2.33,
-      "px": 7.998,
-      "py": 3.226
+      "px": 6.283,
+      "py": 2.277
     },
     {
       "id": "keclon",
@@ -4095,8 +4095,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -4.748,
       "mscale": 2,
       "mpar": 1.4,
-      "px": -7.161,
-      "py": -5.992
+      "px": -7.934,
+      "py": -5.434
     },
     {
       "id": "laurus",
@@ -4152,8 +4152,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -4.718,
       "mscale": 2,
       "mpar": 1.36,
-      "px": -8.463,
-      "py": -5.846
+      "px": -6.986,
+      "py": -6.336
     },
     {
       "id": "mavios",
@@ -4204,8 +4204,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -4.84,
       "mscale": 2,
       "mpar": 2.0,
-      "px": -7.422,
-      "py": 0.548
+      "px": -8.396,
+      "py": 0.762
     },
     {
       "id": "neoprospecta-br",
@@ -4250,8 +4250,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -4.731,
       "mscale": 1,
       "mpar": 3.0,
-      "px": -13.059,
-      "py": 8.73
+      "px": -10.685,
+      "py": 9.287
     },
     {
       "id": "omica",
@@ -4304,8 +4304,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -8.165,
       "mscale": 3,
       "mpar": 2.5,
-      "px": -1.587,
-      "py": 4.736
+      "px": -1.735,
+      "py": 5.42
     },
     {
       "id": "outpost",
@@ -4357,8 +4357,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -4.782,
       "mscale": 3,
       "mpar": 1.67,
-      "px": -1.488,
-      "py": -3.438
+      "px": -3.171,
+      "py": -3.009
     },
     {
       "id": "sistema-bio-mx",
@@ -4402,8 +4402,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 1.833,
       "mscale": 5,
       "mpar": 1.0,
-      "px": 8.592,
-      "py": -8.906
+      "px": 7.059,
+      "py": -8.296
     },
     {
       "id": "vexxel_biotech",
@@ -4450,8 +4450,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 6.916,
       "mscale": 5,
       "mpar": 1.0,
-      "px": 7.929,
-      "py": -9.478
+      "px": 8.101,
+      "py": -9.85
     },
     {
       "id": "algenis-cl",
@@ -4493,8 +4493,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -7.197,
       "mscale": 1,
       "mpar": 2.0,
-      "px": -13.086,
-      "py": -0.058
+      "px": -12.121,
+      "py": -0.687
     },
     {
       "id": "aravan_labs",
@@ -4534,10 +4534,10 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.63,
       "sy": -1.692,
-      "mscale": 3,
+      "mscale": 2,
       "mpar": 1.0,
-      "px": -2.157,
-      "py": -8.816
+      "px": -7.655,
+      "py": -8.919
     },
     {
       "id": "atarraya-mx",
@@ -4579,8 +4579,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 5.505,
       "mscale": 5,
       "mpar": 2.0,
-      "px": 8.241,
-      "py": -0.632
+      "px": 7.327,
+      "py": 0.919
     },
     {
       "id": "bialtec",
@@ -4622,8 +4622,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 6.469,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -1.365,
-      "py": -0.458
+      "px": -1.011,
+      "py": 0.544
     },
     {
       "id": "bio_bureau_biotechnology",
@@ -4665,8 +4665,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -1.717,
       "mscale": 2,
       "mpar": 2.0,
-      "px": -7.5,
-      "py": 0.75
+      "px": -7.642,
+      "py": -0.695
     },
     {
       "id": "biobreyer",
@@ -4708,8 +4708,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -1.717,
       "mscale": 2,
       "mpar": 2.0,
-      "px": -7.818,
-      "py": -0.374
+      "px": -6.339,
+      "py": 0.49
     },
     {
       "id": "biotic",
@@ -4751,8 +4751,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 15.362,
       "mscale": 6,
       "mpar": 2.0,
-      "px": 11.979,
-      "py": 0.116
+      "px": 11.176,
+      "py": -0.931
     },
     {
       "id": "biotimize",
@@ -4794,8 +4794,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -1.727,
       "mscale": 2,
       "mpar": 2.0,
-      "px": -8.007,
-      "py": -0.222
+      "px": -6.896,
+      "py": -0.61
     },
     {
       "id": "botanical-solution-inc-cl",
@@ -4838,10 +4838,10 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_source": "emergente",
       "sx": -8.067,
       "sy": 4.475,
-      "mscale": 2,
+      "mscale": 4,
       "mpar": 2.0,
-      "px": -8.601,
-      "py": -0.72
+      "px": 1.719,
+      "py": 0.336
     },
     {
       "id": "bruna-by-altum-lab-cl",
@@ -4883,8 +4883,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 5.513,
       "mscale": 5,
       "mpar": 2.0,
-      "px": 6.201,
-      "py": 0.41
+      "px": 7.753,
+      "py": 0.847
     },
     {
       "id": "cenibiot",
@@ -4926,8 +4926,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -1.778,
       "mscale": 2,
       "mpar": 2.0,
-      "px": -7.089,
-      "py": -1.0
+      "px": -7.712,
+      "py": 0.94
     },
     {
       "id": "domolif",
@@ -4969,8 +4969,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 15.323,
       "mscale": 6,
       "mpar": 2.0,
-      "px": 11.181,
-      "py": -0.956
+      "px": 11.428,
+      "py": 0.373
     },
     {
       "id": "ecosea",
@@ -5012,8 +5012,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 5.576,
       "mscale": 5,
       "mpar": 2.0,
-      "px": 8.358,
-      "py": 0.912
+      "px": 6.62,
+      "py": -0.855
     },
     {
       "id": "eternal_mycofood",
@@ -5055,8 +5055,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 5.551,
       "mscale": 2,
       "mpar": 2.0,
-      "px": -6.852,
-      "py": -0.846
+      "px": -5.925,
+      "py": 0.33
     },
     {
       "id": "granatum_bioworks",
@@ -5096,10 +5096,10 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.657,
       "sy": -1.677,
-      "mscale": 3,
+      "mscale": 2,
       "mpar": 2.0,
-      "px": -3.546,
-      "py": 0.666
+      "px": -6.716,
+      "py": -0.198
     },
     {
       "id": "green_biofactory",
@@ -5141,8 +5141,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -1.667,
       "mscale": 1,
       "mpar": 1.0,
-      "px": -11.793,
-      "py": -9.556
+      "px": -11.927,
+      "py": -8.71
     },
     {
       "id": "gricha",
@@ -5184,8 +5184,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 5.449,
       "mscale": 4,
       "mpar": 2.0,
-      "px": 2.979,
-      "py": -0.346
+      "px": 0.975,
+      "py": -0.506
     },
     {
       "id": "hemoalgae",
@@ -5227,8 +5227,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -1.618,
       "mscale": 2,
       "mpar": 2.0,
-      "px": -8.622,
-      "py": 0.34
+      "px": -8.558,
+      "py": 0.88
     },
     {
       "id": "kura-biotec-mx",
@@ -5270,8 +5270,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -6.815,
       "mscale": 1,
       "mpar": 2.0,
-      "px": -11.061,
-      "py": 0.922
+      "px": -12.097,
+      "py": 0.956
     },
     {
       "id": "living-ink-us",
@@ -5311,10 +5311,10 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_source": "investors_proxy",
       "sx": 0.796,
       "sy": 0.329,
-      "mscale": 3,
+      "mscale": 4,
       "mpar": 2.0,
-      "px": -1.83,
-      "py": -0.136
+      "px": 3.488,
+      "py": -0.97
     },
     {
       "id": "luyef-biotechnologies-cl",
@@ -5356,8 +5356,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 5.461,
       "mscale": 2,
       "mpar": 2.0,
-      "px": -8.652,
-      "py": 0.448
+      "px": -6.987,
+      "py": -0.75
     },
     {
       "id": "metabix_bio",
@@ -5399,8 +5399,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 15.334,
       "mscale": 4,
       "mpar": 2.0,
-      "px": 1.617,
-      "py": 0.566
+      "px": 1.466,
+      "py": 0.618
     },
     {
       "id": "micro_meat",
@@ -5442,8 +5442,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 5.421,
       "mscale": 1,
       "mpar": 2.0,
-      "px": -13.2,
-      "py": -0.928
+      "px": -12.201,
+      "py": 0.127
     },
     {
       "id": "moolec",
@@ -5485,8 +5485,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 5.559,
       "mscale": 5,
       "mpar": 2.0,
-      "px": 7.497,
-      "py": 0.24
+      "px": 7.215,
+      "py": -0.084
     },
     {
       "id": "moondo",
@@ -5528,8 +5528,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 5.423,
       "mscale": 2,
       "mpar": 2.0,
-      "px": -8.184,
-      "py": -0.742
+      "px": -6.117,
+      "py": -0.503
     },
     {
       "id": "nanofreeze",
@@ -5571,8 +5571,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 3.986,
       "mscale": 1,
       "mpar": 2.0,
-      "px": -10.629,
-      "py": -0.902
+      "px": -11.207,
+      "py": -0.497
     },
     {
       "id": "nutrition-from-water-cl",
@@ -5614,8 +5614,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 1.744,
       "mscale": 1,
       "mpar": 2.0,
-      "px": -12.408,
-      "py": 0.394
+      "px": -12.089,
+      "py": -0.86
     },
     {
       "id": "pow_foods",
@@ -5657,8 +5657,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 5.185,
       "mscale": 4,
       "mpar": 2.0,
-      "px": 1.671,
-      "py": -0.088
+      "px": 2.073,
+      "py": 0.016
     },
     {
       "id": "progal",
@@ -5700,8 +5700,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 5.511,
       "mscale": 4,
       "mpar": 2.0,
-      "px": 2.658,
-      "py": 0.042
+      "px": 3.295,
+      "py": 0.748
     },
     {
       "id": "siquimia",
@@ -5743,8 +5743,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -1.683,
       "mscale": 1,
       "mpar": 2.0,
-      "px": -11.037,
-      "py": -0.43
+      "px": -12.143,
+      "py": -0.637
     },
     {
       "id": "the-live-green-co-cl",
@@ -5786,8 +5786,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 5.58,
       "mscale": 4,
       "mpar": 2.0,
-      "px": 0.945,
-      "py": -0.35
+      "px": 1.761,
+      "py": 0.521
     },
     {
       "id": "veloz_bio",
@@ -5829,8 +5829,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -2.26,
       "mscale": 1,
       "mpar": 2.0,
-      "px": -11.469,
-      "py": 0.872
+      "px": -12.235,
+      "py": -0.625
     },
     {
       "id": "werk-nvac",
@@ -5876,8 +5876,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 6.244,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -1.053,
-      "py": 0.446
+      "px": -2.954,
+      "py": -0.713
     },
     {
       "id": "algaebio",
@@ -5928,8 +5928,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 4.273,
       "mscale": 4,
       "mpar": 1.0,
-      "px": 1.401,
-      "py": -9.232
+      "px": 3.538,
+      "py": -9.864
     },
     {
       "id": "aquit",
@@ -5977,10 +5977,10 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.175,
       "sy": 6.209,
-      "mscale": 3,
+      "mscale": 5,
       "mpar": 3.0,
-      "px": -3.129,
-      "py": 8.442
+      "px": 7.561,
+      "py": 9.666
     },
     {
       "id": "bioblends",
@@ -6025,8 +6025,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 4.46,
       "mscale": 4,
       "mpar": 2.0,
-      "px": 1.134,
-      "py": 0.932
+      "px": 2.295,
+      "py": -0.485
     },
     {
       "id": "cell_farm",
@@ -6073,8 +6073,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 4.377,
       "mscale": 1,
       "mpar": 3.0,
-      "px": -13.473,
-      "py": 8.932
+      "px": -13.181,
+      "py": 8.363
     },
     {
       "id": "cellva",
@@ -6119,8 +6119,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 4.289,
       "mscale": 4,
       "mpar": 2.0,
-      "px": 3.408,
-      "py": 0.252
+      "px": 2.743,
+      "py": -0.39
     },
     {
       "id": "dprotein",
@@ -6169,8 +6169,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 4.273,
       "mscale": 2,
       "mpar": 2.0,
-      "px": -6.303,
-      "py": -0.4
+      "px": -7.112,
+      "py": -0.637
     },
     {
       "id": "ergo_bioscience",
@@ -6221,8 +6221,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 4.374,
       "mscale": 2,
       "mpar": 2.33,
-      "px": -6.357,
-      "py": 3.716
+      "px": -6.017,
+      "py": 3.839
     },
     {
       "id": "ergo_foods",
@@ -6273,8 +6273,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 4.346,
       "mscale": 1,
       "mpar": 2.14,
-      "px": -13.176,
-      "py": 0.654
+      "px": -10.648,
+      "py": 1.355
     },
     {
       "id": "food4you",
@@ -6324,8 +6324,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 4.368,
       "mscale": 4,
       "mpar": 1.5,
-      "px": 2.421,
-      "py": -3.784
+      "px": 1.299,
+      "py": -3.637
     },
     {
       "id": "glycox",
@@ -6374,8 +6374,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 4.334,
       "mscale": 4,
       "mpar": 2.0,
-      "px": 2.307,
-      "py": 0.364
+      "px": 3.831,
+      "py": 0.921
     },
     {
       "id": "innovai",
@@ -6421,10 +6421,10 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_source": "investors_proxy",
       "sx": 2.426,
       "sy": 4.46,
-      "mscale": 4,
+      "mscale": 1,
       "mpar": 2.0,
-      "px": 2.127,
-      "py": -0.22
+      "px": -11.774,
+      "py": -0.686
     },
     {
       "id": "kran-nanobubble-cl",
@@ -6464,10 +6464,10 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_source": "emergente",
       "sx": 2.414,
       "sy": 4.353,
-      "mscale": 3,
+      "mscale": 5,
       "mpar": 2.0,
-      "px": -3.285,
-      "py": 0.478
+      "px": 6.321,
+      "py": 0.493
     },
     {
       "id": "kresko_rnatech",
@@ -6513,8 +6513,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 4.38,
       "mscale": 4,
       "mpar": 2.0,
-      "px": 3.426,
-      "py": 0.894
+      "px": 2.584,
+      "py": -0.289
     },
     {
       "id": "levya",
@@ -6567,8 +6567,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 4.278,
       "mscale": 2,
       "mpar": 1.0,
-      "px": -6.783,
-      "py": -8.182
+      "px": -8.354,
+      "py": -9.522
     },
     {
       "id": "matchetune",
@@ -6618,8 +6618,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 4.296,
       "mscale": 4,
       "mpar": 1.67,
-      "px": 3.252,
-      "py": -2.696
+      "px": 2.876,
+      "py": -2.187
     },
     {
       "id": "microin",
@@ -6666,8 +6666,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 6.913,
       "mscale": 5,
       "mpar": 1.0,
-      "px": 8.421,
-      "py": -9.8
+      "px": 8.206,
+      "py": -8.062
     },
     {
       "id": "microterra",
@@ -6713,8 +6713,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 4.279,
       "mscale": 4,
       "mpar": 2.0,
-      "px": 1.035,
-      "py": 0.304
+      "px": 3.433,
+      "py": 0.579
     },
     {
       "id": "nanoingreen",
@@ -6769,8 +6769,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 4.255,
       "mscale": 2,
       "mpar": 1.4,
-      "px": -8.691,
-      "py": -4.404
+      "px": -5.887,
+      "py": -5.602
     },
     {
       "id": "nat4bio",
@@ -6823,8 +6823,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 4.585,
       "mscale": 5,
       "mpar": 1.57,
-      "px": 7.383,
-      "py": -3.828
+      "px": 6.548,
+      "py": -4.637
     },
     {
       "id": "naturannova",
@@ -6872,8 +6872,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 4.295,
       "mscale": 4,
       "mpar": 3.0,
-      "px": 1.905,
-      "py": 8.604
+      "px": 2.696,
+      "py": 8.649
     },
     {
       "id": "photio",
@@ -6913,10 +6913,10 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_source": "gridx_valuation",
       "sx": -0.334,
       "sy": 14.586,
-      "mscale": 3,
+      "mscale": 1,
       "mpar": 2.0,
-      "px": -2.745,
-      "py": -0.24
+      "px": -11.518,
+      "py": -0.678
     },
     {
       "id": "rnatech-ar",
@@ -6956,10 +6956,10 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_source": "emergente",
       "sx": 2.904,
       "sy": 3.505,
-      "mscale": 1,
+      "mscale": 4,
       "mpar": 2.0,
-      "px": -11.604,
-      "py": 0.472
+      "px": 2.778,
+      "py": -0.086
     },
     {
       "id": "savefruit-mx",
@@ -6999,10 +6999,10 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_source": "emergente",
       "sx": 2.479,
       "sy": 4.807,
-      "mscale": 5,
+      "mscale": 1,
       "mpar": 2.0,
-      "px": 7.638,
-      "py": -0.586
+      "px": -10.796,
+      "py": -0.821
     },
     {
       "id": "tomorrow_foods",
@@ -7052,8 +7052,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 4.29,
       "mscale": 4,
       "mpar": 1.0,
-      "px": 1.167,
-      "py": -9.052
+      "px": 1.22,
+      "py": -8.81
     },
     {
       "id": "trebe_biotech",
@@ -7104,8 +7104,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -0.135,
       "mscale": 2,
       "mpar": 2.0,
-      "px": -7.248,
-      "py": 0.988
+      "px": -7.795,
+      "py": -0.792
     },
     {
       "id": "HIAMET",
@@ -7155,8 +7155,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 1.572,
       "mscale": 2,
       "mpar": 3.0,
-      "px": -7.89,
-      "py": 8.466
+      "px": -8.217,
+      "py": 8.901
     },
     {
       "id": "alkemio",
@@ -7204,8 +7204,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 0.992,
       "mscale": 6,
       "mpar": 3.0,
-      "px": 10.914,
-      "py": 9.048
+      "px": 12.342,
+      "py": 8.909
     },
     {
       "id": "arqlite",
@@ -7255,8 +7255,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 1.11,
       "mscale": 6,
       "mpar": 1.0,
-      "px": 12.081,
-      "py": -8.578
+      "px": 12.348,
+      "py": -8.963
     },
     {
       "id": "bioeutectics",
@@ -7310,8 +7310,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 1.318,
       "mscale": 4,
       "mpar": 1.5,
-      "px": 1.569,
-      "py": -5.14
+      "px": 3.88,
+      "py": -5.167
     },
     {
       "id": "biometallum",
@@ -7363,8 +7363,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 1.62,
       "mscale": 6,
       "mpar": 1.67,
-      "px": 12.807,
-      "py": -2.25
+      "px": 11.218,
+      "py": -2.815
     },
     {
       "id": "bioplaster_research",
@@ -7412,8 +7412,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 0.995,
       "mscale": 4,
       "mpar": 1.0,
-      "px": 2.253,
-      "py": -8.818
+      "px": 2.675,
+      "py": -9.463
     },
     {
       "id": "bioplaster_research_inc",
@@ -7461,8 +7461,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 0.997,
       "mscale": 4,
       "mpar": 1.0,
-      "px": 2.913,
-      "py": -9.052
+      "px": 2.213,
+      "py": -9.159
     },
     {
       "id": "bioplastix",
@@ -7514,8 +7514,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 1.025,
       "mscale": 2,
       "mpar": 1.0,
-      "px": -7.662,
-      "py": -8.202
+      "px": -8.008,
+      "py": -8.876
     },
     {
       "id": "break_pet",
@@ -7567,8 +7567,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 0.972,
       "mscale": 1,
       "mpar": 2.0,
-      "px": -10.701,
-      "py": -0.022
+      "px": -11.554,
+      "py": 0.147
     },
     {
       "id": "calfix",
@@ -7616,8 +7616,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 1.286,
       "mscale": 1,
       "mpar": 1.57,
-      "px": -12.552,
-      "py": -3.016
+      "px": -12.226,
+      "py": -3.455
     },
     {
       "id": "circclo",
@@ -7665,10 +7665,10 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_source": "investors_proxy",
       "sx": -3.415,
       "sy": -4.236,
-      "mscale": 6,
+      "mscale": 4,
       "mpar": 2.33,
-      "px": 12.231,
-      "py": 2.846
+      "px": 3.089,
+      "py": 2.266
     },
     {
       "id": "cyanomin",
@@ -7718,8 +7718,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 1.598,
       "mscale": 2,
       "mpar": 2.0,
-      "px": -6.207,
-      "py": 0.7
+      "px": -7.262,
+      "py": 0.571
     },
     {
       "id": "einsted",
@@ -7765,10 +7765,10 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_source": "gridx_valuation",
       "sx": 0.509,
       "sy": 12.85,
-      "mscale": 1,
+      "mscale": 6,
       "mpar": 1.0,
-      "px": -13.44,
-      "py": -9.406
+      "px": 10.949,
+      "py": -8.595
     },
     {
       "id": "elytron_biotech",
@@ -7819,8 +7819,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 1.719,
       "mscale": 1,
       "mpar": 2.0,
-      "px": -10.872,
-      "py": -0.568
+      "px": -11.739,
+      "py": 0.207
     },
     {
       "id": "fungi_life",
@@ -7874,8 +7874,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 1.141,
       "mscale": 2,
       "mpar": 2.0,
-      "px": -7.329,
-      "py": 0.314
+      "px": -8.553,
+      "py": 0.835
     },
     {
       "id": "hif-global-cl",
@@ -7917,10 +7917,10 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_source": "investors_proxy",
       "sx": 0.473,
       "sy": 12.826,
-      "mscale": 3,
+      "mscale": 6,
       "mpar": 2.0,
-      "px": -2.964,
-      "py": -0.62
+      "px": 13.454,
+      "py": -0.755
     },
     {
       "id": "inmet",
@@ -7967,10 +7967,10 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_source": "gridx_valuation",
       "sx": -2.833,
       "sy": 1.216,
-      "mscale": 1,
+      "mscale": 4,
       "mpar": 1.0,
-      "px": -13.041,
-      "py": -8.26
+      "px": 3.425,
+      "py": -9.128
     },
     {
       "id": "michroma",
@@ -8023,8 +8023,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 1.327,
       "mscale": 2,
       "mpar": 1.4,
-      "px": -8.313,
-      "py": -4.472
+      "px": -8.283,
+      "py": -4.82
     },
     {
       "id": "monte-caldera-technology",
@@ -8075,8 +8075,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 1.038,
       "mscale": 1,
       "mpar": 2.33,
-      "px": -13.362,
-      "py": 2.95
+      "px": -13.388,
+      "py": 3.664
     },
     {
       "id": "mothership-materials-cl",
@@ -8116,10 +8116,10 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_source": "investors_proxy",
       "sx": 0.801,
       "sy": 0.333,
-      "mscale": 3,
+      "mscale": 4,
       "mpar": 2.0,
-      "px": -2.043,
-      "py": -0.594
+      "px": 1.242,
+      "py": 0.96
     },
     {
       "id": "muta",
@@ -8167,8 +8167,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -4.268,
       "mscale": 6,
       "mpar": 3.0,
-      "px": 13.311,
-      "py": 8.212
+      "px": 13.475,
+      "py": 8.736
     },
     {
       "id": "mycorium_biotech",
@@ -8216,8 +8216,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 1.023,
       "mscale": 2,
       "mpar": 1.0,
-      "px": -7.362,
-      "py": -8.618
+      "px": -5.929,
+      "py": -9.819
     },
     {
       "id": "nairotech",
@@ -8268,8 +8268,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 1.302,
       "mscale": 1,
       "mpar": 1.5,
-      "px": -13.365,
-      "py": -3.542
+      "px": -13.152,
+      "py": -4.734
     },
     {
       "id": "notfossil",
@@ -8316,8 +8316,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.114,
       "mscale": 2,
       "mpar": 3.0,
-      "px": -7.185,
-      "py": 8.278
+      "px": -6.002,
+      "py": 9.251
     },
     {
       "id": "patagon-fiber",
@@ -8367,8 +8367,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 1.061,
       "mscale": 2,
       "mpar": 1.0,
-      "px": -7.53,
-      "py": -8.734
+      "px": -8.663,
+      "py": -8.703
     },
     {
       "id": "polymera",
@@ -8422,8 +8422,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 1.174,
       "mscale": 2,
       "mpar": 1.62,
-      "px": -7.764,
-      "py": -3.75
+      "px": -6.421,
+      "py": -3.391
     },
     {
       "id": "protiva",
@@ -8471,8 +8471,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 1.072,
       "mscale": 4,
       "mpar": 1.8,
-      "px": 3.732,
-      "py": -1.916
+      "px": 3.218,
+      "py": -1.059
     },
     {
       "id": "radial",
@@ -8519,10 +8519,10 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_source": "gridx_valuation",
       "sx": -2.8,
       "sy": 1.193,
-      "mscale": 2,
+      "mscale": 4,
       "mpar": 1.57,
-      "px": -8.184,
-      "py": -3.23
+      "px": 3.312,
+      "py": -4.451
     },
     {
       "id": "stamm",
@@ -8572,8 +8572,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -5.046,
       "mscale": 2,
       "mpar": 2.2,
-      "px": -6.354,
-      "py": 0.83
+      "px": -6.256,
+      "py": 2.164
     },
     {
       "id": "strong-by-form-cl",
@@ -8613,10 +8613,10 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_source": "gridx_valuation",
       "sx": 0.822,
       "sy": 0.315,
-      "mscale": 3,
+      "mscale": 4,
       "mpar": 2.0,
-      "px": -2.571,
-      "py": -0.662
+      "px": 2.262,
+      "py": 0.165
     },
     {
       "id": "tintte",
@@ -8668,8 +8668,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 1.253,
       "mscale": 2,
       "mpar": 1.0,
-      "px": -7.704,
-      "py": -9.294
+      "px": -6.234,
+      "py": -8.475
     },
     {
       "id": "atacama-biomaterials-cl",
@@ -8709,10 +8709,10 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_source": "emergente",
       "sx": 0.997,
       "sy": 0.553,
-      "mscale": 3,
+      "mscale": 4,
       "mpar": 2.0,
-      "px": -3.681,
-      "py": 0.02
+      "px": 2.191,
+      "py": -0.839
     },
     {
       "id": "bioelements-cl",
@@ -8752,10 +8752,10 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_source": "emergente",
       "sx": 0.983,
       "sy": 0.554,
-      "mscale": 3,
+      "mscale": 1,
       "mpar": 2.0,
-      "px": -1.977,
-      "py": 0.564
+      "px": -13.031,
+      "py": -0.214
     },
     {
       "id": "biorgani",
@@ -8797,8 +8797,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 0.579,
       "mscale": 4,
       "mpar": 2.0,
-      "px": 3.345,
-      "py": -0.846
+      "px": 2.927,
+      "py": -0.38
     },
     {
       "id": "biosolvit",
@@ -8838,10 +8838,10 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_source": "gridx_valuation",
       "sx": 2.94,
       "sy": 12.632,
-      "mscale": 3,
+      "mscale": 6,
       "mpar": 2.0,
-      "px": -3.36,
-      "py": -0.748
+      "px": 10.563,
+      "py": -0.247
     },
     {
       "id": "contech_brasil",
@@ -8881,10 +8881,10 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_source": "gridx_valuation",
       "sx": 1.028,
       "sy": 0.632,
-      "mscale": 3,
+      "mscale": 2,
       "mpar": 2.0,
-      "px": -3.387,
-      "py": -0.674
+      "px": -7.827,
+      "py": 0.7
     },
     {
       "id": "ecoshell-mx",
@@ -8926,8 +8926,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 0.509,
       "mscale": 4,
       "mpar": 2.0,
-      "px": 3.408,
-      "py": 0.97
+      "px": 1.514,
+      "py": 0.358
     },
     {
       "id": "ejido-verde-mx",
@@ -8967,10 +8967,10 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_source": "investors_proxy",
       "sx": 0.868,
       "sy": 0.448,
-      "mscale": 3,
+      "mscale": 4,
       "mpar": 2.0,
-      "px": -3.795,
-      "py": -0.754
+      "px": 1.857,
+      "py": -0.051
     },
     {
       "id": "epicca",
@@ -9010,10 +9010,10 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_source": "gridx_valuation",
       "sx": 0.993,
       "sy": 0.585,
-      "mscale": 3,
+      "mscale": 4,
       "mpar": 1.0,
-      "px": -3.555,
-      "py": -8.456
+      "px": 1.62,
+      "py": -8.702
     },
     {
       "id": "giraffe-bio-ar",
@@ -9055,8 +9055,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 0.459,
       "mscale": 1,
       "mpar": 2.0,
-      "px": -12.591,
-      "py": 0.542
+      "px": -11.763,
+      "py": -0.257
     },
     {
       "id": "growpack",
@@ -9096,10 +9096,10 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_source": "gridx_valuation",
       "sx": 0.997,
       "sy": 0.62,
-      "mscale": 3,
+      "mscale": 4,
       "mpar": 1.0,
-      "px": -1.698,
-      "py": -9.608
+      "px": 3.232,
+      "py": -9.679
     },
     {
       "id": "polybion",
@@ -9139,10 +9139,10 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_source": "gridx_valuation",
       "sx": 0.993,
       "sy": 0.614,
-      "mscale": 3,
+      "mscale": 4,
       "mpar": 2.0,
-      "px": -3.612,
-      "py": 0.734
+      "px": 2.629,
+      "py": -0.697
     },
     {
       "id": "smatter",
@@ -9184,8 +9184,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 0.448,
       "mscale": 2,
       "mpar": 1.0,
-      "px": -6.951,
-      "py": -8.71
+      "px": -7.261,
+      "py": -8.906
     },
     {
       "id": "spora_biotech",
@@ -9225,10 +9225,10 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_source": "gridx_valuation",
       "sx": 0.974,
       "sy": 0.579,
-      "mscale": 3,
+      "mscale": 4,
       "mpar": 1.0,
-      "px": -2.466,
-      "py": -9.9
+      "px": 2.824,
+      "py": -9.386
     },
     {
       "id": "ages_bioactive",
@@ -9268,10 +9268,10 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_source": "gridx_valuation",
       "sx": -10.65,
       "sy": -9.953,
-      "mscale": 4,
+      "mscale": 1,
       "mpar": 2.0,
-      "px": 3.327,
-      "py": -0.242
+      "px": -10.555,
+      "py": 0.0
     },
     {
       "id": "amnova-biotech-cl",
@@ -9313,8 +9313,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.412,
       "mscale": 1,
       "mpar": 1.0,
-      "px": -11.61,
-      "py": -9.604
+      "px": -12.859,
+      "py": -9.738
     },
     {
       "id": "andes-biotechnologies-cl",
@@ -9356,8 +9356,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.789,
       "mscale": 1,
       "mpar": 2.0,
-      "px": -12.795,
-      "py": 0.452
+      "px": -11.34,
+      "py": 0.99
     },
     {
       "id": "apasomics",
@@ -9408,8 +9408,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.727,
       "mscale": 5,
       "mpar": 1.0,
-      "px": 6.204,
-      "py": -9.53
+      "px": 7.671,
+      "py": -9.101
     },
     {
       "id": "aplife_biotech",
@@ -9461,8 +9461,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -8.976,
       "mscale": 1,
       "mpar": 2.5,
-      "px": -11.649,
-      "py": 5.076
+      "px": -13.009,
+      "py": 3.887
     },
     {
       "id": "aptah",
@@ -9504,8 +9504,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.825,
       "mscale": 1,
       "mpar": 2.0,
-      "px": -10.959,
-      "py": -0.196
+      "px": -12.07,
+      "py": 0.921
     },
     {
       "id": "aptah-bio-br",
@@ -9547,8 +9547,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.567,
       "mscale": 1,
       "mpar": 2.0,
-      "px": -11.223,
-      "py": 0.374
+      "px": -13.402,
+      "py": -0.821
     },
     {
       "id": "ardan",
@@ -9596,8 +9596,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.688,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -1.044,
-      "py": 0.812
+      "px": -3.754,
+      "py": 0.434
     },
     {
       "id": "asclepii",
@@ -9649,8 +9649,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.717,
       "mscale": 3,
       "mpar": 1.44,
-      "px": -3.252,
-      "py": -4.642
+      "px": -2.117,
+      "py": -5.657
     },
     {
       "id": "autem-medical",
@@ -9700,8 +9700,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.023,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -1.089,
-      "py": 0.326
+      "px": -1.627,
+      "py": 0.457
     },
     {
       "id": "autem-therapeutics-br",
@@ -9743,8 +9743,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.692,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -1.035,
-      "py": 0.276
+      "px": -2.442,
+      "py": 0.073
     },
     {
       "id": "ayuvant",
@@ -9793,8 +9793,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.589,
       "mscale": 1,
       "mpar": 1.67,
-      "px": -12.144,
-      "py": -2.042
+      "px": -12.549,
+      "py": -2.575
     },
     {
       "id": "bentenbiotech",
@@ -9836,8 +9836,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.648,
       "mscale": 1,
       "mpar": 2.0,
-      "px": -12.972,
-      "py": -0.798
+      "px": -11.221,
+      "py": 0.292
     },
     {
       "id": "biocle",
@@ -9886,8 +9886,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.747,
       "mscale": 3,
       "mpar": 1.67,
-      "px": -3.018,
-      "py": -2.436
+      "px": -2.848,
+      "py": -2.315
     },
     {
       "id": "biofab",
@@ -9929,8 +9929,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.107,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -1.221,
-      "py": -0.448
+      "px": -1.96,
+      "py": -0.822
     },
     {
       "id": "biomimetic_solutions",
@@ -9972,8 +9972,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.163,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -1.476,
-      "py": 0.116
+      "px": -3.284,
+      "py": 0.16
     },
     {
       "id": "bioseek",
@@ -10021,8 +10021,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.549,
       "mscale": 3,
       "mpar": 2.2,
-      "px": -2.016,
-      "py": 1.714
+      "px": -3.654,
+      "py": 1.356
     },
     {
       "id": "biotecnofe",
@@ -10064,8 +10064,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.707,
       "mscale": 1,
       "mpar": 2.0,
-      "px": -13.239,
-      "py": -0.206
+      "px": -11.246,
+      "py": 0.588
     },
     {
       "id": "bitgenia",
@@ -10114,8 +10114,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.267,
       "mscale": 1,
       "mpar": 2.43,
-      "px": -13.377,
-      "py": 4.11
+      "px": -12.181,
+      "py": 3.231
     },
     {
       "id": "cellco",
@@ -10165,8 +10165,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.772,
       "mscale": 1,
       "mpar": 2.0,
-      "px": -13.368,
-      "py": -0.37
+      "px": -12.246,
+      "py": 0.948
     },
     {
       "id": "cellertz-bio-br",
@@ -10208,8 +10208,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.723,
       "mscale": 1,
       "mpar": 3.0,
-      "px": -12.132,
-      "py": 9.376
+      "px": -13.315,
+      "py": 8.063
     },
     {
       "id": "cellrep",
@@ -10257,8 +10257,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.645,
       "mscale": 1,
       "mpar": 2.0,
-      "px": -12.825,
-      "py": -0.92
+      "px": -10.677,
+      "py": 0.368
     },
     {
       "id": "cells-for-cells-cl",
@@ -10300,8 +10300,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.421,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -3.828,
-      "py": -0.118
+      "px": -2.959,
+      "py": -0.89
     },
     {
       "id": "celluris",
@@ -10343,8 +10343,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.711,
       "mscale": 1,
       "mpar": 2.0,
-      "px": -13.272,
-      "py": -0.712
+      "px": -11.629,
+      "py": -0.99
     },
     {
       "id": "circa_therapeutics",
@@ -10392,8 +10392,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.605,
       "mscale": 1,
       "mpar": 1.0,
-      "px": -13.083,
-      "py": -8.338
+      "px": -10.95,
+      "py": -8.289
     },
     {
       "id": "dharma_bioscience",
@@ -10444,8 +10444,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -8.955,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -1.758,
-      "py": 0.002
+      "px": -0.97,
+      "py": -0.892
     },
     {
       "id": "dogma_biotech",
@@ -10493,8 +10493,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.73,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -1.311,
-      "py": 0.086
+      "px": -1.289,
+      "py": 0.032
     },
     {
       "id": "eolo_pharma",
@@ -10542,8 +10542,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.597,
       "mscale": 3,
       "mpar": 1.0,
-      "px": -2.652,
-      "py": -9.944
+      "px": -2.572,
+      "py": -9.6
     },
     {
       "id": "exomas",
@@ -10590,8 +10590,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.617,
       "mscale": 3,
       "mpar": 1.0,
-      "px": -1.095,
-      "py": -9.558
+      "px": -1.888,
+      "py": -9.202
     },
     {
       "id": "eywa_biotech",
@@ -10640,8 +10640,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.687,
       "mscale": 2,
       "mpar": 1.0,
-      "px": -8.403,
-      "py": -8.932
+      "px": -6.227,
+      "py": -8.499
     },
     {
       "id": "fecundis",
@@ -10688,8 +10688,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.611,
       "mscale": 3,
       "mpar": 1.0,
-      "px": -0.969,
-      "py": -9.558
+      "px": -2.786,
+      "py": -8.8
     },
     {
       "id": "fk_biotecnologia",
@@ -10731,8 +10731,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.627,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -1.953,
-      "py": 0.94
+      "px": -1.174,
+      "py": 0.043
     },
     {
       "id": "futr_bio",
@@ -10774,8 +10774,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.671,
       "mscale": 1,
       "mpar": 2.0,
-      "px": -12.174,
-      "py": 0.852
+      "px": -12.948,
+      "py": -0.175
     },
     {
       "id": "hexembio",
@@ -10823,8 +10823,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.711,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -3.684,
-      "py": 0.232
+      "px": -2.819,
+      "py": -0.072
     },
     {
       "id": "insitu",
@@ -10866,8 +10866,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.382,
       "mscale": 2,
       "mpar": 2.0,
-      "px": -8.652,
-      "py": 0.212
+      "px": -7.432,
+      "py": -0.72
     },
     {
       "id": "invitrall",
@@ -10915,8 +10915,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.762,
       "mscale": 3,
       "mpar": 1.0,
-      "px": -3.873,
-      "py": -9.278
+      "px": -2.339,
+      "py": -9.039
     },
     {
       "id": "libera",
@@ -10966,8 +10966,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.738,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -2.571,
-      "py": -0.01
+      "px": -1.561,
+      "py": -0.717
     },
     {
       "id": "lizarbio",
@@ -11009,8 +11009,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.451,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -1.536,
-      "py": -0.464
+      "px": -3.644,
+      "py": -0.736
     },
     {
       "id": "meton",
@@ -11052,8 +11052,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.051,
       "mscale": 1,
       "mpar": 2.0,
-      "px": -12.69,
-      "py": 0.062
+      "px": -11.147,
+      "py": -0.107
     },
     {
       "id": "mirscience-therapeutics-br",
@@ -11095,8 +11095,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.817,
       "mscale": 1,
       "mpar": 2.0,
-      "px": -11.817,
-      "py": -0.594
+      "px": -12.263,
+      "py": 0.135
     },
     {
       "id": "momentum-therapeutics",
@@ -11147,8 +11147,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.69,
       "mscale": 1,
       "mpar": 2.33,
-      "px": -13.068,
-      "py": 3.85
+      "px": -11.323,
+      "py": 3.084
     },
     {
       "id": "naiad",
@@ -11190,8 +11190,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.034,
       "mscale": 1,
       "mpar": 2.0,
-      "px": -11.241,
-      "py": 0.65
+      "px": -10.833,
+      "py": 0.851
     },
     {
       "id": "naiad-drug-design-br",
@@ -11233,8 +11233,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.036,
       "mscale": 1,
       "mpar": 2.0,
-      "px": -12.06,
-      "py": 0.938
+      "px": -10.89,
+      "py": 0.645
     },
     {
       "id": "nanogrow_biotech",
@@ -11282,8 +11282,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.731,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -2.7,
-      "py": 0.158
+      "px": -1.229,
+      "py": -0.228
     },
     {
       "id": "nanotransfer",
@@ -11332,8 +11332,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.621,
       "mscale": 1,
       "mpar": 1.57,
-      "px": -12.387,
-      "py": -4.254
+      "px": -13.347,
+      "py": -4.133
     },
     {
       "id": "new_organs_biotech",
@@ -11382,8 +11382,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.82,
       "mscale": 1,
       "mpar": 1.67,
-      "px": -11.613,
-      "py": -2.36
+      "px": -12.137,
+      "py": -3.724
     },
     {
       "id": "nintx-br",
@@ -11425,8 +11425,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.09,
       "mscale": 1,
       "mpar": 2.0,
-      "px": -13.326,
-      "py": 0.126
+      "px": -11.266,
+      "py": -0.253
     },
     {
       "id": "ocular_bio_design",
@@ -11476,10 +11476,10 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_source": "gridx_valuation",
       "sx": -11.29,
       "sy": -10.541,
-      "mscale": 3,
+      "mscale": 2,
       "mpar": 1.0,
-      "px": -2.007,
-      "py": -9.11
+      "px": -7.074,
+      "py": -8.481
     },
     {
       "id": "omics",
@@ -11529,8 +11529,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.718,
       "mscale": 3,
       "mpar": 2.33,
-      "px": -1.209,
-      "py": 3.594
+      "px": -1.014,
+      "py": 3.438
     },
     {
       "id": "onco_precision",
@@ -11578,8 +11578,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.641,
       "mscale": 3,
       "mpar": 2.2,
-      "px": -2.877,
-      "py": 0.992
+      "px": -0.991,
+      "py": 1.553
     },
     {
       "id": "pannex_therapeutics",
@@ -11621,8 +11621,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.957,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -3.519,
-      "py": 0.032
+      "px": -1.819,
+      "py": 0.289
     },
     {
       "id": "peptidus-biotech-br",
@@ -11664,8 +11664,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -6.924,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -2.226,
-      "py": 0.418
+      "px": -1.617,
+      "py": -0.74
     },
     {
       "id": "php_biotech",
@@ -11707,8 +11707,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.782,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -1.293,
-      "py": 0.366
+      "px": -3.327,
+      "py": 0.43
     },
     {
       "id": "praxis-biotech-cl",
@@ -11752,8 +11752,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.953,
       "mscale": 1,
       "mpar": 1.0,
-      "px": -11.529,
-      "py": -9.988
+      "px": -12.713,
+      "py": -8.064
     },
     {
       "id": "quantis-br",
@@ -11795,8 +11795,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.095,
       "mscale": 1,
       "mpar": 2.0,
-      "px": -10.563,
-      "py": 0.59
+      "px": -11.041,
+      "py": 0.193
     },
     {
       "id": "scitherm_therapeutics",
@@ -11844,8 +11844,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.681,
       "mscale": 1,
       "mpar": 2.0,
-      "px": -13.203,
-      "py": -0.214
+      "px": -13.25,
+      "py": 0.714
     },
     {
       "id": "single_strand_biotech",
@@ -11892,8 +11892,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.674,
       "mscale": 3,
       "mpar": 1.0,
-      "px": -3.072,
-      "py": -9.982
+      "px": -2.604,
+      "py": -9.826
     },
     {
       "id": "speratum",
@@ -11935,8 +11935,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.817,
       "mscale": 1,
       "mpar": 2.0,
-      "px": -12.099,
-      "py": 0.554
+      "px": -10.548,
+      "py": 0.323
     },
     {
       "id": "spherebio",
@@ -11987,8 +11987,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.621,
       "mscale": 1,
       "mpar": 1.8,
-      "px": -13.263,
-      "py": -2.556
+      "px": -12.375,
+      "py": -0.852
     },
     {
       "id": "synthetic_ocular_restoration",
@@ -12041,8 +12041,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.497,
       "mscale": 3,
       "mpar": 1.5,
-      "px": -2.136,
-      "py": -4.972
+      "px": -1.761,
+      "py": -3.638
     },
     {
       "id": "tesabio_ai",
@@ -12090,8 +12090,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.805,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -2.859,
-      "py": -0.232
+      "px": -2.766,
+      "py": 0.714
     },
     {
       "id": "theravax",
@@ -12133,8 +12133,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.651,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -2.802,
-      "py": -0.738
+      "px": -3.498,
+      "py": -0.836
     },
     {
       "id": "tissuelabs",
@@ -12176,8 +12176,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.099,
       "mscale": 3,
       "mpar": 1.0,
-      "px": -2.604,
-      "py": -9.848
+      "px": -3.204,
+      "py": -8.293
     },
     {
       "id": "virtech_bio",
@@ -12219,8 +12219,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.124,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -1.302,
-      "py": 0.804
+      "px": -3.317,
+      "py": -0.772
     },
     {
       "id": "vyro-bio-br",
@@ -12262,8 +12262,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.844,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -3.327,
-      "py": -0.568
+      "px": -1.139,
+      "py": -0.994
     },
     {
       "id": "webio-ar",
@@ -12305,8 +12305,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.108,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -3.552,
-      "py": -0.09
+      "px": -1.481,
+      "py": 0.689
     },
     {
       "id": "ymmunobio",
@@ -12348,8 +12348,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.646,
       "mscale": 1,
       "mpar": 2.0,
-      "px": -13.353,
-      "py": 0.378
+      "px": -10.688,
+      "py": -0.476
     },
     {
       "id": "activaq",
@@ -12389,10 +12389,10 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_source": "gridx_valuation",
       "sx": -7.995,
       "sy": 4.809,
-      "mscale": 3,
+      "mscale": 5,
       "mpar": 2.0,
-      "px": -2.982,
-      "py": -0.92
+      "px": 6.099,
+      "py": -0.124
     },
     {
       "id": "biosidus-ar",
@@ -12434,8 +12434,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.259,
       "mscale": 1,
       "mpar": 1.0,
-      "px": -13.368,
-      "py": -9.3
+      "px": -12.403,
+      "py": -9.822
     },
     {
       "id": "by_my_cell",
@@ -12477,8 +12477,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -6.009,
       "mscale": 1,
       "mpar": 2.0,
-      "px": -12.054,
-      "py": 0.864
+      "px": -12.672,
+      "py": -0.086
     },
     {
       "id": "isla_pharmaceuticals",
@@ -12520,8 +12520,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.162,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -1.041,
-      "py": 0.23
+      "px": -2.981,
+      "py": 0.326
     },
     {
       "id": "mabxience-ar",
@@ -12563,8 +12563,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.284,
       "mscale": 1,
       "mpar": 2.0,
-      "px": -11.298,
-      "py": 0.856
+      "px": -10.733,
+      "py": 0.158
     },
     {
       "id": "neocell",
@@ -12616,8 +12616,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -6.201,
       "mscale": 1,
       "mpar": 1.5,
-      "px": -12.462,
-      "py": -4.118
+      "px": -11.006,
+      "py": -3.725
     },
     {
       "id": "panarum",
@@ -12659,8 +12659,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.139,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -3.027,
-      "py": 0.146
+      "px": -3.186,
+      "py": 0.669
     },
     {
       "id": "recepta_biopharma",
@@ -12702,8 +12702,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.17,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -3.204,
-      "py": 0.524
+      "px": -2.248,
+      "py": -0.973
     },
     {
       "id": "vaxinz",
@@ -12745,8 +12745,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.133,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -1.266,
-      "py": -0.482
+      "px": -3.123,
+      "py": 0.468
     },
     {
       "id": "wayakit",
@@ -12786,10 +12786,10 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_source": "gridx_valuation",
       "sx": -8.276,
       "sy": 0.932,
-      "mscale": 3,
+      "mscale": 4,
       "mpar": 1.0,
-      "px": -0.927,
-      "py": -8.428
+      "px": 1.216,
+      "py": -8.646
     },
     {
       "id": "branch_energy",
@@ -12839,8 +12839,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.561,
       "mscale": 3,
       "mpar": 3.0,
-      "px": -1.593,
-      "py": 8.46
+      "px": -3.341,
+      "py": 9.791
     },
     {
       "id": "earth-ocean-farms-mx",
@@ -12882,8 +12882,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.486,
       "mscale": 5,
       "mpar": 2.0,
-      "px": 8.13,
-      "py": 0.862
+      "px": 5.928,
+      "py": 0.38
     },
     {
       "id": "gigablue",
@@ -12931,8 +12931,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.533,
       "mscale": 6,
       "mpar": 3.0,
-      "px": 11.082,
-      "py": 8.79
+      "px": 11.463,
+      "py": 9.311
     },
     {
       "id": "huiro",
@@ -12978,8 +12978,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.538,
       "mscale": 6,
       "mpar": 2.0,
-      "px": 12.6,
-      "py": 0.272
+      "px": 12.384,
+      "py": 0.986
     },
     {
       "id": "kigui",
@@ -13027,8 +13027,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.46,
       "mscale": 6,
       "mpar": 3.0,
-      "px": 11.109,
-      "py": 8.272
+      "px": 11.343,
+      "py": 8.308
     },
     {
       "id": "nilus",
@@ -13077,8 +13077,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.81,
       "mscale": 6,
       "mpar": 3.0,
-      "px": 11.748,
-      "py": 8.63
+      "px": 12.812,
+      "py": 8.681
     },
     {
       "id": "poas_bioenergy",
@@ -13128,8 +13128,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.566,
       "mscale": 6,
       "mpar": 3.0,
-      "px": 13.386,
-      "py": 8.942
+      "px": 11.915,
+      "py": 9.762
     },
     {
       "id": "ruuts",
@@ -13177,8 +13177,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.249,
       "mscale": 4,
       "mpar": 3.0,
-      "px": 3.573,
-      "py": 8.232
+      "px": 1.227,
+      "py": 8.853
     },
     {
       "id": "solfium",
@@ -13226,8 +13226,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.569,
       "mscale": 6,
       "mpar": 3.0,
-      "px": 12.105,
-      "py": 9.988
+      "px": 11.088,
+      "py": 9.406
     },
     {
       "id": "splight",
@@ -13276,8 +13276,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.556,
       "mscale": 6,
       "mpar": 3.0,
-      "px": 10.965,
-      "py": 8.064
+      "px": 10.763,
+      "py": 8.618
     },
     {
       "id": "advanced_biocontrollers",
@@ -13317,10 +13317,10 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.548,
       "sy": 6.828,
-      "mscale": 5,
+      "mscale": 4,
       "mpar": 1.0,
-      "px": 6.207,
-      "py": -9.378
+      "px": 2.056,
+      "py": -8.205
     },
     {
       "id": "agrorganica",
@@ -13360,10 +13360,10 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.511,
       "sy": 6.811,
-      "mscale": 3,
+      "mscale": 4,
       "mpar": 2.0,
-      "px": -2.586,
-      "py": 0.982
+      "px": 2.998,
+      "py": 0.941
     },
     {
       "id": "agrosustain-mx",
@@ -13409,8 +13409,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 6.949,
       "mscale": 5,
       "mpar": 1.57,
-      "px": 6.066,
-      "py": -3.826
+      "px": 6.933,
+      "py": -3.268
     },
     {
       "id": "bio-insumos-nativa-cl",
@@ -13452,8 +13452,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 6.81,
       "mscale": 5,
       "mpar": 1.0,
-      "px": 7.269,
-      "py": -9.136
+      "px": 6.131,
+      "py": -8.378
     },
     {
       "id": "biofabrica-siglo-xxi-mx",
@@ -13499,8 +13499,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 6.903,
       "mscale": 2,
       "mpar": 1.57,
-      "px": -7.479,
-      "py": -3.496
+      "px": -8.135,
+      "py": -4.341
     },
     {
       "id": "clearleaf",
@@ -13542,8 +13542,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 6.83,
       "mscale": 3,
       "mpar": 1.0,
-      "px": -2.55,
-      "py": -9.784
+      "px": -2.363,
+      "py": -8.53
     },
     {
       "id": "ecosativa",
@@ -13585,8 +13585,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 6.996,
       "mscale": 5,
       "mpar": 2.0,
-      "px": 6.387,
-      "py": 0.99
+      "px": 8.358,
+      "py": 0.103
     },
     {
       "id": "exacta-bioscience-cl",
@@ -13626,10 +13626,10 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_source": "emergente",
       "sx": -6.449,
       "sy": 6.766,
-      "mscale": 3,
+      "mscale": 4,
       "mpar": 2.0,
-      "px": -0.936,
-      "py": 0.39
+      "px": 1.086,
+      "py": 0.458
     },
     {
       "id": "ictiobiotic",
@@ -13669,10 +13669,10 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.074,
       "sy": 6.442,
-      "mscale": 4,
+      "mscale": 3,
       "mpar": 2.0,
-      "px": 2.532,
-      "py": -0.196
+      "px": -0.903,
+      "py": -0.589
     },
     {
       "id": "microendo",
@@ -13714,8 +13714,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 6.8,
       "mscale": 2,
       "mpar": 1.0,
-      "px": -8.229,
-      "py": -9.606
+      "px": -8.564,
+      "py": -8.416
     },
     {
       "id": "novalact",
@@ -13757,8 +13757,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 6.743,
       "mscale": 5,
       "mpar": 2.0,
-      "px": 6.957,
-      "py": 0.95
+      "px": 8.512,
+      "py": 0.244
     },
     {
       "id": "patagonia-biotechnology-cl",
@@ -13798,10 +13798,10 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_source": "emergente",
       "sx": -6.55,
       "sy": 6.828,
-      "mscale": 5,
+      "mscale": 1,
       "mpar": 1.0,
-      "px": 7.668,
-      "py": -9.136
+      "px": -12.787,
+      "py": -8.848
     },
     {
       "id": "rizoflora_biotechnology_acq_by_stoller",
@@ -13841,10 +13841,10 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.534,
       "sy": 6.84,
-      "mscale": 3,
+      "mscale": 5,
       "mpar": 2.0,
-      "px": -2.991,
-      "py": 0.044
+      "px": 7.908,
+      "py": -0.536
     },
     {
       "id": "solena-mx",
@@ -13884,10 +13884,10 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_source": "emergente",
       "sx": -6.489,
       "sy": 6.796,
-      "mscale": 5,
+      "mscale": 1,
       "mpar": 1.0,
-      "px": 6.705,
-      "py": -8.776
+      "px": -13.298,
+      "py": -8.618
     },
     {
       "id": "arakion",
@@ -13934,8 +13934,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 7.002,
       "mscale": 5,
       "mpar": 2.0,
-      "px": 8.547,
-      "py": -0.702
+      "px": 6.36,
+      "py": -0.832
     },
     {
       "id": "caligenia",
@@ -13985,8 +13985,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 7.095,
       "mscale": 2,
       "mpar": 2.0,
-      "px": -7.482,
-      "py": -0.206
+      "px": -8.104,
+      "py": 0.128
     },
     {
       "id": "inbioar",
@@ -14033,8 +14033,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 7.096,
       "mscale": 5,
       "mpar": 1.57,
-      "px": 8.28,
-      "py": -3.616
+      "px": 5.766,
+      "py": -2.917
     },
     {
       "id": "infira",
@@ -14084,8 +14084,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 7.039,
       "mscale": 5,
       "mpar": 2.0,
-      "px": 6.372,
-      "py": -0.456
+      "px": 7.518,
+      "py": -0.514
     },
     {
       "id": "neocrop-technologies",
@@ -14135,8 +14135,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 7.116,
       "mscale": 1,
       "mpar": 2.0,
-      "px": -13.251,
-      "py": -0.774
+      "px": -11.595,
+      "py": 0.116
     },
     {
       "id": "nunatak_biotech",
@@ -14185,8 +14185,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 7.163,
       "mscale": 2,
       "mpar": 2.0,
-      "px": -8.409,
-      "py": 0.918
+      "px": -7.144,
+      "py": -0.432
     },
     {
       "id": "puna_bio",
@@ -14235,8 +14235,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 7.147,
       "mscale": 5,
       "mpar": 1.57,
-      "px": 5.934,
-      "py": -4.678
+      "px": 7.736,
+      "py": -4.749
     },
     {
       "id": "qumir_nano",
@@ -14287,8 +14287,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 7.1,
       "mscale": 1,
       "mpar": 1.5,
-      "px": -11.808,
-      "py": -4.622
+      "px": -10.733,
+      "py": -5.471
     },
     {
       "id": "soygreen",
@@ -14335,8 +14335,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 7.093,
       "mscale": 5,
       "mpar": 1.0,
-      "px": 6.408,
-      "py": -9.936
+      "px": 6.439,
+      "py": -8.363
     },
     {
       "id": "sylvarum",
@@ -14386,8 +14386,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 7.024,
       "mscale": 5,
       "mpar": 2.0,
-      "px": 8.385,
-      "py": -0.806
+      "px": 7.816,
+      "py": 0.48
     },
     {
       "id": "zavia_bio",
@@ -14437,8 +14437,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 7.075,
       "mscale": 1,
       "mpar": 1.89,
-      "px": -11.847,
-      "py": -1.632
+      "px": -12.295,
+      "py": -0.574
     },
     {
       "id": "beam_croptech",
@@ -14486,8 +14486,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 6.885,
       "mscale": 1,
       "mpar": 1.0,
-      "px": -12.75,
-      "py": -9.202
+      "px": -11.419,
+      "py": -8.643
     },
     {
       "id": "bioceres_sa",
@@ -14529,8 +14529,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 6.996,
       "mscale": 5,
       "mpar": 1.0,
-      "px": 6.594,
-      "py": -8.972
+      "px": 7.683,
+      "py": -9.749
     },
     {
       "id": "bioheuris",
@@ -14577,8 +14577,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 6.835,
       "mscale": 1,
       "mpar": 1.0,
-      "px": -13.395,
-      "py": -8.762
+      "px": -11.023,
+      "py": -8.887
     },
     {
       "id": "bsafe_biotech",
@@ -14626,8 +14626,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 6.867,
       "mscale": 5,
       "mpar": 1.0,
-      "px": 6.066,
-      "py": -9.114
+      "px": 6.788,
+      "py": -9.085
     },
     {
       "id": "calice_biotech",
@@ -14669,8 +14669,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 6.738,
       "mscale": 1,
       "mpar": 2.0,
-      "px": -11.961,
-      "py": 0.754
+      "px": -12.747,
+      "py": -0.927
     },
     {
       "id": "dioxd",
@@ -14710,10 +14710,10 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_source": "gridx_valuation",
       "sx": -7.012,
       "sy": 6.865,
-      "mscale": 3,
+      "mscale": 5,
       "mpar": 2.0,
-      "px": -3.075,
-      "py": 0.272
+      "px": 5.971,
+      "py": -0.248
     },
     {
       "id": "eiru",
@@ -14759,8 +14759,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 6.906,
       "mscale": 5,
       "mpar": 1.0,
-      "px": 8.328,
-      "py": -8.12
+      "px": 6.241,
+      "py": -8.738
     },
     {
       "id": "feedvax",
@@ -14809,8 +14809,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 6.271,
       "mscale": 5,
       "mpar": 3.0,
-      "px": 7.491,
-      "py": 9.496
+      "px": 6.671,
+      "py": 9.308
     },
     {
       "id": "hapiseeds-br",
@@ -14852,8 +14852,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 6.767,
       "mscale": 1,
       "mpar": 2.0,
-      "px": -11.034,
-      "py": -0.838
+      "px": -11.826,
+      "py": -0.271
     },
     {
       "id": "inedita-bio-br",
@@ -14895,8 +14895,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 6.73,
       "mscale": 1,
       "mpar": 2.0,
-      "px": -12.204,
-      "py": -0.844
+      "px": -12.615,
+      "py": -0.365
     },
     {
       "id": "kaiima",
@@ -14938,8 +14938,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 6.749,
       "mscale": 1,
       "mpar": 2.0,
-      "px": -11.745,
-      "py": 0.92
+      "px": -11.906,
+      "py": -0.717
     },
     {
       "id": "m4life",
@@ -14985,8 +14985,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 6.878,
       "mscale": 5,
       "mpar": 3.0,
-      "px": 8.526,
-      "py": 9.404
+      "px": 7.739,
+      "py": 9.908
     },
     {
       "id": "semion",
@@ -15030,8 +15030,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 6.885,
       "mscale": 1,
       "mpar": 2.0,
-      "px": -10.845,
-      "py": 0.186
+      "px": -12.037,
+      "py": 0.412
     },
     {
       "id": "syocin-biotech",
@@ -15084,8 +15084,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 6.95,
       "mscale": 1,
       "mpar": 1.33,
-      "px": -13.497,
-      "py": -6.752
+      "px": -10.698,
+      "py": -5.824
     },
     {
       "id": "unibaio",
@@ -15132,8 +15132,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 6.913,
       "mscale": 5,
       "mpar": 1.0,
-      "px": 5.997,
-      "py": -9.306
+      "px": 7.873,
+      "py": -8.397
     },
     {
       "id": "algalife",
@@ -15181,8 +15181,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.287,
       "mscale": 2,
       "mpar": 2.0,
-      "px": -7.248,
-      "py": -0.152
+      "px": -6.239,
+      "py": -0.233
     },
     {
       "id": "alytix",
@@ -15233,8 +15233,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.384,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -2.22,
-      "py": 0.638
+      "px": -1.376,
+      "py": -0.131
     },
     {
       "id": "amplify-dynamics",
@@ -15287,8 +15287,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -12.033,
       "mscale": 1,
       "mpar": 1.44,
-      "px": -12.99,
-      "py": -5.868
+      "px": -11.428,
+      "py": -5.919
     },
     {
       "id": "antarka",
@@ -15341,8 +15341,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -1.02,
       "mscale": 1,
       "mpar": 1.0,
-      "px": -12.063,
-      "py": -9.886
+      "px": -11.686,
+      "py": -8.634
     },
     {
       "id": "argentag",
@@ -15393,8 +15393,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.276,
       "mscale": 1,
       "mpar": 2.33,
-      "px": -12.594,
-      "py": 2.036
+      "px": -11.475,
+      "py": 2.467
     },
     {
       "id": "avatar_medtech",
@@ -15444,8 +15444,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.446,
       "mscale": 3,
       "mpar": 1.0,
-      "px": -3.057,
-      "py": -9.95
+      "px": -0.909,
+      "py": -9.833
     },
     {
       "id": "baxxis-medtech-cl",
@@ -15490,8 +15490,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.418,
       "mscale": 6,
       "mpar": 3.0,
-      "px": 11.514,
-      "py": 9.52
+      "px": 12.837,
+      "py": 9.336
     },
     {
       "id": "biosynaptica",
@@ -15539,8 +15539,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -11.433,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -0.954,
-      "py": -0.324
+      "px": -3.5,
+      "py": -0.349
     },
     {
       "id": "biotalife",
@@ -15592,8 +15592,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.648,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -2.061,
-      "py": -0.688
+      "px": -1.25,
+      "py": -0.777
     },
     {
       "id": "botanical-solutions",
@@ -15643,8 +15643,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 3.626,
       "mscale": 5,
       "mpar": 1.5,
-      "px": 7.695,
-      "py": -5.41
+      "px": 7.806,
+      "py": -4.755
     },
     {
       "id": "cellter-cl",
@@ -15686,8 +15686,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.347,
       "mscale": 1,
       "mpar": 2.0,
-      "px": -12.06,
-      "py": -0.384
+      "px": -11.006,
+      "py": -0.831
     },
     {
       "id": "cryosmetics",
@@ -15739,10 +15739,10 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_source": "gridx_valuation",
       "sx": -7.647,
       "sy": -1.108,
-      "mscale": 3,
+      "mscale": 4,
       "mpar": 1.5,
-      "px": -3.282,
-      "py": -3.67
+      "px": 2.02,
+      "py": -5.234
     },
     {
       "id": "cytbac",
@@ -15793,8 +15793,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -11.224,
       "mscale": 1,
       "mpar": 2.33,
-      "px": -11.355,
-      "py": 3.83
+      "px": -12.26,
+      "py": 2.548
     },
     {
       "id": "delee",
@@ -15842,8 +15842,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.546,
       "mscale": 3,
       "mpar": 3.0,
-      "px": -2.127,
-      "py": 8.952
+      "px": -2.522,
+      "py": 8.619
     },
     {
       "id": "epiliquid",
@@ -15892,8 +15892,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.516,
       "mscale": 1,
       "mpar": 3.0,
-      "px": -11.004,
-      "py": 8.006
+      "px": -10.768,
+      "py": 8.727
     },
     {
       "id": "galtec",
@@ -15941,8 +15941,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -11.285,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -1.053,
-      "py": -0.208
+      "px": -2.057,
+      "py": -0.927
     },
     {
       "id": "gameet",
@@ -15990,8 +15990,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.439,
       "mscale": 3,
       "mpar": 3.0,
-      "px": -3.555,
-      "py": 8.062
+      "px": -1.803,
+      "py": 8.693
     },
     {
       "id": "genotyping",
@@ -16041,8 +16041,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.187,
       "mscale": 1,
       "mpar": 3.0,
-      "px": -13.5,
-      "py": 9.666
+      "px": -12.578,
+      "py": 9.942
     },
     {
       "id": "hybridon",
@@ -16093,8 +16093,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -0.914,
       "mscale": 1,
       "mpar": 1.8,
-      "px": -10.677,
-      "py": -1.06
+      "px": -11.459,
+      "py": -1.016
     },
     {
       "id": "imvalv",
@@ -16143,8 +16143,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.453,
       "mscale": 3,
       "mpar": 3.0,
-      "px": -3.585,
-      "py": 9.648
+      "px": -1.759,
+      "py": 9.819
     },
     {
       "id": "inmunova-ar",
@@ -16186,8 +16186,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -11.052,
       "mscale": 1,
       "mpar": 2.0,
-      "px": -13.362,
-      "py": -0.674
+      "px": -10.764,
+      "py": -0.075
     },
     {
       "id": "inner_cosmos",
@@ -16236,8 +16236,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.57,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -1.287,
-      "py": -0.208
+      "px": -2.433,
+      "py": -0.474
     },
     {
       "id": "lipock",
@@ -16288,10 +16288,10 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_source": "investors_proxy",
       "sx": -9.031,
       "sy": -11.929,
-      "mscale": 3,
+      "mscale": 4,
       "mpar": 1.5,
-      "px": -2.46,
-      "py": -4.874
+      "px": 2.534,
+      "py": -5.348
     },
     {
       "id": "magnamed",
@@ -16339,8 +16339,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.71,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -1.323,
-      "py": 0.044
+      "px": -2.393,
+      "py": 0.985
     },
     {
       "id": "merken-biotech-cl",
@@ -16380,10 +16380,10 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_source": "emergente",
       "sx": -9.631,
       "sy": -11.104,
-      "mscale": 2,
+      "mscale": 1,
       "mpar": 2.0,
-      "px": -7.275,
-      "py": -0.646
+      "px": -12.395,
+      "py": 0.05
     },
     {
       "id": "mesenchyal_t",
@@ -16431,8 +16431,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.7,
       "mscale": 2,
       "mpar": 2.0,
-      "px": -6.945,
-      "py": 0.332
+      "px": -7.086,
+      "py": -0.035
     },
     {
       "id": "metabix-biotech",
@@ -16484,8 +16484,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.622,
       "mscale": 3,
       "mpar": 3.0,
-      "px": -3.009,
-      "py": 9.108
+      "px": -2.717,
+      "py": 9.714
     },
     {
       "id": "migma",
@@ -16535,10 +16535,10 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_source": "investors_proxy",
       "sx": -0.642,
       "sy": 0.051,
-      "mscale": 3,
+      "mscale": 4,
       "mpar": 1.67,
-      "px": -0.99,
-      "py": -3.916
+      "px": 1.105,
+      "py": -3.287
     },
     {
       "id": "nanoprox",
@@ -16591,8 +16591,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -12.06,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -2.568,
-      "py": -0.334
+      "px": -2.655,
+      "py": -0.941
     },
     {
       "id": "pepton",
@@ -16641,8 +16641,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -11.343,
       "mscale": 3,
       "mpar": 1.67,
-      "px": -2.745,
-      "py": -2.986
+      "px": -3.011,
+      "py": -2.989
     },
     {
       "id": "phagelab",
@@ -16696,8 +16696,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.362,
       "mscale": 5,
       "mpar": 2.33,
-      "px": 7.356,
-      "py": 3.306
+      "px": 7.18,
+      "py": 3.469
     },
     {
       "id": "phylumtech",
@@ -16748,8 +16748,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -11.295,
       "mscale": 1,
       "mpar": 2.6,
-      "px": -13.437,
-      "py": 6.302
+      "px": -11.857,
+      "py": 6.19
     },
     {
       "id": "pill_ar",
@@ -16801,8 +16801,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.486,
       "mscale": 3,
       "mpar": 1.67,
-      "px": -1.77,
-      "py": -3.32
+      "px": -3.574,
+      "py": -3.903
     },
     {
       "id": "plamic",
@@ -16855,8 +16855,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -11.829,
       "mscale": 6,
       "mpar": 1.4,
-      "px": 13.053,
-      "py": -5.22
+      "px": 12.725,
+      "py": -4.426
     },
     {
       "id": "plamic_biotech",
@@ -16907,8 +16907,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -11.301,
       "mscale": 3,
       "mpar": 1.67,
-      "px": -2.391,
-      "py": -3.304
+      "px": -2.251,
+      "py": -3.803
     },
     {
       "id": "radbio",
@@ -16959,8 +16959,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -11.545,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -3.456,
-      "py": -0.55
+      "px": -0.902,
+      "py": -0.115
     },
     {
       "id": "resistia",
@@ -17010,8 +17010,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -11.218,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -2.232,
-      "py": -0.442
+      "px": -3.642,
+      "py": -0.368
     },
     {
       "id": "sciphage",
@@ -17061,10 +17061,10 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_source": "gridx_valuation",
       "sx": 10.697,
       "sy": -9.799,
-      "mscale": 3,
+      "mscale": 5,
       "mpar": 2.33,
-      "px": -2.259,
-      "py": 3.306
+      "px": 8.187,
+      "py": 2.952
     },
     {
       "id": "tensor-care",
@@ -17113,8 +17113,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.43,
       "mscale": 3,
       "mpar": 3.0,
-      "px": -3.654,
-      "py": 8.354
+      "px": -3.832,
+      "py": 8.368
     },
     {
       "id": "untech",
@@ -17164,8 +17164,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.558,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -2.838,
-      "py": -0.642
+      "px": -2.022,
+      "py": 0.074
     },
     {
       "id": "viewmind",
@@ -17214,8 +17214,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.681,
       "mscale": 3,
       "mpar": 1.0,
-      "px": -3.801,
-      "py": -8.044
+      "px": -3.699,
+      "py": -8.747
     },
     {
       "id": "xeptiva",
@@ -17265,8 +17265,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.703,
       "mscale": 3,
       "mpar": 2.33,
-      "px": -1.944,
-      "py": 1.97
+      "px": -3.024,
+      "py": 2.738
     },
     {
       "id": "agronow-br",
@@ -17308,8 +17308,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 10.284,
       "mscale": 5,
       "mpar": 2.0,
-      "px": 6.714,
-      "py": 0.202
+      "px": 6.41,
+      "py": -0.104
     },
     {
       "id": "calice",
@@ -17358,8 +17358,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 10.161,
       "mscale": 5,
       "mpar": 3.0,
-      "px": 7.893,
-      "py": 8.802
+      "px": 7.168,
+      "py": 8.769
     },
     {
       "id": "calice-ai-ar",
@@ -17404,8 +17404,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 10.202,
       "mscale": 5,
       "mpar": 3.0,
-      "px": 5.832,
-      "py": 9.482
+      "px": 6.167,
+      "py": 9.717
     },
     {
       "id": "cowmed-br",
@@ -17447,8 +17447,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 10.24,
       "mscale": 3,
       "mpar": 2.0,
-      "px": -1.113,
-      "py": -0.416
+      "px": -2.252,
+      "py": -0.562
     },
     {
       "id": "deepagro",
@@ -17496,8 +17496,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 10.448,
       "mscale": 5,
       "mpar": 3.0,
-      "px": 6.123,
-      "py": 8.584
+      "px": 7.069,
+      "py": 8.398
     },
     {
       "id": "digifarmz-br",
@@ -17539,8 +17539,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 10.263,
       "mscale": 5,
       "mpar": 2.0,
-      "px": 6.693,
-      "py": 0.25
+      "px": 7.018,
+      "py": -0.589
     },
     {
       "id": "dymaxion_labs",
@@ -17587,8 +17587,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 10.141,
       "mscale": 5,
       "mpar": 3.0,
-      "px": 7.548,
-      "py": 8.248
+      "px": 8.33,
+      "py": 8.364
     },
     {
       "id": "eiwa",
@@ -17635,8 +17635,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 10.16,
       "mscale": 5,
       "mpar": 3.0,
-      "px": 7.53,
-      "py": 9.114
+      "px": 7.513,
+      "py": 9.375
     },
     {
       "id": "inspectral-br",
@@ -17676,10 +17676,10 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_source": "emergente",
       "sx": -1.867,
       "sy": 9.067,
-      "mscale": 5,
+      "mscale": 6,
       "mpar": 2.0,
-      "px": 7.392,
-      "py": -0.762
+      "px": 11.336,
+      "py": -0.562
     },
     {
       "id": "instacrops-cl",
@@ -17721,8 +17721,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 10.302,
       "mscale": 5,
       "mpar": 2.0,
-      "px": 7.044,
-      "py": 0.534
+      "px": 6.314,
+      "py": 0.032
     },
     {
       "id": "jetbov",
@@ -17770,8 +17770,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 10.228,
       "mscale": 5,
       "mpar": 3.0,
-      "px": 6.726,
-      "py": 9.158
+      "px": 8.203,
+      "py": 9.566
     },
     {
       "id": "olho_do_dono",
@@ -17811,10 +17811,10 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_source": "gridx_valuation",
       "sx": 9.108,
       "sy": 10.192,
-      "mscale": 3,
+      "mscale": 5,
       "mpar": 2.0,
-      "px": -1.107,
-      "py": 0.894
+      "px": 5.791,
+      "py": 0.194
     },
     {
       "id": "precision_ag",
@@ -17862,8 +17862,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.039,
       "mscale": 5,
       "mpar": 3.0,
-      "px": 5.862,
-      "py": 9.278
+      "px": 7.136,
+      "py": 9.889
     },
     {
       "id": "silohub",
@@ -17909,8 +17909,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 10.161,
       "mscale": 5,
       "mpar": 3.0,
-      "px": 6.378,
-      "py": 8.15
+      "px": 6.341,
+      "py": 8.17
     },
     {
       "id": "sima",
@@ -17956,8 +17956,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 10.226,
       "mscale": 5,
       "mpar": 3.0,
-      "px": 6.228,
-      "py": 9.924
+      "px": 7.136,
+      "py": 8.984
     },
     {
       "id": "sioma",
@@ -18004,8 +18004,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 10.161,
       "mscale": 5,
       "mpar": 3.0,
-      "px": 7.2,
-      "py": 9.774
+      "px": 7.404,
+      "py": 8.912
     },
     {
       "id": "smartbreeder",
@@ -18052,8 +18052,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 10.262,
       "mscale": 5,
       "mpar": 3.0,
-      "px": 6.621,
-      "py": 9.414
+      "px": 6.617,
+      "py": 9.077
     },
     {
       "id": "spaceag",
@@ -18100,8 +18100,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 10.191,
       "mscale": 5,
       "mpar": 3.0,
-      "px": 5.934,
-      "py": 9.6
+      "px": 8.36,
+      "py": 8.677
     },
     {
       "id": "strider-br",
@@ -18141,10 +18141,10 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_source": "investors_proxy",
       "sx": 9.095,
       "sy": 10.17,
-      "mscale": 3,
+      "mscale": 5,
       "mpar": 3.0,
-      "px": -2.727,
-      "py": 8.428
+      "px": 6.219,
+      "py": 9.799
     },
     {
       "id": "tarvos-br",
@@ -18189,8 +18189,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 10.378,
       "mscale": 5,
       "mpar": 3.0,
-      "px": 7.428,
-      "py": 8.822
+      "px": 7.421,
+      "py": 8.055
     },
     {
       "id": "tech",
@@ -18238,8 +18238,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 10.15,
       "mscale": 5,
       "mpar": 3.0,
-      "px": 7.794,
-      "py": 9.822
+      "px": 7.105,
+      "py": 8.115
     },
     {
       "id": "wiseconn-cl",
@@ -18281,8 +18281,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 10.324,
       "mscale": 5,
       "mpar": 3.0,
-      "px": 8.496,
-      "py": 8.698
+      "px": 7.194,
+      "py": 9.59
     },
     {
       "id": "zoomagri",
@@ -18329,8 +18329,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 10.138,
       "mscale": 5,
       "mpar": 3.0,
-      "px": 7.032,
-      "py": 9.54
+      "px": 6.523,
+      "py": 9.255
     },
     {
       "id": "ages",
@@ -18382,8 +18382,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -1.988,
       "mscale": 6,
       "mpar": 1.67,
-      "px": 12.738,
-      "py": -3.918
+      "px": 12.615,
+      "py": -2.875
     },
     {
       "id": "biolinker",
@@ -18436,8 +18436,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -8.874,
       "mscale": 1,
       "mpar": 1.57,
-      "px": -13.479,
-      "py": -3.806
+      "px": -11.203,
+      "py": -2.96
     },
     {
       "id": "future_cow",
@@ -18488,8 +18488,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -0.981,
       "mscale": 2,
       "mpar": 1.67,
-      "px": -8.073,
-      "py": -2.21
+      "px": -8.008,
+      "py": -2.555
     },
     {
       "id": "harmony-biosciences",
@@ -18539,8 +18539,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -0.722,
       "mscale": 2,
       "mpar": 1.67,
-      "px": -7.971,
-      "py": -2.662
+      "px": -6.028,
+      "py": -3.491
     },
     {
       "id": "heartbest",
@@ -18590,8 +18590,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -0.567,
       "mscale": 4,
       "mpar": 1.0,
-      "px": 3.393,
-      "py": -9.246
+      "px": 3.803,
+      "py": -8.896
     },
     {
       "id": "imeve",
@@ -18644,8 +18644,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 3.573,
       "mscale": 2,
       "mpar": 1.0,
-      "px": -5.73,
-      "py": -9.956
+      "px": -8.631,
+      "py": -8.496
     },
     {
       "id": "inprenha",
@@ -18693,8 +18693,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 3.377,
       "mscale": 5,
       "mpar": 3.0,
-      "px": 6.993,
-      "py": 9.834
+      "px": 8.529,
+      "py": 9.406
     },
     {
       "id": "nexxto",
@@ -18742,10 +18742,10 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_source": "investors_proxy",
       "sx": -1.789,
       "sy": 10.007,
-      "mscale": 2,
+      "mscale": 4,
       "mpar": 3.0,
-      "px": -6.132,
-      "py": 9.53
+      "px": 2.25,
+      "py": 8.174
     },
     {
       "id": "nude",
@@ -18793,8 +18793,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -1.444,
       "mscale": 4,
       "mpar": 1.0,
-      "px": 3.363,
-      "py": -8.816
+      "px": 1.593,
+      "py": -8.18
     },
     {
       "id": "qnity",
@@ -18843,8 +18843,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -12.122,
       "mscale": 1,
       "mpar": 2.33,
-      "px": -13.212,
-      "py": 2.206
+      "px": -11.524,
+      "py": 3.576
     },
     {
       "id": "speclab",
@@ -18894,8 +18894,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.013,
       "mscale": 3,
       "mpar": 2.5,
-      "px": -2.61,
-      "py": 5.422
+      "px": -1.066,
+      "py": 3.922
     },
     {
       "id": "updairy",
@@ -18946,8 +18946,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -0.895,
       "mscale": 2,
       "mpar": 1.0,
-      "px": -6.981,
-      "py": -9.572
+      "px": -7.321,
+      "py": -9.201
     },
     {
       "id": "agrion-agrisolutions-br",
@@ -18989,8 +18989,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 3.072,
       "mscale": 5,
       "mpar": 1.0,
-      "px": 8.091,
-      "py": -8.062
+      "px": 8.686,
+      "py": -8.814
     },
     {
       "id": "agrivalle",
@@ -19041,8 +19041,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 3.088,
       "mscale": 2,
       "mpar": 1.0,
-      "px": -6.42,
-      "py": -8.894
+      "px": -6.993,
+      "py": -8.013
     },
     {
       "id": "biocentis-br",
@@ -19082,10 +19082,10 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_source": "emergente",
       "sx": -6.909,
       "sy": 6.991,
-      "mscale": 5,
+      "mscale": 1,
       "mpar": 2.0,
-      "px": 8.604,
-      "py": -0.472
+      "px": -11.733,
+      "py": 0.242
     },
     {
       "id": "bioin-br",
@@ -19130,8 +19130,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 2.043,
       "mscale": 5,
       "mpar": 2.25,
-      "px": 6.846,
-      "py": 1.73
+      "px": 7.74,
+      "py": 1.951
     },
     {
       "id": "biotrop-br",
@@ -19173,8 +19173,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 3.061,
       "mscale": 5,
       "mpar": 1.0,
-      "px": 8.247,
-      "py": -8.342
+      "px": 7.46,
+      "py": -8.725
     },
     {
       "id": "bug_agentes_biologicos",
@@ -19220,8 +19220,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 3.041,
       "mscale": 5,
       "mpar": 1.0,
-      "px": 7.632,
-      "py": -8.99
+      "px": 5.964,
+      "py": -8.394
     },
     {
       "id": "decoy",
@@ -19267,8 +19267,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 3.055,
       "mscale": 5,
       "mpar": 1.0,
-      "px": 6.108,
-      "py": -9.672
+      "px": 6.564,
+      "py": -8.304
     },
     {
       "id": "decoy-smart-control-br",
@@ -19308,10 +19308,10 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_source": "gridx_valuation",
       "sx": -7.071,
       "sy": 3.036,
-      "mscale": 5,
+      "mscale": 4,
       "mpar": 1.0,
-      "px": 6.441,
-      "py": -9.03
+      "px": 1.867,
+      "py": -8.439
     },
     {
       "id": "frizata",
@@ -19360,8 +19360,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -1.802,
       "mscale": 4,
       "mpar": 2.0,
-      "px": 1.113,
-      "py": -0.08
+      "px": 1.816,
+      "py": -0.207
     },
     {
       "id": "genica",
@@ -19412,8 +19412,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 3.185,
       "mscale": 5,
       "mpar": 2.0,
-      "px": 7.299,
-      "py": -0.646
+      "px": 8.667,
+      "py": -0.184
     },
     {
       "id": "ideelab",
@@ -19466,8 +19466,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 3.214,
       "mscale": 2,
       "mpar": 1.33,
-      "px": -7.122,
-      "py": -5.31
+      "px": -7.359,
+      "py": -6.561
     },
     {
       "id": "krilltech",
@@ -19515,8 +19515,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 3.136,
       "mscale": 5,
       "mpar": 1.57,
-      "px": 8.235,
-      "py": -3.328
+      "px": 6.798,
+      "py": -3.181
     },
     {
       "id": "nocarbon_milk",
@@ -19562,8 +19562,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -1.756,
       "mscale": 4,
       "mpar": 2.0,
-      "px": 2.397,
-      "py": 0.388
+      "px": 1.728,
+      "py": 0.221
     },
     {
       "id": "promip",
@@ -19610,8 +19610,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 3.103,
       "mscale": 5,
       "mpar": 1.0,
-      "px": 8.625,
-      "py": -8.102
+      "px": 7.099,
+      "py": -9.837
     },
     {
       "id": "solubio",
@@ -19659,8 +19659,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 3.085,
       "mscale": 5,
       "mpar": 1.57,
-      "px": 7.749,
-      "py": -4.354
+      "px": 8.672,
+      "py": -2.896
     },
     {
       "id": "symbiomics",
@@ -19711,8 +19711,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 3.332,
       "mscale": 1,
       "mpar": 1.8,
-      "px": -11.355,
-      "py": -1.396
+      "px": -12.947,
+      "py": -2.221
     },
     {
       "id": "vitales-br",
@@ -19754,8 +19754,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 3.048,
       "mscale": 5,
       "mpar": 2.0,
-      "px": 6.117,
-      "py": -1.0
+      "px": 5.945,
+      "py": -0.849
     },
     {
       "id": "biodiversity_intelligence",
@@ -19803,8 +19803,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.182,
       "mscale": 6,
       "mpar": 3.0,
-      "px": 12.111,
-      "py": 9.092
+      "px": 12.44,
+      "py": 8.06
     },
     {
       "id": "innova_space",
@@ -19854,8 +19854,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.14,
       "mscale": 6,
       "mpar": 3.0,
-      "px": 13.395,
-      "py": 9.382
+      "px": 12.024,
+      "py": 9.767
     },
     {
       "id": "lemu",
@@ -19905,8 +19905,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.177,
       "mscale": 6,
       "mpar": 3.0,
-      "px": 13.179,
-      "py": 8.7
+      "px": 12.434,
+      "py": 9.854
     },
     {
       "id": "odd_industries",
@@ -19948,8 +19948,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.14,
       "mscale": 6,
       "mpar": 2.0,
-      "px": 10.641,
-      "py": -0.784
+      "px": 13.118,
+      "py": -0.683
     },
     {
       "id": "satellites_on_fire",
@@ -19997,8 +19997,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.119,
       "mscale": 6,
       "mpar": 3.0,
-      "px": 12.234,
-      "py": 8.374
+      "px": 11.42,
+      "py": 8.047
     },
     {
       "id": "satellogic",
@@ -20046,8 +20046,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.116,
       "mscale": 6,
       "mpar": 3.0,
-      "px": 11.358,
-      "py": 9.672
+      "px": 13.459,
+      "py": 8.784
     },
     {
       "id": "treevia-br",
@@ -20093,8 +20093,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.182,
       "mscale": 6,
       "mpar": 3.0,
-      "px": 12.075,
-      "py": 9.888
+      "px": 13.013,
+      "py": 9.298
     },
     {
       "id": "biomas",
@@ -20141,8 +20141,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.064,
       "mscale": 6,
       "mpar": 2.0,
-      "px": 11.316,
-      "py": -0.914
+      "px": 11.691,
+      "py": 0.293
     },
     {
       "id": "carbonext",
@@ -20191,8 +20191,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.08,
       "mscale": 6,
       "mpar": 3.0,
-      "px": 13.116,
-      "py": 8.58
+      "px": 11.142,
+      "py": 8.126
     },
     {
       "id": "courageous_land",
@@ -20241,8 +20241,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.094,
       "mscale": 6,
       "mpar": 3.0,
-      "px": 10.809,
-      "py": 8.952
+      "px": 11.379,
+      "py": 8.807
     },
     {
       "id": "mombak",
@@ -20289,8 +20289,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.105,
       "mscale": 6,
       "mpar": 3.0,
-      "px": 11.784,
-      "py": 8.7
+      "px": 12.755,
+      "py": 9.412
     },
     {
       "id": "moss",
@@ -20338,8 +20338,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.062,
       "mscale": 6,
       "mpar": 3.0,
-      "px": 12.282,
-      "py": 8.69
+      "px": 12.385,
+      "py": 8.571
     },
     {
       "id": "nideport",
@@ -20387,8 +20387,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.12,
       "mscale": 6,
       "mpar": 3.0,
-      "px": 11.079,
-      "py": 9.282
+      "px": 10.884,
+      "py": 9.183
     },
     {
       "id": "re_green",
@@ -20436,8 +20436,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.079,
       "mscale": 6,
       "mpar": 3.0,
-      "px": 12.027,
-      "py": 9.62
+      "px": 12.426,
+      "py": 8.171
     },
     {
       "id": "um_grau_e_meio",
@@ -20485,8 +20485,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.1,
       "mscale": 6,
       "mpar": 3.0,
-      "px": 11.766,
-      "py": 8.33
+      "px": 10.944,
+      "py": 8.673
     },
     {
       "id": "agricapital",
@@ -20534,8 +20534,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.224,
       "mscale": 5,
       "mpar": 3.0,
-      "px": 8.373,
-      "py": 8.048
+      "px": 8.484,
+      "py": 8.274
     },
     {
       "id": "agroforte",
@@ -20584,8 +20584,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.289,
       "mscale": 3,
       "mpar": 3.0,
-      "px": -0.927,
-      "py": 9.544
+      "px": -3.746,
+      "py": 8.774
     },
     {
       "id": "agrofy",
@@ -20636,8 +20636,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.392,
       "mscale": 5,
       "mpar": 2.33,
-      "px": 8.268,
-      "py": 2.158
+      "px": 6.394,
+      "py": 2.887
     },
     {
       "id": "agrolend",
@@ -20685,8 +20685,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.173,
       "mscale": 5,
       "mpar": 3.0,
-      "px": 8.595,
-      "py": 8.57
+      "px": 5.933,
+      "py": 9.724
     },
     {
       "id": "blooms",
@@ -20733,8 +20733,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.324,
       "mscale": 5,
       "mpar": 3.0,
-      "px": 8.496,
-      "py": 8.092
+      "px": 7.721,
+      "py": 8.396
     },
     {
       "id": "culttivo",
@@ -20783,8 +20783,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.247,
       "mscale": 5,
       "mpar": 3.0,
-      "px": 8.055,
-      "py": 9.724
+      "px": 7.073,
+      "py": 8.214
     },
     {
       "id": "incluirtec",
@@ -20832,8 +20832,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.196,
       "mscale": 5,
       "mpar": 3.0,
-      "px": 6.126,
-      "py": 9.332
+      "px": 8.539,
+      "py": 9.817
     },
     {
       "id": "sette",
@@ -20882,8 +20882,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.288,
       "mscale": 5,
       "mpar": 3.0,
-      "px": 6.21,
-      "py": 9.554
+      "px": 7.605,
+      "py": 8.188
     },
     {
       "id": "siloreal",
@@ -20930,8 +20930,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.311,
       "mscale": 5,
       "mpar": 3.0,
-      "px": 8.388,
-      "py": 9.32
+      "px": 8.486,
+      "py": 9.889
     },
     {
       "id": "terramagna",
@@ -20978,8 +20978,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.241,
       "mscale": 5,
       "mpar": 3.0,
-      "px": 8.277,
-      "py": 8.616
+      "px": 8.122,
+      "py": 8.452
     },
     {
       "id": "traive",
@@ -21027,8 +21027,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.187,
       "mscale": 5,
       "mpar": 3.0,
-      "px": 7.098,
-      "py": 8.312
+      "px": 5.994,
+      "py": 9.503
     },
     {
       "id": "verqor",
@@ -21076,8 +21076,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.247,
       "mscale": 5,
       "mpar": 3.0,
-      "px": 6.363,
-      "py": 9.916
+      "px": 8.548,
+      "py": 9.33
     },
     {
       "id": "aegro",
@@ -21125,8 +21125,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.539,
       "mscale": 5,
       "mpar": 3.0,
-      "px": 7.164,
-      "py": 8.148
+      "px": 7.826,
+      "py": 9.608
     },
     {
       "id": "agrourbana",
@@ -21176,8 +21176,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.895,
       "mscale": 5,
       "mpar": 3.0,
-      "px": 5.943,
-      "py": 9.3
+      "px": 5.705,
+      "py": 9.56
     },
     {
       "id": "aimirim-br",
@@ -21223,8 +21223,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 10.862,
       "mscale": 2,
       "mpar": 3.0,
-      "px": -8.007,
-      "py": 9.294
+      "px": -8.244,
+      "py": 8.49
     },
     {
       "id": "arado",
@@ -21273,8 +21273,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.847,
       "mscale": 6,
       "mpar": 3.0,
-      "px": 12.39,
-      "py": 8.588
+      "px": 10.711,
+      "py": 9.641
     },
     {
       "id": "auravant",
@@ -21322,8 +21322,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 10.8,
       "mscale": 5,
       "mpar": 3.0,
-      "px": 7.737,
-      "py": 9.748
+      "px": 5.772,
+      "py": 8.826
     },
     {
       "id": "beeflow",
@@ -21370,8 +21370,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 10.869,
       "mscale": 5,
       "mpar": 2.0,
-      "px": 7.002,
-      "py": -0.184
+      "px": 7.506,
+      "py": 0.84
     },
     {
       "id": "bemagro",
@@ -21420,8 +21420,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.067,
       "mscale": 5,
       "mpar": 3.0,
-      "px": 7.251,
-      "py": 8.676
+      "px": 6.579,
+      "py": 9.261
     },
     {
       "id": "cerradox",
@@ -21468,8 +21468,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 10.991,
       "mscale": 5,
       "mpar": 3.0,
-      "px": 7.509,
-      "py": 8.49
+      "px": 6.737,
+      "py": 9.795
     },
     {
       "id": "goflux",
@@ -21517,8 +21517,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.594,
       "mscale": 5,
       "mpar": 3.0,
-      "px": 7.653,
-      "py": 9.398
+      "px": 8.51,
+      "py": 8.304
     },
     {
       "id": "horus_aeronaves",
@@ -21568,8 +21568,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 10.561,
       "mscale": 5,
       "mpar": 2.5,
-      "px": 7.104,
-      "py": 3.638
+      "px": 6.832,
+      "py": 4.965
     },
     {
       "id": "inceres",
@@ -21617,8 +21617,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 10.811,
       "mscale": 5,
       "mpar": 3.0,
-      "px": 5.946,
-      "py": 9.772
+      "px": 8.008,
+      "py": 9.091
     },
     {
       "id": "laurus_ag_tech",
@@ -21666,8 +21666,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.714,
       "mscale": 5,
       "mpar": 3.0,
-      "px": 5.967,
-      "py": 8.824
+      "px": 8.573,
+      "py": 9.307
     },
     {
       "id": "leaf",
@@ -21714,8 +21714,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 10.849,
       "mscale": 5,
       "mpar": 3.0,
-      "px": 6.786,
-      "py": 9.488
+      "px": 6.97,
+      "py": 9.15
     },
     {
       "id": "nanotica",
@@ -21763,8 +21763,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 3.182,
       "mscale": 5,
       "mpar": 1.0,
-      "px": 7.683,
-      "py": -8.94
+      "px": 6.746,
+      "py": -8.485
     },
     {
       "id": "nativas",
@@ -21815,8 +21815,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.423,
       "mscale": 6,
       "mpar": 3.0,
-      "px": 11.295,
-      "py": 8.532
+      "px": 11.921,
+      "py": 8.9
     },
     {
       "id": "pink-farms",
@@ -21865,8 +21865,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.931,
       "mscale": 5,
       "mpar": 3.0,
-      "px": 8.262,
-      "py": 9.272
+      "px": 6.698,
+      "py": 8.851
     },
     {
       "id": "rumina",
@@ -21913,8 +21913,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.546,
       "mscale": 5,
       "mpar": 3.0,
-      "px": 7.218,
-      "py": 9.286
+      "px": 5.832,
+      "py": 8.807
     },
     {
       "id": "seedmatriz",
@@ -21960,8 +21960,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 2.746,
       "mscale": 5,
       "mpar": 3.0,
-      "px": 5.937,
-      "py": 9.96
+      "px": 7.81,
+      "py": 9.356
     },
     {
       "id": "seedz",
@@ -22008,8 +22008,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 2.485,
       "mscale": 5,
       "mpar": 3.0,
-      "px": 7.572,
-      "py": 9.37
+      "px": 6.449,
+      "py": 8.717
     },
     {
       "id": "sensify",
@@ -22059,8 +22059,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.568,
       "mscale": 2,
       "mpar": 3.0,
-      "px": -8.661,
-      "py": 8.356
+      "px": -7.13,
+      "py": 9.344
     },
     {
       "id": "sensix",
@@ -22108,8 +22108,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 10.836,
       "mscale": 5,
       "mpar": 2.67,
-      "px": 7.542,
-      "py": 5.96
+      "px": 6.79,
+      "py": 6.353
     },
     {
       "id": "solinftec",
@@ -22156,8 +22156,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 10.946,
       "mscale": 5,
       "mpar": 3.0,
-      "px": 6.003,
-      "py": 8.91
+      "px": 5.895,
+      "py": 8.978
     },
     {
       "id": "tbit",
@@ -22204,8 +22204,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 11.014,
       "mscale": 5,
       "mpar": 3.0,
-      "px": 7.836,
-      "py": 8.552
+      "px": 7.93,
+      "py": 8.361
     },
     {
       "id": "the-earth-says",
@@ -22254,8 +22254,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.545,
       "mscale": 5,
       "mpar": 2.33,
-      "px": 8.196,
-      "py": 2.174
+      "px": 7.874,
+      "py": 2.356
     },
     {
       "id": "tuplaza",
@@ -22304,8 +22304,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.903,
       "mscale": 5,
       "mpar": 3.0,
-      "px": 6.375,
-      "py": 8.256
+      "px": 6.061,
+      "py": 8.958
     },
     {
       "id": "voa",
@@ -22353,8 +22353,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 10.612,
       "mscale": 5,
       "mpar": 2.14,
-      "px": 7.761,
-      "py": 1.436
+      "px": 8.057,
+      "py": 1.283
     },
     {
       "id": "wiagro",
@@ -22403,8 +22403,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 10.803,
       "mscale": 5,
       "mpar": 3.0,
-      "px": 8.688,
-      "py": 9.864
+      "px": 8.42,
+      "py": 9.722
     },
     {
       "id": "agree",
@@ -22453,8 +22453,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.218,
       "mscale": 5,
       "mpar": 3.0,
-      "px": 6.831,
-      "py": 9.84
+      "px": 7.407,
+      "py": 9.289
     },
     {
       "id": "agrired",
@@ -22502,8 +22502,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 2.4,
       "mscale": 5,
       "mpar": 3.0,
-      "px": 7.143,
-      "py": 8.602
+      "px": 8.464,
+      "py": 8.831
     },
     {
       "id": "agrojusto",
@@ -22552,8 +22552,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.357,
       "mscale": 5,
       "mpar": 3.0,
-      "px": 8.202,
-      "py": 9.132
+      "px": 8.564,
+      "py": 8.26
     },
     {
       "id": "agrosmart",
@@ -22601,8 +22601,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.026,
       "mscale": 5,
       "mpar": 3.0,
-      "px": 8.052,
-      "py": 8.178
+      "px": 7.707,
+      "py": 8.433
     },
     {
       "id": "agrotoken",
@@ -22651,8 +22651,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.161,
       "mscale": 5,
       "mpar": 3.0,
-      "px": 6.564,
-      "py": 8.42
+      "px": 7.621,
+      "py": 8.569
     },
     {
       "id": "agrotools",
@@ -22700,8 +22700,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.088,
       "mscale": 6,
       "mpar": 3.0,
-      "px": 10.809,
-      "py": 8.966
+      "px": 10.795,
+      "py": 9.652
     },
     {
       "id": "brain_ag",
@@ -22749,8 +22749,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 10.494,
       "mscale": 5,
       "mpar": 3.0,
-      "px": 8.583,
-      "py": 9.992
+      "px": 8.165,
+      "py": 9.719
     },
     {
       "id": "ecotrace-br",
@@ -22796,8 +22796,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.122,
       "mscale": 5,
       "mpar": 3.0,
-      "px": 7.614,
-      "py": 8.748
+      "px": 8.435,
+      "py": 9.668
     },
     {
       "id": "kilimo",
@@ -22846,8 +22846,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.41,
       "mscale": 5,
       "mpar": 3.0,
-      "px": 6.918,
-      "py": 8.788
+      "px": 7.528,
+      "py": 8.18
     },
     {
       "id": "logshare",
@@ -22896,8 +22896,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.536,
       "mscale": 6,
       "mpar": 3.0,
-      "px": 11.55,
-      "py": 9.048
+      "px": 11.06,
+      "py": 9.935
     },
     {
       "id": "produzindo-certo",
@@ -22945,8 +22945,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.16,
       "mscale": 5,
       "mpar": 3.0,
-      "px": 6.591,
-      "py": 8.422
+      "px": 7.1,
+      "py": 9.841
     },
     {
       "id": "tracestory",
@@ -22996,8 +22996,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.127,
       "mscale": 6,
       "mpar": 3.0,
-      "px": 10.701,
-      "py": 8.838
+      "px": 11.322,
+      "py": 8.67
     },
     {
       "id": "ucrop-it-ar",
@@ -23040,10 +23040,10 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_source": "investors_proxy",
       "sx": -1.417,
       "sy": 9.105,
-      "mscale": 5,
+      "mscale": 6,
       "mpar": 3.0,
-      "px": 8.184,
-      "py": 8.76
+      "px": 12.411,
+      "py": 9.374
     },
     {
       "id": "waterplan",
@@ -23090,8 +23090,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.372,
       "mscale": 6,
       "mpar": 3.0,
-      "px": 11.862,
-      "py": 8.484
+      "px": 11.188,
+      "py": 9.023
     }
   ],
   "clusters": [

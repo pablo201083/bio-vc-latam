@@ -48,7 +48,7 @@ SCALE_X = {1: -12.0, 2: -7.2, 3: -2.4, 4: 2.4, 5: 7.2, 6: 12.0}
 
 # ── mscale keywords (points added per hit in combined text) ─────────────────
 SCALE_KW = {
-    1: [  # Molecular — genes, proteins, small molecules
+    1: [  # Molecular — genes, proteins, small molecules, nanomaterials
         'antibod', 'monoclonal', 'protein ', 'peptide', ' rna ', 'mrna', ' dna ', 'gene ',
         'genomic', 'metabolit', 'small molecule', 'crispr', 'drug discovery', 'compound ',
         'nucleotid', 'molecular target', 'ligand', 'receptor', 'drug design',
@@ -57,8 +57,16 @@ SCALE_KW = {
         'immunolog', 'biologics ', 'biomolecul', 'nanoparticle', 'oligonucleotide',
         'aptamer', 'molecular assay', 'recombinant protein', 'biosimilar',
         'cell-free', 'synthetic biology platform', 'molecular tool',
+        # extended: nanomaterials, genomics diagnostics, chemistry
+        'nanomaterial', 'nanotechnolog', 'nano ', 'nanotech',
+        'genome ', 'genomics', 'genotyping', 'genetic test', 'genetic analy',
+        'genetic diagnostic', 'dna sequen', 'rna sequen', 'genetic data',
+        'molecular biology', 'biomarker ', 'biomarkers',
+        'active compound', 'natural compound', 'bioactive compound',
+        'molecular weight', 'chemical compound', 'active ingredient',
+        'superconducting', 'superconductor',  # materials at atomic/molecular scale
     ],
-    2: [  # Celular — fermentation, bioprocesses, cell culture
+    2: [  # Celular — fermentation, bioprocesses, cell culture, industrial biotech
         'fermentation', 'bioreactor', 'cell culture', 'precision fermentation',
         'bioprocess', 'cell therapy', 'biopharma manufactur', 'culture medium',
         'microbial strain', 'yeast', 'fungal production', 'biologic manufactur',
@@ -69,6 +77,11 @@ SCALE_KW = {
         'microbial biosynthes', 'continuous culture', 'inoculant manufactur',
         'microalgae', 'algae production', 'bioreactor design', 'culture optimization',
         'bio-manufacturing', 'industrial biotechnology',
+        # extended: industrial bioprocesses, biogas, bio-based industrial
+        'biogas', 'anaerobic digest', 'bio-based chemical', 'biosynthetic ',
+        'industrial enzyme', 'industrial ferment', 'microbial factory',
+        'microbial consorti', 'cell factory', 'desalinat',  # biological desalination
+        'biocatalysis', 'biotransformation', 'whole-cell catalys',
     ],
     3: [  # Organismo — individual patient, individual plant, animal
         'patient', 'clinical trial', 'clinical use', 'individual treatment',
@@ -80,8 +93,14 @@ SCALE_KW = {
         'foliar application', 'seed treatment', 'individual crop', 'per-animal',
         'companion animal', 'pet health', 'animal nutrition', 'poultry health',
         'aquaculture health', 'livestock management per',
+        # extended: fish/aquatic organism level (per-individual)
+        'farmed fish', 'fish health', 'fish disease', 'aquatic organism',
+        'cancer screening', 'cancer detection', 'cancer diagnostic',
+        'rapid diagnostic', 'rapid test', 'lateral flow', 'point of care',
+        'patient monitoring', 'remote patient', 'personalized treatment',
+        'individual animal', 'per-fish',
     ],
-    4: [  # Lote/Producto — food products, inputs as product, batch output
+    4: [  # Lote/Producto — food products, inputs as product, batch output, materials
         'food product', 'food ingredient', 'alt protein', 'alternative protein',
         'plant-based', 'plant based', 'fermented food', 'functional food',
         'food tech', 'foodtech', 'culture medium product', 'growth medium',
@@ -94,8 +113,17 @@ SCALE_KW = {
         'food ingredient', 'probiotic product', 'prebiotic', 'food brand',
         'ingredient company', 'food company', 'protein ingredient',
         'ingredient platform', 'novel food', 'novel ingredient',
+        # extended: biomaterials as products, packaging, inputs
+        'bioplastic', 'biopolymer', 'packaging', 'bio-based packaging',
+        'biomaterial product', 'material product', 'product line',
+        'skin care', 'skincare', 'cosmetic', 'personal care',
+        'dietary supplement', 'health product', 'consumer health',
+        'biopesticide', 'biofungicide', 'bioinsecticide',  # formulated biocontrol
+        'biologicals product', 'bio product', 'crop protection product',
+        'seed coating', 'inoculant product', 'microbial product',
+        'pine resin', 'natural resin', 'natural fiber', 'biobased material',
     ],
-    5: [  # Campo/Sistema — farm, field, soil, irrigation, crop system
+    5: [  # Campo/Sistema — farm, field, soil, irrigation, crop system, water systems
         'farm', 'field', 'crop management', 'irrigation', 'soil health', 'farmer',
         'precision agriculture', 'agronomic', 'agroecosystem', 'pest management',
         'harvest', 'field monitoring', 'crop monitoring', 'farming',
@@ -107,6 +135,12 @@ SCALE_KW = {
         'agro-input management', 'agronomist', 'agronomy platform',
         'farm operation', 'supply chain agriculture', 'rural credit',
         'agricultural finance', 'smallholder farmer',
+        # extended: aquaculture systems, water quality, forest management
+        'aquaculture', 'fish farm', 'mariculture', 'salmon farm',
+        'nanobubble', 'water quality', 'water management',
+        'forest manag', 'pine forest', 'resin harvest', 'sustainable forest',
+        'watershed', 'river basin', 'water system', 'water body',
+        'crop system', 'farming system', 'agricultural system',
     ],
     6: [  # Paisaje/Planeta — ecosystems, carbon, satellites, global
         'ecosystem', 'landscape', 'carbon credit', 'deforestation', 'satellite imager',
@@ -119,6 +153,13 @@ SCALE_KW = {
         'nature tech', 'environmental monitoring', 'climate risk', 'net zero',
         'scope 3', 'land use change', 'resilient landscape', 'planetary boundary',
         'global food system', 'biome', 'global carbon', 'environmental intelligence',
+        # extended: clean fuels, hydrogen, satellites, planetary-scale tech
+        'e-fuel', 'efuel', 'synthetic fuel', 'green hydrogen', 'clean hydrogen',
+        'renewable fuel', 'carbon-neutral fuel', 'drop-in fuel',
+        'satellite ', 'satellite-based', 'multispectral', 'hyperspectral',
+        'earth data', 'global monitoring', 'biosphere', 'global impact',
+        'plasma pyrolysis', 'methane reduction', 'greenhouse gas',
+        'clean energy', 'green energy',
     ],
 }
 
@@ -141,6 +182,20 @@ TAG_MAP = {
     'agroecosystem-scale':5,
     'territorial-scale':  6,
     'planetary-scale':    6,
+}
+
+# bio_theme → default mscale when keyword score == 0
+# Used as informed fallback rather than always defaulting to Organismo (3)
+THEME_DEFAULT_SCALE = {
+    'Therapeutics':                              3,   # patient/organism level
+    'Diagnostics & Health Access':               3,   # patient/organism level
+    'Bioinputs & Crop Resilience':               5,   # crop/field system
+    'Food Systems & Alt Proteins':               4,   # food product
+    'Biomanufacturing & Fermentation Economy':   2,   # bioreactor/cell process
+    'Genomics & Biodata':                        1,   # molecular/genome
+    'Nature & Ecosystem Tech':                   6,   # landscape/planet
+    'Biomaterials & Circular Economy':           4,   # product/material
+    'Farm Intelligence':                         5,   # farm system
 }
 
 # ── mparadigm — bio/digital ratio ────────────────────────────────────────────
@@ -186,7 +241,7 @@ def parse_tags(s):
 def build_text(*fields):
     return ' '.join(str(f).lower() for f in fields if f)
 
-def classify_scale(text, tcs, tags_raw):
+def classify_scale(text, tcs, tags_raw, bio_theme=""):
     scores = {i: 0 for i in range(1, 7)}
     hits   = []
 
@@ -215,7 +270,9 @@ def classify_scale(text, tcs, tags_raw):
     second       = ordered[1][1]
 
     if tscore == 0:
-        return 3, "low", scores, []          # default: Organismo (middle)
+        # Use bio_theme as informed fallback instead of always Organismo
+        fallback = THEME_DEFAULT_SCALE.get(bio_theme, 3)
+        return fallback, "low", scores, []
     elif tscore > 2 * second:
         conf = "high"
     elif tscore > second:
@@ -291,7 +348,8 @@ def main():
         text = primary if has_primary else secondary
         data_source = 'primary' if has_primary else 'cluster_metadata'
 
-        mscale, conf, scores, top_kws = classify_scale(text, tcs, row['scale_tags'])
+        mscale, conf, scores, top_kws = classify_scale(text, tcs, row['scale_tags'],
+                                                       bio_theme=row['bio_theme'] or "")
         mparadigm = classify_paradigm(text, tcs)
 
         # Downgrade confidence if using only cluster metadata
