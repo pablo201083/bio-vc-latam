@@ -1,0 +1,18 @@
+﻿investor_id,investor_name,startup_id,startup_name,round_stage,round_name,announced_date,amount_usd,currency,is_lead,source_url,confidence_score,notes
+sp_ventures,,biome_makers,,series-a,Serie A liderada por SP Ventures,2023-06,3000000,USD,1,https://spventures.com.br/portfolio/biome-makers,0.96,SP Ventures portfolio page lista Biome Makers como portfolio company
+valor_capital_group,,agrolend,,,,,,USD,,https://www.valorcapitalgroup.com/companies,0.95,Found on Valor Capital Group companies page as active portfolio company
+valor_capital_group,,arado,,,,,,USD,,https://www.valorcapitalgroup.com/companies,0.95,Found on Valor Capital Group companies page as active portfolio company
+valor_capital_group,,satellogic,,,,,,USD,,https://www.valorcapitalgroup.com/companies,0.95,Found on Valor Capital Group companies page as active portfolio company
+salkantay_ventures,,kilimo,,,,,,USD,,https://salkantay.vc/portfolio,0.95,Found on Salkantay Ventures portfolio page as active portfolio company
+onevc,,logshare,,,,,,USD,,https://onevc.vc,0.95,Found on One VC portfolio page as active portfolio company
+onevc,,terramagna,,,,,,USD,,https://onevc.vc,0.95,Found on One VC portfolio page as active portfolio company
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,

@@ -3,990 +3,1302 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Capital Network Atlas BIO VC LATAM</title>
+  <title>Capital Network Atlas · BIO LATAM</title>
   <link rel="stylesheet" href="./styles.css?v=20260422p">
   <style>
-    .capital-hero {
-      display: none;
-      grid-template-columns: minmax(620px, 1.8fr) minmax(520px, 1fr);
-      gap: 10px;
-      margin-bottom: 8px;
-    }
     body.capital-atlas-page .page-shell {
       max-width: 100%;
-      padding: 8px 14px 10px;
+      padding: 8px 14px 24px;
+    }
+
+    /* ── Hero ──────────────────────────────────────────────────────── */
+    .capital-hero {
+      display: grid;
+      grid-template-columns: minmax(0,1.6fr) minmax(0,1fr);
+      gap: 12px;
+      margin-bottom: 18px;
+      align-items: stretch;
     }
     .capital-hero .hero-copy {
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 16px 20px;
       background:
-        radial-gradient(circle at 88% 8%, rgba(15, 118, 110, 0.14), transparent 15rem),
-        linear-gradient(135deg, rgba(255,255,255,0.94), rgba(246,240,230,0.72));
+        radial-gradient(circle at 92% 8%, rgba(15,118,110,.12), transparent 14rem),
+        linear-gradient(135deg, rgba(255,255,255,.94), rgba(246,240,230,.72));
+      box-shadow: var(--shadow);
+    }
+    .capital-hero h1 {
+      font-size: clamp(1.45rem, 2.1vw, 2rem);
+      line-height: 1;
+      margin: 4px 0;
+    }
+    .capital-hero .lede {
+      font-size: .8rem;
+      line-height: 1.38;
+      color: var(--muted);
+      margin: 4px 0 0;
     }
     .capital-hero .hero-meta {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 6px;
-      padding: 7px;
-      background: rgba(255, 252, 246, 0.72);
-      border: 1px solid rgba(217, 206, 190, 0.72);
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0,1fr));
+      gap: 8px;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 10px;
+      background: rgba(255,252,246,.8);
       box-shadow: var(--shadow);
     }
     .capital-hero .meta-card {
-      padding: 6px 9px;
-      border-radius: 11px;
-      min-width: 0;
-    }
-    .capital-hero .hero-copy {
-      padding: 8px 16px;
-    }
-    .capital-hero h1 {
-      font-size: clamp(1.72rem, 2.3vw, 2.38rem);
-      line-height: 0.98;
-      margin-bottom: 4px;
-    }
-    .capital-hero .eyebrow {
-      margin-bottom: 3px;
-    }
-    .capital-hero .lede {
-      font-size: 0.82rem;
-      line-height: 1.22;
-      max-width: 62rem;
-    }
-    .atlas-layout {
+      border: 1px solid rgba(217,206,190,.6);
+      border-radius: 14px;
+      background: rgba(255,255,255,.78);
+      padding: 8px 10px;
       display: grid;
-      grid-template-columns: minmax(0, 1fr) minmax(294px, 318px);
-      gap: 12px;
-      align-items: start;
-      min-height: calc(100vh - 22px);
+      gap: 3px;
     }
-    .atlas-stage,
-    .atlas-sidebar {
+    .capital-hero .meta-label {
+      font-size: .68rem;
+      font-weight: 700;
+      letter-spacing: .09em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .capital-hero .meta-value {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--ink);
+      line-height: 1;
+    }
+    .capital-hero .meta-value.accent { color: var(--accent); }
+    .capital-hero .meta-sub {
+      font-size: .68rem;
+      color: var(--muted);
+    }
+
+    /* ── Analysis section (stacked modules) ────────────────────────── */
+    .ca-analysis-section { display: grid; gap: 20px; }
+
+    .ca-module {
+      display: grid;
+      grid-template-columns: 310px minmax(0,1fr);
       background: var(--panel);
       border: 1px solid var(--line);
       border-radius: 22px;
       box-shadow: var(--shadow);
-    }
-    .atlas-stage {
-      padding: 0;
-      min-width: 0;
       overflow: hidden;
-      position: relative;
+    }
+    .ca-sidebar {
+      border-right: 1px solid var(--line);
       display: grid;
-      grid-template-rows: auto minmax(0, 1fr);
-      background:
-        radial-gradient(ellipse at 48% 52%, rgba(15, 118, 110, 0.06), transparent 44rem),
-        linear-gradient(135deg, rgba(255, 252, 246, 0.9), rgba(244, 238, 228, 0.72));
+      grid-template-rows: auto minmax(0,1fr);
+      min-height: 0;
     }
-    .atlas-toolbar {
-      position: relative;
-      z-index: 4;
-      display: grid;
-      grid-template-columns: minmax(0, 1fr);
-      gap: 0;
-      align-items: start;
-      pointer-events: auto;
-      padding: 8px 12px 7px;
-      border-bottom: 1px solid rgba(217, 206, 190, 0.62);
+    .ca-sidebar-head {
+      padding: 18px 18px 14px;
+      border-bottom: 1px solid var(--line);
+      background: linear-gradient(180deg, rgba(255,255,255,.92), rgba(248,243,234,.72));
     }
-    .atlas-toolbar-head,
-    .atlas-control-panel {
-      border: 0;
-      border-radius: 0;
-      background: transparent;
-      backdrop-filter: none;
-      box-shadow: none;
-      padding: 0;
-      pointer-events: auto;
-    }
-    .atlas-toolbar-head {
-      display: none;
-      grid-template-columns: minmax(0, 1fr) auto;
-      gap: 12px;
-      align-items: start;
-    }
-    .atlas-title {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      align-items: center;
-      color: var(--ink);
+    .ca-eyebrow {
+      font-size: .6rem;
       font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--muted);
       margin-bottom: 4px;
     }
-    .atlas-title span {
-      color: var(--accent);
-      font-size: 0.78rem;
-      letter-spacing: 0.12em;
+    .ca-title {
+      font-size: 1.05rem;
+      font-weight: 800;
+      line-height: 1.06;
+      margin: 0 0 6px;
+      color: var(--ink);
+    }
+    .ca-desc { font-size: .76rem; line-height: 1.42; color: var(--muted); margin: 0; }
+    .ca-sidebar-body {
+      padding: 14px 16px;
+      overflow-y: auto;
+      display: grid;
+      gap: 10px;
+      align-content: start;
+    }
+    .ca-section-lbl {
+      font-size: .67rem;
+      font-weight: 700;
+      letter-spacing: .09em;
       text-transform: uppercase;
-    }
-    .atlas-note {
       color: var(--muted);
-      font-size: 0.88rem;
-      line-height: 1.48;
-      max-width: 70rem;
     }
-    .atlas-toolbar .atlas-note {
-      display: none;
+    .ca-divider {
+      border: 0;
+      border-top: 1px solid var(--line);
+      margin: 2px 0;
     }
-    .atlas-action-row,
-    .atlas-toggle-row {
+    .ca-main {
+      display: grid;
+      grid-template-rows: auto minmax(0,1fr);
+      min-height: 0;
+    }
+    .ca-toolbar {
+      padding: 9px 14px 8px;
+      border-bottom: 1px solid rgba(217,206,190,.44);
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      flex-wrap: wrap;
+      min-height: 46px;
+    }
+    .ca-stage {
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(ellipse at 48% 52%, rgba(15,118,110,.05), transparent 40rem),
+        linear-gradient(135deg, rgba(255,252,246,.9), rgba(244,238,228,.72));
+      height: 520px;
+    }
+
+    /* ── Legend chips ───────────────────────────────────────────────── */
+    .ca-legend { display: flex; flex-wrap: wrap; gap: 5px; }
+    .ca-legend-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255,255,255,.78);
+      padding: 3px 8px;
+      font-size: .72rem;
+      color: var(--muted);
+    }
+    .ca-legend-dot {
+      width: 8px; height: 8px;
+      border-radius: 999px;
+      flex: 0 0 auto;
+    }
+    .ca-legend-diamond {
+      width: 8px; height: 8px;
+      transform: rotate(45deg);
+      flex: 0 0 auto;
+    }
+    .ca-legend-line {
+      width: 18px; height: 0;
+      border-top: 2px solid rgba(92,82,70,.5);
+      flex: 0 0 auto;
+    }
+    .ca-legend-line.dashed { border-top-style: dashed; }
+
+    /* ── Inline filter selects & buttons ───────────────────────────── */
+    .ca-filter-grid {
+      display: grid;
+      gap: 8px;
+    }
+    .ca-toggle-row {
       display: flex;
       flex-wrap: wrap;
-      gap: 8px;
-      justify-content: flex-end;
-      align-items: center;
+      gap: 5px;
     }
+
+    /* ── Node inspector (inside sidebar) ───────────────────────────── */
+    .ca-inspector {
+      display: grid;
+      gap: 8px;
+    }
+    .ca-inspector-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    /* ── Capital por Tema chart module ─────────────────────────────── */
+    .ca-theme-stat-grid {
+      display: grid;
+      gap: 6px;
+    }
+    .ca-theme-stat {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: rgba(255,255,255,.76);
+      padding: 7px 9px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 2px;
+    }
+    .ca-theme-stat-label {
+      font-size: .7rem;
+      color: var(--muted);
+    }
+    .ca-theme-stat-value {
+      font-size: 1rem;
+      font-weight: 800;
+      grid-column: 1;
+    }
+    .ca-theme-stat-badge {
+      grid-column: 2;
+      grid-row: 1 / span 2;
+      align-self: center;
+      font-size: .68rem;
+      font-weight: 700;
+      border-radius: 999px;
+      padding: 3px 8px;
+      background: rgba(15,118,110,.12);
+      color: var(--accent);
+    }
+
+    /* ── Top Inversores module ─────────────────────────────────────── */
+    .ca-investor-table {
+      display: grid;
+      gap: 6px;
+    }
+    .ca-investor-row {
+      display: grid;
+      gap: 4px;
+    }
+    .ca-investor-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 8px;
+    }
+    .ca-investor-name {
+      font-size: .8rem;
+      font-weight: 700;
+      color: var(--ink);
+    }
+    .ca-investor-count {
+      font-size: .72rem;
+      font-weight: 700;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+    .ca-investor-bar-track {
+      height: 6px;
+      border-radius: 999px;
+      background: #eadfce;
+      overflow: hidden;
+      display: flex;
+    }
+    .ca-investor-bar-seg {
+      height: 100%;
+    }
+    .ca-investor-foot {
+      font-size: .68rem;
+      color: var(--muted);
+    }
+
+    /* ── Existing classes used by capital-atlas.js (must keep) ──────── */
+    .atlas-layout {
+      display: none; /* replaced by ca-analysis-section */
+    }
+    .capital-hero-old { display: none; }
     .atlas-button {
       border: 1px solid var(--line);
       background: #fff;
       color: var(--ink);
       border-radius: 999px;
-      padding: 8px 13px;
+      padding: 6px 11px;
       font: inherit;
-      font-size: 0.88rem;
+      font-size: .82rem;
       cursor: pointer;
+      white-space: nowrap;
     }
-    .atlas-button:hover,
-    .atlas-button.active {
+    .atlas-button:hover, .atlas-button.active {
       border-color: var(--accent);
-      background: rgba(58, 168, 163, 0.12);
+      background: rgba(58,168,163,.12);
     }
-    .atlas-legend {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      align-items: center;
-      color: var(--muted);
-      font-size: 0.82rem;
-      margin-top: 8px;
-    }
-    .legend-item {
-      display: inline-flex;
-      align-items: center;
-      gap: 7px;
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      background: rgba(255,255,255,0.72);
-      padding: 4px 9px;
-    }
-    .legend-dot {
-      width: 10px;
-      height: 10px;
-      border-radius: 999px;
-      display: inline-block;
-    }
-    .legend-diamond {
-      width: 10px;
-      height: 10px;
-      transform: rotate(45deg);
-      display: inline-block;
-    }
-    .legend-line {
-      width: 24px;
-      height: 0;
-      border-top: 2px solid rgba(92,82,70,0.42);
-      display: inline-block;
-    }
-    .legend-line.dashed {
-      border-top-style: dashed;
-    }
-    .atlas-control-panel {
-      display: grid;
-      grid-template-columns: 240px minmax(250px, 0.9fr) minmax(360px, 1.2fr) minmax(205px, auto);
-      gap: 7px;
-      align-items: end;
-      width: 100%;
-      justify-self: stretch;
-      opacity: 1;
-      transform: none;
-    }
-    .control-group {
-      display: grid;
-      gap: 4px;
-      min-width: 0;
-    }
-    .control-label {
-      color: var(--muted);
-      font-size: 0.74rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-    }
-    .atlas-select,
-    .atlas-input {
+    .atlas-select, .atlas-input {
       width: 100%;
       min-width: 0;
       border: 1px solid var(--line);
-      border-radius: 13px;
+      border-radius: 11px;
       background: #fff;
       color: var(--ink);
       font: inherit;
-      padding: 8px 10px;
-      min-height: 34px;
+      padding: 7px 9px;
+      font-size: .82rem;
     }
-    .atlas-search-wrap {
-      position: relative;
-      min-width: 0;
-    }
+    .atlas-search-wrap { position: relative; min-width: 0; flex: 1; max-width: 320px; }
     .atlas-search-results {
       position: absolute;
       z-index: 8;
-      left: 0;
-      right: 0;
+      left: 0; right: 0;
       top: calc(100% + 6px);
       display: none;
       max-height: 260px;
       overflow: auto;
       border: 1px solid var(--line);
       border-radius: 14px;
-      background: rgba(255, 252, 246, 0.98);
+      background: rgba(255,252,246,.98);
       box-shadow: var(--shadow);
       padding: 6px;
     }
-    .atlas-search-results.open {
-      display: grid;
-      gap: 4px;
-    }
+    .atlas-search-results.open { display: grid; gap: 4px; }
     .atlas-search-result {
-      border: 0;
-      border-radius: 10px;
-      background: transparent;
-      color: var(--ink);
-      cursor: pointer;
-      display: grid;
-      gap: 2px;
-      padding: 8px 10px;
-      text-align: left;
-      font: inherit;
+      border: 0; border-radius: 10px;
+      background: transparent; color: var(--ink);
+      cursor: pointer; display: grid; gap: 2px;
+      padding: 8px 10px; text-align: left; font: inherit;
     }
-    .atlas-search-result:hover {
-      background: rgba(58, 168, 163, 0.12);
-    }
-    .atlas-search-result small {
-      color: var(--muted);
-      font-size: 0.76rem;
-    }
-    .atlas-wrap {
-      border: 0;
-      border-radius: 36px;
-      background:
-        radial-gradient(ellipse at 50% 51%, rgba(255,255,255,0.98), rgba(255,255,255,0.42) 34%, transparent 69%),
-        radial-gradient(ellipse at 34% 36%, rgba(15, 118, 110, 0.10), transparent 24rem),
-        radial-gradient(ellipse at 68% 36%, rgba(181, 116, 24, 0.065), transparent 22rem),
-        radial-gradient(ellipse at 56% 76%, rgba(31, 78, 108, 0.07), transparent 24rem),
-        linear-gradient(135deg, #f8f5ee 0%, #f3efe6 100%);
-      overflow: hidden;
-      height: calc(100vh - 104px);
-      min-height: 0;
-      position: relative;
-      box-shadow: inset 0 0 0 1px rgba(217, 206, 190, 0.66);
-    }
-    .atlas-wrap::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background:
-        linear-gradient(90deg, rgba(247,244,238,0.34), transparent 5%, transparent 95%, rgba(247,244,238,0.34)),
-        linear-gradient(180deg, rgba(247,244,238,0.42), transparent 6%, transparent 94%, rgba(247,244,238,0.42));
-      pointer-events: none;
-    }
+    .atlas-search-result:hover { background: rgba(58,168,163,.12); }
+    .atlas-search-result small { color: var(--muted); font-size: .76rem; }
     .atlas-tooltip {
-      position: absolute;
-      z-index: 7;
-      left: 18px;
-      top: 18px;
-      width: min(380px, calc(100% - 44px));
-      border: 1px solid rgba(217, 206, 190, 0.78);
+      position: absolute; z-index: 7;
+      left: 18px; top: 18px;
+      width: min(340px, calc(100% - 44px));
+      border: 1px solid rgba(217,206,190,.78);
       border-radius: 18px;
-      background: rgba(255, 252, 246, 0.94);
-      box-shadow: 0 20px 54px rgba(54, 45, 35, 0.16);
+      background: rgba(255,252,246,.94);
+      box-shadow: 0 20px 54px rgba(54,45,35,.16);
       backdrop-filter: blur(12px);
       padding: 12px 13px;
-      opacity: 0;
-      transform: translateY(6px);
-      gap: 8px;
-      pointer-events: none;
+      opacity: 0; transform: translateY(6px);
+      gap: 8px; pointer-events: none;
       transition: opacity 120ms ease, transform 120ms ease;
     }
-    .atlas-tooltip.visible {
-      display: grid;
-      opacity: 1;
-      transform: translateY(0);
-    }
-    .tooltip-kicker {
-      color: var(--accent);
-      font-size: 0.68rem;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      font-weight: 900;
-    }
-    .tooltip-title {
-      font-weight: 900;
-      font-size: 1.02rem;
-      line-height: 1.08;
-    }
-    .tooltip-meta {
-      color: var(--muted);
-      font-size: 0.8rem;
-      line-height: 1.35;
-    }
-    .tooltip-chip-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-    }
-    .tooltip-chip {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      background: rgba(255,255,255,0.84);
-      color: var(--muted);
-      font-size: 0.74rem;
-      line-height: 1;
-      padding: 4px 8px;
-    }
-    .tooltip-chip-dot {
-      width: 8px;
-      height: 8px;
-      border-radius: 999px;
-      flex: 0 0 auto;
-    }
-    .tooltip-stats {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 6px;
-    }
-    .tooltip-stat {
-      border: 1px solid rgba(217, 206, 190, 0.74);
-      border-radius: 11px;
-      background: rgba(255,255,255,0.76);
-      padding: 6px 7px;
-    }
-    .tooltip-stat span {
-      display: block;
-      color: var(--muted);
-      font-size: 0.66rem;
-    }
-    .tooltip-stat strong {
-      display: block;
-      margin-top: 2px;
-      font-size: 0.95rem;
-    }
+    .atlas-tooltip.visible { display: grid; opacity: 1; transform: translateY(0); }
+    .tooltip-kicker { color: var(--accent); font-size: .68rem; letter-spacing: .12em; text-transform: uppercase; font-weight: 900; }
+    .tooltip-title { font-weight: 900; font-size: 1.02rem; line-height: 1.08; }
+    .tooltip-meta { color: var(--muted); font-size: .8rem; line-height: 1.35; }
+    .tooltip-chip-row { display: flex; flex-wrap: wrap; gap: 6px; }
+    .tooltip-chip { display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--line); border-radius: 999px; background: rgba(255,255,255,.84); color: var(--muted); font-size: .74rem; padding: 4px 8px; }
+    .tooltip-chip-dot { width: 8px; height: 8px; border-radius: 999px; flex: 0 0 auto; }
+    .tooltip-stats { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 6px; }
+    .tooltip-stat { border: 1px solid rgba(217,206,190,.74); border-radius: 11px; background: rgba(255,255,255,.76); padding: 6px 7px; }
+    .tooltip-stat span { display: block; color: var(--muted); font-size: .66rem; }
+    .tooltip-stat strong { display: block; margin-top: 2px; font-size: .95rem; }
     .atlas-map-inspector {
-      position: absolute;
-      left: 16px;
-      top: 16px;
-      z-index: 5;
+      position: absolute; left: 16px; top: 16px; z-index: 5;
       width: min(330px, calc(100% - 110px));
-      border: 1px solid rgba(217, 206, 190, 0.72);
+      border: 1px solid rgba(217,206,190,.72);
       border-radius: 18px;
-      background: rgba(255, 252, 246, 0.84);
-      box-shadow: 0 18px 52px rgba(54, 45, 35, 0.12);
+      background: rgba(255,252,246,.84);
+      box-shadow: 0 18px 52px rgba(54,45,35,.12);
       backdrop-filter: blur(10px);
-      padding: 12px 13px;
-      display: grid;
-      gap: 10px;
+      padding: 12px 13px; display: grid; gap: 10px;
       pointer-events: auto;
     }
-    .map-inspector-top {
-      display: flex;
-      justify-content: space-between;
-      gap: 10px;
-      align-items: start;
-    }
-    .map-inspector-kicker {
-      color: var(--accent);
-      font-size: 0.72rem;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      font-weight: 800;
-    }
-    .map-inspector-title {
-      font-weight: 900;
-      line-height: 1.05;
-      margin-top: 3px;
-    }
-    .map-inspector-subtitle {
-      color: var(--muted);
-      font-size: 0.8rem;
-      line-height: 1.34;
-      margin-top: 4px;
-    }
-    .map-inspector-metrics {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 6px;
-    }
-    .map-mini-stat {
-      border: 1px solid rgba(217, 206, 190, 0.7);
-      border-radius: 12px;
-      background: rgba(255,255,255,0.72);
-      padding: 6px 7px;
-    }
-    .map-mini-stat span {
-      display: block;
-      color: var(--muted);
-      font-size: 0.68rem;
-      line-height: 1.1;
-    }
-    .map-mini-stat strong {
-      display: block;
-      margin-top: 3px;
-      font-size: 0.98rem;
-      line-height: 1;
-    }
-    .map-inspector-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-    }
-    .map-inspector-actions .atlas-button {
-      font-size: 0.78rem;
-      padding: 6px 9px;
-      background: rgba(255,255,255,0.82);
-    }
-    .atlas-wrap.compact-inspector .atlas-map-inspector {
-      width: auto;
-      max-width: 220px;
-    }
-    .atlas-wrap.compact-inspector .map-inspector-subtitle,
-    .atlas-wrap.compact-inspector .map-inspector-metrics,
-    .atlas-wrap.compact-inspector .map-inspector-actions {
-      display: none;
-    }
-    #capital-atlas-svg {
-      display: block;
-      width: 100%;
-      height: 100%;
-      min-height: inherit;
-      position: relative;
-      z-index: 2;
-    }
-    .atlas-controls {
+    .map-inspector-top { display: flex; justify-content: space-between; gap: 10px; align-items: start; }
+    .map-inspector-kicker { color: var(--accent); font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; font-weight: 800; }
+    .map-inspector-title { font-weight: 900; line-height: 1.05; margin-top: 3px; }
+    .map-inspector-subtitle { color: var(--muted); font-size: .8rem; line-height: 1.34; margin-top: 4px; }
+    .map-inspector-metrics { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 6px; }
+    .map-mini-stat { border: 1px solid rgba(217,206,190,.7); border-radius: 12px; background: rgba(255,255,255,.72); padding: 6px 7px; }
+    .map-mini-stat span { display: block; color: var(--muted); font-size: .68rem; line-height: 1.1; }
+    .map-mini-stat strong { display: block; margin-top: 3px; font-size: .98rem; line-height: 1; }
+    .map-inspector-actions { display: flex; flex-wrap: wrap; gap: 6px; }
+    .map-inspector-actions .atlas-button { font-size: .78rem; padding: 6px 9px; background: rgba(255,255,255,.82); }
+    #capital-atlas-svg { display: block; width: 100%; height: 100%; position: relative; z-index: 2; }
+    .atlas-controls { position: absolute; right: 14px; top: 14px; display: grid; gap: 7px; z-index: 5; }
+    .atlas-zoom { width: 40px; height: 40px; border-radius: 11px; border: 1px solid var(--line); background: rgba(255,255,255,.95); box-shadow: var(--shadow); font: inherit; font-size: 1rem; cursor: pointer; }
+    .atlas-zoom.hint { width: auto; min-width: 40px; padding: 0 9px; font-size: .74rem; color: var(--muted); cursor: default; }
+    .atlas-note { color: var(--muted); font-size: .76rem; line-height: 1.42; flex: 1; }
+    .backstage-panels { display: none; }
+    /* Inspector detail classes */
+    .stat-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 8px; }
+    .stat-grid.compact { grid-template-columns: repeat(3, minmax(0,1fr)); gap: 6px; }
+    .stat-card { border: 1px solid var(--line); border-radius: 14px; background: rgba(255,255,255,.78); padding: 8px 9px; }
+    .stat-label { color: var(--muted); font-size: .74rem; margin-bottom: 4px; }
+    .stat-value { font-weight: 800; font-size: 1.1rem; }
+    .ranking-list { display: grid; gap: 8px; }
+    .theme-mix-list { display: grid; gap: 9px; }
+    .theme-mix-row { display: grid; gap: 5px; }
+    .theme-mix-top { display: flex; justify-content: space-between; gap: 8px; color: var(--ink); font-size: .86rem; font-weight: 700; }
+    .theme-mix-bar { height: 8px; border-radius: 999px; background: #eadfce; overflow: hidden; display: flex; }
+    .theme-mix-fill { height: 100%; }
+    .theme-mix-fill.mapped { border-radius: 999px 0 0 999px; }
+    .theme-mix-fill.gap { background: rgba(120,108,92,.26); border-radius: 0 999px 999px 0; }
+    .theme-mix-foot { color: var(--muted); font-size: .75rem; }
+    .ranking-row { border: 1px solid rgba(217,206,190,.78); border-radius: 13px; background: rgba(255,255,255,.76); padding: 9px 10px; cursor: pointer; display: grid; gap: 5px; }
+    .ranking-row:hover { border-color: var(--accent); }
+    .ranking-row.active { border-color: var(--accent); background: rgba(58,168,163,.1); }
+    .ranking-top { display: flex; justify-content: space-between; gap: 8px; color: var(--ink); font-weight: 700; line-height: 1.25; }
+    .ranking-meta, .detail-muted { color: var(--muted); font-size: .84rem; line-height: 1.42; }
+    .detail-chip-row { display: flex; flex-wrap: wrap; gap: 7px; }
+    .detail-chip { border-radius: 999px; border: 1px solid var(--line); background: #fff; color: var(--muted); font-size: .78rem; padding: 4px 9px; }
+    .edge-list { display: grid; gap: 7px; max-height: 260px; overflow: auto; }
+    .edge-list.compact { max-height: 180px; }
+    .edge-item { border: 1px solid rgba(217,206,190,.78); border-radius: 12px; background: rgba(255,255,255,.7); padding: 8px 9px; }
+    button.edge-item { color: inherit; font: inherit; text-align: left; cursor: pointer; }
+    button.edge-item:hover { border-color: var(--accent); background: rgba(58,168,163,.08); }
+    .detail-title-card { border: 1px solid rgba(217,206,190,.78); border-radius: 16px; background: linear-gradient(135deg,rgba(255,255,255,.88),rgba(248,243,234,.78)); padding: 11px 12px; display: grid; gap: 5px; }
+    .detail-title-card h3, .detail-block h3 { margin: 0; font-size: 1.02rem; line-height: 1.12; }
+    .detail-title-card p { margin: 3px 0 0; color: var(--muted); font-size: .84rem; line-height: 1.42; }
+    .organization-card { border-color: rgba(15,118,110,.22); background: radial-gradient(circle at 92% 0%, rgba(209,244,238,.66), transparent 7rem), linear-gradient(135deg, rgba(255,255,255,.92), rgba(248,243,234,.82)); }
+    .organization-kicker { color: var(--accent); font-size: .72rem; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; }
+    .org-insight-grid { display: grid; gap: 8px; }
+    .org-insight-card { border: 1px solid rgba(217,206,190,.78); border-radius: 14px; background: rgba(255,255,255,.72); padding: 9px 10px; display: grid; gap: 4px; }
+    .org-insight-card span { color: var(--muted); font-size: .74rem; }
+    .org-insight-card strong { color: #332b22; font-size: .84rem; line-height: 1.35; }
+    .detail-subtitle { color: var(--accent); font-size: .82rem; font-weight: 800; }
+    .detail-block { display: grid; gap: 8px; padding-top: 3px; }
+    .detail-callout { border: 1px solid rgba(15,118,110,.22); border-radius: 14px; background: rgba(209,244,238,.32); padding: 9px 10px; display: grid; gap: 3px; color: var(--muted); font-size: .82rem; line-height: 1.38; }
+    .detail-callout strong { color: var(--accent); font-size: .9rem; }
+    .detail-bars { display: grid; gap: 8px; }
+    .detail-bar-row { display: grid; gap: 4px; }
+    .detail-bar-top { display: flex; justify-content: space-between; gap: 8px; font-size: .8rem; font-weight: 800; }
+    .detail-bar-track { height: 7px; border-radius: 999px; background: #eadfce; overflow: hidden; }
+    .detail-bar-track span { display: block; height: 100%; border-radius: 999px; }
+    .detail-bar-foot, .connection-source { color: var(--muted); font-size: .72rem; }
+    .detail-country-line { display: flex; flex-wrap: wrap; gap: 5px; }
+    .detail-country-line span { border-radius: 999px; background: rgba(233,224,210,.72); color: var(--muted); font-size: .74rem; padding: 3px 7px; }
+    .connection-card { display: grid; gap: 4px; }
+    .connection-evidence { color: var(--accent); font-size: .76rem; font-weight: 800; }
+    .detail-empty { border: 1px dashed rgba(154,140,120,.45); border-radius: 12px; color: var(--muted); padding: 9px 10px; font-size: .82rem; }
+    .detail-metric-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 7px; }
+    .detail-metric { border: 1px solid rgba(217,206,190,.76); border-radius: 12px; background: rgba(255,255,255,.76); padding: 8px; }
+    .detail-metric span { display: block; color: var(--muted); font-size: .72rem; }
+    .detail-metric strong { display: block; font-size: 1.06rem; margin-top: 2px; }
+    .detail-metric.primary { border-color: rgba(15,118,110,.28); background: rgba(209,244,238,.28); }
+    .detail-metric.primary strong { color: var(--accent); }
+    .panel-head { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+    .panel-head h2 { margin: 0; font-size: .9rem; }
+
+    /* ── Paradigma vs Capital scatter ─────────────────────────────── */
+    .paradigm-tip {
       position: absolute;
-      right: 16px;
-      top: 16px;
-      display: grid;
-      gap: 8px;
-      z-index: 5;
-    }
-    .atlas-zoom {
-      width: 42px;
-      height: 42px;
+      z-index: 10;
+      pointer-events: none;
+      border: 1px solid rgba(217,206,190,.78);
       border-radius: 12px;
-      border: 1px solid var(--line);
-      background: rgba(255,255,255,0.95);
-      box-shadow: var(--shadow);
-      font: inherit;
-      font-size: 1.05rem;
-      cursor: pointer;
+      background: rgba(255,252,246,.96);
+      box-shadow: 0 8px 28px rgba(54,45,35,.14);
+      backdrop-filter: blur(8px);
+      padding: 8px 11px;
+      font-size: .78rem;
+      line-height: 1.5;
+      max-width: 200px;
     }
-    .atlas-zoom.hint {
-      width: auto;
-      min-width: 42px;
-      padding: 0 10px;
-      font-size: 0.76rem;
-      color: var(--muted);
-      cursor: default;
-    }
-    .atlas-sidebar {
-      padding: 0;
-      overflow: hidden;
-      position: sticky;
-      top: 14px;
-      max-height: calc(100vh - 18px);
-      overflow-y: auto;
-    }
-    .sidebar-section {
-      padding: 12px 14px;
-      border-bottom: 1px solid var(--line);
+    .paradigm-q-grid {
       display: grid;
-      gap: 9px;
+      grid-template-columns: 1fr 1fr;
+      gap: 5px;
     }
-    .sidebar-section:last-child {
-      border-bottom: 0;
-    }
-    .node-inspector-section {
-      background:
-        radial-gradient(circle at 88% 6%, rgba(209, 244, 238, 0.42), transparent 9rem),
-        linear-gradient(180deg, rgba(255,255,255,0.82), rgba(248,243,234,0.58));
-      border-bottom: 0;
-      min-height: calc(100vh - 46px);
-      align-content: start;
-    }
-    .backstage-panels {
-      display: none;
-    }
-    .stat-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 8px;
-    }
-    .stat-grid.compact {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 6px;
-    }
-    .stat-card {
+    .paradigm-q-card {
       border: 1px solid var(--line);
-      border-radius: 15px;
-      background: rgba(255,255,255,0.78);
-      padding: 9px 9px;
+      border-radius: 11px;
+      background: rgba(255,255,255,.76);
+      padding: 7px 9px;
+      display: grid;
+      gap: 1px;
     }
-    .stat-grid.compact .stat-card {
-      border-radius: 12px;
-      padding: 7px 7px;
-    }
-    .stat-label {
-      color: var(--muted);
-      font-size: 0.75rem;
-      margin-bottom: 5px;
-    }
-    .stat-value {
+    .paradigm-q-label {
+      font-size: .62rem;
       font-weight: 800;
-      font-size: 1.12rem;
-    }
-    .stat-grid.compact .stat-value {
-      font-size: 0.95rem;
-    }
-    .stat-grid.compact .stat-label {
-      font-size: 0.7rem;
-    }
-    .ranking-list {
-      display: grid;
-      gap: 8px;
-    }
-    .theme-mix-list {
-      display: grid;
-      gap: 9px;
-    }
-    .theme-mix-row {
-      display: grid;
-      gap: 5px;
-    }
-    .theme-mix-top {
-      display: flex;
-      justify-content: space-between;
-      gap: 8px;
-      color: var(--ink);
-      font-size: 0.86rem;
-      font-weight: 700;
-      line-height: 1.25;
-    }
-    .theme-mix-bar {
-      height: 8px;
-      border-radius: 999px;
-      background: #eadfce;
-      overflow: hidden;
-      display: flex;
-    }
-    .theme-mix-fill {
-      height: 100%;
-    }
-    .theme-mix-fill.mapped {
-      border-radius: 999px 0 0 999px;
-    }
-    .theme-mix-fill.gap {
-      background: rgba(120, 108, 92, 0.26);
-      border-radius: 0 999px 999px 0;
-    }
-    .theme-mix-foot {
-      color: var(--muted);
-      font-size: 0.75rem;
-      line-height: 1.25;
-    }
-    .ranking-row {
-      border: 1px solid rgba(217, 206, 190, 0.78);
-      border-radius: 13px;
-      background: rgba(255,255,255,0.76);
-      padding: 9px 10px;
-      cursor: pointer;
-      display: grid;
-      gap: 5px;
-    }
-    .ranking-row:hover {
-      border-color: var(--accent);
-    }
-    .ranking-row.active {
-      border-color: var(--accent);
-      background: rgba(58, 168, 163, 0.1);
-      box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.07);
-    }
-    .ranking-top {
-      display: flex;
-      justify-content: space-between;
-      gap: 8px;
-      color: var(--ink);
-      font-weight: 700;
-      line-height: 1.25;
-    }
-    .ranking-meta,
-    .detail-muted {
-      color: var(--muted);
-      font-size: 0.84rem;
-      line-height: 1.42;
-    }
-    .detail-chip-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 7px;
-    }
-    .detail-chip {
-      border-radius: 999px;
-      border: 1px solid var(--line);
-      background: #fff;
-      color: var(--muted);
-      font-size: 0.78rem;
-      padding: 4px 9px;
-    }
-    .edge-list {
-      display: grid;
-      gap: 7px;
-      max-height: 310px;
-      overflow: auto;
-    }
-    .edge-list.compact {
-      max-height: 210px;
-    }
-    .edge-item {
-      border: 1px solid rgba(217, 206, 190, 0.78);
-      border-radius: 12px;
-      background: rgba(255,255,255,0.7);
-      padding: 8px 9px;
-    }
-    button.edge-item {
-      color: inherit;
-      font: inherit;
-      text-align: left;
-      cursor: pointer;
-    }
-    button.edge-item:hover {
-      border-color: var(--accent);
-      background: rgba(58, 168, 163, 0.08);
-    }
-    .detail-title-card {
-      border: 1px solid rgba(217, 206, 190, 0.78);
-      border-radius: 16px;
-      background: linear-gradient(135deg, rgba(255,255,255,0.88), rgba(248, 243, 234, 0.78));
-      padding: 11px 12px;
-      display: grid;
-      gap: 5px;
-    }
-    .detail-title-card h3,
-    .detail-block h3 {
-      margin: 0;
-      font-size: 1.02rem;
-      line-height: 1.12;
-    }
-    .detail-title-card p {
-      margin: 3px 0 0;
-      color: var(--muted);
-      font-size: 0.84rem;
-      line-height: 1.42;
-    }
-    .organization-card {
-      border-color: rgba(15, 118, 110, 0.22);
-      background:
-        radial-gradient(circle at 92% 0%, rgba(209,244,238,0.66), transparent 7rem),
-        linear-gradient(135deg, rgba(255,255,255,0.92), rgba(248,243,234,0.82));
-    }
-    .organization-kicker {
-      color: var(--accent);
-      font-size: 0.72rem;
-      font-weight: 900;
-      letter-spacing: 0.08em;
+      letter-spacing: .06em;
       text-transform: uppercase;
-    }
-    .org-insight-grid {
-      display: grid;
-      gap: 8px;
-    }
-    .org-insight-card {
-      border: 1px solid rgba(217, 206, 190, 0.78);
-      border-radius: 14px;
-      background: rgba(255,255,255,0.72);
-      padding: 9px 10px;
-      display: grid;
-      gap: 4px;
-    }
-    .org-insight-card span {
       color: var(--muted);
-      font-size: 0.74rem;
     }
-    .org-insight-card strong {
-      color: #332b22;
-      font-size: 0.84rem;
-      line-height: 1.35;
-    }
-    .detail-subtitle {
-      color: var(--accent);
-      font-size: 0.82rem;
+    .paradigm-q-stat {
+      font-size: .9rem;
       font-weight: 800;
-      line-height: 1.3;
+      color: var(--ink);
     }
-    .detail-block {
-      display: grid;
-      gap: 8px;
-      padding-top: 3px;
+    .paradigm-q-pct { font-size: .68rem; color: var(--muted); }
+    .paradigm-q-card.gap-critical {
+      border-color: rgba(180,60,60,.3);
+      background: rgba(255,240,238,.72);
     }
-    .detail-callout {
-      border: 1px solid rgba(15, 118, 110, 0.22);
-      border-radius: 14px;
-      background: rgba(209, 244, 238, 0.32);
-      padding: 9px 10px;
-      display: grid;
-      gap: 3px;
-      color: var(--muted);
-      font-size: 0.82rem;
-      line-height: 1.38;
-    }
-    .detail-callout strong {
-      color: var(--accent);
-      font-size: 0.9rem;
-    }
-    .detail-bars {
-      display: grid;
-      gap: 8px;
-    }
-    .detail-bar-row {
-      display: grid;
-      gap: 4px;
-    }
-    .detail-bar-top {
-      display: flex;
-      justify-content: space-between;
-      gap: 8px;
-      font-size: 0.8rem;
-      font-weight: 800;
-      line-height: 1.2;
-    }
-    .detail-bar-track {
-      height: 7px;
-      border-radius: 999px;
-      background: #eadfce;
-      overflow: hidden;
-    }
-    .detail-bar-track span {
-      display: block;
-      height: 100%;
-      border-radius: 999px;
-    }
-    .detail-bar-foot,
-    .connection-source {
-      color: var(--muted);
-      font-size: 0.72rem;
-      line-height: 1.25;
-    }
-    .detail-country-line {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 5px;
-    }
-    .detail-country-line span {
-      border-radius: 999px;
-      background: rgba(233, 224, 210, 0.72);
-      color: var(--muted);
-      font-size: 0.74rem;
-      padding: 3px 7px;
-    }
-    .connection-card {
-      display: grid;
-      gap: 4px;
-    }
-    .connection-evidence {
-      color: var(--accent);
-      font-size: 0.76rem;
-      font-weight: 800;
-      line-height: 1.25;
-    }
-    .detail-empty {
-      border: 1px dashed rgba(154, 140, 120, 0.45);
-      border-radius: 12px;
-      color: var(--muted);
-      padding: 9px 10px;
-      font-size: 0.82rem;
-      line-height: 1.35;
-    }
-    .detail-metric-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 7px;
-    }
-    .detail-metric {
-      border: 1px solid rgba(217, 206, 190, 0.76);
-      border-radius: 12px;
-      background: rgba(255,255,255,0.76);
-      padding: 8px;
-    }
-    .detail-metric span {
-      display: block;
-      color: var(--muted);
-      font-size: 0.72rem;
-    }
-    .detail-metric strong {
-      display: block;
-      font-size: 1.06rem;
-      margin-top: 2px;
-    }
-    .detail-metric.primary {
-      border-color: rgba(15, 118, 110, 0.28);
-      background: rgba(209, 244, 238, 0.28);
-    }
-    .detail-metric.primary strong {
-      color: var(--accent);
-    }
-    @media (max-width: 1320px) {
-      .capital-hero,
-      .atlas-layout,
-      .atlas-toolbar-head,
-      .atlas-control-panel {
-        grid-template-columns: 1fr;
-      }
-      body.capital-atlas-page .page-shell {
-        padding: 14px clamp(14px, 3vw, 24px);
-      }
-      .atlas-sidebar {
-        position: static;
-        max-height: none;
-      }
-      .atlas-action-row {
-        justify-content: flex-start;
-      }
-      .atlas-wrap {
-        height: 68vh;
-        min-height: 560px;
-      }
-    }
+    .paradigm-q-card.gap-critical .paradigm-q-stat { color: #b43c3c; }
   </style>
 </head>
 <body class="capital-atlas-page">
-  <div class="page-shell">
-    <header class="hero capital-hero">
-      <div class="hero-copy">
-        <p class="eyebrow">Capital Network Atlas</p>
-        <h1>Mapa de movilizacion de capital BIO LATAM</h1>
-        <p class="lede">Vista de inteligencia ecosistemica para leer quien financia, donde se concentra el capital y que parte del universo BIO todavia no tiene relaciones documentadas. La red muestra capital; los nodos tenues muestran cobertura pendiente.</p>
-      </div>
-      <div class="hero-meta">
-        <div class="meta-card">
-          <span class="meta-label">Layout</span>
-          <strong>ForceAtlas2-lite + anti-overlap</strong>
-        </div>
-        <div class="meta-card">
-          <span class="meta-label">Lectura</span>
-          <strong>Capital, cobertura, vacios</strong>
-        </div>
-        <div class="meta-card">
-          <span class="meta-label">Calidad</span>
-          <strong>Edges ponderados por evidencia</strong>
-        </div>
-        <div class="meta-card">
-          <span class="meta-label">Navegacion</span>
-          <strong><a href="./index.html" style="color:inherit">Volver al piloto</a></strong>
-        </div>
-      </div>
-    </header>
+<div class="page-shell">
 
-    <section class="atlas-layout">
-      <main class="atlas-stage">
-        <div class="atlas-toolbar">
-          <div class="atlas-toolbar-head">
-            <div>
-              <div class="atlas-title"><span>Red de capital</span> Estructura, hubs, cobertura y espacios blancos</div>
-              <div id="atlas-note" class="atlas-note">Capital Core muestra fondos y startups BIO conectadas por relaciones canonicas. Los colores y filtros de startups siguen la taxonomia activa elegida en Themes para mantener una lectura cohesiva.</div>
-              <div class="atlas-legend">
-                <span class="legend-item"><span class="legend-dot" style="background:#0f766e"></span> Fondo</span>
-                <span class="legend-item"><span class="legend-diamond" style="background:#b7791f"></span> Allocator / LP</span>
-                <span class="legend-item"><span class="legend-dot" style="background:#7c83fd"></span> Startup por categoria semantica</span>
-                <span class="legend-item"><span class="legend-dot" style="background:#c8bda9"></span> BIO sin edge de capital</span>
-                <span class="legend-item"><span class="legend-line"></span> URL publica</span>
-                <span class="legend-item"><span class="legend-line dashed"></span> Fuente canonica</span>
-              </div>
-            </div>
-            <div class="atlas-action-row">
-              <button id="atlas-run-layout" class="atlas-button" type="button">Reordenar</button>
-              <button id="atlas-reset" class="atlas-button" type="button">Recentar</button>
-            </div>
-          </div>
+  <!-- ── Hero ────────────────────────────────────────────────────────── -->
+  <header class="capital-hero">
+    <div class="hero-copy">
+      <p class="eyebrow">Capital Network Atlas · BIO LATAM</p>
+      <h1>Mapa de movilización de capital</h1>
+      <p class="lede">Quién financia el universo BIO, cómo se concentra el capital por tema y geografía, y dónde quedan vacíos de cobertura. Cada nodo es un fondo, allocator o startup; las aristas son relaciones de inversión auditadas.</p>
+    </div>
+    <div class="hero-meta">
+      <div class="meta-card">
+        <div class="meta-label">Fondos mapeados</div>
+        <div class="meta-value accent" id="stat-funds">—</div>
+        <div class="meta-sub">VCs, aceleradoras, CVCs</div>
+      </div>
+      <div class="meta-card">
+        <div class="meta-label">Startups BIO con capital</div>
+        <div class="meta-value accent" id="stat-funded">—</div>
+        <div class="meta-sub">de las startups include</div>
+      </div>
+      <div class="meta-card">
+        <div class="meta-label">Cobertura</div>
+        <div class="meta-value" id="stat-coverage">—</div>
+        <div class="meta-sub">startups con ≥1 edge</div>
+      </div>
+      <div class="meta-card">
+        <div class="meta-label">Relaciones auditadas</div>
+        <div class="meta-value" id="stat-edges">—</div>
+        <div class="meta-sub">edges públicamente verificables</div>
+      </div>
+    </div>
+  </header>
 
-          <div class="atlas-control-panel">
-            <div class="control-group">
-              <div class="control-label">Modo</div>
-              <select id="atlas-mode" class="atlas-select">
-                <option value="capital_core">Capital Core</option>
-                <option value="coverage_gaps">Vacíos de capital</option>
-                <option value="co_investment">Co-investment</option>
-                <option value="allocator_layer">Allocator Layer</option>
-                <option value="full_network" selected>Full Network</option>
+  <section class="ca-analysis-section">
+
+    <!-- ── Módulo 1: Red de Capital ──────────────────────────────────── -->
+    <div class="ca-module">
+
+      <aside class="ca-sidebar">
+        <div class="ca-sidebar-head">
+          <div class="ca-eyebrow">Estructura de inversión</div>
+          <h2 class="ca-title">Red de Capital</h2>
+          <p class="ca-desc">Grafo bipartito de fondos y startups BIO. Nodos coloreados por tema; tamaño proporcional a conectividad. Aristas auditadas por evidencia pública.</p>
+        </div>
+        <div class="ca-sidebar-body">
+
+          <div class="ca-section-lbl">Modo de visualización</div>
+          <select id="atlas-mode" class="atlas-select">
+            <option value="capital_core">Capital Core</option>
+            <option value="coverage_gaps">Vacíos de capital</option>
+            <option value="co_investment">Co-investment</option>
+            <option value="allocator_layer">Allocator Layer</option>
+            <option value="full_network" selected>Full Network</option>
+          </select>
+
+          <div id="atlas-note" class="atlas-note" style="font-size:.73rem;padding:6px 8px;border:1px solid var(--line);border-radius:10px;background:rgba(255,255,255,.6)"></div>
+
+          <div class="ca-section-lbl">Filtros</div>
+          <div class="ca-filter-grid">
+            <select id="atlas-theme" class="atlas-select"><option value="all">Todos los temas BIO</option></select>
+            <select id="atlas-country" class="atlas-select"><option value="all">Todos los países</option></select>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px">
+              <select id="atlas-confidence" class="atlas-select">
+                <option value="0.75">Conf ≥ 0.75</option>
+                <option value="0.9">Conf ≥ 0.90</option>
+                <option value="0" selected>Todas</option>
+              </select>
+              <select id="atlas-source-tier" class="atlas-select">
+                <option value="all">Toda fuente</option>
+                <option value="public_url">Solo URL pública</option>
               </select>
             </div>
-            <div class="control-group">
-              <div class="control-label">Buscar nodo</div>
-              <div class="atlas-search-wrap">
-                <input id="atlas-search" class="atlas-input" type="search" placeholder="Fondo, startup o allocator..." autocomplete="off">
-                <div id="atlas-search-results" class="atlas-search-results"></div>
-              </div>
+          </div>
+
+          <div class="ca-section-lbl">Capas</div>
+          <div class="ca-toggle-row">
+            <button id="atlas-labels"   class="atlas-button active" type="button">Labels</button>
+            <button id="atlas-universe" class="atlas-button active" type="button">Universo BIO</button>
+            <button id="atlas-backbone" class="atlas-button active" type="button">Backbone</button>
+            <button id="atlas-clear"    class="atlas-button"        type="button">Limpiar</button>
+          </div>
+
+          <div class="ca-section-lbl">Leyenda</div>
+          <div class="ca-legend">
+            <span class="ca-legend-item"><span class="ca-legend-dot" style="background:#0f766e"></span>Fondo</span>
+            <span class="ca-legend-item"><span class="ca-legend-diamond" style="background:#b7791f"></span>Allocator/LP</span>
+            <span class="ca-legend-item"><span class="ca-legend-dot" style="background:#7033BC"></span>Startup BIO</span>
+            <span class="ca-legend-item"><span class="ca-legend-dot" style="background:#c8bda9"></span>Sin capital</span>
+            <span class="ca-legend-item"><span class="ca-legend-line"></span>URL pública</span>
+            <span class="ca-legend-item"><span class="ca-legend-line dashed"></span>Fuente canónica</span>
+          </div>
+
+          <hr class="ca-divider">
+          <div class="ca-section-lbl">Nodo seleccionado</div>
+          <div class="ca-inspector">
+            <div class="ca-inspector-header">
+              <span id="atlas-detail-badge" class="pill muted">Sin selección</span>
             </div>
-            <div class="control-group">
-              <div class="control-label">Iluminar BIO / pais / calidad</div>
-              <div style="display:grid;grid-template-columns:1fr 0.7fr 0.62fr 0.72fr;gap:8px;">
-                <select id="atlas-theme" class="atlas-select"><option value="all">Todas las categorias</option></select>
-                <select id="atlas-country" class="atlas-select"><option value="all">Todos los paises</option></select>
-                <select id="atlas-confidence" class="atlas-select">
-                  <option value="0.75">Conf >= 0.75</option>
-                  <option value="0.9">Conf >= 0.90</option>
-                  <option value="0" selected>Todas</option>
-                </select>
-                <select id="atlas-source-tier" class="atlas-select">
-                  <option value="all">Todas fuentes</option>
-                  <option value="public_url">Solo URL publica</option>
-                </select>
-              </div>
-            </div>
-            <div class="control-group">
-              <div class="control-label">Capas</div>
-              <div class="atlas-toggle-row">
-                <button id="atlas-labels" class="atlas-button active" type="button">Labels</button>
-                <button id="atlas-universe" class="atlas-button active" type="button">Universo BIO</button>
-                <button id="atlas-backbone" class="atlas-button active" type="button">Backbone</button>
-                <button id="atlas-clear" class="atlas-button" type="button">Limpiar</button>
-              </div>
-            </div>
+            <div id="atlas-detail" class="detail-muted" style="font-size:.78rem;line-height:1.42">Selecciona un fondo, startup o allocator para ver su rol, tesis, evidencia y vecindad en la red.</div>
+          </div>
+
+        </div>
+      </aside><!-- .ca-sidebar -->
+
+      <div class="ca-main">
+        <div class="ca-toolbar">
+          <div class="atlas-search-wrap">
+            <input id="atlas-search" class="atlas-input" type="search" placeholder="Buscar fondo, startup o allocator…" autocomplete="off">
+            <div id="atlas-search-results" class="atlas-search-results"></div>
+          </div>
+          <div style="display:flex;gap:6px;margin-left:auto;flex-shrink:0">
+            <button id="atlas-run-layout" class="atlas-button" type="button">Reordenar</button>
+            <button id="atlas-reset"      class="atlas-button" type="button">Recentrar</button>
           </div>
         </div>
-
-        <div class="atlas-wrap">
+        <div class="ca-stage" style="height:580px">
           <svg id="capital-atlas-svg" width="100%" height="100%" viewBox="0 0 1900 900" preserveAspectRatio="xMidYMid meet"></svg>
           <div id="atlas-tooltip" class="atlas-tooltip"></div>
           <div class="atlas-controls">
-            <button class="atlas-zoom hint" type="button" tabindex="-1">Rueda = zoom</button>
-            <button id="atlas-zoom-in" class="atlas-zoom" type="button">+</button>
-            <button id="atlas-zoom-out" class="atlas-zoom" type="button">-</button>
-            <button id="atlas-reset-view" class="atlas-zoom" type="button">R</button>
+            <button class="atlas-zoom hint"    type="button" tabindex="-1">Rueda = zoom</button>
+            <button id="atlas-zoom-in"         class="atlas-zoom" type="button">+</button>
+            <button id="atlas-zoom-out"        class="atlas-zoom" type="button">−</button>
+            <button id="atlas-reset-view"      class="atlas-zoom" type="button">R</button>
           </div>
         </div>
-      </main>
+      </div><!-- .ca-main -->
 
-      <aside class="atlas-sidebar">
-        <section class="sidebar-section node-inspector-section">
-          <div class="panel-head">
-            <h2>Nodo seleccionado</h2>
-            <span id="atlas-detail-badge" class="pill muted">Sin seleccion</span>
+    </div><!-- .ca-module Red de Capital -->
+
+    <!-- ── Módulo 2: Capital por Tema ───────────────────────────────── -->
+    <div class="ca-module">
+
+      <aside class="ca-sidebar">
+        <div class="ca-sidebar-head">
+          <div class="ca-eyebrow">Cobertura financiera</div>
+          <h2 class="ca-title">Capital por Tema</h2>
+          <p class="ca-desc">Qué fracción de cada tema BIO tiene al menos una relación de capital documentada. La barra llena indica cobertura; la tenue, el vacío pendiente.</p>
+        </div>
+        <div class="ca-sidebar-body">
+          <div class="ca-section-lbl">Lectura</div>
+          <p style="font-size:.73rem;color:var(--muted);line-height:1.45;margin:0">Cada fila = un tema. La barra de color es la proporción de startups con ≥1 edge de capital. El fondo gris es el universo total include.</p>
+
+          <div class="ca-section-lbl">Resumen global</div>
+          <div class="ca-theme-stat-grid" id="tema-summary-stats">
+            <!-- populated by script -->
           </div>
-          <div id="atlas-detail" class="detail-muted">Selecciona un fondo, startup o relacion para entender su rol, evidencia, conexiones clave y vecindad en la red.</div>
-        </section>
 
-        <div class="backstage-panels" aria-hidden="true">
-          <div id="atlas-ranking"></div>
-          <div id="atlas-theme-mix"></div>
-          <div id="atlas-summary"></div>
+          <div class="ca-section-lbl" style="margin-top:4px">Vacíos críticos</div>
+          <div id="tema-gaps-list" style="display:grid;gap:5px;font-size:.74rem;color:var(--muted)">
+            <!-- populated by script -->
+          </div>
         </div>
       </aside>
-    </section>
+
+      <div class="ca-main">
+        <div class="ca-toolbar" style="min-height:40px">
+          <span style="font-size:.75rem;color:var(--muted)">Startups BIO · scope = include · cobertura de capital por tema editorial</span>
+          <span id="tema-chart-note" style="margin-left:auto;font-size:.73rem;color:var(--muted)"></span>
+        </div>
+        <div class="ca-stage" style="height:360px">
+          <svg id="tema-chart-svg" width="100%" height="100%"></svg>
+        </div>
+      </div>
+
+    </div><!-- .ca-module Capital por Tema -->
+
+    <!-- ── Módulo 3: Top Inversores ─────────────────────────────────── -->
+    <div class="ca-module">
+
+      <aside class="ca-sidebar">
+        <div class="ca-sidebar-head">
+          <div class="ca-eyebrow">Protagonistas del capital</div>
+          <h2 class="ca-title">Top Inversores</h2>
+          <p class="ca-desc">Los fondos con mayor presencia en el ecosistema BIO LATAM, ordenados por portfolio. Cada segmento de barra representa un tema de inversión.</p>
+        </div>
+        <div class="ca-sidebar-body">
+          <div class="ca-section-lbl">Lectura</div>
+          <p style="font-size:.73rem;color:var(--muted);line-height:1.45;margin:0">Cada barra = un inversor. Los segmentos coloreados muestran en qué temas tiene portfolio. El ancho total refleja el número de startups BIO invertidas.</p>
+
+          <div class="ca-section-lbl" style="margin-top:4px">Leyenda de temas</div>
+          <div id="investor-theme-legend" style="display:grid;gap:4px">
+            <!-- populated by script -->
+          </div>
+
+          <div class="ca-section-lbl" style="margin-top:4px">Tipos de actor</div>
+          <div class="ca-legend" style="flex-direction:column;align-items:start;gap:4px">
+            <span class="ca-legend-item" style="font-size:.68rem"><span class="ca-legend-dot" style="background:#0f766e"></span>Fondo VC / aceleradora</span>
+            <span class="ca-legend-item" style="font-size:.68rem"><span class="ca-legend-diamond" style="background:#b7791f"></span>Allocator / LP / DFI</span>
+          </div>
+        </div>
+      </aside>
+
+      <div class="ca-main">
+        <div class="ca-toolbar" style="min-height:40px">
+          <span style="font-size:.75rem;color:var(--muted)">Top 25 inversores por portfolio BIO · segmentado por tema</span>
+          <span id="investor-chart-note" style="margin-left:auto;font-size:.73rem;color:var(--muted)"></span>
+        </div>
+        <div class="ca-stage" style="height:520px">
+          <svg id="investor-chart-svg" width="100%" height="100%"></svg>
+        </div>
+      </div>
+
+    </div><!-- .ca-module Top Inversores -->
+
+    <!-- ── Módulo 4: Paradigma vs Capital ────────────────────────── -->
+    <div class="ca-module">
+
+      <aside class="ca-sidebar">
+        <div class="ca-sidebar-head">
+          <div class="ca-eyebrow">Geografía del capital</div>
+          <h2 class="ca-title">Paradigma vs Capital</h2>
+          <p class="ca-desc">Cada punto es una startup en el espacio de paradigmas BIO. Color lleno = capital documentado. Gris tenue = sin inversores mapeados. Revela qué zonas están sistémicamente sub-financiadas.</p>
+        </div>
+        <div class="ca-sidebar-body">
+
+          <div class="ca-section-lbl">Leyenda</div>
+          <div class="ca-legend" style="flex-direction:column;align-items:start;gap:5px">
+            <span class="ca-legend-item" style="font-size:.7rem"><span class="ca-legend-dot" style="background:var(--accent)"></span>Con capital documentado</span>
+            <span class="ca-legend-item" style="font-size:.7rem;opacity:.7"><span class="ca-legend-dot" style="background:#b0a090"></span>Sin inversores mapeados</span>
+          </div>
+
+          <div class="ca-section-lbl" style="margin-top:4px">Cobertura por cuadrante</div>
+          <div class="paradigm-q-grid" id="paradigm-q-grid">
+            <!-- populated by script -->
+          </div>
+
+          <div class="ca-section-lbl" style="margin-top:4px">Ejes del mapa</div>
+          <p style="font-size:.71rem;color:var(--muted);line-height:1.48;margin:0">
+            <strong style="color:var(--ink)">Horizontal:</strong> escala de la intervención — molecular (izq.) a territorial (der.).<br><br>
+            <strong style="color:var(--ink)">Vertical:</strong> modo de valor — bio/material (abajo) a digital/computacional (arriba).
+          </p>
+
+          <div class="ca-section-lbl" style="margin-top:4px">Vacío estructural</div>
+          <div id="paradigm-gap-callout"></div>
+
+        </div>
+      </aside>
+
+      <div class="ca-main">
+        <div class="ca-toolbar" style="min-height:40px">
+          <span style="font-size:.75rem;color:var(--muted)">488 startups BIO include · puntos coloreados = capital mapeado · gris = sin cobertura</span>
+        </div>
+        <div class="ca-stage" style="height:480px">
+          <svg id="paradigm-chart-svg" width="100%" height="100%"></svg>
+          <div id="paradigm-tooltip" class="paradigm-tip" style="display:none"></div>
+        </div>
+      </div>
+
+    </div><!-- .ca-module Paradigma vs Capital -->
+
+  </section><!-- .ca-analysis-section -->
+
+  <!-- Backstage: used by capital-atlas.js, intentionally hidden -->
+  <div class="backstage-panels" aria-hidden="true">
+    <div id="atlas-ranking"></div>
+    <div id="atlas-theme-mix"></div>
+    <div id="atlas-summary"></div>
   </div>
 
-  <script src="./text-clean.js?v=20260422aa"></script>
-  <script src="./theme-system.js?v=20260430english-semantic"></script>
-  <script src="./semantic-single-level-data.js?v=20260508shared-taxonomy"></script>
-  <script src="./capital-atlas-data.js?v=20260507evidence"></script>
-  <script src="./capital-atlas.js?v=20260508product-copy-clean"></script>
+</div><!-- .page-shell -->
+
+<script src="./startup-themes-data.js?v=20260517" defer></script>
+<script src="./text-clean.js?v=20260422aa" defer></script>
+<script src="./theme-system.js?v=20260430english-semantic" defer></script>
+<script src="./semantic-single-level-data.js?v=20260508shared-taxonomy" defer></script>
+<script src="./capital-atlas-data.js?v=20260507evidence" defer></script>
+<script src="./capital-atlas.js?v=20260508product-copy-clean" defer></script>
+
+<!-- ── Analytics scripts (run after deferred externals) ───────────── -->
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+
+// ── Hero stats ──────────────────────────────────────────────────────
+(function(){
+  const D = window.CAPITAL_ATLAS_DATA;
+  if (!D || !D.nodes) return;
+  const funds     = D.nodes.filter(n => n.type === 'fund' || n.type === 'allocator' || n.investor_type);
+  const bioInc    = D.nodes.filter(n => n.type === 'startup' && n.scope_decision === 'include');
+  const funded    = bioInc.filter(n => n.capital_status === 'capital_mapped');
+  const pubEdges  = (D.edges||[]).filter(e => e.evidence_tier === 'public_url' || e.audited);
+  const pct       = bioInc.length ? Math.round(funded.length / bioInc.length * 100) : 0;
+  document.getElementById('stat-funds').textContent     = funds.length;
+  document.getElementById('stat-funded').textContent    = funded.length + ' / ' + bioInc.length;
+  document.getElementById('stat-coverage').textContent  = pct + '%';
+  document.getElementById('stat-edges').textContent     = pubEdges.length + ' / ' + (D.edges||[]).length;
+})();
+
+// ── Capital por Tema chart ──────────────────────────────────────────
+(function(){
+  const D = window.CAPITAL_ATLAS_DATA;
+  if (!D || !D.nodes) return;
+
+  const THEME_PAL = {
+    "Therapeutics":                            "#7033BC",
+    "Diagnostics & Health Access":             "#1A6DB5",
+    "Food Systems & Alt Proteins":             "#C25A2A",
+    "Bioinputs & Crop Resilience":             "#2A7A42",
+    "Nature & Ecosystem Tech":                 "#127A6E",
+    "Farm Intelligence":                       "#2E4E8C",
+    "Biomaterials & Circular Economy":         "#8B6D14",
+    "Biomanufacturing & Fermentation Economy": "#6B8C3A",
+  };
+  const THEME_SHORT = {
+    "Therapeutics":                            "Therapeutics",
+    "Diagnostics & Health Access":             "Diagnostics",
+    "Food Systems & Alt Proteins":             "Food Systems",
+    "Bioinputs & Crop Resilience":             "Bioinputs",
+    "Nature & Ecosystem Tech":                 "Nature Tech",
+    "Farm Intelligence":                       "Farm Intel",
+    "Biomaterials & Circular Economy":         "Biomaterials",
+    "Biomanufacturing & Fermentation Economy": "Biomanufacturing",
+  };
+
+  // Compute per-theme stats
+  const bioInc = D.nodes.filter(n => n.type === 'startup' && n.scope_decision === 'include' && n.theme && THEME_PAL[n.theme]);
+  const themeStats = {};
+  bioInc.forEach(s => {
+    if (!themeStats[s.theme]) themeStats[s.theme] = { total: 0, funded: 0 };
+    themeStats[s.theme].total++;
+    if (s.capital_status === 'capital_mapped') themeStats[s.theme].funded++;
+  });
+  const themes = Object.keys(themeStats).sort((a,b) => {
+    return (themeStats[b].funded / themeStats[b].total) - (themeStats[a].funded / themeStats[a].total);
+  });
+
+  // Sidebar summary stats
+  const totalFunded = bioInc.filter(s => s.capital_status === 'capital_mapped').length;
+  const totalBio    = bioInc.length;
+  const avgCov      = totalBio ? Math.round(totalFunded / totalBio * 100) : 0;
+  const statsEl     = document.getElementById('tema-summary-stats');
+  if (statsEl) {
+    statsEl.innerHTML =
+      `<div class="ca-theme-stat"><span class="ca-theme-stat-label">Startups BIO include</span><strong class="ca-theme-stat-value">${totalBio}</strong><span class="ca-theme-stat-badge">${avgCov}% cob.</span></div>` +
+      `<div class="ca-theme-stat"><span class="ca-theme-stat-label">Con capital mapeado</span><strong class="ca-theme-stat-value">${totalFunded}</strong></div>` +
+      `<div class="ca-theme-stat"><span class="ca-theme-stat-label">Sin capital doc.</span><strong class="ca-theme-stat-value" style="color:#8a7d70">${totalBio - totalFunded}</strong></div>`;
+  }
+
+  // Gaps list (themes < 70% coverage)
+  const gapsEl = document.getElementById('tema-gaps-list');
+  if (gapsEl) {
+    const gaps = themes.filter(t => (themeStats[t].funded / themeStats[t].total) < 0.70);
+    if (gaps.length === 0) {
+      gapsEl.textContent = 'Todos los temas superan el 70% de cobertura.';
+    } else {
+      gapsEl.innerHTML = gaps.map(t => {
+        const s = themeStats[t];
+        const pct = Math.round(s.funded / s.total * 100);
+        return `<div style="display:flex;align-items:center;gap:6px"><span style="width:8px;height:8px;border-radius:50%;background:${THEME_PAL[t]};flex-shrink:0;display:inline-block"></span><span>${THEME_SHORT[t]}: ${pct}% (${s.funded}/${s.total})</span></div>`;
+      }).join('');
+    }
+  }
+
+  // SVG chart
+  const svgEl = document.getElementById('tema-chart-svg');
+  if (!svgEl) return;
+
+  function renderChart() {
+    svgEl.innerHTML = '';
+    const W = svgEl.parentElement.clientWidth  || 700;
+    const H = svgEl.parentElement.clientHeight || 360;
+    const NS = 'http://www.w3.org/2000/svg';
+    svgEl.setAttribute('viewBox', `0 0 ${W} ${H}`);
+
+    function el(tag, attrs, parent) {
+      const e = document.createElementNS(NS, tag);
+      for (const [k,v] of Object.entries(attrs)) e.setAttribute(k, v);
+      if (parent) parent.appendChild(e);
+      return e;
+    }
+
+    const PAD = { t: 28, r: 90, b: 24, l: 118 };
+    const CW  = W - PAD.l - PAD.r;
+    const CH  = H - PAD.t - PAD.b;
+    const N   = themes.length;
+    const rowH = CH / N;
+    const barH = Math.min(rowH * 0.52, 18);
+
+    el('rect', {x:0,y:0,width:W,height:H,fill:'#f7f4ee'}, svgEl);
+
+    // Grid lines
+    [0.25, 0.5, 0.75, 1.0].forEach(frac => {
+      const x = PAD.l + frac * CW;
+      el('line', {x1:x,y1:PAD.t-14,x2:x,y2:H-PAD.b,
+        stroke:'rgba(200,192,178,.35)','stroke-width':'0.7','stroke-dasharray':'3,4'}, svgEl);
+      const lbl = el('text', {x,y:PAD.t-17,'text-anchor':'middle',
+        'font-size':'7.5','font-weight':'600',fill:'rgba(120,108,92,.65)',
+        'font-family':'DM Sans,sans-serif'}, svgEl);
+      lbl.textContent = Math.round(frac*100)+'%';
+    });
+
+    themes.forEach((theme, i) => {
+      const s   = themeStats[theme];
+      const pct = s.funded / s.total;
+      const col = THEME_PAL[theme];
+      const midY = PAD.t + (i + 0.5) * rowH;
+      const barY  = midY - barH / 2;
+
+      // Theme name
+      const nameLbl = el('text', {
+        x: PAD.l - 8, y: midY,
+        'text-anchor':'end', 'dominant-baseline':'central',
+        'font-size':'8.5','font-weight':'700',fill:col,
+        'font-family':'DM Sans,sans-serif',
+      }, svgEl);
+      nameLbl.textContent = THEME_SHORT[theme] || theme;
+
+      // Bar background
+      el('rect', {x:PAD.l,y:barY,width:CW,height:barH,rx:barH/2,
+        fill:'rgba(200,192,178,.32)'}, svgEl);
+
+      // Funded fill
+      if (pct > 0.004) {
+        el('rect', {x:PAD.l,y:barY,width:Math.max(pct*CW, barH),height:barH,rx:barH/2,
+          fill:col,opacity:'0.84'}, svgEl);
+      }
+
+      // Count label (right side)
+      const lblX = PAD.l + CW + 8;
+      const n1 = el('text', {x:lblX,y:midY-2,
+        'font-size':'9','font-weight':'800',fill:'#332b22',
+        'font-family':'DM Sans,sans-serif'}, svgEl);
+      n1.textContent = s.funded + '/' + s.total;
+
+      const n2 = el('text', {x:lblX,y:midY+9,
+        'font-size':'7.5','font-weight':'600',fill:col,opacity:'0.85',
+        'font-family':'DM Sans,sans-serif'}, svgEl);
+      n2.textContent = Math.round(pct*100) + '%';
+    });
+
+    // X axis label
+    const ax = el('text', {x:PAD.l+CW/2,y:H-4,'text-anchor':'middle',
+      'font-size':'7.5','font-weight':'600',fill:'rgba(120,108,92,.6)',
+      'font-family':'DM Sans,sans-serif'}, svgEl);
+    ax.textContent = '← proporción de startups include con capital documentado →';
+  }
+
+  renderChart();
+  const ro = new ResizeObserver(renderChart);
+  ro.observe(svgEl.parentElement);
+})();
+
+// ── Top Inversores chart ────────────────────────────────────────────
+(function(){
+  const D = window.CAPITAL_ATLAS_DATA;
+  if (!D || !D.nodes || !D.edges) return;
+
+  const THEME_PAL = {
+    "Therapeutics":                            "#7033BC",
+    "Diagnostics & Health Access":             "#1A6DB5",
+    "Food Systems & Alt Proteins":             "#C25A2A",
+    "Bioinputs & Crop Resilience":             "#2A7A42",
+    "Nature & Ecosystem Tech":                 "#127A6E",
+    "Farm Intelligence":                       "#2E4E8C",
+    "Biomaterials & Circular Economy":         "#8B6D14",
+    "Biomanufacturing & Fermentation Economy": "#6B8C3A",
+  };
+  const THEME_SHORT = {
+    "Therapeutics":                            "Therapeutics",
+    "Diagnostics & Health Access":             "Diagnostics",
+    "Food Systems & Alt Proteins":             "Food Systems",
+    "Bioinputs & Crop Resilience":             "Bioinputs",
+    "Nature & Ecosystem Tech":                 "Nature Tech",
+    "Farm Intelligence":                       "Farm Intel",
+    "Biomaterials & Circular Economy":         "Biomaterials",
+    "Biomanufacturing & Fermentation Economy": "Biomanufacturing",
+  };
+  const THEME_ORDER = Object.keys(THEME_PAL);
+
+  const nodeById = new Map(D.nodes.map(n => [n.id, n]));
+  const bioStartupIds = new Set(
+    D.nodes.filter(n => n.type === 'startup' && n.scope_decision === 'include').map(n => n.id)
+  );
+
+  // Build investor → {count, themes{}} from edges
+  const investorStats = {};
+  D.edges.forEach(e => {
+    if (!bioStartupIds.has(e.target)) return;
+    const inv = nodeById.get(e.source);
+    if (!inv) return;
+    const startup = nodeById.get(e.target);
+    if (!startup) return;
+    if (!investorStats[e.source]) {
+      investorStats[e.source] = { label: inv.label || e.source, type: inv.type || inv.investor_type || 'fund', count: 0, themes: {} };
+    }
+    investorStats[e.source].count++;
+    const t = startup.theme;
+    if (t && THEME_PAL[t]) investorStats[e.source].themes[t] = (investorStats[e.source].themes[t] || 0) + 1;
+  });
+
+  // Sort by portfolio count, take top 25
+  const investors = Object.values(investorStats)
+    .sort((a,b) => b.count - a.count)
+    .slice(0, 25);
+
+  if (!investors.length) return;
+
+  // Sidebar legend
+  const legEl = document.getElementById('investor-theme-legend');
+  if (legEl) {
+    // Which themes appear in top investors?
+    const usedThemes = new Set();
+    investors.forEach(iv => Object.keys(iv.themes).forEach(t => usedThemes.add(t)));
+    legEl.innerHTML = THEME_ORDER.filter(t => usedThemes.has(t)).map(t =>
+      `<div style="display:flex;align-items:center;gap:6px;font-size:.7rem;color:#332b22"><span style="width:10px;height:10px;border-radius:2px;background:${THEME_PAL[t]};flex-shrink:0;opacity:.85"></span>${THEME_SHORT[t]}</div>`
+    ).join('');
+  }
+
+  // SVG chart
+  const svgEl = document.getElementById('investor-chart-svg');
+  if (!svgEl) return;
+
+  function renderChart() {
+    svgEl.innerHTML = '';
+    const W  = svgEl.parentElement.clientWidth  || 700;
+    const H  = svgEl.parentElement.clientHeight || 520;
+    const NS = 'http://www.w3.org/2000/svg';
+    svgEl.setAttribute('viewBox', `0 0 ${W} ${H}`);
+
+    function el(tag, attrs, parent) {
+      const e = document.createElementNS(NS, tag);
+      for (const [k,v] of Object.entries(attrs)) e.setAttribute(k, v);
+      if (parent) parent.appendChild(e);
+      return e;
+    }
+
+    const PAD = { t: 18, r: 50, b: 24, l: 148 };
+    const CW   = W - PAD.l - PAD.r;
+    const CH   = H - PAD.t - PAD.b;
+    const N    = investors.length;
+    const rowH = CH / N;
+    const barH = Math.min(rowH * 0.56, 20);
+    const maxCount = investors[0].count;
+
+    el('rect', {x:0,y:0,width:W,height:H,fill:'#f7f4ee'}, svgEl);
+    const defs = el('defs', {}, svgEl);
+
+    // Vertical grid lines
+    [0.25, 0.5, 0.75, 1.0].forEach(frac => {
+      const x = PAD.l + frac * CW;
+      const cnt = Math.round(frac * maxCount);
+      el('line', {x1:x,y1:PAD.t-12,x2:x,y2:H-PAD.b,
+        stroke:'rgba(200,192,178,.3)','stroke-width':'0.7','stroke-dasharray':'3,4'}, svgEl);
+      const lbl = el('text', {x,y:PAD.t-15,'text-anchor':'middle',
+        'font-size':'7.5','font-weight':'600',fill:'rgba(120,108,92,.65)',
+        'font-family':'DM Sans,sans-serif'}, svgEl);
+      lbl.textContent = cnt > 0 ? cnt : '';
+    });
+
+    investors.forEach((iv, i) => {
+      const midY = PAD.t + (i + 0.5) * rowH;
+      const barY  = midY - barH / 2;
+      const totalW = (iv.count / maxCount) * CW;
+
+      // Name (left)
+      const isAllocator = iv.type === 'allocator';
+      const col = isAllocator ? '#b7791f' : '#0f766e';
+      const nameLbl = el('text', {
+        x: PAD.l - 7, y: midY,
+        'text-anchor':'end', 'dominant-baseline':'central',
+        'font-size':'8','font-weight':i < 5 ? '700' : '500',
+        fill: col, 'font-family':'DM Sans,sans-serif',
+      }, svgEl);
+      // Truncate long names
+      const name = iv.label.length > 24 ? iv.label.slice(0,22)+'…' : iv.label;
+      nameLbl.textContent = name;
+
+      // Bar background
+      el('rect', {x:PAD.l,y:barY,width:CW,height:barH,rx:barH/2,
+        fill:'rgba(200,192,178,.28)'}, svgEl);
+
+      // Stacked segments via clipPath — esquinas perfectamente redondeadas sin overlap hack
+      const clipId = `bclip${i}`;
+      const cp = el('clipPath', {id: clipId}, defs);
+      el('rect', {x: PAD.l, y: barY, width: totalW, height: barH, rx: barH/2}, cp);
+      const g = el('g', {'clip-path': `url(#${clipId})`}, svgEl);
+      let xCursor = PAD.l;
+      THEME_ORDER.forEach(t => {
+        const tc = iv.themes[t] || 0;
+        if (!tc) return;
+        const segW = (tc / maxCount) * CW;
+        el('rect', {x: xCursor, y: barY, width: segW, height: barH, fill: THEME_PAL[t], opacity: '0.88'}, g);
+        xCursor += segW;
+      });
+
+      // Count label (right)
+      const cntLbl = el('text', {
+        x: PAD.l + totalW + 5, y: midY,
+        'dominant-baseline':'central',
+        'font-size':'8','font-weight':'600',fill:'#332b22',
+        'font-family':'DM Sans,sans-serif',
+      }, svgEl);
+      cntLbl.textContent = iv.count;
+    });
+
+    // X axis label
+    const ax = el('text', {x:PAD.l+CW/2,y:H-4,'text-anchor':'middle',
+      'font-size':'7.5','font-weight':'600',fill:'rgba(120,108,92,.6)',
+      'font-family':'DM Sans,sans-serif'}, svgEl);
+    ax.textContent = '← startups BIO include en portfolio →';
+  }
+
+  renderChart();
+  const ro = new ResizeObserver(renderChart);
+  ro.observe(svgEl.parentElement);
+})();
+
+// ── Paradigma vs Capital scatter ─────────────────────────────────
+(function(){
+  const D = window.STARTUP_THEMES_DATA;
+  if (!D || !D.startups) return;
+
+  const THEME_PAL = {
+    "Therapeutics":                            "#7033BC",
+    "Diagnostics & Health Access":             "#1A6DB5",
+    "Food Systems & Alt Proteins":             "#C25A2A",
+    "Bioinputs & Crop Resilience":             "#2A7A42",
+    "Nature & Ecosystem Tech":                 "#127A6E",
+    "Farm Intelligence":                       "#2E4E8C",
+    "Biomaterials & Circular Economy":         "#8B6D14",
+    "Biomanufacturing & Fermentation Economy": "#6B8C3A",
+  };
+  const THEME_SHORT = {
+    "Therapeutics":                            "Therapeutics",
+    "Diagnostics & Health Access":             "Diagnostics",
+    "Food Systems & Alt Proteins":             "Food Systems",
+    "Bioinputs & Crop Resilience":             "Bioinputs",
+    "Nature & Ecosystem Tech":                 "Nature Tech",
+    "Farm Intelligence":                       "Farm Intel",
+    "Biomaterials & Circular Economy":         "Biomaterials",
+    "Biomanufacturing & Fermentation Economy": "Biomanufacturing",
+  };
+
+  const startups = D.startups.filter(s => s.sx != null && s.sy != null);
+
+  // ── Cuadrantes ───────────────────────────────────────────────────
+  const QUADS = [
+    {key:'DT', label:'DiagTech',  sub:'Molecular + Digital', test: s => s.sx < 0 && s.sy >= 0},
+    {key:'AD', label:'AgData',    sub:'Sistémica + Digital',  test: s => s.sx >= 0 && s.sy >= 0},
+    {key:'BF', label:'BioFarma',  sub:'Molecular + Bio',      test: s => s.sx < 0 && s.sy < 0},
+    {key:'AB', label:'AgBio',     sub:'Sistémica + Bio',      test: s => s.sx >= 0 && s.sy < 0},
+  ];
+  QUADS.forEach(q => {
+    const grp = startups.filter(q.test);
+    q.total  = grp.length;
+    q.funded = grp.filter(s => (s.n_investors_mapped || 0) > 0).length;
+    q.pct    = q.total > 0 ? Math.round(q.funded / q.total * 100) : 0;
+  });
+  const worstQ = QUADS.reduce((a, b) => a.pct < b.pct ? a : b);
+
+  // ── Sidebar: cuadrantes ──────────────────────────────────────────
+  const qGrid = document.getElementById('paradigm-q-grid');
+  if (qGrid) {
+    qGrid.innerHTML = QUADS.map(q =>
+      `<div class="paradigm-q-card${q === worstQ ? ' gap-critical' : ''}">
+        <div class="paradigm-q-label">${q.label}</div>
+        <div class="paradigm-q-stat">${q.funded}/${q.total}</div>
+        <div class="paradigm-q-pct">${q.pct}% cobertura</div>
+      </div>`
+    ).join('');
+  }
+
+  // ── Sidebar: vacío estructural ───────────────────────────────────
+  const gapEl = document.getElementById('paradigm-gap-callout');
+  if (gapEl) {
+    gapEl.innerHTML =
+      `<div style="border:1px solid rgba(180,60,60,.28);border-radius:11px;background:rgba(255,240,238,.62);padding:9px 11px;font-size:.73rem;line-height:1.5;color:var(--muted)">
+        <strong style="color:#b43c3c">${worstQ.label}</strong> (${worstQ.sub})<br>
+        Solo <strong style="color:#b43c3c">${worstQ.pct}%</strong> de cobertura —
+        ${worstQ.total - worstQ.funded} startups sin capital mapeado en esta zona.
+      </div>`;
+  }
+
+  // ── SVG scatter ──────────────────────────────────────────────────
+  const svgEl = document.getElementById('paradigm-chart-svg');
+  const tip   = document.getElementById('paradigm-tooltip');
+  if (!svgEl) return;
+
+  let dots = [];
+
+  function renderChart() {
+    svgEl.innerHTML = '';
+    dots = [];
+
+    const W  = svgEl.parentElement.clientWidth  || 700;
+    const H  = svgEl.parentElement.clientHeight || 480;
+    const NS = 'http://www.w3.org/2000/svg';
+    svgEl.setAttribute('viewBox', `0 0 ${W} ${H}`);
+
+    function el(tag, attrs, parent) {
+      const e = document.createElementNS(NS, tag);
+      for (const [k, v] of Object.entries(attrs)) e.setAttribute(k, v);
+      if (parent) parent.appendChild(e);
+      return e;
+    }
+
+    const PAD = {t: 24, r: 24, b: 34, l: 30};
+    const CW  = W - PAD.l - PAD.r;
+    const CH  = H - PAD.t - PAD.b;
+
+    // Coordinate mapping: sx ∈ [-13.5,+13.5], sy ∈ [-10.5,+10.5]
+    const XSPAN = 13.5, YSPAN = 10.5;
+    const mapX = sx => PAD.l + (sx + XSPAN) / (2 * XSPAN) * CW;
+    const mapY = sy => PAD.t + CH - (sy + YSPAN) / (2 * YSPAN) * CH;
+    const cx0 = mapX(0), cy0 = mapY(0);
+
+    // Background
+    el('rect', {x:0,y:0,width:W,height:H,fill:'#f7f4ee'}, svgEl);
+
+    // Quadrant fills (very subtle tint)
+    [
+      {x:PAD.l,  y:PAD.t,  w:cx0-PAD.l,        h:cy0-PAD.t,      fill:'rgba(26,109,181,.04)'},  // DiagTech TL
+      {x:cx0,    y:PAD.t,  w:PAD.l+CW-cx0,      h:cy0-PAD.t,      fill:'rgba(19,122,110,.04)'},  // AgData TR
+      {x:PAD.l,  y:cy0,    w:cx0-PAD.l,          h:PAD.t+CH-cy0,   fill:'rgba(112,51,188,.04)'}, // BioFarma BL
+      {x:cx0,    y:cy0,    w:PAD.l+CW-cx0,        h:PAD.t+CH-cy0,   fill:'rgba(42,122,66,.04)'},  // AgBio BR
+    ].forEach(f => el('rect', {x:f.x,y:f.y,width:f.w,height:f.h,fill:f.fill}, svgEl));
+
+    // Axis lines
+    el('line', {x1:cx0,y1:PAD.t,x2:cx0,y2:PAD.t+CH,
+      stroke:'rgba(120,108,92,.22)','stroke-width':'0.8'}, svgEl);
+    el('line', {x1:PAD.l,y1:cy0,x2:PAD.l+CW,y2:cy0,
+      stroke:'rgba(120,108,92,.22)','stroke-width':'0.8'}, svgEl);
+
+    // Quadrant corner labels
+    [
+      {text:'DiagTech',  x:PAD.l+5,    y:PAD.t+12,   anchor:'start'},
+      {text:'AgData',    x:PAD.l+CW-5, y:PAD.t+12,   anchor:'end'},
+      {text:'BioFarma',  x:PAD.l+5,    y:PAD.t+CH-6, anchor:'start'},
+      {text:'AgBio',     x:PAD.l+CW-5, y:PAD.t+CH-6, anchor:'end'},
+    ].forEach(q => {
+      const t = el('text', {x:q.x,y:q.y,'text-anchor':q.anchor,
+        'font-size':'8','font-weight':'700',fill:'rgba(120,108,92,.32)',
+        'font-family':'DM Sans,sans-serif'}, svgEl);
+      t.textContent = q.text;
+    });
+
+    // Axis endpoint labels
+    const axStyle = {'font-size':'7.5','font-weight':'600',fill:'rgba(120,108,92,.52)','font-family':'DM Sans,sans-serif'};
+    const axXl = el('text', {x:PAD.l,y:H-5,'text-anchor':'start',...axStyle}, svgEl); axXl.textContent = '← Molecular';
+    const axXr = el('text', {x:PAD.l+CW,y:H-5,'text-anchor':'end',...axStyle}, svgEl); axXr.textContent = 'Territorial →';
+    const axYb = el('text', {x:6,y:PAD.t+CH,'text-anchor':'start',...axStyle,
+      transform:`rotate(-90,6,${PAD.t+CH})`}, svgEl); axYb.textContent = '← Bio';
+    const axYt = el('text', {x:6,y:PAD.t+14,'text-anchor':'start',...axStyle,
+      transform:`rotate(-90,6,${PAD.t+14})`}, svgEl); axYt.textContent = 'Digital →';
+
+    // Dots: unfunded behind, funded on top
+    function drawDot(s, isFunded) {
+      const cx = mapX(s.sx);
+      const cy = mapY(s.sy);
+      const col = isFunded ? (THEME_PAL[s.bio_theme] || '#888') : '#b0a090';
+      const r   = isFunded ? 3.2 : 2.4;
+      const op  = isFunded ? '0.76' : '0.30';
+      el('circle', {cx, cy, r, fill:col, opacity:op}, svgEl);
+      dots.push({s, cx, cy, funded:isFunded});
+    }
+
+    startups.filter(s => !(s.n_investors_mapped > 0)).forEach(s => drawDot(s, false));
+    startups.filter(s =>   s.n_investors_mapped > 0 ).forEach(s => drawDot(s, true));
+  }
+
+  renderChart();
+  const ro = new ResizeObserver(renderChart);
+  ro.observe(svgEl.parentElement);
+
+  // ── Tooltip on hover ─────────────────────────────────────────────
+  if (tip) {
+    svgEl.addEventListener('mousemove', function(evt) {
+      const svgRect = svgEl.getBoundingClientRect();
+      const mx = evt.clientX - svgRect.left;
+      const my = evt.clientY - svgRect.top;
+      let closest = null, minDist = Infinity;
+      dots.forEach(d => {
+        const dist = Math.hypot(d.cx - mx, d.cy - my);
+        if (dist < minDist) { minDist = dist; closest = d; }
+      });
+      if (closest && minDist < 14) {
+        const stageRect = svgEl.parentElement.getBoundingClientRect();
+        const tipX = evt.clientX - stageRect.left + 14;
+        const tipY = evt.clientY - stageRect.top  - 60;
+        tip.style.left    = Math.min(tipX, stageRect.width - 190) + 'px';
+        tip.style.top     = Math.max(tipY, 4) + 'px';
+        tip.style.display = 'block';
+        const col = THEME_PAL[closest.s.bio_theme] || '#888';
+        tip.innerHTML =
+          `<strong style="display:block;margin-bottom:3px">${closest.s.name || closest.s.id}</strong>` +
+          `<span style="color:${col};font-size:.72rem">${THEME_SHORT[closest.s.bio_theme] || closest.s.bio_theme || '—'}</span>` +
+          `<span style="color:var(--muted);font-size:.72rem"> · ${closest.s.country || '—'}</span>` +
+          `<span style="display:block;margin-top:4px;font-size:.72rem;font-weight:700;color:${closest.funded ? '#0f766e' : '#9a8d7a'}">${closest.funded ? '✓ capital mapeado' : '— sin inversores'}</span>`;
+      } else {
+        tip.style.display = 'none';
+      }
+    });
+    svgEl.addEventListener('mouseleave', () => { tip.style.display = 'none'; });
+  }
+})();
+
+}); // DOMContentLoaded
+</script>
+
 </body>
 </html>

@@ -381,6 +381,11 @@ def cmd_build_atlas(args: argparse.Namespace) -> None:
     print(f"\n  Summary: {stats}\n")
 
 
+def cmd_fund_sweep_status(args: argparse.Namespace) -> None:
+    from scripts.capital_sweep_status import run as run_status
+    run_status(DB_PATH)
+
+
 def cmd_graph(args: argparse.Namespace) -> None:
     refresh = getattr(args, "refresh", False)
     if not refresh:
@@ -426,6 +431,7 @@ def main() -> None:
     mde = sub.add_parser("merge-duplicate-entities", help="CRITICO: migrar edges de entity_ids duplicados (PascalCase) al canonical slug con startup_extended")
     mde.add_argument("--dry-run", action="store_true", help="Ver pares sin modificar DB")
     sub.add_parser("build-atlas", help="Regenerar pilot/capital-atlas-data.js desde SQLite (investment_edges + capital_relations)")
+    sub.add_parser("fund-sweep-status", help="Dashboard de cobertura del grafo de capital + guía para el sweep")
     sub.add_parser("quality-report", help="Genera pilot/quality-tracker.html con métricas de calidad")
 
     rc = sub.add_parser("reclassify-themes", help="Asigna bio_theme_primary/secondary + is_bio_universe a todos los includes")
@@ -459,6 +465,7 @@ def main() -> None:
         "dedup-investment-edges": cmd_dedup_investment_edges,
         "merge-duplicate-entities": cmd_merge_duplicate_entities,
         "build-atlas": cmd_build_atlas,
+        "fund-sweep-status": cmd_fund_sweep_status,
         "quality-report": cmd_quality_report,
         "reclassify-themes": cmd_reclassify,
         "rebuild": cmd_rebuild,

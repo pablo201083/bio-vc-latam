@@ -167,12 +167,12 @@
     try {
       const stored = JSON.parse(window.localStorage.getItem(SHARED_TAXONOMY_STATE_KEY) || "{}");
       return {
-        clusterMode: stored.clusterMode === "adopted" ? "adopted" : "semantic",
+        clusterMode: stored.clusterMode === "adopted" ? "adopted" : "editorial",
         semanticProfile: stored.semanticProfile || fallbackProfile,
         semanticK: Number(stored.semanticK || fallbackK)
       };
     } catch (_) {
-      return { clusterMode: "semantic", semanticProfile: fallbackProfile, semanticK: fallbackK };
+      return { clusterMode: "editorial", semanticProfile: fallbackProfile, semanticK: fallbackK };
     }
   }
 
