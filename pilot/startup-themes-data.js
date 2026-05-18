@@ -60,7 +60,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": 6.42,
-      "sy": -9.655
+      "sy": -9.655,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -2.31,
+      "py": 0.548
     },
     {
       "id": "biomakers",
@@ -107,7 +111,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 10.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 6.17,
-      "sy": -9.907
+      "sy": -9.907,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -3.525,
+      "py": 0.67
     },
     {
       "id": "biosens",
@@ -146,7 +154,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 6.528,
-      "sy": -10.102
+      "sy": -10.102,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -3.309,
+      "py": 0.002
     },
     {
       "id": "bitmec",
@@ -185,7 +197,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 6.6,
-      "sy": -10.035
+      "sy": -10.035,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -3.453,
+      "py": 0.086
     },
     {
       "id": "bleps_vision",
@@ -230,7 +246,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 6.334,
-      "sy": -9.698
+      "sy": -9.698,
+      "mscale": 3,
+      "mpar": 3.0,
+      "px": -3.591,
+      "py": 8.302
     },
     {
       "id": "brain4care-br",
@@ -269,7 +289,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 15.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 6.164,
-      "sy": -9.896
+      "sy": -9.896,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -3.009,
+      "py": -0.704
     },
     {
       "id": "carigenetics",
@@ -308,7 +332,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 5.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 6.301,
-      "sy": -10.086
+      "sy": -10.086,
+      "mscale": 1,
+      "mpar": 2.0,
+      "px": -13.227,
+      "py": 0.396
     },
     {
       "id": "caspr_biotech",
@@ -354,7 +382,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 6.285,
-      "sy": -9.71
+      "sy": -9.71,
+      "mscale": 1,
+      "mpar": 3.0,
+      "px": -10.512,
+      "py": 8.868
     },
     {
       "id": "caspr_biotech_acq_by_amazon",
@@ -393,7 +425,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 10.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 6.547,
-      "sy": -10.219
+      "sy": -10.219,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -1.653,
+      "py": -0.912
     },
     {
       "id": "celer_biotecnologia",
@@ -432,7 +468,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 5.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 6.501,
-      "sy": -10.122
+      "sy": -10.122,
+      "mscale": 1,
+      "mpar": 2.0,
+      "px": -12.483,
+      "py": -0.094
     },
     {
       "id": "chemtest",
@@ -476,7 +516,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": 6.333,
-      "sy": -9.711
+      "sy": -9.711,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -1.752,
+      "py": -0.542
     },
     {
       "id": "corsync",
@@ -515,7 +559,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 5.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 6.708,
-      "sy": -10.145
+      "sy": -10.145,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -2.646,
+      "py": 0.208
     },
     {
       "id": "cutting_edge_superconductors",
@@ -554,7 +602,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 6.633,
-      "sy": -10.039
+      "sy": -10.039,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -2.502,
+      "py": 0.73
     },
     {
       "id": "daeki-cl",
@@ -593,7 +645,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": 6.652,
-      "sy": -10.245
+      "sy": -10.245,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -3.69,
+      "py": -0.124
     },
     {
       "id": "dart_by_teledx",
@@ -632,7 +688,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 6.788,
-      "sy": -10.224
+      "sy": -10.224,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -2.109,
+      "py": -0.57
     },
     {
       "id": "detx_mol",
@@ -671,7 +731,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 6.214,
-      "sy": -9.856
+      "sy": -9.856,
+      "mscale": 1,
+      "mpar": 2.0,
+      "px": -11.112,
+      "py": 0.23
     },
     {
       "id": "diagnosis_biotech",
@@ -710,7 +774,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 6.59,
-      "sy": -10.11
+      "sy": -10.11,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -2.562,
+      "py": -0.384
     },
     {
       "id": "diagtech",
@@ -749,7 +817,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 6.373,
-      "sy": -10.115
+      "sy": -10.115,
+      "mscale": 1,
+      "mpar": 2.0,
+      "px": -12.825,
+      "py": -0.062
     },
     {
       "id": "embryoxite",
@@ -794,7 +866,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 6.435,
-      "sy": -9.675
+      "sy": -9.675,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -2.586,
+      "py": 0.432
     },
     {
       "id": "enteria",
@@ -838,7 +914,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 6.333,
-      "sy": -9.645
+      "sy": -9.645,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -1.566,
+      "py": -0.356
     },
     {
       "id": "establishment_labs",
@@ -877,7 +957,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1000.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 10.127,
-      "sy": -9.372
+      "sy": -9.372,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -0.975,
+      "py": 0.316
     },
     {
       "id": "eva-mx",
@@ -916,7 +1000,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 50.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 6.843,
-      "sy": -10.198
+      "sy": -10.198,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -2.856,
+      "py": -0.49
     },
     {
       "id": "fabns",
@@ -955,7 +1043,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 6.381,
-      "sy": -10.12
+      "sy": -10.12,
+      "mscale": 1,
+      "mpar": 2.0,
+      "px": -10.89,
+      "py": 0.798
     },
     {
       "id": "gen-t-br",
@@ -994,7 +1086,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 10.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -15.818,
-      "sy": -12.255
+      "sy": -12.255,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -2.025,
+      "py": -0.558
     },
     {
       "id": "geneprodx-mx",
@@ -1033,7 +1129,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 25.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 6.557,
-      "sy": -10.223
+      "sy": -10.223,
+      "mscale": 1,
+      "mpar": 2.0,
+      "px": -13.407,
+      "py": -0.364
     },
     {
       "id": "genomika_diagnosticos",
@@ -1072,7 +1172,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 6.343,
-      "sy": -10.103
+      "sy": -10.103,
+      "mscale": 1,
+      "mpar": 2.0,
+      "px": -10.524,
+      "py": 0.062
     },
     {
       "id": "gentec",
@@ -1111,7 +1215,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -9.17,
-      "sy": -1.584
+      "sy": -1.584,
+      "mscale": 1,
+      "mpar": 2.0,
+      "px": -11.235,
+      "py": 0.724
     },
     {
       "id": "gisens_biotech",
@@ -1157,7 +1265,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 6.34,
-      "sy": -9.639
+      "sy": -9.639,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -3.177,
+      "py": 0.53
     },
     {
       "id": "glucogear",
@@ -1196,7 +1308,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 5.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 6.787,
-      "sy": -10.186
+      "sy": -10.186,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -2.946,
+      "py": -0.974
     },
     {
       "id": "grupo_diagnostico_aries",
@@ -1235,7 +1351,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 6.425,
-      "sy": -10.13
+      "sy": -10.13,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -2.454,
+      "py": -0.028
     },
     {
       "id": "heritas",
@@ -1274,7 +1394,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 10.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 6.263,
-      "sy": -10.03
+      "sy": -10.03,
+      "mscale": 1,
+      "mpar": 2.0,
+      "px": -11.526,
+      "py": -0.952
     },
     {
       "id": "hilab-br",
@@ -1313,7 +1437,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 50.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 6.671,
-      "sy": -10.222
+      "sy": -10.222,
+      "mscale": 3,
+      "mpar": 3.0,
+      "px": -2.274,
+      "py": 9.768
     },
     {
       "id": "hoobox_one",
@@ -1352,7 +1480,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 6.819,
-      "sy": -10.233
+      "sy": -10.233,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -1.878,
+      "py": 0.228
     },
     {
       "id": "huna",
@@ -1391,7 +1523,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 5.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 6.776,
-      "sy": -10.205
+      "sy": -10.205,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -3.42,
+      "py": 0.584
     },
     {
       "id": "inpulse_medical",
@@ -1430,7 +1566,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 6.595,
-      "sy": -10.041
+      "sy": -10.041,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -1.734,
+      "py": 0.47
     },
     {
       "id": "kheiron-biotech-ar",
@@ -1469,7 +1609,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -12.215,
-      "sy": 3.559
+      "sy": 3.559,
+      "mscale": 1,
+      "mpar": 2.0,
+      "px": -12.315,
+      "py": 0.784
     },
     {
       "id": "levita-magnetics-cl",
@@ -1508,7 +1652,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 100.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 6.69,
-      "sy": -10.074
+      "sy": -10.074,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -3.723,
+      "py": -0.704
     },
     {
       "id": "limay",
@@ -1547,7 +1695,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 6.567,
-      "sy": -10.116
+      "sy": -10.116,
+      "mscale": 1,
+      "mpar": 2.0,
+      "px": -11.382,
+      "py": 0.814
     },
     {
       "id": "limay_biosciences",
@@ -1593,7 +1745,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 6.253,
-      "sy": -9.748
+      "sy": -9.748,
+      "mscale": 1,
+      "mpar": 2.0,
+      "px": -11.073,
+      "py": -0.116
     },
     {
       "id": "linda_lifetech",
@@ -1632,7 +1788,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 25.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 6.832,
-      "sy": -10.183
+      "sy": -10.183,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -2.226,
+      "py": -0.826
     },
     {
       "id": "mendelics",
@@ -1671,7 +1831,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 25.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 6.311,
-      "sy": -10.083
+      "sy": -10.083,
+      "mscale": 1,
+      "mpar": 2.0,
+      "px": -11.442,
+      "py": -0.034
     },
     {
       "id": "microgenesis",
@@ -1715,7 +1879,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 6.425,
-      "sy": -9.659
+      "sy": -9.659,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -2.148,
+      "py": 0.526
     },
     {
       "id": "microscopia",
@@ -1761,7 +1929,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 6.696,
-      "sy": -10.318
+      "sy": -10.318,
+      "mscale": 3,
+      "mpar": 3.0,
+      "px": -1.431,
+      "py": 9.71
     },
     {
       "id": "mirai_3d",
@@ -1800,7 +1972,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 9.519,
-      "sy": -8.631
+      "sy": -8.631,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -3.234,
+      "py": 0.168
     },
     {
       "id": "multiplai_health",
@@ -1846,7 +2022,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 15.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 6.153,
-      "sy": -9.899
+      "sy": -9.899,
+      "mscale": 1,
+      "mpar": 3.0,
+      "px": -11.265,
+      "py": 8.458
     },
     {
       "id": "mzp",
@@ -1890,7 +2070,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 6.416,
-      "sy": -9.652
+      "sy": -9.652,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -1.479,
+      "py": 0.374
     },
     {
       "id": "mzp-tecnologia-ar",
@@ -1929,7 +2113,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": 6.4,
-      "sy": -9.738
+      "sy": -9.738,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -3.237,
+      "py": -0.806
     },
     {
       "id": "nanojump_bio",
@@ -1973,7 +2161,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 6.335,
-      "sy": -9.642
+      "sy": -9.642,
+      "mscale": 1,
+      "mpar": 2.0,
+      "px": -12.153,
+      "py": -0.802
     },
     {
       "id": "neomed-br",
@@ -2012,7 +2204,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": 6.708,
-      "sy": -10.321
+      "sy": -10.321,
+      "mscale": 3,
+      "mpar": 3.0,
+      "px": -2.199,
+      "py": 8.882
     },
     {
       "id": "neuralmed",
@@ -2051,7 +2247,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 10.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 6.76,
-      "sy": -10.127
+      "sy": -10.127,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -2.037,
+      "py": -0.86
     },
     {
       "id": "neurognos",
@@ -2090,7 +2290,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 6.808,
-      "sy": -10.201
+      "sy": -10.201,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -1.275,
+      "py": 0.688
     },
     {
       "id": "novagenic_affinity",
@@ -2129,7 +2333,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 6.362,
-      "sy": -10.117
+      "sy": -10.117,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -2.415,
+      "py": 0.94
     },
     {
       "id": "oncoliq",
@@ -2173,7 +2381,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 6.441,
-      "sy": -9.657
+      "sy": -9.657,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -1.98,
+      "py": 0.972
     },
     {
       "id": "pathovet",
@@ -2212,7 +2424,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 6.724,
-      "sy": -10.304
+      "sy": -10.304,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -2.946,
+      "py": 0.22
     },
     {
       "id": "pharmalens-br",
@@ -2254,7 +2470,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -15.155,
-      "sy": -12.67
+      "sy": -12.67,
+      "mscale": 3,
+      "mpar": 3.0,
+      "px": -2.373,
+      "py": 9.574
     },
     {
       "id": "pickcells",
@@ -2293,7 +2513,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 6.768,
-      "sy": -10.277
+      "sy": -10.277,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -3.585,
+      "py": -0.076
     },
     {
       "id": "pixed",
@@ -2332,7 +2556,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 6.639,
-      "sy": -10.047
+      "sy": -10.047,
+      "mscale": 6,
+      "mpar": 2.0,
+      "px": 12.591,
+      "py": -0.738
     },
     {
       "id": "pregen",
@@ -2379,7 +2607,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 6.158,
-      "sy": -9.891
+      "sy": -9.891,
+      "mscale": 1,
+      "mpar": 3.0,
+      "px": -11.925,
+      "py": 8.426
     },
     {
       "id": "prosperia",
@@ -2418,7 +2650,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 10.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 6.809,
-      "sy": -10.172
+      "sy": -10.172,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -2.991,
+      "py": -0.066
     },
     {
       "id": "reddot-bio-br",
@@ -2457,7 +2693,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 3.787,
-      "sy": 12.27
+      "sy": 12.27,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -0.921,
+      "py": -0.018
     },
     {
       "id": "samay",
@@ -2502,7 +2742,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 15.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 6.235,
-      "sy": -9.757
+      "sy": -9.757,
+      "mscale": 3,
+      "mpar": 3.0,
+      "px": -0.93,
+      "py": 8.008
     },
     {
       "id": "selectivity",
@@ -2541,7 +2785,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 6.608,
-      "sy": -10.034
+      "sy": -10.034,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -1.968,
+      "py": 0.888
     },
     {
       "id": "taugc-bioinformatics-br",
@@ -2580,7 +2828,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -10.734,
-      "sy": -10.174
+      "sy": -10.174,
+      "mscale": 1,
+      "mpar": 2.0,
+      "px": -13.401,
+      "py": -0.658
     },
     {
       "id": "tell",
@@ -2625,7 +2877,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 6.166,
-      "sy": -9.888
+      "sy": -9.888,
+      "mscale": 3,
+      "mpar": 3.0,
+      "px": -3.285,
+      "py": 9.542
     },
     {
       "id": "terragene-ar",
@@ -2664,7 +2920,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 15.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 6.629,
-      "sy": -10.143
+      "sy": -10.143,
+      "mscale": 3,
+      "mpar": 1.0,
+      "px": -1.836,
+      "py": -8.626
     },
     {
       "id": "thermy",
@@ -2703,7 +2963,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 6.839,
-      "sy": -10.163
+      "sy": -10.163,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -1.263,
+      "py": -0.968
     },
     {
       "id": "thyroidprint",
@@ -2742,7 +3006,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 50.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 6.343,
-      "sy": -10.099
+      "sy": -10.099,
+      "mscale": 1,
+      "mpar": 2.0,
+      "px": -13.122,
+      "py": -0.664
     },
     {
       "id": "tismoo",
@@ -2781,7 +3049,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 6.451,
-      "sy": -10.155
+      "sy": -10.155,
+      "mscale": 1,
+      "mpar": 2.0,
+      "px": -11.796,
+      "py": 0.578
     },
     {
       "id": "ubique_bio",
@@ -2825,7 +3097,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 6.342,
-      "sy": -9.619
+      "sy": -9.619,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -1.971,
+      "py": -0.016
     },
     {
       "id": "unima-mx",
@@ -2864,7 +3140,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 6.631,
-      "sy": -10.239
+      "sy": -10.239,
+      "mscale": 1,
+      "mpar": 3.0,
+      "px": -12.753,
+      "py": 9.212
     },
     {
       "id": "vetpix",
@@ -2903,7 +3183,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 6.735,
-      "sy": -10.301
+      "sy": -10.301,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -3.807,
+      "py": -0.816
     },
     {
       "id": "zev_biotech",
@@ -2949,7 +3233,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 6.315,
-      "sy": -9.618
+      "sy": -9.618,
+      "mscale": 3,
+      "mpar": 3.0,
+      "px": -3.78,
+      "py": 8.704
     },
     {
       "id": "aintech",
@@ -2988,7 +3276,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 50.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -8.323,
-      "sy": 1.533
+      "sy": 1.533,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -2.898,
+      "py": -0.024
     },
     {
       "id": "brtc",
@@ -3027,7 +3319,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -8.33,
-      "sy": 1.517
+      "sy": 1.517,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -3.792,
+      "py": -0.1
     },
     {
       "id": "copper3d",
@@ -3066,7 +3362,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 25.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -8.312,
-      "sy": 1.527
+      "sy": 1.527,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -2.952,
+      "py": -0.496
     },
     {
       "id": "copptech",
@@ -3105,7 +3405,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 25.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -8.341,
-      "sy": 1.512
+      "sy": 1.512,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -3.666,
+      "py": -0.788
     },
     {
       "id": "nanoblast",
@@ -3144,7 +3448,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -10.087,
-      "sy": -9.865
+      "sy": -9.865,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -2.124,
+      "py": -0.868
     },
     {
       "id": "nanopharmacia-group-mx",
@@ -3183,7 +3491,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -10.078,
-      "sy": -9.882
+      "sy": -9.882,
+      "mscale": 1,
+      "mpar": 2.0,
+      "px": -12.288,
+      "py": 0.938
     },
     {
       "id": "nanotropic_tecnologia",
@@ -3222,7 +3534,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -8.322,
-      "sy": 1.534
+      "sy": 1.534,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -0.915,
+      "py": -0.526
     },
     {
       "id": "nanovetores_group",
@@ -3261,7 +3577,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -9.95,
-      "sy": -9.827
+      "sy": -9.827,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -3.87,
+      "py": 0.824
     },
     {
       "id": "nchemi-br",
@@ -3300,7 +3620,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -9.836,
-      "sy": -9.715
+      "sy": -9.715,
+      "mscale": 1,
+      "mpar": 2.0,
+      "px": -10.794,
+      "py": -0.454
     },
     {
       "id": "apexzymes",
@@ -3349,7 +3673,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -6.135,
-      "sy": -5.317
+      "sy": -5.317,
+      "mscale": 1,
+      "mpar": 1.67,
+      "px": -12.324,
+      "py": -2.864
     },
     {
       "id": "bybug",
@@ -3403,7 +3731,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.639,
-      "sy": -4.919
+      "sy": -4.919,
+      "mscale": 1,
+      "mpar": 1.31,
+      "px": -10.749,
+      "py": -6.046
     },
     {
       "id": "cellargen_biotech",
@@ -3455,7 +3787,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -11.808,
-      "sy": -6.676
+      "sy": -6.676,
+      "mscale": 3,
+      "mpar": 1.5,
+      "px": -3.735,
+      "py": -5.318
     },
     {
       "id": "done_properly",
@@ -3503,7 +3839,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 2.612,
-      "sy": 4.147
+      "sy": 4.147,
+      "mscale": 2,
+      "mpar": 1.67,
+      "px": -7.596,
+      "py": -3.486
     },
     {
       "id": "enzyva",
@@ -3553,7 +3893,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -6.683,
-      "sy": -4.734
+      "sy": -4.734,
+      "mscale": 1,
+      "mpar": 2.0,
+      "px": -13.455,
+      "py": 0.698
     },
     {
       "id": "food-for-the-future-cl",
@@ -3592,7 +3936,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 3.103,
-      "sy": 3.249
+      "sy": 3.249,
+      "mscale": 1,
+      "mpar": 1.0,
+      "px": -12.15,
+      "py": -9.928
     },
     {
       "id": "future_biome",
@@ -3640,7 +3988,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -10.124,
-      "sy": -9.197
+      "sy": -9.197,
+      "mscale": 2,
+      "mpar": 1.67,
+      "px": -7.008,
+      "py": -3.964
     },
     {
       "id": "geoprot",
@@ -3685,7 +4037,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -8.7,
-      "sy": -12.418
+      "sy": -12.418,
+      "mscale": 5,
+      "mpar": 2.33,
+      "px": 7.998,
+      "py": 3.226
     },
     {
       "id": "keclon",
@@ -3736,7 +4092,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 25.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.66,
-      "sy": -4.748
+      "sy": -4.748,
+      "mscale": 2,
+      "mpar": 1.4,
+      "px": -7.161,
+      "py": -5.992
     },
     {
       "id": "laurus",
@@ -3789,7 +4149,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -6.687,
-      "sy": -4.718
+      "sy": -4.718,
+      "mscale": 2,
+      "mpar": 1.36,
+      "px": -8.463,
+      "py": -5.846
     },
     {
       "id": "mavios",
@@ -3837,7 +4201,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -6.582,
-      "sy": -4.84
+      "sy": -4.84,
+      "mscale": 2,
+      "mpar": 2.0,
+      "px": -7.422,
+      "py": 0.548
     },
     {
       "id": "neoprospecta-br",
@@ -3879,7 +4247,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 10.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.651,
-      "sy": -4.731
+      "sy": -4.731,
+      "mscale": 1,
+      "mpar": 3.0,
+      "px": -13.059,
+      "py": 8.73
     },
     {
       "id": "omica",
@@ -3929,7 +4301,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 12.441,
-      "sy": -8.165
+      "sy": -8.165,
+      "mscale": 3,
+      "mpar": 2.5,
+      "px": -1.587,
+      "py": 4.736
     },
     {
       "id": "outpost",
@@ -3978,7 +4354,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -6.665,
-      "sy": -4.782
+      "sy": -4.782,
+      "mscale": 3,
+      "mpar": 1.67,
+      "px": -1.488,
+      "py": -3.438
     },
     {
       "id": "sistema-bio-mx",
@@ -4019,7 +4399,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 50.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -3.469,
-      "sy": 1.833
+      "sy": 1.833,
+      "mscale": 5,
+      "mpar": 1.0,
+      "px": 8.592,
+      "py": -8.906
     },
     {
       "id": "vexxel_biotech",
@@ -4063,7 +4447,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -6.897,
-      "sy": 6.916
+      "sy": 6.916,
+      "mscale": 5,
+      "mpar": 1.0,
+      "px": 7.929,
+      "py": -9.478
     },
     {
       "id": "algenis-cl",
@@ -4102,7 +4490,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.287,
-      "sy": -7.197
+      "sy": -7.197,
+      "mscale": 1,
+      "mpar": 2.0,
+      "px": -13.086,
+      "py": -0.058
     },
     {
       "id": "aravan_labs",
@@ -4141,7 +4533,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.63,
-      "sy": -1.692
+      "sy": -1.692,
+      "mscale": 3,
+      "mpar": 1.0,
+      "px": -2.157,
+      "py": -8.816
     },
     {
       "id": "atarraya-mx",
@@ -4180,7 +4576,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 2.749,
-      "sy": 5.505
+      "sy": 5.505,
+      "mscale": 5,
+      "mpar": 2.0,
+      "px": 8.241,
+      "py": -0.632
     },
     {
       "id": "bialtec",
@@ -4219,7 +4619,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.126,
-      "sy": 6.469
+      "sy": 6.469,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -1.365,
+      "py": -0.458
     },
     {
       "id": "bio_bureau_biotechnology",
@@ -4258,7 +4662,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.701,
-      "sy": -1.717
+      "sy": -1.717,
+      "mscale": 2,
+      "mpar": 2.0,
+      "px": -7.5,
+      "py": 0.75
     },
     {
       "id": "biobreyer",
@@ -4297,7 +4705,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.596,
-      "sy": -1.717
+      "sy": -1.717,
+      "mscale": 2,
+      "mpar": 2.0,
+      "px": -7.818,
+      "py": -0.374
     },
     {
       "id": "biotic",
@@ -4336,7 +4748,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -0.045,
-      "sy": 15.362
+      "sy": 15.362,
+      "mscale": 6,
+      "mpar": 2.0,
+      "px": 11.979,
+      "py": 0.116
     },
     {
       "id": "biotimize",
@@ -4375,7 +4791,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 100.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.613,
-      "sy": -1.727
+      "sy": -1.727,
+      "mscale": 2,
+      "mpar": 2.0,
+      "px": -8.007,
+      "py": -0.222
     },
     {
       "id": "botanical-solution-inc-cl",
@@ -4417,7 +4837,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -8.067,
-      "sy": 4.475
+      "sy": 4.475,
+      "mscale": 2,
+      "mpar": 2.0,
+      "px": -8.601,
+      "py": -0.72
     },
     {
       "id": "bruna-by-altum-lab-cl",
@@ -4456,7 +4880,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": 2.704,
-      "sy": 5.513
+      "sy": 5.513,
+      "mscale": 5,
+      "mpar": 2.0,
+      "px": 6.201,
+      "py": 0.41
     },
     {
       "id": "cenibiot",
@@ -4495,7 +4923,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 15.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.666,
-      "sy": -1.778
+      "sy": -1.778,
+      "mscale": 2,
+      "mpar": 2.0,
+      "px": -7.089,
+      "py": -1.0
     },
     {
       "id": "domolif",
@@ -4534,7 +4966,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 0.038,
-      "sy": 15.323
+      "sy": 15.323,
+      "mscale": 6,
+      "mpar": 2.0,
+      "px": 11.181,
+      "py": -0.956
     },
     {
       "id": "ecosea",
@@ -4573,7 +5009,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 25.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 2.768,
-      "sy": 5.576
+      "sy": 5.576,
+      "mscale": 5,
+      "mpar": 2.0,
+      "px": 8.358,
+      "py": 0.912
     },
     {
       "id": "eternal_mycofood",
@@ -4612,7 +5052,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 50.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 2.803,
-      "sy": 5.551
+      "sy": 5.551,
+      "mscale": 2,
+      "mpar": 2.0,
+      "px": -6.852,
+      "py": -0.846
     },
     {
       "id": "granatum_bioworks",
@@ -4651,7 +5095,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.657,
-      "sy": -1.677
+      "sy": -1.677,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -3.546,
+      "py": 0.666
     },
     {
       "id": "green_biofactory",
@@ -4690,7 +5138,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.625,
-      "sy": -1.667
+      "sy": -1.667,
+      "mscale": 1,
+      "mpar": 1.0,
+      "px": -11.793,
+      "py": -9.556
     },
     {
       "id": "gricha",
@@ -4729,7 +5181,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 2.767,
-      "sy": 5.449
+      "sy": 5.449,
+      "mscale": 4,
+      "mpar": 2.0,
+      "px": 2.979,
+      "py": -0.346
     },
     {
       "id": "hemoalgae",
@@ -4768,7 +5224,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.513,
-      "sy": -1.618
+      "sy": -1.618,
+      "mscale": 2,
+      "mpar": 2.0,
+      "px": -8.622,
+      "py": 0.34
     },
     {
       "id": "kura-biotec-mx",
@@ -4807,7 +5267,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 12.438,
-      "sy": -6.815
+      "sy": -6.815,
+      "mscale": 1,
+      "mpar": 2.0,
+      "px": -11.061,
+      "py": 0.922
     },
     {
       "id": "living-ink-us",
@@ -4846,7 +5310,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 0.796,
-      "sy": 0.329
+      "sy": 0.329,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -1.83,
+      "py": -0.136
     },
     {
       "id": "luyef-biotechnologies-cl",
@@ -4885,7 +5353,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 2.67,
-      "sy": 5.461
+      "sy": 5.461,
+      "mscale": 2,
+      "mpar": 2.0,
+      "px": -8.652,
+      "py": 0.448
     },
     {
       "id": "metabix_bio",
@@ -4924,7 +5396,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -0.124,
-      "sy": 15.334
+      "sy": 15.334,
+      "mscale": 4,
+      "mpar": 2.0,
+      "px": 1.617,
+      "py": 0.566
     },
     {
       "id": "micro_meat",
@@ -4963,7 +5439,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 10.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 2.628,
-      "sy": 5.421
+      "sy": 5.421,
+      "mscale": 1,
+      "mpar": 2.0,
+      "px": -13.2,
+      "py": -0.928
     },
     {
       "id": "moolec",
@@ -5002,7 +5482,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 100.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 2.755,
-      "sy": 5.559
+      "sy": 5.559,
+      "mscale": 5,
+      "mpar": 2.0,
+      "px": 7.497,
+      "py": 0.24
     },
     {
       "id": "moondo",
@@ -5041,7 +5525,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 2.589,
-      "sy": 5.423
+      "sy": 5.423,
+      "mscale": 2,
+      "mpar": 2.0,
+      "px": -8.184,
+      "py": -0.742
     },
     {
       "id": "nanofreeze",
@@ -5080,7 +5568,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -3.94,
-      "sy": 3.986
+      "sy": 3.986,
+      "mscale": 1,
+      "mpar": 2.0,
+      "px": -10.629,
+      "py": -0.902
     },
     {
       "id": "nutrition-from-water-cl",
@@ -5119,7 +5611,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 7.232,
-      "sy": 1.744
+      "sy": 1.744,
+      "mscale": 1,
+      "mpar": 2.0,
+      "px": -12.408,
+      "py": 0.394
     },
     {
       "id": "pow_foods",
@@ -5158,7 +5654,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 2.535,
-      "sy": 5.185
+      "sy": 5.185,
+      "mscale": 4,
+      "mpar": 2.0,
+      "px": 1.671,
+      "py": -0.088
     },
     {
       "id": "progal",
@@ -5197,7 +5697,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 2.777,
-      "sy": 5.511
+      "sy": 5.511,
+      "mscale": 4,
+      "mpar": 2.0,
+      "px": 2.658,
+      "py": 0.042
     },
     {
       "id": "siquimia",
@@ -5236,7 +5740,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.602,
-      "sy": -1.683
+      "sy": -1.683,
+      "mscale": 1,
+      "mpar": 2.0,
+      "px": -11.037,
+      "py": -0.43
     },
     {
       "id": "the-live-green-co-cl",
@@ -5275,7 +5783,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 25.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 2.815,
-      "sy": 5.58
+      "sy": 5.58,
+      "mscale": 4,
+      "mpar": 2.0,
+      "px": 0.945,
+      "py": -0.35
     },
     {
       "id": "veloz_bio",
@@ -5314,7 +5826,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.867,
-      "sy": -2.26
+      "sy": -2.26,
+      "mscale": 1,
+      "mpar": 2.0,
+      "px": -11.469,
+      "py": 0.872
     },
     {
       "id": "werk-nvac",
@@ -5357,7 +5873,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.165,
-      "sy": 6.244
+      "sy": 6.244,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -1.053,
+      "py": 0.446
     },
     {
       "id": "algaebio",
@@ -5405,7 +5925,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 2.429,
-      "sy": 4.273
+      "sy": 4.273,
+      "mscale": 4,
+      "mpar": 1.0,
+      "px": 1.401,
+      "py": -9.232
     },
     {
       "id": "aquit",
@@ -5452,7 +5976,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.175,
-      "sy": 6.209
+      "sy": 6.209,
+      "mscale": 3,
+      "mpar": 3.0,
+      "px": -3.129,
+      "py": 8.442
     },
     {
       "id": "bioblends",
@@ -5494,7 +6022,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 2.39,
-      "sy": 4.46
+      "sy": 4.46,
+      "mscale": 4,
+      "mpar": 2.0,
+      "px": 1.134,
+      "py": 0.932
     },
     {
       "id": "cell_farm",
@@ -5538,7 +6070,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 2.399,
-      "sy": 4.377
+      "sy": 4.377,
+      "mscale": 1,
+      "mpar": 3.0,
+      "px": -13.473,
+      "py": 8.932
     },
     {
       "id": "cellva",
@@ -5580,7 +6116,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 2.292,
-      "sy": 4.289
+      "sy": 4.289,
+      "mscale": 4,
+      "mpar": 2.0,
+      "px": 3.408,
+      "py": 0.252
     },
     {
       "id": "dprotein",
@@ -5626,7 +6166,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 2.5,
-      "sy": 4.273
+      "sy": 4.273,
+      "mscale": 2,
+      "mpar": 2.0,
+      "px": -6.303,
+      "py": -0.4
     },
     {
       "id": "ergo_bioscience",
@@ -5674,7 +6218,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 2.346,
-      "sy": 4.374
+      "sy": 4.374,
+      "mscale": 2,
+      "mpar": 2.33,
+      "px": -6.357,
+      "py": 3.716
     },
     {
       "id": "ergo_foods",
@@ -5722,7 +6270,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 2.265,
-      "sy": 4.346
+      "sy": 4.346,
+      "mscale": 1,
+      "mpar": 2.14,
+      "px": -13.176,
+      "py": 0.654
     },
     {
       "id": "food4you",
@@ -5769,7 +6321,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 2.266,
-      "sy": 4.368
+      "sy": 4.368,
+      "mscale": 4,
+      "mpar": 1.5,
+      "px": 2.421,
+      "py": -3.784
     },
     {
       "id": "glycox",
@@ -5815,7 +6371,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 2.232,
-      "sy": 4.334
+      "sy": 4.334,
+      "mscale": 4,
+      "mpar": 2.0,
+      "px": 2.307,
+      "py": 0.364
     },
     {
       "id": "innovai",
@@ -5860,7 +6420,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 2.426,
-      "sy": 4.46
+      "sy": 4.46,
+      "mscale": 4,
+      "mpar": 2.0,
+      "px": 2.127,
+      "py": -0.22
     },
     {
       "id": "kran-nanobubble-cl",
@@ -5899,7 +6463,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": 2.414,
-      "sy": 4.353
+      "sy": 4.353,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -3.285,
+      "py": 0.478
     },
     {
       "id": "kresko_rnatech",
@@ -5942,7 +6510,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 2.319,
-      "sy": 4.38
+      "sy": 4.38,
+      "mscale": 4,
+      "mpar": 2.0,
+      "px": 3.426,
+      "py": 0.894
     },
     {
       "id": "levya",
@@ -5992,7 +6564,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 2.251,
-      "sy": 4.278
+      "sy": 4.278,
+      "mscale": 2,
+      "mpar": 1.0,
+      "px": -6.783,
+      "py": -8.182
     },
     {
       "id": "matchetune",
@@ -6039,7 +6615,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 2.448,
-      "sy": 4.296
+      "sy": 4.296,
+      "mscale": 4,
+      "mpar": 1.67,
+      "px": 3.252,
+      "py": -2.696
     },
     {
       "id": "microin",
@@ -6083,7 +6663,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -6.875,
-      "sy": 6.913
+      "sy": 6.913,
+      "mscale": 5,
+      "mpar": 1.0,
+      "px": 8.421,
+      "py": -9.8
     },
     {
       "id": "microterra",
@@ -6126,7 +6710,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 5.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 2.228,
-      "sy": 4.279
+      "sy": 4.279,
+      "mscale": 4,
+      "mpar": 2.0,
+      "px": 1.035,
+      "py": 0.304
     },
     {
       "id": "nanoingreen",
@@ -6178,7 +6766,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 2.251,
-      "sy": 4.255
+      "sy": 4.255,
+      "mscale": 2,
+      "mpar": 1.4,
+      "px": -8.691,
+      "py": -4.404
     },
     {
       "id": "nat4bio",
@@ -6228,7 +6820,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 2.478,
-      "sy": 4.585
+      "sy": 4.585,
+      "mscale": 5,
+      "mpar": 1.57,
+      "px": 7.383,
+      "py": -3.828
     },
     {
       "id": "naturannova",
@@ -6273,7 +6869,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 2.214,
-      "sy": 4.295
+      "sy": 4.295,
+      "mscale": 4,
+      "mpar": 3.0,
+      "px": 1.905,
+      "py": 8.604
     },
     {
       "id": "photio",
@@ -6312,7 +6912,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -0.334,
-      "sy": 14.586
+      "sy": 14.586,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -2.745,
+      "py": -0.24
     },
     {
       "id": "rnatech-ar",
@@ -6351,7 +6955,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": 2.904,
-      "sy": 3.505
+      "sy": 3.505,
+      "mscale": 1,
+      "mpar": 2.0,
+      "px": -11.604,
+      "py": 0.472
     },
     {
       "id": "savefruit-mx",
@@ -6390,7 +6998,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": 2.479,
-      "sy": 4.807
+      "sy": 4.807,
+      "mscale": 5,
+      "mpar": 2.0,
+      "px": 7.638,
+      "py": -0.586
     },
     {
       "id": "tomorrow_foods",
@@ -6437,7 +7049,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 15.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 2.226,
-      "sy": 4.29
+      "sy": 4.29,
+      "mscale": 4,
+      "mpar": 1.0,
+      "px": 1.167,
+      "py": -9.052
     },
     {
       "id": "trebe_biotech",
@@ -6485,7 +7101,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -0.455,
-      "sy": -0.135
+      "sy": -0.135,
+      "mscale": 2,
+      "mpar": 2.0,
+      "px": -7.248,
+      "py": 0.988
     },
     {
       "id": "HIAMET",
@@ -6532,7 +7152,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -3.185,
-      "sy": 1.572
+      "sy": 1.572,
+      "mscale": 2,
+      "mpar": 3.0,
+      "px": -7.89,
+      "py": 8.466
     },
     {
       "id": "alkemio",
@@ -6577,7 +7201,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -2.803,
-      "sy": 0.992
+      "sy": 0.992,
+      "mscale": 6,
+      "mpar": 3.0,
+      "px": 10.914,
+      "py": 9.048
     },
     {
       "id": "arqlite",
@@ -6624,7 +7252,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -2.755,
-      "sy": 1.11
+      "sy": 1.11,
+      "mscale": 6,
+      "mpar": 1.0,
+      "px": 12.081,
+      "py": -8.578
     },
     {
       "id": "bioeutectics",
@@ -6675,7 +7307,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -2.909,
-      "sy": 1.318
+      "sy": 1.318,
+      "mscale": 4,
+      "mpar": 1.5,
+      "px": 1.569,
+      "py": -5.14
     },
     {
       "id": "biometallum",
@@ -6724,7 +7360,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -3.236,
-      "sy": 1.62
+      "sy": 1.62,
+      "mscale": 6,
+      "mpar": 1.67,
+      "px": 12.807,
+      "py": -2.25
     },
     {
       "id": "bioplaster_research",
@@ -6769,7 +7409,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -2.545,
-      "sy": 0.995
+      "sy": 0.995,
+      "mscale": 4,
+      "mpar": 1.0,
+      "px": 2.253,
+      "py": -8.818
     },
     {
       "id": "bioplaster_research_inc",
@@ -6814,7 +7458,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -2.469,
-      "sy": 0.997
+      "sy": 0.997,
+      "mscale": 4,
+      "mpar": 1.0,
+      "px": 2.913,
+      "py": -9.052
     },
     {
       "id": "bioplastix",
@@ -6863,7 +7511,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -2.767,
-      "sy": 1.025
+      "sy": 1.025,
+      "mscale": 2,
+      "mpar": 1.0,
+      "px": -7.662,
+      "py": -8.202
     },
     {
       "id": "break_pet",
@@ -6912,7 +7564,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -2.724,
-      "sy": 0.972
+      "sy": 0.972,
+      "mscale": 1,
+      "mpar": 2.0,
+      "px": -10.701,
+      "py": -0.022
     },
     {
       "id": "calfix",
@@ -6957,7 +7613,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -2.898,
-      "sy": 1.286
+      "sy": 1.286,
+      "mscale": 1,
+      "mpar": 1.57,
+      "px": -12.552,
+      "py": -3.016
     },
     {
       "id": "circclo",
@@ -7004,7 +7664,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -3.415,
-      "sy": -4.236
+      "sy": -4.236,
+      "mscale": 6,
+      "mpar": 2.33,
+      "px": 12.231,
+      "py": 2.846
     },
     {
       "id": "cyanomin",
@@ -7051,7 +7715,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -3.213,
-      "sy": 1.598
+      "sy": 1.598,
+      "mscale": 2,
+      "mpar": 2.0,
+      "px": -6.207,
+      "py": 0.7
     },
     {
       "id": "einsted",
@@ -7096,7 +7764,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 0.509,
-      "sy": 12.85
+      "sy": 12.85,
+      "mscale": 1,
+      "mpar": 1.0,
+      "px": -13.44,
+      "py": -9.406
     },
     {
       "id": "elytron_biotech",
@@ -7144,7 +7816,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -3.339,
-      "sy": 1.719
+      "sy": 1.719,
+      "mscale": 1,
+      "mpar": 2.0,
+      "px": -10.872,
+      "py": -0.568
     },
     {
       "id": "fungi_life",
@@ -7195,7 +7871,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -2.762,
-      "sy": 1.141
+      "sy": 1.141,
+      "mscale": 2,
+      "mpar": 2.0,
+      "px": -7.329,
+      "py": 0.314
     },
     {
       "id": "hif-global-cl",
@@ -7236,7 +7916,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 0.473,
-      "sy": 12.826
+      "sy": 12.826,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -2.964,
+      "py": -0.62
     },
     {
       "id": "inmet",
@@ -7282,7 +7966,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -2.833,
-      "sy": 1.216
+      "sy": 1.216,
+      "mscale": 1,
+      "mpar": 1.0,
+      "px": -13.041,
+      "py": -8.26
     },
     {
       "id": "michroma",
@@ -7332,7 +8020,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 25.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -2.954,
-      "sy": 1.327
+      "sy": 1.327,
+      "mscale": 2,
+      "mpar": 1.4,
+      "px": -8.313,
+      "py": -4.472
     },
     {
       "id": "monte-caldera-technology",
@@ -7380,7 +8072,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -2.777,
-      "sy": 1.038
+      "sy": 1.038,
+      "mscale": 1,
+      "mpar": 2.33,
+      "px": -13.362,
+      "py": 2.95
     },
     {
       "id": "mothership-materials-cl",
@@ -7419,7 +8115,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 0.801,
-      "sy": 0.333
+      "sy": 0.333,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -2.043,
+      "py": -0.594
     },
     {
       "id": "muta",
@@ -7464,7 +8164,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -3.463,
-      "sy": -4.268
+      "sy": -4.268,
+      "mscale": 6,
+      "mpar": 3.0,
+      "px": 13.311,
+      "py": 8.212
     },
     {
       "id": "mycorium_biotech",
@@ -7509,7 +8213,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -2.582,
-      "sy": 1.023
+      "sy": 1.023,
+      "mscale": 2,
+      "mpar": 1.0,
+      "px": -7.362,
+      "py": -8.618
     },
     {
       "id": "nairotech",
@@ -7557,7 +8265,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -2.877,
-      "sy": 1.302
+      "sy": 1.302,
+      "mscale": 1,
+      "mpar": 1.5,
+      "px": -13.365,
+      "py": -3.542
     },
     {
       "id": "notfossil",
@@ -7601,7 +8313,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 0.226,
-      "sy": 9.114
+      "sy": 9.114,
+      "mscale": 2,
+      "mpar": 3.0,
+      "px": -7.185,
+      "py": 8.278
     },
     {
       "id": "patagon-fiber",
@@ -7648,7 +8364,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -2.689,
-      "sy": 1.061
+      "sy": 1.061,
+      "mscale": 2,
+      "mpar": 1.0,
+      "px": -7.53,
+      "py": -8.734
     },
     {
       "id": "polymera",
@@ -7699,7 +8419,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -2.769,
-      "sy": 1.174
+      "sy": 1.174,
+      "mscale": 2,
+      "mpar": 1.62,
+      "px": -7.764,
+      "py": -3.75
     },
     {
       "id": "protiva",
@@ -7744,7 +8468,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -2.602,
-      "sy": 1.072
+      "sy": 1.072,
+      "mscale": 4,
+      "mpar": 1.8,
+      "px": 3.732,
+      "py": -1.916
     },
     {
       "id": "radial",
@@ -7790,7 +8518,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -2.8,
-      "sy": 1.193
+      "sy": 1.193,
+      "mscale": 2,
+      "mpar": 1.57,
+      "px": -8.184,
+      "py": -3.23
     },
     {
       "id": "stamm",
@@ -7837,7 +8569,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 100.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.39,
-      "sy": -5.046
+      "sy": -5.046,
+      "mscale": 2,
+      "mpar": 2.2,
+      "px": -6.354,
+      "py": 0.83
     },
     {
       "id": "strong-by-form-cl",
@@ -7876,7 +8612,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 25.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 0.822,
-      "sy": 0.315
+      "sy": 0.315,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -2.571,
+      "py": -0.662
     },
     {
       "id": "tintte",
@@ -7925,7 +8665,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -2.808,
-      "sy": 1.253
+      "sy": 1.253,
+      "mscale": 2,
+      "mpar": 1.0,
+      "px": -7.704,
+      "py": -9.294
     },
     {
       "id": "atacama-biomaterials-cl",
@@ -7964,7 +8708,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": 0.997,
-      "sy": 0.553
+      "sy": 0.553,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -3.681,
+      "py": 0.02
     },
     {
       "id": "bioelements-cl",
@@ -8003,7 +8751,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": 0.983,
-      "sy": 0.554
+      "sy": 0.554,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -1.977,
+      "py": 0.564
     },
     {
       "id": "biorgani",
@@ -8042,7 +8794,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 1.009,
-      "sy": 0.579
+      "sy": 0.579,
+      "mscale": 4,
+      "mpar": 2.0,
+      "px": 3.345,
+      "py": -0.846
     },
     {
       "id": "biosolvit",
@@ -8081,7 +8837,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 15.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 2.94,
-      "sy": 12.632
+      "sy": 12.632,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -3.36,
+      "py": -0.748
     },
     {
       "id": "contech_brasil",
@@ -8120,7 +8880,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 25.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 1.028,
-      "sy": 0.632
+      "sy": 0.632,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -3.387,
+      "py": -0.674
     },
     {
       "id": "ecoshell-mx",
@@ -8159,7 +8923,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": 0.907,
-      "sy": 0.509
+      "sy": 0.509,
+      "mscale": 4,
+      "mpar": 2.0,
+      "px": 3.408,
+      "py": 0.97
     },
     {
       "id": "ejido-verde-mx",
@@ -8198,7 +8966,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 0.868,
-      "sy": 0.448
+      "sy": 0.448,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -3.795,
+      "py": -0.754
     },
     {
       "id": "epicca",
@@ -8237,7 +9009,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 0.993,
-      "sy": 0.585
+      "sy": 0.585,
+      "mscale": 3,
+      "mpar": 1.0,
+      "px": -3.555,
+      "py": -8.456
     },
     {
       "id": "giraffe-bio-ar",
@@ -8276,7 +9052,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": 0.882,
-      "sy": 0.459
+      "sy": 0.459,
+      "mscale": 1,
+      "mpar": 2.0,
+      "px": -12.591,
+      "py": 0.542
     },
     {
       "id": "growpack",
@@ -8315,7 +9095,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 5.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 0.997,
-      "sy": 0.62
+      "sy": 0.62,
+      "mscale": 3,
+      "mpar": 1.0,
+      "px": -1.698,
+      "py": -9.608
     },
     {
       "id": "polybion",
@@ -8354,7 +9138,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 25.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 0.993,
-      "sy": 0.614
+      "sy": 0.614,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -3.612,
+      "py": 0.734
     },
     {
       "id": "smatter",
@@ -8393,7 +9181,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 0.859,
-      "sy": 0.448
+      "sy": 0.448,
+      "mscale": 2,
+      "mpar": 1.0,
+      "px": -6.951,
+      "py": -8.71
     },
     {
       "id": "spora_biotech",
@@ -8432,7 +9224,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 0.974,
-      "sy": 0.579
+      "sy": 0.579,
+      "mscale": 3,
+      "mpar": 1.0,
+      "px": -2.466,
+      "py": -9.9
     },
     {
       "id": "ages_bioactive",
@@ -8471,7 +9267,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 5.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -10.65,
-      "sy": -9.953
+      "sy": -9.953,
+      "mscale": 4,
+      "mpar": 2.0,
+      "px": 3.327,
+      "py": -0.242
     },
     {
       "id": "amnova-biotech-cl",
@@ -8510,7 +9310,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -11.261,
-      "sy": -10.412
+      "sy": -10.412,
+      "mscale": 1,
+      "mpar": 1.0,
+      "px": -11.61,
+      "py": -9.604
     },
     {
       "id": "andes-biotechnologies-cl",
@@ -8549,7 +9353,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -10.575,
-      "sy": -9.789
+      "sy": -9.789,
+      "mscale": 1,
+      "mpar": 2.0,
+      "px": -12.795,
+      "py": 0.452
     },
     {
       "id": "apasomics",
@@ -8597,7 +9405,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -11.062,
-      "sy": -10.727
+      "sy": -10.727,
+      "mscale": 5,
+      "mpar": 1.0,
+      "px": 6.204,
+      "py": -9.53
     },
     {
       "id": "aplife_biotech",
@@ -8646,7 +9458,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 15.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 9.666,
-      "sy": -8.976
+      "sy": -8.976,
+      "mscale": 1,
+      "mpar": 2.5,
+      "px": -11.649,
+      "py": 5.076
     },
     {
       "id": "aptah",
@@ -8685,7 +9501,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 15.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -10.591,
-      "sy": -9.825
+      "sy": -9.825,
+      "mscale": 1,
+      "mpar": 2.0,
+      "px": -10.959,
+      "py": -0.196
     },
     {
       "id": "aptah-bio-br",
@@ -8724,7 +9544,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -10.699,
-      "sy": -10.567
+      "sy": -10.567,
+      "mscale": 1,
+      "mpar": 2.0,
+      "px": -11.223,
+      "py": 0.374
     },
     {
       "id": "ardan",
@@ -8769,7 +9593,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -10.284,
-      "sy": -10.688
+      "sy": -10.688,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -1.044,
+      "py": 0.812
     },
     {
       "id": "asclepii",
@@ -8818,7 +9646,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -11.078,
-      "sy": -10.717
+      "sy": -10.717,
+      "mscale": 3,
+      "mpar": 1.44,
+      "px": -3.252,
+      "py": -4.642
     },
     {
       "id": "autem-medical",
@@ -8865,7 +9697,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 50.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 9.527,
-      "sy": -9.023
+      "sy": -9.023,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -1.089,
+      "py": 0.326
     },
     {
       "id": "autem-therapeutics-br",
@@ -8904,7 +9740,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -10.947,
-      "sy": -10.692
+      "sy": -10.692,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -1.035,
+      "py": 0.276
     },
     {
       "id": "ayuvant",
@@ -8950,7 +9790,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -10.802,
-      "sy": -10.589
+      "sy": -10.589,
+      "mscale": 1,
+      "mpar": 1.67,
+      "px": -12.144,
+      "py": -2.042
     },
     {
       "id": "bentenbiotech",
@@ -8989,7 +9833,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -10.657,
-      "sy": -9.648
+      "sy": -9.648,
+      "mscale": 1,
+      "mpar": 2.0,
+      "px": -12.972,
+      "py": -0.798
     },
     {
       "id": "biocle",
@@ -9035,7 +9883,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -11.015,
-      "sy": -10.747
+      "sy": -10.747,
+      "mscale": 3,
+      "mpar": 1.67,
+      "px": -3.018,
+      "py": -2.436
     },
     {
       "id": "biofab",
@@ -9074,7 +9926,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -10.979,
-      "sy": -10.107
+      "sy": -10.107,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -1.221,
+      "py": -0.448
     },
     {
       "id": "biomimetic_solutions",
@@ -9113,7 +9969,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -11.121,
-      "sy": -10.163
+      "sy": -10.163,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -1.476,
+      "py": 0.116
     },
     {
       "id": "bioseek",
@@ -9158,7 +10018,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -10.642,
-      "sy": -10.549
+      "sy": -10.549,
+      "mscale": 3,
+      "mpar": 2.2,
+      "px": -2.016,
+      "py": 1.714
     },
     {
       "id": "biotecnofe",
@@ -9197,7 +10061,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -10.03,
-      "sy": -10.707
+      "sy": -10.707,
+      "mscale": 1,
+      "mpar": 2.0,
+      "px": -13.239,
+      "py": -0.206
     },
     {
       "id": "bitgenia",
@@ -9243,7 +10111,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -10.703,
-      "sy": -10.267
+      "sy": -10.267,
+      "mscale": 1,
+      "mpar": 2.43,
+      "px": -13.377,
+      "py": 4.11
     },
     {
       "id": "cellco",
@@ -9290,7 +10162,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -11.069,
-      "sy": -10.772
+      "sy": -10.772,
+      "mscale": 1,
+      "mpar": 2.0,
+      "px": -13.368,
+      "py": -0.37
     },
     {
       "id": "cellertz-bio-br",
@@ -9329,7 +10205,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -10.92,
-      "sy": -10.723
+      "sy": -10.723,
+      "mscale": 1,
+      "mpar": 3.0,
+      "px": -12.132,
+      "py": 9.376
     },
     {
       "id": "cellrep",
@@ -9374,7 +10254,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -11.204,
-      "sy": -10.645
+      "sy": -10.645,
+      "mscale": 1,
+      "mpar": 2.0,
+      "px": -12.825,
+      "py": -0.92
     },
     {
       "id": "cells-for-cells-cl",
@@ -9413,7 +10297,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 25.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -11.311,
-      "sy": -10.421
+      "sy": -10.421,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -3.828,
+      "py": -0.118
     },
     {
       "id": "celluris",
@@ -9452,7 +10340,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -10.716,
-      "sy": -9.711
+      "sy": -9.711,
+      "mscale": 1,
+      "mpar": 2.0,
+      "px": -13.272,
+      "py": -0.712
     },
     {
       "id": "circa_therapeutics",
@@ -9497,7 +10389,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -10.907,
-      "sy": -10.605
+      "sy": -10.605,
+      "mscale": 1,
+      "mpar": 1.0,
+      "px": -13.083,
+      "py": -8.338
     },
     {
       "id": "dharma_bioscience",
@@ -9545,7 +10441,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 9.275,
-      "sy": -8.955
+      "sy": -8.955,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -1.758,
+      "py": 0.002
     },
     {
       "id": "dogma_biotech",
@@ -9590,7 +10490,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -11.05,
-      "sy": -10.73
+      "sy": -10.73,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -1.311,
+      "py": 0.086
     },
     {
       "id": "eolo_pharma",
@@ -9635,7 +10539,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 15.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -10.917,
-      "sy": -10.597
+      "sy": -10.597,
+      "mscale": 3,
+      "mpar": 1.0,
+      "px": -2.652,
+      "py": -9.944
     },
     {
       "id": "exomas",
@@ -9679,7 +10587,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -11.195,
-      "sy": -10.617
+      "sy": -10.617,
+      "mscale": 3,
+      "mpar": 1.0,
+      "px": -1.095,
+      "py": -9.558
     },
     {
       "id": "eywa_biotech",
@@ -9725,7 +10637,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -11.198,
-      "sy": -10.687
+      "sy": -10.687,
+      "mscale": 2,
+      "mpar": 1.0,
+      "px": -8.403,
+      "py": -8.932
     },
     {
       "id": "fecundis",
@@ -9769,7 +10685,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -11.275,
-      "sy": -10.611
+      "sy": -10.611,
+      "mscale": 3,
+      "mpar": 1.0,
+      "px": -0.969,
+      "py": -9.558
     },
     {
       "id": "fk_biotecnologia",
@@ -9808,7 +10728,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -10.662,
-      "sy": -9.627
+      "sy": -9.627,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -1.953,
+      "py": 0.94
     },
     {
       "id": "futr_bio",
@@ -9847,7 +10771,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -10.648,
-      "sy": -9.671
+      "sy": -9.671,
+      "mscale": 1,
+      "mpar": 2.0,
+      "px": -12.174,
+      "py": 0.852
     },
     {
       "id": "hexembio",
@@ -9892,7 +10820,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -11.098,
-      "sy": -10.711
+      "sy": -10.711,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -3.684,
+      "py": 0.232
     },
     {
       "id": "insitu",
@@ -9931,7 +10863,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -11.259,
-      "sy": -10.382
+      "sy": -10.382,
+      "mscale": 2,
+      "mpar": 2.0,
+      "px": -8.652,
+      "py": 0.212
     },
     {
       "id": "invitrall",
@@ -9976,7 +10912,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -10.126,
-      "sy": -10.762
+      "sy": -10.762,
+      "mscale": 3,
+      "mpar": 1.0,
+      "px": -3.873,
+      "py": -9.278
     },
     {
       "id": "libera",
@@ -10023,7 +10963,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -10.978,
-      "sy": -10.738
+      "sy": -10.738,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -2.571,
+      "py": -0.01
     },
     {
       "id": "lizarbio",
@@ -10062,7 +11006,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 25.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -11.294,
-      "sy": -10.451
+      "sy": -10.451,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -1.536,
+      "py": -0.464
     },
     {
       "id": "meton",
@@ -10101,7 +11049,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -10.858,
-      "sy": -10.051
+      "sy": -10.051,
+      "mscale": 1,
+      "mpar": 2.0,
+      "px": -12.69,
+      "py": 0.062
     },
     {
       "id": "mirscience-therapeutics-br",
@@ -10140,7 +11092,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -10.591,
-      "sy": -9.817
+      "sy": -9.817,
+      "mscale": 1,
+      "mpar": 2.0,
+      "px": -11.817,
+      "py": -0.594
     },
     {
       "id": "momentum-therapeutics",
@@ -10188,7 +11144,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -10.405,
-      "sy": -10.69
+      "sy": -10.69,
+      "mscale": 1,
+      "mpar": 2.33,
+      "px": -13.068,
+      "py": 3.85
     },
     {
       "id": "naiad",
@@ -10227,7 +11187,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -10.756,
-      "sy": -10.034
+      "sy": -10.034,
+      "mscale": 1,
+      "mpar": 2.0,
+      "px": -11.241,
+      "py": 0.65
     },
     {
       "id": "naiad-drug-design-br",
@@ -10266,7 +11230,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -10.738,
-      "sy": -10.036
+      "sy": -10.036,
+      "mscale": 1,
+      "mpar": 2.0,
+      "px": -12.06,
+      "py": 0.938
     },
     {
       "id": "nanogrow_biotech",
@@ -10311,7 +11279,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -11.06,
-      "sy": -10.731
+      "sy": -10.731,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -2.7,
+      "py": 0.158
     },
     {
       "id": "nanotransfer",
@@ -10357,7 +11329,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -10.783,
-      "sy": -10.621
+      "sy": -10.621,
+      "mscale": 1,
+      "mpar": 1.57,
+      "px": -12.387,
+      "py": -4.254
     },
     {
       "id": "new_organs_biotech",
@@ -10403,7 +11379,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -10.207,
-      "sy": -10.82
+      "sy": -10.82,
+      "mscale": 1,
+      "mpar": 1.67,
+      "px": -11.613,
+      "py": -2.36
     },
     {
       "id": "nintx-br",
@@ -10442,7 +11422,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 15.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -10.753,
-      "sy": -10.09
+      "sy": -10.09,
+      "mscale": 1,
+      "mpar": 2.0,
+      "px": -13.326,
+      "py": 0.126
     },
     {
       "id": "ocular_bio_design",
@@ -10491,7 +11475,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -11.29,
-      "sy": -10.541
+      "sy": -10.541,
+      "mscale": 3,
+      "mpar": 1.0,
+      "px": -2.007,
+      "py": -9.11
     },
     {
       "id": "omics",
@@ -10538,7 +11526,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -10.135,
-      "sy": -10.718
+      "sy": -10.718,
+      "mscale": 3,
+      "mpar": 2.33,
+      "px": -1.209,
+      "py": 3.594
     },
     {
       "id": "onco_precision",
@@ -10583,7 +11575,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 15.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -10.838,
-      "sy": -10.641
+      "sy": -10.641,
+      "mscale": 3,
+      "mpar": 2.2,
+      "px": -2.877,
+      "py": 0.992
     },
     {
       "id": "pannex_therapeutics",
@@ -10622,7 +11618,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -10.674,
-      "sy": -9.957
+      "sy": -9.957,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -3.519,
+      "py": 0.032
     },
     {
       "id": "peptidus-biotech-br",
@@ -10661,7 +11661,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -7.8,
-      "sy": -6.924
+      "sy": -6.924,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -2.226,
+      "py": 0.418
     },
     {
       "id": "php_biotech",
@@ -10700,7 +11704,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -10.546,
-      "sy": -9.782
+      "sy": -9.782,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -1.293,
+      "py": 0.366
     },
     {
       "id": "praxis-biotech-cl",
@@ -10741,7 +11749,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -10.66,
-      "sy": -9.953
+      "sy": -9.953,
+      "mscale": 1,
+      "mpar": 1.0,
+      "px": -11.529,
+      "py": -9.988
     },
     {
       "id": "quantis-br",
@@ -10780,7 +11792,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -11.053,
-      "sy": -10.095
+      "sy": -10.095,
+      "mscale": 1,
+      "mpar": 2.0,
+      "px": -10.563,
+      "py": 0.59
     },
     {
       "id": "scitherm_therapeutics",
@@ -10825,7 +11841,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -10.951,
-      "sy": -10.681
+      "sy": -10.681,
+      "mscale": 1,
+      "mpar": 2.0,
+      "px": -13.203,
+      "py": -0.214
     },
     {
       "id": "single_strand_biotech",
@@ -10869,7 +11889,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -11.162,
-      "sy": -10.674
+      "sy": -10.674,
+      "mscale": 3,
+      "mpar": 1.0,
+      "px": -3.072,
+      "py": -9.982
     },
     {
       "id": "speratum",
@@ -10908,7 +11932,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 15.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -10.568,
-      "sy": -9.817
+      "sy": -9.817,
+      "mscale": 1,
+      "mpar": 2.0,
+      "px": -12.099,
+      "py": 0.554
     },
     {
       "id": "spherebio",
@@ -10956,7 +11984,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -10.779,
-      "sy": -10.621
+      "sy": -10.621,
+      "mscale": 1,
+      "mpar": 1.8,
+      "px": -13.263,
+      "py": -2.556
     },
     {
       "id": "synthetic_ocular_restoration",
@@ -11006,7 +12038,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -11.29,
-      "sy": -10.497
+      "sy": -10.497,
+      "mscale": 3,
+      "mpar": 1.5,
+      "px": -2.136,
+      "py": -4.972
     },
     {
       "id": "tesabio_ai",
@@ -11051,7 +12087,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -11.007,
-      "sy": -10.805
+      "sy": -10.805,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -2.859,
+      "py": -0.232
     },
     {
       "id": "theravax",
@@ -11090,7 +12130,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -10.643,
-      "sy": -9.651
+      "sy": -9.651,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -2.802,
+      "py": -0.738
     },
     {
       "id": "tissuelabs",
@@ -11129,7 +12173,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 5.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -11.075,
-      "sy": -10.099
+      "sy": -10.099,
+      "mscale": 3,
+      "mpar": 1.0,
+      "px": -2.604,
+      "py": -9.848
     },
     {
       "id": "virtech_bio",
@@ -11168,7 +12216,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -11.097,
-      "sy": -10.124
+      "sy": -10.124,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -1.302,
+      "py": 0.804
     },
     {
       "id": "vyro-bio-br",
@@ -11207,7 +12259,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 5.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -10.627,
-      "sy": -9.844
+      "sy": -9.844,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -3.327,
+      "py": -0.568
     },
     {
       "id": "webio-ar",
@@ -11246,7 +12302,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -11.074,
-      "sy": -10.108
+      "sy": -10.108,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -3.552,
+      "py": -0.09
     },
     {
       "id": "ymmunobio",
@@ -11285,7 +12345,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -10.643,
-      "sy": -9.646
+      "sy": -9.646,
+      "mscale": 1,
+      "mpar": 2.0,
+      "px": -13.353,
+      "py": 0.378
     },
     {
       "id": "activaq",
@@ -11324,7 +12388,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -7.995,
-      "sy": 4.809
+      "sy": 4.809,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -2.982,
+      "py": -0.92
     },
     {
       "id": "biosidus-ar",
@@ -11363,7 +12431,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -9.753,
-      "sy": -10.259
+      "sy": -10.259,
+      "mscale": 1,
+      "mpar": 1.0,
+      "px": -13.368,
+      "py": -9.3
     },
     {
       "id": "by_my_cell",
@@ -11402,7 +12474,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -11.584,
-      "sy": -6.009
+      "sy": -6.009,
+      "mscale": 1,
+      "mpar": 2.0,
+      "px": -12.054,
+      "py": 0.864
     },
     {
       "id": "isla_pharmaceuticals",
@@ -11441,7 +12517,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -9.758,
-      "sy": -10.162
+      "sy": -10.162,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -1.041,
+      "py": 0.23
     },
     {
       "id": "mabxience-ar",
@@ -11480,7 +12560,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -9.776,
-      "sy": -10.284
+      "sy": -10.284,
+      "mscale": 1,
+      "mpar": 2.0,
+      "px": -11.298,
+      "py": 0.856
     },
     {
       "id": "neocell",
@@ -11529,7 +12613,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -11.622,
-      "sy": -6.201
+      "sy": -6.201,
+      "mscale": 1,
+      "mpar": 1.5,
+      "px": -12.462,
+      "py": -4.118
     },
     {
       "id": "panarum",
@@ -11568,7 +12656,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -9.71,
-      "sy": -10.139
+      "sy": -10.139,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -3.027,
+      "py": 0.146
     },
     {
       "id": "recepta_biopharma",
@@ -11607,7 +12699,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 15.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -9.734,
-      "sy": -10.17
+      "sy": -10.17,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -3.204,
+      "py": 0.524
     },
     {
       "id": "vaxinz",
@@ -11646,7 +12742,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -9.805,
-      "sy": -10.133
+      "sy": -10.133,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -1.266,
+      "py": -0.482
     },
     {
       "id": "wayakit",
@@ -11685,7 +12785,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -8.276,
-      "sy": 0.932
+      "sy": 0.932,
+      "mscale": 3,
+      "mpar": 1.0,
+      "px": -0.927,
+      "py": -8.428
     },
     {
       "id": "branch_energy",
@@ -11732,7 +12836,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 0.193,
-      "sy": 9.561
+      "sy": 9.561,
+      "mscale": 3,
+      "mpar": 3.0,
+      "px": -1.593,
+      "py": 8.46
     },
     {
       "id": "earth-ocean-farms-mx",
@@ -11771,7 +12879,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": 0.207,
-      "sy": 9.486
+      "sy": 9.486,
+      "mscale": 5,
+      "mpar": 2.0,
+      "px": 8.13,
+      "py": 0.862
     },
     {
       "id": "gigablue",
@@ -11816,7 +12928,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 0.211,
-      "sy": 9.533
+      "sy": 9.533,
+      "mscale": 6,
+      "mpar": 3.0,
+      "px": 11.082,
+      "py": 8.79
     },
     {
       "id": "huiro",
@@ -11859,7 +12975,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 0.207,
-      "sy": 9.538
+      "sy": 9.538,
+      "mscale": 6,
+      "mpar": 2.0,
+      "px": 12.6,
+      "py": 0.272
     },
     {
       "id": "kigui",
@@ -11904,7 +13024,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 0.001,
-      "sy": 9.46
+      "sy": 9.46,
+      "mscale": 6,
+      "mpar": 3.0,
+      "px": 11.109,
+      "py": 8.272
     },
     {
       "id": "nilus",
@@ -11950,7 +13074,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -1.611,
-      "sy": 9.81
+      "sy": 9.81,
+      "mscale": 6,
+      "mpar": 3.0,
+      "px": 11.748,
+      "py": 8.63
     },
     {
       "id": "poas_bioenergy",
@@ -11997,7 +13125,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 0.203,
-      "sy": 9.566
+      "sy": 9.566,
+      "mscale": 6,
+      "mpar": 3.0,
+      "px": 13.386,
+      "py": 8.942
     },
     {
       "id": "ruuts",
@@ -12042,7 +13174,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 0.212,
-      "sy": 9.249
+      "sy": 9.249,
+      "mscale": 4,
+      "mpar": 3.0,
+      "px": 3.573,
+      "py": 8.232
     },
     {
       "id": "solfium",
@@ -12087,7 +13223,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 0.212,
-      "sy": 9.569
+      "sy": 9.569,
+      "mscale": 6,
+      "mpar": 3.0,
+      "px": 12.105,
+      "py": 9.988
     },
     {
       "id": "splight",
@@ -12133,7 +13273,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 0.206,
-      "sy": 9.556
+      "sy": 9.556,
+      "mscale": 6,
+      "mpar": 3.0,
+      "px": 10.965,
+      "py": 8.064
     },
     {
       "id": "advanced_biocontrollers",
@@ -12172,7 +13316,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.548,
-      "sy": 6.828
+      "sy": 6.828,
+      "mscale": 5,
+      "mpar": 1.0,
+      "px": 6.207,
+      "py": -9.378
     },
     {
       "id": "agrorganica",
@@ -12211,7 +13359,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 25.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.511,
-      "sy": 6.811
+      "sy": 6.811,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -2.586,
+      "py": 0.982
     },
     {
       "id": "agrosustain-mx",
@@ -12254,7 +13406,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -6.748,
-      "sy": 6.949
+      "sy": 6.949,
+      "mscale": 5,
+      "mpar": 1.57,
+      "px": 6.066,
+      "py": -3.826
     },
     {
       "id": "bio-insumos-nativa-cl",
@@ -12293,7 +13449,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -6.512,
-      "sy": 6.81
+      "sy": 6.81,
+      "mscale": 5,
+      "mpar": 1.0,
+      "px": 7.269,
+      "py": -9.136
     },
     {
       "id": "biofabrica-siglo-xxi-mx",
@@ -12336,7 +13496,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -6.673,
-      "sy": 6.903
+      "sy": 6.903,
+      "mscale": 2,
+      "mpar": 1.57,
+      "px": -7.479,
+      "py": -3.496
     },
     {
       "id": "clearleaf",
@@ -12375,7 +13539,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 15.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.522,
-      "sy": 6.83
+      "sy": 6.83,
+      "mscale": 3,
+      "mpar": 1.0,
+      "px": -2.55,
+      "py": -9.784
     },
     {
       "id": "ecosativa",
@@ -12414,7 +13582,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.789,
-      "sy": 6.996
+      "sy": 6.996,
+      "mscale": 5,
+      "mpar": 2.0,
+      "px": 6.387,
+      "py": 0.99
     },
     {
       "id": "exacta-bioscience-cl",
@@ -12453,7 +13625,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -6.449,
-      "sy": 6.766
+      "sy": 6.766,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -0.936,
+      "py": 0.39
     },
     {
       "id": "ictiobiotic",
@@ -12492,7 +13668,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.074,
-      "sy": 6.442
+      "sy": 6.442,
+      "mscale": 4,
+      "mpar": 2.0,
+      "px": 2.532,
+      "py": -0.196
     },
     {
       "id": "microendo",
@@ -12531,7 +13711,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.491,
-      "sy": 6.8
+      "sy": 6.8,
+      "mscale": 2,
+      "mpar": 1.0,
+      "px": -8.229,
+      "py": -9.606
     },
     {
       "id": "novalact",
@@ -12570,7 +13754,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.415,
-      "sy": 6.743
+      "sy": 6.743,
+      "mscale": 5,
+      "mpar": 2.0,
+      "px": 6.957,
+      "py": 0.95
     },
     {
       "id": "patagonia-biotechnology-cl",
@@ -12609,7 +13797,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -6.55,
-      "sy": 6.828
+      "sy": 6.828,
+      "mscale": 5,
+      "mpar": 1.0,
+      "px": 7.668,
+      "py": -9.136
     },
     {
       "id": "rizoflora_biotechnology_acq_by_stoller",
@@ -12648,7 +13840,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 5.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.534,
-      "sy": 6.84
+      "sy": 6.84,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -2.991,
+      "py": 0.044
     },
     {
       "id": "solena-mx",
@@ -12687,7 +13883,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -6.489,
-      "sy": 6.796
+      "sy": 6.796,
+      "mscale": 5,
+      "mpar": 1.0,
+      "px": 6.705,
+      "py": -8.776
     },
     {
       "id": "arakion",
@@ -12731,7 +13931,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -6.864,
-      "sy": 7.002
+      "sy": 7.002,
+      "mscale": 5,
+      "mpar": 2.0,
+      "px": 8.547,
+      "py": -0.702
     },
     {
       "id": "caligenia",
@@ -12778,7 +13982,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.904,
-      "sy": 7.095
+      "sy": 7.095,
+      "mscale": 2,
+      "mpar": 2.0,
+      "px": -7.482,
+      "py": -0.206
     },
     {
       "id": "inbioar",
@@ -12822,7 +14030,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.871,
-      "sy": 7.096
+      "sy": 7.096,
+      "mscale": 5,
+      "mpar": 1.57,
+      "px": 8.28,
+      "py": -3.616
     },
     {
       "id": "infira",
@@ -12869,7 +14081,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.972,
-      "sy": 7.039
+      "sy": 7.039,
+      "mscale": 5,
+      "mpar": 2.0,
+      "px": 6.372,
+      "py": -0.456
     },
     {
       "id": "neocrop-technologies",
@@ -12916,7 +14132,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -6.887,
-      "sy": 7.116
+      "sy": 7.116,
+      "mscale": 1,
+      "mpar": 2.0,
+      "px": -13.251,
+      "py": -0.774
     },
     {
       "id": "nunatak_biotech",
@@ -12962,7 +14182,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -6.857,
-      "sy": 7.163
+      "sy": 7.163,
+      "mscale": 2,
+      "mpar": 2.0,
+      "px": -8.409,
+      "py": 0.918
     },
     {
       "id": "puna_bio",
@@ -13008,7 +14232,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 15.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.861,
-      "sy": 7.147
+      "sy": 7.147,
+      "mscale": 5,
+      "mpar": 1.57,
+      "px": 5.934,
+      "py": -4.678
     },
     {
       "id": "qumir_nano",
@@ -13056,7 +14284,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.868,
-      "sy": 7.1
+      "sy": 7.1,
+      "mscale": 1,
+      "mpar": 1.5,
+      "px": -11.808,
+      "py": -4.622
     },
     {
       "id": "soygreen",
@@ -13100,7 +14332,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -6.893,
-      "sy": 7.093
+      "sy": 7.093,
+      "mscale": 5,
+      "mpar": 1.0,
+      "px": 6.408,
+      "py": -9.936
     },
     {
       "id": "sylvarum",
@@ -13147,7 +14383,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.945,
-      "sy": 7.024
+      "sy": 7.024,
+      "mscale": 5,
+      "mpar": 2.0,
+      "px": 8.385,
+      "py": -0.806
     },
     {
       "id": "zavia_bio",
@@ -13194,7 +14434,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.879,
-      "sy": 7.075
+      "sy": 7.075,
+      "mscale": 1,
+      "mpar": 1.89,
+      "px": -11.847,
+      "py": -1.632
     },
     {
       "id": "beam_croptech",
@@ -13239,7 +14483,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -7.012,
-      "sy": 6.885
+      "sy": 6.885,
+      "mscale": 1,
+      "mpar": 1.0,
+      "px": -12.75,
+      "py": -9.202
     },
     {
       "id": "bioceres_sa",
@@ -13278,7 +14526,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 500.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.944,
-      "sy": 6.996
+      "sy": 6.996,
+      "mscale": 5,
+      "mpar": 1.0,
+      "px": 6.594,
+      "py": -8.972
     },
     {
       "id": "bioheuris",
@@ -13322,7 +14574,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 15.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -7.019,
-      "sy": 6.835
+      "sy": 6.835,
+      "mscale": 1,
+      "mpar": 1.0,
+      "px": -13.395,
+      "py": -8.762
     },
     {
       "id": "bsafe_biotech",
@@ -13367,7 +14623,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.99,
-      "sy": 6.867
+      "sy": 6.867,
+      "mscale": 5,
+      "mpar": 1.0,
+      "px": 6.066,
+      "py": -9.114
     },
     {
       "id": "calice_biotech",
@@ -13406,7 +14666,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.992,
-      "sy": 6.738
+      "sy": 6.738,
+      "mscale": 1,
+      "mpar": 2.0,
+      "px": -11.961,
+      "py": 0.754
     },
     {
       "id": "dioxd",
@@ -13445,7 +14709,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -7.012,
-      "sy": 6.865
+      "sy": 6.865,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -3.075,
+      "py": 0.272
     },
     {
       "id": "eiru",
@@ -13488,7 +14756,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 10.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -7.025,
-      "sy": 6.906
+      "sy": 6.906,
+      "mscale": 5,
+      "mpar": 1.0,
+      "px": 8.328,
+      "py": -8.12
     },
     {
       "id": "feedvax",
@@ -13534,7 +14806,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.206,
-      "sy": 6.271
+      "sy": 6.271,
+      "mscale": 5,
+      "mpar": 3.0,
+      "px": 7.491,
+      "py": 9.496
     },
     {
       "id": "hapiseeds-br",
@@ -13573,7 +14849,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -7.014,
-      "sy": 6.767
+      "sy": 6.767,
+      "mscale": 1,
+      "mpar": 2.0,
+      "px": -11.034,
+      "py": -0.838
     },
     {
       "id": "inedita-bio-br",
@@ -13612,7 +14892,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 10.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.998,
-      "sy": 6.73
+      "sy": 6.73,
+      "mscale": 1,
+      "mpar": 2.0,
+      "px": -12.204,
+      "py": -0.844
     },
     {
       "id": "kaiima",
@@ -13651,7 +14935,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 100.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.991,
-      "sy": 6.749
+      "sy": 6.749,
+      "mscale": 1,
+      "mpar": 2.0,
+      "px": -11.745,
+      "py": 0.92
     },
     {
       "id": "m4life",
@@ -13694,7 +14982,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -6.978,
-      "sy": 6.878
+      "sy": 6.878,
+      "mscale": 5,
+      "mpar": 3.0,
+      "px": 8.526,
+      "py": 9.404
     },
     {
       "id": "semion",
@@ -13735,7 +15027,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -6.99,
-      "sy": 6.885
+      "sy": 6.885,
+      "mscale": 1,
+      "mpar": 2.0,
+      "px": -10.845,
+      "py": 0.186
     },
     {
       "id": "syocin-biotech",
@@ -13785,7 +15081,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.83,
-      "sy": 6.95
+      "sy": 6.95,
+      "mscale": 1,
+      "mpar": 1.33,
+      "px": -13.497,
+      "py": -6.752
     },
     {
       "id": "unibaio",
@@ -13829,7 +15129,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -7.036,
-      "sy": 6.913
+      "sy": 6.913,
+      "mscale": 5,
+      "mpar": 1.0,
+      "px": 5.997,
+      "py": -9.306
     },
     {
       "id": "algalife",
@@ -13874,7 +15178,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -10.042,
-      "sy": -9.287
+      "sy": -9.287,
+      "mscale": 2,
+      "mpar": 2.0,
+      "px": -7.248,
+      "py": -0.152
     },
     {
       "id": "alytix",
@@ -13922,7 +15230,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 10.381,
-      "sy": -9.384
+      "sy": -9.384,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -2.22,
+      "py": 0.638
     },
     {
       "id": "amplify-dynamics",
@@ -13972,7 +15284,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -8.945,
-      "sy": -12.033
+      "sy": -12.033,
+      "mscale": 1,
+      "mpar": 1.44,
+      "px": -12.99,
+      "py": -5.868
     },
     {
       "id": "antarka",
@@ -14022,7 +15338,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -7.697,
-      "sy": -1.02
+      "sy": -1.02,
+      "mscale": 1,
+      "mpar": 1.0,
+      "px": -12.063,
+      "py": -9.886
     },
     {
       "id": "argentag",
@@ -14070,7 +15390,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 10.241,
-      "sy": -9.276
+      "sy": -9.276,
+      "mscale": 1,
+      "mpar": 2.33,
+      "px": -12.594,
+      "py": 2.036
     },
     {
       "id": "avatar_medtech",
@@ -14117,7 +15441,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 10.202,
-      "sy": -9.446
+      "sy": -9.446,
+      "mscale": 3,
+      "mpar": 1.0,
+      "px": -3.057,
+      "py": -9.95
     },
     {
       "id": "baxxis-medtech-cl",
@@ -14159,7 +15487,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 10.146,
-      "sy": -9.418
+      "sy": -9.418,
+      "mscale": 6,
+      "mpar": 3.0,
+      "px": 11.514,
+      "py": 9.52
     },
     {
       "id": "biosynaptica",
@@ -14204,7 +15536,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -9.478,
-      "sy": -11.433
+      "sy": -11.433,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -0.954,
+      "py": -0.324
     },
     {
       "id": "biotalife",
@@ -14253,7 +15589,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 10.567,
-      "sy": -9.648
+      "sy": -9.648,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -2.061,
+      "py": -0.688
     },
     {
       "id": "botanical-solutions",
@@ -14300,7 +15640,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 25.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -7.582,
-      "sy": 3.626
+      "sy": 3.626,
+      "mscale": 5,
+      "mpar": 1.5,
+      "px": 7.695,
+      "py": -5.41
     },
     {
       "id": "cellter-cl",
@@ -14339,7 +15683,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": 10.355,
-      "sy": -9.347
+      "sy": -9.347,
+      "mscale": 1,
+      "mpar": 2.0,
+      "px": -12.06,
+      "py": -0.384
     },
     {
       "id": "cryosmetics",
@@ -14390,7 +15738,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -7.647,
-      "sy": -1.108
+      "sy": -1.108,
+      "mscale": 3,
+      "mpar": 1.5,
+      "px": -3.282,
+      "py": -3.67
     },
     {
       "id": "cytbac",
@@ -14438,7 +15790,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -9.583,
-      "sy": -11.224
+      "sy": -11.224,
+      "mscale": 1,
+      "mpar": 2.33,
+      "px": -11.355,
+      "py": 3.83
     },
     {
       "id": "delee",
@@ -14483,7 +15839,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 10.43,
-      "sy": -9.546
+      "sy": -9.546,
+      "mscale": 3,
+      "mpar": 3.0,
+      "px": -2.127,
+      "py": 8.952
     },
     {
       "id": "epiliquid",
@@ -14529,7 +15889,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 10.332,
-      "sy": -9.516
+      "sy": -9.516,
+      "mscale": 1,
+      "mpar": 3.0,
+      "px": -11.004,
+      "py": 8.006
     },
     {
       "id": "galtec",
@@ -14574,7 +15938,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -9.71,
-      "sy": -11.285
+      "sy": -11.285,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -1.053,
+      "py": -0.208
     },
     {
       "id": "gameet",
@@ -14619,7 +15987,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 10.232,
-      "sy": -9.439
+      "sy": -9.439,
+      "mscale": 3,
+      "mpar": 3.0,
+      "px": -3.555,
+      "py": 8.062
     },
     {
       "id": "genotyping",
@@ -14666,7 +16038,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 10.991,
-      "sy": -10.187
+      "sy": -10.187,
+      "mscale": 1,
+      "mpar": 3.0,
+      "px": -13.5,
+      "py": 9.666
     },
     {
       "id": "hybridon",
@@ -14714,7 +16090,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -7.713,
-      "sy": -0.914
+      "sy": -0.914,
+      "mscale": 1,
+      "mpar": 1.8,
+      "px": -10.677,
+      "py": -1.06
     },
     {
       "id": "imvalv",
@@ -14760,7 +16140,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 10.189,
-      "sy": -9.453
+      "sy": -9.453,
+      "mscale": 3,
+      "mpar": 3.0,
+      "px": -3.585,
+      "py": 9.648
     },
     {
       "id": "inmunova-ar",
@@ -14799,7 +16183,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -9.765,
-      "sy": -11.052
+      "sy": -11.052,
+      "mscale": 1,
+      "mpar": 2.0,
+      "px": -13.362,
+      "py": -0.674
     },
     {
       "id": "inner_cosmos",
@@ -14845,7 +16233,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 10.467,
-      "sy": -9.57
+      "sy": -9.57,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -1.287,
+      "py": -0.208
     },
     {
       "id": "lipock",
@@ -14895,7 +16287,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -9.031,
-      "sy": -11.929
+      "sy": -11.929,
+      "mscale": 3,
+      "mpar": 1.5,
+      "px": -2.46,
+      "py": -4.874
     },
     {
       "id": "magnamed",
@@ -14940,7 +16336,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 10.613,
-      "sy": -9.71
+      "sy": -9.71,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -1.323,
+      "py": 0.044
     },
     {
       "id": "merken-biotech-cl",
@@ -14979,7 +16379,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -9.631,
-      "sy": -11.104
+      "sy": -11.104,
+      "mscale": 2,
+      "mpar": 2.0,
+      "px": -7.275,
+      "py": -0.646
     },
     {
       "id": "mesenchyal_t",
@@ -15024,7 +16428,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -10.428,
-      "sy": -10.7
+      "sy": -10.7,
+      "mscale": 2,
+      "mpar": 2.0,
+      "px": -6.945,
+      "py": 0.332
     },
     {
       "id": "metabix-biotech",
@@ -15073,7 +16481,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 10.557,
-      "sy": -9.622
+      "sy": -9.622,
+      "mscale": 3,
+      "mpar": 3.0,
+      "px": -3.009,
+      "py": 9.108
     },
     {
       "id": "migma",
@@ -15122,7 +16534,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -0.642,
-      "sy": 0.051
+      "sy": 0.051,
+      "mscale": 3,
+      "mpar": 1.67,
+      "px": -0.99,
+      "py": -3.916
     },
     {
       "id": "nanoprox",
@@ -15172,7 +16588,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -8.932,
-      "sy": -12.06
+      "sy": -12.06,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -2.568,
+      "py": -0.334
     },
     {
       "id": "pepton",
@@ -15218,7 +16638,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -9.486,
-      "sy": -11.343
+      "sy": -11.343,
+      "mscale": 3,
+      "mpar": 1.67,
+      "px": -2.745,
+      "py": -2.986
     },
     {
       "id": "phagelab",
@@ -15269,7 +16693,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 100.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 10.394,
-      "sy": -9.362
+      "sy": -9.362,
+      "mscale": 5,
+      "mpar": 2.33,
+      "px": 7.356,
+      "py": 3.306
     },
     {
       "id": "phylumtech",
@@ -15317,7 +16745,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -9.822,
-      "sy": -11.295
+      "sy": -11.295,
+      "mscale": 1,
+      "mpar": 2.6,
+      "px": -13.437,
+      "py": 6.302
     },
     {
       "id": "pill_ar",
@@ -15366,7 +16798,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 10.298,
-      "sy": -9.486
+      "sy": -9.486,
+      "mscale": 3,
+      "mpar": 1.67,
+      "px": -1.77,
+      "py": -3.32
     },
     {
       "id": "plamic",
@@ -15416,7 +16852,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -9.148,
-      "sy": -11.829
+      "sy": -11.829,
+      "mscale": 6,
+      "mpar": 1.4,
+      "px": 13.053,
+      "py": -5.22
     },
     {
       "id": "plamic_biotech",
@@ -15464,7 +16904,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -9.806,
-      "sy": -11.301
+      "sy": -11.301,
+      "mscale": 3,
+      "mpar": 1.67,
+      "px": -2.391,
+      "py": -3.304
     },
     {
       "id": "radbio",
@@ -15512,7 +16956,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -9.395,
-      "sy": -11.545
+      "sy": -11.545,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -3.456,
+      "py": -0.55
     },
     {
       "id": "resistia",
@@ -15559,7 +17007,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -9.693,
-      "sy": -11.218
+      "sy": -11.218,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -2.232,
+      "py": -0.442
     },
     {
       "id": "sciphage",
@@ -15608,7 +17060,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 10.697,
-      "sy": -9.799
+      "sy": -9.799,
+      "mscale": 3,
+      "mpar": 2.33,
+      "px": -2.259,
+      "py": 3.306
     },
     {
       "id": "tensor-care",
@@ -15654,7 +17110,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 10.165,
-      "sy": -9.43
+      "sy": -9.43,
+      "mscale": 3,
+      "mpar": 3.0,
+      "px": -3.654,
+      "py": 8.354
     },
     {
       "id": "untech",
@@ -15701,7 +17161,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 10.457,
-      "sy": -9.558
+      "sy": -9.558,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -2.838,
+      "py": -0.642
     },
     {
       "id": "viewmind",
@@ -15747,7 +17211,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 10.582,
-      "sy": -9.681
+      "sy": -9.681,
+      "mscale": 3,
+      "mpar": 1.0,
+      "px": -3.801,
+      "py": -8.044
     },
     {
       "id": "xeptiva",
@@ -15794,7 +17262,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -10.088,
-      "sy": -10.703
+      "sy": -10.703,
+      "mscale": 3,
+      "mpar": 2.33,
+      "px": -1.944,
+      "py": 1.97
     },
     {
       "id": "agronow-br",
@@ -15833,7 +17305,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 9.205,
-      "sy": 10.284
+      "sy": 10.284,
+      "mscale": 5,
+      "mpar": 2.0,
+      "px": 6.714,
+      "py": 0.202
     },
     {
       "id": "calice",
@@ -15879,7 +17355,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 9.061,
-      "sy": 10.161
+      "sy": 10.161,
+      "mscale": 5,
+      "mpar": 3.0,
+      "px": 7.893,
+      "py": 8.802
     },
     {
       "id": "calice-ai-ar",
@@ -15921,7 +17401,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 9.059,
-      "sy": 10.202
+      "sy": 10.202,
+      "mscale": 5,
+      "mpar": 3.0,
+      "px": 5.832,
+      "py": 9.482
     },
     {
       "id": "cowmed-br",
@@ -15960,7 +17444,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 9.159,
-      "sy": 10.24
+      "sy": 10.24,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -1.113,
+      "py": -0.416
     },
     {
       "id": "deepagro",
@@ -16005,7 +17493,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 9.316,
-      "sy": 10.448
+      "sy": 10.448,
+      "mscale": 5,
+      "mpar": 3.0,
+      "px": 6.123,
+      "py": 8.584
     },
     {
       "id": "digifarmz-br",
@@ -16044,7 +17536,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 9.187,
-      "sy": 10.263
+      "sy": 10.263,
+      "mscale": 5,
+      "mpar": 2.0,
+      "px": 6.693,
+      "py": 0.25
     },
     {
       "id": "dymaxion_labs",
@@ -16088,7 +17584,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 9.031,
-      "sy": 10.141
+      "sy": 10.141,
+      "mscale": 5,
+      "mpar": 3.0,
+      "px": 7.548,
+      "py": 8.248
     },
     {
       "id": "eiwa",
@@ -16132,7 +17632,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 10.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 9.053,
-      "sy": 10.16
+      "sy": 10.16,
+      "mscale": 5,
+      "mpar": 3.0,
+      "px": 7.53,
+      "py": 9.114
     },
     {
       "id": "inspectral-br",
@@ -16171,7 +17675,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -1.867,
-      "sy": 9.067
+      "sy": 9.067,
+      "mscale": 5,
+      "mpar": 2.0,
+      "px": 7.392,
+      "py": -0.762
     },
     {
       "id": "instacrops-cl",
@@ -16210,7 +17718,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 9.247,
-      "sy": 10.302
+      "sy": 10.302,
+      "mscale": 5,
+      "mpar": 2.0,
+      "px": 7.044,
+      "py": 0.534
     },
     {
       "id": "jetbov",
@@ -16255,7 +17767,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 9.149,
-      "sy": 10.228
+      "sy": 10.228,
+      "mscale": 5,
+      "mpar": 3.0,
+      "px": 6.726,
+      "py": 9.158
     },
     {
       "id": "olho_do_dono",
@@ -16294,7 +17810,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 15.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 9.108,
-      "sy": 10.192
+      "sy": 10.192,
+      "mscale": 3,
+      "mpar": 2.0,
+      "px": -1.107,
+      "py": 0.894
     },
     {
       "id": "precision_ag",
@@ -16339,7 +17859,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -1.834,
-      "sy": 9.039
+      "sy": 9.039,
+      "mscale": 5,
+      "mpar": 3.0,
+      "px": 5.862,
+      "py": 9.278
     },
     {
       "id": "silohub",
@@ -16382,7 +17906,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": 9.064,
-      "sy": 10.161
+      "sy": 10.161,
+      "mscale": 5,
+      "mpar": 3.0,
+      "px": 6.378,
+      "py": 8.15
     },
     {
       "id": "sima",
@@ -16425,7 +17953,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 9.147,
-      "sy": 10.226
+      "sy": 10.226,
+      "mscale": 5,
+      "mpar": 3.0,
+      "px": 6.228,
+      "py": 9.924
     },
     {
       "id": "sioma",
@@ -16469,7 +18001,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 9.054,
-      "sy": 10.161
+      "sy": 10.161,
+      "mscale": 5,
+      "mpar": 3.0,
+      "px": 7.2,
+      "py": 9.774
     },
     {
       "id": "smartbreeder",
@@ -16513,7 +18049,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 9.186,
-      "sy": 10.262
+      "sy": 10.262,
+      "mscale": 5,
+      "mpar": 3.0,
+      "px": 6.621,
+      "py": 9.414
     },
     {
       "id": "spaceag",
@@ -16557,7 +18097,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 9.109,
-      "sy": 10.191
+      "sy": 10.191,
+      "mscale": 5,
+      "mpar": 3.0,
+      "px": 5.934,
+      "py": 9.6
     },
     {
       "id": "strider-br",
@@ -16596,7 +18140,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 9.095,
-      "sy": 10.17
+      "sy": 10.17,
+      "mscale": 3,
+      "mpar": 3.0,
+      "px": -2.727,
+      "py": 8.428
     },
     {
       "id": "tarvos-br",
@@ -16638,7 +18186,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": 9.213,
-      "sy": 10.378
+      "sy": 10.378,
+      "mscale": 5,
+      "mpar": 3.0,
+      "px": 7.428,
+      "py": 8.822
     },
     {
       "id": "tech",
@@ -16683,7 +18235,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 9.035,
-      "sy": 10.15
+      "sy": 10.15,
+      "mscale": 5,
+      "mpar": 3.0,
+      "px": 7.794,
+      "py": 9.822
     },
     {
       "id": "wiseconn-cl",
@@ -16722,7 +18278,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 9.257,
-      "sy": 10.324
+      "sy": 10.324,
+      "mscale": 5,
+      "mpar": 3.0,
+      "px": 8.496,
+      "py": 8.698
     },
     {
       "id": "zoomagri",
@@ -16766,7 +18326,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 9.0,
-      "sy": 10.138
+      "sy": 10.138,
+      "mscale": 5,
+      "mpar": 3.0,
+      "px": 7.032,
+      "py": 9.54
     },
     {
       "id": "ages",
@@ -16815,7 +18379,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -6.964,
-      "sy": -1.988
+      "sy": -1.988,
+      "mscale": 6,
+      "mpar": 1.67,
+      "px": 12.738,
+      "py": -3.918
     },
     {
       "id": "biolinker",
@@ -16865,7 +18433,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -10.289,
-      "sy": -8.874
+      "sy": -8.874,
+      "mscale": 1,
+      "mpar": 1.57,
+      "px": -13.479,
+      "py": -3.806
     },
     {
       "id": "future_cow",
@@ -16913,7 +18485,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -0.03,
-      "sy": -0.981
+      "sy": -0.981,
+      "mscale": 2,
+      "mpar": 1.67,
+      "px": -8.073,
+      "py": -2.21
     },
     {
       "id": "harmony-biosciences",
@@ -16960,7 +18536,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 25.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -0.127,
-      "sy": -0.722
+      "sy": -0.722,
+      "mscale": 2,
+      "mpar": 1.67,
+      "px": -7.971,
+      "py": -2.662
     },
     {
       "id": "heartbest",
@@ -17007,7 +18587,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -0.222,
-      "sy": -0.567
+      "sy": -0.567,
+      "mscale": 4,
+      "mpar": 1.0,
+      "px": 3.393,
+      "py": -9.246
     },
     {
       "id": "imeve",
@@ -17057,7 +18641,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -7.549,
-      "sy": 3.573
+      "sy": 3.573,
+      "mscale": 2,
+      "mpar": 1.0,
+      "px": -5.73,
+      "py": -9.956
     },
     {
       "id": "inprenha",
@@ -17102,7 +18690,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -7.421,
-      "sy": 3.377
+      "sy": 3.377,
+      "mscale": 5,
+      "mpar": 3.0,
+      "px": 6.993,
+      "py": 9.834
     },
     {
       "id": "nexxto",
@@ -17149,7 +18741,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -1.789,
-      "sy": 10.007
+      "sy": 10.007,
+      "mscale": 2,
+      "mpar": 3.0,
+      "px": -6.132,
+      "py": 9.53
     },
     {
       "id": "nude",
@@ -17194,7 +18790,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 0.124,
-      "sy": -1.444
+      "sy": -1.444,
+      "mscale": 4,
+      "mpar": 1.0,
+      "px": 3.363,
+      "py": -8.816
     },
     {
       "id": "qnity",
@@ -17240,7 +18840,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -8.889,
-      "sy": -12.122
+      "sy": -12.122,
+      "mscale": 1,
+      "mpar": 2.33,
+      "px": -13.212,
+      "py": 2.206
     },
     {
       "id": "speclab",
@@ -17287,7 +18891,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 10.856,
-      "sy": -10.013
+      "sy": -10.013,
+      "mscale": 3,
+      "mpar": 2.5,
+      "px": -2.61,
+      "py": 5.422
     },
     {
       "id": "updairy",
@@ -17335,7 +18943,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -0.048,
-      "sy": -0.895
+      "sy": -0.895,
+      "mscale": 2,
+      "mpar": 1.0,
+      "px": -6.981,
+      "py": -9.572
     },
     {
       "id": "agrion-agrisolutions-br",
@@ -17374,7 +18986,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -7.119,
-      "sy": 3.072
+      "sy": 3.072,
+      "mscale": 5,
+      "mpar": 1.0,
+      "px": 8.091,
+      "py": -8.062
     },
     {
       "id": "agrivalle",
@@ -17422,7 +19038,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -7.141,
-      "sy": 3.088
+      "sy": 3.088,
+      "mscale": 2,
+      "mpar": 1.0,
+      "px": -6.42,
+      "py": -8.894
     },
     {
       "id": "biocentis-br",
@@ -17461,7 +19081,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -6.909,
-      "sy": 6.991
+      "sy": 6.991,
+      "mscale": 5,
+      "mpar": 2.0,
+      "px": 8.604,
+      "py": -0.472
     },
     {
       "id": "bioin-br",
@@ -17503,7 +19127,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -7.274,
-      "sy": 2.043
+      "sy": 2.043,
+      "mscale": 5,
+      "mpar": 2.25,
+      "px": 6.846,
+      "py": 1.73
     },
     {
       "id": "biotrop-br",
@@ -17542,7 +19170,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -7.083,
-      "sy": 3.061
+      "sy": 3.061,
+      "mscale": 5,
+      "mpar": 1.0,
+      "px": 8.247,
+      "py": -8.342
     },
     {
       "id": "bug_agentes_biologicos",
@@ -17585,7 +19217,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -7.073,
-      "sy": 3.041
+      "sy": 3.041,
+      "mscale": 5,
+      "mpar": 1.0,
+      "px": 7.632,
+      "py": -8.99
     },
     {
       "id": "decoy",
@@ -17628,7 +19264,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -7.091,
-      "sy": 3.055
+      "sy": 3.055,
+      "mscale": 5,
+      "mpar": 1.0,
+      "px": 6.108,
+      "py": -9.672
     },
     {
       "id": "decoy-smart-control-br",
@@ -17667,7 +19307,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 10.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -7.071,
-      "sy": 3.036
+      "sy": 3.036,
+      "mscale": 5,
+      "mpar": 1.0,
+      "px": 6.441,
+      "py": -9.03
     },
     {
       "id": "frizata",
@@ -17713,7 +19357,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 0.297,
-      "sy": -1.802
+      "sy": -1.802,
+      "mscale": 4,
+      "mpar": 2.0,
+      "px": 1.113,
+      "py": -0.08
     },
     {
       "id": "genica",
@@ -17761,7 +19409,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 25.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -7.252,
-      "sy": 3.185
+      "sy": 3.185,
+      "mscale": 5,
+      "mpar": 2.0,
+      "px": 7.299,
+      "py": -0.646
     },
     {
       "id": "ideelab",
@@ -17811,7 +19463,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -7.285,
-      "sy": 3.214
+      "sy": 3.214,
+      "mscale": 2,
+      "mpar": 1.33,
+      "px": -7.122,
+      "py": -5.31
     },
     {
       "id": "krilltech",
@@ -17856,7 +19512,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -7.229,
-      "sy": 3.136
+      "sy": 3.136,
+      "mscale": 5,
+      "mpar": 1.57,
+      "px": 8.235,
+      "py": -3.328
     },
     {
       "id": "nocarbon_milk",
@@ -17899,7 +19559,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": 0.338,
-      "sy": -1.756
+      "sy": -1.756,
+      "mscale": 4,
+      "mpar": 2.0,
+      "px": 2.397,
+      "py": 0.388
     },
     {
       "id": "promip",
@@ -17943,7 +19607,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 25.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -7.141,
-      "sy": 3.103
+      "sy": 3.103,
+      "mscale": 5,
+      "mpar": 1.0,
+      "px": 8.625,
+      "py": -8.102
     },
     {
       "id": "solubio",
@@ -17988,7 +19656,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -7.191,
-      "sy": 3.085
+      "sy": 3.085,
+      "mscale": 5,
+      "mpar": 1.57,
+      "px": 7.749,
+      "py": -4.354
     },
     {
       "id": "symbiomics",
@@ -18036,7 +19708,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 10.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -7.36,
-      "sy": 3.332
+      "sy": 3.332,
+      "mscale": 1,
+      "mpar": 1.8,
+      "px": -11.355,
+      "py": -1.396
     },
     {
       "id": "vitales-br",
@@ -18075,7 +19751,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -7.091,
-      "sy": 3.048
+      "sy": 3.048,
+      "mscale": 5,
+      "mpar": 2.0,
+      "px": 6.117,
+      "py": -1.0
     },
     {
       "id": "biodiversity_intelligence",
@@ -18120,7 +19800,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 0.03,
-      "sy": 9.182
+      "sy": 9.182,
+      "mscale": 6,
+      "mpar": 3.0,
+      "px": 12.111,
+      "py": 9.092
     },
     {
       "id": "innova_space",
@@ -18167,7 +19851,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -0.067,
-      "sy": 9.14
+      "sy": 9.14,
+      "mscale": 6,
+      "mpar": 3.0,
+      "px": 13.395,
+      "py": 9.382
     },
     {
       "id": "lemu",
@@ -18214,7 +19902,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 10.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -0.002,
-      "sy": 9.177
+      "sy": 9.177,
+      "mscale": 6,
+      "mpar": 3.0,
+      "px": 13.179,
+      "py": 8.7
     },
     {
       "id": "odd_industries",
@@ -18253,7 +19945,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 15.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -0.024,
-      "sy": 9.14
+      "sy": 9.14,
+      "mscale": 6,
+      "mpar": 2.0,
+      "px": 10.641,
+      "py": -0.784
     },
     {
       "id": "satellites_on_fire",
@@ -18298,7 +19994,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 25.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -0.023,
-      "sy": 9.119
+      "sy": 9.119,
+      "mscale": 6,
+      "mpar": 3.0,
+      "px": 12.234,
+      "py": 8.374
     },
     {
       "id": "satellogic",
@@ -18343,7 +20043,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 100.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -0.029,
-      "sy": 9.116
+      "sy": 9.116,
+      "mscale": 6,
+      "mpar": 3.0,
+      "px": 11.358,
+      "py": 9.672
     },
     {
       "id": "treevia-br",
@@ -18386,7 +20090,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -0.018,
-      "sy": 9.182
+      "sy": 9.182,
+      "mscale": 6,
+      "mpar": 3.0,
+      "px": 12.075,
+      "py": 9.888
     },
     {
       "id": "biomas",
@@ -18430,7 +20138,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 0.19,
-      "sy": 9.064
+      "sy": 9.064,
+      "mscale": 6,
+      "mpar": 2.0,
+      "px": 11.316,
+      "py": -0.914
     },
     {
       "id": "carbonext",
@@ -18476,7 +20188,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 0.172,
-      "sy": 9.08
+      "sy": 9.08,
+      "mscale": 6,
+      "mpar": 3.0,
+      "px": 13.116,
+      "py": 8.58
     },
     {
       "id": "courageous_land",
@@ -18522,7 +20238,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 0.193,
-      "sy": 9.094
+      "sy": 9.094,
+      "mscale": 6,
+      "mpar": 3.0,
+      "px": 10.809,
+      "py": 8.952
     },
     {
       "id": "mombak",
@@ -18566,7 +20286,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 10.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 0.21,
-      "sy": 9.105
+      "sy": 9.105,
+      "mscale": 6,
+      "mpar": 3.0,
+      "px": 11.784,
+      "py": 8.7
     },
     {
       "id": "moss",
@@ -18611,7 +20335,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 0.165,
-      "sy": 9.062
+      "sy": 9.062,
+      "mscale": 6,
+      "mpar": 3.0,
+      "px": 12.282,
+      "py": 8.69
     },
     {
       "id": "nideport",
@@ -18656,7 +20384,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 0.213,
-      "sy": 9.12
+      "sy": 9.12,
+      "mscale": 6,
+      "mpar": 3.0,
+      "px": 11.079,
+      "py": 9.282
     },
     {
       "id": "re_green",
@@ -18701,7 +20433,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": 0.171,
-      "sy": 9.079
+      "sy": 9.079,
+      "mscale": 6,
+      "mpar": 3.0,
+      "px": 12.027,
+      "py": 9.62
     },
     {
       "id": "um_grau_e_meio",
@@ -18746,7 +20482,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 0.024,
-      "sy": 9.1
+      "sy": 9.1,
+      "mscale": 6,
+      "mpar": 3.0,
+      "px": 11.766,
+      "py": 8.33
     },
     {
       "id": "agricapital",
@@ -18791,7 +20531,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -1.026,
-      "sy": 9.224
+      "sy": 9.224,
+      "mscale": 5,
+      "mpar": 3.0,
+      "px": 8.373,
+      "py": 8.048
     },
     {
       "id": "agroforte",
@@ -18837,7 +20581,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -1.059,
-      "sy": 9.289
+      "sy": 9.289,
+      "mscale": 3,
+      "mpar": 3.0,
+      "px": -0.927,
+      "py": 9.544
     },
     {
       "id": "agrofy",
@@ -18885,7 +20633,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -1.255,
-      "sy": 9.392
+      "sy": 9.392,
+      "mscale": 5,
+      "mpar": 2.33,
+      "px": 8.268,
+      "py": 2.158
     },
     {
       "id": "agrolend",
@@ -18930,7 +20682,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -0.999,
-      "sy": 9.173
+      "sy": 9.173,
+      "mscale": 5,
+      "mpar": 3.0,
+      "px": 8.595,
+      "py": 8.57
     },
     {
       "id": "blooms",
@@ -18974,7 +20730,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -1.091,
-      "sy": 9.324
+      "sy": 9.324,
+      "mscale": 5,
+      "mpar": 3.0,
+      "px": 8.496,
+      "py": 8.092
     },
     {
       "id": "culttivo",
@@ -19020,7 +20780,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -1.073,
-      "sy": 9.247
+      "sy": 9.247,
+      "mscale": 5,
+      "mpar": 3.0,
+      "px": 8.055,
+      "py": 9.724
     },
     {
       "id": "incluirtec",
@@ -19065,7 +20829,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -0.981,
-      "sy": 9.196
+      "sy": 9.196,
+      "mscale": 5,
+      "mpar": 3.0,
+      "px": 6.126,
+      "py": 9.332
     },
     {
       "id": "sette",
@@ -19111,7 +20879,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -1.072,
-      "sy": 9.288
+      "sy": 9.288,
+      "mscale": 5,
+      "mpar": 3.0,
+      "px": 6.21,
+      "py": 9.554
     },
     {
       "id": "siloreal",
@@ -19155,7 +20927,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -1.059,
-      "sy": 9.311
+      "sy": 9.311,
+      "mscale": 5,
+      "mpar": 3.0,
+      "px": 8.388,
+      "py": 9.32
     },
     {
       "id": "terramagna",
@@ -19199,7 +20975,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -1.03,
-      "sy": 9.241
+      "sy": 9.241,
+      "mscale": 5,
+      "mpar": 3.0,
+      "px": 8.277,
+      "py": 8.616
     },
     {
       "id": "traive",
@@ -19244,7 +21024,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -1.154,
-      "sy": 9.187
+      "sy": 9.187,
+      "mscale": 5,
+      "mpar": 3.0,
+      "px": 7.098,
+      "py": 8.312
     },
     {
       "id": "verqor",
@@ -19289,7 +21073,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -1.005,
-      "sy": 9.247
+      "sy": 9.247,
+      "mscale": 5,
+      "mpar": 3.0,
+      "px": 6.363,
+      "py": 9.916
     },
     {
       "id": "aegro",
@@ -19334,7 +21122,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -1.717,
-      "sy": 9.539
+      "sy": 9.539,
+      "mscale": 5,
+      "mpar": 3.0,
+      "px": 7.164,
+      "py": 8.148
     },
     {
       "id": "agrourbana",
@@ -19381,7 +21173,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -1.725,
-      "sy": 9.895
+      "sy": 9.895,
+      "mscale": 5,
+      "mpar": 3.0,
+      "px": 5.943,
+      "py": 9.3
     },
     {
       "id": "aimirim-br",
@@ -19424,7 +21220,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": 9.376,
-      "sy": 10.862
+      "sy": 10.862,
+      "mscale": 2,
+      "mpar": 3.0,
+      "px": -8.007,
+      "py": 9.294
     },
     {
       "id": "arado",
@@ -19470,7 +21270,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -1.687,
-      "sy": 9.847
+      "sy": 9.847,
+      "mscale": 6,
+      "mpar": 3.0,
+      "px": 12.39,
+      "py": 8.588
     },
     {
       "id": "auravant",
@@ -19515,7 +21319,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 9.535,
-      "sy": 10.8
+      "sy": 10.8,
+      "mscale": 5,
+      "mpar": 3.0,
+      "px": 7.737,
+      "py": 9.748
     },
     {
       "id": "beeflow",
@@ -19559,7 +21367,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 25.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 9.523,
-      "sy": 10.869
+      "sy": 10.869,
+      "mscale": 5,
+      "mpar": 2.0,
+      "px": 7.002,
+      "py": -0.184
     },
     {
       "id": "bemagro",
@@ -19605,7 +21417,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -1.836,
-      "sy": 9.067
+      "sy": 9.067,
+      "mscale": 5,
+      "mpar": 3.0,
+      "px": 7.251,
+      "py": 8.676
     },
     {
       "id": "cerradox",
@@ -19649,7 +21465,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 9.446,
-      "sy": 10.991
+      "sy": 10.991,
+      "mscale": 5,
+      "mpar": 3.0,
+      "px": 7.509,
+      "py": 8.49
     },
     {
       "id": "goflux",
@@ -19694,7 +21514,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -1.629,
-      "sy": 9.594
+      "sy": 9.594,
+      "mscale": 5,
+      "mpar": 3.0,
+      "px": 7.653,
+      "py": 9.398
     },
     {
       "id": "horus_aeronaves",
@@ -19741,7 +21565,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 10.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 9.343,
-      "sy": 10.561
+      "sy": 10.561,
+      "mscale": 5,
+      "mpar": 2.5,
+      "px": 7.104,
+      "py": 3.638
     },
     {
       "id": "inceres",
@@ -19786,7 +21614,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 9.381,
-      "sy": 10.811
+      "sy": 10.811,
+      "mscale": 5,
+      "mpar": 3.0,
+      "px": 5.946,
+      "py": 9.772
     },
     {
       "id": "laurus_ag_tech",
@@ -19831,7 +21663,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -1.669,
-      "sy": 9.714
+      "sy": 9.714,
+      "mscale": 5,
+      "mpar": 3.0,
+      "px": 5.967,
+      "py": 8.824
     },
     {
       "id": "leaf",
@@ -19875,7 +21711,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 9.603,
-      "sy": 10.849
+      "sy": 10.849,
+      "mscale": 5,
+      "mpar": 3.0,
+      "px": 6.786,
+      "py": 9.488
     },
     {
       "id": "nanotica",
@@ -19920,7 +21760,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -7.256,
-      "sy": 3.182
+      "sy": 3.182,
+      "mscale": 5,
+      "mpar": 1.0,
+      "px": 7.683,
+      "py": -8.94
     },
     {
       "id": "nativas",
@@ -19968,7 +21812,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -1.233,
-      "sy": 9.423
+      "sy": 9.423,
+      "mscale": 6,
+      "mpar": 3.0,
+      "px": 11.295,
+      "py": 8.532
     },
     {
       "id": "pink-farms",
@@ -20014,7 +21862,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -1.737,
-      "sy": 9.931
+      "sy": 9.931,
+      "mscale": 5,
+      "mpar": 3.0,
+      "px": 8.262,
+      "py": 9.272
     },
     {
       "id": "rumina",
@@ -20058,7 +21910,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -1.776,
-      "sy": 9.546
+      "sy": 9.546,
+      "mscale": 5,
+      "mpar": 3.0,
+      "px": 7.218,
+      "py": 9.286
     },
     {
       "id": "seedmatriz",
@@ -20101,7 +21957,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -7.139,
-      "sy": 2.746
+      "sy": 2.746,
+      "mscale": 5,
+      "mpar": 3.0,
+      "px": 5.937,
+      "py": 9.96
     },
     {
       "id": "seedz",
@@ -20145,7 +22005,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -7.075,
-      "sy": 2.485
+      "sy": 2.485,
+      "mscale": 5,
+      "mpar": 3.0,
+      "px": 7.572,
+      "py": 9.37
     },
     {
       "id": "sensify",
@@ -20192,7 +22056,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -1.747,
-      "sy": 9.568
+      "sy": 9.568,
+      "mscale": 2,
+      "mpar": 3.0,
+      "px": -8.661,
+      "py": 8.356
     },
     {
       "id": "sensix",
@@ -20237,7 +22105,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": 9.383,
-      "sy": 10.836
+      "sy": 10.836,
+      "mscale": 5,
+      "mpar": 2.67,
+      "px": 7.542,
+      "py": 5.96
     },
     {
       "id": "solinftec",
@@ -20281,7 +22153,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 9.374,
-      "sy": 10.946
+      "sy": 10.946,
+      "mscale": 5,
+      "mpar": 3.0,
+      "px": 6.003,
+      "py": 8.91
     },
     {
       "id": "tbit",
@@ -20325,7 +22201,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 9.461,
-      "sy": 11.014
+      "sy": 11.014,
+      "mscale": 5,
+      "mpar": 3.0,
+      "px": 7.836,
+      "py": 8.552
     },
     {
       "id": "the-earth-says",
@@ -20371,7 +22251,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -1.781,
-      "sy": 9.545
+      "sy": 9.545,
+      "mscale": 5,
+      "mpar": 2.33,
+      "px": 8.196,
+      "py": 2.174
     },
     {
       "id": "tuplaza",
@@ -20417,7 +22301,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -1.705,
-      "sy": 9.903
+      "sy": 9.903,
+      "mscale": 5,
+      "mpar": 3.0,
+      "px": 6.375,
+      "py": 8.256
     },
     {
       "id": "voa",
@@ -20462,7 +22350,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 9.351,
-      "sy": 10.612
+      "sy": 10.612,
+      "mscale": 5,
+      "mpar": 2.14,
+      "px": 7.761,
+      "py": 1.436
     },
     {
       "id": "wiagro",
@@ -20508,7 +22400,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 9.461,
-      "sy": 10.803
+      "sy": 10.803,
+      "mscale": 5,
+      "mpar": 3.0,
+      "px": 8.688,
+      "py": 9.864
     },
     {
       "id": "agree",
@@ -20554,7 +22450,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -1.297,
-      "sy": 9.218
+      "sy": 9.218,
+      "mscale": 5,
+      "mpar": 3.0,
+      "px": 6.831,
+      "py": 9.84
     },
     {
       "id": "agrired",
@@ -20599,7 +22499,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -7.012,
-      "sy": 2.4
+      "sy": 2.4,
+      "mscale": 5,
+      "mpar": 3.0,
+      "px": 7.143,
+      "py": 8.602
     },
     {
       "id": "agrojusto",
@@ -20645,7 +22549,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -1.334,
-      "sy": 9.357
+      "sy": 9.357,
+      "mscale": 5,
+      "mpar": 3.0,
+      "px": 8.202,
+      "py": 9.132
     },
     {
       "id": "agrosmart",
@@ -20690,7 +22598,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -1.712,
-      "sy": 9.026
+      "sy": 9.026,
+      "mscale": 5,
+      "mpar": 3.0,
+      "px": 8.052,
+      "py": 8.178
     },
     {
       "id": "agrotoken",
@@ -20736,7 +22648,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -1.325,
-      "sy": 9.161
+      "sy": 9.161,
+      "mscale": 5,
+      "mpar": 3.0,
+      "px": 6.564,
+      "py": 8.42
     },
     {
       "id": "agrotools",
@@ -20781,7 +22697,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -1.45,
-      "sy": 9.088
+      "sy": 9.088,
+      "mscale": 6,
+      "mpar": 3.0,
+      "px": 10.809,
+      "py": 8.966
     },
     {
       "id": "brain_ag",
@@ -20826,7 +22746,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 9.741,
-      "sy": 10.494
+      "sy": 10.494,
+      "mscale": 5,
+      "mpar": 3.0,
+      "px": 8.583,
+      "py": 9.992
     },
     {
       "id": "ecotrace-br",
@@ -20869,7 +22793,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -1.379,
-      "sy": 9.122
+      "sy": 9.122,
+      "mscale": 5,
+      "mpar": 3.0,
+      "px": 7.614,
+      "py": 8.748
     },
     {
       "id": "kilimo",
@@ -20915,7 +22843,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 10.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -1.331,
-      "sy": 9.41
+      "sy": 9.41,
+      "mscale": 5,
+      "mpar": 3.0,
+      "px": 6.918,
+      "py": 8.788
     },
     {
       "id": "logshare",
@@ -20961,7 +22893,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -1.557,
-      "sy": 9.536
+      "sy": 9.536,
+      "mscale": 6,
+      "mpar": 3.0,
+      "px": 11.55,
+      "py": 9.048
     },
     {
       "id": "produzindo-certo",
@@ -21006,7 +22942,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -1.335,
-      "sy": 9.16
+      "sy": 9.16,
+      "mscale": 5,
+      "mpar": 3.0,
+      "px": 6.591,
+      "py": 8.422
     },
     {
       "id": "tracestory",
@@ -21053,7 +22993,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -1.356,
-      "sy": 9.127
+      "sy": 9.127,
+      "mscale": 6,
+      "mpar": 3.0,
+      "px": 10.701,
+      "py": 8.838
     },
     {
       "id": "ucrop-it-ar",
@@ -21095,7 +23039,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -1.417,
-      "sy": 9.105
+      "sy": 9.105,
+      "mscale": 5,
+      "mpar": 3.0,
+      "px": 8.184,
+      "py": 8.76
     },
     {
       "id": "waterplan",
@@ -21139,7 +23087,11 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -1.3,
-      "sy": 9.372
+      "sy": 9.372,
+      "mscale": 6,
+      "mpar": 3.0,
+      "px": 11.862,
+      "py": 8.484
     }
   ],
   "clusters": [
