@@ -138,6 +138,7 @@
       display: grid;
       grid-template-rows: auto minmax(0,1fr);
       min-height: 0;
+      height: 100%;
     }
     .ca-toolbar {
       padding: 9px 14px 8px;
@@ -154,7 +155,16 @@
       background:
         radial-gradient(ellipse at 48% 52%, rgba(217,119,6,.04), transparent 40rem),
         linear-gradient(135deg, rgba(255,252,246,.9), rgba(244,238,228,.72));
-      height: max(700px, calc(100vh - 240px));
+      min-height: 0;
+    }
+
+    /* Módulo 1 — Red de Capital: ocupa todo el vertical disponible */
+    #atlas-network-module {
+      height: calc(100vh - 210px);
+      min-height: 520px;
+    }
+    #atlas-network-module .ca-sidebar {
+      overflow: hidden;
     }
 
     /* ── Legend chips ───────────────────────────────────────────────── */
@@ -538,7 +548,7 @@
   <section class="ca-analysis-section">
 
     <!-- ── Módulo 1: Red de Capital ──────────────────────────────────── -->
-    <div class="ca-module">
+    <div class="ca-module" id="atlas-network-module">
 
       <aside class="ca-sidebar">
         <div class="ca-sidebar-head">
@@ -620,8 +630,8 @@
             <button id="atlas-reset"      class="atlas-button" type="button">Recentrar</button>
           </div>
         </div>
-        <div class="ca-stage" style="height:580px">
-          <svg id="capital-atlas-svg" width="100%" height="100%" viewBox="0 0 1900 900" preserveAspectRatio="xMidYMid meet"></svg>
+        <div class="ca-stage">
+          <svg id="capital-atlas-svg" width="100%" height="100%" preserveAspectRatio="none"></svg>
           <div id="atlas-tooltip" class="atlas-tooltip"></div>
           <div class="atlas-controls">
             <button class="atlas-zoom hint"    type="button" tabindex="-1">Rueda = zoom</button>

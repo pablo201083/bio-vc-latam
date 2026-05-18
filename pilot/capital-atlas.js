@@ -28,9 +28,18 @@
   const noteEl = document.getElementById("atlas-note");
   const tooltipEl = document.getElementById("atlas-tooltip");
 
-  const WIDTH = 1900;
-  const HEIGHT = 900;
+  let WIDTH = 1900;
+  let HEIGHT = 900;
   const LAYOUT_MARGIN = 190;
+
+  function syncCanvasDimensions() {
+    const rect = svg.getBoundingClientRect();
+    if (rect.width >= 200 && rect.height >= 200) {
+      WIDTH  = Math.round(rect.width);
+      HEIGHT = Math.round(rect.height);
+      svg.setAttribute("viewBox", `0 0 ${WIDTH} ${HEIGHT}`);
+    }
+  }
   const FUND_COLOR = "#d97706";       // amber — clearly distinct from all bio-theme colors
   const ALLOCATOR_COLOR = "#6d28d9"; // deep violet — LP tier
   const STARTUP_FALLBACK = "#7c83fd";
@@ -2027,5 +2036,16 @@
 
   rebuildDynamicAssignments();
   populateFilters();
-  rebuild({ rerun: true });
+
+  // Read actual SVG pixel size after CSS layout, set viewBox to match
+  requestAnimationFrame(() => {
+    syncCanvasDimensions();
+    rebuild({ rerun: true });
+  });
+
+  window.addEventListener("resize", () => {
+    syncCanvasDimensions();
+    fitToGraph();
+    renderGraph();
+  });
 })();
