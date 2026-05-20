@@ -927,7 +927,9 @@ function updateHalos(){
   while(gHalos.firstChild)gHalos.removeChild(gHalos.firstChild);
   while(gThemeLabels.firstChild)gThemeLabels.removeChild(gThemeLabels.firstChild);
 
-  // In zoom mode: draw per-sub-cluster halos + labels
+  // In zoom mode: dibujar halos por sub-cluster, sin texto (las keywords del
+  // clustering global no son semánticamente útiles por tema y confunden).
+  // Solo un conteo pequeño centrado en el blob para orientación.
   if(viewMode==="zoom"){
     if(activeTheme){
       const themeColor=themeCol(activeTheme);
@@ -937,74 +939,47 @@ function updateHalos(){
         const pts=e.nodes.map(n=>[n.cx,n.cy]);
         if(!pts.length)return;
 
-        // Halo around each sub-cluster island
+        // Centroid de posiciones actuales
+        const cx=pts.reduce((s,p)=>s+p[0],0)/pts.length;
+        const cy=pts.reduce((s,p)=>s+p[1],0)/pts.length;
+        const funded=e.nodes.filter(n=>n.d.n_investors_mapped>0).length;
+
+        // Halo blob
         if(pts.length===1){
           const el=document.createElementNS(NS,"circle");
           el.setAttribute("cx",pts[0][0]);el.setAttribute("cy",pts[0][1]);
-          el.setAttribute("r","30");
-          el.setAttribute("fill",themeColor);el.setAttribute("opacity","0.09");
-          el.setAttribute("stroke",themeColor);el.setAttribute("stroke-width","1.8");
-          el.setAttribute("stroke-opacity","0.26");el.setAttribute("pointer-events","none");
+          el.setAttribute("r","26");
+          el.setAttribute("fill",themeColor);el.setAttribute("opacity","0.08");
+          el.setAttribute("stroke",themeColor);el.setAttribute("stroke-width","1.5");
+          el.setAttribute("stroke-opacity","0.22");el.setAttribute("pointer-events","none");
           gHalos.appendChild(el);
         }else{
           const hull=convexHull(corePoints(pts));
-          const path=blobPath(hull,pts.length<4?30:22);
+          const path=blobPath(hull,pts.length<4?28:20);
           if(path){
             const el=document.createElementNS(NS,"path");
             el.setAttribute("d",path);
-            el.setAttribute("fill",themeColor);el.setAttribute("opacity","0.08");
-            el.setAttribute("stroke",themeColor);el.setAttribute("stroke-width","1.8");
-            el.setAttribute("stroke-opacity","0.24");el.setAttribute("pointer-events","none");
+            el.setAttribute("fill",themeColor);el.setAttribute("opacity","0.07");
+            el.setAttribute("stroke",themeColor);el.setAttribute("stroke-width","1.5");
+            el.setAttribute("stroke-opacity","0.2");el.setAttribute("pointer-events","none");
             gHalos.appendChild(el);
           }
         }
 
-        // Sub-cluster label — extract descriptive part
-        const rawLabel=e.label||"";
-        const descPart=rawLabel.includes(" — ")?rawLabel.split(" — ")[1]:rawLabel;
-        const kw=(e.keywords||"").split(",").slice(0,3).join(", ");
-        const labelText=descPart||kw||(e.cid>=0?`Cluster ${e.cid}`:"Sin cluster");
-        const shortLabel=labelText.length>28?labelText.slice(0,27)+"…":labelText;
-
-        // Centroid of current screen positions
-        const cx=pts.reduce((s,p)=>s+p[0],0)/pts.length;
-        const minY=Math.min(...pts.map(p=>p[1]));
-        const funded=e.nodes.filter(n=>n.d.n_investors_mapped>0).length;
-        const countTxt=`${e.nodes.length} · ${funded} inv`;
-
-        const lw=Math.max(shortLabel.length*6.4+16,80);
-        const lh=20;
-        const lx=Math.max(4,Math.min(W-lw-4,cx-lw/2));
-        const ly=Math.max(52,minY-lh-10);
-
-        const bg=document.createElementNS(NS,"rect");
-        bg.setAttribute("x",lx.toFixed(1));bg.setAttribute("y",ly.toFixed(1));
-        bg.setAttribute("width",lw.toFixed(1));bg.setAttribute("height",lh);
-        bg.setAttribute("rx","5");
-        bg.setAttribute("fill","rgba(255,252,247,0.93)");
-        bg.setAttribute("stroke",themeColor);bg.setAttribute("stroke-opacity","0.28");
-        bg.setAttribute("stroke-width","1");bg.setAttribute("pointer-events","none");
-        gThemeLabels.appendChild(bg);
-
-        const lt=document.createElementNS(NS,"text");
-        lt.setAttribute("x",(lx+lw/2).toFixed(1));lt.setAttribute("y",(ly+lh/2).toFixed(1));
-        lt.setAttribute("text-anchor","middle");lt.setAttribute("dominant-baseline","middle");
-        lt.setAttribute("font-size","8");lt.setAttribute("font-weight","600");
-        lt.setAttribute("fill",themeColor);lt.setAttribute("pointer-events","none");
-        lt.textContent=shortLabel;
-        gThemeLabels.appendChild(lt);
-
-        // Funded count below label
-        const ft=document.createElementNS(NS,"text");
-        ft.setAttribute("x",(lx+lw/2).toFixed(1));ft.setAttribute("y",(ly+lh+9).toFixed(1));
-        ft.setAttribute("text-anchor","middle");ft.setAttribute("dominant-baseline","middle");
-        ft.setAttribute("font-size","6.5");ft.setAttribute("font-weight","400");
-        ft.setAttribute("fill","#9a8f84");ft.setAttribute("pointer-events","none");
-        ft.textContent=countTxt;
-        gThemeLabels.appendChild(ft);
+        // Conteo pequeño centrado en el blob — solo si el sub-cluster tiene ≥4 nodos
+        // para no saturar los grupos chicos. Sin pills, sin fondo, texto mínimo.
+        if(e.nodes.length>=4){
+          const ct=document.createElementNS(NS,"text");
+          ct.setAttribute("x",cx.toFixed(1));ct.setAttribute("y",(cy+2).toFixed(1));
+          ct.setAttribute("text-anchor","middle");ct.setAttribute("dominant-baseline","middle");
+          ct.setAttribute("font-size","7");ct.setAttribute("font-weight","500");
+          ct.setAttribute("fill",themeColor);ct.setAttribute("opacity","0.45");
+          ct.setAttribute("pointer-events","none");
+          ct.textContent=`${e.nodes.length}`;
+          gThemeLabels.appendChild(ct);
+        }
       });
     }
-
     return;
   }
 
