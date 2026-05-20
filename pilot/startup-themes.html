@@ -45,15 +45,17 @@
     .ct-tech{background:rgba(11,143,135,.07);color:var(--accent);border-color:rgba(11,143,135,.3)}
     .ct-ind{background:rgba(154,52,18,.06);color:#7a2e12;border-color:rgba(154,52,18,.22)}
 
-    .detail-pane{flex:0 0 auto;border-bottom:1px solid var(--line);padding:12px 15px;font-size:.81rem;color:var(--muted);line-height:1.5;max-height:260px;overflow-y:auto;background:rgba(248,245,239,.4)}
-    .dp-hint{font-size:.75rem;color:var(--muted);opacity:.55;display:block}
-    .dp-title{font-weight:700;color:var(--ink);font-size:.9rem;margin-bottom:6px;line-height:1.3}
-    .dp-chips{display:flex;flex-wrap:wrap;gap:4px;margin-top:7px}
-    .dp-chip{border-radius:5px;border:1px solid var(--line);background:#fff;padding:2px 8px;font-size:.7rem;color:var(--muted)}
-    .dp-chip-tech{background:rgba(11,143,135,.09);color:var(--accent);border-color:rgba(11,143,135,.3)}
-    .dp-chip-ind{background:rgba(154,52,18,.07);color:#7a2e12;border-color:rgba(154,52,18,.22)}
-    .dp-link{color:var(--accent);text-decoration:none;font-size:.77rem}
-    .dp-link:hover{text-decoration:underline}
+    /* ── Acordeón de detalle por card ── */
+    .cr-detail{display:none;margin-top:8px;padding-top:8px;border-top:1px solid rgba(217,206,190,.5)}
+    .cr.active .cr-detail{display:block}
+    .cr-det-sec{font-size:.62rem;font-weight:700;text-transform:uppercase;letter-spacing:.09em;color:var(--muted);margin:8px 0 3px}
+    .cr-det-sec:first-child{margin-top:2px}
+    .cr-det-desc{font-size:.76rem;color:var(--ink);line-height:1.42;margin-bottom:6px}
+    .cr-det-chips{display:flex;flex-wrap:wrap;gap:3px;margin-bottom:4px}
+    .cr-det-chip{border-radius:4px;border:1px solid var(--line);background:#fff;padding:2px 7px;font-size:.69rem;color:var(--muted)}
+    .cr-det-chip-teal{background:rgba(11,143,135,.09);color:var(--accent);border-color:rgba(11,143,135,.3)}
+    .cr-det-row{display:flex;justify-content:space-between;gap:8px;font-size:.75rem;color:var(--ink);padding:1px 0}
+    .cr-det-row span:last-child{color:var(--muted);white-space:nowrap;font-size:.7rem}
 
     .themes-stage{padding:14px;display:flex;flex-direction:column;gap:10px;position:relative;overflow:visible}
     .tb-row{display:flex;flex-wrap:wrap;gap:7px;align-items:center}
@@ -208,9 +210,6 @@
           <span id="s-funded" class="s-chip s-chip-muted">—</span>
         </div>
       </div>
-      <div id="detail-pane" class="detail-pane">
-        <span class="dp-hint">Seleccioná un cluster o startup para explorar →</span>
-      </div>
       <div id="cluster-list" class="cluster-list"></div>
     </aside>
 
@@ -332,7 +331,7 @@
 
 const D = window.STARTUP_THEMES_DATA;
 if(!D||!D.startups||!D.startups.length){
-  document.getElementById("detail-pane").textContent="Sin datos. Ejecutá: python -m src.clustering";
+  document.querySelector(".sidebar-head .item-title").textContent="Sin datos. Ejecutá: python -m src.clustering";
   return;
 }
 
@@ -1352,11 +1351,46 @@ function loop(){
 }
 
 // ── Theme sidebar ──────────────────────────────────────────────────────────
+function buildThemeDetailHTML(tm){
+  const themeNodes=nodes.filter(n=>(n.d.bio_theme||"Uncategorized")===tm.name);
+  const topCompanies=themeNodes
+    .slice().sort((a,b)=>(b.d.valuation_tier||0)-(a.d.valuation_tier||0)||(b.d.n_investors_mapped||0)-(a.d.n_investors_mapped||0)||a.d.name.localeCompare(b.d.name))
+    .slice(0,6);
+  const subLabels=new Map();
+  themeNodes.forEach(n=>{const sl=n.d.sub_cluster_label;if(sl)subLabels.set(sl,(subLabels.get(sl)||0)+1);});
+  const topCountries=Object.entries(tm.countries).sort((a,b)=>b[1]-a[1]).slice(0,4);
+  const desc=THEME_DESC[tm.name]||"";
+  let h="";
+  if(desc) h+=`<div class="cr-det-desc">${desc}</div>`;
+  if(subLabels.size){
+    h+=`<div class="cr-det-sec">Sub-grupos semánticos</div><div class="cr-det-chips">`;
+    [...subLabels.entries()].forEach(([lbl,n])=>{
+      h+=`<span class="cr-det-chip cr-det-chip-teal">${lbl} <span style="opacity:.5">(${n})</span></span>`;
+    });
+    h+=`</div>`;
+  }
+  if(topCompanies.length){
+    h+=`<div class="cr-det-sec">Top startups</div>`;
+    topCompanies.forEach(n=>{
+      const t=n.d.valuation_tier;
+      const inv=n.d.n_investors_mapped;
+      h+=`<div class="cr-det-row"><span>${n.d.name}</span><span>${t!=null?"T"+t:"—"}${inv>0?" · "+inv+" inv.":""}</span></div>`;
+    });
+  }
+  if(topCountries.length){
+    h+=`<div class="cr-det-sec">Geografía</div><div class="cr-det-chips">`;
+    topCountries.forEach(([cc,n])=>{
+      h+=`<span class="cr-det-chip" style="cursor:pointer" data-country="${cc}">${FLAG_MAP[cc]||""} ${cc} <span style="opacity:.5">(${n})</span></span>`;
+    });
+    h+=`</div>`;
+  }
+  return h;
+}
+
 function buildClusterList(){
   const list=document.getElementById("cluster-list");
   list.innerHTML="";
 
-  // Show themes in canonical order, then any extras (eco-adjacent, etc.)
   const ordered=[
     ...THEME_ORDER.filter(t=>themeMap.has(t)),
     ...[...themeMap.keys()].filter(t=>!THEME_ORDER.includes(t)),
@@ -1370,34 +1404,20 @@ function buildClusterList(){
     row.className="cr";row.dataset.theme=theme;
     row.style.setProperty('--cr-color', color);
 
+    // ── Header: name + count ─────────────────────────────────────────────
     const top=document.createElement("div");top.className="cr-top";
-    const dot=document.createElement("span");dot.className="cr-dot";dot.style.background=color;
-    const name=document.createElement("span");name.className="cr-name";
-    name.textContent=theme;
-    const cnt=document.createElement("span");cnt.className="cr-count";
-    cnt.textContent=tm.count;
-    top.appendChild(dot);top.appendChild(name);top.appendChild(cnt);
+    const name=document.createElement("span");name.className="cr-name";name.textContent=theme;
+    const cnt=document.createElement("span");cnt.className="cr-count";cnt.textContent=tm.count;
+    top.appendChild(name);top.appendChild(cnt);
     row.appendChild(top);
 
-    // Description line
-    const desc=THEME_DESC[theme];
-    if(desc){
-      const dl=document.createElement("div");
-      dl.className="cr-desc";
-      dl.textContent=desc;
-      row.appendChild(dl);
-    }
-
+    // ── Tags row (always visible): top 3 sub-cluster keywords + funded ───
     const tags=document.createElement("div");tags.className="cr-tags";
-    // Keyword chips from sub-clusters (most representative, top 3)
-    [...tm.subClusters.entries()].sort((a,b)=>b[1]-a[1]).slice(0,3).forEach(([lbl,n])=>{
-      const t=document.createElement("span");t.className="ct ct-tech";
-      // Extract keyword part after " — " or use full label shortened
+    [...tm.subClusters.entries()].sort((a,b)=>b[1]-a[1]).slice(0,3).forEach(([lbl])=>{
       const kw=(lbl.split(" — ")[1]||lbl).replace(/^\w+ — /,"");
-      t.textContent=kw;
+      const t=document.createElement("span");t.className="ct ct-tech";t.textContent=kw;
       tags.appendChild(t);
     });
-    // Funded badge
     if(tm.n_funded>0){
       const t=document.createElement("span");t.className="ct";
       t.style.cssText="color:#1f5c3a;border-color:rgba(31,92,58,.28);background:rgba(31,92,58,.06);";
@@ -1405,143 +1425,68 @@ function buildClusterList(){
     }
     row.appendChild(tags);
 
+    // ── Accordion detail (hidden until .active) ──────────────────────────
+    const detail=document.createElement("div");detail.className="cr-detail";
+    row.appendChild(detail);
+
+    // ── Click handler ────────────────────────────────────────────────────
     row.addEventListener("click",()=>{
+      const isActive=row.classList.contains("active");
+
       if(viewMode==="zoom"){
-        // In zoom mode: just pan camera to the new theme — no node movement
         activeTheme=theme;
         document.querySelectorAll(".cr").forEach(r=>{
           r.classList.remove("active","dimmed");
           r.classList.toggle("dimmed",r.dataset.theme!==theme);
+          r.querySelector(".cr-detail").innerHTML="";
         });
         row.classList.add("active");row.classList.remove("dimmed");
+        detail.innerHTML=buildThemeDetailHTML(tm);
         zoomToCluster(theme);
-        renderThemeDetail(tm);
         updateHighlights();updateBreadcrumbs();
         return;
       }
-      // Normal UMAP mode: toggle theme filter + camera zoom
-      if(activeTheme===theme){
-        activeTheme=null;row.classList.remove("active");
+
+      // Normal mode: toggle
+      if(isActive){
+        activeTheme=null;
+        row.classList.remove("active");
+        detail.innerHTML="";
         document.querySelectorAll(".cr").forEach(r=>r.classList.remove("dimmed","active"));
       }else{
         activeTheme=theme;
         document.querySelectorAll(".cr").forEach(r=>{
-          r.classList.remove("active");
-          r.classList.toggle("dimmed",r.dataset.theme!==theme);
+          r.classList.remove("active","dimmed");
+          r.querySelector(".cr-detail").innerHTML="";
         });
         row.classList.add("active");row.classList.remove("dimmed");
+        detail.innerHTML=buildThemeDetailHTML(tm);
         zoomToCluster(theme);
-        renderThemeDetail(tm);
       }
-      updateHighlights();
-      updateBreadcrumbs();
+      updateHighlights();updateBreadcrumbs();
     });
     list.appendChild(row);
   });
-}
 
-function renderThemeDetail(tm){
-  const pane=document.getElementById("detail-pane");
-  if(!tm){pane.innerHTML='<span style="color:var(--muted);font-size:.82rem;">Hacé clic en un cluster para ver el detalle.</span>';return}
-  const color=tm.color;
-  const desc=THEME_DESC[tm.name]||"";
-  const topCountries=Object.entries(tm.countries).sort((a,b)=>b[1]-a[1]).slice(0,5);
-  // Top companies by tier then name
-  const themeNodes=nodes.filter(n=>(n.d.bio_theme||"Uncategorized")===tm.name);
-  const topCompanies=themeNodes
-    .sort((a,b)=>(b.d.valuation_tier||0)-(a.d.valuation_tier||0)||a.d.name.localeCompare(b.d.name))
-    .slice(0,6);
-  // Sub-cluster neighborhoods
-  const subCl=[...tm.subClusters.entries()].sort((a,b)=>b[1]-a[1]);
-  // Sub-labels (e.g. CL1 bimodality) — collect from startups in this theme
-  const subLabels=new Map();
-  themeNodes.forEach(n=>{
-    const sl=n.d.sub_cluster_label;
-    if(sl)subLabels.set(sl,(subLabels.get(sl)||0)+1);
+  // Delegación de clicks en chips de país dentro del acordeón
+  list.addEventListener("click",e=>{
+    const chip=e.target.closest("[data-country]");
+    if(!chip)return;
+    const country=chip.dataset.country;
+    activeCountries.has(country)?activeCountries.delete(country):activeCountries.add(country);
+    document.querySelectorAll("#country-chips .fc").forEach(c=>c.classList.toggle("active-country",activeCountries.has(c.dataset.country)));
+    updateHighlights();updateBreadcrumbs();
   });
-
-  pane.innerHTML=`
-    <div class="dp-title" style="display:flex;align-items:center;gap:7px;margin-bottom:4px;">
-      <span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:${color};flex:0 0 auto"></span>
-      ${tm.name}
-    </div>
-    <div class="dp-chips" style="margin-bottom:6px;">
-      <span class="dp-chip">${tm.count} startups</span>
-      ${tm.n_featured>0?`<span class="dp-chip" style="font-weight:700;color:var(--ink);">${tm.n_featured} destacadas</span>`:""}
-      ${tm.n_funded>0?`<span class="dp-chip" style="color:#1f5c3a;">⬤ ${tm.n_funded} con inversión</span>`:""}
-    </div>
-    ${desc?`<div style="font-size:.79rem;color:var(--ink);line-height:1.45;margin-bottom:8px;padding-bottom:7px;border-bottom:1px solid var(--line);">${desc}</div>`:""}
-    ${subLabels.size?`
-      <div style="font-size:.67rem;color:var(--muted);margin-bottom:3px;text-transform:uppercase;letter-spacing:.07em;">Sub-grupos semánticos</div>
-      <div class="dp-chips" style="margin-bottom:7px;">${[...subLabels.entries()].map(([lbl,n])=>`
-        <span class="dp-chip dp-chip-tech" style="font-size:.74rem;">${lbl} <span style="opacity:.55">(${n})</span></span>
-      `).join("")}</div>`:""}
-    ${subCl.length?`
-      <div style="font-size:.67rem;color:var(--muted);margin-bottom:3px;text-transform:uppercase;letter-spacing:.07em;">Clusters semánticos</div>
-      <div class="dp-chips" style="margin-bottom:7px;">${subCl.map(([lbl,n])=>`<span class="dp-chip" style="font-style:italic;font-size:.72rem;">${lbl} <span style="opacity:.5">(${n})</span></span>`).join("")}</div>`:""}
-    <div style="font-size:.67rem;color:var(--muted);margin-bottom:3px;text-transform:uppercase;letter-spacing:.07em;">Top startups</div>
-    <div style="display:grid;gap:2px;margin-bottom:6px;">${topCompanies.map(n=>{
-      const t=n.d.valuation_tier;
-      const sl=n.d.sub_cluster_label;
-      return `<span style="font-size:.78rem;color:var(--ink);display:flex;justify-content:space-between;gap:8px;">
-        <span>${n.d.name}${sl?`<span style="color:var(--muted);font-size:.68rem;margin-left:4px;">${sl}</span>`:""}</span>
-        <span style="color:var(--muted);white-space:nowrap;">${t!=null?"T"+t:"—"}${n.d.n_investors_mapped>0?" · "+n.d.n_investors_mapped+" inv.":""}</span>
-      </span>`;
-    }).join("")}</div>
-    ${topCountries.length?`<div style="font-size:.67rem;color:var(--muted);margin-bottom:3px;text-transform:uppercase;letter-spacing:.07em;">Geografía</div><div class="dp-chips">${topCountries.map(([cc,n])=>`<span class="dp-chip" style="cursor:pointer;" data-country="${cc}">${(FLAG_MAP[cc]||"")} ${cc} <span style="opacity:.55">(${n})</span></span>`).join("")}</div>`:""}
-  `;
 }
-function renderClusterDetail(c){ renderThemeDetail(null); }
 
-// Delegación de clicks en el detail-pane (chips de país)
-document.getElementById("detail-pane").addEventListener("click",e=>{
-  const chip=e.target.closest("[data-country]");
-  if(!chip)return;
-  const country=chip.dataset.country;
-  if(!country)return;
-  activeCountries.has(country)?activeCountries.delete(country):activeCountries.add(country);
-  document.querySelectorAll("#country-chips .fc").forEach(c=>c.classList.toggle("active-country",activeCountries.has(c.dataset.country)));
-  updateHighlights();updateBreadcrumbs();
-});
+// renderThemeDetail ya no existe — el detail lo maneja el acordeón de cada .cr card.
 
 // ── Startup detail ─────────────────────────────────────────────────────────
 function selectStartup(s){
   searchId=s.id;
   document.getElementById("srch-in").value=s.name;
   updateHighlights();updateBreadcrumbs();
-  const pane=document.getElementById("detail-pane");
-  const color=themeCol(s.bio_theme);
-  const stageLabel=s.funding_stage
-    ?{"pre-seed":"Pre-seed","seed":"Seed","series-a":"Serie A","series-b":"Serie B","series-c+":"Serie C+","growth":"Growth"}[s.funding_stage]||s.funding_stage
-    :null;
-  const valM=s.valuation_estimate_usd;
-  const valSrc=s.valuation_estimate_source;
-  const valLabel=valM!=null
-    ?(valM>=1000?`~$${(valM/1000).toFixed(1)}B`:valM>=1?`~$${Math.round(valM)}M`:`~$${Math.round(valM*1000)}k`)
-    :null;
-  const valNote=({gridx_valuation:"GRIDX",stage_estimate:"estimado · etapa",investors_proxy:"estimado · inversores",emergente:"sin dato"})[valSrc]||"";
-  const invStr=s.n_investors_mapped>0?`${s.n_investors_mapped} inversor${s.n_investors_mapped>1?"es":""} mapeado${s.n_investors_mapped>1?"s":""}`:null;
-  pane.innerHTML=`
-    <div class="dp-title">${s.website?`<a class="dp-link" href="${s.website}" target="_blank" rel="noopener">${s.name} ↗</a>`:s.name}</div>
-    <div style="font-size:.82rem;color:var(--ink);line-height:1.45;margin:4px 0 8px;">${s.one_liner||(s.summary||"").slice(0,200)||""}</div>
-    <div class="dp-chips" style="margin-bottom:7px;">
-      ${valLabel?`<span class="dp-chip" style="font-weight:700;color:var(--ink);">${valLabel} <span style="font-weight:400;color:var(--muted);font-size:.65rem;">${valNote}</span></span>`:""}
-      ${stageLabel?`<span class="dp-chip">${stageLabel}</span>`:""}
-      ${(s.countries||[]).map(c=>`<span class="dp-chip">${c}</span>`).join("")}
-      ${s.quality_band?`<span class="dp-chip">${s.quality_band==="high"?"Datos completos":"Datos parciales"}</span>`:""}
-      ${invStr?`<span class="dp-chip" style="color:#1f5c3a;border-color:rgba(31,92,58,.3);">⬤ ${invStr}</span>`:""}
-    </div>
-    <div style="display:flex;align-items:center;gap:5px;margin-bottom:3px;">
-      <span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:${color};flex:0 0 auto"></span>
-      <span style="font-size:.82rem;font-weight:700;color:var(--ink);">${s.bio_theme||"—"}</span>
-    </div>
-    ${s.bio_theme_secondary?`<div style="font-size:.75rem;color:var(--muted);margin-bottom:4px;padding-left:13px;">+ ${s.bio_theme_secondary}</div>`:""}
-    ${s.cluster_label?`<div style="font-size:.74rem;color:var(--muted);padding-left:13px;margin-bottom:6px;font-style:italic;">${s.cluster_label}${s.cluster_keywords?` — <span style="opacity:.7">${s.cluster_keywords}</span>`:""}</div>`:""}
-    <div class="dp-chips">
-      ${(s.tech_codes||[]).map(c=>`<span class="dp-chip dp-chip-tech">${vTech[c]?.label||c}</span>`).join("")}
-      ${(s.industry_codes||[]).map(c=>`<span class="dp-chip dp-chip-ind">${vInd[c]?.label||c}</span>`).join("")}
-    </div>
-  `;
+  // El detalle de startup se muestra en el hover card al pasar el mouse.
 }
 
 // ── Hover card ─────────────────────────────────────────────────────────────
@@ -1714,7 +1659,7 @@ function resetAll(){
   const fp=document.getElementById("filter-panel");
   fp.classList.remove("open");
   document.getElementById("btn-filter").classList.remove("on","filter-active");
-  document.getElementById("detail-pane").innerHTML='<span style="color:var(--muted);font-size:.82rem;">Click a startup or a theme to see details.</span>';
+  document.querySelectorAll(".cr-detail").forEach(d=>{d.innerHTML="";});
   panX=0;panY=0;scale=1;applyTf();
   if(viewMode!=="map"){
     viewMode="map";
@@ -1755,8 +1700,11 @@ document.getElementById("btn-cluster").addEventListener("click",()=>{
         r.classList.remove("active","dimmed");
         r.classList.toggle("dimmed",r.dataset.theme!==firstTheme);
       });
-      document.querySelector(`.cr[data-theme="${CSS.escape(firstTheme)}"]`)?.classList.add("active");
-      renderThemeDetail(themeMap.get(firstTheme));
+      const firstCard=document.querySelector(`.cr[data-theme="${CSS.escape(firstTheme)}"]`);
+      if(firstCard){
+        firstCard.classList.add("active");
+        firstCard.querySelector(".cr-detail").innerHTML=buildThemeDetailHTML(themeMap.get(firstTheme));
+      }
     }
   }
   computeZoomPos(); // zx/zy = mx/my — no node movement
