@@ -6,869 +6,518 @@
   <title>Capital Network Atlas · BIO LATAM</title>
   <link rel="stylesheet" href="./styles.css?v=20260422p">
   <style>
+    body.capital-atlas-page {
+      margin: 0;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
     body.capital-atlas-page .page-shell {
+      flex: 1;
+      min-height: 0;
+      display: flex;
+      flex-direction: column;
+      padding: 8px 12px 10px;
+      gap: 8px;
       max-width: 100%;
-      padding: 8px 14px 24px;
     }
 
-    /* ── Hero ──────────────────────────────────────────────────────── */
-    .capital-hero {
-      display: grid;
-      grid-template-columns: minmax(0,1.6fr) minmax(0,1fr);
-      gap: 12px;
-      margin-bottom: 18px;
-      align-items: stretch;
-    }
-    .capital-hero .hero-copy {
-      border: 1px solid var(--line);
-      border-radius: 20px;
-      padding: 16px 20px;
-      background:
-        radial-gradient(circle at 92% 8%, rgba(15,118,110,.12), transparent 14rem),
-        linear-gradient(135deg, rgba(255,255,255,.94), rgba(246,240,230,.72));
-      box-shadow: var(--shadow);
-    }
-    .capital-hero h1 {
-      font-size: clamp(1.45rem, 2.1vw, 2rem);
-      line-height: 1;
-      margin: 4px 0;
-    }
-    .capital-hero .lede {
-      font-size: .8rem;
-      line-height: 1.38;
-      color: var(--muted);
-      margin: 4px 0 0;
-    }
-    .capital-hero .hero-meta {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(0,1fr));
-      gap: 8px;
-      border: 1px solid var(--line);
-      border-radius: 20px;
-      padding: 10px;
-      background: rgba(255,252,246,.8);
-      box-shadow: var(--shadow);
-    }
-    .capital-hero .meta-card {
-      border: 1px solid rgba(217,206,190,.6);
-      border-radius: 14px;
-      background: rgba(255,255,255,.78);
-      padding: 8px 10px;
-      display: grid;
-      gap: 3px;
-    }
-    .capital-hero .meta-label {
-      font-size: .68rem;
-      font-weight: 700;
-      letter-spacing: .09em;
-      text-transform: uppercase;
-      color: var(--muted);
-    }
-    .capital-hero .meta-value {
-      font-size: 1.15rem;
-      font-weight: 800;
-      color: var(--ink);
-      line-height: 1;
-    }
-    .capital-hero .meta-value.accent { color: var(--accent); }
-    .capital-hero .meta-sub {
-      font-size: .68rem;
-      color: var(--muted);
-    }
-
-    /* ── Analysis section (stacked modules) ────────────────────────── */
-    .ca-analysis-section { display: grid; gap: 20px; }
-
-    .ca-module {
-      display: grid;
-      grid-template-columns: 310px minmax(0,1fr);
-      background: var(--panel);
-      border: 1px solid var(--line);
-      border-radius: 22px;
-      box-shadow: var(--shadow);
-      overflow: hidden;
-    }
-    .ca-sidebar {
-      border-right: 1px solid var(--line);
-      display: grid;
-      grid-template-rows: auto minmax(0,1fr);
-      min-height: 0;
-    }
-    .ca-sidebar-head {
-      padding: 18px 18px 14px;
-      border-bottom: 1px solid var(--line);
-      background: linear-gradient(180deg, rgba(255,255,255,.92), rgba(248,243,234,.72));
-    }
-    .ca-eyebrow {
-      font-size: .6rem;
-      font-weight: 800;
-      letter-spacing: .12em;
-      text-transform: uppercase;
-      color: var(--muted);
-      margin-bottom: 4px;
-    }
-    .ca-title {
-      font-size: 1.05rem;
-      font-weight: 800;
-      line-height: 1.06;
-      margin: 0 0 6px;
-      color: var(--ink);
-    }
-    .ca-desc { font-size: .76rem; line-height: 1.42; color: var(--muted); margin: 0; }
-    .ca-sidebar-body {
-      padding: 14px 16px;
-      overflow-y: auto;
-      display: grid;
-      gap: 10px;
-      align-content: start;
-    }
-    .ca-section-lbl {
-      font-size: .67rem;
-      font-weight: 700;
-      letter-spacing: .09em;
-      text-transform: uppercase;
-      color: var(--muted);
-    }
-    .ca-divider {
-      border: 0;
-      border-top: 1px solid var(--line);
-      margin: 2px 0;
-    }
-    .ca-main {
-      display: grid;
-      grid-template-rows: auto minmax(0,1fr);
-      min-height: 0;
-      height: 100%;
-    }
-    .ca-toolbar {
-      padding: 9px 14px 8px;
-      border-bottom: 1px solid rgba(217,206,190,.44);
+    /* ── Hero strip ────────────────────────────────────────────────── */
+    .ca-strip {
       display: flex;
-      gap: 10px;
       align-items: center;
-      flex-wrap: wrap;
-      min-height: 46px;
+      gap: 14px;
+      flex-shrink: 0;
     }
-    .ca-stage {
-      position: relative;
-      overflow: hidden;
-      background:
-        radial-gradient(ellipse at 48% 52%, rgba(217,119,6,.04), transparent 40rem),
-        linear-gradient(135deg, rgba(255,252,246,.9), rgba(244,238,228,.72));
-      min-height: 0;
-    }
-
-    /* Módulo 1 — Red de Capital: ocupa todo el vertical disponible */
-    #atlas-network-module {
-      height: calc(100vh - 176px);
-      min-height: 520px;
-    }
-    #atlas-network-module .ca-sidebar {
-      overflow: hidden;
-    }
-
-    /* ── Legend chips ───────────────────────────────────────────────── */
-    .ca-legend { display: flex; flex-wrap: wrap; gap: 5px; }
-    .ca-legend-item {
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      background: rgba(255,255,255,.78);
-      padding: 3px 8px;
+    .ca-strip-title {
       font-size: .72rem;
-      color: var(--muted);
-    }
-    .ca-legend-dot {
-      width: 8px; height: 8px;
-      border-radius: 999px;
-      flex: 0 0 auto;
-    }
-    .ca-legend-diamond {
-      width: 8px; height: 8px;
-      transform: rotate(45deg);
-      flex: 0 0 auto;
-    }
-    .ca-legend-line {
-      width: 18px; height: 0;
-      border-top: 2px solid rgba(92,82,70,.5);
-      flex: 0 0 auto;
-    }
-    .ca-legend-line.dashed { border-top-style: dashed; }
-
-    /* ── Inline filter selects & buttons ───────────────────────────── */
-    .ca-filter-grid {
-      display: grid;
-      gap: 8px;
-    }
-    .ca-toggle-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 5px;
-    }
-
-    /* ── Node inspector (inside sidebar) ───────────────────────────── */
-    .ca-inspector {
-      display: grid;
-      gap: 8px;
-    }
-    .ca-inspector-header {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      flex-wrap: wrap;
-    }
-
-    /* ── Capital por Tema chart module ─────────────────────────────── */
-    .ca-theme-stat-grid {
-      display: grid;
-      gap: 6px;
-    }
-    .ca-theme-stat {
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      background: rgba(255,255,255,.76);
-      padding: 7px 9px;
-      display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 2px;
-    }
-    .ca-theme-stat-label {
-      font-size: .7rem;
-      color: var(--muted);
-    }
-    .ca-theme-stat-value {
-      font-size: 1rem;
       font-weight: 800;
-      grid-column: 1;
-    }
-    .ca-theme-stat-badge {
-      grid-column: 2;
-      grid-row: 1 / span 2;
-      align-self: center;
-      font-size: .68rem;
-      font-weight: 700;
-      border-radius: 999px;
-      padding: 3px 8px;
-      background: rgba(15,118,110,.12);
-      color: var(--accent);
-    }
-
-    /* ── Top Inversores module ─────────────────────────────────────── */
-    .ca-investor-table {
-      display: grid;
-      gap: 6px;
-    }
-    .ca-investor-row {
-      display: grid;
-      gap: 4px;
-    }
-    .ca-investor-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      gap: 8px;
-    }
-    .ca-investor-name {
-      font-size: .8rem;
-      font-weight: 700;
-      color: var(--ink);
-    }
-    .ca-investor-count {
-      font-size: .72rem;
-      font-weight: 700;
+      letter-spacing: .07em;
+      text-transform: uppercase;
       color: var(--muted);
       white-space: nowrap;
     }
-    .ca-investor-bar-track {
-      height: 6px;
+    .ca-strip-stats {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+    .ca-strip-stat {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255,255,255,.78);
+      padding: 3px 10px;
+      font-size: .72rem;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+    .ca-strip-stat strong {
+      font-weight: 800;
+      color: var(--ink);
+      font-variant-numeric: tabular-nums;
+    }
+
+    /* ── Main layout ───────────────────────────────────────────────── */
+    .ca-layout {
+      flex: 1;
+      min-height: 0;
+      display: flex;
+      gap: 10px;
+    }
+
+    /* ── Investor sidebar ──────────────────────────────────────────── */
+    .ca-inv-sidebar {
+      width: 306px;
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: var(--panel);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+    .ca-inv-head {
+      padding: 12px 14px 10px;
+      border-bottom: 1px solid var(--line);
+      background: linear-gradient(180deg, rgba(255,255,255,.95), rgba(248,243,234,.72));
+      flex-shrink: 0;
+    }
+    .ca-inv-head-title {
+      font-size: .9rem;
+      font-weight: 800;
+      line-height: 1;
+      color: var(--ink);
+    }
+    .ca-inv-head-sub {
+      font-size: .7rem;
+      color: var(--muted);
+      margin-top: 3px;
+    }
+    .ca-inv-search-wrap {
+      padding: 7px 10px;
+      border-bottom: 1px solid rgba(217,206,190,.5);
+      flex-shrink: 0;
+    }
+    .ca-inv-search {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: #fff;
+      color: var(--ink);
+      font: inherit;
+      font-size: .78rem;
+      padding: 6px 9px;
+      box-sizing: border-box;
+    }
+    .ca-inv-list {
+      flex: 1;
+      overflow-y: auto;
+      padding: 8px;
+      display: grid;
+      gap: 5px;
+      align-content: start;
+    }
+
+    /* ── Investor card ─────────────────────────────────────────────── */
+    .iv {
+      border: 1px solid rgba(217,206,190,.7);
+      border-radius: 14px;
+      background: rgba(255,255,255,.76);
+      cursor: pointer;
+      transition: border-color 90ms, background 90ms;
+      overflow: hidden;
+    }
+    .iv:hover { border-color: rgba(92,82,70,.28); background: rgba(255,255,255,.92); }
+    .iv.active {
+      border-color: var(--accent);
+      background: rgba(58,168,163,.06);
+    }
+    .iv-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      padding: 8px 10px 5px;
+    }
+    .iv-name {
+      font-size: .78rem;
+      font-weight: 800;
+      color: var(--ink);
+      line-height: 1.2;
+      flex: 1;
+      min-width: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .iv-count {
+      font-size: .68rem;
+      font-weight: 700;
+      color: var(--muted);
+      background: rgba(0,0,0,.06);
+      border-radius: 5px;
+      padding: 1px 5px;
+      white-space: nowrap;
+      flex-shrink: 0;
+      font-variant-numeric: tabular-nums;
+    }
+    .iv.active .iv-count { background: rgba(15,118,110,.14); color: var(--accent); }
+    .iv-preview {
+      padding: 0 10px 8px;
+      display: grid;
+      gap: 5px;
+    }
+    .iv-theme-bar {
+      height: 5px;
       border-radius: 999px;
       background: #eadfce;
       overflow: hidden;
       display: flex;
     }
-    .ca-investor-bar-seg {
-      height: 100%;
+    .iv-theme-seg { height: 100%; }
+    .iv-countries {
+      display: flex;
+      gap: 4px;
+      flex-wrap: wrap;
     }
-    .ca-investor-foot {
-      font-size: .68rem;
+    .iv-country {
+      font-size: .67rem;
       color: var(--muted);
+      background: rgba(233,224,210,.55);
+      border-radius: 999px;
+      padding: 1px 6px;
+    }
+    /* Accordion detail */
+    .iv-detail { display: none; padding: 0 10px 10px; }
+    .iv.active .iv-detail { display: block; }
+    .iv-det-section {
+      font-size: .67rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin: 8px 0 4px;
+    }
+    .iv-det-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+      padding: 4px 0;
+      border-bottom: 1px solid rgba(217,206,190,.35);
+      font-size: .73rem;
+    }
+    .iv-det-row:last-child { border-bottom: 0; }
+    .iv-det-row span { color: var(--muted); }
+    .iv-det-row strong { font-weight: 700; color: var(--ink); }
+    .iv-det-theme-bar {
+      height: 5px;
+      border-radius: 999px;
+      background: #eadfce;
+      overflow: hidden;
+      margin: 2px 0;
+    }
+    .iv-det-theme-bar span { display: block; height: 100%; border-radius: 999px; }
+    .iv-type-chip {
+      font-size: .62rem;
+      font-weight: 700;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      border-radius: 999px;
+      padding: 2px 6px;
+      flex-shrink: 0;
+    }
+    .iv-type-fund { background: rgba(217,119,6,.12); color: #92400e; }
+    .iv-type-allocator { background: rgba(109,40,217,.12); color: #5b21b6; }
+    .iv-type-accelerator { background: rgba(5,150,105,.12); color: #065f46; }
+
+    /* ── Canvas area ───────────────────────────────────────────────── */
+    .ca-canvas-area {
+      flex: 1;
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: var(--panel);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+    .ca-toolbar {
+      padding: 7px 12px 6px;
+      border-bottom: 1px solid rgba(217,206,190,.44);
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      flex-wrap: wrap;
+      flex-shrink: 0;
+    }
+    .ca-stage {
+      position: relative;
+      flex: 1;
+      min-height: 0;
+      overflow: hidden;
+      background:
+        radial-gradient(ellipse at 48% 52%, rgba(217,119,6,.04), transparent 40rem),
+        linear-gradient(135deg, rgba(255,252,246,.9), rgba(244,238,228,.72));
     }
 
-    /* ── Existing classes used by capital-atlas.js (must keep) ──────── */
-    .atlas-layout {
-      display: none; /* replaced by ca-analysis-section */
-    }
-    .capital-hero-old { display: none; }
+    /* ── Toolbar controls ──────────────────────────────────────────── */
     .atlas-button {
       border: 1px solid var(--line);
       background: #fff;
       color: var(--ink);
       border-radius: 999px;
-      padding: 6px 11px;
+      padding: 5px 10px;
       font: inherit;
-      font-size: .82rem;
+      font-size: .76rem;
       cursor: pointer;
       white-space: nowrap;
     }
     .atlas-button:hover, .atlas-button.active {
       border-color: var(--accent);
-      background: rgba(58,168,163,.12);
+      background: rgba(58,168,163,.1);
     }
-    .atlas-select, .atlas-input {
-      width: 100%;
-      min-width: 0;
+    .atlas-select {
       border: 1px solid var(--line);
-      border-radius: 11px;
+      border-radius: 10px;
       background: #fff;
       color: var(--ink);
       font: inherit;
-      padding: 7px 9px;
-      font-size: .82rem;
+      padding: 5px 8px;
+      font-size: .76rem;
     }
-    .atlas-search-wrap { position: relative; min-width: 0; flex: 1; max-width: 320px; }
+    .atlas-search-wrap { position: relative; min-width: 0; flex: 1; max-width: 280px; }
+    .atlas-input {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: #fff;
+      color: var(--ink);
+      font: inherit;
+      padding: 5px 9px;
+      font-size: .78rem;
+      box-sizing: border-box;
+    }
     .atlas-search-results {
       position: absolute;
       z-index: 8;
       left: 0; right: 0;
-      top: calc(100% + 6px);
+      top: calc(100% + 5px);
       display: none;
-      max-height: 260px;
+      max-height: 240px;
       overflow: auto;
       border: 1px solid var(--line);
-      border-radius: 14px;
+      border-radius: 13px;
       background: rgba(255,252,246,.98);
       box-shadow: var(--shadow);
-      padding: 6px;
+      padding: 5px;
     }
-    .atlas-search-results.open { display: grid; gap: 4px; }
+    .atlas-search-results.open { display: grid; gap: 3px; }
     .atlas-search-result {
-      border: 0; border-radius: 10px;
+      border: 0; border-radius: 9px;
       background: transparent; color: var(--ink);
       cursor: pointer; display: grid; gap: 2px;
-      padding: 8px 10px; text-align: left; font: inherit;
+      padding: 7px 9px; text-align: left; font: inherit;
     }
     .atlas-search-result:hover { background: rgba(58,168,163,.12); }
-    .atlas-search-result small { color: var(--muted); font-size: .76rem; }
+    .atlas-search-result small { color: var(--muted); font-size: .74rem; }
+
+    /* ── Atlas graph components (used by capital-atlas.js) ─────────── */
+    #capital-atlas-svg { display: block; width: 100%; height: 100%; position: relative; z-index: 2; }
     .atlas-tooltip {
       position: absolute; z-index: 7;
       left: 18px; top: 18px;
-      width: min(340px, calc(100% - 44px));
+      width: min(320px, calc(100% - 40px));
       border: 1px solid rgba(217,206,190,.78);
-      border-radius: 18px;
+      border-radius: 16px;
       background: rgba(255,252,246,.94);
       box-shadow: 0 20px 54px rgba(54,45,35,.16);
       backdrop-filter: blur(12px);
-      padding: 12px 13px;
+      padding: 11px 12px;
       opacity: 0; transform: translateY(6px);
       gap: 8px; pointer-events: none;
       transition: opacity 120ms ease, transform 120ms ease;
     }
     .atlas-tooltip.visible { display: grid; opacity: 1; transform: translateY(0); }
     .tooltip-kicker { color: var(--accent); font-size: .68rem; letter-spacing: .12em; text-transform: uppercase; font-weight: 900; }
-    .tooltip-title { font-weight: 900; font-size: 1.02rem; line-height: 1.08; }
-    .tooltip-meta { color: var(--muted); font-size: .8rem; line-height: 1.35; }
-    .tooltip-chip-row { display: flex; flex-wrap: wrap; gap: 6px; }
-    .tooltip-chip { display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--line); border-radius: 999px; background: rgba(255,255,255,.84); color: var(--muted); font-size: .74rem; padding: 4px 8px; }
-    .tooltip-chip-dot { width: 8px; height: 8px; border-radius: 999px; flex: 0 0 auto; }
-    .tooltip-stats { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 6px; }
-    .tooltip-stat { border: 1px solid rgba(217,206,190,.74); border-radius: 11px; background: rgba(255,255,255,.76); padding: 6px 7px; }
-    .tooltip-stat span { display: block; color: var(--muted); font-size: .66rem; }
-    .tooltip-stat strong { display: block; margin-top: 2px; font-size: .95rem; }
-    .atlas-map-inspector {
-      position: absolute; left: 16px; top: 16px; z-index: 5;
-      width: min(330px, calc(100% - 110px));
-      border: 1px solid rgba(217,206,190,.72);
-      border-radius: 18px;
-      background: rgba(255,252,246,.84);
-      box-shadow: 0 18px 52px rgba(54,45,35,.12);
-      backdrop-filter: blur(10px);
-      padding: 12px 13px; display: grid; gap: 10px;
-      pointer-events: auto;
-    }
-    .map-inspector-top { display: flex; justify-content: space-between; gap: 10px; align-items: start; }
-    .map-inspector-kicker { color: var(--accent); font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; font-weight: 800; }
-    .map-inspector-title { font-weight: 900; line-height: 1.05; margin-top: 3px; }
-    .map-inspector-subtitle { color: var(--muted); font-size: .8rem; line-height: 1.34; margin-top: 4px; }
-    .map-inspector-metrics { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 6px; }
-    .map-mini-stat { border: 1px solid rgba(217,206,190,.7); border-radius: 12px; background: rgba(255,255,255,.72); padding: 6px 7px; }
-    .map-mini-stat span { display: block; color: var(--muted); font-size: .68rem; line-height: 1.1; }
-    .map-mini-stat strong { display: block; margin-top: 3px; font-size: .98rem; line-height: 1; }
-    .map-inspector-actions { display: flex; flex-wrap: wrap; gap: 6px; }
-    .map-inspector-actions .atlas-button { font-size: .78rem; padding: 6px 9px; background: rgba(255,255,255,.82); }
-    #capital-atlas-svg { display: block; width: 100%; height: 100%; position: relative; z-index: 2; }
-    .atlas-controls { position: absolute; right: 14px; top: 14px; display: grid; gap: 7px; z-index: 5; }
-    .atlas-zoom { width: 40px; height: 40px; border-radius: 11px; border: 1px solid var(--line); background: rgba(255,255,255,.95); box-shadow: var(--shadow); font: inherit; font-size: 1rem; cursor: pointer; }
-    .atlas-zoom.hint { width: auto; min-width: 40px; padding: 0 9px; font-size: .74rem; color: var(--muted); cursor: default; }
-    .atlas-note { color: var(--muted); font-size: .76rem; line-height: 1.42; flex: 1; }
-    .backstage-panels { display: none; }
-    /* Inspector detail classes */
-    .stat-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 8px; }
-    .stat-grid.compact { grid-template-columns: repeat(3, minmax(0,1fr)); gap: 6px; }
-    .stat-card { border: 1px solid var(--line); border-radius: 14px; background: rgba(255,255,255,.78); padding: 8px 9px; }
-    .stat-label { color: var(--muted); font-size: .74rem; margin-bottom: 4px; }
-    .stat-value { font-weight: 800; font-size: 1.1rem; }
-    .ranking-list { display: grid; gap: 8px; }
-    .theme-mix-list { display: grid; gap: 9px; }
-    .theme-mix-row { display: grid; gap: 5px; }
-    .theme-mix-top { display: flex; justify-content: space-between; gap: 8px; color: var(--ink); font-size: .86rem; font-weight: 700; }
-    .theme-mix-bar { height: 8px; border-radius: 999px; background: #eadfce; overflow: hidden; display: flex; }
+    .tooltip-title { font-weight: 900; font-size: 1rem; line-height: 1.08; }
+    .tooltip-meta { color: var(--muted); font-size: .78rem; line-height: 1.35; }
+    .tooltip-chip-row { display: flex; flex-wrap: wrap; gap: 5px; }
+    .tooltip-chip { display: inline-flex; align-items: center; gap: 5px; border: 1px solid var(--line); border-radius: 999px; background: rgba(255,255,255,.84); color: var(--muted); font-size: .72rem; padding: 3px 7px; }
+    .tooltip-chip-dot { width: 7px; height: 7px; border-radius: 999px; flex: 0 0 auto; }
+    .tooltip-stats { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 5px; }
+    .tooltip-stat { border: 1px solid rgba(217,206,190,.74); border-radius: 10px; background: rgba(255,255,255,.76); padding: 5px 6px; }
+    .tooltip-stat span { display: block; color: var(--muted); font-size: .64rem; }
+    .tooltip-stat strong { display: block; margin-top: 2px; font-size: .9rem; }
+    .atlas-controls { position: absolute; right: 12px; top: 12px; display: grid; gap: 6px; z-index: 5; }
+    .atlas-zoom { width: 36px; height: 36px; border-radius: 10px; border: 1px solid var(--line); background: rgba(255,255,255,.95); box-shadow: var(--shadow); font: inherit; font-size: .94rem; cursor: pointer; }
+    .atlas-zoom.hint { width: auto; min-width: 36px; padding: 0 8px; font-size: .7rem; color: var(--muted); cursor: default; }
+
+    /* Inspector classes (used by capital-atlas.js renderDetail) */
+    .stat-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 7px; }
+    .stat-grid.compact { grid-template-columns: repeat(3, minmax(0,1fr)); gap: 5px; }
+    .stat-card { border: 1px solid var(--line); border-radius: 13px; background: rgba(255,255,255,.78); padding: 7px 8px; }
+    .stat-label { color: var(--muted); font-size: .72rem; margin-bottom: 3px; }
+    .stat-value { font-weight: 800; font-size: 1rem; }
+    .ranking-list { display: grid; gap: 7px; }
+    .theme-mix-list { display: grid; gap: 8px; }
+    .theme-mix-row { display: grid; gap: 4px; }
+    .theme-mix-top { display: flex; justify-content: space-between; gap: 8px; color: var(--ink); font-size: .84rem; font-weight: 700; }
+    .theme-mix-bar { height: 7px; border-radius: 999px; background: #eadfce; overflow: hidden; display: flex; }
     .theme-mix-fill { height: 100%; }
     .theme-mix-fill.mapped { border-radius: 999px 0 0 999px; }
     .theme-mix-fill.gap { background: rgba(120,108,92,.26); border-radius: 0 999px 999px 0; }
-    .theme-mix-foot { color: var(--muted); font-size: .75rem; }
-    .ranking-row { border: 1px solid rgba(217,206,190,.78); border-radius: 13px; background: rgba(255,255,255,.76); padding: 9px 10px; cursor: pointer; display: grid; gap: 5px; }
+    .theme-mix-foot { color: var(--muted); font-size: .73rem; }
+    .ranking-row { border: 1px solid rgba(217,206,190,.78); border-radius: 12px; background: rgba(255,255,255,.76); padding: 8px 9px; cursor: pointer; display: grid; gap: 4px; }
     .ranking-row:hover { border-color: var(--accent); }
     .ranking-row.active { border-color: var(--accent); background: rgba(58,168,163,.1); }
     .ranking-top { display: flex; justify-content: space-between; gap: 8px; color: var(--ink); font-weight: 700; line-height: 1.25; }
-    .ranking-meta, .detail-muted { color: var(--muted); font-size: .84rem; line-height: 1.42; }
-    .detail-chip-row { display: flex; flex-wrap: wrap; gap: 7px; }
-    .detail-chip { border-radius: 999px; border: 1px solid var(--line); background: #fff; color: var(--muted); font-size: .78rem; padding: 4px 9px; }
-    .edge-list { display: grid; gap: 7px; max-height: 260px; overflow: auto; }
-    .edge-list.compact { max-height: 180px; }
-    .edge-item { border: 1px solid rgba(217,206,190,.78); border-radius: 12px; background: rgba(255,255,255,.7); padding: 8px 9px; }
+    .ranking-meta, .detail-muted { color: var(--muted); font-size: .82rem; line-height: 1.42; }
+    .detail-chip-row { display: flex; flex-wrap: wrap; gap: 6px; }
+    .detail-chip { border-radius: 999px; border: 1px solid var(--line); background: #fff; color: var(--muted); font-size: .76rem; padding: 3px 8px; }
+    .edge-list { display: grid; gap: 6px; max-height: 240px; overflow: auto; }
+    .edge-list.compact { max-height: 160px; }
+    .edge-item { border: 1px solid rgba(217,206,190,.78); border-radius: 11px; background: rgba(255,255,255,.7); padding: 7px 8px; }
     button.edge-item { color: inherit; font: inherit; text-align: left; cursor: pointer; }
     button.edge-item:hover { border-color: var(--accent); background: rgba(58,168,163,.08); }
-    .detail-title-card { border: 1px solid rgba(217,206,190,.78); border-radius: 16px; background: linear-gradient(135deg,rgba(255,255,255,.88),rgba(248,243,234,.78)); padding: 11px 12px; display: grid; gap: 5px; }
-    .detail-title-card h3, .detail-block h3 { margin: 0; font-size: 1.02rem; line-height: 1.12; }
-    .detail-title-card p { margin: 3px 0 0; color: var(--muted); font-size: .84rem; line-height: 1.42; }
+    .detail-title-card { border: 1px solid rgba(217,206,190,.78); border-radius: 15px; background: linear-gradient(135deg,rgba(255,255,255,.88),rgba(248,243,234,.78)); padding: 10px 11px; display: grid; gap: 4px; }
+    .detail-title-card h3, .detail-block h3 { margin: 0; font-size: .98rem; line-height: 1.12; }
+    .detail-title-card p { margin: 3px 0 0; color: var(--muted); font-size: .82rem; line-height: 1.42; }
     .organization-card { border-color: rgba(15,118,110,.22); background: radial-gradient(circle at 92% 0%, rgba(209,244,238,.66), transparent 7rem), linear-gradient(135deg, rgba(255,255,255,.92), rgba(248,243,234,.82)); }
-    .organization-kicker { color: var(--accent); font-size: .72rem; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; }
-    .org-insight-grid { display: grid; gap: 8px; }
-    .org-insight-card { border: 1px solid rgba(217,206,190,.78); border-radius: 14px; background: rgba(255,255,255,.72); padding: 9px 10px; display: grid; gap: 4px; }
-    .org-insight-card span { color: var(--muted); font-size: .74rem; }
-    .org-insight-card strong { color: #332b22; font-size: .84rem; line-height: 1.35; }
-    .detail-subtitle { color: var(--accent); font-size: .82rem; font-weight: 800; }
-    .detail-block { display: grid; gap: 8px; padding-top: 3px; }
-    .detail-callout { border: 1px solid rgba(15,118,110,.22); border-radius: 14px; background: rgba(209,244,238,.32); padding: 9px 10px; display: grid; gap: 3px; color: var(--muted); font-size: .82rem; line-height: 1.38; }
-    .detail-callout strong { color: var(--accent); font-size: .9rem; }
-    .detail-bars { display: grid; gap: 8px; }
-    .detail-bar-row { display: grid; gap: 4px; }
-    .detail-bar-top { display: flex; justify-content: space-between; gap: 8px; font-size: .8rem; font-weight: 800; }
-    .detail-bar-track { height: 7px; border-radius: 999px; background: #eadfce; overflow: hidden; }
+    .organization-kicker { color: var(--accent); font-size: .7rem; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; }
+    .org-insight-grid { display: grid; gap: 7px; }
+    .org-insight-card { border: 1px solid rgba(217,206,190,.78); border-radius: 13px; background: rgba(255,255,255,.72); padding: 8px 9px; display: grid; gap: 3px; }
+    .org-insight-card span { color: var(--muted); font-size: .72rem; }
+    .org-insight-card strong { color: #332b22; font-size: .82rem; line-height: 1.35; }
+    .detail-subtitle { color: var(--accent); font-size: .8rem; font-weight: 800; }
+    .detail-block { display: grid; gap: 7px; padding-top: 3px; }
+    .detail-callout { border: 1px solid rgba(15,118,110,.22); border-radius: 13px; background: rgba(209,244,238,.32); padding: 8px 9px; display: grid; gap: 3px; color: var(--muted); font-size: .8rem; line-height: 1.38; }
+    .detail-callout strong { color: var(--accent); font-size: .88rem; }
+    .detail-bars { display: grid; gap: 7px; }
+    .detail-bar-row { display: grid; gap: 3px; }
+    .detail-bar-top { display: flex; justify-content: space-between; gap: 8px; font-size: .78rem; font-weight: 800; }
+    .detail-bar-track { height: 6px; border-radius: 999px; background: #eadfce; overflow: hidden; }
     .detail-bar-track span { display: block; height: 100%; border-radius: 999px; }
-    .detail-bar-foot, .connection-source { color: var(--muted); font-size: .72rem; }
-    .detail-country-line { display: flex; flex-wrap: wrap; gap: 5px; }
-    .detail-country-line span { border-radius: 999px; background: rgba(233,224,210,.72); color: var(--muted); font-size: .74rem; padding: 3px 7px; }
-    .connection-card { display: grid; gap: 4px; }
-    .connection-evidence { color: var(--accent); font-size: .76rem; font-weight: 800; }
-    .detail-empty { border: 1px dashed rgba(154,140,120,.45); border-radius: 12px; color: var(--muted); padding: 9px 10px; font-size: .82rem; }
-    .detail-metric-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 7px; }
-    .detail-metric { border: 1px solid rgba(217,206,190,.76); border-radius: 12px; background: rgba(255,255,255,.76); padding: 8px; }
-    .detail-metric span { display: block; color: var(--muted); font-size: .72rem; }
-    .detail-metric strong { display: block; font-size: 1.06rem; margin-top: 2px; }
+    .detail-bar-foot, .connection-source { color: var(--muted); font-size: .7rem; }
+    .detail-country-line { display: flex; flex-wrap: wrap; gap: 4px; }
+    .detail-country-line span { border-radius: 999px; background: rgba(233,224,210,.72); color: var(--muted); font-size: .72rem; padding: 2px 6px; }
+    .connection-card { display: grid; gap: 3px; }
+    .connection-evidence { color: var(--accent); font-size: .74rem; font-weight: 800; }
+    .detail-empty { border: 1px dashed rgba(154,140,120,.45); border-radius: 11px; color: var(--muted); padding: 8px 9px; font-size: .8rem; }
+    .detail-metric-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 6px; }
+    .detail-metric { border: 1px solid rgba(217,206,190,.76); border-radius: 11px; background: rgba(255,255,255,.76); padding: 7px; }
+    .detail-metric span { display: block; color: var(--muted); font-size: .7rem; }
+    .detail-metric strong { display: block; font-size: 1rem; margin-top: 2px; }
     .detail-metric.primary { border-color: rgba(15,118,110,.28); background: rgba(209,244,238,.28); }
     .detail-metric.primary strong { color: var(--accent); }
     .panel-head { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
-    .panel-head h2 { margin: 0; font-size: .9rem; }
+    .panel-head h2 { margin: 0; font-size: .88rem; }
+    .atlas-note { color: var(--muted); font-size: .73rem; line-height: 1.4; }
+    .atlas-map-inspector { display: none; } /* unused in new layout */
 
   </style>
 </head>
 <body class="capital-atlas-page">
 <div class="page-shell">
 
-  <!-- ── Hero ────────────────────────────────────────────────────────── -->
-  <header class="capital-hero">
-    <div class="hero-copy">
-      <p class="eyebrow">Capital Network Atlas · BIO LATAM</p>
-      <h1>Mapa de movilización de capital</h1>
-      <p class="lede">Quién financia el universo BIO, cómo se concentra el capital por tema y geografía, y dónde quedan vacíos de cobertura. Cada nodo es un fondo, allocator o startup; las aristas son relaciones de inversión auditadas.</p>
+  <!-- ── Hero strip ──────────────────────────────────────────────────── -->
+  <div class="ca-strip">
+    <span class="ca-strip-title">Capital Atlas · BIO LATAM</span>
+    <div class="ca-strip-stats">
+      <span class="ca-strip-stat"><strong id="stat-funds">—</strong> fondos</span>
+      <span class="ca-strip-stat"><strong id="stat-funded">—</strong> startups con capital</span>
+      <span class="ca-strip-stat"><strong id="stat-coverage">—</strong> cobertura</span>
+      <span class="ca-strip-stat"><strong id="stat-edges">—</strong> edges</span>
     </div>
-    <div class="hero-meta">
-      <div class="meta-card">
-        <div class="meta-label">Fondos mapeados</div>
-        <div class="meta-value accent" id="stat-funds">—</div>
-        <div class="meta-sub">VCs, aceleradoras, CVCs</div>
-      </div>
-      <div class="meta-card">
-        <div class="meta-label">Startups BIO con capital</div>
-        <div class="meta-value accent" id="stat-funded">—</div>
-        <div class="meta-sub">de las startups include</div>
-      </div>
-      <div class="meta-card">
-        <div class="meta-label">Cobertura</div>
-        <div class="meta-value" id="stat-coverage">—</div>
-        <div class="meta-sub">startups con ≥1 edge</div>
-      </div>
-      <div class="meta-card">
-        <div class="meta-label">Relaciones auditadas</div>
-        <div class="meta-value" id="stat-edges">—</div>
-        <div class="meta-sub">edges públicamente verificables</div>
-      </div>
-    </div>
-  </header>
-
-  <section class="ca-analysis-section">
-
-    <!-- ── Módulo 1: Red de Capital ──────────────────────────────────── -->
-    <div class="ca-module" id="atlas-network-module">
-
-      <aside class="ca-sidebar">
-        <div class="ca-sidebar-head">
-          <div class="ca-eyebrow">Estructura de inversión</div>
-          <h2 class="ca-title">Red de Capital</h2>
-          <p class="ca-desc">Grafo bipartito de fondos y startups BIO. Nodos coloreados por tema; tamaño proporcional a conectividad. Aristas auditadas por evidencia pública.</p>
-        </div>
-        <div class="ca-sidebar-body">
-
-          <div class="ca-section-lbl">Modo de visualización</div>
-          <select id="atlas-mode" class="atlas-select">
-            <option value="capital_core">Capital Core</option>
-            <option value="coverage_gaps">Vacíos de capital</option>
-            <option value="co_investment">Co-investment</option>
-            <option value="allocator_layer">Allocator Layer</option>
-            <option value="full_network" selected>Full Network</option>
-          </select>
-
-          <div id="atlas-note" class="atlas-note" style="font-size:.73rem;padding:6px 8px;border:1px solid var(--line);border-radius:10px;background:rgba(255,255,255,.6)"></div>
-
-          <div class="ca-section-lbl">Filtros</div>
-          <div class="ca-filter-grid">
-            <select id="atlas-theme" class="atlas-select"><option value="all">Todos los temas BIO</option></select>
-            <select id="atlas-country" class="atlas-select"><option value="all">Todos los países</option></select>
-            <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px">
-              <select id="atlas-confidence" class="atlas-select">
-                <option value="0.75">Conf ≥ 0.75</option>
-                <option value="0.9">Conf ≥ 0.90</option>
-                <option value="0" selected>Todas</option>
-              </select>
-              <select id="atlas-source-tier" class="atlas-select">
-                <option value="all">Toda fuente</option>
-                <option value="public_url">Solo URL pública</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="ca-section-lbl">Capas</div>
-          <div class="ca-toggle-row">
-            <button id="atlas-labels"   class="atlas-button active" type="button">Labels</button>
-            <button id="atlas-universe" class="atlas-button active" type="button">Universo BIO</button>
-            <button id="atlas-backbone" class="atlas-button active" type="button">Backbone</button>
-            <button id="atlas-clear"    class="atlas-button"        type="button">Limpiar</button>
-          </div>
-
-          <div class="ca-section-lbl">Leyenda</div>
-          <div class="ca-legend">
-            <span class="ca-legend-item"><span class="ca-legend-dot" style="background:#d97706"></span>Fondo</span>
-            <span class="ca-legend-item"><span class="ca-legend-diamond" style="background:#6d28d9"></span>Allocator/LP</span>
-            <span class="ca-legend-item"><span class="ca-legend-dot" style="background:#7033BC"></span>Startup BIO</span>
-            <span class="ca-legend-item"><span class="ca-legend-dot" style="background:#c8bda9"></span>Sin capital</span>
-            <span class="ca-legend-item"><span class="ca-legend-line"></span>URL pública</span>
-            <span class="ca-legend-item"><span class="ca-legend-line dashed"></span>Fuente canónica</span>
-          </div>
-          <div style="color:var(--muted);font-size:.68rem;line-height:1.5;margin-top:6px;padding:0 2px">
-            <strong style="color:var(--ink)">Tamaño:</strong> Startups → valuación estimada · Fondos → valuación agregada del portfolio
-          </div>
-
-          <hr class="ca-divider">
-          <div class="ca-section-lbl">Nodo seleccionado</div>
-          <div class="ca-inspector">
-            <div class="ca-inspector-header">
-              <span id="atlas-detail-badge" class="pill muted">Sin selección</span>
-            </div>
-            <div id="atlas-detail" class="detail-muted" style="font-size:.78rem;line-height:1.42">Selecciona un fondo, startup o allocator para ver su rol, tesis, evidencia y vecindad en la red.</div>
-          </div>
-
-        </div>
-      </aside><!-- .ca-sidebar -->
-
-      <div class="ca-main">
-        <div class="ca-toolbar">
-          <div class="atlas-search-wrap">
-            <input id="atlas-search" class="atlas-input" type="search" placeholder="Buscar fondo, startup o allocator…" autocomplete="off">
-            <div id="atlas-search-results" class="atlas-search-results"></div>
-          </div>
-          <div style="display:flex;gap:6px;margin-left:auto;flex-shrink:0">
-            <button id="atlas-run-layout" class="atlas-button" type="button">Reordenar</button>
-            <button id="atlas-reset"      class="atlas-button" type="button">Recentrar</button>
-          </div>
-        </div>
-        <div class="ca-stage">
-          <svg id="capital-atlas-svg" width="100%" height="100%" preserveAspectRatio="none"></svg>
-          <div id="atlas-tooltip" class="atlas-tooltip"></div>
-          <div class="atlas-controls">
-            <button class="atlas-zoom hint"    type="button" tabindex="-1">Rueda = zoom</button>
-            <button id="atlas-zoom-in"         class="atlas-zoom" type="button">+</button>
-            <button id="atlas-zoom-out"        class="atlas-zoom" type="button">−</button>
-            <button id="atlas-reset-view"      class="atlas-zoom" type="button">R</button>
-          </div>
-        </div>
-      </div><!-- .ca-main -->
-
-    </div><!-- .ca-module Red de Capital -->
-
-    <!-- ── Módulo 2: Capital por Tema ───────────────────────────────── -->
-    <div class="ca-module">
-
-      <aside class="ca-sidebar">
-        <div class="ca-sidebar-head">
-          <div class="ca-eyebrow">Cobertura financiera</div>
-          <h2 class="ca-title">Capital por Tema</h2>
-          <p class="ca-desc">Qué fracción de cada tema BIO tiene al menos una relación de capital documentada. La barra llena indica cobertura; la tenue, el vacío pendiente.</p>
-        </div>
-        <div class="ca-sidebar-body">
-          <div class="ca-section-lbl">Lectura</div>
-          <p style="font-size:.73rem;color:var(--muted);line-height:1.45;margin:0">Cada fila = un tema. La barra de color es la proporción de startups con ≥1 edge de capital. El fondo gris es el universo total include.</p>
-
-          <div class="ca-section-lbl">Resumen global</div>
-          <div class="ca-theme-stat-grid" id="tema-summary-stats">
-            <!-- populated by script -->
-          </div>
-
-          <div class="ca-section-lbl" style="margin-top:4px">Vacíos críticos</div>
-          <div id="tema-gaps-list" style="display:grid;gap:5px;font-size:.74rem;color:var(--muted)">
-            <!-- populated by script -->
-          </div>
-        </div>
-      </aside>
-
-      <div class="ca-main">
-        <div class="ca-toolbar" style="min-height:40px">
-          <span style="font-size:.75rem;color:var(--muted)">Startups BIO · scope = include · cobertura de capital por tema editorial</span>
-          <span id="tema-chart-note" style="margin-left:auto;font-size:.73rem;color:var(--muted)"></span>
-        </div>
-        <div class="ca-stage" style="height:360px">
-          <svg id="tema-chart-svg" width="100%" height="100%"></svg>
-        </div>
-      </div>
-
-    </div><!-- .ca-module Capital por Tema -->
-
-    <!-- ── Módulo 3: Top Inversores ─────────────────────────────────── -->
-    <div class="ca-module">
-
-      <aside class="ca-sidebar">
-        <div class="ca-sidebar-head">
-          <div class="ca-eyebrow">Protagonistas del capital</div>
-          <h2 class="ca-title">Top Inversores</h2>
-          <p class="ca-desc">Los fondos con mayor presencia en el ecosistema BIO LATAM, ordenados por portfolio. Cada segmento de barra representa un tema de inversión.</p>
-        </div>
-        <div class="ca-sidebar-body">
-          <div class="ca-section-lbl">Lectura</div>
-          <p style="font-size:.73rem;color:var(--muted);line-height:1.45;margin:0">Cada barra = un inversor. Los segmentos coloreados muestran en qué temas tiene portfolio. El ancho total refleja el número de startups BIO invertidas.</p>
-
-          <div class="ca-section-lbl" style="margin-top:4px">Leyenda de temas</div>
-          <div id="investor-theme-legend" style="display:grid;gap:4px">
-            <!-- populated by script -->
-          </div>
-
-          <div class="ca-section-lbl" style="margin-top:4px">Tipos de actor</div>
-          <div class="ca-legend" style="flex-direction:column;align-items:start;gap:4px">
-            <span class="ca-legend-item" style="font-size:.68rem"><span class="ca-legend-dot" style="background:#d97706"></span>Fondo VC / aceleradora</span>
-            <span class="ca-legend-item" style="font-size:.68rem"><span class="ca-legend-diamond" style="background:#6d28d9"></span>Allocator / LP / DFI</span>
-          </div>
-        </div>
-      </aside>
-
-      <div class="ca-main">
-        <div class="ca-toolbar" style="min-height:40px">
-          <span style="font-size:.75rem;color:var(--muted)">Top 25 inversores por portfolio BIO · segmentado por tema</span>
-          <span id="investor-chart-note" style="margin-left:auto;font-size:.73rem;color:var(--muted)"></span>
-        </div>
-        <div class="ca-stage" style="height:520px">
-          <svg id="investor-chart-svg" width="100%" height="100%"></svg>
-        </div>
-      </div>
-
-    </div><!-- .ca-module Top Inversores -->
-
-  </section><!-- .ca-analysis-section -->
-
-  <!-- Backstage: used by capital-atlas.js, intentionally hidden -->
-  <div class="backstage-panels" aria-hidden="true">
-    <div id="atlas-ranking"></div>
-    <div id="atlas-theme-mix"></div>
-    <div id="atlas-summary"></div>
   </div>
 
+  <!-- ── Main layout ─────────────────────────────────────────────────── -->
+  <div class="ca-layout">
+
+    <!-- ── Investor sidebar ──────────────────────────────────────────── -->
+    <aside class="ca-inv-sidebar">
+      <div class="ca-inv-head">
+        <div class="ca-inv-head-title">Inversores</div>
+        <div class="ca-inv-head-sub" id="inv-head-sub">Seleccioná un fondo para ver su portfolio</div>
+      </div>
+      <div class="ca-inv-search-wrap">
+        <input id="inv-filter" class="ca-inv-search" type="search" placeholder="Filtrar inversores…" autocomplete="off">
+      </div>
+      <div class="ca-inv-list" id="ca-inv-list">
+        <!-- populated by script -->
+      </div>
+    </aside>
+
+    <!-- ── Force graph canvas ─────────────────────────────────────────── -->
+    <div class="ca-canvas-area">
+      <div class="ca-toolbar">
+        <div class="atlas-search-wrap">
+          <input id="atlas-search" class="atlas-input" type="search" placeholder="Buscar fondo, startup…" autocomplete="off">
+          <div id="atlas-search-results" class="atlas-search-results"></div>
+        </div>
+        <select id="atlas-mode" class="atlas-select">
+          <option value="capital_core">Capital Core</option>
+          <option value="coverage_gaps">Vacíos</option>
+          <option value="co_investment">Co-investment</option>
+          <option value="allocator_layer">Allocators</option>
+          <option value="full_network" selected>Full Network</option>
+        </select>
+        <button id="atlas-labels"   class="atlas-button active" type="button">Labels</button>
+        <button id="atlas-backbone" class="atlas-button active" type="button">Backbone</button>
+        <button id="atlas-universe" class="atlas-button active" type="button">Universo</button>
+        <div style="display:flex;gap:5px;margin-left:auto">
+          <button id="atlas-run-layout" class="atlas-button" type="button">Reordenar</button>
+          <button id="atlas-reset"      class="atlas-button" type="button">Recentrar</button>
+          <button id="atlas-clear"      class="atlas-button" type="button">Limpiar</button>
+        </div>
+      </div>
+      <div class="ca-stage">
+        <svg id="capital-atlas-svg" width="100%" height="100%" preserveAspectRatio="none"></svg>
+        <div id="atlas-tooltip" class="atlas-tooltip"></div>
+        <div class="atlas-controls">
+          <button class="atlas-zoom hint"   type="button" tabindex="-1">Rueda = zoom</button>
+          <button id="atlas-zoom-in"        class="atlas-zoom" type="button">+</button>
+          <button id="atlas-zoom-out"       class="atlas-zoom" type="button">−</button>
+          <button id="atlas-reset-view"     class="atlas-zoom" type="button">R</button>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- .ca-layout -->
+
 </div><!-- .page-shell -->
+
+<!-- ── Backstage: required by capital-atlas.js, hidden ───────────── -->
+<div style="display:none" aria-hidden="true">
+  <div id="atlas-ranking"></div>
+  <div id="atlas-theme-mix"></div>
+  <div id="atlas-summary"></div>
+  <div id="atlas-detail"></div>
+  <span id="atlas-detail-badge"></span>
+  <div id="atlas-note"></div>
+  <select id="atlas-theme"><option value="all">Todos</option></select>
+  <select id="atlas-country"><option value="all">Todos</option></select>
+  <select id="atlas-confidence"><option value="0" selected>Todas</option></select>
+  <select id="atlas-source-tier"><option value="all">Toda fuente</option></select>
+</div>
 
 <script src="./startup-themes-data.js?v=20260517" defer></script>
 <script src="./text-clean.js?v=20260422aa" defer></script>
 <script src="./theme-system.js?v=20260430english-semantic" defer></script>
 <script src="./semantic-single-level-data.js?v=20260508shared-taxonomy" defer></script>
 <script src="./capital-atlas-data.js?v=20260507evidence" defer></script>
-<script src="./capital-atlas.js?v=20260508product-copy-clean" defer></script>
+<script src="./capital-atlas.js?v=20260519accordion" defer></script>
 
-<!-- ── Analytics scripts (run after deferred externals) ───────────── -->
 <script>
 document.addEventListener('DOMContentLoaded', function(){
 
-// ── Hero stats ──────────────────────────────────────────────────────
-(function(){
-  const D = window.CAPITAL_ATLAS_DATA;
-  if (!D || !D.nodes) return;
-  const funds     = D.nodes.filter(n => n.type === 'fund' || n.type === 'allocator' || n.investor_type);
-  const bioInc    = D.nodes.filter(n => n.type === 'startup' && n.scope_decision === 'include');
-  const funded    = bioInc.filter(n => n.capital_status === 'capital_mapped');
-  const pubEdges  = (D.edges||[]).filter(e => e.evidence_tier === 'public_url' || e.audited);
-  const pct       = bioInc.length ? Math.round(funded.length / bioInc.length * 100) : 0;
-  document.getElementById('stat-funds').textContent     = funds.length;
-  document.getElementById('stat-funded').textContent    = funded.length + ' / ' + bioInc.length;
-  document.getElementById('stat-coverage').textContent  = pct + '%';
-  document.getElementById('stat-edges').textContent     = pubEdges.length + ' / ' + (D.edges||[]).length;
-})();
-
-// ── Capital por Tema chart ──────────────────────────────────────────
-(function(){
   const D = window.CAPITAL_ATLAS_DATA;
   if (!D || !D.nodes) return;
 
-  const THEME_PAL = {
-    "Therapeutics":                            "#7033BC",
-    "Diagnostics & Health Access":             "#1A6DB5",
-    "Food Systems & Alt Proteins":             "#C25A2A",
-    "Bioinputs & Crop Resilience":             "#2A7A42",
-    "Nature & Ecosystem Tech":                 "#127A6E",
-    "Farm Intelligence":                       "#2E4E8C",
-    "Biomaterials & Circular Economy":         "#8B6D14",
-    "Biomanufacturing & Fermentation Economy": "#6B8C3A",
-  };
-  const THEME_SHORT = {
-    "Therapeutics":                            "Therapeutics",
-    "Diagnostics & Health Access":             "Diagnostics",
-    "Food Systems & Alt Proteins":             "Food Systems",
-    "Bioinputs & Crop Resilience":             "Bioinputs",
-    "Nature & Ecosystem Tech":                 "Nature Tech",
-    "Farm Intelligence":                       "Farm Intel",
-    "Biomaterials & Circular Economy":         "Biomaterials",
-    "Biomanufacturing & Fermentation Economy": "Biomanufacturing",
-  };
-
-  // Compute per-theme stats
-  const bioInc = D.nodes.filter(n => n.type === 'startup' && n.scope_decision === 'include' && n.theme && THEME_PAL[n.theme]);
-  const themeStats = {};
-  bioInc.forEach(s => {
-    if (!themeStats[s.theme]) themeStats[s.theme] = { total: 0, funded: 0 };
-    themeStats[s.theme].total++;
-    if (s.capital_status === 'capital_mapped') themeStats[s.theme].funded++;
-  });
-  const themes = Object.keys(themeStats).sort((a,b) => {
-    return (themeStats[b].funded / themeStats[b].total) - (themeStats[a].funded / themeStats[a].total);
-  });
-
-  // Sidebar summary stats
-  const totalFunded = bioInc.filter(s => s.capital_status === 'capital_mapped').length;
-  const totalBio    = bioInc.length;
-  const avgCov      = totalBio ? Math.round(totalFunded / totalBio * 100) : 0;
-  const statsEl     = document.getElementById('tema-summary-stats');
-  if (statsEl) {
-    statsEl.innerHTML =
-      `<div class="ca-theme-stat"><span class="ca-theme-stat-label">Startups BIO include</span><strong class="ca-theme-stat-value">${totalBio}</strong><span class="ca-theme-stat-badge">${avgCov}% cob.</span></div>` +
-      `<div class="ca-theme-stat"><span class="ca-theme-stat-label">Con capital mapeado</span><strong class="ca-theme-stat-value">${totalFunded}</strong></div>` +
-      `<div class="ca-theme-stat"><span class="ca-theme-stat-label">Sin capital doc.</span><strong class="ca-theme-stat-value" style="color:#8a7d70">${totalBio - totalFunded}</strong></div>`;
-  }
-
-  // Gaps list (themes < 70% coverage)
-  const gapsEl = document.getElementById('tema-gaps-list');
-  if (gapsEl) {
-    const gaps = themes.filter(t => (themeStats[t].funded / themeStats[t].total) < 0.70);
-    if (gaps.length === 0) {
-      gapsEl.textContent = 'Todos los temas superan el 70% de cobertura.';
-    } else {
-      gapsEl.innerHTML = gaps.map(t => {
-        const s = themeStats[t];
-        const pct = Math.round(s.funded / s.total * 100);
-        return `<div style="display:flex;align-items:center;gap:6px"><span style="width:8px;height:8px;border-radius:50%;background:${THEME_PAL[t]};flex-shrink:0;display:inline-block"></span><span>${THEME_SHORT[t]}: ${pct}% (${s.funded}/${s.total})</span></div>`;
-      }).join('');
-    }
-  }
-
-  // SVG chart
-  const svgEl = document.getElementById('tema-chart-svg');
-  if (!svgEl) return;
-
-  function renderChart() {
-    svgEl.innerHTML = '';
-    const W = svgEl.parentElement.clientWidth  || 700;
-    const H = svgEl.parentElement.clientHeight || 360;
-    const NS = 'http://www.w3.org/2000/svg';
-    svgEl.setAttribute('viewBox', `0 0 ${W} ${H}`);
-
-    function el(tag, attrs, parent) {
-      const e = document.createElementNS(NS, tag);
-      for (const [k,v] of Object.entries(attrs)) e.setAttribute(k, v);
-      if (parent) parent.appendChild(e);
-      return e;
-    }
-
-    const PAD = { t: 28, r: 90, b: 24, l: 118 };
-    const CW  = W - PAD.l - PAD.r;
-    const CH  = H - PAD.t - PAD.b;
-    const N   = themes.length;
-    const rowH = CH / N;
-    const barH = Math.min(rowH * 0.52, 18);
-
-    el('rect', {x:0,y:0,width:W,height:H,fill:'#f7f4ee'}, svgEl);
-
-    // Grid lines
-    [0.25, 0.5, 0.75, 1.0].forEach(frac => {
-      const x = PAD.l + frac * CW;
-      el('line', {x1:x,y1:PAD.t-14,x2:x,y2:H-PAD.b,
-        stroke:'rgba(200,192,178,.35)','stroke-width':'0.7','stroke-dasharray':'3,4'}, svgEl);
-      const lbl = el('text', {x,y:PAD.t-17,'text-anchor':'middle',
-        'font-size':'7.5','font-weight':'600',fill:'rgba(120,108,92,.65)',
-        'font-family':'DM Sans,sans-serif'}, svgEl);
-      lbl.textContent = Math.round(frac*100)+'%';
-    });
-
-    themes.forEach((theme, i) => {
-      const s   = themeStats[theme];
-      const pct = s.funded / s.total;
-      const col = THEME_PAL[theme];
-      const midY = PAD.t + (i + 0.5) * rowH;
-      const barY  = midY - barH / 2;
-
-      // Theme name
-      const nameLbl = el('text', {
-        x: PAD.l - 8, y: midY,
-        'text-anchor':'end', 'dominant-baseline':'central',
-        'font-size':'8.5','font-weight':'700',fill:col,
-        'font-family':'DM Sans,sans-serif',
-      }, svgEl);
-      nameLbl.textContent = THEME_SHORT[theme] || theme;
-
-      // Bar background
-      el('rect', {x:PAD.l,y:barY,width:CW,height:barH,rx:barH/2,
-        fill:'rgba(200,192,178,.32)'}, svgEl);
-
-      // Funded fill
-      if (pct > 0.004) {
-        el('rect', {x:PAD.l,y:barY,width:Math.max(pct*CW, barH),height:barH,rx:barH/2,
-          fill:col,opacity:'0.84'}, svgEl);
-      }
-
-      // Count label (right side)
-      const lblX = PAD.l + CW + 8;
-      const n1 = el('text', {x:lblX,y:midY-2,
-        'font-size':'9','font-weight':'800',fill:'#332b22',
-        'font-family':'DM Sans,sans-serif'}, svgEl);
-      n1.textContent = s.funded + '/' + s.total;
-
-      const n2 = el('text', {x:lblX,y:midY+9,
-        'font-size':'7.5','font-weight':'600',fill:col,opacity:'0.85',
-        'font-family':'DM Sans,sans-serif'}, svgEl);
-      n2.textContent = Math.round(pct*100) + '%';
-    });
-
-    // X axis label
-    const ax = el('text', {x:PAD.l+CW/2,y:H-4,'text-anchor':'middle',
-      'font-size':'7.5','font-weight':'600',fill:'rgba(120,108,92,.6)',
-      'font-family':'DM Sans,sans-serif'}, svgEl);
-    ax.textContent = '← proporción de startups include con capital documentado →';
-  }
-
-  renderChart();
-  const ro = new ResizeObserver(renderChart);
-  ro.observe(svgEl.parentElement);
-})();
-
-// ── Top Inversores chart ────────────────────────────────────────────
-(function(){
-  const D = window.CAPITAL_ATLAS_DATA;
-  if (!D || !D.nodes || !D.edges) return;
-
+  // ── Palettes ──────────────────────────────────────────────────────────
   const THEME_PAL = {
     "Therapeutics":                            "#7033BC",
     "Diagnostics & Health Access":             "#1A6DB5",
@@ -890,144 +539,234 @@ document.addEventListener('DOMContentLoaded', function(){
     "Biomanufacturing & Fermentation Economy": "Biomanufacturing",
   };
   const THEME_ORDER = Object.keys(THEME_PAL);
+  const FLAG_MAP = {
+    "Brazil":"🇧🇷","Brasil":"🇧🇷","BR":"🇧🇷",
+    "Mexico":"🇲🇽","México":"🇲🇽","MX":"🇲🇽",
+    "Colombia":"🇨🇴","CO":"🇨🇴",
+    "Argentina":"🇦🇷","AR":"🇦🇷",
+    "Chile":"🇨🇱","CL":"🇨🇱",
+    "Peru":"🇵🇪","Perú":"🇵🇪","PE":"🇵🇪",
+    "Uruguay":"🇺🇾","UY":"🇺🇾",
+    "Costa Rica":"🇨🇷","CR":"🇨🇷",
+    "Ecuador":"🇪🇨","EC":"🇪🇨",
+    "Bolivia":"🇧🇴","BO":"🇧🇴",
+    "Paraguay":"🇵🇾","PY":"🇵🇾",
+    "Panama":"🇵🇦","Panamá":"🇵🇦","PA":"🇵🇦",
+    "Guatemala":"🇬🇹","GT":"🇬🇹",
+    "USA":"🇺🇸","US":"🇺🇸","United States":"🇺🇸",
+  };
 
+  // ── Hero stats ────────────────────────────────────────────────────────
+  const funds    = D.nodes.filter(n => n.type === 'fund' || n.type === 'allocator' || n.investor_type);
+  const bioInc   = D.nodes.filter(n => n.type === 'startup' && n.scope_decision === 'include');
+  const funded   = bioInc.filter(n => n.capital_status === 'capital_mapped');
+  const pubEdges = (D.edges||[]).filter(e => e.evidence_tier === 'public_url' || e.audited);
+  const pct      = bioInc.length ? Math.round(funded.length / bioInc.length * 100) : 0;
+  document.getElementById('stat-funds').textContent    = funds.length;
+  document.getElementById('stat-funded').textContent   = funded.length + ' / ' + bioInc.length;
+  document.getElementById('stat-coverage').textContent = pct + '%';
+  document.getElementById('stat-edges').textContent    = pubEdges.length + ' / ' + (D.edges||[]).length;
+
+  // ── Build investor stats from edges ───────────────────────────────────
   const nodeById = new Map(D.nodes.map(n => [n.id, n]));
-  const bioStartupIds = new Set(
-    D.nodes.filter(n => n.type === 'startup' && n.scope_decision === 'include').map(n => n.id)
-  );
+  const bioIds   = new Set(bioInc.map(n => n.id));
+  const invStats = {};
 
-  // Build investor → {count, themes{}} from edges
-  const investorStats = {};
-  D.edges.forEach(e => {
-    if (!bioStartupIds.has(e.target)) return;
-    const inv = nodeById.get(e.source);
-    if (!inv) return;
+  (D.edges||[]).forEach(e => {
+    if (!bioIds.has(e.target)) return;
+    const inv     = nodeById.get(e.source);
     const startup = nodeById.get(e.target);
-    if (!startup) return;
-    if (!investorStats[e.source]) {
-      investorStats[e.source] = { label: inv.label || e.source, type: inv.type || inv.investor_type || 'fund', count: 0, themes: {} };
+    if (!inv || !startup) return;
+    if (!invStats[e.source]) {
+      invStats[e.source] = {
+        id: e.source,
+        label: inv.label || inv.name || e.source,
+        type:  inv.type || inv.investor_type || 'fund',
+        subtype: inv.investor_subtype || '',
+        count: 0,
+        themes: {},
+        countries: {},
+        startups: [],
+      };
     }
-    investorStats[e.source].count++;
+    const iv = invStats[e.source];
+    iv.count++;
     const t = startup.theme;
-    if (t && THEME_PAL[t]) investorStats[e.source].themes[t] = (investorStats[e.source].themes[t] || 0) + 1;
+    if (t && THEME_PAL[t]) iv.themes[t] = (iv.themes[t]||0)+1;
+    (startup.countries||[startup.country]).filter(Boolean).forEach(c => {
+      iv.countries[c] = (iv.countries[c]||0)+1;
+    });
+    iv.startups.push({
+      id: startup.id,
+      name: startup.label || startup.name || startup.id,
+      theme: t,
+      valuation_tier: startup.valuation_tier||0,
+      country: (startup.countries||[startup.country])[0]||'',
+    });
   });
 
-  // Sort by portfolio count, take top 25
-  const investors = Object.values(investorStats)
-    .sort((a,b) => b.count - a.count)
-    .slice(0, 25);
+  const investors = Object.values(invStats)
+    .sort((a,b) => b.count - a.count);
 
-  if (!investors.length) return;
+  document.getElementById('inv-head-sub').textContent =
+    investors.length + ' fondos · ' + bioInc.length + ' startups include';
 
-  // Sidebar legend
-  const legEl = document.getElementById('investor-theme-legend');
-  if (legEl) {
-    // Which themes appear in top investors?
-    const usedThemes = new Set();
-    investors.forEach(iv => Object.keys(iv.themes).forEach(t => usedThemes.add(t)));
-    legEl.innerHTML = THEME_ORDER.filter(t => usedThemes.has(t)).map(t =>
-      `<div style="display:flex;align-items:center;gap:6px;font-size:.7rem;color:#332b22"><span style="width:10px;height:10px;border-radius:2px;background:${THEME_PAL[t]};flex-shrink:0;opacity:.85"></span>${THEME_SHORT[t]}</div>`
-    ).join('');
+  // ── Render investor list ──────────────────────────────────────────────
+  const listEl = document.getElementById('ca-inv-list');
+  let activeInvId = null;
+
+  function typeClass(type) {
+    if (type === 'allocator') return 'iv-type-allocator';
+    if (type === 'accelerator') return 'iv-type-accelerator';
+    return 'iv-type-fund';
+  }
+  function typeLabel(type, subtype) {
+    if (type === 'allocator') return 'Allocator';
+    if (type === 'accelerator') return 'Aceleradora';
+    if (subtype) return subtype.slice(0,12);
+    return 'Fund';
   }
 
-  // SVG chart
-  const svgEl = document.getElementById('investor-chart-svg');
-  if (!svgEl) return;
+  function buildInvDetail(iv) {
+    const topThemes = Object.entries(iv.themes)
+      .sort((a,b)=>b[1]-a[1]).slice(0,5);
+    const maxTheme  = topThemes[0]?.[1]||1;
+    const topStartups = iv.startups
+      .slice().sort((a,b)=>b.valuation_tier-a.valuation_tier||a.name.localeCompare(b.name))
+      .slice(0,8);
 
-  function renderChart() {
-    svgEl.innerHTML = '';
-    const W  = svgEl.parentElement.clientWidth  || 700;
-    const H  = svgEl.parentElement.clientHeight || 520;
-    const NS = 'http://www.w3.org/2000/svg';
-    svgEl.setAttribute('viewBox', `0 0 ${W} ${H}`);
+    let h = '';
 
-    function el(tag, attrs, parent) {
-      const e = document.createElementNS(NS, tag);
-      for (const [k,v] of Object.entries(attrs)) e.setAttribute(k, v);
-      if (parent) parent.appendChild(e);
-      return e;
+    // Theme breakdown
+    if (topThemes.length) {
+      h += `<div class="iv-det-section">Portfolio por tema</div>`;
+      topThemes.forEach(([t,n]) => {
+        const col = THEME_PAL[t]||'#888';
+        const pct = Math.round(n/iv.count*100);
+        h += `<div style="margin-bottom:6px">
+          <div style="display:flex;justify-content:space-between;font-size:.7rem;margin-bottom:2px">
+            <span style="color:${col};font-weight:700">${THEME_SHORT[t]||t}</span>
+            <span style="color:var(--muted)">${n} startup${n>1?'s':''} · ${pct}%</span>
+          </div>
+          <div class="iv-det-theme-bar"><span style="width:${pct}%;background:${col};opacity:.82"></span></div>
+        </div>`;
+      });
     }
 
-    const PAD = { t: 18, r: 50, b: 24, l: 148 };
-    const CW   = W - PAD.l - PAD.r;
-    const CH   = H - PAD.t - PAD.b;
-    const N    = investors.length;
-    const rowH = CH / N;
-    const barH = Math.min(rowH * 0.56, 20);
-    const maxCount = investors[0].count;
-
-    el('rect', {x:0,y:0,width:W,height:H,fill:'#f7f4ee'}, svgEl);
-    const defs = el('defs', {}, svgEl);
-
-    // Vertical grid lines
-    [0.25, 0.5, 0.75, 1.0].forEach(frac => {
-      const x = PAD.l + frac * CW;
-      const cnt = Math.round(frac * maxCount);
-      el('line', {x1:x,y1:PAD.t-12,x2:x,y2:H-PAD.b,
-        stroke:'rgba(200,192,178,.3)','stroke-width':'0.7','stroke-dasharray':'3,4'}, svgEl);
-      const lbl = el('text', {x,y:PAD.t-15,'text-anchor':'middle',
-        'font-size':'7.5','font-weight':'600',fill:'rgba(120,108,92,.65)',
-        'font-family':'DM Sans,sans-serif'}, svgEl);
-      lbl.textContent = cnt > 0 ? cnt : '';
-    });
-
-    investors.forEach((iv, i) => {
-      const midY = PAD.t + (i + 0.5) * rowH;
-      const barY  = midY - barH / 2;
-      const totalW = (iv.count / maxCount) * CW;
-
-      // Name (left)
-      const isAllocator = iv.type === 'allocator';
-      const col = isAllocator ? '#b7791f' : '#0f766e';
-      const nameLbl = el('text', {
-        x: PAD.l - 7, y: midY,
-        'text-anchor':'end', 'dominant-baseline':'central',
-        'font-size':'8','font-weight':i < 5 ? '700' : '500',
-        fill: col, 'font-family':'DM Sans,sans-serif',
-      }, svgEl);
-      // Truncate long names
-      const name = iv.label.length > 24 ? iv.label.slice(0,22)+'…' : iv.label;
-      nameLbl.textContent = name;
-
-      // Bar background
-      el('rect', {x:PAD.l,y:barY,width:CW,height:barH,rx:barH/2,
-        fill:'rgba(200,192,178,.28)'}, svgEl);
-
-      // Stacked segments via clipPath — esquinas perfectamente redondeadas sin overlap hack
-      const clipId = `bclip${i}`;
-      const cp = el('clipPath', {id: clipId}, defs);
-      el('rect', {x: PAD.l, y: barY, width: totalW, height: barH, rx: barH/2}, cp);
-      const g = el('g', {'clip-path': `url(#${clipId})`}, svgEl);
-      let xCursor = PAD.l;
-      THEME_ORDER.forEach(t => {
-        const tc = iv.themes[t] || 0;
-        if (!tc) return;
-        const segW = (tc / maxCount) * CW;
-        el('rect', {x: xCursor, y: barY, width: segW, height: barH, fill: THEME_PAL[t], opacity: '0.88'}, g);
-        xCursor += segW;
+    // Top startups
+    if (topStartups.length) {
+      h += `<div class="iv-det-section">Portfolio destacado</div>`;
+      topStartups.forEach(s => {
+        const col = THEME_PAL[s.theme]||'#888';
+        const flag = FLAG_MAP[s.country]||'';
+        const tier = s.valuation_tier>=2?'<span style="font-size:.6rem;color:var(--accent);font-weight:700;margin-left:3px">T'+s.valuation_tier+'</span>':'';
+        h += `<div class="iv-det-row">
+          <span style="display:flex;align-items:center;gap:5px;min-width:0">
+            <span style="width:7px;height:7px;border-radius:50%;background:${col};flex-shrink:0"></span>
+            <strong style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${s.name}</strong>${tier}
+          </span>
+          <span style="white-space:nowrap;flex-shrink:0">${flag}</span>
+        </div>`;
       });
+    }
 
-      // Count label (right)
-      const cntLbl = el('text', {
-        x: PAD.l + totalW + 5, y: midY,
-        'dominant-baseline':'central',
-        'font-size':'8','font-weight':'600',fill:'#332b22',
-        'font-family':'DM Sans,sans-serif',
-      }, svgEl);
-      cntLbl.textContent = iv.count;
-    });
-
-    // X axis label
-    const ax = el('text', {x:PAD.l+CW/2,y:H-4,'text-anchor':'middle',
-      'font-size':'7.5','font-weight':'600',fill:'rgba(120,108,92,.6)',
-      'font-family':'DM Sans,sans-serif'}, svgEl);
-    ax.textContent = '← startups BIO include en portfolio →';
+    return h;
   }
 
-  renderChart();
-  const ro = new ResizeObserver(renderChart);
-  ro.observe(svgEl.parentElement);
-})();
+  function buildCard(iv) {
+    const card = document.createElement('div');
+    card.className = 'iv';
+    card.dataset.id = iv.id;
+
+    // Theme bar
+    const barSegs = THEME_ORDER
+      .filter(t => iv.themes[t])
+      .map(t => `<div class="iv-theme-seg" style="width:${Math.round(iv.themes[t]/iv.count*100)}%;background:${THEME_PAL[t]};opacity:.84"></div>`)
+      .join('');
+
+    // Top 3 countries
+    const topCountries = Object.entries(iv.countries)
+      .sort((a,b)=>b[1]-a[1]).slice(0,3)
+      .map(([c]) => `<span class="iv-country">${FLAG_MAP[c]||''} ${c}</span>`)
+      .join('');
+
+    // Dominant theme color for left border
+    const domTheme = Object.entries(iv.themes).sort((a,b)=>b[1]-a[1])[0]?.[0];
+    const domColor = domTheme ? THEME_PAL[domTheme] : '#aaa';
+
+    card.style.setProperty('--iv-color', domColor);
+    card.style.borderLeft = `3px solid ${domColor}`;
+
+    card.innerHTML = `
+      <div class="iv-header">
+        <span class="iv-name" title="${iv.label}">${iv.label}</span>
+        <span class="iv-type-chip ${typeClass(iv.type)}">${typeLabel(iv.type, iv.subtype)}</span>
+        <span class="iv-count">${iv.count}</span>
+      </div>
+      <div class="iv-preview">
+        <div class="iv-theme-bar">${barSegs||'<div style="width:100%;background:#ddd;opacity:.4;height:100%"></div>'}</div>
+        <div class="iv-countries">${topCountries}</div>
+      </div>
+      <div class="iv-detail">${buildInvDetail(iv)}</div>
+    `;
+
+    card.addEventListener('click', () => {
+      const isActive = activeInvId === iv.id;
+
+      // Deactivate all
+      listEl.querySelectorAll('.iv').forEach(c => c.classList.remove('active'));
+
+      if (isActive) {
+        activeInvId = null;
+        if (window.AtlasAPI) { window.AtlasAPI.selectNode(null); window.AtlasAPI.zoomReset(); }
+      } else {
+        activeInvId = iv.id;
+        card.classList.add('active');
+        if (window.AtlasAPI) {
+          window.AtlasAPI.selectNode(iv.id);
+          window.AtlasAPI.zoomToInvestor(iv.id);
+        }
+      }
+    });
+
+    return card;
+  }
+
+  // Initial render
+  function renderList(filter='') {
+    listEl.innerHTML = '';
+    const q = filter.toLowerCase().trim();
+    const filtered = q
+      ? investors.filter(iv => iv.label.toLowerCase().includes(q))
+      : investors;
+    if (!filtered.length) {
+      listEl.innerHTML = `<div style="color:var(--muted);font-size:.76rem;padding:8px 4px">Sin resultados</div>`;
+      return;
+    }
+    filtered.forEach(iv => listEl.appendChild(buildCard(iv)));
+  }
+
+  renderList();
+
+  // Filter input
+  document.getElementById('inv-filter').addEventListener('input', function() {
+    renderList(this.value);
+  });
+
+  // When a node is clicked in the graph, sync the sidebar accordion
+  // (AtlasAPI.selectNode already handles graph highlighting — we just need to sync the card)
+  const origSelect = window.AtlasAPI?.selectNode;
+  if (origSelect) {
+    // Patch: when graph node click calls renderDetail internally, also sync card
+    // We observe via a MutationObserver on #atlas-detail-badge
+    const badge = document.getElementById('atlas-detail-badge');
+    if (badge) {
+      new MutationObserver(() => {
+        // Find if selected id matches an investor
+        // (The graph sets selectedId internally — we can check which card is active via badge content)
+      }).observe(badge, { childList: true, characterData: true, subtree: true });
+    }
+  }
 
 }); // DOMContentLoaded
 </script>

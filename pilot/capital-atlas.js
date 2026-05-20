@@ -2048,4 +2048,45 @@
     fitToGraph();
     renderGraph();
   });
+
+  // ── Public API for sidebar accordion integration ──────────────────────
+  function animateCameraTo(tx, ty, tk) {
+    const ms = 420, t0 = performance.now();
+    const sx = transform.x, sy = transform.y, sk = transform.k;
+    function step(t) {
+      const p = Math.min((t - t0) / ms, 1);
+      const e = p < 0.5 ? 2*p*p : -1 + (4 - 2*p)*p; // easeInOut
+      transform.x = sx + (tx - sx) * e;
+      transform.y = sy + (ty - sy) * e;
+      transform.k = sk + (tk - sk) * e;
+      updateViewport();
+      if (p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+
+  window.AtlasAPI = {
+    selectNode(id) {
+      selectedEdgeId = null;
+      selectedId = id;
+      renderGraph();
+      renderDetail(id);
+    },
+    zoomToInvestor(id) {
+      const connectedEdges = activeEdges.filter(e => e.source === id || e.target === id);
+      const nodeIds = new Set([id]);
+      connectedEdges.forEach(e => { nodeIds.add(e.source); nodeIds.add(e.target); });
+      const pts = [];
+      nodeIds.forEach(nid => { const pos = positions.get(nid); if (pos) pts.push(pos); });
+      if (!pts.length) { fitToGraph(); return; }
+      const xs = pts.map(p => p.x), ys = pts.map(p => p.y);
+      const minX = Math.min(...xs), maxX = Math.max(...xs);
+      const minY = Math.min(...ys), maxY = Math.max(...ys);
+      const gw = Math.max(80, maxX - minX), gh = Math.max(80, maxY - minY);
+      const pad = 90;
+      const k = Math.min((WIDTH - pad*2) / gw, (HEIGHT - pad*2) / gh, 3.2);
+      animateCameraTo(WIDTH/2 - ((minX + maxX)/2)*k, HEIGHT/2 - ((minY + maxY)/2)*k, k);
+    },
+    zoomReset() { fitToGraph(); },
+  };
 })();
