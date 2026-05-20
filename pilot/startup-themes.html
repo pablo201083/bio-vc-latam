@@ -219,7 +219,6 @@
           <div class="vt-group">
             <button id="btn-map" class="vt-btn active" type="button">UMAP</button>
             <button id="btn-cluster" class="vt-btn" type="button">Zoom</button>
-            <button id="btn-graph" class="vt-btn" type="button">Network</button>
           </div>
           <button id="btn-labels" class="lbl-btn" type="button">Nombres</button>
           <button id="btn-filter" class="lbl-btn" type="button">Filtros</button>
@@ -413,7 +412,6 @@ const nodes=startups.map(s=>({
   mx:0,my:0,    // UMAP map position
   kx:0,ky:0,   // Cluster arrangement position
   zx:0,zy:0,   // Zoom-by-theme position
-  gxs:0,gys:0, // Graph/network position (screen coords)
   cx:0,cy:0,   // current rendered position
   circEl:null,ringEl:null,lblEl:null
 }));
@@ -576,198 +574,15 @@ setDims();
 
 const gRoot=document.createElementNS(NS,"g");
 svgEl.appendChild(gRoot);
-const gEdges=document.createElementNS(NS,"g");       // investment edges (bottom)
 const gHalos=document.createElementNS(NS,"g");       // cluster background blobs
 const gNodes=document.createElementNS(NS,"g");       // startup circles
 const gLabels=document.createElementNS(NS,"g");      // startup labels
-const gInvNodes=document.createElementNS(NS,"g");    // investor nodes
-const gInvLabels=document.createElementNS(NS,"g");   // investor labels
 const gThemeLabels=document.createElementNS(NS,"g"); // bio-theme labels — always on top
-gRoot.appendChild(gEdges);
 gRoot.appendChild(gHalos);
 gRoot.appendChild(gNodes);
 gRoot.appendChild(gLabels);
-gRoot.appendChild(gInvNodes);
-gRoot.appendChild(gInvLabels);
 gRoot.appendChild(gThemeLabels);
 
-// ── Graph / network data ──────────────────────────────────────────────────
-const graphData=D.graph||{investor_nodes:[],edges:[]};
-const INV_COL="#1f5c3a";
-// Investor node objects with screen coords (gxs, gys)
-const invNodes=graphData.investor_nodes.map(iv=>({...iv,gxs:0,gys:0,circEl:null,lblEl:null}));
-const invMap=new Map(invNodes.map(iv=>[iv.id,iv]));
-
-function invRadius(iv){return Math.max(7,Math.min(22,5+Math.sqrt(iv.n_investments)*2.8))}
-
-let graphLayoutReady=false;
-const faPositions=new Map(); // 's:id' / 'i:id' → {nx,ny} normalizado [0,1]
-
-function computeGraphPos(){
-  const pad=52;
-  nodes.forEach(n=>{
-    const p=faPositions.get('s:'+n.d.id);
-    if(p){n.gxs=pad+p.nx*(W-pad*2);n.gys=pad+p.ny*(H-pad*2);}
-    else{n.gxs=W/2;n.gys=H/2;}
-  });
-  invNodes.forEach(iv=>{
-    const p=faPositions.get('i:'+iv.id);
-    if(p){iv.gxs=pad+p.nx*(W-pad*2);iv.gys=pad+p.ny*(H-pad*2);}
-    else{iv.gxs=W/2;iv.gys=H/2;}
-  });
-}
-
-function runForceAtlas(iterations){
-  iterations=iterations||280;
-  const centerX=W/2,centerY=H/2;
-  const repulsion=75000,attraction=0.014,gravity=0.0012,desired=85;
-
-  // Unified node array: startups primero, inversores al final
-  const fa=[];
-  const sIdxMap=new Map(),iIdxMap=new Map();
-  nodes.forEach(n=>{sIdxMap.set(n.d.id,fa.length);fa.push({x:0,y:0,vx:0,vy:0,isInv:false,ref:n})});
-  invNodes.forEach(iv=>{iIdxMap.set(iv.id,fa.length);fa.push({x:0,y:0,vx:0,vy:0,isInv:true,ref:iv})});
-
-  // Posiciones iniciales: círculo con jitter
-  fa.forEach((a,i)=>{
-    const angle=Math.PI*2*i/Math.max(1,fa.length);
-    const r=180+(i%7)*18;
-    a.x=centerX+Math.cos(angle)*r+(Math.random()-.5)*40;
-    a.y=centerY+Math.sin(angle)*r+(Math.random()-.5)*40;
-  });
-
-  // Índice de aristas
-  const faEdges=[];
-  graphData.edges.forEach(e=>{
-    const si=sIdxMap.get(e.startup_id),ii=iIdxMap.get(e.investor_id);
-    if(si!=null&&ii!=null)faEdges.push({si,ii});
-  });
-
-  // Simulación Force Atlas
-  for(let step=0;step<iterations;step++){
-    fa.forEach(a=>{a.vx=0;a.vy=0;});
-
-    // Repulsión entre todos los pares
-    for(let i=0;i<fa.length;i++){
-      for(let j=i+1;j<fa.length;j++){
-        const a=fa[i],b=fa[j];
-        const dx=a.x-b.x,dy=a.y-b.y;
-        const d2=Math.max(120,dx*dx+dy*dy);
-        const d=Math.sqrt(d2);
-        const f=repulsion/d2;
-        const fx=(dx/d)*f,fy=(dy/d)*f;
-        a.vx+=fx;a.vy+=fy;
-        b.vx-=fx;b.vy-=fy;
-      }
-    }
-
-    // Atracción por aristas (spring)
-    faEdges.forEach(({si,ii})=>{
-      const s=fa[si],v=fa[ii];
-      const dx=v.x-s.x,dy=v.y-s.y;
-      const dist=Math.max(1,Math.sqrt(dx*dx+dy*dy));
-      const spring=(dist-desired)*attraction;
-      const fx=(dx/dist)*spring,fy=(dy/dist)*spring;
-      s.vx+=fx;s.vy+=fy;
-      v.vx-=fx;v.vy-=fy;
-    });
-
-    // Gravedad + clamp
-    fa.forEach(a=>{
-      a.vx+=(centerX-a.x)*gravity;
-      a.vy+=(centerY-a.y)*gravity;
-      a.x=Math.max(40,Math.min(W-40,a.x+a.vx));
-      a.y=Math.max(30,Math.min(H-30,a.y+a.vy));
-    });
-  }
-
-  // Normalizar a [0,1] y guardar
-  const allX=fa.map(a=>a.x),allY=fa.map(a=>a.y);
-  const mnX=Math.min(...allX),mxX=Math.max(...allX);
-  const mnY=Math.min(...allY),mxY=Math.max(...allY);
-  const rX=mxX-mnX||1,rY=mxY-mnY||1;
-  fa.forEach(a=>{
-    const key=a.isInv?'i:'+a.ref.id:'s:'+a.ref.d.id;
-    faPositions.set(key,{nx:(a.x-mnX)/rX,ny:(a.y-mnY)/rY});
-  });
-
-  graphLayoutReady=true;
-  computeGraphPos();
-}
-
-// Edge elements (created once)
-const edgeEls=[];
-function buildGraphElements(){
-  while(gEdges.firstChild)gEdges.removeChild(gEdges.firstChild);
-  while(gInvNodes.firstChild)gInvNodes.removeChild(gInvNodes.firstChild);
-  while(gInvLabels.firstChild)gInvLabels.removeChild(gInvLabels.firstChild);
-  edgeEls.length=0;
-
-  graphData.edges.forEach(e=>{
-    const sn=nodeMap.get(e.startup_id);
-    const iv=invMap.get(e.investor_id);
-    if(!sn||!iv)return;
-    const path=document.createElementNS(NS,"path");
-    path.setAttribute("fill","none");
-    path.setAttribute("stroke",themeCol(sn.d.bio_theme));
-    path.setAttribute("stroke-width","1.2");
-    path.setAttribute("stroke-opacity","0.25");
-    path.setAttribute("pointer-events","none");
-    gEdges.appendChild(path);
-    edgeEls.push({path,sn,iv});
-  });
-
-  invNodes.forEach(iv=>{
-    const r=invRadius(iv);
-    const circ=document.createElementNS(NS,"circle");
-    circ.setAttribute("r",r);
-    circ.setAttribute("fill",INV_COL);
-    circ.setAttribute("stroke","rgba(255,255,255,.85)");
-    circ.setAttribute("stroke-width","1.5");
-    circ.setAttribute("opacity","0.92");
-    circ.style.cursor="pointer";
-    gInvNodes.appendChild(circ);
-    iv.circEl=circ;
-
-    const lbl=document.createElementNS(NS,"text");
-    lbl.setAttribute("text-anchor","middle");
-    lbl.setAttribute("font-size","8.5");
-    lbl.setAttribute("font-weight","700");
-    lbl.setAttribute("font-family","inherit");
-    lbl.setAttribute("fill",INV_COL);
-    lbl.setAttribute("stroke","rgba(248,245,239,0.95)");
-    lbl.setAttribute("stroke-width","3");
-    lbl.setAttribute("stroke-linejoin","round");
-    lbl.setAttribute("paint-order","stroke");
-    lbl.setAttribute("pointer-events","none");
-    lbl.textContent=iv.name.replace(/\s+(S\.?A\.?|S\.?R\.?L\.?|AG|LLC|Ltd\.?)$/i,"").split(/\s+/).slice(0,3).join(" ");
-    gInvLabels.appendChild(lbl);
-    iv.lblEl=lbl;
-
-    // Tooltip on hover
-    circ.addEventListener("mouseenter",e2=>{
-      const rect=wrap.getBoundingClientRect();
-      hovCard.innerHTML=`<div class="hov-title">${iv.name}</div><div class="hov-chips"><span class="hov-chip" style="color:#1f5c3a">Inversor · ${iv.n_investments} startup${iv.n_investments>1?"s":""}</span></div>`;
-      let x=e2.clientX-rect.left+14,y=e2.clientY-rect.top-10;
-      if(x+310>W)x=e2.clientX-rect.left-320;
-      hovCard.style.left=x+"px";hovCard.style.top=y+"px";
-      hovCard.classList.add("vis");
-    });
-    circ.addEventListener("mouseleave",hideHov);
-  });
-}
-
-function updateGraphElements(){
-  edgeEls.forEach(({path,sn,iv})=>{
-    const sx=sn.cx,sy=sn.cy,tx=iv.gxs,ty=iv.gys;
-    const dx=Math.abs(tx-sx)*0.35;
-    path.setAttribute("d",`M ${sx} ${sy} C ${sx+dx} ${sy}, ${tx-dx} ${ty}, ${tx} ${ty}`);
-  });
-  invNodes.forEach(iv=>{
-    if(iv.circEl){iv.circEl.setAttribute("cx",iv.gxs);iv.circEl.setAttribute("cy",iv.gys)}
-    if(iv.lblEl){iv.lblEl.setAttribute("x",iv.gxs);iv.lblEl.setAttribute("y",iv.gys+invRadius(iv)+11)}
-  });
-}
 
 function applyTf(){gRoot.setAttribute("transform",`translate(${panX},${panY}) scale(${scale})`)}
 
@@ -797,7 +612,7 @@ const activeInds=new Set();       // OR dentro de la categoría
 const activeCountries=new Set();  // OR dentro de la categoría
 const activeStages=new Set();     // OR — pre-seed | seed | series-a | series-b | series-c+ | growth
 let searchId=null,showLabels=false;
-let viewMode="map"; // "map" | "cluster" | "graph"
+let viewMode="map"; // "map" | "cluster" | "zoom"
 
 function isHl(s){
   if(searchId&&s.id!==searchId)return false;
@@ -1212,7 +1027,7 @@ function startTrans(toMode){
   transFrom={};transTo={};
   nodes.forEach(n=>{
     transFrom[n.d.id]={x:n.cx,y:n.cy};
-    const t=toMode==="map"?{x:n.mx,y:n.my}:toMode==="cluster"?{x:n.kx,y:n.ky}:toMode==="zoom"?{x:n.zx,y:n.zy}:{x:n.gxs,y:n.gys};
+    const t=toMode==="map"?{x:n.mx,y:n.my}:toMode==="cluster"?{x:n.kx,y:n.ky}:{x:n.zx,y:n.zy};
     transTo[n.d.id]=t;
   });
   transP=0;transitioning=true;
@@ -1321,7 +1136,6 @@ function updateBreadcrumbs(){
 
 // ── Animation loop ─────────────────────────────────────────────────────────
 let animId=null;
-let graphOp=0; // graph overlay opacity 0→1
 function loop(){
   if(transitioning){
     transP+=1/TRANS_F;
@@ -1333,19 +1147,10 @@ function loop(){
     });
   }else{
     nodes.forEach(n=>{
-      n.cx=viewMode==="map"?n.mx:viewMode==="cluster"?n.kx:viewMode==="zoom"?n.zx:n.gxs;
-      n.cy=viewMode==="map"?n.my:viewMode==="cluster"?n.ky:viewMode==="zoom"?n.zy:n.gys;
+      n.cx=viewMode==="map"?n.mx:viewMode==="cluster"?n.kx:n.zx;
+      n.cy=viewMode==="map"?n.my:viewMode==="cluster"?n.ky:n.zy;
     });
   }
-  // Fade graph overlay in/out
-  const targetOp=viewMode==="graph"?1:0;
-  graphOp+=(targetOp-graphOp)*0.08;
-  if(Math.abs(graphOp-targetOp)<0.005)graphOp=targetOp;
-  const goStr=graphOp.toFixed(3);
-  gEdges.setAttribute("opacity",goStr);
-  gInvNodes.setAttribute("opacity",goStr);
-  gInvLabels.setAttribute("opacity",goStr);
-  updateGraphElements();
   updatePositions();
   animId=requestAnimationFrame(loop);
 }
@@ -1665,7 +1470,7 @@ function resetAll(){
     viewMode="map";
     document.getElementById("btn-map").classList.add("active");
     document.getElementById("btn-cluster").classList.remove("active");
-    document.getElementById("btn-graph").classList.remove("active");
+
     startTrans("map");
   }
   updateHighlights();updateBreadcrumbs();
@@ -1680,7 +1485,6 @@ document.getElementById("btn-map").addEventListener("click",()=>{
   viewMode="map";
   document.getElementById("btn-map").classList.add("active");
   document.getElementById("btn-cluster").classList.remove("active");
-  document.getElementById("btn-graph").classList.remove("active");
   if(wasZoom){panX=0;panY=0;scale=1;applyTf();}
   startTrans("map");
   updateHighlights();
@@ -1690,7 +1494,6 @@ document.getElementById("btn-cluster").addEventListener("click",()=>{
   viewMode="zoom";
   document.getElementById("btn-cluster").classList.add("active");
   document.getElementById("btn-map").classList.remove("active");
-  document.getElementById("btn-graph").classList.remove("active");
   // If no theme selected yet, default to first available
   if(!activeTheme){
     const firstTheme=THEME_ORDER.find(t=>themeMap.has(t));
@@ -1712,24 +1515,7 @@ document.getElementById("btn-cluster").addEventListener("click",()=>{
   if(activeTheme)zoomToCluster(activeTheme); // camera zoom only
   updateHighlights();updateBreadcrumbs();
 });
-document.getElementById("btn-graph").addEventListener("click",function(){
-  if(viewMode==="graph")return;
-  viewMode="graph";
-  this.classList.add("active");
-  document.getElementById("btn-map").classList.remove("active");
-  document.getElementById("btn-cluster").classList.remove("active");
-  if(!graphLayoutReady){
-    const btn=this;
-    btn.textContent="Calculando…";btn.disabled=true;
-    setTimeout(()=>{
-      runForceAtlas();
-      startTrans("graph");
-      btn.textContent="Red";btn.disabled=false;
-    },20);
-  }else{
-    startTrans("graph");
-  }
-});
+
 document.getElementById("btn-labels").addEventListener("click",function(){
   showLabels=!showLabels;this.classList.toggle("on",showLabels);
   updateHighlights();
@@ -1773,13 +1559,12 @@ const ro=new ResizeObserver(()=>{
       panY=panY*nH/roLastH;
     }
     roLastW=nW;roLastH=nH;
-    setDims();computeMapPos();relaxMapPos();pushThemeCentroids();computeClusterPos();computeGraphPos();
-    computeZoomPos(); // zx/zy = mx/my — no node movement
+    setDims();computeMapPos();relaxMapPos();pushThemeCentroids();computeClusterPos();computeZoomPos();
     nodes.forEach(n=>{
-      n.cx=viewMode==="map"?n.mx:viewMode==="cluster"?n.kx:viewMode==="zoom"?n.zx:n.gxs;
-      n.cy=viewMode==="map"?n.my:viewMode==="cluster"?n.ky:viewMode==="zoom"?n.zy:n.gys;
+      n.cx=viewMode==="map"?n.mx:viewMode==="cluster"?n.kx:n.zx;
+      n.cy=viewMode==="map"?n.my:viewMode==="cluster"?n.ky:n.zy;
     });
-    updatePositions();updateGraphElements();updateHighlights();
+    updatePositions();updateHighlights();
     applyTf();
   },120);
 });
@@ -1790,11 +1575,7 @@ computeMapPos();
 relaxMapPos();
 pushThemeCentroids();
 computeClusterPos();
-computeGraphPos();
-buildGraphElements();
-gEdges.setAttribute("opacity","0");
-gInvNodes.setAttribute("opacity","0");
-gInvLabels.setAttribute("opacity","0");
+computeZoomPos();
 // Start in Map mode: set cx/cy from map positions
 nodes.forEach(n=>{n.cx=n.mx;n.cy=n.my});
 buildSVG();
