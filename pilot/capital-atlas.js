@@ -371,8 +371,8 @@
       }
       // Fallback: capital signal from degree when no valuation
       const signal = startupCapitalSignal(node);
-      if (signal <= 0) return 2.8;
-      return Math.max(4.2, Math.min(14, 3.5 + Math.sqrt(signal) * 2.6));
+      if (signal <= 0) return 5;
+      return Math.max(6, Math.min(20, 5 + Math.sqrt(signal) * 3.5));
     }
 
     if (node.type === "fund") {
@@ -383,7 +383,7 @@
         return Math.max(13, Math.min(48, 8 + Math.log10(portVal + 1) * 10.5));
       }
       // Fallback: degree-based when no portfolio data
-      return Math.max(13, Math.min(32, 11 + Math.sqrt(weight + 1) * 4.8));
+      return Math.max(15, Math.min(38, 12 + Math.sqrt(weight + 1) * 5.5));
     }
 
     if (node.type === "allocator") return Math.max(16, Math.min(36, 13 + Math.sqrt(weight + 1) * 4.4));
@@ -402,8 +402,8 @@
       funds,
       density,
       scale,
-      repulsion: 9200 + coreCount * 24 + Math.max(0, funds - 10) * 110 + Math.max(0, density - 1.1) * 640,
-      edgeLength: Math.max(92, Math.min(158, 104 + Math.sqrt(connectedStartups) * 2.1 - Math.max(0, density - 1.1) * 5))
+      repulsion: 11800 + coreCount * 30 + Math.max(0, funds - 10) * 125 + Math.max(0, density - 1.1) * 700,
+      edgeLength: Math.max(108, Math.min(172, 122 + Math.sqrt(connectedStartups) * 2.1 - Math.max(0, density - 1.1) * 5))
     };
   }
 
@@ -714,7 +714,7 @@
         byThemeSeen.set(key, indexInTheme + 1);
         const themeAngle = ((themeIndex.get(key) || 0) / Math.max(1, themes.length)) * Math.PI * 2 - Math.PI / 2;
         const localAngle = themeAngle + (indexInTheme * golden) * 0.28 + (seeded(node.id, "context-angle") - 0.5) * 0.34;
-        const ring = Math.max(connectedRadius + 105, 315) + (indexInTheme % 7) * 8 + seeded(node.id, "context-ring") * 42;
+        const ring = Math.min(Math.max(connectedRadius + 90, 295), 580) + (indexInTheme % 7) * 10 + seeded(node.id, "context-ring") * 38;
         const sideBias = 1 + (seeded(key, "theme-side") - 0.5) * 0.18;
         positions.set(node.id, {
           x: centerX + Math.cos(localAngle) * ring * sideBias,
@@ -784,16 +784,16 @@
       });
       values.forEach(({ node, pos }) => {
         const typePull = node.type === "allocator" ? { x: centerX, y: HEIGHT * 0.34 } : node.type === "fund" ? { x: centerX * 0.99, y: centerY } : { x: centerX * 1.01, y: centerY * 1.01 };
-        const typeStrength = node.type === "fund" ? 0.00052 : 0.0003;
+        const typeStrength = node.type === "fund" ? 0.00042 : 0.00022;
         pos.vx += (typePull.x - pos.x) * typeStrength;
         pos.vy += (typePull.y - pos.y) * typeStrength;
         const dxCenter = centerX - pos.x;
         const dyCenter = centerY - pos.y;
         const distCenter = Math.sqrt(dxCenter * dxCenter + dyCenter * dyCenter);
-        const gravity = 0.000072 + Math.max(0, distCenter - 780) * 0.00000062;
+        const gravity = 0.000058 + Math.max(0, distCenter - 900) * 0.00000055;
         pos.vx += dxCenter * gravity;
         pos.vy += dyCenter * gravity;
-        const speed = step < 120 ? 8.6 : 5.2;
+        const speed = step < 120 ? 10 : 6.5;
         pos.x += Math.max(-speed, Math.min(speed, pos.vx));
         pos.y += Math.max(-speed, Math.min(speed, pos.vy));
       });
@@ -831,7 +831,7 @@
           const pos = positions.get(leaf.id);
           if (!pos) return;
           const angle = start + index * golden;
-          const ring = nodeRadius(fund) + 72 + Math.floor(index / 11) * 34 + seeded(leaf.id, "leaf-ring") * 18;
+          const ring = nodeRadius(fund) + 105 + Math.floor(index / 11) * 48 + seeded(leaf.id, "leaf-ring") * 26;
           pos.x += (center.x + Math.cos(angle) * ring - pos.x) * 0.78;
           pos.y += (center.y + Math.sin(angle) * ring * 0.82 - pos.y) * 0.78;
         });
@@ -1187,21 +1187,30 @@
         });
         nodeLayer.append(group);
 
-        const shouldLabel = showLabels && (selected || hovered || selectedNeighbor || active && (node.type !== "startup" || nodeWeight(node) >= 3.2) || nodeWeight(node) >= 10);
+        const shouldLabel = showLabels && (selected || hovered || selectedNeighbor || node.type === "fund" || node.type === "allocator" || (active && node.type === "startup" && nodeWeight(node) >= 4.2) || nodeWeight(node) >= 8.5);
         if (shouldLabel) {
+          // Label sizes are in layout-space px; they get multiplied by transform.k
+          // at k≈0.85–1.2 the target screen sizes are:
+          //   fund:    19px layout → 16–23px screen  ✓
+          //   startup: 16px layout → 13.5–19px screen ✓
+          const isFund = node.type === "fund" || node.type === "allocator";
+          const baseFontSize = isFund
+            ? (selected || hovered ? 24 : 19)
+            : (selected || hovered ? 19 : 16);
           const label = makeSvg("text", {
-            x: pos.x + (node.type === "startup" ? radius + 8 : 0),
-            y: pos.y + (node.type === "startup" ? 4 : -radius - 10),
-            "text-anchor": node.type === "startup" ? "start" : "middle",
-            "font-size": node.type === "startup" ? (selected || hovered ? "16" : "13.2") : (selected || hovered ? "19" : "16.8"),
-            "font-family": "Georgia, serif",
-            "font-weight": node.type === "startup" ? "800" : "900",
-            fill: node.type === "startup" ? "#352d26" : "#0d0d0d",
-            stroke: "rgba(255,252,246,0.98)",
-            "stroke-width": selected || hovered ? "6.2" : "5.4",
+            x: pos.x + (isFund ? 0 : radius + 5),
+            y: pos.y + (isFund ? -radius - 9 : 5),
+            "text-anchor": isFund ? "middle" : "start",
+            "font-size": baseFontSize,
+            "font-family": "system-ui, -apple-system, sans-serif",
+            "font-weight": isFund ? "800" : "700",
+            fill: isFund ? nodeColor(node) : "#3a312a",
+            stroke: "rgba(255,252,246,0.95)",
+            "stroke-width": selected || hovered ? 7 : 5.5,
+            "stroke-linejoin": "round",
             "paint-order": "stroke",
             "pointer-events": "none",
-            opacity: active ? "1" : "0.14"
+            opacity: active ? "1" : hasFocus ? "0.07" : "0.80"
           });
           label.textContent = node.label;
           labelLayer.append(label);
@@ -1213,19 +1222,36 @@
   function fitToGraph() {
     if (!activeNodes.length) return;
     const fitNodes = layoutNodesForCapital().length ? layoutNodesForCapital() : activeNodes;
-    const xs = fitNodes.map((node) => positions.get(node.id)?.x || WIDTH / 2);
-    const ys = fitNodes.map((node) => positions.get(node.id)?.y || HEIGHT / 2);
-    const minX = Math.min(...xs);
-    const maxX = Math.max(...xs);
-    const minY = Math.min(...ys);
-    const maxY = Math.max(...ys);
-    const graphWidth = Math.max(1, maxX - minX);
-    const graphHeight = Math.max(1, maxY - minY);
-    const paddingX = 56;
-    const paddingY = 54;
-    transform.k = Math.min((WIDTH - paddingX * 2) / graphWidth, (HEIGHT - paddingY * 2) / graphHeight, 1.72);
-    transform.x = WIDTH / 2 - ((minX + maxX) / 2) * transform.k;
-    transform.y = HEIGHT / 2 - ((minY + maxY) / 2) * transform.k;
+
+    // Full bounding box for scale calculation
+    const xs = fitNodes.map((n) => positions.get(n.id)?.x ?? WIDTH / 2);
+    const ys = fitNodes.map((n) => positions.get(n.id)?.y ?? HEIGHT / 2);
+    const minX = Math.min(...xs), maxX = Math.max(...xs);
+    const minY = Math.min(...ys), maxY = Math.max(...ys);
+    const graphW = Math.max(1, maxX - minX);
+    const graphH = Math.max(1, maxY - minY);
+
+    // Center-of-mass: use only well-connected nodes (degree ≥ 2) to avoid
+    // peripheral leaf startups distorting the visual center
+    const coreNodes = fitNodes.filter((n) => Number(n.visible_degree ?? n.degree ?? 0) >= 2);
+    const pivotNodes = coreNodes.length >= 4 ? coreNodes : fitNodes;
+    const pxs = pivotNodes.map((n) => positions.get(n.id)?.x ?? WIDTH / 2);
+    const pys = pivotNodes.map((n) => positions.get(n.id)?.y ?? HEIGHT / 2);
+    const pivotCX = (Math.min(...pxs) + Math.max(...pxs)) / 2;
+    const pivotCY = (Math.min(...pys) + Math.max(...pys)) / 2;
+
+    const padX = 60, padY = 56;
+    const fitK = Math.min((WIDTH - padX * 2) / graphW, (HEIGHT - padY * 2) / graphH, 2.2);
+
+    // k_min: largest fund node must appear ≥ 27px radius on screen
+    const fundNodes = activeNodes.filter((n) => n.type === "fund" || n.type === "allocator");
+    const maxFundR = fundNodes.length ? Math.max(...fundNodes.map(nodeRadius)) : 20;
+    const kMin = Math.max(0.68, 27 / maxFundR);
+
+    transform.k = Math.max(fitK, kMin);
+    // Center on the core pivot, not the full bounding box midpoint
+    transform.x = WIDTH / 2 - pivotCX * transform.k;
+    transform.y = HEIGHT / 2 - pivotCY * transform.k;
     updateViewport();
   }
 
@@ -1819,9 +1845,9 @@
     labelsButton?.classList.toggle("active", showLabels);
     universeButton?.classList.toggle("active", showUniverseContext);
     backboneButton?.classList.toggle("active", backboneOnly);
-    if (labelsButton) labelsButton.textContent = showLabels ? "Labels" : "Labels off";
-    if (universeButton) universeButton.textContent = showUniverseContext ? "Universo BIO" : "Solo red";
-    if (backboneButton) backboneButton.textContent = backboneOnly ? "Backbone" : "Full nodes";
+    if (labelsButton) labelsButton.title = showLabels ? "Labels ON — click para ocultar" : "Labels OFF — click para mostrar";
+    if (universeButton) universeButton.title = showUniverseContext ? "Universo BIO visible — click para Solo Red" : "Solo Red — click para mostrar universo BIO";
+    if (backboneButton) backboneButton.title = backboneOnly ? "Backbone activo — click para Full nodes" : "Full nodes — click para backbone";
   }
 
   function taxonomyStateSignature(state = activeTaxonomyState) {
@@ -1847,7 +1873,7 @@
     hideTooltip();
     buildActiveGraph();
     initializePositions();
-    if (rerun) runForceAtlas(modeSelect.value === "co_investment" ? 620 : 520);
+    if (rerun) runForceAtlas(modeSelect.value === "co_investment" ? 780 : 660);
     if (!rerun) positionContextNodes();
     renderGraph();
     renderSummary();

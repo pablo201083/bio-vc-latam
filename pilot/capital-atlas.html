@@ -273,8 +273,9 @@
       min-height: 0;
       overflow: hidden;
       background:
-        radial-gradient(ellipse at 48% 52%, rgba(217,119,6,.04), transparent 40rem),
-        linear-gradient(135deg, rgba(255,252,246,.9), rgba(244,238,228,.72));
+        radial-gradient(ellipse at 60% 45%, rgba(58,168,163,.035), transparent 55%),
+        radial-gradient(ellipse at 28% 68%, rgba(217,119,6,.04), transparent 45%),
+        linear-gradient(160deg, rgba(255,252,248,.94), rgba(242,234,220,.8));
     }
 
     /* ── Toolbar controls ──────────────────────────────────────────── */
@@ -429,7 +430,93 @@
     .panel-head { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
     .panel-head h2 { margin: 0; font-size: .88rem; }
     .atlas-note { color: var(--muted); font-size: .73rem; line-height: 1.4; }
-    .atlas-map-inspector { display: none; } /* unused in new layout */
+    .atlas-map-inspector { display: none; }
+
+    /* ── View switcher ─────────────────────────────────────────────── */
+    .vs-group {
+      display: flex;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+    .vs-btn {
+      border: 0;
+      border-right: 1px solid var(--line);
+      background: rgba(255,255,255,.82);
+      color: var(--muted);
+      font: inherit;
+      font-size: .74rem;
+      font-weight: 600;
+      padding: 5px 12px;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: background 80ms, color 80ms;
+    }
+    .vs-btn:last-child { border-right: 0; }
+    .vs-btn:hover { background: rgba(255,255,255,1); color: var(--ink); }
+    .vs-btn.active {
+      background: var(--accent);
+      color: #fff;
+      font-weight: 700;
+    }
+    .ca-net-controls { display: flex; gap: 5px; align-items: center; }
+    .tb-divider {
+      width: 1px; height: 20px; background: var(--line); flex-shrink: 0; margin: 0 2px;
+    }
+    .tb-toggle-group {
+      display: flex;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+    .tb-toggle {
+      border: 0;
+      border-right: 1px solid var(--line);
+      background: rgba(255,255,255,.82);
+      color: var(--muted);
+      font: inherit;
+      font-size: .8rem;
+      font-weight: 600;
+      padding: 4px 9px;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: background 80ms, color 80ms;
+      min-width: 30px;
+    }
+    .tb-toggle:last-child { border-right: 0; }
+    .tb-toggle:hover { background: #fff; color: var(--ink); }
+    .tb-toggle.active {
+      background: rgba(15,118,110,.10);
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    /* ── Canvas view panels ────────────────────────────────────────── */
+    .ca-view { display: none; width: 100%; height: 100%; position: absolute; top: 0; left: 0; }
+    .ca-view.active { display: block; }
+
+    /* ── Radial view ───────────────────────────────────────────────── */
+    #radial-svg { display: block; width: 100%; height: 100%; }
+    .radial-hint {
+      position: absolute;
+      bottom: 14px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: .72rem;
+      color: var(--muted);
+      background: rgba(255,252,246,.82);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 4px 12px;
+      pointer-events: none;
+    }
+
+    /* ── Matrix view ───────────────────────────────────────────────── */
+    #view-matrix { overflow: hidden; }
+    #view-matrix.active { display: flex; align-items: center; justify-content: center; }
+    #matrix-svg { display: block; max-width: 100%; max-height: 100%; }
 
   </style>
 </head>
@@ -464,40 +551,77 @@
       </div>
     </aside>
 
-    <!-- ── Force graph canvas ─────────────────────────────────────────── -->
+    <!-- ── Canvas area ────────────────────────────────────────────────── -->
     <div class="ca-canvas-area">
       <div class="ca-toolbar">
-        <div class="atlas-search-wrap">
-          <input id="atlas-search" class="atlas-input" type="search" placeholder="Buscar fondo, startup…" autocomplete="off">
-          <div id="atlas-search-results" class="atlas-search-results"></div>
+        <!-- View mode switcher -->
+        <div class="vs-group">
+          <button class="vs-btn active" data-view="network" type="button">🕸 Red</button>
+          <button class="vs-btn"        data-view="radial"  type="button">◎ Radial</button>
+          <button class="vs-btn"        data-view="matrix"  type="button">▦ Matriz</button>
         </div>
-        <select id="atlas-mode" class="atlas-select">
-          <option value="capital_core">Capital Core</option>
-          <option value="coverage_gaps">Vacíos</option>
-          <option value="co_investment">Co-investment</option>
-          <option value="allocator_layer">Allocators</option>
-          <option value="full_network" selected>Full Network</option>
-        </select>
-        <button id="atlas-labels"   class="atlas-button active" type="button">Labels</button>
-        <button id="atlas-backbone" class="atlas-button active" type="button">Backbone</button>
-        <button id="atlas-universe" class="atlas-button active" type="button">Universo</button>
-        <div style="display:flex;gap:5px;margin-left:auto">
-          <button id="atlas-run-layout" class="atlas-button" type="button">Reordenar</button>
-          <button id="atlas-reset"      class="atlas-button" type="button">Recentrar</button>
-          <button id="atlas-clear"      class="atlas-button" type="button">Limpiar</button>
+
+        <div class="tb-divider"></div>
+
+        <!-- Network-only controls -->
+        <div class="ca-net-controls" id="net-controls">
+          <div class="atlas-search-wrap">
+            <input id="atlas-search" class="atlas-input" type="search" placeholder="Buscar nodo…" autocomplete="off">
+            <div id="atlas-search-results" class="atlas-search-results"></div>
+          </div>
+          <select id="atlas-mode" class="atlas-select">
+            <option value="capital_core" selected>Capital Core</option>
+            <option value="coverage_gaps">Vacíos</option>
+            <option value="co_investment">Co-invest</option>
+            <option value="allocator_layer">Allocators</option>
+            <option value="full_network">Full Network</option>
+          </select>
+
+          <div class="tb-divider"></div>
+
+          <!-- Toggle group -->
+          <div class="tb-toggle-group">
+            <button id="atlas-labels"   class="tb-toggle active" title="Mostrar/ocultar labels" type="button">Aa</button>
+            <button id="atlas-backbone" class="tb-toggle"        title="Backbone / Full nodes"  type="button">◈</button>
+            <button id="atlas-universe" class="tb-toggle"        title="Solo red / Universo BIO" type="button">⊕</button>
+          </div>
+
+          <div class="tb-divider"></div>
+
+          <button id="atlas-run-layout" class="atlas-button" title="Re-run force layout" type="button">↺ Layout</button>
+          <button id="atlas-reset"      class="atlas-button" title="Rebuild & recenter" type="button">⟳</button>
+          <button id="atlas-clear"      class="atlas-button" type="button">✕</button>
         </div>
       </div>
+
+      <!-- Stage: three view panels stacked -->
       <div class="ca-stage">
-        <svg id="capital-atlas-svg" width="100%" height="100%" preserveAspectRatio="none"></svg>
-        <div id="atlas-tooltip" class="atlas-tooltip"></div>
-        <div class="atlas-controls">
-          <button class="atlas-zoom hint"   type="button" tabindex="-1">Rueda = zoom</button>
-          <button id="atlas-zoom-in"        class="atlas-zoom" type="button">+</button>
-          <button id="atlas-zoom-out"       class="atlas-zoom" type="button">−</button>
-          <button id="atlas-reset-view"     class="atlas-zoom" type="button">R</button>
+
+        <!-- View A: Network (force graph) -->
+        <div class="ca-view active" id="view-network">
+          <svg id="capital-atlas-svg" width="100%" height="100%" preserveAspectRatio="none"></svg>
+          <div id="atlas-tooltip" class="atlas-tooltip"></div>
+          <div class="atlas-controls">
+            <button class="atlas-zoom hint" type="button" tabindex="-1">Rueda = zoom</button>
+            <button id="atlas-zoom-in"  class="atlas-zoom" type="button">+</button>
+            <button id="atlas-zoom-out" class="atlas-zoom" type="button">−</button>
+            <button id="atlas-reset-view" class="atlas-zoom" type="button">R</button>
+          </div>
         </div>
-      </div>
-    </div>
+
+        <!-- View B: Radial -->
+        <div class="ca-view" id="view-radial">
+          <svg id="radial-svg"></svg>
+          <div class="radial-hint" id="radial-hint">Seleccioná un inversor para ver su portfolio en detalle</div>
+        </div>
+
+        <!-- View C: Matrix -->
+        <div class="ca-view" id="view-matrix">
+          <svg id="matrix-svg"></svg>
+        </div>
+
+      </div><!-- .ca-stage -->
+    </div><!-- .ca-canvas-area -->
 
   </div><!-- .ca-layout -->
 
@@ -521,14 +645,15 @@
 <script src="./text-clean.js?v=20260422aa" defer></script>
 <script src="./theme-system.js?v=20260430english-semantic" defer></script>
 <script src="./semantic-single-level-data.js?v=20260508shared-taxonomy" defer></script>
-<script src="./capital-atlas-data.js?v=20260507evidence" defer></script>
-<script src="./capital-atlas.js?v=20260519accordion" defer></script>
+<script src="./capital-atlas-data.js?v=20260520stamm" defer></script>
+<script src="./capital-atlas.js?v=20260520scale2" defer></script>
 
 <script>
 document.addEventListener('DOMContentLoaded', function(){
 
   const D = window.CAPITAL_ATLAS_DATA;
   if (!D || !D.nodes) return;
+  const NS = 'http://www.w3.org/2000/svg';
 
   // ── Palettes ──────────────────────────────────────────────────────────
   const THEME_PAL = {
@@ -614,6 +739,7 @@ document.addEventListener('DOMContentLoaded', function(){
       name: startup.label || startup.name || startup.id,
       theme: t,
       valuation_tier: startup.valuation_tier||0,
+      degree: Number(startup.degree||startup.visible_degree||0),
       country: (startup.countries||[startup.country])[0]||'',
     });
   });
@@ -645,7 +771,7 @@ document.addEventListener('DOMContentLoaded', function(){
       .sort((a,b)=>b[1]-a[1]).slice(0,5);
     const maxTheme  = topThemes[0]?.[1]||1;
     const topStartups = iv.startups
-      .slice().sort((a,b)=>b.valuation_tier-a.valuation_tier||a.name.localeCompare(b.name))
+      .slice().sort((a,b) => b.valuation_tier - a.valuation_tier || b.degree - a.degree)
       .slice(0,8);
 
     let h = '';
@@ -724,22 +850,7 @@ document.addEventListener('DOMContentLoaded', function(){
     `;
 
     card.addEventListener('click', () => {
-      const isActive = activeInvId === iv.id;
-
-      // Deactivate all
-      listEl.querySelectorAll('.iv').forEach(c => c.classList.remove('active'));
-
-      if (isActive) {
-        activeInvId = null;
-        if (window.AtlasAPI) { window.AtlasAPI.selectNode(null); window.AtlasAPI.zoomReset(); }
-      } else {
-        activeInvId = iv.id;
-        card.classList.add('active');
-        if (window.AtlasAPI) {
-          window.AtlasAPI.selectNode(iv.id);
-          window.AtlasAPI.zoomToInvestor(iv.id);
-        }
-      }
+      setActiveInvestor(activeInvId === iv.id ? null : iv.id);
     });
 
     return card;
@@ -766,19 +877,572 @@ document.addEventListener('DOMContentLoaded', function(){
     renderList(this.value);
   });
 
-  // When a node is clicked in the graph, sync the sidebar accordion
-  // (AtlasAPI.selectNode already handles graph highlighting — we just need to sync the card)
-  const origSelect = window.AtlasAPI?.selectNode;
-  if (origSelect) {
-    // Patch: when graph node click calls renderDetail internally, also sync card
-    // We observe via a MutationObserver on #atlas-detail-badge
-    const badge = document.getElementById('atlas-detail-badge');
-    if (badge) {
-      new MutationObserver(() => {
-        // Find if selected id matches an investor
-        // (The graph sets selectedId internally — we can check which card is active via badge content)
-      }).observe(badge, { childList: true, characterData: true, subtree: true });
+  // ── View switching ──────────────────────────────────────────────────────
+  let currentView = 'network';
+
+  function switchView(view) {
+    currentView = view;
+    document.querySelectorAll('.vs-btn').forEach(b =>
+      b.classList.toggle('active', b.dataset.view === view));
+    document.querySelectorAll('.ca-view').forEach(v =>
+      v.classList.toggle('active', v.id === 'view-' + view));
+    document.getElementById('net-controls').style.display =
+      view === 'network' ? 'flex' : 'none';
+    if (view === 'radial') renderRadial(activeInvId);
+    if (view === 'matrix') renderMatrix();
+  }
+
+  document.querySelectorAll('.vs-btn').forEach(btn =>
+    btn.addEventListener('click', () => switchView(btn.dataset.view)));
+
+  // Radial hint acts as back button in focus mode
+  document.getElementById('radial-hint').addEventListener('click', () => {
+    if (activeInvId && currentView === 'radial') setActiveInvestor(null);
+  });
+
+  // ── Active investor coordinator ──────────────────────────────────────────
+  function setActiveInvestor(id) {
+    activeInvId = id;
+    listEl.querySelectorAll('.iv').forEach(c =>
+      c.classList.toggle('active', c.dataset.id === id));
+
+    if (currentView === 'network') {
+      if (window.AtlasAPI) {
+        window.AtlasAPI.selectNode(id);
+        if (id) window.AtlasAPI.zoomToInvestor(id);
+        else     window.AtlasAPI.zoomReset();
+      }
+    } else if (currentView === 'radial') {
+      renderRadial(id);
+    } else if (currentView === 'matrix') {
+      highlightMatrixRow(id);
     }
+  }
+
+  // ── Radial view ──────────────────────────────────────────────────────────
+  function renderRadial(selectedId) {
+    const svg   = document.getElementById('radial-svg');
+    const hint  = document.getElementById('radial-hint');
+    const stage = document.querySelector('.ca-stage');
+    const W = stage ? stage.clientWidth  : 800;
+    const H = stage ? stage.clientHeight : 600;
+    svg.innerHTML = '';
+
+    if (!selectedId) {
+      hint.style.cursor = 'default';
+      hint.textContent  = 'Seleccioná un inversor para ver su portfolio en detalle';
+      renderRadialOverview(svg, W, H);
+    } else {
+      const iv = invStats[selectedId];
+      if (!iv) { renderRadialOverview(svg, W, H); return; }
+      hint.style.cursor = 'pointer';
+      hint.innerHTML = '← Volver · <strong>' + iv.label + '</strong> · ' + iv.count + ' startups';
+      renderRadialFocus(svg, W, H, iv);
+    }
+  }
+
+  function renderRadialOverview(svg, W, H) {
+    svg.setAttribute('viewBox', '0 0 ' + W + ' ' + H);
+    svg.setAttribute('preserveAspectRatio', 'xMidYMid meet');
+
+    const topInv = investors.slice(0, 32);
+    const cx = W / 2, cy = H / 2;
+
+    // Build bubble data with spiral initial placement
+    const bubbles = topInv.map((iv, i) => {
+      const domTheme = Object.entries(iv.themes).sort((a,b) => b[1]-a[1])[0]?.[0];
+      const angle = i * 2.3998; // golden angle
+      const rad   = Math.sqrt(i) * 36;
+      return {
+        id:    iv.id,
+        label: iv.label,
+        count: iv.count,
+        r:     Math.max(16, Math.min(56, Math.sqrt(iv.count) * 10)),
+        color: domTheme ? THEME_PAL[domTheme] : '#888',
+        x: cx + Math.cos(angle) * rad,
+        y: cy + Math.sin(angle) * rad,
+        vx: 0, vy: 0,
+      };
+    });
+
+    // Force relax — repulsion + centering
+    for (let iter = 0; iter < 240; iter++) {
+      const alpha = Math.pow(1 - iter / 240, 1.4);
+      for (let i = 0; i < bubbles.length; i++) {
+        for (let j = i + 1; j < bubbles.length; j++) {
+          const dx = (bubbles[j].x - bubbles[i].x) || 0.01;
+          const dy = (bubbles[j].y - bubbles[i].y) || 0.01;
+          const dist = Math.sqrt(dx*dx + dy*dy);
+          const minD = bubbles[i].r + bubbles[j].r + 5;
+          if (dist < minD) {
+            const f = (minD - dist) / dist * 0.44 * alpha;
+            bubbles[i].vx -= dx * f; bubbles[i].vy -= dy * f;
+            bubbles[j].vx += dx * f; bubbles[j].vy += dy * f;
+          }
+        }
+        bubbles[i].vx += (cx - bubbles[i].x) * 0.012 * alpha;
+        bubbles[i].vy += (cy - bubbles[i].y) * 0.012 * alpha;
+      }
+      bubbles.forEach(b => {
+        b.x += b.vx; b.y += b.vy;
+        b.vx *= 0.62; b.vy *= 0.62;
+      });
+    }
+
+    const g = document.createElementNS(NS, 'g');
+    bubbles.forEach(b => {
+      const circle = document.createElementNS(NS, 'circle');
+      circle.setAttribute('cx', b.x); circle.setAttribute('cy', b.y);
+      circle.setAttribute('r', b.r);
+      circle.setAttribute('fill', b.color + '22');
+      circle.setAttribute('stroke', b.color);
+      circle.setAttribute('stroke-width', '1.5');
+      circle.style.cursor = 'pointer';
+      circle.addEventListener('click', () => setActiveInvestor(b.id));
+      circle.addEventListener('mouseenter', () => circle.setAttribute('fill', b.color + '50'));
+      circle.addEventListener('mouseleave', () => circle.setAttribute('fill', b.color + '22'));
+      g.appendChild(circle);
+
+      const fsize = Math.max(8, Math.min(11, b.r * 0.30));
+      const maxCh = Math.max(4, Math.floor(b.r * 0.22));
+      const short  = b.label.length > maxCh ? b.label.slice(0, maxCh) + '…' : b.label;
+
+      const t1 = document.createElementNS(NS, 'text');
+      t1.setAttribute('x', b.x); t1.setAttribute('y', b.r >= 26 ? b.y - 4 : b.y);
+      t1.setAttribute('text-anchor', 'middle'); t1.setAttribute('dominant-baseline', 'middle');
+      t1.setAttribute('font-size', fsize); t1.setAttribute('font-weight', '700');
+      t1.setAttribute('font-family', 'inherit'); t1.setAttribute('fill', b.color);
+      t1.setAttribute('pointer-events', 'none');
+      t1.textContent = short;
+      g.appendChild(t1);
+
+      if (b.r >= 26) {
+        const t2 = document.createElementNS(NS, 'text');
+        t2.setAttribute('x', b.x); t2.setAttribute('y', b.y + fsize + 1);
+        t2.setAttribute('text-anchor', 'middle'); t2.setAttribute('dominant-baseline', 'middle');
+        t2.setAttribute('font-size', Math.max(7, fsize - 2)); t2.setAttribute('font-weight', '600');
+        t2.setAttribute('font-family', 'inherit'); t2.setAttribute('fill', b.color);
+        t2.setAttribute('opacity', '0.68'); t2.setAttribute('pointer-events', 'none');
+        t2.textContent = b.count;
+        g.appendChild(t2);
+      }
+    });
+    svg.appendChild(g);
+  }
+
+  function renderRadialFocus(svg, W, H, iv) {
+    svg.setAttribute('viewBox', '0 0 ' + W + ' ' + H);
+    svg.setAttribute('preserveAspectRatio', 'xMidYMid meet');
+    const cx = W / 2, cy = H / 2;
+    const innerR = 52;
+    const outerR = Math.min(W, H) * 0.36;
+
+    // Group startups by theme
+    const byTheme = {};
+    iv.startups.forEach(s => {
+      const t = s.theme || '—';
+      if (!byTheme[t]) byTheme[t] = [];
+      byTheme[t].push(s);
+    });
+    const themes = Object.keys(byTheme).sort((a,b) => byTheme[b].length - byTheme[a].length);
+    const total  = iv.startups.length;
+
+    const g = document.createElementNS(NS, 'g');
+    let angleStart = -Math.PI / 2;
+
+    themes.forEach(theme => {
+      const count  = byTheme[theme].length;
+      const sweep  = (count / total) * Math.PI * 2;
+      const midA   = angleStart + sweep / 2;
+      const color  = THEME_PAL[theme] || '#888';
+      const large  = sweep > Math.PI ? 1 : 0;
+      const r1 = outerR - 24, r2 = outerR + 22;
+
+      // Annular sector
+      const c0 = Math.cos(angleStart), s0 = Math.sin(angleStart);
+      const c1 = Math.cos(angleStart + sweep), s1 = Math.sin(angleStart + sweep);
+      const d = [
+        'M', cx+c0*r1, cy+s0*r1,
+        'A', r1, r1, 0, large, 1, cx+c1*r1, cy+s1*r1,
+        'L', cx+c1*r2, cy+s1*r2,
+        'A', r2, r2, 0, large, 0, cx+c0*r2, cy+s0*r2,
+        'Z',
+      ].join(' ');
+      const sector = document.createElementNS(NS, 'path');
+      sector.setAttribute('d', d);
+      sector.setAttribute('fill', color + '1e');
+      sector.setAttribute('stroke', color + '4a');
+      sector.setAttribute('stroke-width', '0.8');
+      g.appendChild(sector);
+
+      // Theme label
+      const tl = document.createElementNS(NS, 'text');
+      tl.setAttribute('x', cx + Math.cos(midA) * (r2 + 16));
+      tl.setAttribute('y', cy + Math.sin(midA) * (r2 + 16));
+      tl.setAttribute('text-anchor', 'middle'); tl.setAttribute('dominant-baseline', 'middle');
+      tl.setAttribute('font-size', '9'); tl.setAttribute('font-weight', '700');
+      tl.setAttribute('font-family', 'inherit'); tl.setAttribute('fill', color);
+      tl.setAttribute('pointer-events', 'none');
+      tl.textContent = THEME_SHORT[theme] || theme.split(' ')[0];
+      g.appendChild(tl);
+
+      // Startup dots + labels
+      byTheme[theme].forEach((s, i) => {
+        const a  = angleStart + (i + 0.5) / count * sweep;
+        const sx = cx + Math.cos(a) * outerR;
+        const sy = cy + Math.sin(a) * outerR;
+
+        const line = document.createElementNS(NS, 'line');
+        line.setAttribute('x1', cx); line.setAttribute('y1', cy);
+        line.setAttribute('x2', sx); line.setAttribute('y2', sy);
+        line.setAttribute('stroke', color); line.setAttribute('stroke-width', '0.7');
+        line.setAttribute('opacity', '0.22');
+        g.appendChild(line);
+
+        const dot = document.createElementNS(NS, 'circle');
+        dot.setAttribute('cx', sx); dot.setAttribute('cy', sy); dot.setAttribute('r', 5);
+        dot.setAttribute('fill', color); dot.setAttribute('opacity', '0.76');
+        g.appendChild(dot);
+
+        if (count <= 18 || s.valuation_tier >= 2) {
+          const anchor = Math.cos(a) >= 0 ? 'start' : 'end';
+          const st = document.createElementNS(NS, 'text');
+          st.setAttribute('x', sx + Math.cos(a) * 9);
+          st.setAttribute('y', sy + Math.sin(a) * 9);
+          st.setAttribute('text-anchor', anchor); st.setAttribute('dominant-baseline', 'middle');
+          st.setAttribute('font-size', '7.5'); st.setAttribute('font-family', 'inherit');
+          st.setAttribute('fill', color); st.setAttribute('opacity', '0.82');
+          st.setAttribute('pointer-events', 'none');
+          const nm = s.name.length > 20 ? s.name.slice(0, 18) + '…' : s.name;
+          st.textContent = nm;
+          g.appendChild(st);
+        }
+      });
+
+      angleStart += sweep;
+    });
+
+    // Center glow
+    const domTheme = Object.entries(iv.themes).sort((a,b) => b[1]-a[1])[0]?.[0];
+    const domColor = domTheme ? THEME_PAL[domTheme] : '#3AA8A3';
+
+    const glow = document.createElementNS(NS, 'circle');
+    glow.setAttribute('cx', cx); glow.setAttribute('cy', cy); glow.setAttribute('r', innerR + 10);
+    glow.setAttribute('fill', domColor + '14');
+    glow.setAttribute('stroke', domColor + '35'); glow.setAttribute('stroke-width', '1');
+    g.appendChild(glow);
+
+    const center = document.createElementNS(NS, 'circle');
+    center.setAttribute('cx', cx); center.setAttribute('cy', cy); center.setAttribute('r', innerR);
+    center.setAttribute('fill', domColor + '1e');
+    center.setAttribute('stroke', domColor); center.setAttribute('stroke-width', '2');
+    g.appendChild(center);
+
+    // Name (word-wrapped inside circle)
+    const words = iv.label.split(' ');
+    const lines = []; let cur = '';
+    words.forEach(w => {
+      const test = cur ? cur + ' ' + w : w;
+      if (test.length > 10 && cur) { lines.push(cur); cur = w; }
+      else cur = test;
+    });
+    if (cur) lines.push(cur);
+    const lineH = 13, nameLines = lines.slice(0, 3);
+    const nameStartY = cy - (nameLines.length - 1) * lineH / 2;
+    nameLines.forEach((line, li) => {
+      const t = document.createElementNS(NS, 'text');
+      t.setAttribute('x', cx); t.setAttribute('y', nameStartY + li * lineH);
+      t.setAttribute('text-anchor', 'middle'); t.setAttribute('dominant-baseline', 'middle');
+      t.setAttribute('font-size', '11'); t.setAttribute('font-weight', '800');
+      t.setAttribute('font-family', 'inherit'); t.setAttribute('fill', domColor);
+      t.setAttribute('pointer-events', 'none');
+      t.textContent = line;
+      g.appendChild(t);
+    });
+
+    const ct = document.createElementNS(NS, 'text');
+    ct.setAttribute('x', cx); ct.setAttribute('y', nameStartY + nameLines.length * lineH + 1);
+    ct.setAttribute('text-anchor', 'middle'); ct.setAttribute('dominant-baseline', 'middle');
+    ct.setAttribute('font-size', '9'); ct.setAttribute('font-family', 'inherit');
+    ct.setAttribute('fill', domColor); ct.setAttribute('opacity', '0.62');
+    ct.setAttribute('pointer-events', 'none');
+    ct.textContent = iv.count + ' startups';
+    g.appendChild(ct);
+
+    svg.appendChild(g);
+  }
+
+  // ── Matrix view ──────────────────────────────────────────────────────────
+  let matrixHighlighted = null;
+
+  function renderMatrix() {
+    const view  = document.getElementById('view-matrix');
+    const svg   = document.getElementById('matrix-svg');
+    const stage = document.querySelector('.ca-stage');
+    svg.innerHTML = '';
+    matrixHighlighted = null;
+    view.style.overflow = 'hidden';
+
+    // ── Dimensions: fill the stage exactly ──────────────────────────────
+    const PAD    = 14;   // outer margin
+    const W      = (stage ? stage.clientWidth  : 900) - PAD * 2;
+    const H      = (stage ? stage.clientHeight : 600) - PAD * 2;
+    const HEADER = 40;   // header row height
+    const labelW = 148;  // investor name column
+    const nTheme = THEME_ORDER.length;
+    const colW   = Math.floor((W - labelW) / nTheme);
+    // How many investors we can fit cleanly
+    const maxRows  = Math.max(1, Math.floor((H - HEADER) / 22));
+    const minRowH  = 19, maxRowH = 32;
+    const topInv   = investors.slice(0, Math.min(maxRows, investors.length));
+    const nRows    = Math.max(1, topInv.length);
+    const rowH     = Math.max(minRowH, Math.min(maxRowH, Math.floor((H - HEADER) / nRows)));
+    const gridW    = labelW + nTheme * colW;
+    const gridH    = HEADER + topInv.length * rowH;
+    const totalW   = gridW + PAD * 2;
+    const totalH   = gridH + PAD * 2;
+
+    svg.setAttribute('width',  totalW);
+    svg.setAttribute('height', totalH);
+    svg.setAttribute('viewBox', `0 0 ${totalW} ${totalH}`);
+    svg.style.width  = totalW + 'px';
+    svg.style.height = totalH + 'px';
+    svg.setAttribute('preserveAspectRatio', 'xMidYMid meet');
+
+    const g = document.createElementNS(NS, 'g');
+    g.setAttribute('transform', `translate(${PAD},${PAD})`);
+
+    // ── Background panel ────────────────────────────────────────────────
+    const panelBg = document.createElementNS(NS, 'rect');
+    panelBg.setAttribute('x', 0); panelBg.setAttribute('y', 0);
+    panelBg.setAttribute('width', gridW); panelBg.setAttribute('height', gridH);
+    panelBg.setAttribute('rx', '10');
+    panelBg.setAttribute('fill', 'rgba(255,252,246,.72)');
+    panelBg.setAttribute('stroke', 'rgba(217,206,190,.42)');
+    panelBg.setAttribute('stroke-width', '1');
+    g.appendChild(panelBg);
+
+    // ── Column headers (horizontal, colored pill background) ────────────
+    // Header bg strip
+    const hdrBg = document.createElementNS(NS, 'rect');
+    hdrBg.setAttribute('x', labelW); hdrBg.setAttribute('y', 0);
+    hdrBg.setAttribute('width', nTheme * colW); hdrBg.setAttribute('height', HEADER);
+    hdrBg.setAttribute('rx', '0'); hdrBg.setAttribute('fill', 'rgba(240,234,222,.55)');
+    g.appendChild(hdrBg);
+
+    THEME_ORDER.forEach((theme, ci) => {
+      const x   = labelW + ci * colW;
+      const col = THEME_PAL[theme];
+      const lbl = THEME_SHORT[theme] || theme.split(' ')[0];
+      // Colored indicator bar at top of each column header
+      const bar = document.createElementNS(NS, 'rect');
+      bar.setAttribute('x', x + 2); bar.setAttribute('y', 0);
+      bar.setAttribute('width', colW - 4); bar.setAttribute('height', 3);
+      bar.setAttribute('rx', '1.5');
+      bar.setAttribute('fill', col);
+      g.appendChild(bar);
+      // Vertical divider
+      if (ci > 0) {
+        const vd = document.createElementNS(NS, 'line');
+        vd.setAttribute('x1', x); vd.setAttribute('y1', 0);
+        vd.setAttribute('x2', x); vd.setAttribute('y2', HEADER);
+        vd.setAttribute('stroke', 'rgba(217,206,190,.3)'); vd.setAttribute('stroke-width', '0.5');
+        g.appendChild(vd);
+      }
+      // Theme label — two-line if needed
+      const words = lbl.split(' ');
+      const line1 = words[0];
+      const line2 = words.slice(1).join(' ');
+      const fontSize = colW >= 72 ? 9.5 : 8.5;
+      const t1 = document.createElementNS(NS, 'text');
+      t1.setAttribute('x', x + colW / 2);
+      t1.setAttribute('y', line2 ? HEADER / 2 - 1 : HEADER / 2 + 4);
+      t1.setAttribute('text-anchor', 'middle');
+      t1.setAttribute('dominant-baseline', line2 ? 'auto' : 'middle');
+      t1.setAttribute('font-size', fontSize);
+      t1.setAttribute('font-weight', '800');
+      t1.setAttribute('font-family', 'inherit');
+      t1.setAttribute('fill', col);
+      t1.setAttribute('pointer-events', 'none');
+      t1.textContent = line1;
+      g.appendChild(t1);
+      if (line2) {
+        const t2 = document.createElementNS(NS, 'text');
+        t2.setAttribute('x', x + colW / 2);
+        t2.setAttribute('y', HEADER / 2 + 9);
+        t2.setAttribute('text-anchor', 'middle');
+        t2.setAttribute('font-size', fontSize - 0.5);
+        t2.setAttribute('font-weight', '700');
+        t2.setAttribute('font-family', 'inherit');
+        t2.setAttribute('fill', col);
+        t2.setAttribute('opacity', '0.82');
+        t2.setAttribute('pointer-events', 'none');
+        t2.textContent = line2;
+        g.appendChild(t2);
+      }
+    });
+
+    // Header/body separator
+    const hdrLine = document.createElementNS(NS, 'line');
+    hdrLine.setAttribute('x1', 0); hdrLine.setAttribute('y1', HEADER);
+    hdrLine.setAttribute('x2', gridW); hdrLine.setAttribute('y2', HEADER);
+    hdrLine.setAttribute('stroke', 'rgba(217,206,190,.55)'); hdrLine.setAttribute('stroke-width', '1');
+    g.appendChild(hdrLine);
+
+    // Label column header
+    const lblHead = document.createElementNS(NS, 'text');
+    lblHead.setAttribute('x', 10); lblHead.setAttribute('y', HEADER / 2 + 1);
+    lblHead.setAttribute('dominant-baseline', 'middle');
+    lblHead.setAttribute('font-size', '8.5'); lblHead.setAttribute('font-weight', '800');
+    lblHead.setAttribute('font-family', 'inherit');
+    lblHead.setAttribute('fill', 'rgba(90,78,62,.55)');
+    lblHead.setAttribute('letter-spacing', '0.08em');
+    lblHead.setAttribute('pointer-events', 'none');
+    lblHead.textContent = `${topInv.length} INVERSORES`;
+    g.appendChild(lblHead);
+
+    // ── Per-theme max for relative opacity ──────────────────────────────
+    const themeMaxes = {};
+    THEME_ORDER.forEach(t => {
+      themeMaxes[t] = Math.max(1, ...topInv.map(iv => iv.themes[t] || 0));
+    });
+
+    // ── Investor rows ────────────────────────────────────────────────────
+    topInv.forEach((iv, ri) => {
+      const y  = HEADER + ri * rowH;
+      const rg = document.createElementNS(NS, 'g');
+      rg.setAttribute('data-inv', iv.id);
+      rg.style.cursor = 'pointer';
+
+      // Row background (transparent by default, colored on hover/select)
+      const bg = document.createElementNS(NS, 'rect');
+      bg.setAttribute('x', 0); bg.setAttribute('y', y);
+      bg.setAttribute('width', gridW); bg.setAttribute('height', rowH);
+      bg.setAttribute('fill', 'transparent');
+      rg.appendChild(bg);
+
+      // Investor name
+      const lbl = document.createElementNS(NS, 'text');
+      lbl.setAttribute('x', 9); lbl.setAttribute('y', y + rowH / 2);
+      lbl.setAttribute('dominant-baseline', 'middle');
+      lbl.setAttribute('font-size', rowH >= 26 ? '10' : '9');
+      lbl.setAttribute('font-weight', '700');
+      lbl.setAttribute('font-family', 'inherit');
+      lbl.setAttribute('fill', '#332b22');
+      const maxLblChars = Math.floor(labelW / 6.8);
+      lbl.textContent = iv.label.length > maxLblChars ? iv.label.slice(0, maxLblChars - 1) + '…' : iv.label;
+      rg.appendChild(lbl);
+
+      // Total count badge (right edge of label column)
+      const total = THEME_ORDER.reduce((s, t) => s + (iv.themes[t] || 0), 0);
+      if (total > 0) {
+        const badge = document.createElementNS(NS, 'text');
+        badge.setAttribute('x', labelW - 5); badge.setAttribute('y', y + rowH / 2);
+        badge.setAttribute('text-anchor', 'end'); badge.setAttribute('dominant-baseline', 'middle');
+        badge.setAttribute('font-size', '7.5'); badge.setAttribute('font-weight', '800');
+        badge.setAttribute('font-family', 'inherit');
+        badge.setAttribute('fill', 'rgba(90,78,62,.42)');
+        badge.setAttribute('pointer-events', 'none');
+        badge.textContent = total;
+        rg.appendChild(badge);
+      }
+
+      // Label column right border
+      const lblBorder = document.createElementNS(NS, 'line');
+      lblBorder.setAttribute('x1', labelW); lblBorder.setAttribute('y1', y);
+      lblBorder.setAttribute('x2', labelW); lblBorder.setAttribute('y2', y + rowH);
+      lblBorder.setAttribute('stroke', 'rgba(217,206,190,.28)'); lblBorder.setAttribute('stroke-width', '0.5');
+      rg.appendChild(lblBorder);
+
+      // Theme cells
+      THEME_ORDER.forEach((theme, ci) => {
+        const count = iv.themes[theme] || 0;
+        const cx    = labelW + ci * colW;
+        const color = THEME_PAL[theme];
+
+        const cell = document.createElementNS(NS, 'rect');
+        cell.setAttribute('x', cx + 2); cell.setAttribute('y', y + 2);
+        cell.setAttribute('width', colW - 4); cell.setAttribute('height', rowH - 4);
+        cell.setAttribute('rx', '4');
+        if (count === 0) {
+          cell.setAttribute('fill', 'rgba(210,200,185,.09)');
+        } else {
+          const ratio = count / themeMaxes[theme];
+          const op = 0.13 + ratio * 0.74;
+          cell.setAttribute('fill', color);
+          cell.setAttribute('opacity', String(op));
+        }
+        rg.appendChild(cell);
+
+        if (count > 0 && colW >= 28) {
+          const ratio   = count / themeMaxes[theme];
+          const darkBg  = ratio > 0.52;
+          const ct = document.createElementNS(NS, 'text');
+          ct.setAttribute('x', cx + colW / 2); ct.setAttribute('y', y + rowH / 2);
+          ct.setAttribute('text-anchor', 'middle'); ct.setAttribute('dominant-baseline', 'middle');
+          ct.setAttribute('font-size', rowH >= 26 ? '8.5' : '7.5');
+          ct.setAttribute('font-weight', '800');
+          ct.setAttribute('font-family', 'inherit');
+          ct.setAttribute('fill', darkBg ? '#fff' : color);
+          ct.setAttribute('pointer-events', 'none');
+          ct.textContent = count;
+          rg.appendChild(ct);
+        }
+      });
+
+      rg.addEventListener('click', () =>
+        setActiveInvestor(activeInvId === iv.id ? null : iv.id));
+
+      rg.addEventListener('mouseenter', () => {
+        if (matrixHighlighted !== iv.id) {
+          bg.setAttribute('fill', 'rgba(58,168,163,.07)');
+          lbl.setAttribute('fill', '#0a6b63');
+        }
+      });
+      rg.addEventListener('mouseleave', () => {
+        if (matrixHighlighted !== iv.id) {
+          bg.setAttribute('fill', 'transparent');
+          lbl.setAttribute('fill', '#332b22');
+        }
+      });
+
+      g.appendChild(rg);
+    });
+
+    // ── Row dividers ────────────────────────────────────────────────────
+    for (let ri = 1; ri < topInv.length; ri++) {
+      const y = HEADER + ri * rowH;
+      const d = document.createElementNS(NS, 'line');
+      d.setAttribute('x1', 0); d.setAttribute('y1', y);
+      d.setAttribute('x2', gridW); d.setAttribute('y2', y);
+      d.setAttribute('stroke', 'rgba(217,206,190,.18)'); d.setAttribute('stroke-width', '0.5');
+      g.insertBefore(d, g.firstChild);
+    }
+
+    // ── Column vertical dividers through rows ───────────────────────────
+    THEME_ORDER.forEach((_, ci) => {
+      if (ci === 0) return;
+      const x = labelW + ci * colW;
+      const vd = document.createElementNS(NS, 'line');
+      vd.setAttribute('x1', x); vd.setAttribute('y1', HEADER);
+      vd.setAttribute('x2', x); vd.setAttribute('y2', gridH);
+      vd.setAttribute('stroke', 'rgba(217,206,190,.18)'); vd.setAttribute('stroke-width', '0.5');
+      g.insertBefore(vd, g.firstChild);
+    });
+
+    svg.appendChild(g);
+  }
+
+  function highlightMatrixRow(id) {
+    matrixHighlighted = id;
+    const svg = document.getElementById('matrix-svg');
+    svg.querySelectorAll('[data-inv]').forEach(rg => {
+      const isA = rg.dataset.inv === id;
+      const bg  = rg.querySelector('rect');
+      const lbl = rg.querySelector('text');
+      if (bg)  bg.setAttribute('fill',  isA ? 'rgba(58,168,163,.10)' : 'transparent');
+      if (lbl) lbl.setAttribute('fill', isA ? '#0a6b63' : '#332b22');
+    });
   }
 
 }); // DOMContentLoaded

@@ -1,5 +1,5 @@
 window.CAPITAL_ATLAS_DATA = {
-  "generated_at": "2026-05-18T22:34:31",
+  "generated_at": "2026-05-20T12:10:47",
   "source": "pipeline:build-atlas (SQLite)",
   "summary": {
     "nodes_total": 737,
@@ -4313,7 +4313,7 @@ window.CAPITAL_ATLAS_DATA = {
       "theme": "Biomanufacturing & Fermentation Economy",
       "legacy_macro_theme": "biomanufacturing and bioindustrial platforms",
       "emergent_theme": "Biomaterials & Circular Economy",
-      "semantic_single_theme": "Diagnostics & Health Access — Diagnostics||diagnostics · device · medtech · nanomedicine",
+      "semantic_single_theme": "Biomanufacturing & Fermentation Economy — Biomanufacturing||bioreactor · biologics · cell therapy · fermentation",
       "semantic_single_confidence": "",
       "semantic_single_score": "",
       "summary": "Stämm is an Argentine advanced-biomanufacturing company developing high-throughput bioprocessors, bioengineering services and Bio AI tools for biologics and cell-therapy production. Its platform supports cell-line development, biologics manufacturing, cell-therapy workflows and multi-omic data analysis, with continuous bioreactor technology aimed at increasing antibody productivity. It belongs inside BIO VC LATAM as core biomanufacturing infrastructure for biologics, cell therapies and data-driven bioengineering.",
