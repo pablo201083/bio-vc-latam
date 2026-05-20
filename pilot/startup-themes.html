@@ -1233,16 +1233,14 @@ function buildClusterList(){
       t.textContent=pct+"% financiadas";
       tags.appendChild(t);
     }
-    // País dominante
-    const topCountry=Object.entries(tm.countries).sort((a,b)=>b[1]-a[1])[0];
-    if(topCountry){
-      const [cc,n]=topCountry;
+    // Top 3 países
+    Object.entries(tm.countries).sort((a,b)=>b[1]-a[1]).slice(0,3).forEach(([cc])=>{
       const flag=FLAG_MAP[cc]||"";
       const t=document.createElement("span");t.className="ct";
       t.style.cssText="color:#374151;border-color:rgba(55,65,81,.2);background:rgba(55,65,81,.04);";
       t.textContent=(flag?flag+" ":"")+cc;
       tags.appendChild(t);
-    }
+    });
     row.appendChild(tags);
 
     // ── Accordion detail (hidden until .active) ──────────────────────────
