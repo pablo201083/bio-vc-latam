@@ -218,7 +218,6 @@
         <div class="tb-row">
           <div class="vt-group">
             <button id="btn-map" class="vt-btn active" type="button">UMAP</button>
-            <button id="btn-cluster" class="vt-btn" type="button">Zoom</button>
           </div>
           <button id="btn-labels" class="lbl-btn" type="button">Nombres</button>
           <button id="btn-filter" class="lbl-btn" type="button">Filtros</button>
@@ -1238,36 +1237,26 @@ function buildClusterList(){
     row.addEventListener("click",()=>{
       const isActive=row.classList.contains("active");
 
-      if(viewMode==="zoom"){
-        activeTheme=theme;
-        document.querySelectorAll(".cr").forEach(r=>{
-          r.classList.remove("active","dimmed");
-          r.classList.toggle("dimmed",r.dataset.theme!==theme);
-          r.querySelector(".cr-detail").innerHTML="";
-        });
-        row.classList.add("active");row.classList.remove("dimmed");
-        detail.innerHTML=buildThemeDetailHTML(tm);
-        zoomToCluster(theme);
-        updateHighlights();updateBreadcrumbs();
+      // Clicking active theme in zoom → back to map
+      if(isActive&&viewMode==="zoom"){
+        resetAll();
         return;
       }
 
-      // Normal mode: toggle
-      if(isActive){
-        activeTheme=null;
-        row.classList.remove("active");
-        detail.innerHTML="";
-        document.querySelectorAll(".cr").forEach(r=>r.classList.remove("dimmed","active"));
-      }else{
-        activeTheme=theme;
-        document.querySelectorAll(".cr").forEach(r=>{
-          r.classList.remove("active","dimmed");
-          r.querySelector(".cr-detail").innerHTML="";
-        });
-        row.classList.add("active");row.classList.remove("dimmed");
-        detail.innerHTML=buildThemeDetailHTML(tm);
-        zoomToCluster(theme);
-      }
+      // Enter zoom for this theme (works from map or zoom)
+      activeTheme=theme;
+      viewMode="zoom";
+      document.getElementById("btn-map").classList.remove("active");
+      computeZoomPos();
+      document.querySelectorAll(".cr").forEach(r=>{
+        r.classList.remove("active","dimmed");
+        r.classList.toggle("dimmed",r.dataset.theme!==theme);
+        r.querySelector(".cr-detail").innerHTML="";
+      });
+      row.classList.add("active");row.classList.remove("dimmed");
+      detail.innerHTML=buildThemeDetailHTML(tm);
+      startTrans("zoom");
+      zoomToCluster(theme);
       updateHighlights();updateBreadcrumbs();
     });
     list.appendChild(row);
@@ -1469,8 +1458,6 @@ function resetAll(){
   if(viewMode!=="map"){
     viewMode="map";
     document.getElementById("btn-map").classList.add("active");
-    document.getElementById("btn-cluster").classList.remove("active");
-
     startTrans("map");
   }
   updateHighlights();updateBreadcrumbs();
@@ -1484,36 +1471,9 @@ document.getElementById("btn-map").addEventListener("click",()=>{
   const wasZoom=viewMode==="zoom";
   viewMode="map";
   document.getElementById("btn-map").classList.add("active");
-  document.getElementById("btn-cluster").classList.remove("active");
   if(wasZoom){panX=0;panY=0;scale=1;applyTf();}
   startTrans("map");
   updateHighlights();
-});
-document.getElementById("btn-cluster").addEventListener("click",()=>{
-  if(viewMode==="zoom")return;
-  viewMode="zoom";
-  document.getElementById("btn-cluster").classList.add("active");
-  document.getElementById("btn-map").classList.remove("active");
-  // If no theme selected yet, default to first available
-  if(!activeTheme){
-    const firstTheme=THEME_ORDER.find(t=>themeMap.has(t));
-    if(firstTheme){
-      activeTheme=firstTheme;
-      document.querySelectorAll(".cr").forEach(r=>{
-        r.classList.remove("active","dimmed");
-        r.classList.toggle("dimmed",r.dataset.theme!==firstTheme);
-      });
-      const firstCard=document.querySelector(`.cr[data-theme="${CSS.escape(firstTheme)}"]`);
-      if(firstCard){
-        firstCard.classList.add("active");
-        firstCard.querySelector(".cr-detail").innerHTML=buildThemeDetailHTML(themeMap.get(firstTheme));
-      }
-    }
-  }
-  computeZoomPos(); // zx/zy = mx/my — no node movement
-  startTrans("zoom");
-  if(activeTheme)zoomToCluster(activeTheme); // camera zoom only
-  updateHighlights();updateBreadcrumbs();
 });
 
 document.getElementById("btn-labels").addEventListener("click",function(){
