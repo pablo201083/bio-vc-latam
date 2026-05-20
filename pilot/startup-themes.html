@@ -219,7 +219,7 @@
         <div class="tb-row">
           <div class="vt-group">
             <button id="btn-map" class="vt-btn active" type="button">UMAP</button>
-            <button id="btn-cluster" class="vt-btn" type="button">Themes</button>
+            <button id="btn-cluster" class="vt-btn" type="button">Zoom</button>
             <button id="btn-graph" class="vt-btn" type="button">Network</button>
           </div>
           <button id="btn-labels" class="lbl-btn" type="button">Nombres</button>
@@ -413,6 +413,7 @@ const nodes=startups.map(s=>({
   d:s,
   mx:0,my:0,    // UMAP map position
   kx:0,ky:0,   // Cluster arrangement position
+  zx:0,zy:0,   // Zoom-by-theme position
   gxs:0,gys:0, // Graph/network position (screen coords)
   cx:0,cy:0,   // current rendered position
   circEl:null,ringEl:null,lblEl:null
@@ -434,6 +435,35 @@ function computeMapPos(){
     n.mx=pad+(n.d.x-minX)/rx*(W-pad*2);
     n.my=pad+(n.d.y-minY)/ry*(H-pad*2);
   });
+}
+
+// ── Zoom-by-theme: camera zoom, no node movement ────────────────────────────
+// zx/zy always mirrors mx/my so nodes stay in UMAP positions.
+// The "zoom" is a camera pan+scale onto the theme's bounding box.
+function computeZoomPos(){
+  nodes.forEach(n=>{n.zx=n.mx;n.zy=n.my});
+}
+
+function zoomClusterEntries(theme){
+  const themeNs=nodes.filter(n=>(n.d.bio_theme||"Uncategorized")===theme);
+  const byCl=new Map();
+  themeNs.forEach(n=>{
+    const cid=n.d.cluster_id??-1;
+    if(!byCl.has(cid))byCl.set(cid,{
+      cid,
+      label:n.d.cluster_label||"",
+      keywords:n.d.cluster_keywords||"",
+      nodes:[],cx:0,cy:0,scx:0,scy:0
+    });
+    byCl.get(cid).nodes.push(n);
+  });
+  // Compute UMAP centroids
+  const entries=[...byCl.values()].sort((a,b)=>b.nodes.length-a.nodes.length);
+  entries.forEach(e=>{
+    e.cx=e.nodes.reduce((s,n)=>s+n.d.x,0)/e.nodes.length;
+    e.cy=e.nodes.reduce((s,n)=>s+n.d.y,0)/e.nodes.length;
+  });
+  return entries;
 }
 
 // Collision repulsion + gentle gravity toward canvas center
@@ -752,8 +782,15 @@ function nRadius(s){
   return VAL_R_MIN+(VAL_R_MAX-VAL_R_MIN)*Math.min(v,VAL_CAP)/VAL_CAP;
 }
 function nOpacity(s){return s.quality_band==="high"?0.88:0.72}
-function nFeatured(s){return (s.valuation_tier!=null&&s.valuation_tier>=2)||(s.valuation_estimate_usd||0)>=50;}
-function nLabeled(s){return s.quality_band==="high"||(s.valuation_estimate_usd||0)>=15;}
+// Nivel 1 — Ancla: val≥$50M o tier≥2. Siempre visible, el toggle no los apaga.
+function nAnchor(s){return (s.valuation_tier!=null&&s.valuation_tier>=2)||(s.valuation_estimate_usd||0)>=50;}
+// Nivel 2 — Destacado: val≥$8M Y ≥2 inversores. Dot mediano que puede cargar un label.
+// Requiere tamaño mínimo para que el label tenga proporción visual con el punto.
+function nDestacado(s){return (s.valuation_estimate_usd||0)>=8 && s.n_investors_mapped>=2;}
+// Nivel 3 — Completo: calidad alta. Solo visible con toggle ON en cualquier modo.
+function nCompleto(s){return s.quality_band==="high";}
+function nFeatured(s){return nAnchor(s);}
+function nImportant(s){return nAnchor(s)||nDestacado(s);}
 
 // ── Filter state — multi-selección con Sets ───────────────────────────────
 const activeTechs=new Set();      // OR dentro de la categoría
@@ -799,13 +836,13 @@ function buildSVG(){
     gNodes.appendChild(circ);
     n.circEl=circ;
 
-    // Labels: always visible for tier 2+; others follow showLabels toggle
-    const featured=nFeatured(s);
+    // Labels — 3 tiers: Ancla (always), Destacado (default), Completo (toggle)
+    const anchor=nAnchor(s), dest=nDestacado(s);
     const lbl=document.createElementNS(NS,"text");
     lbl.setAttribute("text-anchor","middle");
     lbl.setAttribute("dominant-baseline","middle");
-    lbl.setAttribute("font-size",featured?"9.5":"7.5");
-    lbl.setAttribute("font-weight",featured?"700":"400");
+    lbl.setAttribute("font-size",anchor?"10":dest?"8.5":"7.5");
+    lbl.setAttribute("font-weight",anchor?"700":"400");
     lbl.setAttribute("font-family","inherit");
     lbl.setAttribute("fill","#2a2218");
     lbl.setAttribute("stroke","rgba(248,245,239,0.97)");
@@ -813,9 +850,10 @@ function buildSVG(){
     lbl.setAttribute("stroke-linejoin","round");
     lbl.setAttribute("paint-order","stroke");
     lbl.setAttribute("pointer-events","none");
-    lbl.setAttribute("opacity",featured?"1":"0.85");
+    lbl.setAttribute("opacity",anchor?"1":dest?"0.88":"0.78");
     lbl.textContent=s.name.replace(/\s*S\.?\s*[AP]\.?S?\.?$/i,"").split(/\s+/).slice(0,2).join(" ");
-    lbl.style.display=(featured||(showLabels&&nLabeled(s)))?"":"none";
+    // Default: anchor + destacado visible; completo only when toggle ON
+    lbl.style.display=(anchor||dest||(showLabels&&nCompleto(s)))?"":"none";
     gLabels.appendChild(lbl);
     n.lblEl=lbl;
 
@@ -888,6 +926,88 @@ function corePoints(pts, maxSigma=2.2){
 function updateHalos(){
   while(gHalos.firstChild)gHalos.removeChild(gHalos.firstChild);
   while(gThemeLabels.firstChild)gThemeLabels.removeChild(gThemeLabels.firstChild);
+
+  // In zoom mode: draw per-sub-cluster halos + labels
+  if(viewMode==="zoom"){
+    if(activeTheme){
+      const themeColor=themeCol(activeTheme);
+      const entries=zoomClusterEntries(activeTheme);
+
+      entries.forEach(e=>{
+        const pts=e.nodes.map(n=>[n.cx,n.cy]);
+        if(!pts.length)return;
+
+        // Halo around each sub-cluster island
+        if(pts.length===1){
+          const el=document.createElementNS(NS,"circle");
+          el.setAttribute("cx",pts[0][0]);el.setAttribute("cy",pts[0][1]);
+          el.setAttribute("r","30");
+          el.setAttribute("fill",themeColor);el.setAttribute("opacity","0.09");
+          el.setAttribute("stroke",themeColor);el.setAttribute("stroke-width","1.8");
+          el.setAttribute("stroke-opacity","0.26");el.setAttribute("pointer-events","none");
+          gHalos.appendChild(el);
+        }else{
+          const hull=convexHull(corePoints(pts));
+          const path=blobPath(hull,pts.length<4?30:22);
+          if(path){
+            const el=document.createElementNS(NS,"path");
+            el.setAttribute("d",path);
+            el.setAttribute("fill",themeColor);el.setAttribute("opacity","0.08");
+            el.setAttribute("stroke",themeColor);el.setAttribute("stroke-width","1.8");
+            el.setAttribute("stroke-opacity","0.24");el.setAttribute("pointer-events","none");
+            gHalos.appendChild(el);
+          }
+        }
+
+        // Sub-cluster label — extract descriptive part
+        const rawLabel=e.label||"";
+        const descPart=rawLabel.includes(" — ")?rawLabel.split(" — ")[1]:rawLabel;
+        const kw=(e.keywords||"").split(",").slice(0,3).join(", ");
+        const labelText=descPart||kw||(e.cid>=0?`Cluster ${e.cid}`:"Sin cluster");
+        const shortLabel=labelText.length>28?labelText.slice(0,27)+"…":labelText;
+
+        // Centroid of current screen positions
+        const cx=pts.reduce((s,p)=>s+p[0],0)/pts.length;
+        const minY=Math.min(...pts.map(p=>p[1]));
+        const funded=e.nodes.filter(n=>n.d.n_investors_mapped>0).length;
+        const countTxt=`${e.nodes.length} · ${funded} inv`;
+
+        const lw=Math.max(shortLabel.length*6.4+16,80);
+        const lh=20;
+        const lx=Math.max(4,Math.min(W-lw-4,cx-lw/2));
+        const ly=Math.max(52,minY-lh-10);
+
+        const bg=document.createElementNS(NS,"rect");
+        bg.setAttribute("x",lx.toFixed(1));bg.setAttribute("y",ly.toFixed(1));
+        bg.setAttribute("width",lw.toFixed(1));bg.setAttribute("height",lh);
+        bg.setAttribute("rx","5");
+        bg.setAttribute("fill","rgba(255,252,247,0.93)");
+        bg.setAttribute("stroke",themeColor);bg.setAttribute("stroke-opacity","0.28");
+        bg.setAttribute("stroke-width","1");bg.setAttribute("pointer-events","none");
+        gThemeLabels.appendChild(bg);
+
+        const lt=document.createElementNS(NS,"text");
+        lt.setAttribute("x",(lx+lw/2).toFixed(1));lt.setAttribute("y",(ly+lh/2).toFixed(1));
+        lt.setAttribute("text-anchor","middle");lt.setAttribute("dominant-baseline","middle");
+        lt.setAttribute("font-size","8");lt.setAttribute("font-weight","600");
+        lt.setAttribute("fill",themeColor);lt.setAttribute("pointer-events","none");
+        lt.textContent=shortLabel;
+        gThemeLabels.appendChild(lt);
+
+        // Funded count below label
+        const ft=document.createElementNS(NS,"text");
+        ft.setAttribute("x",(lx+lw/2).toFixed(1));ft.setAttribute("y",(ly+lh+9).toFixed(1));
+        ft.setAttribute("text-anchor","middle");ft.setAttribute("dominant-baseline","middle");
+        ft.setAttribute("font-size","6.5");ft.setAttribute("font-weight","400");
+        ft.setAttribute("fill","#9a8f84");ft.setAttribute("pointer-events","none");
+        ft.textContent=countTxt;
+        gThemeLabels.appendChild(ft);
+      });
+    }
+
+    return;
+  }
+
   const any=anyFilter();
 
   const byTheme={};
@@ -1038,6 +1158,7 @@ function updateHalos(){
     txt.textContent=l.shortName;
     gThemeLabels.appendChild(txt);
   });
+
 }
 
 const GRAY_FILL="#bab3aa";  // gris cálido neutro para nodos no-seleccionados
@@ -1059,24 +1180,51 @@ function syncFilterBtn(){
 function updateHighlights(){
   const any=anyFilter();
   syncFilterBtn();
+
+  // ── Zoom mode: protagonist view for one theme ──────────────────────────
+  // En zoom solo mostramos anchors por defecto — la cámara ya está encima,
+  // el usuario ve los dots claramente y puede hover. Toggle revela destacados+completos.
+  if(viewMode==="zoom"&&activeTheme){
+    nodes.forEach(n=>{
+      const s=n.d;
+      const inTheme=(s.bio_theme||"Uncategorized")===activeTheme;
+      const color=themeCol(s.bio_theme);
+      const hi=isHl(s);
+      if(n.circEl){
+        n.circEl.setAttribute("fill",inTheme?(searchId&&!hi?GRAY_FILL:color):GRAY_FILL);
+        n.circEl.setAttribute("opacity",inTheme?(searchId&&!hi?0.25:nOpacity(s)):0);
+        n.circEl.setAttribute("r",hi&&searchId===s.id?nRadius(s)+3:nRadius(s));
+      }
+      if(n.lblEl){
+        // Default: solo anchors (puntos grandes). Toggle "Nombres" agrega destacados y completos.
+        const zBase=nAnchor(s)||(showLabels&&(nDestacado(s)||nCompleto(s)));
+        const show=inTheme&&(searchId?hi:zBase);
+        n.lblEl.style.display=show?"":"none";
+        n.lblEl.setAttribute("font-size",nAnchor(s)?"10":"8");
+        n.lblEl.setAttribute("font-weight",searchId===s.id||nAnchor(s)?"700":"400");
+      }
+    });
+    return;
+  }
+
+  // ── Normal mode ────────────────────────────────────────────────────────
   nodes.forEach(n=>{
     const s=n.d;
     const hi=isHl(s);
     const baseOp=nOpacity(s);
-    const featured=nFeatured(s);
     const color=themeCol(s.bio_theme);
 
-    // Círculo: color cluster si match, gris si no — no desaparece, solo se apaga
     if(n.circEl){
       n.circEl.setAttribute("fill",any&&!hi?GRAY_FILL:color);
       n.circEl.setAttribute("opacity",any?(hi?baseOp:0.35):baseOp);
       n.circEl.setAttribute("r",hi&&searchId===s.id?nRadius(s)+3:nRadius(s));
     }
-    // Etiquetas: solo las del match (o las featured si no hay filtro activo)
     if(n.lblEl){
-      const show=any?(hi&&(featured||(showLabels&&nLabeled(s)))):(featured||(showLabels&&nLabeled(s)));
+      const base=nAnchor(s)||nDestacado(s)||(showLabels&&nCompleto(s));
+      // Anchors always show, others only when they pass filter
+      const show=nAnchor(s)?(any?hi:true):(any?(hi&&base):base);
       n.lblEl.style.display=show?"":"none";
-      n.lblEl.setAttribute("font-weight",searchId===s.id||featured?"700":"400");
+      n.lblEl.setAttribute("font-weight",searchId===s.id||nAnchor(s)?"700":"400");
     }
   });
 }
@@ -1090,7 +1238,7 @@ function startTrans(toMode){
   transFrom={};transTo={};
   nodes.forEach(n=>{
     transFrom[n.d.id]={x:n.cx,y:n.cy};
-    const t=toMode==="map"?{x:n.mx,y:n.my}:toMode==="cluster"?{x:n.kx,y:n.ky}:{x:n.gxs,y:n.gys};
+    const t=toMode==="map"?{x:n.mx,y:n.my}:toMode==="cluster"?{x:n.kx,y:n.ky}:toMode==="zoom"?{x:n.zx,y:n.zy}:{x:n.gxs,y:n.gys};
     transTo[n.d.id]=t;
   });
   transP=0;transitioning=true;
@@ -1101,7 +1249,7 @@ function eio(t){return t<.5?2*t*t:-1+(4-2*t)*t}
 function zoomToCluster(theme){
   const cNodes=nodes.filter(n=>(n.d.bio_theme||"Uncategorized")===theme);
   if(!cNodes.length)return;
-  const xs=cNodes.map(n=>n.cx),ys=cNodes.map(n=>n.cy);
+  const xs=cNodes.map(n=>n.mx),ys=cNodes.map(n=>n.my);
   const minX=Math.min(...xs)-40,maxX=Math.max(...xs)+40;
   const minY=Math.min(...ys)-40,maxY=Math.max(...ys)+40;
   const bW=maxX-minX||80,bH=maxY-minY||80;
@@ -1211,8 +1359,8 @@ function loop(){
     });
   }else{
     nodes.forEach(n=>{
-      n.cx=viewMode==="map"?n.mx:viewMode==="cluster"?n.kx:n.gxs;
-      n.cy=viewMode==="map"?n.my:viewMode==="cluster"?n.ky:n.gys;
+      n.cx=viewMode==="map"?n.mx:viewMode==="cluster"?n.kx:viewMode==="zoom"?n.zx:n.gxs;
+      n.cy=viewMode==="map"?n.my:viewMode==="cluster"?n.ky:viewMode==="zoom"?n.zy:n.gys;
     });
   }
   // Fade graph overlay in/out
@@ -1283,6 +1431,20 @@ function buildClusterList(){
     row.appendChild(tags);
 
     row.addEventListener("click",()=>{
+      if(viewMode==="zoom"){
+        // In zoom mode: just pan camera to the new theme — no node movement
+        activeTheme=theme;
+        document.querySelectorAll(".cr").forEach(r=>{
+          r.classList.remove("active","dimmed");
+          r.classList.toggle("dimmed",r.dataset.theme!==theme);
+        });
+        row.classList.add("active");row.classList.remove("dimmed");
+        zoomToCluster(theme);
+        renderThemeDetail(tm);
+        updateHighlights();updateBreadcrumbs();
+        return;
+      }
+      // Normal UMAP mode: toggle theme filter + camera zoom
       if(activeTheme===theme){
         activeTheme=null;row.classList.remove("active");
         document.querySelectorAll(".cr").forEach(r=>r.classList.remove("dimmed","active"));
@@ -1594,19 +1756,38 @@ document.addEventListener("click",e=>{if(!srchIn.contains(e.target))srchRes.clas
 // ── Controls ──────────────────────────────────────────────────────────────
 document.getElementById("btn-map").addEventListener("click",()=>{
   if(viewMode==="map")return;
+  const wasZoom=viewMode==="zoom";
   viewMode="map";
   document.getElementById("btn-map").classList.add("active");
   document.getElementById("btn-cluster").classList.remove("active");
   document.getElementById("btn-graph").classList.remove("active");
+  if(wasZoom){panX=0;panY=0;scale=1;applyTf();}
   startTrans("map");
+  updateHighlights();
 });
 document.getElementById("btn-cluster").addEventListener("click",()=>{
-  if(viewMode==="cluster")return;
-  viewMode="cluster";
+  if(viewMode==="zoom")return;
+  viewMode="zoom";
   document.getElementById("btn-cluster").classList.add("active");
   document.getElementById("btn-map").classList.remove("active");
   document.getElementById("btn-graph").classList.remove("active");
-  startTrans("cluster");
+  // If no theme selected yet, default to first available
+  if(!activeTheme){
+    const firstTheme=THEME_ORDER.find(t=>themeMap.has(t));
+    if(firstTheme){
+      activeTheme=firstTheme;
+      document.querySelectorAll(".cr").forEach(r=>{
+        r.classList.remove("active","dimmed");
+        r.classList.toggle("dimmed",r.dataset.theme!==firstTheme);
+      });
+      document.querySelector(`.cr[data-theme="${CSS.escape(firstTheme)}"]`)?.classList.add("active");
+      renderThemeDetail(themeMap.get(firstTheme));
+    }
+  }
+  computeZoomPos(); // zx/zy = mx/my — no node movement
+  startTrans("zoom");
+  if(activeTheme)zoomToCluster(activeTheme); // camera zoom only
+  updateHighlights();updateBreadcrumbs();
 });
 document.getElementById("btn-graph").addEventListener("click",function(){
   if(viewMode==="graph")return;
@@ -1628,7 +1809,6 @@ document.getElementById("btn-graph").addEventListener("click",function(){
 });
 document.getElementById("btn-labels").addEventListener("click",function(){
   showLabels=!showLabels;this.classList.toggle("on",showLabels);
-  nodes.forEach(n=>{if(n.lblEl)n.lblEl.style.display=(nFeatured(n.d)||(showLabels&&nLabeled(n.d)))?"":"none"});
   updateHighlights();
 });
 document.getElementById("btn-filter").addEventListener("click",function(){
@@ -1671,9 +1851,10 @@ const ro=new ResizeObserver(()=>{
     }
     roLastW=nW;roLastH=nH;
     setDims();computeMapPos();relaxMapPos();pushThemeCentroids();computeClusterPos();computeGraphPos();
+    computeZoomPos(); // zx/zy = mx/my — no node movement
     nodes.forEach(n=>{
-      n.cx=viewMode==="map"?n.mx:viewMode==="cluster"?n.kx:n.gxs;
-      n.cy=viewMode==="map"?n.my:viewMode==="cluster"?n.ky:n.gys;
+      n.cx=viewMode==="map"?n.mx:viewMode==="cluster"?n.kx:viewMode==="zoom"?n.zx:n.gxs;
+      n.cy=viewMode==="map"?n.my:viewMode==="cluster"?n.ky:viewMode==="zoom"?n.zy:n.gys;
     });
     updatePositions();updateGraphElements();updateHighlights();
     applyTf();
