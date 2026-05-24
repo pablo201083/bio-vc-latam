@@ -1,6 +1,26 @@
 edge_id,source_entity_id,source_name,target_entity_id,target_name,support_type,started_at,ended_at,source_url,confidence_score,notes
 arcap_member_kptl,arcap,ARCAP,kptl,KPTL,membership,,https://arcap.org/socios,0.92,KPTL es miembro activo de ARCAP
-arcap_member_pymero,arcap,ARCAP,pymero,Pymero,membership,,https://arcap.org/socios,0.88,Pymero listado como miembro en directorio ARCAP — verificar
-arcap_member_canary,arcap,ARCAP,canary,Canary,membership,,https://arcap.org/socios,0.88,Canary (Brasil) miembro ARCAP — confirmar membership vigente
 arcap_member_500latam,arcap,ARCAP,500_latam,500 LatAm,membership,,https://arcap.org/socios,0.85,500 LatAm en directorio ARCAP
 arcap_member_valor,arcap,ARCAP,valor_capital_group,Valor Capital Group,membership,,https://arcap.org/socios,0.85,Valor Capital en directorio ARCAP
+arcap_member_drapercygnus,arcap,ARCAP,DraperCygnus,Draper Cygnus,membership,,https://arcap.org/socios,0.90,Draper Cygnus (AR) — fondo argentino prominente miembro ARCAP
+arcap_member_endurance28,arcap,ARCAP,endurance_28,Endurance 28,membership,,https://arcap.org/socios,0.86,Endurance 28 — fondo AR de impacto
+arcap_member_newtopia,arcap,ARCAP,newtopia_vc,Newtopia VC,membership,,https://arcap.org/socios,0.88,Newtopia VC — listado en directorio ARCAP
+arcap_member_kamay,arcap,ARCAP,kamay_ventures,Kamay Ventures,membership,,https://arcap.org/socios,0.82,Kamay Ventures — fondo AR con foco agtech
+arcap_member_glocal,arcap,ARCAP,glocal,Glocal Fund,membership,,https://arcap.org/socios,0.80,Glocal Fund — fondo AR generalista
+abvcap_member_kptl,abvcap,ABVCAP,kptl,KPTL,membership,,https://www.abvcap.com.br/associados,0.90,KPTL listado como asociado en ABVCAP
+abvcap_member_spventures,abvcap,ABVCAP,sp_ventures,SP Ventures,membership,,https://www.abvcap.com.br/associados,0.90,SP Ventures — miembro activo ABVCAP
+abvcap_member_monashees,abvcap,ABVCAP,monashees,Monashees,membership,,https://www.abvcap.com.br/associados,0.92,Monashees — miembro prominente ABVCAP
+abvcap_member_kaszek,abvcap,ABVCAP,kaszek,Kaszek,membership,,https://www.abvcap.com.br/associados,0.92,Kaszek — miembro prominente ABVCAP
+abvcap_member_voxcapital,abvcap,ABVCAP,vox_capital,Vox Capital,membership,,https://www.abvcap.com.br/associados,0.86,Vox Capital — fondo de impacto BR miembro ABVCAP
+abvcap_member_aquacapital,abvcap,ABVCAP,aqua_capital,Aqua Capital,membership,,https://www.abvcap.com.br/associados,0.84,Aqua Capital — fondo agtech BR probable miembro ABVCAP
+abvcap_member_kaete,abvcap,ABVCAP,kaete_investimentos,Kaete Investimentos,membership,,https://www.abvcap.com.br/associados,0.82,Kaete Investimentos — fondo impacto BR
+chilevc_member_saviaventures,chilevc,ChileVC,savia_ventures,Savia Ventures,membership,,https://www.chilevc.cl/socios,0.88,Savia Ventures — fondo agtech CL miembro ChileVC
+chilevc_member_fenventures,chilevc,ChileVC,fen_ventures,FEN Ventures,membership,,https://www.chilevc.cl/socios,0.88,FEN Ventures — fondo CL miembro ChileVC
+chilevc_member_chileglobal,chilevc,ChileVC,chileglobal_ventures,ChileGlobal Ventures,membership,,https://www.chilevc.cl/socios,0.86,ChileGlobal Ventures — miembro ChileVC
+chilevc_member_kayyak,chilevc,ChileVC,kayyak_ventures,Kayyak Ventures,membership,,https://www.chilevc.cl/socios,0.84,Kayyak Ventures — fondo CL miembro ChileVC
+lavca_member_kptl,lavca,LAVCA,kptl,KPTL,membership,,https://lavca.org/members/,0.88,KPTL listado como miembro LAVCA
+lavca_member_spventures,lavca,LAVCA,sp_ventures,SP Ventures,membership,,https://lavca.org/members/,0.88,SP Ventures — miembro LAVCA
+lavca_member_500latam,lavca,LAVCA,500_latam,500 LatAm,membership,,https://lavca.org/members/,0.88,500 LatAm — miembro LAVCA
+lavca_member_valor,lavca,LAVCA,valor_capital_group,Valor Capital Group,membership,,https://lavca.org/members/,0.88,Valor Capital Group — miembro LAVCA
+lavca_member_monashees,lavca,LAVCA,monashees,Monashees,membership,,https://lavca.org/members/,0.88,Monashees — miembro LAVCA
+lavca_member_kaszek,lavca,LAVCA,kaszek,Kaszek,membership,,https://lavca.org/members/,0.86,Kaszek — miembro LAVCA

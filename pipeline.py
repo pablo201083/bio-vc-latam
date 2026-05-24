@@ -476,6 +476,20 @@ def cmd_fund_sweep_status(args: argparse.Namespace) -> None:
 # ingest-orgs
 # ──────────────────────────────────────────────
 
+def cmd_fund_gap_report(args: argparse.Namespace) -> None:
+    from scripts.fund_gap_report import run as run_gap
+    min_p = getattr(args, "min_portfolio", 1)
+    top   = getattr(args, "top_funds", 20)
+    inv   = getattr(args, "investor", None)
+    print(f"\n  Fund Gap Report (min_portfolio={min_p}, top_funds={top})...\n")
+    res = run_gap(DB_PATH, min_portfolio=min_p, top_funds=top, investor_filter=inv)
+    print(f"  Inversores: {res['investors_analyzed']} | Candidatos: {res['total_candidates']}")
+    print(f"\n  Top oportunidades:")
+    for inv_id, cnt in res["top_opportunity_funds"]:
+        print(f"    {inv_id:<35} {cnt:>3} sin edge")
+    print(f"\n  Salida: quality/fund_gap_candidates.csv\n")
+
+
 def cmd_build_ecosystem_graph(args: argparse.Namespace) -> None:
     from src.ecosystem_graph import run as run_eco
     print("\n  Building Ecosystem Graph data...\n")
@@ -543,6 +557,10 @@ def main() -> None:
     sub.add_parser("fund-sweep-status", help="Dashboard de cobertura del grafo de capital + guía para el sweep")
     sub.add_parser("ingest-orgs", help="canonical/manual_canonical_organizations.csv + support/validation edges → ecosystem entities")
     sub.add_parser("build-ecosystem-graph", help="Regenerar pilot/ecosystem-graph-data.js desde SQLite (todas las capas)")
+    fgr = sub.add_parser("fund-gap-report", help="Generar quality/fund_gap_candidates.csv — startups potenciales no mapeadas por inversor")
+    fgr.add_argument("--min-portfolio", type=int, default=1, help="Solo fondos con >= N edges existentes")
+    fgr.add_argument("--top-funds",     type=int, default=20, help="Analizar top N fondos (default: 20)")
+    fgr.add_argument("--investor",      type=str, default=None, help="Filtrar a un inversor específico")
     sub.add_parser("quality-report", help="Genera pilot/quality-tracker.html con métricas de calidad")
 
     rc = sub.add_parser("reclassify-themes", help="Asigna bio_theme_primary/secondary + is_bio_universe a todos los includes")
@@ -580,6 +598,7 @@ def main() -> None:
         "fund-sweep-status": cmd_fund_sweep_status,
         "ingest-orgs": cmd_ingest_orgs,
         "build-ecosystem-graph": cmd_build_ecosystem_graph,
+        "fund-gap-report": cmd_fund_gap_report,
         "quality-report": cmd_quality_report,
         "reclassify-themes": cmd_reclassify,
         "rebuild": cmd_rebuild,
