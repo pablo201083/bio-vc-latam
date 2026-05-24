@@ -1,0 +1,1009 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ecosystem Graph · BIO LATAM</title>
+  <link rel="stylesheet" href="./styles.css?v=20260524">
+  <style>
+    html, body.eg-page { height: 100%; }
+    body.eg-page {
+      margin: 0; height: 100vh; overflow: hidden;
+      display: flex; flex-direction: column;
+    }
+    body.eg-page .page-shell {
+      flex: 1 1 0; min-height: 0; max-width: 100%; margin: 0;
+      display: flex; flex-direction: column;
+      padding: 8px 12px 10px; gap: 8px;
+    }
+
+    /* ── top strip ─────────────────────────────────────────────────── */
+    .eg-strip {
+      display: flex; align-items: center; gap: 12px; flex-shrink: 0;
+    }
+    .eg-strip-title {
+      font-size: .72rem; font-weight: 800; letter-spacing: .07em;
+      text-transform: uppercase; color: var(--muted); white-space: nowrap;
+    }
+    .eg-stats { display: flex; gap: 5px; flex-wrap: wrap; }
+    .eg-stat {
+      border: 1px solid var(--line); border-radius: 999px;
+      background: rgba(255,255,255,.78); padding: 3px 10px;
+      font-size: .71rem; color: var(--muted); white-space: nowrap;
+    }
+    .eg-stat strong { font-weight: 800; color: var(--ink); font-variant-numeric: tabular-nums; }
+
+    /* ── main layout ───────────────────────────────────────────────── */
+    .eg-layout {
+      flex: 1 1 0; min-height: 0; display: flex; gap: 10px;
+    }
+
+    /* ── sidebar ───────────────────────────────────────────────────── */
+    .eg-sidebar {
+      width: 248px; min-width: 0; flex-shrink: 0;
+      display: flex; flex-direction: column; gap: 8px;
+    }
+
+    /* layer controls card */
+    .eg-card {
+      border: 1px solid var(--line); border-radius: 16px;
+      background: var(--panel); box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+    .eg-card-head {
+      padding: 10px 13px 8px;
+      border-bottom: 1px solid var(--line);
+      background: linear-gradient(180deg,rgba(255,255,255,.95),rgba(248,243,234,.7));
+    }
+    .eg-card-head-title {
+      font-size: .82rem; font-weight: 800; color: var(--ink); line-height: 1;
+    }
+    .eg-card-head-sub { font-size: .68rem; color: var(--muted); margin-top: 2px; }
+
+    .eg-controls-body { padding: 10px 13px; }
+    .eg-section-label {
+      font-size: .63rem; font-weight: 700; letter-spacing: .08em;
+      text-transform: uppercase; color: var(--muted); margin: 0 0 6px;
+    }
+    .eg-section-label + .eg-section-label { margin-top: 10px; }
+    .eg-toggle-row {
+      display: flex; align-items: center; gap: 7px;
+      padding: 4px 0; cursor: pointer;
+      font-size: .75rem; color: var(--ink); user-select: none;
+    }
+    .eg-toggle-row:hover { color: var(--accent); }
+    .eg-dot {
+      width: 10px; height: 10px; border-radius: 999px;
+      flex-shrink: 0; border: 1.5px solid rgba(0,0,0,.12);
+    }
+    .eg-toggle-row input { display: none; }
+    .eg-toggle-row.off { opacity: .45; }
+    .eg-toggle-count {
+      margin-left: auto; font-size: .65rem; color: var(--muted);
+      font-variant-numeric: tabular-nums;
+    }
+
+    .eg-edge-row {
+      display: flex; align-items: center; gap: 7px;
+      padding: 3px 0; cursor: pointer;
+      font-size: .72rem; color: var(--ink); user-select: none;
+    }
+    .eg-edge-row:hover { color: var(--accent); }
+    .eg-edge-row.off { opacity: .4; }
+    .eg-edge-row input { display: none; }
+    .eg-edge-line {
+      width: 18px; height: 3px; border-radius: 2px; flex-shrink: 0;
+    }
+
+    /* sim controls */
+    .eg-sim-row {
+      display: flex; gap: 6px; margin-top: 8px;
+    }
+    .eg-btn {
+      flex: 1; padding: 5px 0; border: 1px solid var(--line);
+      border-radius: 8px; background: rgba(255,255,255,.8);
+      font: inherit; font-size: .7rem; font-weight: 700;
+      color: var(--ink); cursor: pointer; transition: background 80ms;
+    }
+    .eg-btn:hover { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); }
+    .eg-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+    /* detail card */
+    .eg-detail {
+      flex: 1 1 0; min-height: 0; overflow: hidden;
+      border: 1px solid var(--line); border-radius: 16px;
+      background: var(--panel); box-shadow: var(--shadow);
+      display: flex; flex-direction: column;
+    }
+    .eg-detail-empty {
+      flex: 1; display: flex; align-items: center; justify-content: center;
+      font-size: .75rem; color: var(--muted); text-align: center; padding: 16px;
+    }
+    .eg-detail-content { display: none; flex: 1 1 0; min-height: 0; overflow-y: auto; padding: 13px; }
+    .eg-detail-content.visible { display: block; }
+
+    .eg-det-type {
+      display: inline-block; font-size: .6rem; font-weight: 800;
+      letter-spacing: .08em; text-transform: uppercase;
+      border-radius: 999px; padding: 2px 8px; margin-bottom: 6px;
+    }
+    .eg-det-name { font-size: .95rem; font-weight: 800; color: var(--ink); line-height: 1.2; }
+    .eg-det-sub { font-size: .72rem; color: var(--muted); margin-top: 2px; }
+    .eg-det-row {
+      display: flex; justify-content: space-between; align-items: flex-start;
+      gap: 8px; padding: 5px 0; border-bottom: 1px solid rgba(217,206,190,.35);
+      font-size: .72rem;
+    }
+    .eg-det-row:last-child { border-bottom: 0; }
+    .eg-det-row span { color: var(--muted); flex-shrink: 0; }
+    .eg-det-row strong { font-weight: 700; color: var(--ink); text-align: right; }
+    .eg-det-section {
+      font-size: .62rem; font-weight: 700; letter-spacing: .08em;
+      text-transform: uppercase; color: var(--muted); margin: 10px 0 4px;
+    }
+    .eg-det-link {
+      font-size: .7rem; color: var(--accent); word-break: break-all;
+    }
+    .eg-det-summary {
+      font-size: .73rem; color: var(--muted); line-height: 1.5; margin-top: 8px;
+      border-top: 1px solid var(--line); padding-top: 8px;
+    }
+    .eg-det-neighbors {
+      display: flex; flex-wrap: wrap; gap: 4px; margin-top: 6px;
+    }
+    .eg-det-neighbor {
+      font-size: .65rem; border: 1px solid var(--line); border-radius: 6px;
+      padding: 2px 7px; background: rgba(255,255,255,.8); cursor: pointer;
+    }
+    .eg-det-neighbor:hover { border-color: var(--accent); color: var(--accent); }
+
+    /* ── canvas area ───────────────────────────────────────────────── */
+    .eg-canvas-area {
+      flex: 1 1 0; min-width: 0; min-height: 0;
+      border: 1px solid var(--line); border-radius: 20px;
+      background: var(--panel); box-shadow: var(--shadow);
+      position: relative; overflow: hidden;
+    }
+    #eg-svg {
+      width: 100%; height: 100%;
+      cursor: grab;
+    }
+    #eg-svg:active { cursor: grabbing; }
+
+    /* tooltip */
+    #eg-tooltip {
+      position: absolute; pointer-events: none;
+      background: rgba(24,23,20,.88); color: #fff;
+      font-size: .7rem; border-radius: 8px; padding: 5px 9px;
+      white-space: nowrap; z-index: 10; display: none;
+      max-width: 240px; white-space: normal; line-height: 1.35;
+    }
+
+    /* legend */
+    .eg-legend {
+      position: absolute; bottom: 14px; left: 14px;
+      background: rgba(253,250,244,.9); border: 1px solid var(--line);
+      border-radius: 10px; padding: 8px 10px;
+      font-size: .67rem; color: var(--muted);
+      backdrop-filter: blur(4px);
+    }
+    .eg-legend-row { display: flex; align-items: center; gap: 5px; margin: 2px 0; }
+    .eg-legend-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+    .eg-legend-line { width: 16px; height: 2px; border-radius: 1px; flex-shrink: 0; }
+
+    /* zoom hint */
+    .eg-zoom-hint {
+      position: absolute; bottom: 14px; right: 14px;
+      font-size: .65rem; color: var(--muted); background: rgba(253,250,244,.8);
+      border: 1px solid var(--line); border-radius: 8px; padding: 4px 8px;
+    }
+    .eg-focus-banner {
+      position: absolute; top: 10px; left: 50%; transform: translateX(-50%);
+      background: rgba(124,58,237,.12); border: 1px solid rgba(124,58,237,.3);
+      border-radius: 999px; padding: 4px 14px;
+      font-size: .72rem; color: #5b21b6; display: none; pointer-events: none;
+    }
+  </style>
+</head>
+<body class="eg-page">
+<div class="page-shell">
+
+  <!-- top strip -->
+  <div class="eg-strip">
+    <span class="eg-strip-title">Ecosystem Graph</span>
+    <div class="eg-stats" id="eg-stats-bar">
+      <span class="eg-stat"><strong id="stat-nodes">—</strong> nodos</span>
+      <span class="eg-stat"><strong id="stat-edges">—</strong> edges</span>
+      <span class="eg-stat"><strong id="stat-org">—</strong> gremiales</span>
+      <span class="eg-stat"><strong id="stat-eso">—</strong> ESOs</span>
+      <span class="eg-stat"><strong id="stat-corp">—</strong> corporates</span>
+    </div>
+    <div style="margin-left:auto;display:flex;gap:6px;align-items:center">
+      <a href="./capital-atlas.html" style="font-size:.7rem;color:var(--muted);text-decoration:none;border:1px solid var(--line);border-radius:8px;padding:3px 9px;background:rgba(255,255,255,.7)">Capital Atlas →</a>
+      <a href="./startup-themes.html" style="font-size:.7rem;color:var(--muted);text-decoration:none;border:1px solid var(--line);border-radius:8px;padding:3px 9px;background:rgba(255,255,255,.7)">Themes →</a>
+    </div>
+  </div>
+
+  <!-- main -->
+  <div class="eg-layout">
+
+    <!-- sidebar -->
+    <div class="eg-sidebar">
+
+      <!-- controls card -->
+      <div class="eg-card">
+        <div class="eg-card-head">
+          <div class="eg-card-head-title">Capas del ecosistema</div>
+          <div class="eg-card-head-sub">Activar / desactivar nodos y edges</div>
+        </div>
+        <div class="eg-controls-body">
+          <div class="eg-section-label">Nodos</div>
+          <label class="eg-toggle-row" id="tog-organization">
+            <input type="checkbox" checked>
+            <span class="eg-dot" style="background:#7C3AED"></span>
+            Gremiales / Asociaciones
+            <span class="eg-toggle-count" id="cnt-organization">0</span>
+          </label>
+          <label class="eg-toggle-row" id="tog-eso">
+            <input type="checkbox" checked>
+            <span class="eg-dot" style="background:#0D9488"></span>
+            ESOs / Institutos
+            <span class="eg-toggle-count" id="cnt-eso">0</span>
+          </label>
+          <label class="eg-toggle-row" id="tog-corporate">
+            <input type="checkbox" checked>
+            <span class="eg-dot" style="background:#D97706"></span>
+            Corporates / Adquirentes
+            <span class="eg-toggle-count" id="cnt-corporate">0</span>
+          </label>
+          <label class="eg-toggle-row" id="tog-fund">
+            <input type="checkbox" checked>
+            <span class="eg-dot" style="background:#3B82F6"></span>
+            Fondos VC / Aceleradoras
+            <span class="eg-toggle-count" id="cnt-fund">0</span>
+          </label>
+          <label class="eg-toggle-row" id="tog-allocator">
+            <input type="checkbox" checked>
+            <span class="eg-dot" style="background:#3B4FA8"></span>
+            Allocators / DFIs
+            <span class="eg-toggle-count" id="cnt-allocator">0</span>
+          </label>
+          <label class="eg-toggle-row" id="tog-startup">
+            <input type="checkbox" checked>
+            <span class="eg-dot" style="background:#A0A0A0"></span>
+            Startups
+            <span class="eg-toggle-count" id="cnt-startup">0</span>
+          </label>
+
+          <div class="eg-section-label" style="margin-top:12px">Edges</div>
+          <label class="eg-edge-row" id="etog-investment">
+            <input type="checkbox" checked>
+            <span class="eg-edge-line" style="background:rgba(59,130,246,.6)"></span>
+            Inversiones (fund→startup)
+            <span class="eg-toggle-count" id="ecnt-investment">0</span>
+          </label>
+          <label class="eg-edge-row" id="etog-capital">
+            <input type="checkbox" checked>
+            <span class="eg-edge-line" style="background:rgba(59,79,168,.6)"></span>
+            Capital (LP→fondo)
+            <span class="eg-toggle-count" id="ecnt-capital">0</span>
+          </label>
+          <label class="eg-edge-row" id="etog-membership">
+            <input type="checkbox" checked>
+            <span class="eg-edge-line" style="background:rgba(124,58,237,.7)"></span>
+            Membresía (gremial→fondo)
+            <span class="eg-toggle-count" id="ecnt-membership">0</span>
+          </label>
+          <label class="eg-edge-row" id="etog-support">
+            <input type="checkbox" checked>
+            <span class="eg-edge-line" style="background:rgba(13,148,136,.7)"></span>
+            Soporte (ESO→startup)
+            <span class="eg-toggle-count" id="ecnt-support">0</span>
+          </label>
+          <label class="eg-edge-row" id="etog-validation">
+            <input type="checkbox" checked>
+            <span class="eg-edge-line" style="background:rgba(217,119,6,.7)"></span>
+            Validación (startup↔corp)
+            <span class="eg-toggle-count" id="ecnt-validation">0</span>
+          </label>
+
+          <div class="eg-sim-row">
+            <button class="eg-btn" id="btn-reheat" title="Volver a animar">↺ Reheat</button>
+            <button class="eg-btn" id="btn-focus-eco" title="Mostrar solo capa ecosistema y sus conexiones">🔭 Eco only</button>
+            <button class="eg-btn" id="btn-show-all" title="Mostrar todos los nodos">⊞ Todos</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- detail card -->
+      <div class="eg-detail">
+        <div class="eg-detail-empty" id="eg-detail-empty">
+          Clic en un nodo para ver detalles
+        </div>
+        <div class="eg-detail-content" id="eg-detail-content"></div>
+      </div>
+    </div><!-- /sidebar -->
+
+    <!-- canvas -->
+    <div class="eg-canvas-area">
+      <svg id="eg-svg" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <marker id="arr-invest" markerWidth="6" markerHeight="6"
+                  refX="5" refY="2" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L0,4 L5,2 z" fill="rgba(59,130,246,.5)"/>
+          </marker>
+          <marker id="arr-capital" markerWidth="6" markerHeight="6"
+                  refX="5" refY="2" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L0,4 L5,2 z" fill="rgba(59,79,168,.5)"/>
+          </marker>
+          <marker id="arr-membership" markerWidth="6" markerHeight="6"
+                  refX="5" refY="2" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L0,4 L5,2 z" fill="rgba(124,58,237,.7)"/>
+          </marker>
+        </defs>
+        <g id="eg-root">
+          <g id="eg-edges"></g>
+          <g id="eg-nodes"></g>
+        </g>
+      </svg>
+      <div id="eg-tooltip"></div>
+      <div class="eg-focus-banner" id="eg-focus-banner">Modo Eco: solo nodos del ecosistema y sus conexiones directas</div>
+      <div class="eg-legend">
+        <div style="font-size:.62rem;font-weight:800;margin-bottom:4px;color:var(--ink)">Capas</div>
+        <div class="eg-legend-row"><span class="eg-legend-dot" style="background:#7C3AED"></span>Gremial</div>
+        <div class="eg-legend-row"><span class="eg-legend-dot" style="background:#0D9488"></span>ESO</div>
+        <div class="eg-legend-row"><span class="eg-legend-dot" style="background:#D97706"></span>Corporate</div>
+        <div class="eg-legend-row"><span class="eg-legend-dot" style="background:#3B82F6"></span>Fondo VC</div>
+        <div class="eg-legend-row"><span class="eg-legend-dot" style="background:#3B4FA8"></span>Allocator</div>
+        <div class="eg-legend-row"><span class="eg-legend-dot" style="background:#A0A0A0"></span>Startup</div>
+        <div style="margin-top:6px;font-size:.62rem;font-weight:800;color:var(--ink)">Edges</div>
+        <div class="eg-legend-row"><span class="eg-legend-line" style="background:rgba(59,130,246,.7)"></span>Inversión</div>
+        <div class="eg-legend-row"><span class="eg-legend-line" style="background:rgba(124,58,237,.8)"></span>Membresía</div>
+        <div class="eg-legend-row"><span class="eg-legend-line" style="background:rgba(13,148,136,.8)"></span>Soporte</div>
+        <div class="eg-legend-row"><span class="eg-legend-line" style="background:rgba(217,119,6,.8)"></span>Validación</div>
+      </div>
+      <div class="eg-zoom-hint">Scroll=zoom · Drag=pan · Click=detail</div>
+    </div>
+
+  </div><!-- /layout -->
+</div><!-- /page-shell -->
+
+<script src="./ecosystem-graph-data.js?v=20260524a" defer></script>
+<script>
+/* ══════════════════════════════════════════════════════════════════
+   ecosystem-graph.js  —  Ecosystem Graph visualización
+   Inline en HTML para un solo archivo deployable.
+   ══════════════════════════════════════════════════════════════════ */
+
+const LAYER_COLORS = {
+  organization: '#7C3AED',
+  eso:          '#0D9488',
+  corporate:    '#D97706',
+  fund:         '#3B82F6',
+  allocator:    '#3B4FA8',
+  startup:      null,   // uses node.color (theme-based)
+};
+
+const LAYER_R = {
+  organization: 10,
+  eso:          10,
+  corporate:    10,
+  fund:         7,
+  allocator:    7,
+  startup:      4,
+};
+
+const EDGE_COLORS = {
+  investment:  'rgba(59,130,246,0.22)',
+  capital:     'rgba(59,79,168,0.35)',
+  membership:  'rgba(124,58,237,0.6)',
+  support:     'rgba(13,148,136,0.6)',
+  validation:  'rgba(217,119,6,0.6)',
+};
+
+const EDGE_WIDTH = {
+  investment:  1.0,
+  capital:     1.5,
+  membership:  2.0,
+  support:     2.0,
+  validation:  2.0,
+};
+
+// ── State ────────────────────────────────────────────────────────
+let nodes = [], edges = [];
+let simNodes = [], simEdges = [];
+let layerVis = { organization:true, eso:true, corporate:true, fund:true, allocator:true, startup:true };
+let edgeVis  = { investment:true, capital:true, membership:true, support:true, validation:true };
+let ecoOnlyMode = false;
+let selectedId = null;
+
+// SVG pan/zoom
+let svgTx = 0, svgTy = 0, svgScale = 1;
+let isDragging = false, dragStartX = 0, dragStartY = 0, dragTx = 0, dragTy = 0;
+
+// Sim state
+let simRunning = false;
+let simTick = 0;
+const SIM_MAX_TICKS = 600;
+let animId = null;
+
+// DOM cache
+let svgEl, rootG, edgesG, nodesG, tooltipEl, detailEmpty, detailContent;
+let W = 0, H = 0;
+
+// Node element map for quick updates
+const nodeElMap = new Map();   // id → {g, circle/path, label}
+const edgeElMap = new Map();   // id → line/path el
+
+// ── Init ─────────────────────────────────────────────────────────
+window.addEventListener('DOMContentLoaded', () => {
+  svgEl         = document.getElementById('eg-svg');
+  rootG         = document.getElementById('eg-root');
+  edgesG        = document.getElementById('eg-edges');
+  nodesG        = document.getElementById('eg-nodes');
+  tooltipEl     = document.getElementById('eg-tooltip');
+  detailEmpty   = document.getElementById('eg-detail-empty');
+  detailContent = document.getElementById('eg-detail-content');
+
+  // Wait for data
+  waitForData();
+});
+
+function waitForData() {
+  if (typeof EG_NODES !== 'undefined') {
+    initGraph();
+  } else {
+    requestAnimationFrame(waitForData);
+  }
+}
+
+function initGraph() {
+  nodes = EG_NODES;
+  edges = EG_EDGES;
+
+  // Populate stats bar
+  document.getElementById('stat-nodes').textContent  = EG_META.nodesTotal;
+  document.getElementById('stat-edges').textContent  = EG_META.edgesTotal;
+  document.getElementById('stat-org').textContent    = EG_META.byLayer.organization || 0;
+  document.getElementById('stat-eso').textContent    = EG_META.byLayer.eso || 0;
+  document.getElementById('stat-corp').textContent   = EG_META.byLayer.corporate || 0;
+
+  // Toggle counts
+  for (const [layer, cnt] of Object.entries(EG_META.byLayer)) {
+    const el = document.getElementById('cnt-' + layer);
+    if (el) el.textContent = cnt;
+  }
+  for (const [et, cnt] of Object.entries(EG_META.byEdgeType)) {
+    const el = document.getElementById('ecnt-' + et);
+    if (el) el.textContent = cnt;
+  }
+
+  // Wire toggles
+  ['organization','eso','corporate','fund','allocator','startup'].forEach(layer => {
+    const row = document.getElementById('tog-' + layer);
+    if (!row) return;
+    const cb = row.querySelector('input');
+    cb.addEventListener('change', () => {
+      layerVis[layer] = cb.checked;
+      row.classList.toggle('off', !cb.checked);
+      rebuildVisible();
+    });
+  });
+  ['investment','capital','membership','support','validation'].forEach(et => {
+    const row = document.getElementById('etog-' + et);
+    if (!row) return;
+    const cb = row.querySelector('input');
+    cb.addEventListener('change', () => {
+      edgeVis[et] = cb.checked;
+      row.classList.toggle('off', !cb.checked);
+      updateEdgeVisibility();
+    });
+  });
+
+  document.getElementById('btn-reheat').addEventListener('click', () => {
+    reheat();
+  });
+  document.getElementById('btn-focus-eco').addEventListener('click', () => {
+    setEcoOnlyMode(true);
+  });
+  document.getElementById('btn-show-all').addEventListener('click', () => {
+    setEcoOnlyMode(false);
+  });
+
+  // SVG pan/zoom
+  svgEl.addEventListener('mousedown', onMouseDown);
+  svgEl.addEventListener('mousemove', onMouseMove);
+  window.addEventListener('mouseup', onMouseUp);
+  svgEl.addEventListener('wheel', onWheel, { passive: false });
+
+  // Size
+  const rect = svgEl.getBoundingClientRect();
+  W = rect.width || 800;
+  H = rect.height || 600;
+  window.addEventListener('resize', onResize);
+
+  buildInitialLayout();
+}
+
+// ── Visibility management ─────────────────────────────────────────
+
+/** Which nodes should be visible given current layer/mode settings */
+function visibleNodeIds() {
+  if (ecoOnlyMode) {
+    // Ecosystem nodes + directly connected nodes
+    const ecoIds = new Set(nodes.filter(n =>
+      ['organization','eso','corporate'].includes(n.layer)
+    ).map(n => n.id));
+    const connected = new Set(ecoIds);
+    edges.forEach(e => {
+      if (ecoIds.has(e.source) || ecoIds.has(e.target)) {
+        connected.add(e.source);
+        connected.add(e.target);
+      }
+    });
+    return connected;
+  }
+  return new Set(
+    nodes.filter(n => layerVis[n.layer]).map(n => n.id)
+  );
+}
+
+function setEcoOnlyMode(val) {
+  ecoOnlyMode = val;
+  document.getElementById('eg-focus-banner').style.display = val ? 'block' : 'none';
+  document.getElementById('btn-focus-eco').classList.toggle('active', val);
+  document.getElementById('btn-show-all').classList.toggle('active', !val);
+  rebuildVisible();
+}
+
+function rebuildVisible() {
+  const visIds = visibleNodeIds();
+
+  // Update node visibility
+  for (const [id, el] of nodeElMap) {
+    el.style.display = visIds.has(id) ? '' : 'none';
+  }
+
+  // Rebuild simNodes from visible subset
+  simNodes = nodes.filter(n => visIds.has(n.id));
+  simEdges = edges.filter(e => visIds.has(e.source) && visIds.has(e.target));
+
+  updateEdgeVisibility();
+  reheat(200);
+}
+
+function updateEdgeVisibility() {
+  const visIds = visibleNodeIds();
+  for (const [id, el] of edgeElMap) {
+    const e = edgeElMap_data.get(id);
+    if (!e) continue;
+    const typeVis = edgeVis[e.edgeType] !== false;
+    const nodesVis = visIds.has(e.source) && visIds.has(e.target);
+    el.style.display = (typeVis && nodesVis) ? '' : 'none';
+  }
+}
+
+const edgeElMap_data = new Map();
+
+// ── Layout & rendering ────────────────────────────────────────────
+
+function buildInitialLayout() {
+  const visIds = visibleNodeIds();
+
+  // Assign initial positions
+  const cx = W / 2, cy = H / 2;
+  nodes.forEach(n => {
+    if (n.x === undefined) {
+      // Radial initial placement by layer
+      const zoneR = {
+        organization: 0.28, eso: 0.32, corporate: 0.36,
+        fund: 0.20, allocator: 0.15, startup: 0.40,
+      }[n.layer] || 0.35;
+      const r = zoneR * Math.min(W, H) * (0.7 + Math.random() * 0.6);
+      const angle = Math.random() * Math.PI * 2;
+      n.x = cx + r * Math.cos(angle);
+      n.y = cy + r * Math.sin(angle);
+      n.vx = 0; n.vy = 0;
+    }
+  });
+
+  simNodes = nodes.filter(n => visIds.has(n.id));
+  simEdges = edges.filter(e => visIds.has(e.source) && visIds.has(e.target));
+
+  renderAll(visIds);
+  reheat(SIM_MAX_TICKS);
+}
+
+function renderAll(visIds) {
+  edgesG.innerHTML = '';
+  nodesG.innerHTML = '';
+  nodeElMap.clear();
+  edgeElMap.clear();
+  edgeElMap_data.clear();
+
+  const NS = 'http://www.w3.org/2000/svg';
+
+  // Edges
+  edges.forEach(e => {
+    const visible = visIds.has(e.source) && visIds.has(e.target);
+    const line = document.createElementNS(NS, 'line');
+    line.setAttribute('stroke', EDGE_COLORS[e.edgeType] || 'rgba(0,0,0,.1)');
+    line.setAttribute('stroke-width', String(EDGE_WIDTH[e.edgeType] || 1));
+    if (e.edgeType === 'membership') line.setAttribute('stroke-dasharray', '0');
+    if (!edgeVis[e.edgeType] || !visible) line.style.display = 'none';
+    edgesG.appendChild(line);
+    edgeElMap.set(e.id, line);
+    edgeElMap_data.set(e.id, e);
+  });
+
+  // Nodes
+  nodes.forEach(n => {
+    const g = document.createElementNS(NS, 'g');
+    g.setAttribute('data-id', n.id);
+    g.style.cursor = 'pointer';
+    if (!visIds.has(n.id)) g.style.display = 'none';
+
+    const r = LAYER_R[n.layer] || 5;
+    const fill = LAYER_COLORS[n.layer] || n.color || '#888';
+
+    const isEco = ['organization','eso','corporate'].includes(n.layer);
+
+    if (isEco) {
+      // Larger nodes with border
+      const outer = document.createElementNS(NS, 'circle');
+      outer.setAttribute('r', String(r + 3));
+      outer.setAttribute('fill', fill);
+      outer.setAttribute('opacity', '0.15');
+      g.appendChild(outer);
+      const circle = document.createElementNS(NS, 'circle');
+      circle.setAttribute('r', String(r));
+      circle.setAttribute('fill', fill);
+      circle.setAttribute('stroke', '#fff');
+      circle.setAttribute('stroke-width', '1.5');
+      g.appendChild(circle);
+
+      // Label for eco nodes always visible
+      const text = document.createElementNS(NS, 'text');
+      text.setAttribute('y', String(r + 11));
+      text.setAttribute('text-anchor', 'middle');
+      text.setAttribute('font-size', '9');
+      text.setAttribute('font-weight', '700');
+      text.setAttribute('fill', fill);
+      text.setAttribute('font-family', 'DM Sans, system-ui, sans-serif');
+      text.textContent = n.label.length > 16 ? n.label.slice(0, 14) + '…' : n.label;
+      g.appendChild(text);
+    } else {
+      const circle = document.createElementNS(NS, 'circle');
+      circle.setAttribute('r', String(r));
+      circle.setAttribute('fill', LAYER_COLORS[n.layer] || n.color || '#888');
+      circle.setAttribute('opacity', n.layer === 'startup' ? '0.7' : '0.85');
+      g.appendChild(circle);
+    }
+
+    // Hover events
+    g.addEventListener('mouseenter', (evt) => showTooltip(n, evt));
+    g.addEventListener('mouseleave', hideTooltip);
+    g.addEventListener('click', () => selectNode(n));
+
+    nodesG.appendChild(g);
+    nodeElMap.set(n.id, g);
+  });
+
+  applyPositions();
+}
+
+function applyPositions() {
+  nodes.forEach(n => {
+    const g = nodeElMap.get(n.id);
+    if (g) g.setAttribute('transform', `translate(${n.x.toFixed(1)},${n.y.toFixed(1)})`);
+  });
+
+  const nodePos = new Map(nodes.map(n => [n.id, { x: n.x, y: n.y }]));
+  edges.forEach(e => {
+    const line = edgeElMap.get(e.id);
+    if (!line) return;
+    const s = nodePos.get(e.source);
+    const t = nodePos.get(e.target);
+    if (!s || !t) return;
+    const dx = t.x - s.x, dy = t.y - s.y;
+    const dist = Math.sqrt(dx*dx + dy*dy) || 1;
+    const tr = LAYER_R[nodes.find(n=>n.id===e.target)?.layer] || 5;
+    const ex = t.x - dx/dist*tr;
+    const ey = t.y - dy/dist*tr;
+    line.setAttribute('x1', s.x.toFixed(1));
+    line.setAttribute('y1', s.y.toFixed(1));
+    line.setAttribute('x2', ex.toFixed(1));
+    line.setAttribute('y2', ey.toFixed(1));
+  });
+}
+
+// ── Force simulation ──────────────────────────────────────────────
+
+const PARAMS = {
+  repulsion: 800,
+  linkDist: {
+    investment: 60,
+    capital: 80,
+    membership: 90,
+    support: 80,
+    validation: 80,
+  },
+  linkStrength: {
+    investment: 0.04,
+    capital: 0.05,
+    membership: 0.12,
+    support: 0.10,
+    validation: 0.10,
+  },
+  centerGravity: {
+    organization: 0.003, eso: 0.003, corporate: 0.003,
+    fund: 0.004, allocator: 0.004, startup: 0.002,
+  },
+  damping: 0.82,
+  cellSize: 80,
+};
+
+function reheat(maxTicks) {
+  if (animId) cancelAnimationFrame(animId);
+  simTick = 0;
+  simRunning = true;
+  const limit = maxTicks || SIM_MAX_TICKS;
+  function tick() {
+    if (!simRunning || simTick >= limit) { simRunning = false; return; }
+    simTick++;
+    stepSim();
+    applyPositions();
+    animId = requestAnimationFrame(tick);
+  }
+  tick();
+}
+
+function stepSim() {
+  const n = simNodes.length;
+  if (n === 0) return;
+
+  const cx = W / 2, cy = H / 2;
+  const alpha = Math.max(0.1, 1 - simTick / SIM_MAX_TICKS);
+
+  // Build spatial grid for repulsion
+  const grid = new Map();
+  const cs = PARAMS.cellSize;
+  simNodes.forEach(nd => {
+    const gx = Math.floor(nd.x / cs);
+    const gy = Math.floor(nd.y / cs);
+    const key = gx + ',' + gy;
+    if (!grid.has(key)) grid.set(key, []);
+    grid.get(key).push(nd);
+  });
+
+  // Repulsion (grid-based)
+  simNodes.forEach(a => {
+    const gx = Math.floor(a.x / cs);
+    const gy = Math.floor(a.y / cs);
+    for (let dgy = -1; dgy <= 1; dgy++) {
+      for (let dgx = -1; dgx <= 1; dgx++) {
+        const bucket = grid.get((gx+dgx)+','+(gy+dgy));
+        if (!bucket) continue;
+        bucket.forEach(b => {
+          if (b === a) return;
+          let dx = a.x - b.x, dy = a.y - b.y;
+          const dist2 = dx*dx + dy*dy;
+          if (dist2 < 1) { dx = Math.random()-.5; dy = Math.random()-.5; }
+          const dist = Math.sqrt(dist2) || 0.1;
+          const force = PARAMS.repulsion * alpha / (dist2 + 1);
+          a.vx += (dx/dist)*force;
+          a.vy += (dy/dist)*force;
+        });
+      }
+    }
+  });
+
+  // Link springs
+  const nodePos = new Map(simNodes.map(n => [n.id, n]));
+  simEdges.forEach(e => {
+    const s = nodePos.get(e.source);
+    const t = nodePos.get(e.target);
+    if (!s || !t) return;
+    const dx = t.x - s.x, dy = t.y - s.y;
+    const dist = Math.sqrt(dx*dx + dy*dy) || 1;
+    const target = PARAMS.linkDist[e.edgeType] || 60;
+    const strength = (PARAMS.linkStrength[e.edgeType] || 0.04) * alpha;
+    const delta = (dist - target) * strength;
+    const fx = (dx/dist)*delta, fy = (dy/dist)*delta;
+    s.vx += fx; s.vy += fy;
+    t.vx -= fx; t.vy -= fy;
+  });
+
+  // Center gravity + damping + boundary
+  const pad = 30;
+  simNodes.forEach(nd => {
+    const grav = (PARAMS.centerGravity[nd.layer] || 0.003) * alpha;
+    nd.vx += (cx - nd.x) * grav;
+    nd.vy += (cy - nd.y) * grav;
+    nd.vx *= PARAMS.damping;
+    nd.vy *= PARAMS.damping;
+    nd.x  = Math.max(pad, Math.min(W - pad, nd.x + nd.vx));
+    nd.y  = Math.max(pad, Math.min(H - pad, nd.y + nd.vy));
+  });
+}
+
+// ── Pan / zoom ────────────────────────────────────────────────────
+
+function updateTransform() {
+  rootG.setAttribute('transform', `translate(${svgTx},${svgTy}) scale(${svgScale})`);
+}
+
+function onMouseDown(evt) {
+  if (evt.target !== svgEl && evt.target !== rootG) return;
+  isDragging = true;
+  dragStartX = evt.clientX;
+  dragStartY = evt.clientY;
+  dragTx = svgTx;
+  dragTy = svgTy;
+}
+
+function onMouseMove(evt) {
+  if (!isDragging) return;
+  svgTx = dragTx + (evt.clientX - dragStartX);
+  svgTy = dragTy + (evt.clientY - dragStartY);
+  updateTransform();
+}
+
+function onMouseUp() { isDragging = false; }
+
+function onWheel(evt) {
+  evt.preventDefault();
+  const rect = svgEl.getBoundingClientRect();
+  const mx = evt.clientX - rect.left;
+  const my = evt.clientY - rect.top;
+  const delta = evt.deltaY > 0 ? 0.88 : 1.14;
+  const newScale = Math.max(0.1, Math.min(8, svgScale * delta));
+  svgTx = mx - (mx - svgTx) * (newScale / svgScale);
+  svgTy = my - (my - svgTy) * (newScale / svgScale);
+  svgScale = newScale;
+  updateTransform();
+}
+
+function onResize() {
+  const rect = svgEl.getBoundingClientRect();
+  W = rect.width;
+  H = rect.height;
+}
+
+// ── Tooltip ───────────────────────────────────────────────────────
+
+function showTooltip(n, evt) {
+  const lines = [
+    `<strong>${n.label}</strong>`,
+    `<span style="opacity:.7">${n.layer.toUpperCase()} · ${n.country || '—'}</span>`,
+  ];
+  if (n.theme) lines.push(`<span style="opacity:.7">${n.shortTheme || n.theme}</span>`);
+  if (n.orgType) lines.push(`<span style="opacity:.7">${n.orgType.replace(/_/g,' ')}</span>`);
+  if (n.industry) lines.push(`<span style="opacity:.7">${n.industry}</span>`);
+  if (n.degree) lines.push(`<span style="opacity:.6">${n.degree} conexión${n.degree!==1?'es':''}</span>`);
+
+  tooltipEl.innerHTML = lines.join('<br>');
+  tooltipEl.style.display = 'block';
+  positionTooltip(evt);
+}
+
+function hideTooltip() {
+  tooltipEl.style.display = 'none';
+}
+
+function positionTooltip(evt) {
+  const rect = svgEl.getBoundingClientRect();
+  let tx = evt.clientX - rect.left + 12;
+  let ty = evt.clientY - rect.top + 12;
+  const tw = tooltipEl.offsetWidth || 200;
+  const th = tooltipEl.offsetHeight || 60;
+  if (tx + tw > W - 10) tx = evt.clientX - rect.left - tw - 10;
+  if (ty + th > H - 10) ty = evt.clientY - rect.top  - th - 10;
+  tooltipEl.style.left = tx + 'px';
+  tooltipEl.style.top  = ty + 'px';
+}
+
+// ── Node selection & detail ───────────────────────────────────────
+
+function selectNode(n) {
+  // Deselect previous
+  if (selectedId) {
+    const prev = nodeElMap.get(selectedId);
+    if (prev) prev.querySelector('circle')?.setAttribute('stroke-width', n.layer === 'startup' ? '0' : '1.5');
+  }
+
+  if (selectedId === n.id) {
+    selectedId = null;
+    detailEmpty.style.display = '';
+    detailContent.classList.remove('visible');
+    return;
+  }
+
+  selectedId = n.id;
+
+  // Highlight selected
+  const g = nodeElMap.get(n.id);
+  if (g) {
+    const circles = g.querySelectorAll('circle');
+    circles.forEach(c => c.setAttribute('stroke-width', '2.5'));
+  }
+
+  // Neighbors
+  const neighborIds = new Set();
+  const neighborEdges = [];
+  edges.forEach(e => {
+    if (e.source === n.id) { neighborIds.add(e.target); neighborEdges.push({ ...e, dir: 'out' }); }
+    if (e.target === n.id) { neighborIds.add(e.source); neighborEdges.push({ ...e, dir: 'in' }); }
+  });
+  const neighbors = nodes.filter(nd => neighborIds.has(nd.id));
+
+  // Type chip color
+  const chipColors = {
+    organization: 'background:rgba(124,58,237,.1);color:#5b21b6',
+    eso:          'background:rgba(13,148,136,.1);color:#0f766e',
+    corporate:    'background:rgba(217,119,6,.1);color:#92400e',
+    fund:         'background:rgba(59,130,246,.1);color:#1d4ed8',
+    allocator:    'background:rgba(59,79,168,.1);color:#1e3a8a',
+    startup:      'background:rgba(0,0,0,.06);color:#444',
+  };
+
+  let html = `
+    <div class="eg-det-type" style="${chipColors[n.layer] || ''}">${n.layer.toUpperCase()}</div>
+    <div class="eg-det-name">${n.label}</div>
+    <div class="eg-det-sub">${n.country || ''}${n.theme ? ' · ' + (n.shortTheme || n.theme) : ''}
+      ${n.orgType ? ' · ' + n.orgType.replace(/_/g,' ') : ''}
+      ${n.esoType ? ' · ' + n.esoType.replace(/_/g,' ') : ''}
+      ${n.industry ? ' · ' + n.industry.split(';')[0] : ''}
+      ${n.investorType ? ' · ' + n.investorType.replace(/_/g,' ') : ''}
+    </div>
+  `;
+
+  html += `<div class="eg-det-section" style="margin-top:8px">Métricas</div>`;
+  html += `<div class="eg-det-row"><span>Grado</span><strong>${n.degree}</strong></div>`;
+  html += `<div class="eg-det-row"><span>Conexiones directas</span><strong>${neighbors.length}</strong></div>`;
+
+  if (n.website) {
+    html += `<div class="eg-det-section">Fuente</div>`;
+    html += `<div class="eg-det-row"><a class="eg-det-link" href="${n.website}" target="_blank" rel="noopener">${n.website.replace(/^https?:\/\//, '').slice(0,42)}</a></div>`;
+  }
+
+  if (n.thesis) {
+    html += `<div class="eg-det-summary">${n.thesis}</div>`;
+  }
+  if (n.summary) {
+    html += `<div class="eg-det-summary">${n.summary}</div>`;
+  }
+
+  if (neighbors.length > 0) {
+    html += `<div class="eg-det-section">Conexiones (${neighbors.length})</div>`;
+    html += `<div class="eg-det-neighbors">`;
+    neighbors.slice(0, 30).forEach(nd => {
+      const c = LAYER_COLORS[nd.layer] || nd.color || '#888';
+      html += `<span class="eg-det-neighbor" onclick="selectNodeById('${nd.id}')"
+        style="border-color:${c}20;color:${c}">${nd.label}</span>`;
+    });
+    if (neighbors.length > 30) html += `<span class="eg-det-neighbor" style="opacity:.5">+${neighbors.length-30} más</span>`;
+    html += `</div>`;
+  }
+
+  detailContent.innerHTML = html;
+  detailContent.classList.add('visible');
+  detailEmpty.style.display = 'none';
+}
+
+function selectNodeById(id) {
+  const n = nodes.find(nd => nd.id === id);
+  if (n) selectNode(n);
+}
+window.selectNodeById = selectNodeById;
+
+// ── Start ─────────────────────────────────────────────────────────
+
+// Initial button state
+document.addEventListener('DOMContentLoaded', () => {
+  const btnAll = document.getElementById('btn-show-all');
+  if (btnAll) btnAll.classList.add('active');
+});
+</script>
+</body>
+</html>

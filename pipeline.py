@@ -476,6 +476,13 @@ def cmd_fund_sweep_status(args: argparse.Namespace) -> None:
 # ingest-orgs
 # ──────────────────────────────────────────────
 
+def cmd_build_ecosystem_graph(args: argparse.Namespace) -> None:
+    from src.ecosystem_graph import run as run_eco
+    print("\n  Building Ecosystem Graph data...\n")
+    stats = run_eco(DB_PATH)
+    print(f"\n  Summary: {stats}\n")
+
+
 def cmd_ingest_orgs(args: argparse.Namespace) -> None:
     from src.ingest_orgs import ingest_all
     print("\n  Ingesting ecosystem organizations (gremiales / ESOs / corporates)...\n")
@@ -535,6 +542,7 @@ def main() -> None:
     ii.add_argument("--dry-run", action="store_true", help="Solo muestra qué se ingresaría, sin escribir")
     sub.add_parser("fund-sweep-status", help="Dashboard de cobertura del grafo de capital + guía para el sweep")
     sub.add_parser("ingest-orgs", help="canonical/manual_canonical_organizations.csv + support/validation edges → ecosystem entities")
+    sub.add_parser("build-ecosystem-graph", help="Regenerar pilot/ecosystem-graph-data.js desde SQLite (todas las capas)")
     sub.add_parser("quality-report", help="Genera pilot/quality-tracker.html con métricas de calidad")
 
     rc = sub.add_parser("reclassify-themes", help="Asigna bio_theme_primary/secondary + is_bio_universe a todos los includes")
@@ -571,6 +579,7 @@ def main() -> None:
         "ingest-intake": cmd_ingest_intake,
         "fund-sweep-status": cmd_fund_sweep_status,
         "ingest-orgs": cmd_ingest_orgs,
+        "build-ecosystem-graph": cmd_build_ecosystem_graph,
         "quality-report": cmd_quality_report,
         "reclassify-themes": cmd_reclassify,
         "rebuild": cmd_rebuild,
