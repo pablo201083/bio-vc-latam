@@ -1,0 +1,6 @@
+edge_id,source_entity_id,source_name,target_entity_id,target_name,support_type,started_at,ended_at,source_url,confidence_score,notes
+arcap_member_kptl,arcap,ARCAP,kptl,KPTL,membership,,https://arcap.org/socios,0.92,KPTL es miembro activo de ARCAP
+arcap_member_pymero,arcap,ARCAP,pymero,Pymero,membership,,https://arcap.org/socios,0.88,Pymero listado como miembro en directorio ARCAP — verificar
+arcap_member_canary,arcap,ARCAP,canary,Canary,membership,,https://arcap.org/socios,0.88,Canary (Brasil) miembro ARCAP — confirmar membership vigente
+arcap_member_500latam,arcap,ARCAP,500_latam,500 LatAm,membership,,https://arcap.org/socios,0.85,500 LatAm en directorio ARCAP
+arcap_member_valor,arcap,ARCAP,valor_capital_group,Valor Capital Group,membership,,https://arcap.org/socios,0.85,Valor Capital en directorio ARCAP
