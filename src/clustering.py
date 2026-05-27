@@ -676,6 +676,148 @@ def _parse_countries(raw: str | None) -> list[str]:
     return seen
 
 
+def _build_tokens_vocab(startups: list[dict]) -> dict:
+    """Build vocabulary of old-taxonomy tokens with counts, for the filter UI."""
+    from collections import Counter
+    macro_c: Counter = Counter()
+    emergent_c: Counter = Counter()
+    lens_c: Counter = Counter()
+    domain_c: Counter = Counter()
+    tech_c: Counter = Counter()
+    scale_c: Counter = Counter()
+
+    for s in startups:
+        if s.get("macro_theme"):
+            macro_c[s["macro_theme"]] += 1
+        if s.get("emergent_theme"):
+            emergent_c[s["emergent_theme"]] += 1
+        for t in s.get("bio_lens", []):
+            lens_c[t] += 1
+        for t in s.get("domain_tags", []):
+            domain_c[t] += 1
+        for t in s.get("tech_tags", []):
+            tech_c[t] += 1
+        for t in s.get("scale_tags", []):
+            scale_c[t] += 1
+
+    def _sorted(counter: Counter) -> list[dict]:
+        return [{"v": k, "n": v} for k, v in counter.most_common() if v >= 2]
+
+    return {
+        "macro": _sorted(macro_c),
+        "bio_lens": _sorted(lens_c),
+        "domain": _sorted(domain_c),
+        "tech": _sorted(tech_c),
+        "scale": _sorted(scale_c),
+    }
+
+
+def _extract_self_categories(text: str) -> list[str]:
+    """Extrae etiquetas de autocategorización del texto propio de la startup.
+
+    Analiza el one_liner + summary buscando vocabulario que las startups usan
+    para describirse a sí mismas (no la taxonomía curatorial). Retorna hasta 3
+    etiquetas ordenadas por confianza.
+    """
+    import re
+    t = text.lower()
+    t = re.sub(r"[áàä]", "a", t)
+    t = re.sub(r"[éèë]", "e", t)
+    t = re.sub(r"[íìï]", "i", t)
+    t = re.sub(r"[óòö]", "o", t)
+    t = re.sub(r"[úùü]", "u", t)
+
+    # (label, [patterns], weight)
+    # Patterns son regex; pesos más altos = más específico / más confiable
+    RULES: list[tuple[str, list[str], int]] = [
+        # ── Salud ─────────────────────────────────────────────────────────────
+        ("Therapeutics",      [r"\btherapeutic", r"\bimmunotherap", r"\bdrug discov",
+                               r"\boncolog", r"\banticancer", r"\bbiologics?\b",
+                               r"\bgene therap", r"\bcell therap", r"\bbiopharm"], 3),
+        ("Diagnostics",       [r"\bdiagnostic", r"\bbiomarker", r"\bliquid biopsy",
+                               r"\bpcr\b", r"\bsequenc", r"\bgenomic", r"\bmolecular test",
+                               r"\bpoint.of.care", r"\bmedical imag"], 3),
+        ("MedTech",           [r"\bmedtech\b", r"\bmed.tech\b", r"\bmedical device",
+                               r"\bwearable", r"\bimplant", r"\bprosthes",
+                               r"\bsurgical", r"\borthopedic", r"\bin vitro"], 3),
+        ("HealthTech",        [r"\bhealthtech\b", r"\bhealth.tech\b", r"\bdigital health",
+                               r"\btelemedicine", r"\bremote patient", r"\bhealth platform",
+                               r"\bwomens health", r"\bmental health"], 2),
+        # ── Agro ──────────────────────────────────────────────────────────────
+        ("Ag Biologicals",    [r"\bbiopesticide", r"\bbiocontrol", r"\bbiostimulant",
+                               r"\bbiofertiliz", r"\bag biological", r"\bmicrobial input",
+                               r"\bbioinput", r"\bentomopathog", r"\bnematode",
+                               r"\brhizobium", r"\bplant microbiome"], 4),
+        ("Precision Ag",      [r"\bprecision agr", r"\bprecision farm",
+                               r"\bremote sensing.*agr", r"\bsatellite.*agr",
+                               r"\birrigation.*ai", r"\bai.*crop", r"\bcrop monitor",
+                               r"\bfield intelligence", r"\bvariable rate"], 3),
+        ("AgTech",            [r"\bagtech\b", r"\bag.tech\b", r"\bagricult.*tech",
+                               r"\btech.*agric", r"\bsmart farm", r"\bdigital farm",
+                               r"\bfarm.*platform", r"\bfarm management",
+                               r"\bcrop.*platform", r"\bfarmer.*platform"], 2),
+        # ── Alimentos ─────────────────────────────────────────────────────────
+        ("Alt Proteins",      [r"\balt.*protein", r"\bplant.based protein",
+                               r"\bcell.cultured", r"\bcultivated meat",
+                               r"\bprecision ferment.*protein", r"\binsect.*protein",
+                               r"\balt.meat", r"\bmycoprotein", r"\balgae.*protein"], 4),
+        ("FoodTech",          [r"\bfoodtech\b", r"\bfood.tech\b", r"\bfood.*platform",
+                               r"\bfood.*ingredient", r"\bfunctional food",
+                               r"\bnovel ingredient", r"\bfood.*biotech",
+                               r"\bfood.*ferment", r"\balt.*food\b"], 2),
+        # ── Manufactura bio ───────────────────────────────────────────────────
+        ("SynBio",            [r"\bsynthetic biology", r"\bsynbio\b",
+                               r"\bgene.*circuit", r"\bcrispr", r"\bgenome.*edit",
+                               r"\bmetabolic engineer", r"\bcell.*engineer"], 4),
+        ("Precision Ferm",    [r"\bprecision ferment", r"\bferment.*platform",
+                               r"\brecombinant.*protein", r"\bbioreactor",
+                               r"\bcell.free", r"\bmicrobial.*platform"], 3),
+        ("Biomanufacturing",  [r"\bbiomanufactur", r"\bcdmo\b", r"\bbioprocess",
+                               r"\bscale.up.*bio", r"\bindustrial.*biotech",
+                               r"\bcontract.*manufactur.*bio"], 3),
+        ("Biomaterials",      [r"\bbiomaterial", r"\bbiopolymer", r"\bbiobased.*material",
+                               r"\bbiodegradable.*material", r"\bbioplastic",
+                               r"\bgreen.*chemist", r"\bcircular.*material",
+                               r"\bbiobased.*packaging"], 3),
+        # ── Clima / naturaleza ────────────────────────────────────────────────
+        ("CleanTech",         [r"\bcleantech\b", r"\bclean.tech\b", r"\bclean energy",
+                               r"\brenewable energy", r"\bcarbon.*removal",
+                               r"\bcarbon.*capture", r"\bnet.zero", r"\bgreen.*hydrogen"], 3),
+        ("NatureTech",        [r"\bbiodiversity", r"\becosystem.*restor",
+                               r"\bnature.*financ", r"\bcarbon.*credit",
+                               r"\bcarbon.*market", r"\bnature.*based",
+                               r"\breforestation", r"\bwildlife"], 3),
+        # ── Digital / software ────────────────────────────────────────────────
+        ("AI / Data",         [r"\bai.powered\b", r"\bai.enabled\b", r"\bai.driven\b",
+                               r"\bmachine learning\b", r"\bdeep learning\b",
+                               r"\bcomputer vision\b", r"\bllm\b", r"\bai model"], 3),
+        ("SaaS / Platform",   [r"\bsaas\b", r"\bsoftware.*platform",
+                               r"\bcloud.*platform", r"\bapi.first",
+                               r"\bno.code\b", r"\bdata platform"], 2),
+        ("FinTech",           [r"\bfintech\b", r"\bfin.tech\b", r"\bdigital.*financ",
+                               r"\bpayment.*platform", r"\bembedded.*financ",
+                               r"\bcredit.*platform", r"\binsurtech"], 3),
+        # ── Infraestructura / hardware ────────────────────────────────────────
+        ("Hardware / IoT",    [r"\biot\b", r"\bsensor.*platform", r"\bembedded.*system",
+                               r"\bhardware.*platform", r"\bdrone\b", r"\bautonomo",
+                               r"\brobot", r"\bdevice.*manufactur"], 2),
+        # ── Catch-all bio ──────────────────────────────────────────────────────
+        ("Biotech",           [r"\bbiotech\b", r"\bbiotechnology\b",
+                               r"\bbio.*platform\b", r"\bbio.*company\b"], 1),
+    ]
+
+    scores: dict[str, int] = {}
+    for label, patterns, weight in RULES:
+        for pat in patterns:
+            if re.search(pat, t):
+                scores[label] = scores.get(label, 0) + weight
+                break  # una vez que matchea un patrón de la categoría, no sumamos más
+
+    # Ordenar por score desc, retornar hasta 3 (min score 1)
+    ranked = sorted(scores.items(), key=lambda x: -x[1])
+    return [lbl for lbl, sc in ranked[:3] if sc >= 1]
+
+
 def write_dashboard_data(conn: sqlite3.Connection) -> None:
     """Genera pilot/startup-themes-data.js con los datos para el dashboard."""
     from src.utils import write_js_global
@@ -700,7 +842,9 @@ def write_dashboard_data(conn: sqlite3.Connection) -> None:
                sx.sub_cluster_label,
                sx.funding_stage, sx.funding_bucket_usd, sx.valuation_bucket_usd,
                sx.valuation_estimate_usd, sx.valuation_estimate_source,
-               sx.scatter_x, sx.scatter_y
+               sx.scatter_x, sx.scatter_y,
+               sx.bio_lens_tags, sx.domain_tags, sx.technology_tags, sx.scale_tags,
+               sx.market_label
         FROM startup_extended sx
         JOIN entities e ON e.entity_id = sx.startup_id
         LEFT JOIN investment_edges ie ON ie.startup_id = sx.startup_id
@@ -755,6 +899,13 @@ def write_dashboard_data(conn: sqlite3.Connection) -> None:
             "valuation_estimate_source": r[30] or None,
             "sx": round(float(r[31]), 3) if r[31] is not None else round(float(r[11] or 0), 3),
             "sy": round(float(r[32]), 3) if r[32] is not None else round(float(r[12] or 0), 3),
+            # ── Previous taxonomy tokens ──────────────────────────────────────
+            "bio_lens": [t.strip() for t in (r[33] or "").split(";") if t.strip()],
+            "domain_tags": [t.strip() for t in (r[34] or "").split(";") if t.strip()],
+            "tech_tags": [t.strip() for t in (r[35] or "").split(";") if t.strip()],
+            "scale_tags": [t.strip() for t in (r[36] or "").split(";") if t.strip()],
+            "market_label": r[37] or "",
+            "self_cats": _extract_self_categories((r[7] or "") + " " + (r[6] or "")[:300]),
         })
 
     # Cluster summary con métricas para inversor
@@ -801,14 +952,14 @@ def write_dashboard_data(conn: sqlite3.Connection) -> None:
         FROM investment_edges ie
         JOIN entities e_inv ON e_inv.entity_id = ie.investor_id
         JOIN startup_extended sx ON sx.startup_id = ie.startup_id
-        WHERE ie.round_stage = 'validated_investor_to_startup'
-          AND sx.scope_decision = 'include'
+        WHERE sx.scope_decision = 'include'
         GROUP BY ie.investor_id, ie.startup_id
     """).fetchall()
 
     startup_id_set = {s["id"] for s in startups}
     investor_meta: dict[str, dict] = {}
     graph_edges: list[dict] = []
+    startup_investor_map: dict[str, list[str]] = {}   # startup_id → [investor_ids]
 
     for inv_id, inv_name, st_id, _ in investment_rows:
         if st_id not in startup_id_set:
@@ -817,11 +968,26 @@ def write_dashboard_data(conn: sqlite3.Connection) -> None:
             investor_meta[inv_id] = {"name": inv_name, "n": 0}
         investor_meta[inv_id]["n"] += 1
         graph_edges.append({"investor_id": inv_id, "startup_id": st_id})
+        startup_investor_map.setdefault(st_id, []).append(inv_id)
+
+    # Embed investor_ids into each startup object
+    for s in startups:
+        s["investor_ids"] = startup_investor_map.get(s["id"], [])
 
     investor_nodes = [
         {"id": inv_id, "name": meta["name"], "n_investments": meta["n"]}
         for inv_id, meta in investor_meta.items()
     ]
+
+    # Fund list for filter UI — sorted by portfolio size, only ≥2 startups
+    funds_for_filter = sorted(
+        [
+            {"id": inv_id, "name": meta["name"], "n": meta["n"]}
+            for inv_id, meta in investor_meta.items()
+            if meta["n"] >= 2
+        ],
+        key=lambda f: (-f["n"], f["name"]),
+    )
 
     print(f"  Grafo: {len(investor_nodes)} inversores, {len(graph_edges)} aristas "
           f"({len([s for s in startups if s['n_investors_mapped']>0])} startups con inversión)")
@@ -876,6 +1042,8 @@ def write_dashboard_data(conn: sqlite3.Connection) -> None:
         "clusters": clusters_list,
         "vocab_tech": vocab_to_dict(tech_vocab),
         "vocab_industry": vocab_to_dict(ind_vocab),
+        "funds": funds_for_filter,
+        "tokens_vocab": _build_tokens_vocab(startups),
         "graph": {
             "investor_nodes": investor_nodes,
             "edges": graph_edges,

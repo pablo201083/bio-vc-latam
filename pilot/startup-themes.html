@@ -77,6 +77,11 @@
     .fc.active-country::after{content:" ×";opacity:.75;font-size:.88em;font-weight:400}
     .fc.active-stage{background:#5b2d8e;color:#fff;border-color:#5b2d8e;box-shadow:0 1px 6px rgba(91,45,142,.22)}
     .fc.active-stage::after{content:" ×";opacity:.75;font-size:.88em;font-weight:400}
+    .fc.active-fund{background:#0b6e4f;color:#fff;border-color:#0b6e4f;box-shadow:0 1px 6px rgba(11,110,79,.22)}
+    .fc.active-fund::after{content:" ×";opacity:.75;font-size:.88em;font-weight:400}
+    .fc.active-legacy{background:#6b5e52;color:#fff;border-color:#6b5e52;box-shadow:0 1px 6px rgba(107,94,82,.22)}
+    .fc.active-legacy::after{content:" ×";opacity:.75;font-size:.88em;font-weight:400}
+    .fp-sep{height:1px;background:var(--line);margin:4px 0}
     .chip-lbl{font-size:.69rem;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;align-self:center}
     .clear-fc{font-size:.72rem;padding:3px 9px;color:var(--muted);border-color:rgba(200,192,180,.5);background:transparent}
     .clear-fc:hover{color:var(--ink);border-color:var(--muted);background:rgba(0,0,0,.04)}
@@ -95,12 +100,12 @@
 
     .hov{position:absolute;min-width:260px;max-width:320px;padding:12px 14px;border:1px solid rgba(200,190,178,.8);border-radius:12px;background:rgba(255,253,249,.98);box-shadow:0 8px 28px rgba(44,36,22,.14),0 2px 6px rgba(44,36,22,.07);pointer-events:none;opacity:0;transform:translateY(4px);transition:opacity 100ms ease,transform 100ms ease;z-index:10}
     .hov.vis{opacity:1;transform:translateY(0)}
-    .hov-title{font-size:.93rem;font-weight:700;color:var(--ink);margin-bottom:6px;line-height:1.3}
-    .hov-chips{display:flex;flex-wrap:wrap;gap:3px;margin-bottom:7px}
+    .hov-title{font-size:.93rem;font-weight:700;color:var(--ink);margin-bottom:4px;line-height:1.3}
+    .hov-body{font-size:.78rem;color:var(--muted);line-height:1.42;margin-bottom:7px}
+    .hov-chips{display:flex;flex-wrap:wrap;gap:3px;margin-bottom:5px}
     .hov-chip{border-radius:5px;border:1px solid var(--line);background:rgba(255,255,255,.94);padding:2px 7px;font-size:.7rem;color:var(--muted);display:inline-flex;align-items:center;gap:4px}
     .hov-dot{width:7px;height:7px;border-radius:999px;flex:0 0 auto}
-    .hov-body{font-size:.81rem;color:var(--ink);line-height:1.42;margin-bottom:7px}
-    .hov-small{font-size:.71rem;color:var(--muted)}
+    .hov-small{font-size:.68rem;color:var(--muted);margin-top:3px}
 
     .srch-wrap{position:relative}
     .srch-res{position:absolute;z-index:6;top:calc(100% + 4px);left:0;right:0;display:none;max-height:200px;overflow:auto;border:1px solid var(--line);border-radius:11px;background:rgba(255,252,246,.98);box-shadow:var(--shadow);padding:3px}
@@ -138,6 +143,8 @@
     .fp-row{display:flex;flex-direction:column;gap:4px}
     .fp-chips{display:flex;flex-wrap:nowrap;gap:5px;overflow-x:auto;padding-bottom:3px;scrollbar-width:none}
     .fp-chips::-webkit-scrollbar{display:none}
+    /* Fund chips: allow 2 rows so all funds are visible at a glance */
+    #fund-chips{flex-wrap:wrap;overflow-x:visible;max-height:72px;overflow-y:auto}
     .filter-active{background:rgba(11,143,135,.1)!important;border-color:var(--accent)!important;color:var(--ink)!important}
 
     /* ── Cluster halo labels (floating on SVG) ── */
@@ -197,6 +204,7 @@
       <div class="topbar-stat"><strong id="meta-clusters">—</strong><span>clusters</span></div>
       <div class="topbar-stat"><strong id="meta-model">—</strong><span>modelo</span></div>
     </div>
+    <a href="./cluster-quality.html" class="topbar-link">Calidad clusters →</a>
     <a href="./index.html" class="topbar-link">← Piloto</a>
   </header>
 
@@ -235,6 +243,10 @@
       </div>
       <div id="filter-panel" class="filter-panel">
         <div class="fp-row">
+          <div class="fp-sec-head"><span class="fp-sec-lbl">Fondo / Inversor</span><button id="clr-fund" class="fp-sec-clr" type="button">limpiar selección</button></div>
+          <div id="fund-chips" class="fp-chips"></div>
+        </div>
+        <div class="fp-row">
           <div class="fp-sec-head"><span class="fp-sec-lbl">País</span><button id="clr-country" class="fp-sec-clr" type="button">limpiar selección</button></div>
           <div id="country-chips" class="fp-chips"></div>
         </div>
@@ -249,6 +261,14 @@
         <div class="fp-row">
           <div class="fp-sec-head"><span class="fp-sec-lbl">Etapa</span><button id="clr-stage" class="fp-sec-clr" type="button">limpiar selección</button></div>
           <div id="stage-chips" class="fp-chips"></div>
+        </div>
+        <div class="fp-sep"></div>
+        <div class="fp-row">
+          <div class="fp-sec-head">
+            <span class="fp-sec-lbl" style="opacity:.65">Cómo se describen</span>
+            <button id="clr-legacy" class="fp-sec-clr" type="button">limpiar</button>
+          </div>
+          <div id="legacy-chips" class="fp-chips" style="flex-wrap:wrap;overflow-x:visible"></div>
         </div>
       </div>
       <div id="breadcrumbs" class="breadcrumbs"></div>
@@ -322,7 +342,7 @@
 </div>
 
 <script src="./text-clean.js?v=20260422aa"></script>
-<script src="./startup-themes-data.js?v=20260516b"></script>
+<script src="./startup-themes-data.js?v=20260527b"></script>
 <script>
 (function(){
 "use strict";
@@ -610,6 +630,8 @@ const activeTechs=new Set();      // OR dentro de la categoría
 const activeInds=new Set();       // OR dentro de la categoría
 const activeCountries=new Set();  // OR dentro de la categoría
 const activeStages=new Set();     // OR — pre-seed | seed | series-a | series-b | series-c+ | growth
+const activeFunds=new Set();      // OR — inversor/fondo id
+const activeLegacy=new Set();      // OR — macro_theme (taxonomía anterior)
 let searchId=null,showLabels=false;
 let viewMode="map"; // "map" | "cluster" | "zoom"
 
@@ -620,9 +642,11 @@ function isHl(s){
   if(activeTechs.size&&!(s.tech_codes||[]).some(c=>activeTechs.has(c)))return false;
   if(activeInds.size&&!(s.industry_codes||[]).some(c=>activeInds.has(c)))return false;
   if(activeStages.size&&!activeStages.has(s.funding_stage||"sin-dato"))return false;
+  if(activeFunds.size&&!(s.investor_ids||[]).some(id=>activeFunds.has(id)))return false;
+  if(activeLegacy.size&&!(s.self_cats||[]).some(c=>activeLegacy.has(c)))return false;
   return true;
 }
-function anyFilter(){return !!(searchId||activeCountries.size||activeTheme!==null||activeTechs.size||activeInds.size||activeStages.size)}
+function anyFilter(){return !!(searchId||activeCountries.size||activeTheme!==null||activeTechs.size||activeInds.size||activeStages.size||activeFunds.size||activeLegacy.size)}
 
 // ── Build SVG ──────────────────────────────────────────────────────────────
 function buildSVG(){
@@ -666,7 +690,7 @@ function buildSVG(){
     lbl.setAttribute("opacity",anchor?"1":dest?"0.88":"0.78");
     lbl.textContent=s.name.replace(/\s*S\.?\s*[AP]\.?S?\.?$/i,"").split(/\s+/).slice(0,2).join(" ");
     // Default: anchor + destacado visible; completo only when toggle ON
-    lbl.style.display=(anchor||dest||(showLabels&&nCompleto(s)))?"":"none";
+    lbl.style.display=(anchor||dest||r>=14||(showLabels&&nCompleto(s)))?"":"none";
     gLabels.appendChild(lbl);
     n.lblEl=lbl;
 
@@ -955,15 +979,19 @@ const GRAY_RING="#c2bbB2";
 function syncFilterBtn(){
   const btn=document.getElementById("btn-filter");
   if(!btn)return;
-  btn.classList.toggle("filter-active",!!(activeTechs.size||activeInds.size||activeCountries.size||activeStages.size));
+  btn.classList.toggle("filter-active",!!(activeTechs.size||activeInds.size||activeCountries.size||activeStages.size||activeFunds.size||activeLegacy.size));
   const clrC=document.getElementById("clr-country");
   const clrT=document.getElementById("clr-tech");
   const clrI=document.getElementById("clr-ind");
   const clrS=document.getElementById("clr-stage");
+  const clrF=document.getElementById("clr-fund");
+  const clrLeg=document.getElementById("clr-legacy");
   if(clrC)clrC.classList.toggle("vis",activeCountries.size>0);
   if(clrT)clrT.classList.toggle("vis",activeTechs.size>0);
   if(clrI)clrI.classList.toggle("vis",activeInds.size>0);
   if(clrS)clrS.classList.toggle("vis",activeStages.size>0);
+  if(clrF)clrF.classList.toggle("vis",activeFunds.size>0);
+  if(clrLeg)clrLeg.classList.toggle("vis",activeLegacy.size>0);
 }
 function updateHighlights(){
   const any=anyFilter();
@@ -985,7 +1013,7 @@ function updateHighlights(){
       }
       if(n.lblEl){
         // Default: solo anchors (puntos grandes). Toggle "Nombres" agrega destacados y completos.
-        const zBase=nAnchor(s)||(showLabels&&(nDestacado(s)||nCompleto(s)));
+        const zBase=nAnchor(s)||nRadius(s)>=14||(showLabels&&(nDestacado(s)||nCompleto(s)));
         const show=inTheme&&(searchId?hi:zBase);
         n.lblEl.style.display=show?"":"none";
         n.lblEl.setAttribute("font-size",nAnchor(s)?"10":"8");
@@ -1008,9 +1036,10 @@ function updateHighlights(){
       n.circEl.setAttribute("r",hi&&searchId===s.id?nRadius(s)+3:nRadius(s));
     }
     if(n.lblEl){
-      const base=nAnchor(s)||nDestacado(s)||(showLabels&&nCompleto(s));
-      // Anchors always show, others only when they pass filter
-      const show=nAnchor(s)?(any?hi:true):(any?(hi&&base):base);
+      const bigDot=nRadius(s)>=14;
+      const base=nAnchor(s)||nDestacado(s)||bigDot||(showLabels&&nCompleto(s));
+      // Anchors + big dots always show, others only when they pass filter
+      const show=(nAnchor(s)||bigDot)?(any?hi:true):(any?(hi&&base):base);
       n.lblEl.style.display=show?"":"none";
       n.lblEl.setAttribute("font-weight",searchId===s.id||nAnchor(s)?"700":"400");
     }
@@ -1065,6 +1094,31 @@ function updateBreadcrumbs(){
       clear(){
         activeTheme=null;
         document.querySelectorAll(".cr").forEach(r=>r.classList.remove("active","dimmed"));
+        updateHighlights();updateBreadcrumbs();
+      }
+    });
+  }
+  if(activeLegacy.size){
+    const lbls=[...activeLegacy];
+    filters.push({
+      label:"Legacy: "+lbls.slice(0,2).join(", ")+(lbls.length>2?` +${lbls.length-2}`:""),
+      clear(){
+        activeLegacy.clear();
+        document.querySelectorAll("#legacy-chips .fc").forEach(c=>c.classList.remove("active-legacy"));
+        const clrLeg=document.getElementById("clr-legacy");if(clrLeg)clrLeg.classList.remove("vis");
+        updateHighlights();updateBreadcrumbs();
+      }
+    });
+  }
+  if(activeFunds.size){
+    const fundMeta=(D.funds||[]).filter(f=>activeFunds.has(f.id));
+    const lbls=fundMeta.map(f=>f.name);
+    filters.push({
+      label:"Fondo: "+lbls.slice(0,2).join(", ")+(lbls.length>2?` +${lbls.length-2}`:""),
+      clear(){
+        activeFunds.clear();
+        document.querySelectorAll("#fund-chips .fc").forEach(c=>c.classList.remove("active-fund"));
+        const clrF=document.getElementById("clr-fund");if(clrF)clrF.classList.remove("vis");
         updateHighlights();updateBreadcrumbs();
       }
     });
@@ -1124,10 +1178,12 @@ function updateBreadcrumbs(){
   });
   const all=document.createElement("button");all.className="bc-pill bc-all";all.type="button";all.textContent="Limpiar todo";
   all.addEventListener("click",()=>{
-    activeTheme=null;activeTechs.clear();activeInds.clear();activeCountries.clear();searchId=null;
+    activeTheme=null;activeTechs.clear();activeInds.clear();activeCountries.clear();activeStages.clear();activeFunds.clear();activeLegacy.clear();searchId=null;
     srchIn.value="";
-    document.querySelectorAll(".fc").forEach(c=>c.classList.remove("active-tech","active-ind","active-country"));
+    document.querySelectorAll(".fc").forEach(c=>c.classList.remove("active-tech","active-ind","active-country","active-stage","active-fund","active-legacy"));
     document.querySelectorAll(".cr").forEach(r=>r.classList.remove("active","dimmed"));
+    const clrF=document.getElementById("clr-fund");if(clrF)clrF.classList.remove("vis");
+    const clrLeg=document.getElementById("clr-legacy");if(clrLeg)clrLeg.classList.remove("vis");
     updateHighlights();updateBreadcrumbs();
   });
   bc.appendChild(all);
@@ -1313,17 +1369,22 @@ function showHov(s,e){
     +({gridx_valuation:"",stage_estimate:" est.",investors_proxy:" est.",emergente:" sin dato"}[valSrc]||"")
     :null;
   const invLabel=s.n_investors_mapped>0?`${s.n_investors_mapped} inv. mapeado${s.n_investors_mapped>1?"s":""}`:null;
+
+  // Descripción: one_liner preferido; si falta, primera oración del summary
+  const desc = s.one_liner ||
+    (s.summary ? s.summary.replace(/\s+/g," ").split(/(?<=\.)\s+/)[0].slice(0,160) : "");
+
   hovCard.innerHTML=`
-    ${s.one_liner?`<div class="hov-body" style="margin-bottom:6px;">${s.one_liner.slice(0,180)}</div>`:""}
-    <div class="hov-title" style="margin-bottom:4px;">${s.name}</div>
+    <div class="hov-title">${s.name}</div>
+    ${desc?`<div class="hov-body">${desc}</div>`:""}
     <div class="hov-chips">
       <span class="hov-chip"><span class="hov-dot" style="background:${color}"></span>${s.bio_theme||"—"}</span>
-      ${(s.countries||[]).length?`<span class="hov-chip">${(s.countries).join(" · ")}</span>`:""}
-      ${stageLabel?`<span class="hov-chip" style="font-weight:600;">${stageLabel}</span>`:""}
+      ${(s.countries||[]).length?`<span class="hov-chip">${s.countries.join(" · ")}</span>`:""}
+      ${stageLabel?`<span class="hov-chip" style="font-weight:600">${stageLabel}</span>`:""}
       ${valLabel?`<span class="hov-chip" style="font-weight:700;color:var(--ink)">${valLabel}</span>`:""}
       ${invLabel?`<span class="hov-chip" style="color:#1f5c3a">⬤ ${invLabel}</span>`:""}
     </div>
-    <div class="hov-small">${s.cluster_label?`<em>${s.cluster_label}</em>`:""}</div>
+    ${(s.self_cats||[]).length?`<div class="hov-small"><span style="opacity:.5;text-transform:uppercase;letter-spacing:.07em;font-size:.62rem">Clasificación legacy</span> ${s.self_cats.join(" · ")}</div>`:""}
   `;
   const rect=wrap.getBoundingClientRect();
   let x=e.clientX-rect.left+14,y=e.clientY-rect.top-10;
@@ -1353,7 +1414,25 @@ function buildChips(){
   const tWrap=document.getElementById("tech-chips");
   const iWrap=document.getElementById("ind-chips");
   const cWrap=document.getElementById("country-chips");
-  tWrap.innerHTML="";iWrap.innerHTML="";cWrap.innerHTML="";
+  const fWrap=document.getElementById("fund-chips");
+  tWrap.innerHTML="";iWrap.innerHTML="";cWrap.innerHTML="";fWrap.innerHTML="";
+
+  // Fondo/Inversor — multi-select (uses D.funds from data)
+  const fundsData=(D.funds||[]);
+  fundsData.forEach(fund=>{
+    const btn=document.createElement("button");
+    btn.className="fc";btn.type="button";btn.dataset.fund=fund.id;
+    btn.textContent=fund.name+" ("+fund.n+")";
+    btn.addEventListener("click",()=>{
+      activeFunds.has(fund.id)?activeFunds.delete(fund.id):activeFunds.add(fund.id);
+      fWrap.querySelectorAll(".fc").forEach(c=>c.classList.toggle("active-fund",activeFunds.has(c.dataset.fund)));
+      updateHighlights();updateBreadcrumbs();
+      // Update "limpiar" button visibility
+      const clrF=document.getElementById("clr-fund");
+      if(clrF)clrF.classList.toggle("vis",activeFunds.size>0);
+    });
+    fWrap.appendChild(btn);
+  });
 
   // País — multi-select
   Object.entries(cc).sort((a,b)=>b[1]-a[1]).forEach(([country,count])=>{
@@ -1415,6 +1494,12 @@ function buildChips(){
   });
 
   // Botones "limpiar selección" por sección
+  document.getElementById("clr-fund").addEventListener("click",()=>{
+    activeFunds.clear();
+    fWrap.querySelectorAll(".fc").forEach(c=>c.classList.remove("active-fund"));
+    document.getElementById("clr-fund").classList.remove("vis");
+    updateHighlights();updateBreadcrumbs();
+  });
   document.getElementById("clr-country").addEventListener("click",()=>{
     activeCountries.clear();
     cWrap.querySelectorAll(".fc").forEach(c=>c.classList.remove("active-country"));
@@ -1435,6 +1520,35 @@ function buildChips(){
     sWrap.querySelectorAll(".fc").forEach(c=>c.classList.remove("active-stage"));
     updateHighlights();updateBreadcrumbs();
   });
+  // ── Cómo se describen (self_cats extraídas del texto propio) ─────────────
+  const legWrap=document.getElementById("legacy-chips");
+  if(legWrap){
+    legWrap.innerHTML="";
+    const legCounts={};
+    startups.forEach(s=>{(s.self_cats||[]).forEach(c=>{legCounts[c]=(legCounts[c]||0)+1;});});
+    Object.entries(legCounts).sort((a,b)=>b[1]-a[1]).forEach(([val,n])=>{
+      const btn=document.createElement("button");
+      btn.className="fc";btn.type="button";btn.dataset.legacy=val;
+      btn.style.fontSize=".68rem";btn.style.opacity=".82";
+      btn.textContent=val+" ("+n+")";
+      btn.addEventListener("click",()=>{
+        activeLegacy.has(val)?activeLegacy.delete(val):activeLegacy.add(val);
+        legWrap.querySelectorAll(".fc").forEach(c=>c.classList.toggle("active-legacy",activeLegacy.has(c.dataset.legacy)));
+        const clrLeg=document.getElementById("clr-legacy");
+        if(clrLeg)clrLeg.classList.toggle("vis",activeLegacy.size>0);
+        updateHighlights();updateBreadcrumbs();
+      });
+      legWrap.appendChild(btn);
+    });
+  }
+
+  document.getElementById("clr-legacy").addEventListener("click",()=>{
+    activeLegacy.clear();
+    document.querySelectorAll("#legacy-chips .fc").forEach(c=>c.classList.remove("active-legacy"));
+    document.getElementById("clr-legacy").classList.remove("vis");
+    updateHighlights();updateBreadcrumbs();
+  });
+
 }
 
 // ── Search ────────────────────────────────────────────────────────────────
@@ -1460,10 +1574,12 @@ srchIn.addEventListener("input",()=>{
   srchRes.classList.toggle("open",hits.length>0);
 });
 function resetAll(){
-  activeTheme=null;activeTechs.clear();activeInds.clear();activeCountries.clear();searchId=null;
+  activeTheme=null;activeTechs.clear();activeInds.clear();activeCountries.clear();activeStages.clear();activeFunds.clear();activeLegacy.clear();searchId=null;
   srchIn.value="";srchRes.classList.remove("open");
-  document.querySelectorAll(".fc").forEach(c=>c.classList.remove("active-tech","active-ind","active-country"));
+  document.querySelectorAll(".fc").forEach(c=>c.classList.remove("active-tech","active-ind","active-country","active-stage","active-fund","active-legacy"));
   document.querySelectorAll(".cr").forEach(r=>r.classList.remove("active","dimmed"));
+  const clrF=document.getElementById("clr-fund");if(clrF)clrF.classList.remove("vis");
+  const clrLeg=document.getElementById("clr-legacy");if(clrLeg)clrLeg.classList.remove("vis");
   const fp=document.getElementById("filter-panel");
   fp.classList.remove("open");
   document.getElementById("btn-filter").classList.remove("on","filter-active");

@@ -1,0 +1,697 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calidad de Clusters — BIO LATAM</title>
+  <link rel="stylesheet" href="./styles.css?v=20260422l">
+  <style>
+    .metric-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0,1fr));
+      gap: 14px;
+      margin-bottom: 20px;
+    }
+    .kpi-card { border:1px solid var(--line);border-radius:18px;background:#fff;padding:14px; }
+    .kpi-label { font-size:.82rem;color:var(--muted);margin-bottom:8px; }
+    .kpi-value { font-size:1.7rem;font-weight:700;line-height:1.05; }
+    .kpi-sub   { font-size:.72rem;color:var(--muted);margin-top:4px; }
+
+    /* ── Theme grid ── */
+    .theme-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0,1fr));
+      gap: 12px;
+    }
+    .theme-card {
+      border:1px solid var(--line);border-radius:16px;background:rgba(255,255,255,.85);
+      padding:13px 14px;cursor:pointer;text-align:left;font:inherit;color:inherit;
+      transition:box-shadow .13s,border-color .13s;
+    }
+    .theme-card:hover { box-shadow:0 2px 10px rgba(0,0,0,.08); }
+    .theme-card.active { border-color:var(--accent);box-shadow:0 0 0 3px rgba(23,139,135,.12);background:#fff; }
+    .tc-dot  { width:9px;height:9px;border-radius:50%;display:inline-block;margin-right:6px; }
+    .tc-name { font-size:.88rem;font-weight:700;line-height:1.3; }
+    .tc-count{ font-size:.72rem;color:var(--muted);margin-top:2px; }
+    .bar-track{ width:100%;height:7px;border-radius:999px;background:#eadfce;overflow:hidden;margin-top:8px; }
+    .bar-fill { height:100%;border-radius:999px; }
+
+    /* ── Layout principal ── */
+    .sc-grid { display:grid;grid-template-columns:300px minmax(0,1fr);gap:16px;align-items:start; }
+    .sc-list  { display:grid;gap:6px; }
+    .sc-item  {
+      border:1px solid var(--line);border-radius:11px;background:rgba(255,255,255,.82);
+      padding:10px 12px;cursor:pointer;text-align:left;font:inherit;color:inherit;
+      transition:border-color .12s,background .12s;
+    }
+    .sc-item:hover  { background:#fff;border-color:rgba(150,140,130,.5); }
+    .sc-item.active { border-color:var(--accent);background:#fff;box-shadow:0 0 0 2px rgba(23,139,135,.1); }
+    .sc-name { font-size:.82rem;font-weight:700;line-height:1.3; }
+    .sc-meta { font-size:.68rem;color:var(--muted);margin-top:2px; }
+    .sc-conf { font-size:.66rem;margin-top:5px;display:flex;align-items:center;gap:6px; }
+    .sc-bar  { flex:1;height:5px;border-radius:999px;background:#eadfce;overflow:hidden; }
+    .sc-bar-f{ height:100%;border-radius:999px; }
+
+    /* ── Detail ── */
+    .detail-panel { display:grid;gap:16px; }
+    .detail-header{ border-bottom:1px solid var(--line);padding-bottom:12px; }
+    .detail-title { font-size:1.1rem;font-weight:700;line-height:1.3;margin-bottom:3px; }
+    .detail-sub   { font-size:.78rem;color:var(--muted); }
+
+    .q-grid { display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px; }
+    .q-card { border:1px solid var(--line);border-radius:13px;background:#fcf8f1;padding:10px 12px; }
+    .q-label{ font-size:.66rem;color:var(--muted);text-transform:uppercase;letter-spacing:.07em;margin-bottom:5px; }
+    .q-val  { font-size:1.28rem;font-weight:700;line-height:1; }
+    .q-sub  { font-size:.67rem;color:var(--muted);margin-top:3px; }
+
+    /* ── Sección semántica ── */
+    .sem-section { display:grid;gap:12px; }
+    .sem-block   { border:1px solid var(--line);border-radius:13px;background:rgba(255,255,255,.78);padding:13px 15px; }
+    .sem-lbl     { font-size:.65rem;text-transform:uppercase;letter-spacing:.09em;color:var(--accent);font-weight:700;margin-bottom:10px; }
+
+    /* Keywords del pipeline (chips) */
+    .kw-cloud { display:flex;flex-wrap:wrap;gap:7px; }
+    .kw-chip  { border:1px solid var(--line);border-radius:999px;background:#fff;padding:5px 11px;font-size:.82rem;line-height:1.2; }
+    .kw-chip.primary { border-color:var(--accent);background:rgba(23,139,135,.07);font-weight:600; }
+
+    /* TF-IDF bars */
+    .tok-bars { display:grid;gap:5px; }
+    .tok-row  { display:grid;grid-template-columns:160px 1fr 30px;align-items:center;gap:8px; }
+    .tok-name { font-size:.76rem;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis; }
+    .tok-track{ height:7px;border-radius:999px;background:#eadfce;overflow:hidden; }
+    .tok-fill { height:100%;border-radius:999px; }
+    .tok-n    { font-size:.68rem;color:var(--muted);text-align:right;font-variant-numeric:tabular-nums; }
+
+    /* Confianza distribución */
+    .conf-bands { display:grid;grid-template-columns:repeat(3,1fr);gap:8px; }
+    .conf-band  { border:1px solid var(--line);border-radius:11px;padding:9px 11px;text-align:center; }
+    .conf-val   { font-size:1.2rem;font-weight:700; }
+    .conf-lbl   { font-size:.68rem;color:var(--muted);margin-top:2px; }
+    .conf-bar   { height:6px;border-radius:999px;background:#eadfce;overflow:hidden;margin-top:6px; }
+    .conf-bar-f { height:100%;border-radius:999px; }
+
+    /* Cobertura de texto */
+    .cov-grid { display:grid;grid-template-columns:repeat(3,1fr);gap:8px; }
+    .cov-card { border:1px solid var(--line);border-radius:11px;padding:9px 11px; }
+    .cov-lbl  { font-size:.67rem;color:var(--muted);margin-bottom:4px; }
+    .cov-bar-track{ height:6px;border-radius:999px;background:#eadfce;overflow:hidden;margin-bottom:3px; }
+    .cov-bar-fill { height:100%;border-radius:999px; }
+    .cov-pct  { font-size:.74rem;font-weight:700; }
+    .cov-sub  { font-size:.64rem;color:var(--muted); }
+
+    /* Startup list */
+    .startup-table { border:1px solid var(--line);border-radius:13px;overflow:hidden;background:#fff; }
+    .st-head { display:grid;grid-template-columns:minmax(0,1fr) 58px 80px 56px;gap:8px;padding:7px 12px;background:#f7f3ec;border-bottom:1px solid var(--line); }
+    .st-head span { font-size:.62rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:700; }
+    .st-row  { display:grid;grid-template-columns:minmax(0,1fr) 58px 80px 56px;gap:8px;padding:7px 12px;border-bottom:1px solid rgba(220,210,196,.35);align-items:center; }
+    .st-row:last-child { border-bottom:none; }
+    .st-row:hover { background:rgba(245,240,232,.5); }
+    .st-name { font-size:.79rem;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis; }
+    .st-cell { font-size:.72rem;color:var(--muted);font-variant-numeric:tabular-nums; }
+    .st-band { font-size:.65rem;padding:2px 6px;border-radius:5px;font-weight:700; }
+    .st-band.high{ background:rgba(22,163,74,.1);color:#15803d; }
+    .st-band.mid { background:rgba(202,138,4,.1);color:#a16207; }
+    .st-band.low { background:rgba(185,28,28,.1);color:#b91c1c; }
+    .st-conf-bar { height:4px;border-radius:999px;background:#eadfce;overflow:hidden;margin-top:3px; }
+    .st-conf-f   { height:100%;border-radius:999px; }
+
+    .empty-state { text-align:center;color:var(--muted);padding:40px 20px;font-size:.9rem; }
+
+    /* Alerts / priority list */
+    .alert-list { display:grid;gap:8px; }
+    .alert-row {
+      border:1px solid var(--line);border-radius:13px;background:#fff;
+      padding:10px 14px;display:grid;
+      grid-template-columns:28px minmax(0,1fr) 80px 80px 80px 80px;
+      gap:10px;align-items:center;cursor:pointer;
+      transition:border-color .12s,background .12s;
+    }
+    .alert-row:hover { border-color:rgba(150,140,130,.5);background:#faf7f2; }
+    .alert-row.alert-critical { border-left:3px solid #dc2626; }
+    .alert-row.alert-warn     { border-left:3px solid #d97706; }
+    .alert-row.alert-large    { border-left:3px solid #6366f1; }
+    .alert-rank  { font-size:.72rem;font-weight:700;color:var(--muted);text-align:center; }
+    .alert-name  { font-size:.82rem;font-weight:700;line-height:1.35; }
+    .alert-theme { font-size:.67rem;color:var(--muted);margin-top:2px; }
+    .alert-stat  { text-align:center; }
+    .alert-stat-val { font-size:.92rem;font-weight:700;line-height:1; }
+    .alert-stat-lbl { font-size:.6rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em; }
+    .alert-signal { display:flex;flex-wrap:wrap;gap:4px; }
+    .sig-pill {
+      font-size:.6rem;padding:2px 7px;border-radius:999px;font-weight:600;
+      border:1px solid transparent;
+    }
+    .sig-low  { background:rgba(185,28,28,.08);color:#b91c1c;border-color:rgba(185,28,28,.2); }
+    .sig-big  { background:rgba(99,102,241,.08);color:#4f46e5;border-color:rgba(99,102,241,.2); }
+    .sig-out  { background:rgba(202,138,4,.08);color:#a16207;border-color:rgba(202,138,4,.2); }
+    .sig-bleed{ background:rgba(0,0,0,.05);color:#555;border-color:rgba(0,0,0,.12); }
+
+    @media(max-width:1100px){
+      .sc-grid{ grid-template-columns:1fr; }
+      .theme-grid{ grid-template-columns:repeat(2,1fr); }
+    }
+  </style>
+</head>
+<body>
+<div class="page-shell">
+
+  <header class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">Semántica · T3</p>
+      <h1>Calidad de Clusters</h1>
+      <p class="lede">Keywords del pipeline, vocabulario del texto propio y confianza de asignación por sub-cluster semántico. Para trabajo de curaduría y revisión de la taxonomía.</p>
+    </div>
+    <div class="hero-meta">
+      <div class="meta-card"><span class="meta-label">Startups</span><strong id="kpi-total">—</strong></div>
+      <div class="meta-card"><span class="meta-label">Sub-clusters</span><strong id="kpi-clusters">—</strong></div>
+      <div class="meta-card"><span class="meta-label">Conf. media</span><strong id="kpi-conf">—</strong></div>
+      <div class="meta-card"><span class="meta-label">Volver</span><strong><a href="./startup-themes.html" style="color:inherit">← Mapa</a></strong></div>
+    </div>
+  </header>
+
+  <div class="metric-grid" id="global-kpis"></div>
+
+  <section class="panel" id="alerts-panel" style="display:none">
+    <div class="panel-head">
+      <h2>Clusters para revisar</h2>
+      <span class="pill muted" id="alerts-pill">—</span>
+    </div>
+    <div style="font-size:.78rem;color:var(--muted);margin-bottom:12px">
+      Ordenados por prioridad: % baja confianza × tamaño. Clusters que más se benefician de re-curaduría o re-clusterización.
+    </div>
+    <div id="alerts-list" class="alert-list"></div>
+  </section>
+
+  <section class="panel">
+    <div class="panel-head">
+      <h2>Bio-themes</h2>
+      <span class="pill" id="theme-pill">8 temas</span>
+    </div>
+    <div class="theme-grid" id="theme-grid"></div>
+  </section>
+
+  <section class="panel" id="theme-detail" style="display:none">
+    <div class="panel-head">
+      <h2 id="detail-theme-name">—</h2>
+      <span class="pill muted" id="detail-theme-pill">—</span>
+    </div>
+    <div class="sc-grid">
+      <div>
+        <div style="font-size:.67rem;text-transform:uppercase;letter-spacing:.09em;color:var(--muted);margin-bottom:8px;font-weight:700">Sub-clusters</div>
+        <div class="sc-list" id="sc-list"></div>
+      </div>
+      <div id="sc-detail"><div class="empty-state">Seleccioná un sub-cluster</div></div>
+    </div>
+  </section>
+
+</div>
+
+<script src="./startup-themes-data.js?v=20260527b"></script>
+<script>
+(function(){
+"use strict";
+const D = window.STARTUP_THEMES_DATA;
+if(!D||!D.startups){ document.querySelector("h1").textContent="Sin datos"; return; }
+const startups = D.startups;
+
+// ── Paleta ────────────────────────────────────────────────────────────────
+const THEME_PAL = {
+  "Therapeutics":"#7033BC","Diagnostics & Health Access":"#1A6DB5",
+  "Food Systems & Alt Proteins":"#C25A2A","Bioinputs & Crop Resilience":"#2A7A42",
+  "Nature & Ecosystem Tech":"#127A6E","Farm Intelligence":"#2E4E8C",
+  "Biomaterials & Circular Economy":"#8B6D14","Biomanufacturing & Fermentation Economy":"#6B8C3A",
+};
+const THEME_ORDER=["Bioinputs & Crop Resilience","Farm Intelligence","Nature & Ecosystem Tech",
+  "Food Systems & Alt Proteins","Biomanufacturing & Fermentation Economy",
+  "Biomaterials & Circular Economy","Diagnostics & Health Access","Therapeutics"];
+function tcol(t){ return THEME_PAL[t]||"#8a7d70"; }
+function qcol(q){ return q>=7.5?"#16a34a":q>=5?"#d97706":"#dc2626"; }
+function pct(n,t){ return t?Math.round(n/t*100):0; }
+
+// ── Stopwords para TF-IDF ─────────────────────────────────────────────────
+const STOP = new Set([
+  "a","an","the","and","or","of","in","for","to","with","that","this","is","are",
+  "its","it","on","at","as","by","from","into","via","per","una","para","de","la",
+  "el","en","los","las","con","por","que","del","se","su","y","o","un","es","al",
+  "platform","company","startup","solution","solutions","based","using","through",
+  "develop","developing","develops","provide","provides","enable","enables","use",
+  "uses","system","systems","technology","technologies","data","digital","software",
+  "product","products","service","services","market","markets","business","new",
+]);
+
+function extractTerms(text){
+  return (text||"").toLowerCase()
+    .replace(/[^a-z\s-]/g," ")
+    .split(/\s+/)
+    .map(w=>w.replace(/^-+|-+$/g,""))
+    .filter(w=>w.length>3 && !STOP.has(w));
+}
+
+// TF-IDF simple: frecuencia en el cluster ponderada por rareza en el corpus global
+function computeTFIDF(clusterItems, allItems, topN=12){
+  const N = allItems.length;
+  // DF global
+  const df = {};
+  allItems.forEach(s=>{
+    const seen = new Set(extractTerms((s.one_liner||"")+" "+(s.summary||"")));
+    seen.forEach(w=>{ df[w]=(df[w]||0)+1; });
+  });
+  // TF local
+  const tf = {};
+  clusterItems.forEach(s=>{
+    extractTerms((s.one_liner||"")+" "+(s.summary||"")).forEach(w=>{
+      tf[w]=(tf[w]||0)+1;
+    });
+  });
+  // Score = tf * log(N / df)
+  const scores = Object.entries(tf).map(([w,f])=>{
+    const idf = Math.log((N+1)/((df[w]||1)+1));
+    return [w, f, Math.round(f*idf*10)/10];
+  });
+  return scores.sort((a,b)=>b[2]-a[2]).slice(0,topN);
+}
+
+// ── Métricas ──────────────────────────────────────────────────────────────
+function metrics(list){
+  const n=list.length;
+  const avgConf = list.reduce((s,x)=>s+(x.cluster_confidence||0),0)/(n||1);
+  const nHigh   = list.filter(x=>x.cluster_confidence>=0.7).length;
+  const nMid    = list.filter(x=>x.cluster_confidence>=0.4&&x.cluster_confidence<0.7).length;
+  const nLow    = list.filter(x=>x.cluster_confidence<0.4).length;
+  const nOutlier= list.filter(x=>x.is_outlier).length;
+  const avgQ    = list.reduce((s,x)=>s+(x.quality_score||0),0)/(n||1);
+  const nLiner  = list.filter(x=>x.one_liner&&x.one_liner.trim()).length;
+  const nSummary= list.filter(x=>x.summary&&x.summary.trim()).length;
+  const nFunding= list.filter(x=>x.funding_stage&&x.funding_stage!=="sin-dato").length;
+  return {n,avgConf,nHigh,nMid,nLow,nOutlier,avgQ,nLiner,nSummary,nFunding};
+}
+
+// ── Agrupar ───────────────────────────────────────────────────────────────
+const byTheme={};
+startups.forEach(s=>{
+  const t=s.bio_theme||"Sin clasificar";
+  if(!byTheme[t])byTheme[t]=[];
+  byTheme[t].push(s);
+});
+
+function groupByCluster(list){
+  // Group by cluster_id (unique clusters) — avoids merging clusters with same name
+  const map={};
+  list.forEach(s=>{
+    const id = s.cluster_id != null ? String(s.cluster_id) : "outlier";
+    if(!map[id]) map[id]={items:[],label:s.cluster_label||"Sin sub-cluster",keywords:s.cluster_keywords||""};
+    map[id].items.push(s);
+  });
+  // Detect name collisions (same label, different id)
+  const labelCount={};
+  Object.values(map).forEach(cl=>{ labelCount[cl.label]=(labelCount[cl.label]||0)+1; });
+  return Object.entries(map)
+    .sort((a,b)=>b[1].items.length-a[1].items.length)
+    .map(([id,{items,label,keywords}])=>{
+      // If two clusters share the same label, disambiguate with first keyword
+      let displayLabel = label;
+      if(labelCount[label]>1 && keywords){
+        const firstKw = keywords.split("·")[0].trim();
+        if(firstKw) displayLabel = label + " (" + firstKw + ")";
+      }
+      return {id, label, displayLabel, keywords, items};
+    });
+}
+
+// ── Global KPIs ───────────────────────────────────────────────────────────
+const gm = metrics(startups);
+const allSubClusters = new Set(startups.map(s=>s.cluster_label).filter(Boolean));
+document.getElementById("kpi-total").textContent    = gm.n;
+document.getElementById("kpi-clusters").textContent = allSubClusters.size;
+document.getElementById("kpi-conf").textContent     = (gm.avgConf*100).toFixed(0)+"%";
+
+[
+  {label:"Conf. alta (≥70%)",val:pct(gm.nHigh,gm.n)+"%",sub:gm.nHigh+" startups bien asignadas"},
+  {label:"Conf. baja (<40%)", val:pct(gm.nLow,gm.n)+"%", sub:gm.nLow+" startups ambiguas"},
+  {label:"Outliers",          val:pct(gm.nOutlier,gm.n)+"%",sub:gm.nOutlier+" fuera de cluster"},
+  {label:"Con descripción",   val:pct(gm.nLiner,gm.n)+"%", sub:"one-liner para TF-IDF"},
+  {label:"Calidad media",     val:gm.avgQ.toFixed(1)+"/10", sub:"datos de curaduría"},
+].forEach(k=>{
+  document.getElementById("global-kpis").insertAdjacentHTML("beforeend",`
+    <div class="kpi-card">
+      <div class="kpi-label">${k.label}</div>
+      <div class="kpi-value">${k.val}</div>
+      <div class="kpi-sub">${k.sub}</div>
+    </div>`);
+});
+
+// ── Vocabulary bleed: terms that appear in multiple cluster keyword sets ──────
+const clusterKwMap = {}; // cluster_id → Set of keywords
+startups.forEach(s=>{
+  if(s.cluster_id == null) return;
+  const cid = String(s.cluster_id);
+  if(!clusterKwMap[cid]) clusterKwMap[cid]=new Set();
+  (s.cluster_keywords||"").split("·").map(k=>k.trim()).filter(Boolean)
+    .forEach(k=>clusterKwMap[cid].add(k.toLowerCase()));
+});
+// Count how many clusters each keyword appears in
+const kwClusterCount={};
+Object.values(clusterKwMap).forEach(kwSet=>{
+  kwSet.forEach(kw=>{ kwClusterCount[kw]=(kwClusterCount[kw]||0)+1; });
+});
+
+// ── Alerts: clusters prioritized for review ───────────────────────────────
+function buildAlerts(allClusters){
+  // allClusters: array of {label, theme, items}
+  const scored = allClusters.map(cl=>{
+    const m=metrics(cl.items);
+    const n=m.n;
+    const lowPct=m.nLow/n;
+    const outlierPct=m.nOutlier/n;
+    const clKws=clusterKwMap[cl.id]||new Set();
+    const bleedKws=[...clKws].filter(kw=>kwClusterCount[kw]>1);
+    const bleedPct=clKws.size?bleedKws.length/clKws.size:0;
+    // Priority: low confidence is most critical, size amplifies
+    const priority = (lowPct*0.6 + outlierPct*0.25 + bleedPct*0.15) * Math.sqrt(n);
+    const signals=[];
+    if(lowPct>0.25) signals.push({cls:"sig-low",txt:`${Math.round(lowPct*100)}% baja conf.`});
+    if(n>50)        signals.push({cls:"sig-big",txt:`${n} startups (grande)`});
+    if(outlierPct>0.2) signals.push({cls:"sig-out",txt:`${Math.round(outlierPct*100)}% outliers`});
+    if(bleedPct>0.4)   signals.push({cls:"sig-bleed",txt:`${bleedKws.length} kw. compartidas`});
+    return {cl,m,n,lowPct,outlierPct,bleedPct,priority,signals};
+  });
+  // Only show clusters with at least one signal or priority > threshold
+  const notable=scored.filter(s=>s.signals.length>0||s.priority>1);
+  notable.sort((a,b)=>b.priority-a.priority);
+  return notable;
+}
+
+// Pre-compute all clusters across all themes for the alerts panel
+let _allClusters=[];
+// We'll populate this after byTheme is built
+
+// ── Theme grid ────────────────────────────────────────────────────────────
+const orderedThemes=[
+  ...THEME_ORDER.filter(t=>byTheme[t]),
+  ...Object.keys(byTheme).filter(t=>!THEME_ORDER.includes(t)),
+];
+
+const themeGrid=document.getElementById("theme-grid");
+orderedThemes.forEach(theme=>{
+  const list=byTheme[theme];
+  const m=metrics(list);
+  const col=tcol(theme);
+  const btn=document.createElement("button");
+  btn.className="theme-card";btn.dataset.theme=theme;
+  btn.innerHTML=`
+    <div class="tc-name"><span class="tc-dot" style="background:${col}"></span>${theme}</div>
+    <div class="tc-count">${list.length} startups · conf ${(m.avgConf*100).toFixed(0)}%</div>
+    <div class="bar-track"><div class="bar-fill" style="width:${m.avgConf*100}%;background:${col}"></div></div>`;
+  btn.addEventListener("click",()=>selectTheme(theme));
+  themeGrid.appendChild(btn);
+  // Accumulate clusters for alerts panel
+  groupByCluster(list).forEach(cl=>_allClusters.push(cl));
+});
+
+// ── Render alerts panel ───────────────────────────────────────────────────
+(function renderAlerts(){
+  const notable=buildAlerts(_allClusters);
+  if(!notable.length) return;
+  const panel=document.getElementById("alerts-panel");
+  panel.style.display="";
+  document.getElementById("alerts-pill").textContent=`${notable.length} clusters`;
+  const list=document.getElementById("alerts-list");
+  notable.forEach((a,i)=>{
+    const {cl,m,n,lowPct,priority,signals}=a;
+    // Severity CSS
+    const severityCls=lowPct>0.3?"alert-critical":n>50?"alert-large":"alert-warn";
+    const dispLabel=cl.displayLabel||cl.label;
+    const subName=dispLabel.includes("·")?dispLabel.split("·").pop().trim():dispLabel;
+    const themeShort=cl.label.includes("·")?cl.label.split("·")[0].trim():cl.label;
+    const col=tcol(themeShort);
+    const row=document.createElement("div");
+    row.className=`alert-row ${severityCls}`;
+    row.innerHTML=`
+      <div class="alert-rank">${i+1}</div>
+      <div>
+        <div class="alert-name">${subName}</div>
+        <div class="alert-theme">${themeShort}</div>
+      </div>
+      <div class="alert-stat">
+        <div class="alert-stat-val" style="color:${lowPct>0.25?"#dc2626":"var(--ink)"}">${Math.round(lowPct*100)}%</div>
+        <div class="alert-stat-lbl">baja conf.</div>
+      </div>
+      <div class="alert-stat">
+        <div class="alert-stat-val" style="color:${n>50?"#4f46e5":"var(--ink)"}">${n}</div>
+        <div class="alert-stat-lbl">startups</div>
+      </div>
+      <div class="alert-stat">
+        <div class="alert-stat-val">${(m.avgConf*100).toFixed(0)}%</div>
+        <div class="alert-stat-lbl">conf. media</div>
+      </div>
+      <div class="alert-signal">${signals.map(s=>`<span class="sig-pill ${s.cls}">${s.txt}</span>`).join("")}</div>`;
+    // Click: navigate to that theme+cluster
+    row.addEventListener("click",()=>{
+      selectTheme(themeShort);
+      // After selectTheme renders, click the matching sc-item
+      requestAnimationFrame(()=>{
+        const items=document.querySelectorAll(".sc-item");
+        items.forEach(b=>{
+          if(b.querySelector(".sc-name")&&b.querySelector(".sc-name").textContent.trim()===(cl.displayLabel||cl.label).trim()){
+            b.click();
+            b.scrollIntoView({behavior:"smooth",block:"nearest"});
+          }
+        });
+      });
+    });
+    list.appendChild(row);
+  });
+})();
+
+// ── Selección de tema ─────────────────────────────────────────────────────
+function selectTheme(theme){
+  document.querySelectorAll(".theme-card").forEach(b=>b.classList.toggle("active",b.dataset.theme===theme));
+  const list=byTheme[theme]||[];
+  const m=metrics(list);
+  const detail=document.getElementById("theme-detail");
+  detail.style.display="";
+  document.getElementById("detail-theme-name").textContent=theme;
+  document.getElementById("detail-theme-pill").textContent=
+    `${list.length} startups · conf media ${(m.avgConf*100).toFixed(0)}%`;
+
+  const clusters=groupByCluster(list);
+  const scList=document.getElementById("sc-list");
+  scList.innerHTML="";
+  clusters.forEach((cl,i)=>{
+    const cm=metrics(cl.items);
+    const col=tcol(theme);
+    const btn=document.createElement("button");
+    btn.className="sc-item"+(i===0?" active":"");
+    btn.dataset.idx=i;
+    btn.innerHTML=`
+      <div class="sc-name">${cl.displayLabel||cl.label||"(sin nombre)"}</div>
+      <div class="sc-meta">${cl.items.length} startups</div>
+      <div class="sc-conf">
+        <div class="sc-bar"><div class="sc-bar-f" style="width:${cm.avgConf*100}%;background:${col}"></div></div>
+        <span style="font-size:.66rem;color:var(--muted);white-space:nowrap">${(cm.avgConf*100).toFixed(0)}%</span>
+      </div>`;
+    btn.addEventListener("click",()=>{
+      scList.querySelectorAll(".sc-item").forEach(b=>b.classList.remove("active"));
+      btn.classList.add("active");
+      renderDetail(cl,theme);
+    });
+    scList.appendChild(btn);
+  });
+
+  if(clusters.length) renderDetail(clusters[0],theme);
+  detail.scrollIntoView({behavior:"smooth",block:"start"});
+}
+
+// ── Render detalle ────────────────────────────────────────────────────────
+function renderDetail(cl,theme){
+  const m=metrics(cl.items);
+  const col=tcol(theme);
+  const n=cl.items.length;
+
+  // Keywords del pipeline (vienen del cluster_keywords de las startups del cluster)
+  const kwFreq={};
+  cl.items.forEach(s=>{
+    (s.cluster_keywords||"").split("·").map(k=>k.trim()).filter(Boolean)
+      .forEach(k=>{ kwFreq[k]=(kwFreq[k]||0)+1; });
+  });
+  const kwSorted=Object.entries(kwFreq).sort((a,b)=>b[1]-a[1]);
+  const kwChips=kwSorted.map(([kw,cnt],i)=>
+    `<span class="kw-chip${i<3?" primary":""}">${kw}</span>`
+  ).join("") || '<span style="color:var(--muted);font-size:.78rem">Sin keywords del pipeline</span>';
+
+  // TF-IDF sobre texto propio
+  const tfidf=computeTFIDF(cl.items,startups);
+  const maxScore=tfidf[0]?tfidf[0][2]:1;
+  const tfidfBars=tfidf.length
+    ? tfidf.map(([w,freq,score])=>`
+        <div class="tok-row">
+          <div class="tok-name">${w}</div>
+          <div class="tok-track"><div class="tok-fill" style="width:${score/maxScore*100}%;background:${col}"></div></div>
+          <div class="tok-n">${freq}</div>
+        </div>`).join("")
+    : '<span style="color:var(--muted);font-size:.78rem">Sin texto disponible</span>';
+
+  // Distribución de confianza
+  const confBands=[
+    {lbl:"Alta ≥ 70%", n:m.nHigh, col:"#16a34a"},
+    {lbl:"Media 40–70%",n:m.nMid,  col:"#d97706"},
+    {lbl:"Baja < 40%",  n:m.nLow,  col:"#dc2626"},
+  ];
+
+  // Startups ordenadas por confianza asc (las más ambiguas primero — más útiles para revisar)
+  const sorted=cl.items.slice().sort((a,b)=>(a.cluster_confidence||0)-(b.cluster_confidence||0));
+  const rows=sorted.map(s=>{
+    const conf=s.cluster_confidence||0;
+    const confPct=Math.round(conf*100);
+    const confCol=conf>=0.7?"#16a34a":conf>=0.4?"#d97706":"#dc2626";
+    const qs=(s.quality_score||0).toFixed(1);
+    const band=s.quality_band==="high"?"high":s.quality_band==="mid"?"mid":"low";
+    const hasText=!!(s.one_liner||s.summary);
+    return `
+      <div class="st-row">
+        <div>
+          <div class="st-name" title="${s.name}">${s.name}</div>
+          <div class="st-conf-bar"><div class="st-conf-f" style="width:${confPct}%;background:${confCol}"></div></div>
+        </div>
+        <div class="st-cell" style="color:${confCol};font-weight:600">${confPct}%</div>
+        <div class="st-cell">${s.one_liner?(s.one_liner.slice(0,60)+(s.one_liner.length>60?"…":"")):
+          (s.summary?s.summary.slice(0,60)+"…":'<span style="opacity:.4">sin texto</span>')}</div>
+        <div class="st-cell"><span class="st-band ${band}">${qs}</span></div>
+      </div>`;
+  }).join("");
+
+  document.getElementById("sc-detail").innerHTML=`
+    <div class="detail-panel">
+
+      <div class="detail-header">
+        <div class="detail-title">${cl.displayLabel||cl.label||"(sin nombre)"}</div>
+        <div class="detail-sub">${n} startups · cluster ID ${cl.id} · confianza media ${(m.avgConf*100).toFixed(0)}% · ${m.nOutlier} outliers</div>
+      </div>
+
+      <!-- KPIs semánticos -->
+      <div class="q-grid">
+        <div class="q-card">
+          <div class="q-label">Conf. media</div>
+          <div class="q-val" style="color:${qcol(m.avgConf*10)}">${(m.avgConf*100).toFixed(0)}<span style="font-size:.65em;font-weight:400;color:var(--muted)">%</span></div>
+        </div>
+        <div class="q-card">
+          <div class="q-label">Conf. alta ≥70%</div>
+          <div class="q-val">${pct(m.nHigh,n)}<span style="font-size:.65em;font-weight:400;color:var(--muted)">%</span></div>
+          <div class="q-sub">${m.nHigh} de ${n}</div>
+        </div>
+        <div class="q-card">
+          <div class="q-label">Conf. baja &lt;40%</div>
+          <div class="q-val" style="color:${m.nLow/n>.3?"#dc2626":"inherit"}">${pct(m.nLow,n)}<span style="font-size:.65em;font-weight:400;color:var(--muted)">%</span></div>
+          <div class="q-sub">${m.nLow} para revisar</div>
+        </div>
+        <div class="q-card">
+          <div class="q-label">Outliers</div>
+          <div class="q-val" style="color:${m.nOutlier/n>.2?"#dc2626":"inherit"}">${m.nOutlier}</div>
+          <div class="q-sub">${pct(m.nOutlier,n)}% del cluster</div>
+        </div>
+      </div>
+
+      <!-- Cobertura de texto (para TF-IDF) -->
+      <div class="sem-block">
+        <div class="sem-lbl">Cobertura de texto</div>
+        <div class="cov-grid">
+          <div class="cov-card">
+            <div class="cov-lbl">One-liner</div>
+            <div class="cov-bar-track"><div class="cov-bar-fill" style="width:${pct(m.nLiner,n)}%;background:${pct(m.nLiner,n)>=80?"#16a34a":pct(m.nLiner,n)>=50?"#d97706":"#dc2626"}"></div></div>
+            <div class="cov-pct">${pct(m.nLiner,n)}%</div>
+            <div class="cov-sub">${n-m.nLiner} sin dato</div>
+          </div>
+          <div class="cov-card">
+            <div class="cov-lbl">Summary</div>
+            <div class="cov-bar-track"><div class="cov-bar-fill" style="width:${pct(m.nSummary,n)}%;background:#16a34a"></div></div>
+            <div class="cov-pct">${pct(m.nSummary,n)}%</div>
+            <div class="cov-sub">${n-m.nSummary} sin dato</div>
+          </div>
+          <div class="cov-card">
+            <div class="cov-lbl">Etapa</div>
+            <div class="cov-bar-track"><div class="cov-bar-fill" style="width:${pct(m.nFunding,n)}%;background:${pct(m.nFunding,n)>=60?"#16a34a":"#d97706"}"></div></div>
+            <div class="cov-pct">${pct(m.nFunding,n)}%</div>
+            <div class="cov-sub">${n-m.nFunding} sin dato</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Keywords del pipeline -->
+      <div class="sem-block">
+        <div class="sem-lbl">Keywords del pipeline (HDBSCAN)</div>
+        <div class="kw-cloud">${kwChips}</div>
+      </div>
+
+      <!-- TF-IDF sobre texto propio -->
+      <div class="sem-block">
+        <div class="sem-lbl">Vocabulario propio (TF-IDF sobre one-liner + summary)</div>
+        <div class="tok-bars">${tfidfBars}</div>
+      </div>
+
+      <!-- Distribución de confianza -->
+      <div class="sem-block">
+        <div class="sem-lbl">Distribución de confianza de asignación</div>
+        <div class="conf-bands">
+          ${confBands.map(b=>`
+            <div class="conf-band">
+              <div class="conf-val" style="color:${b.col}">${b.n}</div>
+              <div class="conf-lbl">${b.lbl}</div>
+              <div class="conf-bar"><div class="conf-bar-f" style="width:${pct(b.n,n)}%;background:${b.col}"></div></div>
+            </div>`).join("")}
+        </div>
+      </div>
+
+      <!-- Startups ordenadas por confianza asc (las más ambiguas primero) -->
+      <div>
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px">
+          <div style="font-size:.67rem;text-transform:uppercase;letter-spacing:.09em;color:var(--muted);font-weight:700">
+            Startups — ordenadas por confianza ↑ (ambiguas primero)
+          </div>
+          <button id="export-btn" style="all:unset;cursor:pointer;font-size:.68rem;color:var(--accent);border:1px solid var(--accent);border-radius:7px;padding:3px 10px;white-space:nowrap" title="Descargar lista para revisión">
+            ↓ Exportar para revisión
+          </button>
+        </div>
+        <div class="startup-table">
+          <div class="st-head">
+            <span>Nombre</span><span>Conf.</span><span>Descripción</span><span>Calidad</span>
+          </div>
+          ${rows}
+        </div>
+      </div>
+
+    </div>`;
+
+  // Wire export button
+  const exportBtn=document.getElementById("export-btn");
+  if(exportBtn){
+    exportBtn.addEventListener("click",()=>{
+      const lines=[
+        `# Revisión cluster: ${cl.displayLabel||cl.label}  (ID ${cl.id})`,
+        `# ${n} startups · conf. media ${(m.avgConf*100).toFixed(0)}% · generado ${new Date().toLocaleDateString("es-AR")}`,
+        `# Columnas: ID | Nombre | Conf | Outlier | Bio-theme | Descripción`,
+        ""
+      ];
+      sorted.forEach(s=>{
+        const conf=Math.round((s.cluster_confidence||0)*100);
+        const out=s.is_outlier?"OUTLIER":"     ok";
+        const desc=(s.one_liner||s.summary||"").slice(0,80).replace(/\n/g," ");
+        lines.push(`${s.id}\t${s.name}\t${conf}%\t${out}\t${s.bio_theme||""}\t${desc}`);
+      });
+      const blob=new Blob([lines.join("\n")],{type:"text/plain;charset=utf-8"});
+      const url=URL.createObjectURL(blob);
+      const a=document.createElement("a");
+      a.href=url;
+      a.download=`revision-cluster-${(cl.id||"x")}-${Date.now()}.txt`;
+      a.click();
+      URL.revokeObjectURL(url);
+    });
+  }
+}
+
+// Auto-select primer tema
+if(orderedThemes.length) selectTheme(orderedThemes[0]);
+
+})();
+</script>
+</body>
+</html>

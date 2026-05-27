@@ -1,11 +1,11 @@
 window.STARTUP_THEMES_DATA = {
-  "computed_at": "2026-05-18T19:33:41",
+  "computed_at": "2026-05-27T16:36:01",
   "model": "intfloat/multilingual-e5-small",
   "stats": {
     "total_startups": 487,
     "n_clusters": 24,
     "featured_count": 25,
-    "funded_count": 290
+    "funded_count": 316
   },
   "bio_theme_descriptions": {
     "Therapeutics": "Medicina regenerativa, terapia celular, biologics y desarrollo clínico de fármacos para oncología, enfermedades crónicas y neurología.",
@@ -47,7 +47,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 8.5,
       "quality_band": "high",
       "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": 1.5,
       "n_investors_mapped": 0,
       "bio_theme": "Diagnostics & Health Access",
@@ -60,7 +60,26 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -4.311,
-      "sy": -9.689
+      "sy": -9.689,
+      "bio_lens": [
+        "human-health-bio"
+      ],
+      "domain_tags": [
+        "diagnostics-medtech",
+        "human-health"
+      ],
+      "tech_tags": [
+        "diagnostics"
+      ],
+      "scale_tags": [
+        "human-scale"
+      ],
+      "market_label": "advanced infusion systems and hospital medtech",
+      "self_cats": [
+        "MedTech",
+        "Biotech"
+      ],
+      "investor_ids": []
     },
     {
       "id": "biomakers",
@@ -93,10 +112,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 13,
-      "pagerank": 0.0019348111888743416,
+      "community_id": 22,
+      "pagerank": 0.0011879677823287479,
       "valuation_tier": null,
-      "n_investors_mapped": 2,
+      "n_investors_mapped": 3,
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
@@ -107,7 +126,32 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 10.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -4.5,
-      "sy": -9.418
+      "sy": -9.418,
+      "bio_lens": [
+        "human-health-bio"
+      ],
+      "domain_tags": [
+        "diagnostics-medtech",
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "diagnostics",
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "human-scale"
+      ],
+      "market_label": "genomic precision-treatment platform",
+      "self_cats": [
+        "Therapeutics",
+        "Diagnostics"
+      ],
+      "investor_ids": [
+        "endurance_28",
+        "zentynel"
+      ]
     },
     {
       "id": "biosens",
@@ -134,8 +178,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Diagnostics & Health Access",
@@ -148,7 +192,21 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -4.451,
-      "sy": -9.735
+      "sy": -9.735,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "diagnostics"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Diagnostics"
+      ],
+      "investor_ids": []
     },
     {
       "id": "bitgenia",
@@ -180,8 +238,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 7,
-      "pagerank": 0.0014496264722211934,
+      "community_id": 3,
+      "pagerank": 0.000976820009965881,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -194,7 +252,30 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -11.518,
-      "sy": -9.9
+      "sy": -9.9,
+      "bio_lens": [
+        "human-health-bio"
+      ],
+      "domain_tags": [
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "molecular-scale"
+      ],
+      "market_label": "genomics and bioinformatics platform",
+      "self_cats": [
+        "Diagnostics",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "bitmec",
@@ -222,8 +303,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Diagnostics & Health Access",
@@ -236,7 +317,24 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -4.384,
-      "sy": -9.753
+      "sy": -9.753,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "diagnostics",
+        "iot"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Diagnostics",
+        "HealthTech",
+        "Hardware / IoT"
+      ],
+      "investor_ids": []
     },
     {
       "id": "bleps_vision",
@@ -267,8 +365,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 5,
-      "pagerank": 0.0014738864460761513,
+      "community_id": 6,
+      "pagerank": 0.0009706498334123649,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Health Access",
@@ -281,7 +379,30 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -4.403,
-      "sy": -9.615
+      "sy": -9.615,
+      "bio_lens": [
+        "human-health-bio"
+      ],
+      "domain_tags": [
+        "diagnostics-medtech",
+        "human-health"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "diagnostics"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "product-scale"
+      ],
+      "market_label": "portable visual health device",
+      "self_cats": [
+        "Diagnostics",
+        "MedTech"
+      ],
+      "investor_ids": [
+        "The Ganesha Lab"
+      ]
     },
     {
       "id": "brain4care-br",
@@ -307,7 +428,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Diagnostics & Health Access",
@@ -320,7 +441,16 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 15.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -4.483,
-      "sy": -9.41
+      "sy": -9.41,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "MedTech"
+      ],
+      "investor_ids": []
     },
     {
       "id": "carigenetics",
@@ -348,8 +478,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Diagnostics & Health Access",
@@ -362,7 +492,22 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 5.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -4.57,
-      "sy": -9.455
+      "sy": -9.455,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "diagnostics",
+        "synthetic-biology"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Diagnostics"
+      ],
+      "investor_ids": []
     },
     {
       "id": "caspr_biotech",
@@ -394,8 +539,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 6,
-      "pagerank": 0.001571965181686246,
+      "community_id": 8,
+      "pagerank": 0.001037907913294237,
       "valuation_tier": 1.0,
       "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Health Access",
@@ -408,7 +553,33 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -4.403,
-      "sy": -9.522
+      "sy": -9.522,
+      "bio_lens": [
+        "human-health-bio"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "diagnostics-medtech",
+        "human-health"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "diagnostics"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "molecular-scale"
+      ],
+      "market_label": "CRISPR diagnostics company",
+      "self_cats": [
+        "SynBio",
+        "Diagnostics",
+        "MedTech"
+      ],
+      "investor_ids": [
+        "DragonesVP",
+        "GridX"
+      ]
     },
     {
       "id": "caspr_biotech_acq_by_amazon",
@@ -435,10 +606,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 3,
+      "pagerank": 0.0009769926386319246,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "",
       "is_bio_universe": 1,
@@ -449,7 +620,23 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 10.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -4.448,
-      "sy": -9.691
+      "sy": -9.691,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "diagnostics"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Diagnostics"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "celer_biotecnologia",
@@ -476,8 +663,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Diagnostics & Health Access",
@@ -490,7 +677,21 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 5.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -4.608,
-      "sy": -9.729
+      "sy": -9.729,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "diagnostics"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Diagnostics"
+      ],
+      "investor_ids": []
     },
     {
       "id": "chemtest",
@@ -520,8 +721,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "community_id": 10,
+      "pagerank": 0.0011836948842997557,
       "valuation_tier": 2.0,
       "n_investors_mapped": 0,
       "bio_theme": "Diagnostics & Health Access",
@@ -534,7 +735,26 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -4.353,
-      "sy": -9.61
+      "sy": -9.61,
+      "bio_lens": [
+        "human-health-bio"
+      ],
+      "domain_tags": [
+        "diagnostics-medtech",
+        "human-health"
+      ],
+      "tech_tags": [
+        "diagnostics"
+      ],
+      "scale_tags": [
+        "human-scale"
+      ],
+      "market_label": "infectious disease diagnostics",
+      "self_cats": [
+        "Diagnostics",
+        "MedTech"
+      ],
+      "investor_ids": []
     },
     {
       "id": "corsync",
@@ -561,8 +781,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Diagnostics & Health Access",
@@ -575,7 +795,21 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 5.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -4.52,
-      "sy": -9.828
+      "sy": -9.828,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "diagnostics"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Diagnostics"
+      ],
+      "investor_ids": []
     },
     {
       "id": "cutting_edge_superconductors",
@@ -602,8 +836,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Diagnostics & Health Access",
@@ -616,7 +850,19 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -4.653,
-      "sy": -9.818
+      "sy": -9.818,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "diagnostics"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [],
+      "investor_ids": []
     },
     {
       "id": "daeki-cl",
@@ -642,7 +888,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Diagnostics & Health Access",
@@ -655,7 +901,16 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -4.512,
-      "sy": -9.913
+      "sy": -9.913,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Diagnostics"
+      ],
+      "investor_ids": []
     },
     {
       "id": "dart_by_teledx",
@@ -683,8 +938,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Diagnostics & Health Access",
@@ -697,7 +952,22 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -4.576,
-      "sy": -10.02
+      "sy": -10.02,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "diagnostics",
+        "ai-data"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "AI / Data"
+      ],
+      "investor_ids": []
     },
     {
       "id": "detx_mol",
@@ -724,8 +994,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 3,
+      "pagerank": 0.0009690517199939132,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Diagnostics & Health Access",
@@ -738,7 +1008,22 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -4.457,
-      "sy": -9.452
+      "sy": -9.452,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "diagnostics"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Therapeutics",
+        "Diagnostics"
+      ],
+      "investor_ids": []
     },
     {
       "id": "diagnosis_biotech",
@@ -765,8 +1050,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Diagnostics & Health Access",
@@ -779,7 +1064,21 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -4.539,
-      "sy": -9.774
+      "sy": -9.774,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "diagnostics"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Diagnostics"
+      ],
+      "investor_ids": []
     },
     {
       "id": "diagtech",
@@ -806,8 +1105,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Diagnostics & Health Access",
@@ -820,7 +1119,21 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -4.444,
-      "sy": -9.679
+      "sy": -9.679,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "diagnostics"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Diagnostics"
+      ],
+      "investor_ids": []
     },
     {
       "id": "embryoxite",
@@ -851,8 +1164,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 7,
-      "pagerank": 0.0014503394017635306,
+      "community_id": 3,
+      "pagerank": 0.0009773378959640122,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Health Access",
@@ -865,7 +1178,28 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -4.283,
-      "sy": -9.703
+      "sy": -9.703,
+      "bio_lens": [
+        "human-health-bio"
+      ],
+      "domain_tags": [
+        "diagnostics-medtech",
+        "human-health"
+      ],
+      "tech_tags": [
+        "diagnostics"
+      ],
+      "scale_tags": [
+        "human-scale"
+      ],
+      "market_label": "IVF diagnostics",
+      "self_cats": [
+        "Diagnostics",
+        "MedTech"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "enteria",
@@ -895,8 +1229,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 7,
-      "pagerank": 0.0014503394017635306,
+      "community_id": 3,
+      "pagerank": 0.001185985441155166,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Health Access",
@@ -909,7 +1243,27 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -4.254,
-      "sy": -9.655
+      "sy": -9.655,
+      "bio_lens": [
+        "human-health-bio"
+      ],
+      "domain_tags": [
+        "diagnostics-medtech",
+        "human-health"
+      ],
+      "tech_tags": [
+        "diagnostics"
+      ],
+      "scale_tags": [
+        "human-scale"
+      ],
+      "market_label": "microbiota diagnostics",
+      "self_cats": [
+        "Diagnostics"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "eva-mx",
@@ -935,7 +1289,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Diagnostics & Health Access",
@@ -948,7 +1302,14 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 50.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -4.592,
-      "sy": -9.974
+      "sy": -9.974,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [],
+      "investor_ids": []
     },
     {
       "id": "fabns",
@@ -975,8 +1336,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Diagnostics & Health Access",
@@ -989,7 +1350,21 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -4.573,
-      "sy": -9.66
+      "sy": -9.66,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "diagnostics"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Diagnostics"
+      ],
+      "investor_ids": []
     },
     {
       "id": "gen-t-br",
@@ -1015,7 +1390,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Therapeutics",
@@ -1028,7 +1403,16 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 10.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -11.477,
-      "sy": -12.985
+      "sy": -12.985,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Diagnostics"
+      ],
+      "investor_ids": []
     },
     {
       "id": "geneprodx-mx",
@@ -1054,7 +1438,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Diagnostics & Health Access",
@@ -1067,7 +1451,17 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 25.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -4.681,
-      "sy": -9.947
+      "sy": -9.947,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Therapeutics",
+        "Diagnostics"
+      ],
+      "investor_ids": []
     },
     {
       "id": "genomika_diagnosticos",
@@ -1095,10 +1489,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "",
       "is_bio_universe": 1,
@@ -1109,7 +1503,24 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -4.573,
-      "sy": -9.516
+      "sy": -9.516,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "diagnostics",
+        "synthetic-biology"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Diagnostics"
+      ],
+      "investor_ids": [
+        "valor_capital_group"
+      ]
     },
     {
       "id": "gentec",
@@ -1138,8 +1549,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Biomanufacturing & Fermentation Economy",
@@ -1152,7 +1563,24 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -10.618,
-      "sy": -7.204
+      "sy": -7.204,
+      "bio_lens": [
+        "biobased",
+        "bio-enabled-industrial-transition"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "biomanufacturing",
+        "fermentation",
+        "synthetic-biology"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "SynBio",
+        "Biotech"
+      ],
+      "investor_ids": []
     },
     {
       "id": "gisens_biotech",
@@ -1184,8 +1612,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 7,
-      "pagerank": 0.0014503394017635306,
+      "community_id": 3,
+      "pagerank": 0.0009773378959640122,
       "valuation_tier": 1.5,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Health Access",
@@ -1198,7 +1626,28 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -4.259,
-      "sy": -9.671
+      "sy": -9.671,
+      "bio_lens": [
+        "human-health-bio"
+      ],
+      "domain_tags": [
+        "diagnostics-medtech",
+        "human-health"
+      ],
+      "tech_tags": [
+        "diagnostics",
+        "iot"
+      ],
+      "scale_tags": [
+        "human-scale"
+      ],
+      "market_label": "nanotech diagnostics",
+      "self_cats": [
+        "Diagnostics"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "glucogear",
@@ -1226,8 +1675,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Diagnostics & Health Access",
@@ -1240,7 +1689,20 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 5.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -4.653,
-      "sy": -10.001
+      "sy": -10.001,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "diagnostics",
+        "ai-data"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [],
+      "investor_ids": []
     },
     {
       "id": "grupo_diagnostico_aries",
@@ -1267,10 +1729,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 14,
+      "pagerank": 0.0017667187653776387,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "",
       "is_bio_universe": 1,
@@ -1281,7 +1743,23 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -4.618,
-      "sy": -9.697
+      "sy": -9.697,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "diagnostics"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Diagnostics"
+      ],
+      "investor_ids": [
+        "cdpq"
+      ]
     },
     {
       "id": "heritas",
@@ -1309,8 +1787,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Diagnostics & Health Access",
@@ -1323,7 +1801,23 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 10.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -4.517,
-      "sy": -9.411
+      "sy": -9.411,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "diagnostics",
+        "synthetic-biology"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Therapeutics",
+        "Diagnostics"
+      ],
+      "investor_ids": []
     },
     {
       "id": "hilab-br",
@@ -1348,10 +1842,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 20,
-      "pagerank": 0.0017447793027487676,
+      "community_id": 21,
+      "pagerank": 0.002803026728438039,
       "valuation_tier": null,
-      "n_investors_mapped": 1,
+      "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "",
       "is_bio_universe": 1,
@@ -1362,7 +1856,21 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 50.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -4.492,
-      "sy": -9.853
+      "sy": -9.853,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Diagnostics",
+        "AI / Data",
+        "SaaS / Platform"
+      ],
+      "investor_ids": [
+        "eb_capital",
+        "vox_capital"
+      ]
     },
     {
       "id": "hoobox_one",
@@ -1390,8 +1898,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Diagnostics & Health Access",
@@ -1404,7 +1912,23 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -4.647,
-      "sy": -10.044
+      "sy": -10.044,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "diagnostics",
+        "ai-data"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "AI / Data",
+        "HealthTech"
+      ],
+      "investor_ids": []
     },
     {
       "id": "huna",
@@ -1432,8 +1956,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Diagnostics & Health Access",
@@ -1446,7 +1970,22 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 5.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -4.636,
-      "sy": -9.99
+      "sy": -9.99,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "diagnostics",
+        "ai-data"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Diagnostics"
+      ],
+      "investor_ids": []
     },
     {
       "id": "inpulse_medical",
@@ -1473,8 +2012,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Diagnostics & Health Access",
@@ -1487,7 +2026,21 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -4.562,
-      "sy": -9.766
+      "sy": -9.766,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "diagnostics"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "HealthTech"
+      ],
+      "investor_ids": []
     },
     {
       "id": "kura-biotec-mx",
@@ -1512,8 +2065,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 12,
-      "pagerank": 0.002050626076411399,
+      "community_id": 13,
+      "pagerank": 0.0017059885218971632,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Health Access",
@@ -1526,7 +2079,18 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -4.558,
-      "sy": -9.523
+      "sy": -9.523,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Diagnostics"
+      ],
+      "investor_ids": [
+        "dalus_capital"
+      ]
     },
     {
       "id": "levita-magnetics-cl",
@@ -1551,8 +2115,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 27,
-      "pagerank": 0.0026623196237366615,
+      "community_id": 32,
+      "pagerank": 0.0017667187653776387,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Health Access",
@@ -1565,7 +2129,19 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 100.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -4.677,
-      "sy": -9.852
+      "sy": -9.852,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "MedTech",
+        "Hardware / IoT"
+      ],
+      "investor_ids": [
+        "carao_ventures"
+      ]
     },
     {
       "id": "limay",
@@ -1592,8 +2168,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Diagnostics & Health Access",
@@ -1606,7 +2182,21 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -4.553,
-      "sy": -9.78
+      "sy": -9.78,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "diagnostics"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Diagnostics"
+      ],
+      "investor_ids": []
     },
     {
       "id": "limay_biosciences",
@@ -1638,8 +2228,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 13,
-      "pagerank": 0.0015416479869076716,
+      "community_id": 3,
+      "pagerank": 0.0010360033796678269,
       "valuation_tier": 1.0,
       "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Health Access",
@@ -1652,7 +2242,32 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -4.433,
-      "sy": -9.481
+      "sy": -9.481,
+      "bio_lens": [
+        "human-health-bio"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "diagnostics-medtech",
+        "human-health"
+      ],
+      "tech_tags": [
+        "diagnostics"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "molecular-scale",
+        "product-scale"
+      ],
+      "market_label": "portable molecular diagnostics",
+      "self_cats": [
+        "Diagnostics",
+        "MedTech"
+      ],
+      "investor_ids": [
+        "CITES",
+        "SF500"
+      ]
     },
     {
       "id": "linda_lifetech",
@@ -1680,8 +2295,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Diagnostics & Health Access",
@@ -1694,7 +2309,23 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 25.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -4.639,
-      "sy": -10.017
+      "sy": -10.017,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "diagnostics",
+        "ai-data"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "AI / Data",
+        "HealthTech"
+      ],
+      "investor_ids": []
     },
     {
       "id": "mendelics",
@@ -1721,10 +2352,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "",
       "is_bio_universe": 1,
@@ -1735,7 +2366,24 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 25.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -4.532,
-      "sy": -9.446
+      "sy": -9.446,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "diagnostics"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Diagnostics"
+      ],
+      "investor_ids": [
+        "kaszek",
+        "monashees"
+      ]
     },
     {
       "id": "meton",
@@ -1763,8 +2411,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Therapeutics",
@@ -1777,7 +2425,22 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -11.671,
-      "sy": -13.763
+      "sy": -13.763,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "therapeutics",
+        "ai-data"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "AI / Data"
+      ],
+      "investor_ids": []
     },
     {
       "id": "microgenesis",
@@ -1807,8 +2470,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 9.0,
       "quality_band": "high",
-      "community_id": 9,
-      "pagerank": 0.0015240216333823739,
+      "community_id": 10,
+      "pagerank": 0.0012438845177282112,
       "valuation_tier": 2.0,
       "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Health Access",
@@ -1821,7 +2484,28 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -4.293,
-      "sy": -9.688
+      "sy": -9.688,
+      "bio_lens": [
+        "human-health-bio"
+      ],
+      "domain_tags": [
+        "diagnostics-medtech",
+        "human-health"
+      ],
+      "tech_tags": [
+        "diagnostics"
+      ],
+      "scale_tags": [
+        "human-scale"
+      ],
+      "market_label": "fertility diagnostics and reproductive age assessment",
+      "self_cats": [
+        "Diagnostics"
+      ],
+      "investor_ids": [
+        "GridX",
+        "SOSV_IndieBio"
+      ]
     },
     {
       "id": "microscopia",
@@ -1854,7 +2538,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 8.0,
       "quality_band": "medium",
       "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": 1.0,
       "n_investors_mapped": 0,
       "bio_theme": "Diagnostics & Health Access",
@@ -1867,7 +2551,33 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -4.581,
-      "sy": -10.151
+      "sy": -10.151,
+      "bio_lens": [
+        "biocentric",
+        "human-health-bio"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "diagnostics-medtech",
+        "human-health"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "diagnostics"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "human-scale",
+        "industrial-scale",
+        "product-scale"
+      ],
+      "market_label": "ai-enabled automated microscopy devices",
+      "self_cats": [
+        "Diagnostics",
+        "MedTech",
+        "AI / Data"
+      ],
+      "investor_ids": []
     },
     {
       "id": "mirai_3d",
@@ -1894,8 +2604,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Diagnostics & Health Access",
@@ -1908,7 +2618,21 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -4.672,
-      "sy": -9.968
+      "sy": -9.968,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "diagnostics"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "MedTech"
+      ],
+      "investor_ids": []
     },
     {
       "id": "multiplai_health",
@@ -1940,10 +2664,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 13,
-      "pagerank": 0.0015683292410203266,
+      "community_id": 22,
+      "pagerank": 0.0010407172599609675,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 2,
+      "n_investors_mapped": 3,
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "",
       "is_bio_universe": 1,
@@ -1954,7 +2678,35 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 15.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -4.497,
-      "sy": -9.392
+      "sy": -9.392,
+      "bio_lens": [
+        "human-health-bio",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "diagnostics-medtech",
+        "human-health"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "diagnostics"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "industrial-scale",
+        "molecular-scale",
+        "planetary-scale"
+      ],
+      "market_label": "AI transcriptomic screening for cardiovascular disease",
+      "self_cats": [
+        "Diagnostics",
+        "AI / Data",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "SF500",
+        "zentynel"
+      ]
     },
     {
       "id": "mzp",
@@ -1984,8 +2736,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 7,
-      "pagerank": 0.0014496264722211934,
+      "community_id": 9,
+      "pagerank": 0.0009610222975896351,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Health Access",
@@ -1998,7 +2750,29 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -4.292,
-      "sy": -9.66
+      "sy": -9.66,
+      "bio_lens": [
+        "human-health-bio"
+      ],
+      "domain_tags": [
+        "diagnostics-medtech",
+        "human-health"
+      ],
+      "tech_tags": [
+        "diagnostics"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "industrial-scale"
+      ],
+      "market_label": "advanced coagulation diagnostics for critical care",
+      "self_cats": [
+        "Diagnostics",
+        "MedTech"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "mzp-tecnologia-ar",
@@ -2024,7 +2798,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Diagnostics & Health Access",
@@ -2037,7 +2811,16 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -4.365,
-      "sy": -9.686
+      "sy": -9.686,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Diagnostics"
+      ],
+      "investor_ids": []
     },
     {
       "id": "nanojump_bio",
@@ -2067,8 +2850,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 7,
-      "pagerank": 0.0014503394017635306,
+      "community_id": 9,
+      "pagerank": 0.0009630938415821599,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Health Access",
@@ -2081,7 +2864,29 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -4.299,
-      "sy": -9.643
+      "sy": -9.643,
+      "bio_lens": [
+        "human-health-bio"
+      ],
+      "domain_tags": [
+        "diagnostics-medtech",
+        "human-health"
+      ],
+      "tech_tags": [
+        "diagnostics"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "human-scale",
+        "molecular-scale"
+      ],
+      "market_label": "genetic material extraction tools",
+      "self_cats": [
+        "Diagnostics"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "neomed-br",
@@ -2107,7 +2912,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Diagnostics & Health Access",
@@ -2120,7 +2925,14 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -4.593,
-      "sy": -10.14
+      "sy": -10.14,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [],
+      "investor_ids": []
     },
     {
       "id": "neuralmed",
@@ -2148,8 +2960,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Diagnostics & Health Access",
@@ -2162,7 +2974,23 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 10.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -4.652,
-      "sy": -9.993
+      "sy": -9.993,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "diagnostics",
+        "ai-data"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Diagnostics",
+        "AI / Data"
+      ],
+      "investor_ids": []
     },
     {
       "id": "neurognos",
@@ -2189,8 +3017,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Diagnostics & Health Access",
@@ -2203,7 +3031,21 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -4.548,
-      "sy": -9.943
+      "sy": -9.943,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "diagnostics"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Diagnostics"
+      ],
+      "investor_ids": []
     },
     {
       "id": "novagenic_affinity",
@@ -2230,8 +3072,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Diagnostics & Health Access",
@@ -2244,7 +3086,19 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -4.609,
-      "sy": -9.574
+      "sy": -9.574,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "diagnostics"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [],
+      "investor_ids": []
     },
     {
       "id": "olho_do_dono",
@@ -2272,8 +3126,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Farm Intelligence",
@@ -2286,7 +3140,20 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 15.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 5.21,
-      "sy": 5.192
+      "sy": 5.192,
+      "bio_lens": [
+        "biocentric",
+        "bio-enabled-industrial-transition"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "remote-sensing",
+        "ai-data"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [],
+      "investor_ids": []
     },
     {
       "id": "omica",
@@ -2323,7 +3190,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 8.5,
       "quality_band": "high",
       "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": 1.0,
       "n_investors_mapped": 0,
       "bio_theme": "Diagnostics & Health Access",
@@ -2336,7 +3203,35 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -3.087,
-      "sy": -6.411
+      "sy": -6.411,
+      "bio_lens": [
+        "human-health-bio",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "diagnostics-medtech",
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "diagnostics",
+        "remote-sensing",
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "industrial-scale",
+        "molecular-scale",
+        "planetary-scale"
+      ],
+      "market_label": "digital biobank and multiomics infrastructure",
+      "self_cats": [
+        "Therapeutics",
+        "Diagnostics"
+      ],
+      "investor_ids": []
     },
     {
       "id": "oncoliq",
@@ -2366,8 +3261,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 9.0,
       "quality_band": "high",
-      "community_id": 13,
-      "pagerank": 0.001940553688248152,
+      "community_id": 22,
+      "pagerank": 0.0012058313843693823,
       "valuation_tier": 2.0,
       "n_investors_mapped": 3,
       "bio_theme": "Diagnostics & Health Access",
@@ -2380,7 +3275,30 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -4.294,
-      "sy": -9.721
+      "sy": -9.721,
+      "bio_lens": [
+        "human-health-bio"
+      ],
+      "domain_tags": [
+        "diagnostics-medtech",
+        "human-health"
+      ],
+      "tech_tags": [
+        "diagnostics"
+      ],
+      "scale_tags": [
+        "human-scale"
+      ],
+      "market_label": "non-invasive early cancer detection",
+      "self_cats": [
+        "Therapeutics",
+        "Diagnostics"
+      ],
+      "investor_ids": [
+        "AIR Capital",
+        "SF500",
+        "endurance_28"
+      ]
     },
     {
       "id": "pathovet",
@@ -2407,8 +3325,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Diagnostics & Health Access",
@@ -2421,7 +3339,21 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -4.601,
-      "sy": -10.129
+      "sy": -10.129,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "diagnostics"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Diagnostics"
+      ],
+      "investor_ids": []
     },
     {
       "id": "pharmalens-br",
@@ -2450,7 +3382,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Therapeutics",
@@ -2463,7 +3395,20 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -11.49,
-      "sy": -14.068
+      "sy": -14.068,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [
+        "computer vision, machine learning, defect detection, pharmaceutical QC, biotech manufacturing automation"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Therapeutics",
+        "AI / Data",
+        "Biotech"
+      ],
+      "investor_ids": []
     },
     {
       "id": "pickcells",
@@ -2491,8 +3436,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Diagnostics & Health Access",
@@ -2505,7 +3450,22 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -4.604,
-      "sy": -10.12
+      "sy": -10.12,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "diagnostics",
+        "ai-data"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "AI / Data"
+      ],
+      "investor_ids": []
     },
     {
       "id": "pregen",
@@ -2538,8 +3498,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 7,
-      "pagerank": 0.0014496264722211934,
+      "community_id": 9,
+      "pagerank": 0.0009625759555840287,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Health Access",
@@ -2552,7 +3512,34 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -4.486,
-      "sy": -9.381
+      "sy": -9.381,
+      "bio_lens": [
+        "human-health-bio",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "diagnostics-medtech",
+        "human-health"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "diagnostics"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "human-scale",
+        "molecular-scale",
+        "territorial-scale"
+      ],
+      "market_label": "affordable genomic cancer prognosis tests",
+      "self_cats": [
+        "Therapeutics",
+        "Diagnostics"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "prosperia",
@@ -2580,8 +3567,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Diagnostics & Health Access",
@@ -2594,7 +3581,22 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 10.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -4.491,
-      "sy": -9.883
+      "sy": -9.883,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "diagnostics",
+        "ai-data"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "HealthTech"
+      ],
+      "investor_ids": []
     },
     {
       "id": "reddot-bio-br",
@@ -2620,7 +3622,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Farm Intelligence",
@@ -2633,7 +3635,18 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 5.419,
-      "sy": 6.112
+      "sy": 6.112,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Diagnostics",
+        "AgTech",
+        "Biotech"
+      ],
+      "investor_ids": []
     },
     {
       "id": "samay",
@@ -2664,10 +3677,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 13,
-      "pagerank": 0.0015225829287203604,
+      "community_id": 22,
+      "pagerank": 0.001010322954484921,
       "valuation_tier": null,
-      "n_investors_mapped": 1,
+      "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "",
       "is_bio_universe": 1,
@@ -2678,7 +3691,28 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 15.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -4.414,
-      "sy": -9.531
+      "sy": -9.531,
+      "bio_lens": [
+        "human-health-bio"
+      ],
+      "domain_tags": [
+        "diagnostics-medtech",
+        "human-health"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "diagnostics"
+      ],
+      "scale_tags": [],
+      "market_label": "AI respiratory diagnosis and monitoring platform",
+      "self_cats": [
+        "Diagnostics",
+        "MedTech",
+        "AI / Data"
+      ],
+      "investor_ids": [
+        "zentynel"
+      ]
     },
     {
       "id": "selectivity",
@@ -2705,8 +3739,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 3,
+      "pagerank": 0.0011776992651850672,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Diagnostics & Health Access",
@@ -2719,7 +3753,21 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -4.531,
-      "sy": -9.714
+      "sy": -9.714,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "diagnostics"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "MedTech"
+      ],
+      "investor_ids": []
     },
     {
       "id": "siquimia",
@@ -2747,8 +3795,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Biomanufacturing & Fermentation Economy",
@@ -2761,7 +3809,22 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -10.686,
-      "sy": -7.471
+      "sy": -7.471,
+      "bio_lens": [
+        "biobased",
+        "bio-enabled-industrial-transition"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "biomanufacturing",
+        "fermentation"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Diagnostics"
+      ],
+      "investor_ids": []
     },
     {
       "id": "taugc-bioinformatics-br",
@@ -2787,7 +3850,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Therapeutics",
@@ -2800,7 +3863,17 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -11.511,
-      "sy": -9.899
+      "sy": -9.899,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Therapeutics",
+        "Diagnostics"
+      ],
+      "investor_ids": []
     },
     {
       "id": "tell",
@@ -2831,8 +3904,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 13,
-      "pagerank": 0.0015248609083532566,
+      "community_id": 3,
+      "pagerank": 0.0011904823086350807,
       "valuation_tier": 1.0,
       "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Health Access",
@@ -2845,7 +3918,32 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -4.479,
-      "sy": -9.39
+      "sy": -9.39,
+      "bio_lens": [
+        "human-health-bio"
+      ],
+      "domain_tags": [
+        "diagnostics-medtech",
+        "human-health"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "diagnostics"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "molecular-scale",
+        "product-scale"
+      ],
+      "market_label": "speech-based neurodegeneration detection platform",
+      "self_cats": [
+        "Diagnostics",
+        "MedTech"
+      ],
+      "investor_ids": [
+        "SF500",
+        "The Ganesha Lab"
+      ]
     },
     {
       "id": "terragene-ar",
@@ -2871,7 +3969,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Diagnostics & Health Access",
@@ -2884,7 +3982,14 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 15.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -4.551,
-      "sy": -9.833
+      "sy": -9.833,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [],
+      "investor_ids": []
     },
     {
       "id": "thermy",
@@ -2911,8 +4016,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Diagnostics & Health Access",
@@ -2925,7 +4030,19 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -4.615,
-      "sy": -9.991
+      "sy": -9.991,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "diagnostics"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [],
+      "investor_ids": []
     },
     {
       "id": "thyroidprint",
@@ -2952,8 +4069,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Diagnostics & Health Access",
@@ -2966,7 +4083,22 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 50.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -4.613,
-      "sy": -9.63
+      "sy": -9.63,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "diagnostics"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Diagnostics",
+        "MedTech"
+      ],
+      "investor_ids": []
     },
     {
       "id": "tismoo",
@@ -2994,8 +4126,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Diagnostics & Health Access",
@@ -3008,7 +4140,22 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -4.648,
-      "sy": -9.699
+      "sy": -9.699,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "diagnostics",
+        "synthetic-biology"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Diagnostics"
+      ],
+      "investor_ids": []
     },
     {
       "id": "ubique_bio",
@@ -3038,8 +4185,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 7,
-      "pagerank": 0.0014503394017635306,
+      "community_id": 9,
+      "pagerank": 0.0009610222975896351,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Health Access",
@@ -3052,7 +4199,27 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -4.238,
-      "sy": -9.646
+      "sy": -9.646,
+      "bio_lens": [
+        "human-health-bio"
+      ],
+      "domain_tags": [
+        "diagnostics-medtech",
+        "human-health"
+      ],
+      "tech_tags": [
+        "diagnostics"
+      ],
+      "scale_tags": [
+        "human-scale"
+      ],
+      "market_label": "synthetic peptide diagnostics",
+      "self_cats": [
+        "Diagnostics"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "unima-mx",
@@ -3077,8 +4244,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 12,
-      "pagerank": 0.002050626076411399,
+      "community_id": 13,
+      "pagerank": 0.0017059885218971632,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Health Access",
@@ -3091,7 +4258,18 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -4.481,
-      "sy": -9.867
+      "sy": -9.867,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Diagnostics"
+      ],
+      "investor_ids": [
+        "dalus_capital"
+      ]
     },
     {
       "id": "vetpix",
@@ -3119,8 +4297,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Diagnostics & Health Access",
@@ -3133,7 +4311,23 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -4.594,
-      "sy": -10.131
+      "sy": -10.131,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "diagnostics",
+        "ai-data"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Diagnostics",
+        "AI / Data"
+      ],
+      "investor_ids": []
     },
     {
       "id": "zev_biotech",
@@ -3165,8 +4359,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 9.0,
       "quality_band": "high",
-      "community_id": 7,
-      "pagerank": 0.0014503394017635306,
+      "community_id": 3,
+      "pagerank": 0.0009752663519714875,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Health Access",
@@ -3179,7 +4373,29 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -4.234,
-      "sy": -9.64
+      "sy": -9.64,
+      "bio_lens": [
+        "human-health-bio"
+      ],
+      "domain_tags": [
+        "diagnostics-medtech",
+        "human-health"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "diagnostics"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "molecular-scale"
+      ],
+      "market_label": "distributed molecular diagnostics",
+      "self_cats": [
+        "Diagnostics"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "activaq",
@@ -3206,8 +4422,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -3220,7 +4436,20 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -8.484,
-      "sy": 11.584
+      "sy": 11.584,
+      "bio_lens": [
+        "biocentric"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "bioinputs"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Biotech"
+      ],
+      "investor_ids": []
     },
     {
       "id": "ages_bioactive",
@@ -3247,8 +4476,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Therapeutics",
@@ -3261,7 +4490,19 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 5.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -10.663,
-      "sy": -4.226
+      "sy": -4.226,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "therapeutics"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [],
+      "investor_ids": []
     },
     {
       "id": "agrosustain-mx",
@@ -3291,7 +4532,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -3304,7 +4545,19 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -6.776,
-      "sy": 4.737
+      "sy": 4.737,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [
+        "biopesticides, biofungicides, antifungal biotech, crop protection, sustainable agriculture"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Ag Biologicals",
+        "Biotech"
+      ],
+      "investor_ids": []
     },
     {
       "id": "algenis-cl",
@@ -3330,7 +4583,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Therapeutics",
@@ -3343,7 +4596,14 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -10.635,
-      "sy": -4.232
+      "sy": -4.232,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [],
+      "investor_ids": []
     },
     {
       "id": "aquit",
@@ -3376,8 +4636,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 5,
-      "pagerank": 0.0014845803892112083,
+      "community_id": 9,
+      "pagerank": 0.0009784181233843327,
       "valuation_tier": 1.0,
       "n_investors_mapped": 2,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -3390,7 +4650,31 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -8.483,
-      "sy": 11.579
+      "sy": 11.579,
+      "bio_lens": [
+        "biocentric",
+        "human-health-bio",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "human-health"
+      ],
+      "tech_tags": [
+        "ai-data"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "human-scale"
+      ],
+      "market_label": "fish immunity biotech for sustainable aquaculture",
+      "self_cats": [
+        "Biotech"
+      ],
+      "investor_ids": [
+        "GridX",
+        "The Ganesha Lab"
+      ]
     },
     {
       "id": "aravan_labs",
@@ -3418,8 +4702,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Biomanufacturing & Fermentation Economy",
@@ -3432,7 +4716,20 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -9.978,
-      "sy": 1.698
+      "sy": 1.698,
+      "bio_lens": [
+        "biobased",
+        "bio-enabled-industrial-transition"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "biomanufacturing",
+        "fermentation"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [],
+      "investor_ids": []
     },
     {
       "id": "atarraya-mx",
@@ -3458,7 +4755,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": 16,
-      "pagerank": 0.0026623196237366615,
+      "pagerank": 0.0017667187653776387,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -3471,7 +4768,16 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -0.585,
-      "sy": 6.945
+      "sy": 6.945,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [],
+      "investor_ids": [
+        "hatch"
+      ]
     },
     {
       "id": "bialtec",
@@ -3498,8 +4804,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -3512,7 +4818,20 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -8.518,
-      "sy": 11.609
+      "sy": 11.609,
+      "bio_lens": [
+        "biocentric"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "bioinputs"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Biotech"
+      ],
+      "investor_ids": []
     },
     {
       "id": "bio_bureau_biotechnology",
@@ -3540,8 +4859,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Biomanufacturing & Fermentation Economy",
@@ -3554,7 +4873,23 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -9.899,
-      "sy": 1.558
+      "sy": 1.558,
+      "bio_lens": [
+        "biobased",
+        "bio-enabled-industrial-transition"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "biomanufacturing",
+        "fermentation"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Biomanufacturing",
+        "Biotech"
+      ],
+      "investor_ids": []
     },
     {
       "id": "biobreyer",
@@ -3582,8 +4917,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Biomanufacturing & Fermentation Economy",
@@ -3596,7 +4931,23 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -10.044,
-      "sy": 1.71
+      "sy": 1.71,
+      "bio_lens": [
+        "biobased",
+        "bio-enabled-industrial-transition"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "biomanufacturing",
+        "fermentation"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Biomanufacturing",
+        "FoodTech"
+      ],
+      "investor_ids": []
     },
     {
       "id": "biotic",
@@ -3623,8 +4974,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -3637,7 +4988,19 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -2.997,
-      "sy": 14.64
+      "sy": 14.64,
+      "bio_lens": [
+        "biocentric",
+        "planetary-boundary"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "remediation"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [],
+      "investor_ids": []
     },
     {
       "id": "botanical-solution-inc-cl",
@@ -3665,10 +5028,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "community_id": 8,
+      "pagerank": 0.0010489147394034872,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 1,
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "",
       "is_bio_universe": 1,
@@ -3679,7 +5042,18 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -8.601,
-      "sy": 7.984
+      "sy": 7.984,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [
+        "plant tissue culture, Quillaja saponaria, biofungicide, QS-21 adjuvant, biofactory platform"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [],
+      "investor_ids": [
+        "The Ganesha Lab"
+      ]
     },
     {
       "id": "bruna-by-altum-lab-cl",
@@ -3705,7 +5079,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -3718,7 +5092,16 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -0.636,
-      "sy": 6.956
+      "sy": 6.956,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "AI / Data"
+      ],
+      "investor_ids": []
     },
     {
       "id": "cenibiot",
@@ -3746,8 +5129,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Biomanufacturing & Fermentation Economy",
@@ -3760,7 +5143,22 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 15.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -10.0,
-      "sy": 1.72
+      "sy": 1.72,
+      "bio_lens": [
+        "biobased",
+        "bio-enabled-industrial-transition"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "biomanufacturing",
+        "fermentation"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Biomanufacturing"
+      ],
+      "investor_ids": []
     },
     {
       "id": "domolif",
@@ -3785,8 +5183,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -3799,7 +5197,19 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -3.07,
-      "sy": 14.641
+      "sy": 14.641,
+      "bio_lens": [
+        "biocentric",
+        "planetary-boundary"
+      ],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Biotech"
+      ],
+      "investor_ids": []
     },
     {
       "id": "ecosea",
@@ -3824,10 +5234,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "",
       "is_bio_universe": 1,
@@ -3838,7 +5248,20 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 25.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -0.415,
-      "sy": 6.998
+      "sy": 6.998,
+      "bio_lens": [
+        "biobased",
+        "bio-enabled-industrial-transition",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [],
+      "investor_ids": [
+        "idb_lab"
+      ]
     },
     {
       "id": "eternal_mycofood",
@@ -3866,10 +5289,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 5,
+      "pagerank": 0.0017667187653776387,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "",
       "is_bio_universe": 1,
@@ -3880,7 +5303,27 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 50.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -0.558,
-      "sy": 6.969
+      "sy": 6.969,
+      "bio_lens": [
+        "biobased",
+        "bio-enabled-industrial-transition",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "ai-data",
+        "fermentation"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Alt Proteins",
+        "AI / Data",
+        "FoodTech"
+      ],
+      "investor_ids": [
+        "plug_and_play"
+      ]
     },
     {
       "id": "feedvax",
@@ -3912,8 +5355,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 7,
-      "pagerank": 0.0014496264722211934,
+      "community_id": 3,
+      "pagerank": 0.000976820009965881,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -3926,7 +5369,31 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -10.444,
-      "sy": -4.447
+      "sy": -4.447,
+      "bio_lens": [
+        "biocentric",
+        "human-health-bio",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "human-health"
+      ],
+      "tech_tags": [
+        "ai-data"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "human-scale"
+      ],
+      "market_label": "animal health biotech",
+      "self_cats": [
+        "Ag Biologicals",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "food-for-the-future-cl",
@@ -3951,8 +5418,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 28,
-      "pagerank": 0.0026623196237366615,
+      "community_id": 12,
+      "pagerank": 0.0019393314185787954,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -3965,7 +5432,21 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 1.848,
-      "sy": 0.386
+      "sy": 0.386,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [
+        "black soldier fly, protein extraction, oil extraction, biostimulant production, HACCP-certified processing"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Ag Biologicals",
+        "Alt Proteins"
+      ],
+      "investor_ids": [
+        "kayyak_ventures"
+      ]
     },
     {
       "id": "granatum_bioworks",
@@ -3993,8 +5474,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Biomanufacturing & Fermentation Economy",
@@ -4007,7 +5488,20 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -9.816,
-      "sy": 1.497
+      "sy": 1.497,
+      "bio_lens": [
+        "biobased",
+        "bio-enabled-industrial-transition"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "biomanufacturing",
+        "fermentation"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [],
+      "investor_ids": []
     },
     {
       "id": "green_biofactory",
@@ -4035,8 +5529,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Biomanufacturing & Fermentation Economy",
@@ -4049,7 +5543,23 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -9.957,
-      "sy": 1.584
+      "sy": 1.584,
+      "bio_lens": [
+        "biobased",
+        "bio-enabled-industrial-transition"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "biomanufacturing",
+        "fermentation"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Precision Ferm",
+        "Biomanufacturing"
+      ],
+      "investor_ids": []
     },
     {
       "id": "gricha",
@@ -4074,8 +5584,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -4088,7 +5598,21 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -0.568,
-      "sy": 7.024
+      "sy": 7.024,
+      "bio_lens": [
+        "biobased",
+        "bio-enabled-industrial-transition",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Alt Proteins",
+        "FoodTech"
+      ],
+      "investor_ids": []
     },
     {
       "id": "hemoalgae",
@@ -4116,8 +5640,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Biomanufacturing & Fermentation Economy",
@@ -4130,7 +5654,20 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -9.963,
-      "sy": 1.563
+      "sy": 1.563,
+      "bio_lens": [
+        "biobased",
+        "bio-enabled-industrial-transition"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "biomanufacturing",
+        "fermentation"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [],
+      "investor_ids": []
     },
     {
       "id": "ictiobiotic",
@@ -4157,8 +5694,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -4171,7 +5708,18 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -8.59,
-      "sy": 11.669
+      "sy": 11.669,
+      "bio_lens": [
+        "biocentric"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "bioinputs"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [],
+      "investor_ids": []
     },
     {
       "id": "luyef-biotechnologies-cl",
@@ -4196,10 +5744,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "community_id": 19,
+      "pagerank": 0.0010543516440894172,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "",
       "is_bio_universe": 1,
@@ -4210,7 +5758,19 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -0.462,
-      "sy": 6.765
+      "sy": 6.765,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Alt Proteins",
+        "Precision Ferm"
+      ],
+      "investor_ids": [
+        "The Ganesha Lab"
+      ]
     },
     {
       "id": "micro_meat",
@@ -4235,10 +5795,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 22,
+      "pagerank": 0.0011229016962599832,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "",
       "is_bio_universe": 1,
@@ -4249,7 +5809,22 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 10.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -0.643,
-      "sy": 6.877
+      "sy": 6.877,
+      "bio_lens": [
+        "biobased",
+        "bio-enabled-industrial-transition",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "AgTech"
+      ],
+      "investor_ids": [
+        "endurance_28"
+      ]
     },
     {
       "id": "moolec",
@@ -4274,10 +5849,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "",
       "is_bio_universe": 1,
@@ -4288,7 +5863,24 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 100.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -0.543,
-      "sy": 6.917
+      "sy": 6.917,
+      "bio_lens": [
+        "biobased",
+        "bio-enabled-industrial-transition",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Alt Proteins",
+        "AgTech",
+        "FoodTech"
+      ],
+      "investor_ids": [
+        "lightjump_acquisition"
+      ]
     },
     {
       "id": "moondo",
@@ -4313,8 +5905,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -4327,7 +5919,22 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -0.507,
-      "sy": 6.763
+      "sy": 6.763,
+      "bio_lens": [
+        "biobased",
+        "bio-enabled-industrial-transition",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Alt Proteins",
+        "SynBio",
+        "AgTech"
+      ],
+      "investor_ids": []
     },
     {
       "id": "novalact",
@@ -4354,8 +5961,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -4368,7 +5975,18 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -8.591,
-      "sy": 11.665
+      "sy": 11.665,
+      "bio_lens": [
+        "biocentric"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "bioinputs"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [],
+      "investor_ids": []
     },
     {
       "id": "pixed",
@@ -4395,8 +6013,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Diagnostics & Health Access",
@@ -4409,7 +6027,19 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -3.987,
-      "sy": -3.504
+      "sy": -3.504,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "diagnostics"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [],
+      "investor_ids": []
     },
     {
       "id": "pow_foods",
@@ -4434,8 +6064,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -4448,7 +6078,21 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -0.354,
-      "sy": 6.812
+      "sy": 6.812,
+      "bio_lens": [
+        "biobased",
+        "bio-enabled-industrial-transition",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "FoodTech",
+        "Biotech"
+      ],
+      "investor_ids": []
     },
     {
       "id": "progal",
@@ -4473,8 +6117,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -4487,7 +6131,21 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -0.265,
-      "sy": 7.034
+      "sy": 7.034,
+      "bio_lens": [
+        "biobased",
+        "bio-enabled-industrial-transition",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "NatureTech",
+        "FoodTech"
+      ],
+      "investor_ids": []
     },
     {
       "id": "the-live-green-co-cl",
@@ -4512,8 +6170,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 24,
-      "pagerank": 0.0026623196237366615,
+      "community_id": 28,
+      "pagerank": 0.0017667187653776387,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -4526,7 +6184,16 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 25.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -0.65,
-      "sy": 6.945
+      "sy": 6.945,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [],
+      "investor_ids": [
+        "fondo_alerce"
+      ]
     },
     {
       "id": "vaxinz",
@@ -4553,8 +6220,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Therapeutics",
@@ -4567,7 +6234,21 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -10.424,
-      "sy": -4.478
+      "sy": -4.478,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "therapeutics"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Biotech"
+      ],
+      "investor_ids": []
     },
     {
       "id": "veloz_bio",
@@ -4595,8 +6276,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Biomanufacturing & Fermentation Economy",
@@ -4609,7 +6290,25 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -9.953,
-      "sy": 1.737
+      "sy": 1.737,
+      "bio_lens": [
+        "biobased",
+        "bio-enabled-industrial-transition"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "biomanufacturing",
+        "fermentation",
+        "precision-fermentation"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Alt Proteins",
+        "Precision Ferm",
+        "Biomanufacturing"
+      ],
+      "investor_ids": []
     },
     {
       "id": "wayakit",
@@ -4636,8 +6335,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Biomaterials & Circular Economy",
@@ -4650,7 +6349,21 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -4.04,
-      "sy": 6.653
+      "sy": 6.653,
+      "bio_lens": [
+        "biobased",
+        "bio-enabled-industrial-transition"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "biomaterials"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Biotech"
+      ],
+      "investor_ids": []
     },
     {
       "id": "werk-nvac",
@@ -4679,8 +6392,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 7,
-      "pagerank": 0.0014503394017635306,
+      "community_id": 9,
+      "pagerank": 0.0009630938415821599,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -4693,7 +6406,28 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -8.477,
-      "sy": 11.572
+      "sy": 11.572,
+      "bio_lens": [
+        "biocentric",
+        "human-health-bio",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "human-health"
+      ],
+      "tech_tags": [],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "human-scale"
+      ],
+      "market_label": "self-amplifying RNA vaccine for fish",
+      "self_cats": [
+        "Biotech"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "ymmunobio",
@@ -4720,8 +6454,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Therapeutics",
@@ -4734,7 +6468,21 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -10.502,
-      "sy": -4.37
+      "sy": -4.37,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "therapeutics"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Therapeutics"
+      ],
+      "investor_ids": []
     },
     {
       "id": "HIAMET",
@@ -4767,8 +6515,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 7,
-      "pagerank": 0.0014503394017635306,
+      "community_id": 3,
+      "pagerank": 0.0009773378959640122,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Biomaterials & Circular Economy",
@@ -4781,7 +6529,31 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -2.944,
-      "sy": 1.173
+      "sy": 1.173,
+      "bio_lens": [
+        "circular",
+        "human-health-bio",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "climate-resource",
+        "diagnostics-medtech",
+        "human-health"
+      ],
+      "tech_tags": [
+        "ai-data"
+      ],
+      "scale_tags": [
+        "industrial-scale",
+        "planetary-scale"
+      ],
+      "market_label": "biogas biotech and organic-waste-to-energy platform",
+      "self_cats": [
+        "Biotech"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "alkemio",
@@ -4812,8 +6584,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 7,
-      "pagerank": 0.0014496264722211934,
+      "community_id": 9,
+      "pagerank": 0.0009610222975896351,
       "valuation_tier": 2.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomaterials & Circular Economy",
@@ -4826,7 +6598,25 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -3.414,
-      "sy": 1.302
+      "sy": 1.302,
+      "bio_lens": [
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "ai-data"
+      ],
+      "scale_tags": [
+        "planetary-scale",
+        "territorial-scale"
+      ],
+      "market_label": "modular sustainable rare earth refining",
+      "self_cats": [],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "antarka",
@@ -4862,10 +6652,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 13,
-      "pagerank": 0.0015280487218782785,
+      "community_id": 22,
+      "pagerank": 0.001014621538902335,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 2,
+      "n_investors_mapped": 3,
       "bio_theme": "Biomaterials & Circular Economy",
       "bio_theme_secondary": "",
       "is_bio_universe": 1,
@@ -4876,7 +6666,39 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -2.504,
-      "sy": -0.973
+      "sy": -0.973,
+      "bio_lens": [
+        "biobased",
+        "bio-enabled-industrial-transition",
+        "human-health-bio"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biomanufacturing",
+        "biomaterials",
+        "human-health",
+        "industrial-biotech"
+      ],
+      "tech_tags": [
+        "biomanufacturing",
+        "biomaterials",
+        "enzymes"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "industrial-scale",
+        "molecular-scale",
+        "product-scale",
+        "territorial-scale"
+      ],
+      "market_label": "extremophile enzyme skin DNA repair ingredients",
+      "self_cats": [
+        "Biotech"
+      ],
+      "investor_ids": [
+        "GridX",
+        "zentynel"
+      ]
     },
     {
       "id": "arqlite",
@@ -4909,8 +6731,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 3,
-      "pagerank": 0.001503021492135349,
+      "community_id": 4,
+      "pagerank": 0.001000732775532794,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomaterials & Circular Economy",
@@ -4923,7 +6745,38 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -3.259,
-      "sy": 1.343
+      "sy": 1.343,
+      "bio_lens": [
+        "biobased",
+        "bio-enabled-industrial-transition",
+        "circular",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biomanufacturing",
+        "biomaterials",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "biomanufacturing",
+        "biomaterials"
+      ],
+      "scale_tags": [
+        "industrial-scale",
+        "molecular-scale",
+        "planetary-scale",
+        "product-scale"
+      ],
+      "market_label": "circular construction materials from plastic waste",
+      "self_cats": [
+        "Biomanufacturing",
+        "Biomaterials",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "kamay_ventures"
+      ]
     },
     {
       "id": "bioeutectics",
@@ -4960,8 +6813,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 7,
-      "pagerank": 0.0014496264722211934,
+      "community_id": 9,
+      "pagerank": 0.0009625759555840287,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomaterials & Circular Economy",
@@ -4974,7 +6827,37 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -3.13,
-      "sy": 1.304
+      "sy": 1.304,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biomaterials",
+        "human-health",
+        "industrial-biotech",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "biomaterials",
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "industrial-scale",
+        "molecular-scale",
+        "product-scale"
+      ],
+      "market_label": "green chemistry; biomaterials; bioindustry",
+      "self_cats": [
+        "Biomaterials",
+        "AI / Data",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "biometallum",
@@ -5009,8 +6892,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 13,
-      "pagerank": 0.0014899069913632415,
+      "community_id": 3,
+      "pagerank": 0.0010029157310245135,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomaterials & Circular Economy",
@@ -5023,7 +6906,37 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -2.901,
-      "sy": 1.162
+      "sy": 1.162,
+      "bio_lens": [
+        "biobased",
+        "biocentric",
+        "bio-enabled-industrial-transition",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "biomanufacturing",
+        "climate-resource",
+        "industrial-biotech"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "synthetic-biology"
+      ],
+      "scale_tags": [
+        "industrial-scale",
+        "molecular-scale",
+        "planetary-scale",
+        "territorial-scale"
+      ],
+      "market_label": "biomining and direct lithium extraction",
+      "self_cats": [
+        "SynBio",
+        "AI / Data",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "SF500"
+      ]
     },
     {
       "id": "bioplastix",
@@ -5058,8 +6971,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 7,
-      "pagerank": 0.0014496264722211934,
+      "community_id": 19,
+      "pagerank": 0.001060185881816811,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomaterials & Circular Economy",
@@ -5072,7 +6985,42 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -3.348,
-      "sy": 1.301
+      "sy": 1.301,
+      "bio_lens": [
+        "biobased",
+        "bio-enabled-industrial-transition",
+        "circular",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biomanufacturing",
+        "biomaterials",
+        "climate-resource",
+        "industrial-biotech"
+      ],
+      "tech_tags": [
+        "biomaterials",
+        "fermentation",
+        "precision-fermentation",
+        "synthetic-biology"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale",
+        "molecular-scale",
+        "planetary-scale",
+        "product-scale"
+      ],
+      "market_label": "bioplastics production technology company",
+      "self_cats": [
+        "Precision Ferm",
+        "Biomaterials",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "break_pet",
@@ -5107,8 +7055,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 7,
-      "pagerank": 0.0014503394017635306,
+      "community_id": 9,
+      "pagerank": 0.0009630938415821599,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomaterials & Circular Economy",
@@ -5121,7 +7069,38 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -3.391,
-      "sy": 1.275
+      "sy": 1.275,
+      "bio_lens": [
+        "biobased",
+        "bio-enabled-industrial-transition",
+        "circular",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "biomanufacturing",
+        "biomaterials",
+        "climate-resource",
+        "industrial-biotech"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "biomaterials",
+        "enzymes"
+      ],
+      "scale_tags": [
+        "industrial-scale",
+        "molecular-scale",
+        "product-scale"
+      ],
+      "market_label": "enzymatic plastic circularity",
+      "self_cats": [
+        "Biomanufacturing",
+        "Biomaterials",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "calfix",
@@ -5152,8 +7131,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 7,
-      "pagerank": 0.0014496264722211934,
+      "community_id": 9,
+      "pagerank": 0.0009625759555840287,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomaterials & Circular Economy",
@@ -5166,7 +7145,30 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -3.112,
-      "sy": 1.226
+      "sy": 1.226,
+      "bio_lens": [
+        "biobased"
+      ],
+      "domain_tags": [
+        "biomaterials"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "biomaterials"
+      ],
+      "scale_tags": [
+        "industrial-scale",
+        "molecular-scale",
+        "product-scale",
+        "territorial-scale"
+      ],
+      "market_label": "microbial concrete crack repair biotech",
+      "self_cats": [
+        "Biotech"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "cyanomin",
@@ -5199,8 +7201,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 7,
-      "pagerank": 0.0014496264722211934,
+      "community_id": 9,
+      "pagerank": 0.0009625759555840287,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomaterials & Circular Economy",
@@ -5213,7 +7215,30 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -2.965,
-      "sy": 1.185
+      "sy": 1.185,
+      "bio_lens": [
+        "circular",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "remediation"
+      ],
+      "scale_tags": [
+        "industrial-scale",
+        "planetary-scale",
+        "territorial-scale"
+      ],
+      "market_label": "biological desalination and brine mineral recovery",
+      "self_cats": [
+        "Biotech"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "einsted",
@@ -5244,8 +7269,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 7,
-      "pagerank": 0.0014496264722211934,
+      "community_id": 3,
+      "pagerank": 0.000976820009965881,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -5258,7 +7283,25 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -2.429,
-      "sy": 11.097
+      "sy": 11.097,
+      "bio_lens": [
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "climate-resource"
+      ],
+      "tech_tags": [],
+      "scale_tags": [
+        "industrial-scale",
+        "planetary-scale"
+      ],
+      "market_label": "plasma pyrolysis for clean hydrogen and conductive carbon",
+      "self_cats": [
+        "CleanTech"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "fungi_life",
@@ -5295,8 +7338,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 7,
-      "pagerank": 0.0014496264722211934,
+      "community_id": 9,
+      "pagerank": 0.0009610222975896351,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomaterials & Circular Economy",
@@ -5309,7 +7352,38 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -3.302,
-      "sy": 1.283
+      "sy": 1.283,
+      "bio_lens": [
+        "biobased",
+        "biocentric",
+        "bio-enabled-industrial-transition",
+        "circular",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biomanufacturing",
+        "biomaterials",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "biomaterials",
+        "fermentation",
+        "remediation"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "product-scale"
+      ],
+      "market_label": "fungal biosurfactants platform",
+      "self_cats": [
+        "Biomaterials",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "giraffe-bio-ar",
@@ -5334,10 +7408,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "community_id": 19,
+      "pagerank": 0.0022630798787278226,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 1,
       "bio_theme": "Biomaterials & Circular Economy",
       "bio_theme_secondary": "",
       "is_bio_universe": 0,
@@ -5348,7 +7422,16 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -2.941,
-      "sy": 1.195
+      "sy": 1.195,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [],
+      "investor_ids": [
+        "sosv"
+      ]
     },
     {
       "id": "hif-global-cl",
@@ -5375,8 +7458,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 26,
-      "pagerank": 0.0026623196237366615,
+      "community_id": 29,
+      "pagerank": 0.0017667187653776387,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -5389,7 +7472,20 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -2.454,
-      "sy": 11.106
+      "sy": 11.106,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [
+        "renewable electrolysis, CO₂ capture, e-fuel synthesis, green hydrogen"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "CleanTech"
+      ],
+      "investor_ids": [
+        "porsche_ag"
+      ]
     },
     {
       "id": "inmet",
@@ -5421,8 +7517,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 13,
-      "pagerank": 0.0014899069913632415,
+      "community_id": 3,
+      "pagerank": 0.0010029157310245135,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomaterials & Circular Economy",
@@ -5435,7 +7531,37 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -3.175,
-      "sy": 1.237
+      "sy": 1.237,
+      "bio_lens": [
+        "biobased",
+        "bio-enabled-industrial-transition",
+        "circular",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biomaterials",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "biomaterials",
+        "synthetic-biology"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale",
+        "molecular-scale",
+        "planetary-scale",
+        "product-scale"
+      ],
+      "market_label": "PHB biopolymer and compostable biomaterials",
+      "self_cats": [
+        "Biomaterials",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "SF500"
+      ]
     },
     {
       "id": "michroma",
@@ -5471,10 +7597,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 9.0,
       "quality_band": "high",
-      "community_id": 9,
-      "pagerank": 0.0015240216333823739,
+      "community_id": 10,
+      "pagerank": 0.008920041288516232,
       "valuation_tier": 3.0,
-      "n_investors_mapped": 2,
+      "n_investors_mapped": 5,
       "bio_theme": "Biomaterials & Circular Economy",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
@@ -5485,7 +7611,42 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 25.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -2.997,
-      "sy": 1.126
+      "sy": 1.126,
+      "bio_lens": [
+        "biobased",
+        "biocentric",
+        "bio-enabled-industrial-transition"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biomanufacturing",
+        "industrial-biotech"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "biomanufacturing",
+        "fermentation",
+        "precision-fermentation",
+        "synthetic-biology"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale",
+        "molecular-scale",
+        "product-scale"
+      ],
+      "market_label": "food ingredients; bioindustry",
+      "self_cats": [
+        "SynBio",
+        "Precision Ferm",
+        "FoodTech"
+      ],
+      "investor_ids": [
+        "GridX",
+        "SOSV_IndieBio",
+        "cj_cheiljedang",
+        "supply_change_capital"
+      ]
     },
     {
       "id": "monte-caldera-technology",
@@ -5519,8 +7680,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 7,
-      "pagerank": 0.0014496264722211934,
+      "community_id": 9,
+      "pagerank": 0.0009625759555840287,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Biomaterials & Circular Economy",
@@ -5533,7 +7694,30 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -3.42,
-      "sy": 1.317
+      "sy": 1.317,
+      "bio_lens": [
+        "biobased"
+      ],
+      "domain_tags": [
+        "biomaterials",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "biomaterials"
+      ],
+      "scale_tags": [
+        "industrial-scale",
+        "molecular-scale",
+        "product-scale"
+      ],
+      "market_label": "advanced-physics materials discovery platform",
+      "self_cats": [
+        "Biotech"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "nairotech",
@@ -5567,8 +7751,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 2,
-      "pagerank": 0.0016137021140362113,
+      "community_id": 3,
+      "pagerank": 0.0010850390199604243,
       "valuation_tier": 1.5,
       "n_investors_mapped": 1,
       "bio_theme": "Biomaterials & Circular Economy",
@@ -5581,7 +7765,33 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -3.143,
-      "sy": 1.212
+      "sy": 1.212,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biomaterials",
+        "human-health"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "biomaterials"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "industrial-scale",
+        "molecular-scale",
+        "planetary-scale",
+        "product-scale"
+      ],
+      "market_label": "antimicrobial polymer and nanotechnology materials",
+      "self_cats": [],
+      "investor_ids": [
+        "aceleradora_litoral"
+      ]
     },
     {
       "id": "patagon-fiber",
@@ -5614,8 +7824,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 5,
-      "pagerank": 0.0014738864460761513,
+      "community_id": 6,
+      "pagerank": 0.0009759305560124662,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Biomaterials & Circular Economy",
@@ -5628,7 +7838,33 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -3.303,
-      "sy": 1.268
+      "sy": 1.268,
+      "bio_lens": [
+        "biobased",
+        "biocentric",
+        "circular",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biomaterials",
+        "climate-resource",
+        "diagnostics-medtech"
+      ],
+      "tech_tags": [
+        "biomaterials"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "product-scale"
+      ],
+      "market_label": "bacteria-derived sustainable inks and textile biomaterials",
+      "self_cats": [
+        "Biomaterials"
+      ],
+      "investor_ids": [
+        "The Ganesha Lab"
+      ]
     },
     {
       "id": "polymera",
@@ -5665,8 +7901,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 7,
-      "pagerank": 0.0014496264722211934,
+      "community_id": 9,
+      "pagerank": 0.0009625759555840287,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomaterials & Circular Economy",
@@ -5679,7 +7915,39 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -3.307,
-      "sy": 1.298
+      "sy": 1.298,
+      "bio_lens": [
+        "biobased",
+        "biocentric",
+        "bio-enabled-industrial-transition",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biomanufacturing",
+        "biomaterials",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "biomanufacturing",
+        "biomaterials",
+        "fermentation"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale",
+        "molecular-scale",
+        "planetary-scale",
+        "product-scale"
+      ],
+      "market_label": "bio-based biodegradable superabsorbent polymers",
+      "self_cats": [
+        "Biomaterials"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "protiva",
@@ -5710,8 +7978,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 7,
-      "pagerank": 0.0014496264722211934,
+      "community_id": 9,
+      "pagerank": 0.0009625759555840287,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomaterials & Circular Economy",
@@ -5724,7 +7992,29 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -3.276,
-      "sy": 1.226
+      "sy": 1.226,
+      "bio_lens": [
+        "biobased",
+        "circular",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "biomaterials",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "biomaterials"
+      ],
+      "scale_tags": [
+        "product-scale"
+      ],
+      "market_label": "bio-based textile color chemistry",
+      "self_cats": [
+        "Biomaterials"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "radial",
@@ -5756,8 +8046,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 7,
-      "pagerank": 0.0014496264722211934,
+      "community_id": 9,
+      "pagerank": 0.0009625759555840287,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomaterials & Circular Economy",
@@ -5770,7 +8060,31 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -3.323,
-      "sy": 1.301
+      "sy": 1.301,
+      "bio_lens": [
+        "biobased",
+        "circular",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "biomaterials",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "biomaterials"
+      ],
+      "scale_tags": [
+        "planetary-scale",
+        "product-scale"
+      ],
+      "market_label": "fungal biomaterials from residues",
+      "self_cats": [
+        "Biomaterials"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "sistema-bio-mx",
@@ -5797,10 +8111,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "community_id": 1,
+      "pagerank": 0.005014363164439949,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 5,
       "bio_theme": "Biomaterials & Circular Economy",
       "bio_theme_secondary": "",
       "is_bio_universe": 1,
@@ -5811,7 +8125,22 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 50.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -2.469,
-      "sy": 1.053
+      "sy": 1.053,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [
+        "modular biodigesters, biogas generation, bioslurry fertilizer, smallholder agriculture"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [],
+      "investor_ids": [
+        "dila_capital",
+        "electrifi",
+        "endeavor_catalyst",
+        "kawisafi_ventures",
+        "shell_foundation"
+      ]
     },
     {
       "id": "solfium",
@@ -5842,8 +8171,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 3,
-      "pagerank": 0.001645898817058038,
+      "community_id": 7,
+      "pagerank": 0.0011191717232581155,
       "valuation_tier": 1.5,
       "n_investors_mapped": 2,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -5856,7 +8185,26 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 1.508,
-      "sy": 11.06
+      "sy": 11.06,
+      "bio_lens": [
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "ai-data"
+      ],
+      "scale_tags": [
+        "industrial-scale",
+        "planetary-scale"
+      ],
+      "market_label": "distributed solar, storage and e-mobility platform",
+      "self_cats": [],
+      "investor_ids": [
+        "kamay_ventures",
+        "savia_ventures"
+      ]
     },
     {
       "id": "tintte",
@@ -5891,8 +8239,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 13,
-      "pagerank": 0.0014899069913632415,
+      "community_id": 3,
+      "pagerank": 0.0009886716766426612,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomaterials & Circular Economy",
@@ -5905,7 +8253,38 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -3.071,
-      "sy": 1.211
+      "sy": 1.211,
+      "bio_lens": [
+        "biobased",
+        "bio-enabled-industrial-transition",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "biomanufacturing",
+        "biomaterials",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "biomanufacturing",
+        "biomaterials",
+        "fermentation",
+        "precision-fermentation",
+        "synthetic-biology"
+      ],
+      "scale_tags": [
+        "industrial-scale",
+        "molecular-scale",
+        "product-scale"
+      ],
+      "market_label": "microbial biopigments for sustainable textile dyeing",
+      "self_cats": [
+        "Biomanufacturing",
+        "Biomaterials",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "SF500"
+      ]
     },
     {
       "id": "atacama-biomaterials-cl",
@@ -5930,10 +8309,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "community_id": 20,
+      "pagerank": 0.0025786298651432164,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Biomaterials & Circular Economy",
       "bio_theme_secondary": "",
       "is_bio_universe": 1,
@@ -5944,7 +8323,19 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": 0.27,
-      "sy": 2.342
+      "sy": 2.342,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Biomaterials"
+      ],
+      "investor_ids": [
+        "claritas_capital",
+        "front_row_fund"
+      ]
     },
     {
       "id": "bioelements-cl",
@@ -5969,10 +8360,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "community_id": 19,
+      "pagerank": 0.001841023129418685,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 1,
       "bio_theme": "Biomaterials & Circular Economy",
       "bio_theme_secondary": "",
       "is_bio_universe": 0,
@@ -5983,7 +8374,18 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": 0.305,
-      "sy": 2.378
+      "sy": 2.378,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Biomaterials"
+      ],
+      "investor_ids": [
+        "btg_pactual"
+      ]
     },
     {
       "id": "bioplaster_research",
@@ -6014,8 +8416,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 7,
-      "pagerank": 0.0014496264722211934,
+      "community_id": 9,
+      "pagerank": 0.0009625759555840287,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Biomaterials & Circular Economy",
@@ -6028,7 +8430,29 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 0.233,
-      "sy": 2.3
+      "sy": 2.3,
+      "bio_lens": [
+        "biobased",
+        "circular",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "biomaterials",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "biomaterials"
+      ],
+      "scale_tags": [
+        "product-scale"
+      ],
+      "market_label": "sargassum-based biodegradable packaging materials",
+      "self_cats": [
+        "Biomaterials"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "bioplaster_research_inc",
@@ -6059,8 +8483,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 7,
-      "pagerank": 0.0014496264722211934,
+      "community_id": 9,
+      "pagerank": 0.0009625759555840287,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomaterials & Circular Economy",
@@ -6073,7 +8497,32 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 0.29,
-      "sy": 2.363
+      "sy": 2.363,
+      "bio_lens": [
+        "biobased",
+        "biocentric",
+        "circular",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "biomaterials",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "biomaterials"
+      ],
+      "scale_tags": [
+        "product-scale"
+      ],
+      "market_label": "seaweed biomaterials company",
+      "self_cats": [
+        "Biomaterials",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "biorgani",
@@ -6100,8 +8549,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Biomaterials & Circular Economy",
@@ -6114,7 +8563,21 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 0.405,
-      "sy": 2.479
+      "sy": 2.479,
+      "bio_lens": [
+        "biobased",
+        "bio-enabled-industrial-transition"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "biomaterials"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Biomaterials"
+      ],
+      "investor_ids": []
     },
     {
       "id": "biosolvit",
@@ -6141,8 +8604,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -6155,7 +8618,19 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 15.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 0.049,
-      "sy": 11.826
+      "sy": 11.826,
+      "bio_lens": [
+        "biocentric",
+        "planetary-boundary"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "remediation"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [],
+      "investor_ids": []
     },
     {
       "id": "contech_brasil",
@@ -6182,8 +8657,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Biomaterials & Circular Economy",
@@ -6196,7 +8671,19 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 25.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 0.382,
-      "sy": 2.455
+      "sy": 2.455,
+      "bio_lens": [
+        "biobased",
+        "bio-enabled-industrial-transition"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "biomaterials"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [],
+      "investor_ids": []
     },
     {
       "id": "ecoshell-mx",
@@ -6222,7 +8709,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Biomaterials & Circular Economy",
@@ -6235,7 +8722,14 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": 0.218,
-      "sy": 2.288
+      "sy": 2.288,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [],
+      "investor_ids": []
     },
     {
       "id": "ejido-verde-mx",
@@ -6260,8 +8754,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 14,
-      "pagerank": 0.003885706718387187,
+      "community_id": 15,
+      "pagerank": 0.0025786298651432164,
       "valuation_tier": null,
       "n_investors_mapped": 2,
       "bio_theme": "Biomaterials & Circular Economy",
@@ -6274,7 +8768,17 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 0.16,
-      "sy": 2.228
+      "sy": 2.228,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [],
+      "investor_ids": [
+        "gef",
+        "idb_invest"
+      ]
     },
     {
       "id": "epicca",
@@ -6302,8 +8806,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Biomaterials & Circular Economy",
@@ -6316,7 +8820,22 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 0.336,
-      "sy": 2.408
+      "sy": 2.408,
+      "bio_lens": [
+        "biobased",
+        "bio-enabled-industrial-transition"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "biomaterials",
+        "carbon-mrv"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Biomaterials"
+      ],
+      "investor_ids": []
     },
     {
       "id": "growpack",
@@ -6343,8 +8862,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Biomaterials & Circular Economy",
@@ -6357,7 +8876,21 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 5.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 0.399,
-      "sy": 2.473
+      "sy": 2.473,
+      "bio_lens": [
+        "biobased",
+        "bio-enabled-industrial-transition"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "biomaterials"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Biomaterials"
+      ],
+      "investor_ids": []
     },
     {
       "id": "living-ink-us",
@@ -6382,8 +8915,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 3,
-      "pagerank": 0.0015728800212011574,
+      "community_id": 7,
+      "pagerank": 0.0010658441791045498,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Biomaterials & Circular Economy",
@@ -6396,7 +8929,19 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 0.125,
-      "sy": 2.19
+      "sy": 2.19,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "SynBio",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "savia_ventures"
+      ]
     },
     {
       "id": "mothership-materials-cl",
@@ -6421,8 +8966,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 3,
-      "pagerank": 0.0015728800212011574,
+      "community_id": 7,
+      "pagerank": 0.0010658441791045498,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Biomaterials & Circular Economy",
@@ -6435,7 +8980,19 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 0.108,
-      "sy": 2.172
+      "sy": 2.172,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Biomanufacturing",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "savia_ventures"
+      ]
     },
     {
       "id": "mycorium_biotech",
@@ -6466,8 +9023,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 13,
-      "pagerank": 0.0014899069913632415,
+      "community_id": 19,
+      "pagerank": 0.0012915924556897273,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomaterials & Circular Economy",
@@ -6480,7 +9037,29 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 0.233,
-      "sy": 2.307
+      "sy": 2.307,
+      "bio_lens": [
+        "biobased",
+        "circular",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "biomaterials",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "biomaterials"
+      ],
+      "scale_tags": [
+        "product-scale"
+      ],
+      "market_label": "mycelium bio-leather from waste",
+      "self_cats": [
+        "Biomaterials"
+      ],
+      "investor_ids": [
+        "SF500"
+      ]
     },
     {
       "id": "nutrition-from-water-cl",
@@ -6505,8 +9084,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 3,
-      "pagerank": 0.0015728800212011574,
+      "community_id": 7,
+      "pagerank": 0.0010658441791045498,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -6519,7 +9098,16 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 4.687,
-      "sy": 1.593
+      "sy": 1.593,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [],
+      "investor_ids": [
+        "savia_ventures"
+      ]
     },
     {
       "id": "polybion",
@@ -6547,10 +9135,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 11,
+      "pagerank": 0.0013759594125492857,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 1,
       "bio_theme": "Biomaterials & Circular Economy",
       "bio_theme_secondary": "",
       "is_bio_universe": 1,
@@ -6561,7 +9149,24 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 25.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 0.387,
-      "sy": 2.461
+      "sy": 2.461,
+      "bio_lens": [
+        "biobased",
+        "bio-enabled-industrial-transition"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "biomaterials",
+        "carbon-mrv"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Biomaterials"
+      ],
+      "investor_ids": [
+        "blue_horizon"
+      ]
     },
     {
       "id": "smatter",
@@ -6588,8 +9193,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Biomaterials & Circular Economy",
@@ -6602,7 +9207,22 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 0.379,
-      "sy": 2.453
+      "sy": 2.453,
+      "bio_lens": [
+        "biobased",
+        "bio-enabled-industrial-transition"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "biomaterials"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Ag Biologicals",
+        "Biotech"
+      ],
+      "investor_ids": []
     },
     {
       "id": "spora_biotech",
@@ -6629,8 +9249,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Biomaterials & Circular Economy",
@@ -6643,7 +9263,21 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 0.387,
-      "sy": 2.461
+      "sy": 2.461,
+      "bio_lens": [
+        "biobased",
+        "bio-enabled-industrial-transition"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "biomaterials"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Biomaterials"
+      ],
+      "investor_ids": []
     },
     {
       "id": "strong-by-form-cl",
@@ -6668,8 +9302,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 3,
-      "pagerank": 0.0015728800212011574,
+      "community_id": 7,
+      "pagerank": 0.0010658441791045498,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Biomaterials & Circular Economy",
@@ -6682,7 +9316,18 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 25.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 0.063,
-      "sy": 2.126
+      "sy": 2.126,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Biotech"
+      ],
+      "investor_ids": [
+        "savia_ventures"
+      ]
     },
     {
       "id": "branch_energy",
@@ -6715,8 +9360,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 6,
-      "pagerank": 0.0014773509658170655,
+      "community_id": 7,
+      "pagerank": 0.000980078491113103,
       "valuation_tier": 1.5,
       "n_investors_mapped": 1,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -6729,7 +9374,33 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 1.514,
-      "sy": 11.049
+      "sy": 11.049,
+      "bio_lens": [
+        "human-health-bio",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "climate-resource",
+        "diagnostics-medtech",
+        "human-health"
+      ],
+      "tech_tags": [
+        "ai-data"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "industrial-scale",
+        "planetary-scale",
+        "product-scale"
+      ],
+      "market_label": "distributed clean-energy and battery resilience platform",
+      "self_cats": [
+        "Biotech"
+      ],
+      "investor_ids": [
+        "AIR Capital"
+      ]
     },
     {
       "id": "circclo",
@@ -6762,8 +9433,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 8,
-      "pagerank": 0.0015507850634541845,
+      "community_id": 4,
+      "pagerank": 0.0010229400655923891,
       "valuation_tier": 1.5,
       "n_investors_mapped": 1,
       "bio_theme": "Biomaterials & Circular Economy",
@@ -6776,7 +9447,29 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 2.646,
-      "sy": 1.272
+      "sy": 1.272,
+      "bio_lens": [
+        "circular",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "biomaterials",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "biomaterials"
+      ],
+      "scale_tags": [
+        "industrial-scale",
+        "planetary-scale",
+        "product-scale"
+      ],
+      "market_label": "circular economy waste management platform",
+      "self_cats": [],
+      "investor_ids": [
+        "Antom"
+      ]
     },
     {
       "id": "earth-ocean-farms-mx",
@@ -6801,10 +9494,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "community_id": 31,
+      "pagerank": 0.0017667187653776387,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 1,
       "bio_theme": "Nature & Ecosystem Tech",
       "bio_theme_secondary": "",
       "is_bio_universe": 1,
@@ -6815,7 +9508,16 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": 1.45,
-      "sy": 11.044
+      "sy": 11.044,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [],
+      "investor_ids": [
+        "cuna_del_mar"
+      ]
     },
     {
       "id": "gigablue",
@@ -6846,8 +9548,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 6,
-      "pagerank": 0.0014773509658170655,
+      "community_id": 7,
+      "pagerank": 0.000980078491113103,
       "valuation_tier": 1.5,
       "n_investors_mapped": 1,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -6860,7 +9562,30 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 1.505,
-      "sy": 11.018
+      "sy": 11.018,
+      "bio_lens": [
+        "biocentric",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "biodiversity-nature",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "carbon-mrv"
+      ],
+      "scale_tags": [
+        "planetary-scale"
+      ],
+      "market_label": "ocean carbon removal and marine resilience platform",
+      "self_cats": [
+        "CleanTech"
+      ],
+      "investor_ids": [
+        "AIR Capital"
+      ]
     },
     {
       "id": "huiro",
@@ -6889,8 +9614,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 9.0,
       "quality_band": "high",
-      "community_id": 8,
-      "pagerank": 0.0015507850634541845,
+      "community_id": 4,
+      "pagerank": 0.0010229400655923891,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -6903,7 +9628,29 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 1.478,
-      "sy": 11.037
+      "sy": 11.037,
+      "bio_lens": [
+        "biobased",
+        "biocentric",
+        "circular",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biodiversity-nature",
+        "climate-resource"
+      ],
+      "tech_tags": [],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "planetary-scale"
+      ],
+      "market_label": "regenerative seaweed cultivation for marine restoration",
+      "self_cats": [],
+      "investor_ids": [
+        "Antom"
+      ]
     },
     {
       "id": "muta",
@@ -6934,8 +9681,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 3,
-      "pagerank": 0.001503021492135349,
+      "community_id": 4,
+      "pagerank": 0.001000732775532794,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomaterials & Circular Economy",
@@ -6948,7 +9695,28 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 2.572,
-      "sy": 1.237
+      "sy": 1.237,
+      "bio_lens": [
+        "circular",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "ai-data"
+      ],
+      "scale_tags": [
+        "industrial-scale",
+        "planetary-scale"
+      ],
+      "market_label": "B2B circular recycling and traceability platform",
+      "self_cats": [
+        "Biomaterials"
+      ],
+      "investor_ids": [
+        "kamay_ventures"
+      ]
     },
     {
       "id": "poas_bioenergy",
@@ -6981,8 +9749,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 8,
-      "pagerank": 0.0015437942800561814,
+      "community_id": 4,
+      "pagerank": 0.0010399731655874713,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -6995,7 +9763,35 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 1.482,
-      "sy": 11.018
+      "sy": 11.018,
+      "bio_lens": [
+        "biobased",
+        "biocentric",
+        "circular",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biodiversity-nature",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "ai-data"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "planetary-scale",
+        "territorial-scale"
+      ],
+      "market_label": "residue-to-energy and biochar platform",
+      "self_cats": [
+        "AgTech",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "Antom"
+      ]
     },
     {
       "id": "ruuts",
@@ -7026,8 +9822,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 8,
-      "pagerank": 0.0016715140530578546,
+      "community_id": 4,
+      "pagerank": 0.0010786427795607622,
       "valuation_tier": 1.0,
       "n_investors_mapped": 2,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -7040,7 +9836,36 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 1.433,
-      "sy": 11.073
+      "sy": 11.073,
+      "bio_lens": [
+        "biocentric",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biodiversity-nature",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "ai-data"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale",
+        "planetary-scale",
+        "product-scale",
+        "territorial-scale"
+      ],
+      "market_label": "regenerative agriculture incentives and ecological outcome measurement",
+      "self_cats": [
+        "NatureTech",
+        "FoodTech"
+      ],
+      "investor_ids": [
+        "Antom",
+        "glocal"
+      ]
     },
     {
       "id": "splight",
@@ -7072,8 +9897,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 9.0,
       "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.0016260951191827508,
+      "community_id": 7,
+      "pagerank": 0.0011021550604063631,
       "valuation_tier": 3.0,
       "n_investors_mapped": 2,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -7086,7 +9911,32 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 1.491,
-      "sy": 11.044
+      "sy": 11.044,
+      "bio_lens": [
+        "biobased",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "ai-data"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale",
+        "planetary-scale"
+      ],
+      "market_label": "AI grid optimization and renewable integration",
+      "self_cats": [
+        "CleanTech"
+      ],
+      "investor_ids": [
+        "DraperCygnus",
+        "savia_ventures"
+      ]
     },
     {
       "id": "apexzymes",
@@ -7121,8 +9971,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 7,
-      "pagerank": 0.0014496264722211934,
+      "community_id": 9,
+      "pagerank": 0.0009625759555840287,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomanufacturing & Fermentation Economy",
@@ -7135,7 +9985,37 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -8.764,
-      "sy": -2.652
+      "sy": -2.652,
+      "bio_lens": [
+        "biobased",
+        "bio-enabled-industrial-transition",
+        "circular",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biomanufacturing",
+        "climate-resource",
+        "industrial-biotech"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "biomanufacturing",
+        "enzymes"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale",
+        "molecular-scale"
+      ],
+      "market_label": "industrial enzyme company",
+      "self_cats": [
+        "Biomanufacturing",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "by_my_cell",
@@ -7164,8 +10044,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Biomanufacturing & Fermentation Economy",
@@ -7178,7 +10058,25 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -9.915,
-      "sy": -3.822
+      "sy": -3.822,
+      "bio_lens": [
+        "biobased",
+        "bio-enabled-industrial-transition"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "biomanufacturing",
+        "fermentation",
+        "synthetic-biology"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "SynBio",
+        "Diagnostics",
+        "Biotech"
+      ],
+      "investor_ids": []
     },
     {
       "id": "enzyva",
@@ -7214,8 +10112,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 7,
-      "pagerank": 0.0014496264722211934,
+      "community_id": 9,
+      "pagerank": 0.0009625759555840287,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomanufacturing & Fermentation Economy",
@@ -7228,7 +10126,37 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -8.393,
-      "sy": -2.703
+      "sy": -2.703,
+      "bio_lens": [
+        "biobased",
+        "bio-enabled-industrial-transition",
+        "human-health-bio"
+      ],
+      "domain_tags": [
+        "biomanufacturing",
+        "diagnostics-medtech",
+        "human-health",
+        "industrial-biotech"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "biomanufacturing",
+        "diagnostics",
+        "enzymes",
+        "iot"
+      ],
+      "scale_tags": [
+        "industrial-scale",
+        "molecular-scale"
+      ],
+      "market_label": "programmable biology platform",
+      "self_cats": [
+        "Biomanufacturing",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "geoprot",
@@ -7259,8 +10187,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 7,
-      "pagerank": 0.0014503394017635306,
+      "community_id": 3,
+      "pagerank": 0.0009773378959640122,
       "valuation_tier": 1.5,
       "n_investors_mapped": 1,
       "bio_theme": "Biomanufacturing & Fermentation Economy",
@@ -7273,7 +10201,31 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -7.413,
-      "sy": -4.252
+      "sy": -4.252,
+      "bio_lens": [
+        "biobased",
+        "biocentric",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "bioinputs"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale",
+        "territorial-scale"
+      ],
+      "market_label": "protein-function analysis and prediction platform",
+      "self_cats": [
+        "Biotech"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "keclon",
@@ -7310,8 +10262,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 21,
-      "pagerank": 0.0026623196237366615,
+      "community_id": 23,
+      "pagerank": 0.0017667187653776387,
       "valuation_tier": 2.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomanufacturing & Fermentation Economy",
@@ -7324,7 +10276,36 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 25.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -8.376,
-      "sy": -2.69
+      "sy": -2.69,
+      "bio_lens": [
+        "biobased",
+        "bio-enabled-industrial-transition"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biomanufacturing",
+        "industrial-biotech"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "biomanufacturing",
+        "enzymes",
+        "fermentation",
+        "precision-fermentation"
+      ],
+      "scale_tags": [
+        "industrial-scale",
+        "molecular-scale"
+      ],
+      "market_label": "precision fermentation biosolutions platform",
+      "self_cats": [
+        "Alt Proteins",
+        "Precision Ferm",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "axventures_pymar"
+      ]
     },
     {
       "id": "laurus",
@@ -7363,8 +10344,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 6,
-      "pagerank": 0.0014773509658170655,
+      "community_id": 7,
+      "pagerank": 0.000980078491113103,
       "valuation_tier": 1.5,
       "n_investors_mapped": 1,
       "bio_theme": "Biomanufacturing & Fermentation Economy",
@@ -7377,7 +10358,45 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -8.395,
-      "sy": -2.697
+      "sy": -2.697,
+      "bio_lens": [
+        "biobased",
+        "biocentric",
+        "bio-enabled-industrial-transition",
+        "human-health-bio",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biomanufacturing",
+        "human-health",
+        "industrial-biotech",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "biomanufacturing",
+        "fermentation",
+        "precision-fermentation",
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "human-scale",
+        "industrial-scale",
+        "molecular-scale",
+        "territorial-scale"
+      ],
+      "market_label": "precision fermentation and recombinant biomanufacturing",
+      "self_cats": [
+        "Alt Proteins",
+        "Therapeutics",
+        "Precision Ferm"
+      ],
+      "investor_ids": [
+        "AIR Capital"
+      ]
     },
     {
       "id": "mavios",
@@ -7411,8 +10430,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 7,
-      "pagerank": 0.0014496264722211934,
+      "community_id": 9,
+      "pagerank": 0.0009625759555840287,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomanufacturing & Fermentation Economy",
@@ -7425,7 +10444,37 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -8.361,
-      "sy": -2.679
+      "sy": -2.679,
+      "bio_lens": [
+        "biobased",
+        "biocentric",
+        "bio-enabled-industrial-transition",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biomanufacturing",
+        "industrial-biotech"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "biomanufacturing",
+        "fermentation",
+        "precision-fermentation"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale",
+        "territorial-scale"
+      ],
+      "market_label": "digital twin for bioprocesses",
+      "self_cats": [
+        "Precision Ferm",
+        "Biomanufacturing"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "neoprospecta-br",
@@ -7454,7 +10503,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Biomanufacturing & Fermentation Economy",
@@ -7467,7 +10516,18 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 10.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -8.363,
-      "sy": -2.705
+      "sy": -2.705,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [
+        "16S/ITS sequencing, PCR-LAMP, whole genome sequencing, AI bioinformatics, next-generation sequencing"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Diagnostics"
+      ],
+      "investor_ids": []
     },
     {
       "id": "algaebio",
@@ -7501,8 +10561,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 7,
-      "pagerank": 0.0014496264722211934,
+      "community_id": 3,
+      "pagerank": 0.000976820009965881,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -7515,7 +10575,34 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 2.672,
-      "sy": 1.419
+      "sy": 1.419,
+      "bio_lens": [
+        "biobased",
+        "bio-enabled-industrial-transition",
+        "human-health-bio"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biomanufacturing",
+        "biomaterials",
+        "human-health"
+      ],
+      "tech_tags": [
+        "biomanufacturing"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "industrial-scale",
+        "product-scale"
+      ],
+      "market_label": "microalgae antioxidant ingredients company",
+      "self_cats": [
+        "FoodTech",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "bioblends",
@@ -7543,8 +10630,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 7,
-      "pagerank": 0.0014496264722211934,
+      "community_id": 19,
+      "pagerank": 0.0010459418274349585,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -7557,7 +10644,23 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 2.457,
-      "sy": 1.408
+      "sy": 1.408,
+      "bio_lens": [],
+      "domain_tags": [
+        "agri-food"
+      ],
+      "tech_tags": [],
+      "scale_tags": [
+        "product-scale"
+      ],
+      "market_label": "food preservation biotech",
+      "self_cats": [
+        "FoodTech",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "cell_farm",
@@ -7587,8 +10690,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 9.0,
       "quality_band": "high",
-      "community_id": 7,
-      "pagerank": 0.0014496264722211934,
+      "community_id": 3,
+      "pagerank": 0.000976820009965881,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -7601,7 +10704,37 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 2.371,
-      "sy": 1.158
+      "sy": 1.158,
+      "bio_lens": [
+        "biobased",
+        "biocentric",
+        "bio-enabled-industrial-transition",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "industrial-biotech"
+      ],
+      "tech_tags": [
+        "ai-data"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale",
+        "molecular-scale",
+        "planetary-scale",
+        "product-scale",
+        "territorial-scale"
+      ],
+      "market_label": "cultivated meat production infrastructure",
+      "self_cats": [
+        "Alt Proteins",
+        "FoodTech",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "cellva",
@@ -7629,8 +10762,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 6,
-      "pagerank": 0.0014773509658170655,
+      "community_id": 7,
+      "pagerank": 0.000980078491113103,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -7643,7 +10776,27 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 2.635,
-      "sy": 1.409
+      "sy": 1.409,
+      "bio_lens": [
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food"
+      ],
+      "tech_tags": [],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "product-scale",
+        "territorial-scale"
+      ],
+      "market_label": "microencapsulated functional ingredients",
+      "self_cats": [
+        "FoodTech",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "AIR Capital"
+      ]
     },
     {
       "id": "dprotein",
@@ -7675,8 +10828,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 13,
-      "pagerank": 0.001837863103428699,
+      "community_id": 22,
+      "pagerank": 0.0011267220151383451,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -7689,7 +10842,34 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 2.239,
-      "sy": 0.95
+      "sy": 0.95,
+      "bio_lens": [
+        "biobased",
+        "bio-enabled-industrial-transition"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biomanufacturing"
+      ],
+      "tech_tags": [
+        "fermentation",
+        "precision-fermentation"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "molecular-scale",
+        "product-scale",
+        "territorial-scale"
+      ],
+      "market_label": "sustainable engineered proteins",
+      "self_cats": [
+        "Alt Proteins",
+        "SynBio",
+        "Precision Ferm"
+      ],
+      "investor_ids": [
+        "endurance_28"
+      ]
     },
     {
       "id": "ergo_bioscience",
@@ -7723,8 +10903,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 1,
-      "pagerank": 0.0014906735246305665,
+      "community_id": 2,
+      "pagerank": 0.001010411280798055,
       "valuation_tier": 2.0,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -7737,7 +10917,39 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 2.461,
-      "sy": 1.263
+      "sy": 1.263,
+      "bio_lens": [
+        "biobased",
+        "biocentric",
+        "bio-enabled-industrial-transition",
+        "human-health-bio",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biomanufacturing",
+        "human-health"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "biomanufacturing"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "human-scale",
+        "molecular-scale",
+        "product-scale",
+        "territorial-scale"
+      ],
+      "market_label": "plant-cell biotechnology for sustainable ingredients",
+      "self_cats": [
+        "AgTech",
+        "FoodTech",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "CITES"
+      ]
     },
     {
       "id": "ergo_foods",
@@ -7771,8 +10983,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 6,
-      "pagerank": 0.0014773509658170655,
+      "community_id": 7,
+      "pagerank": 0.000980078491113103,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -7785,7 +10997,34 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 2.454,
-      "sy": 1.259
+      "sy": 1.259,
+      "bio_lens": [
+        "biobased",
+        "biocentric",
+        "human-health-bio"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "human-health"
+      ],
+      "tech_tags": [
+        "ai-data"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "human-scale",
+        "molecular-scale",
+        "product-scale"
+      ],
+      "market_label": "plant cell biotechnology ingredients platform",
+      "self_cats": [
+        "Precision Ferm",
+        "FoodTech",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "AIR Capital"
+      ]
     },
     {
       "id": "food4you",
@@ -7818,8 +11057,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 7,
-      "pagerank": 0.0014503394017635306,
+      "community_id": 9,
+      "pagerank": 0.0009630938415821599,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -7832,7 +11071,28 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 2.476,
-      "sy": 1.333
+      "sy": 1.333,
+      "bio_lens": [
+        "biobased"
+      ],
+      "domain_tags": [
+        "agri-food"
+      ],
+      "tech_tags": [
+        "fermentation"
+      ],
+      "scale_tags": [
+        "molecular-scale",
+        "product-scale"
+      ],
+      "market_label": "microbial plant-based food enhancers",
+      "self_cats": [
+        "FoodTech",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "future_biome",
@@ -7866,8 +11126,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 7,
-      "pagerank": 0.0014496264722211934,
+      "community_id": 3,
+      "pagerank": 0.0009752663519714875,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -7880,7 +11140,32 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 3.133,
-      "sy": -1.78
+      "sy": -1.78,
+      "bio_lens": [
+        "biobased",
+        "bio-enabled-industrial-transition",
+        "human-health-bio",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biomanufacturing",
+        "human-health"
+      ],
+      "tech_tags": [
+        "fermentation"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "industrial-scale",
+        "planetary-scale",
+        "product-scale"
+      ],
+      "market_label": "fungi-based precision prebiotics",
+      "self_cats": [],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "glycox",
@@ -7912,8 +11197,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 7,
-      "pagerank": 0.0014496264722211934,
+      "community_id": 9,
+      "pagerank": 0.0009625759555840287,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -7926,7 +11211,28 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 2.586,
-      "sy": 1.346
+      "sy": 1.346,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "human-health"
+      ],
+      "tech_tags": [
+        "ai-data"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "product-scale"
+      ],
+      "market_label": "metabolic health functional ingredient platform",
+      "self_cats": [],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "heartbest",
@@ -7960,7 +11266,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 8.5,
       "quality_band": "high",
       "community_id": 4,
-      "pagerank": 0.0014808293473960858,
+      "pagerank": 0.0009818313338734893,
       "valuation_tier": 1.5,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -7973,7 +11279,35 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 2.831,
-      "sy": -1.814
+      "sy": -1.814,
+      "bio_lens": [
+        "biobased",
+        "bio-enabled-industrial-transition",
+        "human-health-bio",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biomanufacturing",
+        "human-health"
+      ],
+      "tech_tags": [
+        "fermentation"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "human-scale",
+        "industrial-scale",
+        "product-scale",
+        "territorial-scale"
+      ],
+      "market_label": "plant-based dairy foodtech",
+      "self_cats": [
+        "FoodTech"
+      ],
+      "investor_ids": [
+        "the_yield_lab_latam"
+      ]
     },
     {
       "id": "innovai",
@@ -8004,8 +11338,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 5,
-      "pagerank": 0.0014738864460761513,
+      "community_id": 6,
+      "pagerank": 0.0009759305560124662,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -8018,7 +11352,26 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 2.554,
-      "sy": 1.452
+      "sy": 1.452,
+      "bio_lens": [],
+      "domain_tags": [
+        "agri-food"
+      ],
+      "tech_tags": [
+        "ai-data"
+      ],
+      "scale_tags": [
+        "industrial-scale",
+        "product-scale"
+      ],
+      "market_label": "seafood shelf-life bioactive coating platform",
+      "self_cats": [
+        "FoodTech",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "The Ganesha Lab"
+      ]
     },
     {
       "id": "kigui",
@@ -8050,7 +11403,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 9.0,
       "quality_band": "high",
       "community_id": 4,
-      "pagerank": 0.0014808293473960858,
+      "pagerank": 0.0009818313338734893,
       "valuation_tier": 1.5,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -8063,7 +11416,26 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 7.328,
-      "sy": 0.518
+      "sy": 0.518,
+      "bio_lens": [
+        "circular",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "ai-data"
+      ],
+      "scale_tags": [
+        "planetary-scale"
+      ],
+      "market_label": "AI copilot for retail waste and rotation management",
+      "self_cats": [],
+      "investor_ids": [
+        "the_yield_lab_latam"
+      ]
     },
     {
       "id": "kran-nanobubble-cl",
@@ -8089,7 +11461,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -8102,7 +11474,16 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": 2.689,
-      "sy": 1.525
+      "sy": 1.525,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "AgTech"
+      ],
+      "investor_ids": []
     },
     {
       "id": "kresko_rnatech",
@@ -8131,8 +11512,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 7,
-      "pagerank": 0.0014496264722211934,
+      "community_id": 9,
+      "pagerank": 0.0009625759555840287,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -8145,7 +11526,27 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 2.412,
-      "sy": 1.228
+      "sy": 1.228,
+      "bio_lens": [
+        "human-health-bio"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "human-health"
+      ],
+      "tech_tags": [],
+      "scale_tags": [
+        "human-scale",
+        "product-scale"
+      ],
+      "market_label": "fresh-food bioactive RNA ingredients",
+      "self_cats": [
+        "FoodTech",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "levya",
@@ -8181,8 +11582,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 7,
-      "pagerank": 0.0014496264722211934,
+      "community_id": 9,
+      "pagerank": 0.0009625759555840287,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -8195,7 +11596,33 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 2.617,
-      "sy": 1.377
+      "sy": 1.377,
+      "bio_lens": [
+        "biobased",
+        "bio-enabled-industrial-transition"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biomanufacturing",
+        "biomaterials"
+      ],
+      "tech_tags": [
+        "biomaterials",
+        "fermentation",
+        "precision-fermentation"
+      ],
+      "scale_tags": [
+        "product-scale"
+      ],
+      "market_label": "precision-fermented sustainable fats and oils",
+      "self_cats": [
+        "Precision Ferm",
+        "Biomaterials",
+        "FoodTech"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "matchetune",
@@ -8228,8 +11655,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 11,
-      "pagerank": 0.0018554047315203577,
+      "community_id": 12,
+      "pagerank": 0.0012899646878986087,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -8242,7 +11669,29 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 2.7,
-      "sy": 1.527
+      "sy": 1.527,
+      "bio_lens": [
+        "biocentric"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biodiversity-nature"
+      ],
+      "tech_tags": [
+        "ai-data"
+      ],
+      "scale_tags": [
+        "planetary-scale",
+        "product-scale"
+      ],
+      "market_label": "nanoencapsulated functional food ingredients platform",
+      "self_cats": [
+        "FoodTech",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "chileglobal_ventures"
+      ]
     },
     {
       "id": "microterra",
@@ -8271,10 +11720,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 6,
-      "pagerank": 0.0015711300356509369,
+      "community_id": 22,
+      "pagerank": 0.0010431641302321806,
       "valuation_tier": 1.5,
-      "n_investors_mapped": 2,
+      "n_investors_mapped": 3,
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "",
       "is_bio_universe": 1,
@@ -8285,7 +11734,29 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 5.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 2.528,
-      "sy": 1.344
+      "sy": 1.344,
+      "bio_lens": [
+        "circular",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "climate-resource"
+      ],
+      "tech_tags": [],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "product-scale"
+      ],
+      "market_label": "aquatic plant functional ingredients",
+      "self_cats": [
+        "FoodTech",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "DraperCygnus",
+        "zentynel"
+      ]
     },
     {
       "id": "nanofreeze",
@@ -8312,8 +11783,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Biomaterials & Circular Economy",
@@ -8326,7 +11797,19 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -1.81,
-      "sy": 2.06
+      "sy": 2.06,
+      "bio_lens": [
+        "biobased",
+        "bio-enabled-industrial-transition"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "biomaterials"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [],
+      "investor_ids": []
     },
     {
       "id": "nanoingreen",
@@ -8364,8 +11847,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 9.0,
       "quality_band": "high",
-      "community_id": 7,
-      "pagerank": 0.0014496264722211934,
+      "community_id": 19,
+      "pagerank": 0.001060185881816811,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -8378,7 +11861,42 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 2.629,
-      "sy": 1.444
+      "sy": 1.444,
+      "bio_lens": [
+        "biobased",
+        "bio-enabled-industrial-transition",
+        "human-health-bio",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biomanufacturing",
+        "biomaterials",
+        "human-health"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "biomanufacturing",
+        "biomaterials",
+        "fermentation"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "human-scale",
+        "industrial-scale",
+        "molecular-scale",
+        "product-scale",
+        "territorial-scale"
+      ],
+      "market_label": "natural ingredient encapsulation",
+      "self_cats": [
+        "Precision Ferm",
+        "FoodTech",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "nat4bio",
@@ -8414,8 +11932,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 9.0,
       "quality_band": "high",
-      "community_id": 8,
-      "pagerank": 0.0015445444364613203,
+      "community_id": 4,
+      "pagerank": 0.0010179335305680452,
       "valuation_tier": 1.0,
       "n_investors_mapped": 2,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -8428,7 +11946,39 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 2.689,
-      "sy": 1.492
+      "sy": 1.492,
+      "bio_lens": [
+        "biobased",
+        "biocentric",
+        "circular",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biodiversity-nature",
+        "biomaterials",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "biomaterials"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "molecular-scale",
+        "planetary-scale",
+        "product-scale",
+        "territorial-scale"
+      ],
+      "market_label": "edible coatings and post-harvest biopreservation",
+      "self_cats": [
+        "Precision Ferm",
+        "Biomaterials",
+        "FoodTech"
+      ],
+      "investor_ids": [
+        "GridX",
+        "inventure"
+      ]
     },
     {
       "id": "naturannova",
@@ -8459,8 +12009,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 7,
-      "pagerank": 0.0014496264722211934,
+      "community_id": 9,
+      "pagerank": 0.0009625759555840287,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -8473,7 +12023,28 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 2.44,
-      "sy": 1.248
+      "sy": 1.248,
+      "bio_lens": [
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food"
+      ],
+      "tech_tags": [
+        "ai-data"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "product-scale",
+        "territorial-scale"
+      ],
+      "market_label": "ai-enabled sustainable protein ingredient platform",
+      "self_cats": [
+        "FoodTech"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "rnatech-ar",
@@ -8499,7 +12070,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -8512,7 +12083,20 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": 1.975,
-      "sy": 0.548
+      "sy": 0.548,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [
+        "Serkanto-AI, dietary RNA extraction, bioactive ingredients, functional food, AI-guided ingredient discovery"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "AI / Data",
+        "FoodTech",
+        "Biotech"
+      ],
+      "investor_ids": []
     },
     {
       "id": "savefruit-mx",
@@ -8538,7 +12122,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -8551,7 +12135,14 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": 2.645,
-      "sy": 1.538
+      "sy": 1.538,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [],
+      "investor_ids": []
     },
     {
       "id": "tomorrow_foods",
@@ -8584,8 +12175,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 7,
-      "pagerank": 0.0014496264722211934,
+      "community_id": 3,
+      "pagerank": 0.000976820009965881,
       "valuation_tier": 1.5,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -8598,7 +12189,35 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 15.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 2.471,
-      "sy": 1.281
+      "sy": 1.281,
+      "bio_lens": [
+        "biobased",
+        "bio-enabled-industrial-transition",
+        "human-health-bio",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biomanufacturing",
+        "human-health"
+      ],
+      "tech_tags": [
+        "fermentation"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "human-scale",
+        "product-scale",
+        "territorial-scale"
+      ],
+      "market_label": "foodtech ingredients; alternative proteins",
+      "self_cats": [
+        "FoodTech",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "vexxel_biotech",
@@ -8628,8 +12247,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 7,
-      "pagerank": 0.0014503394017635306,
+      "community_id": 9,
+      "pagerank": 0.0009610222975896351,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -8642,7 +12261,32 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -6.87,
-      "sy": 4.72
+      "sy": 4.72,
+      "bio_lens": [
+        "biobased",
+        "biocentric",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biodiversity-nature"
+      ],
+      "tech_tags": [
+        "bioinputs"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "territorial-scale"
+      ],
+      "market_label": "protein-based encapsulation for bioinputs",
+      "self_cats": [
+        "Ag Biologicals",
+        "AgTech"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "ardan",
@@ -8673,8 +12317,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 1,
-      "pagerank": 0.0014941229243335284,
+      "community_id": 2,
+      "pagerank": 0.0009989245304698124,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -8687,7 +12331,31 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -11.008,
-      "sy": -9.734
+      "sy": -9.734,
+      "bio_lens": [
+        "biocentric",
+        "human-health-bio",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "human-scale"
+      ],
+      "market_label": "targeted cancer immunotherapy platform",
+      "self_cats": [
+        "Therapeutics",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "CITES"
+      ]
     },
     {
       "id": "biosidus-ar",
@@ -8712,8 +12380,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 15,
-      "pagerank": 0.001846728227302978,
+      "community_id": 3,
+      "pagerank": 0.0012254446988672536,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -8726,7 +12394,19 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -10.758,
-      "sy": -9.641
+      "sy": -9.641,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Therapeutics",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "grupo_insud"
+      ]
     },
     {
       "id": "biotecnofe",
@@ -8754,8 +12434,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 3,
+      "pagerank": 0.0009690517199939132,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Therapeutics",
@@ -8768,7 +12448,23 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -10.909,
-      "sy": -9.707
+      "sy": -9.707,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "therapeutics",
+        "precision-fermentation"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Precision Ferm",
+        "Biotech"
+      ],
+      "investor_ids": []
     },
     {
       "id": "cellargen_biotech",
@@ -8807,7 +12503,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 8.0,
       "quality_band": "medium",
       "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": 1.0,
       "n_investors_mapped": 0,
       "bio_theme": "Biomanufacturing & Fermentation Economy",
@@ -8820,7 +12516,38 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -9.919,
-      "sy": -3.873
+      "sy": -3.873,
+      "bio_lens": [
+        "biobased",
+        "bio-enabled-industrial-transition",
+        "human-health-bio"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biomanufacturing",
+        "diagnostics-medtech",
+        "human-health",
+        "industrial-biotech",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "biomanufacturing",
+        "diagnostics",
+        "synthetic-biology",
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "industrial-scale",
+        "molecular-scale"
+      ],
+      "market_label": "recombinant biotherapeutics and vaccine biomanufacturing",
+      "self_cats": [
+        "Biomanufacturing",
+        "Biotech"
+      ],
+      "investor_ids": []
     },
     {
       "id": "inmunova-ar",
@@ -8845,8 +12572,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 15,
-      "pagerank": 0.001846728227302978,
+      "community_id": 3,
+      "pagerank": 0.0012396887532491057,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -8859,7 +12586,18 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -10.879,
-      "sy": -9.711
+      "sy": -9.711,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Therapeutics"
+      ],
+      "investor_ids": [
+        "grupo_insud"
+      ]
     },
     {
       "id": "invitrall",
@@ -8890,8 +12628,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 7,
-      "pagerank": 0.0014496264722211934,
+      "community_id": 9,
+      "pagerank": 0.0009625759555840287,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -8904,7 +12642,35 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -10.839,
-      "sy": -9.684
+      "sy": -9.684,
+      "bio_lens": [
+        "biocentric",
+        "human-health-bio",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "industrial-scale",
+        "planetary-scale",
+        "territorial-scale"
+      ],
+      "market_label": "in-vitro human organ models for drug testing",
+      "self_cats": [
+        "Therapeutics",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "isla_pharmaceuticals",
@@ -8931,8 +12697,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Therapeutics",
@@ -8945,7 +12711,21 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -10.761,
-      "sy": -9.586
+      "sy": -9.586,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "therapeutics"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Biotech"
+      ],
+      "investor_ids": []
     },
     {
       "id": "kheiron-biotech-ar",
@@ -8971,7 +12751,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -8984,7 +12764,17 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -8.054,
-      "sy": 7.598
+      "sy": 7.598,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Diagnostics",
+        "Biotech"
+      ],
+      "investor_ids": []
     },
     {
       "id": "mabxience-ar",
@@ -9009,8 +12799,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 15,
-      "pagerank": 0.001846728227302978,
+      "community_id": 3,
+      "pagerank": 0.0012254446988672536,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -9023,7 +12813,19 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -10.738,
-      "sy": -9.62
+      "sy": -9.62,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Therapeutics",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "grupo_insud"
+      ]
     },
     {
       "id": "mesenchyal_t",
@@ -9054,8 +12856,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 13,
-      "pagerank": 0.0014899069913632415,
+      "community_id": 3,
+      "pagerank": 0.0009886716766426612,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -9068,7 +12870,35 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -11.028,
-      "sy": -9.762
+      "sy": -9.762,
+      "bio_lens": [
+        "biocentric",
+        "human-health-bio",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "industrial-scale",
+        "molecular-scale",
+        "product-scale"
+      ],
+      "market_label": "regenerative cell therapy",
+      "self_cats": [
+        "Therapeutics",
+        "AI / Data",
+        "HealthTech"
+      ],
+      "investor_ids": [
+        "SF500"
+      ]
     },
     {
       "id": "momentum-therapeutics",
@@ -9102,10 +12932,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 13,
-      "pagerank": 0.0015225829287203604,
+      "community_id": 22,
+      "pagerank": 0.001010322954484921,
       "valuation_tier": null,
-      "n_investors_mapped": 1,
+      "n_investors_mapped": 2,
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
@@ -9116,7 +12946,33 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -11.122,
-      "sy": -9.788
+      "sy": -9.788,
+      "bio_lens": [
+        "biocentric",
+        "human-health-bio",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biodiversity-nature",
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "human-scale"
+      ],
+      "market_label": "neurodegeneration proteostasis therapeutics platform",
+      "self_cats": [
+        "Therapeutics",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "zentynel"
+      ]
     },
     {
       "id": "neocell",
@@ -9151,8 +13007,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 7,
-      "pagerank": 0.0014496264722211934,
+      "community_id": 9,
+      "pagerank": 0.0009625759555840287,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomanufacturing & Fermentation Economy",
@@ -9165,7 +13021,35 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -9.887,
-      "sy": -3.838
+      "sy": -3.838,
+      "bio_lens": [
+        "biobased",
+        "bio-enabled-industrial-transition",
+        "human-health-bio"
+      ],
+      "domain_tags": [
+        "biomanufacturing",
+        "human-health",
+        "industrial-biotech",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "biomanufacturing",
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "industrial-scale",
+        "molecular-scale"
+      ],
+      "market_label": "biopharma development and biosimilar platform",
+      "self_cats": [
+        "Therapeutics",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "new_organs_biotech",
@@ -9197,8 +13081,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 7,
-      "pagerank": 0.0014496264722211934,
+      "community_id": 3,
+      "pagerank": 0.000976820009965881,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -9211,7 +13095,34 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -10.949,
-      "sy": -9.694
+      "sy": -9.694,
+      "bio_lens": [
+        "biocentric",
+        "human-health-bio",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "industrial-scale",
+        "molecular-scale",
+        "planetary-scale"
+      ],
+      "market_label": "gene-edited regenerative medicine for organ replacement",
+      "self_cats": [
+        "Biotech"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "omics",
@@ -9244,8 +13155,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 4,
-      "pagerank": 0.0015787481970461962,
+      "community_id": 18,
+      "pagerank": 0.0010764240681329293,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -9258,7 +13169,32 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -11.025,
-      "sy": -9.76
+      "sy": -9.76,
+      "bio_lens": [
+        "biocentric",
+        "human-health-bio",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "molecular-scale"
+      ],
+      "market_label": "veterinary stem-cell therapy platform",
+      "self_cats": [
+        "Therapeutics",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "kptl"
+      ]
     },
     {
       "id": "panarum",
@@ -9285,8 +13221,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Therapeutics",
@@ -9299,7 +13235,22 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -10.74,
-      "sy": -9.57
+      "sy": -9.57,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "therapeutics"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Therapeutics",
+        "Biotech"
+      ],
+      "investor_ids": []
     },
     {
       "id": "phagelab",
@@ -9336,10 +13287,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 4,
-      "pagerank": 0.0014808293473960858,
+      "community_id": 19,
+      "pagerank": 0.003500930505021152,
       "valuation_tier": null,
-      "n_investors_mapped": 1,
+      "n_investors_mapped": 4,
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
@@ -9350,7 +13301,41 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 100.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -9.614,
-      "sy": -10.038
+      "sy": -10.038,
+      "bio_lens": [
+        "biobased",
+        "biocentric",
+        "human-health-bio",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "diagnostics-medtech",
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "diagnostics",
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "human-scale",
+        "molecular-scale"
+      ],
+      "market_label": "bacteriophage animal health and One Health platform",
+      "self_cats": [
+        "Diagnostics",
+        "HealthTech",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "collaborative_fund",
+        "nazca",
+        "the_yield_lab_latam",
+        "water_lemon_ventures"
+      ]
     },
     {
       "id": "recepta_biopharma",
@@ -9377,8 +13362,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Therapeutics",
@@ -9391,7 +13376,22 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 15.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -10.724,
-      "sy": -9.578
+      "sy": -9.578,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "therapeutics"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Therapeutics",
+        "Biotech"
+      ],
+      "investor_ids": []
     },
     {
       "id": "sciphage",
@@ -9426,8 +13426,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 5,
-      "pagerank": 0.0020855799934014142,
+      "community_id": 6,
+      "pagerank": 0.0013818861058952552,
       "valuation_tier": null,
       "n_investors_mapped": 2,
       "bio_theme": "Therapeutics",
@@ -9440,7 +13440,36 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -9.191,
-      "sy": -9.961
+      "sy": -9.961,
+      "bio_lens": [
+        "biobased",
+        "biocentric",
+        "human-health-bio",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "diagnostics-medtech",
+        "human-health"
+      ],
+      "tech_tags": [
+        "ai-data"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "human-scale",
+        "industrial-scale",
+        "molecular-scale"
+      ],
+      "market_label": "bacteriophage animal health platform",
+      "self_cats": [
+        "FoodTech",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "The Ganesha Lab",
+        "eatable_adventures"
+      ]
     },
     {
       "id": "xeptiva",
@@ -9473,10 +13502,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 13,
-      "pagerank": 0.0015225829287203604,
+      "community_id": 22,
+      "pagerank": 0.001010322954484921,
       "valuation_tier": null,
-      "n_investors_mapped": 1,
+      "n_investors_mapped": 2,
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "",
       "is_bio_universe": 1,
@@ -9487,7 +13516,31 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -10.951,
-      "sy": -9.727
+      "sy": -9.727,
+      "bio_lens": [
+        "biocentric",
+        "human-health-bio",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "human-scale"
+      ],
+      "market_label": "pet immunotherapy and therapeutic vaccine platform",
+      "self_cats": [
+        "Therapeutics",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "zentynel"
+      ]
     },
     {
       "id": "biofab",
@@ -9515,8 +13568,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Therapeutics",
@@ -9529,7 +13582,23 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -11.882,
-      "sy": -9.531
+      "sy": -9.531,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "therapeutics",
+        "biomaterials"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "MedTech",
+        "Biotech"
+      ],
+      "investor_ids": []
     },
     {
       "id": "biomimetic_solutions",
@@ -9557,8 +13626,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Therapeutics",
@@ -9571,7 +13640,20 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -11.924,
-      "sy": -9.54
+      "sy": -9.54,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "therapeutics",
+        "biomaterials"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [],
+      "investor_ids": []
     },
     {
       "id": "quantis-br",
@@ -9597,7 +13679,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Therapeutics",
@@ -9610,7 +13692,14 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -11.905,
-      "sy": -9.546
+      "sy": -9.546,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [],
+      "investor_ids": []
     },
     {
       "id": "tissuelabs",
@@ -9638,8 +13727,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Therapeutics",
@@ -9652,7 +13741,22 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 5.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -11.928,
-      "sy": -9.525
+      "sy": -9.525,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "therapeutics",
+        "biomaterials"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Biomaterials"
+      ],
+      "investor_ids": []
     },
     {
       "id": "virtech_bio",
@@ -9679,8 +13783,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 3,
+      "pagerank": 0.0009690517199939132,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Therapeutics",
@@ -9693,7 +13797,19 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -11.953,
-      "sy": -9.503
+      "sy": -9.503,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "therapeutics"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [],
+      "investor_ids": []
     },
     {
       "id": "webio-ar",
@@ -9718,8 +13834,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "community_id": 3,
+      "pagerank": 0.0009690517199939132,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Therapeutics",
@@ -9732,7 +13848,14 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -11.917,
-      "sy": -9.509
+      "sy": -9.509,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [],
+      "investor_ids": []
     },
     {
       "id": "caligenia",
@@ -9765,8 +13888,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 7,
-      "pagerank": 0.0014496264722211934,
+      "community_id": 9,
+      "pagerank": 0.0009625759555840287,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -9779,7 +13902,34 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.703,
-      "sy": 4.793
+      "sy": 4.793,
+      "bio_lens": [
+        "biobased",
+        "biocentric",
+        "circular",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biodiversity-nature",
+        "climate-resource"
+      ],
+      "tech_tags": [],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale",
+        "molecular-scale",
+        "planetary-scale",
+        "product-scale"
+      ],
+      "market_label": "BACTERCHAR soil-regeneration and carbon-storage amendment",
+      "self_cats": [
+        "Biotech"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "ecosativa",
@@ -9806,8 +13956,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -9820,7 +13970,20 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.722,
-      "sy": 4.771
+      "sy": 4.771,
+      "bio_lens": [
+        "biocentric"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "bioinputs"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Biotech"
+      ],
+      "investor_ids": []
     },
     {
       "id": "inbioar",
@@ -9850,8 +14013,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 2,
-      "pagerank": 0.0016137021140362113,
+      "community_id": 3,
+      "pagerank": 0.001070794965578572,
       "valuation_tier": 1.5,
       "n_investors_mapped": 1,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -9864,7 +14027,34 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.709,
-      "sy": 4.773
+      "sy": 4.773,
+      "bio_lens": [
+        "biobased",
+        "biocentric",
+        "circular",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "bioinputs"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "product-scale",
+        "territorial-scale"
+      ],
+      "market_label": "botanical crop-protection ingredient discovery platform",
+      "self_cats": [
+        "AgTech",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "aceleradora_litoral"
+      ]
     },
     {
       "id": "infira",
@@ -9897,8 +14087,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 2,
-      "pagerank": 0.0016137021140362113,
+      "community_id": 3,
+      "pagerank": 0.0010850390199604243,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -9911,7 +14101,28 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.746,
-      "sy": 4.776
+      "sy": 4.776,
+      "bio_lens": [
+        "biocentric",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food"
+      ],
+      "tech_tags": [
+        "ai-data"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "molecular-scale"
+      ],
+      "market_label": "perennial crop genetics and plant resilience platform",
+      "self_cats": [
+        "AgTech"
+      ],
+      "investor_ids": [
+        "aceleradora_litoral"
+      ]
     },
     {
       "id": "puna_bio",
@@ -9943,10 +14154,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 9.0,
       "quality_band": "high",
-      "community_id": 8,
-      "pagerank": 0.0017216838567323924,
+      "community_id": 10,
+      "pagerank": 0.0019043760141408091,
       "valuation_tier": 3.0,
-      "n_investors_mapped": 5,
+      "n_investors_mapped": 6,
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
@@ -9957,7 +14168,42 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 15.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.662,
-      "sy": 4.812
+      "sy": 4.812,
+      "bio_lens": [
+        "biobased",
+        "biocentric",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biodiversity-nature"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "bioinputs"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "human-scale",
+        "molecular-scale",
+        "planetary-scale",
+        "territorial-scale"
+      ],
+      "market_label": "ag biologicals; regenerative agriculture",
+      "self_cats": [
+        "Precision Ferm",
+        "AgTech",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "AIR Capital",
+        "GridX",
+        "SOSV_IndieBio",
+        "corteva_catalyst",
+        "glocal",
+        "sp_ventures"
+      ]
     },
     {
       "id": "qumir_nano",
@@ -9991,8 +14237,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 9.0,
       "quality_band": "high",
-      "community_id": 7,
-      "pagerank": 0.0014496264722211934,
+      "community_id": 9,
+      "pagerank": 0.0009625759555840287,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -10005,7 +14251,37 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.668,
-      "sy": 4.802
+      "sy": 4.802,
+      "bio_lens": [
+        "biobased",
+        "biocentric",
+        "human-health-bio",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "human-health"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "bioinputs"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "human-scale",
+        "molecular-scale",
+        "planetary-scale",
+        "product-scale"
+      ],
+      "market_label": "bio-nano agricultural input platform",
+      "self_cats": [
+        "Precision Ferm",
+        "AgTech"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "seedmatriz",
@@ -10034,8 +14310,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 9.0,
       "quality_band": "high",
-      "community_id": 2,
-      "pagerank": 0.0016137021140362113,
+      "community_id": 3,
+      "pagerank": 0.001070794965578572,
       "valuation_tier": 1.5,
       "n_investors_mapped": 1,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -10048,7 +14324,31 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -6.501,
-      "sy": 7.767
+      "sy": 7.767,
+      "bio_lens": [
+        "biocentric",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food"
+      ],
+      "tech_tags": [
+        "ai-data"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "human-scale",
+        "industrial-scale",
+        "territorial-scale"
+      ],
+      "market_label": "seed encapsulation and crop-establishment technology",
+      "self_cats": [
+        "AgTech"
+      ],
+      "investor_ids": [
+        "aceleradora_litoral"
+      ]
     },
     {
       "id": "soygreen",
@@ -10078,8 +14378,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 13,
-      "pagerank": 0.0014899069913632415,
+      "community_id": 3,
+      "pagerank": 0.0009886716766426612,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -10092,7 +14392,32 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -6.733,
-      "sy": 4.771
+      "sy": 4.771,
+      "bio_lens": [
+        "biobased",
+        "biocentric",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "bioinputs"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "molecular-scale",
+        "planetary-scale"
+      ],
+      "market_label": "sustainable ag inputs",
+      "self_cats": [
+        "Ag Biologicals"
+      ],
+      "investor_ids": [
+        "SF500"
+      ]
     },
     {
       "id": "sylvarum",
@@ -10125,8 +14450,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 6,
-      "pagerank": 0.0014880449089521226,
+      "community_id": 3,
+      "pagerank": 0.0010005371774725294,
       "valuation_tier": 1.0,
       "n_investors_mapped": 2,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -10139,7 +14464,36 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.775,
-      "sy": 4.782
+      "sy": 4.782,
+      "bio_lens": [
+        "biocentric",
+        "circular",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "climate-resource",
+        "diagnostics-medtech"
+      ],
+      "tech_tags": [
+        "ai-data"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale",
+        "molecular-scale",
+        "planetary-scale",
+        "territorial-scale"
+      ],
+      "market_label": "non-thermal plasma seed treatment",
+      "self_cats": [
+        "AgTech"
+      ],
+      "investor_ids": [
+        "AIR Capital",
+        "GridX"
+      ]
     },
     {
       "id": "zavia_bio",
@@ -10172,8 +14526,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 9.0,
       "quality_band": "high",
-      "community_id": 7,
-      "pagerank": 0.0014496264722211934,
+      "community_id": 4,
+      "pagerank": 0.0010356109587705583,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -10186,7 +14540,37 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.731,
-      "sy": 4.784
+      "sy": 4.784,
+      "bio_lens": [
+        "biobased",
+        "biocentric",
+        "bio-enabled-industrial-transition",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biomanufacturing"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "fermentation",
+        "synthetic-biology"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale",
+        "molecular-scale",
+        "territorial-scale"
+      ],
+      "market_label": "agricultural biosolutions for resilience",
+      "self_cats": [
+        "SynBio",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "aintech",
@@ -10213,8 +14597,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Biomaterials & Circular Economy",
@@ -10227,7 +14611,19 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 50.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -7.085,
-      "sy": -0.309
+      "sy": -0.309,
+      "bio_lens": [
+        "biobased",
+        "bio-enabled-industrial-transition"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "biomaterials"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [],
+      "investor_ids": []
     },
     {
       "id": "brtc",
@@ -10254,8 +14650,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Biomaterials & Circular Economy",
@@ -10268,7 +14664,19 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -7.114,
-      "sy": -0.283
+      "sy": -0.283,
+      "bio_lens": [
+        "biobased",
+        "bio-enabled-industrial-transition"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "biomaterials"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [],
+      "investor_ids": []
     },
     {
       "id": "copper3d",
@@ -10295,8 +14703,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Biomaterials & Circular Economy",
@@ -10309,7 +14717,19 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 25.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -7.114,
-      "sy": -0.282
+      "sy": -0.282,
+      "bio_lens": [
+        "biobased",
+        "bio-enabled-industrial-transition"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "biomaterials"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [],
+      "investor_ids": []
     },
     {
       "id": "copptech",
@@ -10336,10 +14756,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 17,
+      "pagerank": 0.0025786298651432164,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Biomaterials & Circular Economy",
       "bio_theme_secondary": "",
       "is_bio_universe": 1,
@@ -10350,7 +14770,22 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 25.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -7.137,
-      "sy": -0.26
+      "sy": -0.26,
+      "bio_lens": [
+        "biobased",
+        "bio-enabled-industrial-transition"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "biomaterials"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [],
+      "investor_ids": [
+        "aurus_capital",
+        "idb_lab"
+      ]
     },
     {
       "id": "hybridon",
@@ -10384,8 +14819,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "community_id": 3,
+      "pagerank": 0.0009690517199939132,
       "valuation_tier": 1.0,
       "n_investors_mapped": 0,
       "bio_theme": "Biomaterials & Circular Economy",
@@ -10398,7 +14833,29 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -2.667,
-      "sy": -1.082
+      "sy": -1.082,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [
+        "biomaterials",
+        "human-health"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "biomaterials"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "molecular-scale",
+        "product-scale"
+      ],
+      "market_label": "antimicrobial nanomaterials",
+      "self_cats": [
+        "Biotech"
+      ],
+      "investor_ids": []
     },
     {
       "id": "nanoblast",
@@ -10425,8 +14882,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Therapeutics",
@@ -10439,7 +14896,19 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -12.554,
-      "sy": -9.585
+      "sy": -9.585,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "therapeutics"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [],
+      "investor_ids": []
     },
     {
       "id": "nanopharmacia-group-mx",
@@ -10465,7 +14934,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Therapeutics",
@@ -10478,7 +14947,17 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -12.587,
-      "sy": -9.561
+      "sy": -9.561,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Therapeutics",
+        "Diagnostics"
+      ],
+      "investor_ids": []
     },
     {
       "id": "nanotropic_tecnologia",
@@ -10505,8 +14984,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Biomaterials & Circular Economy",
@@ -10519,7 +14998,19 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -7.145,
-      "sy": -0.253
+      "sy": -0.253,
+      "bio_lens": [
+        "biobased",
+        "bio-enabled-industrial-transition"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "biomaterials"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [],
+      "investor_ids": []
     },
     {
       "id": "nanovetores_group",
@@ -10546,8 +15037,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Therapeutics",
@@ -10560,7 +15051,21 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -12.628,
-      "sy": -9.529
+      "sy": -9.529,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "therapeutics"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Therapeutics"
+      ],
+      "investor_ids": []
     },
     {
       "id": "nchemi-br",
@@ -10586,7 +15091,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Therapeutics",
@@ -10599,7 +15104,16 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -12.606,
-      "sy": -9.56
+      "sy": -9.56,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "MedTech"
+      ],
+      "investor_ids": []
     },
     {
       "id": "photio",
@@ -10626,8 +15140,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -10640,7 +15154,19 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -4.808,
-      "sy": 10.015
+      "sy": 10.015,
+      "bio_lens": [
+        "biocentric",
+        "planetary-boundary"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "remediation"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [],
+      "investor_ids": []
     },
     {
       "id": "arakion",
@@ -10670,8 +15196,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 7,
-      "pagerank": 0.0014503394017635306,
+      "community_id": 3,
+      "pagerank": 0.0009773378959640122,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -10684,7 +15210,30 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -6.793,
-      "sy": 4.725
+      "sy": 4.725,
+      "bio_lens": [
+        "biocentric",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "bioinputs"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "molecular-scale"
+      ],
+      "market_label": "bioinsecticides inspired by arachnid venom",
+      "self_cats": [
+        "Ag Biologicals",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "beam_croptech",
@@ -10715,8 +15264,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 13,
-      "pagerank": 0.0014899069913632415,
+      "community_id": 3,
+      "pagerank": 0.0010029157310245135,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -10729,7 +15278,32 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -6.942,
-      "sy": 4.688
+      "sy": 4.688,
+      "bio_lens": [
+        "biocentric",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "synthetic-biology"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "molecular-scale",
+        "planetary-scale"
+      ],
+      "market_label": "crop trait biotech",
+      "self_cats": [
+        "Ag Biologicals",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "SF500"
+      ]
     },
     {
       "id": "beeflow",
@@ -10759,10 +15333,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 9,
-      "pagerank": 0.0015659184516923234,
+      "community_id": 18,
+      "pagerank": 0.0018614247773547008,
       "valuation_tier": 3.0,
-      "n_investors_mapped": 3,
+      "n_investors_mapped": 4,
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "",
       "is_bio_universe": 1,
@@ -10773,7 +15347,36 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 25.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -5.78,
-      "sy": 7.893
+      "sy": 7.893,
+      "bio_lens": [
+        "biocentric",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "bioinputs"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "human-scale",
+        "planetary-scale",
+        "product-scale"
+      ],
+      "market_label": "agriculture biotech",
+      "self_cats": [
+        "AgTech",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "GridX",
+        "SOSV_IndieBio",
+        "ospraie_ag_science",
+        "the_yield_lab_latam"
+      ]
     },
     {
       "id": "bioceres_sa",
@@ -10800,10 +15403,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 1,
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "",
       "is_bio_universe": 1,
@@ -10814,7 +15417,23 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 500.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.76,
-      "sy": 4.7
+      "sy": 4.7,
+      "bio_lens": [
+        "biocentric"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "bioinputs"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "AgTech",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "union_acquisition_corp"
+      ]
     },
     {
       "id": "bioheuris",
@@ -10844,8 +15463,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 2,
-      "pagerank": 0.0016137021140362113,
+      "community_id": 3,
+      "pagerank": 0.0010850390199604243,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -10858,7 +15477,28 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 15.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -7.006,
-      "sy": 4.633
+      "sy": 4.633,
+      "bio_lens": [
+        "biocentric",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food"
+      ],
+      "tech_tags": [],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "molecular-scale"
+      ],
+      "market_label": "ag biotech; crop traits",
+      "self_cats": [
+        "Ag Biologicals",
+        "AgTech",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "aceleradora_litoral"
+      ]
     },
     {
       "id": "bsafe_biotech",
@@ -10889,8 +15529,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 7,
-      "pagerank": 0.0014496264722211934,
+      "community_id": 9,
+      "pagerank": 0.0009625759555840287,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -10903,7 +15543,29 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.951,
-      "sy": 4.659
+      "sy": 4.659,
+      "bio_lens": [
+        "biocentric",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food"
+      ],
+      "tech_tags": [
+        "bioinputs"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "molecular-scale"
+      ],
+      "market_label": "biological pest control company",
+      "self_cats": [
+        "Ag Biologicals",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "calice_biotech",
@@ -10931,10 +15593,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 4,
+      "pagerank": 0.003492459856620592,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 5,
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "",
       "is_bio_universe": 1,
@@ -10945,7 +15607,25 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -7.04,
-      "sy": 4.539
+      "sy": 4.539,
+      "bio_lens": [
+        "biocentric"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "bioinputs",
+        "synthetic-biology"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [],
+      "investor_ids": [
+        "AIR Capital",
+        "astanor",
+        "draper_cygnus",
+        "glocal",
+        "innventure"
+      ]
     },
     {
       "id": "dioxd",
@@ -10972,8 +15652,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -10986,7 +15666,20 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.979,
-      "sy": 4.697
+      "sy": 4.697,
+      "bio_lens": [
+        "biocentric"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "bioinputs"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "AgTech"
+      ],
+      "investor_ids": []
     },
     {
       "id": "eiru",
@@ -11015,8 +15708,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 9.0,
       "quality_band": "high",
-      "community_id": 8,
-      "pagerank": 0.00172248851533496,
+      "community_id": 4,
+      "pagerank": 0.001160431272753765,
       "valuation_tier": 1.5,
       "n_investors_mapped": 3,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -11029,7 +15722,31 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 10.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -6.995,
-      "sy": 4.723
+      "sy": 4.723,
+      "bio_lens": [
+        "biocentric",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food"
+      ],
+      "tech_tags": [
+        "bioinputs"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "territorial-scale"
+      ],
+      "market_label": "advanced pollination optimization",
+      "self_cats": [
+        "AgTech"
+      ],
+      "investor_ids": [
+        "Antom",
+        "SF500",
+        "glocal"
+      ]
     },
     {
       "id": "hapiseeds-br",
@@ -11055,7 +15772,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -11068,7 +15785,16 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -7.049,
-      "sy": 4.565
+      "sy": 4.565,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Diagnostics"
+      ],
+      "investor_ids": []
     },
     {
       "id": "inedita-bio-br",
@@ -11094,7 +15820,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -11107,7 +15833,16 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 10.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -7.068,
-      "sy": 4.562
+      "sy": 4.562,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "SynBio"
+      ],
+      "investor_ids": []
     },
     {
       "id": "kaiima",
@@ -11134,8 +15869,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -11148,7 +15883,20 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 100.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -7.058,
-      "sy": 4.561
+      "sy": 4.561,
+      "bio_lens": [
+        "biocentric"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "bioinputs"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Diagnostics"
+      ],
+      "investor_ids": []
     },
     {
       "id": "m4life",
@@ -11177,8 +15925,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 13,
-      "pagerank": 0.0014899069913632415,
+      "community_id": 19,
+      "pagerank": 0.0010720375484935911,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -11191,7 +15939,25 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -6.92,
-      "sy": 4.713
+      "sy": 4.713,
+      "bio_lens": [
+        "biocentric",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food"
+      ],
+      "tech_tags": [],
+      "scale_tags": [
+        "agroecosystem-scale"
+      ],
+      "market_label": "abiotic stress plant resilience enhancer",
+      "self_cats": [
+        "Ag Biologicals"
+      ],
+      "investor_ids": [
+        "SF500"
+      ]
     },
     {
       "id": "microendo",
@@ -11218,10 +15984,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 19,
+      "pagerank": 0.0013537235238783854,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 1,
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "",
       "is_bio_universe": 1,
@@ -11232,7 +15998,22 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -7.041,
-      "sy": 4.525
+      "sy": 4.525,
+      "bio_lens": [
+        "biocentric"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "bioinputs"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Ag Biologicals"
+      ],
+      "investor_ids": [
+        "sosv"
+      ]
     },
     {
       "id": "microin",
@@ -11262,8 +16043,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 7,
-      "pagerank": 0.0014503394017635306,
+      "community_id": 9,
+      "pagerank": 0.0009630938415821599,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -11276,7 +16057,30 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -6.851,
-      "sy": 4.745
+      "sy": 4.745,
+      "bio_lens": [
+        "biobased",
+        "biocentric",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food"
+      ],
+      "tech_tags": [
+        "bioinputs"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "molecular-scale"
+      ],
+      "market_label": "bioinput microencapsulation",
+      "self_cats": [
+        "Ag Biologicals",
+        "AgTech"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "neocrop-technologies",
@@ -11309,10 +16113,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 13,
-      "pagerank": 0.0015225829287203604,
+      "community_id": 22,
+      "pagerank": 0.001010322954484921,
       "valuation_tier": null,
-      "n_investors_mapped": 1,
+      "n_investors_mapped": 2,
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
@@ -11323,7 +16127,33 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -6.71,
-      "sy": 4.782
+      "sy": 4.782,
+      "bio_lens": [
+        "biocentric",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "ai-data"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "molecular-scale",
+        "planetary-scale"
+      ],
+      "market_label": "precision gene editing crop platform",
+      "self_cats": [
+        "Ag Biologicals",
+        "AgTech",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "zentynel"
+      ]
     },
     {
       "id": "semion",
@@ -11350,8 +16180,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 7,
-      "pagerank": 0.0014496264722211934,
+      "community_id": 9,
+      "pagerank": 0.0009610222975896351,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -11364,7 +16194,29 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -6.953,
-      "sy": 4.693
+      "sy": 4.693,
+      "bio_lens": [
+        "biocentric",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food"
+      ],
+      "tech_tags": [],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "molecular-scale",
+        "territorial-scale"
+      ],
+      "market_label": "plant defense activation biotech",
+      "self_cats": [
+        "Ag Biologicals",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "solena-mx",
@@ -11390,7 +16242,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -11403,7 +16255,18 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -7.067,
-      "sy": 4.548
+      "sy": 4.548,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Diagnostics",
+        "Precision Ag",
+        "AI / Data"
+      ],
+      "investor_ids": []
     },
     {
       "id": "syocin-biotech",
@@ -11439,8 +16302,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 7,
-      "pagerank": 0.0014496264722211934,
+      "community_id": 9,
+      "pagerank": 0.0009625759555840287,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -11453,7 +16316,39 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.837,
-      "sy": 4.731
+      "sy": 4.731,
+      "bio_lens": [
+        "biobased",
+        "biocentric",
+        "bio-enabled-industrial-transition",
+        "human-health-bio",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "human-health",
+        "industrial-biotech"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "bioinputs",
+        "fermentation",
+        "synthetic-biology"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "human-scale",
+        "molecular-scale"
+      ],
+      "market_label": "precision protein biobactericides for crop protection",
+      "self_cats": [
+        "SynBio",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "unibaio",
@@ -11483,8 +16378,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 9.0,
       "quality_band": "high",
-      "community_id": 8,
-      "pagerank": 0.0016282160249702837,
+      "community_id": 3,
+      "pagerank": 0.0010598714194269819,
       "valuation_tier": 1.5,
       "n_investors_mapped": 3,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -11497,7 +16392,34 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.992,
-      "sy": 4.739
+      "sy": 4.739,
+      "bio_lens": [
+        "biocentric",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biomaterials"
+      ],
+      "tech_tags": [
+        "biomaterials"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "product-scale",
+        "territorial-scale"
+      ],
+      "market_label": "natural microparticles for agro-input performance",
+      "self_cats": [
+        "Ag Biologicals",
+        "AgTech"
+      ],
+      "investor_ids": [
+        "SF500",
+        "The Ganesha Lab",
+        "inventure"
+      ]
     },
     {
       "id": "advanced_biocontrollers",
@@ -11524,8 +16446,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -11538,7 +16460,20 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.983,
-      "sy": 4.465
+      "sy": 4.465,
+      "bio_lens": [
+        "biocentric"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "bioinputs"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Ag Biologicals"
+      ],
+      "investor_ids": []
     },
     {
       "id": "agrorganica",
@@ -11565,8 +16500,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -11579,7 +16514,18 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 25.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.943,
-      "sy": 4.462
+      "sy": 4.462,
+      "bio_lens": [
+        "biocentric"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "bioinputs"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [],
+      "investor_ids": []
     },
     {
       "id": "bio-insumos-nativa-cl",
@@ -11604,10 +16550,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "community_id": 35,
+      "pagerank": 0.0017667187653776387,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 1,
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "",
       "is_bio_universe": 1,
@@ -11618,7 +16564,18 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -6.935,
-      "sy": 4.463
+      "sy": 4.463,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Ag Biologicals"
+      ],
+      "investor_ids": [
+        "sumitomo_corp"
+      ]
     },
     {
       "id": "clearleaf",
@@ -11645,8 +16602,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -11659,7 +16616,18 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 15.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.962,
-      "sy": 4.435
+      "sy": 4.435,
+      "bio_lens": [
+        "biocentric"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "bioinputs"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [],
+      "investor_ids": []
     },
     {
       "id": "exacta-bioscience-cl",
@@ -11685,7 +16653,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -11698,7 +16666,14 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -6.958,
-      "sy": 4.44
+      "sy": 4.44,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [],
+      "investor_ids": []
     },
     {
       "id": "metabix_bio",
@@ -11723,10 +16698,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 6,
+      "pagerank": 0.0009746103753624409,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 1,
       "bio_theme": "Nature & Ecosystem Tech",
       "bio_theme_secondary": "",
       "is_bio_universe": 1,
@@ -11737,7 +16712,19 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -0.931,
-      "sy": 5.389
+      "sy": 5.389,
+      "bio_lens": [
+        "biocentric",
+        "planetary-boundary"
+      ],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [],
+      "investor_ids": [
+        "The Ganesha Lab"
+      ]
     },
     {
       "id": "nanotica",
@@ -11769,7 +16756,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 8.5,
       "quality_band": "high",
       "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": 1.5,
       "n_investors_mapped": 0,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -11782,7 +16769,29 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.785,
-      "sy": 7.735
+      "sy": 7.735,
+      "bio_lens": [
+        "biobased",
+        "biocentric",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food"
+      ],
+      "tech_tags": [
+        "bioinputs",
+        "remediation"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale",
+        "molecular-scale",
+        "planetary-scale",
+        "territorial-scale"
+      ],
+      "market_label": "ag-input nanoencapsulation technology",
+      "self_cats": [],
+      "investor_ids": []
     },
     {
       "id": "patagonia-biotechnology-cl",
@@ -11808,7 +16817,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -11821,7 +16830,16 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -6.924,
-      "sy": 4.468
+      "sy": 4.468,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Ag Biologicals"
+      ],
+      "investor_ids": []
     },
     {
       "id": "rizoflora_biotechnology_acq_by_stoller",
@@ -11848,8 +16866,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -11862,7 +16880,20 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 5.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.968,
-      "sy": 4.454
+      "sy": 4.454,
+      "bio_lens": [
+        "biocentric"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "bioinputs"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Ag Biologicals"
+      ],
+      "investor_ids": []
     },
     {
       "id": "biodiversity_intelligence",
@@ -11893,8 +16924,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 7,
-      "pagerank": 0.0014503394017635306,
+      "community_id": 3,
+      "pagerank": 0.0009752663519714875,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -11907,7 +16938,32 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 1.267,
-      "sy": 11.253
+      "sy": 11.253,
+      "bio_lens": [
+        "biocentric",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "biodiversity-nature",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "remote-sensing"
+      ],
+      "scale_tags": [
+        "industrial-scale",
+        "planetary-scale",
+        "territorial-scale"
+      ],
+      "market_label": "biodiversity measurement and nature reporting platform",
+      "self_cats": [
+        "NatureTech",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "innova_space",
@@ -11941,7 +16997,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 8.0,
       "quality_band": "medium",
       "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": 2.0,
       "n_investors_mapped": 0,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -11954,7 +17010,33 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 1.201,
-      "sy": 11.292
+      "sy": 11.292,
+      "bio_lens": [
+        "biocentric",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "iot",
+        "remote-sensing"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale",
+        "planetary-scale"
+      ],
+      "market_label": "satellite IoT for planetary and agricultural monitoring",
+      "self_cats": [
+        "Precision Ag",
+        "AgTech",
+        "Hardware / IoT"
+      ],
+      "investor_ids": []
     },
     {
       "id": "lemu",
@@ -11987,8 +17069,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 22,
-      "pagerank": 0.0026623196237366615,
+      "community_id": 25,
+      "pagerank": 0.0017667187653776387,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -12001,7 +17083,37 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 10.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 1.252,
-      "sy": 11.266
+      "sy": 11.266,
+      "bio_lens": [
+        "biocentric",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biodiversity-nature",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "carbon-mrv",
+        "remote-sensing"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale",
+        "planetary-scale",
+        "territorial-scale"
+      ],
+      "market_label": "biodiversity MRV and nature intelligence",
+      "self_cats": [
+        "Precision Ag",
+        "NatureTech",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "arauco_ventures"
+      ]
     },
     {
       "id": "odd_industries",
@@ -12030,8 +17142,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -12044,7 +17156,23 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 15.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 1.229,
-      "sy": 11.292
+      "sy": 11.292,
+      "bio_lens": [
+        "biocentric",
+        "planetary-boundary"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "ai-data",
+        "remote-sensing",
+        "carbon-mrv"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "AI / Data"
+      ],
+      "investor_ids": []
     },
     {
       "id": "satellites_on_fire",
@@ -12075,8 +17203,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 8,
-      "pagerank": 0.001880281365824877,
+      "community_id": 7,
+      "pagerank": 0.00125091586087175,
       "valuation_tier": 1.5,
       "n_investors_mapped": 5,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -12089,7 +17217,39 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 25.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 1.212,
-      "sy": 11.314
+      "sy": 11.314,
+      "bio_lens": [
+        "biocentric",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "biodiversity-nature",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "remote-sensing"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "industrial-scale",
+        "planetary-scale",
+        "product-scale",
+        "territorial-scale"
+      ],
+      "market_label": "AI wildfire detection and ecosystem monitoring",
+      "self_cats": [
+        "NatureTech",
+        "AI / Data"
+      ],
+      "investor_ids": [
+        "AIR Capital",
+        "Antom",
+        "DraperCygnus",
+        "inventure",
+        "savia_ventures"
+      ]
     },
     {
       "id": "satellogic",
@@ -12120,10 +17280,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 6,
-      "pagerank": 0.0016144863365327824,
+      "community_id": 8,
+      "pagerank": 0.0013926062275053783,
       "valuation_tier": 4.0,
-      "n_investors_mapped": 3,
+      "n_investors_mapped": 5,
       "bio_theme": "Nature & Ecosystem Tech",
       "bio_theme_secondary": "",
       "is_bio_universe": 1,
@@ -12134,7 +17294,36 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 100.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 1.194,
-      "sy": 11.339
+      "sy": 11.339,
+      "bio_lens": [
+        "biocentric",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "biodiversity-nature",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "remote-sensing"
+      ],
+      "scale_tags": [
+        "industrial-scale",
+        "planetary-scale",
+        "territorial-scale"
+      ],
+      "market_label": "earth observation for planetary and resource monitoring",
+      "self_cats": [
+        "Biotech"
+      ],
+      "investor_ids": [
+        "DragonesVP",
+        "DraperCygnus",
+        "cf_acquisition_corp8",
+        "softbank_latam",
+        "valor_capital_group"
+      ]
     },
     {
       "id": "treevia-br",
@@ -12164,7 +17353,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -12177,7 +17366,20 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": 1.228,
-      "sy": 11.305
+      "sy": 11.305,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [
+        "IoT forest sensors, machine learning, SmartForest system, carbon quantification, forest inventory, remote sensing"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "CleanTech",
+        "AI / Data",
+        "Hardware / IoT"
+      ],
+      "investor_ids": []
     },
     {
       "id": "biomas",
@@ -12207,8 +17409,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 4,
-      "pagerank": 0.0015700097177986927,
+      "community_id": 18,
+      "pagerank": 0.0010688230429753752,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -12221,7 +17423,31 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 1.06,
-      "sy": 11.548
+      "sy": 11.548,
+      "bio_lens": [
+        "biocentric",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "biodiversity-nature",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "carbon-mrv"
+      ],
+      "scale_tags": [
+        "industrial-scale",
+        "planetary-scale",
+        "territorial-scale"
+      ],
+      "market_label": "large-scale ecological restoration business",
+      "self_cats": [
+        "NatureTech"
+      ],
+      "investor_ids": [
+        "kptl"
+      ]
     },
     {
       "id": "carbonext",
@@ -12253,8 +17479,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 4,
-      "pagerank": 0.0015700097177986927,
+      "community_id": 18,
+      "pagerank": 0.0010688230429753752,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -12267,7 +17493,31 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 1.055,
-      "sy": 11.551
+      "sy": 11.551,
+      "bio_lens": [
+        "biocentric",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "biodiversity-nature",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "carbon-mrv"
+      ],
+      "scale_tags": [
+        "industrial-scale",
+        "planetary-scale",
+        "territorial-scale"
+      ],
+      "market_label": "nature-based carbon and forest conservation platform",
+      "self_cats": [
+        "NatureTech"
+      ],
+      "investor_ids": [
+        "kptl"
+      ]
     },
     {
       "id": "courageous_land",
@@ -12300,7 +17550,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 8.0,
       "quality_band": "medium",
       "community_id": 4,
-      "pagerank": 0.0014808293473960858,
+      "pagerank": 0.0009818313338734893,
       "valuation_tier": 1.5,
       "n_investors_mapped": 1,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -12313,7 +17563,36 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 1.086,
-      "sy": 11.596
+      "sy": 11.596,
+      "bio_lens": [
+        "biocentric",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biodiversity-nature",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "carbon-mrv"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale",
+        "planetary-scale",
+        "product-scale",
+        "territorial-scale"
+      ],
+      "market_label": "reforestation and regenerative agroforestry",
+      "self_cats": [
+        "NatureTech",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "the_yield_lab_latam"
+      ]
     },
     {
       "id": "mombak",
@@ -12343,8 +17622,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 17,
-      "pagerank": 0.005109093813037712,
+      "community_id": 18,
+      "pagerank": 0.003647012996226809,
       "valuation_tier": null,
       "n_investors_mapped": 3,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -12357,7 +17636,34 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 10.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 1.033,
-      "sy": 11.535
+      "sy": 11.535,
+      "bio_lens": [
+        "biocentric",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "biodiversity-nature",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "ai-data"
+      ],
+      "scale_tags": [
+        "planetary-scale",
+        "territorial-scale"
+      ],
+      "market_label": "large-scale native biodiverse reforestation platform",
+      "self_cats": [
+        "CleanTech",
+        "NatureTech",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "kaszek",
+        "lowercarbon_capital",
+        "union_square_ventures"
+      ]
     },
     {
       "id": "moss",
@@ -12388,8 +17694,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 20,
-      "pagerank": 0.0014707527800261334,
+      "community_id": 21,
+      "pagerank": 0.0009798973546472373,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -12402,7 +17708,30 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 1.095,
-      "sy": 11.501
+      "sy": 11.501,
+      "bio_lens": [
+        "biocentric",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "biodiversity-nature",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "carbon-mrv"
+      ],
+      "scale_tags": [
+        "industrial-scale",
+        "planetary-scale",
+        "territorial-scale"
+      ],
+      "market_label": "carbon credit and nature-finance infrastructure",
+      "self_cats": [
+        "NatureTech"
+      ],
+      "investor_ids": [
+        "sp_ventures"
+      ]
     },
     {
       "id": "nideport",
@@ -12433,8 +17762,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 8,
-      "pagerank": 0.0015507850634541845,
+      "community_id": 4,
+      "pagerank": 0.0010229400655923891,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -12447,7 +17776,33 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 1.047,
-      "sy": 11.543
+      "sy": 11.543,
+      "bio_lens": [
+        "biocentric",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "biodiversity-nature",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "carbon-mrv"
+      ],
+      "scale_tags": [
+        "industrial-scale",
+        "planetary-scale",
+        "territorial-scale"
+      ],
+      "market_label": "nature restoration and carbon-credit platform",
+      "self_cats": [
+        "NatureTech",
+        "FinTech"
+      ],
+      "investor_ids": [
+        "Antom"
+      ]
     },
     {
       "id": "notfossil",
@@ -12477,8 +17832,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 13,
-      "pagerank": 0.0014899069913632415,
+      "community_id": 3,
+      "pagerank": 0.0009886716766426612,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -12491,7 +17846,30 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 1.066,
-      "sy": 11.545
+      "sy": 11.545,
+      "bio_lens": [
+        "biobased",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "remediation"
+      ],
+      "scale_tags": [
+        "industrial-scale",
+        "molecular-scale",
+        "planetary-scale"
+      ],
+      "market_label": "microbial hydrocarbon bioremediation",
+      "self_cats": [
+        "Biotech"
+      ],
+      "investor_ids": [
+        "SF500"
+      ]
     },
     {
       "id": "re_green",
@@ -12523,7 +17901,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 8.0,
       "quality_band": "medium",
       "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -12536,7 +17914,32 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": 1.056,
-      "sy": 11.565
+      "sy": 11.565,
+      "bio_lens": [
+        "biocentric",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "biodiversity-nature",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "carbon-mrv"
+      ],
+      "scale_tags": [
+        "industrial-scale",
+        "planetary-scale",
+        "territorial-scale"
+      ],
+      "market_label": "tropical forest restoration and carbon credit platform",
+      "self_cats": [
+        "CleanTech",
+        "NatureTech",
+        "FinTech"
+      ],
+      "investor_ids": []
     },
     {
       "id": "um_grau_e_meio",
@@ -12568,7 +17971,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 8.0,
       "quality_band": "medium",
       "community_id": 4,
-      "pagerank": 0.0014836224686167491,
+      "pagerank": 0.0009836329117575845,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -12581,7 +17984,32 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 1.137,
-      "sy": 11.424
+      "sy": 11.424,
+      "bio_lens": [
+        "biocentric",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "biodiversity-nature",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "remediation"
+      ],
+      "scale_tags": [
+        "industrial-scale",
+        "planetary-scale",
+        "territorial-scale"
+      ],
+      "market_label": "AI wildfire detection and forest-monitoring platform",
+      "self_cats": [
+        "Biotech"
+      ],
+      "investor_ids": [
+        "the_yield_lab_latam"
+      ]
     },
     {
       "id": "alytix",
@@ -12615,8 +18043,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 7,
-      "pagerank": 0.0014503394017635306,
+      "community_id": 3,
+      "pagerank": 0.0009752663519714875,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Health Access",
@@ -12629,7 +18057,39 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -3.221,
-      "sy": -7.437
+      "sy": -7.437,
+      "bio_lens": [
+        "biobased",
+        "biocentric",
+        "human-health-bio",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "diagnostics-medtech",
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "diagnostics",
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "human-scale",
+        "industrial-scale",
+        "molecular-scale"
+      ],
+      "market_label": "bacteriophage therapeutics and prevention platform",
+      "self_cats": [
+        "Therapeutics",
+        "Diagnostics",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "amplify-dynamics",
@@ -12665,8 +18125,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 5,
-      "pagerank": 0.0014738864460761513,
+      "community_id": 6,
+      "pagerank": 0.0009759305560124662,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -12679,7 +18139,40 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -8.559,
-      "sy": -10.012
+      "sy": -10.012,
+      "bio_lens": [
+        "biobased",
+        "bio-enabled-industrial-transition",
+        "circular",
+        "human-health-bio",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "biomanufacturing",
+        "climate-resource",
+        "human-health",
+        "industrial-biotech",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "biomanufacturing",
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "industrial-scale",
+        "molecular-scale"
+      ],
+      "market_label": "contactless LNP ultrafiltration platform",
+      "self_cats": [
+        "Therapeutics",
+        "Biomanufacturing",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "The Ganesha Lab"
+      ]
     },
     {
       "id": "argentag",
@@ -12713,8 +18206,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 6,
-      "pagerank": 0.0016162153270210186,
+      "community_id": 10,
+      "pagerank": 0.00108407171613055,
       "valuation_tier": 1.0,
       "n_investors_mapped": 4,
       "bio_theme": "Diagnostics & Health Access",
@@ -12727,7 +18220,36 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -3.381,
-      "sy": -7.55
+      "sy": -7.55,
+      "bio_lens": [
+        "human-health-bio"
+      ],
+      "domain_tags": [
+        "diagnostics-medtech",
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "diagnostics",
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "industrial-scale",
+        "molecular-scale",
+        "product-scale"
+      ],
+      "market_label": "single-cell long-read sequencing platform",
+      "self_cats": [
+        "Diagnostics"
+      ],
+      "investor_ids": [
+        "AIR Capital",
+        "DraperCygnus",
+        "GridX",
+        "SOSV_IndieBio"
+      ]
     },
     {
       "id": "avatar_medtech",
@@ -12760,8 +18282,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 7,
-      "pagerank": 0.0014503394017635306,
+      "community_id": 9,
+      "pagerank": 0.0009630938415821599,
       "valuation_tier": 1.5,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Health Access",
@@ -12774,7 +18296,32 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -3.421,
-      "sy": -7.588
+      "sy": -7.588,
+      "bio_lens": [
+        "circular",
+        "human-health-bio"
+      ],
+      "domain_tags": [
+        "biomaterials",
+        "diagnostics-medtech",
+        "human-health"
+      ],
+      "tech_tags": [
+        "biomaterials",
+        "diagnostics"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "industrial-scale",
+        "product-scale"
+      ],
+      "market_label": "autologous tissue heart-valve reconstruction devices",
+      "self_cats": [
+        "MedTech"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "baxxis-medtech-cl",
@@ -12802,8 +18349,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 1,
-      "pagerank": 0.0014906735246305665,
+      "community_id": 2,
+      "pagerank": 0.000996167226416203,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Health Access",
@@ -12816,7 +18363,21 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -3.44,
-      "sy": -7.579
+      "sy": -7.579,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [
+        "smart prosthetics, embedded sensors, ACL reconstruction, real-time postoperative monitoring, orthopedic medtech"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "MedTech",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "CITES"
+      ]
     },
     {
       "id": "biosynaptica",
@@ -12847,8 +18408,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 9.0,
       "quality_band": "high",
-      "community_id": 2,
-      "pagerank": 0.0016137021140362113,
+      "community_id": 3,
+      "pagerank": 0.0010850390199604243,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -12861,7 +18422,33 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -9.438,
-      "sy": -10.079
+      "sy": -10.079,
+      "bio_lens": [
+        "biocentric",
+        "human-health-bio",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "planetary-scale"
+      ],
+      "market_label": "neurodegenerative disease biopharmaceuticals",
+      "self_cats": [
+        "Therapeutics",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "aceleradora_litoral"
+      ]
     },
     {
       "id": "biotalife",
@@ -12896,8 +18483,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 13,
-      "pagerank": 0.0014899069913632415,
+      "community_id": 3,
+      "pagerank": 0.0009886716766426612,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Health Access",
@@ -12910,7 +18497,37 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -3.063,
-      "sy": -7.454
+      "sy": -7.454,
+      "bio_lens": [
+        "biobased",
+        "biocentric",
+        "human-health-bio",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biodiversity-nature",
+        "diagnostics-medtech",
+        "human-health"
+      ],
+      "tech_tags": [
+        "diagnostics"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "industrial-scale",
+        "molecular-scale",
+        "planetary-scale",
+        "product-scale"
+      ],
+      "market_label": "microbiome medical devices for vaginal health",
+      "self_cats": [
+        "MedTech",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "SF500"
+      ]
     },
     {
       "id": "botanical-solutions",
@@ -12943,8 +18560,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 5,
-      "pagerank": 0.0014738864460761513,
+      "community_id": 6,
+      "pagerank": 0.0009759305560124662,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -12957,7 +18574,39 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 25.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -7.54,
-      "sy": 7.744
+      "sy": 7.744,
+      "bio_lens": [
+        "biobased",
+        "biocentric",
+        "bio-enabled-industrial-transition",
+        "human-health-bio",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biomanufacturing",
+        "human-health"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "bioinputs",
+        "biomanufacturing"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "human-scale",
+        "industrial-scale",
+        "molecular-scale",
+        "product-scale"
+      ],
+      "market_label": "botanical crop protection and biobased active ingredients",
+      "self_cats": [
+        "AgTech",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "The Ganesha Lab"
+      ]
     },
     {
       "id": "bybug",
@@ -12997,8 +18646,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 7,
-      "pagerank": 0.0014496264722211934,
+      "community_id": 9,
+      "pagerank": 0.0009625759555840287,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomanufacturing & Fermentation Economy",
@@ -13011,7 +18660,45 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -8.473,
-      "sy": -2.878
+      "sy": -2.878,
+      "bio_lens": [
+        "biobased",
+        "bio-enabled-industrial-transition",
+        "circular",
+        "human-health-bio",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biomanufacturing",
+        "climate-resource",
+        "human-health",
+        "industrial-biotech",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "bioinputs",
+        "biomanufacturing",
+        "enzymes",
+        "synthetic-biology",
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale",
+        "molecular-scale",
+        "planetary-scale"
+      ],
+      "market_label": "insect bioreactor recombinant protein platform",
+      "self_cats": [
+        "Ag Biologicals",
+        "Alt Proteins",
+        "Precision Ferm"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "cellter-cl",
@@ -13037,7 +18724,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Diagnostics & Health Access",
@@ -13050,7 +18737,18 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -3.353,
-      "sy": -7.433
+      "sy": -7.433,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Therapeutics",
+        "Diagnostics",
+        "AI / Data"
+      ],
+      "investor_ids": []
     },
     {
       "id": "cryosmetics",
@@ -13087,8 +18785,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 7,
-      "pagerank": 0.0014503394017635306,
+      "community_id": 3,
+      "pagerank": 0.0009773378959640122,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomaterials & Circular Economy",
@@ -13101,7 +18799,36 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -2.487,
-      "sy": -0.991
+      "sy": -0.991,
+      "bio_lens": [
+        "biobased",
+        "bio-enabled-industrial-transition",
+        "human-health-bio"
+      ],
+      "domain_tags": [
+        "biomanufacturing",
+        "biomaterials",
+        "human-health",
+        "industrial-biotech",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "biomaterials",
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "industrial-scale",
+        "molecular-scale",
+        "product-scale"
+      ],
+      "market_label": "microbiome-positive skincare",
+      "self_cats": [
+        "Biotech"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "cytbac",
@@ -13135,8 +18862,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 7,
-      "pagerank": 0.0014496264722211934,
+      "community_id": 9,
+      "pagerank": 0.0009625759555840287,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -13149,7 +18876,36 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -9.527,
-      "sy": -10.025
+      "sy": -10.025,
+      "bio_lens": [
+        "biocentric",
+        "human-health-bio",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "diagnostics-medtech",
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "molecular-scale",
+        "planetary-scale"
+      ],
+      "market_label": "genetically engineered vaccine and immunotherapy platform",
+      "self_cats": [
+        "Therapeutics",
+        "Diagnostics",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "delee",
@@ -13180,8 +18936,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 5,
-      "pagerank": 0.0014738864460761513,
+      "community_id": 6,
+      "pagerank": 0.0009759305560124662,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Health Access",
@@ -13194,7 +18950,34 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -3.226,
-      "sy": -7.528
+      "sy": -7.528,
+      "bio_lens": [
+        "human-health-bio",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "diagnostics-medtech",
+        "human-health"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "diagnostics"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "industrial-scale",
+        "molecular-scale",
+        "planetary-scale"
+      ],
+      "market_label": "circulating tumor cell liquid biopsy diagnostics",
+      "self_cats": [
+        "Therapeutics",
+        "Diagnostics",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "The Ganesha Lab"
+      ]
     },
     {
       "id": "elytron_biotech",
@@ -13228,8 +19011,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 8,
-      "pagerank": 0.0015529815888382205,
+      "community_id": 4,
+      "pagerank": 0.0010521678203607924,
       "valuation_tier": 1.0,
       "n_investors_mapped": 2,
       "bio_theme": "Biomaterials & Circular Economy",
@@ -13242,7 +19025,37 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -2.525,
-      "sy": 1.091
+      "sy": 1.091,
+      "bio_lens": [
+        "biobased",
+        "biocentric",
+        "bio-enabled-industrial-transition"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biomanufacturing",
+        "industrial-biotech"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "biomanufacturing"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale",
+        "molecular-scale",
+        "product-scale"
+      ],
+      "market_label": "AI-driven biological product development platform",
+      "self_cats": [
+        "AI / Data",
+        "AgTech",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "GridX",
+        "inventure"
+      ]
     },
     {
       "id": "epiliquid",
@@ -13274,8 +19087,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 1,
-      "pagerank": 0.0015315662690646833,
+      "community_id": 2,
+      "pagerank": 0.0010131661397564163,
       "valuation_tier": 1.0,
       "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Health Access",
@@ -13288,7 +19101,34 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -3.278,
-      "sy": -7.534
+      "sy": -7.534,
+      "bio_lens": [
+        "human-health-bio",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "diagnostics-medtech",
+        "human-health"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "diagnostics"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "industrial-scale",
+        "molecular-scale",
+        "planetary-scale"
+      ],
+      "market_label": "liquid biopsy for early cancer detection",
+      "self_cats": [
+        "Diagnostics",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "AIR Capital",
+        "CITES"
+      ]
     },
     {
       "id": "establishment_labs",
@@ -13315,8 +19155,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Diagnostics & Health Access",
@@ -13329,7 +19169,21 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1000.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -3.444,
-      "sy": -7.586
+      "sy": -7.586,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "diagnostics"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "MedTech"
+      ],
+      "investor_ids": []
     },
     {
       "id": "galtec",
@@ -13361,7 +19215,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 8.5,
       "quality_band": "high",
       "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": 1.0,
       "n_investors_mapped": 0,
       "bio_theme": "Therapeutics",
@@ -13374,7 +19228,31 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -9.699,
-      "sy": -10.223
+      "sy": -10.223,
+      "bio_lens": [
+        "biocentric",
+        "human-health-bio",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "planetary-scale"
+      ],
+      "market_label": "galectin-based immunotherapy platform",
+      "self_cats": [
+        "Therapeutics",
+        "Biotech"
+      ],
+      "investor_ids": []
     },
     {
       "id": "gameet",
@@ -13405,8 +19283,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 13,
-      "pagerank": 0.0014899069913632415,
+      "community_id": 3,
+      "pagerank": 0.0009886716766426612,
       "valuation_tier": 2.0,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Health Access",
@@ -13419,7 +19297,32 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -3.44,
-      "sy": -7.575
+      "sy": -7.575,
+      "bio_lens": [
+        "human-health-bio",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "diagnostics-medtech",
+        "human-health"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "diagnostics"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "planetary-scale",
+        "product-scale"
+      ],
+      "market_label": "assisted reproduction microdevices",
+      "self_cats": [
+        "MedTech",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "SF500"
+      ]
     },
     {
       "id": "imvalv",
@@ -13451,8 +19354,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 1,
-      "pagerank": 0.0014906735246305665,
+      "community_id": 2,
+      "pagerank": 0.000996167226416203,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Health Access",
@@ -13465,7 +19368,30 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -3.407,
-      "sy": -7.578
+      "sy": -7.578,
+      "bio_lens": [
+        "human-health-bio"
+      ],
+      "domain_tags": [
+        "diagnostics-medtech",
+        "human-health"
+      ],
+      "tech_tags": [
+        "diagnostics",
+        "iot"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "industrial-scale",
+        "product-scale"
+      ],
+      "market_label": "glaucoma treatment devices",
+      "self_cats": [
+        "MedTech"
+      ],
+      "investor_ids": [
+        "CITES"
+      ]
     },
     {
       "id": "lipock",
@@ -13501,8 +19427,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 7,
-      "pagerank": 0.0014496264722211934,
+      "community_id": 9,
+      "pagerank": 0.0009625759555840287,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -13515,7 +19441,33 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -9.025,
-      "sy": -10.048
+      "sy": -10.048,
+      "bio_lens": [
+        "biocentric",
+        "human-health-bio",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "biomaterials",
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "industrial-scale",
+        "planetary-scale",
+        "product-scale"
+      ],
+      "market_label": "lipid nanocapsule drug-delivery and formulation platform",
+      "self_cats": [],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "magnamed",
@@ -13546,8 +19498,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 20,
-      "pagerank": 0.0017765995536887648,
+      "community_id": 21,
+      "pagerank": 0.0012042942179420599,
       "valuation_tier": null,
       "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Health Access",
@@ -13560,7 +19512,35 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -3.014,
-      "sy": -7.446
+      "sy": -7.446,
+      "bio_lens": [
+        "human-health-bio",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "diagnostics-medtech",
+        "human-health"
+      ],
+      "tech_tags": [
+        "diagnostics"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "industrial-scale",
+        "planetary-scale",
+        "product-scale",
+        "territorial-scale"
+      ],
+      "market_label": "respiratory care and mechanical ventilation devices",
+      "self_cats": [
+        "MedTech",
+        "Hardware / IoT"
+      ],
+      "investor_ids": [
+        "sp_ventures",
+        "vox_capital"
+      ]
     },
     {
       "id": "merken-biotech-cl",
@@ -13586,7 +19566,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Therapeutics",
@@ -13599,7 +19579,16 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -9.655,
-      "sy": -10.021
+      "sy": -10.021,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Biotech"
+      ],
+      "investor_ids": []
     },
     {
       "id": "metabix-biotech",
@@ -13634,8 +19623,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 5,
-      "pagerank": 0.0014738864460761513,
+      "community_id": 6,
+      "pagerank": 0.0009759305560124662,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Health Access",
@@ -13648,7 +19637,35 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -3.069,
-      "sy": -7.415
+      "sy": -7.415,
+      "bio_lens": [
+        "biocentric",
+        "human-health-bio",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "diagnostics-medtech",
+        "human-health"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "diagnostics"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "industrial-scale",
+        "planetary-scale"
+      ],
+      "market_label": "environmental pathogen intelligence and bio-vigilance",
+      "self_cats": [
+        "AI / Data",
+        "Hardware / IoT",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "The Ganesha Lab"
+      ]
     },
     {
       "id": "migma",
@@ -13683,8 +19700,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 7,
-      "pagerank": 0.0014496264722211934,
+      "community_id": 9,
+      "pagerank": 0.0009625759555840287,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -13697,7 +19714,31 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 2.085,
-      "sy": -1.865
+      "sy": -1.865,
+      "bio_lens": [
+        "circular",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biomaterials",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "ai-data"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "product-scale"
+      ],
+      "market_label": "AI-designed antioxidant systems for food, animal nutrition and cosmetics",
+      "self_cats": [
+        "FoodTech",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "nanoprox",
@@ -13733,8 +19774,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 7,
-      "pagerank": 0.0014496264722211934,
+      "community_id": 9,
+      "pagerank": 0.0009625759555840287,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -13747,7 +19788,35 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -8.958,
-      "sy": -10.04
+      "sy": -10.04,
+      "bio_lens": [
+        "human-health-bio",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "diagnostics-medtech",
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "diagnostics",
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "human-scale",
+        "planetary-scale",
+        "product-scale"
+      ],
+      "market_label": "nanotech-enhanced radiotherapy platform",
+      "self_cats": [
+        "Therapeutics"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "outpost",
@@ -13782,8 +19851,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 6,
-      "pagerank": 0.0014773509658170655,
+      "community_id": 7,
+      "pagerank": 0.000980078491113103,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomanufacturing & Fermentation Economy",
@@ -13796,7 +19865,38 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -8.335,
-      "sy": -2.745
+      "sy": -2.745,
+      "bio_lens": [
+        "biobased",
+        "biocentric",
+        "human-health-bio",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "biodiversity-nature",
+        "diagnostics-medtech",
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "diagnostics",
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "molecular-scale",
+        "planetary-scale",
+        "product-scale"
+      ],
+      "market_label": "microbiome predictive biology and techbio platform",
+      "self_cats": [
+        "AI / Data",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "AIR Capital"
+      ]
     },
     {
       "id": "pepton",
@@ -13828,8 +19928,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 1,
-      "pagerank": 0.0014906735246305665,
+      "community_id": 2,
+      "pagerank": 0.000996167226416203,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -13842,7 +19942,32 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -9.503,
-      "sy": -10.007
+      "sy": -10.007,
+      "bio_lens": [
+        "biobased",
+        "biocentric",
+        "human-health-bio",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "molecular-scale",
+        "territorial-scale"
+      ],
+      "market_label": "advanced biomolecular alternatives to antibiotics",
+      "self_cats": [
+        "Biotech"
+      ],
+      "investor_ids": [
+        "CITES"
+      ]
     },
     {
       "id": "phylumtech",
@@ -13876,8 +20001,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 1,
-      "pagerank": 0.0014906735246305665,
+      "community_id": 2,
+      "pagerank": 0.001010411280798055,
       "valuation_tier": 1.5,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -13890,7 +20015,30 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -9.769,
-      "sy": -10.245
+      "sy": -10.245,
+      "bio_lens": [
+        "human-health-bio"
+      ],
+      "domain_tags": [
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "industrial-scale"
+      ],
+      "market_label": "small-animal drug discovery automation platform",
+      "self_cats": [
+        "Therapeutics",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "CITES"
+      ]
     },
     {
       "id": "pill_ar",
@@ -13925,8 +20073,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 13,
-      "pagerank": 0.0014899069913632415,
+      "community_id": 3,
+      "pagerank": 0.0009886716766426612,
       "valuation_tier": 1.5,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Health Access",
@@ -13939,7 +20087,33 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -3.322,
-      "sy": -7.568
+      "sy": -7.568,
+      "bio_lens": [
+        "human-health-bio",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "diagnostics-medtech",
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "diagnostics",
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "industrial-scale",
+        "planetary-scale",
+        "product-scale"
+      ],
+      "market_label": "3D-printed personalized medicine manufacturing",
+      "self_cats": [],
+      "investor_ids": [
+        "SF500"
+      ]
     },
     {
       "id": "plamic",
@@ -13975,8 +20149,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 7,
-      "pagerank": 0.0014496264722211934,
+      "community_id": 9,
+      "pagerank": 0.0009625759555840287,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -13989,7 +20163,37 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -9.1,
-      "sy": -10.071
+      "sy": -10.071,
+      "bio_lens": [
+        "biocentric",
+        "circular",
+        "human-health-bio",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "climate-resource",
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "biomanufacturing",
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "human-scale",
+        "industrial-scale",
+        "planetary-scale",
+        "territorial-scale"
+      ],
+      "market_label": "microfluidic nanomedicine manufacturing platform",
+      "self_cats": [],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "plamic_biotech",
@@ -14024,7 +20228,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 8.0,
       "quality_band": "medium",
       "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": 1.0,
       "n_investors_mapped": 0,
       "bio_theme": "Therapeutics",
@@ -14037,7 +20241,30 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -9.821,
-      "sy": -10.239
+      "sy": -10.239,
+      "bio_lens": [
+        "human-health-bio"
+      ],
+      "domain_tags": [
+        "diagnostics-medtech",
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "diagnostics",
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "industrial-scale"
+      ],
+      "market_label": "microfluidic lab-on-a-chip cancer platform",
+      "self_cats": [
+        "Therapeutics",
+        "Biotech"
+      ],
+      "investor_ids": []
     },
     {
       "id": "radbio",
@@ -14071,8 +20298,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 1,
-      "pagerank": 0.0014935480243830348,
+      "community_id": 3,
+      "pagerank": 0.0010021393686372266,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -14085,7 +20312,38 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -9.36,
-      "sy": -10.088
+      "sy": -10.088,
+      "bio_lens": [
+        "biocentric",
+        "human-health-bio",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "diagnostics-medtech",
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "diagnostics",
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "human-scale",
+        "planetary-scale"
+      ],
+      "market_label": "TGF-beta biologic therapeutics",
+      "self_cats": [
+        "Therapeutics",
+        "Diagnostics",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "CITES"
+      ]
     },
     {
       "id": "resistia",
@@ -14118,8 +20376,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 7,
-      "pagerank": 0.0014496264722211934,
+      "community_id": 9,
+      "pagerank": 0.0009625759555840287,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -14132,7 +20390,33 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -9.606,
-      "sy": -10.077
+      "sy": -10.077,
+      "bio_lens": [
+        "biobased",
+        "biocentric",
+        "human-health-bio",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "molecular-scale"
+      ],
+      "market_label": "anti-biofilm antimicrobial biotech platform",
+      "self_cats": [
+        "Therapeutics",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "stamm",
@@ -14165,10 +20449,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 9.0,
       "quality_band": "high",
-      "community_id": 6,
-      "pagerank": 0.0016162153270210186,
+      "community_id": 7,
+      "pagerank": 0.0019052598884553333,
       "valuation_tier": 3.0,
-      "n_investors_mapped": 4,
+      "n_investors_mapped": 5,
       "bio_theme": "Biomanufacturing & Fermentation Economy",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
@@ -14179,7 +20463,39 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 100.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -8.479,
-      "sy": -2.704
+      "sy": -2.704,
+      "bio_lens": [
+        "biobased",
+        "bio-enabled-industrial-transition",
+        "human-health-bio"
+      ],
+      "domain_tags": [
+        "biomanufacturing",
+        "human-health",
+        "industrial-biotech",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "biomanufacturing"
+      ],
+      "scale_tags": [
+        "industrial-scale",
+        "molecular-scale"
+      ],
+      "market_label": "biomanufacturing infrastructure",
+      "self_cats": [
+        "Therapeutics",
+        "Biomanufacturing",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "AIR Capital",
+        "DraperCygnus",
+        "GridX",
+        "SOSV_IndieBio",
+        "varana_capital"
+      ]
     },
     {
       "id": "tensor-care",
@@ -14211,8 +20527,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 5,
-      "pagerank": 0.0014738864460761513,
+      "community_id": 6,
+      "pagerank": 0.0009759305560124662,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Health Access",
@@ -14225,7 +20541,31 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -3.436,
-      "sy": -7.565
+      "sy": -7.565,
+      "bio_lens": [
+        "human-health-bio"
+      ],
+      "domain_tags": [
+        "diagnostics-medtech",
+        "human-health"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "diagnostics",
+        "remote-sensing"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "industrial-scale"
+      ],
+      "market_label": "AI joint-imaging diagnostics platform",
+      "self_cats": [
+        "Diagnostics",
+        "MedTech"
+      ],
+      "investor_ids": [
+        "The Ganesha Lab"
+      ]
     },
     {
       "id": "untech",
@@ -14258,8 +20598,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 2,
-      "pagerank": 0.0016137021140362113,
+      "community_id": 3,
+      "pagerank": 0.0010850390199604243,
       "valuation_tier": 1.5,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Health Access",
@@ -14272,7 +20612,30 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -3.175,
-      "sy": -7.502
+      "sy": -7.502,
+      "bio_lens": [
+        "human-health-bio"
+      ],
+      "domain_tags": [
+        "diagnostics-medtech",
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "diagnostics",
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "human-scale"
+      ],
+      "market_label": "chronic wound treatment platform",
+      "self_cats": [
+        "Biotech"
+      ],
+      "investor_ids": [
+        "aceleradora_litoral"
+      ]
     },
     {
       "id": "viewmind",
@@ -14304,10 +20667,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 1,
-      "pagerank": 0.0015719702740401198,
+      "community_id": 22,
+      "pagerank": 0.0010399408975736808,
       "valuation_tier": 1.5,
-      "n_investors_mapped": 2,
+      "n_investors_mapped": 3,
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
@@ -14318,7 +20681,32 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -3.007,
-      "sy": -7.459
+      "sy": -7.459,
+      "bio_lens": [
+        "human-health-bio"
+      ],
+      "domain_tags": [
+        "diagnostics-medtech",
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "diagnostics",
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "industrial-scale",
+        "product-scale"
+      ],
+      "market_label": "ocular digital phenotyping for neurocognitive health",
+      "self_cats": [
+        "Diagnostics"
+      ],
+      "investor_ids": [
+        "CITES",
+        "zentynel"
+      ]
     },
     {
       "id": "andes-biotechnologies-cl",
@@ -14343,8 +20731,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 25,
-      "pagerank": 0.0026623196237366615,
+      "community_id": 12,
+      "pagerank": 0.0019393314185787954,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -14357,7 +20745,18 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -11.88,
-      "sy": -9.753
+      "sy": -9.753,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Therapeutics"
+      ],
+      "investor_ids": [
+        "fen_ventures"
+      ]
     },
     {
       "id": "aptah",
@@ -14384,8 +20783,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Therapeutics",
@@ -14398,7 +20797,21 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 15.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -11.811,
-      "sy": -9.715
+      "sy": -9.715,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "therapeutics"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Biotech"
+      ],
+      "investor_ids": []
     },
     {
       "id": "aptah-bio-br",
@@ -14424,7 +20837,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Therapeutics",
@@ -14437,7 +20850,16 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -11.586,
-      "sy": -9.898
+      "sy": -9.898,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Biotech"
+      ],
+      "investor_ids": []
     },
     {
       "id": "ayuvant",
@@ -14469,8 +20891,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 6,
-      "pagerank": 0.0015305660637986588,
+      "community_id": 7,
+      "pagerank": 0.001016389372414916,
       "valuation_tier": 1.0,
       "n_investors_mapped": 2,
       "bio_theme": "Therapeutics",
@@ -14483,7 +20905,32 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -11.782,
-      "sy": -9.948
+      "sy": -9.948,
+      "bio_lens": [
+        "biocentric",
+        "human-health-bio",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "human-scale"
+      ],
+      "market_label": "therapeutic biotech and regenerative medicine",
+      "self_cats": [
+        "Therapeutics",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "AIR Capital",
+        "DraperCygnus"
+      ]
     },
     {
       "id": "bentenbiotech",
@@ -14510,8 +20957,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Therapeutics",
@@ -14524,7 +20971,21 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -12.116,
-      "sy": -9.853
+      "sy": -9.853,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "therapeutics"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Therapeutics"
+      ],
+      "investor_ids": []
     },
     {
       "id": "cellertz-bio-br",
@@ -14550,7 +21011,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Therapeutics",
@@ -14563,7 +21024,18 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -11.698,
-      "sy": -9.934
+      "sy": -9.934,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "SynBio",
+        "Therapeutics",
+        "AI / Data"
+      ],
+      "investor_ids": []
     },
     {
       "id": "celluris",
@@ -14590,8 +21062,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Therapeutics",
@@ -14604,7 +21076,22 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -11.982,
-      "sy": -9.942
+      "sy": -9.942,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "therapeutics"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "SynBio",
+        "Therapeutics"
+      ],
+      "investor_ids": []
     },
     {
       "id": "circa_therapeutics",
@@ -14635,8 +21122,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 1,
-      "pagerank": 0.0014906735246305665,
+      "community_id": 2,
+      "pagerank": 0.001010411280798055,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -14649,7 +21136,31 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -11.729,
-      "sy": -10.051
+      "sy": -10.051,
+      "bio_lens": [
+        "biocentric",
+        "human-health-bio",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "molecular-scale"
+      ],
+      "market_label": "targeted protein degradation therapeutics",
+      "self_cats": [
+        "Therapeutics"
+      ],
+      "investor_ids": [
+        "CITES"
+      ]
     },
     {
       "id": "eolo_pharma",
@@ -14680,8 +21191,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 1,
-      "pagerank": 0.0014935480243830348,
+      "community_id": 2,
+      "pagerank": 0.0009878953142553745,
       "valuation_tier": 1.5,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -14694,7 +21205,32 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 15.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -11.775,
-      "sy": -9.952
+      "sy": -9.952,
+      "bio_lens": [
+        "biocentric",
+        "human-health-bio",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "climate-resource",
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "molecular-scale"
+      ],
+      "market_label": "thermogenesis-based obesity therapeutics",
+      "self_cats": [
+        "Therapeutics",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "CITES"
+      ]
     },
     {
       "id": "fk_biotecnologia",
@@ -14721,8 +21257,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Therapeutics",
@@ -14735,7 +21271,21 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -12.058,
-      "sy": -9.898
+      "sy": -9.898,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "therapeutics"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Therapeutics"
+      ],
+      "investor_ids": []
     },
     {
       "id": "futr_bio",
@@ -14762,8 +21312,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Therapeutics",
@@ -14776,7 +21326,19 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -11.983,
-      "sy": -9.876
+      "sy": -9.876,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "therapeutics"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [],
+      "investor_ids": []
     },
     {
       "id": "lizarbio",
@@ -14803,8 +21365,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Therapeutics",
@@ -14817,7 +21379,19 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 25.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -12.092,
-      "sy": -10.062
+      "sy": -10.062,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "therapeutics"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [],
+      "investor_ids": []
     },
     {
       "id": "mirscience-therapeutics-br",
@@ -14843,7 +21417,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Therapeutics",
@@ -14856,7 +21430,14 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -11.865,
-      "sy": -9.757
+      "sy": -9.757,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [],
+      "investor_ids": []
     },
     {
       "id": "naiad",
@@ -14884,8 +21465,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Therapeutics",
@@ -14898,7 +21479,22 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -11.661,
-      "sy": -9.771
+      "sy": -9.771,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "therapeutics",
+        "ai-data"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Therapeutics"
+      ],
+      "investor_ids": []
     },
     {
       "id": "naiad-drug-design-br",
@@ -14924,7 +21520,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Therapeutics",
@@ -14937,7 +21533,16 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -11.532,
-      "sy": -9.904
+      "sy": -9.904,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "AI / Data"
+      ],
+      "investor_ids": []
     },
     {
       "id": "nintx-br",
@@ -14962,10 +21567,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "community_id": 22,
+      "pagerank": 0.003386222288846211,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 3,
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "",
       "is_bio_universe": 1,
@@ -14976,7 +21581,18 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 15.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -11.546,
-      "sy": -9.884
+      "sy": -9.884,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [],
+      "investor_ids": [
+        "ecoa_capital",
+        "mov_investimentos",
+        "pitanga"
+      ]
     },
     {
       "id": "pannex_therapeutics",
@@ -15003,10 +21619,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 6,
+      "pagerank": 0.0009746103753624409,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "",
       "is_bio_universe": 1,
@@ -15017,7 +21633,21 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -11.796,
-      "sy": -9.67
+      "sy": -9.67,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "therapeutics"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [],
+      "investor_ids": [
+        "The Ganesha Lab"
+      ]
     },
     {
       "id": "peptidus-biotech-br",
@@ -15043,7 +21673,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Therapeutics",
@@ -15056,7 +21686,17 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -8.0,
-      "sy": -14.348
+      "sy": -14.348,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Therapeutics",
+        "Biotech"
+      ],
+      "investor_ids": []
     },
     {
       "id": "php_biotech",
@@ -15083,8 +21723,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Therapeutics",
@@ -15097,7 +21737,21 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -11.882,
-      "sy": -9.739
+      "sy": -9.739,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "therapeutics"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Therapeutics"
+      ],
+      "investor_ids": []
     },
     {
       "id": "praxis-biotech-cl",
@@ -15125,7 +21779,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Therapeutics",
@@ -15138,7 +21792,18 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -11.715,
-      "sy": -9.75
+      "sy": -9.75,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [
+        "small molecule discovery, apoptosis modulation, cell survival pathways, cancer therapeutics, neurodegenerative drugs"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Therapeutics"
+      ],
+      "investor_ids": []
     },
     {
       "id": "scitherm_therapeutics",
@@ -15169,8 +21834,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 7,
-      "pagerank": 0.0014496264722211934,
+      "community_id": 9,
+      "pagerank": 0.0009625759555840287,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -15183,7 +21848,30 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -11.782,
-      "sy": -9.966
+      "sy": -9.966,
+      "bio_lens": [
+        "biocentric",
+        "human-health-bio",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "molecular-scale"
+      ],
+      "market_label": "thermogenic obesity therapeutics",
+      "self_cats": [
+        "Therapeutics"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "speratum",
@@ -15210,8 +21898,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Therapeutics",
@@ -15224,7 +21912,21 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 15.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -11.84,
-      "sy": -9.708
+      "sy": -9.708,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "therapeutics"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Therapeutics"
+      ],
+      "investor_ids": []
     },
     {
       "id": "theravax",
@@ -15251,8 +21953,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Therapeutics",
@@ -15265,7 +21967,21 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -12.157,
-      "sy": -9.859
+      "sy": -9.859,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "therapeutics"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Therapeutics"
+      ],
+      "investor_ids": []
     },
     {
       "id": "vyro-bio-br",
@@ -15291,7 +22007,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Therapeutics",
@@ -15304,7 +22020,16 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 5.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -11.799,
-      "sy": -9.747
+      "sy": -9.747,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Therapeutics"
+      ],
+      "investor_ids": []
     },
     {
       "id": "amnova-biotech-cl",
@@ -15329,8 +22054,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 1,
-      "pagerank": 0.0014906735246305665,
+      "community_id": 2,
+      "pagerank": 0.000996167226416203,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -15343,7 +22068,19 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -12.085,
-      "sy": -10.098
+      "sy": -10.098,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Precision Ferm",
+        "Biomaterials"
+      ],
+      "investor_ids": [
+        "CITES"
+      ]
     },
     {
       "id": "apasomics",
@@ -15377,8 +22114,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 7,
-      "pagerank": 0.0014496264722211934,
+      "community_id": 9,
+      "pagerank": 0.0009625759555840287,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -15391,7 +22128,35 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -11.783,
-      "sy": -10.22
+      "sy": -10.22,
+      "bio_lens": [
+        "biobased",
+        "biocentric",
+        "human-health-bio",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biomaterials",
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "biomaterials",
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "human-scale",
+        "product-scale"
+      ],
+      "market_label": "targeted bone therapeutics and regenerative medicine",
+      "self_cats": [
+        "Therapeutics"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "aplife_biotech",
@@ -15426,8 +22191,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 6,
-      "pagerank": 0.0014880449089521226,
+      "community_id": 7,
+      "pagerank": 0.0009862931230906773,
       "valuation_tier": 1.0,
       "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Health Access",
@@ -15440,7 +22205,34 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 15.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -4.574,
-      "sy": -7.344
+      "sy": -7.344,
+      "bio_lens": [
+        "human-health-bio"
+      ],
+      "domain_tags": [
+        "diagnostics-medtech",
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "diagnostics",
+        "iot",
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "molecular-scale"
+      ],
+      "market_label": "aptamer discovery and high-throughput screening platform",
+      "self_cats": [
+        "Therapeutics",
+        "Diagnostics",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "AIR Capital",
+        "GridX"
+      ]
     },
     {
       "id": "asclepii",
@@ -15475,10 +22267,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 13,
-      "pagerank": 0.0015225829287203604,
+      "community_id": 22,
+      "pagerank": 0.001010322954484921,
       "valuation_tier": null,
-      "n_investors_mapped": 1,
+      "n_investors_mapped": 2,
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
@@ -15489,7 +22281,38 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -11.824,
-      "sy": -10.289
+      "sy": -10.289,
+      "bio_lens": [
+        "biobased",
+        "biocentric",
+        "human-health-bio",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biomaterials",
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "biomaterials",
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "molecular-scale",
+        "planetary-scale",
+        "product-scale"
+      ],
+      "market_label": "regenerative wound-care and tissue-repair platform",
+      "self_cats": [
+        "Therapeutics"
+      ],
+      "investor_ids": [
+        "zentynel"
+      ]
     },
     {
       "id": "autem-medical",
@@ -15522,10 +22345,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 13,
-      "pagerank": 0.0015225829287203604,
+      "community_id": 22,
+      "pagerank": 0.001010322954484921,
       "valuation_tier": null,
-      "n_investors_mapped": 1,
+      "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
@@ -15536,7 +22359,34 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 50.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -4.75,
-      "sy": -7.609
+      "sy": -7.609,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [
+        "diagnostics-medtech",
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "diagnostics",
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "industrial-scale",
+        "molecular-scale"
+      ],
+      "market_label": "non-invasive electromagnetic oncology treatment platform",
+      "self_cats": [
+        "Therapeutics",
+        "MedTech"
+      ],
+      "investor_ids": [
+        "zentynel"
+      ]
     },
     {
       "id": "autem-therapeutics-br",
@@ -15562,7 +22412,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Therapeutics",
@@ -15575,7 +22425,16 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -11.757,
-      "sy": -10.264
+      "sy": -10.264,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Therapeutics"
+      ],
+      "investor_ids": []
     },
     {
       "id": "biocle",
@@ -15607,8 +22466,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 7,
-      "pagerank": 0.0014503394017635306,
+      "community_id": 9,
+      "pagerank": 0.0009630938415821599,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -15621,7 +22480,31 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -11.801,
-      "sy": -10.182
+      "sy": -10.182,
+      "bio_lens": [
+        "biocentric",
+        "human-health-bio",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "human-scale"
+      ],
+      "market_label": "digestive health delivery platform",
+      "self_cats": [
+        "Therapeutics",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "bioseek",
@@ -15652,8 +22535,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 1,
-      "pagerank": 0.0014941229243335284,
+      "community_id": 2,
+      "pagerank": 0.0009989245304698124,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -15666,7 +22549,26 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -11.501,
-      "sy": -9.909
+      "sy": -9.909,
+      "bio_lens": [
+        "human-health-bio"
+      ],
+      "domain_tags": [
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "therapeutics"
+      ],
+      "scale_tags": [],
+      "market_label": "life-science semantic search and research intelligence",
+      "self_cats": [
+        "Biotech"
+      ],
+      "investor_ids": [
+        "CITES"
+      ]
     },
     {
       "id": "cellco",
@@ -15699,8 +22601,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 7,
-      "pagerank": 0.0014503394017635306,
+      "community_id": 9,
+      "pagerank": 0.0009630938415821599,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -15713,7 +22615,36 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -11.655,
-      "sy": -9.993
+      "sy": -9.993,
+      "bio_lens": [
+        "biobased",
+        "biocentric",
+        "bio-enabled-industrial-transition",
+        "human-health-bio",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "synthetic-biology",
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "molecular-scale"
+      ],
+      "market_label": "AI-enabled synthetic biology therapeutics",
+      "self_cats": [
+        "SynBio",
+        "Therapeutics",
+        "AI / Data"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "cellrep",
@@ -15744,8 +22675,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 7,
-      "pagerank": 0.0014496264722211934,
+      "community_id": 9,
+      "pagerank": 0.0009625759555840287,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -15758,7 +22689,32 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -12.015,
-      "sy": -10.186
+      "sy": -10.186,
+      "bio_lens": [
+        "biocentric",
+        "human-health-bio",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "molecular-scale"
+      ],
+      "market_label": "cell rejuvenation biotech",
+      "self_cats": [
+        "Therapeutics",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "cells-for-cells-cl",
@@ -15784,9 +22740,9 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "",
       "is_bio_universe": 1,
@@ -15797,7 +22753,19 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 25.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -12.061,
-      "sy": -10.163
+      "sy": -10.163,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "SynBio",
+        "Therapeutics"
+      ],
+      "investor_ids": [
+        "SOSV_IndieBio"
+      ]
     },
     {
       "id": "dharma_bioscience",
@@ -15831,8 +22799,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 13,
-      "pagerank": 0.0014899069913632415,
+      "community_id": 3,
+      "pagerank": 0.0009886716766426612,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -15845,7 +22813,37 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -11.935,
-      "sy": -10.267
+      "sy": -10.267,
+      "bio_lens": [
+        "biocentric",
+        "human-health-bio",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "diagnostics-medtech",
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "diagnostics",
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "human-scale",
+        "planetary-scale"
+      ],
+      "market_label": "non-invasive tissue regeneration",
+      "self_cats": [
+        "Therapeutics",
+        "Diagnostics"
+      ],
+      "investor_ids": [
+        "SF500"
+      ]
     },
     {
       "id": "dogma_biotech",
@@ -15876,8 +22874,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 7,
-      "pagerank": 0.0014503394017635306,
+      "community_id": 9,
+      "pagerank": 0.0009630938415821599,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -15890,7 +22888,30 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -11.62,
-      "sy": -9.958
+      "sy": -9.958,
+      "bio_lens": [
+        "biocentric",
+        "human-health-bio",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "human-scale"
+      ],
+      "market_label": "glyco-engineered therapeutics",
+      "self_cats": [
+        "Therapeutics"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "exomas",
@@ -15920,8 +22941,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 13,
-      "pagerank": 0.0014899069913632415,
+      "community_id": 3,
+      "pagerank": 0.0009886716766426612,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -15934,7 +22955,30 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -11.888,
-      "sy": -10.294
+      "sy": -10.294,
+      "bio_lens": [
+        "biocentric",
+        "human-health-bio",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "molecular-scale"
+      ],
+      "market_label": "neuroregenerative exosome therapeutics",
+      "self_cats": [
+        "Therapeutics"
+      ],
+      "investor_ids": [
+        "SF500"
+      ]
     },
     {
       "id": "eywa_biotech",
@@ -15966,10 +23010,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 7,
-      "pagerank": 0.0014496264722211934,
+      "community_id": 6,
+      "pagerank": 0.0009823786653344086,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 1,
+      "n_investors_mapped": 2,
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
@@ -15980,7 +23024,36 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -12.007,
-      "sy": -10.215
+      "sy": -10.215,
+      "bio_lens": [
+        "biobased",
+        "biocentric",
+        "bio-enabled-industrial-transition",
+        "human-health-bio",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "human-health",
+        "industrial-biotech",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "industrial-scale"
+      ],
+      "market_label": "psychedelic biotech",
+      "self_cats": [
+        "Therapeutics",
+        "Biomaterials",
+        "HealthTech"
+      ],
+      "investor_ids": [
+        "GridX",
+        "The Ganesha Lab"
+      ]
     },
     {
       "id": "fecundis",
@@ -16010,10 +23083,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 13,
-      "pagerank": 0.0015280487218782785,
+      "community_id": 22,
+      "pagerank": 0.0010288655932841873,
       "valuation_tier": 2.0,
-      "n_investors_mapped": 2,
+      "n_investors_mapped": 3,
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "",
       "is_bio_universe": 1,
@@ -16024,7 +23097,32 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -11.993,
-      "sy": -10.226
+      "sy": -10.226,
+      "bio_lens": [
+        "biocentric",
+        "human-health-bio",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "molecular-scale"
+      ],
+      "market_label": "fertility biotech",
+      "self_cats": [
+        "Therapeutics",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "GridX",
+        "zentynel"
+      ]
     },
     {
       "id": "hexembio",
@@ -16055,10 +23153,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 13,
-      "pagerank": 0.0015225829287203604,
+      "community_id": 22,
+      "pagerank": 0.001010322954484921,
       "valuation_tier": null,
-      "n_investors_mapped": 1,
+      "n_investors_mapped": 2,
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "",
       "is_bio_universe": 1,
@@ -16069,7 +23167,32 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -11.808,
-      "sy": -10.333
+      "sy": -10.333,
+      "bio_lens": [
+        "biocentric",
+        "human-health-bio",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "industrial-scale",
+        "molecular-scale"
+      ],
+      "market_label": "hematopoietic stem-cell rejuvenation therapy platform",
+      "self_cats": [
+        "Biotech"
+      ],
+      "investor_ids": [
+        "zentynel"
+      ]
     },
     {
       "id": "inner_cosmos",
@@ -16101,8 +23224,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 6,
-      "pagerank": 0.0014773509658170655,
+      "community_id": 7,
+      "pagerank": 0.000980078491113103,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -16115,7 +23238,32 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -9.348,
-      "sy": -10.102
+      "sy": -10.102,
+      "bio_lens": [
+        "biocentric",
+        "human-health-bio",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "diagnostics-medtech",
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "planetary-scale",
+        "product-scale"
+      ],
+      "market_label": "brain-computer-interface therapy for depression",
+      "self_cats": [],
+      "investor_ids": [
+        "AIR Capital"
+      ]
     },
     {
       "id": "insitu",
@@ -16142,8 +23290,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Therapeutics",
@@ -16156,7 +23304,21 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -12.104,
-      "sy": -10.055
+      "sy": -10.055,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "therapeutics"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Therapeutics"
+      ],
+      "investor_ids": []
     },
     {
       "id": "libera",
@@ -16189,8 +23351,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 13,
-      "pagerank": 0.0014899069913632415,
+      "community_id": 3,
+      "pagerank": 0.0009886716766426612,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -16203,7 +23365,34 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -11.774,
-      "sy": -10.237
+      "sy": -10.237,
+      "bio_lens": [
+        "biocentric",
+        "human-health-bio",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "human-scale",
+        "territorial-scale"
+      ],
+      "market_label": "extracellular vesicles for inflammatory disease",
+      "self_cats": [
+        "Therapeutics"
+      ],
+      "investor_ids": [
+        "SF500"
+      ]
     },
     {
       "id": "nanogrow_biotech",
@@ -16234,8 +23423,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 7,
-      "pagerank": 0.0014496264722211934,
+      "community_id": 9,
+      "pagerank": 0.0009625759555840287,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -16248,7 +23437,32 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -11.978,
-      "sy": -10.272
+      "sy": -10.272,
+      "bio_lens": [
+        "biocentric",
+        "human-health-bio",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "product-scale"
+      ],
+      "market_label": "single-domain antibody therapeutics platform",
+      "self_cats": [
+        "Therapeutics",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "nanotransfer",
@@ -16280,8 +23494,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 5,
-      "pagerank": 0.0014845803892112083,
+      "community_id": 9,
+      "pagerank": 0.0009784181233843327,
       "valuation_tier": 1.0,
       "n_investors_mapped": 2,
       "bio_theme": "Therapeutics",
@@ -16294,7 +23508,32 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -11.739,
-      "sy": -10.256
+      "sy": -10.256,
+      "bio_lens": [
+        "biocentric",
+        "human-health-bio",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "molecular-scale"
+      ],
+      "market_label": "non-viral gene delivery platform",
+      "self_cats": [
+        "Therapeutics"
+      ],
+      "investor_ids": [
+        "GridX",
+        "The Ganesha Lab"
+      ]
     },
     {
       "id": "ocular_bio_design",
@@ -16329,8 +23568,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 7,
-      "pagerank": 0.0014496264722211934,
+      "community_id": 9,
+      "pagerank": 0.0009625759555840287,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -16343,7 +23582,37 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -12.086,
-      "sy": -10.184
+      "sy": -10.184,
+      "bio_lens": [
+        "biobased",
+        "biocentric",
+        "bio-enabled-industrial-transition",
+        "human-health-bio",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "biodiversity-nature",
+        "biomanufacturing",
+        "biomaterials",
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "biomanufacturing",
+        "biomaterials",
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "molecular-scale",
+        "product-scale",
+        "territorial-scale"
+      ],
+      "market_label": "bioengineered corneal tissue for vision restoration",
+      "self_cats": [],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "onco_precision",
@@ -16374,8 +23643,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 9,
-      "pagerank": 0.0015624400701133032,
+      "community_id": 3,
+      "pagerank": 0.0010462071768343431,
       "valuation_tier": 1.0,
       "n_investors_mapped": 3,
       "bio_theme": "Therapeutics",
@@ -16388,7 +23657,33 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 15.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -11.703,
-      "sy": -10.227
+      "sy": -10.227,
+      "bio_lens": [
+        "biocentric",
+        "human-health-bio",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "human-scale"
+      ],
+      "market_label": "patient-centric oncology antibody discovery platform",
+      "self_cats": [
+        "Therapeutics",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "AIR Capital",
+        "GridX",
+        "SOSV_IndieBio"
+      ]
     },
     {
       "id": "single_strand_biotech",
@@ -16418,8 +23713,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 1,
-      "pagerank": 0.0014906735246305665,
+      "community_id": 2,
+      "pagerank": 0.000996167226416203,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -16432,7 +23727,30 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -12.011,
-      "sy": -10.177
+      "sy": -10.177,
+      "bio_lens": [
+        "biocentric",
+        "human-health-bio",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "human-scale"
+      ],
+      "market_label": "synthetic oligonucleotide therapeutics company",
+      "self_cats": [
+        "Therapeutics",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "CITES"
+      ]
     },
     {
       "id": "spherebio",
@@ -16466,8 +23784,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 7,
-      "pagerank": 0.0014496264722211934,
+      "community_id": 9,
+      "pagerank": 0.0009610222975896351,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -16480,7 +23798,36 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -11.685,
-      "sy": -10.235
+      "sy": -10.235,
+      "bio_lens": [
+        "biobased",
+        "biocentric",
+        "bio-enabled-industrial-transition",
+        "human-health-bio",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "synthetic-biology",
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "molecular-scale"
+      ],
+      "market_label": "personalized cancer vaccine and therapeutic platform",
+      "self_cats": [
+        "SynBio",
+        "Therapeutics",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "synthetic_ocular_restoration",
@@ -16516,8 +23863,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 7,
-      "pagerank": 0.0014496264722211934,
+      "community_id": 9,
+      "pagerank": 0.0009610222975896351,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -16530,7 +23877,40 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -12.053,
-      "sy": -10.237
+      "sy": -10.237,
+      "bio_lens": [
+        "biobased",
+        "biocentric",
+        "bio-enabled-industrial-transition",
+        "human-health-bio",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "biodiversity-nature",
+        "biomanufacturing",
+        "biomaterials",
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "biomanufacturing",
+        "biomaterials",
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "molecular-scale",
+        "product-scale",
+        "territorial-scale"
+      ],
+      "market_label": "corneal tissue engineering",
+      "self_cats": [
+        "Therapeutics"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "tesabio_ai",
@@ -16561,8 +23941,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 7,
-      "pagerank": 0.0014496264722211934,
+      "community_id": 9,
+      "pagerank": 0.0009625759555840287,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -16575,7 +23955,32 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -11.72,
-      "sy": -9.913
+      "sy": -9.913,
+      "bio_lens": [
+        "biocentric",
+        "human-health-bio",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "human-scale"
+      ],
+      "market_label": "ai-driven microRNA therapeutics platform",
+      "self_cats": [
+        "Therapeutics",
+        "AI / Data",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "agrion-agrisolutions-br",
@@ -16600,10 +24005,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "community_id": 27,
+      "pagerank": 0.0017667187653776387,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 1,
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "",
       "is_bio_universe": 1,
@@ -16614,7 +24019,16 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -6.64,
-      "sy": 7.742
+      "sy": 7.742,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [],
+      "investor_ids": [
+        "global_fund_coral_reefs"
+      ]
     },
     {
       "id": "agrivalle",
@@ -16649,7 +24063,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 8.0,
       "quality_band": "medium",
       "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -16662,7 +24076,36 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -6.662,
-      "sy": 7.747
+      "sy": 7.747,
+      "bio_lens": [
+        "biobased",
+        "biocentric",
+        "bio-enabled-industrial-transition",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biomanufacturing",
+        "industrial-biotech"
+      ],
+      "tech_tags": [
+        "bioinputs",
+        "biomanufacturing",
+        "fermentation"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "human-scale",
+        "industrial-scale",
+        "molecular-scale"
+      ],
+      "market_label": "biological fertilizers and biostimulants company",
+      "self_cats": [
+        "Ag Biologicals",
+        "Biotech"
+      ],
+      "investor_ids": []
     },
     {
       "id": "biocentis-br",
@@ -16688,7 +24131,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -16701,7 +24144,14 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -6.81,
-      "sy": 4.683
+      "sy": 4.683,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [],
+      "investor_ids": []
     },
     {
       "id": "biofabrica-siglo-xxi-mx",
@@ -16730,8 +24180,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "community_id": 34,
+      "pagerank": 0.0017667187653776387,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -16744,7 +24194,20 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -6.821,
-      "sy": 4.694
+      "sy": 4.694,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [
+        "microbial consortia, biofertilizers, agrobiotechnology, beneficial microorganisms, crop bioinputs"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Ag Biologicals",
+        "AgTech",
+        "Biotech"
+      ],
+      "investor_ids": []
     },
     {
       "id": "bioin-br",
@@ -16773,7 +24236,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -16786,7 +24249,20 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.524,
-      "sy": 7.694
+      "sy": 7.694,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [
+        "Trichogramma biocontrol, biological insecticides, digital pest monitoring, predictive analytics, soy and corn crops"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Ag Biologicals",
+        "AgTech",
+        "Biotech"
+      ],
+      "investor_ids": []
     },
     {
       "id": "biotrop-br",
@@ -16812,7 +24288,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -16825,7 +24301,14 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -6.594,
-      "sy": 7.743
+      "sy": 7.743,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [],
+      "investor_ids": []
     },
     {
       "id": "bug_agentes_biologicos",
@@ -16854,8 +24337,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 20,
-      "pagerank": 0.0014707527800261334,
+      "community_id": 21,
+      "pagerank": 0.0009798973546472373,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -16868,7 +24351,29 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -6.571,
-      "sy": 7.77
+      "sy": 7.77,
+      "bio_lens": [
+        "biobased",
+        "biocentric",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food"
+      ],
+      "tech_tags": [
+        "bioinputs"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale"
+      ],
+      "market_label": "macrobial biological control company",
+      "self_cats": [
+        "Ag Biologicals",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "sp_ventures"
+      ]
     },
     {
       "id": "decoy",
@@ -16897,8 +24402,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 20,
-      "pagerank": 0.001471429806641878,
+      "community_id": 21,
+      "pagerank": 0.0009804311778181985,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -16911,7 +24416,29 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -6.577,
-      "sy": 7.743
+      "sy": 7.743,
+      "bio_lens": [
+        "biobased",
+        "biocentric",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food"
+      ],
+      "tech_tags": [
+        "bioinputs"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale"
+      ],
+      "market_label": "innovative biological pesticides for livestock and agriculture",
+      "self_cats": [
+        "Ag Biologicals",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "sp_ventures"
+      ]
     },
     {
       "id": "decoy-smart-control-br",
@@ -16936,8 +24463,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 20,
-      "pagerank": 0.001469398726794644,
+      "community_id": 21,
+      "pagerank": 0.0009788297083053149,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -16950,7 +24477,18 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 10.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.576,
-      "sy": 7.747
+      "sy": 7.747,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Ag Biologicals"
+      ],
+      "investor_ids": [
+        "sp_ventures"
+      ]
     },
     {
       "id": "krilltech",
@@ -16981,8 +24519,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "community_id": 24,
+      "pagerank": 0.005924756236620187,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -16995,7 +24533,34 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -6.682,
-      "sy": 7.741
+      "sy": 7.741,
+      "bio_lens": [
+        "biobased",
+        "biocentric",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "bioinputs"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "human-scale",
+        "industrial-scale",
+        "planetary-scale",
+        "product-scale"
+      ],
+      "market_label": "nano-biofertilizer and plant physiology platform",
+      "self_cats": [
+        "Ag Biologicals",
+        "AgTech",
+        "Biotech"
+      ],
+      "investor_ids": []
     },
     {
       "id": "promip",
@@ -17025,10 +24590,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 20,
-      "pagerank": 0.001471429806641878,
+      "community_id": 21,
+      "pagerank": 0.0017923422775837762,
       "valuation_tier": null,
-      "n_investors_mapped": 1,
+      "n_investors_mapped": 2,
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "",
       "is_bio_universe": 1,
@@ -17039,7 +24604,33 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 25.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.636,
-      "sy": 7.732
+      "sy": 7.732,
+      "bio_lens": [
+        "biobased",
+        "biocentric",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "bioinputs"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale",
+        "planetary-scale"
+      ],
+      "market_label": "biological pest control and integrated pest management",
+      "self_cats": [
+        "Biotech"
+      ],
+      "investor_ids": [
+        "angra_partners",
+        "sp_ventures"
+      ]
     },
     {
       "id": "solubio",
@@ -17070,8 +24661,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "community_id": 21,
+      "pagerank": 0.0014276234348949601,
       "valuation_tier": null,
       "n_investors_mapped": 2,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -17084,7 +24675,34 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -6.653,
-      "sy": 7.752
+      "sy": 7.752,
+      "bio_lens": [
+        "biobased",
+        "biocentric",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "bioinputs"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale",
+        "molecular-scale"
+      ],
+      "market_label": "on-farm biological input production system",
+      "self_cats": [
+        "Ag Biologicals",
+        "AgTech",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "aqua_capital",
+        "sp_ventures"
+      ]
     },
     {
       "id": "vitales-br",
@@ -17110,7 +24728,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -17123,7 +24741,17 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -6.593,
-      "sy": 7.757
+      "sy": 7.757,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Ag Biologicals",
+        "Biomanufacturing"
+      ],
+      "investor_ids": []
     },
     {
       "id": "ages",
@@ -17158,8 +24786,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 4,
-      "pagerank": 0.0015787481970461962,
+      "community_id": 18,
+      "pagerank": 0.0010764240681329293,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Biomaterials & Circular Economy",
@@ -17172,7 +24800,38 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -1.277,
-      "sy": -0.962
+      "sy": -0.962,
+      "bio_lens": [
+        "biobased",
+        "biocentric",
+        "human-health-bio",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biodiversity-nature",
+        "biomaterials",
+        "human-health"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "biomaterials"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "planetary-scale",
+        "product-scale",
+        "territorial-scale"
+      ],
+      "market_label": "amazonian bioactive compounds platform",
+      "self_cats": [
+        "NatureTech",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "kptl"
+      ]
     },
     {
       "id": "biolinker",
@@ -17209,7 +24868,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 8.0,
       "quality_band": "medium",
       "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Biomanufacturing & Fermentation Economy",
@@ -17222,7 +24881,39 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -7.592,
-      "sy": -4.267
+      "sy": -4.267,
+      "bio_lens": [
+        "biobased",
+        "biocentric",
+        "bio-enabled-industrial-transition",
+        "human-health-bio"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biomanufacturing",
+        "biomaterials",
+        "human-health",
+        "industrial-biotech"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "biomanufacturing",
+        "synthetic-biology"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "human-scale",
+        "industrial-scale",
+        "molecular-scale",
+        "product-scale"
+      ],
+      "market_label": "cell-free protein expression and synthetic biology platform",
+      "self_cats": [
+        "SynBio",
+        "Precision Ferm",
+        "Biotech"
+      ],
+      "investor_ids": []
     },
     {
       "id": "biotimize",
@@ -17250,8 +24941,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Biomanufacturing & Fermentation Economy",
@@ -17264,7 +24955,23 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 100.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -7.575,
-      "sy": -4.253
+      "sy": -4.253,
+      "bio_lens": [
+        "biobased",
+        "bio-enabled-industrial-transition"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "biomanufacturing",
+        "fermentation"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Therapeutics",
+        "Biomanufacturing"
+      ],
+      "investor_ids": []
     },
     {
       "id": "done_properly",
@@ -17298,8 +25005,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.001740076046842668,
+      "community_id": 7,
+      "pagerank": 0.0011468177185739647,
       "valuation_tier": 2.0,
       "n_investors_mapped": 3,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -17312,7 +25019,35 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 2.033,
-      "sy": 0.609
+      "sy": 0.609,
+      "bio_lens": [
+        "biobased",
+        "bio-enabled-industrial-transition",
+        "human-health-bio"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biomanufacturing",
+        "human-health"
+      ],
+      "tech_tags": [
+        "fermentation"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "industrial-scale",
+        "product-scale"
+      ],
+      "market_label": "fermented mycelium protein and flavor bioingredients",
+      "self_cats": [
+        "FoodTech",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "AIR Capital",
+        "glocal",
+        "savia_ventures"
+      ]
     },
     {
       "id": "future_cow",
@@ -17346,8 +25081,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 10,
-      "pagerank": 0.0026623196237366615,
+      "community_id": 11,
+      "pagerank": 0.001345567018440414,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -17360,7 +25095,37 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 3.131,
-      "sy": -1.876
+      "sy": -1.876,
+      "bio_lens": [
+        "biobased",
+        "bio-enabled-industrial-transition",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biomanufacturing",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "fermentation",
+        "precision-fermentation"
+      ],
+      "scale_tags": [
+        "industrial-scale",
+        "molecular-scale",
+        "planetary-scale",
+        "product-scale"
+      ],
+      "market_label": "precision-fermented animal-free dairy protein",
+      "self_cats": [
+        "Alt Proteins",
+        "Precision Ferm",
+        "FoodTech"
+      ],
+      "investor_ids": [
+        "blue_horizon"
+      ]
     },
     {
       "id": "genotyping",
@@ -17393,8 +25158,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 20,
-      "pagerank": 0.0014707527800261334,
+      "community_id": 21,
+      "pagerank": 0.0009798973546472373,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Health Access",
@@ -17407,7 +25172,33 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -2.366,
-      "sy": -7.442
+      "sy": -7.442,
+      "bio_lens": [
+        "biocentric",
+        "human-health-bio"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "diagnostics-medtech",
+        "human-health"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "diagnostics"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "human-scale",
+        "industrial-scale",
+        "molecular-scale"
+      ],
+      "market_label": "genetic diagnostics and molecular analysis platform",
+      "self_cats": [
+        "Diagnostics"
+      ],
+      "investor_ids": [
+        "sp_ventures"
+      ]
     },
     {
       "id": "harmony-biosciences",
@@ -17440,10 +25231,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 13,
-      "pagerank": 0.0015225829287203604,
+      "community_id": 22,
+      "pagerank": 0.00223250828019587,
       "valuation_tier": null,
-      "n_investors_mapped": 1,
+      "n_investors_mapped": 2,
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "",
       "is_bio_universe": 1,
@@ -17454,7 +25245,33 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 25.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 2.975,
-      "sy": -1.866
+      "sy": -1.866,
+      "bio_lens": [
+        "biobased",
+        "bio-enabled-industrial-transition"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biomanufacturing"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "fermentation",
+        "precision-fermentation"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "molecular-scale",
+        "product-scale"
+      ],
+      "market_label": "bioengineered infant nutrition platform",
+      "self_cats": [
+        "Precision Ferm",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "zentynel"
+      ]
     },
     {
       "id": "imeve",
@@ -17490,8 +25307,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 20,
-      "pagerank": 0.0014707527800261334,
+      "community_id": 21,
+      "pagerank": 0.0009798973546472373,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -17504,7 +25321,35 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -7.417,
-      "sy": 7.72
+      "sy": 7.72,
+      "bio_lens": [
+        "biobased",
+        "biocentric",
+        "bio-enabled-industrial-transition",
+        "human-health-bio",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biomanufacturing",
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "fermentation",
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "human-scale"
+      ],
+      "market_label": "animal health and probiotic biotechnology company",
+      "self_cats": [
+        "Biotech"
+      ],
+      "investor_ids": [
+        "sp_ventures"
+      ]
     },
     {
       "id": "inprenha",
@@ -17535,8 +25380,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 20,
-      "pagerank": 0.001469398726794644,
+      "community_id": 21,
+      "pagerank": 0.0009788297083053149,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -17549,7 +25394,28 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -7.063,
-      "sy": 7.756
+      "sy": 7.756,
+      "bio_lens": [
+        "biocentric",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food"
+      ],
+      "tech_tags": [
+        "ai-data"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "product-scale"
+      ],
+      "market_label": "animal reproduction biotech platform",
+      "self_cats": [
+        "Biotech"
+      ],
+      "investor_ids": [
+        "sp_ventures"
+      ]
     },
     {
       "id": "nexxto",
@@ -17582,8 +25448,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 20,
-      "pagerank": 0.0014707527800261334,
+      "community_id": 21,
+      "pagerank": 0.0009798973546472373,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -17596,7 +25462,32 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 0.579,
-      "sy": 9.916
+      "sy": 9.916,
+      "bio_lens": [
+        "human-health-bio",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "climate-resource",
+        "human-health"
+      ],
+      "tech_tags": [
+        "iot"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "industrial-scale",
+        "planetary-scale",
+        "product-scale"
+      ],
+      "market_label": "IoT monitoring for cold-chain and product-quality control",
+      "self_cats": [
+        "Hardware / IoT"
+      ],
+      "investor_ids": [
+        "sp_ventures"
+      ]
     },
     {
       "id": "qnity",
@@ -17628,8 +25519,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 7,
-      "pagerank": 0.0014496264722211934,
+      "community_id": 9,
+      "pagerank": 0.0009625759555840287,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -17642,7 +25533,30 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -8.518,
-      "sy": -10.03
+      "sy": -10.03,
+      "bio_lens": [
+        "human-health-bio"
+      ],
+      "domain_tags": [
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "iot",
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "molecular-scale",
+        "product-scale"
+      ],
+      "market_label": "quantum electrochemical sensing for molecular binding analysis",
+      "self_cats": [
+        "Therapeutics"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "speclab",
@@ -17675,8 +25589,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 20,
-      "pagerank": 0.001469398726794644,
+      "community_id": 21,
+      "pagerank": 0.0009788297083053149,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Health Access",
@@ -17689,7 +25603,32 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -2.517,
-      "sy": -7.45
+      "sy": -7.45,
+      "bio_lens": [
+        "biocentric",
+        "human-health-bio"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "diagnostics-medtech",
+        "human-health"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "diagnostics"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "human-scale",
+        "industrial-scale"
+      ],
+      "market_label": "AI spectral analytics and laboratory digitization platform",
+      "self_cats": [
+        "AI / Data"
+      ],
+      "investor_ids": [
+        "sp_ventures"
+      ]
     },
     {
       "id": "updairy",
@@ -17723,8 +25662,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 7,
-      "pagerank": 0.0014496264722211934,
+      "community_id": 9,
+      "pagerank": 0.0009610222975896351,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -17737,7 +25676,38 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 3.182,
-      "sy": -1.889
+      "sy": -1.889,
+      "bio_lens": [
+        "biobased",
+        "biocentric",
+        "bio-enabled-industrial-transition",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biomanufacturing"
+      ],
+      "tech_tags": [
+        "biomanufacturing",
+        "fermentation",
+        "precision-fermentation"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale",
+        "molecular-scale",
+        "product-scale",
+        "territorial-scale"
+      ],
+      "market_label": "precision-fermented animal-free dairy proteins",
+      "self_cats": [
+        "Alt Proteins",
+        "Precision Ferm",
+        "FoodTech"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "algalife",
@@ -17768,8 +25738,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 7,
-      "pagerank": 0.0014496264722211934,
+      "community_id": 9,
+      "pagerank": 0.0009625759555840287,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Biomanufacturing & Fermentation Economy",
@@ -17782,7 +25752,29 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -7.447,
-      "sy": -4.235
+      "sy": -4.235,
+      "bio_lens": [
+        "biobased",
+        "bio-enabled-industrial-transition"
+      ],
+      "domain_tags": [
+        "biomanufacturing",
+        "industrial-biotech"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "biomanufacturing"
+      ],
+      "scale_tags": [
+        "industrial-scale"
+      ],
+      "market_label": "microalgae process optimization platform",
+      "self_cats": [
+        "Biomanufacturing"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
     },
     {
       "id": "genica",
@@ -17816,10 +25808,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 20,
-      "pagerank": 0.0017752455004572754,
+      "community_id": 21,
+      "pagerank": 0.0024166321712497923,
       "valuation_tier": null,
-      "n_investors_mapped": 2,
+      "n_investors_mapped": 4,
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
@@ -17830,7 +25822,40 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 25.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.84,
-      "sy": 7.735
+      "sy": 7.735,
+      "bio_lens": [
+        "biobased",
+        "biocentric",
+        "human-health-bio",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "climate-resource",
+        "human-health"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "bioinputs"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "human-scale",
+        "molecular-scale"
+      ],
+      "market_label": "soil health and agricultural biologicals platform",
+      "self_cats": [
+        "Ag Biologicals",
+        "AgTech",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "agrex",
+        "bb_agro_ventures",
+        "sp_ventures",
+        "vox_capital"
+      ]
     },
     {
       "id": "ideelab",
@@ -17867,7 +25892,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 8.0,
       "quality_band": "medium",
       "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -17880,7 +25905,36 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": -6.953,
-      "sy": 7.744
+      "sy": 7.744,
+      "bio_lens": [
+        "biobased",
+        "biocentric",
+        "bio-enabled-industrial-transition",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biomanufacturing",
+        "industrial-biotech"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "bioinputs",
+        "biomanufacturing",
+        "fermentation"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale",
+        "molecular-scale"
+      ],
+      "market_label": "ag biologicals CDMO and bioinput production platform",
+      "self_cats": [
+        "Ag Biologicals",
+        "Precision Ferm",
+        "Biomanufacturing"
+      ],
+      "investor_ids": []
     },
     {
       "id": "nunatak_biotech",
@@ -17912,8 +25966,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 5,
-      "pagerank": 0.002061320019546456,
+      "community_id": 6,
+      "pagerank": 0.0013685315054668176,
       "valuation_tier": 1.0,
       "n_investors_mapped": 2,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -17926,7 +25980,34 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -6.637,
-      "sy": 4.842
+      "sy": 4.842,
+      "bio_lens": [
+        "biobased",
+        "biocentric",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biodiversity-nature"
+      ],
+      "tech_tags": [
+        "ai-data"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale",
+        "molecular-scale",
+        "planetary-scale"
+      ],
+      "market_label": "plant-microbiome soil restoration technology",
+      "self_cats": [
+        "Biotech"
+      ],
+      "investor_ids": [
+        "GridX",
+        "eatable_adventures"
+      ]
     },
     {
       "id": "symbiomics",
@@ -17960,10 +26041,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 4,
-      "pagerank": 0.0027042164420466113,
+      "community_id": 10,
+      "pagerank": 0.0018861695381088132,
       "valuation_tier": null,
-      "n_investors_mapped": 2,
+      "n_investors_mapped": 4,
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
@@ -17974,7 +26055,39 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 10.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": -6.993,
-      "sy": 7.756
+      "sy": 7.756,
+      "bio_lens": [
+        "biobased",
+        "biocentric",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "bioinputs"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "human-scale",
+        "industrial-scale",
+        "molecular-scale",
+        "planetary-scale"
+      ],
+      "market_label": "AI-enabled high-performance biologicals for agriculture",
+      "self_cats": [
+        "Ag Biologicals",
+        "Diagnostics",
+        "Precision Ferm"
+      ],
+      "investor_ids": [
+        "corteva_catalyst",
+        "mov_investimentos",
+        "the_yield_lab_latam"
+      ]
     },
     {
       "id": "trebe_biotech",
@@ -18008,8 +26121,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 13,
-      "pagerank": 0.0014899069913632415,
+      "community_id": 3,
+      "pagerank": 0.0010029157310245135,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -18022,7 +26135,37 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 1.95,
-      "sy": 0.196
+      "sy": 0.196,
+      "bio_lens": [
+        "biobased",
+        "bio-enabled-industrial-transition",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biomanufacturing"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "biomanufacturing",
+        "fermentation"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale",
+        "planetary-scale",
+        "product-scale",
+        "territorial-scale"
+      ],
+      "market_label": "complex protein production and biomanufacturing",
+      "self_cats": [
+        "Biomanufacturing",
+        "FoodTech",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "SF500"
+      ]
     },
     {
       "id": "aegro",
@@ -18053,8 +26196,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 20,
-      "pagerank": 0.001471429806641878,
+      "community_id": 21,
+      "pagerank": 0.0009804311778181985,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -18067,7 +26210,30 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 0.675,
-      "sy": 9.756
+      "sy": 9.756,
+      "bio_lens": [
+        "biocentric",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "ai-data"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale",
+        "planetary-scale"
+      ],
+      "market_label": "farm operations and financial management platform",
+      "self_cats": [
+        "AgTech"
+      ],
+      "investor_ids": [
+        "sp_ventures"
+      ]
     },
     {
       "id": "agrired",
@@ -18098,8 +26264,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 8,
-      "pagerank": 0.0016882483824983288,
+      "community_id": 4,
+      "pagerank": 0.0011359152483695286,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Farm Intelligence",
@@ -18112,7 +26278,25 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 10.119,
-      "sy": 9.209
+      "sy": 9.209,
+      "bio_lens": [
+        "biocentric"
+      ],
+      "domain_tags": [
+        "agri-food"
+      ],
+      "tech_tags": [
+        "ai-data"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale"
+      ],
+      "market_label": "b2b ag-input market infrastructure",
+      "self_cats": [],
+      "investor_ids": [
+        "pampa_start"
+      ]
     },
     {
       "id": "agronow-br",
@@ -18137,8 +26321,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 20,
-      "pagerank": 0.001469398726794644,
+      "community_id": 21,
+      "pagerank": 0.0009788297083053149,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Farm Intelligence",
@@ -18151,7 +26335,18 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 10.09,
-      "sy": 8.391
+      "sy": 8.391,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Precision Ag"
+      ],
+      "investor_ids": [
+        "sp_ventures"
+      ]
     },
     {
       "id": "agrosmart",
@@ -18183,7 +26378,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 8.0,
       "quality_band": "medium",
       "community_id": 4,
-      "pagerank": 0.0015112955451045938,
+      "pagerank": 0.0010058533765667432,
       "valuation_tier": null,
       "n_investors_mapped": 2,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -18196,7 +26391,30 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 0.972,
-      "sy": 9.45
+      "sy": 9.45,
+      "bio_lens": [
+        "biocentric",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "ai-data"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale",
+        "planetary-scale"
+      ],
+      "market_label": "climate-smart agronomic and irrigation intelligence platform",
+      "self_cats": [],
+      "investor_ids": [
+        "sp_ventures",
+        "the_yield_lab_latam"
+      ]
     },
     {
       "id": "agrotoken",
@@ -18228,10 +26446,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 9.0,
       "quality_band": "high",
-      "community_id": 20,
-      "pagerank": 0.0017447793027487676,
+      "community_id": 18,
+      "pagerank": 0.001905071332552352,
       "valuation_tier": 4.0,
-      "n_investors_mapped": 1,
+      "n_investors_mapped": 5,
       "bio_theme": "Farm Intelligence",
       "bio_theme_secondary": "Food Systems & Alt Proteins",
       "is_bio_universe": 1,
@@ -18242,7 +26460,29 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 10.198,
-      "sy": 9.106
+      "sy": 9.106,
+      "bio_lens": [
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "climate-resource"
+      ],
+      "tech_tags": [],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale",
+        "planetary-scale"
+      ],
+      "market_label": "agricultural asset and traceability infrastructure",
+      "self_cats": [],
+      "investor_ids": [
+        "barn_investimentos",
+        "base_capital",
+        "john_deere_ventures",
+        "nubarium_capital",
+        "visa_ventures"
+      ]
     },
     {
       "id": "agrotools",
@@ -18273,8 +26513,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 4,
-      "pagerank": 0.0015787481970461962,
+      "community_id": 18,
+      "pagerank": 0.0010764240681329293,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -18287,7 +26527,28 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 0.975,
-      "sy": 9.537
+      "sy": 9.537,
+      "bio_lens": [
+        "biocentric",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "remote-sensing"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale",
+        "planetary-scale"
+      ],
+      "market_label": "agricultural risk, supply-chain and ESG intelligence platform",
+      "self_cats": [],
+      "investor_ids": [
+        "kptl"
+      ]
     },
     {
       "id": "agrourbana",
@@ -18320,8 +26581,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 11,
-      "pagerank": 0.0018554047315203577,
+      "community_id": 12,
+      "pagerank": 0.0012899646878986087,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -18334,7 +26595,31 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 0.421,
-      "sy": 9.871
+      "sy": 9.871,
+      "bio_lens": [
+        "biocentric",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "ai-data"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "human-scale",
+        "industrial-scale",
+        "planetary-scale",
+        "product-scale",
+        "territorial-scale"
+      ],
+      "market_label": "vertical farming fresh produce platform",
+      "self_cats": [],
+      "investor_ids": [
+        "chileglobal_ventures"
+      ]
     },
     {
       "id": "aimirim-br",
@@ -18364,7 +26649,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Farm Intelligence",
@@ -18377,7 +26662,20 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": 9.79,
-      "sy": 9.034
+      "sy": 9.034,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [
+        "digital twin, IoT sensors, AI analytics, process automation, industrial integration"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Precision Ferm",
+        "Hardware / IoT",
+        "Biotech"
+      ],
+      "investor_ids": []
     },
     {
       "id": "arado",
@@ -18409,10 +26707,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 20,
-      "pagerank": 0.001471429806641878,
+      "community_id": 8,
+      "pagerank": 0.004141763093998543,
       "valuation_tier": null,
-      "n_investors_mapped": 2,
+      "n_investors_mapped": 6,
       "bio_theme": "Nature & Ecosystem Tech",
       "bio_theme_secondary": "Food Systems & Alt Proteins",
       "is_bio_universe": 1,
@@ -18423,7 +26721,36 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 0.471,
-      "sy": 9.855
+      "sy": 9.855,
+      "bio_lens": [
+        "circular",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "ai-data"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale",
+        "planetary-scale",
+        "territorial-scale"
+      ],
+      "market_label": "fresh food marketplace connecting producers and buyers",
+      "self_cats": [
+        "FoodTech"
+      ],
+      "investor_ids": [
+        "acre_venture_partners",
+        "globo_ventures",
+        "maya_capital",
+        "sp_ventures",
+        "syngenta_ventures",
+        "valor_capital_group"
+      ]
     },
     {
       "id": "auravant",
@@ -18454,8 +26781,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 9.0,
       "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.0015449183104452985,
+      "community_id": 4,
+      "pagerank": 0.0010277564437942224,
       "valuation_tier": 2.0,
       "n_investors_mapped": 2,
       "bio_theme": "Farm Intelligence",
@@ -18468,7 +26795,29 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 9.905,
-      "sy": 8.988
+      "sy": 8.988,
+      "bio_lens": [
+        "biocentric"
+      ],
+      "domain_tags": [
+        "agri-food"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "remote-sensing"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale"
+      ],
+      "market_label": "precision agriculture and agronomic decision platform",
+      "self_cats": [
+        "Precision Ag"
+      ],
+      "investor_ids": [
+        "kamay_ventures",
+        "the_yield_lab_latam"
+      ]
     },
     {
       "id": "bemagro",
@@ -18501,7 +26850,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 8.0,
       "quality_band": "medium",
       "community_id": 4,
-      "pagerank": 0.0014808293473960858,
+      "pagerank": 0.00104217594067256,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -18514,7 +26863,32 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 0.959,
-      "sy": 9.358
+      "sy": 9.358,
+      "bio_lens": [
+        "biocentric",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biodiversity-nature"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "remote-sensing"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale"
+      ],
+      "market_label": "AI SaaS for high-resolution field intelligence",
+      "self_cats": [
+        "Precision Ag",
+        "SaaS / Platform",
+        "Hardware / IoT"
+      ],
+      "investor_ids": [
+        "the_yield_lab_latam"
+      ]
     },
     {
       "id": "calice",
@@ -18546,8 +26920,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 8,
-      "pagerank": 0.0015422876457031633,
+      "community_id": 4,
+      "pagerank": 0.0010301554760069726,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Farm Intelligence",
@@ -18560,7 +26934,28 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 10.135,
-      "sy": 8.139
+      "sy": 8.139,
+      "bio_lens": [
+        "biocentric"
+      ],
+      "domain_tags": [
+        "agri-food"
+      ],
+      "tech_tags": [
+        "ai-data"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale",
+        "product-scale"
+      ],
+      "market_label": "virtual agronomic trials and product placement platform",
+      "self_cats": [
+        "AgTech"
+      ],
+      "investor_ids": [
+        "inventure"
+      ]
     },
     {
       "id": "calice-ai-ar",
@@ -18588,8 +26983,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 18,
-      "pagerank": 0.0017365131737308588,
+      "community_id": 10,
+      "pagerank": 0.0011648219520603864,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Farm Intelligence",
@@ -18602,7 +26997,21 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 10.129,
-      "sy": 8.175
+      "sy": 8.175,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [
+        "NODES platform, G×E×M modeling, probabilistic simulation, environmental fingerprinting, API integration"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Precision Ag",
+        "AgTech"
+      ],
+      "investor_ids": [
+        "newtopia_vc"
+      ]
     },
     {
       "id": "cerradox",
@@ -18633,7 +27042,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 8.0,
       "quality_band": "medium",
       "community_id": 4,
-      "pagerank": 0.0014808293473960858,
+      "pagerank": 0.0009818313338734893,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Farm Intelligence",
@@ -18646,7 +27055,27 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 9.804,
-      "sy": 9.042
+      "sy": 9.042,
+      "bio_lens": [
+        "biocentric"
+      ],
+      "domain_tags": [
+        "agri-food"
+      ],
+      "tech_tags": [
+        "ai-data"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale"
+      ],
+      "market_label": "AI agricultural production platform for underused land",
+      "self_cats": [
+        "AgTech"
+      ],
+      "investor_ids": [
+        "the_yield_lab_latam"
+      ]
     },
     {
       "id": "cowmed-br",
@@ -18671,8 +27100,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 20,
-      "pagerank": 0.001469398726794644,
+      "community_id": 21,
+      "pagerank": 0.0009788297083053149,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Farm Intelligence",
@@ -18685,7 +27114,19 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 10.118,
-      "sy": 8.28
+      "sy": 8.28,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "MedTech",
+        "AI / Data"
+      ],
+      "investor_ids": [
+        "sp_ventures"
+      ]
     },
     {
       "id": "deepagro",
@@ -18716,10 +27157,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 9.0,
       "quality_band": "high",
-      "community_id": 8,
-      "pagerank": 0.0019007364025138078,
+      "community_id": 4,
+      "pagerank": 0.0013183929526452923,
       "valuation_tier": 2.0,
-      "n_investors_mapped": 3,
+      "n_investors_mapped": 4,
       "bio_theme": "Farm Intelligence",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 0,
@@ -18730,7 +27171,34 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 10.096,
-      "sy": 8.58
+      "sy": 8.58,
+      "bio_lens": [
+        "biocentric",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "ai-data"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale",
+        "territorial-scale"
+      ],
+      "market_label": "precision agriculture software",
+      "self_cats": [
+        "Precision Ag",
+        "AI / Data"
+      ],
+      "investor_ids": [
+        "glocal",
+        "inventure",
+        "kamay_ventures",
+        "pampa_start"
+      ]
     },
     {
       "id": "digifarmz-br",
@@ -18755,8 +27223,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 8,
-      "pagerank": 0.0015596615186898065,
+      "community_id": 4,
+      "pagerank": 0.0010244360580725274,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Farm Intelligence",
@@ -18769,7 +27237,19 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 10.153,
-      "sy": 8.298
+      "sy": 8.298,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Precision Ag",
+        "AI / Data"
+      ],
+      "investor_ids": [
+        "glocal"
+      ]
     },
     {
       "id": "dymaxion_labs",
@@ -18800,7 +27280,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 8.5,
       "quality_band": "high",
       "community_id": 18,
-      "pagerank": 0.0017365131737308588,
+      "pagerank": 0.0011648219520603864,
       "valuation_tier": 2.0,
       "n_investors_mapped": 1,
       "bio_theme": "Farm Intelligence",
@@ -18813,7 +27293,32 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 10.174,
-      "sy": 8.133
+      "sy": 8.133,
+      "bio_lens": [
+        "biocentric",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "ai-data"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "planetary-scale",
+        "territorial-scale"
+      ],
+      "market_label": "agronomic AI and field intelligence",
+      "self_cats": [
+        "Precision Ag",
+        "AI / Data",
+        "AgTech"
+      ],
+      "investor_ids": [
+        "newtopia_vc"
+      ]
     },
     {
       "id": "eiwa",
@@ -18843,8 +27348,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 8,
-      "pagerank": 0.0018335003174253055,
+      "community_id": 4,
+      "pagerank": 0.0012382867270258684,
       "valuation_tier": 1.0,
       "n_investors_mapped": 3,
       "bio_theme": "Farm Intelligence",
@@ -18857,7 +27362,31 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 10.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 10.16,
-      "sy": 8.157
+      "sy": 8.157,
+      "bio_lens": [
+        "biocentric"
+      ],
+      "domain_tags": [
+        "agri-food"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "remote-sensing"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale"
+      ],
+      "market_label": "agronomic data intelligence platform",
+      "self_cats": [
+        "Precision Ag",
+        "AgTech"
+      ],
+      "investor_ids": [
+        "inventure",
+        "pampa_start",
+        "the_yield_lab_latam"
+      ]
     },
     {
       "id": "frizata",
@@ -18889,8 +27418,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 20,
-      "pagerank": 0.0014707527800261334,
+      "community_id": 21,
+      "pagerank": 0.0009798973546472373,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -18903,7 +27432,29 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 5.686,
-      "sy": -1.377
+      "sy": -1.377,
+      "bio_lens": [
+        "human-health-bio"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "human-health"
+      ],
+      "tech_tags": [
+        "ai-data"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "industrial-scale",
+        "product-scale"
+      ],
+      "market_label": "direct-to-consumer flexitarian frozen food platform",
+      "self_cats": [
+        "FoodTech"
+      ],
+      "investor_ids": [
+        "sp_ventures"
+      ]
     },
     {
       "id": "goflux",
@@ -18934,8 +27485,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 20,
-      "pagerank": 0.0014707527800261334,
+      "community_id": 21,
+      "pagerank": 0.0009798973546472373,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -18948,7 +27499,30 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 0.639,
-      "sy": 9.911
+      "sy": 9.911,
+      "bio_lens": [
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "ai-data"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale",
+        "planetary-scale",
+        "product-scale"
+      ],
+      "market_label": "B2B freight management and carbon-aware logistics platform",
+      "self_cats": [
+        "SaaS / Platform"
+      ],
+      "investor_ids": [
+        "sp_ventures"
+      ]
     },
     {
       "id": "horus_aeronaves",
@@ -18981,8 +27555,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 20,
-      "pagerank": 0.001469398726794644,
+      "community_id": 21,
+      "pagerank": 0.0009788297083053149,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Farm Intelligence",
@@ -18995,7 +27569,34 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 10.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 10.082,
-      "sy": 8.627
+      "sy": 8.627,
+      "bio_lens": [
+        "biobased",
+        "biocentric",
+        "bio-enabled-industrial-transition"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biomanufacturing"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "biomanufacturing",
+        "iot",
+        "remote-sensing"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale",
+        "product-scale"
+      ],
+      "market_label": "agricultural drone and aerial mapping platform",
+      "self_cats": [
+        "Hardware / IoT"
+      ],
+      "investor_ids": [
+        "sp_ventures"
+      ]
     },
     {
       "id": "inceres",
@@ -19026,8 +27627,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 20,
-      "pagerank": 0.0014707527800261334,
+      "community_id": 21,
+      "pagerank": 0.0009798973546472373,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Farm Intelligence",
@@ -19040,7 +27641,29 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 10.024,
-      "sy": 8.748
+      "sy": 8.748,
+      "bio_lens": [
+        "biocentric",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "remote-sensing"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale"
+      ],
+      "market_label": "agronomic management and soil/fertility intelligence platform",
+      "self_cats": [
+        "Precision Ag"
+      ],
+      "investor_ids": [
+        "sp_ventures"
+      ]
     },
     {
       "id": "inspectral-br",
@@ -19066,7 +27689,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -19079,7 +27702,17 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": 0.961,
-      "sy": 9.301
+      "sy": 9.301,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Precision Ag",
+        "Hardware / IoT"
+      ],
+      "investor_ids": []
     },
     {
       "id": "instacrops-cl",
@@ -19104,8 +27737,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 11,
-      "pagerank": 0.001829375218868219,
+      "community_id": 12,
+      "pagerank": 0.0012690173740056996,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Farm Intelligence",
@@ -19118,7 +27751,19 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 10.112,
-      "sy": 8.401
+      "sy": 8.401,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Precision Ag",
+        "Hardware / IoT"
+      ],
+      "investor_ids": [
+        "chileglobal_ventures"
+      ]
     },
     {
       "id": "jetbov",
@@ -19149,8 +27794,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 20,
-      "pagerank": 0.001469398726794644,
+      "community_id": 21,
+      "pagerank": 0.0009788297083053149,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Farm Intelligence",
@@ -19163,7 +27808,27 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 10.17,
-      "sy": 8.25
+      "sy": 8.25,
+      "bio_lens": [
+        "biocentric"
+      ],
+      "domain_tags": [
+        "agri-food"
+      ],
+      "tech_tags": [
+        "ai-data"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale"
+      ],
+      "market_label": "beef cattle management intelligence platform",
+      "self_cats": [
+        "Precision Ag",
+        "AgTech"
+      ],
+      "investor_ids": [
+        "sp_ventures"
+      ]
     },
     {
       "id": "laurus_ag_tech",
@@ -19194,8 +27859,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 6,
-      "pagerank": 0.0014749498135213823,
+      "community_id": 7,
+      "pagerank": 0.0009863961974883634,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -19208,7 +27873,32 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 0.518,
-      "sy": 9.857
+      "sy": 9.857,
+      "bio_lens": [
+        "biocentric",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "ai-data"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale",
+        "planetary-scale",
+        "territorial-scale"
+      ],
+      "market_label": "autonomous urban farming network",
+      "self_cats": [
+        "AgTech",
+        "Hardware / IoT"
+      ],
+      "investor_ids": [
+        "AIR Capital"
+      ]
     },
     {
       "id": "leaf",
@@ -19238,8 +27928,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 20,
-      "pagerank": 0.0014707527800261334,
+      "community_id": 21,
+      "pagerank": 0.0009798973546472373,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Farm Intelligence",
@@ -19252,7 +27942,28 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 9.904,
-      "sy": 9.149
+      "sy": 9.149,
+      "bio_lens": [
+        "biocentric",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "remote-sensing"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale",
+        "planetary-scale"
+      ],
+      "market_label": "unified API and data infrastructure for food and agriculture",
+      "self_cats": [],
+      "investor_ids": [
+        "sp_ventures"
+      ]
     },
     {
       "id": "nilus",
@@ -19285,7 +27996,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 8.0,
       "quality_band": "medium",
       "community_id": 18,
-      "pagerank": 0.001749738980159513,
+      "pagerank": 0.0011741559203469786,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -19298,7 +28009,31 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 0.516,
-      "sy": 9.888
+      "sy": 9.888,
+      "bio_lens": [
+        "circular",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "ai-data"
+      ],
+      "scale_tags": [
+        "industrial-scale",
+        "planetary-scale",
+        "territorial-scale"
+      ],
+      "market_label": "food rescue and circular food-access platform",
+      "self_cats": [
+        "FoodTech",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "newtopia_vc"
+      ]
     },
     {
       "id": "nocarbon_milk",
@@ -19328,7 +28063,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 8.0,
       "quality_band": "medium",
       "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -19341,7 +28076,25 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": 5.67,
-      "sy": -1.34
+      "sy": -1.34,
+      "bio_lens": [
+        "biocentric",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "climate-resource"
+      ],
+      "tech_tags": [],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "planetary-scale",
+        "product-scale"
+      ],
+      "market_label": "carbon-neutral organic dairy brand",
+      "self_cats": [],
+      "investor_ids": []
     },
     {
       "id": "nude",
@@ -19372,8 +28125,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 3,
-      "pagerank": 0.001503021492135349,
+      "community_id": 4,
+      "pagerank": 0.001000732775532794,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -19386,7 +28139,26 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 5.645,
-      "sy": -1.348
+      "sy": -1.348,
+      "bio_lens": [
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "climate-resource"
+      ],
+      "tech_tags": [],
+      "scale_tags": [
+        "planetary-scale",
+        "product-scale"
+      ],
+      "market_label": "oat-based plant dairy and climate-transparent food brand",
+      "self_cats": [
+        "FoodTech"
+      ],
+      "investor_ids": [
+        "kamay_ventures"
+      ]
     },
     {
       "id": "pink-farms",
@@ -19418,8 +28190,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 20,
-      "pagerank": 0.001469398726794644,
+      "community_id": 21,
+      "pagerank": 0.0009788297083053149,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -19432,7 +28204,31 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 0.431,
-      "sy": 9.881
+      "sy": 9.881,
+      "bio_lens": [
+        "biocentric",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "ai-data"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "planetary-scale",
+        "product-scale",
+        "territorial-scale"
+      ],
+      "market_label": "vertical urban farming platform",
+      "self_cats": [
+        "AgTech"
+      ],
+      "investor_ids": [
+        "sp_ventures"
+      ]
     },
     {
       "id": "precision_ag",
@@ -19464,7 +28260,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 8.0,
       "quality_band": "medium",
       "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -19477,7 +28273,30 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": 0.944,
-      "sy": 9.33
+      "sy": 9.33,
+      "bio_lens": [
+        "biocentric",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biodiversity-nature",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "remote-sensing"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale",
+        "territorial-scale"
+      ],
+      "market_label": "agricultural drone spraying and crop-monitoring services",
+      "self_cats": [
+        "NatureTech",
+        "Hardware / IoT"
+      ],
+      "investor_ids": []
     },
     {
       "id": "rumina",
@@ -19507,8 +28326,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 20,
-      "pagerank": 0.0017447793027487676,
+      "community_id": 18,
+      "pagerank": 0.0011804644752806146,
       "valuation_tier": 1.5,
       "n_investors_mapped": 1,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -19521,7 +28340,29 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 0.701,
-      "sy": 9.81
+      "sy": 9.81,
+      "bio_lens": [
+        "biocentric",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food"
+      ],
+      "tech_tags": [
+        "ai-data"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "planetary-scale"
+      ],
+      "market_label": "dairy farm intelligence and sustainability",
+      "self_cats": [
+        "AgTech"
+      ],
+      "investor_ids": [
+        "barn_investimentos"
+      ]
     },
     {
       "id": "seedz",
@@ -19552,7 +28393,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 8.0,
       "quality_band": "medium",
       "community_id": 4,
-      "pagerank": 0.0014836224686167491,
+      "pagerank": 0.0009836329117575845,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -19565,7 +28406,29 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": -5.571,
-      "sy": 7.967
+      "sy": 7.967,
+      "bio_lens": [
+        "biocentric",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food"
+      ],
+      "tech_tags": [
+        "ai-data"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale",
+        "planetary-scale"
+      ],
+      "market_label": "agribusiness loyalty and producer-engagement infrastructure",
+      "self_cats": [
+        "AgTech"
+      ],
+      "investor_ids": [
+        "the_yield_lab_latam"
+      ]
     },
     {
       "id": "sensify",
@@ -19598,8 +28461,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 8,
-      "pagerank": 0.001606376608752376,
+      "community_id": 4,
+      "pagerank": 0.0010760805859277058,
       "valuation_tier": 1.5,
       "n_investors_mapped": 2,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -19612,7 +28475,31 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 0.677,
-      "sy": 9.888
+      "sy": 9.888,
+      "bio_lens": [
+        "circular",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "iot"
+      ],
+      "scale_tags": [
+        "industrial-scale",
+        "planetary-scale"
+      ],
+      "market_label": "smart refrigeration and cold-chain intelligence for food and beverages",
+      "self_cats": [
+        "Hardware / IoT"
+      ],
+      "investor_ids": [
+        "inventure",
+        "kamay_ventures"
+      ]
     },
     {
       "id": "sensix",
@@ -19644,7 +28531,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 8.0,
       "quality_band": "medium",
       "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Farm Intelligence",
@@ -19657,7 +28544,30 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": 9.863,
-      "sy": 8.983
+      "sy": 8.983,
+      "bio_lens": [
+        "biocentric",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "remote-sensing"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale",
+        "planetary-scale"
+      ],
+      "market_label": "decision agriculture and agronomic analytics platform",
+      "self_cats": [
+        "Precision Ag",
+        "SaaS / Platform"
+      ],
+      "investor_ids": []
     },
     {
       "id": "silohub",
@@ -19687,7 +28597,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 8.0,
       "quality_band": "medium",
       "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": 1.0,
       "n_investors_mapped": 0,
       "bio_theme": "Farm Intelligence",
@@ -19700,7 +28610,26 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": 10.189,
-      "sy": 8.144
+      "sy": 8.144,
+      "bio_lens": [
+        "biocentric"
+      ],
+      "domain_tags": [
+        "agri-food"
+      ],
+      "tech_tags": [
+        "ai-data"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale"
+      ],
+      "market_label": "agtech grain operations infrastructure",
+      "self_cats": [
+        "Precision Ag",
+        "AgTech"
+      ],
+      "investor_ids": []
     },
     {
       "id": "sima",
@@ -19729,8 +28658,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 8,
-      "pagerank": 0.0016882483824983288,
+      "community_id": 4,
+      "pagerank": 0.0011359152483695286,
       "valuation_tier": 2.0,
       "n_investors_mapped": 1,
       "bio_theme": "Farm Intelligence",
@@ -19743,7 +28672,27 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 10.183,
-      "sy": 8.216
+      "sy": 8.216,
+      "bio_lens": [
+        "biocentric"
+      ],
+      "domain_tags": [
+        "agri-food"
+      ],
+      "tech_tags": [
+        "ai-data"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale"
+      ],
+      "market_label": "precision agriculture software",
+      "self_cats": [
+        "Precision Ag",
+        "AgTech"
+      ],
+      "investor_ids": [
+        "pampa_start"
+      ]
     },
     {
       "id": "sioma",
@@ -19774,7 +28723,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 8.0,
       "quality_band": "medium",
       "community_id": 4,
-      "pagerank": 0.0014808293473960858,
+      "pagerank": 0.0009818313338734893,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Farm Intelligence",
@@ -19787,7 +28736,27 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 10.145,
-      "sy": 8.217
+      "sy": 8.217,
+      "bio_lens": [
+        "biocentric"
+      ],
+      "domain_tags": [
+        "agri-food"
+      ],
+      "tech_tags": [
+        "ai-data"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale"
+      ],
+      "market_label": "tropical crop traceability and operational intelligence platform",
+      "self_cats": [
+        "Precision Ag",
+        "AgTech"
+      ],
+      "investor_ids": [
+        "the_yield_lab_latam"
+      ]
     },
     {
       "id": "smartbreeder",
@@ -19817,8 +28786,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 4,
-      "pagerank": 0.0015787481970461962,
+      "community_id": 18,
+      "pagerank": 0.0010764240681329293,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Farm Intelligence",
@@ -19831,7 +28800,30 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 10.154,
-      "sy": 8.284
+      "sy": 8.284,
+      "bio_lens": [
+        "biocentric",
+        "circular",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "ai-data"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale"
+      ],
+      "market_label": "AI agronomic forecasting platform",
+      "self_cats": [
+        "Precision Ag",
+        "AgTech"
+      ],
+      "investor_ids": [
+        "kptl"
+      ]
     },
     {
       "id": "solinftec",
@@ -19861,8 +28853,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 23,
-      "pagerank": 0.0026623196237366615,
+      "community_id": 26,
+      "pagerank": 0.0017667187653776387,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Farm Intelligence",
@@ -19875,7 +28867,30 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 9.789,
-      "sy": 9.038
+      "sy": 9.038,
+      "bio_lens": [
+        "biocentric"
+      ],
+      "domain_tags": [
+        "agri-food"
+      ],
+      "tech_tags": [
+        "ai-data"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale",
+        "planetary-scale"
+      ],
+      "market_label": "AI and autonomous agriculture platform",
+      "self_cats": [
+        "AgTech",
+        "SaaS / Platform",
+        "Hardware / IoT"
+      ],
+      "investor_ids": [
+        "lightsmith_group"
+      ]
     },
     {
       "id": "spaceag",
@@ -19906,7 +28921,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 8.0,
       "quality_band": "medium",
       "community_id": 4,
-      "pagerank": 0.0014808293473960858,
+      "pagerank": 0.0009818313338734893,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Farm Intelligence",
@@ -19919,7 +28934,28 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 10.129,
-      "sy": 8.346
+      "sy": 8.346,
+      "bio_lens": [
+        "biocentric"
+      ],
+      "domain_tags": [
+        "agri-food"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "remote-sensing"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale"
+      ],
+      "market_label": "high-value crop agronomic workflow platform",
+      "self_cats": [
+        "Precision Ag",
+        "AgTech"
+      ],
+      "investor_ids": [
+        "the_yield_lab_latam"
+      ]
     },
     {
       "id": "strider-br",
@@ -19944,10 +28980,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 20,
-      "pagerank": 0.002968166397399293,
+      "community_id": 18,
+      "pagerank": 0.0016731111238114554,
       "valuation_tier": null,
-      "n_investors_mapped": 2,
+      "n_investors_mapped": 3,
       "bio_theme": "Farm Intelligence",
       "bio_theme_secondary": "",
       "is_bio_universe": 0,
@@ -19958,7 +28994,20 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 10.147,
-      "sy": 8.248
+      "sy": 8.248,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "SaaS / Platform"
+      ],
+      "investor_ids": [
+        "barn_investimentos",
+        "monashees",
+        "sp_ventures"
+      ]
     },
     {
       "id": "tarvos-br",
@@ -19987,7 +29036,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Farm Intelligence",
@@ -20000,7 +29049,18 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": 10.055,
-      "sy": 8.377
+      "sy": 8.377,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [
+        "computer vision, automated traps, biostatistical modeling, satellite data, pest identification AI"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "AI / Data"
+      ],
+      "investor_ids": []
     },
     {
       "id": "tbit",
@@ -20030,8 +29090,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 4,
-      "pagerank": 0.0015787481970461962,
+      "community_id": 18,
+      "pagerank": 0.0010764240681329293,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Farm Intelligence",
@@ -20044,7 +29104,31 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 9.744,
-      "sy": 9.01
+      "sy": 9.01,
+      "bio_lens": [
+        "biocentric",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food"
+      ],
+      "tech_tags": [
+        "ai-data"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale",
+        "planetary-scale",
+        "product-scale"
+      ],
+      "market_label": "AI seed and grain quality analysis",
+      "self_cats": [
+        "Precision Ag",
+        "AgTech"
+      ],
+      "investor_ids": [
+        "kptl"
+      ]
     },
     {
       "id": "tech",
@@ -20076,7 +29160,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 8.5,
       "quality_band": "high",
       "community_id": 4,
-      "pagerank": 0.0014808293473960858,
+      "pagerank": 0.0009818313338734893,
       "valuation_tier": 2.0,
       "n_investors_mapped": 1,
       "bio_theme": "Farm Intelligence",
@@ -20089,7 +29173,30 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 10.176,
-      "sy": 8.112
+      "sy": 8.112,
+      "bio_lens": [
+        "biocentric",
+        "bio-enabled-industrial-transition"
+      ],
+      "domain_tags": [
+        "agri-food"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "iot"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale"
+      ],
+      "market_label": "animal protein optimization and traceability",
+      "self_cats": [
+        "AgTech",
+        "Hardware / IoT"
+      ],
+      "investor_ids": [
+        "the_yield_lab_latam"
+      ]
     },
     {
       "id": "the-earth-says",
@@ -20121,8 +29228,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 5,
-      "pagerank": 0.0014738864460761513,
+      "community_id": 6,
+      "pagerank": 0.0009759305560124662,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -20135,7 +29242,32 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
       "sx": 0.728,
-      "sy": 9.755
+      "sy": 9.755,
+      "bio_lens": [
+        "biocentric",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biodiversity-nature"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "bioinputs",
+        "iot"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale"
+      ],
+      "market_label": "AI pollination optimization platform",
+      "self_cats": [
+        "Precision Ag",
+        "AgTech"
+      ],
+      "investor_ids": [
+        "The Ganesha Lab"
+      ]
     },
     {
       "id": "tuplaza",
@@ -20168,7 +29300,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 8.0,
       "quality_band": "medium",
       "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -20181,7 +29313,27 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": 0.434,
-      "sy": 9.89
+      "sy": 9.89,
+      "bio_lens": [
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "ai-data"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale",
+        "planetary-scale"
+      ],
+      "market_label": "fresh produce distribution platform for grocery stores",
+      "self_cats": [
+        "AgTech"
+      ],
+      "investor_ids": []
     },
     {
       "id": "voa",
@@ -20213,7 +29365,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 8.0,
       "quality_band": "medium",
       "community_id": 4,
-      "pagerank": 0.0014808293473960858,
+      "pagerank": 0.0009818313338734893,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Farm Intelligence",
@@ -20226,7 +29378,33 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 10.056,
-      "sy": 8.697
+      "sy": 8.697,
+      "bio_lens": [
+        "biocentric"
+      ],
+      "domain_tags": [
+        "agri-food"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "bioinputs",
+        "remote-sensing"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "human-scale",
+        "industrial-scale",
+        "molecular-scale"
+      ],
+      "market_label": "drone application platform for biological agents and nutrients",
+      "self_cats": [
+        "Precision Ag",
+        "Hardware / IoT",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "the_yield_lab_latam"
+      ]
     },
     {
       "id": "wiagro",
@@ -20258,8 +29436,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.001503021492135349,
+      "community_id": 4,
+      "pagerank": 0.001000732775532794,
       "valuation_tier": 1.5,
       "n_investors_mapped": 1,
       "bio_theme": "Farm Intelligence",
@@ -20272,7 +29450,31 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 9.849,
-      "sy": 9.013
+      "sy": 9.013,
+      "bio_lens": [
+        "biocentric",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "iot",
+        "remote-sensing"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale",
+        "planetary-scale",
+        "territorial-scale"
+      ],
+      "market_label": "post-harvest grain monitoring and traceability",
+      "self_cats": [],
+      "investor_ids": [
+        "kamay_ventures"
+      ]
     },
     {
       "id": "wiseconn-cl",
@@ -20297,8 +29499,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 19,
-      "pagerank": 0.0026623196237366615,
+      "community_id": 33,
+      "pagerank": 0.0017667187653776387,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Farm Intelligence",
@@ -20311,7 +29513,16 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 10.105,
-      "sy": 8.433
+      "sy": 8.433,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [],
+      "investor_ids": [
+        "morningside_group"
+      ]
     },
     {
       "id": "zoomagri",
@@ -20341,10 +29552,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 9.0,
       "quality_band": "high",
-      "community_id": 8,
-      "pagerank": 0.0015422876457031633,
+      "community_id": 4,
+      "pagerank": 0.0010541775187002263,
       "valuation_tier": 2.0,
-      "n_investors_mapped": 1,
+      "n_investors_mapped": 2,
       "bio_theme": "Farm Intelligence",
       "bio_theme_secondary": "Food Systems & Alt Proteins",
       "is_bio_universe": 0,
@@ -20355,7 +29566,33 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 10.16,
-      "sy": 8.116
+      "sy": 8.116,
+      "bio_lens": [
+        "biocentric",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food"
+      ],
+      "tech_tags": [
+        "ai-data"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale",
+        "product-scale",
+        "territorial-scale"
+      ],
+      "market_label": "agri commodity inspection intelligence",
+      "self_cats": [
+        "Precision Ag",
+        "AI / Data",
+        "AgTech"
+      ],
+      "investor_ids": [
+        "inventure",
+        "sp_ventures"
+      ]
     },
     {
       "id": "agricapital",
@@ -20387,7 +29624,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 8.0,
       "quality_band": "medium",
       "community_id": 4,
-      "pagerank": 0.0014808293473960858,
+      "pagerank": 0.0009818313338734893,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -20400,7 +29637,32 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 1.216,
-      "sy": 10.027
+      "sy": 10.027,
+      "bio_lens": [
+        "biocentric",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "ai-data"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale",
+        "planetary-scale"
+      ],
+      "market_label": "smallholder agricultural financing platform",
+      "self_cats": [
+        "FinTech",
+        "AgTech"
+      ],
+      "investor_ids": [
+        "the_yield_lab_latam"
+      ]
     },
     {
       "id": "agroforte",
@@ -20433,7 +29695,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 8.5,
       "quality_band": "high",
       "community_id": 4,
-      "pagerank": 0.0014808293473960858,
+      "pagerank": 0.0009818313338734893,
       "valuation_tier": 2.0,
       "n_investors_mapped": 1,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -20446,7 +29708,34 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 1.175,
-      "sy": 10.027
+      "sy": 10.027,
+      "bio_lens": [
+        "biocentric",
+        "human-health-bio",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "climate-resource",
+        "human-health"
+      ],
+      "tech_tags": [
+        "ai-data"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "human-scale",
+        "industrial-scale",
+        "planetary-scale"
+      ],
+      "market_label": "animal production financial infrastructure",
+      "self_cats": [
+        "FinTech"
+      ],
+      "investor_ids": [
+        "the_yield_lab_latam"
+      ]
     },
     {
       "id": "agrofy",
@@ -20480,8 +29769,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 20,
-      "pagerank": 0.001471429806641878,
+      "community_id": 21,
+      "pagerank": 0.0009804311778181985,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -20494,7 +29783,29 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 1.141,
-      "sy": 9.989
+      "sy": 9.989,
+      "bio_lens": [
+        "biocentric",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biodiversity-nature",
+        "climate-resource"
+      ],
+      "tech_tags": [],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale",
+        "planetary-scale"
+      ],
+      "market_label": "digital agribusiness marketplace and agfintech ecosystem",
+      "self_cats": [
+        "Biotech"
+      ],
+      "investor_ids": [
+        "sp_ventures"
+      ]
     },
     {
       "id": "agrolend",
@@ -20525,10 +29836,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 20,
-      "pagerank": 0.0017752455004572754,
+      "community_id": 8,
+      "pagerank": 0.0019431104466184257,
       "valuation_tier": null,
-      "n_investors_mapped": 3,
+      "n_investors_mapped": 4,
       "bio_theme": "Nature & Ecosystem Tech",
       "bio_theme_secondary": "Farm Intelligence",
       "is_bio_universe": 0,
@@ -20539,7 +29850,36 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 1.207,
-      "sy": 10.018
+      "sy": 10.018,
+      "bio_lens": [
+        "biocentric",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biodiversity-nature"
+      ],
+      "tech_tags": [
+        "ai-data"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale",
+        "planetary-scale"
+      ],
+      "market_label": "agricultural credit and risk intelligence",
+      "self_cats": [
+        "NatureTech",
+        "FinTech",
+        "AgTech"
+      ],
+      "investor_ids": [
+        "barn_investimentos",
+        "sp_ventures",
+        "syngenta_ventures",
+        "valor_capital_group"
+      ]
     },
     {
       "id": "blooms",
@@ -20570,7 +29910,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 8.0,
       "quality_band": "medium",
       "community_id": 4,
-      "pagerank": 0.0015112955451045938,
+      "pagerank": 0.0010661979833658142,
       "valuation_tier": null,
       "n_investors_mapped": 2,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -20583,7 +29923,28 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 1.104,
-      "sy": 10.027
+      "sy": 10.027,
+      "bio_lens": [
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "ai-data"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale",
+        "planetary-scale"
+      ],
+      "market_label": "fresh-produce exporter trade-finance platform",
+      "self_cats": [],
+      "investor_ids": [
+        "sp_ventures",
+        "the_yield_lab_latam"
+      ]
     },
     {
       "id": "brain_ag",
@@ -20614,8 +29975,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 20,
-      "pagerank": 0.0014707527800261334,
+      "community_id": 21,
+      "pagerank": 0.0009798973546472373,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Farm Intelligence",
@@ -20628,7 +29989,31 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 10.262,
-      "sy": 9.156
+      "sy": 9.156,
+      "bio_lens": [
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "remote-sensing"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale",
+        "planetary-scale"
+      ],
+      "market_label": "agribusiness credit and socioenvironmental risk platform",
+      "self_cats": [
+        "FinTech",
+        "SaaS / Platform"
+      ],
+      "investor_ids": [
+        "sp_ventures"
+      ]
     },
     {
       "id": "culttivo",
@@ -20660,8 +30045,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 4,
-      "pagerank": 0.0016119065361086423,
+      "community_id": 18,
+      "pagerank": 0.0010958467112368035,
       "valuation_tier": null,
       "n_investors_mapped": 2,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -20674,7 +30059,34 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 1.166,
-      "sy": 9.981
+      "sy": 9.981,
+      "bio_lens": [
+        "biocentric",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "remote-sensing"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale",
+        "planetary-scale"
+      ],
+      "market_label": "coffee producer credit and climate-risk intelligence",
+      "self_cats": [
+        "FinTech",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "kptl",
+        "the_yield_lab_latam"
+      ]
     },
     {
       "id": "incluirtec",
@@ -20706,7 +30118,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 8.0,
       "quality_band": "medium",
       "community_id": 4,
-      "pagerank": 0.0014808293473960858,
+      "pagerank": 0.0009818313338734893,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -20719,7 +30131,31 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 1.263,
-      "sy": 10.001
+      "sy": 10.001,
+      "bio_lens": [
+        "biocentric",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "ai-data"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale",
+        "planetary-scale"
+      ],
+      "market_label": "agrifintech infrastructure for smallholder inclusion",
+      "self_cats": [
+        "FinTech"
+      ],
+      "investor_ids": [
+        "the_yield_lab_latam"
+      ]
     },
     {
       "id": "sette",
@@ -20751,8 +30187,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 20,
-      "pagerank": 0.001471429806641878,
+      "community_id": 21,
+      "pagerank": 0.0009804311778181985,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -20765,7 +30201,33 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 1.09,
-      "sy": 10.045
+      "sy": 10.045,
+      "bio_lens": [
+        "biocentric",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biodiversity-nature",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "remote-sensing"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale",
+        "planetary-scale"
+      ],
+      "market_label": "agricultural guarantees and credit-risk infrastructure",
+      "self_cats": [
+        "FinTech",
+        "AgTech"
+      ],
+      "investor_ids": [
+        "sp_ventures"
+      ]
     },
     {
       "id": "siloreal",
@@ -20795,8 +30257,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 8,
-      "pagerank": 0.0015955027436847567,
+      "community_id": 4,
+      "pagerank": 0.0010464761218978908,
       "valuation_tier": 1.0,
       "n_investors_mapped": 2,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -20809,7 +30271,30 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 1.114,
-      "sy": 10.063
+      "sy": 10.063,
+      "bio_lens": [
+        "biocentric",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food"
+      ],
+      "tech_tags": [],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale",
+        "planetary-scale"
+      ],
+      "market_label": "agricultural asset verification and collateral infrastructure",
+      "self_cats": [
+        "FinTech",
+        "AgTech",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "DraperCygnus",
+        "inventure"
+      ]
     },
     {
       "id": "terramagna",
@@ -20840,7 +30325,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 8.0,
       "quality_band": "medium",
       "community_id": 4,
-      "pagerank": 0.0014836224686167491,
+      "pagerank": 0.0013895884616403733,
       "valuation_tier": null,
       "n_investors_mapped": 2,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -20853,7 +30338,29 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 1.172,
-      "sy": 9.999
+      "sy": 9.999,
+      "bio_lens": [
+        "biocentric",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "climate-resource"
+      ],
+      "tech_tags": [],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale",
+        "planetary-scale"
+      ],
+      "market_label": "agricultural credit and receivables infrastructure",
+      "self_cats": [
+        "AgTech"
+      ],
+      "investor_ids": [
+        "onevc",
+        "the_yield_lab_latam"
+      ]
     },
     {
       "id": "traive",
@@ -20884,10 +30391,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 20,
-      "pagerank": 0.0017765995536887648,
+      "community_id": 21,
+      "pagerank": 0.004096369227041027,
       "valuation_tier": null,
-      "n_investors_mapped": 2,
+      "n_investors_mapped": 7,
       "bio_theme": "Nature & Ecosystem Tech",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 0,
@@ -20898,7 +30405,36 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 1.143,
-      "sy": 9.992
+      "sy": 9.992,
+      "bio_lens": [
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "ai-data"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale",
+        "planetary-scale"
+      ],
+      "market_label": "AI-enabled agricultural credit and receivables infrastructure",
+      "self_cats": [
+        "AI / Data",
+        "AgTech"
+      ],
+      "investor_ids": [
+        "astella_investimentos",
+        "basf_venture_capital",
+        "bb_agro_ventures",
+        "fmc_ventures",
+        "kamay_ventures",
+        "sp_ventures",
+        "vox_capital"
+      ]
     },
     {
       "id": "verqor",
@@ -20930,7 +30466,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 8.0,
       "quality_band": "medium",
       "community_id": 4,
-      "pagerank": 0.0015112955451045938,
+      "pagerank": 0.0010058533765667432,
       "valuation_tier": null,
       "n_investors_mapped": 2,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -20943,7 +30479,33 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 1.244,
-      "sy": 10.03
+      "sy": 10.03,
+      "bio_lens": [
+        "biocentric",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "ai-data"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale",
+        "planetary-scale"
+      ],
+      "market_label": "digital agricultural finance platform",
+      "self_cats": [
+        "FinTech",
+        "AgTech"
+      ],
+      "investor_ids": [
+        "sp_ventures",
+        "the_yield_lab_latam"
+      ]
     },
     {
       "id": "agree",
@@ -20976,7 +30538,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 8.5,
       "quality_band": "high",
       "community_id": 4,
-      "pagerank": 0.0014808293473960858,
+      "pagerank": 0.0009818313338734893,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -20989,7 +30551,29 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 1.043,
-      "sy": 9.91
+      "sy": 9.91,
+      "bio_lens": [
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "ai-data"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale",
+        "planetary-scale"
+      ],
+      "market_label": "agri-food chain traceability and market infrastructure",
+      "self_cats": [
+        "FoodTech"
+      ],
+      "investor_ids": [
+        "the_yield_lab_latam"
+      ]
     },
     {
       "id": "agrojusto",
@@ -21021,8 +30605,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 9.0,
       "quality_band": "high",
-      "community_id": 8,
-      "pagerank": 0.0016715140530578546,
+      "community_id": 3,
+      "pagerank": 0.0012872903247519163,
       "valuation_tier": 1.0,
       "n_investors_mapped": 2,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -21035,7 +30619,28 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 0.991,
-      "sy": 9.937
+      "sy": 9.937,
+      "bio_lens": [
+        "biocentric"
+      ],
+      "domain_tags": [
+        "agri-food"
+      ],
+      "tech_tags": [
+        "ai-data"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale"
+      ],
+      "market_label": "smallholder food-market and traceability platform",
+      "self_cats": [
+        "FoodTech"
+      ],
+      "investor_ids": [
+        "Antom",
+        "glocal"
+      ]
     },
     {
       "id": "ecotrace-br",
@@ -21064,8 +30669,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 4,
-      "pagerank": 0.0016119065361086423,
+      "community_id": 18,
+      "pagerank": 0.0010958467112368035,
       "valuation_tier": null,
       "n_investors_mapped": 2,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -21078,7 +30683,21 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 1.055,
-      "sy": 9.805
+      "sy": 9.805,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [
+        "blockchain, IoT sensors, computer vision, AI/ML, supply chain traceability, commodity tracking"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Hardware / IoT"
+      ],
+      "investor_ids": [
+        "kptl",
+        "the_yield_lab_latam"
+      ]
     },
     {
       "id": "kilimo",
@@ -21110,10 +30729,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 9.0,
       "quality_band": "high",
-      "community_id": 8,
-      "pagerank": 0.0017412998128225527,
+      "community_id": 4,
+      "pagerank": 0.0019549181614857197,
       "valuation_tier": 3.0,
-      "n_investors_mapped": 4,
+      "n_investors_mapped": 5,
       "bio_theme": "Nature & Ecosystem Tech",
       "bio_theme_secondary": "",
       "is_bio_universe": 1,
@@ -21124,7 +30743,37 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 10.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 1.005,
-      "sy": 10.045
+      "sy": 10.045,
+      "bio_lens": [
+        "biocentric",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biodiversity-nature",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "ai-data"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale",
+        "planetary-scale",
+        "territorial-scale"
+      ],
+      "market_label": "climate ag platform",
+      "self_cats": [
+        "AgTech"
+      ],
+      "investor_ids": [
+        "Antom",
+        "glocal",
+        "kamay_ventures",
+        "salkantay_ventures",
+        "the_yield_lab_latam"
+      ]
     },
     {
       "id": "nativas",
@@ -21159,7 +30808,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 8.0,
       "quality_band": "medium",
       "community_id": -1,
-      "pagerank": 0.0014389325290861364,
+      "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -21172,7 +30821,32 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
       "sx": 1.01,
-      "sy": 10.084
+      "sy": 10.084,
+      "bio_lens": [
+        "biocentric",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biodiversity-nature",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "remote-sensing"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale",
+        "planetary-scale"
+      ],
+      "market_label": "ecosystem-services and regenerative agriculture platform",
+      "self_cats": [
+        "NatureTech",
+        "AgTech"
+      ],
+      "investor_ids": []
     },
     {
       "id": "produzindo-certo",
@@ -21204,7 +30878,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 8.0,
       "quality_band": "medium",
       "community_id": 4,
-      "pagerank": 0.0014808293473960858,
+      "pagerank": 0.0009818313338734893,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -21217,7 +30891,28 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 1.061,
-      "sy": 9.846
+      "sy": 9.846,
+      "bio_lens": [
+        "biocentric",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "ai-data"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale",
+        "planetary-scale"
+      ],
+      "market_label": "agribusiness transparency and compliance platform",
+      "self_cats": [],
+      "investor_ids": [
+        "the_yield_lab_latam"
+      ]
     },
     {
       "id": "tracestory",
@@ -21250,8 +30945,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 8,
-      "pagerank": 0.0015422876457031633,
+      "community_id": 4,
+      "pagerank": 0.0010301554760069726,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -21264,7 +30959,30 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 1.047,
-      "sy": 9.868
+      "sy": 9.868,
+      "bio_lens": [
+        "biocentric",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "carbon-mrv"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale",
+        "planetary-scale",
+        "product-scale"
+      ],
+      "market_label": "traceability and sustainability infrastructure",
+      "self_cats": [],
+      "investor_ids": [
+        "inventure"
+      ]
     },
     {
       "id": "ucrop-it-ar",
@@ -21292,8 +31010,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 8,
-      "pagerank": 0.0016015583369997561,
+      "community_id": 18,
+      "pagerank": 0.0017603142606215246,
       "valuation_tier": null,
       "n_investors_mapped": 2,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -21306,7 +31024,21 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 0.995,
-      "sy": 9.598
+      "sy": 9.598,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [
+        "satellite remote sensing, NDVI/EVI monitoring, blockchain traceability, land use change detection, EUDR compliance"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Precision Ag"
+      ],
+      "investor_ids": [
+        "glocal",
+        "the_yield_lab_latam"
+      ]
     },
     {
       "id": "waterplan",
@@ -21337,7 +31069,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 8.0,
       "quality_band": "medium",
       "community_id": 18,
-      "pagerank": 0.0017563518833738404,
+      "pagerank": 0.0011788229044902747,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -21350,7 +31082,26 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
       "sx": 1.017,
-      "sy": 10.028
+      "sy": 10.028,
+      "bio_lens": [
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "ai-data"
+      ],
+      "scale_tags": [
+        "industrial-scale",
+        "planetary-scale",
+        "territorial-scale"
+      ],
+      "market_label": "water-risk and stewardship intelligence",
+      "self_cats": [],
+      "investor_ids": [
+        "newtopia_vc"
+      ]
     }
   ],
   "clusters": [
@@ -21398,7 +31149,7 @@ window.STARTUP_THEMES_DATA = {
         "Colombia": 1,
         "Uruguay": 1
       },
-      "n_funded": 22,
+      "n_funded": 26,
       "n_featured": 3
     },
     {
@@ -21496,7 +31247,7 @@ window.STARTUP_THEMES_DATA = {
         "USA": 1,
         "Peru": 1
       },
-      "n_funded": 6,
+      "n_funded": 12,
       "n_featured": 0
     },
     {
@@ -21602,7 +31353,7 @@ window.STARTUP_THEMES_DATA = {
         "Argentina": 13,
         "Colombia": 1
       },
-      "n_funded": 25,
+      "n_funded": 26,
       "n_featured": 1
     },
     {
@@ -21705,7 +31456,7 @@ window.STARTUP_THEMES_DATA = {
         "Chile": 4,
         "Mexico": 2
       },
-      "n_funded": 23,
+      "n_funded": 25,
       "n_featured": 2
     },
     {
@@ -21737,7 +31488,7 @@ window.STARTUP_THEMES_DATA = {
         "Mexico": 1,
         "Costa Rica": 1
       },
-      "n_funded": 5,
+      "n_funded": 7,
       "n_featured": 0
     },
     {
@@ -21774,7 +31525,7 @@ window.STARTUP_THEMES_DATA = {
         "Mexico": 2,
         "Chile": 1
       },
-      "n_funded": 12,
+      "n_funded": 15,
       "n_featured": 1
     },
     {
@@ -21808,7 +31559,7 @@ window.STARTUP_THEMES_DATA = {
         "USA": 1,
         "Costa Rica": 1
       },
-      "n_funded": 8,
+      "n_funded": 11,
       "n_featured": 0
     },
     {
@@ -21883,7 +31634,7 @@ window.STARTUP_THEMES_DATA = {
         "Brazil": 12,
         "Mexico": 1
       },
-      "n_funded": 5,
+      "n_funded": 6,
       "n_featured": 0
     },
     {
@@ -22004,7 +31755,7 @@ window.STARTUP_THEMES_DATA = {
         "Argentina": 1,
         "Mexico": 2
       },
-      "n_funded": 0,
+      "n_funded": 1,
       "n_featured": 0
     },
     {
@@ -22077,7 +31828,7 @@ window.STARTUP_THEMES_DATA = {
         "Colombia": 1,
         "Costa Rica": 1
       },
-      "n_funded": 8,
+      "n_funded": 9,
       "n_featured": 1
     },
     {
@@ -22106,7 +31857,7 @@ window.STARTUP_THEMES_DATA = {
         "Argentina": 1,
         "Brazil": 1
       },
-      "n_funded": 0,
+      "n_funded": 2,
       "n_featured": 0
     },
     {
@@ -22488,8 +32239,2662 @@ window.STARTUP_THEMES_DATA = {
       "group": "research"
     }
   },
+  "funds": [
+    {
+      "id": "GridX",
+      "name": "GridX",
+      "n": 97
+    },
+    {
+      "id": "sp_ventures",
+      "name": "SP Ventures",
+      "n": 35
+    },
+    {
+      "id": "the_yield_lab_latam",
+      "name": "The Yield Lab LATAM",
+      "n": 29
+    },
+    {
+      "id": "SF500",
+      "name": "SF500",
+      "n": 22
+    },
+    {
+      "id": "AIR Capital",
+      "name": "AIR Capital",
+      "n": 20
+    },
+    {
+      "id": "The Ganesha Lab",
+      "name": "The Ganesha Lab",
+      "n": 19
+    },
+    {
+      "id": "CITES",
+      "name": "CITES",
+      "n": 15
+    },
+    {
+      "id": "zentynel",
+      "name": "Zentynel",
+      "n": 14
+    },
+    {
+      "id": "inventure",
+      "name": "Inventure",
+      "n": 11
+    },
+    {
+      "id": "glocal",
+      "name": "GLOCAL",
+      "n": 10
+    },
+    {
+      "id": "kamay_ventures",
+      "name": "Kamay Ventures",
+      "n": 10
+    },
+    {
+      "id": "Antom",
+      "name": "Antom",
+      "n": 9
+    },
+    {
+      "id": "kptl",
+      "name": "KPTL",
+      "n": 9
+    },
+    {
+      "id": "DraperCygnus",
+      "name": "DraperCygnus",
+      "n": 8
+    },
+    {
+      "id": "SOSV_IndieBio",
+      "name": "SOSV_IndieBio",
+      "n": 8
+    },
+    {
+      "id": "savia_ventures",
+      "name": "Savia Ventures",
+      "n": 8
+    },
+    {
+      "id": "aceleradora_litoral",
+      "name": "Aceleradora Litoral",
+      "n": 7
+    },
+    {
+      "id": "barn_investimentos",
+      "name": "Barn Investimentos",
+      "n": 4
+    },
+    {
+      "id": "endurance_28",
+      "name": "Endurance 28",
+      "n": 4
+    },
+    {
+      "id": "newtopia_vc",
+      "name": "Newtopia VC",
+      "n": 4
+    },
+    {
+      "id": "pampa_start",
+      "name": "Pampa Start",
+      "n": 4
+    },
+    {
+      "id": "valor_capital_group",
+      "name": "Valor Capital Group",
+      "n": 4
+    },
+    {
+      "id": "vox_capital",
+      "name": "Vox Capital",
+      "n": 4
+    },
+    {
+      "id": "chileglobal_ventures",
+      "name": "ChileGlobal Ventures",
+      "n": 3
+    },
+    {
+      "id": "grupo_insud",
+      "name": "Grupo Insud",
+      "n": 3
+    },
+    {
+      "id": "bb_agro_ventures",
+      "name": "Banco do Brasil Agro Ventures",
+      "n": 2
+    },
+    {
+      "id": "blue_horizon",
+      "name": "Blue Horizon",
+      "n": 2
+    },
+    {
+      "id": "corteva_catalyst",
+      "name": "Corteva Catalyst",
+      "n": 2
+    },
+    {
+      "id": "dalus_capital",
+      "name": "Dalus Capital",
+      "n": 2
+    },
+    {
+      "id": "DragonesVP",
+      "name": "DragonesVP",
+      "n": 2
+    },
+    {
+      "id": "eatable_adventures",
+      "name": "Eatable Adventures",
+      "n": 2
+    },
+    {
+      "id": "idb_lab",
+      "name": "IDB Lab",
+      "n": 2
+    },
+    {
+      "id": "kaszek",
+      "name": "Kaszek Ventures",
+      "n": 2
+    },
+    {
+      "id": "mov_investimentos",
+      "name": "MOV Investimentos",
+      "n": 2
+    },
+    {
+      "id": "monashees",
+      "name": "Monashees",
+      "n": 2
+    },
+    {
+      "id": "sosv",
+      "name": "SOSV",
+      "n": 2
+    },
+    {
+      "id": "syngenta_ventures",
+      "name": "Syngenta Group Ventures",
+      "n": 2
+    }
+  ],
+  "tokens_vocab": {
+    "macro": [
+      {
+        "v": "therapeutics and regenerative medicine",
+        "n": 94
+      },
+      {
+        "v": "diagnostics and medtech",
+        "n": 88
+      },
+      {
+        "v": "ag biologicals and crop resilience",
+        "n": 70
+      },
+      {
+        "v": "climate, energy and resource systems",
+        "n": 65
+      },
+      {
+        "v": "precision agriculture and resource intelligence",
+        "n": 44
+      },
+      {
+        "v": "food biotech and novel ingredients",
+        "n": 43
+      },
+      {
+        "v": "biobased chemistry and advanced materials",
+        "n": 38
+      },
+      {
+        "v": "biomanufacturing and bioindustrial platforms",
+        "n": 26
+      },
+      {
+        "v": "computational biology and scientific software",
+        "n": 12
+      },
+      {
+        "v": "agricultural market infrastructure and data systems",
+        "n": 7
+      }
+    ],
+    "bio_lens": [
+      {
+        "v": "human-health-bio",
+        "n": 195
+      },
+      {
+        "v": "biocentric",
+        "n": 194
+      },
+      {
+        "v": "biobased",
+        "n": 193
+      },
+      {
+        "v": "planetary-boundary",
+        "n": 163
+      },
+      {
+        "v": "regenerative",
+        "n": 115
+      },
+      {
+        "v": "bio-enabled-industrial-transition",
+        "n": 86
+      },
+      {
+        "v": "circular",
+        "n": 33
+      }
+    ],
+    "domain": [
+      {
+        "v": "agri-food",
+        "n": 180
+      },
+      {
+        "v": "human-health",
+        "n": 125
+      },
+      {
+        "v": "climate-resource",
+        "n": 96
+      },
+      {
+        "v": "therapeutics-regenerative",
+        "n": 66
+      },
+      {
+        "v": "diagnostics-medtech",
+        "n": 54
+      },
+      {
+        "v": "biomanufacturing",
+        "n": 44
+      },
+      {
+        "v": "biodiversity-nature",
+        "n": 36
+      },
+      {
+        "v": "biomaterials",
+        "n": 35
+      },
+      {
+        "v": "industrial-biotech",
+        "n": 25
+      }
+    ],
+    "tech": [
+      {
+        "v": "ai-data",
+        "n": 214
+      },
+      {
+        "v": "therapeutics",
+        "n": 91
+      },
+      {
+        "v": "diagnostics",
+        "n": 83
+      },
+      {
+        "v": "biomaterials",
+        "n": 48
+      },
+      {
+        "v": "biomanufacturing",
+        "n": 42
+      },
+      {
+        "v": "bioinputs",
+        "n": 40
+      },
+      {
+        "v": "fermentation",
+        "n": 38
+      },
+      {
+        "v": "remote-sensing",
+        "n": 25
+      },
+      {
+        "v": "synthetic-biology",
+        "n": 20
+      },
+      {
+        "v": "iot",
+        "n": 13
+      },
+      {
+        "v": "precision-fermentation",
+        "n": 13
+      },
+      {
+        "v": "carbon-mrv",
+        "n": 12
+      },
+      {
+        "v": "remediation",
+        "n": 8
+      },
+      {
+        "v": "enzymes",
+        "n": 6
+      }
+    ],
+    "scale": [
+      {
+        "v": "industrial-scale",
+        "n": 156
+      },
+      {
+        "v": "agroecosystem-scale",
+        "n": 143
+      },
+      {
+        "v": "human-scale",
+        "n": 127
+      },
+      {
+        "v": "planetary-scale",
+        "n": 120
+      },
+      {
+        "v": "molecular-scale",
+        "n": 101
+      },
+      {
+        "v": "product-scale",
+        "n": 98
+      },
+      {
+        "v": "territorial-scale",
+        "n": 64
+      }
+    ]
+  },
   "graph": {
-    "investor_nodes": [],
-    "edges": []
+    "investor_nodes": [
+      {
+        "id": "AIR Capital",
+        "name": "AIR Capital",
+        "n_investments": 20
+      },
+      {
+        "id": "Antom",
+        "name": "Antom",
+        "n_investments": 9
+      },
+      {
+        "id": "CITES",
+        "name": "CITES",
+        "n_investments": 15
+      },
+      {
+        "id": "DragonesVP",
+        "name": "DragonesVP",
+        "n_investments": 2
+      },
+      {
+        "id": "DraperCygnus",
+        "name": "DraperCygnus",
+        "n_investments": 8
+      },
+      {
+        "id": "GridX",
+        "name": "GridX",
+        "n_investments": 97
+      },
+      {
+        "id": "SF500",
+        "name": "SF500",
+        "n_investments": 22
+      },
+      {
+        "id": "SOSV_IndieBio",
+        "name": "SOSV_IndieBio",
+        "n_investments": 8
+      },
+      {
+        "id": "The Ganesha Lab",
+        "name": "The Ganesha Lab",
+        "n_investments": 19
+      },
+      {
+        "id": "aceleradora_litoral",
+        "name": "Aceleradora Litoral",
+        "n_investments": 7
+      },
+      {
+        "id": "acre_venture_partners",
+        "name": "Acre Venture Partners",
+        "n_investments": 1
+      },
+      {
+        "id": "agrex",
+        "name": "Agrex",
+        "n_investments": 1
+      },
+      {
+        "id": "angra_partners",
+        "name": "Angra Partners",
+        "n_investments": 1
+      },
+      {
+        "id": "aqua_capital",
+        "name": "Aqua Capital",
+        "n_investments": 1
+      },
+      {
+        "id": "arauco_ventures",
+        "name": "Arauco Ventures",
+        "n_investments": 1
+      },
+      {
+        "id": "astanor",
+        "name": "Astanor Ventures",
+        "n_investments": 1
+      },
+      {
+        "id": "astella_investimentos",
+        "name": "Astella Investimentos",
+        "n_investments": 1
+      },
+      {
+        "id": "aurus_capital",
+        "name": "Aurus Capital",
+        "n_investments": 1
+      },
+      {
+        "id": "axventures_pymar",
+        "name": "AxVentures-Pymar Fund",
+        "n_investments": 1
+      },
+      {
+        "id": "barn_investimentos",
+        "name": "Barn Investimentos",
+        "n_investments": 4
+      },
+      {
+        "id": "base_capital",
+        "name": "Base Capital",
+        "n_investments": 1
+      },
+      {
+        "id": "basf_venture_capital",
+        "name": "BASF Venture Capital",
+        "n_investments": 1
+      },
+      {
+        "id": "bb_agro_ventures",
+        "name": "Banco do Brasil Agro Ventures",
+        "n_investments": 2
+      },
+      {
+        "id": "blue_horizon",
+        "name": "Blue Horizon",
+        "n_investments": 2
+      },
+      {
+        "id": "btg_pactual",
+        "name": "BTG Pactual",
+        "n_investments": 1
+      },
+      {
+        "id": "carao_ventures",
+        "name": "Carao Ventures",
+        "n_investments": 1
+      },
+      {
+        "id": "cdpq",
+        "name": "CDPQ (Caisse de dépôt)",
+        "n_investments": 1
+      },
+      {
+        "id": "cf_acquisition_corp8",
+        "name": "CF Acquisition Corp. VIII",
+        "n_investments": 1
+      },
+      {
+        "id": "chileglobal_ventures",
+        "name": "ChileGlobal Ventures",
+        "n_investments": 3
+      },
+      {
+        "id": "cj_cheiljedang",
+        "name": "CJ CheilJedang",
+        "n_investments": 1
+      },
+      {
+        "id": "claritas_capital",
+        "name": "Claritas Capital",
+        "n_investments": 1
+      },
+      {
+        "id": "collaborative_fund",
+        "name": "Collaborative Fund",
+        "n_investments": 1
+      },
+      {
+        "id": "corteva_catalyst",
+        "name": "Corteva Catalyst",
+        "n_investments": 2
+      },
+      {
+        "id": "cuna_del_mar",
+        "name": "Cuna del Mar",
+        "n_investments": 1
+      },
+      {
+        "id": "dalus_capital",
+        "name": "Dalus Capital",
+        "n_investments": 2
+      },
+      {
+        "id": "dila_capital",
+        "name": "DILA Capital",
+        "n_investments": 1
+      },
+      {
+        "id": "draper_cygnus",
+        "name": "Draper Cygnus",
+        "n_investments": 1
+      },
+      {
+        "id": "eatable_adventures",
+        "name": "Eatable Adventures",
+        "n_investments": 2
+      },
+      {
+        "id": "eb_capital",
+        "name": "eB Capital",
+        "n_investments": 1
+      },
+      {
+        "id": "ecoa_capital",
+        "name": "Ecoa Capital",
+        "n_investments": 1
+      },
+      {
+        "id": "electrifi",
+        "name": "ElectriFI",
+        "n_investments": 1
+      },
+      {
+        "id": "endeavor_catalyst",
+        "name": "Endeavor Catalyst",
+        "n_investments": 1
+      },
+      {
+        "id": "endurance_28",
+        "name": "Endurance 28",
+        "n_investments": 4
+      },
+      {
+        "id": "fen_ventures",
+        "name": "Fen Ventures",
+        "n_investments": 1
+      },
+      {
+        "id": "fmc_ventures",
+        "name": "FMC Ventures",
+        "n_investments": 1
+      },
+      {
+        "id": "fondo_alerce",
+        "name": "Fondo Alerce VC",
+        "n_investments": 1
+      },
+      {
+        "id": "front_row_fund",
+        "name": "Front Row Fund",
+        "n_investments": 1
+      },
+      {
+        "id": "gef",
+        "name": "Global Environment Facility",
+        "n_investments": 1
+      },
+      {
+        "id": "global_fund_coral_reefs",
+        "name": "Global Fund for Coral Reefs",
+        "n_investments": 1
+      },
+      {
+        "id": "globo_ventures",
+        "name": "Globo Ventures",
+        "n_investments": 1
+      },
+      {
+        "id": "glocal",
+        "name": "GLOCAL",
+        "n_investments": 10
+      },
+      {
+        "id": "grupo_insud",
+        "name": "Grupo Insud",
+        "n_investments": 3
+      },
+      {
+        "id": "hatch",
+        "name": "Hatch",
+        "n_investments": 1
+      },
+      {
+        "id": "idb_invest",
+        "name": "IDB Invest",
+        "n_investments": 1
+      },
+      {
+        "id": "idb_lab",
+        "name": "IDB Lab",
+        "n_investments": 2
+      },
+      {
+        "id": "innventure",
+        "name": "Innventure AgriFood Tech",
+        "n_investments": 1
+      },
+      {
+        "id": "inventure",
+        "name": "Inventure",
+        "n_investments": 11
+      },
+      {
+        "id": "john_deere_ventures",
+        "name": "John Deere Ventures",
+        "n_investments": 1
+      },
+      {
+        "id": "kamay_ventures",
+        "name": "Kamay Ventures",
+        "n_investments": 10
+      },
+      {
+        "id": "kaszek",
+        "name": "Kaszek Ventures",
+        "n_investments": 2
+      },
+      {
+        "id": "kawisafi_ventures",
+        "name": "KawiSafi Ventures",
+        "n_investments": 1
+      },
+      {
+        "id": "kayyak_ventures",
+        "name": "Kayyak Ventures",
+        "n_investments": 1
+      },
+      {
+        "id": "kptl",
+        "name": "KPTL",
+        "n_investments": 9
+      },
+      {
+        "id": "lightjump_acquisition",
+        "name": "LightJump Acquisition Corp",
+        "n_investments": 1
+      },
+      {
+        "id": "lightsmith_group",
+        "name": "Lightsmith Group",
+        "n_investments": 1
+      },
+      {
+        "id": "lowercarbon_capital",
+        "name": "Lowercarbon Capital",
+        "n_investments": 1
+      },
+      {
+        "id": "maya_capital",
+        "name": "Maya Capital",
+        "n_investments": 1
+      },
+      {
+        "id": "monashees",
+        "name": "Monashees",
+        "n_investments": 2
+      },
+      {
+        "id": "morningside_group",
+        "name": "Morningside Group",
+        "n_investments": 1
+      },
+      {
+        "id": "mov_investimentos",
+        "name": "MOV Investimentos",
+        "n_investments": 2
+      },
+      {
+        "id": "nazca",
+        "name": "Nazca",
+        "n_investments": 1
+      },
+      {
+        "id": "newtopia_vc",
+        "name": "Newtopia VC",
+        "n_investments": 4
+      },
+      {
+        "id": "nubarium_capital",
+        "name": "Nubarium Capital",
+        "n_investments": 1
+      },
+      {
+        "id": "onevc",
+        "name": "OneVC",
+        "n_investments": 1
+      },
+      {
+        "id": "ospraie_ag_science",
+        "name": "Ospraie Ag Science",
+        "n_investments": 1
+      },
+      {
+        "id": "pampa_start",
+        "name": "Pampa Start",
+        "n_investments": 4
+      },
+      {
+        "id": "pitanga",
+        "name": "Pitanga Fund",
+        "n_investments": 1
+      },
+      {
+        "id": "plug_and_play",
+        "name": "Plug and Play Tech Center",
+        "n_investments": 1
+      },
+      {
+        "id": "porsche_ag",
+        "name": "Porsche AG",
+        "n_investments": 1
+      },
+      {
+        "id": "salkantay_ventures",
+        "name": "Salkantay Ventures",
+        "n_investments": 1
+      },
+      {
+        "id": "savia_ventures",
+        "name": "Savia Ventures",
+        "n_investments": 8
+      },
+      {
+        "id": "shell_foundation",
+        "name": "Shell Foundation",
+        "n_investments": 1
+      },
+      {
+        "id": "softbank_latam",
+        "name": "SoftBank Latin America Fund",
+        "n_investments": 1
+      },
+      {
+        "id": "sosv",
+        "name": "SOSV",
+        "n_investments": 2
+      },
+      {
+        "id": "sp_ventures",
+        "name": "SP Ventures",
+        "n_investments": 35
+      },
+      {
+        "id": "sumitomo_corp",
+        "name": "Sumitomo Corporation",
+        "n_investments": 1
+      },
+      {
+        "id": "supply_change_capital",
+        "name": "Supply Change Capital",
+        "n_investments": 1
+      },
+      {
+        "id": "syngenta_ventures",
+        "name": "Syngenta Group Ventures",
+        "n_investments": 2
+      },
+      {
+        "id": "the_yield_lab_latam",
+        "name": "The Yield Lab LATAM",
+        "n_investments": 29
+      },
+      {
+        "id": "union_acquisition_corp",
+        "name": "Union Acquisition Corp. II",
+        "n_investments": 1
+      },
+      {
+        "id": "union_square_ventures",
+        "name": "Union Square Ventures",
+        "n_investments": 1
+      },
+      {
+        "id": "valor_capital_group",
+        "name": "Valor Capital Group",
+        "n_investments": 4
+      },
+      {
+        "id": "varana_capital",
+        "name": "Varana Capital",
+        "n_investments": 1
+      },
+      {
+        "id": "visa_ventures",
+        "name": "Visa Ventures",
+        "n_investments": 1
+      },
+      {
+        "id": "vox_capital",
+        "name": "Vox Capital",
+        "n_investments": 4
+      },
+      {
+        "id": "water_lemon_ventures",
+        "name": "Waterlemon Ventures",
+        "n_investments": 1
+      },
+      {
+        "id": "zentynel",
+        "name": "Zentynel",
+        "n_investments": 14
+      }
+    ],
+    "edges": [
+      {
+        "investor_id": "AIR Capital",
+        "startup_id": "aplife_biotech"
+      },
+      {
+        "investor_id": "AIR Capital",
+        "startup_id": "argentag"
+      },
+      {
+        "investor_id": "AIR Capital",
+        "startup_id": "ayuvant"
+      },
+      {
+        "investor_id": "AIR Capital",
+        "startup_id": "branch_energy"
+      },
+      {
+        "investor_id": "AIR Capital",
+        "startup_id": "calice_biotech"
+      },
+      {
+        "investor_id": "AIR Capital",
+        "startup_id": "cellva"
+      },
+      {
+        "investor_id": "AIR Capital",
+        "startup_id": "done_properly"
+      },
+      {
+        "investor_id": "AIR Capital",
+        "startup_id": "epiliquid"
+      },
+      {
+        "investor_id": "AIR Capital",
+        "startup_id": "ergo_foods"
+      },
+      {
+        "investor_id": "AIR Capital",
+        "startup_id": "gigablue"
+      },
+      {
+        "investor_id": "AIR Capital",
+        "startup_id": "inner_cosmos"
+      },
+      {
+        "investor_id": "AIR Capital",
+        "startup_id": "laurus"
+      },
+      {
+        "investor_id": "AIR Capital",
+        "startup_id": "laurus_ag_tech"
+      },
+      {
+        "investor_id": "AIR Capital",
+        "startup_id": "onco_precision"
+      },
+      {
+        "investor_id": "AIR Capital",
+        "startup_id": "oncoliq"
+      },
+      {
+        "investor_id": "AIR Capital",
+        "startup_id": "outpost"
+      },
+      {
+        "investor_id": "AIR Capital",
+        "startup_id": "puna_bio"
+      },
+      {
+        "investor_id": "AIR Capital",
+        "startup_id": "satellites_on_fire"
+      },
+      {
+        "investor_id": "AIR Capital",
+        "startup_id": "stamm"
+      },
+      {
+        "investor_id": "AIR Capital",
+        "startup_id": "sylvarum"
+      },
+      {
+        "investor_id": "Antom",
+        "startup_id": "agrojusto"
+      },
+      {
+        "investor_id": "Antom",
+        "startup_id": "circclo"
+      },
+      {
+        "investor_id": "Antom",
+        "startup_id": "eiru"
+      },
+      {
+        "investor_id": "Antom",
+        "startup_id": "huiro"
+      },
+      {
+        "investor_id": "Antom",
+        "startup_id": "kilimo"
+      },
+      {
+        "investor_id": "Antom",
+        "startup_id": "nideport"
+      },
+      {
+        "investor_id": "Antom",
+        "startup_id": "poas_bioenergy"
+      },
+      {
+        "investor_id": "Antom",
+        "startup_id": "ruuts"
+      },
+      {
+        "investor_id": "Antom",
+        "startup_id": "satellites_on_fire"
+      },
+      {
+        "investor_id": "CITES",
+        "startup_id": "amnova-biotech-cl"
+      },
+      {
+        "investor_id": "CITES",
+        "startup_id": "ardan"
+      },
+      {
+        "investor_id": "CITES",
+        "startup_id": "baxxis-medtech-cl"
+      },
+      {
+        "investor_id": "CITES",
+        "startup_id": "bioseek"
+      },
+      {
+        "investor_id": "CITES",
+        "startup_id": "circa_therapeutics"
+      },
+      {
+        "investor_id": "CITES",
+        "startup_id": "eolo_pharma"
+      },
+      {
+        "investor_id": "CITES",
+        "startup_id": "epiliquid"
+      },
+      {
+        "investor_id": "CITES",
+        "startup_id": "ergo_bioscience"
+      },
+      {
+        "investor_id": "CITES",
+        "startup_id": "imvalv"
+      },
+      {
+        "investor_id": "CITES",
+        "startup_id": "limay_biosciences"
+      },
+      {
+        "investor_id": "CITES",
+        "startup_id": "pepton"
+      },
+      {
+        "investor_id": "CITES",
+        "startup_id": "phylumtech"
+      },
+      {
+        "investor_id": "CITES",
+        "startup_id": "radbio"
+      },
+      {
+        "investor_id": "CITES",
+        "startup_id": "single_strand_biotech"
+      },
+      {
+        "investor_id": "CITES",
+        "startup_id": "viewmind"
+      },
+      {
+        "investor_id": "DragonesVP",
+        "startup_id": "caspr_biotech"
+      },
+      {
+        "investor_id": "DragonesVP",
+        "startup_id": "satellogic"
+      },
+      {
+        "investor_id": "DraperCygnus",
+        "startup_id": "argentag"
+      },
+      {
+        "investor_id": "DraperCygnus",
+        "startup_id": "ayuvant"
+      },
+      {
+        "investor_id": "DraperCygnus",
+        "startup_id": "microterra"
+      },
+      {
+        "investor_id": "DraperCygnus",
+        "startup_id": "satellites_on_fire"
+      },
+      {
+        "investor_id": "DraperCygnus",
+        "startup_id": "satellogic"
+      },
+      {
+        "investor_id": "DraperCygnus",
+        "startup_id": "siloreal"
+      },
+      {
+        "investor_id": "DraperCygnus",
+        "startup_id": "splight"
+      },
+      {
+        "investor_id": "DraperCygnus",
+        "startup_id": "stamm"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "HIAMET"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "algaebio"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "algalife"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "alkemio"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "alytix"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "antarka"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "apasomics"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "apexzymes"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "aplife_biotech"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "aquit"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "arakion"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "argentag"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "avatar_medtech"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "beeflow"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "bioblends"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "biocle"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "biodiversity_intelligence"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "bioeutectics"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "bioplaster_research"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "bioplaster_research_inc"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "bioplastix"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "bitgenia"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "break_pet"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "bsafe_biotech"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "bybug"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "calfix"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "caligenia"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "caspr_biotech"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "caspr_biotech_acq_by_amazon"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "cell_farm"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "cellco"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "cellrep"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "cryosmetics"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "cyanomin"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "cytbac"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "dogma_biotech"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "einsted"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "elytron_biotech"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "embryoxite"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "enteria"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "enzyva"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "eywa_biotech"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "fecundis"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "feedvax"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "food4you"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "fungi_life"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "future_biome"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "geoprot"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "gisens_biotech"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "glycox"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "invitrall"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "kresko_rnatech"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "levya"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "lipock"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "mavios"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "michroma"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "microgenesis"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "microin"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "migma"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "monte-caldera-technology"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "mzp"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "nanogrow_biotech"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "nanoingreen"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "nanojump_bio"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "nanoprox"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "nanotransfer"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "nat4bio"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "naturannova"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "neocell"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "new_organs_biotech"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "nunatak_biotech"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "ocular_bio_design"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "onco_precision"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "plamic"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "polymera"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "pregen"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "protiva"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "puna_bio"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "qnity"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "qumir_nano"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "radial"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "resistia"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "scitherm_therapeutics"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "semion"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "spherebio"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "stamm"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "sylvarum"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "synthetic_ocular_restoration"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "syocin-biotech"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "tesabio_ai"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "tomorrow_foods"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "ubique_bio"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "updairy"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "vexxel_biotech"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "werk-nvac"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "zavia_bio"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "zev_biotech"
+      },
+      {
+        "investor_id": "SF500",
+        "startup_id": "beam_croptech"
+      },
+      {
+        "investor_id": "SF500",
+        "startup_id": "biometallum"
+      },
+      {
+        "investor_id": "SF500",
+        "startup_id": "biotalife"
+      },
+      {
+        "investor_id": "SF500",
+        "startup_id": "dharma_bioscience"
+      },
+      {
+        "investor_id": "SF500",
+        "startup_id": "eiru"
+      },
+      {
+        "investor_id": "SF500",
+        "startup_id": "exomas"
+      },
+      {
+        "investor_id": "SF500",
+        "startup_id": "gameet"
+      },
+      {
+        "investor_id": "SF500",
+        "startup_id": "inmet"
+      },
+      {
+        "investor_id": "SF500",
+        "startup_id": "libera"
+      },
+      {
+        "investor_id": "SF500",
+        "startup_id": "limay_biosciences"
+      },
+      {
+        "investor_id": "SF500",
+        "startup_id": "m4life"
+      },
+      {
+        "investor_id": "SF500",
+        "startup_id": "mesenchyal_t"
+      },
+      {
+        "investor_id": "SF500",
+        "startup_id": "multiplai_health"
+      },
+      {
+        "investor_id": "SF500",
+        "startup_id": "mycorium_biotech"
+      },
+      {
+        "investor_id": "SF500",
+        "startup_id": "notfossil"
+      },
+      {
+        "investor_id": "SF500",
+        "startup_id": "oncoliq"
+      },
+      {
+        "investor_id": "SF500",
+        "startup_id": "pill_ar"
+      },
+      {
+        "investor_id": "SF500",
+        "startup_id": "soygreen"
+      },
+      {
+        "investor_id": "SF500",
+        "startup_id": "tell"
+      },
+      {
+        "investor_id": "SF500",
+        "startup_id": "tintte"
+      },
+      {
+        "investor_id": "SF500",
+        "startup_id": "trebe_biotech"
+      },
+      {
+        "investor_id": "SF500",
+        "startup_id": "unibaio"
+      },
+      {
+        "investor_id": "SOSV_IndieBio",
+        "startup_id": "argentag"
+      },
+      {
+        "investor_id": "SOSV_IndieBio",
+        "startup_id": "beeflow"
+      },
+      {
+        "investor_id": "SOSV_IndieBio",
+        "startup_id": "cells-for-cells-cl"
+      },
+      {
+        "investor_id": "SOSV_IndieBio",
+        "startup_id": "michroma"
+      },
+      {
+        "investor_id": "SOSV_IndieBio",
+        "startup_id": "microgenesis"
+      },
+      {
+        "investor_id": "SOSV_IndieBio",
+        "startup_id": "onco_precision"
+      },
+      {
+        "investor_id": "SOSV_IndieBio",
+        "startup_id": "puna_bio"
+      },
+      {
+        "investor_id": "SOSV_IndieBio",
+        "startup_id": "stamm"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "amplify-dynamics"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "aquit"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "bleps_vision"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "botanical-solution-inc-cl"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "botanical-solutions"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "delee"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "eywa_biotech"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "innovai"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "luyef-biotechnologies-cl"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "metabix-biotech"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "metabix_bio"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "nanotransfer"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "pannex_therapeutics"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "patagon-fiber"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "sciphage"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "tell"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "tensor-care"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "the-earth-says"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "unibaio"
+      },
+      {
+        "investor_id": "aceleradora_litoral",
+        "startup_id": "bioheuris"
+      },
+      {
+        "investor_id": "aceleradora_litoral",
+        "startup_id": "biosynaptica"
+      },
+      {
+        "investor_id": "aceleradora_litoral",
+        "startup_id": "inbioar"
+      },
+      {
+        "investor_id": "aceleradora_litoral",
+        "startup_id": "infira"
+      },
+      {
+        "investor_id": "aceleradora_litoral",
+        "startup_id": "nairotech"
+      },
+      {
+        "investor_id": "aceleradora_litoral",
+        "startup_id": "seedmatriz"
+      },
+      {
+        "investor_id": "aceleradora_litoral",
+        "startup_id": "untech"
+      },
+      {
+        "investor_id": "acre_venture_partners",
+        "startup_id": "arado"
+      },
+      {
+        "investor_id": "agrex",
+        "startup_id": "genica"
+      },
+      {
+        "investor_id": "angra_partners",
+        "startup_id": "promip"
+      },
+      {
+        "investor_id": "aqua_capital",
+        "startup_id": "solubio"
+      },
+      {
+        "investor_id": "arauco_ventures",
+        "startup_id": "lemu"
+      },
+      {
+        "investor_id": "astanor",
+        "startup_id": "calice_biotech"
+      },
+      {
+        "investor_id": "astella_investimentos",
+        "startup_id": "traive"
+      },
+      {
+        "investor_id": "aurus_capital",
+        "startup_id": "copptech"
+      },
+      {
+        "investor_id": "axventures_pymar",
+        "startup_id": "keclon"
+      },
+      {
+        "investor_id": "barn_investimentos",
+        "startup_id": "agrolend"
+      },
+      {
+        "investor_id": "barn_investimentos",
+        "startup_id": "agrotoken"
+      },
+      {
+        "investor_id": "barn_investimentos",
+        "startup_id": "rumina"
+      },
+      {
+        "investor_id": "barn_investimentos",
+        "startup_id": "strider-br"
+      },
+      {
+        "investor_id": "base_capital",
+        "startup_id": "agrotoken"
+      },
+      {
+        "investor_id": "basf_venture_capital",
+        "startup_id": "traive"
+      },
+      {
+        "investor_id": "bb_agro_ventures",
+        "startup_id": "genica"
+      },
+      {
+        "investor_id": "bb_agro_ventures",
+        "startup_id": "traive"
+      },
+      {
+        "investor_id": "blue_horizon",
+        "startup_id": "future_cow"
+      },
+      {
+        "investor_id": "blue_horizon",
+        "startup_id": "polybion"
+      },
+      {
+        "investor_id": "btg_pactual",
+        "startup_id": "bioelements-cl"
+      },
+      {
+        "investor_id": "carao_ventures",
+        "startup_id": "levita-magnetics-cl"
+      },
+      {
+        "investor_id": "cdpq",
+        "startup_id": "grupo_diagnostico_aries"
+      },
+      {
+        "investor_id": "cf_acquisition_corp8",
+        "startup_id": "satellogic"
+      },
+      {
+        "investor_id": "chileglobal_ventures",
+        "startup_id": "agrourbana"
+      },
+      {
+        "investor_id": "chileglobal_ventures",
+        "startup_id": "instacrops-cl"
+      },
+      {
+        "investor_id": "chileglobal_ventures",
+        "startup_id": "matchetune"
+      },
+      {
+        "investor_id": "cj_cheiljedang",
+        "startup_id": "michroma"
+      },
+      {
+        "investor_id": "claritas_capital",
+        "startup_id": "atacama-biomaterials-cl"
+      },
+      {
+        "investor_id": "collaborative_fund",
+        "startup_id": "phagelab"
+      },
+      {
+        "investor_id": "corteva_catalyst",
+        "startup_id": "puna_bio"
+      },
+      {
+        "investor_id": "corteva_catalyst",
+        "startup_id": "symbiomics"
+      },
+      {
+        "investor_id": "cuna_del_mar",
+        "startup_id": "earth-ocean-farms-mx"
+      },
+      {
+        "investor_id": "dalus_capital",
+        "startup_id": "kura-biotec-mx"
+      },
+      {
+        "investor_id": "dalus_capital",
+        "startup_id": "unima-mx"
+      },
+      {
+        "investor_id": "dila_capital",
+        "startup_id": "sistema-bio-mx"
+      },
+      {
+        "investor_id": "draper_cygnus",
+        "startup_id": "calice_biotech"
+      },
+      {
+        "investor_id": "eatable_adventures",
+        "startup_id": "nunatak_biotech"
+      },
+      {
+        "investor_id": "eatable_adventures",
+        "startup_id": "sciphage"
+      },
+      {
+        "investor_id": "eb_capital",
+        "startup_id": "hilab-br"
+      },
+      {
+        "investor_id": "ecoa_capital",
+        "startup_id": "nintx-br"
+      },
+      {
+        "investor_id": "electrifi",
+        "startup_id": "sistema-bio-mx"
+      },
+      {
+        "investor_id": "endeavor_catalyst",
+        "startup_id": "sistema-bio-mx"
+      },
+      {
+        "investor_id": "endurance_28",
+        "startup_id": "biomakers"
+      },
+      {
+        "investor_id": "endurance_28",
+        "startup_id": "dprotein"
+      },
+      {
+        "investor_id": "endurance_28",
+        "startup_id": "micro_meat"
+      },
+      {
+        "investor_id": "endurance_28",
+        "startup_id": "oncoliq"
+      },
+      {
+        "investor_id": "fen_ventures",
+        "startup_id": "andes-biotechnologies-cl"
+      },
+      {
+        "investor_id": "fmc_ventures",
+        "startup_id": "traive"
+      },
+      {
+        "investor_id": "fondo_alerce",
+        "startup_id": "the-live-green-co-cl"
+      },
+      {
+        "investor_id": "front_row_fund",
+        "startup_id": "atacama-biomaterials-cl"
+      },
+      {
+        "investor_id": "gef",
+        "startup_id": "ejido-verde-mx"
+      },
+      {
+        "investor_id": "global_fund_coral_reefs",
+        "startup_id": "agrion-agrisolutions-br"
+      },
+      {
+        "investor_id": "globo_ventures",
+        "startup_id": "arado"
+      },
+      {
+        "investor_id": "glocal",
+        "startup_id": "agrojusto"
+      },
+      {
+        "investor_id": "glocal",
+        "startup_id": "calice_biotech"
+      },
+      {
+        "investor_id": "glocal",
+        "startup_id": "deepagro"
+      },
+      {
+        "investor_id": "glocal",
+        "startup_id": "digifarmz-br"
+      },
+      {
+        "investor_id": "glocal",
+        "startup_id": "done_properly"
+      },
+      {
+        "investor_id": "glocal",
+        "startup_id": "eiru"
+      },
+      {
+        "investor_id": "glocal",
+        "startup_id": "kilimo"
+      },
+      {
+        "investor_id": "glocal",
+        "startup_id": "puna_bio"
+      },
+      {
+        "investor_id": "glocal",
+        "startup_id": "ruuts"
+      },
+      {
+        "investor_id": "glocal",
+        "startup_id": "ucrop-it-ar"
+      },
+      {
+        "investor_id": "grupo_insud",
+        "startup_id": "biosidus-ar"
+      },
+      {
+        "investor_id": "grupo_insud",
+        "startup_id": "inmunova-ar"
+      },
+      {
+        "investor_id": "grupo_insud",
+        "startup_id": "mabxience-ar"
+      },
+      {
+        "investor_id": "hatch",
+        "startup_id": "atarraya-mx"
+      },
+      {
+        "investor_id": "idb_invest",
+        "startup_id": "ejido-verde-mx"
+      },
+      {
+        "investor_id": "idb_lab",
+        "startup_id": "copptech"
+      },
+      {
+        "investor_id": "idb_lab",
+        "startup_id": "ecosea"
+      },
+      {
+        "investor_id": "innventure",
+        "startup_id": "calice_biotech"
+      },
+      {
+        "investor_id": "inventure",
+        "startup_id": "calice"
+      },
+      {
+        "investor_id": "inventure",
+        "startup_id": "deepagro"
+      },
+      {
+        "investor_id": "inventure",
+        "startup_id": "eiwa"
+      },
+      {
+        "investor_id": "inventure",
+        "startup_id": "elytron_biotech"
+      },
+      {
+        "investor_id": "inventure",
+        "startup_id": "nat4bio"
+      },
+      {
+        "investor_id": "inventure",
+        "startup_id": "satellites_on_fire"
+      },
+      {
+        "investor_id": "inventure",
+        "startup_id": "sensify"
+      },
+      {
+        "investor_id": "inventure",
+        "startup_id": "siloreal"
+      },
+      {
+        "investor_id": "inventure",
+        "startup_id": "tracestory"
+      },
+      {
+        "investor_id": "inventure",
+        "startup_id": "unibaio"
+      },
+      {
+        "investor_id": "inventure",
+        "startup_id": "zoomagri"
+      },
+      {
+        "investor_id": "john_deere_ventures",
+        "startup_id": "agrotoken"
+      },
+      {
+        "investor_id": "kamay_ventures",
+        "startup_id": "arqlite"
+      },
+      {
+        "investor_id": "kamay_ventures",
+        "startup_id": "auravant"
+      },
+      {
+        "investor_id": "kamay_ventures",
+        "startup_id": "deepagro"
+      },
+      {
+        "investor_id": "kamay_ventures",
+        "startup_id": "kilimo"
+      },
+      {
+        "investor_id": "kamay_ventures",
+        "startup_id": "muta"
+      },
+      {
+        "investor_id": "kamay_ventures",
+        "startup_id": "nude"
+      },
+      {
+        "investor_id": "kamay_ventures",
+        "startup_id": "sensify"
+      },
+      {
+        "investor_id": "kamay_ventures",
+        "startup_id": "solfium"
+      },
+      {
+        "investor_id": "kamay_ventures",
+        "startup_id": "traive"
+      },
+      {
+        "investor_id": "kamay_ventures",
+        "startup_id": "wiagro"
+      },
+      {
+        "investor_id": "kaszek",
+        "startup_id": "mendelics"
+      },
+      {
+        "investor_id": "kaszek",
+        "startup_id": "mombak"
+      },
+      {
+        "investor_id": "kawisafi_ventures",
+        "startup_id": "sistema-bio-mx"
+      },
+      {
+        "investor_id": "kayyak_ventures",
+        "startup_id": "food-for-the-future-cl"
+      },
+      {
+        "investor_id": "kptl",
+        "startup_id": "ages"
+      },
+      {
+        "investor_id": "kptl",
+        "startup_id": "agrotools"
+      },
+      {
+        "investor_id": "kptl",
+        "startup_id": "biomas"
+      },
+      {
+        "investor_id": "kptl",
+        "startup_id": "carbonext"
+      },
+      {
+        "investor_id": "kptl",
+        "startup_id": "culttivo"
+      },
+      {
+        "investor_id": "kptl",
+        "startup_id": "ecotrace-br"
+      },
+      {
+        "investor_id": "kptl",
+        "startup_id": "omics"
+      },
+      {
+        "investor_id": "kptl",
+        "startup_id": "smartbreeder"
+      },
+      {
+        "investor_id": "kptl",
+        "startup_id": "tbit"
+      },
+      {
+        "investor_id": "lightjump_acquisition",
+        "startup_id": "moolec"
+      },
+      {
+        "investor_id": "lightsmith_group",
+        "startup_id": "solinftec"
+      },
+      {
+        "investor_id": "lowercarbon_capital",
+        "startup_id": "mombak"
+      },
+      {
+        "investor_id": "maya_capital",
+        "startup_id": "arado"
+      },
+      {
+        "investor_id": "monashees",
+        "startup_id": "mendelics"
+      },
+      {
+        "investor_id": "monashees",
+        "startup_id": "strider-br"
+      },
+      {
+        "investor_id": "morningside_group",
+        "startup_id": "wiseconn-cl"
+      },
+      {
+        "investor_id": "mov_investimentos",
+        "startup_id": "nintx-br"
+      },
+      {
+        "investor_id": "mov_investimentos",
+        "startup_id": "symbiomics"
+      },
+      {
+        "investor_id": "nazca",
+        "startup_id": "phagelab"
+      },
+      {
+        "investor_id": "newtopia_vc",
+        "startup_id": "calice-ai-ar"
+      },
+      {
+        "investor_id": "newtopia_vc",
+        "startup_id": "dymaxion_labs"
+      },
+      {
+        "investor_id": "newtopia_vc",
+        "startup_id": "nilus"
+      },
+      {
+        "investor_id": "newtopia_vc",
+        "startup_id": "waterplan"
+      },
+      {
+        "investor_id": "nubarium_capital",
+        "startup_id": "agrotoken"
+      },
+      {
+        "investor_id": "onevc",
+        "startup_id": "terramagna"
+      },
+      {
+        "investor_id": "ospraie_ag_science",
+        "startup_id": "beeflow"
+      },
+      {
+        "investor_id": "pampa_start",
+        "startup_id": "agrired"
+      },
+      {
+        "investor_id": "pampa_start",
+        "startup_id": "deepagro"
+      },
+      {
+        "investor_id": "pampa_start",
+        "startup_id": "eiwa"
+      },
+      {
+        "investor_id": "pampa_start",
+        "startup_id": "sima"
+      },
+      {
+        "investor_id": "pitanga",
+        "startup_id": "nintx-br"
+      },
+      {
+        "investor_id": "plug_and_play",
+        "startup_id": "eternal_mycofood"
+      },
+      {
+        "investor_id": "porsche_ag",
+        "startup_id": "hif-global-cl"
+      },
+      {
+        "investor_id": "salkantay_ventures",
+        "startup_id": "kilimo"
+      },
+      {
+        "investor_id": "savia_ventures",
+        "startup_id": "done_properly"
+      },
+      {
+        "investor_id": "savia_ventures",
+        "startup_id": "living-ink-us"
+      },
+      {
+        "investor_id": "savia_ventures",
+        "startup_id": "mothership-materials-cl"
+      },
+      {
+        "investor_id": "savia_ventures",
+        "startup_id": "nutrition-from-water-cl"
+      },
+      {
+        "investor_id": "savia_ventures",
+        "startup_id": "satellites_on_fire"
+      },
+      {
+        "investor_id": "savia_ventures",
+        "startup_id": "solfium"
+      },
+      {
+        "investor_id": "savia_ventures",
+        "startup_id": "splight"
+      },
+      {
+        "investor_id": "savia_ventures",
+        "startup_id": "strong-by-form-cl"
+      },
+      {
+        "investor_id": "shell_foundation",
+        "startup_id": "sistema-bio-mx"
+      },
+      {
+        "investor_id": "softbank_latam",
+        "startup_id": "satellogic"
+      },
+      {
+        "investor_id": "sosv",
+        "startup_id": "giraffe-bio-ar"
+      },
+      {
+        "investor_id": "sosv",
+        "startup_id": "microendo"
+      },
+      {
+        "investor_id": "sp_ventures",
+        "startup_id": "aegro"
+      },
+      {
+        "investor_id": "sp_ventures",
+        "startup_id": "agrofy"
+      },
+      {
+        "investor_id": "sp_ventures",
+        "startup_id": "agrolend"
+      },
+      {
+        "investor_id": "sp_ventures",
+        "startup_id": "agronow-br"
+      },
+      {
+        "investor_id": "sp_ventures",
+        "startup_id": "agrosmart"
+      },
+      {
+        "investor_id": "sp_ventures",
+        "startup_id": "arado"
+      },
+      {
+        "investor_id": "sp_ventures",
+        "startup_id": "blooms"
+      },
+      {
+        "investor_id": "sp_ventures",
+        "startup_id": "brain_ag"
+      },
+      {
+        "investor_id": "sp_ventures",
+        "startup_id": "bug_agentes_biologicos"
+      },
+      {
+        "investor_id": "sp_ventures",
+        "startup_id": "cowmed-br"
+      },
+      {
+        "investor_id": "sp_ventures",
+        "startup_id": "decoy"
+      },
+      {
+        "investor_id": "sp_ventures",
+        "startup_id": "decoy-smart-control-br"
+      },
+      {
+        "investor_id": "sp_ventures",
+        "startup_id": "frizata"
+      },
+      {
+        "investor_id": "sp_ventures",
+        "startup_id": "genica"
+      },
+      {
+        "investor_id": "sp_ventures",
+        "startup_id": "genotyping"
+      },
+      {
+        "investor_id": "sp_ventures",
+        "startup_id": "goflux"
+      },
+      {
+        "investor_id": "sp_ventures",
+        "startup_id": "horus_aeronaves"
+      },
+      {
+        "investor_id": "sp_ventures",
+        "startup_id": "imeve"
+      },
+      {
+        "investor_id": "sp_ventures",
+        "startup_id": "inceres"
+      },
+      {
+        "investor_id": "sp_ventures",
+        "startup_id": "inprenha"
+      },
+      {
+        "investor_id": "sp_ventures",
+        "startup_id": "jetbov"
+      },
+      {
+        "investor_id": "sp_ventures",
+        "startup_id": "leaf"
+      },
+      {
+        "investor_id": "sp_ventures",
+        "startup_id": "magnamed"
+      },
+      {
+        "investor_id": "sp_ventures",
+        "startup_id": "moss"
+      },
+      {
+        "investor_id": "sp_ventures",
+        "startup_id": "nexxto"
+      },
+      {
+        "investor_id": "sp_ventures",
+        "startup_id": "pink-farms"
+      },
+      {
+        "investor_id": "sp_ventures",
+        "startup_id": "promip"
+      },
+      {
+        "investor_id": "sp_ventures",
+        "startup_id": "puna_bio"
+      },
+      {
+        "investor_id": "sp_ventures",
+        "startup_id": "sette"
+      },
+      {
+        "investor_id": "sp_ventures",
+        "startup_id": "solubio"
+      },
+      {
+        "investor_id": "sp_ventures",
+        "startup_id": "speclab"
+      },
+      {
+        "investor_id": "sp_ventures",
+        "startup_id": "strider-br"
+      },
+      {
+        "investor_id": "sp_ventures",
+        "startup_id": "traive"
+      },
+      {
+        "investor_id": "sp_ventures",
+        "startup_id": "verqor"
+      },
+      {
+        "investor_id": "sp_ventures",
+        "startup_id": "zoomagri"
+      },
+      {
+        "investor_id": "sumitomo_corp",
+        "startup_id": "bio-insumos-nativa-cl"
+      },
+      {
+        "investor_id": "supply_change_capital",
+        "startup_id": "michroma"
+      },
+      {
+        "investor_id": "syngenta_ventures",
+        "startup_id": "agrolend"
+      },
+      {
+        "investor_id": "syngenta_ventures",
+        "startup_id": "arado"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
+        "startup_id": "agree"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
+        "startup_id": "agricapital"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
+        "startup_id": "agroforte"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
+        "startup_id": "agrosmart"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
+        "startup_id": "auravant"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
+        "startup_id": "beeflow"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
+        "startup_id": "bemagro"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
+        "startup_id": "blooms"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
+        "startup_id": "cerradox"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
+        "startup_id": "courageous_land"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
+        "startup_id": "culttivo"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
+        "startup_id": "ecotrace-br"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
+        "startup_id": "eiwa"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
+        "startup_id": "heartbest"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
+        "startup_id": "incluirtec"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
+        "startup_id": "kigui"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
+        "startup_id": "kilimo"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
+        "startup_id": "phagelab"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
+        "startup_id": "produzindo-certo"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
+        "startup_id": "seedz"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
+        "startup_id": "sioma"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
+        "startup_id": "spaceag"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
+        "startup_id": "symbiomics"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
+        "startup_id": "tech"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
+        "startup_id": "terramagna"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
+        "startup_id": "ucrop-it-ar"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
+        "startup_id": "um_grau_e_meio"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
+        "startup_id": "verqor"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
+        "startup_id": "voa"
+      },
+      {
+        "investor_id": "union_acquisition_corp",
+        "startup_id": "bioceres_sa"
+      },
+      {
+        "investor_id": "union_square_ventures",
+        "startup_id": "mombak"
+      },
+      {
+        "investor_id": "valor_capital_group",
+        "startup_id": "agrolend"
+      },
+      {
+        "investor_id": "valor_capital_group",
+        "startup_id": "arado"
+      },
+      {
+        "investor_id": "valor_capital_group",
+        "startup_id": "genomika_diagnosticos"
+      },
+      {
+        "investor_id": "valor_capital_group",
+        "startup_id": "satellogic"
+      },
+      {
+        "investor_id": "varana_capital",
+        "startup_id": "stamm"
+      },
+      {
+        "investor_id": "visa_ventures",
+        "startup_id": "agrotoken"
+      },
+      {
+        "investor_id": "vox_capital",
+        "startup_id": "genica"
+      },
+      {
+        "investor_id": "vox_capital",
+        "startup_id": "hilab-br"
+      },
+      {
+        "investor_id": "vox_capital",
+        "startup_id": "magnamed"
+      },
+      {
+        "investor_id": "vox_capital",
+        "startup_id": "traive"
+      },
+      {
+        "investor_id": "water_lemon_ventures",
+        "startup_id": "phagelab"
+      },
+      {
+        "investor_id": "zentynel",
+        "startup_id": "antarka"
+      },
+      {
+        "investor_id": "zentynel",
+        "startup_id": "asclepii"
+      },
+      {
+        "investor_id": "zentynel",
+        "startup_id": "autem-medical"
+      },
+      {
+        "investor_id": "zentynel",
+        "startup_id": "biomakers"
+      },
+      {
+        "investor_id": "zentynel",
+        "startup_id": "fecundis"
+      },
+      {
+        "investor_id": "zentynel",
+        "startup_id": "harmony-biosciences"
+      },
+      {
+        "investor_id": "zentynel",
+        "startup_id": "hexembio"
+      },
+      {
+        "investor_id": "zentynel",
+        "startup_id": "microterra"
+      },
+      {
+        "investor_id": "zentynel",
+        "startup_id": "momentum-therapeutics"
+      },
+      {
+        "investor_id": "zentynel",
+        "startup_id": "multiplai_health"
+      },
+      {
+        "investor_id": "zentynel",
+        "startup_id": "neocrop-technologies"
+      },
+      {
+        "investor_id": "zentynel",
+        "startup_id": "samay"
+      },
+      {
+        "investor_id": "zentynel",
+        "startup_id": "viewmind"
+      },
+      {
+        "investor_id": "zentynel",
+        "startup_id": "xeptiva"
+      }
+    ]
   }
 };
