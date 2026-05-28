@@ -1,5 +1,5 @@
 window.STARTUP_THEMES_DATA = {
-  "computed_at": "2026-05-27T23:12:35",
+  "computed_at": "2026-05-27T23:20:35",
   "model": "intfloat/multilingual-e5-small",
   "stats": {
     "total_startups": 487,
@@ -597,7 +597,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "diagnostics and medtech",
       "emergent_theme": "health diagnostics and medtech",
       "summary": "Molecular diagnostic startup that develops rapid tests based on CRISPR from proprietary Cas proteins discovered in extremephiles. Enter the thesis for diagnostics and medtech.",
-      "one_liner": "CRISPR diagnostics company.",
+      "one_liner": "Develops rapid molecular diagnostic tests using proprietary Cas proteins discovered in extremophiles — novel CRISPR nucleases beyond Cas9/Cas12 — enabling point-of-care diagnostics from extremophile-derived biology.",
       "cluster_id": 0,
       "cluster_label": "Diagnostics & Health Access — Diagnostics",
       "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
@@ -10614,7 +10614,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "biomanufacturing and bioindustrial platforms",
       "emergent_theme": "industrial biotech and molecular tools",
       "summary": "Integrated biotech company that uses precision fermentation and microorganisms to develop industrial enzymes, bioactives and more sustainable protein alternatives.",
-      "one_liner": "Precision fermentation biosolutions platform.",
+      "one_liner": "Develops industrial enzymes via precision fermentation — YieldON (phospholipase for soy oil processing), ChyON (chymosin for cheese), PhyON (thermostable phytase for animal feed) — for food, feed, and biofuel sectors.",
       "cluster_id": 5,
       "cluster_label": "Biomanufacturing & Fermentation Economy — Precision Fermentation",
       "cluster_keywords": "bioindustrial · precision fermentation · enzymes · platforms",
@@ -10677,7 +10677,7 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Alt Proteins",
         "Precision Ferm",
-        "Biotech"
+        "Biomanufacturing"
       ],
       "investor_ids": [
         "axventures_pymar"
@@ -12174,7 +12174,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "food biotech and novel ingredients",
       "emergent_theme": "food ingredients and biofactories",
       "summary": "Biotech startup producing sustainable fats and oils with precision fermentation using non-GMO wild yeasts. Enter food ingredients / biomaterials for food and cosmetics.",
-      "one_liner": "Precision-fermented sustainable fats and oils.",
+      "one_liner": "Uses a library of 50,000+ wild non-GMO yeast strains to produce precision-fermented alternatives to cocoa butter, palm oil, and shea butter with matching fatty acid profiles, for food and cosmetics markets.",
       "cluster_id": 6,
       "cluster_label": "Food Systems & Alt Proteins — Novel Ingredients",
       "cluster_keywords": "novel ingredients · functional · shelf · metabolic",
@@ -12916,7 +12916,7 @@ window.STARTUP_THEMES_DATA = {
       "summary": "Amplify Dynamics is a Colombian/US bioprocessing tools company developing contactless ultrafiltration for lipid nanoparticle therapeutics. Its platform combines microfluidic flows and electronically controlled ultrasonic waves to separate LNPs without physical membranes, aiming to increase particle recovery, reduce purification time, improve throughput and cut waste. It belongs inside BIO VC LATAM as enabling infrastructure for gene therapy, vaccines, nanomedicine and biomanufacturing.",
       "one_liner": "Contactless ultrasound purification for lipid nanoparticles.",
       "cluster_id": 7,
-      "cluster_label": "Therapeutics · Biopharmaceutical",
+      "cluster_label": "Therapeutics — Biopharmaceutical",
       "cluster_keywords": "biopharmaceutical · organ · therapeutic · medicine",
       "cluster_confidence": 0.348,
       "x": -10.012,
@@ -13488,7 +13488,7 @@ window.STARTUP_THEMES_DATA = {
       "summary": "Lipock develops lipid nanocapsules that improve the efficacy of volatile and hydrophobic active compounds. The core semantic signal is drug delivery and bioactive formulation: nanoscale lipid encapsulation used to stabilize, deliver or improve actives that are otherwise difficult to formulate. It belongs inside BIO VC LATAM as nanomedicine / formulation infrastructure for therapeutics, cosmetics or bioactive health products.",
       "one_liner": "Lipid nanocapsule platform for volatile and hydrophobic actives.",
       "cluster_id": 7,
-      "cluster_label": "Therapeutics · Biopharmaceutical",
+      "cluster_label": "Therapeutics — Biopharmaceutical",
       "cluster_keywords": "biopharmaceutical · organ · therapeutic · medicine",
       "cluster_confidence": 0.351,
       "x": -10.221,
@@ -13600,79 +13600,6 @@ window.STARTUP_THEMES_DATA = {
       ],
       "investor_ids": [
         "grupo_insud"
-      ]
-    },
-    {
-      "id": "mesenchyal_t",
-      "name": "Mesenchyal-T",
-      "country": "Argentina",
-      "countries": [
-        "Argentina"
-      ],
-      "website": "https://mesenchyalt.com.ar/",
-      "macro_theme": "therapeutics and regenerative medicine",
-      "emergent_theme": "therapeutics and regenerative bio",
-      "summary": "Mesenchyal-T is an Argentine healthtech developing AI-powered regenerative cell therapies for bone regeneration. Its advanced-therapy product combines allogeneic mesenchymal stem cells extracted from umbilical cord with hyaluronic acid and scalable ex vivo production, targeting bone injuries, degenerative disease and broader regenerative-medicine applications. It belongs inside BIO VC LATAM as core cell therapy, stem-cell manufacturing and regenerative-medicine infrastructure.",
-      "one_liner": "AI-powered mesenchymal stem-cell therapy for bone regeneration.",
-      "cluster_id": 7,
-      "cluster_label": "Therapeutics — Biopharmaceutical",
-      "cluster_keywords": "biopharmaceutical · organ · therapeutic · medicine",
-      "cluster_confidence": 0.357,
-      "x": -11.123,
-      "y": -9.783,
-      "is_outlier": true,
-      "tech_codes": [
-        "therapeutics",
-        "ai_ml"
-      ],
-      "industry_codes": [
-        "human_health",
-        "therapeutics_industry"
-      ],
-      "quality_score": 8.5,
-      "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.0009886716766426612,
-      "valuation_tier": 1.0,
-      "n_investors_mapped": 1,
-      "bio_theme": "Therapeutics",
-      "bio_theme_secondary": "",
-      "is_bio_universe": 1,
-      "sub_cluster_label": "",
-      "funding_stage": null,
-      "funding_bucket_usd": null,
-      "valuation_bucket_usd": null,
-      "valuation_estimate_usd": 4.0,
-      "valuation_estimate_source": "investors_proxy",
-      "sx": -11.028,
-      "sy": -9.762,
-      "bio_lens": [
-        "biocentric",
-        "human-health-bio",
-        "regenerative"
-      ],
-      "domain_tags": [
-        "human-health",
-        "therapeutics-regenerative"
-      ],
-      "tech_tags": [
-        "ai-data",
-        "therapeutics"
-      ],
-      "scale_tags": [
-        "human-scale",
-        "industrial-scale",
-        "molecular-scale",
-        "product-scale"
-      ],
-      "market_label": "regenerative cell therapy",
-      "self_cats": [
-        "Therapeutics",
-        "AI / Data",
-        "HealthTech"
-      ],
-      "investor_ids": [
-        "SF500"
       ]
     },
     {
@@ -13820,79 +13747,6 @@ window.STARTUP_THEMES_DATA = {
       "market_label": "biopharma development and biosimilar platform",
       "self_cats": [
         "Therapeutics",
-        "Biotech"
-      ],
-      "investor_ids": [
-        "GridX"
-      ]
-    },
-    {
-      "id": "new_organs_biotech",
-      "name": "New Organs Biotech",
-      "country": "Argentina",
-      "countries": [
-        "Argentina"
-      ],
-      "website": "https://www.gridexponential.com/portfolio",
-      "macro_theme": "therapeutics and regenerative medicine",
-      "emergent_theme": "gene-edited regenerative medicine and organ replacement",
-      "summary": "New Organs Biotech is an Argentine regenerative-medicine startup combining gene editing and precision medicine to address chronic organ shortages and the limits of conventional transplantation. Public evidence is currently from GRIDX, but the biological mechanism is clear: engineered organ and regenerative-health solutions for transplant medicine. It belongs inside BIO VC LATAM as regenerative biology and therapeutic platform infrastructure.",
-      "one_liner": "Gene-edited regenerative medicine for organ shortage.",
-      "cluster_id": 7,
-      "cluster_label": "Therapeutics — Biopharmaceutical",
-      "cluster_keywords": "biopharmaceutical · organ · therapeutic · medicine",
-      "cluster_confidence": 0.36,
-      "x": -11.087,
-      "y": -9.752,
-      "is_outlier": true,
-      "tech_codes": [
-        "synbio",
-        "therapeutics",
-        "ai_ml"
-      ],
-      "industry_codes": [
-        "therapeutics_industry",
-        "human_health"
-      ],
-      "quality_score": 8.5,
-      "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.000976820009965881,
-      "valuation_tier": 1.0,
-      "n_investors_mapped": 1,
-      "bio_theme": "Therapeutics",
-      "bio_theme_secondary": "",
-      "is_bio_universe": 1,
-      "sub_cluster_label": "Drug Discovery & Biologics",
-      "funding_stage": null,
-      "funding_bucket_usd": null,
-      "valuation_bucket_usd": null,
-      "valuation_estimate_usd": 4.0,
-      "valuation_estimate_source": "investors_proxy",
-      "sx": -10.949,
-      "sy": -9.694,
-      "bio_lens": [
-        "biocentric",
-        "human-health-bio",
-        "planetary-boundary",
-        "regenerative"
-      ],
-      "domain_tags": [
-        "human-health",
-        "therapeutics-regenerative"
-      ],
-      "tech_tags": [
-        "ai-data",
-        "therapeutics"
-      ],
-      "scale_tags": [
-        "human-scale",
-        "industrial-scale",
-        "molecular-scale",
-        "planetary-scale"
-      ],
-      "market_label": "gene-edited regenerative medicine for organ replacement",
-      "self_cats": [
         "Biotech"
       ],
       "investor_ids": [
@@ -16025,7 +15879,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "ag biologicals and crop resilience",
       "emergent_theme": "genome-enabled crop resilience",
       "summary": "Agrobiotech that develops genetic technologies based on photobiology to improve photosynthesis, productivity and resilience of crops. Enter the thesis for ag biologicals and crop resilience.",
-      "one_liner": "Crop trait biotech based on plant photobiology.",
+      "one_liner": "Develops PHOTOSYNTER, a cisgenesis/CRISPR trait targeting a conserved photosynthesis gene that boosts broad-acre crop yield by ≥25% under drought conditions, licensed to seed companies in Argentina and the United States.",
       "cluster_id": 11,
       "cluster_label": "Bioinputs & Crop Resilience — Biologicals Crop",
       "cluster_keywords": "biologicals crop · resistant · genetic · resilience",
@@ -16078,7 +15932,7 @@ window.STARTUP_THEMES_DATA = {
       "market_label": "crop trait biotech",
       "self_cats": [
         "Ag Biologicals",
-        "Biotech"
+        "SynBio"
       ],
       "investor_ids": [
         "SF500"
@@ -16225,7 +16079,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "ag biologicals and crop resilience",
       "emergent_theme": "genome-enabled crop resilience",
       "summary": "Agricultural biotech that develops genetic tools and edited traits to improve weed control and crop productivity. Enter the thesis for ag biologicals and crop resilience.",
-      "one_liner": "Crop trait biotech for resilient agriculture.",
+      "one_liner": "Develops CRISPR-based non-GMO herbicide tolerance traits for broad-acre crops — including the SURON® trait for sorghum and programs in soybean and cotton — licensed to seed companies in Argentina, Brazil, and the US.",
       "cluster_id": 11,
       "cluster_label": "Bioinputs & Crop Resilience — Biologicals Crop",
       "cluster_keywords": "biologicals crop · resistant · genetic · resilience",
@@ -16272,8 +16126,8 @@ window.STARTUP_THEMES_DATA = {
       "market_label": "ag biotech; crop traits",
       "self_cats": [
         "Ag Biologicals",
-        "AgTech",
-        "Biotech"
+        "SynBio",
+        "AgTech"
       ],
       "investor_ids": [
         "aceleradora_litoral"
@@ -16290,7 +16144,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "ag biologicals and crop resilience",
       "emergent_theme": "ag biologicals and crop resilience",
       "summary": "Biological control startup that seeks a new mode of action for pest management using genetics and microorganisms. Enter the thesis for ag biologicals and crop resilience.",
-      "one_liner": "Biological control company for agriculture.",
+      "one_liner": "Brazilian agricultural biocontrol company developing biological pest-control solutions with a novel mode of action designed to be safe by design, targeting crop protection for South American farmers from São Paulo.",
       "cluster_id": 11,
       "cluster_label": "Bioinputs & Crop Resilience — Biologicals Crop",
       "cluster_keywords": "biologicals crop · resistant · genetic · resilience",
@@ -20961,7 +20815,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "therapeutic and regenerative biology",
       "summary": "Clinical biotech startup focused on obesity and metabolic disease, with therapeutic candidates that activate thermogenesis pathways to treat energy balance beyond GLP-1.",
-      "one_liner": "Thermogenesis-based obesity therapeutics.",
+      "one_liner": "Clinical-stage (Phase II) biotech developing MVD-1, an oral small molecule that activates creatine-dependent thermogenesis to treat obesity, Type 2 Diabetes, and NASH with a 60-compound NCE library.",
       "cluster_id": 16,
       "cluster_label": "Therapeutics — Cancer",
       "cluster_keywords": "cancer · therapeutics · metabolic · therapeutic",
@@ -22029,7 +21883,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "therapeutic and regenerative biology",
       "summary": "Therapeutics startup that develops biomimetic nanomedicine to deliver drugs directly to the bone. Enter the thesis for therapeutics and regenerative medicine.",
-      "one_liner": "Bone-targeted drug delivery startup.",
+      "one_liner": "Develops Apasomes — hydroxyapatite nanospheres mimicking osteoblast-derived exosomes — to deliver bisphosphonates and other drugs directly to bone tissue for sustained-release osteoporosis treatment. Based in Costa Rica.",
       "cluster_id": 17,
       "cluster_label": "Therapeutics — Therapeutics Regenerative",
       "cluster_keywords": "therapeutics regenerative · tissue · medicine · extracellular",
@@ -22927,7 +22781,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "therapeutic and regenerative biology",
       "summary": "Mental health biotech producing APIs and future psychedelic therapeutics through biosynthesis and green chemistry. Enter the thesis for therapeutics and regenerative medicine.",
-      "one_liner": "Psychedelic biotech using biosynthesis.",
+      "one_liner": "Produces clinical-grade psychedelic APIs — psilocybin, DMT, 5-MeO-DMT, and Bufotenine — through biosynthesis for clinical trials and research, plus WeCelio, a digital platform for personalized psychedelic-assisted therapy protocols.",
       "cluster_id": 17,
       "cluster_label": "Therapeutics — Therapeutics Regenerative",
       "cluster_keywords": "therapeutics regenerative · tissue · medicine · extracellular",
@@ -23002,7 +22856,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "therapeutic and regenerative biology",
       "summary": "Fertility biotech that develops technologies to improve sperm and increase the effectiveness of infertility treatments. Enter the thesis for therapeutics and regenerative medicine.",
-      "one_liner": "Fertility biotech built on reproductive biology.",
+      "one_liner": "Develops HyperSperm, a sperm preparation kit for IVF and ICSI that reproduces natural capacitation physiological signals in vitro, improving embryo quality, euploid rates, and clinical pregnancy outcomes.",
       "cluster_id": 17,
       "cluster_label": "Therapeutics — Therapeutics Regenerative",
       "cluster_keywords": "therapeutics regenerative · tissue · medicine · extracellular",
@@ -23053,6 +22907,7 @@ window.STARTUP_THEMES_DATA = {
       "market_label": "fertility biotech",
       "self_cats": [
         "Therapeutics",
+        "MedTech",
         "Biotech"
       ],
       "investor_ids": [
@@ -23331,6 +23186,79 @@ window.STARTUP_THEMES_DATA = {
       ]
     },
     {
+      "id": "mesenchyal_t",
+      "name": "Mesenchyal-T",
+      "country": "Argentina",
+      "countries": [
+        "Argentina"
+      ],
+      "website": "https://mesenchyalt.com.ar/",
+      "macro_theme": "therapeutics and regenerative medicine",
+      "emergent_theme": "therapeutics and regenerative bio",
+      "summary": "Mesenchyal-T is an Argentine healthtech developing AI-powered regenerative cell therapies for bone regeneration. Its advanced-therapy product combines allogeneic mesenchymal stem cells extracted from umbilical cord with hyaluronic acid and scalable ex vivo production, targeting bone injuries, degenerative disease and broader regenerative-medicine applications. It belongs inside BIO VC LATAM as core cell therapy, stem-cell manufacturing and regenerative-medicine infrastructure.",
+      "one_liner": "AI-powered mesenchymal stem-cell therapy for bone regeneration.",
+      "cluster_id": 17,
+      "cluster_label": "Therapeutics — Therapeutics Regenerative",
+      "cluster_keywords": "therapeutics regenerative · tissue · medicine · extracellular",
+      "cluster_confidence": 0.357,
+      "x": -11.123,
+      "y": -9.783,
+      "is_outlier": false,
+      "tech_codes": [
+        "therapeutics",
+        "ai_ml"
+      ],
+      "industry_codes": [
+        "human_health",
+        "therapeutics_industry"
+      ],
+      "quality_score": 8.5,
+      "quality_band": "high",
+      "community_id": 3,
+      "pagerank": 0.0009886716766426612,
+      "valuation_tier": 1.0,
+      "n_investors_mapped": 1,
+      "bio_theme": "Therapeutics",
+      "bio_theme_secondary": "",
+      "is_bio_universe": 1,
+      "sub_cluster_label": "",
+      "funding_stage": null,
+      "funding_bucket_usd": null,
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy",
+      "sx": -11.028,
+      "sy": -9.762,
+      "bio_lens": [
+        "biocentric",
+        "human-health-bio",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "industrial-scale",
+        "molecular-scale",
+        "product-scale"
+      ],
+      "market_label": "regenerative cell therapy",
+      "self_cats": [
+        "Therapeutics",
+        "AI / Data",
+        "HealthTech"
+      ],
+      "investor_ids": [
+        "SF500"
+      ]
+    },
+    {
       "id": "nanogrow_biotech",
       "name": "Nanogrow Biotech",
       "country": "Brazil",
@@ -23341,7 +23269,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "therapeutic and regenerative biology",
       "summary": "Therapeutic biotech that develops biological treatments based on single-domain antibodies with advanced delivery strategies. Enter the thesis for therapeutics and regenerative medicine.",
-      "one_liner": "Single-domain antibody therapeutics platform.",
+      "one_liner": "Develops single-domain antibody (nanobody) therapeutics — 10× smaller than conventional antibodies — for inflammatory and oncological conditions including asthma, psoriasis, atopic dermatitis, and colorectal carcinoma, across multiple delivery formats.",
       "cluster_id": 17,
       "cluster_label": "Therapeutics — Therapeutics Regenerative",
       "cluster_keywords": "therapeutics regenerative · tissue · medicine · extracellular",
@@ -23469,6 +23397,79 @@ window.STARTUP_THEMES_DATA = {
       "investor_ids": [
         "GridX",
         "The Ganesha Lab"
+      ]
+    },
+    {
+      "id": "new_organs_biotech",
+      "name": "New Organs Biotech",
+      "country": "Argentina",
+      "countries": [
+        "Argentina"
+      ],
+      "website": "https://www.gridexponential.com/portfolio",
+      "macro_theme": "therapeutics and regenerative medicine",
+      "emergent_theme": "gene-edited regenerative medicine and organ replacement",
+      "summary": "New Organs Biotech is an Argentine regenerative-medicine startup combining gene editing and precision medicine to address chronic organ shortages and the limits of conventional transplantation. Public evidence is currently from GRIDX, but the biological mechanism is clear: engineered organ and regenerative-health solutions for transplant medicine. It belongs inside BIO VC LATAM as regenerative biology and therapeutic platform infrastructure.",
+      "one_liner": "Gene-edited regenerative medicine for organ shortage.",
+      "cluster_id": 17,
+      "cluster_label": "Therapeutics — Therapeutics Regenerative",
+      "cluster_keywords": "therapeutics regenerative · tissue · medicine · extracellular",
+      "cluster_confidence": 0.36,
+      "x": -11.087,
+      "y": -9.752,
+      "is_outlier": false,
+      "tech_codes": [
+        "synbio",
+        "therapeutics",
+        "ai_ml"
+      ],
+      "industry_codes": [
+        "therapeutics_industry",
+        "human_health"
+      ],
+      "quality_score": 8.5,
+      "quality_band": "high",
+      "community_id": 3,
+      "pagerank": 0.000976820009965881,
+      "valuation_tier": 1.0,
+      "n_investors_mapped": 1,
+      "bio_theme": "Therapeutics",
+      "bio_theme_secondary": "",
+      "is_bio_universe": 1,
+      "sub_cluster_label": "Drug Discovery & Biologics",
+      "funding_stage": null,
+      "funding_bucket_usd": null,
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy",
+      "sx": -10.949,
+      "sy": -9.694,
+      "bio_lens": [
+        "biocentric",
+        "human-health-bio",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "industrial-scale",
+        "molecular-scale",
+        "planetary-scale"
+      ],
+      "market_label": "gene-edited regenerative medicine for organ replacement",
+      "self_cats": [
+        "Biotech"
+      ],
+      "investor_ids": [
+        "GridX"
       ]
     },
     {
@@ -23632,7 +23633,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "therapeutic and regenerative biology",
       "summary": "Therapeutic biotech that develops synthetic oligonucleotides to modulate the immune system and promote tissue regeneration. Enter the thesis for therapeutics and regenerative medicine.",
-      "one_liner": "Synthetic oligonucleotide therapeutics company.",
+      "one_liner": "Develops single-stranded oligonucleotide (ODN) immunomodulatory therapeutics for chronic inflammatory and autoimmune diseases — initially Crohn's Disease — promoting tissue regeneration over symptom suppression. Based in Santa Fe, Argentina.",
       "cluster_id": 17,
       "cluster_label": "Therapeutics — Therapeutics Regenerative",
       "cluster_keywords": "therapeutics regenerative · tissue · medicine · extracellular",
@@ -23776,7 +23777,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "therapeutic and regenerative biology",
       "summary": "Tissue engineering startup that produces transplantable corneal tissue to restore vision and reduce dependence on donated tissue. Enter the thesis for therapeutics and regenerative medicine.",
-      "one_liner": "Engineered corneal tissue platform.",
+      "one_liner": "Engineers transplantable corneal tissue by culturing corneal cells on biocompatible membrane scaffolds, addressing the global shortage of corneal donors for transplantation. Based in Mexico.",
       "cluster_id": 17,
       "cluster_label": "Therapeutics — Therapeutics Regenerative",
       "cluster_keywords": "therapeutics regenerative · tissue · medicine · extracellular",
@@ -23842,6 +23843,7 @@ window.STARTUP_THEMES_DATA = {
       ],
       "market_label": "corneal tissue engineering",
       "self_cats": [
+        "SynBio",
         "Therapeutics"
       ],
       "investor_ids": [
@@ -25735,7 +25737,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "biomanufacturing and bioindustrial platforms",
       "emergent_theme": "microalgae bioprocess platforms",
       "summary": "GridX portfolio company building a platform to optimize productive processes based on microalgae. It belongs inside BIO VC LATAM as microalgae bioprocessing and bioindustrial infrastructure.",
-      "one_liner": "Microalgae process optimization platform.",
+      "one_liner": "Produces natural astaxanthin from Haematococcus pluvialis microalgae for aquaculture pigmentation (salmon, trout, shrimp) and nutraceutical/cosmetic applications, replacing synthetic petroleum-derived astaxanthin. Based in Buenos Aires.",
       "cluster_id": 20,
       "cluster_label": "Bioinputs & Crop Resilience — Biologicals",
       "cluster_keywords": "biologicals · function · microbiome · concise",
@@ -31273,31 +31275,31 @@ window.STARTUP_THEMES_DATA = {
       "cluster_id": 17,
       "label": "Therapeutics — Therapeutics Regenerative",
       "keywords": "therapeutics regenerative · tissue · medicine · extracellular",
-      "size": 28,
+      "size": 30,
       "bio_themes": {
-        "Therapeutics": 26,
+        "Therapeutics": 28,
         "Diagnostics & Health Access": 2
       },
       "tech_codes": {
         "nanotech": 4,
         "biomaterials": 4,
-        "therapeutics": 25,
+        "therapeutics": 27,
         "diagnostics": 3,
         "robotics": 1,
-        "ai_ml": 18,
+        "ai_ml": 20,
         "iot": 1,
         "microbial": 1,
-        "synbio": 2,
+        "synbio": 3,
         "computational_bio": 1,
         "green_chem": 1,
         "biomanufacturing": 2,
         "bioinformatics": 1
       },
       "industry_codes": {
-        "human_health": 24,
+        "human_health": 26,
         "row_crops": 4,
         "materials_packaging": 4,
-        "therapeutics_industry": 24,
+        "therapeutics_industry": 26,
         "diagnostics_industry": 4,
         "specialty_chem": 1,
         "veterinary": 1,
@@ -31309,10 +31311,10 @@ window.STARTUP_THEMES_DATA = {
         "Costa Rica": 1,
         "Brazil": 6,
         "USA": 5,
-        "Argentina": 13,
+        "Argentina": 15,
         "Colombia": 1
       },
-      "n_funded": 26,
+      "n_funded": 28,
       "n_featured": 1
     },
     {
@@ -31506,54 +31508,6 @@ window.STARTUP_THEMES_DATA = {
       "n_featured": 0
     },
     {
-      "cluster_id": 7,
-      "label": "Therapeutics · Biopharmaceutical",
-      "keywords": "biopharmaceutical · organ · therapeutic · medicine",
-      "size": 21,
-      "bio_themes": {
-        "Therapeutics": 18,
-        "Biomanufacturing & Fermentation Economy": 2,
-        "Bioinputs & Crop Resilience": 1
-      },
-      "tech_codes": {
-        "nanotech": 2,
-        "biomanufacturing": 3,
-        "ai_ml": 12,
-        "therapeutics": 16,
-        "fermentation": 1,
-        "synbio": 2,
-        "diagnostics": 2,
-        "formulation": 2,
-        "bioinformatics": 1,
-        "iot": 4,
-        "microbial": 1
-      },
-      "industry_codes": {
-        "therapeutics_industry": 12,
-        "biomanufacturing_industry": 3,
-        "carbon": 1,
-        "human_health": 13,
-        "specialty_chem": 3,
-        "row_crops": 5,
-        "diagnostics_industry": 3,
-        "veterinary": 5,
-        "personal_care": 1,
-        "materials_packaging": 1,
-        "biodiversity": 1,
-        "animal_protein": 2
-      },
-      "countries": {
-        "Colombia": 2,
-        "Uruguay": 2,
-        "Argentina": 12,
-        "PR": 1,
-        "Chile": 2,
-        "Brazil": 2
-      },
-      "n_funded": 15,
-      "n_featured": 0
-    },
-    {
       "cluster_id": 11,
       "label": "Bioinputs & Crop Resilience — Biologicals Crop",
       "keywords": "biologicals crop · resistant · genetic · resilience",
@@ -31622,6 +31576,54 @@ window.STARTUP_THEMES_DATA = {
         "Costa Rica": 1
       },
       "n_funded": 11,
+      "n_featured": 0
+    },
+    {
+      "cluster_id": 7,
+      "label": "Therapeutics — Biopharmaceutical",
+      "keywords": "biopharmaceutical · organ · therapeutic · medicine",
+      "size": 19,
+      "bio_themes": {
+        "Therapeutics": 16,
+        "Biomanufacturing & Fermentation Economy": 2,
+        "Bioinputs & Crop Resilience": 1
+      },
+      "tech_codes": {
+        "nanotech": 2,
+        "biomanufacturing": 3,
+        "ai_ml": 10,
+        "therapeutics": 14,
+        "fermentation": 1,
+        "synbio": 1,
+        "diagnostics": 2,
+        "formulation": 2,
+        "bioinformatics": 1,
+        "iot": 4,
+        "microbial": 1
+      },
+      "industry_codes": {
+        "therapeutics_industry": 10,
+        "biomanufacturing_industry": 3,
+        "carbon": 1,
+        "human_health": 11,
+        "specialty_chem": 3,
+        "row_crops": 5,
+        "diagnostics_industry": 3,
+        "veterinary": 5,
+        "personal_care": 1,
+        "materials_packaging": 1,
+        "biodiversity": 1,
+        "animal_protein": 2
+      },
+      "countries": {
+        "Colombia": 2,
+        "Uruguay": 2,
+        "Argentina": 10,
+        "PR": 1,
+        "Chile": 2,
+        "Brazil": 2
+      },
+      "n_funded": 13,
       "n_featured": 0
     },
     {
