@@ -158,6 +158,94 @@ def cmd_validate(args: argparse.Namespace) -> None:
             errors += 1
 
     print()
+
+    # ── Spatial & semantic consistency checks (require Python math) ──────────
+    print("  ── Consistencia semántica ──────────────────────────────────────────")
+    import math, statistics as _stats
+
+    rows = conn.execute("""
+        SELECT e.entity_id, e.canonical_name, sx.bio_theme_primary,
+               sx.cluster_label, sx.umap_x, sx.umap_y, sx.data_quality_score
+        FROM startup_extended sx
+        JOIN entities e ON e.entity_id = sx.startup_id
+        WHERE sx.scope_decision = 'include'
+          AND sx.umap_x IS NOT NULL
+    """).fetchall()
+
+    # 1. bio_theme vs cluster_label prefix mismatch
+    label_mismatches = [
+        (r[1], r[2], r[3])
+        for r in rows
+        if r[2] and r[3] and not r[3].startswith(r[2])
+    ]
+    n_mm = len(label_mismatches)
+    icon = "!" if n_mm > 0 else " "
+    print(f"  {icon} {'bio_theme ≠ prefijo cluster_label':<55} {n_mm if n_mm else 'OK'}")
+    if n_mm > 0:
+        for nm, bt, cl in label_mismatches[:5]:
+            cl_prefix = cl.split(" — ")[0].split("||")[0]
+            print(f"      {nm:<38} [{bt[:28]}] ≠ [{cl_prefix[:28]}]")
+        if n_mm > 5:
+            print(f"      … y {n_mm - 5} más")
+        warnings += 1
+
+    # 2. Positional outliers — distancia al centroide del bio_theme
+    theme_pts: dict = {}
+    for r in rows:
+        t = r[2]
+        if t:
+            theme_pts.setdefault(t, []).append((r[4], r[5]))
+    centroids = {
+        t: (_stats.mean(p[0] for p in pts), _stats.mean(p[1] for p in pts))
+        for t, pts in theme_pts.items()
+    }
+    DIST_THRESHOLD = 5.0
+    outliers = []
+    for r in rows:
+        t = r[2]
+        if t and t in centroids:
+            cx, cy = centroids[t]
+            d = math.sqrt((r[4] - cx) ** 2 + (r[5] - cy) ** 2)
+            if d > DIST_THRESHOLD:
+                outliers.append((r[1], t, round(d, 1), r[6] or 0))
+    outliers.sort(key=lambda x: -x[2])
+    n_out = len(outliers)
+    icon = "!" if n_out > 0 else " "
+    print(f"  {icon} {f'UMAP: startups a distancia > {DIST_THRESHOLD} del centroide de su tema':<55} {n_out if n_out else 'OK'}")
+    if n_out > 0:
+        for nm, theme, d, q in outliers[:5]:
+            print(f"      {nm:<38} {theme[:32]}  d={d}  q={q:.0f}")
+        if n_out > 5:
+            print(f"      … y {n_out - 5} más")
+        warnings += 1
+
+    # 3. Empresas con quality=0 en clusters metodológicos (alta diversidad temática)
+    cl_theme_count: dict = {}
+    for r in rows:
+        cid = conn.execute(
+            "SELECT cluster_id FROM startup_extended WHERE startup_id=?", (r[0],)
+        ).fetchone()
+        if cid:
+            cl_theme_count.setdefault(cid[0], set()).add(r[2])
+    diverse_clusters = {cid for cid, themes in cl_theme_count.items() if len(themes) >= 3}
+    q0_diverse = [
+        r[1] for r in rows
+        if (r[6] or 0) == 0.0
+        and conn.execute(
+            "SELECT cluster_id FROM startup_extended WHERE startup_id=?", (r[0],)
+        ).fetchone()[0] in diverse_clusters
+    ]
+    n_q0d = len(q0_diverse)
+    icon = "!" if n_q0d > 0 else " "
+    print(f"  {icon} {'quality=0 en clusters metodológicos (≥3 temas mezclados)':<55} {n_q0d if n_q0d else 'OK'}")
+    if n_q0d > 0:
+        for nm in q0_diverse[:5]:
+            print(f"      {nm}")
+        if n_q0d > 5:
+            print(f"      … y {n_q0d - 5} más")
+        warnings += 1
+
+    print()
     if errors:
         print(f"  {errors} error(s), {warnings} warning(s)\n")
         sys.exit(1)
