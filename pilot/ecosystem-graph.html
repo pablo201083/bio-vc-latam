@@ -40,11 +40,10 @@
 
     /* ── sidebar ───────────────────────────────────────────────────── */
     .eg-sidebar {
-      width: 248px; min-width: 0; flex-shrink: 0;
+      width: 238px; min-width: 0; flex-shrink: 0;
       display: flex; flex-direction: column; gap: 8px;
     }
 
-    /* layer controls card */
     .eg-card {
       border: 1px solid var(--line); border-radius: 16px;
       background: var(--panel); box-shadow: var(--shadow);
@@ -55,17 +54,14 @@
       border-bottom: 1px solid var(--line);
       background: linear-gradient(180deg,rgba(255,255,255,.95),rgba(248,243,234,.7));
     }
-    .eg-card-head-title {
-      font-size: .82rem; font-weight: 800; color: var(--ink); line-height: 1;
-    }
-    .eg-card-head-sub { font-size: .68rem; color: var(--muted); margin-top: 2px; }
+    .eg-card-head-title { font-size: .82rem; font-weight: 800; color: var(--ink); line-height: 1; }
+    .eg-card-head-sub   { font-size: .68rem; color: var(--muted); margin-top: 2px; }
 
     .eg-controls-body { padding: 10px 13px; }
     .eg-section-label {
       font-size: .63rem; font-weight: 700; letter-spacing: .08em;
       text-transform: uppercase; color: var(--muted); margin: 0 0 6px;
     }
-    .eg-section-label + .eg-section-label { margin-top: 10px; }
     .eg-toggle-row {
       display: flex; align-items: center; gap: 7px;
       padding: 4px 0; cursor: pointer;
@@ -77,12 +73,11 @@
       flex-shrink: 0; border: 1.5px solid rgba(0,0,0,.12);
     }
     .eg-toggle-row input { display: none; }
-    .eg-toggle-row.off { opacity: .45; }
+    .eg-toggle-row.off { opacity: .4; }
     .eg-toggle-count {
       margin-left: auto; font-size: .65rem; color: var(--muted);
       font-variant-numeric: tabular-nums;
     }
-
     .eg-edge-row {
       display: flex; align-items: center; gap: 7px;
       padding: 3px 0; cursor: pointer;
@@ -91,24 +86,9 @@
     .eg-edge-row:hover { color: var(--accent); }
     .eg-edge-row.off { opacity: .4; }
     .eg-edge-row input { display: none; }
-    .eg-edge-line {
-      width: 18px; height: 3px; border-radius: 2px; flex-shrink: 0;
-    }
+    .eg-edge-line { width: 18px; height: 3px; border-radius: 2px; flex-shrink: 0; }
 
-    /* sim controls */
-    .eg-sim-row {
-      display: flex; gap: 6px; margin-top: 8px;
-    }
-    .eg-btn {
-      flex: 1; padding: 5px 0; border: 1px solid var(--line);
-      border-radius: 8px; background: rgba(255,255,255,.8);
-      font: inherit; font-size: .7rem; font-weight: 700;
-      color: var(--ink); cursor: pointer; transition: background 80ms;
-    }
-    .eg-btn:hover { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); }
-    .eg-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
-
-    /* detail card */
+    /* detail panel */
     .eg-detail {
       flex: 1 1 0; min-height: 0; overflow: hidden;
       border: 1px solid var(--line); border-radius: 16px;
@@ -118,6 +98,7 @@
     .eg-detail-empty {
       flex: 1; display: flex; align-items: center; justify-content: center;
       font-size: .75rem; color: var(--muted); text-align: center; padding: 16px;
+      line-height: 1.6;
     }
     .eg-detail-content { display: none; flex: 1 1 0; min-height: 0; overflow-y: auto; padding: 13px; }
     .eg-detail-content.visible { display: block; }
@@ -128,7 +109,7 @@
       border-radius: 999px; padding: 2px 8px; margin-bottom: 6px;
     }
     .eg-det-name { font-size: .95rem; font-weight: 800; color: var(--ink); line-height: 1.2; }
-    .eg-det-sub { font-size: .72rem; color: var(--muted); margin-top: 2px; }
+    .eg-det-sub  { font-size: .72rem; color: var(--muted); margin-top: 2px; }
     .eg-det-row {
       display: flex; justify-content: space-between; align-items: flex-start;
       gap: 8px; padding: 5px 0; border-bottom: 1px solid rgba(217,206,190,.35);
@@ -141,16 +122,12 @@
       font-size: .62rem; font-weight: 700; letter-spacing: .08em;
       text-transform: uppercase; color: var(--muted); margin: 10px 0 4px;
     }
-    .eg-det-link {
-      font-size: .7rem; color: var(--accent); word-break: break-all;
-    }
+    .eg-det-link { font-size: .7rem; color: var(--accent); word-break: break-all; }
     .eg-det-summary {
       font-size: .73rem; color: var(--muted); line-height: 1.5; margin-top: 8px;
       border-top: 1px solid var(--line); padding-top: 8px;
     }
-    .eg-det-neighbors {
-      display: flex; flex-wrap: wrap; gap: 4px; margin-top: 6px;
-    }
+    .eg-det-neighbors { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 6px; }
     .eg-det-neighbor {
       font-size: .65rem; border: 1px solid var(--line); border-radius: 6px;
       padding: 2px 7px; background: rgba(255,255,255,.8); cursor: pointer;
@@ -162,7 +139,89 @@
       flex: 1 1 0; min-width: 0; min-height: 0;
       border: 1px solid var(--line); border-radius: 20px;
       background: var(--panel); box-shadow: var(--shadow);
-      position: relative; overflow: hidden;
+      display: flex; flex-direction: column;
+      overflow: hidden;
+    }
+
+    /* ── toolbar inside canvas ─────────────────────────────────────── */
+    .eg-toolbar {
+      display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+      padding: 7px 12px 6px;
+      border-bottom: 1px solid rgba(217,206,190,.44);
+      flex-shrink: 0;
+      background: rgba(255,255,255,.6);
+    }
+    .eg-toolbar-search-wrap { position: relative; flex: 1; max-width: 240px; }
+    .eg-toolbar-search {
+      width: 100%; border: 1px solid var(--line); border-radius: 10px;
+      background: rgba(255,255,255,.9); color: var(--ink);
+      font: inherit; font-size: .78rem; padding: 5px 9px 5px 28px;
+      box-sizing: border-box;
+    }
+    .eg-toolbar-search:focus { outline: none; border-color: var(--accent); }
+    .eg-toolbar-search-icon {
+      position: absolute; left: 8px; top: 50%; transform: translateY(-50%);
+      font-size: .8rem; pointer-events: none; opacity: .4;
+    }
+    .eg-search-results {
+      position: absolute; z-index: 12; left: 0; right: 0; top: calc(100% + 4px);
+      display: none; flex-direction: column; gap: 2px;
+      max-height: 220px; overflow-y: auto;
+      border: 1px solid var(--line); border-radius: 12px;
+      background: rgba(255,252,246,.98); box-shadow: var(--shadow);
+      padding: 5px;
+    }
+    .eg-search-results.open { display: flex; }
+    .eg-search-result {
+      border: 0; border-radius: 8px; background: transparent;
+      color: var(--ink); cursor: pointer; padding: 6px 9px;
+      text-align: left; font: inherit; font-size: .75rem;
+      display: flex; align-items: center; gap: 7px;
+    }
+    .eg-search-result:hover { background: rgba(58,168,163,.1); }
+    .eg-search-result-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+    .eg-search-result small { color: var(--muted); font-size: .68rem; }
+
+    /* toolbar buttons */
+    .eg-tbtn {
+      border: 1px solid var(--line); background: rgba(255,255,255,.8);
+      color: var(--ink); border-radius: 999px; padding: 5px 11px;
+      font: inherit; font-size: .72rem; font-weight: 600;
+      cursor: pointer; white-space: nowrap; transition: background 80ms, border-color 80ms;
+    }
+    .eg-tbtn:hover { border-color: var(--accent); background: rgba(58,168,163,.1); color: var(--accent); }
+    .eg-tbtn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+    .eg-tbtn.danger:hover { border-color: #ef4444; color: #ef4444; background: rgba(239,68,68,.08); }
+
+    .eg-tselect {
+      border: 1px solid var(--line); border-radius: 10px;
+      background: rgba(255,255,255,.8); color: var(--ink);
+      font: inherit; font-size: .72rem; padding: 4px 7px; cursor: pointer;
+    }
+    .eg-tselect:focus { outline: none; border-color: var(--accent); }
+
+    .eg-toolbar-sep {
+      width: 1px; height: 18px; background: var(--line); flex-shrink: 0;
+    }
+
+    .eg-zoom-wrap { display: flex; gap: 3px; }
+    .eg-zoom-btn {
+      border: 1px solid var(--line); background: rgba(255,255,255,.8);
+      color: var(--ink); border-radius: 8px; width: 26px; height: 26px;
+      font: inherit; font-size: .9rem; font-weight: 700;
+      cursor: pointer; display: flex; align-items: center; justify-content: center;
+      transition: background 80ms;
+    }
+    .eg-zoom-btn:hover { background: rgba(58,168,163,.12); border-color: var(--accent); color: var(--accent); }
+
+    /* ── stage (canvas background) ─────────────────────────────────── */
+    .eg-stage {
+      flex: 1 1 0; min-height: 0; position: relative; overflow: hidden;
+      background:
+        radial-gradient(ellipse at 62% 42%, rgba(58,168,163,.04), transparent 55%),
+        radial-gradient(ellipse at 26% 70%, rgba(217,119,6,.04), transparent 48%),
+        radial-gradient(ellipse at 50% 50%, rgba(124,58,237,.025), transparent 60%),
+        linear-gradient(160deg, rgba(255,252,248,.95), rgba(242,234,220,.82));
     }
     #eg-svg {
       width: 100%; height: 100%;
@@ -173,35 +232,41 @@
     /* tooltip */
     #eg-tooltip {
       position: absolute; pointer-events: none;
-      background: rgba(24,23,20,.88); color: #fff;
-      font-size: .7rem; border-radius: 8px; padding: 5px 9px;
-      white-space: nowrap; z-index: 10; display: none;
-      max-width: 240px; white-space: normal; line-height: 1.35;
+      background: rgba(20,18,16,.9); color: #fff;
+      font-size: .7rem; border-radius: 9px; padding: 6px 10px;
+      white-space: normal; z-index: 10; display: none;
+      max-width: 230px; line-height: 1.4;
+      box-shadow: 0 4px 16px rgba(0,0,0,.18);
     }
+
+    /* neighborhood banner */
+    .eg-barrio-banner {
+      position: absolute; top: 10px; left: 50%; transform: translateX(-50%);
+      background: rgba(58,168,163,.13); border: 1px solid rgba(58,168,163,.4);
+      border-radius: 999px; padding: 4px 14px;
+      font-size: .72rem; color: #0f766e; display: none; pointer-events: none;
+      white-space: nowrap; backdrop-filter: blur(4px);
+    }
+    .eg-barrio-banner.visible { display: block; }
 
     /* legend */
     .eg-legend {
-      position: absolute; bottom: 14px; left: 14px;
-      background: rgba(253,250,244,.9); border: 1px solid var(--line);
+      position: absolute; bottom: 12px; left: 12px;
+      background: rgba(253,250,244,.92); border: 1px solid var(--line);
       border-radius: 10px; padding: 8px 10px;
       font-size: .67rem; color: var(--muted);
       backdrop-filter: blur(4px);
     }
     .eg-legend-row { display: flex; align-items: center; gap: 5px; margin: 2px 0; }
-    .eg-legend-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+    .eg-legend-dot  { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
     .eg-legend-line { width: 16px; height: 2px; border-radius: 1px; flex-shrink: 0; }
 
-    /* zoom hint */
-    .eg-zoom-hint {
-      position: absolute; bottom: 14px; right: 14px;
-      font-size: .65rem; color: var(--muted); background: rgba(253,250,244,.8);
-      border: 1px solid var(--line); border-radius: 8px; padding: 4px 8px;
-    }
-    .eg-focus-banner {
-      position: absolute; top: 10px; left: 50%; transform: translateX(-50%);
-      background: rgba(124,58,237,.12); border: 1px solid rgba(124,58,237,.3);
-      border-radius: 999px; padding: 4px 14px;
-      font-size: .72rem; color: #5b21b6; display: none; pointer-events: none;
+    /* hint */
+    .eg-hint {
+      position: absolute; bottom: 12px; right: 12px;
+      font-size: .65rem; color: var(--muted);
+      background: rgba(253,250,244,.82); border: 1px solid var(--line);
+      border-radius: 8px; padding: 4px 8px;
     }
   </style>
 </head>
@@ -221,6 +286,7 @@
     <div style="margin-left:auto;display:flex;gap:6px;align-items:center">
       <a href="./capital-atlas.html" style="font-size:.7rem;color:var(--muted);text-decoration:none;border:1px solid var(--line);border-radius:8px;padding:3px 9px;background:rgba(255,255,255,.7)">Capital Atlas →</a>
       <a href="./startup-themes.html" style="font-size:.7rem;color:var(--muted);text-decoration:none;border:1px solid var(--line);border-radius:8px;padding:3px 9px;background:rgba(255,255,255,.7)">Themes →</a>
+      <a href="./ecosystem-intelligence.html" style="font-size:.7rem;color:var(--muted);text-decoration:none;border:1px solid var(--line);border-radius:8px;padding:3px 9px;background:rgba(255,255,255,.7)">Inteligencia →</a>
     </div>
   </div>
 
@@ -230,18 +296,18 @@
     <!-- sidebar -->
     <div class="eg-sidebar">
 
-      <!-- controls card -->
+      <!-- layer controls -->
       <div class="eg-card">
         <div class="eg-card-head">
-          <div class="eg-card-head-title">Capas del ecosistema</div>
-          <div class="eg-card-head-sub">Activar / desactivar nodos y edges</div>
+          <div class="eg-card-head-title">Capas</div>
+          <div class="eg-card-head-sub">Nodos y relaciones visibles</div>
         </div>
         <div class="eg-controls-body">
           <div class="eg-section-label">Nodos</div>
           <label class="eg-toggle-row" id="tog-organization">
             <input type="checkbox" checked>
             <span class="eg-dot" style="background:#7C3AED"></span>
-            Gremiales / Asociaciones
+            Gremiales
             <span class="eg-toggle-count" id="cnt-organization">0</span>
           </label>
           <label class="eg-toggle-row" id="tog-eso">
@@ -253,13 +319,13 @@
           <label class="eg-toggle-row" id="tog-corporate">
             <input type="checkbox" checked>
             <span class="eg-dot" style="background:#D97706"></span>
-            Corporates / Adquirentes
+            Corporates
             <span class="eg-toggle-count" id="cnt-corporate">0</span>
           </label>
           <label class="eg-toggle-row" id="tog-fund">
             <input type="checkbox" checked>
             <span class="eg-dot" style="background:#3B82F6"></span>
-            Fondos VC / Aceleradoras
+            Fondos VC
             <span class="eg-toggle-count" id="cnt-fund">0</span>
           </label>
           <label class="eg-toggle-row" id="tog-allocator">
@@ -279,7 +345,7 @@
           <label class="eg-edge-row" id="etog-investment">
             <input type="checkbox" checked>
             <span class="eg-edge-line" style="background:rgba(59,130,246,.6)"></span>
-            Inversiones (fund→startup)
+            Inversiones
             <span class="eg-toggle-count" id="ecnt-investment">0</span>
           </label>
           <label class="eg-edge-row" id="etog-capital">
@@ -291,34 +357,28 @@
           <label class="eg-edge-row" id="etog-membership">
             <input type="checkbox" checked>
             <span class="eg-edge-line" style="background:rgba(124,58,237,.7)"></span>
-            Membresía (gremial→fondo)
+            Membresía
             <span class="eg-toggle-count" id="ecnt-membership">0</span>
           </label>
           <label class="eg-edge-row" id="etog-support">
             <input type="checkbox" checked>
             <span class="eg-edge-line" style="background:rgba(13,148,136,.7)"></span>
-            Soporte (ESO→startup)
+            Soporte ESO
             <span class="eg-toggle-count" id="ecnt-support">0</span>
           </label>
           <label class="eg-edge-row" id="etog-validation">
             <input type="checkbox" checked>
             <span class="eg-edge-line" style="background:rgba(217,119,6,.7)"></span>
-            Validación (startup↔corp)
+            Validación
             <span class="eg-toggle-count" id="ecnt-validation">0</span>
           </label>
-
-          <div class="eg-sim-row">
-            <button class="eg-btn" id="btn-reheat" title="Volver a animar">↺ Reheat</button>
-            <button class="eg-btn" id="btn-focus-eco" title="Mostrar solo capa ecosistema y sus conexiones">🔭 Eco only</button>
-            <button class="eg-btn" id="btn-show-all" title="Mostrar todos los nodos">⊞ Todos</button>
-          </div>
         </div>
       </div>
 
-      <!-- detail card -->
+      <!-- detail panel -->
       <div class="eg-detail">
         <div class="eg-detail-empty" id="eg-detail-empty">
-          Clic en un nodo para ver detalles
+          Clic en un nodo<br>para ver su barrio
         </div>
         <div class="eg-detail-content" id="eg-detail-content"></div>
       </div>
@@ -326,44 +386,96 @@
 
     <!-- canvas -->
     <div class="eg-canvas-area">
-      <svg id="eg-svg" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <marker id="arr-invest" markerWidth="6" markerHeight="6"
-                  refX="5" refY="2" orient="auto" markerUnits="strokeWidth">
-            <path d="M0,0 L0,4 L5,2 z" fill="rgba(59,130,246,.5)"/>
-          </marker>
-          <marker id="arr-capital" markerWidth="6" markerHeight="6"
-                  refX="5" refY="2" orient="auto" markerUnits="strokeWidth">
-            <path d="M0,0 L0,4 L5,2 z" fill="rgba(59,79,168,.5)"/>
-          </marker>
-          <marker id="arr-membership" markerWidth="6" markerHeight="6"
-                  refX="5" refY="2" orient="auto" markerUnits="strokeWidth">
-            <path d="M0,0 L0,4 L5,2 z" fill="rgba(124,58,237,.7)"/>
-          </marker>
-        </defs>
-        <g id="eg-root">
-          <g id="eg-edges"></g>
-          <g id="eg-nodes"></g>
-        </g>
-      </svg>
-      <div id="eg-tooltip"></div>
-      <div class="eg-focus-banner" id="eg-focus-banner">Modo Eco: solo nodos del ecosistema y sus conexiones directas</div>
-      <div class="eg-legend">
-        <div style="font-size:.62rem;font-weight:800;margin-bottom:4px;color:var(--ink)">Capas</div>
-        <div class="eg-legend-row"><span class="eg-legend-dot" style="background:#7C3AED"></span>Gremial</div>
-        <div class="eg-legend-row"><span class="eg-legend-dot" style="background:#0D9488"></span>ESO</div>
-        <div class="eg-legend-row"><span class="eg-legend-dot" style="background:#D97706"></span>Corporate</div>
-        <div class="eg-legend-row"><span class="eg-legend-dot" style="background:#3B82F6"></span>Fondo VC</div>
-        <div class="eg-legend-row"><span class="eg-legend-dot" style="background:#3B4FA8"></span>Allocator</div>
-        <div class="eg-legend-row"><span class="eg-legend-dot" style="background:#A0A0A0"></span>Startup</div>
-        <div style="margin-top:6px;font-size:.62rem;font-weight:800;color:var(--ink)">Edges</div>
-        <div class="eg-legend-row"><span class="eg-legend-line" style="background:rgba(59,130,246,.7)"></span>Inversión</div>
-        <div class="eg-legend-row"><span class="eg-legend-line" style="background:rgba(124,58,237,.8)"></span>Membresía</div>
-        <div class="eg-legend-row"><span class="eg-legend-line" style="background:rgba(13,148,136,.8)"></span>Soporte</div>
-        <div class="eg-legend-row"><span class="eg-legend-line" style="background:rgba(217,119,6,.8)"></span>Validación</div>
+
+      <!-- toolbar -->
+      <div class="eg-toolbar">
+        <!-- search -->
+        <div class="eg-toolbar-search-wrap">
+          <span class="eg-toolbar-search-icon">⌕</span>
+          <input type="text" id="eg-search" class="eg-toolbar-search" placeholder="Buscar nodo…" autocomplete="off">
+          <div class="eg-search-results" id="eg-search-results"></div>
+        </div>
+
+        <div class="eg-toolbar-sep"></div>
+
+        <!-- node size mode -->
+        <label style="font-size:.7rem;color:var(--muted);white-space:nowrap">Tamaño</label>
+        <select id="eg-size-mode" class="eg-tselect">
+          <option value="uniform">Uniforme</option>
+          <option value="degree">Grado (conexiones)</option>
+          <option value="rounds">Rondas de inversión</option>
+        </select>
+
+        <div class="eg-toolbar-sep"></div>
+
+        <!-- modes -->
+        <button class="eg-tbtn" id="btn-reheat" title="Reorganizar grafo">↺ Reorganizar</button>
+        <button class="eg-tbtn" id="btn-focus-eco" title="Solo nodos del ecosistema y sus conexiones">🔭 Eco</button>
+        <button class="eg-tbtn active" id="btn-show-all" title="Mostrar todos">⊞ Todos</button>
+
+        <div class="eg-toolbar-sep"></div>
+
+        <!-- zoom -->
+        <div class="eg-zoom-wrap">
+          <button class="eg-zoom-btn" id="btn-zoom-in"  title="Zoom in">+</button>
+          <button class="eg-zoom-btn" id="btn-zoom-out" title="Zoom out">−</button>
+          <button class="eg-zoom-btn" id="btn-zoom-fit" title="Encuadrar todo" style="width:auto;padding:0 7px;font-size:.7rem">⊡</button>
+        </div>
       </div>
-      <div class="eg-zoom-hint">Scroll=zoom · Drag=pan · Click=detail</div>
-    </div>
+
+      <!-- stage -->
+      <div class="eg-stage">
+        <svg id="eg-svg" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <marker id="arr-invest" markerWidth="6" markerHeight="6"
+                    refX="5" refY="2" orient="auto" markerUnits="strokeWidth">
+              <path d="M0,0 L0,4 L5,2 z" fill="rgba(59,130,246,.5)"/>
+            </marker>
+            <marker id="arr-capital" markerWidth="6" markerHeight="6"
+                    refX="5" refY="2" orient="auto" markerUnits="strokeWidth">
+              <path d="M0,0 L0,4 L5,2 z" fill="rgba(59,79,168,.5)"/>
+            </marker>
+            <marker id="arr-membership" markerWidth="6" markerHeight="6"
+                    refX="5" refY="2" orient="auto" markerUnits="strokeWidth">
+              <path d="M0,0 L0,4 L5,2 z" fill="rgba(124,58,237,.7)"/>
+            </marker>
+            <!-- selection glow filter -->
+            <filter id="glow-selected" x="-50%" y="-50%" width="200%" height="200%">
+              <feGaussianBlur stdDeviation="3" result="blur"/>
+              <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+          </defs>
+          <g id="eg-root">
+            <g id="eg-edges"></g>
+            <g id="eg-nodes"></g>
+          </g>
+        </svg>
+
+        <div id="eg-tooltip"></div>
+
+        <!-- neighborhood banner -->
+        <div class="eg-barrio-banner" id="eg-barrio-banner"></div>
+
+        <!-- legend -->
+        <div class="eg-legend">
+          <div style="font-size:.62rem;font-weight:800;margin-bottom:4px;color:var(--ink)">Capas</div>
+          <div class="eg-legend-row"><span class="eg-legend-dot" style="background:#7C3AED"></span>Gremial</div>
+          <div class="eg-legend-row"><span class="eg-legend-dot" style="background:#0D9488"></span>ESO</div>
+          <div class="eg-legend-row"><span class="eg-legend-dot" style="background:#D97706"></span>Corporate</div>
+          <div class="eg-legend-row"><span class="eg-legend-dot" style="background:#3B82F6"></span>Fondo VC</div>
+          <div class="eg-legend-row"><span class="eg-legend-dot" style="background:#3B4FA8"></span>Allocator</div>
+          <div class="eg-legend-row"><span class="eg-legend-dot" style="background:#A0A0A0"></span>Startup</div>
+          <div style="margin-top:6px;font-size:.62rem;font-weight:800;color:var(--ink)">Edges</div>
+          <div class="eg-legend-row"><span class="eg-legend-line" style="background:rgba(59,130,246,.7)"></span>Inversión</div>
+          <div class="eg-legend-row"><span class="eg-legend-line" style="background:rgba(124,58,237,.8)"></span>Membresía</div>
+          <div class="eg-legend-row"><span class="eg-legend-line" style="background:rgba(13,148,136,.8)"></span>Soporte</div>
+          <div class="eg-legend-row"><span class="eg-legend-line" style="background:rgba(217,119,6,.8)"></span>Validación</div>
+        </div>
+
+        <div class="eg-hint">Scroll=zoom · Drag=pan · Clic=barrio · Esc=deseleccionar</div>
+      </div>
+
+    </div><!-- /canvas-area -->
 
   </div><!-- /layout -->
 </div><!-- /page-shell -->
@@ -371,10 +483,12 @@
 <script src="./ecosystem-graph-data.js?v=20260524a" defer></script>
 <script>
 /* ══════════════════════════════════════════════════════════════════
-   ecosystem-graph.js  —  Ecosystem Graph visualización
-   Inline en HTML para un solo archivo deployable.
+   ecosystem-graph.js  —  Ecosystem Graph v2
+   Mejoras: barrio (neighborhood selection), tamaño de nodos adaptivo,
+   layout inicial precargado concéntrico, toolbar con búsqueda, zoom buttons.
    ══════════════════════════════════════════════════════════════════ */
 
+// ── Colors ───────────────────────────────────────────────────────
 const LAYER_COLORS = {
   organization: '#7C3AED',
   eso:          '#0D9488',
@@ -384,29 +498,26 @@ const LAYER_COLORS = {
   startup:      null,   // uses node.color (theme-based)
 };
 
-const LAYER_R = {
-  organization: 10,
-  eso:          10,
-  corporate:    10,
-  fund:         7,
+// Base radii (uniform mode)
+const LAYER_R_BASE = {
+  organization: 11,
+  eso:          11,
+  corporate:    11,
+  fund:         6,
   allocator:    7,
-  startup:      4,
+  startup:      3.5,
 };
 
 const EDGE_COLORS = {
   investment:  'rgba(59,130,246,0.22)',
-  capital:     'rgba(59,79,168,0.35)',
-  membership:  'rgba(124,58,237,0.6)',
-  support:     'rgba(13,148,136,0.6)',
-  validation:  'rgba(217,119,6,0.6)',
+  capital:     'rgba(59,79,168,0.40)',
+  membership:  'rgba(124,58,237,0.65)',
+  support:     'rgba(13,148,136,0.65)',
+  validation:  'rgba(217,119,6,0.65)',
 };
-
 const EDGE_WIDTH = {
-  investment:  1.0,
-  capital:     1.5,
-  membership:  2.0,
-  support:     2.0,
-  validation:  2.0,
+  investment: 1.0, capital: 1.5,
+  membership: 2.0, support: 2.0, validation: 2.0,
 };
 
 // ── State ────────────────────────────────────────────────────────
@@ -415,25 +526,30 @@ let simNodes = [], simEdges = [];
 let layerVis = { organization:true, eso:true, corporate:true, fund:true, allocator:true, startup:true };
 let edgeVis  = { investment:true, capital:true, membership:true, support:true, validation:true };
 let ecoOnlyMode = false;
-let selectedId = null;
+let selectedId  = null;   // currently selected node id
+let sizeMode    = 'uniform';  // 'uniform' | 'degree' | 'rounds'
+
+// Per-node round count (filled after data load)
+const nodeRoundCount = new Map();
 
 // SVG pan/zoom
 let svgTx = 0, svgTy = 0, svgScale = 1;
 let isDragging = false, dragStartX = 0, dragStartY = 0, dragTx = 0, dragTy = 0;
 
-// Sim state
-let simRunning = false;
-let simTick = 0;
-const SIM_MAX_TICKS = 600;
+// Sim
+let simRunning = false, simTick = 0;
+const SIM_MAX_TICKS = 150;   // enough ticks for physics to damp from pre-computed positions
 let animId = null;
 
 // DOM cache
 let svgEl, rootG, edgesG, nodesG, tooltipEl, detailEmpty, detailContent;
 let W = 0, H = 0;
 
-// Node element map for quick updates
-const nodeElMap = new Map();   // id → {g, circle/path, label}
-const edgeElMap = new Map();   // id → line/path el
+// Element maps
+const nodeElMap  = new Map();          // id → <g>
+const nodeCircleMap = new Map();       // id → main <circle> (for radius updates)
+const edgeElMap  = new Map();          // id → <line>
+const edgeElMap_data = new Map();      // id → edge data
 
 // ── Init ─────────────────────────────────────────────────────────
 window.addEventListener('DOMContentLoaded', () => {
@@ -444,41 +560,44 @@ window.addEventListener('DOMContentLoaded', () => {
   tooltipEl     = document.getElementById('eg-tooltip');
   detailEmpty   = document.getElementById('eg-detail-empty');
   detailContent = document.getElementById('eg-detail-content');
-
-  // Wait for data
   waitForData();
 });
 
 function waitForData() {
-  if (typeof EG_NODES !== 'undefined') {
-    initGraph();
-  } else {
-    requestAnimationFrame(waitForData);
-  }
+  if (typeof EG_NODES !== 'undefined') initGraph();
+  else requestAnimationFrame(waitForData);
 }
 
 function initGraph() {
   nodes = EG_NODES;
   edges = EG_EDGES;
+  HAS_PRECOMPUTED = nodes.length > 0 && nodes[0].px !== undefined;
 
-  // Populate stats bar
-  document.getElementById('stat-nodes').textContent  = EG_META.nodesTotal;
-  document.getElementById('stat-edges').textContent  = EG_META.edgesTotal;
-  document.getElementById('stat-org').textContent    = EG_META.byLayer.organization || 0;
-  document.getElementById('stat-eso').textContent    = EG_META.byLayer.eso || 0;
-  document.getElementById('stat-corp').textContent   = EG_META.byLayer.corporate || 0;
+  // Pre-compute round counts per node (from investment edges)
+  edges.forEach(e => {
+    if (e.edgeType === 'investment') {
+      nodeRoundCount.set(e.target, (nodeRoundCount.get(e.target) || 0) + 1);
+    }
+  });
+
+  // Stats bar
+  document.getElementById('stat-nodes').textContent = EG_META.nodesTotal;
+  document.getElementById('stat-edges').textContent = EG_META.edgesTotal;
+  document.getElementById('stat-org').textContent   = EG_META.byLayer.organization || 0;
+  document.getElementById('stat-eso').textContent   = EG_META.byLayer.eso || 0;
+  document.getElementById('stat-corp').textContent  = EG_META.byLayer.corporate || 0;
 
   // Toggle counts
-  for (const [layer, cnt] of Object.entries(EG_META.byLayer)) {
-    const el = document.getElementById('cnt-' + layer);
-    if (el) el.textContent = cnt;
-  }
-  for (const [et, cnt] of Object.entries(EG_META.byEdgeType)) {
+  Object.entries(EG_META.byLayer).forEach(([l, c]) => {
+    const el = document.getElementById('cnt-' + l);
+    if (el) el.textContent = c;
+  });
+  Object.entries(EG_META.byEdgeType || {}).forEach(([et, c]) => {
     const el = document.getElementById('ecnt-' + et);
-    if (el) el.textContent = cnt;
-  }
+    if (el) el.textContent = c;
+  });
 
-  // Wire toggles
+  // Layer toggles
   ['organization','eso','corporate','fund','allocator','startup'].forEach(layer => {
     const row = document.getElementById('tog-' + layer);
     if (!row) return;
@@ -489,6 +608,8 @@ function initGraph() {
       rebuildVisible();
     });
   });
+
+  // Edge toggles
   ['investment','capital','membership','support','validation'].forEach(et => {
     const row = document.getElementById('etog-' + et);
     if (!row) return;
@@ -500,21 +621,60 @@ function initGraph() {
     });
   });
 
+  // Toolbar buttons
   document.getElementById('btn-reheat').addEventListener('click', () => {
-    reheat();
+    clearSelection();
+    // Reset context flags so positionContextNodes re-evaluates
+    nodes.forEach(n => { n._isContext = false; });
+    if (HAS_PRECOMPUTED) applyPrecomputedPositions();
+    const visIds = visibleNodeIds();
+    positionContextNodes(visIds);
+    simNodes = nodes.filter(n => visIds.has(n.id) && !n._isContext);
+    simEdges = edges.filter(e => visIds.has(e.source) && visIds.has(e.target));
+    // Re-sync opacity on <g> elements
+    nodeElMap.forEach((g, id) => {
+      const nd = nodes.find(n => n.id === id);
+      if (nd) g.style.opacity = nd._isContext ? '0.38' : '';
+    });
+    reheat(SIM_MAX_TICKS);
+    applyPositions();
+    fitView();
   });
-  document.getElementById('btn-focus-eco').addEventListener('click', () => {
-    setEcoOnlyMode(true);
+  document.getElementById('btn-focus-eco').addEventListener('click', () => setEcoOnlyMode(true));
+  document.getElementById('btn-show-all').addEventListener('click', () => setEcoOnlyMode(false));
+
+  // Size mode
+  document.getElementById('eg-size-mode').addEventListener('change', (e) => {
+    sizeMode = e.target.value;
+    updateAllNodeSizes();
   });
-  document.getElementById('btn-show-all').addEventListener('click', () => {
-    setEcoOnlyMode(false);
-  });
+
+  // Zoom buttons
+  document.getElementById('btn-zoom-in').addEventListener('click',  () => zoomBy(1.3));
+  document.getElementById('btn-zoom-out').addEventListener('click', () => zoomBy(0.77));
+  document.getElementById('btn-zoom-fit').addEventListener('click', () => fitView());
 
   // SVG pan/zoom
   svgEl.addEventListener('mousedown', onMouseDown);
   svgEl.addEventListener('mousemove', onMouseMove);
   window.addEventListener('mouseup', onMouseUp);
   svgEl.addEventListener('wheel', onWheel, { passive: false });
+
+  // Escape key to deselect
+  window.addEventListener('keydown', e => {
+    if (e.key === 'Escape') clearSelection();
+  });
+
+  // Click on empty canvas = deselect
+  svgEl.addEventListener('click', (e) => {
+    if (e.target === svgEl || e.target === rootG ||
+        e.target.id === 'eg-edges' || e.target.id === 'eg-nodes') {
+      clearSelection();
+    }
+  });
+
+  // Search
+  initSearch();
 
   // Size
   const rect = svgEl.getBoundingClientRect();
@@ -523,14 +683,61 @@ function initGraph() {
   window.addEventListener('resize', onResize);
 
   buildInitialLayout();
+  document.getElementById('btn-show-all').classList.add('active');
+}
+
+// ── Node radius calculation ───────────────────────────────────────
+function getNodeR(n) {
+  const base = LAYER_R_BASE[n.layer] || 5;
+  if (sizeMode === 'degree') {
+    const d = Math.max(1, n.degree || 1);
+    if (n.layer === 'startup') return Math.max(2.5, Math.min(14, 3 + Math.sqrt(d) * 1.2));
+    return Math.max(base, Math.min(20, base + Math.sqrt(d) * 1.5));
+  }
+  if (sizeMode === 'rounds') {
+    // For startups: size by round count. For others: size by degree
+    if (n.layer === 'startup') {
+      const rc = nodeRoundCount.get(n.id) || 0;
+      return Math.max(2.5, Math.min(16, 3 + rc * 1.8));
+    }
+    const d = Math.max(1, n.degree || 1);
+    return Math.max(base, Math.min(20, base + Math.sqrt(d) * 1.5));
+  }
+  return base; // uniform
+}
+
+function updateAllNodeSizes() {
+  nodes.forEach(n => {
+    const circle = nodeCircleMap.get(n.id);
+    if (!circle) return;
+    const r = getNodeR(n);
+    circle.setAttribute('r', String(r));
+    const g = nodeElMap.get(n.id);
+    if (g) {
+      const outer = g.querySelector('.eco-outer');
+      if (outer) outer.setAttribute('r', String(r + 3.5));
+      // Update fund label position
+      const isEco = ['organization','eso','corporate'].includes(n.layer);
+      if (!isEco && (n.layer === 'fund' || n.layer === 'allocator')) {
+        const lbl = g.querySelector('text');
+        if (lbl) lbl.setAttribute('y', String(-r - 7));
+      }
+      // Update halo radius
+      const halo = g.querySelector('.node-halo');
+      if (halo) {
+        const isStartup = n.layer === 'startup';
+        const isFund = n.layer === 'fund' || n.layer === 'allocator';
+        const mult = isEco ? 2.4 : isFund ? 2.6 : 2.8;
+        halo.setAttribute('r', String(r * mult));
+      }
+    }
+  });
+  applyPositions();
 }
 
 // ── Visibility management ─────────────────────────────────────────
-
-/** Which nodes should be visible given current layer/mode settings */
 function visibleNodeIds() {
   if (ecoOnlyMode) {
-    // Ecosystem nodes + directly connected nodes
     const ecoIds = new Set(nodes.filter(n =>
       ['organization','eso','corporate'].includes(n.layer)
     ).map(n => n.id));
@@ -543,96 +750,431 @@ function visibleNodeIds() {
     });
     return connected;
   }
-  return new Set(
-    nodes.filter(n => layerVis[n.layer]).map(n => n.id)
-  );
+  return new Set(nodes.filter(n => layerVis[n.layer]).map(n => n.id));
 }
 
 function setEcoOnlyMode(val) {
   ecoOnlyMode = val;
-  document.getElementById('eg-focus-banner').style.display = val ? 'block' : 'none';
   document.getElementById('btn-focus-eco').classList.toggle('active', val);
   document.getElementById('btn-show-all').classList.toggle('active', !val);
+  clearSelection();
   rebuildVisible();
 }
 
 function rebuildVisible() {
   const visIds = visibleNodeIds();
-
-  // Update node visibility
-  for (const [id, el] of nodeElMap) {
-    el.style.display = visIds.has(id) ? '' : 'none';
-  }
-
-  // Rebuild simNodes from visible subset
-  simNodes = nodes.filter(n => visIds.has(n.id));
-  simEdges = edges.filter(e => visIds.has(e.source) && visIds.has(e.target));
-
+  nodeElMap.forEach((g, id) => { g.style.display = visIds.has(id) ? '' : 'none'; });
   updateEdgeVisibility();
-  reheat(200);
+  if (HAS_PRECOMPUTED) {
+    // Reset context flags before re-evaluating isolation
+    nodes.forEach(n => { n._isContext = false; });
+    applyPrecomputedPositions();
+    positionContextNodes(visIds);
+    // Sync opacity
+    nodeElMap.forEach((g, id) => {
+      const nd = nodes.find(n => n.id === id);
+      if (nd) g.style.opacity = nd._isContext ? '0.38' : '';
+    });
+  }
+  simNodes = nodes.filter(n => visIds.has(n.id) && !n._isContext);
+  simEdges = edges.filter(e => visIds.has(e.source) && visIds.has(e.target));
+  reheat(HAS_PRECOMPUTED ? SIM_MAX_TICKS : 250);
+  applyPositions();
+  fitView();
 }
 
 function updateEdgeVisibility() {
   const visIds = visibleNodeIds();
-  for (const [id, el] of edgeElMap) {
+  edgeElMap.forEach((el, id) => {
     const e = edgeElMap_data.get(id);
-    if (!e) continue;
-    const typeVis = edgeVis[e.edgeType] !== false;
-    const nodesVis = visIds.has(e.source) && visIds.has(e.target);
-    el.style.display = (typeVis && nodesVis) ? '' : 'none';
-  }
+    if (!e) return;
+    const ok = edgeVis[e.edgeType] !== false
+             && visIds.has(e.source) && visIds.has(e.target);
+    el.style.display = ok ? '' : 'none';
+  });
 }
 
-const edgeElMap_data = new Map();
+// ── Neighborhood (barrio) selection ──────────────────────────────
+function selectNode(n) {
+  if (selectedId === n.id) {
+    clearSelection();
+    return;
+  }
 
-// ── Layout & rendering ────────────────────────────────────────────
+  selectedId = n.id;
 
-function buildInitialLayout() {
-  const visIds = visibleNodeIds();
-
-  // Assign initial positions
-  const cx = W / 2, cy = H / 2;
-  nodes.forEach(n => {
-    if (n.x === undefined) {
-      // Radial initial placement by layer
-      const zoneR = {
-        organization: 0.28, eso: 0.32, corporate: 0.36,
-        fund: 0.20, allocator: 0.15, startup: 0.40,
-      }[n.layer] || 0.35;
-      const r = zoneR * Math.min(W, H) * (0.7 + Math.random() * 0.6);
-      const angle = Math.random() * Math.PI * 2;
-      n.x = cx + r * Math.cos(angle);
-      n.y = cy + r * Math.sin(angle);
-      n.vx = 0; n.vy = 0;
+  // Find neighbors
+  const neighborIds = new Set([n.id]);
+  const neighborEdgeIds = new Set();
+  edges.forEach(e => {
+    if (e.source === n.id || e.target === n.id) {
+      neighborIds.add(e.source);
+      neighborIds.add(e.target);
+      neighborEdgeIds.add(e.id);
     }
   });
 
-  simNodes = nodes.filter(n => visIds.has(n.id));
-  simEdges = edges.filter(e => visIds.has(e.source) && visIds.has(e.target));
+  // Apply highlight: dim non-neighbors
+  nodeElMap.forEach((g, id) => {
+    const isNeighbor = neighborIds.has(id);
+    g.style.opacity = isNeighbor ? '1' : '0.07';
+    g.style.transition = 'opacity 180ms';
+    // Remove previous selection ring
+    const sel = g.querySelector('.sel-ring');
+    if (sel) sel.remove();
+  });
 
-  renderAll(visIds);
-  reheat(SIM_MAX_TICKS);
+  // Add selection ring to clicked node
+  const selG = nodeElMap.get(n.id);
+  if (selG) {
+    const NS = 'http://www.w3.org/2000/svg';
+    const ring = document.createElementNS(NS, 'circle');
+    ring.setAttribute('r', String(getNodeR(n) + 5));
+    ring.setAttribute('fill', 'none');
+    ring.setAttribute('stroke', LAYER_COLORS[n.layer] || n.color || '#888');
+    ring.setAttribute('stroke-width', '2');
+    ring.setAttribute('opacity', '0.7');
+    ring.setAttribute('stroke-dasharray', '4 3');
+    ring.classList.add('sel-ring');
+    selG.insertBefore(ring, selG.firstChild);
+  }
+
+  // Dim non-neighbor edges
+  edgeElMap.forEach((el, id) => {
+    const e = edgeElMap_data.get(id);
+    if (!e) return;
+    if (!edgeVis[e.edgeType]) { el.style.opacity = '0'; return; }
+    el.style.opacity = neighborEdgeIds.has(id) ? '1' : '0.04';
+    el.style.transition = 'opacity 180ms';
+  });
+
+  // Show banner
+  const neighborCount = neighborIds.size - 1;
+  const banner = document.getElementById('eg-barrio-banner');
+  const connWord = neighborCount !== 1 ? 'conexiones' : 'conexión';
+  const dirWord  = neighborCount !== 1 ? 'directas'   : 'directa';
+  banner.textContent = `Barrio de ${n.label}: ${neighborCount} ${connWord} ${dirWord}`;
+  banner.classList.add('visible');
+
+  // Show detail panel
+  renderDetail(n, Array.from(neighborIds).filter(id => id !== n.id));
 }
 
+function clearSelection() {
+  if (!selectedId) return;
+  selectedId = null;
+
+  // Remove selection rings
+  nodeElMap.forEach((g) => {
+    g.style.opacity = '';
+    g.style.transition = 'opacity 180ms';
+    const sel = g.querySelector('.sel-ring');
+    if (sel) sel.remove();
+  });
+
+  // Restore edge opacity
+  edgeElMap.forEach((el) => {
+    el.style.opacity = '';
+    el.style.transition = 'opacity 180ms';
+  });
+
+  // Hide banner
+  document.getElementById('eg-barrio-banner').classList.remove('visible');
+
+  // Restore edge visibility filter
+  updateEdgeVisibility();
+
+  // Clear detail panel
+  detailEmpty.style.display = '';
+  detailContent.classList.remove('visible');
+}
+
+function selectNodeById(id) {
+  const n = nodes.find(nd => nd.id === id);
+  if (n) selectNode(n);
+}
+window.selectNodeById = selectNodeById;
+
+// ── Detail panel renderer ─────────────────────────────────────────
+function renderDetail(n, neighborIds) {
+  const neighbors = nodes.filter(nd => neighborIds.includes(nd.id));
+
+  const chipColors = {
+    organization: 'background:rgba(124,58,237,.1);color:#5b21b6',
+    eso:          'background:rgba(13,148,136,.1);color:#0f766e',
+    corporate:    'background:rgba(217,119,6,.1);color:#92400e',
+    fund:         'background:rgba(59,130,246,.1);color:#1d4ed8',
+    allocator:    'background:rgba(59,79,168,.1);color:#1e3a8a',
+    startup:      'background:rgba(0,0,0,.06);color:#444',
+  };
+
+  const layerLabel = {
+    organization: 'GREMIAL', eso: 'ESO', corporate: 'CORPORATE',
+    fund: 'FONDO VC', allocator: 'ALLOCATOR', startup: 'STARTUP',
+  };
+
+  let html = `
+    <div class="eg-det-type" style="${chipColors[n.layer] || ''}">${layerLabel[n.layer] || n.layer}</div>
+    <div class="eg-det-name">${n.label}</div>
+    <div class="eg-det-sub">
+      ${n.country || ''}
+      ${n.theme ? ' · ' + (n.shortTheme || n.theme) : ''}
+      ${n.orgType ? ' · ' + n.orgType.replace(/_/g,' ') : ''}
+      ${n.esoType ? ' · ' + n.esoType.replace(/_/g,' ') : ''}
+      ${n.industry ? ' · ' + n.industry.split(';')[0] : ''}
+      ${n.investorType ? ' · ' + n.investorType.replace(/_/g,' ') : ''}
+    </div>
+  `;
+
+  html += `<div class="eg-det-section" style="margin-top:8px">Métricas</div>`;
+  html += `<div class="eg-det-row"><span>Grado</span><strong>${n.degree}</strong></div>`;
+  html += `<div class="eg-det-row"><span>Conexiones directas</span><strong>${neighbors.length}</strong></div>`;
+  if (n.layer === 'startup' && nodeRoundCount.get(n.id)) {
+    html += `<div class="eg-det-row"><span>Rondas documentadas</span><strong>${nodeRoundCount.get(n.id)}</strong></div>`;
+  }
+
+  if (n.website) {
+    html += `<div class="eg-det-section">Web</div>`;
+    html += `<div class="eg-det-row"><a class="eg-det-link" href="${n.website}" target="_blank" rel="noopener">${n.website.replace(/^https?:\/\//,'').slice(0,42)}</a></div>`;
+  }
+
+  if (n.thesis) html += `<div class="eg-det-summary">${n.thesis}</div>`;
+  if (n.summary) html += `<div class="eg-det-summary">${n.summary}</div>`;
+
+  // Group neighbors by layer
+  const grouped = {};
+  neighbors.forEach(nd => {
+    if (!grouped[nd.layer]) grouped[nd.layer] = [];
+    grouped[nd.layer].push(nd);
+  });
+
+  const layerOrder = ['organization','eso','corporate','allocator','fund','startup'];
+  const layerNames = {
+    organization:'Gremiales', eso:'ESOs', corporate:'Corporates',
+    allocator:'Allocators', fund:'Fondos VC', startup:'Startups',
+  };
+
+  if (neighbors.length > 0) {
+    layerOrder.forEach(layer => {
+      const group = grouped[layer];
+      if (!group || !group.length) return;
+      html += `<div class="eg-det-section">${layerNames[layer]} (${group.length})</div>`;
+      html += `<div class="eg-det-neighbors">`;
+      group.slice(0, 20).forEach(nd => {
+        const c = LAYER_COLORS[nd.layer] || nd.color || '#888';
+        html += `<span class="eg-det-neighbor" onclick="selectNodeById('${nd.id}')"
+          style="border-color:${c}30;color:${c}">${nd.label}</span>`;
+      });
+      if (group.length > 20) html += `<span class="eg-det-neighbor" style="opacity:.5">+${group.length-20} más</span>`;
+      html += `</div>`;
+    });
+  }
+
+  detailContent.innerHTML = html;
+  detailContent.classList.add('visible');
+  detailEmpty.style.display = 'none';
+}
+
+// ── Initial layout ─────────────────────────────────────────────────
+// Prefers Python-precomputed px/py from ecosystem-graph-data.js.
+// Falls back to concentric ring if no precomputed positions are available.
+
+let HAS_PRECOMPUTED = false;  // set in initGraph() after data loads
+
+function applyPrecomputedPositions() {
+  const cx = W / 2, cy = H / 2;
+  const minDim = Math.min(W, H);
+  const scale = minDim * 0.45;  // maps [-0.88,0.88] → canvas
+  nodes.forEach(n => {
+    n.x  = cx + (n.px || 0) * scale;
+    n.y  = cy + (n.py || 0) * scale;
+    n.vx = 0;
+    n.vy = 0;
+  });
+}
+
+// ── Context (isolated) node positioning ───────────────────────────
+// Mirrors capital-atlas positionContextNodes(): places startups with
+// no visible edges in deterministic theme-based clusters just outside
+// the connected core. They are NOT added to simNodes (no physics).
+
+const CONTEXT_THEME_ANGLES = {
+  'Bioinputs & Crop Resilience':              0,
+  'Farm Intelligence':                        Math.PI * 0.28,
+  'Nature & Ecosystem Tech':                  Math.PI * 0.56,
+  'Food Systems & Alt Proteins':              Math.PI * 0.85,
+  'Biomanufacturing & Fermentation Economy':  Math.PI * 1.14,
+  'Biomaterials & Circular Economy':          Math.PI * 1.42,
+  'Diagnostics & Health Access':              Math.PI * 1.71,
+  'Therapeutics':                             Math.PI * 1.98,
+};
+const GOLDEN = Math.PI * (3 - Math.sqrt(5));
+
+// Cheap seeded float [0,1) deterministic from string keys
+function seededFloat(seed) {
+  let h = 0x811c9dc5;
+  for (let i = 0; i < seed.length; i++) {
+    h ^= seed.charCodeAt(i);
+    h = (h * 0x01000193) >>> 0;
+  }
+  return (h & 0xffffff) / 0xffffff;
+}
+
+function positionContextNodes(visIds) {
+  // Build set of nodes with at least one visible edge
+  const hasEdge = new Set();
+  edges.forEach(e => {
+    if (visIds.has(e.source) && visIds.has(e.target)) {
+      hasEdge.add(e.source);
+      hasEdge.add(e.target);
+    }
+  });
+
+  const contextNodes = nodes.filter(n =>
+    n.layer === 'startup' && visIds.has(n.id) && !hasEdge.has(n.id)
+  );
+  if (!contextNodes.length) return;
+
+  // Compute connected core bounding radius from canvas center
+  const cx = W / 2, cy = H / 2;
+  let maxR = 0;
+  nodes.forEach(n => {
+    if (n.layer !== 'startup' || hasEdge.has(n.id)) {
+      const dr = Math.hypot((n.x || cx) - cx, (n.y || cy) - cy);
+      if (dr > maxR) maxR = dr;
+    }
+  });
+  const coreR = Math.max(maxR, Math.min(W, H) * 0.28);
+
+  // Group by theme, place in angular sectors just outside coreR
+  const themes = Array.from(new Set(contextNodes.map(n => n.theme || 'Other'))).sort();
+  const themeIdx = new Map(themes.map((t, i) => [t, i]));
+  const byThemeSeen = new Map();
+
+  contextNodes
+    .slice()
+    .sort((a, b) => (a.theme || '').localeCompare(b.theme || '') || a.id.localeCompare(b.id))
+    .forEach(nd => {
+      const key = nd.theme || 'Other';
+      const seen = byThemeSeen.get(key) || 0;
+      byThemeSeen.set(key, seen + 1);
+
+      const baseAngle = CONTEXT_THEME_ANGLES[key] ?? (
+        ((themeIdx.get(key) || 0) / Math.max(1, themes.length)) * Math.PI * 2
+      );
+      // Angular scatter: golden-angle spiral within each theme sector
+      const localAngle = baseAngle
+        + (seen * GOLDEN) * 0.22
+        + (seededFloat(nd.id + 'ctx') - 0.5) * 0.30;
+
+      const ring = Math.min(Math.max(coreR + 80, 240), 600)
+                 + (seen % 7) * 9
+                 + seededFloat(nd.id + 'ring') * 32;
+
+      nd.x = cx + Math.cos(localAngle) * ring;
+      nd.y = cy + Math.sin(localAngle) * ring * 0.60;  // slight vertical squeeze
+      nd.vx = 0;
+      nd.vy = 0;
+      nd._isContext = true;
+    });
+}
+
+function buildInitialLayout() {
+  if (HAS_PRECOMPUTED) {
+    // ── Use Python FR pre-computed positions (preferred path) ──────────────
+    applyPrecomputedPositions();
+
+    const visIds = visibleNodeIds();
+
+    // Separate context (isolated) nodes — they won't enter the sim
+    positionContextNodes(visIds);
+
+    // Only connected nodes participate in physics
+    simNodes = nodes.filter(n => visIds.has(n.id) && !n._isContext);
+    simEdges = edges.filter(e => visIds.has(e.source) && visIds.has(e.target));
+
+    renderAll(visIds);
+    reheat(SIM_MAX_TICKS);   // synchronous — done before first paint
+    applyPositions();
+    fitView();
+
+  } else {
+    // ── Fallback: concentric ring layout ───────────────────────────────────
+    const cx = W / 2, cy = H / 2;
+    const minDim = Math.min(W, H);
+
+    const eco     = nodes.filter(n => ['organization','eso','corporate'].includes(n.layer));
+    const capital = nodes.filter(n => ['allocator','fund'].includes(n.layer));
+    const startup = nodes.filter(n => n.layer === 'startup');
+
+    placeOnRing(eco, cx, cy, minDim * 0.18);
+
+    capital.sort((a, b) => (a.country || '').localeCompare(b.country || '') || a.label.localeCompare(b.label));
+    placeOnRing(capital, cx, cy, minDim * 0.32);
+
+    const FALLBACK_ANGLES = {
+      'Bioinputs & Crop Resilience':              0,
+      'Farm Intelligence':                        Math.PI * 0.28,
+      'Nature & Ecosystem Tech':                  Math.PI * 0.56,
+      'Food Systems & Alt Proteins':              Math.PI * 0.85,
+      'Biomanufacturing & Fermentation Economy':  Math.PI * 1.14,
+      'Biomaterials & Circular Economy':          Math.PI * 1.42,
+      'Diagnostics & Health Access':              Math.PI * 1.71,
+      'Therapeutics':                             Math.PI * 1.98,
+    };
+    startup.sort((a, b) =>
+      (FALLBACK_ANGLES[a.theme] ?? Math.PI * 2.2) - (FALLBACK_ANGLES[b.theme] ?? Math.PI * 2.2)
+    );
+    placeOnRing(startup, cx, cy, minDim * 0.415, 0.08);
+
+    nodes.forEach(n => { n.vx = 0; n.vy = 0; });
+
+    const visIds = visibleNodeIds();
+    simNodes = nodes.filter(n => visIds.has(n.id));
+    simEdges = edges.filter(e => visIds.has(e.source) && visIds.has(e.target));
+
+    renderAll(visIds);
+    reheat(400);
+    applyPositions();
+    fitView();
+  }
+}
+
+function placeOnRing(group, cx, cy, r, jitter = 0.05) {
+  const n = group.length;
+  if (n === 0) return;
+  group.forEach((nd, i) => {
+    const angle = (Math.PI * 2 * i / n) - Math.PI / 2;
+    const jr = r * jitter;
+    const dx = (Math.random() - 0.5) * jr;
+    const dy = (Math.random() - 0.5) * jr;
+    nd.x = cx + r * Math.cos(angle) + dx;
+    nd.y = cy + r * Math.sin(angle) + dy;
+  });
+}
+
+// ── Rendering ─────────────────────────────────────────────────────
 function renderAll(visIds) {
   edgesG.innerHTML = '';
   nodesG.innerHTML = '';
   nodeElMap.clear();
+  nodeCircleMap.clear();
   edgeElMap.clear();
   edgeElMap_data.clear();
 
   const NS = 'http://www.w3.org/2000/svg';
 
-  // Edges
+  // Edges — curved Bezier paths (like capital-atlas)
   edges.forEach(e => {
     const visible = visIds.has(e.source) && visIds.has(e.target);
-    const line = document.createElementNS(NS, 'line');
-    line.setAttribute('stroke', EDGE_COLORS[e.edgeType] || 'rgba(0,0,0,.1)');
-    line.setAttribute('stroke-width', String(EDGE_WIDTH[e.edgeType] || 1));
-    if (e.edgeType === 'membership') line.setAttribute('stroke-dasharray', '0');
-    if (!edgeVis[e.edgeType] || !visible) line.style.display = 'none';
-    edgesG.appendChild(line);
-    edgeElMap.set(e.id, line);
+    const path = document.createElementNS(NS, 'path');
+    path.setAttribute('fill', 'none');
+    path.setAttribute('stroke', EDGE_COLORS[e.edgeType] || 'rgba(0,0,0,.1)');
+    path.setAttribute('stroke-width', String(EDGE_WIDTH[e.edgeType] || 1));
+    path.setAttribute('stroke-linecap', 'round');
+    if (!edgeVis[e.edgeType] || !visible) path.style.display = 'none';
+    edgesG.appendChild(path);
+    edgeElMap.set(e.id, path);
     edgeElMap_data.set(e.id, e);
   });
 
@@ -642,48 +1184,117 @@ function renderAll(visIds) {
     g.setAttribute('data-id', n.id);
     g.style.cursor = 'pointer';
     if (!visIds.has(n.id)) g.style.display = 'none';
+    // Context (isolated) nodes are dimmed and marked
+    if (n._isContext) {
+      g.setAttribute('data-context', '1');
+      g.style.opacity = '0.38';
+    }
 
-    const r = LAYER_R[n.layer] || 5;
-    const fill = LAYER_COLORS[n.layer] || n.color || '#888';
-
+    const r    = getNodeR(n);
+    const fill = LAYER_COLORS[n.layer] || n.color || '#999';
     const isEco = ['organization','eso','corporate'].includes(n.layer);
 
     if (isEco) {
-      // Larger nodes with border
+      // Hover halo (eco)
+      const halo = document.createElementNS(NS, 'circle');
+      halo.setAttribute('r', String(r * 2.4));
+      halo.setAttribute('fill', fill);
+      halo.setAttribute('opacity', '0');
+      halo.classList.add('node-halo');
+      g.appendChild(halo);
+
+      // Outer glow ring
       const outer = document.createElementNS(NS, 'circle');
-      outer.setAttribute('r', String(r + 3));
+      outer.setAttribute('r', String(r + 3.5));
       outer.setAttribute('fill', fill);
-      outer.setAttribute('opacity', '0.15');
+      outer.setAttribute('opacity', '0.14');
+      outer.classList.add('eco-outer');
       g.appendChild(outer);
+
+      // Main circle
       const circle = document.createElementNS(NS, 'circle');
       circle.setAttribute('r', String(r));
       circle.setAttribute('fill', fill);
       circle.setAttribute('stroke', '#fff');
       circle.setAttribute('stroke-width', '1.5');
       g.appendChild(circle);
+      nodeCircleMap.set(n.id, circle);
 
-      // Label for eco nodes always visible
+      // Label always visible
       const text = document.createElementNS(NS, 'text');
-      text.setAttribute('y', String(r + 11));
+      text.setAttribute('y', String(r + 12));
       text.setAttribute('text-anchor', 'middle');
       text.setAttribute('font-size', '9');
       text.setAttribute('font-weight', '700');
       text.setAttribute('fill', fill);
       text.setAttribute('font-family', 'DM Sans, system-ui, sans-serif');
-      text.textContent = n.label.length > 16 ? n.label.slice(0, 14) + '…' : n.label;
+      text.textContent = n.label.length > 17 ? n.label.slice(0, 15) + '…' : n.label;
       g.appendChild(text);
-    } else {
+
+    } else if (n.layer === 'fund' || n.layer === 'allocator') {
+      // Hover halo (fund/allocator)
+      const halo = document.createElementNS(NS, 'circle');
+      halo.setAttribute('r', String(r * 2.6));
+      halo.setAttribute('fill', LAYER_COLORS[n.layer]);
+      halo.setAttribute('opacity', '0');
+      halo.classList.add('node-halo');
+      g.appendChild(halo);
+
       const circle = document.createElementNS(NS, 'circle');
       circle.setAttribute('r', String(r));
-      circle.setAttribute('fill', LAYER_COLORS[n.layer] || n.color || '#888');
-      circle.setAttribute('opacity', n.layer === 'startup' ? '0.7' : '0.85');
+      circle.setAttribute('fill', LAYER_COLORS[n.layer]);
+      circle.setAttribute('opacity', '0.88');
+      circle.setAttribute('stroke', '#fff');
+      circle.setAttribute('stroke-width', '1.4');
       g.appendChild(circle);
+      nodeCircleMap.set(n.id, circle);
+
+      // Label always visible (like capital-atlas)
+      const flabel = document.createElementNS(NS, 'text');
+      flabel.setAttribute('y', String(-r - 7));
+      flabel.setAttribute('text-anchor', 'middle');
+      flabel.setAttribute('font-size', '8');
+      flabel.setAttribute('font-weight', '700');
+      flabel.setAttribute('fill', LAYER_COLORS[n.layer]);
+      flabel.setAttribute('stroke', 'rgba(255,252,246,.95)');
+      flabel.setAttribute('stroke-width', '4');
+      flabel.setAttribute('stroke-linejoin', 'round');
+      flabel.setAttribute('paint-order', 'stroke');
+      flabel.setAttribute('font-family', 'DM Sans, system-ui, sans-serif');
+      flabel.setAttribute('pointer-events', 'none');
+      flabel.textContent = n.label.length > 20 ? n.label.slice(0, 18) + '…' : n.label;
+      g.appendChild(flabel);
+
+    } else {
+      // Startup — hover halo
+      const halo = document.createElementNS(NS, 'circle');
+      halo.setAttribute('r', String(r * 2.8));
+      halo.setAttribute('fill', n.color || '#A0A0A0');
+      halo.setAttribute('opacity', '0');
+      halo.classList.add('node-halo');
+      g.appendChild(halo);
+
+      const circle = document.createElementNS(NS, 'circle');
+      circle.setAttribute('r', String(r));
+      circle.setAttribute('fill', n.color || '#A0A0A0');
+      circle.setAttribute('opacity', '0.72');
+      g.appendChild(circle);
+      nodeCircleMap.set(n.id, circle);
     }
 
-    // Hover events
-    g.addEventListener('mouseenter', (evt) => showTooltip(n, evt));
-    g.addEventListener('mouseleave', hideTooltip);
-    g.addEventListener('click', () => selectNode(n));
+    // Events
+    g.addEventListener('mouseenter', (evt) => {
+      const h = g.querySelector('.node-halo');
+      if (h) h.setAttribute('opacity', isEco ? '0.18' : (n.layer === 'startup' ? '0.15' : '0.20'));
+      showTooltip(n, evt);
+    });
+    g.addEventListener('mouseleave', () => {
+      const h = g.querySelector('.node-halo');
+      if (h) h.setAttribute('opacity', '0');
+      hideTooltip();
+    });
+    g.addEventListener('mousemove',  positionTooltipEvt);
+    g.addEventListener('click', (evt) => { evt.stopPropagation(); selectNode(n); });
 
     nodesG.appendChild(g);
     nodeElMap.set(n.id, g);
@@ -698,7 +1309,7 @@ function applyPositions() {
     if (g) g.setAttribute('transform', `translate(${n.x.toFixed(1)},${n.y.toFixed(1)})`);
   });
 
-  const nodePos = new Map(nodes.map(n => [n.id, { x: n.x, y: n.y }]));
+  const nodePos = new Map(nodes.map(n => [n.id, n]));
   edges.forEach(e => {
     const line = edgeElMap.get(e.id);
     if (!line) return;
@@ -707,148 +1318,202 @@ function applyPositions() {
     if (!s || !t) return;
     const dx = t.x - s.x, dy = t.y - s.y;
     const dist = Math.sqrt(dx*dx + dy*dy) || 1;
-    const tr = LAYER_R[nodes.find(n=>n.id===e.target)?.layer] || 5;
-    const ex = t.x - dx/dist*tr;
-    const ey = t.y - dy/dist*tr;
-    line.setAttribute('x1', s.x.toFixed(1));
-    line.setAttribute('y1', s.y.toFixed(1));
-    line.setAttribute('x2', ex.toFixed(1));
-    line.setAttribute('y2', ey.toFixed(1));
+    // Bezier control point: slight perpendicular curve (like capital-atlas)
+    const curve = Math.min(40, dist * 0.065);
+    const mx = (s.x + t.x) / 2, my = (s.y + t.y) / 2;
+    const qx = mx - (dy / dist) * curve;
+    const qy = my + (dx / dist) * curve;
+    // Shorten endpoint to not overlap target node
+    const tr = getNodeR(nodePos.get(e.target) || { layer: 'startup' });
+    const ex = t.x - (dx/dist) * tr;
+    const ey = t.y - (dy/dist) * tr;
+    line.setAttribute('d', `M${s.x.toFixed(1)},${s.y.toFixed(1)} Q${qx.toFixed(1)},${qy.toFixed(1)} ${ex.toFixed(1)},${ey.toFixed(1)}`);
   });
 }
 
-// ── Force simulation ──────────────────────────────────────────────
-
+// ── Force simulation — capital-atlas style (SYNCHRONOUS) ──────────
+//
+// Key insight from capital-atlas.js:
+//   1. Velocities reset to 0 every step  → no momentum accumulation, no oscillation
+//   2. Speed clamping instead of damping → bounded, convergence guaranteed
+//   3. Entire sim runs in ONE synchronous call → stable result before first render
+//   4. preventOverlap called every N steps inside sync loop → works correctly
+//
 const PARAMS = {
-  repulsion: 800,
-  linkDist: {
-    investment: 60,
-    capital: 80,
-    membership: 90,
-    support: 80,
-    validation: 80,
-  },
-  linkStrength: {
-    investment: 0.04,
-    capital: 0.05,
-    membership: 0.12,
-    support: 0.10,
-    validation: 0.10,
-  },
-  centerGravity: {
-    organization: 0.003, eso: 0.003, corporate: 0.003,
-    fund: 0.004, allocator: 0.004, startup: 0.002,
-  },
-  damping: 0.82,
+  repulsion:    600,
+  linkDist:     { investment: 55, capital: 80, membership: 90, support: 80, validation: 80 },
+  linkStrength: { investment: 0.028, capital: 0.045, membership: 0.09, support: 0.08, validation: 0.08 },
+  centerGravity:{ organization: 0.0008, eso: 0.0008, corporate: 0.0008,
+                  fund: 0.0015, allocator: 0.0015, startup: 0.0008 },
   cellSize: 80,
 };
 
+// Synchronous layout engine (mirrors capital-atlas runForceAtlas pattern)
 function reheat(maxTicks) {
-  if (animId) cancelAnimationFrame(animId);
-  simTick = 0;
-  simRunning = true;
-  const limit = maxTicks || SIM_MAX_TICKS;
-  function tick() {
-    if (!simRunning || simTick >= limit) { simRunning = false; return; }
-    simTick++;
-    stepSim();
-    applyPositions();
-    animId = requestAnimationFrame(tick);
+  if (animId) { cancelAnimationFrame(animId); animId = null; }
+  simRunning = false;
+  const steps = maxTicks || SIM_MAX_TICKS;
+  if (simNodes.length === 0) return;
+
+  for (let step = 0; step < steps; step++) {
+    simTick = step;
+    _syncStep(step, steps);
+    if (step % 20 === 0) preventOverlap(3);
   }
-  tick();
+
+  preventOverlap(24);  // final cleanup (same as capital-atlas)
 }
 
-function stepSim() {
-  const n = simNodes.length;
-  if (n === 0) return;
-
+// One step: reset velocities → repulsion → springs → gravity → speed-clamp
+// Capital-atlas resets vx/vy each step so there is NO velocity accumulation.
+function _syncStep(step, totalSteps) {
   const cx = W / 2, cy = H / 2;
-  const alpha = Math.max(0.1, 1 - simTick / SIM_MAX_TICKS);
-
-  // Build spatial grid for repulsion
-  const grid = new Map();
+  const alpha = Math.max(0.08, 1 - step / totalSteps);
   const cs = PARAMS.cellSize;
+  const pad = 30;
+  // Speed: faster early on (spread out), slower later (fine-tune)
+  const spd = step < totalSteps * 0.55 ? 10 : 6;
+
+  // ── Reset velocities (capital-atlas key move) ─────────────────────
+  simNodes.forEach(nd => { nd.vx = 0; nd.vy = 0; });
+
+  // ── Grid-based repulsion (radius-aware) ───────────────────────────
+  const grid = new Map();
   simNodes.forEach(nd => {
-    const gx = Math.floor(nd.x / cs);
-    const gy = Math.floor(nd.y / cs);
-    const key = gx + ',' + gy;
+    const key = Math.floor(nd.x / cs) + ',' + Math.floor(nd.y / cs);
     if (!grid.has(key)) grid.set(key, []);
     grid.get(key).push(nd);
   });
 
-  // Repulsion (grid-based)
   simNodes.forEach(a => {
-    const gx = Math.floor(a.x / cs);
-    const gy = Math.floor(a.y / cs);
+    const gx = Math.floor(a.x / cs), gy = Math.floor(a.y / cs);
+    const ra = LAYER_R_BASE[a.layer] || 4;
     for (let dgy = -1; dgy <= 1; dgy++) {
       for (let dgx = -1; dgx <= 1; dgx++) {
-        const bucket = grid.get((gx+dgx)+','+(gy+dgy));
+        const bucket = grid.get((gx + dgx) + ',' + (gy + dgy));
         if (!bucket) continue;
         bucket.forEach(b => {
           if (b === a) return;
+          const rb = LAYER_R_BASE[b.layer] || 4;
           let dx = a.x - b.x, dy = a.y - b.y;
-          const dist2 = dx*dx + dy*dy;
-          if (dist2 < 1) { dx = Math.random()-.5; dy = Math.random()-.5; }
+          const dist2 = dx * dx + dy * dy;
+          if (dist2 < 1) { dx = Math.random() - .5; dy = Math.random() - .5; }
           const dist = Math.sqrt(dist2) || 0.1;
-          const force = PARAMS.repulsion * alpha / (dist2 + 1);
-          a.vx += (dx/dist)*force;
-          a.vy += (dy/dist)*force;
+          const force = (PARAMS.repulsion + (ra + rb) * 160) * alpha / (dist2 + 1);
+          a.vx += (dx / dist) * force;
+          a.vy += (dy / dist) * force;
         });
       }
     }
   });
 
-  // Link springs
-  const nodePos = new Map(simNodes.map(n => [n.id, n]));
+  // ── Link springs ──────────────────────────────────────────────────
+  const nodePos = new Map(simNodes.map(nd => [nd.id, nd]));
   simEdges.forEach(e => {
-    const s = nodePos.get(e.source);
-    const t = nodePos.get(e.target);
+    const s = nodePos.get(e.source), t = nodePos.get(e.target);
     if (!s || !t) return;
     const dx = t.x - s.x, dy = t.y - s.y;
-    const dist = Math.sqrt(dx*dx + dy*dy) || 1;
-    const target = PARAMS.linkDist[e.edgeType] || 60;
-    const strength = (PARAMS.linkStrength[e.edgeType] || 0.04) * alpha;
-    const delta = (dist - target) * strength;
-    const fx = (dx/dist)*delta, fy = (dy/dist)*delta;
+    const dist = Math.sqrt(dx * dx + dy * dy) || 1;
+    const tgt = PARAMS.linkDist[e.edgeType] || 60;
+    const str = (PARAMS.linkStrength[e.edgeType] || 0.04) * alpha;
+    const delta = (dist - tgt) * str;
+    const fx = (dx / dist) * delta, fy = (dy / dist) * delta;
     s.vx += fx; s.vy += fy;
     t.vx -= fx; t.vy -= fy;
   });
 
-  // Center gravity + damping + boundary
-  const pad = 30;
+  // ── Center gravity + speed-clamp (no damping — capital-atlas style) ──
   simNodes.forEach(nd => {
-    const grav = (PARAMS.centerGravity[nd.layer] || 0.003) * alpha;
+    const grav = (PARAMS.centerGravity[nd.layer] || 0.001) * alpha;
     nd.vx += (cx - nd.x) * grav;
     nd.vy += (cy - nd.y) * grav;
-    nd.vx *= PARAMS.damping;
-    nd.vy *= PARAMS.damping;
-    nd.x  = Math.max(pad, Math.min(W - pad, nd.x + nd.vx));
-    nd.y  = Math.max(pad, Math.min(H - pad, nd.y + nd.vy));
+    nd.x = Math.max(pad, Math.min(W - pad, nd.x + Math.max(-spd, Math.min(spd, nd.vx))));
+    nd.y = Math.max(pad, Math.min(H - pad, nd.y + Math.max(-spd, Math.min(spd, nd.vy))));
   });
 }
 
-// ── Pan / zoom ────────────────────────────────────────────────────
+// Grid-accelerated overlap prevention (capital-atlas preventOverlap pattern)
+function preventOverlap(iterations) {
+  const iters = iterations || 12;
+  const cs = 80;
+  for (let iter = 0; iter < iters; iter++) {
+    const grid = new Map();
+    simNodes.forEach(nd => {
+      const key = Math.floor(nd.x / cs) + ',' + Math.floor(nd.y / cs);
+      if (!grid.has(key)) grid.set(key, []);
+      grid.get(key).push(nd);
+    });
+    simNodes.forEach(a => {
+      const ra = getNodeR(a);
+      const gx = Math.floor(a.x / cs), gy = Math.floor(a.y / cs);
+      for (let dgy = -2; dgy <= 2; dgy++) {
+        for (let dgx = -2; dgx <= 2; dgx++) {
+          const bucket = grid.get((gx + dgx) + ',' + (gy + dgy));
+          if (!bucket) continue;
+          bucket.forEach(b => {
+            if (b === a) return;
+            const rb = getNodeR(b);
+            const dx = b.x - a.x, dy = b.y - a.y;
+            const dist = Math.sqrt(dx * dx + dy * dy) || 0.1;
+            const minDist = ra + rb + 4;
+            if (dist >= minDist) return;
+            const push = (minDist - dist) * 0.52;
+            const ux = dx / dist, uy = dy / dist;
+            a.x -= ux * push; a.y -= uy * push;
+            b.x += ux * push; b.y += uy * push;
+          });
+        }
+      }
+    });
+  }
+}
 
+// ── Pan / zoom ────────────────────────────────────────────────────
 function updateTransform() {
-  rootG.setAttribute('transform', `translate(${svgTx},${svgTy}) scale(${svgScale})`);
+  rootG.setAttribute('transform', `translate(${svgTx.toFixed(1)},${svgTy.toFixed(1)}) scale(${svgScale.toFixed(4)})`);
+}
+
+function zoomBy(factor) {
+  const cx = W / 2, cy = H / 2;
+  const newScale = Math.max(0.08, Math.min(10, svgScale * factor));
+  svgTx = cx - (cx - svgTx) * (newScale / svgScale);
+  svgTy = cy - (cy - svgTy) * (newScale / svgScale);
+  svgScale = newScale;
+  updateTransform();
+}
+
+function fitView() {
+  if (!nodes.length) return;
+  const visIds = visibleNodeIds();
+  const vis = nodes.filter(n => visIds.has(n.id));
+  if (!vis.length) return;
+  const xs = vis.map(n => n.x), ys = vis.map(n => n.y);
+  const minX = Math.min(...xs), maxX = Math.max(...xs);
+  const minY = Math.min(...ys), maxY = Math.max(...ys);
+  const bw = maxX - minX + 60, bh = maxY - minY + 60;
+  const scale = Math.min(W / bw, H / bh, 2.5) * 0.9;
+  svgScale = scale;
+  svgTx = W/2 - ((minX + maxX) / 2) * scale;
+  svgTy = H/2 - ((minY + maxY) / 2) * scale;
+  updateTransform();
 }
 
 function onMouseDown(evt) {
-  if (evt.target !== svgEl && evt.target !== rootG) return;
+  if (evt.target !== svgEl && evt.target !== rootG &&
+      !evt.target.closest('#eg-edges') && !evt.target.closest('#eg-nodes')) return;
+  // Only drag if clicking on empty space or edges layer
+  if (evt.target.closest('[data-id]')) return;
   isDragging = true;
-  dragStartX = evt.clientX;
-  dragStartY = evt.clientY;
-  dragTx = svgTx;
-  dragTy = svgTy;
+  dragStartX = evt.clientX; dragStartY = evt.clientY;
+  dragTx = svgTx; dragTy = svgTy;
+  evt.preventDefault();
 }
-
 function onMouseMove(evt) {
   if (!isDragging) return;
   svgTx = dragTx + (evt.clientX - dragStartX);
   svgTy = dragTy + (evt.clientY - dragStartY);
   updateTransform();
 }
-
 function onMouseUp() { isDragging = false; }
 
 function onWheel(evt) {
@@ -856,8 +1521,8 @@ function onWheel(evt) {
   const rect = svgEl.getBoundingClientRect();
   const mx = evt.clientX - rect.left;
   const my = evt.clientY - rect.top;
-  const delta = evt.deltaY > 0 ? 0.88 : 1.14;
-  const newScale = Math.max(0.1, Math.min(8, svgScale * delta));
+  const factor = evt.deltaY > 0 ? 0.88 : 1.14;
+  const newScale = Math.max(0.08, Math.min(10, svgScale * factor));
   svgTx = mx - (mx - svgTx) * (newScale / svgScale);
   svgTy = my - (my - svgTy) * (newScale / svgScale);
   svgScale = newScale;
@@ -871,30 +1536,27 @@ function onResize() {
 }
 
 // ── Tooltip ───────────────────────────────────────────────────────
-
 function showTooltip(n, evt) {
   const lines = [
     `<strong>${n.label}</strong>`,
-    `<span style="opacity:.7">${n.layer.toUpperCase()} · ${n.country || '—'}</span>`,
+    `<span style="opacity:.75">${(n.layer).toUpperCase()} · ${n.country || '—'}</span>`,
   ];
-  if (n.theme) lines.push(`<span style="opacity:.7">${n.shortTheme || n.theme}</span>`);
-  if (n.orgType) lines.push(`<span style="opacity:.7">${n.orgType.replace(/_/g,' ')}</span>`);
-  if (n.industry) lines.push(`<span style="opacity:.7">${n.industry}</span>`);
-  if (n.degree) lines.push(`<span style="opacity:.6">${n.degree} conexión${n.degree!==1?'es':''}</span>`);
+  if (n.theme) lines.push(`<span style="opacity:.7;font-size:.68rem">${n.shortTheme || n.theme}</span>`);
+  if (n.orgType) lines.push(`<span style="opacity:.7;font-size:.68rem">${n.orgType.replace(/_/g,' ')}</span>`);
+  if (n.industry) lines.push(`<span style="opacity:.7;font-size:.68rem">${n.industry.split(';')[0]}</span>`);
+  if (n.investorType) lines.push(`<span style="opacity:.7;font-size:.68rem">${n.investorType.replace(/_/g,' ')}</span>`);
+  lines.push(`<span style="opacity:.6;font-size:.67rem">${n.degree} conexión${n.degree !== 1 ? 'es' : ''}</span>`);
 
   tooltipEl.innerHTML = lines.join('<br>');
   tooltipEl.style.display = 'block';
   positionTooltip(evt);
 }
-
-function hideTooltip() {
-  tooltipEl.style.display = 'none';
-}
-
+function hideTooltip() { tooltipEl.style.display = 'none'; }
+function positionTooltipEvt(evt) { if (tooltipEl.style.display !== 'none') positionTooltip(evt); }
 function positionTooltip(evt) {
   const rect = svgEl.getBoundingClientRect();
-  let tx = evt.clientX - rect.left + 12;
-  let ty = evt.clientY - rect.top + 12;
+  let tx = evt.clientX - rect.left + 14;
+  let ty = evt.clientY - rect.top  + 14;
   const tw = tooltipEl.offsetWidth || 200;
   const th = tooltipEl.offsetHeight || 60;
   if (tx + tw > W - 10) tx = evt.clientX - rect.left - tw - 10;
@@ -903,107 +1565,68 @@ function positionTooltip(evt) {
   tooltipEl.style.top  = ty + 'px';
 }
 
-// ── Node selection & detail ───────────────────────────────────────
+// ── Search ────────────────────────────────────────────────────────
+function initSearch() {
+  const input   = document.getElementById('eg-search');
+  const results = document.getElementById('eg-search-results');
 
-function selectNode(n) {
-  // Deselect previous
-  if (selectedId) {
-    const prev = nodeElMap.get(selectedId);
-    if (prev) prev.querySelector('circle')?.setAttribute('stroke-width', n.layer === 'startup' ? '0' : '1.5');
-  }
+  input.addEventListener('input', () => {
+    const q = input.value.trim().toLowerCase();
+    if (q.length < 2) { results.classList.remove('open'); return; }
 
-  if (selectedId === n.id) {
-    selectedId = null;
-    detailEmpty.style.display = '';
-    detailContent.classList.remove('visible');
-    return;
-  }
+    const matches = nodes.filter(n =>
+      n.label.toLowerCase().includes(q) ||
+      (n.country || '').toLowerCase().includes(q) ||
+      (n.theme   || '').toLowerCase().includes(q)
+    ).slice(0, 12);
 
-  selectedId = n.id;
+    if (!matches.length) { results.classList.remove('open'); return; }
 
-  // Highlight selected
-  const g = nodeElMap.get(n.id);
-  if (g) {
-    const circles = g.querySelectorAll('circle');
-    circles.forEach(c => c.setAttribute('stroke-width', '2.5'));
-  }
+    results.innerHTML = matches.map(n => {
+      const color = LAYER_COLORS[n.layer] || n.color || '#888';
+      return `<button class="eg-search-result" data-id="${n.id}">
+        <span class="eg-search-result-dot" style="background:${color}"></span>
+        <span>${n.label}</span>
+        <small>${n.country || ''} · ${n.layer}</small>
+      </button>`;
+    }).join('');
 
-  // Neighbors
-  const neighborIds = new Set();
-  const neighborEdges = [];
-  edges.forEach(e => {
-    if (e.source === n.id) { neighborIds.add(e.target); neighborEdges.push({ ...e, dir: 'out' }); }
-    if (e.target === n.id) { neighborIds.add(e.source); neighborEdges.push({ ...e, dir: 'in' }); }
-  });
-  const neighbors = nodes.filter(nd => neighborIds.has(nd.id));
-
-  // Type chip color
-  const chipColors = {
-    organization: 'background:rgba(124,58,237,.1);color:#5b21b6',
-    eso:          'background:rgba(13,148,136,.1);color:#0f766e',
-    corporate:    'background:rgba(217,119,6,.1);color:#92400e',
-    fund:         'background:rgba(59,130,246,.1);color:#1d4ed8',
-    allocator:    'background:rgba(59,79,168,.1);color:#1e3a8a',
-    startup:      'background:rgba(0,0,0,.06);color:#444',
-  };
-
-  let html = `
-    <div class="eg-det-type" style="${chipColors[n.layer] || ''}">${n.layer.toUpperCase()}</div>
-    <div class="eg-det-name">${n.label}</div>
-    <div class="eg-det-sub">${n.country || ''}${n.theme ? ' · ' + (n.shortTheme || n.theme) : ''}
-      ${n.orgType ? ' · ' + n.orgType.replace(/_/g,' ') : ''}
-      ${n.esoType ? ' · ' + n.esoType.replace(/_/g,' ') : ''}
-      ${n.industry ? ' · ' + n.industry.split(';')[0] : ''}
-      ${n.investorType ? ' · ' + n.investorType.replace(/_/g,' ') : ''}
-    </div>
-  `;
-
-  html += `<div class="eg-det-section" style="margin-top:8px">Métricas</div>`;
-  html += `<div class="eg-det-row"><span>Grado</span><strong>${n.degree}</strong></div>`;
-  html += `<div class="eg-det-row"><span>Conexiones directas</span><strong>${neighbors.length}</strong></div>`;
-
-  if (n.website) {
-    html += `<div class="eg-det-section">Fuente</div>`;
-    html += `<div class="eg-det-row"><a class="eg-det-link" href="${n.website}" target="_blank" rel="noopener">${n.website.replace(/^https?:\/\//, '').slice(0,42)}</a></div>`;
-  }
-
-  if (n.thesis) {
-    html += `<div class="eg-det-summary">${n.thesis}</div>`;
-  }
-  if (n.summary) {
-    html += `<div class="eg-det-summary">${n.summary}</div>`;
-  }
-
-  if (neighbors.length > 0) {
-    html += `<div class="eg-det-section">Conexiones (${neighbors.length})</div>`;
-    html += `<div class="eg-det-neighbors">`;
-    neighbors.slice(0, 30).forEach(nd => {
-      const c = LAYER_COLORS[nd.layer] || nd.color || '#888';
-      html += `<span class="eg-det-neighbor" onclick="selectNodeById('${nd.id}')"
-        style="border-color:${c}20;color:${c}">${nd.label}</span>`;
+    results.querySelectorAll('.eg-search-result').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const id = btn.getAttribute('data-id');
+        results.classList.remove('open');
+        input.value = '';
+        jumpToNode(id);
+      });
     });
-    if (neighbors.length > 30) html += `<span class="eg-det-neighbor" style="opacity:.5">+${neighbors.length-30} más</span>`;
-    html += `</div>`;
-  }
 
-  detailContent.innerHTML = html;
-  detailContent.classList.add('visible');
-  detailEmpty.style.display = 'none';
+    results.classList.add('open');
+  });
+
+  // Close on outside click
+  document.addEventListener('click', (e) => {
+    if (!input.closest('.eg-toolbar-search-wrap').contains(e.target)) {
+      results.classList.remove('open');
+    }
+  });
+
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') { results.classList.remove('open'); input.blur(); }
+  });
 }
 
-function selectNodeById(id) {
+function jumpToNode(id) {
   const n = nodes.find(nd => nd.id === id);
-  if (n) selectNode(n);
+  if (!n) return;
+
+  // Pan to center on this node
+  svgTx = W / 2 - n.x * svgScale;
+  svgTy = H / 2 - n.y * svgScale;
+  updateTransform();
+
+  // Select it (shows barrio)
+  selectNode(n);
 }
-window.selectNodeById = selectNodeById;
-
-// ── Start ─────────────────────────────────────────────────────────
-
-// Initial button state
-document.addEventListener('DOMContentLoaded', () => {
-  const btnAll = document.getElementById('btn-show-all');
-  if (btnAll) btnAll.classList.add('active');
-});
 </script>
 </body>
 </html>

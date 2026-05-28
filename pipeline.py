@@ -506,6 +506,107 @@ def cmd_ingest_orgs(args: argparse.Namespace) -> None:
     print(f"\n  Total insertado: {total_inserted} | Errores: {total_errors}\n")
 
 
+def cmd_calibrate_scores(args: argparse.Namespace) -> None:
+    import json
+    from src.intelligence import _calibration_audit
+    from pathlib import Path
+    print("\n  Calibracion del scoring — auditoria de precision...\n")
+    report = _calibration_audit(DB_PATH)
+    if "error" in report:
+        print(f"  [ERROR] {report['error']}\n")
+        return
+    print(f"  Inversores evaluados       : {report['investors_evaluated']}")
+    print(f"  Startups de portfolio scored: {report['portfolio_startups_scored']}")
+    print(f"  Precision@3                : {report['precision@3']:.1%}")
+    print(f"  Precision@5                : {report['precision@5']:.1%}")
+    print(f"  Precision@10               : {report['precision@10']:.1%}")
+    print(f"  Mean rank portfolio startup: {report['mean_rank']:.1f}")
+    print(f"\n  Peores inversores (menor precision@5):")
+    for inv in report["worst_investors"]:
+        print(f"    {inv['investor_name']:<35} P@5={inv['precision@5']:.2f}  mean_rank={inv['mean_rank']}")
+    out = Path("quality") / "score_calibration.json"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"\n  Salida: quality/score_calibration.json\n")
+
+
+def cmd_embed_entities(args: argparse.Namespace) -> None:
+    from src.embed_entities import run as run_embed_entities
+    print("\n  Generando embeddings para entidades (orgs, ESOs, corporates)...\n")
+    run_embed_entities()
+
+
+def cmd_intelligence_data(args: argparse.Namespace) -> None:
+    from src.intelligence import build_intelligence_data
+    print("\n  Generando pilot/intelligence-data.js...\n")
+    res = build_intelligence_data(DB_PATH)
+    print(f"  Startups      : {res['startups']}")
+    print(f"  Inversores    : {res['investors']}")
+    print(f"  Todas ent.    : {res['entities']}")
+    print(f"  Vectores      : {res['vec_shape']}")
+    print(f"  Tiempo        : {res['elapsed']}s")
+    print(f"\n  Salida: pilot/intelligence-data.js\n")
+
+
+def cmd_ecosystem_health_data(args: argparse.Namespace) -> None:
+    from src.intelligence import build_ecosystem_health_data
+    print("\n  Generando pilot/ecosystem-health-data.js...\n")
+    res = build_ecosystem_health_data(DB_PATH)
+    print(f"  Startups      : {res['startups']}")
+    print(f"  Financiadas   : {res['funded']}")
+    print(f"  Celdas heatmap: {res['whitespace_cells']}")
+    print(f"  Sin capital   : {res['isolated']}")
+    print(f"  Momentum rows : {res['momentum_rows']}")
+    print(f"  Tiempo        : {res['elapsed']}s")
+    print(f"\n  Salida: pilot/ecosystem-health-data.js\n")
+
+
+def cmd_query(args: argparse.Namespace) -> None:
+    from src.intelligence import semantic_search, _print_search_results
+    query = " ".join(args.query)
+    top_k = getattr(args, "top_k", 10)
+    as_json = getattr(args, "json", False)
+    filters: dict = {}
+    if getattr(args, "theme", None): filters["theme"] = args.theme
+    if getattr(args, "country", None): filters["country"] = args.country
+    if getattr(args, "stage", None): filters["stage"] = args.stage
+
+    results = semantic_search(query, top_k=top_k, filters=filters or None,
+                               db_path=DB_PATH, as_json=as_json)
+    if not as_json:
+        _print_search_results(results, query)
+
+
+def cmd_latent(args: argparse.Namespace) -> None:
+    from src.intelligence import latent_potential, _print_latent
+    entity_id = args.entity_id
+    top_k = getattr(args, "top_k", 15)
+    as_json = getattr(args, "json", False)
+
+    result = latent_potential(entity_id, top_k=top_k, db_path=DB_PATH,
+                               as_json=as_json)
+    if not as_json:
+        _print_latent(result)
+
+
+def cmd_intro(args: argparse.Namespace) -> None:
+    import json as _json
+    from src.intro_builder import build_introduction_brief, print_brief
+    entity_a = args.entity_a
+    entity_b = args.entity_b
+    as_json = getattr(args, "json", False)
+    no_cab = getattr(args, "no_cab", False)
+    brief = build_introduction_brief(
+        entity_a, entity_b,
+        db_path=DB_PATH,
+        cab_context=not no_cab,
+    )
+    if as_json:
+        print(_json.dumps(brief, ensure_ascii=False))
+    else:
+        print_brief(brief)
+
+
 def cmd_graph(args: argparse.Namespace) -> None:
     refresh = getattr(args, "refresh", False)
     if not refresh:
@@ -562,6 +663,26 @@ def main() -> None:
     fgr.add_argument("--top-funds",     type=int, default=20, help="Analizar top N fondos (default: 20)")
     fgr.add_argument("--investor",      type=str, default=None, help="Filtrar a un inversor específico")
     sub.add_parser("quality-report", help="Genera pilot/quality-tracker.html con métricas de calidad")
+    sub.add_parser("calibrate-scores", help="Audita precision@k del scoring de latent_potential() → quality/score_calibration.json")
+    sub.add_parser("embed-entities", help="Genera embeddings para orgs/ESOs/corporates → embeddings/entity_vectors.npy")
+    sub.add_parser("intelligence-data", help="Genera pilot/intelligence-data.js (vectores + metadatos + centroides)")
+    sub.add_parser("ecosystem-health-data", help="Genera pilot/ecosystem-health-data.js (heatmap temas × países, isolated, momentum)")
+    iq = sub.add_parser("query", help="Busqueda semantica de startups (texto libre)")
+    iq.add_argument("query", nargs="+", help="Texto de busqueda")
+    iq.add_argument("--top-k", type=int, default=10)
+    iq.add_argument("--theme", type=str, default=None)
+    iq.add_argument("--country", type=str, default=None)
+    iq.add_argument("--stage", type=str, default=None)
+    iq.add_argument("--json", action="store_true", help="Salida JSON (para server.js)")
+    lp = sub.add_parser("latent", help="Potencial latente de una entidad (startup o inversor)")
+    lp.add_argument("entity_id", help="ID de la entidad (startup_id o investor_id)")
+    lp.add_argument("--top-k", type=int, default=15)
+    lp.add_argument("--json", action="store_true", help="Salida JSON (para server.js)")
+    ip = sub.add_parser("intro", help="Generar brief de introduccion entre dos entidades")
+    ip.add_argument("entity_a", help="ID de la primera entidad")
+    ip.add_argument("entity_b", help="ID de la segunda entidad")
+    ip.add_argument("--no-cab", action="store_true", help="Omitir framing desde la CAB")
+    ip.add_argument("--json", action="store_true", help="Salida JSON (para server.js)")
 
     rc = sub.add_parser("reclassify-themes", help="Asigna bio_theme_primary/secondary + is_bio_universe a todos los includes")
     rc.add_argument("--dry-run", action="store_true", help="Muestra resultados sin escribir al DB")
@@ -600,6 +721,13 @@ def main() -> None:
         "build-ecosystem-graph": cmd_build_ecosystem_graph,
         "fund-gap-report": cmd_fund_gap_report,
         "quality-report": cmd_quality_report,
+        "calibrate-scores": cmd_calibrate_scores,
+        "embed-entities": cmd_embed_entities,
+        "intelligence-data": cmd_intelligence_data,
+        "ecosystem-health-data": cmd_ecosystem_health_data,
+        "query": cmd_query,
+        "latent": cmd_latent,
+        "intro": cmd_intro,
         "reclassify-themes": cmd_reclassify,
         "rebuild": cmd_rebuild,
         "graph": cmd_graph,

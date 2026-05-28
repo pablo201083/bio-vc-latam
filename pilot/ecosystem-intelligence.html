@@ -1,0 +1,2636 @@
+﻿<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inteligencia de Ecosistema · BIO LATAM</title>
+  <link rel="stylesheet" href="./styles.css?v=20260524">
+  <style>
+    html, body { height: 100%; }
+    body {
+      margin: 0; min-height: 100vh;
+      display: flex; flex-direction: column;
+    }
+
+    /* ── top bar ──────────────────────────────────────────────── */
+    .iq-topbar {
+      flex-shrink: 0;
+      padding: 10px 18px 9px;
+      border-bottom: 1px solid var(--line);
+      background: rgba(253,250,244,.97);
+      backdrop-filter: blur(8px);
+      display: flex; align-items: center; gap: 14px;
+    }
+    .iq-title {
+      font-size: .72rem; font-weight: 800; letter-spacing: .07em;
+      text-transform: uppercase; color: var(--muted); white-space: nowrap;
+    }
+    .iq-nav-links { display: flex; gap: 6px; }
+    .iq-nav-links a {
+      font-size: .69rem; padding: 3px 9px; border-radius: 999px;
+      border: 1px solid var(--line); color: var(--muted);
+      text-decoration: none; white-space: nowrap;
+      transition: background .15s, color .15s;
+    }
+    .iq-nav-links a:hover { background: var(--accent-soft); color: var(--accent); }
+
+    /* ── layout ───────────────────────────────────────────────── */
+    .iq-shell {
+      flex: 1; display: flex; min-height: 0; overflow: hidden;
+    }
+
+    /* ── sidebar ──────────────────────────────────────────────── */
+    .iq-sidebar {
+      width: 310px; flex-shrink: 0;
+      display: flex; flex-direction: column;
+      border-right: 1px solid var(--line);
+      background: var(--panel);
+      overflow: hidden;
+    }
+    .iq-sb-head {
+      padding: 14px 16px 10px;
+      border-bottom: 1px solid var(--line);
+      flex-shrink: 0;
+    }
+    .iq-sb-head-title {
+      font-size: .85rem; font-weight: 800; color: var(--ink);
+    }
+    .iq-sb-head-sub {
+      font-size: .67rem; color: var(--muted); margin-top: 2px;
+    }
+
+    /* search input */
+    .iq-search-wrap {
+      padding: 10px 12px 8px; flex-shrink: 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .iq-search-row {
+      display: flex; gap: 6px; align-items: center;
+    }
+    .iq-search-input {
+      flex: 1;
+      font-family: var(--sans); font-size: .78rem;
+      padding: 7px 11px; border-radius: 10px;
+      border: 1.5px solid var(--line);
+      background: rgba(255,255,255,.9);
+      color: var(--ink); outline: none;
+      transition: border-color .15s;
+    }
+    .iq-search-input:focus { border-color: var(--accent); }
+    .iq-search-input::placeholder { color: var(--muted); opacity: .7; }
+    .iq-btn {
+      font-family: var(--sans); font-size: .72rem; font-weight: 700;
+      padding: 7px 13px; border-radius: 9px; cursor: pointer;
+      border: none; transition: background .15s, transform .1s;
+    }
+    .iq-btn:active { transform: scale(.97); }
+    .iq-btn-primary {
+      background: var(--accent); color: #fff;
+    }
+    .iq-btn-primary:hover { background: #0a7a73; }
+    .iq-btn-secondary {
+      background: rgba(11,143,135,.1); color: var(--accent);
+      border: 1px solid rgba(11,143,135,.3);
+    }
+    .iq-btn-secondary:hover { background: var(--accent-soft); }
+
+    /* filter pills */
+    .iq-filter-row {
+      display: flex; gap: 5px; flex-wrap: wrap;
+      padding: 6px 12px 0; flex-shrink: 0;
+    }
+    .iq-filter-pill {
+      font-size: .65rem; font-weight: 600;
+      padding: 3px 8px; border-radius: 999px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.8); color: var(--muted);
+      cursor: pointer; transition: background .12s, color .12s;
+      white-space: nowrap;
+    }
+    .iq-filter-pill.active {
+      background: var(--accent); color: #fff; border-color: var(--accent);
+    }
+
+    /* mode tabs */
+    .iq-mode-tabs {
+      display: flex; gap: 0; flex-shrink: 0;
+      border-bottom: 1px solid var(--line);
+      padding: 8px 12px 0;
+    }
+    .iq-tab {
+      font-size: .71rem; font-weight: 700; padding: 5px 11px;
+      border-radius: 8px 8px 0 0; cursor: pointer;
+      color: var(--muted); border: 1px solid transparent;
+      border-bottom: none; transition: background .12s, color .12s;
+      user-select: none;
+    }
+    .iq-tab.active {
+      background: var(--bg); color: var(--accent);
+      border-color: var(--line); border-bottom: 1px solid var(--bg);
+      margin-bottom: -1px;
+    }
+    .iq-tab:hover:not(.active) { background: rgba(11,143,135,.07); }
+
+    /* results list */
+    .iq-results {
+      flex: 1; overflow-y: auto; padding: 6px 0;
+    }
+    .iq-result-item {
+      padding: 9px 14px 8px; cursor: pointer;
+      border-bottom: 1px solid rgba(216,204,192,.4);
+      transition: background .1s;
+    }
+    .iq-result-item:hover { background: rgba(11,143,135,.05); }
+    .iq-result-item.selected { background: var(--accent-soft); }
+    .iq-result-top {
+      display: flex; align-items: baseline; gap: 6px;
+    }
+    .iq-result-name {
+      font-size: .8rem; font-weight: 700; color: var(--ink); flex: 1;
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    }
+    .iq-result-score {
+      font-size: .65rem; font-weight: 700;
+      padding: 2px 6px; border-radius: 999px;
+      background: rgba(11,143,135,.12); color: var(--accent);
+      flex-shrink: 0;
+    }
+    .iq-result-meta {
+      font-size: .67rem; color: var(--muted); margin-top: 2px;
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    }
+    .iq-result-chips {
+      display: flex; gap: 4px; margin-top: 4px; flex-wrap: wrap;
+    }
+    .iq-chip {
+      font-size: .62rem; padding: 1px 7px; border-radius: 999px;
+      border: 1px solid var(--line); background: rgba(255,255,255,.7);
+      color: var(--muted); white-space: nowrap;
+    }
+    .iq-chip.funded { background: rgba(11,143,135,.1); color: var(--accent); border-color: rgba(11,143,135,.25); }
+    .iq-chip.investor { background: rgba(59,130,246,.08); color: #2563eb; border-color: rgba(59,130,246,.2); }
+    .iq-chip.eso { background: rgba(13,148,136,.08); color: #0d9488; border-color: rgba(13,148,136,.2); }
+    .iq-chip.org { background: rgba(124,58,237,.08); color: #7c3aed; border-color: rgba(124,58,237,.2); }
+    .iq-chip.corp { background: rgba(217,119,6,.08); color: #d97706; border-color: rgba(217,119,6,.2); }
+    .iq-chip.score-high { background: rgba(22,163,74,.1); color: #15803d; border-color: rgba(22,163,74,.25); }
+
+    /* empty state */
+    .iq-empty {
+      padding: 28px 16px; text-align: center; color: var(--muted);
+      font-size: .78rem;
+    }
+    .iq-empty strong { display: block; font-size: 1.5rem; margin-bottom: 6px; opacity: .3; }
+    .iq-loading {
+      padding: 20px 16px; text-align: center; color: var(--muted);
+      font-size: .75rem;
+    }
+
+    /* ── main panel ───────────────────────────────────────────── */
+    .iq-main {
+      flex: 1; overflow-y: auto; padding: 20px 24px;
+      display: flex; flex-direction: column; gap: 16px;
+    }
+
+    /* welcome / empty state */
+    .iq-welcome {
+      display: flex; flex-direction: column; align-items: center;
+      justify-content: center; flex: 1; gap: 12px;
+      padding: 40px 20px; text-align: center;
+    }
+    .iq-welcome-icon {
+      font-size: 3rem; opacity: .25;
+    }
+    .iq-welcome-title {
+      font-size: 1.1rem; font-weight: 800; color: var(--ink);
+    }
+    .iq-welcome-sub {
+      font-size: .78rem; color: var(--muted); max-width: 420px; line-height: 1.55;
+    }
+    .iq-welcome-examples {
+      display: flex; flex-direction: column; gap: 6px; margin-top: 8px;
+    }
+    .iq-example-query {
+      font-size: .74rem; padding: 7px 14px; border-radius: 10px;
+      border: 1.5px dashed var(--line); color: var(--muted);
+      cursor: pointer; transition: background .12s, border-color .12s;
+      text-align: left;
+    }
+    .iq-example-query:hover { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); }
+
+    /* entity detail card */
+    .iq-detail-card {
+      border: 1px solid var(--line); border-radius: 16px;
+      background: var(--panel); box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+    .iq-detail-head {
+      padding: 16px 20px 12px;
+      background: linear-gradient(180deg,rgba(255,255,255,.95),rgba(248,243,234,.7));
+      border-bottom: 1px solid var(--line);
+    }
+    .iq-detail-type-badge {
+      font-size: .62rem; font-weight: 700; letter-spacing: .07em;
+      text-transform: uppercase; color: var(--muted); margin-bottom: 4px;
+    }
+    .iq-detail-name {
+      font-size: 1.15rem; font-weight: 800; color: var(--ink); line-height: 1.2;
+    }
+    .iq-detail-meta-row {
+      display: flex; gap: 10px; flex-wrap: wrap; margin-top: 6px;
+    }
+    .iq-detail-meta-item {
+      font-size: .71rem; color: var(--muted);
+    }
+    .iq-detail-meta-item strong { color: var(--ink); }
+    .iq-detail-body {
+      padding: 14px 20px;
+    }
+    .iq-detail-summary {
+      font-size: .77rem; line-height: 1.6; color: var(--ink);
+      margin-bottom: 12px;
+    }
+    .iq-section-title {
+      font-size: .63rem; font-weight: 700; letter-spacing: .08em;
+      text-transform: uppercase; color: var(--muted); margin: 14px 0 8px;
+    }
+
+    /* latent potential section */
+    .iq-latent-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 8px; margin-top: 4px;
+    }
+    .iq-latent-card {
+      border: 1px solid var(--line); border-radius: 12px;
+      padding: 10px 12px;
+      background: rgba(255,255,255,.7);
+      cursor: pointer; transition: background .12s, box-shadow .12s;
+    }
+    .iq-latent-card:hover {
+      background: var(--accent-soft); box-shadow: 0 4px 12px rgba(11,143,135,.12);
+    }
+    .iq-latent-card-name {
+      font-size: .76rem; font-weight: 700; color: var(--ink);
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    }
+    .iq-latent-card-sub {
+      font-size: .65rem; color: var(--muted); margin-top: 2px;
+    }
+    .iq-latent-card-score {
+      font-size: .68rem; font-weight: 700; margin-top: 5px;
+      color: var(--accent);
+    }
+    .iq-latent-reasons {
+      display: flex; gap: 4px; flex-wrap: wrap; margin-top: 4px;
+    }
+    .iq-reason-chip {
+      font-size: .6rem; padding: 1px 6px; border-radius: 999px;
+      background: rgba(11,143,135,.1); color: var(--accent);
+      border: 1px solid rgba(11,143,135,.2);
+    }
+
+    /* investor portfolio chips */
+    .iq-portfolio-chips {
+      display: flex; gap: 5px; flex-wrap: wrap; margin-top: 4px;
+    }
+    .iq-portfolio-chip {
+      font-size: .65rem; padding: 2px 8px; border-radius: 999px;
+      background: rgba(59,130,246,.07); color: #2563eb;
+      border: 1px solid rgba(59,130,246,.2);
+      cursor: pointer; transition: background .12s;
+    }
+    .iq-portfolio-chip:hover { background: rgba(59,130,246,.15); }
+
+    /* quality bar */
+    .iq-quality-bar {
+      display: flex; align-items: center; gap: 8px;
+    }
+    .iq-quality-track {
+      flex: 1; height: 5px; border-radius: 999px;
+      background: rgba(216,204,192,.5); overflow: hidden;
+    }
+    .iq-quality-fill {
+      height: 100%; border-radius: 999px;
+      background: linear-gradient(90deg, #0B8F87, #10b981);
+    }
+
+    /* API status */
+    .iq-api-badge {
+      margin-left: auto; flex-shrink: 0;
+      font-size: .62rem; padding: 3px 8px; border-radius: 999px;
+      border: 1px solid var(--line); color: var(--muted);
+    }
+    .iq-api-badge.ready { color: #15803d; background: rgba(22,163,74,.08); border-color: rgba(22,163,74,.2); }
+    .iq-api-badge.loading { color: #d97706; background: rgba(217,119,6,.08); border-color: rgba(217,119,6,.2); }
+    .iq-api-badge.error { color: var(--warm); background: var(--warm-soft); border-color: rgba(154,52,18,.2); }
+
+    /* scrollbar */
+    .iq-results::-webkit-scrollbar,
+    .iq-main::-webkit-scrollbar { width: 5px; }
+    .iq-results::-webkit-scrollbar-track,
+    .iq-main::-webkit-scrollbar-track { background: transparent; }
+    .iq-results::-webkit-scrollbar-thumb,
+    .iq-main::-webkit-scrollbar-thumb { background: rgba(106,98,88,.2); border-radius: 3px; }
+
+    /* ── Intro / Presentar styles ─────────────────────────────── */
+    .iq-intro-hint {
+      font-size: .68rem; color: var(--muted); padding: 6px 14px 0;
+      flex-shrink: 0;
+    }
+    .iq-intro-hint strong { color: var(--accent); }
+
+    .iq-intro-slots {
+      display: grid; grid-template-columns: 1fr 28px 1fr; gap: 8px;
+      align-items: center; margin-bottom: 14px;
+    }
+    .iq-intro-slot {
+      border: 2px dashed var(--line); border-radius: 14px;
+      padding: 11px 14px; cursor: pointer; min-height: 76px;
+      transition: border-color .15s, background .15s;
+      background: rgba(255,255,255,.6);
+    }
+    .iq-intro-slot:hover { border-color: var(--accent); background: var(--accent-soft); }
+    .iq-intro-slot.focused {
+      border-color: var(--accent); border-style: solid;
+      background: rgba(11,143,135,.06);
+      box-shadow: 0 0 0 3px rgba(11,143,135,.12);
+    }
+    .iq-intro-slot.filled { border-style: solid; border-color: var(--accent); }
+    .iq-intro-slot.filled:hover { background: rgba(11,143,135,.1); }
+    .iq-intro-arrow {
+      text-align: center; font-size: 1.1rem; color: var(--muted);
+      user-select: none;
+    }
+    .iq-intro-slot-label {
+      font-size: .6rem; font-weight: 700; letter-spacing: .08em;
+      text-transform: uppercase; color: var(--muted);
+    }
+    .iq-intro-slot-name {
+      font-size: .84rem; font-weight: 700; color: var(--ink);
+      margin-top: 4px; white-space: nowrap;
+      overflow: hidden; text-overflow: ellipsis;
+    }
+    .iq-intro-slot-meta {
+      font-size: .65rem; color: var(--muted); margin-top: 3px;
+    }
+    .iq-intro-slot-empty {
+      font-size: .72rem; color: var(--muted); margin-top: 6px;
+      font-style: italic;
+    }
+    .iq-intro-slot-clear {
+      display: inline-block; margin-left: 6px; font-size: .65rem;
+      color: var(--warm); cursor: pointer; opacity: .7;
+    }
+    .iq-intro-slot-clear:hover { opacity: 1; }
+
+    .iq-intro-generate {
+      width: 100%; padding: 10px; border-radius: 11px;
+      font-family: var(--sans); font-size: .8rem; font-weight: 700;
+      background: var(--accent); color: #fff; border: none;
+      cursor: pointer; transition: background .15s, opacity .15s;
+    }
+    .iq-intro-generate:hover { background: #0a7a73; }
+    .iq-intro-generate:disabled { opacity: .45; cursor: default; }
+    .iq-intro-generate-wrap { padding: 6px 0 12px; }
+
+    /* brief panel */
+    .iq-brief-card {
+      border: 1px solid var(--line); border-radius: 16px;
+      background: var(--panel); box-shadow: var(--shadow); overflow: hidden;
+    }
+    .iq-brief-head {
+      padding: 16px 20px 12px;
+      background: linear-gradient(180deg,rgba(255,255,255,.95),rgba(248,243,234,.7));
+      border-bottom: 1px solid var(--line);
+      display: flex; align-items: flex-start; gap: 12px;
+    }
+    .iq-brief-head-text { flex: 1; min-width: 0; }
+    .iq-brief-pair-label {
+      font-size: .62rem; font-weight: 700; letter-spacing: .07em;
+      text-transform: uppercase; color: var(--muted);
+    }
+    .iq-brief-pair-name {
+      font-size: 1.05rem; font-weight: 800; color: var(--ink);
+      line-height: 1.25; margin-top: 3px;
+    }
+    .iq-brief-score-badge {
+      flex-shrink: 0; padding: 8px 14px; border-radius: 12px;
+      text-align: center;
+    }
+    .iq-brief-score-badge .score-num {
+      font-size: 1.5rem; font-weight: 800; line-height: 1;
+    }
+    .iq-brief-score-badge .score-lbl {
+      font-size: .6rem; text-transform: uppercase; letter-spacing: .06em;
+      margin-top: 2px;
+    }
+    .iq-brief-score-high { background: rgba(22,163,74,.1); color: #15803d; border: 1px solid rgba(22,163,74,.2); }
+    .iq-brief-score-mid  { background: rgba(11,143,135,.1); color: var(--accent); border: 1px solid rgba(11,143,135,.2); }
+    .iq-brief-score-low  { background: rgba(217,119,6,.08); color: #b45309; border: 1px solid rgba(217,119,6,.2); }
+
+    .iq-brief-body { padding: 16px 20px; }
+    .iq-brief-rationale {
+      font-size: .8rem; line-height: 1.65; color: var(--ink);
+      background: rgba(11,143,135,.04); border-left: 3px solid var(--accent);
+      border-radius: 0 10px 10px 0; padding: 10px 14px; margin-bottom: 14px;
+    }
+    .iq-brief-tp-list {
+      list-style: none; margin: 0; padding: 0;
+    }
+    .iq-brief-tp-list li {
+      padding: 7px 0; border-bottom: 1px solid rgba(216,204,192,.5);
+      font-size: .78rem; color: var(--ink); display: flex; gap: 8px;
+    }
+    .iq-brief-tp-list li:last-child { border-bottom: none; }
+    .iq-brief-tp-list li::before { content: "•"; color: var(--accent); flex-shrink: 0; }
+    .iq-brief-ask {
+      font-size: .77rem; color: var(--ink); font-style: italic;
+      background: rgba(248,243,234,.8); border-radius: 10px;
+      padding: 10px 14px; margin-top: 6px;
+    }
+    .iq-brief-signals {
+      display: flex; gap: 5px; flex-wrap: wrap; margin-top: 4px;
+    }
+    .iq-brief-signal {
+      font-size: .62rem; padding: 2px 8px; border-radius: 999px;
+      background: rgba(11,143,135,.1); color: var(--accent);
+      border: 1px solid rgba(11,143,135,.2);
+    }
+    .iq-brief-email-wrap {
+      margin-top: 6px;
+      border: 1px solid var(--line); border-radius: 12px; overflow: hidden;
+    }
+    .iq-brief-email-head {
+      display: flex; align-items: center; gap: 8px;
+      padding: 9px 14px;
+      background: rgba(248,243,234,.8);
+      border-bottom: 1px solid var(--line);
+    }
+    .iq-brief-email-subject {
+      flex: 1; font-size: .75rem; font-weight: 700; color: var(--ink);
+      overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+    }
+    .iq-brief-email-body {
+      padding: 12px 14px;
+      font-size: .73rem; line-height: 1.65; color: var(--ink);
+      white-space: pre-wrap; font-family: inherit;
+      max-height: 260px; overflow-y: auto;
+    }
+    .iq-brief-actions {
+      display: flex; gap: 8px; margin-top: 14px; flex-wrap: wrap;
+    }
+    .iq-btn-copy {
+      background: rgba(11,143,135,.12); color: var(--accent);
+      border: 1px solid rgba(11,143,135,.3);
+      font-family: var(--sans); font-size: .72rem; font-weight: 700;
+      padding: 8px 16px; border-radius: 9px; cursor: pointer;
+      transition: background .15s;
+    }
+    .iq-btn-copy:hover { background: var(--accent-soft); }
+    .iq-btn-download {
+      background: rgba(106,98,88,.08); color: var(--muted);
+      border: 1px solid var(--line);
+      font-family: var(--sans); font-size: .72rem; font-weight: 600;
+      padding: 8px 16px; border-radius: 9px; cursor: pointer;
+      transition: background .15s;
+    }
+    .iq-btn-download:hover { background: rgba(106,98,88,.15); }
+    .iq-brief-notes {
+      margin-top: 10px; font-size: .7rem; color: var(--warm);
+    }
+    .iq-brief-notes li { margin: 3px 0; }
+    .iq-brief-loading {
+      padding: 40px 20px; text-align: center; color: var(--muted);
+      font-size: .82rem;
+    }
+    .iq-brief-server-warn {
+      padding: 20px; text-align: center;
+      border: 1.5px dashed rgba(217,119,6,.4); border-radius: 14px;
+      color: #92400e; background: rgba(217,119,6,.05);
+      font-size: .78rem; line-height: 1.6;
+    }
+
+    /* ── Follow-up suggestions ───────────────────────────────────── */
+    .iq-followup-row {
+      display: flex; gap: 5px; flex-wrap: wrap;
+      padding: 6px 12px 4px; flex-shrink: 0;
+    }
+    .iq-followup-pill {
+      font-size: .63rem; font-weight: 600; padding: 3px 9px;
+      border-radius: 999px; border: 1.5px solid rgba(11,143,135,.3);
+      background: rgba(11,143,135,.07); color: var(--accent);
+      cursor: pointer; transition: background .12s;
+      white-space: nowrap;
+    }
+    .iq-followup-pill:hover { background: var(--accent-soft); }
+
+    /* ── Roles & persistence ─────────────────────────────────────── */
+    .iq-role-btn {
+      margin-left: 6px; flex-shrink: 0;
+      font-family: var(--sans); font-size: .62rem; font-weight: 700;
+      padding: 4px 10px; border-radius: 999px; cursor: pointer;
+      border: 1px solid var(--line); background: rgba(255,255,255,.8);
+      color: var(--muted); transition: background .12s, color .12s;
+    }
+    .iq-role-btn:hover { background: var(--accent-soft); color: var(--accent); }
+    .iq-role-dropdown {
+      position: absolute; top: calc(100% + 6px); right: 0;
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 14px; box-shadow: 0 8px 24px rgba(0,0,0,.12);
+      min-width: 210px; overflow: hidden; z-index: 999;
+    }
+    .iq-role-item {
+      padding: 10px 14px; cursor: pointer; font-size: .75rem;
+      transition: background .1s;
+    }
+    .iq-role-item:hover { background: var(--accent-soft); }
+    .iq-role-item.active { color: var(--accent); font-weight: 700; }
+    .iq-role-item-name { font-weight: 700; color: var(--ink); }
+    .iq-role-item-desc { font-size: .67rem; color: var(--muted); margin-top: 1px; }
+    .iq-role-wrap { position: relative; display: flex; }
+    .iq-saved-btn {
+      font-family: var(--sans); font-size: .72rem; font-weight: 600;
+      padding: 5px 10px; border-radius: 9px; cursor: pointer;
+      border: 1.5px solid var(--line); background: rgba(255,255,255,.8);
+      color: var(--muted); transition: background .12s, color .12s;
+      white-space: nowrap;
+    }
+    .iq-saved-btn:hover { background: var(--accent-soft); color: var(--accent); }
+    .iq-saved-btn.saved { color: #d97706; border-color: rgba(217,119,6,.3); background: rgba(217,119,6,.08); }
+    .iq-history-pills {
+      display: flex; flex-direction: column; gap: 5px; margin-top: 8px;
+    }
+    .iq-history-pill {
+      font-size: .71rem; padding: 5px 12px; border-radius: 999px;
+      background: rgba(255,255,255,.8); border: 1px solid var(--line);
+      color: var(--muted); cursor: pointer; text-align: left;
+      overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+      transition: background .12s, color .12s;
+    }
+    .iq-history-pill:hover { background: var(--accent-soft); color: var(--accent); }
+    .iq-saved-section {
+      margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--line);
+    }
+
+    /* ── Health / Salud styles ────────────────────────────────────── */
+    .iq-health-kpi-row {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+      gap: 10px; margin-bottom: 20px;
+    }
+    .iq-health-kpi {
+      border: 1px solid var(--line); border-radius: 14px;
+      padding: 14px 16px; background: var(--panel);
+      box-shadow: var(--shadow);
+    }
+    .iq-health-kpi-num {
+      font-size: 1.6rem; font-weight: 800; color: var(--accent); line-height: 1;
+    }
+    .iq-health-kpi-lbl {
+      font-size: .68rem; color: var(--muted); margin-top: 4px;
+    }
+    /* Heatmap */
+    .iq-heatmap-wrap {
+      overflow-x: auto; margin-bottom: 20px;
+    }
+    .iq-heatmap {
+      border-collapse: collapse; width: 100%; min-width: 480px;
+    }
+    .iq-heatmap th {
+      font-size: .62rem; font-weight: 700; letter-spacing: .06em;
+      text-transform: uppercase; color: var(--muted);
+      padding: 5px 8px; text-align: center; white-space: nowrap;
+      border: 1px solid var(--line);
+    }
+    .iq-heatmap th.theme-col { text-align: left; min-width: 180px; }
+    .iq-heatmap td {
+      font-size: .7rem; padding: 6px 10px;
+      border: 1px solid var(--line); text-align: center;
+      cursor: pointer; transition: opacity .12s;
+    }
+    .iq-heatmap td:hover { opacity: .75; }
+    .iq-heatmap td.theme-cell {
+      text-align: left; font-size: .72rem; font-weight: 600;
+      color: var(--ink); background: rgba(248,243,234,.6); cursor: default;
+      white-space: nowrap; padding-right: 14px;
+    }
+    /* depth table */
+    .iq-depth-table {
+      width: 100%; border-collapse: collapse; font-size: .74rem;
+    }
+    .iq-depth-table th {
+      font-size: .62rem; font-weight: 700; letter-spacing: .06em;
+      text-transform: uppercase; color: var(--muted);
+      padding: 6px 10px; border-bottom: 2px solid var(--line);
+      text-align: left;
+    }
+    .iq-depth-table td {
+      padding: 8px 10px; border-bottom: 1px solid rgba(216,204,192,.4);
+      color: var(--ink); vertical-align: top;
+    }
+    .iq-depth-table td.num { text-align: right; font-weight: 700; color: var(--accent); }
+    .iq-depth-table tr:last-child td { border-bottom: none; }
+    /* isolated list */
+    .iq-isolated-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 8px; margin-top: 6px;
+    }
+    .iq-isolated-card {
+      border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px;
+      background: rgba(255,255,255,.7); cursor: pointer;
+      transition: background .12s, box-shadow .12s;
+    }
+    .iq-isolated-card:hover {
+      background: var(--accent-soft); box-shadow: 0 4px 12px rgba(11,143,135,.12);
+    }
+    .iq-isolated-card-name {
+      font-size: .77rem; font-weight: 700; color: var(--ink);
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    }
+    .iq-isolated-card-meta {
+      font-size: .65rem; color: var(--muted); margin-top: 3px;
+    }
+    .iq-isolated-card-quality {
+      font-size: .68rem; font-weight: 700; color: var(--accent); margin-top: 4px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="iq-topbar">
+  <span class="iq-title">Inteligencia · BIO LATAM</span>
+  <div class="iq-nav-links">
+    <a href="./index.html">Inicio</a>
+    <a href="./capital-atlas.html">Capital Atlas</a>
+    <a href="./ecosystem-graph.html">Ecosystem Graph</a>
+  </div>
+  <div id="apiBadge" class="iq-api-badge">Búsqueda local</div>
+  <div class="iq-role-wrap">
+    <button class="iq-role-btn" id="roleBtn" title="Cambiar rol">⚙ Rol: <span id="roleBtnLabel">CAB Staff</span></button>
+    <div class="iq-role-dropdown" id="roleDropdown" style="display:none"></div>
+  </div>
+</div>
+
+<!-- SHELL -->
+<div class="iq-shell">
+
+  <!-- SIDEBAR -->
+  <div class="iq-sidebar">
+    <div class="iq-sb-head">
+      <div class="iq-sb-head-title">Ecosistema</div>
+      <div class="iq-sb-head-sub" id="sbStats">Cargando…</div>
+    </div>
+
+    <div class="iq-search-wrap">
+      <div class="iq-search-row">
+        <input
+          id="searchInput"
+          class="iq-search-input"
+          type="text"
+          placeholder="startup que hace… | nombre del fondo…"
+          autocomplete="off"
+          spellcheck="false"
+        />
+        <button class="iq-btn iq-btn-primary" id="searchBtn" title="Búsqueda semántica (usa IA)">IA</button>
+      </div>
+    </div>
+
+    <div class="iq-filter-row" id="filterRow">
+      <span class="iq-filter-pill active" data-filter="all">Todo</span>
+      <span class="iq-filter-pill" data-filter="startup">Startups</span>
+      <span class="iq-filter-pill" data-filter="investor">Inversores</span>
+      <span class="iq-filter-pill" data-filter="eso">ESOs</span>
+      <span class="iq-filter-pill" data-filter="organization">Gremiales</span>
+      <span class="iq-filter-pill" data-filter="corporate">Corporates</span>
+    </div>
+
+    <div class="iq-mode-tabs" id="modeTabs">
+      <span class="iq-tab active" data-mode="search">Buscar</span>
+      <span class="iq-tab" data-mode="latent">Potencial</span>
+      <span class="iq-tab" data-mode="funded">Sin Capital</span>
+      <span class="iq-tab" data-mode="intro">Presentar</span>
+      <span class="iq-tab" data-mode="health">Salud</span>
+    </div>
+
+    <div class="iq-followup-row" id="followupRow" style="display:none"></div>
+
+    <div id="introHint" class="iq-intro-hint" style="display:none">
+      Seleccioná <strong>Actor A</strong> o <strong>Actor B</strong>, luego buscá y hacé click en la lista.
+    </div>
+
+    <div class="iq-results" id="resultsList">
+      <div class="iq-empty"><strong>⌕</strong>Escribe para buscar o elige un modo</div>
+    </div>
+  </div>
+
+  <!-- MAIN -->
+  <div class="iq-main" id="mainPanel">
+    <div class="iq-welcome" id="welcomePanel">
+      <div class="iq-welcome-icon">◎</div>
+      <div class="iq-welcome-title">Inteligencia de Ecosistema BIO LATAM</div>
+      <div class="iq-welcome-sub">
+        Buscá cualquier actor del ecosistema, encontrá startups por descripción,
+        o descubrí qué conexiones tienen mayor potencial latente.
+      </div>
+      <div class="iq-welcome-examples" id="exampleQueries">
+        <div class="iq-example-query" data-q="startup que hace biopesticidas o biocontrol">🌱 startup que hace biopesticidas o biocontrol</div>
+        <div class="iq-example-query" data-q="empresa de diagnóstico molecular en Brasil">🔬 empresa de diagnóstico molecular en Brasil</div>
+        <div class="iq-example-query" data-q="plataforma de agricultura de precisión con sensores">📡 plataforma de agricultura de precisión con sensores</div>
+        <div class="iq-example-query" data-q="fermentación de precisión proteínas alternativas">🧫 fermentación de precisión proteínas alternativas</div>
+        <div class="iq-example-query" data-q="terapias oncológicas inmunoterapia latinoamérica">💊 terapias oncológicas inmunoterapia latinoamérica</div>
+      </div>
+    </div>
+    <div id="detailPanel" style="display:none"></div>
+    <div id="introPanel" style="display:none">
+      <!-- two-entity picker -->
+      <div id="introPicker">
+        <div class="iq-intro-slots">
+          <div class="iq-intro-slot focused" id="slotA" data-slot="a">
+            <div class="iq-intro-slot-label">Actor A</div>
+            <div class="iq-intro-slot-empty" id="slotAEmpty">Hacé click y buscá en la lista →</div>
+            <div class="iq-intro-slot-name" id="slotAName" style="display:none"></div>
+            <div class="iq-intro-slot-meta" id="slotAMeta" style="display:none"></div>
+          </div>
+          <div class="iq-intro-arrow">↔</div>
+          <div class="iq-intro-slot" id="slotB" data-slot="b">
+            <div class="iq-intro-slot-label">Actor B</div>
+            <div class="iq-intro-slot-empty" id="slotBEmpty">Hacé click y buscá en la lista →</div>
+            <div class="iq-intro-slot-name" id="slotBName" style="display:none"></div>
+            <div class="iq-intro-slot-meta" id="slotBMeta" style="display:none"></div>
+          </div>
+        </div>
+        <div class="iq-intro-generate-wrap">
+          <button class="iq-intro-generate" id="generateBriefBtn" disabled>
+            Generar Brief de Introducción&nbsp;(Ctrl+Enter)
+          </button>
+        </div>
+      </div>
+      <!-- brief result -->
+      <div id="briefResult"></div>
+    </div>
+    <!-- health panel -->
+    <div id="healthPanel" style="display:none">
+      <div id="healthContent"></div>
+    </div>
+  </div>
+
+</div>
+
+<!-- DATA + LOGIC ──────────────────────────────────────────────────────── -->
+<script src="./intelligence-data.js?v=20260524"></script>
+<script>
+// Load ecosystem-health-data.js if available (generated by pipeline.py ecosystem-health-data)
+// Falls back gracefully if file not present
+</script>
+<script src="./ecosystem-health-data.js?v=20260524" onerror="window._healthDataMissing=true"></script>
+<script>
+"use strict";
+
+// ── Decode vectors ────────────────────────────────────────────────────────
+function b64ToFloat32(b64) {
+  const bin = atob(b64);
+  const buf = new ArrayBuffer(bin.length);
+  const u8  = new Uint8Array(buf);
+  for (let i = 0; i < bin.length; i++) u8[i] = bin.charCodeAt(i);
+  return new Float32Array(buf);
+}
+
+const DIM      = IQ_META.vector_dim;       // 384
+const N_VECS   = IQ_META.vec_ids_count;    // 487
+const ALL_VECS = b64ToFloat32(IQ_VECTORS_B64); // flat Float32, length = N_VECS * DIM
+
+function getVec(i) {
+  return ALL_VECS.subarray(i * DIM, (i + 1) * DIM);
+}
+function dotProduct(a, b) {
+  let s = 0;
+  for (let i = 0; i < a.length; i++) s += a[i] * b[i];
+  return s;
+}
+
+// ── State ─────────────────────────────────────────────────────────────────
+let selectedEntity = null;
+let currentMode    = "search";
+let activeFilter   = "all";
+let currentResults = [];
+let apiAvailable   = null; // null=unknown, true=yes, false=no
+
+// ── DOM refs ──────────────────────────────────────────────────────────────
+const searchInput  = document.getElementById("searchInput");
+const searchBtn    = document.getElementById("searchBtn");
+const resultsList  = document.getElementById("resultsList");
+const mainPanel    = document.getElementById("mainPanel");
+const welcomePanel = document.getElementById("welcomePanel");
+const detailPanel  = document.getElementById("detailPanel");
+const sbStats      = document.getElementById("sbStats");
+const apiBadge     = document.getElementById("apiBadge");
+
+// ── Init stats ────────────────────────────────────────────────────────────
+(function initStats() {
+  const totalInclude = IQ_STARTUPS.filter(s => s.theme).length;
+  const fundedCount  = IQ_STARTUPS.filter(s => s.funded).length;
+  sbStats.textContent =
+    `${IQ_STARTUPS.length} startups · ${IQ_INVESTORS.length} inversores · ${Math.round(fundedCount/IQ_STARTUPS.length*100)}% con capital`;
+})();
+
+// ── Model server health check + warm-up polling ───────────────────────────
+// The model server (port 4174) loads once and stays in memory.
+// We poll /api/model-ready until it's up, updating the badge in real-time.
+// Once ready: every keystroke triggers semantic search (~150ms).
+// While warming up: local TF-IDF fallback (clearly labelled).
+
+let _modelPollTimer = null;
+
+async function checkModelReady() {
+  try {
+    const r = await fetch("/api/model-ready", { signal: AbortSignal.timeout(2000) });
+    if (!r.ok) throw new Error();
+    const data = await r.json();
+    if (data.ready) {
+      apiAvailable = true;
+      apiBadge.textContent = "IA lista · multilingüe";
+      apiBadge.className = "iq-api-badge ready";
+      searchBtn.title = "Búsqueda semántica multilingüe (ES · PT · EN)";
+      clearInterval(_modelPollTimer);
+      // Re-run current query with AI if user already typed something
+      const q = searchInput.value.trim();
+      if (q.length >= 2) semanticSearchApi(q);
+      return true;
+    }
+  } catch { /* server not up yet */ }
+  return false;
+}
+
+(async function initApi() {
+  // First check: is the server even reachable?
+  try {
+    await fetch("/api/model-ready", { signal: AbortSignal.timeout(1000) });
+    // Server is up — show warming badge and poll
+    apiBadge.textContent = "⌛ Cargando modelo IA…";
+    apiBadge.className = "iq-api-badge loading";
+    searchBtn.title = "Modelo cargando — usando búsqueda local mientras espera";
+  } catch {
+    // server.js itself is not running (file:// or offline)
+    apiAvailable = false;
+    apiBadge.textContent = "Búsqueda local";
+    apiBadge.className = "iq-api-badge";
+    searchBtn.title = "Iniciá server.js para búsqueda semántica multilingüe";
+    return;
+  }
+
+  // Poll every 2s until model is ready
+  const ready = await checkModelReady();
+  if (!ready) {
+    _modelPollTimer = setInterval(async () => { await checkModelReady(); }, 2000);
+  }
+})();
+
+// ── Filter pills ──────────────────────────────────────────────────────────
+document.getElementById("filterRow").addEventListener("click", e => {
+  const pill = e.target.closest(".iq-filter-pill");
+  if (!pill) return;
+  activeFilter = pill.dataset.filter;
+  document.querySelectorAll(".iq-filter-pill").forEach(p => p.classList.remove("active"));
+  pill.classList.add("active");
+  triggerSearch();
+});
+
+// ── Mode tabs ─────────────────────────────────────────────────────────────
+document.getElementById("modeTabs").addEventListener("click", e => {
+  const tab = e.target.closest(".iq-tab");
+  if (!tab) return;
+  currentMode = tab.dataset.mode;
+  document.querySelectorAll(".iq-tab").forEach(t => t.classList.remove("active"));
+  tab.classList.add("active");
+  if (currentMode !== "intro") {
+    introPanel.style.display = "none";
+    introHint.style.display  = "none";
+  }
+  if (currentMode !== "health") {
+    healthPanel.style.display = "none";
+  }
+  triggerSearch();
+});
+
+// ── Example queries ───────────────────────────────────────────────────────
+document.getElementById("exampleQueries").addEventListener("click", e => {
+  const eq = e.target.closest(".iq-example-query");
+  if (!eq) return;
+  searchInput.value = eq.dataset.q;
+  triggerSearch(true); // force semantic
+});
+
+// ── Search trigger ────────────────────────────────────────────────────────
+// Strategy:
+//   • Model ready → semantic search on every keystroke (300ms debounce)
+//                   local results flash instantly while AI refines
+//   • Model warming / offline → local TF-IDF only
+//   • Enter always fires semantic immediately (no debounce)
+
+let _searchDebounce = null;
+let _aiDebounce     = null;
+
+searchInput.addEventListener("input", () => {
+  clearTimeout(_searchDebounce);
+  _searchDebounce = setTimeout(() => triggerSearch(false), 250);
+});
+searchInput.addEventListener("keydown", e => {
+  if (e.key === "Enter") {
+    clearTimeout(_searchDebounce);
+    clearTimeout(_aiDebounce);
+    triggerSearch(true);
+  }
+});
+searchBtn.addEventListener("click", () => {
+  clearTimeout(_aiDebounce);
+  triggerSearch(true);
+});
+
+function triggerSearch(immediate = false) {
+  const q = searchInput.value.trim();
+  if (q.length >= 3 && (currentMode === "search" || currentMode === "intro") && typeof saveQueryHistory === "function") saveQueryHistory(q);
+  if (currentMode === "funded")  { showUnfunded();   return; }
+  if (currentMode === "latent")  { showTopLatent();  return; }
+  if (currentMode === "intro")   { if (!q) { showIntroMode(); return; } localSearch(q); return; }
+  if (currentMode === "health")  { showHealthMode(); return; }
+  if (!q) { showWelcome(); showDefaultBrowse(); return; }
+
+  if (apiAvailable) {
+    // Always show local results first (instant feedback, language-agnostic bridge)
+    localSearch(q);
+    // Then refine with multilingual semantic AI
+    clearTimeout(_aiDebounce);
+    if (immediate) {
+      semanticSearchApi(q);
+    } else {
+      // Small extra delay on typing so we don't fire on every keystroke
+      _aiDebounce = setTimeout(() => semanticSearchApi(q), 300);
+    }
+  } else {
+    localSearch(q);
+  }
+}
+
+// ── Local keyword search (hybrid: TF-IDF + language bridge + field weights) ─
+function localSearch(q) {
+  const ql = _norm(q);
+  // Raw tokens from user query
+  const rawToks = ql.split(/\s+/).filter(t => t.length >= 2);
+  // Expand via language bridge (Spanish → English biotech terms)
+  const expToks = new Set(rawToks);
+  rawToks.forEach(t => {
+    const mapped = _TERM_BRIDGE[t];
+    if (mapped) mapped.forEach(s => expToks.add(_norm(s)));
+  });
+  const tokens = [...expToks];
+
+  const results = [];
+  const seen = new Set();
+
+  // ── Startups: TF-IDF + field bonuses + quality tiebreaker ──────────────
+  if (activeFilter === "all" || activeFilter === "startup") {
+    IQ_STARTUPS.forEach(st => {
+      const nameN = _norm(st.name);
+      const combined = _norm(`${st.name} ${st.theme} ${st.one_liner} ${st.country} ${st.tech} ${st.summary||""}`);
+      let score = 0;
+
+      // Name match — highest priority
+      if (nameN.startsWith(ql))     score += 14;
+      else if (nameN.includes(ql))  score += 9;
+
+      // TF-IDF score (uses bridge-expanded tokens)
+      score += tfidfScore(st, tokens) * 6;
+
+      // Direct substring match for each expanded token
+      tokens.forEach(t => {
+        if (t.length >= 3 && combined.includes(t)) score += 1.5;
+      });
+
+      // Quality only nudges ranking AFTER content relevance is established —
+      // never makes a zero-match startup cross the threshold.
+      const finalScore = score > 0.2 ? score + (st.quality || 0) * 0.04 : 0;
+
+      if (finalScore > 0.2 && !seen.has(st.id)) {
+        seen.add(st.id);
+        results.push({ id: st.id, name: st.name, type: "startup",
+          country: st.country, focus: st.theme, detail: st.one_liner,
+          website: st.website||"", score: finalScore, _mode: "local" });
+      }
+    });
+  }
+
+  // ── Non-startup entities (investors, orgs, ESOs, corporates) ───────────
+  if (activeFilter !== "startup") {
+    IQ_ALL_ENTITIES
+      .filter(e => activeFilter === "all" ? e.type !== "startup" : e.type === activeFilter)
+      .forEach(e => {
+        const nameN = _norm(e.name);
+        const combined = _norm(`${e.name} ${e.focus||""} ${e.detail||""} ${e.country||""}`);
+        let score = 0;
+
+        if (nameN.startsWith(ql))    score += 14;
+        else if (nameN.includes(ql)) score += 9;
+
+        tokens.forEach(t => {
+          if (t.length >= 3 && combined.includes(t)) score += 2;
+        });
+
+        if (score > 0 && !seen.has(e.id)) {
+          seen.add(e.id);
+          results.push({ ...e, score, _mode: "local" });
+        }
+      });
+  }
+
+  results.sort((a, b) => b.score - a.score);
+  renderResults(results.slice(0, 40));
+}
+
+// ── Semantic search via API ───────────────────────────────────────────────
+// Shows local results immediately, refines with AI in background.
+let _semanticAbort = null;  // cancel in-flight requests when user retypes
+
+async function semanticSearchApi(q) {
+  // Cancel any in-flight semantic search
+  if (_semanticAbort) { _semanticAbort.abort(); }
+  _semanticAbort = new AbortController();
+  const signal = _semanticAbort.signal;
+
+  // Local results are already showing (triggerSearch called localSearch first)
+  // Just pulse the badge to indicate AI is refining
+  const badge = document.getElementById("apiBadge");
+  const prevBadge = badge ? badge.textContent : "";
+  if (badge) badge.textContent = "⌛ IA procesando…";
+
+  try {
+    const r = await fetch("/api/query", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ query: q, top_k: 20 }),
+      signal,
+    });
+    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+    const data = await r.json();
+    if (data.error) throw new Error(data.error);
+    renderSemanticResults(data, q);
+    if (badge) badge.textContent = prevBadge || "✓ API IA disponible";
+  } catch (err) {
+    if (err.name === "AbortError") return; // superseded by newer query
+    if (badge) badge.textContent = prevBadge || "API IA disponible";
+    // Local results already showing — no need to fallback again
+  }
+}
+
+// ── Intent detection for entity surfacing ────────────────────────────────
+// Returns "startup" | "entity" | "mixed"
+function detectQueryIntent(q) {
+  const n = _norm(q);
+  // Startup-seeking intent — user wants to find a startup/company/product
+  const STARTUP_INTENT = [
+    "startup","empresa","compania","quien hace","que hace","que desarrolla",
+    "que produce","que fabrica","que vende","quiero ver","mostrame","buscame",
+    "hay alguna","existe una","hay startups","startups de","empresas de",
+    "compania de","tecnologia de","solucion para","producto para","servicio de",
+    "hace biopesticidas","hace fermentacion","hace diagnostico","hace bioinsumos",
+  ];
+  if (STARTUP_INTENT.some(w => n.includes(w))) return "startup";
+
+  // Entity-seeking intent — user wants investors, funds, orgs, ESOs, corporates
+  const ENTITY_INTENT = [
+    "inversor","inversores","fondo","fondos","venture capital","capital de riesgo",
+    "financiamiento","subsidio","subsidios","grant","grants","convocatoria",
+    "gremial","camara","asociacion","organismo","agencia","instituto","programa",
+    "quien financia","quien apoya","quienes invierten","busco inversor",
+    "busco fondo","adquirente","corporate","corporates","quien compra",
+    "aceleradora","incubadora","eso","soporte","apoya startups",
+    "arcap","abvcap","chilevc","amexcap","anpcyt","finep","sebrae","corfo",
+    "senacyt","embrapa","inia","cab ","aapresid","crea ","bayer","basf",
+    "syngenta","corteva","novonesis","cargill","bunge",
+  ];
+  if (ENTITY_INTENT.some(w => n.includes(w))) return "entity";
+
+  return "mixed";
+}
+
+function renderSemanticResults(data, q) {
+  // Support both old plain-array format and new {results, entities, ms} format
+  const startupRows  = Array.isArray(data) ? data : (data.results  || []);
+  const entityRows   = Array.isArray(data) ? []   : (data.entities || []);
+
+  if (startupRows.length === 0 && entityRows.length === 0) {
+    // local results already showing — leave them
+    return;
+  }
+
+  // Detect what the user is actually looking for
+  const intent = detectQueryIntent(q);
+
+  // Semantic startup results
+  const semanticItems = startupRows.map(r => ({
+    id: r.id, name: r.name, type: "startup",
+    country: r.country, focus: r.theme,
+    score: r.score, _raw: r, _mode: "semantic",
+    detail: r.one_liner,
+  }));
+
+  // Semantic entity results: only surface if intent isn't purely startup-seeking.
+  // Score threshold rises when intent is mixed (no clear signal).
+  const entityScoreThreshold = intent === "startup" ? 999   // suppress completely
+                             : intent === "entity"  ? 0.25  // show even modest matches
+                             : 0.65;                         // mixed: only high-confidence
+
+  const semanticEntityItems = intent === "startup" ? [] : entityRows
+    .filter(r => r.score >= entityScoreThreshold)
+    .slice(0, intent === "entity" ? 8 : 4)
+    .map(r => ({
+      id:      r.id,
+      name:    r.name,
+      type:    r.entity_type || "organization",
+      country: r.country,
+      focus:   r.theme ? r.theme.split(";")[0] : "",
+      detail:  r.one_liner || "",
+      website: r.website || "",
+      score:   r.score,
+      _raw:    r,
+      _mode:   "semantic",
+    }));
+
+  // Local entity name hits (investors in IQ_ALL_ENTITIES not in entity_vectors)
+  // Only run when not in startup-only intent
+  const ql = _norm(q);
+  const rawToks = ql.split(/\s+/).filter(t => t.length >= 2);
+  const expToks = new Set(rawToks);
+  rawToks.forEach(t => { (_TERM_BRIDGE[t]||[]).forEach(s => expToks.add(_norm(s))); });
+  const tokens = [...expToks];
+  const seenIds = new Set([
+    ...semanticItems.map(r => r.id),
+    ...semanticEntityItems.map(r => r.id),
+  ]);
+  const localEntityHits = [];
+  if (intent !== "startup") {
+    IQ_ALL_ENTITIES.filter(e => e.type !== "startup").forEach(e => {
+      if (seenIds.has(e.id)) return;
+      const nameN = _norm(e.name);
+      const combined = _norm(`${e.name} ${e.focus||""} ${e.detail||""} ${e.country||""}`);
+      let score = 0;
+      if (nameN.startsWith(ql)) score += 14;
+      else if (nameN.includes(ql)) score += 9;
+      tokens.forEach(t => { if (t.length >= 3 && combined.includes(t)) score += 2; });
+      if (score > 0) { localEntityHits.push({ ...e, score, _mode: "local" }); }
+    });
+    localEntityHits.sort((a,b) => b.score - a.score);
+  }
+
+  // Merge strategy:
+  //   entity intent  → entities first, then startups
+  //   startup intent → only startups
+  //   mixed          → entities appended at end (if score ≥ 0.65)
+  const allEntityHits = [
+    ...semanticEntityItems,
+    ...localEntityHits.filter(e => !seenIds.has(e.id)).slice(0, intent === "entity" ? 5 : 2),
+  ].slice(0, intent === "entity" ? 10 : 4);
+
+  const merged = intent === "entity"
+    ? [...allEntityHits, ...semanticItems]   // entities first
+    : [...semanticItems, ...allEntityHits];  // startups first
+
+  renderResults(merged);
+}
+
+// ── Local cosine search over stored vectors ───────────────────────────────
+function localVectorSearch(qIdx) {
+  // qIdx: index into IQ_STARTUPS (pre-encoded). Used for "find similar" from detail view.
+  const qVec = getVec(qIdx);
+  const scored = IQ_STARTUPS.map((st, i) => ({
+    id: st.id, name: st.name, type: "startup",
+    country: st.country, focus: st.theme, detail: st.one_liner,
+    score: dotProduct(qVec, getVec(i)), _mode: "similar",
+  })).filter((_, i) => i !== qIdx);
+  scored.sort((a, b) => b.score - a.score);
+  return scored.slice(0, 15);
+}
+
+// ── Default browse / modes ────────────────────────────────────────────────
+function showDefaultBrowse() {
+  let pool;
+  if (activeFilter === "all") {
+    // Show top-quality funded startups by default
+    pool = IQ_STARTUPS
+      .filter(s => s.funded)
+      .sort((a, b) => b.quality - a.quality)
+      .slice(0, 30)
+      .map(s => ({ id: s.id, name: s.name, type: "startup", country: s.country, focus: s.theme, detail: s.one_liner, _mode: "browse" }));
+  } else if (activeFilter === "investor") {
+    pool = IQ_INVESTORS
+      .slice(0, 30)
+      .map(inv => ({ id: inv.id, name: inv.name, type: "investor", country: inv.country, focus: inv.themes.slice(0,2).join(", "), detail: `${inv.portfolio_size} portfolio · ${inv.itype}`, _mode: "browse" }));
+  } else if (activeFilter === "startup") {
+    pool = IQ_STARTUPS
+      .sort((a, b) => b.quality - a.quality)
+      .slice(0, 40)
+      .map(s => ({ id: s.id, name: s.name, type: "startup", country: s.country, focus: s.theme, detail: s.one_liner, _mode: "browse" }));
+  } else {
+    pool = IQ_ALL_ENTITIES.filter(e => e.type === activeFilter).slice(0, 30).map(e => ({ ...e, _mode: "browse" }));
+  }
+  renderResults(pool);
+}
+
+function showUnfunded() {
+  const pool = IQ_STARTUPS
+    .filter(s => !s.funded && s.theme)
+    .sort((a, b) => b.quality - a.quality)
+    .slice(0, 50);
+  const items = pool.map(s => ({
+    id: s.id, name: s.name, type: "startup",
+    country: s.country, focus: s.theme, detail: s.one_liner || `Calidad: ${s.quality}`,
+    _mode: "unfunded",
+  }));
+  renderResults(items);
+  if (items.length === 0) {
+    resultsList.innerHTML = '<div class="iq-empty"><strong>✓</strong>Todas las startups tienen capital!</div>';
+  }
+}
+
+function showTopLatent() {
+  // Show investors sorted by gap (pre-computed)
+  const pool = IQ_INVESTORS
+    .filter(inv => inv.gap && inv.gap.length > 0)
+    .slice(0, 25);
+  const items = pool.map(inv => ({
+    id: inv.id, name: inv.name, type: "investor",
+    country: inv.country, focus: inv.themes.slice(0,2).join(", "),
+    detail: `${inv.gap.length} oportunidades sin mapear · ${inv.portfolio_size} portfolio`,
+    _mode: "latent",
+  }));
+  renderResults(items);
+}
+
+// ── Render results list ───────────────────────────────────────────────────
+function renderResults(items) {
+  currentResults = items;
+  if (items.length === 0) {
+    resultsList.innerHTML = '<div class="iq-empty"><strong>∅</strong>Sin resultados para esta búsqueda.</div>';
+    return;
+  }
+  const html = items.map((item, i) => {
+    const scoreHtml = item.score != null
+      ? `<span class="iq-result-score">${item.score.toFixed ? item.score.toFixed(3) : item.score}</span>`
+      : "";
+    const chips = buildResultChips(item);
+    return `
+      <div class="iq-result-item" data-idx="${i}" data-id="${item.id}" data-type="${item.type}">
+        <div class="iq-result-top">
+          <span class="iq-result-name">${escHtml(item.name)}</span>
+          ${scoreHtml}
+        </div>
+        <div class="iq-result-meta">${escHtml(item.country || "")}${item.country && item.focus ? " · " : ""}${escHtml((item.focus || "").slice(0,48))}</div>
+        ${chips ? `<div class="iq-result-chips">${chips}</div>` : ""}
+      </div>`;
+  }).join("");
+  resultsList.innerHTML = html;
+
+  resultsList.querySelectorAll(".iq-result-item").forEach(el => {
+    el.addEventListener("click", () => {
+      resultsList.querySelectorAll(".iq-result-item").forEach(e => e.classList.remove("selected"));
+      el.classList.add("selected");
+      const idx = +el.dataset.idx;
+      if (currentMode === "intro") {
+        setIntroEntity(currentResults[idx]);
+      } else {
+        showDetail(currentResults[idx]);
+      }
+    });
+  });
+
+  // Follow-up suggestions after rendering results
+  if (typeof showFollowups === "function") {
+    const q = searchInput.value.trim();
+    if (currentMode === "search" && q) {
+      showFollowups(items, q);
+    } else {
+      const fr = document.getElementById("followupRow");
+      if (fr) fr.style.display = "none";
+    }
+  }
+}
+
+function buildResultChips(item) {
+  const chips = [];
+  if (item.type === "startup") {
+    const st = IQ_STARTUPS.find(s => s.id === item.id);
+    if (st) {
+      if (st.funded) chips.push(`<span class="iq-chip funded">Con capital</span>`);
+      else           chips.push(`<span class="iq-chip">Sin capital</span>`);
+      if (st.quality >= 8) chips.push(`<span class="iq-chip score-high">Calidad ${st.quality}</span>`);
+      if (st.stage)        chips.push(`<span class="iq-chip">${st.stage}</span>`);
+    }
+  } else if (item.type === "investor") {
+    chips.push(`<span class="iq-chip investor">${item.detail || "inversor"}</span>`);
+  } else if (item.type === "eso") {
+    chips.push(`<span class="iq-chip eso">ESO</span>`);
+  } else if (item.type === "organization") {
+    chips.push(`<span class="iq-chip org">Gremial</span>`);
+  } else if (item.type === "corporate") {
+    chips.push(`<span class="iq-chip corp">Corporate</span>`);
+  }
+  return chips.join("");
+}
+
+// ── Detail panel ──────────────────────────────────────────────────────────
+function showDetail(item) {
+  welcomePanel.style.display  = "none";
+  detailPanel.style.display   = "block";
+  introPanel.style.display    = "none";
+  healthPanel.style.display   = "none";
+  selectedEntity = item;
+
+  if (item.type === "startup") {
+    renderStartupDetail(item.id);
+  } else if (item.type === "investor") {
+    renderInvestorDetail(item.id);
+  } else {
+    renderGenericDetail(item);
+  }
+}
+
+function renderStartupDetail(id) {
+  const st = IQ_STARTUPS.find(s => s.id === id);
+  if (!st) return;
+  const stIdx = IQ_STARTUPS.indexOf(st);
+
+  // Find similar startups via local cosine
+  const similar = stIdx >= 0 ? localVectorSearch(stIdx) : [];
+
+  // Find potential investors (pre-computed gap data)
+  const potentialInvestors = [];
+  IQ_INVESTORS.forEach(inv => {
+    const match = (inv.gap || []).find(g => g.id === id);
+    if (match) {
+      potentialInvestors.push({ ...inv, gap_score: match.score });
+    }
+  });
+  potentialInvestors.sort((a, b) => b.gap_score - a.gap_score);
+
+  const websiteLink = st.website
+    ? `<a href="${escHtml(st.website)}" target="_blank" rel="noopener">${escHtml(st.website.replace(/^https?:\/\//, ""))}</a>`
+    : "—";
+
+  const qualityPct = Math.round(st.quality * 10);
+
+  const investorsList = st.investors.length
+    ? st.investors.map(n => `<span class="iq-portfolio-chip" data-search="${escHtml(n)}">${escHtml(n)}</span>`).join("")
+    : '<span style="color:var(--muted);font-size:.72rem">Sin inversores registrados</span>';
+
+  const potentialHtml = potentialInvestors.slice(0, 8).map(inv => `
+    <div class="iq-latent-card" data-investor-id="${escHtml(inv.id)}">
+      <div class="iq-latent-card-name">${escHtml(inv.name)}</div>
+      <div class="iq-latent-card-sub">${escHtml(inv.country)} · ${escHtml(inv.itype || "")} · ${inv.portfolio_size} portfolio</div>
+      <div class="iq-latent-card-score">Fit: ${inv.gap_score.toFixed(3)}</div>
+    </div>`).join("");
+
+  const similarHtml = similar.slice(0, 6).map(s => `
+    <div class="iq-latent-card" data-startup-id="${escHtml(s.id)}">
+      <div class="iq-latent-card-name">${escHtml(s.name)}</div>
+      <div class="iq-latent-card-sub">${escHtml(s.country)} · ${escHtml((s.focus || "").slice(0, 40))}</div>
+      <div class="iq-latent-card-score">Similitud: ${s.score.toFixed(3)}</div>
+    </div>`).join("");
+
+  detailPanel.innerHTML = `
+    <div class="iq-detail-card">
+      <div class="iq-detail-head">
+        <div class="iq-detail-type-badge" style="display:flex;justify-content:space-between;align-items:center">
+          <span>Startup · ${escHtml(st.theme || "—")}</span>
+          <button class="iq-saved-btn${isSaved(st.id) ? " saved" : ""}" id="saveBtn_${escHtml(st.id)}" data-save-id="${escHtml(st.id)}" data-save-name="${escHtml(st.name)}" data-save-type="startup">${isSaved(st.id) ? "⭐ Guardado" : "☆ Guardar"}</button>
+        </div>
+        <div class="iq-detail-name">${escHtml(st.name)}</div>
+        <div class="iq-detail-meta-row">
+          <span class="iq-detail-meta-item"><strong>País</strong> ${escHtml(st.country || "—")}</span>
+          <span class="iq-detail-meta-item"><strong>Etapa</strong> ${escHtml(st.stage || "—")}</span>
+          <span class="iq-detail-meta-item"><strong>Fundada</strong> ${escHtml(String(st.founded || "—"))}</span>
+          <span class="iq-detail-meta-item"><strong>Web</strong> ${websiteLink}</span>
+        </div>
+      </div>
+      <div class="iq-detail-body">
+        ${st.one_liner ? `<div class="iq-detail-summary"><em>${escHtml(st.one_liner)}</em></div>` : ""}
+        ${st.summary ? `<div class="iq-detail-summary">${escHtml(st.summary)}</div>` : ""}
+
+        <div class="iq-section-title">Calidad de datos</div>
+        <div class="iq-quality-bar">
+          <div class="iq-quality-track">
+            <div class="iq-quality-fill" style="width:${qualityPct}%"></div>
+          </div>
+          <span style="font-size:.72rem;color:var(--muted)">${st.quality} / 10</span>
+        </div>
+
+        <div class="iq-section-title">Inversores actuales (${st.investors.length})</div>
+        <div class="iq-portfolio-chips">${investorsList}</div>
+
+        ${potentialInvestors.length ? `
+        <div class="iq-section-title">Inversores con potencial latente (${Math.min(potentialInvestors.length,8)} de ${potentialInvestors.length})</div>
+        <div class="iq-latent-grid">${potentialHtml}</div>` : ""}
+
+        ${similar.length ? `
+        <div class="iq-section-title">Startups similares (por semantica)</div>
+        <div class="iq-latent-grid">${similarHtml}</div>` : ""}
+      </div>
+    </div>`;
+
+  // Wire up click handlers
+  detailPanel.querySelectorAll(".iq-saved-btn[data-save-id]").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const entity = { id: btn.dataset.saveId, name: btn.dataset.saveName, type: btn.dataset.saveType || "startup" };
+      toggleSaved(entity);
+      btn.textContent = isSaved(entity.id) ? "⭐ Guardado" : "☆ Guardar";
+      btn.classList.toggle("saved", isSaved(entity.id));
+    });
+  });
+  detailPanel.querySelectorAll(".iq-latent-card[data-investor-id]").forEach(el => {
+    el.addEventListener("click", () => renderInvestorDetail(el.dataset.investorId));
+  });
+  detailPanel.querySelectorAll(".iq-latent-card[data-startup-id]").forEach(el => {
+    el.addEventListener("click", () => renderStartupDetail(el.dataset.startupId));
+  });
+  detailPanel.querySelectorAll(".iq-portfolio-chip[data-search]").forEach(el => {
+    el.addEventListener("click", () => {
+      searchInput.value = el.dataset.search;
+      localSearch(el.dataset.search);
+    });
+  });
+}
+
+function renderInvestorDetail(id) {
+  const inv = IQ_INVESTORS.find(i => i.id === id);
+  if (!inv) return;
+
+  const websiteLink = inv.website
+    ? `<a href="${escHtml(inv.website)}" target="_blank" rel="noopener">${escHtml(inv.website.replace(/^https?:\/\//, ""))}</a>`
+    : "—";
+
+  const themeChips = inv.themes.slice(0, 8).map(t =>
+    `<span class="iq-chip">${escHtml(t)}</span>`).join("");
+
+  // Top portfolio startups by quality
+  const portfolioStartups = inv.gap
+    ? IQ_STARTUPS.filter(s => {
+        const invData = IQ_INVESTORS.find(i => i.id === id);
+        return s.investors && s.investors.length > 0 && s.investors.some(n =>
+          n.toLowerCase().includes(inv.name.toLowerCase().split(" ")[0].toLowerCase()));
+      }).sort((a, b) => b.quality - a.quality).slice(0, 8)
+    : [];
+
+  const gapHtml = (inv.gap || []).slice(0, 12).map(g => `
+    <div class="iq-latent-card" data-startup-id="${escHtml(g.id)}">
+      <div class="iq-latent-card-name">${escHtml(g.name)}</div>
+      <div class="iq-latent-card-sub">${escHtml(g.country)} · ${escHtml((g.theme || "").slice(0, 40))}</div>
+      <div class="iq-latent-card-score">Fit: ${g.score.toFixed(3)}${g.funded ? " · con capital" : ""}</div>
+    </div>`).join("");
+
+  detailPanel.innerHTML = `
+    <div class="iq-detail-card">
+      <div class="iq-detail-head">
+        <div class="iq-detail-type-badge" style="display:flex;justify-content:space-between;align-items:center">
+          <span>Inversor · ${escHtml(inv.itype || "fondo")}</span>
+          <button class="iq-saved-btn${isSaved(inv.id) ? " saved" : ""}" data-save-id="${escHtml(inv.id)}" data-save-name="${escHtml(inv.name)}" data-save-type="investor">${isSaved(inv.id) ? "⭐ Guardado" : "☆ Guardar"}</button>
+        </div>
+        <div class="iq-detail-name">${escHtml(inv.name)}</div>
+        <div class="iq-detail-meta-row">
+          <span class="iq-detail-meta-item"><strong>País</strong> ${escHtml(inv.country || "—")}</span>
+          <span class="iq-detail-meta-item"><strong>Portfolio</strong> ${inv.portfolio_size} startups</span>
+          <span class="iq-detail-meta-item"><strong>Foco geo</strong> ${escHtml(inv.geo_focus || "—")}</span>
+          <span class="iq-detail-meta-item"><strong>Web</strong> ${websiteLink}</span>
+        </div>
+      </div>
+      <div class="iq-detail-body">
+        <div class="iq-section-title">Temas del portfolio</div>
+        <div class="iq-result-chips" style="margin-bottom:4px">${themeChips}</div>
+
+        <div class="iq-section-title">Paises del portfolio</div>
+        <div class="iq-result-chips">${inv.countries.map(c => `<span class="iq-chip">${escHtml(c)}</span>`).join("")}</div>
+
+        ${inv.gap && inv.gap.length > 0 ? `
+        <div class="iq-section-title">Potencial latente — startups con mayor fit (${inv.gap.length} total)</div>
+        <div class="iq-latent-grid">${gapHtml}</div>` : `
+        <div style="font-size:.75rem;color:var(--muted);margin-top:12px">Sin gaps identificados (portfolio insuficiente o fondo sin perfil temático).</div>`}
+      </div>
+    </div>`;
+
+  detailPanel.querySelectorAll(".iq-latent-card[data-startup-id]").forEach(el => {
+    el.addEventListener("click", () => renderStartupDetail(el.dataset.startupId));
+  });
+  detailPanel.querySelectorAll(".iq-saved-btn[data-save-id]").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const entity = { id: btn.dataset.saveId, name: btn.dataset.saveName, type: btn.dataset.saveType || "investor" };
+      toggleSaved(entity);
+      btn.textContent = isSaved(entity.id) ? "⭐ Guardado" : "☆ Guardar";
+      btn.classList.toggle("saved", isSaved(entity.id));
+    });
+  });
+}
+
+function renderGenericDetail(item) {
+  // item may come from IQ_ALL_ENTITIES (has description_en, bio_themes, demand)
+  // or from a semantic search _raw hit
+  const raw = item._raw || {};
+  const websiteUrl = item.website || raw.website || "";
+  const websiteLink = websiteUrl
+    ? `<a href="${escHtml(websiteUrl)}" target="_blank" rel="noopener">${escHtml(websiteUrl.replace(/^https?:\/\//, ""))}</a>`
+    : "—";
+
+  const typeLabels = {
+    organization: "Gremial / Asociación",
+    eso: "Ecosistema de Soporte",
+    corporate: "Corporate / Adquirente",
+  };
+
+  // Rich description — prefer Spanish for UI, fall back to English
+  const descEs = item.detail || raw.one_liner || "";
+  const descEn = item.description_en || raw.description_en || "";
+
+  // Bio themes
+  const bioThemes = (item.bio_themes || raw.theme || "")
+    .split(";")
+    .map(t => t.trim())
+    .filter(Boolean);
+  const themePills = bioThemes.map(t =>
+    `<span class="iq-chip" style="background:var(--accent-a10,rgba(139,92,246,.15));color:var(--accent,#7c3aed)">${escHtml(t)}</span>`
+  ).join("");
+
+  // Demand / service signals
+  const demandRaw = item.demand || raw.latam_presence || "";
+  const demandPills = demandRaw
+    .split(";")
+    .map(d => d.trim().replace(/_/g," "))
+    .filter(Boolean)
+    .slice(0, 5)
+    .map(d => `<span class="iq-chip">${escHtml(d)}</span>`)
+    .join("");
+
+  // Presence
+  const presence = item.presence || raw.latam_presence || "";
+
+  // Score badge (when from semantic search)
+  const scoreBadge = item.score != null
+    ? `<span class="iq-result-score" style="float:right">${item.score.toFixed ? item.score.toFixed(3) : item.score}</span>`
+    : "";
+
+  detailPanel.innerHTML = `
+    <div class="iq-detail-card">
+      <div class="iq-detail-head">
+        <div class="iq-detail-type-badge">${typeLabels[item.type] || item.type}${scoreBadge}</div>
+        <div class="iq-detail-name">${escHtml(item.name)}</div>
+        <div class="iq-detail-meta-row">
+          <span class="iq-detail-meta-item"><strong>País</strong> ${escHtml(item.country || "—")}</span>
+          ${presence ? `<span class="iq-detail-meta-item"><strong>Presencia</strong> ${escHtml(presence)}</span>` : ""}
+          <span class="iq-detail-meta-item"><strong>Web</strong> ${websiteLink}</span>
+        </div>
+      </div>
+      <div class="iq-detail-body">
+        ${bioThemes.length ? `<div class="iq-result-chips" style="margin-bottom:10px">${themePills}</div>` : ""}
+        ${descEs && descEs.length > 60 ? `
+          <div class="iq-detail-section-title" style="margin-bottom:6px">Descripción</div>
+          <div class="iq-detail-summary" style="line-height:1.55">${escHtml(descEs)}</div>` : ""}
+        ${descEn && descEn.length > 60 ? `
+          <div class="iq-detail-section-title" style="margin-top:12px;margin-bottom:6px">Description (EN)</div>
+          <div class="iq-detail-summary" style="color:var(--muted);font-size:.78rem;line-height:1.5">${escHtml(descEn.slice(0, 500))}${descEn.length > 500 ? "…" : ""}</div>` : ""}
+        ${demandPills ? `<div class="iq-result-chips" style="margin-top:10px">${demandPills}</div>` : ""}
+        <div style="margin-top:16px;font-size:.74rem;color:var(--muted)">
+          Para ver startups conectadas a este actor, buscá su nombre en el
+          <a href="./ecosystem-graph.html">Ecosystem Graph</a>.
+        </div>
+      </div>
+    </div>`;
+}
+
+// ── Utils ─────────────────────────────────────────────────────────────────
+function escHtml(str) {
+  return String(str).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+}
+
+// ── INTRO / PRESENTAR MODE ────────────────────────────────────────────────
+const introPanel      = document.getElementById("introPanel");
+const introPicker     = document.getElementById("introPicker");
+const briefResult     = document.getElementById("briefResult");
+const generateBriefBtn= document.getElementById("generateBriefBtn");
+const introHint       = document.getElementById("introHint");
+const slotA           = document.getElementById("slotA");
+const slotB           = document.getElementById("slotB");
+
+let introEntityA = null;
+let introEntityB = null;
+let introFocused = "a"; // "a" | "b"
+
+function showIntroMode() {
+  welcomePanel.style.display  = "none";
+  detailPanel.style.display   = "none";
+  introPanel.style.display    = "block";
+  introHint.style.display     = "block";
+  updateSlotFocus();
+  updateGenerateBtn();
+  // Show all entities in list for picking
+  const pool = [
+    ...IQ_STARTUPS.slice(0,60).map(s => ({
+      id: s.id, name: s.name, type: "startup",
+      country: s.country, focus: s.theme, detail: s.one_liner, _mode: "intro"
+    })),
+    ...IQ_INVESTORS.slice(0,30).map(inv => ({
+      id: inv.id, name: inv.name, type: "investor",
+      country: inv.country, focus: inv.themes.slice(0,2).join(", "),
+      detail: `${inv.portfolio_size} portfolio · ${inv.itype}`, _mode: "intro"
+    })),
+    ...IQ_ALL_ENTITIES.filter(e => ["organization","eso","corporate"].includes(e.type)).slice(0,20).map(e => ({
+      ...e, _mode: "intro"
+    }))
+  ];
+  renderResults(pool);
+}
+
+function updateSlotFocus() {
+  slotA.classList.toggle("focused", introFocused === "a");
+  slotB.classList.toggle("focused", introFocused === "b");
+}
+
+function updateGenerateBtn() {
+  generateBriefBtn.disabled = !(introEntityA && introEntityB);
+}
+
+function setIntroEntity(item) {
+  if (introFocused === "a") {
+    introEntityA = item;
+    renderSlot("a", item);
+    introFocused = introEntityB ? "a" : "b"; // move focus to B if empty
+  } else {
+    introEntityB = item;
+    renderSlot("b", item);
+    introFocused = introEntityA ? "b" : "a";
+  }
+  updateSlotFocus();
+  updateGenerateBtn();
+}
+
+function renderSlot(slot, item) {
+  const typeMeta = {
+    startup: item.focus || "startup",
+    investor: `${item.detail || "inversor"}`,
+    organization: "Gremial",
+    eso: "ESO",
+    corporate: "Corporate",
+  };
+  const prefix = slot === "a" ? "A" : "B";
+  document.getElementById(`slot${prefix}Empty`).style.display  = "none";
+  document.getElementById(`slot${prefix}Name`).style.display   = "block";
+  document.getElementById(`slot${prefix}Meta`).style.display   = "block";
+  document.getElementById(`slot${prefix}Name`).innerHTML =
+    escHtml(item.name) +
+    `<span class="iq-intro-slot-clear" data-clear="${slot}" title="Quitar">✕</span>`;
+  document.getElementById(`slot${prefix}Meta`).textContent =
+    `${item.country || ""} · ${typeMeta[item.type] || item.type}`;
+  document.getElementById(`slot${prefix}`).classList.add("filled");
+}
+
+function clearSlot(slot) {
+  const prefix = slot === "a" ? "A" : "B";
+  document.getElementById(`slot${prefix}Empty`).style.display  = "";
+  document.getElementById(`slot${prefix}Name`).style.display   = "none";
+  document.getElementById(`slot${prefix}Meta`).style.display   = "none";
+  document.getElementById(`slot${prefix}`).classList.remove("filled");
+  if (slot === "a") introEntityA = null;
+  else              introEntityB = null;
+  introFocused = slot;
+  updateSlotFocus();
+  updateGenerateBtn();
+  briefResult.innerHTML = "";
+}
+
+// Slot click: change focus
+slotA.addEventListener("click", e => {
+  if (e.target.dataset.clear) { clearSlot("a"); return; }
+  introFocused = "a"; updateSlotFocus();
+});
+slotB.addEventListener("click", e => {
+  if (e.target.dataset.clear) { clearSlot("b"); return; }
+  introFocused = "b"; updateSlotFocus();
+});
+
+// Generate brief
+generateBriefBtn.addEventListener("click", () => generateBrief());
+
+document.addEventListener("keydown", e => {
+  if ((e.ctrlKey || e.metaKey) && e.key === "Enter" && currentMode === "intro") {
+    e.preventDefault();
+    if (introEntityA && introEntityB) generateBrief();
+  }
+});
+
+async function generateBrief() {
+  if (!introEntityA || !introEntityB) return;
+  briefResult.innerHTML = '<div class="iq-brief-loading">Generando brief… ⌛</div>';
+  introPicker.scrollIntoView({ behavior: "smooth" });
+
+  if (!apiAvailable) {
+    briefResult.innerHTML = `
+      <div class="iq-brief-server-warn">
+        <strong>⚠ Servidor no disponible</strong><br>
+        Para generar briefs se necesita <code>node pilot/server.js</code> corriendo.<br><br>
+        Desde la terminal del proyecto:<br>
+        <code>node pilot/server.js</code><br><br>
+        O usar el CLI directamente:<br>
+        <code>python pipeline.py intro ${escHtml(introEntityA.id)} ${escHtml(introEntityB.id)}</code>
+      </div>`;
+    return;
+  }
+
+  try {
+    const r = await fetch("/api/intro", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ entity_a: introEntityA.id, entity_b: introEntityB.id }),
+    });
+    if (!r.ok) {
+      const err = await r.json().catch(() => ({}));
+      throw new Error(err.error || `HTTP ${r.status}`);
+    }
+    const brief = await r.json();
+    if (brief.error) throw new Error(brief.error);
+    renderBriefPanel(brief);
+  } catch (err) {
+    briefResult.innerHTML = `<div class="iq-brief-server-warn">
+      <strong>Error generando brief:</strong> ${escHtml(err.message)}<br><br>
+      También podés usar el CLI:<br>
+      <code>python pipeline.py intro ${escHtml(introEntityA.id)} ${escHtml(introEntityB.id)}</code>
+    </div>`;
+  }
+}
+
+function renderBriefPanel(brief) {
+  const scoreNum = typeof brief.synergy_score === "number"
+    ? Math.round(brief.synergy_score * 100) : "—";
+  const scoreClass = scoreNum >= 70 ? "iq-brief-score-high"
+    : scoreNum >= 45 ? "iq-brief-score-mid" : "iq-brief-score-low";
+
+  const pairLabels = {
+    startup_investor: "Startup × Inversor",
+    startup_org:      "Startup × Gremial",
+    startup_eso:      "Startup × ESO",
+    startup_corporate:"Startup × Corporate",
+    investor_org:     "Inversor × Gremial",
+    generic:          "Par de Entidades",
+  };
+  const pairLabel = pairLabels[brief.pair_type] || brief.pair_type;
+
+  const talkingPoints = (brief.talking_points || [])
+    .map(tp => `<li>${escHtml(tp)}</li>`).join("");
+
+  const signals = (brief.context_signals || [])
+    .map(s => `<span class="iq-brief-signal">${escHtml(s)}</span>`).join("");
+
+  const qualityNotes = (brief.data_quality_notes || []).length
+    ? `<ul class="iq-brief-notes">${(brief.data_quality_notes).map(n => `<li>⚠ ${escHtml(n)}</li>`).join("")}</ul>`
+    : "";
+
+  const emailBody  = brief.email_body  || "";
+  const emailSubj  = brief.email_subject || "Presentación BIO LATAM";
+
+  briefResult.innerHTML = `
+    <div class="iq-brief-card">
+      <div class="iq-brief-head">
+        <div class="iq-brief-head-text">
+          <div class="iq-brief-pair-label">${escHtml(pairLabel)}</div>
+          <div class="iq-brief-pair-name">
+            ${escHtml((brief.entity_a || {}).name || "")}
+            <span style="color:var(--muted);font-weight:400"> × </span>
+            ${escHtml((brief.entity_b || {}).name || "")}
+          </div>
+        </div>
+        <div class="iq-brief-score-badge ${scoreClass}">
+          <div class="score-num">${scoreNum}</div>
+          <div class="score-lbl">Synergy</div>
+        </div>
+      </div>
+      <div class="iq-brief-body">
+
+        <div class="iq-section-title">Rationale</div>
+        <div class="iq-brief-rationale">${escHtml(brief.synergy_rationale || "")}</div>
+
+        <div class="iq-section-title">Puntos de conversación</div>
+        <ul class="iq-brief-tp-list">${talkingPoints}</ul>
+
+        <div class="iq-section-title">Próximo paso sugerido</div>
+        <div class="iq-brief-ask">${escHtml(brief.suggested_ask || "")}</div>
+
+        ${signals ? `<div class="iq-section-title">Señales de fit</div>
+        <div class="iq-brief-signals">${signals}</div>` : ""}
+
+        <div class="iq-section-title">Email</div>
+        <div class="iq-brief-email-wrap">
+          <div class="iq-brief-email-head">
+            <div class="iq-brief-email-subject">${escHtml(emailSubj)}</div>
+          </div>
+          <div class="iq-brief-email-body" id="briefEmailBody">${escHtml(emailBody)}</div>
+        </div>
+
+        ${qualityNotes}
+
+        <div class="iq-brief-actions">
+          <button class="iq-btn-copy" id="copyEmailBtn">📋 Copiar email</button>
+          <button class="iq-btn-download" id="downloadBriefBtn">⬇ Descargar .txt</button>
+          <button class="iq-btn-secondary iq-btn" id="newBriefBtn" style="margin-left:auto">Nuevo brief</button>
+        </div>
+        <div id="copyFeedback" style="font-size:.7rem;color:#15803d;min-height:1em;margin-top:4px"></div>
+
+        <div style="font-size:.64rem;color:var(--muted);margin-top:10px">
+          Generado ${brief.generated_at ? brief.generated_at.replace("T"," ") : ""} · template-based, sin LLM
+        </div>
+      </div>
+    </div>`;
+
+  // Wire actions
+  document.getElementById("copyEmailBtn").addEventListener("click", () => {
+    const text = `Asunto: ${emailSubj}\n\n${emailBody}`;
+    navigator.clipboard.writeText(text).then(() => {
+      document.getElementById("copyFeedback").textContent = "✓ Email copiado al portapapeles";
+      setTimeout(() => { const el = document.getElementById("copyFeedback"); if (el) el.textContent = ""; }, 3000);
+    }).catch(() => {
+      // fallback
+      const ta = document.createElement("textarea");
+      ta.value = text; ta.style.position = "fixed"; ta.style.opacity = "0";
+      document.body.appendChild(ta); ta.select();
+      document.execCommand("copy"); document.body.removeChild(ta);
+      document.getElementById("copyFeedback").textContent = "✓ Copiado";
+    });
+  });
+
+  document.getElementById("downloadBriefBtn").addEventListener("click", () => {
+    const aName = (brief.entity_a || {}).name || "A";
+    const bName = (brief.entity_b || {}).name || "B";
+    const content = [
+      `BRIEF DE INTRODUCCION: ${aName} × ${bName}`,
+      `Tipo: ${brief.pair_type} | Synergy: ${brief.synergy_score}`,
+      `Generado: ${brief.generated_at || ""}`,
+      "",
+      "=== RATIONALE ===",
+      brief.synergy_rationale || "",
+      "",
+      "=== PUNTOS DE CONVERSACION ===",
+      ...(brief.talking_points || []).map((tp, i) => `${i+1}. ${tp}`),
+      "",
+      "=== PROXIMO PASO ===",
+      brief.suggested_ask || "",
+      "",
+      "=== EMAIL ===",
+      `Asunto: ${emailSubj}`,
+      "",
+      emailBody,
+    ].join("\n");
+    const blob = new Blob([content], { type: "text/plain;charset=utf-8" });
+    const url  = URL.createObjectURL(blob);
+    const a    = document.createElement("a");
+    a.href = url;
+    a.download = `brief_${(aName).replace(/[^a-z0-9]/gi,"_").toLowerCase()}_${(bName).replace(/[^a-z0-9]/gi,"_").toLowerCase()}.txt`;
+    document.body.appendChild(a); a.click();
+    document.body.removeChild(a); URL.revokeObjectURL(url);
+  });
+
+  document.getElementById("newBriefBtn").addEventListener("click", () => {
+    briefResult.innerHTML = "";
+  });
+
+  briefResult.scrollIntoView({ behavior: "smooth" });
+
+  // Persist brief and show recent briefs section
+  if (typeof saveBrief === "function") {
+    saveBrief(brief);
+    if (typeof _renderSavedBriefsSection === "function") _renderSavedBriefsSection();
+  }
+}
+
+// ── ROLES & PERSISTENCE ───────────────────────────────────────────────────
+
+const ROLES = [
+  {
+    id: "cab_staff",
+    name: "CAB Staff",
+    desc: "Vista completa: todos los tabs y herramientas",
+    defaultMode: "search",
+    tabs: ["search","latent","funded","intro","health"],
+  },
+  {
+    id: "investor",
+    name: "Inversor",
+    desc: "Foco en potencial latente y gaps de portfolio",
+    defaultMode: "latent",
+    tabs: ["search","latent","funded"],
+  },
+  {
+    id: "corporate",
+    name: "Corporate",
+    desc: "Buscar startups y generar presentaciones",
+    defaultMode: "search",
+    tabs: ["search","intro"],
+  },
+  {
+    id: "policy_maker",
+    name: "Policy Maker",
+    desc: "Vista de salud y cobertura del ecosistema",
+    defaultMode: "health",
+    tabs: ["search","health"],
+  },
+];
+
+function getCurrentRole() {
+  const id = localStorage.getItem("iq_role") || "cab_staff";
+  return ROLES.find(r => r.id === id) || ROLES[0];
+}
+
+function setRole(roleId) {
+  localStorage.setItem("iq_role", roleId);
+  applyRole();
+}
+
+function applyRole() {
+  const role = getCurrentRole();
+  document.getElementById("roleBtnLabel").textContent = role.name;
+
+  // Show/hide tabs based on role
+  document.querySelectorAll(".iq-tab").forEach(tab => {
+    const mode = tab.dataset.mode;
+    tab.style.display = role.tabs.includes(mode) ? "" : "none";
+  });
+
+  // If current mode not in role, switch to default
+  if (!role.tabs.includes(currentMode)) {
+    currentMode = role.defaultMode;
+    document.querySelectorAll(".iq-tab").forEach(t => t.classList.remove("active"));
+    const defaultTab = document.querySelector(`.iq-tab[data-mode="${currentMode}"]`);
+    if (defaultTab) defaultTab.classList.add("active");
+  }
+}
+
+// Role dropdown
+const roleBtn      = document.getElementById("roleBtn");
+const roleDropdown = document.getElementById("roleDropdown");
+
+roleBtn.addEventListener("click", (e) => {
+  e.stopPropagation();
+  const isOpen = roleDropdown.style.display !== "none";
+  if (isOpen) {
+    roleDropdown.style.display = "none";
+  } else {
+    const currentRole = getCurrentRole();
+    roleDropdown.innerHTML = ROLES.map(r => `
+      <div class="iq-role-item${r.id === currentRole.id ? " active" : ""}" data-role="${r.id}">
+        <div class="iq-role-item-name">${escHtml(r.name)}</div>
+        <div class="iq-role-item-desc">${escHtml(r.desc)}</div>
+      </div>`).join("");
+    roleDropdown.style.display = "block";
+  }
+});
+
+roleDropdown.addEventListener("click", e => {
+  const item = e.target.closest(".iq-role-item");
+  if (!item) return;
+  setRole(item.dataset.role);
+  roleDropdown.style.display = "none";
+  triggerSearch();
+});
+
+document.addEventListener("click", () => { roleDropdown.style.display = "none"; });
+
+// ── Query history ─────────────────────────────────────────────────────────
+
+function saveQueryHistory(q) {
+  if (!q || q.length < 3) return;
+  let hist = JSON.parse(localStorage.getItem("iq_history") || "[]");
+  hist = [q, ...hist.filter(h => h !== q)].slice(0, 10);
+  localStorage.setItem("iq_history", JSON.stringify(hist));
+}
+
+function getQueryHistory() {
+  return JSON.parse(localStorage.getItem("iq_history") || "[]");
+}
+
+// saveQueryHistory is called directly in the main triggerSearch (see above)
+
+// ── Saved entities ────────────────────────────────────────────────────────
+
+function getSaved() {
+  return JSON.parse(localStorage.getItem("iq_saved") || "[]");
+}
+
+function isSaved(id) {
+  return getSaved().some(e => e.id === id);
+}
+
+function toggleSaved(entity) {
+  let saved = getSaved();
+  if (saved.some(e => e.id === entity.id)) {
+    saved = saved.filter(e => e.id !== entity.id);
+  } else {
+    saved = [entity, ...saved].slice(0, 20);
+  }
+  localStorage.setItem("iq_saved", JSON.stringify(saved));
+  return !saved.some(e => e.id !== entity.id);
+}
+
+// ── Saved briefs ──────────────────────────────────────────────────────────
+
+function saveBrief(brief) {
+  let briefs = JSON.parse(localStorage.getItem("iq_briefs") || "[]");
+  const entry = {
+    generated_at: brief.generated_at,
+    entity_a_name: (brief.entity_a || {}).name || "",
+    entity_b_name: (brief.entity_b || {}).name || "",
+    entity_a_id:   (brief.entity_a || {}).id || "",
+    entity_b_id:   (brief.entity_b || {}).id || "",
+    email_subject: brief.email_subject || "",
+    synergy_score: brief.synergy_score,
+    _full: JSON.stringify(brief).slice(0, 8000), // keep compressed
+  };
+  briefs = [entry, ...briefs].slice(0, 5);
+  localStorage.setItem("iq_briefs", JSON.stringify(briefs));
+}
+
+function getSavedBriefs() {
+  return JSON.parse(localStorage.getItem("iq_briefs") || "[]");
+}
+
+// saveBrief and _renderSavedBriefsSection are called from inside renderBriefPanel (see below)
+
+function _renderSavedBriefsSection() {
+  const savedBriefs = getSavedBriefs();
+  let existing = document.getElementById("savedBriefsSection");
+  if (!existing) {
+    existing = document.createElement("div");
+    existing.id = "savedBriefsSection";
+    briefResult.parentNode.appendChild(existing);
+  }
+  if (savedBriefs.length === 0) { existing.innerHTML = ""; return; }
+  existing.innerHTML = `
+    <div class="iq-section-title" style="margin-top:20px">Briefs recientes (${savedBriefs.length})</div>
+    ${savedBriefs.map((b, i) => `
+      <div class="iq-result-item" style="border-radius:10px;border:1px solid var(--line);margin-bottom:4px;cursor:pointer" data-brief-idx="${i}">
+        <div class="iq-result-top">
+          <span class="iq-result-name">${escHtml(b.entity_a_name)} × ${escHtml(b.entity_b_name)}</span>
+          <span class="iq-result-score">${Math.round((b.synergy_score||0)*100)}</span>
+        </div>
+        <div class="iq-result-meta">${escHtml(b.email_subject || "")} · ${escHtml(b.generated_at || "")}</div>
+      </div>`).join("")}`;
+
+  existing.querySelectorAll("[data-brief-idx]").forEach(el => {
+    el.addEventListener("click", () => {
+      const idx = +el.dataset.briefIdx;
+      const b = savedBriefs[idx];
+      if (b && b._full) {
+        try {
+          const brief = JSON.parse(b._full);
+          // Restore intro state
+          introEntityA = { id: brief.entity_a.id, name: brief.entity_a.name, type: brief.entity_a.entity_type, country: brief.entity_a.country, focus: brief.entity_a.theme || "", detail: brief.entity_a.one_liner || "" };
+          introEntityB = { id: brief.entity_b.id, name: brief.entity_b.name, type: brief.entity_b.entity_type, country: brief.entity_b.country, focus: brief.entity_b.theme || brief.entity_b.thesis || "", detail: "" };
+          renderSlot("a", introEntityA); renderSlot("b", introEntityB);
+          updateGenerateBtn();
+          _origRenderBrief(brief);
+        } catch(e) { console.error("brief restore failed", e); }
+      }
+    });
+  });
+}
+
+// ── Welcome state improvements ────────────────────────────────────────────
+
+function showWelcome() {
+  welcomePanel.style.display  = "block";
+  detailPanel.style.display   = "none";
+  introPanel.style.display    = "none";
+  healthPanel.style.display   = "none";
+
+  const hist = getQueryHistory();
+  const saved = getSaved();
+
+  // Replace example queries with history pills if available
+  const examplesEl = document.getElementById("exampleQueries");
+  if (hist.length > 0) {
+    examplesEl.innerHTML = `
+      <div style="font-size:.67rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:4px">Búsquedas recientes</div>
+      <div class="iq-history-pills">
+        ${hist.slice(0, 5).map(h => `<div class="iq-history-pill" data-q="${escHtml(h)}">🕐 ${escHtml(h)}</div>`).join("")}
+      </div>`;
+    examplesEl.querySelectorAll(".iq-history-pill").forEach(el => {
+      el.addEventListener("click", () => {
+        searchInput.value = el.dataset.q;
+        triggerSearch(true);
+      });
+    });
+  }
+
+  // Show saved entities if any
+  if (saved.length > 0) {
+    let savedSection = document.getElementById("welcomeSavedSection");
+    if (!savedSection) {
+      savedSection = document.createElement("div");
+      savedSection.id = "welcomeSavedSection";
+      welcomePanel.appendChild(savedSection);
+    }
+    savedSection.innerHTML = `
+      <div class="iq-saved-section">
+        <div class="iq-section-title">Guardados (${saved.length})</div>
+        <div class="iq-portfolio-chips">
+          ${saved.slice(0, 10).map(e => `
+            <span class="iq-portfolio-chip" data-id="${escHtml(e.id)}" data-type="${escHtml(e.type || "startup")}">
+              ⭐ ${escHtml(e.name)}
+            </span>`).join("")}
+        </div>
+      </div>`;
+    savedSection.querySelectorAll(".iq-portfolio-chip[data-id]").forEach(el => {
+      el.addEventListener("click", () => {
+        const id = el.dataset.id;
+        const type = el.dataset.type || "startup";
+        welcomePanel.style.display = "none";
+        detailPanel.style.display = "block";
+        if (type === "investor") renderInvestorDetail(id);
+        else if (type === "startup") renderStartupDetail(id);
+        else renderGenericDetail({ id, name: el.textContent.trim().replace("⭐ ",""), type });
+      });
+    });
+  }
+}
+
+// ── HEALTH / SALUD MODE ───────────────────────────────────────────────────
+const healthPanel  = document.getElementById("healthPanel");
+const healthContent= document.getElementById("healthContent");
+
+function showHealthMode() {
+  welcomePanel.style.display  = "none";
+  detailPanel.style.display   = "none";
+  introPanel.style.display    = "none";
+  healthPanel.style.display   = "block";
+  renderHealth();
+
+  // Sidebar: show high-quality unfunded in list
+  const pool = IQ_STARTUPS
+    .filter(s => !s.funded && s.theme)
+    .sort((a,b) => b.quality - a.quality)
+    .slice(0,30)
+    .map(s => ({
+      id: s.id, name: s.name, type: "startup",
+      country: s.country, focus: s.theme, detail: s.one_liner, _mode: "browse"
+    }));
+  renderResults(pool);
+}
+
+function renderHealth() {
+  if (window._healthDataMissing || typeof IQ_HEALTH_META === "undefined") {
+    healthContent.innerHTML = `
+      <div class="iq-brief-server-warn">
+        <strong>ecosystem-health-data.js no encontrado</strong><br><br>
+        Generalo con:<br>
+        <code>python pipeline.py ecosystem-health-data</code><br><br>
+        Luego recargá la página.
+      </div>`;
+    return;
+  }
+
+  const meta = IQ_HEALTH_META;
+  const themes = meta.themes || [];
+  const countries = meta.countries || ["BR","AR","MX","CL","CO","PE"];
+
+  // ── KPI row ─────────────────────────────────────────────────────────
+  const kpiHtml = `
+    <div class="iq-health-kpi-row">
+      <div class="iq-health-kpi">
+        <div class="iq-health-kpi-num">${meta.total_startups}</div>
+        <div class="iq-health-kpi-lbl">Startups incluidas</div>
+      </div>
+      <div class="iq-health-kpi">
+        <div class="iq-health-kpi-num">${meta.total_funded}</div>
+        <div class="iq-health-kpi-lbl">Con capital</div>
+      </div>
+      <div class="iq-health-kpi">
+        <div class="iq-health-kpi-num">${meta.funded_pct}%</div>
+        <div class="iq-health-kpi-lbl">Tasa de financiamiento</div>
+      </div>
+      <div class="iq-health-kpi">
+        <div class="iq-health-kpi-num">${IQ_ISOLATED ? IQ_ISOLATED.length : "—"}</div>
+        <div class="iq-health-kpi-lbl">Sin capital (calidad ≥ 5)</div>
+      </div>
+    </div>`;
+
+  // ── Heatmap ──────────────────────────────────────────────────────────
+  // color scale: white (0) → dark teal (100%)
+  function cellColor(pct) {
+    if (pct === 0) return "rgba(216,204,192,.2)";
+    const v = Math.min(pct, 100) / 100;
+    const r = Math.round(255 - v * (255 - 11));
+    const g = Math.round(255 - v * (255 - 143));
+    const b = Math.round(255 - v * (255 - 135));
+    return `rgba(${r},${g},${b},${0.15 + v * 0.7})`;
+  }
+  function cellText(pct, total) {
+    if (total === 0) return `<span style="color:var(--muted);font-size:.6rem">—</span>`;
+    return `<span style="font-weight:700">${pct}%</span><br><span style="font-size:.6rem;opacity:.7">${total}</span>`;
+  }
+
+  const heatCells = IQ_WHITESPACE || [];
+  const hmHeader = `<tr>
+    <th class="theme-col">Tema</th>
+    ${countries.map(c => `<th>${c}</th>`).join("")}
+  </tr>`;
+  const hmRows = themes.map(theme => {
+    const cells = countries.map(country => {
+      const cell = heatCells.find(c => c.theme === theme && c.country === country);
+      const pct   = cell ? cell.coverage_pct : 0;
+      const total = cell ? cell.total : 0;
+      const startupIds = cell ? JSON.stringify(cell.startup_ids || []) : "[]";
+      return `<td style="background:${cellColor(pct)}" data-theme="${escHtml(theme)}" data-country="${escHtml(country)}" data-ids='${startupIds}'>${cellText(pct, total)}</td>`;
+    }).join("");
+    return `<tr><td class="theme-cell">${escHtml(theme.length > 30 ? theme.slice(0,28)+"…" : theme)}</td>${cells}</tr>`;
+  }).join("");
+
+  const heatmapHtml = `
+    <div class="iq-section-title">Cobertura de financiamiento: Tema × País (% financiadas)</div>
+    <div class="iq-heatmap-wrap">
+      <table class="iq-heatmap">${hmHeader}${hmRows}</table>
+    </div>
+    <div style="font-size:.65rem;color:var(--muted);margin-bottom:16px">
+      % = startups financiadas / total en esa celda. Color más oscuro = mayor cobertura. Hacé click en una celda para ver las startups.
+    </div>`;
+
+  // ── Theme depth table ────────────────────────────────────────────────
+  const depthRows = (IQ_THEME_DEPTH || []).map(t => `
+    <tr>
+      <td>${escHtml(t.theme)}</td>
+      <td class="num">${t.startup_count}</td>
+      <td class="num">${t.funded_count}</td>
+      <td class="num">${t.funded_pct}%</td>
+      <td class="num">${t.avg_quality}</td>
+      <td>${t.top_investor ? escHtml(t.top_investor) : '<span style="color:var(--muted)">—</span>'}</td>
+      <td>${t.top_startup ? `<span class="iq-portfolio-chip" style="cursor:pointer" data-startup-id="${escHtml(t.top_startup_id)}">${escHtml(t.top_startup)}</span>` : "—"}</td>
+    </tr>`).join("");
+
+  const depthHtml = `
+    <div class="iq-section-title">Profundidad por tema</div>
+    <div style="overflow-x:auto;margin-bottom:20px">
+      <table class="iq-depth-table">
+        <tr>
+          <th>Tema</th><th>Total</th><th>Financiadas</th><th>%</th>
+          <th>Calidad Prom.</th><th>Top Inversor</th><th>Top Startup</th>
+        </tr>
+        ${depthRows}
+      </table>
+    </div>`;
+
+  // ── Isolated high-quality unfunded ──────────────────────────────────
+  const isolatedCards = (IQ_ISOLATED || []).slice(0, 20).map(s => `
+    <div class="iq-isolated-card" data-startup-id="${escHtml(s.id)}">
+      <div class="iq-isolated-card-name">${escHtml(s.name)}</div>
+      <div class="iq-isolated-card-meta">${escHtml(s.country)} · ${escHtml((s.theme || "").slice(0,36))}</div>
+      <div class="iq-isolated-card-quality">Calidad: ${s.quality}/10${s.stage ? " · " + escHtml(s.stage) : ""}</div>
+      ${s.one_liner ? `<div style="font-size:.65rem;color:var(--muted);margin-top:3px">${escHtml(s.one_liner.slice(0,80))}</div>` : ""}
+    </div>`).join("");
+
+  const isolatedHtml = `
+    <div class="iq-section-title">Sin capital prioritario — calidad ≥ 5 · sin inversores registrados (${(IQ_ISOLATED||[]).length} total)</div>
+    <div class="iq-isolated-grid" id="isolatedGrid">${isolatedCards}</div>`;
+
+  // ── Momentum ────────────────────────────────────────────────────────
+  const momentumHtml = IQ_MOMENTUM && IQ_MOMENTUM.length > 0
+    ? `<div class="iq-section-title">Momentum — inversiones por mes y tema</div>
+       <div style="overflow-x:auto;margin-bottom:16px">
+         <table class="iq-depth-table">
+           <tr><th>Mes</th><th>Tema</th><th>Inversiones</th></tr>
+           ${IQ_MOMENTUM.slice(-24).reverse().map(m =>
+             `<tr><td>${escHtml(m.month)}</td><td>${escHtml(m.theme)}</td><td class="num">${m.count}</td></tr>`
+           ).join("")}
+         </table>
+       </div>`
+    : `<div style="font-size:.74rem;color:var(--muted);margin-top:4px;margin-bottom:16px">
+         Datos de momentum pendientes — requiere <code>announced_date</code> en investment_edges.
+       </div>`;
+
+  healthContent.innerHTML = kpiHtml + heatmapHtml + depthHtml + isolatedHtml + momentumHtml
+    + `<div style="font-size:.63rem;color:var(--muted);margin-top:8px">
+         Generado ${meta.generated_at} · <a href="#" id="regenHealthLink">Regenerar</a>:
+         <code>python pipeline.py ecosystem-health-data</code>
+       </div>`;
+
+  // Wire heatmap cell clicks → filter list
+  healthContent.querySelectorAll(".iq-heatmap td[data-ids]").forEach(td => {
+    td.addEventListener("click", () => {
+      try {
+        const ids = JSON.parse(td.dataset.ids || "[]");
+        const theme = td.dataset.theme;
+        const country = td.dataset.country;
+        if (ids.length === 0) return;
+        const pool = ids.map(id => {
+          const st = IQ_STARTUPS.find(s => s.id === id);
+          if (!st) return null;
+          return { id: st.id, name: st.name, type: "startup", country: st.country, focus: st.theme, detail: st.one_liner, _mode: "browse" };
+        }).filter(Boolean);
+        if (pool.length) renderResults(pool);
+      } catch(e) { /* ignore */ }
+    });
+  });
+
+  // Wire isolated card clicks → detail
+  healthContent.querySelectorAll(".iq-isolated-card[data-startup-id]").forEach(el => {
+    el.addEventListener("click", () => {
+      const id = el.dataset.startupId;
+      const st = IQ_STARTUPS.find(s => s.id === id);
+      if (st) {
+        currentMode = "search"; // switch mode so detail shows
+        document.querySelectorAll(".iq-tab").forEach(t => t.classList.remove("active"));
+        document.querySelector('.iq-tab[data-mode="search"]').classList.add("active");
+        healthPanel.style.display = "none";
+        introHint.style.display   = "none";
+        renderStartupDetail(id);
+        detailPanel.style.display = "block";
+      }
+    });
+  });
+
+  // Wire depth table startup chips
+  healthContent.querySelectorAll(".iq-portfolio-chip[data-startup-id]").forEach(el => {
+    el.addEventListener("click", () => {
+      const id = el.dataset.startupId;
+      currentMode = "search";
+      document.querySelectorAll(".iq-tab").forEach(t => t.classList.remove("active"));
+      document.querySelector('.iq-tab[data-mode="search"]').classList.add("active");
+      healthPanel.style.display = "none";
+      introHint.style.display   = "none";
+      renderStartupDetail(id);
+      detailPanel.style.display = "block";
+    });
+  });
+}
+
+// ── FOLLOW-UP SUGGESTIONS (Fase 6) ───────────────────────────────────────
+
+const followupRow = document.getElementById("followupRow");
+
+function showFollowups(items, query) {
+  if (!items || items.length === 0) { followupRow.style.display = "none"; return; }
+
+  const suggestions = [];
+
+  // Analyse result distribution
+  const startups = items.filter(i => i.type === "startup");
+  const themeCounts = {};
+  const countryCounts = {};
+  startups.forEach(s => {
+    if (s.focus) themeCounts[s.focus]  = (themeCounts[s.focus]  || 0) + 1;
+    if (s.country) countryCounts[s.country] = (countryCounts[s.country] || 0) + 1;
+  });
+  const topTheme   = Object.entries(themeCounts).sort((a,b) => b[1]-a[1])[0];
+  const topCountry = Object.entries(countryCounts).sort((a,b) => b[1]-a[1])[0];
+
+  // If multiple themes, suggest filtering to dominant theme
+  if (topTheme && Object.keys(themeCounts).length > 2) {
+    suggestions.push({
+      label: `Solo: ${topTheme[0].split(" ")[0]}… (${topTheme[1]})`,
+      action: () => { searchInput.value = query; activeFilter = "startup"; triggerSearch(true); }
+    });
+  }
+
+  // If unfunded startups in results, suggest "sin capital" view
+  const unfunded = startups.filter(s => {
+    const st = IQ_STARTUPS.find(x => x.id === s.id);
+    return st && !st.funded;
+  });
+  if (unfunded.length >= 2 && currentMode !== "funded") {
+    suggestions.push({
+      label: `${unfunded.length} sin capital`,
+      action: () => {
+        currentMode = "funded";
+        document.querySelectorAll(".iq-tab").forEach(t => t.classList.remove("active"));
+        const t = document.querySelector('.iq-tab[data-mode="funded"]');
+        if (t) t.classList.add("active");
+        showUnfunded();
+      }
+    });
+  }
+
+  // If dominant country, suggest filtering to it
+  if (topCountry && Object.keys(countryCounts).length > 2 && topCountry[1] >= 3) {
+    suggestions.push({
+      label: `Filtrar a ${topCountry[0]} (${topCountry[1]})`,
+      action: () => { searchInput.value = query + " " + topCountry[0]; triggerSearch(true); }
+    });
+  }
+
+  // If a startup is selected, suggest "quién debería conocer a …"
+  if (selectedEntity && selectedEntity.type === "startup") {
+    suggestions.push({
+      label: `Inversores para ${selectedEntity.name.split(" ")[0]}`,
+      action: () => {
+        currentMode = "latent";
+        document.querySelectorAll(".iq-tab").forEach(t => t.classList.remove("active"));
+        const t = document.querySelector('.iq-tab[data-mode="latent"]');
+        if (t) t.classList.add("active");
+        showTopLatent();
+      }
+    });
+  }
+
+  // Suggest intro if entity is selected
+  if (selectedEntity && !suggestions.find(s => s.label.startsWith("Presentar"))) {
+    suggestions.push({
+      label: `Presentar ${selectedEntity.name.split(" ")[0]}…`,
+      action: () => {
+        currentMode = "intro";
+        document.querySelectorAll(".iq-tab").forEach(t => t.classList.remove("active"));
+        const t = document.querySelector('.iq-tab[data-mode="intro"]');
+        if (t) t.classList.add("active");
+        introEntityA = selectedEntity;
+        renderSlot("a", selectedEntity);
+        introFocused = "b";
+        updateGenerateBtn();
+        showIntroMode();
+      }
+    });
+  }
+
+  const pills = suggestions.slice(0, 4).map((s, i) =>
+    `<span class="iq-followup-pill" data-idx="${i}">${escHtml(s.label)}</span>`
+  ).join("");
+
+  if (!pills) { followupRow.style.display = "none"; return; }
+  followupRow.innerHTML = pills;
+  followupRow.style.display = "flex";
+
+  followupRow.querySelectorAll(".iq-followup-pill").forEach(el => {
+    el.addEventListener("click", () => suggestions[+el.dataset.idx].action());
+  });
+}
+
+// showFollowups is called from inside renderResults directly (see above)
+
+// ── LANGUAGE BRIDGE (Spanish / Portuguese → English biotech terms) ─────────
+// Users type in Spanish; data is in English. This maps query tokens to the
+// English terms that actually exist in the TF-IDF index.
+const _TERM_BRIDGE = {
+  // Agro inputs & crops
+  microbioma:       ["microbiome","microbial"],
+  suelo:            ["soil"],
+  semilla:          ["seed"],
+  semillas:         ["seeds","seed"],
+  cultivo:          ["crop"],
+  cultivos:         ["crops","crop"],
+  bioinsumo:        ["bioinput"],
+  bioinsumos:       ["bioinputs","bioinput"],
+  bioestimulante:   ["biostimulant"],
+  bioestimulantes:  ["biostimulants","biostimulant"],
+  biopesticida:     ["biopesticide"],
+  biopesticidas:    ["biopesticides","biocontrol"],
+  biocontrol:       ["biocontrol","biological"],
+  fertilizante:     ["fertilizer"],
+  fertilizantes:    ["fertilizers","fertilizer"],
+  fungicida:        ["fungicide"],
+  herbicida:        ["herbicide"],
+  insecticida:      ["insecticide"],
+  ganaderia:        ["livestock"],
+  acuicultura:      ["aquaculture"],
+  cosecha:          ["harvest"],
+  siembra:          ["planting","crop"],
+  campo:            ["field","farm"],
+  agro:             ["agri","agriculture"],
+  agricultura:      ["agriculture","agri"],
+  precision:        ["precision"],
+  // Biotech / fermentation
+  biotecnologia:    ["biotech","biotechnology"],
+  fermentacion:     ["fermentation","fermented"],
+  fermentado:       ["fermented","fermentation"],
+  biofabricacion:   ["biomanufacturing","biofabrication"],
+  biomaterial:      ["biomaterial"],
+  biomateriales:    ["biomaterials","biomaterial"],
+  proteina:         ["protein"],
+  proteinas:        ["proteins","protein"],
+  algas:            ["algae","microalgae"],
+  alga:             ["algae"],
+  hongos:           ["fungi","fungal"],
+  bacteria:         ["bacterial"],
+  bacterias:        ["bacteria","bacterial"],
+  enzimas:          ["enzyme","enzymes"],
+  celular:          ["cellular","cell"],
+  celula:           ["cell","cellular"],
+  genomica:         ["genomics","genomic"],
+  // Health
+  salud:            ["health"],
+  diagnostico:      ["diagnostic","diagnostics"],
+  diagnosticos:     ["diagnostics","diagnostic"],
+  terapia:          ["therapy","therapeutic"],
+  terapeutica:      ["therapeutic","therapeutics"],
+  medicamento:      ["drug"],
+  medicamentos:     ["drugs","drug"],
+  vacuna:           ["vaccine"],
+  vacunas:          ["vaccines","vaccine"],
+  cancer:           ["cancer","oncology"],
+  oncologia:        ["oncology","cancer"],
+  infeccion:        ["infection","infectious"],
+  antimicrobiano:   ["antimicrobial"],
+  antibiotico:      ["antibiotic"],
+  antibioticos:     ["antibiotics","antibiotic"],
+  monoclonal:       ["monoclonal","antibody"],
+  monoclonales:     ["monoclonal","antibody","antibodies"],
+  anticuerpo:       ["antibody"],
+  anticuerpos:      ["antibodies","antibody","monoclonal"],
+  inmunoterapia:    ["immunotherapy","immune"],
+  inmunologia:      ["immunology","immune"],
+  biofarmaco:       ["biopharmaceutical","biologic"],
+  biofarmacos:      ["biopharmaceuticals","biologic"],
+  biosimilar:       ["biosimilar"],
+  biosimilares:     ["biosimilars","biosimilar"],
+  celulas:          ["cell","cellular"],
+  tejido:           ["tissue"],
+  genoterapia:      ["gene therapy","genetic"],
+  crispr:           ["crispr","gene"],
+  microbiota:       ["microbiome","microbial","gut"],
+  intestinal:       ["gut","intestinal","microbiome"],
+  neurologico:      ["neurological","neuro"],
+  cardiaco:         ["cardiac","cardiovascular","heart"],
+  diabetes:         ["diabetes","metabolic"],
+  obesidad:         ["obesity","metabolic"],
+  inflamacion:      ["inflammation","inflammatory"],
+  dolor:            ["pain"],
+  piel:             ["skin","dermatology"],
+  oftalmologia:     ["ophthalmology","eye"],
+  pediatrico:       ["pediatric","children"],
+  // Environment / circular
+  ambiental:        ["environmental","ecosystem"],
+  clima:            ["climate"],
+  carbono:          ["carbon"],
+  reciclaje:        ["recycling","circular"],
+  agua:             ["water"],
+  biodiversidad:    ["biodiversity"],
+  ecosistema:       ["ecosystem"],
+  regenerativo:     ["regenerative"],
+  residuos:         ["waste"],
+  contaminacion:    ["contamination","pollution"],
+  // Food
+  alimento:         ["food"],
+  alimentos:        ["food","nutrition"],
+  alimentacion:     ["food","nutrition"],
+  ingrediente:      ["ingredient"],
+  ingredientes:     ["ingredients","ingredient"],
+  // Finance / stages
+  inversor:         ["investor","fund"],
+  inversores:       ["investors","fund","venture"],
+  fondo:            ["fund"],
+  fondos:           ["funds","fund"],
+  aceleradora:      ["accelerator"],
+  incubadora:       ["incubator"],
+  // Countries (map to codes used in data)
+  brasil:           ["br"],
+  argentina:        ["ar"],
+  mexico:           ["mx"],
+  colombia:         ["co"],
+  chile:            ["cl"],
+  peru:             ["pe"],
+  latinoamerica:    ["latam"],
+  // Theme shorthands
+  agtech:           ["farm","agriculture","agri"],
+  foodtech:         ["food","nutrition"],
+  cleantech:        ["environmental","ecosystem","carbon"],
+  biotech:          ["biotech","biotechnology"],
+};
+
+// ── LOCAL TF-IDF INDEX ────────────────────────────────────────────────────
+// Normaliser: lowercase, strip diacritics (NFD + remove combining marks), keep a-z0-9
+const _norm = t => t.toLowerCase().replace(/[áàäâãéèëêíìïîóòöôõúùüûýÿñçß]/g,m=>({á:"a",à:"a",ä:"a",â:"a",ã:"a",é:"e",è:"e",ë:"e",ê:"e",í:"i",ì:"i",ï:"i",î:"i",ó:"o",ò:"o",ö:"o",ô:"o",õ:"o",ú:"u",ù:"u",ü:"u",û:"u",ý:"y",ÿ:"y",ñ:"n",ç:"c",ß:"ss"}[m]||m)).replace(/[^a-z0-9\s]/g," ");
+
+(function buildTfIdf() {
+  const tokenFreq = {};
+  const docTokens = IQ_STARTUPS.map(st => {
+    // Include summary for richer matching
+    const text = _norm(`${st.name} ${st.theme} ${st.one_liner} ${st.tech} ${st.summary||""}`);
+    const tokens = text.split(/\s+/).filter(t => t.length >= 3);
+    tokens.forEach(t => { tokenFreq[t] = (tokenFreq[t] || 0) + 1; });
+    return tokens;
+  });
+  const N = IQ_STARTUPS.length;
+  IQ_STARTUPS.forEach((st, i) => {
+    const tf = {};
+    docTokens[i].forEach(t => { tf[t] = (tf[t] || 0) + 1; });
+    st._tfidf = tf;
+  });
+  window._tokenDf = tokenFreq;
+  window._tfidfN  = N;
+})();
+
+function tfidfScore(startup, queryTokens) {
+  if (!startup._tfidf || !window._tokenDf) return 0;
+  const N = window._tfidfN;
+  let score = 0;
+  queryTokens.forEach(qt => {
+    if (qt.length < 3) return;
+    const tf = startup._tfidf[qt] || 0;
+    if (tf === 0) return;
+    const df = window._tokenDf[qt] || 1;
+    score += tf * Math.log(N / df);
+  });
+  return score;
+}
+
+// ── Initial render ────────────────────────────────────────────────────────
+applyRole();
+showWelcome();
+showDefaultBrowse();
+</script>
+</body>
+</html>

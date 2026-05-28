@@ -24,9 +24,17 @@ Usage:
 from __future__ import annotations
 
 import json
+import math
+import random
 import sqlite3
 from datetime import datetime, timezone
 from pathlib import Path
+
+try:
+    import networkx as nx
+    _HAS_NX = True
+except ImportError:
+    _HAS_NX = False
 
 ROOT = Path(__file__).resolve().parent.parent
 DB_PATH = ROOT / "db" / "bio_latam.db"
@@ -51,6 +59,134 @@ THEME_COLORS = {
     "Food Systems":                     "#5FA05E",
 }
 DEFAULT_STARTUP_COLOR = "#A0A0A0"
+
+# ── Angular sectors per bio-theme (for startup initial placement) ────────────
+_THEME_ANGLES: dict[str, float] = {
+    "bioinputs":          0.0,
+    "crop resilience":    0.0,
+    "farm intelligence":  math.pi * 0.28,
+    "precision":          math.pi * 0.28,
+    "nature":             math.pi * 0.56,
+    "ecosystem":          math.pi * 0.56,
+    "food systems":       math.pi * 0.85,
+    "alt proteins":       math.pi * 0.85,
+    "biomanufacturing":   math.pi * 1.14,
+    "fermentation":       math.pi * 1.14,
+    "biomaterials":       math.pi * 1.42,
+    "circular":           math.pi * 1.42,
+    "diagnostics":        math.pi * 1.71,
+    "health access":      math.pi * 1.71,
+    "therapeutics":       math.pi * 1.98,
+    "regenerative":       math.pi * 1.98,
+}
+
+
+def _theme_angle(theme: str) -> float:
+    t = theme.lower()
+    best = None
+    for keyword, angle in _THEME_ANGLES.items():
+        if keyword in t:
+            best = angle
+            break
+    if best is None:
+        # Deterministic fallback using hash of theme name
+        best = (hash(theme) % 628) / 100.0
+    return best
+
+
+def _compute_layout(nodes: list[dict], edges: list[dict]) -> None:
+    """
+    Pre-compute stable x,y positions offline using NetworkX Fruchterman-Reingold.
+
+    Strategy:
+      1. Eco nodes (org/eso/corporate) fixed on inner ring r=0.22
+      2. Funds/allocators initial middle ring r=0.50, sorted by name
+      3. Startups outer ring r=0.80, sorted by theme sector
+      4. FR layout 200 iters, eco nodes pinned
+      5. Post-normalize to [-0.88, 0.88] and store as px, py
+
+    The browser then scales px/py by min(W,H)*0.45 centered on (W/2,H/2).
+    """
+    if not _HAS_NX:
+        print("  [layout] networkx not available — skipping pre-computation")
+        return
+
+    rng = random.Random(42)
+
+    eco_layers = {"organization", "eso", "corporate"}
+    eco_nodes    = [n for n in nodes if n["layer"] in eco_layers]
+    fund_nodes   = [n for n in nodes if n["layer"] in ("fund", "allocator")]
+    startup_nodes = [n for n in nodes if n["layer"] == "startup"]
+
+    init_pos: dict[str, tuple[float, float]] = {}
+    fixed_ids: list[str] = []
+
+    # ── Eco nodes: fixed inner ring ───────────────────────────────────────────
+    n_eco = max(1, len(eco_nodes))
+    for i, n in enumerate(eco_nodes):
+        angle = 2 * math.pi * i / n_eco - math.pi / 2
+        init_pos[n["id"]] = (math.cos(angle) * 0.22, math.sin(angle) * 0.22)
+        fixed_ids.append(n["id"])
+
+    # ── Fund/allocator nodes: middle ring sorted by name ──────────────────────
+    fund_nodes_sorted = sorted(fund_nodes, key=lambda n: n.get("label", ""))
+    n_fund = max(1, len(fund_nodes_sorted))
+    for i, n in enumerate(fund_nodes_sorted):
+        angle = 2 * math.pi * i / n_fund - math.pi / 2
+        r = 0.52 + rng.gauss(0, 0.035)
+        init_pos[n["id"]] = (math.cos(angle) * r, math.sin(angle) * r)
+
+    # ── Startups: outer ring in theme sectors, with radial jitter ────────────
+    # Sort by theme angle so same-theme nodes start adjacent
+    startup_nodes_sorted = sorted(startup_nodes, key=lambda n: _theme_angle(n.get("theme", "")))
+    n_start = max(1, len(startup_nodes_sorted))
+    for i, n in enumerate(startup_nodes_sorted):
+        base = _theme_angle(n.get("theme", ""))
+        # Slight sequential spreading within sector to reduce initial overlap
+        sector_offset = (i / n_start) * 2 * math.pi * 0.04
+        angle = base + sector_offset + rng.gauss(0, 0.14)
+        r = 0.80 + rng.gauss(0, 0.07)
+        init_pos[n["id"]] = (math.cos(angle) * r, math.sin(angle) * r)
+
+    # ── Build graph ───────────────────────────────────────────────────────────
+    G = nx.Graph()
+    G.add_nodes_from(init_pos.keys())
+    for e in edges:
+        if e["source"] in init_pos and e["target"] in init_pos:
+            G.add_edge(e["source"], e["target"])
+
+    print(f"  [layout] FR layout: {G.number_of_nodes()} nodes, "
+          f"{G.number_of_edges()} edges, {len(fixed_ids)} fixed eco nodes …")
+
+    # ── FR layout: eco nodes pinned ───────────────────────────────────────────
+    k_opt = 2.0 / math.sqrt(max(1, G.number_of_nodes()))
+    pos = nx.spring_layout(
+        G,
+        pos=init_pos,
+        fixed=fixed_ids if fixed_ids else None,
+        k=k_opt,
+        iterations=200,
+        seed=42,
+        weight=None,   # all edges equal
+    )
+
+    # ── Normalize to [-0.88, 0.88] ────────────────────────────────────────────
+    xs = [p[0] for p in pos.values()]
+    ys = [p[1] for p in pos.values()]
+    min_x, max_x = min(xs), max(xs)
+    min_y, max_y = min(ys), max(ys)
+    span = max(max_x - min_x, max_y - min_y, 0.01)
+    cx_norm = (min_x + max_x) / 2
+    cy_norm = (min_y + max_y) / 2
+    scale_n = 1.76 / span  # maps span → 1.76 (≈ [-0.88, 0.88])
+
+    node_map = {n["id"]: n for n in nodes}
+    for nid, (x, y) in pos.items():
+        if nid in node_map:
+            node_map[nid]["px"] = round((x - cx_norm) * scale_n, 4)
+            node_map[nid]["py"] = round((y - cy_norm) * scale_n, 4)
+
+    print(f"  [layout] Done. px/py embedded in all {len(pos)} nodes.")
 
 
 def _clean(v) -> str:
@@ -384,6 +520,9 @@ def run(db_path: Path = DB_PATH, out_path: Path = OUT_PATH) -> dict:
         "byEdgeType": by_edge,
         "isolatedEcosystemNodes": isolated_count,
     }
+
+    # ── 11b. Pre-compute stable layout (Python-side FR) ─────────────────────
+    _compute_layout(nodes, edges)
 
     # ── 12. Write JS ─────────────────────────────────────────────────────────
     nodes_json = json.dumps(nodes, ensure_ascii=False, separators=(",", ":"))

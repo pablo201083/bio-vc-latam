@@ -31,6 +31,9 @@ python pipeline.py validate                   # validaciones de integridad
 python pipeline.py graph --refresh            # PageRank/communities/bridges
 python pipeline.py ingest-outcomes            # leer staging/outcomes_incoming.csv
 python pipeline.py calibrate-matchmaker       # precision por bucket
+python pipeline.py intelligence-data          # genera pilot/intelligence-data.js (vectores + potencial latente)
+python pipeline.py query "texto libre"        # búsqueda semántica de startups (requiere venv)
+python pipeline.py latent <entity_id>         # potencial latente para inversor o startup
 datasette serve db/bio_latam.db --metadata datasette/metadata.json --port 8001
 node pilot/server.js                          # dashboards custom en puerto 4173
 ```

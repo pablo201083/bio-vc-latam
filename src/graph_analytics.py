@@ -84,8 +84,47 @@ def build_capital_graph(conn: sqlite3.Connection) -> nx.DiGraph:
             weight=float(conf) if conf is not None else 0.5,
             stage=stage or "",
             date=date or "",
+            edge_type="investment",
         )
         edge_count += 1
+
+    # Incluir support_edges (membresías org, cohortes, aceleradoras)
+    for row in conn.execute("""
+        SELECT source_entity_id, target_entity_id, confidence_score, support_type
+        FROM support_edges
+    """):
+        src, tgt, conf, stype = row
+        if src not in G.nodes or tgt not in G.nodes:
+            continue
+        # Solo agregar si no existe ya un edge entre estos nodos
+        if not G.has_edge(src, tgt):
+            G.add_edge(
+                src, tgt,
+                weight=float(conf) if conf is not None else 0.5,
+                stage="",
+                date="",
+                edge_type=stype or "support",
+            )
+            edge_count += 1
+
+    # Incluir validation_edges (technology_partnership, customer_pilot, etc.)
+    for row in conn.execute("""
+        SELECT startup_id, counterparty_entity_id, confidence_score, validation_type, started_at
+        FROM validation_edges
+        WHERE status IN ('confirmed', 'active') OR status IS NULL
+    """):
+        st, counterparty, conf, vtype, date = row
+        if st not in G.nodes or counterparty not in G.nodes:
+            continue
+        if not G.has_edge(st, counterparty):
+            G.add_edge(
+                st, counterparty,
+                weight=float(conf) if conf is not None else 0.5,
+                stage="",
+                date=date or "",
+                edge_type=vtype or "validation",
+            )
+            edge_count += 1
 
     print(f"  Grafo construido: {G.number_of_nodes()} nodos, {edge_count} edges")
     return G
