@@ -1,5 +1,5 @@
 window.STARTUP_THEMES_DATA = {
-  "computed_at": "2026-05-27T23:30:15",
+  "computed_at": "2026-05-27T23:39:16",
   "model": "intfloat/multilingual-e5-small",
   "stats": {
     "total_startups": 487,
@@ -93,7 +93,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "computational biology and scientific software",
       "emergent_theme": "computational biology and life-science software",
       "summary": "ArgenTAG is a life-science tools company building high-resolution single-cell long-read sequencing solutions. Its Single-Cell RNA Library Kit uses portable microfluidic cell partitioning, magnetic bead capture and smart barcoding so individual-cell transcriptomes can be sequenced on long-read platforms such as Oxford Nanopore and PacBio. It belongs inside BIO VC LATAM as genomics infrastructure for biomedical research, diagnostics, disease biology and cell-level discovery.",
-      "one_liner": "Single-cell long-read sequencing kit and workflow.",
+      "one_liner": "Builds single-cell long-read RNA sequencing solutions using portable microfluidic partitioning, magnetic bead capture, and smart barcoding compatible with Oxford Nanopore and PacBio platforms for high-resolution cell-level transcriptomics.",
       "cluster_id": 0,
       "cluster_label": "Diagnostics & Health Access · Diagnostics",
       "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
@@ -170,7 +170,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "diagnostics and medtech",
       "emergent_theme": "genomic diagnostics and precision health",
       "summary": "Startup based regionally in Argentina/Mexico/Brazil that converts genomic data into therapeutic decisions and personalized treatments. Enter genomic diagnostics and precision health.",
-      "one_liner": "Genomic precision-treatment platform.",
+      "one_liner": "Converts genomic data into therapeutic decisions and personalized treatment recommendations through precision genomic diagnostics. Operates across Argentina, Mexico, and Brazil.",
       "cluster_id": 0,
       "cluster_label": "Diagnostics & Health Access — Diagnostics",
       "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
@@ -229,6 +229,70 @@ window.STARTUP_THEMES_DATA = {
       "investor_ids": [
         "endurance_28",
         "zentynel"
+      ]
+    },
+    {
+      "id": "bioseek",
+      "name": "Bioseek",
+      "country": "Brazil",
+      "countries": [
+        "Brazil"
+      ],
+      "website": "https://www.f6s.com/company/bioseek",
+      "macro_theme": "computational biology and scientific software",
+      "emergent_theme": "computational biology and life-science software",
+      "summary": "Semantic search and analytics platform for life sciences research. It enters the thesis as scientific software directly coupled to biological R&D. Semantic search engine for life sciences. Technology: graph database; life-science analytics. Sector: biotech, pharma and research labs.",
+      "one_liner": "Semantic search engine for life sciences.",
+      "cluster_id": 0,
+      "cluster_label": "Diagnostics & Health Access — Diagnostics",
+      "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
+      "cluster_confidence": 0.349,
+      "x": -11.336,
+      "y": -9.849,
+      "is_outlier": false,
+      "tech_codes": [
+        "ai_ml",
+        "therapeutics"
+      ],
+      "industry_codes": [
+        "human_health",
+        "therapeutics_industry"
+      ],
+      "quality_score": 8.0,
+      "quality_band": "medium",
+      "community_id": 2,
+      "pagerank": 0.0009989245304698124,
+      "valuation_tier": 1.0,
+      "n_investors_mapped": 1,
+      "bio_theme": "Diagnostics & Health Access",
+      "bio_theme_secondary": "",
+      "is_bio_universe": 1,
+      "sub_cluster_label": "",
+      "funding_stage": null,
+      "funding_bucket_usd": null,
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy",
+      "sx": -11.501,
+      "sy": -9.909,
+      "bio_lens": [
+        "human-health-bio"
+      ],
+      "domain_tags": [
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "therapeutics"
+      ],
+      "scale_tags": [],
+      "market_label": "life-science semantic search and research intelligence",
+      "self_cats": [
+        "Biotech"
+      ],
+      "investor_ids": [
+        "CITES"
       ]
     },
     {
@@ -320,7 +384,7 @@ window.STARTUP_THEMES_DATA = {
       "pagerank": 0.000976820009965881,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
-      "bio_theme": "Therapeutics",
+      "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "",
       "is_bio_universe": 1,
       "sub_cluster_label": "",
@@ -1721,64 +1785,77 @@ window.STARTUP_THEMES_DATA = {
       ]
     },
     {
-      "id": "gentec",
-      "name": "Gentec",
-      "country": "Mexico",
+      "id": "genotyping",
+      "name": "Genotyping",
+      "country": "Brazil",
       "countries": [
-        "Mexico"
+        "Brazil"
       ],
-      "website": "https://www.gentec.com.mx/",
-      "macro_theme": "biomanufacturing and bioindustrial platforms",
-      "emergent_theme": "diagnostics & health access — laboratory · laboratory · diagnosis · portable · diagnostics",
-      "summary": "Operates Mexico's first private laboratory for CRISPR-Cas9 gene editing. Provides gene editing services and develops genetically engineered organisms for research and biotechnology applications.",
-      "one_liner": "Operates Mexico's first private laboratory for CRISPR-Cas9 gene editing.",
+      "website": "https://genotyping.com.br/testes-geneticos-estao-mais-acessiveis-no-brasil/",
+      "macro_theme": "diagnostics and medtech",
+      "emergent_theme": "genomics and molecular diagnostics infrastructure",
+      "summary": "Genotyping is a Brazilian genetic diagnostics and molecular-analysis company connected to BPI group capabilities across health, agriculture, sugarcane and food molecular analysis. Public company material describes high-level genetic diagnostics, next-generation sequencing and molecular biology services. It belongs inside BIO VC LATAM as genomics and molecular-diagnostics infrastructure, with a cross-domain footprint spanning human health and ag/food biology.",
+      "one_liner": "Genetic diagnostics and molecular analysis platform.",
       "cluster_id": 0,
       "cluster_label": "Diagnostics & Health Access — Diagnostics",
       "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
-      "cluster_confidence": 0.349,
-      "x": -9.783,
-      "y": -4.397,
-      "is_outlier": true,
+      "cluster_confidence": 0.356,
+      "x": -3.375,
+      "y": -8.354,
+      "is_outlier": false,
       "tech_codes": [
-        "biomanufacturing",
-        "fermentation",
-        "synbio"
+        "bioinformatics",
+        "ai_ml",
+        "diagnostics"
       ],
-      "industry_codes": [],
-      "quality_score": 0.0,
-      "quality_band": "low",
-      "community_id": -1,
-      "pagerank": 0.0009548076656120609,
+      "industry_codes": [
+        "row_crops",
+        "diagnostics_industry",
+        "human_health"
+      ],
+      "quality_score": 8.0,
+      "quality_band": "medium",
+      "community_id": 21,
+      "pagerank": 0.0009798973546472373,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
-      "bio_theme": "Biomanufacturing & Fermentation Economy",
+      "n_investors_mapped": 1,
+      "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostic-Therapeutic Convergence",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 0,
-      "valuation_estimate_usd": 0.8,
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -10.618,
-      "sy": -7.204,
+      "sx": -2.366,
+      "sy": -7.442,
       "bio_lens": [
-        "biobased",
-        "bio-enabled-industrial-transition"
+        "biocentric",
+        "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "agri-food",
+        "diagnostics-medtech",
+        "human-health"
+      ],
       "tech_tags": [
-        "biomanufacturing",
-        "fermentation",
-        "synthetic-biology"
+        "ai-data",
+        "diagnostics"
       ],
-      "scale_tags": [],
-      "market_label": "",
+      "scale_tags": [
+        "agroecosystem-scale",
+        "human-scale",
+        "industrial-scale",
+        "molecular-scale"
+      ],
+      "market_label": "genetic diagnostics and molecular analysis platform",
       "self_cats": [
-        "SynBio",
-        "Biotech"
+        "Diagnostics"
       ],
-      "investor_ids": []
+      "investor_ids": [
+        "sp_ventures"
+      ]
     },
     {
       "id": "gisens_biotech",
@@ -3249,6 +3326,79 @@ window.STARTUP_THEMES_DATA = {
       "investor_ids": []
     },
     {
+      "id": "nexxto",
+      "name": "Nexxto",
+      "country": "Brazil",
+      "countries": [
+        "Brazil"
+      ],
+      "website": "https://nexxto.com/",
+      "macro_theme": "climate, energy and resource systems",
+      "emergent_theme": "cold-chain and food-quality monitoring",
+      "summary": "Brazilian IoT monitoring company providing real-time temperature and humidity control for health products, medicines, blood derivatives, laboratory materials and clinical environments. Its sensors, alerts and audit reports reduce product loss and protect regulated cold-chain quality. It belongs inside BIO VC LATAM as health and biological-product infrastructure, but remains an edge case because the core technology is IoT rather than biology.",
+      "one_liner": "Provides automated IoT temperature and asset monitoring systems (Nexxto Sense, Move, Trace, Ativis) for vaccines, oncological drugs, blood components, and clinical trial materials, serving major hospital networks across Brazil from São Paulo.",
+      "cluster_id": 0,
+      "cluster_label": "Diagnostics & Health Access — Diagnostics",
+      "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
+      "cluster_confidence": 0.356,
+      "x": 0.645,
+      "y": 10.237,
+      "is_outlier": false,
+      "tech_codes": [
+        "iot"
+      ],
+      "industry_codes": [
+        "food_ingredients",
+        "specialty_crops",
+        "human_health",
+        "row_crops",
+        "carbon"
+      ],
+      "quality_score": 8.0,
+      "quality_band": "medium",
+      "community_id": 21,
+      "pagerank": 0.0009798973546472373,
+      "valuation_tier": null,
+      "n_investors_mapped": 1,
+      "bio_theme": "Diagnostics & Health Access",
+      "bio_theme_secondary": "Food Systems & Alt Proteins",
+      "is_bio_universe": 1,
+      "sub_cluster_label": "",
+      "funding_stage": null,
+      "funding_bucket_usd": null,
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy",
+      "sx": 0.579,
+      "sy": 9.916,
+      "bio_lens": [
+        "human-health-bio",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "climate-resource",
+        "human-health"
+      ],
+      "tech_tags": [
+        "iot"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "industrial-scale",
+        "planetary-scale",
+        "product-scale"
+      ],
+      "market_label": "IoT monitoring for cold-chain and product-quality control",
+      "self_cats": [
+        "Therapeutics",
+        "Hardware / IoT"
+      ],
+      "investor_ids": [
+        "sp_ventures"
+      ]
+    },
+    {
       "id": "novagenic_affinity",
       "name": "Novagenic Affinity",
       "country": "Mexico",
@@ -3669,6 +3819,59 @@ window.STARTUP_THEMES_DATA = {
       "investor_ids": []
     },
     {
+      "id": "pixed",
+      "name": "Pixed",
+      "country": "Peru",
+      "countries": [
+        "Peru"
+      ],
+      "website": "https://pixedcorp.com/",
+      "macro_theme": "diagnostics and medtech",
+      "emergent_theme": "food systems & alt proteins — fish · fish · antibiotics · meat · aquaculture",
+      "summary": "Develops myoelectric, personalized biomechanical devices to provide new tools and opportunities for people with disabilities. Creates adjustable bionic prosthetics improving mobility and quality of life.",
+      "one_liner": "Develops myoelectric, personalized biomechanical devices to provide new tools and opportunities for people with…",
+      "cluster_id": 0,
+      "cluster_label": "Diagnostics & Health Access — Diagnostics",
+      "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
+      "cluster_confidence": 1.0,
+      "x": -4.104,
+      "y": -6.582,
+      "is_outlier": false,
+      "tech_codes": [
+        "diagnostics"
+      ],
+      "industry_codes": [],
+      "quality_score": 0.0,
+      "quality_band": "low",
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
+      "valuation_tier": null,
+      "n_investors_mapped": 0,
+      "bio_theme": "Diagnostics & Health Access",
+      "bio_theme_secondary": "",
+      "is_bio_universe": 1,
+      "sub_cluster_label": "",
+      "funding_stage": "pre-seed",
+      "funding_bucket_usd": 0,
+      "valuation_bucket_usd": 0,
+      "valuation_estimate_usd": 0.8,
+      "valuation_estimate_source": "gridx_valuation",
+      "sx": -3.987,
+      "sy": -3.504,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "diagnostics"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [],
+      "investor_ids": []
+    },
+    {
       "id": "pregen",
       "name": "PreGen",
       "country": "Argentina",
@@ -4054,7 +4257,7 @@ window.STARTUP_THEMES_DATA = {
       "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
-      "bio_theme": "Therapeutics",
+      "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "",
       "is_bio_universe": 1,
       "sub_cluster_label": "",
@@ -4706,62 +4909,6 @@ window.STARTUP_THEMES_DATA = {
       "investor_ids": []
     },
     {
-      "id": "agrosustain-mx",
-      "name": "AgroSustain",
-      "country": "Mexico",
-      "countries": [
-        "Mexico"
-      ],
-      "website": "agrosustain.com.mx",
-      "macro_theme": "precision agriculture and resource intelligence",
-      "emergent_theme": "antifungal biopesticides",
-      "summary": "Mexican biotech developing eco-friendly biopesticides to combat fungal crop infections. Reduces dependency on chemical pesticides for healthier harvests. Based in Guadalajara.",
-      "one_liner": "Swiss agtech developing biofungicides, biostimulants, and edible coatings derived from mold-resistant plant extracts for crop protection and post-harvest shelf-life extension, with R&D and operations in Guadalajara, Mexico.",
-      "cluster_id": 1,
-      "cluster_label": "Food Systems & Alt Proteins — Fish",
-      "cluster_keywords": "fish · aquaculture · antibiotics · meat",
-      "cluster_confidence": 0.348,
-      "x": -6.899,
-      "y": 5.596,
-      "is_outlier": true,
-      "tech_codes": [
-        "ag_inputs",
-        "microbial",
-        "iot"
-      ],
-      "industry_codes": [],
-      "quality_score": 5.0,
-      "quality_band": "medium",
-      "community_id": -1,
-      "pagerank": 0.0009548076656120609,
-      "valuation_tier": null,
-      "n_investors_mapped": 0,
-      "bio_theme": "Bioinputs & Crop Resilience",
-      "bio_theme_secondary": "",
-      "is_bio_universe": 1,
-      "sub_cluster_label": "",
-      "funding_stage": null,
-      "funding_bucket_usd": null,
-      "valuation_bucket_usd": null,
-      "valuation_estimate_usd": 1.5,
-      "valuation_estimate_source": "emergente",
-      "sx": -6.776,
-      "sy": 4.737,
-      "bio_lens": [],
-      "domain_tags": [],
-      "tech_tags": [
-        "biopesticides, biofungicides, antifungal biotech, crop protection, sustainable agriculture"
-      ],
-      "scale_tags": [],
-      "market_label": "",
-      "self_cats": [
-        "Ag Biologicals",
-        "AgTech",
-        "Biotech"
-      ],
-      "investor_ids": []
-    },
-    {
       "id": "algenis-cl",
       "name": "Algenis",
       "country": "Chile",
@@ -5203,59 +5350,6 @@ window.STARTUP_THEMES_DATA = {
       "market_label": "",
       "self_cats": [],
       "investor_ids": []
-    },
-    {
-      "id": "botanical-solution-inc-cl",
-      "name": "Botanical Solution Inc",
-      "country": "Chile",
-      "countries": [
-        "Chile"
-      ],
-      "website": "botanicalsolution.com",
-      "macro_theme": "ag biologicals and crop resilience",
-      "emergent_theme": "plant tissue culture biofactories",
-      "summary": "Cultivates Quillaja saponaria trees via plant tissue culture as biofactories for biofungicide (ABM-01) and vaccine adjuvant (QS-21). Partners: Syngenta Croda Pharma.",
-      "one_liner": "Cultivates Quillaja saponaria trees via plant tissue culture as biofactories for biofungicide and vaccine adjuvant QS-21.",
-      "cluster_id": 1,
-      "cluster_label": "Food Systems & Alt Proteins — Fish",
-      "cluster_keywords": "fish · aquaculture · antibiotics · meat",
-      "cluster_confidence": 0.343,
-      "x": -7.721,
-      "y": 7.058,
-      "is_outlier": true,
-      "tech_codes": [
-        "microbial",
-        "saas_marketplace"
-      ],
-      "industry_codes": [],
-      "quality_score": 5.0,
-      "quality_band": "medium",
-      "community_id": 8,
-      "pagerank": 0.0010489147394034872,
-      "valuation_tier": null,
-      "n_investors_mapped": 1,
-      "bio_theme": "Bioinputs & Crop Resilience",
-      "bio_theme_secondary": "",
-      "is_bio_universe": 1,
-      "sub_cluster_label": "",
-      "funding_stage": null,
-      "funding_bucket_usd": null,
-      "valuation_bucket_usd": null,
-      "valuation_estimate_usd": 1.5,
-      "valuation_estimate_source": "emergente",
-      "sx": -8.601,
-      "sy": 7.984,
-      "bio_lens": [],
-      "domain_tags": [],
-      "tech_tags": [
-        "plant tissue culture, Quillaja saponaria, biofungicide, QS-21 adjuvant, biofactory platform"
-      ],
-      "scale_tags": [],
-      "market_label": "",
-      "self_cats": [],
-      "investor_ids": [
-        "The Ganesha Lab"
-      ]
     },
     {
       "id": "bruna-by-altum-lab-cl",
@@ -6194,59 +6288,6 @@ window.STARTUP_THEMES_DATA = {
       "investor_ids": []
     },
     {
-      "id": "pixed",
-      "name": "Pixed",
-      "country": "Peru",
-      "countries": [
-        "Peru"
-      ],
-      "website": "https://pixedcorp.com/",
-      "macro_theme": "diagnostics and medtech",
-      "emergent_theme": "food systems & alt proteins — fish · fish · antibiotics · meat · aquaculture",
-      "summary": "Develops myoelectric, personalized biomechanical devices to provide new tools and opportunities for people with disabilities. Creates adjustable bionic prosthetics improving mobility and quality of life.",
-      "one_liner": "Develops myoelectric, personalized biomechanical devices to provide new tools and opportunities for people with…",
-      "cluster_id": 1,
-      "cluster_label": "Food Systems & Alt Proteins — Fish",
-      "cluster_keywords": "fish · aquaculture · antibiotics · meat",
-      "cluster_confidence": 1.0,
-      "x": -4.104,
-      "y": -6.582,
-      "is_outlier": false,
-      "tech_codes": [
-        "diagnostics"
-      ],
-      "industry_codes": [],
-      "quality_score": 0.0,
-      "quality_band": "low",
-      "community_id": -1,
-      "pagerank": 0.0009548076656120609,
-      "valuation_tier": null,
-      "n_investors_mapped": 0,
-      "bio_theme": "Diagnostics & Health Access",
-      "bio_theme_secondary": "",
-      "is_bio_universe": 1,
-      "sub_cluster_label": "",
-      "funding_stage": "pre-seed",
-      "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 0,
-      "valuation_estimate_usd": 0.8,
-      "valuation_estimate_source": "gridx_valuation",
-      "sx": -3.987,
-      "sy": -3.504,
-      "bio_lens": [
-        "biobased",
-        "human-health-bio"
-      ],
-      "domain_tags": [],
-      "tech_tags": [
-        "diagnostics"
-      ],
-      "scale_tags": [],
-      "market_label": "",
-      "self_cats": [],
-      "investor_ids": []
-    },
-    {
       "id": "pow_foods",
       "name": "POW! Foods",
       "country": "Chile",
@@ -6834,7 +6875,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "biobased chemistry and advanced materials",
       "emergent_theme": "biobased chemistry and materials",
       "summary": "Uruguayan biotech developing cosmetic active ingredients from Antarctic extremophile enzymes that repair UV-induced DNA damage in skin cells. Its photolyase-based technology targets CPD and related DNA lesions, penetrates skin cells, reaches the nucleus and is validated through ex vivo and clinical studies. It belongs inside BIO VC LATAM as extremophile enzyme biotech, bioactive ingredient biomanufacturing and skin-health molecular repair.",
-      "one_liner": "Extremophile enzyme skin DNA repair ingredients.",
+      "one_liner": "Develops photolyase-based cosmetic actives from Antarctic extremophile enzymes that penetrate skin cells, reach the nucleus, and actively repair UV-induced DNA damage (CPD lesions), validated in ex vivo and clinical studies. Based in Uruguay.",
       "cluster_id": 2,
       "cluster_label": "Biomaterials & Circular Economy — Biobased Chemistry",
       "cluster_keywords": "materials · biobased chemistry · recovery · energy",
@@ -8319,7 +8360,7 @@ window.STARTUP_THEMES_DATA = {
       "pagerank": 0.005014363164439949,
       "valuation_tier": null,
       "n_investors_mapped": 5,
-      "bio_theme": "Biomaterials & Circular Economy",
+      "bio_theme": "Nature & Ecosystem Tech",
       "bio_theme_secondary": "",
       "is_bio_universe": 1,
       "sub_cluster_label": "",
@@ -8344,70 +8385,6 @@ window.STARTUP_THEMES_DATA = {
         "endeavor_catalyst",
         "kawisafi_ventures",
         "shell_foundation"
-      ]
-    },
-    {
-      "id": "solfium",
-      "name": "Solfium",
-      "country": "Mexico",
-      "countries": [
-        "Mexico"
-      ],
-      "website": "https://solfium.com/en/",
-      "macro_theme": "climate, energy and resource systems",
-      "emergent_theme": "distributed clean-energy deployment",
-      "summary": "Solfium provides solar energy, storage and e-mobility solutions for homes, companies, industrial clients and corporate value chains, with an explicit model for decarbonization. It is not bio-based, but fits the broader planetary-boundary perimeter as clean-energy deployment infrastructure that can reduce emissions across material supply chains.",
-      "one_liner": "Solar, storage and e-mobility deployment platform for value-chain decarbonization.",
-      "cluster_id": 2,
-      "cluster_label": "Biomaterials & Circular Economy — Biobased Chemistry",
-      "cluster_keywords": "materials · biobased chemistry · recovery · energy",
-      "cluster_confidence": 0.345,
-      "x": 1.064,
-      "y": 10.752,
-      "is_outlier": true,
-      "tech_codes": [
-        "clean_energy",
-        "ai_ml"
-      ],
-      "industry_codes": [
-        "energy",
-        "carbon"
-      ],
-      "quality_score": 8.0,
-      "quality_band": "medium",
-      "community_id": 7,
-      "pagerank": 0.0011191717232581155,
-      "valuation_tier": 1.5,
-      "n_investors_mapped": 2,
-      "bio_theme": "Nature & Ecosystem Tech",
-      "bio_theme_secondary": "",
-      "is_bio_universe": 1,
-      "sub_cluster_label": "",
-      "funding_stage": null,
-      "funding_bucket_usd": null,
-      "valuation_bucket_usd": null,
-      "valuation_estimate_usd": 4.0,
-      "valuation_estimate_source": "investors_proxy",
-      "sx": 1.508,
-      "sy": 11.06,
-      "bio_lens": [
-        "planetary-boundary"
-      ],
-      "domain_tags": [
-        "climate-resource"
-      ],
-      "tech_tags": [
-        "ai-data"
-      ],
-      "scale_tags": [
-        "industrial-scale",
-        "planetary-scale"
-      ],
-      "market_label": "distributed solar, storage and e-mobility platform",
-      "self_cats": [],
-      "investor_ids": [
-        "kamay_ventures",
-        "savia_ventures"
       ]
     },
     {
@@ -10073,6 +10050,70 @@ window.STARTUP_THEMES_DATA = {
       ]
     },
     {
+      "id": "solfium",
+      "name": "Solfium",
+      "country": "Mexico",
+      "countries": [
+        "Mexico"
+      ],
+      "website": "https://solfium.com/en/",
+      "macro_theme": "climate, energy and resource systems",
+      "emergent_theme": "distributed clean-energy deployment",
+      "summary": "Solfium provides solar energy, storage and e-mobility solutions for homes, companies, industrial clients and corporate value chains, with an explicit model for decarbonization. It is not bio-based, but fits the broader planetary-boundary perimeter as clean-energy deployment infrastructure that can reduce emissions across material supply chains.",
+      "one_liner": "Solar, storage and e-mobility deployment platform for value-chain decarbonization.",
+      "cluster_id": 4,
+      "cluster_label": "Nature & Ecosystem Tech — Energy",
+      "cluster_keywords": "energy · planetary · carbon · circular",
+      "cluster_confidence": 0.345,
+      "x": 1.064,
+      "y": 10.752,
+      "is_outlier": false,
+      "tech_codes": [
+        "clean_energy",
+        "ai_ml"
+      ],
+      "industry_codes": [
+        "energy",
+        "carbon"
+      ],
+      "quality_score": 8.0,
+      "quality_band": "medium",
+      "community_id": 7,
+      "pagerank": 0.0011191717232581155,
+      "valuation_tier": 1.5,
+      "n_investors_mapped": 2,
+      "bio_theme": "Nature & Ecosystem Tech",
+      "bio_theme_secondary": "",
+      "is_bio_universe": 1,
+      "sub_cluster_label": "",
+      "funding_stage": null,
+      "funding_bucket_usd": null,
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy",
+      "sx": 1.508,
+      "sy": 11.06,
+      "bio_lens": [
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "ai-data"
+      ],
+      "scale_tags": [
+        "industrial-scale",
+        "planetary-scale"
+      ],
+      "market_label": "distributed solar, storage and e-mobility platform",
+      "self_cats": [],
+      "investor_ids": [
+        "kamay_ventures",
+        "savia_ventures"
+      ]
+    },
+    {
       "id": "splight",
       "name": "Splight",
       "country": "USA",
@@ -10142,6 +10183,62 @@ window.STARTUP_THEMES_DATA = {
         "DraperCygnus",
         "savia_ventures"
       ]
+    },
+    {
+      "id": "aimirim-br",
+      "name": "Aimirim",
+      "country": "Brazil",
+      "countries": [
+        "Brazil"
+      ],
+      "website": "aimirimsti.com.br",
+      "macro_theme": "precision agriculture and resource intelligence",
+      "emergent_theme": "industrial bioprocess digital twin",
+      "summary": "Aimirim applies AI, digital twins, and IoT sensors to optimize industrial fermentation and energy processes in sugarcane biorefineries. Platform boosts ethanol yield and steam efficiency without full reinstrumentation, serving clients like Raizen with guaranteed ROI.",
+      "one_liner": "Digital twin and IoT platform that optimizes industrial fermentation and energy processes in sugarcane biorefineries.",
+      "cluster_id": 5,
+      "cluster_label": "Biomanufacturing & Fermentation Economy — Precision Fermentation",
+      "cluster_keywords": "bioindustrial · precision fermentation · enzymes · platforms",
+      "cluster_confidence": 0.346,
+      "x": 9.795,
+      "y": 8.685,
+      "is_outlier": false,
+      "tech_codes": [
+        "iot",
+        "ai_ml",
+        "robotics"
+      ],
+      "industry_codes": [],
+      "quality_score": 5.0,
+      "quality_band": "medium",
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
+      "valuation_tier": null,
+      "n_investors_mapped": 0,
+      "bio_theme": "Biomanufacturing & Fermentation Economy",
+      "bio_theme_secondary": "",
+      "is_bio_universe": 0,
+      "sub_cluster_label": "",
+      "funding_stage": null,
+      "funding_bucket_usd": null,
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 1.5,
+      "valuation_estimate_source": "emergente",
+      "sx": 9.79,
+      "sy": 9.034,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [
+        "digital twin, IoT sensors, AI analytics, process automation, industrial integration"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Precision Ferm",
+        "Hardware / IoT",
+        "Biotech"
+      ],
+      "investor_ids": []
     },
     {
       "id": "apexzymes",
@@ -10532,6 +10629,66 @@ window.STARTUP_THEMES_DATA = {
       "investor_ids": [
         "GridX"
       ]
+    },
+    {
+      "id": "gentec",
+      "name": "Gentec",
+      "country": "Mexico",
+      "countries": [
+        "Mexico"
+      ],
+      "website": "https://www.gentec.com.mx/",
+      "macro_theme": "biomanufacturing and bioindustrial platforms",
+      "emergent_theme": "diagnostics & health access — laboratory · laboratory · diagnosis · portable · diagnostics",
+      "summary": "Operates Mexico's first private laboratory for CRISPR-Cas9 gene editing. Provides gene editing services and develops genetically engineered organisms for research and biotechnology applications.",
+      "one_liner": "Operates Mexico's first private laboratory for CRISPR-Cas9 gene editing.",
+      "cluster_id": 5,
+      "cluster_label": "Biomanufacturing & Fermentation Economy — Precision Fermentation",
+      "cluster_keywords": "bioindustrial · precision fermentation · enzymes · platforms",
+      "cluster_confidence": 0.349,
+      "x": -9.783,
+      "y": -4.397,
+      "is_outlier": false,
+      "tech_codes": [
+        "biomanufacturing",
+        "fermentation",
+        "synbio"
+      ],
+      "industry_codes": [],
+      "quality_score": 0.0,
+      "quality_band": "low",
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
+      "valuation_tier": null,
+      "n_investors_mapped": 0,
+      "bio_theme": "Biomanufacturing & Fermentation Economy",
+      "bio_theme_secondary": "",
+      "is_bio_universe": 1,
+      "sub_cluster_label": "",
+      "funding_stage": "pre-seed",
+      "funding_bucket_usd": 0,
+      "valuation_bucket_usd": 0,
+      "valuation_estimate_usd": 0.8,
+      "valuation_estimate_source": "gridx_valuation",
+      "sx": -10.618,
+      "sy": -7.204,
+      "bio_lens": [
+        "biobased",
+        "bio-enabled-industrial-transition"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "biomanufacturing",
+        "fermentation",
+        "synthetic-biology"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "SynBio",
+        "Biotech"
+      ],
+      "investor_ids": []
     },
     {
       "id": "geoprot",
@@ -12373,6 +12530,79 @@ window.STARTUP_THEMES_DATA = {
       ]
     },
     {
+      "id": "migma",
+      "name": "MIGMA",
+      "country": "Argentina",
+      "countries": [
+        "Argentina"
+      ],
+      "website": "https://ar.linkedin.com/company/migma-co",
+      "macro_theme": "food biotech and novel ingredients",
+      "emergent_theme": "food shelf-life extension and antioxidant systems",
+      "summary": "Mendoza-based formulation company using AI, chemistry and R&D to design customized antioxidant systems that extend shelf life and reduce oxidation-related waste in food, animal nutrition, pet food and cosmetics. Its work is not core biotech, but it is materially linked to biological products and food-system efficiency. It belongs inside BIO VC LATAM as ingredient/formulation intelligence for waste reduction and product preservation.",
+      "one_liner": "AI-designed antioxidant systems for shelf-life extension.",
+      "cluster_id": 6,
+      "cluster_label": "Food Systems & Alt Proteins — Novel Ingredients",
+      "cluster_keywords": "novel ingredients · functional · shelf · metabolic",
+      "cluster_confidence": 0.665,
+      "x": 2.093,
+      "y": 0.316,
+      "is_outlier": false,
+      "tech_codes": [
+        "ai_ml",
+        "green_chem",
+        "formulation"
+      ],
+      "industry_codes": [
+        "food_ingredients",
+        "animal_protein",
+        "row_crops",
+        "materials_packaging",
+        "carbon"
+      ],
+      "quality_score": 8.0,
+      "quality_band": "medium",
+      "community_id": 9,
+      "pagerank": 0.0009625759555840287,
+      "valuation_tier": 1.0,
+      "n_investors_mapped": 1,
+      "bio_theme": "Food Systems & Alt Proteins",
+      "bio_theme_secondary": "Biomaterials & Circular Economy",
+      "is_bio_universe": 1,
+      "sub_cluster_label": "",
+      "funding_stage": null,
+      "funding_bucket_usd": null,
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy",
+      "sx": 2.085,
+      "sy": -1.865,
+      "bio_lens": [
+        "circular",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biomaterials",
+        "climate-resource"
+      ],
+      "tech_tags": [
+        "ai-data"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "product-scale"
+      ],
+      "market_label": "AI-designed antioxidant systems for food, animal nutrition and cosmetics",
+      "self_cats": [
+        "FoodTech",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
+    },
+    {
       "id": "nanofreeze",
       "name": "Nanofreeze",
       "country": "Colombia",
@@ -13427,55 +13657,6 @@ window.STARTUP_THEMES_DATA = {
       "investor_ids": []
     },
     {
-      "id": "kheiron-biotech-ar",
-      "name": "Kheiron Biotech",
-      "country": "Argentina",
-      "countries": [
-        "Argentina"
-      ],
-      "website": "kheiron.com.ar",
-      "macro_theme": "therapeutics and regenerative medicine",
-      "emergent_theme": "",
-      "summary": "Argentine precision breeding and animal cloning biotechnology company. Developing genomic selection and gene editing for agricultural animals. Joint projects with Acceligen/Recombinetics.",
-      "one_liner": "Argentine precision breeding and animal cloning biotechnology company.",
-      "cluster_id": 7,
-      "cluster_label": "Therapeutics — Biopharmaceutical",
-      "cluster_keywords": "biopharmaceutical · organ · therapeutic · medicine",
-      "cluster_confidence": 0.353,
-      "x": -7.474,
-      "y": 6.884,
-      "is_outlier": true,
-      "tech_codes": [],
-      "industry_codes": [],
-      "quality_score": 5.0,
-      "quality_band": "medium",
-      "community_id": -1,
-      "pagerank": 0.0009548076656120609,
-      "valuation_tier": null,
-      "n_investors_mapped": 0,
-      "bio_theme": "Bioinputs & Crop Resilience",
-      "bio_theme_secondary": "Therapeutics",
-      "is_bio_universe": 1,
-      "sub_cluster_label": "",
-      "funding_stage": null,
-      "funding_bucket_usd": null,
-      "valuation_bucket_usd": null,
-      "valuation_estimate_usd": 1.5,
-      "valuation_estimate_source": "emergente",
-      "sx": -8.054,
-      "sy": 7.598,
-      "bio_lens": [],
-      "domain_tags": [],
-      "tech_tags": [],
-      "scale_tags": [],
-      "market_label": "",
-      "self_cats": [
-        "Diagnostics",
-        "Biotech"
-      ],
-      "investor_ids": []
-    },
-    {
       "id": "lipock",
       "name": "Lipock",
       "country": "Argentina",
@@ -13893,7 +14074,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "therapeutics and regenerative bio",
       "summary": "Chilean animal-health biotechnology company developing tailored antibacterial solutions for poultry and livestock producers. Its platform combines AI-optimized sampling, bacterial diagnostics, virulence and antibiotic-resistance analysis, and machine-learning selection of bacteriophage combinations that target farm-specific pathogens. It belongs inside BIO VC LATAM as a core phage-biotech and One Health company reducing antibiotic dependence in animal protein systems.",
-      "one_liner": "AI-guided bacteriophage animal-health platform.",
+      "one_liner": "Chilean ag-health biotech combining AI-guided bacteriophage selection, bacterial diagnostics, virulence and antibiotic-resistance analysis to deliver farm-specific phage cocktails targeting drug-resistant pathogens in poultry and livestock.",
       "cluster_id": 7,
       "cluster_label": "Therapeutics — Biopharmaceutical",
       "cluster_keywords": "biopharmaceutical · organ · therapeutic · medicine",
@@ -13957,7 +14138,7 @@ window.STARTUP_THEMES_DATA = {
       "market_label": "bacteriophage animal health and One Health platform",
       "self_cats": [
         "Diagnostics",
-        "HealthTech",
+        "AgTech",
         "Biotech"
       ],
       "investor_ids": [
@@ -14758,6 +14939,55 @@ window.STARTUP_THEMES_DATA = {
       ]
     },
     {
+      "id": "kheiron-biotech-ar",
+      "name": "Kheiron Biotech",
+      "country": "Argentina",
+      "countries": [
+        "Argentina"
+      ],
+      "website": "kheiron.com.ar",
+      "macro_theme": "therapeutics and regenerative medicine",
+      "emergent_theme": "",
+      "summary": "Argentine precision breeding and animal cloning biotechnology company. Developing genomic selection and gene editing for agricultural animals. Joint projects with Acceligen/Recombinetics.",
+      "one_liner": "Argentine precision breeding and animal cloning biotechnology company.",
+      "cluster_id": 9,
+      "cluster_label": "Bioinputs & Crop Resilience — Seed Treatment",
+      "cluster_keywords": "seed treatment · soil · biologicals · argentine",
+      "cluster_confidence": 0.353,
+      "x": -7.474,
+      "y": 6.884,
+      "is_outlier": false,
+      "tech_codes": [],
+      "industry_codes": [],
+      "quality_score": 5.0,
+      "quality_band": "medium",
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
+      "valuation_tier": null,
+      "n_investors_mapped": 0,
+      "bio_theme": "Bioinputs & Crop Resilience",
+      "bio_theme_secondary": "Therapeutics",
+      "is_bio_universe": 1,
+      "sub_cluster_label": "",
+      "funding_stage": null,
+      "funding_bucket_usd": null,
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 1.5,
+      "valuation_estimate_source": "emergente",
+      "sx": -8.054,
+      "sy": 7.598,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Diagnostics",
+        "Biotech"
+      ],
+      "investor_ids": []
+    },
+    {
       "id": "puna_bio",
       "name": "Puna Bio",
       "country": "Argentina",
@@ -14768,7 +14998,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "ag biologicals and crop resilience",
       "emergent_theme": "extremophile microbial ag inputs",
       "summary": "Puna Bio develops microbial seed-treatment inoculants from extremophile microorganisms isolated from the Argentine Puna. Its R&D platform prospects extreme ecosystems, isolates and characterizes strains, maintains a culture collection and validates field performance to improve crop nutrition, stress tolerance, yield and soil regeneration. It is a core BIO VC LATAM ag-biologicals company.",
-      "one_liner": "Extremophile microbial seed treatments for crop resilience.",
+      "one_liner": "Develops microbial seed-treatment inoculants from extremophile microorganisms isolated in the Argentine Puna highlands, prospecting extreme ecosystems to characterize strains that improve crop nutrition, stress tolerance, yield, and soil regeneration.",
       "cluster_id": 9,
       "cluster_label": "Bioinputs & Crop Resilience — Seed Treatment",
       "cluster_keywords": "seed treatment · soil · biologicals · argentine",
@@ -19627,79 +19857,6 @@ window.STARTUP_THEMES_DATA = {
       ]
     },
     {
-      "id": "migma",
-      "name": "MIGMA",
-      "country": "Argentina",
-      "countries": [
-        "Argentina"
-      ],
-      "website": "https://ar.linkedin.com/company/migma-co",
-      "macro_theme": "food biotech and novel ingredients",
-      "emergent_theme": "food shelf-life extension and antioxidant systems",
-      "summary": "Mendoza-based formulation company using AI, chemistry and R&D to design customized antioxidant systems that extend shelf life and reduce oxidation-related waste in food, animal nutrition, pet food and cosmetics. Its work is not core biotech, but it is materially linked to biological products and food-system efficiency. It belongs inside BIO VC LATAM as ingredient/formulation intelligence for waste reduction and product preservation.",
-      "one_liner": "AI-designed antioxidant systems for shelf-life extension.",
-      "cluster_id": 15,
-      "cluster_label": "Diagnostics & Health Access — Diagnostics",
-      "cluster_keywords": "diagnostics · device · medtech · nanomedicine",
-      "cluster_confidence": 0.665,
-      "x": 2.093,
-      "y": 0.316,
-      "is_outlier": false,
-      "tech_codes": [
-        "ai_ml",
-        "green_chem",
-        "formulation"
-      ],
-      "industry_codes": [
-        "food_ingredients",
-        "animal_protein",
-        "row_crops",
-        "materials_packaging",
-        "carbon"
-      ],
-      "quality_score": 8.0,
-      "quality_band": "medium",
-      "community_id": 9,
-      "pagerank": 0.0009625759555840287,
-      "valuation_tier": 1.0,
-      "n_investors_mapped": 1,
-      "bio_theme": "Food Systems & Alt Proteins",
-      "bio_theme_secondary": "Biomaterials & Circular Economy",
-      "is_bio_universe": 1,
-      "sub_cluster_label": "",
-      "funding_stage": null,
-      "funding_bucket_usd": null,
-      "valuation_bucket_usd": null,
-      "valuation_estimate_usd": 4.0,
-      "valuation_estimate_source": "investors_proxy",
-      "sx": 2.085,
-      "sy": -1.865,
-      "bio_lens": [
-        "circular",
-        "planetary-boundary"
-      ],
-      "domain_tags": [
-        "agri-food",
-        "biomaterials",
-        "climate-resource"
-      ],
-      "tech_tags": [
-        "ai-data"
-      ],
-      "scale_tags": [
-        "human-scale",
-        "product-scale"
-      ],
-      "market_label": "AI-designed antioxidant systems for food, animal nutrition and cosmetics",
-      "self_cats": [
-        "FoodTech",
-        "Biotech"
-      ],
-      "investor_ids": [
-        "GridX"
-      ]
-    },
-    {
       "id": "pepton",
       "name": "Pepton",
       "country": "Argentina",
@@ -21052,59 +21209,6 @@ window.STARTUP_THEMES_DATA = {
       "investor_ids": []
     },
     {
-      "id": "lizarbio",
-      "name": "LizarBio",
-      "country": "Brazil",
-      "countries": [
-        "Brazil"
-      ],
-      "website": "https://www.lizar.bio or https://www.linkedin.com/company/lizarbio/",
-      "macro_theme": "therapeutics and regenerative medicine",
-      "emergent_theme": "therapeutics — antimicrobial · antimicrobial · textile · materials · patients",
-      "summary": "Develops cell-based therapies to treat heart failure and Rett syndrome, producing cardiac cells for transplantation. Advances regenerative medicine using stem cell-derived cardiac therapies.",
-      "one_liner": "Develops cell-based therapies to treat heart failure and Rett syndrome, producing cardiac cells for transplantation.",
-      "cluster_id": 16,
-      "cluster_label": "Therapeutics — Cancer",
-      "cluster_keywords": "cancer · therapeutics · metabolic · therapeutic",
-      "cluster_confidence": 0.355,
-      "x": -11.601,
-      "y": -9.918,
-      "is_outlier": true,
-      "tech_codes": [
-        "therapeutics"
-      ],
-      "industry_codes": [],
-      "quality_score": 0.0,
-      "quality_band": "low",
-      "community_id": -1,
-      "pagerank": 0.0009548076656120609,
-      "valuation_tier": null,
-      "n_investors_mapped": 0,
-      "bio_theme": "Therapeutics",
-      "bio_theme_secondary": "",
-      "is_bio_universe": 1,
-      "sub_cluster_label": "",
-      "funding_stage": null,
-      "funding_bucket_usd": null,
-      "valuation_bucket_usd": 25,
-      "valuation_estimate_usd": 25.0,
-      "valuation_estimate_source": "gridx_valuation",
-      "sx": -12.092,
-      "sy": -10.062,
-      "bio_lens": [
-        "biobased",
-        "human-health-bio"
-      ],
-      "domain_tags": [],
-      "tech_tags": [
-        "therapeutics"
-      ],
-      "scale_tags": [],
-      "market_label": "",
-      "self_cats": [],
-      "investor_ids": []
-    },
-    {
       "id": "mirscience-therapeutics-br",
       "name": "MiRscience Therapeutics",
       "country": "Brazil",
@@ -22297,70 +22401,6 @@ window.STARTUP_THEMES_DATA = {
       ]
     },
     {
-      "id": "bioseek",
-      "name": "Bioseek",
-      "country": "Brazil",
-      "countries": [
-        "Brazil"
-      ],
-      "website": "https://www.f6s.com/company/bioseek",
-      "macro_theme": "computational biology and scientific software",
-      "emergent_theme": "computational biology and life-science software",
-      "summary": "Semantic search and analytics platform for life sciences research. It enters the thesis as scientific software directly coupled to biological R&D. Semantic search engine for life sciences. Technology: graph database; life-science analytics. Sector: biotech, pharma and research labs.",
-      "one_liner": "Semantic search engine for life sciences.",
-      "cluster_id": 17,
-      "cluster_label": "Therapeutics — Therapeutics Regenerative",
-      "cluster_keywords": "therapeutics regenerative · tissue · medicine · extracellular",
-      "cluster_confidence": 0.349,
-      "x": -11.336,
-      "y": -9.849,
-      "is_outlier": true,
-      "tech_codes": [
-        "ai_ml",
-        "therapeutics"
-      ],
-      "industry_codes": [
-        "human_health",
-        "therapeutics_industry"
-      ],
-      "quality_score": 8.0,
-      "quality_band": "medium",
-      "community_id": 2,
-      "pagerank": 0.0009989245304698124,
-      "valuation_tier": 1.0,
-      "n_investors_mapped": 1,
-      "bio_theme": "Therapeutics",
-      "bio_theme_secondary": "",
-      "is_bio_universe": 1,
-      "sub_cluster_label": "",
-      "funding_stage": null,
-      "funding_bucket_usd": null,
-      "valuation_bucket_usd": null,
-      "valuation_estimate_usd": 4.0,
-      "valuation_estimate_source": "investors_proxy",
-      "sx": -11.501,
-      "sy": -9.909,
-      "bio_lens": [
-        "human-health-bio"
-      ],
-      "domain_tags": [
-        "human-health",
-        "therapeutics-regenerative"
-      ],
-      "tech_tags": [
-        "ai-data",
-        "therapeutics"
-      ],
-      "scale_tags": [],
-      "market_label": "life-science semantic search and research intelligence",
-      "self_cats": [
-        "Biotech"
-      ],
-      "investor_ids": [
-        "CITES"
-      ]
-    },
-    {
       "id": "cellco",
       "name": "CellCo",
       "country": "USA",
@@ -23184,6 +23224,59 @@ window.STARTUP_THEMES_DATA = {
       "investor_ids": [
         "SF500"
       ]
+    },
+    {
+      "id": "lizarbio",
+      "name": "LizarBio",
+      "country": "Brazil",
+      "countries": [
+        "Brazil"
+      ],
+      "website": "https://www.lizar.bio or https://www.linkedin.com/company/lizarbio/",
+      "macro_theme": "therapeutics and regenerative medicine",
+      "emergent_theme": "therapeutics — antimicrobial · antimicrobial · textile · materials · patients",
+      "summary": "Develops cell-based therapies to treat heart failure and Rett syndrome, producing cardiac cells for transplantation. Advances regenerative medicine using stem cell-derived cardiac therapies.",
+      "one_liner": "Develops cell-based therapies to treat heart failure and Rett syndrome, producing cardiac cells for transplantation.",
+      "cluster_id": 17,
+      "cluster_label": "Therapeutics — Therapeutics Regenerative",
+      "cluster_keywords": "therapeutics regenerative · tissue · medicine · extracellular",
+      "cluster_confidence": 0.355,
+      "x": -11.601,
+      "y": -9.918,
+      "is_outlier": false,
+      "tech_codes": [
+        "therapeutics"
+      ],
+      "industry_codes": [],
+      "quality_score": 0.0,
+      "quality_band": "low",
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
+      "valuation_tier": null,
+      "n_investors_mapped": 0,
+      "bio_theme": "Therapeutics",
+      "bio_theme_secondary": "",
+      "is_bio_universe": 1,
+      "sub_cluster_label": "",
+      "funding_stage": null,
+      "funding_bucket_usd": null,
+      "valuation_bucket_usd": 25,
+      "valuation_estimate_usd": 25.0,
+      "valuation_estimate_source": "gridx_valuation",
+      "sx": -12.092,
+      "sy": -10.062,
+      "bio_lens": [
+        "biobased",
+        "human-health-bio"
+      ],
+      "domain_tags": [],
+      "tech_tags": [
+        "therapeutics"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [],
+      "investor_ids": []
     },
     {
       "id": "mesenchyal_t",
@@ -24045,6 +24138,62 @@ window.STARTUP_THEMES_DATA = {
       "investor_ids": []
     },
     {
+      "id": "agrosustain-mx",
+      "name": "AgroSustain",
+      "country": "Mexico",
+      "countries": [
+        "Mexico"
+      ],
+      "website": "agrosustain.com.mx",
+      "macro_theme": "precision agriculture and resource intelligence",
+      "emergent_theme": "antifungal biopesticides",
+      "summary": "Mexican biotech developing eco-friendly biopesticides to combat fungal crop infections. Reduces dependency on chemical pesticides for healthier harvests. Based in Guadalajara.",
+      "one_liner": "Swiss agtech developing biofungicides, biostimulants, and edible coatings derived from mold-resistant plant extracts for crop protection and post-harvest shelf-life extension, with R&D and operations in Guadalajara, Mexico.",
+      "cluster_id": 18,
+      "cluster_label": "Bioinputs & Crop Resilience — Pest",
+      "cluster_keywords": "pest · biocontrol · biologicals · crop",
+      "cluster_confidence": 0.348,
+      "x": -6.899,
+      "y": 5.596,
+      "is_outlier": false,
+      "tech_codes": [
+        "ag_inputs",
+        "microbial",
+        "iot"
+      ],
+      "industry_codes": [],
+      "quality_score": 5.0,
+      "quality_band": "medium",
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
+      "valuation_tier": null,
+      "n_investors_mapped": 0,
+      "bio_theme": "Bioinputs & Crop Resilience",
+      "bio_theme_secondary": "",
+      "is_bio_universe": 1,
+      "sub_cluster_label": "",
+      "funding_stage": null,
+      "funding_bucket_usd": null,
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 1.5,
+      "valuation_estimate_source": "emergente",
+      "sx": -6.776,
+      "sy": 4.737,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [
+        "biopesticides, biofungicides, antifungal biotech, crop protection, sustainable agriculture"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Ag Biologicals",
+        "AgTech",
+        "Biotech"
+      ],
+      "investor_ids": []
+    },
+    {
       "id": "biocentis-br",
       "name": "Biocentis",
       "country": "Brazil",
@@ -24246,6 +24395,59 @@ window.STARTUP_THEMES_DATA = {
       "market_label": "",
       "self_cats": [],
       "investor_ids": []
+    },
+    {
+      "id": "botanical-solution-inc-cl",
+      "name": "Botanical Solution Inc",
+      "country": "Chile",
+      "countries": [
+        "Chile"
+      ],
+      "website": "botanicalsolution.com",
+      "macro_theme": "ag biologicals and crop resilience",
+      "emergent_theme": "plant tissue culture biofactories",
+      "summary": "Cultivates Quillaja saponaria trees via plant tissue culture as biofactories for biofungicide (ABM-01) and vaccine adjuvant (QS-21). Partners: Syngenta Croda Pharma.",
+      "one_liner": "Cultivates Quillaja saponaria trees via plant tissue culture as biofactories for biofungicide and vaccine adjuvant QS-21.",
+      "cluster_id": 18,
+      "cluster_label": "Bioinputs & Crop Resilience — Pest",
+      "cluster_keywords": "pest · biocontrol · biologicals · crop",
+      "cluster_confidence": 0.343,
+      "x": -7.721,
+      "y": 7.058,
+      "is_outlier": false,
+      "tech_codes": [
+        "microbial",
+        "saas_marketplace"
+      ],
+      "industry_codes": [],
+      "quality_score": 5.0,
+      "quality_band": "medium",
+      "community_id": 8,
+      "pagerank": 0.0010489147394034872,
+      "valuation_tier": null,
+      "n_investors_mapped": 1,
+      "bio_theme": "Bioinputs & Crop Resilience",
+      "bio_theme_secondary": "",
+      "is_bio_universe": 1,
+      "sub_cluster_label": "",
+      "funding_stage": null,
+      "funding_bucket_usd": null,
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 1.5,
+      "valuation_estimate_source": "emergente",
+      "sx": -8.601,
+      "sy": 7.984,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [
+        "plant tissue culture, Quillaja saponaria, biofungicide, QS-21 adjuvant, biofactory platform"
+      ],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [],
+      "investor_ids": [
+        "The Ganesha Lab"
+      ]
     },
     {
       "id": "botanical-solutions",
@@ -25145,79 +25347,6 @@ window.STARTUP_THEMES_DATA = {
       ]
     },
     {
-      "id": "genotyping",
-      "name": "Genotyping",
-      "country": "Brazil",
-      "countries": [
-        "Brazil"
-      ],
-      "website": "https://genotyping.com.br/testes-geneticos-estao-mais-acessiveis-no-brasil/",
-      "macro_theme": "diagnostics and medtech",
-      "emergent_theme": "genomics and molecular diagnostics infrastructure",
-      "summary": "Genotyping is a Brazilian genetic diagnostics and molecular-analysis company connected to BPI group capabilities across health, agriculture, sugarcane and food molecular analysis. Public company material describes high-level genetic diagnostics, next-generation sequencing and molecular biology services. It belongs inside BIO VC LATAM as genomics and molecular-diagnostics infrastructure, with a cross-domain footprint spanning human health and ag/food biology.",
-      "one_liner": "Genetic diagnostics and molecular analysis platform.",
-      "cluster_id": 19,
-      "cluster_label": "Food Systems & Alt Proteins — Precision Fermentation",
-      "cluster_keywords": "dairy · diagnostics · brazilian · precision fermentation",
-      "cluster_confidence": 0.356,
-      "x": -3.375,
-      "y": -8.354,
-      "is_outlier": true,
-      "tech_codes": [
-        "bioinformatics",
-        "ai_ml",
-        "diagnostics"
-      ],
-      "industry_codes": [
-        "row_crops",
-        "diagnostics_industry",
-        "human_health"
-      ],
-      "quality_score": 8.0,
-      "quality_band": "medium",
-      "community_id": 21,
-      "pagerank": 0.0009798973546472373,
-      "valuation_tier": null,
-      "n_investors_mapped": 1,
-      "bio_theme": "Diagnostics & Health Access",
-      "bio_theme_secondary": "",
-      "is_bio_universe": 1,
-      "sub_cluster_label": "Diagnostic-Therapeutic Convergence",
-      "funding_stage": "pre-seed",
-      "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1,
-      "valuation_estimate_usd": 1.0,
-      "valuation_estimate_source": "gridx_valuation",
-      "sx": -2.366,
-      "sy": -7.442,
-      "bio_lens": [
-        "biocentric",
-        "human-health-bio"
-      ],
-      "domain_tags": [
-        "agri-food",
-        "diagnostics-medtech",
-        "human-health"
-      ],
-      "tech_tags": [
-        "ai-data",
-        "diagnostics"
-      ],
-      "scale_tags": [
-        "agroecosystem-scale",
-        "human-scale",
-        "industrial-scale",
-        "molecular-scale"
-      ],
-      "market_label": "genetic diagnostics and molecular analysis platform",
-      "self_cats": [
-        "Diagnostics"
-      ],
-      "investor_ids": [
-        "sp_ventures"
-      ]
-    },
-    {
       "id": "harmony-biosciences",
       "name": "HARMONY",
       "country": "Brazil",
@@ -25435,79 +25564,6 @@ window.STARTUP_THEMES_DATA = {
       ]
     },
     {
-      "id": "nexxto",
-      "name": "Nexxto",
-      "country": "Brazil",
-      "countries": [
-        "Brazil"
-      ],
-      "website": "https://nexxto.com/",
-      "macro_theme": "climate, energy and resource systems",
-      "emergent_theme": "cold-chain and food-quality monitoring",
-      "summary": "Brazilian IoT monitoring company providing real-time temperature and humidity control for health products, medicines, blood derivatives, laboratory materials and clinical environments. Its sensors, alerts and audit reports reduce product loss and protect regulated cold-chain quality. It belongs inside BIO VC LATAM as health and biological-product infrastructure, but remains an edge case because the core technology is IoT rather than biology.",
-      "one_liner": "Provides automated IoT temperature and asset monitoring systems (Nexxto Sense, Move, Trace, Ativis) for vaccines, oncological drugs, blood components, and clinical trial materials, serving major hospital networks across Brazil from São Paulo.",
-      "cluster_id": 19,
-      "cluster_label": "Food Systems & Alt Proteins — Precision Fermentation",
-      "cluster_keywords": "dairy · diagnostics · brazilian · precision fermentation",
-      "cluster_confidence": 0.356,
-      "x": 0.645,
-      "y": 10.237,
-      "is_outlier": true,
-      "tech_codes": [
-        "iot"
-      ],
-      "industry_codes": [
-        "food_ingredients",
-        "specialty_crops",
-        "human_health",
-        "row_crops",
-        "carbon"
-      ],
-      "quality_score": 8.0,
-      "quality_band": "medium",
-      "community_id": 21,
-      "pagerank": 0.0009798973546472373,
-      "valuation_tier": null,
-      "n_investors_mapped": 1,
-      "bio_theme": "Nature & Ecosystem Tech",
-      "bio_theme_secondary": "Food Systems & Alt Proteins",
-      "is_bio_universe": 1,
-      "sub_cluster_label": "",
-      "funding_stage": null,
-      "funding_bucket_usd": null,
-      "valuation_bucket_usd": null,
-      "valuation_estimate_usd": 4.0,
-      "valuation_estimate_source": "investors_proxy",
-      "sx": 0.579,
-      "sy": 9.916,
-      "bio_lens": [
-        "human-health-bio",
-        "planetary-boundary"
-      ],
-      "domain_tags": [
-        "agri-food",
-        "climate-resource",
-        "human-health"
-      ],
-      "tech_tags": [
-        "iot"
-      ],
-      "scale_tags": [
-        "human-scale",
-        "industrial-scale",
-        "planetary-scale",
-        "product-scale"
-      ],
-      "market_label": "IoT monitoring for cold-chain and product-quality control",
-      "self_cats": [
-        "Therapeutics",
-        "Hardware / IoT"
-      ],
-      "investor_ids": [
-        "sp_ventures"
-      ]
-    },
-    {
       "id": "qnity",
       "name": "Qnity",
       "country": "Argentina",
@@ -25611,7 +25667,7 @@ window.STARTUP_THEMES_DATA = {
       "pagerank": 0.0009788297083053149,
       "valuation_tier": null,
       "n_investors_mapped": 1,
-      "bio_theme": "Diagnostics & Health Access",
+      "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "",
       "is_bio_universe": 1,
       "sub_cluster_label": "",
@@ -25806,7 +25862,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "ag biologicals and crop resilience",
       "emergent_theme": "ag biologicals and crop resilience",
       "summary": "Gênica is a Brazilian ag-biologicals company developing bioinputs and soil-health technologies for regenerative crop management. Its R&D spans bioprospection of new organisms and microbial groups, molecular techniques, bioinformatics and products based on organic molecules from microorganisms or other sources. The company emphasizes biological products that reduce chemical pesticide and nitrogen-fertilizer dependence, protect soil and groundwater, and regenerate productive systems. It belongs inside BIO VC LATAM as core agricultural biologicals.",
-      "one_liner": "Soil health and agricultural biologicals platform.",
+      "one_liner": "Brazilian ag-biologicals company developing bioinputs through bioprospection, molecular biology, and bioinformatics to reduce chemical pesticide and nitrogen-fertilizer dependence in regenerative crop management.",
       "cluster_id": 20,
       "cluster_label": "Bioinputs & Crop Resilience — Biologicals",
       "cluster_keywords": "biologicals · function · microbiome · concise",
@@ -25866,7 +25922,6 @@ window.STARTUP_THEMES_DATA = {
       "market_label": "soil health and agricultural biologicals platform",
       "self_cats": [
         "Ag Biologicals",
-        "AgTech",
         "Biotech"
       ],
       "investor_ids": [
@@ -26639,62 +26694,6 @@ window.STARTUP_THEMES_DATA = {
       "investor_ids": [
         "chileglobal_ventures"
       ]
-    },
-    {
-      "id": "aimirim-br",
-      "name": "Aimirim",
-      "country": "Brazil",
-      "countries": [
-        "Brazil"
-      ],
-      "website": "aimirimsti.com.br",
-      "macro_theme": "precision agriculture and resource intelligence",
-      "emergent_theme": "industrial bioprocess digital twin",
-      "summary": "Aimirim applies AI, digital twins, and IoT sensors to optimize industrial fermentation and energy processes in sugarcane biorefineries. Platform boosts ethanol yield and steam efficiency without full reinstrumentation, serving clients like Raizen with guaranteed ROI.",
-      "one_liner": "Digital twin and IoT platform that optimizes industrial fermentation and energy processes in sugarcane biorefineries.",
-      "cluster_id": 21,
-      "cluster_label": "Farm Intelligence — Agronomic",
-      "cluster_keywords": "agronomic · fresh · imagery · agtech",
-      "cluster_confidence": 0.346,
-      "x": 9.795,
-      "y": 8.685,
-      "is_outlier": true,
-      "tech_codes": [
-        "iot",
-        "ai_ml",
-        "robotics"
-      ],
-      "industry_codes": [],
-      "quality_score": 5.0,
-      "quality_band": "medium",
-      "community_id": -1,
-      "pagerank": 0.0009548076656120609,
-      "valuation_tier": null,
-      "n_investors_mapped": 0,
-      "bio_theme": "Farm Intelligence",
-      "bio_theme_secondary": "",
-      "is_bio_universe": 0,
-      "sub_cluster_label": "",
-      "funding_stage": null,
-      "funding_bucket_usd": null,
-      "valuation_bucket_usd": null,
-      "valuation_estimate_usd": 1.5,
-      "valuation_estimate_source": "emergente",
-      "sx": 9.79,
-      "sy": 9.034,
-      "bio_lens": [],
-      "domain_tags": [],
-      "tech_tags": [
-        "digital twin, IoT sensors, AI analytics, process automation, industrial integration"
-      ],
-      "scale_tags": [],
-      "market_label": "",
-      "self_cats": [
-        "Precision Ferm",
-        "Hardware / IoT",
-        "Biotech"
-      ],
-      "investor_ids": []
     },
     {
       "id": "arado",
@@ -31133,70 +31132,73 @@ window.STARTUP_THEMES_DATA = {
       "cluster_id": 0,
       "label": "Diagnostics & Health Access — Diagnostics",
       "keywords": "diagnostics · laboratory · diagnosis · portable",
-      "size": 78,
+      "size": 81,
       "bio_themes": {
-        "Diagnostics & Health Access": 69,
-        "Therapeutics": 5,
-        "Biomanufacturing & Fermentation Economy": 2,
-        "Farm Intelligence": 2
+        "Diagnostics & Health Access": 75,
+        "Therapeutics": 3,
+        "Farm Intelligence": 2,
+        "Biomanufacturing & Fermentation Economy": 1
       },
       "tech_codes": {
-        "diagnostics": 57,
-        "bioinformatics": 5,
-        "ai_ml": 25,
-        "therapeutics": 5,
-        "iot": 2,
-        "synbio": 5,
+        "diagnostics": 59,
+        "bioinformatics": 6,
+        "ai_ml": 27,
+        "therapeutics": 6,
+        "iot": 3,
+        "synbio": 4,
         "medical_devices": 1,
-        "biomanufacturing": 2,
-        "fermentation": 2,
         "nanotech": 1,
         "remote_sensing": 2,
         "robotics": 1,
+        "biomanufacturing": 1,
+        "fermentation": 1,
         "saas_marketplace": 1
       },
       "industry_codes": {
-        "human_health": 24,
-        "diagnostics_industry": 23,
-        "therapeutics_industry": 4,
-        "row_crops": 5,
-        "veterinary": 1
+        "human_health": 27,
+        "diagnostics_industry": 24,
+        "therapeutics_industry": 5,
+        "row_crops": 7,
+        "veterinary": 1,
+        "food_ingredients": 1,
+        "specialty_crops": 1,
+        "carbon": 1
       },
       "countries": {
         "Chile": 11,
         "Argentina": 29,
-        "Brazil": 23,
+        "Brazil": 26,
         "Guatemala": 1,
         "BM": 1,
         "PR": 1,
-        "Mexico": 10,
+        "Mexico": 9,
+        "Peru": 1,
         "Colombia": 1,
         "Uruguay": 1
       },
-      "n_funded": 28,
+      "n_funded": 31,
       "n_featured": 4
     },
     {
       "cluster_id": 21,
       "label": "Farm Intelligence — Agronomic",
       "keywords": "agronomic · fresh · imagery · agtech",
-      "size": 53,
+      "size": 52,
       "bio_themes": {
         "Nature & Ecosystem Tech": 16,
-        "Farm Intelligence": 33,
+        "Farm Intelligence": 32,
         "Food Systems & Alt Proteins": 3,
         "Bioinputs & Crop Resilience": 1
       },
       "tech_codes": {
         "saas_marketplace": 12,
-        "ai_ml": 41,
+        "ai_ml": 40,
         "blockchain": 7,
         "remote_sensing": 13,
         "vertical_farming": 2,
-        "iot": 6,
-        "robotics": 1,
         "computational_bio": 2,
         "formulation": 2,
+        "iot": 5,
         "biomanufacturing": 1,
         "ag_inputs": 2
       },
@@ -31215,7 +31217,7 @@ window.STARTUP_THEMES_DATA = {
         "waste_circular": 1
       },
       "countries": {
-        "Brazil": 29,
+        "Brazil": 28,
         "Argentina": 16,
         "Chile": 4,
         "USA": 1,
@@ -31229,28 +31231,24 @@ window.STARTUP_THEMES_DATA = {
       "cluster_id": 1,
       "label": "Food Systems & Alt Proteins — Fish",
       "keywords": "fish · aquaculture · antibiotics · meat",
-      "size": 38,
+      "size": 35,
       "bio_themes": {
-        "Bioinputs & Crop Resilience": 8,
+        "Bioinputs & Crop Resilience": 6,
         "Therapeutics": 5,
         "Biomanufacturing & Fermentation Economy": 8,
         "Food Systems & Alt Proteins": 13,
         "Nature & Ecosystem Tech": 2,
-        "Diagnostics & Health Access": 1,
         "Biomaterials & Circular Economy": 1
       },
       "tech_codes": {
-        "ag_inputs": 5,
+        "ag_inputs": 4,
         "therapeutics": 3,
-        "microbial": 2,
-        "iot": 3,
         "bioinformatics": 1,
+        "iot": 2,
         "ai_ml": 3,
         "biomanufacturing": 8,
         "fermentation": 9,
         "water_tech": 1,
-        "saas_marketplace": 1,
-        "diagnostics": 1,
         "biomaterials": 1
       },
       "industry_codes": {
@@ -31261,17 +31259,16 @@ window.STARTUP_THEMES_DATA = {
         "veterinary": 1
       },
       "countries": {
-        "Chile": 15,
+        "Chile": 14,
         "Brazil": 6,
-        "Mexico": 7,
         "Uruguay": 1,
+        "Mexico": 6,
         "Colombia": 2,
         "Costa Rica": 2,
         "Argentina": 3,
-        "USA": 1,
-        "Peru": 1
+        "USA": 1
       },
-      "n_funded": 12,
+      "n_funded": 11,
       "n_featured": 0
     },
     {
@@ -31289,7 +31286,7 @@ window.STARTUP_THEMES_DATA = {
         "therapeutics": 27,
         "diagnostics": 3,
         "robotics": 1,
-        "ai_ml": 20,
+        "ai_ml": 19,
         "iot": 1,
         "microbial": 1,
         "synbio": 3,
@@ -31299,10 +31296,10 @@ window.STARTUP_THEMES_DATA = {
         "bioinformatics": 1
       },
       "industry_codes": {
-        "human_health": 26,
+        "human_health": 25,
         "row_crops": 4,
         "materials_packaging": 4,
-        "therapeutics_industry": 26,
+        "therapeutics_industry": 25,
         "diagnostics_industry": 4,
         "specialty_chem": 1,
         "veterinary": 1,
@@ -31317,30 +31314,30 @@ window.STARTUP_THEMES_DATA = {
         "Argentina": 15,
         "Colombia": 1
       },
-      "n_funded": 28,
+      "n_funded": 27,
       "n_featured": 1
     },
     {
       "cluster_id": 6,
       "label": "Food Systems & Alt Proteins — Novel Ingredients",
       "keywords": "novel ingredients · functional · shelf · metabolic",
-      "size": 26,
+      "size": 27,
       "bio_themes": {
-        "Food Systems & Alt Proteins": 24,
+        "Food Systems & Alt Proteins": 25,
         "Biomaterials & Circular Economy": 1,
         "Bioinputs & Crop Resilience": 1
       },
       "tech_codes": {
         "biomanufacturing": 3,
-        "ai_ml": 9,
+        "ai_ml": 10,
         "computational_bio": 1,
         "fermentation": 7,
         "saas_marketplace": 1,
         "iot": 3,
         "synbio": 1,
         "microbial": 4,
-        "formulation": 6,
-        "green_chem": 1,
+        "formulation": 7,
+        "green_chem": 2,
         "biomaterials": 4,
         "nanotech": 2,
         "bioinformatics": 2,
@@ -31349,37 +31346,38 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": {
         "aquaculture": 2,
         "personal_care": 4,
-        "row_crops": 22,
+        "row_crops": 23,
         "biomanufacturing_industry": 8,
-        "materials_packaging": 4,
+        "materials_packaging": 5,
         "human_health": 9,
         "specialty_crops": 2,
         "specialty_chem": 1,
-        "food_ingredients": 16,
-        "carbon": 3,
+        "food_ingredients": 17,
+        "carbon": 4,
         "biodiversity": 3,
+        "animal_protein": 1,
         "waste_circular": 1
       },
       "countries": {
-        "Argentina": 16,
+        "Argentina": 17,
         "Brazil": 1,
         "Mexico": 4,
         "Chile": 4,
         "Colombia": 1
       },
-      "n_funded": 22,
+      "n_funded": 23,
       "n_featured": 1
     },
     {
       "cluster_id": 16,
       "label": "Therapeutics — Cancer",
       "keywords": "cancer · therapeutics · metabolic · therapeutic",
-      "size": 26,
+      "size": 25,
       "bio_themes": {
-        "Therapeutics": 26
+        "Therapeutics": 25
       },
       "tech_codes": {
-        "therapeutics": 18,
+        "therapeutics": 17,
         "nanotech": 2,
         "ai_ml": 4,
         "iot": 1,
@@ -31395,7 +31393,7 @@ window.STARTUP_THEMES_DATA = {
       },
       "countries": {
         "Chile": 3,
-        "Brazil": 15,
+        "Brazil": 14,
         "Netherlands": 1,
         "Uruguay": 2,
         "Argentina": 3,
@@ -31409,14 +31407,14 @@ window.STARTUP_THEMES_DATA = {
       "cluster_id": 2,
       "label": "Biomaterials & Circular Economy — Biobased Chemistry",
       "keywords": "materials · biobased chemistry · recovery · energy",
-      "size": 25,
+      "size": 24,
       "bio_themes": {
-        "Biomaterials & Circular Economy": 22,
+        "Biomaterials & Circular Economy": 21,
         "Nature & Ecosystem Tech": 3
       },
       "tech_codes": {
         "iot": 4,
-        "ai_ml": 14,
+        "ai_ml": 13,
         "saas_marketplace": 1,
         "enzymatic": 2,
         "biomanufacturing": 5,
@@ -31429,13 +31427,13 @@ window.STARTUP_THEMES_DATA = {
         "green_chem": 2,
         "water_tech": 2,
         "nanotech": 2,
-        "clean_energy": 4,
+        "clean_energy": 3,
         "computational_bio": 1,
         "blockchain": 1
       },
       "industry_codes": {
         "waste_circular": 1,
-        "carbon": 17,
+        "carbon": 16,
         "diagnostics_industry": 2,
         "human_health": 4,
         "materials_packaging": 18,
@@ -31444,7 +31442,7 @@ window.STARTUP_THEMES_DATA = {
         "biomanufacturing_industry": 9,
         "specialty_chem": 7,
         "therapeutics_industry": 1,
-        "energy": 4,
+        "energy": 3,
         "water": 1,
         "food_ingredients": 1
       },
@@ -31453,61 +31451,57 @@ window.STARTUP_THEMES_DATA = {
         "Netherlands": 1,
         "Uruguay": 2,
         "Chile": 4,
-        "Mexico": 2
+        "Mexico": 1
       },
-      "n_funded": 25,
+      "n_funded": 24,
       "n_featured": 2
     },
     {
       "cluster_id": 15,
       "label": "Diagnostics & Health Access — Diagnostics",
       "keywords": "diagnostics · device · medtech · nanomedicine",
-      "size": 24,
+      "size": 23,
       "bio_themes": {
         "Diagnostics & Health Access": 14,
         "Therapeutics": 8,
-        "Biomaterials & Circular Economy": 1,
-        "Food Systems & Alt Proteins": 1
+        "Biomaterials & Circular Economy": 1
       },
       "tech_codes": {
         "diagnostics": 15,
-        "ai_ml": 14,
+        "ai_ml": 13,
         "therapeutics": 12,
         "medical_devices": 4,
         "biomaterials": 2,
         "iot": 8,
         "microbial": 2,
-        "formulation": 4,
+        "formulation": 3,
         "bioinformatics": 2,
-        "green_chem": 1,
         "robotics": 1,
         "nanotech": 1,
         "remote_sensing": 1
       },
       "industry_codes": {
         "human_health": 20,
-        "row_crops": 7,
+        "row_crops": 6,
         "diagnostics_industry": 15,
         "therapeutics_industry": 13,
-        "materials_packaging": 3,
+        "materials_packaging": 2,
         "biodiversity": 1,
         "personal_care": 1,
         "biomanufacturing_industry": 1,
         "specialty_chem": 1,
         "veterinary": 2,
-        "food_ingredients": 2,
-        "animal_protein": 1,
-        "carbon": 1
+        "food_ingredients": 1
       },
       "countries": {
-        "Argentina": 16,
+        "Argentina": 15,
         "Chile": 3,
         "Brazil": 2,
         "Mexico": 1,
         "Costa Rica": 1,
         "Uruguay": 1
       },
-      "n_funded": 21,
+      "n_funded": 20,
       "n_featured": 0
     },
     {
@@ -31585,11 +31579,10 @@ window.STARTUP_THEMES_DATA = {
       "cluster_id": 7,
       "label": "Therapeutics — Biopharmaceutical",
       "keywords": "biopharmaceutical · organ · therapeutic · medicine",
-      "size": 19,
+      "size": 18,
       "bio_themes": {
         "Therapeutics": 16,
-        "Biomanufacturing & Fermentation Economy": 2,
-        "Bioinputs & Crop Resilience": 1
+        "Biomanufacturing & Fermentation Economy": 2
       },
       "tech_codes": {
         "nanotech": 2,
@@ -31621,7 +31614,7 @@ window.STARTUP_THEMES_DATA = {
       "countries": {
         "Colombia": 2,
         "Uruguay": 2,
-        "Argentina": 10,
+        "Argentina": 9,
         "PR": 1,
         "Chile": 2,
         "Brazil": 2
@@ -31633,17 +31626,18 @@ window.STARTUP_THEMES_DATA = {
       "cluster_id": 18,
       "label": "Bioinputs & Crop Resilience — Pest",
       "keywords": "pest · biocontrol · biologicals · crop",
-      "size": 14,
+      "size": 16,
       "bio_themes": {
-        "Bioinputs & Crop Resilience": 14
+        "Bioinputs & Crop Resilience": 16
       },
       "tech_codes": {
-        "ag_inputs": 9,
+        "ag_inputs": 10,
         "biomanufacturing": 2,
         "fermentation": 1,
-        "microbial": 2,
-        "iot": 1,
+        "microbial": 4,
+        "iot": 2,
         "ai_ml": 4,
+        "saas_marketplace": 1,
         "nanotech": 1
       },
       "industry_codes": {
@@ -31656,31 +31650,32 @@ window.STARTUP_THEMES_DATA = {
       },
       "countries": {
         "Brazil": 12,
-        "Mexico": 1,
-        "Chile": 1
+        "Mexico": 2,
+        "Chile": 2
       },
-      "n_funded": 7,
+      "n_funded": 8,
       "n_featured": 0
     },
     {
       "cluster_id": 5,
       "label": "Biomanufacturing & Fermentation Economy — Precision Fermentation",
       "keywords": "bioindustrial · precision fermentation · enzymes · platforms",
-      "size": 13,
+      "size": 15,
       "bio_themes": {
-        "Biomanufacturing & Fermentation Economy": 13
+        "Biomanufacturing & Fermentation Economy": 15
       },
       "tech_codes": {
-        "biomanufacturing": 10,
-        "ai_ml": 11,
+        "iot": 3,
+        "ai_ml": 12,
+        "robotics": 1,
+        "biomanufacturing": 11,
         "enzymatic": 4,
-        "fermentation": 4,
-        "synbio": 4,
+        "fermentation": 5,
+        "synbio": 5,
         "ag_inputs": 2,
         "therapeutics": 4,
         "bioinformatics": 2,
         "diagnostics": 3,
-        "iot": 2,
         "microbial": 2,
         "computational_bio": 1,
         "nanotech": 1,
@@ -31700,66 +31695,13 @@ window.STARTUP_THEMES_DATA = {
         "biodiversity": 1
       },
       "countries": {
-        "Brazil": 4,
+        "Brazil": 5,
         "Argentina": 8,
+        "Mexico": 1,
         "USA": 1
       },
       "n_funded": 11,
       "n_featured": 2
-    },
-    {
-      "cluster_id": 19,
-      "label": "Food Systems & Alt Proteins — Precision Fermentation",
-      "keywords": "dairy · diagnostics · brazilian · precision fermentation",
-      "size": 13,
-      "bio_themes": {
-        "Biomaterials & Circular Economy": 1,
-        "Biomanufacturing & Fermentation Economy": 2,
-        "Food Systems & Alt Proteins": 4,
-        "Diagnostics & Health Access": 2,
-        "Bioinputs & Crop Resilience": 2,
-        "Nature & Ecosystem Tech": 1,
-        "Therapeutics": 1
-      },
-      "tech_codes": {
-        "green_chem": 1,
-        "ai_ml": 8,
-        "biomaterials": 1,
-        "synbio": 1,
-        "biomanufacturing": 3,
-        "fermentation": 6,
-        "microbial": 4,
-        "iot": 4,
-        "bioinformatics": 1,
-        "diagnostics": 2,
-        "formulation": 1,
-        "therapeutics": 2
-      },
-      "industry_codes": {
-        "human_health": 8,
-        "personal_care": 1,
-        "row_crops": 11,
-        "biodiversity": 1,
-        "materials_packaging": 2,
-        "therapeutics_industry": 3,
-        "specialty_chem": 1,
-        "biomanufacturing_industry": 6,
-        "food_ingredients": 6,
-        "carbon": 2,
-        "diagnostics_industry": 2,
-        "veterinary": 1,
-        "aquaculture": 1,
-        "animal_protein": 2,
-        "specialty_crops": 1
-      },
-      "countries": {
-        "Brazil": 10,
-        "Chile": 1,
-        "Argentina": 1,
-        "Singapore": 1
-      },
-      "n_funded": 11,
-      "n_featured": 1
     },
     {
       "cluster_id": 22,
@@ -31797,6 +31739,41 @@ window.STARTUP_THEMES_DATA = {
       "n_featured": 1
     },
     {
+      "cluster_id": 9,
+      "label": "Bioinputs & Crop Resilience — Seed Treatment",
+      "keywords": "seed treatment · soil · biologicals · argentine",
+      "size": 11,
+      "bio_themes": {
+        "Bioinputs & Crop Resilience": 11
+      },
+      "tech_codes": {
+        "carbon_tech": 1,
+        "iot": 3,
+        "microbial": 3,
+        "ag_inputs": 6,
+        "ai_ml": 7,
+        "plant_breeding": 1,
+        "synbio": 2,
+        "nanotech": 1,
+        "fermentation": 1
+      },
+      "industry_codes": {
+        "row_crops": 9,
+        "carbon": 3,
+        "biodiversity": 2,
+        "soil_health": 3,
+        "human_health": 1,
+        "diagnostics_industry": 1,
+        "biomanufacturing_industry": 1
+      },
+      "countries": {
+        "Argentina": 10,
+        "Uruguay": 1
+      },
+      "n_funded": 9,
+      "n_featured": 1
+    },
+    {
       "cluster_id": 10,
       "label": "Biomaterials & Circular Economy — Antimicrobial",
       "keywords": "antimicrobial · textile · nanotechnology · materials",
@@ -31829,36 +31806,51 @@ window.STARTUP_THEMES_DATA = {
       "n_featured": 0
     },
     {
-      "cluster_id": 9,
-      "label": "Bioinputs & Crop Resilience — Seed Treatment",
-      "keywords": "seed treatment · soil · biologicals · argentine",
-      "size": 10,
+      "cluster_id": 19,
+      "label": "Food Systems & Alt Proteins — Precision Fermentation",
+      "keywords": "dairy · diagnostics · brazilian · precision fermentation",
+      "size": 11,
       "bio_themes": {
-        "Bioinputs & Crop Resilience": 10
+        "Biomaterials & Circular Economy": 1,
+        "Biomanufacturing & Fermentation Economy": 2,
+        "Food Systems & Alt Proteins": 5,
+        "Bioinputs & Crop Resilience": 2,
+        "Therapeutics": 1
       },
       "tech_codes": {
-        "carbon_tech": 1,
-        "iot": 3,
-        "microbial": 3,
-        "ag_inputs": 6,
+        "green_chem": 1,
         "ai_ml": 7,
-        "plant_breeding": 1,
-        "synbio": 2,
-        "nanotech": 1,
-        "fermentation": 1
+        "biomaterials": 1,
+        "synbio": 1,
+        "biomanufacturing": 3,
+        "fermentation": 6,
+        "microbial": 4,
+        "iot": 3,
+        "formulation": 1,
+        "therapeutics": 2,
+        "diagnostics": 1
       },
       "industry_codes": {
+        "human_health": 6,
+        "personal_care": 1,
         "row_crops": 9,
-        "carbon": 3,
-        "biodiversity": 2,
-        "soil_health": 3,
-        "human_health": 1,
-        "diagnostics_industry": 1,
-        "biomanufacturing_industry": 1
+        "biodiversity": 1,
+        "materials_packaging": 2,
+        "therapeutics_industry": 3,
+        "specialty_chem": 1,
+        "biomanufacturing_industry": 6,
+        "food_ingredients": 5,
+        "carbon": 1,
+        "veterinary": 1,
+        "aquaculture": 1,
+        "animal_protein": 2,
+        "diagnostics_industry": 1
       },
       "countries": {
-        "Argentina": 9,
-        "Uruguay": 1
+        "Brazil": 8,
+        "Chile": 1,
+        "Argentina": 1,
+        "Singapore": 1
       },
       "n_funded": 9,
       "n_featured": 1
@@ -31867,22 +31859,22 @@ window.STARTUP_THEMES_DATA = {
       "cluster_id": 4,
       "label": "Nature & Ecosystem Tech — Energy",
       "keywords": "energy · planetary · carbon · circular",
-      "size": 9,
+      "size": 10,
       "bio_themes": {
-        "Nature & Ecosystem Tech": 7,
+        "Nature & Ecosystem Tech": 8,
         "Biomaterials & Circular Economy": 2
       },
       "tech_codes": {
-        "clean_energy": 3,
-        "ai_ml": 7,
+        "clean_energy": 4,
+        "ai_ml": 8,
         "saas_marketplace": 1,
         "biomaterials": 1,
         "carbon_tech": 2,
         "blockchain": 1
       },
       "industry_codes": {
-        "energy": 2,
-        "carbon": 8,
+        "energy": 3,
+        "carbon": 9,
         "diagnostics_industry": 1,
         "human_health": 1,
         "waste_circular": 2,
@@ -31893,12 +31885,12 @@ window.STARTUP_THEMES_DATA = {
       "countries": {
         "USA": 2,
         "Argentina": 2,
-        "Mexico": 1,
+        "Mexico": 2,
         "Chile": 2,
         "Colombia": 1,
         "Costa Rica": 1
       },
-      "n_funded": 9,
+      "n_funded": 10,
       "n_featured": 1
     },
     {
