@@ -1,5 +1,5 @@
 window.STARTUP_THEMES_DATA = {
-  "computed_at": "2026-05-27T22:01:22",
+  "computed_at": "2026-05-27T23:12:35",
   "model": "intfloat/multilingual-e5-small",
   "stats": {
     "total_startups": 487,
@@ -2195,7 +2195,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "diagnostics and medtech",
       "emergent_theme": "diagnostics & health access — laboratory · laboratory · diagnosis · portable · diagnostics",
       "summary": "Technology-based solutions for the healthcare industry. Develops health tech tools for clinical applications.",
-      "one_liner": "Technology-based solutions for the healthcare industry.",
+      "one_liner": "Manufactures veterinary diagnostic equipment — ECG machines, blood pressure monitors, and multiparameter systems — for animal healthcare, with telemedicine and remote interpretation services.",
       "cluster_id": 0,
       "cluster_label": "Diagnostics & Health Access — Diagnostics",
       "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
@@ -2235,6 +2235,7 @@ window.STARTUP_THEMES_DATA = {
       "scale_tags": [],
       "market_label": "",
       "self_cats": [
+        "Diagnostics",
         "HealthTech"
       ],
       "investor_ids": []
@@ -4036,7 +4037,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "computational biology and scientific software",
       "emergent_theme": "",
       "summary": "Integrates AI with next-generation sequencing (NGS) for genomic data analysis. Applications in oncology rare diseases agriculture and evolutionary biology.",
-      "one_liner": "Integrates AI with next-generation sequencing (NGS) for genomic data analysis.",
+      "one_liner": "Brazilian genomic data analysis company offering mutational signature profiling for oncology diagnostics, metagenomics for agriculture and livestock health, and computational genomics education, based in Sao Paulo.",
       "cluster_id": 0,
       "cluster_label": "Diagnostics & Health Access — Diagnostics",
       "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
@@ -4714,7 +4715,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "precision agriculture and resource intelligence",
       "emergent_theme": "antifungal biopesticides",
       "summary": "Mexican biotech developing eco-friendly biopesticides to combat fungal crop infections. Reduces dependency on chemical pesticides for healthier harvests. Based in Guadalajara.",
-      "one_liner": "Develops eco-friendly biopesticides targeting fungal crop infections to reduce chemical pesticide dependency for Mexican farmers.",
+      "one_liner": "Swiss agtech developing biofungicides, biostimulants, and edible coatings derived from mold-resistant plant extracts for crop protection and post-harvest shelf-life extension, with R&D and operations in Guadalajara, Mexico.",
       "cluster_id": 1,
       "cluster_label": "Food Systems & Alt Proteins — Fish",
       "cluster_keywords": "fish · aquaculture · antibiotics · meat",
@@ -4754,6 +4755,7 @@ window.STARTUP_THEMES_DATA = {
       "market_label": "",
       "self_cats": [
         "Ag Biologicals",
+        "AgTech",
         "Biotech"
       ],
       "investor_ids": []
@@ -6408,7 +6410,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "food systems & alt proteins — fish · fish · antibiotics · meat · aquaculture",
       "summary": "Biotech company focused on developing vaccines, with initial work on COVID-19. Advances vaccine research and development for infectious diseases affecting global public health.",
-      "one_liner": "Biotech company focused on developing vaccines, with initial work on COVID-19.",
+      "one_liner": "Develops single-dose adenoviral vector vaccines for respiratory and mosquito-borne infectious diseases prevalent in the Southern Hemisphere, formulated for balanced TH1/TH2 immune response.",
       "cluster_id": 1,
       "cluster_label": "Food Systems & Alt Proteins — Fish",
       "cluster_keywords": "fish · aquaculture · antibiotics · meat",
@@ -9156,7 +9158,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "",
       "summary": "Technology company transforming plant waste into key molecules for biomanufacturing, enabling circular bioeconomy applications. Portfolio company of Savia Ventures.",
-      "one_liner": "Technology company transforming plant waste into key molecules for biomanufacturing, enabling circular bioeconomy…",
+      "one_liner": "Converts agricultural and food-processing waste into bio-based feedstocks for biomanufacturing using the TRACE platform; produces Microbe Munch, a low-cost microbial sugar derived from food industry byproducts.",
       "cluster_id": 3,
       "cluster_label": "Biomaterials & Circular Economy — Packaging",
       "cluster_keywords": "packaging · biodegradable · plastics · leather",
@@ -9190,7 +9192,8 @@ window.STARTUP_THEMES_DATA = {
       "market_label": "",
       "self_cats": [
         "Biomanufacturing",
-        "Biotech"
+        "AgTech",
+        "FoodTech"
       ],
       "investor_ids": [
         "savia_ventures"
@@ -13378,7 +13381,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "therapeutics — biopharmaceutical · biopharmaceutical · commercialization · antibodies · healthcare",
       "summary": "Biotechnology company developing therapies for tropical diseases affecting underserved populations in Latin America and the Caribbean. Advances neglected disease drug development.",
-      "one_liner": "Biotechnology company developing therapies for tropical diseases affecting underserved populations in Latin America and…",
+      "one_liner": "Develops antiviral therapeutics for dengue fever and other mosquito-borne diseases (Chikungunya, Zika, Yellow Fever), targeting underserved tropical populations in Latin America and the Caribbean.",
       "cluster_id": 7,
       "cluster_label": "Therapeutics — Biopharmaceutical",
       "cluster_keywords": "biopharmaceutical · organ · therapeutic · medicine",
@@ -13418,6 +13421,7 @@ window.STARTUP_THEMES_DATA = {
       "scale_tags": [],
       "market_label": "",
       "self_cats": [
+        "Therapeutics",
         "Biotech"
       ],
       "investor_ids": []
@@ -13756,7 +13760,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "biomanufacturing and bioindustrial platforms",
       "emergent_theme": "industrial biotech and molecular tools",
       "summary": "Biotech company focused on development, transfer and manufacturing of biosimilars and biologics, from clones and processes to preclinical and clinical batches.",
-      "one_liner": "Biopharma development and biosimilar platform.",
+      "one_liner": "Provides end-to-end biosimilar development and technology transfer services — upstream/downstream process development through cGMP manufacturing — for insulins, monoclonal antibodies, hormones, and cytokines.",
       "cluster_id": 7,
       "cluster_label": "Therapeutics — Biopharmaceutical",
       "cluster_keywords": "biopharmaceutical · organ · therapeutic · medicine",
@@ -13978,7 +13982,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "therapeutics — biopharmaceutical · biopharmaceutical · commercialization · antibodies · healthcare",
       "summary": "Biotechnology company producing therapeutic proteins and pharmaceutical products for the healthcare sector. Specializes in biopharmaceutical manufacturing for clinical use.",
-      "one_liner": "Biotechnology company producing therapeutic proteins and pharmaceutical products for the healthcare sector.",
+      "one_liner": "Develops Proteoral, a recombinant protein excipient that converts injectable biologics (hormones, monoclonal antibodies, peptides) into oral capsule formulations by transiently opening intestinal tight junctions.",
       "cluster_id": 7,
       "cluster_label": "Therapeutics — Biopharmaceutical",
       "cluster_keywords": "biopharmaceutical · organ · therapeutic · medicine",
@@ -14019,6 +14023,7 @@ window.STARTUP_THEMES_DATA = {
       "market_label": "",
       "self_cats": [
         "Therapeutics",
+        "Precision Ferm",
         "Biotech"
       ],
       "investor_ids": []
@@ -23854,7 +23859,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "therapeutic and regenerative biology",
       "summary": "AI-first therapeutic biotech that identifies small molecules to reprogram microRNA networks in complex diseases. Enter the thesis for therapeutics and regenerative medicine.",
-      "one_liner": "AI-driven microRNA therapeutics platform.",
+      "one_liner": "AI-first biotech that identifies small molecules to reprogram disease-specific microRNA regulatory networks, targeting complex conditions like cancer and neurodegeneration where single-protein drug models fail.",
       "cluster_id": 17,
       "cluster_label": "Therapeutics — Therapeutics Regenerative",
       "cluster_keywords": "therapeutics regenerative · tissue · medicine · extracellular",
@@ -23906,7 +23911,6 @@ window.STARTUP_THEMES_DATA = {
       "market_label": "ai-driven microRNA therapeutics platform",
       "self_cats": [
         "Therapeutics",
-        "AI / Data",
         "Biotech"
       ],
       "investor_ids": [
@@ -24095,7 +24099,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "ag biologicals and crop resilience",
       "emergent_theme": "microbial biofertilizers",
       "summary": "Mexican agricultural biotechnology company developing microbial-based biofertilizers (AZOFER MICORRIZAFER) for sustainable crop production. Located in Morelos Science Park.",
-      "one_liner": "Develops microbial biofertilizers and bioinputs using beneficial microorganisms as sustainable alternatives to chemical fertilizers.",
+      "one_liner": "Mexico's first agrobiotechnology company, commercializing UNAM-licensed Azofer (nitrogen-fixing bacteria) and Micorrizafer (mycorrhizal fungi) biofertilizers for sustainable crop nutrition since 1994.",
       "cluster_id": 18,
       "cluster_label": "Bioinputs & Crop Resilience — Pest",
       "cluster_keywords": "pest · biocontrol · biologicals · crop",
@@ -24252,7 +24256,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "ag biologicals and crop resilience",
       "emergent_theme": "ag biologicals and crop resilience",
       "summary": "Chilean plant-biotechnology company developing botanical-origin active ingredients for crop protection and human-health applications. Its platform uses proprietary plant tissue culture to produce consistent raw materials without relying only on field-grown botanical extraction. It belongs inside BIO VC LATAM as a biobased active-ingredient and ag biologicals company, with relevance to crop resilience, natural product supply chains and plant-cell bioprocessing.",
-      "one_liner": "Botanical active ingredients from plant tissue culture.",
+      "one_liner": "Chilean plant biotech developing botanical-origin active ingredients for crop protection using proprietary plant tissue culture, enabling consistent supply without dependence on field-grown extraction.",
       "cluster_id": 18,
       "cluster_label": "Bioinputs & Crop Resilience · Pest",
       "cluster_keywords": "pest · biocontrol · biologicals · crop",
