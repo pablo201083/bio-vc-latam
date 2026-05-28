@@ -1,5 +1,5 @@
 window.STARTUP_THEMES_DATA = {
-  "computed_at": "2026-05-28T20:06:17",
+  "computed_at": "2026-05-28T20:24:30",
   "model": "intfloat/multilingual-e5-small",
   "stats": {
     "total_startups": 487,
@@ -25142,15 +25142,15 @@ window.STARTUP_THEMES_DATA = {
       ],
       "website": "http://www.biotimize.com.br/",
       "macro_theme": "biomanufacturing and bioindustrial platforms",
-      "emergent_theme": "food systems & alt proteins — precision fermentation · dairy · bioprocessing · precision fermentation · protein",
-      "summary": "Brazilian company specialized in bioprocess development for biopharmaceutical production from mammalian cells, yeast, and bacteria. A leading contract bioprocessing organization in Latin America.",
+      "emergent_theme": "biomanufacturing & platform technologies — cdmo · biopharmaceutical · contract manufacturing · biosimilars · monoclonal antibodies",
+      "summary": "Brazilian biopharmaceutical CDMO (Contract Development and Manufacturing Organization) and the first biological CDMO in operation in Brazil. Provides end-to-end bioprocess development and GMP-grade manufacturing services for recombinant proteins, monoclonal antibodies, and biosimilars using mammalian cell culture (CHO, HEK), yeast, and bacterial expression systems. Supports global biotech and pharma companies, research institutions, and the public sector in scaling clinical and commercial biologics production in Latin America. Raised a USD 30M Series A to build the first full-scale biological ",
       "one_liner": "Brazilian company specialized in bioprocess development for biopharmaceutical production from mammalian cells, yeast,…",
       "cluster_id": 19,
-      "cluster_label": "Food Systems & Alt Proteins — Precision Fermentation",
-      "cluster_keywords": "dairy · diagnostics · brazilian · precision fermentation",
+      "cluster_label": "Biomanufacturing & Platform Technologies — CDMOs & Bioprocess Development",
+      "cluster_keywords": "cdmo · biopharmaceutical · contract manufacturing · biosimilars · mammalian-cells",
       "cluster_confidence": 0.998,
-      "x": 2.223,
-      "y": 2.6,
+      "x": -8.55,
+      "y": -1.95,
       "is_outlier": false,
       "tech_codes": [
         "biomanufacturing",
@@ -25181,14 +25181,20 @@ window.STARTUP_THEMES_DATA = {
       "domain_tags": [],
       "tech_tags": [
         "biomanufacturing",
-        "fermentation"
+        "cdmo",
+        "bioreactor",
+        "monoclonal-antibodies",
+        "biosimilars",
+        "recombinant-proteins",
+        "gmp",
+        "mammalian-cell-culture"
       ],
       "scale_tags": [],
       "market_label": "",
       "self_cats": [
         "Therapeutics",
-        "Biomanufacturing",
-        "Biotech"
+        "Precision Ferm",
+        "Biomanufacturing"
       ],
       "investor_ids": []
     },
@@ -32570,7 +32576,7 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "v": "fermentation",
-        "n": 38
+        "n": 37
       },
       {
         "v": "remote-sensing",
