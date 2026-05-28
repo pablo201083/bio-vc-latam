@@ -1,7 +1,7 @@
 # Metodología de Clasificación y Clustering Semántico
 ## BIO LATAM Ecosystem Tracker — Documento Técnico
 
-**Versión:** 2.1  
+**Versión:** 2.2  
 **Fecha:** 2026-05-28  
 **Autores:** Equipo BIO LATAM / CAB  
 **Estado:** Vigente
@@ -39,10 +39,18 @@ La solución adoptada parte de la semántica del texto como señal primaria, com
 | 4 | **Food Systems & Alt Proteins** | Aplicación final | Proteínas alternativas, fermentación alimentaria, ingredientes funcionales, seguridad alimentaria |
 | 5 | **Biomanufacturing & Platform Technologies** | **Plataforma habilitante** | Infraestructura de bioproducción, plataformas de fermentación industrial, enzimas, digital twins para bioprocessos, gene editing como servicio, synthetic biology tools |
 | 6 | **Biomaterials & Circular Economy** | Aplicación final | Biomateriales, bioplásticos, economía circular, packaging bio-based |
-| 7 | **Nature & Ecosystem Tech** | Aplicación final | Monitoreo ambiental, biodiversidad, créditos de carbono, restauración de ecosistemas, bioenergía |
-| 8 | **Farm Intelligence** | Aplicación final | Sensores agrícolas, analítica de datos agro, decisión de cultivo, precision farming |
+| 7 | **Nature & Ecosystem Tech** | Aplicación final | Restauración de ecosistemas, soluciones basadas en naturaleza, MRV de biodiversidad, mercados de carbono/naturaleza, trazabilidad de cadenas agroalimentarias |
+| 8 | **Farm Intelligence** | Aplicación final | Sensores agrícolas, analítica de datos agro, decisión de cultivo, precision farming, agrifintech y crédito agrícola |
 
 **Nota sobre Biomanufacturing & Platform Technologies:** es el único tema de naturaleza "plataforma habilitante" en lugar de "sector de aplicación final". Sus startups venden capacidades tecnológicas (infraestructura de fermentación, enzimas industriales, herramientas de diseño biológico) que sirven a múltiples sectores destino. Esta distinción es intencional: captura una categoría estratégicamente diferente — el substrato tecnológico que hace posible el resto del ecosistema — y tiene implicancias distintas para política de I+D e inversión en deep tech.
+
+**Nota sobre Nature & Ecosystem Tech:** se alinea con la categoría emergente "Nature Tech" definida como "tecnología que habilita, acelera y escala la transición hacia una economía nature-positive" (Antom, 2025). Internamente se organiza en 4 funciones operativas derivadas del framework Nature Tech:
+- **MRV & Biodiversity Intelligence** (CL13): monitoreo y verificación via satélites, sensores, eDNA
+- **Restoration & Nature Finance** (CL14): restauración forestal a escala + mercados de carbono/biodiversidad
+- **Traceability & Transparency** (CL23): trazabilidad de cadenas agroalimentarias y cumplimiento ambiental
+- **Nature-Based Solutions** (CL4): soluciones biológicas/regenerativas (ocean carbon removal, biochar, etc.)
+
+**Nota sobre Farm Intelligence:** incluye agrifintech y plataformas de crédito agrícola (CL22), que el clustering semántico agrupa con el resto del Farm Intelligence por su base común de datos agro, inteligencia de campo y servicios al productor.
 
 ---
 
