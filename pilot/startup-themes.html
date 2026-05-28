@@ -8,15 +8,60 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css?v=20260422p">
   <style>
-    .topbar{display:flex;align-items:center;gap:28px;padding:14px 22px;background:var(--panel);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);margin-bottom:18px}
-    .topbar-brand{flex:1;min-width:0}
-    .topbar-eyebrow{margin:0 0 4px;font-size:.62rem;text-transform:uppercase;letter-spacing:.18em;color:var(--accent);display:block;font-weight:600;font-family:var(--sans)}
-    .topbar-title{margin:0 0 4px;font-size:1.9rem;line-height:1;letter-spacing:-.03em;font-family:Georgia,"Times New Roman",serif}
-    .topbar-sub{margin:0;font-size:.8rem;color:var(--muted);font-family:var(--sans)}
-    .topbar-stats{display:flex;gap:24px;align-items:center;padding:0 4px;border-left:1px solid var(--line);border-right:1px solid var(--line);padding:0 28px}
-    .topbar-stat{display:flex;flex-direction:column;align-items:center;text-align:center;min-width:52px}
-    .topbar-stat strong{font-size:1.5rem;font-weight:700;line-height:1;display:block}
-    .topbar-stat span{font-size:.61rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-top:3px;display:block}
+    /* ── Site header ── */
+    .site-header{
+      background:linear-gradient(158deg,#fdf8f2 0%,rgba(23,139,135,.06) 100%);
+      border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);
+      position:relative;overflow:hidden;margin-bottom:18px;
+    }
+    .site-header::before{
+      content:'';position:absolute;left:0;top:0;bottom:0;width:4px;
+      background:linear-gradient(180deg,var(--accent) 0%,rgba(23,139,135,.15) 100%);
+      border-radius:0 2px 2px 0;z-index:1;
+    }
+    .sh-band{display:flex;align-items:center;gap:20px;padding:18px 24px 18px 32px;}
+    .sh-left{flex:0 0 auto;}
+    .sh-eyebrow{font-size:.62rem;text-transform:uppercase;letter-spacing:.18em;color:var(--accent);font-weight:700;margin:0 0 5px;font-family:var(--sans);}
+    .sh-title{font-size:clamp(1.7rem,2.2vw,2.2rem);font-weight:800;line-height:1;letter-spacing:-.03em;margin:0 0 5px;font-family:Georgia,"Times New Roman",serif;}
+    .sh-sub{font-size:.75rem;color:var(--muted);margin:0;font-family:var(--sans);line-height:1.4;}
+    .sh-sep{width:1px;height:52px;background:var(--line);flex-shrink:0;}
+    /* Theme legend */
+    .sh-legend{flex:1;min-width:0;}
+    .sh-theme-pills{display:flex;flex-wrap:wrap;gap:5px;}
+    .sh-tpill{
+      display:inline-flex;align-items:center;gap:5px;
+      padding:4px 10px 4px 8px;border-radius:999px;
+      border:1px solid var(--line);background:rgba(255,255,255,.7);
+      font-size:.63rem;font-weight:600;white-space:nowrap;cursor:default;
+      transition:background .1s,border-color .1s;
+    }
+    .sh-tpill:hover{background:rgba(255,255,255,.95);}
+    .sh-tpill-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;}
+    .sh-tpill-name{color:var(--muted);}
+    /* Stats pill + nav */
+    .sh-right{display:flex;flex-direction:column;align-items:flex-end;gap:10px;flex-shrink:0;}
+    .sh-stats{display:flex;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:rgba(255,255,255,.85);}
+    .sh-stat{display:flex;flex-direction:column;align-items:center;padding:9px 18px;border-right:1px solid var(--line);min-width:72px;}
+    .sh-stat:last-child{border-right:none;}
+    .sh-sv{font-size:1.35rem;font-weight:800;line-height:1;color:var(--ink);}
+    .sh-sl{font-size:.58rem;text-transform:uppercase;letter-spacing:.09em;color:var(--muted);margin-top:3px;font-weight:600;text-align:center;}
+    .sh-nav{display:flex;gap:6px;}
+    .sh-link{
+      font-size:.72rem;color:var(--muted);text-decoration:none;
+      padding:5px 13px;border:1px solid var(--line);border-radius:8px;
+      background:rgba(255,255,255,.6);transition:border-color .12s,color .12s;
+      white-space:nowrap;
+    }
+    .sh-link:hover{color:var(--accent);border-color:var(--accent);}
+    /* Footer strip */
+    .sh-foot{
+      border-top:1px solid var(--line);padding:6px 32px;
+      background:rgba(247,243,236,.6);
+      font-size:.62rem;color:var(--muted);
+      display:flex;gap:14px;align-items:center;flex-wrap:wrap;
+    }
+    .sh-foot-dot{width:6px;height:6px;border-radius:50%;background:var(--accent);flex-shrink:0;}
+    /* keep .topbar-link for any legacy references in sidebar etc */
     .topbar-link{font-size:.8rem;color:var(--muted);text-decoration:none;white-space:nowrap;border:1px solid var(--line);border-radius:7px;padding:6px 12px;transition:color .12s,border-color .12s;background:rgba(255,255,255,.7)}
     .topbar-link:hover{color:var(--ink);border-color:rgba(150,140,130,.5)}
 
@@ -187,25 +232,56 @@
     .a-tt-theme{font-size:.7rem;font-weight:600;margin-bottom:4px}
     .a-tt-body{font-size:.72rem;color:var(--muted);line-height:1.4}
 
-    @media(max-width:1100px){.themes-layout{grid-template-columns:1fr}.topbar{flex-wrap:wrap;gap:16px}.analysis-module{grid-template-columns:1fr}}
-    @media(max-width:680px){.topbar-stats{display:none}}
+    @media(max-width:1100px){
+      .themes-layout{grid-template-columns:1fr}
+      .analysis-module{grid-template-columns:1fr}
+      .sh-band{flex-wrap:wrap;gap:14px;}
+      .sh-sep{display:none;}
+      .sh-legend{order:3;flex-basis:100%;}
+      .sh-right{flex-direction:row;align-items:center;}
+    }
+    @media(max-width:680px){
+      .sh-stats{display:none;}
+      .sh-theme-pills{display:none;}
+      .sh-foot{display:none;}
+    }
   </style>
 </head>
 <body>
 <div class="page-shell">
-  <header class="topbar">
-    <div class="topbar-brand">
-      <p class="topbar-eyebrow">Clusters semánticos · T3</p>
-      <h1 class="topbar-title">BIO LATAM</h1>
-      <p class="topbar-sub">Mapa semántico del ecosistema biotech latinoamericano</p>
+  <header class="site-header">
+    <div class="sh-band">
+      <div class="sh-left">
+        <p class="sh-eyebrow">Ecosistema BioTech Latinoamericano</p>
+        <h1 class="sh-title">BIO LATAM</h1>
+        <p class="sh-sub">Mapa semántico de startups, inversores y tecnologías</p>
+      </div>
+      <div class="sh-sep"></div>
+      <div class="sh-legend">
+        <div class="sh-theme-pills" id="sh-theme-legend"><!-- populated by JS --></div>
+      </div>
+      <div class="sh-right">
+        <div class="sh-stats">
+          <div class="sh-stat">
+            <span class="sh-sv" id="meta-total">—</span>
+            <span class="sh-sl">startups</span>
+          </div>
+          <div class="sh-stat">
+            <span class="sh-sv" id="meta-clusters">—</span>
+            <span class="sh-sl">temas</span>
+          </div>
+        </div>
+        <div class="sh-nav">
+          <a href="./cluster-quality.html" class="sh-link">Calidad →</a>
+          <a href="./index.html" class="sh-link">← Piloto</a>
+        </div>
+      </div>
     </div>
-    <div class="topbar-stats">
-      <div class="topbar-stat"><strong id="meta-total">—</strong><span>startups</span></div>
-      <div class="topbar-stat"><strong id="meta-clusters">—</strong><span>clusters</span></div>
-      <div class="topbar-stat"><strong id="meta-model">—</strong><span>modelo</span></div>
+    <div class="sh-foot">
+      <span class="sh-foot-dot"></span>
+      <span id="meta-model">—</span>
+      · HDBSCAN min_cluster_size=8 · UMAP 10D→2D · reclassify_v2
     </div>
-    <a href="./cluster-quality.html" class="topbar-link">Calidad clusters →</a>
-    <a href="./index.html" class="topbar-link">← Piloto</a>
   </header>
 
   <section class="themes-layout">
@@ -358,14 +434,16 @@ const THEME_DESC = D.bio_theme_descriptions || {};
 
 // ── Editorial category palette — 7 bottom-up categories ─────────────────────
 const THEME_PAL={
-  "Therapeutics":                           "#7033BC",
-  "Diagnostics & Health Access":            "#1A6DB5",
-  "Food Systems & Alt Proteins":            "#C25A2A",
-  "Bioinputs & Crop Resilience":            "#2A7A42",
-  "Nature & Ecosystem Tech":               "#127A6E",
-  "Farm Intelligence":                      "#2E4E8C",
-  "Biomaterials & Circular Economy":        "#8B6D14",
-  "Biomanufacturing & Fermentation Economy":"#6B8C3A",
+  "Therapeutics":                              "#7033BC",
+  "Diagnostics & Health Access":               "#1A6DB5",
+  "Food Systems & Alt Proteins":               "#C25A2A",
+  "Bioinputs & Crop Resilience":               "#2A7A42",
+  "Nature & Ecosystem Tech":                   "#127A6E",
+  "Farm Intelligence":                         "#2E4E8C",
+  "Biomaterials & Circular Economy":           "#8B6D14",
+  "Biomanufacturing & Platform Technologies":  "#6B8C3A",
+  // legacy alias — keeps old data working during transition
+  "Biomanufacturing & Fermentation Economy":   "#6B8C3A",
 };
 const THEME_ADJ="#8a7d70"; // eco-adjacent / unclassified
 
@@ -374,7 +452,7 @@ const THEME_ORDER=[
   "Therapeutics","Diagnostics & Health Access","Food Systems & Alt Proteins",
   "Bioinputs & Crop Resilience","Nature & Ecosystem Tech",
   "Farm Intelligence","Biomaterials & Circular Economy",
-  "Biomanufacturing & Fermentation Economy"
+  "Biomanufacturing & Platform Technologies"
 ];
 
 function themeCol(bio_theme){
@@ -417,8 +495,31 @@ let activeTheme=null;
 
 // Stats header
 document.getElementById("meta-model").textContent=D.model;
-document.getElementById("meta-total").textContent=D.stats.total_startups+" en el mapa";
-document.getElementById("meta-clusters").textContent=THEME_ORDER.filter(t=>themeMap.has(t)).length+" bio themes · "+D.stats.featured_count+" featured";
+document.getElementById("meta-total").textContent=D.stats.total_startups;
+document.getElementById("meta-clusters").textContent=THEME_ORDER.filter(t=>themeMap.has(t)).length;
+
+// Theme legend pills
+const SHORT_THEME_LEGEND={
+  "Therapeutics":"Therapeutics",
+  "Diagnostics & Health Access":"Diagnostics",
+  "Food Systems & Alt Proteins":"Food Systems",
+  "Bioinputs & Crop Resilience":"Bioinputs",
+  "Nature & Ecosystem Tech":"Nature Tech",
+  "Farm Intelligence":"Farm Intel.",
+  "Biomaterials & Circular Economy":"Biomaterials",
+  "Biomanufacturing & Platform Technologies":"Biomanufacturing",
+};
+const legendEl=document.getElementById("sh-theme-legend");
+if(legendEl){
+  legendEl.innerHTML=THEME_ORDER.filter(t=>themeMap.has(t)).map(t=>{
+    const col=THEME_PAL[t]||THEME_ADJ;
+    const nm=SHORT_THEME_LEGEND[t]||t.split(" ")[0];
+    return `<span class="sh-tpill" title="${t}">
+      <span class="sh-tpill-dot" style="background:${col}"></span>
+      <span class="sh-tpill-name">${nm}</span>
+    </span>`;
+  }).join("");
+}
 document.getElementById("s-total").textContent=D.stats.total_startups+" startups";
 document.getElementById("s-featured").textContent=D.stats.featured_count+" destacadas";
 document.getElementById("s-funded").textContent=D.stats.funded_count+" con inversión";
@@ -877,6 +978,7 @@ function updateHalos(){
       "Nature & Ecosystem Tech":"Nature Tech",
       "Farm Intelligence":"Farm Intel",
       "Biomaterials & Circular Economy":"Biomaterials",
+      "Biomanufacturing & Platform Technologies":"Biomanufacturing",
       "Biomanufacturing & Fermentation Economy":"Biomanufacturing",
     };
     const shortName=LABEL_SHORT[theme]||theme.split(" ")[0];
@@ -1692,6 +1794,7 @@ const THEME_PAL={
   "Nature & Ecosystem Tech":"#127A6E",
   "Farm Intelligence":"#2E4E8C",
   "Biomaterials & Circular Economy":"#8B6D14",
+  "Biomanufacturing & Platform Technologies":"#6B8C3A",
   "Biomanufacturing & Fermentation Economy":"#6B8C3A",
 };
 const THEME_ADJ="#8a7d70";
@@ -1710,6 +1813,7 @@ const SHORT={
   "Nature & Ecosystem Tech":"Nature Tech",
   "Farm Intelligence":"Farm Intel",
   "Biomaterials & Circular Economy":"Biomaterials",
+  "Biomanufacturing & Platform Technologies":"Biomanufacturing",
   "Biomanufacturing & Fermentation Economy":"Biomanufacturing",
 };
 
@@ -1945,7 +2049,7 @@ ro.observe(svg.parentElement);
   startups.forEach(s=>{if(s.bio_theme)counts[s.bio_theme]=(counts[s.bio_theme]||0)+1;});
   const ORDER=[
     "Therapeutics","Diagnostics & Health Access",
-    "Biomanufacturing & Fermentation Economy","Biomaterials & Circular Economy",
+    "Biomanufacturing & Platform Technologies","Biomaterials & Circular Economy",
     "Bioinputs & Crop Resilience","Food Systems & Alt Proteins",
     "Farm Intelligence","Nature & Ecosystem Tech",
   ];
@@ -2001,6 +2105,7 @@ const THEME_PAL={
   "Nature & Ecosystem Tech":"#127A6E",
   "Farm Intelligence":"#2E4E8C",
   "Biomaterials & Circular Economy":"#8B6D14",
+  "Biomanufacturing & Platform Technologies":"#6B8C3A",
   "Biomanufacturing & Fermentation Economy":"#6B8C3A",
 };
 const THEME_ADJ="#8a7d70";
@@ -2008,7 +2113,7 @@ function tcol(t){return THEME_PAL[t]||THEME_ADJ;}
 
 const MACRO_ORDER=[
   {name:"Ciencias de la Vida", themes:["Therapeutics","Diagnostics & Health Access"], color:"#6a3aaa"},
-  {name:"Plataformas Bio",     themes:["Biomanufacturing & Fermentation Economy","Biomaterials & Circular Economy"], color:"#7a8c3a"},
+  {name:"Plataformas Bio",     themes:["Biomanufacturing & Platform Technologies","Biomaterials & Circular Economy"], color:"#7a8c3a"},
   {name:"AgBio",               themes:["Bioinputs & Crop Resilience","Food Systems & Alt Proteins"], color:"#2a7a42"},
   {name:"AgDigital",           themes:["Farm Intelligence","Nature & Ecosystem Tech"], color:"#1e5e7a"},
 ];
@@ -2017,7 +2122,7 @@ MACRO_ORDER.forEach(m=>m.themes.forEach(t=>{MACRO_MAP[t]=m.name;}));
 
 const THEME_ORDER_DENDRO=[
   "Therapeutics","Diagnostics & Health Access",
-  "Biomanufacturing & Fermentation Economy","Biomaterials & Circular Economy",
+  "Biomanufacturing & Platform Technologies","Biomaterials & Circular Economy",
   "Bioinputs & Crop Resilience","Food Systems & Alt Proteins",
   "Farm Intelligence","Nature & Ecosystem Tech",
 ];
@@ -2038,7 +2143,9 @@ const SHORT_THEME={
   "Nature & Ecosystem Tech":"Nature Tech",
   "Farm Intelligence":"Farm Intel",
   "Biomaterials & Circular Economy":"Biomaterials",
-  "Biomanufacturing & Fermentation Economy":"Biomanufacturing",
+  "Biomanufacturing & Platform Technologies":"Biomanufacturing",
+  "Biomanufacturing & Platform Technologies":"Biomanufacturing",
+  "Biomanufacturing & Fermentation Economy":"Biomanufacturing", // legacy alias
 };
 
 // Sort: macro → theme (THEME_ORDER_DENDRO) → cluster → name
