@@ -1,9 +1,9 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="es">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Calidad de Clusters — BIO LATAM</title>
+  <title>Calidad de Clusters â€” BIO LATAM</title>
   <link rel="stylesheet" href="./styles.css?v=20260422l">
   <style>
     .metric-grid {
@@ -17,7 +17,7 @@
     .kpi-value { font-size:1.7rem;font-weight:700;line-height:1.05; }
     .kpi-sub   { font-size:.72rem;color:var(--muted);margin-top:4px; }
 
-    /* ── Theme grid ── */
+    /* â”€â”€ Theme grid â”€â”€ */
     .theme-grid {
       display: grid;
       grid-template-columns: repeat(4, minmax(0,1fr));
@@ -36,7 +36,7 @@
     .bar-track{ width:100%;height:7px;border-radius:999px;background:#eadfce;overflow:hidden;margin-top:8px; }
     .bar-fill { height:100%;border-radius:999px; }
 
-    /* ── Layout principal ── */
+    /* â”€â”€ Layout principal â”€â”€ */
     .sc-grid { display:grid;grid-template-columns:300px minmax(0,1fr);gap:16px;align-items:start; }
     .sc-list  { display:grid;gap:6px; }
     .sc-item  {
@@ -52,7 +52,7 @@
     .sc-bar  { flex:1;height:5px;border-radius:999px;background:#eadfce;overflow:hidden; }
     .sc-bar-f{ height:100%;border-radius:999px; }
 
-    /* ── Detail ── */
+    /* â”€â”€ Detail â”€â”€ */
     .detail-panel { display:grid;gap:16px; }
     .detail-header{ border-bottom:1px solid var(--line);padding-bottom:12px; }
     .detail-title { font-size:1.1rem;font-weight:700;line-height:1.3;margin-bottom:3px; }
@@ -64,7 +64,7 @@
     .q-val  { font-size:1.28rem;font-weight:700;line-height:1; }
     .q-sub  { font-size:.67rem;color:var(--muted);margin-top:3px; }
 
-    /* ── Sección semántica ── */
+    /* â”€â”€ SecciÃ³n semÃ¡ntica â”€â”€ */
     .sem-section { display:grid;gap:12px; }
     .sem-block   { border:1px solid var(--line);border-radius:13px;background:rgba(255,255,255,.78);padding:13px 15px; }
     .sem-lbl     { font-size:.65rem;text-transform:uppercase;letter-spacing:.09em;color:var(--accent);font-weight:700;margin-bottom:10px; }
@@ -82,7 +82,7 @@
     .tok-fill { height:100%;border-radius:999px; }
     .tok-n    { font-size:.68rem;color:var(--muted);text-align:right;font-variant-numeric:tabular-nums; }
 
-    /* Confianza distribución */
+    /* Confianza distribuciÃ³n */
     .conf-bands { display:grid;grid-template-columns:repeat(3,1fr);gap:8px; }
     .conf-band  { border:1px solid var(--line);border-radius:11px;padding:9px 11px;text-align:center; }
     .conf-val   { font-size:1.2rem;font-weight:700; }
@@ -157,15 +157,15 @@
 
   <header class="hero">
     <div class="hero-copy">
-      <p class="eyebrow">Semántica · T3</p>
+      <p class="eyebrow">SemÃ¡ntica Â· T3</p>
       <h1>Calidad de Clusters</h1>
-      <p class="lede">Keywords del pipeline, vocabulario del texto propio y confianza de asignación por sub-cluster semántico. Para trabajo de curaduría y revisión de la taxonomía.</p>
+      <p class="lede">Keywords del pipeline, vocabulario del texto propio y confianza de asignaciÃ³n por sub-cluster semÃ¡ntico. Para trabajo de curadurÃ­a y revisiÃ³n de la taxonomÃ­a.</p>
     </div>
     <div class="hero-meta">
-      <div class="meta-card"><span class="meta-label">Startups</span><strong id="kpi-total">—</strong></div>
-      <div class="meta-card"><span class="meta-label">Sub-clusters</span><strong id="kpi-clusters">—</strong></div>
-      <div class="meta-card"><span class="meta-label">Conf. media</span><strong id="kpi-conf">—</strong></div>
-      <div class="meta-card"><span class="meta-label">Volver</span><strong><a href="./startup-themes.html" style="color:inherit">← Mapa</a></strong></div>
+      <div class="meta-card"><span class="meta-label">Startups</span><strong id="kpi-total">â€”</strong></div>
+      <div class="meta-card"><span class="meta-label">Sub-clusters</span><strong id="kpi-clusters">â€”</strong></div>
+      <div class="meta-card"><span class="meta-label">Conf. media</span><strong id="kpi-conf">â€”</strong></div>
+      <div class="meta-card"><span class="meta-label">Volver</span><strong><a href="./startup-themes.html" style="color:inherit">â† Mapa</a></strong></div>
     </div>
   </header>
 
@@ -174,10 +174,10 @@
   <section class="panel" id="alerts-panel" style="display:none">
     <div class="panel-head">
       <h2>Clusters para revisar</h2>
-      <span class="pill muted" id="alerts-pill">—</span>
+      <span class="pill muted" id="alerts-pill">â€”</span>
     </div>
     <div style="font-size:.78rem;color:var(--muted);margin-bottom:12px">
-      Ordenados por prioridad: % baja confianza × tamaño. Clusters que más se benefician de re-curaduría o re-clusterización.
+      Ordenados por prioridad: % baja confianza Ã— tamaÃ±o. Clusters que mÃ¡s se benefician de re-curadurÃ­a o re-clusterizaciÃ³n.
     </div>
     <div id="alerts-list" class="alert-list"></div>
   </section>
@@ -192,21 +192,21 @@
 
   <section class="panel" id="theme-detail" style="display:none">
     <div class="panel-head">
-      <h2 id="detail-theme-name">—</h2>
-      <span class="pill muted" id="detail-theme-pill">—</span>
+      <h2 id="detail-theme-name">â€”</h2>
+      <span class="pill muted" id="detail-theme-pill">â€”</span>
     </div>
     <div class="sc-grid">
       <div>
         <div style="font-size:.67rem;text-transform:uppercase;letter-spacing:.09em;color:var(--muted);margin-bottom:8px;font-weight:700">Sub-clusters</div>
         <div class="sc-list" id="sc-list"></div>
       </div>
-      <div id="sc-detail"><div class="empty-state">Seleccioná un sub-cluster</div></div>
+      <div id="sc-detail"><div class="empty-state">SeleccionÃ¡ un sub-cluster</div></div>
     </div>
   </section>
 
 </div>
 
-<script src="./startup-themes-data.js?v=20260527j"></script>
+<script src="./startup-themes-data.js?v=20260527k"></script>
 <script>
 (function(){
 "use strict";
@@ -214,7 +214,7 @@ const D = window.STARTUP_THEMES_DATA;
 if(!D||!D.startups){ document.querySelector("h1").textContent="Sin datos"; return; }
 const startups = D.startups;
 
-// ── Paleta ────────────────────────────────────────────────────────────────
+// â”€â”€ Paleta â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const THEME_PAL = {
   "Therapeutics":"#7033BC","Diagnostics & Health Access":"#1A6DB5",
   "Food Systems & Alt Proteins":"#C25A2A","Bioinputs & Crop Resilience":"#2A7A42",
@@ -228,7 +228,7 @@ function tcol(t){ return THEME_PAL[t]||"#8a7d70"; }
 function qcol(q){ return q>=7.5?"#16a34a":q>=5?"#d97706":"#dc2626"; }
 function pct(n,t){ return t?Math.round(n/t*100):0; }
 
-// ── Stopwords para TF-IDF ─────────────────────────────────────────────────
+// â”€â”€ Stopwords para TF-IDF â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const STOP = new Set([
   "a","an","the","and","or","of","in","for","to","with","that","this","is","are",
   "its","it","on","at","as","by","from","into","via","per","una","para","de","la",
@@ -271,7 +271,7 @@ function computeTFIDF(clusterItems, allItems, topN=12){
   return scores.sort((a,b)=>b[2]-a[2]).slice(0,topN);
 }
 
-// ── Métricas ──────────────────────────────────────────────────────────────
+// â”€â”€ MÃ©tricas â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function metrics(list){
   const n=list.length;
   const avgConf = list.reduce((s,x)=>s+(x.cluster_confidence||0),0)/(n||1);
@@ -286,7 +286,7 @@ function metrics(list){
   return {n,avgConf,nHigh,nMid,nLow,nOutlier,avgQ,nLiner,nSummary,nFunding};
 }
 
-// ── Agrupar ───────────────────────────────────────────────────────────────
+// â”€â”€ Agrupar â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const byTheme={};
 startups.forEach(s=>{
   const t=s.bio_theme||"Sin clasificar";
@@ -295,7 +295,7 @@ startups.forEach(s=>{
 });
 
 function groupByCluster(list){
-  // Group by cluster_id (unique clusters) — avoids merging clusters with same name
+  // Group by cluster_id (unique clusters) â€” avoids merging clusters with same name
   const map={};
   list.forEach(s=>{
     const id = s.cluster_id != null ? String(s.cluster_id) : "outlier";
@@ -311,14 +311,14 @@ function groupByCluster(list){
       // If two clusters share the same label, disambiguate with first keyword
       let displayLabel = label;
       if(labelCount[label]>1 && keywords){
-        const firstKw = keywords.split("·")[0].trim();
+        const firstKw = keywords.split("Â·")[0].trim();
         if(firstKw) displayLabel = label + " (" + firstKw + ")";
       }
       return {id, label, displayLabel, keywords, items};
     });
 }
 
-// ── Global KPIs ───────────────────────────────────────────────────────────
+// â”€â”€ Global KPIs â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const gm = metrics(startups);
 const allSubClusters = new Set(startups.map(s=>s.cluster_label).filter(Boolean));
 document.getElementById("kpi-total").textContent    = gm.n;
@@ -326,11 +326,11 @@ document.getElementById("kpi-clusters").textContent = allSubClusters.size;
 document.getElementById("kpi-conf").textContent     = (gm.avgConf*100).toFixed(0)+"%";
 
 [
-  {label:"Conf. alta (≥70%)",val:pct(gm.nHigh,gm.n)+"%",sub:gm.nHigh+" startups bien asignadas"},
+  {label:"Conf. alta (â‰¥70%)",val:pct(gm.nHigh,gm.n)+"%",sub:gm.nHigh+" startups bien asignadas"},
   {label:"Conf. baja (<40%)", val:pct(gm.nLow,gm.n)+"%", sub:gm.nLow+" startups ambiguas"},
   {label:"Outliers",          val:pct(gm.nOutlier,gm.n)+"%",sub:gm.nOutlier+" fuera de cluster"},
-  {label:"Con descripción",   val:pct(gm.nLiner,gm.n)+"%", sub:"one-liner para TF-IDF"},
-  {label:"Calidad media",     val:gm.avgQ.toFixed(1)+"/10", sub:"datos de curaduría"},
+  {label:"Con descripciÃ³n",   val:pct(gm.nLiner,gm.n)+"%", sub:"one-liner para TF-IDF"},
+  {label:"Calidad media",     val:gm.avgQ.toFixed(1)+"/10", sub:"datos de curadurÃ­a"},
 ].forEach(k=>{
   document.getElementById("global-kpis").insertAdjacentHTML("beforeend",`
     <div class="kpi-card">
@@ -340,13 +340,13 @@ document.getElementById("kpi-conf").textContent     = (gm.avgConf*100).toFixed(0
     </div>`);
 });
 
-// ── Vocabulary bleed: terms that appear in multiple cluster keyword sets ──────
-const clusterKwMap = {}; // cluster_id → Set of keywords
+// â”€â”€ Vocabulary bleed: terms that appear in multiple cluster keyword sets â”€â”€â”€â”€â”€â”€
+const clusterKwMap = {}; // cluster_id â†’ Set of keywords
 startups.forEach(s=>{
   if(s.cluster_id == null) return;
   const cid = String(s.cluster_id);
   if(!clusterKwMap[cid]) clusterKwMap[cid]=new Set();
-  (s.cluster_keywords||"").split("·").map(k=>k.trim()).filter(Boolean)
+  (s.cluster_keywords||"").split("Â·").map(k=>k.trim()).filter(Boolean)
     .forEach(k=>clusterKwMap[cid].add(k.toLowerCase()));
 });
 // Count how many clusters each keyword appears in
@@ -355,7 +355,7 @@ Object.values(clusterKwMap).forEach(kwSet=>{
   kwSet.forEach(kw=>{ kwClusterCount[kw]=(kwClusterCount[kw]||0)+1; });
 });
 
-// ── Alerts: clusters prioritized for review ───────────────────────────────
+// â”€â”€ Alerts: clusters prioritized for review â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function buildAlerts(allClusters){
   // allClusters: array of {label, theme, items}
   const scored = allClusters.map(cl=>{
@@ -385,7 +385,7 @@ function buildAlerts(allClusters){
 let _allClusters=[];
 // We'll populate this after byTheme is built
 
-// ── Theme grid ────────────────────────────────────────────────────────────
+// â”€â”€ Theme grid â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const orderedThemes=[
   ...THEME_ORDER.filter(t=>byTheme[t]),
   ...Object.keys(byTheme).filter(t=>!THEME_ORDER.includes(t)),
@@ -400,7 +400,7 @@ orderedThemes.forEach(theme=>{
   btn.className="theme-card";btn.dataset.theme=theme;
   btn.innerHTML=`
     <div class="tc-name"><span class="tc-dot" style="background:${col}"></span>${theme}</div>
-    <div class="tc-count">${list.length} startups · conf ${(m.avgConf*100).toFixed(0)}%</div>
+    <div class="tc-count">${list.length} startups Â· conf ${(m.avgConf*100).toFixed(0)}%</div>
     <div class="bar-track"><div class="bar-fill" style="width:${m.avgConf*100}%;background:${col}"></div></div>`;
   btn.addEventListener("click",()=>selectTheme(theme));
   themeGrid.appendChild(btn);
@@ -408,7 +408,7 @@ orderedThemes.forEach(theme=>{
   groupByCluster(list).forEach(cl=>_allClusters.push(cl));
 });
 
-// ── Render alerts panel ───────────────────────────────────────────────────
+// â”€â”€ Render alerts panel â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 (function renderAlerts(){
   const notable=buildAlerts(_allClusters);
   if(!notable.length) return;
@@ -421,8 +421,8 @@ orderedThemes.forEach(theme=>{
     // Severity CSS
     const severityCls=lowPct>0.3?"alert-critical":n>50?"alert-large":"alert-warn";
     const dispLabel=cl.displayLabel||cl.label;
-    const subName=dispLabel.includes("·")?dispLabel.split("·").pop().trim():dispLabel;
-    const themeShort=cl.label.includes("·")?cl.label.split("·")[0].trim():cl.label;
+    const subName=dispLabel.includes("Â·")?dispLabel.split("Â·").pop().trim():dispLabel;
+    const themeShort=cl.label.includes("Â·")?cl.label.split("Â·")[0].trim():cl.label;
     const col=tcol(themeShort);
     const row=document.createElement("div");
     row.className=`alert-row ${severityCls}`;
@@ -463,7 +463,7 @@ orderedThemes.forEach(theme=>{
   });
 })();
 
-// ── Selección de tema ─────────────────────────────────────────────────────
+// â”€â”€ SelecciÃ³n de tema â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function selectTheme(theme){
   document.querySelectorAll(".theme-card").forEach(b=>b.classList.toggle("active",b.dataset.theme===theme));
   const list=byTheme[theme]||[];
@@ -472,7 +472,7 @@ function selectTheme(theme){
   detail.style.display="";
   document.getElementById("detail-theme-name").textContent=theme;
   document.getElementById("detail-theme-pill").textContent=
-    `${list.length} startups · conf media ${(m.avgConf*100).toFixed(0)}%`;
+    `${list.length} startups Â· conf media ${(m.avgConf*100).toFixed(0)}%`;
 
   const clusters=groupByCluster(list);
   const scList=document.getElementById("sc-list");
@@ -502,7 +502,7 @@ function selectTheme(theme){
   detail.scrollIntoView({behavior:"smooth",block:"start"});
 }
 
-// ── Render detalle ────────────────────────────────────────────────────────
+// â”€â”€ Render detalle â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function renderDetail(cl,theme){
   const m=metrics(cl.items);
   const col=tcol(theme);
@@ -511,7 +511,7 @@ function renderDetail(cl,theme){
   // Keywords del pipeline (vienen del cluster_keywords de las startups del cluster)
   const kwFreq={};
   cl.items.forEach(s=>{
-    (s.cluster_keywords||"").split("·").map(k=>k.trim()).filter(Boolean)
+    (s.cluster_keywords||"").split("Â·").map(k=>k.trim()).filter(Boolean)
       .forEach(k=>{ kwFreq[k]=(kwFreq[k]||0)+1; });
   });
   const kwSorted=Object.entries(kwFreq).sort((a,b)=>b[1]-a[1]);
@@ -531,14 +531,14 @@ function renderDetail(cl,theme){
         </div>`).join("")
     : '<span style="color:var(--muted);font-size:.78rem">Sin texto disponible</span>';
 
-  // Distribución de confianza
+  // DistribuciÃ³n de confianza
   const confBands=[
-    {lbl:"Alta ≥ 70%", n:m.nHigh, col:"#16a34a"},
-    {lbl:"Media 40–70%",n:m.nMid,  col:"#d97706"},
+    {lbl:"Alta â‰¥ 70%", n:m.nHigh, col:"#16a34a"},
+    {lbl:"Media 40â€“70%",n:m.nMid,  col:"#d97706"},
     {lbl:"Baja < 40%",  n:m.nLow,  col:"#dc2626"},
   ];
 
-  // Startups ordenadas por confianza asc (las más ambiguas primero — más útiles para revisar)
+  // Startups ordenadas por confianza asc (las mÃ¡s ambiguas primero â€” mÃ¡s Ãºtiles para revisar)
   const sorted=cl.items.slice().sort((a,b)=>(a.cluster_confidence||0)-(b.cluster_confidence||0));
   const rows=sorted.map(s=>{
     const conf=s.cluster_confidence||0;
@@ -554,8 +554,8 @@ function renderDetail(cl,theme){
           <div class="st-conf-bar"><div class="st-conf-f" style="width:${confPct}%;background:${confCol}"></div></div>
         </div>
         <div class="st-cell" style="color:${confCol};font-weight:600">${confPct}%</div>
-        <div class="st-cell">${s.one_liner?(s.one_liner.slice(0,60)+(s.one_liner.length>60?"…":"")):
-          (s.summary?s.summary.slice(0,60)+"…":'<span style="opacity:.4">sin texto</span>')}</div>
+        <div class="st-cell">${s.one_liner?(s.one_liner.slice(0,60)+(s.one_liner.length>60?"â€¦":"")):
+          (s.summary?s.summary.slice(0,60)+"â€¦":'<span style="opacity:.4">sin texto</span>')}</div>
         <div class="st-cell"><span class="st-band ${band}">${qs}</span></div>
       </div>`;
   }).join("");
@@ -565,17 +565,17 @@ function renderDetail(cl,theme){
 
       <div class="detail-header">
         <div class="detail-title">${cl.displayLabel||cl.label||"(sin nombre)"}</div>
-        <div class="detail-sub">${n} startups · cluster ID ${cl.id} · confianza media ${(m.avgConf*100).toFixed(0)}% · ${m.nOutlier} outliers</div>
+        <div class="detail-sub">${n} startups Â· cluster ID ${cl.id} Â· confianza media ${(m.avgConf*100).toFixed(0)}% Â· ${m.nOutlier} outliers</div>
       </div>
 
-      <!-- KPIs semánticos -->
+      <!-- KPIs semÃ¡nticos -->
       <div class="q-grid">
         <div class="q-card">
           <div class="q-label">Conf. media</div>
           <div class="q-val" style="color:${qcol(m.avgConf*10)}">${(m.avgConf*100).toFixed(0)}<span style="font-size:.65em;font-weight:400;color:var(--muted)">%</span></div>
         </div>
         <div class="q-card">
-          <div class="q-label">Conf. alta ≥70%</div>
+          <div class="q-label">Conf. alta â‰¥70%</div>
           <div class="q-val">${pct(m.nHigh,n)}<span style="font-size:.65em;font-weight:400;color:var(--muted)">%</span></div>
           <div class="q-sub">${m.nHigh} de ${n}</div>
         </div>
@@ -628,9 +628,9 @@ function renderDetail(cl,theme){
         <div class="tok-bars">${tfidfBars}</div>
       </div>
 
-      <!-- Distribución de confianza -->
+      <!-- DistribuciÃ³n de confianza -->
       <div class="sem-block">
-        <div class="sem-lbl">Distribución de confianza de asignación</div>
+        <div class="sem-lbl">DistribuciÃ³n de confianza de asignaciÃ³n</div>
         <div class="conf-bands">
           ${confBands.map(b=>`
             <div class="conf-band">
@@ -641,19 +641,19 @@ function renderDetail(cl,theme){
         </div>
       </div>
 
-      <!-- Startups ordenadas por confianza asc (las más ambiguas primero) -->
+      <!-- Startups ordenadas por confianza asc (las mÃ¡s ambiguas primero) -->
       <div>
         <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px">
           <div style="font-size:.67rem;text-transform:uppercase;letter-spacing:.09em;color:var(--muted);font-weight:700">
-            Startups — ordenadas por confianza ↑ (ambiguas primero)
+            Startups â€” ordenadas por confianza â†‘ (ambiguas primero)
           </div>
-          <button id="export-btn" style="all:unset;cursor:pointer;font-size:.68rem;color:var(--accent);border:1px solid var(--accent);border-radius:7px;padding:3px 10px;white-space:nowrap" title="Descargar lista para revisión">
-            ↓ Exportar para revisión
+          <button id="export-btn" style="all:unset;cursor:pointer;font-size:.68rem;color:var(--accent);border:1px solid var(--accent);border-radius:7px;padding:3px 10px;white-space:nowrap" title="Descargar lista para revisiÃ³n">
+            â†“ Exportar para revisiÃ³n
           </button>
         </div>
         <div class="startup-table">
           <div class="st-head">
-            <span>Nombre</span><span>Conf.</span><span>Descripción</span><span>Calidad</span>
+            <span>Nombre</span><span>Conf.</span><span>DescripciÃ³n</span><span>Calidad</span>
           </div>
           ${rows}
         </div>
@@ -666,9 +666,9 @@ function renderDetail(cl,theme){
   if(exportBtn){
     exportBtn.addEventListener("click",()=>{
       const lines=[
-        `# Revisión cluster: ${cl.displayLabel||cl.label}  (ID ${cl.id})`,
-        `# ${n} startups · conf. media ${(m.avgConf*100).toFixed(0)}% · generado ${new Date().toLocaleDateString("es-AR")}`,
-        `# Columnas: ID | Nombre | Conf | Outlier | Bio-theme | Descripción`,
+        `# RevisiÃ³n cluster: ${cl.displayLabel||cl.label}  (ID ${cl.id})`,
+        `# ${n} startups Â· conf. media ${(m.avgConf*100).toFixed(0)}% Â· generado ${new Date().toLocaleDateString("es-AR")}`,
+        `# Columnas: ID | Nombre | Conf | Outlier | Bio-theme | DescripciÃ³n`,
         ""
       ];
       sorted.forEach(s=>{

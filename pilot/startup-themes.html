@@ -1,9 +1,9 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="es">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>BIO LATAM — Ecosistema de Innovación</title>
+  <title>BIO LATAM â€” Ecosistema de InnovaciÃ³n</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css?v=20260422p">
@@ -45,7 +45,7 @@
     .ct-tech{background:rgba(11,143,135,.07);color:var(--accent);border-color:rgba(11,143,135,.3)}
     .ct-ind{background:rgba(154,52,18,.06);color:#7a2e12;border-color:rgba(154,52,18,.22)}
 
-    /* ── Acordeón de detalle por card ── */
+    /* â”€â”€ AcordeÃ³n de detalle por card â”€â”€ */
     .cr-detail{display:none;margin-top:8px;padding-top:8px;border-top:1px solid rgba(217,206,190,.5)}
     .cr.active .cr-detail{display:block}
     .cr-det-sec{font-size:.62rem;font-weight:700;text-transform:uppercase;letter-spacing:.09em;color:var(--muted);margin:8px 0 3px}
@@ -68,24 +68,24 @@
     .fc-row{display:flex;flex-wrap:wrap;gap:4px}
     .fc{border-radius:7px;border:1.5px solid rgba(210,202,190,.75);background:#fff;color:var(--muted);font:inherit;font-size:.74rem;padding:4px 11px;cursor:pointer;transition:background .11s,color .11s,border-color .11s,box-shadow .11s;line-height:1.4;white-space:nowrap;user-select:none}
     .fc:hover{border-color:var(--accent);color:var(--ink);background:rgba(23,139,135,.04);box-shadow:0 1px 4px rgba(23,139,135,.1)}
-    /* Seleccionado: fondo sólido + blanco + × al final */
+    /* Seleccionado: fondo sÃ³lido + blanco + Ã— al final */
     .fc.active-tech{background:var(--accent);color:#fff;border-color:var(--accent);box-shadow:0 1px 6px rgba(23,139,135,.22)}
-    .fc.active-tech::after{content:" ×";opacity:.75;font-size:.88em;font-weight:400}
+    .fc.active-tech::after{content:" Ã—";opacity:.75;font-size:.88em;font-weight:400}
     .fc.active-ind{background:#7a2e12;color:#fff;border-color:#7a2e12;box-shadow:0 1px 6px rgba(122,46,18,.22)}
-    .fc.active-ind::after{content:" ×";opacity:.75;font-size:.88em;font-weight:400}
+    .fc.active-ind::after{content:" Ã—";opacity:.75;font-size:.88em;font-weight:400}
     .fc.active-country{background:#1e3a8a;color:#fff;border-color:#1e3a8a;box-shadow:0 1px 6px rgba(30,58,138,.22)}
-    .fc.active-country::after{content:" ×";opacity:.75;font-size:.88em;font-weight:400}
+    .fc.active-country::after{content:" Ã—";opacity:.75;font-size:.88em;font-weight:400}
     .fc.active-stage{background:#5b2d8e;color:#fff;border-color:#5b2d8e;box-shadow:0 1px 6px rgba(91,45,142,.22)}
-    .fc.active-stage::after{content:" ×";opacity:.75;font-size:.88em;font-weight:400}
+    .fc.active-stage::after{content:" Ã—";opacity:.75;font-size:.88em;font-weight:400}
     .fc.active-fund{background:#0b6e4f;color:#fff;border-color:#0b6e4f;box-shadow:0 1px 6px rgba(11,110,79,.22)}
-    .fc.active-fund::after{content:" ×";opacity:.75;font-size:.88em;font-weight:400}
+    .fc.active-fund::after{content:" Ã—";opacity:.75;font-size:.88em;font-weight:400}
     .fc.active-legacy{background:#6b5e52;color:#fff;border-color:#6b5e52;box-shadow:0 1px 6px rgba(107,94,82,.22)}
-    .fc.active-legacy::after{content:" ×";opacity:.75;font-size:.88em;font-weight:400}
+    .fc.active-legacy::after{content:" Ã—";opacity:.75;font-size:.88em;font-weight:400}
     .fp-sep{height:1px;background:var(--line);margin:4px 0}
     .chip-lbl{font-size:.69rem;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;align-self:center}
     .clear-fc{font-size:.72rem;padding:3px 9px;color:var(--muted);border-color:rgba(200,192,180,.5);background:transparent}
     .clear-fc:hover{color:var(--ink);border-color:var(--muted);background:rgba(0,0,0,.04)}
-    /* Sección de filtro con label + clear inline */
+    /* SecciÃ³n de filtro con label + clear inline */
     .fp-sec-head{display:flex;align-items:center;gap:8px;margin-bottom:3px}
     .fp-sec-lbl{font-size:.67rem;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;flex:0 0 auto}
     .fp-sec-clr{font-size:.67rem;color:var(--accent);background:none;border:none;cursor:pointer;padding:0 2px;line-height:1;display:none}
@@ -119,7 +119,7 @@
     .conf-leg{display:flex;align-items:center;gap:6px;font-size:.65rem;color:var(--muted);margin-left:auto;letter-spacing:.06em;text-transform:uppercase;font-weight:500}
     .cs{width:9px;height:9px;border-radius:999px;border:1px solid rgba(0,0,0,.12)}
 
-    /* ── Breadcrumbs — overlay sobre el canvas, no afecta su tamaño ── */
+    /* â”€â”€ Breadcrumbs â€” overlay sobre el canvas, no afecta su tamaÃ±o â”€â”€ */
     .breadcrumbs{display:none;flex-wrap:wrap;gap:5px;align-items:center;min-height:26px;
       position:absolute;top:58px;left:14px;right:14px;z-index:7;
       background:rgba(248,245,239,.88);backdrop-filter:blur(4px);
@@ -131,7 +131,7 @@
     .bc-all:hover{background:rgba(154,52,18,.15)}
     .bc-lbl{font-size:.67rem;color:var(--muted);letter-spacing:.09em;text-transform:uppercase;white-space:nowrap}
 
-    /* ── Filter panel — overlay flotante, no entra en el flex-flow ── */
+    /* â”€â”€ Filter panel â€” overlay flotante, no entra en el flex-flow â”€â”€ */
     .filter-panel{display:none;border:1px solid var(--line);border-radius:14px;background:rgba(255,252,247,.98);padding:10px 14px;gap:7px;flex-direction:column}
     .filter-panel.open{
       display:flex;
@@ -147,10 +147,10 @@
     #fund-chips{flex-wrap:wrap;overflow-x:visible;max-height:72px;overflow-y:auto}
     .filter-active{background:rgba(11,143,135,.1)!important;border-color:var(--accent)!important;color:var(--ink)!important}
 
-    /* ── Cluster halo labels (floating on SVG) ── */
+    /* â”€â”€ Cluster halo labels (floating on SVG) â”€â”€ */
     .halo-lbl{font-weight:700;pointer-events:none;font-family:inherit}
 
-    /* ── Analysis section (Scatter + Dendro) ────────────────────────────── */
+    /* â”€â”€ Analysis section (Scatter + Dendro) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .analysis-section{margin-top:20px;display:flex;flex-direction:column;gap:20px}
     .analysis-module{display:grid;grid-template-columns:280px minmax(0,1fr);background:var(--panel);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);overflow:hidden}
     .analysis-sidebar{padding:0;display:flex;flex-direction:column;border-right:1px solid var(--line);min-height:0}
@@ -195,27 +195,27 @@
 <div class="page-shell">
   <header class="topbar">
     <div class="topbar-brand">
-      <p class="topbar-eyebrow">Clusters semánticos · T3</p>
+      <p class="topbar-eyebrow">Clusters semÃ¡nticos Â· T3</p>
       <h1 class="topbar-title">BIO LATAM</h1>
-      <p class="topbar-sub">Mapa semántico del ecosistema biotech latinoamericano</p>
+      <p class="topbar-sub">Mapa semÃ¡ntico del ecosistema biotech latinoamericano</p>
     </div>
     <div class="topbar-stats">
-      <div class="topbar-stat"><strong id="meta-total">—</strong><span>startups</span></div>
-      <div class="topbar-stat"><strong id="meta-clusters">—</strong><span>clusters</span></div>
-      <div class="topbar-stat"><strong id="meta-model">—</strong><span>modelo</span></div>
+      <div class="topbar-stat"><strong id="meta-total">â€”</strong><span>startups</span></div>
+      <div class="topbar-stat"><strong id="meta-clusters">â€”</strong><span>clusters</span></div>
+      <div class="topbar-stat"><strong id="meta-model">â€”</strong><span>modelo</span></div>
     </div>
-    <a href="./cluster-quality.html" class="topbar-link">Calidad clusters →</a>
-    <a href="./index.html" class="topbar-link">← Piloto</a>
+    <a href="./cluster-quality.html" class="topbar-link">Calidad clusters â†’</a>
+    <a href="./index.html" class="topbar-link">â† Piloto</a>
   </header>
 
   <section class="themes-layout">
     <aside class="themes-sidebar">
       <div class="sidebar-head">
-        <div class="item-title">Clusters semánticos</div>
+        <div class="item-title">Clusters semÃ¡nticos</div>
         <div class="sidebar-stats">
-          <span id="s-total" class="s-chip s-chip-teal">—</span>
-          <span id="s-featured" class="s-chip s-chip-teal">—</span>
-          <span id="s-funded" class="s-chip s-chip-muted">—</span>
+          <span id="s-total" class="s-chip s-chip-teal">â€”</span>
+          <span id="s-featured" class="s-chip s-chip-teal">â€”</span>
+          <span id="s-funded" class="s-chip s-chip-muted">â€”</span>
         </div>
       </div>
       <div id="cluster-list" class="cluster-list"></div>
@@ -230,7 +230,7 @@
           <button id="btn-labels" class="lbl-btn" type="button">Nombres</button>
           <button id="btn-filter" class="lbl-btn" type="button">Filtros</button>
           <div class="srch-wrap">
-            <input id="srch-in" class="themes-select" type="search" placeholder="Buscar startup…" autocomplete="off" style="min-width:150px">
+            <input id="srch-in" class="themes-select" type="search" placeholder="Buscar startupâ€¦" autocomplete="off" style="min-width:150px">
             <div id="srch-res" class="srch-res"></div>
           </div>
         </div>
@@ -243,29 +243,29 @@
       </div>
       <div id="filter-panel" class="filter-panel">
         <div class="fp-row">
-          <div class="fp-sec-head"><span class="fp-sec-lbl">Fondo / Inversor</span><button id="clr-fund" class="fp-sec-clr" type="button">limpiar selección</button></div>
+          <div class="fp-sec-head"><span class="fp-sec-lbl">Fondo / Inversor</span><button id="clr-fund" class="fp-sec-clr" type="button">limpiar selecciÃ³n</button></div>
           <div id="fund-chips" class="fp-chips"></div>
         </div>
         <div class="fp-row">
-          <div class="fp-sec-head"><span class="fp-sec-lbl">País</span><button id="clr-country" class="fp-sec-clr" type="button">limpiar selección</button></div>
+          <div class="fp-sec-head"><span class="fp-sec-lbl">PaÃ­s</span><button id="clr-country" class="fp-sec-clr" type="button">limpiar selecciÃ³n</button></div>
           <div id="country-chips" class="fp-chips"></div>
         </div>
         <div class="fp-row">
-          <div class="fp-sec-head"><span class="fp-sec-lbl">Tecnología</span><button id="clr-tech" class="fp-sec-clr" type="button">limpiar selección</button></div>
+          <div class="fp-sec-head"><span class="fp-sec-lbl">TecnologÃ­a</span><button id="clr-tech" class="fp-sec-clr" type="button">limpiar selecciÃ³n</button></div>
           <div id="tech-chips" class="fp-chips"></div>
         </div>
         <div class="fp-row">
-          <div class="fp-sec-head"><span class="fp-sec-lbl">Industria</span><button id="clr-ind" class="fp-sec-clr" type="button">limpiar selección</button></div>
+          <div class="fp-sec-head"><span class="fp-sec-lbl">Industria</span><button id="clr-ind" class="fp-sec-clr" type="button">limpiar selecciÃ³n</button></div>
           <div id="ind-chips" class="fp-chips"></div>
         </div>
         <div class="fp-row">
-          <div class="fp-sec-head"><span class="fp-sec-lbl">Etapa</span><button id="clr-stage" class="fp-sec-clr" type="button">limpiar selección</button></div>
+          <div class="fp-sec-head"><span class="fp-sec-lbl">Etapa</span><button id="clr-stage" class="fp-sec-clr" type="button">limpiar selecciÃ³n</button></div>
           <div id="stage-chips" class="fp-chips"></div>
         </div>
         <div class="fp-sep"></div>
         <div class="fp-row">
           <div class="fp-sec-head">
-            <span class="fp-sec-lbl" style="opacity:.65">Cómo se describen</span>
+            <span class="fp-sec-lbl" style="opacity:.65">CÃ³mo se describen</span>
             <button id="clr-legacy" class="fp-sec-clr" type="button">limpiar</button>
           </div>
           <div id="legacy-chips" class="fp-chips" style="flex-wrap:wrap;overflow-x:visible"></div>
@@ -277,31 +277,31 @@
         <div id="hov-card" class="hov"></div>
         <div class="z-ctrl">
           <button id="z-in" class="z-btn" type="button">+</button>
-          <button id="z-out" class="z-btn" type="button">−</button>
-          <button id="z-reset" class="z-btn" type="button" title="Reset">↺</button>
+          <button id="z-out" class="z-btn" type="button">âˆ’</button>
+          <button id="z-reset" class="z-btn" type="button" title="Reset">â†º</button>
         </div>
       </div>
     </main>
   </section>
 
-  <!-- ── Analysis: Scatter + Dendrogram ───────────────────────────────── -->
+  <!-- â”€â”€ Analysis: Scatter + Dendrogram â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
   <section class="analysis-section">
 
     <!-- Espacio de Paradigmas -->
     <div class="analysis-module">
       <aside class="analysis-sidebar">
         <div class="analysis-sidebar-head">
-          <div class="analysis-eyebrow">Dimensión Conceptual</div>
+          <div class="analysis-eyebrow">DimensiÃ³n Conceptual</div>
           <h2 class="analysis-title">Espacio de Paradigmas</h2>
-          <p class="analysis-desc">Cada startup posicionada según la <strong>escala de la materia</strong> sobre la que opera — de átomos y moléculas a ecosistemas — y su <strong>paradigma tecnológico</strong>, de lo biológico-material a lo digital-computacional.</p>
+          <p class="analysis-desc">Cada startup posicionada segÃºn la <strong>escala de la materia</strong> sobre la que opera â€” de Ã¡tomos y molÃ©culas a ecosistemas â€” y su <strong>paradigma tecnolÃ³gico</strong>, de lo biolÃ³gico-material a lo digital-computacional.</p>
         </div>
         <div class="analysis-sidebar-body">
           <span class="asb-section-lbl">Ejes</span>
           <div class="asb-axis-key">
-            <div class="asb-axis-row"><span class="asb-axis-arrow">→</span><span class="asb-axis-name">Escala de la Materia</span></div>
-            <div class="asb-axis-sub">Molecular · Celular · Organismo · Lote/Producto · Campo/Sistema · Paisaje/Planeta</div>
-            <div class="asb-axis-row" style="margin-top:8px"><span class="asb-axis-arrow">↑</span><span class="asb-axis-name">Paradigma Tecnológico</span></div>
-            <div class="asb-axis-sub">Material / Biológico → Digital / Computacional</div>
+            <div class="asb-axis-row"><span class="asb-axis-arrow">â†’</span><span class="asb-axis-name">Escala de la Materia</span></div>
+            <div class="asb-axis-sub">Molecular Â· Celular Â· Organismo Â· Lote/Producto Â· Campo/Sistema Â· Paisaje/Planeta</div>
+            <div class="asb-axis-row" style="margin-top:8px"><span class="asb-axis-arrow">â†‘</span><span class="asb-axis-name">Paradigma TecnolÃ³gico</span></div>
+            <div class="asb-axis-sub">Material / BiolÃ³gico â†’ Digital / Computacional</div>
           </div>
           <span class="asb-section-lbl" style="margin-top:14px">Temas</span>
           <div id="scatter-legend"></div>
@@ -315,13 +315,13 @@
       </div>
     </div>
 
-    <!-- Árbol Evolutivo -->
+    <!-- Ãrbol Evolutivo -->
     <div class="analysis-module">
       <aside class="analysis-sidebar">
         <div class="analysis-sidebar-head">
           <div class="analysis-eyebrow">Filogenia del Ecosistema</div>
-          <h2 class="analysis-title">Árbol Evolutivo</h2>
-          <p class="analysis-desc">El ecosistema como árbol de vida. <strong>Reinos, clases, órdenes y familias</strong> de innovación conectadas por herencia tecnológica — de la biología molecular a la inteligencia de campo.</p>
+          <h2 class="analysis-title">Ãrbol Evolutivo</h2>
+          <p class="analysis-desc">El ecosistema como Ã¡rbol de vida. <strong>Reinos, clases, Ã³rdenes y familias</strong> de innovaciÃ³n conectadas por herencia tecnolÃ³gica â€” de la biologÃ­a molecular a la inteligencia de campo.</p>
         </div>
         <div class="analysis-sidebar-body">
           <span class="asb-section-lbl">Grandes grupos</span>
@@ -342,21 +342,21 @@
 </div>
 
 <script src="./text-clean.js?v=20260422aa"></script>
-<script src="./startup-themes-data.js?v=20260527j"></script>
+<script src="./startup-themes-data.js?v=20260527k"></script>
 <script>
 (function(){
 "use strict";
 
 const D = window.STARTUP_THEMES_DATA;
 if(!D||!D.startups||!D.startups.length){
-  document.querySelector(".sidebar-head .item-title").textContent="Sin datos. Ejecutá: python -m src.clustering";
+  document.querySelector(".sidebar-head .item-title").textContent="Sin datos. EjecutÃ¡: python -m src.clustering";
   return;
 }
 
-// ── Bio-theme descriptions (curated, editorial) ───────────────────────────────
+// â”€â”€ Bio-theme descriptions (curated, editorial) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const THEME_DESC = D.bio_theme_descriptions || {};
 
-// ── Editorial category palette — 7 bottom-up categories ─────────────────────
+// â”€â”€ Editorial category palette â€” 7 bottom-up categories â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const THEME_PAL={
   "Therapeutics":                           "#7033BC",
   "Diagnostics & Health Access":            "#1A6DB5",
@@ -383,21 +383,21 @@ function themeCol(bio_theme){
 // Legacy alias (for graph edges that still use cluster_id)
 function clCol(cid){ return THEME_ADJ; }
 
-// ── Startup data prep ─────────────────────────────────────────────────────
+// â”€â”€ Startup data prep â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const startups=D.startups;
 const clusters=D.clusters||[];
 const vTech=D.vocab_tech||{};
 const vInd=D.vocab_industry||{};
 const clMap=new Map(clusters.map(c=>[c.cluster_id,c]));
 
-// ── Theme map (primary nav) — built from startup bio_theme field ──────────
+// â”€â”€ Theme map (primary nav) â€” built from startup bio_theme field â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const themeMap=new Map();
 startups.forEach(s=>{
   const t=s.bio_theme||"Uncategorized";
   if(!themeMap.has(t)){
     themeMap.set(t,{
       name:t,color:themeCol(t),count:0,
-      subClusters:new Map(), // label→count within theme
+      subClusters:new Map(), // labelâ†’count within theme
       countries:{},n_funded:0,n_featured:0,
     });
   }
@@ -418,12 +418,12 @@ let activeTheme=null;
 // Stats header
 document.getElementById("meta-model").textContent=D.model;
 document.getElementById("meta-total").textContent=D.stats.total_startups+" en el mapa";
-document.getElementById("meta-clusters").textContent=THEME_ORDER.filter(t=>themeMap.has(t)).length+" bio themes · "+D.stats.featured_count+" featured";
+document.getElementById("meta-clusters").textContent=THEME_ORDER.filter(t=>themeMap.has(t)).length+" bio themes Â· "+D.stats.featured_count+" featured";
 document.getElementById("s-total").textContent=D.stats.total_startups+" startups";
 document.getElementById("s-featured").textContent=D.stats.featured_count+" destacadas";
-document.getElementById("s-funded").textContent=D.stats.funded_count+" con inversión";
+document.getElementById("s-funded").textContent=D.stats.funded_count+" con inversiÃ³n";
 
-// ── Node objects ──────────────────────────────────────────────────────────
+// â”€â”€ Node objects â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const W0=900,H0=600;
 let W=W0,H=H0;
 const nodes=startups.map(s=>({
@@ -436,10 +436,10 @@ const nodes=startups.map(s=>({
 }));
 const nodeMap=new Map(nodes.map(n=>[n.d.id,n]));
 
-// ── UMAP map positions ─────────────────────────────────────────────────────
+// â”€â”€ UMAP map positions â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function computeMapPos(){
   const pad=38;
-  // Use only core (non-outlier) nodes to define the canvas range —
+  // Use only core (non-outlier) nodes to define the canvas range â€”
   // prevents 2-3 extreme outliers from compressing the main cluster region.
   // Outlier nodes that fall outside this range get clamped naturally by relaxMapPos.
   const core=startups.filter(s=>!s.is_outlier);
@@ -453,7 +453,7 @@ function computeMapPos(){
   });
 }
 
-// ── Zoom-by-theme: camera zoom, no node movement ────────────────────────────
+// â”€â”€ Zoom-by-theme: camera zoom, no node movement â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 // zx/zy always mirrors mx/my so nodes stay in UMAP positions.
 // The "zoom" is a camera pan+scale onto the theme's bounding box.
 function computeZoomPos(){
@@ -484,9 +484,9 @@ function zoomClusterEntries(theme){
 
 // Collision repulsion + gentle gravity toward canvas center
 function relaxMapPos(iters=140){
-  const gcx=W*0.5, gcy=H*0.48; // ligeramente arriba del centro geométrico
+  const gcx=W*0.5, gcy=H*0.48; // ligeramente arriba del centro geomÃ©trico
   for(let it=0;it<iters;it++){
-    // 1. Repulsión entre nodos solapados
+    // 1. RepulsiÃ³n entre nodos solapados
     for(let i=0;i<nodes.length;i++){
       for(let j=i+1;j<nodes.length;j++){
         const a=nodes[i],b=nodes[j];
@@ -501,8 +501,8 @@ function relaxMapPos(iters=140){
         }
       }
     }
-    // 2. Gravedad suave hacia el centro — decae en las últimas iteraciones
-    //    para que la repulsión final refine posiciones sin over-compactar
+    // 2. Gravedad suave hacia el centro â€” decae en las Ãºltimas iteraciones
+    //    para que la repulsiÃ³n final refine posiciones sin over-compactar
     const g=0.005*(1-it/(iters*1.4));
     nodes.forEach(n=>{
       n.mx+=(gcx-n.mx)*g;
@@ -516,10 +516,10 @@ function relaxMapPos(iters=140){
   });
 }
 
-// no-op placeholder — cluster centroid pushing breaks UMAP topology
+// no-op placeholder â€” cluster centroid pushing breaks UMAP topology
 function pushThemeCentroids(){}
 
-// ── Theme grid positions (replaces cluster arrangement) ───────────────────
+// â”€â”€ Theme grid positions (replaces cluster arrangement) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function computeClusterPos(){
   // Group nodes by bio_theme, respecting THEME_ORDER
   const themeNodes={};
@@ -578,7 +578,7 @@ function computeClusterPos(){
   nodes.forEach(n=>{n.kx=n.kx*sc+ox;n.ky=n.ky*sc+oy});
 }
 
-// ── SVG setup ─────────────────────────────────────────────────────────────
+// â”€â”€ SVG setup â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const wrap=document.getElementById("canvas-wrap");
 const svgEl=document.getElementById("themes-svg");
 const NS="http://www.w3.org/2000/svg";
@@ -596,7 +596,7 @@ svgEl.appendChild(gRoot);
 const gHalos=document.createElementNS(NS,"g");       // cluster background blobs
 const gNodes=document.createElementNS(NS,"g");       // startup circles
 const gLabels=document.createElementNS(NS,"g");      // startup labels
-const gThemeLabels=document.createElementNS(NS,"g"); // bio-theme labels — always on top
+const gThemeLabels=document.createElementNS(NS,"g"); // bio-theme labels â€” always on top
 gRoot.appendChild(gHalos);
 gRoot.appendChild(gNodes);
 gRoot.appendChild(gLabels);
@@ -605,9 +605,9 @@ gRoot.appendChild(gThemeLabels);
 
 function applyTf(){gRoot.setAttribute("transform",`translate(${panX},${panY}) scale(${scale})`)}
 
-// Node visual properties — tamaño por valuation_estimate_usd (escala lineal)
-// Cap dinámico: se ajusta al máximo del dataset para que la escala sea relativa
-// Cuando llegue Pitchbook el cap sube automáticamente
+// Node visual properties â€” tamaÃ±o por valuation_estimate_usd (escala lineal)
+// Cap dinÃ¡mico: se ajusta al mÃ¡ximo del dataset para que la escala sea relativa
+// Cuando llegue Pitchbook el cap sube automÃ¡ticamente
 const VAL_R_MIN=5, VAL_R_MAX=30;
 function nRadius(s){
   const v=s.valuation_estimate_usd||0.8;
@@ -615,23 +615,23 @@ function nRadius(s){
   return VAL_R_MIN+(VAL_R_MAX-VAL_R_MIN)*Math.min(v,VAL_CAP)/VAL_CAP;
 }
 function nOpacity(s){return s.quality_band==="high"?0.88:0.72}
-// Nivel 1 — Ancla: val≥$50M o tier≥2. Siempre visible, el toggle no los apaga.
+// Nivel 1 â€” Ancla: valâ‰¥$50M o tierâ‰¥2. Siempre visible, el toggle no los apaga.
 function nAnchor(s){return (s.valuation_tier!=null&&s.valuation_tier>=2)||(s.valuation_estimate_usd||0)>=50;}
-// Nivel 2 — Destacado: val≥$8M Y ≥2 inversores. Dot mediano que puede cargar un label.
-// Requiere tamaño mínimo para que el label tenga proporción visual con el punto.
+// Nivel 2 â€” Destacado: valâ‰¥$8M Y â‰¥2 inversores. Dot mediano que puede cargar un label.
+// Requiere tamaÃ±o mÃ­nimo para que el label tenga proporciÃ³n visual con el punto.
 function nDestacado(s){return (s.valuation_estimate_usd||0)>=8 && s.n_investors_mapped>=2;}
-// Nivel 3 — Completo: calidad alta. Solo visible con toggle ON en cualquier modo.
+// Nivel 3 â€” Completo: calidad alta. Solo visible con toggle ON en cualquier modo.
 function nCompleto(s){return s.quality_band==="high";}
 function nFeatured(s){return nAnchor(s);}
 function nImportant(s){return nAnchor(s)||nDestacado(s);}
 
-// ── Filter state — multi-selección con Sets ───────────────────────────────
-const activeTechs=new Set();      // OR dentro de la categoría
-const activeInds=new Set();       // OR dentro de la categoría
-const activeCountries=new Set();  // OR dentro de la categoría
-const activeStages=new Set();     // OR — pre-seed | seed | series-a | series-b | series-c+ | growth
-const activeFunds=new Set();      // OR — inversor/fondo id
-const activeLegacy=new Set();      // OR — macro_theme (taxonomía anterior)
+// â”€â”€ Filter state â€” multi-selecciÃ³n con Sets â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+const activeTechs=new Set();      // OR dentro de la categorÃ­a
+const activeInds=new Set();       // OR dentro de la categorÃ­a
+const activeCountries=new Set();  // OR dentro de la categorÃ­a
+const activeStages=new Set();     // OR â€” pre-seed | seed | series-a | series-b | series-c+ | growth
+const activeFunds=new Set();      // OR â€” inversor/fondo id
+const activeLegacy=new Set();      // OR â€” macro_theme (taxonomÃ­a anterior)
 let searchId=null,showLabels=false;
 let viewMode="map"; // "map" | "cluster" | "zoom"
 
@@ -648,13 +648,13 @@ function isHl(s){
 }
 function anyFilter(){return !!(searchId||activeCountries.size||activeTheme!==null||activeTechs.size||activeInds.size||activeStages.size||activeFunds.size||activeLegacy.size)}
 
-// ── Build SVG ──────────────────────────────────────────────────────────────
+// â”€â”€ Build SVG â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function buildSVG(){
   while(gNodes.firstChild)gNodes.removeChild(gNodes.firstChild);
   while(gLabels.firstChild)gLabels.removeChild(gLabels.firstChild);
   while(gHalos.firstChild)gHalos.removeChild(gHalos.firstChild);
 
-  // Render smaller/lower-tier nodes first → higher-tier appear on top (z-order)
+  // Render smaller/lower-tier nodes first â†’ higher-tier appear on top (z-order)
   nodes.sort((a,b)=>(a.d.valuation_tier||0)-(b.d.valuation_tier||0));
 
   nodes.forEach(n=>{
@@ -673,7 +673,7 @@ function buildSVG(){
     gNodes.appendChild(circ);
     n.circEl=circ;
 
-    // Labels — 3 tiers: Ancla (always), Destacado (default), Completo (toggle)
+    // Labels â€” 3 tiers: Ancla (always), Destacado (default), Completo (toggle)
     const anchor=nAnchor(s), dest=nDestacado(s);
     const lbl=document.createElementNS(NS,"text");
     lbl.setAttribute("text-anchor","middle");
@@ -711,7 +711,7 @@ function updatePositions(){
   updateHalos();
 }
 
-// ── Convex hull (Jarvis march) ─────────────────────────────────────────────
+// â”€â”€ Convex hull (Jarvis march) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function convexHull(pts){
   if(pts.length<3)return pts;
   let lo=0;
@@ -765,8 +765,8 @@ function updateHalos(){
   while(gThemeLabels.firstChild)gThemeLabels.removeChild(gThemeLabels.firstChild);
 
   // In zoom mode: dibujar halos por sub-cluster, sin texto (las keywords del
-  // clustering global no son semánticamente útiles por tema y confunden).
-  // Solo un conteo pequeño centrado en el blob para orientación.
+  // clustering global no son semÃ¡nticamente Ãºtiles por tema y confunden).
+  // Solo un conteo pequeÃ±o centrado en el blob para orientaciÃ³n.
   if(viewMode==="zoom"){
     if(activeTheme){
       const themeColor=themeCol(activeTheme);
@@ -803,8 +803,8 @@ function updateHalos(){
           }
         }
 
-        // Conteo pequeño centrado en el blob — solo si el sub-cluster tiene ≥4 nodos
-        // para no saturar los grupos chicos. Sin pills, sin fondo, texto mínimo.
+        // Conteo pequeÃ±o centrado en el blob â€” solo si el sub-cluster tiene â‰¥4 nodos
+        // para no saturar los grupos chicos. Sin pills, sin fondo, texto mÃ­nimo.
         if(e.nodes.length>=4){
           const ct=document.createElementNS(NS,"text");
           ct.setAttribute("x",cx.toFixed(1));ct.setAttribute("y",(cy+2).toFixed(1));
@@ -829,7 +829,7 @@ function updateHalos(){
     byTheme[t].push(n);
   });
 
-  // ── Pasada 1: dibujar blobs y colectar candidatos de label ────────────────
+  // â”€â”€ Pasada 1: dibujar blobs y colectar candidatos de label â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   const lbls=[];
   Object.entries(byTheme).forEach(([theme,cNodes])=>{
     const allPts=cNodes.map(n=>[n.cx,n.cy]);
@@ -868,7 +868,7 @@ function updateHalos(){
       }
     }
 
-    // Nombres cortos para que los labels sean más compactos
+    // Nombres cortos para que los labels sean mÃ¡s compactos
     const LABEL_SHORT={
       "Therapeutics":"Therapeutics",
       "Diagnostics & Health Access":"Diagnostics",
@@ -885,17 +885,17 @@ function updateHalos(){
     const blobPad=hullPts.length<=1?28:hullPts.length<4?20:22;
 
     // Radio efectivo del blob: usa corePts (no-outliers) en lugar de los hull-pts sigma-filtrados,
-    // para que el label se empuje fuera del cluster real, no solo del núcleo sigma-filtrado
+    // para que el label se empuje fuera del cluster real, no solo del nÃºcleo sigma-filtrado
     const rawBlobR=corePts.length>0
       ?Math.max(28,...corePts.map(p=>Math.sqrt((p[0]-cx)**2+(p[1]-cy)**2)))+blobPad
       :38;
     const blobR=Math.min(rawBlobR, 100);
 
-    // Dirección radial desde el centro del canvas hacia el centroide del cluster
+    // DirecciÃ³n radial desde el centro del canvas hacia el centroide del cluster
     const canvasCx=W/2, canvasCy=H/2;
     const dirX=cx-canvasCx, dirY=cy-canvasCy;
     const dirLen=Math.sqrt(dirX*dirX+dirY*dirY);
-    // Si el cluster está muy cerca del centro del canvas, usar dirección hacia arriba
+    // Si el cluster estÃ¡ muy cerca del centro del canvas, usar direcciÃ³n hacia arriba
     const ndx=dirLen>60?dirX/dirLen:0;
     const ndy=dirLen>60?dirY/dirLen:-1;
     const pushDist=blobR+h+8;
@@ -910,7 +910,7 @@ function updateHalos(){
     });
   });
 
-  // ── Pasada 2: búsqueda espiral garantizada ──────────────────────────────
+  // â”€â”€ Pasada 2: bÃºsqueda espiral garantizada â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   const dotPts=nodes.map(n=>[n.cx,n.cy]);
 
   function overlaps(lbl, placed){
@@ -945,7 +945,7 @@ function updateHalos(){
     placed.push(lbl);
   });
 
-  // ── Pasada 3: dibujar labels en posiciones optimizadas ────────────────────
+  // â”€â”€ Pasada 3: dibujar labels en posiciones optimizadas â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   lbls.forEach(l=>{
     const bg=document.createElementNS(NS,"rect");
     bg.setAttribute("x",(l.x-l.w/2).toFixed(1));
@@ -973,7 +973,7 @@ function updateHalos(){
 
 }
 
-const GRAY_FILL="#bab3aa";  // gris cálido neutro para nodos no-seleccionados
+const GRAY_FILL="#bab3aa";  // gris cÃ¡lido neutro para nodos no-seleccionados
 const GRAY_RING="#c2bbB2";
 
 function syncFilterBtn(){
@@ -997,8 +997,8 @@ function updateHighlights(){
   const any=anyFilter();
   syncFilterBtn();
 
-  // ── Zoom mode: protagonist view for one theme ──────────────────────────
-  // En zoom solo mostramos anchors por defecto — la cámara ya está encima,
+  // â”€â”€ Zoom mode: protagonist view for one theme â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  // En zoom solo mostramos anchors por defecto â€” la cÃ¡mara ya estÃ¡ encima,
   // el usuario ve los dots claramente y puede hover. Toggle revela destacados+completos.
   if(viewMode==="zoom"&&activeTheme){
     nodes.forEach(n=>{
@@ -1023,7 +1023,7 @@ function updateHighlights(){
     return;
   }
 
-  // ── Normal mode ────────────────────────────────────────────────────────
+  // â”€â”€ Normal mode â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   nodes.forEach(n=>{
     const s=n.d;
     const hi=isHl(s);
@@ -1046,7 +1046,7 @@ function updateHighlights(){
   });
 }
 
-// ── Transition between views ───────────────────────────────────────────────
+// â”€â”€ Transition between views â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 let transitioning=false,transP=1;
 let transFrom={},transTo={};
 const TRANS_F=45;
@@ -1062,7 +1062,7 @@ function startTrans(toMode){
 }
 function eio(t){return t<.5?2*t*t:-1+(4-2*t)*t}
 
-// ── Zoom to theme ─────────────────────────────────────────────────────────
+// â”€â”€ Zoom to theme â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function zoomToCluster(theme){
   const cNodes=nodes.filter(n=>(n.d.bio_theme||"Uncategorized")===theme);
   if(!cNodes.length)return;
@@ -1083,7 +1083,7 @@ function zoomToCluster(theme){
   requestAnimationFrame(step);
 }
 
-// ── Breadcrumbs ────────────────────────────────────────────────────────────
+// â”€â”€ Breadcrumbs â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function updateBreadcrumbs(){
   const bc=document.getElementById("breadcrumbs");
   bc.innerHTML="";
@@ -1148,7 +1148,7 @@ function updateBreadcrumbs(){
   if(activeCountries.size){
     const lbls=[...[...activeCountries].map(c=>(FLAG_MAP[c]||"")+c)];
     filters.push({
-      label:"País: "+lbls.slice(0,2).join(", ")+(lbls.length>2?` +${lbls.length-2}`:""),
+      label:"PaÃ­s: "+lbls.slice(0,2).join(", ")+(lbls.length>2?` +${lbls.length-2}`:""),
       clear(){
         activeCountries.clear();
         document.querySelectorAll("#country-chips .fc").forEach(c=>c.classList.remove("active-country"));
@@ -1159,7 +1159,7 @@ function updateBreadcrumbs(){
   if(searchId){
     const s=startups.find(s=>s.id===searchId);
     filters.push({
-      label:"↓ "+(s?.name||searchId),
+      label:"â†“ "+(s?.name||searchId),
       clear(){
         searchId=null;srchIn.value="";
         updateHighlights();updateBreadcrumbs();
@@ -1172,7 +1172,7 @@ function updateBreadcrumbs(){
   bc.appendChild(lbl);
   filters.forEach(f=>{
     const pill=document.createElement("button");pill.className="bc-pill";pill.type="button";
-    pill.innerHTML=f.label+' <span class="bc-x">×</span>';
+    pill.innerHTML=f.label+' <span class="bc-x">Ã—</span>';
     pill.addEventListener("click",f.clear);
     bc.appendChild(pill);
   });
@@ -1189,7 +1189,7 @@ function updateBreadcrumbs(){
   bc.appendChild(all);
 }
 
-// ── Animation loop ─────────────────────────────────────────────────────────
+// â”€â”€ Animation loop â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 let animId=null;
 function loop(){
   if(transitioning){
@@ -1210,7 +1210,7 @@ function loop(){
   animId=requestAnimationFrame(loop);
 }
 
-// ── Theme sidebar ──────────────────────────────────────────────────────────
+// â”€â”€ Theme sidebar â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function buildThemeDetailHTML(tm){
   const themeNodes=nodes.filter(n=>(n.d.bio_theme||"Uncategorized")===tm.name);
   const topCompanies=themeNodes
@@ -1223,7 +1223,7 @@ function buildThemeDetailHTML(tm){
   let h="";
   if(desc) h+=`<div class="cr-det-desc">${desc}</div>`;
   if(subLabels.size){
-    h+=`<div class="cr-det-sec">Sub-grupos semánticos</div><div class="cr-det-chips">`;
+    h+=`<div class="cr-det-sec">Sub-grupos semÃ¡nticos</div><div class="cr-det-chips">`;
     [...subLabels.entries()].forEach(([lbl,n])=>{
       h+=`<span class="cr-det-chip cr-det-chip-teal">${lbl} <span style="opacity:.5">(${n})</span></span>`;
     });
@@ -1234,11 +1234,11 @@ function buildThemeDetailHTML(tm){
     topCompanies.forEach(n=>{
       const t=n.d.valuation_tier;
       const inv=n.d.n_investors_mapped;
-      h+=`<div class="cr-det-row"><span>${n.d.name}</span><span>${t!=null?"T"+t:"—"}${inv>0?" · "+inv+" inv.":""}</span></div>`;
+      h+=`<div class="cr-det-row"><span>${n.d.name}</span><span>${t!=null?"T"+t:"â€”"}${inv>0?" Â· "+inv+" inv.":""}</span></div>`;
     });
   }
   if(topCountries.length){
-    h+=`<div class="cr-det-sec">Geografía</div><div class="cr-det-chips">`;
+    h+=`<div class="cr-det-sec">GeografÃ­a</div><div class="cr-det-chips">`;
     topCountries.forEach(([cc,n])=>{
       h+=`<span class="cr-det-chip" style="cursor:pointer" data-country="${cc}">${FLAG_MAP[cc]||""} ${cc} <span style="opacity:.5">(${n})</span></span>`;
     });
@@ -1264,21 +1264,21 @@ function buildClusterList(){
     row.className="cr";row.dataset.theme=theme;
     row.style.setProperty('--cr-color', color);
 
-    // ── Header: name + count ─────────────────────────────────────────────
+    // â”€â”€ Header: name + count â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     const top=document.createElement("div");top.className="cr-top";
     const name=document.createElement("span");name.className="cr-name";name.textContent=theme;
     const cnt=document.createElement("span");cnt.className="cr-count";cnt.textContent=tm.count;
     top.appendChild(name);top.appendChild(cnt);
     row.appendChild(top);
 
-    // ── Tags row (always visible): top 3 sub-cluster keywords + funded ───
+    // â”€â”€ Tags row (always visible): top 3 sub-cluster keywords + funded â”€â”€â”€
     const tags=document.createElement("div");tags.className="cr-tags";
     [...tm.subClusters.entries()].sort((a,b)=>b[1]-a[1]).slice(0,3).forEach(([lbl])=>{
-      const kw=(lbl.split(" — ")[1]||lbl).replace(/^\w+ — /,"");
+      const kw=(lbl.split(" â€” ")[1]||lbl).replace(/^\w+ â€” /,"");
       const t=document.createElement("span");t.className="ct ct-tech";t.textContent=kw;
       tags.appendChild(t);
     });
-    // % con inversión
+    // % con inversiÃ³n
     if(tm.count>0){
       const pct=Math.round(tm.n_funded/tm.count*100);
       const t=document.createElement("span");t.className="ct";
@@ -1289,7 +1289,7 @@ function buildClusterList(){
       t.textContent=pct+"% financiadas";
       tags.appendChild(t);
     }
-    // Top 3 países
+    // Top 3 paÃ­ses
     Object.entries(tm.countries).sort((a,b)=>b[1]-a[1]).slice(0,3).forEach(([cc])=>{
       const flag=FLAG_MAP[cc]||"";
       const t=document.createElement("span");t.className="ct";
@@ -1299,15 +1299,15 @@ function buildClusterList(){
     });
     row.appendChild(tags);
 
-    // ── Accordion detail (hidden until .active) ──────────────────────────
+    // â”€â”€ Accordion detail (hidden until .active) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     const detail=document.createElement("div");detail.className="cr-detail";
     row.appendChild(detail);
 
-    // ── Click handler ────────────────────────────────────────────────────
+    // â”€â”€ Click handler â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     row.addEventListener("click",()=>{
       const isActive=row.classList.contains("active");
 
-      // Clicking active theme in zoom → back to map
+      // Clicking active theme in zoom â†’ back to map
       if(isActive&&viewMode==="zoom"){
         resetAll();
         return;
@@ -1332,7 +1332,7 @@ function buildClusterList(){
     list.appendChild(row);
   });
 
-  // Delegación de clicks en chips de país dentro del acordeón
+  // DelegaciÃ³n de clicks en chips de paÃ­s dentro del acordeÃ³n
   list.addEventListener("click",e=>{
     const chip=e.target.closest("[data-country]");
     if(!chip)return;
@@ -1343,9 +1343,9 @@ function buildClusterList(){
   });
 }
 
-// renderThemeDetail ya no existe — el detail lo maneja el acordeón de cada .cr card.
+// renderThemeDetail ya no existe â€” el detail lo maneja el acordeÃ³n de cada .cr card.
 
-// ── Startup detail ─────────────────────────────────────────────────────────
+// â”€â”€ Startup detail â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function selectStartup(s){
   searchId=s.id;
   document.getElementById("srch-in").value=s.name;
@@ -1353,7 +1353,7 @@ function selectStartup(s){
   // El detalle de startup se muestra en el hover card al pasar el mouse.
 }
 
-// ── Hover card ─────────────────────────────────────────────────────────────
+// â”€â”€ Hover card â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const hovCard=document.getElementById("hov-card");
 let hovTmr=null;
 function showHov(s,e){
@@ -1370,7 +1370,7 @@ function showHov(s,e){
     :null;
   const invLabel=s.n_investors_mapped>0?`${s.n_investors_mapped} inv. mapeado${s.n_investors_mapped>1?"s":""}`:null;
 
-  // Descripción: one_liner preferido; si falta, primera oración del summary
+  // DescripciÃ³n: one_liner preferido; si falta, primera oraciÃ³n del summary
   const desc = s.one_liner ||
     (s.summary ? s.summary.replace(/\s+/g," ").split(/(?<=\.)\s+/)[0].slice(0,160) : "");
 
@@ -1378,13 +1378,13 @@ function showHov(s,e){
     <div class="hov-title">${s.name}</div>
     ${desc?`<div class="hov-body">${desc}</div>`:""}
     <div class="hov-chips">
-      <span class="hov-chip"><span class="hov-dot" style="background:${color}"></span>${s.bio_theme||"—"}</span>
-      ${(s.countries||[]).length?`<span class="hov-chip">${s.countries.join(" · ")}</span>`:""}
+      <span class="hov-chip"><span class="hov-dot" style="background:${color}"></span>${s.bio_theme||"â€”"}</span>
+      ${(s.countries||[]).length?`<span class="hov-chip">${s.countries.join(" Â· ")}</span>`:""}
       ${stageLabel?`<span class="hov-chip" style="font-weight:600">${stageLabel}</span>`:""}
       ${valLabel?`<span class="hov-chip" style="font-weight:700;color:var(--ink)">${valLabel}</span>`:""}
-      ${invLabel?`<span class="hov-chip" style="color:#1f5c3a">⬤ ${invLabel}</span>`:""}
+      ${invLabel?`<span class="hov-chip" style="color:#1f5c3a">â¬¤ ${invLabel}</span>`:""}
     </div>
-    ${(s.self_cats||[]).length?`<div class="hov-small"><span style="opacity:.5;text-transform:uppercase;letter-spacing:.07em;font-size:.62rem">Clasificación legacy</span> ${s.self_cats.join(" · ")}</div>`:""}
+    ${(s.self_cats||[]).length?`<div class="hov-small"><span style="opacity:.5;text-transform:uppercase;letter-spacing:.07em;font-size:.62rem">ClasificaciÃ³n legacy</span> ${s.self_cats.join(" Â· ")}</div>`:""}
   `;
   const rect=wrap.getBoundingClientRect();
   let x=e.clientX-rect.left+14,y=e.clientY-rect.top-10;
@@ -1395,13 +1395,13 @@ function showHov(s,e){
 }
 function hideHov(){hovTmr=setTimeout(()=>hovCard.classList.remove("vis"),90)}
 
-// ── Filter chips ──────────────────────────────────────────────────────────
+// â”€â”€ Filter chips â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const FLAG_MAP={
-  'Argentina':'🇦🇷','Brazil':'🇧🇷','Brasil':'🇧🇷','Chile':'🇨🇱',
-  'Colombia':'🇨🇴','Mexico':'🇲🇽','México':'🇲🇽','Peru':'🇵🇪','Perú':'🇵🇪',
-  'Uruguay':'🇺🇾','Ecuador':'🇪🇨','Paraguay':'🇵🇾','Bolivia':'🇧🇴',
-  'Venezuela':'🇻🇪','Costa Rica':'🇨🇷','Panama':'🇵🇦','Guatemala':'🇬🇹',
-  'USA':'🇺🇸','US':'🇺🇸','UK':'🇬🇧','Spain':'🇪🇸','España':'🇪🇸'
+  'Argentina':'ðŸ‡¦ðŸ‡·','Brazil':'ðŸ‡§ðŸ‡·','Brasil':'ðŸ‡§ðŸ‡·','Chile':'ðŸ‡¨ðŸ‡±',
+  'Colombia':'ðŸ‡¨ðŸ‡´','Mexico':'ðŸ‡²ðŸ‡½','MÃ©xico':'ðŸ‡²ðŸ‡½','Peru':'ðŸ‡µðŸ‡ª','PerÃº':'ðŸ‡µðŸ‡ª',
+  'Uruguay':'ðŸ‡ºðŸ‡¾','Ecuador':'ðŸ‡ªðŸ‡¨','Paraguay':'ðŸ‡µðŸ‡¾','Bolivia':'ðŸ‡§ðŸ‡´',
+  'Venezuela':'ðŸ‡»ðŸ‡ª','Costa Rica':'ðŸ‡¨ðŸ‡·','Panama':'ðŸ‡µðŸ‡¦','Guatemala':'ðŸ‡¬ðŸ‡¹',
+  'USA':'ðŸ‡ºðŸ‡¸','US':'ðŸ‡ºðŸ‡¸','UK':'ðŸ‡¬ðŸ‡§','Spain':'ðŸ‡ªðŸ‡¸','EspaÃ±a':'ðŸ‡ªðŸ‡¸'
 };
 
 function buildChips(){
@@ -1417,7 +1417,7 @@ function buildChips(){
   const fWrap=document.getElementById("fund-chips");
   tWrap.innerHTML="";iWrap.innerHTML="";cWrap.innerHTML="";fWrap.innerHTML="";
 
-  // Fondo/Inversor — multi-select (uses D.funds from data)
+  // Fondo/Inversor â€” multi-select (uses D.funds from data)
   const fundsData=(D.funds||[]);
   fundsData.forEach(fund=>{
     const btn=document.createElement("button");
@@ -1434,12 +1434,12 @@ function buildChips(){
     fWrap.appendChild(btn);
   });
 
-  // País — multi-select
+  // PaÃ­s â€” multi-select
   Object.entries(cc).sort((a,b)=>b[1]-a[1]).forEach(([country,count])=>{
     const btn=document.createElement("button");
     btn.className="fc";btn.type="button";btn.dataset.country=country;
     const flag=FLAG_MAP[country]||"";
-    btn.textContent=(flag?flag+" ":"")+country+" ("+count+")";
+    btn.textContent=(flag?flag+"â€¯":"")+country+" ("+count+")";
     btn.addEventListener("click",()=>{
       activeCountries.has(country)?activeCountries.delete(country):activeCountries.add(country);
       cWrap.querySelectorAll(".fc").forEach(c=>c.classList.toggle("active-country",activeCountries.has(c.dataset.country)));
@@ -1448,7 +1448,7 @@ function buildChips(){
     cWrap.appendChild(btn);
   });
 
-  // Tecnología — multi-select
+  // TecnologÃ­a â€” multi-select
   Object.entries(tc).sort((a,b)=>b[1]-a[1]).forEach(([code,count])=>{
     const btn=document.createElement("button");
     btn.className="fc";btn.type="button";btn.dataset.code=code;
@@ -1461,7 +1461,7 @@ function buildChips(){
     tWrap.appendChild(btn);
   });
 
-  // Industria — multi-select
+  // Industria â€” multi-select
   Object.entries(ic).sort((a,b)=>b[1]-a[1]).forEach(([code,count])=>{
     const btn=document.createElement("button");
     btn.className="fc";btn.type="button";btn.dataset.code=code;
@@ -1474,7 +1474,7 @@ function buildChips(){
     iWrap.appendChild(btn);
   });
 
-  // Etapa — chips en orden fijo de menor a mayor
+  // Etapa â€” chips en orden fijo de menor a mayor
   const STAGE_LABELS={"pre-seed":"Pre-seed","seed":"Seed","series-a":"Serie A","series-b":"Serie B","series-c+":"Serie C+","growth":"Growth"};
   const sWrap=document.getElementById("stage-chips");
   sWrap.innerHTML="";
@@ -1493,7 +1493,7 @@ function buildChips(){
     sWrap.appendChild(btn);
   });
 
-  // Botones "limpiar selección" por sección
+  // Botones "limpiar selecciÃ³n" por secciÃ³n
   document.getElementById("clr-fund").addEventListener("click",()=>{
     activeFunds.clear();
     fWrap.querySelectorAll(".fc").forEach(c=>c.classList.remove("active-fund"));
@@ -1520,7 +1520,7 @@ function buildChips(){
     sWrap.querySelectorAll(".fc").forEach(c=>c.classList.remove("active-stage"));
     updateHighlights();updateBreadcrumbs();
   });
-  // ── Cómo se describen (self_cats extraídas del texto propio) ─────────────
+  // â”€â”€ CÃ³mo se describen (self_cats extraÃ­das del texto propio) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   const legWrap=document.getElementById("legacy-chips");
   if(legWrap){
     legWrap.innerHTML="";
@@ -1551,10 +1551,10 @@ function buildChips(){
 
 }
 
-// ── Search ────────────────────────────────────────────────────────────────
+// â”€â”€ Search â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const srchIn=document.getElementById("srch-in");
 const srchRes=document.getElementById("srch-res");
-function norm(s){return String(s||"").normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase().replace(/[^a-z0-9]+/g," ").trim()}
+function norm(s){return String(s||"").normalize("NFD").replace(/[Ì€-Í¯]/g,"").toLowerCase().replace(/[^a-z0-9]+/g," ").trim()}
 srchIn.addEventListener("input",()=>{
   const q=norm(srchIn.value);
   if(!q||q.length<2){srchRes.innerHTML="";srchRes.classList.remove("open");return}
@@ -1562,7 +1562,7 @@ srchIn.addEventListener("input",()=>{
   srchRes.innerHTML="";
   hits.forEach(s=>{
     const btn=document.createElement("button");btn.className="srch-item";
-    btn.innerHTML=`<span>${s.name}</span><small>${s.country||""} · ${s.bio_theme||"—"}</small>`;
+    btn.innerHTML=`<span>${s.name}</span><small>${s.country||""} Â· ${s.bio_theme||"â€”"}</small>`;
     btn.addEventListener("click",()=>{
       srchIn.value=s.name;srchRes.classList.remove("open");
       searchId=s.id;updateHighlights();updateBreadcrumbs();selectStartup(s);
@@ -1595,7 +1595,7 @@ function resetAll(){
 document.addEventListener("keydown",e=>{if(e.key==="Escape")resetAll()});
 document.addEventListener("click",e=>{if(!srchIn.contains(e.target))srchRes.classList.remove("open")});
 
-// ── Controls ──────────────────────────────────────────────────────────────
+// â”€â”€ Controls â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 document.getElementById("btn-map").addEventListener("click",()=>{
   if(viewMode==="map")return;
   const wasZoom=viewMode==="zoom";
@@ -1636,14 +1636,14 @@ document.getElementById("z-in").addEventListener("click",()=>{scale=Math.min(8,s
 document.getElementById("z-out").addEventListener("click",()=>{scale=Math.max(.25,scale/1.2);applyTf()});
 document.getElementById("z-reset").addEventListener("click",()=>{panX=0;panY=0;scale=1;applyTf()});
 
-// Resize — debounced para evitar recálculo por apertura de filtros/breadcrumbs
+// Resize â€” debounced para evitar recÃ¡lculo por apertura de filtros/breadcrumbs
 let roLastW=0,roLastH=0,roTmr=null;
 const ro=new ResizeObserver(()=>{
   clearTimeout(roTmr);
   roTmr=setTimeout(()=>{
     const nW=wrap.clientWidth||W0,nH=wrap.clientHeight||H0;
     if(nW===roLastW&&nH===roLastH)return; // sin cambio real
-    // Preservar posición del viewport ajustando el pan proporcionalmente
+    // Preservar posiciÃ³n del viewport ajustando el pan proporcionalmente
     if(roLastW&&roLastH){
       panX=panX*nW/roLastW;
       panY=panY*nH/roLastH;
@@ -1660,7 +1660,7 @@ const ro=new ResizeObserver(()=>{
 });
 ro.observe(wrap);
 
-// ── Init ──────────────────────────────────────────────────────────────────
+// â”€â”€ Init â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 computeMapPos();
 relaxMapPos();
 pushThemeCentroids();
@@ -1677,7 +1677,7 @@ loop();
 })();
 </script>
 
-<!-- ── Scatter: Espacio de Paradigmas ────────────────────────────────────── -->
+<!-- â”€â”€ Scatter: Espacio de Paradigmas â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
 <script>
 (function(){
 "use strict";
@@ -1723,23 +1723,23 @@ function el(tag,attrs,parent){
   return e;
 }
 
-// Explica la posición en cada eje en lenguaje natural
-// whyX usa la posición px (nueva clasificación, rango ±12)
+// Explica la posiciÃ³n en cada eje en lenguaje natural
+// whyX usa la posiciÃ³n px (nueva clasificaciÃ³n, rango Â±12)
 function whyX(px){
-  if(px<-9.5) return"Escala Molecular — trabaja con genes, proteínas, moléculas o compuestos activos.";
-  if(px<-4.5) return"Escala Celular — células, microorganismos y bioprocesos son su materia de trabajo.";
-  if(px< 0.5) return"Escala Organismo — la planta individual, el animal o el paciente es su unidad operativa.";
-  if(px< 4.8) return"Escala Lote/Producto — opera a nivel de alimento, formulación o input manufacturado.";
-  if(px< 9.5) return"Escala Campo/Sistema — su unidad es el campo, la finca, el suelo o la cuenca.";
-  return"Escala Paisaje/Planeta — ecosistemas, carbono, satélites y ciclos biogeoquímicos globales.";
+  if(px<-9.5) return"Escala Molecular â€” trabaja con genes, proteÃ­nas, molÃ©culas o compuestos activos.";
+  if(px<-4.5) return"Escala Celular â€” cÃ©lulas, microorganismos y bioprocesos son su materia de trabajo.";
+  if(px< 0.5) return"Escala Organismo â€” la planta individual, el animal o el paciente es su unidad operativa.";
+  if(px< 4.8) return"Escala Lote/Producto â€” opera a nivel de alimento, formulaciÃ³n o input manufacturado.";
+  if(px< 9.5) return"Escala Campo/Sistema â€” su unidad es el campo, la finca, el suelo o la cuenca.";
+  return"Escala Paisaje/Planeta â€” ecosistemas, carbono, satÃ©lites y ciclos biogeoquÃ­micos globales.";
 }
-// whyY usa mpar (1.0 = Bio-Material, 3.0 = Digital) → mapeado a py = (mpar-2)*9
+// whyY usa mpar (1.0 = Bio-Material, 3.0 = Digital) â†’ mapeado a py = (mpar-2)*9
 function whyY(py){
-  if(py<-6.5) return"Bio-Material puro: el IP vive en la biología — una molécula, organismo o formulación.";
-  if(py<-2)   return"Predominantemente biológico, con herramientas digitales de soporte.";
-  if(py< 2)   return"Bio·Digital: combina procesos vivos con plataformas de datos en proporciones similares.";
-  if(py< 6.5) return"Predominantemente digital aplicado a sistemas biológicos.";
-  return"Digital-Computacional: el IP es informacional — datos, algoritmos o plataforma.";
+  if(py<-6.5) return"Bio-Material puro: el IP vive en la biologÃ­a â€” una molÃ©cula, organismo o formulaciÃ³n.";
+  if(py<-2)   return"Predominantemente biolÃ³gico, con herramientas digitales de soporte.";
+  if(py< 2)   return"BioÂ·Digital: combina procesos vivos con plataformas de datos en proporciones similares.";
+  if(py< 6.5) return"Predominantemente digital aplicado a sistemas biolÃ³gicos.";
+  return"Digital-Computacional: el IP es informacional â€” datos, algoritmos o plataforma.";
 }
 
 function build(){
@@ -1752,8 +1752,8 @@ function build(){
   const CW=W-PAD.l-PAD.r;
   const CH=H-PAD.t-PAD.b;
 
-  // Data ranges — cubre scatter positions (INTRA_SCATTER_SCALE=0.40 × CANVAS_SCALE=14 → ±5.6 offset,
-  // centroide máx ±10.5 → alcance máx ±16.1; usar ±17 con margen)
+  // Data ranges â€” cubre scatter positions (INTRA_SCATTER_SCALE=0.40 Ã— CANVAS_SCALE=14 â†’ Â±5.6 offset,
+  // centroide mÃ¡x Â±10.5 â†’ alcance mÃ¡x Â±16.1; usar Â±17 con margen)
   const X_MIN=-17, X_MAX=17;   // data.sy = escala materia
   const Y_MIN=-17, Y_MAX=17;   // data.sx = paradigma
 
@@ -1762,17 +1762,17 @@ function build(){
 
   const cx0=scX(0), cy0=scY(0);
 
-  // ── Defs ──────────────────────────────────────────────────────────────
+  // â”€â”€ Defs â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   const defs=el("defs",{},svg);
   const clip=el("clipPath",{"id":"scatter-clip"},defs);
   el("rect",{x:PAD.l,y:PAD.t,width:CW,height:CH},clip);
   const flt=el("filter",{id:"halo-blur",x:"-30%",y:"-30%",width:"160%",height:"160%"},defs);
   el("feGaussianBlur",{in:"SourceGraphic",stdDeviation:"13"},flt);
 
-  // ── Plot area fill ───────────────────────────────────────────────────
+  // â”€â”€ Plot area fill â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   el("rect",{x:PAD.l,y:PAD.t,width:CW,height:CH,fill:"#f7f4ee",rx:"10"},svg);
 
-  // ── Grid lines — X at each of 6 scale levels, Y at paradigm thirds ──────
+  // â”€â”€ Grid lines â€” X at each of 6 scale levels, Y at paradigm thirds â”€â”€â”€â”€â”€â”€
   // X: 6 scale levels at -12, -7.2, -2.4, +2.4, +7.2, +12
   const scaleXVals=[-12,-7.2,-2.4,2.4,7.2,12];
   scaleXVals.forEach(v=>{
@@ -1792,7 +1792,7 @@ function build(){
       "clip-path":"url(#scatter-clip)"},svg);
   });
 
-  // ── Axis tick labels — X (Escala de la Materia, 6 niveles) ──────────────
+  // â”€â”€ Axis tick labels â€” X (Escala de la Materia, 6 niveles) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   [[-12,"Molecular"],[-7.2,"Celular"],[-2.4,"Organismo"],
    [2.4,"Lote/Prod."],[7.2,"Campo/Sist."],[12,"Paisaje"]].forEach(([v,lbl])=>{
     const gx=scX(v);
@@ -1801,8 +1801,8 @@ function build(){
       "font-family":"DM Sans,sans-serif"},svg);
     t.textContent=lbl;
   });
-  // ── Axis tick labels — Y (Paradigma, gradiente 1→3) ──────────────────────
-  [[-9,"Bio\nMaterial"],[0,"Bio·Digital"],[9,"Digital\nComp."]].forEach(([v,lbl])=>{
+  // â”€â”€ Axis tick labels â€” Y (Paradigma, gradiente 1â†’3) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  [[-9,"Bio\nMaterial"],[0,"BioÂ·Digital"],[9,"Digital\nComp."]].forEach(([v,lbl])=>{
     const gy=scY(v);
     const lines=lbl.split("\n");
     const isCenter=v===0;
@@ -1817,27 +1817,27 @@ function build(){
     });
   });
 
-  // ── Axis title labels ─────────────────────────────────────────────────
+  // â”€â”€ Axis title labels â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   const axLbl=el("text",{x:PAD.l+CW/2,y:PAD.t+CH+52,
     "text-anchor":"middle","font-size":"9.5","font-weight":"600",
     fill:"#8a7d70","font-family":"DM Sans,sans-serif"},svg);
-  axLbl.textContent="← Escala de la Materia →";
+  axLbl.textContent="â† Escala de la Materia â†’";
   const ayLbl=el("text",{x:12,y:PAD.t+CH/2,
     "text-anchor":"middle","font-size":"9.5","font-weight":"600",
     fill:"#8a7d70","font-family":"DM Sans,sans-serif",
     transform:`rotate(-90,12,${PAD.t+CH/2})`},svg);
-  ayLbl.textContent="← Paradigma →";
+  ayLbl.textContent="â† Paradigma â†’";
 
-  // ── Plot area border ─────────────────────────────────────────────────
+  // â”€â”€ Plot area border â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   el("rect",{x:PAD.l,y:PAD.t,width:CW,height:CH,fill:"none",
     stroke:"rgba(200,190,178,.7)","stroke-width":"1",rx:"10"},svg);
 
-  // ── Grupos por tema: halos (blur) + dots ─────────────────────────────
+  // â”€â”€ Grupos por tema: halos (blur) + dots â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   const haloLayer=el("g",{"clip-path":"url(#scatter-clip)",filter:"url(#halo-blur)"},svg);
   const dotLayer =el("g",{"clip-path":"url(#scatter-clip)"},svg);
   const haloGrps={}, dotGrps={};
 
-  // Acumular puntos por tema — usar px/py (posiciones clasificadas) si existen,
+  // Acumular puntos por tema â€” usar px/py (posiciones clasificadas) si existen,
   // sino fallback a sx/sy (UMAP legacy)
   const ptX=s=>scX(s.px!=null?s.px:(s.sy??s.x));
   const ptY=s=>scY(s.py!=null?s.py:(s.sx??s.y));
@@ -1849,8 +1849,8 @@ function build(){
     themePts[t].push([ptX(s),ptY(s)]);
   });
 
-  // Crear grupos y dibujar halos — un círculo borroso por punto,
-  // la acumulación revela la densidad real del cluster
+  // Crear grupos y dibujar halos â€” un cÃ­rculo borroso por punto,
+  // la acumulaciÃ³n revela la densidad real del cluster
   Object.entries(themePts).forEach(([theme,pts])=>{
     haloGrps[theme]=el("g",{"data-theme":theme},haloLayer);
     dotGrps[theme] =el("g",{"data-theme":theme},dotLayer);
@@ -1859,7 +1859,7 @@ function build(){
     });
   });
 
-  // ── Dots ─────────────────────────────────────────────────────────────
+  // â”€â”€ Dots â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   let renderedCount=0;
   const sorted=[...startups].sort((a,b)=>(a.valuation_estimate_usd||0)-(b.valuation_estimate_usd||0));
 
@@ -1885,30 +1885,30 @@ function build(){
       tt.style.left=left!=null?left+"px":"";
       tt.style.right=right!=null?right+"px":"";
       tt.style.top=(py-10)+"px";
-      // Descripción: preferir summary (2 oraciones), sino one_liner, sino vacío
+      // DescripciÃ³n: preferir summary (2 oraciones), sino one_liner, sino vacÃ­o
       const rawSum = s.summary||"";
       // Toma hasta las 2 primeras oraciones del summary
       const sentences = rawSum.match(/[^.!?]+[.!?]+/g)||[];
       const desc = sentences.length ? sentences.slice(0,2).join(" ").trim()
                    : (s.one_liner||"");
-      // Línea de contexto: escala + paradigma como chips cortos, no explicación
+      // LÃ­nea de contexto: escala + paradigma como chips cortos, no explicaciÃ³n
       const SCALE_LABEL=["","Molecular","Celular","Organismo","Lote/Prod.","Campo/Sist.","Paisaje"];
       const scaleLbl = s.mscale ? SCALE_LABEL[s.mscale]||"" : "";
       const parLbl   = s.mpar!=null
-        ? (s.mpar<=1.4?"Bio-Material":s.mpar>=2.6?"Digital":s.mpar<=1.8?"Bio-Mat·Dig":"Bio·Digital")
+        ? (s.mpar<=1.4?"Bio-Material":s.mpar>=2.6?"Digital":s.mpar<=1.8?"Bio-MatÂ·Dig":"BioÂ·Digital")
         : "";
-      const chips = [scaleLbl,parLbl].filter(Boolean).join("  ·  ");
+      const chips = [scaleLbl,parLbl].filter(Boolean).join("  Â·  ");
       tt.innerHTML=`
         <div class="a-tt-name">${s.name}</div>
-        <div class="a-tt-theme" style="color:${col};margin-bottom:6px">${s.bio_theme}${s.country?" · "+s.country:""}</div>
+        <div class="a-tt-theme" style="color:${col};margin-bottom:6px">${s.bio_theme}${s.country?" Â· "+s.country:""}</div>
         ${desc?`<div class="a-tt-body" style="line-height:1.5;margin-bottom:6px">${desc}</div>`:""}
-        <div style="font-size:.65rem;color:#a09070;letter-spacing:.04em;margin-top:2px">${chips}${val>0?" · $"+(val>=1000?(val/1000).toFixed(0)+"B":val+"M")+" val.":""}</div>`;
+        <div style="font-size:.65rem;color:#a09070;letter-spacing:.04em;margin-top:2px">${chips}${val>0?" Â· $"+(val>=1000?(val/1000).toFixed(0)+"B":val+"M")+" val.":""}</div>`;
       tt.classList.add("vis");
     });
     c.addEventListener("mouseleave",()=>tt.classList.remove("vis"));
   });
 
-  // ── Contador de puntos renderizados ──────────────────────────────────
+  // â”€â”€ Contador de puntos renderizados â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   const cntLbl=el("text",{
     x:PAD.l+CW-4, y:PAD.t+CH-5,
     "text-anchor":"end","font-size":"9","fill":"rgba(120,108,90,.65)",
@@ -1919,7 +1919,7 @@ function build(){
   applyVisibility();
 }
 
-// ── Estado de selección ───────────────────────────────────────────────────
+// â”€â”€ Estado de selecciÃ³n â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const activeThemes=new Set(Object.keys(THEME_PAL));
 
 function applyVisibility(){
@@ -1937,7 +1937,7 @@ build();
 const ro=new ResizeObserver(()=>build());
 ro.observe(svg.parentElement);
 
-// ── Sidebar legend interactiva ───────────────────────────────────────────
+// â”€â”€ Sidebar legend interactiva â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 (function(){
   const leg=document.getElementById("scatter-legend");
   if(!leg)return;
@@ -1950,7 +1950,7 @@ ro.observe(svg.parentElement);
     "Farm Intelligence","Nature & Ecosystem Tech",
   ];
 
-  // Botón reset
+  // BotÃ³n reset
   const btn=document.createElement("button");
   btn.className="asb-reset-btn";
   btn.textContent="Mostrar ninguno";
@@ -1986,7 +1986,7 @@ ro.observe(svg.parentElement);
 })();
 </script>
 
-<!-- ── Dendrogram: Árbol Evolutivo ───────────────────────────────────────── -->
+<!-- â”€â”€ Dendrogram: Ãrbol Evolutivo â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
 <script>
 (function(){
 "use strict";
@@ -2023,9 +2023,9 @@ const THEME_ORDER_DENDRO=[
 ];
 
 function shortCluster(cl){
-  const p=cl.split(/[→|✦]+/);
+  const p=cl.split(/[â†’|âœ¦]+/);
   const s=(p[p.length-1]||p[0]).trim();
-  return s.length>28?s.slice(0,26)+"…":s;
+  return s.length>28?s.slice(0,26)+"â€¦":s;
 }
 
 const startups=D.startups.filter(s=>s.bio_theme);
@@ -2041,7 +2041,7 @@ const SHORT_THEME={
   "Biomanufacturing & Fermentation Economy":"Biomanufacturing",
 };
 
-// Sort: macro → theme (THEME_ORDER_DENDRO) → cluster → name
+// Sort: macro â†’ theme (THEME_ORDER_DENDRO) â†’ cluster â†’ name
 const themeIdx=Object.fromEntries(THEME_ORDER_DENDRO.map((t,i)=>[t,i]));
 const macroOf=t=>MACRO_ORDER.findIndex(m=>m.themes.includes(t));
 const sorted=[...startups].sort((a,b)=>{
@@ -2069,24 +2069,24 @@ function build(){
   const PAD={t:20,r:20,b:20,l:20};
   const CW=W-PAD.l-PAD.r;
 
-  // ── Fixed X columns for tree hierarchy ───────────────────────────
+  // â”€â”€ Fixed X columns for tree hierarchy â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   const X_ROOT  = PAD.l+10;
   const X_MACRO = PAD.l+58;
   const X_THEME = PAD.l+122;
   const X_CLUST = PAD.l+182;
   const X_DOTS  = PAD.l+196;
-  // Reserve right margin for cluster labels — at least 180px, up to 22% of width
+  // Reserve right margin for cluster labels â€” at least 180px, up to 22% of width
   const LABEL_W = Math.max(180, Math.min(260, CW*0.22));
   const MAX_DOT_X = W-PAD.r-LABEL_W-6;
 
-  // ── Build cluster list (data first, draw later) ───────────────────
+  // â”€â”€ Build cluster list (data first, draw later) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   const clusters=[];
   MACRO_ORDER.forEach(m=>{
     m.themes.forEach(theme=>{
       const grp=new Map();
       sorted.forEach(s=>{
         if(s.bio_theme!==theme)return;
-        const k=shortCluster(s.cluster_label)||"—";
+        const k=shortCluster(s.cluster_label)||"â€”";
         if(!grp.has(k))grp.set(k,[]);
         grp.get(k).push(s);
       });
@@ -2096,7 +2096,7 @@ function build(){
     });
   });
 
-  // ── Dynamic height: min 17px per row ─────────────────────────────
+  // â”€â”€ Dynamic height: min 17px per row â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   const N=clusters.length;
   const GAP_PX=12;
   const nGaps=MACRO_ORDER.length-1;
@@ -2107,7 +2107,7 @@ function build(){
   el("rect",{x:0,y:0,width:W,height:H,fill:"#f7f4ee"},svg);
   const CH=H-PAD.t-PAD.b;
 
-  // ── Assign Y to cluster rows ──────────────────────────────────────
+  // â”€â”€ Assign Y to cluster rows â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   const rowH=(CH-nGaps*GAP_PX)/N;
   let yOff=PAD.t; let prevMacro=null;
   clusters.forEach(c=>{
@@ -2117,7 +2117,7 @@ function build(){
     prevMacro=c.macro;
   });
 
-  // ── Internal node Y midpoints ─────────────────────────────────────
+  // â”€â”€ Internal node Y midpoints â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   const themeY=new Map();
   clusters.forEach(c=>{
     if(!themeY.has(c.theme))themeY.set(c.theme,{minY:c.y,maxY:c.y,color:c.color});
@@ -2138,7 +2138,7 @@ function build(){
   const rootMaxY=Math.max(...[...macroY.values()].map(m=>m.maxY));
   const rootMidY=(rootMinY+rootMaxY)/2;
 
-  // ── Layers ────────────────────────────────────────────────────────
+  // â”€â”€ Layers â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   const layerBG    =el("g",{},svg);
   const layerBranch=el("g",{},svg);
   const layerNodes =el("g",{},svg);
@@ -2161,7 +2161,7 @@ function build(){
       opacity:op,"stroke-linecap":"round"},layerBranch);
   }
 
-  // ── Root → Macro ──────────────────────────────────────────────────
+  // â”€â”€ Root â†’ Macro â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   const macroMids=[...macroY.values()].map(m=>m.midY);
   if(macroMids.length>1)
     spineV(X_ROOT,Math.min(...macroMids),Math.max(...macroMids),"#3a3028","0.30","1.5");
@@ -2170,7 +2170,7 @@ function build(){
     dropH(X_ROOT,X_MACRO,m.midY,macro.color,"0.65","2");
   });
 
-  // ── Macro → Theme ────────────────────────────────────────────────
+  // â”€â”€ Macro â†’ Theme â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   MACRO_ORDER.forEach(macro=>{
     const mData=macroY.get(macro.name);
     if(!mData)return;
@@ -2189,7 +2189,7 @@ function build(){
     lbl.textContent=macro.name;
   });
 
-  // ── Theme → Cluster ──────────────────────────────────────────────
+  // â”€â”€ Theme â†’ Cluster â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   themeY.forEach((tData,theme)=>{
     const cys=clusters.filter(c=>c.theme===theme).map(c=>c.y);
     if(cys.length>1)
@@ -2204,7 +2204,7 @@ function build(){
     tl.textContent=SHORT_THEME[theme]||theme;
   });
 
-  // ── Root node ────────────────────────────────────────────────────
+  // â”€â”€ Root node â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   el("circle",{cx:X_ROOT,cy:rootMidY,r:"6.5",fill:"#3a3028",opacity:"0.92",
     stroke:"rgba(255,255,255,.88)","stroke-width":"1.8"},layerNodes);
   const rl=el("text",{x:X_ROOT,y:rootMidY,"text-anchor":"middle","dominant-baseline":"central",
@@ -2212,7 +2212,7 @@ function build(){
     "font-family":"DM Sans,sans-serif","pointer-events":"none"},layerLabels);
   rl.textContent="BIO";
 
-  // ── Cluster rows: node + startup dots + label ─────────────────────
+  // â”€â”€ Cluster rows: node + startup dots + label â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   const DOT_R  =Math.max(1.8,Math.min(3.0,rowH*0.26));
   const DOT_GAP=DOT_R*2+1.0;
   clusters.forEach(c=>{
@@ -2237,8 +2237,8 @@ function build(){
         const val=s.valuation_estimate_usd||0;
         tt.innerHTML=`<div class="a-tt-name">${s.name}</div>`+
           `<div class="a-tt-theme" style="color:${c.color}">${s.bio_theme}</div>`+
-          `<div class="a-tt-body">${MACRO_MAP[s.bio_theme]||""} · ${c.label}<br>`+
-          `${s.country||""}${val>0?" · $"+(val>=1000?(val/1000).toFixed(0)+"B":val+"M")+" val.":""}</div>`;
+          `<div class="a-tt-body">${MACRO_MAP[s.bio_theme]||""} Â· ${c.label}<br>`+
+          `${s.country||""}${val>0?" Â· $"+(val>=1000?(val/1000).toFixed(0)+"B":val+"M")+" val.":""}</div>`;
         tt.classList.add("vis");
       });
       dot.addEventListener("mouseleave",()=>tt.classList.remove("vis"));
@@ -2256,7 +2256,7 @@ function build(){
 
     // Cluster label: fixed right-aligned position, always visible
     const maxChars=Math.floor(LABEL_W/6.0);
-    const labelTxt=c.label.length>maxChars?c.label.slice(0,maxChars-1)+"…":c.label;
+    const labelTxt=c.label.length>maxChars?c.label.slice(0,maxChars-1)+"â€¦":c.label;
     const lbl=el("text",{x:W-PAD.r-4,y:c.y,"text-anchor":"end","dominant-baseline":"central",
       "font-size":"9.5","font-weight":"500",fill:c.color,opacity:"0.85",
       "font-family":"DM Sans,sans-serif","pointer-events":"none"},layerLabels);
@@ -2268,7 +2268,7 @@ build();
 const ro=new ResizeObserver(()=>build());
 ro.observe(svg.parentElement);
 
-// ── Sidebar legends ─────────────────────────────────────────────────────
+// â”€â”€ Sidebar legends â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 (function(){
   // Macro groups
   const macroLeg=document.getElementById("dendro-macro-legend");
