@@ -1,5 +1,5 @@
 window.STARTUP_THEMES_DATA = {
-  "computed_at": "2026-05-27T16:36:01",
+  "computed_at": "2026-05-27T22:01:22",
   "model": "intfloat/multilingual-e5-small",
   "stats": {
     "total_startups": 487,
@@ -80,6 +80,83 @@ window.STARTUP_THEMES_DATA = {
         "Biotech"
       ],
       "investor_ids": []
+    },
+    {
+      "id": "argentag",
+      "name": "ArgenTAG",
+      "country": "Argentina",
+      "countries": [
+        "Argentina"
+      ],
+      "website": "https://www.argentag.com/single-cell-solutions",
+      "macro_theme": "computational biology and scientific software",
+      "emergent_theme": "computational biology and life-science software",
+      "summary": "ArgenTAG is a life-science tools company building high-resolution single-cell long-read sequencing solutions. Its Single-Cell RNA Library Kit uses portable microfluidic cell partitioning, magnetic bead capture and smart barcoding so individual-cell transcriptomes can be sequenced on long-read platforms such as Oxford Nanopore and PacBio. It belongs inside BIO VC LATAM as genomics infrastructure for biomedical research, diagnostics, disease biology and cell-level discovery.",
+      "one_liner": "Single-cell long-read sequencing kit and workflow.",
+      "cluster_id": 0,
+      "cluster_label": "Diagnostics & Health Access · Diagnostics",
+      "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
+      "cluster_confidence": 0.349,
+      "x": -3.831,
+      "y": -8.403,
+      "is_outlier": false,
+      "tech_codes": [
+        "bioinformatics",
+        "ai_ml",
+        "diagnostics",
+        "therapeutics"
+      ],
+      "industry_codes": [
+        "therapeutics_industry",
+        "diagnostics_industry",
+        "human_health"
+      ],
+      "quality_score": 8.5,
+      "quality_band": "high",
+      "community_id": 10,
+      "pagerank": 0.00108407171613055,
+      "valuation_tier": 1.0,
+      "n_investors_mapped": 4,
+      "bio_theme": "Diagnostics & Health Access",
+      "bio_theme_secondary": "Therapeutics",
+      "is_bio_universe": 1,
+      "sub_cluster_label": "Diagnostic-Therapeutic Convergence",
+      "funding_stage": "pre-seed",
+      "funding_bucket_usd": 0,
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation",
+      "sx": -3.381,
+      "sy": -7.55,
+      "bio_lens": [
+        "human-health-bio"
+      ],
+      "domain_tags": [
+        "diagnostics-medtech",
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "diagnostics",
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "industrial-scale",
+        "molecular-scale",
+        "product-scale"
+      ],
+      "market_label": "single-cell long-read sequencing platform",
+      "self_cats": [
+        "Diagnostics"
+      ],
+      "investor_ids": [
+        "AIR Capital",
+        "DraperCygnus",
+        "GridX",
+        "SOSV_IndieBio"
+      ]
     },
     {
       "id": "biomakers",
@@ -164,7 +241,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "diagnostics and medtech",
       "emergent_theme": "diagnostics & health access — laboratory · laboratory · diagnosis · portable · diagnostics",
       "summary": "Deep tech life science startup simplifying access to laboratory diagnosis. Develops accessible diagnostic platforms to democratize clinical testing.",
-      "one_liner": "",
+      "one_liner": "Deep tech life science startup simplifying access to laboratory diagnosis.",
       "cluster_id": 0,
       "cluster_label": "Diagnostics & Health Access — Diagnostics",
       "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
@@ -288,7 +365,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "diagnostics and medtech",
       "emergent_theme": "diagnostics & health access — laboratory · laboratory · diagnosis · portable · diagnostics",
       "summary": "Healthtech startup developing IoT and cloud-based solutions to deliver affordable medical care to underserved communities. Bridges the healthcare access gap in low-resource settings through connected diagnostics.",
-      "one_liner": "",
+      "one_liner": "Healthtech startup developing IoT and cloud-based solutions to deliver affordable medical care to underserved…",
       "cluster_id": 0,
       "cluster_label": "Diagnostics & Health Access — Diagnostics",
       "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
@@ -415,7 +492,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "diagnostics and medtech",
       "emergent_theme": "",
       "summary": "Brain4care wearable headband sensor detects micrometric pulsatile skull expansions to derive intracranial pressure waveforms non-invasively. FDA- and ANVISA-cleared; 93% sensitivity for intracranial hypertension; deployed in 85+ Brazilian hospitals for ICU and neurocritical care.",
-      "one_liner": "",
+      "one_liner": "Brain4care wearable headband sensor detects micrometric pulsatile skull expansions to derive intracranial pressure…",
       "cluster_id": 0,
       "cluster_label": "Diagnostics & Health Access — Diagnostics",
       "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
@@ -463,7 +540,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "diagnostics and medtech",
       "emergent_theme": "diagnostics & health access — laboratory · laboratory · diagnosis · portable · diagnostics",
       "summary": "Genetics company transforming pharmaceutical drug development by incorporating non-European genomic data. Addresses the critical gap in pharmacogenomic diversity to improve drug efficacy across populations.",
-      "one_liner": "",
+      "one_liner": "Genetics company transforming pharmaceutical drug development by incorporating non-European genomic data.",
       "cluster_id": 0,
       "cluster_label": "Diagnostics & Health Access — Diagnostics",
       "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
@@ -592,7 +669,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "diagnostics and medtech",
       "emergent_theme": "diagnostics & health access — laboratory · laboratory · diagnosis · portable · diagnostics",
       "summary": "Developed portable point-of-care kits for DNA/RNA detection with molecular precision, enabling rapid pathogen identification outside laboratory settings. Acquired by Amazon.",
-      "one_liner": "",
+      "one_liner": "Developed portable point-of-care kits for DNA/RNA detection with molecular precision, enabling rapid pathogen…",
       "cluster_id": 0,
       "cluster_label": "Diagnostics & Health Access — Diagnostics",
       "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
@@ -649,7 +726,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "diagnostics and medtech",
       "emergent_theme": "diagnostics & health access — laboratory · laboratory · diagnosis · portable · diagnostics",
       "summary": "Develops and produces instruments and reagents for automation of clinical diagnostics. Provides high-throughput diagnostic tools to improve laboratory efficiency across Brazil.",
-      "one_liner": "",
+      "one_liner": "Develops and produces instruments and reagents for automation of clinical diagnostics.",
       "cluster_id": 0,
       "cluster_label": "Diagnostics & Health Access — Diagnostics",
       "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
@@ -690,6 +767,56 @@ window.STARTUP_THEMES_DATA = {
       "market_label": "",
       "self_cats": [
         "Diagnostics"
+      ],
+      "investor_ids": []
+    },
+    {
+      "id": "cellter-cl",
+      "name": "Cellter",
+      "country": "Chile",
+      "countries": [
+        "Chile"
+      ],
+      "website": "cellter.cl",
+      "macro_theme": "diagnostics and medtech",
+      "emergent_theme": "",
+      "summary": "Chilean biotech combining AI-powered big data and nano pharmaceutical drug design to develop diagnostics and therapies for high-incidence diseases. Applications in cancer cardiovascular and immunotherapy. Founded 2016.",
+      "one_liner": "Chilean biotech combining AI-powered big data and nano pharmaceutical drug design to develop diagnostics and therapies…",
+      "cluster_id": 0,
+      "cluster_label": "Diagnostics & Health Access · Diagnostics",
+      "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
+      "cluster_confidence": 0.355,
+      "x": -3.819,
+      "y": -8.35,
+      "is_outlier": false,
+      "tech_codes": [],
+      "industry_codes": [],
+      "quality_score": 5.0,
+      "quality_band": "medium",
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
+      "valuation_tier": null,
+      "n_investors_mapped": 0,
+      "bio_theme": "Diagnostics & Health Access",
+      "bio_theme_secondary": "Therapeutics",
+      "is_bio_universe": 1,
+      "sub_cluster_label": "Diagnostic-Therapeutic Convergence",
+      "funding_stage": null,
+      "funding_bucket_usd": null,
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 1.5,
+      "valuation_estimate_source": "emergente",
+      "sx": -3.353,
+      "sy": -7.433,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Therapeutics",
+        "Diagnostics",
+        "AI / Data"
       ],
       "investor_ids": []
     },
@@ -767,7 +894,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "diagnostics and medtech",
       "emergent_theme": "diagnostics & health access — laboratory · laboratory · diagnosis · portable · diagnostics",
       "summary": "Developed infarction diagnostic technology delivering laboratory-accurate troponin results within minutes in emergency settings. Enables fast cardiac biomarker testing to improve heart attack triage.",
-      "one_liner": "",
+      "one_liner": "Developed infarction diagnostic technology delivering laboratory-accurate troponin results within minutes in emergency…",
       "cluster_id": 0,
       "cluster_label": "Diagnostics & Health Access — Diagnostics",
       "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
@@ -822,7 +949,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "diagnostics and medtech",
       "emergent_theme": "diagnostics & health access — laboratory · laboratory · diagnosis · portable · diagnostics",
       "summary": "Produces MgB2 superconducting wires for next-generation cryogenic-free MRI machines. Advances magnet technology that makes medical MRI systems more accessible and affordable.",
-      "one_liner": "",
+      "one_liner": "Produces MgB2 superconducting wires for next-generation cryogenic-free MRI machines.",
       "cluster_id": 0,
       "cluster_label": "Diagnostics & Health Access — Diagnostics",
       "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
@@ -875,7 +1002,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "diagnostics and medtech",
       "emergent_theme": "",
       "summary": "Develops lateral-flow saliva diagnostic kits using antibodies binding nucleic acid sequences associated with Type 2 diabetes, enabling non-invasive home testing in minutes without blood draws or lab equipment, targeting point-of-care diagnostics in consumer and clinical markets.",
-      "one_liner": "",
+      "one_liner": "Develops lateral-flow saliva diagnostic kits using antibodies binding nucleic acid sequences associated with Type 2…",
       "cluster_id": 0,
       "cluster_label": "Diagnostics & Health Access — Diagnostics",
       "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
@@ -923,7 +1050,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "diagnostics and medtech",
       "emergent_theme": "diagnostics & health access — laboratory · laboratory · diagnosis · portable · diagnostics",
       "summary": "Early diagnosis software automatically detecting retinal disease signs from retinal images and metadata. Enables scalable, AI-powered screening for diabetic retinopathy and other sight-threatening conditions.",
-      "one_liner": "",
+      "one_liner": "Early diagnosis software automatically detecting retinal disease signs from retinal images and metadata.",
       "cluster_id": 0,
       "cluster_label": "Diagnostics & Health Access — Diagnostics",
       "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
@@ -980,7 +1107,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "diagnostics and medtech",
       "emergent_theme": "diagnostics & health access — laboratory · laboratory · diagnosis · portable · diagnostics",
       "summary": "Argentine molecular diagnostics company developing methodologies for infectious, oncological, and genetic disease detection in humans. Offers simple, scalable diagnostic solutions for clinical and research use.",
-      "one_liner": "",
+      "one_liner": "Argentine molecular diagnostics company developing methodologies for infectious, oncological, and genetic disease…",
       "cluster_id": 0,
       "cluster_label": "Diagnostics & Health Access — Diagnostics",
       "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
@@ -1036,7 +1163,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "diagnostics and medtech",
       "emergent_theme": "diagnostics & health access — laboratory · laboratory · diagnosis · portable · diagnostics",
       "summary": "Building a distributed network of point-of-care testing machines for mass infectious disease surveillance. Democratizes epidemiological monitoring through decentralized diagnostic infrastructure.",
-      "one_liner": "",
+      "one_liner": "Building a distributed network of point-of-care testing machines for mass infectious disease surveillance.",
       "cluster_id": 0,
       "cluster_label": "Diagnostics & Health Access — Diagnostics",
       "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
@@ -1091,7 +1218,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "diagnostics and medtech",
       "emergent_theme": "diagnostics & health access — laboratory · laboratory · diagnosis · portable · diagnostics",
       "summary": "Operates a molecular diagnostic center performing specialized disease prevention tests, including a sepsis monitoring alarm system. Advances rapid molecular diagnostics for life-threatening conditions.",
-      "one_liner": "",
+      "one_liner": "Operates a molecular diagnostic center performing specialized disease prevention tests, including a sepsis monitoring…",
       "cluster_id": 0,
       "cluster_label": "Diagnostics & Health Access — Diagnostics",
       "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
@@ -1276,7 +1403,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "diagnostics and medtech",
       "emergent_theme": "",
       "summary": "Offers rapid, non-invasive breast cancer pre-screening using AI-enhanced infrared thermography in under 10 minutes at retail and clinic locations, expanding early detection access for women in Mexico and Latin America lacking routine mammography access.",
-      "one_liner": "",
+      "one_liner": "Offers rapid, non-invasive breast cancer pre-screening using AI-enhanced infrared thermography in under 10 minutes at…",
       "cluster_id": 0,
       "cluster_label": "Diagnostics & Health Access — Diagnostics",
       "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
@@ -1322,7 +1449,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "diagnostics and medtech",
       "emergent_theme": "therapeutics — antimicrobial · antimicrobial · textile · materials · patients",
       "summary": "Develops scientific-grade instruments for micro and nano-Raman spectroscopy and analytical tools for large optical spectroscopy datasets. Serves life science research and molecular diagnostics laboratories.",
-      "one_liner": "",
+      "one_liner": "Develops scientific-grade instruments for micro and nano-Raman spectroscopy and analytical tools for large optical…",
       "cluster_id": 0,
       "cluster_label": "Diagnostics & Health Access — Diagnostics",
       "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
@@ -1367,6 +1494,76 @@ window.STARTUP_THEMES_DATA = {
       "investor_ids": []
     },
     {
+      "id": "gameet",
+      "name": "Gameet",
+      "country": "Argentina",
+      "countries": [
+        "Argentina"
+      ],
+      "website": "https://www.gameet.life/",
+      "macro_theme": "diagnostics and medtech",
+      "emergent_theme": "reproductive biotech and assisted reproduction devices",
+      "summary": "Gameet is an Argentine reproductive-biotech startup developing 3D-printed microdevices to optimize the production of healthy human embryos in assisted-reproduction workflows. Its technology sits at the intersection of medtech, embryology and reproductive biology: a physical microdevice designed to improve biological outcomes in fertility treatment. It belongs inside BIO VC LATAM as reproductive medtech and bioinstrumentation.",
+      "one_liner": "3D-printed microdevice platform for assisted reproduction.",
+      "cluster_id": 0,
+      "cluster_label": "Diagnostics & Health Access · Diagnostics",
+      "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
+      "cluster_confidence": 0.352,
+      "x": -3.858,
+      "y": -8.414,
+      "is_outlier": false,
+      "tech_codes": [
+        "ai_ml",
+        "diagnostics"
+      ],
+      "industry_codes": [
+        "diagnostics_industry",
+        "human_health"
+      ],
+      "quality_score": 8.5,
+      "quality_band": "high",
+      "community_id": 3,
+      "pagerank": 0.0009886716766426612,
+      "valuation_tier": 2.0,
+      "n_investors_mapped": 1,
+      "bio_theme": "Diagnostics & Health Access",
+      "bio_theme_secondary": "",
+      "is_bio_universe": 1,
+      "sub_cluster_label": "Diagnostic-Therapeutic Convergence",
+      "funding_stage": null,
+      "funding_bucket_usd": null,
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy",
+      "sx": -3.44,
+      "sy": -7.575,
+      "bio_lens": [
+        "human-health-bio",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "diagnostics-medtech",
+        "human-health"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "diagnostics"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "planetary-scale",
+        "product-scale"
+      ],
+      "market_label": "assisted reproduction microdevices",
+      "self_cats": [
+        "MedTech",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "SF500"
+      ]
+    },
+    {
       "id": "gen-t-br",
       "name": "Gen-t",
       "country": "Brazil",
@@ -1377,7 +1574,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "computational biology and scientific software",
       "emergent_theme": "",
       "summary": "Improves ethnic diversity in human genome sequence collections by collecting genetic data from diverse Brazilian populations and studying disease-associated genetic traits.",
-      "one_liner": "",
+      "one_liner": "Improves ethnic diversity in human genome sequence collections by collecting genetic data from diverse Brazilian…",
       "cluster_id": 0,
       "cluster_label": "Diagnostics & Health Access — Diagnostics",
       "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
@@ -1425,7 +1622,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "computational biology and scientific software",
       "emergent_theme": "",
       "summary": "Develops genomic and AI-based molecular diagnostic tests for thyroid nodule classification using the Idylla platform, enabling oncologists to accurately characterize nodules and avoid unnecessary surgeries, targeting clinical labs and oncology centers across Latin America.",
-      "one_liner": "",
+      "one_liner": "Develops genomic and AI-based molecular diagnostic tests for thyroid nodule classification using the Idylla platform,…",
       "cluster_id": 0,
       "cluster_label": "Diagnostics & Health Access — Diagnostics",
       "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
@@ -1474,7 +1671,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "diagnostics and medtech",
       "emergent_theme": "diagnostics & health access — laboratory · laboratory · diagnosis · portable · diagnostics",
       "summary": "Clinical genetics laboratory providing genetic and immunological testing services and personalized medicine solutions. Offers comprehensive genomic testing including cancer profiling and rare disease diagnosis.",
-      "one_liner": "",
+      "one_liner": "Clinical genetics laboratory providing genetic and immunological testing services and personalized medicine solutions.",
       "cluster_id": 0,
       "cluster_label": "Diagnostics & Health Access — Diagnostics",
       "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
@@ -1533,7 +1730,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "biomanufacturing and bioindustrial platforms",
       "emergent_theme": "diagnostics & health access — laboratory · laboratory · diagnosis · portable · diagnostics",
       "summary": "Operates Mexico's first private laboratory for CRISPR-Cas9 gene editing. Provides gene editing services and develops genetically engineered organisms for research and biotechnology applications.",
-      "one_liner": "",
+      "one_liner": "Operates Mexico's first private laboratory for CRISPR-Cas9 gene editing.",
       "cluster_id": 0,
       "cluster_label": "Diagnostics & Health Access — Diagnostics",
       "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
@@ -1660,7 +1857,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "diagnostics and medtech",
       "emergent_theme": "diagnostics & health access — laboratory · laboratory · diagnosis · portable · diagnostics",
       "summary": "Applies artificial intelligence to personalize diabetes treatment protocols. Enables precision management of blood glucose based on individual metabolic patterns.",
-      "one_liner": "",
+      "one_liner": "Applies artificial intelligence to personalize diabetes treatment protocols.",
       "cluster_id": 0,
       "cluster_label": "Diagnostics & Health Access — Diagnostics",
       "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
@@ -1715,7 +1912,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "diagnostics and medtech",
       "emergent_theme": "diagnostics & health access — laboratory · laboratory · diagnosis · portable · diagnostics",
       "summary": "Provides comprehensive medical diagnostic services across multiple specialties. Delivers clinical laboratory and imaging diagnostics to patients across Mexico.",
-      "one_liner": "",
+      "one_liner": "Provides comprehensive medical diagnostic services across multiple specialties.",
       "cluster_id": 0,
       "cluster_label": "Diagnostics & Health Access — Diagnostics",
       "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
@@ -1772,7 +1969,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "diagnostics and medtech",
       "emergent_theme": "diagnostics & health access — laboratory · laboratory · diagnosis · portable · diagnostics",
       "summary": "Precision medicine company offering genomic diagnostic services across clinical genomics, oncology, human microbiome, and reproductive genomics. Makes advanced genetic testing accessible in Latin America.",
-      "one_liner": "",
+      "one_liner": "Precision medicine company offering genomic diagnostic services across clinical genomics, oncology, human microbiome,…",
       "cluster_id": 0,
       "cluster_label": "Diagnostics & Health Access — Diagnostics",
       "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
@@ -1830,7 +2027,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "diagnostics and medtech",
       "emergent_theme": "",
       "summary": "Develops point-of-care diagnostic devices and cloud platform for remote lab tests with AI-powered results. Hilab Lens performs Complete Blood Count at POC. Series B $33.16M.",
-      "one_liner": "",
+      "one_liner": "Develops point-of-care diagnostic devices and cloud platform for remote lab tests with AI-powered results.",
       "cluster_id": 0,
       "cluster_label": "Diagnostics & Health Access — Diagnostics",
       "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
@@ -1883,7 +2080,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "diagnostics and medtech",
       "emergent_theme": "diagnostics & health access — laboratory · laboratory · diagnosis · portable · diagnostics",
       "summary": "Healthtech company using AI and computer vision to simplify patient journeys and clinical workflows. Applies machine vision to healthcare process automation.",
-      "one_liner": "",
+      "one_liner": "Healthtech company using AI and computer vision to simplify patient journeys and clinical workflows.",
       "cluster_id": 0,
       "cluster_label": "Diagnostics & Health Access — Diagnostics",
       "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
@@ -1941,7 +2138,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "diagnostics and medtech",
       "emergent_theme": "diagnostics & health access — laboratory · laboratory · diagnosis · portable · diagnostics",
       "summary": "Develops an AI cancer screening engine that applies artificial intelligence to medical imaging for early cancer detection. Makes cancer screening faster, cheaper, and universally accessible.",
-      "one_liner": "",
+      "one_liner": "Develops an AI cancer screening engine that applies artificial intelligence to medical imaging for early cancer…",
       "cluster_id": 0,
       "cluster_label": "Diagnostics & Health Access — Diagnostics",
       "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
@@ -1998,7 +2195,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "diagnostics and medtech",
       "emergent_theme": "diagnostics & health access — laboratory · laboratory · diagnosis · portable · diagnostics",
       "summary": "Technology-based solutions for the healthcare industry. Develops health tech tools for clinical applications.",
-      "one_liner": "",
+      "one_liner": "Technology-based solutions for the healthcare industry.",
       "cluster_id": 0,
       "cluster_label": "Diagnostics & Health Access — Diagnostics",
       "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
@@ -2053,7 +2250,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "diagnostics and medtech",
       "emergent_theme": "",
       "summary": "Develops proprietary enzymatic reagents for sample preparation across toxicology (mass spectrometry), genomics (PCR and NGS), and food safety (pathogen detection) workflows, improving speed and accuracy for clinical, forensic, and food industry labs globally.",
-      "one_liner": "",
+      "one_liner": "Develops proprietary enzymatic reagents for sample preparation across toxicology (mass spectrometry), genomics (PCR and…",
       "cluster_id": 0,
       "cluster_label": "Diagnostics & Health Access — Diagnostics",
       "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
@@ -2103,7 +2300,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "diagnostics and medtech",
       "emergent_theme": "",
       "summary": "Developed the FDA-cleared MARS magnetic robotic surgical platform using dual magnet-controlled arms and Dynamic Magnetic Positioning to perform laparoscopic bariatric, cholecystectomy, and colorectal surgeries with fewer incisions and no camera assistant needed.",
-      "one_liner": "",
+      "one_liner": "Developed the FDA-cleared MARS magnetic robotic surgical platform using dual magnet-controlled arms and Dynamic…",
       "cluster_id": 0,
       "cluster_label": "Diagnostics & Health Access — Diagnostics",
       "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
@@ -2154,7 +2351,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "diagnostics and medtech",
       "emergent_theme": "diagnostics & health access — laboratory · laboratory · diagnosis · portable · diagnostics",
       "summary": "Develops biotechnologies to decentralize molecular testing for food quality and health decision-making. Aims to democratize access to rapid, real-time molecular diagnostic tools.",
-      "one_liner": "",
+      "one_liner": "Develops biotechnologies to decentralize molecular testing for food quality and health decision-making.",
       "cluster_id": 0,
       "cluster_label": "Diagnostics & Health Access — Diagnostics",
       "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
@@ -2194,7 +2391,8 @@ window.STARTUP_THEMES_DATA = {
       "scale_tags": [],
       "market_label": "",
       "self_cats": [
-        "Diagnostics"
+        "Diagnostics",
+        "FoodTech"
       ],
       "investor_ids": []
     },
@@ -2280,7 +2478,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "diagnostics and medtech",
       "emergent_theme": "diagnostics & health access — laboratory · laboratory · diagnosis · portable · diagnostics",
       "summary": "Health-tech platform using AI to detect breast cancer at early stages, making screening accessible to all income levels. Applies deep learning to mammography and other imaging modalities.",
-      "one_liner": "",
+      "one_liner": "Health-tech platform using AI to detect breast cancer at early stages, making screening accessible to all income levels.",
       "cluster_id": 0,
       "cluster_label": "Diagnostics & Health Access — Diagnostics",
       "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
@@ -2338,7 +2536,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "diagnostics and medtech",
       "emergent_theme": "diagnostics & health access — laboratory · laboratory · diagnosis · portable · diagnostics",
       "summary": "Clinical genetics laboratory providing rapid and accurate DNA sequencing for genetic diagnosis, cancer genomics, and rare disease testing. One of the largest genetic testing providers in Latin America.",
-      "one_liner": "",
+      "one_liner": "Clinical genetics laboratory providing rapid and accurate DNA sequencing for genetic diagnosis, cancer genomics, and…",
       "cluster_id": 0,
       "cluster_label": "Diagnostics & Health Access — Diagnostics",
       "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
@@ -2396,7 +2594,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "diagnostics & health access — laboratory · laboratory · diagnosis · portable · diagnostics",
       "summary": "Uses machine learning, computational simulations, and medicinal pharmacology expertise to discover and advance new drugs into clinical development. Applies AI-driven methods to accelerate drug design.",
-      "one_liner": "",
+      "one_liner": "Uses machine learning, computational simulations, and medicinal pharmacology expertise to discover and advance new…",
       "cluster_id": 0,
       "cluster_label": "Diagnostics & Health Access — Diagnostics",
       "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
@@ -2590,7 +2788,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "diagnostics and medtech",
       "emergent_theme": "diagnostics & health access — laboratory · laboratory · diagnosis · portable · diagnostics",
       "summary": "Operates a simulation-based platform using 3D biomodels for surgical planning and training. Combines 3D printing and biomodeling to reduce surgical risk and improve clinical outcomes.",
-      "one_liner": "",
+      "one_liner": "Operates a simulation-based platform using 3D biomodels for surgical planning and training.",
       "cluster_id": 0,
       "cluster_label": "Diagnostics & Health Access — Diagnostics",
       "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
@@ -2630,7 +2828,8 @@ window.STARTUP_THEMES_DATA = {
       "scale_tags": [],
       "market_label": "",
       "self_cats": [
-        "MedTech"
+        "MedTech",
+        "Biotech"
       ],
       "investor_ids": []
     },
@@ -2785,7 +2984,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "diagnostics and medtech",
       "emergent_theme": "",
       "summary": "MZP Tecnologia (Bariloche) developed a portable point-of-care coagulation analyzer that measures blood viscosity from a single drop via a disposable micro-machined chip, enabling fast cardiovascular and clotting screening outside the lab.",
-      "one_liner": "",
+      "one_liner": "MZP Tecnologia (Bariloche) developed a portable point-of-care coagulation analyzer that measures blood viscosity from a…",
       "cluster_id": 0,
       "cluster_label": "Diagnostics & Health Access — Diagnostics",
       "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
@@ -2899,7 +3098,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "diagnostics and medtech",
       "emergent_theme": "",
       "summary": "NeoMed AI platform (Kardia for hospitals, Octopus for clinics) automates ECG and cardiac exam analysis to detect atrial fibrillation and acute MI. Delivers 90x faster reports and 30% cost reduction; active in 1,500+ Brazilian institutions including DASA and Fleury.",
-      "one_liner": "",
+      "one_liner": "NeoMed AI platform (Kardia for hospitals, Octopus for clinics) automates ECG and cardiac exam analysis to detect atrial…",
       "cluster_id": 0,
       "cluster_label": "Diagnostics & Health Access — Diagnostics",
       "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
@@ -2945,7 +3144,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "diagnostics and medtech",
       "emergent_theme": "diagnostics & health access — laboratory · laboratory · diagnosis · portable · diagnostics",
       "summary": "Develops AI-enabled healthcare technology for medical image analysis and clinical decision support. Combines computer vision and medical expertise to improve diagnostic accuracy and efficiency.",
-      "one_liner": "",
+      "one_liner": "Develops AI-enabled healthcare technology for medical image analysis and clinical decision support.",
       "cluster_id": 0,
       "cluster_label": "Diagnostics & Health Access — Diagnostics",
       "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
@@ -3003,7 +3202,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "diagnostics and medtech",
       "emergent_theme": "diagnostics & health access — laboratory · laboratory · diagnosis · portable · diagnostics",
       "summary": "Developing an Alzheimer's disease diagnostic strategy using cutting-edge biomarker technology for early detection and prognosis. Addresses the critical gap in accessible dementia diagnosis in Latin America.",
-      "one_liner": "",
+      "one_liner": "Developing an Alzheimer's disease diagnostic strategy using cutting-edge biomarker technology for early detection and…",
       "cluster_id": 0,
       "cluster_label": "Diagnostics & Health Access — Diagnostics",
       "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
@@ -3058,7 +3257,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "diagnostics and medtech",
       "emergent_theme": "diagnostics & health access — laboratory · laboratory · diagnosis · portable · diagnostics",
       "summary": "Develops pharmacogenetic tests for personalized medicine by extrapolating from metabolic phenotype profiling. Enables precision prescribing by matching drug regimens to individual genetic profiles.",
-      "one_liner": "",
+      "one_liner": "Develops pharmacogenetic tests for personalized medicine by extrapolating from metabolic phenotype profiling.",
       "cluster_id": 0,
       "cluster_label": "Diagnostics & Health Access — Diagnostics",
       "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
@@ -3111,7 +3310,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "precision agriculture and resource intelligence",
       "emergent_theme": "diagnostics & health access — laboratory · laboratory · diagnosis · portable · diagnostics",
       "summary": "Develops 3D camera software to estimate cattle weight using portable scanning devices, enabling precision livestock management. Helps cattle owners monitor herd performance without manual weighing.",
-      "one_liner": "",
+      "one_liner": "Develops 3D camera software to estimate cattle weight using portable scanning devices, enabling precision livestock…",
       "cluster_id": 0,
       "cluster_label": "Diagnostics & Health Access — Diagnostics",
       "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
@@ -3311,7 +3510,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "diagnostics and medtech",
       "emergent_theme": "diagnostics & health access — laboratory · laboratory · diagnosis · portable · diagnostics",
       "summary": "Veterinary pathological anatomy laboratory using predictive and quantitative biology to diagnose diseases in farmed fish. Enables precision aquatic animal health management through advanced diagnostics.",
-      "one_liner": "",
+      "one_liner": "Veterinary pathological anatomy laboratory using predictive and quantitative biology to diagnose diseases in farmed…",
       "cluster_id": 0,
       "cluster_label": "Diagnostics & Health Access — Diagnostics",
       "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
@@ -3421,7 +3620,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "diagnostics and medtech",
       "emergent_theme": "diagnostics & health access — laboratory · laboratory · diagnosis · portable · diagnostics",
       "summary": "Uses computer vision and AI to automate microscopy exams for healthcare diagnosis. Democratizes access to high-quality pathology analysis through intelligent image processing.",
-      "one_liner": "",
+      "one_liner": "Uses computer vision and AI to automate microscopy exams for healthcare diagnosis.",
       "cluster_id": 0,
       "cluster_label": "Diagnostics & Health Access — Diagnostics",
       "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
@@ -3552,7 +3751,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "diagnostics and medtech",
       "emergent_theme": "diagnostics & health access — laboratory · laboratory · diagnosis · portable · diagnostics",
       "summary": "Develops AI-based technology for early detection and treatment of chronic diseases including diabetes and hypertension in emerging markets. Provides scalable digital health screening for underserved populations.",
-      "one_liner": "",
+      "one_liner": "Develops AI-based technology for early detection and treatment of chronic diseases including diabetes and hypertension…",
       "cluster_id": 0,
       "cluster_label": "Diagnostics & Health Access — Diagnostics",
       "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
@@ -3609,7 +3808,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "ag biologicals and crop resilience",
       "emergent_theme": "",
       "summary": "Reddot Bio's MDx-Nano is a patented point-of-care platform detecting DNA/RNA faster and cheaper than RT-PCR, enabling field-accessible molecular diagnostics for plant and animal health. Backed by Vesper Ventures as an agtech-focused molecular biology company.",
-      "one_liner": "",
+      "one_liner": "Reddot Bio's MDx-Nano is a patented point-of-care platform detecting DNA/RNA faster and cheaper than RT-PCR, enabling…",
       "cluster_id": 0,
       "cluster_label": "Diagnostics & Health Access — Diagnostics",
       "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
@@ -3725,7 +3924,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "diagnostics and medtech",
       "emergent_theme": "diagnostics & health access — laboratory · laboratory · diagnosis · portable · diagnostics",
       "summary": "Develops reproductive medical devices that bring fertility treatments to patients' homes. Makes assisted reproductive technology accessible outside clinical settings.",
-      "one_liner": "",
+      "one_liner": "Develops reproductive medical devices that bring fertility treatments to patients' homes.",
       "cluster_id": 0,
       "cluster_label": "Diagnostics & Health Access — Diagnostics",
       "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
@@ -3780,7 +3979,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "biomanufacturing and bioindustrial platforms",
       "emergent_theme": "diagnostics & health access — laboratory · laboratory · diagnosis · portable · diagnostics",
       "summary": "Specializes in custom peptide synthesis, providing peptide reagents, building blocks, and catalog peptides to research and pharmaceutical customers. Advances peptide chemistry for drug development and diagnostics.",
-      "one_liner": "",
+      "one_liner": "Specializes in custom peptide synthesis, providing peptide reagents, building blocks, and catalog peptides to research…",
       "cluster_id": 0,
       "cluster_label": "Diagnostics & Health Access — Diagnostics",
       "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
@@ -3837,7 +4036,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "computational biology and scientific software",
       "emergent_theme": "",
       "summary": "Integrates AI with next-generation sequencing (NGS) for genomic data analysis. Applications in oncology rare diseases agriculture and evolutionary biology.",
-      "one_liner": "",
+      "one_liner": "Integrates AI with next-generation sequencing (NGS) for genomic data analysis.",
       "cluster_id": 0,
       "cluster_label": "Diagnostics & Health Access — Diagnostics",
       "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
@@ -3956,7 +4155,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "diagnostics and medtech",
       "emergent_theme": "",
       "summary": "Terragene manufactures rapid biological and chemical indicators — including a 7-second steam sterilization test — paired with cloud-connected readers and software to give hospital CSSDs real-time, traceable sterilization validation replacing manual visual checks.",
-      "one_liner": "",
+      "one_liner": "Terragene manufactures rapid biological and chemical indicators — including a 7-second steam sterilization test —…",
       "cluster_id": 0,
       "cluster_label": "Diagnostics & Health Access — Diagnostics",
       "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
@@ -4002,7 +4201,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "diagnostics and medtech",
       "emergent_theme": "diagnostics & health access — laboratory · laboratory · diagnosis · portable · diagnostics",
       "summary": "Develops a non-invasive thermography-based healthcare platform for early breast cancer detection. Provides mobile and desktop screening tools to reduce late-stage cancer diagnosis in underserved communities.",
-      "one_liner": "",
+      "one_liner": "Develops a non-invasive thermography-based healthcare platform for early breast cancer detection.",
       "cluster_id": 0,
       "cluster_label": "Diagnostics & Health Access — Diagnostics",
       "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
@@ -4055,7 +4254,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "diagnostics and medtech",
       "emergent_theme": "diagnostics & health access — laboratory · laboratory · diagnosis · portable · diagnostics",
       "summary": "Develops multi-genetic molecular diagnostic tests to accurately diagnose thyroid cancer from biopsy samples. Enables precise pre-surgical cancer determination to guide treatment decisions.",
-      "one_liner": "",
+      "one_liner": "Develops multi-genetic molecular diagnostic tests to accurately diagnose thyroid cancer from biopsy samples.",
       "cluster_id": 0,
       "cluster_label": "Diagnostics & Health Access — Diagnostics",
       "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
@@ -4111,7 +4310,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "diagnostics and medtech",
       "emergent_theme": "diagnostics & health access — laboratory · laboratory · diagnosis · portable · diagnostics",
       "summary": "Medical laboratory developing personalized medicine for autism spectrum disorder using genomic and multi-omic analysis. Combines science and technology to accelerate understanding and treatment of ASD.",
-      "one_liner": "",
+      "one_liner": "Medical laboratory developing personalized medicine for autism spectrum disorder using genomic and multi-omic analysis.",
       "cluster_id": 0,
       "cluster_label": "Diagnostics & Health Access — Diagnostics",
       "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
@@ -4232,7 +4431,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "diagnostics and medtech",
       "emergent_theme": "",
       "summary": "Develops Find, a portable microfluidic diagnostic platform using genetically engineered shark antibodies to detect TB, dengue, and other pathogens from saliva, urine, or blood in 15 minutes without lab equipment. AI smartphone readout targets resource-limited settings globally.",
-      "one_liner": "",
+      "one_liner": "Develops Find, a portable microfluidic diagnostic platform using genetically engineered shark antibodies to detect TB,…",
       "cluster_id": 0,
       "cluster_label": "Diagnostics & Health Access — Diagnostics",
       "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
@@ -4282,7 +4481,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "diagnostics and medtech",
       "emergent_theme": "diagnostics & health access — laboratory · laboratory · diagnosis · portable · diagnostics",
       "summary": "Develops automated microscopy for veterinary diagnostics with AI-powered single-scan diagnosis. Enables rapid, accurate, and portable veterinary pathology analysis.",
-      "one_liner": "",
+      "one_liner": "Develops automated microscopy for veterinary diagnostics with AI-powered single-scan diagnosis.",
       "cluster_id": 0,
       "cluster_label": "Diagnostics & Health Access — Diagnostics",
       "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
@@ -4408,7 +4607,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "ag biologicals and crop resilience",
       "emergent_theme": "food systems & alt proteins — fish · fish · antibiotics · meat · aquaculture",
       "summary": "Biotechnology company developing next-generation biotherapeutics for the veterinary industry, particularly aquaculture. Creates biological treatments to improve animal health and productivity in fish farming.",
-      "one_liner": "",
+      "one_liner": "Biotechnology company developing next-generation biotherapeutics for the veterinary industry, particularly aquaculture.",
       "cluster_id": 1,
       "cluster_label": "Food Systems & Alt Proteins — Fish",
       "cluster_keywords": "fish · aquaculture · antibiotics · meat",
@@ -4462,7 +4661,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "food systems & alt proteins — fish · fish · antibiotics · meat · aquaculture",
       "summary": "Develops bioactive compounds targeting musculoskeletal health to prevent aging-related decline in bones, muscles, and joints. Offers science-backed nutraceutical solutions to extend healthy lifespan.",
-      "one_liner": "",
+      "one_liner": "Develops bioactive compounds targeting musculoskeletal health to prevent aging-related decline in bones, muscles, and…",
       "cluster_id": 1,
       "cluster_label": "Food Systems & Alt Proteins — Fish",
       "cluster_keywords": "fish · aquaculture · antibiotics · meat",
@@ -4570,7 +4769,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "",
       "summary": "Produces and clinically develops sodium channel-blocking bioactive molecules from marine microalgae targeting pain management, muscle relaxation, and neurological conditions. Lead compound is in FDA Phase I/II trials with initial indication for anal fissure treatment.",
-      "one_liner": "",
+      "one_liner": "Produces and clinically develops sodium channel-blocking bioactive molecules from marine microalgae targeting pain…",
       "cluster_id": 1,
       "cluster_label": "Food Systems & Alt Proteins — Fish",
       "cluster_keywords": "fish · aquaculture · antibiotics · meat",
@@ -4687,7 +4886,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "biomanufacturing and bioindustrial platforms",
       "emergent_theme": "food systems & alt proteins — fish · fish · antibiotics · meat · aquaculture",
       "summary": "Develops alternative sources for producing microbiological culture media components, reducing dependence on imported biological inputs. Builds Latin American capacity in microbiological research infrastructure.",
-      "one_liner": "",
+      "one_liner": "Develops alternative sources for producing microbiological culture media components, reducing dependence on imported…",
       "cluster_id": 1,
       "cluster_label": "Food Systems & Alt Proteins — Fish",
       "cluster_keywords": "fish · aquaculture · antibiotics · meat",
@@ -4742,7 +4941,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "ag biologicals and crop resilience",
       "emergent_theme": "",
       "summary": "Manufactures Shrimpbox, a 40-foot containerized AI-automated shrimp farm using zero-discharge biofloc technology that grows up to 1.5 metric tons of antibiotic-free shrimp per unit annually, enabling land-based sustainable production near urban markets.",
-      "one_liner": "",
+      "one_liner": "Manufactures Shrimpbox, a 40-foot containerized AI-automated shrimp farm using zero-discharge biofloc technology that…",
       "cluster_id": 1,
       "cluster_label": "Food Systems & Alt Proteins — Fish",
       "cluster_keywords": "fish · aquaculture · antibiotics · meat",
@@ -4790,7 +4989,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "ag biologicals and crop resilience",
       "emergent_theme": "food systems & alt proteins — fish · fish · antibiotics · meat · aquaculture",
       "summary": "Biotechnology company making sustainable animal nutrition profitable through intestinal microbiology expertise. Develops microbiome-based nutritional solutions to improve livestock health and feed efficiency.",
-      "one_liner": "",
+      "one_liner": "Biotechnology company making sustainable animal nutrition profitable through intestinal microbiology expertise.",
       "cluster_id": 1,
       "cluster_label": "Food Systems & Alt Proteins — Fish",
       "cluster_keywords": "fish · aquaculture · antibiotics · meat",
@@ -4844,7 +5043,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "biomanufacturing and bioindustrial platforms",
       "emergent_theme": "food systems & alt proteins — fish · fish · antibiotics · meat · aquaculture",
       "summary": "Brazilian biotech startup focused on sustainable development through biological processes. Operates in the intersection of industrial biotechnology and environmental sustainability.",
-      "one_liner": "",
+      "one_liner": "Brazilian biotech startup focused on sustainable development through biological processes.",
       "cluster_id": 1,
       "cluster_label": "Food Systems & Alt Proteins — Fish",
       "cluster_keywords": "fish · aquaculture · antibiotics · meat",
@@ -4902,7 +5101,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "biomanufacturing and bioindustrial platforms",
       "emergent_theme": "food systems & alt proteins — fish · fish · antibiotics · meat · aquaculture",
       "summary": "Develops and produces industrial bioprocesses and biological products for agribusiness, pharmaceutical, and food industries. Specializes in fermentation-based manufacturing of bio-based inputs.",
-      "one_liner": "",
+      "one_liner": "Develops and produces industrial bioprocesses and biological products for agribusiness, pharmaceutical, and food…",
       "cluster_id": 1,
       "cluster_label": "Food Systems & Alt Proteins — Fish",
       "cluster_keywords": "fish · aquaculture · antibiotics · meat",
@@ -4960,7 +5159,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "climate, energy and resource systems",
       "emergent_theme": "food systems & alt proteins — fish · fish · antibiotics · meat · aquaculture",
       "summary": "Develops bacterial-based dioxin biosensors and biotechnological alternatives for environmental monitoring and remediation. Uses living microbial systems to detect and reduce toxic environmental contaminants.",
-      "one_liner": "",
+      "one_liner": "Develops bacterial-based dioxin biosensors and biotechnological alternatives for environmental monitoring and…",
       "cluster_id": 1,
       "cluster_label": "Food Systems & Alt Proteins — Fish",
       "cluster_keywords": "fish · aquaculture · antibiotics · meat",
@@ -5066,7 +5265,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "precision agriculture and resource intelligence",
       "emergent_theme": "",
       "summary": "Deploys AI models that predict raw material quality hours ahead, optimize blending recipes for non-homogeneous inputs like fishmeal, and forecast equipment failures, stabilizing production for salmon aquaculture, fishmeal, mining, and food manufacturing clients.",
-      "one_liner": "",
+      "one_liner": "Deploys AI models that predict raw material quality hours ahead, optimize blending recipes for non-homogeneous inputs…",
       "cluster_id": 1,
       "cluster_label": "Food Systems & Alt Proteins — Fish",
       "cluster_keywords": "fish · aquaculture · antibiotics · meat",
@@ -5114,7 +5313,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "biomanufacturing and bioindustrial platforms",
       "emergent_theme": "food systems & alt proteins — fish · fish · antibiotics · meat · aquaculture",
       "summary": "Provides biotechnological research and bioprocessing scaling services, including development of bioactive polyphenolic compounds from cas fruit. Supports scale-up of biological processes for industry.",
-      "one_liner": "",
+      "one_liner": "Provides biotechnological research and bioprocessing scaling services, including development of bioactive polyphenolic…",
       "cluster_id": 1,
       "cluster_label": "Food Systems & Alt Proteins — Fish",
       "cluster_keywords": "fish · aquaculture · antibiotics · meat",
@@ -5171,7 +5370,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "climate, energy and resource systems",
       "emergent_theme": "food systems & alt proteins — fish · fish · antibiotics · meat · aquaculture",
       "summary": "Applies biotechnology to industrial processes, circular economy, and climate change mitigation. Develops bio-based solutions for sustainable industry transformation.",
-      "one_liner": "",
+      "one_liner": "Applies biotechnology to industrial processes, circular economy, and climate change mitigation.",
       "cluster_id": 1,
       "cluster_label": "Food Systems & Alt Proteins — Fish",
       "cluster_keywords": "fish · aquaculture · antibiotics · meat",
@@ -5207,6 +5406,7 @@ window.STARTUP_THEMES_DATA = {
       "scale_tags": [],
       "market_label": "",
       "self_cats": [
+        "Biomanufacturing",
         "Biotech"
       ],
       "investor_ids": []
@@ -5222,7 +5422,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "food biotech and novel ingredients",
       "emergent_theme": "food systems & alt proteins — fish · fish · antibiotics · meat · aquaculture",
       "summary": "Develops sustainable aquaculture systems producing high-quality protein where conventional aquaculture is not viable. Advances next-generation fish and seafood farming to meet growing global protein demand.",
-      "one_liner": "",
+      "one_liner": "Develops sustainable aquaculture systems producing high-quality protein where conventional aquaculture is not viable.",
       "cluster_id": 1,
       "cluster_label": "Food Systems & Alt Proteins — Fish",
       "cluster_keywords": "fish · aquaculture · antibiotics · meat",
@@ -5274,7 +5474,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "food biotech and novel ingredients",
       "emergent_theme": "food systems & alt proteins — fish · fish · antibiotics · meat · aquaculture",
       "summary": "Produces animal-free fungal-based food products with high nutritional protein value, using AI and computer vision to optimize fermentation. Targets accessible alternative protein for mass consumption.",
-      "one_liner": "",
+      "one_liner": "Produces animal-free fungal-based food products with high nutritional protein value, using AI and computer vision to…",
       "cluster_id": 1,
       "cluster_label": "Food Systems & Alt Proteins — Fish",
       "cluster_keywords": "fish · aquaculture · antibiotics · meat",
@@ -5459,7 +5659,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "biomanufacturing and bioindustrial platforms",
       "emergent_theme": "therapeutics — biopharmaceutical · biopharmaceutical · commercialization · antibodies · healthcare",
       "summary": "Affordable lab-to-market platform for biosynthetics tailored to Latin American customers. Accelerates the commercialization of bio-based compounds from research to industrial production.",
-      "one_liner": "",
+      "one_liner": "Affordable lab-to-market platform for biosynthetics tailored to Latin American customers.",
       "cluster_id": 1,
       "cluster_label": "Food Systems & Alt Proteins — Fish",
       "cluster_keywords": "fish · aquaculture · antibiotics · meat",
@@ -5500,7 +5700,9 @@ window.STARTUP_THEMES_DATA = {
       ],
       "scale_tags": [],
       "market_label": "",
-      "self_cats": [],
+      "self_cats": [
+        "Biotech"
+      ],
       "investor_ids": []
     },
     {
@@ -5514,7 +5716,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "biomanufacturing and bioindustrial platforms",
       "emergent_theme": "food systems & alt proteins — novel ingredients · novel ingredients · functional · shelf · metabolic",
       "summary": "Produces biological compounds in microalgae, specializing in synthesis of recombinant proteins. Develops photosynthesis-based biomanufacturing platforms for high-value biomolecule production.",
-      "one_liner": "",
+      "one_liner": "Produces biological compounds in microalgae, specializing in synthesis of recombinant proteins.",
       "cluster_id": 1,
       "cluster_label": "Food Systems & Alt Proteins — Fish",
       "cluster_keywords": "fish · aquaculture · antibiotics · meat",
@@ -5572,7 +5774,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "food biotech and novel ingredients",
       "emergent_theme": "food systems & alt proteins — fish · fish · antibiotics · meat · aquaculture",
       "summary": "Produces sustainable insect-based functional food products including cookies and snacks made from grasshopper protein. Addresses protein sustainability by mainstreaming entomophagy through appetizing food formats.",
-      "one_liner": "",
+      "one_liner": "Produces sustainable insect-based functional food products including cookies and snacks made from grasshopper protein.",
       "cluster_id": 1,
       "cluster_label": "Food Systems & Alt Proteins — Fish",
       "cluster_keywords": "fish · aquaculture · antibiotics · meat",
@@ -5625,7 +5827,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "biomanufacturing and bioindustrial platforms",
       "emergent_theme": "biomaterials & circular economy — materials · materials · biomaterials · circular · bioindustrial",
       "summary": "Bio-manufactures hirudin, a blood-thinning compound, using microalgae as the production organism. Advances sustainable bioproduction of anticoagulants for pharmaceutical applications.",
-      "one_liner": "",
+      "one_liner": "Bio-manufactures hirudin, a blood-thinning compound, using microalgae as the production organism.",
       "cluster_id": 1,
       "cluster_label": "Food Systems & Alt Proteins — Fish",
       "cluster_keywords": "fish · aquaculture · antibiotics · meat",
@@ -5680,7 +5882,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "ag biologicals and crop resilience",
       "emergent_theme": "food systems & alt proteins — fish · fish · antibiotics · meat · aquaculture",
       "summary": "Develops oral biotherapeutics and probiotic products to enhance the immune system of farmed fish, enabling sustainable aquaculture without antibiotics. Advances fish health through microbiome-based solutions.",
-      "one_liner": "",
+      "one_liner": "Develops oral biotherapeutics and probiotic products to enhance the immune system of farmed fish, enabling sustainable…",
       "cluster_id": 1,
       "cluster_label": "Food Systems & Alt Proteins — Fish",
       "cluster_keywords": "fish · aquaculture · antibiotics · meat",
@@ -5732,7 +5934,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "food biotech and novel ingredients",
       "emergent_theme": "",
       "summary": "Developing nutrients for cell-cultivated meat using precision fermentation and agro by-products. Producing bovine myoglobin-based ingredients. $1.25M in grants (GFI + CORFO). Closing $4M seed round.",
-      "one_liner": "",
+      "one_liner": "Developing nutrients for cell-cultivated meat using precision fermentation and agro by-products.",
       "cluster_id": 1,
       "cluster_label": "Food Systems & Alt Proteins — Fish",
       "cluster_keywords": "fish · aquaculture · antibiotics · meat",
@@ -5783,7 +5985,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "food biotech and novel ingredients",
       "emergent_theme": "food systems & alt proteins — fish · fish · antibiotics · meat · aquaculture",
       "summary": "Develops cellular agriculture technology to scale culture-based clean meat production. Grows muscle tissue from animal cells without slaughter, advancing sustainable protein for human consumption.",
-      "one_liner": "",
+      "one_liner": "Develops cellular agriculture technology to scale culture-based clean meat production.",
       "cluster_id": 1,
       "cluster_label": "Food Systems & Alt Proteins — Fish",
       "cluster_keywords": "fish · aquaculture · antibiotics · meat",
@@ -5837,7 +6039,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "food biotech and novel ingredients",
       "emergent_theme": "food systems & alt proteins — fish · fish · antibiotics · meat · aquaculture",
       "summary": "Develops affordable alternative proteins through molecular farming technology, engineering crop plants to produce animal proteins at agricultural scale. Listed company advancing plant-made proteins for food applications.",
-      "one_liner": "",
+      "one_liner": "Develops affordable alternative proteins through molecular farming technology, engineering crop plants to produce…",
       "cluster_id": 1,
       "cluster_label": "Food Systems & Alt Proteins — Fish",
       "cluster_keywords": "fish · aquaculture · antibiotics · meat",
@@ -5893,7 +6095,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "food biotech and novel ingredients",
       "emergent_theme": "food systems & alt proteins — fish · fish · antibiotics · meat · aquaculture",
       "summary": "Brazilian cellular agriculture company using tissue engineering to develop cultivated meat and cultivated leather. Applies cell culture technology to produce animal products without slaughter.",
-      "one_liner": "",
+      "one_liner": "Brazilian cellular agriculture company using tissue engineering to develop cultivated meat and cultivated leather.",
       "cluster_id": 1,
       "cluster_label": "Food Systems & Alt Proteins — Fish",
       "cluster_keywords": "fish · aquaculture · antibiotics · meat",
@@ -5947,7 +6149,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "ag biologicals and crop resilience",
       "emergent_theme": "food systems & alt proteins — fish · fish · antibiotics · meat · aquaculture",
       "summary": "Develops probiotic-based solutions for animal health and agriculture. Advances microbiome science for sustainable farming and livestock management applications.",
-      "one_liner": "",
+      "one_liner": "Develops probiotic-based solutions for animal health and agriculture.",
       "cluster_id": 1,
       "cluster_label": "Food Systems & Alt Proteins — Fish",
       "cluster_keywords": "fish · aquaculture · antibiotics · meat",
@@ -5999,7 +6201,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "diagnostics and medtech",
       "emergent_theme": "food systems & alt proteins — fish · fish · antibiotics · meat · aquaculture",
       "summary": "Develops myoelectric, personalized biomechanical devices to provide new tools and opportunities for people with disabilities. Creates adjustable bionic prosthetics improving mobility and quality of life.",
-      "one_liner": "",
+      "one_liner": "Develops myoelectric, personalized biomechanical devices to provide new tools and opportunities for people with…",
       "cluster_id": 1,
       "cluster_label": "Food Systems & Alt Proteins — Fish",
       "cluster_keywords": "fish · aquaculture · antibiotics · meat",
@@ -6052,7 +6254,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "food biotech and novel ingredients",
       "emergent_theme": "food systems & alt proteins — fish · fish · antibiotics · meat · aquaculture",
       "summary": "Food-biotech startup developing plant-based meat substitutes to shift global food systems toward sustainability. Creates high-protein meat alternatives using food biotechnology and formulation science.",
-      "one_liner": "",
+      "one_liner": "Food-biotech startup developing plant-based meat substitutes to shift global food systems toward sustainability.",
       "cluster_id": 1,
       "cluster_label": "Food Systems & Alt Proteins — Fish",
       "cluster_keywords": "fish · aquaculture · antibiotics · meat",
@@ -6105,7 +6307,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "food biotech and novel ingredients",
       "emergent_theme": "food systems & alt proteins — fish · fish · antibiotics · meat · aquaculture",
       "summary": "Develops alimentary additives from biodiversity-derived active compounds to strengthen immune systems in humans and animals. Produces bioactive food ingredients with functional health benefits.",
-      "one_liner": "",
+      "one_liner": "Develops alimentary additives from biodiversity-derived active compounds to strengthen immune systems in humans and…",
       "cluster_id": 1,
       "cluster_label": "Food Systems & Alt Proteins — Fish",
       "cluster_keywords": "fish · aquaculture · antibiotics · meat",
@@ -6158,7 +6360,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "food biotech and novel ingredients",
       "emergent_theme": "",
       "summary": "Uses its proprietary Charaka AI engine to identify 100% natural plant-based replacements for animal-derived, synthetic, and highly processed food additives, enabling CPG companies to reformulate products in months rather than years.",
-      "one_liner": "",
+      "one_liner": "Uses its proprietary Charaka AI engine to identify 100% natural plant-based replacements for animal-derived, synthetic,…",
       "cluster_id": 1,
       "cluster_label": "Food Systems & Alt Proteins — Fish",
       "cluster_keywords": "fish · aquaculture · antibiotics · meat",
@@ -6206,7 +6408,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "food systems & alt proteins — fish · fish · antibiotics · meat · aquaculture",
       "summary": "Biotech company focused on developing vaccines, with initial work on COVID-19. Advances vaccine research and development for infectious diseases affecting global public health.",
-      "one_liner": "",
+      "one_liner": "Biotech company focused on developing vaccines, with initial work on COVID-19.",
       "cluster_id": 1,
       "cluster_label": "Food Systems & Alt Proteins — Fish",
       "cluster_keywords": "fish · aquaculture · antibiotics · meat",
@@ -6261,7 +6463,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "biomanufacturing and bioindustrial platforms",
       "emergent_theme": "food systems & alt proteins — fish · fish · antibiotics · meat · aquaculture",
       "summary": "Develops a rapid protein production system to scale up and grow new proteins sustainably, including animal-free and alternative proteins. Advances cell-free and fermentation-based manufacturing for the biotech industry.",
-      "one_liner": "",
+      "one_liner": "Develops a rapid protein production system to scale up and grow new proteins sustainably, including animal-free and…",
       "cluster_id": 1,
       "cluster_label": "Food Systems & Alt Proteins — Fish",
       "cluster_keywords": "fish · aquaculture · antibiotics · meat",
@@ -6321,7 +6523,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "biobased chemistry and advanced materials",
       "emergent_theme": "food systems & alt proteins — fish · fish · antibiotics · meat · aquaculture",
       "summary": "Biotech company developing antiviral and antibacterial hygiene product formulations targeting SARS-CoV-2 and other pathogens. Creates bio-based antimicrobial products for consumer and institutional markets.",
-      "one_liner": "",
+      "one_liner": "Biotech company developing antiviral and antibacterial hygiene product formulations targeting SARS-CoV-2 and other…",
       "cluster_id": 1,
       "cluster_label": "Food Systems & Alt Proteins — Fish",
       "cluster_keywords": "fish · aquaculture · antibiotics · meat",
@@ -6440,7 +6642,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "food systems & alt proteins — fish · fish · antibiotics · meat · aquaculture",
       "summary": "Developing IgY-based oral immunotherapy for infectious diseases, focused on reducing antibiotic resistance. Advances avian antibody technology as an alternative to conventional antibiotics.",
-      "one_liner": "",
+      "one_liner": "Developing IgY-based oral immunotherapy for infectious diseases, focused on reducing antibiotic resistance.",
       "cluster_id": 1,
       "cluster_label": "Food Systems & Alt Proteins — Fish",
       "cluster_keywords": "fish · aquaculture · antibiotics · meat",
@@ -7396,7 +7598,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "",
       "summary": "Giraffe Bio engineers custom biomolecules using AI and microfluidic biochips to replace harsh chemicals in copper and lithium leaching, improving metal recovery from low-grade ores while cutting water use and environmental impact at mine sites.",
-      "one_liner": "",
+      "one_liner": "Giraffe Bio engineers custom biomolecules using AI and microfluidic biochips to replace harsh chemicals in copper and…",
       "cluster_id": 2,
       "cluster_label": "Biomaterials & Circular Economy — Biobased Chemistry",
       "cluster_keywords": "materials · biobased chemistry · recovery · energy",
@@ -8297,7 +8499,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "biobased chemistry and advanced materials",
       "emergent_theme": "",
       "summary": "Develops sustainable biobased packaging materials from local Chilean biomass as alternatives to conventional plastics. Pre-seed funded. MIT recognized.",
-      "one_liner": "",
+      "one_liner": "Develops sustainable biobased packaging materials from local Chilean biomass as alternatives to conventional plastics.",
       "cluster_id": 3,
       "cluster_label": "Biomaterials & Circular Economy — Packaging",
       "cluster_keywords": "packaging · biodegradable · plastics · leather",
@@ -8348,7 +8550,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "",
       "summary": "Manufactures biodegradable and compostable packaging from bio-based materials that break down via fungal and microbial action in composting, landfill, or marine environments, serving 250+ retail, food, and e-commerce clients across Latin America and North America.",
-      "one_liner": "",
+      "one_liner": "Manufactures biodegradable and compostable packaging from bio-based materials that break down via fungal and microbial…",
       "cluster_id": 3,
       "cluster_label": "Biomaterials & Circular Economy — Packaging",
       "cluster_keywords": "packaging · biodegradable · plastics · leather",
@@ -8535,7 +8737,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "biobased chemistry and advanced materials",
       "emergent_theme": "biomaterials & circular economy — materials · materials · biomaterials · circular · bioindustrial",
       "summary": "Develops plant-based biopolymers as sustainable packaging substitutes for fossil-fuel-based plastics. Uses custom thermoforming technology to produce compostable packaging from renewable feedstocks.",
-      "one_liner": "",
+      "one_liner": "Develops plant-based biopolymers as sustainable packaging substitutes for fossil-fuel-based plastics.",
       "cluster_id": 3,
       "cluster_label": "Biomaterials & Circular Economy — Packaging",
       "cluster_keywords": "packaging · biodegradable · plastics · leather",
@@ -8590,7 +8792,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "climate, energy and resource systems",
       "emergent_theme": "biomaterials & circular economy — materials · materials · biomaterials · circular · bioindustrial",
       "summary": "Manufactures biomass-based absorber materials from palm tree fern for water treatment and agricultural remediation. Provides biodegradable solutions for environmental contamination control.",
-      "one_liner": "",
+      "one_liner": "Manufactures biomass-based absorber materials from palm tree fern for water treatment and agricultural remediation.",
       "cluster_id": 3,
       "cluster_label": "Biomaterials & Circular Economy — Packaging",
       "cluster_keywords": "packaging · biodegradable · plastics · leather",
@@ -8643,7 +8845,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "biobased chemistry and advanced materials",
       "emergent_theme": "biomaterials & circular economy — materials · materials · biomaterials · circular · bioindustrial",
       "summary": "Provides biodegradable chemicals for the paper and cellulose industry. Develops bio-based chemical solutions that replace conventional fossil-derived industrial chemicals.",
-      "one_liner": "",
+      "one_liner": "Provides biodegradable chemicals for the paper and cellulose industry.",
       "cluster_id": 3,
       "cluster_label": "Biomaterials & Circular Economy — Packaging",
       "cluster_keywords": "packaging · biodegradable · plastics · leather",
@@ -8696,7 +8898,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "biobased chemistry and advanced materials",
       "emergent_theme": "",
       "summary": "Mexican startup creating biodegradable plant-based packaging solutions for food and agriculture industries decomposing naturally as sustainable alternatives to conventional plastic. Based in Guadalajara.",
-      "one_liner": "",
+      "one_liner": "Mexican startup creating biodegradable plant-based packaging solutions for food and agriculture industries decomposing…",
       "cluster_id": 3,
       "cluster_label": "Biomaterials & Circular Economy — Packaging",
       "cluster_keywords": "packaging · biodegradable · plastics · leather",
@@ -8742,7 +8944,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "climate, energy and resource systems",
       "emergent_theme": "",
       "summary": "Triple-bottom-line sustainable pine resin company in Mexico working with indigenous communities to manage pine forests sustainably while producing high-quality resin for industrial markets.",
-      "one_liner": "",
+      "one_liner": "Triple-bottom-line sustainable pine resin company in Mexico working with indigenous communities to manage pine forests…",
       "cluster_id": 3,
       "cluster_label": "Biomaterials & Circular Economy — Packaging",
       "cluster_keywords": "packaging · biodegradable · plastics · leather",
@@ -8791,7 +8993,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "biobased chemistry and advanced materials",
       "emergent_theme": "biomaterials & circular economy — materials · materials · biomaterials · circular · bioindustrial",
       "summary": "Manufactures bioplastic materials and packaging products designed to eliminate microplastics and reduce CO2 emissions. Produces green-revolution packaging that fully replaces conventional fossil-fuel-based plastics.",
-      "one_liner": "",
+      "one_liner": "Manufactures bioplastic materials and packaging products designed to eliminate microplastics and reduce CO2 emissions.",
       "cluster_id": 3,
       "cluster_label": "Biomaterials & Circular Economy — Packaging",
       "cluster_keywords": "packaging · biodegradable · plastics · leather",
@@ -8848,7 +9050,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "biobased chemistry and advanced materials",
       "emergent_theme": "biomaterials & circular economy — materials · materials · biomaterials · circular · bioindustrial",
       "summary": "Manufactures biomaterials that connect plants and humans through regenerative technologies. Develops living materials and bio-based packaging that transform interaction between people and the environment.",
-      "one_liner": "",
+      "one_liner": "Manufactures biomaterials that connect plants and humans through regenerative technologies.",
       "cluster_id": 3,
       "cluster_label": "Biomaterials & Circular Economy — Packaging",
       "cluster_keywords": "packaging · biodegradable · plastics · leather",
@@ -8903,7 +9105,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "biomanufacturing and bioindustrial platforms",
       "emergent_theme": "",
       "summary": "Synthetic biology company producing algae-based environmentally safe color pigments as drop-in replacements for petroleum-derived dyes. Portfolio company of Savia Ventures.",
-      "one_liner": "",
+      "one_liner": "Synthetic biology company producing algae-based environmentally safe color pigments as drop-in replacements for…",
       "cluster_id": 3,
       "cluster_label": "Biomaterials & Circular Economy — Packaging",
       "cluster_keywords": "packaging · biodegradable · plastics · leather",
@@ -8954,7 +9156,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "",
       "summary": "Technology company transforming plant waste into key molecules for biomanufacturing, enabling circular bioeconomy applications. Portfolio company of Savia Ventures.",
-      "one_liner": "",
+      "one_liner": "Technology company transforming plant waste into key molecules for biomanufacturing, enabling circular bioeconomy…",
       "cluster_id": 3,
       "cluster_label": "Biomaterials & Circular Economy — Packaging",
       "cluster_keywords": "packaging · biodegradable · plastics · leather",
@@ -9072,7 +9274,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "food biotech and novel ingredients",
       "emergent_theme": "",
       "summary": "Chilean company producing microalgae-based protein as a sustainable drop-in replacement for whey protein in food and nutraceutical applications. Portfolio company of Savia Ventures.",
-      "one_liner": "",
+      "one_liner": "Chilean company producing microalgae-based protein as a sustainable drop-in replacement for whey protein in food and…",
       "cluster_id": 3,
       "cluster_label": "Biomaterials & Circular Economy — Packaging",
       "cluster_keywords": "packaging · biodegradable · plastics · leather",
@@ -9120,7 +9322,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "biobased chemistry and advanced materials",
       "emergent_theme": "biomaterials & circular economy — materials · materials · biomaterials · circular · bioindustrial",
       "summary": "Manufactures bio-assembled materials from circular carbon sources, providing sustainable alternatives for designers and material engineers. Produces bacterial cellulose-based materials to replace animal leather and plastics.",
-      "one_liner": "",
+      "one_liner": "Manufactures bio-assembled materials from circular carbon sources, providing sustainable alternatives for designers and…",
       "cluster_id": 3,
       "cluster_label": "Biomaterials & Circular Economy — Packaging",
       "cluster_keywords": "packaging · biodegradable · plastics · leather",
@@ -9179,7 +9381,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "biobased chemistry and advanced materials",
       "emergent_theme": "biomaterials & circular economy — materials · materials · biomaterials · circular · bioindustrial",
       "summary": "Uses biotech to create sustainable materials by combining microorganisms, agricultural waste, and biocontrol agents. Develops living materials for sustainable crop production and circular economy applications.",
-      "one_liner": "",
+      "one_liner": "Uses biotech to create sustainable materials by combining microorganisms, agricultural waste, and biocontrol agents.",
       "cluster_id": 3,
       "cluster_label": "Biomaterials & Circular Economy — Packaging",
       "cluster_keywords": "packaging · biodegradable · plastics · leather",
@@ -9220,6 +9422,7 @@ window.STARTUP_THEMES_DATA = {
       "market_label": "",
       "self_cats": [
         "Ag Biologicals",
+        "AgTech",
         "Biotech"
       ],
       "investor_ids": []
@@ -9235,7 +9438,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "biobased chemistry and advanced materials",
       "emergent_theme": "biomaterials & circular economy — materials · materials · biomaterials · circular · bioindustrial",
       "summary": "Develops mushroom mycelium-based leather as a sustainable, cruelty-free substitute for animal leather. Advances fungal biomaterials for fashion and design industries.",
-      "one_liner": "",
+      "one_liner": "Develops mushroom mycelium-based leather as a sustainable, cruelty-free substitute for animal leather.",
       "cluster_id": 3,
       "cluster_label": "Biomaterials & Circular Economy — Packaging",
       "cluster_keywords": "packaging · biodegradable · plastics · leather",
@@ -9290,7 +9493,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "biobased chemistry and advanced materials",
       "emergent_theme": "",
       "summary": "Chilean biotech developing high-performance biocomposites from timber waste as sustainable replacements for steel and aluminum in construction. Portfolio company of Savia Ventures.",
-      "one_liner": "",
+      "one_liner": "Chilean biotech developing high-performance biocomposites from timber waste as sustainable replacements for steel and…",
       "cluster_id": 3,
       "cluster_label": "Biomaterials & Circular Economy — Packaging",
       "cluster_keywords": "packaging · biodegradable · plastics · leather",
@@ -9482,7 +9685,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "ag biologicals and crop resilience",
       "emergent_theme": "",
       "summary": "Farms endangered totoaba, red snapper, and oysters in 350-hectare open-sea marine concessions in the Sea of Cortez using regenerative aquaculture, releasing 210,000+ juvenile totoaba to rebuild wild populations and supply premium sustainable seafood markets.",
-      "one_liner": "",
+      "one_liner": "Farms endangered totoaba, red snapper, and oysters in 350-hectare open-sea marine concessions in the Sea of Cortez…",
       "cluster_id": 4,
       "cluster_label": "Nature & Ecosystem Tech — Energy",
       "cluster_keywords": "energy · planetary · carbon · circular",
@@ -10028,7 +10231,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "biomanufacturing and bioindustrial platforms",
       "emergent_theme": "therapeutics — biopharmaceutical · biopharmaceutical · commercialization · antibodies · healthcare",
       "summary": "Genomics and synthetic biotechnology company developing biological systems for healthcare and industrial applications. Operates at the intersection of synthetic biology and genomic engineering.",
-      "one_liner": "",
+      "one_liner": "Genomics and synthetic biotechnology company developing biological systems for healthcare and industrial applications.",
       "cluster_id": 5,
       "cluster_label": "Biomanufacturing & Fermentation Economy — Precision Fermentation",
       "cluster_keywords": "bioindustrial · precision fermentation · enzymes · platforms",
@@ -10074,9 +10277,179 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "SynBio",
         "Diagnostics",
-        "Biotech"
+        "Biomanufacturing"
       ],
       "investor_ids": []
+    },
+    {
+      "id": "bybug",
+      "name": "ByBug",
+      "country": "Argentina",
+      "countries": [
+        "Argentina"
+      ],
+      "website": "https://www.bybug.io/tecnologia/",
+      "macro_theme": "biomanufacturing and bioindustrial platforms",
+      "emergent_theme": "insect bioreactors for recombinant proteins",
+      "summary": "ByBug is a Chilean biotechnology company building an insect-based biomanufacturing platform using genetically modified black soldier fly larvae as living bioreactors. ByBug Synthetics transforms agro-food byproducts into recombinant proteins and bioinputs for pharmaceutical, veterinary, industrial-enzyme and agricultural markets. It is not grain traceability or producer infrastructure; it should cluster with biomanufacturing, recombinant proteins, engineered insects and circular biofactories.",
+      "one_liner": "Engineered insect bioreactors for recombinant proteins and bioinputs.",
+      "cluster_id": 5,
+      "cluster_label": "Biomanufacturing & Fermentation Economy · Precision Fermentation",
+      "cluster_keywords": "bioindustrial · precision fermentation · enzymes · platforms",
+      "cluster_confidence": 0.353,
+      "x": -8.818,
+      "y": -2.45,
+      "is_outlier": false,
+      "tech_codes": [
+        "synbio",
+        "ag_inputs",
+        "biomanufacturing",
+        "ai_ml",
+        "enzymatic",
+        "therapeutics"
+      ],
+      "industry_codes": [
+        "therapeutics_industry",
+        "veterinary",
+        "row_crops",
+        "biomanufacturing_industry",
+        "carbon",
+        "human_health",
+        "specialty_chem"
+      ],
+      "quality_score": 8.0,
+      "quality_band": "medium",
+      "community_id": 9,
+      "pagerank": 0.0009625759555840287,
+      "valuation_tier": 1.0,
+      "n_investors_mapped": 1,
+      "bio_theme": "Biomanufacturing & Fermentation Economy",
+      "bio_theme_secondary": "Therapeutics",
+      "is_bio_universe": 1,
+      "sub_cluster_label": "",
+      "funding_stage": "pre-seed",
+      "funding_bucket_usd": 0,
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation",
+      "sx": -8.473,
+      "sy": -2.878,
+      "bio_lens": [
+        "biobased",
+        "bio-enabled-industrial-transition",
+        "circular",
+        "human-health-bio",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biomanufacturing",
+        "climate-resource",
+        "human-health",
+        "industrial-biotech",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "bioinputs",
+        "biomanufacturing",
+        "enzymes",
+        "synthetic-biology",
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale",
+        "molecular-scale",
+        "planetary-scale"
+      ],
+      "market_label": "insect bioreactor recombinant protein platform",
+      "self_cats": [
+        "Ag Biologicals",
+        "Alt Proteins",
+        "Precision Ferm"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
+    },
+    {
+      "id": "elytron_biotech",
+      "name": "Elytron Biotech",
+      "country": "Argentina",
+      "countries": [
+        "Argentina"
+      ],
+      "website": "https://www.elytronbiotech.com/?lang=en",
+      "macro_theme": "biomanufacturing and bioindustrial platforms",
+      "emergent_theme": "industrial biotech and molecular tools",
+      "summary": "Elytron Biotech is an Argentine bioindustrial company transforming frontier technology into high-performance biological products for agriculture and bioindustry. Its AI-driven platform is designed to accelerate development, reduce industrialization risk and integrate market-ready innovations into bioindustry value chains, with team capabilities in genomics, gene editing, molecular biology, bioinformatics and agricultural pest problems. It belongs inside BIO VC LATAM as biological-product development infrastructure for ag and bioindustrial systems.",
+      "one_liner": "AI-driven biological product development platform.",
+      "cluster_id": 5,
+      "cluster_label": "Biomanufacturing & Fermentation Economy · Precision Fermentation",
+      "cluster_keywords": "bioindustrial · precision fermentation · enzymes · platforms",
+      "cluster_confidence": 0.356,
+      "x": -2.291,
+      "y": 1.261,
+      "is_outlier": false,
+      "tech_codes": [
+        "bioinformatics",
+        "synbio",
+        "ai_ml",
+        "biomanufacturing"
+      ],
+      "industry_codes": [
+        "row_crops",
+        "biomanufacturing_industry",
+        "specialty_chem"
+      ],
+      "quality_score": 8.5,
+      "quality_band": "high",
+      "community_id": 4,
+      "pagerank": 0.0010521678203607924,
+      "valuation_tier": 1.0,
+      "n_investors_mapped": 2,
+      "bio_theme": "Biomanufacturing & Fermentation Economy",
+      "bio_theme_secondary": "Bioinputs & Crop Resilience",
+      "is_bio_universe": 1,
+      "sub_cluster_label": "",
+      "funding_stage": "pre-seed",
+      "funding_bucket_usd": 0,
+      "valuation_bucket_usd": 1,
+      "valuation_estimate_usd": 1.0,
+      "valuation_estimate_source": "gridx_valuation",
+      "sx": -2.525,
+      "sy": 1.091,
+      "bio_lens": [
+        "biobased",
+        "biocentric",
+        "bio-enabled-industrial-transition"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biomanufacturing",
+        "industrial-biotech"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "biomanufacturing"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "industrial-scale",
+        "molecular-scale",
+        "product-scale"
+      ],
+      "market_label": "AI-driven biological product development platform",
+      "self_cats": [
+        "AI / Data",
+        "AgTech",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "GridX",
+        "inventure"
+      ]
     },
     {
       "id": "enzyva",
@@ -10528,6 +10901,245 @@ window.STARTUP_THEMES_DATA = {
         "Diagnostics"
       ],
       "investor_ids": []
+    },
+    {
+      "id": "outpost",
+      "name": "Outpost",
+      "country": "USA",
+      "countries": [
+        "USA"
+      ],
+      "website": "https://www.outpost.bio/",
+      "macro_theme": "computational biology and scientific software",
+      "emergent_theme": "microbiome predictive biology and techbio",
+      "summary": "Outpost is a TechBio company making human microbiology computable by pairing wet-lab microbiology with machine learning and foundation-model style predictive systems. Its closed-loop engine is aimed at microbiome R&D, predictive medicine and biotech or consumer-health product development. It is not a clinical medical device or diagnostics product; it should cluster with computational biology, microbiome modeling, predictive biology and life-science software.",
+      "one_liner": "Closed-loop microbiome predictive-biology platform.",
+      "cluster_id": 5,
+      "cluster_label": "Biomanufacturing & Fermentation Economy · Precision Fermentation",
+      "cluster_keywords": "bioindustrial · precision fermentation · enzymes · platforms",
+      "cluster_confidence": 0.35,
+      "x": -8.756,
+      "y": -2.39,
+      "is_outlier": false,
+      "tech_codes": [
+        "microbial",
+        "ai_ml",
+        "diagnostics",
+        "therapeutics"
+      ],
+      "industry_codes": [
+        "human_health",
+        "therapeutics_industry",
+        "biodiversity",
+        "diagnostics_industry"
+      ],
+      "quality_score": 8.0,
+      "quality_band": "medium",
+      "community_id": 7,
+      "pagerank": 0.000980078491113103,
+      "valuation_tier": 1.0,
+      "n_investors_mapped": 1,
+      "bio_theme": "Biomanufacturing & Fermentation Economy",
+      "bio_theme_secondary": "Therapeutics",
+      "is_bio_universe": 1,
+      "sub_cluster_label": "",
+      "funding_stage": null,
+      "funding_bucket_usd": null,
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy",
+      "sx": -8.335,
+      "sy": -2.745,
+      "bio_lens": [
+        "biobased",
+        "biocentric",
+        "human-health-bio",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "biodiversity-nature",
+        "diagnostics-medtech",
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "diagnostics",
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "molecular-scale",
+        "planetary-scale",
+        "product-scale"
+      ],
+      "market_label": "microbiome predictive biology and techbio platform",
+      "self_cats": [
+        "AI / Data",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "AIR Capital"
+      ]
+    },
+    {
+      "id": "plamic",
+      "name": "Plamic",
+      "country": "Argentina",
+      "countries": [
+        "Argentina"
+      ],
+      "website": "https://www.argentina.gob.ar/ciencia/seppCTI/desarrollo-tecnologico-e-innovacion/diseno-fabricacion-y-caracterizacion-de-chips-o",
+      "macro_theme": "therapeutics and regenerative medicine",
+      "emergent_theme": "microfluidic nanomedicine manufacturing",
+      "summary": "PLAMIC develops microfluidic lab-on-a-chip systems to design, manufacture and characterize nanoscale drug-delivery formulations for health applications. Public sources frame its problem as low reproducibility, reagent waste and difficult scale-up in conventional nanomedicine manufacturing. It belongs inside BIO VC LATAM as biomedical process infrastructure for nanomedicine, not as crop or ag-input technology.",
+      "one_liner": "Microfluidic lab-on-a-chip platform for nanomedicine manufacturing.",
+      "cluster_id": 5,
+      "cluster_label": "Biomanufacturing & Fermentation Economy · Precision Fermentation",
+      "cluster_keywords": "bioindustrial · precision fermentation · enzymes · platforms",
+      "cluster_confidence": 0.357,
+      "x": -10.255,
+      "y": -9.922,
+      "is_outlier": false,
+      "tech_codes": [
+        "nanotech",
+        "formulation",
+        "ai_ml",
+        "biomanufacturing",
+        "therapeutics"
+      ],
+      "industry_codes": [
+        "human_health",
+        "row_crops",
+        "carbon",
+        "therapeutics_industry"
+      ],
+      "quality_score": 8.5,
+      "quality_band": "high",
+      "community_id": 9,
+      "pagerank": 0.0009625759555840287,
+      "valuation_tier": 1.0,
+      "n_investors_mapped": 1,
+      "bio_theme": "Biomanufacturing & Fermentation Economy",
+      "bio_theme_secondary": "",
+      "is_bio_universe": 1,
+      "sub_cluster_label": "Drug Discovery & Biologics",
+      "funding_stage": null,
+      "funding_bucket_usd": null,
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy",
+      "sx": -9.1,
+      "sy": -10.071,
+      "bio_lens": [
+        "biocentric",
+        "circular",
+        "human-health-bio",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "climate-resource",
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "biomanufacturing",
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "human-scale",
+        "industrial-scale",
+        "planetary-scale",
+        "territorial-scale"
+      ],
+      "market_label": "microfluidic nanomedicine manufacturing platform",
+      "self_cats": [],
+      "investor_ids": [
+        "GridX"
+      ]
+    },
+    {
+      "id": "stamm",
+      "name": "Stämm",
+      "country": "Argentina",
+      "countries": [
+        "Argentina"
+      ],
+      "website": "https://www.stamm.bio/",
+      "macro_theme": "biomanufacturing and bioindustrial platforms",
+      "emergent_theme": "continuous programmable biomanufacturing",
+      "summary": "Stämm is an Argentine advanced-biomanufacturing company developing high-throughput bioprocessors, bioengineering services and Bio AI tools for biologics and cell-therapy production. Its platform supports cell-line development, biologics manufacturing, cell-therapy workflows and multi-omic data analysis, with continuous bioreactor technology aimed at increasing antibody productivity. It belongs inside BIO VC LATAM as core biomanufacturing infrastructure for biologics, cell therapies and data-driven bioengineering.",
+      "one_liner": "High-throughput bioprocessing and Bio AI for biologics manufacturing.",
+      "cluster_id": 5,
+      "cluster_label": "Biomanufacturing & Fermentation Economy · Precision Fermentation",
+      "cluster_keywords": "bioindustrial · precision fermentation · enzymes · platforms",
+      "cluster_confidence": 0.354,
+      "x": -8.82,
+      "y": -2.372,
+      "is_outlier": false,
+      "tech_codes": [
+        "biomanufacturing",
+        "ai_ml"
+      ],
+      "industry_codes": [
+        "biomanufacturing_industry",
+        "human_health",
+        "specialty_chem",
+        "therapeutics_industry"
+      ],
+      "quality_score": 9.0,
+      "quality_band": "high",
+      "community_id": 7,
+      "pagerank": 0.0019052598884553333,
+      "valuation_tier": 3.0,
+      "n_investors_mapped": 5,
+      "bio_theme": "Biomanufacturing & Fermentation Economy",
+      "bio_theme_secondary": "Biomaterials & Circular Economy",
+      "is_bio_universe": 1,
+      "sub_cluster_label": "",
+      "funding_stage": "series-a",
+      "funding_bucket_usd": 15,
+      "valuation_bucket_usd": 100,
+      "valuation_estimate_usd": 100.0,
+      "valuation_estimate_source": "gridx_valuation",
+      "sx": -8.479,
+      "sy": -2.704,
+      "bio_lens": [
+        "biobased",
+        "bio-enabled-industrial-transition",
+        "human-health-bio"
+      ],
+      "domain_tags": [
+        "biomanufacturing",
+        "human-health",
+        "industrial-biotech",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "biomanufacturing"
+      ],
+      "scale_tags": [
+        "industrial-scale",
+        "molecular-scale"
+      ],
+      "market_label": "biomanufacturing infrastructure",
+      "self_cats": [
+        "Therapeutics",
+        "Biomanufacturing",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "AIR Capital",
+        "DraperCygnus",
+        "GridX",
+        "SOSV_IndieBio",
+        "varana_capital"
+      ]
     },
     {
       "id": "algaebio",
@@ -11448,7 +12060,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "climate, energy and resource systems",
       "emergent_theme": "",
       "summary": "Chilean startup using nanobubble technology to save water and energy in agriculture and aquaculture. Active in 10+ countries with US offices opening 2024. Backed by Endeavor and ClimaTech guild.",
-      "one_liner": "",
+      "one_liner": "Chilean startup using nanobubble technology to save water and energy in agriculture and aquaculture.",
       "cluster_id": 6,
       "cluster_label": "Food Systems & Alt Proteins — Novel Ingredients",
       "cluster_keywords": "novel ingredients · functional · shelf · metabolic",
@@ -11769,7 +12381,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "biobased chemistry and advanced materials",
       "emergent_theme": "food systems & alt proteins — novel ingredients · novel ingredients · functional · shelf · metabolic",
       "summary": "Develops a novel bio-nano compound that enables natural refrigeration, freezing water at up to 4°C. Applies bio-inspired nanotechnology to sustainable cold chain and food preservation solutions.",
-      "one_liner": "",
+      "one_liner": "Develops a novel bio-nano compound that enables natural refrigeration, freezing water at up to 4°C.",
       "cluster_id": 6,
       "cluster_label": "Food Systems & Alt Proteins — Novel Ingredients",
       "cluster_keywords": "novel ingredients · functional · shelf · metabolic",
@@ -12109,7 +12721,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "precision agriculture and resource intelligence",
       "emergent_theme": "",
       "summary": "Applies post-harvest nanotechnology coatings inside produce containers that extend fruit and vegetable shelf life by up to 130% during export transit, offering growers and exporters a natural, residue-free solution to reduce spoilage losses in international supply chains.",
-      "one_liner": "",
+      "one_liner": "Applies post-harvest nanotechnology coatings inside produce containers that extend fruit and vegetable shelf life by up…",
       "cluster_id": 6,
       "cluster_label": "Food Systems & Alt Proteins — Novel Ingredients",
       "cluster_keywords": "novel ingredients · functional · shelf · metabolic",
@@ -12289,6 +12901,89 @@ window.STARTUP_THEMES_DATA = {
       ]
     },
     {
+      "id": "amplify-dynamics",
+      "name": "Amplify Dynamics",
+      "country": "Colombia",
+      "countries": [
+        "Colombia"
+      ],
+      "website": "https://amplify-dynamics.com/",
+      "macro_theme": "biomanufacturing and bioindustrial platforms",
+      "emergent_theme": "industrial biotech and molecular tools",
+      "summary": "Amplify Dynamics is a Colombian/US bioprocessing tools company developing contactless ultrafiltration for lipid nanoparticle therapeutics. Its platform combines microfluidic flows and electronically controlled ultrasonic waves to separate LNPs without physical membranes, aiming to increase particle recovery, reduce purification time, improve throughput and cut waste. It belongs inside BIO VC LATAM as enabling infrastructure for gene therapy, vaccines, nanomedicine and biomanufacturing.",
+      "one_liner": "Contactless ultrasound purification for lipid nanoparticles.",
+      "cluster_id": 7,
+      "cluster_label": "Therapeutics · Biopharmaceutical",
+      "cluster_keywords": "biopharmaceutical · organ · therapeutic · medicine",
+      "cluster_confidence": 0.348,
+      "x": -10.012,
+      "y": -9.895,
+      "is_outlier": false,
+      "tech_codes": [
+        "nanotech",
+        "biomanufacturing",
+        "ai_ml",
+        "therapeutics"
+      ],
+      "industry_codes": [
+        "therapeutics_industry",
+        "biomanufacturing_industry",
+        "carbon",
+        "human_health",
+        "specialty_chem"
+      ],
+      "quality_score": 8.0,
+      "quality_band": "medium",
+      "community_id": 6,
+      "pagerank": 0.0009759305560124662,
+      "valuation_tier": null,
+      "n_investors_mapped": 1,
+      "bio_theme": "Therapeutics",
+      "bio_theme_secondary": "Biomaterials & Circular Economy",
+      "is_bio_universe": 1,
+      "sub_cluster_label": "Drug Discovery & Biologics",
+      "funding_stage": null,
+      "funding_bucket_usd": null,
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy",
+      "sx": -8.559,
+      "sy": -10.012,
+      "bio_lens": [
+        "biobased",
+        "bio-enabled-industrial-transition",
+        "circular",
+        "human-health-bio",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "biomanufacturing",
+        "climate-resource",
+        "human-health",
+        "industrial-biotech",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "biomanufacturing",
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "industrial-scale",
+        "molecular-scale"
+      ],
+      "market_label": "contactless LNP ultrafiltration platform",
+      "self_cats": [
+        "Therapeutics",
+        "Biomanufacturing",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "The Ganesha Lab"
+      ]
+    },
+    {
       "id": "ardan",
       "name": "Ardan",
       "country": "Uruguay",
@@ -12368,7 +13063,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "",
       "summary": "Argentine biopharmaceutical company with 40+ years developing biosimilar monoclonal antibodies and biologic drugs. Two industrial manufacturing plants.",
-      "one_liner": "",
+      "one_liner": "Argentine biopharmaceutical company with 40+ years developing biosimilar monoclonal antibodies and biologic drugs.",
       "cluster_id": 7,
       "cluster_label": "Therapeutics — Biopharmaceutical",
       "cluster_keywords": "biopharmaceutical · organ · therapeutic · medicine",
@@ -12419,7 +13114,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "therapeutics — organ · organ · medicine · stem · therapy",
       "summary": "Argentine biotech developing biotherapeutics for animals using cell-free and in-vitro methods, avoiding animal use in production. Targets veterinary diseases with high-tech biological solutions.",
-      "one_liner": "",
+      "one_liner": "Argentine biotech developing biotherapeutics for animals using cell-free and in-vitro methods, avoiding animal use in…",
       "cluster_id": 7,
       "cluster_label": "Therapeutics — Biopharmaceutical",
       "cluster_keywords": "biopharmaceutical · organ · therapeutic · medicine",
@@ -12560,7 +13255,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "",
       "summary": "Argentine immunotherapy company founded by Fundación Instituto Leloir scientists. Developing biologics for rare infectious diseases including hemolytic uremic syndrome (Phase III AR+EU) and hantavirus mRNA vaccine with Sinergium. Part of Grupo Insud.",
-      "one_liner": "",
+      "one_liner": "Argentine immunotherapy company founded by Fundación Instituto Leloir scientists.",
       "cluster_id": 7,
       "cluster_label": "Therapeutics — Biopharmaceutical",
       "cluster_keywords": "biopharmaceutical · organ · therapeutic · medicine",
@@ -12683,7 +13378,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "therapeutics — biopharmaceutical · biopharmaceutical · commercialization · antibodies · healthcare",
       "summary": "Biotechnology company developing therapies for tropical diseases affecting underserved populations in Latin America and the Caribbean. Advances neglected disease drug development.",
-      "one_liner": "",
+      "one_liner": "Biotechnology company developing therapies for tropical diseases affecting underserved populations in Latin America and…",
       "cluster_id": 7,
       "cluster_label": "Therapeutics — Biopharmaceutical",
       "cluster_keywords": "biopharmaceutical · organ · therapeutic · medicine",
@@ -12738,7 +13433,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "",
       "summary": "Argentine precision breeding and animal cloning biotechnology company. Developing genomic selection and gene editing for agricultural animals. Joint projects with Acceligen/Recombinetics.",
-      "one_liner": "",
+      "one_liner": "Argentine precision breeding and animal cloning biotechnology company.",
       "cluster_id": 7,
       "cluster_label": "Therapeutics — Biopharmaceutical",
       "cluster_keywords": "biopharmaceutical · organ · therapeutic · medicine",
@@ -12777,6 +13472,82 @@ window.STARTUP_THEMES_DATA = {
       "investor_ids": []
     },
     {
+      "id": "lipock",
+      "name": "Lipock",
+      "country": "Argentina",
+      "countries": [
+        "Argentina"
+      ],
+      "website": "https://www.gridexponential.com/portfolio",
+      "macro_theme": "therapeutics and regenerative medicine",
+      "emergent_theme": "drug delivery and bioactive formulation platforms",
+      "summary": "Lipock develops lipid nanocapsules that improve the efficacy of volatile and hydrophobic active compounds. The core semantic signal is drug delivery and bioactive formulation: nanoscale lipid encapsulation used to stabilize, deliver or improve actives that are otherwise difficult to formulate. It belongs inside BIO VC LATAM as nanomedicine / formulation infrastructure for therapeutics, cosmetics or bioactive health products.",
+      "one_liner": "Lipid nanocapsule platform for volatile and hydrophobic actives.",
+      "cluster_id": 7,
+      "cluster_label": "Therapeutics · Biopharmaceutical",
+      "cluster_keywords": "biopharmaceutical · organ · therapeutic · medicine",
+      "cluster_confidence": 0.351,
+      "x": -10.221,
+      "y": -9.912,
+      "is_outlier": false,
+      "tech_codes": [
+        "nanotech",
+        "formulation",
+        "ai_ml",
+        "therapeutics"
+      ],
+      "industry_codes": [
+        "veterinary",
+        "personal_care",
+        "materials_packaging",
+        "human_health",
+        "therapeutics_industry"
+      ],
+      "quality_score": 8.5,
+      "quality_band": "high",
+      "community_id": 9,
+      "pagerank": 0.0009625759555840287,
+      "valuation_tier": 1.0,
+      "n_investors_mapped": 1,
+      "bio_theme": "Therapeutics",
+      "bio_theme_secondary": "",
+      "is_bio_universe": 1,
+      "sub_cluster_label": "Drug Discovery & Biologics",
+      "funding_stage": null,
+      "funding_bucket_usd": null,
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy",
+      "sx": -9.025,
+      "sy": -10.048,
+      "bio_lens": [
+        "biocentric",
+        "human-health-bio",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "biomaterials",
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "industrial-scale",
+        "planetary-scale",
+        "product-scale"
+      ],
+      "market_label": "lipid nanocapsule drug-delivery and formulation platform",
+      "self_cats": [],
+      "investor_ids": [
+        "GridX"
+      ]
+    },
+    {
       "id": "mabxience-ar",
       "name": "mAbxience",
       "country": "Argentina",
@@ -12787,7 +13558,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "",
       "summary": "Biopharmaceutical company producing biosimilar monoclonal antibodies and biologics at large scale. Manufactured COVID vaccine (AstraZeneca) for Latin America.",
-      "one_liner": "",
+      "one_liner": "Biopharmaceutical company producing biosimilar monoclonal antibodies and biologics at large scale.",
       "cluster_id": 7,
       "cluster_label": "Therapeutics — Biopharmaceutical",
       "cluster_keywords": "biopharmaceutical · organ · therapeutic · medicine",
@@ -13207,7 +13978,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "therapeutics — biopharmaceutical · biopharmaceutical · commercialization · antibodies · healthcare",
       "summary": "Biotechnology company producing therapeutic proteins and pharmaceutical products for the healthcare sector. Specializes in biopharmaceutical manufacturing for clinical use.",
-      "one_liner": "",
+      "one_liner": "Biotechnology company producing therapeutic proteins and pharmaceutical products for the healthcare sector.",
       "cluster_id": 7,
       "cluster_label": "Therapeutics — Biopharmaceutical",
       "cluster_keywords": "biopharmaceutical · organ · therapeutic · medicine",
@@ -13348,7 +14119,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "therapeutics — biopharmaceutical · biopharmaceutical · commercialization · antibodies · healthcare",
       "summary": "Biopharmaceutical company engaged in research, development, production, and commercialization of biopharmaceuticals. Focuses on oncology and other therapeutic areas requiring biological drug solutions.",
-      "one_liner": "",
+      "one_liner": "Biopharmaceutical company engaged in research, development, production, and commercialization of biopharmaceuticals.",
       "cluster_id": 7,
       "cluster_label": "Therapeutics — Biopharmaceutical",
       "cluster_keywords": "biopharmaceutical · organ · therapeutic · medicine",
@@ -13553,7 +14324,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "therapeutics — regenerative medicine · therapeutics · regenerative medicine · cancer · wound",
       "summary": "Biotechnology company providing 3D bioprinting services for prosthetics, tissues, and organs. Advances biofabrication technology for regenerative medicine and personalized medical implants.",
-      "one_liner": "",
+      "one_liner": "Biotechnology company providing 3D bioprinting services for prosthetics, tissues, and organs.",
       "cluster_id": 8,
       "cluster_label": "Therapeutics — Drug Testing",
       "cluster_keywords": "organ · tissue · organs · drug testing",
@@ -13611,7 +14382,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "therapeutics — regenerative medicine · therapeutics · regenerative medicine · cancer · wound",
       "summary": "Innovative tissue engineering company developing biomimetic solutions for regenerative medicine and wound care applications. Applies principles of biological architecture to create functional tissue constructs.",
-      "one_liner": "",
+      "one_liner": "Innovative tissue engineering company developing biomimetic solutions for regenerative medicine and wound care…",
       "cluster_id": 8,
       "cluster_label": "Therapeutics — Drug Testing",
       "cluster_keywords": "organ · tissue · organs · drug testing",
@@ -13652,7 +14423,9 @@ window.STARTUP_THEMES_DATA = {
       ],
       "scale_tags": [],
       "market_label": "",
-      "self_cats": [],
+      "self_cats": [
+        "Biotech"
+      ],
       "investor_ids": []
     },
     {
@@ -13666,7 +14439,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "diagnostics and medtech",
       "emergent_theme": "",
       "summary": "Quantis biofabricates QMatrix, a human extracellular matrix lyophilized powder from 3D-bioprinted living tissue with no animal-derived components. Products target wound healing, cartilage regeneration (ChondroRegen), and dermocosmetics.",
-      "one_liner": "",
+      "one_liner": "Quantis biofabricates QMatrix, a human extracellular matrix lyophilized powder from 3D-bioprinted living tissue with no…",
       "cluster_id": 8,
       "cluster_label": "Therapeutics — Drug Testing",
       "cluster_keywords": "organ · tissue · organs · drug testing",
@@ -13712,7 +14485,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "therapeutics — regenerative medicine · therapeutics · regenerative medicine · cancer · wound",
       "summary": "Platform for creating lab-grown organs and tissues using bioprinting and biomaterials. Develops bioengineered constructs for regenerative medicine, drug testing, and eventual transplantation.",
-      "one_liner": "",
+      "one_liner": "Platform for creating lab-grown organs and tissues using bioprinting and biomaterials.",
       "cluster_id": 8,
       "cluster_label": "Therapeutics — Drug Testing",
       "cluster_keywords": "organ · tissue · organs · drug testing",
@@ -13754,7 +14527,8 @@ window.STARTUP_THEMES_DATA = {
       "scale_tags": [],
       "market_label": "",
       "self_cats": [
-        "Biomaterials"
+        "Biomaterials",
+        "Biotech"
       ],
       "investor_ids": []
     },
@@ -13769,7 +14543,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "therapeutics — regenerative medicine · therapeutics · regenerative medicine · cancer · wound",
       "summary": "Develops innovative therapies for organ preservation and ex-vivo organ management using bioengineering approaches. Advances bioengineered organ solutions to address transplantation and organ shortage challenges.",
-      "one_liner": "",
+      "one_liner": "Develops innovative therapies for organ preservation and ex-vivo organ management using bioengineering approaches.",
       "cluster_id": 8,
       "cluster_label": "Therapeutics — Drug Testing",
       "cluster_keywords": "organ · tissue · organs · drug testing",
@@ -13822,7 +14596,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "",
       "summary": "WeBio (Buenos Aires) builds extrusion-based bioprinters and formulates custom bioinks to print human tissue models — cartilage and bone substitutes — enabling pharma companies to replace animal models with bioprinted human tissue in preclinical drug testing.",
-      "one_liner": "",
+      "one_liner": "WeBio (Buenos Aires) builds extrusion-based bioprinters and formulates custom bioinks to print human tissue models —…",
       "cluster_id": 8,
       "cluster_label": "Therapeutics — Drug Testing",
       "cluster_keywords": "organ · tissue · organs · drug testing",
@@ -13942,7 +14716,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "ag biologicals and crop resilience",
       "emergent_theme": "bioinputs & crop resilience — biologicals crop · biologicals crop · soil · crops · yield",
       "summary": "Uruguayan biotech company researching and developing innovative quality bio-inputs for organic and ecological agriculture. Advances biological alternatives to synthetic agrochemicals for sustainable farming.",
-      "one_liner": "",
+      "one_liner": "Uruguayan biotech company researching and developing innovative quality bio-inputs for organic and ecological…",
       "cluster_id": 9,
       "cluster_label": "Bioinputs & Crop Resilience — Seed Treatment",
       "cluster_keywords": "seed treatment · soil · biologicals · argentine",
@@ -14583,7 +15357,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "biobased chemistry and advanced materials",
       "emergent_theme": "therapeutics — antimicrobial · antimicrobial · textile · materials · patients",
       "summary": "Nanotechnology research company developing sustainable materials and processes for resource optimization. Applies nanoscience to create innovative bio-based materials and transformation technologies.",
-      "one_liner": "",
+      "one_liner": "Nanotechnology research company developing sustainable materials and processes for resource optimization.",
       "cluster_id": 10,
       "cluster_label": "Biomaterials & Circular Economy — Antimicrobial",
       "cluster_keywords": "antimicrobial · textile · nanotechnology · materials",
@@ -14636,7 +15410,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "biobased chemistry and advanced materials",
       "emergent_theme": "therapeutics — antimicrobial · antimicrobial · textile · materials · patients",
       "summary": "Develops nanotechnology-based textile and non-textile hospital products including uniforms and masks with embedded antimicrobial properties. Applies nanotech to improve infection prevention in healthcare settings.",
-      "one_liner": "",
+      "one_liner": "Develops nanotechnology-based textile and non-textile hospital products including uniforms and masks with embedded…",
       "cluster_id": 10,
       "cluster_label": "Biomaterials & Circular Economy — Antimicrobial",
       "cluster_keywords": "antimicrobial · textile · nanotechnology · materials",
@@ -14689,7 +15463,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "biobased chemistry and advanced materials",
       "emergent_theme": "therapeutics — antimicrobial · antimicrobial · textile · materials · patients",
       "summary": "Nanotechnology company specializing in antibacterial copper-based nanomaterials for 3D printing in medical, dental, and industrial applications. Enables antimicrobial additive manufacturing at scale.",
-      "one_liner": "",
+      "one_liner": "Nanotechnology company specializing in antibacterial copper-based nanomaterials for 3D printing in medical, dental, and…",
       "cluster_id": 10,
       "cluster_label": "Biomaterials & Circular Economy — Antimicrobial",
       "cluster_keywords": "antimicrobial · textile · nanotechnology · materials",
@@ -14742,7 +15516,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "biobased chemistry and advanced materials",
       "emergent_theme": "therapeutics — antimicrobial · antimicrobial · textile · materials · patients",
       "summary": "Develops antimicrobial particles using copper and zinc that eliminate viruses, bacteria, and fungi on contact. Provides broad-spectrum pathogen-control materials for healthcare, food, and textile industries.",
-      "one_liner": "",
+      "one_liner": "Develops antimicrobial particles using copper and zinc that eliminate viruses, bacteria, and fungi on contact.",
       "cluster_id": 10,
       "cluster_label": "Biomaterials & Circular Economy — Antimicrobial",
       "cluster_keywords": "antimicrobial · textile · nanotechnology · materials",
@@ -14868,7 +15642,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "therapeutics — antimicrobial · antimicrobial · textile · materials · patients",
       "summary": "Develops nanotechnology-based treatments that promote dermal tissue regeneration, enabling healing for diabetic wounds and other chronic skin conditions. Advances nano-enabled regenerative dermatology.",
-      "one_liner": "",
+      "one_liner": "Develops nanotechnology-based treatments that promote dermal tissue regeneration, enabling healing for diabetic wounds…",
       "cluster_id": 10,
       "cluster_label": "Biomaterials & Circular Economy — Antimicrobial",
       "cluster_keywords": "antimicrobial · textile · nanotechnology · materials",
@@ -14921,7 +15695,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "",
       "summary": "Applies nanotechnology-enabled drug delivery systems to improve bioavailability and reduce toxicity of oncology and metabolic disease therapies, while performing NGS-based genomic tumor profiling to guide personalized cancer treatment across Latin American clinics.",
-      "one_liner": "",
+      "one_liner": "Applies nanotechnology-enabled drug delivery systems to improve bioavailability and reduce toxicity of oncology and…",
       "cluster_id": 10,
       "cluster_label": "Biomaterials & Circular Economy — Antimicrobial",
       "cluster_keywords": "antimicrobial · textile · nanotechnology · materials",
@@ -14970,7 +15744,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "biobased chemistry and advanced materials",
       "emergent_theme": "therapeutics — antimicrobial · antimicrobial · textile · materials · patients",
       "summary": "Develops and produces an antimicrobial nanoadhesive capable of imbuing materials with long-lasting antimicrobial properties. Enables sustainable infection prevention in healthcare and industrial applications.",
-      "one_liner": "",
+      "one_liner": "Develops and produces an antimicrobial nanoadhesive capable of imbuing materials with long-lasting antimicrobial…",
       "cluster_id": 10,
       "cluster_label": "Biomaterials & Circular Economy — Antimicrobial",
       "cluster_keywords": "antimicrobial · textile · nanotechnology · materials",
@@ -15023,7 +15797,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "therapeutics — antimicrobial · antimicrobial · textile · materials · patients",
       "summary": "Develops active nano and micro-encapsulated ingredients using proprietary encapsulation technology for pharmaceutical and cosmetic drug delivery. Advances controlled-release systems for improved therapeutic efficacy.",
-      "one_liner": "",
+      "one_liner": "Develops active nano and micro-encapsulated ingredients using proprietary encapsulation technology for pharmaceutical…",
       "cluster_id": 10,
       "cluster_label": "Biomaterials & Circular Economy — Antimicrobial",
       "cluster_keywords": "antimicrobial · textile · nanotechnology · materials",
@@ -15078,7 +15852,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "",
       "summary": "Develops ultra-thin metal oxide nanoparticle coatings for surgical instruments and industrial machinery extending product lifespan. University of São Carlos spinoff.",
-      "one_liner": "",
+      "one_liner": "Develops ultra-thin metal oxide nanoparticle coatings for surgical instruments and industrial machinery extending…",
       "cluster_id": 10,
       "cluster_label": "Biomaterials & Circular Economy — Antimicrobial",
       "cluster_keywords": "antimicrobial · textile · nanotechnology · materials",
@@ -15126,7 +15900,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "climate, energy and resource systems",
       "emergent_theme": "therapeutics — antimicrobial · antimicrobial · textile · materials · patients",
       "summary": "Develops nanotechnological additives and coatings that degrade and eliminate greenhouse gases when applied to paints, asphalt, and construction materials. Enables passive GHG remediation at urban scale.",
-      "one_liner": "",
+      "one_liner": "Develops nanotechnological additives and coatings that degrade and eliminate greenhouse gases when applied to paints,…",
       "cluster_id": 10,
       "cluster_label": "Biomaterials & Circular Economy — Antimicrobial",
       "cluster_keywords": "antimicrobial · textile · nanotechnology · materials",
@@ -15389,7 +16163,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "ag biologicals and crop resilience",
       "emergent_theme": "bioinputs & crop resilience — biologicals crop · biologicals crop · soil · crops · yield",
       "summary": "Fully-integrated agricultural biotechnology company developing crop trait technologies and biological inputs for South American farmers. Publicly listed on NASDAQ (BIOX), focused on drought tolerance and crop productivity improvements.",
-      "one_liner": "",
+      "one_liner": "Fully-integrated agricultural biotechnology company developing crop trait technologies and biological inputs for South…",
       "cluster_id": 11,
       "cluster_label": "Bioinputs & Crop Resilience — Biologicals Crop",
       "cluster_keywords": "biologicals crop · resistant · genetic · resilience",
@@ -15578,7 +16352,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "ag biologicals and crop resilience",
       "emergent_theme": "bioinputs & crop resilience — biologicals crop · biologicals crop · soil · crops · yield",
       "summary": "Uses bioinformatics and gene editing tools to develop higher-yield cannabis cultivars. Applies precision genetics to improve the productivity and phytochemical profile of industrial cannabis plants.",
-      "one_liner": "",
+      "one_liner": "Uses bioinformatics and gene editing tools to develop higher-yield cannabis cultivars.",
       "cluster_id": 11,
       "cluster_label": "Bioinputs & Crop Resilience — Biologicals Crop",
       "cluster_keywords": "biologicals crop · resistant · genetic · resilience",
@@ -15638,7 +16412,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "ag biologicals and crop resilience",
       "emergent_theme": "farm intelligence — agronomic · agronomic · fresh · efficient · satellite",
       "summary": "Agri-tech company focused on seed development and agricultural improvement. Applies technology to enhance seed quality and crop performance.",
-      "one_liner": "",
+      "one_liner": "Agri-tech company focused on seed development and agricultural improvement.",
       "cluster_id": 11,
       "cluster_label": "Bioinputs & Crop Resilience — Biologicals Crop",
       "cluster_keywords": "biologicals crop · resistant · genetic · resilience",
@@ -15759,7 +16533,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "ag biologicals and crop resilience",
       "emergent_theme": "",
       "summary": "HapiSeeds combines bioinformatics gene discovery (HapiFinder), non-transgenic gene editing (HapiGenes), and RNA biomarkers (HapiMarkers) to raise crop productivity. Maize field trials showed 16% grain-weight gains and 40% more CO2 sequestration.",
-      "one_liner": "",
+      "one_liner": "HapiSeeds combines bioinformatics gene discovery (HapiFinder), non-transgenic gene editing (HapiGenes), and RNA…",
       "cluster_id": 11,
       "cluster_label": "Bioinputs & Crop Resilience — Biologicals Crop",
       "cluster_keywords": "biologicals crop · resistant · genetic · resilience",
@@ -15807,7 +16581,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "",
       "summary": "Applies gene editing (CRISPR) to produce crop strains resistant to disease. Developing Asian rust-resistant soybean and pest-resistant maize. Backed by Vesper Ventures.",
-      "one_liner": "",
+      "one_liner": "Applies gene editing (CRISPR) to produce crop strains resistant to disease.",
       "cluster_id": 11,
       "cluster_label": "Bioinputs & Crop Resilience — Biologicals Crop",
       "cluster_keywords": "biologicals crop · resistant · genetic · resilience",
@@ -15855,7 +16629,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "ag biologicals and crop resilience",
       "emergent_theme": "food systems & alt proteins — fish · fish · antibiotics · meat · aquaculture",
       "summary": "Develops genetic and breeding technology to improve plant productivity, focusing on elite castor bean hybrid development. Applies advanced genomics to enhance crop yield and resilience across markets.",
-      "one_liner": "",
+      "one_liner": "Develops genetic and breeding technology to improve plant productivity, focusing on elite castor bean hybrid…",
       "cluster_id": 11,
       "cluster_label": "Bioinputs & Crop Resilience — Biologicals Crop",
       "cluster_keywords": "biologicals crop · resistant · genetic · resilience",
@@ -15970,7 +16744,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "ag biologicals and crop resilience",
       "emergent_theme": "bioinputs & crop resilience — biologicals crop · biologicals crop · soil · crops · yield",
       "summary": "Creates personalized biofertilizers by harvesting microorganisms from the plant itself to increase crop yield and restore plant health. Applies endophytic microbiology to precision sustainable agriculture.",
-      "one_liner": "",
+      "one_liner": "Creates personalized biofertilizers by harvesting microorganisms from the plant itself to increase crop yield and…",
       "cluster_id": 11,
       "cluster_label": "Bioinputs & Crop Resilience — Biologicals Crop",
       "cluster_keywords": "biologicals crop · resistant · genetic · resilience",
@@ -16229,7 +17003,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "ag biologicals and crop resilience",
       "emergent_theme": "",
       "summary": "Uses soil microbiome genomics and AI-powered analytics to prescribe optimized biological crop input combinations, measuring and improving Biological Capital in agricultural soils to raise yields and sustainability for farmers across Mexico and Latin America.",
-      "one_liner": "",
+      "one_liner": "Uses soil microbiome genomics and AI-powered analytics to prescribe optimized biological crop input combinations,…",
       "cluster_id": 11,
       "cluster_label": "Bioinputs & Crop Resilience — Biologicals Crop",
       "cluster_keywords": "biologicals crop · resistant · genetic · resilience",
@@ -16432,7 +17206,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "ag biologicals and crop resilience",
       "emergent_theme": "bioinputs & crop resilience — biologicals crop · biologicals crop · soil · crops · yield",
       "summary": "Provides biopesticides and biocontrol agents for agricultural pest management. Researches, develops, and sells insecticides and pesticides derived from biological sources to protect crops sustainably.",
-      "one_liner": "",
+      "one_liner": "Provides biopesticides and biocontrol agents for agricultural pest management.",
       "cluster_id": 12,
       "cluster_label": "Bioinputs & Crop Resilience — Crop Protection",
       "cluster_keywords": "pesticides · crop protection · protect crops · pests without",
@@ -16486,7 +17260,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "ag biologicals and crop resilience",
       "emergent_theme": "bioinputs & crop resilience — biologicals crop · biologicals crop · soil · crops · yield",
       "summary": "Specializes in formulation, manufacturing, and commercialization of organic and biological agricultural inputs. Develops bio-based fertilizers and crop protection products for sustainable Mexican agriculture.",
-      "one_liner": "",
+      "one_liner": "Specializes in formulation, manufacturing, and commercialization of organic and biological agricultural inputs.",
       "cluster_id": 12,
       "cluster_label": "Bioinputs & Crop Resilience — Crop Protection",
       "cluster_keywords": "pesticides · crop protection · protect crops · pests without",
@@ -16538,7 +17312,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "ag biologicals and crop resilience",
       "emergent_theme": "",
       "summary": "Develops and produces biopesticides based on Trichoderma, Bacillus thuringiensis, and other microbial strains to replace chemical pesticides in crop protection, serving farmers in Chile and Latin America seeking residue-free, regulatory-compliant biological inputs.",
-      "one_liner": "",
+      "one_liner": "Develops and produces biopesticides based on Trichoderma, Bacillus thuringiensis, and other microbial strains to…",
       "cluster_id": 12,
       "cluster_label": "Bioinputs & Crop Resilience — Crop Protection",
       "cluster_keywords": "pesticides · crop protection · protect crops · pests without",
@@ -16588,7 +17362,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "ag biologicals and crop resilience",
       "emergent_theme": "bioinputs & crop resilience — biologicals crop · biologicals crop · soil · crops · yield",
       "summary": "Provides sustainable crop protection strategies managing harmful pests without environmental or human health impacts. Develops biological and botanical alternatives to synthetic pesticides for global agriculture.",
-      "one_liner": "",
+      "one_liner": "Provides sustainable crop protection strategies managing harmful pests without environmental or human health impacts.",
       "cluster_id": 12,
       "cluster_label": "Bioinputs & Crop Resilience — Crop Protection",
       "cluster_keywords": "pesticides · crop protection · protect crops · pests without",
@@ -16640,7 +17414,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "precision agriculture and resource intelligence",
       "emergent_theme": "",
       "summary": "Develops bacteriophage-based crop protection products harnessing naturally occurring phages to eliminate bacterial plant diseases in tomato, stone fruit, walnut, and kiwi without chemical residues, targeting global agricultural markets.",
-      "one_liner": "",
+      "one_liner": "Develops bacteriophage-based crop protection products harnessing naturally occurring phages to eliminate bacterial…",
       "cluster_id": 12,
       "cluster_label": "Bioinputs & Crop Resilience — Crop Protection",
       "cluster_keywords": "pesticides · crop protection · protect crops · pests without",
@@ -16686,7 +17460,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "climate, energy and resource systems",
       "emergent_theme": "bioinputs & crop resilience — biologicals crop · biologicals crop · soil · crops · yield",
       "summary": "Develops predictive technology for detecting emerging pathogens and microbiological risks in agrifood systems from environmental samples. Enables proactive biosurveillance to protect food supply chains.",
-      "one_liner": "",
+      "one_liner": "Develops predictive technology for detecting emerging pathogens and microbiological risks in agrifood systems from…",
       "cluster_id": 12,
       "cluster_label": "Bioinputs & Crop Resilience — Crop Protection",
       "cluster_keywords": "pesticides · crop protection · protect crops · pests without",
@@ -16804,7 +17578,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "ag biologicals and crop resilience",
       "emergent_theme": "",
       "summary": "Extracts bioactive compounds from Patagonian seaweeds to formulate plant biostimulants that enhance crop yield, improve stress tolerance, and support sustainable agriculture, targeting global growers seeking natural inputs to boost productivity without synthetic chemicals.",
-      "one_liner": "",
+      "one_liner": "Extracts bioactive compounds from Patagonian seaweeds to formulate plant biostimulants that enhance crop yield, improve…",
       "cluster_id": 12,
       "cluster_label": "Bioinputs & Crop Resilience — Crop Protection",
       "cluster_keywords": "pesticides · crop protection · protect crops · pests without",
@@ -16852,7 +17626,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "ag biologicals and crop resilience",
       "emergent_theme": "bioinputs & crop resilience — biologicals crop · biologicals crop · soil · crops · yield",
       "summary": "Producer of biological products for nematode control in agriculture. Develops microbial biocontrol solutions that protect crops from soil-borne pests without chemical pesticides. Acquired by Stoller.",
-      "one_liner": "",
+      "one_liner": "Producer of biological products for nematode control in agriculture.",
       "cluster_id": 12,
       "cluster_label": "Bioinputs & Crop Resilience — Crop Protection",
       "cluster_keywords": "pesticides · crop protection · protect crops · pests without",
@@ -17126,7 +17900,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "climate, energy and resource systems",
       "emergent_theme": "nature & ecosystem tech — nature · nature · biodiversity · satellite · carbon",
       "summary": "Builds a satellite and AI-powered atlas of the biosphere to monitor ecosystems and help reverse environmental crises. Provides earth observation data and analytics for conservation and carbon monitoring.",
-      "one_liner": "",
+      "one_liner": "Builds a satellite and AI-powered atlas of the biosphere to monitor ecosystems and help reverse environmental crises.",
       "cluster_id": 13,
       "cluster_label": "Nature & Ecosystem Tech — Satellite",
       "cluster_keywords": "satellite · biodiversity · nature · planetary",
@@ -18092,166 +18866,6 @@ window.STARTUP_THEMES_DATA = {
       ]
     },
     {
-      "id": "amplify-dynamics",
-      "name": "Amplify Dynamics",
-      "country": "Colombia",
-      "countries": [
-        "Colombia"
-      ],
-      "website": "https://amplify-dynamics.com/",
-      "macro_theme": "biomanufacturing and bioindustrial platforms",
-      "emergent_theme": "industrial biotech and molecular tools",
-      "summary": "Amplify Dynamics is a Colombian/US bioprocessing tools company developing contactless ultrafiltration for lipid nanoparticle therapeutics. Its platform combines microfluidic flows and electronically controlled ultrasonic waves to separate LNPs without physical membranes, aiming to increase particle recovery, reduce purification time, improve throughput and cut waste. It belongs inside BIO VC LATAM as enabling infrastructure for gene therapy, vaccines, nanomedicine and biomanufacturing.",
-      "one_liner": "Contactless ultrasound purification for lipid nanoparticles.",
-      "cluster_id": 15,
-      "cluster_label": "Diagnostics & Health Access — Diagnostics",
-      "cluster_keywords": "diagnostics · device · medtech · nanomedicine",
-      "cluster_confidence": 0.348,
-      "x": -10.012,
-      "y": -9.895,
-      "is_outlier": true,
-      "tech_codes": [
-        "nanotech",
-        "biomanufacturing",
-        "ai_ml",
-        "therapeutics"
-      ],
-      "industry_codes": [
-        "therapeutics_industry",
-        "biomanufacturing_industry",
-        "carbon",
-        "human_health",
-        "specialty_chem"
-      ],
-      "quality_score": 8.0,
-      "quality_band": "medium",
-      "community_id": 6,
-      "pagerank": 0.0009759305560124662,
-      "valuation_tier": null,
-      "n_investors_mapped": 1,
-      "bio_theme": "Therapeutics",
-      "bio_theme_secondary": "Biomaterials & Circular Economy",
-      "is_bio_universe": 1,
-      "sub_cluster_label": "Drug Discovery & Biologics",
-      "funding_stage": null,
-      "funding_bucket_usd": null,
-      "valuation_bucket_usd": null,
-      "valuation_estimate_usd": 4.0,
-      "valuation_estimate_source": "investors_proxy",
-      "sx": -8.559,
-      "sy": -10.012,
-      "bio_lens": [
-        "biobased",
-        "bio-enabled-industrial-transition",
-        "circular",
-        "human-health-bio",
-        "planetary-boundary"
-      ],
-      "domain_tags": [
-        "biomanufacturing",
-        "climate-resource",
-        "human-health",
-        "industrial-biotech",
-        "therapeutics-regenerative"
-      ],
-      "tech_tags": [
-        "ai-data",
-        "biomanufacturing",
-        "therapeutics"
-      ],
-      "scale_tags": [
-        "human-scale",
-        "industrial-scale",
-        "molecular-scale"
-      ],
-      "market_label": "contactless LNP ultrafiltration platform",
-      "self_cats": [
-        "Therapeutics",
-        "Biomanufacturing",
-        "Biotech"
-      ],
-      "investor_ids": [
-        "The Ganesha Lab"
-      ]
-    },
-    {
-      "id": "argentag",
-      "name": "ArgenTAG",
-      "country": "Argentina",
-      "countries": [
-        "Argentina"
-      ],
-      "website": "https://www.argentag.com/single-cell-solutions",
-      "macro_theme": "computational biology and scientific software",
-      "emergent_theme": "computational biology and life-science software",
-      "summary": "ArgenTAG is a life-science tools company building high-resolution single-cell long-read sequencing solutions. Its Single-Cell RNA Library Kit uses portable microfluidic cell partitioning, magnetic bead capture and smart barcoding so individual-cell transcriptomes can be sequenced on long-read platforms such as Oxford Nanopore and PacBio. It belongs inside BIO VC LATAM as genomics infrastructure for biomedical research, diagnostics, disease biology and cell-level discovery.",
-      "one_liner": "Single-cell long-read sequencing kit and workflow.",
-      "cluster_id": 15,
-      "cluster_label": "Diagnostics & Health Access — Diagnostics",
-      "cluster_keywords": "diagnostics · device · medtech · nanomedicine",
-      "cluster_confidence": 0.349,
-      "x": -3.831,
-      "y": -8.403,
-      "is_outlier": true,
-      "tech_codes": [
-        "bioinformatics",
-        "ai_ml",
-        "diagnostics",
-        "therapeutics"
-      ],
-      "industry_codes": [
-        "therapeutics_industry",
-        "diagnostics_industry",
-        "human_health"
-      ],
-      "quality_score": 8.5,
-      "quality_band": "high",
-      "community_id": 10,
-      "pagerank": 0.00108407171613055,
-      "valuation_tier": 1.0,
-      "n_investors_mapped": 4,
-      "bio_theme": "Diagnostics & Health Access",
-      "bio_theme_secondary": "Therapeutics",
-      "is_bio_universe": 1,
-      "sub_cluster_label": "Diagnostic-Therapeutic Convergence",
-      "funding_stage": "pre-seed",
-      "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1,
-      "valuation_estimate_usd": 1.0,
-      "valuation_estimate_source": "gridx_valuation",
-      "sx": -3.381,
-      "sy": -7.55,
-      "bio_lens": [
-        "human-health-bio"
-      ],
-      "domain_tags": [
-        "diagnostics-medtech",
-        "human-health",
-        "therapeutics-regenerative"
-      ],
-      "tech_tags": [
-        "ai-data",
-        "diagnostics",
-        "therapeutics"
-      ],
-      "scale_tags": [
-        "human-scale",
-        "industrial-scale",
-        "molecular-scale",
-        "product-scale"
-      ],
-      "market_label": "single-cell long-read sequencing platform",
-      "self_cats": [
-        "Diagnostics"
-      ],
-      "investor_ids": [
-        "AIR Capital",
-        "DraperCygnus",
-        "GridX",
-        "SOSV_IndieBio"
-      ]
-    },
-    {
       "id": "avatar_medtech",
       "name": "AVaTAR MedTech",
       "country": "Argentina",
@@ -18530,227 +19144,6 @@ window.STARTUP_THEMES_DATA = {
       ]
     },
     {
-      "id": "botanical-solutions",
-      "name": "Botanical Solutions",
-      "country": "Chile",
-      "countries": [
-        "Chile"
-      ],
-      "website": "https://www.linkedin.com/company/botanical-solution",
-      "macro_theme": "ag biologicals and crop resilience",
-      "emergent_theme": "ag biologicals and crop resilience",
-      "summary": "Chilean plant-biotechnology company developing botanical-origin active ingredients for crop protection and human-health applications. Its platform uses proprietary plant tissue culture to produce consistent raw materials without relying only on field-grown botanical extraction. It belongs inside BIO VC LATAM as a biobased active-ingredient and ag biologicals company, with relevance to crop resilience, natural product supply chains and plant-cell bioprocessing.",
-      "one_liner": "Botanical active ingredients from plant tissue culture.",
-      "cluster_id": 15,
-      "cluster_label": "Diagnostics & Health Access — Diagnostics",
-      "cluster_keywords": "diagnostics · device · medtech · nanomedicine",
-      "cluster_confidence": 0.362,
-      "x": -7.243,
-      "y": 6.95,
-      "is_outlier": true,
-      "tech_codes": [
-        "ag_inputs",
-        "biomanufacturing",
-        "ai_ml"
-      ],
-      "industry_codes": [
-        "row_crops",
-        "biomanufacturing_industry",
-        "human_health"
-      ],
-      "quality_score": 8.0,
-      "quality_band": "medium",
-      "community_id": 6,
-      "pagerank": 0.0009759305560124662,
-      "valuation_tier": null,
-      "n_investors_mapped": 1,
-      "bio_theme": "Bioinputs & Crop Resilience",
-      "bio_theme_secondary": "Biomaterials & Circular Economy",
-      "is_bio_universe": 1,
-      "sub_cluster_label": "",
-      "funding_stage": null,
-      "funding_bucket_usd": null,
-      "valuation_bucket_usd": 25,
-      "valuation_estimate_usd": 25.0,
-      "valuation_estimate_source": "gridx_valuation",
-      "sx": -7.54,
-      "sy": 7.744,
-      "bio_lens": [
-        "biobased",
-        "biocentric",
-        "bio-enabled-industrial-transition",
-        "human-health-bio",
-        "regenerative"
-      ],
-      "domain_tags": [
-        "agri-food",
-        "biomanufacturing",
-        "human-health"
-      ],
-      "tech_tags": [
-        "ai-data",
-        "bioinputs",
-        "biomanufacturing"
-      ],
-      "scale_tags": [
-        "agroecosystem-scale",
-        "human-scale",
-        "industrial-scale",
-        "molecular-scale",
-        "product-scale"
-      ],
-      "market_label": "botanical crop protection and biobased active ingredients",
-      "self_cats": [
-        "AgTech",
-        "Biotech"
-      ],
-      "investor_ids": [
-        "The Ganesha Lab"
-      ]
-    },
-    {
-      "id": "bybug",
-      "name": "ByBug",
-      "country": "Argentina",
-      "countries": [
-        "Argentina"
-      ],
-      "website": "https://www.bybug.io/tecnologia/",
-      "macro_theme": "biomanufacturing and bioindustrial platforms",
-      "emergent_theme": "insect bioreactors for recombinant proteins",
-      "summary": "ByBug is a Chilean biotechnology company building an insect-based biomanufacturing platform using genetically modified black soldier fly larvae as living bioreactors. ByBug Synthetics transforms agro-food byproducts into recombinant proteins and bioinputs for pharmaceutical, veterinary, industrial-enzyme and agricultural markets. It is not grain traceability or producer infrastructure; it should cluster with biomanufacturing, recombinant proteins, engineered insects and circular biofactories.",
-      "one_liner": "Engineered insect bioreactors for recombinant proteins and bioinputs.",
-      "cluster_id": 15,
-      "cluster_label": "Diagnostics & Health Access — Diagnostics",
-      "cluster_keywords": "diagnostics · device · medtech · nanomedicine",
-      "cluster_confidence": 0.353,
-      "x": -8.818,
-      "y": -2.45,
-      "is_outlier": true,
-      "tech_codes": [
-        "synbio",
-        "ag_inputs",
-        "biomanufacturing",
-        "ai_ml",
-        "enzymatic",
-        "therapeutics"
-      ],
-      "industry_codes": [
-        "therapeutics_industry",
-        "veterinary",
-        "row_crops",
-        "biomanufacturing_industry",
-        "carbon",
-        "human_health",
-        "specialty_chem"
-      ],
-      "quality_score": 8.0,
-      "quality_band": "medium",
-      "community_id": 9,
-      "pagerank": 0.0009625759555840287,
-      "valuation_tier": 1.0,
-      "n_investors_mapped": 1,
-      "bio_theme": "Biomanufacturing & Fermentation Economy",
-      "bio_theme_secondary": "Therapeutics",
-      "is_bio_universe": 1,
-      "sub_cluster_label": "",
-      "funding_stage": "pre-seed",
-      "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1,
-      "valuation_estimate_usd": 1.0,
-      "valuation_estimate_source": "gridx_valuation",
-      "sx": -8.473,
-      "sy": -2.878,
-      "bio_lens": [
-        "biobased",
-        "bio-enabled-industrial-transition",
-        "circular",
-        "human-health-bio",
-        "planetary-boundary"
-      ],
-      "domain_tags": [
-        "agri-food",
-        "biomanufacturing",
-        "climate-resource",
-        "human-health",
-        "industrial-biotech",
-        "therapeutics-regenerative"
-      ],
-      "tech_tags": [
-        "ai-data",
-        "bioinputs",
-        "biomanufacturing",
-        "enzymes",
-        "synthetic-biology",
-        "therapeutics"
-      ],
-      "scale_tags": [
-        "agroecosystem-scale",
-        "industrial-scale",
-        "molecular-scale",
-        "planetary-scale"
-      ],
-      "market_label": "insect bioreactor recombinant protein platform",
-      "self_cats": [
-        "Ag Biologicals",
-        "Alt Proteins",
-        "Precision Ferm"
-      ],
-      "investor_ids": [
-        "GridX"
-      ]
-    },
-    {
-      "id": "cellter-cl",
-      "name": "Cellter",
-      "country": "Chile",
-      "countries": [
-        "Chile"
-      ],
-      "website": "cellter.cl",
-      "macro_theme": "diagnostics and medtech",
-      "emergent_theme": "",
-      "summary": "Chilean biotech combining AI-powered big data and nano pharmaceutical drug design to develop diagnostics and therapies for high-incidence diseases. Applications in cancer cardiovascular and immunotherapy. Founded 2016.",
-      "one_liner": "",
-      "cluster_id": 15,
-      "cluster_label": "Diagnostics & Health Access — Diagnostics",
-      "cluster_keywords": "diagnostics · device · medtech · nanomedicine",
-      "cluster_confidence": 0.355,
-      "x": -3.819,
-      "y": -8.35,
-      "is_outlier": true,
-      "tech_codes": [],
-      "industry_codes": [],
-      "quality_score": 5.0,
-      "quality_band": "medium",
-      "community_id": -1,
-      "pagerank": 0.0009548076656120609,
-      "valuation_tier": null,
-      "n_investors_mapped": 0,
-      "bio_theme": "Diagnostics & Health Access",
-      "bio_theme_secondary": "Therapeutics",
-      "is_bio_universe": 1,
-      "sub_cluster_label": "Diagnostic-Therapeutic Convergence",
-      "funding_stage": null,
-      "funding_bucket_usd": null,
-      "valuation_bucket_usd": null,
-      "valuation_estimate_usd": 1.5,
-      "valuation_estimate_source": "emergente",
-      "sx": -3.353,
-      "sy": -7.433,
-      "bio_lens": [],
-      "domain_tags": [],
-      "tech_tags": [],
-      "scale_tags": [],
-      "market_label": "",
-      "self_cats": [
-        "Therapeutics",
-        "Diagnostics",
-        "AI / Data"
-      ],
-      "investor_ids": []
-    },
-    {
       "id": "cryosmetics",
       "name": "Cryosmetics",
       "country": "Argentina",
@@ -18980,84 +19373,6 @@ window.STARTUP_THEMES_DATA = {
       ]
     },
     {
-      "id": "elytron_biotech",
-      "name": "Elytron Biotech",
-      "country": "Argentina",
-      "countries": [
-        "Argentina"
-      ],
-      "website": "https://www.elytronbiotech.com/?lang=en",
-      "macro_theme": "biomanufacturing and bioindustrial platforms",
-      "emergent_theme": "industrial biotech and molecular tools",
-      "summary": "Elytron Biotech is an Argentine bioindustrial company transforming frontier technology into high-performance biological products for agriculture and bioindustry. Its AI-driven platform is designed to accelerate development, reduce industrialization risk and integrate market-ready innovations into bioindustry value chains, with team capabilities in genomics, gene editing, molecular biology, bioinformatics and agricultural pest problems. It belongs inside BIO VC LATAM as biological-product development infrastructure for ag and bioindustrial systems.",
-      "one_liner": "AI-driven biological product development platform.",
-      "cluster_id": 15,
-      "cluster_label": "Diagnostics & Health Access — Diagnostics",
-      "cluster_keywords": "diagnostics · device · medtech · nanomedicine",
-      "cluster_confidence": 0.356,
-      "x": -2.291,
-      "y": 1.261,
-      "is_outlier": true,
-      "tech_codes": [
-        "bioinformatics",
-        "synbio",
-        "ai_ml",
-        "biomanufacturing"
-      ],
-      "industry_codes": [
-        "row_crops",
-        "biomanufacturing_industry",
-        "specialty_chem"
-      ],
-      "quality_score": 8.5,
-      "quality_band": "high",
-      "community_id": 4,
-      "pagerank": 0.0010521678203607924,
-      "valuation_tier": 1.0,
-      "n_investors_mapped": 2,
-      "bio_theme": "Biomaterials & Circular Economy",
-      "bio_theme_secondary": "Bioinputs & Crop Resilience",
-      "is_bio_universe": 1,
-      "sub_cluster_label": "",
-      "funding_stage": "pre-seed",
-      "funding_bucket_usd": 0,
-      "valuation_bucket_usd": 1,
-      "valuation_estimate_usd": 1.0,
-      "valuation_estimate_source": "gridx_valuation",
-      "sx": -2.525,
-      "sy": 1.091,
-      "bio_lens": [
-        "biobased",
-        "biocentric",
-        "bio-enabled-industrial-transition"
-      ],
-      "domain_tags": [
-        "agri-food",
-        "biomanufacturing",
-        "industrial-biotech"
-      ],
-      "tech_tags": [
-        "ai-data",
-        "biomanufacturing"
-      ],
-      "scale_tags": [
-        "agroecosystem-scale",
-        "industrial-scale",
-        "molecular-scale",
-        "product-scale"
-      ],
-      "market_label": "AI-driven biological product development platform",
-      "self_cats": [
-        "AI / Data",
-        "AgTech",
-        "Biotech"
-      ],
-      "investor_ids": [
-        "GridX",
-        "inventure"
-      ]
-    },
-    {
       "id": "epiliquid",
       "name": "Epiliquid",
       "country": "Argentina",
@@ -19141,7 +19456,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "diagnostics and medtech",
       "emergent_theme": "diagnostics & health access — therapeutics · therapeutics · nanomedicine · skin · medtech",
       "summary": "Global medical technology company focused on patient safety and aesthetic outcomes in breast surgery and reconstruction. Develops advanced silicone implant systems with integrated monitoring technology. Publicly listed (NASDAQ: ESTA).",
-      "one_liner": "",
+      "one_liner": "Global medical technology company focused on patient safety and aesthetic outcomes in breast surgery and reconstruction.",
       "cluster_id": 15,
       "cluster_label": "Diagnostics & Health Access — Diagnostics",
       "cluster_keywords": "diagnostics · device · medtech · nanomedicine",
@@ -19184,145 +19499,6 @@ window.STARTUP_THEMES_DATA = {
         "MedTech"
       ],
       "investor_ids": []
-    },
-    {
-      "id": "galtec",
-      "name": "Galtec Life",
-      "country": "Argentina",
-      "countries": [
-        "Argentina"
-      ],
-      "website": "https://galtec.ar/en/home/",
-      "macro_theme": "therapeutics and regenerative medicine",
-      "emergent_theme": "galectin immunotherapy platforms",
-      "summary": "Galtec Life is an Argentine biotech developing immunotherapies based on galectin modulation for cancer, autoimmune diseases and chronic inflammatory conditions. The semantic anchor is therapeutic immunology: the company designs biological interventions that act on galectin-mediated immune and inflammatory pathways. It belongs inside BIO VC LATAM as a therapeutic biotech platform, not ag intelligence or generic life-science services.",
-      "one_liner": "Galectin-modulating immunotherapies for cancer and inflammatory disease.",
-      "cluster_id": 15,
-      "cluster_label": "Diagnostics & Health Access — Diagnostics",
-      "cluster_keywords": "diagnostics · device · medtech · nanomedicine",
-      "cluster_confidence": 0.358,
-      "x": -10.525,
-      "y": -9.99,
-      "is_outlier": true,
-      "tech_codes": [
-        "therapeutics",
-        "ai_ml"
-      ],
-      "industry_codes": [
-        "therapeutics_industry",
-        "human_health"
-      ],
-      "quality_score": 8.5,
-      "quality_band": "high",
-      "community_id": -1,
-      "pagerank": 0.0009548076656120609,
-      "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
-      "bio_theme": "Therapeutics",
-      "bio_theme_secondary": "",
-      "is_bio_universe": 1,
-      "sub_cluster_label": "Drug Discovery & Biologics",
-      "funding_stage": null,
-      "funding_bucket_usd": null,
-      "valuation_bucket_usd": null,
-      "valuation_estimate_usd": 1.5,
-      "valuation_estimate_source": "emergente",
-      "sx": -9.699,
-      "sy": -10.223,
-      "bio_lens": [
-        "biocentric",
-        "human-health-bio",
-        "planetary-boundary",
-        "regenerative"
-      ],
-      "domain_tags": [
-        "human-health",
-        "therapeutics-regenerative"
-      ],
-      "tech_tags": [
-        "ai-data",
-        "therapeutics"
-      ],
-      "scale_tags": [
-        "human-scale",
-        "planetary-scale"
-      ],
-      "market_label": "galectin-based immunotherapy platform",
-      "self_cats": [
-        "Therapeutics",
-        "Biotech"
-      ],
-      "investor_ids": []
-    },
-    {
-      "id": "gameet",
-      "name": "Gameet",
-      "country": "Argentina",
-      "countries": [
-        "Argentina"
-      ],
-      "website": "https://www.gameet.life/",
-      "macro_theme": "diagnostics and medtech",
-      "emergent_theme": "reproductive biotech and assisted reproduction devices",
-      "summary": "Gameet is an Argentine reproductive-biotech startup developing 3D-printed microdevices to optimize the production of healthy human embryos in assisted-reproduction workflows. Its technology sits at the intersection of medtech, embryology and reproductive biology: a physical microdevice designed to improve biological outcomes in fertility treatment. It belongs inside BIO VC LATAM as reproductive medtech and bioinstrumentation.",
-      "one_liner": "3D-printed microdevice platform for assisted reproduction.",
-      "cluster_id": 15,
-      "cluster_label": "Diagnostics & Health Access — Diagnostics",
-      "cluster_keywords": "diagnostics · device · medtech · nanomedicine",
-      "cluster_confidence": 0.352,
-      "x": -3.858,
-      "y": -8.414,
-      "is_outlier": true,
-      "tech_codes": [
-        "ai_ml",
-        "diagnostics"
-      ],
-      "industry_codes": [
-        "diagnostics_industry",
-        "human_health"
-      ],
-      "quality_score": 8.5,
-      "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.0009886716766426612,
-      "valuation_tier": 2.0,
-      "n_investors_mapped": 1,
-      "bio_theme": "Diagnostics & Health Access",
-      "bio_theme_secondary": "",
-      "is_bio_universe": 1,
-      "sub_cluster_label": "Diagnostic-Therapeutic Convergence",
-      "funding_stage": null,
-      "funding_bucket_usd": null,
-      "valuation_bucket_usd": null,
-      "valuation_estimate_usd": 4.0,
-      "valuation_estimate_source": "investors_proxy",
-      "sx": -3.44,
-      "sy": -7.575,
-      "bio_lens": [
-        "human-health-bio",
-        "planetary-boundary"
-      ],
-      "domain_tags": [
-        "diagnostics-medtech",
-        "human-health"
-      ],
-      "tech_tags": [
-        "ai-data",
-        "diagnostics"
-      ],
-      "scale_tags": [
-        "human-scale",
-        "planetary-scale",
-        "product-scale"
-      ],
-      "market_label": "assisted reproduction microdevices",
-      "self_cats": [
-        "MedTech",
-        "Biotech"
-      ],
-      "investor_ids": [
-        "SF500"
-      ]
     },
     {
       "id": "imvalv",
@@ -19391,82 +19567,6 @@ window.STARTUP_THEMES_DATA = {
       ],
       "investor_ids": [
         "CITES"
-      ]
-    },
-    {
-      "id": "lipock",
-      "name": "Lipock",
-      "country": "Argentina",
-      "countries": [
-        "Argentina"
-      ],
-      "website": "https://www.gridexponential.com/portfolio",
-      "macro_theme": "therapeutics and regenerative medicine",
-      "emergent_theme": "drug delivery and bioactive formulation platforms",
-      "summary": "Lipock develops lipid nanocapsules that improve the efficacy of volatile and hydrophobic active compounds. The core semantic signal is drug delivery and bioactive formulation: nanoscale lipid encapsulation used to stabilize, deliver or improve actives that are otherwise difficult to formulate. It belongs inside BIO VC LATAM as nanomedicine / formulation infrastructure for therapeutics, cosmetics or bioactive health products.",
-      "one_liner": "Lipid nanocapsule platform for volatile and hydrophobic actives.",
-      "cluster_id": 15,
-      "cluster_label": "Diagnostics & Health Access — Diagnostics",
-      "cluster_keywords": "diagnostics · device · medtech · nanomedicine",
-      "cluster_confidence": 0.351,
-      "x": -10.221,
-      "y": -9.912,
-      "is_outlier": true,
-      "tech_codes": [
-        "nanotech",
-        "formulation",
-        "ai_ml",
-        "therapeutics"
-      ],
-      "industry_codes": [
-        "veterinary",
-        "personal_care",
-        "materials_packaging",
-        "human_health",
-        "therapeutics_industry"
-      ],
-      "quality_score": 8.5,
-      "quality_band": "high",
-      "community_id": 9,
-      "pagerank": 0.0009625759555840287,
-      "valuation_tier": 1.0,
-      "n_investors_mapped": 1,
-      "bio_theme": "Therapeutics",
-      "bio_theme_secondary": "",
-      "is_bio_universe": 1,
-      "sub_cluster_label": "Drug Discovery & Biologics",
-      "funding_stage": null,
-      "funding_bucket_usd": null,
-      "valuation_bucket_usd": null,
-      "valuation_estimate_usd": 4.0,
-      "valuation_estimate_source": "investors_proxy",
-      "sx": -9.025,
-      "sy": -10.048,
-      "bio_lens": [
-        "biocentric",
-        "human-health-bio",
-        "planetary-boundary",
-        "regenerative"
-      ],
-      "domain_tags": [
-        "biomaterials",
-        "human-health",
-        "therapeutics-regenerative"
-      ],
-      "tech_tags": [
-        "ai-data",
-        "therapeutics"
-      ],
-      "scale_tags": [
-        "human-scale",
-        "industrial-scale",
-        "planetary-scale",
-        "product-scale"
-      ],
-      "market_label": "lipid nanocapsule drug-delivery and formulation platform",
-      "self_cats": [],
-      "investor_ids": [
-        "GridX"
       ]
     },
     {
@@ -19553,7 +19653,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "",
       "summary": "Chilean CRO offering full-stack R&D services across molecular biology, cell-based assays, microbiology, and pharmacokinetics to biotech and pharma clients developing bioactive compounds for health and agricultural applications, from proof-of-concept through preclinical validation.",
-      "one_liner": "",
+      "one_liner": "Chilean CRO offering full-stack R&D services across molecular biology, cell-based assays, microbiology, and…",
       "cluster_id": 15,
       "cluster_label": "Diagnostics & Health Access — Diagnostics",
       "cluster_keywords": "diagnostics · device · medtech · nanomedicine",
@@ -19738,164 +19838,6 @@ window.STARTUP_THEMES_DATA = {
       ],
       "investor_ids": [
         "GridX"
-      ]
-    },
-    {
-      "id": "nanoprox",
-      "name": "NanoproX",
-      "country": "Argentina",
-      "countries": [
-        "Argentina"
-      ],
-      "website": "https://www.nanoprox.com/",
-      "macro_theme": "diagnostics and medtech",
-      "emergent_theme": "nanomedicine and oncology devices",
-      "summary": "NanoproX develops bismuth-sulfide nanoparticles that act as radiosensitizers to increase radiotherapy effectiveness and reduce adverse effects, especially for hard-to-access tumors. It belongs inside BIO VC LATAM as oncology nanomedicine and medical technology: a physical nanoparticle intervention coupled to cancer treatment, not an agricultural or generic materials case.",
-      "one_liner": "Bismuth-sulfide nanoparticle radiosensitizer for oncology.",
-      "cluster_id": 15,
-      "cluster_label": "Diagnostics & Health Access — Diagnostics",
-      "cluster_keywords": "diagnostics · device · medtech · nanomedicine",
-      "cluster_confidence": 0.351,
-      "x": -10.191,
-      "y": -9.908,
-      "is_outlier": true,
-      "tech_codes": [
-        "nanotech",
-        "iot",
-        "ai_ml",
-        "diagnostics",
-        "therapeutics"
-      ],
-      "industry_codes": [
-        "therapeutics_industry",
-        "row_crops",
-        "diagnostics_industry",
-        "human_health"
-      ],
-      "quality_score": 8.0,
-      "quality_band": "medium",
-      "community_id": 9,
-      "pagerank": 0.0009625759555840287,
-      "valuation_tier": 1.0,
-      "n_investors_mapped": 1,
-      "bio_theme": "Therapeutics",
-      "bio_theme_secondary": "Diagnostics & Health Access",
-      "is_bio_universe": 1,
-      "sub_cluster_label": "",
-      "funding_stage": null,
-      "funding_bucket_usd": null,
-      "valuation_bucket_usd": null,
-      "valuation_estimate_usd": 4.0,
-      "valuation_estimate_source": "investors_proxy",
-      "sx": -8.958,
-      "sy": -10.04,
-      "bio_lens": [
-        "human-health-bio",
-        "planetary-boundary"
-      ],
-      "domain_tags": [
-        "agri-food",
-        "diagnostics-medtech",
-        "human-health",
-        "therapeutics-regenerative"
-      ],
-      "tech_tags": [
-        "ai-data",
-        "diagnostics",
-        "therapeutics"
-      ],
-      "scale_tags": [
-        "agroecosystem-scale",
-        "human-scale",
-        "planetary-scale",
-        "product-scale"
-      ],
-      "market_label": "nanotech-enhanced radiotherapy platform",
-      "self_cats": [
-        "Therapeutics"
-      ],
-      "investor_ids": [
-        "GridX"
-      ]
-    },
-    {
-      "id": "outpost",
-      "name": "Outpost",
-      "country": "USA",
-      "countries": [
-        "USA"
-      ],
-      "website": "https://www.outpost.bio/",
-      "macro_theme": "computational biology and scientific software",
-      "emergent_theme": "microbiome predictive biology and techbio",
-      "summary": "Outpost is a TechBio company making human microbiology computable by pairing wet-lab microbiology with machine learning and foundation-model style predictive systems. Its closed-loop engine is aimed at microbiome R&D, predictive medicine and biotech or consumer-health product development. It is not a clinical medical device or diagnostics product; it should cluster with computational biology, microbiome modeling, predictive biology and life-science software.",
-      "one_liner": "Closed-loop microbiome predictive-biology platform.",
-      "cluster_id": 15,
-      "cluster_label": "Diagnostics & Health Access — Diagnostics",
-      "cluster_keywords": "diagnostics · device · medtech · nanomedicine",
-      "cluster_confidence": 0.35,
-      "x": -8.756,
-      "y": -2.39,
-      "is_outlier": true,
-      "tech_codes": [
-        "microbial",
-        "ai_ml",
-        "diagnostics",
-        "therapeutics"
-      ],
-      "industry_codes": [
-        "human_health",
-        "therapeutics_industry",
-        "biodiversity",
-        "diagnostics_industry"
-      ],
-      "quality_score": 8.0,
-      "quality_band": "medium",
-      "community_id": 7,
-      "pagerank": 0.000980078491113103,
-      "valuation_tier": 1.0,
-      "n_investors_mapped": 1,
-      "bio_theme": "Biomanufacturing & Fermentation Economy",
-      "bio_theme_secondary": "Therapeutics",
-      "is_bio_universe": 1,
-      "sub_cluster_label": "",
-      "funding_stage": null,
-      "funding_bucket_usd": null,
-      "valuation_bucket_usd": null,
-      "valuation_estimate_usd": 4.0,
-      "valuation_estimate_source": "investors_proxy",
-      "sx": -8.335,
-      "sy": -2.745,
-      "bio_lens": [
-        "biobased",
-        "biocentric",
-        "human-health-bio",
-        "planetary-boundary"
-      ],
-      "domain_tags": [
-        "biodiversity-nature",
-        "diagnostics-medtech",
-        "human-health",
-        "therapeutics-regenerative"
-      ],
-      "tech_tags": [
-        "ai-data",
-        "diagnostics",
-        "therapeutics"
-      ],
-      "scale_tags": [
-        "human-scale",
-        "molecular-scale",
-        "planetary-scale",
-        "product-scale"
-      ],
-      "market_label": "microbiome predictive biology and techbio platform",
-      "self_cats": [
-        "AI / Data",
-        "Biotech"
-      ],
-      "investor_ids": [
-        "AIR Capital"
       ]
     },
     {
@@ -20113,86 +20055,6 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [],
       "investor_ids": [
         "SF500"
-      ]
-    },
-    {
-      "id": "plamic",
-      "name": "Plamic",
-      "country": "Argentina",
-      "countries": [
-        "Argentina"
-      ],
-      "website": "https://www.argentina.gob.ar/ciencia/seppCTI/desarrollo-tecnologico-e-innovacion/diseno-fabricacion-y-caracterizacion-de-chips-o",
-      "macro_theme": "therapeutics and regenerative medicine",
-      "emergent_theme": "microfluidic nanomedicine manufacturing",
-      "summary": "PLAMIC develops microfluidic lab-on-a-chip systems to design, manufacture and characterize nanoscale drug-delivery formulations for health applications. Public sources frame its problem as low reproducibility, reagent waste and difficult scale-up in conventional nanomedicine manufacturing. It belongs inside BIO VC LATAM as biomedical process infrastructure for nanomedicine, not as crop or ag-input technology.",
-      "one_liner": "Microfluidic lab-on-a-chip platform for nanomedicine manufacturing.",
-      "cluster_id": 15,
-      "cluster_label": "Diagnostics & Health Access — Diagnostics",
-      "cluster_keywords": "diagnostics · device · medtech · nanomedicine",
-      "cluster_confidence": 0.357,
-      "x": -10.255,
-      "y": -9.922,
-      "is_outlier": true,
-      "tech_codes": [
-        "nanotech",
-        "formulation",
-        "ai_ml",
-        "biomanufacturing",
-        "therapeutics"
-      ],
-      "industry_codes": [
-        "human_health",
-        "row_crops",
-        "carbon",
-        "therapeutics_industry"
-      ],
-      "quality_score": 8.5,
-      "quality_band": "high",
-      "community_id": 9,
-      "pagerank": 0.0009625759555840287,
-      "valuation_tier": 1.0,
-      "n_investors_mapped": 1,
-      "bio_theme": "Therapeutics",
-      "bio_theme_secondary": "",
-      "is_bio_universe": 1,
-      "sub_cluster_label": "Drug Discovery & Biologics",
-      "funding_stage": null,
-      "funding_bucket_usd": null,
-      "valuation_bucket_usd": null,
-      "valuation_estimate_usd": 4.0,
-      "valuation_estimate_source": "investors_proxy",
-      "sx": -9.1,
-      "sy": -10.071,
-      "bio_lens": [
-        "biocentric",
-        "circular",
-        "human-health-bio",
-        "planetary-boundary",
-        "regenerative"
-      ],
-      "domain_tags": [
-        "agri-food",
-        "climate-resource",
-        "human-health",
-        "therapeutics-regenerative"
-      ],
-      "tech_tags": [
-        "ai-data",
-        "biomanufacturing",
-        "therapeutics"
-      ],
-      "scale_tags": [
-        "agroecosystem-scale",
-        "human-scale",
-        "industrial-scale",
-        "planetary-scale",
-        "territorial-scale"
-      ],
-      "market_label": "microfluidic nanomedicine manufacturing platform",
-      "self_cats": [],
-      "investor_ids": [
-        "GridX"
       ]
     },
     {
@@ -20419,85 +20281,6 @@ window.STARTUP_THEMES_DATA = {
       ]
     },
     {
-      "id": "stamm",
-      "name": "Stämm",
-      "country": "Argentina",
-      "countries": [
-        "Argentina"
-      ],
-      "website": "https://www.stamm.bio/",
-      "macro_theme": "biomanufacturing and bioindustrial platforms",
-      "emergent_theme": "continuous programmable biomanufacturing",
-      "summary": "Stämm is an Argentine advanced-biomanufacturing company developing high-throughput bioprocessors, bioengineering services and Bio AI tools for biologics and cell-therapy production. Its platform supports cell-line development, biologics manufacturing, cell-therapy workflows and multi-omic data analysis, with continuous bioreactor technology aimed at increasing antibody productivity. It belongs inside BIO VC LATAM as core biomanufacturing infrastructure for biologics, cell therapies and data-driven bioengineering.",
-      "one_liner": "High-throughput bioprocessing and Bio AI for biologics manufacturing.",
-      "cluster_id": 15,
-      "cluster_label": "Diagnostics & Health Access — Diagnostics",
-      "cluster_keywords": "diagnostics · device · medtech · nanomedicine",
-      "cluster_confidence": 0.354,
-      "x": -8.82,
-      "y": -2.372,
-      "is_outlier": true,
-      "tech_codes": [
-        "biomanufacturing",
-        "ai_ml"
-      ],
-      "industry_codes": [
-        "biomanufacturing_industry",
-        "human_health",
-        "specialty_chem",
-        "therapeutics_industry"
-      ],
-      "quality_score": 9.0,
-      "quality_band": "high",
-      "community_id": 7,
-      "pagerank": 0.0019052598884553333,
-      "valuation_tier": 3.0,
-      "n_investors_mapped": 5,
-      "bio_theme": "Biomanufacturing & Fermentation Economy",
-      "bio_theme_secondary": "Biomaterials & Circular Economy",
-      "is_bio_universe": 1,
-      "sub_cluster_label": "",
-      "funding_stage": "series-a",
-      "funding_bucket_usd": 15,
-      "valuation_bucket_usd": 100,
-      "valuation_estimate_usd": 100.0,
-      "valuation_estimate_source": "gridx_valuation",
-      "sx": -8.479,
-      "sy": -2.704,
-      "bio_lens": [
-        "biobased",
-        "bio-enabled-industrial-transition",
-        "human-health-bio"
-      ],
-      "domain_tags": [
-        "biomanufacturing",
-        "human-health",
-        "industrial-biotech",
-        "therapeutics-regenerative"
-      ],
-      "tech_tags": [
-        "ai-data",
-        "biomanufacturing"
-      ],
-      "scale_tags": [
-        "industrial-scale",
-        "molecular-scale"
-      ],
-      "market_label": "biomanufacturing infrastructure",
-      "self_cats": [
-        "Therapeutics",
-        "Biomanufacturing",
-        "Biotech"
-      ],
-      "investor_ids": [
-        "AIR Capital",
-        "DraperCygnus",
-        "GridX",
-        "SOSV_IndieBio",
-        "varana_capital"
-      ]
-    },
-    {
       "id": "tensor-care",
       "name": "Tensor Care",
       "country": "Chile",
@@ -20719,7 +20502,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "",
       "summary": "Develops antisense oligonucleotide drugs targeting non-coding mitochondrial RNAs selectively upregulated in cancer cells. Lead candidate Andes-1537 completed Phase 1a trials in advanced solid tumors; 17 pipeline candidates across oncology indications.",
-      "one_liner": "",
+      "one_liner": "Develops antisense oligonucleotide drugs targeting non-coding mitochondrial RNAs selectively upregulated in cancer…",
       "cluster_id": 16,
       "cluster_label": "Therapeutics — Cancer",
       "cluster_keywords": "cancer · therapeutics · metabolic · therapeutic",
@@ -20769,7 +20552,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "therapeutics — regenerative medicine · therapeutics · regenerative medicine · cancer · wound",
       "summary": "Biotech startup developing novel RNA therapies initially targeting cancer and neurodegenerative diseases. Advancing next-generation RNA-based medicines toward the clinic.",
-      "one_liner": "",
+      "one_liner": "Biotech startup developing novel RNA therapies initially targeting cancer and neurodegenerative diseases.",
       "cluster_id": 16,
       "cluster_label": "Therapeutics — Cancer",
       "cluster_keywords": "cancer · therapeutics · metabolic · therapeutic",
@@ -20824,7 +20607,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "",
       "summary": "Aptah Bio's RNA WiCo platform simultaneously corrects genome-wide RNA processing errors, eliminating multiple faulty mRNAs and toxic proteins in one compound. Lead asset APT20TTMG targets Alzheimer's; platform extends across cancer and neurodegenerative indications.",
-      "one_liner": "",
+      "one_liner": "Aptah Bio's RNA WiCo platform simultaneously corrects genome-wide RNA processing errors, eliminating multiple faulty…",
       "cluster_id": 16,
       "cluster_label": "Therapeutics — Cancer",
       "cluster_keywords": "cancer · therapeutics · metabolic · therapeutic",
@@ -20943,7 +20726,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "therapeutics — antimicrobial · antimicrobial · textile · materials · patients",
       "summary": "Develops heavy-chain recombinant single-domain antibody technologies for animal vaccine applications. Strengthens global animal vaccine R&D capabilities through nanobody-based biologics.",
-      "one_liner": "",
+      "one_liner": "Develops heavy-chain recombinant single-domain antibody technologies for animal vaccine applications.",
       "cluster_id": 16,
       "cluster_label": "Therapeutics — Cancer",
       "cluster_keywords": "cancer · therapeutics · metabolic · therapeutic",
@@ -20998,7 +20781,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "",
       "summary": "Cellertz Bio builds a generative biology platform combining single-cell ML, deep learning molecule synthesis (CodonScope), and cell therapy engineering to develop data-driven cancer biotherapeutics targeting gene regulatory networks.",
-      "one_liner": "",
+      "one_liner": "Cellertz Bio builds a generative biology platform combining single-cell ML, deep learning molecule synthesis…",
       "cluster_id": 16,
       "cluster_label": "Therapeutics — Cancer",
       "cluster_keywords": "cancer · therapeutics · metabolic · therapeutic",
@@ -21048,7 +20831,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "therapeutics — antimicrobial · antimicrobial · textile · materials · patients",
       "summary": "Developing CAR-T cell immunotherapy (RefuaPepCAR) for cancer treatment. Applies chimeric antigen receptor technology to engineer T cells that target and destroy tumor cells.",
-      "one_liner": "",
+      "one_liner": "Developing CAR-T cell immunotherapy (RefuaPepCAR) for cancer treatment.",
       "cluster_id": 16,
       "cluster_label": "Therapeutics — Cancer",
       "cluster_keywords": "cancer · therapeutics · metabolic · therapeutic",
@@ -21243,7 +21026,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "therapeutics — antimicrobial · antimicrobial · textile · materials · patients",
       "summary": "Develops autologous tumor antigen-based therapeutic vaccines for prostate cancer patients at high recurrence risk after surgery. Uses patients' own tumor cells to create personalized cancer immunotherapy.",
-      "one_liner": "",
+      "one_liner": "Develops autologous tumor antigen-based therapeutic vaccines for prostate cancer patients at high recurrence risk after…",
       "cluster_id": 16,
       "cluster_label": "Therapeutics — Cancer",
       "cluster_keywords": "cancer · therapeutics · metabolic · therapeutic",
@@ -21298,7 +21081,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "therapeutics — antimicrobial · antimicrobial · textile · materials · patients",
       "summary": "Developing mRNA vaccine technology incorporating natural UTRs and molecular boosters to produce potent immune responses. Building next-generation mRNA vaccination platforms for infectious diseases.",
-      "one_liner": "",
+      "one_liner": "Developing mRNA vaccine technology incorporating natural UTRs and molecular boosters to produce potent immune responses.",
       "cluster_id": 16,
       "cluster_label": "Therapeutics — Cancer",
       "cluster_keywords": "cancer · therapeutics · metabolic · therapeutic",
@@ -21341,6 +21124,75 @@ window.STARTUP_THEMES_DATA = {
       "investor_ids": []
     },
     {
+      "id": "galtec",
+      "name": "Galtec Life",
+      "country": "Argentina",
+      "countries": [
+        "Argentina"
+      ],
+      "website": "https://galtec.ar/en/home/",
+      "macro_theme": "therapeutics and regenerative medicine",
+      "emergent_theme": "galectin immunotherapy platforms",
+      "summary": "Galtec Life is an Argentine biotech developing immunotherapies based on galectin modulation for cancer, autoimmune diseases and chronic inflammatory conditions. The semantic anchor is therapeutic immunology: the company designs biological interventions that act on galectin-mediated immune and inflammatory pathways. It belongs inside BIO VC LATAM as a therapeutic biotech platform, not ag intelligence or generic life-science services.",
+      "one_liner": "Galectin-modulating immunotherapies for cancer and inflammatory disease.",
+      "cluster_id": 16,
+      "cluster_label": "Therapeutics · Cancer",
+      "cluster_keywords": "cancer · therapeutics · metabolic · therapeutic",
+      "cluster_confidence": 0.358,
+      "x": -10.525,
+      "y": -9.99,
+      "is_outlier": false,
+      "tech_codes": [
+        "therapeutics",
+        "ai_ml"
+      ],
+      "industry_codes": [
+        "therapeutics_industry",
+        "human_health"
+      ],
+      "quality_score": 8.5,
+      "quality_band": "high",
+      "community_id": -1,
+      "pagerank": 0.0009548076656120609,
+      "valuation_tier": 1.0,
+      "n_investors_mapped": 0,
+      "bio_theme": "Therapeutics",
+      "bio_theme_secondary": "",
+      "is_bio_universe": 1,
+      "sub_cluster_label": "Drug Discovery & Biologics",
+      "funding_stage": null,
+      "funding_bucket_usd": null,
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 1.5,
+      "valuation_estimate_source": "emergente",
+      "sx": -9.699,
+      "sy": -10.223,
+      "bio_lens": [
+        "biocentric",
+        "human-health-bio",
+        "planetary-boundary",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "human-scale",
+        "planetary-scale"
+      ],
+      "market_label": "galectin-based immunotherapy platform",
+      "self_cats": [
+        "Therapeutics",
+        "Biotech"
+      ],
+      "investor_ids": []
+    },
+    {
       "id": "lizarbio",
       "name": "LizarBio",
       "country": "Brazil",
@@ -21351,7 +21203,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "therapeutics — antimicrobial · antimicrobial · textile · materials · patients",
       "summary": "Develops cell-based therapies to treat heart failure and Rett syndrome, producing cardiac cells for transplantation. Advances regenerative medicine using stem cell-derived cardiac therapies.",
-      "one_liner": "",
+      "one_liner": "Develops cell-based therapies to treat heart failure and Rett syndrome, producing cardiac cells for transplantation.",
       "cluster_id": 16,
       "cluster_label": "Therapeutics — Cancer",
       "cluster_keywords": "cancer · therapeutics · metabolic · therapeutic",
@@ -21404,7 +21256,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "",
       "summary": "Develops oligonucleotide molecules (miRNA/siRNA) targeting muscle and metabolic diseases including cachexia sarcopenia and aging-associated conditions. Green Rock portfolio.",
-      "one_liner": "",
+      "one_liner": "Develops oligonucleotide molecules (miRNA/siRNA) targeting muscle and metabolic diseases including cachexia sarcopenia…",
       "cluster_id": 16,
       "cluster_label": "Therapeutics — Cancer",
       "cluster_keywords": "cancer · therapeutics · metabolic · therapeutic",
@@ -21450,7 +21302,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "therapeutics — regenerative medicine · therapeutics · regenerative medicine · cancer · wound",
       "summary": "Drug design company combining bioinformatics and artificial intelligence to identify and develop novel therapeutic molecules. Applies computational approaches to accelerate drug discovery.",
-      "one_liner": "",
+      "one_liner": "Drug design company combining bioinformatics and artificial intelligence to identify and develop novel therapeutic…",
       "cluster_id": 16,
       "cluster_label": "Therapeutics — Cancer",
       "cluster_keywords": "cancer · therapeutics · metabolic · therapeutic",
@@ -21492,7 +21344,8 @@ window.STARTUP_THEMES_DATA = {
       "scale_tags": [],
       "market_label": "",
       "self_cats": [
-        "Therapeutics"
+        "Therapeutics",
+        "Biotech"
       ],
       "investor_ids": []
     },
@@ -21507,7 +21360,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "",
       "summary": "NAIAD Drug Design applies deep learning and structure-based virtual screening to discover small-molecule GPCR modulators. STYX platform predicts biased signaling pathways across billions of candidate molecules before any cellular testing, targeting CNS and metabolic disease. Backed by Green Rock.",
-      "one_liner": "",
+      "one_liner": "NAIAD Drug Design applies deep learning and structure-based virtual screening to discover small-molecule GPCR…",
       "cluster_id": 16,
       "cluster_label": "Therapeutics — Cancer",
       "cluster_keywords": "cancer · therapeutics · metabolic · therapeutic",
@@ -21545,6 +21398,84 @@ window.STARTUP_THEMES_DATA = {
       "investor_ids": []
     },
     {
+      "id": "nanoprox",
+      "name": "NanoproX",
+      "country": "Argentina",
+      "countries": [
+        "Argentina"
+      ],
+      "website": "https://www.nanoprox.com/",
+      "macro_theme": "diagnostics and medtech",
+      "emergent_theme": "nanomedicine and oncology devices",
+      "summary": "NanoproX develops bismuth-sulfide nanoparticles that act as radiosensitizers to increase radiotherapy effectiveness and reduce adverse effects, especially for hard-to-access tumors. It belongs inside BIO VC LATAM as oncology nanomedicine and medical technology: a physical nanoparticle intervention coupled to cancer treatment, not an agricultural or generic materials case.",
+      "one_liner": "Bismuth-sulfide nanoparticle radiosensitizer for oncology.",
+      "cluster_id": 16,
+      "cluster_label": "Therapeutics · Cancer",
+      "cluster_keywords": "cancer · therapeutics · metabolic · therapeutic",
+      "cluster_confidence": 0.351,
+      "x": -10.191,
+      "y": -9.908,
+      "is_outlier": false,
+      "tech_codes": [
+        "nanotech",
+        "iot",
+        "ai_ml",
+        "diagnostics",
+        "therapeutics"
+      ],
+      "industry_codes": [
+        "therapeutics_industry",
+        "row_crops",
+        "diagnostics_industry",
+        "human_health"
+      ],
+      "quality_score": 8.0,
+      "quality_band": "medium",
+      "community_id": 9,
+      "pagerank": 0.0009625759555840287,
+      "valuation_tier": 1.0,
+      "n_investors_mapped": 1,
+      "bio_theme": "Therapeutics",
+      "bio_theme_secondary": "Diagnostics & Health Access",
+      "is_bio_universe": 1,
+      "sub_cluster_label": "",
+      "funding_stage": null,
+      "funding_bucket_usd": null,
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": 4.0,
+      "valuation_estimate_source": "investors_proxy",
+      "sx": -8.958,
+      "sy": -10.04,
+      "bio_lens": [
+        "human-health-bio",
+        "planetary-boundary"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "diagnostics-medtech",
+        "human-health",
+        "therapeutics-regenerative"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "diagnostics",
+        "therapeutics"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "human-scale",
+        "planetary-scale",
+        "product-scale"
+      ],
+      "market_label": "nanotech-enhanced radiotherapy platform",
+      "self_cats": [
+        "Therapeutics"
+      ],
+      "investor_ids": [
+        "GridX"
+      ]
+    },
+    {
       "id": "nintx-br",
       "name": "Nintx",
       "country": "Brazil",
@@ -21555,7 +21486,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "",
       "summary": "Nintx leverages GAIApath (medicinal plant-to-human-target knowledge graph) and xGIbiomics (simulated GI microbiome) to discover plant-derived drugs. Pipeline: 7 pharma candidates for Alzheimer’s, metabolic syndrome, psoriasis, IBD, plus 12 nutraceuticals.",
-      "one_liner": "",
+      "one_liner": "Nintx leverages GAIApath (medicinal plant-to-human-target knowledge graph) and xGIbiomics (simulated GI microbiome) to…",
       "cluster_id": 16,
       "cluster_label": "Therapeutics — Cancer",
       "cluster_keywords": "cancer · therapeutics · metabolic · therapeutic",
@@ -21605,7 +21536,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "therapeutics — regenerative medicine · therapeutics · regenerative medicine · cancer · wound",
       "summary": "Scientifically-based pharmaceutical company developing new drugs to treat chronic musculoskeletal pain. Advances novel mechanisms of action targeting pain at the molecular level.",
-      "one_liner": "",
+      "one_liner": "Scientifically-based pharmaceutical company developing new drugs to treat chronic musculoskeletal pain.",
       "cluster_id": 16,
       "cluster_label": "Therapeutics — Cancer",
       "cluster_keywords": "cancer · therapeutics · metabolic · therapeutic",
@@ -21660,7 +21591,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "ag biologicals and crop resilience",
       "emergent_theme": "",
       "summary": "Peptidus Biotech uses generative AI to design bioactive peptides for veterinary and human therapeutics. Lead candidate MastPep targets bovine mastitis via TLR6 activation, eliminating antibiotic residues in milk. Raised $17M seed; pipeline covers dermal healing and infectious disease.",
-      "one_liner": "",
+      "one_liner": "Peptidus Biotech uses generative AI to design bioactive peptides for veterinary and human therapeutics.",
       "cluster_id": 16,
       "cluster_label": "Therapeutics — Cancer",
       "cluster_keywords": "cancer · therapeutics · metabolic · therapeutic",
@@ -21709,7 +21640,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "therapeutics — regenerative medicine · therapeutics · regenerative medicine · cancer · wound",
       "summary": "Develops antitumor molecules for triple-negative breast cancer treatment. Advancing novel oncology therapeutics targeting aggressive cancers with limited existing treatments.",
-      "one_liner": "",
+      "one_liner": "Develops antitumor molecules for triple-negative breast cancer treatment.",
       "cluster_id": 16,
       "cluster_label": "Therapeutics — Cancer",
       "cluster_keywords": "cancer · therapeutics · metabolic · therapeutic",
@@ -21884,7 +21815,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "therapeutics — regenerative medicine · therapeutics · regenerative medicine · cancer · wound",
       "summary": "Develops microRNA-directed therapeutic drugs for pancreatic cancer and other malignancies. Advances targeted molecular therapies based on RNA interference mechanisms.",
-      "one_liner": "",
+      "one_liner": "Develops microRNA-directed therapeutic drugs for pancreatic cancer and other malignancies.",
       "cluster_id": 16,
       "cluster_label": "Therapeutics — Cancer",
       "cluster_keywords": "cancer · therapeutics · metabolic · therapeutic",
@@ -21939,7 +21870,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "therapeutics — antimicrobial · antimicrobial · textile · materials · patients",
       "summary": "Develops autologous dendritic cell-based therapeutic vaccines targeting chronic viral infections. Advances personalized immunotherapy using patients' own immune cells to combat persistent pathogens.",
-      "one_liner": "",
+      "one_liner": "Develops autologous dendritic cell-based therapeutic vaccines targeting chronic viral infections.",
       "cluster_id": 16,
       "cluster_label": "Therapeutics — Cancer",
       "cluster_keywords": "cancer · therapeutics · metabolic · therapeutic",
@@ -21994,7 +21925,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "",
       "summary": "Vyro Bio re-engineers the Zika virus into an oncolytic therapeutic targeting pediatric brain cancers, leveraging Zika's natural neurotropism against gliomas. Mechanism published in Molecular Therapy (Cell Press).",
-      "one_liner": "",
+      "one_liner": "Vyro Bio re-engineers the Zika virus into an oncolytic therapeutic targeting pediatric brain cancers, leveraging Zika's…",
       "cluster_id": 16,
       "cluster_label": "Therapeutics — Cancer",
       "cluster_keywords": "cancer · therapeutics · metabolic · therapeutic",
@@ -22042,7 +21973,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "diagnostics and medtech",
       "emergent_theme": "",
       "summary": "Developing an injectable bioactive hydrogel derived from human birth tissue to regenerate cardiac muscle damaged by myocardial infarction. Cell-free biomaterial promotes vascularization and restores cardiac function; validated in preclinical sheep models of heart failure.",
-      "one_liner": "",
+      "one_liner": "Developing an injectable bioactive hydrogel derived from human birth tissue to regenerate cardiac muscle damaged by…",
       "cluster_id": 17,
       "cluster_label": "Therapeutics — Therapeutics Regenerative",
       "cluster_keywords": "therapeutics regenerative · tissue · medicine · extracellular",
@@ -22399,7 +22330,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "",
       "summary": "Autem Therapeutics' AutEMsys device delivers personalized amplitude-modulated electromagnetic frequencies to resynchronize cancer-cell metabolism in solid tumors including HCC. Non-invasive, FDA Breakthrough-designated, infrastructure-light for remote settings.",
-      "one_liner": "",
+      "one_liner": "Autem Therapeutics' AutEMsys device delivers personalized amplitude-modulated electromagnetic frequencies to…",
       "cluster_id": 17,
       "cluster_label": "Therapeutics — Therapeutics Regenerative",
       "cluster_keywords": "therapeutics regenerative · tissue · medicine · extracellular",
@@ -22727,7 +22658,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "",
       "summary": "Develops cell therapies and tissue-engineered solutions for chronic diseases including knee osteoarthritis treatment and exosome production. $45.1M raised.",
-      "one_liner": "",
+      "one_liner": "Develops cell therapies and tissue-engineered solutions for chronic diseases including knee osteoarthritis treatment…",
       "cluster_id": 17,
       "cluster_label": "Therapeutics — Therapeutics Regenerative",
       "cluster_keywords": "therapeutics regenerative · tissue · medicine · extracellular",
@@ -23276,7 +23207,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "therapeutics — regenerative medicine · therapeutics · regenerative medicine · cancer · wound",
       "summary": "Using cell therapy to develop a 3D biobandage containing stem cells for treatment of chronic wounds and severe burns. Advances extracellular nanovesicle-based regenerative medicine solutions.",
-      "one_liner": "",
+      "one_liner": "Using cell therapy to develop a 3D biobandage containing stem cells for treatment of chronic wounds and severe burns.",
       "cluster_id": 17,
       "cluster_label": "Therapeutics — Therapeutics Regenerative",
       "cluster_keywords": "therapeutics regenerative · tissue · medicine · extracellular",
@@ -23993,7 +23924,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "ag biologicals and crop resilience",
       "emergent_theme": "",
       "summary": "Agrion converts sugarcane byproducts into controlled-release organo-mineral fertilizers. Serves Brazilian row-crop farmers with a circular-economy model; raised $46M Series A from the Global Fund for Coral Reefs to expand to 20 plants across Brazil.",
-      "one_liner": "",
+      "one_liner": "Agrion converts sugarcane byproducts into controlled-release organo-mineral fertilizers.",
       "cluster_id": 18,
       "cluster_label": "Bioinputs & Crop Resilience — Pest",
       "cluster_keywords": "pest · biocontrol · biologicals · crop",
@@ -24118,7 +24049,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "ag biologicals and crop resilience",
       "emergent_theme": "",
       "summary": "Biocentis uses genome engineering and AI to produce self-limiting insect strains that suppress target pest fertility without chemical pesticides. Targets Aedes aegypti (dengue/Zika) and spotted-wing Drosophila; 9M raised in 2025 for Brazil and US field trials.",
-      "one_liner": "",
+      "one_liner": "Biocentis uses genome engineering and AI to produce self-limiting insect strains that suppress target pest fertility…",
       "cluster_id": 18,
       "cluster_label": "Bioinputs & Crop Resilience — Pest",
       "cluster_keywords": "pest · biocontrol · biologicals · crop",
@@ -24275,7 +24206,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "ag biologicals and crop resilience",
       "emergent_theme": "",
       "summary": "Biotrop produces Bradyrhizobium-based inoculants enabling biological nitrogen fixation in soybeans, replacing up to 240 kg/ha of synthetic nitrogen fertilizer. Acquired by Belgium Biobest in 2023 for $569M; serves row-crop farmers across Brazil and South America.",
-      "one_liner": "",
+      "one_liner": "Biotrop produces Bradyrhizobium-based inoculants enabling biological nitrogen fixation in soybeans, replacing up to 240…",
       "cluster_id": 18,
       "cluster_label": "Bioinputs & Crop Resilience — Pest",
       "cluster_keywords": "pest · biocontrol · biologicals · crop",
@@ -24309,6 +24240,85 @@ window.STARTUP_THEMES_DATA = {
       "market_label": "",
       "self_cats": [],
       "investor_ids": []
+    },
+    {
+      "id": "botanical-solutions",
+      "name": "Botanical Solutions",
+      "country": "Chile",
+      "countries": [
+        "Chile"
+      ],
+      "website": "https://www.linkedin.com/company/botanical-solution",
+      "macro_theme": "ag biologicals and crop resilience",
+      "emergent_theme": "ag biologicals and crop resilience",
+      "summary": "Chilean plant-biotechnology company developing botanical-origin active ingredients for crop protection and human-health applications. Its platform uses proprietary plant tissue culture to produce consistent raw materials without relying only on field-grown botanical extraction. It belongs inside BIO VC LATAM as a biobased active-ingredient and ag biologicals company, with relevance to crop resilience, natural product supply chains and plant-cell bioprocessing.",
+      "one_liner": "Botanical active ingredients from plant tissue culture.",
+      "cluster_id": 18,
+      "cluster_label": "Bioinputs & Crop Resilience · Pest",
+      "cluster_keywords": "pest · biocontrol · biologicals · crop",
+      "cluster_confidence": 0.362,
+      "x": -7.243,
+      "y": 6.95,
+      "is_outlier": false,
+      "tech_codes": [
+        "ag_inputs",
+        "biomanufacturing",
+        "ai_ml"
+      ],
+      "industry_codes": [
+        "row_crops",
+        "biomanufacturing_industry",
+        "human_health"
+      ],
+      "quality_score": 8.0,
+      "quality_band": "medium",
+      "community_id": 6,
+      "pagerank": 0.0009759305560124662,
+      "valuation_tier": null,
+      "n_investors_mapped": 1,
+      "bio_theme": "Bioinputs & Crop Resilience",
+      "bio_theme_secondary": "Biomaterials & Circular Economy",
+      "is_bio_universe": 1,
+      "sub_cluster_label": "",
+      "funding_stage": null,
+      "funding_bucket_usd": null,
+      "valuation_bucket_usd": 25,
+      "valuation_estimate_usd": 25.0,
+      "valuation_estimate_source": "gridx_valuation",
+      "sx": -7.54,
+      "sy": 7.744,
+      "bio_lens": [
+        "biobased",
+        "biocentric",
+        "bio-enabled-industrial-transition",
+        "human-health-bio",
+        "regenerative"
+      ],
+      "domain_tags": [
+        "agri-food",
+        "biomanufacturing",
+        "human-health"
+      ],
+      "tech_tags": [
+        "ai-data",
+        "bioinputs",
+        "biomanufacturing"
+      ],
+      "scale_tags": [
+        "agroecosystem-scale",
+        "human-scale",
+        "industrial-scale",
+        "molecular-scale",
+        "product-scale"
+      ],
+      "market_label": "botanical crop protection and biobased active ingredients",
+      "self_cats": [
+        "AgTech",
+        "Biotech"
+      ],
+      "investor_ids": [
+        "The Ganesha Lab"
+      ]
     },
     {
       "id": "bug_agentes_biologicos",
@@ -24451,7 +24461,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "ag biologicals and crop resilience",
       "emergent_theme": "",
       "summary": "Decoy Smart Control produces fungal biopesticides using entomopathogenic species lethal to Rhipicephalus microplus ticks but safe for cattle and humans. Spore-based formulations achieve 70-100% efficacy in field trials, addressing growing chemical resistance in Brazilian livestock.",
-      "one_liner": "",
+      "one_liner": "Decoy Smart Control produces fungal biopesticides using entomopathogenic species lethal to Rhipicephalus microplus…",
       "cluster_id": 18,
       "cluster_label": "Bioinputs & Crop Resilience — Pest",
       "cluster_keywords": "pest · biocontrol · biologicals · crop",
@@ -24715,7 +24725,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "ag biologicals and crop resilience",
       "emergent_theme": "",
       "summary": "Vitales (Uby Agro subsidiary) develops fungal and microbial biocontrol products for Brazilian soybean farming, targeting Sudden Death Syndrome and target spot. Partners with Ginkgo Bioworks for fermentation and formulation scale-up of commercially viable biologicals.",
-      "one_liner": "",
+      "one_liner": "Vitales (Uby Agro subsidiary) develops fungal and microbial biocontrol products for Brazilian soybean farming,…",
       "cluster_id": 18,
       "cluster_label": "Bioinputs & Crop Resilience — Pest",
       "cluster_keywords": "pest · biocontrol · biologicals · crop",
@@ -24926,7 +24936,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "biomanufacturing and bioindustrial platforms",
       "emergent_theme": "food systems & alt proteins — precision fermentation · dairy · bioprocessing · precision fermentation · protein",
       "summary": "Brazilian company specialized in bioprocess development for biopharmaceutical production from mammalian cells, yeast, and bacteria. A leading contract bioprocessing organization in Latin America.",
-      "one_liner": "",
+      "one_liner": "Brazilian company specialized in bioprocess development for biopharmaceutical production from mammalian cells, yeast,…",
       "cluster_id": 19,
       "cluster_label": "Food Systems & Alt Proteins — Precision Fermentation",
       "cluster_keywords": "dairy · diagnostics · brazilian · precision fermentation",
@@ -24969,7 +24979,8 @@ window.STARTUP_THEMES_DATA = {
       "market_label": "",
       "self_cats": [
         "Therapeutics",
-        "Biomanufacturing"
+        "Biomanufacturing",
+        "Biotech"
       ],
       "investor_ids": []
     },
@@ -26309,7 +26320,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "precision agriculture and resource intelligence",
       "emergent_theme": "",
       "summary": "Agronow combines satellite imagery with proprietary AI to deliver farm-level crop monitoring every three days, projecting yields and harvest timing with 90%+ accuracy. Backed by BTG Pactual; used for rural credit scoring across Brazilian farmland.",
-      "one_liner": "",
+      "one_liner": "Agronow combines satellite imagery with proprietary AI to deliver farm-level crop monitoring every three days,…",
       "cluster_id": 21,
       "cluster_label": "Farm Intelligence — Agronomic",
       "cluster_keywords": "agronomic · fresh · imagery · agtech",
@@ -27088,7 +27099,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "ag biologicals and crop resilience",
       "emergent_theme": "",
       "summary": "CowMed provides AI-powered wearable collar sensors and environmental monitors for Brazilian dairy herds, delivering real-time estrus detection, early disease alerts, per-animal meal-frequency tracking, and thermal-stress warnings trained on 95%+ Brazilian cattle behavioral data.",
-      "one_liner": "",
+      "one_liner": "CowMed provides AI-powered wearable collar sensors and environmental monitors for Brazilian dairy herds, delivering…",
       "cluster_id": 21,
       "cluster_label": "Farm Intelligence — Agronomic",
       "cluster_keywords": "agronomic · fresh · imagery · agtech",
@@ -27211,7 +27222,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "precision agriculture and resource intelligence",
       "emergent_theme": "",
       "summary": "Brazilian AI-powered agronomic decision platform combining climate data soil research genetics and field data to provide smart crop recommendations for farmers and agronomists.",
-      "one_liner": "",
+      "one_liner": "Brazilian AI-powered agronomic decision platform combining climate data soil research genetics and field data to…",
       "cluster_id": 21,
       "cluster_label": "Farm Intelligence — Agronomic",
       "cluster_keywords": "agronomic · fresh · imagery · agtech",
@@ -27676,7 +27687,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "climate, energy and resource systems",
       "emergent_theme": "",
       "summary": "Inspectral fuses multispectral and hyperspectral satellite/drone imagery with AI and bio-optical modeling to monitor water quality, detect macrophytes and fires, and identify early crop disease. Clients include AMBEV and AEGEA.",
-      "one_liner": "",
+      "one_liner": "Inspectral fuses multispectral and hyperspectral satellite/drone imagery with AI and bio-optical modeling to monitor…",
       "cluster_id": 21,
       "cluster_label": "Farm Intelligence — Agronomic",
       "cluster_keywords": "agronomic · fresh · imagery · agtech",
@@ -27725,7 +27736,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "precision agriculture and resource intelligence",
       "emergent_theme": "",
       "summary": "Integrates IoT field sensors, satellite imagery, and weather data into an AI platform monitoring 80+ agronomic parameters and delivering real-time irrigation and nutrition recommendations, cutting water use up to 30% and raising yields 20% for high-value fruit growers.",
-      "one_liner": "",
+      "one_liner": "Integrates IoT field sensors, satellite imagery, and weather data into an AI platform monitoring 80+ agronomic…",
       "cluster_id": 21,
       "cluster_label": "Farm Intelligence — Agronomic",
       "cluster_keywords": "agronomic · fresh · imagery · agtech",
@@ -28968,7 +28979,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "precision agriculture and resource intelligence",
       "emergent_theme": "",
       "summary": "Big data platform for pest and disease monitoring in crops using georeferenced data allowing targeted phytosanitary management. Backed by Monashees Capital and Qualcomm Ventures.",
-      "one_liner": "",
+      "one_liner": "Big data platform for pest and disease monitoring in crops using georeferenced data allowing targeted phytosanitary…",
       "cluster_id": 21,
       "cluster_label": "Farm Intelligence — Agronomic",
       "cluster_keywords": "agronomic · fresh · imagery · agtech",
@@ -29001,6 +29012,7 @@ window.STARTUP_THEMES_DATA = {
       "scale_tags": [],
       "market_label": "",
       "self_cats": [
+        "AgTech",
         "SaaS / Platform"
       ],
       "investor_ids": [
@@ -29487,7 +29499,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "precision agriculture and resource intelligence",
       "emergent_theme": "",
       "summary": "Provides the DropControl irrigation management platform with wireless in-field sensors and cloud software enabling farmers to remotely schedule, monitor, and automate irrigation, targeting water efficiency in vineyards and orchards across global agricultural operations.",
-      "one_liner": "",
+      "one_liner": "Provides the DropControl irrigation management platform with wireless in-field sensors and cloud software enabling…",
       "cluster_id": 21,
       "cluster_label": "Farm Intelligence — Agronomic",
       "cluster_keywords": "agronomic · fresh · imagery · agtech",
@@ -29519,7 +29531,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
-      "self_cats": [],
+      "self_cats": [
+        "SaaS / Platform",
+        "Hardware / IoT"
+      ],
       "investor_ids": [
         "morningside_group"
       ]
@@ -31109,18 +31124,18 @@ window.STARTUP_THEMES_DATA = {
       "cluster_id": 0,
       "label": "Diagnostics & Health Access — Diagnostics",
       "keywords": "diagnostics · laboratory · diagnosis · portable",
-      "size": 75,
+      "size": 78,
       "bio_themes": {
-        "Diagnostics & Health Access": 66,
+        "Diagnostics & Health Access": 69,
         "Therapeutics": 5,
         "Biomanufacturing & Fermentation Economy": 2,
         "Farm Intelligence": 2
       },
       "tech_codes": {
-        "diagnostics": 55,
-        "ai_ml": 23,
-        "therapeutics": 4,
-        "bioinformatics": 4,
+        "diagnostics": 57,
+        "bioinformatics": 5,
+        "ai_ml": 25,
+        "therapeutics": 5,
         "iot": 2,
         "synbio": 5,
         "medical_devices": 1,
@@ -31132,15 +31147,15 @@ window.STARTUP_THEMES_DATA = {
         "saas_marketplace": 1
       },
       "industry_codes": {
-        "human_health": 22,
-        "diagnostics_industry": 21,
-        "therapeutics_industry": 3,
+        "human_health": 24,
+        "diagnostics_industry": 23,
+        "therapeutics_industry": 4,
         "row_crops": 5,
         "veterinary": 1
       },
       "countries": {
-        "Chile": 10,
-        "Argentina": 27,
+        "Chile": 11,
+        "Argentina": 29,
         "Brazil": 23,
         "Guatemala": 1,
         "BM": 1,
@@ -31149,8 +31164,8 @@ window.STARTUP_THEMES_DATA = {
         "Colombia": 1,
         "Uruguay": 1
       },
-      "n_funded": 26,
-      "n_featured": 3
+      "n_funded": 28,
+      "n_featured": 4
     },
     {
       "cluster_id": 21,
@@ -31251,66 +31266,6 @@ window.STARTUP_THEMES_DATA = {
       "n_featured": 0
     },
     {
-      "cluster_id": 15,
-      "label": "Diagnostics & Health Access — Diagnostics",
-      "keywords": "diagnostics · device · medtech · nanomedicine",
-      "size": 37,
-      "bio_themes": {
-        "Diagnostics & Health Access": 17,
-        "Therapeutics": 13,
-        "Bioinputs & Crop Resilience": 1,
-        "Biomanufacturing & Fermentation Economy": 3,
-        "Biomaterials & Circular Economy": 2,
-        "Food Systems & Alt Proteins": 1
-      },
-      "tech_codes": {
-        "diagnostics": 19,
-        "ai_ml": 26,
-        "therapeutics": 20,
-        "nanotech": 5,
-        "biomanufacturing": 6,
-        "bioinformatics": 4,
-        "medical_devices": 4,
-        "biomaterials": 2,
-        "iot": 9,
-        "microbial": 3,
-        "ag_inputs": 2,
-        "synbio": 2,
-        "enzymatic": 1,
-        "formulation": 6,
-        "green_chem": 1,
-        "robotics": 1,
-        "remote_sensing": 1
-      },
-      "industry_codes": {
-        "human_health": 31,
-        "row_crops": 12,
-        "diagnostics_industry": 19,
-        "therapeutics_industry": 22,
-        "biomanufacturing_industry": 6,
-        "carbon": 4,
-        "specialty_chem": 5,
-        "materials_packaging": 4,
-        "biodiversity": 2,
-        "veterinary": 4,
-        "personal_care": 2,
-        "food_ingredients": 2,
-        "animal_protein": 1
-      },
-      "countries": {
-        "Argentina": 25,
-        "Colombia": 1,
-        "Chile": 5,
-        "Brazil": 2,
-        "Mexico": 1,
-        "Costa Rica": 1,
-        "Uruguay": 1,
-        "USA": 1
-      },
-      "n_funded": 32,
-      "n_featured": 2
-    },
-    {
       "cluster_id": 17,
       "label": "Therapeutics — Therapeutics Regenerative",
       "keywords": "therapeutics regenerative · tissue · medicine · extracellular",
@@ -31407,6 +31362,41 @@ window.STARTUP_THEMES_DATA = {
       "n_featured": 1
     },
     {
+      "cluster_id": 16,
+      "label": "Therapeutics — Cancer",
+      "keywords": "cancer · therapeutics · metabolic · therapeutic",
+      "size": 26,
+      "bio_themes": {
+        "Therapeutics": 26
+      },
+      "tech_codes": {
+        "therapeutics": 18,
+        "nanotech": 2,
+        "ai_ml": 4,
+        "iot": 1,
+        "diagnostics": 1,
+        "computational_bio": 1
+      },
+      "industry_codes": {
+        "human_health": 6,
+        "therapeutics_industry": 6,
+        "row_crops": 2,
+        "carbon": 1,
+        "diagnostics_industry": 1
+      },
+      "countries": {
+        "Chile": 3,
+        "Brazil": 15,
+        "Netherlands": 1,
+        "Uruguay": 2,
+        "Argentina": 3,
+        "Mexico": 1,
+        "Costa Rica": 1
+      },
+      "n_funded": 8,
+      "n_featured": 0
+    },
+    {
       "cluster_id": 2,
       "label": "Biomaterials & Circular Economy — Biobased Chemistry",
       "keywords": "materials · biobased chemistry · recovery · energy",
@@ -31460,35 +31450,103 @@ window.STARTUP_THEMES_DATA = {
       "n_featured": 2
     },
     {
-      "cluster_id": 16,
-      "label": "Therapeutics — Cancer",
-      "keywords": "cancer · therapeutics · metabolic · therapeutic",
+      "cluster_id": 15,
+      "label": "Diagnostics & Health Access — Diagnostics",
+      "keywords": "diagnostics · device · medtech · nanomedicine",
       "size": 24,
       "bio_themes": {
-        "Therapeutics": 24
+        "Diagnostics & Health Access": 14,
+        "Therapeutics": 8,
+        "Biomaterials & Circular Economy": 1,
+        "Food Systems & Alt Proteins": 1
       },
       "tech_codes": {
-        "therapeutics": 16,
+        "diagnostics": 15,
+        "ai_ml": 14,
+        "therapeutics": 12,
+        "medical_devices": 4,
+        "biomaterials": 2,
+        "iot": 8,
+        "microbial": 2,
+        "formulation": 4,
+        "bioinformatics": 2,
+        "green_chem": 1,
+        "robotics": 1,
         "nanotech": 1,
-        "ai_ml": 2,
-        "computational_bio": 1
+        "remote_sensing": 1
       },
       "industry_codes": {
-        "human_health": 4,
-        "therapeutics_industry": 4,
-        "row_crops": 1,
+        "human_health": 20,
+        "row_crops": 7,
+        "diagnostics_industry": 15,
+        "therapeutics_industry": 13,
+        "materials_packaging": 3,
+        "biodiversity": 1,
+        "personal_care": 1,
+        "biomanufacturing_industry": 1,
+        "specialty_chem": 1,
+        "veterinary": 2,
+        "food_ingredients": 2,
+        "animal_protein": 1,
         "carbon": 1
       },
       "countries": {
+        "Argentina": 16,
         "Chile": 3,
-        "Brazil": 15,
-        "Netherlands": 1,
-        "Uruguay": 2,
-        "Argentina": 1,
+        "Brazil": 2,
         "Mexico": 1,
-        "Costa Rica": 1
+        "Costa Rica": 1,
+        "Uruguay": 1
       },
-      "n_funded": 7,
+      "n_funded": 21,
+      "n_featured": 0
+    },
+    {
+      "cluster_id": 7,
+      "label": "Therapeutics · Biopharmaceutical",
+      "keywords": "biopharmaceutical · organ · therapeutic · medicine",
+      "size": 21,
+      "bio_themes": {
+        "Therapeutics": 18,
+        "Biomanufacturing & Fermentation Economy": 2,
+        "Bioinputs & Crop Resilience": 1
+      },
+      "tech_codes": {
+        "nanotech": 2,
+        "biomanufacturing": 3,
+        "ai_ml": 12,
+        "therapeutics": 16,
+        "fermentation": 1,
+        "synbio": 2,
+        "diagnostics": 2,
+        "formulation": 2,
+        "bioinformatics": 1,
+        "iot": 4,
+        "microbial": 1
+      },
+      "industry_codes": {
+        "therapeutics_industry": 12,
+        "biomanufacturing_industry": 3,
+        "carbon": 1,
+        "human_health": 13,
+        "specialty_chem": 3,
+        "row_crops": 5,
+        "diagnostics_industry": 3,
+        "veterinary": 5,
+        "personal_care": 1,
+        "materials_packaging": 1,
+        "biodiversity": 1,
+        "animal_protein": 2
+      },
+      "countries": {
+        "Colombia": 2,
+        "Uruguay": 2,
+        "Argentina": 12,
+        "PR": 1,
+        "Chile": 2,
+        "Brazil": 2
+      },
+      "n_funded": 15,
       "n_featured": 0
     },
     {
@@ -31563,79 +31621,82 @@ window.STARTUP_THEMES_DATA = {
       "n_featured": 0
     },
     {
-      "cluster_id": 7,
-      "label": "Therapeutics — Biopharmaceutical",
-      "keywords": "biopharmaceutical · organ · therapeutic · medicine",
-      "size": 19,
-      "bio_themes": {
-        "Therapeutics": 16,
-        "Biomanufacturing & Fermentation Economy": 2,
-        "Bioinputs & Crop Resilience": 1
-      },
-      "tech_codes": {
-        "therapeutics": 14,
-        "ai_ml": 10,
-        "fermentation": 1,
-        "synbio": 2,
-        "biomanufacturing": 2,
-        "diagnostics": 2,
-        "bioinformatics": 1,
-        "formulation": 1,
-        "iot": 4,
-        "microbial": 1
-      },
-      "industry_codes": {
-        "therapeutics_industry": 10,
-        "human_health": 11,
-        "row_crops": 5,
-        "biomanufacturing_industry": 2,
-        "diagnostics_industry": 3,
-        "specialty_chem": 2,
-        "biodiversity": 1,
-        "veterinary": 4,
-        "animal_protein": 2
-      },
-      "countries": {
-        "Uruguay": 2,
-        "Argentina": 11,
-        "PR": 1,
-        "Chile": 2,
-        "Brazil": 2,
-        "Colombia": 1
-      },
-      "n_funded": 13,
-      "n_featured": 0
-    },
-    {
       "cluster_id": 18,
       "label": "Bioinputs & Crop Resilience — Pest",
       "keywords": "pest · biocontrol · biologicals · crop",
-      "size": 13,
+      "size": 14,
       "bio_themes": {
-        "Bioinputs & Crop Resilience": 13
+        "Bioinputs & Crop Resilience": 14
       },
       "tech_codes": {
-        "ag_inputs": 8,
-        "biomanufacturing": 1,
+        "ag_inputs": 9,
+        "biomanufacturing": 2,
         "fermentation": 1,
         "microbial": 2,
         "iot": 1,
-        "ai_ml": 3,
+        "ai_ml": 4,
         "nanotech": 1
       },
       "industry_codes": {
         "soil_health": 1,
-        "row_crops": 6,
-        "biomanufacturing_industry": 1,
+        "row_crops": 7,
+        "biomanufacturing_industry": 2,
         "specialty_chem": 1,
+        "human_health": 1,
         "carbon": 1
       },
       "countries": {
         "Brazil": 12,
-        "Mexico": 1
+        "Mexico": 1,
+        "Chile": 1
       },
-      "n_funded": 6,
+      "n_funded": 7,
       "n_featured": 0
+    },
+    {
+      "cluster_id": 5,
+      "label": "Biomanufacturing & Fermentation Economy — Precision Fermentation",
+      "keywords": "bioindustrial · precision fermentation · enzymes · platforms",
+      "size": 13,
+      "bio_themes": {
+        "Biomanufacturing & Fermentation Economy": 13
+      },
+      "tech_codes": {
+        "biomanufacturing": 10,
+        "ai_ml": 11,
+        "enzymatic": 4,
+        "fermentation": 4,
+        "synbio": 4,
+        "ag_inputs": 2,
+        "therapeutics": 4,
+        "bioinformatics": 2,
+        "diagnostics": 3,
+        "iot": 2,
+        "microbial": 2,
+        "computational_bio": 1,
+        "nanotech": 1,
+        "formulation": 1
+      },
+      "industry_codes": {
+        "food_ingredients": 3,
+        "row_crops": 8,
+        "biomanufacturing_industry": 8,
+        "carbon": 3,
+        "specialty_chem": 8,
+        "therapeutics_industry": 5,
+        "veterinary": 1,
+        "human_health": 6,
+        "diagnostics_industry": 2,
+        "personal_care": 2,
+        "biodiversity": 1
+      },
+      "countries": {
+        "Brazil": 4,
+        "Argentina": 8,
+        "USA": 1
+      },
+      "n_funded": 11,
+      "n_featured": 2
     },
     {
       "cluster_id": 19,
@@ -31917,46 +31978,6 @@ window.STARTUP_THEMES_DATA = {
         "Brazil": 2
       },
       "n_funded": 8,
-      "n_featured": 1
-    },
-    {
-      "cluster_id": 5,
-      "label": "Biomanufacturing & Fermentation Economy — Precision Fermentation",
-      "keywords": "bioindustrial · precision fermentation · enzymes · platforms",
-      "size": 8,
-      "bio_themes": {
-        "Biomanufacturing & Fermentation Economy": 8
-      },
-      "tech_codes": {
-        "biomanufacturing": 6,
-        "ai_ml": 6,
-        "enzymatic": 3,
-        "fermentation": 4,
-        "synbio": 2,
-        "diagnostics": 2,
-        "iot": 2,
-        "ag_inputs": 1,
-        "microbial": 1,
-        "therapeutics": 1,
-        "computational_bio": 1,
-        "bioinformatics": 1
-      },
-      "industry_codes": {
-        "food_ingredients": 3,
-        "row_crops": 5,
-        "biomanufacturing_industry": 5,
-        "carbon": 1,
-        "specialty_chem": 5,
-        "diagnostics_industry": 1,
-        "human_health": 2,
-        "personal_care": 2,
-        "therapeutics_industry": 1
-      },
-      "countries": {
-        "Brazil": 4,
-        "Argentina": 4
-      },
-      "n_funded": 6,
       "n_featured": 1
     },
     {
