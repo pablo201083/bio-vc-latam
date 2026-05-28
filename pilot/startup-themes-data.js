@@ -1,5 +1,5 @@
 window.STARTUP_THEMES_DATA = {
-  "computed_at": "2026-05-27T23:20:35",
+  "computed_at": "2026-05-27T23:24:40",
   "model": "intfloat/multilingual-e5-small",
   "stats": {
     "total_startups": 487,
@@ -29,7 +29,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "diagnostics and medtech",
       "emergent_theme": "health diagnostics and medtech",
       "summary": "Medtech company specialized in infusion systems, pumps and integrated clinical solutions for hospitals and critical therapies. It remains inside as clinical medtech, although not as biotech.",
-      "one_liner": "Advanced infusion systems and hospital medtech.",
+      "one_liner": "Manufactures infusion pumps (Chroma Series), IV therapy consumables, and integrated clinical solutions for ICU, oncology, neonatal, anesthesia, and MRI-compatible settings. Acquired by CODAN medical technology group.",
       "cluster_id": 0,
       "cluster_label": "Diagnostics & Health Access — Diagnostics",
       "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
@@ -76,6 +76,7 @@ window.STARTUP_THEMES_DATA = {
       ],
       "market_label": "advanced infusion systems and hospital medtech",
       "self_cats": [
+        "Therapeutics",
         "MedTech",
         "Biotech"
       ],
@@ -1339,7 +1340,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "diagnostics and medtech",
       "emergent_theme": "health diagnostics and medtech",
       "summary": "Startup that develops diagnostic tools based on microbiota. Microbiota-based diagnostics. Technology: microbiome diagnostics; gut health testing. Sector: healthcare diagnostics.",
-      "one_liner": "Microbiota-based diagnostics.",
+      "one_liner": "Develops microbiota-based diagnostic tools that analyze gut microbial composition to enable earlier detection and monitoring of gastrointestinal and systemic health conditions.",
       "cluster_id": 0,
       "cluster_label": "Diagnostics & Health Access — Diagnostics",
       "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
@@ -7863,7 +7864,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "biobased chemistry and advanced materials",
       "emergent_theme": "biobased chemistry and materials",
       "summary": "Materials discovery startup that uses advanced physics and molecular modeling to accelerate R&D in chemistry, energy, semiconductors and biotech with a focus on more sustainable materials.",
-      "one_liner": "Advanced-physics materials discovery platform.",
+      "one_liner": "Develops the Caldera Engine, an AI + NESCGLE physics-based molecular modeling platform that accelerates materials discovery for electrolytes, alloys, semiconductors, and protein aggregation prediction. Chilean company with US operations.",
       "cluster_id": 2,
       "cluster_label": "Biomaterials & Circular Economy — Biobased Chemistry",
       "cluster_keywords": "materials · biobased chemistry · recovery · energy",
@@ -9935,7 +9936,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "climate, energy and resource systems",
       "emergent_theme": "regenerative agroforestry and carbon systems",
       "summary": "Regenerative climate-tech that converts wet agricultural waste into clean thermal energy and biochar, returning carbon to the soil. Enter the thesis for climate, energy and resource systems.",
-      "one_liner": "Residue-to-energy and biochar platform.",
+      "one_liner": "Converts wet agricultural residues into high-energy syngas for process heat and power generation and biochar for soil carbon sequestration and amendment, using gasification technology. Based in Costa Rica.",
       "cluster_id": 4,
       "cluster_label": "Nature & Ecosystem Tech — Energy",
       "cluster_keywords": "energy · planetary · carbon · circular",
@@ -9992,8 +9993,7 @@ window.STARTUP_THEMES_DATA = {
       ],
       "market_label": "residue-to-energy and biochar platform",
       "self_cats": [
-        "AgTech",
-        "Biotech"
+        "AgTech"
       ],
       "investor_ids": [
         "Antom"
@@ -11577,7 +11577,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "food biotech and novel ingredients",
       "emergent_theme": "food transition ingredients and proteins",
       "summary": "Plant cell biotechnology company that develops new generation ingredients, recombinant proteins and breeding tools from plant cells. Enter the thesis for food biotech and novel ingredients.",
-      "one_liner": "Plant cell biotechnology ingredients platform.",
+      "one_liner": "Uses the proprietary EUKARYA® platform — combining gene editing, AI, multi-omics, and automation — to engineer plant cell lines producing metabolites, recombinant animal proteins, and breeding tools for food, care, pharma, and agriculture.",
       "cluster_id": 6,
       "cluster_label": "Food Systems & Alt Proteins — Novel Ingredients",
       "cluster_keywords": "novel ingredients · functional · shelf · metabolic",
@@ -11634,8 +11634,8 @@ window.STARTUP_THEMES_DATA = {
       "market_label": "plant cell biotechnology ingredients platform",
       "self_cats": [
         "Precision Ferm",
-        "FoodTech",
-        "Biotech"
+        "AgTech",
+        "FoodTech"
       ],
       "investor_ids": [
         "AIR Capital"
@@ -12997,7 +12997,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "therapeutic and regenerative biology",
       "summary": "Therapeutic biotech with operations in Uruguay and Argentina that develops oncological immunotherapy targeting TMEM176A/B. Enter for drug discovery and immuno-oncology.",
-      "one_liner": "Targeted cancer immunotherapy platform.",
+      "one_liner": "Develops first-in-class small-molecule modulators of TMEM176A/B transmembrane cation channels to rewire innate and adaptive anti-tumor immunity, targeting a novel oncology biomarker of cancer-treatment resistance. Delaware HQ with operations in Uruguay and Argentina.",
       "cluster_id": 7,
       "cluster_label": "Therapeutics — Biopharmaceutical",
       "cluster_keywords": "biopharmaceutical · organ · therapeutic · medicine",
@@ -13049,6 +13049,7 @@ window.STARTUP_THEMES_DATA = {
       "market_label": "targeted cancer immunotherapy platform",
       "self_cats": [
         "Therapeutics",
+        "Diagnostics",
         "Biotech"
       ],
       "investor_ids": [
@@ -22237,7 +22238,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "therapeutic and regenerative biology",
       "summary": "Biotech startup that uses bacterial vesicles to improve precise delivery in digestive health. Enter the thesis for therapeutics and regenerative medicine.",
-      "one_liner": "Bacterial vesicles for digestive health delivery.",
+      "one_liner": "Develops bacterial outer membrane vesicles as a targeted delivery platform for digestive health therapeutics, using microorganism-derived nanocarriers for precise bioactive payload delivery to the gastrointestinal tract.",
       "cluster_id": 17,
       "cluster_label": "Therapeutics — Therapeutics Regenerative",
       "cluster_keywords": "therapeutics regenerative · tissue · medicine · extracellular",
@@ -22646,7 +22647,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "therapeutic and regenerative biology",
       "summary": "Startup therapeutics that uses AI and computationally discovered sugars to improve the effectiveness of biological treatments. Enter the thesis for therapeutics and regenerative medicine.",
-      "one_liner": "AI-discovered sugars for better therapeutics.",
+      "one_liner": "Uses AI to discover novel glycans and carbohydrate structures that enhance drug efficacy — claiming 20× performance improvements — by optimizing the sugar component of biologics and small-molecule therapeutics.",
       "cluster_id": 17,
       "cluster_label": "Therapeutics — Therapeutics Regenerative",
       "cluster_keywords": "therapeutics regenerative · tissue · medicine · extracellular",
