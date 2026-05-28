@@ -1,5 +1,5 @@
 window.STARTUP_THEMES_DATA = {
-  "computed_at": "2026-05-27T23:24:40",
+  "computed_at": "2026-05-27T23:27:45",
   "model": "intfloat/multilingual-e5-small",
   "stats": {
     "total_startups": 487,
@@ -297,7 +297,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "computational biology and scientific software",
       "emergent_theme": "computational biology and life-science software",
       "summary": "Genomics and bioinformatics company that offers clinical analyses, gene panels, exome/genome and its own platform for data interpretation. Enter the thesis for computational biology and scientific software.",
-      "one_liner": "Genomics and bioinformatics platform.",
+      "one_liner": "Provides clinical genomic services via the proprietary _B Platform — including DNA health/nutrition/sports tests, gene panels, pharmacogenomics, and whole-genome sequencing — for hospitals, clinics, and pharma companies in Argentina.",
       "cluster_id": 0,
       "cluster_label": "Diagnostics & Health Access — Diagnostics",
       "cluster_keywords": "diagnostics · laboratory · diagnosis · portable",
@@ -5539,7 +5539,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "ag biologicals and crop resilience",
       "emergent_theme": "ag biologicals and animal resilience",
       "summary": "Animal biotech startup that develops oral vaccines for fish to reduce operational stress and avoid antibiotics in aquaculture. Enter the thesis for ag biologicals and crop resilience.",
-      "one_liner": "Oral vaccine platform for aquaculture.",
+      "one_liner": "Develops oral feed-based vaccines for fish aquaculture that eliminate stressful injection handling, reducing animal stress while protecting against pathogens in salmon, trout, and other species farmed in Argentina and Patagonia.",
       "cluster_id": 1,
       "cluster_label": "Food Systems & Alt Proteins — Fish",
       "cluster_keywords": "fish · aquaculture · antibiotics · meat",
@@ -7154,7 +7154,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "biobased chemistry and advanced materials",
       "emergent_theme": "circular material systems",
       "summary": "Climate-bio startup that develops high-performance bioplastics using engineered bacteria, precision fermentation and cheap or residual feedstocks. Enter the thesis for circular material systems.",
-      "one_liner": "Bioplastics production technology company.",
+      "one_liner": "Engineers E. coli and Halomonas bacteria to intracellularly produce PLA and PHB bioplastics from agro-industrial waste sugars using AI-guided precision fermentation. Scaling from UNAM labs in Cuernavaca, Mexico with Argentina operations.",
       "cluster_id": 2,
       "cluster_label": "Biomaterials & Circular Economy — Biobased Chemistry",
       "cluster_keywords": "materials · biobased chemistry · recovery · energy",
@@ -7220,8 +7220,7 @@ window.STARTUP_THEMES_DATA = {
       "market_label": "bioplastics production technology company",
       "self_cats": [
         "Precision Ferm",
-        "Biomaterials",
-        "Biotech"
+        "Biomaterials"
       ],
       "investor_ids": [
         "GridX"
@@ -8165,7 +8164,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "biobased chemistry and advanced materials",
       "emergent_theme": "circular material systems",
       "summary": "Biomaterials and biobased chemistry startup that develops traceable and validated bio-based pigments for real textile processes. Enter the thesis for biobased chemistry and advanced materials.",
-      "one_liner": "Bio-based colors for textile processes.",
+      "one_liner": "Produces bio-based dyes for the fashion and textile industry derived from extremophile bacteria, offering traceable, certified colorants compatible with existing dyeing processes as a sustainable alternative to hazardous synthetic chemistry.",
       "cluster_id": 2,
       "cluster_label": "Biomaterials & Circular Economy — Biobased Chemistry",
       "cluster_keywords": "materials · biobased chemistry · recovery · energy",
@@ -11155,7 +11154,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "food biotech and novel ingredients",
       "emergent_theme": "microalgae functional ingredients",
       "summary": "Biobased startup that produces natural astaxanthin from microalgae for aquaculture, nutraceuticals, functional foods and cosmetics. Enter the thesis for food biotech and novel ingredients.",
-      "one_liner": "Microalgae functional ingredients company.",
+      "one_liner": "Produces natural astaxanthin from Haematococcus pluvialis microalgae for aquaculture pigmentation (salmon, trout, shrimp) and nutraceutical/cosmetic applications, replacing synthetic petroleum-derived astaxanthin. Based in Buenos Aires.",
       "cluster_id": 6,
       "cluster_label": "Food Systems & Alt Proteins — Novel Ingredients",
       "cluster_keywords": "novel ingredients · functional · shelf · metabolic",
@@ -19014,7 +19013,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "biobased chemistry and advanced materials",
       "emergent_theme": "biobased chemistry and materials",
       "summary": "Uruguayan biotechnology-driven skincare company developing 100 percent natural personal-care products designed to support skin health and microbiome diversity without synthetic preservatives or chemicals. Its scientific process studies natural raw materials and their effects on the skin microbiome. It belongs inside BIO VC LATAM as a biobased personal-care and microbiome-positive formulation company, though more peripheral than core therapeutics or industrial biotech.",
-      "one_liner": "Natural microbiome-positive skincare.",
+      "one_liner": "Uruguayan biotech-driven skincare company developing 100% natural personal-care products formulated with biotechnology-derived actives to support skin health and microbiome diversity in the dermis.",
       "cluster_id": 15,
       "cluster_label": "Diagnostics & Health Access — Diagnostics",
       "cluster_keywords": "diagnostics · device · medtech · nanomedicine",
@@ -23340,7 +23339,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "therapeutic and regenerative biology",
       "summary": "Nanobiotech startup that develops non-viral genetic delivery systems for gene therapies and editing, based on metal oxide nanoparticles. Non-viral gene delivery platform. Technology: metal-oxide nanoparticles; non-viral gene delivery. Sector: gene therapy and genetic disease.",
-      "one_liner": "Non-viral gene delivery platform.",
+      "one_liner": "Develops non-viral genetic delivery systems based on metal oxide nanoparticles for gene therapy and gene editing, providing an alternative to viral vectors for therapeutic and research genetic delivery applications. Based in Argentina.",
       "cluster_id": 17,
       "cluster_label": "Therapeutics — Therapeutics Regenerative",
       "cluster_keywords": "therapeutics regenerative · tissue · medicine · extracellular",
@@ -25738,7 +25737,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "biomanufacturing and bioindustrial platforms",
       "emergent_theme": "microalgae bioprocess platforms",
       "summary": "GridX portfolio company building a platform to optimize productive processes based on microalgae. It belongs inside BIO VC LATAM as microalgae bioprocessing and bioindustrial infrastructure.",
-      "one_liner": "Produces natural astaxanthin from Haematococcus pluvialis microalgae for aquaculture pigmentation (salmon, trout, shrimp) and nutraceutical/cosmetic applications, replacing synthetic petroleum-derived astaxanthin. Based in Buenos Aires.",
+      "one_liner": "Develops a technology platform for optimizing industrial microalgae cultivation and production processes, targeting productivity and efficiency improvements in biobased manufacturing.",
       "cluster_id": 20,
       "cluster_label": "Bioinputs & Crop Resilience — Biologicals",
       "cluster_keywords": "biologicals · function · microbiome · concise",
@@ -25788,7 +25787,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "market_label": "microalgae process optimization platform",
       "self_cats": [
-        "Biomanufacturing"
+        "Biomanufacturing",
+        "Biotech"
       ],
       "investor_ids": [
         "GridX"
@@ -27349,7 +27349,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "precision agriculture and resource intelligence",
       "emergent_theme": "precision agriculture intelligence",
       "summary": "Agtech platform to integrate, standardize and analyze agronomic data at scale in research, market development and production. Enter the thesis for precision agriculture and resource intelligence.",
-      "one_liner": "Agronomic data intelligence platform.",
+      "one_liner": "Agronomic trial data platform that standardizes, automates, and analyzes field experiment data for seed companies and agronomists, processing over 1 million trial plots annually across Argentina, Brazil, and North America.",
       "cluster_id": 21,
       "cluster_label": "Farm Intelligence — Agronomic",
       "cluster_keywords": "agronomic · fresh · imagery · agtech",
@@ -27398,7 +27398,8 @@ window.STARTUP_THEMES_DATA = {
       "market_label": "agronomic data intelligence platform",
       "self_cats": [
         "Precision Ag",
-        "AgTech"
+        "AgTech",
+        "SaaS / Platform"
       ],
       "investor_ids": [
         "inventure",
@@ -28854,7 +28855,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "precision agriculture and resource intelligence",
       "emergent_theme": "autonomous agriculture and resource-efficient farming",
       "summary": "Brazil-founded agtech and global AI/SaaS platform for agribusiness, managing real-time agricultural operations and supporting more efficient, lower-impact food production. It belongs inside BIO VC LATAM as enabling precision-agriculture and resource-efficiency infrastructure.",
-      "one_liner": "AI and autonomous agriculture platform.",
+      "one_liner": "Brazilian agtech company offering a global AI/SaaS platform for real-time agricultural operations management and decision support, serving large-scale crop producers to improve efficiency and reduce environmental impact.",
       "cluster_id": 21,
       "cluster_label": "Farm Intelligence — Agronomic",
       "cluster_keywords": "agronomic · fresh · imagery · agtech",
@@ -28902,9 +28903,9 @@ window.STARTUP_THEMES_DATA = {
       ],
       "market_label": "AI and autonomous agriculture platform",
       "self_cats": [
+        "Precision Ag",
         "AgTech",
-        "SaaS / Platform",
-        "Hardware / IoT"
+        "SaaS / Platform"
       ],
       "investor_ids": [
         "lightsmith_group"
