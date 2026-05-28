@@ -1,5 +1,5 @@
 window.STARTUP_THEMES_DATA = {
-  "computed_at": "2026-05-27T23:27:45",
+  "computed_at": "2026-05-27T23:30:15",
   "model": "intfloat/multilingual-e5-small",
   "stats": {
     "total_startups": 487,
@@ -14501,7 +14501,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "ag biologicals and crop resilience",
       "emergent_theme": "ag biologicals and crop resilience",
       "summary": "Caligenia is an Argentine ag-biotech company developing BACTERCHAR, a soil-regeneration and carbon-storage amendment made by combining ancestral biochar-like soil practices with biotechnology and agriculturally relevant microorganisms. Its product transforms organic waste into a stable-carbon soil input that improves physical-chemical soil properties and microbial activity. It belongs inside BIO VC LATAM as carbon-negative biofertility, soil restoration and regenerative-agriculture infrastructure.",
-      "one_liner": "BACTERCHAR soil-regeneration and carbon-storage amendment.",
+      "one_liner": "Develops BACTERCHAR, an organic soil amendment that combines biochar with plant-growth-promoting microorganisms (PGPMs) for nitrogen fixation, nutrient solubilization, and long-term carbon sequestration in degraded soils, optimized by an AI soil-matching platform.",
       "cluster_id": 9,
       "cluster_label": "Bioinputs & Crop Resilience — Seed Treatment",
       "cluster_keywords": "seed treatment · soil · biologicals · argentine",
@@ -14994,7 +14994,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "ag biologicals and crop resilience",
       "emergent_theme": "extremophile microbial ag inputs",
       "summary": "SoyGREEN is an Argentine agricultural-microbiology startup developing biological solutions to mitigate climate change and transform farming. Its official site describes a UNRC and CONICET-UNRC scientific team validating its first bioinput, focused on reducing greenhouse-gas emissions, substituting chemical fertilizers and applying microbiological technologies to agriculture. It belongs inside BIO VC LATAM as ag biologicals and climate-mitigation bioinputs.",
-      "one_liner": "Agricultural microbiology bioinputs for climate mitigation.",
+      "one_liner": "CONICET-UNRC spinout developing microbiology-based bioinputs to reduce greenhouse gas emissions from agriculture and substitute chemical fertilizers, with a first bioproduct under field validation. Río Cuarto, Córdoba, Argentina.",
       "cluster_id": 9,
       "cluster_label": "Bioinputs & Crop Resilience — Seed Treatment",
       "cluster_keywords": "seed treatment · soil · biologicals · argentine",
@@ -15063,7 +15063,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "ag biologicals and crop resilience",
       "emergent_theme": "non-thermal plasma seed treatment",
       "summary": "Sylvarum is an Argentine agtech using non-thermal plasma and plant electro-hacking to improve seed quality, germination, vigor, pathogen control and yield without genetic modification or chemical residue. The technology is a physical-biological seed treatment that stimulates natural plant potential and reduces pesticide dependence. It should cluster with crop resilience, seed treatment, plant physiology and agricultural biologicals, not with climate monitoring.",
-      "one_liner": "Non-thermal plasma seed-performance platform.",
+      "one_liner": "Applies non-thermal plasma (controlled dry electrical discharges) to seeds to stimulate germination without chemicals or GMOs, accelerating emergence, reducing fungal pathogens including Diaporthe/Phomopsis, and lowering plant oxidative stress. Buenos Aires, Argentina.",
       "cluster_id": 9,
       "cluster_label": "Bioinputs & Crop Resilience — Seed Treatment",
       "cluster_keywords": "seed treatment · soil · biologicals · argentine",
@@ -25077,7 +25077,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "food biotech and novel ingredients",
       "emergent_theme": "precision-fermented dairy proteins",
       "summary": "Future Cow is a Brazilian food-biotech company producing animal-free dairy proteins through precision fermentation. Its platform uses DNA coding in microbial hosts to produce milk proteins without cows, enabling dairy ingredients with lower animal dependence and potential emissions benefits. It belongs inside BIO VC LATAM as a core food-biotech and alternative-protein company, specifically precision-fermented dairy biofactories.",
-      "one_liner": "Precision-fermented animal-free dairy protein.",
+      "one_liner": "Produces animal-free casein and whey dairy proteins via precision fermentation by inserting cow protein genes into microorganisms, delivering dried powder ingredients for ice cream, cheese, and dairy applications. São Paulo, Brazil.",
       "cluster_id": 19,
       "cluster_label": "Food Systems & Alt Proteins — Precision Fermentation",
       "cluster_keywords": "dairy · diagnostics · brazilian · precision fermentation",
@@ -25445,7 +25445,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "climate, energy and resource systems",
       "emergent_theme": "cold-chain and food-quality monitoring",
       "summary": "Brazilian IoT monitoring company providing real-time temperature and humidity control for health products, medicines, blood derivatives, laboratory materials and clinical environments. Its sensors, alerts and audit reports reduce product loss and protect regulated cold-chain quality. It belongs inside BIO VC LATAM as health and biological-product infrastructure, but remains an edge case because the core technology is IoT rather than biology.",
-      "one_liner": "IoT monitoring for health-product cold-chain quality.",
+      "one_liner": "Provides automated IoT temperature and asset monitoring systems (Nexxto Sense, Move, Trace, Ativis) for vaccines, oncological drugs, blood components, and clinical trial materials, serving major hospital networks across Brazil from São Paulo.",
       "cluster_id": 19,
       "cluster_label": "Food Systems & Alt Proteins — Precision Fermentation",
       "cluster_keywords": "dairy · diagnostics · brazilian · precision fermentation",
@@ -25500,6 +25500,7 @@ window.STARTUP_THEMES_DATA = {
       ],
       "market_label": "IoT monitoring for cold-chain and product-quality control",
       "self_cats": [
+        "Therapeutics",
         "Hardware / IoT"
       ],
       "investor_ids": [
@@ -25658,7 +25659,7 @@ window.STARTUP_THEMES_DATA = {
       "macro_theme": "food biotech and novel ingredients",
       "emergent_theme": "food transition ingredients and proteins",
       "summary": "Updairy is a Brazilian food-biotech company producing real dairy proteins without cows through precision fermentation. Its process uses microorganisms, including engineered fungi in bioreactors, to express dairy proteins that can be used as ingredients in dairy, bakery, confectionery, beverages and supplements. It belongs inside BIO VC LATAM as alternative-protein and acellular-agriculture infrastructure for lower-impact dairy ingredients.",
-      "one_liner": "Animal-free dairy proteins through precision fermentation.",
+      "one_liner": "Produces animal-free dairy proteins by expressing cow protein genes in fungi through bioreactor precision fermentation, delivering versatile dairy, bakery, beverage, and supplement ingredients. Brazilian company with UNICAMP partnership.",
       "cluster_id": 19,
       "cluster_label": "Food Systems & Alt Proteins — Precision Fermentation",
       "cluster_keywords": "dairy · diagnostics · brazilian · precision fermentation",
