@@ -1,5 +1,5 @@
 window.STARTUP_THEMES_DATA = {
-  "computed_at": "2026-05-28T10:47:07",
+  "computed_at": "2026-05-28T20:06:17",
   "model": "intfloat/multilingual-e5-small",
   "stats": {
     "total_startups": 487,
@@ -25163,7 +25163,7 @@ window.STARTUP_THEMES_DATA = {
       "pagerank": 0.0009548076656120609,
       "valuation_tier": null,
       "n_investors_mapped": 0,
-      "bio_theme": "Food Systems & Alt Proteins",
+      "bio_theme": "Biomanufacturing & Platform Technologies",
       "bio_theme_secondary": "Food Systems & Alt Proteins",
       "is_bio_universe": 1,
       "sub_cluster_label": "",
@@ -25530,7 +25530,7 @@ window.STARTUP_THEMES_DATA = {
       "pagerank": 0.0009788297083053149,
       "valuation_tier": null,
       "n_investors_mapped": 1,
-      "bio_theme": "Food Systems & Alt Proteins",
+      "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
       "sub_cluster_label": "",
@@ -31800,9 +31800,9 @@ window.STARTUP_THEMES_DATA = {
       "size": 11,
       "bio_themes": {
         "Biomaterials & Circular Economy": 1,
-        "Biomanufacturing & Platform Technologies": 1,
-        "Food Systems & Alt Proteins": 7,
-        "Bioinputs & Crop Resilience": 1,
+        "Biomanufacturing & Platform Technologies": 2,
+        "Food Systems & Alt Proteins": 5,
+        "Bioinputs & Crop Resilience": 2,
         "Diagnostics & Health Access": 1
       },
       "tech_codes": {
