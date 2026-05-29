@@ -1,5 +1,5 @@
 window.STARTUP_THEMES_DATA = {
-  "computed_at": "2026-05-28T21:24:11",
+  "computed_at": "2026-05-28T21:31:54",
   "model": "intfloat/multilingual-e5-small",
   "stats": {
     "total_startups": 487,
@@ -70,7 +70,9 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\", \"therapeutics-regenerative\"]"
+        "diagnostics-medtech",
+        "human-health",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "ai-data",
@@ -87,6 +89,8 @@ window.STARTUP_THEMES_DATA = {
         "Diagnostics",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.776,
       "investor_ids": [
         "AIR Capital",
         "GridX"
@@ -139,7 +143,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "diagnostics"
@@ -153,6 +158,8 @@ window.STARTUP_THEMES_DATA = {
         "MedTech",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.68,
       "investor_ids": []
     },
     {
@@ -206,7 +213,9 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\", \"therapeutics-regenerative\"]"
+        "diagnostics-medtech",
+        "human-health",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "ai-data",
@@ -223,6 +232,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Diagnostics"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.848,
       "investor_ids": [
         "AIR Capital",
         "DraperCygnus",
@@ -280,7 +291,9 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\", \"therapeutics-regenerative\"]"
+        "diagnostics-medtech",
+        "human-health",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "ai-data",
@@ -295,6 +308,8 @@ window.STARTUP_THEMES_DATA = {
         "Therapeutics",
         "Diagnostics"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.796,
       "investor_ids": [
         "endurance_28",
         "zentynel"
@@ -348,7 +363,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"human-health\", \"therapeutics-regenerative\"]"
+        "human-health",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "ai-data",
@@ -359,6 +375,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.672,
       "investor_ids": [
         "CITES"
       ]
@@ -411,7 +429,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "diagnostics"
@@ -421,6 +440,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Diagnostics"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.672,
       "investor_ids": []
     },
     {
@@ -472,7 +493,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"human-health\", \"therapeutics-regenerative\"]"
+        "human-health",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "ai-data",
@@ -487,6 +509,8 @@ window.STARTUP_THEMES_DATA = {
         "Diagnostics",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.712,
       "investor_ids": [
         "GridX"
       ]
@@ -540,7 +564,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "diagnostics",
@@ -553,6 +578,8 @@ window.STARTUP_THEMES_DATA = {
         "HealthTech",
         "Hardware / IoT"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.692,
       "investor_ids": []
     },
     {
@@ -603,7 +630,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "ai-data",
@@ -618,6 +646,8 @@ window.STARTUP_THEMES_DATA = {
         "Diagnostics",
         "MedTech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.692,
       "investor_ids": [
         "The Ganesha Lab"
       ]
@@ -665,7 +695,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.41,
       "bio_lens": [],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [],
       "scale_tags": [],
@@ -673,6 +704,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "MedTech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.55,
       "investor_ids": []
     },
     {
@@ -724,7 +757,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "diagnostics",
@@ -735,6 +769,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Diagnostics"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.784,
       "investor_ids": []
     },
     {
@@ -786,7 +822,9 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"diagnostics-medtech\", \"human-health\"]"
+        "agri-food",
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "ai-data",
@@ -802,6 +840,8 @@ window.STARTUP_THEMES_DATA = {
         "Diagnostics",
         "MedTech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.74,
       "investor_ids": [
         "DragonesVP",
         "GridX"
@@ -855,7 +895,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "diagnostics"
@@ -865,6 +906,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Diagnostics"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.716,
       "investor_ids": [
         "GridX"
       ]
@@ -917,7 +960,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "diagnostics"
@@ -927,6 +971,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Diagnostics"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.692,
       "investor_ids": []
     },
     {
@@ -972,7 +1018,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -7.433,
       "bio_lens": [],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [],
       "scale_tags": [],
@@ -982,6 +1029,8 @@ window.STARTUP_THEMES_DATA = {
         "Diagnostics",
         "AI / Data"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.624,
       "investor_ids": []
     },
     {
@@ -1031,7 +1080,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "diagnostics"
@@ -1044,6 +1094,8 @@ window.STARTUP_THEMES_DATA = {
         "Diagnostics",
         "MedTech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.672,
       "investor_ids": []
     },
     {
@@ -1094,7 +1146,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "diagnostics"
@@ -1104,6 +1157,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Diagnostics"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.704,
       "investor_ids": []
     },
     {
@@ -1154,7 +1209,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "diagnostics"
@@ -1162,6 +1218,8 @@ window.STARTUP_THEMES_DATA = {
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.68,
       "investor_ids": []
     },
     {
@@ -1207,7 +1265,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.913,
       "bio_lens": [],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [],
       "scale_tags": [],
@@ -1215,6 +1274,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Diagnostics"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.532,
       "investor_ids": []
     },
     {
@@ -1266,7 +1327,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "diagnostics",
@@ -1277,6 +1339,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "AI / Data"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.68,
       "investor_ids": []
     },
     {
@@ -1327,7 +1391,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "diagnostics"
@@ -1338,6 +1403,8 @@ window.STARTUP_THEMES_DATA = {
         "Therapeutics",
         "Diagnostics"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.704,
       "investor_ids": []
     },
     {
@@ -1388,7 +1455,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "diagnostics"
@@ -1398,6 +1466,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Diagnostics"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.692,
       "investor_ids": []
     },
     {
@@ -1448,7 +1518,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "diagnostics"
@@ -1458,6 +1529,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Diagnostics"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.704,
       "investor_ids": []
     },
     {
@@ -1508,7 +1581,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "diagnostics"
@@ -1521,6 +1595,8 @@ window.STARTUP_THEMES_DATA = {
         "Diagnostics",
         "MedTech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.752,
       "investor_ids": [
         "GridX"
       ]
@@ -1572,7 +1648,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "diagnostics"
@@ -1584,6 +1661,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Diagnostics"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.704,
       "investor_ids": [
         "GridX"
       ]
@@ -1631,12 +1710,15 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.974,
       "bio_lens": [],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.55,
       "investor_ids": []
     },
     {
@@ -1687,7 +1769,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "diagnostics"
@@ -1697,6 +1780,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Diagnostics"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.704,
       "investor_ids": []
     },
     {
@@ -1748,7 +1833,8 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "ai-data",
@@ -1764,6 +1850,8 @@ window.STARTUP_THEMES_DATA = {
         "MedTech",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.692,
       "investor_ids": [
         "SF500"
       ]
@@ -1811,7 +1899,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -12.985,
       "bio_lens": [],
       "domain_tags": [
-        "[\"therapeutics-regenerative\", \"human-health\"]"
+        "therapeutics-regenerative",
+        "human-health"
       ],
       "tech_tags": [],
       "scale_tags": [],
@@ -1819,6 +1908,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Diagnostics"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.62,
       "investor_ids": []
     },
     {
@@ -1864,7 +1955,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.947,
       "bio_lens": [],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [],
       "scale_tags": [],
@@ -1873,6 +1965,8 @@ window.STARTUP_THEMES_DATA = {
         "Therapeutics",
         "Diagnostics"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.526,
       "investor_ids": []
     },
     {
@@ -1924,7 +2018,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "diagnostics",
@@ -1935,6 +2030,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Diagnostics"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.772,
       "investor_ids": [
         "valor_capital_group"
       ]
@@ -1990,7 +2087,9 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"diagnostics-medtech\", \"human-health\"]"
+        "agri-food",
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "ai-data",
@@ -2006,6 +2105,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Diagnostics"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.788,
       "investor_ids": [
         "sp_ventures"
       ]
@@ -2059,7 +2160,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "diagnostics",
@@ -2072,6 +2174,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Diagnostics"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.752,
       "investor_ids": [
         "GridX"
       ]
@@ -2125,7 +2229,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "diagnostics",
@@ -2134,6 +2239,8 @@ window.STARTUP_THEMES_DATA = {
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.68,
       "investor_ids": []
     },
     {
@@ -2184,7 +2291,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "diagnostics"
@@ -2194,6 +2302,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Diagnostics"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.692,
       "investor_ids": [
         "cdpq"
       ]
@@ -2247,7 +2357,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "diagnostics",
@@ -2259,6 +2370,8 @@ window.STARTUP_THEMES_DATA = {
         "Therapeutics",
         "Diagnostics"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.796,
       "investor_ids": []
     },
     {
@@ -2304,7 +2417,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.853,
       "bio_lens": [],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [],
       "scale_tags": [],
@@ -2314,6 +2428,8 @@ window.STARTUP_THEMES_DATA = {
         "AI / Data",
         "SaaS / Platform"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.562,
       "investor_ids": [
         "eb_capital",
         "vox_capital"
@@ -2368,7 +2484,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "diagnostics",
@@ -2380,6 +2497,8 @@ window.STARTUP_THEMES_DATA = {
         "AI / Data",
         "HealthTech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.68,
       "investor_ids": []
     },
     {
@@ -2431,7 +2550,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "diagnostics",
@@ -2442,6 +2562,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Diagnostics"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.68,
       "investor_ids": []
     },
     {
@@ -2492,7 +2614,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "diagnostics"
@@ -2503,6 +2626,8 @@ window.STARTUP_THEMES_DATA = {
         "Diagnostics",
         "HealthTech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.68,
       "investor_ids": []
     },
     {
@@ -2548,7 +2673,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.523,
       "bio_lens": [],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [],
       "scale_tags": [],
@@ -2556,6 +2682,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Diagnostics"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.624,
       "investor_ids": [
         "dalus_capital"
       ]
@@ -2603,7 +2731,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.852,
       "bio_lens": [],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [],
       "scale_tags": [],
@@ -2612,6 +2741,8 @@ window.STARTUP_THEMES_DATA = {
         "MedTech",
         "Hardware / IoT"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.58,
       "investor_ids": [
         "carao_ventures"
       ]
@@ -2664,7 +2795,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "diagnostics"
@@ -2675,6 +2807,8 @@ window.STARTUP_THEMES_DATA = {
         "Diagnostics",
         "FoodTech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.704,
       "investor_ids": []
     },
     {
@@ -2726,7 +2860,9 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"diagnostics-medtech\", \"human-health\"]"
+        "agri-food",
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "diagnostics"
@@ -2741,6 +2877,8 @@ window.STARTUP_THEMES_DATA = {
         "Diagnostics",
         "MedTech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.704,
       "investor_ids": [
         "CITES",
         "SF500"
@@ -2795,7 +2933,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "diagnostics",
@@ -2807,6 +2946,8 @@ window.STARTUP_THEMES_DATA = {
         "AI / Data",
         "HealthTech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.66,
       "investor_ids": []
     },
     {
@@ -2857,7 +2998,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "diagnostics"
@@ -2867,6 +3009,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Diagnostics"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.704,
       "investor_ids": [
         "kaszek",
         "monashees"
@@ -2921,7 +3065,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "therapeutics",
@@ -2932,6 +3077,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "AI / Data"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.692,
       "investor_ids": []
     },
     {
@@ -2981,7 +3128,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "diagnostics"
@@ -2993,6 +3141,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Diagnostics"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.704,
       "investor_ids": [
         "GridX",
         "SOSV_IndieBio"
@@ -3048,7 +3198,9 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"diagnostics-medtech\", \"human-health\"]"
+        "agri-food",
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "ai-data",
@@ -3066,6 +3218,8 @@ window.STARTUP_THEMES_DATA = {
         "MedTech",
         "AI / Data"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.692,
       "investor_ids": []
     },
     {
@@ -3116,7 +3270,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "diagnostics"
@@ -3127,6 +3282,8 @@ window.STARTUP_THEMES_DATA = {
         "MedTech",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.66,
       "investor_ids": []
     },
     {
@@ -3179,7 +3336,8 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "ai-data",
@@ -3197,6 +3355,8 @@ window.STARTUP_THEMES_DATA = {
         "AI / Data",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.756,
       "investor_ids": [
         "SF500",
         "zentynel"
@@ -3249,7 +3409,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "diagnostics"
@@ -3263,6 +3424,8 @@ window.STARTUP_THEMES_DATA = {
         "Diagnostics",
         "MedTech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.692,
       "investor_ids": [
         "GridX"
       ]
@@ -3310,7 +3473,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.686,
       "bio_lens": [],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [],
       "scale_tags": [],
@@ -3318,6 +3482,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Diagnostics"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.55,
       "investor_ids": []
     },
     {
@@ -3367,7 +3533,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "diagnostics"
@@ -3381,6 +3548,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Diagnostics"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.704,
       "investor_ids": [
         "GridX"
       ]
@@ -3428,12 +3597,15 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.14,
       "bio_lens": [],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.58,
       "investor_ids": []
     },
     {
@@ -3485,7 +3657,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "diagnostics",
@@ -3497,6 +3670,8 @@ window.STARTUP_THEMES_DATA = {
         "Diagnostics",
         "AI / Data"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.692,
       "investor_ids": []
     },
     {
@@ -3547,7 +3722,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "diagnostics"
@@ -3557,6 +3733,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Diagnostics"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.704,
       "investor_ids": []
     },
     {
@@ -3610,7 +3788,9 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"climate-resource\", \"human-health\"]"
+        "agri-food",
+        "climate-resource",
+        "human-health"
       ],
       "tech_tags": [
         "iot"
@@ -3626,6 +3806,8 @@ window.STARTUP_THEMES_DATA = {
         "Therapeutics",
         "Hardware / IoT"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.592,
       "investor_ids": [
         "sp_ventures"
       ]
@@ -3678,7 +3860,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "diagnostics"
@@ -3686,6 +3869,8 @@ window.STARTUP_THEMES_DATA = {
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.692,
       "investor_ids": []
     },
     {
@@ -3737,7 +3922,8 @@ window.STARTUP_THEMES_DATA = {
         "bio-enabled-industrial-transition"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "remote-sensing",
@@ -3746,6 +3932,8 @@ window.STARTUP_THEMES_DATA = {
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.61,
       "investor_ids": []
     },
     {
@@ -3802,7 +3990,10 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"diagnostics-medtech\", \"human-health\", \"therapeutics-regenerative\"]"
+        "agri-food",
+        "diagnostics-medtech",
+        "human-health",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "ai-data",
@@ -3821,6 +4012,8 @@ window.STARTUP_THEMES_DATA = {
         "Therapeutics",
         "Diagnostics"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.868,
       "investor_ids": []
     },
     {
@@ -3870,7 +4063,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "diagnostics"
@@ -3883,6 +4077,8 @@ window.STARTUP_THEMES_DATA = {
         "Therapeutics",
         "Diagnostics"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.692,
       "investor_ids": [
         "AIR Capital",
         "SF500",
@@ -3937,7 +4133,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "diagnostics"
@@ -3947,6 +4144,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Diagnostics"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.692,
       "investor_ids": []
     },
     {
@@ -3995,7 +4194,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -14.068,
       "bio_lens": [],
       "domain_tags": [
-        "[\"therapeutics-regenerative\", \"human-health\"]"
+        "therapeutics-regenerative",
+        "human-health"
       ],
       "tech_tags": [
         "computer vision, machine learning, defect detection, pharmaceutical QC, biotech manufacturing automation"
@@ -4007,6 +4207,8 @@ window.STARTUP_THEMES_DATA = {
         "AI / Data",
         "Biotech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.562,
       "investor_ids": []
     },
     {
@@ -4058,7 +4260,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "diagnostics",
@@ -4069,6 +4272,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "AI / Data"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.68,
       "investor_ids": []
     },
     {
@@ -4119,7 +4324,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "diagnostics"
@@ -4127,6 +4333,8 @@ window.STARTUP_THEMES_DATA = {
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.68,
       "investor_ids": []
     },
     {
@@ -4180,7 +4388,9 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"diagnostics-medtech\", \"human-health\"]"
+        "agri-food",
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "ai-data",
@@ -4197,6 +4407,8 @@ window.STARTUP_THEMES_DATA = {
         "Therapeutics",
         "Diagnostics"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.764,
       "investor_ids": [
         "GridX"
       ]
@@ -4250,7 +4462,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "diagnostics",
@@ -4261,6 +4474,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "HealthTech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.68,
       "investor_ids": []
     },
     {
@@ -4306,7 +4521,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 6.112,
       "bio_lens": [],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [],
       "scale_tags": [],
@@ -4316,6 +4532,8 @@ window.STARTUP_THEMES_DATA = {
         "AgTech",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.64,
       "investor_ids": []
     },
     {
@@ -4366,7 +4584,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "ai-data",
@@ -4379,6 +4598,8 @@ window.STARTUP_THEMES_DATA = {
         "MedTech",
         "AI / Data"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.692,
       "investor_ids": [
         "zentynel"
       ]
@@ -4431,7 +4652,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "diagnostics"
@@ -4441,6 +4663,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "MedTech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.68,
       "investor_ids": []
     },
     {
@@ -4492,7 +4716,8 @@ window.STARTUP_THEMES_DATA = {
         "bio-enabled-industrial-transition"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "biomanufacturing",
@@ -4503,6 +4728,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Diagnostics"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.764,
       "investor_ids": []
     },
     {
@@ -4548,7 +4775,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.899,
       "bio_lens": [],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [],
       "scale_tags": [],
@@ -4557,6 +4785,8 @@ window.STARTUP_THEMES_DATA = {
         "Therapeutics",
         "Diagnostics"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.624,
       "investor_ids": []
     },
     {
@@ -4607,7 +4837,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "ai-data",
@@ -4623,6 +4854,8 @@ window.STARTUP_THEMES_DATA = {
         "Diagnostics",
         "MedTech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.692,
       "investor_ids": [
         "SF500",
         "The Ganesha Lab"
@@ -4671,12 +4904,15 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.833,
       "bio_lens": [],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.532,
       "investor_ids": []
     },
     {
@@ -4727,7 +4963,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "diagnostics"
@@ -4735,6 +4972,8 @@ window.STARTUP_THEMES_DATA = {
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.66,
       "investor_ids": []
     },
     {
@@ -4785,7 +5024,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "diagnostics"
@@ -4796,6 +5036,8 @@ window.STARTUP_THEMES_DATA = {
         "Diagnostics",
         "MedTech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.704,
       "investor_ids": []
     },
     {
@@ -4847,7 +5089,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "diagnostics",
@@ -4858,6 +5101,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Diagnostics"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.772,
       "investor_ids": []
     },
     {
@@ -4907,7 +5152,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "diagnostics"
@@ -4919,6 +5165,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Diagnostics"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.704,
       "investor_ids": [
         "GridX"
       ]
@@ -4966,7 +5214,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.867,
       "bio_lens": [],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [],
       "scale_tags": [],
@@ -4974,6 +5223,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Diagnostics"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.562,
       "investor_ids": [
         "dalus_capital"
       ]
@@ -5027,7 +5278,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "diagnostics",
@@ -5039,6 +5291,8 @@ window.STARTUP_THEMES_DATA = {
         "Diagnostics",
         "AI / Data"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.692,
       "investor_ids": []
     },
     {
@@ -5090,7 +5344,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "ai-data",
@@ -5104,6 +5359,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Diagnostics"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.574,
       "investor_ids": [
         "GridX"
       ]
@@ -5155,7 +5412,8 @@ window.STARTUP_THEMES_DATA = {
         "biocentric"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"human-health\"]"
+        "agri-food",
+        "human-health"
       ],
       "tech_tags": [
         "bioinputs"
@@ -5165,6 +5423,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biotech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.568,
       "investor_ids": []
     },
     {
@@ -5210,12 +5470,15 @@ window.STARTUP_THEMES_DATA = {
       "sy": -4.232,
       "bio_lens": [],
       "domain_tags": [
-        "[\"agri-food\", \"human-health\"]"
+        "agri-food",
+        "human-health"
       ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.586,
       "investor_ids": []
     },
     {
@@ -5270,7 +5533,8 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"human-health\"]"
+        "agri-food",
+        "human-health"
       ],
       "tech_tags": [
         "ai-data"
@@ -5283,6 +5547,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.648,
       "investor_ids": [
         "GridX",
         "The Ganesha Lab"
@@ -5337,7 +5603,8 @@ window.STARTUP_THEMES_DATA = {
         "bio-enabled-industrial-transition"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"human-health\"]"
+        "agri-food",
+        "human-health"
       ],
       "tech_tags": [
         "biomanufacturing",
@@ -5346,6 +5613,8 @@ window.STARTUP_THEMES_DATA = {
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.728,
       "investor_ids": []
     },
     {
@@ -5391,12 +5660,15 @@ window.STARTUP_THEMES_DATA = {
       "sy": 6.945,
       "bio_lens": [],
       "domain_tags": [
-        "[\"agri-food\", \"human-health\"]"
+        "agri-food",
+        "human-health"
       ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.622,
       "investor_ids": [
         "hatch"
       ]
@@ -5448,7 +5720,8 @@ window.STARTUP_THEMES_DATA = {
         "biocentric"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"human-health\"]"
+        "agri-food",
+        "human-health"
       ],
       "tech_tags": [
         "bioinputs"
@@ -5458,6 +5731,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biotech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.604,
       "investor_ids": []
     },
     {
@@ -5509,7 +5784,8 @@ window.STARTUP_THEMES_DATA = {
         "bio-enabled-industrial-transition"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"human-health\"]"
+        "agri-food",
+        "human-health"
       ],
       "tech_tags": [
         "biomanufacturing",
@@ -5521,6 +5797,8 @@ window.STARTUP_THEMES_DATA = {
         "Biomanufacturing",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.704,
       "investor_ids": []
     },
     {
@@ -5572,7 +5850,8 @@ window.STARTUP_THEMES_DATA = {
         "bio-enabled-industrial-transition"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"human-health\"]"
+        "agri-food",
+        "human-health"
       ],
       "tech_tags": [
         "biomanufacturing",
@@ -5584,6 +5863,8 @@ window.STARTUP_THEMES_DATA = {
         "Biomanufacturing",
         "FoodTech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.716,
       "investor_ids": []
     },
     {
@@ -5634,7 +5915,8 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"human-health\"]"
+        "agri-food",
+        "human-health"
       ],
       "tech_tags": [
         "remediation"
@@ -5642,6 +5924,8 @@ window.STARTUP_THEMES_DATA = {
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.624,
       "investor_ids": []
     },
     {
@@ -5687,7 +5971,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 6.956,
       "bio_lens": [],
       "domain_tags": [
-        "[\"agri-food\", \"human-health\"]"
+        "agri-food",
+        "human-health"
       ],
       "tech_tags": [],
       "scale_tags": [],
@@ -5695,6 +5980,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "AI / Data"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.604,
       "investor_ids": []
     },
     {
@@ -5746,7 +6033,8 @@ window.STARTUP_THEMES_DATA = {
         "bio-enabled-industrial-transition"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"human-health\"]"
+        "agri-food",
+        "human-health"
       ],
       "tech_tags": [
         "biomanufacturing",
@@ -5757,6 +6045,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biomanufacturing"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.728,
       "investor_ids": []
     },
     {
@@ -5805,7 +6095,8 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"human-health\"]"
+        "agri-food",
+        "human-health"
       ],
       "tech_tags": [],
       "scale_tags": [],
@@ -5814,6 +6105,8 @@ window.STARTUP_THEMES_DATA = {
         "Biomanufacturing",
         "Biotech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.622,
       "investor_ids": []
     },
     {
@@ -5863,12 +6156,15 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"human-health\"]"
+        "agri-food",
+        "human-health"
       ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.586,
       "investor_ids": [
         "idb_lab"
       ]
@@ -5923,7 +6219,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"human-health\"]"
+        "agri-food",
+        "human-health"
       ],
       "tech_tags": [
         "ai-data",
@@ -5936,6 +6233,8 @@ window.STARTUP_THEMES_DATA = {
         "AI / Data",
         "FoodTech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.668,
       "investor_ids": [
         "plug_and_play"
       ]
@@ -5991,7 +6290,8 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"human-health\"]"
+        "agri-food",
+        "human-health"
       ],
       "tech_tags": [
         "ai-data"
@@ -6005,6 +6305,8 @@ window.STARTUP_THEMES_DATA = {
         "Ag Biologicals",
         "Biotech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.604,
       "investor_ids": [
         "GridX"
       ]
@@ -6052,7 +6354,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 0.386,
       "bio_lens": [],
       "domain_tags": [
-        "[\"agri-food\", \"human-health\"]"
+        "agri-food",
+        "human-health"
       ],
       "tech_tags": [
         "black soldier fly, protein extraction, oil extraction, biostimulant production, HACCP-certified processing"
@@ -6063,6 +6366,8 @@ window.STARTUP_THEMES_DATA = {
         "Ag Biologicals",
         "Alt Proteins"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.556,
       "investor_ids": [
         "kayyak_ventures"
       ]
@@ -6116,7 +6421,8 @@ window.STARTUP_THEMES_DATA = {
         "bio-enabled-industrial-transition"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"human-health\"]"
+        "agri-food",
+        "human-health"
       ],
       "tech_tags": [
         "biomanufacturing",
@@ -6127,6 +6433,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.696,
       "investor_ids": []
     },
     {
@@ -6178,7 +6486,8 @@ window.STARTUP_THEMES_DATA = {
         "bio-enabled-industrial-transition"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"human-health\"]"
+        "agri-food",
+        "human-health"
       ],
       "tech_tags": [
         "biomanufacturing",
@@ -6190,6 +6499,8 @@ window.STARTUP_THEMES_DATA = {
         "Precision Ferm",
         "Biomanufacturing"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.72,
       "investor_ids": []
     },
     {
@@ -6239,7 +6550,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"human-health\"]"
+        "agri-food",
+        "human-health"
       ],
       "tech_tags": [],
       "scale_tags": [],
@@ -6248,6 +6560,8 @@ window.STARTUP_THEMES_DATA = {
         "Alt Proteins",
         "FoodTech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.604,
       "investor_ids": []
     },
     {
@@ -6299,7 +6613,8 @@ window.STARTUP_THEMES_DATA = {
         "bio-enabled-industrial-transition"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"human-health\"]"
+        "agri-food",
+        "human-health"
       ],
       "tech_tags": [
         "biomanufacturing",
@@ -6308,6 +6623,8 @@ window.STARTUP_THEMES_DATA = {
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.704,
       "investor_ids": []
     },
     {
@@ -6357,7 +6674,8 @@ window.STARTUP_THEMES_DATA = {
         "biocentric"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"human-health\"]"
+        "agri-food",
+        "human-health"
       ],
       "tech_tags": [
         "bioinputs"
@@ -6365,6 +6683,8 @@ window.STARTUP_THEMES_DATA = {
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.568,
       "investor_ids": []
     },
     {
@@ -6410,7 +6730,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 6.765,
       "bio_lens": [],
       "domain_tags": [
-        "[\"agri-food\", \"human-health\"]"
+        "agri-food",
+        "human-health"
       ],
       "tech_tags": [],
       "scale_tags": [],
@@ -6419,6 +6740,8 @@ window.STARTUP_THEMES_DATA = {
         "Alt Proteins",
         "Precision Ferm"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.604,
       "investor_ids": [
         "The Ganesha Lab"
       ]
@@ -6470,7 +6793,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"human-health\"]"
+        "agri-food",
+        "human-health"
       ],
       "tech_tags": [],
       "scale_tags": [],
@@ -6478,6 +6802,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "AgTech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.586,
       "investor_ids": [
         "endurance_28"
       ]
@@ -6529,7 +6855,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"human-health\"]"
+        "agri-food",
+        "human-health"
       ],
       "tech_tags": [],
       "scale_tags": [],
@@ -6539,6 +6866,8 @@ window.STARTUP_THEMES_DATA = {
         "AgTech",
         "FoodTech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.568,
       "investor_ids": [
         "lightjump_acquisition"
       ]
@@ -6590,7 +6919,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"human-health\"]"
+        "agri-food",
+        "human-health"
       ],
       "tech_tags": [],
       "scale_tags": [],
@@ -6600,6 +6930,8 @@ window.STARTUP_THEMES_DATA = {
         "SynBio",
         "AgTech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.604,
       "investor_ids": []
     },
     {
@@ -6649,7 +6981,8 @@ window.STARTUP_THEMES_DATA = {
         "biocentric"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"human-health\"]"
+        "agri-food",
+        "human-health"
       ],
       "tech_tags": [
         "bioinputs"
@@ -6657,6 +6990,8 @@ window.STARTUP_THEMES_DATA = {
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.586,
       "investor_ids": []
     },
     {
@@ -6706,7 +7041,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"human-health\"]"
+        "agri-food",
+        "human-health"
       ],
       "tech_tags": [],
       "scale_tags": [],
@@ -6715,6 +7051,8 @@ window.STARTUP_THEMES_DATA = {
         "FoodTech",
         "Biotech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.586,
       "investor_ids": []
     },
     {
@@ -6764,7 +7102,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"human-health\"]"
+        "agri-food",
+        "human-health"
       ],
       "tech_tags": [],
       "scale_tags": [],
@@ -6773,6 +7112,8 @@ window.STARTUP_THEMES_DATA = {
         "NatureTech",
         "FoodTech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.586,
       "investor_ids": []
     },
     {
@@ -6818,12 +7159,15 @@ window.STARTUP_THEMES_DATA = {
       "sy": 6.945,
       "bio_lens": [],
       "domain_tags": [
-        "[\"agri-food\", \"human-health\"]"
+        "agri-food",
+        "human-health"
       ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.586,
       "investor_ids": [
         "fondo_alerce"
       ]
@@ -6877,7 +7221,8 @@ window.STARTUP_THEMES_DATA = {
         "bio-enabled-industrial-transition"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"human-health\"]"
+        "agri-food",
+        "human-health"
       ],
       "tech_tags": [
         "biomanufacturing",
@@ -6891,6 +7236,8 @@ window.STARTUP_THEMES_DATA = {
         "Precision Ferm",
         "Biomanufacturing"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.728,
       "investor_ids": []
     },
     {
@@ -6941,7 +7288,8 @@ window.STARTUP_THEMES_DATA = {
         "bio-enabled-industrial-transition"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"human-health\"]"
+        "agri-food",
+        "human-health"
       ],
       "tech_tags": [
         "biomaterials"
@@ -6951,6 +7299,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biotech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.532,
       "investor_ids": []
     },
     {
@@ -7001,7 +7351,8 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"human-health\"]"
+        "agri-food",
+        "human-health"
       ],
       "tech_tags": [],
       "scale_tags": [
@@ -7012,6 +7363,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biotech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.586,
       "investor_ids": [
         "GridX"
       ]
@@ -7064,7 +7417,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"human-health\"]"
+        "agri-food",
+        "human-health"
       ],
       "tech_tags": [
         "therapeutics"
@@ -7074,6 +7428,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Therapeutics"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.656,
       "investor_ids": []
     },
     {
@@ -7128,7 +7484,9 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"climate-resource\", \"diagnostics-medtech\", \"human-health\"]"
+        "climate-resource",
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "ai-data"
@@ -7141,6 +7499,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biotech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.61,
       "investor_ids": [
         "GridX"
       ]
@@ -7193,7 +7553,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"climate-resource\"]"
+        "climate-resource"
       ],
       "tech_tags": [
         "ai-data"
@@ -7204,6 +7564,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "market_label": "modular sustainable rare earth refining",
       "self_cats": [],
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.645,
       "investor_ids": [
         "GridX"
       ]
@@ -7263,7 +7625,11 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biomanufacturing\", \"biomaterials\", \"human-health\", \"industrial-biotech\"]"
+        "agri-food",
+        "biomanufacturing",
+        "biomaterials",
+        "human-health",
+        "industrial-biotech"
       ],
       "tech_tags": [
         "biomanufacturing",
@@ -7281,6 +7647,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.828,
       "investor_ids": [
         "GridX",
         "zentynel"
@@ -7339,7 +7707,10 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biomanufacturing\", \"biomaterials\", \"climate-resource\"]"
+        "agri-food",
+        "biomanufacturing",
+        "biomaterials",
+        "climate-resource"
       ],
       "tech_tags": [
         "biomanufacturing",
@@ -7357,6 +7728,8 @@ window.STARTUP_THEMES_DATA = {
         "Biomaterials",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.712,
       "investor_ids": [
         "kamay_ventures"
       ]
@@ -7416,7 +7789,11 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biomaterials\", \"human-health\", \"industrial-biotech\", \"therapeutics-regenerative\"]"
+        "agri-food",
+        "biomaterials",
+        "human-health",
+        "industrial-biotech",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "ai-data",
@@ -7434,6 +7811,8 @@ window.STARTUP_THEMES_DATA = {
         "AI / Data",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.784,
       "investor_ids": [
         "GridX"
       ]
@@ -7493,7 +7872,9 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"biomanufacturing\", \"climate-resource\", \"industrial-biotech\"]"
+        "biomanufacturing",
+        "climate-resource",
+        "industrial-biotech"
       ],
       "tech_tags": [
         "ai-data",
@@ -7511,6 +7892,8 @@ window.STARTUP_THEMES_DATA = {
         "AI / Data",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.732,
       "investor_ids": [
         "SF500"
       ]
@@ -7570,7 +7953,11 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biomanufacturing\", \"biomaterials\", \"climate-resource\", \"industrial-biotech\"]"
+        "agri-food",
+        "biomanufacturing",
+        "biomaterials",
+        "climate-resource",
+        "industrial-biotech"
       ],
       "tech_tags": [
         "biomaterials",
@@ -7590,6 +7977,8 @@ window.STARTUP_THEMES_DATA = {
         "Precision Ferm",
         "Biomaterials"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.812,
       "investor_ids": [
         "GridX"
       ]
@@ -7649,7 +8038,10 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"biomanufacturing\", \"biomaterials\", \"climate-resource\", \"industrial-biotech\"]"
+        "biomanufacturing",
+        "biomaterials",
+        "climate-resource",
+        "industrial-biotech"
       ],
       "tech_tags": [
         "ai-data",
@@ -7667,6 +8059,8 @@ window.STARTUP_THEMES_DATA = {
         "Biomaterials",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.712,
       "investor_ids": [
         "GridX"
       ]
@@ -7719,7 +8113,7 @@ window.STARTUP_THEMES_DATA = {
         "biobased"
       ],
       "domain_tags": [
-        "[\"biomaterials\"]"
+        "biomaterials"
       ],
       "tech_tags": [
         "ai-data",
@@ -7735,6 +8129,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.712,
       "investor_ids": [
         "GridX"
       ]
@@ -7790,7 +8186,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"climate-resource\"]"
+        "climate-resource"
       ],
       "tech_tags": [
         "ai-data",
@@ -7805,6 +8201,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.692,
       "investor_ids": [
         "GridX"
       ]
@@ -7857,7 +8255,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"climate-resource\"]"
+        "climate-resource"
       ],
       "tech_tags": [],
       "scale_tags": [
@@ -7868,6 +8266,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "CleanTech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.7,
       "investor_ids": [
         "GridX"
       ]
@@ -7930,7 +8330,10 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biomanufacturing\", \"biomaterials\", \"climate-resource\"]"
+        "agri-food",
+        "biomanufacturing",
+        "biomaterials",
+        "climate-resource"
       ],
       "tech_tags": [
         "ai-data",
@@ -7947,6 +8350,8 @@ window.STARTUP_THEMES_DATA = {
         "Biomaterials",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.804,
       "investor_ids": [
         "GridX"
       ]
@@ -7994,12 +8399,15 @@ window.STARTUP_THEMES_DATA = {
       "sy": 1.195,
       "bio_lens": [],
       "domain_tags": [
-        "[\"biomaterials\", \"climate-resource\"]"
+        "biomaterials",
+        "climate-resource"
       ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.58,
       "investor_ids": [
         "sosv"
       ]
@@ -8049,7 +8457,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 11.106,
       "bio_lens": [],
       "domain_tags": [
-        "[\"biodiversity-nature\", \"climate-resource\"]"
+        "biodiversity-nature",
+        "climate-resource"
       ],
       "tech_tags": [
         "renewable electrolysis, CO₂ capture, e-fuel synthesis, green hydrogen"
@@ -8059,6 +8468,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "CleanTech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.632,
       "investor_ids": [
         "porsche_ag"
       ]
@@ -8115,7 +8526,9 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biomaterials\", \"climate-resource\"]"
+        "agri-food",
+        "biomaterials",
+        "climate-resource"
       ],
       "tech_tags": [
         "biomaterials",
@@ -8133,6 +8546,8 @@ window.STARTUP_THEMES_DATA = {
         "Biomaterials",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.732,
       "investor_ids": [
         "SF500"
       ]
@@ -8192,7 +8607,9 @@ window.STARTUP_THEMES_DATA = {
         "bio-enabled-industrial-transition"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biomanufacturing\", \"industrial-biotech\"]"
+        "agri-food",
+        "biomanufacturing",
+        "industrial-biotech"
       ],
       "tech_tags": [
         "ai-data",
@@ -8213,6 +8630,8 @@ window.STARTUP_THEMES_DATA = {
         "Precision Ferm",
         "FoodTech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.864,
       "investor_ids": [
         "GridX",
         "SOSV_IndieBio",
@@ -8271,7 +8690,8 @@ window.STARTUP_THEMES_DATA = {
         "biobased"
       ],
       "domain_tags": [
-        "[\"biomaterials\", \"climate-resource\"]"
+        "biomaterials",
+        "climate-resource"
       ],
       "tech_tags": [
         "ai-data",
@@ -8286,6 +8706,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.724,
       "investor_ids": [
         "GridX"
       ]
@@ -8343,7 +8765,9 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biomaterials\", \"human-health\"]"
+        "agri-food",
+        "biomaterials",
+        "human-health"
       ],
       "tech_tags": [
         "ai-data",
@@ -8358,6 +8782,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "market_label": "antimicrobial polymer and nanotechnology materials",
       "self_cats": [],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.772,
       "investor_ids": [
         "aceleradora_litoral"
       ]
@@ -8415,7 +8841,10 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biomaterials\", \"climate-resource\", \"diagnostics-medtech\"]"
+        "agri-food",
+        "biomaterials",
+        "climate-resource",
+        "diagnostics-medtech"
       ],
       "tech_tags": [
         "biomaterials"
@@ -8428,6 +8857,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biomaterials"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.7,
       "investor_ids": [
         "The Ganesha Lab"
       ]
@@ -8489,7 +8920,10 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biomanufacturing\", \"biomaterials\", \"climate-resource\"]"
+        "agri-food",
+        "biomanufacturing",
+        "biomaterials",
+        "climate-resource"
       ],
       "tech_tags": [
         "ai-data",
@@ -8508,6 +8942,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biomaterials"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.852,
       "investor_ids": [
         "GridX"
       ]
@@ -8562,7 +8998,8 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"biomaterials\", \"climate-resource\"]"
+        "biomaterials",
+        "climate-resource"
       ],
       "tech_tags": [
         "biomaterials"
@@ -8574,6 +9011,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biomaterials"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.61,
       "investor_ids": [
         "GridX"
       ]
@@ -8629,7 +9068,8 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"biomaterials\", \"climate-resource\"]"
+        "biomaterials",
+        "climate-resource"
       ],
       "tech_tags": [
         "ai-data",
@@ -8643,6 +9083,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biomaterials"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.7,
       "investor_ids": [
         "GridX"
       ]
@@ -8692,7 +9134,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 1.053,
       "bio_lens": [],
       "domain_tags": [
-        "[\"biodiversity-nature\", \"climate-resource\"]"
+        "biodiversity-nature",
+        "climate-resource"
       ],
       "tech_tags": [
         "modular biodigesters, biogas generation, bioslurry fertilizer, smallholder agriculture"
@@ -8700,6 +9143,8 @@ window.STARTUP_THEMES_DATA = {
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.652,
       "investor_ids": [
         "dila_capital",
         "electrifi",
@@ -8762,7 +9207,9 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"biomanufacturing\", \"biomaterials\", \"climate-resource\"]"
+        "biomanufacturing",
+        "biomaterials",
+        "climate-resource"
       ],
       "tech_tags": [
         "biomanufacturing",
@@ -8782,6 +9229,8 @@ window.STARTUP_THEMES_DATA = {
         "Biomaterials",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.932,
       "investor_ids": [
         "SF500"
       ]
@@ -8829,7 +9278,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 2.342,
       "bio_lens": [],
       "domain_tags": [
-        "[\"biomaterials\", \"climate-resource\"]"
+        "biomaterials",
+        "climate-resource"
       ],
       "tech_tags": [],
       "scale_tags": [],
@@ -8837,6 +9287,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biomaterials"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.562,
       "investor_ids": [
         "claritas_capital",
         "front_row_fund"
@@ -8885,7 +9337,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 2.378,
       "bio_lens": [],
       "domain_tags": [
-        "[\"biomaterials\", \"climate-resource\"]"
+        "biomaterials",
+        "climate-resource"
       ],
       "tech_tags": [],
       "scale_tags": [],
@@ -8893,6 +9346,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biomaterials"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.58,
       "investor_ids": [
         "btg_pactual"
       ]
@@ -8947,7 +9402,8 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"biomaterials\", \"climate-resource\"]"
+        "biomaterials",
+        "climate-resource"
       ],
       "tech_tags": [
         "biomaterials"
@@ -8959,6 +9415,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biomaterials"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.7,
       "investor_ids": [
         "GridX"
       ]
@@ -9015,7 +9473,8 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"biomaterials\", \"climate-resource\"]"
+        "biomaterials",
+        "climate-resource"
       ],
       "tech_tags": [
         "biomaterials"
@@ -9028,6 +9487,8 @@ window.STARTUP_THEMES_DATA = {
         "Biomaterials",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.7,
       "investor_ids": [
         "GridX"
       ]
@@ -9080,7 +9541,8 @@ window.STARTUP_THEMES_DATA = {
         "bio-enabled-industrial-transition"
       ],
       "domain_tags": [
-        "[\"biomaterials\", \"climate-resource\"]"
+        "biomaterials",
+        "climate-resource"
       ],
       "tech_tags": [
         "biomaterials"
@@ -9090,6 +9552,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biomaterials"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.64,
       "investor_ids": []
     },
     {
@@ -9140,7 +9604,8 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"biomaterials\", \"climate-resource\"]"
+        "biomaterials",
+        "climate-resource"
       ],
       "tech_tags": [
         "remediation"
@@ -9148,6 +9613,8 @@ window.STARTUP_THEMES_DATA = {
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.64,
       "investor_ids": []
     },
     {
@@ -9198,7 +9665,8 @@ window.STARTUP_THEMES_DATA = {
         "bio-enabled-industrial-transition"
       ],
       "domain_tags": [
-        "[\"biomaterials\", \"climate-resource\"]"
+        "biomaterials",
+        "climate-resource"
       ],
       "tech_tags": [
         "biomaterials"
@@ -9206,6 +9674,8 @@ window.STARTUP_THEMES_DATA = {
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.64,
       "investor_ids": []
     },
     {
@@ -9251,12 +9721,15 @@ window.STARTUP_THEMES_DATA = {
       "sy": 2.288,
       "bio_lens": [],
       "domain_tags": [
-        "[\"biomaterials\", \"climate-resource\"]"
+        "biomaterials",
+        "climate-resource"
       ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.544,
       "investor_ids": []
     },
     {
@@ -9302,12 +9775,15 @@ window.STARTUP_THEMES_DATA = {
       "sy": 2.228,
       "bio_lens": [],
       "domain_tags": [
-        "[\"biomaterials\", \"climate-resource\"]"
+        "biomaterials",
+        "climate-resource"
       ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.58,
       "investor_ids": [
         "gef",
         "idb_invest"
@@ -9362,7 +9838,8 @@ window.STARTUP_THEMES_DATA = {
         "bio-enabled-industrial-transition"
       ],
       "domain_tags": [
-        "[\"biomaterials\", \"climate-resource\"]"
+        "biomaterials",
+        "climate-resource"
       ],
       "tech_tags": [
         "biomaterials",
@@ -9373,6 +9850,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biomaterials"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.7,
       "investor_ids": []
     },
     {
@@ -9423,7 +9902,8 @@ window.STARTUP_THEMES_DATA = {
         "bio-enabled-industrial-transition"
       ],
       "domain_tags": [
-        "[\"biomaterials\", \"climate-resource\"]"
+        "biomaterials",
+        "climate-resource"
       ],
       "tech_tags": [
         "biomaterials"
@@ -9433,6 +9913,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biomaterials"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.64,
       "investor_ids": []
     },
     {
@@ -9478,7 +9960,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 2.19,
       "bio_lens": [],
       "domain_tags": [
-        "[\"biomaterials\", \"climate-resource\"]"
+        "biomaterials",
+        "climate-resource"
       ],
       "tech_tags": [],
       "scale_tags": [],
@@ -9487,6 +9970,8 @@ window.STARTUP_THEMES_DATA = {
         "SynBio",
         "Biotech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.562,
       "investor_ids": [
         "savia_ventures"
       ]
@@ -9534,7 +10019,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 2.172,
       "bio_lens": [],
       "domain_tags": [
-        "[\"biomaterials\", \"climate-resource\"]"
+        "biomaterials",
+        "climate-resource"
       ],
       "tech_tags": [],
       "scale_tags": [],
@@ -9544,6 +10030,8 @@ window.STARTUP_THEMES_DATA = {
         "AgTech",
         "FoodTech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.58,
       "investor_ids": [
         "savia_ventures"
       ]
@@ -9598,7 +10086,8 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"biomaterials\", \"climate-resource\"]"
+        "biomaterials",
+        "climate-resource"
       ],
       "tech_tags": [
         "biomaterials"
@@ -9610,6 +10099,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biomaterials"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.7,
       "investor_ids": [
         "SF500"
       ]
@@ -9663,7 +10154,8 @@ window.STARTUP_THEMES_DATA = {
         "bio-enabled-industrial-transition"
       ],
       "domain_tags": [
-        "[\"biomaterials\", \"climate-resource\"]"
+        "biomaterials",
+        "climate-resource"
       ],
       "tech_tags": [
         "biomaterials",
@@ -9674,6 +10166,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biomaterials"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.712,
       "investor_ids": [
         "blue_horizon"
       ]
@@ -9726,7 +10220,8 @@ window.STARTUP_THEMES_DATA = {
         "bio-enabled-industrial-transition"
       ],
       "domain_tags": [
-        "[\"biomaterials\", \"climate-resource\"]"
+        "biomaterials",
+        "climate-resource"
       ],
       "tech_tags": [
         "biomaterials"
@@ -9738,6 +10233,8 @@ window.STARTUP_THEMES_DATA = {
         "AgTech",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.64,
       "investor_ids": []
     },
     {
@@ -9788,7 +10285,8 @@ window.STARTUP_THEMES_DATA = {
         "bio-enabled-industrial-transition"
       ],
       "domain_tags": [
-        "[\"biomaterials\", \"climate-resource\"]"
+        "biomaterials",
+        "climate-resource"
       ],
       "tech_tags": [
         "biomaterials"
@@ -9798,6 +10296,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biomaterials"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.64,
       "investor_ids": []
     },
     {
@@ -9843,7 +10343,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 2.126,
       "bio_lens": [],
       "domain_tags": [
-        "[\"biomaterials\", \"climate-resource\"]"
+        "biomaterials",
+        "climate-resource"
       ],
       "tech_tags": [],
       "scale_tags": [],
@@ -9851,6 +10352,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biotech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.58,
       "investor_ids": [
         "savia_ventures"
       ]
@@ -9907,7 +10410,9 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"climate-resource\", \"diagnostics-medtech\", \"human-health\"]"
+        "climate-resource",
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "ai-data"
@@ -9922,6 +10427,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.62,
       "investor_ids": [
         "AIR Capital"
       ]
@@ -9977,7 +10484,8 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"biomaterials\", \"climate-resource\"]"
+        "biomaterials",
+        "climate-resource"
       ],
       "tech_tags": [
         "ai-data",
@@ -9990,6 +10498,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "market_label": "circular economy waste management platform",
       "self_cats": [],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.61,
       "investor_ids": [
         "Antom"
       ]
@@ -10037,12 +10547,15 @@ window.STARTUP_THEMES_DATA = {
       "sy": 11.044,
       "bio_lens": [],
       "domain_tags": [
-        "[\"biodiversity-nature\", \"climate-resource\"]"
+        "biodiversity-nature",
+        "climate-resource"
       ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.592,
       "investor_ids": [
         "cuna_del_mar"
       ]
@@ -10097,7 +10610,8 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"biodiversity-nature\", \"climate-resource\"]"
+        "biodiversity-nature",
+        "climate-resource"
       ],
       "tech_tags": [
         "ai-data",
@@ -10110,6 +10624,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "CleanTech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.55,
       "investor_ids": [
         "AIR Capital"
       ]
@@ -10164,7 +10680,9 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biodiversity-nature\", \"climate-resource\"]"
+        "agri-food",
+        "biodiversity-nature",
+        "climate-resource"
       ],
       "tech_tags": [],
       "scale_tags": [
@@ -10173,6 +10691,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "market_label": "regenerative seaweed cultivation for marine restoration",
       "self_cats": [],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.61,
       "investor_ids": [
         "Antom"
       ]
@@ -10226,7 +10746,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"climate-resource\"]"
+        "climate-resource"
       ],
       "tech_tags": [
         "ai-data"
@@ -10239,6 +10759,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biomaterials"
       ],
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.645,
       "investor_ids": [
         "kamay_ventures"
       ]
@@ -10297,7 +10819,9 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biodiversity-nature\", \"climate-resource\"]"
+        "agri-food",
+        "biodiversity-nature",
+        "climate-resource"
       ],
       "tech_tags": [
         "ai-data"
@@ -10311,6 +10835,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "AgTech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.68,
       "investor_ids": [
         "Antom"
       ]
@@ -10365,7 +10891,9 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biodiversity-nature\", \"climate-resource\"]"
+        "agri-food",
+        "biodiversity-nature",
+        "climate-resource"
       ],
       "tech_tags": [
         "ai-data"
@@ -10382,6 +10910,8 @@ window.STARTUP_THEMES_DATA = {
         "NatureTech",
         "FoodTech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.568,
       "investor_ids": [
         "Antom",
         "glocal"
@@ -10435,7 +10965,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"climate-resource\"]"
+        "climate-resource"
       ],
       "tech_tags": [
         "ai-data"
@@ -10446,6 +10976,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "market_label": "distributed solar, storage and e-mobility platform",
       "self_cats": [],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.62,
       "investor_ids": [
         "kamay_ventures",
         "savia_ventures"
@@ -10502,7 +11034,8 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"climate-resource\"]"
+        "agri-food",
+        "climate-resource"
       ],
       "tech_tags": [
         "ai-data"
@@ -10516,6 +11049,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "CleanTech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.62,
       "investor_ids": [
         "DraperCygnus",
         "savia_ventures"
@@ -10568,7 +11103,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.034,
       "bio_lens": [],
       "domain_tags": [
-        "[\"biomanufacturing\", \"industrial-biotech\"]"
+        "biomanufacturing",
+        "industrial-biotech"
       ],
       "tech_tags": [
         "digital twin, IoT sensors, AI analytics, process automation, industrial integration"
@@ -10580,6 +11116,8 @@ window.STARTUP_THEMES_DATA = {
         "Hardware / IoT",
         "Biotech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.592,
       "investor_ids": []
     },
     {
@@ -10637,7 +11175,10 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biomanufacturing\", \"climate-resource\", \"industrial-biotech\"]"
+        "agri-food",
+        "biomanufacturing",
+        "climate-resource",
+        "industrial-biotech"
       ],
       "tech_tags": [
         "ai-data",
@@ -10654,6 +11195,8 @@ window.STARTUP_THEMES_DATA = {
         "Biomanufacturing",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.752,
       "investor_ids": [
         "GridX"
       ]
@@ -10708,7 +11251,8 @@ window.STARTUP_THEMES_DATA = {
         "bio-enabled-industrial-transition"
       ],
       "domain_tags": [
-        "[\"biomanufacturing\", \"industrial-biotech\"]"
+        "biomanufacturing",
+        "industrial-biotech"
       ],
       "tech_tags": [
         "biomanufacturing",
@@ -10722,6 +11266,8 @@ window.STARTUP_THEMES_DATA = {
         "Diagnostics",
         "Biomanufacturing"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.876,
       "investor_ids": []
     },
     {
@@ -10785,7 +11331,12 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biomanufacturing\", \"climate-resource\", \"human-health\", \"industrial-biotech\", \"therapeutics-regenerative\"]"
+        "agri-food",
+        "biomanufacturing",
+        "climate-resource",
+        "human-health",
+        "industrial-biotech",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "ai-data",
@@ -10807,6 +11358,8 @@ window.STARTUP_THEMES_DATA = {
         "Alt Proteins",
         "Precision Ferm"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.96,
       "investor_ids": [
         "GridX"
       ]
@@ -10864,7 +11417,9 @@ window.STARTUP_THEMES_DATA = {
         "bio-enabled-industrial-transition"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biomanufacturing\", \"industrial-biotech\"]"
+        "agri-food",
+        "biomanufacturing",
+        "industrial-biotech"
       ],
       "tech_tags": [
         "ai-data",
@@ -10882,6 +11437,8 @@ window.STARTUP_THEMES_DATA = {
         "AgTech",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.828,
       "investor_ids": [
         "GridX",
         "inventure"
@@ -10942,7 +11499,10 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"biomanufacturing\", \"diagnostics-medtech\", \"human-health\", \"industrial-biotech\"]"
+        "biomanufacturing",
+        "diagnostics-medtech",
+        "human-health",
+        "industrial-biotech"
       ],
       "tech_tags": [
         "ai-data",
@@ -10960,6 +11520,8 @@ window.STARTUP_THEMES_DATA = {
         "Biomanufacturing",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.832,
       "investor_ids": [
         "GridX"
       ]
@@ -11014,7 +11576,8 @@ window.STARTUP_THEMES_DATA = {
         "bio-enabled-industrial-transition"
       ],
       "domain_tags": [
-        "[\"biomanufacturing\", \"industrial-biotech\"]"
+        "biomanufacturing",
+        "industrial-biotech"
       ],
       "tech_tags": [
         "biomanufacturing",
@@ -11027,6 +11590,8 @@ window.STARTUP_THEMES_DATA = {
         "SynBio",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.852,
       "investor_ids": []
     },
     {
@@ -11079,7 +11644,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\"]"
+        "agri-food"
       ],
       "tech_tags": [
         "ai-data",
@@ -11094,6 +11659,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biotech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.562,
       "investor_ids": [
         "GridX"
       ]
@@ -11153,7 +11720,9 @@ window.STARTUP_THEMES_DATA = {
         "bio-enabled-industrial-transition"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biomanufacturing\", \"industrial-biotech\"]"
+        "agri-food",
+        "biomanufacturing",
+        "industrial-biotech"
       ],
       "tech_tags": [
         "ai-data",
@@ -11172,6 +11741,8 @@ window.STARTUP_THEMES_DATA = {
         "Precision Ferm",
         "Biomanufacturing"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.96,
       "investor_ids": [
         "axventures_pymar"
       ]
@@ -11237,7 +11808,11 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biomanufacturing\", \"human-health\", \"industrial-biotech\", \"therapeutics-regenerative\"]"
+        "agri-food",
+        "biomanufacturing",
+        "human-health",
+        "industrial-biotech",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "ai-data",
@@ -11259,6 +11834,8 @@ window.STARTUP_THEMES_DATA = {
         "Therapeutics",
         "Precision Ferm"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.96,
       "investor_ids": [
         "AIR Capital"
       ]
@@ -11317,7 +11894,9 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biomanufacturing\", \"industrial-biotech\"]"
+        "agri-food",
+        "biomanufacturing",
+        "industrial-biotech"
       ],
       "tech_tags": [
         "ai-data",
@@ -11335,6 +11914,8 @@ window.STARTUP_THEMES_DATA = {
         "Precision Ferm",
         "Biomanufacturing"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.812,
       "investor_ids": [
         "GridX"
       ]
@@ -11385,7 +11966,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -2.705,
       "bio_lens": [],
       "domain_tags": [
-        "[\"biomanufacturing\", \"industrial-biotech\"]"
+        "biomanufacturing",
+        "industrial-biotech"
       ],
       "tech_tags": [
         "16S/ITS sequencing, PCR-LAMP, whole genome sequencing, AI bioinformatics, next-generation sequencing"
@@ -11395,6 +11977,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Diagnostics"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.764,
       "investor_ids": []
     },
     {
@@ -11452,7 +12036,10 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"biodiversity-nature\", \"diagnostics-medtech\", \"human-health\", \"therapeutics-regenerative\"]"
+        "biodiversity-nature",
+        "diagnostics-medtech",
+        "human-health",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "ai-data",
@@ -11470,6 +12057,8 @@ window.STARTUP_THEMES_DATA = {
         "AI / Data",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.864,
       "investor_ids": [
         "AIR Capital"
       ]
@@ -11531,7 +12120,10 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"climate-resource\", \"human-health\", \"therapeutics-regenerative\"]"
+        "agri-food",
+        "climate-resource",
+        "human-health",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "ai-data",
@@ -11547,6 +12139,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "market_label": "microfluidic nanomedicine manufacturing platform",
       "self_cats": [],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.892,
       "investor_ids": [
         "GridX"
       ]
@@ -11603,7 +12197,10 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"biomanufacturing\", \"human-health\", \"industrial-biotech\", \"therapeutics-regenerative\"]"
+        "biomanufacturing",
+        "human-health",
+        "industrial-biotech",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "ai-data",
@@ -11619,6 +12216,8 @@ window.STARTUP_THEMES_DATA = {
         "Biomanufacturing",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.696,
       "investor_ids": [
         "AIR Capital",
         "DraperCygnus",
@@ -11675,7 +12274,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"human-health\"]"
+        "agri-food",
+        "human-health"
       ],
       "tech_tags": [
         "therapeutics"
@@ -11683,6 +12283,8 @@ window.STARTUP_THEMES_DATA = {
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.656,
       "investor_ids": []
     },
     {
@@ -11738,7 +12340,10 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biomanufacturing\", \"biomaterials\", \"human-health\"]"
+        "agri-food",
+        "biomanufacturing",
+        "biomaterials",
+        "human-health"
       ],
       "tech_tags": [
         "biomanufacturing"
@@ -11753,6 +12358,8 @@ window.STARTUP_THEMES_DATA = {
         "FoodTech",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.636,
       "investor_ids": [
         "GridX"
       ]
@@ -11800,7 +12407,7 @@ window.STARTUP_THEMES_DATA = {
       "sy": 1.408,
       "bio_lens": [],
       "domain_tags": [
-        "[\"agri-food\"]"
+        "agri-food"
       ],
       "tech_tags": [],
       "scale_tags": [
@@ -11811,6 +12418,8 @@ window.STARTUP_THEMES_DATA = {
         "FoodTech",
         "Biotech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.604,
       "investor_ids": [
         "GridX"
       ]
@@ -11865,7 +12474,8 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"industrial-biotech\"]"
+        "agri-food",
+        "industrial-biotech"
       ],
       "tech_tags": [
         "ai-data"
@@ -11884,6 +12494,8 @@ window.STARTUP_THEMES_DATA = {
         "FoodTech",
         "Biotech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.604,
       "investor_ids": [
         "GridX"
       ]
@@ -11933,7 +12545,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\"]"
+        "agri-food"
       ],
       "tech_tags": [],
       "scale_tags": [
@@ -11946,6 +12558,8 @@ window.STARTUP_THEMES_DATA = {
         "FoodTech",
         "Biotech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.586,
       "investor_ids": [
         "AIR Capital"
       ]
@@ -12000,7 +12614,8 @@ window.STARTUP_THEMES_DATA = {
         "bio-enabled-industrial-transition"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biomanufacturing\"]"
+        "agri-food",
+        "biomanufacturing"
       ],
       "tech_tags": [
         "fermentation",
@@ -12018,6 +12633,8 @@ window.STARTUP_THEMES_DATA = {
         "SynBio",
         "Precision Ferm"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.74,
       "investor_ids": [
         "endurance_28"
       ]
@@ -12077,7 +12694,9 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biomanufacturing\", \"human-health\"]"
+        "agri-food",
+        "biomanufacturing",
+        "human-health"
       ],
       "tech_tags": [
         "ai-data",
@@ -12096,6 +12715,8 @@ window.STARTUP_THEMES_DATA = {
         "FoodTech",
         "Biotech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.622,
       "investor_ids": [
         "CITES"
       ]
@@ -12153,7 +12774,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"human-health\"]"
+        "agri-food",
+        "human-health"
       ],
       "tech_tags": [
         "ai-data"
@@ -12170,6 +12792,8 @@ window.STARTUP_THEMES_DATA = {
         "AgTech",
         "FoodTech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.648,
       "investor_ids": [
         "AIR Capital"
       ]
@@ -12224,7 +12848,7 @@ window.STARTUP_THEMES_DATA = {
         "biobased"
       ],
       "domain_tags": [
-        "[\"agri-food\"]"
+        "agri-food"
       ],
       "tech_tags": [
         "fermentation"
@@ -12238,6 +12862,8 @@ window.STARTUP_THEMES_DATA = {
         "FoodTech",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.752,
       "investor_ids": [
         "GridX"
       ]
@@ -12296,7 +12922,9 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biomanufacturing\", \"human-health\"]"
+        "agri-food",
+        "biomanufacturing",
+        "human-health"
       ],
       "tech_tags": [
         "fermentation"
@@ -12309,6 +12937,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "market_label": "fungi-based precision prebiotics",
       "self_cats": [],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.728,
       "investor_ids": [
         "GridX"
       ]
@@ -12364,7 +12994,8 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"human-health\"]"
+        "agri-food",
+        "human-health"
       ],
       "tech_tags": [
         "ai-data"
@@ -12375,6 +13006,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "market_label": "metabolic health functional ingredient platform",
       "self_cats": [],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.544,
       "investor_ids": [
         "GridX"
       ]
@@ -12432,7 +13065,9 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biomanufacturing\", \"human-health\"]"
+        "agri-food",
+        "biomanufacturing",
+        "human-health"
       ],
       "tech_tags": [
         "fermentation"
@@ -12448,6 +13083,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "FoodTech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.704,
       "investor_ids": [
         "the_yield_lab_latam"
       ]
@@ -12498,7 +13135,7 @@ window.STARTUP_THEMES_DATA = {
       "sy": 1.452,
       "bio_lens": [],
       "domain_tags": [
-        "[\"agri-food\"]"
+        "agri-food"
       ],
       "tech_tags": [
         "ai-data"
@@ -12512,6 +13149,8 @@ window.STARTUP_THEMES_DATA = {
         "FoodTech",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.636,
       "investor_ids": [
         "The Ganesha Lab"
       ]
@@ -12565,7 +13204,8 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"climate-resource\"]"
+        "agri-food",
+        "climate-resource"
       ],
       "tech_tags": [
         "ai-data"
@@ -12575,6 +13215,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "market_label": "AI copilot for retail waste and rotation management",
       "self_cats": [],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.538,
       "investor_ids": [
         "the_yield_lab_latam"
       ]
@@ -12622,7 +13264,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 1.525,
       "bio_lens": [],
       "domain_tags": [
-        "[\"agri-food\", \"human-health\"]"
+        "agri-food",
+        "human-health"
       ],
       "tech_tags": [],
       "scale_tags": [],
@@ -12630,6 +13273,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "AgTech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.604,
       "investor_ids": []
     },
     {
@@ -12678,7 +13323,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"human-health\"]"
+        "agri-food",
+        "human-health"
       ],
       "tech_tags": [],
       "scale_tags": [
@@ -12690,6 +13336,8 @@ window.STARTUP_THEMES_DATA = {
         "FoodTech",
         "Biotech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.568,
       "investor_ids": [
         "GridX"
       ]
@@ -12748,7 +13396,9 @@ window.STARTUP_THEMES_DATA = {
         "bio-enabled-industrial-transition"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biomanufacturing\", \"biomaterials\"]"
+        "agri-food",
+        "biomanufacturing",
+        "biomaterials"
       ],
       "tech_tags": [
         "biomaterials",
@@ -12764,6 +13414,8 @@ window.STARTUP_THEMES_DATA = {
         "Biomaterials",
         "FoodTech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.824,
       "investor_ids": [
         "GridX"
       ]
@@ -12818,7 +13470,8 @@ window.STARTUP_THEMES_DATA = {
         "biocentric"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biodiversity-nature\"]"
+        "agri-food",
+        "biodiversity-nature"
       ],
       "tech_tags": [
         "ai-data"
@@ -12832,6 +13485,8 @@ window.STARTUP_THEMES_DATA = {
         "FoodTech",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.684,
       "investor_ids": [
         "chileglobal_ventures"
       ]
@@ -12883,7 +13538,8 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"climate-resource\"]"
+        "agri-food",
+        "climate-resource"
       ],
       "tech_tags": [],
       "scale_tags": [
@@ -12895,6 +13551,8 @@ window.STARTUP_THEMES_DATA = {
         "FoodTech",
         "Biotech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.604,
       "investor_ids": [
         "DraperCygnus",
         "zentynel"
@@ -12953,7 +13611,9 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biomaterials\", \"climate-resource\"]"
+        "agri-food",
+        "biomaterials",
+        "climate-resource"
       ],
       "tech_tags": [
         "ai-data"
@@ -12967,6 +13627,8 @@ window.STARTUP_THEMES_DATA = {
         "FoodTech",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.684,
       "investor_ids": [
         "GridX"
       ]
@@ -13019,7 +13681,8 @@ window.STARTUP_THEMES_DATA = {
         "bio-enabled-industrial-transition"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"human-health\"]"
+        "agri-food",
+        "human-health"
       ],
       "tech_tags": [
         "biomaterials"
@@ -13027,6 +13690,8 @@ window.STARTUP_THEMES_DATA = {
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.636,
       "investor_ids": []
     },
     {
@@ -13087,7 +13752,10 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biomanufacturing\", \"biomaterials\", \"human-health\"]"
+        "agri-food",
+        "biomanufacturing",
+        "biomaterials",
+        "human-health"
       ],
       "tech_tags": [
         "ai-data",
@@ -13109,6 +13777,8 @@ window.STARTUP_THEMES_DATA = {
         "FoodTech",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.804,
       "investor_ids": [
         "GridX"
       ]
@@ -13169,7 +13839,10 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biodiversity-nature\", \"biomaterials\", \"climate-resource\"]"
+        "agri-food",
+        "biodiversity-nature",
+        "biomaterials",
+        "climate-resource"
       ],
       "tech_tags": [
         "biomaterials"
@@ -13187,6 +13860,8 @@ window.STARTUP_THEMES_DATA = {
         "Biomaterials",
         "FoodTech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.744,
       "investor_ids": [
         "GridX",
         "inventure"
@@ -13240,7 +13915,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\"]"
+        "agri-food"
       ],
       "tech_tags": [
         "ai-data"
@@ -13254,6 +13929,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "FoodTech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.624,
       "investor_ids": [
         "GridX"
       ]
@@ -13301,12 +13978,15 @@ window.STARTUP_THEMES_DATA = {
       "sy": 1.593,
       "bio_lens": [],
       "domain_tags": [
-        "[\"agri-food\", \"human-health\"]"
+        "agri-food",
+        "human-health"
       ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.604,
       "investor_ids": [
         "savia_ventures"
       ]
@@ -13354,7 +14034,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 0.548,
       "bio_lens": [],
       "domain_tags": [
-        "[\"agri-food\", \"human-health\"]"
+        "agri-food",
+        "human-health"
       ],
       "tech_tags": [
         "Serkanto-AI, dietary RNA extraction, bioactive ingredients, functional food, AI-guided ingredient discovery"
@@ -13366,6 +14047,8 @@ window.STARTUP_THEMES_DATA = {
         "FoodTech",
         "Biotech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.526,
       "investor_ids": []
     },
     {
@@ -13411,12 +14094,15 @@ window.STARTUP_THEMES_DATA = {
       "sy": 1.538,
       "bio_lens": [],
       "domain_tags": [
-        "[\"agri-food\", \"human-health\"]"
+        "agri-food",
+        "human-health"
       ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.604,
       "investor_ids": []
     },
     {
@@ -13472,7 +14158,9 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biomanufacturing\", \"human-health\"]"
+        "agri-food",
+        "biomanufacturing",
+        "human-health"
       ],
       "tech_tags": [
         "fermentation"
@@ -13488,6 +14176,8 @@ window.STARTUP_THEMES_DATA = {
         "FoodTech",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.716,
       "investor_ids": [
         "GridX"
       ]
@@ -13542,7 +14232,8 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biodiversity-nature\"]"
+        "agri-food",
+        "biodiversity-nature"
       ],
       "tech_tags": [
         "bioinputs"
@@ -13556,6 +14247,8 @@ window.STARTUP_THEMES_DATA = {
         "Ag Biologicals",
         "AgTech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.586,
       "investor_ids": [
         "GridX"
       ]
@@ -13617,7 +14310,11 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"biomanufacturing\", \"climate-resource\", \"human-health\", \"industrial-biotech\", \"therapeutics-regenerative\"]"
+        "biomanufacturing",
+        "climate-resource",
+        "human-health",
+        "industrial-biotech",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "ai-data",
@@ -13635,6 +14332,8 @@ window.STARTUP_THEMES_DATA = {
         "Biomanufacturing",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.824,
       "investor_ids": [
         "The Ganesha Lab"
       ]
@@ -13689,7 +14388,8 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"human-health\", \"therapeutics-regenerative\"]"
+        "human-health",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "ai-data",
@@ -13704,6 +14404,8 @@ window.STARTUP_THEMES_DATA = {
         "Diagnostics",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.736,
       "investor_ids": [
         "CITES"
       ]
@@ -13751,7 +14453,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.641,
       "bio_lens": [],
       "domain_tags": [
-        "[\"therapeutics-regenerative\", \"human-health\"]"
+        "therapeutics-regenerative",
+        "human-health"
       ],
       "tech_tags": [],
       "scale_tags": [],
@@ -13760,6 +14463,8 @@ window.STARTUP_THEMES_DATA = {
         "Therapeutics",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.656,
       "investor_ids": [
         "grupo_insud"
       ]
@@ -13813,7 +14518,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"therapeutics-regenerative\", \"human-health\"]"
+        "therapeutics-regenerative",
+        "human-health"
       ],
       "tech_tags": [
         "therapeutics",
@@ -13825,6 +14531,8 @@ window.STARTUP_THEMES_DATA = {
         "Precision Ferm",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.804,
       "investor_ids": []
     },
     {
@@ -13884,7 +14592,12 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biomanufacturing\", \"diagnostics-medtech\", \"human-health\", \"industrial-biotech\", \"therapeutics-regenerative\"]"
+        "agri-food",
+        "biomanufacturing",
+        "diagnostics-medtech",
+        "human-health",
+        "industrial-biotech",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "ai-data",
@@ -13903,6 +14616,8 @@ window.STARTUP_THEMES_DATA = {
         "Biomanufacturing",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.924,
       "investor_ids": []
     },
     {
@@ -13959,7 +14674,8 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"human-health\", \"therapeutics-regenerative\"]"
+        "human-health",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "ai-data",
@@ -13976,6 +14692,8 @@ window.STARTUP_THEMES_DATA = {
         "Therapeutics",
         "AI / Data"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.876,
       "investor_ids": [
         "GridX"
       ]
@@ -14030,7 +14748,8 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"human-health\", \"therapeutics-regenerative\"]"
+        "human-health",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "ai-data",
@@ -14043,6 +14762,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Therapeutics"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.724,
       "investor_ids": [
         "GridX"
       ]
@@ -14090,7 +14811,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.711,
       "bio_lens": [],
       "domain_tags": [
-        "[\"therapeutics-regenerative\", \"human-health\"]"
+        "therapeutics-regenerative",
+        "human-health"
       ],
       "tech_tags": [],
       "scale_tags": [],
@@ -14098,6 +14820,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Therapeutics"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.644,
       "investor_ids": [
         "grupo_insud"
       ]
@@ -14153,7 +14877,9 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"human-health\", \"therapeutics-regenerative\"]"
+        "agri-food",
+        "human-health",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "therapeutics"
@@ -14169,6 +14895,8 @@ window.STARTUP_THEMES_DATA = {
         "Therapeutics",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.772,
       "investor_ids": [
         "GridX"
       ]
@@ -14221,7 +14949,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"therapeutics-regenerative\", \"human-health\"]"
+        "therapeutics-regenerative",
+        "human-health"
       ],
       "tech_tags": [
         "therapeutics"
@@ -14232,6 +14961,8 @@ window.STARTUP_THEMES_DATA = {
         "Therapeutics",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.712,
       "investor_ids": []
     },
     {
@@ -14290,7 +15021,9 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"biomaterials\", \"human-health\", \"therapeutics-regenerative\"]"
+        "biomaterials",
+        "human-health",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "ai-data",
@@ -14304,6 +15037,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "market_label": "lipid nanocapsule drug-delivery and formulation platform",
       "self_cats": [],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.868,
       "investor_ids": [
         "GridX"
       ]
@@ -14351,7 +15086,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.62,
       "bio_lens": [],
       "domain_tags": [
-        "[\"therapeutics-regenerative\", \"human-health\"]"
+        "therapeutics-regenerative",
+        "human-health"
       ],
       "tech_tags": [],
       "scale_tags": [],
@@ -14360,6 +15096,8 @@ window.STARTUP_THEMES_DATA = {
         "Therapeutics",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.644,
       "investor_ids": [
         "grupo_insud"
       ]
@@ -14417,7 +15155,10 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biodiversity-nature\", \"human-health\", \"therapeutics-regenerative\"]"
+        "agri-food",
+        "biodiversity-nature",
+        "human-health",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "ai-data",
@@ -14431,6 +15172,8 @@ window.STARTUP_THEMES_DATA = {
         "Therapeutics",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.784,
       "investor_ids": [
         "zentynel"
       ]
@@ -14478,7 +15221,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.904,
       "bio_lens": [],
       "domain_tags": [
-        "[\"therapeutics-regenerative\", \"human-health\"]"
+        "therapeutics-regenerative",
+        "human-health"
       ],
       "tech_tags": [],
       "scale_tags": [],
@@ -14486,6 +15230,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "AI / Data"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.532,
       "investor_ids": []
     },
     {
@@ -14539,7 +15285,8 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"human-health\", \"therapeutics-regenerative\"]"
+        "human-health",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "ai-data",
@@ -14553,6 +15300,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Therapeutics"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.752,
       "investor_ids": [
         "GridX",
         "The Ganesha Lab"
@@ -14612,7 +15361,10 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"biomanufacturing\", \"human-health\", \"industrial-biotech\", \"therapeutics-regenerative\"]"
+        "biomanufacturing",
+        "human-health",
+        "industrial-biotech",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "ai-data",
@@ -14628,6 +15380,8 @@ window.STARTUP_THEMES_DATA = {
         "Therapeutics",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.844,
       "investor_ids": [
         "GridX"
       ]
@@ -14675,12 +15429,15 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.884,
       "bio_lens": [],
       "domain_tags": [
-        "[\"therapeutics-regenerative\", \"human-health\"]"
+        "therapeutics-regenerative",
+        "human-health"
       ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.644,
       "investor_ids": [
         "ecoa_capital",
         "mov_investimentos",
@@ -14739,7 +15496,8 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"human-health\", \"therapeutics-regenerative\"]"
+        "human-health",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "ai-data",
@@ -14754,6 +15512,8 @@ window.STARTUP_THEMES_DATA = {
         "Therapeutics",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.7,
       "investor_ids": [
         "kptl"
       ]
@@ -14806,7 +15566,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"therapeutics-regenerative\", \"human-health\"]"
+        "therapeutics-regenerative",
+        "human-health"
       ],
       "tech_tags": [
         "therapeutics"
@@ -14818,6 +15579,8 @@ window.STARTUP_THEMES_DATA = {
         "Precision Ferm",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.724,
       "investor_ids": []
     },
     {
@@ -14877,7 +15640,10 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"diagnostics-medtech\", \"human-health\", \"therapeutics-regenerative\"]"
+        "agri-food",
+        "diagnostics-medtech",
+        "human-health",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "ai-data",
@@ -14895,6 +15661,8 @@ window.STARTUP_THEMES_DATA = {
         "AgTech",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.784,
       "investor_ids": [
         "collaborative_fund",
         "nazca",
@@ -14950,7 +15718,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"therapeutics-regenerative\", \"human-health\"]"
+        "therapeutics-regenerative",
+        "human-health"
       ],
       "tech_tags": [
         "therapeutics"
@@ -14961,6 +15730,8 @@ window.STARTUP_THEMES_DATA = {
         "Therapeutics",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.736,
       "investor_ids": []
     },
     {
@@ -15013,7 +15784,8 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"human-health\", \"therapeutics-regenerative\"]"
+        "human-health",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "ai-data",
@@ -15027,6 +15799,8 @@ window.STARTUP_THEMES_DATA = {
         "Therapeutics",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.724,
       "investor_ids": [
         "GridX"
       ]
@@ -15079,7 +15853,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"therapeutics-regenerative\", \"human-health\"]"
+        "therapeutics-regenerative",
+        "human-health"
       ],
       "tech_tags": [
         "therapeutics"
@@ -15089,6 +15864,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.68,
       "investor_ids": []
     },
     {
@@ -15143,7 +15920,8 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"human-health\", \"therapeutics-regenerative\"]"
+        "human-health",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "ai-data",
@@ -15157,6 +15935,8 @@ window.STARTUP_THEMES_DATA = {
         "Therapeutics",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.712,
       "investor_ids": [
         "zentynel"
       ]
@@ -15210,7 +15990,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"therapeutics-regenerative\", \"human-health\"]"
+        "therapeutics-regenerative",
+        "human-health"
       ],
       "tech_tags": [
         "therapeutics",
@@ -15222,6 +16003,8 @@ window.STARTUP_THEMES_DATA = {
         "MedTech",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.76,
       "investor_ids": []
     },
     {
@@ -15273,7 +16056,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"therapeutics-regenerative\", \"human-health\"]"
+        "therapeutics-regenerative",
+        "human-health"
       ],
       "tech_tags": [
         "therapeutics",
@@ -15284,6 +16068,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.772,
       "investor_ids": []
     },
     {
@@ -15329,12 +16115,15 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.546,
       "bio_lens": [],
       "domain_tags": [
-        "[\"therapeutics-regenerative\", \"human-health\"]"
+        "therapeutics-regenerative",
+        "human-health"
       ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.62,
       "investor_ids": []
     },
     {
@@ -15386,7 +16175,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"therapeutics-regenerative\", \"human-health\"]"
+        "therapeutics-regenerative",
+        "human-health"
       ],
       "tech_tags": [
         "therapeutics",
@@ -15398,6 +16188,8 @@ window.STARTUP_THEMES_DATA = {
         "Biomaterials",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.752,
       "investor_ids": []
     },
     {
@@ -15448,7 +16240,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"therapeutics-regenerative\", \"human-health\"]"
+        "therapeutics-regenerative",
+        "human-health"
       ],
       "tech_tags": [
         "therapeutics"
@@ -15456,6 +16249,8 @@ window.STARTUP_THEMES_DATA = {
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.7,
       "investor_ids": []
     },
     {
@@ -15501,12 +16296,15 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.509,
       "bio_lens": [],
       "domain_tags": [
-        "[\"therapeutics-regenerative\", \"human-health\"]"
+        "therapeutics-regenerative",
+        "human-health"
       ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.632,
       "investor_ids": []
     },
     {
@@ -15563,7 +16361,9 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biodiversity-nature\", \"climate-resource\"]"
+        "agri-food",
+        "biodiversity-nature",
+        "climate-resource"
       ],
       "tech_tags": [],
       "scale_tags": [
@@ -15577,6 +16377,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.684,
       "investor_ids": [
         "GridX"
       ]
@@ -15628,7 +16430,8 @@ window.STARTUP_THEMES_DATA = {
         "biocentric"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biodiversity-nature\"]"
+        "agri-food",
+        "biodiversity-nature"
       ],
       "tech_tags": [
         "bioinputs"
@@ -15638,6 +16441,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biotech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.55,
       "investor_ids": []
     },
     {
@@ -15691,7 +16496,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\"]"
+        "agri-food"
       ],
       "tech_tags": [
         "ai-data",
@@ -15707,6 +16512,8 @@ window.STARTUP_THEMES_DATA = {
         "AgTech",
         "Biotech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.592,
       "investor_ids": [
         "aceleradora_litoral"
       ]
@@ -15762,7 +16569,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\"]"
+        "agri-food"
       ],
       "tech_tags": [
         "ai-data"
@@ -15775,6 +16582,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "AgTech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.672,
       "investor_ids": [
         "aceleradora_litoral"
       ]
@@ -15822,7 +16631,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 7.598,
       "bio_lens": [],
       "domain_tags": [
-        "[\"agri-food\", \"biodiversity-nature\"]"
+        "agri-food",
+        "biodiversity-nature"
       ],
       "tech_tags": [],
       "scale_tags": [],
@@ -15831,6 +16641,8 @@ window.STARTUP_THEMES_DATA = {
         "Diagnostics",
         "Biotech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.604,
       "investor_ids": []
     },
     {
@@ -15885,7 +16697,8 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biodiversity-nature\"]"
+        "agri-food",
+        "biodiversity-nature"
       ],
       "tech_tags": [
         "ai-data",
@@ -15904,6 +16717,8 @@ window.STARTUP_THEMES_DATA = {
         "AgTech",
         "Biotech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.526,
       "investor_ids": [
         "AIR Capital",
         "GridX",
@@ -15968,7 +16783,8 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"human-health\"]"
+        "agri-food",
+        "human-health"
       ],
       "tech_tags": [
         "ai-data",
@@ -15986,6 +16802,8 @@ window.STARTUP_THEMES_DATA = {
         "Precision Ferm",
         "AgTech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.696,
       "investor_ids": [
         "GridX"
       ]
@@ -16038,7 +16856,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\"]"
+        "agri-food"
       ],
       "tech_tags": [
         "ai-data"
@@ -16053,6 +16871,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "AgTech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.568,
       "investor_ids": [
         "aceleradora_litoral"
       ]
@@ -16107,7 +16927,8 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"climate-resource\"]"
+        "agri-food",
+        "climate-resource"
       ],
       "tech_tags": [
         "bioinputs"
@@ -16121,6 +16942,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Ag Biologicals"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.586,
       "investor_ids": [
         "SF500"
       ]
@@ -16178,7 +17001,9 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"climate-resource\", \"diagnostics-medtech\"]"
+        "agri-food",
+        "climate-resource",
+        "diagnostics-medtech"
       ],
       "tech_tags": [
         "ai-data"
@@ -16194,6 +17019,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "AgTech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.586,
       "investor_ids": [
         "AIR Capital",
         "GridX"
@@ -16253,7 +17080,8 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biomanufacturing\"]"
+        "agri-food",
+        "biomanufacturing"
       ],
       "tech_tags": [
         "ai-data",
@@ -16271,6 +17099,8 @@ window.STARTUP_THEMES_DATA = {
         "SynBio",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.772,
       "investor_ids": [
         "GridX"
       ]
@@ -16323,7 +17153,8 @@ window.STARTUP_THEMES_DATA = {
         "bio-enabled-industrial-transition"
       ],
       "domain_tags": [
-        "[\"biomaterials\", \"climate-resource\"]"
+        "biomaterials",
+        "climate-resource"
       ],
       "tech_tags": [
         "biomaterials"
@@ -16331,6 +17162,8 @@ window.STARTUP_THEMES_DATA = {
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.64,
       "investor_ids": []
     },
     {
@@ -16381,7 +17214,8 @@ window.STARTUP_THEMES_DATA = {
         "bio-enabled-industrial-transition"
       ],
       "domain_tags": [
-        "[\"biomaterials\", \"climate-resource\"]"
+        "biomaterials",
+        "climate-resource"
       ],
       "tech_tags": [
         "biomaterials"
@@ -16389,6 +17223,8 @@ window.STARTUP_THEMES_DATA = {
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.64,
       "investor_ids": []
     },
     {
@@ -16439,7 +17275,8 @@ window.STARTUP_THEMES_DATA = {
         "bio-enabled-industrial-transition"
       ],
       "domain_tags": [
-        "[\"biomaterials\", \"climate-resource\"]"
+        "biomaterials",
+        "climate-resource"
       ],
       "tech_tags": [
         "biomaterials"
@@ -16447,6 +17284,8 @@ window.STARTUP_THEMES_DATA = {
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.64,
       "investor_ids": []
     },
     {
@@ -16497,7 +17336,8 @@ window.STARTUP_THEMES_DATA = {
         "bio-enabled-industrial-transition"
       ],
       "domain_tags": [
-        "[\"biomaterials\", \"climate-resource\"]"
+        "biomaterials",
+        "climate-resource"
       ],
       "tech_tags": [
         "biomaterials"
@@ -16505,6 +17345,8 @@ window.STARTUP_THEMES_DATA = {
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.64,
       "investor_ids": [
         "aurus_capital",
         "idb_lab"
@@ -16562,7 +17404,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"biomaterials\", \"human-health\"]"
+        "biomaterials",
+        "human-health"
       ],
       "tech_tags": [
         "ai-data",
@@ -16577,6 +17420,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.844,
       "investor_ids": []
     },
     {
@@ -16627,7 +17472,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"biomaterials\", \"climate-resource\"]"
+        "biomaterials",
+        "climate-resource"
       ],
       "tech_tags": [
         "therapeutics"
@@ -16635,6 +17481,8 @@ window.STARTUP_THEMES_DATA = {
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.66,
       "investor_ids": []
     },
     {
@@ -16680,7 +17528,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.561,
       "bio_lens": [],
       "domain_tags": [
-        "[\"biomaterials\", \"climate-resource\"]"
+        "biomaterials",
+        "climate-resource"
       ],
       "tech_tags": [],
       "scale_tags": [],
@@ -16689,6 +17538,8 @@ window.STARTUP_THEMES_DATA = {
         "Therapeutics",
         "Diagnostics"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.544,
       "investor_ids": []
     },
     {
@@ -16739,7 +17590,8 @@ window.STARTUP_THEMES_DATA = {
         "bio-enabled-industrial-transition"
       ],
       "domain_tags": [
-        "[\"biomaterials\", \"climate-resource\"]"
+        "biomaterials",
+        "climate-resource"
       ],
       "tech_tags": [
         "biomaterials"
@@ -16747,6 +17599,8 @@ window.STARTUP_THEMES_DATA = {
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.64,
       "investor_ids": []
     },
     {
@@ -16797,7 +17651,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"biomaterials\", \"climate-resource\"]"
+        "biomaterials",
+        "climate-resource"
       ],
       "tech_tags": [
         "therapeutics"
@@ -16807,6 +17662,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Therapeutics"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.696,
       "investor_ids": []
     },
     {
@@ -16852,7 +17709,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.56,
       "bio_lens": [],
       "domain_tags": [
-        "[\"therapeutics-regenerative\", \"human-health\"]"
+        "therapeutics-regenerative",
+        "human-health"
       ],
       "tech_tags": [],
       "scale_tags": [],
@@ -16860,6 +17718,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "MedTech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.632,
       "investor_ids": []
     },
     {
@@ -16910,7 +17770,8 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"biomaterials\", \"climate-resource\"]"
+        "biomaterials",
+        "climate-resource"
       ],
       "tech_tags": [
         "remediation"
@@ -16918,6 +17779,8 @@ window.STARTUP_THEMES_DATA = {
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.64,
       "investor_ids": []
     },
     {
@@ -16970,7 +17833,8 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"climate-resource\"]"
+        "agri-food",
+        "climate-resource"
       ],
       "tech_tags": [
         "synthetic-biology"
@@ -16985,6 +17849,8 @@ window.STARTUP_THEMES_DATA = {
         "Ag Biologicals",
         "SynBio"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.704,
       "investor_ids": [
         "SF500"
       ]
@@ -17038,7 +17904,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\"]"
+        "agri-food"
       ],
       "tech_tags": [
         "ai-data",
@@ -17055,6 +17921,8 @@ window.STARTUP_THEMES_DATA = {
         "AgTech",
         "Biotech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.604,
       "investor_ids": [
         "GridX",
         "SOSV_IndieBio",
@@ -17109,7 +17977,8 @@ window.STARTUP_THEMES_DATA = {
         "biocentric"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biodiversity-nature\"]"
+        "agri-food",
+        "biodiversity-nature"
       ],
       "tech_tags": [
         "bioinputs"
@@ -17120,6 +17989,8 @@ window.STARTUP_THEMES_DATA = {
         "AgTech",
         "Biotech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.604,
       "investor_ids": [
         "union_acquisition_corp"
       ]
@@ -17172,7 +18043,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\"]"
+        "agri-food"
       ],
       "tech_tags": [],
       "scale_tags": [
@@ -17185,6 +18056,8 @@ window.STARTUP_THEMES_DATA = {
         "SynBio",
         "AgTech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.684,
       "investor_ids": [
         "aceleradora_litoral"
       ]
@@ -17238,7 +18111,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\"]"
+        "agri-food"
       ],
       "tech_tags": [
         "bioinputs"
@@ -17252,6 +18125,8 @@ window.STARTUP_THEMES_DATA = {
         "Ag Biologicals",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.684,
       "investor_ids": [
         "GridX"
       ]
@@ -17304,7 +18179,8 @@ window.STARTUP_THEMES_DATA = {
         "biocentric"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biodiversity-nature\"]"
+        "agri-food",
+        "biodiversity-nature"
       ],
       "tech_tags": [
         "bioinputs",
@@ -17313,6 +18189,8 @@ window.STARTUP_THEMES_DATA = {
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.632,
       "investor_ids": [
         "AIR Capital",
         "astanor",
@@ -17368,7 +18246,8 @@ window.STARTUP_THEMES_DATA = {
         "biocentric"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biodiversity-nature\"]"
+        "agri-food",
+        "biodiversity-nature"
       ],
       "tech_tags": [
         "bioinputs"
@@ -17378,6 +18257,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "AgTech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.622,
       "investor_ids": []
     },
     {
@@ -17428,7 +18309,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\"]"
+        "agri-food"
       ],
       "tech_tags": [
         "bioinputs"
@@ -17441,6 +18322,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "AgTech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.622,
       "investor_ids": [
         "Antom",
         "SF500",
@@ -17490,7 +18373,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 4.565,
       "bio_lens": [],
       "domain_tags": [
-        "[\"agri-food\", \"biodiversity-nature\"]"
+        "agri-food",
+        "biodiversity-nature"
       ],
       "tech_tags": [],
       "scale_tags": [],
@@ -17498,6 +18382,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Diagnostics"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.568,
       "investor_ids": []
     },
     {
@@ -17543,7 +18429,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 4.562,
       "bio_lens": [],
       "domain_tags": [
-        "[\"agri-food\", \"biodiversity-nature\"]"
+        "agri-food",
+        "biodiversity-nature"
       ],
       "tech_tags": [],
       "scale_tags": [],
@@ -17551,6 +18438,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "SynBio"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.604,
       "investor_ids": []
     },
     {
@@ -17600,7 +18489,8 @@ window.STARTUP_THEMES_DATA = {
         "biocentric"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biodiversity-nature\"]"
+        "agri-food",
+        "biodiversity-nature"
       ],
       "tech_tags": [
         "bioinputs"
@@ -17610,6 +18500,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Diagnostics"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.604,
       "investor_ids": []
     },
     {
@@ -17659,7 +18551,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\"]"
+        "agri-food"
       ],
       "tech_tags": [],
       "scale_tags": [
@@ -17669,6 +18561,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Ag Biologicals"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.586,
       "investor_ids": [
         "SF500"
       ]
@@ -17720,7 +18614,8 @@ window.STARTUP_THEMES_DATA = {
         "biocentric"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biodiversity-nature\"]"
+        "agri-food",
+        "biodiversity-nature"
       ],
       "tech_tags": [
         "bioinputs"
@@ -17730,6 +18625,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Ag Biologicals"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.604,
       "investor_ids": [
         "sosv"
       ]
@@ -17783,7 +18680,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\"]"
+        "agri-food"
       ],
       "tech_tags": [
         "bioinputs"
@@ -17797,6 +18694,8 @@ window.STARTUP_THEMES_DATA = {
         "Ag Biologicals",
         "AgTech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.624,
       "investor_ids": [
         "GridX"
       ]
@@ -17853,7 +18752,8 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"climate-resource\"]"
+        "agri-food",
+        "climate-resource"
       ],
       "tech_tags": [
         "ai-data"
@@ -17869,6 +18769,8 @@ window.STARTUP_THEMES_DATA = {
         "AgTech",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.684,
       "investor_ids": [
         "zentynel"
       ]
@@ -17928,7 +18830,9 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"diagnostics-medtech\", \"human-health\"]"
+        "agri-food",
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "ai-data"
@@ -17944,6 +18848,8 @@ window.STARTUP_THEMES_DATA = {
         "FoodTech",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.624,
       "investor_ids": [
         "The Ganesha Lab",
         "eatable_adventures"
@@ -17995,7 +18901,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\"]"
+        "agri-food"
       ],
       "tech_tags": [],
       "scale_tags": [
@@ -18008,6 +18914,8 @@ window.STARTUP_THEMES_DATA = {
         "Ag Biologicals",
         "Biotech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.604,
       "investor_ids": [
         "GridX"
       ]
@@ -18055,7 +18963,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 4.548,
       "bio_lens": [],
       "domain_tags": [
-        "[\"agri-food\", \"biodiversity-nature\"]"
+        "agri-food",
+        "biodiversity-nature"
       ],
       "tech_tags": [],
       "scale_tags": [],
@@ -18065,6 +18974,8 @@ window.STARTUP_THEMES_DATA = {
         "Precision Ag",
         "AI / Data"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.568,
       "investor_ids": []
     },
     {
@@ -18116,7 +19027,8 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biomaterials\"]"
+        "agri-food",
+        "biomaterials"
       ],
       "tech_tags": [
         "biomaterials"
@@ -18131,6 +19043,8 @@ window.STARTUP_THEMES_DATA = {
         "Ag Biologicals",
         "AgTech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.624,
       "investor_ids": [
         "SF500",
         "The Ganesha Lab",
@@ -18184,7 +19098,8 @@ window.STARTUP_THEMES_DATA = {
         "biocentric"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biodiversity-nature\"]"
+        "agri-food",
+        "biodiversity-nature"
       ],
       "tech_tags": [
         "bioinputs"
@@ -18194,6 +19109,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Ag Biologicals"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.604,
       "investor_ids": []
     },
     {
@@ -18243,7 +19160,8 @@ window.STARTUP_THEMES_DATA = {
         "biocentric"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biodiversity-nature\"]"
+        "agri-food",
+        "biodiversity-nature"
       ],
       "tech_tags": [
         "bioinputs"
@@ -18251,6 +19169,8 @@ window.STARTUP_THEMES_DATA = {
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.586,
       "investor_ids": []
     },
     {
@@ -18296,7 +19216,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 4.463,
       "bio_lens": [],
       "domain_tags": [
-        "[\"agri-food\", \"biodiversity-nature\"]"
+        "agri-food",
+        "biodiversity-nature"
       ],
       "tech_tags": [],
       "scale_tags": [],
@@ -18304,6 +19225,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Ag Biologicals"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.604,
       "investor_ids": [
         "sumitomo_corp"
       ]
@@ -18355,7 +19278,8 @@ window.STARTUP_THEMES_DATA = {
         "biocentric"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biodiversity-nature\"]"
+        "agri-food",
+        "biodiversity-nature"
       ],
       "tech_tags": [
         "bioinputs"
@@ -18363,6 +19287,8 @@ window.STARTUP_THEMES_DATA = {
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.55,
       "investor_ids": []
     },
     {
@@ -18408,12 +19334,15 @@ window.STARTUP_THEMES_DATA = {
       "sy": 4.44,
       "bio_lens": [],
       "domain_tags": [
-        "[\"agri-food\", \"biodiversity-nature\"]"
+        "agri-food",
+        "biodiversity-nature"
       ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.622,
       "investor_ids": []
     },
     {
@@ -18462,12 +19391,15 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biodiversity-nature\"]"
+        "agri-food",
+        "biodiversity-nature"
       ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.604,
       "investor_ids": [
         "The Ganesha Lab"
       ]
@@ -18522,7 +19454,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\"]"
+        "agri-food"
       ],
       "tech_tags": [
         "bioinputs",
@@ -18537,6 +19469,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "market_label": "ag-input nanoencapsulation technology",
       "self_cats": [],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.684,
       "investor_ids": []
     },
     {
@@ -18582,7 +19516,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 4.468,
       "bio_lens": [],
       "domain_tags": [
-        "[\"agri-food\", \"biodiversity-nature\"]"
+        "agri-food",
+        "biodiversity-nature"
       ],
       "tech_tags": [],
       "scale_tags": [],
@@ -18590,6 +19525,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Ag Biologicals"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.55,
       "investor_ids": []
     },
     {
@@ -18639,7 +19576,8 @@ window.STARTUP_THEMES_DATA = {
         "biocentric"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biodiversity-nature\"]"
+        "agri-food",
+        "biodiversity-nature"
       ],
       "tech_tags": [
         "bioinputs"
@@ -18649,6 +19587,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Ag Biologicals"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.586,
       "investor_ids": []
     },
     {
@@ -18700,7 +19640,8 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"biodiversity-nature\", \"climate-resource\"]"
+        "biodiversity-nature",
+        "climate-resource"
       ],
       "tech_tags": [
         "ai-data",
@@ -18716,6 +19657,8 @@ window.STARTUP_THEMES_DATA = {
         "NatureTech",
         "Biotech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.598,
       "investor_ids": [
         "GridX"
       ]
@@ -18772,7 +19715,8 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"climate-resource\"]"
+        "agri-food",
+        "climate-resource"
       ],
       "tech_tags": [
         "ai-data",
@@ -18790,6 +19734,8 @@ window.STARTUP_THEMES_DATA = {
         "AgTech",
         "Hardware / IoT"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.598,
       "investor_ids": []
     },
     {
@@ -18844,7 +19790,9 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biodiversity-nature\", \"climate-resource\"]"
+        "agri-food",
+        "biodiversity-nature",
+        "climate-resource"
       ],
       "tech_tags": [
         "ai-data",
@@ -18863,6 +19811,8 @@ window.STARTUP_THEMES_DATA = {
         "NatureTech",
         "Biotech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.55,
       "investor_ids": [
         "arauco_ventures"
       ]
@@ -18917,7 +19867,8 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"biodiversity-nature\", \"climate-resource\"]"
+        "biodiversity-nature",
+        "climate-resource"
       ],
       "tech_tags": [
         "ai-data",
@@ -18929,6 +19880,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "AI / Data"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.62,
       "investor_ids": []
     },
     {
@@ -18981,7 +19934,8 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"biodiversity-nature\", \"climate-resource\"]"
+        "biodiversity-nature",
+        "climate-resource"
       ],
       "tech_tags": [
         "ai-data",
@@ -18999,6 +19953,8 @@ window.STARTUP_THEMES_DATA = {
         "NatureTech",
         "AI / Data"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.598,
       "investor_ids": [
         "AIR Capital",
         "Antom",
@@ -19057,7 +20013,8 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"biodiversity-nature\", \"climate-resource\"]"
+        "biodiversity-nature",
+        "climate-resource"
       ],
       "tech_tags": [
         "ai-data",
@@ -19072,6 +20029,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biotech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.55,
       "investor_ids": [
         "DragonesVP",
         "DraperCygnus",
@@ -19127,7 +20086,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 11.305,
       "bio_lens": [],
       "domain_tags": [
-        "[\"biodiversity-nature\", \"climate-resource\"]"
+        "biodiversity-nature",
+        "climate-resource"
       ],
       "tech_tags": [
         "IoT forest sensors, machine learning, SmartForest system, carbon quantification, forest inventory, remote sensing"
@@ -19139,6 +20099,8 @@ window.STARTUP_THEMES_DATA = {
         "AI / Data",
         "Hardware / IoT"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.58,
       "investor_ids": []
     },
     {
@@ -19190,7 +20152,8 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"biodiversity-nature\", \"climate-resource\"]"
+        "biodiversity-nature",
+        "climate-resource"
       ],
       "tech_tags": [
         "carbon-mrv"
@@ -19204,6 +20167,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "NatureTech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.62,
       "investor_ids": [
         "kptl"
       ]
@@ -19258,7 +20223,8 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"biodiversity-nature\", \"climate-resource\"]"
+        "biodiversity-nature",
+        "climate-resource"
       ],
       "tech_tags": [
         "ai-data",
@@ -19273,6 +20239,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "NatureTech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.55,
       "investor_ids": [
         "kptl"
       ]
@@ -19328,7 +20296,9 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biodiversity-nature\", \"climate-resource\"]"
+        "agri-food",
+        "biodiversity-nature",
+        "climate-resource"
       ],
       "tech_tags": [
         "ai-data",
@@ -19346,6 +20316,8 @@ window.STARTUP_THEMES_DATA = {
         "NatureTech",
         "Biotech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.55,
       "investor_ids": [
         "the_yield_lab_latam"
       ]
@@ -19399,7 +20371,8 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"biodiversity-nature\", \"climate-resource\"]"
+        "biodiversity-nature",
+        "climate-resource"
       ],
       "tech_tags": [
         "ai-data"
@@ -19414,6 +20387,8 @@ window.STARTUP_THEMES_DATA = {
         "NatureTech",
         "Biotech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.58,
       "investor_ids": [
         "kaszek",
         "lowercarbon_capital",
@@ -19469,7 +20444,8 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"biodiversity-nature\", \"climate-resource\"]"
+        "biodiversity-nature",
+        "climate-resource"
       ],
       "tech_tags": [
         "carbon-mrv"
@@ -19483,6 +20459,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "NatureTech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.58,
       "investor_ids": [
         "sp_ventures"
       ]
@@ -19537,7 +20515,8 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"biodiversity-nature\", \"climate-resource\"]"
+        "biodiversity-nature",
+        "climate-resource"
       ],
       "tech_tags": [
         "ai-data",
@@ -19553,6 +20532,8 @@ window.STARTUP_THEMES_DATA = {
         "NatureTech",
         "FinTech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.55,
       "investor_ids": [
         "Antom"
       ]
@@ -19605,7 +20586,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"climate-resource\"]"
+        "climate-resource"
       ],
       "tech_tags": [
         "ai-data",
@@ -19620,6 +20601,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.644,
       "investor_ids": [
         "SF500"
       ]
@@ -19674,7 +20657,8 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"biodiversity-nature\", \"climate-resource\"]"
+        "biodiversity-nature",
+        "climate-resource"
       ],
       "tech_tags": [
         "ai-data",
@@ -19691,6 +20675,8 @@ window.STARTUP_THEMES_DATA = {
         "NatureTech",
         "FinTech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.55,
       "investor_ids": []
     },
     {
@@ -19743,7 +20729,8 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"biodiversity-nature\", \"climate-resource\"]"
+        "biodiversity-nature",
+        "climate-resource"
       ],
       "tech_tags": [
         "ai-data",
@@ -19758,6 +20745,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.62,
       "investor_ids": [
         "the_yield_lab_latam"
       ]
@@ -19816,7 +20805,10 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"diagnostics-medtech\", \"human-health\", \"therapeutics-regenerative\"]"
+        "agri-food",
+        "diagnostics-medtech",
+        "human-health",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "ai-data",
@@ -19835,6 +20827,8 @@ window.STARTUP_THEMES_DATA = {
         "Diagnostics",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.788,
       "investor_ids": [
         "GridX"
       ]
@@ -19890,7 +20884,9 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"biomaterials\", \"diagnostics-medtech\", \"human-health\"]"
+        "biomaterials",
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "biomaterials",
@@ -19905,6 +20901,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "MedTech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.8,
       "investor_ids": [
         "GridX"
       ]
@@ -19955,7 +20953,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -7.579,
       "bio_lens": [],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "smart prosthetics, embedded sensors, ACL reconstruction, real-time postoperative monitoring, orthopedic medtech"
@@ -19966,6 +20965,8 @@ window.STARTUP_THEMES_DATA = {
         "MedTech",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.66,
       "investor_ids": [
         "CITES"
       ]
@@ -20021,7 +21022,8 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"human-health\", \"therapeutics-regenerative\"]"
+        "human-health",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "ai-data",
@@ -20036,6 +21038,8 @@ window.STARTUP_THEMES_DATA = {
         "Therapeutics",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.704,
       "investor_ids": [
         "aceleradora_litoral"
       ]
@@ -20095,7 +21099,10 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biodiversity-nature\", \"diagnostics-medtech\", \"human-health\"]"
+        "agri-food",
+        "biodiversity-nature",
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "diagnostics"
@@ -20112,6 +21119,8 @@ window.STARTUP_THEMES_DATA = {
         "MedTech",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.812,
       "investor_ids": [
         "SF500"
       ]
@@ -20172,7 +21181,11 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"biomanufacturing\", \"biomaterials\", \"human-health\", \"industrial-biotech\", \"therapeutics-regenerative\"]"
+        "biomanufacturing",
+        "biomaterials",
+        "human-health",
+        "industrial-biotech",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "biomaterials",
@@ -20188,6 +21201,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.836,
       "investor_ids": [
         "GridX"
       ]
@@ -20246,7 +21261,9 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\", \"therapeutics-regenerative\"]"
+        "diagnostics-medtech",
+        "human-health",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "ai-data",
@@ -20263,6 +21280,8 @@ window.STARTUP_THEMES_DATA = {
         "Diagnostics",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.744,
       "investor_ids": [
         "GridX"
       ]
@@ -20316,7 +21335,8 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "ai-data",
@@ -20334,6 +21354,8 @@ window.STARTUP_THEMES_DATA = {
         "Diagnostics",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.672,
       "investor_ids": [
         "The Ganesha Lab"
       ]
@@ -20388,7 +21410,8 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "ai-data",
@@ -20405,6 +21428,8 @@ window.STARTUP_THEMES_DATA = {
         "Diagnostics",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.696,
       "investor_ids": [
         "AIR Capital",
         "CITES"
@@ -20458,7 +21483,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "diagnostics"
@@ -20468,6 +21494,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "MedTech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.68,
       "investor_ids": []
     },
     {
@@ -20519,7 +21547,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "diagnostics",
@@ -20534,6 +21563,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "MedTech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.752,
       "investor_ids": [
         "CITES"
       ]
@@ -20587,7 +21618,9 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"diagnostics-medtech\", \"human-health\"]"
+        "agri-food",
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "diagnostics"
@@ -20604,6 +21637,8 @@ window.STARTUP_THEMES_DATA = {
         "MedTech",
         "Hardware / IoT"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.68,
       "investor_ids": [
         "sp_ventures",
         "vox_capital"
@@ -20652,7 +21687,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.021,
       "bio_lens": [],
       "domain_tags": [
-        "[\"therapeutics-regenerative\", \"human-health\"]"
+        "therapeutics-regenerative",
+        "human-health"
       ],
       "tech_tags": [],
       "scale_tags": [],
@@ -20660,6 +21696,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.668,
       "investor_ids": []
     },
     {
@@ -20716,7 +21754,9 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"diagnostics-medtech\", \"human-health\"]"
+        "agri-food",
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "ai-data",
@@ -20733,6 +21773,8 @@ window.STARTUP_THEMES_DATA = {
         "Hardware / IoT",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.672,
       "investor_ids": [
         "The Ganesha Lab"
       ]
@@ -20789,7 +21831,8 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"human-health\", \"therapeutics-regenerative\"]"
+        "human-health",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "therapeutics"
@@ -20803,6 +21846,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.776,
       "investor_ids": [
         "CITES"
       ]
@@ -20858,7 +21903,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"human-health\", \"therapeutics-regenerative\"]"
+        "human-health",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "ai-data",
@@ -20873,6 +21919,8 @@ window.STARTUP_THEMES_DATA = {
         "Therapeutics",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.788,
       "investor_ids": [
         "CITES"
       ]
@@ -20930,7 +21978,10 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"diagnostics-medtech\", \"human-health\", \"therapeutics-regenerative\"]"
+        "agri-food",
+        "diagnostics-medtech",
+        "human-health",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "ai-data",
@@ -20945,6 +21996,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "market_label": "3D-printed personalized medicine manufacturing",
       "self_cats": [],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.832,
       "investor_ids": [
         "SF500"
       ]
@@ -21000,7 +22053,9 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\", \"therapeutics-regenerative\"]"
+        "diagnostics-medtech",
+        "human-health",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "ai-data",
@@ -21016,6 +22071,8 @@ window.STARTUP_THEMES_DATA = {
         "Therapeutics",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.832,
       "investor_ids": []
     },
     {
@@ -21072,7 +22129,10 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"diagnostics-medtech\", \"human-health\", \"therapeutics-regenerative\"]"
+        "agri-food",
+        "diagnostics-medtech",
+        "human-health",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "ai-data",
@@ -21090,6 +22150,8 @@ window.STARTUP_THEMES_DATA = {
         "Diagnostics",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.812,
       "investor_ids": [
         "CITES"
       ]
@@ -21147,7 +22209,8 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"human-health\", \"therapeutics-regenerative\"]"
+        "human-health",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "ai-data",
@@ -21162,6 +22225,8 @@ window.STARTUP_THEMES_DATA = {
         "Therapeutics",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.764,
       "investor_ids": [
         "GridX"
       ]
@@ -21215,7 +22280,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\"]"
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "ai-data",
@@ -21231,6 +22297,8 @@ window.STARTUP_THEMES_DATA = {
         "Diagnostics",
         "MedTech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.684,
       "investor_ids": [
         "The Ganesha Lab"
       ]
@@ -21285,7 +22353,9 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\", \"therapeutics-regenerative\"]"
+        "diagnostics-medtech",
+        "human-health",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "ai-data",
@@ -21299,6 +22369,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.784,
       "investor_ids": [
         "aceleradora_litoral"
       ]
@@ -21352,7 +22424,9 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\", \"therapeutics-regenerative\"]"
+        "diagnostics-medtech",
+        "human-health",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "diagnostics",
@@ -21367,6 +22441,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Diagnostics"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.772,
       "investor_ids": [
         "CITES",
         "zentynel"
@@ -21415,7 +22491,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.753,
       "bio_lens": [],
       "domain_tags": [
-        "[\"therapeutics-regenerative\", \"human-health\"]"
+        "therapeutics-regenerative",
+        "human-health"
       ],
       "tech_tags": [],
       "scale_tags": [],
@@ -21423,6 +22500,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Therapeutics"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.644,
       "investor_ids": [
         "fen_ventures"
       ]
@@ -21475,7 +22554,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"therapeutics-regenerative\", \"human-health\"]"
+        "therapeutics-regenerative",
+        "human-health"
       ],
       "tech_tags": [
         "therapeutics"
@@ -21485,6 +22565,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.724,
       "investor_ids": []
     },
     {
@@ -21530,7 +22612,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.898,
       "bio_lens": [],
       "domain_tags": [
-        "[\"therapeutics-regenerative\", \"human-health\"]"
+        "therapeutics-regenerative",
+        "human-health"
       ],
       "tech_tags": [],
       "scale_tags": [],
@@ -21538,6 +22621,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.636,
       "investor_ids": []
     },
     {
@@ -21583,7 +22668,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.264,
       "bio_lens": [],
       "domain_tags": [
-        "[\"therapeutics-regenerative\", \"human-health\"]"
+        "therapeutics-regenerative",
+        "human-health"
       ],
       "tech_tags": [],
       "scale_tags": [],
@@ -21591,6 +22677,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Therapeutics"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.632,
       "investor_ids": []
     },
     {
@@ -21644,7 +22732,8 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"human-health\", \"therapeutics-regenerative\"]"
+        "human-health",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "ai-data",
@@ -21658,6 +22747,8 @@ window.STARTUP_THEMES_DATA = {
         "Therapeutics",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.796,
       "investor_ids": [
         "AIR Capital",
         "DraperCygnus"
@@ -21711,7 +22802,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"therapeutics-regenerative\", \"human-health\"]"
+        "therapeutics-regenerative",
+        "human-health"
       ],
       "tech_tags": [
         "therapeutics"
@@ -21721,6 +22813,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Therapeutics"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.736,
       "investor_ids": []
     },
     {
@@ -21766,7 +22860,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.934,
       "bio_lens": [],
       "domain_tags": [
-        "[\"therapeutics-regenerative\", \"human-health\"]"
+        "therapeutics-regenerative",
+        "human-health"
       ],
       "tech_tags": [],
       "scale_tags": [],
@@ -21776,6 +22871,8 @@ window.STARTUP_THEMES_DATA = {
         "Therapeutics",
         "AI / Data"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.532,
       "investor_ids": []
     },
     {
@@ -21826,7 +22923,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"therapeutics-regenerative\", \"human-health\"]"
+        "therapeutics-regenerative",
+        "human-health"
       ],
       "tech_tags": [
         "therapeutics"
@@ -21837,6 +22935,8 @@ window.STARTUP_THEMES_DATA = {
         "SynBio",
         "Therapeutics"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.7,
       "investor_ids": []
     },
     {
@@ -21889,7 +22989,9 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"human-health\", \"therapeutics-regenerative\"]"
+        "agri-food",
+        "human-health",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "therapeutics"
@@ -21902,6 +23004,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Therapeutics"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.724,
       "investor_ids": [
         "CITES"
       ]
@@ -21956,7 +23060,9 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"climate-resource\", \"human-health\", \"therapeutics-regenerative\"]"
+        "climate-resource",
+        "human-health",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "therapeutics"
@@ -21970,6 +23076,8 @@ window.STARTUP_THEMES_DATA = {
         "Therapeutics",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.712,
       "investor_ids": [
         "CITES"
       ]
@@ -22022,7 +23130,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"therapeutics-regenerative\", \"human-health\"]"
+        "therapeutics-regenerative",
+        "human-health"
       ],
       "tech_tags": [
         "therapeutics"
@@ -22032,6 +23141,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Therapeutics"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.712,
       "investor_ids": []
     },
     {
@@ -22082,7 +23193,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"therapeutics-regenerative\", \"human-health\"]"
+        "therapeutics-regenerative",
+        "human-health"
       ],
       "tech_tags": [
         "therapeutics"
@@ -22090,6 +23202,8 @@ window.STARTUP_THEMES_DATA = {
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.704,
       "investor_ids": []
     },
     {
@@ -22143,7 +23257,8 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"human-health\", \"therapeutics-regenerative\"]"
+        "human-health",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "ai-data",
@@ -22158,6 +23273,8 @@ window.STARTUP_THEMES_DATA = {
         "Therapeutics",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.704,
       "investor_ids": []
     },
     {
@@ -22203,12 +23320,15 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.757,
       "bio_lens": [],
       "domain_tags": [
-        "[\"therapeutics-regenerative\", \"human-health\"]"
+        "therapeutics-regenerative",
+        "human-health"
       ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.632,
       "investor_ids": []
     },
     {
@@ -22260,7 +23380,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"therapeutics-regenerative\", \"human-health\"]"
+        "therapeutics-regenerative",
+        "human-health"
       ],
       "tech_tags": [
         "therapeutics",
@@ -22272,6 +23393,8 @@ window.STARTUP_THEMES_DATA = {
         "Therapeutics",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.748,
       "investor_ids": []
     },
     {
@@ -22328,7 +23451,10 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"diagnostics-medtech\", \"human-health\", \"therapeutics-regenerative\"]"
+        "agri-food",
+        "diagnostics-medtech",
+        "human-health",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "ai-data",
@@ -22345,6 +23471,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Therapeutics"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.852,
       "investor_ids": [
         "GridX"
       ]
@@ -22397,7 +23525,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"therapeutics-regenerative\", \"human-health\"]"
+        "therapeutics-regenerative",
+        "human-health"
       ],
       "tech_tags": [
         "therapeutics"
@@ -22405,6 +23534,8 @@ window.STARTUP_THEMES_DATA = {
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.736,
       "investor_ids": [
         "The Ganesha Lab"
       ]
@@ -22452,7 +23583,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -14.348,
       "bio_lens": [],
       "domain_tags": [
-        "[\"therapeutics-regenerative\", \"human-health\"]"
+        "therapeutics-regenerative",
+        "human-health"
       ],
       "tech_tags": [],
       "scale_tags": [],
@@ -22461,6 +23593,8 @@ window.STARTUP_THEMES_DATA = {
         "Therapeutics",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.644,
       "investor_ids": []
     },
     {
@@ -22511,7 +23645,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"therapeutics-regenerative\", \"human-health\"]"
+        "therapeutics-regenerative",
+        "human-health"
       ],
       "tech_tags": [
         "therapeutics"
@@ -22521,6 +23656,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Therapeutics"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.724,
       "investor_ids": []
     },
     {
@@ -22568,7 +23705,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.75,
       "bio_lens": [],
       "domain_tags": [
-        "[\"therapeutics-regenerative\", \"human-health\"]"
+        "therapeutics-regenerative",
+        "human-health"
       ],
       "tech_tags": [
         "small molecule discovery, apoptosis modulation, cell survival pathways, cancer therapeutics, neurodegenerative drugs"
@@ -22578,6 +23716,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Therapeutics"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.776,
       "investor_ids": []
     },
     {
@@ -22630,7 +23770,8 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"human-health\", \"therapeutics-regenerative\"]"
+        "human-health",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "therapeutics"
@@ -22643,6 +23784,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Therapeutics"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.784,
       "investor_ids": [
         "GridX"
       ]
@@ -22695,7 +23838,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"therapeutics-regenerative\", \"human-health\"]"
+        "therapeutics-regenerative",
+        "human-health"
       ],
       "tech_tags": [
         "therapeutics"
@@ -22705,6 +23849,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Therapeutics"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.748,
       "investor_ids": []
     },
     {
@@ -22755,7 +23901,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"therapeutics-regenerative\", \"human-health\"]"
+        "therapeutics-regenerative",
+        "human-health"
       ],
       "tech_tags": [
         "therapeutics"
@@ -22765,6 +23912,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Therapeutics"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.712,
       "investor_ids": []
     },
     {
@@ -22810,7 +23959,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -9.747,
       "bio_lens": [],
       "domain_tags": [
-        "[\"therapeutics-regenerative\", \"human-health\"]"
+        "therapeutics-regenerative",
+        "human-health"
       ],
       "tech_tags": [],
       "scale_tags": [],
@@ -22818,6 +23968,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Therapeutics"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.644,
       "investor_ids": []
     },
     {
@@ -22863,7 +24015,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.098,
       "bio_lens": [],
       "domain_tags": [
-        "[\"therapeutics-regenerative\", \"human-health\"]"
+        "therapeutics-regenerative",
+        "human-health"
       ],
       "tech_tags": [],
       "scale_tags": [],
@@ -22872,6 +24025,8 @@ window.STARTUP_THEMES_DATA = {
         "Precision Ferm",
         "Biomaterials"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.632,
       "investor_ids": [
         "CITES"
       ]
@@ -22930,7 +24085,10 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biomaterials\", \"human-health\", \"therapeutics-regenerative\"]"
+        "agri-food",
+        "biomaterials",
+        "human-health",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "biomaterials",
@@ -22945,6 +24103,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Therapeutics"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.844,
       "investor_ids": [
         "GridX"
       ]
@@ -23005,7 +24165,10 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biomaterials\", \"human-health\", \"therapeutics-regenerative\"]"
+        "agri-food",
+        "biomaterials",
+        "human-health",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "ai-data",
@@ -23022,6 +24185,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Therapeutics"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.82,
       "investor_ids": [
         "zentynel"
       ]
@@ -23077,7 +24242,9 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\", \"therapeutics-regenerative\"]"
+        "diagnostics-medtech",
+        "human-health",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "ai-data",
@@ -23094,6 +24261,8 @@ window.STARTUP_THEMES_DATA = {
         "Therapeutics",
         "MedTech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.804,
       "investor_ids": [
         "zentynel"
       ]
@@ -23149,7 +24318,8 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"human-health\", \"therapeutics-regenerative\"]"
+        "human-health",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "ai-data",
@@ -23163,6 +24333,8 @@ window.STARTUP_THEMES_DATA = {
         "Therapeutics",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.772,
       "investor_ids": [
         "GridX"
       ]
@@ -23217,7 +24389,8 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"human-health\", \"therapeutics-regenerative\"]"
+        "human-health",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "ai-data",
@@ -23232,6 +24405,8 @@ window.STARTUP_THEMES_DATA = {
         "Therapeutics",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.712,
       "investor_ids": [
         "GridX"
       ]
@@ -23279,7 +24454,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": -10.163,
       "bio_lens": [],
       "domain_tags": [
-        "[\"therapeutics-regenerative\", \"human-health\"]"
+        "therapeutics-regenerative",
+        "human-health"
       ],
       "tech_tags": [],
       "scale_tags": [],
@@ -23288,6 +24464,8 @@ window.STARTUP_THEMES_DATA = {
         "SynBio",
         "Therapeutics"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.62,
       "investor_ids": [
         "SOSV_IndieBio"
       ]
@@ -23346,7 +24524,10 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"diagnostics-medtech\", \"human-health\", \"therapeutics-regenerative\"]"
+        "agri-food",
+        "diagnostics-medtech",
+        "human-health",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "ai-data",
@@ -23363,6 +24544,8 @@ window.STARTUP_THEMES_DATA = {
         "Therapeutics",
         "Diagnostics"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.804,
       "investor_ids": [
         "SF500"
       ]
@@ -23416,7 +24599,8 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"human-health\", \"therapeutics-regenerative\"]"
+        "human-health",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "therapeutics"
@@ -23429,6 +24613,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Therapeutics"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.712,
       "investor_ids": [
         "SF500"
       ]
@@ -23486,7 +24672,9 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"human-health\", \"industrial-biotech\", \"therapeutics-regenerative\"]"
+        "human-health",
+        "industrial-biotech",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "therapeutics"
@@ -23501,6 +24689,8 @@ window.STARTUP_THEMES_DATA = {
         "Biomaterials",
         "HealthTech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.772,
       "investor_ids": [
         "GridX",
         "The Ganesha Lab"
@@ -23555,7 +24745,8 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"human-health\", \"therapeutics-regenerative\"]"
+        "human-health",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "therapeutics"
@@ -23570,6 +24761,8 @@ window.STARTUP_THEMES_DATA = {
         "MedTech",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.712,
       "investor_ids": [
         "GridX",
         "zentynel"
@@ -23625,7 +24818,8 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"human-health\", \"therapeutics-regenerative\"]"
+        "human-health",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "ai-data",
@@ -23640,6 +24834,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.724,
       "investor_ids": [
         "zentynel"
       ]
@@ -23696,7 +24892,9 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"diagnostics-medtech\", \"human-health\", \"therapeutics-regenerative\"]"
+        "diagnostics-medtech",
+        "human-health",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "ai-data",
@@ -23709,6 +24907,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "market_label": "brain-computer-interface therapy for depression",
       "self_cats": [],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.724,
       "investor_ids": [
         "AIR Capital"
       ]
@@ -23761,7 +24961,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"therapeutics-regenerative\", \"human-health\"]"
+        "therapeutics-regenerative",
+        "human-health"
       ],
       "tech_tags": [
         "therapeutics"
@@ -23771,6 +24972,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Therapeutics"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.7,
       "investor_ids": []
     },
     {
@@ -23826,7 +25029,9 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"human-health\", \"therapeutics-regenerative\"]"
+        "agri-food",
+        "human-health",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "ai-data",
@@ -23841,6 +25046,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Therapeutics"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.712,
       "investor_ids": [
         "SF500"
       ]
@@ -23893,7 +25100,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"therapeutics-regenerative\", \"human-health\"]"
+        "therapeutics-regenerative",
+        "human-health"
       ],
       "tech_tags": [
         "therapeutics"
@@ -23901,6 +25109,8 @@ window.STARTUP_THEMES_DATA = {
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.7,
       "investor_ids": []
     },
     {
@@ -23953,7 +25163,8 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"human-health\", \"therapeutics-regenerative\"]"
+        "human-health",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "ai-data",
@@ -23971,6 +25182,8 @@ window.STARTUP_THEMES_DATA = {
         "AI / Data",
         "HealthTech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.7,
       "investor_ids": [
         "SF500"
       ]
@@ -24025,7 +25238,8 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"human-health\", \"therapeutics-regenerative\"]"
+        "human-health",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "ai-data",
@@ -24040,6 +25254,8 @@ window.STARTUP_THEMES_DATA = {
         "Therapeutics",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.724,
       "investor_ids": [
         "GridX"
       ]
@@ -24096,7 +25312,8 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"human-health\", \"therapeutics-regenerative\"]"
+        "human-health",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "ai-data",
@@ -24112,6 +25329,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.764,
       "investor_ids": [
         "GridX"
       ]
@@ -24172,7 +25391,11 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"biodiversity-nature\", \"biomanufacturing\", \"biomaterials\", \"human-health\", \"therapeutics-regenerative\"]"
+        "biodiversity-nature",
+        "biomanufacturing",
+        "biomaterials",
+        "human-health",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "biomanufacturing",
@@ -24187,6 +25410,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "market_label": "bioengineered corneal tissue for vision restoration",
       "self_cats": [],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.832,
       "investor_ids": [
         "GridX"
       ]
@@ -24241,7 +25466,8 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"human-health\", \"therapeutics-regenerative\"]"
+        "human-health",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "ai-data",
@@ -24255,6 +25481,8 @@ window.STARTUP_THEMES_DATA = {
         "Therapeutics",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.716,
       "investor_ids": [
         "AIR Capital",
         "GridX",
@@ -24310,7 +25538,8 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"human-health\", \"therapeutics-regenerative\"]"
+        "human-health",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "therapeutics"
@@ -24323,6 +25552,8 @@ window.STARTUP_THEMES_DATA = {
         "Therapeutics",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.724,
       "investor_ids": [
         "CITES"
       ]
@@ -24382,7 +25613,8 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"human-health\", \"therapeutics-regenerative\"]"
+        "human-health",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "ai-data",
@@ -24399,6 +25631,8 @@ window.STARTUP_THEMES_DATA = {
         "Therapeutics",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.904,
       "investor_ids": [
         "GridX"
       ]
@@ -24460,7 +25694,11 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"biodiversity-nature\", \"biomanufacturing\", \"biomaterials\", \"human-health\", \"therapeutics-regenerative\"]"
+        "biodiversity-nature",
+        "biomanufacturing",
+        "biomaterials",
+        "human-health",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "ai-data",
@@ -24479,6 +25717,8 @@ window.STARTUP_THEMES_DATA = {
         "SynBio",
         "Therapeutics"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.832,
       "investor_ids": [
         "GridX"
       ]
@@ -24526,12 +25766,15 @@ window.STARTUP_THEMES_DATA = {
       "sy": 7.742,
       "bio_lens": [],
       "domain_tags": [
-        "[\"agri-food\", \"biodiversity-nature\"]"
+        "agri-food",
+        "biodiversity-nature"
       ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.622,
       "investor_ids": [
         "global_fund_coral_reefs"
       ]
@@ -24591,7 +25834,9 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biomanufacturing\", \"industrial-biotech\"]"
+        "agri-food",
+        "biomanufacturing",
+        "industrial-biotech"
       ],
       "tech_tags": [
         "bioinputs",
@@ -24609,6 +25854,8 @@ window.STARTUP_THEMES_DATA = {
         "Ag Biologicals",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.728,
       "investor_ids": []
     },
     {
@@ -24658,7 +25905,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 4.737,
       "bio_lens": [],
       "domain_tags": [
-        "[\"agri-food\", \"biodiversity-nature\"]"
+        "agri-food",
+        "biodiversity-nature"
       ],
       "tech_tags": [
         "biopesticides, biofungicides, antifungal biotech, crop protection, sustainable agriculture"
@@ -24670,6 +25918,8 @@ window.STARTUP_THEMES_DATA = {
         "AgTech",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.632,
       "investor_ids": []
     },
     {
@@ -24720,7 +25970,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\"]"
+        "agri-food"
       ],
       "tech_tags": [
         "ai-data",
@@ -24735,6 +25985,8 @@ window.STARTUP_THEMES_DATA = {
         "Ag Biologicals",
         "Biotech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.586,
       "investor_ids": [
         "GridX"
       ]
@@ -24782,12 +26034,15 @@ window.STARTUP_THEMES_DATA = {
       "sy": 4.683,
       "bio_lens": [],
       "domain_tags": [
-        "[\"agri-food\", \"biodiversity-nature\"]"
+        "agri-food",
+        "biodiversity-nature"
       ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.622,
       "investor_ids": []
     },
     {
@@ -24837,7 +26092,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 4.694,
       "bio_lens": [],
       "domain_tags": [
-        "[\"agri-food\", \"biodiversity-nature\"]"
+        "agri-food",
+        "biodiversity-nature"
       ],
       "tech_tags": [
         "microbial consortia, biofertilizers, agrobiotechnology, beneficial microorganisms, crop bioinputs"
@@ -24849,6 +26105,8 @@ window.STARTUP_THEMES_DATA = {
         "AgTech",
         "Biotech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.532,
       "investor_ids": []
     },
     {
@@ -24897,7 +26155,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 7.694,
       "bio_lens": [],
       "domain_tags": [
-        "[\"agri-food\", \"biodiversity-nature\"]"
+        "agri-food",
+        "biodiversity-nature"
       ],
       "tech_tags": [
         "Trichogramma biocontrol, biological insecticides, digital pest monitoring, predictive analytics, soy and corn crops"
@@ -24909,6 +26168,8 @@ window.STARTUP_THEMES_DATA = {
         "AgTech",
         "Biotech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.586,
       "investor_ids": []
     },
     {
@@ -24954,12 +26215,15 @@ window.STARTUP_THEMES_DATA = {
       "sy": 7.743,
       "bio_lens": [],
       "domain_tags": [
-        "[\"agri-food\", \"biodiversity-nature\"]"
+        "agri-food",
+        "biodiversity-nature"
       ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.586,
       "investor_ids": []
     },
     {
@@ -25008,7 +26272,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 7.984,
       "bio_lens": [],
       "domain_tags": [
-        "[\"agri-food\", \"biodiversity-nature\"]"
+        "agri-food",
+        "biodiversity-nature"
       ],
       "tech_tags": [
         "plant tissue culture, Quillaja saponaria, biofungicide, QS-21 adjuvant, biofactory platform"
@@ -25016,6 +26281,8 @@ window.STARTUP_THEMES_DATA = {
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.568,
       "investor_ids": [
         "The Ganesha Lab"
       ]
@@ -25074,7 +26341,9 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biomanufacturing\", \"human-health\"]"
+        "agri-food",
+        "biomanufacturing",
+        "human-health"
       ],
       "tech_tags": [
         "ai-data",
@@ -25093,6 +26362,8 @@ window.STARTUP_THEMES_DATA = {
         "AgTech",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.628,
       "investor_ids": [
         "The Ganesha Lab"
       ]
@@ -25145,7 +26416,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\"]"
+        "agri-food"
       ],
       "tech_tags": [
         "bioinputs"
@@ -25158,6 +26429,8 @@ window.STARTUP_THEMES_DATA = {
         "Ag Biologicals",
         "Biotech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.604,
       "investor_ids": [
         "sp_ventures"
       ]
@@ -25210,7 +26483,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\"]"
+        "agri-food"
       ],
       "tech_tags": [
         "bioinputs"
@@ -25223,6 +26496,8 @@ window.STARTUP_THEMES_DATA = {
         "Ag Biologicals",
         "Biotech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.586,
       "investor_ids": [
         "sp_ventures"
       ]
@@ -25270,7 +26545,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 7.747,
       "bio_lens": [],
       "domain_tags": [
-        "[\"agri-food\", \"biodiversity-nature\"]"
+        "agri-food",
+        "biodiversity-nature"
       ],
       "tech_tags": [],
       "scale_tags": [],
@@ -25278,6 +26554,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Ag Biologicals"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.622,
       "investor_ids": [
         "sp_ventures"
       ]
@@ -25333,7 +26611,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\"]"
+        "agri-food"
       ],
       "tech_tags": [
         "ai-data",
@@ -25352,6 +26630,8 @@ window.STARTUP_THEMES_DATA = {
         "AgTech",
         "Biotech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.532,
       "investor_ids": []
     },
     {
@@ -25404,7 +26684,8 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"climate-resource\"]"
+        "agri-food",
+        "climate-resource"
       ],
       "tech_tags": [
         "bioinputs"
@@ -25418,6 +26699,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biotech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.604,
       "investor_ids": [
         "angra_partners",
         "sp_ventures"
@@ -25473,7 +26756,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\"]"
+        "agri-food"
       ],
       "tech_tags": [
         "ai-data",
@@ -25490,6 +26773,8 @@ window.STARTUP_THEMES_DATA = {
         "AgTech",
         "Biotech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.544,
       "investor_ids": [
         "aqua_capital",
         "sp_ventures"
@@ -25553,7 +26838,9 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"human-health\", \"industrial-biotech\"]"
+        "agri-food",
+        "human-health",
+        "industrial-biotech"
       ],
       "tech_tags": [
         "ai-data",
@@ -25571,6 +26858,8 @@ window.STARTUP_THEMES_DATA = {
         "SynBio",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.868,
       "investor_ids": [
         "GridX"
       ]
@@ -25618,7 +26907,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 7.757,
       "bio_lens": [],
       "domain_tags": [
-        "[\"agri-food\", \"biodiversity-nature\"]"
+        "agri-food",
+        "biodiversity-nature"
       ],
       "tech_tags": [],
       "scale_tags": [],
@@ -25627,6 +26917,8 @@ window.STARTUP_THEMES_DATA = {
         "Ag Biologicals",
         "Biomanufacturing"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.586,
       "investor_ids": []
     },
     {
@@ -25685,7 +26977,10 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biodiversity-nature\", \"biomaterials\", \"human-health\"]"
+        "agri-food",
+        "biodiversity-nature",
+        "biomaterials",
+        "human-health"
       ],
       "tech_tags": [
         "ai-data",
@@ -25702,6 +26997,8 @@ window.STARTUP_THEMES_DATA = {
         "NatureTech",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.712,
       "investor_ids": [
         "kptl"
       ]
@@ -25762,7 +27059,11 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biomanufacturing\", \"biomaterials\", \"human-health\", \"industrial-biotech\"]"
+        "agri-food",
+        "biomanufacturing",
+        "biomaterials",
+        "human-health",
+        "industrial-biotech"
       ],
       "tech_tags": [
         "ai-data",
@@ -25782,6 +27083,8 @@ window.STARTUP_THEMES_DATA = {
         "Precision Ferm",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.812,
       "investor_ids": []
     },
     {
@@ -25833,7 +27136,8 @@ window.STARTUP_THEMES_DATA = {
         "bio-enabled-industrial-transition"
       ],
       "domain_tags": [
-        "[\"biomanufacturing\", \"industrial-biotech\"]"
+        "biomanufacturing",
+        "industrial-biotech"
       ],
       "tech_tags": [
         "biomanufacturing",
@@ -25852,6 +27156,8 @@ window.STARTUP_THEMES_DATA = {
         "Precision Ferm",
         "Biomanufacturing"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.96,
       "investor_ids": []
     },
     {
@@ -25907,7 +27213,9 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biomanufacturing\", \"human-health\"]"
+        "agri-food",
+        "biomanufacturing",
+        "human-health"
       ],
       "tech_tags": [
         "fermentation"
@@ -25922,6 +27230,8 @@ window.STARTUP_THEMES_DATA = {
         "FoodTech",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.728,
       "investor_ids": [
         "AIR Capital",
         "glocal",
@@ -25981,7 +27291,9 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biomanufacturing\", \"climate-resource\"]"
+        "agri-food",
+        "biomanufacturing",
+        "climate-resource"
       ],
       "tech_tags": [
         "ai-data",
@@ -26000,6 +27312,8 @@ window.STARTUP_THEMES_DATA = {
         "Precision Ferm",
         "FoodTech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.72,
       "investor_ids": [
         "blue_horizon"
       ]
@@ -26055,7 +27369,8 @@ window.STARTUP_THEMES_DATA = {
         "bio-enabled-industrial-transition"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biomanufacturing\"]"
+        "agri-food",
+        "biomanufacturing"
       ],
       "tech_tags": [
         "ai-data",
@@ -26072,6 +27387,8 @@ window.STARTUP_THEMES_DATA = {
         "Precision Ferm",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.728,
       "investor_ids": [
         "zentynel"
       ]
@@ -26133,7 +27450,10 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biomanufacturing\", \"human-health\", \"therapeutics-regenerative\"]"
+        "agri-food",
+        "biomanufacturing",
+        "human-health",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "fermentation",
@@ -26147,6 +27467,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.808,
       "investor_ids": [
         "sp_ventures"
       ]
@@ -26200,7 +27522,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\"]"
+        "agri-food"
       ],
       "tech_tags": [
         "ai-data"
@@ -26213,6 +27535,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biotech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.604,
       "investor_ids": [
         "sp_ventures"
       ]
@@ -26266,7 +27590,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"human-health\", \"therapeutics-regenerative\"]"
+        "human-health",
+        "therapeutics-regenerative"
       ],
       "tech_tags": [
         "ai-data",
@@ -26281,6 +27606,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Therapeutics"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.74,
       "investor_ids": [
         "GridX"
       ]
@@ -26336,7 +27663,9 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"diagnostics-medtech\", \"human-health\"]"
+        "agri-food",
+        "diagnostics-medtech",
+        "human-health"
       ],
       "tech_tags": [
         "ai-data",
@@ -26351,6 +27680,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "AI / Data"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.526,
       "investor_ids": [
         "sp_ventures"
       ]
@@ -26409,7 +27740,8 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biomanufacturing\"]"
+        "agri-food",
+        "biomanufacturing"
       ],
       "tech_tags": [
         "biomanufacturing",
@@ -26429,6 +27761,8 @@ window.STARTUP_THEMES_DATA = {
         "Precision Ferm",
         "FoodTech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.812,
       "investor_ids": [
         "GridX"
       ]
@@ -26482,7 +27816,8 @@ window.STARTUP_THEMES_DATA = {
         "bio-enabled-industrial-transition"
       ],
       "domain_tags": [
-        "[\"biomanufacturing\", \"industrial-biotech\"]"
+        "biomanufacturing",
+        "industrial-biotech"
       ],
       "tech_tags": [
         "ai-data",
@@ -26496,6 +27831,8 @@ window.STARTUP_THEMES_DATA = {
         "Biomanufacturing",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.66,
       "investor_ids": [
         "GridX"
       ]
@@ -26555,7 +27892,9 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"climate-resource\", \"human-health\"]"
+        "agri-food",
+        "climate-resource",
+        "human-health"
       ],
       "tech_tags": [
         "ai-data",
@@ -26571,6 +27910,8 @@ window.STARTUP_THEMES_DATA = {
         "Ag Biologicals",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.696,
       "investor_ids": [
         "agrex",
         "bb_agro_ventures",
@@ -26634,7 +27975,9 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biomanufacturing\", \"industrial-biotech\"]"
+        "agri-food",
+        "biomanufacturing",
+        "industrial-biotech"
       ],
       "tech_tags": [
         "ai-data",
@@ -26653,6 +27996,8 @@ window.STARTUP_THEMES_DATA = {
         "Precision Ferm",
         "Biomanufacturing"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.828,
       "investor_ids": []
     },
     {
@@ -26707,7 +28052,8 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biodiversity-nature\"]"
+        "agri-food",
+        "biodiversity-nature"
       ],
       "tech_tags": [
         "ai-data"
@@ -26722,6 +28068,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.648,
       "investor_ids": [
         "GridX",
         "eatable_adventures"
@@ -26781,7 +28129,8 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"climate-resource\"]"
+        "agri-food",
+        "climate-resource"
       ],
       "tech_tags": [
         "ai-data",
@@ -26800,6 +28149,8 @@ window.STARTUP_THEMES_DATA = {
         "Diagnostics",
         "Precision Ferm"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.78,
       "investor_ids": [
         "corteva_catalyst",
         "mov_investimentos",
@@ -26859,7 +28210,8 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biomanufacturing\"]"
+        "agri-food",
+        "biomanufacturing"
       ],
       "tech_tags": [
         "ai-data",
@@ -26879,6 +28231,8 @@ window.STARTUP_THEMES_DATA = {
         "FoodTech",
         "Biotech"
       ],
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.708,
       "investor_ids": [
         "SF500"
       ]
@@ -26932,7 +28286,8 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"climate-resource\"]"
+        "agri-food",
+        "climate-resource"
       ],
       "tech_tags": [
         "ai-data"
@@ -26946,6 +28301,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "AgTech"
       ],
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.73,
       "investor_ids": [
         "sp_ventures"
       ]
@@ -26998,7 +28355,7 @@ window.STARTUP_THEMES_DATA = {
         "biocentric"
       ],
       "domain_tags": [
-        "[\"agri-food\"]"
+        "agri-food"
       ],
       "tech_tags": [
         "ai-data"
@@ -27009,6 +28366,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "market_label": "b2b ag-input market infrastructure",
       "self_cats": [],
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.745,
       "investor_ids": [
         "pampa_start"
       ]
@@ -27056,7 +28415,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 8.391,
       "bio_lens": [],
       "domain_tags": [
-        "[\"agri-food\", \"climate-resource\"]"
+        "agri-food",
+        "climate-resource"
       ],
       "tech_tags": [],
       "scale_tags": [],
@@ -27064,6 +28424,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Precision Ag"
       ],
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.63,
       "investor_ids": [
         "sp_ventures"
       ]
@@ -27118,7 +28480,8 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"climate-resource\"]"
+        "agri-food",
+        "climate-resource"
       ],
       "tech_tags": [
         "ai-data"
@@ -27130,6 +28493,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "market_label": "climate-smart agronomic and irrigation intelligence platform",
       "self_cats": [],
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.68,
       "investor_ids": [
         "sp_ventures",
         "the_yield_lab_latam"
@@ -27184,7 +28549,8 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"climate-resource\"]"
+        "agri-food",
+        "climate-resource"
       ],
       "tech_tags": [],
       "scale_tags": [
@@ -27194,6 +28560,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "market_label": "agricultural asset and traceability infrastructure",
       "self_cats": [],
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.72,
       "investor_ids": [
         "barn_investimentos",
         "base_capital",
@@ -27251,7 +28619,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\"]"
+        "agri-food"
       ],
       "tech_tags": [
         "ai-data",
@@ -27264,6 +28632,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "market_label": "agricultural risk, supply-chain and ESG intelligence platform",
       "self_cats": [],
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.695,
       "investor_ids": [
         "kptl"
       ]
@@ -27319,7 +28689,8 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"climate-resource\"]"
+        "agri-food",
+        "climate-resource"
       ],
       "tech_tags": [
         "ai-data"
@@ -27334,6 +28705,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "market_label": "vertical farming fresh produce platform",
       "self_cats": [],
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.705,
       "investor_ids": [
         "chileglobal_ventures"
       ]
@@ -27388,7 +28761,8 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"climate-resource\"]"
+        "agri-food",
+        "climate-resource"
       ],
       "tech_tags": [
         "ai-data"
@@ -27403,6 +28777,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "FoodTech"
       ],
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.73,
       "investor_ids": [
         "acre_venture_partners",
         "globo_ventures",
@@ -27460,7 +28836,7 @@ window.STARTUP_THEMES_DATA = {
         "biocentric"
       ],
       "domain_tags": [
-        "[\"agri-food\"]"
+        "agri-food"
       ],
       "tech_tags": [
         "ai-data",
@@ -27474,6 +28850,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Precision Ag"
       ],
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.69,
       "investor_ids": [
         "kamay_ventures",
         "the_yield_lab_latam"
@@ -27529,7 +28907,8 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biodiversity-nature\"]"
+        "agri-food",
+        "biodiversity-nature"
       ],
       "tech_tags": [
         "ai-data",
@@ -27545,6 +28924,8 @@ window.STARTUP_THEMES_DATA = {
         "SaaS / Platform",
         "Hardware / IoT"
       ],
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.73,
       "investor_ids": [
         "the_yield_lab_latam"
       ]
@@ -27598,7 +28979,7 @@ window.STARTUP_THEMES_DATA = {
         "biocentric"
       ],
       "domain_tags": [
-        "[\"agri-food\"]"
+        "agri-food"
       ],
       "tech_tags": [
         "ai-data"
@@ -27612,6 +28993,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "AgTech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.598,
       "investor_ids": [
         "inventure"
       ]
@@ -27662,7 +29045,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 8.175,
       "bio_lens": [],
       "domain_tags": [
-        "[\"agri-food\", \"climate-resource\"]"
+        "agri-food",
+        "climate-resource"
       ],
       "tech_tags": [
         "NODES platform, G×E×M modeling, probabilistic simulation, environmental fingerprinting, API integration"
@@ -27673,6 +29057,8 @@ window.STARTUP_THEMES_DATA = {
         "Precision Ag",
         "AgTech"
       ],
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.735,
       "investor_ids": [
         "newtopia_vc"
       ]
@@ -27724,7 +29110,7 @@ window.STARTUP_THEMES_DATA = {
         "biocentric"
       ],
       "domain_tags": [
-        "[\"agri-food\"]"
+        "agri-food"
       ],
       "tech_tags": [
         "ai-data"
@@ -27737,6 +29123,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "AgTech"
       ],
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.745,
       "investor_ids": [
         "the_yield_lab_latam"
       ]
@@ -27784,7 +29172,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 8.28,
       "bio_lens": [],
       "domain_tags": [
-        "[\"agri-food\", \"climate-resource\"]"
+        "agri-food",
+        "climate-resource"
       ],
       "tech_tags": [],
       "scale_tags": [],
@@ -27793,6 +29182,8 @@ window.STARTUP_THEMES_DATA = {
         "MedTech",
         "AI / Data"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.55,
       "investor_ids": [
         "sp_ventures"
       ]
@@ -27846,7 +29237,8 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"climate-resource\"]"
+        "agri-food",
+        "climate-resource"
       ],
       "tech_tags": [
         "ai-data"
@@ -27861,6 +29253,8 @@ window.STARTUP_THEMES_DATA = {
         "Precision Ag",
         "AI / Data"
       ],
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.705,
       "investor_ids": [
         "glocal",
         "inventure",
@@ -27911,7 +29305,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 8.298,
       "bio_lens": [],
       "domain_tags": [
-        "[\"agri-food\", \"climate-resource\"]"
+        "agri-food",
+        "climate-resource"
       ],
       "tech_tags": [],
       "scale_tags": [],
@@ -27920,6 +29315,8 @@ window.STARTUP_THEMES_DATA = {
         "Precision Ag",
         "AI / Data"
       ],
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.62,
       "investor_ids": [
         "glocal"
       ]
@@ -27972,7 +29369,8 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"climate-resource\"]"
+        "agri-food",
+        "climate-resource"
       ],
       "tech_tags": [
         "ai-data"
@@ -27988,6 +29386,8 @@ window.STARTUP_THEMES_DATA = {
         "AI / Data",
         "AgTech"
       ],
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.63,
       "investor_ids": [
         "newtopia_vc"
       ]
@@ -28039,7 +29439,7 @@ window.STARTUP_THEMES_DATA = {
         "biocentric"
       ],
       "domain_tags": [
-        "[\"agri-food\"]"
+        "agri-food"
       ],
       "tech_tags": [
         "ai-data",
@@ -28055,6 +29455,8 @@ window.STARTUP_THEMES_DATA = {
         "AgTech",
         "SaaS / Platform"
       ],
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.655,
       "investor_ids": [
         "inventure",
         "pampa_start",
@@ -28110,7 +29512,8 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"human-health\"]"
+        "agri-food",
+        "human-health"
       ],
       "tech_tags": [
         "ai-data"
@@ -28124,6 +29527,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "FoodTech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.556,
       "investor_ids": [
         "sp_ventures"
       ]
@@ -28176,7 +29581,8 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"climate-resource\"]"
+        "agri-food",
+        "climate-resource"
       ],
       "tech_tags": [
         "ai-data"
@@ -28191,6 +29597,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "SaaS / Platform"
       ],
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.77,
       "investor_ids": [
         "sp_ventures"
       ]
@@ -28247,7 +29655,8 @@ window.STARTUP_THEMES_DATA = {
         "bio-enabled-industrial-transition"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biomanufacturing\"]"
+        "agri-food",
+        "biomanufacturing"
       ],
       "tech_tags": [
         "ai-data",
@@ -28264,6 +29673,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Hardware / IoT"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.592,
       "investor_ids": [
         "sp_ventures"
       ]
@@ -28317,7 +29728,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\"]"
+        "agri-food"
       ],
       "tech_tags": [
         "ai-data",
@@ -28331,6 +29742,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Precision Ag"
       ],
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.73,
       "investor_ids": [
         "sp_ventures"
       ]
@@ -28378,7 +29791,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.301,
       "bio_lens": [],
       "domain_tags": [
-        "[\"agri-food\", \"climate-resource\"]"
+        "agri-food",
+        "climate-resource"
       ],
       "tech_tags": [],
       "scale_tags": [],
@@ -28387,6 +29801,8 @@ window.STARTUP_THEMES_DATA = {
         "Precision Ag",
         "Hardware / IoT"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.55,
       "investor_ids": []
     },
     {
@@ -28432,7 +29848,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 8.401,
       "bio_lens": [],
       "domain_tags": [
-        "[\"agri-food\", \"climate-resource\"]"
+        "agri-food",
+        "climate-resource"
       ],
       "tech_tags": [],
       "scale_tags": [],
@@ -28441,6 +29858,8 @@ window.STARTUP_THEMES_DATA = {
         "Precision Ag",
         "Hardware / IoT"
       ],
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.62,
       "investor_ids": [
         "chileglobal_ventures"
       ]
@@ -28493,7 +29912,7 @@ window.STARTUP_THEMES_DATA = {
         "biocentric"
       ],
       "domain_tags": [
-        "[\"agri-food\"]"
+        "agri-food"
       ],
       "tech_tags": [
         "ai-data"
@@ -28506,6 +29925,8 @@ window.STARTUP_THEMES_DATA = {
         "Precision Ag",
         "AgTech"
       ],
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.705,
       "investor_ids": [
         "sp_ventures"
       ]
@@ -28559,7 +29980,8 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"climate-resource\"]"
+        "agri-food",
+        "climate-resource"
       ],
       "tech_tags": [
         "ai-data"
@@ -28575,6 +29997,8 @@ window.STARTUP_THEMES_DATA = {
         "AgTech",
         "Hardware / IoT"
       ],
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.67,
       "investor_ids": [
         "AIR Capital"
       ]
@@ -28627,7 +30051,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\"]"
+        "agri-food"
       ],
       "tech_tags": [
         "ai-data",
@@ -28640,6 +30064,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "market_label": "unified API and data infrastructure for food and agriculture",
       "self_cats": [],
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.63,
       "investor_ids": [
         "sp_ventures"
       ]
@@ -28694,7 +30120,8 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"climate-resource\"]"
+        "agri-food",
+        "climate-resource"
       ],
       "tech_tags": [
         "ai-data"
@@ -28709,6 +30136,8 @@ window.STARTUP_THEMES_DATA = {
         "FoodTech",
         "Biotech"
       ],
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.705,
       "investor_ids": [
         "newtopia_vc"
       ]
@@ -28761,7 +30190,8 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"climate-resource\"]"
+        "agri-food",
+        "climate-resource"
       ],
       "tech_tags": [],
       "scale_tags": [
@@ -28771,6 +30201,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "market_label": "carbon-neutral organic dairy brand",
       "self_cats": [],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.586,
       "investor_ids": []
     },
     {
@@ -28821,7 +30253,8 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"climate-resource\"]"
+        "agri-food",
+        "climate-resource"
       ],
       "tech_tags": [],
       "scale_tags": [
@@ -28832,6 +30265,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "FoodTech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.61,
       "investor_ids": [
         "kamay_ventures"
       ]
@@ -28886,7 +30321,8 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"climate-resource\"]"
+        "agri-food",
+        "climate-resource"
       ],
       "tech_tags": [
         "ai-data"
@@ -28901,6 +30337,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "AgTech"
       ],
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.645,
       "investor_ids": [
         "sp_ventures"
       ]
@@ -28954,7 +30392,9 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biodiversity-nature\", \"climate-resource\"]"
+        "agri-food",
+        "biodiversity-nature",
+        "climate-resource"
       ],
       "tech_tags": [
         "remote-sensing"
@@ -28969,6 +30409,8 @@ window.STARTUP_THEMES_DATA = {
         "NatureTech",
         "Hardware / IoT"
       ],
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.63,
       "investor_ids": []
     },
     {
@@ -29020,7 +30462,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\"]"
+        "agri-food"
       ],
       "tech_tags": [
         "ai-data"
@@ -29033,6 +30475,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "AgTech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.526,
       "investor_ids": [
         "barn_investimentos"
       ]
@@ -29085,7 +30529,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\"]"
+        "agri-food"
       ],
       "tech_tags": [
         "ai-data"
@@ -29099,6 +30543,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "AgTech"
       ],
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.755,
       "investor_ids": [
         "the_yield_lab_latam"
       ]
@@ -29154,7 +30600,8 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"climate-resource\"]"
+        "agri-food",
+        "climate-resource"
       ],
       "tech_tags": [
         "ai-data",
@@ -29168,6 +30615,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Hardware / IoT"
       ],
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.67,
       "investor_ids": [
         "inventure",
         "kamay_ventures"
@@ -29222,7 +30671,8 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"climate-resource\"]"
+        "agri-food",
+        "climate-resource"
       ],
       "tech_tags": [
         "ai-data",
@@ -29238,6 +30688,8 @@ window.STARTUP_THEMES_DATA = {
         "Precision Ag",
         "SaaS / Platform"
       ],
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.64,
       "investor_ids": []
     },
     {
@@ -29286,7 +30738,7 @@ window.STARTUP_THEMES_DATA = {
         "biocentric"
       ],
       "domain_tags": [
-        "[\"agri-food\"]"
+        "agri-food"
       ],
       "tech_tags": [
         "ai-data"
@@ -29300,6 +30752,8 @@ window.STARTUP_THEMES_DATA = {
         "Precision Ag",
         "AgTech"
       ],
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.63,
       "investor_ids": []
     },
     {
@@ -29348,7 +30802,7 @@ window.STARTUP_THEMES_DATA = {
         "biocentric"
       ],
       "domain_tags": [
-        "[\"agri-food\"]"
+        "agri-food"
       ],
       "tech_tags": [
         "ai-data"
@@ -29361,6 +30815,8 @@ window.STARTUP_THEMES_DATA = {
         "Precision Ag",
         "AgTech"
       ],
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.655,
       "investor_ids": [
         "pampa_start"
       ]
@@ -29412,7 +30868,7 @@ window.STARTUP_THEMES_DATA = {
         "biocentric"
       ],
       "domain_tags": [
-        "[\"agri-food\"]"
+        "agri-food"
       ],
       "tech_tags": [
         "ai-data"
@@ -29425,6 +30881,8 @@ window.STARTUP_THEMES_DATA = {
         "Precision Ag",
         "AgTech"
       ],
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.705,
       "investor_ids": [
         "the_yield_lab_latam"
       ]
@@ -29478,7 +30936,8 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"climate-resource\"]"
+        "agri-food",
+        "climate-resource"
       ],
       "tech_tags": [
         "ai-data"
@@ -29491,6 +30950,8 @@ window.STARTUP_THEMES_DATA = {
         "Precision Ag",
         "AgTech"
       ],
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.63,
       "investor_ids": [
         "kptl"
       ]
@@ -29542,7 +31003,7 @@ window.STARTUP_THEMES_DATA = {
         "biocentric"
       ],
       "domain_tags": [
-        "[\"agri-food\"]"
+        "agri-food"
       ],
       "tech_tags": [
         "ai-data"
@@ -29558,6 +31019,8 @@ window.STARTUP_THEMES_DATA = {
         "AgTech",
         "SaaS / Platform"
       ],
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.755,
       "investor_ids": [
         "lightsmith_group"
       ]
@@ -29609,7 +31072,7 @@ window.STARTUP_THEMES_DATA = {
         "biocentric"
       ],
       "domain_tags": [
-        "[\"agri-food\"]"
+        "agri-food"
       ],
       "tech_tags": [
         "ai-data",
@@ -29623,6 +31086,8 @@ window.STARTUP_THEMES_DATA = {
         "Precision Ag",
         "AgTech"
       ],
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.63,
       "investor_ids": [
         "the_yield_lab_latam"
       ]
@@ -29670,7 +31135,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 8.248,
       "bio_lens": [],
       "domain_tags": [
-        "[\"agri-food\", \"climate-resource\"]"
+        "agri-food",
+        "climate-resource"
       ],
       "tech_tags": [],
       "scale_tags": [],
@@ -29679,6 +31145,8 @@ window.STARTUP_THEMES_DATA = {
         "AgTech",
         "SaaS / Platform"
       ],
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.62,
       "investor_ids": [
         "barn_investimentos",
         "monashees",
@@ -29731,7 +31199,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 8.377,
       "bio_lens": [],
       "domain_tags": [
-        "[\"agri-food\", \"climate-resource\"]"
+        "agri-food",
+        "climate-resource"
       ],
       "tech_tags": [
         "computer vision, automated traps, biostatistical modeling, satellite data, pest identification AI"
@@ -29741,6 +31210,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "AI / Data"
       ],
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.67,
       "investor_ids": []
     },
     {
@@ -29791,7 +31262,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\"]"
+        "agri-food"
       ],
       "tech_tags": [
         "ai-data"
@@ -29807,6 +31278,8 @@ window.STARTUP_THEMES_DATA = {
         "Precision Ag",
         "AgTech"
       ],
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.63,
       "investor_ids": [
         "kptl"
       ]
@@ -29860,7 +31333,7 @@ window.STARTUP_THEMES_DATA = {
         "bio-enabled-industrial-transition"
       ],
       "domain_tags": [
-        "[\"agri-food\"]"
+        "agri-food"
       ],
       "tech_tags": [
         "ai-data",
@@ -29875,6 +31348,8 @@ window.STARTUP_THEMES_DATA = {
         "AgTech",
         "Hardware / IoT"
       ],
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.63,
       "investor_ids": [
         "the_yield_lab_latam"
       ]
@@ -29929,7 +31404,8 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biodiversity-nature\"]"
+        "agri-food",
+        "biodiversity-nature"
       ],
       "tech_tags": [
         "ai-data",
@@ -29945,6 +31421,8 @@ window.STARTUP_THEMES_DATA = {
         "Precision Ag",
         "AgTech"
       ],
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.645,
       "investor_ids": [
         "The Ganesha Lab"
       ]
@@ -29998,7 +31476,8 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"climate-resource\"]"
+        "agri-food",
+        "climate-resource"
       ],
       "tech_tags": [
         "ai-data"
@@ -30012,6 +31491,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "AgTech"
       ],
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.755,
       "investor_ids": []
     },
     {
@@ -30062,7 +31543,7 @@ window.STARTUP_THEMES_DATA = {
         "biocentric"
       ],
       "domain_tags": [
-        "[\"agri-food\"]"
+        "agri-food"
       ],
       "tech_tags": [
         "ai-data",
@@ -30081,6 +31562,8 @@ window.STARTUP_THEMES_DATA = {
         "Hardware / IoT",
         "Biotech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.544,
       "investor_ids": [
         "the_yield_lab_latam"
       ]
@@ -30136,7 +31619,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\"]"
+        "agri-food"
       ],
       "tech_tags": [
         "ai-data",
@@ -30151,6 +31634,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "market_label": "post-harvest grain monitoring and traceability",
       "self_cats": [],
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.72,
       "investor_ids": [
         "kamay_ventures"
       ]
@@ -30198,7 +31683,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 8.433,
       "bio_lens": [],
       "domain_tags": [
-        "[\"agri-food\", \"climate-resource\"]"
+        "agri-food",
+        "climate-resource"
       ],
       "tech_tags": [],
       "scale_tags": [],
@@ -30207,6 +31693,8 @@ window.STARTUP_THEMES_DATA = {
         "SaaS / Platform",
         "Hardware / IoT"
       ],
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.62,
       "investor_ids": [
         "morningside_group"
       ]
@@ -30259,7 +31747,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\"]"
+        "agri-food"
       ],
       "tech_tags": [
         "ai-data"
@@ -30276,6 +31764,8 @@ window.STARTUP_THEMES_DATA = {
         "AI / Data",
         "AgTech"
       ],
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.63,
       "investor_ids": [
         "inventure",
         "sp_ventures"
@@ -30331,7 +31821,8 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"climate-resource\"]"
+        "agri-food",
+        "climate-resource"
       ],
       "tech_tags": [
         "ai-data"
@@ -30346,6 +31837,8 @@ window.STARTUP_THEMES_DATA = {
         "FinTech",
         "AgTech"
       ],
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.795,
       "investor_ids": [
         "the_yield_lab_latam"
       ]
@@ -30402,7 +31895,9 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"climate-resource\", \"human-health\"]"
+        "agri-food",
+        "climate-resource",
+        "human-health"
       ],
       "tech_tags": [
         "ai-data"
@@ -30417,6 +31912,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "FinTech"
       ],
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.705,
       "investor_ids": [
         "the_yield_lab_latam"
       ]
@@ -30473,7 +31970,9 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biodiversity-nature\", \"climate-resource\"]"
+        "agri-food",
+        "biodiversity-nature",
+        "climate-resource"
       ],
       "tech_tags": [],
       "scale_tags": [
@@ -30485,6 +31984,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biotech"
       ],
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.695,
       "investor_ids": [
         "sp_ventures"
       ]
@@ -30539,7 +32040,8 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biodiversity-nature\"]"
+        "agri-food",
+        "biodiversity-nature"
       ],
       "tech_tags": [
         "ai-data"
@@ -30555,6 +32057,8 @@ window.STARTUP_THEMES_DATA = {
         "FinTech",
         "AgTech"
       ],
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.68,
       "investor_ids": [
         "barn_investimentos",
         "sp_ventures",
@@ -30609,7 +32113,8 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"climate-resource\"]"
+        "agri-food",
+        "climate-resource"
       ],
       "tech_tags": [
         "ai-data"
@@ -30621,6 +32126,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "market_label": "fresh-produce exporter trade-finance platform",
       "self_cats": [],
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.655,
       "investor_ids": [
         "sp_ventures",
         "the_yield_lab_latam"
@@ -30674,7 +32181,8 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"climate-resource\"]"
+        "agri-food",
+        "climate-resource"
       ],
       "tech_tags": [
         "ai-data",
@@ -30690,6 +32198,8 @@ window.STARTUP_THEMES_DATA = {
         "FinTech",
         "SaaS / Platform"
       ],
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.705,
       "investor_ids": [
         "sp_ventures"
       ]
@@ -30745,7 +32255,8 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"climate-resource\"]"
+        "agri-food",
+        "climate-resource"
       ],
       "tech_tags": [
         "ai-data",
@@ -30761,6 +32272,8 @@ window.STARTUP_THEMES_DATA = {
         "FinTech",
         "Biotech"
       ],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.538,
       "investor_ids": [
         "kptl",
         "the_yield_lab_latam"
@@ -30816,7 +32329,8 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"climate-resource\"]"
+        "agri-food",
+        "climate-resource"
       ],
       "tech_tags": [
         "ai-data"
@@ -30830,6 +32344,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "FinTech"
       ],
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.78,
       "investor_ids": [
         "the_yield_lab_latam"
       ]
@@ -30884,7 +32400,9 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biodiversity-nature\", \"climate-resource\"]"
+        "agri-food",
+        "biodiversity-nature",
+        "climate-resource"
       ],
       "tech_tags": [
         "ai-data",
@@ -30900,6 +32418,8 @@ window.STARTUP_THEMES_DATA = {
         "FinTech",
         "AgTech"
       ],
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.72,
       "investor_ids": [
         "sp_ventures"
       ]
@@ -30952,7 +32472,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\"]"
+        "agri-food"
       ],
       "tech_tags": [],
       "scale_tags": [
@@ -30966,6 +32486,8 @@ window.STARTUP_THEMES_DATA = {
         "AgTech",
         "Biotech"
       ],
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.655,
       "investor_ids": [
         "DraperCygnus",
         "inventure"
@@ -31019,7 +32541,8 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"climate-resource\"]"
+        "agri-food",
+        "climate-resource"
       ],
       "tech_tags": [],
       "scale_tags": [
@@ -31031,6 +32554,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "AgTech"
       ],
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.795,
       "investor_ids": [
         "onevc",
         "the_yield_lab_latam"
@@ -31084,7 +32609,8 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"climate-resource\"]"
+        "agri-food",
+        "climate-resource"
       ],
       "tech_tags": [
         "ai-data"
@@ -31099,6 +32625,8 @@ window.STARTUP_THEMES_DATA = {
         "AI / Data",
         "AgTech"
       ],
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.72,
       "investor_ids": [
         "astella_investimentos",
         "basf_venture_capital",
@@ -31159,7 +32687,8 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"climate-resource\"]"
+        "agri-food",
+        "climate-resource"
       ],
       "tech_tags": [
         "ai-data"
@@ -31174,6 +32703,8 @@ window.STARTUP_THEMES_DATA = {
         "FinTech",
         "AgTech"
       ],
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.68,
       "investor_ids": [
         "sp_ventures",
         "the_yield_lab_latam"
@@ -31228,7 +32759,8 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"climate-resource\"]"
+        "agri-food",
+        "climate-resource"
       ],
       "tech_tags": [
         "ai-data"
@@ -31242,6 +32774,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "FoodTech"
       ],
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.805,
       "investor_ids": [
         "the_yield_lab_latam"
       ]
@@ -31295,7 +32829,7 @@ window.STARTUP_THEMES_DATA = {
         "biocentric"
       ],
       "domain_tags": [
-        "[\"agri-food\"]"
+        "agri-food"
       ],
       "tech_tags": [
         "ai-data"
@@ -31308,6 +32842,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "FoodTech"
       ],
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.67,
       "investor_ids": [
         "Antom",
         "glocal"
@@ -31360,7 +32896,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.805,
       "bio_lens": [],
       "domain_tags": [
-        "[\"biodiversity-nature\", \"climate-resource\"]"
+        "biodiversity-nature",
+        "climate-resource"
       ],
       "tech_tags": [
         "blockchain, IoT sensors, computer vision, AI/ML, supply chain traceability, commodity tracking"
@@ -31370,6 +32907,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Hardware / IoT"
       ],
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.67,
       "investor_ids": [
         "kptl",
         "the_yield_lab_latam"
@@ -31426,7 +32965,9 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biodiversity-nature\", \"climate-resource\"]"
+        "agri-food",
+        "biodiversity-nature",
+        "climate-resource"
       ],
       "tech_tags": [
         "ai-data"
@@ -31441,6 +32982,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "AgTech"
       ],
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.655,
       "investor_ids": [
         "Antom",
         "glocal",
@@ -31502,7 +33045,9 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"biodiversity-nature\", \"climate-resource\"]"
+        "agri-food",
+        "biodiversity-nature",
+        "climate-resource"
       ],
       "tech_tags": [
         "ai-data",
@@ -31518,6 +33063,8 @@ window.STARTUP_THEMES_DATA = {
         "NatureTech",
         "AgTech"
       ],
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.655,
       "investor_ids": []
     },
     {
@@ -31569,7 +33116,8 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"climate-resource\"]"
+        "agri-food",
+        "climate-resource"
       ],
       "tech_tags": [
         "ai-data"
@@ -31581,6 +33129,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "market_label": "agribusiness transparency and compliance platform",
       "self_cats": [],
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.655,
       "investor_ids": [
         "the_yield_lab_latam"
       ]
@@ -31636,7 +33186,8 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"agri-food\", \"climate-resource\"]"
+        "agri-food",
+        "climate-resource"
       ],
       "tech_tags": [
         "ai-data",
@@ -31650,6 +33201,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "market_label": "traceability and sustainability infrastructure",
       "self_cats": [],
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.58,
       "investor_ids": [
         "inventure"
       ]
@@ -31700,7 +33253,8 @@ window.STARTUP_THEMES_DATA = {
       "sy": 9.598,
       "bio_lens": [],
       "domain_tags": [
-        "[\"biodiversity-nature\", \"climate-resource\"]"
+        "biodiversity-nature",
+        "climate-resource"
       ],
       "tech_tags": [
         "satellite remote sensing, NDVI/EVI monitoring, blockchain traceability, land use change detection, EUDR compliance"
@@ -31710,6 +33264,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Precision Ag"
       ],
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.71,
       "investor_ids": [
         "glocal",
         "the_yield_lab_latam"
@@ -31762,7 +33318,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "[\"climate-resource\"]"
+        "climate-resource"
       ],
       "tech_tags": [
         "ai-data"
@@ -31774,6 +33330,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "market_label": "water-risk and stewardship intelligence",
       "self_cats": [],
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.62,
       "investor_ids": [
         "newtopia_vc"
       ]
@@ -33173,116 +34731,40 @@ window.STARTUP_THEMES_DATA = {
     ],
     "domain": [
       {
-        "v": "[\"diagnostics-medtech\", \"human-health\"]",
-        "n": 74
+        "v": "human-health",
+        "n": 257
       },
       {
-        "v": "[\"agri-food\", \"climate-resource\"]",
-        "n": 46
+        "v": "agri-food",
+        "n": 252
       },
       {
-        "v": "[\"agri-food\"]",
-        "n": 46
+        "v": "climate-resource",
+        "n": 137
       },
       {
-        "v": "[\"agri-food\", \"human-health\"]",
-        "n": 44
+        "v": "diagnostics-medtech",
+        "n": 108
       },
       {
-        "v": "[\"therapeutics-regenerative\", \"human-health\"]",
-        "n": 42
+        "v": "therapeutics-regenerative",
+        "n": 108
       },
       {
-        "v": "[\"agri-food\", \"biodiversity-nature\"]",
-        "n": 34
+        "v": "biodiversity-nature",
+        "n": 70
       },
       {
-        "v": "[\"biomaterials\", \"climate-resource\"]",
-        "n": 32
+        "v": "biomaterials",
+        "n": 60
       },
       {
-        "v": "[\"human-health\", \"therapeutics-regenerative\"]",
-        "n": 28
+        "v": "biomanufacturing",
+        "n": 49
       },
       {
-        "v": "[\"biodiversity-nature\", \"climate-resource\"]",
-        "n": 18
-      },
-      {
-        "v": "[\"agri-food\", \"biodiversity-nature\", \"climate-resource\"]",
-        "n": 11
-      },
-      {
-        "v": "[\"diagnostics-medtech\", \"human-health\", \"therapeutics-regenerative\"]",
-        "n": 9
-      },
-      {
-        "v": "[\"agri-food\", \"diagnostics-medtech\", \"human-health\"]",
-        "n": 9
-      },
-      {
-        "v": "[\"agri-food\", \"diagnostics-medtech\", \"human-health\", \"therapeutics-regenerative\"]",
-        "n": 7
-      },
-      {
-        "v": "[\"climate-resource\"]",
-        "n": 7
-      },
-      {
-        "v": "[\"agri-food\", \"biomanufacturing\", \"industrial-biotech\"]",
-        "n": 6
-      },
-      {
-        "v": "[\"biomanufacturing\", \"industrial-biotech\"]",
-        "n": 6
-      },
-      {
-        "v": "[\"agri-food\", \"biomanufacturing\"]",
-        "n": 6
-      },
-      {
-        "v": "[\"agri-food\", \"biomanufacturing\", \"human-health\"]",
-        "n": 6
-      },
-      {
-        "v": "[\"agri-food\", \"climate-resource\", \"human-health\"]",
-        "n": 3
-      },
-      {
-        "v": "[\"agri-food\", \"biomanufacturing\", \"biomaterials\", \"climate-resource\"]",
-        "n": 3
-      },
-      {
-        "v": "[\"agri-food\", \"human-health\", \"therapeutics-regenerative\"]",
-        "n": 3
-      },
-      {
-        "v": "[\"climate-resource\", \"diagnostics-medtech\", \"human-health\"]",
-        "n": 2
-      },
-      {
-        "v": "[\"agri-food\", \"biomanufacturing\", \"biomaterials\", \"human-health\", \"industrial-biotech\"]",
-        "n": 2
-      },
-      {
-        "v": "[\"agri-food\", \"biomaterials\", \"climate-resource\"]",
-        "n": 2
-      },
-      {
-        "v": "[\"biomanufacturing\", \"human-health\", \"industrial-biotech\", \"therapeutics-regenerative\"]",
-        "n": 2
-      },
-      {
-        "v": "[\"agri-food\", \"biomanufacturing\", \"biomaterials\", \"human-health\"]",
-        "n": 2
-      },
-      {
-        "v": "[\"agri-food\", \"biomaterials\", \"human-health\", \"therapeutics-regenerative\"]",
-        "n": 2
-      },
-      {
-        "v": "[\"biodiversity-nature\", \"biomanufacturing\", \"biomaterials\", \"human-health\", \"therapeutics-regenerative\"]",
-        "n": 2
+        "v": "industrial-biotech",
+        "n": 30
       }
     ],
     "tech": [

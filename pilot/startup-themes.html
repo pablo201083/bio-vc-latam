@@ -126,6 +126,8 @@
     .fc.active-fund::after{content:" ×";opacity:.75;font-size:.88em;font-weight:400}
     .fc.active-legacy{background:#6b5e52;color:#fff;border-color:#6b5e52;box-shadow:0 1px 6px rgba(107,94,82,.22)}
     .fc.active-legacy::after{content:" ×";opacity:.75;font-size:.88em;font-weight:400}
+    .fc.active-depth{background:var(--depth-color,#374151);color:#fff;border-color:var(--depth-color,#374151);box-shadow:0 1px 6px rgba(0,0,0,.18)}
+    .fc.active-depth::after{content:" ×";opacity:.75;font-size:.88em;font-weight:400}
     .fp-sep{height:1px;background:var(--line);margin:4px 0}
     .chip-lbl{font-size:.69rem;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;align-self:center}
     .clear-fc{font-size:.72rem;padding:3px 9px;color:var(--muted);border-color:rgba(200,192,180,.5);background:transparent}
@@ -337,6 +339,10 @@
         <div class="fp-row">
           <div class="fp-sec-head"><span class="fp-sec-lbl">Etapa</span><button id="clr-stage" class="fp-sec-clr" type="button">limpiar selección</button></div>
           <div id="stage-chips" class="fp-chips"></div>
+        </div>
+        <div class="fp-row">
+          <div class="fp-sec-head"><span class="fp-sec-lbl">Profundidad tecnológica</span><button id="clr-depth" class="fp-sec-clr" type="button">limpiar</button></div>
+          <div id="depth-chips" class="fp-chips"></div>
         </div>
         <div class="fp-sep"></div>
         <div class="fp-row">
@@ -733,6 +739,7 @@ const activeCountries=new Set();  // OR dentro de la categoría
 const activeStages=new Set();     // OR — pre-seed | seed | series-a | series-b | series-c+ | growth
 const activeFunds=new Set();      // OR — inversor/fondo id
 const activeLegacy=new Set();      // OR — macro_theme (taxonomía anterior)
+const activeDepths=new Set();     // OR — deep | applied | enabler | unclassified
 let searchId=null,showLabels=false;
 let viewMode="map"; // "map" | "cluster" | "zoom"
 
@@ -745,9 +752,10 @@ function isHl(s){
   if(activeStages.size&&!activeStages.has(s.funding_stage||"sin-dato"))return false;
   if(activeFunds.size&&!(s.investor_ids||[]).some(id=>activeFunds.has(id)))return false;
   if(activeLegacy.size&&!(s.self_cats||[]).some(c=>activeLegacy.has(c)))return false;
+  if(activeDepths.size&&!activeDepths.has(s.tech_depth||"unclassified"))return false;
   return true;
 }
-function anyFilter(){return !!(searchId||activeCountries.size||activeTheme!==null||activeTechs.size||activeInds.size||activeStages.size||activeFunds.size||activeLegacy.size)}
+function anyFilter(){return !!(searchId||activeCountries.size||activeTheme!==null||activeTechs.size||activeInds.size||activeStages.size||activeFunds.size||activeLegacy.size||activeDepths.size)}
 
 // ── Build SVG ──────────────────────────────────────────────────────────────
 function buildSVG(){
@@ -1081,19 +1089,21 @@ const GRAY_RING="#c2bbB2";
 function syncFilterBtn(){
   const btn=document.getElementById("btn-filter");
   if(!btn)return;
-  btn.classList.toggle("filter-active",!!(activeTechs.size||activeInds.size||activeCountries.size||activeStages.size||activeFunds.size||activeLegacy.size));
+  btn.classList.toggle("filter-active",!!(activeTechs.size||activeInds.size||activeCountries.size||activeStages.size||activeFunds.size||activeLegacy.size||activeDepths.size));
   const clrC=document.getElementById("clr-country");
   const clrT=document.getElementById("clr-tech");
   const clrI=document.getElementById("clr-ind");
   const clrS=document.getElementById("clr-stage");
   const clrF=document.getElementById("clr-fund");
   const clrLeg=document.getElementById("clr-legacy");
+  const clrDep=document.getElementById("clr-depth");
   if(clrC)clrC.classList.toggle("vis",activeCountries.size>0);
   if(clrT)clrT.classList.toggle("vis",activeTechs.size>0);
   if(clrI)clrI.classList.toggle("vis",activeInds.size>0);
   if(clrS)clrS.classList.toggle("vis",activeStages.size>0);
   if(clrF)clrF.classList.toggle("vis",activeFunds.size>0);
   if(clrLeg)clrLeg.classList.toggle("vis",activeLegacy.size>0);
+  if(clrDep)clrDep.classList.toggle("vis",activeDepths.size>0);
 }
 function updateHighlights(){
   const any=anyFilter();
@@ -1258,6 +1268,19 @@ function updateBreadcrumbs(){
       }
     });
   }
+  if(activeDepths.size){
+    const DEPTH_LBL={"deep":"Deep Tech","applied":"Applied Tech","enabler":"Enabler","unclassified":"Sin clasificar"};
+    const lbls=[...activeDepths].map(k=>DEPTH_LBL[k]||k);
+    filters.push({
+      label:"Tech depth: "+lbls.join(", "),
+      clear(){
+        activeDepths.clear();
+        document.querySelectorAll("#depth-chips .fc").forEach(c=>c.classList.remove("active-depth"));
+        document.getElementById("clr-depth")?.classList.remove("vis");
+        updateHighlights();updateBreadcrumbs();
+      }
+    });
+  }
   if(searchId){
     const s=startups.find(s=>s.id===searchId);
     filters.push({
@@ -1280,9 +1303,9 @@ function updateBreadcrumbs(){
   });
   const all=document.createElement("button");all.className="bc-pill bc-all";all.type="button";all.textContent="Limpiar todo";
   all.addEventListener("click",()=>{
-    activeTheme=null;activeTechs.clear();activeInds.clear();activeCountries.clear();activeStages.clear();activeFunds.clear();activeLegacy.clear();searchId=null;
+    activeTheme=null;activeTechs.clear();activeInds.clear();activeCountries.clear();activeStages.clear();activeFunds.clear();activeLegacy.clear();activeDepths.clear();searchId=null;
     srchIn.value="";
-    document.querySelectorAll(".fc").forEach(c=>c.classList.remove("active-tech","active-ind","active-country","active-stage","active-fund","active-legacy"));
+    document.querySelectorAll(".fc").forEach(c=>c.classList.remove("active-tech","active-ind","active-country","active-stage","active-fund","active-legacy","active-depth"));
     document.querySelectorAll(".cr").forEach(r=>r.classList.remove("active","dimmed"));
     const clrF=document.getElementById("clr-fund");if(clrF)clrF.classList.remove("vis");
     const clrLeg=document.getElementById("clr-legacy");if(clrLeg)clrLeg.classList.remove("vis");
@@ -1476,6 +1499,13 @@ function showHov(s,e){
   const desc = s.one_liner ||
     (s.summary ? s.summary.replace(/\s+/g," ").split(/(?<=\.)\s+/)[0].slice(0,160) : "");
 
+  const DEPTH_BADGE={
+    "deep":         {lbl:"Deep Tech",   col:"#1b5e3b", bg:"rgba(209,250,229,.85)"},
+    "applied":      {lbl:"Applied Tech",col:"#1e3a8a", bg:"rgba(219,234,254,.85)"},
+    "enabler":      {lbl:"Enabler",     col:"#7c3aed", bg:"rgba(237,233,254,.85)"},
+    "unclassified": {lbl:"Sin clasif.", col:"#6b7280", bg:"rgba(243,244,246,.85)"},
+  };
+  const db=DEPTH_BADGE[s.tech_depth]||DEPTH_BADGE["unclassified"];
   hovCard.innerHTML=`
     <div class="hov-title">${s.name}</div>
     ${desc?`<div class="hov-body">${desc}</div>`:""}
@@ -1485,6 +1515,7 @@ function showHov(s,e){
       ${stageLabel?`<span class="hov-chip" style="font-weight:600">${stageLabel}</span>`:""}
       ${valLabel?`<span class="hov-chip" style="font-weight:700;color:var(--ink)">${valLabel}</span>`:""}
       ${invLabel?`<span class="hov-chip" style="color:#1f5c3a">⬤ ${invLabel}</span>`:""}
+      <span class="hov-chip" style="background:${db.bg};color:${db.col};border-color:${db.col}40;font-weight:600">${db.lbl}</span>
     </div>
     ${(s.self_cats||[]).length?`<div class="hov-small"><span style="opacity:.5;text-transform:uppercase;letter-spacing:.07em;font-size:.62rem">Clasificación legacy</span> ${s.self_cats.join(" · ")}</div>`:""}
   `;
@@ -1622,6 +1653,43 @@ function buildChips(){
     sWrap.querySelectorAll(".fc").forEach(c=>c.classList.remove("active-stage"));
     updateHighlights();updateBreadcrumbs();
   });
+
+  // ── Profundidad tecnológica ───────────────────────────────────────────────
+  const DEPTH_META = {
+    "deep":          { label: "Deep Tech",        color: "#1b5e3b", bg: "#d1fae5" },
+    "applied":       { label: "Applied Tech",     color: "#1e3a8a", bg: "#dbeafe" },
+    "enabler":       { label: "Enabler",          color: "#7c3aed", bg: "#ede9fe" },
+    "unclassified":  { label: "Sin clasificar",   color: "#6b7280", bg: "#f3f4f6" },
+  };
+  const dWrap=document.getElementById("depth-chips");
+  if(dWrap){
+    dWrap.innerHTML="";
+    const depthCounts={};
+    startups.forEach(s=>{const k=s.tech_depth||"unclassified";depthCounts[k]=(depthCounts[k]||0)+1;});
+    ["deep","applied","enabler","unclassified"].filter(k=>depthCounts[k]).forEach(k=>{
+      const meta=DEPTH_META[k]||{label:k,color:"#666",bg:"#eee"};
+      const btn=document.createElement("button");
+      btn.className="fc";btn.type="button";btn.dataset.depth=k;
+      btn.textContent=meta.label+" ("+depthCounts[k]+")";
+      btn.style.setProperty("--depth-color",meta.color);
+      btn.style.setProperty("--depth-bg",meta.bg);
+      btn.addEventListener("click",()=>{
+        activeDepths.has(k)?activeDepths.delete(k):activeDepths.add(k);
+        dWrap.querySelectorAll(".fc").forEach(c=>c.classList.toggle("active-depth",activeDepths.has(c.dataset.depth)));
+        const clrD=document.getElementById("clr-depth");
+        if(clrD)clrD.classList.toggle("vis",activeDepths.size>0);
+        updateHighlights();updateBreadcrumbs();
+      });
+      dWrap.appendChild(btn);
+    });
+    document.getElementById("clr-depth")?.addEventListener("click",()=>{
+      activeDepths.clear();
+      dWrap.querySelectorAll(".fc").forEach(c=>c.classList.remove("active-depth"));
+      document.getElementById("clr-depth").classList.remove("vis");
+      updateHighlights();updateBreadcrumbs();
+    });
+  }
+
   // ── Cómo se describen (self_cats extraídas del texto propio) ─────────────
   const legWrap=document.getElementById("legacy-chips");
   if(legWrap){
@@ -1676,9 +1744,9 @@ srchIn.addEventListener("input",()=>{
   srchRes.classList.toggle("open",hits.length>0);
 });
 function resetAll(){
-  activeTheme=null;activeTechs.clear();activeInds.clear();activeCountries.clear();activeStages.clear();activeFunds.clear();activeLegacy.clear();searchId=null;
+  activeTheme=null;activeTechs.clear();activeInds.clear();activeCountries.clear();activeStages.clear();activeFunds.clear();activeLegacy.clear();activeDepths.clear();searchId=null;
   srchIn.value="";srchRes.classList.remove("open");
-  document.querySelectorAll(".fc").forEach(c=>c.classList.remove("active-tech","active-ind","active-country","active-stage","active-fund","active-legacy"));
+  document.querySelectorAll(".fc").forEach(c=>c.classList.remove("active-tech","active-ind","active-country","active-stage","active-fund","active-legacy","active-depth"));
   document.querySelectorAll(".cr").forEach(r=>r.classList.remove("active","dimmed"));
   const clrF=document.getElementById("clr-fund");if(clrF)clrF.classList.remove("vis");
   const clrLeg=document.getElementById("clr-legacy");if(clrLeg)clrLeg.classList.remove("vis");

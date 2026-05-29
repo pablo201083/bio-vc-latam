@@ -844,7 +844,8 @@ def write_dashboard_data(conn: sqlite3.Connection) -> None:
                sx.valuation_estimate_usd, sx.valuation_estimate_source,
                sx.scatter_x, sx.scatter_y,
                sx.bio_lens_tags, sx.domain_tags, sx.technology_tags, sx.scale_tags,
-               sx.market_label
+               sx.market_label,
+               sx.tech_depth, sx.tech_depth_confidence
         FROM startup_extended sx
         JOIN entities e ON e.entity_id = sx.startup_id
         LEFT JOIN investment_edges ie ON ie.startup_id = sx.startup_id
@@ -901,11 +902,14 @@ def write_dashboard_data(conn: sqlite3.Connection) -> None:
             "sy": round(float(r[32]), 3) if r[32] is not None else round(float(r[12] or 0), 3),
             # ── Previous taxonomy tokens ──────────────────────────────────────
             "bio_lens": [t.strip() for t in (r[33] or "").split(";") if t.strip()],
-            "domain_tags": [t.strip() for t in (r[34] or "").split(";") if t.strip()],
+            "domain_tags": json.loads(r[34]) if (r[34] or "").startswith("[") else [t.strip() for t in (r[34] or "").split(";") if t.strip()],
             "tech_tags": [t.strip() for t in (r[35] or "").split(";") if t.strip()],
             "scale_tags": [t.strip() for t in (r[36] or "").split(";") if t.strip()],
             "market_label": r[37] or "",
             "self_cats": _extract_self_categories((r[7] or "") + " " + (r[6] or "")[:300]),
+            # ── Tech depth classification ─────────────────────────────────────
+            "tech_depth": r[38] or "unclassified",
+            "tech_depth_confidence": round(float(r[39] or 0.5), 3),
         })
 
     # Cluster summary con métricas para inversor
