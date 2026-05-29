@@ -1,5 +1,5 @@
 window.STARTUP_THEMES_DATA = {
-  "computed_at": "2026-05-28T20:57:13",
+  "computed_at": "2026-05-28T21:24:11",
   "model": "intfloat/multilingual-e5-small",
   "stats": {
     "total_startups": 487,
@@ -58,7 +58,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "seed",
       "funding_bucket_usd": 1,
       "valuation_bucket_usd": 15,
@@ -70,9 +70,7 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "diagnostics-medtech",
-        "human-health",
-        "therapeutics-regenerative"
+        "[\"diagnostics-medtech\", \"human-health\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -129,7 +127,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -141,8 +139,7 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "diagnostics-medtech",
-        "human-health"
+        "[\"diagnostics-medtech\", \"human-health\"]"
       ],
       "tech_tags": [
         "diagnostics"
@@ -209,9 +206,7 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "diagnostics-medtech",
-        "human-health",
-        "therapeutics-regenerative"
+        "[\"diagnostics-medtech\", \"human-health\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -273,7 +268,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": 10,
@@ -285,9 +280,7 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "diagnostics-medtech",
-        "human-health",
-        "therapeutics-regenerative"
+        "[\"diagnostics-medtech\", \"human-health\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -343,7 +336,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -355,8 +348,7 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "human-health",
-        "therapeutics-regenerative"
+        "[\"human-health\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -393,7 +385,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "diagnostics"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "diagnostics_industry"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -403,7 +398,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -415,7 +410,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"diagnostics-medtech\", \"human-health\"]"
+      ],
       "tech_tags": [
         "diagnostics"
       ],
@@ -463,7 +460,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -475,8 +472,7 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "human-health",
-        "therapeutics-regenerative"
+        "[\"human-health\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -518,7 +514,10 @@ window.STARTUP_THEMES_DATA = {
         "diagnostics",
         "iot"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "diagnostics_industry"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -528,7 +527,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -540,7 +539,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"diagnostics-medtech\", \"human-health\"]"
+      ],
       "tech_tags": [
         "diagnostics",
         "iot"
@@ -590,7 +591,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -602,8 +603,7 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "diagnostics-medtech",
-        "human-health"
+        "[\"diagnostics-medtech\", \"human-health\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -642,7 +642,10 @@ window.STARTUP_THEMES_DATA = {
       "y": -9.089,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "diagnostics_industry"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
@@ -652,7 +655,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": 15,
@@ -661,7 +664,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": -4.483,
       "sy": -9.41,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"diagnostics-medtech\", \"human-health\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -693,7 +698,10 @@ window.STARTUP_THEMES_DATA = {
         "diagnostics",
         "synbio"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "diagnostics_industry"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -703,7 +711,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "seed",
       "funding_bucket_usd": 1,
       "valuation_bucket_usd": 5,
@@ -715,7 +723,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"diagnostics-medtech\", \"human-health\"]"
+      ],
       "tech_tags": [
         "diagnostics",
         "synthetic-biology"
@@ -764,7 +774,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -776,9 +786,7 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "agri-food",
-        "diagnostics-medtech",
-        "human-health"
+        "[\"agri-food\", \"diagnostics-medtech\", \"human-health\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -821,7 +829,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "diagnostics"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "diagnostics_industry"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": 3,
@@ -831,7 +842,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "seed",
       "funding_bucket_usd": 1,
       "valuation_bucket_usd": 10,
@@ -843,7 +854,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"diagnostics-medtech\", \"human-health\"]"
+      ],
       "tech_tags": [
         "diagnostics"
       ],
@@ -878,7 +891,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "diagnostics"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "diagnostics_industry"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -888,7 +904,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "seed",
       "funding_bucket_usd": 1,
       "valuation_bucket_usd": 5,
@@ -900,7 +916,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"diagnostics-medtech\", \"human-health\"]"
+      ],
       "tech_tags": [
         "diagnostics"
       ],
@@ -931,7 +949,10 @@ window.STARTUP_THEMES_DATA = {
       "y": -10.192,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "diagnostics_industry"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
@@ -950,7 +971,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": -3.353,
       "sy": -7.433,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"diagnostics-medtech\", \"human-health\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -996,7 +1019,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -1008,8 +1031,7 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "diagnostics-medtech",
-        "human-health"
+        "[\"diagnostics-medtech\", \"human-health\"]"
       ],
       "tech_tags": [
         "diagnostics"
@@ -1046,7 +1068,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "diagnostics"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "diagnostics_industry"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -1056,7 +1081,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "seed",
       "funding_bucket_usd": 1,
       "valuation_bucket_usd": 5,
@@ -1068,7 +1093,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"diagnostics-medtech\", \"human-health\"]"
+      ],
       "tech_tags": [
         "diagnostics"
       ],
@@ -1101,7 +1128,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "diagnostics"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "diagnostics_industry"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -1111,7 +1141,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 0,
@@ -1123,7 +1153,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"diagnostics-medtech\", \"human-health\"]"
+      ],
       "tech_tags": [
         "diagnostics"
       ],
@@ -1152,7 +1184,10 @@ window.STARTUP_THEMES_DATA = {
       "y": -8.39,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "diagnostics_industry"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
@@ -1162,7 +1197,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -1171,7 +1206,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": -4.512,
       "sy": -9.913,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"diagnostics-medtech\", \"human-health\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -1203,7 +1240,10 @@ window.STARTUP_THEMES_DATA = {
         "diagnostics",
         "ai_ml"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "diagnostics_industry"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -1213,7 +1253,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -1225,7 +1265,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"diagnostics-medtech\", \"human-health\"]"
+      ],
       "tech_tags": [
         "diagnostics",
         "ai-data"
@@ -1259,7 +1301,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "diagnostics"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "diagnostics_industry"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": 3,
@@ -1269,7 +1314,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -1281,7 +1326,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"diagnostics-medtech\", \"human-health\"]"
+      ],
       "tech_tags": [
         "diagnostics"
       ],
@@ -1315,7 +1362,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "diagnostics"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "diagnostics_industry"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -1325,7 +1375,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -1337,7 +1387,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"diagnostics-medtech\", \"human-health\"]"
+      ],
       "tech_tags": [
         "diagnostics"
       ],
@@ -1370,7 +1422,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "diagnostics"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "diagnostics_industry"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -1380,7 +1435,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 0,
@@ -1392,7 +1447,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"diagnostics-medtech\", \"human-health\"]"
+      ],
       "tech_tags": [
         "diagnostics"
       ],
@@ -1439,7 +1496,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -1451,8 +1508,7 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "diagnostics-medtech",
-        "human-health"
+        "[\"diagnostics-medtech\", \"human-health\"]"
       ],
       "tech_tags": [
         "diagnostics"
@@ -1504,7 +1560,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -1516,8 +1572,7 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "diagnostics-medtech",
-        "human-health"
+        "[\"diagnostics-medtech\", \"human-health\"]"
       ],
       "tech_tags": [
         "diagnostics"
@@ -1553,7 +1608,10 @@ window.STARTUP_THEMES_DATA = {
       "y": -8.305,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "diagnostics_industry"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
@@ -1563,7 +1621,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "series-a",
       "funding_bucket_usd": 10,
       "valuation_bucket_usd": 50,
@@ -1572,7 +1630,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": -4.592,
       "sy": -9.974,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"diagnostics-medtech\", \"human-health\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -1601,7 +1661,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "diagnostics"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "diagnostics_industry"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -1611,7 +1674,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -1623,7 +1686,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"diagnostics-medtech\", \"human-health\"]"
+      ],
       "tech_tags": [
         "diagnostics"
       ],
@@ -1683,8 +1748,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "diagnostics-medtech",
-        "human-health"
+        "[\"diagnostics-medtech\", \"human-health\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -1724,7 +1788,10 @@ window.STARTUP_THEMES_DATA = {
       "y": -8.888,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "therapeutics_industry"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
@@ -1734,7 +1801,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Diagnostics & Health Access",
       "is_bio_universe": 0,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Genomics & Precision Medicine",
       "funding_stage": "seed",
       "funding_bucket_usd": 1,
       "valuation_bucket_usd": 10,
@@ -1743,7 +1810,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": -11.477,
       "sy": -12.985,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"therapeutics-regenerative\", \"human-health\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -1772,7 +1841,10 @@ window.STARTUP_THEMES_DATA = {
       "y": -8.591,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "diagnostics_industry"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
@@ -1782,7 +1854,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 0,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "series-a",
       "funding_bucket_usd": 5,
       "valuation_bucket_usd": 25,
@@ -1791,7 +1863,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": -4.681,
       "sy": -9.947,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"diagnostics-medtech\", \"human-health\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -1824,7 +1898,10 @@ window.STARTUP_THEMES_DATA = {
         "diagnostics",
         "synbio"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "diagnostics_industry"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -1834,7 +1911,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -1846,7 +1923,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"diagnostics-medtech\", \"human-health\"]"
+      ],
       "tech_tags": [
         "diagnostics",
         "synthetic-biology"
@@ -1911,9 +1990,7 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "agri-food",
-        "diagnostics-medtech",
-        "human-health"
+        "[\"agri-food\", \"diagnostics-medtech\", \"human-health\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -1970,7 +2047,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -1982,8 +2059,7 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "diagnostics-medtech",
-        "human-health"
+        "[\"diagnostics-medtech\", \"human-health\"]"
       ],
       "tech_tags": [
         "diagnostics",
@@ -2023,7 +2099,10 @@ window.STARTUP_THEMES_DATA = {
         "diagnostics",
         "ai_ml"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "diagnostics_industry"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -2033,7 +2112,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "seed",
       "funding_bucket_usd": 1,
       "valuation_bucket_usd": 5,
@@ -2045,7 +2124,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"diagnostics-medtech\", \"human-health\"]"
+      ],
       "tech_tags": [
         "diagnostics",
         "ai-data"
@@ -2077,7 +2158,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "diagnostics"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "diagnostics_industry"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": 14,
@@ -2087,7 +2171,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -2099,7 +2183,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"diagnostics-medtech\", \"human-health\"]"
+      ],
       "tech_tags": [
         "diagnostics"
       ],
@@ -2135,7 +2221,10 @@ window.STARTUP_THEMES_DATA = {
         "diagnostics",
         "synbio"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "diagnostics_industry"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -2145,7 +2234,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "seed",
       "funding_bucket_usd": 1,
       "valuation_bucket_usd": 10,
@@ -2157,7 +2246,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"diagnostics-medtech\", \"human-health\"]"
+      ],
       "tech_tags": [
         "diagnostics",
         "synthetic-biology"
@@ -2190,7 +2281,10 @@ window.STARTUP_THEMES_DATA = {
       "y": -8.343,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "diagnostics_industry"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": 21,
@@ -2200,7 +2294,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "series-b",
       "funding_bucket_usd": 25,
       "valuation_bucket_usd": 50,
@@ -2209,7 +2303,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": -4.492,
       "sy": -9.853,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"diagnostics-medtech\", \"human-health\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -2246,7 +2342,10 @@ window.STARTUP_THEMES_DATA = {
         "diagnostics",
         "ai_ml"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "diagnostics_industry"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -2256,7 +2355,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -2268,7 +2367,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"diagnostics-medtech\", \"human-health\"]"
+      ],
       "tech_tags": [
         "diagnostics",
         "ai-data"
@@ -2304,7 +2405,10 @@ window.STARTUP_THEMES_DATA = {
         "diagnostics",
         "ai_ml"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "diagnostics_industry"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -2314,7 +2418,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 5,
@@ -2326,7 +2430,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"diagnostics-medtech\", \"human-health\"]"
+      ],
       "tech_tags": [
         "diagnostics",
         "ai-data"
@@ -2360,7 +2466,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "diagnostics"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "diagnostics_industry"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -2370,7 +2479,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 0,
@@ -2382,7 +2491,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"diagnostics-medtech\", \"human-health\"]"
+      ],
       "tech_tags": [
         "diagnostics"
       ],
@@ -2414,7 +2525,10 @@ window.STARTUP_THEMES_DATA = {
       "y": -8.716,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "diagnostics_industry"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": 13,
@@ -2424,7 +2538,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 0,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -2433,7 +2547,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": -4.558,
       "sy": -9.523,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"diagnostics-medtech\", \"human-health\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -2464,7 +2580,10 @@ window.STARTUP_THEMES_DATA = {
       "y": -8.548,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "diagnostics_industry"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": 32,
@@ -2474,7 +2593,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "series-b",
       "funding_bucket_usd": 25,
       "valuation_bucket_usd": 100,
@@ -2483,7 +2602,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": -4.677,
       "sy": -9.852,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"diagnostics-medtech\", \"human-health\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -2517,7 +2638,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "diagnostics"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "diagnostics_industry"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -2527,7 +2651,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -2539,7 +2663,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"diagnostics-medtech\", \"human-health\"]"
+      ],
       "tech_tags": [
         "diagnostics"
       ],
@@ -2588,7 +2714,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -2600,9 +2726,7 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "agri-food",
-        "diagnostics-medtech",
-        "human-health"
+        "[\"agri-food\", \"diagnostics-medtech\", \"human-health\"]"
       ],
       "tech_tags": [
         "diagnostics"
@@ -2645,7 +2769,10 @@ window.STARTUP_THEMES_DATA = {
         "diagnostics",
         "ai_ml"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "diagnostics_industry"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -2655,7 +2782,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": 25,
@@ -2667,7 +2794,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"diagnostics-medtech\", \"human-health\"]"
+      ],
       "tech_tags": [
         "diagnostics",
         "ai-data"
@@ -2702,7 +2831,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "diagnostics"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "diagnostics_industry"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -2712,7 +2844,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "series-a",
       "funding_bucket_usd": 5,
       "valuation_bucket_usd": 25,
@@ -2724,7 +2856,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"diagnostics-medtech\", \"human-health\"]"
+      ],
       "tech_tags": [
         "diagnostics"
       ],
@@ -2761,7 +2895,10 @@ window.STARTUP_THEMES_DATA = {
         "therapeutics",
         "ai_ml"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "diagnostics_industry"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -2771,7 +2908,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Diagnostics & Health Access",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -2783,7 +2920,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"diagnostics-medtech\", \"human-health\"]"
+      ],
       "tech_tags": [
         "therapeutics",
         "ai-data"
@@ -2830,7 +2969,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -2842,8 +2981,7 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "diagnostics-medtech",
-        "human-health"
+        "[\"diagnostics-medtech\", \"human-health\"]"
       ],
       "tech_tags": [
         "diagnostics"
@@ -2897,7 +3035,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 0,
@@ -2910,9 +3048,7 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "agri-food",
-        "diagnostics-medtech",
-        "human-health"
+        "[\"agri-food\", \"diagnostics-medtech\", \"human-health\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -2954,7 +3090,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "diagnostics"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "diagnostics_industry"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -2964,7 +3103,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 0,
@@ -2976,7 +3115,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"diagnostics-medtech\", \"human-health\"]"
+      ],
       "tech_tags": [
         "diagnostics"
       ],
@@ -3025,7 +3166,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": 15,
@@ -3038,8 +3179,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "diagnostics-medtech",
-        "human-health"
+        "[\"diagnostics-medtech\", \"human-health\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -3097,7 +3237,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -3109,8 +3249,7 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "diagnostics-medtech",
-        "human-health"
+        "[\"diagnostics-medtech\", \"human-health\"]"
       ],
       "tech_tags": [
         "diagnostics"
@@ -3148,7 +3287,10 @@ window.STARTUP_THEMES_DATA = {
       "y": -8.614,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "diagnostics_industry"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
@@ -3158,7 +3300,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -3167,7 +3309,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": -4.365,
       "sy": -9.686,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"diagnostics-medtech\", \"human-health\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -3211,7 +3355,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -3223,8 +3367,7 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "diagnostics-medtech",
-        "human-health"
+        "[\"diagnostics-medtech\", \"human-health\"]"
       ],
       "tech_tags": [
         "diagnostics"
@@ -3262,7 +3405,10 @@ window.STARTUP_THEMES_DATA = {
       "y": -8.586,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "diagnostics_industry"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
@@ -3272,7 +3418,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -3281,7 +3427,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": -4.593,
       "sy": -10.14,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"diagnostics-medtech\", \"human-health\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -3311,7 +3459,10 @@ window.STARTUP_THEMES_DATA = {
         "diagnostics",
         "ai_ml"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "diagnostics_industry"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -3321,7 +3472,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": 10,
@@ -3333,7 +3484,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"diagnostics-medtech\", \"human-health\"]"
+      ],
       "tech_tags": [
         "diagnostics",
         "ai-data"
@@ -3368,7 +3521,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "diagnostics"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "diagnostics_industry"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -3378,7 +3534,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 0,
@@ -3390,7 +3546,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"diagnostics-medtech\", \"human-health\"]"
+      ],
       "tech_tags": [
         "diagnostics"
       ],
@@ -3439,7 +3597,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Food Systems & Alt Proteins",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -3452,9 +3610,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food",
-        "climate-resource",
-        "human-health"
+        "[\"agri-food\", \"climate-resource\", \"human-health\"]"
       ],
       "tech_tags": [
         "iot"
@@ -3496,7 +3652,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "diagnostics"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "diagnostics_industry"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -3506,7 +3665,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -3518,7 +3677,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"diagnostics-medtech\", \"human-health\"]"
+      ],
       "tech_tags": [
         "diagnostics"
       ],
@@ -3550,7 +3711,10 @@ window.STARTUP_THEMES_DATA = {
         "remote_sensing",
         "ai_ml"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "diagnostics_industry"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -3560,7 +3724,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Diagnostics & Health Access",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": 15,
@@ -3572,7 +3736,9 @@ window.STARTUP_THEMES_DATA = {
         "biocentric",
         "bio-enabled-industrial-transition"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"diagnostics-medtech\", \"human-health\"]"
+      ],
       "tech_tags": [
         "remote-sensing",
         "ai-data"
@@ -3623,7 +3789,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -3636,10 +3802,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food",
-        "diagnostics-medtech",
-        "human-health",
-        "therapeutics-regenerative"
+        "[\"agri-food\", \"diagnostics-medtech\", \"human-health\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -3695,7 +3858,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -3707,8 +3870,7 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "diagnostics-medtech",
-        "human-health"
+        "[\"diagnostics-medtech\", \"human-health\"]"
       ],
       "tech_tags": [
         "diagnostics"
@@ -3749,7 +3911,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "diagnostics"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "diagnostics_industry"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -3759,7 +3924,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -3771,7 +3936,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"diagnostics-medtech\", \"human-health\"]"
+      ],
       "tech_tags": [
         "diagnostics"
       ],
@@ -3805,7 +3972,10 @@ window.STARTUP_THEMES_DATA = {
         "ai_ml",
         "robotics"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "therapeutics_industry"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
@@ -3824,7 +3994,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": -11.49,
       "sy": -14.068,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"therapeutics-regenerative\", \"human-health\"]"
+      ],
       "tech_tags": [
         "computer vision, machine learning, defect detection, pharmaceutical QC, biotech manufacturing automation"
       ],
@@ -3860,7 +4032,10 @@ window.STARTUP_THEMES_DATA = {
         "diagnostics",
         "ai_ml"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "diagnostics_industry"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -3870,7 +4045,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -3882,7 +4057,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"diagnostics-medtech\", \"human-health\"]"
+      ],
       "tech_tags": [
         "diagnostics",
         "ai-data"
@@ -3916,7 +4093,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "diagnostics"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "diagnostics_industry"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -3926,7 +4106,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 0,
@@ -3938,7 +4118,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"diagnostics-medtech\", \"human-health\"]"
+      ],
       "tech_tags": [
         "diagnostics"
       ],
@@ -3985,7 +4167,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -3998,9 +4180,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food",
-        "diagnostics-medtech",
-        "human-health"
+        "[\"agri-food\", \"diagnostics-medtech\", \"human-health\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -4044,7 +4224,10 @@ window.STARTUP_THEMES_DATA = {
         "diagnostics",
         "ai_ml"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "diagnostics_industry"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -4054,7 +4237,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "seed",
       "funding_bucket_usd": 1,
       "valuation_bucket_usd": 10,
@@ -4066,7 +4249,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"diagnostics-medtech\", \"human-health\"]"
+      ],
       "tech_tags": [
         "diagnostics",
         "ai-data"
@@ -4098,7 +4283,10 @@ window.STARTUP_THEMES_DATA = {
       "y": -8.736,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "diagnostics_industry"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
@@ -4108,7 +4296,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Diagnostics & Health Access",
       "is_bio_universe": 0,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -4117,7 +4305,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": 5.419,
       "sy": 6.112,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"diagnostics-medtech\", \"human-health\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -4164,7 +4354,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": 15,
@@ -4176,8 +4366,7 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "diagnostics-medtech",
-        "human-health"
+        "[\"diagnostics-medtech\", \"human-health\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -4216,7 +4405,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "diagnostics"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "diagnostics_industry"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": 3,
@@ -4226,7 +4418,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -4238,7 +4430,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"diagnostics-medtech\", \"human-health\"]"
+      ],
       "tech_tags": [
         "diagnostics"
       ],
@@ -4272,7 +4466,10 @@ window.STARTUP_THEMES_DATA = {
         "biomanufacturing",
         "fermentation"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "diagnostics_industry"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -4282,7 +4479,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Diagnostics & Health Access",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -4294,7 +4491,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "bio-enabled-industrial-transition"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"diagnostics-medtech\", \"human-health\"]"
+      ],
       "tech_tags": [
         "biomanufacturing",
         "fermentation"
@@ -4326,7 +4525,10 @@ window.STARTUP_THEMES_DATA = {
       "y": -9.021,
       "is_outlier": true,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "diagnostics_industry"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
@@ -4336,7 +4538,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -4345,7 +4547,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": -11.511,
       "sy": -9.899,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"diagnostics-medtech\", \"human-health\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -4391,7 +4595,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -4403,8 +4607,7 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "diagnostics-medtech",
-        "human-health"
+        "[\"diagnostics-medtech\", \"human-health\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -4445,7 +4648,10 @@ window.STARTUP_THEMES_DATA = {
       "y": -8.413,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "diagnostics_industry"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
@@ -4455,7 +4661,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 0,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": 15,
@@ -4464,7 +4670,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": -4.551,
       "sy": -9.833,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"diagnostics-medtech\", \"human-health\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -4493,7 +4701,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "diagnostics"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "diagnostics_industry"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -4503,7 +4714,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 0,
@@ -4515,7 +4726,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"diagnostics-medtech\", \"human-health\"]"
+      ],
       "tech_tags": [
         "diagnostics"
       ],
@@ -4546,7 +4759,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "diagnostics"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "diagnostics_industry"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -4556,7 +4772,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "series-a",
       "funding_bucket_usd": 15,
       "valuation_bucket_usd": 50,
@@ -4568,7 +4784,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"diagnostics-medtech\", \"human-health\"]"
+      ],
       "tech_tags": [
         "diagnostics"
       ],
@@ -4603,7 +4821,10 @@ window.STARTUP_THEMES_DATA = {
         "diagnostics",
         "synbio"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "diagnostics_industry"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -4613,7 +4834,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -4625,7 +4846,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"diagnostics-medtech\", \"human-health\"]"
+      ],
       "tech_tags": [
         "diagnostics",
         "synthetic-biology"
@@ -4672,7 +4895,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -4684,8 +4907,7 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "diagnostics-medtech",
-        "human-health"
+        "[\"diagnostics-medtech\", \"human-health\"]"
       ],
       "tech_tags": [
         "diagnostics"
@@ -4721,7 +4943,10 @@ window.STARTUP_THEMES_DATA = {
       "y": -8.402,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "diagnostics_industry"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": 13,
@@ -4731,7 +4956,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "seed",
       "funding_bucket_usd": 1,
       "valuation_bucket_usd": 0,
@@ -4740,7 +4965,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": -4.481,
       "sy": -9.867,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"diagnostics-medtech\", \"human-health\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -4774,7 +5001,10 @@ window.STARTUP_THEMES_DATA = {
         "diagnostics",
         "ai_ml"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "diagnostics_industry"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -4784,7 +5014,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -4796,7 +5026,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"diagnostics-medtech\", \"human-health\"]"
+      ],
       "tech_tags": [
         "diagnostics",
         "ai-data"
@@ -4846,7 +5078,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -4858,8 +5090,7 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "diagnostics-medtech",
-        "human-health"
+        "[\"diagnostics-medtech\", \"human-health\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -4899,7 +5130,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "ag_inputs"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "food_ingredients",
+        "human_health"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -4909,7 +5143,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Fish",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -4920,7 +5154,9 @@ window.STARTUP_THEMES_DATA = {
       "bio_lens": [
         "biocentric"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"human-health\"]"
+      ],
       "tech_tags": [
         "bioinputs"
       ],
@@ -4951,7 +5187,10 @@ window.STARTUP_THEMES_DATA = {
       "y": 1.81,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "food_ingredients",
+        "human_health"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
@@ -4961,7 +5200,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Food Systems & Alt Proteins",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Fish",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 0,
@@ -4970,7 +5209,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": -10.635,
       "sy": -4.232,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"human-health\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -5015,7 +5256,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Aquaculture Biologicals",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -5029,8 +5270,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food",
-        "human-health"
+        "[\"agri-food\", \"human-health\"]"
       ],
       "tech_tags": [
         "ai-data"
@@ -5071,7 +5311,10 @@ window.STARTUP_THEMES_DATA = {
         "biomanufacturing",
         "fermentation"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "food_ingredients",
+        "human_health"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -5081,7 +5324,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Food Systems & Alt Proteins",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Fish",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -5093,7 +5336,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "bio-enabled-industrial-transition"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"human-health\"]"
+      ],
       "tech_tags": [
         "biomanufacturing",
         "fermentation"
@@ -5123,7 +5368,10 @@ window.STARTUP_THEMES_DATA = {
       "y": 1.785,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "food_ingredients",
+        "human_health"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": 16,
@@ -5133,7 +5381,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Farm Intelligence",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Fish",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -5142,7 +5390,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": -0.585,
       "sy": 6.945,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"human-health\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -5173,7 +5423,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "ag_inputs"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "food_ingredients",
+        "human_health"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -5183,7 +5436,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Fish",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -5194,7 +5447,9 @@ window.STARTUP_THEMES_DATA = {
       "bio_lens": [
         "biocentric"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"human-health\"]"
+      ],
       "tech_tags": [
         "bioinputs"
       ],
@@ -5228,7 +5483,10 @@ window.STARTUP_THEMES_DATA = {
         "biomanufacturing",
         "fermentation"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "food_ingredients",
+        "human_health"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -5238,7 +5496,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Food Systems & Alt Proteins",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Fish",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -5250,7 +5508,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "bio-enabled-industrial-transition"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"human-health\"]"
+      ],
       "tech_tags": [
         "biomanufacturing",
         "fermentation"
@@ -5286,7 +5546,10 @@ window.STARTUP_THEMES_DATA = {
         "biomanufacturing",
         "fermentation"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "food_ingredients",
+        "human_health"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -5296,7 +5559,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Food Systems & Alt Proteins",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Fish",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -5308,7 +5571,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "bio-enabled-industrial-transition"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"human-health\"]"
+      ],
       "tech_tags": [
         "biomanufacturing",
         "fermentation"
@@ -5343,7 +5608,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "water_tech"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "food_ingredients",
+        "human_health"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -5353,7 +5621,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Food Systems & Alt Proteins",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Fish",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -5365,7 +5633,9 @@ window.STARTUP_THEMES_DATA = {
         "biocentric",
         "planetary-boundary"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"human-health\"]"
+      ],
       "tech_tags": [
         "remediation"
       ],
@@ -5394,7 +5664,10 @@ window.STARTUP_THEMES_DATA = {
       "y": 3.584,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "food_ingredients",
+        "human_health"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
@@ -5404,7 +5677,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Farm Intelligence",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Fish",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -5413,7 +5686,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": -0.636,
       "sy": 6.956,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"human-health\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -5445,7 +5720,10 @@ window.STARTUP_THEMES_DATA = {
         "biomanufacturing",
         "fermentation"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "food_ingredients",
+        "human_health"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -5455,7 +5733,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Food Systems & Alt Proteins",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Fish",
       "funding_stage": "series-a",
       "funding_bucket_usd": 10,
       "valuation_bucket_usd": 15,
@@ -5467,7 +5745,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "bio-enabled-industrial-transition"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"human-health\"]"
+      ],
       "tech_tags": [
         "biomanufacturing",
         "fermentation"
@@ -5499,7 +5779,10 @@ window.STARTUP_THEMES_DATA = {
       "y": 1.917,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "food_ingredients",
+        "human_health"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -5509,7 +5792,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Food Systems & Alt Proteins",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Fish",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 0,
@@ -5521,7 +5804,9 @@ window.STARTUP_THEMES_DATA = {
         "biocentric",
         "planetary-boundary"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"human-health\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -5551,7 +5836,10 @@ window.STARTUP_THEMES_DATA = {
       "y": 1.779,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "food_ingredients",
+        "human_health"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -5561,7 +5849,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Farm Intelligence",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Fish",
       "funding_stage": "series-a",
       "funding_bucket_usd": 5,
       "valuation_bucket_usd": 25,
@@ -5574,7 +5862,9 @@ window.STARTUP_THEMES_DATA = {
         "bio-enabled-industrial-transition",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"human-health\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -5606,7 +5896,10 @@ window.STARTUP_THEMES_DATA = {
         "ai_ml",
         "fermentation"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "food_ingredients",
+        "human_health"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": 5,
@@ -5616,7 +5909,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Farm Intelligence",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Fish",
       "funding_stage": "series-a",
       "funding_bucket_usd": 15,
       "valuation_bucket_usd": 50,
@@ -5629,7 +5922,9 @@ window.STARTUP_THEMES_DATA = {
         "bio-enabled-industrial-transition",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"human-health\"]"
+      ],
       "tech_tags": [
         "ai-data",
         "fermentation"
@@ -5682,7 +5977,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Food Systems & Alt Proteins",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Fish",
       "funding_stage": "seed",
       "funding_bucket_usd": 1,
       "valuation_bucket_usd": 1,
@@ -5696,8 +5991,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food",
-        "human-health"
+        "[\"agri-food\", \"human-health\"]"
       ],
       "tech_tags": [
         "ai-data"
@@ -5735,7 +6029,10 @@ window.STARTUP_THEMES_DATA = {
       "y": 2.048,
       "is_outlier": true,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "food_ingredients",
+        "human_health"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": 12,
@@ -5745,7 +6042,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Farm Intelligence",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Fish",
       "funding_stage": "series-a",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -5754,7 +6051,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": 1.848,
       "sy": 0.386,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"human-health\"]"
+      ],
       "tech_tags": [
         "black soldier fly, protein extraction, oil extraction, biostimulant production, HACCP-certified processing"
       ],
@@ -5791,7 +6090,10 @@ window.STARTUP_THEMES_DATA = {
         "biomanufacturing",
         "fermentation"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "food_ingredients",
+        "human_health"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -5801,7 +6103,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Food Systems & Alt Proteins",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Fish",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -5813,7 +6115,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "bio-enabled-industrial-transition"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"human-health\"]"
+      ],
       "tech_tags": [
         "biomanufacturing",
         "fermentation"
@@ -5848,7 +6152,10 @@ window.STARTUP_THEMES_DATA = {
         "biomanufacturing",
         "fermentation"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "food_ingredients",
+        "human_health"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -5858,7 +6165,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Food Systems & Alt Proteins",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Fish",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 0,
@@ -5870,7 +6177,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "bio-enabled-industrial-transition"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"human-health\"]"
+      ],
       "tech_tags": [
         "biomanufacturing",
         "fermentation"
@@ -5903,7 +6212,10 @@ window.STARTUP_THEMES_DATA = {
       "y": 1.77,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "food_ingredients",
+        "human_health"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -5913,7 +6225,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Farm Intelligence",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Fish",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 0,
@@ -5926,7 +6238,9 @@ window.STARTUP_THEMES_DATA = {
         "bio-enabled-industrial-transition",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"human-health\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -5959,7 +6273,10 @@ window.STARTUP_THEMES_DATA = {
         "biomanufacturing",
         "fermentation"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "food_ingredients",
+        "human_health"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -5969,7 +6286,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Food Systems & Alt Proteins",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Fish",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 0,
@@ -5981,7 +6298,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "bio-enabled-industrial-transition"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"human-health\"]"
+      ],
       "tech_tags": [
         "biomanufacturing",
         "fermentation"
@@ -6013,7 +6332,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "ag_inputs"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "food_ingredients",
+        "human_health"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -6023,7 +6345,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Fish",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 0,
@@ -6034,7 +6356,9 @@ window.STARTUP_THEMES_DATA = {
       "bio_lens": [
         "biocentric"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"human-health\"]"
+      ],
       "tech_tags": [
         "bioinputs"
       ],
@@ -6063,7 +6387,10 @@ window.STARTUP_THEMES_DATA = {
       "y": 1.689,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "food_ingredients",
+        "human_health"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": 19,
@@ -6073,7 +6400,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Farm Intelligence",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Fish",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -6082,7 +6409,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": -0.462,
       "sy": 6.765,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"human-health\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -6114,7 +6443,10 @@ window.STARTUP_THEMES_DATA = {
       "y": 1.703,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "food_ingredients",
+        "human_health"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": 22,
@@ -6124,7 +6456,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Farm Intelligence",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Fish",
       "funding_stage": "seed",
       "funding_bucket_usd": 1,
       "valuation_bucket_usd": 10,
@@ -6137,7 +6469,9 @@ window.STARTUP_THEMES_DATA = {
         "bio-enabled-industrial-transition",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"human-health\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -6168,7 +6502,10 @@ window.STARTUP_THEMES_DATA = {
       "y": 1.747,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "food_ingredients",
+        "human_health"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -6178,7 +6515,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Farm Intelligence",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Fish",
       "funding_stage": "series-c+",
       "funding_bucket_usd": 100,
       "valuation_bucket_usd": 100,
@@ -6191,7 +6528,9 @@ window.STARTUP_THEMES_DATA = {
         "bio-enabled-industrial-transition",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"human-health\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -6224,7 +6563,10 @@ window.STARTUP_THEMES_DATA = {
       "y": 1.669,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "food_ingredients",
+        "human_health"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -6234,7 +6576,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Farm Intelligence",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Fish",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -6247,7 +6589,9 @@ window.STARTUP_THEMES_DATA = {
         "bio-enabled-industrial-transition",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"human-health\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -6280,7 +6624,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "ag_inputs"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "food_ingredients",
+        "human_health"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -6290,7 +6637,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Fish",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -6301,7 +6648,9 @@ window.STARTUP_THEMES_DATA = {
       "bio_lens": [
         "biocentric"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"human-health\"]"
+      ],
       "tech_tags": [
         "bioinputs"
       ],
@@ -6330,7 +6679,10 @@ window.STARTUP_THEMES_DATA = {
       "y": 1.67,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "food_ingredients",
+        "human_health"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -6340,7 +6692,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Farm Intelligence",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Fish",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -6353,7 +6705,9 @@ window.STARTUP_THEMES_DATA = {
         "bio-enabled-industrial-transition",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"human-health\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -6383,7 +6737,10 @@ window.STARTUP_THEMES_DATA = {
       "y": 1.829,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "food_ingredients",
+        "human_health"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -6393,7 +6750,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Farm Intelligence",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Fish",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -6406,7 +6763,9 @@ window.STARTUP_THEMES_DATA = {
         "bio-enabled-industrial-transition",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"human-health\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -6436,7 +6795,10 @@ window.STARTUP_THEMES_DATA = {
       "y": 2.163,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "food_ingredients",
+        "human_health"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": 28,
@@ -6446,7 +6808,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Farm Intelligence",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Fish",
       "funding_stage": "series-a",
       "funding_bucket_usd": 15,
       "valuation_bucket_usd": 25,
@@ -6455,7 +6817,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": -0.65,
       "sy": 6.945,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"human-health\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -6487,7 +6851,10 @@ window.STARTUP_THEMES_DATA = {
         "biomanufacturing",
         "fermentation"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "food_ingredients",
+        "human_health"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -6497,7 +6864,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Food Systems & Alt Proteins",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Fish",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -6509,7 +6876,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "bio-enabled-industrial-transition"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"human-health\"]"
+      ],
       "tech_tags": [
         "biomanufacturing",
         "fermentation",
@@ -6546,7 +6915,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "biomaterials"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "food_ingredients",
+        "human_health"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -6556,7 +6928,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Food Systems & Alt Proteins",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Fish",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -6568,7 +6940,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "bio-enabled-industrial-transition"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"human-health\"]"
+      ],
       "tech_tags": [
         "biomaterials"
       ],
@@ -6613,7 +6987,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Bioinputs & Crop Resilience",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Aquaculture Biologicals",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -6627,8 +7001,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food",
-        "human-health"
+        "[\"agri-food\", \"human-health\"]"
       ],
       "tech_tags": [],
       "scale_tags": [
@@ -6665,7 +7038,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "therapeutics"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "food_ingredients",
+        "human_health"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -6675,7 +7051,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Food Systems & Alt Proteins",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Fish",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 0,
@@ -6687,7 +7063,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"human-health\"]"
+      ],
       "tech_tags": [
         "therapeutics"
       ],
@@ -6736,7 +7114,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomaterials & Circular Economy",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Biobased Chemistry",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -6750,9 +7128,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "climate-resource",
-        "diagnostics-medtech",
-        "human-health"
+        "[\"climate-resource\", \"diagnostics-medtech\", \"human-health\"]"
       ],
       "tech_tags": [
         "ai-data"
@@ -6805,7 +7181,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomaterials & Circular Economy",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Biobased Chemistry",
       "funding_stage": "series-a",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -6817,7 +7193,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "climate-resource"
+        "[\"climate-resource\"]"
       ],
       "tech_tags": [
         "ai-data"
@@ -6873,7 +7249,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomaterials & Circular Economy",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Biobased Chemistry",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -6887,11 +7263,7 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "agri-food",
-        "biomanufacturing",
-        "biomaterials",
-        "human-health",
-        "industrial-biotech"
+        "[\"agri-food\", \"biomanufacturing\", \"biomaterials\", \"human-health\", \"industrial-biotech\"]"
       ],
       "tech_tags": [
         "biomanufacturing",
@@ -6952,7 +7324,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomaterials & Circular Economy",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Biobased Chemistry",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -6967,10 +7339,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food",
-        "biomanufacturing",
-        "biomaterials",
-        "climate-resource"
+        "[\"agri-food\", \"biomanufacturing\", \"biomaterials\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "biomanufacturing",
@@ -7034,7 +7403,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomaterials & Circular Economy",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Biobased Chemistry",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -7047,11 +7416,7 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "agri-food",
-        "biomaterials",
-        "human-health",
-        "industrial-biotech",
-        "therapeutics-regenerative"
+        "[\"agri-food\", \"biomaterials\", \"human-health\", \"industrial-biotech\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -7113,7 +7478,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomaterials & Circular Economy",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Biobased Chemistry",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -7128,9 +7493,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "biomanufacturing",
-        "climate-resource",
-        "industrial-biotech"
+        "[\"biomanufacturing\", \"climate-resource\", \"industrial-biotech\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -7192,7 +7555,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomaterials & Circular Economy",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Biobased Chemistry",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -7207,11 +7570,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food",
-        "biomanufacturing",
-        "biomaterials",
-        "climate-resource",
-        "industrial-biotech"
+        "[\"agri-food\", \"biomanufacturing\", \"biomaterials\", \"climate-resource\", \"industrial-biotech\"]"
       ],
       "tech_tags": [
         "biomaterials",
@@ -7275,7 +7634,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomaterials & Circular Economy",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Biobased Chemistry",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -7290,10 +7649,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "biomanufacturing",
-        "biomaterials",
-        "climate-resource",
-        "industrial-biotech"
+        "[\"biomanufacturing\", \"biomaterials\", \"climate-resource\", \"industrial-biotech\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -7351,7 +7707,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomaterials & Circular Economy",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Biobased Chemistry",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -7363,7 +7719,7 @@ window.STARTUP_THEMES_DATA = {
         "biobased"
       ],
       "domain_tags": [
-        "biomaterials"
+        "[\"biomaterials\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -7421,7 +7777,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomaterials & Circular Economy",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Biobased Chemistry",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -7434,7 +7790,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "climate-resource"
+        "[\"climate-resource\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -7489,7 +7845,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomaterials & Circular Economy",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Biobased Chemistry",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -7501,7 +7857,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "climate-resource"
+        "[\"climate-resource\"]"
       ],
       "tech_tags": [],
       "scale_tags": [
@@ -7558,7 +7914,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomaterials & Circular Economy",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Biobased Chemistry",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -7574,10 +7930,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food",
-        "biomanufacturing",
-        "biomaterials",
-        "climate-resource"
+        "[\"agri-food\", \"biomanufacturing\", \"biomaterials\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -7618,7 +7971,10 @@ window.STARTUP_THEMES_DATA = {
       "y": 1.198,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "materials_packaging",
+        "waste_circular"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": 19,
@@ -7628,7 +7984,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomaterials & Circular Economy",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 0,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Biobased Chemistry",
       "funding_stage": "accelerator",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -7637,7 +7993,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": -2.941,
       "sy": 1.195,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"biomaterials\", \"climate-resource\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -7668,7 +8026,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "clean_energy"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "carbon",
+        "biodiversity"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": 29,
@@ -7678,7 +8039,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Nature & Ecosystem Tech",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Nature-Based Solutions",
       "funding_stage": "series-a",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -7687,7 +8048,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": -2.454,
       "sy": 11.106,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"biodiversity-nature\", \"climate-resource\"]"
+      ],
       "tech_tags": [
         "renewable electrolysis, CO₂ capture, e-fuel synthesis, green hydrogen"
       ],
@@ -7737,7 +8100,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomaterials & Circular Economy",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Biobased Chemistry",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -7752,9 +8115,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food",
-        "biomaterials",
-        "climate-resource"
+        "[\"agri-food\", \"biomaterials\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "biomaterials",
@@ -7817,7 +8178,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomaterials & Circular Economy",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Biobased Chemistry",
       "funding_stage": "series-a",
       "funding_bucket_usd": 5,
       "valuation_bucket_usd": 25,
@@ -7831,9 +8192,7 @@ window.STARTUP_THEMES_DATA = {
         "bio-enabled-industrial-transition"
       ],
       "domain_tags": [
-        "agri-food",
-        "biomanufacturing",
-        "industrial-biotech"
+        "[\"agri-food\", \"biomanufacturing\", \"industrial-biotech\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -7900,7 +8259,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomaterials & Circular Economy",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Biobased Chemistry",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -7912,8 +8271,7 @@ window.STARTUP_THEMES_DATA = {
         "biobased"
       ],
       "domain_tags": [
-        "biomaterials",
-        "climate-resource"
+        "[\"biomaterials\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -7971,7 +8329,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomaterials & Circular Economy",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Biobased Chemistry",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -7985,9 +8343,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food",
-        "biomaterials",
-        "human-health"
+        "[\"agri-food\", \"biomaterials\", \"human-health\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -8044,7 +8400,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomaterials & Circular Economy",
       "bio_theme_secondary": "Diagnostics & Health Access",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Biobased Chemistry",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -8059,10 +8415,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food",
-        "biomaterials",
-        "climate-resource",
-        "diagnostics-medtech"
+        "[\"agri-food\", \"biomaterials\", \"climate-resource\", \"diagnostics-medtech\"]"
       ],
       "tech_tags": [
         "biomaterials"
@@ -8121,7 +8474,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomaterials & Circular Economy",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Biobased Chemistry",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -8136,10 +8489,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food",
-        "biomanufacturing",
-        "biomaterials",
-        "climate-resource"
+        "[\"agri-food\", \"biomanufacturing\", \"biomaterials\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -8198,7 +8548,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomaterials & Circular Economy",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Biobased Chemistry",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -8212,8 +8562,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "biomaterials",
-        "climate-resource"
+        "[\"biomaterials\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "biomaterials"
@@ -8266,7 +8615,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomaterials & Circular Economy",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Biobased Chemistry",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -8280,8 +8629,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "biomaterials",
-        "climate-resource"
+        "[\"biomaterials\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -8321,7 +8669,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "clean_energy"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "carbon",
+        "biodiversity"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": 1,
@@ -8331,7 +8682,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Nature & Ecosystem Tech",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Restoration & Nature Finance",
       "funding_stage": "series-a",
       "funding_bucket_usd": 15,
       "valuation_bucket_usd": 50,
@@ -8340,7 +8691,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": -2.469,
       "sy": 1.053,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"biodiversity-nature\", \"climate-resource\"]"
+      ],
       "tech_tags": [
         "modular biodigesters, biogas generation, bioslurry fertilizer, smallholder agriculture"
       ],
@@ -8395,7 +8748,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomaterials & Circular Economy",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Biobased Chemistry",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -8409,9 +8762,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "biomanufacturing",
-        "biomaterials",
-        "climate-resource"
+        "[\"biomanufacturing\", \"biomaterials\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "biomanufacturing",
@@ -8455,7 +8806,10 @@ window.STARTUP_THEMES_DATA = {
       "y": 0.737,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "materials_packaging",
+        "waste_circular"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": 20,
@@ -8465,7 +8819,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomaterials & Circular Economy",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Packaging",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -8474,7 +8828,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": 0.27,
       "sy": 2.342,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"biomaterials\", \"climate-resource\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -8506,7 +8862,10 @@ window.STARTUP_THEMES_DATA = {
       "y": 0.717,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "materials_packaging",
+        "waste_circular"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": 19,
@@ -8516,7 +8875,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomaterials & Circular Economy",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 0,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Packaging",
       "funding_stage": "series-a",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -8525,7 +8884,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": 0.305,
       "sy": 2.378,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"biomaterials\", \"climate-resource\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -8572,7 +8933,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomaterials & Circular Economy",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Packaging",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -8586,8 +8947,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "biomaterials",
-        "climate-resource"
+        "[\"biomaterials\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "biomaterials"
@@ -8639,7 +8999,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomaterials & Circular Economy",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Packaging",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -8655,8 +9015,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "biomaterials",
-        "climate-resource"
+        "[\"biomaterials\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "biomaterials"
@@ -8695,7 +9054,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "biomaterials"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "materials_packaging",
+        "waste_circular"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -8705,7 +9067,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomaterials & Circular Economy",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Packaging",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -8717,7 +9079,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "bio-enabled-industrial-transition"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"biomaterials\", \"climate-resource\"]"
+      ],
       "tech_tags": [
         "biomaterials"
       ],
@@ -8750,7 +9114,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "water_tech"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "materials_packaging",
+        "waste_circular"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -8760,7 +9127,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomaterials & Circular Economy",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Packaging",
       "funding_stage": "series-a",
       "funding_bucket_usd": 5,
       "valuation_bucket_usd": 15,
@@ -8772,7 +9139,9 @@ window.STARTUP_THEMES_DATA = {
         "biocentric",
         "planetary-boundary"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"biomaterials\", \"climate-resource\"]"
+      ],
       "tech_tags": [
         "remediation"
       ],
@@ -8803,7 +9172,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "biomaterials"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "materials_packaging",
+        "waste_circular"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -8813,7 +9185,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomaterials & Circular Economy",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Packaging",
       "funding_stage": "series-a",
       "funding_bucket_usd": 5,
       "valuation_bucket_usd": 25,
@@ -8825,7 +9197,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "bio-enabled-industrial-transition"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"biomaterials\", \"climate-resource\"]"
+      ],
       "tech_tags": [
         "biomaterials"
       ],
@@ -8854,7 +9228,10 @@ window.STARTUP_THEMES_DATA = {
       "y": 0.81,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "materials_packaging",
+        "waste_circular"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
@@ -8864,7 +9241,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomaterials & Circular Economy",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Packaging",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -8873,7 +9250,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": 0.218,
       "sy": 2.288,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"biomaterials\", \"climate-resource\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -8900,7 +9279,10 @@ window.STARTUP_THEMES_DATA = {
       "y": 0.87,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "materials_packaging",
+        "waste_circular"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": 15,
@@ -8910,7 +9292,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomaterials & Circular Economy",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 0,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Packaging",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -8919,7 +9301,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": 0.16,
       "sy": 2.228,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"biomaterials\", \"climate-resource\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -8952,7 +9336,10 @@ window.STARTUP_THEMES_DATA = {
         "biomaterials",
         "carbon_tech"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "materials_packaging",
+        "waste_circular"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -8962,7 +9349,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomaterials & Circular Economy",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Packaging",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 0,
@@ -8974,7 +9361,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "bio-enabled-industrial-transition"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"biomaterials\", \"climate-resource\"]"
+      ],
       "tech_tags": [
         "biomaterials",
         "carbon-mrv"
@@ -9008,7 +9397,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "biomaterials"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "materials_packaging",
+        "waste_circular"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -9018,7 +9410,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomaterials & Circular Economy",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Packaging",
       "funding_stage": "seed",
       "funding_bucket_usd": 1,
       "valuation_bucket_usd": 5,
@@ -9030,7 +9422,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "bio-enabled-industrial-transition"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"biomaterials\", \"climate-resource\"]"
+      ],
       "tech_tags": [
         "biomaterials"
       ],
@@ -9061,7 +9455,10 @@ window.STARTUP_THEMES_DATA = {
       "y": 0.995,
       "is_outlier": true,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "materials_packaging",
+        "waste_circular"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": 7,
@@ -9071,7 +9468,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomaterials & Circular Economy",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": null,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Packaging",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -9080,7 +9477,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": 0.125,
       "sy": 2.19,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"biomaterials\", \"climate-resource\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -9112,7 +9511,10 @@ window.STARTUP_THEMES_DATA = {
       "y": 1.001,
       "is_outlier": true,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "materials_packaging",
+        "waste_circular"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": 7,
@@ -9122,7 +9524,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomaterials & Circular Economy",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": null,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Packaging",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -9131,7 +9533,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": 0.108,
       "sy": 2.172,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"biomaterials\", \"climate-resource\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -9180,7 +9584,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomaterials & Circular Economy",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Packaging",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -9194,8 +9598,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "biomaterials",
-        "climate-resource"
+        "[\"biomaterials\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "biomaterials"
@@ -9234,7 +9637,10 @@ window.STARTUP_THEMES_DATA = {
         "biomaterials",
         "carbon_tech"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "materials_packaging",
+        "waste_circular"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": 11,
@@ -9244,7 +9650,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomaterials & Circular Economy",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Packaging",
       "funding_stage": "series-a",
       "funding_bucket_usd": 5,
       "valuation_bucket_usd": 25,
@@ -9256,7 +9662,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "bio-enabled-industrial-transition"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"biomaterials\", \"climate-resource\"]"
+      ],
       "tech_tags": [
         "biomaterials",
         "carbon-mrv"
@@ -9292,7 +9700,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "biomaterials"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "materials_packaging",
+        "waste_circular"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -9302,7 +9713,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomaterials & Circular Economy",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Packaging",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 0,
@@ -9314,7 +9725,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "bio-enabled-industrial-transition"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"biomaterials\", \"climate-resource\"]"
+      ],
       "tech_tags": [
         "biomaterials"
       ],
@@ -9349,7 +9762,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "biomaterials"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "materials_packaging",
+        "waste_circular"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -9359,7 +9775,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomaterials & Circular Economy",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Packaging",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -9371,7 +9787,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "bio-enabled-industrial-transition"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"biomaterials\", \"climate-resource\"]"
+      ],
       "tech_tags": [
         "biomaterials"
       ],
@@ -9402,7 +9820,10 @@ window.STARTUP_THEMES_DATA = {
       "y": 0.997,
       "is_outlier": true,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "materials_packaging",
+        "waste_circular"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": 7,
@@ -9412,7 +9833,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomaterials & Circular Economy",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": null,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Packaging",
       "funding_stage": "series-a",
       "funding_bucket_usd": 5,
       "valuation_bucket_usd": 25,
@@ -9421,7 +9842,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": 0.063,
       "sy": 2.126,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"biomaterials\", \"climate-resource\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -9470,7 +9893,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Nature & Ecosystem Tech",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Nature-Based Solutions",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -9484,9 +9907,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "climate-resource",
-        "diagnostics-medtech",
-        "human-health"
+        "[\"climate-resource\", \"diagnostics-medtech\", \"human-health\"]"
       ],
       "tech_tags": [
         "ai-data"
@@ -9543,7 +9964,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomaterials & Circular Economy",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Circular Economy & Packaging",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -9556,8 +9977,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "biomaterials",
-        "climate-resource"
+        "[\"biomaterials\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -9594,7 +10014,10 @@ window.STARTUP_THEMES_DATA = {
       "y": 11.391,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "carbon",
+        "biodiversity"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": 31,
@@ -9604,7 +10027,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Nature & Ecosystem Tech",
       "bio_theme_secondary": "Farm Intelligence",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Nature-Based Solutions",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -9613,7 +10036,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": 1.45,
       "sy": 11.044,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"biodiversity-nature\", \"climate-resource\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -9658,7 +10083,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Nature & Ecosystem Tech",
       "bio_theme_secondary": "Farm Intelligence",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Nature-Based Solutions",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -9672,8 +10097,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "biodiversity-nature",
-        "climate-resource"
+        "[\"biodiversity-nature\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -9724,7 +10148,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Nature & Ecosystem Tech",
       "bio_theme_secondary": "Farm Intelligence",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Nature-Based Solutions",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -9740,9 +10164,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food",
-        "biodiversity-nature",
-        "climate-resource"
+        "[\"agri-food\", \"biodiversity-nature\", \"climate-resource\"]"
       ],
       "tech_tags": [],
       "scale_tags": [
@@ -9791,7 +10213,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomaterials & Circular Economy",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Circular Economy & Packaging",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -9804,7 +10226,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "climate-resource"
+        "[\"climate-resource\"]"
       ],
       "tech_tags": [
         "ai-data"
@@ -9859,7 +10281,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Nature & Ecosystem Tech",
       "bio_theme_secondary": "Farm Intelligence",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Nature-Based Solutions",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -9875,9 +10297,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food",
-        "biodiversity-nature",
-        "climate-resource"
+        "[\"agri-food\", \"biodiversity-nature\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "ai-data"
@@ -9931,7 +10351,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Nature & Ecosystem Tech",
       "bio_theme_secondary": "Farm Intelligence",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Nature-Based Solutions",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -9945,9 +10365,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food",
-        "biodiversity-nature",
-        "climate-resource"
+        "[\"agri-food\", \"biodiversity-nature\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "ai-data"
@@ -10005,7 +10423,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Nature & Ecosystem Tech",
       "bio_theme_secondary": "Farm Intelligence",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Nature-Based Solutions",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -10017,7 +10435,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "climate-resource"
+        "[\"climate-resource\"]"
       ],
       "tech_tags": [
         "ai-data"
@@ -10070,7 +10488,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Nature & Ecosystem Tech",
       "bio_theme_secondary": "Farm Intelligence",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Nature-Based Solutions",
       "funding_stage": "series-b",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -10084,8 +10502,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food",
-        "climate-resource"
+        "[\"agri-food\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "ai-data"
@@ -10128,7 +10545,10 @@ window.STARTUP_THEMES_DATA = {
         "ai_ml",
         "robotics"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "biomanufacturing_industry",
+        "research_labs"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
@@ -10138,7 +10558,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomanufacturing & Platform Technologies",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 0,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Precision Fermentation",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -10147,7 +10567,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": 9.79,
       "sy": 9.034,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"biomanufacturing\", \"industrial-biotech\"]"
+      ],
       "tech_tags": [
         "digital twin, IoT sensors, AI analytics, process automation, industrial integration"
       ],
@@ -10200,7 +10622,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomanufacturing & Platform Technologies",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Precision Fermentation",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -10215,10 +10637,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food",
-        "biomanufacturing",
-        "climate-resource",
-        "industrial-biotech"
+        "[\"agri-food\", \"biomanufacturing\", \"climate-resource\", \"industrial-biotech\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -10263,7 +10682,10 @@ window.STARTUP_THEMES_DATA = {
         "fermentation",
         "synbio"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "biomanufacturing_industry",
+        "research_labs"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -10273,7 +10695,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomanufacturing & Platform Technologies",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Precision Fermentation",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -10285,7 +10707,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "bio-enabled-industrial-transition"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"biomanufacturing\", \"industrial-biotech\"]"
+      ],
       "tech_tags": [
         "biomanufacturing",
         "fermentation",
@@ -10361,12 +10785,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food",
-        "biomanufacturing",
-        "climate-resource",
-        "human-health",
-        "industrial-biotech",
-        "therapeutics-regenerative"
+        "[\"agri-food\", \"biomanufacturing\", \"climate-resource\", \"human-health\", \"industrial-biotech\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -10445,9 +10864,7 @@ window.STARTUP_THEMES_DATA = {
         "bio-enabled-industrial-transition"
       ],
       "domain_tags": [
-        "agri-food",
-        "biomanufacturing",
-        "industrial-biotech"
+        "[\"agri-food\", \"biomanufacturing\", \"industrial-biotech\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -10511,7 +10928,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomanufacturing & Platform Technologies",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Precision Fermentation",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -10525,10 +10942,7 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "biomanufacturing",
-        "diagnostics-medtech",
-        "human-health",
-        "industrial-biotech"
+        "[\"biomanufacturing\", \"diagnostics-medtech\", \"human-health\", \"industrial-biotech\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -10574,7 +10988,10 @@ window.STARTUP_THEMES_DATA = {
         "fermentation",
         "synbio"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "biomanufacturing_industry",
+        "research_labs"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -10584,7 +11001,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomanufacturing & Platform Technologies",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Precision Fermentation",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 0,
@@ -10596,7 +11013,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "bio-enabled-industrial-transition"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"biomanufacturing\", \"industrial-biotech\"]"
+      ],
       "tech_tags": [
         "biomanufacturing",
         "fermentation",
@@ -10660,7 +11079,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food"
+        "[\"agri-food\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -10721,7 +11140,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomanufacturing & Platform Technologies",
       "bio_theme_secondary": "Food Systems & Alt Proteins",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Precision Fermentation",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": 25,
@@ -10734,9 +11153,7 @@ window.STARTUP_THEMES_DATA = {
         "bio-enabled-industrial-transition"
       ],
       "domain_tags": [
-        "agri-food",
-        "biomanufacturing",
-        "industrial-biotech"
+        "[\"agri-food\", \"biomanufacturing\", \"industrial-biotech\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -10803,7 +11220,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomanufacturing & Platform Technologies",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Precision Fermentation",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -10820,11 +11237,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food",
-        "biomanufacturing",
-        "human-health",
-        "industrial-biotech",
-        "therapeutics-regenerative"
+        "[\"agri-food\", \"biomanufacturing\", \"human-health\", \"industrial-biotech\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -10889,7 +11302,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomanufacturing & Platform Technologies",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Precision Fermentation",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -10904,9 +11317,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food",
-        "biomanufacturing",
-        "industrial-biotech"
+        "[\"agri-food\", \"biomanufacturing\", \"industrial-biotech\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -10951,7 +11362,10 @@ window.STARTUP_THEMES_DATA = {
         "bioinformatics",
         "diagnostics"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "biomanufacturing_industry",
+        "research_labs"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
@@ -10961,7 +11375,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomanufacturing & Platform Technologies",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 0,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Precision Fermentation",
       "funding_stage": "seed",
       "funding_bucket_usd": 1,
       "valuation_bucket_usd": 10,
@@ -10970,7 +11384,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": -8.363,
       "sy": -2.705,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"biomanufacturing\", \"industrial-biotech\"]"
+      ],
       "tech_tags": [
         "16S/ITS sequencing, PCR-LAMP, whole genome sequencing, AI bioinformatics, next-generation sequencing"
       ],
@@ -11036,10 +11452,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "biodiversity-nature",
-        "diagnostics-medtech",
-        "human-health",
-        "therapeutics-regenerative"
+        "[\"biodiversity-nature\", \"diagnostics-medtech\", \"human-health\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -11118,10 +11531,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food",
-        "climate-resource",
-        "human-health",
-        "therapeutics-regenerative"
+        "[\"agri-food\", \"climate-resource\", \"human-health\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -11193,10 +11603,7 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "biomanufacturing",
-        "human-health",
-        "industrial-biotech",
-        "therapeutics-regenerative"
+        "[\"biomanufacturing\", \"human-health\", \"industrial-biotech\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -11242,7 +11649,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "therapeutics"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "food_ingredients",
+        "human_health"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -11252,7 +11662,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Food Systems & Alt Proteins",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Novel Ingredients",
       "funding_stage": "seed",
       "funding_bucket_usd": 1,
       "valuation_bucket_usd": 5,
@@ -11264,7 +11674,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"human-health\"]"
+      ],
       "tech_tags": [
         "therapeutics"
       ],
@@ -11312,7 +11724,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Novel Ingredients",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -11326,10 +11738,7 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "agri-food",
-        "biomanufacturing",
-        "biomaterials",
-        "human-health"
+        "[\"agri-food\", \"biomanufacturing\", \"biomaterials\", \"human-health\"]"
       ],
       "tech_tags": [
         "biomanufacturing"
@@ -11381,7 +11790,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Novel Ingredients",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -11391,7 +11800,7 @@ window.STARTUP_THEMES_DATA = {
       "sy": 1.408,
       "bio_lens": [],
       "domain_tags": [
-        "agri-food"
+        "[\"agri-food\"]"
       ],
       "tech_tags": [],
       "scale_tags": [
@@ -11441,7 +11850,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Novel Ingredients",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -11456,8 +11865,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food",
-        "industrial-biotech"
+        "[\"agri-food\", \"industrial-biotech\"]"
       ],
       "tech_tags": [
         "ai-data"
@@ -11513,7 +11921,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Novel Ingredients",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -11525,7 +11933,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food"
+        "[\"agri-food\"]"
       ],
       "tech_tags": [],
       "scale_tags": [
@@ -11579,7 +11987,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Novel Ingredients",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -11592,8 +12000,7 @@ window.STARTUP_THEMES_DATA = {
         "bio-enabled-industrial-transition"
       ],
       "domain_tags": [
-        "agri-food",
-        "biomanufacturing"
+        "[\"agri-food\", \"biomanufacturing\"]"
       ],
       "tech_tags": [
         "fermentation",
@@ -11654,7 +12061,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Novel Ingredients",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -11670,9 +12077,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food",
-        "biomanufacturing",
-        "human-health"
+        "[\"agri-food\", \"biomanufacturing\", \"human-health\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -11734,7 +12139,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Novel Ingredients",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -11748,8 +12153,7 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "agri-food",
-        "human-health"
+        "[\"agri-food\", \"human-health\"]"
       ],
       "tech_tags": [
         "ai-data"
@@ -11808,7 +12212,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Novel Ingredients",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -11820,7 +12224,7 @@ window.STARTUP_THEMES_DATA = {
         "biobased"
       ],
       "domain_tags": [
-        "agri-food"
+        "[\"agri-food\"]"
       ],
       "tech_tags": [
         "fermentation"
@@ -11877,7 +12281,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Novel Ingredients",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -11892,9 +12296,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food",
-        "biomanufacturing",
-        "human-health"
+        "[\"agri-food\", \"biomanufacturing\", \"human-health\"]"
       ],
       "tech_tags": [
         "fermentation"
@@ -11948,7 +12350,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Bioinputs & Crop Resilience",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Novel Ingredients",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -11962,8 +12364,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food",
-        "human-health"
+        "[\"agri-food\", \"human-health\"]"
       ],
       "tech_tags": [
         "ai-data"
@@ -12016,7 +12417,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Novel Ingredients",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -12031,9 +12432,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food",
-        "biomanufacturing",
-        "human-health"
+        "[\"agri-food\", \"biomanufacturing\", \"human-health\"]"
       ],
       "tech_tags": [
         "fermentation"
@@ -12089,7 +12488,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Novel Ingredients",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -12099,7 +12498,7 @@ window.STARTUP_THEMES_DATA = {
       "sy": 1.452,
       "bio_lens": [],
       "domain_tags": [
-        "agri-food"
+        "[\"agri-food\"]"
       ],
       "tech_tags": [
         "ai-data"
@@ -12153,7 +12552,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Food Systems & Alt Proteins",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Novel Ingredients",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -12166,8 +12565,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food",
-        "climate-resource"
+        "[\"agri-food\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "ai-data"
@@ -12201,7 +12599,10 @@ window.STARTUP_THEMES_DATA = {
       "y": 2.011,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "food_ingredients",
+        "human_health"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
@@ -12211,7 +12612,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Novel Ingredients",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -12220,7 +12621,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": 2.689,
       "sy": 1.525,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"human-health\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -12263,7 +12666,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Novel Ingredients",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -12275,8 +12678,7 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "agri-food",
-        "human-health"
+        "[\"agri-food\", \"human-health\"]"
       ],
       "tech_tags": [],
       "scale_tags": [
@@ -12333,7 +12735,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Food Systems & Alt Proteins",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Novel Ingredients",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -12346,9 +12748,7 @@ window.STARTUP_THEMES_DATA = {
         "bio-enabled-industrial-transition"
       ],
       "domain_tags": [
-        "agri-food",
-        "biomanufacturing",
-        "biomaterials"
+        "[\"agri-food\", \"biomanufacturing\", \"biomaterials\"]"
       ],
       "tech_tags": [
         "biomaterials",
@@ -12406,7 +12806,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Novel Ingredients",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -12418,8 +12818,7 @@ window.STARTUP_THEMES_DATA = {
         "biocentric"
       ],
       "domain_tags": [
-        "agri-food",
-        "biodiversity-nature"
+        "[\"agri-food\", \"biodiversity-nature\"]"
       ],
       "tech_tags": [
         "ai-data"
@@ -12471,7 +12870,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Novel Ingredients",
       "funding_stage": "seed",
       "funding_bucket_usd": 1,
       "valuation_bucket_usd": 5,
@@ -12484,8 +12883,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food",
-        "climate-resource"
+        "[\"agri-food\", \"climate-resource\"]"
       ],
       "tech_tags": [],
       "scale_tags": [
@@ -12542,7 +12940,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Novel Ingredients",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -12555,9 +12953,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food",
-        "biomaterials",
-        "climate-resource"
+        "[\"agri-food\", \"biomaterials\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "ai-data"
@@ -12597,7 +12993,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "biomaterials"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "food_ingredients",
+        "human_health"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -12607,7 +13006,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Food Systems & Alt Proteins",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Novel Ingredients",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -12619,7 +13018,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "bio-enabled-industrial-transition"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"human-health\"]"
+      ],
       "tech_tags": [
         "biomaterials"
       ],
@@ -12671,7 +13072,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Novel Ingredients",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -12686,10 +13087,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food",
-        "biomanufacturing",
-        "biomaterials",
-        "human-health"
+        "[\"agri-food\", \"biomanufacturing\", \"biomaterials\", \"human-health\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -12756,7 +13154,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Novel Ingredients",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -12771,10 +13169,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food",
-        "biodiversity-nature",
-        "biomaterials",
-        "climate-resource"
+        "[\"agri-food\", \"biodiversity-nature\", \"biomaterials\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "biomaterials"
@@ -12833,7 +13228,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Novel Ingredients",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -12845,7 +13240,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food"
+        "[\"agri-food\"]"
       ],
       "tech_tags": [
         "ai-data"
@@ -12883,7 +13278,10 @@ window.STARTUP_THEMES_DATA = {
       "y": 0.17,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "food_ingredients",
+        "human_health"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": 7,
@@ -12893,7 +13291,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": null,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Novel Ingredients",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -12902,7 +13300,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": 4.687,
       "sy": 1.593,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"human-health\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -12931,7 +13331,10 @@ window.STARTUP_THEMES_DATA = {
       "y": 2.287,
       "is_outlier": true,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "food_ingredients",
+        "human_health"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
@@ -12941,7 +13344,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 0,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Novel Ingredients",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -12950,7 +13353,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": 1.975,
       "sy": 0.548,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"human-health\"]"
+      ],
       "tech_tags": [
         "Serkanto-AI, dietary RNA extraction, bioactive ingredients, functional food, AI-guided ingredient discovery"
       ],
@@ -12983,7 +13388,10 @@ window.STARTUP_THEMES_DATA = {
       "y": 2.005,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "food_ingredients",
+        "human_health"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
@@ -12993,7 +13401,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Novel Ingredients",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -13002,7 +13410,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": 2.645,
       "sy": 1.538,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"human-health\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -13047,7 +13457,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Novel Ingredients",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": 15,
@@ -13062,9 +13472,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food",
-        "biomanufacturing",
-        "human-health"
+        "[\"agri-food\", \"biomanufacturing\", \"human-health\"]"
       ],
       "tech_tags": [
         "fermentation"
@@ -13119,7 +13527,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Novel Ingredients",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -13134,8 +13542,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food",
-        "biodiversity-nature"
+        "[\"agri-food\", \"biodiversity-nature\"]"
       ],
       "tech_tags": [
         "bioinputs"
@@ -13210,11 +13617,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "biomanufacturing",
-        "climate-resource",
-        "human-health",
-        "industrial-biotech",
-        "therapeutics-regenerative"
+        "[\"biomanufacturing\", \"climate-resource\", \"human-health\", \"industrial-biotech\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -13272,7 +13675,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Biopharmaceutical",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -13286,8 +13689,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "human-health",
-        "therapeutics-regenerative"
+        "[\"human-health\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -13326,7 +13728,10 @@ window.STARTUP_THEMES_DATA = {
       "y": -9.592,
       "is_outlier": true,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "therapeutics_industry"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": 3,
@@ -13345,7 +13750,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": -10.758,
       "sy": -9.641,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"therapeutics-regenerative\", \"human-health\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -13380,7 +13787,10 @@ window.STARTUP_THEMES_DATA = {
         "therapeutics",
         "fermentation"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "therapeutics_industry"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": 3,
@@ -13390,7 +13800,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Biopharmaceutical",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -13402,7 +13812,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"therapeutics-regenerative\", \"human-health\"]"
+      ],
       "tech_tags": [
         "therapeutics",
         "precision-fermentation"
@@ -13458,7 +13870,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomanufacturing & Platform Technologies",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "CDMOs & Bioprocess Development",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -13472,12 +13884,7 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "agri-food",
-        "biomanufacturing",
-        "diagnostics-medtech",
-        "human-health",
-        "industrial-biotech",
-        "therapeutics-regenerative"
+        "[\"agri-food\", \"biomanufacturing\", \"diagnostics-medtech\", \"human-health\", \"industrial-biotech\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -13536,7 +13943,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Biopharmaceutical",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -13552,8 +13959,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "human-health",
-        "therapeutics-regenerative"
+        "[\"human-health\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -13610,7 +14016,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Biopharmaceutical",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -13624,8 +14030,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "human-health",
-        "therapeutics-regenerative"
+        "[\"human-health\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -13662,7 +14067,10 @@ window.STARTUP_THEMES_DATA = {
       "y": -9.589,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "therapeutics_industry"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": 3,
@@ -13681,7 +14089,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": -10.879,
       "sy": -9.711,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"therapeutics-regenerative\", \"human-health\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -13728,7 +14138,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Biopharmaceutical",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -13743,9 +14153,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food",
-        "human-health",
-        "therapeutics-regenerative"
+        "[\"agri-food\", \"human-health\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "therapeutics"
@@ -13787,7 +14195,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "therapeutics"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "therapeutics_industry"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -13797,7 +14208,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Biopharmaceutical",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -13809,7 +14220,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"therapeutics-regenerative\", \"human-health\"]"
+      ],
       "tech_tags": [
         "therapeutics"
       ],
@@ -13877,9 +14290,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "biomaterials",
-        "human-health",
-        "therapeutics-regenerative"
+        "[\"biomaterials\", \"human-health\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -13917,7 +14328,10 @@ window.STARTUP_THEMES_DATA = {
       "y": -9.603,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "therapeutics_industry"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": 3,
@@ -13936,7 +14350,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": -10.738,
       "sy": -9.62,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"therapeutics-regenerative\", \"human-health\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -13987,7 +14403,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Biopharmaceutical",
       "funding_stage": "series-a",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -14001,10 +14417,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food",
-        "biodiversity-nature",
-        "human-health",
-        "therapeutics-regenerative"
+        "[\"agri-food\", \"biodiversity-nature\", \"human-health\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -14042,7 +14455,10 @@ window.STARTUP_THEMES_DATA = {
       "y": -9.8,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "therapeutics_industry"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
@@ -14052,7 +14468,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Biopharmaceutical",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -14061,7 +14477,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": -11.532,
       "sy": -9.904,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"therapeutics-regenerative\", \"human-health\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -14107,7 +14525,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Biopharmaceutical",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -14121,8 +14539,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "human-health",
-        "therapeutics-regenerative"
+        "[\"human-health\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -14181,7 +14598,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomanufacturing & Platform Technologies",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "CDMOs & Bioprocess Development",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -14195,10 +14612,7 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "biomanufacturing",
-        "human-health",
-        "industrial-biotech",
-        "therapeutics-regenerative"
+        "[\"biomanufacturing\", \"human-health\", \"industrial-biotech\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -14238,7 +14652,10 @@ window.STARTUP_THEMES_DATA = {
       "y": -9.813,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "therapeutics_industry"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": 22,
@@ -14248,7 +14665,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Biopharmaceutical",
       "funding_stage": "series-a",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": 15,
@@ -14257,7 +14674,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": -11.546,
       "sy": -9.884,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"therapeutics-regenerative\", \"human-health\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -14306,7 +14725,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Biopharmaceutical",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -14320,8 +14739,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "human-health",
-        "therapeutics-regenerative"
+        "[\"human-health\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -14362,7 +14780,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "therapeutics"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "therapeutics_industry"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -14372,7 +14793,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Biopharmaceutical",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -14384,7 +14805,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"therapeutics-regenerative\", \"human-health\"]"
+      ],
       "tech_tags": [
         "therapeutics"
       ],
@@ -14454,10 +14877,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food",
-        "diagnostics-medtech",
-        "human-health",
-        "therapeutics-regenerative"
+        "[\"agri-food\", \"diagnostics-medtech\", \"human-health\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -14504,7 +14924,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "therapeutics"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "therapeutics_industry"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -14514,7 +14937,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Biopharmaceutical",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": 15,
@@ -14526,7 +14949,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"therapeutics-regenerative\", \"human-health\"]"
+      ],
       "tech_tags": [
         "therapeutics"
       ],
@@ -14574,7 +14999,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Biopharmaceutical",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -14588,8 +15013,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "human-health",
-        "therapeutics-regenerative"
+        "[\"human-health\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -14629,7 +15053,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "therapeutics"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "therapeutics_industry"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -14639,7 +15066,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Biopharmaceutical",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -14651,7 +15078,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"therapeutics-regenerative\", \"human-health\"]"
+      ],
       "tech_tags": [
         "therapeutics"
       ],
@@ -14700,7 +15129,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Biopharmaceutical",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -14714,8 +15143,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "human-health",
-        "therapeutics-regenerative"
+        "[\"human-health\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -14756,7 +15184,10 @@ window.STARTUP_THEMES_DATA = {
         "therapeutics",
         "biomaterials"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "therapeutics_industry"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -14766,7 +15197,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Diagnostics & Health Access",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Drug Testing",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 0,
@@ -14778,7 +15209,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"therapeutics-regenerative\", \"human-health\"]"
+      ],
       "tech_tags": [
         "therapeutics",
         "biomaterials"
@@ -14814,7 +15247,10 @@ window.STARTUP_THEMES_DATA = {
         "therapeutics",
         "biomaterials"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "therapeutics_industry"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -14824,7 +15260,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Diagnostics & Health Access",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Drug Testing",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 0,
@@ -14836,7 +15272,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"therapeutics-regenerative\", \"human-health\"]"
+      ],
       "tech_tags": [
         "therapeutics",
         "biomaterials"
@@ -14868,7 +15306,10 @@ window.STARTUP_THEMES_DATA = {
       "y": -9.807,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "therapeutics_industry"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
@@ -14878,7 +15319,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Diagnostics & Health Access",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Drug Testing",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -14887,7 +15328,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": -11.905,
       "sy": -9.546,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"therapeutics-regenerative\", \"human-health\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -14917,7 +15360,10 @@ window.STARTUP_THEMES_DATA = {
         "therapeutics",
         "biomaterials"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "therapeutics_industry"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -14927,7 +15373,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Diagnostics & Health Access",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Drug Testing",
       "funding_stage": "seed",
       "funding_bucket_usd": 1,
       "valuation_bucket_usd": 5,
@@ -14939,7 +15385,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"therapeutics-regenerative\", \"human-health\"]"
+      ],
       "tech_tags": [
         "therapeutics",
         "biomaterials"
@@ -14974,7 +15422,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "therapeutics"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "therapeutics_industry"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": 3,
@@ -14984,7 +15435,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Diagnostics & Health Access",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Drug Testing",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -14996,7 +15447,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"therapeutics-regenerative\", \"human-health\"]"
+      ],
       "tech_tags": [
         "therapeutics"
       ],
@@ -15025,7 +15478,10 @@ window.STARTUP_THEMES_DATA = {
       "y": -9.74,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "therapeutics_industry"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": 3,
@@ -15044,7 +15500,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": -11.917,
       "sy": -9.509,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"therapeutics-regenerative\", \"human-health\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -15089,7 +15547,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Bioinputs & Crop Resilience",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Seed Treatment",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -15105,9 +15563,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food",
-        "biodiversity-nature",
-        "climate-resource"
+        "[\"agri-food\", \"biodiversity-nature\", \"climate-resource\"]"
       ],
       "tech_tags": [],
       "scale_tags": [
@@ -15147,7 +15603,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "ag_inputs"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "row_crops",
+        "biodiversity"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -15157,7 +15616,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Seed Treatment",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -15168,7 +15627,9 @@ window.STARTUP_THEMES_DATA = {
       "bio_lens": [
         "biocentric"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"biodiversity-nature\"]"
+      ],
       "tech_tags": [
         "bioinputs"
       ],
@@ -15214,7 +15675,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Seed Treatment",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -15230,7 +15691,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food"
+        "[\"agri-food\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -15288,7 +15749,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Seed Treatment",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 0,
@@ -15301,7 +15762,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food"
+        "[\"agri-food\"]"
       ],
       "tech_tags": [
         "ai-data"
@@ -15338,7 +15799,10 @@ window.STARTUP_THEMES_DATA = {
       "y": 7.31,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "row_crops",
+        "biodiversity"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
@@ -15348,7 +15812,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Seed Treatment",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -15357,7 +15821,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": -8.054,
       "sy": 7.598,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"biodiversity-nature\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -15404,7 +15870,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Seed Treatment",
       "funding_stage": "series-b",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": 15,
@@ -15419,8 +15885,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food",
-        "biodiversity-nature"
+        "[\"agri-food\", \"biodiversity-nature\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -15487,7 +15952,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Food Systems & Alt Proteins",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Seed Treatment",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -15503,8 +15968,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food",
-        "human-health"
+        "[\"agri-food\", \"human-health\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -15560,7 +16024,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Seed Treatment",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -15574,7 +16038,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food"
+        "[\"agri-food\"]"
       ],
       "tech_tags": [
         "ai-data"
@@ -15628,7 +16092,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Seed Treatment",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -15643,8 +16107,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food",
-        "climate-resource"
+        "[\"agri-food\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "bioinputs"
@@ -15700,7 +16163,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Diagnostics & Health Access",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Seed Treatment",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -15715,9 +16178,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food",
-        "climate-resource",
-        "diagnostics-medtech"
+        "[\"agri-food\", \"climate-resource\", \"diagnostics-medtech\"]"
       ],
       "tech_tags": [
         "ai-data"
@@ -15776,7 +16237,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Bioinputs & Crop Resilience",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Seed Treatment",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -15792,8 +16253,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food",
-        "biomanufacturing"
+        "[\"agri-food\", \"biomanufacturing\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -15837,7 +16297,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "biomaterials"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "materials_packaging",
+        "waste_circular"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -15847,7 +16310,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomaterials & Circular Economy",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Antimicrobial",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": 50,
@@ -15859,7 +16322,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "bio-enabled-industrial-transition"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"biomaterials\", \"climate-resource\"]"
+      ],
       "tech_tags": [
         "biomaterials"
       ],
@@ -15890,7 +16355,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "biomaterials"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "materials_packaging",
+        "waste_circular"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -15900,7 +16368,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomaterials & Circular Economy",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Antimicrobial",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -15912,7 +16380,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "bio-enabled-industrial-transition"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"biomaterials\", \"climate-resource\"]"
+      ],
       "tech_tags": [
         "biomaterials"
       ],
@@ -15943,7 +16413,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "biomaterials"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "materials_packaging",
+        "waste_circular"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -15953,7 +16426,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomaterials & Circular Economy",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Antimicrobial",
       "funding_stage": "series-a",
       "funding_bucket_usd": 5,
       "valuation_bucket_usd": 25,
@@ -15965,7 +16438,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "bio-enabled-industrial-transition"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"biomaterials\", \"climate-resource\"]"
+      ],
       "tech_tags": [
         "biomaterials"
       ],
@@ -15996,7 +16471,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "biomaterials"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "materials_packaging",
+        "waste_circular"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": 17,
@@ -16006,7 +16484,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomaterials & Circular Economy",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Antimicrobial",
       "funding_stage": "series-a",
       "funding_bucket_usd": 5,
       "valuation_bucket_usd": 25,
@@ -16018,7 +16496,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "bio-enabled-industrial-transition"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"biomaterials\", \"climate-resource\"]"
+      ],
       "tech_tags": [
         "biomaterials"
       ],
@@ -16069,7 +16549,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomaterials & Circular Economy",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Antimicrobial",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -16082,8 +16562,7 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "biomaterials",
-        "human-health"
+        "[\"biomaterials\", \"human-health\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -16122,7 +16601,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "therapeutics"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "materials_packaging",
+        "waste_circular"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -16132,7 +16614,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomaterials & Circular Economy",
       "bio_theme_secondary": "Diagnostics & Health Access",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Antimicrobial",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -16144,7 +16626,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"biomaterials\", \"climate-resource\"]"
+      ],
       "tech_tags": [
         "therapeutics"
       ],
@@ -16173,7 +16657,10 @@ window.STARTUP_THEMES_DATA = {
       "y": 3.047,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "materials_packaging",
+        "waste_circular"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
@@ -16183,7 +16670,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomaterials & Circular Economy",
       "bio_theme_secondary": "Diagnostics & Health Access",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Antimicrobial",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -16192,7 +16679,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": -12.587,
       "sy": -9.561,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"biomaterials\", \"climate-resource\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -16224,7 +16713,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "biomaterials"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "materials_packaging",
+        "waste_circular"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -16234,7 +16726,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomaterials & Circular Economy",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Antimicrobial",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 0,
@@ -16246,7 +16738,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "bio-enabled-industrial-transition"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"biomaterials\", \"climate-resource\"]"
+      ],
       "tech_tags": [
         "biomaterials"
       ],
@@ -16277,7 +16771,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "therapeutics"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "materials_packaging",
+        "waste_circular"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -16287,7 +16784,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomaterials & Circular Economy",
       "bio_theme_secondary": "Diagnostics & Health Access",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Antimicrobial",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -16299,7 +16796,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"biomaterials\", \"climate-resource\"]"
+      ],
       "tech_tags": [
         "therapeutics"
       ],
@@ -16330,7 +16829,10 @@ window.STARTUP_THEMES_DATA = {
       "y": -10.14,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "therapeutics_industry"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
@@ -16340,7 +16842,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Diagnostics & Health Access",
       "is_bio_universe": 0,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Medtech & Devices",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -16349,7 +16851,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": -12.606,
       "sy": -9.56,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"therapeutics-regenerative\", \"human-health\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -16380,7 +16884,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "water_tech"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "materials_packaging",
+        "waste_circular"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -16390,7 +16897,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomaterials & Circular Economy",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Antimicrobial",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -16402,7 +16909,9 @@ window.STARTUP_THEMES_DATA = {
         "biocentric",
         "planetary-boundary"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"biomaterials\", \"climate-resource\"]"
+      ],
       "tech_tags": [
         "remediation"
       ],
@@ -16447,7 +16956,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Biologicals Crop",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -16461,8 +16970,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food",
-        "climate-resource"
+        "[\"agri-food\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "synthetic-biology"
@@ -16516,7 +17024,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Biologicals Crop",
       "funding_stage": "series-a",
       "funding_bucket_usd": 10,
       "valuation_bucket_usd": 25,
@@ -16530,7 +17038,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food"
+        "[\"agri-food\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -16576,7 +17084,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "ag_inputs"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "row_crops",
+        "biodiversity"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -16586,7 +17097,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Biologicals Crop",
       "funding_stage": "series-c+",
       "funding_bucket_usd": 100,
       "valuation_bucket_usd": 500,
@@ -16597,7 +17108,9 @@ window.STARTUP_THEMES_DATA = {
       "bio_lens": [
         "biocentric"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"biodiversity-nature\"]"
+      ],
       "tech_tags": [
         "bioinputs"
       ],
@@ -16646,7 +17159,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Biologicals Crop",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": 15,
@@ -16659,7 +17172,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food"
+        "[\"agri-food\"]"
       ],
       "tech_tags": [],
       "scale_tags": [
@@ -16712,7 +17225,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Biologicals Crop",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -16725,7 +17238,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food"
+        "[\"agri-food\"]"
       ],
       "tech_tags": [
         "bioinputs"
@@ -16766,7 +17279,10 @@ window.STARTUP_THEMES_DATA = {
         "ag_inputs",
         "synbio"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "row_crops",
+        "biodiversity"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": 4,
@@ -16776,7 +17292,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Biologicals Crop",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -16787,7 +17303,9 @@ window.STARTUP_THEMES_DATA = {
       "bio_lens": [
         "biocentric"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"biodiversity-nature\"]"
+      ],
       "tech_tags": [
         "bioinputs",
         "synthetic-biology"
@@ -16825,7 +17343,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "ag_inputs"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "row_crops",
+        "biodiversity"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -16835,7 +17356,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Biologicals Crop",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -16846,7 +17367,9 @@ window.STARTUP_THEMES_DATA = {
       "bio_lens": [
         "biocentric"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"biodiversity-nature\"]"
+      ],
       "tech_tags": [
         "bioinputs"
       ],
@@ -16891,7 +17414,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Farm Intelligence",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Biologicals Crop",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -16905,7 +17428,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food"
+        "[\"agri-food\"]"
       ],
       "tech_tags": [
         "bioinputs"
@@ -16944,7 +17467,10 @@ window.STARTUP_THEMES_DATA = {
       "y": 6.022,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "row_crops",
+        "biodiversity"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
@@ -16954,7 +17480,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 0,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Biologicals Crop",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -16963,7 +17489,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": -7.049,
       "sy": 4.565,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"biodiversity-nature\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -16992,7 +17520,10 @@ window.STARTUP_THEMES_DATA = {
       "y": 6.036,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "row_crops",
+        "biodiversity"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
@@ -17002,7 +17533,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Biologicals Crop",
       "funding_stage": "seed",
       "funding_bucket_usd": 1,
       "valuation_bucket_usd": 10,
@@ -17011,7 +17542,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": -7.068,
       "sy": 4.562,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"biodiversity-nature\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -17042,7 +17575,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "ag_inputs"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "row_crops",
+        "biodiversity"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -17052,7 +17588,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Biologicals Crop",
       "funding_stage": "series-c+",
       "funding_bucket_usd": 100,
       "valuation_bucket_usd": 100,
@@ -17063,7 +17599,9 @@ window.STARTUP_THEMES_DATA = {
       "bio_lens": [
         "biocentric"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"biodiversity-nature\"]"
+      ],
       "tech_tags": [
         "bioinputs"
       ],
@@ -17108,7 +17646,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Farm Intelligence",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Biologicals Crop",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -17121,7 +17659,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food"
+        "[\"agri-food\"]"
       ],
       "tech_tags": [],
       "scale_tags": [
@@ -17157,7 +17695,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "ag_inputs"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "row_crops",
+        "biodiversity"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": 19,
@@ -17167,7 +17708,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Biologicals Crop",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -17178,7 +17719,9 @@ window.STARTUP_THEMES_DATA = {
       "bio_lens": [
         "biocentric"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"biodiversity-nature\"]"
+      ],
       "tech_tags": [
         "bioinputs"
       ],
@@ -17226,7 +17769,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Biologicals Crop",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -17240,7 +17783,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food"
+        "[\"agri-food\"]"
       ],
       "tech_tags": [
         "bioinputs"
@@ -17296,7 +17839,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Biologicals Crop",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -17310,8 +17853,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food",
-        "climate-resource"
+        "[\"agri-food\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "ai-data"
@@ -17386,9 +17928,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food",
-        "diagnostics-medtech",
-        "human-health"
+        "[\"agri-food\", \"diagnostics-medtech\", \"human-health\"]"
       ],
       "tech_tags": [
         "ai-data"
@@ -17441,7 +17981,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Biologicals Crop",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -17455,7 +17995,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food"
+        "[\"agri-food\"]"
       ],
       "tech_tags": [],
       "scale_tags": [
@@ -17492,7 +18032,10 @@ window.STARTUP_THEMES_DATA = {
       "y": 5.938,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "row_crops",
+        "biodiversity"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
@@ -17502,7 +18045,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Biologicals Crop",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -17511,7 +18054,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": -7.067,
       "sy": 4.548,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"biodiversity-nature\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -17557,7 +18102,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Bioinputs & Crop Resilience",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Biologicals Crop",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -17571,8 +18116,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food",
-        "biomaterials"
+        "[\"agri-food\", \"biomaterials\"]"
       ],
       "tech_tags": [
         "biomaterials"
@@ -17615,7 +18159,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "ag_inputs"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "row_crops",
+        "biodiversity"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -17625,7 +18172,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Crop Protection",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -17636,7 +18183,9 @@ window.STARTUP_THEMES_DATA = {
       "bio_lens": [
         "biocentric"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"biodiversity-nature\"]"
+      ],
       "tech_tags": [
         "bioinputs"
       ],
@@ -17669,7 +18218,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "ag_inputs"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "row_crops",
+        "biodiversity"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -17679,7 +18231,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Crop Protection",
       "funding_stage": "series-a",
       "funding_bucket_usd": 5,
       "valuation_bucket_usd": 25,
@@ -17690,7 +18242,9 @@ window.STARTUP_THEMES_DATA = {
       "bio_lens": [
         "biocentric"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"biodiversity-nature\"]"
+      ],
       "tech_tags": [
         "bioinputs"
       ],
@@ -17719,7 +18273,10 @@ window.STARTUP_THEMES_DATA = {
       "y": 5.877,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "row_crops",
+        "biodiversity"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": 35,
@@ -17729,7 +18286,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Crop Protection",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -17738,7 +18295,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": -6.935,
       "sy": 4.463,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"biodiversity-nature\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -17771,7 +18330,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "ag_inputs"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "row_crops",
+        "biodiversity"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -17781,7 +18343,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Crop Protection",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": 15,
@@ -17792,7 +18354,9 @@ window.STARTUP_THEMES_DATA = {
       "bio_lens": [
         "biocentric"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"biodiversity-nature\"]"
+      ],
       "tech_tags": [
         "bioinputs"
       ],
@@ -17821,7 +18385,10 @@ window.STARTUP_THEMES_DATA = {
       "y": 5.862,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "row_crops",
+        "biodiversity"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
@@ -17831,7 +18398,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 0,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Crop Protection",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -17840,7 +18407,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": -6.958,
       "sy": 4.44,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"biodiversity-nature\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -17867,7 +18436,10 @@ window.STARTUP_THEMES_DATA = {
       "y": 5.974,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "row_crops",
+        "biodiversity"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": 6,
@@ -17877,7 +18449,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Bioinputs & Crop Resilience",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Crop Protection",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -17889,7 +18461,9 @@ window.STARTUP_THEMES_DATA = {
         "biocentric",
         "planetary-boundary"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"biodiversity-nature\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -17934,7 +18508,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Crop Protection",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -17948,7 +18522,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food"
+        "[\"agri-food\"]"
       ],
       "tech_tags": [
         "bioinputs",
@@ -17985,7 +18559,10 @@ window.STARTUP_THEMES_DATA = {
       "y": 6.063,
       "is_outlier": true,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "row_crops",
+        "biodiversity"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
@@ -17995,7 +18572,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 0,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Crop Protection",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -18004,7 +18581,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": -6.924,
       "sy": 4.468,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"biodiversity-nature\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -18035,7 +18614,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "ag_inputs"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "row_crops",
+        "biodiversity"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -18045,7 +18627,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Crop Protection",
       "funding_stage": "seed",
       "funding_bucket_usd": 1,
       "valuation_bucket_usd": 5,
@@ -18056,7 +18638,9 @@ window.STARTUP_THEMES_DATA = {
       "bio_lens": [
         "biocentric"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"biodiversity-nature\"]"
+      ],
       "tech_tags": [
         "bioinputs"
       ],
@@ -18103,7 +18687,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Nature & Ecosystem Tech",
       "bio_theme_secondary": "Farm Intelligence",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "MRV & Biodiversity Intelligence",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -18116,8 +18700,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "biodiversity-nature",
-        "climate-resource"
+        "[\"biodiversity-nature\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -18175,7 +18758,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Nature & Ecosystem Tech",
       "bio_theme_secondary": "Farm Intelligence",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "MRV & Biodiversity Intelligence",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -18189,8 +18772,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food",
-        "climate-resource"
+        "[\"agri-food\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -18248,7 +18830,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Nature & Ecosystem Tech",
       "bio_theme_secondary": "Farm Intelligence",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "MRV & Biodiversity Intelligence",
       "funding_stage": "series-a",
       "funding_bucket_usd": 5,
       "valuation_bucket_usd": 10,
@@ -18262,9 +18844,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food",
-        "biodiversity-nature",
-        "climate-resource"
+        "[\"agri-food\", \"biodiversity-nature\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -18311,7 +18891,10 @@ window.STARTUP_THEMES_DATA = {
         "remote_sensing",
         "carbon_tech"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "carbon",
+        "biodiversity"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -18321,7 +18904,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Nature & Ecosystem Tech",
       "bio_theme_secondary": "Farm Intelligence",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "MRV & Biodiversity Intelligence",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": 15,
@@ -18333,7 +18916,9 @@ window.STARTUP_THEMES_DATA = {
         "biocentric",
         "planetary-boundary"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"biodiversity-nature\", \"climate-resource\"]"
+      ],
       "tech_tags": [
         "ai-data",
         "remote-sensing",
@@ -18382,7 +18967,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Nature & Ecosystem Tech",
       "bio_theme_secondary": "Farm Intelligence",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "MRV & Biodiversity Intelligence",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -18396,8 +18981,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "biodiversity-nature",
-        "climate-resource"
+        "[\"biodiversity-nature\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -18459,7 +19043,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Nature & Ecosystem Tech",
       "bio_theme_secondary": "Farm Intelligence",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "MRV & Biodiversity Intelligence",
       "funding_stage": "series-c+",
       "funding_bucket_usd": 100,
       "valuation_bucket_usd": 100,
@@ -18473,8 +19057,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "biodiversity-nature",
-        "climate-resource"
+        "[\"biodiversity-nature\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -18521,7 +19104,10 @@ window.STARTUP_THEMES_DATA = {
         "ai_ml",
         "remote_sensing"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "carbon",
+        "biodiversity"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
@@ -18531,7 +19117,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Nature & Ecosystem Tech",
       "bio_theme_secondary": "Farm Intelligence",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "MRV & Biodiversity Intelligence",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -18540,7 +19126,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": 1.228,
       "sy": 11.305,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"biodiversity-nature\", \"climate-resource\"]"
+      ],
       "tech_tags": [
         "IoT forest sensors, machine learning, SmartForest system, carbon quantification, forest inventory, remote sensing"
       ],
@@ -18588,7 +19176,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Nature & Ecosystem Tech",
       "bio_theme_secondary": "Farm Intelligence",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Restoration & Nature Finance",
       "funding_stage": "series-a",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -18602,8 +19190,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "biodiversity-nature",
-        "climate-resource"
+        "[\"biodiversity-nature\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "carbon-mrv"
@@ -18658,7 +19245,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Nature & Ecosystem Tech",
       "bio_theme_secondary": "Farm Intelligence",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Restoration & Nature Finance",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -18671,8 +19258,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "biodiversity-nature",
-        "climate-resource"
+        "[\"biodiversity-nature\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -18728,7 +19314,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Nature & Ecosystem Tech",
       "bio_theme_secondary": "Farm Intelligence",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Restoration & Nature Finance",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -18742,9 +19328,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food",
-        "biodiversity-nature",
-        "climate-resource"
+        "[\"agri-food\", \"biodiversity-nature\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -18801,7 +19385,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Nature & Ecosystem Tech",
       "bio_theme_secondary": "Farm Intelligence",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Restoration & Nature Finance",
       "funding_stage": "series-a",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -18815,8 +19399,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "biodiversity-nature",
-        "climate-resource"
+        "[\"biodiversity-nature\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "ai-data"
@@ -18873,7 +19456,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Nature & Ecosystem Tech",
       "bio_theme_secondary": "Farm Intelligence",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Restoration & Nature Finance",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -18886,8 +19469,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "biodiversity-nature",
-        "climate-resource"
+        "[\"biodiversity-nature\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "carbon-mrv"
@@ -18941,7 +19523,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Nature & Ecosystem Tech",
       "bio_theme_secondary": "Farm Intelligence",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Restoration & Nature Finance",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -18955,8 +19537,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "biodiversity-nature",
-        "climate-resource"
+        "[\"biodiversity-nature\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -19011,7 +19592,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Nature & Ecosystem Tech",
       "bio_theme_secondary": "Farm Intelligence",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Restoration & Nature Finance",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -19024,7 +19605,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "climate-resource"
+        "[\"climate-resource\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -19079,7 +19660,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Nature & Ecosystem Tech",
       "bio_theme_secondary": "Farm Intelligence",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Restoration & Nature Finance",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -19093,8 +19674,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "biodiversity-nature",
-        "climate-resource"
+        "[\"biodiversity-nature\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -19149,7 +19729,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Nature & Ecosystem Tech",
       "bio_theme_secondary": "Farm Intelligence",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Restoration & Nature Finance",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -19163,8 +19743,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "biodiversity-nature",
-        "climate-resource"
+        "[\"biodiversity-nature\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -19237,10 +19816,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food",
-        "diagnostics-medtech",
-        "human-health",
-        "therapeutics-regenerative"
+        "[\"agri-food\", \"diagnostics-medtech\", \"human-health\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -19314,9 +19890,7 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "biomaterials",
-        "diagnostics-medtech",
-        "human-health"
+        "[\"biomaterials\", \"diagnostics-medtech\", \"human-health\"]"
       ],
       "tech_tags": [
         "biomaterials",
@@ -19358,7 +19932,10 @@ window.STARTUP_THEMES_DATA = {
         "iot",
         "medical_devices"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "diagnostics_industry"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": 2,
@@ -19377,7 +19954,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": -3.44,
       "sy": -7.579,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"diagnostics-medtech\", \"human-health\"]"
+      ],
       "tech_tags": [
         "smart prosthetics, embedded sensors, ACL reconstruction, real-time postoperative monitoring, orthopedic medtech"
       ],
@@ -19442,8 +20021,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "human-health",
-        "therapeutics-regenerative"
+        "[\"human-health\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -19517,10 +20095,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food",
-        "biodiversity-nature",
-        "diagnostics-medtech",
-        "human-health"
+        "[\"agri-food\", \"biodiversity-nature\", \"diagnostics-medtech\", \"human-health\"]"
       ],
       "tech_tags": [
         "diagnostics"
@@ -19583,7 +20158,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -19597,11 +20172,7 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "biomanufacturing",
-        "biomaterials",
-        "human-health",
-        "industrial-biotech",
-        "therapeutics-regenerative"
+        "[\"biomanufacturing\", \"biomaterials\", \"human-health\", \"industrial-biotech\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "biomaterials",
@@ -19675,9 +20246,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "diagnostics-medtech",
-        "human-health",
-        "therapeutics-regenerative"
+        "[\"diagnostics-medtech\", \"human-health\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -19747,8 +20316,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "diagnostics-medtech",
-        "human-health"
+        "[\"diagnostics-medtech\", \"human-health\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -19820,8 +20388,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "diagnostics-medtech",
-        "human-health"
+        "[\"diagnostics-medtech\", \"human-health\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -19865,7 +20432,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "diagnostics"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "diagnostics_industry"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -19875,7 +20445,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Diagnostics & Health Access",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Diagnostics",
       "funding_stage": "series-c+",
       "funding_bucket_usd": 100,
       "valuation_bucket_usd": 1000,
@@ -19887,7 +20457,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"diagnostics-medtech\", \"human-health\"]"
+      ],
       "tech_tags": [
         "diagnostics"
       ],
@@ -19947,8 +20519,7 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "diagnostics-medtech",
-        "human-health"
+        "[\"diagnostics-medtech\", \"human-health\"]"
       ],
       "tech_tags": [
         "diagnostics",
@@ -20016,9 +20587,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food",
-        "diagnostics-medtech",
-        "human-health"
+        "[\"agri-food\", \"diagnostics-medtech\", \"human-health\"]"
       ],
       "tech_tags": [
         "diagnostics"
@@ -20060,7 +20629,10 @@ window.STARTUP_THEMES_DATA = {
       "y": -9.666,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "therapeutics_industry"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
@@ -20079,7 +20651,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": -9.655,
       "sy": -10.021,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"therapeutics-regenerative\", \"human-health\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -20142,9 +20716,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food",
-        "diagnostics-medtech",
-        "human-health"
+        "[\"agri-food\", \"diagnostics-medtech\", \"human-health\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -20217,8 +20789,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "human-health",
-        "therapeutics-regenerative"
+        "[\"human-health\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "therapeutics"
@@ -20287,8 +20858,7 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "human-health",
-        "therapeutics-regenerative"
+        "[\"human-health\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -20360,10 +20930,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food",
-        "diagnostics-medtech",
-        "human-health",
-        "therapeutics-regenerative"
+        "[\"agri-food\", \"diagnostics-medtech\", \"human-health\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -20433,9 +21000,7 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "diagnostics-medtech",
-        "human-health",
-        "therapeutics-regenerative"
+        "[\"diagnostics-medtech\", \"human-health\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -20507,10 +21072,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food",
-        "diagnostics-medtech",
-        "human-health",
-        "therapeutics-regenerative"
+        "[\"agri-food\", \"diagnostics-medtech\", \"human-health\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -20585,8 +21147,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "human-health",
-        "therapeutics-regenerative"
+        "[\"human-health\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -20654,8 +21215,7 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "diagnostics-medtech",
-        "human-health"
+        "[\"diagnostics-medtech\", \"human-health\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -20725,9 +21285,7 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "diagnostics-medtech",
-        "human-health",
-        "therapeutics-regenerative"
+        "[\"diagnostics-medtech\", \"human-health\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -20794,9 +21352,7 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "diagnostics-medtech",
-        "human-health",
-        "therapeutics-regenerative"
+        "[\"diagnostics-medtech\", \"human-health\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "diagnostics",
@@ -20836,7 +21392,10 @@ window.STARTUP_THEMES_DATA = {
       "y": -9.914,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "therapeutics_industry"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": 12,
@@ -20846,7 +21405,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Cancer",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -20855,7 +21414,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": -11.88,
       "sy": -9.753,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"therapeutics-regenerative\", \"human-health\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -20888,7 +21449,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "therapeutics"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "therapeutics_industry"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -20898,7 +21462,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Cancer",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": 15,
@@ -20910,7 +21474,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"therapeutics-regenerative\", \"human-health\"]"
+      ],
       "tech_tags": [
         "therapeutics"
       ],
@@ -20941,7 +21507,10 @@ window.STARTUP_THEMES_DATA = {
       "y": -9.865,
       "is_outlier": true,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "therapeutics_industry"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
@@ -20951,7 +21520,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Cancer",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -20960,7 +21529,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": -11.586,
       "sy": -9.898,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"therapeutics-regenerative\", \"human-health\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -20989,7 +21560,10 @@ window.STARTUP_THEMES_DATA = {
       "y": -9.941,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "therapeutics_industry"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
@@ -20999,7 +21573,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Cancer",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -21008,7 +21582,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": -11.757,
       "sy": -10.264,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"therapeutics-regenerative\", \"human-health\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -21054,7 +21630,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Cancer",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -21068,8 +21644,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "human-health",
-        "therapeutics-regenerative"
+        "[\"human-health\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -21110,7 +21685,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "therapeutics"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "therapeutics_industry"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -21120,7 +21698,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Cancer",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -21132,7 +21710,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"therapeutics-regenerative\", \"human-health\"]"
+      ],
       "tech_tags": [
         "therapeutics"
       ],
@@ -21163,7 +21743,10 @@ window.STARTUP_THEMES_DATA = {
       "y": -9.917,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "therapeutics_industry"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
@@ -21173,7 +21756,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 0,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Cancer",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -21182,7 +21765,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": -11.698,
       "sy": -9.934,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"therapeutics-regenerative\", \"human-health\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -21215,7 +21800,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "therapeutics"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "therapeutics_industry"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -21225,7 +21813,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Cancer",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -21237,7 +21825,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"therapeutics-regenerative\", \"human-health\"]"
+      ],
       "tech_tags": [
         "therapeutics"
       ],
@@ -21285,7 +21875,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Cancer",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -21299,9 +21889,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food",
-        "human-health",
-        "therapeutics-regenerative"
+        "[\"agri-food\", \"human-health\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "therapeutics"
@@ -21354,7 +21942,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Cancer",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": 15,
@@ -21368,9 +21956,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "climate-resource",
-        "human-health",
-        "therapeutics-regenerative"
+        "[\"climate-resource\", \"human-health\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "therapeutics"
@@ -21410,7 +21996,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "therapeutics"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "therapeutics_industry"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -21420,7 +22009,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Cancer",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -21432,7 +22021,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"therapeutics-regenerative\", \"human-health\"]"
+      ],
       "tech_tags": [
         "therapeutics"
       ],
@@ -21465,7 +22056,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "therapeutics"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "therapeutics_industry"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -21475,7 +22069,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Cancer",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -21487,7 +22081,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"therapeutics-regenerative\", \"human-health\"]"
+      ],
       "tech_tags": [
         "therapeutics"
       ],
@@ -21547,8 +22143,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "human-health",
-        "therapeutics-regenerative"
+        "[\"human-health\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -21585,7 +22180,10 @@ window.STARTUP_THEMES_DATA = {
       "y": -9.884,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "therapeutics_industry"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
@@ -21595,7 +22193,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 0,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Cancer",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -21604,7 +22202,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": -11.865,
       "sy": -9.757,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"therapeutics-regenerative\", \"human-health\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -21634,7 +22234,10 @@ window.STARTUP_THEMES_DATA = {
         "therapeutics",
         "ai_ml"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "therapeutics_industry"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -21644,7 +22247,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Cancer",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -21656,7 +22259,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"therapeutics-regenerative\", \"human-health\"]"
+      ],
       "tech_tags": [
         "therapeutics",
         "ai-data"
@@ -21723,10 +22328,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food",
-        "diagnostics-medtech",
-        "human-health",
-        "therapeutics-regenerative"
+        "[\"agri-food\", \"diagnostics-medtech\", \"human-health\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -21769,7 +22371,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "therapeutics"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "therapeutics_industry"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": 6,
@@ -21779,7 +22384,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Cancer",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -21791,7 +22396,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"therapeutics-regenerative\", \"human-health\"]"
+      ],
       "tech_tags": [
         "therapeutics"
       ],
@@ -21822,7 +22429,10 @@ window.STARTUP_THEMES_DATA = {
       "y": -10.363,
       "is_outlier": true,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "therapeutics_industry"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
@@ -21832,7 +22442,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Cancer",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -21841,7 +22451,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": -8.0,
       "sy": -14.348,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"therapeutics-regenerative\", \"human-health\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -21873,7 +22485,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "therapeutics"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "therapeutics_industry"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -21883,7 +22498,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Cancer",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 0,
@@ -21895,7 +22510,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"therapeutics-regenerative\", \"human-health\"]"
+      ],
       "tech_tags": [
         "therapeutics"
       ],
@@ -21928,7 +22545,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "therapeutics"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "therapeutics_industry"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
@@ -21938,7 +22558,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Cancer",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -21947,7 +22567,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": -11.715,
       "sy": -9.75,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"therapeutics-regenerative\", \"human-health\"]"
+      ],
       "tech_tags": [
         "small molecule discovery, apoptosis modulation, cell survival pathways, cancer therapeutics, neurodegenerative drugs"
       ],
@@ -21994,7 +22616,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Cancer",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -22008,8 +22630,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "human-health",
-        "therapeutics-regenerative"
+        "[\"human-health\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "therapeutics"
@@ -22048,7 +22669,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "therapeutics"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "therapeutics_industry"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -22058,7 +22682,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Cancer",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": 15,
@@ -22070,7 +22694,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"therapeutics-regenerative\", \"human-health\"]"
+      ],
       "tech_tags": [
         "therapeutics"
       ],
@@ -22103,7 +22729,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "therapeutics"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "therapeutics_industry"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -22113,7 +22742,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Cancer",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -22125,7 +22754,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"therapeutics-regenerative\", \"human-health\"]"
+      ],
       "tech_tags": [
         "therapeutics"
       ],
@@ -22156,7 +22787,10 @@ window.STARTUP_THEMES_DATA = {
       "y": -9.899,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "therapeutics_industry"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
@@ -22166,7 +22800,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Cancer",
       "funding_stage": "seed",
       "funding_bucket_usd": 1,
       "valuation_bucket_usd": 5,
@@ -22175,7 +22809,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": -11.799,
       "sy": -9.747,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"therapeutics-regenerative\", \"human-health\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -22204,7 +22840,10 @@ window.STARTUP_THEMES_DATA = {
       "y": -9.841,
       "is_outlier": true,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "therapeutics_industry"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": 2,
@@ -22214,7 +22853,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": null,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Therapeutics Regenerative",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -22223,7 +22862,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": -12.085,
       "sy": -10.098,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"therapeutics-regenerative\", \"human-health\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -22274,7 +22915,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Therapeutics Regenerative",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -22289,10 +22930,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food",
-        "biomaterials",
-        "human-health",
-        "therapeutics-regenerative"
+        "[\"agri-food\", \"biomaterials\", \"human-health\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "biomaterials",
@@ -22351,7 +22989,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Therapeutics Regenerative",
       "funding_stage": "series-a",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -22367,10 +23005,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food",
-        "biomaterials",
-        "human-health",
-        "therapeutics-regenerative"
+        "[\"agri-food\", \"biomaterials\", \"human-health\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -22429,7 +23064,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Therapeutics Regenerative",
       "funding_stage": "series-a",
       "funding_bucket_usd": 10,
       "valuation_bucket_usd": 50,
@@ -22442,9 +23077,7 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "diagnostics-medtech",
-        "human-health",
-        "therapeutics-regenerative"
+        "[\"diagnostics-medtech\", \"human-health\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -22502,7 +23135,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Therapeutics Regenerative",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -22516,8 +23149,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "human-health",
-        "therapeutics-regenerative"
+        "[\"human-health\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -22571,7 +23203,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Therapeutics Regenerative",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -22585,8 +23217,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "human-health",
-        "therapeutics-regenerative"
+        "[\"human-health\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -22625,7 +23256,10 @@ window.STARTUP_THEMES_DATA = {
       "y": -9.868,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "therapeutics_industry"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
@@ -22635,7 +23269,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Therapeutics Regenerative",
       "funding_stage": "series-a",
       "funding_bucket_usd": 5,
       "valuation_bucket_usd": 25,
@@ -22644,7 +23278,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": -12.061,
       "sy": -10.163,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"therapeutics-regenerative\", \"human-health\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -22695,7 +23331,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Therapeutics Regenerative",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -22710,10 +23346,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food",
-        "diagnostics-medtech",
-        "human-health",
-        "therapeutics-regenerative"
+        "[\"agri-food\", \"diagnostics-medtech\", \"human-health\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -22769,7 +23402,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Therapeutics Regenerative",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -22783,8 +23416,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "human-health",
-        "therapeutics-regenerative"
+        "[\"human-health\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "therapeutics"
@@ -22838,7 +23470,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Therapeutics Regenerative",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -22854,9 +23486,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "human-health",
-        "industrial-biotech",
-        "therapeutics-regenerative"
+        "[\"human-health\", \"industrial-biotech\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "therapeutics"
@@ -22911,7 +23541,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Therapeutics Regenerative",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -22925,8 +23555,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "human-health",
-        "therapeutics-regenerative"
+        "[\"human-health\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "therapeutics"
@@ -22982,7 +23611,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Therapeutics Regenerative",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -22996,8 +23625,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "human-health",
-        "therapeutics-regenerative"
+        "[\"human-health\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -23068,9 +23696,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "diagnostics-medtech",
-        "human-health",
-        "therapeutics-regenerative"
+        "[\"diagnostics-medtech\", \"human-health\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -23109,7 +23735,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "therapeutics"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "therapeutics_industry"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -23119,7 +23748,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Therapeutics Regenerative",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -23131,7 +23760,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"therapeutics-regenerative\", \"human-health\"]"
+      ],
       "tech_tags": [
         "therapeutics"
       ],
@@ -23180,7 +23811,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Therapeutics Regenerative",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -23195,9 +23826,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food",
-        "human-health",
-        "therapeutics-regenerative"
+        "[\"agri-food\", \"human-health\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -23238,7 +23867,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_codes": [
         "therapeutics"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "human_health",
+        "therapeutics_industry"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -23248,7 +23880,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Therapeutics Regenerative",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": 25,
@@ -23260,7 +23892,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "human-health-bio"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"therapeutics-regenerative\", \"human-health\"]"
+      ],
       "tech_tags": [
         "therapeutics"
       ],
@@ -23305,7 +23939,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Therapeutics Regenerative",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -23319,8 +23953,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "human-health",
-        "therapeutics-regenerative"
+        "[\"human-health\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -23378,7 +24011,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Therapeutics Regenerative",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -23392,8 +24025,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "human-health",
-        "therapeutics-regenerative"
+        "[\"human-health\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -23464,8 +24096,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "human-health",
-        "therapeutics-regenerative"
+        "[\"human-health\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -23525,7 +24156,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Therapeutics Regenerative",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -23541,11 +24172,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "biodiversity-nature",
-        "biomanufacturing",
-        "biomaterials",
-        "human-health",
-        "therapeutics-regenerative"
+        "[\"biodiversity-nature\", \"biomanufacturing\", \"biomaterials\", \"human-health\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "biomanufacturing",
@@ -23600,7 +24227,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Therapeutics Regenerative",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": 15,
@@ -23614,8 +24241,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "human-health",
-        "therapeutics-regenerative"
+        "[\"human-health\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -23670,7 +24296,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Therapeutics Regenerative",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -23684,8 +24310,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "human-health",
-        "therapeutics-regenerative"
+        "[\"human-health\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "therapeutics"
@@ -23741,7 +24366,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Therapeutics Regenerative",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -23757,8 +24382,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "human-health",
-        "therapeutics-regenerative"
+        "[\"human-health\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -23820,7 +24444,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Therapeutics Regenerative",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -23836,11 +24460,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "biodiversity-nature",
-        "biomanufacturing",
-        "biomaterials",
-        "human-health",
-        "therapeutics-regenerative"
+        "[\"biodiversity-nature\", \"biomanufacturing\", \"biomaterials\", \"human-health\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -23883,7 +24503,10 @@ window.STARTUP_THEMES_DATA = {
       "y": 6.839,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "row_crops",
+        "biodiversity"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": 27,
@@ -23893,7 +24516,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Pest",
       "funding_stage": "series-a",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -23902,7 +24525,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": -6.64,
       "sy": 7.742,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"biodiversity-nature\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -23950,7 +24575,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Pest",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -23966,9 +24591,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food",
-        "biomanufacturing",
-        "industrial-biotech"
+        "[\"agri-food\", \"biomanufacturing\", \"industrial-biotech\"]"
       ],
       "tech_tags": [
         "bioinputs",
@@ -24012,7 +24635,10 @@ window.STARTUP_THEMES_DATA = {
         "microbial",
         "iot"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "row_crops",
+        "biodiversity"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
@@ -24022,7 +24648,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Pest",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -24031,7 +24657,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": -6.776,
       "sy": 4.737,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"biodiversity-nature\"]"
+      ],
       "tech_tags": [
         "biopesticides, biofungicides, antifungal biotech, crop protection, sustainable agriculture"
       ],
@@ -24079,7 +24707,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Pest",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -24092,7 +24720,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food"
+        "[\"agri-food\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -24131,7 +24759,10 @@ window.STARTUP_THEMES_DATA = {
       "y": 5.969,
       "is_outlier": true,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "row_crops",
+        "biodiversity"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
@@ -24141,7 +24772,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 0,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Pest",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -24150,7 +24781,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": -6.81,
       "sy": 4.683,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"biodiversity-nature\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -24181,7 +24814,10 @@ window.STARTUP_THEMES_DATA = {
         "ag_inputs",
         "iot"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "row_crops",
+        "biodiversity"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": 34,
@@ -24191,7 +24827,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Pest",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -24200,7 +24836,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": -6.821,
       "sy": 4.694,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"biodiversity-nature\"]"
+      ],
       "tech_tags": [
         "microbial consortia, biofertilizers, agrobiotechnology, beneficial microorganisms, crop bioinputs"
       ],
@@ -24236,7 +24874,10 @@ window.STARTUP_THEMES_DATA = {
         "ag_inputs",
         "ai_ml"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "row_crops",
+        "biodiversity"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
@@ -24246,7 +24887,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Pest",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 0,
@@ -24255,7 +24896,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": -6.524,
       "sy": 7.694,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"biodiversity-nature\"]"
+      ],
       "tech_tags": [
         "Trichogramma biocontrol, biological insecticides, digital pest monitoring, predictive analytics, soy and corn crops"
       ],
@@ -24288,7 +24931,10 @@ window.STARTUP_THEMES_DATA = {
       "y": 6.788,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "row_crops",
+        "biodiversity"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
@@ -24298,7 +24944,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Pest",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -24307,7 +24953,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": -6.594,
       "sy": 7.743,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"biodiversity-nature\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -24337,7 +24985,10 @@ window.STARTUP_THEMES_DATA = {
         "microbial",
         "saas_marketplace"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "row_crops",
+        "biodiversity"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": 8,
@@ -24347,7 +24998,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Pest",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -24356,7 +25007,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": -8.601,
       "sy": 7.984,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"biodiversity-nature\"]"
+      ],
       "tech_tags": [
         "plant tissue culture, Quillaja saponaria, biofungicide, QS-21 adjuvant, biofactory platform"
       ],
@@ -24421,9 +25074,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food",
-        "biomanufacturing",
-        "human-health"
+        "[\"agri-food\", \"biomanufacturing\", \"human-health\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -24480,7 +25131,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Pest",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -24494,7 +25145,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food"
+        "[\"agri-food\"]"
       ],
       "tech_tags": [
         "bioinputs"
@@ -24545,7 +25196,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Pest",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -24559,7 +25210,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food"
+        "[\"agri-food\"]"
       ],
       "tech_tags": [
         "bioinputs"
@@ -24596,7 +25247,10 @@ window.STARTUP_THEMES_DATA = {
       "y": 6.78,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "row_crops",
+        "biodiversity"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": 21,
@@ -24606,7 +25260,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Pest",
       "funding_stage": "seed",
       "funding_bucket_usd": 1,
       "valuation_bucket_usd": 10,
@@ -24615,7 +25269,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": -6.576,
       "sy": 7.747,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"biodiversity-nature\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -24662,7 +25318,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Pest",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -24677,7 +25333,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food"
+        "[\"agri-food\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -24733,7 +25389,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Pest",
       "funding_stage": "series-a",
       "funding_bucket_usd": 5,
       "valuation_bucket_usd": 25,
@@ -24748,8 +25404,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food",
-        "climate-resource"
+        "[\"agri-food\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "bioinputs"
@@ -24804,7 +25459,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Pest",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -24818,7 +25473,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food"
+        "[\"agri-food\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -24881,7 +25536,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Bioinputs & Crop Resilience",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Pest",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -24898,9 +25553,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food",
-        "human-health",
-        "industrial-biotech"
+        "[\"agri-food\", \"human-health\", \"industrial-biotech\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -24942,7 +25595,10 @@ window.STARTUP_THEMES_DATA = {
       "y": 6.784,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "row_crops",
+        "biodiversity"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
@@ -24952,7 +25608,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Pest",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -24961,7 +25617,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": -6.593,
       "sy": 7.757,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"biodiversity-nature\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -25011,7 +25669,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomaterials & Circular Economy",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Bioactives & Natural Chemistry",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -25027,10 +25685,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food",
-        "biodiversity-nature",
-        "biomaterials",
-        "human-health"
+        "[\"agri-food\", \"biodiversity-nature\", \"biomaterials\", \"human-health\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -25092,7 +25747,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomanufacturing & Platform Technologies",
       "bio_theme_secondary": "Food Systems & Alt Proteins",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "CDMOs & Bioprocess Development",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -25107,11 +25762,7 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "agri-food",
-        "biomanufacturing",
-        "biomaterials",
-        "human-health",
-        "industrial-biotech"
+        "[\"agri-food\", \"biomanufacturing\", \"biomaterials\", \"human-health\", \"industrial-biotech\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -25156,7 +25807,10 @@ window.STARTUP_THEMES_DATA = {
         "biomanufacturing",
         "fermentation"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "biomanufacturing_industry",
+        "research_labs"
+      ],
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": -1,
@@ -25166,7 +25820,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomanufacturing & Platform Technologies",
       "bio_theme_secondary": "Food Systems & Alt Proteins",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "CDMOs & Bioprocess Development",
       "funding_stage": "series-b",
       "funding_bucket_usd": 25,
       "valuation_bucket_usd": 100,
@@ -25178,7 +25832,9 @@ window.STARTUP_THEMES_DATA = {
         "biobased",
         "bio-enabled-industrial-transition"
       ],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"biomanufacturing\", \"industrial-biotech\"]"
+      ],
       "tech_tags": [
         "biomanufacturing",
         "cdmo",
@@ -25237,7 +25893,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Biomanufacturing & Fermentation Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Precision Fermentation",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -25251,9 +25907,7 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "agri-food",
-        "biomanufacturing",
-        "human-health"
+        "[\"agri-food\", \"biomanufacturing\", \"human-health\"]"
       ],
       "tech_tags": [
         "fermentation"
@@ -25313,7 +25967,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Biomanufacturing & Fermentation Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Precision Fermentation",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -25327,9 +25981,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food",
-        "biomanufacturing",
-        "climate-resource"
+        "[\"agri-food\", \"biomanufacturing\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -25390,7 +26042,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Biomanufacturing & Fermentation Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Precision Fermentation",
       "funding_stage": "series-a",
       "funding_bucket_usd": 5,
       "valuation_bucket_usd": 25,
@@ -25403,8 +26055,7 @@ window.STARTUP_THEMES_DATA = {
         "bio-enabled-industrial-transition"
       ],
       "domain_tags": [
-        "agri-food",
-        "biomanufacturing"
+        "[\"agri-food\", \"biomanufacturing\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -25466,7 +26117,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Food Systems & Alt Proteins",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Animal Health & Bioinputs",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -25482,10 +26133,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food",
-        "biomanufacturing",
-        "human-health",
-        "therapeutics-regenerative"
+        "[\"agri-food\", \"biomanufacturing\", \"human-health\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "fermentation",
@@ -25539,7 +26187,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Animal Health & Bioinputs",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -25552,7 +26200,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food"
+        "[\"agri-food\"]"
       ],
       "tech_tags": [
         "ai-data"
@@ -25618,8 +26266,7 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "human-health",
-        "therapeutics-regenerative"
+        "[\"human-health\", \"therapeutics-regenerative\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -25676,7 +26323,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Biomanufacturing & Fermentation Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Precision Fermentation",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -25689,9 +26336,7 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "agri-food",
-        "diagnostics-medtech",
-        "human-health"
+        "[\"agri-food\", \"diagnostics-medtech\", \"human-health\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -25749,7 +26394,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Biomanufacturing & Fermentation Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Precision Fermentation",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -25764,8 +26409,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food",
-        "biomanufacturing"
+        "[\"agri-food\", \"biomanufacturing\"]"
       ],
       "tech_tags": [
         "biomanufacturing",
@@ -25825,7 +26469,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Biomanufacturing & Platform Technologies",
       "bio_theme_secondary": "Bioinputs & Crop Resilience",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Algae & Bioprocess Platforms",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -25838,8 +26482,7 @@ window.STARTUP_THEMES_DATA = {
         "bio-enabled-industrial-transition"
       ],
       "domain_tags": [
-        "biomanufacturing",
-        "industrial-biotech"
+        "[\"biomanufacturing\", \"industrial-biotech\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -25896,7 +26539,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Biologicals",
       "funding_stage": "series-a",
       "funding_bucket_usd": 5,
       "valuation_bucket_usd": 25,
@@ -25912,9 +26555,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food",
-        "climate-resource",
-        "human-health"
+        "[\"agri-food\", \"climate-resource\", \"human-health\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -25978,7 +26619,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Bioinputs & Crop Resilience",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Biologicals",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -25993,9 +26634,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food",
-        "biomanufacturing",
-        "industrial-biotech"
+        "[\"agri-food\", \"biomanufacturing\", \"industrial-biotech\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -26053,7 +26692,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Biologicals",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -26068,8 +26707,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food",
-        "biodiversity-nature"
+        "[\"agri-food\", \"biodiversity-nature\"]"
       ],
       "tech_tags": [
         "ai-data"
@@ -26128,7 +26766,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Biologicals",
       "funding_stage": "seed",
       "funding_bucket_usd": 1,
       "valuation_bucket_usd": 10,
@@ -26143,8 +26781,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food",
-        "climate-resource"
+        "[\"agri-food\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -26208,7 +26845,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Biologicals",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 0,
@@ -26222,8 +26859,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food",
-        "biomanufacturing"
+        "[\"agri-food\", \"biomanufacturing\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -26283,7 +26919,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Farm Intelligence",
       "bio_theme_secondary": "Farm Intelligence",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Agronomic",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -26296,8 +26932,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food",
-        "climate-resource"
+        "[\"agri-food\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "ai-data"
@@ -26351,7 +26986,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Farm Intelligence",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Agronomic",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -26363,7 +26998,7 @@ window.STARTUP_THEMES_DATA = {
         "biocentric"
       ],
       "domain_tags": [
-        "agri-food"
+        "[\"agri-food\"]"
       ],
       "tech_tags": [
         "ai-data"
@@ -26398,7 +27033,10 @@ window.STARTUP_THEMES_DATA = {
       "y": 8.374,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "row_crops",
+        "ag_finance"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": 21,
@@ -26408,7 +27046,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Farm Intelligence",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 0,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Agronomic",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -26417,7 +27055,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": 10.09,
       "sy": 8.391,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"climate-resource\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -26464,7 +27104,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Farm Intelligence",
       "bio_theme_secondary": "Bioinputs & Crop Resilience",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Agronomic",
       "funding_stage": "series-a",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -26478,8 +27118,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food",
-        "climate-resource"
+        "[\"agri-food\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "ai-data"
@@ -26533,7 +27172,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Farm Intelligence",
       "bio_theme_secondary": "Food Systems & Alt Proteins",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Agronomic",
       "funding_stage": "series-a",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -26545,8 +27184,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food",
-        "climate-resource"
+        "[\"agri-food\", \"climate-resource\"]"
       ],
       "tech_tags": [],
       "scale_tags": [
@@ -26600,7 +27238,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Nature & Ecosystem Tech",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 0,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Traceability & Transparency",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -26613,7 +27251,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food"
+        "[\"agri-food\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -26668,7 +27306,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Farm Intelligence",
       "bio_theme_secondary": "Bioinputs & Crop Resilience",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Agronomic",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -26681,8 +27319,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food",
-        "climate-resource"
+        "[\"agri-food\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "ai-data"
@@ -26738,7 +27375,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Farm Intelligence",
       "bio_theme_secondary": "Food Systems & Alt Proteins",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Agronomic",
       "funding_stage": "series-a",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -26751,8 +27388,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food",
-        "climate-resource"
+        "[\"agri-food\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "ai-data"
@@ -26812,7 +27448,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Farm Intelligence",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 0,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Agronomic",
       "funding_stage": "series-a",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -26824,7 +27460,7 @@ window.STARTUP_THEMES_DATA = {
         "biocentric"
       ],
       "domain_tags": [
-        "agri-food"
+        "[\"agri-food\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -26880,7 +27516,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Farm Intelligence",
       "bio_theme_secondary": "Farm Intelligence",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Agronomic",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -26893,8 +27529,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food",
-        "biodiversity-nature"
+        "[\"agri-food\", \"biodiversity-nature\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -26951,7 +27586,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Farm Intelligence",
       "bio_theme_secondary": "Food Systems & Alt Proteins",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Agronomic",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -26963,7 +27598,7 @@ window.STARTUP_THEMES_DATA = {
         "biocentric"
       ],
       "domain_tags": [
-        "agri-food"
+        "[\"agri-food\"]"
       ],
       "tech_tags": [
         "ai-data"
@@ -27004,7 +27639,10 @@ window.STARTUP_THEMES_DATA = {
         "saas_marketplace",
         "computational_bio"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "row_crops",
+        "ag_finance"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": 10,
@@ -27014,7 +27652,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Farm Intelligence",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 0,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Agronomic",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -27023,7 +27661,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": 10.129,
       "sy": 8.175,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"climate-resource\"]"
+      ],
       "tech_tags": [
         "NODES platform, G×E×M modeling, probabilistic simulation, environmental fingerprinting, API integration"
       ],
@@ -27072,7 +27712,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Farm Intelligence",
       "bio_theme_secondary": "Farm Intelligence",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Agronomic",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -27084,7 +27724,7 @@ window.STARTUP_THEMES_DATA = {
         "biocentric"
       ],
       "domain_tags": [
-        "agri-food"
+        "[\"agri-food\"]"
       ],
       "tech_tags": [
         "ai-data"
@@ -27121,7 +27761,10 @@ window.STARTUP_THEMES_DATA = {
       "y": 8.304,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "row_crops",
+        "ag_finance"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": 21,
@@ -27131,7 +27774,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Farm Intelligence",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 0,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Agronomic",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -27140,7 +27783,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": 10.118,
       "sy": 8.28,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"climate-resource\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -27188,7 +27833,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Farm Intelligence",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 0,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Agronomic",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -27201,8 +27846,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food",
-        "climate-resource"
+        "[\"agri-food\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "ai-data"
@@ -27244,7 +27888,10 @@ window.STARTUP_THEMES_DATA = {
       "y": 8.463,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "row_crops",
+        "ag_finance"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": 4,
@@ -27254,7 +27901,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Farm Intelligence",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 0,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Agronomic",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -27263,7 +27910,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": 10.153,
       "sy": 8.298,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"climate-resource\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -27310,7 +27959,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Farm Intelligence",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 0,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Agronomic",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 0,
@@ -27323,8 +27972,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food",
-        "climate-resource"
+        "[\"agri-food\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "ai-data"
@@ -27379,7 +28027,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Farm Intelligence",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 0,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Agronomic",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -27391,7 +28039,7 @@ window.STARTUP_THEMES_DATA = {
         "biocentric"
       ],
       "domain_tags": [
-        "agri-food"
+        "[\"agri-food\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -27450,7 +28098,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Farm Intelligence",
       "bio_theme_secondary": "Diagnostics & Health Access",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Agronomic",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -27462,8 +28110,7 @@ window.STARTUP_THEMES_DATA = {
         "human-health-bio"
       ],
       "domain_tags": [
-        "agri-food",
-        "human-health"
+        "[\"agri-food\", \"human-health\"]"
       ],
       "tech_tags": [
         "ai-data"
@@ -27517,7 +28164,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Farm Intelligence",
       "bio_theme_secondary": "Bioinputs & Crop Resilience",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Agronomic",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -27529,8 +28176,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food",
-        "climate-resource"
+        "[\"agri-food\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "ai-data"
@@ -27587,7 +28233,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Farm Intelligence",
       "bio_theme_secondary": "Biomaterials & Circular Economy",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Agronomic",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": 10,
@@ -27601,8 +28247,7 @@ window.STARTUP_THEMES_DATA = {
         "bio-enabled-industrial-transition"
       ],
       "domain_tags": [
-        "agri-food",
-        "biomanufacturing"
+        "[\"agri-food\", \"biomanufacturing\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -27659,7 +28304,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Farm Intelligence",
       "bio_theme_secondary": "Bioinputs & Crop Resilience",
       "is_bio_universe": 0,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Agronomic",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -27672,7 +28317,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food"
+        "[\"agri-food\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -27710,7 +28355,10 @@ window.STARTUP_THEMES_DATA = {
       "y": 8.481,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "row_crops",
+        "ag_finance"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
@@ -27720,7 +28368,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Farm Intelligence",
       "bio_theme_secondary": "Farm Intelligence",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Agronomic",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -27729,7 +28377,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": 0.961,
       "sy": 9.301,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"climate-resource\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -27759,7 +28409,10 @@ window.STARTUP_THEMES_DATA = {
       "y": 8.412,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "row_crops",
+        "ag_finance"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": 12,
@@ -27769,7 +28422,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Farm Intelligence",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 0,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Agronomic",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -27778,7 +28431,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": 10.112,
       "sy": 8.401,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"climate-resource\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -27826,7 +28481,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Farm Intelligence",
       "bio_theme_secondary": "Bioinputs & Crop Resilience",
       "is_bio_universe": 0,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Agronomic",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -27838,7 +28493,7 @@ window.STARTUP_THEMES_DATA = {
         "biocentric"
       ],
       "domain_tags": [
-        "agri-food"
+        "[\"agri-food\"]"
       ],
       "tech_tags": [
         "ai-data"
@@ -27891,7 +28546,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Farm Intelligence",
       "bio_theme_secondary": "Bioinputs & Crop Resilience",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Agronomic",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 1,
@@ -27904,8 +28559,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food",
-        "climate-resource"
+        "[\"agri-food\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "ai-data"
@@ -27960,7 +28614,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Farm Intelligence",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 0,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Agronomic",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -27973,7 +28627,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food"
+        "[\"agri-food\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -28027,7 +28681,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Farm Intelligence",
       "bio_theme_secondary": "Food Systems & Alt Proteins",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Agronomic",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -28040,8 +28694,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food",
-        "climate-resource"
+        "[\"agri-food\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "ai-data"
@@ -28094,7 +28747,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Farm Intelligence",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Agronomic",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -28108,8 +28761,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food",
-        "climate-resource"
+        "[\"agri-food\", \"climate-resource\"]"
       ],
       "tech_tags": [],
       "scale_tags": [
@@ -28157,7 +28809,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Farm Intelligence",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Agronomic",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -28169,8 +28821,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food",
-        "climate-resource"
+        "[\"agri-food\", \"climate-resource\"]"
       ],
       "tech_tags": [],
       "scale_tags": [
@@ -28222,7 +28873,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Farm Intelligence",
       "bio_theme_secondary": "Bioinputs & Crop Resilience",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Agronomic",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -28235,8 +28886,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food",
-        "climate-resource"
+        "[\"agri-food\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "ai-data"
@@ -28291,7 +28941,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Farm Intelligence",
       "bio_theme_secondary": "Farm Intelligence",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Agronomic",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -28304,9 +28954,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food",
-        "biodiversity-nature",
-        "climate-resource"
+        "[\"agri-food\", \"biodiversity-nature\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "remote-sensing"
@@ -28358,7 +29006,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Farm Intelligence",
       "bio_theme_secondary": "Bioinputs & Crop Resilience",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Agronomic",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -28372,7 +29020,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food"
+        "[\"agri-food\"]"
       ],
       "tech_tags": [
         "ai-data"
@@ -28424,7 +29072,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Farm Intelligence",
       "bio_theme_secondary": "Farm Intelligence",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Agronomic",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -28437,7 +29085,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food"
+        "[\"agri-food\"]"
       ],
       "tech_tags": [
         "ai-data"
@@ -28493,7 +29141,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Farm Intelligence",
       "bio_theme_secondary": "Food Systems & Alt Proteins",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Agronomic",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -28506,8 +29154,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food",
-        "climate-resource"
+        "[\"agri-food\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -28562,7 +29209,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Farm Intelligence",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 0,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Agronomic",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -28575,8 +29222,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food",
-        "climate-resource"
+        "[\"agri-food\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -28628,7 +29274,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Farm Intelligence",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 0,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Agronomic",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -28640,7 +29286,7 @@ window.STARTUP_THEMES_DATA = {
         "biocentric"
       ],
       "domain_tags": [
-        "agri-food"
+        "[\"agri-food\"]"
       ],
       "tech_tags": [
         "ai-data"
@@ -28690,7 +29336,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Farm Intelligence",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 0,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Agronomic",
       "funding_stage": "series-a",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -28702,7 +29348,7 @@ window.STARTUP_THEMES_DATA = {
         "biocentric"
       ],
       "domain_tags": [
-        "agri-food"
+        "[\"agri-food\"]"
       ],
       "tech_tags": [
         "ai-data"
@@ -28754,7 +29400,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Farm Intelligence",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 0,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Agronomic",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -28766,7 +29412,7 @@ window.STARTUP_THEMES_DATA = {
         "biocentric"
       ],
       "domain_tags": [
-        "agri-food"
+        "[\"agri-food\"]"
       ],
       "tech_tags": [
         "ai-data"
@@ -28818,7 +29464,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Farm Intelligence",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 0,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Agronomic",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -28832,8 +29478,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food",
-        "climate-resource"
+        "[\"agri-food\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "ai-data"
@@ -28885,7 +29530,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Farm Intelligence",
       "bio_theme_secondary": "Bioinputs & Crop Resilience",
       "is_bio_universe": 0,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Agronomic",
       "funding_stage": "growth",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -28897,7 +29542,7 @@ window.STARTUP_THEMES_DATA = {
         "biocentric"
       ],
       "domain_tags": [
-        "agri-food"
+        "[\"agri-food\"]"
       ],
       "tech_tags": [
         "ai-data"
@@ -28952,7 +29597,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Farm Intelligence",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 0,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Agronomic",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -28964,7 +29609,7 @@ window.STARTUP_THEMES_DATA = {
         "biocentric"
       ],
       "domain_tags": [
-        "agri-food"
+        "[\"agri-food\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -29002,7 +29647,10 @@ window.STARTUP_THEMES_DATA = {
       "y": 8.403,
       "is_outlier": true,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "row_crops",
+        "ag_finance"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": 18,
@@ -29012,7 +29660,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Farm Intelligence",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 0,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Agronomic",
       "funding_stage": "growth",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -29021,7 +29669,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": 10.147,
       "sy": 8.248,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"climate-resource\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -29058,7 +29708,10 @@ window.STARTUP_THEMES_DATA = {
         "ai_ml",
         "remote_sensing"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "row_crops",
+        "ag_finance"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": -1,
@@ -29068,7 +29721,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Farm Intelligence",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 0,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Agronomic",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -29077,7 +29730,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": 10.055,
       "sy": 8.377,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"climate-resource\"]"
+      ],
       "tech_tags": [
         "computer vision, automated traps, biostatistical modeling, satellite data, pest identification AI"
       ],
@@ -29123,7 +29778,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Farm Intelligence",
       "bio_theme_secondary": "Farm Intelligence",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Agronomic",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -29136,7 +29791,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food"
+        "[\"agri-food\"]"
       ],
       "tech_tags": [
         "ai-data"
@@ -29192,7 +29847,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Farm Intelligence",
       "bio_theme_secondary": "Bioinputs & Crop Resilience",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Agronomic",
       "funding_stage": "series-a",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -29205,7 +29860,7 @@ window.STARTUP_THEMES_DATA = {
         "bio-enabled-industrial-transition"
       ],
       "domain_tags": [
-        "agri-food"
+        "[\"agri-food\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -29261,7 +29916,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Farm Intelligence",
       "bio_theme_secondary": "Bioinputs & Crop Resilience",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Agronomic",
       "funding_stage": "pre-seed",
       "funding_bucket_usd": 0,
       "valuation_bucket_usd": 0,
@@ -29274,8 +29929,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food",
-        "biodiversity-nature"
+        "[\"agri-food\", \"biodiversity-nature\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -29332,7 +29986,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Farm Intelligence",
       "bio_theme_secondary": "Bioinputs & Crop Resilience",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Agronomic",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -29344,8 +29998,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food",
-        "climate-resource"
+        "[\"agri-food\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "ai-data"
@@ -29397,7 +30050,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Farm Intelligence",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 0,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Agronomic",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -29409,7 +30062,7 @@ window.STARTUP_THEMES_DATA = {
         "biocentric"
       ],
       "domain_tags": [
-        "agri-food"
+        "[\"agri-food\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -29469,7 +30122,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Farm Intelligence",
       "bio_theme_secondary": "Farm Intelligence",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Agronomic",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -29483,7 +30136,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food"
+        "[\"agri-food\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -29522,7 +30175,10 @@ window.STARTUP_THEMES_DATA = {
       "y": 8.532,
       "is_outlier": false,
       "tech_codes": [],
-      "industry_codes": [],
+      "industry_codes": [
+        "row_crops",
+        "ag_finance"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": 33,
@@ -29532,7 +30188,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Farm Intelligence",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 0,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Agronomic",
       "funding_stage": "series-a",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -29541,7 +30197,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": 10.105,
       "sy": 8.433,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"agri-food\", \"climate-resource\"]"
+      ],
       "tech_tags": [],
       "scale_tags": [],
       "market_label": "",
@@ -29588,7 +30246,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Farm Intelligence",
       "bio_theme_secondary": "Food Systems & Alt Proteins",
       "is_bio_universe": 0,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Agronomic",
       "funding_stage": "series-a",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -29601,7 +30259,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food"
+        "[\"agri-food\"]"
       ],
       "tech_tags": [
         "ai-data"
@@ -29659,7 +30317,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Farm Intelligence",
       "bio_theme_secondary": "Farm Intelligence",
       "is_bio_universe": 0,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Agrifintech & Rural Credit",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -29673,8 +30331,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food",
-        "climate-resource"
+        "[\"agri-food\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "ai-data"
@@ -29730,7 +30387,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Farm Intelligence",
       "bio_theme_secondary": "Farm Intelligence",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Agrifintech & Rural Credit",
       "funding_stage": "series-a",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -29745,9 +30402,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food",
-        "climate-resource",
-        "human-health"
+        "[\"agri-food\", \"climate-resource\", \"human-health\"]"
       ],
       "tech_tags": [
         "ai-data"
@@ -29805,7 +30460,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Farm Intelligence",
       "bio_theme_secondary": "Farm Intelligence",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Agrifintech & Rural Credit",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -29818,9 +30473,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food",
-        "biodiversity-nature",
-        "climate-resource"
+        "[\"agri-food\", \"biodiversity-nature\", \"climate-resource\"]"
       ],
       "tech_tags": [],
       "scale_tags": [
@@ -29872,7 +30525,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Farm Intelligence",
       "bio_theme_secondary": "Farm Intelligence",
       "is_bio_universe": 0,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Agrifintech & Rural Credit",
       "funding_stage": "series-c",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -29886,8 +30539,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food",
-        "biodiversity-nature"
+        "[\"agri-food\", \"biodiversity-nature\"]"
       ],
       "tech_tags": [
         "ai-data"
@@ -29945,7 +30597,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Farm Intelligence",
       "bio_theme_secondary": "Farm Intelligence",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Agrifintech & Rural Credit",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -29957,8 +30609,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food",
-        "climate-resource"
+        "[\"agri-food\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "ai-data"
@@ -30011,7 +30662,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Farm Intelligence",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 0,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Agrifintech & Rural Credit",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -30023,8 +30674,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food",
-        "climate-resource"
+        "[\"agri-food\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -30081,7 +30731,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Nature & Ecosystem Tech",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 0,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Credit",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -30095,8 +30745,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food",
-        "climate-resource"
+        "[\"agri-food\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -30153,7 +30802,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Farm Intelligence",
       "bio_theme_secondary": "Bioinputs & Crop Resilience",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Agrifintech & Rural Credit",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -30167,8 +30816,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food",
-        "climate-resource"
+        "[\"agri-food\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "ai-data"
@@ -30223,7 +30871,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Farm Intelligence",
       "bio_theme_secondary": "Farm Intelligence",
       "is_bio_universe": 0,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Agrifintech & Rural Credit",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -30236,9 +30884,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food",
-        "biodiversity-nature",
-        "climate-resource"
+        "[\"agri-food\", \"biodiversity-nature\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -30293,7 +30939,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Nature & Ecosystem Tech",
       "bio_theme_secondary": "Farm Intelligence",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Credit",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -30306,7 +30952,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food"
+        "[\"agri-food\"]"
       ],
       "tech_tags": [],
       "scale_tags": [
@@ -30360,7 +31006,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Farm Intelligence",
       "bio_theme_secondary": "Farm Intelligence",
       "is_bio_universe": 0,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Agrifintech & Rural Credit",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -30373,8 +31019,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food",
-        "climate-resource"
+        "[\"agri-food\", \"climate-resource\"]"
       ],
       "tech_tags": [],
       "scale_tags": [
@@ -30427,7 +31072,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Nature & Ecosystem Tech",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 0,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Credit",
       "funding_stage": "series-b",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -30439,8 +31084,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food",
-        "climate-resource"
+        "[\"agri-food\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "ai-data"
@@ -30501,7 +31145,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Farm Intelligence",
       "bio_theme_secondary": "Bioinputs & Crop Resilience",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Agrifintech & Rural Credit",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -30515,8 +31159,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food",
-        "climate-resource"
+        "[\"agri-food\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "ai-data"
@@ -30573,7 +31216,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Nature & Ecosystem Tech",
       "bio_theme_secondary": "Farm Intelligence",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Traceability & Transparency",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -30585,8 +31228,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food",
-        "climate-resource"
+        "[\"agri-food\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "ai-data"
@@ -30641,7 +31283,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Nature & Ecosystem Tech",
       "bio_theme_secondary": "Farm Intelligence",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Traceability & Transparency",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -30653,7 +31295,7 @@ window.STARTUP_THEMES_DATA = {
         "biocentric"
       ],
       "domain_tags": [
-        "agri-food"
+        "[\"agri-food\"]"
       ],
       "tech_tags": [
         "ai-data"
@@ -30695,7 +31337,10 @@ window.STARTUP_THEMES_DATA = {
         "iot",
         "ai_ml"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "carbon",
+        "biodiversity"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": 18,
@@ -30705,7 +31350,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Nature & Ecosystem Tech",
       "bio_theme_secondary": "Farm Intelligence",
       "is_bio_universe": 0,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Traceability & Transparency",
       "funding_stage": "series-a",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -30714,7 +31359,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": 1.055,
       "sy": 9.805,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"biodiversity-nature\", \"climate-resource\"]"
+      ],
       "tech_tags": [
         "blockchain, IoT sensors, computer vision, AI/ML, supply chain traceability, commodity tracking"
       ],
@@ -30765,7 +31412,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Nature & Ecosystem Tech",
       "bio_theme_secondary": "Farm Intelligence",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Traceability & Transparency",
       "funding_stage": "series-b",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -30779,9 +31426,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food",
-        "biodiversity-nature",
-        "climate-resource"
+        "[\"agri-food\", \"biodiversity-nature\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "ai-data"
@@ -30843,7 +31488,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Nature & Ecosystem Tech",
       "bio_theme_secondary": "Farm Intelligence",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Traceability & Transparency",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -30857,9 +31502,7 @@ window.STARTUP_THEMES_DATA = {
         "regenerative"
       ],
       "domain_tags": [
-        "agri-food",
-        "biodiversity-nature",
-        "climate-resource"
+        "[\"agri-food\", \"biodiversity-nature\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -30913,7 +31556,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Nature & Ecosystem Tech",
       "bio_theme_secondary": "Bioinputs & Crop Resilience",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Traceability & Transparency",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -30926,8 +31569,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food",
-        "climate-resource"
+        "[\"agri-food\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "ai-data"
@@ -30981,7 +31623,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Nature & Ecosystem Tech",
       "bio_theme_secondary": "Food Systems & Alt Proteins",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Traceability & Transparency",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -30994,8 +31636,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "agri-food",
-        "climate-resource"
+        "[\"agri-food\", \"climate-resource\"]"
       ],
       "tech_tags": [
         "ai-data",
@@ -31036,7 +31677,10 @@ window.STARTUP_THEMES_DATA = {
         "remote_sensing",
         "blockchain"
       ],
-      "industry_codes": [],
+      "industry_codes": [
+        "carbon",
+        "biodiversity"
+      ],
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": 18,
@@ -31046,7 +31690,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Nature & Ecosystem Tech",
       "bio_theme_secondary": "Farm Intelligence",
       "is_bio_universe": 0,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Traceability & Transparency",
       "funding_stage": "seed",
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -31055,7 +31699,9 @@ window.STARTUP_THEMES_DATA = {
       "sx": 0.995,
       "sy": 9.598,
       "bio_lens": [],
-      "domain_tags": [],
+      "domain_tags": [
+        "[\"biodiversity-nature\", \"climate-resource\"]"
+      ],
       "tech_tags": [
         "satellite remote sensing, NDVI/EVI monitoring, blockchain traceability, land use change detection, EUDR compliance"
       ],
@@ -31104,7 +31750,7 @@ window.STARTUP_THEMES_DATA = {
       "bio_theme": "Nature & Ecosystem Tech",
       "bio_theme_secondary": "Farm Intelligence",
       "is_bio_universe": 1,
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Traceability & Transparency",
       "funding_stage": null,
       "funding_bucket_usd": null,
       "valuation_bucket_usd": null,
@@ -31116,7 +31762,7 @@ window.STARTUP_THEMES_DATA = {
         "planetary-boundary"
       ],
       "domain_tags": [
-        "climate-resource"
+        "[\"climate-resource\"]"
       ],
       "tech_tags": [
         "ai-data"
@@ -31159,9 +31805,9 @@ window.STARTUP_THEMES_DATA = {
         "saas_marketplace": 1
       },
       "industry_codes": {
-        "human_health": 28,
-        "therapeutics_industry": 6,
-        "diagnostics_industry": 25,
+        "human_health": 82,
+        "therapeutics_industry": 8,
+        "diagnostics_industry": 77,
         "row_crops": 7,
         "veterinary": 1,
         "food_ingredients": 1,
@@ -31205,9 +31851,10 @@ window.STARTUP_THEMES_DATA = {
         "ag_inputs": 2
       },
       "industry_codes": {
-        "row_crops": 43,
+        "row_crops": 52,
         "carbon": 18,
         "soil_health": 3,
+        "ag_finance": 9,
         "water": 1,
         "food_ingredients": 8,
         "energy": 1,
@@ -31250,9 +31897,10 @@ window.STARTUP_THEMES_DATA = {
         "therapeutics": 1
       },
       "industry_codes": {
+        "food_ingredients": 30,
+        "human_health": 33,
         "animal_protein": 1,
         "row_crops": 3,
-        "human_health": 3,
         "aquaculture": 1,
         "veterinary": 1
       },
@@ -31295,15 +31943,15 @@ window.STARTUP_THEMES_DATA = {
         "ag_inputs": 1
       },
       "industry_codes": {
+        "food_ingredients": 23,
+        "human_health": 15,
         "aquaculture": 2,
         "personal_care": 4,
         "row_crops": 23,
         "biomanufacturing_industry": 8,
         "materials_packaging": 5,
-        "human_health": 9,
         "specialty_crops": 2,
         "specialty_chem": 1,
-        "food_ingredients": 17,
         "carbon": 4,
         "biodiversity": 3,
         "animal_protein": 1,
@@ -31348,11 +31996,11 @@ window.STARTUP_THEMES_DATA = {
         "blockchain": 1
       },
       "industry_codes": {
-        "waste_circular": 1,
-        "carbon": 16,
+        "waste_circular": 2,
+        "carbon": 18,
         "diagnostics_industry": 2,
         "human_health": 4,
-        "materials_packaging": 18,
+        "materials_packaging": 19,
         "personal_care": 3,
         "row_crops": 10,
         "biomanufacturing_industry": 9,
@@ -31360,6 +32008,7 @@ window.STARTUP_THEMES_DATA = {
         "therapeutics_industry": 1,
         "energy": 3,
         "water": 1,
+        "biodiversity": 2,
         "food_ingredients": 1
       },
       "countries": {
@@ -31395,10 +32044,10 @@ window.STARTUP_THEMES_DATA = {
         "iot": 3
       },
       "industry_codes": {
-        "therapeutics_industry": 14,
+        "therapeutics_industry": 24,
         "biomanufacturing_industry": 3,
         "carbon": 1,
-        "human_health": 14,
+        "human_health": 24,
         "specialty_chem": 3,
         "row_crops": 4,
         "diagnostics_industry": 2,
@@ -31437,8 +32086,8 @@ window.STARTUP_THEMES_DATA = {
         "computational_bio": 1
       },
       "industry_codes": {
-        "human_health": 6,
-        "therapeutics_industry": 6,
+        "human_health": 24,
+        "therapeutics_industry": 24,
         "row_crops": 2,
         "carbon": 1,
         "diagnostics_industry": 1
@@ -31476,10 +32125,10 @@ window.STARTUP_THEMES_DATA = {
         "bioinformatics": 1
       },
       "industry_codes": {
-        "human_health": 20,
+        "human_health": 24,
+        "therapeutics_industry": 24,
         "row_crops": 4,
         "materials_packaging": 4,
-        "therapeutics_industry": 20,
         "diagnostics_industry": 3,
         "specialty_chem": 1,
         "veterinary": 1,
@@ -31520,10 +32169,10 @@ window.STARTUP_THEMES_DATA = {
         "remote_sensing": 1
       },
       "industry_codes": {
-        "human_health": 20,
+        "human_health": 23,
         "row_crops": 6,
-        "diagnostics_industry": 15,
-        "therapeutics_industry": 13,
+        "diagnostics_industry": 17,
+        "therapeutics_industry": 14,
         "materials_packaging": 2,
         "biodiversity": 1,
         "personal_care": 1,
@@ -31562,8 +32211,9 @@ window.STARTUP_THEMES_DATA = {
         "biomaterials": 1
       },
       "industry_codes": {
-        "row_crops": 11,
+        "row_crops": 19,
         "carbon": 2,
+        "biodiversity": 8,
         "veterinary": 1,
         "animal_protein": 1,
         "diagnostics_industry": 1,
@@ -31598,7 +32248,8 @@ window.STARTUP_THEMES_DATA = {
         "microbial": 1
       },
       "industry_codes": {
-        "materials_packaging": 3,
+        "materials_packaging": 18,
+        "waste_circular": 15,
         "carbon": 3
       },
       "countries": {
@@ -31634,8 +32285,9 @@ window.STARTUP_THEMES_DATA = {
         "enzymatic": 1
       },
       "industry_codes": {
+        "row_crops": 18,
+        "biodiversity": 9,
         "soil_health": 1,
-        "row_crops": 9,
         "biomanufacturing_industry": 2,
         "specialty_chem": 2,
         "human_health": 2,
@@ -31676,9 +32328,10 @@ window.STARTUP_THEMES_DATA = {
         "formulation": 1
       },
       "industry_codes": {
+        "biomanufacturing_industry": 12,
+        "research_labs": 4,
         "food_ingredients": 3,
         "row_crops": 8,
-        "biomanufacturing_industry": 8,
         "carbon": 3,
         "specialty_chem": 8,
         "therapeutics_industry": 5,
@@ -31753,9 +32406,9 @@ window.STARTUP_THEMES_DATA = {
         "fermentation": 1
       },
       "industry_codes": {
-        "row_crops": 9,
+        "row_crops": 11,
         "carbon": 3,
-        "biodiversity": 2,
+        "biodiversity": 4,
         "soil_health": 3,
         "human_health": 1,
         "diagnostics_industry": 1,
@@ -31787,8 +32440,10 @@ window.STARTUP_THEMES_DATA = {
         "water_tech": 1
       },
       "industry_codes": {
-        "human_health": 1,
-        "materials_packaging": 1
+        "materials_packaging": 10,
+        "waste_circular": 9,
+        "human_health": 2,
+        "therapeutics_industry": 1
       },
       "countries": {
         "Chile": 4,
@@ -31832,7 +32487,8 @@ window.STARTUP_THEMES_DATA = {
         "materials_packaging": 2,
         "therapeutics_industry": 3,
         "specialty_chem": 1,
-        "biomanufacturing_industry": 6,
+        "biomanufacturing_industry": 7,
+        "research_labs": 1,
         "food_ingredients": 5,
         "carbon": 1,
         "veterinary": 1,
@@ -31866,12 +32522,12 @@ window.STARTUP_THEMES_DATA = {
       },
       "industry_codes": {
         "energy": 3,
-        "carbon": 9,
+        "carbon": 10,
         "diagnostics_industry": 1,
         "human_health": 1,
         "waste_circular": 2,
         "materials_packaging": 1,
-        "biodiversity": 4,
+        "biodiversity": 5,
         "row_crops": 4
       },
       "countries": {
@@ -31899,7 +32555,8 @@ window.STARTUP_THEMES_DATA = {
         "water_tech": 1
       },
       "industry_codes": {
-        "row_crops": 1
+        "row_crops": 9,
+        "biodiversity": 8
       },
       "countries": {
         "Panama": 1,
@@ -31957,10 +32614,10 @@ window.STARTUP_THEMES_DATA = {
       },
       "industry_codes": {
         "row_crops": 6,
-        "carbon": 6,
+        "carbon": 8,
         "ag_finance": 1,
         "research_labs": 1,
-        "biodiversity": 2,
+        "biodiversity": 4,
         "soil_health": 1,
         "food_ingredients": 1,
         "water": 1
@@ -31987,8 +32644,8 @@ window.STARTUP_THEMES_DATA = {
         "carbon_tech": 2
       },
       "industry_codes": {
-        "biodiversity": 4,
-        "carbon": 5,
+        "biodiversity": 6,
+        "carbon": 7,
         "row_crops": 2,
         "water": 1
       },
@@ -32012,7 +32669,10 @@ window.STARTUP_THEMES_DATA = {
         "therapeutics": 4,
         "biomaterials": 3
       },
-      "industry_codes": {},
+      "industry_codes": {
+        "human_health": 6,
+        "therapeutics_industry": 6
+      },
       "countries": {
         "Peru": 1,
         "Brazil": 4,
@@ -32513,40 +33173,116 @@ window.STARTUP_THEMES_DATA = {
     ],
     "domain": [
       {
-        "v": "agri-food",
-        "n": 180
+        "v": "[\"diagnostics-medtech\", \"human-health\"]",
+        "n": 74
       },
       {
-        "v": "human-health",
-        "n": 125
+        "v": "[\"agri-food\", \"climate-resource\"]",
+        "n": 46
       },
       {
-        "v": "climate-resource",
-        "n": 96
+        "v": "[\"agri-food\"]",
+        "n": 46
       },
       {
-        "v": "therapeutics-regenerative",
-        "n": 66
-      },
-      {
-        "v": "diagnostics-medtech",
-        "n": 54
-      },
-      {
-        "v": "biomanufacturing",
+        "v": "[\"agri-food\", \"human-health\"]",
         "n": 44
       },
       {
-        "v": "biodiversity-nature",
-        "n": 36
+        "v": "[\"therapeutics-regenerative\", \"human-health\"]",
+        "n": 42
       },
       {
-        "v": "biomaterials",
-        "n": 35
+        "v": "[\"agri-food\", \"biodiversity-nature\"]",
+        "n": 34
       },
       {
-        "v": "industrial-biotech",
-        "n": 25
+        "v": "[\"biomaterials\", \"climate-resource\"]",
+        "n": 32
+      },
+      {
+        "v": "[\"human-health\", \"therapeutics-regenerative\"]",
+        "n": 28
+      },
+      {
+        "v": "[\"biodiversity-nature\", \"climate-resource\"]",
+        "n": 18
+      },
+      {
+        "v": "[\"agri-food\", \"biodiversity-nature\", \"climate-resource\"]",
+        "n": 11
+      },
+      {
+        "v": "[\"diagnostics-medtech\", \"human-health\", \"therapeutics-regenerative\"]",
+        "n": 9
+      },
+      {
+        "v": "[\"agri-food\", \"diagnostics-medtech\", \"human-health\"]",
+        "n": 9
+      },
+      {
+        "v": "[\"agri-food\", \"diagnostics-medtech\", \"human-health\", \"therapeutics-regenerative\"]",
+        "n": 7
+      },
+      {
+        "v": "[\"climate-resource\"]",
+        "n": 7
+      },
+      {
+        "v": "[\"agri-food\", \"biomanufacturing\", \"industrial-biotech\"]",
+        "n": 6
+      },
+      {
+        "v": "[\"biomanufacturing\", \"industrial-biotech\"]",
+        "n": 6
+      },
+      {
+        "v": "[\"agri-food\", \"biomanufacturing\"]",
+        "n": 6
+      },
+      {
+        "v": "[\"agri-food\", \"biomanufacturing\", \"human-health\"]",
+        "n": 6
+      },
+      {
+        "v": "[\"agri-food\", \"climate-resource\", \"human-health\"]",
+        "n": 3
+      },
+      {
+        "v": "[\"agri-food\", \"biomanufacturing\", \"biomaterials\", \"climate-resource\"]",
+        "n": 3
+      },
+      {
+        "v": "[\"agri-food\", \"human-health\", \"therapeutics-regenerative\"]",
+        "n": 3
+      },
+      {
+        "v": "[\"climate-resource\", \"diagnostics-medtech\", \"human-health\"]",
+        "n": 2
+      },
+      {
+        "v": "[\"agri-food\", \"biomanufacturing\", \"biomaterials\", \"human-health\", \"industrial-biotech\"]",
+        "n": 2
+      },
+      {
+        "v": "[\"agri-food\", \"biomaterials\", \"climate-resource\"]",
+        "n": 2
+      },
+      {
+        "v": "[\"biomanufacturing\", \"human-health\", \"industrial-biotech\", \"therapeutics-regenerative\"]",
+        "n": 2
+      },
+      {
+        "v": "[\"agri-food\", \"biomanufacturing\", \"biomaterials\", \"human-health\"]",
+        "n": 2
+      },
+      {
+        "v": "[\"agri-food\", \"biomaterials\", \"human-health\", \"therapeutics-regenerative\"]",
+        "n": 2
+      },
+      {
+        "v": "[\"biodiversity-nature\", \"biomanufacturing\", \"biomaterials\", \"human-health\", \"therapeutics-regenerative\"]",
+        "n": 2
       }
     ],
     "tech": [
