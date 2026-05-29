@@ -1,0 +1,190 @@
+entity_id,canonical_name,country,scope_decision,scope_status,recommendation,top_theme,top_conf,sec_theme,sec_conf,curator_decision,curator_theme,text_preview
+examedi-cl,Examedi,CL,review,pending_review,revisar,Diagnostics & Health Access,0.571,Therapeutics,0.104,,,Medical diagnostics platform offering at-home lab testing. Raised Series A.
+nagro-br,Nagro,BR,review,pending_review,revisar,Farm Intelligence,0.517,Nature & Ecosystem Tech,0.091,,,AgriFintech platform providing agricultural credit supply chain financing and digital financial products for Brazilian a
+bioxiplas,Bioxiplas,CL,exclude,pending_curation,revisar,Food Systems & Alt Proteins,0.509,Biomaterials & Circular Economy,0.099,,,Biodegradable disposable uniforms for aquaculture and food industry. Not bio.
+nanox_industrial_chemicals,Nanox (Industrial Chemicals),BR,exclude,pending_curation,revisar,Biomaterials & Circular Economy,0.507,Therapeutics,0.094,,,Nanostructure materials for industrial product performance enhancement. Not bio.
+cobli,Cobli,BR,exclude,confirmed,revisar,Nature & Ecosystem Tech,0.476,Farm Intelligence,0.135,,,"Brazilian fleet-management and telematics platform that helps companies track vehicles, monitor driver behavior, reduce "
+isobar-br,Isobar,BR,review,pending_review,revisar,Farm Intelligence,0.467,Bioinputs & Crop Resilience,0.127,,,Precision agriculture platform providing data analytics for coffee and sugarcane producers including microclimate monito
+lupeon,Lupeon,BR,exclude,confirmed,revisar,Farm Intelligence,0.46,Diagnostics & Health Access,0.132,,,"Brazilian logistics SaaS for freight management, auditing and transportation-cost optimization. ai-data"
+partanna,Partanna,BS,exclude,pending_curation,revisar,Biomaterials & Circular Economy,0.453,Therapeutics,0.137,,,Building materials company developing CO2-absorbing construction surfaces. Not bio.
+cayena-br,Cayena,BR,review,pending_review,no_bio,Food Systems & Alt Proteins,0.444,Farm Intelligence,0.159,,,B2B food supplier platform connecting restaurants hotels and food service operators with suppliers. Series B $55M July 2
+mabloc,Mabloc,BR,exclude,confirmed,no_bio,Therapeutics,0.44,Diagnostics & Health Access,0.212,,,Mabloc develops an AI-driven antibody discovery platform for therapeutic development. ai-data; therapeutics
+gbm,GBM,MX,exclude,confirmed,no_bio,Farm Intelligence,0.425,Diagnostics & Health Access,0.124,,,"Plataforma mexicana de inversion, brokerage y wealth management. ai-data"
+genial-care-br,Genial Care,BR,review,pending_review,no_bio,Diagnostics & Health Access,0.409,Therapeutics,0.109,,,Health platform specializing in autism spectrum disorder (ASD) care combining applied behavior analysis with technology.
+logan,Logan,,exclude,provisional,no_bio,Farm Intelligence,0.407,Diagnostics & Health Access,0.144,,,adtech and media data platform para marketing and media. ai-data
+beep-saude-br,Beep Saúde,BR,review,pending_review,no_bio,Diagnostics & Health Access,0.402,Therapeutics,0.113,,,Home healthcare services platform offering at-home medical tests lab results and nursing care across Brazil.
+frete_com,Frete Com,,exclude,provisional,no_bio,Farm Intelligence,0.393,Diagnostics & Health Access,0.124,,,digital freight and logistics platform para logistics and commerce. ai-data
+popai,Popai,BR,exclude,pending_curation,no_bio,Food Systems & Alt Proteins,0.388,Diagnostics & Health Access,0.151,,,Healthy snack food company using AI for product development.
+alice-br,Alice,BR,review,pending_review,no_bio,Diagnostics & Health Access,0.382,Food Systems & Alt Proteins,0.11,,,Digital health platform offering employer-sponsored health plans combining technology and primary care. Series C $216M.
+barte,Barte,BR,exclude,confirmed,no_bio,Nature & Ecosystem Tech,0.372,Farm Intelligence,0.176,,,"Brazilian B2B payments infrastructure company offering omnichannel payments, custom checkout, receivables management, ac"
+cargo_sapiens,Cargo Sapiens,BR,exclude,confirmed,no_bio,Nature & Ecosystem Tech,0.37,Farm Intelligence,0.226,,,"Brazilian freight-management software platform that modernizes freight purchasing, quote equalization, carrier compariso"
+menta_tickets,Menta Tickets,,exclude,provisional,no_bio,Farm Intelligence,0.368,Nature & Ecosystem Tech,0.182,,,ticket resale infrastructure para ticketing and events. ai-data
+strike,Strike,,exclude,provisional,no_bio,Farm Intelligence,0.367,Diagnostics & Health Access,0.156,,,AI led cybersecurity platform para cybersecurity. ai-data
+agroadvance,Agroadvance,BR,exclude,confirmed,no_bio,Nature & Ecosystem Tech,0.366,Farm Intelligence,0.179,,,"Brazilian agribusiness education company offering online courses, MBAs, postgraduate programs and corporate training for"
+arcus,Arcus,,exclude,confirmed,no_bio,Farm Intelligence,0.365,Biomanufacturing & Platform Technologies,0.132,,,Plataforma empresarial de agentes de IA para automatizar flujos de trabajo complejos sobre datos y procesos. ai-data
+auth0,Auth0,,exclude,confirmed,no_bio,Farm Intelligence,0.365,Biomanufacturing & Platform Technologies,0.132,,,Plataforma de identidad y acceso para autenticacion y autorizacion en aplicaciones. ai-data
+axenya,Axenya,,exclude,confirmed,no_bio,Farm Intelligence,0.365,Biomanufacturing & Platform Technologies,0.132,,,Plataforma de gestion de salud corporativa y optimizacion de beneficios para empresas. ai-data
+betterfly,Betterfly,,exclude,confirmed,no_bio,Farm Intelligence,0.365,Biomanufacturing & Platform Technologies,0.132,,,"Plataforma de beneficios, proteccion y wellness para empleados. ai-data"
+chazki,Chazki,,exclude,confirmed,no_bio,Farm Intelligence,0.365,Biomanufacturing & Platform Technologies,0.132,,,"Empresa de logistica de primera, media y ultima milla con SaaS y fulfillment. ai-data"
+circular,Circular,AR,exclude,confirmed,no_bio,Farm Intelligence,0.365,Biomanufacturing & Platform Technologies,0.132,,,Red profesional y plataforma de recruiting tecnico. ai-data
+conciencia,Conciencia,AR,exclude,confirmed,no_bio,Farm Intelligence,0.365,Biomanufacturing & Platform Technologies,0.132,,,Edtech orientada a habilidades blandas y conciencia social. ai-data
+crinsurance,CRInsurance,AR,exclude,confirmed,no_bio,Farm Intelligence,0.365,Biomanufacturing & Platform Technologies,0.132,,,Insurtech especializada en seguros de credito y garantias. ai-data
+endless,Endless,US,exclude,confirmed,no_bio,Farm Intelligence,0.365,Biomanufacturing & Platform Technologies,0.132,,,Tecnologia para hacer la computacion mas accesible en areas con baja conectividad. ai-data
+flexza,Flexza,,exclude,confirmed,no_bio,Farm Intelligence,0.365,Biomanufacturing & Platform Technologies,0.132,,,Plataforma fintech de compensaciones y beneficios de salud flexibles para colaboradores y jubilados. ai-data
+retrypay,Retrypay,,exclude,confirmed,no_bio,Farm Intelligence,0.365,Biomanufacturing & Platform Technologies,0.132,,,Plataforma mexicana de orquestacion de pagos para ecommerce que mejora aceptacion y ruteo de transacciones entre procesa
+bloomcare-br,BloomCare,BR,review,pending_review,no_bio,Diagnostics & Health Access,0.357,Therapeutics,0.156,,,Digital care platform for women's and family medicine automating maternal health tracking appointments and patient recor
+farmbox-br,Farmbox,BR,review,pending_review,no_bio,Farm Intelligence,0.353,Bioinputs & Crop Resilience,0.131,,,Brazilian agronomy management platform for planning monitoring and optimizing agricultural operations across soybean cor
+geofusion,Geofusion,BR,exclude,confirmed,no_bio,Farm Intelligence,0.345,Diagnostics & Health Access,0.158,,,"Brazilian location-intelligence / geomarketing platform for business expansion, sales territories and retail/industry go"
+arvo-br,Arvo,BR,review,pending_review,no_bio,Diagnostics & Health Access,0.341,Farm Intelligence,0.146,,,AI-powered platform securing financial transactions within healthcare: medical billing insurance claims and fraud detect
+altscore,Altscore,,exclude,confirmed,no_bio,Farm Intelligence,0.339,Biomanufacturing & Platform Technologies,0.167,,,Infraestructura fintech B2B para que empresas lancen y operen productos de credito digital. ai-data
+mentatech,MentaTech,AR,exclude,confirmed,no_bio,Farm Intelligence,0.339,Biomanufacturing & Platform Technologies,0.167,,,Infraestructura digital para ticketing y reventa oficial entre fans. ai-data
+koltin-mx,Koltin,MX,review,pending_review,no_bio,Diagnostics & Health Access,0.333,Therapeutics,0.149,,,Digital health platform for chronic condition management including diabetes care.
+concil,Concil,BR,exclude,confirmed,no_bio,Farm Intelligence,0.328,Diagnostics & Health Access,0.146,,,Brazilian SaaS company for accounting and card/payment reconciliation. ai-data
+vixtra,Vixtra,,exclude,provisional,no_bio,Farm Intelligence,0.318,Diagnostics & Health Access,0.133,,,import financing fintech para fintech and international trade. ai-data
+wisy,Wisy,US,exclude,confirmed,no_bio,Farm Intelligence,0.309,Diagnostics & Health Access,0.149,,,"Plataforma enterprise de AI para ejecucion retail y CPG, con vision computacional para auditar gondolas, planogramas, in"
+skyloom,Skyloom,US,exclude,confirmed,no_bio,Nature & Ecosystem Tech,0.307,Farm Intelligence,0.3,,,Empresa de comunicaciones opticas espaciales para transporte de datos en orbita. ai-data; remote-sensing
+123seguro,123Seguro,AR,exclude,confirmed,no_bio,Nature & Ecosystem Tech,0.304,Farm Intelligence,0.166,,,"Argentine/LatAm online insurance marketplace focused on comparing and buying insurance products such as car, home, perso"
+aerialoop,Aerialoop,EC,exclude,confirmed,no_bio,Nature & Ecosystem Tech,0.301,Farm Intelligence,0.183,,,"Empresa de drones para logistica, inspeccion y vigilancia con conectividad satelital. remote-sensing"
+lia_aeospace,LIA Aeospace,AR,exclude,confirmed,no_bio,Nature & Ecosystem Tech,0.301,Farm Intelligence,0.183,,,Empresa aeroespacial que desarrolla propulsion verde para satelites y spacecraft. remote-sensing
+nuvia,Nuvia,US,exclude,provisional,no_bio,Farm Intelligence,0.292,Diagnostics & Health Access,0.14,,,ARM server CPU startup para data center compute. ai-data
+erural,Erural,BR,exclude,confirmed,no_bio,Nature & Ecosystem Tech,0.286,Farm Intelligence,0.184,,,"Brazilian livestock marketplace for cattle auctions, fixed-price animal offers, semen sales and rural commerce. The offi"
+vu,Vu,AR,exclude,provisional,no_bio,Farm Intelligence,0.282,Diagnostics & Health Access,0.167,,,digital identity and fraud prevention platform para cybersecurity and fintech. ai-data
+amaro,Amaro,BR,exclude,confirmed,no_bio,Biomaterials & Circular Economy,0.271,Nature & Ecosystem Tech,0.25,,,"Brazilian fashion and lifestyle e-commerce brand selling apparel, basics, swimwear, jeans, accessories and related consu"
+nuclearis,Nuclearis,AR,exclude,provisional,no_bio,Food Systems & Alt Proteins,0.271,Therapeutics,0.173,,,nuclear mechanical engineering and manufacturing para nuclear industry.
+centralo,Centralo,AR,exclude,provisional,no_bio,Nature & Ecosystem Tech,0.269,Farm Intelligence,0.149,,,software and market infrastructure para cross-sector enterprise markets. ai-data
+curseduca,Curseduca,BR,exclude,provisional,no_bio,Nature & Ecosystem Tech,0.269,Farm Intelligence,0.149,,,software and market infrastructure para cross-sector enterprise markets. ai-data
+exactly,Exactly,AR,exclude,provisional,no_bio,Nature & Ecosystem Tech,0.269,Farm Intelligence,0.149,,,software and market infrastructure para cross-sector enterprise markets. ai-data
+facturama,Facturama,MX,exclude,provisional,no_bio,Nature & Ecosystem Tech,0.269,Farm Intelligence,0.149,,,software and market infrastructure para cross-sector enterprise markets. ai-data
+frubana,Frubana,CO,exclude,provisional,no_bio,Nature & Ecosystem Tech,0.269,Farm Intelligence,0.149,,,software and market infrastructure para cross-sector enterprise markets. ai-data
+grandata,Grandata,US,exclude,provisional,no_bio,Nature & Ecosystem Tech,0.269,Farm Intelligence,0.149,,,software and market infrastructure para cross-sector enterprise markets. ai-data
+houm,Houm,CL,exclude,provisional,no_bio,Nature & Ecosystem Tech,0.269,Farm Intelligence,0.149,,,software and market infrastructure para cross-sector enterprise markets. ai-data
+inventa,Inventa,BR,exclude,provisional,no_bio,Nature & Ecosystem Tech,0.269,Farm Intelligence,0.149,,,software and market infrastructure para cross-sector enterprise markets. ai-data
+jampp,Jampp,AR,exclude,provisional,no_bio,Nature & Ecosystem Tech,0.269,Farm Intelligence,0.149,,,software and market infrastructure para cross-sector enterprise markets. ai-data
+kangu,Kangu,BR,exclude,provisional,no_bio,Nature & Ecosystem Tech,0.269,Farm Intelligence,0.149,,,software and market infrastructure para cross-sector enterprise markets. ai-data
+mudafy,Mudafy,AR,exclude,provisional,no_bio,Nature & Ecosystem Tech,0.269,Farm Intelligence,0.149,,,software and market infrastructure para cross-sector enterprise markets. ai-data
+mural,Mural,AR,exclude,provisional,no_bio,Nature & Ecosystem Tech,0.269,Farm Intelligence,0.149,,,software and market infrastructure para cross-sector enterprise markets. ai-data
+nuvemshop,Nuvemshop,BR,exclude,provisional,no_bio,Nature & Ecosystem Tech,0.269,Farm Intelligence,0.149,,,software and market infrastructure para cross-sector enterprise markets. ai-data
+payjoy,Payjoy,US,exclude,provisional,no_bio,Nature & Ecosystem Tech,0.269,Farm Intelligence,0.149,,,software and market infrastructure para cross-sector enterprise markets. ai-data
+pomelo,Pomelo,AR,exclude,provisional,no_bio,Nature & Ecosystem Tech,0.269,Farm Intelligence,0.149,,,software and market infrastructure para cross-sector enterprise markets. ai-data
+properati,Properati,AR,exclude,provisional,no_bio,Nature & Ecosystem Tech,0.269,Farm Intelligence,0.149,,,software and market infrastructure para cross-sector enterprise markets. ai-data
+qive,Qive,BR,exclude,provisional,no_bio,Nature & Ecosystem Tech,0.269,Farm Intelligence,0.149,,,software and market infrastructure para cross-sector enterprise markets. ai-data
+quadminds,Quadminds,AR,exclude,provisional,no_bio,Nature & Ecosystem Tech,0.269,Farm Intelligence,0.149,,,software and market infrastructure para cross-sector enterprise markets. ai-data
+retargetly,Retargetly,AR,exclude,provisional,no_bio,Nature & Ecosystem Tech,0.269,Farm Intelligence,0.149,,,software and market infrastructure para cross-sector enterprise markets. ai-data
+ripio,Ripio,AR,exclude,provisional,no_bio,Nature & Ecosystem Tech,0.269,Farm Intelligence,0.149,,,software and market infrastructure para cross-sector enterprise markets. ai-data
+rsk,Rsk,AR,exclude,provisional,no_bio,Nature & Ecosystem Tech,0.269,Farm Intelligence,0.149,,,software and market infrastructure para cross-sector enterprise markets. ai-data
+securitize,Securitize,US,exclude,provisional,no_bio,Nature & Ecosystem Tech,0.269,Farm Intelligence,0.149,,,software and market infrastructure para cross-sector enterprise markets. ai-data
+sirena,Sirena,AR,exclude,provisional,no_bio,Nature & Ecosystem Tech,0.269,Farm Intelligence,0.149,,,software and market infrastructure para cross-sector enterprise markets. ai-data
+travelx,TravelX,US,exclude,provisional,no_bio,Nature & Ecosystem Tech,0.269,Farm Intelligence,0.149,,,software and market infrastructure para cross-sector enterprise markets. ai-data
+uala,Ualá,AR,exclude,provisional,no_bio,Nature & Ecosystem Tech,0.269,Farm Intelligence,0.149,,,software and market infrastructure para cross-sector enterprise markets. ai-data
+vercel,Vercel,US,exclude,provisional,no_bio,Nature & Ecosystem Tech,0.269,Farm Intelligence,0.149,,,software and market infrastructure para cross-sector enterprise markets. ai-data
+workana,Workana,AR,exclude,provisional,no_bio,Nature & Ecosystem Tech,0.269,Farm Intelligence,0.149,,,software and market infrastructure para cross-sector enterprise markets. ai-data
+zipnova,Zipnova,AR,exclude,provisional,no_bio,Nature & Ecosystem Tech,0.269,Farm Intelligence,0.149,,,software and market infrastructure para cross-sector enterprise markets. ai-data
+oneinfinite,OneInfinite,AR,exclude,confirmed,no_bio,Farm Intelligence,0.267,Diagnostics & Health Access,0.133,,,Plataforma de orquestacion de pagos y checkout global con liquidacion en USDT para negocios digitales. ai-data
+tissue_dynamics,Tissue Dynamics,IL,exclude,confirmed,no_bio,Therapeutics,0.266,Diagnostics & Health Access,0.202,,,"Tissue Dynamics is a therapeutics and drug-discovery company using AI, human organoids, robotic automation and real-time"
+sensei,Sensei,,exclude,confirmed,no_bio,Farm Intelligence,0.264,Diagnostics & Health Access,0.156,,,"Plataforma de retail autonomo que usa computer vision, AI y sensores para tiendas sin checkout y analitica operacional. "
+teachy,Teachy,,exclude,provisional,no_bio,Farm Intelligence,0.262,Diagnostics & Health Access,0.201,,,AI teaching and school platform para education technology. ai-data
+grao-direto-br,Grão Direto,BR,review,pending_review,no_bio,Farm Intelligence,0.262,Therapeutics,0.128,,,Digital grain trading platform connecting buyers and producers of soybeans corn and other grains. Series B $15.5M.
+audsat,Audsat,BR,exclude,pending_curation,no_bio,Farm Intelligence,0.259,Nature & Ecosystem Tech,0.187,,,Satellite monitoring for agricultural financing. Not bio.
+aeroscan_businessproductivity_software,Aeroscan (Business/Productivity Software),BR,exclude,pending_curation,no_bio,Farm Intelligence,0.253,Diagnostics & Health Access,0.153,,,Drone monitoring and airspace management software. Not bio.
+raptor_air,Raptor Air,BR,exclude,pending_curation,no_bio,Farm Intelligence,0.251,Diagnostics & Health Access,0.15,,,IoT field measurement and management integration platform. Not bio.
+goquantum,GoQuantum,CL,exclude,pending_curation,no_bio,Food Systems & Alt Proteins,0.25,Biomaterials & Circular Economy,0.143,,,Quantum-based hardware for post-quantum secure data transmission. Not bio.
+goquantum_2,GoQuantum,CL,exclude,pending_curation,no_bio,Food Systems & Alt Proteins,0.25,Biomaterials & Circular Economy,0.143,,,Quantum-based hardware for post-quantum secure data transmission. Not bio.
+egg,Egg,AR,exclude,confirmed,no_bio,Farm Intelligence,0.247,Diagnostics & Health Access,0.163,,,Edtech argentina de cursos online de programacion. ai-data
+skydrones_tecnologia_avionica_sa,SkyDrones Tecnologia Avionica S.A,BR,exclude,pending_curation,no_bio,Farm Intelligence,0.247,Bioinputs & Crop Resilience,0.145,,,Agricultural and inspection drone manufacturer and operator. Not bio.
+openlayer,Openlayer,,exclude,confirmed,no_bio,Diagnostics & Health Access,0.243,Farm Intelligence,0.212,,,"Plataforma de gobernanza, testing y observabilidad para sistemas de IA. ai-data"
+abastra,AbAstra,AR,exclude,confirmed,no_bio,Farm Intelligence,0.242,Diagnostics & Health Access,0.19,,,Empresa de desarrollo de software a medida para clientes corporativos de multiples industrias. ai-data
+dynami,Dynami,,exclude,confirmed,no_bio,Farm Intelligence,0.242,Diagnostics & Health Access,0.19,,,"Software de IA para hiring, retencion y bienestar laboral a lo largo del employee journey. ai-data"
+quantum_south,Quantum South,UY,exclude,confirmed,no_bio,Farm Intelligence,0.242,Diagnostics & Health Access,0.19,,,Empresa de software de optimizacion cuantica para cargo logistico en aerolineas y barcos. ai-data
+ruedata,Ruedata,CO,exclude,confirmed,no_bio,Farm Intelligence,0.242,Diagnostics & Health Access,0.19,,,Software para gestion y optimizacion de neumaticos en flotas. ai-data
+teramot,Teramot,AR,exclude,confirmed,no_bio,Farm Intelligence,0.242,Diagnostics & Health Access,0.19,,,Software enterprise para conectar agentes de IA con datos y sistemas reales de negocio. ai-data
+vmind,VMind,,exclude,confirmed,no_bio,Farm Intelligence,0.242,Diagnostics & Health Access,0.19,,,Software de aceleracion de IA que busca reducir costos de computo mediante algoritmos numericos. ai-data
+aloi,Aloi,US,exclude,confirmed,no_bio,Farm Intelligence,0.236,Diagnostics & Health Access,0.194,,,"Aloi is an AI data platform for fiscal compliance, reconciling fragmented tax, banking, ERP and documentation data for e"
+movet-co,Movet,CO,review,pending_review,no_bio,Therapeutics,0.233,Diagnostics & Health Access,0.182,,,Network of state-of-the-art veterinary clinics offering standardized medical protocols. Series A $5M October 2024. 150+ 
+prima,Prima,,exclude,provisional,no_bio,Farm Intelligence,0.232,Biomanufacturing & Platform Technologies,0.167,,,insurance or digital services platform para insurance or media services. ai-data
+cleanlight,CleanLight,CL,exclude,pending_curation,no_bio,Nature & Ecosystem Tech,0.232,Biomaterials & Circular Economy,0.146,,,Solar energy appliance designer and manufacturer. Not bio.
+verge_ag,Verge Ag,CA,exclude,confirmed,no_bio,Farm Intelligence,0.23,Therapeutics,0.159,,,Canadian agtech company developing machinery optimization and field-operation software. ai-data
+fix_it,Fix it,BR,exclude,pending_curation,no_bio,Diagnostics & Health Access,0.229,Therapeutics,0.183,,,Medical orthopedic splints made with thermoformed plastic and 3D printing. Not bio.
+ceibo-cl,Ceibo,CL,review,pending_review,no_bio,Biomaterials & Circular Economy,0.228,Food Systems & Alt Proteins,0.22,,,Develops technologies enabling sustainable extraction of copper and critical minerals for the net-zero transition.
+ethos,Ethos,US,exclude,confirmed,no_bio,Farm Intelligence,0.226,Diagnostics & Health Access,0.135,,,Firma de venture capital enfocada en deep tech y AI. ai-data
+webee,Webee,US,exclude,confirmed,no_bio,Farm Intelligence,0.226,Diagnostics & Health Access,0.161,,,"Plataforma de IIoT e IA para manufactura, mantenimiento predictivo y optimizacion operativa en smart factories. ai-data;"
+beyond_renewable_energy,Beyond Renewable Energy,MX,exclude,pending_curation,no_bio,Nature & Ecosystem Tech,0.226,Food Systems & Alt Proteins,0.145,,,EV and distributed energy generation. Not bio.
+scarab,Scarab,CL,exclude,pending_curation,no_bio,Biomaterials & Circular Economy,0.225,Food Systems & Alt Proteins,0.209,,,Mining waste valorization technology. Not bio.
+spline,Spline,,exclude,provisional,no_bio,Diagnostics & Health Access,0.224,Therapeutics,0.155,,,3D design software para design software. ai-data
+stradot,Stradot,FR,exclude,confirmed,no_bio,Biomaterials & Circular Economy,0.224,Food Systems & Alt Proteins,0.184,,,Startup de infraestructura de parking/movilidad.
+skyalert,SkyAlert,MX,exclude,pending_curation,no_bio,Nature & Ecosystem Tech,0.222,Farm Intelligence,0.146,,,Satellite seismic warning system. Not bio.
+ressolve,Ressolve,CO,exclude,pending_curation,no_bio,Diagnostics & Health Access,0.222,Farm Intelligence,0.159,,,AI platform for conversation analysis and interpretation. Not bio.
+wiseconn-chile-cl,Wiseconn Chile,CL,review,pending_review,no_bio,Food Systems & Alt Proteins,0.22,Farm Intelligence,0.181,,,Software platform automating monitoring and control of irrigation systems to reduce water consumption. Series B led by M
+moya_aero,Moya Aero,BR,exclude,pending_curation,no_bio,Biomaterials & Circular Economy,0.217,Therapeutics,0.158,,,High-capacity electric UAVs for cargo delivery. Not bio.
+octo_inc,OCTO INC.,CL,exclude,pending_curation,no_bio,Farm Intelligence,0.217,Diagnostics & Health Access,0.205,,,IoT and UV data platform for data professionals. Not bio.
+clover,Clover,US,exclude,confirmed,no_bio,Nature & Ecosystem Tech,0.214,Farm Intelligence,0.183,,,"Empresa de infraestructura IT, networking, seguridad y telefonia IP para organizaciones."
+reborn_electric_motors,Reborn Electric Motors,CL,exclude,pending_curation,no_bio,Therapeutics,0.214,Food Systems & Alt Proteins,0.145,,,Converts heavy-duty machinery to electric. Not bio.
+welli-co,Welli,CO,review,pending_review,no_bio,Diagnostics & Health Access,0.212,Farm Intelligence,0.188,,,Digital platform enabling instant medical financing for healthcare procedures connecting patients with clinics. Series A
+pods,Pods,,exclude,provisional,no_bio,Therapeutics,0.209,Diagnostics & Health Access,0.19,,,non core housing or storage startup signal para unknown.
+carenet_longevity,Carenet Longevity,BR,exclude,pending_curation,no_bio,Diagnostics & Health Access,0.208,Farm Intelligence,0.18,,,"IoMT and patient telemetry data orchestration platform. Digital health infrastructure, not bio."
+compass,Compass,BR,exclude,pending_curation,no_bio,Diagnostics & Health Access,0.208,Biomaterials & Circular Economy,0.162,,,3D scanning and printing technology for dental practitioners. Not bio.
+delfos,Delfos,BR,exclude,pending_curation,no_bio,Food Systems & Alt Proteins,0.206,Nature & Ecosystem Tech,0.173,,,AI for energy industry failure prediction. Not bio.
+aipha_g,Aipha G,AR,exclude,pending_curation,no_bio,Diagnostics & Health Access,0.203,Therapeutics,0.186,,,XR and AI platform for human-object interaction. Not bio.
+avedian-ar,Avedian,AR,review,pending_review,no_bio,Diagnostics & Health Access,0.203,Farm Intelligence,0.191,,,Health records management platform with predictive AI serving hospitals insurance and laboratories (Hosdatia Insuria Pha
+hybrico_energy_technologies_ltd,HYBRICO Energy Technologies Ltd.,GT,exclude,pending_curation,no_bio,Biomaterials & Circular Economy,0.201,Nature & Ecosystem Tech,0.192,,,Hybrid energy systems for telecom in emerging markets. Not bio.
+wnd_group,WND Group,MX,exclude,pending_curation,no_bio,Diagnostics & Health Access,0.201,Farm Intelligence,0.167,,,IoT network platform for low-power wide area connectivity. Not bio.
+capim,Capim,BR,exclude,confirmed,no_bio,Diagnostics & Health Access,0.2,Farm Intelligence,0.196,,,"Capim provides management software and financial solutions for dental clinics, including scheduling, patient records, pa"
+gokei-cl,Gokei,CL,review,pending_review,no_bio,Farm Intelligence,0.2,Diagnostics & Health Access,0.192,,,Digital platform simplifying healthcare reimbursement management allowing patients to submit medical receipts and proces
+eden-med-mx,Eden Med,MX,review,pending_review,no_bio,Biomaterials & Circular Economy,0.197,Diagnostics & Health Access,0.166,,,Healthcare services platform. Dalus Capital portfolio company.
+motivia-ar,Motivia,AR,review,pending_review,no_bio,Therapeutics,0.196,Farm Intelligence,0.171,,,AI and behavioral sciences platform to improve medication adherence for chronic disease patients. Pre-seed $1.2M led by 
+kingo,Kingo,GT,exclude,pending_curation,no_bio,Nature & Ecosystem Tech,0.195,Biomaterials & Circular Economy,0.141,,,Prepaid solar energy service for rural communities. Not bio.
+blerify,Blerify,AR,exclude,confirmed,no_bio,Farm Intelligence,0.194,Therapeutics,0.144,,,"Infraestructura de identidad digital, credenciales verificables, billetera y firmas electronicas con criptografia poscua"
+eureka,Eureka,,exclude,confirmed,no_bio,Farm Intelligence,0.194,Therapeutics,0.144,,,Operador o venture studio de comercio digital y servicios transfronterizos.
+zdx_aerospace,ZDX Aerospace,MX,exclude,pending_curation,no_bio,Therapeutics,0.194,Biomanufacturing & Platform Technologies,0.153,,,"UAV, ship, and aircraft design and manufacturing. Not bio."
+sousmile-br,SouSmile,BR,review,pending_review,no_bio,Nature & Ecosystem Tech,0.192,Farm Intelligence,0.179,,,Digital orthodontics platform offering clear aligners with remote monitoring by licensed dentists. Raised Series A.
+gauss_control,Gauss Control,CL,exclude,pending_curation,no_bio,Diagnostics & Health Access,0.191,Farm Intelligence,0.173,,,Business intelligence platform for traffic accident prevention. Not bio.
+letrus,Letrus,BR,exclude,pending_curation,no_bio,Diagnostics & Health Access,0.19,Farm Intelligence,0.147,,,EdTech platform for writing education. Not bio.
+bekeu,Bekeu,,exclude,confirmed,no_bio,Farm Intelligence,0.189,Diagnostics & Health Access,0.159,,,"Plataforma para centralizar compras no estrategicas, proveedores y trazabilidad de compras corporativas. ai-data"
+spectrum,Spectrum,,exclude,provisional,no_bio,Diagnostics & Health Access,0.189,Therapeutics,0.153,,,startup services and founder tools para startup services.
+ibbx_innovation,IBBx Innovation,BR,exclude,pending_curation,no_bio,Nature & Ecosystem Tech,0.189,Food Systems & Alt Proteins,0.163,,,Wireless energy transfer technology patents. Not bio.
+brisa_robotica,Brisa Robotica,BR,exclude,pending_curation,no_bio,Biomaterials & Circular Economy,0.188,Biomanufacturing & Platform Technologies,0.169,,,Robotics and autonomous systems for manufacturing. Not bio.
+inti_tech,INTI-TECH,CL,exclude,pending_curation,no_bio,Biomaterials & Circular Economy,0.187,Food Systems & Alt Proteins,0.149,,,Robotic dry-cleaning systems for solar plants. Not bio.
+terrasense,TerraSense,BR,exclude,pending_curation,no_bio,Nature & Ecosystem Tech,0.186,Farm Intelligence,0.153,,,Environmental monitoring drone company. Not bio.
+bionexo-br,Bionexo,BR,review,pending_review,no_bio,Diagnostics & Health Access,0.186,Bioinputs & Crop Resilience,0.157,,,B2B health procurement marketplace connecting hospitals clinics and distributors across Brazil. Founded 2000. Private eq
+epic_aerospace,Epic Aerospace,AR,exclude,pending_curation,no_bio,Biomaterials & Circular Economy,0.184,Food Systems & Alt Proteins,0.157,,,Space transportation startup. Not bio.
+rocketbot,Rocketbot,CL,exclude,pending_curation,no_bio,Diagnostics & Health Access,0.183,Biomanufacturing & Platform Technologies,0.171,,,Robotic process automation software. Not bio.
+nuveo,Nuveo,BR,exclude,pending_curation,no_bio,Diagnostics & Health Access,0.183,Therapeutics,0.149,,,AI document automation platform. Not bio.
+rzx_tecnologia,RZX Tecnologia,BR,exclude,pending_curation,no_bio,Food Systems & Alt Proteins,0.183,Therapeutics,0.157,,,Safety and engineering services using neuroscientific approaches. Not bio.
+fligoo,Fligoo,,exclude,provisional,no_bio,Farm Intelligence,0.181,Diagnostics & Health Access,0.179,,,"AI decision and analytics software para financial services, retail and telecom. ai-data"
+iov_labs,IOV Labs,AR,exclude,pending_curation,no_bio,Nature & Ecosystem Tech,0.18,Diagnostics & Health Access,0.156,,,Blockchain platform company focused on financial inclusion. Not bio.
+maquintel,Maquintel,CL,exclude,pending_curation,no_bio,Food Systems & Alt Proteins,0.179,Biomanufacturing & Platform Technologies,0.164,,,Robotic equipment for mining processes. Not bio.
+luzid,Luzid,CR,exclude,provisional,no_bio,Diagnostics & Health Access,0.178,Nature & Ecosystem Tech,0.152,,,ERP delivery and transformation platform para enterprise software. ai-data
+lume_robotics,Lume Robotics,BR,exclude,pending_curation,no_bio,Food Systems & Alt Proteins,0.178,Diagnostics & Health Access,0.15,,,Autonomous vehicle robotics technology. Not bio.
+beegol,Beegol,BR,exclude,pending_curation,no_bio,Diagnostics & Health Access,0.177,Farm Intelligence,0.171,,,ML platform for broadband quality monitoring. Not bio.
+aio_educational_software,AIO (Educational Software),BR,exclude,pending_curation,no_bio,Diagnostics & Health Access,0.174,Farm Intelligence,0.153,,,AI-powered student guidance tool for entrance exam preparation. Not bio.
+harddrones,Harddrones,CL,exclude,pending_curation,no_bio,Farm Intelligence,0.174,Nature & Ecosystem Tech,0.137,,,Drone data capture and flight analytics. Not bio.
+bacu,BACU,,exclude,confirmed,no_bio,Farm Intelligence,0.173,Diagnostics & Health Access,0.155,,,"Cadena de restaurantes saludables apoyada por software propio para operaciones, delivery y pagos. ai-data"
+por_a_mais,Por a mais,BR,exclude,pending_curation,no_bio,Diagnostics & Health Access,0.173,Farm Intelligence,0.168,,,Educational data science platform. Not bio.
+speedbird_aero,Speedbird Aero,BR,exclude,pending_curation,no_bio,Farm Intelligence,0.172,Diagnostics & Health Access,0.149,,,Drone logistics and UAS development company. Not bio.
+greenv,GreenV,BR,exclude,pending_curation,no_bio,Nature & Ecosystem Tech,0.172,Therapeutics,0.146,,,EV charging infrastructure company. Not bio.
+ini,INI,AR,exclude,confirmed,no_bio,Diagnostics & Health Access,0.171,Therapeutics,0.161,,,Fintech argentina de pagos digitales con conectividad alternativa para operar incluso sin internet.
+ft_sistemas_sa,FT Sistemas S.A.,BR,exclude,pending_curation,no_bio,Nature & Ecosystem Tech,0.171,Biomaterials & Circular Economy,0.148,,,Manufacturer of remotely piloted aircraft and aeronautical systems. Not bio.
+tumi_robotics,Tumi Robotics,PE,exclude,pending_curation,no_bio,Nature & Ecosystem Tech,0.169,Food Systems & Alt Proteins,0.149,,,Robotics for infrastructure inspection in hard-to-reach areas. Not bio.
+somos_internet,Somos Internet,CO,exclude,pending_curation,no_bio,Therapeutics,0.168,Food Systems & Alt Proteins,0.142,,,"Internet service provider in Medellin, Colombia. Not bio."
+falcomm,Falcomm,,exclude,confirmed,no_bio,Therapeutics,0.167,Diagnostics & Health Access,0.155,,,Empresa estadounidense de semiconductores fabless que desarrolla power amplifiers mas eficientes para comunicaciones wir
+iof,Iof,,exclude,provisional,no_bio,Therapeutics,0.167,Diagnostics & Health Access,0.155,,,insufficiently documented venture para unknown.
+lemon,Lemon,AR,exclude,provisional,no_bio,Therapeutics,0.167,Diagnostics & Health Access,0.155,,,Aplicacion cripto/fintech de consumo.
+novo_space,NOVO SPACE,AR,exclude,confirmed,no_bio,Therapeutics,0.167,Diagnostics & Health Access,0.155,,,Empresa de hardware espacial que desarrolla computadoras y electronica rad-tolerante para sistemas espaciales complejos.
+brasil_ozônio,Brasil Ozônio,BR,review,pending_curation,sin_texto,Therapeutics,0.167,Diagnostics & Health Access,0.155,,,
+starlight_ventures,Starlight Ventures,,exclude,provisional,no_bio,Farm Intelligence,0.163,Nature & Ecosystem Tech,0.158,,,venture capital or ecosystem actor para venture ecosystem.
+zippedi,Zippedi,CL,exclude,pending_curation,no_bio,Therapeutics,0.163,Biomaterials & Circular Economy,0.161,,,Retail tech robotics company. Not bio.
+tractian,Tractian,BR,exclude,pending_curation,no_bio,Biomanufacturing & Platform Technologies,0.163,Biomaterials & Circular Economy,0.136,,,Industrial equipment monitoring and predictive maintenance technology. Not bio.
+aguamarina_biomineria,Aguamarina Biomineria,CL,exclude,pending_curation,no_bio,Biomaterials & Circular Economy,0.163,Therapeutics,0.162,,,Green mining technology company. Not bio.
+saycel,SayCel,NI,exclude,pending_curation,no_bio,Farm Intelligence,0.163,Therapeutics,0.146,,,Rural mobile connectivity network operator. Not bio.
+elytron_security,Elytron Security,BR,exclude,pending_curation,no_bio,Therapeutics,0.162,Diagnostics & Health Access,0.138,,,Cybersecurity consulting and auditing services. Not bio.
+yak,YAK,BR,exclude,pending_curation,no_bio,Diagnostics & Health Access,0.162,Therapeutics,0.155,,,Battery-powered electric tractors for small rural applications. Not bio.
+loud_voice_services,Loud Voice Services,BR,exclude,pending_curation,no_bio,Food Systems & Alt Proteins,0.161,Diagnostics & Health Access,0.153,,,AI voice solutions and marketplace for conversational AI. Not bio.
+robotic_air,Robotic Air,PE,exclude,pending_curation,no_bio,Biomaterials & Circular Economy,0.16,Farm Intelligence,0.152,,,Aerial robotic equipment for surveying and extreme-condition operations. Not bio.
+holos_technology,Holos Technology,CL,exclude,pending_curation,no_bio,Diagnostics & Health Access,0.16,Biomanufacturing & Platform Technologies,0.147,,,XR and AI services for various verticals. Not bio.
+lifit,Lifit,,exclude,provisional,no_bio,Diagnostics & Health Access,0.159,Farm Intelligence,0.151,,,consumer wellness or productivity software para consumer software. ai-data
+voltz,Voltz,BR,exclude,pending_curation,no_bio,Therapeutics,0.156,Nature & Ecosystem Tech,0.146,,,Electric two-wheeler vehicle manufacturer. Not bio.
+leoparda_electric_now_renamed_to_vammo,Leoparda Electric (now renamed to Vammo),BR,exclude,pending_curation,no_bio,Therapeutics,0.156,Nature & Ecosystem Tech,0.146,,,Electric motorcycle manufacturer. Not bio.
+hitech_electric,Hitech Electric,BR,exclude,pending_curation,no_bio,Therapeutics,0.156,Nature & Ecosystem Tech,0.146,,,Electric vehicle manufacturer. Not bio.
+voltu,Voltu,AR,exclude,pending_curation,no_bio,Therapeutics,0.156,Nature & Ecosystem Tech,0.146,,,Electric powertrain manufacturer. Not bio.
+agro_ai,Agro AI,CL,exclude,pending_curation,no_bio,Nature & Ecosystem Tech,0.154,Diagnostics & Health Access,0.151,,,AI software for agriculture analytics. Not bio.
+beenoculus,Beenoculus,BR,exclude,pending_curation,no_bio,Therapeutics,0.148,Diagnostics & Health Access,0.144,,,Mixed reality headsets for education and training. Not bio.
+uali,Uali,AR,exclude,pending_curation,no_bio,Nature & Ecosystem Tech,0.144,Diagnostics & Health Access,0.141,,,Drone technology and AI for energy asset optimization. Not bio.
