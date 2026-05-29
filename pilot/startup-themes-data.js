@@ -1,5 +1,5 @@
 window.STARTUP_THEMES_DATA = {
-  "computed_at": "2026-05-28T21:31:54",
+  "computed_at": "2026-05-28T21:40:38",
   "model": "intfloat/multilingual-e5-small",
   "stats": {
     "total_startups": 487,
@@ -376,7 +376,7 @@ window.STARTUP_THEMES_DATA = {
         "Biotech"
       ],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.672,
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "CITES"
       ]
@@ -441,7 +441,7 @@ window.STARTUP_THEMES_DATA = {
         "Diagnostics"
       ],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.672,
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -704,8 +704,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "MedTech"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.55,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -1030,7 +1030,7 @@ window.STARTUP_THEMES_DATA = {
         "AI / Data"
       ],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.624,
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -1095,7 +1095,7 @@ window.STARTUP_THEMES_DATA = {
         "MedTech"
       ],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.672,
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -1274,8 +1274,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Diagnostics"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.532,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -1717,8 +1717,8 @@ window.STARTUP_THEMES_DATA = {
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.55,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -1909,7 +1909,7 @@ window.STARTUP_THEMES_DATA = {
         "Diagnostics"
       ],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.62,
+      "tech_depth_confidence": 0.92,
       "investor_ids": []
     },
     {
@@ -1965,8 +1965,8 @@ window.STARTUP_THEMES_DATA = {
         "Therapeutics",
         "Diagnostics"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.526,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -2428,8 +2428,8 @@ window.STARTUP_THEMES_DATA = {
         "AI / Data",
         "SaaS / Platform"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.562,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "eb_capital",
         "vox_capital"
@@ -2683,7 +2683,7 @@ window.STARTUP_THEMES_DATA = {
         "Diagnostics"
       ],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.624,
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "dalus_capital"
       ]
@@ -2741,8 +2741,8 @@ window.STARTUP_THEMES_DATA = {
         "MedTech",
         "Hardware / IoT"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.58,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "carao_ventures"
       ]
@@ -2947,7 +2947,7 @@ window.STARTUP_THEMES_DATA = {
         "HealthTech"
       ],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.66,
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -3283,7 +3283,7 @@ window.STARTUP_THEMES_DATA = {
         "Biotech"
       ],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.66,
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -3482,8 +3482,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Diagnostics"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.55,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -3604,8 +3604,8 @@ window.STARTUP_THEMES_DATA = {
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.58,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -3806,8 +3806,8 @@ window.STARTUP_THEMES_DATA = {
         "Therapeutics",
         "Hardware / IoT"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.592,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "sp_ventures"
       ]
@@ -3932,8 +3932,8 @@ window.STARTUP_THEMES_DATA = {
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.61,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -4207,8 +4207,8 @@ window.STARTUP_THEMES_DATA = {
         "AI / Data",
         "Biotech"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.562,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -4533,7 +4533,7 @@ window.STARTUP_THEMES_DATA = {
         "Biotech"
       ],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.64,
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -4786,7 +4786,7 @@ window.STARTUP_THEMES_DATA = {
         "Diagnostics"
       ],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.624,
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -4911,8 +4911,8 @@ window.STARTUP_THEMES_DATA = {
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.532,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -4973,7 +4973,7 @@ window.STARTUP_THEMES_DATA = {
       "market_label": "",
       "self_cats": [],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.66,
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -5223,8 +5223,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Diagnostics"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.562,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "dalus_capital"
       ]
@@ -5359,8 +5359,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Diagnostics"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.574,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "GridX"
       ]
@@ -5423,8 +5423,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biotech"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.568,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -5477,8 +5477,8 @@ window.STARTUP_THEMES_DATA = {
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.586,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -5548,7 +5548,7 @@ window.STARTUP_THEMES_DATA = {
         "Biotech"
       ],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.648,
+      "tech_depth_confidence": 0.916,
       "investor_ids": [
         "GridX",
         "The Ganesha Lab"
@@ -5667,8 +5667,8 @@ window.STARTUP_THEMES_DATA = {
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.622,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "hatch"
       ]
@@ -5731,8 +5731,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biotech"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.604,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -5925,7 +5925,7 @@ window.STARTUP_THEMES_DATA = {
       "market_label": "",
       "self_cats": [],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.624,
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -5980,8 +5980,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "AI / Data"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.604,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -6105,8 +6105,8 @@ window.STARTUP_THEMES_DATA = {
         "Biomanufacturing",
         "Biotech"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.622,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -6163,8 +6163,8 @@ window.STARTUP_THEMES_DATA = {
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.586,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "idb_lab"
       ]
@@ -6234,7 +6234,7 @@ window.STARTUP_THEMES_DATA = {
         "FoodTech"
       ],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.668,
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "plug_and_play"
       ]
@@ -6305,8 +6305,8 @@ window.STARTUP_THEMES_DATA = {
         "Ag Biologicals",
         "Biotech"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.604,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "GridX"
       ]
@@ -6366,8 +6366,8 @@ window.STARTUP_THEMES_DATA = {
         "Ag Biologicals",
         "Alt Proteins"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.556,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "kayyak_ventures"
       ]
@@ -6560,8 +6560,8 @@ window.STARTUP_THEMES_DATA = {
         "Alt Proteins",
         "FoodTech"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.604,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -6683,8 +6683,8 @@ window.STARTUP_THEMES_DATA = {
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.568,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -6740,8 +6740,8 @@ window.STARTUP_THEMES_DATA = {
         "Alt Proteins",
         "Precision Ferm"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.604,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "The Ganesha Lab"
       ]
@@ -6802,8 +6802,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "AgTech"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.586,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "endurance_28"
       ]
@@ -6866,8 +6866,8 @@ window.STARTUP_THEMES_DATA = {
         "AgTech",
         "FoodTech"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.568,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "lightjump_acquisition"
       ]
@@ -6930,8 +6930,8 @@ window.STARTUP_THEMES_DATA = {
         "SynBio",
         "AgTech"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.604,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -6990,8 +6990,8 @@ window.STARTUP_THEMES_DATA = {
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.586,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -7051,8 +7051,8 @@ window.STARTUP_THEMES_DATA = {
         "FoodTech",
         "Biotech"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.586,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -7112,8 +7112,8 @@ window.STARTUP_THEMES_DATA = {
         "NatureTech",
         "FoodTech"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.586,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -7166,8 +7166,8 @@ window.STARTUP_THEMES_DATA = {
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.586,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "fondo_alerce"
       ]
@@ -7299,8 +7299,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biotech"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.532,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -7363,8 +7363,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biotech"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.586,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.916,
       "investor_ids": [
         "GridX"
       ]
@@ -7429,7 +7429,7 @@ window.STARTUP_THEMES_DATA = {
         "Therapeutics"
       ],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.656,
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -7499,8 +7499,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biotech"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.61,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "GridX"
       ]
@@ -7564,8 +7564,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "market_label": "modular sustainable rare earth refining",
       "self_cats": [],
-      "tech_depth": "enabler",
-      "tech_depth_confidence": 0.645,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "GridX"
       ]
@@ -8406,8 +8406,8 @@ window.STARTUP_THEMES_DATA = {
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.58,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "sosv"
       ]
@@ -8469,7 +8469,7 @@ window.STARTUP_THEMES_DATA = {
         "CleanTech"
       ],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.632,
+      "tech_depth_confidence": 0.883,
       "investor_ids": [
         "porsche_ag"
       ]
@@ -9011,8 +9011,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biomaterials"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.61,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "GridX"
       ]
@@ -9144,7 +9144,7 @@ window.STARTUP_THEMES_DATA = {
       "market_label": "",
       "self_cats": [],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.652,
+      "tech_depth_confidence": 0.92,
       "investor_ids": [
         "dila_capital",
         "electrifi",
@@ -9287,8 +9287,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biomaterials"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.562,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "claritas_capital",
         "front_row_fund"
@@ -9346,8 +9346,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biomaterials"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.58,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "btg_pactual"
       ]
@@ -9553,7 +9553,7 @@ window.STARTUP_THEMES_DATA = {
         "Biomaterials"
       ],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.64,
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -9614,7 +9614,7 @@ window.STARTUP_THEMES_DATA = {
       "market_label": "",
       "self_cats": [],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.64,
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -9675,7 +9675,7 @@ window.STARTUP_THEMES_DATA = {
       "market_label": "",
       "self_cats": [],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.64,
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -9728,8 +9728,8 @@ window.STARTUP_THEMES_DATA = {
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.544,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -9782,8 +9782,8 @@ window.STARTUP_THEMES_DATA = {
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.58,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "gef",
         "idb_invest"
@@ -9914,7 +9914,7 @@ window.STARTUP_THEMES_DATA = {
         "Biomaterials"
       ],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.64,
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -9970,8 +9970,8 @@ window.STARTUP_THEMES_DATA = {
         "SynBio",
         "Biotech"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.562,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "savia_ventures"
       ]
@@ -10030,8 +10030,8 @@ window.STARTUP_THEMES_DATA = {
         "AgTech",
         "FoodTech"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.58,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "savia_ventures"
       ]
@@ -10234,7 +10234,7 @@ window.STARTUP_THEMES_DATA = {
         "Biotech"
       ],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.64,
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -10297,7 +10297,7 @@ window.STARTUP_THEMES_DATA = {
         "Biomaterials"
       ],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.64,
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -10352,8 +10352,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biotech"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.58,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "savia_ventures"
       ]
@@ -10428,7 +10428,7 @@ window.STARTUP_THEMES_DATA = {
         "Biotech"
       ],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.62,
+      "tech_depth_confidence": 0.883,
       "investor_ids": [
         "AIR Capital"
       ]
@@ -10498,8 +10498,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "market_label": "circular economy waste management platform",
       "self_cats": [],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.61,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.892,
       "investor_ids": [
         "Antom"
       ]
@@ -10554,8 +10554,8 @@ window.STARTUP_THEMES_DATA = {
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.592,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.883,
       "investor_ids": [
         "cuna_del_mar"
       ]
@@ -10624,8 +10624,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "CleanTech"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.55,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.883,
       "investor_ids": [
         "AIR Capital"
       ]
@@ -10691,8 +10691,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "market_label": "regenerative seaweed cultivation for marine restoration",
       "self_cats": [],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.61,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.883,
       "investor_ids": [
         "Antom"
       ]
@@ -10759,8 +10759,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biomaterials"
       ],
-      "tech_depth": "enabler",
-      "tech_depth_confidence": 0.645,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.905,
       "investor_ids": [
         "kamay_ventures"
       ]
@@ -10910,8 +10910,8 @@ window.STARTUP_THEMES_DATA = {
         "NatureTech",
         "FoodTech"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.568,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.883,
       "investor_ids": [
         "Antom",
         "glocal"
@@ -10977,7 +10977,7 @@ window.STARTUP_THEMES_DATA = {
       "market_label": "distributed solar, storage and e-mobility platform",
       "self_cats": [],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.62,
+      "tech_depth_confidence": 0.883,
       "investor_ids": [
         "kamay_ventures",
         "savia_ventures"
@@ -11050,7 +11050,7 @@ window.STARTUP_THEMES_DATA = {
         "CleanTech"
       ],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.62,
+      "tech_depth_confidence": 0.883,
       "investor_ids": [
         "DraperCygnus",
         "savia_ventures"
@@ -11116,8 +11116,8 @@ window.STARTUP_THEMES_DATA = {
         "Hardware / IoT",
         "Biotech"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.592,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -11659,8 +11659,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biotech"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.562,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "GridX"
       ]
@@ -12284,7 +12284,7 @@ window.STARTUP_THEMES_DATA = {
       "market_label": "",
       "self_cats": [],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.656,
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -12359,7 +12359,7 @@ window.STARTUP_THEMES_DATA = {
         "Biotech"
       ],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.636,
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "GridX"
       ]
@@ -12418,8 +12418,8 @@ window.STARTUP_THEMES_DATA = {
         "FoodTech",
         "Biotech"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.604,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "GridX"
       ]
@@ -12494,8 +12494,8 @@ window.STARTUP_THEMES_DATA = {
         "FoodTech",
         "Biotech"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.604,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "GridX"
       ]
@@ -12558,8 +12558,8 @@ window.STARTUP_THEMES_DATA = {
         "FoodTech",
         "Biotech"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.586,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "AIR Capital"
       ]
@@ -12715,8 +12715,8 @@ window.STARTUP_THEMES_DATA = {
         "FoodTech",
         "Biotech"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.622,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "CITES"
       ]
@@ -12793,7 +12793,7 @@ window.STARTUP_THEMES_DATA = {
         "FoodTech"
       ],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.648,
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "AIR Capital"
       ]
@@ -13006,8 +13006,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "market_label": "metabolic health functional ingredient platform",
       "self_cats": [],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.544,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "GridX"
       ]
@@ -13150,7 +13150,7 @@ window.STARTUP_THEMES_DATA = {
         "Biotech"
       ],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.636,
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "The Ganesha Lab"
       ]
@@ -13215,8 +13215,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "market_label": "AI copilot for retail waste and rotation management",
       "self_cats": [],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.538,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "the_yield_lab_latam"
       ]
@@ -13273,8 +13273,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "AgTech"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.604,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -13336,8 +13336,8 @@ window.STARTUP_THEMES_DATA = {
         "FoodTech",
         "Biotech"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.568,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "GridX"
       ]
@@ -13551,8 +13551,8 @@ window.STARTUP_THEMES_DATA = {
         "FoodTech",
         "Biotech"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.604,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "DraperCygnus",
         "zentynel"
@@ -13691,7 +13691,7 @@ window.STARTUP_THEMES_DATA = {
       "market_label": "",
       "self_cats": [],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.636,
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -13930,7 +13930,7 @@ window.STARTUP_THEMES_DATA = {
         "FoodTech"
       ],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.624,
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "GridX"
       ]
@@ -13985,8 +13985,8 @@ window.STARTUP_THEMES_DATA = {
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.604,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "savia_ventures"
       ]
@@ -14047,8 +14047,8 @@ window.STARTUP_THEMES_DATA = {
         "FoodTech",
         "Biotech"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.526,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -14101,8 +14101,8 @@ window.STARTUP_THEMES_DATA = {
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.604,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -14247,8 +14247,8 @@ window.STARTUP_THEMES_DATA = {
         "Ag Biologicals",
         "AgTech"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.586,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "GridX"
       ]
@@ -14464,7 +14464,7 @@ window.STARTUP_THEMES_DATA = {
         "Biotech"
       ],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.656,
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "grupo_insud"
       ]
@@ -14821,7 +14821,7 @@ window.STARTUP_THEMES_DATA = {
         "Therapeutics"
       ],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.644,
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "grupo_insud"
       ]
@@ -15097,7 +15097,7 @@ window.STARTUP_THEMES_DATA = {
         "Biotech"
       ],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.644,
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "grupo_insud"
       ]
@@ -15230,8 +15230,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "AI / Data"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.532,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -15437,7 +15437,7 @@ window.STARTUP_THEMES_DATA = {
       "market_label": "",
       "self_cats": [],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.644,
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "ecoa_capital",
         "mov_investimentos",
@@ -16123,7 +16123,7 @@ window.STARTUP_THEMES_DATA = {
       "market_label": "",
       "self_cats": [],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.62,
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -16304,7 +16304,7 @@ window.STARTUP_THEMES_DATA = {
       "market_label": "",
       "self_cats": [],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.632,
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -16441,8 +16441,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biotech"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.55,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -16512,8 +16512,8 @@ window.STARTUP_THEMES_DATA = {
         "AgTech",
         "Biotech"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.592,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "aceleradora_litoral"
       ]
@@ -16583,7 +16583,7 @@ window.STARTUP_THEMES_DATA = {
         "AgTech"
       ],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.672,
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "aceleradora_litoral"
       ]
@@ -16641,8 +16641,8 @@ window.STARTUP_THEMES_DATA = {
         "Diagnostics",
         "Biotech"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.604,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -16717,8 +16717,8 @@ window.STARTUP_THEMES_DATA = {
         "AgTech",
         "Biotech"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.526,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "AIR Capital",
         "GridX",
@@ -16871,8 +16871,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "AgTech"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.568,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "aceleradora_litoral"
       ]
@@ -16942,8 +16942,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Ag Biologicals"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.586,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "SF500"
       ]
@@ -17019,8 +17019,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "AgTech"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.586,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "AIR Capital",
         "GridX"
@@ -17163,7 +17163,7 @@ window.STARTUP_THEMES_DATA = {
       "market_label": "",
       "self_cats": [],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.64,
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -17224,7 +17224,7 @@ window.STARTUP_THEMES_DATA = {
       "market_label": "",
       "self_cats": [],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.64,
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -17285,7 +17285,7 @@ window.STARTUP_THEMES_DATA = {
       "market_label": "",
       "self_cats": [],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.64,
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -17346,7 +17346,7 @@ window.STARTUP_THEMES_DATA = {
       "market_label": "",
       "self_cats": [],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.64,
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "aurus_capital",
         "idb_lab"
@@ -17482,7 +17482,7 @@ window.STARTUP_THEMES_DATA = {
       "market_label": "",
       "self_cats": [],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.66,
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -17538,8 +17538,8 @@ window.STARTUP_THEMES_DATA = {
         "Therapeutics",
         "Diagnostics"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.544,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -17600,7 +17600,7 @@ window.STARTUP_THEMES_DATA = {
       "market_label": "",
       "self_cats": [],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.64,
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -17719,7 +17719,7 @@ window.STARTUP_THEMES_DATA = {
         "MedTech"
       ],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.632,
+      "tech_depth_confidence": 0.909,
       "investor_ids": []
     },
     {
@@ -17780,7 +17780,7 @@ window.STARTUP_THEMES_DATA = {
       "market_label": "",
       "self_cats": [],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.64,
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -17921,8 +17921,8 @@ window.STARTUP_THEMES_DATA = {
         "AgTech",
         "Biotech"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.604,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "GridX",
         "SOSV_IndieBio",
@@ -17989,8 +17989,8 @@ window.STARTUP_THEMES_DATA = {
         "AgTech",
         "Biotech"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.604,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "union_acquisition_corp"
       ]
@@ -18190,7 +18190,7 @@ window.STARTUP_THEMES_DATA = {
       "market_label": "",
       "self_cats": [],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.632,
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "AIR Capital",
         "astanor",
@@ -18257,8 +18257,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "AgTech"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.622,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -18322,8 +18322,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "AgTech"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.622,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "Antom",
         "SF500",
@@ -18382,8 +18382,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Diagnostics"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.568,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -18438,8 +18438,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "SynBio"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.604,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -18500,8 +18500,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Diagnostics"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.604,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -18561,8 +18561,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Ag Biologicals"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.586,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "SF500"
       ]
@@ -18625,8 +18625,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Ag Biologicals"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.604,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "sosv"
       ]
@@ -18695,7 +18695,7 @@ window.STARTUP_THEMES_DATA = {
         "AgTech"
       ],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.624,
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "GridX"
       ]
@@ -18849,7 +18849,7 @@ window.STARTUP_THEMES_DATA = {
         "Biotech"
       ],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.624,
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "The Ganesha Lab",
         "eatable_adventures"
@@ -18914,8 +18914,8 @@ window.STARTUP_THEMES_DATA = {
         "Ag Biologicals",
         "Biotech"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.604,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "GridX"
       ]
@@ -18974,8 +18974,8 @@ window.STARTUP_THEMES_DATA = {
         "Precision Ag",
         "AI / Data"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.568,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -19044,7 +19044,7 @@ window.STARTUP_THEMES_DATA = {
         "AgTech"
       ],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.624,
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "SF500",
         "The Ganesha Lab",
@@ -19109,8 +19109,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Ag Biologicals"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.604,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.883,
       "investor_ids": []
     },
     {
@@ -19169,8 +19169,8 @@ window.STARTUP_THEMES_DATA = {
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.586,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.883,
       "investor_ids": []
     },
     {
@@ -19225,8 +19225,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Ag Biologicals"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.604,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.883,
       "investor_ids": [
         "sumitomo_corp"
       ]
@@ -19287,8 +19287,8 @@ window.STARTUP_THEMES_DATA = {
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.55,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.883,
       "investor_ids": []
     },
     {
@@ -19341,8 +19341,8 @@ window.STARTUP_THEMES_DATA = {
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.622,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.883,
       "investor_ids": []
     },
     {
@@ -19398,8 +19398,8 @@ window.STARTUP_THEMES_DATA = {
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.604,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.883,
       "investor_ids": [
         "The Ganesha Lab"
       ]
@@ -19525,8 +19525,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Ag Biologicals"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.55,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.883,
       "investor_ids": []
     },
     {
@@ -19587,8 +19587,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Ag Biologicals"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.586,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.883,
       "investor_ids": []
     },
     {
@@ -19657,8 +19657,8 @@ window.STARTUP_THEMES_DATA = {
         "NatureTech",
         "Biotech"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.598,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.74,
       "investor_ids": [
         "GridX"
       ]
@@ -19734,8 +19734,8 @@ window.STARTUP_THEMES_DATA = {
         "AgTech",
         "Hardware / IoT"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.598,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.74,
       "investor_ids": []
     },
     {
@@ -19811,8 +19811,8 @@ window.STARTUP_THEMES_DATA = {
         "NatureTech",
         "Biotech"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.55,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.74,
       "investor_ids": [
         "arauco_ventures"
       ]
@@ -19881,7 +19881,7 @@ window.STARTUP_THEMES_DATA = {
         "AI / Data"
       ],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.62,
+      "tech_depth_confidence": 0.74,
       "investor_ids": []
     },
     {
@@ -19953,8 +19953,8 @@ window.STARTUP_THEMES_DATA = {
         "NatureTech",
         "AI / Data"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.598,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.74,
       "investor_ids": [
         "AIR Capital",
         "Antom",
@@ -20029,8 +20029,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biotech"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.55,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.74,
       "investor_ids": [
         "DragonesVP",
         "DraperCygnus",
@@ -20099,8 +20099,8 @@ window.STARTUP_THEMES_DATA = {
         "AI / Data",
         "Hardware / IoT"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.58,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.873,
       "investor_ids": []
     },
     {
@@ -20167,8 +20167,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "NatureTech"
       ],
-      "tech_depth": "deep",
-      "tech_depth_confidence": 0.62,
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.74,
       "investor_ids": [
         "kptl"
       ]
@@ -20239,8 +20239,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "NatureTech"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.55,
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.74,
       "investor_ids": [
         "kptl"
       ]
@@ -20317,7 +20317,7 @@ window.STARTUP_THEMES_DATA = {
         "Biotech"
       ],
       "tech_depth": "applied",
-      "tech_depth_confidence": 0.55,
+      "tech_depth_confidence": 0.74,
       "investor_ids": [
         "the_yield_lab_latam"
       ]
@@ -20388,7 +20388,7 @@ window.STARTUP_THEMES_DATA = {
         "Biotech"
       ],
       "tech_depth": "applied",
-      "tech_depth_confidence": 0.58,
+      "tech_depth_confidence": 0.74,
       "investor_ids": [
         "kaszek",
         "lowercarbon_capital",
@@ -20459,8 +20459,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "NatureTech"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.58,
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.74,
       "investor_ids": [
         "sp_ventures"
       ]
@@ -20533,7 +20533,7 @@ window.STARTUP_THEMES_DATA = {
         "FinTech"
       ],
       "tech_depth": "applied",
-      "tech_depth_confidence": 0.55,
+      "tech_depth_confidence": 0.74,
       "investor_ids": [
         "Antom"
       ]
@@ -20602,7 +20602,7 @@ window.STARTUP_THEMES_DATA = {
         "Biotech"
       ],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.644,
+      "tech_depth_confidence": 0.874,
       "investor_ids": [
         "SF500"
       ]
@@ -20675,8 +20675,8 @@ window.STARTUP_THEMES_DATA = {
         "NatureTech",
         "FinTech"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.55,
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.74,
       "investor_ids": []
     },
     {
@@ -20745,8 +20745,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biotech"
       ],
-      "tech_depth": "deep",
-      "tech_depth_confidence": 0.62,
+      "tech_depth": "applied",
+      "tech_depth_confidence": 0.74,
       "investor_ids": [
         "the_yield_lab_latam"
       ]
@@ -20966,7 +20966,7 @@ window.STARTUP_THEMES_DATA = {
         "Biotech"
       ],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.66,
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "CITES"
       ]
@@ -21355,7 +21355,7 @@ window.STARTUP_THEMES_DATA = {
         "Biotech"
       ],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.672,
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "The Ganesha Lab"
       ]
@@ -21697,7 +21697,7 @@ window.STARTUP_THEMES_DATA = {
         "Biotech"
       ],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.668,
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -21774,7 +21774,7 @@ window.STARTUP_THEMES_DATA = {
         "Biotech"
       ],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.672,
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "The Ganesha Lab"
       ]
@@ -22501,7 +22501,7 @@ window.STARTUP_THEMES_DATA = {
         "Therapeutics"
       ],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.644,
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "fen_ventures"
       ]
@@ -22622,7 +22622,7 @@ window.STARTUP_THEMES_DATA = {
         "Biotech"
       ],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.636,
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -22678,7 +22678,7 @@ window.STARTUP_THEMES_DATA = {
         "Therapeutics"
       ],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.632,
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -22871,8 +22871,8 @@ window.STARTUP_THEMES_DATA = {
         "Therapeutics",
         "AI / Data"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.532,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -23328,7 +23328,7 @@ window.STARTUP_THEMES_DATA = {
       "market_label": "",
       "self_cats": [],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.632,
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -23594,7 +23594,7 @@ window.STARTUP_THEMES_DATA = {
         "Biotech"
       ],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.644,
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -23969,7 +23969,7 @@ window.STARTUP_THEMES_DATA = {
         "Therapeutics"
       ],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.644,
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -24026,7 +24026,7 @@ window.STARTUP_THEMES_DATA = {
         "Biomaterials"
       ],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.632,
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "CITES"
       ]
@@ -24465,7 +24465,7 @@ window.STARTUP_THEMES_DATA = {
         "Therapeutics"
       ],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.62,
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "SOSV_IndieBio"
       ]
@@ -25773,8 +25773,8 @@ window.STARTUP_THEMES_DATA = {
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.622,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "global_fund_coral_reefs"
       ]
@@ -25919,7 +25919,7 @@ window.STARTUP_THEMES_DATA = {
         "Biotech"
       ],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.632,
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -25985,8 +25985,8 @@ window.STARTUP_THEMES_DATA = {
         "Ag Biologicals",
         "Biotech"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.586,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "GridX"
       ]
@@ -26041,8 +26041,8 @@ window.STARTUP_THEMES_DATA = {
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.622,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -26105,8 +26105,8 @@ window.STARTUP_THEMES_DATA = {
         "AgTech",
         "Biotech"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.532,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -26168,8 +26168,8 @@ window.STARTUP_THEMES_DATA = {
         "AgTech",
         "Biotech"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.586,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -26222,8 +26222,8 @@ window.STARTUP_THEMES_DATA = {
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.586,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -26281,8 +26281,8 @@ window.STARTUP_THEMES_DATA = {
       "scale_tags": [],
       "market_label": "",
       "self_cats": [],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.568,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "The Ganesha Lab"
       ]
@@ -26363,7 +26363,7 @@ window.STARTUP_THEMES_DATA = {
         "Biotech"
       ],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.628,
+      "tech_depth_confidence": 0.898,
       "investor_ids": [
         "The Ganesha Lab"
       ]
@@ -26429,8 +26429,8 @@ window.STARTUP_THEMES_DATA = {
         "Ag Biologicals",
         "Biotech"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.604,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "sp_ventures"
       ]
@@ -26496,8 +26496,8 @@ window.STARTUP_THEMES_DATA = {
         "Ag Biologicals",
         "Biotech"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.586,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "sp_ventures"
       ]
@@ -26554,8 +26554,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Ag Biologicals"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.622,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "sp_ventures"
       ]
@@ -26630,8 +26630,8 @@ window.STARTUP_THEMES_DATA = {
         "AgTech",
         "Biotech"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.532,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -26699,8 +26699,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biotech"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.604,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "angra_partners",
         "sp_ventures"
@@ -26773,8 +26773,8 @@ window.STARTUP_THEMES_DATA = {
         "AgTech",
         "Biotech"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.544,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "aqua_capital",
         "sp_ventures"
@@ -26917,8 +26917,8 @@ window.STARTUP_THEMES_DATA = {
         "Ag Biologicals",
         "Biomanufacturing"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.586,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -27535,8 +27535,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Biotech"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.604,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.883,
       "investor_ids": [
         "sp_ventures"
       ]
@@ -27680,8 +27680,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "AI / Data"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.526,
+      "tech_depth": "deep",
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "sp_ventures"
       ]
@@ -27832,7 +27832,7 @@ window.STARTUP_THEMES_DATA = {
         "Biotech"
       ],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.66,
+      "tech_depth_confidence": 0.908,
       "investor_ids": [
         "GridX"
       ]
@@ -28069,7 +28069,7 @@ window.STARTUP_THEMES_DATA = {
         "Biotech"
       ],
       "tech_depth": "deep",
-      "tech_depth_confidence": 0.648,
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "GridX",
         "eatable_adventures"
@@ -28425,7 +28425,7 @@ window.STARTUP_THEMES_DATA = {
         "Precision Ag"
       ],
       "tech_depth": "enabler",
-      "tech_depth_confidence": 0.63,
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "sp_ventures"
       ]
@@ -28993,8 +28993,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "AgTech"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.598,
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "inventure"
       ]
@@ -29182,8 +29182,8 @@ window.STARTUP_THEMES_DATA = {
         "MedTech",
         "AI / Data"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.55,
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "sp_ventures"
       ]
@@ -29316,7 +29316,7 @@ window.STARTUP_THEMES_DATA = {
         "AI / Data"
       ],
       "tech_depth": "enabler",
-      "tech_depth_confidence": 0.62,
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "glocal"
       ]
@@ -29387,7 +29387,7 @@ window.STARTUP_THEMES_DATA = {
         "AgTech"
       ],
       "tech_depth": "enabler",
-      "tech_depth_confidence": 0.63,
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "newtopia_vc"
       ]
@@ -29456,7 +29456,7 @@ window.STARTUP_THEMES_DATA = {
         "SaaS / Platform"
       ],
       "tech_depth": "enabler",
-      "tech_depth_confidence": 0.655,
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "inventure",
         "pampa_start",
@@ -29527,8 +29527,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "FoodTech"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.556,
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "sp_ventures"
       ]
@@ -29673,8 +29673,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "Hardware / IoT"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.592,
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "sp_ventures"
       ]
@@ -29801,8 +29801,8 @@ window.STARTUP_THEMES_DATA = {
         "Precision Ag",
         "Hardware / IoT"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.55,
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -29859,7 +29859,7 @@ window.STARTUP_THEMES_DATA = {
         "Hardware / IoT"
       ],
       "tech_depth": "enabler",
-      "tech_depth_confidence": 0.62,
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "chileglobal_ventures"
       ]
@@ -29998,7 +29998,7 @@ window.STARTUP_THEMES_DATA = {
         "Hardware / IoT"
       ],
       "tech_depth": "enabler",
-      "tech_depth_confidence": 0.67,
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "AIR Capital"
       ]
@@ -30065,7 +30065,7 @@ window.STARTUP_THEMES_DATA = {
       "market_label": "unified API and data infrastructure for food and agriculture",
       "self_cats": [],
       "tech_depth": "enabler",
-      "tech_depth_confidence": 0.63,
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "sp_ventures"
       ]
@@ -30201,8 +30201,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "market_label": "carbon-neutral organic dairy brand",
       "self_cats": [],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.586,
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -30265,8 +30265,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "FoodTech"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.61,
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "kamay_ventures"
       ]
@@ -30338,7 +30338,7 @@ window.STARTUP_THEMES_DATA = {
         "AgTech"
       ],
       "tech_depth": "enabler",
-      "tech_depth_confidence": 0.645,
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "sp_ventures"
       ]
@@ -30410,7 +30410,7 @@ window.STARTUP_THEMES_DATA = {
         "Hardware / IoT"
       ],
       "tech_depth": "enabler",
-      "tech_depth_confidence": 0.63,
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -30475,8 +30475,8 @@ window.STARTUP_THEMES_DATA = {
       "self_cats": [
         "AgTech"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.526,
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "barn_investimentos"
       ]
@@ -30616,7 +30616,7 @@ window.STARTUP_THEMES_DATA = {
         "Hardware / IoT"
       ],
       "tech_depth": "enabler",
-      "tech_depth_confidence": 0.67,
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "inventure",
         "kamay_ventures"
@@ -30689,7 +30689,7 @@ window.STARTUP_THEMES_DATA = {
         "SaaS / Platform"
       ],
       "tech_depth": "enabler",
-      "tech_depth_confidence": 0.64,
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -30753,7 +30753,7 @@ window.STARTUP_THEMES_DATA = {
         "AgTech"
       ],
       "tech_depth": "enabler",
-      "tech_depth_confidence": 0.63,
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -30816,7 +30816,7 @@ window.STARTUP_THEMES_DATA = {
         "AgTech"
       ],
       "tech_depth": "enabler",
-      "tech_depth_confidence": 0.655,
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "pampa_start"
       ]
@@ -30951,7 +30951,7 @@ window.STARTUP_THEMES_DATA = {
         "AgTech"
       ],
       "tech_depth": "enabler",
-      "tech_depth_confidence": 0.63,
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "kptl"
       ]
@@ -31087,7 +31087,7 @@ window.STARTUP_THEMES_DATA = {
         "AgTech"
       ],
       "tech_depth": "enabler",
-      "tech_depth_confidence": 0.63,
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "the_yield_lab_latam"
       ]
@@ -31146,7 +31146,7 @@ window.STARTUP_THEMES_DATA = {
         "SaaS / Platform"
       ],
       "tech_depth": "enabler",
-      "tech_depth_confidence": 0.62,
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "barn_investimentos",
         "monashees",
@@ -31211,7 +31211,7 @@ window.STARTUP_THEMES_DATA = {
         "AI / Data"
       ],
       "tech_depth": "enabler",
-      "tech_depth_confidence": 0.67,
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -31279,7 +31279,7 @@ window.STARTUP_THEMES_DATA = {
         "AgTech"
       ],
       "tech_depth": "enabler",
-      "tech_depth_confidence": 0.63,
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "kptl"
       ]
@@ -31349,7 +31349,7 @@ window.STARTUP_THEMES_DATA = {
         "Hardware / IoT"
       ],
       "tech_depth": "enabler",
-      "tech_depth_confidence": 0.63,
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "the_yield_lab_latam"
       ]
@@ -31422,7 +31422,7 @@ window.STARTUP_THEMES_DATA = {
         "AgTech"
       ],
       "tech_depth": "enabler",
-      "tech_depth_confidence": 0.645,
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "The Ganesha Lab"
       ]
@@ -31562,8 +31562,8 @@ window.STARTUP_THEMES_DATA = {
         "Hardware / IoT",
         "Biotech"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.544,
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "the_yield_lab_latam"
       ]
@@ -31694,7 +31694,7 @@ window.STARTUP_THEMES_DATA = {
         "Hardware / IoT"
       ],
       "tech_depth": "enabler",
-      "tech_depth_confidence": 0.62,
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "morningside_group"
       ]
@@ -31765,7 +31765,7 @@ window.STARTUP_THEMES_DATA = {
         "AgTech"
       ],
       "tech_depth": "enabler",
-      "tech_depth_confidence": 0.63,
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "inventure",
         "sp_ventures"
@@ -32127,7 +32127,7 @@ window.STARTUP_THEMES_DATA = {
       "market_label": "fresh-produce exporter trade-finance platform",
       "self_cats": [],
       "tech_depth": "enabler",
-      "tech_depth_confidence": 0.655,
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "sp_ventures",
         "the_yield_lab_latam"
@@ -32272,8 +32272,8 @@ window.STARTUP_THEMES_DATA = {
         "FinTech",
         "Biotech"
       ],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.538,
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.883,
       "investor_ids": [
         "kptl",
         "the_yield_lab_latam"
@@ -32487,7 +32487,7 @@ window.STARTUP_THEMES_DATA = {
         "Biotech"
       ],
       "tech_depth": "enabler",
-      "tech_depth_confidence": 0.655,
+      "tech_depth_confidence": 0.883,
       "investor_ids": [
         "DraperCygnus",
         "inventure"
@@ -32843,7 +32843,7 @@ window.STARTUP_THEMES_DATA = {
         "FoodTech"
       ],
       "tech_depth": "enabler",
-      "tech_depth_confidence": 0.67,
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "Antom",
         "glocal"
@@ -32908,7 +32908,7 @@ window.STARTUP_THEMES_DATA = {
         "Hardware / IoT"
       ],
       "tech_depth": "enabler",
-      "tech_depth_confidence": 0.67,
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "kptl",
         "the_yield_lab_latam"
@@ -32983,7 +32983,7 @@ window.STARTUP_THEMES_DATA = {
         "AgTech"
       ],
       "tech_depth": "enabler",
-      "tech_depth_confidence": 0.655,
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "Antom",
         "glocal",
@@ -33064,7 +33064,7 @@ window.STARTUP_THEMES_DATA = {
         "AgTech"
       ],
       "tech_depth": "enabler",
-      "tech_depth_confidence": 0.655,
+      "tech_depth_confidence": 0.95,
       "investor_ids": []
     },
     {
@@ -33130,7 +33130,7 @@ window.STARTUP_THEMES_DATA = {
       "market_label": "agribusiness transparency and compliance platform",
       "self_cats": [],
       "tech_depth": "enabler",
-      "tech_depth_confidence": 0.655,
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "the_yield_lab_latam"
       ]
@@ -33201,8 +33201,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "market_label": "traceability and sustainability infrastructure",
       "self_cats": [],
-      "tech_depth": "applied",
-      "tech_depth_confidence": 0.58,
+      "tech_depth": "enabler",
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "inventure"
       ]
@@ -33331,7 +33331,7 @@ window.STARTUP_THEMES_DATA = {
       "market_label": "water-risk and stewardship intelligence",
       "self_cats": [],
       "tech_depth": "enabler",
-      "tech_depth_confidence": 0.62,
+      "tech_depth_confidence": 0.95,
       "investor_ids": [
         "newtopia_vc"
       ]
