@@ -51,15 +51,17 @@
     "Bioinputs & Crop Resilience":            "#2A7A42",
     "Nature & Ecosystem Tech":               "#127A6E",
     "Farm Intelligence":                      "#2E4E8C",
-    "Biomaterials & Circular Economy":        "#8B6D14",
-    "Biomanufacturing & Fermentation Economy":"#6B8C3A",
+    "Biomaterials & Circular Economy":          "#8B6D14",
+    "Biomanufacturing & Platform Technologies":  "#6B8C3A",
+    // legacy alias — keeps old data working during transition
+    "Biomanufacturing & Fermentation Economy":   "#6B8C3A",
   };
   // Orden canónico del selector (mismo que startup-themes.html)
   const THEME_ORDER = [
     "Therapeutics","Diagnostics & Health Access","Food Systems & Alt Proteins",
     "Bioinputs & Crop Resilience","Nature & Ecosystem Tech",
     "Farm Intelligence","Biomaterials & Circular Economy",
-    "Biomanufacturing & Fermentation Economy",
+    "Biomanufacturing & Platform Technologies",
   ];
   // Mapa de taxonomía vieja → editorial bio-theme
   const LEGACY_THEME_MAP = {
@@ -70,7 +72,7 @@
     "precision agriculture and resource intelligence": "Farm Intelligence",
     "climate, energy and resource systems":      "Nature & Ecosystem Tech",
     "biobased chemistry and advanced materials": "Biomaterials & Circular Economy",
-    "computational biology and scientific software": "Biomanufacturing & Fermentation Economy",
+    "computational biology and scientific software": "Biomanufacturing & Platform Technologies",
   };
   const SHARED_TAXONOMY_STATE_KEY = "bioVcLatam.activeSemanticTaxonomy";
   const DYNAMIC_THEME_PALETTE = [

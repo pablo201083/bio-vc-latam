@@ -661,24 +661,28 @@ document.addEventListener('DOMContentLoaded', function(){
 
   // ── Palettes ──────────────────────────────────────────────────────────
   const THEME_PAL = {
-    "Therapeutics":                            "#7033BC",
-    "Diagnostics & Health Access":             "#1A6DB5",
-    "Food Systems & Alt Proteins":             "#C25A2A",
-    "Bioinputs & Crop Resilience":             "#2A7A42",
-    "Nature & Ecosystem Tech":                 "#127A6E",
-    "Farm Intelligence":                       "#2E4E8C",
-    "Biomaterials & Circular Economy":         "#8B6D14",
-    "Biomanufacturing & Fermentation Economy": "#6B8C3A",
+    "Therapeutics":                              "#7033BC",
+    "Diagnostics & Health Access":               "#1A6DB5",
+    "Food Systems & Alt Proteins":               "#C25A2A",
+    "Bioinputs & Crop Resilience":               "#2A7A42",
+    "Nature & Ecosystem Tech":                   "#127A6E",
+    "Farm Intelligence":                         "#2E4E8C",
+    "Biomaterials & Circular Economy":           "#8B6D14",
+    "Biomanufacturing & Platform Technologies":  "#6B8C3A",
+    // legacy alias — keeps old data working during transition
+    "Biomanufacturing & Fermentation Economy":   "#6B8C3A",
   };
   const THEME_SHORT = {
-    "Therapeutics":                            "Therapeutics",
-    "Diagnostics & Health Access":             "Diagnostics",
-    "Food Systems & Alt Proteins":             "Food Systems",
-    "Bioinputs & Crop Resilience":             "Bioinputs",
-    "Nature & Ecosystem Tech":                 "Nature Tech",
-    "Farm Intelligence":                       "Farm Intel",
-    "Biomaterials & Circular Economy":         "Biomaterials",
-    "Biomanufacturing & Fermentation Economy": "Biomanufacturing",
+    "Therapeutics":                              "Therapeutics",
+    "Diagnostics & Health Access":               "Diagnostics",
+    "Food Systems & Alt Proteins":               "Food Systems",
+    "Bioinputs & Crop Resilience":               "Bioinputs",
+    "Nature & Ecosystem Tech":                   "Nature Tech",
+    "Farm Intelligence":                         "Farm Intel",
+    "Biomaterials & Circular Economy":           "Biomaterials",
+    "Biomanufacturing & Platform Technologies":  "Biomanufacturing",
+    // legacy alias
+    "Biomanufacturing & Fermentation Economy":   "Biomanufacturing",
   };
   const THEME_ORDER = Object.keys(THEME_PAL);
   const FLAG_MAP = {

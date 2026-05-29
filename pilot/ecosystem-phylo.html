@@ -1,0 +1,1051 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Árbol Evolutivo — BIO LATAM</title>
+  <link rel="stylesheet" href="./styles.css?v=20260513">
+  <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+  <style>
+    body { overflow: hidden; }
+    .phylo-shell {
+      display: grid;
+      grid-template-rows: auto 1fr;
+      height: calc(100vh - 52px);
+    }
+    .phylo-toolbar {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 9px 20px;
+      border-bottom: 1px solid var(--line);
+      background: rgba(255,255,255,0.96);
+      backdrop-filter: blur(6px);
+      flex-wrap: wrap;
+      z-index: 10;
+    }
+    .phylo-body {
+      display: grid;
+      grid-template-columns: 1fr 296px;
+      overflow: hidden;
+    }
+    .phylo-canvas-wrap {
+      position: relative;
+      overflow: hidden;
+      background: #FAFAF8;
+    }
+    #phylo-svg { width: 100%; height: 100%; display: block; }
+
+    /* ── Toggle ── */
+    .layout-toggle {
+      display: flex;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      overflow: hidden;
+      background: #f4f4f0;
+      flex-shrink: 0;
+    }
+    .layout-btn {
+      padding: 5px 13px;
+      font-size: 0.81rem;
+      font-weight: 600;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      color: var(--muted);
+      transition: all 0.18s;
+      border-radius: 20px;
+      white-space: nowrap;
+    }
+    .layout-btn.active { background: var(--text); color: #fff; }
+
+    /* ── Filter pills ── */
+    .filter-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 3px 10px;
+      border-radius: 20px;
+      border: 1.5px solid transparent;
+      font-size: 0.76rem;
+      font-weight: 600;
+      cursor: pointer;
+      opacity: 0.45;
+      transition: opacity 0.15s, border-color 0.15s;
+      white-space: nowrap;
+    }
+    .filter-pill.active { opacity: 1; border-color: currentColor; }
+    .filter-pill .dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
+
+    /* ── Stage legend ── */
+    .stage-legend { display: flex; gap: 9px; align-items: center; flex-wrap: wrap; }
+    .stage-swatch { display: flex; align-items: center; gap: 4px; font-size: 0.7rem; color: var(--muted); white-space: nowrap; }
+    .stage-swatch span { width: 9px; height: 9px; border-radius: 50%; display: inline-block; }
+
+    /* ── Stats ── */
+    .stats-strip { display: flex; gap: 5px; align-items: center; margin-left: auto; font-size: 0.74rem; color: var(--muted); }
+    .stats-strip strong { color: var(--text); font-weight: 700; }
+
+    /* ── Detail panel ── */
+    .phylo-detail {
+      border-left: 1px solid var(--line);
+      background: #fff;
+      padding: 18px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .detail-empty { color: var(--muted); font-size: 0.84rem; text-align: center; padding-top: 60px; line-height: 1.6; }
+    .detail-badge { display: inline-flex; align-items: center; gap: 5px; padding: 3px 10px; border-radius: 20px; font-size: 0.73rem; font-weight: 700; color: #fff; }
+    .detail-name { font-size: 1.1rem; font-weight: 800; line-height: 1.2; letter-spacing: -0.02em; }
+    .detail-sub { font-size: 0.78rem; color: var(--muted); }
+    .detail-row { display: flex; justify-content: space-between; align-items: baseline; font-size: 0.8rem; padding: 5px 0; border-bottom: 1px solid var(--line); }
+    .detail-row .k { color: var(--muted); }
+    .detail-row .v { font-weight: 600; text-align: right; max-width: 60%; font-size: 0.78rem; }
+    .detail-summary { font-size: 0.79rem; line-height: 1.55; color: #444; }
+    .stage-badge { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 0.71rem; font-weight: 700; color: #fff; }
+    .detail-link { font-size: 0.78rem; color: var(--accent); text-decoration: none; }
+    .detail-link:hover { text-decoration: underline; }
+
+    /* ── Semantic axis legend ── */
+    .axis-legend {
+      position: absolute;
+      bottom: 56px;
+      left: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      pointer-events: none;
+    }
+    .axis-legend-item { display: flex; align-items: center; gap: 6px; font-size: 0.7rem; color: #999; }
+    .axis-legend-item span { width: 24px; height: 1px; border-top: 1px dashed #ccc; }
+
+    /* ── Zoom controls ── */
+    .zoom-btns { position: absolute; bottom: 16px; right: 16px; display: flex; flex-direction: column; gap: 4px; z-index: 5; }
+    .zoom-btn { width: 28px; height: 28px; border: 1px solid var(--line); border-radius: 7px; background: rgba(255,255,255,0.92); font-size: 1rem; cursor: pointer; display: flex; align-items: center; justify-content: center; box-shadow: 0 1px 3px rgba(0,0,0,0.07); }
+    .zoom-btn:hover { background: #f0f0ec; }
+
+    /* ── Tooltip ── */
+    #phylo-tip { position: fixed; background: rgba(20,20,18,0.93); color: #fff; border-radius: 10px; padding: 9px 13px; font-size: 0.77rem; pointer-events: none; z-index: 9999; max-width: 220px; line-height: 1.45; opacity: 0; transition: opacity 0.1s; }
+    #phylo-tip .tip-name { font-weight: 700; font-size: 0.84rem; margin-bottom: 3px; }
+    #phylo-tip .tip-row { color: #bbb; }
+    #phylo-tip .tip-row span { color: #fff; font-weight: 600; }
+
+    /* ── Loading ── */
+    .loading-overlay { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; background: #FAFAF8; font-size: 0.9rem; color: var(--muted); z-index: 20; }
+  </style>
+</head>
+<body>
+
+<nav class="topbar" style="position:sticky;top:0;z-index:100">
+  <a href="index.html" class="topbar-brand">BIO LATAM</a>
+  <div class="topbar-links">
+    <a href="startup-themes.html">Mapa</a>
+    <a href="ecosystem-graph.html">Grafo</a>
+    <a href="capital-atlas.html">Capital</a>
+    <a href="ecosystem-phylo.html" class="active">Árbol Evolutivo</a>
+    <a href="quality-tracker.html">Calidad</a>
+  </div>
+</nav>
+
+<div class="phylo-shell">
+  <div class="phylo-toolbar">
+    <div class="layout-toggle">
+      <button class="layout-btn" id="btn-sunburst">☀ Sunburst</button>
+      <button class="layout-btn" id="btn-dendro">⌾ Semántico</button>
+      <button class="layout-btn active" id="btn-phylo">⌿ Filogenia</button>
+    </div>
+    <div id="theme-pills" style="display:flex;gap:5px;flex-wrap:wrap;"></div>
+    <div class="stage-legend" id="stage-legend"></div>
+    <div class="stats-strip" id="stats-strip"></div>
+  </div>
+
+  <div class="phylo-body">
+    <div class="phylo-canvas-wrap" id="canvas-wrap">
+      <div class="loading-overlay" id="loading">Construyendo filogenia semántica…</div>
+      <svg id="phylo-svg"></svg>
+
+      <div class="zoom-btns">
+        <button class="zoom-btn" id="zoom-in">+</button>
+        <button class="zoom-btn" id="zoom-fit">⊡</button>
+        <button class="zoom-btn" id="zoom-out">−</button>
+      </div>
+    </div>
+
+    <div class="phylo-detail" id="detail-panel">
+      <div class="detail-empty" id="detail-empty">
+        Hacé click en cualquier startup<br>para ver su perfil completo
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="phylo-tip"></div>
+
+<script src="./startup-themes-data.js"></script>
+<script src="./phylo-tree-data.js"></script>
+<script>
+/* ════════════════════════════════════════════════════════════════════
+   BIO LATAM — Árbol Evolutivo Semántico
+   Layout: posición angular = ángulo UMAP desde centroide global
+           radio de hojas  = distancia semántica desde centroide global
+   ════════════════════════════════════════════════════════════════════ */
+
+/* ── Paleta ── */
+const THEME_PAL = {
+  "Therapeutics":                             "#7033BC",
+  "Diagnostics & Health Access":              "#1A6DB5",
+  "Food Systems & Alt Proteins":              "#C25A2A",
+  "Bioinputs & Crop Resilience":              "#2A7A42",
+  "Nature & Ecosystem Tech":                  "#127A6E",
+  "Farm Intelligence":                        "#2E4E8C",
+  "Biomaterials & Circular Economy":          "#8B6D14",
+  "Biomanufacturing & Platform Technologies": "#6B8C3A",
+  "Biomanufacturing & Fermentation Economy":  "#6B8C3A",
+};
+const THEME_SHORT = {
+  "Therapeutics":                             "Terapéutica",
+  "Diagnostics & Health Access":              "Diagnóstico",
+  "Food Systems & Alt Proteins":              "Alimentos",
+  "Bioinputs & Crop Resilience":              "Bioinsumos",
+  "Nature & Ecosystem Tech":                  "Nature Tech",
+  "Farm Intelligence":                        "Farm Intel",
+  "Biomaterials & Circular Economy":          "Biomateriales",
+  "Biomanufacturing & Platform Technologies": "Biomanufacturing",
+  "Biomanufacturing & Fermentation Economy":  "Biomanufacturing",
+};
+const THEME_SHORT4 = {   // ≤4 chars para nodo interno
+  "Therapeutics":                             "Ter.",
+  "Diagnostics & Health Access":              "Diag",
+  "Food Systems & Alt Proteins":              "Food",
+  "Bioinputs & Crop Resilience":              "Bio+",
+  "Nature & Ecosystem Tech":                  "Nat.",
+  "Farm Intelligence":                        "Farm",
+  "Biomaterials & Circular Economy":          "Mat.",
+  "Biomanufacturing & Platform Technologies": "Mfg.",
+  "Biomanufacturing & Fermentation Economy":  "Mfg.",
+};
+
+const STAGE_PAL = {
+  "pre-seed":   "#CBD5E1",
+  "seed":       "#93C5FD",
+  "accelerator":"#67E8F9",
+  "series-a":   "#34D399",
+  "series-b":   "#10B981",
+  "series-c":   "#047857",
+  "series-c+":  "#064E3B",
+  "growth":     "#F59E0B",
+  "unknown":    "#E5E7EB",
+};
+const STAGE_ORDER = ["pre-seed","seed","accelerator","series-a","series-b","series-c","series-c+","growth"];
+const STAGE_LABEL = {
+  "pre-seed":"Pre-seed","seed":"Seed","accelerator":"Aceleradora",
+  "series-a":"Serie A","series-b":"Serie B","series-c":"Serie C",
+  "series-c+":"Serie C+","growth":"Growth"
+};
+
+/* ── State ── */
+let currentLayout = "phylo";
+let activeThemes = new Set(Object.keys(THEME_PAL));
+let allStartups = [];
+
+/* ── D3 setup ── */
+const svg = d3.select("#phylo-svg");
+const g   = svg.append("g").attr("class","main-g");
+const tip = document.getElementById("phylo-tip");
+
+const zoom = d3.zoom().scaleExtent([0.12, 10])
+  .on("zoom", e => g.attr("transform", e.transform));
+svg.call(zoom);
+
+/* ── Tooltip ── */
+function showTip(html, evt) { tip.innerHTML = html; tip.style.opacity = 1; moveTip(evt); }
+function moveTip(evt) {
+  const x = evt.clientX + 14, y = evt.clientY - 10;
+  tip.style.left = (x + 230 > window.innerWidth ? x - 244 : x) + "px";
+  tip.style.top  = (y + 120 > window.innerHeight ? y - 120 : y) + "px";
+}
+function hideTip() { tip.style.opacity = 0; }
+
+/* ── Leaf radius from quality_score ── */
+function leafR(s) {
+  const q = s.quality_score || 5;
+  return 1.8 + (q / 10) * 4.5;
+}
+
+/* ── Tooltip HTML ── */
+function tipHtml(s) {
+  const stage = s.funding_stage || "sin dato";
+  const sc = STAGE_PAL[stage] || STAGE_PAL.unknown;
+  return `<div class="tip-name">${s.name}</div>
+    <div class="tip-row">${s.country || "?"} · ${s.founded_year || "año desc."}</div>
+    <div class="tip-row">Sub-cluster: <span>${s.sub_cluster_label || "?"}</span></div>
+    <div class="tip-row">Etapa: <span style="color:${sc}">${STAGE_LABEL[stage] || stage}</span> · Q <span>${s.quality_score?.toFixed(1) || "?"}</span></div>`;
+}
+
+/* ── Detail panel ── */
+function showDetail(s) {
+  const panel = document.getElementById("detail-panel");
+  const col   = THEME_PAL[s.bio_theme] || "#888";
+  const stage = s.funding_stage || "unknown";
+  const sc    = STAGE_PAL[stage] || STAGE_PAL.unknown;
+  panel.innerHTML = `
+    <div><span class="detail-badge" style="background:${col}">${THEME_SHORT[s.bio_theme] || s.bio_theme || "?"}</span></div>
+    <div class="detail-name">${s.name}</div>
+    <div class="detail-sub">${s.sub_cluster_label || ""}</div>
+    ${s.one_liner ? `<div class="detail-summary" style="font-style:italic;color:#666">"${s.one_liner}"</div>` : ""}
+    <div>
+      <div class="detail-row"><span class="k">País</span><span class="v">${s.country || "—"}</span></div>
+      <div class="detail-row"><span class="k">Fundada</span><span class="v">${s.founded_year || "desc."}</span></div>
+      <div class="detail-row"><span class="k">Etapa</span><span class="v"><span class="stage-badge" style="background:${sc}">${STAGE_LABEL[stage] || stage}</span></span></div>
+      <div class="detail-row"><span class="k">Calidad</span><span class="v">${s.quality_score?.toFixed(1) || "—"} / 10</span></div>
+      <div class="detail-row"><span class="k">Inversores</span><span class="v">${s.n_investors_mapped || 0}</span></div>
+      <div class="detail-row"><span class="k">Tech depth</span><span class="v">${s.tech_depth || "—"}</span></div>
+    </div>
+    ${s.summary ? `<div class="detail-summary">${s.summary.slice(0,380)}${s.summary.length>380?"…":""}</div>` : ""}
+    ${s.website ? `<a class="detail-link" href="${s.website}" target="_blank">Visitar sitio →</a>` : ""}`;
+}
+
+/* ══════════════════════════════════════════════════════════════════════
+   LAYOUT A: SUNBURST (3 anillos: tema → sub-cluster → startup)
+   Sector order driven by UMAP angle (semántico, no arbitrario)
+   ══════════════════════════════════════════════════════════════════════ */
+function renderSunburst(startups) {
+  g.selectAll("*").remove();
+  const wrap = document.getElementById("canvas-wrap");
+  const W = wrap.clientWidth, H = wrap.clientHeight;
+  const cx = W/2, cy = H/2;
+  const maxR = Math.min(W, H) * 0.46;
+
+  // Compute UMAP centroid and theme angular order
+  const cx_u = d3.mean(startups, s => s.x);
+  const cy_u = d3.mean(startups, s => s.y);
+
+  // Sort themes by UMAP centroid angle (semantic order)
+  const themeAngles = {};
+  const themeGroups = {};
+  for (const s of startups) {
+    const th = s.bio_theme;
+    if (!th || !activeThemes.has(th)) continue;
+    if (!themeGroups[th]) themeGroups[th] = [];
+    themeGroups[th].push(s);
+  }
+  for (const [th, pts] of Object.entries(themeGroups)) {
+    const tx = d3.mean(pts, s => s.x);
+    const ty = d3.mean(pts, s => s.y);
+    themeAngles[th] = Math.atan2(ty - cy_u, tx - cx_u);
+  }
+  const sortedThemes = Object.keys(themeGroups).sort((a, b) => themeAngles[a] - themeAngles[b]);
+
+  // Build hierarchy with semantic theme order
+  const raw = {
+    name: "BIO LATAM",
+    children: sortedThemes.map(th => ({
+      name: th,
+      theme: th,
+      children: (() => {
+        const subMap = {};
+        for (const s of themeGroups[th]) {
+          const sub = s.sub_cluster_label || "Sin sub-cluster";
+          if (!subMap[sub]) subMap[sub] = [];
+          subMap[sub].push(s);
+        }
+        return Object.entries(subMap).map(([sub, stups]) => ({
+          name: sub, theme: th,
+          children: stups.map(s => ({ name: s.name, theme: th, data: s, value: 1 }))
+        }));
+      })()
+    }))
+  };
+
+  const hierarchy = d3.hierarchy(raw).sum(d => d.value || 0).sort((a,b) => b.value - a.value);
+  d3.partition().size([2*Math.PI, maxR])(hierarchy);
+
+  const rScale = [0, maxR*0.12, maxR*0.32, maxR];
+  const arc = d3.arc()
+    .startAngle(d => d.x0)
+    .endAngle(d => d.x1)
+    .innerRadius(d => rScale[d.depth] ?? 0)
+    .outerRadius(d => d.depth === 3 ? rScale[3] : rScale[d.depth+1] - 2)
+    .padAngle(0.006)
+    .padRadius(maxR * 0.12);
+
+  const gR = g.append("g").attr("transform", `translate(${cx},${cy})`);
+
+  gR.selectAll("path")
+    .data(hierarchy.descendants().filter(d => d.depth > 0))
+    .join("path")
+    .attr("d", arc)
+    .attr("fill", d => {
+      if (d.depth === 1) return THEME_PAL[d.data.name] || "#aaa";
+      if (d.depth === 2) return d3.color(THEME_PAL[d.data.theme] || "#aaa").brighter(0.7);
+      return STAGE_PAL[d.data.data?.funding_stage] || STAGE_PAL.unknown;
+    })
+    .attr("stroke", d => d.depth === 1 ? "rgba(0,0,0,0.1)" : "rgba(255,255,255,0.35)")
+    .attr("stroke-width", d => d.depth === 1 ? 1.5 : 0.4)
+    .attr("opacity", d => d.depth >= 3 ? 0.9 : 0.88)
+    .style("cursor", d => d.depth === 3 ? "pointer" : "default")
+    .on("mouseover", (evt, d) => {
+      if (d.depth === 3) { showTip(tipHtml(d.data.data), evt); d3.select(evt.currentTarget).attr("opacity",1).attr("stroke","#222").attr("stroke-width",1.5); }
+      else { const n = d.descendants().filter(x=>x.depth===3).length; showTip(`<div class="tip-name">${d.depth===1?(THEME_SHORT[d.data.name]||d.data.name):d.data.name}</div><div class="tip-row"><span>${n}</span> startups</div>`, evt); }
+    })
+    .on("mousemove", (evt) => moveTip(evt))
+    .on("mouseout", (evt, d) => { hideTip(); if(d.depth===3) d3.select(evt.currentTarget).attr("opacity",0.9).attr("stroke","rgba(255,255,255,0.35)").attr("stroke-width",0.4); })
+    .on("click", (evt, d) => { if (d.depth === 3) showDetail(d.data.data); });
+
+  // Theme labels
+  gR.selectAll("text.th-lbl")
+    .data(hierarchy.descendants().filter(d => d.depth === 1))
+    .join("text").attr("class","th-lbl")
+    .attr("transform", d => { const a=(d.x0+d.x1)/2, r=(rScale[0]+rScale[2])/2, deg=a*180/Math.PI-90; return `rotate(${deg}) translate(${r},0) rotate(${deg>90?180:0})`; })
+    .attr("text-anchor","middle").attr("dominant-baseline","middle")
+    .attr("fill","#fff").attr("font-size",d=>Math.min(10,Math.max(7,(d.x1-d.x0)*38))+"px").attr("font-weight","700").attr("pointer-events","none")
+    .text(d => (d.x1-d.x0)<0.09?"":THEME_SHORT[d.data.name]||d.data.name);
+
+  // Sub-cluster labels
+  gR.selectAll("text.sub-lbl")
+    .data(hierarchy.descendants().filter(d => d.depth === 2))
+    .join("text").attr("class","sub-lbl")
+    .attr("transform", d => { const a=(d.x0+d.x1)/2, r=(rScale[1]+rScale[2])/2+4, deg=a*180/Math.PI-90; return `rotate(${deg}) translate(${r},0) rotate(${deg>90?180:0})`; })
+    .attr("text-anchor","middle").attr("dominant-baseline","middle")
+    .attr("fill", d => d3.color(THEME_PAL[d.data.theme]||"#555").darker(2))
+    .attr("font-size","7px").attr("font-weight","600").attr("pointer-events","none")
+    .text(d => { const span=d.x1-d.x0, n=d.descendants().filter(x=>x.depth===3).length; if(span<0.08)return""; const l=d.data.name.length>16?d.data.name.slice(0,14)+"…":d.data.name; return `${l} (${n})`; });
+
+  // Center
+  gR.append("text").attr("text-anchor","middle").attr("y",-6).attr("font-size","12px").attr("font-weight","800").attr("fill","#333").text("BIO");
+  gR.append("text").attr("text-anchor","middle").attr("y",8).attr("font-size","10px").attr("fill","#999").text("LATAM");
+
+  fitView(cx, cy, maxR);
+}
+
+/* ══════════════════════════════════════════════════════════════════════
+   LAYOUT B: DENDROGRAMA SEMÁNTICO
+   ─ Ángulo de cada nodo = ángulo UMAP desde centroide global
+   ─ Radio de hoja       = distancia semántica UMAP desde centroide global
+   ─ Ramas               = d3.linkRadial() → curvas S orgánicas
+   ══════════════════════════════════════════════════════════════════════ */
+function renderDendroSemantic(startups) {
+  g.selectAll("*").remove();
+  const wrap = document.getElementById("canvas-wrap");
+  const W = wrap.clientWidth, H = wrap.clientHeight;
+  const cx = W/2, cy = H/2;
+
+  /* ── UMAP centroid & geometry ── */
+  const cx_u = d3.mean(startups, s => s.x);
+  const cy_u = d3.mean(startups, s => s.y);
+  const maxUmapDist = d3.max(startups, s => Math.hypot(s.x - cx_u, s.y - cy_u));
+
+  function umapAngle(x, y) { return Math.atan2(y - cy_u, x - cx_u); }
+  function umapDist(x, y)  { return Math.hypot(x - cx_u, y - cy_u); }
+
+  /* ── Radial layout radii ── */
+  const maxR    = Math.min(W, H) * 0.43;
+  const R_ROOT  = 50;
+  const R_THEME = 100;
+  const R_SUB   = 195;
+  const R_LEAF  = maxR;   // all leaves at same ring — position encodes angle only
+
+  function leafRadius() { return R_LEAF; }
+
+  /* ── Build theme & sub-cluster centroids ── */
+  const themeGroups = {};
+  for (const s of startups) {
+    const th = s.bio_theme;
+    if (!th || !activeThemes.has(th)) continue;
+    if (!themeGroups[th]) themeGroups[th] = { stups: [], subs: {} };
+    themeGroups[th].stups.push(s);
+    const sub = s.sub_cluster_label || "Sin sub-cluster";
+    if (!themeGroups[th].subs[sub]) themeGroups[th].subs[sub] = [];
+    themeGroups[th].subs[sub].push(s);
+  }
+
+  // Compute centroids → polar angles
+  for (const [, tg] of Object.entries(themeGroups)) {
+    tg.cx = d3.mean(tg.stups, s => s.x);
+    tg.cy = d3.mean(tg.stups, s => s.y);
+    tg.umapAngle = umapAngle(tg.cx, tg.cy);
+    tg.n = tg.stups.length;
+    for (const [, sg] of Object.entries(tg.subs)) {
+      sg.cx = d3.mean(sg, s => s.x);
+      sg.cy = d3.mean(sg, s => s.y);
+      sg.umapAngle = umapAngle(sg.cx, sg.cy);
+      sg.n = sg.length;
+    }
+  }
+
+  /* ── Allocate angular sectors (preserving UMAP order) ── */
+  const totalN = d3.sum(Object.values(themeGroups), tg => tg.n);
+
+  // Sort themes by UMAP angle
+  const sortedThemes = Object.entries(themeGroups)
+    .sort((a, b) => a[1].umapAngle - b[1].umapAngle);
+
+  // Sectors start from the first theme's angle minus its half-width
+  // so that sector centers are as close to UMAP angles as possible
+  const firstHalfWidth = (sortedThemes[0][1].n / totalN) * Math.PI;
+  let accAngle = sortedThemes[0][1].umapAngle - firstHalfWidth;
+
+  for (const [, tg] of sortedThemes) {
+    const tw = (tg.n / totalN) * 2 * Math.PI;
+    tg.sectorStart  = accAngle;
+    tg.sectorEnd    = accAngle + tw;
+    tg.sectorCenter = accAngle + tw / 2;
+    accAngle += tw;
+
+    // Sub-clusters: sorted by UMAP angle, spread within theme sector
+    const sortedSubs = Object.entries(tg.subs)
+      .sort((a, b) => a[1].umapAngle - b[1].umapAngle);
+    tg._subs = sortedSubs;
+
+    let subAcc = tg.sectorStart;
+    for (const [, sg] of sortedSubs) {
+      const sw = (sg.n / tg.n) * tw;
+      sg.sectorStart  = subAcc;
+      sg.sectorEnd    = subAcc + sw;
+      sg.sectorCenter = subAcc + sw / 2;
+      subAcc += sw;
+
+      // Leaves: sorted by UMAP angle within sub-sector
+      sg.sort((a, b) => umapAngle(a.x, a.y) - umapAngle(b.x, b.y));
+      sg.forEach((s, i) => {
+        s._phi = sg.sectorStart + (i + 0.5) / sg.n * sw;
+        s._r   = leafRadius();
+      });
+    }
+  }
+
+  /* ── Draw ── */
+  const gR = g.append("g").attr("transform", `translate(${cx},${cy})`);
+
+  // d3.linkRadial for organic S-curves
+  const lnk = d3.linkRadial().angle(d => d.phi).radius(d => d.r);
+
+  /* ── Sector background shading ── */
+  const arcSector = (start, end, rIn, rOut) => d3.arc()
+    .innerRadius(rIn).outerRadius(rOut)
+    .startAngle(start - 0.005).endAngle(end + 0.005)();
+
+  for (const [th, tg] of sortedThemes) {
+    gR.append("path")
+      .attr("d", arcSector(tg.sectorStart, tg.sectorEnd, R_THEME - 5, R_LEAF_OUTER + 18))
+      .attr("fill", THEME_PAL[th] || "#ccc")
+      .attr("opacity", 0.035);
+  }
+
+  /* ── Links: root → theme ── */
+  for (const [th, tg] of sortedThemes) {
+    const col = THEME_PAL[th] || "#ccc";
+    gR.append("path")
+      .datum({ source: {phi: tg.sectorCenter, r: R_ROOT}, target: {phi: tg.sectorCenter, r: R_THEME - 10} })
+      .attr("d", lnk)
+      .attr("fill", "none")
+      .attr("stroke", col)
+      .attr("stroke-width", Math.max(1.2, tg.n * 0.045))
+      .attr("opacity", 0.55);
+  }
+
+  /* ── Links: theme → sub-cluster ── */
+  for (const [th, tg] of sortedThemes) {
+    const col = THEME_PAL[th] || "#ccc";
+    for (const [, sg] of tg._subs) {
+      gR.append("path")
+        .datum({ source: {phi: tg.sectorCenter, r: R_THEME + 10}, target: {phi: sg.sectorCenter, r: R_SUB - 12} })
+        .attr("d", lnk)
+        .attr("fill", "none")
+        .attr("stroke", col)
+        .attr("stroke-width", Math.max(0.7, sg.n * 0.045))
+        .attr("opacity", 0.38);
+    }
+  }
+
+  /* ── Links: sub-cluster → leaves ── */
+  for (const [th, tg] of sortedThemes) {
+    const col = THEME_PAL[th] || "#ccc";
+    for (const [, sg] of tg._subs) {
+      for (const s of sg) {
+        gR.append("path")
+          .datum({ source: {phi: sg.sectorCenter, r: R_SUB + 8}, target: {phi: s._phi, r: s._r - leafR(s) - 1} })
+          .attr("d", lnk)
+          .attr("fill", "none")
+          .attr("stroke", col)
+          .attr("stroke-width", 0.55)
+          .attr("opacity", 0.18);
+      }
+    }
+  }
+
+  /* ── Helper: horizontal label anchor based on angle ── */
+  // ALL labels are drawn horizontal (x/y Cartesian, no transform rotate)
+  function hAnchor(phi) {
+    const c = Math.cos(phi);
+    return c > 0.25 ? "start" : c < -0.25 ? "end" : "middle";
+  }
+  function hBaseline(phi) {
+    const s = Math.sin(phi);
+    return s > 0.75 ? "hanging" : s < -0.75 ? "auto" : "middle";
+  }
+
+  /* ── Sub-cluster node circles + labels (n ≥ 7 gets label) ── */
+  for (const [th, tg] of sortedThemes) {
+    const col = THEME_PAL[th] || "#ccc";
+    for (const [sub, sg] of tg._subs) {
+      if (sg.n < 2) continue;
+      const phi = sg.sectorCenter;
+      const sx = Math.cos(phi) * R_SUB, sy = Math.sin(phi) * R_SUB;
+      const rDot = 3.5 + sg.n * 0.1;
+
+      gR.append("circle").attr("cx", sx).attr("cy", sy)
+        .attr("r", rDot)
+        .attr("fill", d3.color(col).brighter(0.9))
+        .attr("stroke", col).attr("stroke-width", 1)
+        .attr("opacity", 0.88);
+
+      // Horizontal label — only for sub-clusters with ≥7 startups
+      if (sg.n >= 7) {
+        const lR = R_SUB + rDot + 10;
+        const lx = Math.cos(phi) * lR, ly = Math.sin(phi) * lR;
+        const name = sub.length > 22 ? sub.slice(0, 20) + "…" : sub;
+        gR.append("text")
+          .attr("x", lx).attr("y", ly)
+          .attr("text-anchor", hAnchor(phi))
+          .attr("dominant-baseline", hBaseline(phi))
+          .attr("fill", d3.color(col).darker(0.5))
+          .attr("font-size", "8px")
+          .attr("font-weight", "700")
+          .text(`${name} (${sg.n})`);
+      }
+    }
+  }
+
+  /* ── Theme node circles + horizontal labels ── */
+  for (const [th, tg] of sortedThemes) {
+    const col = THEME_PAL[th] || "#ccc";
+    const phi = tg.sectorCenter;
+    const tx = Math.cos(phi) * R_THEME, ty = Math.sin(phi) * R_THEME;
+    const r_circle = 13 + tg.n * 0.045;
+
+    // Circle
+    gR.append("circle")
+      .attr("cx", tx).attr("cy", ty)
+      .attr("r", r_circle)
+      .attr("fill", col).attr("opacity", 0.93)
+      .attr("stroke", d3.color(col).darker(0.6))
+      .attr("stroke-width", 1.5);
+
+    // Short label inside circle
+    gR.append("text")
+      .attr("x", tx).attr("y", ty)
+      .attr("text-anchor", "middle").attr("dominant-baseline", "middle")
+      .attr("fill", "#fff").attr("font-size", "7.5px").attr("font-weight", "800")
+      .attr("pointer-events", "none")
+      .text(THEME_SHORT4[th] || "");
+
+    // Full label OUTSIDE — horizontal, no rotation
+    const lR = R_THEME + r_circle + 9;
+    const lx = Math.cos(phi) * lR, ly = Math.sin(phi) * lR;
+    gR.append("text")
+      .attr("x", lx).attr("y", ly)
+      .attr("text-anchor", hAnchor(phi))
+      .attr("dominant-baseline", hBaseline(phi))
+      .attr("fill", col)
+      .attr("font-size", "10px")
+      .attr("font-weight", "800")
+      .text(`${THEME_SHORT[th] || th}  ${tg.n}`);
+  }
+
+  /* ── Leaf circles (startups) ── */
+  const leafData = [];
+  for (const [th, tg] of sortedThemes) {
+    for (const [, sg] of tg._subs) {
+      for (const s of sg) leafData.push({ s, th });
+    }
+  }
+
+  gR.selectAll(".leaf")
+    .data(leafData)
+    .join("circle").attr("class","leaf")
+    .attr("cx", d => Math.cos(d.s._phi) * d.s._r)
+    .attr("cy", d => Math.sin(d.s._phi) * d.s._r)
+    .attr("r", d => leafR(d.s))
+    .attr("fill", d => STAGE_PAL[d.s.funding_stage] || STAGE_PAL.unknown)
+    .attr("stroke", d => THEME_PAL[d.th] || "#aaa")
+    .attr("stroke-width", 0.6)
+    .attr("opacity", 0.88)
+    .style("cursor","pointer")
+    .on("mouseover", (evt, d) => { showTip(tipHtml(d.s), evt); d3.select(evt.currentTarget).attr("r", leafR(d.s)+2).attr("stroke-width",2).attr("opacity",1); })
+    .on("mousemove", (evt) => moveTip(evt))
+    .on("mouseout",  (evt, d) => { hideTip(); d3.select(evt.currentTarget).attr("r", leafR(d.s)).attr("stroke-width",0.6).attr("opacity",0.88); })
+    .on("click", (evt, d) => showDetail(d.s));
+
+  /* ── Outer guide ring ── */
+  gR.append("circle").attr("r", R_LEAF)
+    .attr("fill","none").attr("stroke","#e8e4dc")
+    .attr("stroke-width",1).attr("stroke-dasharray","2 6");
+
+  /* ── Center ── */
+  gR.append("circle").attr("r", R_ROOT)
+    .attr("fill","#f6f5f2").attr("stroke","#ddd").attr("stroke-width",1.5);
+  gR.append("text").attr("text-anchor","middle").attr("y",-6)
+    .attr("font-size","10px").attr("font-weight","800").attr("fill","#333").text("BIO");
+  gR.append("text").attr("text-anchor","middle").attr("y",8)
+    .attr("font-size","9px").attr("fill","#999").text("LATAM");
+
+  fitView(cx, cy, R_LEAF_OUTER + 80);
+}
+
+/* ── Fit view ── */
+function fitView(cx, cy, r) {
+  const wrap = document.getElementById("canvas-wrap");
+  const W = wrap.clientWidth, H = wrap.clientHeight;
+  const scale = Math.min(W, H) / (2 * (r + 30)) * 0.92;
+  svg.transition().duration(450)
+    .call(zoom.transform, d3.zoomIdentity.translate(W/2, H/2).scale(Math.min(scale, 1)).translate(-cx, -cy));
+}
+
+/* ══════════════════════════════════════════════════════════════════════
+   LAYOUT C: FILOGENIA SEMÁNTICA
+   Sin labels estáticos. Interacción: hover/click sobre cualquier nodo
+   interno ilumina todo el clado descendente, oscurece el resto.
+   ══════════════════════════════════════════════════════════════════════ */
+function renderPhyloFull() {
+  g.selectAll("*").remove();
+
+  if (typeof IQ_PHYLO_TREE === "undefined") {
+    g.append("text").attr("x",100).attr("y",100).text("phylo-tree-data.js no cargado");
+    return;
+  }
+
+  const wrap = document.getElementById("canvas-wrap");
+  const W = wrap.clientWidth, H = wrap.clientHeight;
+  const cx = W/2, cy = H/2;
+
+  const R = { root:0, mega:95, macro:182, theme:262, sub:328, startup:0 };
+  const R_LEAF = 390;
+  const maxR   = R_LEAF + 55;
+
+  function nodeR(node) {
+    if (node.level === "startup") return R_LEAF;
+    return R[node.level] ?? 200;
+  }
+
+  /* ── Collect Ward-ordered leaves ── */
+  const allLeaves = [];
+  (function collect(n) {
+    if (n.level === "startup") { allLeaves.push(n); return; }
+    (n.children||[]).forEach(collect);
+  })(IQ_PHYLO_TREE);
+
+  const dphi = (2*Math.PI) / allLeaves.length;
+  allLeaves.forEach((l,i) => { l._phi = (i+0.5)*dphi; });
+
+  /* ── Assign angles and leaf-sets bottom-up ── */
+  (function assignUp(node) {
+    if (node.level === "startup") { node._leafSet = new Set([node]); return node._phi; }
+    const phis = (node.children||[]).map(c => assignUp(c));
+    node._phi      = d3.mean(phis);
+    node._phiMin   = d3.min(phis);
+    node._phiMax   = d3.max(phis);
+    node._leafSet  = new Set();
+    (node.children||[]).forEach(c => c._leafSet.forEach(l => node._leafSet.add(l)));
+    return node._phi;
+  })(IQ_PHYLO_TREE);
+
+  /* ── Dominant theme per node ── */
+  (function dom(node) {
+    if (node.level === "startup") return node.bio_theme||"";
+    const cnt={};
+    (node.children||[]).map(c=>dom(c)).forEach(t=>{cnt[t]=(cnt[t]||0)+1;});
+    node._theme = Object.entries(cnt).sort((a,b)=>b[1]-a[1])[0]?.[0]||"";
+    return node._theme;
+  })(IQ_PHYLO_TREE);
+
+  const MEGA_COL  = { "Medicina & Diagnóstico":"#5A4FCF", "Biología Aplicada":"#2E7D52" };
+  const MACRO_COL = {
+    "Medicina & Diagnóstico":"#5A4FCF", "Inteligencia Agrícola":"#2E4E8C",
+    "Bioeconomía Industrial":"#8B6D14", "Agrosistemas Biológicos":"#2A7A42",
+  };
+  function nodeCol(node) {
+    if (node.level==="mega")  return MEGA_COL[node.name]||"#555";
+    if (node.level==="macro") return MACRO_COL[node.name]||"#555";
+    if (node.level==="theme") return THEME_PAL[node.name]||"#888";
+    if (node.level==="sub")   return d3.color(THEME_PAL[node._theme]||"#aaa").brighter(0.8).toString();
+    return "#aaa";
+  }
+
+  /* ── Selection state ── */
+  let selectedNode = null;
+
+  function leafBaseOpacity(leaf) { return 0.5 + (leaf.quality_score||5)/10*0.42; }
+  function leafBaseR(leaf) { return 1.6 + (leaf.quality_score||5)/10*4; }
+
+  function highlightClade(node) {
+    if (!node) { resetHighlight(); return; }
+    const inSet = node._leafSet;
+    d3.selectAll(".phylo-leaf")
+      .attr("opacity", d => inSet.has(d) ? 0.96 : 0.06)
+      .attr("r",       d => inSet.has(d) ? leafBaseR(d)+1 : leafBaseR(d));
+    // Dim all inner nodes except those in the selected subtree
+    d3.selectAll(".inner-node")
+      .attr("opacity", function() { return this._nodeRef?._leafSet && hasOverlap(this._nodeRef._leafSet, inSet) ? 0.95 : 0.18; });
+  }
+
+  function resetHighlight() {
+    d3.selectAll(".phylo-leaf")
+      .attr("opacity", d => leafBaseOpacity(d))
+      .attr("r",       d => leafBaseR(d));
+    d3.selectAll(".inner-node").attr("opacity", 0.92);
+  }
+
+  function hasOverlap(setA, setB) {
+    for (const x of setA) if (setB.has(x)) return true;
+    return false;
+  }
+
+  /* ── Detail panel for clade ── */
+  function showCladeDetail(node) {
+    const panel = document.getElementById("detail-panel");
+    const col = nodeCol(node);
+    const leaves = [...node._leafSet];
+
+    // Theme breakdown
+    const thCnt={};
+    leaves.forEach(l=>{const t=l.bio_theme||"?"; thCnt[t]=(thCnt[t]||0)+1;});
+    const breakdown = Object.entries(thCnt)
+      .sort((a,b)=>b[1]-a[1])
+      .map(([t,n])=>`<div class="detail-row"><span class="k" style="color:${THEME_PAL[t]||"#555"};font-weight:700">${THEME_SHORT[t]||t}</span><span class="v">${n}</span></div>`)
+      .join("");
+
+    // Stage breakdown
+    const stCnt={};
+    leaves.forEach(l=>{const s=l.funding_stage||"?"; stCnt[s]=(stCnt[s]||0)+1;});
+    const funded = leaves.filter(l=>l.funding_stage&&!["pre-seed","accelerator"].includes(l.funding_stage)).length;
+
+    const levelName = {mega:"Mega-cluster",macro:"Macro-cluster",theme:"Tema",sub:"Sub-cluster"};
+    panel.innerHTML = `
+      <div><span class="detail-badge" style="background:${col}">${levelName[node.level]||node.level}</span></div>
+      <div class="detail-name">${node.name}</div>
+      <div style="font-size:1.5rem;font-weight:900;color:${col};letter-spacing:-0.03em">${leaves.length}</div>
+      <div style="font-size:0.78rem;color:var(--muted);margin-top:-8px">startups · ${funded} con capital</div>
+      <div style="margin-top:8px">${breakdown}</div>
+      ${node.level==="theme"?`<div style="margin-top:8px;font-size:0.75rem;color:var(--muted)">Hacé click en los puntos del anillo para ver cada startup</div>`:""}
+    `;
+  }
+
+  /* ── SVG group ── */
+  const gR = g.append("g").attr("transform",`translate(${cx},${cy})`);
+
+  // Click on background → deselect
+  gR.append("circle").attr("r",maxR+60).attr("fill","transparent").attr("cursor","default")
+    .on("click", () => { selectedNode=null; resetHighlight(); document.getElementById("detail-panel").innerHTML=`<div class="detail-empty">Hacé click en cualquier startup<br>para ver su perfil completo</div>`; });
+
+  const lnk = d3.linkRadial().angle(d=>d.phi).radius(d=>d.r);
+
+  /* ── Sector background per mega ── */
+  const arcSec = (s,e,r0,r1) => d3.arc().innerRadius(r0).outerRadius(r1).startAngle(s-.01).endAngle(e+.01)();
+  for (const mn of IQ_PHYLO_TREE.children||[]) {
+    const phiLeaves = [...mn._leafSet].map(l=>l._phi);
+    gR.append("path").attr("d",arcSec(d3.min(phiLeaves),d3.max(phiLeaves),R.mega-12,R_LEAF+20))
+      .attr("fill",MEGA_COL[mn.name]||"#888").attr("opacity",.03);
+  }
+
+  /* ── Draw all links (edges) ── */
+  function drawEdges(node) {
+    for (const child of (node.children||[])) {
+      const col = THEME_PAL[child._theme]||MACRO_COL[child.name]||MEGA_COL[child.name]||"#bbb";
+      const sw = child.level==="startup" ? 0.45 :
+                 child.level==="sub"     ? Math.max(0.7, (child.n||1)*0.02) :
+                 child.level==="theme"   ? Math.max(1.1, (child.n||1)*0.025) :
+                 child.level==="macro"   ? Math.max(1.8, (child.n||1)*0.028) :
+                                           Math.max(2.5, (child.n||1)*0.03);
+      const op = child.level==="startup"?0.18:child.level==="sub"?0.28:0.42;
+      gR.append("path")
+        .datum({ source:{phi:node._phi,  r:nodeR(node)+(node.level==="root"?0:7)},
+                 target:{phi:child._phi, r:nodeR(child)-(child.level==="startup"?0:7)} })
+        .attr("d",lnk).attr("fill","none")
+        .attr("stroke",col).attr("stroke-width",sw).attr("opacity",op)
+        .attr("class","phylo-edge");
+      drawEdges(child);
+    }
+  }
+  drawEdges(IQ_PHYLO_TREE);
+
+  /* ── Internal nodes (sub, theme, macro, mega) ── */
+  function drawInternalNodes(node) {
+    if (node.level==="startup"||node.level==="root") {
+      if (node.level!=="root") return;
+    } else {
+      const col = nodeCol(node);
+      const r   = nodeR(node);
+      const phi = node._phi;
+      const rCirc = node.level==="mega"  ? 16+(node.n||0)*0.025 :
+                    node.level==="macro" ? 13+(node.n||0)*0.030 :
+                    node.level==="theme" ? 11+(node.n||0)*0.040 :
+                                           3+(node.n||0)*0.08;
+
+      const cx_ = Math.cos(phi)*r, cy_ = Math.sin(phi)*r;
+
+      const circ = gR.append("circle")
+        .attr("cx",cx_).attr("cy",cy_).attr("r",rCirc)
+        .attr("fill",col).attr("opacity",0.92)
+        .attr("stroke",d3.color(col).darker(0.5)).attr("stroke-width",node.level==="mega"?2:1.2)
+        .attr("class","inner-node").attr("cursor","pointer");
+      circ.node()._nodeRef = node;
+
+      // Short label inside circle (number for big nodes, acronym for theme)
+      if (node.level==="mega"||node.level==="macro") {
+        gR.append("text").attr("x",cx_).attr("y",cy_)
+          .attr("text-anchor","middle").attr("dominant-baseline","middle")
+          .attr("fill","#fff").attr("font-size",node.level==="mega"?"9px":"7.5px").attr("font-weight","800")
+          .attr("pointer-events","none").text((node.n||"")+"");
+      } else if (node.level==="theme") {
+        gR.append("text").attr("x",cx_).attr("y",cy_)
+          .attr("text-anchor","middle").attr("dominant-baseline","middle")
+          .attr("fill","#fff").attr("font-size","6.5px").attr("font-weight","800")
+          .attr("pointer-events","none").text(THEME_SHORT4[node.name]||"");
+      }
+
+      // Interaction
+      circ
+        .on("mouseover", (evt) => {
+          if (selectedNode) return;
+          highlightClade(node);
+          showTip(`<div class="tip-name">${node.name}</div><div class="tip-row"><span>${node._leafSet.size}</span> startups</div>`, evt);
+        })
+        .on("mousemove", (evt) => moveTip(evt))
+        .on("mouseout",  ()    => { if (!selectedNode) { resetHighlight(); hideTip(); } })
+        .on("click", (evt) => {
+          evt.stopPropagation();
+          if (selectedNode === node) { selectedNode=null; resetHighlight(); hideTip(); }
+          else { selectedNode=node; highlightClade(node); showCladeDetail(node); hideTip(); }
+        });
+    }
+
+    for (const child of (node.children||[])) drawInternalNodes(child);
+  }
+  drawInternalNodes(IQ_PHYLO_TREE);
+
+  /* ── Leaf circles ── */
+  gR.selectAll(".phylo-leaf")
+    .data(allLeaves).join("circle").attr("class","phylo-leaf")
+    .attr("cx", d => Math.cos(d._phi)*R_LEAF)
+    .attr("cy", d => Math.sin(d._phi)*R_LEAF)
+    .attr("r",  d => leafBaseR(d))
+    .attr("fill",    d => THEME_PAL[d.bio_theme]||"#aaa")
+    .attr("stroke",  d => d3.color(THEME_PAL[d.bio_theme]||"#aaa").darker(0.8))
+    .attr("stroke-width",0.4)
+    .attr("opacity", d => leafBaseOpacity(d))
+    .style("cursor","pointer")
+    .on("mouseover", (evt,d) => {
+      if (!selectedNode) highlightClade(d.level==="startup"?null:d);
+      showTip(tipHtml(d),evt);
+      d3.select(evt.currentTarget).attr("r",leafBaseR(d)+2).attr("opacity",1).attr("stroke-width",1.5);
+    })
+    .on("mousemove", (evt) => moveTip(evt))
+    .on("mouseout",  (evt,d) => {
+      hideTip();
+      if (!selectedNode) {
+        d3.select(evt.currentTarget).attr("r",leafBaseR(d)).attr("opacity",leafBaseOpacity(d)).attr("stroke-width",0.4);
+      }
+    })
+    .on("click", (evt,d) => { evt.stopPropagation(); selectedNode=null; resetHighlight(); showDetail(d); });
+
+  /* ── Level guide rings ── */
+  [R.mega,R.macro,R.theme,R.sub].forEach(r=>{
+    gR.append("circle").attr("r",r).attr("fill","none")
+      .attr("stroke","#eae6de").attr("stroke-width",0.7).attr("stroke-dasharray","1.5 6");
+  });
+
+  /* ── Root center ── */
+  gR.append("circle").attr("r",44).attr("fill","#f5f5f2").attr("stroke","#ddd").attr("stroke-width",1.5);
+  gR.append("text").attr("text-anchor","middle").attr("y",-7).attr("font-size","11px").attr("font-weight","900").attr("fill","#333").text("BIO");
+  gR.append("text").attr("text-anchor","middle").attr("y",8).attr("font-size","9px").attr("fill","#999").text("LATAM");
+
+  fitView(cx, cy, maxR + 40);
+}
+
+/* ── Render ── */
+function render() {
+  const filtered = allStartups.filter(s => activeThemes.has(s.bio_theme));
+  if      (currentLayout === "sunburst") renderSunburst(filtered);
+  else if (currentLayout === "dendro")   renderDendroSemantic(filtered);
+  else                                    renderPhyloFull();
+  updateStats(filtered);
+}
+
+function updateStats(filtered) {
+  const n = filtered.length;
+  const withYear = filtered.filter(s => s.founded_year).length;
+  const funded = filtered.filter(s => s.funding_stage && s.funding_stage !== "pre-seed").length;
+  document.getElementById("stats-strip").innerHTML =
+    `<strong>${n}</strong> startups &nbsp;·&nbsp; <strong>${withYear}</strong> con año &nbsp;·&nbsp; <strong>${funded}</strong> con capital`;
+}
+
+/* ── Layout toggle ── */
+function setLayout(l) {
+  currentLayout = l;
+  ["btn-sunburst","btn-dendro","btn-phylo"].forEach(id => {
+    document.getElementById(id)?.classList.remove("active");
+  });
+  const map = { sunburst:"btn-sunburst", dendro:"btn-dendro", phylo:"btn-phylo" };
+  document.getElementById(map[l])?.classList.add("active");
+  render();
+}
+document.getElementById("btn-sunburst").addEventListener("click", () => setLayout("sunburst"));
+document.getElementById("btn-dendro").addEventListener("click",   () => setLayout("dendro"));
+document.getElementById("btn-phylo").addEventListener("click",    () => setLayout("phylo"));
+
+/* ── Zoom controls ── */
+document.getElementById("zoom-in").addEventListener("click",  () => svg.transition().duration(280).call(zoom.scaleBy, 1.5));
+document.getElementById("zoom-out").addEventListener("click", () => svg.transition().duration(280).call(zoom.scaleBy, 0.67));
+document.getElementById("zoom-fit").addEventListener("click", () => { g.selectAll("*").remove(); render(); });
+
+/* ── Theme filter pills ── */
+function buildPills() {
+  const c = document.getElementById("theme-pills"); c.innerHTML = "";
+  for (const [th, col] of Object.entries(THEME_PAL)) {
+    if (!Object.keys(THEME_PAL).includes(th) || th === "Biomanufacturing & Fermentation Economy") continue;
+    const p = document.createElement("button");
+    p.className = "filter-pill active"; p.style.color = col;
+    p.innerHTML = `<span class="dot" style="background:${col}"></span>${THEME_SHORT[th] || th}`;
+    p.addEventListener("click", () => {
+      if (activeThemes.has(th)) { activeThemes.delete(th); p.classList.remove("active"); }
+      else { activeThemes.add(th); p.classList.add("active"); }
+      render();
+    });
+    c.appendChild(p);
+  }
+}
+
+/* ── Stage legend ── */
+function buildStageLegend() {
+  const c = document.getElementById("stage-legend"); c.innerHTML = "";
+  for (const stage of STAGE_ORDER) {
+    const sw = document.createElement("div"); sw.className = "stage-swatch";
+    sw.innerHTML = `<span style="background:${STAGE_PAL[stage]}"></span>${STAGE_LABEL[stage]}`;
+    c.appendChild(sw);
+  }
+}
+
+/* ── Init ── */
+function init() {
+  if (typeof STARTUP_THEMES_DATA === "undefined") {
+    document.getElementById("loading").textContent = "Error: startup-themes-data.js no encontrado";
+    return;
+  }
+  allStartups = STARTUP_THEMES_DATA.startups || [];
+  document.getElementById("loading").style.display = "none";
+  buildPills();
+  buildStageLegend();
+  render();
+}
+
+if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
+else init();
+
+let _rt;
+window.addEventListener("resize", () => { clearTimeout(_rt); _rt = setTimeout(render, 180); });
+</script>
+</body>
+</html>

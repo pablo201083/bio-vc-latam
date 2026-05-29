@@ -845,7 +845,8 @@ def write_dashboard_data(conn: sqlite3.Connection) -> None:
                sx.scatter_x, sx.scatter_y,
                sx.bio_lens_tags, sx.domain_tags, sx.technology_tags, sx.scale_tags,
                sx.market_label,
-               sx.tech_depth, sx.tech_depth_confidence
+               sx.tech_depth, sx.tech_depth_confidence,
+               e.founded_year
         FROM startup_extended sx
         JOIN entities e ON e.entity_id = sx.startup_id
         LEFT JOIN investment_edges ie ON ie.startup_id = sx.startup_id
@@ -910,6 +911,8 @@ def write_dashboard_data(conn: sqlite3.Connection) -> None:
             # ── Tech depth classification ─────────────────────────────────────
             "tech_depth": r[38] or "unclassified",
             "tech_depth_confidence": round(float(r[39] or 0.5), 3),
+            # ── Temporal data ─────────────────────────────────────────────────
+            "founded_year": int(r[40]) if r[40] is not None else None,
         })
 
     # Cluster summary con métricas para inversor
