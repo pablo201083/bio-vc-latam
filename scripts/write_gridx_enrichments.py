@@ -1,0 +1,471 @@
+"""
+Escribe las clasificaciones bio/non-bio de las 183 gridx_import startups
+al CSV staging/entity_enrichments.csv, listas para ingestar con:
+    python pipeline.py ingest-entity-enrichments
+
+Clasificaciones basadas en lectura directa de short_description (sin API externa).
+"""
+import csv
+import sys
+from datetime import date
+from pathlib import Path
+
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+
+ROOT = Path(__file__).resolve().parent.parent
+STAGING = ROOT / "staging" / "entity_enrichments.csv"
+SOURCE  = f"gridx_import_classifier:{date.today()}"
+
+# ── Datos de clasificación ────────────────────────────────────────────────────
+# (startup_id, canonical_name, is_bio, bio_theme, confidence, summary)
+DATA = [
+    # ── AR ───────────────────────────────────────────────────────────────────
+    ("aipha_g", "Aipha G", False, None, "high",
+     "XR and AI platform for human-object interaction. Not bio."),
+    ("bioceres_sa", "Bioceres S.A.", True, "Bioinputs & Crop Resilience", "high",
+     "Fully-integrated agricultural biotechnology company developing crop trait technologies and biological inputs for South American farmers. Publicly listed on NASDAQ (BIOX), focused on drought tolerance and crop productivity improvements."),
+    ("biotecnofe", "Biotecnofe", True, "Therapeutics", "high",
+     "Argentine biotech developing biotherapeutics for animals using cell-free and in-vitro methods, avoiding animal use in production. Targets veterinary diseases with high-tech biological solutions."),
+    ("calice_biotech", "Calice Biotech", True, "Bioinputs & Crop Resilience", "high",
+     "Uses bioinformatics and gene editing tools to develop higher-yield cannabis cultivars. Applies precision genetics to improve the productivity and phytochemical profile of industrial cannabis plants."),
+    ("caspr_biotech_acq_by_amazon", "Caspr Biotech (acq. by Amazon)", True, "Diagnostics & Health Access", "high",
+     "Developed portable point-of-care kits for DNA/RNA detection with molecular precision, enabling rapid pathogen identification outside laboratory settings. Acquired by Amazon."),
+    ("detx_mol", "Detx Mol", True, "Diagnostics & Health Access", "high",
+     "Argentine molecular diagnostics company developing methodologies for infectious, oncological, and genetic disease detection in humans. Offers simple, scalable diagnostic solutions for clinical and research use."),
+    ("epic_aerospace", "Epic Aerospace", False, None, "high",
+     "Space transportation startup. Not bio."),
+    ("epicca", "Epicca", True, "Biomaterials & Circular Economy", "high",
+     "Manufactures bioplastic materials and packaging products designed to eliminate microplastics and reduce CO2 emissions. Produces green-revolution packaging that fully replaces conventional fossil-fuel-based plastics."),
+    ("eternal_mycofood", "Eternal Mycofood", True, "Food Systems & Alt Proteins", "high",
+     "Produces animal-free fungal-based food products with high nutritional protein value, using AI and computer vision to optimize fermentation. Targets accessible alternative protein for mass consumption."),
+    ("heritas", "Heritas", True, "Diagnostics & Health Access", "high",
+     "Precision medicine company offering genomic diagnostic services across clinical genomics, oncology, human microbiome, and reproductive genomics. Makes advanced genetic testing accessible in Latin America."),
+    ("iov_labs", "IOV Labs", False, None, "high",
+     "Blockchain platform company focused on financial inclusion. Not bio."),
+    ("limay", "Limay", True, "Diagnostics & Health Access", "medium",
+     "Develops biotechnologies to decentralize molecular testing for food quality and health decision-making. Aims to democratize access to rapid, real-time molecular diagnostic tools."),
+    ("meton", "Meton", True, "Therapeutics", "medium",
+     "Uses machine learning, computational simulations, and medicinal pharmacology expertise to discover and advance new drugs into clinical development. Applies AI-driven methods to accelerate drug design."),
+    ("mirai_3d", "Mirai 3D", True, "Diagnostics & Health Access", "medium",
+     "Operates a simulation-based platform using 3D biomodels for surgical planning and training. Combines 3D printing and biomodeling to reduce surgical risk and improve clinical outcomes."),
+    ("moolec", "Moolec", True, "Food Systems & Alt Proteins", "high",
+     "Develops affordable alternative proteins through molecular farming technology, engineering crop plants to produce animal proteins at agricultural scale. Listed company advancing plant-made proteins for food applications."),
+    ("panarum", "Panarum", True, "Therapeutics", "high",
+     "Biotechnology company producing therapeutic proteins and pharmaceutical products for the healthcare sector. Specializes in biopharmaceutical manufacturing for clinical use."),
+    ("selectivity", "Selectivity", True, "Diagnostics & Health Access", "high",
+     "Develops reproductive medical devices that bring fertility treatments to patients' homes. Makes assisted reproductive technology accessible outside clinical settings."),
+    ("uali", "Uali", False, None, "high",
+     "Drone technology and AI for energy asset optimization. Not bio."),
+    ("voltu", "Voltu", False, None, "high",
+     "Electric powertrain manufacturer. Not bio."),
+    ("growpack", "growPack", True, "Biomaterials & Circular Economy", "medium",
+     "Manufactures biomaterials that connect plants and humans through regenerative technologies. Develops living materials and bio-based packaging that transform interaction between people and the environment."),
+
+    # ── BM ───────────────────────────────────────────────────────────────────
+    ("carigenetics", "Carigenetics", True, "Diagnostics & Health Access", "high",
+     "Genetics company transforming pharmaceutical drug development by incorporating non-European genomic data. Addresses the critical gap in pharmacogenomic diversity to improve drug efficacy across populations."),
+
+    # ── BR ───────────────────────────────────────────────────────────────────
+    ("aio_educational_software", "AIO (Educational Software)", False, None, "high",
+     "AI-powered student guidance tool for entrance exam preparation. Not bio."),
+    ("aeroscan_businessproductivity_software", "Aeroscan (Business/Productivity Software)", False, None, "high",
+     "Drone monitoring and airspace management software. Not bio."),
+    ("ages_bioactive", "Ages Bioactive", True, "Therapeutics", "medium",
+     "Develops bioactive compounds targeting musculoskeletal health to prevent aging-related decline in bones, muscles, and joints. Offers science-backed nutraceutical solutions to extend healthy lifespan."),
+    ("aptah", "Aptah", True, "Therapeutics", "high",
+     "Biotech startup developing novel RNA therapies initially targeting cancer and neurodegenerative diseases. Advancing next-generation RNA-based medicines toward the clinic."),
+    ("audsat", "Audsat", False, None, "high",
+     "Satellite monitoring for agricultural financing. Not bio."),
+    ("beegol", "Beegol", False, None, "high",
+     "ML platform for broadband quality monitoring. Not bio."),
+    ("beenoculus", "Beenoculus", False, None, "high",
+     "Mixed reality headsets for education and training. Not bio."),
+    ("bio_bureau_biotechnology", "Bio Bureau Biotechnology", True, "Biomanufacturing & Fermentation Economy", "low",
+     "Brazilian biotech startup focused on sustainable development through biological processes. Operates in the intersection of industrial biotechnology and environmental sustainability."),
+    ("biobreyer", "BioBreyer", True, "Biomanufacturing & Fermentation Economy", "high",
+     "Develops and produces industrial bioprocesses and biological products for agribusiness, pharmaceutical, and food industries. Specializes in fermentation-based manufacturing of bio-based inputs."),
+    ("biomimetic_solutions", "Biomimetic Solutions", True, "Therapeutics", "high",
+     "Innovative tissue engineering company developing biomimetic solutions for regenerative medicine and wound care applications. Applies principles of biological architecture to create functional tissue constructs."),
+    ("biosens", "Biosens", True, "Diagnostics & Health Access", "high",
+     "Deep tech life science startup simplifying access to laboratory diagnosis. Develops accessible diagnostic platforms to democratize clinical testing."),
+    ("biosolvit", "Biosolvit", True, "Nature & Ecosystem Tech", "medium",
+     "Manufactures biomass-based absorber materials from palm tree fern for water treatment and agricultural remediation. Provides biodegradable solutions for environmental contamination control."),
+    ("biotimize", "Biotimize", True, "Biomanufacturing & Fermentation Economy", "high",
+     "Brazilian company specialized in bioprocess development for biopharmaceutical production from mammalian cells, yeast, and bacteria. A leading contract bioprocessing organization in Latin America."),
+    ("brasil_ozonio", "Brasil Ozônio", False, None, "medium",
+     "Manufacturer of industrial ozone treatment systems for environmental applications. Not bio."),
+    ("brisa_robotica", "Brisa Robotica", False, None, "high",
+     "Robotics and autonomous systems for manufacturing. Not bio."),
+    ("brtc", "Brtc", True, "Biomaterials & Circular Economy", "medium",
+     "Develops nanotechnology-based textile and non-textile hospital products including uniforms and masks with embedded antimicrobial properties. Applies nanotech to improve infection prevention in healthcare settings."),
+    ("by_my_cell", "By My Cell", True, "Biomanufacturing & Fermentation Economy", "medium",
+     "Genomics and synthetic biotechnology company developing biological systems for healthcare and industrial applications. Operates at the intersection of synthetic biology and genomic engineering."),
+    ("carenet_longevity", "Carenet Longevity", False, None, "medium",
+     "IoMT and patient telemetry data orchestration platform. Digital health infrastructure, not bio."),
+    ("celer_biotecnologia", "Celer Biotecnologia", True, "Diagnostics & Health Access", "high",
+     "Develops and produces instruments and reagents for automation of clinical diagnostics. Provides high-throughput diagnostic tools to improve laboratory efficiency across Brazil."),
+    ("celluris", "Celluris", True, "Therapeutics", "high",
+     "Developing CAR-T cell immunotherapy (RefuaPepCAR) for cancer treatment. Applies chimeric antigen receptor technology to engineer T cells that target and destroy tumor cells."),
+    ("compass", "Compass", False, None, "high",
+     "3D scanning and printing technology for dental practitioners. Not bio."),
+    ("contech_brasil", "Contech Brasil", True, "Biomaterials & Circular Economy", "medium",
+     "Provides biodegradable chemicals for the paper and cellulose industry. Develops bio-based chemical solutions that replace conventional fossil-derived industrial chemicals."),
+    ("corsync", "Cor.Sync", True, "Diagnostics & Health Access", "high",
+     "Developed infarction diagnostic technology delivering laboratory-accurate troponin results within minutes in emergency settings. Enables fast cardiac biomarker testing to improve heart attack triage."),
+    ("delfos", "Delfos", False, None, "high",
+     "AI for energy industry failure prediction. Not bio."),
+    ("dioxd", "Dioxd", True, "Bioinputs & Crop Resilience", "medium",
+     "Agri-tech company focused on seed development and agricultural improvement. Applies technology to enhance seed quality and crop performance."),
+    ("elytron_security", "Elytron Security", False, None, "high",
+     "Cybersecurity consulting and auditing services. Not bio."),
+    ("fk_biotecnologia", "FK Biotecnologia", True, "Therapeutics", "high",
+     "Develops autologous tumor antigen-based therapeutic vaccines for prostate cancer patients at high recurrence risk after surgery. Uses patients' own tumor cells to create personalized cancer immunotherapy."),
+    ("ft_sistemas_sa", "FT Sistemas S.A.", False, None, "high",
+     "Manufacturer of remotely piloted aircraft and aeronautical systems. Not bio."),
+    ("fabns", "FabNS", True, "Diagnostics & Health Access", "medium",
+     "Develops scientific-grade instruments for micro and nano-Raman spectroscopy and analytical tools for large optical spectroscopy datasets. Serves life science research and molecular diagnostics laboratories."),
+    ("fix_it", "Fix it", False, None, "medium",
+     "Medical orthopedic splints made with thermoformed plastic and 3D printing. Not bio."),
+    ("futr_bio", "Futr Bio", True, "Therapeutics", "high",
+     "Developing mRNA vaccine technology incorporating natural UTRs and molecular boosters to produce potent immune responses. Building next-generation mRNA vaccination platforms for infectious diseases."),
+    ("genomika_diagnosticos", "Genomika Diagnosticos", True, "Diagnostics & Health Access", "high",
+     "Clinical genetics laboratory providing genetic and immunological testing services and personalized medicine solutions. Offers comprehensive genomic testing including cancer profiling and rare disease diagnosis."),
+    ("glucogear", "GlucoGear", True, "Diagnostics & Health Access", "medium",
+     "Applies artificial intelligence to personalize diabetes treatment protocols. Enables precision management of blood glucose based on individual metabolic patterns."),
+    ("greenv", "GreenV", False, None, "high",
+     "EV charging infrastructure company. Not bio."),
+    ("hoobox_one", "HOOBOX ONE", True, "Diagnostics & Health Access", "low",
+     "Healthtech company using AI and computer vision to simplify patient journeys and clinical workflows. Applies machine vision to healthcare process automation."),
+    ("hitech_electric", "Hitech Electric", False, None, "high",
+     "Electric vehicle manufacturer. Not bio."),
+    ("huna", "Huna", True, "Diagnostics & Health Access", "high",
+     "Develops an AI cancer screening engine that applies artificial intelligence to medical imaging for early cancer detection. Makes cancer screening faster, cheaper, and universally accessible."),
+    ("ibbx_innovation", "IBBx Innovation", False, None, "high",
+     "Wireless energy transfer technology patents. Not bio."),
+    ("inpulse_medical", "InPulse Medical", True, "Diagnostics & Health Access", "low",
+     "Technology-based solutions for the healthcare industry. Develops health tech tools for clinical applications."),
+    ("insitu", "InSitu", True, "Therapeutics", "high",
+     "Using cell therapy to develop a 3D biobandage containing stem cells for treatment of chronic wounds and severe burns. Advances extracellular nanovesicle-based regenerative medicine solutions."),
+    ("kaiima", "Kaiima", True, "Bioinputs & Crop Resilience", "high",
+     "Develops genetic and breeding technology to improve plant productivity, focusing on elite castor bean hybrid development. Applies advanced genomics to enhance crop yield and resilience across markets."),
+    ("leoparda_electric_now_renamed_to_vammo", "Leoparda Electric (now renamed to Vammo)", False, None, "high",
+     "Electric motorcycle manufacturer. Not bio."),
+    ("letrus", "Letrus", False, None, "high",
+     "EdTech platform for writing education. Not bio."),
+    ("linda_lifetech", "Linda Lifetech", True, "Diagnostics & Health Access", "high",
+     "Health-tech platform using AI to detect breast cancer at early stages, making screening accessible to all income levels. Applies deep learning to mammography and other imaging modalities."),
+    ("lizarbio", "LizarBio", True, "Therapeutics", "high",
+     "Develops cell-based therapies to treat heart failure and Rett syndrome, producing cardiac cells for transplantation. Advances regenerative medicine using stem cell-derived cardiac therapies."),
+    ("loud_voice_services", "Loud Voice Services", False, None, "high",
+     "AI voice solutions and marketplace for conversational AI. Not bio."),
+    ("lume_robotics", "Lume Robotics", False, None, "high",
+     "Autonomous vehicle robotics technology. Not bio."),
+    ("mendelics", "Mendelics", True, "Diagnostics & Health Access", "high",
+     "Clinical genetics laboratory providing rapid and accurate DNA sequencing for genetic diagnosis, cancer genomics, and rare disease testing. One of the largest genetic testing providers in Latin America."),
+    ("moondo", "Moondo", True, "Food Systems & Alt Proteins", "high",
+     "Brazilian cellular agriculture company using tissue engineering to develop cultivated meat and cultivated leather. Applies cell culture technology to produce animal products without slaughter."),
+    ("moya_aero", "Moya Aero", False, None, "high",
+     "High-capacity electric UAVs for cargo delivery. Not bio."),
+    ("naiad", "Naiad", True, "Therapeutics", "medium",
+     "Drug design company combining bioinformatics and artificial intelligence to identify and develop novel therapeutic molecules. Applies computational approaches to accelerate drug discovery."),
+    ("nanotropic_tecnologia", "NanoTropic Tecnologia", True, "Biomaterials & Circular Economy", "high",
+     "Develops and produces an antimicrobial nanoadhesive capable of imbuing materials with long-lasting antimicrobial properties. Enables sustainable infection prevention in healthcare and industrial applications."),
+    ("nanovetores_group", "Nanovetores Group", True, "Therapeutics", "high",
+     "Develops active nano and micro-encapsulated ingredients using proprietary encapsulation technology for pharmaceutical and cosmetic drug delivery. Advances controlled-release systems for improved therapeutic efficacy."),
+    ("nanox_industrial_chemicals", "Nanox (Industrial Chemicals)", False, None, "medium",
+     "Nanostructure materials for industrial product performance enhancement. Not bio."),
+    ("neuralmed", "NeuralMed", True, "Diagnostics & Health Access", "high",
+     "Develops AI-enabled healthcare technology for medical image analysis and clinical decision support. Combines computer vision and medical expertise to improve diagnostic accuracy and efficiency."),
+    ("nuveo", "Nuveo", False, None, "high",
+     "AI document automation platform. Not bio."),
+    ("olho_do_dono", "Olho do Dono", True, "Farm Intelligence", "medium",
+     "Develops 3D camera software to estimate cattle weight using portable scanning devices, enabling precision livestock management. Helps cattle owners monitor herd performance without manual weighing."),
+    ("php_biotech", "PHP Biotech", True, "Therapeutics", "high",
+     "Develops antitumor molecules for triple-negative breast cancer treatment. Advancing novel oncology therapeutics targeting aggressive cancers with limited existing treatments."),
+    ("pickcells", "Pickcells", True, "Diagnostics & Health Access", "high",
+     "Uses computer vision and AI to automate microscopy exams for healthcare diagnosis. Democratizes access to high-quality pathology analysis through intelligent image processing."),
+    ("popai", "Popai", False, None, "medium",
+     "Healthy snack food company using AI for product development. Not biotech."),
+    ("por_a_mais", "Por a mais", False, None, "high",
+     "Educational data science platform. Not bio."),
+    ("recepta_biopharma", "RECEPTA Biopharma", True, "Therapeutics", "high",
+     "Biopharmaceutical company engaged in research, development, production, and commercialization of biopharmaceuticals. Focuses on oncology and other therapeutic areas requiring biological drug solutions."),
+    ("raptor_air", "Raptor Air", False, None, "high",
+     "IoT field measurement and management integration platform. Not bio."),
+    ("rzx_tecnologia", "RZX Tecnologia", False, None, "high",
+     "Safety and engineering services using neuroscientific approaches. Not bio."),
+    ("rizoflora_biotechnology_acq_by_stoller", "Rizoflora Biotechnology (acq. by Stoller)", True, "Bioinputs & Crop Resilience", "high",
+     "Producer of biological products for nematode control in agriculture. Develops microbial biocontrol solutions that protect crops from soil-borne pests without chemical pesticides. Acquired by Stoller."),
+    ("skydrones_tecnologia_avionica_sa", "SkyDrones Tecnologia Avionica S.A", False, None, "high",
+     "Agricultural and inspection drone manufacturer and operator. Not bio."),
+    ("speedbird_aero", "Speedbird Aero", False, None, "high",
+     "Drone logistics and UAS development company. Not bio."),
+    ("terrasense", "TerraSense", False, None, "high",
+     "Environmental monitoring drone company. Not bio."),
+    ("theravax", "TheraVax", True, "Therapeutics", "high",
+     "Develops autologous dendritic cell-based therapeutic vaccines targeting chronic viral infections. Advances personalized immunotherapy using patients' own immune cells to combat persistent pathogens."),
+    ("tismoo", "Tismoo", True, "Diagnostics & Health Access", "high",
+     "Medical laboratory developing personalized medicine for autism spectrum disorder using genomic and multi-omic analysis. Combines science and technology to accelerate understanding and treatment of ASD."),
+    ("tissuelabs", "TissueLabs", True, "Therapeutics", "high",
+     "Platform for creating lab-grown organs and tissues using bioprinting and biomaterials. Develops bioengineered constructs for regenerative medicine, drug testing, and eventual transplantation."),
+    ("tractian", "Tractian", False, None, "high",
+     "Industrial equipment monitoring and predictive maintenance technology. Not bio."),
+    ("vaxinz", "Vaxinz", True, "Therapeutics", "high",
+     "Biotech company focused on developing vaccines, with initial work on COVID-19. Advances vaccine research and development for infectious diseases affecting global public health."),
+    ("vetpix", "Vetpix", True, "Diagnostics & Health Access", "high",
+     "Develops automated microscopy for veterinary diagnostics with AI-powered single-scan diagnosis. Enables rapid, accurate, and portable veterinary pathology analysis."),
+    ("virtech_bio", "Virtech Bio", True, "Therapeutics", "high",
+     "Develops innovative therapies for organ preservation and ex-vivo organ management using bioengineering approaches. Advances bioengineered organ solutions to address transplantation and organ shortage challenges."),
+    ("voltz", "Voltz", False, None, "high",
+     "Electric two-wheeler vehicle manufacturer. Not bio."),
+    ("yak", "YAK", False, None, "medium",
+     "Battery-powered electric tractors for small rural applications. Not bio."),
+    ("ymmunobio", "Ymmunobio", True, "Therapeutics", "high",
+     "Developing IgY-based oral immunotherapy for infectious diseases, focused on reducing antibiotic resistance. Advances avian antibody technology as an alternative to conventional antibiotics."),
+
+    # ── BS ───────────────────────────────────────────────────────────────────
+    ("partanna", "Partanna", False, None, "medium",
+     "Building materials company developing CO2-absorbing construction surfaces. Not bio."),
+
+    # ── CL ───────────────────────────────────────────────────────────────────
+    ("activaq", "ActivaQ", True, "Bioinputs & Crop Resilience", "high",
+     "Biotechnology company developing next-generation biotherapeutics for the veterinary industry, particularly aquaculture. Creates biological treatments to improve animal health and productivity in fish farming."),
+    ("agro_ai", "Agro AI", False, None, "medium",
+     "AI software for agriculture analytics. Not bio."),
+    ("aguamarina_biomineria", "Aguamarina Biomineria", False, None, "medium",
+     "Green mining technology company. Not bio."),
+    ("aintech", "Aintech", True, "Biomaterials & Circular Economy", "low",
+     "Nanotechnology research company developing sustainable materials and processes for resource optimization. Applies nanoscience to create innovative bio-based materials and transformation technologies."),
+    ("biotic", "Biotic", True, "Nature & Ecosystem Tech", "high",
+     "Develops bacterial-based dioxin biosensors and biotechnological alternatives for environmental monitoring and remediation. Uses living microbial systems to detect and reduce toxic environmental contaminants."),
+    ("bioxiplas", "Bioxiplas", False, None, "medium",
+     "Biodegradable disposable uniforms for aquaculture and food industry. Not bio."),
+    ("cleanlight", "CleanLight", False, None, "high",
+     "Solar energy appliance designer and manufacturer. Not bio."),
+    ("copper3d", "Copper3D", True, "Biomaterials & Circular Economy", "high",
+     "Nanotechnology company specializing in antibacterial copper-based nanomaterials for 3D printing in medical, dental, and industrial applications. Enables antimicrobial additive manufacturing at scale."),
+    ("copptech", "Copptech", True, "Biomaterials & Circular Economy", "high",
+     "Develops antimicrobial particles using copper and zinc that eliminate viruses, bacteria, and fungi on contact. Provides broad-spectrum pathogen-control materials for healthcare, food, and textile industries."),
+    ("dart_by_teledx", "DART by Teledx", True, "Diagnostics & Health Access", "high",
+     "Early diagnosis software automatically detecting retinal disease signs from retinal images and metadata. Enables scalable, AI-powered screening for diabetic retinopathy and other sight-threatening conditions."),
+    ("diagnosis_biotech", "Diagnosis Biotech", True, "Diagnostics & Health Access", "high",
+     "Building a distributed network of point-of-care testing machines for mass infectious disease surveillance. Democratizes epidemiological monitoring through decentralized diagnostic infrastructure."),
+    ("domolif", "Domolif", True, "Nature & Ecosystem Tech", "low",
+     "Applies biotechnology to industrial processes, circular economy, and climate change mitigation. Develops bio-based solutions for sustainable industry transformation."),
+    ("ecosea", "EcoSea", True, "Food Systems & Alt Proteins", "high",
+     "Develops sustainable aquaculture systems producing high-quality protein where conventional aquaculture is not viable. Advances next-generation fish and seafood farming to meet growing global protein demand."),
+    ("gauss_control", "Gauss Control", False, None, "high",
+     "Business intelligence platform for traffic accident prevention. Not bio."),
+    ("goquantum", "GoQuantum", False, None, "high",
+     "Quantum-based hardware for post-quantum secure data transmission. Not bio."),
+    ("goquantum_2", "GoQuantum", False, None, "high",
+     "Quantum-based hardware for post-quantum secure data transmission. Not bio."),
+    ("green_biofactory", "Green Biofactory", True, "Biomanufacturing & Fermentation Economy", "high",
+     "Produces biological compounds in microalgae, specializing in synthesis of recombinant proteins. Develops photosynthesis-based biomanufacturing platforms for high-value biomolecule production."),
+    ("harddrones", "Harddrones", False, None, "high",
+     "Drone data capture and flight analytics. Not bio."),
+    ("holos_technology", "Holos Technology", False, None, "high",
+     "XR and AI services for various verticals. Not bio."),
+    ("inti_tech", "INTI-TECH", False, None, "high",
+     "Robotic dry-cleaning systems for solar plants. Not bio."),
+    ("ictiobiotic", "Ictiobiotic", True, "Bioinputs & Crop Resilience", "high",
+     "Develops oral biotherapeutics and probiotic products to enhance the immune system of farmed fish, enabling sustainable aquaculture without antibiotics. Advances fish health through microbiome-based solutions."),
+    ("maquintel", "Maquintel", False, None, "high",
+     "Robotic equipment for mining processes. Not bio."),
+    ("neurognos", "Neurognos", True, "Diagnostics & Health Access", "high",
+     "Developing an Alzheimer's disease diagnostic strategy using cutting-edge biomarker technology for early detection and prognosis. Addresses the critical gap in accessible dementia diagnosis in Latin America."),
+    ("novalact", "Novalact", True, "Bioinputs & Crop Resilience", "medium",
+     "Develops probiotic-based solutions for animal health and agriculture. Advances microbiome science for sustainable farming and livestock management applications."),
+    ("octo_inc", "OCTO INC.", False, None, "high",
+     "IoT and UV data platform for data professionals. Not bio."),
+    ("odd_industries", "Odd Industries", True, "Nature & Ecosystem Tech", "medium",
+     "Builds a satellite and AI-powered atlas of the biosphere to monitor ecosystems and help reverse environmental crises. Provides earth observation data and analytics for conservation and carbon monitoring."),
+    ("pannex_therapeutics", "Pannex Therapeutics", True, "Therapeutics", "high",
+     "Scientifically-based pharmaceutical company developing new drugs to treat chronic musculoskeletal pain. Advances novel mechanisms of action targeting pain at the molecular level."),
+    ("pathovet", "Pathovet", True, "Diagnostics & Health Access", "high",
+     "Veterinary pathological anatomy laboratory using predictive and quantitative biology to diagnose diseases in farmed fish. Enables precision aquatic animal health management through advanced diagnostics."),
+    ("photio", "Photio", True, "Nature & Ecosystem Tech", "medium",
+     "Develops nanotechnological additives and coatings that degrade and eliminate greenhouse gases when applied to paints, asphalt, and construction materials. Enables passive GHG remediation at urban scale."),
+    ("pow_foods", "POW! Foods", True, "Food Systems & Alt Proteins", "high",
+     "Food-biotech startup developing plant-based meat substitutes to shift global food systems toward sustainability. Creates high-protein meat alternatives using food biotechnology and formulation science."),
+    ("reborn_electric_motors", "Reborn Electric Motors", False, None, "high",
+     "Converts heavy-duty machinery to electric. Not bio."),
+    ("rocketbot", "Rocketbot", False, None, "high",
+     "Robotic process automation software. Not bio."),
+    ("scarab", "Scarab", False, None, "high",
+     "Mining waste valorization technology. Not bio."),
+    ("spora_biotech", "Spora Biotech", True, "Biomaterials & Circular Economy", "high",
+     "Develops mushroom mycelium-based leather as a sustainable, cruelty-free substitute for animal leather. Advances fungal biomaterials for fashion and design industries."),
+    ("thyroidprint", "ThyroidPrint", True, "Diagnostics & Health Access", "high",
+     "Develops multi-genetic molecular diagnostic tests to accurately diagnose thyroid cancer from biopsy samples. Enables precise pre-surgical cancer determination to guide treatment decisions."),
+    ("zippedi", "Zippedi", False, None, "high",
+     "Retail tech robotics company. Not bio."),
+
+    # ── CO ───────────────────────────────────────────────────────────────────
+    ("bialtec", "Bialtec", True, "Bioinputs & Crop Resilience", "high",
+     "Biotechnology company making sustainable animal nutrition profitable through intestinal microbiology expertise. Develops microbiome-based nutritional solutions to improve livestock health and feed efficiency."),
+    ("nanofreeze", "Nanofreeze", True, "Biomaterials & Circular Economy", "medium",
+     "Develops a novel bio-nano compound that enables natural refrigeration, freezing water at up to 4°C. Applies bio-inspired nanotechnology to sustainable cold chain and food preservation solutions."),
+    ("progal", "Progal", True, "Food Systems & Alt Proteins", "medium",
+     "Develops alimentary additives from biodiversity-derived active compounds to strengthen immune systems in humans and animals. Produces bioactive food ingredients with functional health benefits."),
+    ("ressolve", "Ressolve", False, None, "high",
+     "AI platform for conversation analysis and interpretation. Not bio."),
+    ("somos_internet", "Somos Internet", False, None, "high",
+     "Internet service provider in Medellin, Colombia. Not bio."),
+
+    # ── CR ───────────────────────────────────────────────────────────────────
+    ("cenibiot", "Cenibiot", True, "Biomanufacturing & Fermentation Economy", "high",
+     "Provides biotechnological research and bioprocessing scaling services, including development of bioactive polyphenolic compounds from cas fruit. Supports scale-up of biological processes for industry."),
+    ("clearleaf", "ClearLeaf", True, "Bioinputs & Crop Resilience", "high",
+     "Provides sustainable crop protection strategies managing harmful pests without environmental or human health impacts. Develops biological and botanical alternatives to synthetic pesticides for global agriculture."),
+    ("establishment_labs", "Establishment Labs", True, "Diagnostics & Health Access", "high",
+     "Global medical technology company focused on patient safety and aesthetic outcomes in breast surgery and reconstruction. Develops advanced silicone implant systems with integrated monitoring technology. Publicly listed (NASDAQ: ESTA)."),
+    ("hemoalgae", "Hemoalgae", True, "Biomanufacturing & Fermentation Economy", "high",
+     "Bio-manufactures hirudin, a blood-thinning compound, using microalgae as the production organism. Advances sustainable bioproduction of anticoagulants for pharmaceutical applications."),
+    ("smatter", "Smatter", True, "Biomaterials & Circular Economy", "high",
+     "Uses biotech to create sustainable materials by combining microorganisms, agricultural waste, and biocontrol agents. Develops living materials for sustainable crop production and circular economy applications."),
+    ("speratum", "Speratum", True, "Therapeutics", "high",
+     "Develops microRNA-directed therapeutic drugs for pancreatic cancer and other malignancies. Advances targeted molecular therapies based on RNA interference mechanisms."),
+
+    # ── GT ───────────────────────────────────────────────────────────────────
+    ("biorgani", "Biorgani", True, "Biomaterials & Circular Economy", "high",
+     "Develops plant-based biopolymers as sustainable packaging substitutes for fossil-fuel-based plastics. Uses custom thermoforming technology to produce compostable packaging from renewable feedstocks."),
+    ("bitmec", "Bitmec", True, "Diagnostics & Health Access", "medium",
+     "Healthtech startup developing IoT and cloud-based solutions to deliver affordable medical care to underserved communities. Bridges the healthcare access gap in low-resource settings through connected diagnostics."),
+    ("hybrico_energy_technologies_ltd", "HYBRICO Energy Technologies Ltd.", False, None, "high",
+     "Hybrid energy systems for telecom in emerging markets. Not bio."),
+    ("kingo", "Kingo", False, None, "high",
+     "Prepaid solar energy service for rural communities. Not bio."),
+
+    # ── MX ───────────────────────────────────────────────────────────────────
+    ("agrorganica", "Agrorganica", True, "Bioinputs & Crop Resilience", "high",
+     "Specializes in formulation, manufacturing, and commercialization of organic and biological agricultural inputs. Develops bio-based fertilizers and crop protection products for sustainable Mexican agriculture."),
+    ("beyond_renewable_energy", "Beyond Renewable Energy", False, None, "high",
+     "EV and distributed energy generation. Not bio."),
+    ("diagtech", "Diagtech", True, "Diagnostics & Health Access", "high",
+     "Operates a molecular diagnostic center performing specialized disease prevention tests, including a sepsis monitoring alarm system. Advances rapid molecular diagnostics for life-threatening conditions."),
+    ("gentec", "Gentec", True, "Biomanufacturing & Fermentation Economy", "high",
+     "Operates Mexico's first private laboratory for CRISPR-Cas9 gene editing. Provides gene editing services and develops genetically engineered organisms for research and biotechnology applications."),
+    ("granatum_bioworks", "Granatum Bioworks", True, "Biomanufacturing & Fermentation Economy", "high",
+     "Affordable lab-to-market platform for biosynthetics tailored to Latin American customers. Accelerates the commercialization of bio-based compounds from research to industrial production."),
+    ("gricha", "Gricha", True, "Food Systems & Alt Proteins", "high",
+     "Produces sustainable insect-based functional food products including cookies and snacks made from grasshopper protein. Addresses protein sustainability by mainstreaming entomophagy through appetizing food formats."),
+    ("grupo_diagnostico_aries", "Grupo Diagnostico Aries", True, "Diagnostics & Health Access", "high",
+     "Provides comprehensive medical diagnostic services across multiple specialties. Delivers clinical laboratory and imaging diagnostics to patients across Mexico."),
+    ("micro_meat", "Micro Meat", True, "Food Systems & Alt Proteins", "high",
+     "Develops cellular agriculture technology to scale culture-based clean meat production. Grows muscle tissue from animal cells without slaughter, advancing sustainable protein for human consumption."),
+    ("microendo", "Microendo", True, "Bioinputs & Crop Resilience", "high",
+     "Creates personalized biofertilizers by harvesting microorganisms from the plant itself to increase crop yield and restore plant health. Applies endophytic microbiology to precision sustainable agriculture."),
+    ("nanoblast", "Nanoblast", True, "Therapeutics", "high",
+     "Develops nanotechnology-based treatments that promote dermal tissue regeneration, enabling healing for diabetic wounds and other chronic skin conditions. Advances nano-enabled regenerative dermatology."),
+    ("novagenic_affinity", "Novagenic Affinity", True, "Diagnostics & Health Access", "high",
+     "Develops pharmacogenetic tests for personalized medicine by extrapolating from metabolic phenotype profiling. Enables precision prescribing by matching drug regimens to individual genetic profiles."),
+    ("polybion", "Polybion", True, "Biomaterials & Circular Economy", "high",
+     "Manufactures bio-assembled materials from circular carbon sources, providing sustainable alternatives for designers and material engineers. Produces bacterial cellulose-based materials to replace animal leather and plastics."),
+    ("prosperia", "PROSPERiA", True, "Diagnostics & Health Access", "medium",
+     "Develops AI-based technology for early detection and treatment of chronic diseases including diabetes and hypertension in emerging markets. Provides scalable digital health screening for underserved populations."),
+    ("skyalert", "SkyAlert", False, None, "high",
+     "Satellite seismic warning system. Not bio."),
+    ("thermy", "Thermy", True, "Diagnostics & Health Access", "high",
+     "Develops a non-invasive thermography-based healthcare platform for early breast cancer detection. Provides mobile and desktop screening tools to reduce late-stage cancer diagnosis in underserved communities."),
+    ("veloz_bio", "Veloz Bio", True, "Biomanufacturing & Fermentation Economy", "high",
+     "Develops a rapid protein production system to scale up and grow new proteins sustainably, including animal-free and alternative proteins. Advances cell-free and fermentation-based manufacturing for the biotech industry."),
+    ("wnd_group", "WND Group", False, None, "high",
+     "IoT network platform for low-power wide area connectivity. Not bio."),
+    ("wayakit", "Wayakit", True, "Biomaterials & Circular Economy", "medium",
+     "Biotech company developing antiviral and antibacterial hygiene product formulations targeting SARS-CoV-2 and other pathogens. Creates bio-based antimicrobial products for consumer and institutional markets."),
+    ("zdx_aerospace", "ZDX Aerospace", False, None, "high",
+     "UAV, ship, and aircraft design and manufacturing. Not bio."),
+
+    # ── NI ───────────────────────────────────────────────────────────────────
+    ("saycel", "SayCel", False, None, "high",
+     "Rural mobile connectivity network operator. Not bio."),
+
+    # ── PA ───────────────────────────────────────────────────────────────────
+    ("advanced_biocontrollers", "Advanced Biocontrollers", True, "Bioinputs & Crop Resilience", "high",
+     "Provides biopesticides and biocontrol agents for agricultural pest management. Researches, develops, and sells insecticides and pesticides derived from biological sources to protect crops sustainably."),
+
+    # ── PE ───────────────────────────────────────────────────────────────────
+    ("biofab", "BioFab", True, "Therapeutics", "high",
+     "Biotechnology company providing 3D bioprinting services for prosthetics, tissues, and organs. Advances biofabrication technology for regenerative medicine and personalized medical implants."),
+    ("pixed", "Pixed", True, "Diagnostics & Health Access", "medium",
+     "Develops myoelectric, personalized biomechanical devices to provide new tools and opportunities for people with disabilities. Creates adjustable bionic prosthetics improving mobility and quality of life."),
+    ("robotic_air", "Robotic Air", False, None, "high",
+     "Aerial robotic equipment for surveying and extreme-condition operations. Not bio."),
+    ("tumi_robotics", "Tumi Robotics", False, None, "high",
+     "Robotics for infrastructure inspection in hard-to-reach areas. Not bio."),
+
+    # ── PR ───────────────────────────────────────────────────────────────────
+    ("cutting_edge_superconductors", "Cutting Edge Superconductors", True, "Diagnostics & Health Access", "medium",
+     "Produces MgB2 superconducting wires for next-generation cryogenic-free MRI machines. Advances magnet technology that makes medical MRI systems more accessible and affordable."),
+    ("isla_pharmaceuticals", "Isla Pharmaceuticals", True, "Therapeutics", "high",
+     "Biotechnology company developing therapies for tropical diseases affecting underserved populations in Latin America and the Caribbean. Advances neglected disease drug development."),
+
+    # ── UY ───────────────────────────────────────────────────────────────────
+    ("aravan_labs", "Aravan Labs", True, "Biomanufacturing & Fermentation Economy", "high",
+     "Develops alternative sources for producing microbiological culture media components, reducing dependence on imported biological inputs. Builds Latin American capacity in microbiological research infrastructure."),
+    ("bentenbiotech", "BentenBiotech", True, "Therapeutics", "high",
+     "Develops heavy-chain recombinant single-domain antibody technologies for animal vaccine applications. Strengthens global animal vaccine R&D capabilities through nanobody-based biologics."),
+    ("ecosativa", "Ecosativa", True, "Bioinputs & Crop Resilience", "high",
+     "Uruguayan biotech company researching and developing innovative quality bio-inputs for organic and ecological agriculture. Advances biological alternatives to synthetic agrochemicals for sustainable farming."),
+    ("metabix_bio", "Metabix Bio", True, "Nature & Ecosystem Tech", "high",
+     "Develops predictive technology for detecting emerging pathogens and microbiological risks in agrifood systems from environmental samples. Enables proactive biosurveillance to protect food supply chains."),
+    ("siquimia", "Siquimia", True, "Biomanufacturing & Fermentation Economy", "high",
+     "Specializes in custom peptide synthesis, providing peptide reagents, building blocks, and catalog peptides to research and pharmaceutical customers. Advances peptide chemistry for drug development and diagnostics."),
+]
+
+
+def main():
+    CSV_COLS = ["entity_id","entity_name","table_name","field_name","new_value","source_url","confidence","notes"]
+    exists = STAGING.exists()
+    rows_written = 0
+    bio_count = 0
+    nonbio_count = 0
+
+    with STAGING.open("a", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=CSV_COLS)
+        if not exists:
+            w.writeheader()
+
+        for sid, name, is_bio, bio_theme, confidence, summary in DATA:
+            scope = "include" if is_bio else "exclude"
+            scope_reason = "gridx_import_classified_bio" if is_bio else "gridx_import_classified_nonbio"
+
+            rows = [
+                {"entity_id": sid, "entity_name": name, "table_name": "startup_extended",
+                 "field_name": "startup_summary_v1", "new_value": summary,
+                 "source_url": SOURCE, "confidence": confidence, "notes": "gridx_import classification"},
+                {"entity_id": sid, "entity_name": name, "table_name": "startup_extended",
+                 "field_name": "is_bio_universe", "new_value": 1 if is_bio else 0,
+                 "source_url": SOURCE, "confidence": confidence, "notes": ""},
+                {"entity_id": sid, "entity_name": name, "table_name": "startup_extended",
+                 "field_name": "scope_decision", "new_value": scope,
+                 "source_url": SOURCE, "confidence": confidence, "notes": scope_reason},
+            ]
+            if bio_theme:
+                rows.append({
+                    "entity_id": sid, "entity_name": name, "table_name": "startup_extended",
+                    "field_name": "bio_theme_primary", "new_value": bio_theme,
+                    "source_url": SOURCE, "confidence": confidence, "notes": "",
+                })
+            for row in rows:
+                w.writerow(row)
+                rows_written += 1
+
+            if is_bio:
+                bio_count += 1
+            else:
+                nonbio_count += 1
+
+    print(f"Escrito: {rows_written} filas → {STAGING.name}")
+    print(f"  BIO (include):     {bio_count}")
+    print(f"  NON-BIO (exclude): {nonbio_count}")
+    print(f"  Total startups:    {bio_count + nonbio_count}")
+    print(f"\nSiguiente paso:")
+    print(f"  python pipeline.py ingest-entity-enrichments")
+    print(f"  python pipeline.py rebuild --phase clustering")
+
+
+if __name__ == "__main__":
+    main()

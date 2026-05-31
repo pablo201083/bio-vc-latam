@@ -32,3 +32,16 @@ tmp/
 # Sensitive
 .env
 .env.local
+
+# Editor / agent workspace
+.claude/worktrees/
+.claude/launch.json
+
+# Backups & leaked temp files
+*.bak
+UsersPABLOA~1*
+
+# Staging: generated intermediate lookups (regenerables)
+staging/startup_lookup.json
+staging/startups_meta.json
+staging/gridx_match_results.csv

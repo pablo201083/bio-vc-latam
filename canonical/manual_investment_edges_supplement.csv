@@ -1,0 +1,3 @@
+investment_id,investor_id,startup_id,round_name,round_stage,announced_date,confidence_score,source_url,notes
+manual-corteva_catalyst-puna_bio-2024,corteva_catalyst,puna_bio,,series-a,2024,0.9,https://www.corteva.com/who-we-are/corteva-catalyst.html,Corteva Catalyst Series A investment in Puna Bio AR; ag biologicals nitrogen fixation
+manual-the_yield_lab_latam-kilimo-2018,the_yield_lab_latam,kilimo,,seed,2018,0.92,https://theyieldlablatam.com/portfolio/,The Yield Lab LATAM first cohort 2018; Kilimo AR water efficiency precision irrigation
