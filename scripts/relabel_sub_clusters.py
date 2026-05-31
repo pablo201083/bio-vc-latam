@@ -40,8 +40,13 @@ STOP = {
     'unique','alternative','traditional','sustainable','environmental',
     'natural','organic','cutting','edge','state','arte','powered','driven',
     'scale','without','without','access',
-    # palabras que emergen de boilerplate pero no caracterizan
-    'ethnic','ultra','thin','collaborative','freight','improves','improves',
+    # gentilicios y geografía — no discriminan el dominio tecnológico
+    'brazilian','chilean','mexican','colombian','argentinian','peruvian',
+    'latin','latam','america','global','regional','local','national',
+    # energía genérica (aparece en muchos contextos no energéticos)
+    'renewable','energy','solar','wind','clean',
+    # boilerplate que no caracteriza
+    'ethnic','ultra','thin','collaborative','freight','improves',
 }
 
 
