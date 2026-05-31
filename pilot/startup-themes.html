@@ -2186,41 +2186,52 @@ function tcol(t){return THEME_PAL[t]||THEME_ADJ;}
 //   • Farm Intelligence separates earliest (k=3) — most semantically isolated
 //   • Food + Biomaterials + Biomanufacturing cluster together (fermentation/bioplatform bridge)
 //   • Bioinputs + Nature Tech cluster together (agro-ecosystem biology)
+// Ward k=2 mega-clusters
 const MEGA_ORDER=[
-  {name:"Medicina & Diagnóstico", color:"#5A4FCF",
-   macros:["Medicina & Diagnóstico"]},
-  {name:"Biología Aplicada",      color:"#2E7D52",
-   macros:["Bioeconomía Industrial","Inteligencia Agrícola","Agrosistemas Biológicos"]},
+  {name:"BioMedicina",  color:"#5A4FCF",
+   macros:["Diagnóstico · Terapéutica"]},
+  {name:"BioIndustria & Territorio", color:"#2E7D52",
+   macros:["Bioplatforma Industrial","Agroecosistemas","Inteligencia de Campo"]},
 ];
+// Ward k=4 macro-clusters
 const MACRO_ORDER=[
-  {name:"Medicina & Diagnóstico",
+  {name:"Diagnóstico · Terapéutica",
    themes:["Diagnostics & Health Access","Therapeutics"],
-   color:"#5A4FCF", mega:"Medicina & Diagnóstico"},
-  {name:"Bioeconomía Industrial",
+   color:"#5A4FCF", mega:"BioMedicina"},
+  {name:"Bioplatforma Industrial",
    themes:["Food Systems & Alt Proteins","Biomaterials & Circular Economy","Biomanufacturing & Platform Technologies"],
-   color:"#8B6D14", mega:"Biología Aplicada"},
-  {name:"Inteligencia Agrícola",
-   themes:["Farm Intelligence"],
-   color:"#2E4E8C", mega:"Biología Aplicada"},
-  {name:"Agrosistemas Biológicos",
+   color:"#8B6D14", mega:"BioIndustria & Territorio"},
+  {name:"Agroecosistemas",
    themes:["Bioinputs & Crop Resilience","Nature & Ecosystem Tech"],
-   color:"#2A7A42", mega:"Biología Aplicada"},
+   color:"#2A7A42", mega:"BioIndustria & Territorio"},
+  {name:"Inteligencia de Campo",
+   themes:["Farm Intelligence"],
+   color:"#2E4E8C", mega:"BioIndustria & Territorio"},
 ];
 const MACRO_MAP={};
 MACRO_ORDER.forEach(m=>m.themes.forEach(t=>{MACRO_MAP[t]=m.name;}));
 const MEGA_MAP={};
 MACRO_ORDER.forEach(m=>m.themes.forEach(t=>{MEGA_MAP[t]=m.mega;}));
 
+// ── K=3 intermediate node — Bioplatforma+Agroecosistemas son hermanos (d=7.43)
+// Farm Intel es outlier (d=11-14 de ambos) y conecta directo desde MEGA
+const K3_NODE={
+  name:"Bioeconomía & Territorio",
+  macros:["Bioplatforma Industrial","Agroecosistemas"],
+  color:"#4A7A42",
+};
+const MACRO_DIRECT_FROM_MEGA=new Set(["Inteligencia de Campo"]);
+
 const THEME_ORDER_DENDRO=[
-  // Mega: Medicina & Diagnóstico
+  // Mega: BioMedicina
   "Diagnostics & Health Access","Therapeutics",
-  // Mega: Biología Aplicada → Bioeconomía Industrial
+  // Mega: BioIndustria & Territorio → Bioplatforma Industrial
   "Food Systems & Alt Proteins","Biomaterials & Circular Economy",
   "Biomanufacturing & Platform Technologies",
-  // → Inteligencia Agrícola
-  "Farm Intelligence",
-  // → Agrosistemas Biológicos
+  // → Agroecosistemas
   "Bioinputs & Crop Resilience","Nature & Ecosystem Tech",
+  // → Inteligencia de Campo (outlier digital, extremo inferior)
+  "Farm Intelligence",
 ];
 
 function shortCluster(cl){
@@ -2257,6 +2268,64 @@ const sorted=[...startups].sort((a,b)=>{
   return a.name.localeCompare(b.name);
 });
 
+// ── Síntesis semántica de toda la familia ────────────────────────────
+// Extrae bigrams frecuentes de todos los one_liners del cluster y devuelve
+// {label, desc} donde label=top bigram (nombre semántico de la familia)
+// y desc=bigrams 2-3 (caracterización de soporte).
+// Reemplaza sub_cluster_label como nombre visible — ese fue asignado por el
+// startup más prominente (sesgo individual), no por la semántica colectiva.
+function clusterSemantic(ss){
+  const STOP=new Set([
+    'and','the','of','in','for','to','a','with','by','from','or','is','are','that','on',
+    'at','its','an','as','via','into','using','based','their','through','which','solutions',
+    'systems','technology','platform','development','provides','develops','creates','company',
+    'startup','enables','help','across','while','more','than','used','new','novel',
+    'innovative','first','next','generation','world','global','latin','america','latam',
+    'provide','offer','build','builds','built','makes','make','uses','designed',
+    'focused','focus','approach','process','product','products','services','service','market',
+    'this','they','has','have','been','will','can','does','also','both','each','such','other',
+    'powered','driven','scale','high','full','core','main','real','open',
+    'produces','produced','produce','including','developed','allow','allows','allowing',
+    'without','improve','improving','access','reduce','reducing','increase','increasing',
+    'different','specific','multiple','various','unique','alternative','traditional',
+    'sustainable','environmental','natural','organic',
+    'combining','combination','integrate','integrates','leveraging','leverage',
+    'cutting','edge','state','arte','industry','industries','sector','sectors',
+  ]);
+  function tokenize(text){
+    return text.toLowerCase()
+      .replace(/[^a-záéíóúñ\s]/gi,' ')
+      .split(/\s+/).map(w=>w.trim())
+      .filter(w=>w.length>3&&!STOP.has(w));
+  }
+  const uniFreq={}, biFreq={};
+  ss.forEach(s=>{
+    const words=tokenize(s.one_liner||'');
+    words.forEach((w,i)=>{
+      uniFreq[w]=(uniFreq[w]||0)+1;
+      if(i<words.length-1){
+        const bg=w+' '+words[i+1];
+        biFreq[bg]=(biFreq[bg]||0)+1;
+      }
+    });
+  });
+  const topBi=Object.entries(biFreq)
+    .filter(([,n])=>n>=2)
+    .sort((a,b)=>b[1]-a[1])
+    .map(([bg])=>bg);
+  const topUni=Object.entries(uniFreq)
+    .sort((a,b)=>b[1]-a[1])
+    .slice(0,5).map(([w])=>w);
+
+  // label = top bigram; desc = siguientes 2 bigrams (sin repetir el label)
+  const label=topBi[0]||topUni.slice(0,2).join(' ');
+  const descBi=topBi.slice(1,3);
+  const desc=descBi.length>=2 ? descBi.join(' · ')
+    : descBi.length===1       ? descBi[0]
+    : topUni.slice(0,3).join(' · ');
+  return {label, desc};
+}
+
 const svg=document.getElementById("dendro-svg");
 const tt=document.getElementById("dendro-tt");
 const NS="http://www.w3.org/2000/svg";
@@ -2272,38 +2341,62 @@ function build(){
   const PAD={t:20,r:20,b:20,l:20};
   const CW=W-PAD.l-PAD.r;
 
-  // ── Fixed X columns for tree hierarchy (5 levels: Root→Mega→Macro→Theme→Clust) ─
-  const X_ROOT  = PAD.l+8;
-  const X_MEGA  = PAD.l+48;
-  const X_MACRO = PAD.l+96;
-  const X_THEME = PAD.l+152;
-  const X_CLUST = PAD.l+200;
-  const X_DOTS  = PAD.l+214;
-  // Reserve right margin for cluster labels — at least 180px, up to 22% of width
-  const LABEL_W = Math.max(180, Math.min(260, CW*0.22));
-  const MAX_DOT_X = W-PAD.r-LABEL_W-6;
+  // ── Fixed X columns (Root→Mega→K3→Macro→Theme→SubCluster→Strip→Count) ──
+  const X_ROOT  = PAD.l+18;
+  const X_MEGA  = PAD.l+108;
+  const X_K3    = PAD.l+172;
+  const X_MACRO = PAD.l+252;
+  const X_THEME = PAD.l+328;
+  const X_CLUST = PAD.l+366;
+  const X_SUB   = PAD.l+378;
+  const SUB_W   = Math.max(120, Math.min(155, CW*0.14));
 
-  // ── Build cluster list (data first, draw later) ───────────────────
+  const X_STRIP = X_SUB + SUB_W + 12;
+
+
+  // ── Funding stage → dot color ─────────────────────────────────────
+  const STAGE_COL={
+    "pre-seed":"#C8D5E8","seed":"#7EB8F5","accelerator":"#67E8F9",
+    "series-a":"#4ADE80","series-b":"#16A34A","series-c":"#166534",
+    "series-c+":"#064E3B","growth":"#F59E0B",
+  };
+  function dotColor(s){
+    return STAGE_COL[s.funding_stage]||tcol(s.bio_theme)||"#bbb";
+  }
+  function dotR(s,baseR){
+    // quality 0-10 → scale 0.75–1.5×
+    const q=s.quality_score||5;
+    return baseR*(0.75+(q/10)*0.75);
+  }
+
+  // ── Build cluster list grouped by sub_cluster_label (not HDBSCAN label) ─
+  // This collapses ~80 HDBSCAN rows into ~34 semantic sub-clusters — far more readable
   const clusters=[];
   MACRO_ORDER.forEach(m=>{
     m.themes.forEach(theme=>{
       const grp=new Map();
       sorted.forEach(s=>{
         if(s.bio_theme!==theme)return;
-        const k=shortCluster(s.cluster_label)||"—";
+        // Use sub_cluster_label (semantic) as grouping key; fall back to shortCluster
+        const k=s.sub_cluster_label||shortCluster(s.cluster_label)||"—";
         if(!grp.has(k))grp.set(k,[]);
         grp.get(k).push(s);
       });
-      [...grp.entries()].sort((a,b)=>a[0].localeCompare(b[0])).forEach(([key,ss])=>{
-        clusters.push({macro:m.name,macroColor:m.color,theme,label:key,startups:ss,color:tcol(theme)});
-      });
+      // Sort sub-clusters by size desc (largest first)
+      [...grp.entries()]
+        .sort((a,b)=>b[1].length-a[1].length)
+        .forEach(([key,ss])=>{
+          // Sort startups within sub-cluster by quality desc for visual
+          ss.sort((a,b)=>(b.quality_score||0)-(a.quality_score||0));
+          clusters.push({macro:m.name,macroColor:m.color,theme,label:key,startups:ss,color:tcol(theme)});
+        });
     });
   });
 
   // ── Dynamic height: gap between mega groups (18px), between macros (10px) ──
   const N=clusters.length;
-  const GAP_MEGA=18;   // gap separating the 2 mega groups
-  const GAP_MACRO=10;  // gap separating macro groups within a mega
+  const GAP_MEGA=26;
+  const GAP_MACRO=16;
   const nMegaGaps=MEGA_ORDER.length-1;
   // Count macro group boundaries (excluding mega boundaries)
   let nMacroGaps=0;
@@ -2314,7 +2407,7 @@ function build(){
     prev=c.macro;
   });}
   const totalGap=nMegaGaps*GAP_MEGA + (MACRO_ORDER.length-1-nMegaGaps)*GAP_MACRO;
-  const MIN_ROW=17;
+  const MIN_ROW=20;
   const H=Math.max(520, N*MIN_ROW+totalGap+PAD.t+PAD.b);
   svg.parentElement.style.height=H+"px";
   svg.setAttribute("viewBox",`0 0 ${W} ${H}`);
@@ -2398,102 +2491,196 @@ function build(){
   // ── Root → Mega ───────────────────────────────────────────────────
   const megaMids=[...megaY.values()].map(m=>m.midY);
   if(megaMids.length>1)
-    spineV(X_ROOT,Math.min(...megaMids),Math.max(...megaMids),"#3a3028","0.28","2");
+    spineV(X_ROOT,Math.min(...megaMids),Math.max(...megaMids),"#3a3028","0.35","3");
   megaY.forEach((m,name)=>{
     const mega=MEGA_ORDER.find(o=>o.name===name);
-    dropH(X_ROOT,X_MEGA,m.midY,mega.color,"0.70","2.5");
+    dropH(X_ROOT,X_MEGA,m.midY,mega.color,"0.82","3.5");
   });
 
-  // ── Mega → Macro ──────────────────────────────────────────────────
+  // ── Mega → Macro (con nodo K3 intermedio en BioIndustria) ──────────
   MEGA_ORDER.forEach(mega=>{
     const mgData=megaY.get(mega.name);
     if(!mgData)return;
-    const mMids=mega.macros.map(mn=>macroY.get(mn)).filter(Boolean).map(m=>m.midY);
-    if(mMids.length>1)
-      spineV(X_MEGA,Math.min(...mMids),Math.max(...mMids),mega.color,"0.60","1.8");
-    mMids.forEach(my=>dropH(X_MEGA,X_MACRO,my,mega.color,"0.62","1.8"));
+    if(mega.name==="BioIndustria & Territorio"){
+      // Farm Intel: rama directa MEGA→MACRO (larga, no pasa por K3)
+      const farmData=macroY.get("Inteligencia de Campo");
+      // K3 target: centroide de sus macros
+      const k3Ms=K3_NODE.macros.map(mn=>macroY.get(mn)).filter(Boolean);
+      const k3MinY=Math.min(...k3Ms.map(m=>m.minY));
+      const k3MaxY=Math.max(...k3Ms.map(m=>m.maxY));
+      const k3MidY=(k3Ms[0].midY+k3Ms[k3Ms.length-1].midY)/2;
+      // Spine BioIndustria: de farmY a k3MidY
+      const spinePts=[farmData?.midY,k3MidY].filter(v=>v!=null);
+      if(spinePts.length>1)spineV(X_MEGA,Math.min(...spinePts),Math.max(...spinePts),mega.color,"0.65","2.8");
+      // Rama directa para Farm Intel (salta K3)
+      if(farmData)dropH(X_MEGA,X_MACRO,farmData.midY,mega.color,"0.75","2.8");
+      // Rama MEGA→K3
+      dropH(X_MEGA,X_K3,k3MidY,mega.color,"0.75","2.8");
+      // K3 spine (entre sus macros)
+      const k3MacroMids=k3Ms.map(m=>m.midY);
+      if(k3MacroMids.length>1)spineV(X_K3,Math.min(...k3MacroMids),Math.max(...k3MacroMids),K3_NODE.color,"0.70","2.2");
+      // Ramas K3→MACRO
+      k3MacroMids.forEach(my=>dropH(X_K3,X_MACRO,my,K3_NODE.color,"0.68","2.2"));
+      // Círculo K3
+      el("circle",{cx:X_K3,cy:k3MidY,r:"6",fill:K3_NODE.color,opacity:"0.92",
+        stroke:"rgba(255,255,255,.88)","stroke-width":"1.8"},layerNodes);
+      // Label K3 (rotado entre X_K3 y X_MACRO)
+      const k3lx=(X_MEGA+X_K3)/2;
+      const k3LblW=K3_NODE.name.length*6.2+14;
+      el("rect",{x:k3lx-k3LblW/2,y:k3MidY-8,width:k3LblW,height:16,
+        fill:"#f7f4ee",opacity:"0.90",rx:"3",
+        transform:`rotate(-90,${k3lx},${k3MidY})`},layerLabels);
+      el("text",{x:k3lx,y:k3MidY,"text-anchor":"middle","dominant-baseline":"central",
+        "font-size":"10","font-weight":"700",fill:K3_NODE.color,opacity:"0.90",
+        "font-family":"DM Sans,sans-serif","pointer-events":"none",
+        transform:`rotate(-90,${k3lx},${k3MidY})`},layerLabels).textContent=K3_NODE.name;
+    } else {
+      // BioMedicina: normal (rama directa MEGA→MACRO)
+      const mMids=mega.macros.map(mn=>macroY.get(mn)).filter(Boolean).map(m=>m.midY);
+      if(mMids.length>1)spineV(X_MEGA,Math.min(...mMids),Math.max(...mMids),mega.color,"0.65","2.8");
+      mMids.forEach(my=>dropH(X_MEGA,X_MACRO,my,mega.color,"0.75","2.8"));
+    }
 
     // Mega circle
-    const mgCirc=el("circle",{cx:X_MEGA,cy:mgData.midY,r:"7",fill:mega.color,opacity:"0.92",
-      stroke:"rgba(255,255,255,.85)","stroke-width":"1.8",cursor:"pointer"},layerNodes);
-    const mgTxt=el("text",{x:X_MEGA,y:mgData.midY,"text-anchor":"middle","dominant-baseline":"central",
-      "font-size":"5.5","font-weight":"800",fill:"#fff",
-      "font-family":"DM Sans,sans-serif","pointer-events":"none"},layerLabels);
-    mgTxt.textContent=(mgData.maxY-mgData.minY>40)?mega.name.split(" ")[0]:"";
+    const mgCirc=el("circle",{cx:X_MEGA,cy:mgData.midY,r:"9",fill:mega.color,opacity:"0.93",
+      stroke:"rgba(255,255,255,.92)","stroke-width":"2.2",cursor:"pointer"},layerNodes);
 
-    // Mega label — rotated between X_ROOT and X_MEGA (vertical, like macro labels)
+    // Mega label — rotated in the wide column between ROOT and MEGA
     const mlx=(X_ROOT+X_MEGA)/2;
+    const mgLblW=mega.name.length*7.2+14;
+    const mgHit=el("rect",{x:mlx-mgLblW/2,y:mgData.midY-9,width:mgLblW,height:18,
+      fill:"#f7f4ee",opacity:"0.90",rx:"3",cursor:"pointer",
+      transform:`rotate(-90,${mlx},${mgData.midY})`},layerLabels);
     const mgLbl=el("text",{x:mlx,y:mgData.midY,"text-anchor":"middle","dominant-baseline":"central",
-      "font-size":"9","font-weight":"800",fill:mega.color,opacity:"0.88",
+      "font-size":"12","font-weight":"800",fill:mega.color,opacity:"0.92",
       "font-family":"DM Sans,sans-serif","pointer-events":"none",
       transform:`rotate(-90,${mlx},${mgData.midY})`},layerLabels);
     mgLbl.textContent=mega.name;
 
-    // Interaction: click mega circle to highlight clade
-    mgCirc.addEventListener("click",(e)=>{
-      e.stopPropagation();
-      highlightClade("mega",mega.name);
-    });
+    // Interaction: click circle OR label area
+    const mgClick=(e)=>{ e.stopPropagation(); highlightClade("mega",mega.name,X_MEGA,mgData.midY,9,mega.color); };
+    mgCirc.addEventListener("click",mgClick);
+    mgHit.addEventListener("click",mgClick);
     mgCirc.addEventListener("mouseenter",()=>mgCirc.setAttribute("opacity","1"));
-    mgCirc.addEventListener("mouseleave",()=>mgCirc.setAttribute("opacity","0.92"));
+    mgCirc.addEventListener("mouseleave",()=>mgCirc.setAttribute("opacity","0.93"));
+    mgHit.addEventListener("mouseenter",()=>mgLbl.setAttribute("opacity","1"));
+    mgHit.addEventListener("mouseleave",()=>mgLbl.setAttribute("opacity","0.92"));
   });
 
   // ── Macro → Theme ────────────────────────────────────────────────
+  // Pre-compute macro startup counts for tooltips
+  const macroCounts={};
+  sorted.forEach(s=>{
+    const m=MACRO_ORDER.find(m=>m.themes.includes(s.bio_theme));
+    if(m) macroCounts[m.name]=(macroCounts[m.name]||0)+1;
+  });
+  const megaCounts={};
+  MEGA_ORDER.forEach(mg=>{
+    megaCounts[mg.name]=mg.macros.reduce((sum,mn)=>sum+(macroCounts[mn]||0),0);
+  });
+
   MACRO_ORDER.forEach(macro=>{
     const mData=macroY.get(macro.name);
     if(!mData)return;
     const tMids=macro.themes.map(th=>themeY.get(th)).filter(Boolean).map(t=>t.midY);
     if(tMids.length>1)
-      spineV(X_MACRO,Math.min(...tMids),Math.max(...tMids),macro.color,"0.65","1.6");
-    tMids.forEach(ty=>dropH(X_MACRO,X_THEME,ty,macro.color,"0.58","1.4"));
+      spineV(X_MACRO,Math.min(...tMids),Math.max(...tMids),macro.color,"0.72","2.2");
+    tMids.forEach(ty=>dropH(X_MACRO,X_THEME,ty,macro.color,"0.70","2.2"));
 
     // Macro circle
-    const mcCirc=el("circle",{cx:X_MACRO,cy:mData.midY,r:"5",fill:macro.color,opacity:"0.92",
-      stroke:"rgba(255,255,255,.8)","stroke-width":"1.3",cursor:"pointer"},layerNodes);
+    const mcCirc=el("circle",{cx:X_MACRO,cy:mData.midY,r:"7",fill:macro.color,opacity:"0.93",
+      stroke:"rgba(255,255,255,.88)","stroke-width":"1.8",cursor:"pointer"},layerNodes);
 
-    // Macro label: rotated between X_MEGA and X_MACRO
-    const lx=(X_MEGA+X_MACRO)/2+2;
+    // Macro label: between K3 and MACRO for K3-macros, between MEGA and MACRO for direct macros
+    const isThroughK3=!MACRO_DIRECT_FROM_MEGA.has(macro.name)&&macro.mega!=="BioMedicina";
+    const lx=isThroughK3?(X_K3+X_MACRO)/2:(X_MEGA+X_MACRO)/2;
+    const macroLblW=macro.name.length*6.6+14;
+    const mcHit=el("rect",{x:lx-macroLblW/2,y:mData.midY-8,width:macroLblW,height:16,
+      fill:"#f7f4ee",opacity:"0.90",rx:"3",cursor:"pointer",
+      transform:`rotate(-90,${lx},${mData.midY})`},layerLabels);
     const mlbl=el("text",{x:lx,y:mData.midY,"text-anchor":"middle","dominant-baseline":"central",
-      "font-size":"8.5","font-weight":"700",fill:macro.color,opacity:"0.85",
+      "font-size":"11","font-weight":"700",fill:macro.color,opacity:"0.90",
       "font-family":"DM Sans,sans-serif","pointer-events":"none",
       transform:`rotate(-90,${lx},${mData.midY})`},layerLabels);
     mlbl.textContent=macro.name;
 
-    // Interaction: click macro circle
-    mcCirc.addEventListener("click",(e)=>{
+    // Count badge next to circle
+    const cnt=macroCounts[macro.name]||0;
+    const megaTotal=megaCounts[macro.mega]||0;
+    const isOnlyMacro=MEGA_ORDER.find(mg=>mg.name===macro.mega)?.macros.length===1;
+    el("text",{x:X_MACRO+11,y:mData.midY,"dominant-baseline":"central",
+      "font-size":"8","font-weight":"700",fill:macro.color,opacity:"0.55",
+      "font-family":"DM Sans,sans-serif","pointer-events":"none"},layerNodes)
+      .textContent=cnt;
+
+    // Tooltip helper
+    function showMacroTT(e){
       e.stopPropagation();
-      highlightClade("macro",macro.name);
-    });
+      const rect=svg.parentElement.getBoundingClientRect();
+      const px=e.clientX-rect.left, py=e.clientY-rect.top;
+      tt.style.left=(px+16)+"px"; tt.style.top=(py-12)+"px"; tt.style.right="";
+      const themeList=macro.themes.map(t=>SHORT_THEME[t]||t).join(", ");
+      const soloNote=isOnlyMacro
+        ? `<div class="a-tt-body" style="color:#888;font-style:italic;margin-top:3px">Único macro-clado de ${macro.mega} — alta cohesión semántica</div>`
+        : "";
+      tt.innerHTML=`<div class="a-tt-name">${macro.name}</div>`
+        +`<div class="a-tt-theme" style="color:${macro.color}">${cnt} startups · ${themeList}</div>`
+        +soloNote;
+      tt.classList.add("vis");
+    }
+
+    // Interaction: click circle OR label area
+    const mcClick=(e)=>{ e.stopPropagation(); highlightClade("macro",macro.name,X_MACRO,mData.midY,7,macro.color); };
+    mcCirc.addEventListener("click",mcClick);
+    mcHit.addEventListener("click",mcClick);
+    mcCirc.addEventListener("mousemove",showMacroTT);
+    mcCirc.addEventListener("mouseleave",()=>{ mcCirc.setAttribute("opacity","0.93"); tt.classList.remove("vis"); });
     mcCirc.addEventListener("mouseenter",()=>mcCirc.setAttribute("opacity","1"));
-    mcCirc.addEventListener("mouseleave",()=>mcCirc.setAttribute("opacity","0.92"));
+    mcHit.addEventListener("mousemove",showMacroTT);
+    mcHit.addEventListener("mouseleave",()=>{ mlbl.setAttribute("opacity","0.90"); tt.classList.remove("vis"); });
+    mcHit.addEventListener("mouseenter",()=>mlbl.setAttribute("opacity","1"));
   });
 
   // ── Theme → Cluster ──────────────────────────────────────────────
   themeY.forEach((tData,theme)=>{
     const cys=clusters.filter(c=>c.theme===theme).map(c=>c.y);
     if(cys.length>1)
-      spineV(X_THEME,Math.min(...cys),Math.max(...cys),tData.color,"0.65","1.2");
-    cys.forEach(cy=>dropH(X_THEME,X_CLUST,cy,tData.color,"0.55","0.85"));
-    el("circle",{cx:X_THEME,cy:tData.midY,r:"3.5",fill:tData.color,opacity:"0.92",
-      stroke:"rgba(255,255,255,.75)","stroke-width":"1"},layerNodes);
-    const tl=el("text",{x:X_THEME-7,y:tData.midY,"text-anchor":"end","dominant-baseline":"central",
-      "font-size":"8.5","font-weight":"600",fill:tData.color,opacity:"0.82",
+      spineV(X_THEME,Math.min(...cys),Math.max(...cys),tData.color,"0.72","1.7");
+    cys.forEach(cy=>dropH(X_THEME,X_CLUST,cy,tData.color,"0.65","1.3"));
+    el("circle",{cx:X_THEME,cy:tData.midY,r:"5",fill:tData.color,opacity:"0.94",
+      stroke:"rgba(255,255,255,.82)","stroke-width":"1.5"},layerNodes);
+    const themeTxt=SHORT_THEME[theme]||theme;
+    const themeLblW=themeTxt.length*5.9+10;
+    el("rect",{x:X_THEME-12-themeLblW,y:tData.midY-7,width:themeLblW,height:14,
+      fill:"#f7f4ee",opacity:"0.90",rx:"2"},layerLabels);
+    const tl=el("text",{x:X_THEME-12,y:tData.midY,"text-anchor":"end","dominant-baseline":"central",
+      "font-size":"10","font-weight":"700",fill:tData.color,opacity:"0.90",
       "font-family":"DM Sans,sans-serif","pointer-events":"none"},layerLabels);
-    tl.textContent=SHORT_THEME[theme]||theme;
+    tl.textContent=themeTxt;
   });
 
   // ── Root node ────────────────────────────────────────────────────
-  el("circle",{cx:X_ROOT,cy:rootMidY,r:"6.5",fill:"#3a3028",opacity:"0.92",
-    stroke:"rgba(255,255,255,.88)","stroke-width":"1.8"},layerNodes);
+  el("circle",{cx:X_ROOT,cy:rootMidY,r:"8",fill:"#3a3028",opacity:"0.93",
+    stroke:"rgba(255,255,255,.92)","stroke-width":"2.2"},layerNodes);
   el("text",{x:X_ROOT,y:rootMidY,"text-anchor":"middle","dominant-baseline":"central",
-    "font-size":"5","font-weight":"700",fill:"#fff",
+    "font-size":"6","font-weight":"800",fill:"#fff",
     "font-family":"DM Sans,sans-serif","pointer-events":"none"},layerLabels).textContent="BIO";
 
   // ── Clade highlight state ─────────────────────────────────────────
   let _hlActive=null;
-  function highlightClade(type,name){
-    if(_hlActive===name){ resetHL(); return; }
-    _hlActive=name;
+  let _hlRing=null;
+
+  function highlightClade(type,name,nodeCx,nodeCy,nodeR,nodeColor){
+    const key=type+":"+name;
+    if(_hlActive===key){ resetHL(); return; }
+    _hlActive=key;
+    // Remove old ring
+    if(_hlRing){ _hlRing.remove(); _hlRing=null; }
+    // Draw selection ring in top layer
+    _hlRing=el("circle",{cx:nodeCx,cy:nodeCy,r:nodeR+6,
+      fill:"none",stroke:nodeColor,"stroke-width":"2.5",opacity:"0.75",
+      "stroke-dasharray":"5,3","pointer-events":"none"},layerHL);
+
     // Determine which themes are in scope
     let inThemes;
     if(type==="mega"){
@@ -2503,73 +2690,91 @@ function build(){
       const mc=MACRO_ORDER.find(m=>m.name===name);
       inThemes=new Set(mc?.themes||[]);
     }
-    // Dim/highlight all dot groups and row rects
     layerDots.querySelectorAll("[data-theme]").forEach(g=>{
-      g.setAttribute("opacity", inThemes.has(g.dataset.theme)?"1":"0.1");
+      g.setAttribute("opacity", inThemes.has(g.dataset.theme)?"1":"0.08");
     });
     layerLabels.querySelectorAll("[data-theme]").forEach(g=>{
-      g.setAttribute("opacity", inThemes.has(g.dataset.theme)?"1":"0.12");
+      g.setAttribute("opacity", inThemes.has(g.dataset.theme)?"1":"0.1");
     });
   }
   function resetHL(){
     _hlActive=null;
+    if(_hlRing){ _hlRing.remove(); _hlRing=null; }
     layerDots.querySelectorAll("[data-theme]").forEach(g=>g.setAttribute("opacity","1"));
     layerLabels.querySelectorAll("[data-theme]").forEach(g=>g.setAttribute("opacity","1"));
   }
-  svg.addEventListener("click",resetHL);
+  // Click on SVG background resets — but NOT clicks on content elements
+  svg.addEventListener("click",(e)=>{
+    if(e.target===svg || e.target.getAttribute("fill")==="#f7f4ee" && !e.target.getAttribute("cursor"))resetHL();
+  });
 
-  // ── Cluster rows: node + startup dots + label ─────────────────────
-  const DOT_R  =Math.max(1.8,Math.min(3.0,rowH*0.26));
-  const DOT_GAP=DOT_R*2+1.0;
+  // ── Cluster rows: ecológico — label + strip de etapa + tokens + count ──
+
+  const STAGE_ORDER_BAR=['pre-seed','seed','accelerator','series-a','series-b','series-c','series-c+','growth'];
+  const STAGE_LBL={"pre-seed":"Pre-seed","seed":"Seed","accelerator":"Aceleradora",
+    "series-a":"Serie A","series-b":"Serie B","series-c":"Serie C","series-c+":"Serie C+","growth":"Growth"};
+
   clusters.forEach(c=>{
-    el("circle",{cx:X_CLUST,cy:c.y,r:"2",fill:c.color,opacity:"0.85",
-      stroke:"rgba(255,255,255,.7)","stroke-width":"0.6"},layerNodes);
+    // Nodo hoja
+    el("circle",{cx:X_CLUST,cy:c.y,r:"3",fill:c.color,opacity:"0.90",
+      stroke:"rgba(255,255,255,.72)","stroke-width":"0.9"},layerNodes);
 
-    // Dot group (tagged for clade highlighting)
-    const dotG=el("g",{"data-theme":c.theme},layerDots);
+    // ── Síntesis semántica: nombre y descripción desde bigrams colectivos ──
+    const sem=clusterSemantic(c.startups);
 
-    // Dots: clip at MAX_DOT_X, track visible count
-    let nVisible=0;
-    c.startups.forEach((s,si)=>{
-      const dx=X_DOTS+si*DOT_GAP+DOT_R;
-      if(dx+DOT_R>MAX_DOT_X)return;
-      nVisible++;
-      const dot=el("circle",{cx:dx,cy:c.y,r:DOT_R,fill:c.color,
-        opacity:"0.72",cursor:"pointer"},dotG);
-      dot.addEventListener("mousemove",e=>{
-        e.stopPropagation();
-        const rect=svg.parentElement.getBoundingClientRect();
-        const px=e.clientX-rect.left, py=e.clientY-rect.top;
-        const toLeft=px>rect.width*0.55;
-        tt.style.left=toLeft?"":(px+14)+"px";
-        tt.style.right=toLeft?(rect.width-px+14)+"px":"";
-        tt.style.top=(py-12)+"px";
-        const val=s.valuation_estimate_usd||0;
-        tt.innerHTML=`<div class="a-tt-name">${s.name}</div>`+
-          `<div class="a-tt-theme" style="color:${c.color}">${s.bio_theme}</div>`+
-          `<div class="a-tt-body">${MACRO_MAP[s.bio_theme]||""} · ${c.label}<br>`+
-          `${s.country||""}${val>0?" · $"+(val>=1000?(val/1000).toFixed(0)+"B":val+"M")+" val.":""}</div>`;
-        tt.classList.add("vis");
-      });
-      dot.addEventListener("mouseleave",()=>tt.classList.remove("vis"));
+    // Label: top bigram como nombre de familia (reemplaza sub_cluster_label)
+    const lblG=el("g",{"data-theme":c.theme},layerLabels);
+    const maxLblChars=Math.floor(SUB_W/5.2);
+    const lblTxt=sem.label.length>maxLblChars?sem.label.slice(0,maxLblChars-1)+'…':sem.label;
+    el("text",{x:X_SUB,y:c.y,"dominant-baseline":"central",
+      "font-size":"9.5","font-weight":"700",fill:c.color,opacity:"0.90",
+      "font-family":"DM Sans,sans-serif","pointer-events":"none"},lblG).textContent=lblTxt;
+
+    // Grupo de datos (descripción: bigrams 2-3)
+    const dataG=el("g",{"data-theme":c.theme},layerDots);
+    const stageCounts={};
+    c.startups.forEach(s=>{
+      const st=s.funding_stage||'unknown';
+      stageCounts[st]=(stageCounts[st]||0)+1;
     });
+    const total=c.startups.length;
 
-    // "+N" overflow
-    const clipped=c.startups.length-nVisible;
-    if(clipped>0){
-      const ox=X_DOTS+nVisible*DOT_GAP+DOT_R+3;
-      el("text",{x:ox,y:c.y,"dominant-baseline":"central",
-        "font-size":"8","font-weight":"600",fill:c.color,opacity:"0.68",
-        "font-family":"DM Sans,sans-serif","pointer-events":"none"},dotG).textContent="+"+clipped;
+    const phraseW=W-PAD.r-X_STRIP-38;
+    if(sem.desc&&phraseW>50){
+      const maxChars=Math.max(8,Math.floor(phraseW/5.2));
+      const phraseTxt=sem.desc.length>maxChars?sem.desc.slice(0,maxChars-1)+'…':sem.desc;
+      el("text",{x:X_STRIP,y:c.y,"dominant-baseline":"central",
+        "font-size":"8.5","font-style":"italic",fill:"#9a8f85",
+        "font-family":"DM Sans,sans-serif","pointer-events":"none"},dataG)
+        .textContent=phraseTxt;
     }
 
-    // Cluster label (tagged for highlight)
-    const lblG=el("g",{"data-theme":c.theme},layerLabels);
-    const maxChars=Math.floor(LABEL_W/6.0);
-    const labelTxt=c.label.length>maxChars?c.label.slice(0,maxChars-1)+"…":c.label;
-    el("text",{x:W-PAD.r-4,y:c.y,"text-anchor":"end","dominant-baseline":"central",
-      "font-size":"9.5","font-weight":"500",fill:c.color,opacity:"0.85",
-      "font-family":"DM Sans,sans-serif","pointer-events":"none"},lblG).textContent=labelTxt;
+    // ── Count ──
+    el("text",{x:W-PAD.r-4,y:c.y,"dominant-baseline":"central","text-anchor":"end",
+      "font-size":"10","font-weight":"700",fill:c.color,opacity:"0.55",
+      "font-family":"DM Sans,sans-serif","pointer-events":"none"},lblG)
+      .textContent=total;
+
+    // Tooltip
+    dataG.style.cursor="default";
+    dataG.addEventListener("mousemove",e=>{
+      e.stopPropagation();
+      const rect=svg.parentElement.getBoundingClientRect();
+      const px=e.clientX-rect.left, py=e.clientY-rect.top;
+      const toLeft=px>rect.width*0.55;
+      tt.style.left=toLeft?"":(px+14)+"px";
+      tt.style.right=toLeft?(rect.width-px+14)+"px":"";
+      tt.style.top=(py-12)+"px";
+      const breakdown=STAGE_ORDER_BAR
+        .filter(st=>stageCounts[st])
+        .map(st=>'<span style="color:'+( STAGE_COL[st]||'#aaa' )+'">'+( STAGE_LBL[st]||st )+' '+stageCounts[st]+'</span>')
+        .join(" · ");
+      tt.innerHTML='<div class="a-tt-name">'+c.label+'</div>'+
+        '<div class="a-tt-theme" style="color:'+c.color+'">'+( SHORT_THEME[c.theme]||c.theme )+'</div>'+
+        '<div class="a-tt-body">'+total+' startups · '+breakdown+'</div>';
+      tt.classList.add("vis");
+    });
+    dataG.addEventListener("mouseleave",()=>tt.classList.remove("vis"));
   });
 }
 

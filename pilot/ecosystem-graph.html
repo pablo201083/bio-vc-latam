@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ecosystem Graph · BIO LATAM</title>
   <link rel="stylesheet" href="./styles.css?v=20260524">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&display=swap" rel="stylesheet">
   <style>
     html, body.eg-page { height: 100%; }
     body.eg-page {
@@ -229,14 +231,130 @@
     }
     #eg-svg:active { cursor: grabbing; }
 
-    /* tooltip */
+    /* ── Rich tooltip ── */
     #eg-tooltip {
-      position: absolute; pointer-events: none;
-      background: rgba(20,18,16,.9); color: #fff;
-      font-size: .7rem; border-radius: 9px; padding: 6px 10px;
-      white-space: normal; z-index: 10; display: none;
-      max-width: 230px; line-height: 1.4;
-      box-shadow: 0 4px 16px rgba(0,0,0,.18);
+      position: absolute; pointer-events: none; z-index: 20;
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 18px; box-shadow: var(--shadow);
+      padding: 13px 14px; width: 320px; max-width: calc(100% - 24px);
+      display: none; flex-direction: column; gap: 9px;
+      font-size: .78rem; color: var(--ink);
+    }
+    #eg-tooltip.visible { display: flex; }
+    .eg-tt-header { display: flex; align-items: flex-start; gap: 10px; }
+    .eg-tt-logo {
+      width: 36px; height: 36px; border-radius: 9px;
+      border: 1px solid var(--line); object-fit: contain;
+      background: rgba(255,255,255,.9); flex-shrink: 0;
+    }
+    .eg-tt-logo-ph {
+      width: 36px; height: 36px; border-radius: 9px; flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center;
+      font-size: .78rem; font-weight: 800; letter-spacing: -.01em;
+      border: 1px solid var(--line);
+    }
+    .eg-tt-header-text { flex: 1; min-width: 0; }
+    .eg-tt-kicker {
+      font-size: .58rem; font-weight: 800; letter-spacing: .15em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 2px;
+    }
+    .eg-tt-title { font-size: .94rem; font-weight: 800; line-height: 1.1; color: var(--ink); }
+    .eg-tt-chips { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 5px; }
+    .eg-tt-chip {
+      display: inline-flex; align-items: center; gap: 4px;
+      border: 1px solid var(--line); border-radius: 999px;
+      background: rgba(255,255,255,.84); color: var(--muted);
+      font-size: .65rem; padding: 2px 7px; white-space: nowrap;
+    }
+    .eg-tt-chip-dot { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; }
+    .eg-tt-meta { font-size: .72rem; color: var(--muted); line-height: 1.45; }
+    .eg-tt-stats {
+      display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 5px;
+    }
+    .eg-tt-stat {
+      border: 1px solid rgba(217,206,190,.7); border-radius: 9px;
+      background: rgba(255,255,255,.76); padding: 5px 6px;
+    }
+    .eg-tt-stat span { display: block; color: var(--muted); font-size: .6rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .eg-tt-stat strong { display: block; margin-top: 2px; font-size: .88rem; font-weight: 800; color: var(--ink); }
+    .eg-tt-stat.hi { border-color: rgba(15,118,110,.28); background: rgba(209,244,238,.32); }
+    .eg-tt-stat.hi strong { color: #0f766e; }
+
+    /* ── Detail panel enhancements ── */
+    .eg-det-callout {
+      border: 1px solid rgba(15,118,110,.22); border-radius: 12px;
+      background: rgba(209,244,238,.3); padding: 8px 10px;
+      font-size: .73rem; color: var(--muted); line-height: 1.45; margin: 4px 0;
+    }
+    .eg-det-callout strong { color: var(--accent); display: block; font-size: .64rem;
+      font-weight: 800; text-transform: uppercase; letter-spacing: .1em; margin-bottom: 3px;
+    }
+    .eg-metrics { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 5px; margin: 6px 0; }
+    .eg-metric {
+      border: 1px solid rgba(217,206,190,.76); border-radius: 10px;
+      background: rgba(255,255,255,.76); padding: 6px 7px;
+    }
+    .eg-metric.hi { border-color: rgba(15,118,110,.28); background: rgba(209,244,238,.28); }
+    .eg-metric span { display: block; font-size: .6rem; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .eg-metric strong { display: block; font-size: .98rem; font-weight: 800; margin-top: 2px; color: var(--ink); }
+    .eg-metric.hi strong { color: #0f766e; }
+    .eg-conn-list { display: flex; flex-direction: column; gap: 3px; margin-top: 4px; }
+    .eg-conn-item {
+      display: flex; align-items: center; gap: 8px;
+      border: 1px solid rgba(217,206,190,.55); border-radius: 9px;
+      background: rgba(255,255,255,.7); padding: 6px 9px;
+      cursor: pointer; text-align: left; font: inherit; font-size: .72rem;
+      color: var(--ink); width: 100%; transition: border-color .12s, background .12s;
+    }
+    .eg-conn-item:hover { border-color: var(--accent); background: rgba(11,143,135,.06); }
+    .eg-conn-item-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
+    .eg-conn-item-main { flex: 1; min-width: 0; }
+    .eg-conn-item-label { font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .eg-conn-item-meta { font-size: .65rem; color: var(--muted); margin-top: 1px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .eg-conn-item-badge {
+      font-size: .58rem; font-weight: 700; padding: 1px 6px; border-radius: 4px;
+      background: rgba(217,206,190,.5); color: var(--muted); flex-shrink: 0;
+      white-space: nowrap;
+    }
+    .eg-conn-item-badge.funded { background: rgba(11,143,135,.12); color: #0f766e; }
+    .eg-bar-section { margin: 4px 0 8px; display: flex; flex-direction: column; gap: 5px; }
+    .eg-bar-row { display: grid; gap: 3px; }
+    .eg-bar-label { display: flex; justify-content: space-between; font-size: .68rem; font-weight: 700; }
+    .eg-bar-track { height: 5px; border-radius: 999px; background: rgba(217,206,190,.5); overflow: hidden; }
+    .eg-bar-fill { height: 100%; border-radius: 999px; }
+    .eg-tags { display: flex; flex-wrap: wrap; gap: 4px; margin: 4px 0; }
+    .eg-tag {
+      font-size: .62rem; font-weight: 600; padding: 2px 7px; border-radius: 5px;
+      background: rgba(217,206,190,.45); color: var(--muted); white-space: nowrap;
+    }
+    .eg-tag.accent { background: rgba(11,143,135,.12); color: var(--accent); }
+    .eg-empty-hint {
+      border: 1px dashed rgba(154,140,120,.4); border-radius: 9px;
+      padding: 7px 9px; font-size: .72rem; color: var(--muted); line-height: 1.4;
+    }
+
+    /* ── Edge evidence card ── */
+    .eg-evidence {
+      margin-top: 5px; padding: 6px 8px;
+      background: rgba(248,243,234,.7); border: 1px solid rgba(217,206,190,.55);
+      border-radius: 7px; display: flex; flex-direction: column; gap: 4px;
+    }
+    .eg-ev-badges { display: flex; gap: 4px; flex-wrap: wrap; }
+    .eg-ev-badge {
+      font-size: .59rem; font-weight: 700; padding: 2px 6px; border-radius: 4px;
+      background: rgba(217,206,190,.6); color: var(--muted);
+      text-transform: uppercase; letter-spacing: .05em;
+    }
+    .eg-ev-round { background: rgba(59,130,246,.12); color: #1d4ed8; }
+    .eg-ev-amt   { background: rgba(11,143,135,.12); color: #0f766e; }
+    .eg-ev-ok    { background: rgba(22,160,133,.12); color: #0f766e; }
+    .eg-ev-meta  { font-size: .65rem; color: var(--muted); display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+    .eg-ev-link  { color: var(--accent); text-decoration: none; font-weight: 600; }
+    .eg-ev-link:hover { text-decoration: underline; }
+    .eg-ev-note  {
+      font-size: .65rem; color: var(--muted); line-height: 1.4;
+      border-top: 1px solid rgba(217,206,190,.5); padding-top: 4px; margin-top: 1px;
+      font-style: italic;
     }
 
     /* neighborhood banner */
@@ -269,6 +387,7 @@
       border-radius: 8px; padding: 4px 8px;
     }
   </style>
+
 </head>
 <body class="eg-page">
 <div class="page-shell">
@@ -446,6 +565,7 @@
             </filter>
           </defs>
           <g id="eg-root">
+            <g id="eg-theme-halos"></g>
             <g id="eg-edges"></g>
             <g id="eg-nodes"></g>
           </g>
@@ -480,6 +600,7 @@
   </div><!-- /layout -->
 </div><!-- /page-shell -->
 
+<script src="./startup-themes-data.js" defer></script>
 <script src="./ecosystem-graph-data.js?v=20260524a" defer></script>
 <script>
 /* ══════════════════════════════════════════════════════════════════
@@ -508,17 +629,35 @@ const LAYER_R_BASE = {
   startup:      3.5,
 };
 
+// Base colors (solid — opacity driven by confidence)
 const EDGE_COLORS = {
-  investment:  'rgba(59,130,246,0.22)',
-  capital:     'rgba(59,79,168,0.40)',
-  membership:  'rgba(124,58,237,0.65)',
-  support:     'rgba(13,148,136,0.65)',
-  validation:  'rgba(217,119,6,0.65)',
+  investment: '#3B82F6',
+  capital:    '#3B4FA8',
+  membership: '#7C3AED',
+  support:    '#0D9488',
+  validation: '#D97706',
 };
-const EDGE_WIDTH = {
-  investment: 1.0, capital: 1.5,
-  membership: 2.0, support: 2.0, validation: 2.0,
+// Stroke-dasharray per edge type
+const EDGE_DASH = {
+  investment: null,          // solid line
+  capital:    null,          // solid, driven by thickness
+  support:    '6,4',         // dashed  – - – -
+  membership: '2,4',         // dotted  · · · ·
+  validation: '10,3,2,3',   // dash-dot
 };
+// Confidence → visual weight
+function edgeOpacity(conf) {
+  if (conf >= 0.96) return 0.82;
+  if (conf >= 0.8)  return 0.32;
+  return 0.10;
+}
+function edgeStrokeW(conf) {
+  if (conf >= 0.96) return 2.0;
+  if (conf >= 0.8)  return 1.0;
+  return 0.5;
+}
+// Legacy stub (keeps any callers happy)
+const EDGE_WIDTH = { investment:1, capital:1.5, membership:2, support:2, validation:2 };
 
 // ── State ────────────────────────────────────────────────────────
 let nodes = [], edges = [];
@@ -564,13 +703,158 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 function waitForData() {
-  if (typeof EG_NODES !== 'undefined') initGraph();
+  if (typeof EG_NODES !== 'undefined' && typeof window.STARTUP_THEMES_DATA !== 'undefined') initGraph();
   else requestAnimationFrame(waitForData);
+}
+
+// ── Startup enrichment map (from startup-themes-data.js) ──────────
+const enriched = new Map();
+
+const THEME_PAL = {
+  'Therapeutics':                            '#9B59D0',
+  'Diagnostics & Health Access':             '#3498DB',
+  'Food Systems & Alt Proteins':             '#E06B2A',
+  'Bioinputs & Crop Resilience':             '#27AE60',
+  'Nature & Ecosystem Tech':                 '#16A89A',
+  'Farm Intelligence':                       '#4A7FD4',
+  'Biomaterials & Circular Economy':         '#C9930A',
+  'Biomanufacturing & Platform Technologies':'#D4880A',
+};
+
+function nodeColor(n) {
+  return LAYER_COLORS[n.layer] || THEME_PAL[n.theme] || n.color || '#888';
+}
+
+function esc(str) {
+  if (!str && str !== 0) return '';
+  return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+function qualBadge(q) {
+  if (q == null) return '';
+  const color = q >= 8 ? '#0f766e' : q >= 5 ? '#92400e' : '#666';
+  const bg    = q >= 8 ? 'rgba(209,244,238,.35)' : q >= 5 ? 'rgba(253,230,138,.35)' : 'rgba(0,0,0,.06)';
+  return `<span style="font-size:.6rem;font-weight:800;padding:1px 6px;border-radius:4px;background:${bg};color:${color}">Q ${q.toFixed(0)}</span>`;
+}
+
+function clearbitLogo(website, label) {
+  const initials = label.split(/\s+/).map(w => w[0] || '').join('').slice(0,2).toUpperCase();
+  const color = '#0B8F87';
+  try {
+    const domain = new URL(website.startsWith('http') ? website : 'https://' + website).hostname.replace(/^www\./,'');
+    return `<img class="eg-tt-logo" src="https://logo.clearbit.com/${domain}?size=96"
+      onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" alt="">
+      <div class="eg-tt-logo-ph" style="display:none;background:${color}15;color:${color}">${initials}</div>`;
+  } catch(e) {
+    return `<div class="eg-tt-logo-ph" style="background:${color}15;color:${color}">${initials}</div>`;
+  }
+}
+
+// ── Edge evidence parser & renderer ──────────────────────────────
+function parseSourceUrl(raw) {
+  if (!raw) return { url: null, note: null };
+  // "source: https://... | rationale text"
+  if (raw.startsWith('source:')) {
+    const m = raw.match(/source:\s*(https?:\/\/[^\s|]+)(?:\s*\|\s*(.+))?/);
+    if (m) return { url: m[1].trim(), note: (m[2]||'').trim() || null };
+  }
+  if (raw.startsWith('http')) return { url: raw.split(/\s/)[0], note: null };
+  if (!isNaN(parseFloat(raw))) return { url: null, note: null }; // numeric artifact
+  return { url: null, note: raw.length < 200 ? raw : null };
+}
+
+const EDGE_TYPE_LABELS = {
+  investment: 'Inversión', capital: 'Capital / LP', membership: 'Membresía',
+  support: 'Soporte', validation: 'Validación',
+};
+const RELATION_LABELS = {
+  lp_commitment_to_vc_fund: 'LP commitment',
+  member_startup: 'Startup miembro', membership: 'Miembro',
+  technology_partnership: 'Partnership tecnológico',
+  co_investor: 'Co-inversor',
+};
+
+function edgeEvidenceHtml(ed) {
+  if (!ed) return '';
+  const parts = [];
+  const src = parseSourceUrl(ed.sourceUrl);
+
+  // Type label
+  const tLabel = EDGE_TYPE_LABELS[ed.edgeType] || ed.edgeType;
+  const subType = ed.relationType || ed.supportType || ed.validationType;
+  const subLabel = subType ? (RELATION_LABELS[subType] || subType.replace(/_/g,' ')) : null;
+  const roundLabel = ed.round ? ed.round : null;
+
+  let badges = '';
+  if (roundLabel) badges += `<span class="eg-ev-badge eg-ev-round">${esc(roundLabel)}</span>`;
+  if (subLabel)   badges += `<span class="eg-ev-badge">${esc(subLabel)}</span>`;
+  if (ed.amountUsd) {
+    const amt = ed.amountUsd >= 1e6 ? `$${(ed.amountUsd/1e6).toFixed(1)}M` : `$${(ed.amountUsd/1e3).toFixed(0)}K`;
+    badges += `<span class="eg-ev-badge eg-ev-amt">${amt}</span>`;
+  }
+  if (ed.year)   badges += `<span class="eg-ev-badge">${ed.year}</span>`;
+  if (ed.status) badges += `<span class="eg-ev-badge eg-ev-ok">${esc(ed.status)}</span>`;
+
+  // Confidence
+  const conf = ed.confidence != null ? `conf ${ed.confidence}` : null;
+
+  // Source domain link
+  let srcLink = '';
+  if (src.url) {
+    try {
+      const domain = new URL(src.url).hostname.replace(/^www\./,'');
+      srcLink = `<a class="eg-ev-link" href="${esc(src.url)}" target="_blank" rel="noopener">↗ ${esc(domain)}</a>`;
+    } catch(e) {}
+  }
+
+  const metaRow = [conf, srcLink].filter(Boolean).join(' · ');
+
+  let html = `<div class="eg-evidence">`;
+  if (badges) html += `<div class="eg-ev-badges">${badges}</div>`;
+  if (metaRow) html += `<div class="eg-ev-meta">${metaRow}</div>`;
+  if (src.note) html += `<div class="eg-ev-note">${esc(src.note.slice(0,180))}${src.note.length>180?'…':''}</div>`;
+  html += `</div>`;
+  return html;
+}
+
+// ── Fund candidates for startups without mapped capital ───────────
+function fundCandidates(startup, limit = 5) {
+  const theme   = startup.theme;
+  const country = startup.country;
+  return nodes
+    .filter(n => ['fund','allocator'].includes(n.layer))
+    .map(fund => {
+      const portEdges = edges.filter(e =>
+        (e.source === fund.id || e.target === fund.id) && e.edgeType === 'investment'
+      );
+      const portfolio = portEdges.map(e => {
+        const otherId = e.source === fund.id ? e.target : e.source;
+        return nodes.find(n => n.id === otherId && n.type === 'startup');
+      }).filter(Boolean);
+      const sameTheme   = portfolio.filter(s => s.theme === theme).length;
+      const sameCountry = portfolio.filter(s => s.country === country).length;
+      const score = sameTheme * 3 + sameCountry * 1.5 + Math.log(1 + fund.degree) * 0.3;
+      if (score === 0) return null;
+      const examples = portfolio.filter(s => s.theme === theme).slice(0,2).map(s => s.label);
+      return { fund, score, sameTheme, sameCountry, total: portfolio.length, examples };
+    })
+    .filter(Boolean)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, limit);
 }
 
 function initGraph() {
   nodes = EG_NODES;
   edges = EG_EDGES;
+
+  // Build enriched startup map (merge startup-themes-data.js)
+  if (window.STARTUP_THEMES_DATA) {
+    window.STARTUP_THEMES_DATA.startups.forEach(s => {
+      enriched.set(s.id, s);
+      enriched.set(s.id.toLowerCase(), s);
+    });
+  }
+
   HAS_PRECOMPUTED = nodes.length > 0 && nodes[0].px !== undefined;
 
   // Pre-compute round counts per node (from investment edges)
@@ -689,21 +973,41 @@ function initGraph() {
 // ── Node radius calculation ───────────────────────────────────────
 function getNodeR(n) {
   const base = LAYER_R_BASE[n.layer] || 5;
+
+  // ── Explicit size modes (toolbar select) ──
   if (sizeMode === 'degree') {
     const d = Math.max(1, n.degree || 1);
     if (n.layer === 'startup') return Math.max(2.5, Math.min(14, 3 + Math.sqrt(d) * 1.2));
-    return Math.max(base, Math.min(20, base + Math.sqrt(d) * 1.5));
+    return Math.max(base, Math.min(22, base + Math.sqrt(d) * 1.8));
   }
   if (sizeMode === 'rounds') {
-    // For startups: size by round count. For others: size by degree
     if (n.layer === 'startup') {
       const rc = nodeRoundCount.get(n.id) || 0;
       return Math.max(2.5, Math.min(16, 3 + rc * 1.8));
     }
     const d = Math.max(1, n.degree || 1);
-    return Math.max(base, Math.min(20, base + Math.sqrt(d) * 1.5));
+    return Math.max(base, Math.min(22, base + Math.sqrt(d) * 1.8));
   }
-  return base; // uniform
+
+  // ── Default: semantic size ──
+  if (n.layer === 'startup') {
+    // Quality-driven: Q=0→3px, Q=10→8px
+    const se = enriched.get(n.id) || enriched.get((n.id||'').toLowerCase()) || {};
+    const q  = se.quality_score ?? 0;
+    return 3 + (q / 10) * 5;
+  }
+  if (['fund', 'allocator'].includes(n.layer)) {
+    // Portfolio count drives size: small fund→6px, GridX(115)→~21px
+    const portfolio = edges.filter(e =>
+      (e.source === n.id || e.target === n.id) && e.edgeType === 'investment'
+    ).length;
+    return Math.max(5, Math.min(22, 5 + Math.sqrt(portfolio) * 1.8));
+  }
+  if (['organization', 'eso'].includes(n.layer)) {
+    // Degree-driven: FINEP(77)→~19px, small org→8px
+    return Math.max(8, Math.min(22, 6 + Math.sqrt(n.degree || 0) * 1.6));
+  }
+  return base;
 }
 
 function updateAllNodeSizes() {
@@ -898,8 +1202,10 @@ window.selectNodeById = selectNodeById;
 // ── Detail panel renderer ─────────────────────────────────────────
 function renderDetail(n, neighborIds) {
   const neighbors = nodes.filter(nd => neighborIds.includes(nd.id));
+  const e = enriched.get(n.id) || enriched.get((n.id||'').toLowerCase()) || {};
+  const col = nodeColor(n);
 
-  const chipColors = {
+  const CHIP_STYLE = {
     organization: 'background:rgba(124,58,237,.1);color:#5b21b6',
     eso:          'background:rgba(13,148,136,.1);color:#0f766e',
     corporate:    'background:rgba(217,119,6,.1);color:#92400e',
@@ -907,72 +1213,297 @@ function renderDetail(n, neighborIds) {
     allocator:    'background:rgba(59,79,168,.1);color:#1e3a8a',
     startup:      'background:rgba(0,0,0,.06);color:#444',
   };
-
-  const layerLabel = {
-    organization: 'GREMIAL', eso: 'ESO', corporate: 'CORPORATE',
-    fund: 'FONDO VC', allocator: 'ALLOCATOR', startup: 'STARTUP',
+  const LAYER_LABEL = {
+    organization:'GREMIAL', eso:'ESO', corporate:'CORPORATE',
+    fund:'FONDO VC', allocator:'ALLOCATOR', startup:'STARTUP',
   };
 
-  let html = `
-    <div class="eg-det-type" style="${chipColors[n.layer] || ''}">${layerLabel[n.layer] || n.layer}</div>
-    <div class="eg-det-name">${n.label}</div>
-    <div class="eg-det-sub">
-      ${n.country || ''}
-      ${n.theme ? ' · ' + (n.shortTheme || n.theme) : ''}
-      ${n.orgType ? ' · ' + n.orgType.replace(/_/g,' ') : ''}
-      ${n.esoType ? ' · ' + n.esoType.replace(/_/g,' ') : ''}
-      ${n.industry ? ' · ' + n.industry.split(';')[0] : ''}
-      ${n.investorType ? ' · ' + n.investorType.replace(/_/g,' ') : ''}
-    </div>
-  `;
+  // ── Header ──
+  let html = `<div class="eg-det-type" style="${CHIP_STYLE[n.layer]||''}">${LAYER_LABEL[n.layer]||n.layer}</div>`;
+  html += `<div class="eg-det-name">${esc(n.label)}</div>`;
 
-  html += `<div class="eg-det-section" style="margin-top:8px">Métricas</div>`;
-  html += `<div class="eg-det-row"><span>Grado</span><strong>${n.degree}</strong></div>`;
-  html += `<div class="eg-det-row"><span>Conexiones directas</span><strong>${neighbors.length}</strong></div>`;
-  if (n.layer === 'startup' && nodeRoundCount.get(n.id)) {
-    html += `<div class="eg-det-row"><span>Rondas documentadas</span><strong>${nodeRoundCount.get(n.id)}</strong></div>`;
-  }
+  let sub = [n.country, n.theme ? (n.shortTheme||n.theme) : null,
+    n.orgType ? n.orgType.replace(/_/g,' ') : null,
+    n.esoType ? n.esoType.replace(/_/g,' ') : null,
+    n.industry ? n.industry.split(';')[0] : null,
+    n.investorType ? n.investorType.replace(/_/g,' ') : null,
+  ].filter(Boolean);
+  html += `<div class="eg-det-sub">${esc(sub.join(' · '))}</div>`;
 
   if (n.website) {
-    html += `<div class="eg-det-section">Web</div>`;
-    html += `<div class="eg-det-row"><a class="eg-det-link" href="${n.website}" target="_blank" rel="noopener">${n.website.replace(/^https?:\/\//,'').slice(0,42)}</a></div>`;
+    html += `<div style="margin:5px 0 2px"><a class="eg-det-link" href="${esc(n.website)}" target="_blank" rel="noopener">↗ ${esc(n.website.replace(/^https?:\/\//,'').slice(0,44))}</a></div>`;
   }
 
-  if (n.thesis) html += `<div class="eg-det-summary">${n.thesis}</div>`;
-  if (n.summary) html += `<div class="eg-det-summary">${n.summary}</div>`;
+  // ─── STARTUP inspector ───────────────────────────────────────────
+  if (n.layer === 'startup') {
+    const q  = e.quality_score;
+    const st = e.funding_stage;
+    const sc = e.sub_cluster_label;
+    const td = e.tech_depth;
+    const pr = e.pagerank;
+    const rounds = nodeRoundCount.get(n.id) || 0;
 
-  // Group neighbors by layer
-  const grouped = {};
-  neighbors.forEach(nd => {
-    if (!grouped[nd.layer]) grouped[nd.layer] = [];
-    grouped[nd.layer].push(nd);
-  });
+    // Metrics grid
+    html += `<div class="eg-metrics">`;
+    html += `<div class="eg-metric hi"><span>Calidad</span><strong>${q != null ? q.toFixed(0)+'/10' : '—'}</strong></div>`;
+    html += `<div class="eg-metric"><span>Stage</span><strong>${esc(st||'—')}</strong></div>`;
+    html += `<div class="eg-metric"><span>Rondas doc.</span><strong>${rounds||'—'}</strong></div>`;
+    if (sc) html += `<div class="eg-metric" style="grid-column:1/-1"><span>Área técnica</span><strong style="font-size:.82rem">${esc(sc)}</strong></div>`;
+    html += `</div>`;
 
-  const layerOrder = ['organization','eso','corporate','allocator','fund','startup'];
-  const layerNames = {
-    organization:'Gremiales', eso:'ESOs', corporate:'Corporates',
-    allocator:'Allocators', fund:'Fondos VC', startup:'Startups',
-  };
-
-  if (neighbors.length > 0) {
-    layerOrder.forEach(layer => {
-      const group = grouped[layer];
-      if (!group || !group.length) return;
-      html += `<div class="eg-det-section">${layerNames[layer]} (${group.length})</div>`;
-      html += `<div class="eg-det-neighbors">`;
-      group.slice(0, 20).forEach(nd => {
-        const c = LAYER_COLORS[nd.layer] || nd.color || '#888';
-        html += `<span class="eg-det-neighbor" onclick="selectNodeById('${nd.id}')"
-          style="border-color:${c}30;color:${c}">${nd.label}</span>`;
-      });
-      if (group.length > 20) html += `<span class="eg-det-neighbor" style="opacity:.5">+${group.length-20} más</span>`;
+    // Tech tags
+    const tcodes = (e.tech_codes||[]).concat(e.tech_tags||[]).filter((v,i,a)=>a.indexOf(v)===i).slice(0,8);
+    if (tcodes.length) {
+      html += `<div class="eg-tags">${tcodes.map(t=>`<span class="eg-tag">${esc(t.replace(/_/g,'‑'))}</span>`).join('')}`;
+      if (td) html += `<span class="eg-tag accent">${esc(td)}</span>`;
       html += `</div>`;
+    }
+
+    // Description
+    const desc = e.one_liner || n.summary;
+    if (desc) html += `<div class="eg-det-summary">${esc(desc.slice(0,220))}${desc.length>220?'…':''}</div>`;
+
+    // Connected capital
+    const capitalNeighbors = neighbors.filter(nd => ['fund','allocator'].includes(nd.layer));
+    const ecoNeighbors     = neighbors.filter(nd => ['organization','eso','corporate'].includes(nd.layer));
+
+    if (capitalNeighbors.length) {
+      html += `<div class="eg-det-section">Capital conectado (${capitalNeighbors.length})</div>`;
+      html += `<div class="eg-conn-list">`;
+      capitalNeighbors.forEach(nd => {
+        const c  = nodeColor(nd);
+        const ed = edges.find(x => (x.source===n.id&&x.target===nd.id)||(x.target===n.id&&x.source===nd.id));
+        html += `<div class="eg-conn-item" style="cursor:pointer" onclick="selectNodeById('${esc(nd.id)}')">
+          <div class="eg-conn-item-dot" style="background:${c}"></div>
+          <div class="eg-conn-item-main" style="width:100%">
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:6px">
+              <div class="eg-conn-item-label">${esc(nd.label)}</div>
+              <span class="eg-conn-item-badge funded">${esc(nd.layer==='allocator'?'Allocator':'Fondo VC')}</span>
+            </div>
+            ${edgeEvidenceHtml(ed)}
+          </div>
+        </div>`;
+      });
+      html += `</div>`;
+    }
+
+    // Ecosystem connections
+    if (ecoNeighbors.length) {
+      html += `<div class="eg-det-section">Ecosistema (${ecoNeighbors.length})</div>`;
+      html += `<div class="eg-conn-list">`;
+      ecoNeighbors.forEach(nd => {
+        const c  = nodeColor(nd);
+        const ed = edges.find(x => (x.source===n.id&&x.target===nd.id)||(x.target===n.id&&x.source===nd.id));
+        const relLabels = { membership:'Membresía', support:'Soporte', validation:'Validación' };
+        const rel = ed?.edgeType ? (relLabels[ed.edgeType]||ed.edgeType) : '';
+        html += `<div class="eg-conn-item" style="cursor:pointer" onclick="selectNodeById('${esc(nd.id)}')">
+          <div class="eg-conn-item-dot" style="background:${c}"></div>
+          <div class="eg-conn-item-main" style="width:100%">
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:6px">
+              <div class="eg-conn-item-label">${esc(nd.label)}</div>
+              ${rel ? `<span class="eg-conn-item-badge">${esc(rel)}</span>` : ''}
+            </div>
+            ${nd.focusArea ? `<div class="eg-conn-item-meta">${esc(nd.focusArea.slice(0,60))}</div>` : ''}
+            ${edgeEvidenceHtml(ed)}
+          </div>
+        </div>`;
+      });
+      html += `</div>`;
+    }
+
+    // Fund candidates (if no mapped capital)
+    if (capitalNeighbors.length === 0) {
+      const candidates = fundCandidates(n);
+      if (candidates.length) {
+        html += `<div class="eg-det-section">Fondos candidatos 💡</div>`;
+        html += `<div class="eg-det-callout"><strong>Heurística de portfolio</strong>Fondos con cartera en el mismo tema y/o país, sin edge mapeado aún.</div>`;
+        html += `<div class="eg-conn-list">`;
+        candidates.forEach(({fund, sameTheme, sameCountry, total, examples}) => {
+          const c = nodeColor(fund);
+          const meta = [`${sameTheme} en ${n.shortTheme||n.theme}`, sameCountry?`${sameCountry} en ${n.country}`:''].filter(Boolean).join(' · ');
+          html += `<button class="eg-conn-item" onclick="selectNodeById('${esc(fund.id)}')">
+            <div class="eg-conn-item-dot" style="background:${c}"></div>
+            <div class="eg-conn-item-main">
+              <div class="eg-conn-item-label">${esc(fund.label)}</div>
+              <div class="eg-conn-item-meta">${esc(meta)}${examples.length?' · ej. '+esc(examples.join(', ')):''}</div>
+            </div>
+            <span class="eg-conn-item-badge">${total} portf.</span>
+          </button>`;
+        });
+        html += `</div>`;
+      } else {
+        html += `<div class="eg-det-section">Capital</div>`;
+        html += `<div class="eg-empty-hint">Sin capital mapeado. Ningún fondo con cartera en el mismo tema visible en el grafo.</div>`;
+      }
+    }
+
+  // ─── FUND / ALLOCATOR inspector ──────────────────────────────────
+  } else if (['fund','allocator'].includes(n.layer)) {
+
+    // Thesis callout
+    const thesis = n.thesis || n.summary;
+    if (thesis) html += `<div class="eg-det-callout"><strong>Tesis de inversión</strong>${esc(thesis.slice(0,280))}${thesis.length>280?'…':''}</div>`;
+    if (n.geoFocus) html += `<div class="eg-det-callout" style="background:rgba(209,244,238,.15);"><strong>Foco Geográfico</strong>${esc(n.geoFocus)}</div>`;
+
+    // Portfolio startups
+    const portStartups = neighbors
+      .filter(nd => nd.type === 'startup')
+      .map(nd => ({ nd, e: enriched.get(nd.id)||enriched.get((nd.id||'').toLowerCase())||{} }))
+      .sort((a,b) => (b.e.quality_score||0) - (a.e.quality_score||0));
+
+    // Metrics
+    html += `<div class="eg-metrics">`;
+    html += `<div class="eg-metric hi"><span>Portfolio</span><strong>${portStartups.length}</strong></div>`;
+    html += `<div class="eg-metric"><span>Conexiones total</span><strong>${neighbors.length}</strong></div>`;
+    html += `<div class="eg-metric"><span>Tipo</span><strong style="font-size:.78rem">${esc(n.investorType?.replace(/_/g,' ')||n.layer)}</strong></div>`;
+    html += `</div>`;
+
+    // Portfolio breakdown by theme
+    if (portStartups.length) {
+      const themeCount = {};
+      portStartups.forEach(({nd}) => { if(nd.theme) themeCount[nd.theme] = (themeCount[nd.theme]||0)+1; });
+      const maxT = Math.max(...Object.values(themeCount));
+      const sortedThemes = Object.entries(themeCount).sort((a,b)=>b[1]-a[1]);
+
+      html += `<div class="eg-det-section">Portfolio por tema</div>`;
+      html += `<div class="eg-bar-section">`;
+      sortedThemes.forEach(([theme, cnt]) => {
+        const tc = THEME_PAL[theme] || '#888';
+        const pct = (cnt / maxT * 100).toFixed(0);
+        html += `<div class="eg-bar-row">
+          <div class="eg-bar-label"><span style="color:${tc};font-size:.67rem">${esc(theme)}</span><span>${cnt}</span></div>
+          <div class="eg-bar-track"><div class="eg-bar-fill" style="width:${pct}%;background:${tc}"></div></div>
+        </div>`;
+      });
+      html += `</div>`;
+
+      // Top portfolio startups
+      html += `<div class="eg-det-section">Startups (por calidad)</div>`;
+      html += `<div class="eg-conn-list">`;
+      portStartups.slice(0,12).forEach(({nd, e: se}) => {
+        const c     = THEME_PAL[nd.theme] || nodeColor(nd);
+        const q     = se.quality_score;
+        const stage = se.funding_stage;
+        const meta  = [nd.country, nd.shortTheme||nd.theme].filter(Boolean).join(' · ');
+        const ed    = edges.find(x => (x.source===n.id&&x.target===nd.id)||(x.target===n.id&&x.source===nd.id));
+        const qBadge = q!=null ? `<span class="eg-conn-item-badge ${q>=7?'funded':''}">Q${q.toFixed(0)}</span>` : (stage?`<span class="eg-conn-item-badge">${esc(stage)}</span>`:'');
+        html += `<div class="eg-conn-item" style="cursor:pointer" onclick="selectNodeById('${esc(nd.id)}')">
+          <div class="eg-conn-item-dot" style="background:${c}"></div>
+          <div class="eg-conn-item-main" style="width:100%">
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:6px">
+              <div class="eg-conn-item-label">${esc(nd.label)}</div>
+              ${qBadge}
+            </div>
+            <div class="eg-conn-item-meta">${esc(meta)}</div>
+            ${edgeEvidenceHtml(ed)}
+          </div>
+        </div>`;
+      });
+      if (portStartups.length > 12) html += `<div class="eg-det-row" style="justify-content:center;border:none"><span>+${portStartups.length-12} más en la red</span></div>`;
+      html += `</div>`;
+    }
+
+    // Co-investors (funds that share portfolio startups)
+    const portIds = new Set(portStartups.map(({nd}) => nd.id));
+    const coInvMap = new Map();
+    portIds.forEach(sid => {
+      edges.filter(ed => (ed.source===sid||ed.target===sid) && ed.edgeType==='investment').forEach(ed => {
+        const fid = ed.source===sid ? ed.target : ed.source;
+        const fn = nodes.find(nd => nd.id===fid && ['fund','allocator'].includes(nd.layer) && fid !== n.id);
+        if (fn) coInvMap.set(fid, (coInvMap.get(fid)||{fn, count:0}).count++, coInvMap.get(fid)||{fn, count:1});
+      });
     });
+    const coInvs = [...coInvMap.values()].filter(Boolean).sort((a,b)=>(b.count||0)-(a.count||0)).slice(0,5);
+
+    if (coInvs.length) {
+      html += `<div class="eg-det-section">Co-inversores frecuentes</div>`;
+      html += `<div class="eg-conn-list">`;
+      coInvs.forEach(({fn, count}) => {
+        if (!fn) return;
+        const c = nodeColor(fn);
+        html += `<button class="eg-conn-item" onclick="selectNodeById('${esc(fn.id)}')">
+          <div class="eg-conn-item-dot" style="background:${c}"></div>
+          <div class="eg-conn-item-main"><div class="eg-conn-item-label">${esc(fn.label)}</div></div>
+          <span class="eg-conn-item-badge funded">${count||1} startups</span>
+        </button>`;
+      });
+      html += `</div>`;
+    }
+
+    // ESO / Org connections
+    const ecoNeigh = neighbors.filter(nd => ['organization','eso'].includes(nd.layer));
+    if (ecoNeigh.length) {
+      html += `<div class="eg-det-section">Ecosistema</div>`;
+      html += `<div class="eg-det-neighbors">`;
+      ecoNeigh.forEach(nd => {
+        const c = nodeColor(nd);
+        html += `<span class="eg-det-neighbor" onclick="selectNodeById('${esc(nd.id)}')" style="border-color:${c}30;color:${c}">${esc(nd.label)}</span>`;
+      });
+      html += `</div>`;
+    }
+
+  // ─── ESO / ORG / CORPORATE inspector ─────────────────────────────
+  } else {
+    const focusText = n.focusArea || n.demandProfile || n.summary;
+    if (focusText) html += `<div class="eg-det-callout"><strong>${n.orgType?'Área de foco':'Perfil'}</strong>${esc(focusText.slice(0,250))}${focusText.length>250?'…':''}</div>`;
+
+    const connStartups = neighbors
+      .filter(nd => nd.type === 'startup')
+      .map(nd => ({ nd, e: enriched.get(nd.id)||enriched.get((nd.id||'').toLowerCase())||{} }))
+      .sort((a,b) => (b.e.quality_score||0) - (a.e.quality_score||0));
+    const connFunds = neighbors.filter(nd => ['fund','allocator'].includes(nd.layer));
+
+    html += `<div class="eg-metrics">`;
+    html += `<div class="eg-metric hi"><span>Startups</span><strong>${connStartups.length}</strong></div>`;
+    html += `<div class="eg-metric"><span>Fondos</span><strong>${connFunds.length}</strong></div>`;
+    html += `<div class="eg-metric"><span>Total conexiones</span><strong>${neighbors.length}</strong></div>`;
+    html += `</div>`;
+
+    if (connStartups.length) {
+      html += `<div class="eg-det-section">Startups conectadas (${connStartups.length})</div>`;
+      html += `<div class="eg-conn-list">`;
+      connStartups.slice(0,10).forEach(({nd, e: se}) => {
+        const c   = THEME_PAL[nd.theme] || nodeColor(nd);
+        const q   = se.quality_score;
+        const ed  = edges.find(x => (x.source===n.id&&x.target===nd.id)||(x.target===n.id&&x.source===nd.id));
+        const rel = ed?.edgeType ? ({membership:'Membresía',support:'Soporte',validation:'Validación',investment:'Inversión'}[ed.edgeType]||ed.edgeType) : '';
+        const rightBadge = rel ? `<span class="eg-conn-item-badge">${esc(rel)}</span>` : (q!=null?`<span class="eg-conn-item-badge ${q>=7?'funded':''}">Q${q.toFixed(0)}</span>`:'');
+        html += `<div class="eg-conn-item" style="cursor:pointer" onclick="selectNodeById('${esc(nd.id)}')">
+          <div class="eg-conn-item-dot" style="background:${c}"></div>
+          <div class="eg-conn-item-main" style="width:100%">
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:6px">
+              <div class="eg-conn-item-label">${esc(nd.label)}</div>
+              ${rightBadge}
+            </div>
+            <div class="eg-conn-item-meta">${esc([nd.country, nd.shortTheme||nd.theme].filter(Boolean).join(' · '))}</div>
+            ${edgeEvidenceHtml(ed)}
+          </div>
+        </div>`;
+      });
+      if (connStartups.length > 10) html += `<div class="eg-det-row" style="justify-content:center;border:none"><span>+${connStartups.length-10} más</span></div>`;
+      html += `</div>`;
+    }
+
+    if (connFunds.length) {
+      html += `<div class="eg-det-section">Fondos vinculados (${connFunds.length})</div>`;
+      html += `<div class="eg-conn-list">`;
+      connFunds.forEach(nd => {
+        const c = nodeColor(nd);
+        html += `<button class="eg-conn-item" onclick="selectNodeById('${esc(nd.id)}')">
+          <div class="eg-conn-item-dot" style="background:${c}"></div>
+          <div class="eg-conn-item-main"><div class="eg-conn-item-label">${esc(nd.label)}</div></div>
+          <span class="eg-conn-item-badge">${esc(nd.investorType?.replace(/_/g,' ')||'VC')}</span>
+        </button>`;
+      });
+      html += `</div>`;
+    }
   }
 
   detailContent.innerHTML = html;
   detailContent.classList.add('visible');
   detailEmpty.style.display = 'none';
+
+  // Wire up click handlers on conn-items (already use onclick inline)
 }
 
 // ── Initial layout ─────────────────────────────────────────────────
@@ -1170,10 +1701,14 @@ function renderAll(visIds) {
   edges.forEach(e => {
     const visible = visIds.has(e.source) && visIds.has(e.target);
     const path = document.createElementNS(NS, 'path');
+    const _conf = e.confidence ?? 0.5;
+    const _dash = EDGE_DASH[e.edgeType];
     path.setAttribute('fill', 'none');
-    path.setAttribute('stroke', EDGE_COLORS[e.edgeType] || 'rgba(0,0,0,.1)');
-    path.setAttribute('stroke-width', String(EDGE_WIDTH[e.edgeType] || 1));
+    path.setAttribute('stroke', EDGE_COLORS[e.edgeType] || '#888');
+    path.setAttribute('stroke-width', String(edgeStrokeW(_conf)));
+    path.setAttribute('stroke-opacity', String(edgeOpacity(_conf)));
     path.setAttribute('stroke-linecap', 'round');
+    if (_dash) path.setAttribute('stroke-dasharray', _dash);
     if (!edgeVis[e.edgeType] || !visible) path.style.display = 'none';
     edgesG.appendChild(path);
     edgeElMap.set(e.id, path);
@@ -1276,10 +1811,20 @@ function renderAll(visIds) {
       halo.classList.add('node-halo');
       g.appendChild(halo);
 
+      // Quality-based opacity: hero startups (Q≥8) at full weight, context nodes faded
+      const _se  = enriched.get(n.id) || enriched.get((n.id||'').toLowerCase()) || {};
+      const _q   = _se.quality_score;
+      const _iso = n._isContext || n.degree === 0;
+      const _op  = _iso ? 0.18
+        : _q == null ? 0.55
+        : _q >= 8    ? 0.92
+        : _q >= 5    ? 0.68
+        :              0.40;
+
       const circle = document.createElementNS(NS, 'circle');
       circle.setAttribute('r', String(r));
       circle.setAttribute('fill', n.color || '#A0A0A0');
-      circle.setAttribute('opacity', '0.72');
+      circle.setAttribute('opacity', String(_op));
       g.appendChild(circle);
       nodeCircleMap.set(n.id, circle);
     }
@@ -1500,6 +2045,72 @@ function fitView() {
   updateTransform();
 }
 
+// ── Principio 5: Theme micro-regions ─────────────────────────────
+function updateThemeHalos() {
+  const halosG = document.getElementById('eg-theme-halos');
+  if (!halosG) return;
+  halosG.innerHTML = '';
+
+  // Ensure blur filter exists in SVG defs
+  const svgEl2 = document.getElementById('eg-svg');
+  let defs = svgEl2.querySelector('defs');
+  if (defs && !defs.querySelector('#halo-blur')) {
+    const NS2 = 'http://www.w3.org/2000/svg';
+    const filter = document.createElementNS(NS2, 'filter');
+    filter.setAttribute('id', 'halo-blur');
+    filter.setAttribute('x', '-40%'); filter.setAttribute('y', '-40%');
+    filter.setAttribute('width', '180%'); filter.setAttribute('height', '180%');
+    const blur = document.createElementNS(NS2, 'feGaussianBlur');
+    blur.setAttribute('stdDeviation', '22');
+    filter.appendChild(blur);
+    defs.appendChild(filter);
+  }
+
+  // Collect positions per bio_theme (connected startups only)
+  const groups = {};
+  nodes.forEach(n => {
+    if (n.type !== 'startup' || !n.theme || n.theme === 'Unknown') return;
+    if (n._isContext || n.degree === 0) return;
+    if (!groups[n.theme]) groups[n.theme] = [];
+    groups[n.theme].push({ x: n.x, y: n.y });
+  });
+
+  const NS = 'http://www.w3.org/2000/svg';
+
+  Object.entries(groups).forEach(([theme, pts]) => {
+    if (pts.length < 4) return;
+    const col = THEME_PAL[theme] || '#888';
+
+    // Centroid
+    const cx = pts.reduce((a, p) => a + p.x, 0) / pts.length;
+    const cy = pts.reduce((a, p) => a + p.y, 0) / pts.length;
+
+    // 70th-percentile distance — then cap tightly so halos stay local
+    const dists = pts.map(p => Math.sqrt((p.x-cx)**2 + (p.y-cy)**2)).sort((a,b)=>a-b);
+    const p70   = dists[Math.floor(dists.length * 0.70)] || 30;
+    const r     = Math.min(p70 * 0.7 + 16, 110); // max 110px in node-space
+
+    // Blurred outer glow
+    const outer = document.createElementNS(NS, 'circle');
+    outer.setAttribute('cx', cx); outer.setAttribute('cy', cy);
+    outer.setAttribute('r', r + 12);
+    outer.setAttribute('fill', col);
+    outer.setAttribute('opacity', '0.07');
+    outer.setAttribute('filter', 'url(#halo-blur)');
+    outer.setAttribute('pointer-events', 'none');
+    halosG.appendChild(outer);
+
+    // Solid inner core (very faint)
+    const inner = document.createElementNS(NS, 'circle');
+    inner.setAttribute('cx', cx); inner.setAttribute('cy', cy);
+    inner.setAttribute('r', r);
+    inner.setAttribute('fill', col);
+    inner.setAttribute('opacity', '0.042');
+    inner.setAttribute('pointer-events', 'none');
+    halosG.appendChild(inner);
+  });
+}
+
 function onMouseDown(evt) {
   if (evt.target !== svgEl && evt.target !== rootG &&
       !evt.target.closest('#eg-edges') && !evt.target.closest('#eg-nodes')) return;
@@ -1539,30 +2150,91 @@ function onResize() {
 
 // ── Tooltip ───────────────────────────────────────────────────────
 function showTooltip(n, evt) {
-  const lines = [
-    `<strong>${n.label}</strong>`,
-    `<span style="opacity:.75">${(n.layer).toUpperCase()} · ${n.country || '—'}</span>`,
-  ];
-  if (n.theme) lines.push(`<span style="opacity:.7;font-size:.68rem">${n.shortTheme || n.theme}</span>`);
-  if (n.orgType) lines.push(`<span style="opacity:.7;font-size:.68rem">${n.orgType.replace(/_/g,' ')}</span>`);
-  if (n.industry) lines.push(`<span style="opacity:.7;font-size:.68rem">${n.industry.split(';')[0]}</span>`);
-  if (n.investorType) lines.push(`<span style="opacity:.7;font-size:.68rem">${n.investorType.replace(/_/g,' ')}</span>`);
-  lines.push(`<span style="opacity:.6;font-size:.67rem">${n.degree} conexión${n.degree !== 1 ? 'es' : ''}</span>`);
+  const e   = enriched.get(n.id) || enriched.get((n.id||'').toLowerCase()) || {};
+  const col = nodeColor(n);
 
-  tooltipEl.innerHTML = lines.join('<br>');
-  tooltipEl.style.display = 'block';
+  // Logo
+  const logo = n.website ? clearbitLogo(n.website, n.label)
+    : `<div class="eg-tt-logo-ph" style="background:${col}15;color:${col}">${n.label.split(/\s+/).map(w=>w[0]||'').join('').slice(0,2).toUpperCase()}</div>`;
+
+  // Kicker label
+  const kickers = { organization:'Gremial', eso:'ESO', corporate:'Corporate', fund:'Fondo VC', allocator:'Allocator', startup:'Startup' };
+
+  // Theme chip
+  const themeCol = THEME_PAL[n.theme || e.bio_theme] || col;
+  let chips = '';
+  if (n.theme) chips += `<span class="eg-tt-chip"><span class="eg-tt-chip-dot" style="background:${themeCol}"></span>${esc(n.shortTheme||n.theme)}</span>`;
+  if (n.country) chips += `<span class="eg-tt-chip">${esc(n.country)}</span>`;
+  if (e.funding_stage) chips += `<span class="eg-tt-chip">${esc(e.funding_stage)}</span>`;
+  if (n.investorType) chips += `<span class="eg-tt-chip">${esc(n.investorType.replace(/_/g,' '))}</span>`;
+  if (n.orgType) chips += `<span class="eg-tt-chip">${esc(n.orgType.replace(/_/g,' '))}</span>`;
+  if (n.industry) chips += `<span class="eg-tt-chip">${esc(n.industry.split(';')[0])}</span>`;
+
+  const connEdges  = edges.filter(ed => ed.source === n.id || ed.target === n.id);
+  const topNeighbors = connEdges.slice(0,3)
+    .map(ed => nodes.find(nd => nd.id === (ed.source === n.id ? ed.target : ed.source))?.label)
+    .filter(Boolean);
+
+  // Description
+  const desc = e.one_liner || (n.summary||'').slice(0,160);
+
+  // Stats (3 cells)
+  let stats = '';
+  if (n.layer === 'startup') {
+    const q = e.quality_score;
+    stats += q != null
+      ? `<div class="eg-tt-stat hi"><span>Calidad</span><strong>${q.toFixed(0)}/10</strong></div>`
+      : `<div class="eg-tt-stat"><span>Conexiones</span><strong>${connEdges.length}</strong></div>`;
+    stats += `<div class="eg-tt-stat"><span>Stage</span><strong>${esc(e.funding_stage||'—')}</strong></div>`;
+    stats += `<div class="eg-tt-stat"><span>Área</span><strong style="font-size:.7rem">${esc((e.sub_cluster_label||'—').slice(0,18))}</strong></div>`;
+  } else if (['fund','allocator'].includes(n.layer)) {
+    const portfolio = connEdges.filter(ed => {
+      const oid = ed.source === n.id ? ed.target : ed.source;
+      return nodes.find(nd => nd.id === oid && nd.type === 'startup');
+    }).length;
+    stats += `<div class="eg-tt-stat hi"><span>Portfolio</span><strong>${portfolio}</strong></div>`;
+    stats += `<div class="eg-tt-stat"><span>Conexiones</span><strong>${connEdges.length}</strong></div>`;
+    stats += `<div class="eg-tt-stat"><span>Geo</span><strong style="font-size:.7rem">${esc((n.geoFocus||'—').split(',')[0].slice(0,16))}</strong></div>`;
+  } else {
+    const startupConn = connEdges.filter(ed => {
+      const oid = ed.source === n.id ? ed.target : ed.source;
+      return nodes.find(nd => nd.id === oid && nd.type === 'startup');
+    }).length;
+    stats += `<div class="eg-tt-stat hi"><span>Startups</span><strong>${startupConn}</strong></div>`;
+    stats += `<div class="eg-tt-stat"><span>Conexiones</span><strong>${connEdges.length}</strong></div>`;
+    stats += n.focusArea
+      ? `<div class="eg-tt-stat"><span>Foco</span><strong style="font-size:.68rem">${esc(n.focusArea.slice(0,20))}</strong></div>`
+      : '<div class="eg-tt-stat"><span>Tipo</span><strong style="font-size:.68rem">'+esc(kickers[n.layer]||n.layer)+'</strong></div>';
+  }
+
+  tooltipEl.innerHTML = `
+    <div class="eg-tt-header">
+      ${logo}
+      <div class="eg-tt-header-text">
+        <div class="eg-tt-kicker">${esc(kickers[n.layer]||n.layer)}</div>
+        <div class="eg-tt-title">${esc(n.label)}</div>
+        <div class="eg-tt-chips">${chips}</div>
+      </div>
+    </div>
+    ${desc ? `<div class="eg-tt-meta">${esc(desc)}${(e.one_liner||n.summary||'').length>160?'…':''}</div>` : ''}
+    <div class="eg-tt-stats">${stats}</div>
+    ${topNeighbors.length ? `<div class="eg-tt-meta" style="font-size:.68rem"><span style="opacity:.6">Conecta con:</span> ${esc(topNeighbors.join(', '))}</div>` : ''}
+  `;
+
+  tooltipEl.classList.add('visible');
   positionTooltip(evt);
 }
-function hideTooltip() { tooltipEl.style.display = 'none'; }
-function positionTooltipEvt(evt) { if (tooltipEl.style.display !== 'none') positionTooltip(evt); }
+
+function hideTooltip() { tooltipEl.classList.remove('visible'); }
+function positionTooltipEvt(evt) { if (tooltipEl.classList.contains('visible')) positionTooltip(evt); }
 function positionTooltip(evt) {
   const rect = svgEl.getBoundingClientRect();
-  let tx = evt.clientX - rect.left + 14;
-  let ty = evt.clientY - rect.top  + 14;
-  const tw = tooltipEl.offsetWidth || 200;
-  const th = tooltipEl.offsetHeight || 60;
-  if (tx + tw > W - 10) tx = evt.clientX - rect.left - tw - 10;
-  if (ty + th > H - 10) ty = evt.clientY - rect.top  - th - 10;
+  const tw   = 328, th = tooltipEl.offsetHeight || 180;
+  let tx = evt.clientX - rect.left + 16;
+  let ty = evt.clientY - rect.top  - 10;
+  if (tx + tw > W - 8) tx = evt.clientX - rect.left - tw - 14;
+  if (ty + th > H - 8) ty = H - th - 8;
+  if (ty < 8) ty = 8;
   tooltipEl.style.left = tx + 'px';
   tooltipEl.style.top  = ty + 'px';
 }

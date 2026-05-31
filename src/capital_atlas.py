@@ -173,6 +173,7 @@ def run(db_path: Path = DB_PATH, out_path: Path = OUT_PATH) -> dict:
             "source_presence": "db_investors",
             "thesis": _clean(r["thesis"]),
             "country": _clean(r["country_code"]).upper(),
+            "website": _clean(r["website"]),
             "degree": 0,  # calculated below
         })
 

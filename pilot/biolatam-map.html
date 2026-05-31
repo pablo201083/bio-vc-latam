@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BIO LATAM — Mapa del Ecosistema</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Crimson+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --sans: 'DM Sans', system-ui, sans-serif;
+      --serif: 'Crimson Pro', Georgia, serif;
+      --canvas: #0c0b09;
+      --bar: rgba(13,12,10,.96);
+      --border: rgba(255,255,255,.08);
+      --txt: rgba(255,255,255,.88);
+      --muted: rgba(255,255,255,.32);
+      --accent: #0B8F87;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { height: 100%; overflow: hidden; font-family: var(--sans); background: var(--canvas); color: var(--txt); }
+
+    /* ── Top bar ── */
+    .topbar {
+      position: fixed; inset: 0 0 auto 0; z-index: 40; height: 46px;
+      background: var(--bar); backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+      display: flex; align-items: center; gap: 14px; padding: 0 16px;
+    }
+    .brand { flex-shrink: 0; line-height: 1; }
+    .brand-eye  { font-size: .5rem; text-transform: uppercase; letter-spacing: .22em; color: var(--accent); font-weight: 700; display: block; }
+    .brand-name { font-size: .86rem; font-weight: 700; letter-spacing: -.02em; color: var(--txt); font-family: var(--serif); white-space: nowrap; }
+    .bar-sep { width: 1px; height: 20px; background: var(--border); flex-shrink: 0; }
+    .search-wrap { position: relative; flex-shrink: 0; }
+    .s-icon { position: absolute; left: 9px; top: 50%; transform: translateY(-50%); color: var(--muted); font-size: .78rem; pointer-events: none; }
+    .s-input {
+      width: 200px; padding: 5px 9px 5px 26px;
+      background: rgba(255,255,255,.055); border: 1px solid rgba(255,255,255,.09);
+      border-radius: 7px; font-size: .73rem; font-family: var(--sans);
+      color: var(--txt); outline: none; transition: background .12s, border-color .12s;
+    }
+    .s-input::placeholder { color: var(--muted); }
+    .s-input:focus { background: rgba(255,255,255,.09); border-color: rgba(11,143,135,.45); }
+    .s-count { font-size: .63rem; color: var(--muted); white-space: nowrap; }
+    .bar-flex { flex: 1; }
+
+    /* toggle */
+    .toggle-wrap { display: flex; align-items: center; gap: 7px; flex-shrink: 0; }
+    .toggle-label { font-size: .63rem; color: var(--muted); white-space: nowrap; }
+    .toggle {
+      width: 34px; height: 18px; background: rgba(255,255,255,.12); border-radius: 9px;
+      position: relative; cursor: pointer; transition: background .15s; border: none;
+      flex-shrink: 0;
+    }
+    .toggle.on { background: var(--accent); }
+    .toggle::after {
+      content: ''; position: absolute; width: 12px; height: 12px;
+      background: #fff; border-radius: 50%; top: 3px; left: 3px;
+      transition: left .15s; box-shadow: 0 1px 3px rgba(0,0,0,.4);
+    }
+    .toggle.on::after { left: 19px; }
+
+    .nav-links { display: flex; gap: 4px; }
+    .nav-link {
+      font-size: .67rem; color: var(--muted); text-decoration: none;
+      padding: 4px 9px; border: 1px solid var(--border); border-radius: 5px;
+      background: rgba(255,255,255,.02); transition: color .12s, border-color .12s; white-space: nowrap;
+    }
+    .nav-link:hover { color: var(--txt); border-color: rgba(255,255,255,.18); }
+
+    /* ── Canvas ── */
+    .canvas-wrap { position: fixed; inset: 46px 0 42px 0; overflow: hidden; }
+    #map-svg { width: 100%; height: 100%; display: block; cursor: grab; user-select: none; }
+    #map-svg.dragging { cursor: grabbing; }
+
+    /* zoom btns */
+    .zbtns {
+      position: absolute; bottom: 10px; right: 12px; z-index: 20;
+      display: flex; flex-direction: column; gap: 3px;
+    }
+    .zb {
+      width: 26px; height: 26px; border-radius: 5px;
+      border: 1px solid rgba(255,255,255,.09); background: rgba(255,255,255,.04);
+      color: var(--muted); cursor: pointer; font-size: .88rem; display: flex;
+      align-items: center; justify-content: center; transition: background .1s, color .1s;
+    }
+    .zb:hover { background: rgba(255,255,255,.12); color: var(--txt); }
+
+    /* ── Legend ── */
+    .legend {
+      position: fixed; inset: auto 0 0 0; z-index: 40; height: 42px;
+      background: var(--bar); backdrop-filter: blur(20px);
+      border-top: 1px solid var(--border);
+      display: flex; align-items: center; padding: 0 12px; gap: 10px; overflow: hidden;
+    }
+    .aa-group { display: flex; align-items: center; gap: 4px; flex-shrink: 0; }
+    .aa-lbl { font-size: .52rem; text-transform: uppercase; letter-spacing: .14em; color: var(--muted); font-weight: 700; }
+    .aab {
+      display: flex; align-items: center; justify-content: center;
+      width: 22px; height: 22px; border-radius: 4px;
+      border: 1px solid var(--border); background: rgba(255,255,255,.03);
+      color: var(--muted); cursor: pointer; transition: background .1s, color .1s;
+      font-family: var(--serif); font-weight: 700;
+    }
+    .aab:hover { background: rgba(255,255,255,.1); color: var(--txt); }
+    .aab.sm { font-size: .65rem; }
+    .aab.lg { font-size: .88rem; }
+    .leg-sep { width: 1px; height: 18px; background: var(--border); flex-shrink: 0; }
+    .tpills { display: flex; gap: 4px; flex-wrap: nowrap; overflow-x: auto; align-items: center; }
+    .tpills::-webkit-scrollbar { display: none; }
+    .tpill {
+      display: inline-flex; align-items: center; gap: 3px; flex-shrink: 0;
+      padding: 2px 8px 2px 5px; border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.07); background: rgba(255,255,255,.03);
+      font-size: .58rem; font-weight: 600; white-space: nowrap; cursor: pointer;
+      transition: background .12s, border-color .12s, color .12s; color: var(--muted);
+    }
+    .tpill.on { background: rgba(255,255,255,.11); border-color: rgba(255,255,255,.2); color: var(--txt); }
+    .tpill-dot { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; }
+    .leg-flex { flex: 1; }
+    .leg-hint { font-size: .55rem; color: rgba(255,255,255,.16); white-space: nowrap; flex-shrink: 0; }
+
+    /* ── Tooltip ── */
+    #tt {
+      position: fixed; pointer-events: none; z-index: 100;
+      background: rgba(16,15,12,.97); border: 1px solid rgba(255,255,255,.1);
+      border-radius: 11px; padding: 12px 15px; max-width: 280px;
+      box-shadow: 0 8px 32px rgba(0,0,0,.6); opacity: 0; transition: opacity .08s;
+    }
+    #tt.show { opacity: 1; }
+    .tt-label { font-size: 1rem; font-weight: 700; color: rgba(255,255,255,.95); margin-bottom: 3px; font-family: var(--serif); line-height: 1.2; }
+    .tt-sub { font-size: .64rem; color: var(--muted); margin-bottom: 8px; display: flex; align-items: center; gap: 5px; }
+    .tt-dot { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; }
+    .tt-startups { font-size: .67rem; color: rgba(255,255,255,.55); line-height: 1.6; }
+    .tt-startups strong { color: rgba(255,255,255,.78); font-weight: 600; }
+    .tt-more { font-size: .62rem; color: var(--muted); margin-top: 4px; font-style: italic; }
+
+    /* startup tooltip */
+    .tt-name { font-size: .9rem; font-weight: 600; color: rgba(255,255,255,.95); margin-bottom: 3px; font-family: var(--sans); }
+    .tt-liner { font-size: .7rem; color: rgba(255,255,255,.6); line-height: 1.45; margin-top: 7px; }
+    .tt-tags { display: flex; gap: 4px; flex-wrap: wrap; margin-top: 8px; }
+    .tt-tag { font-size: .56rem; font-weight: 600; padding: 2px 6px; border-radius: 4px; background: rgba(255,255,255,.07); color: rgba(255,255,255,.4); text-transform: uppercase; letter-spacing: .06em; }
+    .tt-tag.hi { background: rgba(11,143,135,.18); color: rgba(11,143,135,.85); }
+  </style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="brand">
+    <span class="brand-eye">BIO LATAM</span>
+    <span class="brand-name">Mapa del Ecosistema</span>
+  </div>
+  <div class="bar-sep"></div>
+  <div class="search-wrap">
+    <span class="s-icon">⌕</span>
+    <input class="s-input" id="search" type="text" placeholder="Buscar técnica o startup…" autocomplete="off" spellcheck="false">
+  </div>
+  <span class="s-count" id="s-count"></span>
+  <div class="bar-sep"></div>
+  <div class="toggle-wrap">
+    <span class="toggle-label">Ver startups</span>
+    <button class="toggle" id="toggle-startups" title="Mostrar nombres de startups"></button>
+  </div>
+  <div class="bar-flex"></div>
+  <nav class="nav-links">
+    <a class="nav-link" href="./startup-themes.html">Clusters</a>
+    <a class="nav-link" href="./ecosystem-intelligence.html">Intelligence</a>
+    <a class="nav-link" href="./index.html">← Inicio</a>
+  </nav>
+</div>
+
+<div class="canvas-wrap" id="canvas-wrap">
+  <svg id="map-svg" xmlns="http://www.w3.org/2000/svg">
+    <g id="zg">
+      <g id="layer-startups"></g>
+      <g id="layer-terms"></g>
+    </g>
+  </svg>
+  <div class="zbtns">
+    <button class="zb" id="z-in">+</button>
+    <button class="zb" id="z-out">−</button>
+    <button class="zb" id="z-fit" style="font-size:.5rem;font-weight:700;width:auto;padding:0 5px;letter-spacing:.04em">FIT</button>
+  </div>
+</div>
+
+<div class="legend">
+  <div class="aa-group">
+    <span class="aa-lbl">Aa</span>
+    <button class="aab sm" id="aa-sm">a</button>
+    <button class="aab lg" id="aa-lg">A</button>
+  </div>
+  <div class="leg-sep"></div>
+  <div class="tpills" id="tpills"></div>
+  <div class="leg-flex"></div>
+  <span class="leg-hint">scroll → zoom · drag → mover · click → sitio web</span>
+</div>
+
+<div id="tt"></div>
+
+<script src="./startup-themes-data.js"></script>
+<script>
+(function () {
+  /* ── Theme palette ── */
+  const COLORS = {
+    'Therapeutics':                            '#9B59D0',
+    'Diagnostics & Health Access':             '#3498DB',
+    'Food Systems & Alt Proteins':             '#E06B2A',
+    'Bioinputs & Crop Resilience':             '#27AE60',
+    'Nature & Ecosystem Tech':                 '#16A89A',
+    'Farm Intelligence':                       '#4A7FD4',
+    'Biomaterials & Circular Economy':         '#C9930A',
+    'Biomanufacturing & Platform Technologies':'#D4880A',
+  };
+  const THEMES = Object.keys(COLORS);
+  const SHORT = {
+    'Therapeutics':                            'Therapeutics',
+    'Diagnostics & Health Access':             'Diagnostics',
+    'Food Systems & Alt Proteins':             'Food & Alt Proteins',
+    'Bioinputs & Crop Resilience':             'Bioinputs',
+    'Nature & Ecosystem Tech':                 'Nature & Ecosystem',
+    'Farm Intelligence':                       'Farm Intelligence',
+    'Biomaterials & Circular Economy':         'Biomaterials',
+    'Biomanufacturing & Platform Technologies':'Biomanufacturing',
+  };
+  const FLAGS = { 'Argentina':'🇦🇷','Brazil':'🇧🇷','Chile':'🇨🇱','Colombia':'🇨🇴','Mexico':'🇲🇽','Peru':'🇵🇪','Uruguay':'🇺🇾','Costa Rica':'🇨🇷','Panama':'🇵🇦','Ecuador':'🇪🇨' };
+
+  /* ── Data ── */
+  const all  = window.STARTUP_THEMES_DATA.startups.filter(s => s.x != null && s.y != null);
+  const byId = new Map(all.map(s => [s.id, s]));
+
+  /* ── Aggregate: sub_cluster_label → technique terms ── */
+  const groups = {};
+  all.forEach(s => {
+    const lbl = s.sub_cluster_label;
+    if (!lbl) return;
+    if (!groups[lbl]) groups[lbl] = { xs: [], ys: [], themes: {}, startups: [] };
+    groups[lbl].xs.push(s.x);
+    groups[lbl].ys.push(s.y);
+    if (s.bio_theme) groups[lbl].themes[s.bio_theme] = (groups[lbl].themes[s.bio_theme] || 0) + 1;
+    groups[lbl].startups.push(s);
+  });
+
+  const terms = Object.entries(groups).map(([label, g]) => {
+    const cx = g.xs.reduce((a, b) => a + b, 0) / g.xs.length;
+    const cy = g.ys.reduce((a, b) => a + b, 0) / g.ys.length;
+    const dominant = Object.entries(g.themes).sort((a, b) => b[1] - a[1])[0]?.[0] || '';
+    return { label, cx, cy, count: g.startups.length, dominant, startups: g.startups };
+  });
+
+  const maxCount = Math.max(...terms.map(t => t.count));
+  const minCount = Math.min(...terms.map(t => t.count));
+
+  /* ── State ── */
+  const active     = new Set(THEMES);
+  let query        = '';
+  let aaScale      = 1.0;
+  let showStartups = false;
+  let T            = { tx: 0, ty: 0, s: 1 };
+
+  /* ── Coordinate system (percentile-clipped) ── */
+  function pct(arr, p) {
+    const sorted = [...arr].sort((a, b) => a - b);
+    return sorted[Math.round((p / 100) * (sorted.length - 1))];
+  }
+  const xs = all.map(s => s.x), ys = all.map(s => s.y);
+  const X0 = pct(xs, 1), X1 = pct(xs, 99);
+  const Y0 = pct(ys, 1), Y1 = pct(ys, 99);
+  const PAD = 80;
+
+  function dims() {
+    const w = document.getElementById('canvas-wrap');
+    return { W: w.clientWidth, H: w.clientHeight };
+  }
+  function pt(x, y, W, H) {
+    const cx = PAD + Math.min(Math.max((x - X0) / (X1 - X0), 0), 1) * (W - 2 * PAD);
+    const cy = PAD + Math.min(Math.max(1 - (y - Y0) / (Y1 - Y0), 0), 1) * (H - 2 * PAD);
+    return { cx, cy };
+  }
+
+  /* ── Term font size ── */
+  function termFS(count) {
+    const t = (count - minCount) / Math.max(maxCount - minCount, 1);
+    return Math.round((13 + t * 35) * aaScale); // 13px → 48px
+  }
+  /* ── Startup label font size ── */
+  function startupFS(s) {
+    const q = typeof s.quality_score === 'number' ? s.quality_score : 0;
+    return Math.round((6 + (q / 10) * 7) * aaScale); // 6–13px
+  }
+
+  /* ── SVG layers ── */
+  const svg          = document.getElementById('map-svg');
+  const zg           = document.getElementById('zg');
+  const layerStartups = document.getElementById('layer-startups');
+  const layerTerms    = document.getElementById('layer-terms');
+
+  /* ── Legend pills ── */
+  const pillsEl = document.getElementById('tpills');
+  const pills   = {};
+  THEMES.forEach(t => {
+    const btn = document.createElement('button');
+    btn.className = 'tpill on';
+    btn.innerHTML = `<span class="tpill-dot" style="background:${COLORS[t]}"></span>${SHORT[t]}`;
+    btn.addEventListener('click', () => {
+      if (active.has(t)) { active.delete(t); btn.classList.remove('on'); }
+      else               { active.add(t);    btn.classList.add('on');    }
+      updateStyles();
+    });
+    pillsEl.appendChild(btn);
+    pills[t] = btn;
+  });
+
+  /* ── Render (full) ── */
+  function render() {
+    const { W, H } = dims();
+    layerTerms.innerHTML   = '';
+    layerStartups.innerHTML = '';
+
+    /* — Startup labels (secondary layer, small) — */
+    all.forEach(s => {
+      const { cx, cy } = pt(s.x, s.y, W, H);
+      const el = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+      el.setAttribute('x', cx); el.setAttribute('y', cy);
+      el.setAttribute('text-anchor', 'middle');
+      el.setAttribute('dominant-baseline', 'middle');
+      el.setAttribute('font-family', "'DM Sans', system-ui, sans-serif");
+      el.setAttribute('font-size', startupFS(s));
+      el.setAttribute('font-weight', '400');
+      el.setAttribute('fill', COLORS[s.bio_theme] || '#888');
+      el.setAttribute('opacity', '0');   // hidden until toggle
+      el.setAttribute('cursor', 'pointer');
+      el.setAttribute('data-id', s.id);
+      el.setAttribute('data-type', 'startup');
+      el.textContent = s.name;
+      el.addEventListener('mouseenter', onStartupEnter);
+      el.addEventListener('mousemove',  onMove);
+      el.addEventListener('mouseleave', onLeave);
+      el.addEventListener('click', onStartupClick);
+      layerStartups.appendChild(el);
+    });
+
+    /* — Technique term labels (primary layer) — */
+    terms.forEach(term => {
+      const { cx, cy } = pt(term.cx, term.cy, W, H);
+      const col = COLORS[term.dominant] || '#888888';
+      const sz  = termFS(term.count);
+      const fw  = sz * aaScale >= 20 ? '700' : '600';
+
+      const el = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+      el.setAttribute('x', cx); el.setAttribute('y', cy);
+      el.setAttribute('text-anchor', 'middle');
+      el.setAttribute('dominant-baseline', 'middle');
+      el.setAttribute('font-family', "'Crimson Pro', Georgia, serif");
+      el.setAttribute('font-size', sz);
+      el.setAttribute('font-weight', fw);
+      el.setAttribute('fill', col);
+      el.setAttribute('opacity', '0.88');
+      el.setAttribute('cursor', 'default');
+      el.setAttribute('data-term', term.label);
+      el.textContent = term.label;
+
+      el.addEventListener('mouseenter', e => onTermEnter(e, term, col));
+      el.addEventListener('mousemove',  onMove);
+      el.addEventListener('mouseleave', onLeave);
+      layerTerms.appendChild(el);
+    });
+
+    applyT();
+    updateStyles();
+  }
+
+  /* ── Style update (no re-render) ── */
+  function updateStyles() {
+    const q = query.toLowerCase().trim();
+    let termMatches = 0, startupMatches = 0;
+
+    /* terms */
+    layerTerms.querySelectorAll('text').forEach(el => {
+      const term = terms.find(t => t.label === el.getAttribute('data-term'));
+      if (!term) return;
+      const hidden = !active.has(term.dominant);
+      const match  = q && term.label.toLowerCase().includes(q);
+      const dim    = hidden || (q && !match);
+      if (match) termMatches++;
+      el.setAttribute('fill', match ? '#ffffff' : (COLORS[term.dominant] || '#888'));
+      el.setAttribute('opacity', dim ? '0.04' : (match ? '1' : '0.88'));
+      el.setAttribute('font-size', termFS(term.count));
+    });
+
+    /* startups */
+    layerStartups.querySelectorAll('text').forEach(el => {
+      const s = byId.get(el.getAttribute('data-id'));
+      if (!s) return;
+      const hidden = !active.has(s.bio_theme);
+      const match  = q && s.name.toLowerCase().includes(q);
+      const dim    = hidden || (q && !match);
+      if (match) startupMatches++;
+      const base = showStartups ? (s.n_investors_mapped > 0 ? '0.75' : '0.38') : '0';
+      el.setAttribute('fill', match ? '#ffffff' : (COLORS[s.bio_theme] || '#888'));
+      el.setAttribute('opacity', q ? (dim ? '0.03' : (match ? '1' : base)) : base);
+      el.setAttribute('font-size', startupFS(s));
+    });
+
+    const total = termMatches + startupMatches;
+    const sc = document.getElementById('s-count');
+    sc.textContent = q ? (total ? `${total} resultado${total !== 1 ? 's' : ''}` : 'sin resultados') : '';
+  }
+
+  /* ── Toggle startups ── */
+  const toggleBtn = document.getElementById('toggle-startups');
+  toggleBtn.addEventListener('click', () => {
+    showStartups = !showStartups;
+    toggleBtn.classList.toggle('on', showStartups);
+    updateStyles();
+  });
+
+  /* ── Aa ── */
+  document.getElementById('aa-sm').addEventListener('click', () => { aaScale = Math.max(0.5, aaScale - 0.15); updateStyles(); });
+  document.getElementById('aa-lg').addEventListener('click', () => { aaScale = Math.min(2.5, aaScale + 0.15); updateStyles(); });
+
+  /* ── Zoom / pan ── */
+  function applyT() { zg.setAttribute('transform', `translate(${T.tx},${T.ty}) scale(${T.s})`); }
+
+  function zoomAt(cx, cy, f) {
+    const next = Math.min(14, Math.max(0.15, T.s * f));
+    const r    = next / T.s;
+    T.tx = cx - (cx - T.tx) * r;
+    T.ty = cy - (cy - T.ty) * r;
+    T.s  = next;
+    applyT();
+  }
+
+  svg.addEventListener('wheel', e => {
+    e.preventDefault();
+    const r = svg.getBoundingClientRect();
+    zoomAt(e.clientX - r.left, e.clientY - r.top, e.deltaY < 0 ? 1.12 : 0.88);
+  }, { passive: false });
+
+  let drag = false, dO = { x: 0, y: 0 };
+  svg.addEventListener('mousedown', e => {
+    if (e.button !== 0) return;
+    drag = true; dO = { x: e.clientX - T.tx, y: e.clientY - T.ty };
+    svg.classList.add('dragging');
+  });
+  document.addEventListener('mousemove', e => {
+    if (!drag) return;
+    T.tx = e.clientX - dO.x; T.ty = e.clientY - dO.y; applyT();
+  });
+  document.addEventListener('mouseup', () => { drag = false; svg.classList.remove('dragging'); });
+
+  document.getElementById('z-in').addEventListener('click',  () => { const { W, H } = dims(); zoomAt(W/2, H/2, 1.3); });
+  document.getElementById('z-out').addEventListener('click', () => { const { W, H } = dims(); zoomAt(W/2, H/2, 0.77); });
+  document.getElementById('z-fit').addEventListener('click', () => { T = { tx: 0, ty: 0, s: 1 }; applyT(); });
+
+  /* ── Search ── */
+  document.getElementById('search').addEventListener('input', e => { query = e.target.value; updateStyles(); });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') { document.getElementById('search').value = ''; query = ''; updateStyles(); }
+  });
+
+  /* ── Tooltip ── */
+  const tt = document.getElementById('tt');
+
+  function onTermEnter(e, term, col) {
+    const topN = [...term.startups]
+      .sort((a, b) => (b.quality_score || 0) - (a.quality_score || 0))
+      .slice(0, 5);
+    const listHTML = topN.map(s =>
+      `<strong>${s.name}</strong> <span style="opacity:.5">${FLAGS[s.country]||''}</span>`
+    ).join('<br>');
+    const more = term.startups.length > 5 ? `<div class="tt-more">+${term.startups.length - 5} más</div>` : '';
+
+    tt.innerHTML = `
+      <div class="tt-label">${term.label}</div>
+      <div class="tt-sub">
+        <div class="tt-dot" style="background:${col}"></div>
+        <span>${SHORT[term.dominant] || term.dominant}</span>
+        <span>·</span>
+        <span>${term.count} startup${term.count !== 1 ? 's' : ''}</span>
+      </div>
+      <div class="tt-startups">${listHTML}${more}</div>`;
+    positionTT(e);
+    tt.classList.add('show');
+  }
+
+  function onStartupEnter(e) {
+    const s = byId.get(e.target.getAttribute('data-id'));
+    if (!s) return;
+    const col = COLORS[s.bio_theme] || '#888';
+    const tags = [
+      s.funding_stage ? `<span class="tt-tag hi">${s.funding_stage}</span>` : '',
+      s.quality_score > 5 ? `<span class="tt-tag">Q ${s.quality_score.toFixed(0)}</span>` : '',
+      ...(s.tech_codes||[]).slice(0,2).map(tc => `<span class="tt-tag">${tc}</span>`),
+    ].join('');
+    tt.innerHTML = `
+      <div class="tt-name">${s.name}</div>
+      <div class="tt-sub">
+        <div class="tt-dot" style="background:${col}"></div>
+        <span class="tt-theme">${s.bio_theme||''}</span>
+        <span>·</span>
+        <span>${(FLAGS[s.country]||'')} ${s.country||''}</span>
+      </div>
+      <div class="tt-liner">${s.one_liner||''}</div>
+      <div class="tt-tags">${tags}</div>`;
+    positionTT(e);
+    tt.classList.add('show');
+  }
+
+  function onMove(e)  { positionTT(e); }
+  function onLeave()  { tt.classList.remove('show'); }
+
+  function onStartupClick(e) {
+    const s = byId.get(e.target.getAttribute('data-id'));
+    if (s?.website) window.open(s.website, '_blank', 'noopener');
+  }
+
+  function positionTT(e) {
+    const TW = 282, TH = 200;
+    let x = e.clientX + 14, y = e.clientY - 8;
+    if (x + TW > window.innerWidth  - 6) x = e.clientX - TW - 12;
+    if (y + TH > window.innerHeight - 6) y = window.innerHeight - TH - 6;
+    tt.style.left = x + 'px'; tt.style.top = y + 'px';
+  }
+
+  /* ── Resize ── */
+  let rTimer;
+  window.addEventListener('resize', () => { clearTimeout(rTimer); rTimer = setTimeout(render, 100); });
+
+  /* ── Init ── */
+  render();
+})();
+</script>
+</body>
+</html>

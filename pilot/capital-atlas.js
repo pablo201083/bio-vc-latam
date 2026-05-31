@@ -27,6 +27,11 @@
   const badgeEl = document.getElementById("atlas-detail-badge");
   const noteEl = document.getElementById("atlas-note");
   const tooltipEl = document.getElementById("atlas-tooltip");
+  let _tooltipHideTimer = null;
+  if (tooltipEl) {
+    tooltipEl.addEventListener("mouseenter", () => clearTimeout(_tooltipHideTimer));
+    tooltipEl.addEventListener("mouseleave", () => { tooltipEl.classList.remove("visible"); tooltipEl.innerHTML = ""; });
+  }
 
   let WIDTH = 1900;
   let HEIGHT = 900;
@@ -949,9 +954,18 @@
     const connected = activeEdges.filter((edge) => edge.source === node.id || edge.target === node.id);
     const publicEdges = connected.filter((edge) => edge.evidence_tier === "public_url" || edge.type === "co_investment").length;
     const theme = node.type === "startup" ? themeLabel(themeKey(node)) : clean(node.investor_subtype) || titleCase(node.type);
+    const _dom1 = node.website ? (() => { try { return new URL(node.website.startsWith('http') ? node.website : 'https://'+node.website).hostname.replace(/^www\./,''); } catch(e){ return null; }})() : null;
+    const _logo1 = _dom1
+      ? `<img class="tooltip-logo" src="https://logo.clearbit.com/${_dom1}?size=128" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" alt=""><div class="tooltip-logo-ph" style="display:none">${node.label.split(/\s+/).map(w=>w[0]||'').join('').slice(0,2).toUpperCase()}</div>`
+      : `<div class="tooltip-logo-ph">${node.label.split(/\s+/).map(w=>w[0]||'').join('').slice(0,2).toUpperCase()}</div>`;
     tooltipEl.innerHTML = `
-      <div class="tooltip-kicker">${escapeHtml(titleCase(node.type))}</div>
-      <div class="tooltip-title">${escapeHtml(node.label)}</div>
+      <div class="tooltip-header">
+        ${_logo1}
+        <div class="tooltip-header-text">
+          <div class="tooltip-kicker">${escapeHtml(titleCase(node.type))}</div>
+          <div class="tooltip-title">${escapeHtml(node.label)}</div>
+        </div>
+      </div>
       <div class="tooltip-meta">${escapeHtml(theme)}${node.country ? ` · ${escapeHtml(node.country)}` : ""}${node.summary ? ` · ${escapeHtml(node.summary).slice(0, 150)}${node.summary.length > 150 ? "..." : ""}` : ""}</div>
       <div class="tooltip-stats">
         <div class="tooltip-stat"><span>Weighted degree</span><strong>${nodeWeight(node).toFixed(1)}</strong></div>
@@ -995,13 +1009,21 @@
       .slice(0, 3)
       .map((edge) => allNodesById.get(edge.source === node.id ? edge.target : edge.source)?.label)
       .filter(Boolean);
+    const _dom2 = node.website ? (() => { try { return new URL(node.website.startsWith('http') ? node.website : 'https://'+node.website).hostname.replace(/^www\./,''); } catch(e){ return null; }})() : null;
+    const _logo2 = _dom2
+      ? `<img class="tooltip-logo" src="https://logo.clearbit.com/${_dom2}?size=128" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" alt=""><div class="tooltip-logo-ph" style="display:none">${node.label.split(/\s+/).map(w=>w[0]||'').join('').slice(0,2).toUpperCase()}</div>`
+      : `<div class="tooltip-logo-ph">${node.label.split(/\s+/).map(w=>w[0]||'').join('').slice(0,2).toUpperCase()}</div>`;
     tooltipEl.innerHTML = `
-      <div class="tooltip-kicker">${escapeHtml(titleCase(node.type))}</div>
-      <div class="tooltip-title">${escapeHtml(node.label)}</div>
-      <div class="tooltip-chip-row">
-        <span class="tooltip-chip"><span class="tooltip-chip-dot" style="background:${nodeColor(node)}"></span>${escapeHtml(theme)}</span>
-        ${node.country ? `<span class="tooltip-chip">${escapeHtml(node.country)}</span>` : ""}
-        ${node.scope_decision ? `<span class="tooltip-chip">${escapeHtml(node.scope_decision)}</span>` : ""}
+      <div class="tooltip-header">
+        ${_logo2}
+        <div class="tooltip-header-text">
+          <div class="tooltip-kicker">${escapeHtml(titleCase(node.type))}</div>
+          <div class="tooltip-title">${escapeHtml(node.label)}</div>
+          <div class="tooltip-chip-row" style="margin-top:4px">
+            <span class="tooltip-chip"><span class="tooltip-chip-dot" style="background:${nodeColor(node)}"></span>${escapeHtml(theme)}</span>
+            ${node.country ? `<span class="tooltip-chip">${escapeHtml(node.country)}</span>` : ""}
+          </div>
+        </div>
       </div>
       ${node.summary ? `<div class="tooltip-meta">${escapeHtml(node.summary).slice(0, 185)}${node.summary.length > 185 ? "..." : ""}</div>` : ""}
       <div class="tooltip-stats">
@@ -1015,7 +1037,7 @@
         <div class="tooltip-stat"><span>Fuentes públicas</span><strong>${publicEdges}</strong></div>
       </div>
       ${topNeighbors.length ? `<div class="tooltip-meta"><strong>Conecta con:</strong> ${escapeHtml(topNeighbors.join(", "))}</div>` : ""}
-      <div class="tooltip-meta">Click para fijar este vecindario.</div>
+      ${_dom2 ? `<a href="${node.website.startsWith('http')?node.website:'https://'+node.website}" target="_blank" rel="noopener" style="font-size:.67rem;color:var(--accent);text-decoration:none;display:inline-flex;align-items:center;gap:3px;margin-top:4px;opacity:.8">↗ ${_dom2}</a>` : ""}
     `;
     moveTooltip(event.clientX, event.clientY);
     tooltipEl.classList.add("visible");

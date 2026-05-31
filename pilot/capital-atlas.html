@@ -134,12 +134,12 @@
       border-radius: 14px;
       background: rgba(255,255,255,.76);
       cursor: pointer;
-      transition: border-color 90ms, background 90ms;
-      overflow: hidden;       /* clips border-radius */
-      flex-shrink: 0;         /* never compress in the flex column */
-      min-height: 52px;       /* safety floor */
+      transition: border-color 90ms, background 90ms, box-shadow 90ms;
+      overflow: hidden;
+      flex-shrink: 0;
+      min-height: 52px;
     }
-    .iv:hover { border-color: rgba(92,82,70,.28); background: rgba(255,255,255,.92); }
+    .iv:hover { border-color: rgba(92,82,70,.28); background: rgba(255,255,255,.96); box-shadow: 0 2px 10px rgba(0,0,0,.06); }
     .iv.active {
       border-color: var(--accent);
       background: rgba(58,168,163,.06);
@@ -147,18 +147,33 @@
     .iv-header {
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      gap: 8px;
+      gap: 9px;
       padding: 9px 11px 5px;
       min-height: 36px;
     }
+    .iv-logo {
+      width: 30px; height: 30px;
+      border-radius: 7px;
+      object-fit: contain;
+      background: #f2ede6;
+      flex-shrink: 0;
+      display: block;
+    }
+    .iv-logo-ph {
+      width: 30px; height: 30px;
+      border-radius: 7px;
+      background: linear-gradient(135deg,#ede8e0,#d8d0c4);
+      flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center;
+      font-size: .62rem; font-weight: 800; color: #a09080; letter-spacing: .03em;
+      text-transform: uppercase;
+    }
+    .iv-name-wrap { flex: 1; min-width: 0; }
     .iv-name {
       font-size: .8rem;
       font-weight: 700;
       color: var(--ink);
       line-height: 1.25;
-      flex: 1;
-      min-width: 0;
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
@@ -344,18 +359,33 @@
     .atlas-tooltip {
       position: absolute; z-index: 7;
       left: 18px; top: 18px;
-      width: min(320px, calc(100% - 40px));
+      width: min(340px, calc(100% - 40px));
       border: 1px solid rgba(217,206,190,.78);
-      border-radius: 16px;
-      background: rgba(255,252,246,.94);
-      box-shadow: 0 20px 54px rgba(54,45,35,.16);
-      backdrop-filter: blur(12px);
-      padding: 11px 12px;
-      opacity: 0; transform: translateY(6px);
-      gap: 8px; pointer-events: none;
-      transition: opacity 120ms ease, transform 120ms ease;
+      border-radius: 18px;
+      background: rgba(255,252,248,.97);
+      box-shadow: 0 24px 60px rgba(54,45,35,.18), 0 4px 14px rgba(54,45,35,.08);
+      backdrop-filter: blur(16px);
+      padding: 13px 14px;
+      opacity: 0; transform: translateY(8px);
+      gap: 9px; pointer-events: auto;
+      transition: opacity 140ms ease, transform 140ms ease;
     }
     .atlas-tooltip.visible { display: grid; opacity: 1; transform: translateY(0); }
+    .tooltip-header { display: flex; align-items: flex-start; gap: 12px; }
+    .tooltip-logo {
+      width: 42px; height: 42px; border-radius: 10px;
+      object-fit: contain; background: #f2ede6;
+      flex-shrink: 0; display: block;
+      border: 1px solid rgba(217,206,190,.5);
+    }
+    .tooltip-logo-ph {
+      width: 42px; height: 42px; border-radius: 10px;
+      background: linear-gradient(135deg,#ede8e0,#d8d0c4);
+      flex-shrink: 0; display: flex; align-items: center; justify-content: center;
+      font-size: .7rem; font-weight: 800; color: #a09080; letter-spacing: .03em;
+      text-transform: uppercase; border: 1px solid rgba(217,206,190,.4);
+    }
+    .tooltip-header-text { flex: 1; min-width: 0; }
     .tooltip-kicker { color: var(--accent); font-size: .68rem; letter-spacing: .12em; text-transform: uppercase; font-weight: 900; }
     .tooltip-title { font-weight: 900; font-size: 1rem; line-height: 1.08; }
     .tooltip-meta { color: var(--muted); font-size: .78rem; line-height: 1.35; }
@@ -649,8 +679,8 @@
 <script src="./text-clean.js?v=20260422aa" defer></script>
 <script src="./theme-system.js?v=20260430english-semantic" defer></script>
 <script src="./semantic-single-level-data.js?v=20260508shared-taxonomy" defer></script>
-<script src="./capital-atlas-data.js?v=20260520stamm" defer></script>
-<script src="./capital-atlas.js?v=20260520scale2" defer></script>
+<script src="./capital-atlas-data.js?v=20260530logos" defer></script>
+<script src="./capital-atlas.js?v=20260530logos" defer></script>
 
 <script>
 document.addEventListener('DOMContentLoaded', function(){
@@ -844,10 +874,21 @@ document.addEventListener('DOMContentLoaded', function(){
     card.style.setProperty('--iv-color', domColor);
     card.style.borderLeft = `3px solid ${domColor}`;
 
+    const ivDom = iv.website ? (() => { try { return new URL(iv.website.startsWith('http') ? iv.website : 'https://'+iv.website).hostname.replace(/^www\./,''); } catch(e){ return null; }})() : null;
+    const ivInitials = iv.label.split(/\s+/).map(w=>w[0]||'').join('').slice(0,2).toUpperCase();
+    const ivLogoHtml = ivDom
+      ? `<img class="iv-logo" src="https://logo.clearbit.com/${ivDom}?size=128" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" alt=""><div class="iv-logo-ph" style="display:none">${ivInitials}</div>`
+      : `<div class="iv-logo-ph">${ivInitials}</div>`;
+
     card.innerHTML = `
       <div class="iv-header">
-        <span class="iv-name" title="${iv.label}">${iv.label}</span>
-        <span class="iv-type-chip ${typeClass(iv.type)}">${typeLabel(iv.type, iv.subtype)}</span>
+        ${ivLogoHtml}
+        <div class="iv-name-wrap">
+          <div class="iv-name">${iv.label}</div>
+          <div style="display:flex;gap:5px;align-items:center;margin-top:2px">
+            <span class="iv-type-chip ${typeClass(iv.type)}">${typeLabel(iv.type, iv.subtype)}</span>
+          </div>
+        </div>
         <span class="iv-count">${iv.count}</span>
       </div>
       <div class="iv-preview">
