@@ -131,7 +131,7 @@ EDITORIAL_CENTROIDS: dict[str, tuple[float, float]] = {
     #
     "Therapeutics":                            (-0.80, -0.70),  # instrumento=molécula/célula; escala=intraorganismo
     "Diagnostics & Health Access":             (-0.30, -0.65),  # instrumento=biosensor/secuenciador (bio); output=dato; escala=molecular
-    "Biomanufacturing & Fermentation Economy": (-0.65, -0.15),  # instrumento=microorganismo/bioreactor; escala=proceso industrial
+    "Biomanufacturing & Platform Technologies": (-0.65, -0.15),  # instrumento=microorganismo/bioreactor; escala=proceso industrial
     "Biomaterials & Circular Economy":         (-0.15, +0.10),  # instrumento=síntesis bio+química; escala=material; nodo crosscutting
     "Food Systems & Alt Proteins":             (+0.15, +0.15),  # mix bio+digital; escala=alimento/organismo
     "Bioinputs & Crop Resilience":             (-0.50, +0.45),  # instrumento=biológico (microbio, extracto); escala=campo/planta
@@ -192,6 +192,240 @@ def editorial_positions(
     print(f"  Layout editorial: {n_placed}/{len(ids)} con centroide definido "
           f"({len(ids)-n_placed} en origen)")
     return result
+
+
+def semantic_positions(
+    raw_2d: np.ndarray,
+    ids: list[str],
+    bio_themes_map: dict[str, str],
+    canvas_scale: float = CANVAS_SCALE,
+) -> np.ndarray:
+    """UMAP semántico puro con alineación Procrustes sobre los 7 temas no-hub.
+
+    El UMAP 2D es rotativamente arbitrario: puede salir girado o reflejado en
+    cada corrida. Para que el mapa sea interpretable (ejes bio→digital y
+    molecular→ecosistema) se aplica una transformación Procrustes que alinea los
+    centroides de los 7 temas 'normales' con sus posiciones editoriales.
+
+    Biomanufacturing se EXCLUYE del fitting Procrustes porque es un tema hub
+    semánticamente central (igual de cercano a todos los demás temas). Incluirlo
+    en el ajuste distorsiona la rotación para los otros 7. Después de aplicar la
+    rotación, Biomanufacturing queda donde el dato lo pone — ese es exactamente
+    el hallazgo que queremos mostrar.
+
+    La transformación es un cuerpo rígido (rotación + escala global + traslación):
+    NO distorsiona distancias relativas entre startups, dentro ni entre temas.
+
+    Diferencia semántico ↔ editorial:
+      1. Biomanufacturing: centro semántico del ecosistema vs. esquina editorial
+      2. Spread intra-tema: real (heterogeneidad visible) vs. normalizado uniforme
+    """
+    try:
+        from scipy.linalg import orthogonal_procrustes
+    except ImportError:
+        max_ext = np.abs(raw_2d).max() or 1.0
+        return (raw_2d / max_ext * canvas_scale).astype(np.float32)
+
+    # Temas excluidos del fitting Procrustes (hubs semánticos cuya posición
+    # real difiere estructuralmente de la editorial por diseño del ecosistema).
+    # Se determina empíricamente: si un tema queda persistentemente lejos de su
+    # centroide editorial tras el fit, es candidato a hub.
+    # Con las correcciones de bio_theme actuales, incluimos todos los temas.
+    HUB_THEMES: set[str] = set()   # ningún hub excluido a priori
+
+    # Agrupar índices por tema
+    theme_indices: dict[str, list[int]] = {}
+    for i, sid in enumerate(ids):
+        t = bio_themes_map.get(sid, "")
+        theme_indices.setdefault(t, []).append(i)
+
+    # Calcular centroides UMAP para los temas de fitting (excluye hubs)
+    fit_themes = sorted(
+        t for t in theme_indices
+        if t in EDITORIAL_CENTROIDS and t not in HUB_THEMES
+    )
+    if len(fit_themes) < 2:
+        max_ext = np.abs(raw_2d).max() or 1.0
+        return (raw_2d / max_ext * canvas_scale).astype(np.float32)
+
+    A = np.array([raw_2d[theme_indices[t]].mean(axis=0) for t in fit_themes])  # UMAP centroids (raw)
+    B = np.array([EDITORIAL_CENTROIDS[t] for t in fit_themes])                  # editorial, en [-1,1]
+
+    # Centrar ambas nubes
+    A_mean = A.mean(axis=0)
+    B_mean = B.mean(axis=0)
+    A_c = A - A_mean
+    B_c = B - B_mean
+
+    # Procrustes ortogonal sobre los 7 temas no-hub
+    R, _ = orthogonal_procrustes(A_c, B_c)
+
+    # Escala óptima: s = tr(A_c @ R @ B_c^T) / ||A_c||²
+    AR    = A_c @ R
+    denom = float(np.sum(A_c ** 2))
+    s     = float(np.trace(AR @ B_c.T)) / denom if denom > 1e-12 else 1.0
+    s     = max(0.01, min(s, 100.0))
+
+    # Aplicar a TODOS los puntos (incluyendo hubs — quedan donde el dato los pone)
+    aligned = s * (raw_2d - A_mean) @ R + B_mean   # → espacio [-1, 1]
+
+    # Diagnóstico
+    A_aligned = s * A_c @ R + B_mean
+    residuals = np.linalg.norm(A_aligned - B, axis=1)
+    print(f"  Layout semántico Procrustes (excl. hubs): s={s:.4f}, "
+          f"residuo medio={residuals.mean():.3f} ed-units "
+          f"({residuals.mean()*canvas_scale:.1f}px)")
+
+    # Mostrar dónde queda Biomanufacturing vs. editorial
+    for theme, indices in theme_indices.items():
+        if theme in HUB_THEMES:
+            hub_sem = aligned[indices].mean(axis=0)
+            hub_ed  = np.array(EDITORIAL_CENTROIDS.get(theme, (0.0, 0.0)))
+            diff    = np.linalg.norm(hub_sem - hub_ed)
+            print(f"  Hub '{theme[:30]}': sem=({hub_sem[0]:+.2f},{hub_sem[1]:+.2f}) "
+                  f"ed=({hub_ed[0]:+.2f},{hub_ed[1]:+.2f}) Δ={diff:.2f} ed-units "
+                  f"→ {('centro semántico' if diff > 0.2 else 'aprox. editorial')}")
+
+    return (aligned * canvas_scale).astype(np.float32)
+
+
+def conceptual_positions(
+    vectors: np.ndarray,
+    ids: list[str],
+    canvas_scale: float = CANVAS_SCALE,
+) -> np.ndarray:
+    """Proyección sobre ejes conceptuales definidos por arquetipos curatoriales.
+
+    Los ejes se derivan de contrastes entre compañías arquetípicas que representan
+    claramente los polos de cada dimensión. La posición de cada startup es el
+    producto punto de su embedding con el vector de cada eje — completamente
+    determinado por el contenido semántico del summary.
+
+    Eje X — Naturaleza del instrumento tecnológico:
+      Polo izquierdo (bio-material): el organismo/molécula/material ES la herramienta
+      Polo derecho (digital-plataforma): el dato/modelo/software ES la herramienta
+
+    Eje Y — Escala de intervención:
+      Polo inferior (molecular-celular): acción dentro del organismo
+      Polo superior (ecosistema-mercado): acción a escala de campo/sistema/mercado
+
+    Propiedades del layout:
+    - Determinístico: misma startup → misma posición siempre
+    - Estable: agregar startups no mueve las existentes (los ejes son fijos)
+    - Explicable: "está aquí porque su texto usa vocabulario X más que Y"
+    - Sin grupos forzados: la agrupación emerge del dato, no de centroides
+    - Ortogonal: los dos ejes son perpendiculares en el espacio de embeddings
+    """
+    # ── Definición de arquetipos por polo ────────────────────────────────────
+    # Cada polo: lista de entity_ids que representan claramente ese extremo.
+    # Curados manualmente; revisables si el ecosistema cambia.
+
+    ARCHETYPES: dict[str, list[str]] = {
+        # Bio-material: el organismo/molécula/material ES la herramienta activa
+        "bio_material": [
+            "phagelab",       # bacteriófagos como medicina
+            "neocell",        # biosimilares en biorreactor
+            "bioheuris",      # edición genómica de cultivos
+            "beeflow",        # mejora de abejas polinizadoras
+            "bioplastix",     # microorganismos produciendo bioplásticos
+            "apexzymes",      # enzimas industriales de hongos filamentosos
+            "stamm",          # bioprocesadores para biológicos
+            "tintte",         # biopigmentos microbianos
+            "arqlite",        # conversión de plásticos con procesos bio
+            "alkemio",        # refinación sostenible de tierras raras
+        ],
+        # Digital-plataforma: el dato/modelo/software ES la herramienta
+        "digital_platform": [
+            "aegro",          # SaaS de gestión agrícola
+            "auravant",       # plataforma de datos de precisión agrícola
+            "brain_ag",       # IA para riesgo crediticio agro
+            "agrofy",         # marketplace digital agropecuario
+            "traive",         # plataforma de crédito agrícola IA
+            "nexxto",         # monitoreo IoT temperatura/humedad
+            "pharmalens-br",  # visión computacional QC pharma
+            "speclab",        # fingerprinting espectral ML
+            "agrotools",      # plataforma inteligencia agronegocio
+        ],
+        # Molecular-celular: acción dentro del organismo (molécula, célula, tejido)
+        "molecular": [
+            "phagelab",           # bacteriófago → bacteria (sub-celular)
+            "fecundis",           # reproducción animal, nivel celular
+            "inner_cosmos",       # interfaz cerebro-computadora
+            "cellco",             # biología sintética, diseño celular
+            "mendelics",          # análisis genómico molecular
+            "aplife_biotech",     # síntesis de librerías moleculares
+            "circa_therapeutics", # terapéutica molecular
+            "dharma_bioscience",  # biociencia molecular
+            "libera",             # descubrimiento de fármacos
+            "apasomics",          # proteómica y ómicas moleculares
+        ],
+        # Ecosistema-mercado: acción a escala de campo, cuenca, mercado, bioma
+        "ecosystem": [
+            "satellogic",               # imágenes satelitales, escala planetaria
+            "kilimo",                   # eficiencia hídrica a escala de cuenca
+            "agree",                    # trazabilidad de cadenas alimentarias
+            "agrojusto",                # acceso a mercados para pequeños productores
+            "biodiversity_intelligence",# monitoreo de biodiversidad a escala ecosistema
+            "carbonext",                # carbono forestal, escala de bioma
+            "courageous_land",          # gestión de tierras, escala territorial
+            "sistema-bio-mx",           # biodigestores, infraestructura rural
+            "tracestory",               # trazabilidad de cadenas de valor
+        ],
+    }
+
+    id_to_idx = {eid: i for i, eid in enumerate(ids)}
+
+    def pole_vector(pole_ids: list[str]) -> np.ndarray:
+        """Promedio de embeddings para los arquetipos de este polo."""
+        valid_idx = [id_to_idx[eid] for eid in pole_ids if eid in id_to_idx]
+        missing = [eid for eid in pole_ids if eid not in id_to_idx]
+        if missing:
+            print(f"    [concept] arquetipos no encontrados: {missing}")
+        if not valid_idx:
+            raise ValueError("Ningún arquetipo encontrado — verificar entity_ids")
+        return vectors[valid_idx].mean(axis=0)
+
+    # ── Calcular vectores de eje ─────────────────────────────────────────────
+    bio_vec   = pole_vector(ARCHETYPES["bio_material"])
+    dig_vec   = pole_vector(ARCHETYPES["digital_platform"])
+    mol_vec   = pole_vector(ARCHETYPES["molecular"])
+    eco_vec   = pole_vector(ARCHETYPES["ecosystem"])
+
+    # Eje X: de bio-material (izq) a digital-plataforma (der)
+    axis_x = dig_vec - bio_vec
+    axis_x = axis_x / (np.linalg.norm(axis_x) + 1e-12)
+
+    # Eje Y: de molecular (abajo) a ecosistema (arriba)
+    # Ortogonalización de Gram-Schmidt para garantizar perpendicularidad
+    axis_y = eco_vec - mol_vec
+    axis_y = axis_y - np.dot(axis_y, axis_x) * axis_x   # quitar componente en eje X
+    axis_y = axis_y / (np.linalg.norm(axis_y) + 1e-12)
+
+    # ── Proyectar todos los embeddings ───────────────────────────────────────
+    proj_x = vectors @ axis_x    # dot product con eje bio↔digital
+    proj_y = vectors @ axis_y    # dot product con eje molecular↔ecosistema
+
+    # ── Normalizar al espacio del canvas ─────────────────────────────────────
+    # Centrar en cero y escalar para que el percentil 95 quede a canvas_scale*0.75
+    def robust_scale(v: np.ndarray) -> np.ndarray:
+        center = np.median(v)
+        p95 = np.percentile(np.abs(v - center), 95)
+        return (v - center) / (p95 + 1e-12) * canvas_scale * 0.75
+
+    scaled_x = robust_scale(proj_x)
+    scaled_y = robust_scale(proj_y)
+
+    # ── Diagnóstico: posición de arquetipos en el nuevo espacio ──────────────
+    print(f"  Layout conceptual: ejes derivados de {len(ARCHETYPES['bio_material'])} + "
+          f"{len(ARCHETYPES['digital_platform'])} arquetipos X, "
+          f"{len(ARCHETYPES['molecular'])} + {len(ARCHETYPES['ecosystem'])} arquetipos Y")
+
+    # Mostrar dónde quedan los temas
+    from collections import defaultdict as _dd
+    theme_x: dict = _dd(list)
+    # (ids here are startup ids, no bio_themes_map available — skip per-theme diag)
+
+    return np.column_stack([scaled_x, scaled_y]).astype(np.float32)
 
 
 def scatter_positions(
@@ -539,20 +773,30 @@ def persist_results(
     cluster_labels: dict[int, str],
     tech_map: dict[str, list[str]],
     ind_map: dict[str, list[str]],
+    semantic2d: np.ndarray | None = None,
+    hybrid2d: np.ndarray | None = None,
+    conceptual2d: np.ndarray | None = None,
 ) -> None:
     """Persiste resultados de clustering + códigos a startup_extended."""
     cur = conn.cursor()
     timestamp = datetime.now(timezone.utc).isoformat(timespec="seconds")
 
-    # Asegurar columnas scatter_x / scatter_y (idempotente)
-    for col in ("scatter_x", "scatter_y"):
+    # Asegurar columnas adicionales (idempotente)
+    for col in ("scatter_x", "scatter_y", "semantic_x", "semantic_y", "hybrid_x", "hybrid_y",
+                "conceptual_x", "conceptual_y"):
         try:
             cur.execute(f"ALTER TABLE startup_extended ADD COLUMN {col} REAL")
         except Exception:
             pass
 
-    scatter_map = {sid: (float(scatter2d[i, 0]), float(scatter2d[i, 1]))
-                   for i, sid in enumerate(ids)}
+    scatter_map    = {sid: (float(scatter2d[i, 0]),    float(scatter2d[i, 1]))
+                      for i, sid in enumerate(ids)}
+    semantic_map   = {sid: (float(semantic2d[i, 0]),   float(semantic2d[i, 1]))
+                      for i, sid in enumerate(ids)} if semantic2d is not None else {}
+    hybrid_map     = {sid: (float(hybrid2d[i, 0]),     float(hybrid2d[i, 1]))
+                      for i, sid in enumerate(ids)} if hybrid2d is not None else {}
+    conceptual_map = {sid: (float(conceptual2d[i, 0]), float(conceptual2d[i, 1]))
+                      for i, sid in enumerate(ids)} if conceptual2d is not None else {}
 
     for sid, lbl, prob, (x, y) in zip(ids, labels, probs, coords2d):
         c = int(lbl)
@@ -562,16 +806,22 @@ def persist_results(
         cluster_label = cluster_labels.get(c, f"cluster {c}")
         tech_json = json.dumps(tech_map.get(sid, []))
         ind_json = json.dumps(ind_map.get(sid, []))
-        sx, sy = scatter_map.get(sid, (x, y))
+        sx, sy   = scatter_map.get(sid, (x, y))
+        ux, uy   = semantic_map.get(sid, (x, y))
+        hx, hy   = hybrid_map.get(sid, (x, y))
+        cx, cy   = conceptual_map.get(sid, (x, y))
         cur.execute(
             """UPDATE startup_extended
                SET cluster_id = ?, cluster_label = ?, cluster_confidence = ?,
                    umap_x = ?, umap_y = ?, is_outlier = ?,
                    tech_codes = ?, industry_codes = ?,
-                   scatter_x = ?, scatter_y = ?
+                   scatter_x = ?, scatter_y = ?,
+                   semantic_x = ?, semantic_y = ?,
+                   hybrid_x = ?, hybrid_y = ?,
+                   conceptual_x = ?, conceptual_y = ?
                WHERE startup_id = ?""",
             (c, cluster_label, float(prob), float(x), float(y),
-             is_outlier, tech_json, ind_json, sx, sy, sid),
+             is_outlier, tech_json, ind_json, sx, sy, ux, uy, hx, hy, cx, cy, sid),
         )
 
     # Aplicar overrides manuales — resolución por (bio_theme, keyword) en lugar de ID fijo.
@@ -846,7 +1096,9 @@ def write_dashboard_data(conn: sqlite3.Connection) -> None:
                sx.bio_lens_tags, sx.domain_tags, sx.technology_tags, sx.scale_tags,
                sx.market_label,
                sx.tech_depth, sx.tech_depth_confidence,
-               e.founded_year
+               e.founded_year,
+               sx.semantic_x, sx.semantic_y,
+               sx.hybrid_x, sx.hybrid_y
         FROM startup_extended sx
         JOIN entities e ON e.entity_id = sx.startup_id
         LEFT JOIN investment_edges ie ON ie.startup_id = sx.startup_id
@@ -913,6 +1165,14 @@ def write_dashboard_data(conn: sqlite3.Connection) -> None:
             "tech_depth_confidence": round(float(r[39] or 0.5), 3),
             # ── Temporal data ─────────────────────────────────────────────────
             "founded_year": int(r[40]) if r[40] is not None else None,
+            # ── Posiciones alternativas de layout ────────────────────────────
+            # ux/uy = semántico puro (UMAP normalizado, sin ejes editoriales)
+            # hx/hy = híbrido (semántica + fuerza suave hacia ejes editoriales, α=0.35)
+            # x/y   = editorial (centroides fijos bio→digital × molecular→ecosistema)
+            "ux": round(float(r[41]), 3) if r[41] is not None else round(float(r[11] or 0), 3),
+            "uy": round(float(r[42]), 3) if r[42] is not None else round(float(r[12] or 0), 3),
+            "hx": round(float(r[43]), 3) if r[43] is not None else round(float(r[11] or 0), 3),
+            "hy": round(float(r[44]), 3) if r[44] is not None else round(float(r[12] or 0), 3),
         })
 
     # Cluster summary con métricas para inversor
@@ -1151,8 +1411,10 @@ def run(
         "WHERE bio_theme_primary IS NOT NULL AND bio_theme_primary != ''"
     ).fetchall())
     conn_pre.close()
-    coords_2d  = editorial_positions(raw_2d, ids, bio_themes_map_pre)
-    scatter_2d = scatter_positions(raw_2d, ids, bio_themes_map_pre)
+    coords_2d   = editorial_positions(raw_2d, ids, bio_themes_map_pre)
+    scatter_2d  = scatter_positions(raw_2d, ids, bio_themes_map_pre)
+    semantic_2d    = semantic_positions(raw_2d, ids, bio_themes_map_pre)
+    conceptual_2d  = conceptual_positions(vectors, ids)
 
     # 4. HDBSCAN
     params = dict(HDBSCAN_PARAMS)
@@ -1199,7 +1461,8 @@ def run(
 
     # 8. Persistir
     print("  Persistiendo a SQLite...")
-    persist_results(conn, ids, labels, probs, coords_2d, scatter_2d, cluster_labels, tech_map, ind_map)
+    persist_results(conn, ids, labels, probs, coords_2d, scatter_2d, cluster_labels, tech_map, ind_map,
+                    semantic2d=semantic_2d, conceptual2d=conceptual_2d)
 
     # 9. Reporte
     print_cluster_summary(conn, ids, labels, cluster_labels)

@@ -210,17 +210,19 @@ def run(db_path: Path = DB_PATH, out_path: Path = OUT_PATH) -> dict:
     nodes: list[dict] = []
     node_ids: set[str] = set()
 
-    # ── 1. Startups (include only) ───────────────────────────────────────────
+    # ── 1. Startups (include only — orphans sin startup_extended excluidos) ────
     st_rows = conn.execute("""
         SELECT e.entity_id, e.canonical_name, e.country_code, e.website,
                sx.bio_theme_primary, sx.bio_theme_secondary, sx.macro_theme,
                sx.scope_decision, sx.is_bio_universe,
-               sx.startup_summary_en, sx.startup_summary_v1, sx.business_one_liner
+               sx.startup_summary_en, sx.startup_summary_v1, sx.business_one_liner,
+               sx.valuation_estimate_usd, sx.valuation_tier, sx.funding_stage,
+               sx.tech_depth, sx.data_quality_score, sx.market_label,
+               sx.cluster_id, sx.cluster_label, sx.pagerank, sx.community_id
         FROM entities e
-        LEFT JOIN startup_extended sx ON sx.startup_id = e.entity_id
+        JOIN startup_extended sx ON sx.startup_id = e.entity_id
         WHERE e.entity_type = 'startup'
-          AND e.status != 'excluded'
-          AND (sx.scope_decision = 'include' OR sx.scope_decision IS NULL)
+          AND sx.scope_decision = 'include'
     """).fetchall()
 
     for r in st_rows:
@@ -243,6 +245,16 @@ def run(db_path: Path = DB_PATH, out_path: Path = OUT_PATH) -> dict:
             "shortTheme": short_theme,
             "color": _theme_color(theme),
             "summary": summary[:180] if summary else "",
+            "valuationUsd": r["valuation_estimate_usd"],
+            "valuationTier": r["valuation_tier"],
+            "fundingStage": _clean(r["funding_stage"]),
+            "techDepth": _clean(r["tech_depth"]),
+            "qualityScore": r["data_quality_score"],
+            "marketLabel": _clean(r["market_label"]),
+            "clusterId": r["cluster_id"],
+            "clusterLabel": _clean(r["cluster_label"]),
+            "pagerank": r["pagerank"],
+            "communityId": r["community_id"],
             "degree": 0,
         }
         nodes.append(node)

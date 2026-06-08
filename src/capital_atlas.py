@@ -146,11 +146,16 @@ def run(db_path: Path = DB_PATH, out_path: Path = OUT_PATH) -> dict:
     inv_rows = conn.execute("""
         SELECT e.entity_id, e.canonical_name, e.country_code, e.website,
                i.investor_type, i.thesis, i.geography_focus, i.vertical_focus,
-               i.active_status
+               i.active_status, i.preferred_stages, i.ticket_min_usd, i.ticket_max_usd,
+               i.aum_usd_m, i.lead_behavior, i.profile_blurb
         FROM entities e
         JOIN investors i ON i.investor_id = e.entity_id
         WHERE e.status != 'excluded'
     """).fetchall()
+
+    def _split_csv(s):
+        if not s: return []
+        return [x.strip() for x in s.replace(";", ",").split(",") if x.strip()]
 
     investor_nodes: list[dict] = []
     for r in inv_rows:
@@ -174,6 +179,14 @@ def run(db_path: Path = DB_PATH, out_path: Path = OUT_PATH) -> dict:
             "thesis": _clean(r["thesis"]),
             "country": _clean(r["country_code"]).upper(),
             "website": _clean(r["website"]),
+            "stages": _split_csv(r["preferred_stages"]),
+            "verticals": _split_csv(r["vertical_focus"]),
+            "geography": _split_csv(r["geography_focus"]),
+            "ticket_min": r["ticket_min_usd"],
+            "ticket_max": r["ticket_max_usd"],
+            "aum_m": r["aum_usd_m"],
+            "lead_behavior": _clean(r["lead_behavior"]),
+            "profile_blurb": _clean(r["profile_blurb"]),
             "degree": 0,  # calculated below
         })
 
@@ -404,12 +417,46 @@ def run(db_path: Path = DB_PATH, out_path: Path = OUT_PATH) -> dict:
         "public_source_edges_total": n_public_edges,
     }
 
+    # ── 9b. Capital flow data for Sankey ────────────────────────────────────────
+    # LP → Fund flows (from capital_relations)
+    lp_fund_flows = []
+    for r in cr_rows:
+        lp_fund_flows.append({
+            "source": r["source_entity_id"],
+            "target": r["target_entity_id"],
+            "amount_usd": r["amount_usd"],
+            "year": r["year"],
+            "vehicle": _clean(r["target_vehicle"]),
+            "relation_type": _clean(r["relation_type"]),
+        })
+
+    # Fund → Theme flows (aggregate deal counts by fund × bio_theme_primary)
+    theme_rows = conn.execute("""
+        SELECT ie.investor_id, COALESCE(sx.bio_theme_primary, 'Sin clasificar') AS theme,
+               COUNT(*) AS deal_count
+        FROM investment_edges ie
+        JOIN startup_extended sx ON sx.startup_id = ie.startup_id
+        WHERE sx.scope_decision = 'include'
+        GROUP BY ie.investor_id, theme
+        HAVING deal_count > 0
+    """).fetchall()
+    fund_theme_flows = [
+        {"source": r[0], "theme": r[1], "deal_count": r[2]}
+        for r in theme_rows
+    ]
+
+    capital_flow = {
+        "lp_fund": lp_fund_flows,
+        "fund_theme": fund_theme_flows,
+    }
+
     payload = {
         "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S"),
         "source": "pipeline:build-atlas (SQLite)",
         "summary": summary,
         "nodes": all_nodes,
         "edges": valid_investment_edges + valid_allocator_edges,
+        "capital_flow": capital_flow,
     }
 
     conn.close()

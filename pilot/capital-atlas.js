@@ -108,6 +108,7 @@
   let hoverEdgeId = null;
   let showLabels = true;
   let showUniverseContext = false;
+  let showOutsideBio = false;
   let backboneOnly = false;
   let hiddenByBackbone = 0;
   let transform = { x: 0, y: 0, k: 1 };
@@ -262,6 +263,7 @@
   function nodeColor(node) {
     if (node.type === "fund") return FUND_COLOR;
     if (node.type === "allocator") return ALLOCATOR_COLOR;
+    if (node.type === "startup" && node.scope_decision !== "include") return "#999";
     const key = themeKey(node);
     if (dynamicThemeColorByKey.has(key)) return dynamicThemeColorByKey.get(key);
     if (THEME_PAL[key]) return THEME_PAL[key];
@@ -427,7 +429,7 @@
     if (new RegExp(hiddenFlags).test(String(target?.quality_flags || ""))) return false;
     const startup = source?.type === "startup" ? source : target?.type === "startup" ? target : null;
     if (startup) {
-      if (modeSelect.value === "capital_core" && startup.scope_decision !== "include") return false;
+      if (modeSelect.value === "capital_core" && startup.scope_decision !== "include" && !showOutsideBio) return false;
     }
     return true;
   }
@@ -546,6 +548,11 @@
     if (showUniverseContext && mode !== "co_investment" && mode !== "coverage_gaps") {
       payload.nodes
         .filter(startupAllowedByContext)
+        .forEach((node) => nodeIds.add(node.id));
+    }
+    if (showOutsideBio && mode !== "co_investment" && mode !== "coverage_gaps") {
+      payload.nodes
+        .filter((n) => n.type === "startup" && n.scope_decision !== "include" && n.status !== "excluded")
         .forEach((node) => nodeIds.add(node.id));
     }
     activeNodes = Array.from(nodeIds)
@@ -1161,6 +1168,7 @@
         const hovered = hoverId === node.id;
         const radius = nodeRadius(node);
         const isContextStartup = node.type === "startup" && Number(node.visible_degree || 0) === 0;
+        const isOutsideBio = node.type === "startup" && node.scope_decision !== "include";
         const filterDimmed = hasActiveFilters() && !nodePassesHighlightFilters(node) && !hasFocus;
         const selectedNeighbor = hasFocus && active && !selected && !hovered;
         const group = makeSvg("g", { transform: `translate(${pos.x} ${pos.y})` });
@@ -1182,9 +1190,10 @@
           : makeSvg("circle", {
               r: radius,
               fill: nodeColor(node),
-              stroke: selected || hovered ? "#111" : selectedNeighbor ? "#3d3227" : "#fffaf1",
-              "stroke-width": selected || hovered ? "3.8" : selectedNeighbor ? "2.5" : isContextStartup ? "0.8" : node.type === "fund" ? "2.4" : "1.4",
-              opacity: selected ? "1" : isContextStartup ? (active ? "0.18" : "0.035") : active ? "0.96" : "0.075"
+              stroke: selected || hovered ? "#111" : isOutsideBio ? "#888" : selectedNeighbor ? "#3d3227" : "#fffaf1",
+              "stroke-width": selected || hovered ? "3.8" : selectedNeighbor ? "2.5" : isContextStartup ? "0.8" : isOutsideBio ? "1.2" : node.type === "fund" ? "2.4" : "1.4",
+              "stroke-dasharray": isOutsideBio && !selected && !hovered ? "3 2" : "",
+              opacity: selected ? "1" : isOutsideBio ? (active ? "0.50" : "0.10") : isContextStartup ? (active ? "0.18" : "0.035") : active ? "0.96" : "0.075"
             });
         const title = makeSvg("title", {});
         title.textContent = `${node.label} | weighted degree ${nodeWeight(node).toFixed(1)} | capital signal ${startupCapitalSignal(node).toFixed(1)} | edges ${node.visible_degree || 0}`;
@@ -1867,10 +1876,11 @@
 
   function syncLayerButtons() {
     labelsButton?.classList.toggle("active", showLabels);
-    universeButton?.classList.toggle("active", showUniverseContext);
+    universeButton?.classList.toggle("active", showOutsideBio);
+    if (universeButton) universeButton.textContent = showOutsideBio ? "Todo" : "Universo BIO";
     backboneButton?.classList.toggle("active", backboneOnly);
     if (labelsButton) labelsButton.title = showLabels ? "Labels ON — click para ocultar" : "Labels OFF — click para mostrar";
-    if (universeButton) universeButton.title = showUniverseContext ? "Universo BIO visible — click para Solo Red" : "Solo Red — click para mostrar universo BIO";
+    if (universeButton) universeButton.title = showOutsideBio ? "Mostrando todo (BIO + fuera del universo) — click para solo Universo BIO" : "Solo Universo BIO — click para ver tambien startups fuera del universo";
     if (backboneButton) backboneButton.title = backboneOnly ? "Backbone activo — click para Full nodes" : "Full nodes — click para backbone";
   }
 
@@ -1906,7 +1916,7 @@
     renderDetail(null);
     updateNote();
     syncLayerButtons();
-    fitToGraph();
+    if (rerun) fitToGraph();
   }
 
   function normalizeSearchIndex() {
@@ -2011,16 +2021,17 @@
     renderGraph();
   });
   universeButton.addEventListener("click", () => {
-    showUniverseContext = !showUniverseContext;
-    universeButton.classList.toggle("active", showUniverseContext);
-    universeButton.textContent = showUniverseContext ? "Universo BIO" : "Solo red";
-    rebuild({ rerun: true });
+    showOutsideBio = !showOutsideBio;
+    showUniverseContext = showOutsideBio;
+    universeButton.classList.toggle("active", showOutsideBio);
+    universeButton.textContent = showOutsideBio ? "Todo" : "Universo BIO";
+    rebuild({ rerun: false });
   });
   backboneButton.addEventListener("click", () => {
     backboneOnly = !backboneOnly;
     backboneButton.classList.toggle("active", backboneOnly);
     backboneButton.textContent = backboneOnly ? "Backbone" : "Full nodes";
-    rebuild({ rerun: true });
+    rebuild({ rerun: false });
   });
   searchInput.addEventListener("input", renderSearchResults);
   searchInput.addEventListener("keydown", (event) => {

@@ -548,6 +548,143 @@
     #view-matrix.active { display: flex; align-items: center; justify-content: center; }
     #matrix-svg { display: block; max-width: 100%; max-height: 100%; }
 
+    /* ── Stage Ladder view ─────────────────────────────────────────── */
+    #view-stages { overflow: auto; }
+    #view-stages.active { display: block; }
+    #stages-wrap {
+      padding: 18px 22px;
+      display: flex;
+      gap: 24px;
+      align-items: flex-start;
+    }
+    .sl-left {
+      flex: 1 1 0;
+      min-width: 0;
+      overflow-x: auto;
+    }
+    .sl-title {
+      font-size: .78rem; font-weight: 700; letter-spacing: .05em;
+      text-transform: uppercase; color: var(--muted); margin-bottom: 14px;
+    }
+    .sl-legend {
+      display: flex; gap: 14px; margin-bottom: 14px; flex-wrap: wrap;
+    }
+    .sl-legend-item {
+      display: flex; align-items: center; gap: 5px;
+      font-size: .7rem; color: var(--muted);
+    }
+    .sl-legend-dot {
+      width: 10px; height: 10px; border-radius: 50%;
+    }
+    .sl-grid { border-collapse: collapse; width: 100%; }
+    .sl-grid th {
+      font-size: .68rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: .04em; color: var(--muted); padding: 5px 8px;
+      border-bottom: 1.5px solid var(--line); text-align: center;
+      white-space: nowrap;
+    }
+    .sl-grid th.sl-name-col { text-align: left; min-width: 140px; }
+    .sl-grid td {
+      padding: 4px 6px; border-bottom: 1px solid rgba(217,206,190,.3);
+      vertical-align: middle;
+    }
+    .sl-grid td.sl-name-col {
+      font-size: .76rem; font-weight: 600; color: var(--ink);
+      max-width: 160px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    }
+    .sl-grid tr:hover td { background: rgba(11,143,135,.04); }
+    .sl-grid td.sl-center { text-align: center; }
+    .sl-dot {
+      display: inline-block; width: 11px; height: 11px; border-radius: 50%;
+      vertical-align: middle;
+    }
+    .sl-dot.core  { background: var(--accent); }
+    .sl-dot.ext   { background: #1A6DB5; }
+    .sl-dot.empty { background: rgba(160,152,140,.18); border: 1.5px solid rgba(160,152,140,.3); }
+    .sl-badge {
+      font-size: .65rem; font-weight: 700; border-radius: 4px;
+      padding: 1px 5px; display: inline-block; white-space: nowrap;
+    }
+    .sl-type-vc          { background: rgba(11,143,135,.12); color: #0B8F87; }
+    .sl-type-accelerator { background: rgba(26,109,181,.1);  color: #1A6DB5; }
+    .sl-type-impact_fund { background: rgba(42,122,66,.12);  color: #2A7A42; }
+    .sl-type-corporate_vc { background: rgba(107,140,58,.12); color: #6B8C3A; }
+    .sl-type-company_builder { background: rgba(139,109,20,.12); color: #8B6D14; }
+    .sl-type-multilateral { background: rgba(160,152,140,.15); color: #847E73; }
+    .sl-type-fund_of_funds { background: rgba(112,51,188,.1); color: #7033BC; }
+    .sl-type-development_finance { background: rgba(160,152,140,.15); color: #847E73; }
+    .sl-aum {
+      font-size: .7rem; color: var(--muted); font-variant-numeric: tabular-nums;
+      white-space: nowrap;
+    }
+    .sl-gap-banner {
+      margin-top: 16px; padding: 10px 14px; border-radius: 8px;
+      background: rgba(194,90,42,.08); border: 1px solid rgba(194,90,42,.22);
+      font-size: .75rem; color: #7a3a18; line-height: 1.5;
+    }
+    .sl-gap-banner strong { color: #C25A2A; }
+
+    /* ── Stage Ladder — theme bars ────────────────────────────────── */
+    .sl-theme-bar { display:flex; height:7px; border-radius:3px; overflow:hidden; min-width:110px; }
+    .sl-theme-tags { display:flex; flex-wrap:wrap; gap:2px; margin-top:3px; }
+    .sl-theme-tag  { font-size:.58rem; padding:1px 5px; border-radius:2px; white-space:nowrap; font-weight:600; }
+
+    /* ── Fund profile card ────────────────────────────────────────── */
+    #fund-profile-card {
+      width: 320px;
+      flex-shrink: 0;
+      position: sticky;
+      top: 16px;
+      max-height: calc(100vh - 120px);
+      overflow-y: auto;
+      background: rgba(245,241,234,.75);
+      border: 1px solid rgba(160,152,140,.25);
+      border-radius: 10px;
+      padding: 18px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+    .fp-placeholder {
+      display: flex; flex-direction: column; align-items: center;
+      justify-content: center; gap: 8px;
+      height: 200px; color: var(--muted); font-size: .75rem; text-align: center;
+    }
+    .fp-placeholder-icon { font-size: 1.8rem; opacity: .4; }
+    .fp-header { display:flex; align-items:baseline; gap:10px; margin-bottom:14px; flex-wrap:wrap; }
+    .fp-name { font-size:1.12rem; font-weight:800; color:#1a1614; }
+    .fp-flag { font-size:1.1rem; }
+    .fp-stats { display:flex; gap:20px; margin-bottom:16px; flex-wrap:wrap; }
+    .fp-stat { display:flex; flex-direction:column; }
+    .fp-stat-label { font-size:.63rem; text-transform:uppercase; letter-spacing:.04em; color:var(--muted); margin-bottom:2px; }
+    .fp-stat-value { font-weight:700; font-size:.82rem; color:#1a1614; }
+    .fp-theme-section { margin-bottom:16px; }
+    .fp-theme-bar-lg { display:flex; height:11px; border-radius:5px; overflow:hidden; margin-bottom:8px; }
+    .fp-theme-legend { display:flex; flex-wrap:wrap; gap:8px; }
+    .fp-theme-item { display:flex; align-items:center; gap:4px; font-size:.68rem; color:#4a423b; }
+    .fp-theme-dot { width:9px; height:9px; border-radius:50%; flex-shrink:0; }
+    .fp-theme-count { color:var(--muted); }
+    .fp-paragraphs { display:flex; flex-direction:column; gap:10px; border-top:1px solid rgba(160,152,140,.2); padding-top:14px; }
+    .fp-para { font-size:.77rem; line-height:1.65; color:#3a3028; }
+    .fp-para strong { color:#1a1614; }
+
+    /* ── Sankey / Capital Flow view ────────────────────────────────── */
+    #view-flow { overflow: auto; }
+    #view-flow.active { display: block; }
+    #flow-wrap { padding: 18px 22px; min-width: 700px; }
+    #flow-svg { display: block; }
+    .sk-node-label { font-family: inherit; pointer-events: none; }
+    .sk-link { fill: none; }
+    .sk-node rect { stroke: none; rx: 3; }
+    .sk-tooltip {
+      position: absolute; pointer-events: none;
+      background: rgba(255,252,246,.97); border: 1px solid var(--line);
+      border-radius: 8px; padding: 8px 12px; font-size: .73rem;
+      color: var(--ink); max-width: 220px; line-height: 1.5;
+      box-shadow: 0 3px 12px rgba(0,0,0,.1);
+      display: none;
+    }
+
   </style>
 </head>
 <body class="capital-atlas-page">
@@ -593,6 +730,8 @@
           <button class="vs-btn active" data-view="network" type="button">🕸 Red</button>
           <button class="vs-btn"        data-view="radial"  type="button">◎ Radial</button>
           <button class="vs-btn"        data-view="matrix"  type="button">▦ Matriz</button>
+          <button class="vs-btn"        data-view="stages"  type="button">🪜 Etapas</button>
+          <button class="vs-btn"        data-view="flow"    type="button">⟶ Flujo</button>
         </div>
 
         <div class="tb-divider"></div>
@@ -654,6 +793,19 @@
           <svg id="matrix-svg"></svg>
         </div>
 
+        <!-- View D: Stage Ladder -->
+        <div class="ca-view" id="view-stages">
+          <div id="stages-wrap"></div>
+        </div>
+
+        <!-- View E: Capital Flow (Sankey) -->
+        <div class="ca-view" id="view-flow">
+          <div id="flow-wrap">
+            <svg id="flow-svg"></svg>
+          </div>
+          <div id="sk-tooltip" class="sk-tooltip"></div>
+        </div>
+
       </div><!-- .ca-stage -->
     </div><!-- .ca-canvas-area -->
 
@@ -679,8 +831,8 @@
 <script src="./text-clean.js?v=20260422aa" defer></script>
 <script src="./theme-system.js?v=20260430english-semantic" defer></script>
 <script src="./semantic-single-level-data.js?v=20260508shared-taxonomy" defer></script>
-<script src="./capital-atlas-data.js?v=20260530logos" defer></script>
-<script src="./capital-atlas.js?v=20260530logos" defer></script>
+<script src="./capital-atlas-data.js?v=20260608edges680" defer></script>
+<script src="./capital-atlas.js?v=20260607bio-toggle" defer></script>
 
 <script>
 document.addEventListener('DOMContentLoaded', function(){
@@ -937,8 +1089,10 @@ document.addEventListener('DOMContentLoaded', function(){
       v.classList.toggle('active', v.id === 'view-' + view));
     document.getElementById('net-controls').style.display =
       view === 'network' ? 'flex' : 'none';
-    if (view === 'radial') renderRadial(activeInvId);
-    if (view === 'matrix') renderMatrix();
+    if (view === 'radial')  renderRadial(activeInvId);
+    if (view === 'matrix')  renderMatrix();
+    if (view === 'stages')  renderStageLadder();
+    if (view === 'flow')    renderSankey();
   }
 
   document.querySelectorAll('.vs-btn').forEach(btn =>
@@ -965,6 +1119,8 @@ document.addEventListener('DOMContentLoaded', function(){
       renderRadial(id);
     } else if (currentView === 'matrix') {
       highlightMatrixRow(id);
+    } else if (currentView === 'stages') {
+      highlightStagesRow(id);
     }
   }
 
@@ -1492,6 +1648,716 @@ document.addEventListener('DOMContentLoaded', function(){
       if (bg)  bg.setAttribute('fill',  isA ? 'rgba(58,168,163,.10)' : 'transparent');
       if (lbl) lbl.setAttribute('fill', isA ? '#0a6b63' : '#332b22');
     });
+  }
+
+  // ── Stage Ladder view ─────────────────────────────────────────────────────
+  const STAGE_ORDER = ['pre-seed','seed','series-a','series-b','series-c','growth','corporate'];
+  const STAGE_LABEL = {'pre-seed':'Pre-seed','seed':'Seed','series-a':'A','series-b':'B',
+                       'series-c':'C','growth':'Growth','corporate':'Corp'};
+
+  let slSortCol = 'deals', slSortDir = -1;
+  let slFundThemeMap = {};   // investor_id → {theme: deal_count}
+
+  // which stages are "latam-core" (no Series C+ locally)
+  const STAGE_GAP_START = 'series-b'; // highlight gap from here
+
+  // type label display
+  function typeLabel(t) {
+    const m = {vc:'VC',accelerator:'Aceleradora',impact_fund:'Impacto',corporate_vc:'Corp VC',
+               company_builder:'Builder',fund_of_funds:'FoF',multilateral:'Multilateral',
+               development_finance:'Dev Finance'};
+    return m[t] || t;
+  }
+
+  function fmtAum(v) {
+    if (!v) return '';
+    if (v >= 1000) return '$' + (v/1000).toFixed(1) + 'B';
+    return '$' + Math.round(v) + 'M';
+  }
+
+  function renderStageLadder() {
+    const wrap = document.getElementById('stages-wrap');
+    wrap.innerHTML = '';
+
+    // Left column container
+    const left = document.createElement('div');
+    left.className = 'sl-left';
+    wrap.appendChild(left);
+
+    // Profile card — always present as right column
+    const card = document.createElement('div');
+    card.id = 'fund-profile-card';
+    card.innerHTML = `<div class="fp-placeholder"><span class="fp-placeholder-icon">↖</span><span>Hacé click en un fondo<br>para ver su ficha</span></div>`;
+    wrap.appendChild(card);
+
+    const allFundNodes = D.nodes.filter(n =>
+      (n.type === 'fund' || n.type === 'allocator') && n.stages && n.stages.length > 0
+    );
+
+    const gapStages = ['series-b','series-c','growth'];
+    const gapFunds = allFundNodes.filter(n => n.stages.some(s => gapStages.includes(s)));
+
+    // Title
+    const title = document.createElement('div');
+    title.className = 'sl-title';
+    title.textContent = 'Cobertura de etapas — ' + allFundNodes.length + ' fondos';
+    left.appendChild(title);
+
+    // Legend
+    const legend = document.createElement('div');
+    legend.className = 'sl-legend';
+    legend.innerHTML = `
+      <span class="sl-legend-item"><span class="sl-legend-dot" style="background:var(--accent)"></span> Etapa declarada</span>
+      <span class="sl-legend-item"><span class="sl-legend-dot" style="background:rgba(160,152,140,.22);border:1.5px solid rgba(160,152,140,.35)"></span> No cubre</span>
+      <span class="sl-legend-item" style="margin-left:12px;color:#C25A2A;font-weight:600">⚠ Series B+ — solo ${gapFunds.length} fondos cubren etapas tardías</span>
+    `;
+    left.appendChild(legend);
+
+    // Build module-level fund → theme deal map
+    slFundThemeMap = {};
+    if (D.capital_flow) {
+      D.capital_flow.fund_theme.forEach(ft => {
+        if (!slFundThemeMap[ft.source]) slFundThemeMap[ft.source] = {};
+        slFundThemeMap[ft.source][ft.theme] = ft.deal_count;
+      });
+    }
+
+    // Table
+    const tbl = document.createElement('table');
+    tbl.className = 'sl-grid';
+
+    // Header — sortable columns
+    const thead = document.createElement('thead');
+    const hr = document.createElement('tr');
+
+    function makeTh(label, sortKey, extra) {
+      const th = document.createElement('th');
+      if (extra && extra.className) th.className = extra.className;
+      if (extra && extra.style) Object.assign(th.style, extra.style);
+      th.style.cursor = 'pointer';
+      th.style.userSelect = 'none';
+      th.dataset.sortKey = sortKey;
+      if (extra && extra.isGap) {
+        th.style.color = '#C25A2A';
+        th.style.borderBottom = '1.5px solid rgba(194,90,42,.4)';
+      }
+      function updateLabel() {
+        const arrow = slSortCol === sortKey ? (slSortDir === -1 ? ' ↓' : ' ↑') : '';
+        th.textContent = label + arrow;
+        if (extra && extra.isGap && slSortCol !== sortKey) th.style.color = '#C25A2A';
+      }
+      updateLabel();
+      th.addEventListener('click', () => {
+        if (slSortCol === sortKey) { slSortDir *= -1; }
+        else { slSortCol = sortKey; slSortDir = -1; }
+        // Refresh all th labels
+        hr.querySelectorAll('th[data-sort-key]').forEach(t => {
+          const sk = t.dataset.sortKey;
+          const lbl = t.dataset.label;
+          const isGap = t.dataset.gap === '1';
+          const arrow = slSortCol === sk ? (slSortDir === -1 ? ' ↓' : ' ↑') : '';
+          t.textContent = lbl + arrow;
+          if (isGap && slSortCol !== sk) t.style.color = '#C25A2A';
+          else if (isGap && slSortCol === sk) t.style.color = '';
+        });
+        refreshStageLadderBody(allFundNodes, tbody, gapStages);
+        highlightStagesRow(activeInvId);
+      });
+      th.dataset.label = label;
+      if (extra && extra.isGap) th.dataset.gap = '1';
+      return th;
+    }
+
+    hr.appendChild(makeTh('Fondo', 'name', {className: 'sl-name-col'}));
+    hr.appendChild(makeTh('Tipo', 'type'));
+    hr.appendChild(makeTh('AUM', 'aum'));
+    hr.appendChild(makeTh('Deals', 'deals'));
+    STAGE_ORDER.forEach(s => {
+      hr.appendChild(makeTh(STAGE_LABEL[s], 'stage:' + s, {isGap: gapStages.includes(s)}));
+    });
+    hr.appendChild(makeTh('Verticales', 'verticals', {style: {textAlign: 'left'}}));
+
+    thead.appendChild(hr);
+    tbl.appendChild(thead);
+
+    const tbody = document.createElement('tbody');
+    refreshStageLadderBody(allFundNodes, tbody, gapStages);
+    tbl.appendChild(tbody);
+    left.appendChild(tbl);
+
+    // Gap insight banner
+    const banner = document.createElement('div');
+    banner.className = 'sl-gap-banner';
+    const lateStageNames = gapFunds.map(f => f.label).join(', ');
+    banner.innerHTML = `<strong>Brecha estructural detectada:</strong> Solo <strong>${gapFunds.length} fondos</strong> declaran cobertura en Series B o posterior
+      — ${lateStageNames || 'ninguno'}.
+      El ecosistema BIO LATAM carece de capital de crecimiento local: las empresas que superan Series A deben buscar capital fuera de la región.`;
+    left.appendChild(banner);
+  }
+
+  function refreshStageLadderBody(allFundNodes, tbody, gapStages) {
+    // Dynamic sort
+    const nodes = allFundNodes.slice();
+    nodes.sort((a, b) => {
+      let va, vb;
+      if (slSortCol === 'name') {
+        va = (a.label||'').toLowerCase(); vb = (b.label||'').toLowerCase();
+        return slSortDir * (va < vb ? -1 : va > vb ? 1 : 0);
+      } else if (slSortCol === 'type') {
+        va = (a.investor_type||'').toLowerCase(); vb = (b.investor_type||'').toLowerCase();
+        return slSortDir * (va < vb ? -1 : va > vb ? 1 : 0);
+      } else if (slSortCol === 'aum') {
+        va = a.aum_m || 0; vb = b.aum_m || 0;
+        return slSortDir * (va - vb);
+      } else if (slSortCol === 'deals') {
+        va = a.degree || 0; vb = b.degree || 0;
+        return slSortDir * (va - vb);
+      } else if (slSortCol === 'verticals') {
+        va = (a.verticals||[]).length; vb = (b.verticals||[]).length;
+        return slSortDir * (va - vb);
+      } else if (slSortCol.startsWith('stage:')) {
+        const s = slSortCol.slice(6);
+        va = (a.stages||[]).map(x=>x.toLowerCase()).includes(s) ? 1 : 0;
+        vb = (b.stages||[]).map(x=>x.toLowerCase()).includes(s) ? 1 : 0;
+        if (va !== vb) return slSortDir * (va - vb);
+        // secondary: name asc
+        return (a.label||'').localeCompare(b.label||'');
+      }
+      return 0;
+    });
+
+    tbody.innerHTML = '';
+    nodes.forEach(n => {
+      const tr = document.createElement('tr');
+      tr.dataset.id = n.id;
+
+      const tdName = document.createElement('td');
+      tdName.className = 'sl-name-col';
+      tdName.title = n.label;
+      const flag = n.country ? '  ' + countryFlag(n.country) : '';
+      tdName.textContent = n.label + flag;
+      tdName.style.cursor = 'pointer';
+      tdName.addEventListener('click', () => setActiveInvestor(n.id === activeInvId ? null : n.id));
+      tr.appendChild(tdName);
+
+      const tdType = document.createElement('td');
+      tdType.className = 'sl-center';
+      const badge = document.createElement('span');
+      badge.className = 'sl-badge sl-type-' + (n.investor_type||'');
+      badge.textContent = typeLabel(n.investor_type||'');
+      tdType.appendChild(badge);
+      tr.appendChild(tdType);
+
+      const tdAum = document.createElement('td');
+      tdAum.className = 'sl-aum sl-center';
+      tdAum.textContent = fmtAum(n.aum_m);
+      tr.appendChild(tdAum);
+
+      const tdDeals = document.createElement('td');
+      tdDeals.className = 'sl-center';
+      tdDeals.style.fontWeight = '700';
+      tdDeals.style.fontSize = '.78rem';
+      tdDeals.style.color = n.degree > 0 ? 'var(--accent)' : 'var(--muted)';
+      tdDeals.textContent = n.degree || '—';
+      tr.appendChild(tdDeals);
+
+      const stageSet = new Set((n.stages||[]).map(s => s.toLowerCase()));
+      STAGE_ORDER.forEach(s => {
+        const td = document.createElement('td');
+        td.className = 'sl-center';
+        const dot = document.createElement('span');
+        const covered = stageSet.has(s);
+        dot.className = 'sl-dot ' + (covered ? 'core' : 'empty');
+        if (covered && gapStages.includes(s)) dot.style.background = '#C25A2A';
+        td.appendChild(dot);
+        tr.appendChild(td);
+      });
+
+      const tdVert = document.createElement('td');
+      tdVert.style.minWidth = '120px';
+      tdVert.style.paddingLeft = '6px';
+      const themeEntries = Object.entries(slFundThemeMap[n.id] || {})
+        .sort((a,b) => b[1] - a[1]);
+      const themeTotal = themeEntries.reduce((s,[,c]) => s+c, 0);
+      if (themeTotal > 0) {
+        const bar = document.createElement('div');
+        bar.className = 'sl-theme-bar';
+        themeEntries.forEach(([theme, count]) => {
+          const seg = document.createElement('div');
+          seg.style.width = (count / themeTotal * 100) + '%';
+          seg.style.background = THEME_PAL[theme] || '#aaa';
+          seg.title = (THEME_SHORT[theme]||theme) + ': ' + count;
+          bar.appendChild(seg);
+        });
+        const tags = document.createElement('div');
+        tags.className = 'sl-theme-tags';
+        themeEntries.slice(0, 3).forEach(([theme]) => {
+          const col = THEME_PAL[theme] || '#aaa';
+          const tag = document.createElement('span');
+          tag.className = 'sl-theme-tag';
+          tag.style.background = col + '1a';
+          tag.style.color = col;
+          tag.textContent = THEME_SHORT[theme] || theme.split(' ')[0];
+          tags.appendChild(tag);
+        });
+        tdVert.appendChild(bar);
+        tdVert.appendChild(tags);
+      } else {
+        tdVert.textContent = '—';
+        tdVert.style.color = 'var(--muted)';
+        tdVert.style.fontSize = '.72rem';
+        tdVert.style.textAlign = 'center';
+      }
+      tr.appendChild(tdVert);
+
+      tbody.appendChild(tr);
+    });
+  }
+
+  function highlightStagesRow(id) {
+    const wrap = document.getElementById('stages-wrap');
+    if (!wrap) return;
+    wrap.querySelectorAll('tr[data-id]').forEach(tr => {
+      tr.style.background = (tr.dataset.id === id) ? 'rgba(11,143,135,.07)' : '';
+    });
+    renderFundProfile(id);
+  }
+
+  function countryName(iso) {
+    const m = {AR:'Argentina',BR:'Brasil',CL:'Chile',CO:'Colombia',MX:'México',PE:'Perú',
+               UY:'Uruguay',CR:'Costa Rica',EC:'Ecuador',BO:'Bolivia',PY:'Paraguay',
+               PA:'Panamá',GT:'Guatemala',US:'Estados Unidos',GB:'Reino Unido',
+               FR:'Francia',DE:'Alemania',IL:'Israel',SG:'Singapur',CA:'Canadá'};
+    return m[(iso||'').toUpperCase()] || iso || '';
+  }
+
+  function renderFundProfile(id) {
+    const card = document.getElementById('fund-profile-card');
+    if (!card) return;
+    if (!id) {
+      card.innerHTML = `<div class="fp-placeholder"><span class="fp-placeholder-icon">↖</span><span>Hacé click en un fondo<br>para ver su ficha</span></div>`;
+      return;
+    }
+
+    const n = D.nodes.find(x => x.id === id);
+    if (!n) { card.className = ''; return; }
+
+    const themes = Object.entries(slFundThemeMap[id] || {}).sort((a,b) => b[1]-a[1]);
+    const total  = themes.reduce((s,[,c]) => s+c, 0);
+    // Use curated blurb if available, else auto-generate
+    const paragraphs = n.profile_blurb
+      ? n.profile_blurb.split('\n\n').filter(p => p.trim())
+      : buildFundProfile(n, themes, total);
+
+    const flag = n.country ? countryFlag(n.country) : '';
+    const cname = countryName(n.country);
+
+    // Stages summary
+    const stages = (n.stages||[]).map(s => STAGE_LABEL[s]||s).join(' · ') || '—';
+
+    // Ticket range
+    let ticket = '—';
+    if (n.ticket_min || n.ticket_max) {
+      const fmtK = v => v >= 1e6 ? '$'+(v/1e6).toFixed(1)+'M' : '$'+(v/1e3)+'K';
+      ticket = (n.ticket_min ? fmtK(n.ticket_min) : '?') + ' – ' + (n.ticket_max ? fmtK(n.ticket_max) : '?');
+    }
+
+    let html = `<div class="fp-header">
+      <span class="fp-flag">${flag}</span>
+      <span class="fp-name">${n.label}</span>
+      <span class="sl-badge sl-type-${n.investor_type||''}" style="font-size:.7rem">${typeLabel(n.investor_type||'')}</span>
+    </div>
+    <div class="fp-stats">
+      ${cname ? `<div class="fp-stat"><div class="fp-stat-label">País</div><div class="fp-stat-value">${cname}</div></div>` : ''}
+      ${n.aum_m ? `<div class="fp-stat"><div class="fp-stat-label">AUM</div><div class="fp-stat-value">${fmtAum(n.aum_m)}</div></div>` : ''}
+      <div class="fp-stat"><div class="fp-stat-label">Deals BIO</div><div class="fp-stat-value">${n.degree || '0'}</div></div>
+      <div class="fp-stat"><div class="fp-stat-label">Etapas</div><div class="fp-stat-value" style="font-size:.72rem">${stages}</div></div>
+      ${ticket !== '—' ? `<div class="fp-stat"><div class="fp-stat-label">Ticket</div><div class="fp-stat-value">${ticket}</div></div>` : ''}
+      ${n.lead_behavior ? `<div class="fp-stat"><div class="fp-stat-label">Rol en ronda</div><div class="fp-stat-value">${n.lead_behavior==='lead'?'Lead investor':n.lead_behavior==='follow'?'Co-inversor':'Lead / Co'}</div></div>` : ''}
+    </div>`;
+
+    if (total > 0) {
+      html += `<div class="fp-theme-section">
+        <div class="fp-theme-bar-lg">`;
+      themes.forEach(([theme, count]) => {
+        html += `<div style="width:${(count/total*100).toFixed(1)}%;background:${THEME_PAL[theme]||'#aaa'}" title="${THEME_SHORT[theme]||theme}: ${count}"></div>`;
+      });
+      html += `</div><div class="fp-theme-legend">`;
+      themes.forEach(([theme, count]) => {
+        html += `<div class="fp-theme-item">
+          <div class="fp-theme-dot" style="background:${THEME_PAL[theme]||'#aaa'}"></div>
+          <span>${THEME_SHORT[theme]||theme}</span>
+          <span class="fp-theme-count">(${count})</span>
+        </div>`;
+      });
+      html += `</div></div>`;
+    }
+
+    html += `<div class="fp-paragraphs">` + paragraphs.map(p => `<p class="fp-para">${p}</p>`).join('') + `</div>`;
+
+    card.innerHTML = html;
+  }
+
+  function buildFundProfile(n, themes, total) {
+    const paras = [];
+    const type = n.investor_type || '';
+    const stages = (n.stages||[]).map(s=>s.toLowerCase());
+
+    // ── Párrafo 1: Identidad y escala ────────────────────────────────
+    const typeDesc = {
+      vc: 'fondo de venture capital',
+      accelerator: 'aceleradora de startups',
+      impact_fund: 'fondo de impacto',
+      corporate_vc: 'brazo de corporate venture capital',
+      company_builder: 'company builder',
+      fund_of_funds: 'fondo de fondos',
+      multilateral: 'organismo multilateral',
+      development_finance: 'institución de financiamiento al desarrollo'
+    }[type] || 'actor de capital';
+
+    let p1 = `<strong>${n.label}</strong> es un ${typeDesc}`;
+    if (n.country) p1 += ` con sede en <strong>${countryName(n.country)}</strong>`;
+    p1 += '.';
+
+    if (n.aum_m) {
+      const tier = n.aum_m >= 1000 ? 'uno de los actores de mayor escala en el ecosistema LATAM'
+                 : n.aum_m >= 300  ? 'un fondo de escala significativa para el contexto regional'
+                 : n.aum_m >= 80   ? 'un fondo de escala media en el ecosistema'
+                 :                   'un actor de escala reducida, probablemente especializado';
+      p1 += ` Con <strong>${fmtAum(n.aum_m)}</strong> bajo gestión, es ${tier}.`;
+    }
+
+    if (n.degree > 10) p1 += ` Su presencia activa en el mapa —con <strong>${n.degree} deals documentados</strong>— lo posiciona entre los fondos con mayor tracción en el ecosistema BIO.`;
+    else if (n.degree > 3) p1 += ` Registra <strong>${n.degree} deals</strong> documentados en el ecosistema BIO LATAM.`;
+    else if (n.degree > 0) p1 += ` Su actividad BIO es incipiente con ${n.degree} deal${n.degree>1?'s':''} documentado${n.degree>1?'s':''}.`;
+    else p1 += ' No se registran deals BIO documentados en el ecosistema a la fecha.';
+
+    paras.push(p1);
+
+    // ── Párrafo 2: Tesis de inversión ────────────────────────────────
+    const hasEarly  = stages.some(s => ['pre-seed','seed'].includes(s));
+    const hasMid    = stages.some(s => ['series-a','series-b'].includes(s));
+    const hasGrowth = stages.some(s => ['series-c','growth','corporate'].includes(s));
+
+    let p2 = '';
+    if (stages.length > 0) {
+      if (hasGrowth && hasMid && hasEarly) {
+        p2 += `Cubre el espectro completo desde early-stage hasta growth, una capacidad excepcional en el contexto regional donde escasea capital tardío.`;
+      } else if (hasGrowth) {
+        p2 += `Foco en etapas tardías (${stages.filter(s=>['series-b','series-c','growth','corporate'].includes(s)).map(s=>STAGE_LABEL[s]||s).join(', ')}), lo que lo convierte en uno de los pocos proveedores de capital de crecimiento local para BIO LATAM.`;
+      } else if (hasMid && hasEarly) {
+        p2 += `Opera con cobertura early-to-mid: desde las primeras etapas de validación hasta Series A${stages.includes('series-b')?' y B':''}.`;
+      } else if (hasEarly) {
+        p2 += `Inversor early-stage puro, concentrado en el momento de mayor riesgo y mayor potencial de retorno.`;
+      } else if (hasMid) {
+        p2 += `Participa en etapas de crecimiento temprano (Serie A${stages.includes('series-b')?' y B':''}), cuando los modelos de negocio ya muestran señales de validación.`;
+      }
+    }
+
+    if (n.ticket_min || n.ticket_max) {
+      const fmtK = v => v >= 1e6 ? '$'+(v/1e6).toFixed(1)+'M' : '$'+(v/1e3)+'K';
+      const range = (n.ticket_min ? fmtK(n.ticket_min) : '?') + '–' + (n.ticket_max ? fmtK(n.ticket_max) : '?');
+      p2 += ` Su rango de ticket de <strong>${range}</strong>`;
+      if (n.ticket_max <= 500000) p2 += ' lo alinea con instrumentos de capital semilla y pre-seed.';
+      else if (n.ticket_max <= 3000000) p2 += ' es consistente con rondas seed y Serie A del ecosistema regional.';
+      else p2 += ' le permite participar en rondas de mayor tamaño dentro de LATAM.';
+    }
+
+    if (n.lead_behavior === 'lead') p2 += ' Actúa típicamente como <strong>lead investor</strong>, con capacidad de fijar términos y liderar procesos de due diligence.';
+    else if (n.lead_behavior === 'follow') p2 += ' Opera principalmente como co-inversor, siguiendo a leads con mayor conviction sobre el deal.';
+    else if (n.lead_behavior === 'both') p2 += ' Flexible en su rol: puede liderar rondas o participar como co-inversor según el deal y etapa.';
+
+    if (n.verticals && n.verticals.length > 0) {
+      p2 += ` Declara foco en: <strong>${n.verticals.slice(0,4).join(', ')}</strong>.`;
+    }
+
+    if (p2) paras.push(p2);
+
+    // ── Párrafo 3: Perfil BIO y rol en el ecosistema ─────────────────
+    if (total > 0) {
+      const top = themes[0];
+      const topPct = Math.round(top[1] / total * 100);
+      const topName = THEME_SHORT[top[0]] || top[0];
+
+      let p3 = '';
+      if (topPct >= 75) {
+        p3 += `En BIO, su actividad es <strong>altamente concentrada</strong>: ${topPct}% de sus deals caen en <strong>${topName}</strong>.`;
+        if (themes.length > 1) p3 += ` El resto se reparte marginalmente entre ${themes.slice(1,3).map(([t])=>THEME_SHORT[t]||t).join(' y ')}.`;
+        p3 += ' Esta especialización sugiere una tesis temática deliberada, no oportunista.';
+      } else if (topPct >= 50) {
+        const second = themes[1] ? ` y <strong>${THEME_SHORT[themes[1][0]]||themes[1][0]}</strong> (${Math.round(themes[1][1]/total*100)}%)` : '';
+        p3 += `Thesis dual predominante: <strong>${topName}</strong> (${topPct}%)${second} concentran la mayor parte de su actividad BIO.`;
+      } else {
+        p3 += `Portfolio BIO diversificado entre <strong>${themes.length} verticales</strong>, sin concentración dominante. `;
+        p3 += `Los tres principales son ${themes.slice(0,3).map(([t])=>THEME_SHORT[t]||t).join(', ')}.`;
+        p3 += ' Este perfil generalista puede reflejar una tesis de ecosistema o etapa temprana de construcción del portfolio.';
+      }
+
+      // Stage gap angle
+      if (hasGrowth) {
+        p3 += ` Al cubrir etapas tardías con actividad BIO real, cumple una <strong>función crítica de puente</strong>: permite que empresas del ecosistema regional avancen sin depender exclusivamente de capital extranjero.`;
+      } else if (!hasMid && !hasGrowth) {
+        p3 += ` Su rol es de <strong>generación de pipeline</strong>: la ausencia de cobertura growth significa que las empresas que apoya deberán buscar capital de seguimiento fuera de su portfolio.`;
+      }
+
+      paras.push(p3);
+    } else if (type === 'multilateral' || type === 'development_finance') {
+      paras.push(`Como actor <strong>${typeDesc}</strong>, su función principal no es la inversión directa en startups sino la provisión de capital catalítico —grants, garantías, financiamiento no dilutivo— que reduce el riesgo para inversores privados y habilita el desarrollo del ecosistema BIO regional.`);
+    }
+
+    return paras;
+  }
+
+  function countryFlag(iso) {
+    if (!iso || iso.length !== 2) return '';
+    const base = 0x1F1E6;
+    const chars = [...iso.toUpperCase()].map(c => String.fromCodePoint(base + c.charCodeAt(0) - 65));
+    return chars.join('');
+  }
+
+  // ── Sankey / Capital Flow view ──────────────────────────────────────────
+  function renderSankey() {
+    const wrap = document.getElementById('flow-wrap');
+    const svg  = document.getElementById('flow-svg');
+    const ttEl = document.getElementById('sk-tooltip');
+    const stage = document.querySelector('.ca-stage');
+    const W = Math.max(700, (stage ? stage.clientWidth  : 900) - 44);
+    const H = Math.max(500, (stage ? stage.clientHeight : 600) - 56);
+    svg.innerHTML = '';
+    svg.setAttribute('width',  W);
+    svg.setAttribute('height', H);
+    svg.setAttribute('viewBox', '0 0 ' + W + ' ' + H);
+
+    if (!D.capital_flow) {
+      svg.innerHTML = '<text x="50%" y="50%" text-anchor="middle" fill="#999" font-size="13">Sin datos de flujo de capital</text>';
+      return;
+    }
+
+    const NS_S = 'http://www.w3.org/2000/svg';
+
+    // ── Build Sankey nodes (3 layers) ──────────────────────────────────────
+    // Layer 0: LPs / Allocators (IDB Lab, JICA, GEF, etc.)
+    // Layer 1: VC Funds
+    // Layer 2: Bio Themes
+
+    // Gather LP→Fund edges
+    const lpFundEdges = D.capital_flow.lp_fund;
+    // Gather Fund→Theme edges (only funds with ≥2 bio deals)
+    const fundThemeEdges = D.capital_flow.fund_theme.filter(e => e.deal_count >= 1);
+
+    // Collect unique LP ids from lp_fund
+    const lpIds = [...new Set(lpFundEdges.map(e => e.source))];
+    // Collect unique Fund ids that appear in either layer
+    const fundIdsFromLP   = new Set(lpFundEdges.map(e => e.target));
+    const fundIdsFromDeals= new Set(fundThemeEdges.map(e => e.source));
+    const fundIds = [...new Set([...fundIdsFromLP, ...fundIdsFromDeals])];
+    // Themes
+    const themeIds = [...new Set(fundThemeEdges.map(e => e.theme))].sort();
+
+    // Node label lookup
+    const nodeLabel = {};
+    D.nodes.forEach(n => { nodeLabel[n.id] = n.label; });
+    // For themes use THEME_SHORT
+    themeIds.forEach(t => { nodeLabel[t] = THEME_SHORT[t] || t; });
+
+    // ── Compute node heights (value = sum of flows) ────────────────────────
+    // LP value = sum of deal_count of their target funds
+    const fundDealTotal = {};
+    fundThemeEdges.forEach(e => {
+      fundDealTotal[e.source] = (fundDealTotal[e.source]||0) + e.deal_count;
+    });
+
+    // Each LP value = sum of its target funds' deal counts
+    const lpValue = {};
+    lpFundEdges.forEach(e => {
+      const fv = fundDealTotal[e.target] || 1;
+      lpValue[e.source] = (lpValue[e.source]||0) + fv;
+    });
+
+    // Fund value = max(LP-side allocation, deal total)
+    const fundValue = {};
+    fundIds.forEach(id => {
+      fundValue[id] = fundDealTotal[id] || 1;
+    });
+
+    // Theme value = sum of deals
+    const themeValue = {};
+    themeIds.forEach(t => { themeValue[t] = 0; });
+    fundThemeEdges.forEach(e => { themeValue[e.theme] = (themeValue[e.theme]||0) + e.deal_count; });
+
+    // ── Layout ──────────────────────────────────────────────────────────────
+    const PAD_X = 22, PAD_Y = 22;
+    const NODE_W = 14;
+    const GAP = 6;
+    const LAYER_X = [PAD_X, PAD_X + (W - PAD_X*2) * 0.28, PAD_X + (W - PAD_X*2) * 0.60, W - PAD_X - NODE_W];
+
+    function layoutLayer(ids, valueMap, layerX, totalH) {
+      const totalVal = ids.reduce((s, id) => s + (valueMap[id]||1), 0);
+      const availH = totalH - PAD_Y * 2;
+      const totalGap = (ids.length - 1) * GAP;
+      const scaleH = Math.max(1, (availH - totalGap) / Math.max(1, totalVal));
+      let y = PAD_Y;
+      const nodes = {};
+      ids.forEach(id => {
+        const h = Math.max(10, (valueMap[id]||1) * scaleH);
+        nodes[id] = { x: layerX, y, h, cx: layerX + NODE_W/2, cy: y + h/2 };
+        y += h + GAP;
+      });
+      return nodes;
+    }
+
+    const lpNodes    = layoutLayer(lpIds,    lpValue,    LAYER_X[0], H);
+    const fundNodes2 = layoutLayer(fundIds,  fundValue,  LAYER_X[2], H);
+    const themeNodes = layoutLayer(themeIds, themeValue, LAYER_X[3], H);
+
+    // ── Color ────────────────────────────────────────────────────────────────
+    const LP_COL    = '#847E73';
+    const FUND_COLS = ['#0B8F87','#1A6DB5','#2A7A42','#8B6D14','#7033BC','#C25A2A','#127A6E','#6B8C3A'];
+    const fundColMap = {};
+    fundIds.forEach((id, i) => { fundColMap[id] = FUND_COLS[i % FUND_COLS.length]; });
+
+    // ── Draw links LP→Fund ───────────────────────────────────────────────────
+    // Accumulate vertical offset per source/target
+    const lpOutY   = {}; lpIds.forEach(id => { lpOutY[id]   = lpNodes[id]   ? lpNodes[id].y   : 0; });
+    const fundInY  = {}; fundIds.forEach(id => { fundInY[id] = fundNodes2[id] ? fundNodes2[id].y : 0; });
+    const fundOutY = {}; fundIds.forEach(id => { fundOutY[id] = fundNodes2[id] ? fundNodes2[id].y : 0; });
+    const themeInY = {}; themeIds.forEach(id => { themeInY[id] = themeNodes[id] ? themeNodes[id].y : 0; });
+
+    // total flow scale for LP→fund links: use fund deal total for proportional height
+    const totalDeals = Object.values(fundDealTotal).reduce((s,v)=>s+v,0) || 1;
+
+    // LP→Fund links (proportional to target fund's deal count)
+    lpFundEdges.forEach(e => {
+      const src = lpNodes[e.source];
+      const tgt = fundNodes2[e.target];
+      if (!src || !tgt) return;
+      // height proportional to target fund value
+      const fv = fundValue[e.target] || 1;
+      const lpTotalForSrc = lpValue[e.source] || 1;
+      const srcH = Math.max(2, src.h * fv / lpTotalForSrc);
+      const tgtH = Math.max(2, tgt.h * 0.35); // thinner at fund entry
+
+      const x0 = src.x + NODE_W, y0m = (lpOutY[e.source]||src.y) + srcH/2;
+      const x1 = tgt.x,          y1m = (fundInY[e.target]||tgt.y) + tgtH/2;
+      lpOutY[e.source]  = (lpOutY[e.source]||src.y) + srcH;
+      fundInY[e.target] = (fundInY[e.target]||tgt.y) + tgtH;
+
+      const col = fundColMap[e.target] || FUND_COLS[0];
+      const path = document.createElementNS(NS_S, 'path');
+      const cx = (x0 + x1) / 2;
+      path.setAttribute('d', `M${x0},${y0m-srcH/2} C${cx},${y0m-srcH/2} ${cx},${y1m-tgtH/2} ${x1},${y1m-tgtH/2}
+        L${x1},${y1m+tgtH/2} C${cx},${y1m+tgtH/2} ${cx},${y0m+srcH/2} ${x0},${y0m+srcH/2} Z`);
+      path.setAttribute('fill', col);
+      path.setAttribute('opacity', '0.18');
+      path.setAttribute('class', 'sk-link');
+      svg.appendChild(path);
+    });
+
+    // Fund→Theme links
+    fundThemeEdges.forEach(e => {
+      const src = fundNodes2[e.source];
+      const tgt = themeNodes[e.theme];
+      if (!src || !tgt) return;
+      const fv  = fundValue[e.source] || 1;
+      const srcH = Math.max(2, src.h * e.deal_count / fv);
+      const tv   = themeValue[e.theme] || 1;
+      const tgtH  = Math.max(2, tgt.h * e.deal_count / tv);
+
+      const x0 = src.x + NODE_W, y0m = (fundOutY[e.source]||src.y) + srcH/2;
+      const x1 = tgt.x,          y1m = (themeInY[e.theme]||tgt.y)  + tgtH/2;
+      fundOutY[e.source] = (fundOutY[e.source]||src.y) + srcH;
+      themeInY[e.theme]  = (themeInY[e.theme]||tgt.y) + tgtH;
+
+      const col = THEME_PAL[e.theme] || '#999';
+      const path = document.createElementNS(NS_S, 'path');
+      const cx = (x0 + x1) / 2;
+      path.setAttribute('d', `M${x0},${y0m-srcH/2} C${cx},${y0m-srcH/2} ${cx},${y1m-tgtH/2} ${x1},${y1m-tgtH/2}
+        L${x1},${y1m+tgtH/2} C${cx},${y1m+tgtH/2} ${cx},${y0m+srcH/2} ${x0},${y0m+srcH/2} Z`);
+      path.setAttribute('fill', col);
+      path.setAttribute('opacity', '0.28');
+      path.setAttribute('class', 'sk-link');
+      // Tooltip data
+      path.setAttribute('data-tip', `${nodeLabel[e.source]||e.source} → ${THEME_SHORT[e.theme]||e.theme}: ${e.deal_count} deals`);
+      path.style.cursor = 'default';
+      svg.appendChild(path);
+    });
+
+    // ── Draw nodes ───────────────────────────────────────────────────────────
+    function drawNode(id, pos, col, layer) {
+      const g = document.createElementNS(NS_S, 'g');
+      g.setAttribute('data-id', id);
+
+      const rect = document.createElementNS(NS_S, 'rect');
+      rect.setAttribute('x', pos.x); rect.setAttribute('y', pos.y);
+      rect.setAttribute('width', NODE_W); rect.setAttribute('height', Math.max(2, pos.h));
+      rect.setAttribute('rx', '3'); rect.setAttribute('fill', col);
+      g.appendChild(rect);
+
+      // Label
+      const lbl = document.createElementNS(NS_S, 'text');
+      lbl.setAttribute('class', 'sk-node-label');
+      lbl.setAttribute('y', pos.y + pos.h/2);
+      lbl.setAttribute('dominant-baseline', 'middle');
+      lbl.setAttribute('font-size', '11');
+      lbl.setAttribute('fill', '#332b22');
+      const shortLabel = (nodeLabel[id]||id).length > 18 ? (nodeLabel[id]||id).slice(0,17)+'…' : (nodeLabel[id]||id);
+
+      if (layer === 3) { // themes: label on right
+        lbl.setAttribute('x', pos.x + NODE_W + 5);
+        lbl.setAttribute('text-anchor', 'start');
+        lbl.setAttribute('fill', col);
+        lbl.setAttribute('font-weight', '600');
+        lbl.setAttribute('font-size', '10.5');
+      } else if (layer === 0) { // LPs: label on left
+        lbl.setAttribute('x', pos.x - 5);
+        lbl.setAttribute('text-anchor', 'end');
+        lbl.setAttribute('fill', LP_COL);
+        lbl.setAttribute('font-size', '10.5');
+      } else { // funds: label above or below
+        lbl.setAttribute('x', pos.x + NODE_W/2);
+        lbl.setAttribute('text-anchor', 'middle');
+        lbl.setAttribute('y', pos.y - 4);
+        lbl.setAttribute('dominant-baseline', 'auto');
+        lbl.setAttribute('fill', col);
+        lbl.setAttribute('font-weight', '600');
+        lbl.setAttribute('font-size', '10');
+      }
+      lbl.textContent = shortLabel;
+      g.appendChild(lbl);
+      svg.appendChild(g);
+    }
+
+    lpIds.forEach(id  => drawNode(id, lpNodes[id],    LP_COL,                         0));
+    fundIds.forEach(id => drawNode(id, fundNodes2[id], fundColMap[id]||FUND_COLS[0],   2));
+    themeIds.forEach(id => drawNode(id, themeNodes[id], THEME_PAL[id]||'#999',          3));
+
+    // ── Layer header labels ───────────────────────────────────────────────────
+    [['LPs &\nMultilaterales', LAYER_X[0]], ['Fondos VC', LAYER_X[2]], ['Temas BIO', LAYER_X[3]]].forEach(([lbl, lx]) => {
+      const t = document.createElementNS(NS_S, 'text');
+      t.setAttribute('x', lx + NODE_W/2); t.setAttribute('y', 10);
+      t.setAttribute('text-anchor', 'middle');
+      t.setAttribute('font-size', '9.5');
+      t.setAttribute('font-weight', '700');
+      t.setAttribute('fill', 'var(--muted)');
+      t.setAttribute('letter-spacing', '0.04em');
+      t.setAttribute('text-transform', 'uppercase');
+      t.textContent = lbl;
+      svg.appendChild(t);
+    });
+
+    // ── Tooltip ───────────────────────────────────────────────────────────────
+    svg.addEventListener('mouseover', e => {
+      const tip = e.target.dataset.tip;
+      if (!tip) { ttEl.style.display = 'none'; return; }
+      ttEl.textContent = tip;
+      ttEl.style.display = 'block';
+    });
+    svg.addEventListener('mousemove', e => {
+      const rect2 = wrap.getBoundingClientRect();
+      ttEl.style.left = (e.clientX - rect2.left + 12) + 'px';
+      ttEl.style.top  = (e.clientY - rect2.top  - 10) + 'px';
+    });
+    svg.addEventListener('mouseout', () => { ttEl.style.display = 'none'; });
   }
 
 }); // DOMContentLoaded

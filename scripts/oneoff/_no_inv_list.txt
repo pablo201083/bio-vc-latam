@@ -1,0 +1,185 @@
+--- series-c+ (1) ---
+  kaiima                                   BR   Kaiima
+
+--- series-b (1) ---
+  biotimize                                BR   Biotimize
+
+--- series-a (9) ---
+  biosolvit                                BR   Biosolvit
+  contech_brasil                           BR   Contech Brasil
+  copper3d                                 CL   Copper3D
+  thyroidprint                             CL   ThyroidPrint
+  cenibiot                                 CR   Cenibiot
+  agrorganica                              MX   Agrorganica
+  eva-mx                                   MX   Eva
+  geneprodx-mx                             MX   GeneProDx
+  koltin-mx                                MX   Koltin
+
+--- growth (1) ---
+  re_green                                 BR   re.green
+
+--- seed (25) ---
+  heritas                                  AR   Heritas
+  growpack                                 AR   growPack
+  carigenetics                             BM   Carigenetics
+  ages_bioactive                           BR   Ages Bioactive
+  aimirim-br                               BR   Aimirim
+  aptah                                    BR   Aptah
+  celer_biotecnologia                      BR   Celer Biotecnologia
+  corsync                                  BR   Cor.Sync
+  gen-t-br                                 BR   Gen-t
+  glucogear                                BR   GlucoGear
+  inedita-bio-br                           BR   InEdita Bio
+  lizarbio                                 BR   LizarBio
+  naiad-drug-design-br                     BR   NAIAD Drug Design
+  neoprospecta-br                          BR   Neoprospecta
+  neuralmed                                BR   NeuralMed
+  olho_do_dono                             BR   Olho do Dono
+  rizoflora_biotechnology_acq_by_stoller   BR   Rizoflora Biotechnology (acq. by Stoller))
+  sensix                                   BR   Sensix
+  tarvos-br                                BR   Tarvos
+  tissuelabs                               BR   TissueLabs
+  treevia-br                               BR   Treevia
+  vyro-bio-br                              BR   Vyro Bio
+  odd_industries                           CL   Odd Industries
+  clearleaf                                CR   ClearLeaf
+  prosperia                                MX   PROSPERiA
+
+--- pre-seed (137) ---
+  biotecnofe                               AR   Biotecnofe
+  cellargen_biotech                        AR   Cellargen Biotech
+  chemtest                                 AR   Chemtest
+  detx_mol                                 AR   Detx Mol
+  epicca                                   AR   Epicca
+  galtec                                   AR   Galtec Life
+  hybridon                                 AR   Hybridon
+  innova_space                             AR   Innova Space
+  kheiron-biotech-ar                       AR   Kheiron Biotech
+  limay                                    AR   Limay
+  mzp-tecnologia-ar                        AR   MZP Tecnologia
+  meton                                    AR   Meton
+  mirai_3d                                 AR   Mirai 3D
+  motivia-ar                               AR   Motivia
+  nanotica                                 AR   Nanotica
+  nativas                                  AR   Nativas
+  omica                                    AR   Omica
+  panarum                                  AR   Panarum
+  plamic_biotech                           AR   Plamic Biotech
+  rnatech-ar                               AR   RNAtech
+  selectivity                              AR   Selectivity
+  silohub                                  AR   Silohub
+  terragene-ar                             AR   Terragene
+  webio-ar                                 AR   WeBio
+  microscopia                              AR   microscopIA
+  agrivalle                                BR   Agrivalle
+  aptah-bio-br                             BR   Aptah Bio
+  autem-therapeutics-br                    BR   Autem Therapeutics
+  bioin-br                                 BR   BIoIn
+  bio_bureau_biotechnology                 BR   Bio Bureau Biotechnology
+  biobreyer                                BR   BioBreyer
+  biocentis-br                             BR   Biocentis
+  biolinker                                BR   Biolinker Synthetic Biology
+  biomimetic_solutions                     BR   Biomimetic Solutions
+  biosens                                  BR   Biosens
+  biotrop-br                               BR   Biotrop
+  bloomcare-br                             BR   BloomCare
+  brtc                                     BR   Brtc
+  by_my_cell                               BR   By My Cell
+  cellertz-bio-br                          BR   Cellertz Bio
+  celluris                                 BR   Celluris
+  dioxd                                    BR   Dioxd
+  fk_biotecnologia                         BR   FK Biotecnologia
+  fabns                                    BR   FabNS
+  farmbox-br                               BR   Farmbox
+  futr_bio                                 BR   Futr Bio
+  hoobox_one                               BR   HOOBOX ONE
+  hapiseeds-br                             BR   Hapiseeds
+  huna                                     BR   Huna
+  ideelab                                  BR   IdeeLab
+  inpulse_medical                          BR   InPulse Medical
+  insitu                                   BR   InSitu
+  inspectral-br                            BR   Inspectral
+  isobar-br                                BR   Isobar
+  krilltech                                BR   Krilltech
+  linda_lifetech                           BR   Linda Lifetech
+  mirscience-therapeutics-br               BR   MiRscience Therapeutics
+  moondo                                   BR   Moondo
+  naiad                                    BR   Naiad
+  nanotropic_tecnologia                    BR   NanoTropic Tecnologia
+  nanovetores_group                        BR   Nanovetores Group
+  neomed-br                                BR   NeoMed
+  nocarbon_milk                            BR   NoCarbon Milk
+  php_biotech                              BR   PHP Biotech
+  peptidus-biotech-br                      BR   Peptidus Biotech
+  pharmalens-br                            BR   Pharmalens
+  pickcells                                BR   Pickcells
+  precision_ag                             BR   Precision Ag
+  quantis-br                               BR   Quantis
+  recepta_biopharma                        BR   RECEPTA Biopharma
+  reddot-bio-br                            BR   Reddot Bio
+  taugc-bioinformatics-br                  BR   TauGC Bioinformatics
+  theravax                                 BR   TheraVax
+  tismoo                                   BR   Tismoo
+  vaxinz                                   BR   Vaxinz
+  vetpix                                   BR   Vetpix
+  virtech_bio                              BR   Virtech Bio
+  vitales-br                               BR   Vitales
+  ymmunobio                                BR   Ymmunobio
+  nchemi-br                                BR   nChemi
+  activaq                                  CL   ActivaQ
+  aintech                                  CL   Aintech
+  algenis-cl                               CL   Algenis
+  arcomed                                  CL   Arcomed
+  biotic                                   CL   Biotic
+  bruna-by-altum-lab-cl                    CL   Bruna by Altum Lab
+  cellter-cl                               CL   Cellter
+  dart_by_teledx                           CL   DART by Teledx
+  daeki-cl                                 CL   Daeki
+  diagnosis_biotech                        CL   Diagnosis Biotech
+  domolif                                  CL   Domolif
+  exacta-bioscience-cl                     CL   Exacta BioScience
+  green_biofactory                         CL   Green Biofactory
+  ictiobiotic                              CL   Ictiobiotic
+  kran-nanobubble-cl                       CL   Kran Nanobubble
+  merken-biotech-cl                        CL   Merken Biotech
+  neurognos                                CL   Neurognos
+  novalact                                 CL   Novalact
+  pow_foods                                CL   POW! Foods
+  patagonia-biotechnology-cl               CL   Patagonia Biotechnology
+  pathovet                                 CL   Pathovet
+  photio                                   CL   Photio
+  praxis-biotech-cl                        CL   Praxis Biotech
+  spora_biotech                            CL   Spora Biotech
+  bialtec                                  CO   Bialtec
+  nanofreeze                               CO   Nanofreeze
+  progal                                   CO   Progal
+  tuplaza                                  CO   TuPlaza
+  hemoalgae                                CR   Hemoalgae
+  smatter                                  CR   Smatter
+  speratum                                 CR   Speratum
+  biorgani                                 GT   Biorgani
+  bitmec                                   GT   Bitmec
+  agrosustain-mx                           MX   AgroSustain
+  biofabrica-siglo-xxi-mx                  MX   Biofabrica Siglo XXI
+  diagtech                                 MX   Diagtech
+  ecoshell-mx                              MX   Ecoshell
+  gentec                                   MX   Gentec
+  granatum_bioworks                        MX   Granatum Bioworks
+  gricha                                   MX   Gricha
+  nanoblast                                MX   Nanoblast
+  nanopharmacia-group-mx                   MX   Nanopharmacia Group
+  novagenic_affinity                       MX   Novagenic Affinity
+  savefruit-mx                             MX   SaveFruit
+  solena-mx                                MX   Solena
+  thermy                                   MX   Thermy
+  veloz_bio                                MX   Veloz Bio
+  wayakit                                  MX   Wayakit
+  advanced_biocontrollers                  PA   Advanced Biocontrollers
+  biofab                                   PE   BioFab
+  pixed                                    PE   Pixed
+  cutting_edge_superconductors             PR   Cutting Edge Superconductors
+  isla_pharmaceuticals                     PR   Isla Pharmaceuticals
+  aravan_labs                              UY   Aravan Labs
+  bentenbiotech                            UY   BentenBiotech
+  ecosativa                                UY   Ecosativa
+  siquimia                                 UY   Siquimia

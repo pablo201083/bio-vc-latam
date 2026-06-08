@@ -166,6 +166,18 @@
     .conf-leg{display:flex;align-items:center;gap:6px;font-size:.65rem;color:var(--muted);margin-left:auto;letter-spacing:.06em;text-transform:uppercase;font-weight:500}
     .cs{width:9px;height:9px;border-radius:999px;border:1px solid rgba(0,0,0,.12)}
 
+    /* ── Time Player ─────────────────────────────────────────────────────── */
+    .time-player{display:none;align-items:center;gap:10px;padding:6px 14px;background:rgba(255,252,246,.97);border-top:1px solid var(--line)}
+    .time-player.open{display:flex}
+    .tp-play{width:28px;height:28px;border-radius:50%;border:1.5px solid var(--accent);background:rgba(11,143,135,.08);color:var(--accent);font-size:.8rem;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background .12s;padding:0;line-height:1}
+    .tp-play:hover{background:rgba(11,143,135,.2)}
+    .tp-year{font-size:1.35rem;font-weight:700;color:var(--ink);min-width:46px;text-align:center;font-variant-numeric:tabular-nums}
+    .tp-slider{flex:1;min-width:80px;accent-color:var(--accent);cursor:pointer}
+    .tp-range{font-size:.7rem;color:var(--muted);white-space:nowrap}
+    .tp-count{font-size:.72rem;color:var(--accent);white-space:nowrap;min-width:100px;font-weight:500}
+    .anim-overlay{position:absolute;bottom:18px;right:24px;font-size:5rem;font-weight:800;color:rgba(11,143,135,.12);pointer-events:none;letter-spacing:-.04em;font-variant-numeric:tabular-nums;display:none;line-height:1;user-select:none}
+    .anim-overlay.visible{display:block}
+
     /* ── Breadcrumbs — overlay sobre el canvas, no afecta su tamaño ── */
     .breadcrumbs{display:none;flex-wrap:wrap;gap:5px;align-items:center;min-height:26px;
       position:absolute;top:58px;left:14px;right:14px;z-index:7;
@@ -302,11 +314,14 @@
     <main class="themes-stage">
       <div class="tb-between">
         <div class="tb-row">
-          <div class="vt-group">
-            <button id="btn-map" class="vt-btn active" type="button">UMAP</button>
+          <div class="vt-group" title="Modo de posicionamiento en el mapa">
+            <button id="btn-editorial" class="vt-btn active" type="button" title="Ejes fijos: bio→digital × molecular→ecosistema">Editorial</button>
+            <button id="btn-hybrid"    class="vt-btn"        type="button" title="Semántica con atracción suave hacia ejes analíticos (α=0.35)">Híbrido</button>
+            <button id="btn-semantic"  class="vt-btn"        type="button" title="UMAP puro: posición = similitud semántica real">Semántico</button>
           </div>
           <button id="btn-labels" class="lbl-btn" type="button">Nombres</button>
           <button id="btn-filter" class="lbl-btn" type="button">Filtros</button>
+          <button id="btn-time"   class="lbl-btn" type="button" title="Animar por año de fundación">Tiempo</button>
           <div class="srch-wrap">
             <input id="srch-in" class="themes-select" type="search" placeholder="Buscar startup…" autocomplete="off" style="min-width:150px">
             <div id="srch-res" class="srch-res"></div>
@@ -318,6 +333,13 @@
           <span class="cs" style="width:18px;height:18px;background:var(--accent)"></span>~$50M
           <span class="cs" style="width:30px;height:30px;background:var(--accent)"></span>$100M+
         </div>
+      </div>
+      <div id="time-player" class="time-player">
+        <button id="tp-play" class="tp-play" type="button" title="Reproducir / Pausar">▶</button>
+        <span id="tp-year" class="tp-year">2000</span>
+        <input id="tp-slider" class="tp-slider" type="range" min="2000" max="2023" value="2000" step="1">
+        <span class="tp-range">2000 — 2023</span>
+        <span id="tp-count" class="tp-count"></span>
       </div>
       <div id="filter-panel" class="filter-panel">
         <div class="fp-row">
@@ -357,6 +379,7 @@
       <div class="canvas-wrap" id="canvas-wrap">
         <svg id="themes-svg"></svg>
         <div id="hov-card" class="hov"></div>
+        <div id="anim-overlay" class="anim-overlay"></div>
         <div class="z-ctrl">
           <button id="z-in" class="z-btn" type="button">+</button>
           <button id="z-out" class="z-btn" type="button">−</button>
@@ -424,7 +447,7 @@
 </div>
 
 <script src="./text-clean.js?v=20260422aa"></script>
-<script src="./startup-themes-data.js?v=20260527l"></script>
+<script src="./startup-themes-data.js?v=20260531a"></script>
 <script>
 (function(){
 "use strict";
@@ -543,20 +566,52 @@ const nodes=startups.map(s=>({
 }));
 const nodeMap=new Map(nodes.map(n=>[n.d.id,n]));
 
+// ── Layout mode: editorial | hybrid | semantic ─────────────────────────────
+// Cada modo usa un set distinto de coordenadas pre-computadas en Python:
+//   editorial → d.x / d.y   (centroides fijos bio→digital × molecular→ecosistema)
+//   hybrid    → d.hx / d.hy (centroide interpolado α=0.35 entre semántico y editorial)
+//   semantic  → d.ux / d.uy (UMAP 2D puro normalizado — similitud semántica real)
+let layoutMode = 'editorial';   // estado actual
+
+function _posForMode(s, mode){
+  if(mode==='semantic') return {x: s.ux??s.x, y: s.uy??s.y};
+  if(mode==='hybrid')   return {x: s.hx??s.x, y: s.hy??s.y};
+  return                       {x: s.x,        y: s.y};
+}
+
 // ── UMAP map positions ─────────────────────────────────────────────────────
-function computeMapPos(){
+function computeMapPos(mode){
+  mode = mode || layoutMode;
   const pad=38;
-  // Use only core (non-outlier) nodes to define the canvas range —
-  // prevents 2-3 extreme outliers from compressing the main cluster region.
-  // Outlier nodes that fall outside this range get clamped naturally by relaxMapPos.
   const core=startups.filter(s=>!s.is_outlier);
-  const xs=core.map(s=>s.x), ys=core.map(s=>s.y);
+  const xs=core.map(s=>_posForMode(s,mode).x);
+  const ys=core.map(s=>_posForMode(s,mode).y);
   const minX=Math.min(...xs),maxX=Math.max(...xs);
   const minY=Math.min(...ys),maxY=Math.max(...ys);
   const rx=maxX-minX||1,ry=maxY-minY||1;
   nodes.forEach(n=>{
-    n.mx=pad+(n.d.x-minX)/rx*(W-pad*2);
-    n.my=pad+(n.d.y-minY)/ry*(H-pad*2);
+    const p=_posForMode(n.d,mode);
+    n.mx=pad+(p.x-minX)/rx*(W-pad*2);
+    n.my=pad+(p.y-minY)/ry*(H-pad*2);
+  });
+}
+
+// ── Transición animada entre modos de layout ───────────────────────────────
+// Usa el sistema de animación existente (startTrans) para consistencia visual.
+// computeMapPos(newMode) actualiza n.mx/my → startTrans("map") anima cx/cy hacia ellos.
+function switchLayoutMode(newMode){
+  if(newMode===layoutMode) return;
+  layoutMode = newMode;
+  computeMapPos(newMode);   // actualiza n.mx, n.my con el nuevo modo
+  computeZoomPos();         // sincroniza zx/zy para que zoom sea consistente
+  startTrans("map");        // anima cx/cy → mx/my con la curva easing estándar
+}
+
+// Actualizar botones de modo
+function updateLayoutButtons(mode){
+  ['editorial','hybrid','semantic'].forEach(m=>{
+    const btn=document.getElementById('btn-'+m);
+    if(btn) btn.classList.toggle('active', m===mode);
   });
 }
 
@@ -742,6 +797,9 @@ const activeLegacy=new Set();      // OR — macro_theme (taxonomía anterior)
 const activeDepths=new Set();     // OR — deep | applied | enabler | unclassified
 let searchId=null,showLabels=false;
 let viewMode="map"; // "map" | "cluster" | "zoom"
+// ── Animation / time-player ──────────────────────────────────────────────
+let animMode=false,animPlaying=false,animYear=2000,animTimer=null;
+const ANIM_MIN=2000,ANIM_MAX=2023,ANIM_STEP_MS=750;
 
 function isHl(s){
   if(searchId&&s.id!==searchId)return false;
@@ -1109,6 +1167,27 @@ function updateHighlights(){
   const any=anyFilter();
   syncFilterBtn();
 
+  // ── Animation / time-player mode ─────────────────────────────────────────
+  if(animMode){
+    nodes.forEach(n=>{
+      const s=n.d;
+      const lit=s.founded_year&&s.founded_year<=animYear;
+      const color=themeCol(s.bio_theme);
+      const pass=!any||isHl(s);
+      if(n.circEl){
+        n.circEl.setAttribute("fill",lit&&pass?color:GRAY_FILL);
+        n.circEl.setAttribute("opacity",lit?(pass?nOpacity(s):0.22):0.07);
+        n.circEl.setAttribute("r",nRadius(s));
+      }
+      if(n.lblEl){
+        const show=lit&&pass&&(nAnchor(s)||nDestacado(s)||(showLabels&&nCompleto(s)));
+        n.lblEl.style.display=show?"":"none";
+        n.lblEl.setAttribute("font-weight",nAnchor(s)?"700":"400");
+      }
+    });
+    return;
+  }
+
   // ── Zoom mode: protagonist view for one theme ──────────────────────────
   // En zoom solo mostramos anchors por defecto — la cámara ya está encima,
   // el usuario ve los dots claramente y puede hover. Toggle revela destacados+completos.
@@ -1441,7 +1520,7 @@ function buildClusterList(){
       // Enter zoom for this theme (works from map or zoom)
       activeTheme=theme;
       viewMode="zoom";
-      document.getElementById("btn-map").classList.remove("active");
+      updateLayoutButtons(layoutMode);
       computeZoomPos();
       document.querySelectorAll(".cr").forEach(r=>{
         r.classList.remove("active","dimmed");
@@ -1757,7 +1836,7 @@ function resetAll(){
   panX=0;panY=0;scale=1;applyTf();
   if(viewMode!=="map"){
     viewMode="map";
-    document.getElementById("btn-map").classList.add("active");
+    updateLayoutButtons(layoutMode);
     startTrans("map");
   }
   updateHighlights();updateBreadcrumbs();
@@ -1766,14 +1845,23 @@ document.addEventListener("keydown",e=>{if(e.key==="Escape")resetAll()});
 document.addEventListener("click",e=>{if(!srchIn.contains(e.target))srchRes.classList.remove("open")});
 
 // ── Controls ──────────────────────────────────────────────────────────────
-document.getElementById("btn-map").addEventListener("click",()=>{
-  if(viewMode==="map")return;
-  const wasZoom=viewMode==="zoom";
-  viewMode="map";
-  document.getElementById("btn-map").classList.add("active");
-  if(wasZoom){panX=0;panY=0;scale=1;applyTf();}
-  startTrans("map");
-  updateHighlights();
+// ── Layout mode buttons (editorial / híbrido / semántico) ─────────────────
+['editorial','hybrid','semantic'].forEach(mode=>{
+  const btn=document.getElementById('btn-'+mode);
+  if(!btn)return;
+  btn.addEventListener('click',()=>{
+    // Siempre restablecer a vista mapa con el layout solicitado.
+    // Idempotente: si ya estás en este modo y en mapa, vuelve a computar y anima
+    // (útil para "resetear" la vista después de un zoom o si algo se desacomodó).
+    if(viewMode!=="map"){ viewMode="map"; panX=0;panY=0;scale=1;applyTf(); }
+    updateLayoutButtons(mode);
+    layoutMode=mode;
+    computeMapPos(mode);
+    relaxMapPos();       // previene solapamiento — igual que en el init
+    computeZoomPos();
+    startTrans("map");
+    updateHighlights();
+  });
 });
 
 document.getElementById("btn-labels").addEventListener("click",function(){
@@ -1805,6 +1893,54 @@ svgEl.addEventListener("wheel",e=>{
 document.getElementById("z-in").addEventListener("click",()=>{scale=Math.min(8,scale*1.2);applyTf()});
 document.getElementById("z-out").addEventListener("click",()=>{scale=Math.max(.25,scale/1.2);applyTf()});
 document.getElementById("z-reset").addEventListener("click",()=>{panX=0;panY=0;scale=1;applyTf()});
+
+// ── Time Player ────────────────────────────────────────────────────────────
+const tpSlider=document.getElementById("tp-slider");
+const tpPlayBtn=document.getElementById("tp-play");
+const tpYearEl=document.getElementById("tp-year");
+const tpCountEl=document.getElementById("tp-count");
+const timePlayerEl=document.getElementById("time-player");
+const animOverlayEl=document.getElementById("anim-overlay");
+
+function animStop(){
+  animPlaying=false;
+  clearInterval(animTimer);animTimer=null;
+  tpPlayBtn.textContent="▶";
+}
+function syncTpYear(){
+  tpYearEl.textContent=animYear;
+  tpSlider.value=animYear;
+  animOverlayEl.textContent=animYear;
+  const lit=nodes.filter(n=>n.d.founded_year&&n.d.founded_year<=animYear).length;
+  const withYear=nodes.filter(n=>n.d.founded_year).length;
+  tpCountEl.textContent=lit+" de "+withYear+" startups";
+  updateHighlights();
+}
+document.getElementById("btn-time").addEventListener("click",function(){
+  animMode=!animMode;
+  this.classList.toggle("on",animMode);
+  timePlayerEl.classList.toggle("open",animMode);
+  animOverlayEl.classList.toggle("visible",animMode);
+  if(!animMode){animStop();updateHighlights();}
+  else{syncTpYear();}
+});
+tpPlayBtn.addEventListener("click",function(){
+  if(!animMode)return;
+  animPlaying=!animPlaying;
+  this.textContent=animPlaying?"⏸":"▶";
+  if(animPlaying){
+    if(animYear>=ANIM_MAX){animYear=ANIM_MIN;}
+    animTimer=setInterval(()=>{
+      if(animYear<ANIM_MAX){animYear++;syncTpYear();}
+      else{animStop();}
+    },ANIM_STEP_MS);
+  }else{clearInterval(animTimer);animTimer=null;}
+});
+tpSlider.addEventListener("input",function(){
+  animYear=+this.value;
+  if(animPlaying){animStop();}
+  syncTpYear();
+});
 
 // Resize — debounced para evitar recálculo por apertura de filtros/breadcrumbs
 let roLastW=0,roLastH=0,roTmr=null;

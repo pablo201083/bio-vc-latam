@@ -187,7 +187,7 @@ def _load_startup_meta(conn: sqlite3.Connection) -> dict[str, dict]:
             "stage":    r[9] or "",
             "quality":  round(float(r[10] or 0), 1),
             "one_liner": r[11] or "",
-            "summary":  (r[12] or r[13] or "")[:200],
+            "summary":  (r[12] or r[13] or "")[:400],
             "scale":    r[14] or "",
             "tech":     r[15] or "",
             "investors": [],
@@ -283,7 +283,10 @@ def _org_theme_overlap(startup_theme: str, focus_text: str) -> float:
 def _load_investor_meta(conn: sqlite3.Connection) -> dict[str, dict]:
     rows = conn.execute("""
         SELECT e.entity_id, e.canonical_name, e.country_code, e.website,
-               i.investor_type, i.geography_focus
+               i.investor_type, i.geography_focus,
+               i.thesis, i.profile_blurb,
+               i.ticket_min_usd, i.ticket_max_usd,
+               i.aum_usd_m, i.lead_behavior, i.preferred_stages
         FROM entities e
         JOIN investors i ON i.investor_id = e.entity_id
         WHERE e.status != 'excluded'
@@ -297,13 +300,20 @@ def _load_investor_meta(conn: sqlite3.Connection) -> dict[str, dict]:
     for r in rows:
         iid = r[0]
         out[iid] = {
-            "id":       iid,
-            "name":     r[1],
-            "country":  (r[2] or "").upper(),
-            "website":  r[3] or "",
-            "itype":    r[4] or "",
-            "geo_focus": r[5] or "",
-            "portfolio": portfolio.get(iid, []),
+            "id":              iid,
+            "name":            r[1],
+            "country":         (r[2] or "").upper(),
+            "website":         r[3] or "",
+            "itype":           r[4] or "",
+            "geo_focus":       r[5] or "",
+            "thesis":          r[6] or "",
+            "profile_blurb":   r[7] or "",
+            "ticket_min":      r[8],
+            "ticket_max":      r[9],
+            "aum_usd_m":       r[10],
+            "lead_behavior":   r[11] or "",
+            "preferred_stages": r[12] or "",
+            "portfolio":       portfolio.get(iid, []),
         }
     return out
 
@@ -516,17 +526,24 @@ def build_intelligence_data(
             gap = raw_candidates[:15]
 
         inv_list.append({
-            "id":           iid,
-            "name":         inv["name"],
-            "country":      inv["country"],
-            "itype":        inv["itype"],
-            "geo_focus":    inv["geo_focus"],
-            "website":      inv["website"],
-            "portfolio_size": prof["size"],
-            "themes":       sorted(prof["themes"]),
-            "countries":    sorted(prof["countries"]),
-            "centroid_b64": centroid_b64,
-            "gap":          gap,
+            "id":              iid,
+            "name":            inv["name"],
+            "country":         inv["country"],
+            "itype":           inv["itype"],
+            "geo_focus":       inv["geo_focus"],
+            "website":         inv["website"],
+            "thesis":          inv["thesis"],
+            "profile_blurb":   inv["profile_blurb"],
+            "ticket_min":      inv["ticket_min"],
+            "ticket_max":      inv["ticket_max"],
+            "aum_usd_m":       inv["aum_usd_m"],
+            "lead_behavior":   inv["lead_behavior"],
+            "preferred_stages": inv["preferred_stages"],
+            "portfolio_size":  prof["size"],
+            "themes":          sorted(prof["themes"]),
+            "countries":       sorted(prof["countries"]),
+            "centroid_b64":    centroid_b64,
+            "gap":             gap,
         })
     inv_list.sort(key=lambda x: -x["portfolio_size"])
 
