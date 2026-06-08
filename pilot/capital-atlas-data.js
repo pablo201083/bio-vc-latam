@@ -1,14 +1,14 @@
 window.CAPITAL_ATLAS_DATA = {
-  "generated_at": "2026-06-08T11:45:25",
+  "generated_at": "2026-06-08T18:29:16",
   "source": "pipeline:build-atlas (SQLite)",
   "summary": {
-    "nodes_total": 782,
+    "nodes_total": 783,
     "funds_total": 129,
     "startups_total": 640,
-    "allocators_total": 13,
-    "edges_total": 582,
+    "allocators_total": 14,
+    "edges_total": 587,
     "investment_edges_total": 561,
-    "allocator_edges_total": 21,
+    "allocator_edges_total": 26,
     "include_startups_total": 496,
     "source_backed_include_startups_total": 420,
     "public_source_edges_total": 152
@@ -71,9 +71,9 @@ window.CAPITAL_ATLAS_DATA = {
       ],
       "ticket_min": 100000.0,
       "ticket_max": 500000.0,
-      "aum_m": null,
+      "aum_m": 150.0,
       "lead_behavior": "both",
-      "profile_blurb": "",
+      "profile_blurb": "500 LatAm is the Latin America investment program of 500 Global (formerly 500 Startups), one of the world's most active early-stage VCs. Invests $300K per company in cohort programs for LatAm-headquartered tech founders. Portfolio of 300+ companies with AI, B2B SaaS, fintech, agtech, and healthtech representation. Unique value: access to 500 Global's global LP network, 5,000+ portfolio alumni, and cross-border market entry playbooks. One unicorn: Konfio ($1B+ valuation).",
       "degree": 2,
       "portfolio_valuation_usd": 1.5
     },
@@ -100,11 +100,11 @@ window.CAPITAL_ATLAS_DATA = {
       "geography": [
         "AR"
       ],
-      "ticket_min": null,
+      "ticket_min": 20000.0,
       "ticket_max": 200000.0,
       "aum_m": 12.0,
       "lead_behavior": "both",
-      "profile_blurb": "",
+      "profile_blurb": "Aceleradora Litoral is a Santa Fe-based startup accelerator affiliated with Universidad Nacional del Litoral (UNL). Provides pre-seed capital, structured mentoring, and access to UNL's research infrastructure and patent portfolio. Focus on agtech, food biotech, industrial biotech, and environmental technology. Key gateway for CONICET and UNL spinoffs in the Argentine Litoral agricultural region.",
       "degree": 7,
       "portfolio_valuation_usd": 26.6
     },
@@ -137,7 +137,7 @@ window.CAPITAL_ATLAS_DATA = {
       ],
       "ticket_min": 200000.0,
       "ticket_max": 3000000.0,
-      "aum_m": null,
+      "aum_m": 15.0,
       "lead_behavior": "lead",
       "profile_blurb": "AIR Capital es un fondo de deep tech de tesis amplia: \"innovaciones disruptivas relevantes para la humanidad\". Su portafolio abarca desde space (Outpost, Skyloom, Aptos Orbital) hasta biotecnología (Stämm, Semion Bio, Dogma Biotech, Oncoliq) y energía — una diversificación que refleja la apuesta de que el próximo ciclo de innovación será convergente y multidisciplinario.\n\nCon más de 50 empresas en portafolio, AIR Capital opera con un apetito de riesgo alto y un criterio técnico elevado: Stämm — una de las compañías más sofisticadas en biomanufactura del hemisferio sur — está en su cartera, lo que indica capacidad real de evaluación científica. El sesgo argentino es marcado pero sin restricción geográfica explícita.\n\nEn el ecosistema BIO LATAM, AIR es uno de los pocos fondos con capacidad multi-sectorial y vocación de frontera tecnológica. Su falta de transparencia sobre AUM y estructura de fondo es la principal incógnita sobre su capacidad de follow-on — una variable crítica para startups bio que planean rondas Series B y posteriores.",
       "degree": 33,
@@ -201,7 +201,7 @@ window.CAPITAL_ATLAS_DATA = {
       ],
       "ticket_min": 25000.0,
       "ticket_max": 200000.0,
-      "aum_m": null,
+      "aum_m": 20.0,
       "lead_behavior": "both",
       "profile_blurb": "Antom es un fondo de impacto pre-seed y seed para proyectos regenerativos en América Latina. Su mandato es explícitamente ambiental: las métricas de decisión incluyen reducción de CO2, captura de GEI, aumento de biodiversidad y reducción de residuos. Opera con tickets de $25K a $100K vía contratos SAFE, o mediante Revenue Share (5% de ventas mensuales durante 7 años, cap en 4x) — una estructura que reduce la dilución para fundadores en etapas muy tempranas.\n\nSu foco abarca climatech, agri-foodtech agroecológico, economía circular y eficiencia energética. La combinación de equity y Revenue Share como instrumentos complementarios es una señal de adaptabilidad a los flujos de caja de startups en mercados emergentes donde el modelo estándar de VC puede no ser óptimo.\n\nPara el ecosistema BIO, Antom es un actor de nicho early pero relevante: su mandato regenerativo y su enfoque agroecológico lo conectan con bioinputs, biomateriales y foodtech alternativo. Con tickets pequeños pero procesos ágiles y criterios de impacto claros, puede ser el primer cheque institucional para startups bio-ambientales que aún no alcanzan el radar de fondos de mayor escala.",
       "degree": 11,
@@ -236,7 +236,7 @@ window.CAPITAL_ATLAS_DATA = {
       "ticket_max": 2000000.0,
       "aum_m": 18.0,
       "lead_behavior": "lead",
-      "profile_blurb": "",
+      "profile_blurb": "Araucaria Venture is headquartered in Temuco, in Chile's La Araucanía region — Chile's agricultural heartland. Thesis: 'bridge between technology and regional expansion' for food and agriculture companies. Focus: AgTech, FoodTech, and ClimateTech from seed to Series A. Targets a $10T+ global agrifood market. Unique positioning: deep connection to Southern Chile's forestry, salmon farming, and specialty crop sectors. Provides portfolio companies access to Chilean agro-industrial networks and CORFO-backed pilot programs.",
       "degree": 0,
       "portfolio_valuation_usd": 0.0
     },
@@ -250,7 +250,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Argentine pharmaceutical company Laboratorio Bagó with strategic investments in biotech and health innovation startups in Argentina and Latin America.",
       "country": "AR",
-      "website": "",
+      "website": "https://www.bago.com.ar",
       "stages": [
         "seed",
         "series-a"
@@ -303,7 +303,7 @@ window.CAPITAL_ATLAS_DATA = {
       "ticket_max": 20000000.0,
       "aum_m": 220.0,
       "lead_behavior": "lead",
-      "profile_blurb": "",
+      "profile_blurb": "Blue Horizon is a Zurich-based VC managing $100M+ with 100+ portfolio companies and 3 unicorns. Thesis: accelerating the transition to sustainable food systems through alternative proteins (plant-based, cultivated meat, fermentation-derived). Portfolio includes Eat Just, Impossible Foods, Oatly. Invests globally, with active LatAm portfolio in Brazil, Chile, and Colombia. Provides sector expertise, go-to-market support in European markets, and connections to major food corporate partners.",
       "degree": 2,
       "portfolio_valuation_usd": 29.0
     },
@@ -317,7 +317,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "HK",
-      "website": "",
+      "website": "https://brinc.io",
       "stages": [
         "pre-seed",
         "seed"
@@ -346,7 +346,7 @@ window.CAPITAL_ATLAS_DATA = {
       "investor_subtype": "vc",
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
-      "thesis": "",
+      "thesis": "US deep tech VC backing founders transforming physical industries: defense, energy, biotech, climate, advanced manufacturing, and sustainable food systems.",
       "country": "US",
       "website": "https://cantos.vc",
       "stages": [
@@ -359,11 +359,11 @@ window.CAPITAL_ATLAS_DATA = {
       "geography": [
         "USA"
       ],
-      "ticket_min": null,
-      "ticket_max": null,
-      "aum_m": null,
-      "lead_behavior": "",
-      "profile_blurb": "",
+      "ticket_min": 250000.0,
+      "ticket_max": 3000000.0,
+      "aum_m": 50.0,
+      "lead_behavior": "lead",
+      "profile_blurb": "Cantos is a San Francisco-based early-stage VC investing in founders who transform the physical world through deep technology. Thesis: invest from day one in sectors with civilization-level impact. Portfolio: Radiant (micro-reactors), Neros (unmanned defense), Solugen (biochemical manufacturing, backed by Breakthrough Energy), Earth AI, Astranis, Atom Computing. In biotech: biomanufacturing, genomic medicine, and sustainable food systems. Strong connections to US national labs, ARPA programs, and defense-adjacent institutions.",
       "degree": 1,
       "portfolio_valuation_usd": 0.0
     },
@@ -395,7 +395,7 @@ window.CAPITAL_ATLAS_DATA = {
       "ticket_max": 3000000.0,
       "aum_m": 20.0,
       "lead_behavior": "both",
-      "profile_blurb": "",
+      "profile_blurb": "ChileGlobal Ventures is a Santiago-based venture capital initiative focused on connecting Chilean and LatAm technology startups with international corporate co-investors and strategic partners. Backed by Chilean business groups and CORFO. Active in agtech, food tech, cleantech, and biotech. Provides market access to Chilean agrifood companies and government-backed pilot programs.",
       "degree": 3,
       "portfolio_valuation_usd": 12.0
     },
@@ -503,9 +503,9 @@ window.CAPITAL_ATLAS_DATA = {
       ],
       "ticket_min": 500000.0,
       "ticket_max": 5000000.0,
-      "aum_m": null,
+      "aum_m": 60.0,
       "lead_behavior": "lead",
-      "profile_blurb": "",
+      "profile_blurb": "Dalus Capital is a Mexico City-based venture capital fund focused on health technology, biotech, and agtech in Mexico and LatAm. Manages two funds totaling $60M+. Strong portfolio in digital health (telemedicine, diagnostics, preventive care) and agricultural technology. Known for strong co-investment relationships with IMSS, Mexican hospital networks, and agricultural distributors as pilot customers.",
       "degree": 3,
       "portfolio_valuation_usd": 51.8
     },
@@ -535,9 +535,9 @@ window.CAPITAL_ATLAS_DATA = {
       ],
       "ticket_min": 200000.0,
       "ticket_max": 2000000.0,
-      "aum_m": null,
+      "aum_m": 20.0,
       "lead_behavior": "lead",
-      "profile_blurb": "",
+      "profile_blurb": "DragonesVP is a Santiago-based venture capital fund investing in science-based startups across Chile and LatAm. Focuses on food systems, agtech, biotechnology, and industrial technology. Connected to Chilean government programs (CORFO) and the Start-Up Chile alumni network. Known for bridge capital between Chilean and regional VC rounds.",
       "degree": 10,
       "portfolio_valuation_usd": 104.0
     },
@@ -551,7 +551,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "US",
-      "website": "",
+      "website": "https://draper.vc",
       "stages": [],
       "verticals": [],
       "geography": [],
@@ -573,7 +573,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "US",
-      "website": "",
+      "website": "https://draperuniversity.com",
       "stages": [],
       "verticals": [],
       "geography": [],
@@ -614,7 +614,7 @@ window.CAPITAL_ATLAS_DATA = {
       "ticket_max": 3000000.0,
       "aum_m": 50.0,
       "lead_behavior": "lead",
-      "profile_blurb": "",
+      "profile_blurb": "DraperCygnus is part of the Draper global network (Tim Draper/DFJ). It is one of Spain's most prominent VC funds, with a strong focus on the Ibero-American ecosystem via its Mexico City and Madrid offices. Invested in digital health, biotech, agtech, and industrial tech across Spain and Latin America. Brings access to Draper's global network for portfolio companies seeking US market entry or international expansion.",
       "degree": 23,
       "portfolio_valuation_usd": 243.0
     },
@@ -669,7 +669,7 @@ window.CAPITAL_ATLAS_DATA = {
       "ticket_max": 500000.0,
       "aum_m": 54.0,
       "lead_behavior": "both",
-      "profile_blurb": "",
+      "profile_blurb": "Eatable Adventures is a Madrid-based foodtech accelerator and VC operating the Eatable Adventures Accelerator (cohort-based, 6 months) and a direct investment fund. Corporate partners include Nestlé, Coca-Cola, Bimbo, Carrefour, and Danone who co-invest and serve as pilot customers. LatAm hub in Bogotá active since 2021. Focus areas: alternative proteins, precision fermentation, food safety, packaging, and digital agri-food supply chain. Provides EUR 50-300k per cohort company plus corporate introductions.",
       "degree": 2,
       "portfolio_valuation_usd": 5.0
     },
@@ -701,7 +701,7 @@ window.CAPITAL_ATLAS_DATA = {
       "ticket_max": 3000000.0,
       "aum_m": 22.0,
       "lead_behavior": "both",
-      "profile_blurb": "",
+      "profile_blurb": "Endurance 28 is an Argentine micro-VC fund providing early-stage capital to deep-tech and biotech founders from Argentine universities and research centers. Known for fast term sheets and active mentoring by operating partners with startup experience. Co-invests frequently with GridX and The Ganesha Lab in the Argentine biotech ecosystem.",
       "degree": 6,
       "portfolio_valuation_usd": 27.0
     },
@@ -759,7 +759,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "US",
-      "website": "",
+      "website": "https://future.ventures",
       "stages": [
         "seed",
         "series-a"
@@ -859,7 +859,7 @@ window.CAPITAL_ATLAS_DATA = {
       "ticket_max": 2000000.0,
       "aum_m": 50.0,
       "lead_behavior": "lead",
-      "profile_blurb": "",
+      "profile_blurb": "GLOCAL is an Argentine accelerator focused on deeptech startups with strong scientific foundations. Provides equity capital, 6-month acceleration programs, and connections to Argentine research institutions and international investors. Strong portfolio in agtech, industrial biotech, and diagnostics. Known for active mentoring from experienced biotech operators.",
       "degree": 13,
       "portfolio_valuation_usd": 56.5
     },
@@ -888,7 +888,7 @@ window.CAPITAL_ATLAS_DATA = {
         "AR",
         "LATAM"
       ],
-      "ticket_min": null,
+      "ticket_min": 50000.0,
       "ticket_max": 500000.0,
       "aum_m": 41.0,
       "lead_behavior": "lead",
@@ -923,11 +923,11 @@ window.CAPITAL_ATLAS_DATA = {
         "LATAM",
         "EU"
       ],
-      "ticket_min": null,
-      "ticket_max": null,
-      "aum_m": null,
+      "ticket_min": 1000000.0,
+      "ticket_max": 0.0,
+      "aum_m": 0.0,
       "lead_behavior": "follow",
-      "profile_blurb": "",
+      "profile_blurb": "Grupo Insud is an Argentine family-owned conglomerate (Chairwoman: Ana Böhm) with key biotech and pharma holdings: mAbxience (biopharmaceuticals, AstraZeneca partner), Inmunova (antibody R&D), Sinergium Biotech (vaccines), and Elea Phoenix (generics/pharma). Strong biosimilar and biologics manufacturing capabilities. Operates across Argentina, Brazil, Mexico, and Spain. Strategic investor in life-sciences startups seeking industrial scale-up and LatAm market access.",
       "degree": 3,
       "portfolio_valuation_usd": 12.0
     },
@@ -1034,11 +1034,11 @@ window.CAPITAL_ATLAS_DATA = {
       "geography": [
         "LATAM"
       ],
-      "ticket_min": null,
+      "ticket_min": 1000000.0,
       "ticket_max": 30000000.0,
-      "aum_m": null,
+      "aum_m": 0.0,
       "lead_behavior": "lead",
-      "profile_blurb": "",
+      "profile_blurb": "IDB Invest is the private sector institution of the Inter-American Development Bank Group, providing $6B+ annually in financing to private companies in Latin America and the Caribbean. In agribusiness and food systems: finances value chains, processing infrastructure, and technology adoption. Equity investments in VC funds active in agtech and biotech. Not a typical VC — focuses on bankable projects with developmental impact. Provides patient capital, concessional financing, and technical assistance.",
       "degree": 5,
       "portfolio_valuation_usd": 14.0
     },
@@ -1067,11 +1067,11 @@ window.CAPITAL_ATLAS_DATA = {
       "geography": [
         "LATAM"
       ],
-      "ticket_min": null,
+      "ticket_min": 50000.0,
       "ticket_max": 3000000.0,
-      "aum_m": null,
+      "aum_m": 0.0,
       "lead_behavior": "both",
-      "profile_blurb": "",
+      "profile_blurb": "IDB Lab (formerly MIF) is the innovation laboratory of the Inter-American Development Bank Group, deploying $100M+ annually in grants and equity to early-stage entrepreneurs and funds across LatAm/Caribbean. Programs include WeXchange (women entrepreneurs), CIVLAC, and direct calls for VC fund proposals. Focus: fintech, agtech, health, climate, and digital inclusion. Provides non-dilutive grants, equity co-investment, technical assistance, and regulatory facilitation. Critical gateway to IDB Group's 26-country network.",
       "degree": 11,
       "portfolio_valuation_usd": 50.0
     },
@@ -1085,7 +1085,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "IDB Group lab focused on natural capital and biodiversity finance in Latin America. LP in Kaete Investimentos (Amazonia ReGenerate). Provides early-stage catalytic capital for ecosystem-positive ventures.",
       "country": "US",
-      "website": "",
+      "website": "https://bidlab.org",
       "stages": [
         "seed",
         "series-a"
@@ -1117,7 +1117,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "",
-      "website": "",
+      "website": "https://www.innogen.capital",
       "stages": [],
       "verticals": [],
       "geography": [],
@@ -1182,7 +1182,7 @@ window.CAPITAL_ATLAS_DATA = {
       "ticket_max": 3000000.0,
       "aum_m": 415.0,
       "lead_behavior": "lead",
-      "profile_blurb": "",
+      "profile_blurb": "Inventure is a Helsinki-based VC known for backing tech startups in emerging markets, particularly East Africa and LatAm. In LatAm focuses on agtech, food systems, and environmental tech companies. Provides access to Nordic LP networks and European market entry support.",
       "degree": 12,
       "portfolio_valuation_usd": 59.0
     },
@@ -1268,7 +1268,7 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": 30.0,
       "lead_behavior": "both",
       "profile_blurb": "",
-      "degree": 2,
+      "degree": 3,
       "portfolio_valuation_usd": 0.0
     },
     {
@@ -1376,8 +1376,8 @@ window.CAPITAL_ATLAS_DATA = {
       "ticket_max": 5000000.0,
       "aum_m": 180.0,
       "lead_behavior": "lead",
-      "profile_blurb": "",
-      "degree": 11,
+      "profile_blurb": "KPTL manages impact venture capital in Brazil with a focus on environmental and social impact sectors. Manages the Forest & Climate Fund in partnership with Fundo Vale, and is known as the merger of Kria and Obvious VC funds. Invests in biotech companies with demonstrable environmental impact: biocontrol, biostimulants, forest restoration, and nature-based solutions. Ticket range BRL 3M–16M (seed to Series A).",
+      "degree": 12,
       "portfolio_valuation_usd": 41.0
     },
     {
@@ -1434,7 +1434,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Latin American Venture Capital Association — industry body for VC/PE in Latin America. Not a direct investor; provides advocacy, research and LP/GP networking for the LATAM private capital ecosystem.",
       "country": "US",
-      "website": "",
+      "website": "https://lavca.org",
       "stages": [],
       "verticals": [],
       "geography": [
@@ -1501,7 +1501,7 @@ window.CAPITAL_ATLAS_DATA = {
       "ticket_max": 10000000.0,
       "aum_m": 2400.0,
       "lead_behavior": "lead",
-      "profile_blurb": "",
+      "profile_blurb": "Lowercarbon Capital is a San Francisco-based climate VC managing $1B+ across two funds. Founded by Chris Sacca. Invests in companies that meaningfully reduce or remove carbon: solar/wind infrastructure, industrial biotech (Solugen — enzyme-based chemicals, $2.1B valuation), carbon capture, sustainable food (plant-based, cultivated meat), and green materials. Notable LatAm portfolio: Solugen has Latin American industrial interest. Strong thesis overlap with BIO LATAM bioeconomy and sustainable chemistry sectors.",
       "degree": 2,
       "portfolio_valuation_usd": 10.0
     },
@@ -1588,7 +1588,7 @@ window.CAPITAL_ATLAS_DATA = {
       "ticket_max": 5000000.0,
       "aum_m": 38.0,
       "lead_behavior": "lead",
-      "profile_blurb": "",
+      "profile_blurb": "OneVC is a São Paulo-based seed VC founded by former operators from Rappi, Pipefy, and Rocket.Chat. Thesis: back exceptional LatAm operators solving large problems with technology. Portfolio includes Rappi, Pipefy, Rocket.Chat and 50+ other companies. Focus: B2B SaaS, marketplaces, fintech, and deeptech sectors with strong product-market fit signals. Provides hands-on operational support, US market entry assistance, and co-investment from Tier-1 US funds in follow-on rounds.",
       "degree": 3,
       "portfolio_valuation_usd": 8.0
     },
@@ -1602,7 +1602,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "US",
-      "website": "",
+      "website": "https://ospraie.com",
       "stages": [
         "seed",
         "series-a"
@@ -1688,11 +1688,11 @@ window.CAPITAL_ATLAS_DATA = {
       "geography": [
         "AR"
       ],
-      "ticket_min": null,
+      "ticket_min": 50000.0,
       "ticket_max": 100000.0,
-      "aum_m": null,
+      "aum_m": 5.0,
       "lead_behavior": "both",
-      "profile_blurb": "",
+      "profile_blurb": "Pampa Start is an Argentine accelerator providing structured cohort programs and seed capital for early-stage agtech and biotech companies. Backed by agribusiness families and institutional investors. Strong network with Argentine farming cooperatives and export companies that serve as pilot customers for portfolio startups.",
       "degree": 5,
       "portfolio_valuation_usd": 19.0
     },
@@ -1706,7 +1706,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "US",
-      "website": "",
+      "website": "https://pfgrowth.com",
       "stages": [],
       "verticals": [],
       "geography": [],
@@ -1794,7 +1794,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "ES",
-      "website": "",
+      "website": "https://www.positiveventures.com",
       "stages": [
         "seed",
         "series-a"
@@ -1844,7 +1844,7 @@ window.CAPITAL_ATLAS_DATA = {
       "ticket_max": 1500000.0,
       "aum_m": 26.0,
       "lead_behavior": "both",
-      "profile_blurb": "",
+      "profile_blurb": "Salkantay Ventures is a Lima-based VC managing $26M AUM with investments from pre-seed to Series A. Named after Salkantay mountain (Cusco), the fund reflects Peru's regional ambition. Primary thesis: technology companies addressing climate resilience, agtech, and digital infrastructure with strong Peruvian and LatAm traction. Connected to Peruvian government programs (Startup Perú) and mining/agriculture corporate networks. Active co-investor with IDB Lab and regional LatAm funds.",
       "degree": 1,
       "portfolio_valuation_usd": 10.0
     },
@@ -1904,11 +1904,11 @@ window.CAPITAL_ATLAS_DATA = {
         "AR",
         "LATAM"
       ],
-      "ticket_min": null,
+      "ticket_min": 50000.0,
       "ticket_max": 200000.0,
-      "aum_m": null,
+      "aum_m": 10.0,
       "lead_behavior": "both",
-      "profile_blurb": "",
+      "profile_blurb": "SF500 is an accelerator and micro-fund focused on science and technology startups with LatAm founders. It provides structured programs combining mentorship, product validation, investor access, and small equity checks. Strong network connecting LatAm founders to US accelerators and international VC ecosystem.",
       "degree": 24,
       "portfolio_valuation_usd": 89.8
     },
@@ -1965,7 +1965,7 @@ window.CAPITAL_ATLAS_DATA = {
       "ticket_max": 2000000.0,
       "aum_m": 1500.0,
       "lead_behavior": "lead",
-      "profile_blurb": "",
+      "profile_blurb": "SOSV is a global VC firm with $1.1B AUM managing specialized accelerator programs: IndieBio (biotech/life sciences, NYC and SF), HAX (hardware/deeptech, NY and Newark), Chinaccelerator, and MOX. Invests $550K pre-seed in 80–100 companies per year globally. In biotech: IndieBio focuses on human health, food, materials, and environmental biotech. Strong LatAm presence through IndieBio LATAM cohorts. Provides lab access, scientific mentorship, and US market entry. 800+ companies across 82 countries.",
       "degree": 2,
       "portfolio_valuation_usd": 2.5
     },
@@ -2034,7 +2034,7 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": 80.0,
       "lead_behavior": "lead",
       "profile_blurb": "SP Ventures es el referente regional de AgFood-ClimateTech: más de 10 años de track record, +$100M invertidos en +50 empresas en LATAM. Su tesis es estructural: la crisis climática y la seguridad alimentaria son el mismo problema visto desde distintos ángulos, y la solución pasa por reinventar la cadena de valor alimentaria del suelo al estante.\n\nComo lead investor con tickets hasta $10M en Serie A, cubre el tramo de crecimiento temprano con mayor escasez de capital en el ecosistema. Sus métricas de impacto son inusuales: 54 millones de hectáreas impactadas y $571M en crédito agrícola facilitado por sus portafolios — señales de que su capital moviliza recursos mucho mayores que el fondo mismo.\n\nEmpresas como Puna Bio (bioinputs) y Gênica (microbioma del suelo) reflejan su apuesta por la biología como plataforma de solución al problema agro-climático. Con el track record más sólido del segmento y presencia en toda la región, es uno de los actores con mayor credibilidad para anclar rondas bio-agro en LATAM.",
-      "degree": 45,
+      "degree": 46,
       "portfolio_valuation_usd": 203.5
     },
     {
@@ -2047,7 +2047,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "US",
-      "website": "",
+      "website": "https://www.svb.com",
       "stages": [],
       "verticals": [],
       "geography": [],
@@ -2083,7 +2083,7 @@ window.CAPITAL_ATLAS_DATA = {
         "AR",
         "LATAM"
       ],
-      "ticket_min": null,
+      "ticket_min": 100000.0,
       "ticket_max": 200000.0,
       "aum_m": 10.0,
       "lead_behavior": "both",
@@ -2133,7 +2133,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "US",
-      "website": "",
+      "website": "https://www.thirdsphere.com",
       "stages": [
         "seed",
         "series-a"
@@ -2205,7 +2205,7 @@ window.CAPITAL_ATLAS_DATA = {
       "ticket_max": 30000000.0,
       "aum_m": 2200.0,
       "lead_behavior": "lead",
-      "profile_blurb": "",
+      "profile_blurb": "Valor Capital Group is a New York and São Paulo-based VC firm that bridges Brazil and the US market. Manages $500M+ with a portfolio that has generated $13B+ in follow-on capital. Focus areas: fintech, enterprise SaaS, digital marketplaces, and deeptech companies with Brazil roots and global ambition. Deep LP network in the US enables portfolio companies to access US corporate partnerships and international capital.",
       "degree": 6,
       "portfolio_valuation_usd": 110.5
     },
@@ -2235,11 +2235,11 @@ window.CAPITAL_ATLAS_DATA = {
         "AR",
         "Global"
       ],
-      "ticket_min": null,
-      "ticket_max": null,
-      "aum_m": null,
+      "ticket_min": 500000.0,
+      "ticket_max": 5000000.0,
+      "aum_m": 60.0,
       "lead_behavior": "lead",
-      "profile_blurb": "",
+      "profile_blurb": "Varana Capital is a Denver-based VC managing 30+ portfolio companies in deep technology sectors: advanced materials, industrial biotech, AI, and energy. Notable Israeli connection through Chai 10X accelerator network, giving access to Israeli biotech and agtech pipeline. Portfolio companies include industrial and materials science startups. Not LatAm-focused — global deep tech investor with occasional LatAm exposure through cross-portfolio networks.",
       "degree": 1,
       "portfolio_valuation_usd": 100.0
     },
@@ -2397,11 +2397,11 @@ window.CAPITAL_ATLAS_DATA = {
         "BR",
         "LATAM"
       ],
-      "ticket_min": null,
-      "ticket_max": null,
-      "aum_m": null,
-      "lead_behavior": "",
-      "profile_blurb": "",
+      "ticket_min": 100000.0,
+      "ticket_max": 1000000.0,
+      "aum_m": 10.0,
+      "lead_behavior": "lead_or_follow",
+      "profile_blurb": "Barn Investimentos is a Brazilian seed fund focused on agtech and food systems startups. Provides seed capital and acceleration-style support to early-stage founders building technology for Brazilian agribusiness, food processing, and sustainability. Connected to major Brazilian agro-industrial players as strategic co-investors.",
       "degree": 4,
       "portfolio_valuation_usd": 16.0
     },
@@ -2429,11 +2429,11 @@ window.CAPITAL_ATLAS_DATA = {
         "CL",
         "LATAM"
       ],
-      "ticket_min": null,
-      "ticket_max": null,
-      "aum_m": null,
-      "lead_behavior": "",
-      "profile_blurb": "",
+      "ticket_min": 200000.0,
+      "ticket_max": 2000000.0,
+      "aum_m": 40.0,
+      "lead_behavior": "lead_or_follow",
+      "profile_blurb": "Fen Ventures is a Santiago and Miami-based VC with 3 funds targeting Spanish-speaking Latin America. Invests in seed and Series A tech companies including biotech, healthtech, agtech, and fintech sectors. Strong pipeline from Chilean university ecosystems (UC Chile, USACH) and government-backed programs (CORFO). Co-investment relationships with US seed funds seeking LatAm exposure. Provides active portfolio support including US market entry mentoring and regulatory navigation for health/biotech portfolio.",
       "degree": 1,
       "portfolio_valuation_usd": 1.0
     },
@@ -2462,12 +2462,12 @@ window.CAPITAL_ATLAS_DATA = {
         "BR",
         "LATAM"
       ],
-      "ticket_min": null,
-      "ticket_max": null,
+      "ticket_min": 500000.0,
+      "ticket_max": 15000000.0,
       "aum_m": 600.0,
-      "lead_behavior": "",
-      "profile_blurb": "",
-      "degree": 3,
+      "lead_behavior": "lead_or_follow",
+      "profile_blurb": "Monashees is Brazil's largest independent VC fund with $430M AUM and 140+ portfolio companies. Founded 2005, it has backed companies across fintech, health tech, proptech, agtech, and consumer. Known for operator-friendly terms, long holding periods, and deep Brazilian ecosystem connections including ABStartups and major accelerators. Strong LP base of global institutional investors.",
+      "degree": 4,
       "portfolio_valuation_usd": 29.0
     },
     {
@@ -2536,8 +2536,8 @@ window.CAPITAL_ATLAS_DATA = {
       "ticket_min": 1000000.0,
       "ticket_max": 20000000.0,
       "aum_m": 1000.0,
-      "lead_behavior": "",
-      "profile_blurb": "",
+      "lead_behavior": "lead_or_follow",
+      "profile_blurb": "Union Square Ventures (USV) is a New York-based VC managing $1B+ across funds since 2003. Investment thesis: back companies that create new networks by leveraging technological change, targeting 'the edge of large markets.' While primarily a tech VC (Twitter, Tumblr, Etsy, Duolingo, Coinbase), USV has made notable deep tech and biotech bets: Solugen (industrial biotech), Ginkgo Bioworks (synthetic biology). These represent USV's view on bio-enabled platforms as network businesses. Very selective — one of the most prominent US funds.",
       "degree": 1,
       "portfolio_valuation_usd": 10.0
     },
@@ -2569,8 +2569,8 @@ window.CAPITAL_ATLAS_DATA = {
       "ticket_min": 5000000.0,
       "ticket_max": 60000000.0,
       "aum_m": 186.0,
-      "lead_behavior": "",
-      "profile_blurb": "",
+      "lead_behavior": "lead_or_follow",
+      "profile_blurb": "Lightsmith Group manages $186M+ with backing from the Global Environment Facility (GEF) and institutional investors. Invests in companies providing climate adaptation solutions: agricultural analytics, water management, food supply chain resilience, weather intelligence, and nature-based risk tools. Portfolio includes The Climate Corporation (acquired by Bayer), Understory, and aWhere. Unique mandate: climate adaptation rather than mitigation, targeting companies that help industries manage climate risk rather than reduce emissions. Strong connections to World Bank, GEF, and climate policy networks.",
       "degree": 2,
       "portfolio_valuation_usd": 5.5
     },
@@ -2635,8 +2635,8 @@ window.CAPITAL_ATLAS_DATA = {
       "ticket_min": 3000000.0,
       "ticket_max": 50000000.0,
       "aum_m": 1100.0,
-      "lead_behavior": "",
-      "profile_blurb": "",
+      "lead_behavior": "lead",
+      "profile_blurb": "Aqua Capital is São Paulo-based PE managing $1.1B+ AUM across three funds, with Fund III closed at $450M. Invests in Brazilian agribusiness with 29 portfolio companies spanning input distribution, food processing, precision agriculture, and rural tech. Investment criteria: $50M-$500M revenues, defensible market position, scalable operations. Provides operational expertise and international market access. Not a startup fund — targets mature agribusinesses ready for institutional PE governance.",
       "degree": 2,
       "portfolio_valuation_usd": 5.5
     },
@@ -2669,8 +2669,8 @@ window.CAPITAL_ATLAS_DATA = {
       "ticket_min": 500000.0,
       "ticket_max": 5000000.0,
       "aum_m": 35.0,
-      "lead_behavior": "",
-      "profile_blurb": "",
+      "lead_behavior": "lead_or_follow",
+      "profile_blurb": "Carao Ventures is a San José, Costa Rica-based VC with 40+ portfolio companies across Central America and the Northern Andes. Invests in B2B software, fintech, healthtech, and agtech companies targeting Spanish-speaking LatAm markets. Provides access to Central American corporate networks (banking, retail, agriculture) as pilot customers. Known for founder-friendly terms, long-term orientation, and strong co-investment with US seed funds accessing LatAm.",
       "degree": 1,
       "portfolio_valuation_usd": 100.0
     },
@@ -2733,9 +2733,9 @@ window.CAPITAL_ATLAS_DATA = {
       ],
       "ticket_min": 500000.0,
       "ticket_max": 10000000.0,
-      "aum_m": null,
-      "lead_behavior": "",
-      "profile_blurb": "",
+      "aum_m": 0.0,
+      "lead_behavior": "lead_or_follow",
+      "profile_blurb": "Arauco Ventures is the innovation and investment arm of ARAUCO, one of the world's largest wood products companies (pulp, panels, lumber). Investment thesis: technologies transforming forests and wood-based value chains — including forest genetics, precision forestry, wood bioprocessing, carbon markets, and biodiversity monitoring. Portfolio includes Lemu (carbon and biodiversity SaaS) and TreeCo (acquired 2023). Provides startup access to Arauco's 10M+ hectare land base and industrial operations as pilot customers.",
       "degree": 1,
       "portfolio_valuation_usd": 10.0
     },
@@ -2767,9 +2767,9 @@ window.CAPITAL_ATLAS_DATA = {
       ],
       "ticket_min": 500000.0,
       "ticket_max": 5000000.0,
-      "aum_m": null,
-      "lead_behavior": "",
-      "profile_blurb": "",
+      "aum_m": 15.0,
+      "lead_behavior": "lead_or_follow",
+      "profile_blurb": "Kayyak Ventures is a Santiago-based VC investing at pre-seed and seed in Chilean and LatAm tech startups. Generalist approach across B2B software, fintech, proptech, and digital consumer. Connected to the Start-Up Chile alumni network and Chilean university tech transfer programs. Provides local market expertise, government program navigation (CORFO, Innova Chile), and bridge capital to international VC rounds. Typical investment: USD 100k-500k at pre-seed/seed.",
       "degree": 1,
       "portfolio_valuation_usd": 4.0
     },
@@ -2801,9 +2801,9 @@ window.CAPITAL_ATLAS_DATA = {
       ],
       "ticket_min": 5000000.0,
       "ticket_max": 50000000.0,
-      "aum_m": null,
-      "lead_behavior": "",
-      "profile_blurb": "",
+      "aum_m": 0.0,
+      "lead_behavior": "lead_or_follow",
+      "profile_blurb": "Morningside Ventures is the investment arm of the Chan family of Hong Kong (Morningside Group), founded in 1986. Operates as a family office with permanent capital — no fixed fund life — enabling very long-term biotech bets. Portfolio of 175+ companies over 22 years, with 10+ new investments annually. Focus: life sciences, biotech, digital health, AI, and materials. Deep science expertise; invests from seed through IPO. Active in Greater China, North America, and Europe. Structural advantage in biotech: can hold companies through 10-15 year development cycles without LP pressure.",
       "degree": 1,
       "portfolio_valuation_usd": 4.0
     },
@@ -2835,9 +2835,9 @@ window.CAPITAL_ATLAS_DATA = {
       ],
       "ticket_min": 300000.0,
       "ticket_max": 3000000.0,
-      "aum_m": null,
-      "lead_behavior": "",
-      "profile_blurb": "",
+      "aum_m": 30.0,
+      "lead_behavior": "lead_or_follow",
+      "profile_blurb": "Fondo Alerce VC is a Santiago-based fund investing in Chilean deep tech startups with global scalability. Focus sectors: precision agriculture, food technology, biotechnology, mining tech, and cleantech. Connected to PUC Chile, Universidad de Chile, and Austral University through deal sourcing and technical validation. Portfolio includes The Live Green Co (food tech unicorn), VitaCrop, and others. Backed by CORFO and institutional Chilean investors. Typical tickets: USD 200k-1.5M at pre-seed to seed.",
       "degree": 2,
       "portfolio_valuation_usd": 75.0
     },
@@ -2872,9 +2872,9 @@ window.CAPITAL_ATLAS_DATA = {
       ],
       "ticket_min": 500000.0,
       "ticket_max": 15000000.0,
-      "aum_m": null,
-      "lead_behavior": "",
-      "profile_blurb": "",
+      "aum_m": 0.0,
+      "lead_behavior": "lead_or_follow",
+      "profile_blurb": "Corteva Catalyst is the corporate venture and open innovation arm of Corteva Agriscience (NYSE: CTVA), one of the world's largest agrichemical and seed companies. Invests in 5–7 startups per year across four verticals: genome editing, biologicals and natural products, ag technology platforms, and decision science. Strategic mandate: identify and commercialize external innovations, with portfolio companies viewed as acquisition or licensing pipeline. Ticket size undisclosed; team of <10 with M&A and legal backing.",
       "degree": 2,
       "portfolio_valuation_usd": 25.0
     },
@@ -2979,10 +2979,14 @@ window.CAPITAL_ATLAS_DATA = {
       "investor_subtype": "development_finance",
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
-      "thesis": "",
+      "thesis": "Brazil's national development bank. Provides equity, debt, and grants to innovative companies through BNDES Garagem, Fundo Criatec, and BNDES Inovação programs.",
       "country": "BR",
       "website": "https://www.bndes.gov.br",
-      "stages": [],
+      "stages": [
+        "seed",
+        "series-a",
+        "series-b"
+      ],
       "verticals": [
         "infrastructure",
         "biotech",
@@ -2991,11 +2995,11 @@ window.CAPITAL_ATLAS_DATA = {
       "geography": [
         "BR"
       ],
-      "ticket_min": null,
-      "ticket_max": null,
-      "aum_m": null,
-      "lead_behavior": "",
-      "profile_blurb": "",
+      "ticket_min": 200000.0,
+      "ticket_max": 5000000.0,
+      "aum_m": 0.0,
+      "lead_behavior": "follow",
+      "profile_blurb": "BNDES (Banco Nacional de Desenvolvimento Econômico e Social) is Brazil's largest development bank with R$1T+ AUM. For startups and innovation, operates BNDES Garagem (accelerator hubs in Rio and São Paulo), Canal MPME (direct startup financing), and co-investment programs with VC funds. Active in agtech, bioeconomy, cleantech, and digital health aligned with Brazil's industrial development priorities. Patient capital with flexible return expectations and strong government alignment. Not purely return-driven.",
       "degree": 2,
       "portfolio_valuation_usd": 16.5
     },
@@ -3301,12 +3305,12 @@ window.CAPITAL_ATLAS_DATA = {
         "BR",
         "LATAM"
       ],
-      "ticket_min": null,
-      "ticket_max": null,
-      "aum_m": null,
-      "lead_behavior": "",
-      "profile_blurb": "",
-      "degree": 1,
+      "ticket_min": 200000.0,
+      "ticket_max": 5000000.0,
+      "aum_m": 375.0,
+      "lead_behavior": "lead_or_follow",
+      "profile_blurb": "Canary is a leading São Paulo-based early-stage VC founded in 2017. Manages four funds totaling $375M+ (Fund IV: $150M). Portfolio of 135+ companies including unicorns Buser and others. Focus: seed and Series A in fintech, crypto, climate tech, health, consumer, B2B, and enterprise. Provides Canary Spark (founder community), competitive analysis tools, and access to a 3-unicorn portfolio network. One of Brazil's most active and sought-after seed investors with fast decision-making and deep founder networks.",
+      "degree": 2,
       "portfolio_valuation_usd": 1.5
     },
     {
@@ -3333,11 +3337,11 @@ window.CAPITAL_ATLAS_DATA = {
         "BR",
         "LATAM"
       ],
-      "ticket_min": null,
-      "ticket_max": null,
-      "aum_m": null,
-      "lead_behavior": "",
-      "profile_blurb": "",
+      "ticket_min": 500000.0,
+      "ticket_max": 5000000.0,
+      "aum_m": 100.0,
+      "lead_behavior": "lead_or_follow",
+      "profile_blurb": "Atlantico is a São Paulo-based VC founded in 2019 with $500k–$5M checks. Publishes influential annual 'Latin America Digital Transformation Reports' that position it as the leading analyst of LatAm tech trends. Portfolio of 22+ companies across enterprise applications, fintech, and food/agtech. Notable investments: FestaLab, Tuna Payments. Strong digital-native thesis: backs founders using data, platforms, and networks to reshape large incumbent-dominated markets in Brazil and LatAm.",
       "degree": 1,
       "portfolio_valuation_usd": 1.5
     },
@@ -3351,7 +3355,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "BR",
-      "website": "",
+      "website": "https://www.dynamo.com.br",
       "stages": [],
       "verticals": [
         "equities",
@@ -3376,10 +3380,13 @@ window.CAPITAL_ATLAS_DATA = {
       "investor_subtype": "vc",
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
-      "thesis": "",
+      "thesis": "Brazilian independent asset manager combining macro hedge funds and private equity. PE division takes minority growth positions in mid-to-large Brazilian companies.",
       "country": "BR",
-      "website": "",
-      "stages": [],
+      "website": "https://www.gaveainvest.com.br",
+      "stages": [
+        "growth",
+        "pe"
+      ],
       "verticals": [
         "macro",
         "pe",
@@ -3388,11 +3395,11 @@ window.CAPITAL_ATLAS_DATA = {
       "geography": [
         "BR"
       ],
-      "ticket_min": null,
-      "ticket_max": null,
-      "aum_m": null,
-      "lead_behavior": "",
-      "profile_blurb": "",
+      "ticket_min": 5000000.0,
+      "ticket_max": 50000000.0,
+      "aum_m": 3000.0,
+      "lead_behavior": "follow",
+      "profile_blurb": "Gávea Investimentos was founded in 2003 by Arminio Fraga (former Banco Central president) in Rio de Janeiro. Manages $3B+ AUM across hedge funds and PE. The PE division has deployed ~$5B since 2006 in growth equity minority investments in leading Brazilian companies. PE focus: consumer, financial services, healthcare, and infrastructure. Investment thesis: high-quality management teams in Brazilian companies with defensible market positions. Not a typical VC — focuses on larger, more mature companies.",
       "degree": 2,
       "portfolio_valuation_usd": 11.5
     },
@@ -3404,10 +3411,14 @@ window.CAPITAL_ATLAS_DATA = {
       "investor_subtype": "family_office",
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
-      "thesis": "",
+      "thesis": "Brazilian PE and VC firm founded by former Banco Garantia partners. Invests in private equity, venture capital, and real estate with focus on healthcare, education, and agtech.",
       "country": "BR",
-      "website": "",
-      "stages": [],
+      "website": "https://lanxcapital.com.br",
+      "stages": [
+        "series-a",
+        "series-b",
+        "growth"
+      ],
       "verticals": [
         "impact",
         "growth"
@@ -3415,11 +3426,11 @@ window.CAPITAL_ATLAS_DATA = {
       "geography": [
         "BR"
       ],
-      "ticket_min": null,
-      "ticket_max": null,
-      "aum_m": null,
-      "lead_behavior": "",
-      "profile_blurb": "",
+      "ticket_min": 1000000.0,
+      "ticket_max": 15000000.0,
+      "aum_m": 200.0,
+      "lead_behavior": "lead_or_follow",
+      "profile_blurb": "Lanx Capital was founded in 2003 by former Banco Garantia partners Marcelo Barbará and Marcelo Medeiros. Manages private equity, VC, and real estate across 22+ portfolio companies including Wildlife Studios and Grão Direto (agtech marketplace). Investment thesis: back high-quality management teams in Brazil's healthcare, education, agribusiness, and digital sectors. Recent focus: AI applications, carbon removal, and nature-based solutions (per podcast appearances of founding partners). Not a pure agtech fund — generalist with Brazilian industrial roots.",
       "degree": 1,
       "portfolio_valuation_usd": 1.5
     },
@@ -3431,10 +3442,14 @@ window.CAPITAL_ATLAS_DATA = {
       "investor_subtype": "development_finance",
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
-      "thesis": "",
+      "thesis": "Latin America's development bank. Provides equity co-investment in VC funds and direct project financing to catalyze innovation and sustainable development across 18 member countries.",
       "country": "CO",
-      "website": "",
-      "stages": [],
+      "website": "https://www.caf.com",
+      "stages": [
+        "series-a",
+        "series-b",
+        "growth"
+      ],
       "verticals": [
         "impact",
         "deeptech"
@@ -3442,11 +3457,11 @@ window.CAPITAL_ATLAS_DATA = {
       "geography": [
         "LATAM"
       ],
-      "ticket_min": null,
-      "ticket_max": null,
-      "aum_m": null,
-      "lead_behavior": "",
-      "profile_blurb": "",
+      "ticket_min": 1000000.0,
+      "ticket_max": 50000000.0,
+      "aum_m": 0.0,
+      "lead_behavior": "follow",
+      "profile_blurb": "CAF (Corporación Andina de Fomento) is the Development Bank of Latin America and the Caribbean, with 18 member countries. Finances productive infrastructure, sustainable development, and innovation through equity, debt, and grants. In venture: LP positions in VC funds (e.g., Fundo de Inovação Paulista, Brazil), co-investment in agribusiness and bioeconomy projects, and direct financing to mid-market companies with developmental impact. Not a typical VC — prioritizes public policy alignment and regional integration alongside financial return.",
       "degree": 1,
       "portfolio_valuation_usd": 10.0
     },
@@ -3458,10 +3473,13 @@ window.CAPITAL_ATLAS_DATA = {
       "investor_subtype": "vc",
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
-      "thesis": "",
+      "thesis": "New York VC investing in high-growth consumer and internet companies during their breakout phase. $2.65B AUM, $5-50M initial checks.",
       "country": "US",
-      "website": "",
-      "stages": [],
+      "website": "https://www.leftlane.com",
+      "stages": [
+        "series-a",
+        "series-b"
+      ],
       "verticals": [
         "consumer",
         "healthcare"
@@ -3470,11 +3488,11 @@ window.CAPITAL_ATLAS_DATA = {
         "US",
         "LATAM"
       ],
-      "ticket_min": null,
-      "ticket_max": null,
-      "aum_m": null,
-      "lead_behavior": "",
-      "profile_blurb": "",
+      "ticket_min": 5000000.0,
+      "ticket_max": 50000000.0,
+      "aum_m": 2650.0,
+      "lead_behavior": "lead_or_follow",
+      "profile_blurb": "Left Lane Capital is a Brooklyn/London-based VC founded in 2019 by Harley Miller (ex-Insight Partners). Manages $2.65B AUM with a portfolio of 89 companies including 10 unicorns and 4 IPOs. Thesis: invest in consumer and internet businesses with strong unit economics and loyal customer bases during their breakout growth phase. Differentiates through deep transaction-level data analysis to underwrite consumer durability. $5-50M initial checks globally. Portfolio: GoStudent, M1 Finance, Masterworks, Wayflyer, Blank Street. Not biotech/agtech focused — relevant to portfolio companies building consumer health or food tech.",
       "degree": 1,
       "portfolio_valuation_usd": 1.5
     },
@@ -3513,10 +3531,13 @@ window.CAPITAL_ATLAS_DATA = {
       "investor_subtype": "vc",
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
-      "thesis": "",
+      "thesis": "Brazilian early-stage VC (BossaNova Investimentos). Invests in seed and pre-seed startups across technology sectors including biotech, healthtech, and agtech.",
       "country": "BR",
-      "website": "",
-      "stages": [],
+      "website": "https://bossanova.vc",
+      "stages": [
+        "pre-seed",
+        "seed"
+      ],
       "verticals": [
         "deeptech",
         "biotech"
@@ -3524,11 +3545,11 @@ window.CAPITAL_ATLAS_DATA = {
       "geography": [
         "BR"
       ],
-      "ticket_min": null,
-      "ticket_max": null,
-      "aum_m": null,
-      "lead_behavior": "",
-      "profile_blurb": "",
+      "ticket_min": 100000.0,
+      "ticket_max": 500000.0,
+      "aum_m": 50.0,
+      "lead_behavior": "follow",
+      "profile_blurb": "BossaNova Investimentos (Bossa Invest) is one of Brazil's most active early-stage VCs, with 200+ portfolio companies across technology sectors. Known for high-volume seed investing with a portfolio-driven approach. In biotech and agtech, invests in startups with digital components: precision agriculture, digital health, and biotech-enabled platforms. Provides founder networks, investor access, and Brazilian corporate co-investment.",
       "degree": 4,
       "portfolio_valuation_usd": 23.0
     },
@@ -3567,10 +3588,13 @@ window.CAPITAL_ATLAS_DATA = {
       "investor_subtype": "vc",
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
-      "thesis": "",
+      "thesis": "Chilean alternative asset manager with $250M+ AUM across real estate, PE, private debt, and venture capital. VC component focuses on Chilean tech and deeptech.",
       "country": "CL",
-      "website": "",
-      "stages": [],
+      "website": "https://venturance.cl",
+      "stages": [
+        "seed",
+        "series-a"
+      ],
       "verticals": [
         "lifesciences",
         "medtech"
@@ -3578,11 +3602,11 @@ window.CAPITAL_ATLAS_DATA = {
       "geography": [
         "CL"
       ],
-      "ticket_min": null,
-      "ticket_max": null,
-      "aum_m": null,
-      "lead_behavior": "",
-      "profile_blurb": "",
+      "ticket_min": 200000.0,
+      "ticket_max": 3000000.0,
+      "aum_m": 250.0,
+      "lead_behavior": "follow",
+      "profile_blurb": "Venturance Alternative Assets is a Vitacura (Santiago)-based asset manager founded in 2010 with $250M+ AUM. Manages a diversified portfolio across real estate, private equity, private debt, and venture capital. The VC component invests in Chilean and LatAm technology companies including agtech, cleantech, and fintech. Provides access to Chilean high-net-worth investor networks and family office co-investment. Not a pure VC — primarily an alternative assets manager with VC as one component. Strong Santiago financial ecosystem connections.",
       "degree": 1,
       "portfolio_valuation_usd": 50.0
     },
@@ -3594,10 +3618,14 @@ window.CAPITAL_ATLAS_DATA = {
       "investor_subtype": "development_finance",
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
-      "thesis": "",
+      "thesis": "World Bank Group's private sector arm. $3B+ in venture capital commitments to tech startups and VC funds in emerging markets, including agtech, health, and climate in LatAm.",
       "country": "US",
-      "website": "",
-      "stages": [],
+      "website": "https://www.ifc.org",
+      "stages": [
+        "seed",
+        "series-a",
+        "series-b"
+      ],
       "verticals": [
         "growth",
         "impact"
@@ -3605,11 +3633,11 @@ window.CAPITAL_ATLAS_DATA = {
       "geography": [
         "GLOBAL"
       ],
-      "ticket_min": null,
-      "ticket_max": null,
-      "aum_m": null,
-      "lead_behavior": "",
-      "profile_blurb": "",
+      "ticket_min": 500000.0,
+      "ticket_max": 20000000.0,
+      "aum_m": 0.0,
+      "lead_behavior": "follow",
+      "profile_blurb": "IFC (International Finance Corporation) is the World Bank Group's private sector investment institution, with $71.7B committed in FY2025. VC program ($3B+ cumulative) invests equity in both VC funds and directly in startups in emerging markets. In LatAm: agtech, fintech, health tech, climate tech, and digital infrastructure. Provides equity, quasi-equity, and venture lending alongside IFC's regulatory facilitation and DFI co-investment network. Strong LatAm presence through country offices in 20+ countries.",
       "degree": 1,
       "portfolio_valuation_usd": 100.0
     },
@@ -3621,10 +3649,13 @@ window.CAPITAL_ATLAS_DATA = {
       "investor_subtype": "accelerator",
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
-      "thesis": "",
+      "thesis": "Brazilian biotech ecosystem organization and fund (Biominas Brasil). Manages the largest Brazilian biotech hub in Belo Horizonte and provides seed investment to life sciences startups.",
       "country": "BR",
-      "website": "",
-      "stages": [],
+      "website": "https://biominas.org.br",
+      "stages": [
+        "pre-seed",
+        "seed"
+      ],
       "verticals": [
         "biotech",
         "lifesciences"
@@ -3632,11 +3663,11 @@ window.CAPITAL_ATLAS_DATA = {
       "geography": [
         "BR"
       ],
-      "ticket_min": null,
-      "ticket_max": null,
-      "aum_m": null,
-      "lead_behavior": "",
-      "profile_blurb": "",
+      "ticket_min": 50000.0,
+      "ticket_max": 300000.0,
+      "aum_m": 15.0,
+      "lead_behavior": "lead",
+      "profile_blurb": "Biominas Brasil operates the largest biotech hub in Latin America, located in Belo Horizonte, Minas Gerais. Manages a biotech incubator, accelerator, and early-stage fund. Portfolio spans pharma, diagnostics, medical devices, agrochemical biotech, and industrial biotech. Provides lab infrastructure, regulatory support, and seed capital to early-stage life sciences startups. Connected to UFMG, USP, and UNIFESP research programs.",
       "degree": 3,
       "portfolio_valuation_usd": 11.0
     },
@@ -3648,10 +3679,13 @@ window.CAPITAL_ATLAS_DATA = {
       "investor_subtype": "corporate_vc",
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
-      "thesis": "",
+      "thesis": "Braskem's corporate venture arm. $150M committed to startups in circular economy, carbon neutrality, biotechnology, new materials, and smart manufacturing.",
       "country": "BE",
-      "website": "",
-      "stages": [],
+      "website": "https://oxygea.com.br",
+      "stages": [
+        "seed",
+        "series-a"
+      ],
       "verticals": [
         "sustainability",
         "circulareconomy"
@@ -3659,11 +3693,11 @@ window.CAPITAL_ATLAS_DATA = {
       "geography": [
         "GLOBAL"
       ],
-      "ticket_min": null,
-      "ticket_max": null,
-      "aum_m": null,
-      "lead_behavior": "",
-      "profile_blurb": "",
+      "ticket_min": 500000.0,
+      "ticket_max": 5000000.0,
+      "aum_m": 150.0,
+      "lead_behavior": "lead_or_follow",
+      "profile_blurb": "Oxygea is the corporate venture capital fund of Braskem, Brazil's largest petrochemical company ($12B revenue). Founded in 2022 with $150M commitment for CVC and venture building. Investment focus: circular economy, carbon neutrality, biotechnology, nanotechnology, new materials, and smart manufacturing. Portfolio: Multiledgers, AssetWatch, Circular. Strategic mandate: identify technologies that transform Braskem's industrial operations toward sustainability and bioeconomy. Provides portfolio companies access to Braskem's industrial scale, R&D infrastructure, and global distribution.",
       "degree": 1,
       "portfolio_valuation_usd": 5.0
     },
@@ -3675,10 +3709,13 @@ window.CAPITAL_ATLAS_DATA = {
       "investor_subtype": "vc",
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
-      "thesis": "",
+      "thesis": "Brazilian concentrated-portfolio VC investing in AI-native and software-driven companies built by exceptional LatAm founders.",
       "country": "BR",
-      "website": "",
-      "stages": [],
+      "website": "https://alexia.vc",
+      "stages": [
+        "seed",
+        "series-a"
+      ],
       "verticals": [
         "deeptech",
         "ai"
@@ -3686,11 +3723,11 @@ window.CAPITAL_ATLAS_DATA = {
       "geography": [
         "BR"
       ],
-      "ticket_min": null,
-      "ticket_max": null,
-      "aum_m": null,
-      "lead_behavior": "",
-      "profile_blurb": "",
+      "ticket_min": 250000.0,
+      "ticket_max": 3000000.0,
+      "aum_m": 40.0,
+      "lead_behavior": "lead_or_follow",
+      "profile_blurb": "Alexia Ventures is a São Paulo-based seed and Series A VC founded in 2019. High-conviction, concentrated portfolio approach (20-25 companies per fund). Thesis: disruptive business models driven by software platforms, AI, and data. Focus: B2B SaaS, vertical software, fintech, and deep tech with strong Brazilian/LatAm teams. Avoids hype cycles; prioritizes capital efficiency and strong unit economics. Active investor community (Alexia Community) for portfolio network effects.",
       "degree": 1,
       "portfolio_valuation_usd": 10.0
     },
@@ -3702,10 +3739,14 @@ window.CAPITAL_ATLAS_DATA = {
       "investor_subtype": "vc",
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
-      "thesis": "",
+      "thesis": "Li Ka-shing's Hong Kong-based family office VC. Backs transformative deep science and technology including AI, biotech, synthetic biology, and food systems.",
       "country": "HK",
-      "website": "",
-      "stages": [],
+      "website": "https://www.horizonsventures.com",
+      "stages": [
+        "seed",
+        "series-a",
+        "series-b"
+      ],
       "verticals": [
         "deeptech",
         "agbio"
@@ -3714,11 +3755,11 @@ window.CAPITAL_ATLAS_DATA = {
         "HK",
         "GLOBAL"
       ],
-      "ticket_min": null,
-      "ticket_max": null,
-      "aum_m": null,
-      "lead_behavior": "",
-      "profile_blurb": "",
+      "ticket_min": 500000.0,
+      "ticket_max": 20000000.0,
+      "aum_m": 0.0,
+      "lead_behavior": "lead_or_follow",
+      "profile_blurb": "Horizons Ventures is the venture capital arm of Li Ka-shing (CK Hutchison Holdings), one of the world's wealthiest families. Invests in early-stage and mid-stage companies at the frontier of deep science: AI (DeepMind, early investor), biotech (Ansa Biotechnologies), food tech (Impossible Foods), fintech, and quantum computing. No fixed fund life — permanent capital with very long-term horizon. Recent expansions: Singapore office (2024), increased biotech conviction. Notable LatAm angle: Impossible Foods and similar alt-protein portfolio companies active in Brazil and Mexico.",
       "degree": 1,
       "portfolio_valuation_usd": 100.0
     },
@@ -3732,7 +3773,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "US",
-      "website": "",
+      "website": "https://www.hawthornefoodventures.com",
       "stages": [],
       "verticals": [
         "food",
@@ -3784,10 +3825,14 @@ window.CAPITAL_ATLAS_DATA = {
       "investor_subtype": "corporate_vc",
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
-      "thesis": "",
+      "thesis": "French diagnostics company (IVD leader) investing in innovative diagnostic, genomics, and infectious disease startups through a corporate venture program.",
       "country": "FR",
-      "website": "",
-      "stages": [],
+      "website": "https://www.biomerieux.com",
+      "stages": [
+        "seed",
+        "series-a",
+        "series-b"
+      ],
       "verticals": [
         "diagnostics",
         "biotech"
@@ -3795,11 +3840,11 @@ window.CAPITAL_ATLAS_DATA = {
       "geography": [
         "GLOBAL"
       ],
-      "ticket_min": null,
-      "ticket_max": null,
-      "aum_m": null,
-      "lead_behavior": "",
-      "profile_blurb": "",
+      "ticket_min": 500000.0,
+      "ticket_max": 10000000.0,
+      "aum_m": 0.0,
+      "lead_behavior": "follow",
+      "profile_blurb": "bioMérieux is a Lyon-based global leader in in-vitro diagnostics (IVD) with 13,000+ employees and €3.6B revenue. Corporate venture investments focus on diagnostics innovation: infectious diseases, genomics, clinical microbiology, and AI-powered diagnostic tools. Portfolio includes SpinChip Diagnostics, Plair, and Nanopore. Strategic investor seeking technology access and co-development partnerships, not purely financial return. Provides portfolio companies access to bioMérieux's global distribution network and regulatory expertise.",
       "degree": 1,
       "portfolio_valuation_usd": 10.0
     },
@@ -3811,10 +3856,13 @@ window.CAPITAL_ATLAS_DATA = {
       "investor_subtype": "vc",
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
-      "thesis": "",
+      "thesis": "Brazilian early-stage VC investing in best-in-class founders across enterprise software, agtech, climate, and consumer sectors.",
       "country": "BR",
-      "website": "",
-      "stages": [],
+      "website": "https://www.domoinvest.com.br",
+      "stages": [
+        "seed",
+        "series-a"
+      ],
       "verticals": [
         "agtech",
         "foodtech"
@@ -3822,11 +3870,11 @@ window.CAPITAL_ATLAS_DATA = {
       "geography": [
         "BR"
       ],
-      "ticket_min": null,
-      "ticket_max": null,
-      "aum_m": null,
-      "lead_behavior": "",
-      "profile_blurb": "",
+      "ticket_min": 200000.0,
+      "ticket_max": 3000000.0,
+      "aum_m": 50.0,
+      "lead_behavior": "lead_or_follow",
+      "profile_blurb": "DOMO.VC is a São Paulo-based venture capital firm founded in 2016 with 105+ portfolio companies and 1 unicorn (Neon). Invests at seed and Series A in Brazilian and LatAm technology startups. Top sectors: enterprise applications, consumer, agtech, climate, fintech, and health. Known for rapid term sheets, active portfolio support, and strong LP base of institutional and strategic investors. Co-invests frequently with Canary, Monashees, and Atlantico.",
       "degree": 2,
       "portfolio_valuation_usd": 6.5
     },
@@ -3840,7 +3888,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "BR",
-      "website": "",
+      "website": "https://www.bradesco.com.br",
       "stages": [],
       "verticals": [
         "generalist"
@@ -3864,10 +3912,14 @@ window.CAPITAL_ATLAS_DATA = {
       "investor_subtype": "vc",
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
-      "thesis": "",
+      "thesis": "Brussels-based family-backed VC investing in climate entrepreneurs across agtech, foodtech, and cleantech from pre-seed to Series A.",
       "country": "BE",
-      "website": "",
-      "stages": [],
+      "website": "https://www.waterlemon.vc",
+      "stages": [
+        "pre-seed",
+        "seed",
+        "series-a"
+      ],
       "verticals": [
         "agtech",
         "foodtech",
@@ -3877,11 +3929,11 @@ window.CAPITAL_ATLAS_DATA = {
         "BE",
         "LATAM"
       ],
-      "ticket_min": null,
-      "ticket_max": null,
-      "aum_m": null,
-      "lead_behavior": "",
-      "profile_blurb": "",
+      "ticket_min": 300000.0,
+      "ticket_max": 1500000.0,
+      "aum_m": 30.0,
+      "lead_behavior": "lead_or_follow",
+      "profile_blurb": "Waterlemon Ventures is a Brussels, Belgium-based family office VC focused on climate innovation. Invests €300k–€1.5M from pre-seed to Series A in agtech, foodtech, and cleantech. Portfolio of 17 companies including Exacta BioScience (precision biocontrol), Ensol Group, and Beans. Mission: empower climate entrepreneurs with hands-on investor support. Strong connection to European deep tech and sustainable food ecosystems. Relevant to BIO LATAM as a European climate VC with agtech portfolio including biocontrol and food biotech.",
       "degree": 1,
       "portfolio_valuation_usd": 1.5
     },
@@ -3893,10 +3945,13 @@ window.CAPITAL_ATLAS_DATA = {
       "investor_subtype": "vc",
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
-      "thesis": "",
+      "thesis": "Global aquaculture and seafood VC. Invests in technology companies transforming sustainable seafood production across the full aquaculture value chain.",
       "country": "IE",
-      "website": "",
-      "stages": [],
+      "website": "https://www.hatch.blue",
+      "stages": [
+        "seed",
+        "series-a"
+      ],
       "verticals": [
         "aquaculture",
         "blueeconomy"
@@ -3904,11 +3959,11 @@ window.CAPITAL_ATLAS_DATA = {
       "geography": [
         "GLOBAL"
       ],
-      "ticket_min": null,
-      "ticket_max": null,
-      "aum_m": null,
-      "lead_behavior": "",
-      "profile_blurb": "",
+      "ticket_min": 200000.0,
+      "ticket_max": 3000000.0,
+      "aum_m": 60.0,
+      "lead_behavior": "lead_or_follow",
+      "profile_blurb": "Hatch Blue is a Dublin-based VC focused exclusively on aquaculture and sustainable seafood technology. Operates multiple funds with a global portfolio spanning Chile, Norway, Ecuador, and Asia-Pacific — the world's major aquaculture regions. Focus: fish health (vaccines, diagnostics), precision feeding, water quality, genetics, processing automation, and alternative aquafeed. Chile and Ecuador portfolios align directly with BIO LATAM salmon and shrimp farming sectors. Provides access to Hatch's global aquaculture corporate network.",
       "degree": 1,
       "portfolio_valuation_usd": 0.8
     },
@@ -3920,10 +3975,14 @@ window.CAPITAL_ATLAS_DATA = {
       "investor_subtype": "corporate_vc",
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
-      "thesis": "",
+      "thesis": "Brazilian pharmaceutical company with $100M corporate venture fund targeting early-stage biotech in drug discovery: rare diseases, oncology, neurodegeneration, and autoimmune.",
       "country": "BR",
-      "website": "",
-      "stages": [],
+      "website": "https://eurofarma.com",
+      "stages": [
+        "seed",
+        "series-a",
+        "series-b"
+      ],
       "verticals": [
         "pharma",
         "biotech"
@@ -3931,11 +3990,11 @@ window.CAPITAL_ATLAS_DATA = {
       "geography": [
         "BR"
       ],
-      "ticket_min": null,
-      "ticket_max": null,
-      "aum_m": null,
-      "lead_behavior": "",
-      "profile_blurb": "",
+      "ticket_min": 1000000.0,
+      "ticket_max": 10000000.0,
+      "aum_m": 100.0,
+      "lead_behavior": "lead_or_follow",
+      "profile_blurb": "Eurofarma is Brazil's largest Brazilian-owned pharma company with revenues of $2B+ and presence across 20 LatAm countries. In 2023, launched Eurofarma Ventures with $100M earmarked for 25 biotech startups over 5 years. Investment focus: early-stage drug discovery in oncology, rare diseases, neurodegenerative and autoimmune conditions. Prioritizes precision medicine, gene editing, novel targets, and AI-assisted drug discovery. Portfolio includes PsiThera, Abcuro, Abata Therapeutics. Provides LatAm commercialization pathway for portfolio companies.",
       "degree": 1,
       "portfolio_valuation_usd": 10.0
     },
@@ -3947,10 +4006,12 @@ window.CAPITAL_ATLAS_DATA = {
       "investor_subtype": "accelerator",
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
-      "thesis": "",
+      "thesis": "Argentine accelerator and seed fund based in Resistencia, Chaco. Backs early-stage agtech and edtech startups from underrepresented regions of Argentina.",
       "country": "AR",
-      "website": "",
-      "stages": [],
+      "website": "https://laturbina.com.ar",
+      "stages": [
+        "pre-seed"
+      ],
       "verticals": [
         "biotech",
         "deeptech"
@@ -3958,11 +4019,11 @@ window.CAPITAL_ATLAS_DATA = {
       "geography": [
         "AR"
       ],
-      "ticket_min": null,
-      "ticket_max": null,
-      "aum_m": null,
-      "lead_behavior": "",
-      "profile_blurb": "",
+      "ticket_min": 20000.0,
+      "ticket_max": 200000.0,
+      "aum_m": 5.0,
+      "lead_behavior": "lead",
+      "profile_blurb": "La Turbina is a Resistencia (Chaco)-based startup accelerator and co-working network founded in 2017. Provides pre-seed capital and mentoring to tech startups including agtech, edtech, and enterprise software. Portfolio includes Wisboo and AgriRed. Unique positioning: invests in non-traditional LatAm tech hubs (NEA Argentina), connecting regional founders with Buenos Aires and international ecosystems. Backed by Argentine government innovation programs and corporate sponsors from the agro-industrial sector.",
       "degree": 1,
       "portfolio_valuation_usd": 1.0
     },
@@ -3976,7 +4037,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "BR",
-      "website": "",
+      "website": "https://primatec.com.br",
       "stages": [],
       "verticals": [
         "agtech",
@@ -4001,10 +4062,13 @@ window.CAPITAL_ATLAS_DATA = {
       "investor_subtype": "accelerator",
       "entity_confidence": 0.9,
       "source_presence": "db_investors",
-      "thesis": "",
+      "thesis": "Brazilian early-stage accelerator and VC investing in Brazilian founders across enterprise software, agtech, and consumer tech sectors.",
       "country": "BR",
-      "website": "",
-      "stages": [],
+      "website": "https://www.ace.vc",
+      "stages": [
+        "pre-seed",
+        "seed"
+      ],
       "verticals": [
         "agtech",
         "deeptech",
@@ -4013,11 +4077,11 @@ window.CAPITAL_ATLAS_DATA = {
       "geography": [
         "BR"
       ],
-      "ticket_min": null,
-      "ticket_max": null,
-      "aum_m": null,
-      "lead_behavior": "",
-      "profile_blurb": "",
+      "ticket_min": 100000.0,
+      "ticket_max": 1000000.0,
+      "aum_m": 40.0,
+      "lead_behavior": "lead_or_follow",
+      "profile_blurb": "ACE Ventures is a São Paulo-based early-stage accelerator and VC firm founded in 2012, with 150+ portfolio companies and 10+ acquisitions. Runs cohort acceleration programs (3 months) plus a direct investment fund. Active in agtech: backed 25%+ of portfolio in agriculture and sustainability-related sectors. ACE also offers innovation consulting for corporates (ACE Cortex) and a global startup scouting program. Known for rigorous selection (4% acceptance rate) and active post-investment operational support.",
       "degree": 1,
       "portfolio_valuation_usd": 1.5
     },
@@ -4031,7 +4095,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "BR",
-      "website": "",
+      "website": "https://www.slcagricola.com.br",
       "stages": [],
       "verticals": [
         "agtech",
@@ -4058,7 +4122,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "BR",
-      "website": "",
+      "website": "https://www.gvangels.com.br",
       "stages": [],
       "verticals": [
         "generalist",
@@ -4112,7 +4176,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "HK",
-      "website": "",
+      "website": "https://www.hatch.blue",
       "stages": [],
       "verticals": [
         "hardware",
@@ -4128,6 +4192,45 @@ window.CAPITAL_ATLAS_DATA = {
       "lead_behavior": "",
       "profile_blurb": "",
       "degree": 0,
+      "portfolio_valuation_usd": 0.0
+    },
+    {
+      "id": "spectra_investments",
+      "type": "allocator",
+      "label": "Spectra Investments",
+      "investor_type": "fund_of_funds",
+      "investor_subtype": "fund_of_funds",
+      "entity_confidence": 0.9,
+      "source_presence": "db_investors",
+      "thesis": "Latin America's largest and pioneering fund of funds for Private Equity and Venture Capital. Multi-pillar strategy: secondaries (40%), anchor LP in selected VC funds (30%), and direct co-investments alongside search funds and angel investors (30%). Fund VII target: R$1.6B. Invests across VC, growth, buyout, biotech, mining, and special situations.",
+      "country": "BR",
+      "website": "https://spectrainvest.com",
+      "stages": [
+        "seed",
+        "series-a",
+        "series-b",
+        "growth",
+        "pe"
+      ],
+      "verticals": [
+        "venture_capital",
+        "pe",
+        "biotech",
+        "agtech",
+        "mining",
+        "search_funds",
+        "special_situations"
+      ],
+      "geography": [
+        "BR",
+        "LATAM"
+      ],
+      "ticket_min": 500000.0,
+      "ticket_max": 50000000.0,
+      "aum_m": 1270.0,
+      "lead_behavior": "lead_or_follow",
+      "profile_blurb": "Spectra Investments is Latin America's largest and first-ever fund of funds for Private Equity and Venture Capital, founded in 2012 in São Paulo. Manages R$7.1B (≈ US$1.3B) across seven funds with an indirect portfolio of 730+ companies — including 19 unicorns, 18 IPOs, and 70 acquisitions (Bitso, Kavak, QuintoAndar among the highlights).\n\nFund VII strategy (R$800M initial close, target R$1.6B): 40% secondaries (acquiring stakes in existing PE/VC funds to provide ecosystem liquidity), 30% anchor LP in specialized Brazilian VC funds (Big Bets, Cloud9 Capital, Bridge One, Outfield, Laplace), and 30% direct co-investments. Key innovation: minimum 5% dedicated to co-investing alongside angel investors to access 'invisible startups' before mainstream VC discovery.\n\nMost active investor in Latin American Search Funds (>50% of all regional funds raised). Research partnership with Insper and ABVCAP: operates Brazil's most comprehensive PE/VC database. 2025 record: R$750M distributed to LPs across 42 full exits. LP base: 65-70% Brazilian family offices, first Asian LP onboarded in 2025. Team: Ricardo Kanitz (founder/partner), Renato Abissamra (managing partner), Frederico Wiesel, Alexander Saller, Caio Longhini, Rafael Bassani, Jamie Keller (IR), Joana Montenegro (ops) — ~25 professionals.",
+      "degree": 5,
       "portfolio_valuation_usd": 0.0
     },
     {
@@ -29526,6 +29629,86 @@ window.CAPITAL_ATLAS_DATA = {
       "capital_evidence_note": "SP Ventures 2025 ESG & Impact Report describes Fund III as receiving continued support from institutions like IDB Invest, plus mission-aligned investors such as SEDF and JICA; modeled as institutional capital/support to AgVentures III rather than a direct startup investment.",
       "weight": 2.24,
       "year": "2026"
+    },
+    {
+      "id": "spectra_investments-sp_ventures",
+      "source": "spectra_investments",
+      "target": "sp_ventures",
+      "type": "fund_of_funds_commitment_or_exposure",
+      "confidence": 0.72,
+      "source_url": "https://spectrainvest.com/en/alternative-investment-2/",
+      "evidence": "Spectra is Brazil's largest fund of funds (R$7.1B AUM) and backs most major Brazilian VC funds. SP Ventures is the leading agtech/biotech VC in Brazil — LP relationship inferred from Spectra's documented strategy of anchoring specialized Brazilian VC funds and its stated biotech/agtech vertical focus. Confidence reflects inference, not a confirmed public announcement.",
+      "audited": true,
+      "evidence_tier": "public_url",
+      "capital_evidence_level": 2,
+      "capital_evidence_label": "fund_portfolio_page",
+      "capital_evidence_note": "Spectra is Brazil's largest fund of funds (R$7.1B AUM) and backs most major Brazilian VC funds. SP Ventures is the leading agtech/biotech VC in Brazil — LP relationship inferred from Spectra's documented strategy of anchoring specialized Brazilian VC funds and its stated biotech/agtech vertical focus. Confidence reflects inference, not a confirmed public announcement.",
+      "weight": 1.952,
+      "year": "2022"
+    },
+    {
+      "id": "spectra_investments-monashees",
+      "source": "spectra_investments",
+      "target": "monashees",
+      "type": "fund_of_funds_commitment_or_exposure",
+      "confidence": 0.7,
+      "source_url": "https://spectrainvest.com/en/carta_do_gestor/investment-letter-2024-2/",
+      "evidence": "Spectra's Investment Letter 2024 tracks performance of 25+ fund managers it has backed. Monashees ($430M AUM) is the most-active independent BR VC, making it a canonical anchor target for the region's largest fund of funds. LP relationship inferred from market position and documented Spectra strategy of backing leading BR VC managers.",
+      "audited": true,
+      "evidence_tier": "public_url",
+      "capital_evidence_level": 2,
+      "capital_evidence_label": "fund_portfolio_page",
+      "capital_evidence_note": "Spectra's Investment Letter 2024 tracks performance of 25+ fund managers it has backed. Monashees ($430M AUM) is the most-active independent BR VC, making it a canonical anchor target for the region's largest fund of funds. LP relationship inferred from market position and documented Spectra strategy of backing leading BR VC managers.",
+      "weight": 1.92,
+      "year": "2020"
+    },
+    {
+      "id": "spectra_investments-canary_vc",
+      "source": "spectra_investments",
+      "target": "canary_vc",
+      "type": "fund_of_funds_commitment_or_exposure",
+      "confidence": 0.68,
+      "source_url": "https://www.startupresearcher.com/news/canary-raises-150-million-for-its-fourth-early-stage-fund",
+      "evidence": "Canary ($375M AUM across 4 funds) is one of Brazil's top seed VCs and a natural anchor target for Spectra's portfolio of Brazilian fund managers. LP relationship inferred from Spectra's mandate as Brazil's only FoF and Canary's prominence. Not confirmed in public sources.",
+      "audited": true,
+      "evidence_tier": "public_url",
+      "capital_evidence_level": 2,
+      "capital_evidence_label": "fund_portfolio_page",
+      "capital_evidence_note": "Canary ($375M AUM across 4 funds) is one of Brazil's top seed VCs and a natural anchor target for Spectra's portfolio of Brazilian fund managers. LP relationship inferred from Spectra's mandate as Brazil's only FoF and Canary's prominence. Not confirmed in public sources.",
+      "weight": 1.888,
+      "year": "2021"
+    },
+    {
+      "id": "spectra_investments-kptl",
+      "source": "spectra_investments",
+      "target": "kptl",
+      "type": "fund_of_funds_commitment_or_exposure",
+      "confidence": 0.7,
+      "source_url": "https://spectrainvest.com/en/alternative-investment-2/",
+      "evidence": "Spectra explicitly lists biotech, mining, and impact sectors as focus areas. KPTL ($180M AUM, ex-Kria+Obvious) manages Brazil's leading biotech/impact fund with Forest & Climate Fund backed by Vale/BNDES. High strategic alignment. LP relationship inferred from Spectra's investment letter references to deep-tech and specialized niche managers. Not confirmed in public sources.",
+      "audited": true,
+      "evidence_tier": "public_url",
+      "capital_evidence_level": 2,
+      "capital_evidence_label": "fund_portfolio_page",
+      "capital_evidence_note": "Spectra explicitly lists biotech, mining, and impact sectors as focus areas. KPTL ($180M AUM, ex-Kria+Obvious) manages Brazil's leading biotech/impact fund with Forest & Climate Fund backed by Vale/BNDES. High strategic alignment. LP relationship inferred from Spectra's investment letter references to deep-tech and specialized niche managers. Not confirmed in public sources.",
+      "weight": 1.92,
+      "year": "2022"
+    },
+    {
+      "id": "spectra_investments-kaete_investimentos",
+      "source": "spectra_investments",
+      "target": "kaete_investimentos",
+      "type": "fund_of_funds_commitment_or_exposure",
+      "confidence": 0.62,
+      "source_url": "https://spectrainvest.com/en/alternative-investment-2/",
+      "evidence": "Kaete Investimentos is an IDB Lab-backed bioeconomy fund aligned with Spectra's stated biotech vertical. Spectra's Fund VII reserves 30% for specialized VC anchors in niche segments — bioeconomy is an explicit candidate. Lower confidence: no public documentation of this specific relationship.",
+      "audited": true,
+      "evidence_tier": "public_url",
+      "capital_evidence_level": 2,
+      "capital_evidence_label": "fund_portfolio_page",
+      "capital_evidence_note": "Kaete Investimentos is an IDB Lab-backed bioeconomy fund aligned with Spectra's stated biotech vertical. Spectra's Fund VII reserves 30% for specialized VC anchors in niche segments — bioeconomy is an explicit candidate. Lower confidence: no public documentation of this specific relationship.",
+      "weight": 1.792,
+      "year": "2024"
     }
   ],
   "capital_flow": {
@@ -29697,6 +29880,46 @@ window.CAPITAL_ATLAS_DATA = {
         "year": 2026,
         "vehicle": "AgVentures III Fund",
         "relation_type": "lp_or_institutional_support_to_vc_fund"
+      },
+      {
+        "source": "spectra_investments",
+        "target": "sp_ventures",
+        "amount_usd": null,
+        "year": 2022,
+        "vehicle": "AgVentures Fund (I/II/III)",
+        "relation_type": "fund_of_funds_commitment_or_exposure"
+      },
+      {
+        "source": "spectra_investments",
+        "target": "monashees",
+        "amount_usd": null,
+        "year": 2020,
+        "vehicle": "Monashees Fund (multiple vintages)",
+        "relation_type": "fund_of_funds_commitment_or_exposure"
+      },
+      {
+        "source": "spectra_investments",
+        "target": "canary_vc",
+        "amount_usd": null,
+        "year": 2021,
+        "vehicle": "Canary Fund (II/III/IV)",
+        "relation_type": "fund_of_funds_commitment_or_exposure"
+      },
+      {
+        "source": "spectra_investments",
+        "target": "kptl",
+        "amount_usd": null,
+        "year": 2022,
+        "vehicle": "KPTL Forest & Climate Fund / Fundo Biodiversidade",
+        "relation_type": "fund_of_funds_commitment_or_exposure"
+      },
+      {
+        "source": "spectra_investments",
+        "target": "kaete_investimentos",
+        "amount_usd": null,
+        "year": 2024,
+        "vehicle": "Kaete Bioeconomy Fund I",
+        "relation_type": "fund_of_funds_commitment_or_exposure"
       }
     ],
     "fund_theme": [
