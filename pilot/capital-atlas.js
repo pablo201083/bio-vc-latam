@@ -1899,7 +1899,48 @@
     return true;
   }
 
-  function rebuild({ rerun = true } = {}) {
+  // ── Layout cache (localStorage) ─────────────────────────────────────────
+  // Key includes mode + node/edge counts so it auto-invalidates when data changes.
+  function _layoutCacheKey() {
+    const mode = modeSelect.value;
+    return `atlas_pos_v1_${mode}_${activeNodes.length}_${activeEdges.length}`;
+  }
+
+  function saveLayoutCache() {
+    try {
+      const data = {};
+      positions.forEach((pos, id) => { data[id] = { x: pos.x, y: pos.y }; });
+      localStorage.setItem(_layoutCacheKey(), JSON.stringify(data));
+    } catch (e) { /* quota exceeded or private browsing — silent fail */ }
+  }
+
+  function loadLayoutCache() {
+    try {
+      const raw = localStorage.getItem(_layoutCacheKey());
+      if (!raw) return false;
+      const data = JSON.parse(raw);
+      // Reject cache if >5% of active nodes are missing (stale data)
+      const missing = activeNodes.filter(n => !data[n.id]).length;
+      if (missing > Math.ceil(activeNodes.length * 0.05)) return false;
+      activeNodes.forEach(node => {
+        if (!data[node.id]) return;
+        const cur = positions.get(node.id) || { vx: 0, vy: 0, index: 0 };
+        positions.set(node.id, { ...cur, x: data[node.id].x, y: data[node.id].y });
+      });
+      return true;
+    } catch (e) { return false; }
+  }
+
+  function clearLayoutCache() {
+    // Clear all atlas layout keys for all modes
+    const prefix = "atlas_pos_v1_";
+    Object.keys(localStorage)
+      .filter(k => k.startsWith(prefix))
+      .forEach(k => localStorage.removeItem(k));
+  }
+  // ─────────────────────────────────────────────────────────────────────────
+
+  function rebuild({ rerun = true, forceRecompute = false } = {}) {
     selectedId = null;
     selectedEdgeId = null;
     hoverId = null;
@@ -1907,8 +1948,16 @@
     hideTooltip();
     buildActiveGraph();
     initializePositions();
-    if (rerun) runForceAtlas(modeSelect.value === "co_investment" ? 780 : 660);
-    if (!rerun) positionContextNodes();
+    if (rerun) {
+      const usedCache = !forceRecompute && loadLayoutCache();
+      if (!usedCache) {
+        runForceAtlas(modeSelect.value === "co_investment" ? 780 : 660);
+        saveLayoutCache();
+      }
+      fitToGraph();
+    } else {
+      positionContextNodes();
+    }
     renderGraph();
     renderSummary();
     renderRanking();
@@ -1916,7 +1965,6 @@
     renderDetail(null);
     updateNote();
     syncLayerButtons();
-    if (rerun) fitToGraph();
   }
 
   function normalizeSearchIndex() {
@@ -1993,9 +2041,8 @@
     });
   });
   runLayoutButton.addEventListener("click", () => {
-    runForceAtlas(620);
-    renderGraph();
-    fitToGraph();
+    clearLayoutCache();
+    rebuild({ rerun: true, forceRecompute: true });
   });
   resetButton.addEventListener("click", () => rebuild({ rerun: true }));
   clearButton.addEventListener("click", () => {
