@@ -649,6 +649,28 @@ def cmd_ecosystem_health_data(args: argparse.Namespace) -> None:
     print(f"\n  Salida: pilot/ecosystem-health-data.js\n")
 
 
+def cmd_coverage(args: argparse.Namespace) -> None:
+    from src.coverage import run as run_coverage
+    print("\n  Frente A — Mapa de cobertura (parches, matriz tema×país, cola de des-sesgo)...\n")
+    res = run_coverage(DB_PATH)
+    print(f"  Parches en ledger : {res['ledger_patches']}")
+    print(f"  Celdas tema×país  : {res['cells']}")
+    for label, n in sorted(res["label_counts"].items()):
+        print(f"    {label:<16}: {n}")
+    print(f"  Tiers por país    :")
+    for cc, tier in res["country_tiers"].items():
+        print(f"    {cc:<4} {tier}")
+    print(f"  Cola de des-sesgo : {res['debias_queue']} targets")
+    print(f"  Tiempo            : {res['elapsed']}s")
+    print("\n  Salidas: quality/coverage_ledger.csv, quality/coverage_matrix.csv,")
+    print("           quality/coverage_debias_queue.csv, pilot/coverage-data.js\n")
+
+
+def cmd_health(args: argparse.Namespace) -> None:
+    from src.health import run as run_health
+    run_health(DB_PATH)
+
+
 def cmd_query(args: argparse.Namespace) -> None:
     from src.intelligence import semantic_search, _print_search_results
     query = " ".join(args.query)
@@ -755,6 +777,8 @@ def main() -> None:
     sub.add_parser("embed-entities", help="Genera embeddings para orgs/ESOs/corporates → embeddings/entity_vectors.npy")
     sub.add_parser("intelligence-data", help="Genera pilot/intelligence-data.js (vectores + metadatos + centroides)")
     sub.add_parser("ecosystem-health-data", help="Genera pilot/ecosystem-health-data.js (heatmap temas × países, isolated, momentum)")
+    sub.add_parser("coverage", help="Mapa de cobertura: ledger de parches, matriz tema×país (bien_mapeado/parcial/no_explorado), cola de des-sesgo")
+    sub.add_parser("health", help="Semáforo de salud del sistema en una pantalla (volumen, evidencia, consistencia, frescura, cobertura)")
     iq = sub.add_parser("query", help="Busqueda semantica de startups (texto libre)")
     iq.add_argument("query", nargs="+", help="Texto de busqueda")
     iq.add_argument("--top-k", type=int, default=10)
@@ -813,6 +837,8 @@ def main() -> None:
         "embed-entities": cmd_embed_entities,
         "intelligence-data": cmd_intelligence_data,
         "ecosystem-health-data": cmd_ecosystem_health_data,
+        "coverage": cmd_coverage,
+        "health": cmd_health,
         "query": cmd_query,
         "latent": cmd_latent,
         "intro": cmd_intro,

@@ -27,7 +27,9 @@ CSVs (fuente humana) → db/bio_latam.db (SQLite, fuente de verdad operativa)
 python pipeline.py rebuild                    # rebuild completo
 python pipeline.py rebuild --phase canonical  # solo una fase
 python pipeline.py status                     # counts por tabla
-python pipeline.py validate                   # validaciones de integridad
+python pipeline.py validate                   # validaciones de integridad (gate estricto)
+python pipeline.py health                     # semáforo de salud en una pantalla (volumen, evidencia, consistencia, frescura, cobertura)
+python pipeline.py coverage                   # Frente A: ledger de parches + matriz tema×país + cola de des-sesgo
 python pipeline.py graph --refresh            # PageRank/communities/bridges
 python pipeline.py ingest-outcomes            # leer staging/outcomes_incoming.csv
 python pipeline.py calibrate-matchmaker       # precision por bucket
