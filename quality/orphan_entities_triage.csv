@@ -1,0 +1,62 @@
+﻿entity_id,name,country_code,n_investment_edges,sample_investors,duplicate_of,disposition,suggested_action
+BitMEX,BitMEX,,1,SOSV_IndieBio,,likely_out_of_scope,Revisar exclude: exchange de criptomonedas.
+Formlabs,Formlabs,,1,SOSV_IndieBio,,likely_out_of_scope,"Revisar exclude: impresoras 3D (hardware genérico, US)."
+Opentrons,Opentrons,,1,SOSV_IndieBio,,likely_out_of_scope,"Revisar exclude: robótica de laboratorio (hardware, US)."
+Peek,Peek,,1,DragonesVP,,likely_out_of_scope,Revisar exclude: posible app de viajes/genérica — verificar.
+ngc Partners,ngc Partners,,1,DragonesVP,,likely_out_of_scope,"Revisar exclude: vehículo de inversión, no startup."
+NotCo,NotCo,,10,SOSV_IndieBio; bezos_expeditions; future_positive_capital; kaszek,,needs_processing,Procesar: scope_decision + bio_theme + summary (cola de enriquecimiento).
+pachama,Pachama,BR,7,amazon_climate_pledge_fund; future_shape; gv_google_ventures; salesforce_ventures,,needs_processing,Procesar: scope_decision + bio_theme + summary (cola de enriquecimiento).
+caspr,CASPR,,2,GridX; SOSV_IndieBio,,needs_processing,Procesar: scope_decision + bio_theme + summary (cola de enriquecimiento).
+Eywa,Eywa,,2,GridX; The Ganesha Lab,,needs_processing,Procesar: scope_decision + bio_theme + summary (cola de enriquecimiento).
+arcomedLab,arcomedLab,,2,AIR Capital; The Ganesha Lab,,needs_processing,Procesar: scope_decision + bio_theme + summary (cola de enriquecimiento).
+AVaTAR,AVaTAR,,1,GridX,,needs_processing,Procesar: scope_decision + bio_theme + summary (cola de enriquecimiento).
+Aictive,Aictive,,1,The Ganesha Lab,,needs_processing,Procesar: scope_decision + bio_theme + summary (cola de enriquecimiento).
+Amai Proteins,Amai Proteins,,1,DragonesVP,,needs_processing,Procesar: scope_decision + bio_theme + summary (cola de enriquecimiento).
+aplife,Aplife,,1,GridX,,needs_processing,Procesar: scope_decision + bio_theme + summary (cola de enriquecimiento).
+Ardan Pharma,Ardan Pharma,,1,CITES,,needs_processing,Procesar: scope_decision + bio_theme + summary (cola de enriquecimiento).
+Armenta,Armenta,,1,DragonesVP,,needs_processing,Procesar: scope_decision + bio_theme + summary (cola de enriquecimiento).
+Bee Technology,Bee Technology,,1,The Ganesha Lab,,needs_processing,Procesar: scope_decision + bio_theme + summary (cola de enriquecimiento).
+Bifidice,Bifidice,,1,The Ganesha Lab,,needs_processing,Procesar: scope_decision + bio_theme + summary (cola de enriquecimiento).
+Biogea,Biogea,,1,The Ganesha Lab,,needs_processing,Procesar: scope_decision + bio_theme + summary (cola de enriquecimiento).
+Biome Resources,Biome Resources,,1,The Ganesha Lab,,needs_processing,Procesar: scope_decision + bio_theme + summary (cola de enriquecimiento).
+Bionirs,Bionirs,,1,CITES,,needs_processing,Procesar: scope_decision + bio_theme + summary (cola de enriquecimiento).
+CargoProduce,CargoProduce,,1,DraperCygnus,,needs_processing,Procesar: scope_decision + bio_theme + summary (cola de enriquecimiento).
+clivi,Clivi,,1,1200_vc,,needs_processing,Procesar: scope_decision + bio_theme + summary (cola de enriquecimiento).
+CuperScience,CuperScience,,1,The Ganesha Lab,,needs_processing,Procesar: scope_decision + bio_theme + summary (cola de enriquecimiento).
+EcoAustralis,EcoAustralis,,1,The Ganesha Lab,,needs_processing,Procesar: scope_decision + bio_theme + summary (cola de enriquecimiento).
+Elytron,Elytron,,1,GridX,,needs_processing,Procesar: scope_decision + bio_theme + summary (cola de enriquecimiento).
+F4U,F4U,,1,GridX,,needs_processing,Procesar: scope_decision + bio_theme + summary (cola de enriquecimiento).
+Farmtastica,Farmtastica,,1,The Ganesha Lab,,needs_processing,Procesar: scope_decision + bio_theme + summary (cola de enriquecimiento).
+FixUP,FixUP,,1,DragonesVP,,needs_processing,Procesar: scope_decision + bio_theme + summary (cola de enriquecimiento).
+Gbot,Gbot,,1,CITES,,needs_processing,Procesar: scope_decision + bio_theme + summary (cola de enriquecimiento).
+general_biological,General Biological,,1,1200_vc,,needs_processing,Procesar: scope_decision + bio_theme + summary (cola de enriquecimiento).
+GlucoLib,GlucoLib,,1,The Ganesha Lab,,needs_processing,Procesar: scope_decision + bio_theme + summary (cola de enriquecimiento).
+hiamet_s_a,Hiamet S.A,,1,GridX,,needs_processing,Procesar: scope_decision + bio_theme + summary (cola de enriquecimiento).
+Luyef,Luyef,,1,The Ganesha Lab,,needs_processing,Procesar: scope_decision + bio_theme + summary (cola de enriquecimiento).
+Menta,Menta,,1,DraperCygnus,,needs_processing,Procesar: scope_decision + bio_theme + summary (cola de enriquecimiento).
+monte_caldera,Monte Caldera,,1,GridX,,needs_processing,Procesar: scope_decision + bio_theme + summary (cola de enriquecimiento).
+nano_jump,Nano Jump,,1,GridX,,needs_processing,Procesar: scope_decision + bio_theme + summary (cola de enriquecimiento).
+Nanogrow,Nanogrow,,1,GridX,,needs_processing,Procesar: scope_decision + bio_theme + summary (cola de enriquecimiento).
+naturanova,Naturanova,,1,GridX,,needs_processing,Procesar: scope_decision + bio_theme + summary (cola de enriquecimiento).
+Neptune Robotics,Neptune Robotics,,1,SOSV_IndieBio,,needs_processing,Procesar: scope_decision + bio_theme + summary (cola de enriquecimiento).
+New Organs,New Organs,,1,GridX,,needs_processing,Procesar: scope_decision + bio_theme + summary (cola de enriquecimiento).
+Oasys,Oasys,,1,DraperCygnus,,needs_processing,Procesar: scope_decision + bio_theme + summary (cola de enriquecimiento).
+Open Water,Open Water,,1,AIR Capital,,needs_processing,Procesar: scope_decision + bio_theme + summary (cola de enriquecimiento).
+Pannex,Pannex,,1,The Ganesha Lab,,needs_processing,Procesar: scope_decision + bio_theme + summary (cola de enriquecimiento).
+Prolific Machines,Prolific Machines,,1,SOSV_IndieBio,,needs_processing,Procesar: scope_decision + bio_theme + summary (cola de enriquecimiento).
+Purple Dental,Purple Dental,,1,The Ganesha Lab,,needs_processing,Procesar: scope_decision + bio_theme + summary (cola de enriquecimiento).
+Retidiag,Retidiag,,1,The Ganesha Lab,,needs_processing,Procesar: scope_decision + bio_theme + summary (cola de enriquecimiento).
+Risas Pendientes,Risas Pendientes,,1,The Ganesha Lab,,needs_processing,Procesar: scope_decision + bio_theme + summary (cola de enriquecimiento).
+Scitherm,Scitherm,,1,GridX,,needs_processing,Procesar: scope_decision + bio_theme + summary (cola de enriquecimiento).
+Semtive,Semtive,,1,DragonesVP,,needs_processing,Procesar: scope_decision + bio_theme + summary (cola de enriquecimiento).
+Smart Tissues,Smart Tissues,,1,The Ganesha Lab,,needs_processing,Procesar: scope_decision + bio_theme + summary (cola de enriquecimiento).
+Smartex,Smartex,,1,SOSV_IndieBio,,needs_processing,Procesar: scope_decision + bio_theme + summary (cola de enriquecimiento).
+Soleit,Soleit,,1,The Ganesha Lab,,needs_processing,Procesar: scope_decision + bio_theme + summary (cola de enriquecimiento).
+Synergic Bio Solutions,Synergic Bio Solutions,,1,The Ganesha Lab,,needs_processing,Procesar: scope_decision + bio_theme + summary (cola de enriquecimiento).
+syocin_bio,Syocin Bio,,1,GridX,,needs_processing,Procesar: scope_decision + bio_theme + summary (cola de enriquecimiento).
+Trears Biomarkers,Trears Biomarkers,,1,The Ganesha Lab,,needs_processing,Procesar: scope_decision + bio_theme + summary (cola de enriquecimiento).
+Unleash Immuno Oncolytics,Unleash Immuno Oncolytics,,1,DragonesVP,,needs_processing,Procesar: scope_decision + bio_theme + summary (cola de enriquecimiento).
+Vali,Vali,,1,The Ganesha Lab,,needs_processing,Procesar: scope_decision + bio_theme + summary (cola de enriquecimiento).
+unSpun,unSpun,,1,SOSV_IndieBio,,needs_processing,Procesar: scope_decision + bio_theme + summary (cola de enriquecimiento).
+Feed Vax,Feed Vax,,2,AIR Capital; GridX,feedvax,probable_duplicate,Verificar y mergear edges hacia 'feedvax' (mismo normalize_key).
+Kigui,Kigui,,2,Antom; inventure,kigui,probable_duplicate,Verificar y mergear edges hacia 'kigui' (mismo normalize_key).

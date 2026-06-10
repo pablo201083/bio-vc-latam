@@ -172,21 +172,23 @@ def cmd_validate(args: argparse.Namespace) -> None:
           AND sx.umap_x IS NOT NULL
     """).fetchall()
 
-    # 1. bio_theme vs cluster_label prefix mismatch
-    label_mismatches = [
-        (r[1], r[2], r[3])
-        for r in rows
-        if r[2] and r[3] and not r[3].startswith(r[2])
-    ]
-    n_mm = len(label_mismatches)
+    # 1. bio_theme vs cluster_label: solo los conflictos GENUINOS cuentan.
+    #    Un bio_theme que forma subgrupo coherente dentro de un cluster grueso
+    #    (o un tema transversal disperso) NO es contradicción — es sub-cluster.
+    #    Fuente de verdad única: src.reconcile_themes.analyze (Frente B).
+    from src.reconcile_themes import analyze as _analyze_conflicts
+    triage = _analyze_conflicts(conn)
+    isolated = [t for t in triage if t["verdict"] == "isolated_review"]
+    n_expected = len(triage) - len(isolated)
+    n_mm = len(isolated)
     icon = "!" if n_mm > 0 else " "
-    print(f"  {icon} {'bio_theme ≠ prefijo cluster_label':<55} {n_mm if n_mm else 'OK'}")
+    print(f"  {icon} {'bio_theme ≠ cluster_label (conflictos aislados)':<55} {n_mm if n_mm else 'OK'}")
+    print(f"    {'(+ sub-cluster/transversal esperados, no error)':<55} {n_expected}")
     if n_mm > 0:
-        for nm, bt, cl in label_mismatches[:5]:
-            cl_prefix = cl.split(" — ")[0].split("||")[0]
-            print(f"      {nm:<38} [{bt[:28]}] ≠ [{cl_prefix[:28]}]")
+        for t in isolated[:5]:
+            print(f"      {t['name'][:36]:<36} [{t['bio_theme'][:24]}] en cluster [{t['cluster_label_prefix'][:22]}]")
         if n_mm > 5:
-            print(f"      … y {n_mm - 5} más")
+            print(f"      … y {n_mm - 5} más → quality/theme_cluster_mismatch_triage.csv")
         warnings += 1
 
     # 2. Positional outliers — distancia al centroide del bio_theme
@@ -649,6 +651,42 @@ def cmd_ecosystem_health_data(args: argparse.Namespace) -> None:
     print(f"\n  Salida: pilot/ecosystem-health-data.js\n")
 
 
+def cmd_taxonomy_cards(args: argparse.Namespace) -> None:
+    from src.taxonomy_cards import run as run_cards
+    print("\n  Frente B — Generando fichas de taxonomía...\n")
+    res = run_cards(DB_PATH)
+    print(f"  Temas         : {res['themes']}")
+    print(f"  Startups      : {res['total_startups']}")
+    print(f"\n  Salida: {res['output']}\n")
+
+
+def cmd_orphan_triage(args: argparse.Namespace) -> None:
+    from src.orphan_triage import run as run_orphan
+    print("\n  Frente B — Triage de entidades startup huérfanas...\n")
+    res = run_orphan(DB_PATH)
+    print(f"  Huérfanas totales     : {res['total_orphans']}")
+    for disp, n in sorted(res["by_disposition"].items()):
+        print(f"    {disp:<22}: {n}")
+    if res["probable_duplicates"]:
+        print("\n  Duplicados probables (verificar + mergear):")
+        for t in res["probable_duplicates"]:
+            print(f"    {t['entity_id']:<28} → {t['duplicate_of']}")
+    print("\n  Salida: quality/orphan_entities_triage.csv\n")
+
+
+def cmd_reconcile_themes(args: argparse.Namespace) -> None:
+    from src.reconcile_themes import run as run_reconcile
+    dry = getattr(args, "dry_run", False)
+    print(f"\n  Frente B — Reconciliar conflictos bio_theme ↔ cluster_label{' (dry-run)' if dry else ''}...\n")
+    res = run_reconcile(DB_PATH, dry_run=dry)
+    print(f"  Conflictos totales    : {res['total_conflicts']}")
+    for verdict, n in sorted(res["by_verdict"].items()):
+        print(f"    {verdict:<22}: {n}")
+    print(f"  sub_cluster_label set : {res['sub_labels_updated']}")
+    print(f"  Requieren revisión    : {res['isolated_review']} (isolated_review)")
+    print("\n  Salida: quality/theme_cluster_mismatch_triage.csv\n")
+
+
 def cmd_coverage(args: argparse.Namespace) -> None:
     from src.coverage import run as run_coverage
     print("\n  Frente A — Mapa de cobertura (parches, matriz tema×país, cola de des-sesgo)...\n")
@@ -777,6 +815,10 @@ def main() -> None:
     sub.add_parser("embed-entities", help="Genera embeddings para orgs/ESOs/corporates → embeddings/entity_vectors.npy")
     sub.add_parser("intelligence-data", help="Genera pilot/intelligence-data.js (vectores + metadatos + centroides)")
     sub.add_parser("ecosystem-health-data", help="Genera pilot/ecosystem-health-data.js (heatmap temas × países, isolated, momentum)")
+    rt = sub.add_parser("reconcile-themes", help="Frente B: tipifica conflictos bio_theme↔cluster_label, alinea sub_cluster_label, emite triage CSV")
+    rt.add_argument("--dry-run", action="store_true", help="Genera triage sin tocar DB")
+    sub.add_parser("orphan-triage", help="Frente B: tipifica las entidades startup huérfanas (duplicado/fuera-scope/sin-procesar) → quality/orphan_entities_triage.csv")
+    sub.add_parser("taxonomy-cards", help="Frente B: genera quality/taxonomy_cards.md (8 fichas: definición, fronteras, arquetipos, fuera-de-scope)")
     sub.add_parser("coverage", help="Mapa de cobertura: ledger de parches, matriz tema×país (bien_mapeado/parcial/no_explorado), cola de des-sesgo")
     sub.add_parser("health", help="Semáforo de salud del sistema en una pantalla (volumen, evidencia, consistencia, frescura, cobertura)")
     iq = sub.add_parser("query", help="Busqueda semantica de startups (texto libre)")
@@ -837,6 +879,9 @@ def main() -> None:
         "embed-entities": cmd_embed_entities,
         "intelligence-data": cmd_intelligence_data,
         "ecosystem-health-data": cmd_ecosystem_health_data,
+        "reconcile-themes": cmd_reconcile_themes,
+        "orphan-triage": cmd_orphan_triage,
+        "taxonomy-cards": cmd_taxonomy_cards,
         "coverage": cmd_coverage,
         "health": cmd_health,
         "query": cmd_query,

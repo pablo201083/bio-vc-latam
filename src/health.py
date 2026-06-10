@@ -72,11 +72,13 @@ def run(db_path: pathlib.Path) -> None:
 
     # ── Consistencia ─────────────────────────────────────────────────────
     print("\n  Consistencia")
-    rows = conn.execute(
-        "SELECT sx.bio_theme_primary, sx.cluster_label FROM startup_extended sx "
-        "WHERE sx.scope_decision='include' AND sx.umap_x IS NOT NULL"
-    ).fetchall()
-    n_mm = sum(1 for bt, cl in rows if bt and cl and not cl.startswith(bt))
+    # Métrica refinada: solo los conflictos GENUINOS (aislados) cuentan; los
+    # sub-clusters coherentes y temas transversales son esperados. Misma fuente
+    # de verdad que `validate` y `reconcile-themes`.
+    from src.reconcile_themes import analyze as _analyze_conflicts
+    _triage = _analyze_conflicts(conn)
+    n_mm = sum(1 for t in _triage if t["verdict"] == "isolated_review")
+    n_expected = len(_triage) - n_mm
     n_orphans = q1(
         "SELECT count(*) FROM entities WHERE entity_type='startup' "
         "AND NOT EXISTS (SELECT 1 FROM startup_extended sx WHERE sx.startup_id=entity_id)"
@@ -85,7 +87,7 @@ def run(db_path: pathlib.Path) -> None:
         "SELECT count(*) FROM startup_extended sx WHERE sx.scope_decision='include' "
         "AND NOT EXISTS (SELECT 1 FROM startups s WHERE s.startup_id=sx.startup_id)"
     )
-    _line(_verdict(n_mm, 25, 60, higher_is_better=False), "bio_theme ≠ prefijo cluster_label", f"{n_mm} (meta <25)")
+    _line(_verdict(n_mm, 25, 60, higher_is_better=False), "Conflictos theme↔cluster aislados", f"{n_mm} genuinos (+{n_expected} sub-cluster esperados; meta <25)")
     _line(_verdict(n_orphans, 15, 40, higher_is_better=False), "Orphan entities (sin startup_extended)", str(n_orphans))
     _line(_verdict(n_missing_core, 0, 50, higher_is_better=False), "Includes sin fila en tabla startups", f"{n_missing_core} (gap de schema: el universo vive solo en startup_extended)")
 

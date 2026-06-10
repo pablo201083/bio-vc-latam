@@ -30,6 +30,9 @@ python pipeline.py status                     # counts por tabla
 python pipeline.py validate                   # validaciones de integridad (gate estricto)
 python pipeline.py health                     # semáforo de salud en una pantalla (volumen, evidencia, consistencia, frescura, cobertura)
 python pipeline.py coverage                   # Frente A: ledger de parches + matriz tema×país + cola de des-sesgo
+python pipeline.py reconcile-themes           # Frente B: tipifica conflictos bio_theme↔cluster, alinea sub_cluster_label
+python pipeline.py orphan-triage              # Frente B: tipifica entidades startup huérfanas (duplicado/scope/sin-procesar)
+python pipeline.py taxonomy-cards             # Frente B: genera quality/taxonomy_cards.md (8 fichas de tema)
 python pipeline.py graph --refresh            # PageRank/communities/bridges
 python pipeline.py ingest-outcomes            # leer staging/outcomes_incoming.csv
 python pipeline.py calibrate-matchmaker       # precision por bucket
