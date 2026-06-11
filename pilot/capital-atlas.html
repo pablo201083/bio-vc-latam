@@ -685,6 +685,34 @@
       display: none;
     }
 
+    /* ── Estructura de inversión (Frente C) ─────────────────────────── */
+    .cap-structure { max-width: 1280px; margin: 8px auto 40px; padding: 0 18px; }
+    .cs-head { margin: 18px 4px 14px; }
+    .cs-title { font-size: 1.15rem; font-weight: 700; color: var(--ink); margin: 0 0 4px; letter-spacing: -.01em; }
+    .cs-sub { font-size: .78rem; color: var(--muted); margin: 0; line-height: 1.5; max-width: 720px; }
+    .cs-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+    .cs-card { background: var(--panel); border: 1px solid var(--line); border-radius: 14px;
+               box-shadow: var(--shadow); padding: 15px 17px; }
+    .cs-span2 { grid-column: 1 / -1; }
+    .cs-card-title { font-size: .82rem; font-weight: 650; color: var(--ink); margin-bottom: 12px; }
+    .cs-note, .cs-warn { font-size: .72rem; color: var(--muted); line-height: 1.45; margin-top: 9px; }
+    .cs-warn { color: var(--warm); background: var(--warm-soft); border-radius: 8px; padding: 6px 9px; margin: 0 0 10px; }
+    /* fila barra horizontal */
+    .cs-row { display: grid; grid-template-columns: 130px 1fr 46px; align-items: center; gap: 9px; margin: 5px 0; }
+    .cs-row-lbl { font-size: .72rem; color: var(--ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .cs-track { background: rgba(0,0,0,.05); border-radius: 6px; height: 16px; overflow: hidden; }
+    .cs-fill { height: 100%; border-radius: 6px; transition: width .4s ease; }
+    .cs-val { font-size: .72rem; color: var(--muted); text-align: right; font-variant-numeric: tabular-nums; }
+    /* pirámide centrada */
+    .cs-pyr-row { display: grid; grid-template-columns: 150px 1fr; align-items: center; gap: 12px; margin: 6px 0; }
+    .cs-pyr-bar { display: flex; align-items: center; justify-content: center; height: 26px; border-radius: 6px;
+                  color: #fff; font-size: .74rem; font-weight: 600; min-width: 30px; }
+    /* chips de sindicación */
+    .cs-chips { display: flex; flex-wrap: wrap; gap: 7px; }
+    .cs-chip { font-size: .72rem; background: var(--accent-soft); color: #0a5a54; border-radius: 20px;
+               padding: 4px 11px; border: 1px solid rgba(11,143,135,.25); }
+    .cs-chip strong { font-weight: 700; }
+    @media (max-width: 760px){ .cs-grid { grid-template-columns: 1fr; } .cs-span2 { grid-column: auto; } }
   </style>
 </head>
 <body class="capital-atlas-page">
@@ -813,6 +841,43 @@
 
 </div><!-- .page-shell -->
 
+<!-- ── Estructura de inversión (Frente C) ───────────────────────────── -->
+<section id="cap-structure" class="cap-structure">
+  <div class="cs-head">
+    <h2 class="cs-title">Estructura de inversión</h2>
+    <p class="cs-sub">Cuenta <strong>empresas por stage</strong>, no dólares (solo 10% de las aristas tiene monto).
+      El stage es el más avanzado entre las rondas reales documentadas.</p>
+  </div>
+  <div class="cs-grid">
+    <div class="cs-card cs-span2">
+      <div class="cs-card-title">Pirámide de stages — el embudo del ecosistema</div>
+      <div id="cs-pyramid"></div>
+      <div class="cs-note" id="cs-pyramid-note"></div>
+    </div>
+    <div class="cs-card">
+      <div class="cs-card-title">¿Base sin cúspide? — progresión early→growth por tema</div>
+      <div id="cs-funnel"></div>
+    </div>
+    <div class="cs-card">
+      <div class="cs-card-title">Dependencia de capital extranjero</div>
+      <div id="cs-foreign"></div>
+    </div>
+    <div class="cs-card">
+      <div class="cs-card-title">Concentración por tema (HHI)</div>
+      <div class="cs-warn" id="cs-hhi-warn"></div>
+      <div id="cs-hhi"></div>
+    </div>
+    <div class="cs-card">
+      <div class="cs-card-title">Capital no documentado</div>
+      <div id="cs-gap"></div>
+    </div>
+    <div class="cs-card cs-span2">
+      <div class="cs-card-title">Sindicación — fondos que co-invierten</div>
+      <div id="cs-synd"></div>
+    </div>
+  </div>
+</section>
+
 <!-- ── Backstage: required by capital-atlas.js, hidden ───────────── -->
 <div style="display:none" aria-hidden="true">
   <div id="atlas-ranking"></div>
@@ -835,6 +900,123 @@
 <script src="./capital-atlas.js?v=20260607bio-toggle" defer></script>
 <script src="./coverage-data.js?v=20260610" defer></script>
 <script src="./coverage-note.js?v=20260610" defer></script>
+<script src="./capital-structure-data.js?v=20260611" defer></script>
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+  var CS = window.CAPITAL_STRUCTURE;
+  var sec = document.getElementById('cap-structure');
+  if (!CS || !sec) { if (sec) sec.style.display='none'; return; }
+
+  var THEME_PAL = {
+    "Therapeutics":"#7033BC","Diagnostics & Health Access":"#1A6DB5",
+    "Food Systems & Alt Proteins":"#C25A2A","Bioinputs & Crop Resilience":"#2A7A42",
+    "Nature & Ecosystem Tech":"#127A6E","Farm Intelligence":"#2E4E8C",
+    "Biomaterials & Circular Economy":"#8B6D14","Biomanufacturing & Platform Technologies":"#6B8C3A"
+  };
+  var SHORT = {
+    "Therapeutics":"Therapeutics","Diagnostics & Health Access":"Diagnostics",
+    "Food Systems & Alt Proteins":"Food Systems","Bioinputs & Crop Resilience":"Bioinputs",
+    "Nature & Ecosystem Tech":"Nature Tech","Farm Intelligence":"Farm Intel",
+    "Biomaterials & Circular Economy":"Biomaterials","Biomanufacturing & Platform Technologies":"Biomanuf"
+  };
+  var ACCENT = getComputedStyle(document.documentElement).getPropertyValue('--accent').trim() || '#0B8F87';
+  var WARM   = getComputedStyle(document.documentElement).getPropertyValue('--warm').trim() || '#9a3412';
+  var sh = function(t){ return SHORT[t] || t; };
+  var col = function(t){ return THEME_PAL[t] || '#888'; };
+  var esc = function(s){ var d=document.createElement('div'); d.textContent=s; return d.innerHTML; };
+
+  // helper: barra horizontal (label, valor, max, color, suffix)
+  function bar(label, val, max, color, suffix){
+    var w = max>0 ? Math.max(2, Math.round(val/max*100)) : 0;
+    return '<div class="cs-row"><div class="cs-row-lbl" title="'+esc(label)+'">'+esc(label)+'</div>'+
+           '<div class="cs-track"><div class="cs-fill" style="width:'+w+'%;background:'+color+'"></div></div>'+
+           '<div class="cs-val">'+(suffix!=null?suffix:val)+'</div></div>';
+  }
+
+  // ── Pirámide global ──────────────────────────────────────────────
+  (function(){
+    var g = CS.pyramid.global, order = CS.pyramid.level_order;
+    var max = Math.max.apply(null, order.map(function(l){return g[l]||0;}));
+    var grad = ['#1A6DB5','#127A6E','#2A7A42','#8B6D14','#9a3412'];
+    var html = order.map(function(l,i){
+      var n = g[l]||0, w = max>0 ? Math.max(6, Math.round(n/max*100)) : 0;
+      return '<div class="cs-pyr-row"><div class="cs-row-lbl">'+esc(l)+'</div>'+
+        '<div class="cs-pyr-bar" style="width:'+w+'%;background:'+grad[i]+'">'+n+'</div></div>';
+    }).join('');
+    document.getElementById('cs-pyramid').innerHTML = html;
+    var seed = g['Seed']||0, a = g['Series A']||0;
+    var drop = seed>0 ? Math.round((1-a/seed)*100) : 0;
+    document.getElementById('cs-pyramid-note').innerHTML =
+      'El cuello de botella del ecosistema: del salto Seed→Series A se pierde el <strong>'+drop+'%</strong> '+
+      '('+seed+'→'+a+' empresas). Es el "valle" donde el capital regional no alcanza para madurar.';
+  })();
+
+  // ── Embudo por tema (ratio early→growth) ─────────────────────────
+  (function(){
+    var bt = CS.pyramid.by_theme;
+    var rows = Object.keys(bt).map(function(t){ return {t:t, r:bt[t].early_to_growth_ratio, f:bt[t].funded}; })
+      .filter(function(x){ return x.r!=null; }).sort(function(a,b){ return a.r-b.r; });
+    var max = Math.max.apply(null, rows.map(function(x){return x.r;}));
+    document.getElementById('cs-funnel').innerHTML = rows.map(function(x){
+      var stuck = x.r < 0.25;
+      return bar(sh(x.t), x.r, max, stuck?WARM:col(x.t), x.r.toFixed(2));
+    }).join('') + '<div class="cs-note">Menor ratio = más empresas atascadas en early sin llegar a Growth. '+
+      'En <span style="color:'+WARM+'">naranja</span>, los más trabados.</div>';
+  })();
+
+  // ── Dependencia extranjera ───────────────────────────────────────
+  (function(){
+    var fd = CS.foreign_dependence;
+    var rows = Object.keys(fd).map(function(t){ return {t:t, p:fd[t].foreign_pct}; })
+      .sort(function(a,b){ return b.p-a.p; });
+    document.getElementById('cs-foreign').innerHTML = rows.map(function(x){
+      return bar(sh(x.t), x.p, 1, col(x.t), Math.round(x.p*100)+'%');
+    }).join('');
+  })();
+
+  // ── Concentración HHI ────────────────────────────────────────────
+  (function(){
+    var co = CS.concentration;
+    document.getElementById('cs-hhi-warn').innerHTML =
+      '⚠️ GridX domina por sesgo de recolección (su portfolio se barrió a fondo). '+
+      'Leer junto al mapa de cobertura, no como verdad de mercado.';
+    var rows = Object.keys(co).map(function(t){ return {t:t, h:co[t].hhi, inv:co[t].top_investor, s:co[t].top_investor_share}; })
+      .sort(function(a,b){ return b.h-a.h; });
+    var max = Math.max.apply(null, rows.map(function(x){return x.h;}));
+    document.getElementById('cs-hhi').innerHTML = rows.map(function(x){
+      return bar(sh(x.t), x.h, max, col(x.t), x.h.toFixed(2));
+    }).join('');
+  })();
+
+  // ── Capital no documentado ───────────────────────────────────────
+  (function(){
+    var g = CS.capital_gap.by_theme;
+    var rows = Object.keys(g).map(function(t){ return {t:t, w:g[t].without_capital, p:g[t].pct, tot:g[t].total}; })
+      .sort(function(a,b){ return b.p-a.p; });
+    document.getElementById('cs-gap').innerHTML =
+      '<div class="cs-note" style="margin:0 0 9px">'+CS.capital_gap.total_without_capital+
+      ' startups include sin ninguna arista de capital documentada.</div>' +
+      rows.map(function(x){ return bar(sh(x.t), x.p, 1, col(x.t), x.w+'/'+x.tot); }).join('');
+  })();
+
+  // ── Sindicación ──────────────────────────────────────────────────
+  (function(){
+    var sy = CS.syndication;
+    var chips = sy.most_syndicated.map(function(p){
+      return '<span class="cs-chip"><strong>'+esc(p[0])+'</strong> · '+p[1]+'</span>';
+    }).join('');
+    var pairs = sy.pairs.slice(0,8).map(function(e){
+      return '<div class="cs-note" style="margin:2px 0">'+esc(e.source)+' + '+esc(e.target)+
+             ' · <strong>'+e.weight+'</strong> en común</div>';
+    }).join('');
+    document.getElementById('cs-synd').innerHTML =
+      '<div class="cs-note" style="margin:0 0 9px">'+sy.total_pairs+
+      ' pares de fondos co-invierten en ≥2 startups. Más sindicados (con cuántos fondos distintos):</div>'+
+      '<div class="cs-chips">'+chips+'</div>'+
+      '<div style="margin-top:11px;columns:2;column-gap:24px">'+pairs+'</div>';
+  })();
+});
+</script>
 
 <script>
 document.addEventListener('DOMContentLoaded', function(){
