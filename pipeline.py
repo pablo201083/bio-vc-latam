@@ -651,6 +651,17 @@ def cmd_ecosystem_health_data(args: argparse.Namespace) -> None:
     print(f"\n  Salida: pilot/ecosystem-health-data.js\n")
 
 
+def cmd_capital_structure(args: argparse.Namespace) -> None:
+    from src.capital_structure import run as run_capital
+    print("\n  Frente C — Analizando estructura de inversión...\n")
+    res = run_capital(DB_PATH)
+    print(f"  Startups con stage    : {res['funded']}")
+    print(f"  Sin capital documentado: {res['no_capital']}")
+    print(f"  Pares de sindicación  : {res['syndication_pairs']}")
+    print(f"  Años de cohorte       : {res['cohort_years']}")
+    print("\n  Salidas: pilot/capital-structure-data.js, quality/capital_structure_report.md\n")
+
+
 def cmd_phylo_tree(args: argparse.Namespace) -> None:
     from src.phylo_tree import run as run_phylo
     print("\n  Regenerando árbol evolutivo (phylo)...\n")
@@ -847,6 +858,7 @@ def main() -> None:
     rt = sub.add_parser("reconcile-themes", help="Frente B: tipifica conflictos bio_theme↔cluster_label, alinea sub_cluster_label, emite triage CSV")
     rt.add_argument("--dry-run", action="store_true", help="Genera triage sin tocar DB")
     sub.add_parser("orphan-triage", help="Frente B: tipifica las entidades startup huérfanas (duplicado/fuera-scope/sin-procesar) → quality/orphan_entities_triage.csv")
+    sub.add_parser("capital-structure", help="Frente C: pirámide de stages, cohortes, sindicación, dependencia extranjera, HHI → capital-structure-data.js + reporte")
     sub.add_parser("phylo-tree", help="Regenera pilot/phylo-tree-data.js (árbol evolutivo mega→macro→theme→sub→startup)")
     abo = sub.add_parser("apply-bio-overrides", help="Frente B: aplica quality/manual_bio_theme_overrides.csv (compuerta auditable de bio_theme)")
     abo.add_argument("--dry-run", action="store_true", help="Muestra cambios sin tocar DB")
@@ -913,6 +925,7 @@ def main() -> None:
         "ecosystem-health-data": cmd_ecosystem_health_data,
         "reconcile-themes": cmd_reconcile_themes,
         "orphan-triage": cmd_orphan_triage,
+        "capital-structure": cmd_capital_structure,
         "phylo-tree": cmd_phylo_tree,
         "apply-bio-overrides": cmd_apply_bio_overrides,
         "taxonomy-cards": cmd_taxonomy_cards,
