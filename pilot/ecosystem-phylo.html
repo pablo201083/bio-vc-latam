@@ -184,7 +184,7 @@
 <div id="phylo-tip"></div>
 
 <script src="./startup-themes-data.js"></script>
-<script src="./phylo-tree-data.js"></script>
+<script src="./phylo-tree-data.js?v=20260610rebuild"></script>
 <script>
 /* ════════════════════════════════════════════════════════════════════
    BIO LATAM — Árbol Evolutivo Semántico
@@ -761,10 +761,10 @@ function renderPhyloFull() {
     return node._theme;
   })(IQ_PHYLO_TREE);
 
-  const MEGA_COL  = { "Medicina & Diagnóstico":"#5A4FCF", "Biología Aplicada":"#2E7D52" };
+  const MEGA_COL  = { "BioMedicina":"#5A4FCF", "BioIndustria & Territorio":"#2E7D52" };
   const MACRO_COL = {
-    "Medicina & Diagnóstico":"#5A4FCF", "Inteligencia Agrícola":"#2E4E8C",
-    "Bioeconomía Industrial":"#8B6D14", "Agrosistemas Biológicos":"#2A7A42",
+    "Diagnóstico · Terapéutica":"#5A4FCF", "Inteligencia de Campo":"#2E4E8C",
+    "Bioplatforma Industrial":"#8B6D14", "Agroecosistemas":"#2A7A42",
   };
   function nodeCol(node) {
     if (node.level==="mega")  return MEGA_COL[node.name]||"#555";

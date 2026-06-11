@@ -651,6 +651,16 @@ def cmd_ecosystem_health_data(args: argparse.Namespace) -> None:
     print(f"\n  Salida: pilot/ecosystem-health-data.js\n")
 
 
+def cmd_phylo_tree(args: argparse.Namespace) -> None:
+    from src.phylo_tree import run as run_phylo
+    print("\n  Regenerando árbol evolutivo (phylo)...\n")
+    res = run_phylo(DB_PATH)
+    print(f"  Startups: {res['total_startups']}")
+    for name, n in res["megas"]:
+        print(f"    {name}: {n}")
+    print(f"\n  Salida: {res['output']}\n")
+
+
 def cmd_apply_bio_overrides(args: argparse.Namespace) -> None:
     from src.bio_theme_overrides import run as run_overrides
     dry = getattr(args, "dry_run", False)
@@ -837,6 +847,7 @@ def main() -> None:
     rt = sub.add_parser("reconcile-themes", help="Frente B: tipifica conflictos bio_theme↔cluster_label, alinea sub_cluster_label, emite triage CSV")
     rt.add_argument("--dry-run", action="store_true", help="Genera triage sin tocar DB")
     sub.add_parser("orphan-triage", help="Frente B: tipifica las entidades startup huérfanas (duplicado/fuera-scope/sin-procesar) → quality/orphan_entities_triage.csv")
+    sub.add_parser("phylo-tree", help="Regenera pilot/phylo-tree-data.js (árbol evolutivo mega→macro→theme→sub→startup)")
     abo = sub.add_parser("apply-bio-overrides", help="Frente B: aplica quality/manual_bio_theme_overrides.csv (compuerta auditable de bio_theme)")
     abo.add_argument("--dry-run", action="store_true", help="Muestra cambios sin tocar DB")
     sub.add_parser("taxonomy-cards", help="Frente B: genera quality/taxonomy_cards.md (8 fichas: definición, fronteras, arquetipos, fuera-de-scope)")
@@ -902,6 +913,7 @@ def main() -> None:
         "ecosystem-health-data": cmd_ecosystem_health_data,
         "reconcile-themes": cmd_reconcile_themes,
         "orphan-triage": cmd_orphan_triage,
+        "phylo-tree": cmd_phylo_tree,
         "apply-bio-overrides": cmd_apply_bio_overrides,
         "taxonomy-cards": cmd_taxonomy_cards,
         "coverage": cmd_coverage,
