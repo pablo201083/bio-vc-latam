@@ -806,10 +806,11 @@ def persist_results(
         cluster_label = cluster_labels.get(c, f"cluster {c}")
         tech_json = json.dumps(tech_map.get(sid, []))
         ind_json = json.dumps(ind_map.get(sid, []))
-        sx, sy   = scatter_map.get(sid, (x, y))
-        ux, uy   = semantic_map.get(sid, (x, y))
-        hx, hy   = hybrid_map.get(sid, (x, y))
-        cx, cy   = conceptual_map.get(sid, (x, y))
+        # float() explícito: numpy.float32 se persiste como BLOB en SQLite si no se castea.
+        sx, sy   = map(float, scatter_map.get(sid, (x, y)))
+        ux, uy   = map(float, semantic_map.get(sid, (x, y)))
+        hx, hy   = map(float, hybrid_map.get(sid, (x, y)))
+        cx, cy   = map(float, conceptual_map.get(sid, (x, y)))
         cur.execute(
             """UPDATE startup_extended
                SET cluster_id = ?, cluster_label = ?, cluster_confidence = ?,
