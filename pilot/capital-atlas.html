@@ -11,13 +11,14 @@
     }
     body.capital-atlas-page {
       margin: 0;
-      height: 100vh;
-      overflow: hidden;
+      min-height: 100vh;
+      overflow-y: auto;       /* permite scroll: el atlas ocupa 1 viewport, la estructura de inversión va debajo */
       display: flex;
       flex-direction: column;
     }
     body.capital-atlas-page .page-shell {
-      flex: 1 1 0;
+      height: 100vh;          /* el atlas mantiene su altura definida (sus hijos usan height:100%) */
+      flex: 0 0 auto;
       min-height: 0;
       display: flex;
       flex-direction: column;
