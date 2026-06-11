@@ -7,6 +7,7 @@ Sistema de decisión sobre el ecosistema BIO LATAM. ~385 startups, ~57 capital a
 - `startup_master_dataset.csv` — 58 campos, ~385 filas. NO editar a mano.
 - `canonical/manual_*.csv` — inputs humanos del curador, intocables.
 - `quality/data_contract.md` — reglas de governance, contrato sellado.
+- `quality/bio_definition_operativa.md` — definición operativa viva de "BIO": dos ejes (pertenencia vs intensidad biológica), 4 niveles, tests de decisión, registro de precedentes. Actualizar con cada edge case.
 - `schema_observatorio_biotech_v2.sql` — schema SQL de 24 tablas, contrato sellado. Las extensiones van en `db/migrations/`.
 
 ## Arquitectura

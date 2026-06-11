@@ -651,6 +651,25 @@ def cmd_ecosystem_health_data(args: argparse.Namespace) -> None:
     print(f"\n  Salida: pilot/ecosystem-health-data.js\n")
 
 
+def cmd_apply_bio_overrides(args: argparse.Namespace) -> None:
+    from src.bio_theme_overrides import run as run_overrides
+    dry = getattr(args, "dry_run", False)
+    print(f"\n  Frente B — Aplicar overrides de bio_theme{' (dry-run)' if dry else ''}...\n")
+    res = run_overrides(DB_PATH, dry_run=dry)
+    print(f"  Filas en CSV          : {res['rows']}")
+    print(f"  Cambios               : {len(res['changes'])}")
+    for sid, old, new in res["changes"]:
+        print(f"    {sid:<24} {old[:24]:<24} → {new}")
+    print(f"  Ya correctos          : {res['already_correct']}")
+    if res["unknown_theme"]:
+        print(f"  ! Tema inválido       : {res['unknown_theme']}")
+    if res["missing_startup"]:
+        print(f"  ! Startup inexistente : {res['missing_startup']}")
+    if not dry:
+        print(f"  Campos actualizados   : {res['applied_fields']}")
+    print()
+
+
 def cmd_taxonomy_cards(args: argparse.Namespace) -> None:
     from src.taxonomy_cards import run as run_cards
     print("\n  Frente B — Generando fichas de taxonomía...\n")
@@ -818,6 +837,8 @@ def main() -> None:
     rt = sub.add_parser("reconcile-themes", help="Frente B: tipifica conflictos bio_theme↔cluster_label, alinea sub_cluster_label, emite triage CSV")
     rt.add_argument("--dry-run", action="store_true", help="Genera triage sin tocar DB")
     sub.add_parser("orphan-triage", help="Frente B: tipifica las entidades startup huérfanas (duplicado/fuera-scope/sin-procesar) → quality/orphan_entities_triage.csv")
+    abo = sub.add_parser("apply-bio-overrides", help="Frente B: aplica quality/manual_bio_theme_overrides.csv (compuerta auditable de bio_theme)")
+    abo.add_argument("--dry-run", action="store_true", help="Muestra cambios sin tocar DB")
     sub.add_parser("taxonomy-cards", help="Frente B: genera quality/taxonomy_cards.md (8 fichas: definición, fronteras, arquetipos, fuera-de-scope)")
     sub.add_parser("coverage", help="Mapa de cobertura: ledger de parches, matriz tema×país (bien_mapeado/parcial/no_explorado), cola de des-sesgo")
     sub.add_parser("health", help="Semáforo de salud del sistema en una pantalla (volumen, evidencia, consistencia, frescura, cobertura)")
@@ -881,6 +902,7 @@ def main() -> None:
         "ecosystem-health-data": cmd_ecosystem_health_data,
         "reconcile-themes": cmd_reconcile_themes,
         "orphan-triage": cmd_orphan_triage,
+        "apply-bio-overrides": cmd_apply_bio_overrides,
         "taxonomy-cards": cmd_taxonomy_cards,
         "coverage": cmd_coverage,
         "health": cmd_health,

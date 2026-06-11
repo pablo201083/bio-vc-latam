@@ -8,19 +8,19 @@ La taxonomía operativa es **single-level**: un tema primario por startup. Estas
 
 | Tema | n | Cross-cutting |
 |------|---|---------------|
-| Diagnostics & Health Access | 111 | — |
-| Therapeutics | 78 | — |
-| Farm Intelligence | 67 | — |
-| Bioinputs & Crop Resilience | 66 | — |
-| Food Systems & Alt Proteins | 64 | — |
+| Diagnostics & Health Access | 110 | — |
+| Therapeutics | 82 | — |
+| Food Systems & Alt Proteins | 65 | — |
+| Farm Intelligence | 64 | — |
+| Bioinputs & Crop Resilience | 61 | — |
 | Biomaterials & Circular Economy | 54 | — |
-| Nature & Ecosystem Tech | 35 | — |
-| Biomanufacturing & Platform Technologies | 21 | transversal |
+| Nature & Ecosystem Tech | 34 | — |
+| Biomanufacturing & Platform Technologies | 26 | transversal |
 
 
 ---
 
-## Diagnostics & Health Access  ·  111 startups
+## Diagnostics & Health Access  ·  110 startups
 
 **Definición.** Companies applying biology to detect, monitor, or measure human disease. Includes molecular diagnostics, point-of-care testing, biosensors, medical devices with biological components, fertility diagnostics, spectral/imaging diagnostics, and digital health platforms where a biological assay is the core component.
 
@@ -45,7 +45,7 @@ La taxonomía operativa es **single-level**: un tema primario por startup. Estas
 
 ---
 
-## Therapeutics  ·  78 startups
+## Therapeutics  ·  82 startups
 
 **Definición.** Companies developing treatments that intervene in human or animal biology to cure, manage, or prevent disease: drug discovery, biologics, monoclonal antibodies, biosimilars, cell/gene therapy, mRNA therapeutics, oncology, rare diseases, regenerative medicine, nanomedicine, veterinary therapeutics, and drug delivery systems.
 
@@ -70,7 +70,33 @@ La taxonomía operativa es **single-level**: un tema primario por startup. Estas
 
 ---
 
-## Farm Intelligence  ·  67 startups
+## Food Systems & Alt Proteins  ·  65 startups
+
+**Definición.** Companies whose OUTPUT goes into human or animal food/nutrition: precision fermentation for food proteins/dairy/fats, novel food ingredients, functional foods, nutraceuticals, prebiotics/probiotics (food context), plant-based food products, cultivated/cell-based meat, insect protein, aquaculture biotech, and food biopreservation.
+Key distinction from Biomaterials: the END PRODUCT is ingested (food, supplement, ingredient) — not a material, packaging, or industrial chemical.
+
+**Fronteras (cómo se decide en casos límite).**
+
+- vs **Biomaterials**: misma biología (fermentación), distinto destino — si el producto final se **ingiere** (alimento, ingrediente, suplemento) → Food; si es material/químico/energía → Biomaterials.
+- vs **Bioinputs**: el output es comida/nutrición humana o animal, no un insumo de campo.
+
+**Startups arquetípicas** (mayor confianza, con fuente externa):
+
+- **BioBlends** (AR) — Food preservation biotech for clean-label shelf-life extension.
+- **Cellva** (BR) — Microencapsulated functional ingredients for food and beverage.
+- **Future Cow** (BR) — Produces animal-free casein and whey dairy proteins via precision fermentation by inserting cow protein genes into microorganisms, delivering dried powder ingredients for ice cream, cheese, and dairy applications. São Paulo, Brazil.
+- **Innovai** (CL) — Seafood shelf-life bioactive coating platform.
+- **Food4You** (AR) — Bacteria-enabled plant-based food enhancement.
+
+**Queda explícitamente afuera.**
+
+- Marcas de alimentos sin tecnología bio/proceso novedoso.
+- Delivery/retail de comida.
+
+
+---
+
+## Farm Intelligence  ·  64 startups
 
 **Definición.** Digital intelligence for agriculture: precision farming platforms, agronomic decision tools, satellite/drone monitoring, IoT crop sensors, agrifintech, and farm management software.
 
@@ -95,7 +121,7 @@ La taxonomía operativa es **single-level**: un tema primario por startup. Estas
 
 ---
 
-## Bioinputs & Crop Resilience  ·  66 startups
+## Bioinputs & Crop Resilience  ·  61 startups
 
 **Definición.** Biological inputs for agriculture and biological interventions in crop/plant systems: biofertilizers, biostimulants, biopesticides, biocontrol agents, CRISPR/gene-edited crop varieties, precision breeding, seed treatments, plant tissue culture, entomopathogenic solutions.
 
@@ -115,32 +141,6 @@ La taxonomía operativa es **single-level**: un tema primario por startup. Estas
 **Queda explícitamente afuera.**
 
 - Agroquímicos sintéticos convencionales sin componente biológico.
-
-
----
-
-## Food Systems & Alt Proteins  ·  64 startups
-
-**Definición.** Companies whose OUTPUT goes into human or animal food/nutrition: precision fermentation for food proteins/dairy/fats, novel food ingredients, functional foods, nutraceuticals, prebiotics/probiotics (food context), plant-based food products, cultivated/cell-based meat, insect protein, aquaculture biotech, and food biopreservation.
-Key distinction from Biomaterials: the END PRODUCT is ingested (food, supplement, ingredient) — not a material, packaging, or industrial chemical.
-
-**Fronteras (cómo se decide en casos límite).**
-
-- vs **Biomaterials**: misma biología (fermentación), distinto destino — si el producto final se **ingiere** (alimento, ingrediente, suplemento) → Food; si es material/químico/energía → Biomaterials.
-- vs **Bioinputs**: el output es comida/nutrición humana o animal, no un insumo de campo.
-
-**Startups arquetípicas** (mayor confianza, con fuente externa):
-
-- **Algalife** (AR) — Develops a technology platform for optimizing industrial microalgae cultivation and production processes, targeting productivity and efficiency improvements in biobased manufacturing.
-- **BioBlends** (AR) — Food preservation biotech for clean-label shelf-life extension.
-- **Cellva** (BR) — Microencapsulated functional ingredients for food and beverage.
-- **Future Cow** (BR) — Produces animal-free casein and whey dairy proteins via precision fermentation by inserting cow protein genes into microorganisms, delivering dried powder ingredients for ice cream, cheese, and dairy applications. São Paulo, Brazil.
-- **Innovai** (CL) — Seafood shelf-life bioactive coating platform.
-
-**Queda explícitamente afuera.**
-
-- Marcas de alimentos sin tecnología bio/proceso novedoso.
-- Delivery/retail de comida.
 
 
 ---
@@ -171,7 +171,7 @@ Covers bioplastics, biopolymers, mycelium materials, biobased packaging, industr
 
 ---
 
-## Nature & Ecosystem Tech  ·  35 startups
+## Nature & Ecosystem Tech  ·  34 startups
 
 **Definición.** Companies applying technology to protect, restore, or monitor natural ecosystems: carbon removal/sequestration, reforestation tech, biodiversity monitoring, ocean/aquatic ecosystem health, bioremediation, water quality, satellite forest monitoring, and ecosystem service markets.
 
@@ -196,7 +196,7 @@ Covers bioplastics, biopolymers, mycelium materials, biobased packaging, industr
 
 ---
 
-## Biomanufacturing & Platform Technologies  ·  21 startups
+## Biomanufacturing & Platform Technologies  ·  26 startups
 
 **Definición.** Plataformas y capacidades de producción biológica que sirven a múltiples verticales: fermentación de precisión, biología sintética/cell-free, enzimas, escalado de bioprocesos, biofoundries y digital twins de bioproceso. El valor es la capacidad de *producir* lo biológico, no un producto final de consumo.
 
@@ -209,11 +209,11 @@ Covers bioplastics, biopolymers, mycelium materials, biobased packaging, industr
 
 **Startups arquetípicas** (mayor confianza, con fuente externa):
 
+- **Algalife** (AR) — Develops a technology platform for optimizing industrial microalgae cultivation and production processes, targeting productivity and efficiency improvements in biobased manufacturing.
 - **HARMONY** (BR) — Precision fermentation platform producing human milk oligosaccharides (HMOs) and bioactive proteins for infant nutrition. Technology is biomanufacturing; market is food/nutrition. Bridges both themes.
 - **SpecLab** (BR) — AI spectral analytics and laboratory digitization platform.
 - **Biolinker Synthetic Biology** (BR) — Cell-free protein expression and synthetic-biology platform.
 - **Mavios** (AR) — AI-based digital twin for bioprocess scale-up.
-- **APEXzymes** (BR) — Industrial enzyme company using circular feedstocks.
 
 **Queda explícitamente afuera.**
 

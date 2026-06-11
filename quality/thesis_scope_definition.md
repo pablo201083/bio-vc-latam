@@ -1,5 +1,10 @@
 # Thesis Scope Definition
 
+> Para el eje de **intensidad biológica** (bio-core / bio-coupled / eco-adjacent / out)
+> y el registro vivo de precedentes, ver `quality/bio_definition_operativa.md`. Este
+> documento define **pertenencia** (include/review/exclude); el otro define **qué tan
+> biológica** es una empresa que ya pertenece (`is_bio_universe`).
+
 Base de referencia: `startup_taxonomy_assignments_v1.csv`
 
 ## Regla editorial
