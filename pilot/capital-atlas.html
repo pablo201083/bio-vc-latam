@@ -714,6 +714,50 @@
                padding: 4px 11px; border: 1px solid rgba(11,143,135,.25); }
     .cs-chip strong { font-weight: 700; }
     @media (max-width: 760px){ .cs-grid { grid-template-columns: 1fr; } .cs-span2 { grid-column: auto; } }
+
+    /* ── Sidebar type filter chips ─────────────────────────────────── */
+    .ca-inv-type-filter {
+      display: flex; gap: 4px; flex-wrap: wrap;
+      padding: 6px 10px; border-bottom: 1px solid rgba(217,206,190,.4);
+      flex-shrink: 0;
+    }
+    .inv-type-chip {
+      border: 1px solid var(--line); border-radius: 999px;
+      background: rgba(255,255,255,.82); color: var(--muted);
+      font: inherit; font-size: .65rem; font-weight: 600;
+      padding: 3px 9px; cursor: pointer; white-space: nowrap;
+      transition: background 80ms, color 80ms;
+    }
+    .inv-type-chip:hover { background: #fff; color: var(--ink); }
+    .inv-type-chip.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+    /* ── Fondos table view ─────────────────────────────────────────── */
+    #view-fondos { overflow: auto; }
+    #view-fondos.active { display: block; }
+    #fondos-wrap { padding: 14px 18px; }
+    .fo-filters { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; margin-bottom: 12px; }
+    .fo-chip {
+      border: 1px solid var(--line); border-radius: 999px;
+      background: rgba(255,255,255,.82); color: var(--muted);
+      font: inherit; font-size: .71rem; font-weight: 600;
+      padding: 4px 12px; cursor: pointer; white-space: nowrap;
+      transition: background 80ms, color 80ms;
+    }
+    .fo-chip:hover { background: #fff; color: var(--ink); }
+    .fo-chip.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+    .fo-grid { border-collapse: collapse; width: 100%; }
+    .fo-grid th {
+      font-size: .66rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: .05em; color: var(--muted); padding: 5px 9px;
+      border-bottom: 1.5px solid var(--line); text-align: left; white-space: nowrap;
+    }
+    .fo-grid th.sortable { cursor: pointer; user-select: none; }
+    .fo-grid th.sortable:hover { color: var(--ink); }
+    .fo-grid td { padding: 5px 9px; border-bottom: 1px solid rgba(217,206,190,.26); vertical-align: middle; font-size: .74rem; }
+    .fo-grid tr:hover td { background: rgba(11,143,135,.04); cursor: pointer; }
+    .fo-grid tr.fo-active td { background: rgba(11,143,135,.08); }
+    .fo-name { font-weight: 700; color: var(--ink); max-width: 180px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: inline-block; vertical-align: middle; }
+    .fo-muted { color: var(--muted); font-size: .7rem; white-space: nowrap; }
   </style>
 </head>
 <body class="capital-atlas-page">
@@ -746,6 +790,14 @@
       <div class="ca-inv-search-wrap">
         <input id="inv-filter" class="ca-inv-search" type="search" placeholder="Filtrar inversores…" autocomplete="off">
       </div>
+      <div class="ca-inv-type-filter" id="inv-type-chips">
+        <button class="inv-type-chip active" data-invtype="all">Todos</button>
+        <button class="inv-type-chip" data-invtype="vc">VC</button>
+        <button class="inv-type-chip" data-invtype="accelerator">Aceler.</button>
+        <button class="inv-type-chip" data-invtype="impact_fund">Impacto</button>
+        <button class="inv-type-chip" data-invtype="corporate_vc">Corp VC</button>
+        <button class="inv-type-chip" data-invtype="fund_of_funds">FoF</button>
+      </div>
       <div class="ca-inv-list" id="ca-inv-list">
         <!-- populated by script -->
       </div>
@@ -761,6 +813,8 @@
           <button class="vs-btn"        data-view="matrix"  type="button">▦ Matriz</button>
           <button class="vs-btn"        data-view="stages"  type="button">🪜 Etapas</button>
           <button class="vs-btn"        data-view="flow"    type="button">⟶ Flujo</button>
+          <button class="vs-btn"        data-view="syndication" type="button">⬡ Sindi</button>
+          <button class="vs-btn"        data-view="fondos"      type="button">📋 Fondos</button>
         </div>
 
         <div class="tb-divider"></div>
@@ -835,6 +889,20 @@
           <div id="sk-tooltip" class="sk-tooltip"></div>
         </div>
 
+        <!-- View G: Investor profile table -->
+        <div class="ca-view" id="view-fondos">
+          <div id="fondos-wrap"></div>
+        </div>
+
+        <!-- View F: Syndication network -->
+        <div class="ca-view" id="view-syndication">
+          <div id="syndication-wrap" style="width:100%;height:100%;position:relative;overflow:hidden">
+            <svg id="syndication-svg" style="display:block;width:100%;height:100%"></svg>
+            <div id="synd-tooltip" style="position:absolute;pointer-events:none;display:none;background:rgba(255,252,246,.97);border:1px solid var(--line);border-radius:8px;padding:8px 12px;font-size:.73rem;color:var(--ink);max-width:260px;line-height:1.5;box-shadow:0 3px 12px rgba(0,0,0,.1)"></div>
+            <div style="position:absolute;bottom:12px;left:50%;transform:translateX(-50%);font-size:.7rem;color:var(--muted);background:rgba(255,252,246,.85);border:1px solid var(--line);border-radius:999px;padding:4px 14px;pointer-events:none">Tamaño = fondos co-inversores · Grosor = startups en común · Click = ficha</div>
+          </div>
+        </div>
+
       </div><!-- .ca-stage -->
     </div><!-- .ca-canvas-area -->
 
@@ -876,6 +944,14 @@
       <div class="cs-card-title">Sindicación — fondos que co-invierten</div>
       <div id="cs-synd"></div>
     </div>
+    <div class="cs-card cs-span2">
+      <div class="cs-card-title">Cohortes — startups include por año de fundación</div>
+      <div id="cs-cohorts"></div>
+      <div class="cs-note" style="margin-top:7px">
+        <span style="display:inline-block;width:11px;height:11px;border-radius:2px;background:var(--accent);opacity:.72;vertical-align:middle;margin-right:5px"></span>Con capital documentado ·
+        <span style="display:inline-block;width:11px;height:11px;border-radius:2px;background:rgba(180,168,150,.4);vertical-align:middle;margin-right:5px;margin-left:8px"></span>Sin capital documentado
+      </div>
+    </div>
   </div>
 </section>
 
@@ -896,7 +972,6 @@
 <script src="./startup-themes-data.js?v=20260610rebuild" defer></script>
 <script src="./text-clean.js?v=20260422aa" defer></script>
 <script src="./theme-system.js?v=20260430english-semantic" defer></script>
-<script src="./semantic-single-level-data.js?v=20260508shared-taxonomy" defer></script>
 <script src="./capital-atlas-data.js?v=20260610rebuild" defer></script>
 <script src="./capital-atlas.js?v=20260607bio-toggle" defer></script>
 <script src="./coverage-data.js?v=20260610" defer></script>
@@ -934,22 +1009,49 @@ document.addEventListener('DOMContentLoaded', function(){
            '<div class="cs-val">'+(suffix!=null?suffix:val)+'</div></div>';
   }
 
-  // ── Pirámide global ──────────────────────────────────────────────
+  // ── Pirámide global — funnel SVG centrado con % de caída ─────────
   (function(){
     var g = CS.pyramid.global, order = CS.pyramid.level_order;
-    var max = Math.max.apply(null, order.map(function(l){return g[l]||0;}));
-    var grad = ['#1A6DB5','#127A6E','#2A7A42','#8B6D14','#9a3412'];
-    var html = order.map(function(l,i){
-      var n = g[l]||0, w = max>0 ? Math.max(6, Math.round(n/max*100)) : 0;
-      return '<div class="cs-pyr-row"><div class="cs-row-lbl">'+esc(l)+'</div>'+
-        '<div class="cs-pyr-bar" style="width:'+w+'%;background:'+grad[i]+'">'+n+'</div></div>';
-    }).join('');
-    document.getElementById('cs-pyramid').innerHTML = html;
+    var GRAD = ['#1A6DB5','#127A6E','#2A7A42','#8B6D14','#9a3412'];
+    var maxN = Math.max.apply(null, order.map(function(l){ return g[l]||0; }));
+    var BAR_H = 34, GAP = 14, PAD_V = 4;
+    var W = 580, CENTER = 320, MAX_W = 330;
+    var H = order.length * (BAR_H + GAP) - GAP + PAD_V * 2;
+    var parts = ['<svg viewBox="0 0 '+W+' '+H+'" style="width:100%;max-height:240px;display:block">'];
+    order.forEach(function(lvl, i) {
+      var n = g[lvl] || 0;
+      var w = maxN > 0 ? Math.max(22, Math.round(n / maxN * MAX_W)) : MAX_W;
+      var x = CENTER - w/2;
+      var y = PAD_V + i * (BAR_H + GAP);
+      var col = GRAD[i];
+      // Centered bar
+      parts.push('<rect x="'+x+'" y="'+y+'" width="'+w+'" height="'+BAR_H+'" rx="5" fill="'+col+'" opacity="0.88"/>');
+      // Count inside bar
+      parts.push('<text x="'+CENTER+'" y="'+(y+BAR_H/2+1)+'" text-anchor="middle" dominant-baseline="middle" font-size="13" font-weight="800" font-family="inherit" fill="#fff">'+n+'</text>');
+      // Stage label on left
+      parts.push('<text x="'+(x-7)+'" y="'+(y+BAR_H/2+1)+'" text-anchor="end" dominant-baseline="middle" font-size="10.5" font-family="inherit" fill="#786052">'+lvl+'</text>');
+      // Drop badge between this and next stage
+      if (i < order.length - 1) {
+        var n2 = g[order[i+1]] || 0;
+        var botY = y + BAR_H;
+        var midY = botY + GAP/2 + 1;
+        if (n > 0) {
+          var pct = Math.round((n2 - n) / n * 100);
+          var dropLabel = (pct >= 0 ? '+' : '') + pct + '%';
+          var dropCol = n2 < n ? '#9a3412' : '#2A7A42';
+          parts.push('<line x1="'+CENTER+'" y1="'+botY+'" x2="'+CENTER+'" y2="'+(botY+GAP)+'" stroke="rgba(120,96,82,.22)" stroke-width="1.5"/>');
+          parts.push('<rect x="'+(CENTER+32)+'" y="'+(midY-8)+'" width="44" height="16" rx="4" fill="'+dropCol+'" opacity="0.85"/>');
+          parts.push('<text x="'+(CENTER+54)+'" y="'+midY+'" text-anchor="middle" dominant-baseline="middle" font-size="9.5" font-weight="700" font-family="inherit" fill="#fff">'+dropLabel+'</text>');
+        }
+      }
+    });
+    parts.push('</svg>');
+    document.getElementById('cs-pyramid').innerHTML = parts.join('');
     var seed = g['Seed']||0, a = g['Series A']||0;
     var drop = seed>0 ? Math.round((1-a/seed)*100) : 0;
     document.getElementById('cs-pyramid-note').innerHTML =
-      'El cuello de botella del ecosistema: del salto Seed→Series A se pierde el <strong>'+drop+'%</strong> '+
-      '('+seed+'→'+a+' empresas). Es el "valle" donde el capital regional no alcanza para madurar.';
+      'Cuello de botella: Seed→Series A pierde el <strong style="color:#9a3412">'+drop+'%</strong> '+
+      '('+seed+'→'+a+' empresas). Es el "valle" donde el capital regional no alcanza para madurar las startups.';
   })();
 
   // ── Embudo por tema (ratio early→growth) ─────────────────────────
@@ -1015,6 +1117,39 @@ document.addEventListener('DOMContentLoaded', function(){
       ' pares de fondos co-invierten en ≥2 startups. Más sindicados (con cuántos fondos distintos):</div>'+
       '<div class="cs-chips">'+chips+'</div>'+
       '<div style="margin-top:11px;columns:2;column-gap:24px">'+pairs+'</div>';
+  })();
+
+  // ── Cohortes ─────────────────────────────────────────────────────
+  (function(){
+    if (!CS.cohorts || !CS.cohorts.by_year) return;
+    var data = CS.cohorts.by_year.filter(function(d){ return d.year >= 2005 && d.total > 0; });
+    if (!data.length) return;
+    var maxTotal = Math.max.apply(null, data.map(function(d){ return d.total; }));
+    var BAR_W = 28, GAP = 3, PAD_X = 10, PAD_Y = 6;
+    var BAR_MAX_H = 90, LABEL_H = 18;
+    var W = data.length * (BAR_W + GAP) - GAP + PAD_X * 2;
+    var H = BAR_MAX_H + LABEL_H + PAD_Y * 2;
+    var parts = ['<svg viewBox="0 0 '+W+' '+H+'" style="width:100%;max-height:130px;display:block">'];
+    data.forEach(function(d, i) {
+      var x = PAD_X + i * (BAR_W + GAP);
+      var totalH = maxTotal > 0 ? Math.max(2, Math.round(d.total / maxTotal * BAR_MAX_H)) : 0;
+      var fundedH = maxTotal > 0 ? Math.round(d.funded / maxTotal * BAR_MAX_H) : 0;
+      var baseY = PAD_Y + BAR_MAX_H;
+      // Unfunded portion
+      parts.push('<rect x="'+x+'" y="'+(baseY-totalH)+'" width="'+BAR_W+'" height="'+totalH+'" rx="3" fill="rgba(180,168,150,.35)"/>');
+      // Funded portion (from bottom)
+      if (fundedH > 0) {
+        parts.push('<rect x="'+x+'" y="'+(baseY-fundedH)+'" width="'+BAR_W+'" height="'+fundedH+'" rx="3" fill="'+ACCENT+'" opacity="0.72"/>');
+      }
+      // Total label on hover title (SVG title element)
+      parts.push('<title>'+d.year+': '+d.funded+'/'+d.total+' con capital ('+Math.round(d.funded/d.total*100)+'%)</title>');
+      // Year label every 3 years or always if few bars
+      if (d.year % 3 === 0 || data.length <= 14) {
+        parts.push('<text x="'+(x+BAR_W/2)+'" y="'+(baseY+LABEL_H-3)+'" text-anchor="middle" font-size="9" font-family="inherit" fill="rgba(120,96,82,.6)">'+("'"+String(d.year).slice(2))+'</text>');
+      }
+    });
+    parts.push('</svg>');
+    document.getElementById('cs-cohorts').innerHTML = parts.join('');
   })();
 });
 </script>
@@ -1128,6 +1263,13 @@ document.addEventListener('DOMContentLoaded', function(){
   // ── Render investor list ──────────────────────────────────────────────
   const listEl = document.getElementById('ca-inv-list');
   let activeInvId = null;
+  let sidebarTypeFilter = 'all';
+  let foFilterType = 'all';
+  let foSortCol = 'deals';
+  let foSortDir = -1;
+
+  // Build enriched fund detail map from D.nodes
+  const fundNodeMap = new Map(D.nodes.filter(n => n.investor_type).map(n => [n.id, n]));
 
   function typeClass(type) {
     if (type === 'allocator') return 'iv-type-allocator';
@@ -1246,9 +1388,14 @@ document.addEventListener('DOMContentLoaded', function(){
   function renderList(filter='') {
     listEl.innerHTML = '';
     const q = filter.toLowerCase().trim();
-    const filtered = q
-      ? investors.filter(iv => iv.label.toLowerCase().includes(q))
-      : investors;
+    let filtered = investors;
+    if (q) filtered = filtered.filter(iv => iv.label.toLowerCase().includes(q));
+    if (sidebarTypeFilter !== 'all') {
+      filtered = filtered.filter(iv => {
+        const fn = fundNodeMap.get(iv.id);
+        return fn && fn.investor_type === sidebarTypeFilter;
+      });
+    }
     if (!filtered.length) {
       listEl.innerHTML = `<div style="color:var(--muted);font-size:.76rem;padding:8px 4px">Sin resultados</div>`;
       return;
@@ -1258,9 +1405,19 @@ document.addEventListener('DOMContentLoaded', function(){
 
   renderList();
 
-  // Filter input
+  // Search filter input
   document.getElementById('inv-filter').addEventListener('input', function() {
     renderList(this.value);
+  });
+
+  // Sidebar type filter chips
+  document.getElementById('inv-type-chips').addEventListener('click', function(e) {
+    const btn = e.target.closest('[data-invtype]');
+    if (!btn) return;
+    sidebarTypeFilter = btn.dataset.invtype;
+    document.querySelectorAll('.inv-type-chip').forEach(c =>
+      c.classList.toggle('active', c.dataset.invtype === sidebarTypeFilter));
+    renderList(document.getElementById('inv-filter').value);
   });
 
   // ── View switching ──────────────────────────────────────────────────────
@@ -1274,10 +1431,12 @@ document.addEventListener('DOMContentLoaded', function(){
       v.classList.toggle('active', v.id === 'view-' + view));
     document.getElementById('net-controls').style.display =
       view === 'network' ? 'flex' : 'none';
-    if (view === 'radial')  renderRadial(activeInvId);
-    if (view === 'matrix')  renderMatrix();
-    if (view === 'stages')  renderStageLadder();
-    if (view === 'flow')    renderSankey();
+    if (view === 'radial')      renderRadial(activeInvId);
+    if (view === 'matrix')      renderMatrix();
+    if (view === 'stages')      renderStageLadder();
+    if (view === 'flow')        renderSankey();
+    if (view === 'syndication') renderSyndication();
+    if (view === 'fondos')      renderFondos();
   }
 
   document.querySelectorAll('.vs-btn').forEach(btn =>
@@ -1306,6 +1465,9 @@ document.addEventListener('DOMContentLoaded', function(){
       highlightMatrixRow(id);
     } else if (currentView === 'stages') {
       highlightStagesRow(id);
+    } else if (currentView === 'fondos') {
+      document.querySelectorAll('#fondos-wrap tr[data-id]').forEach(tr =>
+        tr.className = tr.dataset.id === id ? 'fo-active' : '');
     }
   }
 
@@ -2543,6 +2705,335 @@ document.addEventListener('DOMContentLoaded', function(){
       ttEl.style.top  = (e.clientY - rect2.top  - 10) + 'px';
     });
     svg.addEventListener('mouseout', () => { ttEl.style.display = 'none'; });
+  }
+
+  // ── Investor profile table ────────────────────────────────────────
+  function renderFondos() {
+    const wrap = document.getElementById('fondos-wrap');
+    if (!wrap) return;
+
+    const TYPE_LABELS = {
+      vc:'VC', accelerator:'Aceleradora', impact_fund:'Impacto',
+      corporate_vc:'Corp VC', company_builder:'Builder',
+      fund_of_funds:'FoF', multilateral:'Multilateral',
+      development_finance:'Dev Finance', allocator:'Allocator',
+    };
+    const TYPES_FILTER = [
+      {key:'all', label:'Todos'},
+      {key:'vc', label:'VC'},
+      {key:'accelerator', label:'Aceleradora'},
+      {key:'impact_fund', label:'Impacto'},
+      {key:'corporate_vc', label:'Corp VC'},
+      {key:'company_builder', label:'Builder'},
+      {key:'fund_of_funds', label:'FoF'},
+    ];
+
+    // Enrich investors with fund node fields
+    const allFunds = investors.map(iv => {
+      const fn = fundNodeMap.get(iv.id) || {};
+      return Object.assign({}, iv, {
+        aum_m: fn.aum_m || null,
+        stages: fn.stages || [],
+        ticket_min: fn.ticket_min || null,
+        ticket_max: fn.ticket_max || null,
+        verticals: fn.verticals || [],
+        country: fn.country || '',
+        investor_type: fn.investor_type || iv.type || '',
+      });
+    });
+    // Add fund nodes not in invStats (0 documented deals)
+    fundNodeMap.forEach((n, id) => {
+      if (!invStats[id]) {
+        allFunds.push({
+          id, label: n.label || id, type: n.investor_type, count: 0,
+          themes: {}, countries: {}, startups: [],
+          aum_m: n.aum_m||null, stages: n.stages||[], ticket_min: n.ticket_min||null,
+          ticket_max: n.ticket_max||null, verticals: n.verticals||[],
+          country: n.country||'', investor_type: n.investor_type||'',
+        });
+      }
+    });
+
+    // Filter + sort
+    let filtered = foFilterType === 'all' ? allFunds : allFunds.filter(f => f.investor_type === foFilterType);
+    filtered.sort((a, b) => {
+      if (foSortCol === 'aum')   return foSortDir * ((a.aum_m||0) - (b.aum_m||0));
+      if (foSortCol === 'name')  return foSortDir * a.label.localeCompare(b.label);
+      return foSortDir * (a.count - b.count); // 'deals' default — foSortDir=-1 → descending
+    });
+
+    // Filter chips
+    const filtersEl = document.createElement('div');
+    filtersEl.className = 'fo-filters';
+    TYPES_FILTER.forEach(t => {
+      const btn = document.createElement('button');
+      btn.className = 'fo-chip' + (foFilterType === t.key ? ' active' : '');
+      btn.textContent = t.label + (t.key !== 'all' ? ' (' + allFunds.filter(f => f.investor_type === t.key).length + ')' : '');
+      btn.addEventListener('click', () => { foFilterType = t.key; renderFondos(); });
+      filtersEl.appendChild(btn);
+    });
+
+    // Table
+    const fmtK = v => v >= 1e6 ? '$'+(v/1e6).toFixed(1)+'M' : '$'+(v/1e3).toFixed(0)+'K';
+    const tbl = document.createElement('table');
+    tbl.className = 'fo-grid';
+    const thead = document.createElement('thead');
+    const hr = document.createElement('tr');
+    [
+      {key:'name',  label:'Fondo',    sort:true},
+      {key:'type',  label:'Tipo',     sort:false},
+      {key:'aum',   label:'AUM',      sort:true},
+      {key:'deals', label:'Deals BIO',sort:true},
+      {key:'stages',label:'Etapas',   sort:false},
+      {key:'ticket',label:'Ticket',   sort:false},
+      {key:'theme', label:'Top tema', sort:false},
+    ].forEach(c => {
+      const th = document.createElement('th');
+      if (c.sort) th.className = 'sortable';
+      const arr = foSortCol === c.key ? (foSortDir === -1 ? ' ↓' : ' ↑') : '';
+      th.textContent = c.label + arr;
+      if (c.sort) {
+        th.addEventListener('click', () => {
+          if (foSortCol === c.key) foSortDir *= -1; else { foSortCol = c.key; foSortDir = -1; }
+          renderFondos();
+        });
+      }
+      hr.appendChild(th);
+    });
+    thead.appendChild(hr);
+    tbl.appendChild(thead);
+
+    const tbody = document.createElement('tbody');
+    filtered.forEach(f => {
+      const tr = document.createElement('tr');
+      tr.dataset.id = f.id;
+      if (activeInvId === f.id) tr.className = 'fo-active';
+      tr.addEventListener('click', () => setActiveInvestor(f.id === activeInvId ? null : f.id));
+
+      // Name + flag
+      const flag = FLAG_MAP[f.country] || '';
+      const tdN = document.createElement('td');
+      tdN.innerHTML = (flag ? '<span style="margin-right:4px">' + flag + '</span>' : '') +
+        '<span class="fo-name" title="' + f.label + '">' + f.label + '</span>';
+      tr.appendChild(tdN);
+
+      // Type badge
+      const tdT = document.createElement('td');
+      const badge = document.createElement('span');
+      badge.className = 'sl-badge sl-type-' + (f.investor_type || '');
+      badge.textContent = TYPE_LABELS[f.investor_type] || f.investor_type || '—';
+      tdT.appendChild(badge);
+      tr.appendChild(tdT);
+
+      // AUM
+      const tdA = document.createElement('td');
+      tdA.className = 'fo-muted'; tdA.textContent = f.aum_m ? fmtAum(f.aum_m) : '—';
+      tr.appendChild(tdA);
+
+      // Deals
+      const tdD = document.createElement('td');
+      tdD.style.fontWeight = '700';
+      tdD.style.color = f.count > 0 ? 'var(--accent)' : 'var(--muted)';
+      tdD.textContent = f.count > 0 ? String(f.count) : '—';
+      tr.appendChild(tdD);
+
+      // Stages
+      const tdS = document.createElement('td');
+      const stageLabs = (f.stages || []).map(s => STAGE_LABEL[s.toLowerCase()] || s).join(' · ');
+      tdS.className = 'fo-muted'; tdS.textContent = stageLabs || '—';
+      tr.appendChild(tdS);
+
+      // Ticket
+      const tdTk = document.createElement('td');
+      tdTk.className = 'fo-muted';
+      tdTk.textContent = (f.ticket_min || f.ticket_max)
+        ? (f.ticket_min ? fmtK(f.ticket_min) : '?') + '–' + (f.ticket_max ? fmtK(f.ticket_max) : '?')
+        : '—';
+      tr.appendChild(tdTk);
+
+      // Top theme
+      const tdTh = document.createElement('td');
+      const topT = Object.entries(f.themes || {}).sort((a,b)=>b[1]-a[1])[0];
+      if (topT) {
+        const col = THEME_PAL[topT[0]] || '#888';
+        tdTh.innerHTML = '<span style="display:inline-flex;align-items:center;gap:5px">' +
+          '<span style="width:7px;height:7px;border-radius:50%;background:'+col+';flex-shrink:0"></span>' +
+          '<span style="font-size:.69rem;color:'+col+';font-weight:600">'+(THEME_SHORT[topT[0]]||topT[0])+'</span></span>';
+      } else {
+        tdTh.className = 'fo-muted'; tdTh.textContent = '—';
+      }
+      tr.appendChild(tdTh);
+
+      tbody.appendChild(tr);
+    });
+    tbl.appendChild(tbody);
+
+    wrap.innerHTML = '';
+    wrap.appendChild(filtersEl);
+    wrap.appendChild(tbl);
+  }
+
+  // ── Syndication network (force-directed) ──────────────────────────
+  function renderSyndication() {
+    var svg  = document.getElementById('syndication-svg');
+    var ttEl = document.getElementById('synd-tooltip');
+    var wrap = document.getElementById('syndication-wrap');
+    if (!svg || !wrap) return;
+    var stage = document.querySelector('.ca-stage');
+    var W = stage ? stage.clientWidth  : 800;
+    var H = stage ? stage.clientHeight : 600;
+    svg.innerHTML = '';
+    svg.setAttribute('viewBox', '0 0 ' + W + ' ' + H);
+    svg.setAttribute('preserveAspectRatio', 'xMidYMid meet');
+
+    var CS2 = window.CAPITAL_STRUCTURE;
+    if (!CS2 || !CS2.syndication) {
+      svg.innerHTML = '<text x="50%" y="50%" text-anchor="middle" fill="#999" font-size="13" font-family="inherit">Sin datos de sindicación</text>';
+      return;
+    }
+    var sy   = CS2.syndication;
+    var pairs = sy.pairs;
+
+    // Build degree map from most_syndicated
+    var degMap = {};
+    sy.most_syndicated.forEach(function(p){ degMap[p[0]] = p[1]; });
+    // Collect all node IDs
+    var nodeSet = {};
+    pairs.forEach(function(e){ nodeSet[e.source] = 1; nodeSet[e.target] = 1; });
+    var nodeArr = Object.keys(nodeSet);
+
+    // Initial positions on circle
+    var cx = W/2, cy = H/2;
+    var circR = Math.min(W, H) * 0.32;
+    var nodes = nodeArr.map(function(id, i) {
+      var angle = (i / nodeArr.length) * Math.PI * 2;
+      var deg   = degMap[id] || 1;
+      return {
+        id:    id,
+        label: id.replace(/_/g,' '),
+        deg:   deg,
+        r:     Math.max(12, Math.min(30, deg * 4.5 + 10)),
+        x:     cx + Math.cos(angle) * circR,
+        y:     cy + Math.sin(angle) * circR,
+        vx: 0, vy: 0
+      };
+    });
+    var nodeMap = {};
+    nodes.forEach(function(n){ nodeMap[n.id] = n; });
+
+    var edges = pairs.map(function(e){
+      return { source: nodeMap[e.source], target: nodeMap[e.target], weight: e.weight };
+    }).filter(function(e){ return e.source && e.target; });
+
+    // Force simulation
+    var ITERS = 420;
+    for (var iter = 0; iter < ITERS; iter++) {
+      var alpha = Math.pow(1 - iter / ITERS, 1.3);
+      // Repulsion
+      for (var i = 0; i < nodes.length; i++) {
+        for (var j = i + 1; j < nodes.length; j++) {
+          var dx = (nodes[j].x - nodes[i].x) || 0.01;
+          var dy = (nodes[j].y - nodes[i].y) || 0.01;
+          var dist = Math.sqrt(dx*dx + dy*dy) || 0.01;
+          var minD = nodes[i].r + nodes[j].r + 18;
+          if (dist < minD) {
+            var f = (minD - dist) / dist * 0.48 * alpha;
+            nodes[i].vx -= dx*f; nodes[i].vy -= dy*f;
+            nodes[j].vx += dx*f; nodes[j].vy += dy*f;
+          }
+        }
+        // Centering
+        nodes[i].vx += (cx - nodes[i].x) * 0.009 * alpha;
+        nodes[i].vy += (cy - nodes[i].y) * 0.009 * alpha;
+      }
+      // Link attraction
+      edges.forEach(function(e) {
+        var dx = e.target.x - e.source.x;
+        var dy = e.target.y - e.source.y;
+        var dist = Math.sqrt(dx*dx + dy*dy) || 1;
+        var idealDist = 90 + Math.max(0, 9 - e.weight) * 12;
+        var f = (dist - idealDist) / dist * 0.07 * alpha;
+        e.source.vx += dx*f; e.source.vy += dy*f;
+        e.target.vx -= dx*f; e.target.vy -= dy*f;
+      });
+      nodes.forEach(function(n) {
+        n.x += n.vx; n.y += n.vy;
+        n.vx *= 0.68; n.vy *= 0.68;
+        n.x = Math.max(n.r + 8, Math.min(W - n.r - 8, n.x));
+        n.y = Math.max(n.r + 8, Math.min(H - n.r - 8, n.y));
+      });
+    }
+
+    // Draw edges
+    edges.forEach(function(e) {
+      var line = document.createElementNS(NS, 'line');
+      line.setAttribute('x1', e.source.x); line.setAttribute('y1', e.source.y);
+      line.setAttribute('x2', e.target.x); line.setAttribute('y2', e.target.y);
+      line.setAttribute('stroke', 'rgba(90,78,62,.15)');
+      line.setAttribute('stroke-width', Math.max(1, e.weight * 0.75));
+      line.setAttribute('stroke-linecap', 'round');
+      line.dataset.tip = e.source.label + ' + ' + e.target.label + ': ' + e.weight + ' startups en común';
+      line.style.cursor = 'default';
+      svg.appendChild(line);
+    });
+
+    // Draw nodes
+    nodes.forEach(function(n) {
+      var iv  = invStats[n.id];
+      var domT = iv ? Object.entries(iv.themes).sort(function(a,b){ return b[1]-a[1]; })[0] : null;
+      var color = (domT && THEME_PAL[domT[0]]) ? THEME_PAL[domT[0]] : '#847E73';
+
+      var circle = document.createElementNS(NS, 'circle');
+      circle.setAttribute('cx', n.x); circle.setAttribute('cy', n.y); circle.setAttribute('r', n.r);
+      circle.setAttribute('fill', color + '22');
+      circle.setAttribute('stroke', color);
+      circle.setAttribute('stroke-width', '1.8');
+      circle.style.cursor = 'pointer';
+      (function(nId, col, circ) {
+        circ.addEventListener('click', function(){ setActiveInvestor(nId === activeInvId ? null : nId); });
+        circ.addEventListener('mouseenter', function(){ circ.setAttribute('fill', col + '48'); });
+        circ.addEventListener('mouseleave', function(){ circ.setAttribute('fill', col + '22'); });
+      })(n.id, color, circle);
+      svg.appendChild(circle);
+
+      var maxCh = Math.max(4, Math.floor(n.r * 0.22));
+      var shortLbl = n.label.length > maxCh ? n.label.slice(0, maxCh) + '…' : n.label;
+      var fsize = Math.max(7.5, Math.min(10.5, n.r * 0.38));
+
+      var t1 = document.createElementNS(NS, 'text');
+      t1.setAttribute('x', n.x); t1.setAttribute('y', n.r >= 22 ? n.y - 4 : n.y);
+      t1.setAttribute('text-anchor', 'middle'); t1.setAttribute('dominant-baseline', 'middle');
+      t1.setAttribute('font-size', fsize); t1.setAttribute('font-weight', '700');
+      t1.setAttribute('font-family', 'inherit'); t1.setAttribute('fill', color);
+      t1.setAttribute('pointer-events', 'none');
+      t1.textContent = shortLbl;
+      svg.appendChild(t1);
+
+      if (n.r >= 22) {
+        var t2 = document.createElementNS(NS, 'text');
+        t2.setAttribute('x', n.x); t2.setAttribute('y', n.y + fsize + 1);
+        t2.setAttribute('text-anchor', 'middle'); t2.setAttribute('dominant-baseline', 'middle');
+        t2.setAttribute('font-size', fsize - 2.5); t2.setAttribute('font-family', 'inherit');
+        t2.setAttribute('fill', color); t2.setAttribute('opacity', '0.62');
+        t2.setAttribute('pointer-events', 'none');
+        t2.textContent = n.deg + ' co-inv';
+        svg.appendChild(t2);
+      }
+    });
+
+    // Tooltip on edges
+    svg.addEventListener('mouseover', function(e) {
+      var tip = e.target.dataset.tip;
+      if (!tip) { ttEl.style.display = 'none'; return; }
+      ttEl.textContent = tip;
+      ttEl.style.display = 'block';
+    });
+    svg.addEventListener('mousemove', function(e) {
+      var rect = wrap.getBoundingClientRect();
+      ttEl.style.left = (e.clientX - rect.left + 14) + 'px';
+      ttEl.style.top  = (e.clientY - rect.top  - 10) + 'px';
+    });
+    svg.addEventListener('mouseout', function() { ttEl.style.display = 'none'; });
   }
 
 }); // DOMContentLoaded

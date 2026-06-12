@@ -662,6 +662,19 @@ def cmd_capital_structure(args: argparse.Namespace) -> None:
     print("\n  Salidas: pilot/capital-structure-data.js, quality/capital_structure_report.md\n")
 
 
+def cmd_enrich_dates(args: argparse.Namespace) -> None:
+    from src.enrich_dates import run as run_enrich
+    dry = getattr(args, "dry_run", False)
+    tag = "  [DRY RUN] " if dry else "  "
+    print(f"\n{tag}Enriqueciendo fechas en investment_edges...\n")
+    res = run_enrich(DB_PATH, dry_run=dry)
+    print(f"{tag}Co-round propagations: {res['propagated']}")
+    print(f"{tag}Cola de curation: {res['queue_size']} edges → {res['queue_path']}")
+    if not dry:
+        print(f"{tag}Log: quality/date_propagation_log.md")
+    print()
+
+
 def cmd_phylo_tree(args: argparse.Namespace) -> None:
     from src.phylo_tree import run as run_phylo
     print("\n  Regenerando árbol evolutivo (phylo)...\n")
@@ -859,6 +872,8 @@ def main() -> None:
     rt.add_argument("--dry-run", action="store_true", help="Genera triage sin tocar DB")
     sub.add_parser("orphan-triage", help="Frente B: tipifica las entidades startup huérfanas (duplicado/fuera-scope/sin-procesar) → quality/orphan_entities_triage.csv")
     sub.add_parser("capital-structure", help="Frente C: pirámide de stages, cohortes, sindicación, dependencia extranjera, HHI → capital-structure-data.js + reporte")
+    ed = sub.add_parser("enrich-dates", help="Propaga fechas por co-round (alta confianza) + genera quality/date_enrichment_queue.csv para curation manual")
+    ed.add_argument("--dry-run", action="store_true", help="Muestra qué propagaría sin tocar DB")
     sub.add_parser("phylo-tree", help="Regenera pilot/phylo-tree-data.js (árbol evolutivo mega→macro→theme→sub→startup)")
     abo = sub.add_parser("apply-bio-overrides", help="Frente B: aplica quality/manual_bio_theme_overrides.csv (compuerta auditable de bio_theme)")
     abo.add_argument("--dry-run", action="store_true", help="Muestra cambios sin tocar DB")
@@ -926,6 +941,7 @@ def main() -> None:
         "reconcile-themes": cmd_reconcile_themes,
         "orphan-triage": cmd_orphan_triage,
         "capital-structure": cmd_capital_structure,
+        "enrich-dates":      cmd_enrich_dates,
         "phylo-tree": cmd_phylo_tree,
         "apply-bio-overrides": cmd_apply_bio_overrides,
         "taxonomy-cards": cmd_taxonomy_cards,

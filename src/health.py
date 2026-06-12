@@ -103,10 +103,22 @@ def run(db_path: pathlib.Path) -> None:
               "Embeddings vs DB", f"{max(emb_age_d, 0):.0f} día(s) más viejos que la DB")
     else:
         _line(RED, "Embeddings", "no existen — correr rebuild --phase embeddings")
-    data_js = list((ROOT / "pilot").glob("*-data.js"))
+    # Solo los bundles generados por el pipeline Python actual
+    PIPELINE_BUNDLES = {
+        "capital-atlas-data.js",
+        "ecosystem-graph-data.js",
+        "ecosystem-health-data.js",
+        "capital-structure-data.js",
+        "coverage-data.js",
+        "phylo-tree-data.js",
+        "startup-themes-data.js",
+        "intelligence-data.js",
+        "ecosystem-diagnostics-data.js",
+    }
+    data_js = [ROOT / "pilot" / name for name in PIPELINE_BUNDLES if (ROOT / "pilot" / name).exists()]
     if data_js:
         stale = [f.name for f in data_js if (db_mtime - f.stat().st_mtime) / 86400 > 7]
-        _line(_verdict(len(stale), 0, 5, higher_is_better=False),
+        _line(_verdict(len(stale), 0, 2, higher_is_better=False),
               "Bundles JS desactualizados (>7d vs DB)", f"{len(stale)}" + (f" — {', '.join(stale[:4])}…" if stale else ""))
     _line(GREEN, "Última entrada de audit_log", last_audit[:16] or "(vacío)")
 
