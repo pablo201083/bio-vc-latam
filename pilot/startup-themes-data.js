@@ -1,5 +1,5 @@
 window.STARTUP_THEMES_DATA = {
-  "computed_at": "2026-06-12T20:00:06",
+  "computed_at": "2026-06-12T20:11:08",
   "model": "intfloat/multilingual-e5-small",
   "stats": {
     "total_startups": 484,
@@ -33239,9 +33239,9 @@ window.STARTUP_THEMES_DATA = {
       "pagerank": 0.0,
       "valuation_tier": null,
       "n_investors_mapped": 0,
-      "bio_theme": "",
+      "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "",
-      "is_bio_universe": null,
+      "is_bio_universe": 1,
       "sub_cluster_label": "",
       "funding_stage": null,
       "funding_bucket_usd": null,
@@ -36506,10 +36506,9 @@ window.STARTUP_THEMES_DATA = {
       "keywords": "dairy · milk · precision fermentation · meat",
       "size": 23,
       "bio_themes": {
-        "Food Systems & Alt Proteins": 14,
+        "Food Systems & Alt Proteins": 15,
         "Biomanufacturing & Platform Technologies": 6,
-        "Therapeutics": 2,
-        "—": 1
+        "Therapeutics": 2
       },
       "tech_codes": {
         "green_chem": 2,
