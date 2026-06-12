@@ -43,33 +43,62 @@ DB_PATH = ROOT / "db" / "bio_latam.db"
 
 THEMES: dict[str, dict] = {
 
+    # Farm Intelligence (rearmado 2026-06-12): SOLO inteligencia bio-coupled —
+    # software/sensores/IA que lee o modula un sistema vivo específico (cultivo, hato).
+    # Las señales financieras/marketplace/logísticas se movieron a "Digital AgTech &
+    # Agrifintech" (eco-adjacent). Ver quality/bio_definition_operativa.md §4 (gate de acople).
     "Farm Intelligence": {
         "description": (
-            "Digital intelligence for agriculture: precision farming platforms, agronomic "
-            "decision tools, satellite/drone monitoring, IoT crop sensors, agrifintech, "
-            "and farm management software."
+            "Bio-coupled digital intelligence for agriculture: precision farming, agronomic "
+            "decision tools, phenotyping, crop/disease monitoring, herd health, and "
+            "precision irrigation that senses or acts on a specific living crop/animal."
         ),
         "domains":        {"agri-food": 0.8},
         "lens":           {},
-        "industry_codes": {"precision_ag": 2.5, "agtech": 1.0, "agrifintech": 2.5,
-                           "farm_management": 2.0},
-        "tech_codes":     {"remote_sensing": 2.0, "satellite": 2.0, "iot": 0.8},
+        "industry_codes": {"precision_ag": 2.5, "agtech": 1.0, "farm_management": 1.0},
+        "tech_codes":     {"remote_sensing": 2.0, "satellite": 1.5, "iot": 0.8},
         "keywords": {
             r"precision.agr": 2.5, r"precision.farm": 2.5,
             r"agronomic.decision": 2.5, r"agronomic.recommend": 2.5,
-            r"agron.*platform": 2.0, r"farm.management": 2.0,
-            r"crop.analytic": 2.5, r"crop.monitor": 2.0,
+            r"agron.*platform": 2.0,
+            r"crop.analytic": 2.5, r"crop.monitor": 2.5,
+            r"crop.disease": 2.5, r"pest.*monitor": 2.5, r"phytosanitary": 2.5,
+            r"phenotyp": 2.5, r"herd.*(health|management)": 2.5, r"dairy.*(intellig|monitor)": 2.0,
             r"satellite.imager": 2.0, r"georeferenced": 2.0,
-            r"multispectral": 1.5, r"drone.*agr": 1.5,
-            r"precision.irrigation": 2.0, r"smart.irrigation": 2.0,
-            r"iot.*crop": 1.5, r"resource.intelligence": 2.5,
-            r"agrifintech": 3.0, r"rural.credit": 2.5, r"rural.finance": 2.5,
-            r"farm.loan": 2.5, r"agricultural.credit": 2.5,
-            r"crop.insurance": 2.0, r"smart.farming": 2.0, r"digital.farm": 2.0,
+            r"multispectral": 2.0, r"hyperspectral": 2.0, r"drone.*agr": 1.5,
+            r"precision.irrigation": 2.5, r"smart.irrigation": 2.5,
+            r"iot.*crop": 2.0, r"soil.*sampl": 2.0,
             r"agronomic.data": 2.5, r"agronomic.efficiency": 2.5,
-            r"agtech": 1.5, r"agrotech": 1.5,
-            r"ai.*agron": 2.0, r"virtual.field": 2.0,
-            r"traceabilit.*agr": 1.5,
+            r"smart.farming": 1.5, r"digital.farm": 1.5,
+            r"ai.*agron": 2.0, r"virtual.field": 2.0, r"weed.detect": 2.5,
+        },
+        "is_bio_default": True,
+    },
+
+    # Digital AgTech & Agrifintech (nuevo 2026-06-12): capa digital/financiera del agro
+    # SIN acople biológico — eco-adjacent (is_bio_default=False). Crédito, seguro,
+    # marketplaces, tokenización, logística, trazabilidad/ERP de gestión, cold-chain.
+    "Digital AgTech & Agrifintech": {
+        "description": (
+            "Digital and financial layer enabling agriculture without direct biological "
+            "coupling: agrifintech (credit, insurance, trade-finance), input/grain "
+            "marketplaces, commodity tokenization, traceability/logistics, farm ERP, and "
+            "cold-chain. Belongs to the broad thesis but biology is not the engine (eco-adjacent)."
+        ),
+        "domains":        {"agri-food": 0.6},
+        "lens":           {},
+        "industry_codes": {"agrifintech": 3.0, "farm_management": 1.5},
+        "tech_codes":     {},
+        "keywords": {
+            r"agrifintech": 3.5, r"agri.fintech": 3.5, r"agfintech": 3.5,
+            r"rural.credit": 3.0, r"rural.finance": 3.0, r"agricultural.credit": 3.0,
+            r"farm.loan": 3.0, r"agro.?cr[eé]dito": 3.0, r"crop.insurance": 2.5,
+            r"trade.finance": 3.0, r"receivable": 2.5, r"digital.bank": 2.5,
+            r"marketplace": 2.5, r"tokeniz": 3.0, r"loyalty": 2.5,
+            r"supply.chain.*platform": 2.0, r"freight": 3.0, r"logistic": 2.0,
+            r"last.mile.*grain": 3.0, r"grain.trading": 2.5, r"commodity.trading": 2.5,
+            r"farm.management.*finance": 2.5, r"cold.chain": 2.5,
+            r"data.infrastructure.*agr": 2.5, r"unified.api.*agr": 2.5,
         },
         "is_bio_default": False,
     },
@@ -490,6 +519,37 @@ def is_bio(row: dict, primary: str | None, scores: dict[str, float]) -> int:
 # DB layer
 # ──────────────────────────────────────────────────────────────────────────────
 
+# Actores cuyos writes son automáticos (el clasificador PUEDE pisarlos).
+# Cualquier otro actor = curación humana/manual y queda LOCKEADA.
+PIPELINE_ACTORS = {"pipeline:reclassify", "auto:reclassify_v2", "clustering"}
+
+
+def manually_locked_ids(conn: sqlite3.Connection) -> set[str]:
+    """startup_ids cuyo ÚLTIMO write a bio_theme_primary lo hizo un actor manual.
+
+    Esas filas son curadas a mano (rearme de acople, re-audit de flag, overrides del
+    curador) y NO deben ser pisadas por el scorer de keywords — que no puede reproducir
+    el juicio de acople B1. Sin este lock, `reclassify-themes` era un campo minado que
+    revertía el trabajo curado. Ver quality/bio_definition_operativa.md changelog 2026-06-12.
+    """
+    # Lockea si el último write a bio_theme_primary O is_bio_universe fue manual.
+    # (El re-audit del flag tocó is_bio_universe sin tocar el tema; ambos deben proteger.)
+    rows = conn.execute(
+        """
+        SELECT a.entity_id, a.actor
+        FROM audit_log a
+        JOIN (
+            SELECT entity_id, MAX(timestamp) AS ts
+            FROM audit_log
+            WHERE field LIKE '%bio_theme_primary%' OR field LIKE '%is_bio_universe%'
+            GROUP BY entity_id
+        ) last ON last.entity_id = a.entity_id AND last.ts = a.timestamp
+        WHERE a.field LIKE '%bio_theme_primary%' OR a.field LIKE '%is_bio_universe%'
+        """
+    ).fetchall()
+    return {eid for eid, actor in rows if actor not in PIPELINE_ACTORS}
+
+
 def load_startups(conn: sqlite3.Connection) -> list[dict]:
     conn.row_factory = sqlite3.Row
     rows = conn.execute("""
@@ -554,9 +614,15 @@ def run(db_path: Path = DB_PATH, dry_run: bool = False) -> tuple[dict, list[dict
         else:
             non_bio_count += 1
 
+    locked = manually_locked_ids(conn)
+    skipped = sum(1 for r in results if r["startup_id"] in locked)
+    print(f"\n  Filas curadas a mano (lockeadas, NO se tocan): {len(locked)}")
+
     if not dry_run:
         updated = 0
         for r in results:
+            if r["startup_id"] in locked:
+                continue  # respeta la curación manual
             n = diff_and_log_update(
                 conn, "startup_extended", "startup_id", r["startup_id"],
                 {
@@ -573,7 +639,7 @@ def run(db_path: Path = DB_PATH, dry_run: bool = False) -> tuple[dict, list[dict
             )
             updated += n
         conn.commit()
-        print(f"\n  Updated {updated} rows in startup_extended")
+        print(f"  Updated {updated} rows in startup_extended ({skipped} lockeadas saltadas)")
 
     conn.close()
 

@@ -473,17 +473,20 @@ const THEME_PAL={
   "Farm Intelligence":                         "#2E4E8C",
   "Biomaterials & Circular Economy":           "#8B6D14",
   "Biomanufacturing & Platform Technologies":  "#6B8C3A",
+  // Eco-adjacent layer — muted slate signals "pertenece pero no es bio-core"
+  "Digital AgTech & Agrifintech":              "#8C8FA3",
   // legacy alias — keeps old data working during transition
   "Biomanufacturing & Fermentation Economy":   "#6B8C3A",
 };
 const THEME_ADJ="#8a7d70"; // eco-adjacent / unclassified
 
-// Ordered list for sidebar + theme-grid view
+// Ordered list for sidebar + theme-grid view (eco-adjacent al final)
 const THEME_ORDER=[
   "Therapeutics","Diagnostics & Health Access","Food Systems & Alt Proteins",
   "Bioinputs & Crop Resilience","Nature & Ecosystem Tech",
   "Farm Intelligence","Biomaterials & Circular Economy",
-  "Biomanufacturing & Platform Technologies"
+  "Biomanufacturing & Platform Technologies",
+  "Digital AgTech & Agrifintech"
 ];
 
 function themeCol(bio_theme){
@@ -539,6 +542,7 @@ const SHORT_THEME_LEGEND={
   "Farm Intelligence":"Farm Intel.",
   "Biomaterials & Circular Economy":"Biomaterials",
   "Biomanufacturing & Platform Technologies":"Biomanufacturing",
+  "Digital AgTech & Agrifintech":"Digital AgTech",
 };
 const legendEl=document.getElementById("sh-theme-legend");
 if(legendEl){
@@ -1048,6 +1052,7 @@ function updateHalos(){
       "Biomaterials & Circular Economy":"Biomaterials",
       "Biomanufacturing & Platform Technologies":"Biomanufacturing",
       "Biomanufacturing & Fermentation Economy":"Biomanufacturing",
+      "Digital AgTech & Agrifintech":"Digital AgTech",
     };
     const shortName=LABEL_SHORT[theme]||theme.split(" ")[0];
     const fs=11;
