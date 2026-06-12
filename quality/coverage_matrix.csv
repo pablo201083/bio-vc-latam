@@ -75,30 +75,49 @@ Diagnostics & Health Access,PY,0,0.0,0.0,,0.0,under_explored,no_explorado
 Diagnostics & Health Access,US,0,0.0,0.0,,0.0,fuera_de_foco,fuera_de_foco
 Diagnostics & Health Access,UY,3,0.667,0.667,gridx,0.667,under_explored,no_explorado
 Diagnostics & Health Access,VE,0,0.0,0.0,,0.0,under_explored,no_explorado
-Farm Intelligence,AR,17,0.941,0.941,(sin provenance),0.647,well_mapped,bien_mapeado
+Digital AgTech & Agrifintech,AR,7,1.0,0.857,(sin provenance),0.571,well_mapped,bien_mapeado
+Digital AgTech & Agrifintech,BM,0,0.0,0.0,,0.0,fuera_de_foco,fuera_de_foco
+Digital AgTech & Agrifintech,BO,0,0.0,0.0,,0.0,under_explored,no_explorado
+Digital AgTech & Agrifintech,BR,11,1.0,1.0,web_research_2026,0.545,well_mapped,bien_mapeado
+Digital AgTech & Agrifintech,CL,0,0.0,0.0,,0.0,well_mapped,vacio_observado
+Digital AgTech & Agrifintech,CO,3,1.0,0.667,(sin provenance),0.667,under_explored,no_explorado
+Digital AgTech & Agrifintech,CR,0,0.0,0.0,,0.0,under_explored,no_explorado
+Digital AgTech & Agrifintech,DO,0,0.0,0.0,,0.0,under_explored,no_explorado
+Digital AgTech & Agrifintech,EC,0,0.0,0.0,,0.0,under_explored,no_explorado
+Digital AgTech & Agrifintech,GT,0,0.0,0.0,,0.0,under_explored,no_explorado
+Digital AgTech & Agrifintech,MX,2,1.0,1.0,(sin provenance),1.0,partial,parcial
+Digital AgTech & Agrifintech,NL,0,0.0,0.0,,0.0,fuera_de_foco,fuera_de_foco
+Digital AgTech & Agrifintech,PA,0,0.0,0.0,,0.0,under_explored,no_explorado
+Digital AgTech & Agrifintech,PE,0,0.0,0.0,,0.0,under_explored,no_explorado
+Digital AgTech & Agrifintech,PR,0,0.0,0.0,,0.0,fuera_de_foco,fuera_de_foco
+Digital AgTech & Agrifintech,PY,0,0.0,0.0,,0.0,under_explored,no_explorado
+Digital AgTech & Agrifintech,US,1,1.0,1.0,web_research_2026,1.0,fuera_de_foco,fuera_de_foco
+Digital AgTech & Agrifintech,UY,0,0.0,0.0,,0.0,under_explored,no_explorado
+Digital AgTech & Agrifintech,VE,0,0.0,0.0,,0.0,under_explored,no_explorado
+Farm Intelligence,AR,9,0.889,1.0,(sin provenance),0.778,well_mapped,parcial
 Farm Intelligence,BM,0,0.0,0.0,,0.0,fuera_de_foco,fuera_de_foco
 Farm Intelligence,BO,0,0.0,0.0,,0.0,under_explored,no_explorado
-Farm Intelligence,BR,35,0.771,0.886,web_research_2026,0.514,well_mapped,bien_mapeado
-Farm Intelligence,CL,6,0.667,0.667,(sin provenance),0.667,well_mapped,bien_mapeado
-Farm Intelligence,CO,4,1.0,0.75,web_research_2026,0.5,under_explored,no_explorado
+Farm Intelligence,BR,23,0.652,0.826,web_research_2026,0.522,well_mapped,bien_mapeado
+Farm Intelligence,CL,5,0.6,0.6,(sin provenance),0.8,well_mapped,parcial
+Farm Intelligence,CO,1,1.0,1.0,web_research_2026,1.0,under_explored,no_explorado
 Farm Intelligence,CR,0,0.0,0.0,,0.0,under_explored,no_explorado
 Farm Intelligence,DO,0,0.0,0.0,,0.0,under_explored,no_explorado
 Farm Intelligence,EC,0,0.0,0.0,,0.0,under_explored,no_explorado
 Farm Intelligence,GT,0,0.0,0.0,,0.0,under_explored,no_explorado
-Farm Intelligence,MX,2,1.0,1.0,(sin provenance),1.0,partial,parcial
+Farm Intelligence,MX,0,0.0,0.0,,0.0,partial,vacio_observado
 Farm Intelligence,NL,0,0.0,0.0,,0.0,fuera_de_foco,fuera_de_foco
 Farm Intelligence,PA,0,0.0,0.0,,0.0,under_explored,no_explorado
 Farm Intelligence,PE,1,1.0,1.0,web_research_2026,1.0,under_explored,no_explorado
 Farm Intelligence,PR,0,0.0,0.0,,0.0,fuera_de_foco,fuera_de_foco
 Farm Intelligence,PY,0,0.0,0.0,,0.0,under_explored,no_explorado
-Farm Intelligence,US,1,1.0,1.0,web_research_2026,1.0,fuera_de_foco,fuera_de_foco
+Farm Intelligence,US,0,0.0,0.0,,0.0,fuera_de_foco,fuera_de_foco
 Farm Intelligence,UY,0,0.0,0.0,,0.0,under_explored,no_explorado
 Farm Intelligence,VE,0,0.0,0.0,,0.0,under_explored,no_explorado
-Food Systems & Alt Proteins,AR,18,0.833,0.944,gridx,0.611,well_mapped,bien_mapeado
+Food Systems & Alt Proteins,AR,19,0.842,0.947,gridx,0.632,well_mapped,bien_mapeado
 Food Systems & Alt Proteins,BM,0,0.0,0.0,,0.0,fuera_de_foco,fuera_de_foco
 Food Systems & Alt Proteins,BO,0,0.0,0.0,,0.0,under_explored,no_explorado
-Food Systems & Alt Proteins,BR,11,0.545,0.545,gridx,0.545,well_mapped,parcial
-Food Systems & Alt Proteins,CL,24,0.375,0.458,gridx,0.542,well_mapped,parcial
+Food Systems & Alt Proteins,BR,12,0.583,0.583,gridx,0.5,well_mapped,parcial
+Food Systems & Alt Proteins,CL,25,0.4,0.48,gridx,0.52,well_mapped,parcial
 Food Systems & Alt Proteins,CO,4,1.0,0.0,gridx,0.75,under_explored,no_explorado
 Food Systems & Alt Proteins,CR,2,0.0,0.0,gridx,1.0,under_explored,no_explorado
 Food Systems & Alt Proteins,DO,0,0.0,0.0,,0.0,under_explored,no_explorado

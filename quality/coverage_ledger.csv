@@ -28,6 +28,7 @@ audit:2026-06:pipeline:enrich_founded_year,2026-06,pipeline:enrich_founded_year,
 audit:2026-06:human:curador,2026-06,human:curador,audit_log,85,85,AR;BR;BS;CA;CL;CO;GT;MX;NI;PE,0 tabla(s) tocadas
 audit:2026-06:pipeline:reconcile_themes,2026-06,pipeline:reconcile_themes,audit_log,78,78,AR;BR;CL;CO;CR;MX;US;UY,0 tabla(s) tocadas
 audit:2026-06:pipeline/infer-tier,2026-06,pipeline/infer-tier,audit_log,68,68,AR;BR;BS;CA;CL;CO;GT;MX;NI;PE,0 tabla(s) tocadas
+audit:2026-06:taxonomy/rearm-farm-intelligence,2026-06,taxonomy/rearm-farm-intelligence,audit_log,62,48,AR;BR;CL;CO;MX;PE;US,0 tabla(s) tocadas
 audit:2026-06:coverage/assign-themes-cl06-co02,2026-06,coverage/assign-themes-cl06-co02,audit_log,33,11,CL;CO,0 tabla(s) tocadas
 audit:2026-06:curator:aum_research_2026,2026-06,curator:aum_research_2026,audit_log,22,22,AR;BR;CL;CR;ES;PE;US,0 tabla(s) tocadas
 audit:2026-06:coverage/fix-cl06-co02-scope,2026-06,coverage/fix-cl06-co02-scope,audit_log,19,11,CL;CO,0 tabla(s) tocadas

@@ -2,20 +2,31 @@
 
 _Generado 2026-06-10 desde `src/reclassify.py` (THEMES) + la DB. Regenerar con `python pipeline.py taxonomy-cards`._
 
-La taxonomía operativa es **single-level**: un tema primario por startup. Estas 8 fichas son la referencia legible para terceros y el estándar contra el que se valida cada clasificación. El principio de desambiguación es **el destino del output**, no el mecanismo biológico.
+La taxonomía operativa es **single-level**: un tema primario por startup. Estas fichas son la referencia legible para terceros y el estándar contra el que se valida cada clasificación. El principio de desambiguación es **el destino del output**, no el mecanismo biológico.
 
-**496 startups `include`** distribuidas en 8 temas.
+**496 startups `include`** distribuidas en 9 temas (8 bio-core/coupled + 1 eco-adjacent).
 
-| Tema | n | Cross-cutting |
-|------|---|---------------|
-| Diagnostics & Health Access | 110 | — |
-| Therapeutics | 82 | — |
-| Food Systems & Alt Proteins | 65 | — |
-| Farm Intelligence | 64 | — |
-| Bioinputs & Crop Resilience | 61 | — |
-| Biomaterials & Circular Economy | 54 | — |
-| Nature & Ecosystem Tech | 34 | — |
-| Biomanufacturing & Platform Technologies | 26 | transversal |
+| Tema | n | bio=0 | Intensidad |
+|------|---|-------|------------|
+| Diagnostics & Health Access | 110 | 7 | bio-core |
+| Therapeutics | 81 | 3 | bio-core |
+| Food Systems & Alt Proteins | 74 | 1 | bio-core |
+| Bioinputs & Crop Resilience | 64 | 4 | bio-core |
+| Biomaterials & Circular Economy | 54 | 6 | bio-core |
+| Farm Intelligence *(rearmado)* | 39 | **0** | bio-coupled (B1/B2) |
+| **Digital AgTech & Agrifintech** *(nuevo)* | 24 | 24 | **eco-adjacent · is_bio=0** |
+| Nature & Ecosystem Tech | 34 | 2 | bio-core |
+| Biomanufacturing & Platform Technologies | 27 | 2 | transversal |
+
+> ✅ **Rearme ejecutado (2026-06-12).** El viejo Farm Intelligence catch-all (66, 47% bio=0) se
+> partió bajo el **gate de acople B1**: 39 quedan (acople a cultivo/hato; **0% bio=0**, homogéneo),
+> 24 salen a *Digital AgTech & Agrifintech* (eco-adjacent, is_bio=0), 3 (vertical farming) van a
+> Food Systems por destino del output. Reasignación en DB vía `diff_and_log_update`
+> (`scripts/oneoff/rearm_farm_intelligence.py`). Todos los temas bio quedan ≤11% bio=0.
+>
+> ⚠️ El clasificador `src/reclassify.py` todavía tiene un solo "Farm Intelligence" con
+> `is_bio_default: False` y keywords de agrifintech — **debe partirse o un `reclassify-themes`
+> revierte el rearme.** Mismo estado pendiente que Biomanufacturing.
 
 
 ---
@@ -96,27 +107,62 @@ Key distinction from Biomaterials: the END PRODUCT is ingested (food, supplement
 
 ---
 
-## Farm Intelligence  ·  64 startups
+## Farm Intelligence  ·  ~35 startups *(angostado 2026-06-12)*
 
-**Definición.** Digital intelligence for agriculture: precision farming platforms, agronomic decision tools, satellite/drone monitoring, IoT crop sensors, agrifintech, and farm management software.
+**Definición.** Inteligencia digital **bio-coupled / TechBio** para agricultura: software, sensores o IA cuyo objeto es un sistema vivo específico — este cultivo, este patógeno, este hato. Cubre agronomía de precisión, fenotipado, genómica/microbioma aplicada, modelos de resistencia a enfermedad, sanidad de hato y riego de precisión atado a la biología del cultivo.
+
+**Gate de admisión (3 condiciones, todas obligatorias)** — `bio_definition_operativa.md` §4:
+1. **Foco bio específico** — un organismo/sistema vivo concreto, no "el agro" en general.
+2. **Entendimiento bio clave** — incorpora conocimiento biológico real (genómica, fisiología, microbioma, patología, fenotipo).
+3. **Soporte tech = representación de la biología** (clase Isomorphic/AlphaFold) — modela/predice/representa el estado biológico. Sensar o rociar un campo, o mover datos, **no** alcanza sin modelo biológico detrás.
+
+Si no cumple las tres → **Digital AgTech & Agrifintech** (eco-adjacent). Un puro sistema de telemetría IoT o data-infrastructure sin modelo biológico es plomería, no TechBio.
+
+> ⚠️ Tema **angostado**. Antes incluía toda la capa digital del agro (agrifintech, marketplaces, ERP). Esa cola eco-adjacent se movió a **Digital AgTech & Agrifintech** (`is_bio_universe=0`). Ver split en `bio_definition_operativa.md`.
 
 **Fronteras (cómo se decide en casos límite).**
 
-- vs **Bioinputs & Crop Resilience**: Farm Intelligence es *software/datos* (sensores, satélite, agrofintech); Bioinputs es un *producto biológico* aplicado al cultivo.
+- vs **Digital AgTech & Agrifintech**: si el software lee/modula un sistema vivo específico (agronomía de precisión, sanidad de hato) → Farm Intelligence (bio-coupled); si es financiero/marketplace/logístico/ERP sin lectura biológica → Digital AgTech (eco-adjacent). El dominio `agri-food` **no** basta para acople.
+- vs **Bioinputs & Crop Resilience**: Farm Intelligence es *software/datos* acoplados al cultivo; Bioinputs es un *producto biológico* aplicado al cultivo.
 - vs **Nature & Ecosystem Tech**: si el objeto es el rendimiento del productor → Farm Intelligence; si el objeto es el ecosistema/carbono/biodiversidad → Nature.
 
-**Startups arquetípicas** (mayor confianza, con fuente externa):
+**Startups arquetípicas** (bio-coupled, con fuente externa):
 
-- **Aegro** (BR) — Farm operations and financial management platform.
-- **Agrosmart** (BR) — Climate-smart agronomic and irrigation intelligence platform.
+- **Agrosmart** (BR) — Climate-smart agronomic and irrigation intelligence platform (acople al cultivo).
+- **DeepAgro** (AR) — Computer vision para spraying selectivo sobre maleza/cultivo específico.
 - **BemAgro** (BR) — AI and drone-imagery SaaS for high-resolution crop intelligence.
-- **Precision Ag** (BR) — Agricultural drone spraying and crop-monitoring services.
-- **Seedz** (BR) — Agribusiness loyalty, marketplace and producer-intelligence platform.
+- **Rumina** (BR) — Inteligencia de sanidad y producción de hato lechero.
+- **Inspectral** (BR) — Multispectral/hyperspectral imagery para leer estado fisiológico del cultivo.
+
+**Queda explícitamente afuera** (→ Digital AgTech & Agrifintech).
+
+- Agrifintech: crédito/seguro rural, trade-finance, bancos digitales (Agrolend, Agricapital, TerraMagna).
+- Marketplaces, tokenización, trazabilidad/logística, ERP de gestión sin lectura biológica.
+
+
+---
+
+## Digital AgTech & Agrifintech  ·  ~31 startups *(nuevo 2026-06-12 · eco-adjacent · is_bio_universe=0)*
+
+**Definición.** Capa **digital y financiera** que habilita al agro sin acople biológico directo: agrifintech (crédito, seguro, trade-finance), marketplaces y plataformas B2B de insumos/granos, tokenización de commodities, trazabilidad/logística, ERP y farm-management de gestión. Pertenece a la tesis amplia BIO LATAM por el vínculo con la transición del sistema agroalimentario, pero **la biología no es el motor** — es `eco-adjacent` (`scope_decision=include`, `is_bio_universe=0`). No se esconde ni se fuerza a un tema bio.
+
+**Fronteras (cómo se decide en casos límite).**
+
+- vs **Farm Intelligence**: falla el **test de acople** — el software no lee ni modula un sistema vivo específico; sirve a cualquier transacción/gestión agrícola.
+- **Crédito/seguro puro sin tesis material** → candidato a `review`/`exclude` (falla *pertenencia*, no solo intensidad). Distinguir del agrifintech que financia la transición agroecológica.
+
+**Startups arquetípicas** (eco-adjacent, con fuente externa):
+
+- **Agrolend** (BR) — Agricultural credit / agfintech (banco digital agro).
+- **Agrotoken** (AR) — Tokenización de granos como colateral.
+- **Agrofy** (AR) — Marketplace y ecosistema digital de agronegocios.
+- **TerraMagna** (BR) — Crédito, receivables e infraestructura de fondos agro.
+- **goFlux** (BR) — Freight SaaS B2B para logística agrícola.
 
 **Queda explícitamente afuera.**
 
-- Fintech agrícola sin acople biológico ni de recursos (crédito puro, marketplace).
-- Logística/trading de commodities como software horizontal.
+- Cualquier empresa con acople biológico directo → Farm Intelligence o Bioinputs.
+- Fintech horizontal sin vertical agro → fuera de la tesis (`exclude`).
 
 
 ---

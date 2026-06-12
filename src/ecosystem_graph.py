@@ -57,6 +57,8 @@ THEME_COLORS = {
     "Biomaterials":                     "#C4A85A",
     "Biomanufacturing":                 "#9FA8E8",
     "Food Systems":                     "#5FA05E",
+    "Farm Intelligence":                "#9FB85A",
+    "Digital AgTech & Agrifintech":     "#8C8FA3",
 }
 DEFAULT_STARTUP_COLOR = "#A0A0A0"
 
