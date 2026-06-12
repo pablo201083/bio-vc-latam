@@ -2,9 +2,9 @@ window.CAPITAL_STRUCTURE = {
   "pyramid": {
     "global": {
       "Pre-seed / Accelerator": 64,
-      "Seed": 169,
-      "Series A": 45,
-      "Growth (B–D)": 21,
+      "Seed": 161,
+      "Series A": 42,
+      "Growth (B–D)": 19,
       "Exit / IPO": 5
     },
     "by_theme": {
@@ -31,18 +31,6 @@ window.CAPITAL_STRUCTURE = {
         "funded": 26,
         "no_capital_documented": 8,
         "early_to_growth_ratio": 0.53
-      },
-      "Digital AgTech & Agrifintech": {
-        "levels": {
-          "Pre-seed / Accelerator": 0,
-          "Seed": 8,
-          "Series A": 3,
-          "Growth (B–D)": 2,
-          "Exit / IPO": 0
-        },
-        "funded": 13,
-        "no_capital_documented": 11,
-        "early_to_growth_ratio": 0.62
       },
       "Food Systems & Alt Proteins": {
         "levels": {
@@ -169,8 +157,8 @@ window.CAPITAL_STRUCTURE = {
       },
       {
         "year": 2009,
-        "funded": 5,
-        "total": 6
+        "funded": 4,
+        "total": 5
       },
       {
         "year": 2010,
@@ -199,8 +187,8 @@ window.CAPITAL_STRUCTURE = {
       },
       {
         "year": 2015,
-        "funded": 10,
-        "total": 22
+        "funded": 9,
+        "total": 21
       },
       {
         "year": 2016,
@@ -209,28 +197,28 @@ window.CAPITAL_STRUCTURE = {
       },
       {
         "year": 2017,
-        "funded": 15,
-        "total": 27
+        "funded": 13,
+        "total": 25
       },
       {
         "year": 2018,
-        "funded": 28,
-        "total": 48
+        "funded": 25,
+        "total": 45
       },
       {
         "year": 2019,
-        "funded": 59,
-        "total": 75
+        "funded": 55,
+        "total": 71
       },
       {
         "year": 2020,
-        "funded": 53,
-        "total": 67
+        "funded": 50,
+        "total": 64
       },
       {
         "year": 2021,
-        "funded": 60,
-        "total": 72
+        "funded": 59,
+        "total": 71
       },
       {
         "year": 2022,
@@ -635,11 +623,6 @@ window.CAPITAL_STRUCTURE = {
       "foreign_edges": 16,
       "foreign_pct": 0.302
     },
-    "Digital AgTech & Agrifintech": {
-      "edges": 46,
-      "foreign_edges": 19,
-      "foreign_pct": 0.413
-    },
     "Precision Agriculture": {
       "edges": 49,
       "foreign_edges": 15,
@@ -689,12 +672,6 @@ window.CAPITAL_STRUCTURE = {
       "top_investor": "GridX",
       "top_investor_share": 0.321
     },
-    "Digital AgTech & Agrifintech": {
-      "hhi": 0.096,
-      "n_investors": 24,
-      "top_investor": "sp_ventures",
-      "top_investor_share": 0.217
-    },
     "Precision Agriculture": {
       "hhi": 0.096,
       "n_investors": 20,
@@ -703,7 +680,7 @@ window.CAPITAL_STRUCTURE = {
     }
   },
   "capital_gap": {
-    "total_without_capital": 153,
+    "total_without_capital": 151,
     "by_theme": {
       "Precision Agriculture": {
         "without_capital": 6,
@@ -719,11 +696,6 @@ window.CAPITAL_STRUCTURE = {
         "without_capital": 4,
         "total": 34,
         "pct": 0.118
-      },
-      "Digital AgTech & Agrifintech": {
-        "without_capital": 2,
-        "total": 24,
-        "pct": 0.083
       },
       "Bioinputs & Crop Resilience": {
         "without_capital": 19,

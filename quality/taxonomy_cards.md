@@ -4,7 +4,8 @@ _Generado 2026-06-10 desde `src/reclassify.py` (THEMES) + la DB. Regenerar con `
 
 La taxonomía operativa es **single-level**: un tema primario por startup. Estas fichas son la referencia legible para terceros y el estándar contra el que se valida cada clasificación. El principio de desambiguación es **el destino del output**, no el mecanismo biológico.
 
-**496 startups `include`** distribuidas en 9 temas (8 bio-core/coupled + 1 eco-adjacent).
+**484 startups `include`** distribuidas en 8 temas bio-core/coupled. (El corpus default
+**excluye** la capa eco-adjacent Digital AgTech & Agrifintech por recorte estratégico — ver nota abajo.)
 
 | Tema | n | bio=0 | Intensidad |
 |------|---|-------|------------|
@@ -14,9 +15,18 @@ La taxonomía operativa es **single-level**: un tema primario por startup. Estas
 | Bioinputs & Crop Resilience | 64 | 0 | bio-core |
 | Biomaterials & Green Chemistry | 54 | 3 | bio-core |
 | Precision Agriculture *(rearmado)* | 39 | **0** | bio-coupled (B1/B2) |
-| **Digital AgTech & Agrifintech** *(nuevo)* | 24 | 24 | **eco-adjacent · is_bio=0** |
 | Nature & Ecosystem Tech | 34 | 2 | bio-core |
 | Biomanufacturing & Platform Technologies | 27 | 1 | transversal |
+| ~~Digital AgTech & Agrifintech~~ *(excluido)* | 24 | — | **fuera del corpus · scope=exclude** |
+
+> 🚫 **Recorte estratégico — Digital AgTech & Agrifintech excluido del corpus (2026-06-12).**
+> El curador sacó las 24 empresas de agrifintech/crédito/marketplace/tokenización/logística del
+> universo `include` (`scope_decision=exclude`, `scripts/oneoff/exclude_digital_agtech.py`). Razón:
+> **dinámica de financiamiento distinta** (deuda/crédito/fintech vs equity biotech) que sesga toda
+> lectura de capital del corpus bio. No es un juicio de "no-bio" (ya eran eco-adjacent is_bio=0): es
+> un recorte de corpus **por encima** del eje de intensidad. Reversible re-incluyendo. El tema sigue
+> registrado en `reclassify.py` (para identificar y excluir futuro agrifintech) pero removido de las
+> vistas (phylo, dendrograma). Corpus include: 508 → **484**.
 
 > ✅ **Re-audit del flag `is_bio_universe` (P1, 2026-06-12).** El rearme reveló que el flag estaba
 > mal puesto de forma sistémica. 17 empresas bio-core estaban marcadas bio=0 (genómica, diagnóstico

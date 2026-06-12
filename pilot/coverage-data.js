@@ -1,10 +1,10 @@
 window.COVERAGE_DATA = {
-  "generated_at": "2026-06-12T17:10:20+00:00",
+  "generated_at": "2026-06-12T23:00:18+00:00",
   "countries": {
     "AR": {
       "tier": "well_mapped",
-      "n_includes": 178,
-      "evidence_pct": 0.837,
+      "n_includes": 171,
+      "evidence_pct": 0.83,
       "n_patches": 3,
       "n_local_investors": 15
     },
@@ -17,8 +17,8 @@ window.COVERAGE_DATA = {
     },
     "BR": {
       "tier": "well_mapped",
-      "n_includes": 153,
-      "evidence_pct": 0.444,
+      "n_includes": 142,
+      "evidence_pct": 0.401,
       "n_patches": 3,
       "n_local_investors": 33
     },
@@ -31,8 +31,8 @@ window.COVERAGE_DATA = {
     },
     "CO": {
       "tier": "under_explored",
-      "n_includes": 14,
-      "evidence_pct": 0.929,
+      "n_includes": 11,
+      "evidence_pct": 0.909,
       "n_patches": 3,
       "n_local_investors": 1
     },
@@ -52,8 +52,8 @@ window.COVERAGE_DATA = {
     },
     "MX": {
       "tier": "partial",
-      "n_includes": 41,
-      "evidence_pct": 0.268,
+      "n_includes": 39,
+      "evidence_pct": 0.231,
       "n_patches": 2,
       "n_local_investors": 2
     },
@@ -87,9 +87,9 @@ window.COVERAGE_DATA = {
     },
     "US": {
       "tier": "fuera_de_foco",
-      "n_includes": 12,
-      "evidence_pct": 0.917,
-      "n_patches": 2,
+      "n_includes": 11,
+      "evidence_pct": 0.909,
+      "n_patches": 1,
       "n_local_investors": 21
     },
     "UY": {
@@ -1036,215 +1036,6 @@ window.COVERAGE_DATA = {
       "coverage_label": "no_explorado"
     },
     {
-      "theme": "Digital AgTech & Agrifintech",
-      "country": "AR",
-      "n_startups": 7,
-      "evidence_pct": 1.0,
-      "capital_pct": 0.857,
-      "dominant_source": "(sin provenance)",
-      "dominant_source_share": 0.571,
-      "country_tier": "well_mapped",
-      "coverage_label": "bien_mapeado"
-    },
-    {
-      "theme": "Digital AgTech & Agrifintech",
-      "country": "BM",
-      "n_startups": 0,
-      "evidence_pct": 0.0,
-      "capital_pct": 0.0,
-      "dominant_source": "",
-      "dominant_source_share": 0.0,
-      "country_tier": "fuera_de_foco",
-      "coverage_label": "fuera_de_foco"
-    },
-    {
-      "theme": "Digital AgTech & Agrifintech",
-      "country": "BO",
-      "n_startups": 0,
-      "evidence_pct": 0.0,
-      "capital_pct": 0.0,
-      "dominant_source": "",
-      "dominant_source_share": 0.0,
-      "country_tier": "under_explored",
-      "coverage_label": "no_explorado"
-    },
-    {
-      "theme": "Digital AgTech & Agrifintech",
-      "country": "BR",
-      "n_startups": 11,
-      "evidence_pct": 1.0,
-      "capital_pct": 1.0,
-      "dominant_source": "web_research_2026",
-      "dominant_source_share": 0.545,
-      "country_tier": "well_mapped",
-      "coverage_label": "bien_mapeado"
-    },
-    {
-      "theme": "Digital AgTech & Agrifintech",
-      "country": "CL",
-      "n_startups": 0,
-      "evidence_pct": 0.0,
-      "capital_pct": 0.0,
-      "dominant_source": "",
-      "dominant_source_share": 0.0,
-      "country_tier": "well_mapped",
-      "coverage_label": "vacio_observado"
-    },
-    {
-      "theme": "Digital AgTech & Agrifintech",
-      "country": "CO",
-      "n_startups": 3,
-      "evidence_pct": 1.0,
-      "capital_pct": 0.667,
-      "dominant_source": "(sin provenance)",
-      "dominant_source_share": 0.667,
-      "country_tier": "under_explored",
-      "coverage_label": "no_explorado"
-    },
-    {
-      "theme": "Digital AgTech & Agrifintech",
-      "country": "CR",
-      "n_startups": 0,
-      "evidence_pct": 0.0,
-      "capital_pct": 0.0,
-      "dominant_source": "",
-      "dominant_source_share": 0.0,
-      "country_tier": "under_explored",
-      "coverage_label": "no_explorado"
-    },
-    {
-      "theme": "Digital AgTech & Agrifintech",
-      "country": "DO",
-      "n_startups": 0,
-      "evidence_pct": 0.0,
-      "capital_pct": 0.0,
-      "dominant_source": "",
-      "dominant_source_share": 0.0,
-      "country_tier": "under_explored",
-      "coverage_label": "no_explorado"
-    },
-    {
-      "theme": "Digital AgTech & Agrifintech",
-      "country": "EC",
-      "n_startups": 0,
-      "evidence_pct": 0.0,
-      "capital_pct": 0.0,
-      "dominant_source": "",
-      "dominant_source_share": 0.0,
-      "country_tier": "under_explored",
-      "coverage_label": "no_explorado"
-    },
-    {
-      "theme": "Digital AgTech & Agrifintech",
-      "country": "GT",
-      "n_startups": 0,
-      "evidence_pct": 0.0,
-      "capital_pct": 0.0,
-      "dominant_source": "",
-      "dominant_source_share": 0.0,
-      "country_tier": "under_explored",
-      "coverage_label": "no_explorado"
-    },
-    {
-      "theme": "Digital AgTech & Agrifintech",
-      "country": "MX",
-      "n_startups": 2,
-      "evidence_pct": 1.0,
-      "capital_pct": 1.0,
-      "dominant_source": "(sin provenance)",
-      "dominant_source_share": 1.0,
-      "country_tier": "partial",
-      "coverage_label": "parcial"
-    },
-    {
-      "theme": "Digital AgTech & Agrifintech",
-      "country": "NL",
-      "n_startups": 0,
-      "evidence_pct": 0.0,
-      "capital_pct": 0.0,
-      "dominant_source": "",
-      "dominant_source_share": 0.0,
-      "country_tier": "fuera_de_foco",
-      "coverage_label": "fuera_de_foco"
-    },
-    {
-      "theme": "Digital AgTech & Agrifintech",
-      "country": "PA",
-      "n_startups": 0,
-      "evidence_pct": 0.0,
-      "capital_pct": 0.0,
-      "dominant_source": "",
-      "dominant_source_share": 0.0,
-      "country_tier": "under_explored",
-      "coverage_label": "no_explorado"
-    },
-    {
-      "theme": "Digital AgTech & Agrifintech",
-      "country": "PE",
-      "n_startups": 0,
-      "evidence_pct": 0.0,
-      "capital_pct": 0.0,
-      "dominant_source": "",
-      "dominant_source_share": 0.0,
-      "country_tier": "under_explored",
-      "coverage_label": "no_explorado"
-    },
-    {
-      "theme": "Digital AgTech & Agrifintech",
-      "country": "PR",
-      "n_startups": 0,
-      "evidence_pct": 0.0,
-      "capital_pct": 0.0,
-      "dominant_source": "",
-      "dominant_source_share": 0.0,
-      "country_tier": "fuera_de_foco",
-      "coverage_label": "fuera_de_foco"
-    },
-    {
-      "theme": "Digital AgTech & Agrifintech",
-      "country": "PY",
-      "n_startups": 0,
-      "evidence_pct": 0.0,
-      "capital_pct": 0.0,
-      "dominant_source": "",
-      "dominant_source_share": 0.0,
-      "country_tier": "under_explored",
-      "coverage_label": "no_explorado"
-    },
-    {
-      "theme": "Digital AgTech & Agrifintech",
-      "country": "US",
-      "n_startups": 1,
-      "evidence_pct": 1.0,
-      "capital_pct": 1.0,
-      "dominant_source": "web_research_2026",
-      "dominant_source_share": 1.0,
-      "country_tier": "fuera_de_foco",
-      "coverage_label": "fuera_de_foco"
-    },
-    {
-      "theme": "Digital AgTech & Agrifintech",
-      "country": "UY",
-      "n_startups": 0,
-      "evidence_pct": 0.0,
-      "capital_pct": 0.0,
-      "dominant_source": "",
-      "dominant_source_share": 0.0,
-      "country_tier": "under_explored",
-      "coverage_label": "no_explorado"
-    },
-    {
-      "theme": "Digital AgTech & Agrifintech",
-      "country": "VE",
-      "n_startups": 0,
-      "evidence_pct": 0.0,
-      "capital_pct": 0.0,
-      "dominant_source": "",
-      "dominant_source_share": 0.0,
-      "country_tier": "under_explored",
-      "coverage_label": "no_explorado"
-    },
-    {
       "theme": "Food Systems & Alt Proteins",
       "country": "AR",
       "n_startups": 19,
@@ -2082,13 +1873,13 @@ window.COVERAGE_DATA = {
     }
   ],
   "label_counts": {
-    "bien_mapeado": 12,
-    "fuera_de_foco": 36,
-    "no_explorado": 99,
-    "parcial": 22,
-    "vacio_observado": 2
+    "bien_mapeado": 10,
+    "fuera_de_foco": 32,
+    "no_explorado": 88,
+    "parcial": 21,
+    "vacio_observado": 1
   },
-  "debias_queue_size": 90,
+  "debias_queue_size": 89,
   "legend": {
     "bien_mapeado": "Volumen + evidencia externa + fuentes diversas: la celda es confiable.",
     "parcial": "Hay datos, pero con evidencia floja o dependientes de un solo parche.",

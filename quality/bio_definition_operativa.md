@@ -42,6 +42,14 @@ Una celda `include + is_bio_universe=0` es **legítima y deseable**: marca una e
 eco-adyacente que pertenece al ecosistema pero cuyo motor no es biológico. No la
 escondemos ni la forzamos a un tema biológico que no le corresponde.
 
+**Tercer eje — recorte estratégico de corpus (por encima de los dos anteriores).** Una empresa
+puede pasar pertenencia *y* tener una intensidad definida y aun así quedar **fuera del corpus default**
+por una decisión estratégica del curador — típicamente cuando su **dinámica de financiamiento** o de
+mercado distorsiona la lectura del universo bio. Se implementa con `scope_decision=exclude` (reversible).
+No es un juicio de "no-bio" ni de "no pertenece": es un recorte de alcance del Observatorio.
+**Precedente:** *Digital AgTech & Agrifintech* (24 empresas) — excluido 2026-06-12 porque el agrifintech
+levanta deuda/crédito (no equity biotech) y sesga toda métrica de capital. Ver `taxonomy_cards.md`.
+
 ---
 
 ## 3. Niveles de intensidad biológica
@@ -212,6 +220,11 @@ Estado: `confirmed` (decidido) / `proposed` (pendiente de confirmación del cura
 
 ## 6. Changelog
 
+- **2026-06-12 (d)** — **Recorte estratégico: Digital AgTech & Agrifintech fuera del corpus.** Se
+  introduce el *tercer eje* (recorte estratégico de corpus, §2) y se aplica a las 24 empresas de
+  Digital AgTech vía `scope_decision=exclude` (`scripts/oneoff/exclude_digital_agtech.py`). Razón:
+  dinámica de financiamiento distinta (deuda/fintech vs equity bio). Corpus 508→484, 8 temas en la
+  vista default. Tema removido de phylo/dendrograma pero retenido en `reclassify.py`. Reversible.
 - **2026-06-12 (c)** — **Re-audit sistémico del flag `is_bio_universe` (P1).** El rearme de Farm
   Intelligence destapó que el flag estaba mal puesto en todo el universo, no solo en agri: de 25 bio=0
   fuera de Digital AgTech, **17 eran bio-core/coupled mal flageados** (genómica, Dx molecular, biomoléculas,

@@ -1,11 +1,11 @@
 window.STARTUP_THEMES_DATA = {
-  "computed_at": "2026-06-12T14:18:50",
+  "computed_at": "2026-06-12T20:00:06",
   "model": "intfloat/multilingual-e5-small",
   "stats": {
-    "total_startups": 508,
+    "total_startups": 484,
     "n_clusters": 18,
-    "featured_count": 55,
-    "funded_count": 354
+    "featured_count": 53,
+    "funded_count": 332
   },
   "bio_theme_descriptions": {
     "Therapeutics": "Medicina regenerativa, terapia celular, biologics y desarrollo clínico de fármacos para oncología, enfermedades crónicas y neurología.",
@@ -4339,308 +4339,6 @@ window.STARTUP_THEMES_DATA = {
       ]
     },
     {
-      "id": "agricapital",
-      "name": "Agricapital",
-      "country": "Colombia",
-      "countries": [
-        "Colombia"
-      ],
-      "website": "https://agricapital.com.co/",
-      "macro_theme": "climate, energy and resource systems",
-      "emergent_theme": "traceability and tokenized resource infrastructure",
-      "summary": "AgriCapital is a Colombian agrifintech providing digital AgroCrédito for farmers, rural workers and agro-businesses through mobile workflows and a network of partner agro-stores. Its credit lets producers buy inputs, tools and machinery, pay according to harvest cycles and access financing in rural areas without heavy paperwork",
-      "one_liner": "Smallholder agricultural financing platform.",
-      "cluster_id": 2,
-      "cluster_label": "Precision Agriculture — Agronomic",
-      "cluster_keywords": "agronomic · credit · field · satellite",
-      "cluster_confidence": 1.0,
-      "x": 12.582,
-      "y": 3.503,
-      "is_outlier": false,
-      "tech_codes": [
-        "saas_marketplace",
-        "ai_ml"
-      ],
-      "industry_codes": [
-        "row_crops",
-        "carbon"
-      ],
-      "quality_score": 8.0,
-      "quality_band": "medium",
-      "community_id": 5,
-      "pagerank": 0.0008936595344834304,
-      "valuation_tier": 1.0,
-      "n_investors_mapped": 1,
-      "bio_theme": "Digital AgTech & Agrifintech",
-      "bio_theme_secondary": "Precision Agriculture",
-      "is_bio_universe": 0,
-      "sub_cluster_label": "Agricultural Credit",
-      "funding_stage": "seed",
-      "funding_bucket_usd": null,
-      "valuation_bucket_usd": null,
-      "valuation_estimate_usd": 4.0,
-      "valuation_estimate_source": "investors_proxy",
-      "sx": 11.705,
-      "sy": 2.65,
-      "bio_lens": [
-        "biocentric",
-        "planetary-boundary",
-        "regenerative"
-      ],
-      "domain_tags": [
-        "agri-food",
-        "climate-resource"
-      ],
-      "tech_tags": [
-        "ai-data"
-      ],
-      "scale_tags": [
-        "agroecosystem-scale",
-        "industrial-scale",
-        "planetary-scale"
-      ],
-      "market_label": "smallholder agricultural financing platform",
-      "self_cats": [
-        "FinTech",
-        "AgTech"
-      ],
-      "tech_depth": "enabler",
-      "tech_depth_confidence": 0.795,
-      "founded_year": 2018,
-      "ux": 8.129,
-      "uy": 3.801,
-      "hx": 12.582,
-      "hy": 3.503,
-      "investor_ids": [
-        "the_yield_lab_latam"
-      ]
-    },
-    {
-      "id": "agrired",
-      "name": "Agrired",
-      "country": "Argentina",
-      "countries": [
-        "Argentina"
-      ],
-      "website": "https://www.agrired.com.ar/",
-      "macro_theme": "agricultural market infrastructure and data systems",
-      "emergent_theme": "ag-input market infrastructure",
-      "summary": "B2B infrastructure for the purchase, sale and logistics of seeds, fertilizers and agrochemicals between agricultural companies. It enters the thesis as a digital layer strongly coupled to material flows of agricultural inputs.",
-      "one_liner": "B2B ag-input market infrastructure.",
-      "cluster_id": 2,
-      "cluster_label": "Precision Agriculture — Agronomic",
-      "cluster_keywords": "agronomic · credit · field · satellite",
-      "cluster_confidence": 0.788,
-      "x": 13.684,
-      "y": 4.461,
-      "is_outlier": false,
-      "tech_codes": [
-        "saas_marketplace",
-        "ai_ml"
-      ],
-      "industry_codes": [
-        "row_crops",
-        "soil_health"
-      ],
-      "quality_score": 8.5,
-      "quality_band": "high",
-      "community_id": 1,
-      "pagerank": 0.0010339099802546194,
-      "valuation_tier": 1.0,
-      "n_investors_mapped": 1,
-      "bio_theme": "Digital AgTech & Agrifintech",
-      "bio_theme_secondary": "Nature & Ecosystem Tech",
-      "is_bio_universe": 0,
-      "sub_cluster_label": "Crop Monitoring",
-      "funding_stage": "seed",
-      "funding_bucket_usd": null,
-      "valuation_bucket_usd": null,
-      "valuation_estimate_usd": 4.0,
-      "valuation_estimate_source": "investors_proxy",
-      "sx": 14.154,
-      "sy": 4.78,
-      "bio_lens": [
-        "biocentric"
-      ],
-      "domain_tags": [
-        "agri-food"
-      ],
-      "tech_tags": [
-        "ai-data"
-      ],
-      "scale_tags": [
-        "agroecosystem-scale",
-        "industrial-scale"
-      ],
-      "market_label": "b2b ag-input market infrastructure",
-      "self_cats": [],
-      "tech_depth": "enabler",
-      "tech_depth_confidence": 0.745,
-      "founded_year": null,
-      "ux": 8.84,
-      "uy": 5.009,
-      "hx": 13.684,
-      "hy": 4.461,
-      "investor_ids": [
-        "pampa_start"
-      ]
-    },
-    {
-      "id": "agroforte",
-      "name": "Agroforte",
-      "country": "Brazil",
-      "countries": [
-        "Brazil"
-      ],
-      "website": "https://theyieldlablatam.com/companies/agroforte/",
-      "macro_theme": "climate, energy and resource systems",
-      "emergent_theme": "traceability and tokenized resource infrastructure",
-      "summary": "Brazilian rural-finance platform building a digital bank for small and medium poultry, pork and dairy producers. It uses historical production data from integrated animal-protein systems to manage credit risk and finance infrastructure and operational improvements. It remains an edge include because the mechanism is fintech, but the use case is tightly coupled to animal health, welfare, supply-chain resilience and livestock production.",
-      "one_liner": "Animal production financial infrastructure.",
-      "cluster_id": 2,
-      "cluster_label": "Precision Agriculture — Agronomic",
-      "cluster_keywords": "agronomic · credit · field · satellite",
-      "cluster_confidence": 1.0,
-      "x": 12.864,
-      "y": 3.694,
-      "is_outlier": false,
-      "tech_codes": [
-        "ai_ml"
-      ],
-      "industry_codes": [
-        "animal_protein",
-        "row_crops",
-        "carbon",
-        "human_health"
-      ],
-      "quality_score": 8.5,
-      "quality_band": "high",
-      "community_id": 5,
-      "pagerank": 0.0008936595344834304,
-      "valuation_tier": 2.0,
-      "n_investors_mapped": 1,
-      "bio_theme": "Digital AgTech & Agrifintech",
-      "bio_theme_secondary": "Precision Agriculture",
-      "is_bio_universe": 0,
-      "sub_cluster_label": "Agricultural Credit",
-      "funding_stage": "series-a",
-      "funding_bucket_usd": null,
-      "valuation_bucket_usd": null,
-      "valuation_estimate_usd": 4.0,
-      "valuation_estimate_source": "investors_proxy",
-      "sx": 12.331,
-      "sy": 3.075,
-      "bio_lens": [
-        "biocentric",
-        "human-health-bio",
-        "planetary-boundary",
-        "regenerative"
-      ],
-      "domain_tags": [
-        "agri-food",
-        "climate-resource",
-        "human-health"
-      ],
-      "tech_tags": [
-        "ai-data"
-      ],
-      "scale_tags": [
-        "agroecosystem-scale",
-        "human-scale",
-        "industrial-scale",
-        "planetary-scale"
-      ],
-      "market_label": "animal production financial infrastructure",
-      "self_cats": [
-        "FinTech"
-      ],
-      "tech_depth": "enabler",
-      "tech_depth_confidence": 0.705,
-      "founded_year": 2017,
-      "ux": 8.259,
-      "uy": 4.101,
-      "hx": 12.864,
-      "hy": 3.694,
-      "investor_ids": [
-        "the_yield_lab_latam"
-      ]
-    },
-    {
-      "id": "agrofy",
-      "name": "Agrofy",
-      "country": "Argentina",
-      "countries": [
-        "Argentina"
-      ],
-      "website": "https://www.agrofy.com/",
-      "macro_theme": "climate, energy and resource systems",
-      "emergent_theme": "agri-marketplace and input commerce infrastructure",
-      "summary": "Argentine agribusiness marketplace and digital ecosystem connecting producers, manufacturers, suppliers, agfintech and media across Latin America",
-      "one_liner": "Digital agribusiness marketplace and agfintech ecosystem.",
-      "cluster_id": 2,
-      "cluster_label": "Precision Agriculture — Agronomic",
-      "cluster_keywords": "agronomic · credit · field · satellite",
-      "cluster_confidence": 1.0,
-      "x": 12.931,
-      "y": 3.739,
-      "is_outlier": false,
-      "tech_codes": [
-        "saas_marketplace",
-        "ag_inputs",
-        "carbon_tech"
-      ],
-      "industry_codes": [
-        "ag_finance",
-        "row_crops",
-        "biodiversity",
-        "carbon"
-      ],
-      "quality_score": 8.0,
-      "quality_band": "medium",
-      "community_id": 17,
-      "pagerank": 0.0008918741466795639,
-      "valuation_tier": 1.0,
-      "n_investors_mapped": 1,
-      "bio_theme": "Digital AgTech & Agrifintech",
-      "bio_theme_secondary": "Precision Agriculture",
-      "is_bio_universe": 0,
-      "sub_cluster_label": "Agricultural Credit",
-      "funding_stage": "series-c",
-      "funding_bucket_usd": null,
-      "valuation_bucket_usd": null,
-      "valuation_estimate_usd": 4.0,
-      "valuation_estimate_source": "investors_proxy",
-      "sx": 12.48,
-      "sy": 3.175,
-      "bio_lens": [
-        "biocentric",
-        "planetary-boundary"
-      ],
-      "domain_tags": [
-        "agri-food",
-        "biodiversity-nature",
-        "climate-resource"
-      ],
-      "tech_tags": [],
-      "scale_tags": [
-        "agroecosystem-scale",
-        "industrial-scale",
-        "planetary-scale"
-      ],
-      "market_label": "digital agribusiness marketplace and agfintech ecosystem",
-      "self_cats": [],
-      "tech_depth": "enabler",
-      "tech_depth_confidence": 0.695,
-      "founded_year": 2015,
-      "ux": 8.29,
-      "uy": 4.172,
-      "hx": 12.931,
-      "hy": 3.739,
-      "investor_ids": [
-        "sp_ventures"
-      ]
-    },
-    {
       "id": "agrojusto",
       "name": "Agrojusto",
       "country": "Argentina",
@@ -4712,87 +4410,6 @@ window.STARTUP_THEMES_DATA = {
       "investor_ids": [
         "Antom",
         "glocal"
-      ]
-    },
-    {
-      "id": "agrolend",
-      "name": "Agrolend",
-      "country": "Brazil",
-      "countries": [
-        "Brazil"
-      ],
-      "website": "https://spventures.com.br/portfolio/agrolend/",
-      "macro_theme": "agricultural market infrastructure and data systems",
-      "emergent_theme": "agricultural credit and risk intelligence",
-      "summary": "Agrolend is a Brazilian agfintech focused on agricultural credit, receivables trading, data-driven risk analysis and monitoring for producers, investors and agribusiness. It is not nature restoration; it belongs only as a thesis-border case because it finances biological production systems. It should cluster with agri-finance, producer infrastructure and agricultural risk intelligence.",
-      "one_liner": "Agricultural credit, receivables and risk-monitoring platform.",
-      "cluster_id": 2,
-      "cluster_label": "Precision Agriculture — Agronomic",
-      "cluster_keywords": "agronomic · credit · field · satellite",
-      "cluster_confidence": 1.0,
-      "x": 12.542,
-      "y": 3.502,
-      "is_outlier": false,
-      "tech_codes": [
-        "ai_ml"
-      ],
-      "industry_codes": [
-        "ag_finance",
-        "row_crops",
-        "biodiversity"
-      ],
-      "quality_score": 8.0,
-      "quality_band": "medium",
-      "community_id": 1,
-      "pagerank": 0.0016584713071919395,
-      "valuation_tier": 1.0,
-      "n_investors_mapped": 4,
-      "bio_theme": "Digital AgTech & Agrifintech",
-      "bio_theme_secondary": "Precision Agriculture",
-      "is_bio_universe": 0,
-      "sub_cluster_label": "Agricultural Credit",
-      "funding_stage": "series-c",
-      "funding_bucket_usd": null,
-      "valuation_bucket_usd": null,
-      "valuation_estimate_usd": 4.0,
-      "valuation_estimate_source": "investors_proxy",
-      "sx": 11.616,
-      "sy": 2.648,
-      "bio_lens": [
-        "biocentric",
-        "planetary-boundary",
-        "regenerative"
-      ],
-      "domain_tags": [
-        "agri-food",
-        "biodiversity-nature"
-      ],
-      "tech_tags": [
-        "ai-data"
-      ],
-      "scale_tags": [
-        "agroecosystem-scale",
-        "industrial-scale",
-        "planetary-scale"
-      ],
-      "market_label": "agricultural credit and risk intelligence",
-      "self_cats": [
-        "NatureTech",
-        "FinTech",
-        "AgTech"
-      ],
-      "tech_depth": "enabler",
-      "tech_depth_confidence": 0.68,
-      "founded_year": 2020,
-      "ux": 8.135,
-      "uy": 3.764,
-      "hx": 12.542,
-      "hy": 3.502,
-      "investor_ids": [
-        "barn_investimentos",
-        "sp_ventures",
-        "syngenta_ventures",
-        "valor_capital_group"
       ]
     },
     {
@@ -4940,154 +4557,6 @@ window.STARTUP_THEMES_DATA = {
       ]
     },
     {
-      "id": "agrotoken",
-      "name": "Agrotoken",
-      "country": "Argentina",
-      "countries": [
-        "Argentina"
-      ],
-      "website": "https://landing.test.agrotoken.io/en/home",
-      "macro_theme": "climate, energy and resource systems",
-      "emergent_theme": "traceability and tokenized resource infrastructure",
-      "summary": "Infrastructure to tokenize grains and other agricultural assets, enabling payments, financing, collateral and traceability on real material assets. It enters the thesis due to strong coupling to agro-material chains and traceability/sustainability layer.",
-      "one_liner": "Real-world asset and traceability infrastructure for agribusiness.",
-      "cluster_id": 2,
-      "cluster_label": "Precision Agriculture — Agronomic",
-      "cluster_keywords": "agronomic · credit · field · satellite",
-      "cluster_confidence": 0.873,
-      "x": 13.183,
-      "y": 4.149,
-      "is_outlier": false,
-      "tech_codes": [
-        "blockchain"
-      ],
-      "industry_codes": [
-        "row_crops",
-        "food_ingredients",
-        "energy",
-        "carbon"
-      ],
-      "quality_score": 9.0,
-      "quality_band": "high",
-      "community_id": 8,
-      "pagerank": 0.004689419827566195,
-      "valuation_tier": 4.0,
-      "n_investors_mapped": 5,
-      "bio_theme": "Digital AgTech & Agrifintech",
-      "bio_theme_secondary": "Food Systems & Alt Proteins",
-      "is_bio_universe": 0,
-      "sub_cluster_label": "Crop Monitoring",
-      "funding_stage": "series-a",
-      "funding_bucket_usd": null,
-      "valuation_bucket_usd": null,
-      "valuation_estimate_usd": 4.0,
-      "valuation_estimate_source": "investors_proxy",
-      "sx": 13.041,
-      "sy": 4.087,
-      "bio_lens": [
-        "planetary-boundary"
-      ],
-      "domain_tags": [
-        "agri-food",
-        "climate-resource"
-      ],
-      "tech_tags": [],
-      "scale_tags": [
-        "agroecosystem-scale",
-        "industrial-scale",
-        "planetary-scale"
-      ],
-      "market_label": "agricultural asset and traceability infrastructure",
-      "self_cats": [],
-      "tech_depth": "enabler",
-      "tech_depth_confidence": 0.72,
-      "founded_year": 2020,
-      "ux": 8.633,
-      "uy": 4.482,
-      "hx": 13.183,
-      "hy": 4.149,
-      "investor_ids": [
-        "barn_investimentos",
-        "base_capital",
-        "john_deere_ventures",
-        "nubarium_capital",
-        "visa_ventures"
-      ]
-    },
-    {
-      "id": "agrotools",
-      "name": "AGROTOOLS",
-      "country": "Brazil",
-      "countries": [
-        "Brazil"
-      ],
-      "website": "https://agrotools.com.br/en/",
-      "macro_theme": "precision agriculture and resource intelligence",
-      "emergent_theme": "precision agriculture intelligence",
-      "summary": "AGROTOOLS is a Brazilian agribusiness intelligence platform connecting land, supply chains and corporate decision-making through geospatial data, risk analytics and ESG/compliance monitoring. Its solutions support rural finance, insurance, sourcing, brand protection, supply-chain intelligence and socioenvironmental monitoring, with more than 1,300 data layers and large-scale territorial analyses",
-      "one_liner": "Agricultural risk, supply-chain and ESG intelligence platform.",
-      "cluster_id": 2,
-      "cluster_label": "Precision Agriculture — Agronomic",
-      "cluster_keywords": "agronomic · credit · field · satellite",
-      "cluster_confidence": 1.0,
-      "x": 13.556,
-      "y": 5.162,
-      "is_outlier": false,
-      "tech_codes": [
-        "ai_ml",
-        "saas_marketplace",
-        "remote_sensing"
-      ],
-      "industry_codes": [
-        "row_crops"
-      ],
-      "quality_score": 8.0,
-      "quality_band": "medium",
-      "community_id": 1,
-      "pagerank": 0.0009690476914027274,
-      "valuation_tier": 1.0,
-      "n_investors_mapped": 1,
-      "bio_theme": "Digital AgTech & Agrifintech",
-      "bio_theme_secondary": "Nature & Ecosystem Tech",
-      "is_bio_universe": 0,
-      "sub_cluster_label": "Supply Chains",
-      "funding_stage": "series-a",
-      "funding_bucket_usd": null,
-      "valuation_bucket_usd": null,
-      "valuation_estimate_usd": 4.0,
-      "valuation_estimate_source": "investors_proxy",
-      "sx": 13.869,
-      "sy": 6.339,
-      "bio_lens": [
-        "biocentric",
-        "planetary-boundary"
-      ],
-      "domain_tags": [
-        "agri-food"
-      ],
-      "tech_tags": [
-        "ai-data",
-        "remote-sensing"
-      ],
-      "scale_tags": [
-        "agroecosystem-scale",
-        "industrial-scale",
-        "planetary-scale"
-      ],
-      "market_label": "agricultural risk, supply-chain and ESG intelligence platform",
-      "self_cats": [],
-      "tech_depth": "enabler",
-      "tech_depth_confidence": 0.695,
-      "founded_year": 2009,
-      "ux": 9.524,
-      "uy": 5.012,
-      "hx": 13.556,
-      "hy": 5.162,
-      "investor_ids": [
-        "kptl"
-      ]
-    },
-    {
       "id": "agrourbana",
       "name": "Agrourbana",
       "country": "Chile",
@@ -5163,88 +4632,6 @@ window.STARTUP_THEMES_DATA = {
       "hy": 4.416,
       "investor_ids": [
         "chileglobal_ventures"
-      ]
-    },
-    {
-      "id": "arado",
-      "name": "Arado",
-      "country": "Brazil",
-      "countries": [
-        "Brazil"
-      ],
-      "website": "https://www.sobre.arado.com.br/",
-      "macro_theme": "climate, energy and resource systems",
-      "emergent_theme": "fresh food supply-chain infrastructure",
-      "summary": "Brazilian fresh-food platform connecting producers directly with urban buyers, improving producer economics and reducing food waste",
-      "one_liner": "Fresh food marketplace connecting producers and buyers.",
-      "cluster_id": 2,
-      "cluster_label": "Precision Agriculture — Agronomic",
-      "cluster_keywords": "agronomic · credit · field · satellite",
-      "cluster_confidence": 0.784,
-      "x": 14.13,
-      "y": 4.373,
-      "is_outlier": false,
-      "tech_codes": [
-        "saas_marketplace",
-        "ai_ml"
-      ],
-      "industry_codes": [
-        "food_ingredients",
-        "row_crops",
-        "carbon"
-      ],
-      "quality_score": 8.0,
-      "quality_band": "medium",
-      "community_id": 1,
-      "pagerank": 0.003659694500602284,
-      "valuation_tier": 1.0,
-      "n_investors_mapped": 6,
-      "bio_theme": "Digital AgTech & Agrifintech",
-      "bio_theme_secondary": "Food Systems & Alt Proteins",
-      "is_bio_universe": 0,
-      "sub_cluster_label": "Crop Monitoring",
-      "funding_stage": "series-a",
-      "funding_bucket_usd": null,
-      "valuation_bucket_usd": null,
-      "valuation_estimate_usd": 4.0,
-      "valuation_estimate_source": "investors_proxy",
-      "sx": 15.144,
-      "sy": 4.585,
-      "bio_lens": [
-        "circular",
-        "planetary-boundary"
-      ],
-      "domain_tags": [
-        "agri-food",
-        "climate-resource"
-      ],
-      "tech_tags": [
-        "ai-data"
-      ],
-      "scale_tags": [
-        "agroecosystem-scale",
-        "industrial-scale",
-        "planetary-scale",
-        "territorial-scale"
-      ],
-      "market_label": "fresh food marketplace connecting producers and buyers",
-      "self_cats": [
-        "FoodTech"
-      ],
-      "tech_depth": "enabler",
-      "tech_depth_confidence": 0.73,
-      "founded_year": 2019,
-      "ux": 8.678,
-      "uy": 5.415,
-      "hx": 14.13,
-      "hy": 4.373,
-      "investor_ids": [
-        "acre_venture_partners",
-        "globo_ventures",
-        "maya_capital",
-        "sp_ventures",
-        "syngenta_ventures",
-        "valor_capital_group"
       ]
     },
     {
@@ -5397,154 +4784,6 @@ window.STARTUP_THEMES_DATA = {
       "hy": 8.563,
       "investor_ids": [
         "the_yield_lab_latam"
-      ]
-    },
-    {
-      "id": "blooms",
-      "name": "Blooms",
-      "country": "Mexico",
-      "countries": [
-        "Mexico"
-      ],
-      "website": "https://www.bloomscapital.com/english",
-      "macro_theme": "climate, energy and resource systems",
-      "emergent_theme": "traceability and tokenized resource infrastructure",
-      "summary": "Blooms Capital is a trade-finance platform for Latin American fruit and vegetable exporters. It offers pre-export working capital, non-recourse cross-border factoring, global payments and FX tools through a data-driven process, including 24-hour invoice payment and U.S. virtual accounts for export collections",
-      "one_liner": "Agricultural exporter finance platform.",
-      "cluster_id": 2,
-      "cluster_label": "Precision Agriculture — Agronomic",
-      "cluster_keywords": "agronomic · credit · field · satellite",
-      "cluster_confidence": 1.0,
-      "x": 12.69,
-      "y": 3.573,
-      "is_outlier": false,
-      "tech_codes": [
-        "ai_ml"
-      ],
-      "industry_codes": [
-        "row_crops",
-        "carbon"
-      ],
-      "quality_score": 8.0,
-      "quality_band": "medium",
-      "community_id": 5,
-      "pagerank": 0.0009627118218357507,
-      "valuation_tier": 1.0,
-      "n_investors_mapped": 2,
-      "bio_theme": "Digital AgTech & Agrifintech",
-      "bio_theme_secondary": "Precision Agriculture",
-      "is_bio_universe": 0,
-      "sub_cluster_label": "Agricultural Credit",
-      "funding_stage": "seed",
-      "funding_bucket_usd": null,
-      "valuation_bucket_usd": null,
-      "valuation_estimate_usd": 4.0,
-      "valuation_estimate_source": "investors_proxy",
-      "sx": 11.944,
-      "sy": 2.807,
-      "bio_lens": [
-        "planetary-boundary"
-      ],
-      "domain_tags": [
-        "agri-food",
-        "climate-resource"
-      ],
-      "tech_tags": [
-        "ai-data"
-      ],
-      "scale_tags": [
-        "agroecosystem-scale",
-        "industrial-scale",
-        "planetary-scale"
-      ],
-      "market_label": "fresh-produce exporter trade-finance platform",
-      "self_cats": [],
-      "tech_depth": "enabler",
-      "tech_depth_confidence": 0.95,
-      "founded_year": 2020,
-      "ux": 8.176,
-      "uy": 3.915,
-      "hx": 12.69,
-      "hy": 3.573,
-      "investor_ids": [
-        "sp_ventures",
-        "the_yield_lab_latam"
-      ]
-    },
-    {
-      "id": "brain_ag",
-      "name": "Brain.ag",
-      "country": "Brazil",
-      "countries": [
-        "Brazil"
-      ],
-      "website": "https://www.serasaexperian.com.br/sala-de-imprensa/agronegocios/serasa-experian-adquire-parte-da-brain-ag-e-fortalece-analise-de-credito-para-o-agronegocio/",
-      "macro_theme": "climate, energy and resource systems",
-      "emergent_theme": "agricultural credit and risk intelligence",
-      "summary": "Brain.ag is a Brazilian agribusiness data and risk-intelligence company specializing in credit, financial operations, ESG and socioenvironmental analysis for rural production. Public acquisition coverage says its platform combines data, analytics and agricultural-risk workflows to originate, decide and monitor rural credit faster, including producer, collateral, area and compliance checks",
-      "one_liner": "Big-data platform for agribusiness credit and socioenvironmental analysis.",
-      "cluster_id": 2,
-      "cluster_label": "Precision Agriculture — Agronomic",
-      "cluster_keywords": "agronomic · credit · field · satellite",
-      "cluster_confidence": 1.0,
-      "x": 12.643,
-      "y": 3.535,
-      "is_outlier": false,
-      "tech_codes": [
-        "ai_ml",
-        "remote_sensing"
-      ],
-      "industry_codes": [
-        "row_crops",
-        "carbon"
-      ],
-      "quality_score": 8.0,
-      "quality_band": "medium",
-      "community_id": 17,
-      "pagerank": 0.0008913988951681788,
-      "valuation_tier": 1.0,
-      "n_investors_mapped": 1,
-      "bio_theme": "Digital AgTech & Agrifintech",
-      "bio_theme_secondary": "Nature & Ecosystem Tech",
-      "is_bio_universe": 0,
-      "sub_cluster_label": "Agricultural Credit",
-      "funding_stage": "seed",
-      "funding_bucket_usd": null,
-      "valuation_bucket_usd": null,
-      "valuation_estimate_usd": 4.0,
-      "valuation_estimate_source": "investors_proxy",
-      "sx": 11.841,
-      "sy": 2.722,
-      "bio_lens": [
-        "planetary-boundary"
-      ],
-      "domain_tags": [
-        "agri-food",
-        "climate-resource"
-      ],
-      "tech_tags": [
-        "ai-data",
-        "remote-sensing"
-      ],
-      "scale_tags": [
-        "agroecosystem-scale",
-        "industrial-scale",
-        "planetary-scale"
-      ],
-      "market_label": "agribusiness credit and socioenvironmental risk platform",
-      "self_cats": [
-        "FinTech",
-        "SaaS / Platform"
-      ],
-      "tech_depth": "enabler",
-      "tech_depth_confidence": 0.705,
-      "founded_year": 2019,
-      "ux": 8.148,
-      "uy": 3.865,
-      "hx": 12.643,
-      "hy": 3.535,
-      "investor_ids": [
-        "sp_ventures"
       ]
     },
     {
@@ -5835,86 +5074,6 @@ window.STARTUP_THEMES_DATA = {
       "hy": 8.455,
       "investor_ids": [
         "sp_ventures"
-      ]
-    },
-    {
-      "id": "culttivo",
-      "name": "Culttivo",
-      "country": "Brazil",
-      "countries": [
-        "Brazil"
-      ],
-      "website": "https://theyieldlablatam.com/companies/culttivo/",
-      "macro_theme": "agricultural market infrastructure and data systems",
-      "emergent_theme": "ag-finance, risk and producer intelligence",
-      "summary": "Culttivo is a Brazilian coffee-finance and risk-intelligence platform that uses satellite imagery, analytics and ESG or climate-risk signals to improve credit access for coffee producers. It is not a biotech company, but it is directly attached to a material biological production system: coffee farming",
-      "one_liner": "Climate-aware credit and risk platform for coffee producers.",
-      "cluster_id": 2,
-      "cluster_label": "Precision Agriculture — Agronomic",
-      "cluster_keywords": "agronomic · credit · field · satellite",
-      "cluster_confidence": 1.0,
-      "x": 12.682,
-      "y": 3.589,
-      "is_outlier": false,
-      "tech_codes": [
-        "remote_sensing",
-        "ai_ml"
-      ],
-      "industry_codes": [
-        "specialty_crops",
-        "row_crops",
-        "carbon"
-      ],
-      "quality_score": 8.0,
-      "quality_band": "medium",
-      "community_id": 1,
-      "pagerank": 0.0009873960506737224,
-      "valuation_tier": 1.0,
-      "n_investors_mapped": 2,
-      "bio_theme": "Digital AgTech & Agrifintech",
-      "bio_theme_secondary": "Nature & Ecosystem Tech",
-      "is_bio_universe": 0,
-      "sub_cluster_label": "Agricultural Credit",
-      "funding_stage": "seed",
-      "funding_bucket_usd": null,
-      "valuation_bucket_usd": null,
-      "valuation_estimate_usd": 4.0,
-      "valuation_estimate_source": "investors_proxy",
-      "sx": 11.927,
-      "sy": 2.842,
-      "bio_lens": [
-        "biocentric",
-        "planetary-boundary",
-        "regenerative"
-      ],
-      "domain_tags": [
-        "agri-food",
-        "climate-resource"
-      ],
-      "tech_tags": [
-        "ai-data",
-        "remote-sensing"
-      ],
-      "scale_tags": [
-        "agroecosystem-scale",
-        "industrial-scale",
-        "planetary-scale"
-      ],
-      "market_label": "coffee producer credit and climate-risk intelligence",
-      "self_cats": [
-        "FinTech",
-        "Biotech"
-      ],
-      "tech_depth": "enabler",
-      "tech_depth_confidence": 0.883,
-      "founded_year": 2018,
-      "ux": 8.192,
-      "uy": 3.911,
-      "hx": 12.682,
-      "hy": 3.589,
-      "investor_ids": [
-        "kptl",
-        "the_yield_lab_latam"
       ]
     },
     {
@@ -6363,81 +5522,6 @@ window.STARTUP_THEMES_DATA = {
       "investor_ids": []
     },
     {
-      "id": "goflux",
-      "name": "goFlux",
-      "country": "Brazil",
-      "countries": [
-        "Brazil"
-      ],
-      "website": "https://goflux.com.br/",
-      "macro_theme": "climate, energy and resource systems",
-      "emergent_theme": "ag logistics and freight intelligence",
-      "summary": "Brazilian B2B freight SaaS for quotation, contracting and management of road freight, operating in major agro/logistics arteries and offering carbon-aware logistics features",
-      "one_liner": "B2B freight management and carbon-aware logistics platform.",
-      "cluster_id": 2,
-      "cluster_label": "Precision Agriculture — Agronomic",
-      "cluster_keywords": "agronomic · credit · field · satellite",
-      "cluster_confidence": 0.988,
-      "x": 13.85,
-      "y": 4.632,
-      "is_outlier": false,
-      "tech_codes": [
-        "saas_marketplace",
-        "ai_ml"
-      ],
-      "industry_codes": [
-        "row_crops",
-        "carbon"
-      ],
-      "quality_score": 8.0,
-      "quality_band": "medium",
-      "community_id": 17,
-      "pagerank": 0.0008913988951681788,
-      "valuation_tier": 1.0,
-      "n_investors_mapped": 1,
-      "bio_theme": "Digital AgTech & Agrifintech",
-      "bio_theme_secondary": "Bioinputs & Crop Resilience",
-      "is_bio_universe": 0,
-      "sub_cluster_label": "Crop Monitoring",
-      "funding_stage": "series-a",
-      "funding_bucket_usd": null,
-      "valuation_bucket_usd": null,
-      "valuation_estimate_usd": 4.0,
-      "valuation_estimate_source": "investors_proxy",
-      "sx": 14.522,
-      "sy": 5.159,
-      "bio_lens": [
-        "planetary-boundary"
-      ],
-      "domain_tags": [
-        "agri-food",
-        "climate-resource"
-      ],
-      "tech_tags": [
-        "ai-data"
-      ],
-      "scale_tags": [
-        "agroecosystem-scale",
-        "industrial-scale",
-        "planetary-scale",
-        "product-scale"
-      ],
-      "market_label": "B2B freight management and carbon-aware logistics platform",
-      "self_cats": [
-        "SaaS / Platform"
-      ],
-      "tech_depth": "enabler",
-      "tech_depth_confidence": 0.77,
-      "founded_year": 2019,
-      "ux": 8.972,
-      "uy": 5.196,
-      "hx": 13.85,
-      "hy": 4.632,
-      "investor_ids": [
-        "sp_ventures"
-      ]
-    },
-    {
       "id": "horus_aeronaves",
       "name": "Horus Aeronaves",
       "country": "Brazil",
@@ -6588,82 +5672,6 @@ window.STARTUP_THEMES_DATA = {
       "hy": 8.531,
       "investor_ids": [
         "sp_ventures"
-      ]
-    },
-    {
-      "id": "incluirtec",
-      "name": "Incluirtec",
-      "country": "Colombia",
-      "countries": [
-        "Colombia"
-      ],
-      "website": "https://www.incluirtec.co/",
-      "macro_theme": "climate, energy and resource systems",
-      "emergent_theme": "traceability and tokenized resource infrastructure",
-      "summary": "IncluirTec is a Colombian agfintech-as-a-service platform enabling formal credit for small agricultural producers, rural microentrepreneurs and financial institutions. Its official site describes a digital bridge between producers and banks, microfinance institutions, NGOs and non-bank lenders, using alternative risk evaluation and 100% digital loan workflows",
-      "one_liner": "Agfintech infrastructure for smallholder credit inclusion.",
-      "cluster_id": 2,
-      "cluster_label": "Precision Agriculture — Agronomic",
-      "cluster_keywords": "agronomic · credit · field · satellite",
-      "cluster_confidence": 1.0,
-      "x": 12.52,
-      "y": 3.44,
-      "is_outlier": false,
-      "tech_codes": [
-        "saas_marketplace",
-        "ai_ml"
-      ],
-      "industry_codes": [
-        "row_crops",
-        "carbon"
-      ],
-      "quality_score": 8.0,
-      "quality_band": "medium",
-      "community_id": 5,
-      "pagerank": 0.0008936595344834304,
-      "valuation_tier": 1.0,
-      "n_investors_mapped": 1,
-      "bio_theme": "Digital AgTech & Agrifintech",
-      "bio_theme_secondary": "Bioinputs & Crop Resilience",
-      "is_bio_universe": 0,
-      "sub_cluster_label": "Agricultural Credit",
-      "funding_stage": "seed",
-      "funding_bucket_usd": null,
-      "valuation_bucket_usd": null,
-      "valuation_estimate_usd": 4.0,
-      "valuation_estimate_source": "investors_proxy",
-      "sx": 11.566,
-      "sy": 2.512,
-      "bio_lens": [
-        "biocentric",
-        "planetary-boundary",
-        "regenerative"
-      ],
-      "domain_tags": [
-        "agri-food",
-        "climate-resource"
-      ],
-      "tech_tags": [
-        "ai-data"
-      ],
-      "scale_tags": [
-        "agroecosystem-scale",
-        "industrial-scale",
-        "planetary-scale"
-      ],
-      "market_label": "agrifintech infrastructure for smallholder inclusion",
-      "self_cats": [
-        "FinTech"
-      ],
-      "tech_depth": "enabler",
-      "tech_depth_confidence": 0.78,
-      "founded_year": 2019,
-      "ux": 8.081,
-      "uy": 3.732,
-      "hx": 12.52,
-      "hy": 3.44,
-      "investor_ids": [
-        "the_yield_lab_latam"
       ]
     },
     {
@@ -7103,78 +6111,6 @@ window.STARTUP_THEMES_DATA = {
       ]
     },
     {
-      "id": "leaf",
-      "name": "Leaf",
-      "country": "USA",
-      "countries": [
-        "USA"
-      ],
-      "website": "https://withleaf.io/",
-      "macro_theme": "agricultural market infrastructure and data systems",
-      "emergent_theme": "agriculture data infrastructure",
-      "summary": "Agriculture data-infrastructure company providing a unified API for food and agriculture, translating machine, field, imagery, weather and agronomic data into consistent formats",
-      "one_liner": "Unified API and data infrastructure for food and agriculture.",
-      "cluster_id": 2,
-      "cluster_label": "Precision Agriculture — Agronomic",
-      "cluster_keywords": "agronomic · credit · field · satellite",
-      "cluster_confidence": 1.0,
-      "x": 13.847,
-      "y": 5.645,
-      "is_outlier": false,
-      "tech_codes": [
-        "remote_sensing",
-        "ai_ml"
-      ],
-      "industry_codes": [
-        "row_crops"
-      ],
-      "quality_score": 8.0,
-      "quality_band": "medium",
-      "community_id": 17,
-      "pagerank": 0.0008913988951681788,
-      "valuation_tier": 1.0,
-      "n_investors_mapped": 1,
-      "bio_theme": "Digital AgTech & Agrifintech",
-      "bio_theme_secondary": "Nature & Ecosystem Tech",
-      "is_bio_universe": 0,
-      "sub_cluster_label": "Crop Monitoring",
-      "funding_stage": "pre-seed",
-      "funding_bucket_usd": null,
-      "valuation_bucket_usd": null,
-      "valuation_estimate_usd": 4.0,
-      "valuation_estimate_source": "investors_proxy",
-      "sx": 14.516,
-      "sy": 7.41,
-      "bio_lens": [
-        "biocentric",
-        "planetary-boundary"
-      ],
-      "domain_tags": [
-        "agri-food"
-      ],
-      "tech_tags": [
-        "ai-data",
-        "remote-sensing"
-      ],
-      "scale_tags": [
-        "agroecosystem-scale",
-        "industrial-scale",
-        "planetary-scale"
-      ],
-      "market_label": "unified API and data infrastructure for food and agriculture",
-      "self_cats": [],
-      "tech_depth": "enabler",
-      "tech_depth_confidence": 0.95,
-      "founded_year": 2018,
-      "ux": 9.928,
-      "uy": 5.371,
-      "hx": 13.847,
-      "hy": 5.645,
-      "investor_ids": [
-        "sp_ventures"
-      ]
-    },
-    {
       "id": "nativas",
       "name": "Nativas",
       "country": "Argentina",
@@ -7332,83 +6268,6 @@ window.STARTUP_THEMES_DATA = {
       "hy": -7.714,
       "investor_ids": [
         "sp_ventures"
-      ]
-    },
-    {
-      "id": "nilus",
-      "name": "Nilus",
-      "country": "Argentina",
-      "countries": [
-        "Argentina"
-      ],
-      "website": "https://newtopia.vc/portfolio/",
-      "macro_theme": "climate, energy and resource systems",
-      "emergent_theme": "food rescue and circular food access",
-      "summary": "Nilus is a Latin American food-rescue and food-access platform that connects surplus or inefficient food supply with low-cost distribution channels. It is not biotech, but it belongs in the broader BIO VC LATAM perimeter as food-system circularity infrastructure: it reduces food waste, improves affordability and acts on a material biological supply chain. It should cluster with resource recovery, food systems and circular logistics",
-      "one_liner": "Food rescue and low-cost food access platform.",
-      "cluster_id": 2,
-      "cluster_label": "Precision Agriculture — Agronomic",
-      "cluster_keywords": "agronomic · credit · field · satellite",
-      "cluster_confidence": 0.737,
-      "x": 14.539,
-      "y": 4.399,
-      "is_outlier": false,
-      "tech_codes": [
-        "ai_ml"
-      ],
-      "industry_codes": [
-        "food_ingredients",
-        "waste_circular",
-        "row_crops",
-        "carbon"
-      ],
-      "quality_score": 8.0,
-      "quality_band": "medium",
-      "community_id": 15,
-      "pagerank": 0.0010687174115445821,
-      "valuation_tier": 1.0,
-      "n_investors_mapped": 1,
-      "bio_theme": "Digital AgTech & Agrifintech",
-      "bio_theme_secondary": "Food Systems & Alt Proteins",
-      "is_bio_universe": 0,
-      "sub_cluster_label": "Crop Monitoring",
-      "funding_stage": "series-a",
-      "funding_bucket_usd": null,
-      "valuation_bucket_usd": null,
-      "valuation_estimate_usd": 4.0,
-      "valuation_estimate_source": "investors_proxy",
-      "sx": 16.053,
-      "sy": 4.642,
-      "bio_lens": [
-        "circular",
-        "planetary-boundary"
-      ],
-      "domain_tags": [
-        "agri-food",
-        "climate-resource"
-      ],
-      "tech_tags": [
-        "ai-data"
-      ],
-      "scale_tags": [
-        "industrial-scale",
-        "planetary-scale",
-        "territorial-scale"
-      ],
-      "market_label": "food rescue and circular food-access platform",
-      "self_cats": [
-        "FoodTech",
-        "Biotech"
-      ],
-      "tech_depth": "enabler",
-      "tech_depth_confidence": 0.705,
-      "founded_year": 2017,
-      "ux": 8.631,
-      "uy": 5.805,
-      "hx": 14.539,
-      "hy": 4.399,
-      "investor_ids": [
-        "newtopia_vc"
       ]
     },
     {
@@ -7710,157 +6569,6 @@ window.STARTUP_THEMES_DATA = {
       ]
     },
     {
-      "id": "seedz",
-      "name": "Seedz",
-      "country": "Brazil",
-      "countries": [
-        "Brazil"
-      ],
-      "website": "https://www.seedz.ag/",
-      "macro_theme": "agricultural market infrastructure and data systems",
-      "emergent_theme": "agri-market infrastructure and producer engagement",
-      "summary": "Seedz is a Brazilian agtech platform for agribusiness loyalty, producer engagement, commercial intelligence, rewards, payments and credit access. Its relevance is infrastructural rather than biological: it organizes the commercial layer around farms, input channels and producer relationships in agricultural value chains",
-      "one_liner": "Agribusiness loyalty, marketplace and producer-intelligence platform.",
-      "cluster_id": 2,
-      "cluster_label": "Precision Agriculture — Agronomic",
-      "cluster_keywords": "agronomic · credit · field · satellite",
-      "cluster_confidence": 0.356,
-      "x": 14.288,
-      "y": 5.707,
-      "is_outlier": true,
-      "tech_codes": [
-        "saas_marketplace",
-        "ai_ml"
-      ],
-      "industry_codes": [
-        "row_crops"
-      ],
-      "quality_score": 8.0,
-      "quality_band": "medium",
-      "community_id": 5,
-      "pagerank": 0.0008952993651734538,
-      "valuation_tier": 1.0,
-      "n_investors_mapped": 1,
-      "bio_theme": "Digital AgTech & Agrifintech",
-      "bio_theme_secondary": "Precision Agriculture",
-      "is_bio_universe": 0,
-      "sub_cluster_label": "Crop Monitoring",
-      "funding_stage": "series-a",
-      "funding_bucket_usd": null,
-      "valuation_bucket_usd": null,
-      "valuation_estimate_usd": 4.0,
-      "valuation_estimate_source": "investors_proxy",
-      "sx": 15.496,
-      "sy": 7.549,
-      "bio_lens": [
-        "biocentric",
-        "planetary-boundary"
-      ],
-      "domain_tags": [
-        "agri-food"
-      ],
-      "tech_tags": [
-        "ai-data"
-      ],
-      "scale_tags": [
-        "agroecosystem-scale",
-        "industrial-scale",
-        "planetary-scale"
-      ],
-      "market_label": "agribusiness loyalty and producer-engagement infrastructure",
-      "self_cats": [
-        "AgTech"
-      ],
-      "tech_depth": "enabler",
-      "tech_depth_confidence": 0.755,
-      "founded_year": null,
-      "ux": 9.91,
-      "uy": 5.798,
-      "hx": 14.288,
-      "hy": 5.707,
-      "investor_ids": [
-        "the_yield_lab_latam"
-      ]
-    },
-    {
-      "id": "sensify",
-      "name": "Sensify",
-      "country": "Argentina",
-      "countries": [
-        "Argentina"
-      ],
-      "website": "https://www.sensify.com.ar/",
-      "macro_theme": "climate, energy and resource systems",
-      "emergent_theme": "climate and resource intelligence platforms",
-      "summary": "Sensify is an Argentine IoT and AI platform for commercial refrigeration and cold-chain operations in food and beverages. Its systems connect refrigeration assets, predict operating data and provide business insights to avoid cold-chain outages, reduce food losses, improve asset performance and lower energy use",
-      "one_liner": "Smart refrigeration and cold-chain intelligence platform.",
-      "cluster_id": 2,
-      "cluster_label": "Precision Agriculture — Agronomic",
-      "cluster_keywords": "agronomic · credit · field · satellite",
-      "cluster_confidence": 1.0,
-      "x": 14.159,
-      "y": 5.295,
-      "is_outlier": false,
-      "tech_codes": [
-        "iot",
-        "ai_ml"
-      ],
-      "industry_codes": [
-        "food_ingredients",
-        "animal_protein",
-        "row_crops",
-        "carbon"
-      ],
-      "quality_score": 8.5,
-      "quality_band": "high",
-      "community_id": 5,
-      "pagerank": 0.0009794470829856078,
-      "valuation_tier": 1.5,
-      "n_investors_mapped": 2,
-      "bio_theme": "Digital AgTech & Agrifintech",
-      "bio_theme_secondary": "Food Systems & Alt Proteins",
-      "is_bio_universe": 0,
-      "sub_cluster_label": "Crop Monitoring",
-      "funding_stage": "seed",
-      "funding_bucket_usd": null,
-      "valuation_bucket_usd": null,
-      "valuation_estimate_usd": 4.0,
-      "valuation_estimate_source": "investors_proxy",
-      "sx": 15.209,
-      "sy": 6.633,
-      "bio_lens": [
-        "circular",
-        "planetary-boundary"
-      ],
-      "domain_tags": [
-        "agri-food",
-        "climate-resource"
-      ],
-      "tech_tags": [
-        "ai-data",
-        "iot"
-      ],
-      "scale_tags": [
-        "industrial-scale",
-        "planetary-scale"
-      ],
-      "market_label": "smart refrigeration and cold-chain intelligence for food and beverages",
-      "self_cats": [
-        "Hardware / IoT"
-      ],
-      "tech_depth": "enabler",
-      "tech_depth_confidence": 0.95,
-      "founded_year": null,
-      "ux": 9.543,
-      "uy": 5.604,
-      "hx": 14.159,
-      "hy": 5.295,
-      "investor_ids": [
-        "inventure",
-        "kamay_ventures"
-      ]
-    },
-    {
       "id": "sensix",
       "name": "Sensix",
       "country": "Brazil",
@@ -7938,228 +6646,6 @@ window.STARTUP_THEMES_DATA = {
         "domo_invest",
         "glocal",
         "slc_agricola"
-      ]
-    },
-    {
-      "id": "sette",
-      "name": "Sette",
-      "country": "Brazil",
-      "countries": [
-        "Brazil"
-      ],
-      "website": "https://www.sette.ag/",
-      "macro_theme": "climate, energy and resource systems",
-      "emergent_theme": "agricultural credit and risk intelligence",
-      "summary": "Brazilian agrifintech infrastructure platform digitizing agricultural guarantees, CPR registration, certificates, signatures and credit-risk workflows with AI, geospatial and field-analysis capabilities",
-      "one_liner": "Agricultural guarantees and credit-risk infrastructure.",
-      "cluster_id": 2,
-      "cluster_label": "Precision Agriculture — Agronomic",
-      "cluster_keywords": "agronomic · credit · field · satellite",
-      "cluster_confidence": 1.0,
-      "x": 13.055,
-      "y": 3.817,
-      "is_outlier": false,
-      "tech_codes": [
-        "ai_ml",
-        "remote_sensing"
-      ],
-      "industry_codes": [
-        "row_crops",
-        "biodiversity",
-        "carbon"
-      ],
-      "quality_score": 8.0,
-      "quality_band": "medium",
-      "community_id": 17,
-      "pagerank": 0.0008918741466795639,
-      "valuation_tier": 1.0,
-      "n_investors_mapped": 1,
-      "bio_theme": "Digital AgTech & Agrifintech",
-      "bio_theme_secondary": "Precision Agriculture",
-      "is_bio_universe": 0,
-      "sub_cluster_label": "Agricultural Credit",
-      "funding_stage": "pre-seed",
-      "funding_bucket_usd": null,
-      "valuation_bucket_usd": null,
-      "valuation_estimate_usd": 4.0,
-      "valuation_estimate_source": "investors_proxy",
-      "sx": 12.756,
-      "sy": 3.349,
-      "bio_lens": [
-        "biocentric",
-        "planetary-boundary"
-      ],
-      "domain_tags": [
-        "agri-food",
-        "biodiversity-nature",
-        "climate-resource"
-      ],
-      "tech_tags": [
-        "ai-data",
-        "remote-sensing"
-      ],
-      "scale_tags": [
-        "agroecosystem-scale",
-        "industrial-scale",
-        "planetary-scale"
-      ],
-      "market_label": "agricultural guarantees and credit-risk infrastructure",
-      "self_cats": [
-        "FinTech",
-        "AgTech"
-      ],
-      "tech_depth": "enabler",
-      "tech_depth_confidence": 0.72,
-      "founded_year": null,
-      "ux": 8.342,
-      "uy": 4.303,
-      "hx": 13.055,
-      "hy": 3.817,
-      "investor_ids": [
-        "sp_ventures"
-      ]
-    },
-    {
-      "id": "silohub",
-      "name": "Silohub",
-      "country": "Argentina",
-      "countries": [
-        "Argentina"
-      ],
-      "website": "https://www.descubre.vc/silohub",
-      "macro_theme": "precision agriculture and resource intelligence",
-      "emergent_theme": "precision agriculture intelligence",
-      "summary": "Argentine AgTech that digitizes the last mile of the grain business for warehouses, distributors and producers. Enter the thesis for precision agriculture and resource intelligence.",
-      "one_liner": "Grain operations and ag-retail platform.",
-      "cluster_id": 2,
-      "cluster_label": "Precision Agriculture — Agronomic",
-      "cluster_keywords": "agronomic · credit · field · satellite",
-      "cluster_confidence": 1.0,
-      "x": 14.967,
-      "y": 6.089,
-      "is_outlier": false,
-      "tech_codes": [
-        "ai_ml"
-      ],
-      "industry_codes": [
-        "row_crops"
-      ],
-      "quality_score": 8.0,
-      "quality_band": "medium",
-      "community_id": 16,
-      "pagerank": 0.0008982101973206307,
-      "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
-      "bio_theme": "Digital AgTech & Agrifintech",
-      "bio_theme_secondary": "Nature & Ecosystem Tech",
-      "is_bio_universe": 0,
-      "sub_cluster_label": "Crop Monitoring",
-      "funding_stage": "pre-seed",
-      "funding_bucket_usd": null,
-      "valuation_bucket_usd": null,
-      "valuation_estimate_usd": 1.5,
-      "valuation_estimate_source": "emergente",
-      "sx": 17.005,
-      "sy": 8.399,
-      "bio_lens": [
-        "biocentric"
-      ],
-      "domain_tags": [
-        "agri-food"
-      ],
-      "tech_tags": [
-        "ai-data"
-      ],
-      "scale_tags": [
-        "agroecosystem-scale",
-        "industrial-scale"
-      ],
-      "market_label": "agtech grain operations infrastructure",
-      "self_cats": [
-        "Precision Ag",
-        "AgTech"
-      ],
-      "tech_depth": "enabler",
-      "tech_depth_confidence": 0.95,
-      "founded_year": null,
-      "ux": 10.151,
-      "uy": 6.506,
-      "hx": 14.967,
-      "hy": 6.089,
-      "investor_ids": []
-    },
-    {
-      "id": "siloreal",
-      "name": "SiloReal",
-      "country": "Argentina",
-      "countries": [
-        "Argentina"
-      ],
-      "website": "https://www.siloreal.com/en/",
-      "macro_theme": "agricultural market infrastructure and data systems",
-      "emergent_theme": "agricultural asset verification and collateral infrastructure",
-      "summary": "SiloReal provides infrastructure to remotely verify, digitalize and value agricultural assets in the field so they can be insured, financed and transacted as real collateral. The company is not biotech, but it is directly attached to material biological production systems because it makes crop and inventory assets legible for finance, insurance and trade",
-      "one_liner": "Remote verification infrastructure for agricultural assets.",
-      "cluster_id": 2,
-      "cluster_label": "Precision Agriculture — Agronomic",
-      "cluster_keywords": "agronomic · credit · field · satellite",
-      "cluster_confidence": 1.0,
-      "x": 12.89,
-      "y": 3.703,
-      "is_outlier": false,
-      "tech_codes": [
-        "saas_marketplace"
-      ],
-      "industry_codes": [
-        "row_crops",
-        "ag_finance"
-      ],
-      "quality_score": 8.0,
-      "quality_band": "medium",
-      "community_id": 5,
-      "pagerank": 0.0009525005173245467,
-      "valuation_tier": 1.0,
-      "n_investors_mapped": 2,
-      "bio_theme": "Digital AgTech & Agrifintech",
-      "bio_theme_secondary": "Precision Agriculture",
-      "is_bio_universe": 0,
-      "sub_cluster_label": "Agricultural Credit",
-      "funding_stage": "seed",
-      "funding_bucket_usd": null,
-      "valuation_bucket_usd": null,
-      "valuation_estimate_usd": 4.0,
-      "valuation_estimate_source": "investors_proxy",
-      "sx": 12.389,
-      "sy": 3.096,
-      "bio_lens": [
-        "biocentric",
-        "planetary-boundary"
-      ],
-      "domain_tags": [
-        "agri-food"
-      ],
-      "tech_tags": [],
-      "scale_tags": [
-        "agroecosystem-scale",
-        "industrial-scale",
-        "planetary-scale"
-      ],
-      "market_label": "agricultural asset verification and collateral infrastructure",
-      "self_cats": [
-        "FinTech",
-        "AgTech",
-        "Biotech"
-      ],
-      "tech_depth": "enabler",
-      "tech_depth_confidence": 0.883,
-      "founded_year": 2021,
-      "ux": 8.264,
-      "uy": 4.127,
-      "hx": 12.89,
-      "hy": 3.703,
-      "investor_ids": [
-        "DraperCygnus",
-        "inventure"
       ]
     },
     {
@@ -8900,79 +7386,6 @@ window.STARTUP_THEMES_DATA = {
       ]
     },
     {
-      "id": "terramagna",
-      "name": "TerraMagna",
-      "country": "Brazil",
-      "countries": [
-        "Brazil"
-      ],
-      "website": "https://terramagna.com.br/",
-      "macro_theme": "climate, energy and resource systems",
-      "emergent_theme": "agricultural credit and risk intelligence",
-      "summary": "Brazilian agrifintech providing credit, receivables and fund infrastructure for agricultural input distributors and the broader agro chain",
-      "one_liner": "Agricultural credit and receivables infrastructure.",
-      "cluster_id": 2,
-      "cluster_label": "Precision Agriculture — Agronomic",
-      "cluster_keywords": "agronomic · credit · field · satellite",
-      "cluster_confidence": 1.0,
-      "x": 12.604,
-      "y": 3.532,
-      "is_outlier": false,
-      "tech_codes": [
-        "saas_marketplace"
-      ],
-      "industry_codes": [
-        "row_crops",
-        "carbon"
-      ],
-      "quality_score": 8.0,
-      "quality_band": "medium",
-      "community_id": 5,
-      "pagerank": 0.0012648078806586772,
-      "valuation_tier": 1.0,
-      "n_investors_mapped": 2,
-      "bio_theme": "Digital AgTech & Agrifintech",
-      "bio_theme_secondary": "Precision Agriculture",
-      "is_bio_universe": 0,
-      "sub_cluster_label": "Agricultural Credit",
-      "funding_stage": "series-a",
-      "funding_bucket_usd": null,
-      "valuation_bucket_usd": null,
-      "valuation_estimate_usd": 4.0,
-      "valuation_estimate_source": "investors_proxy",
-      "sx": 11.753,
-      "sy": 2.716,
-      "bio_lens": [
-        "biocentric",
-        "planetary-boundary"
-      ],
-      "domain_tags": [
-        "agri-food",
-        "climate-resource"
-      ],
-      "tech_tags": [],
-      "scale_tags": [
-        "agroecosystem-scale",
-        "industrial-scale",
-        "planetary-scale"
-      ],
-      "market_label": "agricultural credit and receivables infrastructure",
-      "self_cats": [
-        "AgTech"
-      ],
-      "tech_depth": "enabler",
-      "tech_depth_confidence": 0.795,
-      "founded_year": null,
-      "ux": 8.153,
-      "uy": 3.827,
-      "hx": 12.604,
-      "hy": 3.532,
-      "investor_ids": [
-        "onevc",
-        "the_yield_lab_latam"
-      ]
-    },
-    {
       "id": "the-earth-says",
       "name": "The Earth Says",
       "country": "Chile",
@@ -9128,160 +7541,6 @@ window.STARTUP_THEMES_DATA = {
       ]
     },
     {
-      "id": "traive",
-      "name": "Traive",
-      "country": "Brazil",
-      "countries": [
-        "Brazil"
-      ],
-      "website": "https://traive.com.br/en/",
-      "macro_theme": "climate, energy and resource systems",
-      "emergent_theme": "agricultural credit and risk intelligence",
-      "summary": "Brazilian agrifintech connecting agribusiness and investors through AI-powered agricultural credit, risk analysis, receivables and traceability infrastructure",
-      "one_liner": "AI-enabled agricultural credit and receivables infrastructure.",
-      "cluster_id": 2,
-      "cluster_label": "Precision Agriculture — Agronomic",
-      "cluster_keywords": "agronomic · credit · field · satellite",
-      "cluster_confidence": 1.0,
-      "x": 12.567,
-      "y": 3.554,
-      "is_outlier": false,
-      "tech_codes": [
-        "blockchain",
-        "ai_ml"
-      ],
-      "industry_codes": [
-        "row_crops",
-        "carbon"
-      ],
-      "quality_score": 8.0,
-      "quality_band": "medium",
-      "community_id": 17,
-      "pagerank": 0.003728071929911787,
-      "valuation_tier": 1.0,
-      "n_investors_mapped": 7,
-      "bio_theme": "Digital AgTech & Agrifintech",
-      "bio_theme_secondary": "Nature & Ecosystem Tech",
-      "is_bio_universe": 0,
-      "sub_cluster_label": "Agricultural Credit",
-      "funding_stage": "series-b",
-      "funding_bucket_usd": null,
-      "valuation_bucket_usd": null,
-      "valuation_estimate_usd": 4.0,
-      "valuation_estimate_source": "investors_proxy",
-      "sx": 11.671,
-      "sy": 2.765,
-      "bio_lens": [
-        "planetary-boundary"
-      ],
-      "domain_tags": [
-        "agri-food",
-        "climate-resource"
-      ],
-      "tech_tags": [
-        "ai-data"
-      ],
-      "scale_tags": [
-        "agroecosystem-scale",
-        "industrial-scale",
-        "planetary-scale"
-      ],
-      "market_label": "AI-enabled agricultural credit and receivables infrastructure",
-      "self_cats": [
-        "AI / Data",
-        "AgTech"
-      ],
-      "tech_depth": "enabler",
-      "tech_depth_confidence": 0.72,
-      "founded_year": null,
-      "ux": 8.18,
-      "uy": 3.796,
-      "hx": 12.567,
-      "hy": 3.554,
-      "investor_ids": [
-        "astella_investimentos",
-        "basf_venture_capital",
-        "bb_agro_ventures",
-        "fmc_ventures",
-        "kamay_ventures",
-        "sp_ventures",
-        "vox_capital"
-      ]
-    },
-    {
-      "id": "tuplaza",
-      "name": "TuPlaza",
-      "country": "Colombia",
-      "countries": [
-        "Colombia"
-      ],
-      "website": "https://www.f6s.com/company/tuplaza",
-      "macro_theme": "climate, energy and resource systems",
-      "emergent_theme": "fresh food supply-chain infrastructure",
-      "summary": "TuPlaza is a Colombian fresh-produce supply-chain platform connecting quality-focused farmers with grocery stores and mass-consumption channels. Its public profile describes a one-stop fresh-produce platform for grocery stores across LATAM, digitizing food distribution while operating in multiple Colombian cities",
-      "one_liner": "Fresh produce distribution platform for grocery stores.",
-      "cluster_id": 2,
-      "cluster_label": "Precision Agriculture — Agronomic",
-      "cluster_keywords": "agronomic · credit · field · satellite",
-      "cluster_confidence": 0.697,
-      "x": 13.907,
-      "y": 4.258,
-      "is_outlier": false,
-      "tech_codes": [
-        "saas_marketplace",
-        "ai_ml"
-      ],
-      "industry_codes": [
-        "specialty_crops",
-        "row_crops",
-        "carbon"
-      ],
-      "quality_score": 8.0,
-      "quality_band": "medium",
-      "community_id": -1,
-      "pagerank": 0.0008690620741330828,
-      "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
-      "bio_theme": "Digital AgTech & Agrifintech",
-      "bio_theme_secondary": "Bioinputs & Crop Resilience",
-      "is_bio_universe": 0,
-      "sub_cluster_label": "Crop Monitoring",
-      "funding_stage": "pre-seed",
-      "funding_bucket_usd": null,
-      "valuation_bucket_usd": null,
-      "valuation_estimate_usd": 1.5,
-      "valuation_estimate_source": "emergente",
-      "sx": 14.649,
-      "sy": 4.329,
-      "bio_lens": [
-        "planetary-boundary"
-      ],
-      "domain_tags": [
-        "agri-food",
-        "climate-resource"
-      ],
-      "tech_tags": [
-        "ai-data"
-      ],
-      "scale_tags": [
-        "agroecosystem-scale",
-        "industrial-scale",
-        "planetary-scale"
-      ],
-      "market_label": "fresh produce distribution platform for grocery stores",
-      "self_cats": [
-        "AgTech"
-      ],
-      "tech_depth": "enabler",
-      "tech_depth_confidence": 0.755,
-      "founded_year": null,
-      "ux": 8.609,
-      "uy": 5.184,
-      "hx": 13.907,
-      "hy": 4.258,
-      "investor_ids": []
-    },
-    {
       "id": "ucrop-it-ar",
       "name": "ucrop.it",
       "country": "Argentina",
@@ -9356,84 +7615,6 @@ window.STARTUP_THEMES_DATA = {
       "hy": 10.871,
       "investor_ids": [
         "glocal",
-        "the_yield_lab_latam"
-      ]
-    },
-    {
-      "id": "verqor",
-      "name": "Verqor",
-      "country": "Mexico",
-      "countries": [
-        "Mexico"
-      ],
-      "website": "https://verqor.com/sobre-verqor",
-      "macro_theme": "climate, energy and resource systems",
-      "emergent_theme": "traceability and tokenized resource infrastructure",
-      "summary": "Verqor is a Mexican agfintech providing formal, digital and productive financing for farmers and agricultural SMEs, especially for inputs, machinery and working capital. Its official site describes credit adapted to crop cycles, digital onboarding, input purchases and producer/supplier workflows; public impact material adds regenerative-practice adoption and access to biological agro-inputs",
-      "one_liner": "Digital agricultural finance and input-credit platform.",
-      "cluster_id": 2,
-      "cluster_label": "Precision Agriculture — Agronomic",
-      "cluster_keywords": "agronomic · credit · field · satellite",
-      "cluster_confidence": 1.0,
-      "x": 12.519,
-      "y": 3.448,
-      "is_outlier": false,
-      "tech_codes": [
-        "ai_ml"
-      ],
-      "industry_codes": [
-        "ag_finance",
-        "row_crops",
-        "carbon"
-      ],
-      "quality_score": 8.0,
-      "quality_band": "medium",
-      "community_id": 5,
-      "pagerank": 0.0009150458524957565,
-      "valuation_tier": 1.0,
-      "n_investors_mapped": 2,
-      "bio_theme": "Digital AgTech & Agrifintech",
-      "bio_theme_secondary": "Bioinputs & Crop Resilience",
-      "is_bio_universe": 0,
-      "sub_cluster_label": "Agricultural Credit",
-      "funding_stage": "seed",
-      "funding_bucket_usd": null,
-      "valuation_bucket_usd": null,
-      "valuation_estimate_usd": 4.0,
-      "valuation_estimate_source": "investors_proxy",
-      "sx": 11.564,
-      "sy": 2.529,
-      "bio_lens": [
-        "biocentric",
-        "planetary-boundary",
-        "regenerative"
-      ],
-      "domain_tags": [
-        "agri-food",
-        "climate-resource"
-      ],
-      "tech_tags": [
-        "ai-data"
-      ],
-      "scale_tags": [
-        "agroecosystem-scale",
-        "industrial-scale",
-        "planetary-scale"
-      ],
-      "market_label": "digital agricultural finance platform",
-      "self_cats": [
-        "FinTech",
-        "AgTech"
-      ],
-      "tech_depth": "enabler",
-      "tech_depth_confidence": 0.68,
-      "founded_year": null,
-      "ux": 8.088,
-      "uy": 3.732,
-      "hx": 12.519,
-      "hy": 3.448,
-      "investor_ids": [
-        "sp_ventures",
         "the_yield_lab_latam"
       ]
     },
@@ -38153,59 +36334,6 @@ window.STARTUP_THEMES_DATA = {
       "n_featured": 11
     },
     {
-      "cluster_id": 2,
-      "label": "Precision Agriculture — Agronomic",
-      "keywords": "agronomic · credit · field · satellite",
-      "size": 75,
-      "bio_themes": {
-        "Precision Agriculture": 37,
-        "Nature & Ecosystem Tech": 10,
-        "Digital AgTech & Agrifintech": 24,
-        "Food Systems & Alt Proteins": 3,
-        "Diagnostics & Devices": 1
-      },
-      "tech_codes": {
-        "saas_marketplace": 19,
-        "ai_ml": 58,
-        "blockchain": 15,
-        "ag_inputs": 3,
-        "carbon_tech": 2,
-        "remote_sensing": 18,
-        "vertical_farming": 2,
-        "computational_bio": 2,
-        "iot": 7,
-        "biomanufacturing": 1,
-        "clean_energy": 1
-      },
-      "industry_codes": {
-        "row_crops": 72,
-        "carbon": 46,
-        "soil_health": 4,
-        "animal_protein": 5,
-        "human_health": 2,
-        "ag_finance": 5,
-        "biodiversity": 10,
-        "research_labs": 1,
-        "water": 2,
-        "food_ingredients": 8,
-        "energy": 2,
-        "specialty_crops": 6,
-        "biomanufacturing_industry": 1,
-        "waste_circular": 1
-      },
-      "countries": {
-        "Brazil": 38,
-        "Argentina": 24,
-        "Colombia": 4,
-        "Chile": 4,
-        "Mexico": 2,
-        "USA": 2,
-        "Peru": 1
-      },
-      "n_funded": 68,
-      "n_featured": 10
-    },
-    {
       "cluster_id": 3,
       "label": "Bioinputs & Crop Resilience — Crop Resilience",
       "keywords": "biologicals · crop resilience · bioinputs · farmers",
@@ -38259,6 +36387,56 @@ window.STARTUP_THEMES_DATA = {
       },
       "n_funded": 46,
       "n_featured": 9
+    },
+    {
+      "cluster_id": 2,
+      "label": "Precision Agriculture — Agronomic",
+      "keywords": "agronomic · credit · field · satellite",
+      "size": 51,
+      "bio_themes": {
+        "Precision Agriculture": 37,
+        "Nature & Ecosystem Tech": 10,
+        "Food Systems & Alt Proteins": 3,
+        "Diagnostics & Devices": 1
+      },
+      "tech_codes": {
+        "saas_marketplace": 8,
+        "ai_ml": 38,
+        "blockchain": 13,
+        "vertical_farming": 2,
+        "remote_sensing": 13,
+        "computational_bio": 2,
+        "iot": 6,
+        "biomanufacturing": 1,
+        "clean_energy": 1,
+        "ag_inputs": 2,
+        "carbon_tech": 1
+      },
+      "industry_codes": {
+        "row_crops": 48,
+        "carbon": 29,
+        "ag_finance": 1,
+        "research_labs": 1,
+        "water": 2,
+        "specialty_crops": 4,
+        "biodiversity": 7,
+        "soil_health": 3,
+        "food_ingredients": 4,
+        "biomanufacturing_industry": 1,
+        "animal_protein": 3,
+        "human_health": 1,
+        "energy": 1
+      },
+      "countries": {
+        "Brazil": 27,
+        "Argentina": 17,
+        "Chile": 4,
+        "Colombia": 1,
+        "Peru": 1,
+        "USA": 1
+      },
+      "n_funded": 46,
+      "n_featured": 8
     },
     {
       "cluster_id": 0,
@@ -38968,17 +37146,17 @@ window.STARTUP_THEMES_DATA = {
     {
       "id": "sp_ventures",
       "name": "SP Ventures",
-      "n": 35
-    },
-    {
-      "id": "the_yield_lab_latam",
-      "name": "The Yield Lab LATAM",
-      "n": 29
+      "n": 25
     },
     {
       "id": "SF500",
       "name": "SF500",
       "n": 22
+    },
+    {
+      "id": "the_yield_lab_latam",
+      "name": "The Yield Lab LATAM",
+      "n": 21
     },
     {
       "id": "AIR Capital",
@@ -39006,28 +37184,23 @@ window.STARTUP_THEMES_DATA = {
       "n": 12
     },
     {
-      "id": "inventure",
-      "name": "Inventure",
-      "n": 11
-    },
-    {
-      "id": "kptl",
-      "name": "KPTL",
-      "n": 10
-    },
-    {
-      "id": "kamay_ventures",
-      "name": "Kamay Ventures",
-      "n": 10
-    },
-    {
       "id": "Antom",
       "name": "Antom",
       "n": 9
     },
     {
-      "id": "DraperCygnus",
-      "name": "DraperCygnus",
+      "id": "inventure",
+      "name": "Inventure",
+      "n": 9
+    },
+    {
+      "id": "kptl",
+      "name": "KPTL",
+      "n": 8
+    },
+    {
+      "id": "kamay_ventures",
+      "name": "Kamay Ventures",
       "n": 8
     },
     {
@@ -39046,19 +37219,14 @@ window.STARTUP_THEMES_DATA = {
       "n": 7
     },
     {
+      "id": "DraperCygnus",
+      "name": "DraperCygnus",
+      "n": 7
+    },
+    {
       "id": "vesper_ventures",
       "name": "Vesper Ventures",
       "n": 6
-    },
-    {
-      "id": "valor_capital_group",
-      "name": "Valor Capital Group",
-      "n": 5
-    },
-    {
-      "id": "barn_investimentos",
-      "name": "Barn Investimentos",
-      "n": 4
     },
     {
       "id": "bossa_invest",
@@ -39068,21 +37236,6 @@ window.STARTUP_THEMES_DATA = {
     {
       "id": "endurance_28",
       "name": "Endurance 28",
-      "n": 4
-    },
-    {
-      "id": "newtopia_vc",
-      "name": "Newtopia VC",
-      "n": 4
-    },
-    {
-      "id": "pampa_start",
-      "name": "Pampa Start",
-      "n": 4
-    },
-    {
-      "id": "vox_capital",
-      "name": "Vox Capital",
       "n": 4
     },
     {
@@ -39116,13 +37269,33 @@ window.STARTUP_THEMES_DATA = {
       "n": 3
     },
     {
+      "id": "newtopia_vc",
+      "name": "Newtopia VC",
+      "n": 3
+    },
+    {
+      "id": "pampa_start",
+      "name": "Pampa Start",
+      "n": 3
+    },
+    {
+      "id": "valor_capital_group",
+      "name": "Valor Capital Group",
+      "n": 3
+    },
+    {
+      "id": "vox_capital",
+      "name": "Vox Capital",
+      "n": 3
+    },
+    {
       "id": "bndes",
       "name": "BNDES (Banco Nacional de Desenvolvimento)",
       "n": 2
     },
     {
-      "id": "bb_agro_ventures",
-      "name": "Banco do Brasil Agro Ventures",
+      "id": "barn_investimentos",
+      "name": "Barn Investimentos",
       "n": 2
     },
     {
@@ -39206,11 +37379,6 @@ window.STARTUP_THEMES_DATA = {
       "n": 2
     },
     {
-      "id": "syngenta_ventures",
-      "name": "Syngenta Group Ventures",
-      "n": 2
-    },
-    {
       "id": "y_combinator",
       "name": "Y Combinator",
       "n": 2
@@ -39232,14 +37400,14 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "v": "climate, energy and resource systems",
-        "n": 66
-      },
-      {
-        "v": "precision agriculture and resource intelligence",
-        "n": 46
+        "n": 50
       },
       {
         "v": "food biotech and novel ingredients",
+        "n": 44
+      },
+      {
+        "v": "precision agriculture and resource intelligence",
         "n": 44
       },
       {
@@ -39253,32 +37421,28 @@ window.STARTUP_THEMES_DATA = {
       {
         "v": "computational biology and scientific software",
         "n": 12
-      },
-      {
-        "v": "agricultural market infrastructure and data systems",
-        "n": 7
       }
     ],
     "bio_lens": [
       {
         "v": "human-health-bio",
-        "n": 249
-      },
-      {
-        "v": "biocentric",
-        "n": 228
+        "n": 248
       },
       {
         "v": "biobased",
         "n": 215
       },
       {
+        "v": "biocentric",
+        "n": 213
+      },
+      {
         "v": "planetary-boundary",
-        "n": 206
+        "n": 184
       },
       {
         "v": "regenerative",
-        "n": 121
+        "n": 115
       },
       {
         "v": "bio-enabled-industrial-transition",
@@ -39286,21 +37450,21 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "v": "circular",
-        "n": 42
+        "n": 39
       }
     ],
     "domain": [
       {
         "v": "human-health",
-        "n": 264
+        "n": 263
       },
       {
         "v": "agri-food",
-        "n": 254
+        "n": 230
       },
       {
         "v": "climate-resource",
-        "n": 137
+        "n": 120
       },
       {
         "v": "diagnostics-medtech",
@@ -39312,7 +37476,7 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "v": "biodiversity-nature",
-        "n": 70
+        "n": 67
       },
       {
         "v": "biomaterials",
@@ -39330,7 +37494,7 @@ window.STARTUP_THEMES_DATA = {
     "tech": [
       {
         "v": "ai-data",
-        "n": 214
+        "n": 194
       },
       {
         "v": "therapeutics",
@@ -39357,11 +37521,11 @@ window.STARTUP_THEMES_DATA = {
         "n": 37
       },
       {
-        "v": "remote-sensing",
-        "n": 25
+        "v": "synthetic-biology",
+        "n": 20
       },
       {
-        "v": "synthetic-biology",
+        "v": "remote-sensing",
         "n": 20
       },
       {
@@ -39369,11 +37533,11 @@ window.STARTUP_THEMES_DATA = {
         "n": 13
       },
       {
-        "v": "iot",
-        "n": 13
+        "v": "carbon-mrv",
+        "n": 12
       },
       {
-        "v": "carbon-mrv",
+        "v": "iot",
         "n": 12
       },
       {
@@ -39387,32 +37551,32 @@ window.STARTUP_THEMES_DATA = {
     ],
     "scale": [
       {
-        "v": "industrial-scale",
-        "n": 271
+        "v": "human-scale",
+        "n": 263
       },
       {
-        "v": "human-scale",
-        "n": 264
+        "v": "industrial-scale",
+        "n": 247
       },
       {
         "v": "product-scale",
-        "n": 197
+        "n": 196
       },
       {
         "v": "agroecosystem-scale",
-        "n": 190
-      },
-      {
-        "v": "planetary-scale",
-        "n": 153
+        "n": 168
       },
       {
         "v": "molecular-scale",
         "n": 145
       },
       {
+        "v": "planetary-scale",
+        "n": 131
+      },
+      {
         "v": "territorial-scale",
-        "n": 71
+        "n": 69
       }
     ]
   },
@@ -39446,7 +37610,7 @@ window.STARTUP_THEMES_DATA = {
       {
         "id": "DraperCygnus",
         "name": "DraperCygnus",
-        "n_investments": 8
+        "n_investments": 7
       },
       {
         "id": "GridX",
@@ -39477,11 +37641,6 @@ window.STARTUP_THEMES_DATA = {
         "id": "aceleradora_litoral",
         "name": "Aceleradora Litoral",
         "n_investments": 7
-      },
-      {
-        "id": "acre_venture_partners",
-        "name": "Acre Venture Partners",
-        "n_investments": 1
       },
       {
         "id": "agrex",
@@ -39519,11 +37678,6 @@ window.STARTUP_THEMES_DATA = {
         "n_investments": 1
       },
       {
-        "id": "astella_investimentos",
-        "name": "Astella Investimentos",
-        "n_investments": 1
-      },
-      {
         "id": "atlantico",
         "name": "Atlantico",
         "n_investments": 1
@@ -39541,22 +37695,12 @@ window.STARTUP_THEMES_DATA = {
       {
         "id": "barn_investimentos",
         "name": "Barn Investimentos",
-        "n_investments": 4
-      },
-      {
-        "id": "base_capital",
-        "name": "Base Capital",
-        "n_investments": 1
-      },
-      {
-        "id": "basf_venture_capital",
-        "name": "BASF Venture Capital",
-        "n_investments": 1
+        "n_investments": 2
       },
       {
         "id": "bb_agro_ventures",
         "name": "Banco do Brasil Agro Ventures",
-        "n_investments": 2
+        "n_investments": 1
       },
       {
         "id": "biomerieux",
@@ -39724,11 +37868,6 @@ window.STARTUP_THEMES_DATA = {
         "n_investments": 1
       },
       {
-        "id": "fmc_ventures",
-        "name": "FMC Ventures",
-        "n_investments": 1
-      },
-      {
         "id": "fondo_alerce",
         "name": "Fondo Alerce VC",
         "n_investments": 2
@@ -39771,11 +37910,6 @@ window.STARTUP_THEMES_DATA = {
       {
         "id": "global_fund_coral_reefs",
         "name": "Global Fund for Coral Reefs",
-        "n_investments": 1
-      },
-      {
-        "id": "globo_ventures",
-        "name": "Globo Ventures",
         "n_investments": 1
       },
       {
@@ -39841,17 +37975,12 @@ window.STARTUP_THEMES_DATA = {
       {
         "id": "inventure",
         "name": "Inventure",
-        "n_investments": 11
-      },
-      {
-        "id": "john_deere_ventures",
-        "name": "John Deere Ventures",
-        "n_investments": 1
+        "n_investments": 9
       },
       {
         "id": "kamay_ventures",
         "name": "Kamay Ventures",
-        "n_investments": 10
+        "n_investments": 8
       },
       {
         "id": "kaszek",
@@ -39871,7 +38000,7 @@ window.STARTUP_THEMES_DATA = {
       {
         "id": "kptl",
         "name": "KPTL",
-        "n_investments": 10
+        "n_investments": 8
       },
       {
         "id": "la_turbina",
@@ -39901,11 +38030,6 @@ window.STARTUP_THEMES_DATA = {
       {
         "id": "lowercarbon_capital",
         "name": "Lowercarbon Capital",
-        "n_investments": 1
-      },
-      {
-        "id": "maya_capital",
-        "name": "Maya Capital",
         "n_investments": 1
       },
       {
@@ -39941,17 +38065,7 @@ window.STARTUP_THEMES_DATA = {
       {
         "id": "newtopia_vc",
         "name": "Newtopia VC",
-        "n_investments": 4
-      },
-      {
-        "id": "nubarium_capital",
-        "name": "Nubarium Capital",
-        "n_investments": 1
-      },
-      {
-        "id": "onevc",
-        "name": "OneVC",
-        "n_investments": 1
+        "n_investments": 3
       },
       {
         "id": "ospraie_ag_science",
@@ -39966,7 +38080,7 @@ window.STARTUP_THEMES_DATA = {
       {
         "id": "pampa_start",
         "name": "Pampa Start",
-        "n_investments": 4
+        "n_investments": 3
       },
       {
         "id": "pitanga",
@@ -40021,7 +38135,7 @@ window.STARTUP_THEMES_DATA = {
       {
         "id": "sp_ventures",
         "name": "SP Ventures",
-        "n_investments": 35
+        "n_investments": 25
       },
       {
         "id": "sumitomo_corp",
@@ -40034,14 +38148,9 @@ window.STARTUP_THEMES_DATA = {
         "n_investments": 1
       },
       {
-        "id": "syngenta_ventures",
-        "name": "Syngenta Group Ventures",
-        "n_investments": 2
-      },
-      {
         "id": "the_yield_lab_latam",
         "name": "The Yield Lab LATAM",
-        "n_investments": 29
+        "n_investments": 21
       },
       {
         "id": "union_acquisition_corp",
@@ -40056,7 +38165,7 @@ window.STARTUP_THEMES_DATA = {
       {
         "id": "valor_capital_group",
         "name": "Valor Capital Group",
-        "n_investments": 5
+        "n_investments": 3
       },
       {
         "id": "varana_capital",
@@ -40074,14 +38183,9 @@ window.STARTUP_THEMES_DATA = {
         "n_investments": 6
       },
       {
-        "id": "visa_ventures",
-        "name": "Visa Ventures",
-        "n_investments": 1
-      },
-      {
         "id": "vox_capital",
         "name": "Vox Capital",
-        "n_investments": 4
+        "n_investments": 3
       },
       {
         "id": "water_lemon_ventures",
@@ -40317,10 +38421,6 @@ window.STARTUP_THEMES_DATA = {
       {
         "investor_id": "DraperCygnus",
         "startup_id": "satellogic"
-      },
-      {
-        "investor_id": "DraperCygnus",
-        "startup_id": "siloreal"
       },
       {
         "investor_id": "DraperCygnus",
@@ -40959,10 +39059,6 @@ window.STARTUP_THEMES_DATA = {
         "startup_id": "untech"
       },
       {
-        "investor_id": "acre_venture_partners",
-        "startup_id": "arado"
-      },
-      {
         "investor_id": "agrex",
         "startup_id": "genica"
       },
@@ -40991,10 +39087,6 @@ window.STARTUP_THEMES_DATA = {
         "startup_id": "calice_biotech"
       },
       {
-        "investor_id": "astella_investimentos",
-        "startup_id": "traive"
-      },
-      {
         "investor_id": "atlantico",
         "startup_id": "genial-care-br"
       },
@@ -41008,14 +39100,6 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "barn_investimentos",
-        "startup_id": "agrolend"
-      },
-      {
-        "investor_id": "barn_investimentos",
-        "startup_id": "agrotoken"
-      },
-      {
-        "investor_id": "barn_investimentos",
         "startup_id": "rumina"
       },
       {
@@ -41023,20 +39107,8 @@ window.STARTUP_THEMES_DATA = {
         "startup_id": "strider-br"
       },
       {
-        "investor_id": "base_capital",
-        "startup_id": "agrotoken"
-      },
-      {
-        "investor_id": "basf_venture_capital",
-        "startup_id": "traive"
-      },
-      {
         "investor_id": "bb_agro_ventures",
         "startup_id": "genica"
-      },
-      {
-        "investor_id": "bb_agro_ventures",
-        "startup_id": "traive"
       },
       {
         "investor_id": "biomerieux",
@@ -41251,10 +39323,6 @@ window.STARTUP_THEMES_DATA = {
         "startup_id": "andes-biotechnologies-cl"
       },
       {
-        "investor_id": "fmc_ventures",
-        "startup_id": "traive"
-      },
-      {
         "investor_id": "fondo_alerce",
         "startup_id": "the-live-green-co-cl"
       },
@@ -41301,10 +39369,6 @@ window.STARTUP_THEMES_DATA = {
       {
         "investor_id": "global_fund_coral_reefs",
         "startup_id": "agrion-agrisolutions-br"
-      },
-      {
-        "investor_id": "globo_ventures",
-        "startup_id": "arado"
       },
       {
         "investor_id": "glocal",
@@ -41444,14 +39508,6 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "inventure",
-        "startup_id": "sensify"
-      },
-      {
-        "investor_id": "inventure",
-        "startup_id": "siloreal"
-      },
-      {
-        "investor_id": "inventure",
         "startup_id": "tracestory"
       },
       {
@@ -41461,10 +39517,6 @@ window.STARTUP_THEMES_DATA = {
       {
         "investor_id": "inventure",
         "startup_id": "zoomagri"
-      },
-      {
-        "investor_id": "john_deere_ventures",
-        "startup_id": "agrotoken"
       },
       {
         "investor_id": "kamay_ventures",
@@ -41492,15 +39544,7 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "kamay_ventures",
-        "startup_id": "sensify"
-      },
-      {
-        "investor_id": "kamay_ventures",
         "startup_id": "solfium"
-      },
-      {
-        "investor_id": "kamay_ventures",
-        "startup_id": "traive"
       },
       {
         "investor_id": "kamay_ventures",
@@ -41536,19 +39580,11 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "kptl",
-        "startup_id": "agrotools"
-      },
-      {
-        "investor_id": "kptl",
         "startup_id": "biomas"
       },
       {
         "investor_id": "kptl",
         "startup_id": "carbonext"
-      },
-      {
-        "investor_id": "kptl",
-        "startup_id": "culttivo"
       },
       {
         "investor_id": "kptl",
@@ -41595,10 +39631,6 @@ window.STARTUP_THEMES_DATA = {
         "startup_id": "mombak"
       },
       {
-        "investor_id": "maya_capital",
-        "startup_id": "arado"
-      },
-      {
         "investor_id": "meet_capital",
         "startup_id": "avedian-ar"
       },
@@ -41640,19 +39672,7 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "newtopia_vc",
-        "startup_id": "nilus"
-      },
-      {
-        "investor_id": "newtopia_vc",
         "startup_id": "waterplan"
-      },
-      {
-        "investor_id": "nubarium_capital",
-        "startup_id": "agrotoken"
-      },
-      {
-        "investor_id": "onevc",
-        "startup_id": "terramagna"
       },
       {
         "investor_id": "ospraie_ag_science",
@@ -41661,10 +39681,6 @@ window.STARTUP_THEMES_DATA = {
       {
         "investor_id": "oxygea",
         "startup_id": "growpack"
-      },
-      {
-        "investor_id": "pampa_start",
-        "startup_id": "agrired"
       },
       {
         "investor_id": "pampa_start",
@@ -41756,31 +39772,11 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "sp_ventures",
-        "startup_id": "agrofy"
-      },
-      {
-        "investor_id": "sp_ventures",
-        "startup_id": "agrolend"
-      },
-      {
-        "investor_id": "sp_ventures",
         "startup_id": "agronow-br"
       },
       {
         "investor_id": "sp_ventures",
         "startup_id": "agrosmart"
-      },
-      {
-        "investor_id": "sp_ventures",
-        "startup_id": "arado"
-      },
-      {
-        "investor_id": "sp_ventures",
-        "startup_id": "blooms"
-      },
-      {
-        "investor_id": "sp_ventures",
-        "startup_id": "brain_ag"
       },
       {
         "investor_id": "sp_ventures",
@@ -41812,10 +39808,6 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "sp_ventures",
-        "startup_id": "goflux"
-      },
-      {
-        "investor_id": "sp_ventures",
         "startup_id": "horus_aeronaves"
       },
       {
@@ -41833,10 +39825,6 @@ window.STARTUP_THEMES_DATA = {
       {
         "investor_id": "sp_ventures",
         "startup_id": "jetbov"
-      },
-      {
-        "investor_id": "sp_ventures",
-        "startup_id": "leaf"
       },
       {
         "investor_id": "sp_ventures",
@@ -41864,10 +39852,6 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "sp_ventures",
-        "startup_id": "sette"
-      },
-      {
-        "investor_id": "sp_ventures",
         "startup_id": "solubio"
       },
       {
@@ -41877,14 +39861,6 @@ window.STARTUP_THEMES_DATA = {
       {
         "investor_id": "sp_ventures",
         "startup_id": "strider-br"
-      },
-      {
-        "investor_id": "sp_ventures",
-        "startup_id": "traive"
-      },
-      {
-        "investor_id": "sp_ventures",
-        "startup_id": "verqor"
       },
       {
         "investor_id": "sp_ventures",
@@ -41899,24 +39875,8 @@ window.STARTUP_THEMES_DATA = {
         "startup_id": "michroma"
       },
       {
-        "investor_id": "syngenta_ventures",
-        "startup_id": "agrolend"
-      },
-      {
-        "investor_id": "syngenta_ventures",
-        "startup_id": "arado"
-      },
-      {
         "investor_id": "the_yield_lab_latam",
         "startup_id": "agree"
-      },
-      {
-        "investor_id": "the_yield_lab_latam",
-        "startup_id": "agricapital"
-      },
-      {
-        "investor_id": "the_yield_lab_latam",
-        "startup_id": "agroforte"
       },
       {
         "investor_id": "the_yield_lab_latam",
@@ -41936,19 +39896,11 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "the_yield_lab_latam",
-        "startup_id": "blooms"
-      },
-      {
-        "investor_id": "the_yield_lab_latam",
         "startup_id": "cerradox"
       },
       {
         "investor_id": "the_yield_lab_latam",
         "startup_id": "courageous_land"
-      },
-      {
-        "investor_id": "the_yield_lab_latam",
-        "startup_id": "culttivo"
       },
       {
         "investor_id": "the_yield_lab_latam",
@@ -41961,10 +39913,6 @@ window.STARTUP_THEMES_DATA = {
       {
         "investor_id": "the_yield_lab_latam",
         "startup_id": "heartbest"
-      },
-      {
-        "investor_id": "the_yield_lab_latam",
-        "startup_id": "incluirtec"
       },
       {
         "investor_id": "the_yield_lab_latam",
@@ -41984,10 +39932,6 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "the_yield_lab_latam",
-        "startup_id": "seedz"
-      },
-      {
-        "investor_id": "the_yield_lab_latam",
         "startup_id": "sioma"
       },
       {
@@ -42004,19 +39948,11 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "the_yield_lab_latam",
-        "startup_id": "terramagna"
-      },
-      {
-        "investor_id": "the_yield_lab_latam",
         "startup_id": "ucrop-it-ar"
       },
       {
         "investor_id": "the_yield_lab_latam",
         "startup_id": "um_grau_e_meio"
-      },
-      {
-        "investor_id": "the_yield_lab_latam",
-        "startup_id": "verqor"
       },
       {
         "investor_id": "the_yield_lab_latam",
@@ -42029,14 +39965,6 @@ window.STARTUP_THEMES_DATA = {
       {
         "investor_id": "union_square_ventures",
         "startup_id": "mombak"
-      },
-      {
-        "investor_id": "valor_capital_group",
-        "startup_id": "agrolend"
-      },
-      {
-        "investor_id": "valor_capital_group",
-        "startup_id": "arado"
       },
       {
         "investor_id": "valor_capital_group",
@@ -42083,10 +40011,6 @@ window.STARTUP_THEMES_DATA = {
         "startup_id": "vyro-bio-br"
       },
       {
-        "investor_id": "visa_ventures",
-        "startup_id": "agrotoken"
-      },
-      {
         "investor_id": "vox_capital",
         "startup_id": "genica"
       },
@@ -42097,10 +40021,6 @@ window.STARTUP_THEMES_DATA = {
       {
         "investor_id": "vox_capital",
         "startup_id": "magnamed"
-      },
-      {
-        "investor_id": "vox_capital",
-        "startup_id": "traive"
       },
       {
         "investor_id": "water_lemon_ventures",

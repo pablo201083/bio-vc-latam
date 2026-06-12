@@ -47,8 +47,9 @@ TAXONOMY: list[dict] = [
              "themes": ["Bioinputs & Crop Resilience", "Nature & Ecosystem Tech"]},
             {"name": "Inteligencia de Campo", "color": "#2E4E8C",
              "themes": ["Precision Agriculture"]},
-            {"name": "AgTech Digital (eco-adjacent)", "color": "#8C8FA3",
-             "themes": ["Digital AgTech & Agrifintech"]},
+            # Digital AgTech & Agrifintech: excluido del corpus default por recorte
+            # estratégico (2026-06-12, dinámica de financiamiento distinta). Re-agregar
+            # acá si se re-incluye al universo.
         ],
     },
 ]

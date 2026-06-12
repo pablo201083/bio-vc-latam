@@ -2334,7 +2334,7 @@ const MEGA_ORDER=[
   {name:"BioMedicina",  color:"#5A4FCF",
    macros:["Diagnóstico · Terapéutica"]},
   {name:"BioIndustria & Territorio", color:"#2E7D52",
-   macros:["Bioplatforma Industrial","Agroecosistemas","Inteligencia de Campo","AgTech Digital"]},
+   macros:["Bioplatforma Industrial","Agroecosistemas","Inteligencia de Campo"]},
 ];
 // Ward k=4 macro-clusters
 const MACRO_ORDER=[
@@ -2350,9 +2350,7 @@ const MACRO_ORDER=[
   {name:"Inteligencia de Campo",
    themes:["Precision Agriculture"],
    color:"#2E4E8C", mega:"BioIndustria & Territorio"},
-  {name:"AgTech Digital",
-   themes:["Digital AgTech & Agrifintech"],
-   color:"#8C8FA3", mega:"BioIndustria & Territorio"},
+  // Digital AgTech & Agrifintech: excluido del corpus default (recorte estrategico 2026-06-12)
 ];
 const MACRO_MAP={};
 MACRO_ORDER.forEach(m=>m.themes.forEach(t=>{MACRO_MAP[t]=m.name;}));
@@ -2366,7 +2364,7 @@ const K3_NODE={
   macros:["Bioplatforma Industrial","Agroecosistemas"],
   color:"#4A7A42",
 };
-const MACRO_DIRECT_FROM_MEGA=new Set(["Inteligencia de Campo","AgTech Digital"]);
+const MACRO_DIRECT_FROM_MEGA=new Set(["Inteligencia de Campo"]);
 
 const THEME_ORDER_DENDRO=[
   // Mega: BioMedicina
@@ -2378,8 +2376,7 @@ const THEME_ORDER_DENDRO=[
   "Bioinputs & Crop Resilience","Nature & Ecosystem Tech",
   // → Inteligencia de Campo (outlier digital, extremo inferior)
   "Precision Agriculture",
-  // → AgTech Digital (eco-adjacent, no bio-core)
-  "Digital AgTech & Agrifintech",
+  // Digital AgTech & Agrifintech excluido del corpus default (recorte estrategico 2026-06-12)
 ];
 
 function shortCluster(cl){

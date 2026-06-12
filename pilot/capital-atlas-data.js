@@ -1,5 +1,5 @@
 window.CAPITAL_ATLAS_DATA = {
-  "generated_at": "2026-06-12T17:15:59",
+  "generated_at": "2026-06-12T23:00:20",
   "source": "pipeline:build-atlas (SQLite)",
   "summary": {
     "nodes_total": 792,
@@ -9,7 +9,7 @@ window.CAPITAL_ATLAS_DATA = {
     "edges_total": 586,
     "investment_edges_total": 560,
     "allocator_edges_total": 26,
-    "include_startups_total": 508,
+    "include_startups_total": 484,
     "source_backed_include_startups_total": 419,
     "public_source_edges_total": 152
   },
@@ -4264,7 +4264,7 @@ window.CAPITAL_ATLAS_DATA = {
       "type": "startup",
       "label": "Agroforte",
       "country": "BR",
-      "scope_decision": "include",
+      "scope_decision": "exclude",
       "theme": "Digital AgTech & Agrifintech",
       "legacy_macro_theme": "climate, energy and resource systems",
       "emergent_theme": "Precision Agriculture",
@@ -4273,7 +4273,7 @@ window.CAPITAL_ATLAS_DATA = {
       "semantic_single_score": "",
       "summary": "Brazilian rural-finance platform building a digital bank for small and medium poultry, pork and dairy producers. It uses historical production data from integrated animal-protein systems to manage credit risk and finance infrastructure and operational improvements. It remains an edge include because the mechanism is fintech, but the use case is tightly coupled to animal health, welfare, supply-chain resilience and livestock production.",
       "source_url": "https://theyieldlablatam.com/companies/agroforte/",
-      "review_status": "reviewed",
+      "review_status": "taxonomy_stub",
       "thesis_fit": "peripheral",
       "taxonomy_source": "bio_theme_v3",
       "evidence_source": "db_startup_extended",
@@ -7098,7 +7098,7 @@ window.CAPITAL_ATLAS_DATA = {
       "type": "startup",
       "label": "Sensify",
       "country": "AR",
-      "scope_decision": "include",
+      "scope_decision": "exclude",
       "theme": "Digital AgTech & Agrifintech",
       "legacy_macro_theme": "climate, energy and resource systems",
       "emergent_theme": "Food Systems & Alt Proteins",
@@ -7107,7 +7107,7 @@ window.CAPITAL_ATLAS_DATA = {
       "semantic_single_score": "",
       "summary": "Sensify is an Argentine IoT and AI platform for commercial refrigeration and cold-chain operations in food and beverages. Its systems connect refrigeration assets, predict operating data and provide business insights to avoid cold-chain outages, reduce food losses, improve asset performance and lower energy use",
       "source_url": "https://www.sensify.com.ar/",
-      "review_status": "reviewed",
+      "review_status": "taxonomy_stub",
       "thesis_fit": "peripheral",
       "taxonomy_source": "bio_theme_v3",
       "evidence_source": "db_startup_extended",
@@ -7644,7 +7644,7 @@ window.CAPITAL_ATLAS_DATA = {
       "type": "startup",
       "label": "Agricapital",
       "country": "CO",
-      "scope_decision": "include",
+      "scope_decision": "exclude",
       "theme": "Digital AgTech & Agrifintech",
       "legacy_macro_theme": "climate, energy and resource systems",
       "emergent_theme": "Precision Agriculture",
@@ -7653,7 +7653,7 @@ window.CAPITAL_ATLAS_DATA = {
       "semantic_single_score": "",
       "summary": "AgriCapital is a Colombian agrifintech providing digital AgroCrédito for farmers, rural workers and agro-businesses through mobile workflows and a network of partner agro-stores. Its credit lets producers buy inputs, tools and machinery, pay according to harvest cycles and access financing in rural areas without heavy paperwork",
       "source_url": "https://agricapital.com.co/",
-      "review_status": "reviewed",
+      "review_status": "taxonomy_stub",
       "thesis_fit": "peripheral",
       "taxonomy_source": "bio_theme_v3",
       "evidence_source": "db_startup_extended",
@@ -7670,7 +7670,7 @@ window.CAPITAL_ATLAS_DATA = {
       "type": "startup",
       "label": "Agrired",
       "country": "AR",
-      "scope_decision": "include",
+      "scope_decision": "exclude",
       "theme": "Digital AgTech & Agrifintech",
       "legacy_macro_theme": "agricultural market infrastructure and data systems",
       "emergent_theme": "Nature & Ecosystem Tech",
@@ -7679,7 +7679,7 @@ window.CAPITAL_ATLAS_DATA = {
       "semantic_single_score": "",
       "summary": "B2B infrastructure for the purchase, sale and logistics of seeds, fertilizers and agrochemicals between agricultural companies. It enters the thesis as a digital layer strongly coupled to material flows of agricultural inputs.",
       "source_url": "https://www.agrired.com.ar/",
-      "review_status": "reviewed",
+      "review_status": "taxonomy_stub",
       "thesis_fit": "peripheral",
       "taxonomy_source": "bio_theme_v3",
       "evidence_source": "db_startup_extended",
@@ -7722,7 +7722,7 @@ window.CAPITAL_ATLAS_DATA = {
       "type": "startup",
       "label": "Agrofy",
       "country": "AR",
-      "scope_decision": "include",
+      "scope_decision": "exclude",
       "theme": "Digital AgTech & Agrifintech",
       "legacy_macro_theme": "climate, energy and resource systems",
       "emergent_theme": "Precision Agriculture",
@@ -7731,7 +7731,7 @@ window.CAPITAL_ATLAS_DATA = {
       "semantic_single_score": "",
       "summary": "Argentine agribusiness marketplace and digital ecosystem connecting producers, manufacturers, suppliers, agfintech and media across Latin America",
       "source_url": "https://www.agrofy.com/",
-      "review_status": "reviewed",
+      "review_status": "taxonomy_stub",
       "thesis_fit": "peripheral",
       "taxonomy_source": "bio_theme_v3",
       "evidence_source": "db_startup_extended",
@@ -7774,7 +7774,7 @@ window.CAPITAL_ATLAS_DATA = {
       "type": "startup",
       "label": "Agrolend",
       "country": "BR",
-      "scope_decision": "include",
+      "scope_decision": "exclude",
       "theme": "Digital AgTech & Agrifintech",
       "legacy_macro_theme": "agricultural market infrastructure and data systems",
       "emergent_theme": "Precision Agriculture",
@@ -7783,7 +7783,7 @@ window.CAPITAL_ATLAS_DATA = {
       "semantic_single_score": "",
       "summary": "Agrolend is a Brazilian agfintech focused on agricultural credit, receivables trading, data-driven risk analysis and monitoring for producers, investors and agribusiness. It is not nature restoration; it belongs only as a thesis-border case because it finances biological production systems. It should cluster with agri-finance, producer infrastructure and agricultural risk intelligence.",
       "source_url": "https://spventures.com.br/portfolio/agrolend/",
-      "review_status": "reviewed",
+      "review_status": "taxonomy_stub",
       "thesis_fit": "peripheral",
       "taxonomy_source": "bio_theme_v3",
       "evidence_source": "db_startup_extended",
@@ -7826,7 +7826,7 @@ window.CAPITAL_ATLAS_DATA = {
       "type": "startup",
       "label": "Agrotoken",
       "country": "AR",
-      "scope_decision": "include",
+      "scope_decision": "exclude",
       "theme": "Digital AgTech & Agrifintech",
       "legacy_macro_theme": "climate, energy and resource systems",
       "emergent_theme": "Food Systems & Alt Proteins",
@@ -7835,7 +7835,7 @@ window.CAPITAL_ATLAS_DATA = {
       "semantic_single_score": "",
       "summary": "Infrastructure to tokenize grains and other agricultural assets, enabling payments, financing, collateral and traceability on real material assets. It enters the thesis due to strong coupling to agro-material chains and traceability/sustainability layer.",
       "source_url": "https://landing.test.agrotoken.io/en/home",
-      "review_status": "reviewed",
+      "review_status": "taxonomy_stub",
       "thesis_fit": "peripheral",
       "taxonomy_source": "bio_theme_v3",
       "evidence_source": "db_startup_extended",
@@ -7852,7 +7852,7 @@ window.CAPITAL_ATLAS_DATA = {
       "type": "startup",
       "label": "AGROTOOLS",
       "country": "BR",
-      "scope_decision": "include",
+      "scope_decision": "exclude",
       "theme": "Digital AgTech & Agrifintech",
       "legacy_macro_theme": "precision agriculture and resource intelligence",
       "emergent_theme": "Nature & Ecosystem Tech",
@@ -7861,7 +7861,7 @@ window.CAPITAL_ATLAS_DATA = {
       "semantic_single_score": "",
       "summary": "AGROTOOLS is a Brazilian agribusiness intelligence platform connecting land, supply chains and corporate decision-making through geospatial data, risk analytics and ESG/compliance monitoring. Its solutions support rural finance, insurance, sourcing, brand protection, supply-chain intelligence and socioenvironmental monitoring, with more than 1,300 data layers and large-scale territorial analyses",
       "source_url": "https://agrotools.com.br/en/",
-      "review_status": "reviewed",
+      "review_status": "taxonomy_stub",
       "thesis_fit": "peripheral",
       "taxonomy_source": "bio_theme_v3",
       "evidence_source": "db_startup_extended",
@@ -8138,7 +8138,7 @@ window.CAPITAL_ATLAS_DATA = {
       "type": "startup",
       "label": "Arado",
       "country": "BR",
-      "scope_decision": "include",
+      "scope_decision": "exclude",
       "theme": "Digital AgTech & Agrifintech",
       "legacy_macro_theme": "climate, energy and resource systems",
       "emergent_theme": "Food Systems & Alt Proteins",
@@ -8147,7 +8147,7 @@ window.CAPITAL_ATLAS_DATA = {
       "semantic_single_score": "",
       "summary": "Brazilian fresh-food platform connecting producers directly with urban buyers, improving producer economics and reducing food waste",
       "source_url": "https://www.sobre.arado.com.br/",
-      "review_status": "reviewed",
+      "review_status": "taxonomy_stub",
       "thesis_fit": "peripheral",
       "taxonomy_source": "bio_theme_v3",
       "evidence_source": "db_startup_extended",
@@ -8684,7 +8684,7 @@ window.CAPITAL_ATLAS_DATA = {
       "type": "startup",
       "label": "Blooms",
       "country": "MX",
-      "scope_decision": "include",
+      "scope_decision": "exclude",
       "theme": "Digital AgTech & Agrifintech",
       "legacy_macro_theme": "climate, energy and resource systems",
       "emergent_theme": "Precision Agriculture",
@@ -8693,7 +8693,7 @@ window.CAPITAL_ATLAS_DATA = {
       "semantic_single_score": "",
       "summary": "Blooms Capital is a trade-finance platform for Latin American fruit and vegetable exporters. It offers pre-export working capital, non-recourse cross-border factoring, global payments and FX tools through a data-driven process, including 24-hour invoice payment and U.S. virtual accounts for export collections",
       "source_url": "https://www.bloomscapital.com/english",
-      "review_status": "reviewed",
+      "review_status": "taxonomy_stub",
       "thesis_fit": "peripheral",
       "taxonomy_source": "bio_theme_v3",
       "evidence_source": "db_startup_extended",
@@ -8736,7 +8736,7 @@ window.CAPITAL_ATLAS_DATA = {
       "type": "startup",
       "label": "Brain.ag",
       "country": "BR",
-      "scope_decision": "include",
+      "scope_decision": "exclude",
       "theme": "Digital AgTech & Agrifintech",
       "legacy_macro_theme": "climate, energy and resource systems",
       "emergent_theme": "Nature & Ecosystem Tech",
@@ -8745,7 +8745,7 @@ window.CAPITAL_ATLAS_DATA = {
       "semantic_single_score": "",
       "summary": "Brain.ag is a Brazilian agribusiness data and risk-intelligence company specializing in credit, financial operations, ESG and socioenvironmental analysis for rural production. Public acquisition coverage says its platform combines data, analytics and agricultural-risk workflows to originate, decide and monitor rural credit faster, including producer, collateral, area and compliance checks",
       "source_url": "https://www.serasaexperian.com.br/sala-de-imprensa/agronegocios/serasa-experian-adquire-parte-da-brain-ag-e-fortalece-analise-de-credito-para-o-agronegocio/",
-      "review_status": "reviewed",
+      "review_status": "taxonomy_stub",
       "thesis_fit": "peripheral",
       "taxonomy_source": "bio_theme_v3",
       "evidence_source": "db_startup_extended",
@@ -9126,7 +9126,7 @@ window.CAPITAL_ATLAS_DATA = {
       "type": "startup",
       "label": "Culttivo",
       "country": "BR",
-      "scope_decision": "include",
+      "scope_decision": "exclude",
       "theme": "Digital AgTech & Agrifintech",
       "legacy_macro_theme": "agricultural market infrastructure and data systems",
       "emergent_theme": "Nature & Ecosystem Tech",
@@ -9135,7 +9135,7 @@ window.CAPITAL_ATLAS_DATA = {
       "semantic_single_score": "",
       "summary": "Culttivo is a Brazilian coffee-finance and risk-intelligence platform that uses satellite imagery, analytics and ESG or climate-risk signals to improve credit access for coffee producers. It is not a biotech company, but it is directly attached to a material biological production system: coffee farming",
       "source_url": "https://theyieldlablatam.com/companies/culttivo/",
-      "review_status": "reviewed",
+      "review_status": "taxonomy_stub",
       "thesis_fit": "peripheral",
       "taxonomy_source": "bio_theme_v3",
       "evidence_source": "db_startup_extended",
@@ -9880,7 +9880,7 @@ window.CAPITAL_ATLAS_DATA = {
       "type": "startup",
       "label": "goFlux",
       "country": "BR",
-      "scope_decision": "include",
+      "scope_decision": "exclude",
       "theme": "Digital AgTech & Agrifintech",
       "legacy_macro_theme": "climate, energy and resource systems",
       "emergent_theme": "Bioinputs & Crop Resilience",
@@ -9889,7 +9889,7 @@ window.CAPITAL_ATLAS_DATA = {
       "semantic_single_score": "",
       "summary": "Brazilian B2B freight SaaS for quotation, contracting and management of road freight, operating in major agro/logistics arteries and offering carbon-aware logistics features",
       "source_url": "https://goflux.com.br/",
-      "review_status": "reviewed",
+      "review_status": "taxonomy_stub",
       "thesis_fit": "peripheral",
       "taxonomy_source": "bio_theme_v3",
       "evidence_source": "db_startup_extended",
@@ -10114,7 +10114,7 @@ window.CAPITAL_ATLAS_DATA = {
       "type": "startup",
       "label": "Incluirtec",
       "country": "CO",
-      "scope_decision": "include",
+      "scope_decision": "exclude",
       "theme": "Digital AgTech & Agrifintech",
       "legacy_macro_theme": "climate, energy and resource systems",
       "emergent_theme": "Bioinputs & Crop Resilience",
@@ -10123,7 +10123,7 @@ window.CAPITAL_ATLAS_DATA = {
       "semantic_single_score": "",
       "summary": "IncluirTec is a Colombian agfintech-as-a-service platform enabling formal credit for small agricultural producers, rural microentrepreneurs and financial institutions. Its official site describes a digital bridge between producers and banks, microfinance institutions, NGOs and non-bank lenders, using alternative risk evaluation and 100% digital loan workflows",
       "source_url": "https://www.incluirtec.co/",
-      "review_status": "reviewed",
+      "review_status": "taxonomy_stub",
       "thesis_fit": "peripheral",
       "taxonomy_source": "bio_theme_v3",
       "evidence_source": "db_startup_extended",
@@ -10478,7 +10478,7 @@ window.CAPITAL_ATLAS_DATA = {
       "type": "startup",
       "label": "Leaf",
       "country": "US",
-      "scope_decision": "include",
+      "scope_decision": "exclude",
       "theme": "Digital AgTech & Agrifintech",
       "legacy_macro_theme": "agricultural market infrastructure and data systems",
       "emergent_theme": "Nature & Ecosystem Tech",
@@ -10487,7 +10487,7 @@ window.CAPITAL_ATLAS_DATA = {
       "semantic_single_score": "",
       "summary": "Agriculture data-infrastructure company providing a unified API for food and agriculture, translating machine, field, imagery, weather and agronomic data into consistent formats",
       "source_url": "https://withleaf.io/",
-      "review_status": "reviewed",
+      "review_status": "taxonomy_stub",
       "thesis_fit": "peripheral",
       "taxonomy_source": "bio_theme_v3",
       "evidence_source": "db_startup_extended",
@@ -11232,7 +11232,7 @@ window.CAPITAL_ATLAS_DATA = {
       "type": "startup",
       "label": "Nilus",
       "country": "AR",
-      "scope_decision": "include",
+      "scope_decision": "exclude",
       "theme": "Digital AgTech & Agrifintech",
       "legacy_macro_theme": "climate, energy and resource systems",
       "emergent_theme": "Food Systems & Alt Proteins",
@@ -11241,7 +11241,7 @@ window.CAPITAL_ATLAS_DATA = {
       "semantic_single_score": "",
       "summary": "Nilus is a Latin American food-rescue and food-access platform that connects surplus or inefficient food supply with low-cost distribution channels. It is not biotech, but it belongs in the broader BIO VC LATAM perimeter as food-system circularity infrastructure: it reduces food waste, improves affordability and acts on a material biological supply chain. It should cluster with resource recovery, food systems and circular logistics",
       "source_url": "https://newtopia.vc/portfolio/",
-      "review_status": "reviewed",
+      "review_status": "taxonomy_stub",
       "thesis_fit": "peripheral",
       "taxonomy_source": "bio_theme_v3",
       "evidence_source": "db_startup_extended",
@@ -12038,7 +12038,7 @@ window.CAPITAL_ATLAS_DATA = {
       "type": "startup",
       "label": "Seedz",
       "country": "BR",
-      "scope_decision": "include",
+      "scope_decision": "exclude",
       "theme": "Digital AgTech & Agrifintech",
       "legacy_macro_theme": "agricultural market infrastructure and data systems",
       "emergent_theme": "Precision Agriculture",
@@ -12047,7 +12047,7 @@ window.CAPITAL_ATLAS_DATA = {
       "semantic_single_score": "",
       "summary": "Seedz is a Brazilian agtech platform for agribusiness loyalty, producer engagement, commercial intelligence, rewards, payments and credit access. Its relevance is infrastructural rather than biological: it organizes the commercial layer around farms, input channels and producer relationships in agricultural value chains",
       "source_url": "https://www.seedz.ag/",
-      "review_status": "reviewed",
+      "review_status": "taxonomy_stub",
       "thesis_fit": "peripheral",
       "taxonomy_source": "bio_theme_v3",
       "evidence_source": "db_startup_extended",
@@ -12116,7 +12116,7 @@ window.CAPITAL_ATLAS_DATA = {
       "type": "startup",
       "label": "Sette",
       "country": "BR",
-      "scope_decision": "include",
+      "scope_decision": "exclude",
       "theme": "Digital AgTech & Agrifintech",
       "legacy_macro_theme": "climate, energy and resource systems",
       "emergent_theme": "Precision Agriculture",
@@ -12125,7 +12125,7 @@ window.CAPITAL_ATLAS_DATA = {
       "semantic_single_score": "",
       "summary": "Brazilian agrifintech infrastructure platform digitizing agricultural guarantees, CPR registration, certificates, signatures and credit-risk workflows with AI, geospatial and field-analysis capabilities",
       "source_url": "https://www.sette.ag/",
-      "review_status": "reviewed",
+      "review_status": "taxonomy_stub",
       "thesis_fit": "peripheral",
       "taxonomy_source": "bio_theme_v3",
       "evidence_source": "db_startup_extended",
@@ -12142,7 +12142,7 @@ window.CAPITAL_ATLAS_DATA = {
       "type": "startup",
       "label": "Silohub",
       "country": "AR",
-      "scope_decision": "include",
+      "scope_decision": "exclude",
       "theme": "Digital AgTech & Agrifintech",
       "legacy_macro_theme": "precision agriculture and resource intelligence",
       "emergent_theme": "Nature & Ecosystem Tech",
@@ -12151,7 +12151,7 @@ window.CAPITAL_ATLAS_DATA = {
       "semantic_single_score": "",
       "summary": "Argentine AgTech that digitizes the last mile of the grain business for warehouses, distributors and producers. Enter the thesis for precision agriculture and resource intelligence.",
       "source_url": "https://www.descubre.vc/silohub",
-      "review_status": "reviewed",
+      "review_status": "taxonomy_stub",
       "thesis_fit": "peripheral",
       "taxonomy_source": "bio_theme_v3",
       "evidence_source": "db_startup_extended",
@@ -12168,7 +12168,7 @@ window.CAPITAL_ATLAS_DATA = {
       "type": "startup",
       "label": "SiloReal",
       "country": "AR",
-      "scope_decision": "include",
+      "scope_decision": "exclude",
       "theme": "Digital AgTech & Agrifintech",
       "legacy_macro_theme": "agricultural market infrastructure and data systems",
       "emergent_theme": "Precision Agriculture",
@@ -12177,7 +12177,7 @@ window.CAPITAL_ATLAS_DATA = {
       "semantic_single_score": "",
       "summary": "SiloReal provides infrastructure to remotely verify, digitalize and value agricultural assets in the field so they can be insured, financed and transacted as real collateral. The company is not biotech, but it is directly attached to material biological production systems because it makes crop and inventory assets legible for finance, insurance and trade",
       "source_url": "https://www.siloreal.com/en/",
-      "review_status": "reviewed",
+      "review_status": "taxonomy_stub",
       "thesis_fit": "peripheral",
       "taxonomy_source": "bio_theme_v3",
       "evidence_source": "db_startup_extended",
@@ -12636,7 +12636,7 @@ window.CAPITAL_ATLAS_DATA = {
       "type": "startup",
       "label": "TerraMagna",
       "country": "BR",
-      "scope_decision": "include",
+      "scope_decision": "exclude",
       "theme": "Digital AgTech & Agrifintech",
       "legacy_macro_theme": "climate, energy and resource systems",
       "emergent_theme": "Precision Agriculture",
@@ -12645,7 +12645,7 @@ window.CAPITAL_ATLAS_DATA = {
       "semantic_single_score": "",
       "summary": "Brazilian agrifintech providing credit, receivables and fund infrastructure for agricultural input distributors and the broader agro chain",
       "source_url": "https://terramagna.com.br/",
-      "review_status": "reviewed",
+      "review_status": "taxonomy_stub",
       "thesis_fit": "peripheral",
       "taxonomy_source": "bio_theme_v3",
       "evidence_source": "db_startup_extended",
@@ -12740,7 +12740,7 @@ window.CAPITAL_ATLAS_DATA = {
       "type": "startup",
       "label": "Traive",
       "country": "BR",
-      "scope_decision": "include",
+      "scope_decision": "exclude",
       "theme": "Digital AgTech & Agrifintech",
       "legacy_macro_theme": "climate, energy and resource systems",
       "emergent_theme": "Nature & Ecosystem Tech",
@@ -12749,7 +12749,7 @@ window.CAPITAL_ATLAS_DATA = {
       "semantic_single_score": "",
       "summary": "Brazilian agrifintech connecting agribusiness and investors through AI-powered agricultural credit, risk analysis, receivables and traceability infrastructure",
       "source_url": "https://traive.com.br/en/",
-      "review_status": "reviewed",
+      "review_status": "taxonomy_stub",
       "thesis_fit": "peripheral",
       "taxonomy_source": "bio_theme_v3",
       "evidence_source": "db_startup_extended",
@@ -12792,7 +12792,7 @@ window.CAPITAL_ATLAS_DATA = {
       "type": "startup",
       "label": "TuPlaza",
       "country": "CO",
-      "scope_decision": "include",
+      "scope_decision": "exclude",
       "theme": "Digital AgTech & Agrifintech",
       "legacy_macro_theme": "climate, energy and resource systems",
       "emergent_theme": "Bioinputs & Crop Resilience",
@@ -12801,7 +12801,7 @@ window.CAPITAL_ATLAS_DATA = {
       "semantic_single_score": "",
       "summary": "TuPlaza is a Colombian fresh-produce supply-chain platform connecting quality-focused farmers with grocery stores and mass-consumption channels. Its public profile describes a one-stop fresh-produce platform for grocery stores across LATAM, digitizing food distribution while operating in multiple Colombian cities",
       "source_url": "https://www.f6s.com/company/tuplaza",
-      "review_status": "reviewed",
+      "review_status": "taxonomy_stub",
       "thesis_fit": "peripheral",
       "taxonomy_source": "bio_theme_v3",
       "evidence_source": "db_startup_extended",
@@ -12922,7 +12922,7 @@ window.CAPITAL_ATLAS_DATA = {
       "type": "startup",
       "label": "Verqor",
       "country": "MX",
-      "scope_decision": "include",
+      "scope_decision": "exclude",
       "theme": "Digital AgTech & Agrifintech",
       "legacy_macro_theme": "climate, energy and resource systems",
       "emergent_theme": "Bioinputs & Crop Resilience",
@@ -12931,7 +12931,7 @@ window.CAPITAL_ATLAS_DATA = {
       "semantic_single_score": "",
       "summary": "Verqor is a Mexican agfintech providing formal, digital and productive financing for farmers and agricultural SMEs, especially for inputs, machinery and working capital. Its official site describes credit adapted to crop cycles, digital onboarding, input purchases and producer/supplier workflows; public impact material adds regenerative-practice adoption and access to biological agro-inputs",
       "source_url": "https://verqor.com/sobre-verqor",
-      "review_status": "reviewed",
+      "review_status": "taxonomy_stub",
       "thesis_fit": "peripheral",
       "taxonomy_source": "bio_theme_v3",
       "evidence_source": "db_startup_extended",
@@ -30229,11 +30229,6 @@ window.CAPITAL_ATLAS_DATA = {
       },
       {
         "source": "DraperCygnus",
-        "theme": "Digital AgTech & Agrifintech",
-        "deal_count": 1
-      },
-      {
-        "source": "DraperCygnus",
         "theme": "Food Systems & Alt Proteins",
         "deal_count": 1
       },
@@ -30388,11 +30383,6 @@ window.CAPITAL_ATLAS_DATA = {
         "deal_count": 2
       },
       {
-        "source": "acre_venture_partners",
-        "theme": "Digital AgTech & Agrifintech",
-        "deal_count": 1
-      },
-      {
         "source": "agrex",
         "theme": "Bioinputs & Crop Resilience",
         "deal_count": 1
@@ -30428,11 +30418,6 @@ window.CAPITAL_ATLAS_DATA = {
         "deal_count": 1
       },
       {
-        "source": "astella_investimentos",
-        "theme": "Digital AgTech & Agrifintech",
-        "deal_count": 1
-      },
-      {
         "source": "atlantico",
         "theme": "Diagnostics & Devices",
         "deal_count": 1
@@ -30449,32 +30434,12 @@ window.CAPITAL_ATLAS_DATA = {
       },
       {
         "source": "barn_investimentos",
-        "theme": "Digital AgTech & Agrifintech",
-        "deal_count": 2
-      },
-      {
-        "source": "barn_investimentos",
         "theme": "Precision Agriculture",
         "deal_count": 2
       },
       {
-        "source": "base_capital",
-        "theme": "Digital AgTech & Agrifintech",
-        "deal_count": 1
-      },
-      {
-        "source": "basf_venture_capital",
-        "theme": "Digital AgTech & Agrifintech",
-        "deal_count": 1
-      },
-      {
         "source": "bb_agro_ventures",
         "theme": "Bioinputs & Crop Resilience",
-        "deal_count": 1
-      },
-      {
-        "source": "bb_agro_ventures",
-        "theme": "Digital AgTech & Agrifintech",
         "deal_count": 1
       },
       {
@@ -30698,11 +30663,6 @@ window.CAPITAL_ATLAS_DATA = {
         "deal_count": 1
       },
       {
-        "source": "fmc_ventures",
-        "theme": "Digital AgTech & Agrifintech",
-        "deal_count": 1
-      },
-      {
         "source": "fondo_alerce",
         "theme": "Diagnostics & Devices",
         "deal_count": 1
@@ -30755,11 +30715,6 @@ window.CAPITAL_ATLAS_DATA = {
       {
         "source": "global_fund_coral_reefs",
         "theme": "Bioinputs & Crop Resilience",
-        "deal_count": 1
-      },
-      {
-        "source": "globo_ventures",
-        "theme": "Digital AgTech & Agrifintech",
         "deal_count": 1
       },
       {
@@ -30869,11 +30824,6 @@ window.CAPITAL_ATLAS_DATA = {
       },
       {
         "source": "inventure",
-        "theme": "Digital AgTech & Agrifintech",
-        "deal_count": 2
-      },
-      {
-        "source": "inventure",
         "theme": "Food Systems & Alt Proteins",
         "deal_count": 1
       },
@@ -30888,18 +30838,8 @@ window.CAPITAL_ATLAS_DATA = {
         "deal_count": 4
       },
       {
-        "source": "john_deere_ventures",
-        "theme": "Digital AgTech & Agrifintech",
-        "deal_count": 1
-      },
-      {
         "source": "kamay_ventures",
         "theme": "Biomaterials & Green Chemistry",
-        "deal_count": 2
-      },
-      {
-        "source": "kamay_ventures",
-        "theme": "Digital AgTech & Agrifintech",
         "deal_count": 2
       },
       {
@@ -30936,11 +30876,6 @@ window.CAPITAL_ATLAS_DATA = {
         "source": "kayyak_ventures",
         "theme": "Food Systems & Alt Proteins",
         "deal_count": 1
-      },
-      {
-        "source": "kptl",
-        "theme": "Digital AgTech & Agrifintech",
-        "deal_count": 2
       },
       {
         "source": "kptl",
@@ -30998,11 +30933,6 @@ window.CAPITAL_ATLAS_DATA = {
         "deal_count": 1
       },
       {
-        "source": "maya_capital",
-        "theme": "Digital AgTech & Agrifintech",
-        "deal_count": 1
-      },
-      {
         "source": "meet_capital",
         "theme": "Diagnostics & Devices",
         "deal_count": 1
@@ -31044,11 +30974,6 @@ window.CAPITAL_ATLAS_DATA = {
       },
       {
         "source": "newtopia_vc",
-        "theme": "Digital AgTech & Agrifintech",
-        "deal_count": 1
-      },
-      {
-        "source": "newtopia_vc",
         "theme": "Nature & Ecosystem Tech",
         "deal_count": 1
       },
@@ -31058,16 +30983,6 @@ window.CAPITAL_ATLAS_DATA = {
         "deal_count": 2
       },
       {
-        "source": "nubarium_capital",
-        "theme": "Digital AgTech & Agrifintech",
-        "deal_count": 1
-      },
-      {
-        "source": "onevc",
-        "theme": "Digital AgTech & Agrifintech",
-        "deal_count": 1
-      },
-      {
         "source": "ospraie_ag_science",
         "theme": "Bioinputs & Crop Resilience",
         "deal_count": 1
@@ -31075,11 +30990,6 @@ window.CAPITAL_ATLAS_DATA = {
       {
         "source": "oxygea",
         "theme": "Biomaterials & Green Chemistry",
-        "deal_count": 1
-      },
-      {
-        "source": "pampa_start",
-        "theme": "Digital AgTech & Agrifintech",
         "deal_count": 1
       },
       {
@@ -31169,11 +31079,6 @@ window.CAPITAL_ATLAS_DATA = {
       },
       {
         "source": "sp_ventures",
-        "theme": "Digital AgTech & Agrifintech",
-        "deal_count": 10
-      },
-      {
-        "source": "sp_ventures",
         "theme": "Food Systems & Alt Proteins",
         "deal_count": 2
       },
@@ -31203,19 +31108,9 @@ window.CAPITAL_ATLAS_DATA = {
         "deal_count": 1
       },
       {
-        "source": "syngenta_ventures",
-        "theme": "Digital AgTech & Agrifintech",
-        "deal_count": 2
-      },
-      {
         "source": "the_yield_lab_latam",
         "theme": "Bioinputs & Crop Resilience",
         "deal_count": 3
-      },
-      {
-        "source": "the_yield_lab_latam",
-        "theme": "Digital AgTech & Agrifintech",
-        "deal_count": 8
       },
       {
         "source": "the_yield_lab_latam",
@@ -31254,11 +31149,6 @@ window.CAPITAL_ATLAS_DATA = {
       },
       {
         "source": "valor_capital_group",
-        "theme": "Digital AgTech & Agrifintech",
-        "deal_count": 2
-      },
-      {
-        "source": "valor_capital_group",
         "theme": "Nature & Ecosystem Tech",
         "deal_count": 1
       },
@@ -31288,11 +31178,6 @@ window.CAPITAL_ATLAS_DATA = {
         "deal_count": 2
       },
       {
-        "source": "visa_ventures",
-        "theme": "Digital AgTech & Agrifintech",
-        "deal_count": 1
-      },
-      {
         "source": "vox_capital",
         "theme": "Bioinputs & Crop Resilience",
         "deal_count": 1
@@ -31301,11 +31186,6 @@ window.CAPITAL_ATLAS_DATA = {
         "source": "vox_capital",
         "theme": "Diagnostics & Devices",
         "deal_count": 2
-      },
-      {
-        "source": "vox_capital",
-        "theme": "Digital AgTech & Agrifintech",
-        "deal_count": 1
       },
       {
         "source": "water_lemon_ventures",
