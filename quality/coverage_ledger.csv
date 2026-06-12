@@ -33,6 +33,7 @@ audit:2026-06:coverage/assign-themes-cl06-co02,2026-06,coverage/assign-themes-cl
 audit:2026-06:curator:aum_research_2026,2026-06,curator:aum_research_2026,audit_log,22,22,AR;BR;CL;CR;ES;PE;US,0 tabla(s) tocadas
 audit:2026-06:coverage/fix-cl06-co02-scope,2026-06,coverage/fix-cl06-co02-scope,audit_log,19,11,CL;CO,0 tabla(s) tocadas
 audit:2026-06:curator:bio_theme_override,2026-06,curator:bio_theme_override,audit_log,18,17,AR;BR;CL;CO;MX;PE;US,0 tabla(s) tocadas
+audit:2026-06:taxonomy/reaudit-is-bio,2026-06,taxonomy/reaudit-is-bio,audit_log,17,17,AR;BR;CL;MX,0 tabla(s) tocadas
 audit:2026-06:pablo202083,2026-06,pablo202083,audit_log,17,15,AR;BR;CL;CR;MX;US,0 tabla(s) tocadas
 audit:2026-06:editorial/rewrite-high-risk-summaries,2026-06,editorial/rewrite-high-risk-summaries,audit_log,16,11,AR;NL;US,0 tabla(s) tocadas
 audit:2026-06:curator:biomanuf_data_fix,2026-06,curator:biomanuf_data_fix,audit_log,14,6,AR;BR;CL;CR,0 tabla(s) tocadas

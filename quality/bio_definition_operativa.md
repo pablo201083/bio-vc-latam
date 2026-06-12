@@ -212,6 +212,17 @@ Estado: `confirmed` (decidido) / `proposed` (pendiente de confirmación del cura
 
 ## 6. Changelog
 
+- **2026-06-12 (c)** — **Re-audit sistémico del flag `is_bio_universe` (P1).** El rearme de Farm
+  Intelligence destapó que el flag estaba mal puesto en todo el universo, no solo en agri: de 25 bio=0
+  fuera de Digital AgTech, **17 eran bio-core/coupled mal flageados** (genómica, Dx molecular, biomoléculas,
+  fagos, indicadores biológicos con esporas, resina de bosque, ARN bioactivo) → corregidos a 1
+  (`scripts/oneoff/reaudit_is_bio_universe.py`). Universo `is_bio=0`: 56 → 32. Tras la limpieza, todos los
+  temas bio quedan ≤6% bio=0; *Digital AgTech & Agrifintech* (24) es la única capa eco-adjacent real.
+  Hallazgo de gobernanza: **la cola bio=0 de un tema no prueba que el tema esté mal cortado** — puede ser
+  ruido de flag. Primero limpiar el flag, después decidir estructura. Consecuencia: Biomaterials (3 eco-adj)
+  y Diagnostics (2) **no** se parten — el problema era el flag, no el cluster. Los 8 eco-adjacent dispersos
+  quedan in-theme con flag (decisión "híbrido" del curador). 8 eco-adjacent confirmados bio=0: Nexxto,
+  Pixed, CIRCCLO, MUTA, nChemi, Ecotrace, ucrop.it, Pharmalens.
 - **2026-06-12 (b)** — **Gate de admisión TechBio.** Refinamiento del eje bio-coupled (§3 B) en dos
   sub-formas: **B1** acople físico/operacional (sensa/actúa sobre el sistema vivo) y **B2** TechBio /
   representación biológica (modela/predice la biología; clase Isomorphic Labs/AlphaFold). Se agrega el

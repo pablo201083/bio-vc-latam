@@ -1,5 +1,5 @@
 window.COVERAGE_DATA = {
-  "generated_at": "2026-06-12T14:27:05+00:00",
+  "generated_at": "2026-06-12T14:34:14+00:00",
   "countries": {
     "AR": {
       "tier": "well_mapped",

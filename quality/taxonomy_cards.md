@@ -8,15 +8,24 @@ La taxonomía operativa es **single-level**: un tema primario por startup. Estas
 
 | Tema | n | bio=0 | Intensidad |
 |------|---|-------|------------|
-| Diagnostics & Health Access | 110 | 7 | bio-core |
-| Therapeutics | 81 | 3 | bio-core |
-| Food Systems & Alt Proteins | 74 | 1 | bio-core |
-| Bioinputs & Crop Resilience | 64 | 4 | bio-core |
-| Biomaterials & Circular Economy | 54 | 6 | bio-core |
+| Diagnostics & Health Access | 110 | 2 | bio-core |
+| Therapeutics | 81 | 0 | bio-core |
+| Food Systems & Alt Proteins | 74 | 0 | bio-core |
+| Bioinputs & Crop Resilience | 64 | 0 | bio-core |
+| Biomaterials & Circular Economy | 54 | 3 | bio-core |
 | Farm Intelligence *(rearmado)* | 39 | **0** | bio-coupled (B1/B2) |
 | **Digital AgTech & Agrifintech** *(nuevo)* | 24 | 24 | **eco-adjacent · is_bio=0** |
 | Nature & Ecosystem Tech | 34 | 2 | bio-core |
-| Biomanufacturing & Platform Technologies | 27 | 2 | transversal |
+| Biomanufacturing & Platform Technologies | 27 | 1 | transversal |
+
+> ✅ **Re-audit del flag `is_bio_universe` (P1, 2026-06-12).** El rearme reveló que el flag estaba
+> mal puesto de forma sistémica. 17 empresas bio-core estaban marcadas bio=0 (genómica, diagnóstico
+> molecular, biomoléculas, fagos, indicadores biológicos) → corregidas a 1
+> (`scripts/oneoff/reaudit_is_bio_universe.py`). Universo `is_bio=0`: 56 → 32. Resultado: **todos los
+> temas bio quedan ≤6% bio=0** y *Digital AgTech & Agrifintech* es la única capa eco-adjacent. Con el
+> flag limpio, Biomaterials (3) y Diagnostics (2) **no necesitan partirse** — sus colas eran ruido,
+> no clusters. Los 8 eco-adjacent dispersos (Nexxto, Pixed, CIRCCLO, MUTA, nChemi, Ecotrace, ucrop.it,
+> Pharmalens) quedan in-theme con flag (decisión "híbrido").
 
 > ✅ **Rearme ejecutado (2026-06-12).** El viejo Farm Intelligence catch-all (66, 47% bio=0) se
 > partió bajo el **gate de acople B1**: 39 quedan (acople a cultivo/hato; **0% bio=0**, homogéneo),
