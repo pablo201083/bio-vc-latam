@@ -220,9 +220,9 @@ def run(db_path: Path = DB_PATH, out_path: Path = OUT_PATH) -> dict:
                sx.tech_depth, sx.data_quality_score, sx.market_label,
                sx.cluster_id, sx.cluster_label, sx.pagerank, sx.community_id
         FROM entities e
-        JOIN startup_extended sx ON sx.startup_id = e.entity_id
+        LEFT JOIN startup_extended sx ON sx.startup_id = e.entity_id
         WHERE e.entity_type = 'startup'
-          AND sx.scope_decision = 'include'
+          AND (sx.scope_decision = 'include' OR sx.startup_id IS NULL)
     """).fetchall()
 
     for r in st_rows:
