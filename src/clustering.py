@@ -78,8 +78,8 @@ HDBSCAN_PARAMS = {
 CLUSTER_OVERRIDES: dict[str, tuple[str, str]] = {
     # startup_id: (bio_theme_esperado, keyword_en_label)
     # ── Biomaterials mal asignados a Diagnostics/Therapeutics ───────────────
-    "antarka":       ("Biomaterials & Circular Economy",         "biobased"),
-    "hybridon":      ("Biomaterials & Circular Economy",         "antimicrobial"),
+    "antarka":       ("Biomaterials & Green Chemistry",         "biobased"),
+    "hybridon":      ("Biomaterials & Green Chemistry",         "antimicrobial"),
     # ── Food Systems en cluster incorrecto ──────────────────────────────────
     "heartbest":     ("Food Systems & Alt Proteins",             "novel"),
     "done_properly": ("Food Systems & Alt Proteins",             "ferment"),
@@ -93,9 +93,6 @@ CLUSTER_OVERRIDES: dict[str, tuple[str, str]] = {
     # ── Therapeutics veterinaria/animal health ──────────────────────────────
     "phagelab":      ("Therapeutics",                            "biopharm"),
     "sciphage":      ("Therapeutics",                            "biopharm"),
-    # ── Farm Intelligence mal asignados a Nature/Ecosystem ──────────────────
-    "agrired":       ("Farm Intelligence",                       "agron"),
-    "agrotoken":     ("Farm Intelligence",                       "agron"),
     # ── Otros ───────────────────────────────────────────────────────────────
     "inner_cosmos":  ("Therapeutics",                            "regenerat"),
     "geoprot":       ("Biomanufacturing & Fermentation Economy", "precis"),
@@ -113,9 +110,9 @@ CLUSTER_OVERRIDES: dict[str, tuple[str, str]] = {
 #
 # Narrativa del mapa:
 #   Diagonal ↙ (bio-molecular): Therapeutics — ciencia de moléculas y células
-#   Diagonal ↗ (digital-ecosistema): Farm Intelligence — datos a escala de campo
+#   Diagonal ↗ (digital-ecosistema): Precision Agriculture — datos a escala de campo
 #   Centro: Biomanufacturing, Biomaterials — plataformas transversales
-#   Bioinputs y Farm Intelligence comparten el "piso" de campo/organismo,
+#   Bioinputs y Precision Agriculture comparten el "piso" de campo/organismo,
 #   separados horizontalmente por su paradigma tecnológico.
 #
 EDITORIAL_CENTROIDS: dict[str, tuple[float, float]] = {
@@ -130,13 +127,14 @@ EDITORIAL_CENTROIDS: dict[str, tuple[float, float]] = {
     # Última revisión sistemática: 2026-05-18.
     #
     "Therapeutics":                            (-0.80, -0.70),  # instrumento=molécula/célula; escala=intraorganismo
-    "Diagnostics & Health Access":             (-0.30, -0.65),  # instrumento=biosensor/secuenciador (bio); output=dato; escala=molecular
+    "Diagnostics & Devices":             (-0.30, -0.65),  # instrumento=biosensor/secuenciador (bio); output=dato; escala=molecular
     "Biomanufacturing & Platform Technologies": (-0.65, -0.15),  # instrumento=microorganismo/bioreactor; escala=proceso industrial
-    "Biomaterials & Circular Economy":         (-0.15, +0.10),  # instrumento=síntesis bio+química; escala=material; nodo crosscutting
+    "Biomaterials & Green Chemistry":         (-0.15, +0.10),  # instrumento=síntesis bio+química; escala=material; nodo crosscutting
     "Food Systems & Alt Proteins":             (+0.15, +0.15),  # mix bio+digital; escala=alimento/organismo
     "Bioinputs & Crop Resilience":             (-0.50, +0.45),  # instrumento=biológico (microbio, extracto); escala=campo/planta
     "Nature & Ecosystem Tech":                 (+0.05, +0.75),  # mix monitoreo-bio y plataformas; escala=ecosistema
-    "Farm Intelligence":                       (+0.70, +0.60),  # instrumento=modelo/sensor/dato (digital); escala=campo/finca
+    "Precision Agriculture":                   (+0.70, +0.60),  # instrumento=modelo/sensor/dato (digital, bio-coupled); escala=campo/finca
+    "Digital AgTech & Agrifintech":            (+0.95, +0.30),  # eco-adjacent: instrumento=plataforma digital/financiera pura; escala=mercado/finca
 }
 
 # Radio máximo del offset intra-tema (en unidades editoriales [-1,1]).
@@ -1266,7 +1264,7 @@ def write_dashboard_data(conn: sqlite3.Connection) -> None:
             "Medicina regenerativa, terapia celular, biologics y desarrollo clínico de fármacos "
             "para oncología, enfermedades crónicas y neurología."
         ),
-        "Diagnostics & Health Access": (
+        "Diagnostics & Devices": (
             "Diagnóstico molecular, medtech no-invasivo y genómica clínica — incluyendo "
             "diagnósticos guiados por terapia y liquid biopsy."
         ),
@@ -1282,11 +1280,11 @@ def write_dashboard_data(conn: sqlite3.Connection) -> None:
             "Trazabilidad ambiental ESG, climate-fintech, monitoreo satelital y tecnología "
             "para conservación de ecosistemas y carbono."
         ),
-        "Farm Intelligence": (
+        "Precision Agriculture": (
             "Agricultura de precisión con sensores IoT, satélite, visión computacional e IA "
             "para optimización de la producción agropecuaria."
         ),
-        "Biomaterials & Circular Economy": (
+        "Biomaterials & Green Chemistry": (
             "Biomateriales avanzados, química verde y bioprocesos circulares que reemplazan "
             "petroquímicos en packaging, textiles e industria."
         ),

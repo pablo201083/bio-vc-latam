@@ -37,44 +37,44 @@ Biomanufacturing & Platform Technologies,PY,0,0.0,0.0,,0.0,under_explored,no_exp
 Biomanufacturing & Platform Technologies,US,1,1.0,1.0,(sin provenance),1.0,fuera_de_foco,fuera_de_foco
 Biomanufacturing & Platform Technologies,UY,0,0.0,0.0,,0.0,under_explored,no_explorado
 Biomanufacturing & Platform Technologies,VE,0,0.0,0.0,,0.0,under_explored,no_explorado
-Biomaterials & Circular Economy,AR,21,0.857,0.905,gridx,0.524,well_mapped,bien_mapeado
-Biomaterials & Circular Economy,BM,0,0.0,0.0,,0.0,fuera_de_foco,fuera_de_foco
-Biomaterials & Circular Economy,BO,0,0.0,0.0,,0.0,under_explored,no_explorado
-Biomaterials & Circular Economy,BR,6,0.0,0.333,gridx,0.833,well_mapped,parcial
-Biomaterials & Circular Economy,CL,12,0.25,0.667,gridx,0.417,well_mapped,parcial
-Biomaterials & Circular Economy,CO,1,1.0,1.0,(sin provenance),1.0,under_explored,no_explorado
-Biomaterials & Circular Economy,CR,1,0.0,0.0,gridx,1.0,under_explored,no_explorado
-Biomaterials & Circular Economy,DO,0,0.0,0.0,,0.0,under_explored,no_explorado
-Biomaterials & Circular Economy,EC,0,0.0,0.0,,0.0,under_explored,no_explorado
-Biomaterials & Circular Economy,GT,1,0.0,0.0,gridx,1.0,under_explored,no_explorado
-Biomaterials & Circular Economy,MX,8,0.25,0.625,web_research_2026,0.5,partial,parcial
-Biomaterials & Circular Economy,NL,1,1.0,1.0,(sin provenance),1.0,fuera_de_foco,fuera_de_foco
-Biomaterials & Circular Economy,PA,0,0.0,0.0,,0.0,under_explored,no_explorado
-Biomaterials & Circular Economy,PE,0,0.0,0.0,,0.0,under_explored,no_explorado
-Biomaterials & Circular Economy,PR,0,0.0,0.0,,0.0,fuera_de_foco,fuera_de_foco
-Biomaterials & Circular Economy,PY,0,0.0,0.0,,0.0,under_explored,no_explorado
-Biomaterials & Circular Economy,US,1,0.0,1.0,(sin provenance),1.0,fuera_de_foco,fuera_de_foco
-Biomaterials & Circular Economy,UY,2,1.0,1.0,(sin provenance),1.0,under_explored,no_explorado
-Biomaterials & Circular Economy,VE,0,0.0,0.0,,0.0,under_explored,no_explorado
-Diagnostics & Health Access,AR,45,0.756,0.756,gridx,0.667,well_mapped,bien_mapeado
-Diagnostics & Health Access,BM,1,0.0,0.0,gridx,1.0,fuera_de_foco,fuera_de_foco
-Diagnostics & Health Access,BO,0,0.0,0.0,,0.0,under_explored,no_explorado
-Diagnostics & Health Access,BR,31,0.194,0.581,gridx,0.548,well_mapped,parcial
-Diagnostics & Health Access,CL,14,0.286,0.5,gridx,0.571,well_mapped,parcial
-Diagnostics & Health Access,CO,2,0.5,1.0,summary_extraction,0.5,under_explored,no_explorado
-Diagnostics & Health Access,CR,0,0.0,0.0,,0.0,under_explored,no_explorado
-Diagnostics & Health Access,DO,0,0.0,0.0,,0.0,under_explored,no_explorado
-Diagnostics & Health Access,EC,0,0.0,0.0,,0.0,under_explored,no_explorado
-Diagnostics & Health Access,GT,1,0.0,0.0,gridx,1.0,under_explored,no_explorado
-Diagnostics & Health Access,MX,11,0.091,0.545,gridx,0.818,partial,parcial
-Diagnostics & Health Access,NL,0,0.0,0.0,,0.0,fuera_de_foco,fuera_de_foco
-Diagnostics & Health Access,PA,0,0.0,0.0,,0.0,under_explored,no_explorado
-Diagnostics & Health Access,PE,1,0.0,0.0,gridx,1.0,under_explored,no_explorado
-Diagnostics & Health Access,PR,1,0.0,0.0,gridx,1.0,fuera_de_foco,fuera_de_foco
-Diagnostics & Health Access,PY,0,0.0,0.0,,0.0,under_explored,no_explorado
-Diagnostics & Health Access,US,0,0.0,0.0,,0.0,fuera_de_foco,fuera_de_foco
-Diagnostics & Health Access,UY,3,0.667,0.667,gridx,0.667,under_explored,no_explorado
-Diagnostics & Health Access,VE,0,0.0,0.0,,0.0,under_explored,no_explorado
+Biomaterials & Green Chemistry,AR,21,0.857,0.905,gridx,0.524,well_mapped,bien_mapeado
+Biomaterials & Green Chemistry,BM,0,0.0,0.0,,0.0,fuera_de_foco,fuera_de_foco
+Biomaterials & Green Chemistry,BO,0,0.0,0.0,,0.0,under_explored,no_explorado
+Biomaterials & Green Chemistry,BR,6,0.0,0.333,gridx,0.833,well_mapped,parcial
+Biomaterials & Green Chemistry,CL,12,0.25,0.667,gridx,0.417,well_mapped,parcial
+Biomaterials & Green Chemistry,CO,1,1.0,1.0,(sin provenance),1.0,under_explored,no_explorado
+Biomaterials & Green Chemistry,CR,1,0.0,0.0,gridx,1.0,under_explored,no_explorado
+Biomaterials & Green Chemistry,DO,0,0.0,0.0,,0.0,under_explored,no_explorado
+Biomaterials & Green Chemistry,EC,0,0.0,0.0,,0.0,under_explored,no_explorado
+Biomaterials & Green Chemistry,GT,1,0.0,0.0,gridx,1.0,under_explored,no_explorado
+Biomaterials & Green Chemistry,MX,8,0.25,0.625,web_research_2026,0.5,partial,parcial
+Biomaterials & Green Chemistry,NL,1,1.0,1.0,(sin provenance),1.0,fuera_de_foco,fuera_de_foco
+Biomaterials & Green Chemistry,PA,0,0.0,0.0,,0.0,under_explored,no_explorado
+Biomaterials & Green Chemistry,PE,0,0.0,0.0,,0.0,under_explored,no_explorado
+Biomaterials & Green Chemistry,PR,0,0.0,0.0,,0.0,fuera_de_foco,fuera_de_foco
+Biomaterials & Green Chemistry,PY,0,0.0,0.0,,0.0,under_explored,no_explorado
+Biomaterials & Green Chemistry,US,1,0.0,1.0,(sin provenance),1.0,fuera_de_foco,fuera_de_foco
+Biomaterials & Green Chemistry,UY,2,1.0,1.0,(sin provenance),1.0,under_explored,no_explorado
+Biomaterials & Green Chemistry,VE,0,0.0,0.0,,0.0,under_explored,no_explorado
+Diagnostics & Devices,AR,45,0.756,0.756,gridx,0.667,well_mapped,bien_mapeado
+Diagnostics & Devices,BM,1,0.0,0.0,gridx,1.0,fuera_de_foco,fuera_de_foco
+Diagnostics & Devices,BO,0,0.0,0.0,,0.0,under_explored,no_explorado
+Diagnostics & Devices,BR,31,0.194,0.581,gridx,0.548,well_mapped,parcial
+Diagnostics & Devices,CL,14,0.286,0.5,gridx,0.571,well_mapped,parcial
+Diagnostics & Devices,CO,2,0.5,1.0,summary_extraction,0.5,under_explored,no_explorado
+Diagnostics & Devices,CR,0,0.0,0.0,,0.0,under_explored,no_explorado
+Diagnostics & Devices,DO,0,0.0,0.0,,0.0,under_explored,no_explorado
+Diagnostics & Devices,EC,0,0.0,0.0,,0.0,under_explored,no_explorado
+Diagnostics & Devices,GT,1,0.0,0.0,gridx,1.0,under_explored,no_explorado
+Diagnostics & Devices,MX,11,0.091,0.545,gridx,0.818,partial,parcial
+Diagnostics & Devices,NL,0,0.0,0.0,,0.0,fuera_de_foco,fuera_de_foco
+Diagnostics & Devices,PA,0,0.0,0.0,,0.0,under_explored,no_explorado
+Diagnostics & Devices,PE,1,0.0,0.0,gridx,1.0,under_explored,no_explorado
+Diagnostics & Devices,PR,1,0.0,0.0,gridx,1.0,fuera_de_foco,fuera_de_foco
+Diagnostics & Devices,PY,0,0.0,0.0,,0.0,under_explored,no_explorado
+Diagnostics & Devices,US,0,0.0,0.0,,0.0,fuera_de_foco,fuera_de_foco
+Diagnostics & Devices,UY,3,0.667,0.667,gridx,0.667,under_explored,no_explorado
+Diagnostics & Devices,VE,0,0.0,0.0,,0.0,under_explored,no_explorado
 Digital AgTech & Agrifintech,AR,7,1.0,0.857,(sin provenance),0.571,well_mapped,bien_mapeado
 Digital AgTech & Agrifintech,BM,0,0.0,0.0,,0.0,fuera_de_foco,fuera_de_foco
 Digital AgTech & Agrifintech,BO,0,0.0,0.0,,0.0,under_explored,no_explorado
@@ -94,25 +94,6 @@ Digital AgTech & Agrifintech,PY,0,0.0,0.0,,0.0,under_explored,no_explorado
 Digital AgTech & Agrifintech,US,1,1.0,1.0,web_research_2026,1.0,fuera_de_foco,fuera_de_foco
 Digital AgTech & Agrifintech,UY,0,0.0,0.0,,0.0,under_explored,no_explorado
 Digital AgTech & Agrifintech,VE,0,0.0,0.0,,0.0,under_explored,no_explorado
-Farm Intelligence,AR,9,0.889,1.0,(sin provenance),0.778,well_mapped,parcial
-Farm Intelligence,BM,0,0.0,0.0,,0.0,fuera_de_foco,fuera_de_foco
-Farm Intelligence,BO,0,0.0,0.0,,0.0,under_explored,no_explorado
-Farm Intelligence,BR,23,0.652,0.826,web_research_2026,0.522,well_mapped,bien_mapeado
-Farm Intelligence,CL,5,0.6,0.6,(sin provenance),0.8,well_mapped,parcial
-Farm Intelligence,CO,1,1.0,1.0,web_research_2026,1.0,under_explored,no_explorado
-Farm Intelligence,CR,0,0.0,0.0,,0.0,under_explored,no_explorado
-Farm Intelligence,DO,0,0.0,0.0,,0.0,under_explored,no_explorado
-Farm Intelligence,EC,0,0.0,0.0,,0.0,under_explored,no_explorado
-Farm Intelligence,GT,0,0.0,0.0,,0.0,under_explored,no_explorado
-Farm Intelligence,MX,0,0.0,0.0,,0.0,partial,vacio_observado
-Farm Intelligence,NL,0,0.0,0.0,,0.0,fuera_de_foco,fuera_de_foco
-Farm Intelligence,PA,0,0.0,0.0,,0.0,under_explored,no_explorado
-Farm Intelligence,PE,1,1.0,1.0,web_research_2026,1.0,under_explored,no_explorado
-Farm Intelligence,PR,0,0.0,0.0,,0.0,fuera_de_foco,fuera_de_foco
-Farm Intelligence,PY,0,0.0,0.0,,0.0,under_explored,no_explorado
-Farm Intelligence,US,0,0.0,0.0,,0.0,fuera_de_foco,fuera_de_foco
-Farm Intelligence,UY,0,0.0,0.0,,0.0,under_explored,no_explorado
-Farm Intelligence,VE,0,0.0,0.0,,0.0,under_explored,no_explorado
 Food Systems & Alt Proteins,AR,19,0.842,0.947,gridx,0.632,well_mapped,bien_mapeado
 Food Systems & Alt Proteins,BM,0,0.0,0.0,,0.0,fuera_de_foco,fuera_de_foco
 Food Systems & Alt Proteins,BO,0,0.0,0.0,,0.0,under_explored,no_explorado
@@ -151,6 +132,25 @@ Nature & Ecosystem Tech,PY,0,0.0,0.0,,0.0,under_explored,no_explorado
 Nature & Ecosystem Tech,US,2,1.0,1.0,(sin provenance),1.0,fuera_de_foco,fuera_de_foco
 Nature & Ecosystem Tech,UY,0,0.0,0.0,,0.0,under_explored,no_explorado
 Nature & Ecosystem Tech,VE,0,0.0,0.0,,0.0,under_explored,no_explorado
+Precision Agriculture,AR,9,0.889,1.0,(sin provenance),0.778,well_mapped,parcial
+Precision Agriculture,BM,0,0.0,0.0,,0.0,fuera_de_foco,fuera_de_foco
+Precision Agriculture,BO,0,0.0,0.0,,0.0,under_explored,no_explorado
+Precision Agriculture,BR,23,0.652,0.826,web_research_2026,0.522,well_mapped,bien_mapeado
+Precision Agriculture,CL,5,0.6,0.6,(sin provenance),0.8,well_mapped,parcial
+Precision Agriculture,CO,1,1.0,1.0,web_research_2026,1.0,under_explored,no_explorado
+Precision Agriculture,CR,0,0.0,0.0,,0.0,under_explored,no_explorado
+Precision Agriculture,DO,0,0.0,0.0,,0.0,under_explored,no_explorado
+Precision Agriculture,EC,0,0.0,0.0,,0.0,under_explored,no_explorado
+Precision Agriculture,GT,0,0.0,0.0,,0.0,under_explored,no_explorado
+Precision Agriculture,MX,0,0.0,0.0,,0.0,partial,vacio_observado
+Precision Agriculture,NL,0,0.0,0.0,,0.0,fuera_de_foco,fuera_de_foco
+Precision Agriculture,PA,0,0.0,0.0,,0.0,under_explored,no_explorado
+Precision Agriculture,PE,1,1.0,1.0,web_research_2026,1.0,under_explored,no_explorado
+Precision Agriculture,PR,0,0.0,0.0,,0.0,fuera_de_foco,fuera_de_foco
+Precision Agriculture,PY,0,0.0,0.0,,0.0,under_explored,no_explorado
+Precision Agriculture,US,0,0.0,0.0,,0.0,fuera_de_foco,fuera_de_foco
+Precision Agriculture,UY,0,0.0,0.0,,0.0,under_explored,no_explorado
+Precision Agriculture,VE,0,0.0,0.0,,0.0,under_explored,no_explorado
 Therapeutics,AR,25,0.8,0.84,(sin provenance),0.6,well_mapped,bien_mapeado
 Therapeutics,BM,0,0.0,0.0,,0.0,fuera_de_foco,fuera_de_foco
 Therapeutics,BO,0,0.0,0.0,,0.0,under_explored,no_explorado

@@ -57,7 +57,7 @@ THEME_COLORS = {
     "Biomaterials":                     "#C4A85A",
     "Biomanufacturing":                 "#9FA8E8",
     "Food Systems":                     "#5FA05E",
-    "Farm Intelligence":                "#9FB85A",
+    "Precision Agriculture":                "#9FB85A",
     "Digital AgTech & Agrifintech":     "#8C8FA3",
 }
 DEFAULT_STARTUP_COLOR = "#A0A0A0"
@@ -66,7 +66,7 @@ DEFAULT_STARTUP_COLOR = "#A0A0A0"
 _THEME_ANGLES: dict[str, float] = {
     "bioinputs":          0.0,
     "crop resilience":    0.0,
-    "farm intelligence":  math.pi * 0.28,
+    "precision agriculture":  math.pi * 0.28,
     "precision":          math.pi * 0.28,
     "nature":             math.pi * 0.56,
     "ecosystem":          math.pi * 0.56,

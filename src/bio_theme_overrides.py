@@ -30,9 +30,9 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 OVERRIDE_CSV = ROOT / "quality" / "manual_bio_theme_overrides.csv"
 
 VALID_THEMES = {
-    "Farm Intelligence", "Bioinputs & Crop Resilience", "Food Systems & Alt Proteins",
-    "Biomaterials & Circular Economy", "Nature & Ecosystem Tech",
-    "Diagnostics & Health Access", "Therapeutics",
+    "Precision Agriculture", "Bioinputs & Crop Resilience", "Food Systems & Alt Proteins",
+    "Biomaterials & Green Chemistry", "Nature & Ecosystem Tech",
+    "Diagnostics & Devices", "Therapeutics",
     "Biomanufacturing & Platform Technologies",
 }
 

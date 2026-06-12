@@ -712,12 +712,12 @@ const enriched = new Map();
 
 const THEME_PAL = {
   'Therapeutics':                            '#9B59D0',
-  'Diagnostics & Health Access':             '#3498DB',
+  'Diagnostics & Devices':             '#3498DB',
   'Food Systems & Alt Proteins':             '#E06B2A',
   'Bioinputs & Crop Resilience':             '#27AE60',
   'Nature & Ecosystem Tech':                 '#16A89A',
-  'Farm Intelligence':                       '#4A7FD4',
-  'Biomaterials & Circular Economy':         '#C9930A',
+  'Precision Agriculture':                       '#4A7FD4',
+  'Biomaterials & Green Chemistry':         '#C9930A',
   'Biomanufacturing & Platform Technologies':'#D4880A',
 };
 
@@ -1531,13 +1531,13 @@ function applyPrecomputedPositions() {
 
 const CONTEXT_THEME_ANGLES = {
   'Bioinputs & Crop Resilience':              0,
-  'Farm Intelligence':                        Math.PI * 0.28,
+  'Precision Agriculture':                        Math.PI * 0.28,
   'Nature & Ecosystem Tech':                  Math.PI * 0.56,
   'Food Systems & Alt Proteins':              Math.PI * 0.85,
   'Biomanufacturing & Platform Technologies':  Math.PI * 1.14,
   'Biomanufacturing & Fermentation Economy':  Math.PI * 1.14,
-  'Biomaterials & Circular Economy':          Math.PI * 1.42,
-  'Diagnostics & Health Access':              Math.PI * 1.71,
+  'Biomaterials & Green Chemistry':          Math.PI * 1.42,
+  'Diagnostics & Devices':              Math.PI * 1.71,
   'Therapeutics':                             Math.PI * 1.98,
 };
 const GOLDEN = Math.PI * (3 - Math.sqrt(5));
@@ -1646,13 +1646,13 @@ function buildInitialLayout() {
 
     const FALLBACK_ANGLES = {
       'Bioinputs & Crop Resilience':              0,
-      'Farm Intelligence':                        Math.PI * 0.28,
+      'Precision Agriculture':                        Math.PI * 0.28,
       'Nature & Ecosystem Tech':                  Math.PI * 0.56,
       'Food Systems & Alt Proteins':              Math.PI * 0.85,
       'Biomanufacturing & Platform Technologies':  Math.PI * 1.14,
   'Biomanufacturing & Fermentation Economy':  Math.PI * 1.14,
-      'Biomaterials & Circular Economy':          Math.PI * 1.42,
-      'Diagnostics & Health Access':              Math.PI * 1.71,
+      'Biomaterials & Green Chemistry':          Math.PI * 1.42,
+      'Diagnostics & Devices':              Math.PI * 1.71,
       'Therapeutics':                             Math.PI * 1.98,
     };
     startup.sort((a, b) =>

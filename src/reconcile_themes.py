@@ -4,7 +4,7 @@ src/reconcile_themes.py — Frente B: clasificación que no se contradiga.
 `validate` reportaba 92 conflictos bio_theme ≠ prefijo(cluster_label). El análisis
 muestra que NO son 92 errores de clasificación: bio_theme_primary es la verdad
 operativa (source-backed, editorial) y los clusters HDBSCAN son visuales; dos
-clusters gruesos (0 "Farm Intelligence", 6 "Therapeutics") contienen subgrupos
+clusters gruesos (0 "Precision Agriculture", 6 "Therapeutics") contienen subgrupos
 temáticos coherentes que el clasificador editorial separa bien.
 
 Este módulo tipifica cada conflicto en tres clases honestas:

@@ -14,7 +14,7 @@ Merge map (14 raw → 9) — revisado 2026-05 tras enriquecimiento web de 18 per
   new 1  Therapeutics — Drug Discovery & Development       old 5           (48)
   new 2  Diagnostics & MedTech                             old 0           (32)
   new 3  Ag Biologicals & Bioinputs                        old 6, 8        (59)
-  new 4  Farm Intelligence & Precision Agriculture         old 10, 11      (56)
+  new 4  Precision Agriculture & Precision Agriculture         old 10, 11      (56)
   new 5  Food Systems & Alt Proteins                       old 1           (27)
   new 6  Biomanufacturing & Precision Fermentation         old 3           (10)
   new 7  Nature, Climate & Ecosystem Tech                  old 7, 9,12,13  (52)
@@ -40,15 +40,15 @@ MERGE_MAP: dict[int, int] = {
     0: 2,   # Diagnostics (32, 97% Diagnostics)
     6: 3,   # Ag Biologicals (40, 70% Bioinputs)
     8: 3,   # Ag Biologicals/Biocontrol (19, 74% Bioinputs)
-    10: 4,  # Farm Intelligence (50)
-    11: 4,  # Farm Intelligence small (6)
+    10: 4,  # Precision Agriculture (50)
+    11: 4,  # Precision Agriculture small (6)
     1: 5,   # Food Novel Ingredients (27, 74% Food)
     3: 6,   # Biomanufacturing/Precision Fermentation (10)
     7: 7,   # Nature/Clean Energy (12, 75% Nature)
     9: 7,   # Nature/Biodiversity (18, 100% Nature)
     12: 7,  # Nature/Traceability (9)
     13: 7,  # Nature/Finance/Climate (13)
-    2: 8,   # Biomaterials & Circular Economy (36, 75% Biomaterials)
+    2: 8,   # Biomaterials & Green Chemistry (36, 75% Biomaterials)
 }
 
 # Labels for merged clusters: "Display Name||kw1 · kw2 · kw3 · kw4"
@@ -57,7 +57,7 @@ MERGED_LABELS: dict[int, str] = {
     1: "Therapeutics — Drug Discovery & Development||drug discovery · oncology · therapeutics · small molecule",
     2: "Diagnostics & MedTech||diagnostics · medtech · non-invasive · molecular",
     3: "Ag Biologicals & Bioinputs||biologicals · bioinputs · crop resilience · microbial",
-    4: "Farm Intelligence & Precision Agriculture||precision agriculture · agtech · satellite · AI",
+    4: "Precision Agriculture & Precision Agriculture||precision agriculture · agtech · satellite · AI",
     5: "Food Systems & Alt Proteins||food biotech · alt proteins · novel ingredients · functional",
     6: "Biomanufacturing & Precision Fermentation||fermentation · synthetic biology · biomanufacturing · platform",
     7: "Nature, Climate & Ecosystem Tech||climate · nature · environmental · circular economy",

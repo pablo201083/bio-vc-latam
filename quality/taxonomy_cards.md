@@ -8,12 +8,12 @@ La taxonomía operativa es **single-level**: un tema primario por startup. Estas
 
 | Tema | n | bio=0 | Intensidad |
 |------|---|-------|------------|
-| Diagnostics & Health Access | 110 | 2 | bio-core |
+| Diagnostics & Devices | 110 | 2 | bio-core |
 | Therapeutics | 81 | 0 | bio-core |
 | Food Systems & Alt Proteins | 74 | 0 | bio-core |
 | Bioinputs & Crop Resilience | 64 | 0 | bio-core |
-| Biomaterials & Circular Economy | 54 | 3 | bio-core |
-| Farm Intelligence *(rearmado)* | 39 | **0** | bio-coupled (B1/B2) |
+| Biomaterials & Green Chemistry | 54 | 3 | bio-core |
+| Precision Agriculture *(rearmado)* | 39 | **0** | bio-coupled (B1/B2) |
 | **Digital AgTech & Agrifintech** *(nuevo)* | 24 | 24 | **eco-adjacent · is_bio=0** |
 | Nature & Ecosystem Tech | 34 | 2 | bio-core |
 | Biomanufacturing & Platform Technologies | 27 | 1 | transversal |
@@ -27,20 +27,20 @@ La taxonomía operativa es **single-level**: un tema primario por startup. Estas
 > no clusters. Los 8 eco-adjacent dispersos (Nexxto, Pixed, CIRCCLO, MUTA, nChemi, Ecotrace, ucrop.it,
 > Pharmalens) quedan in-theme con flag (decisión "híbrido").
 
-> ✅ **Rearme ejecutado (2026-06-12).** El viejo Farm Intelligence catch-all (66, 47% bio=0) se
+> ✅ **Rearme ejecutado (2026-06-12).** El viejo Precision Agriculture catch-all (66, 47% bio=0) se
 > partió bajo el **gate de acople B1**: 39 quedan (acople a cultivo/hato; **0% bio=0**, homogéneo),
 > 24 salen a *Digital AgTech & Agrifintech* (eco-adjacent, is_bio=0), 3 (vertical farming) van a
 > Food Systems por destino del output. Reasignación en DB vía `diff_and_log_update`
 > (`scripts/oneoff/rearm_farm_intelligence.py`). Todos los temas bio quedan ≤11% bio=0.
 >
-> ⚠️ El clasificador `src/reclassify.py` todavía tiene un solo "Farm Intelligence" con
+> ⚠️ El clasificador `src/reclassify.py` todavía tiene un solo "Precision Agriculture" con
 > `is_bio_default: False` y keywords de agrifintech — **debe partirse o un `reclassify-themes`
 > revierte el rearme.** Mismo estado pendiente que Biomanufacturing.
 
 
 ---
 
-## Diagnostics & Health Access  ·  110 startups
+## Diagnostics & Devices  ·  110 startups
 
 **Definición.** Companies applying biology to detect, monitor, or measure human disease. Includes molecular diagnostics, point-of-care testing, biosensors, medical devices with biological components, fertility diagnostics, spectral/imaging diagnostics, and digital health platforms where a biological assay is the core component.
 
@@ -71,7 +71,7 @@ La taxonomía operativa es **single-level**: un tema primario por startup. Estas
 
 **Fronteras (cómo se decide en casos límite).**
 
-- vs **Diagnostics & Health Access**: el output es un tratamiento (droga, biológico, terapia celular/génica), no una medición.
+- vs **Diagnostics & Devices**: el output es un tratamiento (droga, biológico, terapia celular/génica), no una medición.
 - vs **Biomanufacturing**: descubrir/desarrollar la terapia → Therapeutics; producir el biológico a escala como plataforma → Biomanufacturing.
 
 **Startups arquetípicas** (mayor confianza, con fuente externa):
@@ -116,7 +116,7 @@ Key distinction from Biomaterials: the END PRODUCT is ingested (food, supplement
 
 ---
 
-## Farm Intelligence  ·  ~35 startups *(angostado 2026-06-12)*
+## Precision Agriculture  ·  ~35 startups *(angostado 2026-06-12)*
 
 **Definición.** Inteligencia digital **bio-coupled / TechBio** para agricultura: software, sensores o IA cuyo objeto es un sistema vivo específico — este cultivo, este patógeno, este hato. Cubre agronomía de precisión, fenotipado, genómica/microbioma aplicada, modelos de resistencia a enfermedad, sanidad de hato y riego de precisión atado a la biología del cultivo.
 
@@ -131,9 +131,9 @@ Si no cumple las tres → **Digital AgTech & Agrifintech** (eco-adjacent). Un pu
 
 **Fronteras (cómo se decide en casos límite).**
 
-- vs **Digital AgTech & Agrifintech**: si el software lee/modula un sistema vivo específico (agronomía de precisión, sanidad de hato) → Farm Intelligence (bio-coupled); si es financiero/marketplace/logístico/ERP sin lectura biológica → Digital AgTech (eco-adjacent). El dominio `agri-food` **no** basta para acople.
-- vs **Bioinputs & Crop Resilience**: Farm Intelligence es *software/datos* acoplados al cultivo; Bioinputs es un *producto biológico* aplicado al cultivo.
-- vs **Nature & Ecosystem Tech**: si el objeto es el rendimiento del productor → Farm Intelligence; si el objeto es el ecosistema/carbono/biodiversidad → Nature.
+- vs **Digital AgTech & Agrifintech**: si el software lee/modula un sistema vivo específico (agronomía de precisión, sanidad de hato) → Precision Agriculture (bio-coupled); si es financiero/marketplace/logístico/ERP sin lectura biológica → Digital AgTech (eco-adjacent). El dominio `agri-food` **no** basta para acople.
+- vs **Bioinputs & Crop Resilience**: Precision Agriculture es *software/datos* acoplados al cultivo; Bioinputs es un *producto biológico* aplicado al cultivo.
+- vs **Nature & Ecosystem Tech**: si el objeto es el rendimiento del productor → Precision Agriculture; si el objeto es el ecosistema/carbono/biodiversidad → Nature.
 
 **Startups arquetípicas** (bio-coupled, con fuente externa):
 
@@ -157,7 +157,7 @@ Si no cumple las tres → **Digital AgTech & Agrifintech** (eco-adjacent). Un pu
 
 **Fronteras (cómo se decide en casos límite).**
 
-- vs **Farm Intelligence**: falla el **test de acople** — el software no lee ni modula un sistema vivo específico; sirve a cualquier transacción/gestión agrícola.
+- vs **Precision Agriculture**: falla el **test de acople** — el software no lee ni modula un sistema vivo específico; sirve a cualquier transacción/gestión agrícola.
 - **Crédito/seguro puro sin tesis material** → candidato a `review`/`exclude` (falla *pertenencia*, no solo intensidad). Distinguir del agrifintech que financia la transición agroecológica.
 
 **Startups arquetípicas** (eco-adjacent, con fuente externa):
@@ -170,7 +170,7 @@ Si no cumple las tres → **Digital AgTech & Agrifintech** (eco-adjacent). Un pu
 
 **Queda explícitamente afuera.**
 
-- Cualquier empresa con acople biológico directo → Farm Intelligence o Bioinputs.
+- Cualquier empresa con acople biológico directo → Precision Agriculture o Bioinputs.
 - Fintech horizontal sin vertical agro → fuera de la tesis (`exclude`).
 
 
@@ -182,7 +182,7 @@ Si no cumple las tres → **Digital AgTech & Agrifintech** (eco-adjacent). Un pu
 
 **Fronteras (cómo se decide en casos límite).**
 
-- vs **Farm Intelligence**: el output es un insumo biológico (biofertilizante, biocontrol, semilla editada), no una plataforma digital.
+- vs **Precision Agriculture**: el output es un insumo biológico (biofertilizante, biocontrol, semilla editada), no una plataforma digital.
 - vs **Food Systems**: si la biología termina en el cultivo/suelo → Bioinputs; si el output se ingiere → Food Systems.
 
 **Startups arquetípicas** (mayor confianza, con fuente externa):
@@ -200,7 +200,7 @@ Si no cumple las tres → **Digital AgTech & Agrifintech** (eco-adjacent). Un pu
 
 ---
 
-## Biomaterials & Circular Economy  ·  54 startups
+## Biomaterials & Green Chemistry  ·  54 startups
 
 **Definición.** Companies using biological processes to produce materials, chemicals, or energy carriers replacing petrochemical equivalents. The OUTPUT is a material, industrial chemical, or energy product — not food.
 Covers bioplastics, biopolymers, mycelium materials, biobased packaging, industrial enzymes (non-food), green chemistry, e-fuels, biogas for energy.
@@ -232,7 +232,7 @@ Covers bioplastics, biopolymers, mycelium materials, biobased packaging, industr
 
 **Fronteras (cómo se decide en casos límite).**
 
-- vs **Farm Intelligence**: el objeto es el ecosistema natural (carbono, biodiversidad, agua, bosque, océano), no la productividad agrícola.
+- vs **Precision Agriculture**: el objeto es el ecosistema natural (carbono, biodiversidad, agua, bosque, océano), no la productividad agrícola.
 - vs **Bioinputs**: la biorremediación y el monitoreo ambiental van acá; la intervención sobre el cultivo va a Bioinputs.
 
 **Startups arquetípicas** (mayor confianza, con fuente externa):

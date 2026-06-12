@@ -263,13 +263,13 @@ def _compute_synergy_startup_org(startup: dict, org: dict) -> dict:
     # Theme-focus alignment
     _THEME_ORG_KEYWORDS = {
         "Bioinputs & Crop Resilience": ["biotech","agtech","agro","bio","crop","agriculture"],
-        "Farm Intelligence": ["agro","farm","tech","precision","agriculture"],
+        "Precision Agriculture": ["agro","farm","tech","precision","agriculture"],
         "Nature & Ecosystem Tech": ["biotech","climate","nature","eco","ambiente"],
         "Food Systems & Alt Proteins": ["food","aliment","biotech","agtech"],
         "Biomanufacturing & Fermentation Economy": ["biotech","industrial","bio","manufactur"],
-        "Biomaterials & Circular Economy": ["biotech","bio","material","circular"],
+        "Biomaterials & Green Chemistry": ["biotech","bio","material","circular"],
         "Therapeutics": ["pharma","biotech","medicina","health","terapia"],
-        "Diagnostics & Health Access": ["health","diagnos","medtech","biotech"],
+        "Diagnostics & Devices": ["health","diagnos","medtech","biotech"],
     }
     kws = _THEME_ORG_KEYWORDS.get(st_theme, [])
     matches = sum(1 for kw in kws if kw in focus_area)
@@ -358,13 +358,13 @@ def _compute_synergy_startup_corporate(startup: dict, corp: dict) -> dict:
     st_theme = startup.get("theme", "")
     _CORP_THEME_KEYWORDS = {
         "Bioinputs & Crop Resilience": ["biocontrol","biostimul","crop","agriculture","agri","biopestic","biofert","semilla","seed"],
-        "Farm Intelligence": ["precision","sensor","agri","crop monitoring","data farm"],
+        "Precision Agriculture": ["precision","sensor","agri","crop monitoring","data farm"],
         "Nature & Ecosystem Tech": ["sustainable","carbon","regenerat","resource","environment"],
         "Food Systems & Alt Proteins": ["ingredient","food","protein","ferment","novel","cellular"],
         "Biomanufacturing & Fermentation Economy": ["bioproces","enzyme","ferment","industrial","manufactur"],
-        "Biomaterials & Circular Economy": ["material","plastic","biobased","polymer","circular"],
+        "Biomaterials & Green Chemistry": ["material","plastic","biobased","polymer","circular"],
         "Therapeutics": ["drug","therapeut","pharma","biologic","gene","cell therapy"],
-        "Diagnostics & Health Access": ["diagnos","test","detection","biomark","molecular"],
+        "Diagnostics & Devices": ["diagnos","test","detection","biomark","molecular"],
     }
     kws = _CORP_THEME_KEYWORDS.get(st_theme, [])
     matches = sum(1 for kw in kws if kw in combined)

@@ -121,8 +121,8 @@
       antom: "Biocentric / therapeutic",
       position: { x: 0.22, y: 0.24 }
     },
-    "Diagnostics & Health Access": {
-      label: "Diagnostics & Health Access",
+    "Diagnostics & Devices": {
+      label: "Diagnostics & Devices",
       color: "#1A6DB5",
       description: "Diagnostic devices, lab-on-chip, digital health, point-of-care testing.",
       gridx: "Human health",
@@ -153,16 +153,16 @@
       antom: "MRV / coordination / deployment",
       position: { x: 0.82, y: 0.56 }
     },
-    "Farm Intelligence": {
-      label: "Farm Intelligence",
+    "Precision Agriculture": {
+      label: "Precision Agriculture",
       color: "#2E4E8C",
       description: "Precision agriculture platforms, agrifintech, IoT sensors, agronomic decision tools.",
       gridx: "Agri-food-land use",
       antom: "Connection / intelligence",
       position: { x: 0.28, y: 0.74 }
     },
-    "Biomaterials & Circular Economy": {
-      label: "Biomaterials & Circular Economy",
+    "Biomaterials & Green Chemistry": {
+      label: "Biomaterials & Green Chemistry",
       color: "#8B6D14",
       description: "Bioplastics, industrial enzymes, green chemistry, e-fuels, mycelium materials, biobased chemicals.",
       gridx: "Bio-industry / Deep-biotech",

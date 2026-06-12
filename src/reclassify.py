@@ -2,12 +2,12 @@
 src/reclassify.py — BIO Editorial Category classifier (v3 — clean).
 
 7 editorial categories derived bottom-up from semantic clusters:
-  1. Farm Intelligence
+  1. Precision Agriculture
   2. Bioinputs & Crop Resilience
   3. Food Systems & Alt Proteins
-  4. Biomaterials & Circular Economy
+  4. Biomaterials & Green Chemistry
   5. Nature & Ecosystem Tech
-  6. Diagnostics & Health Access
+  6. Diagnostics & Devices
   7. Therapeutics
 
 PRIMARY SIGNAL: keyword scoring on startup_summary_en (English-normalized).
@@ -43,11 +43,11 @@ DB_PATH = ROOT / "db" / "bio_latam.db"
 
 THEMES: dict[str, dict] = {
 
-    # Farm Intelligence (rearmado 2026-06-12): SOLO inteligencia bio-coupled —
+    # Precision Agriculture (rearmado 2026-06-12): SOLO inteligencia bio-coupled —
     # software/sensores/IA que lee o modula un sistema vivo específico (cultivo, hato).
     # Las señales financieras/marketplace/logísticas se movieron a "Digital AgTech &
     # Agrifintech" (eco-adjacent). Ver quality/bio_definition_operativa.md §4 (gate de acople).
-    "Farm Intelligence": {
+    "Precision Agriculture": {
         "description": (
             "Bio-coupled digital intelligence for agriculture: precision farming, agronomic "
             "decision tools, phenotyping, crop/disease monitoring, herd health, and "
@@ -208,7 +208,7 @@ THEMES: dict[str, dict] = {
         "is_bio_default": True,
     },
 
-    "Biomaterials & Circular Economy": {
+    "Biomaterials & Green Chemistry": {
         "description": (
             "Companies using biological processes to produce materials, chemicals, or "
             "energy carriers replacing petrochemical equivalents. The OUTPUT is a "
@@ -292,7 +292,7 @@ THEMES: dict[str, dict] = {
         "is_bio_default": True,
     },
 
-    "Diagnostics & Health Access": {
+    "Diagnostics & Devices": {
         "description": (
             "Companies applying biology to detect, monitor, or measure human disease. "
             "Includes molecular diagnostics, point-of-care testing, biosensors, "

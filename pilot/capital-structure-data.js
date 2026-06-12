@@ -8,17 +8,17 @@ window.CAPITAL_STRUCTURE = {
       "Exit / IPO": 5
     },
     "by_theme": {
-      "Farm Intelligence": {
+      "Precision Agriculture": {
         "levels": {
           "Pre-seed / Accelerator": 0,
-          "Seed": 25,
-          "Series A": 9,
-          "Growth (B–D)": 4,
+          "Seed": 15,
+          "Series A": 6,
+          "Growth (B–D)": 2,
           "Exit / IPO": 1
         },
-        "funded": 39,
-        "no_capital_documented": 25,
-        "early_to_growth_ratio": 0.56
+        "funded": 24,
+        "no_capital_documented": 15,
+        "early_to_growth_ratio": 0.6
       },
       "Nature & Ecosystem Tech": {
         "levels": {
@@ -32,17 +32,29 @@ window.CAPITAL_STRUCTURE = {
         "no_capital_documented": 8,
         "early_to_growth_ratio": 0.53
       },
+      "Digital AgTech & Agrifintech": {
+        "levels": {
+          "Pre-seed / Accelerator": 0,
+          "Seed": 8,
+          "Series A": 3,
+          "Growth (B–D)": 2,
+          "Exit / IPO": 0
+        },
+        "funded": 13,
+        "no_capital_documented": 11,
+        "early_to_growth_ratio": 0.62
+      },
       "Food Systems & Alt Proteins": {
         "levels": {
           "Pre-seed / Accelerator": 11,
-          "Seed": 19,
+          "Seed": 21,
           "Series A": 4,
           "Growth (B–D)": 0,
           "Exit / IPO": 1
         },
-        "funded": 35,
-        "no_capital_documented": 30,
-        "early_to_growth_ratio": 0.17
+        "funded": 37,
+        "no_capital_documented": 37,
+        "early_to_growth_ratio": 0.16
       },
       "Biomanufacturing & Platform Technologies": {
         "levels": {
@@ -53,10 +65,10 @@ window.CAPITAL_STRUCTURE = {
           "Exit / IPO": 0
         },
         "funded": 17,
-        "no_capital_documented": 9,
+        "no_capital_documented": 10,
         "early_to_growth_ratio": 0.21
       },
-      "Biomaterials & Circular Economy": {
+      "Biomaterials & Green Chemistry": {
         "levels": {
           "Pre-seed / Accelerator": 11,
           "Seed": 16,
@@ -68,7 +80,7 @@ window.CAPITAL_STRUCTURE = {
         "no_capital_documented": 20,
         "early_to_growth_ratio": 0.26
       },
-      "Diagnostics & Health Access": {
+      "Diagnostics & Devices": {
         "levels": {
           "Pre-seed / Accelerator": 13,
           "Seed": 34,
@@ -89,7 +101,7 @@ window.CAPITAL_STRUCTURE = {
           "Exit / IPO": 0
         },
         "funded": 50,
-        "no_capital_documented": 32,
+        "no_capital_documented": 31,
         "early_to_growth_ratio": 0.16
       },
       "Bioinputs & Crop Resilience": {
@@ -101,7 +113,7 @@ window.CAPITAL_STRUCTURE = {
           "Exit / IPO": 2
         },
         "funded": 39,
-        "no_capital_documented": 22,
+        "no_capital_documented": 25,
         "early_to_growth_ratio": 0.3
       }
     },
@@ -178,7 +190,7 @@ window.CAPITAL_STRUCTURE = {
       {
         "year": 2013,
         "funded": 5,
-        "total": 9
+        "total": 10
       },
       {
         "year": 2014,
@@ -197,18 +209,18 @@ window.CAPITAL_STRUCTURE = {
       },
       {
         "year": 2017,
-        "funded": 14,
-        "total": 26
+        "funded": 15,
+        "total": 27
       },
       {
         "year": 2018,
         "funded": 28,
-        "total": 47
+        "total": 48
       },
       {
         "year": 2019,
         "funded": 59,
-        "total": 74
+        "total": 75
       },
       {
         "year": 2020,
@@ -228,7 +240,7 @@ window.CAPITAL_STRUCTURE = {
       {
         "year": 2023,
         "funded": 2,
-        "total": 2
+        "total": 3
       }
     ]
   },
@@ -588,15 +600,15 @@ window.CAPITAL_STRUCTURE = {
     ]
   },
   "foreign_dependence": {
-    "Diagnostics & Health Access": {
+    "Diagnostics & Devices": {
       "edges": 103,
       "foreign_edges": 16,
       "foreign_pct": 0.155
     },
     "Therapeutics": {
-      "edges": 76,
+      "edges": 75,
       "foreign_edges": 6,
-      "foreign_pct": 0.079
+      "foreign_pct": 0.08
     },
     "Nature & Ecosystem Tech": {
       "edges": 53,
@@ -604,43 +616,48 @@ window.CAPITAL_STRUCTURE = {
       "foreign_pct": 0.302
     },
     "Bioinputs & Crop Resilience": {
-      "edges": 78,
+      "edges": 79,
       "foreign_edges": 19,
-      "foreign_pct": 0.244
+      "foreign_pct": 0.241
     },
     "Food Systems & Alt Proteins": {
-      "edges": 45,
+      "edges": 49,
       "foreign_edges": 9,
-      "foreign_pct": 0.2
+      "foreign_pct": 0.184
     },
     "Biomanufacturing & Platform Technologies": {
       "edges": 26,
       "foreign_edges": 4,
       "foreign_pct": 0.154
     },
-    "Farm Intelligence": {
-      "edges": 98,
-      "foreign_edges": 34,
-      "foreign_pct": 0.347
-    },
-    "Biomaterials & Circular Economy": {
+    "Biomaterials & Green Chemistry": {
       "edges": 53,
       "foreign_edges": 16,
       "foreign_pct": 0.302
+    },
+    "Digital AgTech & Agrifintech": {
+      "edges": 46,
+      "foreign_edges": 19,
+      "foreign_pct": 0.413
+    },
+    "Precision Agriculture": {
+      "edges": 49,
+      "foreign_edges": 15,
+      "foreign_pct": 0.306
     }
   },
   "concentration": {
-    "Diagnostics & Health Access": {
+    "Diagnostics & Devices": {
       "hhi": 0.07,
       "n_investors": 44,
       "top_investor": "GridX",
       "top_investor_share": 0.204
     },
     "Therapeutics": {
-      "hhi": 0.131,
+      "hhi": 0.126,
       "n_investors": 24,
       "top_investor": "GridX",
-      "top_investor_share": 0.289
+      "top_investor_share": 0.28
     },
     "Nature & Ecosystem Tech": {
       "hhi": 0.063,
@@ -649,16 +666,16 @@ window.CAPITAL_STRUCTURE = {
       "top_investor_share": 0.132
     },
     "Bioinputs & Crop Resilience": {
-      "hhi": 0.059,
+      "hhi": 0.062,
       "n_investors": 37,
       "top_investor": "GridX",
-      "top_investor_share": 0.167
+      "top_investor_share": 0.177
     },
     "Food Systems & Alt Proteins": {
-      "hhi": 0.135,
+      "hhi": 0.121,
       "n_investors": 23,
       "top_investor": "GridX",
-      "top_investor_share": 0.333
+      "top_investor_share": 0.306
     },
     "Biomanufacturing & Platform Technologies": {
       "hhi": 0.183,
@@ -666,63 +683,74 @@ window.CAPITAL_STRUCTURE = {
       "top_investor": "GridX",
       "top_investor_share": 0.385
     },
-    "Farm Intelligence": {
-      "hhi": 0.089,
-      "n_investors": 37,
-      "top_investor": "sp_ventures",
-      "top_investor_share": 0.204
-    },
-    "Biomaterials & Circular Economy": {
+    "Biomaterials & Green Chemistry": {
       "hhi": 0.124,
       "n_investors": 29,
       "top_investor": "GridX",
       "top_investor_share": 0.321
+    },
+    "Digital AgTech & Agrifintech": {
+      "hhi": 0.096,
+      "n_investors": 24,
+      "top_investor": "sp_ventures",
+      "top_investor_share": 0.217
+    },
+    "Precision Agriculture": {
+      "hhi": 0.096,
+      "n_investors": 20,
+      "top_investor": "sp_ventures",
+      "top_investor_share": 0.184
     }
   },
   "capital_gap": {
-    "total_without_capital": 143,
+    "total_without_capital": 153,
     "by_theme": {
-      "Farm Intelligence": {
+      "Precision Agriculture": {
         "without_capital": 6,
-        "total": 64,
-        "pct": 0.094
+        "total": 39,
+        "pct": 0.154
       },
       "Food Systems & Alt Proteins": {
-        "without_capital": 25,
-        "total": 65,
-        "pct": 0.385
+        "without_capital": 30,
+        "total": 74,
+        "pct": 0.405
       },
       "Nature & Ecosystem Tech": {
         "without_capital": 4,
         "total": 34,
         "pct": 0.118
       },
+      "Digital AgTech & Agrifintech": {
+        "without_capital": 2,
+        "total": 24,
+        "pct": 0.083
+      },
       "Bioinputs & Crop Resilience": {
-        "without_capital": 17,
-        "total": 61,
-        "pct": 0.279
+        "without_capital": 19,
+        "total": 64,
+        "pct": 0.297
       },
       "Biomanufacturing & Platform Technologies": {
-        "without_capital": 8,
-        "total": 26,
-        "pct": 0.308
+        "without_capital": 9,
+        "total": 27,
+        "pct": 0.333
       },
-      "Biomaterials & Circular Economy": {
+      "Biomaterials & Green Chemistry": {
         "without_capital": 15,
         "total": 54,
         "pct": 0.278
       },
-      "Diagnostics & Health Access": {
+      "Diagnostics & Devices": {
         "without_capital": 41,
         "total": 110,
         "pct": 0.373
       },
       "Therapeutics": {
         "without_capital": 27,
-        "total": 82,
-        "pct": 0.329
+        "total": 81,
+        "pct": 0.333
       }
     }
   },
-  "generated_at": "2026-06-11"
+  "generated_at": "2026-06-12"
 };

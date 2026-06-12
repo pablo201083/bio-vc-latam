@@ -14,12 +14,12 @@ Actualizado: 2026-05-17 | Estado corpus: 490 startups `include`, 24 clusters, 9%
 | bio_theme_primary                      | macro_theme (embedding)                            |
 |----------------------------------------|----------------------------------------------------|
 | Therapeutics                           | therapeutics and regenerative medicine             |
-| Diagnostics & Health Access            | diagnostics and medtech                            |
+| Diagnostics & Devices            | diagnostics and medtech                            |
 | Bioinputs & Crop Resilience            | ag biologicals and crop resilience                 |
 | Food Systems & Alt Proteins            | food biotech and novel ingredients                 |
 | Nature & Ecosystem Tech                | climate, energy and resource systems               |
-| Farm Intelligence                      | precision agriculture and resource intelligence    |
-| Biomaterials & Circular Economy        | biobased chemistry and advanced materials          |
+| Precision Agriculture                      | precision agriculture and resource intelligence    |
+| Biomaterials & Green Chemistry        | biobased chemistry and advanced materials          |
 | Biomanufacturing & Fermentation Economy| biomanufacturing and bioindustrial platforms        |
 
 ### Criterios de inclusión en el universo bio (`scope_decision = 'include'`)
@@ -123,7 +123,7 @@ espacio vectorial. La solución correcta es `src/enrich_periphery.py` con API ke
 
 ### El problema que motivó este diseño
 
-Farm Intelligence (agtech) y Diagnostics & Health Access (medtech) compartían vocabulario
+Precision Agriculture (agtech) y Diagnostics & Devices (medtech) compartían vocabulario
 genérico ("AI", "platform", "precision", "monitoring") sin señal de dominio específica.
 El UMAP 2D puramente semántico los proyectaba como vecinos (dist≈7.0), aunque el
 clustering 5D los separaba correctamente. La vecindad 2D era un artefacto de proyección.
@@ -136,12 +136,12 @@ en 3 **super-temas** en lugar de tratarlos como 8 categorías separadas:
 ```python
 _SUPER_THEME = {
     "Therapeutics":                            "health",
-    "Diagnostics & Health Access":             "health",
+    "Diagnostics & Devices":             "health",
     "Bioinputs & Crop Resilience":             "agri",
     "Food Systems & Alt Proteins":             "agri",
-    "Farm Intelligence":                       "agri",
+    "Precision Agriculture":                       "agri",
     "Nature & Ecosystem Tech":                 "agri",
-    "Biomaterials & Circular Economy":         "materials",
+    "Biomaterials & Green Chemistry":         "materials",
     "Biomanufacturing & Fermentation Economy": "materials",
 }
 VIZ_LABEL_WEIGHT = 0.35  # 35% label-guidance, 65% embedding semántico
@@ -341,12 +341,12 @@ La visualización 2D es una aproximación útil pero con limitaciones inherentes
 | Tema                                    | Vecinos esperados                              | Razón                                |
 |-----------------------------------------|------------------------------------------------|--------------------------------------|
 | Therapeutics                            | Diagnostics (salud), Biomanufacturing          | plataformas terapéuticas + bio-tools |
-| Diagnostics & Health Access             | Therapeutics, Biomanufacturing                 | medtech, life-science tools          |
-| Bioinputs & Crop Resilience             | Food Systems, Farm Intelligence                | agri-bio, insumos para cultivos      |
+| Diagnostics & Devices             | Therapeutics, Biomanufacturing                 | medtech, life-science tools          |
+| Bioinputs & Crop Resilience             | Food Systems, Precision Agriculture                | agri-bio, insumos para cultivos      |
 | Food Systems & Alt Proteins             | Bioinputs, Biomanufacturing, Biomaterials      | ingredientes, proteínas alternativas |
-| Farm Intelligence                       | Nature & Ecosystem Tech, Bioinputs             | agtech: datos + insumos              |
-| Nature & Ecosystem Tech                 | Farm Intelligence, Biomaterials                | ecosistemas, recursos, circularidad  |
-| Biomaterials & Circular Economy         | Biomanufacturing, Nature                       | materiales bio-basados               |
+| Precision Agriculture                       | Nature & Ecosystem Tech, Bioinputs             | agtech: datos + insumos              |
+| Nature & Ecosystem Tech                 | Precision Agriculture, Biomaterials                | ecosistemas, recursos, circularidad  |
+| Biomaterials & Green Chemistry         | Biomanufacturing, Nature                       | materiales bio-basados               |
 | Biomanufacturing & Fermentation Economy | Therapeutics, Biomaterials, Food              | plataformas de producción bio        |
 
 Cualquier vecindad que **contradiga esta topología** debe investigarse antes de aceptarse.
@@ -354,7 +354,7 @@ Cualquier vecindad que **contradiga esta topología** debe investigarse antes de
 ### Checklist de calidad visual (aplicar cada vez que se reconstruye el clustering)
 
 1. ¿Therapeutics y Diagnostics están en la misma región del mapa?
-2. ¿Farm Intelligence está cerca de Nature & Ecosystem Tech?
+2. ¿Precision Agriculture está cerca de Nature & Ecosystem Tech?
 3. ¿Bioinputs está cerca de Food Systems?
 4. ¿Biomanufacturing está cerca de Therapeutics / Biomaterials?
 5. ¿Hay algún bio_theme en una posición que contradice la tabla anterior?
@@ -365,7 +365,7 @@ Si alguna respuesta es "no", investigar si es artefacto 2D o problema de datos.
 
 ## 8. Fenómenos observados en el espacio vectorial
 
-### Farm Intelligence aparece cerca de Diagnostics en 2D — artefacto de proyección
+### Precision Agriculture aparece cerca de Diagnostics en 2D — artefacto de proyección
 
 Farm (centroide cy≈11.9) y Diagnostics (centroide cy≈12.7) quedan al fondo del mapa 2D
 siendo temas sin relación semántica obvia. La causa: ambos comparten vocabulario genérico
@@ -385,12 +385,12 @@ Diagnostics puras (Oncoliq, Embryoxite, ZEV Biotech...) con vocabulario más esp
 Hay dos tipos de startups de "Bioinputs & Crop Resilience" con lenguajes distintos:
 
 1. **Crop Protection / Crop Resilience** (biopesticidas, biostimulantes) → cy≈-6 → cerca de Food Systems
-2. **Biologicals** (gene editing, CRISPR, bioinformatics para cultivos) → cy≈7 → cerca de Farm Intelligence
+2. **Biologicals** (gene editing, CRISPR, bioinformatics para cultivos) → cy≈7 → cerca de Precision Agriculture
 
 Esta división es **semánticamente correcta** y refleja una diferencia real de tecnología,
 no un bug de clustering. Los dos grupos hablan "idiomas" distintos en el embedding space.
 
-### Farm Intelligence y Nature & Ecosystem Tech son semánticamente cercanos (esperado)
+### Precision Agriculture y Nature & Ecosystem Tech son semánticamente cercanos (esperado)
 
 Sus clusters UMAP están a 1-4 unidades de distancia. Startups de gestión agrícola,
 monitoreo de ecosistemas y plataformas de trazabilidad comparten vocabulario. El

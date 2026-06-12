@@ -22,6 +22,7 @@ audit:2026-05:portfolio_sweep,2026-05,portfolio_sweep,audit_log,6,6,,1 tabla(s) 
 audit:2026-05:merge_duplicate_entities,2026-05,merge_duplicate_entities,audit_log,4,2,AR;BR,0 tabla(s) tocadas
 audit:2026-05:pipeline:discovery_fix,2026-05,pipeline:discovery_fix,audit_log,3,3,BR,0 tabla(s) tocadas
 audit:2026-05:pipeline,2026-05,pipeline,audit_log,1,1,MX,1 tabla(s) tocadas
+audit:2026-06:taxonomy/rename-canonical,2026-06,taxonomy/rename-canonical,audit_log,373,341,AR;BM;BR;CL;CO;CR;GT;MX;NL;PE;PR;US;UY,0 tabla(s) tocadas
 audit:2026-06:pipeline:web_research_claude_opus,2026-06,pipeline:web_research_claude_opus,audit_log,189,189,AR;BR;CL;CO;CR;MX;NL;US;UY,0 tabla(s) tocadas
 audit:2026-06:curator:enrich_capital_atlas,2026-06,curator:enrich_capital_atlas,audit_log,133,41,AR;BR;CH;CL;CR;NO;PE;US,0 tabla(s) tocadas
 audit:2026-06:pipeline:enrich_founded_year,2026-06,pipeline:enrich_founded_year,audit_log,111,111,AR;BR;CL;CO;MX;US;UY,0 tabla(s) tocadas
@@ -40,8 +41,8 @@ audit:2026-06:curator:biomanuf_data_fix,2026-06,curator:biomanuf_data_fix,audit_
 audit:2026-06:pipeline:discovery,2026-06,pipeline:discovery,audit_log,11,11,AR;CL;CO,0 tabla(s) tocadas
 audit:2026-06:enrich_dates,2026-06,enrich_dates,audit_log,9,9,,0 tabla(s) tocadas
 audit:2026-06:curator:enrich_capital_atlas_aum,2026-06,curator:enrich_capital_atlas_aum,audit_log,8,8,AR;BR;FI;MX;US,0 tabla(s) tocadas
+audit:2026-06:clustering,2026-06,clustering,audit_log,8,0,,1 tabla(s) tocadas
 audit:2026-06:curator:manual,2026-06,curator:manual,audit_log,7,1,AR,0 tabla(s) tocadas
-audit:2026-06:clustering,2026-06,clustering,audit_log,7,0,,1 tabla(s) tocadas
 audit:2026-06:blurbs_new_investors,2026-06,blurbs_new_investors,audit_log,6,6,BR;US,0 tabla(s) tocadas
 audit:2026-06:pipeline:merge_duplicate_entities,2026-06,pipeline:merge_duplicate_entities,audit_log,3,2,AR;CL,0 tabla(s) tocadas
 audit:2026-06:coverage/fix-co-scope-basis,2026-06,coverage/fix-co-scope-basis,audit_log,3,3,CO,0 tabla(s) tocadas

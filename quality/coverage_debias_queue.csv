@@ -83,9 +83,9 @@ media,portfolio_sweep,idb_lab,solo 2 edge(s) en DB; país US (fuera_de_foco),Rev
 media,portfolio_sweep,lightsmith_group,solo 2 edge(s) en DB; país US (fuera_de_foco),Revisar portfolio público completo de lightsmith_group y mapear startups bio faltantes
 media,portfolio_sweep,sosv,solo 2 edge(s) en DB; país US (fuera_de_foco),Revisar portfolio público completo de sosv y mapear startups bio faltantes
 media,portfolio_sweep,y_combinator,solo 2 edge(s) en DB; país US (fuera_de_foco),Revisar portfolio público completo de y_combinator y mapear startups bio faltantes
-media,diversify_sources,Biomaterials & Circular Economy × BR,"6 startups, 83% viene de 'gridx'","Buscar la celda vía fuentes independientes del parche dominante (medios, otras carteras, registros)"
-media,diversify_sources,Diagnostics & Health Access × MX,"11 startups, 81% viene de 'gridx'","Buscar la celda vía fuentes independientes del parche dominante (medios, otras carteras, registros)"
-media,diversify_sources,Farm Intelligence × AR,"9 startups, 77% viene de '(sin provenance)'","Buscar la celda vía fuentes independientes del parche dominante (medios, otras carteras, registros)"
-media,diversify_sources,Farm Intelligence × CL,"5 startups, 80% viene de '(sin provenance)'","Buscar la celda vía fuentes independientes del parche dominante (medios, otras carteras, registros)"
+media,diversify_sources,Biomaterials & Green Chemistry × BR,"6 startups, 83% viene de 'gridx'","Buscar la celda vía fuentes independientes del parche dominante (medios, otras carteras, registros)"
+media,diversify_sources,Diagnostics & Devices × MX,"11 startups, 81% viene de 'gridx'","Buscar la celda vía fuentes independientes del parche dominante (medios, otras carteras, registros)"
 media,diversify_sources,Nature & Ecosystem Tech × AR,"14 startups, 71% viene de '(sin provenance)'","Buscar la celda vía fuentes independientes del parche dominante (medios, otras carteras, registros)"
+media,diversify_sources,Precision Agriculture × AR,"9 startups, 77% viene de '(sin provenance)'","Buscar la celda vía fuentes independientes del parche dominante (medios, otras carteras, registros)"
+media,diversify_sources,Precision Agriculture × CL,"5 startups, 80% viene de '(sin provenance)'","Buscar la celda vía fuentes independientes del parche dominante (medios, otras carteras, registros)"
 baja,confirm_whitespace,Digital AgTech & Agrifintech × CL,0 startups en país bien barrido,Verificación rápida antes de declararlo whitespace real en producto

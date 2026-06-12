@@ -1,6 +1,6 @@
 # Estructura de Inversión — BIO VC LATAM
 
-_Generado 2026-06-11 con `python pipeline.py capital-structure`. Cuenta EMPRESAS por stage (no dólares: solo 10% de aristas tiene monto). El stage es el más avanzado entre las aristas reales con round_stage._
+_Generado 2026-06-12 con `python pipeline.py capital-structure`. Cuenta EMPRESAS por stage (no dólares: solo 10% de aristas tiene monto). El stage es el más avanzado entre las aristas reales con round_stage._
 
 ## Pirámide de stages (global)
 
@@ -14,27 +14,29 @@ _Generado 2026-06-11 con `python pipeline.py capital-structure`. Cuenta EMPRESAS
 
 | Tema | Pre-seed | Seed | Ser.A | Growth | Exit | Sin capital | A→Growth |
 |------|---------|------|-------|--------|------|-------------|----------|
-| Diagnostics & Health Access | 13 | 34 | 12 | 5 | 0 | 46 | 0.36 |
-| Therapeutics | 13 | 30 | 6 | 1 | 0 | 32 | 0.16 |
-| Farm Intelligence | 0 | 25 | 9 | 4 | 1 | 25 | 0.56 |
-| Bioinputs & Crop Resilience | 9 | 21 | 3 | 4 | 2 | 22 | 0.3 |
-| Food Systems & Alt Proteins | 11 | 19 | 4 | 0 | 1 | 30 | 0.17 |
-| Biomaterials & Circular Economy | 11 | 16 | 5 | 2 | 0 | 20 | 0.26 |
+| Diagnostics & Devices | 13 | 34 | 12 | 5 | 0 | 46 | 0.36 |
+| Therapeutics | 13 | 30 | 6 | 1 | 0 | 31 | 0.16 |
+| Bioinputs & Crop Resilience | 9 | 21 | 3 | 4 | 2 | 25 | 0.3 |
+| Food Systems & Alt Proteins | 11 | 21 | 4 | 0 | 1 | 37 | 0.16 |
+| Biomaterials & Green Chemistry | 11 | 16 | 5 | 2 | 0 | 20 | 0.26 |
 | Nature & Ecosystem Tech | 0 | 17 | 5 | 3 | 1 | 8 | 0.53 |
-| Biomanufacturing & Platform Technologies | 7 | 7 | 1 | 2 | 0 | 9 | 0.21 |
+| Precision Agriculture | 0 | 15 | 6 | 2 | 1 | 15 | 0.6 |
+| Biomanufacturing & Platform Technologies | 7 | 7 | 1 | 2 | 0 | 10 | 0.21 |
+| Digital AgTech & Agrifintech | 0 | 8 | 3 | 2 | 0 | 11 | 0.62 |
 
 ## Dependencia de capital extranjero por tema
 
 | Tema | Aristas | Extranjeras | % extranjero |
 |------|---------|-------------|--------------|
-| Farm Intelligence | 98 | 34 | 34% |
+| Digital AgTech & Agrifintech | 46 | 19 | 41% |
+| Precision Agriculture | 49 | 15 | 30% |
 | Nature & Ecosystem Tech | 53 | 16 | 30% |
-| Biomaterials & Circular Economy | 53 | 16 | 30% |
-| Bioinputs & Crop Resilience | 78 | 19 | 24% |
-| Food Systems & Alt Proteins | 45 | 9 | 20% |
-| Diagnostics & Health Access | 103 | 16 | 15% |
+| Biomaterials & Green Chemistry | 53 | 16 | 30% |
+| Bioinputs & Crop Resilience | 79 | 19 | 24% |
+| Food Systems & Alt Proteins | 49 | 9 | 18% |
+| Diagnostics & Devices | 103 | 16 | 15% |
 | Biomanufacturing & Platform Technologies | 26 | 4 | 15% |
-| Therapeutics | 76 | 6 | 7% |
+| Therapeutics | 75 | 6 | 8% |
 
 ## Concentración de capital por tema (HHI)
 
@@ -43,13 +45,14 @@ _Generado 2026-06-11 con `python pipeline.py capital-structure`. Cuenta EMPRESAS
 | Tema | HHI | # inversores | Inversor dominante | Share |
 |------|-----|--------------|--------------------|-------|
 | Biomanufacturing & Platform Technologies | 0.183 | 14 | GridX | 38% |
-| Food Systems & Alt Proteins | 0.135 | 23 | GridX | 33% |
-| Therapeutics | 0.131 | 24 | GridX | 28% |
-| Biomaterials & Circular Economy | 0.124 | 29 | GridX | 32% |
-| Farm Intelligence | 0.089 | 37 | sp_ventures | 20% |
-| Diagnostics & Health Access | 0.07 | 44 | GridX | 20% |
+| Therapeutics | 0.126 | 24 | GridX | 28% |
+| Biomaterials & Green Chemistry | 0.124 | 29 | GridX | 32% |
+| Food Systems & Alt Proteins | 0.121 | 23 | GridX | 30% |
+| Digital AgTech & Agrifintech | 0.096 | 24 | sp_ventures | 21% |
+| Precision Agriculture | 0.096 | 20 | sp_ventures | 18% |
+| Diagnostics & Devices | 0.07 | 44 | GridX | 20% |
 | Nature & Ecosystem Tech | 0.063 | 28 | Antom | 13% |
-| Bioinputs & Crop Resilience | 0.059 | 37 | GridX | 16% |
+| Bioinputs & Crop Resilience | 0.062 | 37 | GridX | 17% |
 
 ## Sindicación (co-inversión)
 
@@ -81,13 +84,14 @@ Top pares:
 
 ## Capital no documentado
 
-143 startups include sin ninguna arista de capital. Por tema:
+153 startups include sin ninguna arista de capital. Por tema:
 
-- **Diagnostics & Health Access**: 41/110 (37%)
-- **Therapeutics**: 27/82 (32%)
-- **Food Systems & Alt Proteins**: 25/65 (38%)
-- **Bioinputs & Crop Resilience**: 17/61 (27%)
-- **Biomaterials & Circular Economy**: 15/54 (27%)
-- **Biomanufacturing & Platform Technologies**: 8/26 (30%)
-- **Farm Intelligence**: 6/64 (9%)
+- **Diagnostics & Devices**: 41/110 (37%)
+- **Food Systems & Alt Proteins**: 30/74 (40%)
+- **Therapeutics**: 27/81 (33%)
+- **Bioinputs & Crop Resilience**: 19/64 (29%)
+- **Biomaterials & Green Chemistry**: 15/54 (27%)
+- **Biomanufacturing & Platform Technologies**: 9/27 (33%)
+- **Precision Agriculture**: 6/39 (15%)
 - **Nature & Ecosystem Tech**: 4/34 (11%)
+- **Digital AgTech & Agrifintech**: 2/24 (8%)

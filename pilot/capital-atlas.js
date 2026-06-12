@@ -51,32 +51,32 @@
   // Paleta canónica de bio-themes — idéntica a startup-themes.html
   const THEME_PAL = {
     "Therapeutics":                           "#7033BC",
-    "Diagnostics & Health Access":            "#1A6DB5",
+    "Diagnostics & Devices":            "#1A6DB5",
     "Food Systems & Alt Proteins":            "#C25A2A",
     "Bioinputs & Crop Resilience":            "#2A7A42",
     "Nature & Ecosystem Tech":               "#127A6E",
-    "Farm Intelligence":                      "#2E4E8C",
-    "Biomaterials & Circular Economy":          "#8B6D14",
+    "Precision Agriculture":                      "#2E4E8C",
+    "Biomaterials & Green Chemistry":          "#8B6D14",
     "Biomanufacturing & Platform Technologies":  "#6B8C3A",
     // legacy alias — keeps old data working during transition
     "Biomanufacturing & Fermentation Economy":   "#6B8C3A",
   };
   // Orden canónico del selector (mismo que startup-themes.html)
   const THEME_ORDER = [
-    "Therapeutics","Diagnostics & Health Access","Food Systems & Alt Proteins",
+    "Therapeutics","Diagnostics & Devices","Food Systems & Alt Proteins",
     "Bioinputs & Crop Resilience","Nature & Ecosystem Tech",
-    "Farm Intelligence","Biomaterials & Circular Economy",
+    "Precision Agriculture","Biomaterials & Green Chemistry",
     "Biomanufacturing & Platform Technologies",
   ];
   // Mapa de taxonomía vieja → editorial bio-theme
   const LEGACY_THEME_MAP = {
     "therapeutics and regenerative medicine":    "Therapeutics",
-    "diagnostics and medtech":                   "Diagnostics & Health Access",
+    "diagnostics and medtech":                   "Diagnostics & Devices",
     "food biotech and novel ingredients":        "Food Systems & Alt Proteins",
     "ag biologicals and crop resilience":        "Bioinputs & Crop Resilience",
-    "precision agriculture and resource intelligence": "Farm Intelligence",
+    "precision agriculture and resource intelligence": "Precision Agriculture",
     "climate, energy and resource systems":      "Nature & Ecosystem Tech",
-    "biobased chemistry and advanced materials": "Biomaterials & Circular Economy",
+    "biobased chemistry and advanced materials": "Biomaterials & Green Chemistry",
     "computational biology and scientific software": "Biomanufacturing & Platform Technologies",
   };
   const SHARED_TAXONOMY_STATE_KEY = "bioVcLatam.activeSemanticTaxonomy";

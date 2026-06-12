@@ -33,14 +33,14 @@ La solución adoptada parte de la semántica del texto como señal primaria, com
 
 | # | Bio Theme | Naturaleza | Descripción operativa |
 |---|---|---|---|
-| 1 | **Diagnostics & Health Access** | Aplicación final | Diagnóstico in vitro, monitoreo de salud, acceso a servicios diagnósticos |
+| 1 | **Diagnostics & Devices** | Aplicación final | Diagnóstico in vitro, monitoreo de salud, acceso a servicios diagnósticos |
 | 2 | **Therapeutics** | Aplicación final | Fármacos, biofármacos, terapia génica, medicina regenerativa, dispositivos terapéuticos |
 | 3 | **Bioinputs & Crop Resilience** | Aplicación final | Biofertilizantes, biopesticidas, biocontrol, microbioma de suelo, biológicos para cultivo |
 | 4 | **Food Systems & Alt Proteins** | Aplicación final | Proteínas alternativas, fermentación alimentaria, ingredientes funcionales, seguridad alimentaria |
 | 5 | **Biomanufacturing & Platform Technologies** | **Plataforma habilitante** | Infraestructura de bioproducción, plataformas de fermentación industrial, enzimas, digital twins para bioprocessos, gene editing como servicio, synthetic biology tools |
-| 6 | **Biomaterials & Circular Economy** | Aplicación final | Biomateriales, bioplásticos, economía circular, packaging bio-based |
+| 6 | **Biomaterials & Green Chemistry** | Aplicación final | Biomateriales, bioplásticos, economía circular, packaging bio-based |
 | 7 | **Nature & Ecosystem Tech** | Aplicación final | Restauración de ecosistemas, soluciones basadas en naturaleza, MRV de biodiversidad, mercados de carbono/naturaleza, trazabilidad de cadenas agroalimentarias |
-| 8 | **Farm Intelligence** | Aplicación final | Sensores agrícolas, analítica de datos agro, decisión de cultivo, precision farming, agrifintech y crédito agrícola |
+| 8 | **Precision Agriculture** | Aplicación final | Sensores agrícolas, analítica de datos agro, decisión de cultivo, precision farming, agrifintech y crédito agrícola |
 
 **Nota sobre Biomanufacturing & Platform Technologies:** es el único tema de naturaleza "plataforma habilitante" en lugar de "sector de aplicación final". Sus startups venden capacidades tecnológicas (infraestructura de fermentación, enzimas industriales, herramientas de diseño biológico) que sirven a múltiples sectores destino. Esta distinción es intencional: captura una categoría estratégicamente diferente — el substrato tecnológico que hace posible el resto del ecosistema — y tiene implicancias distintas para política de I+D e inversión en deep tech.
 
@@ -50,7 +50,7 @@ La solución adoptada parte de la semántica del texto como señal primaria, com
 - **Traceability & Transparency** (CL23): trazabilidad de cadenas agroalimentarias y cumplimiento ambiental
 - **Nature-Based Solutions** (CL4): soluciones biológicas/regenerativas (ocean carbon removal, biochar, etc.)
 
-**Nota sobre Farm Intelligence:** incluye agrifintech y plataformas de crédito agrícola (CL22), que el clustering semántico agrupa con el resto del Farm Intelligence por su base común de datos agro, inteligencia de campo y servicios al productor.
+**Nota sobre Precision Agriculture:** incluye agrifintech y plataformas de crédito agrícola (CL22), que el clustering semántico agrupa con el resto del Precision Agriculture por su base común de datos agro, inteligencia de campo y servicios al productor.
 
 ---
 
@@ -458,7 +458,7 @@ python pipeline.py validate
 
 **Cobertura de outliers (~13%):** Las 64 startups clasificadas por keyword scorer no tienen la calidad semántica del cluster-first. Son candidatas a revisión manual o enriquecimiento de sus summaries para que el siguiente rebuild las ubique en un cluster.
 
-**Conflictos cluster/keyword (51 casos):** El clasificador asigna el tema del cluster por defecto (confidence=0.70), pero algunos casos donde el keyword scorer tiene razón (ej. startup de Farm Intelligence en cluster de Nature & Ecosystem) son candidatos a corrección manual.
+**Conflictos cluster/keyword (51 casos):** El clasificador asigna el tema del cluster por defecto (confidence=0.70), pero algunos casos donde el keyword scorer tiene razón (ej. startup de Precision Agriculture en cluster de Nature & Ecosystem) son candidatos a corrección manual.
 
 **Embeddings de una sola corrida:** Los embeddings se calcularon con los summaries disponibles al momento. Startups con summaries cortos (<60 palabras) tienen vectores menos representativos. Hay ~173 startups en esta condición.
 

@@ -121,7 +121,7 @@ Aplicar a cada caso límite, en este orden. El primero que dispara, decide.
 
    Si cumple las tres → dentro (`is_bio_universe=1`). Si es telemetría, plomería de datos,
    marketplace, crédito o logística → **eco-adjacent** (`is_bio_universe=0`). El **tema** lo fija
-   el objeto/output (agro → Farm Intelligence; fármaco → Therapeutics/Biomanufacturing), no el gate.
+   el objeto/output (agro → Precision Agriculture; fármaco → Therapeutics/Biomanufacturing), no el gate.
 3. **Test de transición material.** ¿Aborda circularidad, recursos o límites planetarios
    con impacto material claro, pero sin biología ni acople directo? → **eco-adjacent**
    (`include` + `is_bio_universe=0`).
@@ -141,10 +141,10 @@ Aplicar a cada caso límite, en este orden. El primero que dispara, decide.
   vende el *producto final* (alimento, material, terapia) → el tema de ese producto.
 - **Circularidad sin biología no es Biomaterials.** Reciclaje, packaging reutilizable
   y trazabilidad sin transformación biológica son **eco-adjacent**, no biomaterial.
-- **Marca de consumo ≠ Farm Intelligence.** Un producto alimenticio plant-based es
+- **Marca de consumo ≠ Precision Agriculture.** Un producto alimenticio plant-based es
   **Food Systems**, aunque tenga claims de carbono/sustentabilidad.
 - **Inteligencia agrícola: bio-coupled vs eco-adjacent (split 2026-06-12).**
-  *Farm Intelligence* nombra **solo** la inteligencia digital **bio-coupled**: software,
+  *Precision Agriculture* nombra **solo** la inteligencia digital **bio-coupled**: software,
   sensores o IA cuyo valor *depende de y actúa sobre un sistema vivo específico* — este
   cultivo, este hato (agronomía de precisión, fenotipado, monitoreo de plagas/enfermedad,
   sanidad animal, riego de precisión atado a la biología del cultivo). La capa **digital
@@ -154,7 +154,7 @@ Aplicar a cada caso límite, en este orden. El primero que dispara, decide.
   (`is_bio_universe=0`, eco-adjacent). El dominio `agri-food` por sí solo **no** es acople.
 - **Un tema debe ser homogéneo en intensidad.** Si un tema acumula una fracción grande de
   `is_bio_universe=0`, está mal cortado: mezcla núcleo bio con eco-adjacent y diluye el
-  recorte. Señal medible: Farm Intelligence tenía **47% bio=0** (31 de 66) y concentraba el
+  recorte. Señal medible: Precision Agriculture tenía **47% bio=0** (31 de 66) y concentraba el
   **55% de todo el `is_bio_universe=0` del universo** → se partió en dos. Regla: revisar
   cualquier tema que pase ~15% bio=0.
 
@@ -176,7 +176,7 @@ Estado: `confirmed` (decidido) / `proposed` (pendiente de confirmación del cura
 | Granatum Bioworks | Biomanufacturing, bio=1 | bio-core | plataforma de biosintéticos | confirmed |
 | Outpost | Biomanufacturing, bio=1 | bio-core | plataforma TechBio; explícito "not diagnostics" | confirmed |
 | Trebe Biotech | Biomanufacturing, bio=1 | bio-core | se autodescribe biomanufacturing | confirmed |
-| Nude | Food Systems, bio=1 | bio-core | plant-based ≠ Farm Intelligence (test output) | confirmed |
+| Nude | Food Systems, bio=1 | bio-core | plant-based ≠ Precision Agriculture (test output) | confirmed |
 | AGES | Food Systems, bio=1 | bio-core | bioactivos/nutracéutico = Food (healthspan) | confirmed |
 | CIRCCLO | Biomaterials, bio=0 | eco-adjacent | circularidad sin biología (test transición) | confirmed |
 | MUTA | Biomaterials, bio=0 | eco-adjacent | marketplace de reciclaje sin biología | confirmed |
@@ -188,10 +188,10 @@ Estado: `confirmed` (decidido) / `proposed` (pendiente de confirmación del cura
 | Agrotoken | Digital AgTech & Agrifintech, bio=0 | eco-adjacent | tokenización de granos = fintech, no bio | confirmed |
 | Agrofy | Digital AgTech & Agrifintech, bio=0 | eco-adjacent | marketplace agrícola, sin biología | confirmed |
 | goFlux | Digital AgTech & Agrifintech, bio=0 | eco-adjacent | freight SaaS B2B; dominio agri ≠ acople | confirmed |
-| Agrosmart | Farm Intelligence, bio=1 | bio-coupled (B1) | agronomía climática sobre el cultivo; corrige flag bio=0 erróneo | proposed |
-| Codebreaker | Farm Intelligence, bio=1 | TechBio (B2) | inteligencia de microbioma → recomendación (gate 3/3) | proposed |
-| Inkus Biotech | Farm Intelligence, bio=1 | TechBio (B2) | AI+genómica de resistencia a patógenos (gate 3/3) | proposed |
-| DeepAgro | Farm Intelligence o Digital AgTech | borde | CV de spraying: ¿modela biología o solo detecta+actúa? → curador | proposed |
+| Agrosmart | Precision Agriculture, bio=1 | bio-coupled (B1) | agronomía climática sobre el cultivo; corrige flag bio=0 erróneo | proposed |
+| Codebreaker | Precision Agriculture, bio=1 | TechBio (B2) | inteligencia de microbioma → recomendación (gate 3/3) | proposed |
+| Inkus Biotech | Precision Agriculture, bio=1 | TechBio (B2) | AI+genómica de resistencia a patógenos (gate 3/3) | proposed |
+| DeepAgro | Precision Agriculture o Digital AgTech | borde | CV de spraying: ¿modela biología o solo detecta+actúa? → curador | proposed |
 | Instacrops | borde | borde | IoT/satélite: telemetría sin modelo bio → posible eco-adjacent | proposed |
 | Leaf | Digital AgTech, bio=0 | eco-adjacent | data-infrastructure / API: plomería, sin representación bio | proposed |
 
@@ -202,7 +202,7 @@ Estado: `confirmed` (decidido) / `proposed` (pendiente de confirmación del cura
 > data-infra): cuenta solo si hay un modelo biológico detrás, no por tocar un campo.
 
 > **Nota de calidad del flag (2026-06-12).** El re-audit reveló que `is_bio_universe` estaba
-> aplicado de forma **inconsistente** dentro de Farm Intelligence: marketplaces y fintech
+> aplicado de forma **inconsistente** dentro de Precision Agriculture: marketplaces y fintech
 > (Agrotoken, Agrofy) figuraban como bio=1, mientras agronomía de precisión seria (Agrosmart,
 > DeepAgro) figuraba como bio=0. El split no es "mover los 31 bio=0" sino **re-auditar los 66
 > contra el test de acople**. Los precedentes `proposed` esperan confirmación del curador en
@@ -230,12 +230,12 @@ Estado: `confirmed` (decidido) / `proposed` (pendiente de confirmación del cura
   bio + tech que representa la biología). El borde a vigilar es agtech operacional/sensing (IoT, spraying,
   data-infra): solo entra si hay modelo biológico detrás. Disparado por el criterio del curador:
   "garantizar que las que mantenemos tienen foco bio, entendimiento bio y soporte TechBio".
-- **2026-06-12** — **Split de Farm Intelligence.** Medición: el tema era 47% `is_bio_universe=0`
+- **2026-06-12** — **Split de Precision Agriculture.** Medición: el tema era 47% `is_bio_universe=0`
   (31/66) y concentraba el 55% de todo el eco-adjacent del universo — único tema no homogéneo en
   intensidad (los otros 7 son ~95% bio-core). Causa raíz en el clasificador: `src/reclassify.py`
-  define Farm Intelligence con `"is_bio_default": False` y keywords financieras top-weighted
+  define Precision Agriculture con `"is_bio_default": False` y keywords financieras top-weighted
   (`agrifintech 3.0`, `rural.credit`, `farm.loan`, `crop.insurance`) — nunca fue un tema bio-core.
-  Decisión (path "partir en dos"): *Farm Intelligence* queda solo para inteligencia digital
+  Decisión (path "partir en dos"): *Precision Agriculture* queda solo para inteligencia digital
   **bio-coupled** (acople a cultivo/hato específico); se crea **Digital AgTech & Agrifintech**
   como tema eco-adjacent (`is_bio_universe=0`) para agrifintech, crédito/seguro rural, marketplaces,
   tokenización, trazabilidad y ERP genérico. Nueva regla de homogeneidad de intensidad por tema

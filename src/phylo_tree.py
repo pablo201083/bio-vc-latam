@@ -34,19 +34,21 @@ TAXONOMY: list[dict] = [
         "mega": "BioMedicina", "color": "#5A4FCF",
         "macros": [
             {"name": "Diagnóstico · Terapéutica", "color": "#5A4FCF",
-             "themes": ["Diagnostics & Health Access", "Therapeutics"]},
+             "themes": ["Diagnostics & Devices", "Therapeutics"]},
         ],
     },
     {
         "mega": "BioIndustria & Territorio", "color": "#2E7D52",
         "macros": [
             {"name": "Bioplatforma Industrial", "color": "#8B6D14",
-             "themes": ["Food Systems & Alt Proteins", "Biomaterials & Circular Economy",
+             "themes": ["Food Systems & Alt Proteins", "Biomaterials & Green Chemistry",
                         "Biomanufacturing & Platform Technologies"]},
             {"name": "Agroecosistemas", "color": "#2A7A42",
              "themes": ["Bioinputs & Crop Resilience", "Nature & Ecosystem Tech"]},
             {"name": "Inteligencia de Campo", "color": "#2E4E8C",
-             "themes": ["Farm Intelligence"]},
+             "themes": ["Precision Agriculture"]},
+            {"name": "AgTech Digital (eco-adjacent)", "color": "#8C8FA3",
+             "themes": ["Digital AgTech & Agrifintech"]},
         ],
     },
 ]

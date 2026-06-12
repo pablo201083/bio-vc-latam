@@ -411,18 +411,18 @@ const startups = D.startups;
 
 // ── Paleta ────────────────────────────────────────────────────────────────
 const THEME_PAL = {
-  "Therapeutics":"#7033BC","Diagnostics & Health Access":"#1A6DB5",
+  "Therapeutics":"#7033BC","Diagnostics & Devices":"#1A6DB5",
   "Food Systems & Alt Proteins":"#C25A2A","Bioinputs & Crop Resilience":"#2A7A42",
-  "Nature & Ecosystem Tech":"#127A6E","Farm Intelligence":"#2E4E8C",
-  "Biomaterials & Circular Economy":"#8B6D14",
+  "Nature & Ecosystem Tech":"#127A6E","Precision Agriculture":"#2E4E8C",
+  "Biomaterials & Green Chemistry":"#8B6D14",
   "Biomanufacturing & Platform Technologies":"#6B8C3A",
   "Biomanufacturing & Fermentation Economy":"#6B8C3A", // legacy compat
 };
 const THEME_PLATFORM = new Set(["Biomanufacturing & Platform Technologies"]);
 const THEME_ORDER=[
-  "Bioinputs & Crop Resilience","Farm Intelligence","Nature & Ecosystem Tech",
+  "Bioinputs & Crop Resilience","Precision Agriculture","Nature & Ecosystem Tech",
   "Food Systems & Alt Proteins","Biomanufacturing & Platform Technologies",
-  "Biomaterials & Circular Economy","Diagnostics & Health Access","Therapeutics",
+  "Biomaterials & Green Chemistry","Diagnostics & Devices","Therapeutics",
 ];
 function tcol(t){ return THEME_PAL[t]||"#8a7d70"; }
 function qcol(q){ return q>=7.5?"#16a34a":q>=5?"#d97706":"#dc2626"; }

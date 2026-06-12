@@ -39,14 +39,14 @@ SUPPLEMENTARY_DESC: dict[str, str] = {
 # Fronteras explícitas: dónde un tema se confunde con su vecino y cómo se decide.
 # Codifica el principio de desambiguación del clasificador (output-destination).
 BOUNDARIES: dict[str, list[str]] = {
-    "Farm Intelligence": [
-        "vs **Bioinputs & Crop Resilience**: Farm Intelligence es *software/datos* "
+    "Precision Agriculture": [
+        "vs **Bioinputs & Crop Resilience**: Precision Agriculture es *software/datos* "
         "(sensores, satélite, agrofintech); Bioinputs es un *producto biológico* aplicado al cultivo.",
         "vs **Nature & Ecosystem Tech**: si el objeto es el rendimiento del productor → Farm "
         "Intelligence; si el objeto es el ecosistema/carbono/biodiversidad → Nature.",
     ],
     "Bioinputs & Crop Resilience": [
-        "vs **Farm Intelligence**: el output es un insumo biológico (biofertilizante, biocontrol, "
+        "vs **Precision Agriculture**: el output es un insumo biológico (biofertilizante, biocontrol, "
         "semilla editada), no una plataforma digital.",
         "vs **Food Systems**: si la biología termina en el cultivo/suelo → Bioinputs; si el output "
         "se ingiere → Food Systems.",
@@ -56,26 +56,26 @@ BOUNDARIES: dict[str, list[str]] = {
         "se **ingiere** (alimento, ingrediente, suplemento) → Food; si es material/químico/energía → Biomaterials.",
         "vs **Bioinputs**: el output es comida/nutrición humana o animal, no un insumo de campo.",
     ],
-    "Biomaterials & Circular Economy": [
+    "Biomaterials & Green Chemistry": [
         "vs **Food Systems**: el output es un **material, químico industrial o vector energético** "
         "(bioplástico, enzima industrial, e-fuel), no alimento.",
         "vs **Biomanufacturing**: Biomaterials nombra el *producto* (material/circular); Biomanufacturing "
         "nombra la *plataforma/capacidad* de producción transversal.",
     ],
     "Nature & Ecosystem Tech": [
-        "vs **Farm Intelligence**: el objeto es el ecosistema natural (carbono, biodiversidad, agua, "
+        "vs **Precision Agriculture**: el objeto es el ecosistema natural (carbono, biodiversidad, agua, "
         "bosque, océano), no la productividad agrícola.",
         "vs **Bioinputs**: la biorremediación y el monitoreo ambiental van acá; la intervención sobre "
         "el cultivo va a Bioinputs.",
     ],
-    "Diagnostics & Health Access": [
+    "Diagnostics & Devices": [
         "vs **Therapeutics**: Diagnostics *detecta/mide/monitorea* enfermedad; Therapeutics *interviene "
         "para tratar*. Un test molecular → Diagnostics; una terapia celular → Therapeutics.",
         "vs **Biomanufacturing**: si el core es un ensayo biológico de detección → Diagnostics; si es "
         "producir el biológico → Biomanufacturing.",
     ],
     "Therapeutics": [
-        "vs **Diagnostics & Health Access**: el output es un tratamiento (droga, biológico, terapia "
+        "vs **Diagnostics & Devices**: el output es un tratamiento (droga, biológico, terapia "
         "celular/génica), no una medición.",
         "vs **Biomanufacturing**: descubrir/desarrollar la terapia → Therapeutics; producir el biológico "
         "a escala como plataforma → Biomanufacturing.",
@@ -90,16 +90,16 @@ BOUNDARIES: dict[str, list[str]] = {
 
 # Qué queda explícitamente AFUERA del universo (refleja thesis_scope_definition + NON_BIO_SIGNALS).
 OUT_OF_SCOPE: dict[str, list[str]] = {
-    "Farm Intelligence": ["Fintech agrícola sin acople biológico ni de recursos (crédito puro, marketplace).",
+    "Precision Agriculture": ["Fintech agrícola sin acople biológico ni de recursos (crédito puro, marketplace).",
                           "Logística/trading de commodities como software horizontal."],
     "Bioinputs & Crop Resilience": ["Agroquímicos sintéticos convencionales sin componente biológico."],
     "Food Systems & Alt Proteins": ["Marcas de alimentos sin tecnología bio/proceso novedoso.",
                                     "Delivery/retail de comida."],
-    "Biomaterials & Circular Economy": ["Reciclaje mecánico o gestión de residuos sin transformación biológica.",
+    "Biomaterials & Green Chemistry": ["Reciclaje mecánico o gestión de residuos sin transformación biológica.",
                                        "Energía renovable sin componente bio/material (paneles, software de red puro)."],
     "Nature & Ecosystem Tech": ["Mercados de carbono puramente financieros sin base natural/tecnológica.",
                                "ESG/reporting como software horizontal."],
-    "Diagnostics & Health Access": ["Telemedicina/EHR sin ensayo biológico como core.",
+    "Diagnostics & Devices": ["Telemedicina/EHR sin ensayo biológico como core.",
                                    "Wearables de consumo sin valor diagnóstico clínico."],
     "Therapeutics": ["Wellness/suplementos sin desarrollo terapéutico.",
                     "Software de salud sin intervención biológica."],

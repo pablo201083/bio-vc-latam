@@ -1,5 +1,5 @@
 window.COVERAGE_DATA = {
-  "generated_at": "2026-06-12T14:34:14+00:00",
+  "generated_at": "2026-06-12T17:10:20+00:00",
   "countries": {
     "AR": {
       "tier": "well_mapped",
@@ -618,7 +618,7 @@ window.COVERAGE_DATA = {
       "coverage_label": "no_explorado"
     },
     {
-      "theme": "Biomaterials & Circular Economy",
+      "theme": "Biomaterials & Green Chemistry",
       "country": "AR",
       "n_startups": 21,
       "evidence_pct": 0.857,
@@ -629,7 +629,7 @@ window.COVERAGE_DATA = {
       "coverage_label": "bien_mapeado"
     },
     {
-      "theme": "Biomaterials & Circular Economy",
+      "theme": "Biomaterials & Green Chemistry",
       "country": "BM",
       "n_startups": 0,
       "evidence_pct": 0.0,
@@ -640,7 +640,7 @@ window.COVERAGE_DATA = {
       "coverage_label": "fuera_de_foco"
     },
     {
-      "theme": "Biomaterials & Circular Economy",
+      "theme": "Biomaterials & Green Chemistry",
       "country": "BO",
       "n_startups": 0,
       "evidence_pct": 0.0,
@@ -651,7 +651,7 @@ window.COVERAGE_DATA = {
       "coverage_label": "no_explorado"
     },
     {
-      "theme": "Biomaterials & Circular Economy",
+      "theme": "Biomaterials & Green Chemistry",
       "country": "BR",
       "n_startups": 6,
       "evidence_pct": 0.0,
@@ -662,7 +662,7 @@ window.COVERAGE_DATA = {
       "coverage_label": "parcial"
     },
     {
-      "theme": "Biomaterials & Circular Economy",
+      "theme": "Biomaterials & Green Chemistry",
       "country": "CL",
       "n_startups": 12,
       "evidence_pct": 0.25,
@@ -673,7 +673,7 @@ window.COVERAGE_DATA = {
       "coverage_label": "parcial"
     },
     {
-      "theme": "Biomaterials & Circular Economy",
+      "theme": "Biomaterials & Green Chemistry",
       "country": "CO",
       "n_startups": 1,
       "evidence_pct": 1.0,
@@ -684,7 +684,7 @@ window.COVERAGE_DATA = {
       "coverage_label": "no_explorado"
     },
     {
-      "theme": "Biomaterials & Circular Economy",
+      "theme": "Biomaterials & Green Chemistry",
       "country": "CR",
       "n_startups": 1,
       "evidence_pct": 0.0,
@@ -695,7 +695,7 @@ window.COVERAGE_DATA = {
       "coverage_label": "no_explorado"
     },
     {
-      "theme": "Biomaterials & Circular Economy",
+      "theme": "Biomaterials & Green Chemistry",
       "country": "DO",
       "n_startups": 0,
       "evidence_pct": 0.0,
@@ -706,7 +706,7 @@ window.COVERAGE_DATA = {
       "coverage_label": "no_explorado"
     },
     {
-      "theme": "Biomaterials & Circular Economy",
+      "theme": "Biomaterials & Green Chemistry",
       "country": "EC",
       "n_startups": 0,
       "evidence_pct": 0.0,
@@ -717,7 +717,7 @@ window.COVERAGE_DATA = {
       "coverage_label": "no_explorado"
     },
     {
-      "theme": "Biomaterials & Circular Economy",
+      "theme": "Biomaterials & Green Chemistry",
       "country": "GT",
       "n_startups": 1,
       "evidence_pct": 0.0,
@@ -728,7 +728,7 @@ window.COVERAGE_DATA = {
       "coverage_label": "no_explorado"
     },
     {
-      "theme": "Biomaterials & Circular Economy",
+      "theme": "Biomaterials & Green Chemistry",
       "country": "MX",
       "n_startups": 8,
       "evidence_pct": 0.25,
@@ -739,7 +739,7 @@ window.COVERAGE_DATA = {
       "coverage_label": "parcial"
     },
     {
-      "theme": "Biomaterials & Circular Economy",
+      "theme": "Biomaterials & Green Chemistry",
       "country": "NL",
       "n_startups": 1,
       "evidence_pct": 1.0,
@@ -750,7 +750,7 @@ window.COVERAGE_DATA = {
       "coverage_label": "fuera_de_foco"
     },
     {
-      "theme": "Biomaterials & Circular Economy",
+      "theme": "Biomaterials & Green Chemistry",
       "country": "PA",
       "n_startups": 0,
       "evidence_pct": 0.0,
@@ -761,7 +761,7 @@ window.COVERAGE_DATA = {
       "coverage_label": "no_explorado"
     },
     {
-      "theme": "Biomaterials & Circular Economy",
+      "theme": "Biomaterials & Green Chemistry",
       "country": "PE",
       "n_startups": 0,
       "evidence_pct": 0.0,
@@ -772,7 +772,7 @@ window.COVERAGE_DATA = {
       "coverage_label": "no_explorado"
     },
     {
-      "theme": "Biomaterials & Circular Economy",
+      "theme": "Biomaterials & Green Chemistry",
       "country": "PR",
       "n_startups": 0,
       "evidence_pct": 0.0,
@@ -783,7 +783,7 @@ window.COVERAGE_DATA = {
       "coverage_label": "fuera_de_foco"
     },
     {
-      "theme": "Biomaterials & Circular Economy",
+      "theme": "Biomaterials & Green Chemistry",
       "country": "PY",
       "n_startups": 0,
       "evidence_pct": 0.0,
@@ -794,7 +794,7 @@ window.COVERAGE_DATA = {
       "coverage_label": "no_explorado"
     },
     {
-      "theme": "Biomaterials & Circular Economy",
+      "theme": "Biomaterials & Green Chemistry",
       "country": "US",
       "n_startups": 1,
       "evidence_pct": 0.0,
@@ -805,7 +805,7 @@ window.COVERAGE_DATA = {
       "coverage_label": "fuera_de_foco"
     },
     {
-      "theme": "Biomaterials & Circular Economy",
+      "theme": "Biomaterials & Green Chemistry",
       "country": "UY",
       "n_startups": 2,
       "evidence_pct": 1.0,
@@ -816,7 +816,7 @@ window.COVERAGE_DATA = {
       "coverage_label": "no_explorado"
     },
     {
-      "theme": "Biomaterials & Circular Economy",
+      "theme": "Biomaterials & Green Chemistry",
       "country": "VE",
       "n_startups": 0,
       "evidence_pct": 0.0,
@@ -827,7 +827,7 @@ window.COVERAGE_DATA = {
       "coverage_label": "no_explorado"
     },
     {
-      "theme": "Diagnostics & Health Access",
+      "theme": "Diagnostics & Devices",
       "country": "AR",
       "n_startups": 45,
       "evidence_pct": 0.756,
@@ -838,7 +838,7 @@ window.COVERAGE_DATA = {
       "coverage_label": "bien_mapeado"
     },
     {
-      "theme": "Diagnostics & Health Access",
+      "theme": "Diagnostics & Devices",
       "country": "BM",
       "n_startups": 1,
       "evidence_pct": 0.0,
@@ -849,7 +849,7 @@ window.COVERAGE_DATA = {
       "coverage_label": "fuera_de_foco"
     },
     {
-      "theme": "Diagnostics & Health Access",
+      "theme": "Diagnostics & Devices",
       "country": "BO",
       "n_startups": 0,
       "evidence_pct": 0.0,
@@ -860,7 +860,7 @@ window.COVERAGE_DATA = {
       "coverage_label": "no_explorado"
     },
     {
-      "theme": "Diagnostics & Health Access",
+      "theme": "Diagnostics & Devices",
       "country": "BR",
       "n_startups": 31,
       "evidence_pct": 0.194,
@@ -871,7 +871,7 @@ window.COVERAGE_DATA = {
       "coverage_label": "parcial"
     },
     {
-      "theme": "Diagnostics & Health Access",
+      "theme": "Diagnostics & Devices",
       "country": "CL",
       "n_startups": 14,
       "evidence_pct": 0.286,
@@ -882,7 +882,7 @@ window.COVERAGE_DATA = {
       "coverage_label": "parcial"
     },
     {
-      "theme": "Diagnostics & Health Access",
+      "theme": "Diagnostics & Devices",
       "country": "CO",
       "n_startups": 2,
       "evidence_pct": 0.5,
@@ -893,7 +893,7 @@ window.COVERAGE_DATA = {
       "coverage_label": "no_explorado"
     },
     {
-      "theme": "Diagnostics & Health Access",
+      "theme": "Diagnostics & Devices",
       "country": "CR",
       "n_startups": 0,
       "evidence_pct": 0.0,
@@ -904,7 +904,7 @@ window.COVERAGE_DATA = {
       "coverage_label": "no_explorado"
     },
     {
-      "theme": "Diagnostics & Health Access",
+      "theme": "Diagnostics & Devices",
       "country": "DO",
       "n_startups": 0,
       "evidence_pct": 0.0,
@@ -915,7 +915,7 @@ window.COVERAGE_DATA = {
       "coverage_label": "no_explorado"
     },
     {
-      "theme": "Diagnostics & Health Access",
+      "theme": "Diagnostics & Devices",
       "country": "EC",
       "n_startups": 0,
       "evidence_pct": 0.0,
@@ -926,7 +926,7 @@ window.COVERAGE_DATA = {
       "coverage_label": "no_explorado"
     },
     {
-      "theme": "Diagnostics & Health Access",
+      "theme": "Diagnostics & Devices",
       "country": "GT",
       "n_startups": 1,
       "evidence_pct": 0.0,
@@ -937,7 +937,7 @@ window.COVERAGE_DATA = {
       "coverage_label": "no_explorado"
     },
     {
-      "theme": "Diagnostics & Health Access",
+      "theme": "Diagnostics & Devices",
       "country": "MX",
       "n_startups": 11,
       "evidence_pct": 0.091,
@@ -948,7 +948,7 @@ window.COVERAGE_DATA = {
       "coverage_label": "parcial"
     },
     {
-      "theme": "Diagnostics & Health Access",
+      "theme": "Diagnostics & Devices",
       "country": "NL",
       "n_startups": 0,
       "evidence_pct": 0.0,
@@ -959,7 +959,7 @@ window.COVERAGE_DATA = {
       "coverage_label": "fuera_de_foco"
     },
     {
-      "theme": "Diagnostics & Health Access",
+      "theme": "Diagnostics & Devices",
       "country": "PA",
       "n_startups": 0,
       "evidence_pct": 0.0,
@@ -970,7 +970,7 @@ window.COVERAGE_DATA = {
       "coverage_label": "no_explorado"
     },
     {
-      "theme": "Diagnostics & Health Access",
+      "theme": "Diagnostics & Devices",
       "country": "PE",
       "n_startups": 1,
       "evidence_pct": 0.0,
@@ -981,7 +981,7 @@ window.COVERAGE_DATA = {
       "coverage_label": "no_explorado"
     },
     {
-      "theme": "Diagnostics & Health Access",
+      "theme": "Diagnostics & Devices",
       "country": "PR",
       "n_startups": 1,
       "evidence_pct": 0.0,
@@ -992,7 +992,7 @@ window.COVERAGE_DATA = {
       "coverage_label": "fuera_de_foco"
     },
     {
-      "theme": "Diagnostics & Health Access",
+      "theme": "Diagnostics & Devices",
       "country": "PY",
       "n_startups": 0,
       "evidence_pct": 0.0,
@@ -1003,7 +1003,7 @@ window.COVERAGE_DATA = {
       "coverage_label": "no_explorado"
     },
     {
-      "theme": "Diagnostics & Health Access",
+      "theme": "Diagnostics & Devices",
       "country": "US",
       "n_startups": 0,
       "evidence_pct": 0.0,
@@ -1014,7 +1014,7 @@ window.COVERAGE_DATA = {
       "coverage_label": "fuera_de_foco"
     },
     {
-      "theme": "Diagnostics & Health Access",
+      "theme": "Diagnostics & Devices",
       "country": "UY",
       "n_startups": 3,
       "evidence_pct": 0.667,
@@ -1025,7 +1025,7 @@ window.COVERAGE_DATA = {
       "coverage_label": "no_explorado"
     },
     {
-      "theme": "Diagnostics & Health Access",
+      "theme": "Diagnostics & Devices",
       "country": "VE",
       "n_startups": 0,
       "evidence_pct": 0.0,
@@ -1235,215 +1235,6 @@ window.COVERAGE_DATA = {
     },
     {
       "theme": "Digital AgTech & Agrifintech",
-      "country": "VE",
-      "n_startups": 0,
-      "evidence_pct": 0.0,
-      "capital_pct": 0.0,
-      "dominant_source": "",
-      "dominant_source_share": 0.0,
-      "country_tier": "under_explored",
-      "coverage_label": "no_explorado"
-    },
-    {
-      "theme": "Farm Intelligence",
-      "country": "AR",
-      "n_startups": 9,
-      "evidence_pct": 0.889,
-      "capital_pct": 1.0,
-      "dominant_source": "(sin provenance)",
-      "dominant_source_share": 0.778,
-      "country_tier": "well_mapped",
-      "coverage_label": "parcial"
-    },
-    {
-      "theme": "Farm Intelligence",
-      "country": "BM",
-      "n_startups": 0,
-      "evidence_pct": 0.0,
-      "capital_pct": 0.0,
-      "dominant_source": "",
-      "dominant_source_share": 0.0,
-      "country_tier": "fuera_de_foco",
-      "coverage_label": "fuera_de_foco"
-    },
-    {
-      "theme": "Farm Intelligence",
-      "country": "BO",
-      "n_startups": 0,
-      "evidence_pct": 0.0,
-      "capital_pct": 0.0,
-      "dominant_source": "",
-      "dominant_source_share": 0.0,
-      "country_tier": "under_explored",
-      "coverage_label": "no_explorado"
-    },
-    {
-      "theme": "Farm Intelligence",
-      "country": "BR",
-      "n_startups": 23,
-      "evidence_pct": 0.652,
-      "capital_pct": 0.826,
-      "dominant_source": "web_research_2026",
-      "dominant_source_share": 0.522,
-      "country_tier": "well_mapped",
-      "coverage_label": "bien_mapeado"
-    },
-    {
-      "theme": "Farm Intelligence",
-      "country": "CL",
-      "n_startups": 5,
-      "evidence_pct": 0.6,
-      "capital_pct": 0.6,
-      "dominant_source": "(sin provenance)",
-      "dominant_source_share": 0.8,
-      "country_tier": "well_mapped",
-      "coverage_label": "parcial"
-    },
-    {
-      "theme": "Farm Intelligence",
-      "country": "CO",
-      "n_startups": 1,
-      "evidence_pct": 1.0,
-      "capital_pct": 1.0,
-      "dominant_source": "web_research_2026",
-      "dominant_source_share": 1.0,
-      "country_tier": "under_explored",
-      "coverage_label": "no_explorado"
-    },
-    {
-      "theme": "Farm Intelligence",
-      "country": "CR",
-      "n_startups": 0,
-      "evidence_pct": 0.0,
-      "capital_pct": 0.0,
-      "dominant_source": "",
-      "dominant_source_share": 0.0,
-      "country_tier": "under_explored",
-      "coverage_label": "no_explorado"
-    },
-    {
-      "theme": "Farm Intelligence",
-      "country": "DO",
-      "n_startups": 0,
-      "evidence_pct": 0.0,
-      "capital_pct": 0.0,
-      "dominant_source": "",
-      "dominant_source_share": 0.0,
-      "country_tier": "under_explored",
-      "coverage_label": "no_explorado"
-    },
-    {
-      "theme": "Farm Intelligence",
-      "country": "EC",
-      "n_startups": 0,
-      "evidence_pct": 0.0,
-      "capital_pct": 0.0,
-      "dominant_source": "",
-      "dominant_source_share": 0.0,
-      "country_tier": "under_explored",
-      "coverage_label": "no_explorado"
-    },
-    {
-      "theme": "Farm Intelligence",
-      "country": "GT",
-      "n_startups": 0,
-      "evidence_pct": 0.0,
-      "capital_pct": 0.0,
-      "dominant_source": "",
-      "dominant_source_share": 0.0,
-      "country_tier": "under_explored",
-      "coverage_label": "no_explorado"
-    },
-    {
-      "theme": "Farm Intelligence",
-      "country": "MX",
-      "n_startups": 0,
-      "evidence_pct": 0.0,
-      "capital_pct": 0.0,
-      "dominant_source": "",
-      "dominant_source_share": 0.0,
-      "country_tier": "partial",
-      "coverage_label": "vacio_observado"
-    },
-    {
-      "theme": "Farm Intelligence",
-      "country": "NL",
-      "n_startups": 0,
-      "evidence_pct": 0.0,
-      "capital_pct": 0.0,
-      "dominant_source": "",
-      "dominant_source_share": 0.0,
-      "country_tier": "fuera_de_foco",
-      "coverage_label": "fuera_de_foco"
-    },
-    {
-      "theme": "Farm Intelligence",
-      "country": "PA",
-      "n_startups": 0,
-      "evidence_pct": 0.0,
-      "capital_pct": 0.0,
-      "dominant_source": "",
-      "dominant_source_share": 0.0,
-      "country_tier": "under_explored",
-      "coverage_label": "no_explorado"
-    },
-    {
-      "theme": "Farm Intelligence",
-      "country": "PE",
-      "n_startups": 1,
-      "evidence_pct": 1.0,
-      "capital_pct": 1.0,
-      "dominant_source": "web_research_2026",
-      "dominant_source_share": 1.0,
-      "country_tier": "under_explored",
-      "coverage_label": "no_explorado"
-    },
-    {
-      "theme": "Farm Intelligence",
-      "country": "PR",
-      "n_startups": 0,
-      "evidence_pct": 0.0,
-      "capital_pct": 0.0,
-      "dominant_source": "",
-      "dominant_source_share": 0.0,
-      "country_tier": "fuera_de_foco",
-      "coverage_label": "fuera_de_foco"
-    },
-    {
-      "theme": "Farm Intelligence",
-      "country": "PY",
-      "n_startups": 0,
-      "evidence_pct": 0.0,
-      "capital_pct": 0.0,
-      "dominant_source": "",
-      "dominant_source_share": 0.0,
-      "country_tier": "under_explored",
-      "coverage_label": "no_explorado"
-    },
-    {
-      "theme": "Farm Intelligence",
-      "country": "US",
-      "n_startups": 0,
-      "evidence_pct": 0.0,
-      "capital_pct": 0.0,
-      "dominant_source": "",
-      "dominant_source_share": 0.0,
-      "country_tier": "fuera_de_foco",
-      "coverage_label": "fuera_de_foco"
-    },
-    {
-      "theme": "Farm Intelligence",
-      "country": "UY",
-      "n_startups": 0,
-      "evidence_pct": 0.0,
-      "capital_pct": 0.0,
-      "dominant_source": "",
-      "dominant_source_share": 0.0,
-      "country_tier": "under_explored",
-      "coverage_label": "no_explorado"
-    },
-    {
-      "theme": "Farm Intelligence",
       "country": "VE",
       "n_startups": 0,
       "evidence_pct": 0.0,
@@ -1862,6 +1653,215 @@ window.COVERAGE_DATA = {
     },
     {
       "theme": "Nature & Ecosystem Tech",
+      "country": "VE",
+      "n_startups": 0,
+      "evidence_pct": 0.0,
+      "capital_pct": 0.0,
+      "dominant_source": "",
+      "dominant_source_share": 0.0,
+      "country_tier": "under_explored",
+      "coverage_label": "no_explorado"
+    },
+    {
+      "theme": "Precision Agriculture",
+      "country": "AR",
+      "n_startups": 9,
+      "evidence_pct": 0.889,
+      "capital_pct": 1.0,
+      "dominant_source": "(sin provenance)",
+      "dominant_source_share": 0.778,
+      "country_tier": "well_mapped",
+      "coverage_label": "parcial"
+    },
+    {
+      "theme": "Precision Agriculture",
+      "country": "BM",
+      "n_startups": 0,
+      "evidence_pct": 0.0,
+      "capital_pct": 0.0,
+      "dominant_source": "",
+      "dominant_source_share": 0.0,
+      "country_tier": "fuera_de_foco",
+      "coverage_label": "fuera_de_foco"
+    },
+    {
+      "theme": "Precision Agriculture",
+      "country": "BO",
+      "n_startups": 0,
+      "evidence_pct": 0.0,
+      "capital_pct": 0.0,
+      "dominant_source": "",
+      "dominant_source_share": 0.0,
+      "country_tier": "under_explored",
+      "coverage_label": "no_explorado"
+    },
+    {
+      "theme": "Precision Agriculture",
+      "country": "BR",
+      "n_startups": 23,
+      "evidence_pct": 0.652,
+      "capital_pct": 0.826,
+      "dominant_source": "web_research_2026",
+      "dominant_source_share": 0.522,
+      "country_tier": "well_mapped",
+      "coverage_label": "bien_mapeado"
+    },
+    {
+      "theme": "Precision Agriculture",
+      "country": "CL",
+      "n_startups": 5,
+      "evidence_pct": 0.6,
+      "capital_pct": 0.6,
+      "dominant_source": "(sin provenance)",
+      "dominant_source_share": 0.8,
+      "country_tier": "well_mapped",
+      "coverage_label": "parcial"
+    },
+    {
+      "theme": "Precision Agriculture",
+      "country": "CO",
+      "n_startups": 1,
+      "evidence_pct": 1.0,
+      "capital_pct": 1.0,
+      "dominant_source": "web_research_2026",
+      "dominant_source_share": 1.0,
+      "country_tier": "under_explored",
+      "coverage_label": "no_explorado"
+    },
+    {
+      "theme": "Precision Agriculture",
+      "country": "CR",
+      "n_startups": 0,
+      "evidence_pct": 0.0,
+      "capital_pct": 0.0,
+      "dominant_source": "",
+      "dominant_source_share": 0.0,
+      "country_tier": "under_explored",
+      "coverage_label": "no_explorado"
+    },
+    {
+      "theme": "Precision Agriculture",
+      "country": "DO",
+      "n_startups": 0,
+      "evidence_pct": 0.0,
+      "capital_pct": 0.0,
+      "dominant_source": "",
+      "dominant_source_share": 0.0,
+      "country_tier": "under_explored",
+      "coverage_label": "no_explorado"
+    },
+    {
+      "theme": "Precision Agriculture",
+      "country": "EC",
+      "n_startups": 0,
+      "evidence_pct": 0.0,
+      "capital_pct": 0.0,
+      "dominant_source": "",
+      "dominant_source_share": 0.0,
+      "country_tier": "under_explored",
+      "coverage_label": "no_explorado"
+    },
+    {
+      "theme": "Precision Agriculture",
+      "country": "GT",
+      "n_startups": 0,
+      "evidence_pct": 0.0,
+      "capital_pct": 0.0,
+      "dominant_source": "",
+      "dominant_source_share": 0.0,
+      "country_tier": "under_explored",
+      "coverage_label": "no_explorado"
+    },
+    {
+      "theme": "Precision Agriculture",
+      "country": "MX",
+      "n_startups": 0,
+      "evidence_pct": 0.0,
+      "capital_pct": 0.0,
+      "dominant_source": "",
+      "dominant_source_share": 0.0,
+      "country_tier": "partial",
+      "coverage_label": "vacio_observado"
+    },
+    {
+      "theme": "Precision Agriculture",
+      "country": "NL",
+      "n_startups": 0,
+      "evidence_pct": 0.0,
+      "capital_pct": 0.0,
+      "dominant_source": "",
+      "dominant_source_share": 0.0,
+      "country_tier": "fuera_de_foco",
+      "coverage_label": "fuera_de_foco"
+    },
+    {
+      "theme": "Precision Agriculture",
+      "country": "PA",
+      "n_startups": 0,
+      "evidence_pct": 0.0,
+      "capital_pct": 0.0,
+      "dominant_source": "",
+      "dominant_source_share": 0.0,
+      "country_tier": "under_explored",
+      "coverage_label": "no_explorado"
+    },
+    {
+      "theme": "Precision Agriculture",
+      "country": "PE",
+      "n_startups": 1,
+      "evidence_pct": 1.0,
+      "capital_pct": 1.0,
+      "dominant_source": "web_research_2026",
+      "dominant_source_share": 1.0,
+      "country_tier": "under_explored",
+      "coverage_label": "no_explorado"
+    },
+    {
+      "theme": "Precision Agriculture",
+      "country": "PR",
+      "n_startups": 0,
+      "evidence_pct": 0.0,
+      "capital_pct": 0.0,
+      "dominant_source": "",
+      "dominant_source_share": 0.0,
+      "country_tier": "fuera_de_foco",
+      "coverage_label": "fuera_de_foco"
+    },
+    {
+      "theme": "Precision Agriculture",
+      "country": "PY",
+      "n_startups": 0,
+      "evidence_pct": 0.0,
+      "capital_pct": 0.0,
+      "dominant_source": "",
+      "dominant_source_share": 0.0,
+      "country_tier": "under_explored",
+      "coverage_label": "no_explorado"
+    },
+    {
+      "theme": "Precision Agriculture",
+      "country": "US",
+      "n_startups": 0,
+      "evidence_pct": 0.0,
+      "capital_pct": 0.0,
+      "dominant_source": "",
+      "dominant_source_share": 0.0,
+      "country_tier": "fuera_de_foco",
+      "coverage_label": "fuera_de_foco"
+    },
+    {
+      "theme": "Precision Agriculture",
+      "country": "UY",
+      "n_startups": 0,
+      "evidence_pct": 0.0,
+      "capital_pct": 0.0,
+      "dominant_source": "",
+      "dominant_source_share": 0.0,
+      "country_tier": "under_explored",
+      "coverage_label": "no_explorado"
+    },
+    {
+      "theme": "Precision Agriculture",
       "country": "VE",
       "n_startups": 0,
       "evidence_pct": 0.0,

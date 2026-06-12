@@ -67,13 +67,13 @@ def _get_weights(portfolio_size: int) -> tuple[float, float, float]:
 # 8 sealed bio themes — adjacency matrix (pairs not listed default to 0.0)
 _T = {
     "Bioinputs & Crop Resilience":          "bioinputs",
-    "Farm Intelligence":                     "farmintel",
+    "Precision Agriculture":                     "farmintel",
     "Nature & Ecosystem Tech":               "nature",
     "Food Systems & Alt Proteins":           "food",
     "Biomanufacturing & Fermentation Economy": "biomanuf",
-    "Biomaterials & Circular Economy":       "biomater",
+    "Biomaterials & Green Chemistry":       "biomater",
     "Therapeutics":                          "therapeutics",
-    "Diagnostics & Health Access":           "diagnostics",
+    "Diagnostics & Devices":           "diagnostics",
 }
 _THEME_ADJ_RAW: dict[tuple[str, str], float] = {
     # Agriculture cluster
@@ -264,13 +264,13 @@ def _org_theme_overlap(startup_theme: str, focus_text: str) -> float:
     # Direct theme keyword matching — map theme → relevant keywords
     _THEME_KEYWORDS: dict[str, list[str]] = {
         "Bioinputs & Crop Resilience":             ["bioinputs","biocontrol","agro","agtech","crop","biostimulant","biologicos","semilla","agriculture","agri"],
-        "Farm Intelligence":                        ["farm","agro","precision","sensing","datos agro","agriculture","crop monitoring"],
+        "Precision Agriculture":                        ["farm","agro","precision","sensing","datos agro","agriculture","crop monitoring"],
         "Nature & Ecosystem Tech":                  ["climate","nature","ecosystem","regenerat","resource","carbon","water","biodiversidad","ambiental"],
         "Food Systems & Alt Proteins":              ["food","aliment","proteina","ferment","alt protein","novel ingredient","foodtech","cellular"],
         "Biomanufacturing & Fermentation Economy":  ["biomanuf","ferment","bioprocess","enzima","biorefin","metabolic","industrial biotech","synthetic bio"],
-        "Biomaterials & Circular Economy":          ["biomaterial","bioplastic","circular","sustainable material","biobased","polymer","bioquimica"],
+        "Biomaterials & Green Chemistry":          ["biomaterial","bioplastic","circular","sustainable material","biobased","polymer","bioquimica"],
         "Therapeutics":                             ["therapeut","terapia","drug","oncolog","cancer","cell therapy","gene","immunother","regenerat","farmaco"],
-        "Diagnostics & Health Access":              ["diagnost","medtech","health","clinical","molecular","genomi","sequencing","salud","biomark"],
+        "Diagnostics & Devices":              ["diagnost","medtech","health","clinical","molecular","genomi","sequencing","salud","biomark"],
     }
     keywords = _THEME_KEYWORDS.get(startup_theme, [])
     matches = sum(1 for kw in keywords if kw in focus_lower)
@@ -1083,13 +1083,13 @@ HEALTH_OUT_PATH = ROOT / "pilot" / "ecosystem-health-data.js"
 
 _ALL_THEMES = [
     "Bioinputs & Crop Resilience",
-    "Farm Intelligence",
+    "Precision Agriculture",
     "Nature & Ecosystem Tech",
     "Food Systems & Alt Proteins",
     "Biomanufacturing & Fermentation Economy",
-    "Biomaterials & Circular Economy",
+    "Biomaterials & Green Chemistry",
     "Therapeutics",
-    "Diagnostics & Health Access",
+    "Diagnostics & Devices",
 ]
 
 _TOP_COUNTRIES = ["BR", "AR", "MX", "CL", "CO", "PE"]
