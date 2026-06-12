@@ -1,10 +1,10 @@
 window.COVERAGE_DATA = {
-  "generated_at": "2026-06-10T23:22:07+00:00",
+  "generated_at": "2026-06-12T13:11:12+00:00",
   "countries": {
     "AR": {
       "tier": "well_mapped",
-      "n_includes": 177,
-      "evidence_pct": 0.842,
+      "n_includes": 178,
+      "evidence_pct": 0.837,
       "n_patches": 3,
       "n_local_investors": 15
     },
@@ -23,16 +23,16 @@ window.COVERAGE_DATA = {
       "n_local_investors": 33
     },
     "CL": {
-      "tier": "partial",
-      "n_includes": 70,
-      "evidence_pct": 0.314,
+      "tier": "well_mapped",
+      "n_includes": 80,
+      "evidence_pct": 0.4,
       "n_patches": 3,
       "n_local_investors": 9
     },
     "CO": {
       "tier": "under_explored",
-      "n_includes": 13,
-      "evidence_pct": 0.692,
+      "n_includes": 14,
+      "evidence_pct": 0.929,
       "n_patches": 3,
       "n_local_investors": 1
     },
@@ -202,11 +202,11 @@ window.COVERAGE_DATA = {
     {
       "theme": "Bioinputs & Crop Resilience",
       "country": "AR",
-      "n_startups": 26,
-      "evidence_pct": 0.885,
-      "capital_pct": 0.962,
+      "n_startups": 25,
+      "evidence_pct": 0.88,
+      "capital_pct": 0.96,
       "dominant_source": "gridx",
-      "dominant_source_share": 0.577,
+      "dominant_source_share": 0.56,
       "country_tier": "well_mapped",
       "coverage_label": "bien_mapeado"
     },
@@ -235,23 +235,23 @@ window.COVERAGE_DATA = {
     {
       "theme": "Bioinputs & Crop Resilience",
       "country": "BR",
-      "n_startups": 23,
-      "evidence_pct": 0.522,
-      "capital_pct": 0.609,
+      "n_startups": 21,
+      "evidence_pct": 0.476,
+      "capital_pct": 0.571,
       "dominant_source": "web_research_2026",
-      "dominant_source_share": 0.478,
+      "dominant_source_share": 0.476,
       "country_tier": "well_mapped",
       "coverage_label": "parcial"
     },
     {
       "theme": "Bioinputs & Crop Resilience",
       "country": "CL",
-      "n_startups": 7,
-      "evidence_pct": 0.429,
-      "capital_pct": 0.857,
+      "n_startups": 8,
+      "evidence_pct": 0.5,
+      "capital_pct": 0.625,
       "dominant_source": "web_research_2026",
-      "dominant_source_share": 0.571,
-      "country_tier": "partial",
+      "dominant_source_share": 0.5,
+      "country_tier": "well_mapped",
       "coverage_label": "parcial"
     },
     {
@@ -411,9 +411,9 @@ window.COVERAGE_DATA = {
     {
       "theme": "Biomanufacturing & Platform Technologies",
       "country": "AR",
-      "n_startups": 10,
-      "evidence_pct": 0.9,
-      "capital_pct": 0.9,
+      "n_startups": 12,
+      "evidence_pct": 0.917,
+      "capital_pct": 0.917,
       "dominant_source": "gridx",
       "dominant_source_share": 0.5,
       "country_tier": "well_mapped",
@@ -444,24 +444,24 @@ window.COVERAGE_DATA = {
     {
       "theme": "Biomanufacturing & Platform Technologies",
       "country": "BR",
-      "n_startups": 9,
-      "evidence_pct": 0.556,
-      "capital_pct": 0.556,
+      "n_startups": 10,
+      "evidence_pct": 0.5,
+      "capital_pct": 0.5,
       "dominant_source": "gridx",
-      "dominant_source_share": 0.556,
+      "dominant_source_share": 0.5,
       "country_tier": "well_mapped",
       "coverage_label": "parcial"
     },
     {
       "theme": "Biomanufacturing & Platform Technologies",
       "country": "CL",
-      "n_startups": 1,
+      "n_startups": 2,
       "evidence_pct": 1.0,
-      "capital_pct": 1.0,
+      "capital_pct": 0.5,
       "dominant_source": "gridx",
-      "dominant_source_share": 1.0,
-      "country_tier": "partial",
-      "coverage_label": "parcial"
+      "dominant_source_share": 0.5,
+      "country_tier": "well_mapped",
+      "coverage_label": "bien_mapeado"
     },
     {
       "theme": "Biomanufacturing & Platform Technologies",
@@ -521,7 +521,7 @@ window.COVERAGE_DATA = {
     {
       "theme": "Biomanufacturing & Platform Technologies",
       "country": "MX",
-      "n_startups": 1,
+      "n_startups": 2,
       "evidence_pct": 0.0,
       "capital_pct": 0.0,
       "dominant_source": "gridx",
@@ -587,11 +587,11 @@ window.COVERAGE_DATA = {
     {
       "theme": "Biomanufacturing & Platform Technologies",
       "country": "US",
-      "n_startups": 0,
-      "evidence_pct": 0.0,
-      "capital_pct": 0.0,
-      "dominant_source": "",
-      "dominant_source_share": 0.0,
+      "n_startups": 1,
+      "evidence_pct": 1.0,
+      "capital_pct": 1.0,
+      "dominant_source": "(sin provenance)",
+      "dominant_source_share": 1.0,
       "country_tier": "fuera_de_foco",
       "coverage_label": "fuera_de_foco"
     },
@@ -653,11 +653,11 @@ window.COVERAGE_DATA = {
     {
       "theme": "Biomaterials & Circular Economy",
       "country": "BR",
-      "n_startups": 7,
-      "evidence_pct": 0.143,
-      "capital_pct": 0.429,
+      "n_startups": 6,
+      "evidence_pct": 0.0,
+      "capital_pct": 0.333,
       "dominant_source": "gridx",
-      "dominant_source_share": 0.714,
+      "dominant_source_share": 0.833,
       "country_tier": "well_mapped",
       "coverage_label": "parcial"
     },
@@ -669,7 +669,7 @@ window.COVERAGE_DATA = {
       "capital_pct": 0.667,
       "dominant_source": "gridx",
       "dominant_source_share": 0.417,
-      "country_tier": "partial",
+      "country_tier": "well_mapped",
       "coverage_label": "parcial"
     },
     {
@@ -730,11 +730,11 @@ window.COVERAGE_DATA = {
     {
       "theme": "Biomaterials & Circular Economy",
       "country": "MX",
-      "n_startups": 7,
-      "evidence_pct": 0.286,
-      "capital_pct": 0.571,
+      "n_startups": 8,
+      "evidence_pct": 0.25,
+      "capital_pct": 0.625,
       "dominant_source": "web_research_2026",
-      "dominant_source_share": 0.571,
+      "dominant_source_share": 0.5,
       "country_tier": "partial",
       "coverage_label": "parcial"
     },
@@ -878,7 +878,7 @@ window.COVERAGE_DATA = {
       "capital_pct": 0.5,
       "dominant_source": "gridx",
       "dominant_source_share": 0.571,
-      "country_tier": "partial",
+      "country_tier": "well_mapped",
       "coverage_label": "parcial"
     },
     {
@@ -1005,11 +1005,11 @@ window.COVERAGE_DATA = {
     {
       "theme": "Diagnostics & Health Access",
       "country": "US",
-      "n_startups": 1,
-      "evidence_pct": 1.0,
-      "capital_pct": 1.0,
-      "dominant_source": "(sin provenance)",
-      "dominant_source_share": 1.0,
+      "n_startups": 0,
+      "evidence_pct": 0.0,
+      "capital_pct": 0.0,
+      "dominant_source": "",
+      "dominant_source_share": 0.0,
       "country_tier": "fuera_de_foco",
       "coverage_label": "fuera_de_foco"
     },
@@ -1071,24 +1071,24 @@ window.COVERAGE_DATA = {
     {
       "theme": "Farm Intelligence",
       "country": "BR",
-      "n_startups": 38,
-      "evidence_pct": 0.763,
-      "capital_pct": 0.842,
+      "n_startups": 35,
+      "evidence_pct": 0.771,
+      "capital_pct": 0.886,
       "dominant_source": "web_research_2026",
-      "dominant_source_share": 0.526,
+      "dominant_source_share": 0.514,
       "country_tier": "well_mapped",
       "coverage_label": "bien_mapeado"
     },
     {
       "theme": "Farm Intelligence",
       "country": "CL",
-      "n_startups": 4,
-      "evidence_pct": 0.5,
-      "capital_pct": 1.0,
+      "n_startups": 6,
+      "evidence_pct": 0.667,
+      "capital_pct": 0.667,
       "dominant_source": "(sin provenance)",
-      "dominant_source_share": 0.5,
-      "country_tier": "partial",
-      "coverage_label": "parcial"
+      "dominant_source_share": 0.667,
+      "country_tier": "well_mapped",
+      "coverage_label": "bien_mapeado"
     },
     {
       "theme": "Farm Intelligence",
@@ -1247,11 +1247,11 @@ window.COVERAGE_DATA = {
     {
       "theme": "Food Systems & Alt Proteins",
       "country": "AR",
-      "n_startups": 19,
-      "evidence_pct": 0.842,
-      "capital_pct": 0.947,
+      "n_startups": 18,
+      "evidence_pct": 0.833,
+      "capital_pct": 0.944,
       "dominant_source": "gridx",
-      "dominant_source_share": 0.579,
+      "dominant_source_share": 0.611,
       "country_tier": "well_mapped",
       "coverage_label": "bien_mapeado"
     },
@@ -1280,33 +1280,33 @@ window.COVERAGE_DATA = {
     {
       "theme": "Food Systems & Alt Proteins",
       "country": "BR",
-      "n_startups": 8,
-      "evidence_pct": 0.375,
-      "capital_pct": 0.5,
+      "n_startups": 11,
+      "evidence_pct": 0.545,
+      "capital_pct": 0.545,
       "dominant_source": "gridx",
-      "dominant_source_share": 0.75,
+      "dominant_source_share": 0.545,
       "country_tier": "well_mapped",
       "coverage_label": "parcial"
     },
     {
       "theme": "Food Systems & Alt Proteins",
       "country": "CL",
-      "n_startups": 19,
-      "evidence_pct": 0.211,
-      "capital_pct": 0.526,
+      "n_startups": 24,
+      "evidence_pct": 0.375,
+      "capital_pct": 0.458,
       "dominant_source": "gridx",
-      "dominant_source_share": 0.684,
-      "country_tier": "partial",
+      "dominant_source_share": 0.542,
+      "country_tier": "well_mapped",
       "coverage_label": "parcial"
     },
     {
       "theme": "Food Systems & Alt Proteins",
       "country": "CO",
-      "n_startups": 3,
-      "evidence_pct": 0.0,
+      "n_startups": 4,
+      "evidence_pct": 1.0,
       "capital_pct": 0.0,
       "dominant_source": "gridx",
-      "dominant_source_share": 1.0,
+      "dominant_source_share": 0.75,
       "country_tier": "under_explored",
       "coverage_label": "no_explorado"
     },
@@ -1357,11 +1357,11 @@ window.COVERAGE_DATA = {
     {
       "theme": "Food Systems & Alt Proteins",
       "country": "MX",
-      "n_startups": 11,
-      "evidence_pct": 0.364,
-      "capital_pct": 0.545,
+      "n_startups": 10,
+      "evidence_pct": 0.4,
+      "capital_pct": 0.6,
       "dominant_source": "gridx",
-      "dominant_source_share": 0.636,
+      "dominant_source_share": 0.6,
       "country_tier": "partial",
       "coverage_label": "parcial"
     },
@@ -1505,8 +1505,8 @@ window.COVERAGE_DATA = {
       "capital_pct": 0.8,
       "dominant_source": "(sin provenance)",
       "dominant_source_share": 0.6,
-      "country_tier": "partial",
-      "coverage_label": "parcial"
+      "country_tier": "well_mapped",
+      "coverage_label": "bien_mapeado"
     },
     {
       "theme": "Nature & Ecosystem Tech",
@@ -1566,11 +1566,11 @@ window.COVERAGE_DATA = {
     {
       "theme": "Nature & Ecosystem Tech",
       "country": "MX",
-      "n_startups": 3,
-      "evidence_pct": 0.333,
+      "n_startups": 2,
+      "evidence_pct": 0.5,
       "capital_pct": 1.0,
       "dominant_source": "web_research_2026",
-      "dominant_source_share": 0.333,
+      "dominant_source_share": 0.5,
       "country_tier": "partial",
       "coverage_label": "parcial"
     },
@@ -1698,23 +1698,23 @@ window.COVERAGE_DATA = {
     {
       "theme": "Therapeutics",
       "country": "BR",
-      "n_startups": 27,
-      "evidence_pct": 0.148,
-      "capital_pct": 0.37,
+      "n_startups": 29,
+      "evidence_pct": 0.207,
+      "capital_pct": 0.414,
       "dominant_source": "gridx",
-      "dominant_source_share": 0.667,
+      "dominant_source_share": 0.621,
       "country_tier": "well_mapped",
       "coverage_label": "parcial"
     },
     {
       "theme": "Therapeutics",
       "country": "CL",
-      "n_startups": 8,
-      "evidence_pct": 0.25,
-      "capital_pct": 0.75,
+      "n_startups": 9,
+      "evidence_pct": 0.333,
+      "capital_pct": 0.778,
       "dominant_source": "gridx",
-      "dominant_source_share": 0.5,
-      "country_tier": "partial",
+      "dominant_source_share": 0.556,
+      "country_tier": "well_mapped",
       "coverage_label": "parcial"
     },
     {
@@ -1873,12 +1873,12 @@ window.COVERAGE_DATA = {
     }
   ],
   "label_counts": {
-    "bien_mapeado": 9,
+    "bien_mapeado": 12,
     "fuera_de_foco": 32,
     "no_explorado": 88,
-    "parcial": 23
+    "parcial": 20
   },
-  "debias_queue_size": 88,
+  "debias_queue_size": 87,
   "legend": {
     "bien_mapeado": "Volumen + evidencia externa + fuentes diversas: la celda es confiable.",
     "parcial": "Hay datos, pero con evidencia floja o dependientes de un solo parche.",
