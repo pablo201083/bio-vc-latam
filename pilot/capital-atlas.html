@@ -992,7 +992,7 @@ document.addEventListener('DOMContentLoaded', function(){
   var SHORT = {
     "Therapeutics":"Therapeutics","Diagnostics & Devices":"Diagnostics",
     "Food Systems & Alt Proteins":"Food Systems","Bioinputs & Crop Resilience":"Bioinputs",
-    "Nature & Ecosystem Tech":"Nature Tech","Precision Agriculture":"Farm Intel",
+    "Nature & Ecosystem Tech":"Nature Tech","Precision Agriculture":"Precision Ag",
     "Biomaterials & Green Chemistry":"Biomaterials","Biomanufacturing & Platform Technologies":"Biomanuf"
   };
   var ACCENT = getComputedStyle(document.documentElement).getPropertyValue('--accent').trim() || '#0B8F87';
@@ -1180,13 +1180,14 @@ document.addEventListener('DOMContentLoaded', function(){
     "Food Systems & Alt Proteins":               "Food Systems",
     "Bioinputs & Crop Resilience":               "Bioinputs",
     "Nature & Ecosystem Tech":                   "Nature Tech",
-    "Precision Agriculture":                         "Farm Intel",
+    "Precision Agriculture":                         "Precision Ag",
     "Biomaterials & Green Chemistry":           "Biomaterials",
     "Biomanufacturing & Platform Technologies":  "Biomanufacturing",
     // legacy alias
     "Biomanufacturing & Fermentation Economy":   "Biomanufacturing",
   };
-  const THEME_ORDER = Object.keys(THEME_PAL);
+  // 8 temas canónicos del corpus — excluye el alias legacy (evita columna fantasma)
+  const THEME_ORDER = Object.keys(THEME_PAL).filter(t => t !== 'Biomanufacturing & Fermentation Economy');
   const FLAG_MAP = {
     "Brazil":"🇧🇷","Brasil":"🇧🇷","BR":"🇧🇷",
     "Mexico":"🇲🇽","México":"🇲🇽","MX":"🇲🇽",
@@ -1740,17 +1741,19 @@ document.addEventListener('DOMContentLoaded', function(){
     const W      = (stage ? stage.clientWidth  : 900) - PAD * 2;
     const H      = (stage ? stage.clientHeight : 600) - PAD * 2;
     const HEADER = 40;   // header row height
+    const FOOTER = 46;   // marginal "theme depth" band (Σ deals + # investors)
     const labelW = 148;  // investor name column
     const nTheme = THEME_ORDER.length;
     const colW   = Math.floor((W - labelW) / nTheme);
     // How many investors we can fit cleanly
-    const maxRows  = Math.max(1, Math.floor((H - HEADER) / 22));
+    const maxRows  = Math.max(1, Math.floor((H - HEADER - FOOTER) / 22));
     const minRowH  = 19, maxRowH = 32;
     const topInv   = investors.slice(0, Math.min(maxRows, investors.length));
     const nRows    = Math.max(1, topInv.length);
-    const rowH     = Math.max(minRowH, Math.min(maxRowH, Math.floor((H - HEADER) / nRows)));
+    const rowH     = Math.max(minRowH, Math.min(maxRowH, Math.floor((H - HEADER - FOOTER) / nRows)));
     const gridW    = labelW + nTheme * colW;
-    const gridH    = HEADER + topInv.length * rowH;
+    const bodyH    = HEADER + topInv.length * rowH;
+    const gridH    = bodyH + FOOTER;
     const totalW   = gridW + PAD * 2;
     const totalH   = gridH + PAD * 2;
 
@@ -1980,6 +1983,79 @@ document.addEventListener('DOMContentLoaded', function(){
       vd.setAttribute('x2', x); vd.setAttribute('y2', gridH);
       vd.setAttribute('stroke', 'rgba(217,206,190,.18)'); vd.setAttribute('stroke-width', '0.5');
       g.insertBefore(vd, g.firstChild);
+    });
+
+    // ── Marginal band: theme capital depth (Σ deals + # fondos, TODOS los fondos) ──
+    const yF = bodyH;
+    const colDeals = {}, colInv = {};
+    THEME_ORDER.forEach(t => {
+      colDeals[t] = investors.reduce((s, iv) => s + (iv.themes[t] || 0), 0);
+      colInv[t]   = investors.reduce((s, iv) => s + (((iv.themes[t] || 0) > 0) ? 1 : 0), 0);
+    });
+    const maxColDeals = Math.max(1, ...THEME_ORDER.map(t => colDeals[t]));
+
+    const fBg = document.createElementNS(NS, 'rect');
+    fBg.setAttribute('x', 0); fBg.setAttribute('y', yF);
+    fBg.setAttribute('width', gridW); fBg.setAttribute('height', FOOTER);
+    fBg.setAttribute('fill', 'rgba(240,234,222,.5)');
+    g.appendChild(fBg);
+    const fLine = document.createElementNS(NS, 'line');
+    fLine.setAttribute('x1', 0); fLine.setAttribute('y1', yF);
+    fLine.setAttribute('x2', gridW); fLine.setAttribute('y2', yF);
+    fLine.setAttribute('stroke', 'rgba(217,206,190,.55)'); fLine.setAttribute('stroke-width', '1');
+    g.appendChild(fLine);
+
+    const fLab = document.createElementNS(NS, 'text');
+    fLab.setAttribute('x', 9); fLab.setAttribute('y', yF + 15);
+    fLab.setAttribute('dominant-baseline', 'middle');
+    fLab.setAttribute('font-size', '8.5'); fLab.setAttribute('font-weight', '800');
+    fLab.setAttribute('font-family', 'inherit'); fLab.setAttribute('fill', 'rgba(90,78,62,.62)');
+    fLab.setAttribute('letter-spacing', '0.05em');
+    fLab.textContent = 'PROFUNDIDAD';
+    g.appendChild(fLab);
+    const fLab2 = document.createElementNS(NS, 'text');
+    fLab2.setAttribute('x', 9); fLab2.setAttribute('y', yF + 29);
+    fLab2.setAttribute('dominant-baseline', 'middle');
+    fLab2.setAttribute('font-size', '7'); fLab2.setAttribute('font-family', 'inherit');
+    fLab2.setAttribute('fill', 'rgba(90,78,62,.45)');
+    fLab2.textContent = 'deals · # fondos';
+    g.appendChild(fLab2);
+
+    THEME_ORDER.forEach((theme, ci) => {
+      const x = labelW + ci * colW;
+      const col = THEME_PAL[theme];
+      const deals = colDeals[theme], inv = colInv[theme];
+      const thin = inv > 0 && inv <= 2;   // tema "delgado": riesgo de concentración / dependencia
+
+      const dt = document.createElementNS(NS, 'text');
+      dt.setAttribute('x', x + colW / 2); dt.setAttribute('y', yF + 14);
+      dt.setAttribute('text-anchor', 'middle'); dt.setAttribute('dominant-baseline', 'middle');
+      dt.setAttribute('font-size', '12.5'); dt.setAttribute('font-weight', '800');
+      dt.setAttribute('font-family', 'inherit'); dt.setAttribute('fill', deals ? col : 'rgba(150,140,128,.5)');
+      dt.textContent = deals;
+      g.appendChild(dt);
+
+      const it = document.createElementNS(NS, 'text');
+      it.setAttribute('x', x + colW / 2); it.setAttribute('y', yF + 28);
+      it.setAttribute('text-anchor', 'middle'); it.setAttribute('dominant-baseline', 'middle');
+      it.setAttribute('font-size', '7.5'); it.setAttribute('font-weight', thin ? '800' : '600');
+      it.setAttribute('font-family', 'inherit');
+      it.setAttribute('fill', thin ? '#c2410c' : 'rgba(90,78,62,.6)');
+      it.textContent = (thin ? '⚠ ' : '') + inv + (inv === 1 ? ' fondo' : ' fondos');
+      g.appendChild(it);
+
+      const barMaxW = Math.max(8, colW - 12);
+      const trk = document.createElementNS(NS, 'rect');
+      trk.setAttribute('x', x + (colW - barMaxW) / 2); trk.setAttribute('y', yF + FOOTER - 9);
+      trk.setAttribute('width', barMaxW); trk.setAttribute('height', 4); trk.setAttribute('rx', '2');
+      trk.setAttribute('fill', col); trk.setAttribute('opacity', '0.12');
+      g.appendChild(trk);
+      const bar = document.createElementNS(NS, 'rect');
+      bar.setAttribute('x', x + (colW - barMaxW) / 2); bar.setAttribute('y', yF + FOOTER - 9);
+      bar.setAttribute('width', Math.max(2, (deals / maxColDeals) * barMaxW));
+      bar.setAttribute('height', 4); bar.setAttribute('rx', '2');
+      bar.setAttribute('fill', col); bar.setAttribute('opacity', '0.6');
+      g.appendChild(bar);
     });
 
     svg.appendChild(g);
