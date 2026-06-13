@@ -1,0 +1,128 @@
+BIOTECH/AGTECH STARTUP RESEARCH - COSTA RICA, PANAMA, GUATEMALA
+================================================================
+
+RESEARCH COMPLETION SUMMARY
+---------------------------
+
+Total entries collected: 48
+- Costa Rica (CR): 22 startups + 5 accelerators/support orgs
+- Panama (PA): 7 startups + 1 innovation hub
+- Guatemala (GT): 14 startups + 3 accelerators/support orgs
+- Colombia (CO): 1 startup (included for VerdeXcelerate context)
+- Regional initiatives: 4 (VerdeXcelerate, Potencia tu Agroempresa, Endeavor, IICA)
+
+SECTOR BREAKDOWN
+----------------
+Agtech/AgriTech:        10 startups
+Food/Food Tech:         6 startups
+Climate Energy/Solar:   3 startups
+Software/Fintech:       4 startups
+Biotech/Food Biotech:   4 startups
+Medtech/Therapeutics:   2 startups
+Materials:              1 startup
+Gaming:                 1 startup
+Social Enterprise:      1 startup
+Other:                  1 startup
+
+FUNDING STATUS
+--------------
+Most startups show unknown founding year (knowledge gap in public data).
+Notable funded companies:
+- Kingo (GT): $50K+ served, 13-year track record, multiple funding rounds
+- Genba (GT): Operating since 2016, Won Win.gt award
+- Digital Twin Corporation (CR): Founded 2019, 5 employees
+- Lilliput Technologies (CR): Founded 2024, backed by Deep Science Ventures
+
+RESEARCH SOURCES
+----------------
+Primary sources used:
+1. Tracxn database (Costa Rica AgriTech startups)
+2. Crunchbase (company profiles and funding)
+3. Wellfound (Panama startups)
+4. TechnoServe (VerdeXcelerate initiative, Potencia tu Agroempresa)
+5. CINDE (Costa Rica investment promotion agency)
+6. University accelerators (UCR, TEC)
+7. Regional initiatives documentation
+8. News articles and founder interviews
+9. Government agencies (SENACYT Panama, CINDE Costa Rica)
+
+KEY FINDINGS
+------------
+
+COSTA RICA:
+- Strongest ecosystem with 22+ startups identified
+- Strong biotech sector (therapeutics, biocontrol)
+- Agtech focus on: precision agriculture, waste management, alternative proteins
+- Key accelerators: AUGE-UCR, TEC Emprende Lab
+- Major support: CINDE, CR BioMed cluster
+- Recent venture: Lilliput Technologies (Deep Science Ventures spinout, 2024)
+- Coverage: 19 AgriTech startups recorded (Tracxn)
+
+PANAMA:
+- Smaller startup ecosystem: 7 startups identified
+- Tech/software focus more than biotech
+- Innovation hub: Ciudad del Saber (120 hectare campus, 250+ orgs)
+- Government support: SENACYT (National Science/Tech agency)
+- Funding: $4M+ annually through Ciudad del Saber
+- Note: Less biotech/agtech data available; ecosystem more fintech/software focused
+
+GUATEMALA:
+- Growing ecosystem: 14 startups identified
+- Food/AgTech focus: 27 FoodTech startups (Tracxn)
+- Notable successes: Kingo (solar, 2013), Genba (bakery platform, 2016), Wakami (artisans)
+- Accelerator support: Potencia tu Agroempresa, VerdeXcelerate
+- University presence: Campus TEC Guatemala
+- Women-focused: Wakami (50+ women artisans), targets 40%+ women-led
+
+REGIONAL INITIATIVES:
+- VerdeXcelerate (2025-2026): 100+ startups, 3,000+ farmers, $4M+ investment
+- Potencia tu Agroempresa: 39 accelerated, $71M sales growth, 50% women-led
+- Countries covered: CR, PA, GT + Colombia, El Salvador, Honduras
+
+DATA QUALITY NOTES
+------------------
+Knowledge gaps identified:
+1. Most startups lack founding year data in public databases
+2. Panama biotech/agtech startups significantly underrepresented
+3. Many micro-startups and pre-seed ventures not indexed in major databases
+4. Founder information incomplete for ~60% of companies
+5. Website URLs missing for ~40% of startups
+
+RECOMMENDATIONS FOR NEXT PHASE
+-------------------------------
+1. Direct outreach to CINDE, SENACYT, AUGE-UCR for portfolio company lists
+2. University deep dives: UCR, TEC, Universidad Rafael Landívar (Guatemala)
+3. Cross-reference with:
+   - AngelList/Wellfound profiles
+   - Local business registries
+   - VC/accelerator program alumni
+   - Startup communities (Startup Grind, Founder Institute)
+4. Conduct interviews with:
+   - CINDE bioeconomy desk
+   - VerdeXcelerate program managers
+   - Universidad spinout offices
+5. Identify "unknown unknowns":
+   - Pre-accelerator stage companies
+   - Founders in stealth mode
+   - Family offices and informal VC funding
+
+INTEGRATION POINTS
+------------------
+File location: staging/biotech_agtech_ca_startups_2026.csv
+Format: CSV with 11 fields:
+- startup_name, country, sector, description, website, founding_year, source
+
+Ready for integration with BIO LATAM startup_master_dataset.csv
+Existing CR entries (3): Apasomics, Polis Bioenergy, (Luzid out of scope)
+New CR entries for consideration: 16 biotech/agtech focused
+
+Suggested scope decisions:
+- Tier 1 (High-confidence BIO): Magenta Biolabs, BioTech, Digital Twin, Costa Rica Insect Company, Lilliput
+- Tier 2 (Strong signals): Green Xpo Lab, CRIC, Nanomedical, ClearLeaf
+- Tier 3 (Pending review): Magic Green, GeaNext
+- Tier 4 (Out-of-scope): Genba, Descuentazo, Wakami (food/social, not bio-intensive)
+- Regional tier: VerdeXcelerate, Potencia tu Agroempresa (accelerators)
+
+================================================================
+Research completed: 2026-06-13
+Researcher: Claude Code Agent

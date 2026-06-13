@@ -5,7 +5,7 @@ Bioinputs & Crop Resilience,BO,0,0.0,0.0,,0.0,under_explored,no_explorado
 Bioinputs & Crop Resilience,BR,21,0.476,0.571,web_research_2026,0.476,well_mapped,parcial
 Bioinputs & Crop Resilience,CL,8,0.5,0.625,web_research_2026,0.5,well_mapped,parcial
 Bioinputs & Crop Resilience,CO,0,0.0,0.0,,0.0,partial,vacio_observado
-Bioinputs & Crop Resilience,CR,1,0.0,1.0,web_research_2026,1.0,under_explored,no_explorado
+Bioinputs & Crop Resilience,CR,1,0.0,1.0,web_research_2026,1.0,partial,parcial
 Bioinputs & Crop Resilience,DO,0,0.0,0.0,,0.0,under_explored,no_explorado
 Bioinputs & Crop Resilience,EC,0,0.0,0.0,,0.0,under_explored,no_explorado
 Bioinputs & Crop Resilience,GT,0,0.0,0.0,,0.0,under_explored,no_explorado
@@ -24,7 +24,7 @@ Biomanufacturing & Platform Technologies,BO,0,0.0,0.0,,0.0,under_explored,no_exp
 Biomanufacturing & Platform Technologies,BR,10,0.5,0.5,gridx,0.5,well_mapped,parcial
 Biomanufacturing & Platform Technologies,CL,2,1.0,0.5,gridx,0.5,well_mapped,bien_mapeado
 Biomanufacturing & Platform Technologies,CO,0,0.0,0.0,,0.0,partial,vacio_observado
-Biomanufacturing & Platform Technologies,CR,0,0.0,0.0,,0.0,under_explored,no_explorado
+Biomanufacturing & Platform Technologies,CR,0,0.0,0.0,,0.0,partial,vacio_observado
 Biomanufacturing & Platform Technologies,DO,0,0.0,0.0,,0.0,under_explored,no_explorado
 Biomanufacturing & Platform Technologies,EC,0,0.0,0.0,,0.0,under_explored,no_explorado
 Biomanufacturing & Platform Technologies,GT,0,0.0,0.0,,0.0,under_explored,no_explorado
@@ -43,7 +43,7 @@ Biomaterials & Green Chemistry,BO,0,0.0,0.0,,0.0,under_explored,no_explorado
 Biomaterials & Green Chemistry,BR,6,0.0,0.333,gridx,0.833,well_mapped,parcial
 Biomaterials & Green Chemistry,CL,12,0.25,0.667,gridx,0.417,well_mapped,parcial
 Biomaterials & Green Chemistry,CO,1,1.0,1.0,(sin provenance),1.0,partial,parcial
-Biomaterials & Green Chemistry,CR,1,0.0,0.0,gridx,1.0,under_explored,no_explorado
+Biomaterials & Green Chemistry,CR,1,0.0,0.0,gridx,1.0,partial,parcial
 Biomaterials & Green Chemistry,DO,0,0.0,0.0,,0.0,under_explored,no_explorado
 Biomaterials & Green Chemistry,EC,0,0.0,0.0,,0.0,under_explored,no_explorado
 Biomaterials & Green Chemistry,GT,1,0.0,0.0,gridx,1.0,under_explored,no_explorado
@@ -62,7 +62,7 @@ Diagnostics & Devices,BO,0,0.0,0.0,,0.0,under_explored,no_explorado
 Diagnostics & Devices,BR,31,0.194,0.581,gridx,0.548,well_mapped,parcial
 Diagnostics & Devices,CL,14,0.286,0.5,gridx,0.571,well_mapped,parcial
 Diagnostics & Devices,CO,2,0.5,1.0,summary_extraction,0.5,partial,parcial
-Diagnostics & Devices,CR,0,0.0,0.0,,0.0,under_explored,no_explorado
+Diagnostics & Devices,CR,0,0.0,0.0,,0.0,partial,vacio_observado
 Diagnostics & Devices,DO,0,0.0,0.0,,0.0,under_explored,no_explorado
 Diagnostics & Devices,EC,0,0.0,0.0,,0.0,under_explored,no_explorado
 Diagnostics & Devices,GT,1,0.0,0.0,gridx,1.0,under_explored,no_explorado
@@ -81,7 +81,7 @@ Food Systems & Alt Proteins,BO,0,0.0,0.0,,0.0,under_explored,no_explorado
 Food Systems & Alt Proteins,BR,12,0.583,0.583,gridx,0.5,well_mapped,parcial
 Food Systems & Alt Proteins,CL,25,0.4,0.48,gridx,0.52,well_mapped,parcial
 Food Systems & Alt Proteins,CO,4,1.0,0.0,gridx,0.75,partial,parcial
-Food Systems & Alt Proteins,CR,2,0.0,0.0,gridx,1.0,under_explored,no_explorado
+Food Systems & Alt Proteins,CR,2,0.0,0.0,gridx,1.0,partial,parcial
 Food Systems & Alt Proteins,DO,0,0.0,0.0,,0.0,under_explored,no_explorado
 Food Systems & Alt Proteins,EC,0,0.0,0.0,,0.0,under_explored,no_explorado
 Food Systems & Alt Proteins,GT,0,0.0,0.0,,0.0,under_explored,no_explorado
@@ -100,7 +100,7 @@ Nature & Ecosystem Tech,BO,0,0.0,0.0,,0.0,under_explored,no_explorado
 Nature & Ecosystem Tech,BR,10,0.8,0.9,(sin provenance),0.6,well_mapped,bien_mapeado
 Nature & Ecosystem Tech,CL,5,0.6,0.8,(sin provenance),0.6,well_mapped,bien_mapeado
 Nature & Ecosystem Tech,CO,0,0.0,0.0,,0.0,partial,vacio_observado
-Nature & Ecosystem Tech,CR,1,1.0,1.0,(sin provenance),1.0,under_explored,no_explorado
+Nature & Ecosystem Tech,CR,1,1.0,1.0,(sin provenance),1.0,partial,parcial
 Nature & Ecosystem Tech,DO,0,0.0,0.0,,0.0,under_explored,no_explorado
 Nature & Ecosystem Tech,EC,0,0.0,0.0,,0.0,under_explored,no_explorado
 Nature & Ecosystem Tech,GT,0,0.0,0.0,,0.0,under_explored,no_explorado
@@ -119,7 +119,7 @@ Precision Agriculture,BO,0,0.0,0.0,,0.0,under_explored,no_explorado
 Precision Agriculture,BR,23,0.652,0.826,web_research_2026,0.522,well_mapped,bien_mapeado
 Precision Agriculture,CL,5,0.6,0.6,(sin provenance),0.8,well_mapped,bien_mapeado
 Precision Agriculture,CO,1,1.0,1.0,web_research_2026,1.0,partial,parcial
-Precision Agriculture,CR,0,0.0,0.0,,0.0,under_explored,no_explorado
+Precision Agriculture,CR,0,0.0,0.0,,0.0,partial,vacio_observado
 Precision Agriculture,DO,0,0.0,0.0,,0.0,under_explored,no_explorado
 Precision Agriculture,EC,0,0.0,0.0,,0.0,under_explored,no_explorado
 Precision Agriculture,GT,0,0.0,0.0,,0.0,under_explored,no_explorado
@@ -138,7 +138,7 @@ Therapeutics,BO,0,0.0,0.0,,0.0,under_explored,no_explorado
 Therapeutics,BR,29,0.207,0.414,gridx,0.621,well_mapped,parcial
 Therapeutics,CL,9,0.333,0.778,gridx,0.556,well_mapped,parcial
 Therapeutics,CO,3,1.0,1.0,web_research_2026,0.333,partial,parcial
-Therapeutics,CR,2,0.5,0.5,web_research_2026,0.5,under_explored,no_explorado
+Therapeutics,CR,2,0.5,0.5,web_research_2026,0.5,partial,parcial
 Therapeutics,DO,0,0.0,0.0,,0.0,under_explored,no_explorado
 Therapeutics,EC,0,0.0,0.0,,0.0,under_explored,no_explorado
 Therapeutics,GT,0,0.0,0.0,,0.0,under_explored,no_explorado

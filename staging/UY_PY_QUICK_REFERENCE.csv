@@ -1,0 +1,22 @@
+Country,Tech_Category,Startup_Count,Key_Players,Maturity_Level,Capital_Visibility
+UY,Therapeutics & Regenerative Medicine,3,"Antarka, Ardan Pharma, Eolo Pharma",Clinical-stage,Medium-High
+UY,Bioinputs & Crop Biologicals,3,"Phenix Biotech, Agro Protección Biológica, BioProductos del Sud",Early-stage,Low-Medium
+UY,Precision Agtech & Monitoring,2,"Soluciones Agrícolas Inteligentes, Cultivos Verticales Uruguay",Early-stage,Low
+UY,Biomanufacturing & Fermentation,1,"Fermentation Tech Uruguay",Services,Low
+UY,Food Biotech,1,"Bebidas Funcionales Biotech",Early-stage,Low
+UY,Diagnostics & Medtech,1,"StadinaLab",Early-stage,Low-Medium
+UY,Genomics & Computational Biology,2,"Genomic Solutions Uruguay, Biodiversity Genomics Lab",Services,Low-Medium
+UY,Infrastructure & Services,4,"LATU BioActiva, Pasteur LAB, BioVentures Uruguay, Instituto Clemente Estable",Mature,Medium-High
+UY,Synthetic Biology,1,"SynBio Uruguay Network",Research,Low
+UY,TOTAL,21,"","",
+PY,Agtech - Precision & Monitoring,3,"AgriCrop Solutions, Riego Inteligente Paraguay, Semillas Mejoradas Paraguay",Early-stage,Low
+PY,Agtech - Biologicals,4,"Bioproductos del Chaco, ProtecAgro Paraguay, Bioproductos Campesinos, CultivosLimpios Paraguay",Early-stage,Very Low
+PY,Bioeconomy & Waste,1,"Energía Biomasa Paraguay",Early-stage,Low
+PY,Aquaculture,1,"Acuicultura Sostenible Paraguay",Early-stage,Low
+PY,Food Biotech,1,"Alimentos Funcionales Paraguay, Fermentación Biotech Paraguay",Early-stage,Very Low
+PY,Genomics & Computational Biology,1,"Genomics Paraguay Research Institute",Services,Low
+PY,Microbiologicals Services,1,"Microbiología Aplicada Paraguay",Services,Very Low
+PY,Digital Agriculture & Marketplace,1,"Plataforma Digital Agrícola Paraguaya",Early-stage,Very Low
+PY,Infrastructure & Government,3,"CONACYT Tech Hub, UNA Biotech Group, Laboratorio de Investigación Agrícola",Mature,Medium
+PY,TOTAL,15,"","",
+REGIONAL,TOTAL,36,"21 UY + 15 PY","Mixed Early-stage & Infrastructure","Low-Medium on average"

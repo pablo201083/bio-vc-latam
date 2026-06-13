@@ -1,0 +1,49 @@
+startup_name,country,sector,description,website,founding_year,source
+Apasomics,CR,therapeutics,"Nanomedicine biomimictic company developing targeted drug delivery directly to bone. BIO scope: therapeutics and regenerative medicine.",https://apasomics.com,Unknown,BIO LATAM DB
+Polis Bioenergy,CR,climate energy,"Regenerative climate-tech converting wet agricultural waste into thermal energy and biochar. BIO scope: climate, energy and resource systems.",Unknown,Unknown,BIO LATAM DB
+Digital Twin Corporation,CR,agtech,"IoT platform for agricultural waste management using fruit-shaped digital twin devices for predictive analytics. Founders: Jose Ordonez, Daniel Barahona Urbina, Hugo Mora Fallas.",Unknown,2019,Tracxn/Crunchbase
+Costa Rica Insect Company,CR,food biotech,"Produces insect-based food ingredients for human consumption as alternative protein source. Breeding insects in controlled environment for high nutrition and malnutrition resistance.",Unknown,Unknown,Tracxn/Crunchbase
+Magenta Biolabs,CR,biotech,"IndieBio-accelerated startup developing valued molecules for biotech industry using natural substances as raw material.",https://magentabiolabs.com,Unknown,CINDE/Tracxn
+Magic Green,CR,agtech,"AgriTech startup operating in Costa Rica's growing agricultural technology sector.",Unknown,Unknown,Tracxn
+GeaNext,CR,agtech,"AgriTech startup developing solutions for agricultural productivity.",Unknown,Unknown,Tracxn
+Green Xpo Lab,CR,agtech,"Remote monitoring technology for agriculture using drones and satellite imagery for precision farming. Founded 2022.",Unknown,2022,Contxto
+BioTech,CR,biotech,"Sustainable biocontrol solutions developing natural alternatives to chemical pesticides. Co-founders: Lizzy Retana Villalobos, Gilberto Masís Solano.",https://biotechcr.com,Unknown,WIPO/CINDE
+Lilliput Technologies,CR,agtech,"Biopolymer solutions for crop protection addressing climate change in coffee cultivation. Founders: Mauricio Herrera Rodriguez, Sam Nehme, Laura Chaves Martinez. Spin-out from Deep Science Ventures.",https://www.lilliputtech.com,2024,Deep Science Ventures
+ClearLeaf,CR,agtech,"Environmental protection solutions for crops specializing in crop health and sustainability.",Unknown,Unknown,AUGE-UCR
+Sunspectra,CR,materials,"Produces mineral sunblock and protective shirts. Scaled into Mexico. Accelerated by AUGE-UCR.",Unknown,Unknown,AUGE-UCR
+CRIC,CR,food biotech,"Produces and exports edible insect species for food industry. Supported by TEC Emprende.",Unknown,Unknown,TEC Emprende
+Bizquick,CR,digital,"Virtual platform for professional internships leveraging technology.",Unknown,Unknown,TEC Emprende
+Quipu,CR,agtech,"Digital agriculture tool. Won 2021 Hackathon from IICA (Inter-American Institute for Cooperation on Agriculture).",Unknown,2021,TEC Emprende/IICA
+Nanomedical,CR,medtech,"Disinfection and sterilization technology for medical applications.",Unknown,Unknown,AUGE-UCR
+Buildly,PA,software,"Cloud application development platform for enterprise and startup teams using AI.",https://buildly.io,Unknown,Wellfound
+Zazmic,PA,software,"Technology consulting and staffing company helping startups and enterprises grow.",Unknown,Unknown,Wellfound
+Urenkoff SA,PA,fintech,"Blockchain and AI-powered financial solutions for banking institutions. Founded as NextPay Latam Inc. (2010).",Unknown,2010,Wellfound
+Bluelight Consulting,PA,software,"Nearshore software development services connecting companies with remote tech talent.",Unknown,Unknown,Wellfound
+Boom Entertainment,PA,gaming,"Technology platform for sports betting and online gaming with professional leagues and casinos.",Unknown,Unknown,Wellfound
+WSeeds,CO,agtech,"Digital agricultural platform using AI, blockchain, and WhatsApp-based chatbot for farmer data management. From VerdeXcelerate. 2023 sales: $6K; 2025 projected: $240K; 1,718 farmers served; 25% yield increase.",https://wseeds.io,Unknown,VerdeXcelerate
+Genba,GT,food,"Internet-first bakery platform for purchasing pastries, bread, and cakes from partner stores across Guatemala. Founded 2016; Won Win.gt award 2023.",https://genba.online,2016,Tracxn
+Descuentazo,GT,food,"App-based discount platform offering surplus packaged food products including beverages, snacks, and beauty items.",https://descuentazo.gt,Unknown,Tracxn
+Nana,GT,food,"Food and beverage startup serving Guatemala market.",Unknown,Unknown,Tracxn
+FoodBunny,GT,food,"Food delivery and meal platform for Guatemala.",Unknown,Unknown,Tracxn
+Agrocontrol,GT,agtech,"Agricultural control and monitoring technology for farm operations.",Unknown,Unknown,Tracxn
+Kingo,GT,climate energy,"Pay-as-you-go solar energy provider for off-grid rural communities. Founders: Juan Fermín Rodriguez, Matias de Tezanos. 50,000+ households across Central America. Founded 2013.",https://kingo.energy,2013,LAVCA/AFD
+Wakami,GT,social enterprise,"Connects rural women artisans with global market through Guatemalan textile products. Exports to 20+ countries. Founder: María Pacheco.",https://wakami.org,Unknown,Cornell News
+Kingo Energy,GT,climate energy,"Prepaid solar energy solutions for rural Central America. Same as Kingo (appears in multiple sources).",https://kingo.energy,2013,Various
+Pomona Impact,GT,accelerator,"Support organization providing incubation and pre-acceleration programs for Guatemalan startups.",Unknown,Unknown,Startup Ecosystem Reports
+CME,GT,accelerator,"Central American startup support organization providing incubation and acceleration services.",Unknown,Unknown,Startup Ecosystem Reports
+Heurística,GT,accelerator,"Guatemalan startup support organization providing pre-acceleration and business development services.",Unknown,Unknown,Startup Ecosystem Reports
+Alterna,GT,accelerator,"Support organization providing incubation for Guatemalan tech and social entrepreneurship startups.",Unknown,Unknown,Startup Ecosystem Reports
+Multiverse,GT,accelerator,"Startup accelerator in Guatemala supporting technology ventures.",Unknown,Unknown,Startup Ecosystem Reports
+CATIE,GT,research,"International institute for agricultural development and biological conservation. Home to large coffee and cocoa variety collections.",https://www.catie.ac.cr,Unknown,CINDE
+Ciudad del Saber,PA,innovation hub,"120-hectare innovation campus with 250+ organizations including tech companies, startups, universities, and research centers. Invests $4M+ annually in startup support.",https://ciudaddelsaber.org,Unknown,Ciudad del Saber
+VerdeXcelerate,Regional,accelerator,"Joint initiative by TechnoServe, BID Lab, Argidius to accelerate 100+ AgTech startups across Colombia, Costa Rica, El Salvador, Guatemala, Honduras, Panama. Impacts ~3,000 smallholder farmers. 40% target women-led; 60% access to financing.",https://www.iadb.org/en/project/RG-T4705,2025,IDB/TechnoServe
+Potencia tu Agroempresa,Regional,accelerator,"Two-year AgriFoodTech accelerator by Argidius, Barranquilla Chamber, Santo Domingo Foundation. 170 food processing SMEs; 30 AgTech startups in Colombia, Guatemala, Argentina, Chile, Mexico. 39 startups accelerated; $71M sales growth; 50% women-led target.",https://potenciatuagroempresa.org,2024,TechnoServe
+AUGE-UCR,CR,accelerator,"Entrepreneurship incubator at Universidad de Costa Rica providing non-reimbursable funding, coaching, and structured framework for startup growth.",https://auge.ucr.ac.cr,Unknown,UCR
+TEC Emprende Lab,CR,accelerator,"Technology-based venture incubator at Tecnológico de Costa Rica supporting startups and innovation.",https://www.tec.ac.cr,Unknown,TEC
+CINDE,CR,investment agency,"Costa Rica's Investment Promotion Agency advising 300+ high-tech companies; promotes bioeconomy, biomaterials, and advanced biotech sectors.",https://www.cinde.org,Unknown,CINDE
+CR BioMed,CR,cluster,"Costa Rican biotechnology cluster organization for biotechnology, medical devices, and life sciences.",Unknown,Unknown,CINDE
+Endeavor,Regional,accelerator,"Global startup accelerator launching AgTech Accelerator 2026 intensive training program for AgTech consolidation in the Americas (based in Costa Rica).",https://www.endeavor.org,Unknown,IICA
+IICA,Regional,institution,"Inter-American Institute for Cooperation on Agriculture supporting agricultural innovation and rural development across the Americas.",https://iica.int,Unknown,IICA
+SENACYT,PA,research agency,"Panama's National Secretary of Science, Technology and Innovation supporting startup development, innovation awards, and bioeconomy strategy.",https://www.senacyt.gob.pa,Unknown,SENACYT
+GreenTech,CR,accelerator,"CINDE program accompanying 22 knowledge-intensive companies in agriculture, circular economy, and advanced biotechnology. Focuses on bioeconomy and biomaterials for capital raising preparation.",Unknown,Unknown,CINDE
+Lilliput Technologies Ltd.,CR,agtech,"Biopolymer crop protection technology for coffee and other crops. Founded April/May 2024 by Deep Science Ventures. Founder: Mauricio Herrera Rodriguez.",https://www.lilliputtech.com,2024,Deep Science Ventures/IndexBox

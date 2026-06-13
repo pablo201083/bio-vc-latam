@@ -1,14 +1,13 @@
 ﻿priority,kind,target,evidence,action
 alta,country_sweep,UY,"14 includes, 2 parches, 0 inversores locales con edges",Barrido dirigido de portfolios y aceleradoras bio de UY. Puntos de entrada ya en DB: (sin inversores locales en DB)
-alta,country_sweep,CR,"9 includes, 2 parches, 3 inversores locales con edges",Barrido dirigido de portfolios y aceleradoras bio de CR. Puntos de entrada ya en DB: Antom (11 edges); DragonesVP (10 edges); carao_ventures (1 edges); amador (0 edges)
+alta,country_sweep,BO,"9 includes, 0 parches, 0 inversores locales con edges",Barrido dirigido de portfolios y aceleradoras bio de BO. Puntos de entrada ya en DB: (sin inversores locales en DB)
+alta,country_sweep,EC,"7 includes, 0 parches, 0 inversores locales con edges",Barrido dirigido de portfolios y aceleradoras bio de EC. Puntos de entrada ya en DB: (sin inversores locales en DB)
+alta,country_sweep,DO,"4 includes, 0 parches, 0 inversores locales con edges",Barrido dirigido de portfolios y aceleradoras bio de DO. Puntos de entrada ya en DB: (sin inversores locales en DB)
+alta,country_sweep,GT,"3 includes, 1 parches, 0 inversores locales con edges",Barrido dirigido de portfolios y aceleradoras bio de GT. Puntos de entrada ya en DB: (sin inversores locales en DB)
 alta,country_sweep,PE,"3 includes, 2 parches, 1 inversores locales con edges",Barrido dirigido de portfolios y aceleradoras bio de PE. Puntos de entrada ya en DB: salkantay_ventures (1 edges)
-alta,country_sweep,GT,"2 includes, 1 parches, 0 inversores locales con edges",Barrido dirigido de portfolios y aceleradoras bio de GT. Puntos de entrada ya en DB: (sin inversores locales en DB)
+alta,country_sweep,VE,"2 includes, 0 parches, 0 inversores locales con edges",Barrido dirigido de portfolios y aceleradoras bio de VE. Puntos de entrada ya en DB: (sin inversores locales en DB)
 alta,country_sweep,PA,"1 includes, 1 parches, 0 inversores locales con edges",Barrido dirigido de portfolios y aceleradoras bio de PA. Puntos de entrada ya en DB: (sin inversores locales en DB)
-alta,country_sweep,EC,"0 includes, 0 parches, 0 inversores locales con edges",Barrido dirigido de portfolios y aceleradoras bio de EC. Puntos de entrada ya en DB: (sin inversores locales en DB)
 alta,country_sweep,PY,"0 includes, 0 parches, 0 inversores locales con edges",Barrido dirigido de portfolios y aceleradoras bio de PY. Puntos de entrada ya en DB: (sin inversores locales en DB)
-alta,country_sweep,BO,"0 includes, 0 parches, 0 inversores locales con edges",Barrido dirigido de portfolios y aceleradoras bio de BO. Puntos de entrada ya en DB: (sin inversores locales en DB)
-alta,country_sweep,VE,"0 includes, 0 parches, 0 inversores locales con edges",Barrido dirigido de portfolios y aceleradoras bio de VE. Puntos de entrada ya en DB: (sin inversores locales en DB)
-alta,country_sweep,DO,"0 includes, 0 parches, 0 inversores locales con edges",Barrido dirigido de portfolios y aceleradoras bio de DO. Puntos de entrada ya en DB: (sin inversores locales en DB)
 media,portfolio_sweep,axventures_pymar,solo 1 edge(s) en DB; país AR (well_mapped),Revisar portfolio público completo de axventures_pymar y mapear startups bio faltantes
 media,portfolio_sweep,la_turbina,solo 1 edge(s) en DB; país AR (well_mapped),Revisar portfolio público completo de la_turbina y mapear startups bio faltantes
 media,portfolio_sweep,meet_capital,solo 1 edge(s) en DB; país AR (well_mapped),Revisar portfolio público completo de meet_capital y mapear startups bio faltantes
@@ -54,7 +53,7 @@ media,portfolio_sweep,venturance,solo 1 edge(s) en DB; país CL (well_mapped),Re
 media,portfolio_sweep,fondo_alerce,solo 2 edge(s) en DB; país CL (well_mapped),Revisar portfolio público completo de fondo_alerce y mapear startups bio faltantes
 media,portfolio_sweep,chileglobal_ventures,solo 3 edge(s) en DB; país CL (well_mapped),Revisar portfolio público completo de chileglobal_ventures y mapear startups bio faltantes
 media,portfolio_sweep,caf,solo 1 edge(s) en DB; país CO (partial),Revisar portfolio público completo de caf y mapear startups bio faltantes
-media,portfolio_sweep,carao_ventures,solo 1 edge(s) en DB; país CR (under_explored),Revisar portfolio público completo de carao_ventures y mapear startups bio faltantes
+media,portfolio_sweep,carao_ventures,solo 1 edge(s) en DB; país CR (partial),Revisar portfolio público completo de carao_ventures y mapear startups bio faltantes
 media,portfolio_sweep,porsche_ag,solo 1 edge(s) en DB; país DE (fuera_de_foco),Revisar portfolio público completo de porsche_ag y mapear startups bio faltantes
 media,portfolio_sweep,eatable_adventures,solo 2 edge(s) en DB; país ES (fuera_de_foco),Revisar portfolio público completo de eatable_adventures y mapear startups bio faltantes
 media,portfolio_sweep,biomerieux,solo 1 edge(s) en DB; país FR (fuera_de_foco),Revisar portfolio público completo de biomerieux y mapear startups bio faltantes

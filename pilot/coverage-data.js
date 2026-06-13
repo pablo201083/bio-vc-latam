@@ -1,5 +1,5 @@
 window.COVERAGE_DATA = {
-  "generated_at": "2026-06-13T16:33:35+00:00",
+  "generated_at": "2026-06-13T17:10:18+00:00",
   "countries": {
     "AR": {
       "tier": "well_mapped",
@@ -15,10 +15,17 @@ window.COVERAGE_DATA = {
       "n_patches": 1,
       "n_local_investors": 0
     },
+    "BO": {
+      "tier": "under_explored",
+      "n_includes": 9,
+      "evidence_pct": 0.0,
+      "n_patches": 0,
+      "n_local_investors": 0
+    },
     "BR": {
       "tier": "well_mapped",
-      "n_includes": 149,
-      "evidence_pct": 0.383,
+      "n_includes": 163,
+      "evidence_pct": 0.35,
       "n_patches": 3,
       "n_local_investors": 33
     },
@@ -31,29 +38,43 @@ window.COVERAGE_DATA = {
     },
     "CO": {
       "tier": "partial",
-      "n_includes": 18,
-      "evidence_pct": 0.556,
+      "n_includes": 26,
+      "evidence_pct": 0.385,
       "n_patches": 3,
       "n_local_investors": 1
     },
     "CR": {
-      "tier": "under_explored",
-      "n_includes": 9,
-      "evidence_pct": 0.222,
+      "tier": "partial",
+      "n_includes": 18,
+      "evidence_pct": 0.111,
       "n_patches": 2,
       "n_local_investors": 3
     },
+    "DO": {
+      "tier": "under_explored",
+      "n_includes": 4,
+      "evidence_pct": 0.0,
+      "n_patches": 0,
+      "n_local_investors": 0
+    },
+    "EC": {
+      "tier": "under_explored",
+      "n_includes": 7,
+      "evidence_pct": 0.0,
+      "n_patches": 0,
+      "n_local_investors": 0
+    },
     "GT": {
       "tier": "under_explored",
-      "n_includes": 2,
+      "n_includes": 3,
       "evidence_pct": 0.0,
       "n_patches": 1,
       "n_local_investors": 0
     },
     "MX": {
       "tier": "partial",
-      "n_includes": 44,
-      "evidence_pct": 0.205,
+      "n_includes": 50,
+      "evidence_pct": 0.18,
       "n_patches": 2,
       "n_local_investors": 2
     },
@@ -97,6 +118,13 @@ window.COVERAGE_DATA = {
       "n_includes": 14,
       "evidence_pct": 0.5,
       "n_patches": 2,
+      "n_local_investors": 0
+    },
+    "VE": {
+      "tier": "under_explored",
+      "n_includes": 2,
+      "evidence_pct": 0.0,
+      "n_patches": 0,
       "n_local_investors": 0
     },
     "BE": {
@@ -162,35 +190,7 @@ window.COVERAGE_DATA = {
       "n_patches": 0,
       "n_local_investors": 1
     },
-    "EC": {
-      "tier": "under_explored",
-      "n_includes": 0,
-      "evidence_pct": 0.0,
-      "n_patches": 0,
-      "n_local_investors": 0
-    },
     "PY": {
-      "tier": "under_explored",
-      "n_includes": 0,
-      "evidence_pct": 0.0,
-      "n_patches": 0,
-      "n_local_investors": 0
-    },
-    "BO": {
-      "tier": "under_explored",
-      "n_includes": 0,
-      "evidence_pct": 0.0,
-      "n_patches": 0,
-      "n_local_investors": 0
-    },
-    "VE": {
-      "tier": "under_explored",
-      "n_includes": 0,
-      "evidence_pct": 0.0,
-      "n_patches": 0,
-      "n_local_investors": 0
-    },
-    "DO": {
       "tier": "under_explored",
       "n_includes": 0,
       "evidence_pct": 0.0,
@@ -273,8 +273,8 @@ window.COVERAGE_DATA = {
       "capital_pct": 1.0,
       "dominant_source": "web_research_2026",
       "dominant_source_share": 1.0,
-      "country_tier": "under_explored",
-      "coverage_label": "no_explorado"
+      "country_tier": "partial",
+      "coverage_label": "parcial"
     },
     {
       "theme": "Bioinputs & Crop Resilience",
@@ -482,8 +482,8 @@ window.COVERAGE_DATA = {
       "capital_pct": 0.0,
       "dominant_source": "",
       "dominant_source_share": 0.0,
-      "country_tier": "under_explored",
-      "coverage_label": "no_explorado"
+      "country_tier": "partial",
+      "coverage_label": "vacio_observado"
     },
     {
       "theme": "Biomanufacturing & Platform Technologies",
@@ -691,8 +691,8 @@ window.COVERAGE_DATA = {
       "capital_pct": 0.0,
       "dominant_source": "gridx",
       "dominant_source_share": 1.0,
-      "country_tier": "under_explored",
-      "coverage_label": "no_explorado"
+      "country_tier": "partial",
+      "coverage_label": "parcial"
     },
     {
       "theme": "Biomaterials & Green Chemistry",
@@ -900,8 +900,8 @@ window.COVERAGE_DATA = {
       "capital_pct": 0.0,
       "dominant_source": "",
       "dominant_source_share": 0.0,
-      "country_tier": "under_explored",
-      "coverage_label": "no_explorado"
+      "country_tier": "partial",
+      "coverage_label": "vacio_observado"
     },
     {
       "theme": "Diagnostics & Devices",
@@ -1109,8 +1109,8 @@ window.COVERAGE_DATA = {
       "capital_pct": 0.0,
       "dominant_source": "gridx",
       "dominant_source_share": 1.0,
-      "country_tier": "under_explored",
-      "coverage_label": "no_explorado"
+      "country_tier": "partial",
+      "coverage_label": "parcial"
     },
     {
       "theme": "Food Systems & Alt Proteins",
@@ -1318,8 +1318,8 @@ window.COVERAGE_DATA = {
       "capital_pct": 1.0,
       "dominant_source": "(sin provenance)",
       "dominant_source_share": 1.0,
-      "country_tier": "under_explored",
-      "coverage_label": "no_explorado"
+      "country_tier": "partial",
+      "coverage_label": "parcial"
     },
     {
       "theme": "Nature & Ecosystem Tech",
@@ -1527,8 +1527,8 @@ window.COVERAGE_DATA = {
       "capital_pct": 0.0,
       "dominant_source": "",
       "dominant_source_share": 0.0,
-      "country_tier": "under_explored",
-      "coverage_label": "no_explorado"
+      "country_tier": "partial",
+      "coverage_label": "vacio_observado"
     },
     {
       "theme": "Precision Agriculture",
@@ -1736,8 +1736,8 @@ window.COVERAGE_DATA = {
       "capital_pct": 0.5,
       "dominant_source": "web_research_2026",
       "dominant_source_share": 0.5,
-      "country_tier": "under_explored",
-      "coverage_label": "no_explorado"
+      "country_tier": "partial",
+      "coverage_label": "parcial"
     },
     {
       "theme": "Therapeutics",
@@ -1875,11 +1875,11 @@ window.COVERAGE_DATA = {
   "label_counts": {
     "bien_mapeado": 13,
     "fuera_de_foco": 32,
-    "no_explorado": 80,
-    "parcial": 23,
-    "vacio_observado": 4
+    "no_explorado": 72,
+    "parcial": 28,
+    "vacio_observado": 7
   },
-  "debias_queue_size": 83,
+  "debias_queue_size": 82,
   "legend": {
     "bien_mapeado": "Volumen + evidencia externa + fuentes diversas: la celda es confiable.",
     "parcial": "Hay datos, pero con evidencia floja o dependientes de un solo parche.",

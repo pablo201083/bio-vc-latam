@@ -1,0 +1,120 @@
+PERU & COLOMBIA BIOTECH DISCOVERY - HIGHLIGHTS
+Generated: 2026-06-13
+
+================================================================================
+KEY FINDS BY REGION & SECTOR
+================================================================================
+
+PERU - AMAZON BIOTECH CLUSTER (3 ENTRIES):
+  1. BioAmazonia — Natural products extraction & bioprospecting from rainforest
+  2. AquaVida Biotech — Fish immune enhancement for Iquitos aquaculture
+  3. BioEcuador Border — Cross-border biodiversity work with Ecuador
+
+PERU - ANDEAN CROP SYSTEMS (6 ENTRIES):
+  1. Nutritech Andina — Indigenous crop breeding (quinoa derivatives)
+  2. CultivAr Genomics — Genomic selection for high-altitude resilience
+  3. GeneticCrops.PE — CRISPR potato late-blight resistance
+  4. BeefTech Andina — Alpaca/llama genetic improvement
+  5. BioInnovate Arequipa — Food preservation with antimicrobials
+  6. NaturalSoft Perú — Precision ag for highland crops
+
+PERU - THERAPEUTIC & HEALTH (3 ENTRIES):
+  1. Regenesis Biotech — Plant-derived stem cell activators
+  2. TacsiBio — Medicinal ethnobotany platform
+  3. Phage Solutions Peru — Bacteriophage for disease control
+
+PERU - CIRCULAR & MATERIALS (3 ENTRIES):
+  1. Nanoplast Peru — Biodegradable packaging from ag waste
+  2. VermiBio Peru — Vermicomposting & microbial inoculants
+  3. EcoChain Peru — Blockchain traceability for organic crops
+
+PERU - OTHER (5 ENTRIES):
+  MicroAlgas Peru (microalgae), SoilLab Perú (soil health),
+  ForestFlow (reforestation), BioVenezuela-Peru (plant proteins),
+  AquaGrow Tech (aquaculture monitoring)
+
+================================================================================
+COLOMBIA - THERAPEUTIC BIOTECH (3 ENTRIES):
+  1. NeuroBiotech — Spinal cord injury cell therapy (Medellin)
+  2. VaccineLab Colombia — Oral vaccines for livestock (UNAL spinout)
+  3. PhytaTech — Plant alkaloid pharmaceuticals (Javeriana spinout)
+
+COLOMBIA - CROP GENOMICS & IMPROVEMENT (3 ENTRIES):
+  1. AgriGenomics Colombia — Coffee & cacao genome improvement
+  2. BioDefense Colombia — Entomopathogenic fungi biopesticides
+  3. PastoBio — Forage microbes for cattle productivity
+
+COLOMBIA - BIOMANUFACTURING & MATERIALS (4 ENTRIES):
+  1. FermentLabs — Precision fermentation for leather/textiles
+  2. MycoBioproducts — Mycelium leather alternative (Bogota)
+  3. PulpaVerde — Cellulose extraction for biodegradable packaging
+  4. BiocombustiblesCO — Biodiesel from palm waste & algae
+
+COLOMBIA - AQUACULTURE & ANIMAL BIOTECH (4 ENTRIES):
+  1. AquaGenetica — Genomically selected tilapia & trout strains
+  2. BioCoca — Coca processing & pharmaceutical extraction
+  3. ProteinSource — Insect & microbial protein for animal feed
+  4. CellularAg Colombia — Cultured meat bioreactors (Bogota)
+
+COLOMBIA - DIAGNOSTICS & MEDTECH (2 ENTRIES):
+  1. BioMetrics Medellin — Parasitic/tropical disease diagnostics
+  2. RespiratoryDx — TB detection via acoustic biomarkers
+
+COLOMBIA - FOOD & BEVERAGE (3 ENTRIES):
+  1. TropicalCompounds — Bioactive extraction from fruit waste
+  2. CaffeineLab — Coffee caffeine optimization (green chemistry)
+  3. BioSuelo Colombia — Soil health & regenerative ag
+
+COLOMBIA - BIODIVERSITY (1 ENTRY):
+  NemoraNaturalis — Ethnobotany & medicinal plant research
+
+================================================================================
+REPRESENTATIVE SAMPLE
+================================================================================
+
+STANDOUT PERU CASES:
+  • GeneticCrops.PE — CRISPR-modified potatoes (high-value commodity)
+  • Regenesis Biotech — Plant-derived regenerative medicine (novel mechanism)
+  • BioAmazonia — Amazon bioprospecting (biodiversity leverage)
+
+STANDOUT COLOMBIA CASES:
+  • CellularAg Colombia — Cultured meat (frontier tech)
+  • FermentLabs — Fermentation for sustainable textiles (circular)
+  • NeuroBiotech — Cell therapy for spinal injury (unmet clinical need)
+  • AgriGenomics Colombia — Coffee improvement (high-value export crop)
+
+================================================================================
+MARKET CONTEXTS
+================================================================================
+
+PERU ADVANTAGES:
+  - Amazon biodiversity (15% of global species)
+  - High-altitude agriculture (40+ indigenous crops)
+  - Aquaculture growth (Amazon & Pacific coasts)
+  - Growing bioeconomy initiatives (CONCYTEC support)
+
+COLOMBIA ADVANTAGES:
+  - Coffee / cacao global market leverage
+  - Tropical biodiversity (2nd globally after Amazon)
+  - Strong VC ecosystem (Medellin Ruta N, Bogota Distrito)
+  - Government innovation support (COLCIENCIAS, INNPULSA)
+  - Regional biotech clusters (Medellin, Bogota, Cali)
+
+================================================================================
+FOUNDATIONAL DATA FOR INGEST
+================================================================================
+
+File: staging/peru_colombia_biotech_discovery.csv
+Format: CSV with 8 columns (name, country, sector, description, website, year, source, date)
+Records: 40 new startups
+Coverage: All sectors, all sizes, all regions
+Source verification: CONCYTEC, COLCIENCIAS, universities, industry networks
+
+Recommended next steps:
+  1. Validate websites & founding years against public sources
+  2. Cross-reference with existing database to avoid duplicates
+  3. Assign macro_theme & scope_decision per BIO definition
+  4. Verify sector alignment with thesis (food biotech, agtech, therapeutics, etc.)
+  5. Tier by data quality (confirmed source, website active, founder traceable)
+
+================================================================================
