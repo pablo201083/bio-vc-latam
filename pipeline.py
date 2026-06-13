@@ -822,6 +822,16 @@ def cmd_graph(args: argparse.Namespace) -> None:
         print(f"  [graph] ERROR: {e}\n")
 
 
+def cmd_audit_cluster(args: argparse.Namespace) -> None:
+    """Auditoría y clustering integrado: identifica gaps → genera triage → re-cluster."""
+    apply_fix = getattr(args, "apply_fix", False)
+    try:
+        from src.audit_cluster import run as run_audit_cluster
+        run_audit_cluster(DB_PATH, apply_fix=apply_fix)
+    except Exception as e:
+        print(f"  [audit-cluster] ERROR: {e}\n")
+
+
 # ──────────────────────────────────────────────
 # CLI main
 # ──────────────────────────────────────────────
@@ -910,6 +920,9 @@ def main() -> None:
     gp = sub.add_parser("graph", help="Calcular métricas de grafo")
     gp.add_argument("--refresh", action="store_true", help="Forzar recálculo")
 
+    ac = sub.add_parser("audit-cluster", help="Auditoría + clustering integrado: identifica gaps → triage CSV → re-cluster")
+    ac.add_argument("--apply-fix", action="store_true", help="Re-ejecutar clustering tras curation de datos")
+
     args = parser.parse_args()
 
     dispatch = {
@@ -953,6 +966,7 @@ def main() -> None:
         "reclassify-themes": cmd_reclassify,
         "rebuild": cmd_rebuild,
         "graph": cmd_graph,
+        "audit-cluster": cmd_audit_cluster,
     }
 
     fn = dispatch.get(args.command)
