@@ -1443,6 +1443,20 @@ document.addEventListener('DOMContentLoaded', function(){
   document.querySelectorAll('.vs-btn').forEach(btn =>
     btn.addEventListener('click', () => switchView(btn.dataset.view)));
 
+  // ── Drawer global de ficha de fondo (la ficha rica de Etapas, accesible desde
+  //    cualquier vista: matriz, radial, red) ──────────────────────────────────
+  const fundDrawer = document.createElement('div');
+  fundDrawer.id = 'fund-drawer';
+  fundDrawer.innerHTML = '<button id="fund-drawer-close" title="Cerrar (Esc)">✕</button><div id="fund-drawer-body"></div>';
+  document.body.appendChild(fundDrawer);
+  const _drawerStyle = document.createElement('style');
+  _drawerStyle.textContent = '#fund-drawer{position:fixed;top:0;right:0;height:100vh;width:392px;max-width:93vw;background:rgba(255,252,246,.985);border-left:1px solid rgba(217,206,190,.6);box-shadow:-10px 0 34px rgba(0,0,0,.16);padding:22px 24px;overflow-y:auto;z-index:9999;transform:translateX(106%);transition:transform .26s cubic-bezier(.4,0,.2,1);}#fund-drawer.open{transform:translateX(0);}#fund-drawer-close{position:absolute;top:12px;right:14px;border:none;background:transparent;font-size:1.05rem;color:#9a8d7d;cursor:pointer;line-height:1;padding:5px;z-index:2;}#fund-drawer-close:hover{color:#332b22;}';
+  document.head.appendChild(_drawerStyle);
+  function openFundDrawer(id){ if(!id){closeFundDrawer();return;} renderFundProfile(id, document.getElementById('fund-drawer-body')); fundDrawer.classList.add('open'); }
+  function closeFundDrawer(){ fundDrawer.classList.remove('open'); }
+  document.getElementById('fund-drawer-close').addEventListener('click', closeFundDrawer);
+  document.addEventListener('keydown', e => { if(e.key === 'Escape') closeFundDrawer(); });
+
   // Radial hint acts as back button in focus mode
   document.getElementById('radial-hint').addEventListener('click', () => {
     if (activeInvId && currentView === 'radial') setActiveInvestor(null);
@@ -1464,6 +1478,7 @@ document.addEventListener('DOMContentLoaded', function(){
       renderRadial(id);
     } else if (currentView === 'matrix') {
       highlightMatrixRow(id);
+      openFundDrawer(id);
     } else if (currentView === 'stages') {
       highlightStagesRow(id);
     } else if (currentView === 'fondos') {
@@ -1494,89 +1509,124 @@ document.addEventListener('DOMContentLoaded', function(){
     }
   }
 
+  // Radial overview = "Constelación de capital": los fondos se agrupan por su
+  // TESIS DOMINANTE (posición angular por tema), tamaño = deals. De un vistazo se
+  // ve qué temas concentran más/mayores fondos. Click en un fondo → ficha (drawer).
   function renderRadialOverview(svg, W, H) {
     svg.setAttribute('viewBox', '0 0 ' + W + ' ' + H);
     svg.setAttribute('preserveAspectRatio', 'xMidYMid meet');
-
-    const topInv = investors.slice(0, 32);
     const cx = W / 2, cy = H / 2;
+    const topInv = investors.slice(0, 44);
 
-    // Build bubble data with spiral initial placement
+    topInv.forEach(iv => {
+      iv._dom = Object.entries(iv.themes).sort((a,b)=>b[1]-a[1])[0]?.[0] || null;
+    });
+    const present = THEME_ORDER.filter(t => topInv.some(iv => iv._dom === t));
+    const slots = present.slice();
+    if (topInv.some(iv => !iv._dom)) slots.push('__none__');
+    const nSlots = Math.max(1, slots.length);
+    const R0 = Math.min(W, H) * 0.30;
+    const angleOf = {};
+    slots.forEach((t, i) => { angleOf[t] = -Math.PI/2 + i / nSlots * Math.PI * 2; });
+
     const bubbles = topInv.map((iv, i) => {
-      const domTheme = Object.entries(iv.themes).sort((a,b) => b[1]-a[1])[0]?.[0];
-      const angle = i * 2.3998; // golden angle
-      const rad   = Math.sqrt(i) * 36;
+      const key = iv._dom || '__none__';
+      const th  = angleOf[key];
+      const ax  = cx + Math.cos(th) * R0, ay = cy + Math.sin(th) * R0;
       return {
-        id:    iv.id,
-        label: iv.label,
-        count: iv.count,
-        r:     Math.max(16, Math.min(56, Math.sqrt(iv.count) * 10)),
-        color: domTheme ? THEME_PAL[domTheme] : '#888',
-        x: cx + Math.cos(angle) * rad,
-        y: cy + Math.sin(angle) * rad,
-        vx: 0, vy: 0,
+        id: iv.id, label: iv.label, count: iv.count,
+        r: Math.max(13, Math.min(46, Math.sqrt(iv.count) * 8.5)),
+        color: iv._dom ? THEME_PAL[iv._dom] : '#9a8d7d',
+        ax, ay, x: ax + Math.cos(i*2.4)*22, y: ay + Math.sin(i*2.4)*22, vx:0, vy:0,
       };
     });
 
-    // Force relax — repulsion + centering
-    for (let iter = 0; iter < 240; iter++) {
-      const alpha = Math.pow(1 - iter / 240, 1.4);
-      for (let i = 0; i < bubbles.length; i++) {
-        for (let j = i + 1; j < bubbles.length; j++) {
-          const dx = (bubbles[j].x - bubbles[i].x) || 0.01;
-          const dy = (bubbles[j].y - bubbles[i].y) || 0.01;
-          const dist = Math.sqrt(dx*dx + dy*dy);
-          const minD = bubbles[i].r + bubbles[j].r + 5;
-          if (dist < minD) {
-            const f = (minD - dist) / dist * 0.44 * alpha;
-            bubbles[i].vx -= dx * f; bubbles[i].vy -= dy * f;
-            bubbles[j].vx += dx * f; bubbles[j].vy += dy * f;
-          }
+    // Force relax: repulsión + atracción al ancla de su tema (clusters temáticos)
+    for (let iter=0; iter<260; iter++){
+      const alpha = Math.pow(1 - iter/260, 1.3);
+      for (let i=0;i<bubbles.length;i++){
+        for (let j=i+1;j<bubbles.length;j++){
+          const dx=(bubbles[j].x-bubbles[i].x)||0.01, dy=(bubbles[j].y-bubbles[i].y)||0.01;
+          const dist=Math.sqrt(dx*dx+dy*dy), minD=bubbles[i].r+bubbles[j].r+4;
+          if(dist<minD){ const f=(minD-dist)/dist*0.42*alpha;
+            bubbles[i].vx-=dx*f;bubbles[i].vy-=dy*f;bubbles[j].vx+=dx*f;bubbles[j].vy+=dy*f; }
         }
-        bubbles[i].vx += (cx - bubbles[i].x) * 0.012 * alpha;
-        bubbles[i].vy += (cy - bubbles[i].y) * 0.012 * alpha;
+        bubbles[i].vx += (bubbles[i].ax - bubbles[i].x) * 0.045 * alpha;
+        bubbles[i].vy += (bubbles[i].ay - bubbles[i].y) * 0.045 * alpha;
       }
-      bubbles.forEach(b => {
-        b.x += b.vx; b.y += b.vy;
-        b.vx *= 0.62; b.vy *= 0.62;
-      });
+      bubbles.forEach(b=>{ b.x+=b.vx;b.y+=b.vy;b.vx*=0.6;b.vy*=0.6; });
     }
 
-    const g = document.createElementNS(NS, 'g');
+    const g = document.createElementNS(NS,'g');
+
+    // Guías de tema (spoke + label + # fondos) en cada slot
+    slots.forEach(t => {
+      const th = angleOf[t];
+      const col = t==='__none__' ? '#9a8d7d' : THEME_PAL[t];
+      const n = topInv.filter(iv => (iv._dom||'__none__')===t).length;
+      const lx = cx + Math.cos(th)*(R0+96), ly = cy + Math.sin(th)*(R0+96);
+      const sp = document.createElementNS(NS,'line');
+      sp.setAttribute('x1', cx+Math.cos(th)*44); sp.setAttribute('y1', cy+Math.sin(th)*44);
+      sp.setAttribute('x2', cx+Math.cos(th)*(R0+72)); sp.setAttribute('y2', cy+Math.sin(th)*(R0+72));
+      sp.setAttribute('stroke', col); sp.setAttribute('stroke-width','1'); sp.setAttribute('opacity','0.12');
+      g.appendChild(sp);
+      const tl = document.createElementNS(NS,'text');
+      tl.setAttribute('x',lx); tl.setAttribute('y',ly); tl.setAttribute('text-anchor','middle');
+      tl.setAttribute('dominant-baseline','middle'); tl.setAttribute('font-size','10.5');
+      tl.setAttribute('font-weight','800'); tl.setAttribute('font-family','inherit');
+      tl.setAttribute('fill',col); tl.setAttribute('opacity','0.92');
+      tl.textContent = t==='__none__' ? 'Sin tema' : (THEME_SHORT[t]||t);
+      g.appendChild(tl);
+      const tc = document.createElementNS(NS,'text');
+      tc.setAttribute('x',lx); tc.setAttribute('y',ly+12); tc.setAttribute('text-anchor','middle');
+      tc.setAttribute('dominant-baseline','middle'); tc.setAttribute('font-size','8');
+      tc.setAttribute('font-family','inherit'); tc.setAttribute('fill',col); tc.setAttribute('opacity','0.55');
+      tc.textContent = n + (n===1?' fondo':' fondos');
+      g.appendChild(tc);
+    });
+
+    // Caption central
+    const c1 = document.createElementNS(NS,'text');
+    c1.setAttribute('x',cx); c1.setAttribute('y',cy-6); c1.setAttribute('text-anchor','middle');
+    c1.setAttribute('dominant-baseline','middle'); c1.setAttribute('font-size','12');
+    c1.setAttribute('font-weight','800'); c1.setAttribute('fill','#5a4e3e'); c1.setAttribute('opacity','0.82');
+    c1.textContent='Constelación de capital';
+    g.appendChild(c1);
+    const c2 = document.createElementNS(NS,'text');
+    c2.setAttribute('x',cx); c2.setAttribute('y',cy+10); c2.setAttribute('text-anchor','middle');
+    c2.setAttribute('dominant-baseline','middle'); c2.setAttribute('font-size','8.5');
+    c2.setAttribute('fill','#9a8d7d');
+    c2.textContent='posición = tesis dominante · tamaño = deals';
+    g.appendChild(c2);
+
+    // Burbujas
     bubbles.forEach(b => {
-      const circle = document.createElementNS(NS, 'circle');
-      circle.setAttribute('cx', b.x); circle.setAttribute('cy', b.y);
-      circle.setAttribute('r', b.r);
-      circle.setAttribute('fill', b.color + '22');
-      circle.setAttribute('stroke', b.color);
-      circle.setAttribute('stroke-width', '1.5');
-      circle.style.cursor = 'pointer';
-      circle.addEventListener('click', () => setActiveInvestor(b.id));
-      circle.addEventListener('mouseenter', () => circle.setAttribute('fill', b.color + '50'));
-      circle.addEventListener('mouseleave', () => circle.setAttribute('fill', b.color + '22'));
+      const circle = document.createElementNS(NS,'circle');
+      circle.setAttribute('cx',b.x); circle.setAttribute('cy',b.y); circle.setAttribute('r',b.r);
+      circle.setAttribute('fill',b.color+'24'); circle.setAttribute('stroke',b.color);
+      circle.setAttribute('stroke-width','1.5'); circle.style.cursor='pointer';
+      circle.addEventListener('click',()=>openFundDrawer(b.id));
+      circle.addEventListener('mouseenter',()=>circle.setAttribute('fill',b.color+'55'));
+      circle.addEventListener('mouseleave',()=>circle.setAttribute('fill',b.color+'24'));
       g.appendChild(circle);
-
-      const fsize = Math.max(8, Math.min(11, b.r * 0.30));
-      const maxCh = Math.max(4, Math.floor(b.r * 0.22));
-      const short  = b.label.length > maxCh ? b.label.slice(0, maxCh) + '…' : b.label;
-
-      const t1 = document.createElementNS(NS, 'text');
-      t1.setAttribute('x', b.x); t1.setAttribute('y', b.r >= 26 ? b.y - 4 : b.y);
-      t1.setAttribute('text-anchor', 'middle'); t1.setAttribute('dominant-baseline', 'middle');
-      t1.setAttribute('font-size', fsize); t1.setAttribute('font-weight', '700');
-      t1.setAttribute('font-family', 'inherit'); t1.setAttribute('fill', b.color);
-      t1.setAttribute('pointer-events', 'none');
-      t1.textContent = short;
+      const fsize=Math.max(7.5,Math.min(11,b.r*0.32));
+      const maxCh=Math.max(4,Math.floor(b.r*0.26));
+      const short=b.label.length>maxCh?b.label.slice(0,maxCh)+'…':b.label;
+      const t1=document.createElementNS(NS,'text');
+      t1.setAttribute('x',b.x); t1.setAttribute('y',b.r>=24?b.y-3:b.y);
+      t1.setAttribute('text-anchor','middle'); t1.setAttribute('dominant-baseline','middle');
+      t1.setAttribute('font-size',fsize); t1.setAttribute('font-weight','700');
+      t1.setAttribute('font-family','inherit'); t1.setAttribute('fill',b.color);
+      t1.setAttribute('pointer-events','none'); t1.textContent=short;
       g.appendChild(t1);
-
-      if (b.r >= 26) {
-        const t2 = document.createElementNS(NS, 'text');
-        t2.setAttribute('x', b.x); t2.setAttribute('y', b.y + fsize + 1);
-        t2.setAttribute('text-anchor', 'middle'); t2.setAttribute('dominant-baseline', 'middle');
-        t2.setAttribute('font-size', Math.max(7, fsize - 2)); t2.setAttribute('font-weight', '600');
-        t2.setAttribute('font-family', 'inherit'); t2.setAttribute('fill', b.color);
-        t2.setAttribute('opacity', '0.68'); t2.setAttribute('pointer-events', 'none');
-        t2.textContent = b.count;
+      if(b.r>=24){
+        const t2=document.createElementNS(NS,'text');
+        t2.setAttribute('x',b.x); t2.setAttribute('y',b.y+fsize+1);
+        t2.setAttribute('text-anchor','middle'); t2.setAttribute('dominant-baseline','middle');
+        t2.setAttribute('font-size',Math.max(7,fsize-2)); t2.setAttribute('font-weight','600');
+        t2.setAttribute('font-family','inherit'); t2.setAttribute('fill',b.color);
+        t2.setAttribute('opacity','0.68'); t2.setAttribute('pointer-events','none');
+        t2.textContent=b.count;
         g.appendChild(t2);
       }
     });
@@ -2354,8 +2404,22 @@ document.addEventListener('DOMContentLoaded', function(){
     return m[(iso||'').toUpperCase()] || iso || '';
   }
 
-  function renderFundProfile(id) {
-    const card = document.getElementById('fund-profile-card');
+  // Temas de un fondo — independiente de haber visitado Etapas (memoizado).
+  // Usa D.capital_flow.fund_theme; cae a invStats si el fondo no está ahí.
+  let _fundThemeCache = null;
+  function fundThemesOf(id) {
+    if (!_fundThemeCache) {
+      _fundThemeCache = {};
+      ((D.capital_flow && D.capital_flow.fund_theme) || []).forEach(ft => {
+        if (!_fundThemeCache[ft.source]) _fundThemeCache[ft.source] = {};
+        _fundThemeCache[ft.source][ft.theme] = ft.deal_count;
+      });
+    }
+    return _fundThemeCache[id] || (invStats[id] && invStats[id].themes) || {};
+  }
+
+  function renderFundProfile(id, target) {
+    const card = target || document.getElementById('fund-profile-card');
     if (!card) return;
     if (!id) {
       card.innerHTML = `<div class="fp-placeholder"><span class="fp-placeholder-icon">↖</span><span>Hacé click en un fondo<br>para ver su ficha</span></div>`;
@@ -2365,7 +2429,7 @@ document.addEventListener('DOMContentLoaded', function(){
     const n = D.nodes.find(x => x.id === id);
     if (!n) { card.className = ''; return; }
 
-    const themes = Object.entries(slFundThemeMap[id] || {}).sort((a,b) => b[1]-a[1]);
+    const themes = Object.entries(fundThemesOf(id)).sort((a,b) => b[1]-a[1]);
     const total  = themes.reduce((s,[,c]) => s+c, 0);
     // Use curated blurb if available, else auto-generate
     const paragraphs = n.profile_blurb
