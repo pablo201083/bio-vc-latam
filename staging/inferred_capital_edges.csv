@@ -1,0 +1,401 @@
+investment_id,investor_id,startup_id,round_name,round_stage,announced_date,amount,currency,is_lead,confidence_score,source_id,notes
+INFERRED_activaq_The Ganesha Lab_0,The Ganesha Lab,activaq,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Food Systems & Alt Proteins + pre-seed investor patterns
+INFERRED_activaq_GridX_1,GridX,activaq,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Food Systems & Alt Proteins + pre-seed investor patterns
+INFERRED_advanced_biocontrollers_vesper_ventures_2,vesper_ventures,advanced_biocontrollers,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Bioinputs & Crop Resilience + pre-seed investor patterns
+INFERRED_advanced_biocontrollers_The Ganesha Lab_3,The Ganesha Lab,advanced_biocontrollers,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Bioinputs & Crop Resilience + pre-seed investor patterns
+INFERRED_agricultic-do_the_yield_lab_latam_4,the_yield_lab_latam,agricultic-do,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Precision Agriculture + series-a investor patterns
+INFERRED_agricultic-do_morningside_group_5,morningside_group,agricultic-do,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Precision Agriculture + series-a investor patterns
+INFERRED_agrigenetic-ecuador-ec_vox_capital_6,vox_capital,agrigenetic-ecuador-ec,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Bioinputs & Crop Resilience + series-a investor patterns
+INFERRED_agrigenetic-ecuador-ec_the_yield_lab_latam_7,the_yield_lab_latam,agrigenetic-ecuador-ec,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Bioinputs & Crop Resilience + series-a investor patterns
+INFERRED_agritech-bolivia-bo_the_yield_lab_latam_8,the_yield_lab_latam,agritech-bolivia-bo,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Precision Agriculture + series-a investor patterns
+INFERRED_agritech-bolivia-bo_morningside_group_9,morningside_group,agritech-bolivia-bo,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Precision Agriculture + series-a investor patterns
+INFERRED_agrivalle_vesper_ventures_10,vesper_ventures,agrivalle,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Bioinputs & Crop Resilience + pre-seed investor patterns
+INFERRED_agrivalle_The Ganesha Lab_11,The Ganesha Lab,agrivalle,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Bioinputs & Crop Resilience + pre-seed investor patterns
+INFERRED_agro360-do_the_yield_lab_latam_12,the_yield_lab_latam,agro360-do,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Precision Agriculture + series-a investor patterns
+INFERRED_agro360-do_morningside_group_13,morningside_group,agro360-do,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Precision Agriculture + series-a investor patterns
+INFERRED_agrobit-bolivia-operations-bo_monashees_14,monashees,agrobit-bolivia-operations-bo,growth,growth,,,,0,0.5,INFERRED_PATTERN,Inferred from Precision Agriculture + growth investor patterns
+INFERRED_agrobit-bolivia-operations-bo_lightsmith_group_15,lightsmith_group,agrobit-bolivia-operations-bo,growth,growth,,,,0,0.5,INFERRED_PATTERN,Inferred from Precision Agriculture + growth investor patterns
+INFERRED_agrocontrol-gt_the_yield_lab_latam_16,the_yield_lab_latam,agrocontrol-gt,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Precision Agriculture + series-a investor patterns
+INFERRED_agrocontrol-gt_morningside_group_17,morningside_group,agrocontrol-gt,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Precision Agriculture + series-a investor patterns
+INFERRED_agroguia-ve_the_yield_lab_latam_18,the_yield_lab_latam,agroguia-ve,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Precision Agriculture + series-a investor patterns
+INFERRED_agroguia-ve_morningside_group_19,morningside_group,agroguia-ve,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Precision Agriculture + series-a investor patterns
+INFERRED_agrorganica_vox_capital_20,vox_capital,agrorganica,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Bioinputs & Crop Resilience + series-a investor patterns
+INFERRED_agrorganica_the_yield_lab_latam_21,the_yield_lab_latam,agrorganica,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Bioinputs & Crop Resilience + series-a investor patterns
+INFERRED_agroscan-ec_chileglobal_ventures_22,chileglobal_ventures,agroscan-ec,seed,seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Precision Agriculture + seed investor patterns
+INFERRED_agroscan-ec_slc_agricola_23,slc_agricola,agroscan-ec,seed,seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Precision Agriculture + seed investor patterns
+INFERRED_agrosustain-mx_vesper_ventures_24,vesper_ventures,agrosustain-mx,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Bioinputs & Crop Resilience + pre-seed investor patterns
+INFERRED_agrosustain-mx_The Ganesha Lab_25,The Ganesha Lab,agrosustain-mx,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Bioinputs & Crop Resilience + pre-seed investor patterns
+INFERRED_aimirim-br_GridX_26,GridX,aimirim-br,seed,seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Biomanufacturing & Platform Technologies + seed investor patterns
+INFERRED_aimirim-br_AIR Capital_27,AIR Capital,aimirim-br,seed,seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Biomanufacturing & Platform Technologies + seed investor patterns
+INFERRED_aintech_The Ganesha Lab_28,The Ganesha Lab,aintech,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Biomaterials & Green Chemistry + pre-seed investor patterns
+INFERRED_aintech_GridX_29,GridX,aintech,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Biomaterials & Green Chemistry + pre-seed investor patterns
+INFERRED_alecrim-biotech-br_the_yield_lab_latam_30,the_yield_lab_latam,alecrim-biotech-br,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Digital AgTech & Agrifintech + series-a investor patterns
+INFERRED_alecrim-biotech-br_newtopia_vc_31,newtopia_vc,alecrim-biotech-br,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Digital AgTech & Agrifintech + series-a investor patterns
+INFERRED_algenis-cl_The Ganesha Lab_32,The Ganesha Lab,algenis-cl,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Food Systems & Alt Proteins + pre-seed investor patterns
+INFERRED_algenis-cl_GridX_33,GridX,algenis-cl,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Food Systems & Alt Proteins + pre-seed investor patterns
+INFERRED_aptah_vesper_ventures_34,vesper_ventures,aptah,seed,seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + seed investor patterns
+INFERRED_aptah_zentynel_35,zentynel,aptah,seed,seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + seed investor patterns
+INFERRED_aptah-bio-br_vesper_ventures_36,vesper_ventures,aptah-bio-br,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + pre-seed investor patterns
+INFERRED_aptah-bio-br_The Ganesha Lab_37,The Ganesha Lab,aptah-bio-br,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + pre-seed investor patterns
+INFERRED_aravan_labs_The Ganesha Lab_38,The Ganesha Lab,aravan_labs,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Food Systems & Alt Proteins + pre-seed investor patterns
+INFERRED_aravan_labs_GridX_39,GridX,aravan_labs,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Food Systems & Alt Proteins + pre-seed investor patterns
+INFERRED_arcomed_vesper_ventures_40,vesper_ventures,arcomed,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_arcomed_The Ganesha Lab_41,The Ganesha Lab,arcomed,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_autem-therapeutics-br_vesper_ventures_42,vesper_ventures,autem-therapeutics-br,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + pre-seed investor patterns
+INFERRED_autem-therapeutics-br_The Ganesha Lab_43,The Ganesha Lab,autem-therapeutics-br,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + pre-seed investor patterns
+INFERRED_bentenbiotech_vesper_ventures_44,vesper_ventures,bentenbiotech,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + pre-seed investor patterns
+INFERRED_bentenbiotech_The Ganesha Lab_45,The Ganesha Lab,bentenbiotech,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + pre-seed investor patterns
+INFERRED_bialtec_The Ganesha Lab_46,The Ganesha Lab,bialtec,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Food Systems & Alt Proteins + pre-seed investor patterns
+INFERRED_bialtec_GridX_47,GridX,bialtec,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Food Systems & Alt Proteins + pre-seed investor patterns
+INFERRED_bio_bureau_biotechnology_The Ganesha Lab_48,The Ganesha Lab,bio_bureau_biotechnology,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Food Systems & Alt Proteins + pre-seed investor patterns
+INFERRED_bio_bureau_biotechnology_GridX_49,GridX,bio_bureau_biotechnology,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Food Systems & Alt Proteins + pre-seed investor patterns
+INFERRED_biobreyer_The Ganesha Lab_50,The Ganesha Lab,biobreyer,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Food Systems & Alt Proteins + pre-seed investor patterns
+INFERRED_biobreyer_GridX_51,GridX,biobreyer,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Food Systems & Alt Proteins + pre-seed investor patterns
+INFERRED_biocentis-br_vesper_ventures_52,vesper_ventures,biocentis-br,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Bioinputs & Crop Resilience + pre-seed investor patterns
+INFERRED_biocentis-br_The Ganesha Lab_53,The Ganesha Lab,biocentis-br,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Bioinputs & Crop Resilience + pre-seed investor patterns
+INFERRED_biodiverso-insumos-br_vesper_ventures_54,vesper_ventures,biodiverso-insumos-br,growth,growth,,,,0,0.5,INFERRED_PATTERN,Inferred from Bioinputs & Crop Resilience + growth investor patterns
+INFERRED_biodiverso-insumos-br_ecoa_capital_55,ecoa_capital,biodiverso-insumos-br,growth,growth,,,,0,0.5,INFERRED_PATTERN,Inferred from Bioinputs & Crop Resilience + growth investor patterns
+INFERRED_biofab_vesper_ventures_56,vesper_ventures,biofab,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + pre-seed investor patterns
+INFERRED_biofab_The Ganesha Lab_57,The Ganesha Lab,biofab,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + pre-seed investor patterns
+INFERRED_biofabrica-siglo-xxi-mx_vesper_ventures_58,vesper_ventures,biofabrica-siglo-xxi-mx,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Bioinputs & Crop Resilience + pre-seed investor patterns
+INFERRED_biofabrica-siglo-xxi-mx_The Ganesha Lab_59,The Ganesha Lab,biofabrica-siglo-xxi-mx,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Bioinputs & Crop Resilience + pre-seed investor patterns
+INFERRED_biogenesis-bago-ec_grupo_insud_60,grupo_insud,biogenesis-bago-ec,growth,growth,,,,0,0.6,INFERRED_PATTERN,Inferred from Therapeutics + growth investor patterns
+INFERRED_biohack-uio-ec_ecoa_capital_61,ecoa_capital,biohack-uio-ec,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + series-a investor patterns
+INFERRED_biohack-uio-ec_zentynel_62,zentynel,biohack-uio-ec,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + series-a investor patterns
+INFERRED_bioin-br_vesper_ventures_63,vesper_ventures,bioin-br,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Bioinputs & Crop Resilience + pre-seed investor patterns
+INFERRED_bioin-br_The Ganesha Lab_64,The Ganesha Lab,bioin-br,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Bioinputs & Crop Resilience + pre-seed investor patterns
+INFERRED_biolife-innovations-bo_fondo_alerce_65,fondo_alerce,biolife-innovations-bo,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Food Systems & Alt Proteins + series-a investor patterns
+INFERRED_biolife-innovations-bo_sp_ventures_66,sp_ventures,biolife-innovations-bo,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Food Systems & Alt Proteins + series-a investor patterns
+INFERRED_biolinker_SF500_67,SF500,biolinker,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Biomanufacturing & Platform Technologies + pre-seed investor patterns
+INFERRED_biolinker_sp_ventures_68,sp_ventures,biolinker,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Biomanufacturing & Platform Technologies + pre-seed investor patterns
+INFERRED_biolinker-br_the_yield_lab_latam_69,the_yield_lab_latam,biolinker-br,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Digital AgTech & Agrifintech + series-a investor patterns
+INFERRED_biolinker-br_newtopia_vc_70,newtopia_vc,biolinker-br,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Digital AgTech & Agrifintech + series-a investor patterns
+INFERRED_biometrics-medellin-co_melek_capital_71,melek_capital,biometrics-medellin-co,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + series-a investor patterns
+INFERRED_biometrics-medellin-co_atlantico_72,atlantico,biometrics-medellin-co,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + series-a investor patterns
+INFERRED_biomimetic_solutions_vesper_ventures_73,vesper_ventures,biomimetic_solutions,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + pre-seed investor patterns
+INFERRED_biomimetic_solutions_The Ganesha Lab_74,The Ganesha Lab,biomimetic_solutions,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + pre-seed investor patterns
+INFERRED_bioram-mx_vox_capital_75,vox_capital,bioram-mx,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Bioinputs & Crop Resilience + series-a investor patterns
+INFERRED_bioram-mx_the_yield_lab_latam_76,the_yield_lab_latam,bioram-mx,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Bioinputs & Crop Resilience + series-a investor patterns
+INFERRED_biorefinery-tech-brazil-br_The Ganesha Lab_77,The Ganesha Lab,biorefinery-tech-brazil-br,growth,growth,,,,0,0.5,INFERRED_PATTERN,Inferred from Biomaterials & Green Chemistry + growth investor patterns
+INFERRED_biorefinery-tech-brazil-br_sosv_78,sosv,biorefinery-tech-brazil-br,growth,growth,,,,0,0.5,INFERRED_PATTERN,Inferred from Biomaterials & Green Chemistry + growth investor patterns
+INFERRED_biorgani_The Ganesha Lab_79,The Ganesha Lab,biorgani,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Biomaterials & Green Chemistry + pre-seed investor patterns
+INFERRED_biorgani_GridX_80,GridX,biorgani,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Biomaterials & Green Chemistry + pre-seed investor patterns
+INFERRED_biosens_vesper_ventures_81,vesper_ventures,biosens,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_biosens_The Ganesha Lab_82,The Ganesha Lab,biosens,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_biotech-cr_ecoa_capital_83,ecoa_capital,biotech-cr,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + series-a investor patterns
+INFERRED_biotech-cr_zentynel_84,zentynel,biotech-cr,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + series-a investor patterns
+INFERRED_biotecnofe_vesper_ventures_85,vesper_ventures,biotecnofe,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + pre-seed investor patterns
+INFERRED_biotecnofe_The Ganesha Lab_86,The Ganesha Lab,biotecnofe,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + pre-seed investor patterns
+INFERRED_biotic_The Ganesha Lab_87,The Ganesha Lab,biotic,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Food Systems & Alt Proteins + pre-seed investor patterns
+INFERRED_biotic_GridX_88,GridX,biotic,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Food Systems & Alt Proteins + pre-seed investor patterns
+INFERRED_biotimize_grupo_insud_89,grupo_insud,biotimize,series-b,series-b,,,,0,0.5,INFERRED_PATTERN,Inferred from Biomanufacturing & Platform Technologies + series-b investor patterns
+INFERRED_biotimize_zentynel_90,zentynel,biotimize,series-b,series-b,,,,0,0.5,INFERRED_PATTERN,Inferred from Biomanufacturing & Platform Technologies + series-b investor patterns
+INFERRED_biotrop-br_vesper_ventures_91,vesper_ventures,biotrop-br,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Bioinputs & Crop Resilience + pre-seed investor patterns
+INFERRED_biotrop-br_The Ganesha Lab_92,The Ganesha Lab,biotrop-br,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Bioinputs & Crop Resilience + pre-seed investor patterns
+INFERRED_bitmec_vesper_ventures_93,vesper_ventures,bitmec,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_bitmec_The Ganesha Lab_94,The Ganesha Lab,bitmec,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_bloomcare-br_vesper_ventures_95,vesper_ventures,bloomcare-br,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_bloomcare-br_The Ganesha Lab_96,The Ganesha Lab,bloomcare-br,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_bontix-do_the_yield_lab_latam_97,the_yield_lab_latam,bontix-do,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Precision Agriculture + series-a investor patterns
+INFERRED_bontix-do_morningside_group_98,morningside_group,bontix-do,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Precision Agriculture + series-a investor patterns
+INFERRED_brtc_The Ganesha Lab_99,The Ganesha Lab,brtc,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Biomaterials & Green Chemistry + pre-seed investor patterns
+INFERRED_brtc_GridX_100,GridX,brtc,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Biomaterials & Green Chemistry + pre-seed investor patterns
+INFERRED_bruna-by-altum-lab-cl_The Ganesha Lab_101,The Ganesha Lab,bruna-by-altum-lab-cl,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Food Systems & Alt Proteins + pre-seed investor patterns
+INFERRED_bruna-by-altum-lab-cl_GridX_102,GridX,bruna-by-altum-lab-cl,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Food Systems & Alt Proteins + pre-seed investor patterns
+INFERRED_by_my_cell_SF500_103,SF500,by_my_cell,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Biomanufacturing & Platform Technologies + pre-seed investor patterns
+INFERRED_by_my_cell_sp_ventures_104,sp_ventures,by_my_cell,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Biomanufacturing & Platform Technologies + pre-seed investor patterns
+INFERRED_caribbean-medtech-do_melek_capital_105,melek_capital,caribbean-medtech-do,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + series-a investor patterns
+INFERRED_caribbean-medtech-do_atlantico_106,atlantico,caribbean-medtech-do,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + series-a investor patterns
+INFERRED_carigenetics_domo_invest_107,domo_invest,carigenetics,seed,seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + seed investor patterns
+INFERRED_carigenetics_primatec_108,primatec,carigenetics,seed,seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + seed investor patterns
+INFERRED_celer_biotecnologia_domo_invest_109,domo_invest,celer_biotecnologia,seed,seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + seed investor patterns
+INFERRED_celer_biotecnologia_primatec_110,primatec,celer_biotecnologia,seed,seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + seed investor patterns
+INFERRED_cellargen_biotech_SF500_111,SF500,cellargen_biotech,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Biomanufacturing & Platform Technologies + pre-seed investor patterns
+INFERRED_cellargen_biotech_sp_ventures_112,sp_ventures,cellargen_biotech,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Biomanufacturing & Platform Technologies + pre-seed investor patterns
+INFERRED_cellmeat-brasil-br_the_yield_lab_latam_113,the_yield_lab_latam,cellmeat-brasil-br,seed,seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Digital AgTech & Agrifintech + seed investor patterns
+INFERRED_cellmeat-brasil-br_kptl_114,kptl,cellmeat-brasil-br,seed,seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Digital AgTech & Agrifintech + seed investor patterns
+INFERRED_cellter-cl_vesper_ventures_115,vesper_ventures,cellter-cl,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_cellter-cl_The Ganesha Lab_116,The Ganesha Lab,cellter-cl,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_celluris_vesper_ventures_117,vesper_ventures,celluris,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + pre-seed investor patterns
+INFERRED_celluris_The Ganesha Lab_118,The Ganesha Lab,celluris,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + pre-seed investor patterns
+INFERRED_cellva-ingredients-br_the_yield_lab_latam_119,the_yield_lab_latam,cellva-ingredients-br,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Digital AgTech & Agrifintech + series-a investor patterns
+INFERRED_cellva-ingredients-br_newtopia_vc_120,newtopia_vc,cellva-ingredients-br,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Digital AgTech & Agrifintech + series-a investor patterns
+INFERRED_cenibiot_fondo_alerce_121,fondo_alerce,cenibiot,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Food Systems & Alt Proteins + series-a investor patterns
+INFERRED_cenibiot_sp_ventures_122,sp_ventures,cenibiot,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Food Systems & Alt Proteins + series-a investor patterns
+INFERRED_cepha-biotech-br_melek_capital_123,melek_capital,cepha-biotech-br,growth,growth,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + growth investor patterns
+INFERRED_cepha-biotech-br_vesper_ventures_124,vesper_ventures,cepha-biotech-br,growth,growth,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + growth investor patterns
+INFERRED_chemtest_vesper_ventures_125,vesper_ventures,chemtest,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_chemtest_The Ganesha Lab_126,The Ganesha Lab,chemtest,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_consiste-br_vox_capital_127,vox_capital,consiste-br,growth,growth,,,,0,0.5,INFERRED_PATTERN,Inferred from Digital AgTech & Agrifintech + growth investor patterns
+INFERRED_consiste-br_the_yield_lab_latam_128,the_yield_lab_latam,consiste-br,growth,growth,,,,0,0.5,INFERRED_PATTERN,Inferred from Digital AgTech & Agrifintech + growth investor patterns
+INFERRED_copper3d_SOSV_IndieBio_129,SOSV_IndieBio,copper3d,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Biomaterials & Green Chemistry + series-a investor patterns
+INFERRED_copper3d_GridX_130,GridX,copper3d,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Biomaterials & Green Chemistry + series-a investor patterns
+INFERRED_cutting_edge_superconductors_vesper_ventures_131,vesper_ventures,cutting_edge_superconductors,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_cutting_edge_superconductors_The Ganesha Lab_132,The Ganesha Lab,cutting_edge_superconductors,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_daeki-cl_vesper_ventures_133,vesper_ventures,daeki-cl,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_daeki-cl_The Ganesha Lab_134,The Ganesha Lab,daeki-cl,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_dart_by_teledx_vesper_ventures_135,vesper_ventures,dart_by_teledx,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_dart_by_teledx_The Ganesha Lab_136,The Ganesha Lab,dart_by_teledx,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_detx_mol_vesper_ventures_137,vesper_ventures,detx_mol,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_detx_mol_The Ganesha Lab_138,The Ganesha Lab,detx_mol,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_diagnosis_biotech_vesper_ventures_139,vesper_ventures,diagnosis_biotech,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_diagnosis_biotech_The Ganesha Lab_140,The Ganesha Lab,diagnosis_biotech,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_diagtech_vesper_ventures_141,vesper_ventures,diagtech,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_diagtech_The Ganesha Lab_142,The Ganesha Lab,diagtech,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_digital-twin-corporation-cr_the_yield_lab_latam_143,the_yield_lab_latam,digital-twin-corporation-cr,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Precision Agriculture + series-a investor patterns
+INFERRED_digital-twin-corporation-cr_morningside_group_144,morningside_group,digital-twin-corporation-cr,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Precision Agriculture + series-a investor patterns
+INFERRED_dimitra-bolivia-operations-bo_monashees_145,monashees,dimitra-bolivia-operations-bo,growth,growth,,,,0,0.5,INFERRED_PATTERN,Inferred from Precision Agriculture + growth investor patterns
+INFERRED_dimitra-bolivia-operations-bo_lightsmith_group_146,lightsmith_group,dimitra-bolivia-operations-bo,growth,growth,,,,0,0.5,INFERRED_PATTERN,Inferred from Precision Agriculture + growth investor patterns
+INFERRED_dioxd_vesper_ventures_147,vesper_ventures,dioxd,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Bioinputs & Crop Resilience + pre-seed investor patterns
+INFERRED_dioxd_The Ganesha Lab_148,The Ganesha Lab,dioxd,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Bioinputs & Crop Resilience + pre-seed investor patterns
+INFERRED_domolif_The Ganesha Lab_149,The Ganesha Lab,domolif,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Food Systems & Alt Proteins + pre-seed investor patterns
+INFERRED_domolif_GridX_150,GridX,domolif,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Food Systems & Alt Proteins + pre-seed investor patterns
+INFERRED_eatcloud-co_the_yield_lab_latam_151,the_yield_lab_latam,eatcloud-co,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Digital AgTech & Agrifintech + series-a investor patterns
+INFERRED_eatcloud-co_newtopia_vc_152,newtopia_vc,eatcloud-co,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Digital AgTech & Agrifintech + series-a investor patterns
+INFERRED_ecocycle-biotech-ec_vesper_ventures_153,vesper_ventures,ecocycle-biotech-ec,seed,seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + seed investor patterns
+INFERRED_ecocycle-biotech-ec_zentynel_154,zentynel,ecocycle-biotech-ec,seed,seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + seed investor patterns
+INFERRED_ecosativa_vesper_ventures_155,vesper_ventures,ecosativa,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Bioinputs & Crop Resilience + pre-seed investor patterns
+INFERRED_ecosativa_The Ganesha Lab_156,The Ganesha Lab,ecosativa,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Bioinputs & Crop Resilience + pre-seed investor patterns
+INFERRED_ecoshell-mx_The Ganesha Lab_157,The Ganesha Lab,ecoshell-mx,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Biomaterials & Green Chemistry + pre-seed investor patterns
+INFERRED_ecoshell-mx_GridX_158,GridX,ecoshell-mx,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Biomaterials & Green Chemistry + pre-seed investor patterns
+INFERRED_energytop-via-proinpa-bo_vesper_ventures_159,vesper_ventures,energytop-via-proinpa-bo,growth,growth,,,,0,0.5,INFERRED_PATTERN,Inferred from Bioinputs & Crop Resilience + growth investor patterns
+INFERRED_energytop-via-proinpa-bo_ecoa_capital_160,ecoa_capital,energytop-via-proinpa-bo,growth,growth,,,,0,0.5,INFERRED_PATTERN,Inferred from Bioinputs & Crop Resilience + growth investor patterns
+INFERRED_epicca_The Ganesha Lab_161,The Ganesha Lab,epicca,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Biomaterials & Green Chemistry + pre-seed investor patterns
+INFERRED_epicca_GridX_162,GridX,epicca,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Biomaterials & Green Chemistry + pre-seed investor patterns
+INFERRED_establishment_labs_vesper_ventures_163,vesper_ventures,establishment_labs,series-c+,series-c+,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + series-c+ investor patterns
+INFERRED_establishment_labs_ecoa_capital_164,ecoa_capital,establishment_labs,series-c+,series-c+,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + series-c+ investor patterns
+INFERRED_fabns_vesper_ventures_165,vesper_ventures,fabns,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_fabns_The Ganesha Lab_166,The Ganesha Lab,fabns,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_farmbox-br_the_yield_lab_latam_167,the_yield_lab_latam,farmbox-br,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Precision Agriculture + pre-seed investor patterns
+INFERRED_farmbox-br_newtopia_vc_168,newtopia_vc,farmbox-br,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Precision Agriculture + pre-seed investor patterns
+INFERRED_fermentlabs-co_the_yield_lab_latam_169,the_yield_lab_latam,fermentlabs-co,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Digital AgTech & Agrifintech + series-a investor patterns
+INFERRED_fermentlabs-co_newtopia_vc_170,newtopia_vc,fermentlabs-co,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Digital AgTech & Agrifintech + series-a investor patterns
+INFERRED_fieldfactors-mx_monashees_171,monashees,fieldfactors-mx,growth,growth,,,,0,0.5,INFERRED_PATTERN,Inferred from Precision Agriculture + growth investor patterns
+INFERRED_fieldfactors-mx_lightsmith_group_172,lightsmith_group,fieldfactors-mx,growth,growth,,,,0,0.5,INFERRED_PATTERN,Inferred from Precision Agriculture + growth investor patterns
+INFERRED_fk_biotecnologia_vesper_ventures_173,vesper_ventures,fk_biotecnologia,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + pre-seed investor patterns
+INFERRED_fk_biotecnologia_The Ganesha Lab_174,The Ganesha Lab,fk_biotecnologia,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + pre-seed investor patterns
+INFERRED_futr_bio_vesper_ventures_175,vesper_ventures,futr_bio,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + pre-seed investor patterns
+INFERRED_futr_bio_The Ganesha Lab_176,The Ganesha Lab,futr_bio,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + pre-seed investor patterns
+INFERRED_galtec_vesper_ventures_177,vesper_ventures,galtec,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + pre-seed investor patterns
+INFERRED_galtec_The Ganesha Lab_178,The Ganesha Lab,galtec,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + pre-seed investor patterns
+INFERRED_geanext-cr_the_yield_lab_latam_179,the_yield_lab_latam,geanext-cr,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Precision Agriculture + series-a investor patterns
+INFERRED_geanext-cr_morningside_group_180,morningside_group,geanext-cr,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Precision Agriculture + series-a investor patterns
+INFERRED_geneprodx-mx_melek_capital_181,melek_capital,geneprodx-mx,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + series-a investor patterns
+INFERRED_geneprodx-mx_atlantico_182,atlantico,geneprodx-mx,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + series-a investor patterns
+INFERRED_gentec_SF500_183,SF500,gentec,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Biomanufacturing & Platform Technologies + pre-seed investor patterns
+INFERRED_gentec_sp_ventures_184,sp_ventures,gentec,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Biomanufacturing & Platform Technologies + pre-seed investor patterns
+INFERRED_glucogear_domo_invest_185,domo_invest,glucogear,seed,seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + seed investor patterns
+INFERRED_glucogear_primatec_186,primatec,glucogear,seed,seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + seed investor patterns
+INFERRED_granatum_bioworks_SF500_187,SF500,granatum_bioworks,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Biomanufacturing & Platform Technologies + pre-seed investor patterns
+INFERRED_granatum_bioworks_sp_ventures_188,sp_ventures,granatum_bioworks,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Biomanufacturing & Platform Technologies + pre-seed investor patterns
+INFERRED_green_biofactory_The Ganesha Lab_189,The Ganesha Lab,green_biofactory,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Food Systems & Alt Proteins + pre-seed investor patterns
+INFERRED_green_biofactory_GridX_190,GridX,green_biofactory,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Food Systems & Alt Proteins + pre-seed investor patterns
+INFERRED_gricha_The Ganesha Lab_191,The Ganesha Lab,gricha,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Food Systems & Alt Proteins + pre-seed investor patterns
+INFERRED_gricha_GridX_192,GridX,gricha,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Food Systems & Alt Proteins + pre-seed investor patterns
+INFERRED_healthpoint-bo_melek_capital_193,melek_capital,healthpoint-bo,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + series-a investor patterns
+INFERRED_healthpoint-bo_atlantico_194,atlantico,healthpoint-bo,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + series-a investor patterns
+INFERRED_hem-healthtech-co_domo_invest_195,domo_invest,hem-healthtech-co,seed,seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + seed investor patterns
+INFERRED_hem-healthtech-co_primatec_196,primatec,hem-healthtech-co,seed,seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + seed investor patterns
+INFERRED_hemoalgae_The Ganesha Lab_197,The Ganesha Lab,hemoalgae,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Food Systems & Alt Proteins + pre-seed investor patterns
+INFERRED_hemoalgae_GridX_198,GridX,hemoalgae,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Food Systems & Alt Proteins + pre-seed investor patterns
+INFERRED_heritas_domo_invest_199,domo_invest,heritas,seed,seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + seed investor patterns
+INFERRED_heritas_primatec_200,primatec,heritas,seed,seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + seed investor patterns
+INFERRED_hoobox_one_vesper_ventures_201,vesper_ventures,hoobox_one,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_hoobox_one_The Ganesha Lab_202,The Ganesha Lab,hoobox_one,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_huna_vesper_ventures_203,vesper_ventures,huna,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_huna_The Ganesha Lab_204,The Ganesha Lab,huna,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_hybridon_The Ganesha Lab_205,The Ganesha Lab,hybridon,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Biomaterials & Green Chemistry + pre-seed investor patterns
+INFERRED_hybridon_GridX_206,GridX,hybridon,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Biomaterials & Green Chemistry + pre-seed investor patterns
+INFERRED_ideelab_vesper_ventures_207,vesper_ventures,ideelab,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Bioinputs & Crop Resilience + pre-seed investor patterns
+INFERRED_ideelab_The Ganesha Lab_208,The Ganesha Lab,ideelab,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Bioinputs & Crop Resilience + pre-seed investor patterns
+INFERRED_innova_space_the_yield_lab_latam_209,the_yield_lab_latam,innova_space,pre-seed,pre-seed,,,,0,0.6,INFERRED_PATTERN,Inferred from Nature & Ecosystem Tech + pre-seed investor patterns
+INFERRED_innovatech-bo_the_yield_lab_latam_210,the_yield_lab_latam,innovatech-bo,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Precision Agriculture + series-a investor patterns
+INFERRED_innovatech-bo_morningside_group_211,morningside_group,innovatech-bo,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Precision Agriculture + series-a investor patterns
+INFERRED_inpulse_medical_vesper_ventures_212,vesper_ventures,inpulse_medical,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_inpulse_medical_The Ganesha Lab_213,The Ganesha Lab,inpulse_medical,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_insitu_vesper_ventures_214,vesper_ventures,insitu,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + pre-seed investor patterns
+INFERRED_insitu_The Ganesha Lab_215,The Ganesha Lab,insitu,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + pre-seed investor patterns
+INFERRED_inspectral-br_the_yield_lab_latam_216,the_yield_lab_latam,inspectral-br,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Precision Agriculture + pre-seed investor patterns
+INFERRED_inspectral-br_newtopia_vc_217,newtopia_vc,inspectral-br,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Precision Agriculture + pre-seed investor patterns
+INFERRED_isla_pharmaceuticals_vesper_ventures_218,vesper_ventures,isla_pharmaceuticals,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + pre-seed investor patterns
+INFERRED_isla_pharmaceuticals_The Ganesha Lab_219,The Ganesha Lab,isla_pharmaceuticals,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + pre-seed investor patterns
+INFERRED_isobar-br_the_yield_lab_latam_220,the_yield_lab_latam,isobar-br,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Precision Agriculture + pre-seed investor patterns
+INFERRED_isobar-br_newtopia_vc_221,newtopia_vc,isobar-br,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Precision Agriculture + pre-seed investor patterns
+INFERRED_kheiron-biotech-ar_vesper_ventures_222,vesper_ventures,kheiron-biotech-ar,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Bioinputs & Crop Resilience + pre-seed investor patterns
+INFERRED_kheiron-biotech-ar_The Ganesha Lab_223,The Ganesha Lab,kheiron-biotech-ar,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Bioinputs & Crop Resilience + pre-seed investor patterns
+INFERRED_kran-nanobubble-cl_The Ganesha Lab_224,The Ganesha Lab,kran-nanobubble-cl,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Food Systems & Alt Proteins + pre-seed investor patterns
+INFERRED_kran-nanobubble-cl_GridX_225,GridX,kran-nanobubble-cl,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Food Systems & Alt Proteins + pre-seed investor patterns
+INFERRED_krilltech_vesper_ventures_226,vesper_ventures,krilltech,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Bioinputs & Crop Resilience + pre-seed investor patterns
+INFERRED_krilltech_The Ganesha Lab_227,The Ganesha Lab,krilltech,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Bioinputs & Crop Resilience + pre-seed investor patterns
+INFERRED_krtl-biotech-bolivia-expansion-bo_grupo_insud_228,grupo_insud,krtl-biotech-bolivia-expansion-bo,growth,growth,,,,0,0.6,INFERRED_PATTERN,Inferred from Therapeutics + growth investor patterns
+INFERRED_labtronics-sas-co_melek_capital_229,melek_capital,labtronics-sas-co,growth,growth,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + growth investor patterns
+INFERRED_labtronics-sas-co_vesper_ventures_230,vesper_ventures,labtronics-sas-co,growth,growth,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + growth investor patterns
+INFERRED_lifepack-co_SOSV_IndieBio_231,SOSV_IndieBio,lifepack-co,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Biomaterials & Green Chemistry + series-a investor patterns
+INFERRED_lifepack-co_GridX_232,GridX,lifepack-co,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Biomaterials & Green Chemistry + series-a investor patterns
+INFERRED_lilliput-technologies-cr_the_yield_lab_latam_233,the_yield_lab_latam,lilliput-technologies-cr,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Precision Agriculture + series-a investor patterns
+INFERRED_lilliput-technologies-cr_morningside_group_234,morningside_group,lilliput-technologies-cr,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Precision Agriculture + series-a investor patterns
+INFERRED_lilliput-technologies-ltd-cr_the_yield_lab_latam_235,the_yield_lab_latam,lilliput-technologies-ltd-cr,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Precision Agriculture + series-a investor patterns
+INFERRED_lilliput-technologies-ltd-cr_morningside_group_236,morningside_group,lilliput-technologies-ltd-cr,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Precision Agriculture + series-a investor patterns
+INFERRED_linda_lifetech_vesper_ventures_237,vesper_ventures,linda_lifetech,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_linda_lifetech_The Ganesha Lab_238,The Ganesha Lab,linda_lifetech,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_lizarbio_vesper_ventures_239,vesper_ventures,lizarbio,seed,seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + seed investor patterns
+INFERRED_lizarbio_zentynel_240,zentynel,lizarbio,seed,seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + seed investor patterns
+INFERRED_magenta-biolabs-cr_ecoa_capital_241,ecoa_capital,magenta-biolabs-cr,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + series-a investor patterns
+INFERRED_magenta-biolabs-cr_zentynel_242,zentynel,magenta-biolabs-cr,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + series-a investor patterns
+INFERRED_magic-green-cr_the_yield_lab_latam_243,the_yield_lab_latam,magic-green-cr,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Precision Agriculture + series-a investor patterns
+INFERRED_magic-green-cr_morningside_group_244,morningside_group,magic-green-cr,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Precision Agriculture + series-a investor patterns
+INFERRED_medimarket-online-ve_melek_capital_245,melek_capital,medimarket-online-ve,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + series-a investor patterns
+INFERRED_medimarket-online-ve_atlantico_246,atlantico,medimarket-online-ve,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + series-a investor patterns
+INFERRED_merken-biotech-cl_vesper_ventures_247,vesper_ventures,merken-biotech-cl,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + pre-seed investor patterns
+INFERRED_merken-biotech-cl_The Ganesha Lab_248,The Ganesha Lab,merken-biotech-cl,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + pre-seed investor patterns
+INFERRED_meton_vesper_ventures_249,vesper_ventures,meton,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_meton_The Ganesha Lab_250,The Ganesha Lab,meton,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_microbiota-agricola-br_vesper_ventures_251,vesper_ventures,microbiota-agricola-br,growth,growth,,,,0,0.5,INFERRED_PATTERN,Inferred from Bioinputs & Crop Resilience + growth investor patterns
+INFERRED_microbiota-agricola-br_ecoa_capital_252,ecoa_capital,microbiota-agricola-br,growth,growth,,,,0,0.5,INFERRED_PATTERN,Inferred from Bioinputs & Crop Resilience + growth investor patterns
+INFERRED_microlabs-mx_vesper_ventures_253,vesper_ventures,microlabs-mx,growth,growth,,,,0,0.5,INFERRED_PATTERN,Inferred from Bioinputs & Crop Resilience + growth investor patterns
+INFERRED_microlabs-mx_ecoa_capital_254,ecoa_capital,microlabs-mx,growth,growth,,,,0,0.5,INFERRED_PATTERN,Inferred from Bioinputs & Crop Resilience + growth investor patterns
+INFERRED_microscopia_vesper_ventures_255,vesper_ventures,microscopia,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_microscopia_The Ganesha Lab_256,The Ganesha Lab,microscopia,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_minerba-ec_chileglobal_ventures_257,chileglobal_ventures,minerba-ec,seed,seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Precision Agriculture + seed investor patterns
+INFERRED_minerba-ec_slc_agricola_258,slc_agricola,minerba-ec,seed,seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Precision Agriculture + seed investor patterns
+INFERRED_mirai_3d_vesper_ventures_259,vesper_ventures,mirai_3d,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_mirai_3d_The Ganesha Lab_260,The Ganesha Lab,mirai_3d,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_mirscience-therapeutics-br_vesper_ventures_261,vesper_ventures,mirscience-therapeutics-br,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + pre-seed investor patterns
+INFERRED_mirscience-therapeutics-br_The Ganesha Lab_262,The Ganesha Lab,mirscience-therapeutics-br,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + pre-seed investor patterns
+INFERRED_moondo_The Ganesha Lab_263,The Ganesha Lab,moondo,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Food Systems & Alt Proteins + pre-seed investor patterns
+INFERRED_moondo_GridX_264,GridX,moondo,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Food Systems & Alt Proteins + pre-seed investor patterns
+INFERRED_motivia-ar_vesper_ventures_265,vesper_ventures,motivia-ar,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_motivia-ar_The Ganesha Lab_266,The Ganesha Lab,motivia-ar,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_myvac-bioproducts-br_vox_capital_267,vox_capital,myvac-bioproducts-br,growth,growth,,,,0,0.5,INFERRED_PATTERN,Inferred from Digital AgTech & Agrifintech + growth investor patterns
+INFERRED_myvac-bioproducts-br_the_yield_lab_latam_268,the_yield_lab_latam,myvac-bioproducts-br,growth,growth,,,,0,0.5,INFERRED_PATTERN,Inferred from Digital AgTech & Agrifintech + growth investor patterns
+INFERRED_mzp-tecnologia-ar_vesper_ventures_269,vesper_ventures,mzp-tecnologia-ar,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_mzp-tecnologia-ar_The Ganesha Lab_270,The Ganesha Lab,mzp-tecnologia-ar,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_naiad_vesper_ventures_271,vesper_ventures,naiad,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + pre-seed investor patterns
+INFERRED_naiad_The Ganesha Lab_272,The Ganesha Lab,naiad,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + pre-seed investor patterns
+INFERRED_nanoblast_The Ganesha Lab_273,The Ganesha Lab,nanoblast,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Biomaterials & Green Chemistry + pre-seed investor patterns
+INFERRED_nanoblast_GridX_274,GridX,nanoblast,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Biomaterials & Green Chemistry + pre-seed investor patterns
+INFERRED_nanofreeze_The Ganesha Lab_275,The Ganesha Lab,nanofreeze,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Food Systems & Alt Proteins + pre-seed investor patterns
+INFERRED_nanofreeze_GridX_276,GridX,nanofreeze,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Food Systems & Alt Proteins + pre-seed investor patterns
+INFERRED_nanomedical-cr_melek_capital_277,melek_capital,nanomedical-cr,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + series-a investor patterns
+INFERRED_nanomedical-cr_atlantico_278,atlantico,nanomedical-cr,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + series-a investor patterns
+INFERRED_nanopharmacia-group-mx_The Ganesha Lab_279,The Ganesha Lab,nanopharmacia-group-mx,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Biomaterials & Green Chemistry + pre-seed investor patterns
+INFERRED_nanopharmacia-group-mx_GridX_280,GridX,nanopharmacia-group-mx,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Biomaterials & Green Chemistry + pre-seed investor patterns
+INFERRED_nanotropic_tecnologia_The Ganesha Lab_281,The Ganesha Lab,nanotropic_tecnologia,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Biomaterials & Green Chemistry + pre-seed investor patterns
+INFERRED_nanotropic_tecnologia_GridX_282,GridX,nanotropic_tecnologia,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Biomaterials & Green Chemistry + pre-seed investor patterns
+INFERRED_nanovetores_group_The Ganesha Lab_283,The Ganesha Lab,nanovetores_group,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Biomaterials & Green Chemistry + pre-seed investor patterns
+INFERRED_nanovetores_group_GridX_284,GridX,nanovetores_group,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Biomaterials & Green Chemistry + pre-seed investor patterns
+INFERRED_nativas_the_yield_lab_latam_285,the_yield_lab_latam,nativas,pre-seed,pre-seed,,,,0,0.6,INFERRED_PATTERN,Inferred from Nature & Ecosystem Tech + pre-seed investor patterns
+INFERRED_nchemi-br_The Ganesha Lab_286,The Ganesha Lab,nchemi-br,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Biomaterials & Green Chemistry + pre-seed investor patterns
+INFERRED_nchemi-br_GridX_287,GridX,nchemi-br,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Biomaterials & Green Chemistry + pre-seed investor patterns
+INFERRED_nemacontrol-biologicos-br_vesper_ventures_288,vesper_ventures,nemacontrol-biologicos-br,growth,growth,,,,0,0.5,INFERRED_PATTERN,Inferred from Bioinputs & Crop Resilience + growth investor patterns
+INFERRED_nemacontrol-biologicos-br_ecoa_capital_289,ecoa_capital,nemacontrol-biologicos-br,growth,growth,,,,0,0.5,INFERRED_PATTERN,Inferred from Bioinputs & Crop Resilience + growth investor patterns
+INFERRED_neomed-br_vesper_ventures_290,vesper_ventures,neomed-br,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_neomed-br_The Ganesha Lab_291,The Ganesha Lab,neomed-br,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_neurognos_vesper_ventures_292,vesper_ventures,neurognos,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_neurognos_The Ganesha Lab_293,The Ganesha Lab,neurognos,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_nocarbon_milk_The Ganesha Lab_294,The Ganesha Lab,nocarbon_milk,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Food Systems & Alt Proteins + pre-seed investor patterns
+INFERRED_nocarbon_milk_GridX_295,GridX,nocarbon_milk,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Food Systems & Alt Proteins + pre-seed investor patterns
+INFERRED_novagenic_affinity_vesper_ventures_296,vesper_ventures,novagenic_affinity,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_novagenic_affinity_The Ganesha Lab_297,The Ganesha Lab,novagenic_affinity,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_novalact_The Ganesha Lab_298,The Ganesha Lab,novalact,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Food Systems & Alt Proteins + pre-seed investor patterns
+INFERRED_novalact_GridX_299,GridX,novalact,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Food Systems & Alt Proteins + pre-seed investor patterns
+INFERRED_nutrissis-biotech-br_the_yield_lab_latam_300,the_yield_lab_latam,nutrissis-biotech-br,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Digital AgTech & Agrifintech + series-a investor patterns
+INFERRED_nutrissis-biotech-br_newtopia_vc_301,newtopia_vc,nutrissis-biotech-br,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Digital AgTech & Agrifintech + series-a investor patterns
+INFERRED_odd_industries_the_yield_lab_latam_302,the_yield_lab_latam,odd_industries,seed,seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Nature & Ecosystem Tech + seed investor patterns
+INFERRED_odd_industries_GridX_303,GridX,odd_industries,seed,seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Nature & Ecosystem Tech + seed investor patterns
+INFERRED_omica_vesper_ventures_304,vesper_ventures,omica,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_omica_The Ganesha Lab_305,The Ganesha Lab,omica,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_panarum_vesper_ventures_306,vesper_ventures,panarum,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + pre-seed investor patterns
+INFERRED_panarum_The Ganesha Lab_307,The Ganesha Lab,panarum,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + pre-seed investor patterns
+INFERRED_patagonia-biotechnology-cl_vesper_ventures_308,vesper_ventures,patagonia-biotechnology-cl,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Bioinputs & Crop Resilience + pre-seed investor patterns
+INFERRED_patagonia-biotechnology-cl_The Ganesha Lab_309,The Ganesha Lab,patagonia-biotechnology-cl,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Bioinputs & Crop Resilience + pre-seed investor patterns
+INFERRED_pathovet_vesper_ventures_310,vesper_ventures,pathovet,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_pathovet_The Ganesha Lab_311,The Ganesha Lab,pathovet,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_peptidus-biotech-br_vesper_ventures_312,vesper_ventures,peptidus-biotech-br,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + pre-seed investor patterns
+INFERRED_peptidus-biotech-br_The Ganesha Lab_313,The Ganesha Lab,peptidus-biotech-br,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + pre-seed investor patterns
+INFERRED_pharmalens-br_SF500_314,SF500,pharmalens-br,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Biomanufacturing & Platform Technologies + pre-seed investor patterns
+INFERRED_pharmalens-br_sp_ventures_315,sp_ventures,pharmalens-br,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Biomanufacturing & Platform Technologies + pre-seed investor patterns
+INFERRED_photio_The Ganesha Lab_316,The Ganesha Lab,photio,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Biomaterials & Green Chemistry + pre-seed investor patterns
+INFERRED_photio_GridX_317,GridX,photio,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Biomaterials & Green Chemistry + pre-seed investor patterns
+INFERRED_php_biotech_vesper_ventures_318,vesper_ventures,php_biotech,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + pre-seed investor patterns
+INFERRED_php_biotech_The Ganesha Lab_319,The Ganesha Lab,php_biotech,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + pre-seed investor patterns
+INFERRED_pickcells_vesper_ventures_320,vesper_ventures,pickcells,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_pickcells_The Ganesha Lab_321,The Ganesha Lab,pickcells,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_pixed_vesper_ventures_322,vesper_ventures,pixed,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_pixed_The Ganesha Lab_323,The Ganesha Lab,pixed,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_plantverd-mx_fondo_alerce_324,fondo_alerce,plantverd-mx,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Food Systems & Alt Proteins + series-a investor patterns
+INFERRED_plantverd-mx_sp_ventures_325,sp_ventures,plantverd-mx,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Food Systems & Alt Proteins + series-a investor patterns
+INFERRED_pow_foods_The Ganesha Lab_326,The Ganesha Lab,pow_foods,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Food Systems & Alt Proteins + pre-seed investor patterns
+INFERRED_pow_foods_GridX_327,GridX,pow_foods,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Food Systems & Alt Proteins + pre-seed investor patterns
+INFERRED_praxis-biotech-cl_vesper_ventures_328,vesper_ventures,praxis-biotech-cl,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + pre-seed investor patterns
+INFERRED_praxis-biotech-cl_The Ganesha Lab_329,The Ganesha Lab,praxis-biotech-cl,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + pre-seed investor patterns
+INFERRED_precision_ag_the_yield_lab_latam_330,the_yield_lab_latam,precision_ag,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Precision Agriculture + pre-seed investor patterns
+INFERRED_precision_ag_newtopia_vc_331,newtopia_vc,precision_ag,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Precision Agriculture + pre-seed investor patterns
+INFERRED_progal_The Ganesha Lab_332,The Ganesha Lab,progal,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Food Systems & Alt Proteins + pre-seed investor patterns
+INFERRED_progal_GridX_333,GridX,progal,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Food Systems & Alt Proteins + pre-seed investor patterns
+INFERRED_prosperia_domo_invest_334,domo_invest,prosperia,seed,seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + seed investor patterns
+INFERRED_prosperia_primatec_335,primatec,prosperia,seed,seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + seed investor patterns
+INFERRED_quantis-br_vesper_ventures_336,vesper_ventures,quantis-br,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + pre-seed investor patterns
+INFERRED_quantis-br_The Ganesha Lab_337,The Ganesha Lab,quantis-br,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + pre-seed investor patterns
+INFERRED_quipu-cr_the_yield_lab_latam_338,the_yield_lab_latam,quipu-cr,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Precision Agriculture + series-a investor patterns
+INFERRED_quipu-cr_morningside_group_339,morningside_group,quipu-cr,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Precision Agriculture + series-a investor patterns
+INFERRED_recombine-biotech-br_fondo_alerce_340,fondo_alerce,recombine-biotech-br,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Food Systems & Alt Proteins + series-a investor patterns
+INFERRED_recombine-biotech-br_sp_ventures_341,sp_ventures,recombine-biotech-br,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Food Systems & Alt Proteins + series-a investor patterns
+INFERRED_respiratorydx-co_melek_capital_342,melek_capital,respiratorydx-co,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + series-a investor patterns
+INFERRED_respiratorydx-co_atlantico_343,atlantico,respiratorydx-co,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + series-a investor patterns
+INFERRED_rizoflora_biotechnology_acq_by_stoller_vesper_ventures_344,vesper_ventures,rizoflora_biotechnology_acq_by_stoller,seed,seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Bioinputs & Crop Resilience + seed investor patterns
+INFERRED_rizoflora_biotechnology_acq_by_stoller_the_yield_lab_latam_345,the_yield_lab_latam,rizoflora_biotechnology_acq_by_stoller,seed,seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Bioinputs & Crop Resilience + seed investor patterns
+INFERRED_rnatech-ar_The Ganesha Lab_346,The Ganesha Lab,rnatech-ar,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Food Systems & Alt Proteins + pre-seed investor patterns
+INFERRED_rnatech-ar_GridX_347,GridX,rnatech-ar,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Food Systems & Alt Proteins + pre-seed investor patterns
+INFERRED_savefruit-mx_The Ganesha Lab_348,The Ganesha Lab,savefruit-mx,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Food Systems & Alt Proteins + pre-seed investor patterns
+INFERRED_savefruit-mx_GridX_349,GridX,savefruit-mx,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Food Systems & Alt Proteins + pre-seed investor patterns
+INFERRED_scintia-mx_ecoa_capital_350,ecoa_capital,scintia-mx,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + series-a investor patterns
+INFERRED_scintia-mx_zentynel_351,zentynel,scintia-mx,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + series-a investor patterns
+INFERRED_selectivity_vesper_ventures_352,vesper_ventures,selectivity,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_selectivity_The Ganesha Lab_353,The Ganesha Lab,selectivity,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_silicochem-ec_monashees_354,monashees,silicochem-ec,growth,growth,,,,0,0.5,INFERRED_PATTERN,Inferred from Precision Agriculture + growth investor patterns
+INFERRED_silicochem-ec_lightsmith_group_355,lightsmith_group,silicochem-ec,growth,growth,,,,0,0.5,INFERRED_PATTERN,Inferred from Precision Agriculture + growth investor patterns
+INFERRED_silohub_sp_ventures_356,sp_ventures,silohub,pre-seed,pre-seed,,,,0,0.6,INFERRED_PATTERN,Inferred from Digital AgTech & Agrifintech + pre-seed investor patterns
+INFERRED_siquimia_vesper_ventures_357,vesper_ventures,siquimia,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_siquimia_The Ganesha Lab_358,The Ganesha Lab,siquimia,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_smatter_The Ganesha Lab_359,The Ganesha Lab,smatter,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Biomaterials & Green Chemistry + pre-seed investor patterns
+INFERRED_smatter_GridX_360,GridX,smatter,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Biomaterials & Green Chemistry + pre-seed investor patterns
+INFERRED_solena-mx_vesper_ventures_361,vesper_ventures,solena-mx,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Bioinputs & Crop Resilience + pre-seed investor patterns
+INFERRED_solena-mx_The Ganesha Lab_362,The Ganesha Lab,solena-mx,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Bioinputs & Crop Resilience + pre-seed investor patterns
+INFERRED_speratum_vesper_ventures_363,vesper_ventures,speratum,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + pre-seed investor patterns
+INFERRED_speratum_The Ganesha Lab_364,The Ganesha Lab,speratum,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + pre-seed investor patterns
+INFERRED_spora_biotech_The Ganesha Lab_365,The Ganesha Lab,spora_biotech,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Biomaterials & Green Chemistry + pre-seed investor patterns
+INFERRED_spora_biotech_GridX_366,GridX,spora_biotech,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Biomaterials & Green Chemistry + pre-seed investor patterns
+INFERRED_swebol-biotech-bo_monashees_367,monashees,swebol-biotech-bo,growth,growth,,,,0,0.5,INFERRED_PATTERN,Inferred from Precision Agriculture + growth investor patterns
+INFERRED_swebol-biotech-bo_lightsmith_group_368,lightsmith_group,swebol-biotech-bo,growth,growth,,,,0,0.5,INFERRED_PATTERN,Inferred from Precision Agriculture + growth investor patterns
+INFERRED_taugc-bioinformatics-br_vesper_ventures_369,vesper_ventures,taugc-bioinformatics-br,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_taugc-bioinformatics-br_The Ganesha Lab_370,The Ganesha Lab,taugc-bioinformatics-br,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_terragene-ar_vesper_ventures_371,vesper_ventures,terragene-ar,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_terragene-ar_The Ganesha Lab_372,The Ganesha Lab,terragene-ar,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_theravax_vesper_ventures_373,vesper_ventures,theravax,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + pre-seed investor patterns
+INFERRED_theravax_The Ganesha Lab_374,The Ganesha Lab,theravax,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + pre-seed investor patterns
+INFERRED_thermy_vesper_ventures_375,vesper_ventures,thermy,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_thermy_The Ganesha Lab_376,The Ganesha Lab,thermy,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_tierra-de-monte-mx_chileglobal_ventures_377,chileglobal_ventures,tierra-de-monte-mx,seed,seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Food Systems & Alt Proteins + seed investor patterns
+INFERRED_tierra-de-monte-mx_the_yield_lab_latam_378,the_yield_lab_latam,tierra-de-monte-mx,seed,seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Food Systems & Alt Proteins + seed investor patterns
+INFERRED_treevia-br_the_yield_lab_latam_379,the_yield_lab_latam,treevia-br,seed,seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Nature & Ecosystem Tech + seed investor patterns
+INFERRED_treevia-br_GridX_380,GridX,treevia-br,seed,seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Nature & Ecosystem Tech + seed investor patterns
+INFERRED_tuplaza_sp_ventures_381,sp_ventures,tuplaza,pre-seed,pre-seed,,,,0,0.6,INFERRED_PATTERN,Inferred from Digital AgTech & Agrifintech + pre-seed investor patterns
+INFERRED_vaxinz_vesper_ventures_382,vesper_ventures,vaxinz,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + pre-seed investor patterns
+INFERRED_vaxinz_The Ganesha Lab_383,The Ganesha Lab,vaxinz,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + pre-seed investor patterns
+INFERRED_veloz_bio_The Ganesha Lab_384,The Ganesha Lab,veloz_bio,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Food Systems & Alt Proteins + pre-seed investor patterns
+INFERRED_veloz_bio_GridX_385,GridX,veloz_bio,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Food Systems & Alt Proteins + pre-seed investor patterns
+INFERRED_vetpix_vesper_ventures_386,vesper_ventures,vetpix,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_vetpix_The Ganesha Lab_387,The Ganesha Lab,vetpix,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Diagnostics & Devices + pre-seed investor patterns
+INFERRED_virtech_bio_vesper_ventures_388,vesper_ventures,virtech_bio,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + pre-seed investor patterns
+INFERRED_virtech_bio_The Ganesha Lab_389,The Ganesha Lab,virtech_bio,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + pre-seed investor patterns
+INFERRED_vitales-br_vesper_ventures_390,vesper_ventures,vitales-br,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Bioinputs & Crop Resilience + pre-seed investor patterns
+INFERRED_vitales-br_The Ganesha Lab_391,The Ganesha Lab,vitales-br,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Bioinputs & Crop Resilience + pre-seed investor patterns
+INFERRED_wayakit_The Ganesha Lab_392,The Ganesha Lab,wayakit,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Food Systems & Alt Proteins + pre-seed investor patterns
+INFERRED_wayakit_GridX_393,GridX,wayakit,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Food Systems & Alt Proteins + pre-seed investor patterns
+INFERRED_webio-ar_vesper_ventures_394,vesper_ventures,webio-ar,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + pre-seed investor patterns
+INFERRED_webio-ar_The Ganesha Lab_395,The Ganesha Lab,webio-ar,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Therapeutics + pre-seed investor patterns
+INFERRED_wseeds-co_the_yield_lab_latam_396,the_yield_lab_latam,wseeds-co,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Precision Agriculture + series-a investor patterns
+INFERRED_wseeds-co_morningside_group_397,morningside_group,wseeds-co,series-a,series-a,,,,0,0.5,INFERRED_PATTERN,Inferred from Precision Agriculture + series-a investor patterns
+INFERRED_ymmunobio_The Ganesha Lab_398,The Ganesha Lab,ymmunobio,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Food Systems & Alt Proteins + pre-seed investor patterns
+INFERRED_ymmunobio_GridX_399,GridX,ymmunobio,pre-seed,pre-seed,,,,0,0.5,INFERRED_PATTERN,Inferred from Food Systems & Alt Proteins + pre-seed investor patterns
