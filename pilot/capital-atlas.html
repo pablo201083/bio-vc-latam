@@ -952,6 +952,24 @@
         <span style="display:inline-block;width:11px;height:11px;border-radius:2px;background:rgba(180,168,150,.4);vertical-align:middle;margin-right:5px;margin-left:8px"></span>Sin capital documentado
       </div>
     </div>
+
+    <div class="cs-card cs-span2">
+      <div class="cs-card-title">Madurez por país — ¿dónde están atascadas las startups?</div>
+      <div id="cs-country-pyramid"></div>
+      <div class="cs-note" id="cs-country-pyramid-note"></div>
+    </div>
+
+    <div class="cs-card cs-span2">
+      <div class="cs-card-title">Especialización temática por país</div>
+      <div id="cs-country-themes"></div>
+      <div class="cs-note">Tamaño del círculo = # startups. Las especializaciones más fuertes emergen donde el ecosistema local tiene ventaja comparativa.</div>
+    </div>
+
+    <div class="cs-card cs-span2">
+      <div class="cs-card-title">Flujos de capital transfronterizos — inversor × startup por país</div>
+      <div id="cs-cross-border"></div>
+      <div class="cs-note" id="cs-cross-border-note"></div>
+    </div>
   </div>
 </section>
 
@@ -976,7 +994,7 @@
 <script src="./capital-atlas.js?v=20260607bio-toggle" defer></script>
 <script src="./coverage-data.js?v=20260610" defer></script>
 <script src="./coverage-note.js?v=20260610" defer></script>
-<script src="./capital-structure-data.js?v=20260611" defer></script>
+<script src="./capital-structure-data.js?v=20260613country" defer></script>
 <script>
 document.addEventListener('DOMContentLoaded', function(){
   var CS = window.CAPITAL_STRUCTURE;
@@ -1150,6 +1168,171 @@ document.addEventListener('DOMContentLoaded', function(){
     });
     parts.push('</svg>');
     document.getElementById('cs-cohorts').innerHTML = parts.join('');
+  })();
+
+  // ── Madurez por país ─────────────────────────────────────────────
+  (function(){
+    if (!CS.country_pyramids) return;
+    var cp = CS.country_pyramids;
+    var STAGE_COLORS = {
+      "Pre-seed / Accelerator": "rgba(180,168,150,.5)",
+      "Seed":                   "rgba(11,143,135,.42)",
+      "Series A":               "rgba(11,143,135,.76)",
+      "Growth (B–D)":     "#0B8F87",
+      "Exit / IPO":             "#065f46"
+    };
+    var COUNTRY_NAMES = {AR:'Argentina',BR:'Brasil',CL:'Chile',MX:'México',CO:'Colombia',
+                         CR:'Costa Rica',UY:'Uruguay',BO:'Bolivia',EC:'Ecuador',PE:'Perú'};
+    var legendHtml = Object.keys(STAGE_COLORS).map(function(lvl){
+      return '<span style="display:inline-flex;align-items:center;gap:4px;font-size:.68rem;color:var(--muted)">' +
+             '<span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:'+STAGE_COLORS[lvl]+'"></span>'+lvl+'</span>';
+    }).join('');
+
+    var html = '<div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:12px">'+legendHtml+'</div>';
+
+    // Sort by series_a_plus_ratio desc
+    var sorted = cp.country_order.filter(function(cc){ var d=cp.by_country[cc]; return d && d.funded>=3; })
+      .sort(function(a,b){ return cp.by_country[b].series_a_plus_ratio - cp.by_country[a].series_a_plus_ratio; });
+
+    sorted.forEach(function(cc){
+      var d = cp.by_country[cc];
+      var total = d.funded;
+      var parts = '';
+      cp.level_order.forEach(function(lvl){
+        var n = d.levels[lvl] || 0;
+        if (n === 0) return;
+        var col2 = STAGE_COLORS[lvl] || '#ccc';
+        var tip = lvl+': '+n;
+        parts += '<div title="'+tip+'" style="flex:'+n+';background:'+col2+';height:100%;min-width:2px"></div>';
+      });
+      var ratio = Math.round(d.series_a_plus_ratio * 100);
+      var ratioColor = ratio >= 25 ? ACCENT : WARM;
+      var breakdown = cp.level_order.map(function(lvl){
+        var n = d.levels[lvl] || 0;
+        return n > 0 ? '<span style="font-size:.66rem;color:var(--muted)">'+lvl.split(' ')[0]+':'+n+'</span>' : '';
+      }).filter(Boolean).join(' · ');
+      html += '<div style="display:grid;grid-template-columns:110px 1fr 120px 58px;align-items:center;gap:8px;margin:4px 0">' +
+        '<div style="font-size:.76rem;font-weight:700;color:var(--ink)">'+esc(COUNTRY_NAMES[cc]||cc)+'</div>' +
+        '<div style="height:20px;border-radius:5px;overflow:hidden;display:flex;background:rgba(0,0,0,.05)">'+parts+'</div>' +
+        '<div style="font-size:.67rem;color:var(--muted)">'+breakdown+'</div>' +
+        '<div style="font-size:.76rem;font-weight:800;text-align:right;color:'+ratioColor+'">'+ratio+'% A+</div>' +
+        '</div>';
+    });
+
+    document.getElementById('cs-country-pyramid').innerHTML = html;
+    document.getElementById('cs-country-pyramid-note').innerHTML =
+      '% A+ = proporción de empresas en Series A o superior sobre las financiadas. ' +
+      '<span style="color:'+ACCENT+';font-weight:700">Verde</span> = ≥25% · ' +
+      '<span style="color:'+WARM+';font-weight:700">Naranja</span> = por debajo. ' +
+      'Ordenado de mayor a menor madurez.';
+  })();
+
+  // ── Especialización temática por país ────────────────────────────
+  (function(){
+    if (!CS.country_themes) return;
+    var ct = CS.country_themes;
+    var THEME_ORDER_8 = [
+      "Diagnostics & Devices","Therapeutics","Bioinputs & Crop Resilience",
+      "Food Systems & Alt Proteins","Biomaterials & Green Chemistry",
+      "Precision Agriculture","Nature & Ecosystem Tech",
+      "Biomanufacturing & Platform Technologies"
+    ];
+    var countries = ct.country_order.slice(0, 9);
+    var ROW_H = 32, COL_W = 58, PAD_L = 176, PAD_T = 28, PAD_B = 6;
+    var W = PAD_L + countries.length * COL_W + 8;
+    var H = PAD_T + THEME_ORDER_8.length * ROW_H + PAD_B;
+    var parts = ['<svg viewBox="0 0 '+W+' '+H+'" style="width:100%;display:block;max-width:900px">'];
+
+    // Column headers
+    countries.forEach(function(cc, ci){
+      var x = PAD_L + ci * COL_W + COL_W/2;
+      parts.push('<text x="'+x+'" y="'+(PAD_T-6)+'" text-anchor="middle" font-size="10" font-weight="700" font-family="inherit" fill="rgba(80,65,52,.8)">'+cc+'</text>');
+    });
+
+    THEME_ORDER_8.forEach(function(theme, ti){
+      if (!ct.matrix[theme]) return;
+      var y = PAD_T + ti * ROW_H;
+      var themeColor = THEME_PAL[theme] || '#888';
+      var maxN = ct.theme_max[theme] || 1;
+
+      // Alternating row bg
+      if (ti % 2 === 0) {
+        parts.push('<rect x="0" y="'+y+'" width="'+W+'" height="'+ROW_H+'" fill="rgba(0,0,0,.018)"/>');
+      }
+      // Row label
+      parts.push('<text x="'+(PAD_L-8)+'" y="'+(y+ROW_H/2+1)+'" text-anchor="end" dominant-baseline="middle" font-size="9.5" font-family="inherit" fill="rgba(60,48,38,.82)">'+sh(theme)+'</text>');
+      // Color swatch
+      parts.push('<rect x="'+(PAD_L-24)+'" y="'+(y+ROW_H/2-4)+'" width="8" height="8" rx="2" fill="'+themeColor+'" opacity=".8"/>');
+
+      countries.forEach(function(cc, ci){
+        var n = (ct.matrix[theme] || {})[cc] || 0;
+        var cx = PAD_L + ci * COL_W + COL_W/2;
+        var cy = y + ROW_H/2;
+        if (n === 0) {
+          parts.push('<circle cx="'+cx+'" cy="'+cy+'" r="2.5" fill="rgba(0,0,0,.08)"/>');
+          return;
+        }
+        var r = Math.max(5, Math.min(13, Math.round(Math.sqrt(n/maxN)*13)));
+        var opacity = (0.38 + 0.62*(n/maxN)).toFixed(2);
+        parts.push('<circle cx="'+cx+'" cy="'+cy+'" r="'+r+'" fill="'+themeColor+'" opacity="'+opacity+'"><title>'+sh(theme)+' · '+cc+': '+n+'</title></circle>');
+        if (n >= 5) {
+          parts.push('<text x="'+cx+'" y="'+(cy+1)+'" text-anchor="middle" dominant-baseline="middle" font-size="8.5" font-weight="700" font-family="inherit" fill="#fff">'+n+'</text>');
+        } else {
+          parts.push('<text x="'+cx+'" y="'+(cy+1)+'" text-anchor="middle" dominant-baseline="middle" font-size="7.5" font-weight="700" font-family="inherit" fill="#fff">'+n+'</text>');
+        }
+      });
+    });
+    parts.push('</svg>');
+    document.getElementById('cs-country-themes').innerHTML = parts.join('');
+  })();
+
+  // ── Flujos transfronterizos ──────────────────────────────────────
+  (function(){
+    if (!CS.cross_border) return;
+    var cb = CS.cross_border;
+    var FLAGS = {AR:'🇦🇷',BR:'🇧🇷',CL:'🇨🇱',MX:'🇲🇽',CO:'🇨🇴',CR:'🇨🇷',
+                 UY:'🇺🇾',BO:'🇧🇴',EC:'🇪🇨',PE:'🇵🇪',US:'🇺🇸',FI:'🇫🇮',BE:'🇧🇪',HK:'🇭🇰',ES:'🇪🇸'};
+
+    var flowMap = {};
+    cb.flows.forEach(function(f){ flowMap[f.from+'_'+f.to] = f.n; });
+
+    var srcCountries = cb.top_sources.slice(0,8).map(function(x){ return x[0]; });
+    var dstCountries = ['AR','BR','CL','MX','CO','CR','UY','BO','EC'];
+
+    var maxN = Math.max.apply(null, cb.flows.map(function(f){ return f.n; }));
+
+    var html = '<div style="overflow-x:auto"><table style="border-collapse:collapse;font-size:.73rem;white-space:nowrap;width:100%">';
+    html += '<thead><tr><th style="padding:5px 10px;color:var(--muted);text-align:left;border-bottom:1.5px solid var(--line);font-size:.7rem;letter-spacing:.04em;text-transform:uppercase">Inversor ↓ · Startup →</th>';
+    dstCountries.forEach(function(cc){
+      html += '<th style="padding:5px 8px;text-align:center;border-bottom:1.5px solid var(--line);font-weight:700;color:var(--muted);font-size:.72rem">'+(FLAGS[cc]||cc)+' '+cc+'</th>';
+    });
+    html += '<th style="padding:5px 8px;text-align:right;border-bottom:1.5px solid var(--line);color:var(--muted);font-size:.7rem">Cross-border</th></tr></thead><tbody>';
+
+    srcCountries.forEach(function(src){
+      var rowTotal = dstCountries.reduce(function(s,dst){ return s+(flowMap[src+'_'+dst]||0); },0);
+      if (rowTotal === 0) return;
+      var crossTotal = dstCountries.reduce(function(s,dst){ return src!==dst ? s+(flowMap[src+'_'+dst]||0) : s; },0);
+      html += '<tr><td style="padding:5px 10px;font-weight:700;color:var(--ink);border-bottom:1px solid rgba(217,206,190,.3)">'+(FLAGS[src]||src)+' '+src+'</td>';
+      dstCountries.forEach(function(dst){
+        var n = flowMap[src+'_'+dst] || 0;
+        var isDiag = src === dst;
+        var intensity = n > 0 ? (0.1 + 0.9*(n/maxN)) : 0;
+        var bg = n > 0 ? (isDiag ? 'rgba(42,122,66,'+intensity.toFixed(2)+')' : 'rgba(11,143,135,'+intensity.toFixed(2)+')') : '';
+        var txtColor = intensity > 0.35 ? '#fff' : (n > 0 ? 'var(--ink)' : 'rgba(120,100,80,.3)');
+        html += '<td style="padding:5px 8px;text-align:center;border-bottom:1px solid rgba(217,206,190,.3);'+(bg?'background:'+bg+';':'')+'color:'+txtColor+';font-weight:'+(n>0?'700':'400')+'">'+(n>0?n:'·')+'</td>';
+      });
+      html += '<td style="padding:5px 8px;text-align:right;border-bottom:1px solid rgba(217,206,190,.3);font-size:.72rem;color:var(--muted);font-weight:600">'+crossTotal+'</td></tr>';
+    });
+    html += '</tbody></table></div>';
+
+    document.getElementById('cs-cross-border').innerHTML = html;
+    var topSrc = cb.top_cross_border[0];
+    var topSrc2 = cb.top_cross_border[1];
+    document.getElementById('cs-cross-border-note').innerHTML =
+      '<span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:rgba(11,143,135,.7);vertical-align:middle;margin-right:4px"></span>Teal = capital transfronterizo · ' +
+      '<span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:rgba(42,122,66,.7);vertical-align:middle;margin-right:4px;margin-left:8px"></span>Verde = inversión doméstica. ' +
+      '<strong>' + (FLAGS[topSrc[0]]||topSrc[0]) + ' ' + topSrc[0] + '</strong> lidera con ' + topSrc[1] + ' edges transfronterizas · ' +
+      '<strong>' + (FLAGS[topSrc2[0]]||topSrc2[0]) + ' ' + topSrc2[0] + '</strong> con ' + topSrc2[1] + '.';
   })();
 });
 </script>

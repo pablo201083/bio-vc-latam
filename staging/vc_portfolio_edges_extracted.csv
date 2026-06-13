@@ -1,0 +1,9 @@
+investment_id,investor_id,startup_id,round_name,round_stage,announced_date,amount,currency,is_lead,confidence_score,source_id,notes
+VC_PORTFOLIO_Indie_Bio_Giraffe_Bio,SOSV_IndieBio,giraffe-bio-ar,portfolio,,,,,0,0.8,VC_BIOTECH_PORTFOLIO_LATAM,VC portfolio: Indie Bio
+VC_PORTFOLIO_Endurance_Venture_Capital_Oncoliq,endurance_28,oncoliq,portfolio,,,,,0,0.8,VC_BIOTECH_PORTFOLIO_LATAM,VC portfolio: Endurance Venture Capital
+VC_PORTFOLIO_Eatable_Adventures_Nunatak_Biotech,eatable_adventures,nunatak_biotech,portfolio,,,,,0,0.8,VC_BIOTECH_PORTFOLIO_LATAM,VC portfolio: Eatable Adventures
+VC_PORTFOLIO_Sofinnova_Partners_Protera_Bio,sf500,protera-bio-cl,portfolio,,,,,0,0.8,VC_BIOTECH_PORTFOLIO_LATAM,VC portfolio: Sofinnova Partners
+VC_PORTFOLIO_Zentynel_CardiaTec,zentynel,cardiatec-cl,portfolio,,,,,0,0.8,VC_BIOTECH_PORTFOLIO_LATAM,VC portfolio: Zentynel
+VC_PORTFOLIO_Zentynel_Xeptiva_Therapeutics,zentynel,xeptiva-therapeutics-uy,portfolio,,,,,0,0.8,VC_BIOTECH_PORTFOLIO_LATAM,VC portfolio: Zentynel
+VC_PORTFOLIO_Zentynel_Asclepii,zentynel,asclepii,portfolio,,,,,0,0.8,VC_BIOTECH_PORTFOLIO_LATAM,VC portfolio: Zentynel
+VC_PORTFOLIO_SP_Ventures_Blooms,sp_ventures,blooms,portfolio,,,,,0,0.8,VC_BIOTECH_PORTFOLIO_LATAM,VC portfolio: SP Ventures

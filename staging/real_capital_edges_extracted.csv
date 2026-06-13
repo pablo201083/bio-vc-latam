@@ -1,0 +1,355 @@
+investment_id,investor_id,startup_id,round_name,round_stage,announced_date,amount,currency,is_lead,confidence_score,source_id,notes
+RAWEDGE_AIR_Capital_Aplife_Biotech,AIR Capital,aplife_biotech,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_AIR_Capital_Arcomedlab,AIR Capital,arcomed,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_AIR_Capital_ArgenTAG,AIR Capital,argentag,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_AIR_Capital_Ayuvant,AIR Capital,ayuvant,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_AIR_Capital_Blerify,AIR Capital,blerify,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_AIR_Capital_Branch_Energy,AIR Capital,branch_energy,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_AIR_Capital_Cellva,AIR Capital,cellva,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_AIR_Capital_Done_Properly,AIR Capital,done_properly,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_AIR_Capital_Egg,AIR Capital,egg,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_AIR_Capital_Epiliquid,AIR Capital,epiliquid,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_AIR_Capital_Ergo_Foods,AIR Capital,ergo_foods,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_AIR_Capital_Ethos,AIR Capital,ethos,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_AIR_Capital_Feed_Vax,AIR Capital,feedvax,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_AIR_Capital_Gigablue,AIR Capital,gigablue,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_AIR_Capital_Inner_Cosmos,AIR Capital,inner_cosmos,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_AIR_Capital_Laurus,AIR Capital,laurus,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_AIR_Capital_Lemon,AIR Capital,lemon,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_AIR_Capital_Menta_Tickets,AIR Capital,menta_tickets,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_AIR_Capital_Novo_Space,AIR Capital,novo_space,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_AIR_Capital_Onco_Precision,AIR Capital,onco_precision,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_AIR_Capital_Oncoliq,AIR Capital,oncoliq,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_AIR_Capital_Open_Water,AIR Capital,openlayer,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_AIR_Capital_Outpost,AIR Capital,outpost,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_AIR_Capital_Puna_Bio,AIR Capital,puna_bio,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_AIR_Capital_Satellites_On_Fire,AIR Capital,satellites_on_fire,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_AIR_Capital_Skyloom,AIR Capital,skyloom,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_AIR_Capital_Starlight_Ventures,AIR Capital,starlight_ventures,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_AIR_Capital_Sylvarum,AIR Capital,sylvarum,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_AIR_Capital_Tissue_Dynamics,AIR Capital,tissue_dynamics,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_Antom_Agrojusto,Antom,agrojusto,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_Antom_CIRCCLO,Antom,circclo,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_Antom_Conciencia,Antom,conciencia,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_Antom_Eirú,Antom,eiru,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_Antom_Huiro,Antom,huiro,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_Antom_Kigui,Antom,kigui,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_Antom_Kilimo,Antom,kilimo,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_Antom_Nideport,Antom,nideport,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_Antom_Ruuts,Antom,ruuts,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_Antom_Satellites_on_fire,Antom,satellites_on_fire,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_CITES_Bionirs,CITES,biosens,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_CITES_Crinsurance,CITES,crinsurance,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_CITES_Eolo_Pharma,CITES,eolo_pharma,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_CITES_EpiLiquid,CITES,epiliquid,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_CITES_RadBio,CITES,radbio,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_CITES_Stradot,CITES,stradot,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_CITES_ViewMind,CITES,viewmind,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_DragonesVP_Amai_Proteins,DragonesVP,dprotein,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_DragonesVP_Armenta,DragonesVP,argentag,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_DragonesVP_Caspr_Biotech,DragonesVP,caspr_biotech,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_DragonesVP_Satellogic,DragonesVP,satellogic,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_DragonesVP_Semtive,DragonesVP,sette,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_DragonesVP_Skyloom,DragonesVP,skyloom,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_DraperCygnus_ArgenTag,DraperCygnus,argentag,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_DraperCygnus_Auth0,DraperCygnus,auth0,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_DraperCygnus_Ayuvant,DraperCygnus,ayuvant,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_DraperCygnus_CargoProduce,DraperCygnus,agroadvance,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_DraperCygnus_Dynami,DraperCygnus,dynami,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_DraperCygnus_Egg,DraperCygnus,egg,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_DraperCygnus_Falcomm,DraperCygnus,falcomm,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_DraperCygnus_GBM,DraperCygnus,gbm,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_DraperCygnus_Lemon,DraperCygnus,lemon,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_DraperCygnus_Menta,DraperCygnus,mentatech,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_DraperCygnus_Microterra,DraperCygnus,microterra,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_DraperCygnus_NovoSpace,DraperCygnus,novo_space,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_DraperCygnus_Oasys,DraperCygnus,compass,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_DraperCygnus_Oneinfinite,DraperCygnus,oneinfinite,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_DraperCygnus_Satellites_On_Fire,DraperCygnus,satellites_on_fire,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_DraperCygnus_Satellogic,DraperCygnus,satellogic,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_DraperCygnus_SiloReal,DraperCygnus,siloreal,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_DraperCygnus_Skyloom,DraperCygnus,skyloom,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_DraperCygnus_Splight,DraperCygnus,splight,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_DraperCygnus_TravelX,DraperCygnus,travelx,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_DraperCygnus_Vmind,DraperCygnus,vmind,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_AlgaeBio+,GridX,algaebio,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_AlgaLife,GridX,algalife,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_Alkemio,GridX,alkemio,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_Alytix,GridX,alytix,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_Antarka,GridX,antarka,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_Apasomics,GridX,apasomics,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_APEXzymes,GridX,apexzymes,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_Aplife_Biotech,GridX,aplife_biotech,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_Aquit,GridX,aquit,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_argenTAG,GridX,argentag,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_AVaTAR,GridX,avedian-ar,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_Beeflow,GridX,beeflow,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_BioBlends,GridX,bioblends,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_Biodiversity_Intelligence,GridX,biodiversity_intelligence,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_Bioeutectics,GridX,bioeutectics,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_BioPlaster_Research,GridX,bioplaster_research,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_Bioplastix,GridX,bioplastix,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_Bitgenia,GridX,bitgenia,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_BreakPET,GridX,break_pet,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_Bsafe_Biotech,GridX,bsafe_biotech,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_ByBug,GridX,bybug,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_Caligenia,GridX,caligenia,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_Caspr_Biotech,GridX,caspr_biotech,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_CellRep,GridX,cellrep,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_Cryosmetics,GridX,cryosmetics,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_CyanoMin,GridX,cyanomin,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_Dogma_Biotech,GridX,dogma_biotech,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_EINSTED,GridX,einsted,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_Elytron,GridX,meton,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_Embryoxite,GridX,embryoxite,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_Enteria,GridX,enteria,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_Eywa,GridX,eiwa,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_fecundis,GridX,fecundis,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_Feedvax,GridX,feedvax,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_Fungi_Life,GridX,fungi_life,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_Future_Biome,GridX,future_biome,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_Geoprot,GridX,geoprot,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_Gisens_Biotech,GridX,gisens_biotech,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_GlycoX,GridX,glycox,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_HIAMET,GridX,HIAMET,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_Invitrall,GridX,invitrall,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_Kresko_RNATech,GridX,kresko_rnatech,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_michroma,GridX,michroma,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_microgenesis,GridX,microgenesis,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_MicroIN,GridX,microin,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_Migma,GridX,migma,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_Monte_Caldera_Technology,GridX,monte-caldera-technology,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_MZP,GridX,mzp,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_Nano_Jump_Bio,GridX,nanojump_bio,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_Nanogrow,GridX,nanoprox,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_NanoInGreen,GridX,nanoingreen,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_Nanotransfer,GridX,nanotransfer,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_Nat4Bio,GridX,nat4bio,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_Naturannova,GridX,naturannova,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_New_Organs,GridX,new_organs_biotech,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_Nunatak_Biotech,GridX,nunatak_biotech,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_OncoPrecision,GridX,onco_precision,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_Polymera,GridX,polymera,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_Protiva,GridX,protiva,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_Puna_Bio,GridX,puna_bio,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_Qnity,GridX,qnity,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_Qumir_Nano,GridX,qumir_nano,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_Radial,GridX,radial,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_Scitherm,GridX,thermy,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_Semion,GridX,semion,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_SphereBio,GridX,spherebio,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_Sylvarum,GridX,sylvarum,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_Synthetic_Ocular_Restoration,GridX,synthetic_ocular_restoration,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_Syocin_Biotech,GridX,syocin-biotech,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_Tomorrow_Foods,GridX,tomorrow_foods,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_Ubique_Bio,GridX,ubique_bio,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_UpDairy,GridX,updairy,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_Vexxel_Biotech,GridX,vexxel_biotech,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_WerkénVac,GridX,werk-nvac,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_Zavia_Bio,GridX,zavia_bio,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_GridX_ZEV_Biotech,GridX,zev_biotech,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_SF500_BEAM_CropTech,SF500,beam_croptech,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_SF500_BioMetallum,SF500,biometallum,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_SF500_Biotalife,SF500,biotalife,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_SF500_Dharma_BioScience,SF500,dharma_bioscience,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_SF500_Eirú,SF500,eiru,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_SF500_Eureka,SF500,eureka,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_SF500_Exomas,SF500,exomas,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_SF500_Gameet,SF500,gameet,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_SF500_INMET,SF500,inmet,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_SF500_Libera,SF500,libera,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_SF500_Limay_Biosciences,SF500,limay_biosciences,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_SF500_M4Life,SF500,m4life,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_SF500_Mesenchyal-T,SF500,mesenchyal_t,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_SF500_MultiplAI_Health,SF500,multiplai_health,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_SF500_Mycorium_Biotech,SF500,mycorium_biotech,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_SF500_NotFossil,SF500,notfossil,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_SF500_Oncoliq,SF500,oncoliq,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_SF500_Pill.AR,SF500,pill_ar,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_SF500_SoyGREEN,SF500,soygreen,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_SF500_Spectrum,SF500,spectrum,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_SF500_Tell,SF500,tell,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_SF500_Tintte,SF500,tintte,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_SF500_Trebe_Biotech,SF500,trebe_biotech,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_SF500_UNIBAIO,SF500,unibaio,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_SOSV_IndieBio_BitMEX,SOSV_IndieBio,bitmec,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_SOSV_IndieBio_Formlabs,SOSV_IndieBio,fermentlabs-co,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_SOSV_IndieBio_Neptune_Robotics,SOSV_IndieBio,tumi_robotics,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_SOSV_IndieBio_NotCo,SOSV_IndieBio,nanotica,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_SOSV_IndieBio_Opentrons,SOSV_IndieBio,pepton,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_SOSV_IndieBio_Smartex,SOSV_IndieBio,smatter,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_The_Ganesha_Lab_Aictive,The Ganesha Lab,activaq,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_The_Ganesha_Lab_Amplify_Dynamics,The Ganesha Lab,amplify-dynamics,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_The_Ganesha_Lab_Aquit,The Ganesha Lab,aquit,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_The_Ganesha_Lab_arcomedLab,The Ganesha Lab,arcomed,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_The_Ganesha_Lab_Bee_Technology,The Ganesha Lab,Bee Technology,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_The_Ganesha_Lab_Biogea,The Ganesha Lab,bitgenia,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_The_Ganesha_Lab_Biome_Resources,The Ganesha Lab,bioceres-ar,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_The_Ganesha_Lab_Bleps_Vision,The Ganesha Lab,bleps_vision,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_The_Ganesha_Lab_Botanical_Solutions,The Ganesha Lab,botanical-solutions,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_The_Ganesha_Lab_CuperScience,The Ganesha Lab,ergo_bioscience,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_The_Ganesha_Lab_Delee,The Ganesha Lab,delee,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_The_Ganesha_Lab_Eywa,The Ganesha Lab,eiwa,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_The_Ganesha_Lab_GlucoLib,The Ganesha Lab,cobli,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_The_Ganesha_Lab_Innovai,The Ganesha Lab,innovai,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_The_Ganesha_Lab_Luyef,The Ganesha Lab,leaf,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_The_Ganesha_Lab_Metabix_Biotech,The Ganesha Lab,metabix-biotech,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_The_Ganesha_Lab_Nanotransfer,The Ganesha Lab,nanotransfer,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_The_Ganesha_Lab_Patagon_Fiber,The Ganesha Lab,patagon-fiber,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_The_Ganesha_Lab_Retidiag,The Ganesha Lab,resistia,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_The_Ganesha_Lab_SciPhage,The Ganesha Lab,sciphage,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_The_Ganesha_Lab_Smart_Tissues,The Ganesha Lab,tissuelabs,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_The_Ganesha_Lab_Soleit,The Ganesha Lab,biosolvit,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_The_Ganesha_Lab_Synergic_Bio_Solutions,The Ganesha Lab,agricrop-solutions-py,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_The_Ganesha_Lab_TELL,The Ganesha Lab,tell,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_The_Ganesha_Lab_Tensor_Care,The Ganesha Lab,tensor-care,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_The_Ganesha_Lab_The_Earth_Says,The Ganesha Lab,the-earth-says,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_The_Ganesha_Lab_Trears_Biomarkers,The Ganesha Lab,biomakers,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_The_Ganesha_Lab_UNIBAIO,The Ganesha Lab,unibaio,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_The_Ganesha_Lab_Vali,The Ganesha Lab,uali,investment,,,,,0,0.95,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_cites_abastra,CITES,abastra,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_kamay_ventures_aerialoop,kamay_ventures,aerialoop,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_the_yield_lab_latam_agree,the_yield_lab_latam,agree,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_the_yield_lab_latam_agroforte,the_yield_lab_latam,agroforte,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_glocal_agrojusto,glocal,agrojusto,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_kamay_ventures_altscore,kamay_ventures,altscore,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_duhau_aplife,duhau,algalife,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_sillicon_catalyst_aplife,sillicon_catalyst,algalife,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_gridx_arakion,GridX,arakion,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_cites_ardan,CITES,ardan,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_draper_university_argentag,draper_university,argentag,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_indiebio_argentag,SOSV_IndieBio,argentag,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_kamay_ventures_arqlite,kamay_ventures,arqlite,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_kamay_ventures_auravant,kamay_ventures,auravant,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_the_yield_lab_latam_auravant,the_yield_lab_latam,auravant,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_gridx_avatar_medtech,GridX,avatar_medtech,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_kamay_ventures_bacu,kamay_ventures,bacu,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_future_ventures_beeflow,future_ventures,beeflow,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_indiebio_beeflow,SOSV_IndieBio,beeflow,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_jeff_wilke_beeflow,jeff_wilke,beeflow,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_ospraie_beeflow,ospraie,beeflow,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_sosv_beeflow,sosv,beeflow,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_vectr_beeflow,vectr,beeflow,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_gridx_biocle,GridX,biocle,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_aceleradora_litoral_bioheuris,aceleradora_litoral,bioheuris,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_gridx_bioplaster_research_inc,GridX,bioplaster_research_inc,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_cites_bioseek,CITES,bioseek,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_aceleradora_litoral_biosynaptica,aceleradora_litoral,biosynaptica,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_gridx_calfix,GridX,calfix,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_inventure_calice,inventure,calice,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_brinc_cell_farm,brinc,cell_farm,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_gridx_cell_farm,GridX,cell_farm,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_gridx_cellco,GridX,cellco,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_cites_circa_therapeutics,CITES,circa_therapeutics,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_the_yield_lab_latam_circular,the_yield_lab_latam,circular,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_cites_clover,CITES,clover,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_glocal_conciencia,glocal,conciencia,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_the_yield_lab_latam_courageous_land,the_yield_lab_latam,courageous_land,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_gridx_cytbac,GridX,cytbac,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_glocal_deepagro,glocal,deepagro,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_inventure_deepagro,inventure,deepagro,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_glocal_eiru,glocal,eiru,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_inventure_eiwa,inventure,eiwa,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_the_yield_lab_latam_eiwa,the_yield_lab_latam,eiwa,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_gridx_elytron_biotech,GridX,elytron_biotech,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_inventure_elytron_biotech,inventure,elytron_biotech,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_lartirigoyen_elytron_biotech,lartirigoyen,elytron_biotech,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_gridx_enzyva,GridX,enzyva,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_cites_ergo_bioscience,CITES,ergo_bioscience,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_gridx_eywa_biotech,GridX,eywa_biotech,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_conservation_international_feedvax,conservation_international,feedvax,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_duhau_feedvax,duhau,feedvax,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_hatch_feedvax,hatch,feedvax,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_gridx_food4you,GridX,food4you,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_the_yield_lab_latam_heartbest,the_yield_lab_latam,heartbest,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_cites_imvalv,CITES,imvalv,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_aceleradora_litoral_inbioar,aceleradora_litoral,inbioar,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_aceleradora_litoral_infira,aceleradora_litoral,infira,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_kamay_ventures_ini,kamay_ventures,ini,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_inventure_kigui,inventure,kigui,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_glocal_kilimo,glocal,kilimo,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_kamay_ventures_kilimo,kamay_ventures,kilimo,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_gridx_levya,GridX,levya,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_cites_limay_biosciences,CITES,limay_biosciences,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_gridx_lipock,GridX,lipock,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_kamay_ventures_logshare,kamay_ventures,logshare,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_gridx_mavios,GridX,mavios,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_indiebio_michroma,SOSV_IndieBio,michroma,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_kairetsu_angels_michroma,kairetsu_angels,michroma,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_other_angels_michroma,other_angels,michroma,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_happiness_microgenesis,happiness,microgenesis,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_indiebio_microgenesis,SOSV_IndieBio,microgenesis,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_kwb_microgenesis,kwb,microgenesis,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_sosv_microgenesis,sosv,microgenesis,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_kamay_ventures_muta,kamay_ventures,muta,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_aceleradora_litoral_nairotech,aceleradora_litoral,nairotech,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_gridx_nanogrow_biotech,GridX,nanogrow_biotech,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_inventure_nat4bio,inventure,nat4bio,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_gridx_neocell,GridX,neocell,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_kamay_ventures_nude,kamay_ventures,nude,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_gridx_ocular_bio_design,GridX,ocular_bio_design,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_creative_ventures_onco_precision,creative_ventures,onco_precision,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_fundacion_para_el_progreso_de_la_medicina_onco_precision,fundacion_para_el_progreso_de_la_medicina,onco_precision,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_genesis_consortium_onco_precision,genesis_consortium,onco_precision,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_indiebio_onco_precision,SOSV_IndieBio,onco_precision,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_cites_pepton,CITES,pepton,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_cites_phylumtech,CITES,phylumtech,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_gridx_plamic,GridX,plamic,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_antom_poas_bioenergy,Antom,poas_bioenergy,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_gridx_pregen,GridX,pregen,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_indiebio_puna_bio,SOSV_IndieBio,puna_bio,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_sp_ventures_puna_bio,sp_ventures,puna_bio,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_gridx_resistia,GridX,resistia,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_kamay_ventures_retrypay,kamay_ventures,retrypay,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_kamay_ventures_ruedata,kamay_ventures,ruedata,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_glocal_ruuts,glocal,ruuts,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_inventure_satellites_on_fire,inventure,satellites_on_fire,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_gridx_scitherm_therapeutics,GridX,scitherm_therapeutics,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_aceleradora_litoral_seedmatriz,aceleradora_litoral,seedmatriz,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_kamay_ventures_sensei,kamay_ventures,sensei,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_inventure_sensify,inventure,sensify,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_kamay_ventures_sensify,kamay_ventures,sensify,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_inventure_siloreal,inventure,siloreal,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_cites_single_strand_biotech,CITES,single_strand_biotech,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_kamay_ventures_solfium,kamay_ventures,solfium,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_dragones_stamm,DragonesVP,stamm,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_draper_associates_stamm,draper_associates,stamm,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_draper_cygnus_stamm,DraperCygnus,stamm,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_flia_duhau_stamm,flia_duhau,stamm,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_gridx_stamm,GridX,stamm,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_indiebio_stamm,SOSV_IndieBio,stamm,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_losa_group_stamm,losa_group,stamm,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_other_small_investors_stamm,other_small_investors,stamm,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_sosv_stamm,sosv,stamm,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_varana_capital_stamm,varana_capital,stamm,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_vx_fund_stamm,vx_fund,stamm,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_blue_horizon_syocin_bio,blue_horizon,syocin-biotech,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_thrive_syocin_bio,thrive,syocin-biotech,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_the_yield_lab_latam_tech,the_yield_lab_latam,tech,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_cites_teramot,CITES,teramot,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_gridx_tesabio_ai,GridX,tesabio_ai,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_bago_tomorrow,bago,tomorrow_foods,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_grupo_insud_tomorrow,grupo_insud,tomorrow_foods,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_managro_tomorrow,managro,tomorrow_foods,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_other_small_investors_tomorrow,other_small_investors,tomorrow_foods,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_inventure_tracestory,inventure,tracestory,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_inventure_unibaio,inventure,unibaio,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_aceleradora_litoral_untech,aceleradora_litoral,untech,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_kamay_ventures_webee,kamay_ventures,webee,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_kamay_ventures_wiagro,kamay_ventures,wiagro,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_kamay_ventures_wisy,kamay_ventures,wisy,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_grupo_peruanos_zev_biotech,grupo_peruanos,zev_biotech,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_peruanos_zev_biotech,peruanos,zev_biotech,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_kamay_ventures_zipnova,kamay_ventures,zipnova,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+RAWEDGE_inventure_zoomagri,inventure,zoomagri,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
+ACCEL_Ganesha_Lab_EYWA_Biotech,The Ganesha Lab,eywa_biotech,accelerator,seed,,,,0,0.75,ACCELERATOR_PORTFOLIO_2024,From accelerator portfolio: Ganesha Lab
+ACCEL_Vesper_Ventures_Aptah_Biosciences,vesper_ventures,dharma_bioscience,accelerator,seed,,,,0,0.75,ACCELERATOR_PORTFOLIO_2024,From accelerator portfolio: Vesper Ventures
+ACCEL_Vesper_Ventures_InEdita_Bio,vesper_ventures,inedita-bio-br,accelerator,seed,,,,0,0.75,ACCELERATOR_PORTFOLIO_2024,From accelerator portfolio: Vesper Ventures
+ACCEL_Vesper_Ventures_Vyro_Bio,vesper_ventures,vyro-bio-br,accelerator,seed,,,,0,0.75,ACCELERATOR_PORTFOLIO_2024,From accelerator portfolio: Vesper Ventures
+ACCEL_Vesper_Ventures_Symbiomics,vesper_ventures,symbiomics,accelerator,seed,,,,0,0.75,ACCELERATOR_PORTFOLIO_2024,From accelerator portfolio: Vesper Ventures
+ACCEL_Vesper_Ventures_Cellertz_Bio,vesper_ventures,cellertz-bio-br,accelerator,seed,,,,0,0.75,ACCELERATOR_PORTFOLIO_2024,From accelerator portfolio: Vesper Ventures
+ACCEL_Vesper_Ventures_Reddot_Bio,vesper_ventures,reddot-bio-br,accelerator,seed,,,,0,0.75,ACCELERATOR_PORTFOLIO_2024,From accelerator portfolio: Vesper Ventures
+ACCEL_Vesper_Ventures_Futr_Bio,vesper_ventures,futr_bio,accelerator,seed,,,,0,0.75,ACCELERATOR_PORTFOLIO_2024,From accelerator portfolio: Vesper Ventures
+ACCEL_Biominas_Brasil_Salutho,biominas,auth0,accelerator,seed,,,,0,0.75,ACCELERATOR_PORTFOLIO_2024,From accelerator portfolio: Biominas Brasil
+ACCEL_GRIDS_Capital_Nabla_Bio,AIR Capital,nabla-bio-br,accelerator,seed,,,,0,0.75,ACCELERATOR_PORTFOLIO_2024,From accelerator portfolio: GRIDS Capital
+ACCEL_GRIDS_Capital_Doloromics,AIR Capital,omics,accelerator,seed,,,,0,0.75,ACCELERATOR_PORTFOLIO_2024,From accelerator portfolio: GRIDS Capital
