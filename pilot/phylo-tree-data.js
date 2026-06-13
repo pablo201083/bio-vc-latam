@@ -1,7 +1,7 @@
 window.IQ_PHYLO_TREE = {
   "name": "BIO LATAM",
   "level": "root",
-  "n": 483,
+  "n": 484,
   "children": [
     {
       "name": "BioMedicina",
@@ -2656,18 +2656,18 @@ window.IQ_PHYLO_TREE = {
       "name": "BioIndustria & Territorio",
       "level": "mega",
       "color": "#2E7D52",
-      "n": 292,
+      "n": 293,
       "children": [
         {
           "name": "Bioplatforma Industrial",
           "level": "macro",
           "color": "#8B6D14",
-          "n": 155,
+          "n": 156,
           "children": [
             {
               "name": "Food Systems & Alt Proteins",
               "level": "theme",
-              "n": 74,
+              "n": 75,
               "children": [
                 {
                   "name": "Cultivated Meat",
@@ -3440,6 +3440,105 @@ window.IQ_PHYLO_TREE = {
                   ]
                 },
                 {
+                  "name": "Food Systems & Alt Proteins",
+                  "level": "sub",
+                  "_theme": "Food Systems & Alt Proteins",
+                  "n": 7,
+                  "children": [
+                    {
+                      "level": "startup",
+                      "id": "Bee Technology",
+                      "name": "Bee Technology",
+                      "bio_theme": "Food Systems & Alt Proteins",
+                      "sub_cluster_label": "Food Systems & Alt Proteins",
+                      "funding_stage": null,
+                      "quality_score": null,
+                      "tech_depth": null,
+                      "country": "CL",
+                      "founded_year": 2017,
+                      "is_bio_universe": 1
+                    },
+                    {
+                      "level": "startup",
+                      "id": "ecombio-cl",
+                      "name": "Ecombio",
+                      "bio_theme": "Food Systems & Alt Proteins",
+                      "sub_cluster_label": "Food Systems & Alt Proteins",
+                      "funding_stage": null,
+                      "quality_score": null,
+                      "tech_depth": null,
+                      "country": "CL",
+                      "founded_year": 2013,
+                      "is_bio_universe": 1
+                    },
+                    {
+                      "level": "startup",
+                      "id": "infood-protein-cl",
+                      "name": "Infood Protein",
+                      "bio_theme": "Food Systems & Alt Proteins",
+                      "sub_cluster_label": "Food Systems & Alt Proteins",
+                      "funding_stage": null,
+                      "quality_score": null,
+                      "tech_depth": null,
+                      "country": "CL",
+                      "founded_year": 2018,
+                      "is_bio_universe": 1
+                    },
+                    {
+                      "level": "startup",
+                      "id": "koji-co",
+                      "name": "Koji",
+                      "bio_theme": "Food Systems & Alt Proteins",
+                      "sub_cluster_label": "Food Systems & Alt Proteins",
+                      "funding_stage": null,
+                      "quality_score": null,
+                      "tech_depth": null,
+                      "country": "CO",
+                      "founded_year": null,
+                      "is_bio_universe": 1
+                    },
+                    {
+                      "level": "startup",
+                      "id": "mycoseaweed-cl",
+                      "name": "MycoSeaweed",
+                      "bio_theme": "Food Systems & Alt Proteins",
+                      "sub_cluster_label": "Food Systems & Alt Proteins",
+                      "funding_stage": null,
+                      "quality_score": null,
+                      "tech_depth": null,
+                      "country": "CL",
+                      "founded_year": null,
+                      "is_bio_universe": 1
+                    },
+                    {
+                      "level": "startup",
+                      "id": "tomorrow-foods-ar",
+                      "name": "Tomorrow Foods",
+                      "bio_theme": "Food Systems & Alt Proteins",
+                      "sub_cluster_label": "Food Systems & Alt Proteins",
+                      "funding_stage": null,
+                      "quality_score": null,
+                      "tech_depth": null,
+                      "country": "AR",
+                      "founded_year": null,
+                      "is_bio_universe": 1
+                    },
+                    {
+                      "level": "startup",
+                      "id": "viobact-cl",
+                      "name": "VioBact",
+                      "bio_theme": "Food Systems & Alt Proteins",
+                      "sub_cluster_label": "Food Systems & Alt Proteins",
+                      "funding_stage": null,
+                      "quality_score": null,
+                      "tech_depth": null,
+                      "country": "CL",
+                      "founded_year": null,
+                      "is_bio_universe": 1
+                    }
+                  ]
+                },
+                {
                   "name": "Crop Monitoring",
                   "level": "sub",
                   "_theme": "Food Systems & Alt Proteins",
@@ -3521,92 +3620,6 @@ window.IQ_PHYLO_TREE = {
                       "tech_depth": "enabler",
                       "country": "BR",
                       "founded_year": 2020,
-                      "is_bio_universe": 1
-                    }
-                  ]
-                },
-                {
-                  "name": "Food Systems & Alt Proteins",
-                  "level": "sub",
-                  "_theme": "Food Systems & Alt Proteins",
-                  "n": 6,
-                  "children": [
-                    {
-                      "level": "startup",
-                      "id": "Bee Technology",
-                      "name": "Bee Technology",
-                      "bio_theme": "Food Systems & Alt Proteins",
-                      "sub_cluster_label": "Food Systems & Alt Proteins",
-                      "funding_stage": null,
-                      "quality_score": null,
-                      "tech_depth": null,
-                      "country": "CL",
-                      "founded_year": 2017,
-                      "is_bio_universe": 1
-                    },
-                    {
-                      "level": "startup",
-                      "id": "ecombio-cl",
-                      "name": "Ecombio",
-                      "bio_theme": "Food Systems & Alt Proteins",
-                      "sub_cluster_label": "Food Systems & Alt Proteins",
-                      "funding_stage": null,
-                      "quality_score": null,
-                      "tech_depth": null,
-                      "country": "CL",
-                      "founded_year": 2013,
-                      "is_bio_universe": 1
-                    },
-                    {
-                      "level": "startup",
-                      "id": "infood-protein-cl",
-                      "name": "Infood Protein",
-                      "bio_theme": "Food Systems & Alt Proteins",
-                      "sub_cluster_label": "Food Systems & Alt Proteins",
-                      "funding_stage": null,
-                      "quality_score": null,
-                      "tech_depth": null,
-                      "country": "CL",
-                      "founded_year": 2018,
-                      "is_bio_universe": 1
-                    },
-                    {
-                      "level": "startup",
-                      "id": "koji-co",
-                      "name": "Koji",
-                      "bio_theme": "Food Systems & Alt Proteins",
-                      "sub_cluster_label": "Food Systems & Alt Proteins",
-                      "funding_stage": null,
-                      "quality_score": null,
-                      "tech_depth": null,
-                      "country": "CO",
-                      "founded_year": null,
-                      "is_bio_universe": 1
-                    },
-                    {
-                      "level": "startup",
-                      "id": "mycoseaweed-cl",
-                      "name": "MycoSeaweed",
-                      "bio_theme": "Food Systems & Alt Proteins",
-                      "sub_cluster_label": "Food Systems & Alt Proteins",
-                      "funding_stage": null,
-                      "quality_score": null,
-                      "tech_depth": null,
-                      "country": "CL",
-                      "founded_year": null,
-                      "is_bio_universe": 1
-                    },
-                    {
-                      "level": "startup",
-                      "id": "viobact-cl",
-                      "name": "VioBact",
-                      "bio_theme": "Food Systems & Alt Proteins",
-                      "sub_cluster_label": "Food Systems & Alt Proteins",
-                      "funding_stage": null,
-                      "quality_score": null,
-                      "tech_depth": null,
-                      "country": "CL",
-                      "founded_year": null,
                       "is_bio_universe": 1
                     }
                   ]
