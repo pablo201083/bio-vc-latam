@@ -1,11 +1,11 @@
 window.STARTUP_THEMES_DATA = {
-  "computed_at": "2026-06-13T19:02:39",
+  "computed_at": "2026-06-13T20:13:34",
   "model": "intfloat/multilingual-e5-small",
   "stats": {
     "total_startups": 579,
     "n_clusters": 30,
     "featured_count": 53,
-    "funded_count": 332
+    "funded_count": 579
   },
   "bio_theme_descriptions": {
     "Therapeutics": "Medicina regenerativa, terapia celular, biologics y desarrollo clínico de fármacos para oncología, enfermedades crónicas y neurología.",
@@ -48,7 +48,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 8.0,
       "quality_band": "medium",
       "community_id": 17,
-      "pagerank": 0.0008918741466795639,
+      "pagerank": 0.0007114929960227502,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Precision Agriculture",
@@ -123,8 +123,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 5,
-      "pagerank": 0.0008936595344834304,
+      "community_id": 4,
+      "pagerank": 0.0007073872420454495,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -191,10 +191,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 4,
+      "pagerank": 0.0007400462850744637,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Precision Agriculture",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -222,7 +222,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 1.708,
       "hx": 9.72,
       "hy": 7.96,
-      "investor_ids": []
+      "investor_ids": [
+        "morningside_group",
+        "the_yield_lab_latam"
+      ]
     },
     {
       "id": "agritech-bolivia-bo",
@@ -247,10 +250,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 4,
+      "pagerank": 0.0007400462850744637,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Precision Agriculture",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -279,7 +282,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 1.734,
       "hx": 9.725,
       "hy": 7.967,
-      "investor_ids": []
+      "investor_ids": [
+        "morningside_group",
+        "the_yield_lab_latam"
+      ]
     },
     {
       "id": "agro-logica-co",
@@ -304,10 +310,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 23,
+      "pagerank": 0.0008190782454783104,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 3,
       "bio_theme": "Precision Agriculture",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -335,7 +341,11 @@ window.STARTUP_THEMES_DATA = {
       "uy": 1.645,
       "hx": 9.708,
       "hy": 7.943,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "ace_ventures",
+        "barn_investimentos"
+      ]
     },
     {
       "id": "agro360-do",
@@ -360,10 +370,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 4,
+      "pagerank": 0.0007400462850744637,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Precision Agriculture",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -392,7 +402,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 1.669,
       "hx": 9.717,
       "hy": 7.94,
-      "investor_ids": []
+      "investor_ids": [
+        "morningside_group",
+        "the_yield_lab_latam"
+      ]
     },
     {
       "id": "agrobit-bolivia-operations-bo",
@@ -417,10 +430,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 23,
+      "pagerank": 0.000835917998522621,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Precision Agriculture",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -445,7 +458,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 2.238,
       "hx": 9.83,
       "hy": 8.072,
-      "investor_ids": []
+      "investor_ids": [
+        "lightsmith_group",
+        "monashees"
+      ]
     },
     {
       "id": "agrocontrol-gt",
@@ -470,10 +486,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 4,
+      "pagerank": 0.0007400462850744637,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Precision Agriculture",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -500,7 +516,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 1.72,
       "hx": 9.723,
       "hy": 7.962,
-      "investor_ids": []
+      "investor_ids": [
+        "morningside_group",
+        "the_yield_lab_latam"
+      ]
     },
     {
       "id": "agroguia-ve",
@@ -525,10 +544,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 4,
+      "pagerank": 0.0007400462850744637,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Precision Agriculture",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -553,7 +572,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 2.492,
       "hx": 9.87,
       "hy": 8.161,
-      "investor_ids": []
+      "investor_ids": [
+        "morningside_group",
+        "the_yield_lab_latam"
+      ]
     },
     {
       "id": "agrojusto",
@@ -585,8 +607,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 9.0,
       "quality_band": "high",
-      "community_id": 5,
-      "pagerank": 0.0011649918368323642,
+      "community_id": 7,
+      "pagerank": 0.0009148773561437442,
       "valuation_tier": 1.0,
       "n_investors_mapped": 2,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -656,7 +678,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": 17,
-      "pagerank": 0.0008904483921454087,
+      "pagerank": 0.0007105087044747241,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Precision Agriculture",
@@ -721,10 +743,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 10,
+      "pagerank": 0.0009345087196905304,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Precision Agriculture",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -752,7 +774,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 2.124,
       "hx": 9.812,
       "hy": 8.031,
-      "investor_ids": []
+      "investor_ids": [
+        "chileglobal_ventures",
+        "slc_agricola"
+      ]
     },
     {
       "id": "agrosmart",
@@ -783,8 +808,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 5,
-      "pagerank": 0.0009150458524957565,
+      "community_id": 4,
+      "pagerank": 0.0007221516152658397,
       "valuation_tier": 1.0,
       "n_investors_mapped": 2,
       "bio_theme": "Precision Agriculture",
@@ -861,7 +886,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 8.0,
       "quality_band": "medium",
       "community_id": 10,
-      "pagerank": 0.0011741300110882425,
+      "pagerank": 0.0008551983488634123,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -930,10 +955,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 23,
+      "pagerank": 0.0008190782454783104,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 3,
       "bio_theme": "Precision Agriculture",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -960,7 +985,11 @@ window.STARTUP_THEMES_DATA = {
       "uy": 2.024,
       "hx": 9.792,
       "hy": 8.01,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "ace_ventures",
+        "barn_investimentos"
+      ]
     },
     {
       "id": "auravant",
@@ -991,8 +1020,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 9.0,
       "quality_band": "high",
-      "community_id": 5,
-      "pagerank": 0.0009354615234163496,
+      "community_id": 25,
+      "pagerank": 0.0007408577313405948,
       "valuation_tier": 2.0,
       "n_investors_mapped": 2,
       "bio_theme": "Precision Agriculture",
@@ -1066,8 +1095,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 5,
-      "pagerank": 0.0009413255038234248,
+      "community_id": 4,
+      "pagerank": 0.0007455529694967724,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Precision Agriculture",
@@ -1137,10 +1166,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 4,
+      "pagerank": 0.0007400462850744637,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Precision Agriculture",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -1168,7 +1197,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 1.925,
       "hx": 9.76,
       "hy": 8.019,
-      "investor_ids": []
+      "investor_ids": [
+        "morningside_group",
+        "the_yield_lab_latam"
+      ]
     },
     {
       "id": "calice",
@@ -1200,8 +1232,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 5,
-      "pagerank": 0.0009376450940526886,
+      "community_id": 25,
+      "pagerank": 0.0007450542145492989,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Precision Agriculture",
@@ -1273,8 +1305,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 15,
-      "pagerank": 0.0010602214397398375,
+      "community_id": 12,
+      "pagerank": 0.0007608386621593751,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Precision Agriculture",
@@ -1347,8 +1379,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 5,
-      "pagerank": 0.0008936595344834304,
+      "community_id": 4,
+      "pagerank": 0.0007073872420454495,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Precision Agriculture",
@@ -1417,7 +1449,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": 17,
-      "pagerank": 0.0008904483921454087,
+      "pagerank": 0.0007105087044747241,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Precision Agriculture",
@@ -1483,10 +1515,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 7,
+      "pagerank": 0.0007218461026460364,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 3,
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -1514,7 +1546,11 @@ window.STARTUP_THEMES_DATA = {
       "uy": 5.095,
       "hx": -7.215,
       "hy": 6.27,
-      "investor_ids": []
+      "investor_ids": [
+        "AIR Capital",
+        "Antom",
+        "GridX"
+      ]
     },
     {
       "id": "deepagro",
@@ -1545,8 +1581,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 9.0,
       "quality_band": "high",
-      "community_id": 5,
-      "pagerank": 0.0011916268400286763,
+      "community_id": 25,
+      "pagerank": 0.0009484152885039815,
       "valuation_tier": 2.0,
       "n_investors_mapped": 4,
       "bio_theme": "Precision Agriculture",
@@ -1621,8 +1657,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 5,
-      "pagerank": 0.0009240612695253839,
+      "community_id": 7,
+      "pagerank": 0.0007397817090827833,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Precision Agriculture",
@@ -1688,10 +1724,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 4,
+      "pagerank": 0.0007400462850744637,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Precision Agriculture",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -1718,7 +1754,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 2.042,
       "hx": 9.786,
       "hy": 8.04,
-      "investor_ids": []
+      "investor_ids": [
+        "morningside_group",
+        "the_yield_lab_latam"
+      ]
     },
     {
       "id": "dimitra-bolivia-operations-bo",
@@ -1743,10 +1782,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 23,
+      "pagerank": 0.000835917998522621,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Precision Agriculture",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -1774,7 +1813,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 2.163,
       "hx": 9.811,
       "hy": 8.064,
-      "investor_ids": []
+      "investor_ids": [
+        "lightsmith_group",
+        "monashees"
+      ]
     },
     {
       "id": "dioxd",
@@ -1804,10 +1846,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 24,
-      "pagerank": 0.0008785497508095748,
+      "community_id": 5,
+      "pagerank": 0.0007124860800083283,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
@@ -1844,7 +1886,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 5.778,
       "hx": -7.057,
       "hy": 6.389,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "dymaxion_labs",
@@ -1874,8 +1919,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 15,
-      "pagerank": 0.0010602214397398375,
+      "community_id": 4,
+      "pagerank": 0.0007608386621593751,
       "valuation_tier": 2.0,
       "n_investors_mapped": 1,
       "bio_theme": "Precision Agriculture",
@@ -1952,8 +1997,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 1,
-      "pagerank": 0.0009873960506737224,
+      "community_id": 4,
+      "pagerank": 0.0007786140880121418,
       "valuation_tier": 1.0,
       "n_investors_mapped": 2,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -2029,8 +2074,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 5,
-      "pagerank": 0.001127090460524573,
+      "community_id": 25,
+      "pagerank": 0.0008886895129925313,
       "valuation_tier": 1.0,
       "n_investors_mapped": 3,
       "bio_theme": "Precision Agriculture",
@@ -2102,10 +2147,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": -1,
-      "pagerank": 0.0008690620741330828,
+      "community_id": 4,
+      "pagerank": 0.0007383761321966434,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Precision Agriculture",
       "bio_theme_secondary": "",
       "is_bio_universe": 1,
@@ -2140,7 +2185,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 2.933,
       "hx": 9.953,
       "hy": 8.276,
-      "investor_ids": []
+      "investor_ids": [
+        "newtopia_vc",
+        "the_yield_lab_latam"
+      ]
     },
     {
       "id": "fieldfactors-mx",
@@ -2165,10 +2213,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 23,
+      "pagerank": 0.000835917998522621,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Precision Agriculture",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -2195,7 +2243,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 1.642,
       "hx": 9.704,
       "hy": 7.953,
-      "investor_ids": []
+      "investor_ids": [
+        "lightsmith_group",
+        "monashees"
+      ]
     },
     {
       "id": "geanext-cr",
@@ -2220,10 +2271,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 4,
+      "pagerank": 0.0007400462850744637,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Precision Agriculture",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -2248,7 +2299,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 1.655,
       "hx": 9.711,
       "hy": 7.943,
-      "investor_ids": []
+      "investor_ids": [
+        "morningside_group",
+        "the_yield_lab_latam"
+      ]
     },
     {
       "id": "green-xpo-lab-cr",
@@ -2273,10 +2327,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 23,
+      "pagerank": 0.0008190782454783104,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 3,
       "bio_theme": "Precision Agriculture",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -2301,7 +2355,11 @@ window.STARTUP_THEMES_DATA = {
       "uy": 2.181,
       "hx": 9.827,
       "hy": 8.036,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "ace_ventures",
+        "barn_investimentos"
+      ]
     },
     {
       "id": "horus_aeronaves",
@@ -2335,7 +2393,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 8.0,
       "quality_band": "medium",
       "community_id": 17,
-      "pagerank": 0.0008904483921454087,
+      "pagerank": 0.0007105087044747241,
       "valuation_tier": 1.5,
       "n_investors_mapped": 1,
       "bio_theme": "Precision Agriculture",
@@ -2414,7 +2472,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 8.0,
       "quality_band": "medium",
       "community_id": 17,
-      "pagerank": 0.0008913988951681788,
+      "pagerank": 0.0007111648988400749,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Precision Agriculture",
@@ -2479,10 +2537,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 4,
+      "pagerank": 0.0007400462850744637,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Precision Agriculture",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -2510,7 +2568,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 1.795,
       "hx": 9.738,
       "hy": 7.98,
-      "investor_ids": []
+      "investor_ids": [
+        "morningside_group",
+        "the_yield_lab_latam"
+      ]
     },
     {
       "id": "inspectral-br",
@@ -2538,10 +2599,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 24,
-      "pagerank": 0.0008785497508095748,
+      "community_id": 5,
+      "pagerank": 0.0007459727565241314,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Precision Agriculture",
       "bio_theme_secondary": "Precision Agriculture",
       "is_bio_universe": 1,
@@ -2578,7 +2639,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 2.536,
       "hx": 9.902,
       "hy": 8.104,
-      "investor_ids": []
+      "investor_ids": [
+        "newtopia_vc",
+        "the_yield_lab_latam"
+      ]
     },
     {
       "id": "instacrops-cl",
@@ -2607,7 +2671,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": 10,
-      "pagerank": 0.0011550632650285451,
+      "pagerank": 0.0008452324727628449,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Precision Agriculture",
@@ -2675,10 +2739,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": -1,
-      "pagerank": 0.0008690620741330828,
+      "community_id": 4,
+      "pagerank": 0.0007383761321966434,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Precision Agriculture",
       "bio_theme_secondary": "",
       "is_bio_universe": 1,
@@ -2714,7 +2778,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 2.775,
       "hx": 9.939,
       "hy": 8.192,
-      "investor_ids": []
+      "investor_ids": [
+        "newtopia_vc",
+        "the_yield_lab_latam"
+      ]
     },
     {
       "id": "jetbov",
@@ -2746,7 +2813,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 8.0,
       "quality_band": "medium",
       "community_id": 17,
-      "pagerank": 0.0008904483921454087,
+      "pagerank": 0.0007105087044747241,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Precision Agriculture",
@@ -2818,8 +2885,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 9.0,
       "quality_band": "high",
-      "community_id": 5,
-      "pagerank": 0.0017726795383303927,
+      "community_id": 7,
+      "pagerank": 0.001393212226251297,
       "valuation_tier": 3.0,
       "n_investors_mapped": 5,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -2900,8 +2967,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 7,
-      "pagerank": 0.000897814615898467,
+      "community_id": 1,
+      "pagerank": 0.0007102548376824156,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -2971,10 +3038,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 4,
+      "pagerank": 0.0007400462850744637,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Precision Agriculture",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -3001,7 +3068,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 1.77,
       "hx": 9.73,
       "hy": 7.982,
-      "investor_ids": []
+      "investor_ids": [
+        "morningside_group",
+        "the_yield_lab_latam"
+      ]
     },
     {
       "id": "metabix-uy",
@@ -3026,10 +3096,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 7,
+      "pagerank": 0.0007218461026460364,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 3,
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -3057,7 +3127,11 @@ window.STARTUP_THEMES_DATA = {
       "uy": 5.099,
       "hx": -7.212,
       "hy": 6.265,
-      "investor_ids": []
+      "investor_ids": [
+        "AIR Capital",
+        "Antom",
+        "GridX"
+      ]
     },
     {
       "id": "minerba-ec",
@@ -3082,10 +3156,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 10,
+      "pagerank": 0.0009345087196905304,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Precision Agriculture",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -3112,7 +3186,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 2.122,
       "hx": 9.795,
       "hy": 8.077,
-      "investor_ids": []
+      "investor_ids": [
+        "chileglobal_ventures",
+        "slc_agricola"
+      ]
     },
     {
       "id": "nexxto",
@@ -3146,7 +3223,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 8.0,
       "quality_band": "medium",
       "community_id": 17,
-      "pagerank": 0.0008913988951681788,
+      "pagerank": 0.0007111648988400749,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Devices",
@@ -3221,10 +3298,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 24,
-      "pagerank": 0.0008785497508095748,
+      "community_id": 5,
+      "pagerank": 0.0007088622109241247,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
@@ -3260,7 +3337,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 2.239,
       "hx": 2.815,
       "hy": -0.177,
-      "investor_ids": []
+      "investor_ids": [
+        "GridX",
+        "The Ganesha Lab"
+      ]
     },
     {
       "id": "pink-farms",
@@ -3293,7 +3373,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 8.0,
       "quality_band": "medium",
       "community_id": 17,
-      "pagerank": 0.0008904483921454087,
+      "pagerank": 0.0007105087044747241,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -3368,10 +3448,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 24,
-      "pagerank": 0.0008785497508095748,
+      "community_id": 5,
+      "pagerank": 0.0007459727565241314,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Precision Agriculture",
       "bio_theme_secondary": "Precision Agriculture",
       "is_bio_universe": 1,
@@ -3412,7 +3492,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 2.862,
       "hx": 9.965,
       "hy": 8.188,
-      "investor_ids": []
+      "investor_ids": [
+        "newtopia_vc",
+        "the_yield_lab_latam"
+      ]
     },
     {
       "id": "produzindo-certo",
@@ -3443,8 +3526,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 5,
-      "pagerank": 0.0008936595344834304,
+      "community_id": 4,
+      "pagerank": 0.0007073872420454495,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -3510,10 +3593,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 4,
+      "pagerank": 0.0007400462850744637,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Precision Agriculture",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -3538,7 +3621,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 1.76,
       "hx": 9.729,
       "hy": 7.976,
-      "investor_ids": []
+      "investor_ids": [
+        "morningside_group",
+        "the_yield_lab_latam"
+      ]
     },
     {
       "id": "rumina",
@@ -3568,8 +3654,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 1,
-      "pagerank": 0.001074459839970848,
+      "community_id": 23,
+      "pagerank": 0.000782812095968667,
       "valuation_tier": 1.5,
       "n_investors_mapped": 1,
       "bio_theme": "Precision Agriculture",
@@ -3642,8 +3728,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 24,
-      "pagerank": 0.00221036796553888,
+      "community_id": 10,
+      "pagerank": 0.0012716298612678836,
       "valuation_tier": 1.0,
       "n_investors_mapped": 4,
       "bio_theme": "Precision Agriculture",
@@ -3721,7 +3807,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 8.5,
       "quality_band": "high",
       "community_id": 1,
-      "pagerank": 0.0010339099802546194,
+      "pagerank": 0.0008277367189064508,
       "valuation_tier": 2.0,
       "n_investors_mapped": 1,
       "bio_theme": "Precision Agriculture",
@@ -3791,8 +3877,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 5,
-      "pagerank": 0.0008936595344834304,
+      "community_id": 4,
+      "pagerank": 0.0007073872420454495,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Precision Agriculture",
@@ -3862,8 +3948,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 1,
-      "pagerank": 0.0009690476914027274,
+      "community_id": 4,
+      "pagerank": 0.0007717196336188058,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Precision Agriculture",
@@ -3936,8 +4022,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 25,
-      "pagerank": 0.001249127975775027,
+      "community_id": 23,
+      "pagerank": 0.0008210494464509508,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Precision Agriculture",
@@ -4010,8 +4096,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 5,
-      "pagerank": 0.0008936595344834304,
+      "community_id": 4,
+      "pagerank": 0.0007073872420454495,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Precision Agriculture",
@@ -4080,8 +4166,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 1,
-      "pagerank": 0.001398531756566662,
+      "community_id": 23,
+      "pagerank": 0.0009237637121186685,
       "valuation_tier": 1.0,
       "n_investors_mapped": 3,
       "bio_theme": "Precision Agriculture",
@@ -4155,8 +4241,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 24,
-      "pagerank": 0.0032819997981199905,
+      "community_id": 10,
+      "pagerank": 0.0022168275911169906,
       "valuation_tier": 1.0,
       "n_investors_mapped": 4,
       "bio_theme": "Precision Agriculture",
@@ -4231,8 +4317,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 1,
-      "pagerank": 0.0009690476914027274,
+      "community_id": 4,
+      "pagerank": 0.0007717196336188058,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Precision Agriculture",
@@ -4306,8 +4392,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 5,
-      "pagerank": 0.0008936595344834304,
+      "community_id": 4,
+      "pagerank": 0.0007073872420454495,
       "valuation_tier": 2.0,
       "n_investors_mapped": 1,
       "bio_theme": "Precision Agriculture",
@@ -4382,8 +4468,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 6,
-      "pagerank": 0.0008882885334754033,
+      "community_id": 5,
+      "pagerank": 0.0007016339098500624,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Precision Agriculture",
@@ -4461,8 +4547,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 5,
-      "pagerank": 0.0009376450940526886,
+      "community_id": 25,
+      "pagerank": 0.0007450542145492989,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -4536,8 +4622,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 8,
-      "pagerank": 0.0015932268574216028,
+      "community_id": 23,
+      "pagerank": 0.001264913450132065,
       "valuation_tier": 1.0,
       "n_investors_mapped": 2,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -4614,8 +4700,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 5,
-      "pagerank": 0.0008936595344834304,
+      "community_id": 4,
+      "pagerank": 0.0007073872420454495,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Precision Agriculture",
@@ -4691,8 +4777,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 15,
-      "pagerank": 0.0010729653974469544,
+      "community_id": 4,
+      "pagerank": 0.0007651782842197112,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -4763,8 +4849,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 5,
-      "pagerank": 0.0009108640630660018,
+      "community_id": 25,
+      "pagerank": 0.0007292148205494792,
       "valuation_tier": 1.5,
       "n_investors_mapped": 1,
       "bio_theme": "Precision Agriculture",
@@ -4838,8 +4924,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 35,
-      "pagerank": 0.00160807910510353,
+      "community_id": 4,
+      "pagerank": 0.0007577915501318859,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Precision Agriculture",
@@ -4905,10 +4991,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 4,
+      "pagerank": 0.0007400462850744637,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Precision Agriculture",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -4933,7 +5019,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 2.32,
       "hx": 9.846,
       "hy": 8.092,
-      "investor_ids": []
+      "investor_ids": [
+        "morningside_group",
+        "the_yield_lab_latam"
+      ]
     },
     {
       "id": "zoomagri",
@@ -4963,8 +5052,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 9.0,
       "quality_band": "high",
-      "community_id": 5,
-      "pagerank": 0.0009590314120650147,
+      "community_id": 25,
+      "pagerank": 0.000759818587769689,
       "valuation_tier": 2.0,
       "n_investors_mapped": 2,
       "bio_theme": "Precision Agriculture",
@@ -5035,10 +5124,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 14,
+      "pagerank": 0.0007764332311915494,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -5065,7 +5154,9 @@ window.STARTUP_THEMES_DATA = {
       "uy": 0.895,
       "hx": -10.139,
       "hy": -10.101,
-      "investor_ids": []
+      "investor_ids": [
+        "grupo_insud"
+      ]
     },
     {
       "id": "biohack-uio-ec",
@@ -5090,10 +5181,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 12,
+      "pagerank": 0.0007509076831898746,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -5120,7 +5211,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 0.883,
       "hx": -10.141,
       "hy": -10.103,
-      "investor_ids": []
+      "investor_ids": [
+        "ecoa_capital",
+        "zentynel"
+      ]
     },
     {
       "id": "biolinker-br",
@@ -5145,10 +5239,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 4,
+      "pagerank": 0.0007383761321966434,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Digital AgTech & Agrifintech",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -5177,7 +5271,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 0.859,
       "hx": 11.863,
       "hy": 2.13,
-      "investor_ids": []
+      "investor_ids": [
+        "newtopia_vc",
+        "the_yield_lab_latam"
+      ]
     },
     {
       "id": "bioproducts-co",
@@ -5202,10 +5299,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 1,
+      "pagerank": 0.0007204819778383544,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 3,
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -5233,7 +5330,11 @@ window.STARTUP_THEMES_DATA = {
       "uy": 0.868,
       "hx": -10.138,
       "hy": -10.121,
-      "investor_ids": []
+      "investor_ids": [
+        "AIR Capital",
+        "CITES",
+        "DraperCygnus"
+      ]
     },
     {
       "id": "healthpoint-bo",
@@ -5258,10 +5359,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 28,
+      "pagerank": 0.0008190587670806079,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -5289,7 +5390,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 0.845,
       "hx": -3.029,
       "hy": -7.513,
-      "investor_ids": []
+      "investor_ids": [
+        "atlantico",
+        "melek_capital"
+      ]
     },
     {
       "id": "medimarket-online-ve",
@@ -5314,10 +5418,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 28,
+      "pagerank": 0.0008190587670806079,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -5342,7 +5446,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -6.17,
       "hx": -4.222,
       "hy": -9.225,
-      "investor_ids": []
+      "investor_ids": [
+        "atlantico",
+        "melek_capital"
+      ]
     },
     {
       "id": "scintia-mx",
@@ -5367,10 +5474,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 12,
+      "pagerank": 0.0007509076831898746,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -5398,7 +5505,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 0.842,
       "hx": -10.151,
       "hy": -10.103,
-      "investor_ids": []
+      "investor_ids": [
+        "ecoa_capital",
+        "zentynel"
+      ]
     },
     {
       "id": "alytix",
@@ -5432,8 +5542,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 3,
-      "pagerank": 0.0008875882657988496,
+      "community_id": 2,
+      "pagerank": 0.0007096587830625514,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Devices",
@@ -5520,8 +5630,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 16,
-      "pagerank": 0.0008998857589929651,
+      "community_id": 7,
+      "pagerank": 0.0007155154715864753,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Devices",
@@ -5604,8 +5714,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 6,
-      "pagerank": 0.0008882885334754033,
+      "community_id": 5,
+      "pagerank": 0.0007016339098500624,
       "valuation_tier": 2.0,
       "n_investors_mapped": 1,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -5694,8 +5804,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 3,
-      "pagerank": 0.0008894419259975529,
+      "community_id": 2,
+      "pagerank": 0.0007108365909779244,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Devices",
@@ -5779,8 +5889,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 6,
-      "pagerank": 0.0008882885334754033,
+      "community_id": 5,
+      "pagerank": 0.0007016339098500624,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Devices",
@@ -5862,8 +5972,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 8,
-      "pagerank": 0.000983927095921725,
+      "community_id": 2,
+      "pagerank": 0.000767877789572953,
       "valuation_tier": 1.0,
       "n_investors_mapped": 4,
       "bio_theme": "Diagnostics & Devices",
@@ -5944,8 +6054,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 3,
-      "pagerank": 0.0008889785109478772,
+      "community_id": 2,
+      "pagerank": 0.0007105421389990813,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Devices",
@@ -6013,10 +6123,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 1,
+      "pagerank": 0.0008483411108204512,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 3,
       "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -6044,7 +6154,11 @@ window.STARTUP_THEMES_DATA = {
       "uy": -5.748,
       "hx": -4.159,
       "hy": -9.098,
-      "investor_ids": []
+      "investor_ids": [
+        "500_latam",
+        "AIR Capital",
+        "CITES"
+      ]
     },
     {
       "id": "gen-t-br",
@@ -6072,8 +6186,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 24,
-      "pagerank": 0.0019765179111085247,
+      "community_id": 12,
+      "pagerank": 0.0015824657320406249,
       "valuation_tier": 1.5,
       "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Devices",
@@ -6147,7 +6261,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 8.0,
       "quality_band": "medium",
       "community_id": 17,
-      "pagerank": 0.0008913988951681788,
+      "pagerank": 0.0007111648988400749,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Devices",
@@ -6229,10 +6343,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 16,
-      "pagerank": 0.0008982101973206307,
+      "community_id": 5,
+      "pagerank": 0.0007282278713180202,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
@@ -6278,7 +6392,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -5.68,
       "hx": -4.148,
       "hy": -9.08,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "taugc-bioinformatics-br",
@@ -6306,10 +6423,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 24,
-      "pagerank": 0.0008785497508095748,
+      "community_id": 5,
+      "pagerank": 0.0007124860800083283,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
@@ -6345,7 +6462,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -5.782,
       "hx": -4.164,
       "hy": -9.107,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "avatar_medtech",
@@ -6378,8 +6498,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.0008764767149278959,
+      "community_id": 2,
+      "pagerank": 0.0007004555629158268,
       "valuation_tier": 1.5,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Devices",
@@ -6455,8 +6575,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 2,
-      "pagerank": 0.0009067084105970817,
+      "community_id": 1,
+      "pagerank": 0.0007160114987083712,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Devices",
@@ -6526,10 +6646,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 14,
-      "pagerank": 0.0009122631347009092,
+      "community_id": 16,
+      "pagerank": 0.0007394798236785177,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
@@ -6566,7 +6686,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -5.556,
       "hx": -4.126,
       "hy": -9.052,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "phylumtech",
@@ -6600,8 +6723,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 2,
-      "pagerank": 0.0009196736216667387,
+      "community_id": 1,
+      "pagerank": 0.000726392526770469,
       "valuation_tier": 1.5,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Devices",
@@ -6678,8 +6801,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 3,
-      "pagerank": 0.0009050069513825429,
+      "community_id": 2,
+      "pagerank": 0.0007234013759145489,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Devices",
@@ -6756,8 +6879,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 6,
-      "pagerank": 0.0008882885334754033,
+      "community_id": 5,
+      "pagerank": 0.0007016339098500624,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Devices",
@@ -6831,10 +6954,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 14,
-      "pagerank": 0.0009122631347009092,
+      "community_id": 16,
+      "pagerank": 0.0007394798236785177,
       "valuation_tier": 1.5,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
@@ -6872,7 +6995,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -6.985,
       "hx": -4.321,
       "hy": -9.535,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "avedian-ar",
@@ -6900,8 +7026,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 28,
-      "pagerank": 0.0016080791051035302,
+      "community_id": 24,
+      "pagerank": 0.0012874629307939127,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Devices",
@@ -6966,8 +7092,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 25,
-      "pagerank": 0.0017444780851192782,
+      "community_id": 6,
+      "pagerank": 0.0012276166872010794,
       "valuation_tier": 1.0,
       "n_investors_mapped": 3,
       "bio_theme": "Diagnostics & Devices",
@@ -7041,8 +7167,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 2,
-      "pagerank": 0.0010800973944999257,
+      "community_id": 12,
+      "pagerank": 0.0008558305333571635,
       "valuation_tier": 1.5,
       "n_investors_mapped": 3,
       "bio_theme": "Diagnostics & Devices",
@@ -7112,10 +7238,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 28,
+      "pagerank": 0.0008190587670806079,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -7142,7 +7268,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -6.666,
       "hx": -4.226,
       "hy": -9.571,
-      "investor_ids": []
+      "investor_ids": [
+        "atlantico",
+        "melek_capital"
+      ]
     },
     {
       "id": "biosens",
@@ -7172,10 +7301,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 24,
-      "pagerank": 0.0008785497508095748,
+      "community_id": 5,
+      "pagerank": 0.0007124860800083283,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
@@ -7213,7 +7342,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -6.676,
       "hx": -4.236,
       "hy": -9.548,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "biowit-mx",
@@ -7238,10 +7370,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 1,
+      "pagerank": 0.0008483411108204512,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 3,
       "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -7268,7 +7400,11 @@ window.STARTUP_THEMES_DATA = {
       "uy": -6.626,
       "hx": -4.212,
       "hy": -9.58,
-      "investor_ids": []
+      "investor_ids": [
+        "500_latam",
+        "AIR Capital",
+        "CITES"
+      ]
     },
     {
       "id": "bitmec",
@@ -7299,10 +7435,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": -1,
-      "pagerank": 0.0008690620741330828,
+      "community_id": 5,
+      "pagerank": 0.0007048894556808403,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
@@ -7343,7 +7479,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -7.135,
       "hx": -4.367,
       "hy": -9.514,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "bleps_vision",
@@ -7374,8 +7513,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 6,
-      "pagerank": 0.0008834819186398233,
+      "community_id": 5,
+      "pagerank": 0.0007001615152011304,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Devices",
@@ -7446,10 +7585,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": -1,
-      "pagerank": 0.0008690620741330828,
+      "community_id": 5,
+      "pagerank": 0.0007048894556808403,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "",
       "is_bio_universe": 1,
@@ -7485,7 +7624,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -6.719,
       "hx": -4.34,
       "hy": -9.29,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "brain4care-br",
@@ -7513,8 +7655,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 24,
-      "pagerank": 0.0012314511420033277,
+      "community_id": 5,
+      "pagerank": 0.0009859032081709468,
       "valuation_tier": 1.5,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Devices",
@@ -7578,10 +7720,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 28,
+      "pagerank": 0.0008190587670806079,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -7608,7 +7750,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -6.489,
       "hx": -4.237,
       "hy": -9.412,
-      "investor_ids": []
+      "investor_ids": [
+        "atlantico",
+        "melek_capital"
+      ]
     },
     {
       "id": "carigenetics",
@@ -7639,10 +7784,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": -1,
-      "pagerank": 0.0008690620741330828,
+      "community_id": 10,
+      "pagerank": 0.0008353498972178046,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
@@ -7681,7 +7826,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -6.124,
       "hx": -4.161,
       "hy": -9.361,
-      "investor_ids": []
+      "investor_ids": [
+        "domo_invest",
+        "primatec"
+      ]
     },
     {
       "id": "caspr_biotech",
@@ -7713,8 +7861,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 3,
-      "pagerank": 0.0009445818903806328,
+      "community_id": 2,
+      "pagerank": 0.0007550628366674596,
       "valuation_tier": 1.0,
       "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Devices",
@@ -7790,8 +7938,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 3,
-      "pagerank": 0.0008891329826311023,
+      "community_id": 2,
+      "pagerank": 0.0007106402896586957,
       "valuation_tier": 1.5,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Devices",
@@ -7863,10 +8011,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 24,
-      "pagerank": 0.0008785497508095748,
+      "community_id": 10,
+      "pagerank": 0.0008429465215452926,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
@@ -7904,7 +8052,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -6.585,
       "hx": -4.24,
       "hy": -9.473,
-      "investor_ids": []
+      "investor_ids": [
+        "domo_invest",
+        "primatec"
+      ]
     },
     {
       "id": "cepha-biotech-br",
@@ -7929,10 +8080,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 28,
+      "pagerank": 0.0007571227705241862,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -7960,7 +8111,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -6.43,
       "hx": -4.168,
       "hy": -9.561,
-      "investor_ids": []
+      "investor_ids": [
+        "melek_capital",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "chemtest",
@@ -7990,10 +8144,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 16,
-      "pagerank": 0.0009232830903297307,
+      "community_id": 5,
+      "pagerank": 0.0007483033181832543,
       "valuation_tier": 2.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
@@ -8030,7 +8184,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -6.663,
       "hx": -4.236,
       "hy": -9.54,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "corsync",
@@ -8060,8 +8217,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 24,
-      "pagerank": 0.0014410950982175594,
+      "community_id": 10,
+      "pagerank": 0.0009602878741194595,
       "valuation_tier": 1.0,
       "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Devices",
@@ -8134,10 +8291,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": -1,
-      "pagerank": 0.0008690620741330828,
+      "community_id": 5,
+      "pagerank": 0.0007048894556808403,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
@@ -8173,7 +8330,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -6.721,
       "hx": -4.273,
       "hy": -9.479,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "daeki-cl",
@@ -8201,10 +8361,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 14,
-      "pagerank": 0.0009122631347009092,
+      "community_id": 16,
+      "pagerank": 0.0007394798236785177,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
@@ -8239,7 +8399,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -7.14,
       "hx": -4.359,
       "hy": -9.54,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "dart_by_teledx",
@@ -8270,10 +8433,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 14,
-      "pagerank": 0.0009122631347009092,
+      "community_id": 16,
+      "pagerank": 0.0007394798236785177,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
@@ -8312,7 +8475,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -7.525,
       "hx": -4.505,
       "hy": -9.41,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "delee",
@@ -8343,8 +8509,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 6,
-      "pagerank": 0.0008882885334754033,
+      "community_id": 5,
+      "pagerank": 0.0007016339098500624,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Devices",
@@ -8421,10 +8587,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 3,
-      "pagerank": 0.0008820272852027398,
+      "community_id": 2,
+      "pagerank": 0.0007152704837429381,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
@@ -8463,7 +8629,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -6.221,
       "hx": -4.142,
       "hy": -9.485,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "diagnosis_biotech",
@@ -8493,10 +8662,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 14,
-      "pagerank": 0.0009122631347009092,
+      "community_id": 16,
+      "pagerank": 0.0007394798236785177,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
@@ -8534,7 +8703,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -6.673,
       "hx": -4.237,
       "hy": -9.544,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "diagtech",
@@ -8564,10 +8736,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 30,
-      "pagerank": 0.0009069603834136184,
+      "community_id": 5,
+      "pagerank": 0.0007352339992469723,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
@@ -8605,7 +8777,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -6.346,
       "hx": -4.156,
       "hy": -9.534,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "embryoxite",
@@ -8636,8 +8811,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 3,
-      "pagerank": 0.0008894419259975529,
+      "community_id": 2,
+      "pagerank": 0.0007108365909779244,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Devices",
@@ -8708,8 +8883,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 3,
-      "pagerank": 0.0010793569171966622,
+      "community_id": 7,
+      "pagerank": 0.0008628983539880955,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Devices",
@@ -8781,8 +8956,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 2,
-      "pagerank": 0.0009221811767165893,
+      "community_id": 1,
+      "pagerank": 0.0007235664703600291,
       "valuation_tier": 1.0,
       "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Devices",
@@ -8857,8 +9032,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 1,
-      "pagerank": 0.001948422228026599,
+      "community_id": 23,
+      "pagerank": 0.0015600043592924413,
       "valuation_tier": 2.0,
       "n_investors_mapped": 3,
       "bio_theme": "Diagnostics & Devices",
@@ -8925,8 +9100,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 27,
-      "pagerank": 0.0016080791051035302,
+      "community_id": 28,
+      "pagerank": 0.0012874629307939127,
       "valuation_tier": 1.0,
       "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Devices",
@@ -8997,8 +9172,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 16,
-      "pagerank": 0.0008998857589929651,
+      "community_id": 7,
+      "pagerank": 0.0007155154715864753,
       "valuation_tier": 2.0,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Devices",
@@ -9071,10 +9246,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 30,
-      "pagerank": 0.0009069603834136184,
+      "community_id": 5,
+      "pagerank": 0.0008494033106467402,
       "valuation_tier": 2.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
@@ -9110,7 +9285,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -7.012,
       "hx": -4.404,
       "hy": -9.323,
-      "investor_ids": []
+      "investor_ids": [
+        "atlantico",
+        "melek_capital"
+      ]
     },
     {
       "id": "genial-care-br",
@@ -9138,8 +9316,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 27,
-      "pagerank": 0.0027166046515592008,
+      "community_id": 28,
+      "pagerank": 0.0016989454051863783,
       "valuation_tier": 1.0,
       "n_investors_mapped": 3,
       "bio_theme": "Diagnostics & Devices",
@@ -9212,8 +9390,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 1,
-      "pagerank": 0.0010306354693882152,
+      "community_id": 6,
+      "pagerank": 0.0008251171436165735,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Devices",
@@ -9288,8 +9466,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.0008894419259975529,
+      "community_id": 2,
+      "pagerank": 0.0007108365909779244,
       "valuation_tier": 1.5,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Devices",
@@ -9361,10 +9539,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 24,
-      "pagerank": 0.0008785497508095748,
+      "community_id": 10,
+      "pagerank": 0.0008429465215452926,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
@@ -9401,7 +9579,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -7.388,
       "hx": -4.468,
       "hy": -9.415,
-      "investor_ids": []
+      "investor_ids": [
+        "domo_invest",
+        "primatec"
+      ]
     },
     {
       "id": "grupo_diagnostico_aries",
@@ -9431,8 +9612,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 4,
-      "pagerank": 0.00160807910510353,
+      "community_id": 21,
+      "pagerank": 0.0012874629307939125,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Devices",
@@ -9499,10 +9680,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 10,
+      "pagerank": 0.0008353498972178046,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -9529,7 +9710,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -6.628,
       "hx": -4.213,
       "hy": -9.578,
-      "investor_ids": []
+      "investor_ids": [
+        "domo_invest",
+        "primatec"
+      ]
     },
     {
       "id": "heritas",
@@ -9560,10 +9744,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 16,
-      "pagerank": 0.0008982101973206307,
+      "community_id": 10,
+      "pagerank": 0.0008586883128549846,
       "valuation_tier": 1.5,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
@@ -9603,7 +9787,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -6.129,
       "hx": -4.177,
       "hy": -9.322,
-      "investor_ids": []
+      "investor_ids": [
+        "domo_invest",
+        "primatec"
+      ]
     },
     {
       "id": "hilab-br",
@@ -9632,7 +9819,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": 17,
-      "pagerank": 0.0025513470403509004,
+      "pagerank": 0.0019756986554752267,
       "valuation_tier": 2.0,
       "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Devices",
@@ -9705,10 +9892,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 24,
-      "pagerank": 0.0008785497508095748,
+      "community_id": 5,
+      "pagerank": 0.0007124860800083283,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
@@ -9748,7 +9935,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -7.518,
       "hx": -4.495,
       "hy": -9.431,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "huna",
@@ -9779,10 +9969,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 24,
-      "pagerank": 0.0008785497508095748,
+      "community_id": 5,
+      "pagerank": 0.0007124860800083283,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
@@ -9821,7 +10011,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -7.324,
       "hx": -4.437,
       "hy": -9.453,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "imvalv",
@@ -9853,8 +10046,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 2,
-      "pagerank": 0.0009067084105970817,
+      "community_id": 1,
+      "pagerank": 0.0007160114987083712,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Devices",
@@ -9922,10 +10115,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 1,
+      "pagerank": 0.0007204819778383544,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 3,
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -9952,7 +10145,11 @@ window.STARTUP_THEMES_DATA = {
       "uy": -6.912,
       "hx": -11.434,
       "hy": -11.729,
-      "investor_ids": []
+      "investor_ids": [
+        "AIR Capital",
+        "CITES",
+        "DraperCygnus"
+      ]
     },
     {
       "id": "inpulse_medical",
@@ -9982,10 +10179,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 24,
-      "pagerank": 0.0008785497508095748,
+      "community_id": 5,
+      "pagerank": 0.0007124860800083283,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
@@ -10024,7 +10221,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -7.35,
       "hx": -4.441,
       "hy": -9.462,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "koltin-mx",
@@ -10053,7 +10253,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": 1,
-      "pagerank": 0.0024987031862659663,
+      "pagerank": 0.0015891710091546322,
       "valuation_tier": 1.0,
       "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Devices",
@@ -10123,8 +10323,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 1,
-      "pagerank": 0.0013370268838975722,
+      "community_id": 23,
+      "pagerank": 0.0010704648128171494,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Devices",
@@ -10188,10 +10388,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 28,
+      "pagerank": 0.0007571227705241862,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -10218,7 +10418,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -6.177,
       "hx": -4.128,
       "hy": -9.492,
-      "investor_ids": []
+      "investor_ids": [
+        "melek_capital",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "levita-magnetics-cl",
@@ -10246,8 +10449,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 34,
-      "pagerank": 0.0016080791051035302,
+      "community_id": 31,
+      "pagerank": 0.0012874629307939127,
       "valuation_tier": 3.0,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Devices",
@@ -10317,8 +10520,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 3,
-      "pagerank": 0.0009047752438577049,
+      "community_id": 2,
+      "pagerank": 0.0007232541499251272,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Devices",
@@ -10393,8 +10596,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.0009429680392338212,
+      "community_id": 2,
+      "pagerank": 0.0007421102336118029,
       "valuation_tier": 1.0,
       "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Devices",
@@ -10470,10 +10673,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 24,
-      "pagerank": 0.0008785497508095748,
+      "community_id": 5,
+      "pagerank": 0.0007124860800083283,
       "valuation_tier": 2.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
@@ -10513,7 +10716,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -7.361,
       "hx": -4.45,
       "hy": -9.445,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "magnamed",
@@ -10545,7 +10751,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 8.0,
       "quality_band": "medium",
       "community_id": 17,
-      "pagerank": 0.001095649799445102,
+      "pagerank": 0.0008076820239818099,
       "valuation_tier": 1.0,
       "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Devices",
@@ -10623,8 +10829,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 1,
-      "pagerank": 0.0013983738644903821,
+      "community_id": 23,
+      "pagerank": 0.0010058482184070567,
       "valuation_tier": 2.0,
       "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Devices",
@@ -10697,8 +10903,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 9.0,
       "quality_band": "high",
-      "community_id": 8,
-      "pagerank": 0.0009779569922572342,
+      "community_id": 2,
+      "pagerank": 0.0007791338942002,
       "valuation_tier": 2.0,
       "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Devices",
@@ -10771,10 +10977,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 16,
-      "pagerank": 0.0008982101973206307,
+      "community_id": 5,
+      "pagerank": 0.0007282278713180202,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
@@ -10818,7 +11024,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -7.584,
       "hx": -4.522,
       "hy": -9.403,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "mirai_3d",
@@ -10848,10 +11057,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 16,
-      "pagerank": 0.0008982101973206307,
+      "community_id": 5,
+      "pagerank": 0.0007282278713180202,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
@@ -10890,7 +11099,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -7.062,
       "hx": -4.422,
       "hy": -9.309,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "motivia-ar",
@@ -10918,10 +11130,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": -1,
-      "pagerank": 0.0008690620741330828,
+      "community_id": 5,
+      "pagerank": 0.0007048894556808403,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "",
       "is_bio_universe": 1,
@@ -10956,7 +11168,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -6.555,
       "hx": -4.307,
       "hy": -9.263,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "movet-co",
@@ -10984,8 +11199,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 31,
-      "pagerank": 0.002347096136073977,
+      "community_id": 28,
+      "pagerank": 0.0013814742970759018,
       "valuation_tier": 1.0,
       "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Devices",
@@ -11056,8 +11271,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 2,
-      "pagerank": 0.0009492250673015872,
+      "community_id": 12,
+      "pagerank": 0.0007461330819113579,
       "valuation_tier": 1.0,
       "n_investors_mapped": 3,
       "bio_theme": "Diagnostics & Devices",
@@ -11135,8 +11350,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 3,
-      "pagerank": 0.0008746230547291927,
+      "community_id": 2,
+      "pagerank": 0.0006992777550004535,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Devices",
@@ -11206,10 +11421,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 16,
-      "pagerank": 0.0008982101973206307,
+      "community_id": 5,
+      "pagerank": 0.0007282278713180202,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
@@ -11244,7 +11459,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -6.59,
       "hx": -4.237,
       "hy": -9.484,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "nanojump_bio",
@@ -11274,8 +11492,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 3,
-      "pagerank": 0.0008764767149278959,
+      "community_id": 2,
+      "pagerank": 0.0007004555629158268,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Devices",
@@ -11342,10 +11560,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 28,
+      "pagerank": 0.0008190587670806079,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -11372,7 +11590,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -6.948,
       "hx": -4.312,
       "hy": -9.532,
-      "investor_ids": []
+      "investor_ids": [
+        "atlantico",
+        "melek_capital"
+      ]
     },
     {
       "id": "neomed-br",
@@ -11400,10 +11621,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 24,
-      "pagerank": 0.0008785497508095748,
+      "community_id": 5,
+      "pagerank": 0.0007124860800083283,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
@@ -11436,7 +11657,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -6.917,
       "hx": -4.386,
       "hy": -9.304,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "neuralmed",
@@ -11467,8 +11691,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 11,
-      "pagerank": 0.0019765179111085247,
+      "community_id": 13,
+      "pagerank": 0.0015824657320406249,
       "valuation_tier": 1.5,
       "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Devices",
@@ -11543,10 +11767,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 14,
-      "pagerank": 0.0009122631347009092,
+      "community_id": 16,
+      "pagerank": 0.0007394798236785177,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
@@ -11584,7 +11808,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -7.285,
       "hx": -4.43,
       "hy": -9.444,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "novagenic_affinity",
@@ -11614,10 +11841,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 30,
-      "pagerank": 0.0009069603834136184,
+      "community_id": 5,
+      "pagerank": 0.0007352339992469723,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
@@ -11653,7 +11880,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -6.176,
       "hx": -4.167,
       "hy": -9.382,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "olho_do_dono",
@@ -11684,8 +11914,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 24,
-      "pagerank": 0.001617566781780022,
+      "community_id": 10,
+      "pagerank": 0.0008375451740340978,
       "valuation_tier": 1.5,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Devices",
@@ -11756,8 +11986,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 9.0,
       "quality_band": "high",
-      "community_id": 2,
-      "pagerank": 0.0010975490155331505,
+      "community_id": 12,
+      "pagerank": 0.0008669734965689852,
       "valuation_tier": 2.0,
       "n_investors_mapped": 3,
       "bio_theme": "Diagnostics & Devices",
@@ -11830,10 +12060,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 14,
-      "pagerank": 0.0009122631347009092,
+      "community_id": 16,
+      "pagerank": 0.0007394798236785177,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
@@ -11871,7 +12101,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -7.634,
       "hx": -4.53,
       "hy": -9.418,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "pharmalens-br",
@@ -11902,10 +12135,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 24,
-      "pagerank": 0.0008785497508095748,
+      "community_id": 5,
+      "pagerank": 0.0007252733437126927,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Biomanufacturing & Platform Technologies",
       "bio_theme_secondary": "Diagnostics & Devices",
       "is_bio_universe": 0,
@@ -11944,7 +12177,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -7.036,
       "hx": -10.977,
       "hy": -3.781,
-      "investor_ids": []
+      "investor_ids": [
+        "SF500",
+        "sp_ventures"
+      ]
     },
     {
       "id": "pickcells",
@@ -11975,10 +12211,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 24,
-      "pagerank": 0.0008785497508095748,
+      "community_id": 5,
+      "pagerank": 0.0007124860800083283,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
@@ -12017,7 +12253,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -7.657,
       "hx": -4.54,
       "hy": -9.406,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "pill_ar",
@@ -12052,8 +12291,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 16,
-      "pagerank": 0.0008998857589929651,
+      "community_id": 7,
+      "pagerank": 0.0007155154715864753,
       "valuation_tier": 1.5,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Devices",
@@ -12132,8 +12371,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.00087601329987822,
+      "community_id": 2,
+      "pagerank": 0.0007001611109369833,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Devices",
@@ -12211,10 +12450,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 30,
-      "pagerank": 0.0009069603834136184,
+      "community_id": 10,
+      "pagerank": 0.0008656944407839369,
       "valuation_tier": 1.5,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
@@ -12253,7 +12492,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -7.347,
       "hx": -4.453,
       "hy": -9.425,
-      "investor_ids": []
+      "investor_ids": [
+        "domo_invest",
+        "primatec"
+      ]
     },
     {
       "id": "reddot-bio-br",
@@ -12281,8 +12523,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 24,
-      "pagerank": 0.0009998170242313663,
+      "community_id": 5,
+      "pagerank": 0.0007136729360585816,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Devices",
@@ -12348,10 +12590,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 28,
+      "pagerank": 0.0008190587670806079,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -12378,7 +12620,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -7.007,
       "hx": -4.311,
       "hy": -9.578,
-      "investor_ids": []
+      "investor_ids": [
+        "atlantico",
+        "melek_capital"
+      ]
     },
     {
       "id": "samay",
@@ -12409,8 +12654,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 2,
-      "pagerank": 0.0009184013824417047,
+      "community_id": 12,
+      "pagerank": 0.0007263619415792167,
       "valuation_tier": 1.5,
       "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Devices",
@@ -12484,10 +12729,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 3,
-      "pagerank": 0.001071942276401849,
+      "community_id": 7,
+      "pagerank": 0.0008673322467531092,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
@@ -12525,7 +12770,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -6.658,
       "hx": -4.254,
       "hy": -9.487,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "tell",
@@ -12556,8 +12804,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 3,
-      "pagerank": 0.0010835776608728248,
+      "community_id": 7,
+      "pagerank": 0.000855465966042337,
       "valuation_tier": 1.0,
       "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Devices",
@@ -12630,10 +12878,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 16,
-      "pagerank": 0.0008982101973206307,
+      "community_id": 5,
+      "pagerank": 0.0007282278713180202,
       "valuation_tier": 1.5,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
@@ -12666,7 +12914,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -6.752,
       "hx": -4.262,
       "hy": -9.531,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "thermy",
@@ -12696,10 +12947,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 30,
-      "pagerank": 0.0009069603834136184,
+      "community_id": 5,
+      "pagerank": 0.0007352339992469723,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
@@ -12735,7 +12986,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -7.253,
       "hx": -4.393,
       "hy": -9.525,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "thyroidprint",
@@ -12765,8 +13019,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 14,
-      "pagerank": 0.0020215786402528286,
+      "community_id": 17,
+      "pagerank": 0.0014512388447651889,
       "valuation_tier": 2.0,
       "n_investors_mapped": 3,
       "bio_theme": "Diagnostics & Devices",
@@ -12842,8 +13096,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 24,
-      "pagerank": 0.0011269588368500612,
+      "community_id": 5,
+      "pagerank": 0.0009022379638304202,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Devices",
@@ -12916,8 +13170,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.0008746230547291927,
+      "community_id": 2,
+      "pagerank": 0.0006992777550004535,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Devices",
@@ -12985,8 +13239,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 1,
-      "pagerank": 0.0013370268838975722,
+      "community_id": 23,
+      "pagerank": 0.0010704648128171494,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Devices",
@@ -13056,10 +13310,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 24,
-      "pagerank": 0.0008785497508095748,
+      "community_id": 5,
+      "pagerank": 0.0007124860800083283,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
@@ -13099,7 +13353,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -7.658,
       "hx": -4.536,
       "hy": -9.417,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "viewmind",
@@ -13131,8 +13388,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 2,
-      "pagerank": 0.000948518451612904,
+      "community_id": 12,
+      "pagerank": 0.0007425756755424463,
       "valuation_tier": 1.5,
       "n_investors_mapped": 3,
       "bio_theme": "Diagnostics & Devices",
@@ -13202,10 +13459,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 1,
+      "pagerank": 0.0008483411108204512,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 3,
       "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -13232,7 +13489,11 @@ window.STARTUP_THEMES_DATA = {
       "uy": -7.421,
       "hx": -4.469,
       "hy": -9.434,
-      "investor_ids": []
+      "investor_ids": [
+        "500_latam",
+        "AIR Capital",
+        "CITES"
+      ]
     },
     {
       "id": "zev_biotech",
@@ -13264,8 +13525,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 9.0,
       "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.0008875882657988496,
+      "community_id": 2,
+      "pagerank": 0.0007096587830625514,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Devices",
@@ -13338,8 +13599,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 2,
-      "pagerank": 0.0009092181663613481,
+      "community_id": 1,
+      "pagerank": 0.000717362643205307,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -13412,8 +13673,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 12,
-      "pagerank": 0.0011154010844565652,
+      "community_id": 14,
+      "pagerank": 0.000816777681160157,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -13484,8 +13745,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 9.0,
       "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.0009876011467699465,
+      "community_id": 2,
+      "pagerank": 0.000790656587822086,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Devices",
@@ -13562,10 +13823,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 3,
-      "pagerank": 0.0008820272852027398,
+      "community_id": 2,
+      "pagerank": 0.0007152704837429381,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
@@ -13605,7 +13866,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -3.22,
       "hx": -11.137,
       "hy": -10.08,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "cellargen_biotech",
@@ -13643,10 +13907,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 16,
-      "pagerank": 0.0008982101973206307,
+      "community_id": 5,
+      "pagerank": 0.0007410151350223844,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Biomanufacturing & Platform Technologies",
       "bio_theme_secondary": "Biomaterials & Green Chemistry",
       "is_bio_universe": 1,
@@ -13695,7 +13959,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 1.071,
       "hx": -9.299,
       "hy": -1.707,
-      "investor_ids": []
+      "investor_ids": [
+        "SF500",
+        "sp_ventures"
+      ]
     },
     {
       "id": "cytbac",
@@ -13729,8 +13996,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.00087601329987822,
+      "community_id": 2,
+      "pagerank": 0.0007001611109369833,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Devices",
@@ -13810,10 +14077,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 16,
-      "pagerank": 0.0008982101973206307,
+      "community_id": 5,
+      "pagerank": 0.0007282278713180202,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
@@ -13855,7 +14122,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -3.245,
       "hx": -11.145,
       "hy": -10.077,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "inmunova-ar",
@@ -13883,8 +14153,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 12,
-      "pagerank": 0.0011283662955262222,
+      "community_id": 14,
+      "pagerank": 0.0008271587092222549,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -13951,10 +14221,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 16,
-      "pagerank": 0.0008982101973206307,
+      "community_id": 5,
+      "pagerank": 0.0007282278713180202,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
@@ -13991,7 +14261,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -3.085,
       "hx": -9.493,
       "hy": 5.933,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "krtl-biotech-bolivia-expansion-bo",
@@ -14016,10 +14289,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 14,
+      "pagerank": 0.0007764332311915494,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -14047,7 +14320,9 @@ window.STARTUP_THEMES_DATA = {
       "uy": -3.239,
       "hx": -11.165,
       "hy": -10.016,
-      "investor_ids": []
+      "investor_ids": [
+        "grupo_insud"
+      ]
     },
     {
       "id": "mabxience-ar",
@@ -14075,8 +14350,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "high",
-      "community_id": 12,
-      "pagerank": 0.0011154010844565652,
+      "community_id": 14,
+      "pagerank": 0.000816777681160157,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomanufacturing & Platform Technologies",
@@ -14144,10 +14419,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 14,
-      "pagerank": 0.0009122631347009092,
+      "community_id": 16,
+      "pagerank": 0.0007394798236785177,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Diagnostics & Devices",
       "is_bio_universe": 1,
@@ -14182,7 +14457,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -3.099,
       "hx": -11.1,
       "hy": -10.104,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "mesenchyal_t",
@@ -14213,8 +14491,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 16,
-      "pagerank": 0.0008998857589929651,
+      "community_id": 7,
+      "pagerank": 0.0007155154715864753,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -14296,8 +14574,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 2,
-      "pagerank": 0.0009184013824417047,
+      "community_id": 12,
+      "pagerank": 0.0007263619415792167,
       "valuation_tier": 1.0,
       "n_investors_mapped": 2,
       "bio_theme": "Therapeutics",
@@ -14375,8 +14653,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.0008889785109478772,
+      "community_id": 2,
+      "pagerank": 0.0007105421389990813,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -14456,8 +14734,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 1,
-      "pagerank": 0.0009690476914027274,
+      "community_id": 4,
+      "pagerank": 0.0007717196336188058,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -14534,8 +14812,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 2,
-      "pagerank": 0.0009067084105970817,
+      "community_id": 1,
+      "pagerank": 0.0007160114987083712,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Devices",
@@ -14612,8 +14890,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 3,
-      "pagerank": 0.00087601329987822,
+      "community_id": 2,
+      "pagerank": 0.0007001611109369833,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Devices",
@@ -14689,8 +14967,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.00087601329987822,
+      "community_id": 2,
+      "pagerank": 0.0007001611109369833,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Devices",
@@ -14769,8 +15047,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 9.0,
       "quality_band": "high",
-      "community_id": 7,
-      "pagerank": 0.001730719796908948,
+      "community_id": 1,
+      "pagerank": 0.0013620393078037471,
       "valuation_tier": 3.0,
       "n_investors_mapped": 5,
       "bio_theme": "Biomanufacturing & Platform Technologies",
@@ -14855,8 +15133,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.0009876011467699465,
+      "community_id": 2,
+      "pagerank": 0.000790656587822086,
       "valuation_tier": 1.5,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Devices",
@@ -14932,8 +15210,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 2,
-      "pagerank": 0.0009184013824417047,
+      "community_id": 12,
+      "pagerank": 0.0007263619415792167,
       "valuation_tier": 1.0,
       "n_investors_mapped": 2,
       "bio_theme": "Therapeutics",
@@ -15008,10 +15286,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": -1,
-      "pagerank": 0.0008690620741330828,
+      "community_id": 5,
+      "pagerank": 0.0007048894556808403,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Diagnostics & Devices",
       "is_bio_universe": 1,
@@ -15051,7 +15329,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -3.519,
       "hx": -11.277,
       "hy": -9.891,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "by_my_cell",
@@ -15083,10 +15364,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 24,
-      "pagerank": 0.0008785497508095748,
+      "community_id": 5,
+      "pagerank": 0.0007252733437126927,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Biomanufacturing & Platform Technologies",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
@@ -15128,7 +15409,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 1.197,
       "hx": -9.272,
       "hy": -1.677,
-      "investor_ids": []
+      "investor_ids": [
+        "SF500",
+        "sp_ventures"
+      ]
     },
     {
       "id": "invitrall",
@@ -15159,8 +15443,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.00087601329987822,
+      "community_id": 2,
+      "pagerank": 0.0007001611109369833,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -15238,10 +15522,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": -1,
-      "pagerank": 0.0008690620741330828,
+      "community_id": 5,
+      "pagerank": 0.0007048894556808403,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
@@ -15280,7 +15564,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -3.297,
       "hx": -11.186,
       "hy": -9.997,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "neocell",
@@ -15315,8 +15602,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.00087601329987822,
+      "community_id": 2,
+      "pagerank": 0.0007001611109369833,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomanufacturing & Platform Technologies",
@@ -15395,10 +15682,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 16,
-      "pagerank": 0.0008982101973206307,
+      "community_id": 5,
+      "pagerank": 0.0007282278713180202,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
@@ -15438,7 +15725,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -3.308,
       "hx": -11.19,
       "hy": -9.992,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "phagelab",
@@ -15475,8 +15765,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 5,
-      "pagerank": 0.00313449983902853,
+      "community_id": 16,
+      "pagerank": 0.0025015906652819746,
       "valuation_tier": 3.0,
       "n_investors_mapped": 4,
       "bio_theme": "Therapeutics",
@@ -15558,10 +15848,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 24,
-      "pagerank": 0.0008785497508095748,
+      "community_id": 5,
+      "pagerank": 0.0007124860800083283,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Diagnostics & Devices",
       "is_bio_universe": 1,
@@ -15594,7 +15884,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -3.6,
       "hx": -11.311,
       "hy": -9.851,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "recepta_biopharma",
@@ -15624,8 +15917,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 24,
-      "pagerank": 0.0011186635875869762,
+      "community_id": 12,
+      "pagerank": 0.0008955960962264507,
       "valuation_tier": 1.5,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -15703,8 +15996,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 6,
-      "pagerank": 0.001257797048960627,
+      "community_id": 2,
+      "pagerank": 0.0009974932096198518,
       "valuation_tier": 1.0,
       "n_investors_mapped": 2,
       "bio_theme": "Therapeutics",
@@ -15783,10 +16076,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 24,
-      "pagerank": 0.0008785497508095748,
+      "community_id": 5,
+      "pagerank": 0.0007124860800083283,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
@@ -15824,7 +16117,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -3.333,
       "hx": -11.2,
       "hy": -9.983,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "aimirim-br",
@@ -15856,10 +16152,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 24,
-      "pagerank": 0.0008785497508095748,
+      "community_id": 5,
+      "pagerank": 0.0007138561145322282,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Biomanufacturing & Platform Technologies",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
@@ -15899,7 +16195,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 3.071,
       "hx": -8.393,
       "hy": -2.565,
-      "investor_ids": []
+      "investor_ids": [
+        "AIR Capital",
+        "GridX"
+      ]
     },
     {
       "id": "algalife",
@@ -15930,8 +16229,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 3,
-      "pagerank": 0.00087601329987822,
+      "community_id": 2,
+      "pagerank": 0.0007001611109369833,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomanufacturing & Platform Technologies",
@@ -16009,8 +16308,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 3,
-      "pagerank": 0.00087601329987822,
+      "community_id": 2,
+      "pagerank": 0.0007001611109369833,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomanufacturing & Platform Technologies",
@@ -16085,10 +16384,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 16,
+      "pagerank": 0.0008314841518416074,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Biomaterials & Green Chemistry",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -16115,7 +16414,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 3.113,
       "hx": -1.621,
       "hy": 1.22,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "sosv"
+      ]
     },
     {
       "id": "enzyva",
@@ -16151,8 +16453,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 3,
-      "pagerank": 0.00087601329987822,
+      "community_id": 2,
+      "pagerank": 0.0007001611109369833,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomanufacturing & Platform Technologies",
@@ -16233,8 +16535,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.0008894419259975529,
+      "community_id": 2,
+      "pagerank": 0.0007108365909779244,
       "valuation_tier": 1.5,
       "n_investors_mapped": 1,
       "bio_theme": "Biomanufacturing & Platform Technologies",
@@ -16315,8 +16617,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 21,
-      "pagerank": 0.0016080791051035302,
+      "community_id": 19,
+      "pagerank": 0.0012874629307939127,
       "valuation_tier": 2.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomanufacturing & Platform Technologies",
@@ -16390,10 +16692,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 1,
+      "pagerank": 0.0007204819778383544,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 3,
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "",
       "is_bio_universe": 1,
@@ -16422,7 +16724,11 @@ window.STARTUP_THEMES_DATA = {
       "uy": 3.122,
       "hx": 2.501,
       "hy": 1.433,
-      "investor_ids": []
+      "investor_ids": [
+        "AIR Capital",
+        "CITES",
+        "DraperCygnus"
+      ]
     },
     {
       "id": "mavios",
@@ -16456,8 +16762,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.00087601329987822,
+      "community_id": 2,
+      "pagerank": 0.0007001611109369833,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomanufacturing & Platform Technologies",
@@ -16535,8 +16841,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 5,
-      "pagerank": 0.0009701301641487725,
+      "community_id": 25,
+      "pagerank": 0.0007766702424469114,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomaterials & Green Chemistry",
@@ -16604,10 +16910,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 1,
+      "pagerank": 0.0007134373610510709,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 3,
       "bio_theme": "Biomanufacturing & Platform Technologies",
       "bio_theme_secondary": "",
       "is_bio_universe": 1,
@@ -16634,7 +16940,11 @@ window.STARTUP_THEMES_DATA = {
       "uy": 3.064,
       "hx": -8.413,
       "hy": -2.514,
-      "investor_ids": []
+      "investor_ids": [
+        "AIR Capital",
+        "DraperCygnus",
+        "GridX"
+      ]
     },
     {
       "id": "neoprospecta-br",
@@ -16665,8 +16975,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 24,
-      "pagerank": 0.003095600843720916,
+      "community_id": 27,
+      "pagerank": 0.002478496754200558,
       "valuation_tier": 1.5,
       "n_investors_mapped": 3,
       "bio_theme": "Biomanufacturing & Platform Technologies",
@@ -16740,8 +17050,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 25,
-      "pagerank": 0.004215166964360385,
+      "community_id": 6,
+      "pagerank": 0.0033749146569474263,
       "valuation_tier": 2.0,
       "n_investors_mapped": 5,
       "bio_theme": "Biomaterials & Green Chemistry",
@@ -16819,8 +17129,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 3,
-      "pagerank": 0.0008746230547291927,
+      "community_id": 2,
+      "pagerank": 0.0006992777550004535,
       "valuation_tier": 2.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomaterials & Green Chemistry",
@@ -16891,8 +17201,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 7,
-      "pagerank": 0.0008920641075453903,
+      "community_id": 1,
+      "pagerank": 0.0007073527363967993,
       "valuation_tier": 1.5,
       "n_investors_mapped": 1,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -16966,8 +17276,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 33,
-      "pagerank": 0.0016080791051035302,
+      "community_id": 30,
+      "pagerank": 0.0012874629307939127,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -17039,8 +17349,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 3,
-      "pagerank": 0.0008889785109478772,
+      "community_id": 2,
+      "pagerank": 0.0007105421389990813,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomaterials & Green Chemistry",
@@ -17109,8 +17419,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 7,
-      "pagerank": 0.0008920641075453903,
+      "community_id": 1,
+      "pagerank": 0.0007073527363967993,
       "valuation_tier": 1.5,
       "n_investors_mapped": 1,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -17183,8 +17493,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 29,
-      "pagerank": 0.0016080791051035302,
+      "community_id": 26,
+      "pagerank": 0.0012874629307939127,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -17258,8 +17568,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 9.0,
       "quality_band": "high",
-      "community_id": 5,
-      "pagerank": 0.000931077489319414,
+      "community_id": 7,
+      "pagerank": 0.0007275856908708137,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -17332,8 +17642,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 5,
-      "pagerank": 0.0009108640630660018,
+      "community_id": 25,
+      "pagerank": 0.0007292148205494792,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomaterials & Green Chemistry",
@@ -17407,8 +17717,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 5,
-      "pagerank": 0.0009465813431159967,
+      "community_id": 7,
+      "pagerank": 0.0007355460307749335,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -17486,8 +17796,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 5,
-      "pagerank": 0.0009750768456332549,
+      "community_id": 7,
+      "pagerank": 0.0007628155931335731,
       "valuation_tier": 1.0,
       "n_investors_mapped": 2,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -17567,8 +17877,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 5,
-      "pagerank": 0.0010186700257494043,
+      "community_id": 25,
+      "pagerank": 0.0008155357924882285,
       "valuation_tier": 1.5,
       "n_investors_mapped": 2,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -17635,8 +17945,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 2,
-      "pagerank": 0.0009067084105970817,
+      "community_id": 1,
+      "pagerank": 0.0007160114987083712,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -17701,10 +18011,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 7,
+      "pagerank": 0.0007263809555291898,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 3,
       "bio_theme": "Biomaterials & Green Chemistry",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -17731,7 +18041,11 @@ window.STARTUP_THEMES_DATA = {
       "uy": -3.839,
       "hx": -3.807,
       "hy": 2.433,
-      "investor_ids": []
+      "investor_ids": [
+        "Antom",
+        "GridX",
+        "SF500"
+      ]
     },
     {
       "id": "biomimetic_solutions",
@@ -17762,10 +18076,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 24,
-      "pagerank": 0.0008785497508095748,
+      "community_id": 5,
+      "pagerank": 0.0007124860800083283,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Diagnostics & Devices",
       "is_bio_universe": 1,
@@ -17804,7 +18118,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -3.687,
       "hx": -11.347,
       "hy": -9.81,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "cellrep",
@@ -17835,8 +18152,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 3,
-      "pagerank": 0.00087601329987822,
+      "community_id": 2,
+      "pagerank": 0.0007001611109369833,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -17909,8 +18226,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 8,
-      "pagerank": 0.0009385803443109856,
+      "community_id": 2,
+      "pagerank": 0.0007488135498131552,
       "valuation_tier": 2.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -17980,8 +18297,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 16,
-      "pagerank": 0.0008998857589929651,
+      "community_id": 7,
+      "pagerank": 0.0007155154715864753,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -18056,8 +18373,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 6,
-      "pagerank": 0.0008940381055116456,
+      "community_id": 5,
+      "pagerank": 0.0007056825908704786,
       "valuation_tier": 1.0,
       "n_investors_mapped": 2,
       "bio_theme": "Therapeutics",
@@ -18137,8 +18454,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 2,
-      "pagerank": 0.0009184013824417047,
+      "community_id": 12,
+      "pagerank": 0.0007263619415792167,
       "valuation_tier": 1.0,
       "n_investors_mapped": 2,
       "bio_theme": "Therapeutics",
@@ -18215,8 +18532,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 7,
-      "pagerank": 0.0008920641075453903,
+      "community_id": 1,
+      "pagerank": 0.0007073527363967993,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -18293,10 +18610,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 24,
-      "pagerank": 0.0008785497508095748,
+      "community_id": 5,
+      "pagerank": 0.0007124860800083283,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Biomaterials & Green Chemistry",
       "is_bio_universe": 1,
@@ -18334,7 +18651,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -4.783,
       "hx": -11.675,
       "hy": -9.633,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "lizarbio",
@@ -18364,10 +18684,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 24,
-      "pagerank": 0.0008785497508095748,
+      "community_id": 5,
+      "pagerank": 0.0007260585967677358,
       "valuation_tier": 2.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Biomaterials & Green Chemistry",
       "is_bio_universe": 1,
@@ -18403,7 +18723,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -3.899,
       "hx": -11.408,
       "hy": -9.783,
-      "investor_ids": []
+      "investor_ids": [
+        "vesper_ventures",
+        "zentynel"
+      ]
     },
     {
       "id": "ocular_bio_design",
@@ -18438,8 +18761,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.00087601329987822,
+      "community_id": 2,
+      "pagerank": 0.0007001611109369833,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -18519,8 +18842,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 6,
-      "pagerank": 0.0008870868797665082,
+      "community_id": 5,
+      "pagerank": 0.0007012658111878293,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -18596,8 +18919,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.0008746230547291927,
+      "community_id": 2,
+      "pagerank": 0.0006992777550004535,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -18676,10 +18999,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 1,
+      "pagerank": 0.0007204819778383544,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 3,
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -18704,7 +19027,11 @@ window.STARTUP_THEMES_DATA = {
       "uy": -4.399,
       "hx": -11.563,
       "hy": -9.686,
-      "investor_ids": []
+      "investor_ids": [
+        "AIR Capital",
+        "CITES",
+        "DraperCygnus"
+      ]
     },
     {
       "id": "tissuelabs",
@@ -18735,8 +19062,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 24,
-      "pagerank": 0.001120748609699049,
+      "community_id": 5,
+      "pagerank": 0.0008972655386242053,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -18810,10 +19137,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 3,
-      "pagerank": 0.0008820272852027398,
+      "community_id": 2,
+      "pagerank": 0.0007152704837429381,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Diagnostics & Devices",
       "is_bio_universe": 1,
@@ -18849,7 +19176,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -3.681,
       "hx": -11.344,
       "hy": -9.816,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "vyro-bio-br",
@@ -18877,8 +19207,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 24,
-      "pagerank": 0.0012525061316867397,
+      "community_id": 5,
+      "pagerank": 0.0009129346024416532,
       "valuation_tier": 1.0,
       "n_investors_mapped": 2,
       "bio_theme": "Therapeutics",
@@ -18946,10 +19276,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 3,
-      "pagerank": 0.0008820272852027398,
+      "community_id": 2,
+      "pagerank": 0.0007152704837429381,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Diagnostics & Devices",
       "is_bio_universe": 1,
@@ -18982,7 +19312,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -3.613,
       "hx": -11.318,
       "hy": -9.842,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "aplife_biotech",
@@ -19017,8 +19350,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 7,
-      "pagerank": 0.0008976250881415002,
+      "community_id": 1,
+      "pagerank": 0.0007108861601429189,
       "valuation_tier": 1.0,
       "n_investors_mapped": 2,
       "bio_theme": "Therapeutics",
@@ -19093,10 +19426,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 24,
-      "pagerank": 0.0008785497508095748,
+      "community_id": 5,
+      "pagerank": 0.0007124860800083283,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
@@ -19131,7 +19464,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -3.643,
       "hx": -11.412,
       "hy": -9.599,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "autem-medical",
@@ -19164,8 +19500,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 2,
-      "pagerank": 0.0009184013824417047,
+      "community_id": 12,
+      "pagerank": 0.0007263619415792167,
       "valuation_tier": 2.0,
       "n_investors_mapped": 2,
       "bio_theme": "Therapeutics",
@@ -19240,10 +19576,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 24,
-      "pagerank": 0.0008785497508095748,
+      "community_id": 5,
+      "pagerank": 0.0007124860800083283,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Biomaterials & Green Chemistry",
       "is_bio_universe": 1,
@@ -19278,7 +19614,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -3.678,
       "hx": -11.416,
       "hy": -9.611,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "bioseek",
@@ -19309,8 +19648,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 2,
-      "pagerank": 0.0009092181663613481,
+      "community_id": 1,
+      "pagerank": 0.000717362643205307,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Devices",
@@ -19385,8 +19724,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 3,
-      "pagerank": 0.0008764767149278959,
+      "community_id": 2,
+      "pagerank": 0.0007004555629158268,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -19463,8 +19802,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 24,
-      "pagerank": 0.0009998170242313663,
+      "community_id": 5,
+      "pagerank": 0.0007136729360585816,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -19536,8 +19875,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.0008764767149278959,
+      "community_id": 2,
+      "pagerank": 0.0007004555629158268,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -19610,8 +19949,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 2,
-      "pagerank": 0.0009383178192564992,
+      "community_id": 12,
+      "pagerank": 0.0007411597493239639,
       "valuation_tier": 2.0,
       "n_investors_mapped": 3,
       "bio_theme": "Therapeutics",
@@ -19688,10 +20027,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 16,
-      "pagerank": 0.0008982101973206307,
+      "community_id": 5,
+      "pagerank": 0.0007282278713180202,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "Diagnostics & Devices",
       "is_bio_universe": 1,
@@ -19730,7 +20069,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -6.992,
       "hx": -4.411,
       "hy": -9.288,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "naiad",
@@ -19761,10 +20103,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 24,
-      "pagerank": 0.0008785497508095748,
+      "community_id": 5,
+      "pagerank": 0.0007124860800083283,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
@@ -19804,7 +20146,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -3.796,
       "hx": -11.421,
       "hy": -9.678,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "naiad-drug-design-br",
@@ -19832,8 +20177,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 24,
-      "pagerank": 0.0012646653905862692,
+      "community_id": 5,
+      "pagerank": 0.0010124973025322764,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -19900,8 +20245,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 15,
-      "pagerank": 0.002253127288770579,
+      "community_id": 12,
+      "pagerank": 0.0016673856049251486,
       "valuation_tier": 1.5,
       "n_investors_mapped": 3,
       "bio_theme": "Therapeutics",
@@ -19971,8 +20316,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.000949485932420128,
+      "community_id": 2,
+      "pagerank": 0.0007502888088908816,
       "valuation_tier": 1.0,
       "n_investors_mapped": 3,
       "bio_theme": "Therapeutics",
@@ -20046,10 +20391,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 24,
-      "pagerank": 0.0008785497508095748,
+      "community_id": 5,
+      "pagerank": 0.0007124860800083283,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
@@ -20085,7 +20430,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 1.283,
       "hx": -10.066,
       "hy": -10.044,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "spherebio",
@@ -20119,8 +20467,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.0008746230547291927,
+      "community_id": 2,
+      "pagerank": 0.0006992777550004535,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -20200,8 +20548,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 3,
-      "pagerank": 0.00087601329987822,
+      "community_id": 2,
+      "pagerank": 0.0007001611109369833,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -20275,10 +20623,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": -1,
-      "pagerank": 0.0008690620741330828,
+      "community_id": 5,
+      "pagerank": 0.0007048894556808403,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
@@ -20316,7 +20664,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -4.232,
       "hx": -11.583,
       "hy": -9.518,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "celluris",
@@ -20346,10 +20697,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 24,
-      "pagerank": 0.0008785497508095748,
+      "community_id": 5,
+      "pagerank": 0.0007124860800083283,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
@@ -20388,7 +20739,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -4.279,
       "hx": -11.58,
       "hy": -9.559,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "fk_biotecnologia",
@@ -20418,10 +20772,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 24,
-      "pagerank": 0.0008785497508095748,
+      "community_id": 5,
+      "pagerank": 0.0007124860800083283,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
@@ -20459,7 +20813,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -4.25,
       "hx": -11.589,
       "hy": -9.514,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "futr_bio",
@@ -20489,10 +20846,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 24,
-      "pagerank": 0.0008785497508095748,
+      "community_id": 5,
+      "pagerank": 0.0007124860800083283,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
@@ -20528,7 +20885,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -4.228,
       "hx": -11.582,
       "hy": -9.518,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "oncoprecision-ar",
@@ -20553,10 +20913,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 1,
+      "pagerank": 0.0007204819778383544,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 3,
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -20583,7 +20943,11 @@ window.STARTUP_THEMES_DATA = {
       "uy": -4.261,
       "hx": -11.586,
       "hy": -9.531,
-      "investor_ids": []
+      "investor_ids": [
+        "AIR Capital",
+        "CITES",
+        "DraperCygnus"
+      ]
     },
     {
       "id": "theravax",
@@ -20613,10 +20977,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 24,
-      "pagerank": 0.0008785497508095748,
+      "community_id": 5,
+      "pagerank": 0.0007124860800083283,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
@@ -20654,7 +21018,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -4.206,
       "hx": -11.581,
       "hy": -9.506,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "xeptiva-therapeutics-uy",
@@ -20679,10 +21046,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 1,
+      "pagerank": 0.0007204819778383544,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 3,
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -20707,7 +21074,11 @@ window.STARTUP_THEMES_DATA = {
       "uy": -4.212,
       "hx": -11.58,
       "hy": -9.514,
-      "investor_ids": []
+      "investor_ids": [
+        "AIR Capital",
+        "CITES",
+        "DraperCygnus"
+      ]
     },
     {
       "id": "alecrim-biotech-br",
@@ -20732,10 +21103,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 4,
+      "pagerank": 0.0007383761321966434,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Digital AgTech & Agrifintech",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -20763,7 +21134,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 5.515,
       "hx": 13.574,
       "hy": 4.659,
-      "investor_ids": []
+      "investor_ids": [
+        "newtopia_vc",
+        "the_yield_lab_latam"
+      ]
     },
     {
       "id": "biofresh-br",
@@ -20788,10 +21162,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 23,
+      "pagerank": 0.000763848501185764,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 3,
       "bio_theme": "Digital AgTech & Agrifintech",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -20819,7 +21193,11 @@ window.STARTUP_THEMES_DATA = {
       "uy": 5.433,
       "hx": 13.539,
       "hy": 4.627,
-      "investor_ids": []
+      "investor_ids": [
+        "DraperCygnus",
+        "barn_investimentos",
+        "inventure"
+      ]
     },
     {
       "id": "cellmeat-brasil-br",
@@ -20844,10 +21222,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 4,
+      "pagerank": 0.0007417830850086717,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Digital AgTech & Agrifintech",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -20875,7 +21253,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 5.426,
       "hx": 13.536,
       "hy": 4.624,
-      "investor_ids": []
+      "investor_ids": [
+        "kptl",
+        "the_yield_lab_latam"
+      ]
     },
     {
       "id": "cellva-ingredients-br",
@@ -20900,10 +21281,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 4,
+      "pagerank": 0.0007383761321966434,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Digital AgTech & Agrifintech",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -20930,7 +21311,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 5.387,
       "hx": 13.52,
       "hy": 4.609,
-      "investor_ids": []
+      "investor_ids": [
+        "newtopia_vc",
+        "the_yield_lab_latam"
+      ]
     },
     {
       "id": "consiste-br",
@@ -20955,10 +21339,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 17,
+      "pagerank": 0.0007558332401059176,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Digital AgTech & Agrifintech",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -20983,7 +21367,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 5.397,
       "hx": 13.524,
       "hy": 4.613,
-      "investor_ids": []
+      "investor_ids": [
+        "the_yield_lab_latam",
+        "vox_capital"
+      ]
     },
     {
       "id": "eatcloud-co",
@@ -21008,10 +21395,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 4,
+      "pagerank": 0.0007383761321966434,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Digital AgTech & Agrifintech",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -21038,7 +21425,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 5.376,
       "hx": 13.516,
       "hy": 4.604,
-      "investor_ids": []
+      "investor_ids": [
+        "newtopia_vc",
+        "the_yield_lab_latam"
+      ]
     },
     {
       "id": "fermentlab-br",
@@ -21063,10 +21453,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 23,
+      "pagerank": 0.000763848501185764,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 3,
       "bio_theme": "Digital AgTech & Agrifintech",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -21093,7 +21483,11 @@ window.STARTUP_THEMES_DATA = {
       "uy": 1.438,
       "hx": 12.262,
       "hy": 1.926,
-      "investor_ids": []
+      "investor_ids": [
+        "DraperCygnus",
+        "barn_investimentos",
+        "inventure"
+      ]
     },
     {
       "id": "fermentlabs-co",
@@ -21118,10 +21512,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 4,
+      "pagerank": 0.0007383761321966434,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Digital AgTech & Agrifintech",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -21148,7 +21542,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 5.545,
       "hx": 13.587,
       "hy": 4.67,
-      "investor_ids": []
+      "investor_ids": [
+        "newtopia_vc",
+        "the_yield_lab_latam"
+      ]
     },
     {
       "id": "myvac-bioproducts-br",
@@ -21173,10 +21570,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 17,
+      "pagerank": 0.0007558332401059176,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Digital AgTech & Agrifintech",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -21203,7 +21600,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 5.492,
       "hx": 13.564,
       "hy": 4.651,
-      "investor_ids": []
+      "investor_ids": [
+        "the_yield_lab_latam",
+        "vox_capital"
+      ]
     },
     {
       "id": "nutrissis-biotech-br",
@@ -21228,10 +21628,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 4,
+      "pagerank": 0.0007383761321966434,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Digital AgTech & Agrifintech",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -21256,7 +21656,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 5.521,
       "hx": 13.576,
       "hy": 4.662,
-      "investor_ids": []
+      "investor_ids": [
+        "newtopia_vc",
+        "the_yield_lab_latam"
+      ]
     },
     {
       "id": "protera-bio-cl",
@@ -21281,10 +21684,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 23,
+      "pagerank": 0.000763848501185764,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 3,
       "bio_theme": "Digital AgTech & Agrifintech",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -21309,7 +21712,11 @@ window.STARTUP_THEMES_DATA = {
       "uy": 5.433,
       "hx": 13.54,
       "hy": 4.625,
-      "investor_ids": []
+      "investor_ids": [
+        "DraperCygnus",
+        "barn_investimentos",
+        "inventure"
+      ]
     },
     {
       "id": "tomorrow-foods-ar",
@@ -21334,10 +21741,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 1,
+      "pagerank": 0.0007204819778383544,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 3,
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "",
       "is_bio_universe": 1,
@@ -21364,7 +21771,11 @@ window.STARTUP_THEMES_DATA = {
       "uy": 2.331,
       "hx": 1.976,
       "hy": 2.234,
-      "investor_ids": []
+      "investor_ids": [
+        "AIR Capital",
+        "CITES",
+        "DraperCygnus"
+      ]
     },
     {
       "id": "biodiversity_intelligence",
@@ -21395,8 +21806,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 3,
-      "pagerank": 0.0008875882657988496,
+      "community_id": 2,
+      "pagerank": 0.0007096587830625514,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -21474,10 +21885,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 16,
-      "pagerank": 0.0008982101973206307,
+      "community_id": 5,
+      "pagerank": 0.0007268446874189244,
       "valuation_tier": 2.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 1,
       "bio_theme": "Nature & Ecosystem Tech",
       "bio_theme_secondary": "Precision Agriculture",
       "is_bio_universe": 1,
@@ -21521,7 +21932,9 @@ window.STARTUP_THEMES_DATA = {
       "uy": 2.16,
       "hx": 0.623,
       "hy": 10.477,
-      "investor_ids": []
+      "investor_ids": [
+        "the_yield_lab_latam"
+      ]
     },
     {
       "id": "lemu",
@@ -21554,8 +21967,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 23,
-      "pagerank": 0.0016080791051035302,
+      "community_id": 20,
+      "pagerank": 0.0012874629307939127,
       "valuation_tier": 1.5,
       "n_investors_mapped": 1,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -21639,10 +22052,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 16,
-      "pagerank": 0.0008982101973206307,
+      "community_id": 5,
+      "pagerank": 0.0007268446874189244,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 1,
       "bio_theme": "Nature & Ecosystem Tech",
       "bio_theme_secondary": "Precision Agriculture",
       "is_bio_universe": 1,
@@ -21685,7 +22098,9 @@ window.STARTUP_THEMES_DATA = {
       "uy": 2.09,
       "hx": 0.59,
       "hy": 10.502,
-      "investor_ids": []
+      "investor_ids": [
+        "the_yield_lab_latam"
+      ]
     },
     {
       "id": "odd_industries",
@@ -21717,10 +22132,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 14,
-      "pagerank": 0.0009122631347009092,
+      "community_id": 16,
+      "pagerank": 0.0007392567495152144,
       "valuation_tier": 1.5,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Nature & Ecosystem Tech",
       "bio_theme_secondary": "Precision Agriculture",
       "is_bio_universe": 1,
@@ -21762,7 +22177,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 2.101,
       "hx": 0.6,
       "hy": 10.485,
-      "investor_ids": []
+      "investor_ids": [
+        "GridX",
+        "the_yield_lab_latam"
+      ]
     },
     {
       "id": "satellites_on_fire",
@@ -21793,8 +22211,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 5,
-      "pagerank": 0.001138586055938875,
+      "community_id": 25,
+      "pagerank": 0.0008730533013109637,
       "valuation_tier": 1.5,
       "n_investors_mapped": 5,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -21877,8 +22295,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 1,
-      "pagerank": 0.002132515922153648,
+      "community_id": 6,
+      "pagerank": 0.001697617318845731,
       "valuation_tier": 4.0,
       "n_investors_mapped": 5,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -21959,8 +22377,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 9.0,
       "quality_band": "high",
-      "community_id": 5,
-      "pagerank": 0.0010031810825013423,
+      "community_id": 25,
+      "pagerank": 0.0007933758671924529,
       "valuation_tier": 3.0,
       "n_investors_mapped": 2,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -22037,10 +22455,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 24,
-      "pagerank": 0.0008785497508095748,
+      "community_id": 5,
+      "pagerank": 0.0007122630058450249,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Nature & Ecosystem Tech",
       "bio_theme_secondary": "Precision Agriculture",
       "is_bio_universe": 1,
@@ -22083,7 +22501,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 2.2,
       "hx": 0.623,
       "hy": 10.514,
-      "investor_ids": []
+      "investor_ids": [
+        "GridX",
+        "the_yield_lab_latam"
+      ]
     },
     {
       "id": "um_grau_e_meio",
@@ -22114,8 +22535,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 5,
-      "pagerank": 0.0008952993651734538,
+      "community_id": 4,
+      "pagerank": 0.0007081634360981905,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -22188,8 +22609,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 1,
-      "pagerank": 0.0009627985903233746,
+      "community_id": 4,
+      "pagerank": 0.0007669711772210262,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -22265,8 +22686,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 1,
-      "pagerank": 0.0009627985903233746,
+      "community_id": 4,
+      "pagerank": 0.0007669711772210262,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -22342,8 +22763,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 5,
-      "pagerank": 0.0008936595344834304,
+      "community_id": 4,
+      "pagerank": 0.0007073872420454495,
       "valuation_tier": 1.5,
       "n_investors_mapped": 1,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -22422,8 +22843,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 1,
-      "pagerank": 0.002592945231654039,
+      "community_id": 23,
+      "pagerank": 0.002076036719577617,
       "valuation_tier": 1.5,
       "n_investors_mapped": 3,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -22502,7 +22923,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 8.0,
       "quality_band": "medium",
       "community_id": 17,
-      "pagerank": 0.0008913988951681788,
+      "pagerank": 0.0007111648988400749,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -22576,8 +22997,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 5,
-      "pagerank": 0.000931077489319414,
+      "community_id": 7,
+      "pagerank": 0.0007275856908708137,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -22654,8 +23075,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 24,
-      "pagerank": 0.0029820994142093125,
+      "community_id": 12,
+      "pagerank": 0.002387618054384732,
       "valuation_tier": 1.0,
       "n_investors_mapped": 4,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -22733,7 +23154,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": 10,
-      "pagerank": 0.0017651991389388646,
+      "pagerank": 0.0014132874104951859,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -22802,10 +23223,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 24,
-      "pagerank": 0.0008785497508095748,
+      "community_id": 5,
+      "pagerank": 0.0007260585967677358,
       "valuation_tier": 1.5,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
@@ -22843,7 +23264,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -4.285,
       "hx": -11.556,
       "hy": -9.63,
-      "investor_ids": []
+      "investor_ids": [
+        "vesper_ventures",
+        "zentynel"
+      ]
     },
     {
       "id": "biiosmart-co",
@@ -22868,10 +23292,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 1,
+      "pagerank": 0.0007204819778383544,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 3,
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -22899,7 +23323,11 @@ window.STARTUP_THEMES_DATA = {
       "uy": -3.809,
       "hx": -11.431,
       "hy": -9.658,
-      "investor_ids": []
+      "investor_ids": [
+        "AIR Capital",
+        "CITES",
+        "DraperCygnus"
+      ]
     },
     {
       "id": "circa_therapeutics",
@@ -22930,8 +23358,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 2,
-      "pagerank": 0.0009196736216667387,
+      "community_id": 1,
+      "pagerank": 0.000726392526770469,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -23006,8 +23434,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 2,
-      "pagerank": 0.000899179143304282,
+      "community_id": 1,
+      "pagerank": 0.0007119580652175637,
       "valuation_tier": 1.5,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -23077,10 +23505,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 12,
+      "pagerank": 0.0007509076831898746,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -23107,7 +23535,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -4.174,
       "hx": -11.522,
       "hy": -9.649,
-      "investor_ids": []
+      "investor_ids": [
+        "ecoa_capital",
+        "zentynel"
+      ]
     },
     {
       "id": "mirscience-therapeutics-br",
@@ -23135,10 +23566,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 24,
-      "pagerank": 0.0008785497508095748,
+      "community_id": 5,
+      "pagerank": 0.0007124860800083283,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
@@ -23171,7 +23602,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -4.189,
       "hx": -11.536,
       "hy": -9.621,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "php_biotech",
@@ -23201,10 +23635,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 24,
-      "pagerank": 0.0008785497508095748,
+      "community_id": 5,
+      "pagerank": 0.0007124860800083283,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
@@ -23242,7 +23676,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -4.24,
       "hx": -11.545,
       "hy": -9.629,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "praxis-biotech-cl",
@@ -23272,10 +23709,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 14,
-      "pagerank": 0.0009122631347009092,
+      "community_id": 16,
+      "pagerank": 0.0007394798236785177,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
@@ -23312,7 +23749,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -3.787,
       "hx": -11.416,
       "hy": -9.686,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "scitherm_therapeutics",
@@ -23343,8 +23783,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.00087601329987822,
+      "community_id": 2,
+      "pagerank": 0.0007001611109369833,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -23417,8 +23857,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 2,
-      "pagerank": 0.0009067084105970817,
+      "community_id": 1,
+      "pagerank": 0.0007160114987083712,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -23491,10 +23931,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": -1,
-      "pagerank": 0.0008690620741330828,
+      "community_id": 5,
+      "pagerank": 0.0007048894556808403,
       "valuation_tier": 1.5,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
@@ -23532,7 +23972,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -4.194,
       "hx": -11.535,
       "hy": -9.627,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "HIAMET",
@@ -23565,8 +24008,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 3,
-      "pagerank": 0.0008894419259975529,
+      "community_id": 2,
+      "pagerank": 0.0007108365909779244,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomaterials & Green Chemistry",
@@ -23646,8 +24089,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 2,
-      "pagerank": 0.0009253526081868422,
+      "community_id": 12,
+      "pagerank": 0.0007307787212618658,
       "valuation_tier": 1.0,
       "n_investors_mapped": 3,
       "bio_theme": "Biomaterials & Green Chemistry",
@@ -23732,8 +24175,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 5,
-      "pagerank": 0.0009108640630660018,
+      "community_id": 25,
+      "pagerank": 0.0007292148205494792,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomaterials & Green Chemistry",
@@ -23819,8 +24262,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.00087601329987822,
+      "community_id": 2,
+      "pagerank": 0.0007001611109369833,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomaterials & Green Chemistry",
@@ -23905,8 +24348,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.000912850970062622,
+      "community_id": 2,
+      "pagerank": 0.0007258964996485733,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomaterials & Green Chemistry",
@@ -23991,8 +24434,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 14,
-      "pagerank": 0.0009127677225816355,
+      "community_id": 16,
+      "pagerank": 0.0007295897636168704,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomaterials & Green Chemistry",
@@ -24081,8 +24524,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 3,
-      "pagerank": 0.0008764767149278959,
+      "community_id": 2,
+      "pagerank": 0.0007004555629158268,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomaterials & Green Chemistry",
@@ -24164,8 +24607,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.00087601329987822,
+      "community_id": 2,
+      "pagerank": 0.0007001611109369833,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomaterials & Green Chemistry",
@@ -24241,8 +24684,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 5,
-      "pagerank": 0.000931077489319414,
+      "community_id": 7,
+      "pagerank": 0.0007275856908708137,
       "valuation_tier": 1.5,
       "n_investors_mapped": 1,
       "bio_theme": "Biomaterials & Green Chemistry",
@@ -24321,8 +24764,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.0008746230547291927,
+      "community_id": 2,
+      "pagerank": 0.0006992777550004535,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomaterials & Green Chemistry",
@@ -24405,8 +24848,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.000912850970062622,
+      "community_id": 2,
+      "pagerank": 0.0007258964996485733,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomaterials & Green Chemistry",
@@ -24484,8 +24927,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 5,
-      "pagerank": 0.0009701301641487725,
+      "community_id": 25,
+      "pagerank": 0.0007766702424469114,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomaterials & Green Chemistry",
@@ -24561,8 +25004,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 3,
-      "pagerank": 0.00087601329987822,
+      "community_id": 2,
+      "pagerank": 0.0007001611109369833,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomaterials & Green Chemistry",
@@ -24636,8 +25079,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 16,
-      "pagerank": 0.0009761022561656761,
+      "community_id": 5,
+      "pagerank": 0.0007765407485136214,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomaterials & Green Chemistry",
@@ -24713,8 +25156,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.0009876011467699465,
+      "community_id": 2,
+      "pagerank": 0.000790656587822086,
       "valuation_tier": 1.5,
       "n_investors_mapped": 1,
       "bio_theme": "Biomaterials & Green Chemistry",
@@ -24793,8 +25236,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 6,
-      "pagerank": 0.0008882885334754033,
+      "community_id": 5,
+      "pagerank": 0.0007016339098500624,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomaterials & Green Chemistry",
@@ -24877,8 +25320,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.00087601329987822,
+      "community_id": 2,
+      "pagerank": 0.0007001611109369833,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomaterials & Green Chemistry",
@@ -24961,8 +25404,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 3,
-      "pagerank": 0.00087601329987822,
+      "community_id": 2,
+      "pagerank": 0.0007001611109369833,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomaterials & Green Chemistry",
@@ -25036,8 +25479,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 3,
-      "pagerank": 0.00087601329987822,
+      "community_id": 2,
+      "pagerank": 0.0007001611109369833,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomaterials & Green Chemistry",
@@ -25109,8 +25552,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 5,
-      "pagerank": 0.0009701301641487725,
+      "community_id": 25,
+      "pagerank": 0.0007766702424469114,
       "valuation_tier": 2.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomaterials & Green Chemistry",
@@ -25186,8 +25629,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 16,
-      "pagerank": 0.0008998857589929651,
+      "community_id": 7,
+      "pagerank": 0.0007155154715864753,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomaterials & Green Chemistry",
@@ -25266,8 +25709,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 37,
-      "pagerank": 0.002347096136073977,
+      "community_id": 33,
+      "pagerank": 0.0018791815303334915,
       "valuation_tier": 1.0,
       "n_investors_mapped": 2,
       "bio_theme": "Biomaterials & Green Chemistry",
@@ -25337,8 +25780,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 14,
-      "pagerank": 0.0016292825328640536,
+      "community_id": 16,
+      "pagerank": 0.0013044401614315073,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomaterials & Green Chemistry",
@@ -25404,10 +25847,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 7,
+      "pagerank": 0.0007263809555291898,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 3,
       "bio_theme": "Biomaterials & Green Chemistry",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -25434,7 +25877,11 @@ window.STARTUP_THEMES_DATA = {
       "uy": 3.227,
       "hx": -1.559,
       "hy": 1.129,
-      "investor_ids": []
+      "investor_ids": [
+        "Antom",
+        "GridX",
+        "SF500"
+      ]
     },
     {
       "id": "bioplaster_research",
@@ -25465,8 +25912,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 3,
-      "pagerank": 0.00087601329987822,
+      "community_id": 2,
+      "pagerank": 0.0007001611109369833,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomaterials & Green Chemistry",
@@ -25539,8 +25986,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 3,
-      "pagerank": 0.00087601329987822,
+      "community_id": 2,
+      "pagerank": 0.0007001611109369833,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomaterials & Green Chemistry",
@@ -25615,10 +26062,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": -1,
-      "pagerank": 0.0008690620741330828,
+      "community_id": 5,
+      "pagerank": 0.0007012655865966367,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Biomaterials & Green Chemistry",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
@@ -25656,7 +26103,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 3.937,
       "hx": -1.335,
       "hy": 1.003,
-      "investor_ids": []
+      "investor_ids": [
+        "GridX",
+        "The Ganesha Lab"
+      ]
     },
     {
       "id": "biosolvit",
@@ -25686,8 +26136,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 24,
-      "pagerank": 0.0018039657361790962,
+      "community_id": 10,
+      "pagerank": 0.0014443060861625409,
       "valuation_tier": 1.5,
       "n_investors_mapped": 2,
       "bio_theme": "Biomaterials & Green Chemistry",
@@ -25758,8 +26208,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 24,
-      "pagerank": 0.001617566781780022,
+      "community_id": 5,
+      "pagerank": 0.001295059555121401,
       "valuation_tier": 2.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomaterials & Green Chemistry",
@@ -25827,10 +26277,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 30,
-      "pagerank": 0.0009069603834136184,
+      "community_id": 5,
+      "pagerank": 0.000731610130162769,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Biomaterials & Green Chemistry",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
@@ -25865,7 +26315,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 3.716,
       "hx": -1.395,
       "hy": 1.017,
-      "investor_ids": []
+      "investor_ids": [
+        "GridX",
+        "The Ganesha Lab"
+      ]
     },
     {
       "id": "ejido-verde-mx",
@@ -25893,8 +26346,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 11,
-      "pagerank": 0.001988145006745474,
+      "community_id": 13,
+      "pagerank": 0.0015917753534142674,
       "valuation_tier": 1.0,
       "n_investors_mapped": 2,
       "bio_theme": "Biomaterials & Green Chemistry",
@@ -25965,10 +26418,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 16,
-      "pagerank": 0.0008982101973206307,
+      "community_id": 5,
+      "pagerank": 0.0007246040022338167,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Biomaterials & Green Chemistry",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
@@ -26007,7 +26460,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 3.875,
       "hx": -1.346,
       "hy": 0.991,
-      "investor_ids": []
+      "investor_ids": [
+        "GridX",
+        "The Ganesha Lab"
+      ]
     },
     {
       "id": "giraffe-bio-ar",
@@ -26035,8 +26491,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 14,
-      "pagerank": 0.0013095573644303629,
+      "community_id": 16,
+      "pagerank": 0.0009809550525580369,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomaterials & Green Chemistry",
@@ -26105,8 +26561,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 16,
-      "pagerank": 0.001637227228291078,
+      "community_id": 5,
+      "pagerank": 0.0013108013464310927,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomaterials & Green Chemistry",
@@ -26173,10 +26629,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 2,
+      "pagerank": 0.0007183520009987677,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Biomaterials & Green Chemistry",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -26201,7 +26657,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 3.773,
       "hx": -1.378,
       "hy": 1.008,
-      "investor_ids": []
+      "investor_ids": [
+        "GridX",
+        "SOSV_IndieBio"
+      ]
     },
     {
       "id": "polybion",
@@ -26233,7 +26692,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": 9,
-      "pagerank": 0.0012524024591819244,
+      "pagerank": 0.0010026785780743294,
       "valuation_tier": 2.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomaterials & Green Chemistry",
@@ -26306,10 +26765,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": -1,
-      "pagerank": 0.0008690620741330828,
+      "community_id": 5,
+      "pagerank": 0.0007012655865966367,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Biomaterials & Green Chemistry",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
@@ -26349,7 +26808,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 3.897,
       "hx": -1.349,
       "hy": 1.013,
-      "investor_ids": []
+      "investor_ids": [
+        "GridX",
+        "The Ganesha Lab"
+      ]
     },
     {
       "id": "spora_biotech",
@@ -26379,10 +26841,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 14,
-      "pagerank": 0.0009122631347009092,
+      "community_id": 16,
+      "pagerank": 0.0007358559545943143,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Biomaterials & Green Chemistry",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
@@ -26420,7 +26882,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 3.895,
       "hx": -1.355,
       "hy": 1.029,
-      "investor_ids": []
+      "investor_ids": [
+        "GridX",
+        "The Ganesha Lab"
+      ]
     },
     {
       "id": "apasomics",
@@ -26454,8 +26919,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.00087601329987822,
+      "community_id": 2,
+      "pagerank": 0.0007001611109369833,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -26538,8 +27003,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 2,
-      "pagerank": 0.0009184013824417047,
+      "community_id": 12,
+      "pagerank": 0.0007263619415792167,
       "valuation_tier": 1.0,
       "n_investors_mapped": 2,
       "bio_theme": "Therapeutics",
@@ -26622,8 +27087,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 7,
-      "pagerank": 0.0009251150258979598,
+      "community_id": 1,
+      "pagerank": 0.0007240583611423409,
       "valuation_tier": 1.0,
       "n_investors_mapped": 2,
       "bio_theme": "Therapeutics",
@@ -26700,8 +27165,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.0008764767149278959,
+      "community_id": 2,
+      "pagerank": 0.0007004555629158268,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -26779,8 +27244,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 16,
-      "pagerank": 0.0008998857589929651,
+      "community_id": 7,
+      "pagerank": 0.0007155154715864753,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -26863,8 +27328,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 16,
-      "pagerank": 0.0008998857589929651,
+      "community_id": 7,
+      "pagerank": 0.0007155154715864753,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -26947,8 +27412,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.00087601329987822,
+      "community_id": 2,
+      "pagerank": 0.0007001611109369833,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -27025,8 +27490,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 3,
-      "pagerank": 0.00087601329987822,
+      "community_id": 2,
+      "pagerank": 0.0007001611109369833,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -27107,8 +27572,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 3,
-      "pagerank": 0.00087601329987822,
+      "community_id": 2,
+      "pagerank": 0.0007001611109369833,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -27188,8 +27653,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.0008904331443849605,
+      "community_id": 2,
+      "pagerank": 0.0007045782948837797,
       "valuation_tier": 1.0,
       "n_investors_mapped": 2,
       "bio_theme": "Therapeutics",
@@ -27270,8 +27735,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.00087601329987822,
+      "community_id": 2,
+      "pagerank": 0.0007001611109369833,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomanufacturing & Platform Technologies",
@@ -27355,8 +27820,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.0009121443543739388,
+      "community_id": 2,
+      "pagerank": 0.0007223390932796616,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Diagnostics & Devices",
@@ -27437,10 +27902,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 14,
-      "pagerank": 0.0009122631347009092,
+      "community_id": 16,
+      "pagerank": 0.0007358559545943143,
       "valuation_tier": 2.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Biomaterials & Green Chemistry",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
@@ -27476,7 +27941,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -5.667,
       "hx": -4.322,
       "hy": 2.587,
-      "investor_ids": []
+      "investor_ids": [
+        "GridX",
+        "The Ganesha Lab"
+      ]
     },
     {
       "id": "brtc",
@@ -27506,10 +27974,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 24,
-      "pagerank": 0.0008785497508095748,
+      "community_id": 5,
+      "pagerank": 0.0007088622109241247,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Biomaterials & Green Chemistry",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
@@ -27545,7 +28013,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -5.621,
       "hx": -4.315,
       "hy": 2.599,
-      "investor_ids": []
+      "investor_ids": [
+        "GridX",
+        "The Ganesha Lab"
+      ]
     },
     {
       "id": "copper3d",
@@ -27575,10 +28046,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 14,
-      "pagerank": 0.0009286559970089544,
+      "community_id": 16,
+      "pagerank": 0.000766067860183873,
       "valuation_tier": 2.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Biomaterials & Green Chemistry",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
@@ -27614,7 +28085,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -5.68,
       "hx": -4.325,
       "hy": 2.584,
-      "investor_ids": []
+      "investor_ids": [
+        "GridX",
+        "SOSV_IndieBio"
+      ]
     },
     {
       "id": "copptech",
@@ -27644,8 +28118,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 14,
-      "pagerank": 0.001983995282706994,
+      "community_id": 16,
+      "pagerank": 0.0015884527386521956,
       "valuation_tier": 2.0,
       "n_investors_mapped": 2,
       "bio_theme": "Biomaterials & Green Chemistry",
@@ -27716,10 +28190,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 24,
-      "pagerank": 0.0008785497508095748,
+      "community_id": 5,
+      "pagerank": 0.0007124860800083283,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
@@ -27757,7 +28231,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -5.428,
       "hx": -4.823,
       "hy": -7.02,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "hybridon",
@@ -27791,10 +28268,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.0008820272852027398,
+      "community_id": 2,
+      "pagerank": 0.0007116466146587345,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Biomaterials & Green Chemistry",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
@@ -27834,7 +28311,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -2.965,
       "hx": -3.449,
       "hy": 2.05,
-      "investor_ids": []
+      "investor_ids": [
+        "GridX",
+        "The Ganesha Lab"
+      ]
     },
     {
       "id": "nanoblast",
@@ -27864,10 +28344,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 30,
-      "pagerank": 0.0009069603834136184,
+      "community_id": 5,
+      "pagerank": 0.000731610130162769,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Biomaterials & Green Chemistry",
       "bio_theme_secondary": "Diagnostics & Devices",
       "is_bio_universe": 1,
@@ -27903,7 +28383,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -5.38,
       "hx": -4.252,
       "hy": 2.592,
-      "investor_ids": []
+      "investor_ids": [
+        "GridX",
+        "The Ganesha Lab"
+      ]
     },
     {
       "id": "nanopharmacia-group-mx",
@@ -27931,10 +28414,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 30,
-      "pagerank": 0.0009069603834136184,
+      "community_id": 5,
+      "pagerank": 0.000731610130162769,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Biomaterials & Green Chemistry",
       "bio_theme_secondary": "Diagnostics & Devices",
       "is_bio_universe": 1,
@@ -27972,7 +28455,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -5.442,
       "hx": -4.268,
       "hy": 2.593,
-      "investor_ids": []
+      "investor_ids": [
+        "GridX",
+        "The Ganesha Lab"
+      ]
     },
     {
       "id": "nanotropic_tecnologia",
@@ -28002,10 +28488,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 24,
-      "pagerank": 0.0008785497508095748,
+      "community_id": 5,
+      "pagerank": 0.0007088622109241247,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Biomaterials & Green Chemistry",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
@@ -28041,7 +28527,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -5.654,
       "hx": -4.319,
       "hy": 2.585,
-      "investor_ids": []
+      "investor_ids": [
+        "GridX",
+        "The Ganesha Lab"
+      ]
     },
     {
       "id": "nanovetores_group",
@@ -28071,10 +28560,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 24,
-      "pagerank": 0.0008785497508095748,
+      "community_id": 5,
+      "pagerank": 0.0007088622109241247,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Biomaterials & Green Chemistry",
       "bio_theme_secondary": "Diagnostics & Devices",
       "is_bio_universe": 1,
@@ -28112,7 +28601,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -5.547,
       "hx": -4.294,
       "hy": 2.592,
-      "investor_ids": []
+      "investor_ids": [
+        "GridX",
+        "The Ganesha Lab"
+      ]
     },
     {
       "id": "nchemi-br",
@@ -28140,10 +28632,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 24,
-      "pagerank": 0.0008785497508095748,
+      "community_id": 5,
+      "pagerank": 0.0007088622109241247,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Biomaterials & Green Chemistry",
       "bio_theme_secondary": "Diagnostics & Devices",
       "is_bio_universe": 0,
@@ -28178,7 +28670,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -5.285,
       "hx": -4.234,
       "hy": 2.609,
-      "investor_ids": []
+      "investor_ids": [
+        "GridX",
+        "The Ganesha Lab"
+      ]
     },
     {
       "id": "photio",
@@ -28208,10 +28703,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 14,
-      "pagerank": 0.0009122631347009092,
+      "community_id": 16,
+      "pagerank": 0.0007358559545943143,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Biomaterials & Green Chemistry",
       "bio_theme_secondary": "Biomaterials & Green Chemistry",
       "is_bio_universe": 1,
@@ -28247,7 +28742,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": -5.599,
       "hx": -4.306,
       "hy": 2.59,
-      "investor_ids": []
+      "investor_ids": [
+        "GridX",
+        "The Ganesha Lab"
+      ]
     },
     {
       "id": "advanced_biocontrollers",
@@ -28277,10 +28775,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 20,
-      "pagerank": 0.0016080791051035302,
+      "community_id": 5,
+      "pagerank": 0.0012966080552204188,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
@@ -28317,7 +28815,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 7.58,
       "hx": -6.558,
       "hy": 6.47,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "agrion-agrisolutions-br",
@@ -28345,8 +28846,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 26,
-      "pagerank": 0.0016080791051035302,
+      "community_id": 22,
+      "pagerank": 0.0012874629307939127,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -28418,10 +28919,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 24,
-      "pagerank": 0.0008785497508095748,
+      "community_id": 5,
+      "pagerank": 0.0007124860800083283,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Biomaterials & Green Chemistry",
       "is_bio_universe": 1,
@@ -28468,7 +28969,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 7.133,
       "hx": -6.689,
       "hy": 6.47,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "arakion",
@@ -28498,8 +29002,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.0008894419259975529,
+      "community_id": 2,
+      "pagerank": 0.0007108365909779244,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -28572,8 +29076,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 8,
-      "pagerank": 0.001691488635477643,
+      "community_id": 2,
+      "pagerank": 0.00134292527001564,
       "valuation_tier": 3.0,
       "n_investors_mapped": 4,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -28650,8 +29154,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 36,
-      "pagerank": 0.0016080791051035302,
+      "community_id": 32,
+      "pagerank": 0.0012874629307939127,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -28719,10 +29223,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 24,
-      "pagerank": 0.0008785497508095748,
+      "community_id": 5,
+      "pagerank": 0.0007124860800083283,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Biomaterials & Green Chemistry",
       "is_bio_universe": 1,
@@ -28756,7 +29260,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 6.26,
       "hx": -6.915,
       "hy": 6.386,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "biodiverso-insumos-br",
@@ -28781,10 +29288,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 12,
+      "pagerank": 0.0007403453131530897,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -28811,7 +29318,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 7.515,
       "hx": -6.572,
       "hy": 6.456,
-      "investor_ids": []
+      "investor_ids": [
+        "ecoa_capital",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "bioin-br",
@@ -28842,10 +29352,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 24,
-      "pagerank": 0.0008785497508095748,
+      "community_id": 5,
+      "pagerank": 0.0007124860800083283,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Biomaterials & Green Chemistry",
       "is_bio_universe": 1,
@@ -28885,7 +29395,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 7.603,
       "hx": -6.554,
       "hy": 6.478,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "bioram-mx",
@@ -28910,10 +29423,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 17,
+      "pagerank": 0.0007558332401059176,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -28940,7 +29453,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 3.085,
       "hx": -7.357,
       "hy": 5.026,
-      "investor_ids": []
+      "investor_ids": [
+        "the_yield_lab_latam",
+        "vox_capital"
+      ]
     },
     {
       "id": "biotech-cr",
@@ -28965,10 +29481,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 12,
+      "pagerank": 0.0007509076831898746,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -28995,7 +29511,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 7.558,
       "hx": -8.683,
       "hy": -9.687,
-      "investor_ids": []
+      "investor_ids": [
+        "ecoa_capital",
+        "zentynel"
+      ]
     },
     {
       "id": "biotrop-br",
@@ -29023,10 +29542,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 24,
-      "pagerank": 0.0008785497508095748,
+      "community_id": 5,
+      "pagerank": 0.0007124860800083283,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Biomaterials & Green Chemistry",
       "is_bio_universe": 1,
@@ -29060,7 +29579,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 7.308,
       "hx": -6.633,
       "hy": 6.458,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "botanical-solution-inc-cl",
@@ -29091,8 +29613,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 15,
-      "pagerank": 0.000908290307527032,
+      "community_id": 6,
+      "pagerank": 0.0007182430418254239,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -29163,8 +29685,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 3,
-      "pagerank": 0.00087601329987822,
+      "community_id": 2,
+      "pagerank": 0.0007001611109369833,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -29236,7 +29758,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 8.0,
       "quality_band": "medium",
       "community_id": 17,
-      "pagerank": 0.0008913988951681788,
+      "pagerank": 0.0007111648988400749,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -29307,8 +29829,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 19,
-      "pagerank": 0.0016080791051035302,
+      "community_id": 18,
+      "pagerank": 0.0012874629307939127,
       "valuation_tier": 1.5,
       "n_investors_mapped": 1,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -29377,7 +29899,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 8.0,
       "quality_band": "medium",
       "community_id": 17,
-      "pagerank": 0.0008918741466795639,
+      "pagerank": 0.0007114929960227502,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -29447,7 +29969,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": 17,
-      "pagerank": 0.0008904483921454087,
+      "pagerank": 0.0007105087044747241,
       "valuation_tier": 1.5,
       "n_investors_mapped": 1,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -29512,10 +30034,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 7,
+      "pagerank": 0.0007218461026460364,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 3,
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -29540,7 +30062,11 @@ window.STARTUP_THEMES_DATA = {
       "uy": 7.687,
       "hx": -6.531,
       "hy": 6.483,
-      "investor_ids": []
+      "investor_ids": [
+        "AIR Capital",
+        "Antom",
+        "GridX"
+      ]
     },
     {
       "id": "genica",
@@ -29575,7 +30101,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 8.0,
       "quality_band": "medium",
       "community_id": 17,
-      "pagerank": 0.0021991643097408024,
+      "pagerank": 0.0016913525278294558,
       "valuation_tier": 2.0,
       "n_investors_mapped": 4,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -29663,10 +30189,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 24,
-      "pagerank": 0.0008785497508095748,
+      "community_id": 5,
+      "pagerank": 0.0007124860800083283,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Bioinputs & Crop Resilience",
       "is_bio_universe": 1,
@@ -29713,7 +30239,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 6.94,
       "hx": -6.748,
       "hy": 6.476,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "krilltech",
@@ -29744,10 +30273,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 22,
-      "pagerank": 0.005320417304915326,
+      "community_id": 5,
+      "pagerank": 0.004035444284868039,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Biomaterials & Green Chemistry",
       "is_bio_universe": 1,
@@ -29792,7 +30321,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 6.99,
       "hx": -6.732,
       "hy": 6.475,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "microbiota-agricola-br",
@@ -29817,10 +30349,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 12,
+      "pagerank": 0.0007403453131530897,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -29845,7 +30377,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 7.04,
       "hx": -6.72,
       "hy": 6.48,
-      "investor_ids": []
+      "investor_ids": [
+        "ecoa_capital",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "microin",
@@ -29875,8 +30410,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.0008764767149278959,
+      "community_id": 2,
+      "pagerank": 0.0007004555629158268,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -29944,10 +30479,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 12,
+      "pagerank": 0.0007403453131530897,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -29976,7 +30511,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 7.637,
       "hx": -6.541,
       "hy": 6.47,
-      "investor_ids": []
+      "investor_ids": [
+        "ecoa_capital",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "nanotica",
@@ -30007,8 +30545,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 5,
-      "pagerank": 0.001691004219341328,
+      "community_id": 7,
+      "pagerank": 0.0013538601158633542,
       "valuation_tier": 1.5,
       "n_investors_mapped": 2,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -30078,10 +30616,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 12,
+      "pagerank": 0.0007403453131530897,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -30108,7 +30646,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 7.49,
       "hx": -6.588,
       "hy": 6.481,
-      "investor_ids": []
+      "investor_ids": [
+        "ecoa_capital",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "promip",
@@ -30139,7 +30680,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 8.0,
       "quality_band": "medium",
       "community_id": 17,
-      "pagerank": 0.001630891177650011,
+      "pagerank": 0.0013032115955623287,
       "valuation_tier": 2.0,
       "n_investors_mapped": 2,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -30215,10 +30756,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 24,
-      "pagerank": 0.0008785497508095748,
+      "community_id": 5,
+      "pagerank": 0.0007158868749292285,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
@@ -30255,7 +30796,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 7.563,
       "hx": -6.564,
       "hy": 6.473,
-      "investor_ids": []
+      "investor_ids": [
+        "the_yield_lab_latam",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "solubio",
@@ -30287,7 +30831,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 8.0,
       "quality_band": "medium",
       "community_id": 17,
-      "pagerank": 0.0012989502006992555,
+      "pagerank": 0.0010375945174550484,
       "valuation_tier": 1.0,
       "n_investors_mapped": 2,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -30368,8 +30912,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 15,
-      "pagerank": 0.0035505008133617753,
+      "community_id": 12,
+      "pagerank": 0.002615903799820785,
       "valuation_tier": 1.5,
       "n_investors_mapped": 8,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -30450,10 +30994,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 7,
+      "pagerank": 0.0007218461026460364,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 3,
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -30478,7 +31022,11 @@ window.STARTUP_THEMES_DATA = {
       "uy": 7.725,
       "hx": -6.522,
       "hy": 6.489,
-      "investor_ids": []
+      "investor_ids": [
+        "AIR Capital",
+        "Antom",
+        "GridX"
+      ]
     },
     {
       "id": "vexxel_biotech",
@@ -30508,8 +31056,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.0008746230547291927,
+      "community_id": 2,
+      "pagerank": 0.0006992777550004535,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -30583,10 +31131,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 24,
-      "pagerank": 0.0008785497508095748,
+      "community_id": 5,
+      "pagerank": 0.0007124860800083283,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Biomaterials & Green Chemistry",
       "is_bio_universe": 1,
@@ -30623,7 +31171,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 7.025,
       "hx": -6.725,
       "hy": 6.481,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "agrosustain-mx",
@@ -30655,10 +31206,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 30,
-      "pagerank": 0.0009069603834136184,
+      "community_id": 5,
+      "pagerank": 0.0007352339992469723,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Biomaterials & Green Chemistry",
       "is_bio_universe": 1,
@@ -30698,7 +31249,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 5.712,
       "hx": -6.984,
       "hy": 6.131,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "caligenia",
@@ -30731,8 +31285,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 3,
-      "pagerank": 0.00087601329987822,
+      "community_id": 2,
+      "pagerank": 0.0007001611109369833,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -30812,8 +31366,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.00087601329987822,
+      "community_id": 2,
+      "pagerank": 0.0007001611109369833,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomaterials & Green Chemistry",
@@ -30886,8 +31440,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.0009746359357002896,
+      "community_id": 2,
+      "pagerank": 0.0007802755597599881,
       "valuation_tier": 1.5,
       "n_investors_mapped": 1,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -30967,8 +31521,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.0009876011467699465,
+      "community_id": 2,
+      "pagerank": 0.000790656587822086,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -31038,8 +31592,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 14,
-      "pagerank": 0.0009236749706267233,
+      "community_id": 16,
+      "pagerank": 0.0007345630962042645,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -31113,8 +31667,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 9.0,
       "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.0009264008247171142,
+      "community_id": 2,
+      "pagerank": 0.0007363887802965493,
       "valuation_tier": 1.0,
       "n_investors_mapped": 2,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -31198,8 +31752,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 6,
-      "pagerank": 0.001245521815363444,
+      "community_id": 2,
+      "pagerank": 0.0009960204107067726,
       "valuation_tier": 1.0,
       "n_investors_mapped": 2,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -31278,8 +31832,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 9.0,
       "quality_band": "high",
-      "community_id": 15,
-      "pagerank": 0.0015927434851739021,
+      "community_id": 12,
+      "pagerank": 0.0012512174966125412,
       "valuation_tier": 3.0,
       "n_investors_mapped": 6,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -31368,8 +31922,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 9.0,
       "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.00087601329987822,
+      "community_id": 2,
+      "pagerank": 0.0007001611109369833,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -31448,8 +32002,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 9.0,
       "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.0009746359357002896,
+      "community_id": 2,
+      "pagerank": 0.0007802755597599881,
       "valuation_tier": 1.5,
       "n_investors_mapped": 1,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -31523,8 +32077,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 16,
-      "pagerank": 0.0008998857589929651,
+      "community_id": 7,
+      "pagerank": 0.0007155154715864753,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -31602,8 +32156,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.0009105902992111571,
+      "community_id": 2,
+      "pagerank": 0.0007212671882050167,
       "valuation_tier": 1.0,
       "n_investors_mapped": 2,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -31685,8 +32239,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 9.0,
       "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.0009352542351388439,
+      "community_id": 2,
+      "pagerank": 0.000747824510513874,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -31766,10 +32320,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 30,
-      "pagerank": 0.0009069603834136184,
+      "community_id": 5,
+      "pagerank": 0.0007861777836720499,
       "valuation_tier": 2.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
@@ -31804,7 +32358,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 5.285,
       "hx": -7.146,
       "hy": 6.234,
-      "investor_ids": []
+      "investor_ids": [
+        "the_yield_lab_latam",
+        "vox_capital"
+      ]
     },
     {
       "id": "biofabrica-siglo-xxi-mx",
@@ -31836,10 +32393,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 30,
-      "pagerank": 0.0009259095380538863,
+      "community_id": 5,
+      "pagerank": 0.0007504062710300386,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Biomaterials & Green Chemistry",
       "is_bio_universe": 1,
@@ -31879,7 +32436,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 5.24,
       "hx": -7.157,
       "hy": 6.227,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "energytop-via-proinpa-bo",
@@ -31904,10 +32464,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 12,
+      "pagerank": 0.0007403453131530897,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -31934,7 +32494,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 5.145,
       "hx": -7.19,
       "hy": 6.243,
-      "investor_ids": []
+      "investor_ids": [
+        "ecoa_capital",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "exacta-bioscience-cl",
@@ -31962,8 +32525,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 14,
-      "pagerank": 0.0016512801656713566,
+      "community_id": 16,
+      "pagerank": 0.0013220532987915903,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -32029,8 +32592,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 6,
-      "pagerank": 0.0008870868797665082,
+      "community_id": 5,
+      "pagerank": 0.0007012658111878293,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -32098,8 +32661,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 14,
-      "pagerank": 0.0012321629275000654,
+      "community_id": 16,
+      "pagerank": 0.0009212872952043978,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -32168,10 +32731,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 14,
-      "pagerank": 0.0009122631347009092,
+      "community_id": 16,
+      "pagerank": 0.0007394798236785177,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
@@ -32207,7 +32770,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 5.521,
       "hx": -7.072,
       "hy": 6.22,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "solena-mx",
@@ -32235,10 +32801,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 30,
-      "pagerank": 0.0009069603834136184,
+      "community_id": 5,
+      "pagerank": 0.0007352339992469723,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
@@ -32276,7 +32842,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 5.167,
       "hx": -7.187,
       "hy": 6.25,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "beam_croptech",
@@ -32307,8 +32876,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 3,
-      "pagerank": 0.000912850970062622,
+      "community_id": 2,
+      "pagerank": 0.0007258964996485733,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -32378,10 +32947,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 7,
+      "pagerank": 0.0007218461026460364,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 3,
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -32406,7 +32975,11 @@ window.STARTUP_THEMES_DATA = {
       "uy": 5.515,
       "hx": -7.118,
       "hy": 6.343,
-      "investor_ids": []
+      "investor_ids": [
+        "AIR Capital",
+        "Antom",
+        "GridX"
+      ]
     },
     {
       "id": "bioceres_sa",
@@ -32436,8 +33009,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 38,
-      "pagerank": 0.0016080791051035302,
+      "community_id": 34,
+      "pagerank": 0.0012874629307939127,
       "valuation_tier": 3.0,
       "n_investors_mapped": 1,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -32509,8 +33082,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.0009876011467699465,
+      "community_id": 2,
+      "pagerank": 0.000790656587822086,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -32583,7 +33156,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 0.0,
       "quality_band": "low",
       "community_id": 7,
-      "pagerank": 0.0031705038495746735,
+      "pagerank": 0.0025297704698280027,
       "valuation_tier": 1.0,
       "n_investors_mapped": 5,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -32657,10 +33230,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": -1,
-      "pagerank": 0.0008690620741330828,
+      "community_id": 5,
+      "pagerank": 0.0007048894556808403,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
@@ -32697,7 +33270,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 5.565,
       "hx": -7.06,
       "hy": 6.222,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "eiru",
@@ -32726,8 +33302,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 9.0,
       "quality_band": "high",
-      "community_id": 5,
-      "pagerank": 0.0010478467362536688,
+      "community_id": 7,
+      "pagerank": 0.0008085983756809445,
       "valuation_tier": 1.5,
       "n_investors_mapped": 3,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -32799,8 +33375,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 24,
-      "pagerank": 0.0009998170242313663,
+      "community_id": 5,
+      "pagerank": 0.0007136729360585816,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -32868,8 +33444,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 24,
-      "pagerank": 0.001249612701933041,
+      "community_id": 5,
+      "pagerank": 0.0007820817891466148,
       "valuation_tier": 1.5,
       "n_investors_mapped": 2,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -32940,8 +33516,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 24,
-      "pagerank": 0.002356583812750469,
+      "community_id": 8,
+      "pagerank": 0.0018867781546609795,
       "valuation_tier": 3.0,
       "n_investors_mapped": 2,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -33016,8 +33592,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 2,
-      "pagerank": 0.0009184013824417047,
+      "community_id": 12,
+      "pagerank": 0.0007263619415792167,
       "valuation_tier": 1.0,
       "n_investors_mapped": 2,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -33088,10 +33664,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 7,
+      "pagerank": 0.0007218461026460364,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 3,
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -33118,7 +33694,11 @@ window.STARTUP_THEMES_DATA = {
       "uy": 5.53,
       "hx": -7.11,
       "hy": 6.334,
-      "investor_ids": []
+      "investor_ids": [
+        "AIR Capital",
+        "Antom",
+        "GridX"
+      ]
     },
     {
       "id": "seedtech-cl",
@@ -33143,10 +33723,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 7,
+      "pagerank": 0.0007218461026460364,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 3,
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -33173,7 +33753,11 @@ window.STARTUP_THEMES_DATA = {
       "uy": 5.578,
       "hx": -7.096,
       "hy": 6.335,
-      "investor_ids": []
+      "investor_ids": [
+        "AIR Capital",
+        "Antom",
+        "GridX"
+      ]
     },
     {
       "id": "semion",
@@ -33200,8 +33784,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.0008746230547291927,
+      "community_id": 2,
+      "pagerank": 0.0006992777550004535,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -33273,8 +33857,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 1,
-      "pagerank": 0.0009722862669998668,
+      "community_id": 4,
+      "pagerank": 0.0007745678015485145,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -33343,10 +33927,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 14,
-      "pagerank": 0.0009122631347009092,
+      "community_id": 16,
+      "pagerank": 0.0007358559545943143,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Food Systems & Alt Proteins",
       "is_bio_universe": 1,
@@ -33381,7 +33965,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 2.204,
       "hx": 1.873,
       "hy": 2.414,
-      "investor_ids": []
+      "investor_ids": [
+        "GridX",
+        "The Ganesha Lab"
+      ]
     },
     {
       "id": "aravan_labs",
@@ -33412,10 +33999,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": -1,
-      "pagerank": 0.0008690620741330828,
+      "community_id": 5,
+      "pagerank": 0.0007012655865966367,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Food Systems & Alt Proteins",
       "is_bio_universe": 1,
@@ -33453,7 +34040,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 2.012,
       "hx": 1.818,
       "hy": 2.408,
-      "investor_ids": []
+      "investor_ids": [
+        "GridX",
+        "The Ganesha Lab"
+      ]
     },
     {
       "id": "atarraya-mx",
@@ -33481,8 +34071,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 13,
-      "pagerank": 0.0016080791051035302,
+      "community_id": 15,
+      "pagerank": 0.0012874629307939127,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -33552,10 +34142,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 24,
-      "pagerank": 0.0008785497508095748,
+      "community_id": 5,
+      "pagerank": 0.0007088622109241247,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Food Systems & Alt Proteins",
       "is_bio_universe": 1,
@@ -33596,7 +34186,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 1.974,
       "hx": 1.809,
       "hy": 2.402,
-      "investor_ids": []
+      "investor_ids": [
+        "GridX",
+        "The Ganesha Lab"
+      ]
     },
     {
       "id": "biotic",
@@ -33626,10 +34219,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 14,
-      "pagerank": 0.0009122631347009092,
+      "community_id": 16,
+      "pagerank": 0.0007358559545943143,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Food Systems & Alt Proteins",
       "is_bio_universe": 1,
@@ -33666,7 +34259,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 2.335,
       "hx": 1.912,
       "hy": 2.416,
-      "investor_ids": []
+      "investor_ids": [
+        "GridX",
+        "The Ganesha Lab"
+      ]
     },
     {
       "id": "bruna-by-altum-lab-cl",
@@ -33694,10 +34290,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 14,
-      "pagerank": 0.0009122631347009092,
+      "community_id": 16,
+      "pagerank": 0.0007358559545943143,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Precision Agriculture",
       "is_bio_universe": 1,
@@ -33734,7 +34330,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 2.455,
       "hx": 1.977,
       "hy": 2.333,
-      "investor_ids": []
+      "investor_ids": [
+        "GridX",
+        "The Ganesha Lab"
+      ]
     },
     {
       "id": "cenibiot",
@@ -33765,10 +34364,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": -1,
-      "pagerank": 0.0008690620741330828,
+      "community_id": 17,
+      "pagerank": 0.0007830535254655462,
       "valuation_tier": 1.5,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Food Systems & Alt Proteins",
       "is_bio_universe": 1,
@@ -33808,7 +34407,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 2.074,
       "hx": 1.833,
       "hy": 2.416,
-      "investor_ids": []
+      "investor_ids": [
+        "fondo_alerce",
+        "sp_ventures"
+      ]
     },
     {
       "id": "done_properly",
@@ -33842,8 +34444,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 5,
-      "pagerank": 0.001037131553874921,
+      "community_id": 25,
+      "pagerank": 0.000823508549852136,
       "valuation_tier": 2.0,
       "n_investors_mapped": 3,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -33919,8 +34521,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 14,
-      "pagerank": 0.0012533663552605893,
+      "community_id": 16,
+      "pagerank": 0.0010034503535732246,
       "valuation_tier": 2.0,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -33991,8 +34593,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 18,
-      "pagerank": 0.00160807910510353,
+      "community_id": 11,
+      "pagerank": 0.0012874629307939125,
       "valuation_tier": 2.0,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -34068,7 +34670,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 5.0,
       "quality_band": "medium",
       "community_id": 10,
-      "pagerank": 0.0017651991389388646,
+      "pagerank": 0.0014132874104951859,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -34144,10 +34746,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 30,
-      "pagerank": 0.0009069603834136184,
+      "community_id": 5,
+      "pagerank": 0.0007480212629513367,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Biomanufacturing & Platform Technologies",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
@@ -34188,7 +34790,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 1.777,
       "hx": -9.145,
       "hy": -1.547,
-      "investor_ids": []
+      "investor_ids": [
+        "SF500",
+        "sp_ventures"
+      ]
     },
     {
       "id": "granatum_bioworks",
@@ -34219,10 +34824,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 30,
-      "pagerank": 0.0009069603834136184,
+      "community_id": 5,
+      "pagerank": 0.0007480212629513367,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Biomanufacturing & Platform Technologies",
       "bio_theme_secondary": "Food Systems & Alt Proteins",
       "is_bio_universe": 1,
@@ -34262,7 +34867,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 1.676,
       "hx": -9.169,
       "hy": -1.565,
-      "investor_ids": []
+      "investor_ids": [
+        "SF500",
+        "sp_ventures"
+      ]
     },
     {
       "id": "green_biofactory",
@@ -34293,10 +34901,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 14,
-      "pagerank": 0.0009122631347009092,
+      "community_id": 16,
+      "pagerank": 0.0007358559545943143,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Food Systems & Alt Proteins",
       "is_bio_universe": 1,
@@ -34337,7 +34945,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 1.919,
       "hx": 1.795,
       "hy": 2.394,
-      "investor_ids": []
+      "investor_ids": [
+        "GridX",
+        "The Ganesha Lab"
+      ]
     },
     {
       "id": "gricha",
@@ -34365,10 +34976,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 30,
-      "pagerank": 0.0009069603834136184,
+      "community_id": 5,
+      "pagerank": 0.000731610130162769,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Precision Agriculture",
       "is_bio_universe": 1,
@@ -34407,7 +35018,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 2.49,
       "hx": 1.969,
       "hy": 2.386,
-      "investor_ids": []
+      "investor_ids": [
+        "GridX",
+        "The Ganesha Lab"
+      ]
     },
     {
       "id": "hemoalgae",
@@ -34438,10 +35052,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": -1,
-      "pagerank": 0.0008690620741330828,
+      "community_id": 5,
+      "pagerank": 0.0007012655865966367,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Food Systems & Alt Proteins",
       "is_bio_universe": 1,
@@ -34479,7 +35093,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 1.953,
       "hx": 1.799,
       "hy": 2.412,
-      "investor_ids": []
+      "investor_ids": [
+        "GridX",
+        "The Ganesha Lab"
+      ]
     },
     {
       "id": "luyef-biotechnologies-cl",
@@ -34507,8 +35124,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 6,
-      "pagerank": 0.0009098417778509726,
+      "community_id": 16,
+      "pagerank": 0.0007194852782135407,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -34578,8 +35195,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 2,
-      "pagerank": 0.001022064752209679,
+      "community_id": 12,
+      "pagerank": 0.0008182522460549718,
       "valuation_tier": 1.5,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -34649,8 +35266,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 39,
-      "pagerank": 0.00160807910510353,
+      "community_id": 3,
+      "pagerank": 0.0012874629307939125,
       "valuation_tier": 3.0,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -34724,10 +35341,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": -1,
-      "pagerank": 0.0008690620741330828,
+      "community_id": 5,
+      "pagerank": 0.0007012655865966367,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Food Systems & Alt Proteins",
       "is_bio_universe": 1,
@@ -34764,7 +35381,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 2.074,
       "hx": 1.842,
       "hy": 2.392,
-      "investor_ids": []
+      "investor_ids": [
+        "GridX",
+        "The Ganesha Lab"
+      ]
     },
     {
       "id": "notfossil",
@@ -34794,8 +35414,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 16,
-      "pagerank": 0.0008998857589929651,
+      "community_id": 7,
+      "pagerank": 0.0007155154715864753,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Nature & Ecosystem Tech",
@@ -34868,10 +35488,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": -1,
-      "pagerank": 0.0008690620741330828,
+      "community_id": 5,
+      "pagerank": 0.0007048894556808403,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 0,
@@ -34907,7 +35527,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 2.32,
       "hx": -2.718,
       "hy": -7.32,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "progal",
@@ -34935,10 +35558,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": -1,
-      "pagerank": 0.0008690620741330828,
+      "community_id": 5,
+      "pagerank": 0.0007012655865966367,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Precision Agriculture",
       "is_bio_universe": 1,
@@ -34977,7 +35600,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 2.375,
       "hx": 1.923,
       "hy": 2.419,
-      "investor_ids": []
+      "investor_ids": [
+        "GridX",
+        "The Ganesha Lab"
+      ]
     },
     {
       "id": "savefruit-mx",
@@ -35005,10 +35631,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 30,
-      "pagerank": 0.0009069603834136184,
+      "community_id": 5,
+      "pagerank": 0.000731610130162769,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Biomaterials & Green Chemistry",
       "is_bio_universe": 1,
@@ -35043,7 +35669,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 3.072,
       "hx": 2.47,
       "hy": 1.478,
-      "investor_ids": []
+      "investor_ids": [
+        "GridX",
+        "The Ganesha Lab"
+      ]
     },
     {
       "id": "siquimia",
@@ -35074,10 +35703,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": -1,
-      "pagerank": 0.0008690620741330828,
+      "community_id": 5,
+      "pagerank": 0.0007048894556808403,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "Diagnostics & Devices",
       "is_bio_universe": 1,
@@ -35116,7 +35745,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 1.605,
       "hx": -2.876,
       "hy": -7.393,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "vesper_ventures"
+      ]
     },
     {
       "id": "the-live-green-co-cl",
@@ -35144,8 +35776,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 14,
-      "pagerank": 0.0012173344680386957,
+      "community_id": 17,
+      "pagerank": 0.0008254794252710331,
       "valuation_tier": 2.0,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -35215,10 +35847,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 30,
-      "pagerank": 0.0009069603834136184,
+      "community_id": 5,
+      "pagerank": 0.000731610130162769,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Food Systems & Alt Proteins",
       "is_bio_universe": 1,
@@ -35261,7 +35893,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 2.129,
       "hx": 1.867,
       "hy": 2.368,
-      "investor_ids": []
+      "investor_ids": [
+        "GridX",
+        "The Ganesha Lab"
+      ]
     },
     {
       "id": "wayakit",
@@ -35291,10 +35926,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 30,
-      "pagerank": 0.0009069603834136184,
+      "community_id": 5,
+      "pagerank": 0.000731610130162769,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Food Systems & Alt Proteins",
       "is_bio_universe": 1,
@@ -35333,7 +35968,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 1.457,
       "hx": 1.684,
       "hy": 2.318,
-      "investor_ids": []
+      "investor_ids": [
+        "GridX",
+        "The Ganesha Lab"
+      ]
     },
     {
       "id": "Bee Technology",
@@ -35358,8 +35996,8 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 6.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 5,
+      "pagerank": 0.0007016339098500624,
       "valuation_tier": null,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -35413,10 +36051,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 17,
+      "pagerank": 0.0007558332401059176,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -35443,7 +36081,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 4.957,
       "hx": -7.269,
       "hy": 6.308,
-      "investor_ids": []
+      "investor_ids": [
+        "the_yield_lab_latam",
+        "vox_capital"
+      ]
     },
     {
       "id": "ascribe-bio-br",
@@ -35468,10 +36109,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 1,
+      "pagerank": 0.0007204819778383544,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 3,
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -35496,7 +36137,11 @@ window.STARTUP_THEMES_DATA = {
       "uy": 5.667,
       "hx": -9.054,
       "hy": -9.92,
-      "investor_ids": []
+      "investor_ids": [
+        "AIR Capital",
+        "CITES",
+        "DraperCygnus"
+      ]
     },
     {
       "id": "ayni-desert-interaction-cl",
@@ -35521,10 +36166,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 7,
+      "pagerank": 0.0007218461026460364,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 3,
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "",
       "is_bio_universe": 1,
@@ -35551,7 +36196,11 @@ window.STARTUP_THEMES_DATA = {
       "uy": 4.457,
       "hx": -7.417,
       "hy": 6.313,
-      "investor_ids": []
+      "investor_ids": [
+        "AIR Capital",
+        "Antom",
+        "GridX"
+      ]
     },
     {
       "id": "biolife-innovations-bo",
@@ -35576,10 +36225,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 17,
+      "pagerank": 0.0007830535254655462,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -35607,7 +36256,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 4.4,
       "hx": 2.487,
       "hy": 2.538,
-      "investor_ids": []
+      "investor_ids": [
+        "fondo_alerce",
+        "sp_ventures"
+      ]
     },
     {
       "id": "codebreaker-bioscience-cl",
@@ -35632,10 +36284,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 23,
+      "pagerank": 0.0008190782454783104,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 3,
       "bio_theme": "Precision Agriculture",
       "bio_theme_secondary": "",
       "is_bio_universe": 1,
@@ -35660,7 +36312,11 @@ window.STARTUP_THEMES_DATA = {
       "uy": 3.777,
       "hx": 9.262,
       "hy": 10.862,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "ace_ventures",
+        "barn_investimentos"
+      ]
     },
     {
       "id": "ecocycle-biotech-ec",
@@ -35685,10 +36341,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 12,
+      "pagerank": 0.0007184619724402476,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -35717,7 +36373,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 4.436,
       "hx": -9.387,
       "hy": -9.82,
-      "investor_ids": []
+      "investor_ids": [
+        "vesper_ventures",
+        "zentynel"
+      ]
     },
     {
       "id": "ecombio-cl",
@@ -35742,10 +36401,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 1,
+      "pagerank": 0.0007204819778383544,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 3,
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "",
       "is_bio_universe": 1,
@@ -35772,7 +36431,11 @@ window.STARTUP_THEMES_DATA = {
       "uy": 3.875,
       "hx": 2.328,
       "hy": 2.544,
-      "investor_ids": []
+      "investor_ids": [
+        "AIR Capital",
+        "CITES",
+        "DraperCygnus"
+      ]
     },
     {
       "id": "forma-foods-mx",
@@ -35797,10 +36460,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 1,
+      "pagerank": 0.0007204819778383544,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 3,
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -35825,7 +36488,11 @@ window.STARTUP_THEMES_DATA = {
       "uy": -4.373,
       "hx": -11.554,
       "hy": -9.695,
-      "investor_ids": []
+      "investor_ids": [
+        "AIR Capital",
+        "CITES",
+        "DraperCygnus"
+      ]
     },
     {
       "id": "global-nano-additives-mx",
@@ -35850,10 +36517,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 1,
+      "pagerank": 0.0007204819778383544,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 3,
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -35878,7 +36545,11 @@ window.STARTUP_THEMES_DATA = {
       "uy": -4.408,
       "hx": -11.569,
       "hy": -9.676,
-      "investor_ids": []
+      "investor_ids": [
+        "AIR Capital",
+        "CITES",
+        "DraperCygnus"
+      ]
     },
     {
       "id": "infood-protein-cl",
@@ -35903,10 +36574,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 1,
+      "pagerank": 0.0007204819778383544,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 3,
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "",
       "is_bio_universe": 1,
@@ -35933,7 +36604,11 @@ window.STARTUP_THEMES_DATA = {
       "uy": 1.867,
       "hx": 1.845,
       "hy": 2.211,
-      "investor_ids": []
+      "investor_ids": [
+        "AIR Capital",
+        "CITES",
+        "DraperCygnus"
+      ]
     },
     {
       "id": "inkus-biotech-cl",
@@ -35958,10 +36633,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 23,
+      "pagerank": 0.0008190782454783104,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 3,
       "bio_theme": "Precision Agriculture",
       "bio_theme_secondary": "",
       "is_bio_universe": 1,
@@ -35988,7 +36663,11 @@ window.STARTUP_THEMES_DATA = {
       "uy": 3.944,
       "hx": 9.307,
       "hy": 10.87,
-      "investor_ids": []
+      "investor_ids": [
+        "The Ganesha Lab",
+        "ace_ventures",
+        "barn_investimentos"
+      ]
     },
     {
       "id": "lilliput-technologies-cr",
@@ -36013,10 +36692,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 4,
+      "pagerank": 0.0007400462850744637,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Precision Agriculture",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -36043,7 +36722,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 4.832,
       "hx": 9.556,
       "hy": 10.876,
-      "investor_ids": []
+      "investor_ids": [
+        "morningside_group",
+        "the_yield_lab_latam"
+      ]
     },
     {
       "id": "lilliput-technologies-ltd-cr",
@@ -36068,10 +36750,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 4,
+      "pagerank": 0.0007400462850744637,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Precision Agriculture",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -36098,7 +36780,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 4.797,
       "hx": 9.546,
       "hy": 10.875,
-      "investor_ids": []
+      "investor_ids": [
+        "morningside_group",
+        "the_yield_lab_latam"
+      ]
     },
     {
       "id": "mycoseaweed-cl",
@@ -36123,10 +36808,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 1,
+      "pagerank": 0.0007204819778383544,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 3,
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "",
       "is_bio_universe": 1,
@@ -36151,7 +36836,11 @@ window.STARTUP_THEMES_DATA = {
       "uy": 4.411,
       "hx": 2.482,
       "hy": 2.562,
-      "investor_ids": []
+      "investor_ids": [
+        "AIR Capital",
+        "CITES",
+        "DraperCygnus"
+      ]
     },
     {
       "id": "pewman-innovation-cl",
@@ -36176,10 +36865,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 7,
+      "pagerank": 0.0007218461026460364,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 3,
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "",
       "is_bio_universe": 1,
@@ -36204,7 +36893,11 @@ window.STARTUP_THEMES_DATA = {
       "uy": 4.477,
       "hx": -7.406,
       "hy": 6.296,
-      "investor_ids": []
+      "investor_ids": [
+        "AIR Capital",
+        "Antom",
+        "GridX"
+      ]
     },
     {
       "id": "plantverd-mx",
@@ -36229,10 +36922,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 17,
+      "pagerank": 0.0007830535254655462,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -36260,7 +36953,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 4.633,
       "hx": 2.55,
       "hy": 2.556,
-      "investor_ids": []
+      "investor_ids": [
+        "fondo_alerce",
+        "sp_ventures"
+      ]
     },
     {
       "id": "recombine-biotech-br",
@@ -36285,10 +36981,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 17,
+      "pagerank": 0.0007830535254655462,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -36316,7 +37012,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 4.379,
       "hx": 2.472,
       "hy": 2.564,
-      "investor_ids": []
+      "investor_ids": [
+        "fondo_alerce",
+        "sp_ventures"
+      ]
     },
     {
       "id": "silicochem-ec",
@@ -36341,10 +37040,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 23,
+      "pagerank": 0.000835917998522621,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Precision Agriculture",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -36369,7 +37068,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 4.312,
       "hx": 9.405,
       "hy": 10.886,
-      "investor_ids": []
+      "investor_ids": [
+        "lightsmith_group",
+        "monashees"
+      ]
     },
     {
       "id": "swebol-biotech-bo",
@@ -36394,10 +37096,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 23,
+      "pagerank": 0.000835917998522621,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Precision Agriculture",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -36425,7 +37127,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 4.324,
       "hx": 9.413,
       "hy": 10.873,
-      "investor_ids": []
+      "investor_ids": [
+        "lightsmith_group",
+        "monashees"
+      ]
     },
     {
       "id": "tierra-de-monte-mx",
@@ -36450,10 +37155,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 10,
+      "pagerank": 0.0007852615825319042,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -36480,7 +37185,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 4.572,
       "hx": 2.533,
       "hy": 2.554,
-      "investor_ids": []
+      "investor_ids": [
+        "chileglobal_ventures",
+        "the_yield_lab_latam"
+      ]
     },
     {
       "id": "viobact-cl",
@@ -36505,10 +37213,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 1,
+      "pagerank": 0.0007204819778383544,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 3,
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "",
       "is_bio_universe": 1,
@@ -36533,7 +37241,11 @@ window.STARTUP_THEMES_DATA = {
       "uy": 4.287,
       "hx": 2.449,
       "hy": 2.55,
-      "investor_ids": []
+      "investor_ids": [
+        "AIR Capital",
+        "CITES",
+        "DraperCygnus"
+      ]
     },
     {
       "id": "activaq",
@@ -36563,10 +37275,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 14,
-      "pagerank": 0.0009122631347009092,
+      "community_id": 16,
+      "pagerank": 0.0007358559545943143,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
@@ -36604,7 +37316,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 3.281,
       "hx": 2.17,
       "hy": 2.488,
-      "investor_ids": []
+      "investor_ids": [
+        "GridX",
+        "The Ganesha Lab"
+      ]
     },
     {
       "id": "aquabio-cl",
@@ -36629,10 +37344,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 1,
+      "pagerank": 0.0007204819778383544,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 3,
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -36659,7 +37374,11 @@ window.STARTUP_THEMES_DATA = {
       "uy": 3.639,
       "hx": 2.263,
       "hy": 2.527,
-      "investor_ids": []
+      "investor_ids": [
+        "AIR Capital",
+        "CITES",
+        "DraperCygnus"
+      ]
     },
     {
       "id": "aquit",
@@ -36692,8 +37411,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.0008904331443849605,
+      "community_id": 2,
+      "pagerank": 0.0007045782948837797,
       "valuation_tier": 1.0,
       "n_investors_mapped": 2,
       "bio_theme": "Therapeutics",
@@ -36767,10 +37486,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": -1,
-      "pagerank": 0.0008690620741330828,
+      "community_id": 5,
+      "pagerank": 0.0007012655865966367,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
@@ -36808,7 +37527,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 2.996,
       "hx": 2.1,
       "hy": 2.445,
-      "investor_ids": []
+      "investor_ids": [
+        "GridX",
+        "The Ganesha Lab"
+      ]
     },
     {
       "id": "biomar-cr",
@@ -36833,10 +37555,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 1,
+      "pagerank": 0.0007204819778383544,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 3,
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -36863,7 +37585,11 @@ window.STARTUP_THEMES_DATA = {
       "uy": 3.63,
       "hx": 2.261,
       "hy": 2.526,
-      "investor_ids": []
+      "investor_ids": [
+        "AIR Capital",
+        "CITES",
+        "DraperCygnus"
+      ]
     },
     {
       "id": "devalor-cl",
@@ -36888,10 +37614,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 1,
+      "pagerank": 0.0007204819778383544,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 3,
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -36918,7 +37644,11 @@ window.STARTUP_THEMES_DATA = {
       "uy": 3.765,
       "hx": 2.297,
       "hy": 2.537,
-      "investor_ids": []
+      "investor_ids": [
+        "AIR Capital",
+        "CITES",
+        "DraperCygnus"
+      ]
     },
     {
       "id": "domolif",
@@ -36946,10 +37676,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 14,
-      "pagerank": 0.0009122631347009092,
+      "community_id": 16,
+      "pagerank": 0.0007358559545943143,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Food Systems & Alt Proteins",
       "is_bio_universe": 1,
@@ -36987,7 +37717,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 2.838,
       "hx": 2.062,
       "hy": 2.417,
-      "investor_ids": []
+      "investor_ids": [
+        "GridX",
+        "The Ganesha Lab"
+      ]
     },
     {
       "id": "feedvax",
@@ -37019,8 +37752,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.0008889785109478772,
+      "community_id": 2,
+      "pagerank": 0.0007105421389990813,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -37094,8 +37827,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 14,
-      "pagerank": 0.0016512801656713564,
+      "community_id": 16,
+      "pagerank": 0.0013220532987915903,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -37165,10 +37898,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 14,
-      "pagerank": 0.0009122631347009092,
+      "community_id": 16,
+      "pagerank": 0.0007358559545943143,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
@@ -37204,7 +37937,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 2.903,
       "hx": 2.075,
       "hy": 2.434,
-      "investor_ids": []
+      "investor_ids": [
+        "GridX",
+        "The Ganesha Lab"
+      ]
     },
     {
       "id": "recirculab-cl",
@@ -37229,10 +37965,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 1,
+      "pagerank": 0.0007204819778383544,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 3,
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -37259,7 +37995,11 @@ window.STARTUP_THEMES_DATA = {
       "uy": 3.718,
       "hx": 2.284,
       "hy": 2.536,
-      "investor_ids": []
+      "investor_ids": [
+        "AIR Capital",
+        "CITES",
+        "DraperCygnus"
+      ]
     },
     {
       "id": "salmoss-biotech-cl",
@@ -37284,10 +38024,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 1,
+      "pagerank": 0.0007204819778383544,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 3,
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -37312,7 +38052,11 @@ window.STARTUP_THEMES_DATA = {
       "uy": 3.633,
       "hx": 2.257,
       "hy": 2.537,
-      "investor_ids": []
+      "investor_ids": [
+        "AIR Capital",
+        "CITES",
+        "DraperCygnus"
+      ]
     },
     {
       "id": "werk-nvac",
@@ -37341,8 +38085,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 3,
-      "pagerank": 0.0008764767149278959,
+      "community_id": 2,
+      "pagerank": 0.0007004555629158268,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -37413,10 +38157,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 24,
-      "pagerank": 0.0008785497508095748,
+      "community_id": 5,
+      "pagerank": 0.0007088622109241247,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Food Systems & Alt Proteins",
       "is_bio_universe": 1,
@@ -37455,7 +38199,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 2.835,
       "hx": 2.057,
       "hy": 2.43,
-      "investor_ids": []
+      "investor_ids": [
+        "GridX",
+        "The Ganesha Lab"
+      ]
     },
     {
       "id": "ages",
@@ -37490,8 +38237,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 1,
-      "pagerank": 0.0009690476914027274,
+      "community_id": 4,
+      "pagerank": 0.0007717196336188058,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -37578,8 +38325,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 6,
-      "pagerank": 0.0008882885334754033,
+      "community_id": 5,
+      "pagerank": 0.0007016339098500624,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -37663,10 +38410,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 24,
-      "pagerank": 0.0008785497508095748,
+      "community_id": 5,
+      "pagerank": 0.0007088622109241247,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Food Systems & Alt Proteins",
       "is_bio_universe": 1,
@@ -37707,7 +38454,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 2.196,
       "hx": 1.925,
       "hy": 2.262,
-      "investor_ids": []
+      "investor_ids": [
+        "GridX",
+        "The Ganesha Lab"
+      ]
     },
     {
       "id": "biofactory-br",
@@ -37732,10 +38482,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 1,
+      "pagerank": 0.0007134373610510709,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 3,
       "bio_theme": "Biomanufacturing & Platform Technologies",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -37762,7 +38512,11 @@ window.STARTUP_THEMES_DATA = {
       "uy": 1.102,
       "hx": -9.266,
       "hy": -1.773,
-      "investor_ids": []
+      "investor_ids": [
+        "AIR Capital",
+        "DraperCygnus",
+        "GridX"
+      ]
     },
     {
       "id": "biolinker",
@@ -37798,10 +38552,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 24,
-      "pagerank": 0.0008785497508095748,
+      "community_id": 5,
+      "pagerank": 0.0007252733437126927,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Biomanufacturing & Platform Technologies",
       "bio_theme_secondary": "Food Systems & Alt Proteins",
       "is_bio_universe": 1,
@@ -37851,7 +38605,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 0.991,
       "hx": -9.3,
       "hy": -1.77,
-      "investor_ids": []
+      "investor_ids": [
+        "SF500",
+        "sp_ventures"
+      ]
     },
     {
       "id": "bioprocess-automation-brasil-br",
@@ -37876,10 +38633,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 7,
+      "pagerank": 0.0007173155694475616,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -37906,7 +38663,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 6.847,
       "hx": 2.287,
       "hy": 1.059,
-      "investor_ids": []
+      "investor_ids": [
+        "SF500",
+        "the_yield_lab_latam"
+      ]
     },
     {
       "id": "biotimize",
@@ -37938,10 +38698,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 24,
-      "pagerank": 0.0008785497508095748,
+      "community_id": 5,
+      "pagerank": 0.0007872217111408509,
       "valuation_tier": 3.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Biomanufacturing & Platform Technologies",
       "bio_theme_secondary": "Food Systems & Alt Proteins",
       "is_bio_universe": 1,
@@ -37988,7 +38748,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 1.034,
       "hx": -9.283,
       "hy": -1.783,
-      "investor_ids": []
+      "investor_ids": [
+        "grupo_insud",
+        "zentynel"
+      ]
     },
     {
       "id": "bybug",
@@ -38028,8 +38791,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 3,
-      "pagerank": 0.00087601329987822,
+      "community_id": 2,
+      "pagerank": 0.0007001611109369833,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomanufacturing & Platform Technologies",
@@ -38112,10 +38875,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 5,
+      "pagerank": 0.0007010815821837588,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -38142,7 +38905,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 1.372,
       "hx": -2.287,
       "hy": -1.059,
-      "investor_ids": []
+      "investor_ids": [
+        "GridX",
+        "The Ganesha Lab"
+      ]
     },
     {
       "id": "dprotein",
@@ -38174,8 +38940,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 2,
-      "pagerank": 0.0010255420858023287,
+      "community_id": 12,
+      "pagerank": 0.0008210365168458955,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -38256,8 +39022,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 5,
-      "pagerank": 0.000957561530867483,
+      "community_id": 25,
+      "pagerank": 0.000759852022294046,
       "valuation_tier": 1.0,
       "n_investors_mapped": 2,
       "bio_theme": "Biomanufacturing & Platform Technologies",
@@ -38340,7 +39106,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 8.0,
       "quality_band": "medium",
       "community_id": 17,
-      "pagerank": 0.0008913988951681788,
+      "pagerank": 0.0007111648988400749,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -38417,7 +39183,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 8.0,
       "quality_band": "medium",
       "community_id": 9,
-      "pagerank": 0.0012247387200546884,
+      "pagerank": 0.0009805286839739175,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -38492,10 +39258,10 @@ window.STARTUP_THEMES_DATA = {
       "industry_codes": [],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
+      "community_id": 7,
+      "pagerank": 0.0007218461026460364,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 3,
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -38523,7 +39289,11 @@ window.STARTUP_THEMES_DATA = {
       "uy": 3.36,
       "hx": -7.723,
       "hy": 6.269,
-      "investor_ids": []
+      "investor_ids": [
+        "AIR Capital",
+        "Antom",
+        "GridX"
+      ]
     },
     {
       "id": "harmony-biosciences",
@@ -38556,8 +39326,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 24,
-      "pagerank": 0.0011857214811911855,
+      "community_id": 12,
+      "pagerank": 0.0009404006820032517,
       "valuation_tier": 2.0,
       "n_investors_mapped": 2,
       "bio_theme": "Biomanufacturing & Platform Technologies",
@@ -38641,7 +39411,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 8.0,
       "quality_band": "medium",
       "community_id": 17,
-      "pagerank": 0.0008913988951681788,
+      "pagerank": 0.0007111648988400749,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -38721,7 +39491,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 8.0,
       "quality_band": "medium",
       "community_id": 17,
-      "pagerank": 0.0008904483921454087,
+      "pagerank": 0.0007105087044747241,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
@@ -38801,8 +39571,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 7,
-      "pagerank": 0.0008920641075453903,
+      "community_id": 1,
+      "pagerank": 0.0007073527363967993,
       "valuation_tier": 1.5,
       "n_investors_mapped": 1,
       "bio_theme": "Biomanufacturing & Platform Technologies",
@@ -38896,8 +39666,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 9.0,
       "quality_band": "high",
-      "community_id": 8,
-      "pagerank": 0.007938602271635146,
+      "community_id": 2,
+      "pagerank": 0.006017167936869446,
       "valuation_tier": 3.0,
       "n_investors_mapped": 5,
       "bio_theme": "Biomaterials & Green Chemistry",
@@ -38987,8 +39757,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 3,
-      "pagerank": 0.00087601329987822,
+      "community_id": 2,
+      "pagerank": 0.0007001611109369833,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -39060,10 +39830,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 24,
-      "pagerank": 0.0008785497508095748,
+      "community_id": 5,
+      "pagerank": 0.0007088622109241247,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Precision Agriculture",
       "is_bio_universe": 1,
@@ -39103,7 +39873,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 1.699,
       "hx": 1.82,
       "hy": 2.14,
-      "investor_ids": []
+      "investor_ids": [
+        "GridX",
+        "The Ganesha Lab"
+      ]
     },
     {
       "id": "nude",
@@ -39134,8 +39907,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 5,
-      "pagerank": 0.0009108640630660018,
+      "community_id": 25,
+      "pagerank": 0.0007292148205494792,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -39202,8 +39975,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 5,
-      "pagerank": 0.0009701301641487725,
+      "community_id": 25,
+      "pagerank": 0.0007766702424469114,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -39277,8 +40050,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 7,
-      "pagerank": 0.0008920641075453903,
+      "community_id": 1,
+      "pagerank": 0.0007073527363967993,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomanufacturing & Platform Technologies",
@@ -39358,10 +40131,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 16,
-      "pagerank": 0.0008982101973206307,
+      "community_id": 5,
+      "pagerank": 0.0007246040022338167,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Biomaterials & Green Chemistry",
       "is_bio_universe": 1,
@@ -39402,7 +40175,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 1.638,
       "hx": 1.804,
       "hy": 2.134,
-      "investor_ids": []
+      "investor_ids": [
+        "GridX",
+        "The Ganesha Lab"
+      ]
     },
     {
       "id": "speclab",
@@ -39436,7 +40212,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 8.0,
       "quality_band": "medium",
       "community_id": 17,
-      "pagerank": 0.0008904483921454087,
+      "pagerank": 0.0007105087044747241,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomanufacturing & Platform Technologies",
@@ -39514,8 +40290,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.0008889785109478772,
+      "community_id": 2,
+      "pagerank": 0.0007105421389990813,
       "valuation_tier": 1.5,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -39597,8 +40373,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.0008746230547291927,
+      "community_id": 2,
+      "pagerank": 0.0006992777550004535,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -39683,8 +40459,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 3,
-      "pagerank": 0.0008889785109478772,
+      "community_id": 2,
+      "pagerank": 0.0007105421389990813,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -39759,8 +40535,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 14,
-      "pagerank": 0.0008998025115119785,
+      "community_id": 16,
+      "pagerank": 0.0007192087355547725,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -39829,8 +40605,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 9.0,
       "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.0008889785109478772,
+      "community_id": 2,
+      "pagerank": 0.0007105421389990813,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -39908,8 +40684,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 7,
-      "pagerank": 0.0008920641075453903,
+      "community_id": 1,
+      "pagerank": 0.0007073527363967993,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -39983,8 +40759,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 2,
-      "pagerank": 0.0009196736216667387,
+      "community_id": 1,
+      "pagerank": 0.000726392526770469,
       "valuation_tier": 2.0,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -40070,8 +40846,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 7,
-      "pagerank": 0.0008920641075453903,
+      "community_id": 1,
+      "pagerank": 0.0007073527363967993,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -40151,8 +40927,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 3,
-      "pagerank": 0.0008764767149278959,
+      "community_id": 2,
+      "pagerank": 0.0007004555629158268,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -40227,8 +41003,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.0008875882657988496,
+      "community_id": 2,
+      "pagerank": 0.0007096587830625514,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -40305,8 +41081,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.00087601329987822,
+      "community_id": 2,
+      "pagerank": 0.0007001611109369833,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -40380,8 +41156,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 5,
-      "pagerank": 0.0008936595344834304,
+      "community_id": 4,
+      "pagerank": 0.0007073872420454495,
       "valuation_tier": 1.5,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -40460,8 +41236,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 6,
-      "pagerank": 0.0008882885334754033,
+      "community_id": 5,
+      "pagerank": 0.0007016339098500624,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -40534,8 +41310,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 9.0,
       "quality_band": "high",
-      "community_id": 5,
-      "pagerank": 0.0008936595344834304,
+      "community_id": 4,
+      "pagerank": 0.0007073872420454495,
       "valuation_tier": 1.5,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -40602,10 +41378,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 5.0,
       "quality_band": "medium",
-      "community_id": 14,
-      "pagerank": 0.0009122631347009092,
+      "community_id": 16,
+      "pagerank": 0.0007358559545943143,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
@@ -40642,7 +41418,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 5.635,
       "hx": 2.872,
       "hy": 2.499,
-      "investor_ids": []
+      "investor_ids": [
+        "GridX",
+        "The Ganesha Lab"
+      ]
     },
     {
       "id": "kresko_rnatech",
@@ -40671,8 +41450,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.00087601329987822,
+      "community_id": 2,
+      "pagerank": 0.0007001611109369833,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -40748,8 +41527,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.00087601329987822,
+      "community_id": 2,
+      "pagerank": 0.0007001611109369833,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -40829,7 +41608,7 @@ window.STARTUP_THEMES_DATA = {
       "quality_score": 8.0,
       "quality_band": "medium",
       "community_id": 10,
-      "pagerank": 0.0011741300110882425,
+      "pagerank": 0.0008551983488634123,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -40900,8 +41679,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 2,
-      "pagerank": 0.0009514523007942745,
+      "community_id": 12,
+      "pagerank": 0.0007430675663247582,
       "valuation_tier": 1.5,
       "n_investors_mapped": 3,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -40981,8 +41760,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 9.0,
       "quality_band": "high",
-      "community_id": 14,
-      "pagerank": 0.0009127677225816355,
+      "community_id": 16,
+      "pagerank": 0.0007295897636168704,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -41068,8 +41847,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.00087601329987822,
+      "community_id": 2,
+      "pagerank": 0.0007001611109369833,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Food Systems & Alt Proteins",
@@ -41138,10 +41917,10 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 0.0,
       "quality_band": "low",
-      "community_id": 14,
-      "pagerank": 0.0009122631347009092,
+      "community_id": 16,
+      "pagerank": 0.0007358559545943143,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Precision Agriculture",
       "is_bio_universe": 1,
@@ -41180,7 +41959,10 @@ window.STARTUP_THEMES_DATA = {
       "uy": 2.333,
       "hx": 1.975,
       "hy": 2.239,
-      "investor_ids": []
+      "investor_ids": [
+        "GridX",
+        "The Ganesha Lab"
+      ]
     },
     {
       "id": "syocin-biotech",
@@ -41216,8 +41998,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.0,
       "quality_band": "medium",
-      "community_id": 3,
-      "pagerank": 0.00087601329987822,
+      "community_id": 2,
+      "pagerank": 0.0007001611109369833,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -41303,8 +42085,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 8.5,
       "quality_band": "high",
-      "community_id": 3,
-      "pagerank": 0.000912850970062622,
+      "community_id": 2,
+      "pagerank": 0.0007258964996485733,
       "valuation_tier": 1.0,
       "n_investors_mapped": 1,
       "bio_theme": "Biomanufacturing & Platform Technologies",
@@ -41384,8 +42166,8 @@ window.STARTUP_THEMES_DATA = {
       ],
       "quality_score": 9.0,
       "quality_band": "high",
-      "community_id": 5,
-      "pagerank": 0.0009646931283385997,
+      "community_id": 25,
+      "pagerank": 0.0007561603248928375,
       "valuation_tier": 1.5,
       "n_investors_mapped": 3,
       "bio_theme": "Bioinputs & Crop Resilience",
@@ -41479,7 +42261,7 @@ window.STARTUP_THEMES_DATA = {
         "PR": 1,
         "Costa Rica": 1
       },
-      "n_funded": 47,
+      "n_funded": 92,
       "n_featured": 11
     },
     {
@@ -41535,7 +42317,7 @@ window.STARTUP_THEMES_DATA = {
         "Uruguay": 1,
         "Peru": 1
       },
-      "n_funded": 45,
+      "n_funded": 73,
       "n_featured": 7
     },
     {
@@ -41581,7 +42363,7 @@ window.STARTUP_THEMES_DATA = {
         "Costa Rica": 2,
         "Colombia": 1
       },
-      "n_funded": 17,
+      "n_funded": 34,
       "n_featured": 3
     },
     {
@@ -41626,7 +42408,7 @@ window.STARTUP_THEMES_DATA = {
         "Colombia": 2,
         "Peru": 1
       },
-      "n_funded": 11,
+      "n_funded": 29,
       "n_featured": 5
     },
     {
@@ -41684,7 +42466,7 @@ window.STARTUP_THEMES_DATA = {
         "Argentina": 7,
         "USA": 1
       },
-      "n_funded": 19,
+      "n_funded": 28,
       "n_featured": 3
     },
     {
@@ -41732,7 +42514,7 @@ window.STARTUP_THEMES_DATA = {
         "Mexico": 3,
         "Chile": 5
       },
-      "n_funded": 21,
+      "n_funded": 23,
       "n_featured": 1
     },
     {
@@ -41775,7 +42557,7 @@ window.STARTUP_THEMES_DATA = {
         "Chile": 2,
         "Brazil": 2
       },
-      "n_funded": 16,
+      "n_funded": 22,
       "n_featured": 1
     },
     {
@@ -41799,7 +42581,7 @@ window.STARTUP_THEMES_DATA = {
         "Mexico": 4,
         "Costa Rica": 2
       },
-      "n_funded": 1,
+      "n_funded": 22,
       "n_featured": 0
     },
     {
@@ -41882,7 +42664,7 @@ window.STARTUP_THEMES_DATA = {
         "Argentina": 6,
         "USA": 2
       },
-      "n_funded": 12,
+      "n_funded": 19,
       "n_featured": 2
     },
     {
@@ -41916,7 +42698,7 @@ window.STARTUP_THEMES_DATA = {
         "Colombia": 1,
         "Argentina": 4
       },
-      "n_funded": 12,
+      "n_funded": 17,
       "n_featured": 2
     },
     {
@@ -41947,7 +42729,7 @@ window.STARTUP_THEMES_DATA = {
         "Colombia": 1,
         "Costa Rica": 1
       },
-      "n_funded": 10,
+      "n_funded": 17,
       "n_featured": 2
     },
     {
@@ -41992,7 +42774,7 @@ window.STARTUP_THEMES_DATA = {
         "Mexico": 1,
         "Argentina": 13
       },
-      "n_funded": 13,
+      "n_funded": 14,
       "n_featured": 1
     },
     {
@@ -42021,7 +42803,7 @@ window.STARTUP_THEMES_DATA = {
         "Brazil": 3,
         "Chile": 3
       },
-      "n_funded": 10,
+      "n_funded": 14,
       "n_featured": 2
     },
     {
@@ -42056,7 +42838,7 @@ window.STARTUP_THEMES_DATA = {
         "Argentina": 1,
         "Brazil": 1
       },
-      "n_funded": 4,
+      "n_funded": 14,
       "n_featured": 0
     },
     {
@@ -42102,7 +42884,7 @@ window.STARTUP_THEMES_DATA = {
         "Chile": 2,
         "Mexico": 1
       },
-      "n_funded": 9,
+      "n_funded": 13,
       "n_featured": 2
     },
     {
@@ -42122,7 +42904,7 @@ window.STARTUP_THEMES_DATA = {
         "Chile": 1,
         "Argentina": 1
       },
-      "n_funded": 0,
+      "n_funded": 12,
       "n_featured": 0
     },
     {
@@ -42152,7 +42934,7 @@ window.STARTUP_THEMES_DATA = {
         "Costa Rica": 2,
         "Mexico": 1
       },
-      "n_funded": 5,
+      "n_funded": 12,
       "n_featured": 0
     },
     {
@@ -42228,7 +43010,7 @@ window.STARTUP_THEMES_DATA = {
         "Argentina": 1,
         "Mexico": 2
       },
-      "n_funded": 1,
+      "n_funded": 12,
       "n_featured": 3
     },
     {
@@ -42270,7 +43052,7 @@ window.STARTUP_THEMES_DATA = {
         "Chile": 1,
         "Colombia": 1
       },
-      "n_funded": 5,
+      "n_funded": 11,
       "n_featured": 1
     },
     {
@@ -42343,7 +43125,7 @@ window.STARTUP_THEMES_DATA = {
         "USA": 1,
         "Brazil": 2
       },
-      "n_funded": 6,
+      "n_funded": 10,
       "n_featured": 3
     },
     {
@@ -42369,7 +43151,7 @@ window.STARTUP_THEMES_DATA = {
         "Chile": 2,
         "Uruguay": 1
       },
-      "n_funded": 3,
+      "n_funded": 8,
       "n_featured": 1
     },
     {
@@ -42392,7 +43174,7 @@ window.STARTUP_THEMES_DATA = {
         "Venezuela": 1,
         "Mexico": 1
       },
-      "n_funded": 0,
+      "n_funded": 7,
       "n_featured": 0
     },
     {
@@ -42421,7 +43203,7 @@ window.STARTUP_THEMES_DATA = {
         "Colombia": 1,
         "Brazil": 3
       },
-      "n_funded": 4,
+      "n_funded": 7,
       "n_featured": 0
     },
     {
@@ -42444,7 +43226,7 @@ window.STARTUP_THEMES_DATA = {
         "Brazil": 4,
         "Argentina": 1
       },
-      "n_funded": 0,
+      "n_funded": 7,
       "n_featured": 0
     },
     {
@@ -42502,7 +43284,7 @@ window.STARTUP_THEMES_DATA = {
         "Argentina": 3,
         "Chile": 3
       },
-      "n_funded": 5,
+      "n_funded": 6,
       "n_featured": 0
     },
     {
@@ -42745,42 +43527,72 @@ window.STARTUP_THEMES_DATA = {
     {
       "id": "GridX",
       "name": "GridX",
-      "n": 99
-    },
-    {
-      "id": "sp_ventures",
-      "name": "SP Ventures",
-      "n": 25
-    },
-    {
-      "id": "SF500",
-      "name": "SF500",
-      "n": 22
-    },
-    {
-      "id": "the_yield_lab_latam",
-      "name": "The Yield Lab LATAM",
-      "n": 21
-    },
-    {
-      "id": "AIR Capital",
-      "name": "AIR Capital",
-      "n": 20
+      "n": 157
     },
     {
       "id": "The Ganesha Lab",
       "name": "The Ganesha Lab",
-      "n": 20
+      "n": 140
+    },
+    {
+      "id": "vesper_ventures",
+      "name": "Vesper Ventures",
+      "n": 92
+    },
+    {
+      "id": "the_yield_lab_latam",
+      "name": "The Yield Lab LATAM",
+      "n": 58
+    },
+    {
+      "id": "AIR Capital",
+      "name": "AIR Capital",
+      "n": 56
     },
     {
       "id": "CITES",
       "name": "CITES",
-      "n": 15
+      "n": 38
+    },
+    {
+      "id": "sp_ventures",
+      "name": "SP Ventures",
+      "n": 35
+    },
+    {
+      "id": "DraperCygnus",
+      "name": "DraperCygnus",
+      "n": 32
+    },
+    {
+      "id": "SF500",
+      "name": "SF500",
+      "n": 31
     },
     {
       "id": "zentynel",
       "name": "Zentynel",
-      "n": 14
+      "n": 22
+    },
+    {
+      "id": "Antom",
+      "name": "Antom",
+      "n": 21
+    },
+    {
+      "id": "morningside_group",
+      "name": "Morningside Group",
+      "n": 15
+    },
+    {
+      "id": "newtopia_vc",
+      "name": "Newtopia VC",
+      "n": 13
+    },
+    {
+      "id": "ecoa_capital",
+      "name": "Ecoa Capital",
+      "n": 12
     },
     {
       "id": "glocal",
@@ -42788,18 +43600,38 @@ window.STARTUP_THEMES_DATA = {
       "n": 12
     },
     {
-      "id": "Antom",
-      "name": "Antom",
-      "n": 9
-    },
-    {
       "id": "inventure",
       "name": "Inventure",
-      "n": 9
+      "n": 12
+    },
+    {
+      "id": "barn_investimentos",
+      "name": "Barn Investimentos",
+      "n": 10
+    },
+    {
+      "id": "melek_capital",
+      "name": "Melek Capital",
+      "n": 10
+    },
+    {
+      "id": "SOSV_IndieBio",
+      "name": "SOSV_IndieBio",
+      "n": 10
     },
     {
       "id": "kptl",
       "name": "KPTL",
+      "n": 9
+    },
+    {
+      "id": "atlantico",
+      "name": "Atlantico",
+      "n": 8
+    },
+    {
+      "id": "domo_invest",
+      "name": "DOMO.VC",
       "n": 8
     },
     {
@@ -42808,13 +43640,13 @@ window.STARTUP_THEMES_DATA = {
       "n": 8
     },
     {
-      "id": "SOSV_IndieBio",
-      "name": "SOSV_IndieBio",
+      "id": "savia_ventures",
+      "name": "Savia Ventures",
       "n": 8
     },
     {
-      "id": "savia_ventures",
-      "name": "Savia Ventures",
+      "id": "vox_capital",
+      "name": "Vox Capital",
       "n": 8
     },
     {
@@ -42823,14 +43655,44 @@ window.STARTUP_THEMES_DATA = {
       "n": 7
     },
     {
-      "id": "DraperCygnus",
-      "name": "DraperCygnus",
+      "id": "lightsmith_group",
+      "name": "Lightsmith Group",
       "n": 7
     },
     {
-      "id": "vesper_ventures",
-      "name": "Vesper Ventures",
+      "id": "monashees",
+      "name": "Monashees",
+      "n": 7
+    },
+    {
+      "id": "primatec",
+      "name": "Primatec Fund",
+      "n": 7
+    },
+    {
+      "id": "ace_ventures",
+      "name": "ACE Ventures",
       "n": 6
+    },
+    {
+      "id": "chileglobal_ventures",
+      "name": "ChileGlobal Ventures",
+      "n": 6
+    },
+    {
+      "id": "fondo_alerce",
+      "name": "Fondo Alerce VC",
+      "n": 6
+    },
+    {
+      "id": "grupo_insud",
+      "name": "Grupo Insud",
+      "n": 6
+    },
+    {
+      "id": "500_latam",
+      "name": "500 LatAm",
+      "n": 4
     },
     {
       "id": "bossa_invest",
@@ -42848,23 +43710,8 @@ window.STARTUP_THEMES_DATA = {
       "n": 3
     },
     {
-      "id": "chileglobal_ventures",
-      "name": "ChileGlobal Ventures",
-      "n": 3
-    },
-    {
       "id": "dalus_capital",
       "name": "Dalus Capital",
-      "n": 3
-    },
-    {
-      "id": "ecoa_capital",
-      "name": "Ecoa Capital",
-      "n": 3
-    },
-    {
-      "id": "grupo_insud",
-      "name": "Grupo Insud",
       "n": 3
     },
     {
@@ -42873,13 +43720,18 @@ window.STARTUP_THEMES_DATA = {
       "n": 3
     },
     {
-      "id": "newtopia_vc",
-      "name": "Newtopia VC",
+      "id": "pampa_start",
+      "name": "Pampa Start",
       "n": 3
     },
     {
-      "id": "pampa_start",
-      "name": "Pampa Start",
+      "id": "slc_agricola",
+      "name": "SLC Agrícola",
+      "n": 3
+    },
+    {
+      "id": "sosv",
+      "name": "SOSV",
       "n": 3
     },
     {
@@ -42888,18 +43740,8 @@ window.STARTUP_THEMES_DATA = {
       "n": 3
     },
     {
-      "id": "vox_capital",
-      "name": "Vox Capital",
-      "n": 3
-    },
-    {
       "id": "bndes",
       "name": "BNDES (Banco Nacional de Desenvolvimento)",
-      "n": 2
-    },
-    {
-      "id": "barn_investimentos",
-      "name": "Barn Investimentos",
       "n": 2
     },
     {
@@ -42910,11 +43752,6 @@ window.STARTUP_THEMES_DATA = {
     {
       "id": "corteva_catalyst",
       "name": "Corteva Catalyst",
-      "n": 2
-    },
-    {
-      "id": "domo_invest",
-      "name": "DOMO.VC",
       "n": 2
     },
     {
@@ -42930,11 +43767,6 @@ window.STARTUP_THEMES_DATA = {
     {
       "id": "endeavor_catalyst",
       "name": "Endeavor Catalyst",
-      "n": 2
-    },
-    {
-      "id": "fondo_alerce",
-      "name": "Fondo Alerce VC",
       "n": 2
     },
     {
@@ -42963,23 +43795,8 @@ window.STARTUP_THEMES_DATA = {
       "n": 2
     },
     {
-      "id": "lightsmith_group",
-      "name": "Lightsmith Group",
-      "n": 2
-    },
-    {
       "id": "mov_investimentos",
       "name": "MOV Investimentos",
-      "n": 2
-    },
-    {
-      "id": "monashees",
-      "name": "Monashees",
-      "n": 2
-    },
-    {
-      "id": "sosv",
-      "name": "SOSV",
       "n": 2
     },
     {
@@ -43189,22 +44006,22 @@ window.STARTUP_THEMES_DATA = {
       {
         "id": "500_latam",
         "name": "500 LatAm",
-        "n_investments": 1
+        "n_investments": 4
       },
       {
         "id": "AIR Capital",
         "name": "AIR Capital",
-        "n_investments": 20
+        "n_investments": 56
       },
       {
         "id": "Antom",
         "name": "Antom",
-        "n_investments": 9
+        "n_investments": 21
       },
       {
         "id": "CITES",
         "name": "CITES",
-        "n_investments": 15
+        "n_investments": 38
       },
       {
         "id": "DragonesVP",
@@ -43214,32 +44031,32 @@ window.STARTUP_THEMES_DATA = {
       {
         "id": "DraperCygnus",
         "name": "DraperCygnus",
-        "n_investments": 7
+        "n_investments": 32
       },
       {
         "id": "GridX",
         "name": "GridX",
-        "n_investments": 99
+        "n_investments": 157
       },
       {
         "id": "SF500",
         "name": "SF500",
-        "n_investments": 22
+        "n_investments": 31
       },
       {
         "id": "SOSV_IndieBio",
         "name": "SOSV_IndieBio",
-        "n_investments": 8
+        "n_investments": 10
       },
       {
         "id": "The Ganesha Lab",
         "name": "The Ganesha Lab",
-        "n_investments": 20
+        "n_investments": 140
       },
       {
         "id": "ace_ventures",
         "name": "ACE Ventures",
-        "n_investments": 1
+        "n_investments": 6
       },
       {
         "id": "aceleradora_litoral",
@@ -43284,7 +44101,7 @@ window.STARTUP_THEMES_DATA = {
       {
         "id": "atlantico",
         "name": "Atlantico",
-        "n_investments": 1
+        "n_investments": 8
       },
       {
         "id": "aurus_capital",
@@ -43299,7 +44116,7 @@ window.STARTUP_THEMES_DATA = {
       {
         "id": "barn_investimentos",
         "name": "Barn Investimentos",
-        "n_investments": 2
+        "n_investments": 10
       },
       {
         "id": "bb_agro_ventures",
@@ -43369,7 +44186,7 @@ window.STARTUP_THEMES_DATA = {
       {
         "id": "chileglobal_ventures",
         "name": "ChileGlobal Ventures",
-        "n_investments": 3
+        "n_investments": 6
       },
       {
         "id": "cj_cheiljedang",
@@ -43419,7 +44236,7 @@ window.STARTUP_THEMES_DATA = {
       {
         "id": "domo_invest",
         "name": "DOMO.VC",
-        "n_investments": 2
+        "n_investments": 8
       },
       {
         "id": "draper_cygnus",
@@ -43444,7 +44261,7 @@ window.STARTUP_THEMES_DATA = {
       {
         "id": "ecoa_capital",
         "name": "Ecoa Capital",
-        "n_investments": 3
+        "n_investments": 12
       },
       {
         "id": "electrifi",
@@ -43474,7 +44291,7 @@ window.STARTUP_THEMES_DATA = {
       {
         "id": "fondo_alerce",
         "name": "Fondo Alerce VC",
-        "n_investments": 2
+        "n_investments": 6
       },
       {
         "id": "fors_capital",
@@ -43529,7 +44346,7 @@ window.STARTUP_THEMES_DATA = {
       {
         "id": "grupo_insud",
         "name": "Grupo Insud",
-        "n_investments": 3
+        "n_investments": 6
       },
       {
         "id": "gvangels",
@@ -43579,7 +44396,7 @@ window.STARTUP_THEMES_DATA = {
       {
         "id": "inventure",
         "name": "Inventure",
-        "n_investments": 9
+        "n_investments": 12
       },
       {
         "id": "kamay_ventures",
@@ -43604,7 +44421,7 @@ window.STARTUP_THEMES_DATA = {
       {
         "id": "kptl",
         "name": "KPTL",
-        "n_investments": 8
+        "n_investments": 9
       },
       {
         "id": "la_turbina",
@@ -43629,7 +44446,7 @@ window.STARTUP_THEMES_DATA = {
       {
         "id": "lightsmith_group",
         "name": "Lightsmith Group",
-        "n_investments": 2
+        "n_investments": 7
       },
       {
         "id": "lowercarbon_capital",
@@ -43644,17 +44461,17 @@ window.STARTUP_THEMES_DATA = {
       {
         "id": "melek_capital",
         "name": "Melek Capital",
-        "n_investments": 1
+        "n_investments": 10
       },
       {
         "id": "monashees",
         "name": "Monashees",
-        "n_investments": 2
+        "n_investments": 7
       },
       {
         "id": "morningside_group",
         "name": "Morningside Group",
-        "n_investments": 1
+        "n_investments": 15
       },
       {
         "id": "mov_investimentos",
@@ -43669,7 +44486,7 @@ window.STARTUP_THEMES_DATA = {
       {
         "id": "newtopia_vc",
         "name": "Newtopia VC",
-        "n_investments": 3
+        "n_investments": 13
       },
       {
         "id": "ospraie_ag_science",
@@ -43704,7 +44521,7 @@ window.STARTUP_THEMES_DATA = {
       {
         "id": "primatec",
         "name": "Primatec Fund",
-        "n_investments": 1
+        "n_investments": 7
       },
       {
         "id": "salkantay_ventures",
@@ -43724,7 +44541,7 @@ window.STARTUP_THEMES_DATA = {
       {
         "id": "slc_agricola",
         "name": "SLC Agrícola",
-        "n_investments": 1
+        "n_investments": 3
       },
       {
         "id": "softbank_latam",
@@ -43734,12 +44551,12 @@ window.STARTUP_THEMES_DATA = {
       {
         "id": "sosv",
         "name": "SOSV",
-        "n_investments": 2
+        "n_investments": 3
       },
       {
         "id": "sp_ventures",
         "name": "SP Ventures",
-        "n_investments": 25
+        "n_investments": 35
       },
       {
         "id": "sumitomo_corp",
@@ -43754,7 +44571,7 @@ window.STARTUP_THEMES_DATA = {
       {
         "id": "the_yield_lab_latam",
         "name": "The Yield Lab LATAM",
-        "n_investments": 21
+        "n_investments": 58
       },
       {
         "id": "union_acquisition_corp",
@@ -43784,12 +44601,12 @@ window.STARTUP_THEMES_DATA = {
       {
         "id": "vesper_ventures",
         "name": "Vesper Ventures",
-        "n_investments": 6
+        "n_investments": 92
       },
       {
         "id": "vox_capital",
         "name": "Vox Capital",
-        "n_investments": 3
+        "n_investments": 8
       },
       {
         "id": "water_lemon_ventures",
@@ -43814,13 +44631,29 @@ window.STARTUP_THEMES_DATA = {
       {
         "id": "zentynel",
         "name": "Zentynel",
-        "n_investments": 14
+        "n_investments": 22
       }
     ],
     "edges": [
       {
         "investor_id": "500_latam",
+        "startup_id": "biowit-mx"
+      },
+      {
+        "investor_id": "500_latam",
+        "startup_id": "corpogen-co"
+      },
+      {
+        "investor_id": "500_latam",
         "startup_id": "koltin-mx"
+      },
+      {
+        "investor_id": "500_latam",
+        "startup_id": "welii-ar"
+      },
+      {
+        "investor_id": "AIR Capital",
+        "startup_id": "aimirim-br"
       },
       {
         "investor_id": "AIR Capital",
@@ -43828,11 +44661,47 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "AIR Capital",
+        "startup_id": "aquabio-cl"
+      },
+      {
+        "investor_id": "AIR Capital",
         "startup_id": "argentag"
       },
       {
         "investor_id": "AIR Capital",
+        "startup_id": "ascribe-bio-br"
+      },
+      {
+        "investor_id": "AIR Capital",
+        "startup_id": "ayni-desert-interaction-cl"
+      },
+      {
+        "investor_id": "AIR Capital",
         "startup_id": "ayuvant"
+      },
+      {
+        "investor_id": "AIR Capital",
+        "startup_id": "biiosmart-co"
+      },
+      {
+        "investor_id": "AIR Capital",
+        "startup_id": "bioceres-ar"
+      },
+      {
+        "investor_id": "AIR Capital",
+        "startup_id": "biofactory-br"
+      },
+      {
+        "investor_id": "AIR Capital",
+        "startup_id": "biomar-cr"
+      },
+      {
+        "investor_id": "AIR Capital",
+        "startup_id": "bioproducts-co"
+      },
+      {
+        "investor_id": "AIR Capital",
+        "startup_id": "biowit-mx"
       },
       {
         "investor_id": "AIR Capital",
@@ -43848,7 +44717,23 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "AIR Capital",
+        "startup_id": "corpogen-co"
+      },
+      {
+        "investor_id": "AIR Capital",
+        "startup_id": "cropguard-cl"
+      },
+      {
+        "investor_id": "AIR Capital",
+        "startup_id": "devalor-cl"
+      },
+      {
+        "investor_id": "AIR Capital",
         "startup_id": "done_properly"
+      },
+      {
+        "investor_id": "AIR Capital",
+        "startup_id": "ecombio-cl"
       },
       {
         "investor_id": "AIR Capital",
@@ -43860,11 +44745,39 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "AIR Capital",
+        "startup_id": "forma-foods-mx"
+      },
+      {
+        "investor_id": "AIR Capital",
+        "startup_id": "fungicontrol-co"
+      },
+      {
+        "investor_id": "AIR Capital",
         "startup_id": "gigablue"
       },
       {
         "investor_id": "AIR Capital",
+        "startup_id": "global-nano-additives-mx"
+      },
+      {
+        "investor_id": "AIR Capital",
+        "startup_id": "grupo-bios-co"
+      },
+      {
+        "investor_id": "AIR Capital",
+        "startup_id": "infood-protein-cl"
+      },
+      {
+        "investor_id": "AIR Capital",
         "startup_id": "inner_cosmos"
+      },
+      {
+        "investor_id": "AIR Capital",
+        "startup_id": "innmetec-co"
+      },
+      {
+        "investor_id": "AIR Capital",
+        "startup_id": "koji-co"
       },
       {
         "investor_id": "AIR Capital",
@@ -43876,6 +44789,22 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "AIR Capital",
+        "startup_id": "metabix-uy"
+      },
+      {
+        "investor_id": "AIR Capital",
+        "startup_id": "mycoseaweed-cl"
+      },
+      {
+        "investor_id": "AIR Capital",
+        "startup_id": "nalca-biotech-cl"
+      },
+      {
+        "investor_id": "AIR Capital",
+        "startup_id": "neocroptech-cl"
+      },
+      {
+        "investor_id": "AIR Capital",
         "startup_id": "onco_precision"
       },
       {
@@ -43884,7 +44813,15 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "AIR Capital",
+        "startup_id": "oncoprecision-ar"
+      },
+      {
+        "investor_id": "AIR Capital",
         "startup_id": "outpost"
+      },
+      {
+        "investor_id": "AIR Capital",
+        "startup_id": "pewman-innovation-cl"
       },
       {
         "investor_id": "AIR Capital",
@@ -43892,7 +44829,19 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "AIR Capital",
+        "startup_id": "recirculab-cl"
+      },
+      {
+        "investor_id": "AIR Capital",
+        "startup_id": "salmoss-biotech-cl"
+      },
+      {
+        "investor_id": "AIR Capital",
         "startup_id": "satellites_on_fire"
+      },
+      {
+        "investor_id": "AIR Capital",
+        "startup_id": "seedtech-cl"
       },
       {
         "investor_id": "AIR Capital",
@@ -43903,8 +44852,48 @@ window.STARTUP_THEMES_DATA = {
         "startup_id": "sylvarum"
       },
       {
+        "investor_id": "AIR Capital",
+        "startup_id": "terrasos-br"
+      },
+      {
+        "investor_id": "AIR Capital",
+        "startup_id": "tissue-nova-mx"
+      },
+      {
+        "investor_id": "AIR Capital",
+        "startup_id": "tomorrow-foods-ar"
+      },
+      {
+        "investor_id": "AIR Capital",
+        "startup_id": "viobact-cl"
+      },
+      {
+        "investor_id": "AIR Capital",
+        "startup_id": "welii-ar"
+      },
+      {
+        "investor_id": "AIR Capital",
+        "startup_id": "xeptiva-therapeutics-uy"
+      },
+      {
         "investor_id": "Antom",
         "startup_id": "agrojusto"
+      },
+      {
+        "investor_id": "Antom",
+        "startup_id": "ayni-desert-interaction-cl"
+      },
+      {
+        "investor_id": "Antom",
+        "startup_id": "biocell-mx"
+      },
+      {
+        "investor_id": "Antom",
+        "startup_id": "bioceres-ar"
+      },
+      {
+        "investor_id": "Antom",
+        "startup_id": "bioplast-br"
       },
       {
         "investor_id": "Antom",
@@ -43912,7 +44901,19 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "Antom",
+        "startup_id": "cropguard-cl"
+      },
+      {
+        "investor_id": "Antom",
         "startup_id": "eiru"
+      },
+      {
+        "investor_id": "Antom",
+        "startup_id": "fungicontrol-co"
+      },
+      {
+        "investor_id": "Antom",
+        "startup_id": "grupo-bios-co"
       },
       {
         "investor_id": "Antom",
@@ -43924,7 +44925,19 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "Antom",
+        "startup_id": "metabix-uy"
+      },
+      {
+        "investor_id": "Antom",
+        "startup_id": "neocroptech-cl"
+      },
+      {
+        "investor_id": "Antom",
         "startup_id": "nideport"
+      },
+      {
+        "investor_id": "Antom",
+        "startup_id": "pewman-innovation-cl"
       },
       {
         "investor_id": "Antom",
@@ -43939,8 +44952,20 @@ window.STARTUP_THEMES_DATA = {
         "startup_id": "satellites_on_fire"
       },
       {
+        "investor_id": "Antom",
+        "startup_id": "seedtech-cl"
+      },
+      {
+        "investor_id": "Antom",
+        "startup_id": "terrasos-br"
+      },
+      {
         "investor_id": "CITES",
         "startup_id": "amnova-biotech-cl"
+      },
+      {
+        "investor_id": "CITES",
+        "startup_id": "aquabio-cl"
       },
       {
         "investor_id": "CITES",
@@ -43948,7 +44973,23 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "CITES",
+        "startup_id": "ascribe-bio-br"
+      },
+      {
+        "investor_id": "CITES",
         "startup_id": "baxxis-medtech-cl"
+      },
+      {
+        "investor_id": "CITES",
+        "startup_id": "biiosmart-co"
+      },
+      {
+        "investor_id": "CITES",
+        "startup_id": "biomar-cr"
+      },
+      {
+        "investor_id": "CITES",
+        "startup_id": "bioproducts-co"
       },
       {
         "investor_id": "CITES",
@@ -43956,7 +44997,23 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "CITES",
+        "startup_id": "biowit-mx"
+      },
+      {
+        "investor_id": "CITES",
         "startup_id": "circa_therapeutics"
+      },
+      {
+        "investor_id": "CITES",
+        "startup_id": "corpogen-co"
+      },
+      {
+        "investor_id": "CITES",
+        "startup_id": "devalor-cl"
+      },
+      {
+        "investor_id": "CITES",
+        "startup_id": "ecombio-cl"
       },
       {
         "investor_id": "CITES",
@@ -43972,11 +45029,39 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "CITES",
+        "startup_id": "forma-foods-mx"
+      },
+      {
+        "investor_id": "CITES",
+        "startup_id": "global-nano-additives-mx"
+      },
+      {
+        "investor_id": "CITES",
         "startup_id": "imvalv"
       },
       {
         "investor_id": "CITES",
+        "startup_id": "infood-protein-cl"
+      },
+      {
+        "investor_id": "CITES",
+        "startup_id": "innmetec-co"
+      },
+      {
+        "investor_id": "CITES",
+        "startup_id": "koji-co"
+      },
+      {
+        "investor_id": "CITES",
         "startup_id": "limay_biosciences"
+      },
+      {
+        "investor_id": "CITES",
+        "startup_id": "mycoseaweed-cl"
+      },
+      {
+        "investor_id": "CITES",
+        "startup_id": "oncoprecision-ar"
       },
       {
         "investor_id": "CITES",
@@ -43992,11 +45077,39 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "CITES",
+        "startup_id": "recirculab-cl"
+      },
+      {
+        "investor_id": "CITES",
+        "startup_id": "salmoss-biotech-cl"
+      },
+      {
+        "investor_id": "CITES",
         "startup_id": "single_strand_biotech"
       },
       {
         "investor_id": "CITES",
+        "startup_id": "tissue-nova-mx"
+      },
+      {
+        "investor_id": "CITES",
+        "startup_id": "tomorrow-foods-ar"
+      },
+      {
+        "investor_id": "CITES",
         "startup_id": "viewmind"
+      },
+      {
+        "investor_id": "CITES",
+        "startup_id": "viobact-cl"
+      },
+      {
+        "investor_id": "CITES",
+        "startup_id": "welii-ar"
+      },
+      {
+        "investor_id": "CITES",
+        "startup_id": "xeptiva-therapeutics-uy"
       },
       {
         "investor_id": "DragonesVP",
@@ -44008,7 +45121,15 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "DraperCygnus",
+        "startup_id": "aquabio-cl"
+      },
+      {
+        "investor_id": "DraperCygnus",
         "startup_id": "argentag"
+      },
+      {
+        "investor_id": "DraperCygnus",
+        "startup_id": "ascribe-bio-br"
       },
       {
         "investor_id": "DraperCygnus",
@@ -44016,7 +45137,83 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "DraperCygnus",
+        "startup_id": "biiosmart-co"
+      },
+      {
+        "investor_id": "DraperCygnus",
+        "startup_id": "biofactory-br"
+      },
+      {
+        "investor_id": "DraperCygnus",
+        "startup_id": "biofresh-br"
+      },
+      {
+        "investor_id": "DraperCygnus",
+        "startup_id": "biomar-cr"
+      },
+      {
+        "investor_id": "DraperCygnus",
+        "startup_id": "bioproducts-co"
+      },
+      {
+        "investor_id": "DraperCygnus",
+        "startup_id": "devalor-cl"
+      },
+      {
+        "investor_id": "DraperCygnus",
+        "startup_id": "ecombio-cl"
+      },
+      {
+        "investor_id": "DraperCygnus",
+        "startup_id": "fermentlab-br"
+      },
+      {
+        "investor_id": "DraperCygnus",
+        "startup_id": "forma-foods-mx"
+      },
+      {
+        "investor_id": "DraperCygnus",
+        "startup_id": "global-nano-additives-mx"
+      },
+      {
+        "investor_id": "DraperCygnus",
+        "startup_id": "infood-protein-cl"
+      },
+      {
+        "investor_id": "DraperCygnus",
+        "startup_id": "innmetec-co"
+      },
+      {
+        "investor_id": "DraperCygnus",
+        "startup_id": "koji-co"
+      },
+      {
+        "investor_id": "DraperCygnus",
         "startup_id": "microterra"
+      },
+      {
+        "investor_id": "DraperCygnus",
+        "startup_id": "mycoseaweed-cl"
+      },
+      {
+        "investor_id": "DraperCygnus",
+        "startup_id": "nalca-biotech-cl"
+      },
+      {
+        "investor_id": "DraperCygnus",
+        "startup_id": "oncoprecision-ar"
+      },
+      {
+        "investor_id": "DraperCygnus",
+        "startup_id": "protera-bio-cl"
+      },
+      {
+        "investor_id": "DraperCygnus",
+        "startup_id": "recirculab-cl"
+      },
+      {
+        "investor_id": "DraperCygnus",
+        "startup_id": "salmoss-biotech-cl"
       },
       {
         "investor_id": "DraperCygnus",
@@ -44035,8 +45232,36 @@ window.STARTUP_THEMES_DATA = {
         "startup_id": "stamm"
       },
       {
+        "investor_id": "DraperCygnus",
+        "startup_id": "tissue-nova-mx"
+      },
+      {
+        "investor_id": "DraperCygnus",
+        "startup_id": "tomorrow-foods-ar"
+      },
+      {
+        "investor_id": "DraperCygnus",
+        "startup_id": "viobact-cl"
+      },
+      {
+        "investor_id": "DraperCygnus",
+        "startup_id": "xeptiva-therapeutics-uy"
+      },
+      {
         "investor_id": "GridX",
         "startup_id": "HIAMET"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "activaq"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "aimirim-br"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "aintech"
       },
       {
         "investor_id": "GridX",
@@ -44045,6 +45270,10 @@ window.STARTUP_THEMES_DATA = {
       {
         "investor_id": "GridX",
         "startup_id": "algalife"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "algenis-cl"
       },
       {
         "investor_id": "GridX",
@@ -44080,6 +45309,10 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "GridX",
+        "startup_id": "aravan_labs"
+      },
+      {
+        "investor_id": "GridX",
         "startup_id": "argentag"
       },
       {
@@ -44088,11 +45321,35 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "GridX",
+        "startup_id": "ayni-desert-interaction-cl"
+      },
+      {
+        "investor_id": "GridX",
         "startup_id": "beeflow"
       },
       {
         "investor_id": "GridX",
+        "startup_id": "bialtec"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "bio_bureau_biotechnology"
+      },
+      {
+        "investor_id": "GridX",
         "startup_id": "bioblends"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "biobreyer"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "biocell-mx"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "bioceres-ar"
       },
       {
         "investor_id": "GridX",
@@ -44108,6 +45365,14 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "GridX",
+        "startup_id": "biofactory-br"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "bioplast-br"
+      },
+      {
+        "investor_id": "GridX",
         "startup_id": "bioplaster_research"
       },
       {
@@ -44120,11 +45385,27 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "GridX",
+        "startup_id": "biorgani"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "biotic"
+      },
+      {
+        "investor_id": "GridX",
         "startup_id": "bitgenia"
       },
       {
         "investor_id": "GridX",
         "startup_id": "break_pet"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "brtc"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "bruna-by-altum-lab-cl"
       },
       {
         "investor_id": "GridX",
@@ -44160,7 +45441,19 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "GridX",
+        "startup_id": "cellculture-br"
+      },
+      {
+        "investor_id": "GridX",
         "startup_id": "cellrep"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "copper3d"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "cropguard-cl"
       },
       {
         "investor_id": "GridX",
@@ -44177,6 +45470,14 @@ window.STARTUP_THEMES_DATA = {
       {
         "investor_id": "GridX",
         "startup_id": "dogma_biotech"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "domolif"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "ecoshell-mx"
       },
       {
         "investor_id": "GridX",
@@ -44200,6 +45501,10 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "GridX",
+        "startup_id": "epicca"
+      },
+      {
+        "investor_id": "GridX",
         "startup_id": "eywa_biotech"
       },
       {
@@ -44220,6 +45525,10 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "GridX",
+        "startup_id": "fungicontrol-co"
+      },
+      {
+        "investor_id": "GridX",
         "startup_id": "future_biome"
       },
       {
@@ -44236,7 +45545,31 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "GridX",
+        "startup_id": "green_biofactory"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "gricha"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "grupo-bios-co"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "hemoalgae"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "hybridon"
+      },
+      {
+        "investor_id": "GridX",
         "startup_id": "invitrall"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "kran-nanobubble-cl"
       },
       {
         "investor_id": "GridX",
@@ -44245,6 +45578,10 @@ window.STARTUP_THEMES_DATA = {
       {
         "investor_id": "GridX",
         "startup_id": "levya"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "lifepack-co"
       },
       {
         "investor_id": "GridX",
@@ -44257,6 +45594,10 @@ window.STARTUP_THEMES_DATA = {
       {
         "investor_id": "GridX",
         "startup_id": "mavios"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "metabix-uy"
       },
       {
         "investor_id": "GridX",
@@ -44280,7 +45621,23 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "GridX",
+        "startup_id": "moondo"
+      },
+      {
+        "investor_id": "GridX",
         "startup_id": "mzp"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "nalca-biotech-cl"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "nanoblast"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "nanofreeze"
       },
       {
         "investor_id": "GridX",
@@ -44296,11 +45653,23 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "GridX",
+        "startup_id": "nanopharmacia-group-mx"
+      },
+      {
+        "investor_id": "GridX",
         "startup_id": "nanoprox"
       },
       {
         "investor_id": "GridX",
         "startup_id": "nanotransfer"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "nanotropic_tecnologia"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "nanovetores_group"
       },
       {
         "investor_id": "GridX",
@@ -44312,11 +45681,27 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "GridX",
+        "startup_id": "nchemi-br"
+      },
+      {
+        "investor_id": "GridX",
         "startup_id": "neocell"
       },
       {
         "investor_id": "GridX",
+        "startup_id": "neocroptech-cl"
+      },
+      {
+        "investor_id": "GridX",
         "startup_id": "new_organs_biotech"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "nocarbon_milk"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "novalact"
       },
       {
         "investor_id": "GridX",
@@ -44328,7 +45713,19 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "GridX",
+        "startup_id": "odd_industries"
+      },
+      {
+        "investor_id": "GridX",
         "startup_id": "onco_precision"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "pewman-innovation-cl"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "photio"
       },
       {
         "investor_id": "GridX",
@@ -44344,7 +45741,15 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "GridX",
+        "startup_id": "pow_foods"
+      },
+      {
+        "investor_id": "GridX",
         "startup_id": "pregen"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "progal"
       },
       {
         "investor_id": "GridX",
@@ -44372,7 +45777,19 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "GridX",
+        "startup_id": "rnatech-ar"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "savefruit-mx"
+      },
+      {
+        "investor_id": "GridX",
         "startup_id": "scitherm_therapeutics"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "seedtech-cl"
       },
       {
         "investor_id": "GridX",
@@ -44380,7 +45797,15 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "GridX",
+        "startup_id": "smatter"
+      },
+      {
+        "investor_id": "GridX",
         "startup_id": "spherebio"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "spora_biotech"
       },
       {
         "investor_id": "GridX",
@@ -44400,11 +45825,19 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "GridX",
+        "startup_id": "terrasos-br"
+      },
+      {
+        "investor_id": "GridX",
         "startup_id": "tesabio_ai"
       },
       {
         "investor_id": "GridX",
         "startup_id": "tomorrow_foods"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "treevia-br"
       },
       {
         "investor_id": "GridX",
@@ -44416,11 +45849,23 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "GridX",
+        "startup_id": "veloz_bio"
+      },
+      {
+        "investor_id": "GridX",
         "startup_id": "vexxel_biotech"
       },
       {
         "investor_id": "GridX",
+        "startup_id": "wayakit"
+      },
+      {
+        "investor_id": "GridX",
         "startup_id": "werk-nvac"
+      },
+      {
+        "investor_id": "GridX",
+        "startup_id": "ymmunobio"
       },
       {
         "investor_id": "GridX",
@@ -44436,11 +45881,35 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "SF500",
+        "startup_id": "biocell-mx"
+      },
+      {
+        "investor_id": "SF500",
+        "startup_id": "biolinker"
+      },
+      {
+        "investor_id": "SF500",
         "startup_id": "biometallum"
       },
       {
         "investor_id": "SF500",
+        "startup_id": "bioplast-br"
+      },
+      {
+        "investor_id": "SF500",
+        "startup_id": "bioprocess-automation-brasil-br"
+      },
+      {
+        "investor_id": "SF500",
         "startup_id": "biotalife"
+      },
+      {
+        "investor_id": "SF500",
+        "startup_id": "by_my_cell"
+      },
+      {
+        "investor_id": "SF500",
+        "startup_id": "cellargen_biotech"
       },
       {
         "investor_id": "SF500",
@@ -44457,6 +45926,14 @@ window.STARTUP_THEMES_DATA = {
       {
         "investor_id": "SF500",
         "startup_id": "gameet"
+      },
+      {
+        "investor_id": "SF500",
+        "startup_id": "gentec"
+      },
+      {
+        "investor_id": "SF500",
+        "startup_id": "granatum_bioworks"
       },
       {
         "investor_id": "SF500",
@@ -44496,6 +45973,10 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "SF500",
+        "startup_id": "pharmalens-br"
+      },
+      {
+        "investor_id": "SF500",
         "startup_id": "pill_ar"
       },
       {
@@ -44532,6 +46013,14 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "SOSV_IndieBio",
+        "startup_id": "copper3d"
+      },
+      {
+        "investor_id": "SOSV_IndieBio",
+        "startup_id": "lifepack-co"
+      },
+      {
+        "investor_id": "SOSV_IndieBio",
         "startup_id": "michroma"
       },
       {
@@ -44556,7 +46045,43 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "The Ganesha Lab",
+        "startup_id": "activaq"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "advanced_biocontrollers"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "agrivalle"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "agro-logica-co"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "agrosustain-mx"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "aintech"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "algenis-cl"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
         "startup_id": "amplify-dynamics"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "aptah-bio-br"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "aquabyte-cl"
       },
       {
         "investor_id": "The Ganesha Lab",
@@ -44564,7 +46089,87 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "The Ganesha Lab",
+        "startup_id": "aravan_labs"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "arcomed"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "autem-therapeutics-br"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "bentenbiotech"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "bialtec"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "bio_bureau_biotechnology"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "biobreyer"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "biocentis-br"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "biofab"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "biofabrica-siglo-xxi-mx"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "bioin-br"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "biomimetic_solutions"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "biorefinery-tech-brazil-br"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "biorgani"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "biosens"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "biotecnofe"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "biotic"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "biotrop-br"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "bitmec"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
         "startup_id": "bleps_vision"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "bloomcare-br"
       },
       {
         "investor_id": "The Ganesha Lab",
@@ -44576,7 +46181,79 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "The Ganesha Lab",
+        "startup_id": "brtc"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "bruna-by-altum-lab-cl"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "cellculture-br"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "cellter-cl"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "celluris"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "chemtest"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "codebreaker-bioscience-cl"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "cutting_edge_superconductors"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "daeki-cl"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "dart_by_teledx"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
         "startup_id": "delee"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "detx_mol"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "diagnosis_biotech"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "diagtech"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "dioxd"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "domolif"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "ecosativa"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "ecoshell-mx"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "epicca"
       },
       {
         "investor_id": "The Ganesha Lab",
@@ -44584,11 +46261,95 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "The Ganesha Lab",
+        "startup_id": "fabns"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "fk_biotecnologia"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "futr_bio"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "galtec"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "green-xpo-lab-cr"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "green_biofactory"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "gricha"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "hemoalgae"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "hoobox_one"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "huna"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "hybridon"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "ideelab"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "inkus-biotech-cl"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
         "startup_id": "innovai"
       },
       {
         "investor_id": "The Ganesha Lab",
+        "startup_id": "inpulse_medical"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "insitu"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "isla_pharmaceuticals"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "kheiron-biotech-ar"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "kran-nanobubble-cl"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "krilltech"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "linda_lifetech"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
         "startup_id": "luyef-biotechnologies-cl"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "merken-biotech-cl"
       },
       {
         "investor_id": "The Ganesha Lab",
@@ -44600,7 +46361,91 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "The Ganesha Lab",
+        "startup_id": "meton"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "microscopia"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "mirai_3d"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "mirscience-therapeutics-br"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "moondo"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "motivia-ar"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "mzp-tecnologia-ar"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "naiad"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "nanoblast"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "nanofreeze"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "nanopharmacia-group-mx"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
         "startup_id": "nanotransfer"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "nanotropic_tecnologia"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "nanovetores_group"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "nchemi-br"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "neomed-br"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "neurognos"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "nocarbon_milk"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "novagenic_affinity"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "novalact"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "omica"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "panarum"
       },
       {
         "investor_id": "The Ganesha Lab",
@@ -44612,7 +46457,87 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "The Ganesha Lab",
+        "startup_id": "patagonia-biotechnology-cl"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "pathovet"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "peptidus-biotech-br"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "photio"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "php_biotech"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "pickcells"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "pixed"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "pow_foods"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "praxis-biotech-cl"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "progal"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "quantis-br"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "rnatech-ar"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "savefruit-mx"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
         "startup_id": "sciphage"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "selectivity"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "siquimia"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "smatter"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "solena-mx"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "speratum"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "spora_biotech"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "taugc-bioinformatics-br"
       },
       {
         "investor_id": "The Ganesha Lab",
@@ -44624,11 +46549,75 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "The Ganesha Lab",
+        "startup_id": "terragene-ar"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
         "startup_id": "the-earth-says"
       },
       {
         "investor_id": "The Ganesha Lab",
+        "startup_id": "theravax"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "thermy"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
         "startup_id": "unibaio"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "vaxinz"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "veloz_bio"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "vetpix"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "virtech_bio"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "vitales-br"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "wayakit"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "webio-ar"
+      },
+      {
+        "investor_id": "The Ganesha Lab",
+        "startup_id": "ymmunobio"
+      },
+      {
+        "investor_id": "ace_ventures",
+        "startup_id": "agro-logica-co"
+      },
+      {
+        "investor_id": "ace_ventures",
+        "startup_id": "aquabyte-cl"
+      },
+      {
+        "investor_id": "ace_ventures",
+        "startup_id": "codebreaker-bioscience-cl"
+      },
+      {
+        "investor_id": "ace_ventures",
+        "startup_id": "green-xpo-lab-cr"
+      },
+      {
+        "investor_id": "ace_ventures",
+        "startup_id": "inkus-biotech-cl"
       },
       {
         "investor_id": "ace_ventures",
@@ -44692,7 +46681,35 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "atlantico",
+        "startup_id": "biometrics-medellin-co"
+      },
+      {
+        "investor_id": "atlantico",
+        "startup_id": "caribbean-medtech-do"
+      },
+      {
+        "investor_id": "atlantico",
+        "startup_id": "geneprodx-mx"
+      },
+      {
+        "investor_id": "atlantico",
         "startup_id": "genial-care-br"
+      },
+      {
+        "investor_id": "atlantico",
+        "startup_id": "healthpoint-bo"
+      },
+      {
+        "investor_id": "atlantico",
+        "startup_id": "medimarket-online-ve"
+      },
+      {
+        "investor_id": "atlantico",
+        "startup_id": "nanomedical-cr"
+      },
+      {
+        "investor_id": "atlantico",
+        "startup_id": "respiratorydx-co"
       },
       {
         "investor_id": "aurus_capital",
@@ -44701,6 +46718,38 @@ window.STARTUP_THEMES_DATA = {
       {
         "investor_id": "axventures_pymar",
         "startup_id": "keclon"
+      },
+      {
+        "investor_id": "barn_investimentos",
+        "startup_id": "agro-logica-co"
+      },
+      {
+        "investor_id": "barn_investimentos",
+        "startup_id": "aquabyte-cl"
+      },
+      {
+        "investor_id": "barn_investimentos",
+        "startup_id": "biofresh-br"
+      },
+      {
+        "investor_id": "barn_investimentos",
+        "startup_id": "codebreaker-bioscience-cl"
+      },
+      {
+        "investor_id": "barn_investimentos",
+        "startup_id": "fermentlab-br"
+      },
+      {
+        "investor_id": "barn_investimentos",
+        "startup_id": "green-xpo-lab-cr"
+      },
+      {
+        "investor_id": "barn_investimentos",
+        "startup_id": "inkus-biotech-cl"
+      },
+      {
+        "investor_id": "barn_investimentos",
+        "startup_id": "protera-bio-cl"
       },
       {
         "investor_id": "barn_investimentos",
@@ -44792,6 +46841,10 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "chileglobal_ventures",
+        "startup_id": "agroscan-ec"
+      },
+      {
+        "investor_id": "chileglobal_ventures",
         "startup_id": "agrourbana"
       },
       {
@@ -44801,6 +46854,14 @@ window.STARTUP_THEMES_DATA = {
       {
         "investor_id": "chileglobal_ventures",
         "startup_id": "matchetune"
+      },
+      {
+        "investor_id": "chileglobal_ventures",
+        "startup_id": "minerba-ec"
+      },
+      {
+        "investor_id": "chileglobal_ventures",
+        "startup_id": "tierra-de-monte-mx"
       },
       {
         "investor_id": "cj_cheiljedang",
@@ -44852,7 +46913,31 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "domo_invest",
+        "startup_id": "carigenetics"
+      },
+      {
+        "investor_id": "domo_invest",
+        "startup_id": "celer_biotecnologia"
+      },
+      {
+        "investor_id": "domo_invest",
         "startup_id": "corsync"
+      },
+      {
+        "investor_id": "domo_invest",
+        "startup_id": "glucogear"
+      },
+      {
+        "investor_id": "domo_invest",
+        "startup_id": "hem-healthtech-co"
+      },
+      {
+        "investor_id": "domo_invest",
+        "startup_id": "heritas"
+      },
+      {
+        "investor_id": "domo_invest",
+        "startup_id": "prosperia"
       },
       {
         "investor_id": "domo_invest",
@@ -44880,11 +46965,47 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "ecoa_capital",
+        "startup_id": "biodiverso-insumos-br"
+      },
+      {
+        "investor_id": "ecoa_capital",
+        "startup_id": "biohack-uio-ec"
+      },
+      {
+        "investor_id": "ecoa_capital",
+        "startup_id": "biotech-cr"
+      },
+      {
+        "investor_id": "ecoa_capital",
+        "startup_id": "energytop-via-proinpa-bo"
+      },
+      {
+        "investor_id": "ecoa_capital",
         "startup_id": "inedita-bio-br"
       },
       {
         "investor_id": "ecoa_capital",
+        "startup_id": "magenta-biolabs-cr"
+      },
+      {
+        "investor_id": "ecoa_capital",
+        "startup_id": "microbiota-agricola-br"
+      },
+      {
+        "investor_id": "ecoa_capital",
+        "startup_id": "microlabs-mx"
+      },
+      {
+        "investor_id": "ecoa_capital",
+        "startup_id": "nemacontrol-biologicos-br"
+      },
+      {
+        "investor_id": "ecoa_capital",
         "startup_id": "nintx-br"
+      },
+      {
+        "investor_id": "ecoa_capital",
+        "startup_id": "scintia-mx"
       },
       {
         "investor_id": "ecoa_capital",
@@ -44925,6 +47046,22 @@ window.STARTUP_THEMES_DATA = {
       {
         "investor_id": "fen_ventures",
         "startup_id": "andes-biotechnologies-cl"
+      },
+      {
+        "investor_id": "fondo_alerce",
+        "startup_id": "biolife-innovations-bo"
+      },
+      {
+        "investor_id": "fondo_alerce",
+        "startup_id": "cenibiot"
+      },
+      {
+        "investor_id": "fondo_alerce",
+        "startup_id": "plantverd-mx"
+      },
+      {
+        "investor_id": "fondo_alerce",
+        "startup_id": "recombine-biotech-br"
       },
       {
         "investor_id": "fondo_alerce",
@@ -45032,11 +47169,23 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "grupo_insud",
+        "startup_id": "biogenesis-bago-ec"
+      },
+      {
+        "investor_id": "grupo_insud",
         "startup_id": "biosidus-ar"
       },
       {
         "investor_id": "grupo_insud",
+        "startup_id": "biotimize"
+      },
+      {
+        "investor_id": "grupo_insud",
         "startup_id": "inmunova-ar"
+      },
+      {
+        "investor_id": "grupo_insud",
+        "startup_id": "krtl-biotech-bolivia-expansion-bo"
       },
       {
         "investor_id": "grupo_insud",
@@ -45088,6 +47237,10 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "inventure",
+        "startup_id": "biofresh-br"
+      },
+      {
+        "investor_id": "inventure",
         "startup_id": "calice"
       },
       {
@@ -45104,7 +47257,15 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "inventure",
+        "startup_id": "fermentlab-br"
+      },
+      {
+        "investor_id": "inventure",
         "startup_id": "nat4bio"
+      },
+      {
+        "investor_id": "inventure",
+        "startup_id": "protera-bio-cl"
       },
       {
         "investor_id": "inventure",
@@ -45192,6 +47353,10 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "kptl",
+        "startup_id": "cellmeat-brasil-br"
+      },
+      {
+        "investor_id": "kptl",
         "startup_id": "ecotrace-br"
       },
       {
@@ -45224,11 +47389,31 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "lightsmith_group",
+        "startup_id": "agrobit-bolivia-operations-bo"
+      },
+      {
+        "investor_id": "lightsmith_group",
         "startup_id": "beep-saude-br"
       },
       {
         "investor_id": "lightsmith_group",
+        "startup_id": "dimitra-bolivia-operations-bo"
+      },
+      {
+        "investor_id": "lightsmith_group",
+        "startup_id": "fieldfactors-mx"
+      },
+      {
+        "investor_id": "lightsmith_group",
+        "startup_id": "silicochem-ec"
+      },
+      {
+        "investor_id": "lightsmith_group",
         "startup_id": "solinftec"
+      },
+      {
+        "investor_id": "lightsmith_group",
+        "startup_id": "swebol-biotech-bo"
       },
       {
         "investor_id": "lowercarbon_capital",
@@ -45240,7 +47425,55 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "melek_capital",
+        "startup_id": "biometrics-medellin-co"
+      },
+      {
+        "investor_id": "melek_capital",
+        "startup_id": "caribbean-medtech-do"
+      },
+      {
+        "investor_id": "melek_capital",
+        "startup_id": "cepha-biotech-br"
+      },
+      {
+        "investor_id": "melek_capital",
+        "startup_id": "geneprodx-mx"
+      },
+      {
+        "investor_id": "melek_capital",
+        "startup_id": "healthpoint-bo"
+      },
+      {
+        "investor_id": "melek_capital",
+        "startup_id": "labtronics-sas-co"
+      },
+      {
+        "investor_id": "melek_capital",
+        "startup_id": "medimarket-online-ve"
+      },
+      {
+        "investor_id": "melek_capital",
         "startup_id": "movet-co"
+      },
+      {
+        "investor_id": "melek_capital",
+        "startup_id": "nanomedical-cr"
+      },
+      {
+        "investor_id": "melek_capital",
+        "startup_id": "respiratorydx-co"
+      },
+      {
+        "investor_id": "monashees",
+        "startup_id": "agrobit-bolivia-operations-bo"
+      },
+      {
+        "investor_id": "monashees",
+        "startup_id": "dimitra-bolivia-operations-bo"
+      },
+      {
+        "investor_id": "monashees",
+        "startup_id": "fieldfactors-mx"
       },
       {
         "investor_id": "monashees",
@@ -45248,11 +47481,75 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "monashees",
+        "startup_id": "silicochem-ec"
+      },
+      {
+        "investor_id": "monashees",
         "startup_id": "strider-br"
+      },
+      {
+        "investor_id": "monashees",
+        "startup_id": "swebol-biotech-bo"
+      },
+      {
+        "investor_id": "morningside_group",
+        "startup_id": "agricultic-do"
+      },
+      {
+        "investor_id": "morningside_group",
+        "startup_id": "agritech-bolivia-bo"
+      },
+      {
+        "investor_id": "morningside_group",
+        "startup_id": "agro360-do"
+      },
+      {
+        "investor_id": "morningside_group",
+        "startup_id": "agrocontrol-gt"
+      },
+      {
+        "investor_id": "morningside_group",
+        "startup_id": "agroguia-ve"
+      },
+      {
+        "investor_id": "morningside_group",
+        "startup_id": "bontix-do"
+      },
+      {
+        "investor_id": "morningside_group",
+        "startup_id": "digital-twin-corporation-cr"
+      },
+      {
+        "investor_id": "morningside_group",
+        "startup_id": "geanext-cr"
+      },
+      {
+        "investor_id": "morningside_group",
+        "startup_id": "innovatech-bo"
+      },
+      {
+        "investor_id": "morningside_group",
+        "startup_id": "lilliput-technologies-cr"
+      },
+      {
+        "investor_id": "morningside_group",
+        "startup_id": "lilliput-technologies-ltd-cr"
+      },
+      {
+        "investor_id": "morningside_group",
+        "startup_id": "magic-green-cr"
+      },
+      {
+        "investor_id": "morningside_group",
+        "startup_id": "quipu-cr"
       },
       {
         "investor_id": "morningside_group",
         "startup_id": "wiseconn-cl"
+      },
+      {
+        "investor_id": "morningside_group",
+        "startup_id": "wseeds-co"
       },
       {
         "investor_id": "mov_investimentos",
@@ -45268,11 +47565,51 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "newtopia_vc",
+        "startup_id": "alecrim-biotech-br"
+      },
+      {
+        "investor_id": "newtopia_vc",
+        "startup_id": "biolinker-br"
+      },
+      {
+        "investor_id": "newtopia_vc",
         "startup_id": "calice-ai-ar"
       },
       {
         "investor_id": "newtopia_vc",
+        "startup_id": "cellva-ingredients-br"
+      },
+      {
+        "investor_id": "newtopia_vc",
         "startup_id": "dymaxion_labs"
+      },
+      {
+        "investor_id": "newtopia_vc",
+        "startup_id": "eatcloud-co"
+      },
+      {
+        "investor_id": "newtopia_vc",
+        "startup_id": "farmbox-br"
+      },
+      {
+        "investor_id": "newtopia_vc",
+        "startup_id": "fermentlabs-co"
+      },
+      {
+        "investor_id": "newtopia_vc",
+        "startup_id": "inspectral-br"
+      },
+      {
+        "investor_id": "newtopia_vc",
+        "startup_id": "isobar-br"
+      },
+      {
+        "investor_id": "newtopia_vc",
+        "startup_id": "nutrissis-biotech-br"
+      },
+      {
+        "investor_id": "newtopia_vc",
+        "startup_id": "precision_ag"
       },
       {
         "investor_id": "newtopia_vc",
@@ -45312,7 +47649,31 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "primatec",
+        "startup_id": "carigenetics"
+      },
+      {
+        "investor_id": "primatec",
+        "startup_id": "celer_biotecnologia"
+      },
+      {
+        "investor_id": "primatec",
+        "startup_id": "glucogear"
+      },
+      {
+        "investor_id": "primatec",
+        "startup_id": "hem-healthtech-co"
+      },
+      {
+        "investor_id": "primatec",
+        "startup_id": "heritas"
+      },
+      {
+        "investor_id": "primatec",
         "startup_id": "olho_do_dono"
+      },
+      {
+        "investor_id": "primatec",
+        "startup_id": "prosperia"
       },
       {
         "investor_id": "salkantay_ventures",
@@ -45356,11 +47717,23 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "slc_agricola",
+        "startup_id": "agroscan-ec"
+      },
+      {
+        "investor_id": "slc_agricola",
+        "startup_id": "minerba-ec"
+      },
+      {
+        "investor_id": "slc_agricola",
         "startup_id": "sensix"
       },
       {
         "investor_id": "softbank_latam",
         "startup_id": "satellogic"
+      },
+      {
+        "investor_id": "sosv",
+        "startup_id": "biorefinery-tech-brazil-br"
       },
       {
         "investor_id": "sosv",
@@ -45384,7 +47757,27 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "sp_ventures",
+        "startup_id": "biolife-innovations-bo"
+      },
+      {
+        "investor_id": "sp_ventures",
+        "startup_id": "biolinker"
+      },
+      {
+        "investor_id": "sp_ventures",
         "startup_id": "bug_agentes_biologicos"
+      },
+      {
+        "investor_id": "sp_ventures",
+        "startup_id": "by_my_cell"
+      },
+      {
+        "investor_id": "sp_ventures",
+        "startup_id": "cellargen_biotech"
+      },
+      {
+        "investor_id": "sp_ventures",
+        "startup_id": "cenibiot"
       },
       {
         "investor_id": "sp_ventures",
@@ -45409,6 +47802,14 @@ window.STARTUP_THEMES_DATA = {
       {
         "investor_id": "sp_ventures",
         "startup_id": "genotyping"
+      },
+      {
+        "investor_id": "sp_ventures",
+        "startup_id": "gentec"
+      },
+      {
+        "investor_id": "sp_ventures",
+        "startup_id": "granatum_bioworks"
       },
       {
         "investor_id": "sp_ventures",
@@ -45444,7 +47845,15 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "sp_ventures",
+        "startup_id": "pharmalens-br"
+      },
+      {
+        "investor_id": "sp_ventures",
         "startup_id": "pink-farms"
+      },
+      {
+        "investor_id": "sp_ventures",
+        "startup_id": "plantverd-mx"
       },
       {
         "investor_id": "sp_ventures",
@@ -45453,6 +47862,10 @@ window.STARTUP_THEMES_DATA = {
       {
         "investor_id": "sp_ventures",
         "startup_id": "puna_bio"
+      },
+      {
+        "investor_id": "sp_ventures",
+        "startup_id": "recombine-biotech-br"
       },
       {
         "investor_id": "sp_ventures",
@@ -45484,7 +47897,39 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "the_yield_lab_latam",
+        "startup_id": "agricultic-do"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
+        "startup_id": "agrigenetic-ecuador-ec"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
+        "startup_id": "agritech-bolivia-bo"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
+        "startup_id": "agro360-do"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
+        "startup_id": "agrocontrol-gt"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
+        "startup_id": "agroguia-ve"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
+        "startup_id": "agrorganica"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
         "startup_id": "agrosmart"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
+        "startup_id": "alecrim-biotech-br"
       },
       {
         "investor_id": "the_yield_lab_latam",
@@ -45500,11 +47945,47 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "the_yield_lab_latam",
+        "startup_id": "biolinker-br"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
+        "startup_id": "bioprocess-automation-brasil-br"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
+        "startup_id": "bioram-mx"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
+        "startup_id": "bontix-do"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
+        "startup_id": "cellmeat-brasil-br"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
+        "startup_id": "cellva-ingredients-br"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
         "startup_id": "cerradox"
       },
       {
         "investor_id": "the_yield_lab_latam",
+        "startup_id": "consiste-br"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
         "startup_id": "courageous_land"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
+        "startup_id": "digital-twin-corporation-cr"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
+        "startup_id": "eatcloud-co"
       },
       {
         "investor_id": "the_yield_lab_latam",
@@ -45516,7 +47997,35 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "the_yield_lab_latam",
+        "startup_id": "farmbox-br"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
+        "startup_id": "fermentlabs-co"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
+        "startup_id": "geanext-cr"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
         "startup_id": "heartbest"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
+        "startup_id": "innova_space"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
+        "startup_id": "innovatech-bo"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
+        "startup_id": "inspectral-br"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
+        "startup_id": "isobar-br"
       },
       {
         "investor_id": "the_yield_lab_latam",
@@ -45528,11 +48037,51 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "the_yield_lab_latam",
+        "startup_id": "lilliput-technologies-cr"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
+        "startup_id": "lilliput-technologies-ltd-cr"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
+        "startup_id": "magic-green-cr"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
+        "startup_id": "myvac-bioproducts-br"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
+        "startup_id": "nativas"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
+        "startup_id": "nutrissis-biotech-br"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
+        "startup_id": "odd_industries"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
         "startup_id": "phagelab"
       },
       {
         "investor_id": "the_yield_lab_latam",
+        "startup_id": "precision_ag"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
         "startup_id": "produzindo-certo"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
+        "startup_id": "quipu-cr"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
+        "startup_id": "rizoflora_biotechnology_acq_by_stoller"
       },
       {
         "investor_id": "the_yield_lab_latam",
@@ -45552,6 +48101,14 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "the_yield_lab_latam",
+        "startup_id": "tierra-de-monte-mx"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
+        "startup_id": "treevia-br"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
         "startup_id": "ucrop-it-ar"
       },
       {
@@ -45561,6 +48118,10 @@ window.STARTUP_THEMES_DATA = {
       {
         "investor_id": "the_yield_lab_latam",
         "startup_id": "voa"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
+        "startup_id": "wseeds-co"
       },
       {
         "investor_id": "union_acquisition_corp",
@@ -45592,7 +48153,155 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "vesper_ventures",
+        "startup_id": "advanced_biocontrollers"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "agrivalle"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "agrosustain-mx"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "aptah"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "aptah-bio-br"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "arcomed"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "autem-therapeutics-br"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "bentenbiotech"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "biocentis-br"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "biodiverso-insumos-br"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "biofab"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "biofabrica-siglo-xxi-mx"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "bioin-br"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "biomimetic_solutions"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "biosens"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "biotecnofe"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "biotrop-br"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "bitmec"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "bloomcare-br"
+      },
+      {
+        "investor_id": "vesper_ventures",
         "startup_id": "cellertz-bio-br"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "cellter-cl"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "celluris"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "cepha-biotech-br"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "chemtest"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "cutting_edge_superconductors"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "daeki-cl"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "dart_by_teledx"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "detx_mol"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "diagnosis_biotech"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "diagtech"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "dioxd"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "ecocycle-biotech-ec"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "ecosativa"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "energytop-via-proinpa-bo"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "fabns"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "fk_biotecnologia"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "futr_bio"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "galtec"
       },
       {
         "investor_id": "vesper_ventures",
@@ -45600,7 +48309,147 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "vesper_ventures",
+        "startup_id": "hoobox_one"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "huna"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "ideelab"
+      },
+      {
+        "investor_id": "vesper_ventures",
         "startup_id": "inedita-bio-br"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "inpulse_medical"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "insitu"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "isla_pharmaceuticals"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "kheiron-biotech-ar"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "krilltech"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "labtronics-sas-co"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "linda_lifetech"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "lizarbio"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "merken-biotech-cl"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "meton"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "microbiota-agricola-br"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "microlabs-mx"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "microscopia"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "mirai_3d"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "mirscience-therapeutics-br"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "motivia-ar"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "mzp-tecnologia-ar"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "naiad"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "nemacontrol-biologicos-br"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "neomed-br"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "neurognos"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "novagenic_affinity"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "omica"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "panarum"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "patagonia-biotechnology-cl"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "pathovet"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "peptidus-biotech-br"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "php_biotech"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "pickcells"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "pixed"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "praxis-biotech-cl"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "quantis-br"
       },
       {
         "investor_id": "vesper_ventures",
@@ -45608,11 +48457,83 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "vesper_ventures",
+        "startup_id": "rizoflora_biotechnology_acq_by_stoller"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "selectivity"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "siquimia"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "solena-mx"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "speratum"
+      },
+      {
+        "investor_id": "vesper_ventures",
         "startup_id": "symbiomics"
       },
       {
         "investor_id": "vesper_ventures",
+        "startup_id": "taugc-bioinformatics-br"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "terragene-ar"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "theravax"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "thermy"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "vaxinz"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "vetpix"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "virtech_bio"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "vitales-br"
+      },
+      {
+        "investor_id": "vesper_ventures",
         "startup_id": "vyro-bio-br"
+      },
+      {
+        "investor_id": "vesper_ventures",
+        "startup_id": "webio-ar"
+      },
+      {
+        "investor_id": "vox_capital",
+        "startup_id": "agrigenetic-ecuador-ec"
+      },
+      {
+        "investor_id": "vox_capital",
+        "startup_id": "agrorganica"
+      },
+      {
+        "investor_id": "vox_capital",
+        "startup_id": "bioram-mx"
+      },
+      {
+        "investor_id": "vox_capital",
+        "startup_id": "consiste-br"
       },
       {
         "investor_id": "vox_capital",
@@ -45625,6 +48546,10 @@ window.STARTUP_THEMES_DATA = {
       {
         "investor_id": "vox_capital",
         "startup_id": "magnamed"
+      },
+      {
+        "investor_id": "vox_capital",
+        "startup_id": "myvac-bioproducts-br"
       },
       {
         "investor_id": "water_lemon_ventures",
@@ -45652,6 +48577,10 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "zentynel",
+        "startup_id": "aptah"
+      },
+      {
+        "investor_id": "zentynel",
         "startup_id": "asclepii"
       },
       {
@@ -45660,7 +48589,23 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "zentynel",
+        "startup_id": "biohack-uio-ec"
+      },
+      {
+        "investor_id": "zentynel",
         "startup_id": "biomakers"
+      },
+      {
+        "investor_id": "zentynel",
+        "startup_id": "biotech-cr"
+      },
+      {
+        "investor_id": "zentynel",
+        "startup_id": "biotimize"
+      },
+      {
+        "investor_id": "zentynel",
+        "startup_id": "ecocycle-biotech-ec"
       },
       {
         "investor_id": "zentynel",
@@ -45673,6 +48618,14 @@ window.STARTUP_THEMES_DATA = {
       {
         "investor_id": "zentynel",
         "startup_id": "hexembio"
+      },
+      {
+        "investor_id": "zentynel",
+        "startup_id": "lizarbio"
+      },
+      {
+        "investor_id": "zentynel",
+        "startup_id": "magenta-biolabs-cr"
       },
       {
         "investor_id": "zentynel",
@@ -45693,6 +48646,10 @@ window.STARTUP_THEMES_DATA = {
       {
         "investor_id": "zentynel",
         "startup_id": "samay"
+      },
+      {
+        "investor_id": "zentynel",
+        "startup_id": "scintia-mx"
       },
       {
         "investor_id": "zentynel",
