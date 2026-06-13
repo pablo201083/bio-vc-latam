@@ -201,6 +201,140 @@ def concentration(conn, theme_map) -> dict:
     return out
 
 
+def country_pyramids(conn, top_stage) -> dict:
+    """Stage distribution per country for top LATAM countries."""
+    rows = conn.execute(
+        """
+        SELECT sx.startup_id, e.country_code
+        FROM startup_extended sx
+        JOIN entities e ON e.entity_id = sx.startup_id
+        WHERE sx.scope_decision = 'include' AND e.country_code IS NOT NULL
+        """
+    ).fetchall()
+
+    COUNTRIES = {"AR", "BR", "CL", "MX", "CO", "CR", "UY", "BO", "EC", "PE"}
+    level_order = [n for n, _ in PYRAMID_LEVELS]
+
+    by_cc: dict[str, Counter] = defaultdict(Counter)
+    for sid, cc in rows:
+        if cc not in COUNTRIES:
+            continue
+        stage = top_stage.get(sid)
+        if not stage:
+            continue
+        lvl = _stage_level(stage)
+        if lvl:
+            by_cc[cc][lvl] += 1
+
+    total_map = dict(conn.execute(
+        """
+        SELECT e.country_code, COUNT(*)
+        FROM startup_extended sx
+        JOIN entities e ON e.entity_id = sx.startup_id
+        WHERE sx.scope_decision = 'include' AND e.country_code IS NOT NULL
+        GROUP BY e.country_code
+        """
+    ).fetchall())
+
+    result = {}
+    for cc, counts in by_cc.items():
+        funded = sum(counts.values())
+        series_a_plus = (counts.get("Series A", 0)
+                         + counts.get("Growth (B–D)", 0)
+                         + counts.get("Exit / IPO", 0))
+        result[cc] = {
+            "levels": {lvl: counts.get(lvl, 0) for lvl in level_order},
+            "funded": funded,
+            "total": total_map.get(cc, 0),
+            "series_a_plus": series_a_plus,
+            "series_a_plus_ratio": round(series_a_plus / funded, 3) if funded else 0,
+        }
+
+    country_order = sorted(result.keys(), key=lambda c: -result[c]["total"])
+    return {
+        "by_country": result,
+        "level_order": level_order,
+        "country_order": country_order,
+    }
+
+
+def country_themes(conn) -> dict:
+    """Theme × country matrix: count of include startups per (country, bio_theme)."""
+    rows = conn.execute(
+        """
+        SELECT e.country_code, sx.bio_theme_primary, COUNT(*) AS n
+        FROM entities e
+        JOIN startup_extended sx ON sx.startup_id = e.entity_id
+        WHERE sx.scope_decision = 'include'
+          AND sx.bio_theme_primary IS NOT NULL
+          AND e.country_code IS NOT NULL
+        GROUP BY e.country_code, sx.bio_theme_primary
+        """
+    ).fetchall()
+
+    COUNTRIES_ORDER = ["AR", "BR", "CL", "MX", "CO", "CR", "UY", "BO", "EC", "PE"]
+
+    matrix: dict[str, dict[str, int]] = {}
+    country_totals: dict[str, int] = defaultdict(int)
+    for cc, theme, n in rows:
+        if cc not in COUNTRIES_ORDER:
+            continue
+        if theme not in matrix:
+            matrix[theme] = {}
+        matrix[theme][cc] = n
+        country_totals[cc] += n
+
+    # Max per theme for normalization
+    theme_max = {t: max(d.values()) for t, d in matrix.items() if d}
+
+    present_countries = [c for c in COUNTRIES_ORDER if country_totals.get(c, 0) > 0]
+
+    return {
+        "matrix": matrix,
+        "country_order": present_countries,
+        "country_totals": dict(country_totals),
+        "theme_max": theme_max,
+    }
+
+
+def cross_border_flows(conn) -> dict:
+    """Capital flows matrix: investor_country → startup_country."""
+    rows = conn.execute(
+        """
+        SELECT e_inv.country_code AS inv_cc,
+               e_st.country_code  AS st_cc,
+               COUNT(*) AS n
+        FROM investment_edges ie
+        JOIN entities e_inv ON e_inv.entity_id = ie.investor_id
+        JOIN entities e_st  ON e_st.entity_id  = ie.startup_id
+        JOIN startup_extended sx ON sx.startup_id = ie.startup_id
+        WHERE sx.scope_decision = 'include'
+          AND e_inv.country_code IS NOT NULL
+          AND e_st.country_code IS NOT NULL
+        GROUP BY inv_cc, st_cc
+        ORDER BY n DESC
+        """
+    ).fetchall()
+
+    flows = [{"from": a, "to": b, "n": n} for a, b, n in rows]
+
+    source_totals: Counter = Counter()
+    dest_totals:   Counter = Counter()
+    cross_totals:  Counter = Counter()
+    for a, b, n in rows:
+        source_totals[a] += n
+        dest_totals[b] += n
+        if a != b:
+            cross_totals[a] += n
+
+    return {
+        "flows": flows,
+        "top_sources": source_totals.most_common(10),
+        "top_destinations": dest_totals.most_common(10),
+        "top_cross_border": cross_totals.most_common(10),
+    }
+
+
 def capital_gap(conn, theme_map, top_stage) -> dict:
     """Las startups include sin arista de capital documentada, por tema."""
     no_cap: Counter = Counter()
@@ -293,6 +427,9 @@ def run(db_path: pathlib.Path) -> dict:
         "foreign_dependence": foreign_dependence(conn, theme_map),
         "concentration": concentration(conn, theme_map),
         "capital_gap": capital_gap(conn, theme_map, top_stage),
+        "country_pyramids": country_pyramids(conn, top_stage),
+        "country_themes": country_themes(conn),
+        "cross_border": cross_border_flows(conn),
         "generated_at": date.today().isoformat(),
     }
     conn.close()

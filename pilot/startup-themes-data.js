@@ -1,5 +1,5 @@
 window.STARTUP_THEMES_DATA = {
-  "computed_at": "2026-06-13T20:13:34",
+  "computed_at": "2026-06-13T20:20:00",
   "model": "intfloat/multilingual-e5-small",
   "stats": {
     "total_startups": 579,

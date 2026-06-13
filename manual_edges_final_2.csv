@@ -1,5 +1,0 @@
-investment_id,investor_id,startup_id,round_name,round_stage,announced_date,amount,currency,is_lead,confidence_score,source_id,notes
-MANUAL_FINAL_cellculture-br_The_Ganesha_Lab_1,The Ganesha Lab,cellculture-br,pre-seed,pre-seed,,,,0,0.55,MANUAL_FINAL,"Cell Culture / Food alternative - theme match with GLL portfolio"
-MANUAL_FINAL_cellculture-br_GridX_1,GridX,cellculture-br,pre-seed,pre-seed,,,,0,0.4,MANUAL_FINAL,"Cell Culture / Food alternative - GridX early-stage ag-bio investors"
-MANUAL_FINAL_bioprocess-automation-brasil-br_sf500_1,SF500,bioprocess-automation-brasil-br,series-a,series-a,,,,0,0.55,MANUAL_FINAL,"Bioprocess automation - stage + theme match"
-MANUAL_FINAL_bioprocess-automation-brasil-br_the_yield_lab_latam_1,the_yield_lab_latam,bioprocess-automation-brasil-br,series-a,series-a,,,,0,0.5,MANUAL_FINAL,"Bioprocess / Biomanufacturing adjacent - TYL stage-appropriate"

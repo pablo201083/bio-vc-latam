@@ -1,0 +1,198 @@
+================================================================================
+RESEARCH 24 BIOTECH CANDIDATES — EXECUTIVE SUMMARY
+================================================================================
+
+Research Date: 2026-06-13
+Total Candidates: 24 (22 new research + 2 pre-researched)
+Classification: Strict biotech filter applied (genetic/cellular/molecular innovation)
+
+OUTPUT FILES:
+  - staging/research_24_biotech_final.csv (primary deliverable)
+  - staging/RESEARCH_24_BIOTECH_ANALYSIS.md (detailed rationale)
+
+================================================================================
+RESULTS AT A GLANCE
+================================================================================
+
+BIOTECH SIGNAL BREAKDOWN
+─────────────────────────────────────────────────────────────────────────────
+YES (Core Biotech)        :  1 candidate  (4%)
+QUESTIONABLE (Edge Case)  :  7 candidates (29%)
+NO (Non-Biotech)          : 14 candidates (58%)
+SKIP (Pre-Researched)     :  2 candidates (8%)
+
+CONFIDENCE DISTRIBUTION
+─────────────────────────────────────────────────────────────────────────────
+High (0.85+)   : 16 candidates
+Medium (0.70-0.84): 4 candidates
+Low (<0.70)    : 4 candidates
+
+================================================================================
+CORE BIOTECH — MUST INCLUDE (1)
+================================================================================
+
+✓ AGUAMARINA_BIOMINERIA [0.95 confidence]
+  ├─ Sector: Biotech Materials
+  ├─ Tech: Microbiology, bacterial applications, bio-lixiviation
+  ├─ Why YES: Authentic biotech R&D. Uses genetically-selected bacteria +
+  │           microalgae from seawater for mining (dust control via bio-crust,
+  │           water efficiency, bio-corrosion control, mineral extraction).
+  │           Founded by marine biologist + microbiological engineer.
+  │           Biology-first innovation.
+  └─ Action: INCLUDE in BIO ecosystem (clear core biotech)
+
+================================================================================
+EDGE CASES — CURATOR DECISION REQUIRED (7)
+================================================================================
+
+These candidates show biological innovation BUT have caveats. Curator should
+review against `quality/bio_definition_operativa.md` two-axis framework to
+decide whether to INCLUDE or EXCLUDE.
+
+? BIOXIPLAS [0.90 confidence]
+  ├─ Sector: Materials Science (Bioplastics)
+  ├─ Caveat: Chemistry + materials science with bio-sourcing (sugarcane, beets,
+  │          corn). Not genetic engineering or cellular biology.
+  └─ Decision: INCLUDE if circular bioeconomy counts; EXCLUDE if strict biotech
+
+? FIX_IT [0.90 confidence]
+  ├─ Sector: Medical Devices (3D-printed prosthetics)
+  ├─ Caveat: 3D printing + thermomoldable biodegradable plastic (bio-sourced).
+  │          Manufacturing + bio-sourcing, not cellular/genetic innovation.
+  └─ Decision: INCLUDE if medical device + biomaterial sourcing counts
+
+? NANOX_INDUSTRIAL_CHEMICALS [0.85 confidence]
+  ├─ Sector: Materials Science (Silver nanoparticles)
+  ├─ Caveat: Nanotechnology + antimicrobial properties ≈ materials chemistry.
+  │          No biology-native innovation.
+  └─ Decision: EXCLUDE if strict biotech (materials chemistry ≠ biotech)
+
+? CARENET_LONGEVITY [0.85 confidence]
+  ├─ Sector: Medical Devices / Digital Health (IoMT platform)
+  ├─ Caveat: Medical device integration + software. No biological innovation.
+  │          Integrates existing hardware (monitors, ventilators) with EHR.
+  └─ Decision: EXCLUDE if strict biotech (digital health ≠ biotech)
+
+? SCARAB [0.85 confidence]
+  ├─ Sector: Biotech-Adjacent Materials (mining waste recovery)
+  ├─ Caveat: Chemistry-based selective extraction. No biotech component
+  │          documented in research (likely pure chemistry).
+  └─ Decision: EXCLUDE unless novel biochemical mining process confirmed
+
+? AEROSCAN_BUSINESSPRODUCTIVITY_SOFTWARE [0.80 confidence]
+  ├─ Sector: Agtech Software (drones + AI for crop monitoring)
+  ├─ Caveat: Instrumental agriculture (drones + ML). No biological innovation.
+  └─ Decision: EXCLUDE (agtech hardware/software, not biotech)
+
+? AGRO_AI [0.70 confidence]
+  ├─ Sector: Agtech Software (precision agriculture AI)
+  ├─ Caveat: Agricultural AI software. No biological innovation.
+  │          Low confidence due to minimal research detail available.
+  └─ Decision: EXCLUDE (agricultural AI, not biotech)
+
+================================================================================
+NON-BIOTECH — EXCLUDE (14)
+================================================================================
+
+Clear-cut non-biotech. No ambiguity. DO NOT include in BIO ecosystem.
+
+Pure Software (5):
+  ✗ bacu [0.80] — Foodtech restaurant management SaaS
+  ✗ flexza [0.60] — HR benefits/compensation platform
+  ✗ verge_ag [0.90] — Farm path-planning software logistics
+  ✗ vixtra [0.95] — Import financing fintech
+  ✗ agroadvance [0.90] — Agribusiness education/EdTech
+
+Pure Hardware/Transportation/Energy (4):
+  ✗ beyond_renewable_energy [0.80] — EV/electromobility
+  ✗ reborn_electric_motors [0.90] — Electric bus retrofit
+  ✗ yak [0.90] — Battery electric tractors
+  ✗ inti_tech [0.90] — Solar panel cleaning robots
+
+Chemistry/Materials Without Biotech (2):
+  ✗ brasil_ozonio [0.85] — Ozone treatment water systems
+  ✗ partanna [0.90] — CO2-absorbing building materials
+
+Ecosystem/Finance (2):
+  ✗ starlight_ventures [0.90] — Venture capital firm
+  ✗ audsat [0.50] — Satellite monitoring (low confidence, limited data)
+
+Food Manufacturing (1):
+  ✗ popai [0.85] — AI-optimized healthy snacks (no biotech innovation)
+
+================================================================================
+PRE-RESEARCHED — SKIP (2)
+================================================================================
+
+Per instructions, already fully researched. Not included in this batch:
+  ⊘ mabloc — AI antibody discovery (core biotech, already in system)
+  ⊘ tissue_dynamics — Organoid + AI (core biotech, already in system)
+
+================================================================================
+KEY INSIGHTS
+================================================================================
+
+1. LOW BIOTECH DENSITY in sample: Only 1 true core biotech (Aguamarina).
+   → Rest are software/hardware/materials adjacent to ag/health sectors.
+
+2. EDGE CASE CONCENTRATION: 7 candidates in QUESTIONABLE category.
+   → Mostly biomaterials (Bioxiplas, Fix_It), medical devices (Carenet),
+     agtech software (Aeroscan, Agro_AI), materials (Nanox, Scarab).
+   → Curator should apply two-axis bio_definition framework to decide.
+
+3. CONFIDENCE SKEW: 16/22 candidates (73%) have high confidence (0.85+).
+   → Well-documented companies across all domains.
+   → Only Audsat (0.50) and Flexza (0.60) show low confidence.
+
+4. SECTORAL DISTRIBUTION:
+   - Agtech (software): 3 candidates
+   - Medical/Health: 2 candidates
+   - Materials/Chemistry: 5 candidates
+   - Transportation/Energy: 4 candidates
+   - Fintech/Software: 3 candidates
+
+================================================================================
+NEXT STEPS
+================================================================================
+
+1. Curator reviews QUESTIONABLE 7 against bio_definition_operativa.md
+   Specifically check: "pertenencia" (belonging) + "intensidad biológica" axes
+
+2. Update startup_master_dataset.csv bio_theme column for candidates:
+   - Definitive YES: aguamarina_biomineria
+   - Conditional (pending curator decision): all 7 QUESTIONABLE
+   - Definitive NO: all 14 in NO category
+
+3. For QUESTIONABLE edge cases, curator may:
+   a) Assign to specific theme (e.g., "Biotech Materials" for Bioxiplas)
+   b) Mark as "Perimetral" or edge-of-scope
+   c) Defer to secondary research if ambiguity persists
+
+================================================================================
+DATA QUALITY NOTES
+================================================================================
+
+Research Method: Web search + company profiles (Crunchbase, PitchBook,
+                 ZoomInfo, LinkedIn, company websites)
+
+Classification Rule: STRICT biotech definition applied
+  INCLUDE: Genetic engineering, cellular biology, molecular biology,
+           bio-driven R&D innovation
+  QUESTIONABLE: Biology-adjacent (biomaterials, medical devices, green
+                chemistry) with curator review
+  EXCLUDE: Pure software, pure hardware, pure chemistry, fintech,
+           VC/ecosystem
+
+Confidence Scale: Based on data availability + clarity of business model
+  0.95 = Crystal clear biotech with extensive public documentation
+  0.90 = Clear business model + good documentation
+  0.85 = Documented but some ambiguity in bio vs non-bio boundary
+  0.70-0.84 = Clear model but minimal public research detail
+  <0.70 = Very limited public information or ambiguous model
+
+No assumptions made beyond documented research.
+All sources listed in CSV and analysis document.
+
+================================================================================
+END OF SUMMARY
+================================================================================
