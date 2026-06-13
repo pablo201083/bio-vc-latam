@@ -5,9 +5,9 @@ _Generado 2026-06-12 con `python pipeline.py capital-structure`. Cuenta EMPRESAS
 ## Pirámide de stages (global)
 
 - **Pre-seed / Accelerator**: 64 ████████████
-- **Seed**: 169 █████████████████████████████████
-- **Series A**: 45 █████████
-- **Growth (B–D)**: 21 ████
+- **Seed**: 161 ████████████████████████████████
+- **Series A**: 42 ████████
+- **Growth (B–D)**: 19 ███
 - **Exit / IPO**: 5 █
 
 ## Pirámide por tema — ¿base sin cúspide?
@@ -22,13 +22,11 @@ _Generado 2026-06-12 con `python pipeline.py capital-structure`. Cuenta EMPRESAS
 | Nature & Ecosystem Tech | 0 | 17 | 5 | 3 | 1 | 8 | 0.53 |
 | Precision Agriculture | 0 | 15 | 6 | 2 | 1 | 15 | 0.6 |
 | Biomanufacturing & Platform Technologies | 7 | 7 | 1 | 2 | 0 | 10 | 0.21 |
-| Digital AgTech & Agrifintech | 0 | 8 | 3 | 2 | 0 | 11 | 0.62 |
 
 ## Dependencia de capital extranjero por tema
 
 | Tema | Aristas | Extranjeras | % extranjero |
 |------|---------|-------------|--------------|
-| Digital AgTech & Agrifintech | 46 | 19 | 41% |
 | Precision Agriculture | 49 | 15 | 30% |
 | Nature & Ecosystem Tech | 53 | 16 | 30% |
 | Biomaterials & Green Chemistry | 53 | 16 | 30% |
@@ -48,7 +46,6 @@ _Generado 2026-06-12 con `python pipeline.py capital-structure`. Cuenta EMPRESAS
 | Therapeutics | 0.126 | 24 | GridX | 28% |
 | Biomaterials & Green Chemistry | 0.124 | 29 | GridX | 32% |
 | Food Systems & Alt Proteins | 0.121 | 23 | GridX | 30% |
-| Digital AgTech & Agrifintech | 0.096 | 24 | sp_ventures | 21% |
 | Precision Agriculture | 0.096 | 20 | sp_ventures | 18% |
 | Diagnostics & Devices | 0.07 | 44 | GridX | 20% |
 | Nature & Ecosystem Tech | 0.063 | 28 | Antom | 13% |
@@ -84,7 +81,7 @@ Top pares:
 
 ## Capital no documentado
 
-153 startups include sin ninguna arista de capital. Por tema:
+151 startups include sin ninguna arista de capital. Por tema:
 
 - **Diagnostics & Devices**: 41/110 (37%)
 - **Food Systems & Alt Proteins**: 30/74 (40%)
@@ -94,4 +91,3 @@ Top pares:
 - **Biomanufacturing & Platform Technologies**: 9/27 (33%)
 - **Precision Agriculture**: 6/39 (15%)
 - **Nature & Ecosystem Tech**: 4/34 (11%)
-- **Digital AgTech & Agrifintech**: 2/24 (8%)

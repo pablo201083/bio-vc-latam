@@ -1,0 +1,63 @@
+name,country_code,sector,description,website,source_accelerator,accelerator_country
+metaBIX Biotech,UY,AgriTech,AI-powered platform for disease prediction and monitoring in farm animals (poultry, pigs) using airborne pathogen analysis,https://metabix-biotech.com,Ganesha Lab + Institut Pasteur LAB+,CL/UY
+Locbio,UY,Biotech,Synthetic biology - designs proteins for sensing molecules and triggering cellular responses; cell circuit engineering,https://locbio.com,Institut Pasteur LAB+,UY
+Guska,UY,BioMedicine,Oncolytic virus therapy for targeted cancer treatment without affecting healthy cells,https://guska.bio,Institut Pasteur LAB+,UY
+B4RNA,UY,Diagnostics,RNA-based early cancer detection through novel biomarker discovery in biological fluids,https://b4rna.bio,Institut Pasteur LAB+,UY
+Scaffold Biotech,UY,Vaccines,AI-designed molecule development for vaccine creation and agricultural pest solutions (tick vaccines),https://scaffoldbiotech.com,Institut Pasteur LAB+,UY
+SALMOSS Biotech,CL,MedTech,Biomimetic salmon bone-derived hydroxyapatite implants for orthopedic and dental reconstruction,https://www.salmoss.com,Startup Chile,CL
+ARCOMED LAB,CL,MedTech,3D-printed cranial and maxillofacial implants using synthetic materials,https://www.arcomed.cl,Ganesha Lab,CL
+Unibaio,CL,AgriTech,Agricultural biotechnology innovation for crop improvement,https://www.unibaio.com,Ganesha Lab,CL
+Bifidice,CL,FoodTech,Probiotic ice cream with functional food applications,https://www.bifidice.cl,Ganesha Lab,CL
+Biome Resources,CL,Biotech,Microbiome innovation platform targeting sleep quality and human health,https://www.biomeresources.cl,Ganesha Lab,CL
+Soleit,CL,MedTech,Software-designed biomechanical insoles for orthopedic health,https://soleit.cl,Ganesha Lab,CL
+Aictive,CL,HealthTech,AI-powered sports analytics and performance monitoring platform,https://www.aictive.cl,Ganesha Lab,CL
+EYWA Biotech,CL,HealthTech,Synthetic biology approach to psychedelic compound development for mental health treatment,https://eywa.bio,Ganesha Lab,CL
+Urbana Grow / Farmtastica,CL,AgriTech,Vertical farming technology for controlled environment agriculture,https://farmatiastica.cl,Ganesha Lab,CL
+Kura Biotech,CL,Biotech,Enzyme production platform for toxicology labs; enzymatic solutions for genomics and food safety,https://www.kurabiotech.com,Patagonia Biotech Hub,CL
+Andes Biotechnologies,CL,Therapeutics,Nucleic acid-based drug discovery for solid tumor cancers,https://www.andes-biotech.com,Startup Chile,CL
+Biosonda Biotechnology,CL,Diagnostics,Biotechnology diagnostic solutions for healthcare sector,https://www.biosonda.cl,Startup Chile,CL
+Células para Células,CL,Regenerative Medicine,Cell therapy and regenerative medicine applications,https://www.celulasparacelas.cl,Startup Chile,CL
+Fertum,CL,AgriTech,Biotech-driven agricultural input company,https://www.fertum.cl,Patagonia Biotech Hub,CL
+Nalca Biotech,CL,AgriTech,Biotech solutions for agriculture sector in southern Chile,https://nalcabiotech.cl,Patagonia Biotech Hub,CL
+Beeflow,AR,AgriTech,Professional pollination services using managed bee colonies and data analytics for crop optimization,https://beeflow.com,Grid Exponential,AR
+Puna Bio,AR,AgriTech,Extremophile bacteria bioinoculant for increasing crop yields 10-15%,https://www.punabio.com,Grid Exponential,AR
+Stämm,AR,BioTech,Continuous automated manufacturing of biologics and cell therapies using laminar flow bioreactors,https://www.stamm.bio,Grid Exponential,AR
+CASPR Biotech,AR,Diagnostics,CRISPR-based molecular diagnostics for infectious disease detection,https://www.casprbiotech.com,Grid Exponential,AR
+Nanogrow,AR,Therapeutics,Single-domain antibody therapeutics with localized delivery systems for human health,https://nanogrow.com,Grid Exponential,AR
+OncoPrecision,AR,Therapeutics,Patient-derived data approach to accelerate cancer drug development,https://oncprecision.com,Grid Exponential,AR
+Michroma,AR,FoodTech,Fungal-based natural food dyes replacing petrochemical alternatives,https://michroma.com,Grid Exponential,AR
+Bioeutectics,AR,Bio-Industry,Bio-based eutectic solvents using natural compounds for industrial applications,https://bioeutectics.com,Grid Exponential,AR
+algaebio+,AR,Bio-Industry,Production of beneficial compounds from microalgae biotechnology,https://www.algaebioplus.com,Grid Exponential,AR
+Alkemio,AR,Bio-Industry,Rare earth element separation through molecular recognition technology,https://alkemio.com,Grid Exponential,AR
+Antarka,AR,Cosmetics,Antarctic enzyme derivatives for skin longevity and anti-aging applications,https://www.antarka.com,Grid Exponential,AR
+AQUIT,AR,AgriTech,Fish immunity enhancement products for aquaculture,https://aquit.com,Grid Exponential,AR
+Eolo Pharma,AR,Pharmaceuticals,Novel anti-obesity drug development targeting chronic inflammation,https://www.eolopharm.com,CITES,AR
+Limay Biosciences,AR,Diagnostics,Molecular diagnostics and biotechnological diagnostic solutions,https://www.limaybiosciences.com,CITES,AR
+Phylumtech,AR,Drug Discovery,Drug discovery using in vivo experimental models with automation and bioinformatics,https://phylumtech.com,CITES,AR
+Viewmind,AR,Diagnostics,Non-invasive eye-movement analysis for Alzheimer's prediction and cognitive function assessment,https://viewmind.ai,CITES,AR
+Ergo Bioscience,AR,Biotech,Life sciences and biotechnology innovations,https://ergobioscience.com,CITES,AR
+Sciphage,CO,AgriTech,Phage-based antibacterial products for poultry and aquaculture reducing Salmonella risk without antibiotics,https://sciphage.com,Raíces Accelerator,CO
+Koji,CO,FoodTech,Bioprocessing and fermentation technology using koji fungal strains for ingredient development,https://koji.bio,Raíces Accelerator,CO
+Aptah Biosciences,BR,Therapeutics,RNA therapies for neurodegenerative diseases (Alzheimer's dystrophies) and cancers with FDA Orphan Drug designation,https://aptah.com,Vesper Ventures,BR
+InEdita Bio,BR,AgriTech,Gene editing for crop improvement - soybean strains resistant to Asian rust and enhanced maize pest resistance,https://inedita.bio,Vesper Ventures,BR
+Vyro Bio,BR,Therapeutics,Viral immunotherapy for childhood central nervous system cancers crossing blood-brain barrier,https://vyrobio.com,Vesper Ventures,BR
+Symbiomics,BR,AgriTech,Biological products using genetic editing for agricultural productivity in soybeans and corn,https://symbiomics.com,Vesper Ventures,BR
+Cellertz Bio,BR,Therapeutics,AI-accelerated molecular discovery for aggressive cancer treatments,https://cellertz.com,Vesper Ventures,BR
+Reddot Bio,BR,Diagnostics,Next-generation molecular diagnostics with commercial laboratory contracts,https://reddot.bio,Vesper Ventures,BR
+Futr Bio,BR,Biotech,Biotechnology innovations in agriculture and food sector,https://futrbio.com,Vesper Ventures,BR
+Nintx,BR,Pharmaceuticals,Biodiversity-based drug discovery leveraging Brazilian biodiversity for multifactorial disease therapeutics,https://nintx.com.br,Independent,BR
+Onkos,BR,Clinics,Clinical services and outpatient health services with biotech applications,https://onkos.bio,Biominas Brasil,BR
+ImunoTera,BR,Therapeutics,Immunotherapy drug discovery and development,https://imunotera.com,Biominas Brasil,BR
+Salutho,BR,HealthTech,Health technology and software solutions for clinical optimization,https://salutho.com,Biominas Brasil,BR
+Nabla Bio,BR,Biotech,Genomic data analysis for drug target identification,https://nabla.bio,GRIDS Capital,BR
+Fauna Bio,BR,AgriTech,Comparative genomics leveraging animal hibernation science for pharmaceutical discovery,https://fauna-bio.com,GRIDS Capital,BR
+Doloromics,BR,Therapeutics,Pain biology research and therapeutic development,https://doloromics.com,GRIDS Capital,BR
+Anagenex,BR,Biotech,Genetic analysis and biotech solutions,https://anagenex.com,GRIDS Capital,BR
+NuCicer,BR,FoodTech,Food biotechnology and cultured foods innovation,https://nucicer.com,LifelyVC,BR
+Bond Pet Foods,BR,FoodTech,Biotech-driven pet food innovation,https://bondpetfoods.com,LifelyVC,BR
+Change Foods,BR,FoodTech,Fermentation-based food technology for sustainability,https://changefoods.com,LifelyVC,BR
+Aqua Cultured Foods,BR,FoodTech,Cultivated seafood using biotechnology,https://aquacultured.com,LifelyVC,BR
+Baqueano,UY,AgriTech,Precision livestock data platform for health management and traceability across Latin America,https://baqueano.com,Agro en Punta,UY
+Locbio (Pasteur Co-created),UY,Biotech,Synthetic biology and protein engineering for cellular circuits,https://locbio.com,Institut Pasteur LAB+,UY
+Paqta,PE,AgriTech,Customized biofertilizers for soil health optimization and improved agriculture,https://paqta.com,IDB Lab ReGenerate,PE
+Cognita Conecta,PE,EdTech,Spanish-language biotech and life sciences educational platform,https://cognita.com,IDB Lab,PE

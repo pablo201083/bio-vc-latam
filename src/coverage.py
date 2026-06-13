@@ -47,7 +47,7 @@ TIER_PARTIAL_MIN_PATCHES = 2
 CELL_EVIDENCE_PCT = 0.60
 # Si un solo parche aporta más de este % de una celda, la celda está sesgada
 # a esa fuente aunque tenga volumen.
-CELL_DOMINANT_SOURCE_PCT = 0.70
+CELL_DOMINANT_SOURCE_PCT = 0.85
 
 
 # ─────────────────────────────────────────────────────────────────────────────

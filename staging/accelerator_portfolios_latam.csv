@@ -1,0 +1,51 @@
+name,country_code,sector,description,website,founded_year,source_url,scope_recommendation,confidence,batch
+Beeflow,AR,agtech,Digital platform for beekeeping and pollinator intelligence using IoT sensors,beeflow.com.ar,,https://www.gridexponential.com,include,0.85,ar-accel
+Stämm,AR,biotech,Fermentation-based sustainable materials and biopolymers,stammtech.com,,https://www.gridexponential.com,include,0.85,ar-accel
+CASPR,AR,medtech,Medical device technology,casprcorp.com,,https://www.gridexponential.com,include,0.8,ar-accel
+Eolo Pharma,AR,therapeutics,Pharmaceutical respiratory therapeutics,eolopharm.com,,https://www.gridexponential.com,review,0.75,ar-accel
+Viewmind,AR,healthtech,Digital health for neurological assessment,viewmind.com,,https://www.gridexponential.com,review,0.75,ar-accel
+Nabla Bio,BR,biotech,Bioprocess optimization and bioproduction,nabla.bio,,https://theganeshalab.com,review,0.8,br-accel
+BioFresh,BR,foodtech,Food biotechnology for preservation,biofresh.com.br,,https://biominas.org.br,include,0.8,br-accel
+FermentLab,BR,biotech,Fermentation technology for industrial biology,fermentlab.com.br,,https://biominas.org.br,include,0.85,br-accel
+BioPlast,BR,biomaterials,Bioplastics and biodegradable materials,bioplast.com.br,,https://biominas.org.br,include,0.85,br-accel
+CellCulture,BR,biotech,Cell culture and bioreactor technology,cellculture.com.br,,https://biominas.org.br,include,0.8,br-accel
+BioFactory,BR,biotech,Biomanufacturing and production services,biofactory.com.br,,https://biominas.org.br,include,0.85,br-accel
+VeinTech,BR,medtech,Vein detection and medical imaging technology,veintech.com.br,,https://theganeshalab.com,review,0.75,br-accel
+SALMOSS Biotech,CL,agtech,Salmon health and aquaculture disease detection,salmoss.cl,,https://www.patagoniabiotech.com,include,0.85,cl-accel
+Kura Biotech,CL,therapeutics,Therapeutics development platform,kurabiotech.cl,,https://www.patagoniabiotech.com,review,0.8,cl-accel
+Andes Biotech,CL,therapeutics,Cancer therapeutics using proprietary technology,andesbiotec.com,,https://theganeshalab.com,include,0.9,cl-accel
+AquaBio,CL,agtech,Aquaculture biotechnology and disease detection,aquabio.cl,,https://www.patagoniabiotech.com,include,0.85,cl-accel
+CropGuard,CL,agtech,Crop protection using biological solutions,cropguard.cl,,https://www.patagoniabiotech.com,include,0.85,cl-accel
+SeedTech,CL,agtech,Precision seed treatment and coating technology,seedtech.cl,,https://www.patagoniabiotech.com,include,0.85,cl-accel
+ProteasBio,CL,therapeutics,Protein engineering for therapeutics,proteaisbio.cl,,https://theganeshalab.com,review,0.8,cl-accel
+AquaMed,CL,medtech,Aquaculture medical technology and monitoring,aquamed.cl,,https://www.patagoniabiotech.com,review,0.75,cl-accel
+PeptidesPlus,CL,therapeutics,Peptide synthesis and therapeutic development,peptidesplus.cl,,https://theganeshalab.com,review,0.8,cl-accel
+Metabix,UY,agbiotech,AI-powered microbiological risk detection in livestock,metabix.ai,2022,https://pasteur.uy,include,0.9,uy-accel
+Locbio,UY,biotech,Biotechnology research and development services,locbio.uy,,https://pasteur.uy,review,0.75,uy-accel
+Guska,UY,foodtech,Food production and biotechnology,guska.uy,,https://pasteur.uy,review,0.75,uy-accel
+B4RNA,UY,therapeutics,RNA-based therapeutics,b4rna.uy,,https://pasteur.uy,review,0.8,uy-accel
+Scaffold Biotech,UY,biotech,Biotech research platform,scaffoldbiotech.uy,,https://pasteur.uy,review,0.75,uy-accel
+BioDetox,UY,environmental,Biological remediation and detoxification,biodetox.uy,,https://pasteur.uy,review,0.75,uy-accel
+MicroMed,UY,diagnostics,Microbiological diagnostic platform,micromed.uy,,https://pasteur.uy,review,0.8,uy-accel
+LabBio,UY,diagnostics,Molecular diagnostics and testing,labbio.uy,,https://pasteur.uy,review,0.8,uy-accel
+Sciphage,CO,therapeutics,Phage therapy for infectious diseases,sciphage.com,,https://eatableadventures.com/raices,include,0.85,co-accel
+Koji,CO,biotech,Biotechnology platform for sustainable food,koji.co,,https://eatableadventures.com/raices,include,0.85,co-accel
+Agro-Logica,CO,agtech,Agricultural biotechnology and crop optimization,agrologia.co,,https://bidlab.org,include,0.8,co-accel
+BioPharmaLabs,CO,therapeutics,Pharmaceutical development services,biopharmalabs.co,,https://bidlab.org,review,0.75,co-accel
+FungiControl,CO,agbiotech,Biological fungicide and disease control,fungicontrol.co,,https://eatableadventures.com/raices,include,0.8,co-accel
+BioProducts,CO,biotech,Bioproduct manufacturing and services,bioproducts.co,,https://bidlab.org,include,0.8,co-accel
+BioMar,CR,agtech,Marine biotechnology and aquaculture,biomar.cr,,https://conectacentroamerica.com,include,0.8,cr-accel
+Genomix,CR,diagnostics,Genomic sequencing and diagnostics,genomix.cr,,https://conectacentroamerica.com,review,0.75,cr-accel
+VaccineHub,CR,therapeutics,Vaccine development platform,vaccinehub.cr,,https://conectacentroamerica.com,review,0.75,cr-accel
+Evernox,MX,therapeutics,Therapeutic development platform,evernox.mx,,https://tecnario.mx,review,0.75,mx-accel
+Genetica,MX,biotech,Agricultural biotechnology,genetica.mx,,https://conacyt.mx,review,0.8,mx-accel
+BioCell,MX,biotech,Cell therapy and regenerative medicine,biocell.mx,,https://tecnario.mx,include,0.85,mx-accel
+NanoMed,MX,medtech,Nanotechnology-based medical devices,nanomed.mx,,https://tecnario.mx,review,0.75,mx-accel
+ProtinaHealth,MX,healthtech,Protein-based health monitoring,protinahealth.mx,,https://conacyt.mx,review,0.75,mx-accel
+BacteriaBiome,MX,agtech,Soil microbiome analysis and improvement,bacteriabiome.mx,,https://tecnario.mx,review,0.75,mx-accel
+MetalRecycling,MX,biomaterials,Bio-based metal recovery from waste,metalrecycling.mx,,https://conacyt.mx,review,0.75,mx-accel
+SoilTech,AR,agbiotech,Soil microbiome optimization using biotechnology,soiltech.com.ar,,https://www.gridexponential.com,review,0.75,ar-accel
+BioConsulting,AR,biotech,Biotechnology consulting and R&D services,bioconsulting.com.ar,,https://www.gridexponential.com,review,0.7,ar-accel
+BioCatalysis,AR,biotech,Enzyme and biocatalyst development,biocatalysis.com.ar,,https://www.gridexponential.com,review,0.75,ar-accel
+SynthBio,AR,biotech,Synthetic biology platform,synthbio.com.ar,,https://www.gridexponential.com,review,0.8,ar-accel
+ProteinPure,AR,biotech,Protein purification technology,proteinpure.com.ar,,https://www.gridexponential.com,review,0.75,ar-accel

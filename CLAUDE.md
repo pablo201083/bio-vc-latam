@@ -35,6 +35,8 @@ python pipeline.py reconcile-themes           # Frente B: tipifica conflictos bi
 python pipeline.py orphan-triage              # Frente B: tipifica entidades startup huérfanas (duplicado/scope/sin-procesar)
 python pipeline.py taxonomy-cards             # Frente B: genera quality/taxonomy_cards.md (8 fichas de tema)
 python pipeline.py capital-structure          # Frente C: pirámide de stages, cohortes, sindicación, dependencia extranjera, HHI
+python pipeline.py enrich-dates               # Frente C: propaga fechas por co-round + genera quality/date_enrichment_queue.csv
+python pipeline.py enrich-dates --dry-run     # misma lógica sin escribir a DB
 python pipeline.py phylo-tree                 # regenera el árbol evolutivo (pilot/phylo-tree-data.js)
 python pipeline.py graph --refresh            # PageRank/communities/bridges
 python pipeline.py ingest-outcomes            # leer staging/outcomes_incoming.csv
