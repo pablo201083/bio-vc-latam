@@ -194,12 +194,15 @@ def run(db_path: Path = DB_PATH, out_path: Path = OUT_PATH) -> dict:
     # Load ALL startups from entities first (includes orphans without startup_extended).
     # Enrich with startup_extended data via LEFT JOIN so edges to orphan startups still render.
     st_rows = conn.execute("""
-        SELECT e.entity_id, e.canonical_name, e.country_code, e.website,
+        SELECT e.entity_id, e.canonical_name, e.country_code, e.website, e.founded_year,
                sx.scope_decision, sx.macro_theme, sx.bio_theme_primary,
                sx.bio_theme_secondary, sx.is_bio_universe,
                sx.startup_summary_en, sx.startup_summary_v1,
                sx.business_one_liner,
-               sx.cluster_label,
+               sx.cluster_label, sx.sub_cluster_label,
+               sx.funding_stage, sx.funding_bucket_usd,
+               sx.tech_depth, sx.trl_current_status,
+               sx.bio_lens_tags, sx.domain_tags, sx.technology_tags,
                COALESCE(sx.valuation_estimate_usd, sx.valuation_bucket_usd, 0) AS valuation_usd
         FROM entities e
         LEFT JOIN startup_extended sx ON sx.startup_id = e.entity_id
@@ -222,10 +225,14 @@ def run(db_path: Path = DB_PATH, out_path: Path = OUT_PATH) -> dict:
             "type": "startup",
             "label": _clean(r["canonical_name"]),
             "country": _clean(r["country_code"]).upper(),
+            "founded_year": r["founded_year"] or None,
             "scope_decision": scope,
             "theme": bio_theme,
+            "theme_secondary": _clean(r["bio_theme_secondary"]),
             "legacy_macro_theme": _clean(r["macro_theme"]),
             "emergent_theme": _clean(r["bio_theme_secondary"]),
+            "cluster_label": _clean(r["cluster_label"]),
+            "sub_cluster_label": _clean(r["sub_cluster_label"]),
             "semantic_single_theme": _clean(r["cluster_label"]),
             "semantic_single_confidence": "",
             "semantic_single_score": "",
@@ -233,13 +240,19 @@ def run(db_path: Path = DB_PATH, out_path: Path = OUT_PATH) -> dict:
             "source_url": _clean(r["website"]),
             "review_status": "reviewed" if scope == "include" else "taxonomy_stub",
             "thesis_fit": "core" if r["is_bio_universe"] else "peripheral",
+            "is_bio": 1 if r["is_bio_universe"] else 0,
             "taxonomy_source": "bio_theme_v3",
             "evidence_source": "db_startup_extended" if r["scope_decision"] else "db_entities_only",
-            "bio_lens_tags": "",
-            "domain_tags": "",
-            "technology_tags": "",
+            "bio_lens_tags": _clean(r["bio_lens_tags"]),
+            "domain_tags": _clean(r["domain_tags"]),
+            "technology_tags": _clean(r["technology_tags"]),
             "scale_tags": "",
+            "funding_stage": _clean(r["funding_stage"]),
+            "funding_bucket_usd": _clean(r["funding_bucket_usd"]),
+            "tech_depth": _clean(r["tech_depth"]),
+            "trl": _clean(r["trl_current_status"]),
             "valuation_usd": float(r["valuation_usd"] or 0),
+            "investors_list": [],  # populated after investment_edges are built
             "degree": 0,  # calculated below
             "capital_status": "no_capital_edge",  # updated below
         })
@@ -290,6 +303,23 @@ def run(db_path: Path = DB_PATH, out_path: Path = OUT_PATH) -> dict:
             "capital_evidence_label": label,
             "capital_evidence_note": ev_note,
             "weight": round(0.8 + conf * 1.6, 3),
+        })
+
+    # ── 4b. Populate investors_list on each startup node ────────────────────
+    for r in ie_rows:
+        sid = r["startup_id"]
+        iid = r["investor_id"]
+        if sid not in node_by_id:
+            continue
+        st_node = node_by_id[sid]
+        if st_node.get("type") != "startup":
+            continue
+        inv_node = node_by_id.get(iid)
+        inv_label = inv_node["label"] if inv_node else iid.replace("_", " ").title()
+        st_node["investors_list"].append({
+            "id": iid,
+            "label": inv_label,
+            "stage": _clean(r["round_stage"]),
         })
 
     # ── 5. Build allocator edges (LP→fund) from capital_relations ────────────

@@ -1452,10 +1452,28 @@ document.addEventListener('DOMContentLoaded', function(){
   const _drawerStyle = document.createElement('style');
   _drawerStyle.textContent = '#fund-drawer{position:fixed;top:0;right:0;height:100vh;width:392px;max-width:93vw;background:rgba(255,252,246,.985);border-left:1px solid rgba(217,206,190,.6);box-shadow:-10px 0 34px rgba(0,0,0,.16);padding:22px 24px;overflow-y:auto;z-index:9999;transform:translateX(106%);transition:transform .26s cubic-bezier(.4,0,.2,1);}#fund-drawer.open{transform:translateX(0);}#fund-drawer-close{position:absolute;top:12px;right:14px;border:none;background:transparent;font-size:1.05rem;color:#9a8d7d;cursor:pointer;line-height:1;padding:5px;z-index:2;}#fund-drawer-close:hover{color:#332b22;}';
   document.head.appendChild(_drawerStyle);
-  function openFundDrawer(id){ if(!id){closeFundDrawer();return;} renderFundProfile(id, document.getElementById('fund-drawer-body')); fundDrawer.classList.add('open'); }
+  let _suppressDrawerClose = false;
+  function openFundDrawer(id){
+    if(!id){closeFundDrawer();return;}
+    _suppressDrawerClose = true;
+    const node = nodeById.get(id);
+    const body = document.getElementById('fund-drawer-body');
+    if (node && node.type === 'startup') renderStartupProfile(node, body);
+    else renderFundProfile(id, body);
+    fundDrawer.classList.add('open');
+  }
   function closeFundDrawer(){ fundDrawer.classList.remove('open'); }
   document.getElementById('fund-drawer-close').addEventListener('click', closeFundDrawer);
   document.addEventListener('keydown', e => { if(e.key === 'Escape') closeFundDrawer(); });
+  // Hook para recibir clicks de nodos desde el grafo (capital-atlas.js)
+  window.onAtlasNodeSelected = function(id) { openFundDrawer(id); };
+  // Click fuera del drawer → cerrar (el flag evita flicker cuando se abre otro fondo)
+  document.addEventListener('click', function(e) {
+    if (!fundDrawer.classList.contains('open')) return;
+    if (fundDrawer.contains(e.target)) return;
+    if (_suppressDrawerClose) { _suppressDrawerClose = false; return; }
+    closeFundDrawer();
+  });
 
   // Radial hint acts as back button in focus mode
   document.getElementById('radial-hint').addEventListener('click', () => {
@@ -1478,13 +1496,14 @@ document.addEventListener('DOMContentLoaded', function(){
       renderRadial(id);
     } else if (currentView === 'matrix') {
       highlightMatrixRow(id);
-      openFundDrawer(id);
     } else if (currentView === 'stages') {
       highlightStagesRow(id);
     } else if (currentView === 'fondos') {
       document.querySelectorAll('#fondos-wrap tr[data-id]').forEach(tr =>
         tr.className = tr.dataset.id === id ? 'fo-active' : '');
     }
+    // Drawer global: accesible desde cualquier vista
+    openFundDrawer(id);
   }
 
   // ── Radial view ──────────────────────────────────────────────────────────
@@ -2600,6 +2619,91 @@ document.addEventListener('DOMContentLoaded', function(){
     const base = 0x1F1E6;
     const chars = [...iso.toUpperCase()].map(c => String.fromCodePoint(base + c.charCodeAt(0) - 65));
     return chars.join('');
+  }
+
+  // ── Startup profile card ─────────────────────────────────────────────────
+  const TECH_DEPTH_COL = {deep:'#1A6B3C', enabler:'#0B8F87', applied:'#2E4E8C', platform:'#5C4FA0', unclassified:'#847E73'};
+  const TECH_DEPTH_LBL = {deep:'Deep Bio', enabler:'Enabler', applied:'Applied', platform:'Platform', unclassified:'—'};
+  const FUND_STAGE_LBL = {'pre-seed':'Pre-seed', seed:'Seed', 'series-a':'Serie A', 'series-b':'Serie B',
+                           'series-c':'Serie C', 'series-c+':'Serie C+', growth:'Growth', accelerator:'Aceleración'};
+
+  function renderStartupProfile(node, target) {
+    const card = target || document.getElementById('fund-profile-card');
+    if (!card) return;
+    if (!node) {
+      card.innerHTML = `<div class="fp-placeholder"><span class="fp-placeholder-icon">↗</span><span>Hacé click en una startup<br>para ver su perfil</span></div>`;
+      return;
+    }
+
+    const flag  = node.country ? countryFlag(node.country) : '';
+    const cname = countryName(node.country);
+    const themeCol = THEME_PAL[node.theme] || '#847E73';
+    const depthCol = TECH_DEPTH_COL[node.tech_depth] || '#847E73';
+    const depthLbl = TECH_DEPTH_LBL[node.tech_depth] || (node.tech_depth || '—');
+    const stageLbl = FUND_STAGE_LBL[node.funding_stage] || node.funding_stage || null;
+    const bucketM  = node.funding_bucket_usd && Number(node.funding_bucket_usd) > 0
+                       ? '$' + Number(node.funding_bucket_usd) + 'M' : null;
+
+    let html = `<div class="fp-header">
+      <span class="fp-flag">${flag}</span>
+      <span class="fp-name">${node.label}</span>
+      <span class="sl-badge" style="background:${themeCol}22;color:${themeCol};border:1px solid ${themeCol}44;font-size:.68rem">${THEME_SHORT[node.theme]||node.theme}</span>
+    </div>
+    <div class="fp-stats">
+      ${cname ? `<div class="fp-stat"><div class="fp-stat-label">País</div><div class="fp-stat-value">${cname}</div></div>` : ''}
+      ${node.founded_year ? `<div class="fp-stat"><div class="fp-stat-label">Fundada</div><div class="fp-stat-value">${node.founded_year}</div></div>` : ''}
+      <div class="fp-stat"><div class="fp-stat-label">Tech</div><div class="fp-stat-value"><span style="color:${depthCol};font-weight:700">${depthLbl}</span></div></div>
+      ${stageLbl ? `<div class="fp-stat"><div class="fp-stat-label">Etapa</div><div class="fp-stat-value">${stageLbl}</div></div>` : ''}
+      ${bucketM  ? `<div class="fp-stat"><div class="fp-stat-label">Funding</div><div class="fp-stat-value">${bucketM}</div></div>` : ''}
+      <div class="fp-stat"><div class="fp-stat-label">Conexiones</div><div class="fp-stat-value">${node.degree || 0}</div></div>
+    </div>`;
+
+    // Bio signal row
+    const isBio = node.is_bio === 1 || node.thesis_fit === 'core';
+    const bioLabel = isBio ? 'Bio-core' : 'Eco-adjacent';
+    const bioCol   = isBio ? '#1A6B3C' : '#847E73';
+    html += `<div style="display:flex;align-items:center;gap:8px;margin:10px 0 6px">
+      <span style="font-size:.7rem;font-weight:700;background:${bioCol}18;color:${bioCol};border:1px solid ${bioCol}33;border-radius:20px;padding:2px 9px">${bioLabel}</span>
+      ${node.theme_secondary ? `<span style="font-size:.68rem;color:var(--muted)">${node.theme_secondary}</span>` : ''}
+      ${node.sub_cluster_label ? `<span style="font-size:.67rem;color:var(--muted);opacity:.7">· ${node.sub_cluster_label}</span>` : ''}
+    </div>`;
+
+    // Summary
+    if (node.summary) {
+      html += `<div class="fp-paragraphs"><p class="fp-para">${node.summary}</p></div>`;
+    }
+
+    // Investors list
+    const invs = node.investors_list || [];
+    if (invs.length > 0) {
+      html += `<div style="margin-top:12px">
+        <div style="font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);margin-bottom:6px">Inversores (${invs.length})</div>
+        <div style="display:flex;flex-wrap:wrap;gap:5px">`;
+      invs.forEach(inv => {
+        const stageTag = inv.stage ? ` · ${FUND_STAGE_LBL[inv.stage]||inv.stage}` : '';
+        html += `<span style="font-size:.7rem;background:rgba(11,143,135,.08);color:#0a5a54;border:1px solid rgba(11,143,135,.2);border-radius:20px;padding:3px 9px;cursor:pointer"
+                       onclick="openFundDrawer('${inv.id}')">${inv.label}${stageTag}</span>`;
+      });
+      html += `</div></div>`;
+    } else {
+      html += `<div style="margin-top:12px;font-size:.72rem;color:var(--muted)">Sin inversores mapeados en el grafo.</div>`;
+    }
+
+    // Tags
+    const techTags = (node.technology_tags||'').split(';').filter(Boolean);
+    const bioTags  = (node.bio_lens_tags||'').split(';').filter(Boolean);
+    if (techTags.length || bioTags.length) {
+      html += `<div style="margin-top:12px;display:flex;flex-wrap:wrap;gap:4px">`;
+      bioTags.forEach(t => {
+        html += `<span style="font-size:.66rem;background:#1A6B3C14;color:#1A6B3C;border:1px solid #1A6B3C28;border-radius:4px;padding:2px 6px">${t.trim()}</span>`;
+      });
+      techTags.forEach(t => {
+        html += `<span style="font-size:.66rem;background:rgba(0,0,0,.05);color:var(--muted);border:1px solid var(--line);border-radius:4px;padding:2px 6px">${t.trim()}</span>`;
+      });
+      html += `</div>`;
+    }
+
+    card.innerHTML = html;
   }
 
   // ── Sankey / Capital Flow view ──────────────────────────────────────────

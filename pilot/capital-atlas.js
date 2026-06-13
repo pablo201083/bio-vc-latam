@@ -1788,6 +1788,7 @@
       return;
     }
     renderNodeInspector(id);
+    if (window.onAtlasNodeSelected) window.onAtlasNodeSelected(id);
     return;
     const connected = activeEdges.filter((edge) => edge.source === id || edge.target === id);
     const publicEdges = connected.filter((edge) => edge.evidence_tier === "public_url" || edge.type === "co_investment").length;
