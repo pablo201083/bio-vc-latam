@@ -1,5 +1,5 @@
 window.STARTUP_THEMES_DATA = {
-  "computed_at": "2026-06-13T18:40:11",
+  "computed_at": "2026-06-13T18:43:34",
   "model": "intfloat/multilingual-e5-small",
   "stats": {
     "total_startups": 579,
@@ -34,8 +34,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Biomaterials & Green Chemistry — Materials",
       "cluster_keywords": "materials · biomaterials · chemistry · circular",
       "cluster_confidence": 0.505,
-      "x": -1.713,
-      "y": 1.793,
+      "x": -1.739,
+      "y": 1.757,
       "is_outlier": false,
       "tech_codes": [
         "iot",
@@ -62,8 +62,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -1.24,
-      "sy": 2.273,
+      "sx": -1.298,
+      "sy": 2.194,
       "bio_lens": [
         "circular",
         "human-health-bio",
@@ -88,10 +88,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2019,
-      "ux": 5.387,
-      "uy": 1.69,
-      "hx": -1.713,
-      "hy": 1.793,
+      "ux": 5.25,
+      "uy": 1.895,
+      "hx": -1.739,
+      "hy": 1.757,
       "investor_ids": [
         "GridX"
       ]
@@ -163,8 +163,8 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.908,
       "founded_year": null,
-      "ux": -3.839,
-      "uy": 2.46,
+      "ux": -3.933,
+      "uy": 2.394,
       "hx": -8.738,
       "hy": -2.441,
       "investor_ids": [
@@ -187,8 +187,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Biomaterials & Green Chemistry — Materials",
       "cluster_keywords": "materials · biomaterials · chemistry · circular",
       "cluster_confidence": 0.838,
-      "x": -1.678,
-      "y": 1.955,
+      "x": -1.705,
+      "y": 1.917,
       "is_outlier": false,
       "tech_codes": [
         "saas_marketplace",
@@ -213,8 +213,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -1.162,
-      "sy": 2.634,
+      "sx": -1.221,
+      "sy": 2.549,
       "bio_lens": [
         "planetary-boundary"
       ],
@@ -233,10 +233,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2020,
-      "ux": 6.335,
-      "uy": 1.608,
-      "hx": -1.678,
-      "hy": 1.955,
+      "ux": 6.194,
+      "uy": 1.841,
+      "hx": -1.705,
+      "hy": 1.917,
       "investor_ids": [
         "GridX"
       ]
@@ -257,8 +257,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Biomaterials & Green Chemistry — Materials",
       "cluster_keywords": "materials · biomaterials · chemistry · circular",
       "cluster_confidence": 0.99,
-      "x": -3.079,
-      "y": 0.031,
+      "x": -3.085,
+      "y": 0.021,
       "is_outlier": false,
       "tech_codes": [
         "enzymatic",
@@ -288,8 +288,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -4.276,
-      "sy": -1.641,
+      "sx": -4.29,
+      "sy": -1.664,
       "bio_lens": [
         "biobased",
         "bio-enabled-industrial-transition",
@@ -321,10 +321,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.828,
       "founded_year": 2021,
-      "ux": -6.579,
-      "uy": -2.8,
-      "hx": -3.079,
-      "hy": 0.031,
+      "ux": -6.502,
+      "uy": -2.908,
+      "hx": -3.085,
+      "hy": 0.021,
       "investor_ids": [
         "GridX",
         "zentynel"
@@ -408,8 +408,8 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.752,
       "founded_year": 2019,
-      "ux": 5.707,
-      "uy": 1.69,
+      "ux": 5.568,
+      "uy": 1.904,
       "hx": -8.358,
       "hy": -0.746,
       "investor_ids": [
@@ -432,8 +432,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Biomaterials & Green Chemistry — Materials",
       "cluster_keywords": "materials · biomaterials · chemistry · circular",
       "cluster_confidence": 0.838,
-      "x": -1.699,
-      "y": 1.95,
+      "x": -1.726,
+      "y": 1.912,
       "is_outlier": false,
       "tech_codes": [
         "biomanufacturing",
@@ -460,8 +460,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -1.21,
-      "sy": 2.622,
+      "sx": -1.268,
+      "sy": 2.538,
       "bio_lens": [
         "biobased",
         "bio-enabled-industrial-transition",
@@ -491,10 +491,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.712,
       "founded_year": 2019,
-      "ux": 6.27,
-      "uy": 1.5,
-      "hx": -1.699,
-      "hy": 1.95,
+      "ux": 6.133,
+      "uy": 1.732,
+      "hx": -1.726,
+      "hy": 1.912,
       "investor_ids": [
         "kamay_ventures"
       ]
@@ -515,8 +515,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Biomaterials & Green Chemistry — Materials",
       "cluster_keywords": "materials · biomaterials · chemistry · circular",
       "cluster_confidence": 1.0,
-      "x": -1.702,
-      "y": 2.054,
+      "x": -1.728,
+      "y": 2.015,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -538,8 +538,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
-      "sx": -1.216,
-      "sy": 2.854,
+      "sx": -1.274,
+      "sy": 2.766,
       "bio_lens": [
         "biobased",
         "circular",
@@ -561,10 +561,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2020,
-      "ux": 6.837,
-      "uy": 1.307,
-      "hx": -1.702,
-      "hy": 2.054,
+      "ux": 6.701,
+      "uy": 1.557,
+      "hx": -1.728,
+      "hy": 2.015,
       "investor_ids": [
         "claritas_capital",
         "front_row_fund"
@@ -586,8 +586,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Biomaterials & Green Chemistry — Materials",
       "cluster_keywords": "materials · biomaterials · chemistry · circular",
       "cluster_confidence": 1.0,
-      "x": -1.656,
-      "y": 2.142,
+      "x": -1.683,
+      "y": 2.101,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -609,8 +609,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
-      "sx": -1.113,
-      "sy": 3.049,
+      "sx": -1.172,
+      "sy": 2.959,
       "bio_lens": [
         "biobased",
         "circular",
@@ -632,10 +632,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2020,
-      "ux": 7.397,
-      "uy": 1.412,
-      "hx": -1.656,
-      "hy": 2.142,
+      "ux": 7.254,
+      "uy": 1.677,
+      "hx": -1.683,
+      "hy": 2.101,
       "investor_ids": [
         "btg_pactual"
       ]
@@ -656,8 +656,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Biomaterials & Green Chemistry — Materials",
       "cluster_keywords": "materials · biomaterials · chemistry · circular",
       "cluster_confidence": 0.827,
-      "x": -1.721,
-      "y": 1.842,
+      "x": -1.747,
+      "y": 1.806,
       "is_outlier": false,
       "tech_codes": [
         "formulation",
@@ -688,8 +688,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -1.258,
-      "sy": 2.383,
+      "sx": -1.316,
+      "sy": 2.302,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -720,10 +720,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.784,
       "founded_year": 2021,
-      "ux": 5.644,
-      "uy": 1.562,
-      "hx": -1.721,
-      "hy": 1.842,
+      "ux": 5.509,
+      "uy": 1.776,
+      "hx": -1.747,
+      "hy": 1.806,
       "investor_ids": [
         "GridX"
       ]
@@ -744,8 +744,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Biomaterials & Green Chemistry — Materials",
       "cluster_keywords": "materials · biomaterials · chemistry · circular",
       "cluster_confidence": 0.505,
-      "x": -1.722,
-      "y": 1.777,
+      "x": -1.748,
+      "y": 1.742,
       "is_outlier": false,
       "tech_codes": [
         "microbial",
@@ -774,8 +774,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -1.26,
-      "sy": 2.238,
+      "sx": -1.318,
+      "sy": 2.16,
       "bio_lens": [
         "biobased",
         "biocentric",
@@ -806,10 +806,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.732,
       "founded_year": 2020,
-      "ux": 5.286,
-      "uy": 1.668,
-      "hx": -1.722,
-      "hy": 1.777,
+      "ux": 5.15,
+      "uy": 1.87,
+      "hx": -1.748,
+      "hy": 1.742,
       "investor_ids": [
         "SF500"
       ]
@@ -830,8 +830,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Biomaterials & Green Chemistry — Materials",
       "cluster_keywords": "materials · biomaterials · chemistry · circular",
       "cluster_confidence": 0.643,
-      "x": 0.13,
-      "y": 1.311,
+      "x": -1.763,
+      "y": 1.895,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -841,7 +841,7 @@ window.STARTUP_THEMES_DATA = {
       "pagerank": 0.0,
       "valuation_tier": null,
       "n_investors_mapped": 0,
-      "bio_theme": "",
+      "bio_theme": "Biomaterials & Green Chemistry",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
       "sub_cluster_label": "",
@@ -850,8 +850,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": 0.289,
-      "sy": 2.913,
+      "sx": -1.351,
+      "sy": 2.501,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -863,10 +863,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "unclassified",
       "tech_depth_confidence": 0.5,
       "founded_year": null,
-      "ux": 6.113,
-      "uy": 1.32,
-      "hx": 0.13,
-      "hy": 1.311,
+      "ux": 5.982,
+      "uy": 1.548,
+      "hx": -1.763,
+      "hy": 1.895,
       "investor_ids": []
     },
     {
@@ -885,8 +885,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Biomaterials & Green Chemistry — Materials",
       "cluster_keywords": "materials · biomaterials · chemistry · circular",
       "cluster_confidence": 1.0,
-      "x": -1.671,
-      "y": 2.119,
+      "x": -1.697,
+      "y": 2.078,
       "is_outlier": false,
       "tech_codes": [
         "clean_energy",
@@ -911,8 +911,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -1.146,
-      "sy": 2.997,
+      "sx": -1.205,
+      "sy": 2.907,
       "bio_lens": [
         "biobased",
         "circular",
@@ -935,10 +935,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.7,
       "founded_year": 2019,
-      "ux": 7.243,
-      "uy": 1.371,
-      "hx": -1.671,
-      "hy": 2.119,
+      "ux": 7.102,
+      "uy": 1.632,
+      "hx": -1.697,
+      "hy": 2.078,
       "investor_ids": [
         "GridX"
       ]
@@ -959,8 +959,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Biomaterials & Green Chemistry — Materials",
       "cluster_keywords": "materials · biomaterials · chemistry · circular",
       "cluster_confidence": 1.0,
-      "x": -1.671,
-      "y": 2.127,
+      "x": -1.698,
+      "y": 2.086,
       "is_outlier": false,
       "tech_codes": [
         "green_chem",
@@ -985,8 +985,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -1.148,
-      "sy": 3.015,
+      "sx": -1.207,
+      "sy": 2.925,
       "bio_lens": [
         "biobased",
         "biocentric",
@@ -1012,10 +1012,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.7,
       "founded_year": 2019,
-      "ux": 7.286,
-      "uy": 1.352,
-      "hx": -1.671,
-      "hy": 2.127,
+      "ux": 7.145,
+      "uy": 1.614,
+      "hx": -1.698,
+      "hy": 2.086,
       "investor_ids": [
         "GridX"
       ]
@@ -1036,8 +1036,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Biomaterials & Green Chemistry — Materials",
       "cluster_keywords": "materials · biomaterials · chemistry · circular",
       "cluster_confidence": 0.76,
-      "x": -1.697,
-      "y": 1.872,
+      "x": -1.723,
+      "y": 1.835,
       "is_outlier": false,
       "tech_codes": [
         "synbio",
@@ -1066,8 +1066,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -1.204,
-      "sy": 2.449,
+      "sx": -1.262,
+      "sy": 2.367,
       "bio_lens": [
         "biobased",
         "bio-enabled-industrial-transition",
@@ -1102,10 +1102,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.812,
       "founded_year": 2019,
-      "ux": 5.849,
-      "uy": 1.647,
-      "hx": -1.697,
-      "hy": 1.872,
+      "ux": 5.71,
+      "uy": 1.865,
+      "hx": -1.723,
+      "hy": 1.835,
       "investor_ids": [
         "GridX"
       ]
@@ -1126,8 +1126,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Biomaterials & Green Chemistry — Materials",
       "cluster_keywords": "materials · biomaterials · chemistry · circular",
       "cluster_confidence": 0.537,
-      "x": 0.17,
-      "y": 1.258,
+      "x": -1.729,
+      "y": 1.85,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -1137,7 +1137,7 @@ window.STARTUP_THEMES_DATA = {
       "pagerank": 0.0,
       "valuation_tier": null,
       "n_investors_mapped": 0,
-      "bio_theme": "",
+      "bio_theme": "Biomaterials & Green Chemistry",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
       "sub_cluster_label": "",
@@ -1146,8 +1146,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": 0.378,
-      "sy": 2.796,
+      "sx": -1.275,
+      "sy": 2.401,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -1159,10 +1159,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "medium",
       "tech_depth_confidence": 0.5,
       "founded_year": 2017,
-      "ux": 5.922,
-      "uy": 1.588,
-      "hx": 0.17,
-      "hy": 1.258,
+      "ux": 5.785,
+      "uy": 1.809,
+      "hx": -1.729,
+      "hy": 1.85,
       "investor_ids": []
     },
     {
@@ -1181,8 +1181,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Biomaterials & Green Chemistry — Materials",
       "cluster_keywords": "materials · biomaterials · chemistry · circular",
       "cluster_confidence": 1.0,
-      "x": -1.685,
-      "y": 2.108,
+      "x": -1.711,
+      "y": 2.068,
       "is_outlier": false,
       "tech_codes": [
         "biomaterials"
@@ -1206,8 +1206,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -1.177,
-      "sy": 2.974,
+      "sx": -1.236,
+      "sy": 2.885,
       "bio_lens": [
         "biobased",
         "bio-enabled-industrial-transition"
@@ -1230,10 +1230,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2017,
-      "ux": 7.163,
-      "uy": 1.312,
-      "hx": -1.685,
-      "hy": 2.108,
+      "ux": 7.025,
+      "uy": 1.57,
+      "hx": -1.711,
+      "hy": 2.068,
       "investor_ids": []
     },
     {
@@ -1252,8 +1252,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Biomaterials & Green Chemistry — Materials",
       "cluster_keywords": "materials · biomaterials · chemistry · circular",
       "cluster_confidence": 1.0,
-      "x": -1.659,
-      "y": 2.14,
+      "x": -1.685,
+      "y": 2.1,
       "is_outlier": false,
       "tech_codes": [
         "water_tech"
@@ -1277,8 +1277,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 15,
       "valuation_estimate_usd": 15.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -1.119,
-      "sy": 3.045,
+      "sx": -1.179,
+      "sy": 2.955,
       "bio_lens": [
         "biocentric",
         "planetary-boundary"
@@ -1299,10 +1299,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2014,
-      "ux": 7.382,
-      "uy": 1.4,
-      "hx": -1.659,
-      "hy": 2.14,
+      "ux": 7.24,
+      "uy": 1.664,
+      "hx": -1.685,
+      "hy": 2.1,
       "investor_ids": [
         "bossa_invest",
         "ght4_group"
@@ -1324,8 +1324,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Biomaterials & Green Chemistry — Materials",
       "cluster_keywords": "materials · biomaterials · chemistry · circular",
       "cluster_confidence": 0.855,
-      "x": -1.731,
-      "y": 1.935,
+      "x": -1.757,
+      "y": 1.898,
       "is_outlier": false,
       "tech_codes": [
         "enzymatic",
@@ -1354,8 +1354,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -1.28,
-      "sy": 2.59,
+      "sx": -1.337,
+      "sy": 2.506,
       "bio_lens": [
         "biobased",
         "bio-enabled-industrial-transition",
@@ -1387,10 +1387,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.712,
       "founded_year": 2021,
-      "ux": 6.137,
-      "uy": 1.352,
-      "hx": -1.731,
-      "hy": 1.935,
+      "ux": 6.004,
+      "uy": 1.581,
+      "hx": -1.757,
+      "hy": 1.898,
       "investor_ids": [
         "GridX"
       ]
@@ -1411,8 +1411,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Biomaterials & Green Chemistry — Materials",
       "cluster_keywords": "materials · biomaterials · chemistry · circular",
       "cluster_confidence": 0.827,
-      "x": -1.722,
-      "y": 1.862,
+      "x": -1.748,
+      "y": 1.825,
       "is_outlier": false,
       "tech_codes": [
         "green_chem",
@@ -1437,8 +1437,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -1.261,
-      "sy": 2.427,
+      "sx": -1.318,
+      "sy": 2.345,
       "bio_lens": [
         "biobased"
       ],
@@ -1462,10 +1462,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.712,
       "founded_year": 2021,
-      "ux": 5.749,
-      "uy": 1.523,
-      "hx": -1.722,
-      "hy": 1.862,
+      "ux": 5.615,
+      "uy": 1.739,
+      "hx": -1.748,
+      "hy": 1.825,
       "investor_ids": [
         "GridX"
       ]
@@ -1486,8 +1486,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Biomaterials & Green Chemistry — Materials",
       "cluster_keywords": "materials · biomaterials · chemistry · circular",
       "cluster_confidence": 0.838,
-      "x": -1.688,
-      "y": 1.948,
+      "x": -1.714,
+      "y": 1.91,
       "is_outlier": false,
       "tech_codes": [
         "saas_marketplace",
@@ -1514,8 +1514,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -1.184,
-      "sy": 2.618,
+      "sx": -1.242,
+      "sy": 2.534,
       "bio_lens": [
         "circular",
         "planetary-boundary"
@@ -1538,10 +1538,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.892,
       "founded_year": 2020,
-      "ux": 6.28,
-      "uy": 1.566,
-      "hx": -1.688,
-      "hy": 1.948,
+      "ux": 6.141,
+      "uy": 1.798,
+      "hx": -1.714,
+      "hy": 1.91,
       "investor_ids": [
         "Antom"
       ]
@@ -1562,8 +1562,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Biomaterials & Green Chemistry — Materials",
       "cluster_keywords": "materials · biomaterials · chemistry · circular",
       "cluster_confidence": 1.0,
-      "x": -1.663,
-      "y": 2.137,
+      "x": -1.69,
+      "y": 2.096,
       "is_outlier": false,
       "tech_codes": [
         "biomaterials"
@@ -1587,8 +1587,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 25,
       "valuation_estimate_usd": 25.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -1.129,
-      "sy": 3.037,
+      "sx": -1.189,
+      "sy": 2.947,
       "bio_lens": [
         "biobased",
         "bio-enabled-industrial-transition"
@@ -1609,10 +1609,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2009,
-      "ux": 7.354,
-      "uy": 1.381,
-      "hx": -1.663,
-      "hy": 2.137,
+      "ux": 7.213,
+      "uy": 1.645,
+      "hx": -1.69,
+      "hy": 2.096,
       "investor_ids": [
         "fors_capital"
       ]
@@ -1633,8 +1633,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Biomaterials & Green Chemistry — Materials",
       "cluster_keywords": "materials · biomaterials · chemistry · circular",
       "cluster_confidence": 0.505,
-      "x": -1.711,
-      "y": 1.795,
+      "x": -1.737,
+      "y": 1.76,
       "is_outlier": false,
       "tech_codes": [
         "microbial",
@@ -1661,8 +1661,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -1.236,
-      "sy": 2.279,
+      "sx": -1.294,
+      "sy": 2.199,
       "bio_lens": [
         "circular",
         "planetary-boundary"
@@ -1686,10 +1686,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.692,
       "founded_year": 2021,
-      "ux": 5.404,
-      "uy": 1.698,
-      "hx": -1.711,
-      "hy": 1.795,
+      "ux": 5.267,
+      "uy": 1.903,
+      "hx": -1.737,
+      "hy": 1.76,
       "investor_ids": [
         "GridX"
       ]
@@ -1710,8 +1710,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Biomaterials & Green Chemistry — Materials",
       "cluster_keywords": "materials · biomaterials · chemistry · circular",
       "cluster_confidence": 0.927,
-      "x": -1.709,
-      "y": 2.051,
+      "x": -1.735,
+      "y": 2.011,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -1733,8 +1733,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
-      "sx": -1.23,
-      "sy": 2.846,
+      "sx": -1.288,
+      "sy": 2.758,
       "bio_lens": [
         "biobased",
         "circular",
@@ -1754,10 +1754,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2020,
-      "ux": 6.806,
-      "uy": 1.278,
-      "hx": -1.709,
-      "hy": 2.051,
+      "ux": 6.671,
+      "uy": 1.526,
+      "hx": -1.735,
+      "hy": 2.011,
       "investor_ids": []
     },
     {
@@ -1776,8 +1776,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Biomaterials & Green Chemistry — Materials",
       "cluster_keywords": "materials · biomaterials · chemistry · circular",
       "cluster_confidence": 0.348,
-      "x": -0.735,
-      "y": 1.647,
+      "x": -0.775,
+      "y": 1.613,
       "is_outlier": true,
       "tech_codes": [
         "nanotech",
@@ -1802,8 +1802,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": 0.934,
-      "sy": 1.948,
+      "sx": 0.845,
+      "sy": 1.873,
       "bio_lens": [
         "planetary-boundary"
       ],
@@ -1822,10 +1822,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.7,
       "founded_year": 2019,
-      "ux": 6.247,
-      "uy": 7.298,
-      "hx": -0.735,
-      "hy": 1.647,
+      "ux": 5.943,
+      "uy": 7.489,
+      "hx": -0.775,
+      "hy": 1.613,
       "investor_ids": [
         "GridX"
       ]
@@ -1846,8 +1846,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Biomaterials & Green Chemistry — Materials",
       "cluster_keywords": "materials · biomaterials · chemistry · circular",
       "cluster_confidence": 0.565,
-      "x": -1.697,
-      "y": 2.011,
+      "x": -1.723,
+      "y": 1.972,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -1869,8 +1869,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -1.203,
-      "sy": 2.758,
+      "sx": -1.262,
+      "sy": 2.671,
       "bio_lens": [
         "biobased",
         "circular",
@@ -1890,10 +1890,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2016,
-      "ux": 6.609,
-      "uy": 1.412,
-      "hx": -1.697,
-      "hy": 2.011,
+      "ux": 6.472,
+      "uy": 1.654,
+      "hx": -1.723,
+      "hy": 1.972,
       "investor_ids": [
         "gef",
         "idb_invest"
@@ -1975,8 +1975,8 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.828,
       "founded_year": 2020,
-      "ux": 5.319,
-      "uy": 1.722,
+      "ux": 5.182,
+      "uy": 1.925,
       "hx": -8.374,
       "hy": -0.815,
       "investor_ids": [
@@ -2000,8 +2000,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Biomaterials & Green Chemistry — Materials",
       "cluster_keywords": "materials · biomaterials · chemistry · circular",
       "cluster_confidence": 1.0,
-      "x": -1.655,
-      "y": 2.146,
+      "x": -1.682,
+      "y": 2.105,
       "is_outlier": false,
       "tech_codes": [
         "biomaterials",
@@ -2026,8 +2026,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 0,
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -1.112,
-      "sy": 3.057,
+      "sx": -1.171,
+      "sy": 2.967,
       "bio_lens": [
         "biobased",
         "bio-enabled-industrial-transition"
@@ -2051,10 +2051,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.7,
       "founded_year": 2012,
-      "ux": 7.418,
-      "uy": 1.409,
-      "hx": -1.655,
-      "hy": 2.146,
+      "ux": 7.275,
+      "uy": 1.674,
+      "hx": -1.682,
+      "hy": 2.105,
       "investor_ids": []
     },
     {
@@ -2073,8 +2073,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Biomaterials & Green Chemistry — Materials",
       "cluster_keywords": "materials · biomaterials · chemistry · circular",
       "cluster_confidence": 1.0,
-      "x": -1.733,
-      "y": 1.967,
+      "x": -1.759,
+      "y": 1.929,
       "is_outlier": false,
       "tech_codes": [
         "iot",
@@ -2105,8 +2105,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -1.284,
-      "sy": 2.661,
+      "sx": -1.341,
+      "sy": 2.576,
       "bio_lens": [
         "biobased",
         "biocentric",
@@ -2138,10 +2138,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.804,
       "founded_year": 2004,
-      "ux": 6.308,
-      "uy": 1.287,
-      "hx": -1.733,
-      "hy": 1.967,
+      "ux": 6.177,
+      "uy": 1.521,
+      "hx": -1.759,
+      "hy": 1.929,
       "investor_ids": [
         "GridX"
       ]
@@ -2162,8 +2162,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Biomaterials & Green Chemistry — Materials",
       "cluster_keywords": "materials · biomaterials · chemistry · circular",
       "cluster_confidence": 0.802,
-      "x": -1.695,
-      "y": 2.085,
+      "x": -1.721,
+      "y": 2.045,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -2185,8 +2185,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
-      "sx": -1.199,
-      "sy": 2.922,
+      "sx": -1.257,
+      "sy": 2.833,
       "bio_lens": [
         "biobased",
         "circular",
@@ -2206,10 +2206,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2022,
-      "ux": 7.016,
-      "uy": 1.297,
-      "hx": -1.695,
-      "hy": 2.085,
+      "ux": 6.879,
+      "uy": 1.552,
+      "hx": -1.721,
+      "hy": 2.045,
       "investor_ids": [
         "sosv"
       ]
@@ -2230,8 +2230,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Biomaterials & Green Chemistry — Materials",
       "cluster_keywords": "materials · biomaterials · chemistry · circular",
       "cluster_confidence": 1.0,
-      "x": -1.662,
-      "y": 2.13,
+      "x": -1.689,
+      "y": 2.089,
       "is_outlier": false,
       "tech_codes": [
         "biomaterials"
@@ -2255,8 +2255,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 5,
       "valuation_estimate_usd": 5.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -1.126,
-      "sy": 3.021,
+      "sx": -1.186,
+      "sy": 2.931,
       "bio_lens": [
         "biobased",
         "bio-enabled-industrial-transition"
@@ -2279,10 +2279,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2017,
-      "ux": 7.317,
-      "uy": 1.4,
-      "hx": -1.662,
-      "hy": 2.13,
+      "ux": 7.175,
+      "uy": 1.663,
+      "hx": -1.689,
+      "hy": 2.089,
       "investor_ids": [
         "oxygea"
       ]
@@ -2303,8 +2303,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Biomaterials & Green Chemistry — Materials",
       "cluster_keywords": "materials · biomaterials · chemistry · circular",
       "cluster_confidence": 0.827,
-      "x": -1.724,
-      "y": 1.871,
+      "x": -1.75,
+      "y": 1.834,
       "is_outlier": false,
       "tech_codes": [
         "biomaterials",
@@ -2330,8 +2330,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -1.265,
-      "sy": 2.446,
+      "sx": -1.322,
+      "sy": 2.364,
       "bio_lens": [
         "biobased",
         "bio-enabled-industrial-transition",
@@ -2362,10 +2362,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.732,
       "founded_year": 2011,
-      "ux": 5.794,
-      "uy": 1.499,
-      "hx": -1.724,
-      "hy": 1.871,
+      "ux": 5.66,
+      "uy": 1.717,
+      "hx": -1.75,
+      "hy": 1.834,
       "investor_ids": [
         "SF500"
       ]
@@ -2386,8 +2386,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Biomaterials & Green Chemistry — Materials",
       "cluster_keywords": "materials · biomaterials · chemistry · circular",
       "cluster_confidence": 1.0,
-      "x": 0.2,
-      "y": 1.524,
+      "x": -1.703,
+      "y": 2.077,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -2397,7 +2397,7 @@ window.STARTUP_THEMES_DATA = {
       "pagerank": 0.0,
       "valuation_tier": null,
       "n_investors_mapped": 0,
-      "bio_theme": "",
+      "bio_theme": "Biomaterials & Green Chemistry",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
       "sub_cluster_label": "",
@@ -2406,8 +2406,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": 0.445,
-      "sy": 3.386,
+      "sx": -1.218,
+      "sy": 2.904,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -2417,10 +2417,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "medium",
       "tech_depth_confidence": 0.5,
       "founded_year": 2020,
-      "ux": 7.224,
-      "uy": 1.339,
-      "hx": 0.2,
-      "hy": 1.524,
+      "ux": 7.085,
+      "uy": 1.6,
+      "hx": -1.703,
+      "hy": 2.077,
       "investor_ids": []
     },
     {
@@ -2439,8 +2439,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Biomaterials & Green Chemistry — Materials",
       "cluster_keywords": "materials · biomaterials · chemistry · circular",
       "cluster_confidence": 0.829,
-      "x": -1.71,
-      "y": 1.878,
+      "x": -1.736,
+      "y": 1.841,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -2462,8 +2462,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -1.234,
-      "sy": 2.462,
+      "sx": -1.292,
+      "sy": 2.38,
       "bio_lens": [
         "biobased",
         "circular",
@@ -2486,10 +2486,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2014,
-      "ux": 5.857,
-      "uy": 1.563,
-      "hx": -1.71,
-      "hy": 1.878,
+      "ux": 5.721,
+      "uy": 1.782,
+      "hx": -1.736,
+      "hy": 1.841,
       "investor_ids": [
         "savia_ventures"
       ]
@@ -2510,8 +2510,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Biomaterials & Green Chemistry — Materials",
       "cluster_keywords": "materials · biomaterials · chemistry · circular",
       "cluster_confidence": 0.76,
-      "x": -1.698,
-      "y": 1.846,
+      "x": -1.724,
+      "y": 1.809,
       "is_outlier": false,
       "tech_codes": [
         "fermentation",
@@ -2541,8 +2541,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 25,
       "valuation_estimate_usd": 25.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -1.206,
-      "sy": 2.391,
+      "sx": -1.265,
+      "sy": 2.31,
       "bio_lens": [
         "biobased",
         "biocentric",
@@ -2575,10 +2575,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.864,
       "founded_year": 2019,
-      "ux": 5.703,
-      "uy": 1.685,
-      "hx": -1.698,
-      "hy": 1.846,
+      "ux": 5.564,
+      "uy": 1.899,
+      "hx": -1.724,
+      "hy": 1.809,
       "investor_ids": [
         "GridX",
         "SOSV_IndieBio",
@@ -2602,8 +2602,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Biomaterials & Green Chemistry — Materials",
       "cluster_keywords": "materials · biomaterials · chemistry · circular",
       "cluster_confidence": 0.356,
-      "x": 1.567,
-      "y": 1.885,
+      "x": 1.543,
+      "y": 1.886,
       "is_outlier": true,
       "tech_codes": [
         "ai_ml",
@@ -2632,8 +2632,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": 0.916,
-      "sy": 1.621,
+      "sx": 0.861,
+      "sy": 1.625,
       "bio_lens": [
         "circular",
         "planetary-boundary"
@@ -2658,10 +2658,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.684,
       "founded_year": 2021,
-      "ux": -4.44,
-      "uy": -1.001,
-      "hx": 1.567,
-      "hy": 1.885,
+      "ux": -4.43,
+      "uy": -1.061,
+      "hx": 1.543,
+      "hy": 1.886,
       "investor_ids": [
         "GridX"
       ]
@@ -2682,8 +2682,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Biomaterials & Green Chemistry — Materials",
       "cluster_keywords": "materials · biomaterials · chemistry · circular",
       "cluster_confidence": 1.0,
-      "x": -1.718,
-      "y": 1.931,
+      "x": -1.744,
+      "y": 1.894,
       "is_outlier": false,
       "tech_codes": [
         "computational_bio",
@@ -2711,8 +2711,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -1.251,
-      "sy": 2.58,
+      "sx": -1.309,
+      "sy": 2.497,
       "bio_lens": [
         "biobased"
       ],
@@ -2736,10 +2736,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.724,
       "founded_year": 2020,
-      "ux": 6.136,
-      "uy": 1.429,
-      "hx": -1.718,
-      "hy": 1.931,
+      "ux": 6.001,
+      "uy": 1.658,
+      "hx": -1.744,
+      "hy": 1.894,
       "investor_ids": [
         "GridX"
       ]
@@ -2760,8 +2760,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Biomaterials & Green Chemistry — Materials",
       "cluster_keywords": "materials · biomaterials · chemistry · circular",
       "cluster_confidence": 0.829,
-      "x": -1.689,
-      "y": 1.879,
+      "x": -1.716,
+      "y": 1.842,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -2783,8 +2783,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -1.188,
-      "sy": 2.463,
+      "sx": -1.246,
+      "sy": 2.381,
       "bio_lens": [
         "biobased",
         "circular",
@@ -2808,10 +2808,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2022,
-      "ux": 5.895,
-      "uy": 1.675,
-      "hx": -1.689,
-      "hy": 1.879,
+      "ux": 5.756,
+      "uy": 1.895,
+      "hx": -1.716,
+      "hy": 1.842,
       "investor_ids": [
         "savia_ventures"
       ]
@@ -2832,8 +2832,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Biomaterials & Green Chemistry — Materials",
       "cluster_keywords": "materials · biomaterials · chemistry · circular",
       "cluster_confidence": 0.838,
-      "x": -1.67,
-      "y": 1.949,
+      "x": -1.697,
+      "y": 1.911,
       "is_outlier": false,
       "tech_codes": [
         "blockchain",
@@ -2858,8 +2858,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -1.145,
-      "sy": 2.621,
+      "sx": -1.204,
+      "sy": 2.537,
       "bio_lens": [
         "circular",
         "planetary-boundary"
@@ -2881,10 +2881,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.905,
       "founded_year": 2019,
-      "ux": 6.316,
-      "uy": 1.659,
-      "hx": -1.67,
-      "hy": 1.949,
+      "ux": 6.174,
+      "uy": 1.891,
+      "hx": -1.697,
+      "hy": 1.911,
       "investor_ids": [
         "kamay_ventures"
       ]
@@ -2905,8 +2905,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Biomaterials & Green Chemistry — Materials",
       "cluster_keywords": "materials · biomaterials · chemistry · circular",
       "cluster_confidence": 1.0,
-      "x": -1.708,
-      "y": 2.067,
+      "x": -1.734,
+      "y": 2.028,
       "is_outlier": false,
       "tech_codes": [
         "microbial",
@@ -2931,8 +2931,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -1.228,
-      "sy": 2.883,
+      "sx": -1.286,
+      "sy": 2.795,
       "bio_lens": [
         "biobased",
         "circular",
@@ -2955,10 +2955,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.7,
       "founded_year": 2021,
-      "ux": 6.899,
-      "uy": 1.254,
-      "hx": -1.708,
-      "hy": 2.067,
+      "ux": 6.765,
+      "uy": 1.506,
+      "hx": -1.734,
+      "hy": 2.028,
       "investor_ids": [
         "SF500"
       ]
@@ -2979,8 +2979,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Biomaterials & Green Chemistry — Materials",
       "cluster_keywords": "materials · biomaterials · chemistry · circular",
       "cluster_confidence": 0.827,
-      "x": -1.721,
-      "y": 1.858,
+      "x": -1.747,
+      "y": 1.821,
       "is_outlier": false,
       "tech_codes": [
         "biomaterials",
@@ -3008,8 +3008,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -1.258,
-      "sy": 2.418,
+      "sx": -1.316,
+      "sy": 2.336,
       "bio_lens": [
         "biobased",
         "human-health-bio",
@@ -3036,10 +3036,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.772,
       "founded_year": 2020,
-      "ux": 5.729,
-      "uy": 1.537,
-      "hx": -1.721,
-      "hy": 1.858,
+      "ux": 5.594,
+      "uy": 1.753,
+      "hx": -1.747,
+      "hy": 1.821,
       "investor_ids": [
         "aceleradora_litoral"
       ]
@@ -3060,8 +3060,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Biomaterials & Green Chemistry — Materials",
       "cluster_keywords": "materials · biomaterials · chemistry · circular",
       "cluster_confidence": 0.829,
-      "x": 2.672,
-      "y": 3.702,
+      "x": 2.654,
+      "y": 3.714,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -3083,8 +3083,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": 3.371,
-      "sy": 5.659,
+      "sx": 3.332,
+      "sy": 5.687,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -3104,10 +3104,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2021,
-      "ux": 5.847,
-      "uy": 1.579,
-      "hx": 2.672,
-      "hy": 3.702,
+      "ux": 5.71,
+      "uy": 1.798,
+      "hx": 2.654,
+      "hy": 3.714,
       "investor_ids": [
         "savia_ventures"
       ]
@@ -3128,8 +3128,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Biomaterials & Green Chemistry — Materials",
       "cluster_keywords": "materials · biomaterials · chemistry · circular",
       "cluster_confidence": 1.0,
-      "x": -1.736,
-      "y": 1.951,
+      "x": -1.762,
+      "y": 1.913,
       "is_outlier": false,
       "tech_codes": [
         "microbial",
@@ -3156,8 +3156,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -1.292,
-      "sy": 2.624,
+      "sx": -1.349,
+      "sy": 2.54,
       "bio_lens": [
         "biobased",
         "biocentric",
@@ -3184,10 +3184,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.7,
       "founded_year": 2021,
-      "ux": 6.213,
-      "uy": 1.295,
-      "hx": -1.736,
-      "hy": 1.951,
+      "ux": 6.082,
+      "uy": 1.527,
+      "hx": -1.762,
+      "hy": 1.913,
       "investor_ids": [
         "The Ganesha Lab"
       ]
@@ -3208,8 +3208,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Biomaterials & Green Chemistry — Materials",
       "cluster_keywords": "materials · biomaterials · chemistry · circular",
       "cluster_confidence": 1.0,
-      "x": -1.659,
-      "y": 2.143,
+      "x": -1.686,
+      "y": 2.102,
       "is_outlier": false,
       "tech_codes": [
         "biomaterials",
@@ -3234,8 +3234,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 25,
       "valuation_estimate_usd": 25.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -1.119,
-      "sy": 3.051,
+      "sx": -1.179,
+      "sy": 2.96,
       "bio_lens": [
         "biobased",
         "bio-enabled-industrial-transition"
@@ -3259,10 +3259,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.712,
       "founded_year": 2015,
-      "ux": 7.396,
-      "uy": 1.395,
-      "hx": -1.659,
-      "hy": 2.143,
+      "ux": 7.253,
+      "uy": 1.66,
+      "hx": -1.686,
+      "hy": 2.102,
       "investor_ids": [
         "blue_horizon"
       ]
@@ -3283,8 +3283,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Biomaterials & Green Chemistry — Materials",
       "cluster_keywords": "materials · biomaterials · chemistry · circular",
       "cluster_confidence": 1.0,
-      "x": -1.743,
-      "y": 1.943,
+      "x": -1.768,
+      "y": 1.905,
       "is_outlier": false,
       "tech_codes": [
         "fermentation",
@@ -3315,8 +3315,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -1.306,
-      "sy": 2.607,
+      "sx": -1.363,
+      "sy": 2.523,
       "bio_lens": [
         "biobased",
         "biocentric",
@@ -3349,10 +3349,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.852,
       "founded_year": 2020,
-      "ux": 6.159,
-      "uy": 1.275,
-      "hx": -1.743,
-      "hy": 1.943,
+      "ux": 6.029,
+      "uy": 1.505,
+      "hx": -1.768,
+      "hy": 1.905,
       "investor_ids": [
         "GridX"
       ]
@@ -3373,8 +3373,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Biomaterials & Green Chemistry — Materials",
       "cluster_keywords": "materials · biomaterials · chemistry · circular",
       "cluster_confidence": 1.0,
-      "x": -1.721,
-      "y": 1.993,
+      "x": -1.747,
+      "y": 1.954,
       "is_outlier": false,
       "tech_codes": [
         "biomaterials",
@@ -3399,8 +3399,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -1.259,
-      "sy": 2.718,
+      "sx": -1.316,
+      "sy": 2.632,
       "bio_lens": [
         "biobased",
         "circular",
@@ -3423,10 +3423,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2021,
-      "ux": 6.468,
-      "uy": 1.306,
-      "hx": -1.721,
-      "hy": 1.993,
+      "ux": 6.335,
+      "uy": 1.545,
+      "hx": -1.747,
+      "hy": 1.954,
       "investor_ids": [
         "GridX"
       ]
@@ -3447,8 +3447,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Biomaterials & Green Chemistry — Materials",
       "cluster_keywords": "materials · biomaterials · chemistry · circular",
       "cluster_confidence": 1.0,
-      "x": -1.733,
-      "y": 2.008,
+      "x": -1.759,
+      "y": 1.97,
       "is_outlier": false,
       "tech_codes": [
         "microbial",
@@ -3474,8 +3474,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -1.284,
-      "sy": 2.752,
+      "sx": -1.342,
+      "sy": 2.666,
       "bio_lens": [
         "biobased",
         "circular",
@@ -3500,10 +3500,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.7,
       "founded_year": 2018,
-      "ux": 6.533,
-      "uy": 1.216,
-      "hx": -1.733,
-      "hy": 2.008,
+      "ux": 6.402,
+      "uy": 1.457,
+      "hx": -1.759,
+      "hy": 1.97,
       "investor_ids": [
         "GridX"
       ]
@@ -3524,8 +3524,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Biomaterials & Green Chemistry — Materials",
       "cluster_keywords": "materials · biomaterials · chemistry · circular",
       "cluster_confidence": 0.355,
-      "x": -1.978,
-      "y": 0.233,
+      "x": -2.0,
+      "y": 0.22,
       "is_outlier": true,
       "tech_codes": [
         "clean_energy"
@@ -3549,8 +3549,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 50,
       "valuation_estimate_usd": 50.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -1.829,
-      "sy": -1.193,
+      "sx": -1.878,
+      "sy": -1.222,
       "bio_lens": [
         "biocentric",
         "planetary-boundary",
@@ -3574,10 +3574,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.92,
       "founded_year": 2010,
-      "ux": -3.605,
-      "uy": 2.888,
-      "hx": -1.978,
-      "hy": 0.233,
+      "ux": -3.713,
+      "uy": 2.825,
+      "hx": -2.0,
+      "hy": 0.22,
       "investor_ids": [
         "dila_capital",
         "electrifi",
@@ -3602,8 +3602,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Biomaterials & Green Chemistry — Materials",
       "cluster_keywords": "materials · biomaterials · chemistry · circular",
       "cluster_confidence": 1.0,
-      "x": -1.701,
-      "y": 2.078,
+      "x": -1.727,
+      "y": 2.038,
       "is_outlier": false,
       "tech_codes": [
         "biomaterials"
@@ -3627,8 +3627,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 0,
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -1.213,
-      "sy": 2.907,
+      "sx": -1.271,
+      "sy": 2.819,
       "bio_lens": [
         "biobased",
         "bio-enabled-industrial-transition"
@@ -3653,10 +3653,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2020,
-      "ux": 6.97,
-      "uy": 1.274,
-      "hx": -1.701,
-      "hy": 2.078,
+      "ux": 6.834,
+      "uy": 1.528,
+      "hx": -1.727,
+      "hy": 2.038,
       "investor_ids": []
     },
     {
@@ -3675,8 +3675,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Biomaterials & Green Chemistry — Materials",
       "cluster_keywords": "materials · biomaterials · chemistry · circular",
       "cluster_confidence": 1.0,
-      "x": -1.686,
-      "y": 2.099,
+      "x": -1.713,
+      "y": 2.059,
       "is_outlier": false,
       "tech_codes": [
         "biomaterials"
@@ -3700,8 +3700,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -1.18,
-      "sy": 2.954,
+      "sx": -1.239,
+      "sy": 2.865,
       "bio_lens": [
         "biobased",
         "bio-enabled-industrial-transition"
@@ -3724,10 +3724,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2017,
-      "ux": 7.111,
-      "uy": 1.318,
-      "hx": -1.686,
-      "hy": 2.099,
+      "ux": 6.972,
+      "uy": 1.575,
+      "hx": -1.713,
+      "hy": 2.059,
       "investor_ids": []
     },
     {
@@ -3804,8 +3804,8 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.696,
       "founded_year": 2016,
-      "ux": 5.269,
-      "uy": 1.74,
+      "ux": 5.132,
+      "uy": 1.941,
       "hx": -8.373,
       "hy": -0.824,
       "investor_ids": [
@@ -3832,8 +3832,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Biomaterials & Green Chemistry — Materials",
       "cluster_keywords": "materials · biomaterials · chemistry · circular",
       "cluster_confidence": 1.0,
-      "x": -1.739,
-      "y": 1.926,
+      "x": -1.764,
+      "y": 1.888,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -3855,8 +3855,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 25,
       "valuation_estimate_usd": 25.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -1.297,
-      "sy": 2.569,
+      "sx": -1.354,
+      "sy": 2.485,
       "bio_lens": [
         "biobased",
         "circular",
@@ -3878,10 +3878,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2018,
-      "ux": 6.072,
-      "uy": 1.325,
-      "hx": -1.739,
-      "hy": 1.926,
+      "ux": 5.941,
+      "uy": 1.553,
+      "hx": -1.764,
+      "hy": 1.888,
       "investor_ids": [
         "savia_ventures"
       ]
@@ -3902,8 +3902,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Biomaterials & Green Chemistry — Materials",
       "cluster_keywords": "materials · biomaterials · chemistry · circular",
       "cluster_confidence": 0.827,
-      "x": -1.732,
-      "y": 1.867,
+      "x": -1.757,
+      "y": 1.83,
       "is_outlier": false,
       "tech_codes": [
         "fermentation",
@@ -3932,8 +3932,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -1.281,
-      "sy": 2.438,
+      "sx": -1.338,
+      "sy": 2.356,
       "bio_lens": [
         "biobased",
         "bio-enabled-industrial-transition",
@@ -3965,10 +3965,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.932,
       "founded_year": null,
-      "ux": 5.761,
-      "uy": 1.464,
-      "hx": -1.732,
-      "hy": 1.867,
+      "ux": 5.628,
+      "uy": 1.682,
+      "hx": -1.757,
+      "hy": 1.83,
       "investor_ids": [
         "SF500"
       ]
@@ -3989,8 +3989,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Precision Agriculture — Agronomic",
       "cluster_keywords": "agronomic · satellite · field · imagery",
       "cluster_confidence": 1.0,
-      "x": 10.089,
-      "y": 8.6,
+      "x": 10.054,
+      "y": 8.485,
       "is_outlier": false,
       "tech_codes": [
         "saas_marketplace",
@@ -4015,8 +4015,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": 10.443,
-      "sy": 8.844,
+      "sx": 10.364,
+      "sy": 8.59,
       "bio_lens": [
         "biocentric",
         "planetary-boundary"
@@ -4040,10 +4040,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "enabler",
       "tech_depth_confidence": 0.73,
       "founded_year": 2014,
-      "ux": 7.755,
-      "uy": 9.129,
-      "hx": 10.089,
-      "hy": 8.6,
+      "ux": 7.387,
+      "uy": 9.35,
+      "hx": 10.054,
+      "hy": 8.485,
       "investor_ids": [
         "sp_ventures"
       ]
@@ -4115,8 +4115,8 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "enabler",
       "tech_depth_confidence": 0.805,
       "founded_year": 2018,
-      "ux": 8.34,
-      "uy": 9.533,
+      "ux": 7.956,
+      "uy": 9.768,
       "hx": 1.24,
       "hy": 10.862,
       "investor_ids": [
@@ -4139,8 +4139,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Precision Agriculture — Agronomic",
       "cluster_keywords": "agronomic · satellite · field · imagery",
       "cluster_confidence": 1.0,
-      "x": 1.509,
-      "y": 1.411,
+      "x": 9.824,
+      "y": 8.743,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -4150,7 +4150,7 @@ window.STARTUP_THEMES_DATA = {
       "pagerank": 0.0,
       "valuation_tier": null,
       "n_investors_mapped": 0,
-      "bio_theme": "",
+      "bio_theme": "Precision Agriculture",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
       "sub_cluster_label": "",
@@ -4159,8 +4159,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": 3.354,
-      "sy": 3.136,
+      "sx": 9.854,
+      "sy": 9.161,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -4173,10 +4173,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "medium",
       "tech_depth_confidence": 0.5,
       "founded_year": null,
-      "ux": 8.612,
-      "uy": 7.705,
-      "hx": 1.509,
-      "hy": 1.411,
+      "ux": 8.28,
+      "uy": 7.961,
+      "hx": 9.824,
+      "hy": 8.743,
       "investor_ids": []
     },
     {
@@ -4195,8 +4195,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Precision Agriculture — Agronomic",
       "cluster_keywords": "agronomic · satellite · field · imagery",
       "cluster_confidence": 1.0,
-      "x": 1.501,
-      "y": 1.414,
+      "x": 9.815,
+      "y": 8.746,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -4206,7 +4206,7 @@ window.STARTUP_THEMES_DATA = {
       "pagerank": 0.0,
       "valuation_tier": null,
       "n_investors_mapped": 0,
-      "bio_theme": "",
+      "bio_theme": "Precision Agriculture",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
       "sub_cluster_label": "",
@@ -4215,8 +4215,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": 3.335,
-      "sy": 3.142,
+      "sx": 9.834,
+      "sy": 9.168,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -4230,10 +4230,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "medium",
       "tech_depth_confidence": 0.5,
       "founded_year": 2018,
-      "ux": 8.613,
-      "uy": 7.66,
-      "hx": 1.501,
-      "hy": 1.414,
+      "ux": 8.282,
+      "uy": 7.916,
+      "hx": 9.815,
+      "hy": 8.746,
       "investor_ids": []
     },
     {
@@ -4252,8 +4252,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Precision Agriculture — Agronomic",
       "cluster_keywords": "agronomic · satellite · field · imagery",
       "cluster_confidence": 0.93,
-      "x": 1.482,
-      "y": 1.434,
+      "x": 9.796,
+      "y": 8.766,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -4263,7 +4263,7 @@ window.STARTUP_THEMES_DATA = {
       "pagerank": 0.0,
       "valuation_tier": null,
       "n_investors_mapped": 0,
-      "bio_theme": "",
+      "bio_theme": "Precision Agriculture",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
       "sub_cluster_label": "",
@@ -4272,8 +4272,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": 3.293,
-      "sy": 3.186,
+      "sx": 9.791,
+      "sy": 9.213,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -4286,10 +4286,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "unclassified",
       "tech_depth_confidence": 0.5,
       "founded_year": null,
-      "ux": 8.679,
-      "uy": 7.542,
-      "hx": 1.482,
-      "hy": 1.434,
+      "ux": 8.351,
+      "uy": 7.801,
+      "hx": 9.796,
+      "hy": 8.766,
       "investor_ids": []
     },
     {
@@ -4308,8 +4308,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Precision Agriculture — Agronomic",
       "cluster_keywords": "agronomic · satellite · field · imagery",
       "cluster_confidence": 1.0,
-      "x": 1.495,
-      "y": 1.428,
+      "x": 9.809,
+      "y": 8.76,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -4319,7 +4319,7 @@ window.STARTUP_THEMES_DATA = {
       "pagerank": 0.0,
       "valuation_tier": null,
       "n_investors_mapped": 0,
-      "bio_theme": "",
+      "bio_theme": "Precision Agriculture",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
       "sub_cluster_label": "",
@@ -4328,8 +4328,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": 3.322,
-      "sy": 3.174,
+      "sx": 9.821,
+      "sy": 9.201,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -4343,10 +4343,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "medium",
       "tech_depth_confidence": 0.5,
       "founded_year": null,
-      "ux": 8.673,
-      "uy": 7.612,
-      "hx": 1.495,
-      "hy": 1.428,
+      "ux": 8.343,
+      "uy": 7.87,
+      "hx": 9.809,
+      "hy": 8.76,
       "investor_ids": []
     },
     {
@@ -4365,8 +4365,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Precision Agriculture — Agronomic",
       "cluster_keywords": "agronomic · satellite · field · imagery",
       "cluster_confidence": 1.0,
-      "x": 1.715,
-      "y": 1.306,
+      "x": 10.036,
+      "y": 8.634,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -4376,7 +4376,7 @@ window.STARTUP_THEMES_DATA = {
       "pagerank": 0.0,
       "valuation_tier": null,
       "n_investors_mapped": 0,
-      "bio_theme": "",
+      "bio_theme": "Precision Agriculture",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
       "sub_cluster_label": "",
@@ -4385,8 +4385,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": 3.812,
-      "sy": 2.902,
+      "sx": 10.325,
+      "sy": 8.921,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -4396,10 +4396,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "medium",
       "tech_depth_confidence": 0.5,
       "founded_year": 2015,
-      "ux": 8.417,
-      "uy": 8.836,
-      "hx": 1.715,
-      "hy": 1.306,
+      "ux": 8.053,
+      "uy": 9.078,
+      "hx": 10.036,
+      "hy": 8.634,
       "investor_ids": []
     },
     {
@@ -4418,8 +4418,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Precision Agriculture — Agronomic",
       "cluster_keywords": "agronomic · satellite · field · imagery",
       "cluster_confidence": 1.0,
-      "x": 1.495,
-      "y": 1.423,
+      "x": 9.81,
+      "y": 8.755,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -4429,7 +4429,7 @@ window.STARTUP_THEMES_DATA = {
       "pagerank": 0.0,
       "valuation_tier": null,
       "n_investors_mapped": 0,
-      "bio_theme": "",
+      "bio_theme": "Precision Agriculture",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
       "sub_cluster_label": "",
@@ -4438,8 +4438,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": 3.323,
-      "sy": 3.163,
+      "sx": 9.822,
+      "sy": 9.189,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -4451,10 +4451,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "medium",
       "tech_depth_confidence": 0.5,
       "founded_year": null,
-      "ux": 8.649,
-      "uy": 7.62,
-      "hx": 1.495,
-      "hy": 1.423,
+      "ux": 8.318,
+      "uy": 7.878,
+      "hx": 9.81,
+      "hy": 8.755,
       "investor_ids": []
     },
     {
@@ -4473,8 +4473,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Precision Agriculture — Agronomic",
       "cluster_keywords": "agronomic · satellite · field · imagery",
       "cluster_confidence": 1.0,
-      "x": 1.658,
-      "y": 1.24,
+      "x": 9.977,
+      "y": 8.566,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -4484,7 +4484,7 @@ window.STARTUP_THEMES_DATA = {
       "pagerank": 0.0,
       "valuation_tier": null,
       "n_investors_mapped": 0,
-      "bio_theme": "",
+      "bio_theme": "Precision Agriculture",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
       "sub_cluster_label": "",
@@ -4493,8 +4493,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": 3.683,
-      "sy": 2.755,
+      "sx": 10.192,
+      "sy": 8.77,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -4504,10 +4504,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "medium",
       "tech_depth_confidence": 0.5,
       "founded_year": null,
-      "ux": 8.018,
-      "uy": 8.659,
-      "hx": 1.658,
-      "hy": 1.24,
+      "ux": 7.662,
+      "uy": 8.891,
+      "hx": 9.977,
+      "hy": 8.566,
       "investor_ids": []
     },
     {
@@ -4575,8 +4575,8 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "enabler",
       "tech_depth_confidence": 0.95,
       "founded_year": 2019,
-      "ux": 8.36,
-      "uy": 9.408,
+      "ux": 7.979,
+      "uy": 9.644,
       "hx": 1.215,
       "hy": 10.874,
       "investor_ids": [
@@ -4600,8 +4600,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Precision Agriculture — Agronomic",
       "cluster_keywords": "agronomic · satellite · field · imagery",
       "cluster_confidence": 1.0,
-      "x": 10.072,
-      "y": 8.659,
+      "x": 10.037,
+      "y": 8.542,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -4623,8 +4623,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": 10.405,
-      "sy": 8.976,
+      "sx": 10.327,
+      "sy": 8.717,
       "bio_lens": [
         "biocentric",
         "planetary-boundary"
@@ -4645,10 +4645,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "enabler",
       "tech_depth_confidence": 0.95,
       "founded_year": 2016,
-      "ux": 7.994,
-      "uy": 8.972,
-      "hx": 10.072,
-      "hy": 8.659,
+      "ux": 7.629,
+      "uy": 9.201,
+      "hx": 10.037,
+      "hy": 8.542,
       "investor_ids": [
         "sp_ventures"
       ]
@@ -4669,8 +4669,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Precision Agriculture — Agronomic",
       "cluster_keywords": "agronomic · satellite · field · imagery",
       "cluster_confidence": 0.809,
-      "x": 10.003,
-      "y": 8.793,
+      "x": 9.971,
+      "y": 8.671,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -4689,8 +4689,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": 10.251,
-      "sy": 9.273,
+      "sx": 10.179,
+      "sy": 9.002,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -4703,10 +4703,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "medium",
       "tech_depth_confidence": 0.5,
       "founded_year": 2021,
-      "ux": 8.491,
-      "uy": 8.482,
-      "hx": 10.003,
-      "hy": 8.793,
+      "ux": 8.136,
+      "uy": 8.728,
+      "hx": 9.971,
+      "hy": 8.671,
       "investor_ids": []
     },
     {
@@ -4725,8 +4725,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Precision Agriculture — Agronomic",
       "cluster_keywords": "agronomic · satellite · field · imagery",
       "cluster_confidence": 1.0,
-      "x": 10.054,
-      "y": 8.559,
+      "x": 10.02,
+      "y": 8.446,
       "is_outlier": false,
       "tech_codes": [
         "ai_ml"
@@ -4751,8 +4751,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": 10.365,
-      "sy": 8.753,
+      "sx": 10.288,
+      "sy": 8.503,
       "bio_lens": [
         "biocentric",
         "planetary-boundary",
@@ -4775,10 +4775,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "enabler",
       "tech_depth_confidence": 0.68,
       "founded_year": 2014,
-      "ux": 7.526,
-      "uy": 9.03,
-      "hx": 10.054,
-      "hy": 8.559,
+      "ux": 7.163,
+      "uy": 9.245,
+      "hx": 10.02,
+      "hy": 8.446,
       "investor_ids": [
         "sp_ventures",
         "the_yield_lab_latam"
@@ -4853,8 +4853,8 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2019,
-      "ux": 8.153,
-      "uy": 8.75,
+      "ux": 7.793,
+      "uy": 8.985,
       "hx": -7.004,
       "hy": -0.701,
       "investor_ids": []
@@ -4875,8 +4875,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Precision Agriculture — Agronomic",
       "cluster_keywords": "agronomic · satellite · field · imagery",
       "cluster_confidence": 0.809,
-      "x": 1.615,
-      "y": 1.367,
+      "x": 9.933,
+      "y": 8.697,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -4886,7 +4886,7 @@ window.STARTUP_THEMES_DATA = {
       "pagerank": 0.0,
       "valuation_tier": null,
       "n_investors_mapped": 0,
-      "bio_theme": "",
+      "bio_theme": "Precision Agriculture",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
       "sub_cluster_label": "",
@@ -4895,8 +4895,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": 3.589,
-      "sy": 3.038,
+      "sx": 10.095,
+      "sy": 9.061,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -4908,10 +4908,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "unclassified",
       "tech_depth_confidence": 0.5,
       "founded_year": 2017,
-      "ux": 8.559,
-      "uy": 8.271,
-      "hx": 1.615,
-      "hy": 1.367,
+      "ux": 8.21,
+      "uy": 8.521,
+      "hx": 9.933,
+      "hy": 8.697,
       "investor_ids": []
     },
     {
@@ -4930,8 +4930,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Precision Agriculture — Agronomic",
       "cluster_keywords": "agronomic · satellite · field · imagery",
       "cluster_confidence": 1.0,
-      "x": 10.08,
-      "y": 8.616,
+      "x": 10.044,
+      "y": 8.501,
       "is_outlier": false,
       "tech_codes": [
         "remote_sensing",
@@ -4956,8 +4956,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": 10.422,
-      "sy": 8.879,
+      "sx": 10.343,
+      "sy": 8.624,
       "bio_lens": [
         "biocentric"
       ],
@@ -4979,10 +4979,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "enabler",
       "tech_depth_confidence": 0.69,
       "founded_year": 2014,
-      "ux": 7.812,
-      "uy": 9.066,
-      "hx": 10.08,
-      "hy": 8.616,
+      "ux": 7.446,
+      "uy": 9.289,
+      "hx": 10.044,
+      "hy": 8.501,
       "investor_ids": [
         "kamay_ventures",
         "the_yield_lab_latam"
@@ -5004,8 +5004,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Precision Agriculture — Agronomic",
       "cluster_keywords": "agronomic · satellite · field · imagery",
       "cluster_confidence": 1.0,
-      "x": 10.133,
-      "y": 8.586,
+      "x": 10.095,
+      "y": 8.472,
       "is_outlier": false,
       "tech_codes": [
         "ai_ml",
@@ -5031,8 +5031,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": 10.54,
-      "sy": 8.813,
+      "sx": 10.457,
+      "sy": 8.561,
       "bio_lens": [
         "biocentric",
         "regenerative"
@@ -5058,10 +5058,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "enabler",
       "tech_depth_confidence": 0.73,
       "founded_year": 2019,
-      "ux": 7.755,
-      "uy": 9.341,
-      "hx": 10.133,
-      "hy": 8.586,
+      "ux": 7.381,
+      "uy": 9.56,
+      "hx": 10.095,
+      "hy": 8.472,
       "investor_ids": [
         "the_yield_lab_latam"
       ]
@@ -5082,8 +5082,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Precision Agriculture — Agronomic",
       "cluster_keywords": "agronomic · satellite · field · imagery",
       "cluster_confidence": 1.0,
-      "x": 1.583,
-      "y": 1.337,
+      "x": 9.9,
+      "y": 8.667,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -5093,7 +5093,7 @@ window.STARTUP_THEMES_DATA = {
       "pagerank": 0.0,
       "valuation_tier": null,
       "n_investors_mapped": 0,
-      "bio_theme": "",
+      "bio_theme": "Precision Agriculture",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
       "sub_cluster_label": "",
@@ -5102,8 +5102,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": 3.518,
-      "sy": 2.972,
+      "sx": 10.022,
+      "sy": 8.993,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -5116,10 +5116,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "medium",
       "tech_depth_confidence": 0.5,
       "founded_year": null,
-      "ux": 8.371,
-      "uy": 8.163,
-      "hx": 1.583,
-      "hy": 1.337,
+      "ux": 8.027,
+      "uy": 8.408,
+      "hx": 9.9,
+      "hy": 8.667,
       "investor_ids": []
     },
     {
@@ -5138,8 +5138,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Precision Agriculture — Agronomic",
       "cluster_keywords": "agronomic · satellite · field · imagery",
       "cluster_confidence": 0.855,
-      "x": 9.919,
-      "y": 8.638,
+      "x": 9.89,
+      "y": 8.522,
       "is_outlier": false,
       "tech_codes": [
         "computational_bio",
@@ -5165,8 +5165,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": 10.064,
-      "sy": 8.929,
+      "sx": 10.0,
+      "sy": 8.672,
       "bio_lens": [
         "biocentric"
       ],
@@ -5188,10 +5188,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "enabler",
       "tech_depth_confidence": 0.95,
       "founded_year": 2020,
-      "ux": 7.691,
-      "uy": 8.323,
-      "hx": 9.919,
-      "hy": 8.638,
+      "ux": 7.347,
+      "uy": 8.548,
+      "hx": 9.89,
+      "hy": 8.522,
       "investor_ids": [
         "inventure"
       ]
@@ -5212,8 +5212,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Precision Agriculture — Agronomic",
       "cluster_keywords": "agronomic · satellite · field · imagery",
       "cluster_confidence": 0.855,
-      "x": 9.944,
-      "y": 8.657,
+      "x": 9.914,
+      "y": 8.54,
       "is_outlier": false,
       "tech_codes": [
         "saas_marketplace",
@@ -5238,8 +5238,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": 10.119,
-      "sy": 8.971,
+      "sx": 10.053,
+      "sy": 8.712,
       "bio_lens": [
         "biocentric",
         "planetary-boundary"
@@ -5263,10 +5263,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "enabler",
       "tech_depth_confidence": 0.735,
       "founded_year": 2022,
-      "ux": 7.809,
-      "uy": 8.406,
-      "hx": 9.944,
-      "hy": 8.657,
+      "ux": 7.461,
+      "uy": 8.634,
+      "hx": 9.914,
+      "hy": 8.54,
       "investor_ids": [
         "newtopia_vc"
       ]
@@ -5287,8 +5287,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Precision Agriculture — Agronomic",
       "cluster_keywords": "agronomic · satellite · field · imagery",
       "cluster_confidence": 1.0,
-      "x": 10.198,
-      "y": 8.679,
+      "x": 10.158,
+      "y": 8.561,
       "is_outlier": false,
       "tech_codes": [
         "ai_ml",
@@ -5312,8 +5312,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": 10.685,
-      "sy": 9.019,
+      "sx": 10.596,
+      "sy": 8.759,
       "bio_lens": [
         "biocentric"
       ],
@@ -5334,10 +5334,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "enabler",
       "tech_depth_confidence": 0.745,
       "founded_year": 2020,
-      "ux": 8.254,
-      "uy": 9.502,
-      "hx": 10.198,
-      "hy": 8.679,
+      "ux": 7.872,
+      "uy": 9.735,
+      "hx": 10.158,
+      "hy": 8.561,
       "investor_ids": [
         "the_yield_lab_latam"
       ]
@@ -5358,8 +5358,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Precision Agriculture — Agronomic",
       "cluster_keywords": "agronomic · satellite · field · imagery",
       "cluster_confidence": 1.0,
-      "x": 10.041,
-      "y": 8.525,
+      "x": 10.007,
+      "y": 8.413,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -5381,8 +5381,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": 10.335,
-      "sy": 8.677,
+      "sx": 10.26,
+      "sy": 8.43,
       "bio_lens": [
         "biocentric",
         "planetary-boundary"
@@ -5404,10 +5404,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "enabler",
       "tech_depth_confidence": 0.95,
       "founded_year": 2010,
-      "ux": 7.357,
-      "uy": 9.017,
-      "hx": 10.041,
-      "hy": 8.525,
+      "ux": 6.995,
+      "uy": 9.228,
+      "hx": 10.007,
+      "hy": 8.413,
       "investor_ids": [
         "sp_ventures"
       ]
@@ -5428,8 +5428,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Precision Agriculture — Agronomic",
       "cluster_keywords": "agronomic · satellite · field · imagery",
       "cluster_confidence": 1.0,
-      "x": 10.126,
-      "y": 8.596,
+      "x": 10.088,
+      "y": 8.482,
       "is_outlier": false,
       "tech_codes": [
         "saas_marketplace",
@@ -5454,8 +5454,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": 10.524,
-      "sy": 8.835,
+      "sx": 10.441,
+      "sy": 8.582,
       "bio_lens": [
         "biocentric",
         "planetary-boundary"
@@ -5480,10 +5480,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "enabler",
       "tech_depth_confidence": 0.705,
       "founded_year": 2018,
-      "ux": 7.788,
-      "uy": 9.295,
-      "hx": 10.126,
-      "hy": 8.596,
+      "ux": 7.415,
+      "uy": 9.516,
+      "hx": 10.088,
+      "hy": 8.482,
       "investor_ids": [
         "glocal",
         "inventure",
@@ -5507,8 +5507,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Precision Agriculture — Agronomic",
       "cluster_keywords": "agronomic · satellite · field · imagery",
       "cluster_confidence": 1.0,
-      "x": 10.032,
-      "y": 8.57,
+      "x": 9.998,
+      "y": 8.457,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -5530,8 +5530,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": 10.315,
-      "sy": 8.779,
+      "sx": 10.241,
+      "sy": 8.528,
       "bio_lens": [
         "biocentric",
         "planetary-boundary"
@@ -5553,10 +5553,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "enabler",
       "tech_depth_confidence": 0.95,
       "founded_year": 2017,
-      "ux": 7.547,
-      "uy": 8.914,
-      "hx": 10.032,
-      "hy": 8.57,
+      "ux": 7.186,
+      "uy": 9.131,
+      "hx": 9.998,
+      "hy": 8.457,
       "investor_ids": [
         "glocal"
       ]
@@ -5577,8 +5577,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Precision Agriculture — Agronomic",
       "cluster_keywords": "agronomic · satellite · field · imagery",
       "cluster_confidence": 1.0,
-      "x": 1.628,
-      "y": 1.335,
+      "x": 9.946,
+      "y": 8.665,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -5588,7 +5588,7 @@ window.STARTUP_THEMES_DATA = {
       "pagerank": 0.0,
       "valuation_tier": null,
       "n_investors_mapped": 0,
-      "bio_theme": "",
+      "bio_theme": "Precision Agriculture",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
       "sub_cluster_label": "",
@@ -5597,8 +5597,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": 3.617,
-      "sy": 2.968,
+      "sx": 10.124,
+      "sy": 8.989,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -5610,10 +5610,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "medium",
       "tech_depth_confidence": 0.5,
       "founded_year": null,
-      "ux": 8.428,
-      "uy": 8.376,
-      "hx": 1.628,
-      "hy": 1.335,
+      "ux": 8.077,
+      "uy": 8.622,
+      "hx": 9.946,
+      "hy": 8.665,
       "investor_ids": []
     },
     {
@@ -5632,8 +5632,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Precision Agriculture — Agronomic",
       "cluster_keywords": "agronomic · satellite · field · imagery",
       "cluster_confidence": 1.0,
-      "x": 1.685,
-      "y": 1.314,
+      "x": 10.005,
+      "y": 8.643,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -5643,7 +5643,7 @@ window.STARTUP_THEMES_DATA = {
       "pagerank": 0.0,
       "valuation_tier": null,
       "n_investors_mapped": 0,
-      "bio_theme": "",
+      "bio_theme": "Precision Agriculture",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
       "sub_cluster_label": "",
@@ -5652,8 +5652,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": 3.744,
-      "sy": 2.921,
+      "sx": 10.255,
+      "sy": 8.941,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -5666,10 +5666,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "medium",
       "tech_depth_confidence": 0.5,
       "founded_year": 2013,
-      "ux": 8.412,
-      "uy": 8.678,
-      "hx": 1.685,
-      "hy": 1.314,
+      "ux": 8.053,
+      "uy": 8.921,
+      "hx": 10.005,
+      "hy": 8.643,
       "investor_ids": []
     },
     {
@@ -5688,8 +5688,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Precision Agriculture — Agronomic",
       "cluster_keywords": "agronomic · satellite · field · imagery",
       "cluster_confidence": 1.0,
-      "x": 9.892,
-      "y": 8.684,
+      "x": 9.864,
+      "y": 8.566,
       "is_outlier": false,
       "tech_codes": [
         "ai_ml"
@@ -5713,8 +5713,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 0,
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": 10.003,
-      "sy": 9.031,
+      "sx": 9.942,
+      "sy": 8.769,
       "bio_lens": [
         "biocentric",
         "planetary-boundary"
@@ -5740,10 +5740,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "enabler",
       "tech_depth_confidence": 0.95,
       "founded_year": 2018,
-      "ux": 7.856,
-      "uy": 8.139,
-      "hx": 9.892,
-      "hy": 8.684,
+      "ux": 7.516,
+      "uy": 8.37,
+      "hx": 9.864,
+      "hy": 8.566,
       "investor_ids": [
         "newtopia_vc"
       ]
@@ -5818,8 +5818,8 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "enabler",
       "tech_depth_confidence": 0.95,
       "founded_year": 2019,
-      "ux": 8.438,
-      "uy": 9.268,
+      "ux": 8.061,
+      "uy": 9.508,
       "hx": 1.191,
       "hy": 10.899,
       "investor_ids": [
@@ -5843,8 +5843,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Precision Agriculture — Agronomic",
       "cluster_keywords": "agronomic · satellite · field · imagery",
       "cluster_confidence": 1.0,
-      "x": 9.954,
-      "y": 8.663,
+      "x": 9.924,
+      "y": 8.547,
       "is_outlier": false,
       "tech_codes": [
         "ai_ml",
@@ -5868,8 +5868,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 10.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": 10.143,
-      "sy": 8.986,
+      "sx": 10.076,
+      "sy": 8.726,
       "bio_lens": [
         "biocentric"
       ],
@@ -5893,10 +5893,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "enabler",
       "tech_depth_confidence": 0.95,
       "founded_year": 2021,
-      "ux": 7.852,
-      "uy": 8.445,
-      "hx": 9.954,
-      "hy": 8.663,
+      "ux": 7.503,
+      "uy": 8.673,
+      "hx": 9.924,
+      "hy": 8.547,
       "investor_ids": [
         "inventure",
         "pampa_start",
@@ -5919,8 +5919,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Precision Agriculture — Agronomic",
       "cluster_keywords": "agronomic · satellite · field · imagery",
       "cluster_confidence": 1.0,
-      "x": 10.116,
-      "y": 8.629,
+      "x": 10.079,
+      "y": 8.513,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -5941,8 +5941,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
-      "sx": 10.501,
-      "sy": 8.908,
+      "sx": 10.419,
+      "sy": 8.652,
       "bio_lens": [
         "biocentric",
         "planetary-boundary"
@@ -5962,10 +5962,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "applied",
       "tech_depth_confidence": 0.74,
       "founded_year": 2018,
-      "ux": 7.919,
-      "uy": 9.206,
-      "hx": 10.116,
-      "hy": 8.629,
+      "ux": 7.548,
+      "uy": 9.431,
+      "hx": 10.079,
+      "hy": 8.513,
       "investor_ids": []
     },
     {
@@ -5984,8 +5984,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Precision Agriculture — Agronomic",
       "cluster_keywords": "agronomic · satellite · field · imagery",
       "cluster_confidence": 0.348,
-      "x": 1.487,
-      "y": 1.422,
+      "x": 9.801,
+      "y": 8.754,
       "is_outlier": true,
       "tech_codes": [],
       "industry_codes": [],
@@ -5995,7 +5995,7 @@ window.STARTUP_THEMES_DATA = {
       "pagerank": 0.0,
       "valuation_tier": null,
       "n_investors_mapped": 0,
-      "bio_theme": "",
+      "bio_theme": "Precision Agriculture",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
       "sub_cluster_label": "",
@@ -6004,8 +6004,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": 3.303,
-      "sy": 3.16,
+      "sx": 9.802,
+      "sy": 9.186,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -6017,10 +6017,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "medium",
       "tech_depth_confidence": 0.5,
       "founded_year": 2017,
-      "ux": 8.631,
-      "uy": 7.581,
-      "hx": 1.487,
-      "hy": 1.422,
+      "ux": 8.302,
+      "uy": 7.838,
+      "hx": 9.801,
+      "hy": 8.754,
       "investor_ids": []
     },
     {
@@ -6039,8 +6039,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Precision Agriculture — Agronomic",
       "cluster_keywords": "agronomic · satellite · field · imagery",
       "cluster_confidence": 1.0,
-      "x": 1.486,
-      "y": 1.432,
+      "x": 9.801,
+      "y": 8.764,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -6050,7 +6050,7 @@ window.STARTUP_THEMES_DATA = {
       "pagerank": 0.0,
       "valuation_tier": null,
       "n_investors_mapped": 0,
-      "bio_theme": "",
+      "bio_theme": "Precision Agriculture",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
       "sub_cluster_label": "",
@@ -6059,8 +6059,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": 3.303,
-      "sy": 3.181,
+      "sx": 9.801,
+      "sy": 9.208,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -6070,10 +6070,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "medium",
       "tech_depth_confidence": 0.5,
       "founded_year": null,
-      "ux": 8.676,
-      "uy": 7.566,
-      "hx": 1.486,
-      "hy": 1.432,
+      "ux": 8.346,
+      "uy": 7.824,
+      "hx": 9.801,
+      "hy": 8.764,
       "investor_ids": []
     },
     {
@@ -6092,8 +6092,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Precision Agriculture — Agronomic",
       "cluster_keywords": "agronomic · satellite · field · imagery",
       "cluster_confidence": 0.809,
-      "x": 10.002,
-      "y": 8.791,
+      "x": 9.97,
+      "y": 8.669,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -6112,8 +6112,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": 10.249,
-      "sy": 9.269,
+      "sx": 10.177,
+      "sy": 8.998,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -6123,10 +6123,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "unclassified",
       "tech_depth_confidence": 0.5,
       "founded_year": 2021,
-      "ux": 8.481,
-      "uy": 8.48,
-      "hx": 10.002,
-      "hy": 8.791,
+      "ux": 8.127,
+      "uy": 8.726,
+      "hx": 9.97,
+      "hy": 8.669,
       "investor_ids": []
     },
     {
@@ -6145,8 +6145,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Precision Agriculture — Agronomic",
       "cluster_keywords": "agronomic · satellite · field · imagery",
       "cluster_confidence": 1.0,
-      "x": 10.151,
-      "y": 8.584,
+      "x": 10.112,
+      "y": 8.47,
       "is_outlier": false,
       "tech_codes": [
         "remote_sensing",
@@ -6173,8 +6173,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 10,
       "valuation_estimate_usd": 10.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": 10.579,
-      "sy": 8.809,
+      "sx": 10.494,
+      "sy": 8.556,
       "bio_lens": [
         "biobased",
         "biocentric",
@@ -6202,10 +6202,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "enabler",
       "tech_depth_confidence": 0.95,
       "founded_year": 2012,
-      "ux": 7.77,
-      "uy": 9.422,
-      "hx": 10.151,
-      "hy": 8.584,
+      "ux": 7.393,
+      "uy": 9.641,
+      "hx": 10.112,
+      "hy": 8.47,
       "investor_ids": [
         "sp_ventures"
       ]
@@ -6226,8 +6226,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Precision Agriculture — Agronomic",
       "cluster_keywords": "agronomic · satellite · field · imagery",
       "cluster_confidence": 1.0,
-      "x": 10.12,
-      "y": 8.612,
+      "x": 10.083,
+      "y": 8.497,
       "is_outlier": false,
       "tech_codes": [
         "saas_marketplace",
@@ -6252,8 +6252,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": 10.511,
-      "sy": 8.871,
+      "sx": 10.429,
+      "sy": 8.616,
       "bio_lens": [
         "biocentric",
         "planetary-boundary"
@@ -6274,10 +6274,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "enabler",
       "tech_depth_confidence": 0.73,
       "founded_year": 2014,
-      "ux": 7.851,
-      "uy": 9.248,
-      "hx": 10.12,
-      "hy": 8.612,
+      "ux": 7.479,
+      "uy": 9.471,
+      "hx": 10.083,
+      "hy": 8.497,
       "investor_ids": [
         "sp_ventures"
       ]
@@ -6298,8 +6298,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Precision Agriculture — Agronomic",
       "cluster_keywords": "agronomic · satellite · field · imagery",
       "cluster_confidence": 1.0,
-      "x": 1.503,
-      "y": 1.421,
+      "x": 9.818,
+      "y": 8.753,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -6309,7 +6309,7 @@ window.STARTUP_THEMES_DATA = {
       "pagerank": 0.0,
       "valuation_tier": null,
       "n_investors_mapped": 0,
-      "bio_theme": "",
+      "bio_theme": "Precision Agriculture",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
       "sub_cluster_label": "",
@@ -6318,8 +6318,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": 3.34,
-      "sy": 3.158,
+      "sx": 9.84,
+      "sy": 9.185,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -6332,10 +6332,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "medium",
       "tech_depth_confidence": 0.5,
       "founded_year": 2018,
-      "ux": 8.652,
-      "uy": 7.661,
-      "hx": 1.503,
-      "hy": 1.421,
+      "ux": 8.32,
+      "uy": 7.918,
+      "hx": 9.818,
+      "hy": 8.753,
       "investor_ids": []
     },
     {
@@ -6354,8 +6354,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Precision Agriculture — Agronomic",
       "cluster_keywords": "agronomic · satellite · field · imagery",
       "cluster_confidence": 0.809,
-      "x": 10.045,
-      "y": 8.767,
+      "x": 10.011,
+      "y": 8.646,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -6377,8 +6377,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
-      "sx": 10.344,
-      "sy": 9.215,
+      "sx": 10.268,
+      "sy": 8.946,
       "bio_lens": [
         "biocentric",
         "planetary-boundary"
@@ -6400,10 +6400,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "enabler",
       "tech_depth_confidence": 0.95,
       "founded_year": 2019,
-      "ux": 8.432,
-      "uy": 8.702,
-      "hx": 10.045,
-      "hy": 8.767,
+      "ux": 8.072,
+      "uy": 8.946,
+      "hx": 10.011,
+      "hy": 8.646,
       "investor_ids": []
     },
     {
@@ -6422,8 +6422,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Precision Agriculture — Agronomic",
       "cluster_keywords": "agronomic · satellite · field · imagery",
       "cluster_confidence": 1.0,
-      "x": 10.108,
-      "y": 8.726,
+      "x": 10.071,
+      "y": 8.607,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -6445,8 +6445,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": 10.484,
-      "sy": 9.124,
+      "sx": 10.402,
+      "sy": 8.859,
       "bio_lens": [
         "biocentric",
         "planetary-boundary"
@@ -6468,10 +6468,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "enabler",
       "tech_depth_confidence": 0.95,
       "founded_year": 2014,
-      "ux": 8.338,
-      "uy": 9.037,
-      "hx": 10.108,
-      "hy": 8.726,
+      "ux": 7.969,
+      "uy": 9.275,
+      "hx": 10.071,
+      "hy": 8.607,
       "investor_ids": [
         "chileglobal_ventures"
       ]
@@ -6492,8 +6492,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Precision Agriculture — Agronomic",
       "cluster_keywords": "agronomic · satellite · field · imagery",
       "cluster_confidence": 1.0,
-      "x": 10.129,
-      "y": 8.637,
+      "x": 10.091,
+      "y": 8.521,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -6514,8 +6514,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
-      "sx": 10.531,
-      "sy": 8.926,
+      "sx": 10.447,
+      "sy": 8.669,
       "bio_lens": [
         "biocentric",
         "planetary-boundary"
@@ -6536,10 +6536,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "applied",
       "tech_depth_confidence": 0.74,
       "founded_year": 2016,
-      "ux": 7.973,
-      "uy": 9.253,
-      "hx": 10.129,
-      "hy": 8.637,
+      "ux": 7.6,
+      "uy": 9.479,
+      "hx": 10.091,
+      "hy": 8.521,
       "investor_ids": []
     },
     {
@@ -6558,8 +6558,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Precision Agriculture — Agronomic",
       "cluster_keywords": "agronomic · satellite · field · imagery",
       "cluster_confidence": 1.0,
-      "x": 10.036,
-      "y": 8.61,
+      "x": 10.002,
+      "y": 8.496,
       "is_outlier": false,
       "tech_codes": [
         "blockchain",
@@ -6584,8 +6584,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": 10.323,
-      "sy": 8.867,
+      "sx": 10.249,
+      "sy": 8.612,
       "bio_lens": [
         "biocentric"
       ],
@@ -6606,10 +6606,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "enabler",
       "tech_depth_confidence": 0.705,
       "founded_year": 2015,
-      "ux": 7.728,
-      "uy": 8.877,
-      "hx": 10.036,
-      "hy": 8.61,
+      "ux": 7.368,
+      "uy": 9.099,
+      "hx": 10.002,
+      "hy": 8.496,
       "investor_ids": [
         "sp_ventures"
       ]
@@ -6630,8 +6630,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Precision Agriculture — Agronomic",
       "cluster_keywords": "agronomic · satellite · field · imagery",
       "cluster_confidence": 1.0,
-      "x": 4.034,
-      "y": 3.663,
+      "x": 4.025,
+      "y": 3.675,
       "is_outlier": false,
       "tech_codes": [
         "ai_ml"
@@ -6656,8 +6656,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": 6.398,
-      "sy": 5.573,
+      "sx": 6.377,
+      "sy": 5.601,
       "bio_lens": [
         "biocentric",
         "planetary-boundary"
@@ -6683,10 +6683,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "enabler",
       "tech_depth_confidence": 0.95,
       "founded_year": 2017,
-      "ux": 7.674,
-      "uy": 8.125,
-      "hx": 4.034,
-      "hy": 3.663,
+      "ux": 7.335,
+      "uy": 8.35,
+      "hx": 4.025,
+      "hy": 3.675,
       "investor_ids": [
         "AIR Capital"
       ]
@@ -6707,8 +6707,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Precision Agriculture — Agronomic",
       "cluster_keywords": "agronomic · satellite · field · imagery",
       "cluster_confidence": 1.0,
-      "x": 1.504,
-      "y": 1.412,
+      "x": 9.819,
+      "y": 8.744,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -6718,7 +6718,7 @@ window.STARTUP_THEMES_DATA = {
       "pagerank": 0.0,
       "valuation_tier": null,
       "n_investors_mapped": 0,
-      "bio_theme": "",
+      "bio_theme": "Precision Agriculture",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
       "sub_cluster_label": "",
@@ -6727,8 +6727,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": 3.343,
-      "sy": 3.139,
+      "sx": 9.842,
+      "sy": 9.164,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -6740,10 +6740,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "medium",
       "tech_depth_confidence": 0.5,
       "founded_year": null,
-      "ux": 8.611,
-      "uy": 7.679,
-      "hx": 1.504,
-      "hy": 1.412,
+      "ux": 8.279,
+      "uy": 7.935,
+      "hx": 9.819,
+      "hy": 8.744,
       "investor_ids": []
     },
     {
@@ -6762,8 +6762,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Precision Agriculture — Agronomic",
       "cluster_keywords": "agronomic · satellite · field · imagery",
       "cluster_confidence": 1.0,
-      "x": 9.976,
-      "y": 8.702,
+      "x": 9.945,
+      "y": 8.584,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -6782,8 +6782,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": 10.192,
-      "sy": 9.071,
+      "sx": 10.123,
+      "sy": 8.808,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -6795,10 +6795,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "medium",
       "tech_depth_confidence": 0.5,
       "founded_year": 2021,
-      "ux": 8.053,
-      "uy": 8.49,
-      "hx": 9.976,
-      "hy": 8.702,
+      "ux": 7.701,
+      "uy": 8.724,
+      "hx": 9.945,
+      "hy": 8.584,
       "investor_ids": []
     },
     {
@@ -6817,8 +6817,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Precision Agriculture — Agronomic",
       "cluster_keywords": "agronomic · satellite · field · imagery",
       "cluster_confidence": 0.727,
-      "x": -1.709,
-      "y": -8.719,
+      "x": -1.71,
+      "y": -8.715,
       "is_outlier": false,
       "tech_codes": [
         "iot"
@@ -6845,8 +6845,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": 1.336,
-      "sy": -8.253,
+      "sx": 1.334,
+      "sy": -8.245,
       "bio_lens": [
         "human-health-bio",
         "planetary-boundary"
@@ -6873,10 +6873,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2010,
-      "ux": 7.416,
-      "uy": 8.906,
-      "hx": -1.709,
-      "hy": -8.719,
+      "ux": 7.057,
+      "uy": 9.118,
+      "hx": -1.71,
+      "hy": -8.715,
       "investor_ids": [
         "sp_ventures"
       ]
@@ -6897,8 +6897,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Precision Agriculture — Agronomic",
       "cluster_keywords": "agronomic · satellite · field · imagery",
       "cluster_confidence": 0.764,
-      "x": 4.032,
-      "y": 3.651,
+      "x": 4.023,
+      "y": 3.663,
       "is_outlier": false,
       "tech_codes": [
         "vertical_farming",
@@ -6924,8 +6924,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": 6.394,
-      "sy": 5.546,
+      "sx": 6.373,
+      "sy": 5.573,
       "bio_lens": [
         "biocentric",
         "planetary-boundary"
@@ -6950,10 +6950,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "enabler",
       "tech_depth_confidence": 0.95,
       "founded_year": 2020,
-      "ux": 7.612,
-      "uy": 8.134,
-      "hx": 4.032,
-      "hy": 3.651,
+      "ux": 7.274,
+      "uy": 8.358,
+      "hx": 4.023,
+      "hy": 3.663,
       "investor_ids": [
         "sp_ventures"
       ]
@@ -6974,8 +6974,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Precision Agriculture — Agronomic",
       "cluster_keywords": "agronomic · satellite · field · imagery",
       "cluster_confidence": 1.0,
-      "x": 10.149,
-      "y": 8.571,
+      "x": 10.111,
+      "y": 8.458,
       "is_outlier": false,
       "tech_codes": [
         "remote_sensing"
@@ -7000,8 +7000,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
-      "sx": 10.576,
-      "sy": 8.78,
+      "sx": 10.491,
+      "sy": 8.529,
       "bio_lens": [
         "biocentric",
         "planetary-boundary"
@@ -7027,10 +7027,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "enabler",
       "tech_depth_confidence": 0.95,
       "founded_year": 2015,
-      "ux": 7.71,
-      "uy": 9.434,
-      "hx": 10.149,
-      "hy": 8.571,
+      "ux": 7.334,
+      "uy": 9.651,
+      "hx": 10.111,
+      "hy": 8.458,
       "investor_ids": []
     },
     {
@@ -7098,8 +7098,8 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "enabler",
       "tech_depth_confidence": 0.95,
       "founded_year": 2018,
-      "ux": 8.318,
-      "uy": 9.527,
+      "ux": 7.934,
+      "uy": 9.762,
       "hx": 1.237,
       "hy": 10.857,
       "investor_ids": [
@@ -7122,8 +7122,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Precision Agriculture — Agronomic",
       "cluster_keywords": "agronomic · satellite · field · imagery",
       "cluster_confidence": 1.0,
-      "x": 1.525,
-      "y": 1.397,
+      "x": 9.84,
+      "y": 8.728,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -7133,7 +7133,7 @@ window.STARTUP_THEMES_DATA = {
       "pagerank": 0.0,
       "valuation_tier": null,
       "n_investors_mapped": 0,
-      "bio_theme": "",
+      "bio_theme": "Precision Agriculture",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
       "sub_cluster_label": "",
@@ -7142,8 +7142,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": 3.389,
-      "sy": 3.105,
+      "sx": 9.89,
+      "sy": 9.13,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -7153,10 +7153,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "medium",
       "tech_depth_confidence": 0.5,
       "founded_year": null,
-      "ux": 8.57,
-      "uy": 7.8,
-      "hx": 1.525,
-      "hy": 1.397,
+      "ux": 8.235,
+      "uy": 8.054,
+      "hx": 9.84,
+      "hy": 8.728,
       "investor_ids": []
     },
     {
@@ -7175,8 +7175,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Precision Agriculture — Agronomic",
       "cluster_keywords": "agronomic · satellite · field · imagery",
       "cluster_confidence": 1.0,
-      "x": 10.057,
-      "y": 8.561,
+      "x": 10.023,
+      "y": 8.449,
       "is_outlier": false,
       "tech_codes": [
         "ai_ml"
@@ -7200,8 +7200,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": 10.372,
-      "sy": 8.758,
+      "sx": 10.295,
+      "sy": 8.508,
       "bio_lens": [
         "biocentric",
         "planetary-boundary",
@@ -7224,10 +7224,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "enabler",
       "tech_depth_confidence": 0.95,
       "founded_year": 2019,
-      "ux": 7.541,
-      "uy": 9.04,
-      "hx": 10.057,
-      "hy": 8.561,
+      "ux": 7.177,
+      "uy": 9.256,
+      "hx": 10.023,
+      "hy": 8.449,
       "investor_ids": [
         "barn_investimentos"
       ]
@@ -7248,8 +7248,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Precision Agriculture — Agronomic",
       "cluster_keywords": "agronomic · satellite · field · imagery",
       "cluster_confidence": 1.0,
-      "x": 10.066,
-      "y": 8.555,
+      "x": 10.031,
+      "y": 8.442,
       "is_outlier": false,
       "tech_codes": [
         "remote_sensing",
@@ -7274,8 +7274,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
-      "sx": 10.391,
-      "sy": 8.744,
+      "sx": 10.314,
+      "sy": 8.494,
       "bio_lens": [
         "biocentric",
         "planetary-boundary"
@@ -7301,10 +7301,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "enabler",
       "tech_depth_confidence": 0.95,
       "founded_year": null,
-      "ux": 7.525,
-      "uy": 9.087,
-      "hx": 10.066,
-      "hy": 8.555,
+      "ux": 7.16,
+      "uy": 9.302,
+      "hx": 10.031,
+      "hy": 8.442,
       "investor_ids": [
         "bossa_invest",
         "domo_invest",
@@ -7328,8 +7328,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Precision Agriculture — Agronomic",
       "cluster_keywords": "agronomic · satellite · field · imagery",
       "cluster_confidence": 1.0,
-      "x": 10.0,
-      "y": 8.674,
+      "x": 9.967,
+      "y": 8.557,
       "is_outlier": false,
       "tech_codes": [
         "ai_ml"
@@ -7352,8 +7352,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": 10.243,
-      "sy": 9.01,
+      "sx": 10.172,
+      "sy": 8.749,
       "bio_lens": [
         "biocentric"
       ],
@@ -7374,10 +7374,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "enabler",
       "tech_depth_confidence": 0.95,
       "founded_year": null,
-      "ux": 7.962,
-      "uy": 8.629,
-      "hx": 10.0,
-      "hy": 8.674,
+      "ux": 7.607,
+      "uy": 8.86,
+      "hx": 9.967,
+      "hy": 8.557,
       "investor_ids": [
         "pampa_start"
       ]
@@ -7398,8 +7398,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Precision Agriculture — Agronomic",
       "cluster_keywords": "agronomic · satellite · field · imagery",
       "cluster_confidence": 1.0,
-      "x": 9.91,
-      "y": 8.683,
+      "x": 9.882,
+      "y": 8.566,
       "is_outlier": false,
       "tech_codes": [
         "blockchain",
@@ -7423,8 +7423,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": 10.045,
-      "sy": 9.029,
+      "sx": 9.981,
+      "sy": 8.768,
       "bio_lens": [
         "biocentric"
       ],
@@ -7445,10 +7445,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "enabler",
       "tech_depth_confidence": 0.705,
       "founded_year": null,
-      "ux": 7.879,
-      "uy": 8.222,
-      "hx": 9.91,
-      "hy": 8.683,
+      "ux": 7.536,
+      "uy": 8.453,
+      "hx": 9.882,
+      "hy": 8.566,
       "investor_ids": [
         "the_yield_lab_latam"
       ]
@@ -7469,8 +7469,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Precision Agriculture — Agronomic",
       "cluster_keywords": "agronomic · satellite · field · imagery",
       "cluster_confidence": 1.0,
-      "x": 10.001,
-      "y": 8.606,
+      "x": 9.969,
+      "y": 8.492,
       "is_outlier": false,
       "tech_codes": [
         "ai_ml"
@@ -7494,8 +7494,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": 10.247,
-      "sy": 8.858,
+      "sx": 10.175,
+      "sy": 8.603,
       "bio_lens": [
         "biocentric",
         "circular",
@@ -7519,10 +7519,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "enabler",
       "tech_depth_confidence": 0.95,
       "founded_year": null,
-      "ux": 7.662,
-      "uy": 8.73,
-      "hx": 10.001,
-      "hy": 8.606,
+      "ux": 7.306,
+      "uy": 8.951,
+      "hx": 9.969,
+      "hy": 8.492,
       "investor_ids": [
         "kptl"
       ]
@@ -7543,8 +7543,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Precision Agriculture — Agronomic",
       "cluster_keywords": "agronomic · satellite · field · imagery",
       "cluster_confidence": 1.0,
-      "x": 9.964,
-      "y": 8.58,
+      "x": 9.933,
+      "y": 8.466,
       "is_outlier": false,
       "tech_codes": [
         "ai_ml",
@@ -7568,8 +7568,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": 10.164,
-      "sy": 8.799,
+      "sx": 10.096,
+      "sy": 8.547,
       "bio_lens": [
         "biocentric"
       ],
@@ -7593,10 +7593,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "enabler",
       "tech_depth_confidence": 0.755,
       "founded_year": null,
-      "ux": 7.495,
-      "uy": 8.602,
-      "hx": 9.964,
-      "hy": 8.58,
+      "ux": 7.144,
+      "uy": 8.819,
+      "hx": 9.933,
+      "hy": 8.466,
       "investor_ids": [
         "lightsmith_group"
       ]
@@ -7617,8 +7617,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Precision Agriculture — Agronomic",
       "cluster_keywords": "agronomic · satellite · field · imagery",
       "cluster_confidence": 1.0,
-      "x": 10.021,
-      "y": 8.755,
+      "x": 9.988,
+      "y": 8.634,
       "is_outlier": false,
       "tech_codes": [
         "remote_sensing",
@@ -7642,8 +7642,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": 10.29,
-      "sy": 9.188,
+      "sx": 10.217,
+      "sy": 8.92,
       "bio_lens": [
         "biocentric"
       ],
@@ -7665,10 +7665,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "enabler",
       "tech_depth_confidence": 0.95,
       "founded_year": null,
-      "ux": 8.346,
-      "uy": 8.612,
-      "hx": 10.021,
-      "hy": 8.755,
+      "ux": 7.989,
+      "uy": 8.854,
+      "hx": 9.988,
+      "hy": 8.634,
       "investor_ids": [
         "the_yield_lab_latam"
       ]
@@ -7689,8 +7689,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Precision Agriculture — Agronomic",
       "cluster_keywords": "agronomic · satellite · field · imagery",
       "cluster_confidence": 1.0,
-      "x": 10.065,
-      "y": 8.595,
+      "x": 10.031,
+      "y": 8.481,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -7712,8 +7712,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": 10.39,
-      "sy": 8.834,
+      "sx": 10.312,
+      "sy": 8.581,
       "bio_lens": [
         "biocentric",
         "planetary-boundary"
@@ -7735,10 +7735,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "enabler",
       "tech_depth_confidence": 0.95,
       "founded_year": null,
-      "ux": 7.704,
-      "uy": 9.029,
-      "hx": 10.065,
-      "hy": 8.595,
+      "ux": 7.339,
+      "uy": 9.249,
+      "hx": 10.031,
+      "hy": 8.481,
       "investor_ids": [
         "barn_investimentos",
         "monashees",
@@ -7761,8 +7761,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Precision Agriculture — Agronomic",
       "cluster_keywords": "agronomic · satellite · field · imagery",
       "cluster_confidence": 0.855,
-      "x": 9.967,
-      "y": 8.652,
+      "x": 9.936,
+      "y": 8.536,
       "is_outlier": false,
       "tech_codes": [
         "ai_ml",
@@ -7787,8 +7787,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
-      "sx": 10.171,
-      "sy": 8.961,
+      "sx": 10.102,
+      "sy": 8.702,
       "bio_lens": [
         "biocentric",
         "planetary-boundary"
@@ -7811,10 +7811,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "enabler",
       "tech_depth_confidence": 0.95,
       "founded_year": null,
-      "ux": 7.82,
-      "uy": 8.516,
-      "hx": 9.967,
-      "hy": 8.652,
+      "ux": 7.469,
+      "uy": 8.743,
+      "hx": 9.936,
+      "hy": 8.536,
       "investor_ids": [
         "ace_ventures",
         "bossa_invest",
@@ -7838,8 +7838,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Precision Agriculture — Agronomic",
       "cluster_keywords": "agronomic · satellite · field · imagery",
       "cluster_confidence": 1.0,
-      "x": 9.991,
-      "y": 8.611,
+      "x": 9.959,
+      "y": 8.496,
       "is_outlier": false,
       "tech_codes": [
         "ai_ml"
@@ -7863,8 +7863,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": 10.225,
-      "sy": 8.868,
+      "sx": 10.154,
+      "sy": 8.613,
       "bio_lens": [
         "biocentric",
         "planetary-boundary"
@@ -7888,10 +7888,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "enabler",
       "tech_depth_confidence": 0.95,
       "founded_year": null,
-      "ux": 7.669,
-      "uy": 8.68,
-      "hx": 9.991,
-      "hy": 8.611,
+      "ux": 7.315,
+      "uy": 8.902,
+      "hx": 9.959,
+      "hy": 8.496,
       "investor_ids": [
         "kptl"
       ]
@@ -7912,8 +7912,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Precision Agriculture — Agronomic",
       "cluster_keywords": "agronomic · satellite · field · imagery",
       "cluster_confidence": 1.0,
-      "x": 9.876,
-      "y": 8.71,
+      "x": 9.849,
+      "y": 8.591,
       "is_outlier": false,
       "tech_codes": [
         "ai_ml",
@@ -7938,8 +7938,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": 9.969,
-      "sy": 9.088,
+      "sx": 9.909,
+      "sy": 8.825,
       "bio_lens": [
         "biocentric",
         "bio-enabled-industrial-transition"
@@ -7963,10 +7963,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "enabler",
       "tech_depth_confidence": 0.95,
       "founded_year": null,
-      "ux": 7.95,
-      "uy": 8.035,
-      "hx": 9.876,
-      "hy": 8.71,
+      "ux": 7.612,
+      "uy": 8.27,
+      "hx": 9.849,
+      "hy": 8.591,
       "investor_ids": [
         "the_yield_lab_latam"
       ]
@@ -7987,8 +7987,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Precision Agriculture — Agronomic",
       "cluster_keywords": "agronomic · satellite · field · imagery",
       "cluster_confidence": 1.0,
-      "x": 9.957,
-      "y": 8.563,
+      "x": 9.926,
+      "y": 8.45,
       "is_outlier": false,
       "tech_codes": [
         "ai_ml",
@@ -8014,8 +8014,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 0,
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": 10.148,
-      "sy": 8.761,
+      "sx": 10.08,
+      "sy": 8.511,
       "bio_lens": [
         "biocentric",
         "regenerative"
@@ -8041,10 +8041,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "enabler",
       "tech_depth_confidence": 0.95,
       "founded_year": 2019,
-      "ux": 7.409,
-      "uy": 8.593,
-      "hx": 9.957,
-      "hy": 8.563,
+      "ux": 7.059,
+      "uy": 8.808,
+      "hx": 9.926,
+      "hy": 8.45,
       "investor_ids": [
         "The Ganesha Lab"
       ]
@@ -8118,8 +8118,8 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "enabler",
       "tech_depth_confidence": 0.95,
       "founded_year": null,
-      "ux": 8.326,
-      "uy": 9.529,
+      "ux": 7.943,
+      "uy": 9.764,
       "hx": 1.238,
       "hy": 10.859,
       "investor_ids": [
@@ -8195,8 +8195,8 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "enabler",
       "tech_depth_confidence": 0.71,
       "founded_year": 2018,
-      "ux": 8.436,
-      "uy": 9.223,
+      "ux": 8.061,
+      "uy": 9.463,
       "hx": 1.182,
       "hy": 10.902,
       "investor_ids": [
@@ -8220,8 +8220,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Precision Agriculture — Agronomic",
       "cluster_keywords": "agronomic · satellite · field · imagery",
       "cluster_confidence": 1.0,
-      "x": 10.157,
-      "y": 8.58,
+      "x": 10.119,
+      "y": 8.467,
       "is_outlier": false,
       "tech_codes": [
         "ai_ml",
@@ -8246,8 +8246,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": 10.594,
-      "sy": 8.801,
+      "sx": 10.508,
+      "sy": 8.549,
       "bio_lens": [
         "biocentric"
       ],
@@ -8274,10 +8274,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "enabler",
       "tech_depth_confidence": 0.95,
       "founded_year": null,
-      "ux": 7.763,
-      "uy": 9.456,
-      "hx": 10.157,
-      "hy": 8.58,
+      "ux": 7.385,
+      "uy": 9.675,
+      "hx": 10.119,
+      "hy": 8.467,
       "investor_ids": [
         "the_yield_lab_latam"
       ]
@@ -8298,8 +8298,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Precision Agriculture — Agronomic",
       "cluster_keywords": "agronomic · satellite · field · imagery",
       "cluster_confidence": 1.0,
-      "x": 10.164,
-      "y": 8.719,
+      "x": 10.125,
+      "y": 8.6,
       "is_outlier": false,
       "tech_codes": [
         "iot",
@@ -8325,8 +8325,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": 10.609,
-      "sy": 9.11,
+      "sx": 10.522,
+      "sy": 8.845,
       "bio_lens": [
         "biocentric",
         "planetary-boundary",
@@ -8353,10 +8353,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "enabler",
       "tech_depth_confidence": 0.72,
       "founded_year": null,
-      "ux": 8.386,
-      "uy": 9.294,
-      "hx": 10.164,
-      "hy": 8.719,
+      "ux": 8.009,
+      "uy": 9.532,
+      "hx": 10.125,
+      "hy": 8.6,
       "investor_ids": [
         "kamay_ventures"
       ]
@@ -8377,8 +8377,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Precision Agriculture — Agronomic",
       "cluster_keywords": "agronomic · satellite · field · imagery",
       "cluster_confidence": 1.0,
-      "x": 10.144,
-      "y": 8.717,
+      "x": 10.106,
+      "y": 8.598,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -8400,8 +8400,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": 10.565,
-      "sy": 9.105,
+      "sx": 10.481,
+      "sy": 8.841,
       "bio_lens": [
         "biocentric",
         "planetary-boundary"
@@ -8423,10 +8423,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "applied",
       "tech_depth_confidence": 0.74,
       "founded_year": null,
-      "ux": 8.351,
-      "uy": 9.211,
-      "hx": 10.144,
-      "hy": 8.717,
+      "ux": 7.977,
+      "uy": 9.448,
+      "hx": 10.106,
+      "hy": 8.598,
       "investor_ids": [
         "morningside_group"
       ]
@@ -8447,8 +8447,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Precision Agriculture — Agronomic",
       "cluster_keywords": "agronomic · satellite · field · imagery",
       "cluster_confidence": 0.848,
-      "x": 9.976,
-      "y": 8.801,
+      "x": 9.944,
+      "y": 8.679,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -8467,8 +8467,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": 10.19,
-      "sy": 9.292,
+      "sx": 10.121,
+      "sy": 9.02,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -8478,10 +8478,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "medium",
       "tech_depth_confidence": 0.5,
       "founded_year": null,
-      "ux": 8.491,
-      "uy": 8.349,
-      "hx": 9.976,
-      "hy": 8.801,
+      "ux": 8.14,
+      "uy": 8.597,
+      "hx": 9.944,
+      "hy": 8.679,
       "investor_ids": []
     },
     {
@@ -8500,8 +8500,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Precision Agriculture — Agronomic",
       "cluster_keywords": "agronomic · satellite · field · imagery",
       "cluster_confidence": 1.0,
-      "x": 9.891,
-      "y": 8.72,
+      "x": 9.863,
+      "y": 8.601,
       "is_outlier": false,
       "tech_codes": [
         "ai_ml"
@@ -8525,8 +8525,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": 10.002,
-      "sy": 9.112,
+      "sx": 9.94,
+      "sy": 8.847,
       "bio_lens": [
         "biocentric",
         "planetary-boundary"
@@ -8552,10 +8552,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "enabler",
       "tech_depth_confidence": 0.95,
       "founded_year": null,
-      "ux": 8.016,
-      "uy": 8.087,
-      "hx": 9.891,
-      "hy": 8.72,
+      "ux": 7.677,
+      "uy": 8.322,
+      "hx": 9.863,
+      "hy": 8.601,
       "investor_ids": [
         "inventure",
         "sp_ventures"
@@ -8577,8 +8577,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 0.347,
-      "x": -10.438,
-      "y": -9.291,
+      "x": -10.436,
+      "y": -9.289,
       "is_outlier": true,
       "tech_codes": [
         "nanotech",
@@ -8608,8 +8608,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -9.507,
-      "sy": -8.668,
+      "sx": -9.503,
+      "sy": -8.664,
       "bio_lens": [
         "biobased",
         "bio-enabled-industrial-transition",
@@ -8643,10 +8643,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.824,
       "founded_year": 2019,
-      "ux": -4.651,
-      "uy": -1.72,
-      "hx": -10.438,
-      "hy": -9.291,
+      "ux": -4.619,
+      "uy": -1.78,
+      "hx": -10.436,
+      "hy": -9.289,
       "investor_ids": [
         "The Ganesha Lab"
       ]
@@ -8667,8 +8667,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.171,
-      "y": -8.904,
+      "x": -4.173,
+      "y": -8.9,
       "is_outlier": false,
       "tech_codes": [
         "diagnostics"
@@ -8692,8 +8692,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
-      "sx": -4.137,
-      "sy": -8.664,
+      "sx": -4.141,
+      "sy": -8.656,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -8716,10 +8716,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.68,
       "founded_year": 2012,
-      "ux": 0.811,
-      "uy": -7.841,
-      "hx": -4.171,
-      "hy": -8.904,
+      "ux": 0.982,
+      "uy": -7.701,
+      "hx": -4.173,
+      "hy": -8.9,
       "investor_ids": []
     },
     {
@@ -8738,8 +8738,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 0.873,
-      "x": -4.461,
-      "y": -9.068,
+      "x": -4.463,
+      "y": -9.065,
       "is_outlier": false,
       "tech_codes": [
         "bioinformatics",
@@ -8767,8 +8767,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.781,
-      "sy": -9.03,
+      "sx": -4.785,
+      "sy": -9.022,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -8795,10 +8795,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.848,
       "founded_year": 2020,
-      "ux": -0.961,
-      "uy": -9.503,
-      "hx": -4.461,
-      "hy": -9.068,
+      "ux": -0.73,
+      "uy": -9.403,
+      "hx": -4.463,
+      "hy": -9.065,
       "investor_ids": [
         "AIR Capital",
         "DraperCygnus",
@@ -8822,8 +8822,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.472,
-      "y": -9.041,
+      "x": -4.474,
+      "y": -9.038,
       "is_outlier": false,
       "tech_codes": [
         "medical_devices",
@@ -8850,8 +8850,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -4.806,
-      "sy": -8.969,
+      "sx": -4.81,
+      "sy": -8.962,
       "bio_lens": [
         "circular",
         "human-health-bio"
@@ -8877,10 +8877,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.8,
       "founded_year": 2018,
-      "ux": -0.795,
-      "uy": -9.641,
-      "hx": -4.472,
-      "hy": -9.041,
+      "ux": -0.561,
+      "uy": -9.534,
+      "hx": -4.474,
+      "hy": -9.038,
       "investor_ids": [
         "GridX"
       ]
@@ -8901,8 +8901,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.351,
-      "y": -8.962,
+      "x": -4.353,
+      "y": -8.959,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -8924,8 +8924,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
-      "sx": -4.536,
-      "sy": -8.794,
+      "sx": -4.54,
+      "sy": -8.787,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -8943,10 +8943,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.74,
       "founded_year": 2022,
-      "ux": 0.016,
-      "uy": -8.965,
-      "hx": -4.351,
-      "hy": -8.962,
+      "ux": 0.224,
+      "uy": -8.84,
+      "hx": -4.353,
+      "hy": -8.959,
       "investor_ids": [
         "meet_capital"
       ]
@@ -8967,8 +8967,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.482,
-      "y": -9.04,
+      "x": -4.484,
+      "y": -9.037,
       "is_outlier": false,
       "tech_codes": [
         "iot",
@@ -8993,8 +8993,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -4.827,
-      "sy": -8.967,
+      "sx": -4.831,
+      "sy": -8.96,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -9017,10 +9017,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2021,
-      "ux": -0.81,
-      "uy": -9.709,
-      "hx": -4.482,
-      "hy": -9.04,
+      "ux": -0.574,
+      "uy": -9.603,
+      "hx": -4.484,
+      "hy": -9.037,
       "investor_ids": [
         "CITES"
       ]
@@ -9041,8 +9041,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.343,
-      "y": -8.935,
+      "x": -4.345,
+      "y": -8.932,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -9064,8 +9064,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
-      "sx": -4.518,
-      "sy": -8.734,
+      "sx": -4.522,
+      "sy": -8.727,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -9085,10 +9085,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "applied",
       "tech_depth_confidence": 0.74,
       "founded_year": 2016,
-      "ux": 0.221,
-      "uy": -8.967,
-      "hx": -4.343,
-      "hy": -8.935,
+      "ux": 0.428,
+      "uy": -8.836,
+      "hx": -4.345,
+      "hy": -8.932,
       "investor_ids": [
         "endeavor_catalyst",
         "lightsmith_group",
@@ -9111,8 +9111,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.395,
-      "y": -9.042,
+      "x": -4.397,
+      "y": -9.039,
       "is_outlier": false,
       "tech_codes": [
         "diagnostics",
@@ -9139,8 +9139,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 10,
       "valuation_estimate_usd": 10.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.633,
-      "sy": -8.971,
+      "sx": -4.637,
+      "sy": -8.963,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -9165,10 +9165,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.796,
       "founded_year": 2014,
-      "ux": -0.632,
-      "uy": -9.098,
-      "hx": -4.395,
-      "hy": -9.042,
+      "ux": -0.416,
+      "uy": -8.991,
+      "hx": -4.397,
+      "hy": -9.039,
       "investor_ids": [
         "endurance_28",
         "zentynel"
@@ -9190,8 +9190,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.127,
-      "y": -8.98,
+      "x": -4.129,
+      "y": -8.977,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -9210,8 +9210,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": -4.038,
-      "sy": -8.834,
+      "sx": -4.042,
+      "sy": -8.827,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -9223,10 +9223,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "medium",
       "tech_depth_confidence": 0.5,
       "founded_year": null,
-      "ux": 0.374,
-      "uy": -7.367,
-      "hx": -4.127,
-      "hy": -8.98,
+      "ux": 0.533,
+      "uy": -7.243,
+      "hx": -4.129,
+      "hy": -8.977,
       "investor_ids": []
     },
     {
@@ -9245,8 +9245,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 0.354,
-      "x": -4.358,
-      "y": -10.223,
+      "x": -4.36,
+      "y": -10.22,
       "is_outlier": true,
       "tech_codes": [
         "ai_ml",
@@ -9271,8 +9271,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -4.552,
-      "sy": -11.595,
+      "sx": -4.556,
+      "sy": -11.589,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -9295,10 +9295,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2019,
-      "ux": -8.777,
-      "uy": -6.294,
-      "hx": -4.358,
-      "hy": -10.223,
+      "ux": -8.584,
+      "uy": -6.442,
+      "hx": -4.36,
+      "hy": -10.22,
       "investor_ids": [
         "CITES"
       ]
@@ -9319,8 +9319,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.192,
-      "y": -8.948,
+      "x": -4.194,
+      "y": -8.945,
       "is_outlier": false,
       "tech_codes": [
         "diagnostics"
@@ -9344,8 +9344,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.182,
-      "sy": -8.763,
+      "sx": -4.186,
+      "sy": -8.755,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -9368,10 +9368,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2020,
-      "ux": 0.457,
-      "uy": -7.888,
-      "hx": -4.192,
-      "hy": -8.948,
+      "ux": 0.631,
+      "uy": -7.758,
+      "hx": -4.194,
+      "hy": -8.945,
       "investor_ids": []
     },
     {
@@ -9390,8 +9390,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.121,
-      "y": -8.992,
+      "x": -4.123,
+      "y": -8.988,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -9410,8 +9410,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": -4.025,
-      "sy": -8.859,
+      "sx": -4.029,
+      "sy": -8.852,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -9423,10 +9423,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "unclassified",
       "tech_depth_confidence": 0.5,
       "founded_year": null,
-      "ux": 0.307,
-      "uy": -7.303,
-      "hx": -4.121,
-      "hy": -8.992,
+      "ux": 0.465,
+      "uy": -7.181,
+      "hx": -4.123,
+      "hy": -8.988,
       "investor_ids": []
     },
     {
@@ -9445,8 +9445,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.447,
-      "y": -9.069,
+      "x": -4.449,
+      "y": -9.065,
       "is_outlier": false,
       "tech_codes": [
         "bioinformatics",
@@ -9472,8 +9472,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.748,
-      "sy": -9.03,
+      "sx": -4.752,
+      "sy": -9.023,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -9497,10 +9497,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.712,
       "founded_year": 2015,
-      "ux": -0.931,
-      "uy": -9.401,
-      "hx": -4.447,
-      "hy": -9.069,
+      "ux": -0.703,
+      "uy": -9.3,
+      "hx": -4.449,
+      "hy": -9.065,
       "investor_ids": [
         "GridX"
       ]
@@ -9521,8 +9521,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.24,
-      "y": -8.835,
+      "x": -4.242,
+      "y": -8.832,
       "is_outlier": false,
       "tech_codes": [
         "diagnostics",
@@ -9547,8 +9547,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.289,
-      "sy": -8.512,
+      "sx": -4.293,
+      "sy": -8.504,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -9574,10 +9574,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.692,
       "founded_year": 2018,
-      "ux": 1.141,
-      "uy": -8.465,
-      "hx": -4.24,
-      "hy": -8.835,
+      "ux": 1.327,
+      "uy": -8.311,
+      "hx": -4.242,
+      "hy": -8.832,
       "investor_ids": []
     },
     {
@@ -9596,8 +9596,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.247,
-      "y": -8.845,
+      "x": -4.249,
+      "y": -8.842,
       "is_outlier": false,
       "tech_codes": [
         "diagnostics",
@@ -9622,8 +9622,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.304,
-      "sy": -8.534,
+      "sx": -4.308,
+      "sy": -8.527,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -9647,10 +9647,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.692,
       "founded_year": 2022,
-      "ux": 1.055,
-      "uy": -8.492,
-      "hx": -4.247,
-      "hy": -8.845,
+      "ux": 1.242,
+      "uy": -8.341,
+      "hx": -4.249,
+      "hy": -8.842,
       "investor_ids": [
         "The Ganesha Lab"
       ]
@@ -9671,8 +9671,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.339,
-      "y": -8.909,
+      "x": -4.341,
+      "y": -8.906,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -9694,8 +9694,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
-      "sx": -4.508,
-      "sy": -8.676,
+      "sx": -4.512,
+      "sy": -8.669,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -9716,10 +9716,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "applied",
       "tech_depth_confidence": 0.74,
       "founded_year": 2017,
-      "ux": 0.411,
-      "uy": -8.994,
-      "hx": -4.339,
-      "hy": -8.909,
+      "ux": 0.618,
+      "uy": -8.857,
+      "hx": -4.341,
+      "hy": -8.906,
       "investor_ids": []
     },
     {
@@ -9738,8 +9738,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.418,
-      "y": -9.013,
+      "x": -4.42,
+      "y": -9.009,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -9761,8 +9761,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 15,
       "valuation_estimate_usd": 15.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.685,
-      "sy": -8.906,
+      "sx": -4.69,
+      "sy": -8.898,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -9782,10 +9782,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2014,
-      "ux": -0.479,
-      "uy": -9.326,
-      "hx": -4.418,
-      "hy": -9.013,
+      "ux": -0.257,
+      "uy": -9.212,
+      "hx": -4.42,
+      "hy": -9.009,
       "investor_ids": [
         "green_rock"
       ]
@@ -9806,8 +9806,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -2.16,
-      "y": 0.736,
+      "x": -4.315,
+      "y": -8.969,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -9817,7 +9817,7 @@ window.STARTUP_THEMES_DATA = {
       "pagerank": 0.0,
       "valuation_tier": null,
       "n_investors_mapped": 0,
-      "bio_theme": "",
+      "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
       "sub_cluster_label": "",
@@ -9826,8 +9826,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": -4.8,
-      "sy": 1.635,
+      "sx": -4.456,
+      "sy": -8.809,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -9839,10 +9839,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "medium",
       "tech_depth_confidence": 0.5,
       "founded_year": null,
-      "ux": 0.028,
-      "uy": -8.681,
-      "hx": -2.16,
-      "hy": 0.736,
+      "ux": 0.228,
+      "uy": -8.558,
+      "hx": -4.315,
+      "hy": -8.969,
       "investor_ids": []
     },
     {
@@ -9861,8 +9861,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.287,
-      "y": -9.031,
+      "x": -4.288,
+      "y": -9.028,
       "is_outlier": false,
       "tech_codes": [
         "diagnostics",
@@ -9887,8 +9887,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 5,
       "valuation_estimate_usd": 5.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.392,
-      "sy": -8.947,
+      "sx": -4.396,
+      "sy": -8.94,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -9912,10 +9912,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.784,
       "founded_year": 2022,
-      "ux": -0.324,
-      "uy": -8.367,
-      "hx": -4.287,
-      "hy": -9.031,
+      "ux": -0.13,
+      "uy": -8.256,
+      "hx": -4.288,
+      "hy": -9.028,
       "investor_ids": []
     },
     {
@@ -9934,8 +9934,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.141,
-      "y": -9.015,
+      "x": -4.143,
+      "y": -9.011,
       "is_outlier": false,
       "tech_codes": [
         "diagnostics",
@@ -9961,8 +9961,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -4.07,
-      "sy": -8.911,
+      "sx": -4.074,
+      "sy": -8.903,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -9988,10 +9988,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.74,
       "founded_year": 2017,
-      "ux": 0.104,
-      "uy": -7.392,
-      "hx": -4.141,
-      "hy": -9.015,
+      "ux": 0.266,
+      "uy": -7.276,
+      "hx": -4.143,
+      "hy": -9.011,
       "investor_ids": [
         "DragonesVP",
         "GridX"
@@ -10013,8 +10013,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.135,
-      "y": -9.015,
+      "x": -4.137,
+      "y": -9.011,
       "is_outlier": false,
       "tech_codes": [
         "diagnostics"
@@ -10038,8 +10038,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 10,
       "valuation_estimate_usd": 10.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.056,
-      "sy": -8.91,
+      "sx": -4.06,
+      "sy": -8.903,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -10062,10 +10062,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.716,
       "founded_year": 2019,
-      "ux": 0.117,
-      "uy": -7.349,
-      "hx": -4.135,
-      "hy": -9.015,
+      "ux": 0.278,
+      "uy": -7.233,
+      "hx": -4.137,
+      "hy": -9.011,
       "investor_ids": [
         "GridX"
       ]
@@ -10086,8 +10086,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.219,
-      "y": -8.977,
+      "x": -4.221,
+      "y": -8.974,
       "is_outlier": false,
       "tech_codes": [
         "diagnostics"
@@ -10111,8 +10111,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 5,
       "valuation_estimate_usd": 5.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.243,
-      "sy": -8.827,
+      "sx": -4.247,
+      "sy": -8.819,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -10135,10 +10135,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.692,
       "founded_year": 2004,
-      "ux": 0.198,
-      "uy": -8.017,
-      "hx": -4.219,
-      "hy": -8.977,
+      "ux": 0.378,
+      "uy": -7.894,
+      "hx": -4.221,
+      "hy": -8.974,
       "investor_ids": []
     },
     {
@@ -10157,8 +10157,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.478,
-      "y": -9.043,
+      "x": -4.48,
+      "y": -9.04,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -10180,8 +10180,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
-      "sx": -4.819,
-      "sy": -8.973,
+      "sx": -4.823,
+      "sy": -8.966,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -10203,10 +10203,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2016,
-      "ux": -0.821,
-      "uy": -9.678,
-      "hx": -4.478,
-      "hy": -9.043,
+      "ux": -0.586,
+      "uy": -9.572,
+      "hx": -4.48,
+      "hy": -9.04,
       "investor_ids": []
     },
     {
@@ -10225,8 +10225,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.112,
-      "y": -8.996,
+      "x": -4.114,
+      "y": -8.993,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -10245,8 +10245,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": -4.005,
-      "sy": -8.87,
+      "sx": -4.009,
+      "sy": -8.862,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -10259,10 +10259,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "medium",
       "tech_depth_confidence": 0.5,
       "founded_year": 2016,
-      "ux": 0.294,
-      "uy": -7.23,
-      "hx": -4.112,
-      "hy": -8.996,
+      "ux": 0.45,
+      "uy": -7.109,
+      "hx": -4.114,
+      "hy": -8.993,
       "investor_ids": []
     },
     {
@@ -10281,8 +10281,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.142,
-      "y": -8.963,
+      "x": -4.143,
+      "y": -8.96,
       "is_outlier": false,
       "tech_codes": [
         "diagnostics"
@@ -10306,8 +10306,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
-      "sx": -4.07,
-      "sy": -8.796,
+      "sx": -4.074,
+      "sy": -8.788,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -10329,10 +10329,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2014,
-      "ux": 0.463,
-      "uy": -7.505,
-      "hx": -4.142,
-      "hy": -8.963,
+      "ux": 0.626,
+      "uy": -7.378,
+      "hx": -4.143,
+      "hy": -8.96,
       "investor_ids": []
     },
     {
@@ -10351,8 +10351,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.179,
-      "y": -8.961,
+      "x": -4.181,
+      "y": -8.958,
       "is_outlier": false,
       "tech_codes": [
         "diagnostics"
@@ -10376,8 +10376,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 5,
       "valuation_estimate_usd": 5.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.154,
-      "sy": -8.792,
+      "sx": -4.158,
+      "sy": -8.784,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -10400,10 +10400,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.704,
       "founded_year": 2019,
-      "ux": 0.394,
-      "uy": -7.772,
-      "hx": -4.179,
-      "hy": -8.961,
+      "ux": 0.565,
+      "uy": -7.644,
+      "hx": -4.181,
+      "hy": -8.958,
       "investor_ids": [
         "bossa_invest",
         "domo_invest"
@@ -10425,8 +10425,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.235,
-      "y": -8.957,
+      "x": -4.237,
+      "y": -8.953,
       "is_outlier": false,
       "tech_codes": [
         "diagnostics"
@@ -10450,8 +10450,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 0,
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.278,
-      "sy": -8.781,
+      "sx": -4.282,
+      "sy": -8.774,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -10472,10 +10472,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.68,
       "founded_year": 2011,
-      "ux": 0.306,
-      "uy": -8.171,
-      "hx": -4.235,
-      "hy": -8.957,
+      "ux": 0.489,
+      "uy": -8.043,
+      "hx": -4.237,
+      "hy": -8.953,
       "investor_ids": []
     },
     {
@@ -10494,8 +10494,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.242,
-      "y": -8.852,
+      "x": -4.244,
+      "y": -8.848,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -10517,8 +10517,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
-      "sx": -4.294,
-      "sy": -8.548,
+      "sx": -4.298,
+      "sy": -8.54,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -10538,10 +10538,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2021,
-      "ux": 1.022,
-      "uy": -8.447,
-      "hx": -4.242,
-      "hy": -8.852,
+      "ux": 1.208,
+      "uy": -8.296,
+      "hx": -4.244,
+      "hy": -8.848,
       "investor_ids": []
     },
     {
@@ -10560,8 +10560,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.273,
-      "y": -8.794,
+      "x": -4.275,
+      "y": -8.79,
       "is_outlier": false,
       "tech_codes": [
         "diagnostics",
@@ -10586,8 +10586,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.362,
-      "sy": -8.419,
+      "sx": -4.366,
+      "sy": -8.411,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -10611,10 +10611,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.68,
       "founded_year": 2012,
-      "ux": 1.36,
-      "uy": -8.785,
-      "hx": -4.273,
-      "hy": -8.794,
+      "ux": 1.553,
+      "uy": -8.623,
+      "hx": -4.275,
+      "hy": -8.79,
       "investor_ids": []
     },
     {
@@ -10633,8 +10633,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.377,
-      "y": -9.013,
+      "x": -4.379,
+      "y": -9.009,
       "is_outlier": false,
       "tech_codes": [
         "diagnostics",
@@ -10659,8 +10659,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -4.594,
-      "sy": -8.906,
+      "sx": -4.598,
+      "sy": -8.899,
       "bio_lens": [
         "human-health-bio",
         "planetary-boundary"
@@ -10688,10 +10688,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2020,
-      "ux": -0.392,
-      "uy": -9.039,
-      "hx": -4.377,
-      "hy": -9.013,
+      "ux": -0.179,
+      "uy": -8.926,
+      "hx": -4.379,
+      "hy": -9.009,
       "investor_ids": [
         "The Ganesha Lab"
       ]
@@ -10712,8 +10712,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.194,
-      "y": -9.041,
+      "x": -4.196,
+      "y": -9.038,
       "is_outlier": false,
       "tech_codes": [
         "diagnostics"
@@ -10737,8 +10737,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.186,
-      "sy": -8.969,
+      "sx": -4.19,
+      "sy": -8.961,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -10762,10 +10762,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.704,
       "founded_year": 2018,
-      "ux": -0.192,
-      "uy": -7.701,
-      "hx": -4.194,
-      "hy": -9.041,
+      "ux": -0.018,
+      "uy": -7.591,
+      "hx": -4.196,
+      "hy": -9.038,
       "investor_ids": []
     },
     {
@@ -10784,8 +10784,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.131,
-      "y": -8.987,
+      "x": -4.132,
+      "y": -8.983,
       "is_outlier": false,
       "tech_codes": [
         "diagnostics"
@@ -10809,8 +10809,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.046,
-      "sy": -8.848,
+      "sx": -4.05,
+      "sy": -8.841,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -10833,10 +10833,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.692,
       "founded_year": 2021,
-      "ux": 0.322,
-      "uy": -7.378,
-      "hx": -4.131,
-      "hy": -8.987,
+      "ux": 0.483,
+      "uy": -7.256,
+      "hx": -4.132,
+      "hy": -8.983,
       "investor_ids": []
     },
     {
@@ -10855,8 +10855,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.123,
-      "y": -9.006,
+      "x": -4.124,
+      "y": -9.002,
       "is_outlier": false,
       "tech_codes": [
         "diagnostics"
@@ -10880,8 +10880,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 0,
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.028,
-      "sy": -8.891,
+      "sx": -4.032,
+      "sy": -8.883,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -10904,10 +10904,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.704,
       "founded_year": 2015,
-      "ux": 0.206,
-      "uy": -7.281,
-      "hx": -4.123,
-      "hy": -9.006,
+      "ux": 0.364,
+      "uy": -7.162,
+      "hx": -4.124,
+      "hy": -9.002,
       "investor_ids": []
     },
     {
@@ -10926,8 +10926,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.166,
-      "y": -8.903,
+      "x": -4.168,
+      "y": -8.9,
       "is_outlier": false,
       "tech_codes": [
         "diagnostics",
@@ -10952,8 +10952,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.124,
-      "sy": -8.662,
+      "sx": -4.128,
+      "sy": -8.655,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -10975,10 +10975,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.752,
       "founded_year": 2020,
-      "ux": 0.829,
-      "uy": -7.804,
-      "hx": -4.166,
-      "hy": -8.903,
+      "ux": 0.998,
+      "uy": -7.664,
+      "hx": -4.168,
+      "hy": -8.9,
       "investor_ids": [
         "GridX"
       ]
@@ -10999,8 +10999,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.14,
-      "y": -8.937,
+      "x": -4.141,
+      "y": -8.934,
       "is_outlier": false,
       "tech_codes": [
         "diagnostics"
@@ -11024,8 +11024,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.066,
-      "sy": -8.738,
+      "sx": -4.07,
+      "sy": -8.731,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -11046,10 +11046,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.704,
       "founded_year": 2018,
-      "ux": 0.647,
-      "uy": -7.547,
-      "hx": -4.14,
-      "hy": -8.937,
+      "ux": 0.81,
+      "uy": -7.413,
+      "hx": -4.141,
+      "hy": -8.934,
       "investor_ids": [
         "GridX"
       ]
@@ -11133,8 +11133,8 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.832,
       "founded_year": 2019,
-      "ux": -3.757,
-      "uy": 2.488,
+      "ux": -3.852,
+      "uy": 2.424,
       "hx": -8.728,
       "hy": -2.428,
       "investor_ids": [
@@ -11157,8 +11157,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.365,
-      "y": -9.02,
+      "x": -4.367,
+      "y": -9.016,
       "is_outlier": false,
       "tech_codes": [
         "diagnostics",
@@ -11184,8 +11184,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.566,
-      "sy": -8.921,
+      "sx": -4.57,
+      "sy": -8.914,
       "bio_lens": [
         "human-health-bio",
         "planetary-boundary"
@@ -11212,10 +11212,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.696,
       "founded_year": 2021,
-      "ux": -0.412,
-      "uy": -8.937,
-      "hx": -4.365,
-      "hy": -9.02,
+      "ux": -0.201,
+      "uy": -8.825,
+      "hx": -4.367,
+      "hy": -9.016,
       "investor_ids": [
         "AIR Capital",
         "CITES"
@@ -11237,8 +11237,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.225,
-      "y": -8.848,
+      "x": -4.227,
+      "y": -8.845,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -11260,8 +11260,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 50,
       "valuation_estimate_usd": 50.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.256,
-      "sy": -8.541,
+      "sx": -4.26,
+      "sy": -8.533,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -11279,10 +11279,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2015,
-      "ux": 1.081,
-      "uy": -8.335,
-      "hx": -4.225,
-      "hy": -8.848,
+      "ux": 1.263,
+      "uy": -8.183,
+      "hx": -4.227,
+      "hy": -8.845,
       "investor_ids": [
         "dalus_capital",
         "kaszek",
@@ -11305,8 +11305,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.364,
-      "y": -9.002,
+      "x": -4.366,
+      "y": -8.999,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -11328,8 +11328,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
-      "sx": -4.565,
-      "sy": -8.883,
+      "sx": -4.569,
+      "sy": -8.875,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -11349,10 +11349,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.74,
       "founded_year": 2021,
-      "ux": -0.29,
-      "uy": -8.97,
-      "hx": -4.364,
-      "hy": -9.002,
+      "ux": -0.079,
+      "uy": -8.853,
+      "hx": -4.366,
+      "hy": -8.999,
       "investor_ids": [
         "general_catalyst",
         "y_combinator"
@@ -11374,8 +11374,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 0.356,
-      "x": -4.258,
-      "y": -10.521,
+      "x": -4.26,
+      "y": -10.519,
       "is_outlier": true,
       "tech_codes": [
         "diagnostics"
@@ -11399,8 +11399,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.329,
-      "sy": -12.258,
+      "sx": -4.333,
+      "sy": -12.252,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -11423,10 +11423,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.704,
       "founded_year": 2020,
-      "ux": -10.638,
-      "uy": -4.953,
-      "hx": -4.258,
-      "hy": -10.521,
+      "ux": -10.47,
+      "uy": -5.164,
+      "hx": -4.26,
+      "hy": -10.519,
       "investor_ids": []
     },
     {
@@ -11445,8 +11445,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.359,
-      "y": -9.027,
+      "x": -4.361,
+      "y": -9.023,
       "is_outlier": false,
       "tech_codes": [
         "ai_ml",
@@ -11471,8 +11471,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -4.553,
-      "sy": -8.937,
+      "sx": -4.557,
+      "sy": -8.929,
       "bio_lens": [
         "human-health-bio",
         "planetary-boundary"
@@ -11498,10 +11498,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.692,
       "founded_year": 2021,
-      "ux": -0.448,
-      "uy": -8.881,
-      "hx": -4.359,
-      "hy": -9.027,
+      "ux": -0.239,
+      "uy": -8.77,
+      "hx": -4.361,
+      "hy": -9.023,
       "investor_ids": [
         "SF500"
       ]
@@ -11522,8 +11522,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.442,
-      "y": -9.062,
+      "x": -4.444,
+      "y": -9.059,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -11545,8 +11545,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 10,
       "valuation_estimate_usd": 10.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.737,
-      "sy": -9.016,
+      "sx": -4.742,
+      "sy": -9.008,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -11566,10 +11566,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.92,
       "founded_year": 2021,
-      "ux": -0.875,
-      "uy": -9.382,
-      "hx": -4.442,
-      "hy": -9.062,
+      "ux": -0.648,
+      "uy": -9.279,
+      "hx": -4.444,
+      "hy": -9.059,
       "investor_ids": [
         "eurofarma",
         "gavea_investimentos"
@@ -11591,8 +11591,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.313,
-      "y": -8.87,
+      "x": -4.315,
+      "y": -8.867,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -11614,8 +11614,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 25,
       "valuation_estimate_usd": 25.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.452,
-      "sy": -8.59,
+      "sx": -4.456,
+      "sy": -8.582,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -11636,10 +11636,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2015,
-      "ux": 0.737,
-      "uy": -8.902,
-      "hx": -4.313,
-      "hy": -8.87,
+      "ux": 0.938,
+      "uy": -8.756,
+      "hx": -4.315,
+      "hy": -8.867,
       "investor_ids": []
     },
     {
@@ -11658,8 +11658,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.33,
-      "y": -8.888,
+      "x": -4.332,
+      "y": -8.885,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -11681,8 +11681,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
-      "sx": -4.489,
-      "sy": -8.629,
+      "sx": -4.493,
+      "sy": -8.621,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -11703,10 +11703,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "applied",
       "tech_depth_confidence": 0.74,
       "founded_year": 2020,
-      "ux": 0.579,
-      "uy": -8.979,
-      "hx": -4.33,
-      "hy": -8.888,
+      "ux": 0.783,
+      "uy": -8.837,
+      "hx": -4.332,
+      "hy": -8.885,
       "investor_ids": [
         "atlantico",
         "canary_vc",
@@ -11729,8 +11729,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.232,
-      "y": -9.022,
+      "x": -4.234,
+      "y": -9.018,
       "is_outlier": false,
       "tech_codes": [
         "diagnostics",
@@ -11755,8 +11755,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.271,
-      "sy": -8.926,
+      "sx": -4.275,
+      "sy": -8.919,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -11780,10 +11780,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.772,
       "founded_year": 2013,
-      "ux": -0.14,
-      "uy": -8.007,
-      "hx": -4.232,
-      "hy": -9.022,
+      "ux": 0.042,
+      "uy": -7.893,
+      "hx": -4.234,
+      "hy": -9.018,
       "investor_ids": [
         "valor_capital_group"
       ]
@@ -11804,8 +11804,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.44,
-      "y": -9.065,
+      "x": -4.442,
+      "y": -9.062,
       "is_outlier": false,
       "tech_codes": [
         "bioinformatics",
@@ -11832,8 +11832,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.733,
-      "sy": -9.023,
+      "sx": -4.737,
+      "sy": -9.015,
       "bio_lens": [
         "biocentric",
         "human-health-bio"
@@ -11860,10 +11860,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.788,
       "founded_year": 2008,
-      "ux": -0.893,
-      "uy": -9.361,
-      "hx": -4.44,
-      "hy": -9.065,
+      "ux": -0.667,
+      "uy": -9.26,
+      "hx": -4.442,
+      "hy": -9.062,
       "investor_ids": [
         "sp_ventures"
       ]
@@ -11938,8 +11938,8 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.852,
       "founded_year": 2014,
-      "ux": -2.661,
-      "uy": -0.43,
+      "ux": -2.68,
+      "uy": -0.443,
       "hx": -9.175,
       "hy": -2.082,
       "investor_ids": []
@@ -11960,8 +11960,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.15,
-      "y": -8.923,
+      "x": -4.151,
+      "y": -8.919,
       "is_outlier": false,
       "tech_codes": [
         "nanotech",
@@ -11987,8 +11987,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.088,
-      "sy": -8.706,
+      "sx": -4.092,
+      "sy": -8.699,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -12010,10 +12010,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.752,
       "founded_year": 2019,
-      "ux": 0.726,
-      "uy": -7.648,
-      "hx": -4.15,
-      "hy": -8.923,
+      "ux": 0.891,
+      "uy": -7.512,
+      "hx": -4.151,
+      "hy": -8.919,
       "investor_ids": [
         "GridX"
       ]
@@ -12034,8 +12034,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.297,
-      "y": -8.808,
+      "x": -4.299,
+      "y": -8.804,
       "is_outlier": false,
       "tech_codes": [
         "diagnostics",
@@ -12060,8 +12060,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 5,
       "valuation_estimate_usd": 5.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.417,
-      "sy": -8.45,
+      "sx": -4.421,
+      "sy": -8.443,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -12083,10 +12083,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.68,
       "founded_year": 2016,
-      "ux": 1.209,
-      "uy": -8.926,
-      "hx": -4.297,
-      "hy": -8.808,
+      "ux": 1.407,
+      "uy": -8.767,
+      "hx": -4.299,
+      "hy": -8.804,
       "investor_ids": []
     },
     {
@@ -12105,8 +12105,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.236,
-      "y": -8.987,
+      "x": -4.238,
+      "y": -8.984,
       "is_outlier": false,
       "tech_codes": [
         "diagnostics"
@@ -12130,8 +12130,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.281,
-      "sy": -8.849,
+      "sx": -4.285,
+      "sy": -8.842,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -12154,10 +12154,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.692,
       "founded_year": 2012,
-      "ux": 0.09,
-      "uy": -8.112,
-      "hx": -4.236,
-      "hy": -8.987,
+      "ux": 0.273,
+      "uy": -7.991,
+      "hx": -4.238,
+      "hy": -8.984,
       "investor_ids": [
         "cdpq"
       ]
@@ -12178,8 +12178,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 0.348,
-      "x": -1.347,
-      "y": -0.706,
+      "x": -3.762,
+      "y": -9.95,
       "is_outlier": true,
       "tech_codes": [],
       "industry_codes": [],
@@ -12189,7 +12189,7 @@ window.STARTUP_THEMES_DATA = {
       "pagerank": 0.0,
       "valuation_tier": null,
       "n_investors_mapped": 0,
-      "bio_theme": "",
+      "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
       "sub_cluster_label": "",
@@ -12198,8 +12198,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": -2.993,
-      "sy": -1.569,
+      "sx": -3.227,
+      "sy": -10.989,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -12212,10 +12212,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "medium",
       "tech_depth_confidence": 0.5,
       "founded_year": 2019,
-      "ux": -5.608,
-      "uy": -2.714,
-      "hx": -1.347,
-      "hy": -0.706,
+      "ux": -5.541,
+      "uy": -2.795,
+      "hx": -3.762,
+      "hy": -9.95,
       "investor_ids": []
     },
     {
@@ -12234,8 +12234,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.114,
-      "y": -8.975,
+      "x": -4.116,
+      "y": -8.972,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -12254,8 +12254,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": -4.009,
-      "sy": -8.823,
+      "sx": -4.013,
+      "sy": -8.815,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -12267,10 +12267,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "medium",
       "tech_depth_confidence": 0.5,
       "founded_year": 2021,
-      "ux": 0.438,
-      "uy": -7.286,
-      "hx": -4.114,
-      "hy": -8.975,
+      "ux": 0.595,
+      "uy": -7.161,
+      "hx": -4.116,
+      "hy": -8.972,
       "investor_ids": []
     },
     {
@@ -12289,8 +12289,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.305,
-      "y": -9.034,
+      "x": -4.307,
+      "y": -9.03,
       "is_outlier": false,
       "tech_codes": [
         "diagnostics",
@@ -12315,8 +12315,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 10,
       "valuation_estimate_usd": 10.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.433,
-      "sy": -8.953,
+      "sx": -4.437,
+      "sy": -8.945,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -12341,10 +12341,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.796,
       "founded_year": 2016,
-      "ux": -0.381,
-      "uy": -8.489,
-      "hx": -4.305,
-      "hy": -9.034,
+      "ux": -0.183,
+      "uy": -8.379,
+      "hx": -4.307,
+      "hy": -9.03,
       "investor_ids": []
     },
     {
@@ -12363,8 +12363,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.269,
-      "y": -8.813,
+      "x": -4.271,
+      "y": -8.809,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -12386,8 +12386,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 50,
       "valuation_estimate_usd": 50.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.353,
-      "sy": -8.462,
+      "sx": -4.357,
+      "sy": -8.454,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -12409,10 +12409,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2004,
-      "ux": 1.234,
-      "uy": -8.716,
-      "hx": -4.269,
-      "hy": -8.813,
+      "ux": 1.427,
+      "uy": -8.557,
+      "hx": -4.271,
+      "hy": -8.809,
       "investor_ids": [
         "eb_capital",
         "vox_capital"
@@ -12434,8 +12434,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.293,
-      "y": -8.809,
+      "x": -4.295,
+      "y": -8.806,
       "is_outlier": false,
       "tech_codes": [
         "diagnostics",
@@ -12460,8 +12460,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.406,
-      "sy": -8.454,
+      "sx": -4.41,
+      "sy": -8.446,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -12486,10 +12486,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.68,
       "founded_year": 2016,
-      "ux": 1.207,
-      "uy": -8.89,
-      "hx": -4.293,
-      "hy": -8.809,
+      "ux": 1.404,
+      "uy": -8.731,
+      "hx": -4.295,
+      "hy": -8.806,
       "investor_ids": []
     },
     {
@@ -12508,8 +12508,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.277,
-      "y": -8.808,
+      "x": -4.279,
+      "y": -8.804,
       "is_outlier": false,
       "tech_codes": [
         "diagnostics",
@@ -12534,8 +12534,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 5,
       "valuation_estimate_usd": 5.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.372,
-      "sy": -8.451,
+      "sx": -4.376,
+      "sy": -8.443,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -12559,10 +12559,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.68,
       "founded_year": 2021,
-      "ux": 1.251,
-      "uy": -8.786,
-      "hx": -4.277,
-      "hy": -8.808,
+      "ux": 1.446,
+      "uy": -8.626,
+      "hx": -4.279,
+      "hy": -8.804,
       "investor_ids": []
     },
     {
@@ -12581,8 +12581,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.446,
-      "y": -9.036,
+      "x": -4.448,
+      "y": -9.032,
       "is_outlier": false,
       "tech_codes": [
         "medical_devices",
@@ -12608,8 +12608,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.747,
-      "sy": -8.957,
+      "sx": -4.751,
+      "sy": -8.949,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -12633,10 +12633,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.752,
       "founded_year": 2017,
-      "ux": -0.699,
-      "uy": -9.469,
-      "hx": -4.446,
-      "hy": -9.036,
+      "ux": -0.471,
+      "uy": -9.361,
+      "hx": -4.448,
+      "hy": -9.032,
       "investor_ids": [
         "CITES"
       ]
@@ -12657,7 +12657,7 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 0.815,
-      "x": -11.696,
+      "x": -11.693,
       "y": -7.644,
       "is_outlier": false,
       "tech_codes": [],
@@ -12677,7 +12677,7 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": -12.303,
+      "sx": -12.296,
       "sy": -5.009,
       "bio_lens": [],
       "domain_tags": [],
@@ -12690,9 +12690,9 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "unclassified",
       "tech_depth_confidence": 0.5,
       "founded_year": 2020,
-      "ux": 0.663,
-      "uy": -9.198,
-      "hx": -11.696,
+      "ux": 0.873,
+      "uy": -9.053,
+      "hx": -11.693,
       "hy": -7.644,
       "investor_ids": []
     },
@@ -12712,8 +12712,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.279,
-      "y": -8.828,
+      "x": -4.281,
+      "y": -8.824,
       "is_outlier": false,
       "tech_codes": [
         "diagnostics"
@@ -12737,8 +12737,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 0,
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.377,
-      "sy": -8.495,
+      "sx": -4.381,
+      "sy": -8.487,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -12762,10 +12762,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.68,
       "founded_year": 2011,
-      "ux": 1.109,
-      "uy": -8.758,
-      "hx": -4.279,
-      "hy": -8.828,
+      "ux": 1.304,
+      "uy": -8.603,
+      "hx": -4.281,
+      "hy": -8.824,
       "investor_ids": []
     },
     {
@@ -12784,8 +12784,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.332,
-      "y": -8.9,
+      "x": -4.334,
+      "y": -8.897,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -12807,8 +12807,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
-      "sx": -4.493,
-      "sy": -8.656,
+      "sx": -4.497,
+      "sy": -8.648,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -12830,10 +12830,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "applied",
       "tech_depth_confidence": 0.74,
       "founded_year": 2021,
-      "ux": 0.491,
-      "uy": -8.966,
-      "hx": -4.332,
-      "hy": -8.9,
+      "ux": 0.696,
+      "uy": -8.828,
+      "hx": -4.334,
+      "hy": -8.897,
       "investor_ids": [
         "500_latam",
         "left_lane_capital"
@@ -12855,8 +12855,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 0.86,
-      "x": -4.251,
-      "y": -9.012,
+      "x": -4.253,
+      "y": -9.008,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -12878,8 +12878,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.313,
-      "sy": -8.904,
+      "sx": -4.317,
+      "sy": -8.897,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -12899,10 +12899,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2013,
-      "ux": -0.112,
-      "uy": -8.161,
-      "hx": -4.251,
-      "hy": -9.012,
+      "ux": 0.074,
+      "uy": -8.045,
+      "hx": -4.253,
+      "hy": -9.008,
       "investor_ids": [
         "dalus_capital"
       ]
@@ -12923,8 +12923,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -1.934,
-      "y": 0.629,
+      "x": -4.161,
+      "y": -9.042,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -12934,7 +12934,7 @@ window.STARTUP_THEMES_DATA = {
       "pagerank": 0.0,
       "valuation_tier": null,
       "n_investors_mapped": 0,
-      "bio_theme": "",
+      "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
       "sub_cluster_label": "",
@@ -12943,8 +12943,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": -4.297,
-      "sy": 1.397,
+      "sx": -4.114,
+      "sy": -8.971,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -12956,10 +12956,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "medium",
       "tech_depth_confidence": 0.5,
       "founded_year": 1999,
-      "ux": -0.148,
-      "uy": -7.452,
-      "hx": -1.934,
-      "hy": 0.629,
+      "ux": 0.018,
+      "uy": -7.343,
+      "hx": -4.161,
+      "hy": -9.042,
       "investor_ids": []
     },
     {
@@ -12978,8 +12978,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.302,
-      "y": -8.827,
+      "x": -4.303,
+      "y": -8.823,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -13001,8 +13001,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 100,
       "valuation_estimate_usd": 100.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.426,
-      "sy": -8.493,
+      "sx": -4.43,
+      "sy": -8.485,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -13023,10 +13023,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2011,
-      "ux": 1.066,
-      "uy": -8.913,
-      "hx": -4.302,
-      "hy": -8.827,
+      "ux": 1.265,
+      "uy": -8.758,
+      "hx": -4.303,
+      "hy": -8.823,
       "investor_ids": [
         "carao_ventures"
       ]
@@ -13047,8 +13047,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.173,
-      "y": -8.971,
+      "x": -4.175,
+      "y": -8.968,
       "is_outlier": false,
       "tech_codes": [
         "diagnostics"
@@ -13072,8 +13072,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.14,
-      "sy": -8.814,
+      "sx": -4.144,
+      "sy": -8.807,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -13097,10 +13097,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.704,
       "founded_year": 2020,
-      "ux": 0.337,
-      "uy": -7.706,
-      "hx": -4.173,
-      "hy": -8.971,
+      "ux": 0.507,
+      "uy": -7.58,
+      "hx": -4.175,
+      "hy": -8.968,
       "investor_ids": [
         "GridX"
       ]
@@ -13121,8 +13121,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.157,
-      "y": -9.042,
+      "x": -4.159,
+      "y": -9.039,
       "is_outlier": false,
       "tech_codes": [
         "diagnostics"
@@ -13148,8 +13148,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -4.105,
-      "sy": -8.972,
+      "sx": -4.109,
+      "sy": -8.964,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -13174,10 +13174,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.704,
       "founded_year": 2021,
-      "ux": -0.122,
-      "uy": -7.442,
-      "hx": -4.157,
-      "hy": -9.042,
+      "ux": 0.043,
+      "uy": -7.332,
+      "hx": -4.159,
+      "hy": -9.039,
       "investor_ids": [
         "CITES",
         "SF500"
@@ -13199,8 +13199,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.286,
-      "y": -8.823,
+      "x": -4.287,
+      "y": -8.82,
       "is_outlier": false,
       "tech_codes": [
         "diagnostics",
@@ -13225,8 +13225,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 25,
       "valuation_estimate_usd": 25.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.39,
-      "sy": -8.485,
+      "sx": -4.394,
+      "sy": -8.477,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -13251,10 +13251,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2019,
-      "ux": 1.127,
-      "uy": -8.81,
-      "hx": -4.286,
-      "hy": -8.823,
+      "ux": 1.323,
+      "uy": -8.654,
+      "hx": -4.287,
+      "hy": -8.82,
       "investor_ids": []
     },
     {
@@ -13273,8 +13273,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.394,
-      "y": -9.04,
+      "x": -4.396,
+      "y": -9.037,
       "is_outlier": false,
       "tech_codes": [
         "diagnostics"
@@ -13299,8 +13299,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -4.631,
-      "sy": -8.967,
+      "sx": -4.635,
+      "sy": -8.96,
       "bio_lens": [
         "human-health-bio",
         "planetary-boundary"
@@ -13328,10 +13328,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.68,
       "founded_year": 2009,
-      "ux": -0.619,
-      "uy": -9.097,
-      "hx": -4.394,
-      "hy": -9.04,
+      "ux": -0.402,
+      "uy": -8.989,
+      "hx": -4.396,
+      "hy": -9.037,
       "investor_ids": [
         "sp_ventures",
         "vox_capital"
@@ -13353,8 +13353,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -2.27,
-      "y": 0.665,
+      "x": -4.39,
+      "y": -9.017,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -13364,7 +13364,7 @@ window.STARTUP_THEMES_DATA = {
       "pagerank": 0.0,
       "valuation_tier": null,
       "n_investors_mapped": 0,
-      "bio_theme": "",
+      "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
       "sub_cluster_label": "",
@@ -13373,8 +13373,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": -5.044,
-      "sy": 1.479,
+      "sx": -4.622,
+      "sy": -8.915,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -13384,10 +13384,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "medium",
       "tech_depth_confidence": 0.5,
       "founded_year": null,
-      "ux": -0.468,
-      "uy": -9.099,
-      "hx": -2.27,
-      "hy": 0.665,
+      "ux": -0.252,
+      "uy": -8.987,
+      "hx": -4.39,
+      "hy": -9.017,
       "investor_ids": []
     },
     {
@@ -13406,8 +13406,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.244,
-      "y": -9.032,
+      "x": -4.246,
+      "y": -9.028,
       "is_outlier": false,
       "tech_codes": [
         "diagnostics"
@@ -13431,8 +13431,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 25,
       "valuation_estimate_usd": 25.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.298,
-      "sy": -8.948,
+      "sx": -4.302,
+      "sy": -8.941,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -13455,10 +13455,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.704,
       "founded_year": 2012,
-      "ux": -0.237,
-      "uy": -8.071,
-      "hx": -4.244,
-      "hy": -9.032,
+      "ux": -0.052,
+      "uy": -7.96,
+      "hx": -4.246,
+      "hy": -9.028,
       "investor_ids": [
         "kaszek",
         "monashees"
@@ -13480,8 +13480,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 0.903,
-      "x": -4.34,
-      "y": -8.856,
+      "x": -4.342,
+      "y": -8.852,
       "is_outlier": false,
       "tech_codes": [
         "therapeutics",
@@ -13506,8 +13506,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.512,
-      "sy": -8.557,
+      "sx": -4.516,
+      "sy": -8.55,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -13531,10 +13531,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.692,
       "founded_year": 2019,
-      "ux": 0.781,
-      "uy": -9.121,
-      "hx": -4.34,
-      "hy": -8.856,
+      "ux": 0.989,
+      "uy": -8.973,
+      "hx": -4.342,
+      "hy": -8.852,
       "investor_ids": []
     },
     {
@@ -13553,8 +13553,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.168,
-      "y": -8.921,
+      "x": -4.169,
+      "y": -8.918,
       "is_outlier": false,
       "tech_codes": [
         "diagnostics"
@@ -13578,8 +13578,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.128,
-      "sy": -8.702,
+      "sx": -4.132,
+      "sy": -8.695,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -13600,10 +13600,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.704,
       "founded_year": 2019,
-      "ux": 0.7,
-      "uy": -7.778,
-      "hx": -4.168,
-      "hy": -8.921,
+      "ux": 0.869,
+      "uy": -7.641,
+      "hx": -4.169,
+      "hy": -8.918,
       "investor_ids": [
         "GridX",
         "SOSV_IndieBio"
@@ -13625,8 +13625,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.263,
-      "y": -8.742,
+      "x": -4.265,
+      "y": -8.738,
       "is_outlier": false,
       "tech_codes": [
         "ai_ml",
@@ -13652,8 +13652,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 0,
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.34,
-      "sy": -8.304,
+      "sx": -4.344,
+      "sy": -8.296,
       "bio_lens": [
         "biocentric",
         "human-health-bio"
@@ -13682,10 +13682,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.692,
       "founded_year": 2021,
-      "ux": 1.741,
-      "uy": -8.828,
-      "hx": -4.263,
-      "hy": -8.742,
+      "ux": 1.934,
+      "uy": -8.654,
+      "hx": -4.265,
+      "hy": -8.738,
       "investor_ids": []
     },
     {
@@ -13704,8 +13704,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 0.903,
-      "x": -4.334,
-      "y": -8.843,
+      "x": -4.336,
+      "y": -8.839,
       "is_outlier": false,
       "tech_codes": [
         "diagnostics"
@@ -13729,8 +13729,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 0,
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.498,
-      "sy": -8.528,
+      "sx": -4.502,
+      "sy": -8.52,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -13754,10 +13754,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2017,
-      "ux": 0.886,
-      "uy": -9.106,
-      "hx": -4.334,
-      "hy": -8.843,
+      "ux": 1.092,
+      "uy": -8.955,
+      "hx": -4.336,
+      "hy": -8.839,
       "investor_ids": []
     },
     {
@@ -13776,8 +13776,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.358,
-      "y": -8.967,
+      "x": -4.36,
+      "y": -8.964,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -13799,8 +13799,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
-      "sx": -4.551,
-      "sy": -8.805,
+      "sx": -4.555,
+      "sy": -8.798,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -13820,10 +13820,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "applied",
       "tech_depth_confidence": 0.74,
       "founded_year": 2021,
-      "ux": -0.034,
-      "uy": -9.001,
-      "hx": -4.358,
-      "hy": -8.967,
+      "ux": 0.176,
+      "uy": -8.877,
+      "hx": -4.36,
+      "hy": -8.964,
       "investor_ids": []
     },
     {
@@ -13842,8 +13842,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 0.347,
-      "x": -3.795,
-      "y": -10.108,
+      "x": -3.797,
+      "y": -10.105,
       "is_outlier": true,
       "tech_codes": [],
       "industry_codes": [
@@ -13865,8 +13865,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
-      "sx": -3.3,
-      "sy": -11.34,
+      "sx": -3.304,
+      "sy": -11.333,
       "bio_lens": [
         "biocentric",
         "planetary-boundary"
@@ -13885,10 +13885,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "applied",
       "tech_depth_confidence": 0.74,
       "founded_year": 2020,
-      "ux": -6.76,
-      "uy": -2.621,
-      "hx": -3.795,
-      "hy": -10.108,
+      "ux": -6.687,
+      "uy": -2.736,
+      "hx": -3.797,
+      "hy": -10.105,
       "investor_ids": [
         "melek_capital",
         "wivet"
@@ -13910,8 +13910,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.374,
-      "y": -9.016,
+      "x": -4.376,
+      "y": -9.012,
       "is_outlier": false,
       "tech_codes": [
         "bioinformatics",
@@ -13937,8 +13937,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 15,
       "valuation_estimate_usd": 15.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.586,
-      "sy": -8.913,
+      "sx": -4.59,
+      "sy": -8.905,
       "bio_lens": [
         "human-health-bio",
         "planetary-boundary"
@@ -13966,10 +13966,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.756,
       "founded_year": 2019,
-      "ux": -0.405,
-      "uy": -9.008,
-      "hx": -4.374,
-      "hy": -9.016,
+      "ux": -0.192,
+      "uy": -8.895,
+      "hx": -4.376,
+      "hy": -9.012,
       "investor_ids": [
         "SF500",
         "zentynel"
@@ -13991,8 +13991,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.149,
-      "y": -9.018,
+      "x": -4.151,
+      "y": -9.015,
       "is_outlier": false,
       "tech_codes": [
         "diagnostics"
@@ -14016,8 +14016,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.088,
-      "sy": -8.918,
+      "sx": -4.092,
+      "sy": -8.911,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -14040,10 +14040,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.692,
       "founded_year": 2014,
-      "ux": 0.063,
-      "uy": -7.441,
-      "hx": -4.149,
-      "hy": -9.018,
+      "ux": 0.227,
+      "uy": -7.326,
+      "hx": -4.151,
+      "hy": -9.015,
       "investor_ids": [
         "GridX"
       ]
@@ -14064,8 +14064,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.147,
-      "y": -9.024,
+      "x": -4.149,
+      "y": -9.021,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -14087,8 +14087,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
-      "sx": -4.083,
-      "sy": -8.931,
+      "sx": -4.087,
+      "sy": -8.924,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -14108,10 +14108,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2014,
-      "ux": 0.026,
-      "uy": -7.414,
-      "hx": -4.147,
-      "hy": -9.024,
+      "ux": 0.189,
+      "uy": -7.3,
+      "hx": -4.149,
+      "hy": -9.021,
       "investor_ids": []
     },
     {
@@ -14130,8 +14130,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.129,
-      "y": -9.006,
+      "x": -4.13,
+      "y": -9.003,
       "is_outlier": false,
       "tech_codes": [
         "diagnostics"
@@ -14155,8 +14155,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -4.042,
-      "sy": -8.892,
+      "sx": -4.045,
+      "sy": -8.884,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -14179,10 +14179,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.704,
       "founded_year": 2021,
-      "ux": 0.19,
-      "uy": -7.322,
-      "hx": -4.129,
-      "hy": -9.006,
+      "ux": 0.35,
+      "uy": -7.203,
+      "hx": -4.13,
+      "hy": -9.003,
       "investor_ids": [
         "GridX"
       ]
@@ -14203,8 +14203,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -1.939,
-      "y": 0.824,
+      "x": -4.165,
+      "y": -8.909,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -14214,7 +14214,7 @@ window.STARTUP_THEMES_DATA = {
       "pagerank": 0.0,
       "valuation_tier": null,
       "n_investors_mapped": 0,
-      "bio_theme": "",
+      "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
       "sub_cluster_label": "",
@@ -14223,8 +14223,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": -4.309,
-      "sy": 1.831,
+      "sx": -4.122,
+      "sy": -8.675,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -14236,10 +14236,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "medium",
       "tech_depth_confidence": 0.5,
       "founded_year": null,
-      "ux": 0.77,
-      "uy": -7.765,
-      "hx": -1.939,
-      "hy": 0.824,
+      "ux": 0.938,
+      "uy": -7.627,
+      "hx": -4.165,
+      "hy": -8.909,
       "investor_ids": []
     },
     {
@@ -14258,8 +14258,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.328,
-      "y": -8.889,
+      "x": -4.33,
+      "y": -8.886,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -14281,8 +14281,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
-      "sx": -4.485,
-      "sy": -8.631,
+      "sx": -4.489,
+      "sy": -8.624,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -14300,10 +14300,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2016,
-      "ux": 0.575,
-      "uy": -8.965,
-      "hx": -4.328,
-      "hy": -8.889,
+      "ux": 0.779,
+      "uy": -8.824,
+      "hx": -4.33,
+      "hy": -8.886,
       "investor_ids": []
     },
     {
@@ -14322,8 +14322,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.287,
-      "y": -8.822,
+      "x": -4.289,
+      "y": -8.818,
       "is_outlier": false,
       "tech_codes": [
         "diagnostics",
@@ -14348,8 +14348,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 10,
       "valuation_estimate_usd": 10.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.393,
-      "sy": -8.481,
+      "sx": -4.397,
+      "sy": -8.474,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -14374,10 +14374,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.692,
       "founded_year": 2018,
-      "ux": 1.134,
-      "uy": -8.822,
-      "hx": -4.287,
-      "hy": -8.822,
+      "ux": 1.331,
+      "uy": -8.666,
+      "hx": -4.289,
+      "hy": -8.818,
       "investor_ids": [
         "alexia_ventures",
         "idb_invest"
@@ -14399,8 +14399,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.287,
-      "y": -8.826,
+      "x": -4.289,
+      "y": -8.823,
       "is_outlier": false,
       "tech_codes": [
         "diagnostics"
@@ -14424,8 +14424,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 0,
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.393,
-      "sy": -8.491,
+      "sx": -4.397,
+      "sy": -8.484,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -14448,10 +14448,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.704,
       "founded_year": 2016,
-      "ux": 1.104,
-      "uy": -8.812,
-      "hx": -4.287,
-      "hy": -8.826,
+      "ux": 1.3,
+      "uy": -8.656,
+      "hx": -4.289,
+      "hy": -8.823,
       "investor_ids": []
     },
     {
@@ -14470,8 +14470,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.238,
-      "y": -9.025,
+      "x": -4.24,
+      "y": -9.022,
       "is_outlier": false,
       "tech_codes": [
         "diagnostics"
@@ -14495,8 +14495,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.285,
-      "sy": -8.934,
+      "sx": -4.289,
+      "sy": -8.927,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -14517,10 +14517,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.692,
       "founded_year": 2018,
-      "ux": -0.18,
-      "uy": -8.043,
-      "hx": -4.238,
-      "hy": -9.025,
+      "ux": 0.003,
+      "uy": -7.931,
+      "hx": -4.24,
+      "hy": -9.022,
       "investor_ids": []
     },
     {
@@ -14539,8 +14539,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.264,
-      "y": -8.745,
+      "x": -4.266,
+      "y": -8.741,
       "is_outlier": false,
       "tech_codes": [
         "remote_sensing",
@@ -14565,8 +14565,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 15,
       "valuation_estimate_usd": 15.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.343,
-      "sy": -8.311,
+      "sx": -4.347,
+      "sy": -8.303,
       "bio_lens": [
         "biocentric",
         "bio-enabled-industrial-transition"
@@ -14588,10 +14588,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2015,
-      "ux": 1.719,
-      "uy": -8.829,
-      "hx": -4.264,
-      "hy": -8.745,
+      "ux": 1.911,
+      "uy": -8.656,
+      "hx": -4.266,
+      "hy": -8.741,
       "investor_ids": [
         "primatec"
       ]
@@ -14612,8 +14612,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.453,
-      "y": -9.062,
+      "x": -4.455,
+      "y": -9.058,
       "is_outlier": false,
       "tech_codes": [
         "bioinformatics",
@@ -14643,8 +14643,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.762,
-      "sy": -9.015,
+      "sx": -4.766,
+      "sy": -9.007,
       "bio_lens": [
         "human-health-bio",
         "planetary-boundary"
@@ -14675,10 +14675,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.868,
       "founded_year": 2021,
-      "ux": -0.895,
-      "uy": -9.459,
-      "hx": -4.453,
-      "hy": -9.062,
+      "ux": -0.666,
+      "uy": -9.357,
+      "hx": -4.455,
+      "hy": -9.058,
       "investor_ids": []
     },
     {
@@ -14697,8 +14697,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.167,
-      "y": -8.903,
+      "x": -4.169,
+      "y": -8.9,
       "is_outlier": false,
       "tech_codes": [
         "diagnostics"
@@ -14722,8 +14722,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.128,
-      "sy": -8.663,
+      "sx": -4.132,
+      "sy": -8.655,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -14745,10 +14745,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.692,
       "founded_year": 2021,
-      "ux": 0.823,
-      "uy": -7.814,
-      "hx": -4.167,
-      "hy": -8.903,
+      "ux": 0.993,
+      "uy": -7.674,
+      "hx": -4.169,
+      "hy": -8.9,
       "investor_ids": [
         "AIR Capital",
         "SF500",
@@ -14771,8 +14771,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.266,
-      "y": -8.742,
+      "x": -4.267,
+      "y": -8.738,
       "is_outlier": false,
       "tech_codes": [
         "diagnostics"
@@ -14796,8 +14796,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.346,
-      "sy": -8.304,
+      "sx": -4.35,
+      "sy": -8.296,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -14820,10 +14820,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.692,
       "founded_year": 2012,
-      "ux": 1.736,
-      "uy": -8.845,
-      "hx": -4.266,
-      "hy": -8.742,
+      "ux": 1.928,
+      "uy": -8.672,
+      "hx": -4.267,
+      "hy": -8.738,
       "investor_ids": []
     },
     {
@@ -14893,8 +14893,8 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2018,
-      "ux": 0.768,
-      "uy": -9.171,
+      "ux": 0.977,
+      "uy": -9.023,
       "hx": -10.505,
       "hy": -1.018,
       "investor_ids": []
@@ -14915,8 +14915,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.473,
-      "y": -9.05,
+      "x": -4.475,
+      "y": -9.046,
       "is_outlier": false,
       "tech_codes": [
         "iot",
@@ -14944,8 +14944,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.807,
-      "sy": -8.988,
+      "sx": -4.811,
+      "sy": -8.98,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -14969,10 +14969,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.788,
       "founded_year": 2009,
-      "ux": -0.855,
-      "uy": -9.627,
-      "hx": -4.473,
-      "hy": -9.05,
+      "ux": -0.621,
+      "uy": -9.522,
+      "hx": -4.475,
+      "hy": -9.046,
       "investor_ids": [
         "CITES"
       ]
@@ -14993,8 +14993,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.266,
-      "y": -8.742,
+      "x": -4.268,
+      "y": -8.738,
       "is_outlier": false,
       "tech_codes": [
         "diagnostics",
@@ -15019,8 +15019,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.346,
-      "sy": -8.304,
+      "sx": -4.35,
+      "sy": -8.296,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -15044,10 +15044,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.68,
       "founded_year": 2014,
-      "ux": 1.737,
-      "uy": -8.847,
-      "hx": -4.266,
-      "hy": -8.742,
+      "ux": 1.93,
+      "uy": -8.674,
+      "hx": -4.268,
+      "hy": -8.738,
       "investor_ids": []
     },
     {
@@ -15066,8 +15066,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.403,
-      "y": -9.033,
+      "x": -4.405,
+      "y": -9.03,
       "is_outlier": false,
       "tech_codes": [
         "formulation",
@@ -15096,8 +15096,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -4.652,
-      "sy": -8.952,
+      "sx": -4.656,
+      "sy": -8.945,
       "bio_lens": [
         "human-health-bio",
         "planetary-boundary"
@@ -15124,10 +15124,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.832,
       "founded_year": 2020,
-      "ux": -0.592,
-      "uy": -9.175,
-      "hx": -4.403,
-      "hy": -9.033,
+      "ux": -0.373,
+      "uy": -9.066,
+      "hx": -4.405,
+      "hy": -9.03,
       "investor_ids": [
         "SF500"
       ]
@@ -15148,8 +15148,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.482,
-      "y": -9.046,
+      "x": -4.484,
+      "y": -9.043,
       "is_outlier": false,
       "tech_codes": [
         "nanotech",
@@ -15177,8 +15177,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.826,
-      "sy": -8.98,
+      "sx": -4.831,
+      "sy": -8.972,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -15204,10 +15204,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.832,
       "founded_year": 2021,
-      "ux": -0.848,
-      "uy": -9.696,
-      "hx": -4.482,
-      "hy": -9.046,
+      "ux": -0.613,
+      "uy": -9.591,
+      "hx": -4.484,
+      "hy": -9.043,
       "investor_ids": [
         "GridX"
       ]
@@ -15228,8 +15228,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.37,
-      "y": -9.013,
+      "x": -4.372,
+      "y": -9.009,
       "is_outlier": false,
       "tech_codes": [
         "ai_ml",
@@ -15256,8 +15256,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -4.578,
-      "sy": -8.906,
+      "sx": -4.583,
+      "sy": -8.898,
       "bio_lens": [
         "human-health-bio",
         "planetary-boundary"
@@ -15285,10 +15285,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.764,
       "founded_year": null,
-      "ux": -0.376,
-      "uy": -8.99,
-      "hx": -4.37,
-      "hy": -9.013,
+      "ux": -0.164,
+      "uy": -8.876,
+      "hx": -4.372,
+      "hy": -9.009,
       "investor_ids": [
         "GridX"
       ]
@@ -15309,8 +15309,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.287,
-      "y": -8.802,
+      "x": -4.289,
+      "y": -8.799,
       "is_outlier": false,
       "tech_codes": [
         "diagnostics",
@@ -15335,8 +15335,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 10,
       "valuation_estimate_usd": 10.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.393,
-      "sy": -8.438,
+      "sx": -4.397,
+      "sy": -8.43,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -15360,10 +15360,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.68,
       "founded_year": 2020,
-      "ux": 1.27,
-      "uy": -8.863,
-      "hx": -4.287,
-      "hy": -8.802,
+      "ux": 1.467,
+      "uy": -8.703,
+      "hx": -4.289,
+      "hy": -8.799,
       "investor_ids": []
     },
     {
@@ -15382,8 +15382,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.163,
-      "y": -9.047,
+      "x": -4.165,
+      "y": -9.044,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -15405,8 +15405,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.118,
-      "sy": -8.983,
+      "sx": -4.122,
+      "sy": -8.975,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -15428,10 +15428,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2020,
-      "ux": -0.17,
-      "uy": -7.473,
-      "hx": -4.163,
-      "hy": -9.047,
+      "ux": -0.003,
+      "uy": -7.364,
+      "hx": -4.165,
+      "hy": -9.044,
       "investor_ids": [
         "vesper_ventures"
       ]
@@ -15452,8 +15452,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.149,
-      "y": -8.918,
+      "x": -4.151,
+      "y": -8.914,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -15472,8 +15472,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": -4.087,
-      "sy": -8.695,
+      "sx": -4.091,
+      "sy": -8.687,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -15485,10 +15485,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "medium",
       "tech_depth_confidence": 0.5,
       "founded_year": null,
-      "ux": 0.763,
-      "uy": -7.655,
-      "hx": -4.149,
-      "hy": -8.918,
+      "ux": 0.928,
+      "uy": -7.517,
+      "hx": -4.151,
+      "hy": -8.914,
       "investor_ids": []
     },
     {
@@ -15507,8 +15507,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.34,
-      "y": -8.95,
+      "x": -4.342,
+      "y": -8.946,
       "is_outlier": false,
       "tech_codes": [
         "ai_ml",
@@ -15533,8 +15533,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 15,
       "valuation_estimate_usd": 15.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.511,
-      "sy": -8.766,
+      "sx": -4.515,
+      "sy": -8.758,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -15559,10 +15559,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.692,
       "founded_year": 2018,
-      "ux": 0.13,
-      "uy": -8.915,
-      "hx": -4.34,
-      "hy": -8.95,
+      "ux": 0.336,
+      "uy": -8.787,
+      "hx": -4.342,
+      "hy": -8.946,
       "investor_ids": [
         "zentynel"
       ]
@@ -15583,8 +15583,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.218,
-      "y": -8.969,
+      "x": -4.22,
+      "y": -8.965,
       "is_outlier": false,
       "tech_codes": [
         "diagnostics"
@@ -15608,8 +15608,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.241,
-      "sy": -8.808,
+      "sx": -4.245,
+      "sy": -8.801,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -15632,10 +15632,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.68,
       "founded_year": 2020,
-      "ux": 0.257,
-      "uy": -8.028,
-      "hx": -4.218,
-      "hy": -8.969,
+      "ux": 0.437,
+      "uy": -7.903,
+      "hx": -4.22,
+      "hy": -8.965,
       "investor_ids": []
     },
     {
@@ -15709,8 +15709,8 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": null,
-      "ux": -4.577,
-      "uy": -1.735,
+      "ux": -4.545,
+      "uy": -1.793,
       "hx": -9.504,
       "hy": -2.343,
       "investor_ids": [
@@ -15733,8 +15733,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.428,
-      "y": -9.056,
+      "x": -4.43,
+      "y": -9.052,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -15756,8 +15756,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
-      "sx": -4.706,
-      "sy": -9.002,
+      "sx": -4.71,
+      "sy": -8.994,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -15778,10 +15778,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": null,
-      "ux": -0.8,
-      "uy": -9.297,
-      "hx": -4.428,
-      "hy": -9.056,
+      "ux": -0.576,
+      "uy": -9.193,
+      "hx": -4.43,
+      "hy": -9.052,
       "investor_ids": []
     },
     {
@@ -15800,8 +15800,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.357,
-      "y": -8.982,
+      "x": -4.359,
+      "y": -8.978,
       "is_outlier": false,
       "tech_codes": [
         "ai_ml",
@@ -15826,8 +15826,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -4.55,
-      "sy": -8.837,
+      "sx": -4.554,
+      "sy": -8.83,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -15852,10 +15852,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.692,
       "founded_year": null,
-      "ux": -0.133,
-      "uy": -8.968,
-      "hx": -4.357,
-      "hy": -8.982,
+      "ux": 0.076,
+      "uy": -8.847,
+      "hx": -4.359,
+      "hy": -8.978,
       "investor_ids": [
         "SF500",
         "The Ganesha Lab"
@@ -15877,8 +15877,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.481,
-      "y": -9.044,
+      "x": -4.483,
+      "y": -9.041,
       "is_outlier": false,
       "tech_codes": [
         "ai_ml",
@@ -15904,8 +15904,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.824,
-      "sy": -8.976,
+      "sx": -4.828,
+      "sy": -8.969,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -15930,10 +15930,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.684,
       "founded_year": 2019,
-      "ux": -0.834,
-      "uy": -9.691,
-      "hx": -4.481,
-      "hy": -9.044,
+      "ux": -0.599,
+      "uy": -9.585,
+      "hx": -4.483,
+      "hy": -9.041,
       "investor_ids": [
         "The Ganesha Lab"
       ]
@@ -15954,8 +15954,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.153,
-      "y": -8.972,
+      "x": -4.154,
+      "y": -8.968,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -15977,8 +15977,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 15,
       "valuation_estimate_usd": 15.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.095,
-      "sy": -8.815,
+      "sx": -4.099,
+      "sy": -8.807,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -15996,10 +15996,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2006,
-      "ux": 0.38,
-      "uy": -7.564,
-      "hx": -4.153,
-      "hy": -8.972,
+      "ux": 0.546,
+      "uy": -7.438,
+      "hx": -4.154,
+      "hy": -8.968,
       "investor_ids": []
     },
     {
@@ -16018,8 +16018,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.22,
-      "y": -8.845,
+      "x": -4.221,
+      "y": -8.842,
       "is_outlier": false,
       "tech_codes": [
         "diagnostics"
@@ -16043,8 +16043,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 0,
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.244,
-      "sy": -8.533,
+      "sx": -4.248,
+      "sy": -8.526,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -16065,10 +16065,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2016,
-      "ux": 1.117,
-      "uy": -8.303,
-      "hx": -4.22,
-      "hy": -8.845,
+      "ux": 1.298,
+      "uy": -8.151,
+      "hx": -4.221,
+      "hy": -8.842,
       "investor_ids": []
     },
     {
@@ -16087,8 +16087,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.211,
-      "y": -8.983,
+      "x": -4.213,
+      "y": -8.98,
       "is_outlier": false,
       "tech_codes": [
         "diagnostics"
@@ -16112,8 +16112,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 50,
       "valuation_estimate_usd": 50.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.225,
-      "sy": -8.841,
+      "sx": -4.229,
+      "sy": -8.834,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -16137,10 +16137,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.704,
       "founded_year": 2013,
-      "ux": 0.171,
-      "uy": -7.945,
-      "hx": -4.211,
-      "hy": -8.983,
+      "ux": 0.349,
+      "uy": -7.823,
+      "hx": -4.213,
+      "hy": -8.98,
       "investor_ids": [
         "corfo",
         "fondo_alerce",
@@ -16163,8 +16163,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.221,
-      "y": -8.998,
+      "x": -4.223,
+      "y": -8.994,
       "is_outlier": false,
       "tech_codes": [
         "diagnostics",
@@ -16189,8 +16189,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.247,
-      "sy": -8.873,
+      "sx": -4.251,
+      "sy": -8.865,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -16214,10 +16214,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.772,
       "founded_year": 2015,
-      "ux": 0.049,
-      "uy": -7.984,
-      "hx": -4.221,
-      "hy": -8.998,
+      "ux": 0.229,
+      "uy": -7.865,
+      "hx": -4.223,
+      "hy": -8.994,
       "investor_ids": [
         "biominas"
       ]
@@ -16238,8 +16238,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.132,
-      "y": -8.939,
+      "x": -4.134,
+      "y": -8.935,
       "is_outlier": false,
       "tech_codes": [
         "diagnostics"
@@ -16263,8 +16263,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.05,
-      "sy": -8.741,
+      "sx": -4.054,
+      "sy": -8.734,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -16285,10 +16285,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.704,
       "founded_year": 2022,
-      "ux": 0.653,
-      "uy": -7.494,
-      "hx": -4.132,
-      "hy": -8.939,
+      "ux": 0.814,
+      "uy": -7.361,
+      "hx": -4.134,
+      "hy": -8.935,
       "investor_ids": [
         "GridX"
       ]
@@ -16309,8 +16309,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.242,
-      "y": -8.838,
+      "x": -4.243,
+      "y": -8.835,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -16332,8 +16332,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 0,
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.293,
-      "sy": -8.518,
+      "sx": -4.297,
+      "sy": -8.51,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -16353,10 +16353,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2016,
-      "ux": 1.118,
-      "uy": -8.471,
-      "hx": -4.242,
-      "hy": -8.838,
+      "ux": 1.304,
+      "uy": -8.318,
+      "hx": -4.243,
+      "hy": -8.835,
       "investor_ids": [
         "dalus_capital"
       ]
@@ -16377,8 +16377,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.27,
-      "y": -8.737,
+      "x": -4.272,
+      "y": -8.734,
       "is_outlier": false,
       "tech_codes": [
         "diagnostics",
@@ -16403,8 +16403,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.355,
-      "sy": -8.294,
+      "sx": -4.359,
+      "sy": -8.286,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -16429,10 +16429,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.692,
       "founded_year": 2018,
-      "ux": 1.758,
-      "uy": -8.886,
-      "hx": -4.27,
-      "hy": -8.737,
+      "ux": 1.952,
+      "uy": -8.711,
+      "hx": -4.272,
+      "hy": -8.734,
       "investor_ids": []
     },
     {
@@ -16451,8 +16451,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.309,
-      "y": -8.823,
+      "x": -4.311,
+      "y": -8.819,
       "is_outlier": false,
       "tech_codes": [
         "diagnostics",
@@ -16478,8 +16478,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.443,
-      "sy": -8.483,
+      "sx": -4.447,
+      "sy": -8.476,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -16504,10 +16504,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.772,
       "founded_year": 2016,
-      "ux": 1.08,
-      "uy": -8.976,
-      "hx": -4.309,
-      "hy": -8.823,
+      "ux": 1.281,
+      "uy": -8.821,
+      "hx": -4.311,
+      "hy": -8.819,
       "investor_ids": [
         "CITES",
         "zentynel"
@@ -16529,8 +16529,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.279,
-      "y": -8.801,
+      "x": -4.281,
+      "y": -8.798,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -16549,8 +16549,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": -4.376,
-      "sy": -8.436,
+      "sx": -4.38,
+      "sy": -8.429,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -16562,10 +16562,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "unclassified",
       "tech_depth_confidence": 0.5,
       "founded_year": 2017,
-      "ux": 1.292,
-      "uy": -8.811,
-      "hx": -4.279,
-      "hy": -8.801,
+      "ux": 1.487,
+      "uy": -8.651,
+      "hx": -4.281,
+      "hy": -8.798,
       "investor_ids": []
     },
     {
@@ -16584,8 +16584,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Diagnostics",
       "cluster_keywords": "diagnostics · diagnosis · medtech · laboratory",
       "cluster_confidence": 1.0,
-      "x": -4.119,
-      "y": -9.002,
+      "x": -4.12,
+      "y": -8.999,
       "is_outlier": false,
       "tech_codes": [
         "diagnostics",
@@ -16611,8 +16611,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.019,
-      "sy": -8.883,
+      "sx": -4.023,
+      "sy": -8.876,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -16635,10 +16635,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2017,
-      "ux": 0.238,
-      "uy": -7.261,
-      "hx": -4.119,
-      "hy": -9.002,
+      "ux": 0.396,
+      "uy": -7.141,
+      "hx": -4.12,
+      "hy": -8.999,
       "investor_ids": [
         "GridX"
       ]
@@ -16712,8 +16712,8 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.74,
       "founded_year": 2020,
-      "ux": 5.905,
-      "uy": 7.696,
+      "ux": 5.592,
+      "uy": 7.874,
       "hx": 0.701,
       "hy": 10.474,
       "investor_ids": [
@@ -16792,8 +16792,8 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.883,
       "founded_year": 2022,
-      "ux": 6.164,
-      "uy": 7.49,
+      "ux": 5.854,
+      "uy": 7.677,
       "hx": 0.674,
       "hy": 10.541,
       "investor_ids": [
@@ -16862,8 +16862,8 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.883,
       "founded_year": 2019,
-      "ux": 6.098,
-      "uy": 7.645,
+      "ux": 5.785,
+      "uy": 7.829,
       "hx": 0.702,
       "hy": 10.517,
       "investor_ids": [
@@ -16937,8 +16937,8 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.883,
       "founded_year": 2021,
-      "ux": 6.05,
-      "uy": 7.588,
+      "ux": 5.738,
+      "uy": 7.77,
       "hx": 0.687,
       "hy": 10.511,
       "investor_ids": [
@@ -17013,8 +17013,8 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.883,
       "founded_year": 2016,
-      "ux": 6.177,
-      "uy": 7.443,
+      "ux": 5.869,
+      "uy": 7.63,
       "hx": 0.665,
       "hy": 10.546,
       "investor_ids": [
@@ -17085,8 +17085,8 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.883,
       "founded_year": 2021,
-      "ux": 6.136,
-      "uy": 7.569,
+      "ux": 5.824,
+      "uy": 7.754,
       "hx": 0.689,
       "hy": 10.53,
       "investor_ids": [
@@ -17167,8 +17167,8 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.74,
       "founded_year": 2019,
-      "ux": 5.909,
-      "uy": 7.654,
+      "ux": 5.596,
+      "uy": 7.832,
       "hx": 0.692,
       "hy": 10.477,
       "investor_ids": []
@@ -17244,8 +17244,8 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "enabler",
       "tech_depth_confidence": 0.95,
       "founded_year": 2014,
-      "ux": 6.471,
-      "uy": 7.996,
+      "ux": 6.145,
+      "uy": 8.188,
       "hx": 0.8,
       "hy": 10.572,
       "investor_ids": [
@@ -17272,7 +17272,7 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Nature & Ecosystem Tech — Satellite",
       "cluster_keywords": "satellite · planetary · energy · nature",
       "cluster_confidence": 0.352,
-      "x": 2.576,
+      "x": 2.558,
       "y": 1.519,
       "is_outlier": true,
       "tech_codes": [],
@@ -17295,8 +17295,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
-      "sx": 3.158,
-      "sy": 0.809,
+      "sx": 3.117,
+      "sy": 0.808,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -17318,9 +17318,9 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2020,
-      "ux": -4.691,
-      "uy": 4.345,
-      "hx": 2.576,
+      "ux": -4.833,
+      "uy": 4.24,
+      "hx": 2.558,
       "hy": 1.519,
       "investor_ids": []
     },
@@ -17400,8 +17400,8 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.74,
       "founded_year": 2018,
-      "ux": 5.917,
-      "uy": 7.701,
+      "ux": 5.603,
+      "uy": 7.879,
       "hx": 0.702,
       "hy": 10.476,
       "investor_ids": [
@@ -17482,8 +17482,8 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "enabler",
       "tech_depth_confidence": 0.95,
       "founded_year": 2019,
-      "ux": 6.04,
-      "uy": 7.732,
+      "ux": 5.724,
+      "uy": 7.913,
       "hx": 0.717,
       "hy": 10.499,
       "investor_ids": []
@@ -17559,8 +17559,8 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.74,
       "founded_year": 2018,
-      "ux": 5.941,
-      "uy": 7.642,
+      "ux": 5.629,
+      "uy": 7.821,
       "hx": 0.692,
       "hy": 10.484,
       "investor_ids": []
@@ -17638,8 +17638,8 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.68,
       "founded_year": 2020,
-      "ux": 6.192,
-      "uy": 7.436,
+      "ux": 5.884,
+      "uy": 7.624,
       "hx": 0.665,
       "hy": 10.55,
       "investor_ids": [
@@ -17718,8 +17718,8 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.74,
       "founded_year": 2019,
-      "ux": 5.715,
-      "uy": 7.624,
+      "ux": 5.404,
+      "uy": 7.797,
       "hx": 0.673,
       "hy": 10.438,
       "investor_ids": [
@@ -17799,8 +17799,8 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.74,
       "founded_year": 2010,
-      "ux": 5.836,
-      "uy": 7.661,
+      "ux": 5.524,
+      "uy": 7.837,
       "hx": 0.689,
       "hy": 10.461,
       "investor_ids": [
@@ -17873,8 +17873,8 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.883,
       "founded_year": null,
-      "ux": 6.179,
-      "uy": 7.429,
+      "ux": 5.872,
+      "uy": 7.617,
       "hx": 0.663,
       "hy": 10.548,
       "investor_ids": [
@@ -17951,8 +17951,8 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.883,
       "founded_year": 2021,
-      "ux": 6.149,
-      "uy": 7.561,
+      "ux": 5.838,
+      "uy": 7.746,
       "hx": 0.688,
       "hy": 10.533,
       "investor_ids": [
@@ -18032,8 +18032,8 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.873,
       "founded_year": null,
-      "ux": 5.705,
-      "uy": 7.622,
+      "ux": 5.395,
+      "uy": 7.794,
       "hx": 0.672,
       "hy": 10.437,
       "investor_ids": []
@@ -18105,8 +18105,8 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "applied",
       "tech_depth_confidence": 0.74,
       "founded_year": null,
-      "ux": 5.604,
-      "uy": 7.594,
+      "ux": 5.295,
+      "uy": 7.764,
       "hx": 0.66,
       "hy": 10.417,
       "investor_ids": [
@@ -18175,8 +18175,8 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "enabler",
       "tech_depth_confidence": 0.95,
       "founded_year": null,
-      "ux": 6.785,
-      "uy": 8.307,
+      "ux": 6.447,
+      "uy": 8.506,
       "hx": 0.885,
       "hy": 10.617,
       "investor_ids": [
@@ -18250,8 +18250,8 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "applied",
       "tech_depth_confidence": 0.74,
       "founded_year": 2022,
-      "ux": 5.31,
-      "uy": 7.344,
+      "ux": 5.01,
+      "uy": 7.507,
       "hx": 0.589,
       "hy": 10.372,
       "investor_ids": [
@@ -18327,8 +18327,8 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "enabler",
       "tech_depth_confidence": 0.74,
       "founded_year": 2010,
-      "ux": 5.318,
-      "uy": 7.354,
+      "ux": 5.018,
+      "uy": 7.517,
       "hx": 0.591,
       "hy": 10.373,
       "investor_ids": [
@@ -18409,8 +18409,8 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "applied",
       "tech_depth_confidence": 0.74,
       "founded_year": 2022,
-      "ux": 5.336,
-      "uy": 7.365,
+      "ux": 5.036,
+      "uy": 7.529,
       "hx": 0.595,
       "hy": 10.376,
       "investor_ids": [
@@ -18485,8 +18485,8 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "applied",
       "tech_depth_confidence": 0.74,
       "founded_year": 2021,
-      "ux": 5.295,
-      "uy": 7.336,
+      "ux": 4.996,
+      "uy": 7.499,
       "hx": 0.586,
       "hy": 10.37,
       "investor_ids": [
@@ -18562,8 +18562,8 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "enabler",
       "tech_depth_confidence": 0.74,
       "founded_year": 2021,
-      "ux": 5.183,
-      "uy": 7.274,
+      "ux": 4.887,
+      "uy": 7.434,
       "hx": 0.566,
       "hy": 10.35,
       "investor_ids": [
@@ -18640,8 +18640,8 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "applied",
       "tech_depth_confidence": 0.74,
       "founded_year": 2019,
-      "ux": 5.239,
-      "uy": 7.309,
+      "ux": 4.941,
+      "uy": 7.47,
       "hx": 0.577,
       "hy": 10.36,
       "investor_ids": [
@@ -18718,8 +18718,8 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "enabler",
       "tech_depth_confidence": 0.74,
       "founded_year": 2022,
-      "ux": 5.155,
-      "uy": 7.259,
+      "ux": 4.859,
+      "uy": 7.419,
       "hx": 0.561,
       "hy": 10.345,
       "investor_ids": [
@@ -18801,8 +18801,8 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.883,
       "founded_year": 2021,
-      "ux": 5.243,
-      "uy": 7.308,
+      "ux": 4.946,
+      "uy": 7.469,
       "hx": 0.577,
       "hy": 10.361,
       "investor_ids": [
@@ -18826,8 +18826,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Skin",
       "cluster_keywords": "skin · materials · uruguayan · studies",
       "cluster_confidence": 1.0,
-      "x": -3.813,
-      "y": -10.096,
+      "x": -3.815,
+      "y": -10.093,
       "is_outlier": false,
       "tech_codes": [
         "diagnostics",
@@ -18855,8 +18855,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -3.34,
-      "sy": -11.313,
+      "sx": -3.344,
+      "sy": -11.306,
       "bio_lens": [
         "biobased",
         "biocentric",
@@ -18889,10 +18889,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.788,
       "founded_year": 2018,
-      "ux": -6.714,
-      "uy": -2.773,
-      "hx": -3.813,
-      "hy": -10.096,
+      "ux": -6.637,
+      "uy": -2.885,
+      "hx": -3.815,
+      "hy": -10.093,
       "investor_ids": [
         "GridX"
       ]
@@ -18913,8 +18913,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Skin",
       "cluster_keywords": "skin · materials · uruguayan · studies",
       "cluster_confidence": 1.0,
-      "x": -3.808,
-      "y": -10.096,
+      "x": -3.809,
+      "y": -10.093,
       "is_outlier": false,
       "tech_codes": [
         "microbial",
@@ -18943,8 +18943,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -3.329,
-      "sy": -11.313,
+      "sx": -3.332,
+      "sy": -11.307,
       "bio_lens": [
         "biobased",
         "biocentric",
@@ -18975,10 +18975,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.812,
       "founded_year": 2019,
-      "ux": -6.705,
-      "uy": -2.736,
-      "hx": -3.808,
-      "hy": -10.096,
+      "ux": -6.629,
+      "uy": -2.848,
+      "hx": -3.809,
+      "hy": -10.093,
       "investor_ids": [
         "SF500"
       ]
@@ -18999,8 +18999,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Skin",
       "cluster_keywords": "skin · materials · uruguayan · studies",
       "cluster_confidence": 0.362,
-      "x": -7.531,
-      "y": 6.557,
+      "x": -7.55,
+      "y": 6.578,
       "is_outlier": true,
       "tech_codes": [
         "ag_inputs",
@@ -19027,8 +19027,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 25,
       "valuation_estimate_usd": 25.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -8.18,
-      "sy": 6.871,
+      "sx": -8.222,
+      "sy": 6.918,
       "bio_lens": [
         "biobased",
         "biocentric",
@@ -19061,10 +19061,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.898,
       "founded_year": 2013,
-      "ux": -3.671,
-      "uy": 2.891,
-      "hx": -7.531,
-      "hy": 6.557,
+      "ux": -3.779,
+      "uy": 2.827,
+      "hx": -7.55,
+      "hy": 6.578,
       "investor_ids": [
         "The Ganesha Lab"
       ]
@@ -19085,8 +19085,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Skin",
       "cluster_keywords": "skin · materials · uruguayan · studies",
       "cluster_confidence": 1.0,
-      "x": -3.813,
-      "y": -10.076,
+      "x": -3.815,
+      "y": -10.073,
       "is_outlier": false,
       "tech_codes": [
         "iot",
@@ -19117,8 +19117,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -3.34,
-      "sy": -11.268,
+      "sx": -3.344,
+      "sy": -11.262,
       "bio_lens": [
         "biobased",
         "bio-enabled-industrial-transition",
@@ -19148,10 +19148,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.836,
       "founded_year": 2019,
-      "ux": -6.576,
-      "uy": -2.816,
-      "hx": -3.813,
-      "hy": -10.076,
+      "ux": -6.498,
+      "uy": -2.924,
+      "hx": -3.815,
+      "hy": -10.073,
       "investor_ids": [
         "GridX"
       ]
@@ -19172,8 +19172,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Skin",
       "cluster_keywords": "skin · materials · uruguayan · studies",
       "cluster_confidence": 1.0,
-      "x": -3.81,
-      "y": -10.104,
+      "x": -3.812,
+      "y": -10.102,
       "is_outlier": false,
       "tech_codes": [
         "iot",
@@ -19202,8 +19202,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -3.334,
-      "sy": -11.332,
+      "sx": -3.338,
+      "sy": -11.326,
       "bio_lens": [
         "biocentric",
         "human-health-bio",
@@ -19232,10 +19232,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2021,
-      "ux": -6.769,
-      "uy": -2.736,
-      "hx": -3.81,
-      "hy": -10.104,
+      "ux": -6.693,
+      "uy": -2.85,
+      "hx": -3.812,
+      "hy": -10.102,
       "investor_ids": [
         "The Ganesha Lab"
       ]
@@ -19256,8 +19256,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Diagnostics & Devices — Skin",
       "cluster_keywords": "skin · materials · uruguayan · studies",
       "cluster_confidence": 0.361,
-      "x": 1.423,
-      "y": 1.93,
+      "x": 1.398,
+      "y": 1.932,
       "is_outlier": true,
       "tech_codes": [
         "biomaterials"
@@ -19281,8 +19281,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": 0.595,
-      "sy": 1.722,
+      "sx": 0.539,
+      "sy": 1.726,
       "bio_lens": [
         "biobased",
         "bio-enabled-industrial-transition"
@@ -19306,10 +19306,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2018,
-      "ux": -4.437,
-      "uy": -1.755,
-      "hx": 1.423,
-      "hy": 1.93,
+      "ux": -4.405,
+      "uy": -1.809,
+      "hx": 1.398,
+      "hy": 1.932,
       "investor_ids": []
     },
     {
@@ -19328,8 +19328,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Biosimilar",
       "cluster_keywords": "biosimilar · argentine · diseases · chronic",
       "cluster_confidence": 0.36,
-      "x": -10.832,
-      "y": -9.505,
+      "x": -10.83,
+      "y": -9.503,
       "is_outlier": true,
       "tech_codes": [
         "therapeutics",
@@ -19354,8 +19354,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -10.382,
-      "sy": -9.145,
+      "sx": -10.377,
+      "sy": -9.141,
       "bio_lens": [
         "biocentric",
         "human-health-bio",
@@ -19381,10 +19381,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.736,
       "founded_year": 2019,
-      "ux": -6.075,
-      "uy": -3.103,
-      "hx": -10.832,
-      "hy": -9.505,
+      "ux": -5.993,
+      "uy": -3.194,
+      "hx": -10.83,
+      "hy": -9.503,
       "investor_ids": [
         "CITES"
       ]
@@ -19405,8 +19405,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Biosimilar",
       "cluster_keywords": "biosimilar · argentine · diseases · chronic",
       "cluster_confidence": 1.0,
-      "x": -10.847,
-      "y": -9.582,
+      "x": -10.845,
+      "y": -9.58,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -19428,8 +19428,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -10.416,
-      "sy": -9.315,
+      "sx": -10.411,
+      "sy": -9.31,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -19450,10 +19450,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 1993,
-      "ux": -6.418,
-      "uy": -3.067,
-      "hx": -10.847,
-      "hy": -9.582,
+      "ux": -6.334,
+      "uy": -3.169,
+      "hx": -10.845,
+      "hy": -9.58,
       "investor_ids": [
         "grupo_insud"
       ]
@@ -19474,8 +19474,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Biosimilar",
       "cluster_keywords": "biosimilar · argentine · diseases · chronic",
       "cluster_confidence": 1.0,
-      "x": -3.831,
-      "y": -10.052,
+      "x": -3.833,
+      "y": -10.049,
       "is_outlier": false,
       "tech_codes": [
         "therapeutics",
@@ -19500,8 +19500,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 0,
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -3.381,
-      "sy": -11.216,
+      "sx": -3.384,
+      "sy": -11.209,
       "bio_lens": [
         "biocentric",
         "human-health-bio",
@@ -19528,10 +19528,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.704,
       "founded_year": 2020,
-      "ux": -6.45,
-      "uy": -2.994,
-      "hx": -3.831,
-      "hy": -10.052,
+      "ux": -6.369,
+      "uy": -3.098,
+      "hx": -3.833,
+      "hy": -10.049,
       "investor_ids": [
         "aceleradora_litoral"
       ]
@@ -19552,8 +19552,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Biosimilar",
       "cluster_keywords": "biosimilar · argentine · diseases · chronic",
       "cluster_confidence": 0.872,
-      "x": -10.832,
-      "y": -9.561,
+      "x": -10.829,
+      "y": -9.559,
       "is_outlier": false,
       "tech_codes": [
         "therapeutics",
@@ -19578,8 +19578,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -10.382,
-      "sy": -9.269,
+      "sx": -10.377,
+      "sy": -9.265,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -19604,10 +19604,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.804,
       "founded_year": 2018,
-      "ux": -6.31,
-      "uy": -3.029,
-      "hx": -10.832,
-      "hy": -9.561,
+      "ux": -6.229,
+      "uy": -3.128,
+      "hx": -10.829,
+      "hy": -9.559,
       "investor_ids": []
     },
     {
@@ -19626,8 +19626,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Biosimilar",
       "cluster_keywords": "biosimilar · argentine · diseases · chronic",
       "cluster_confidence": 1.0,
-      "x": -3.834,
-      "y": -10.061,
+      "x": -3.835,
+      "y": -10.058,
       "is_outlier": false,
       "tech_codes": [
         "bioinformatics",
@@ -19655,8 +19655,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -3.386,
-      "sy": -11.236,
+      "sx": -3.389,
+      "sy": -11.23,
       "bio_lens": [
         "biocentric",
         "human-health-bio",
@@ -19686,10 +19686,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.744,
       "founded_year": 2020,
-      "ux": -6.518,
-      "uy": -2.991,
-      "hx": -3.834,
-      "hy": -10.061,
+      "ux": -6.436,
+      "uy": -3.096,
+      "hx": -3.835,
+      "hy": -10.058,
       "investor_ids": [
         "GridX"
       ]
@@ -19710,8 +19710,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Biosimilar",
       "cluster_keywords": "biosimilar · argentine · diseases · chronic",
       "cluster_confidence": 0.357,
-      "x": -10.843,
-      "y": -9.526,
+      "x": -10.841,
+      "y": -9.524,
       "is_outlier": true,
       "tech_codes": [
         "therapeutics",
@@ -19736,8 +19736,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
-      "sx": -10.408,
-      "sy": -9.19,
+      "sx": -10.403,
+      "sy": -9.186,
       "bio_lens": [
         "biocentric",
         "human-health-bio",
@@ -19764,10 +19764,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.704,
       "founded_year": 2018,
-      "ux": -6.177,
-      "uy": -3.125,
-      "hx": -10.843,
-      "hy": -9.526,
+      "ux": -6.093,
+      "uy": -3.219,
+      "hx": -10.841,
+      "hy": -9.524,
       "investor_ids": []
     },
     {
@@ -19786,8 +19786,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Biosimilar",
       "cluster_keywords": "biosimilar · argentine · diseases · chronic",
       "cluster_confidence": 1.0,
-      "x": -10.865,
-      "y": -9.581,
+      "x": -10.863,
+      "y": -9.579,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -19809,8 +19809,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -10.456,
-      "sy": -9.312,
+      "sx": -10.451,
+      "sy": -9.308,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -19830,10 +19830,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2009,
-      "ux": -6.437,
-      "uy": -3.145,
-      "hx": -10.865,
-      "hy": -9.581,
+      "ux": -6.352,
+      "uy": -3.247,
+      "hx": -10.863,
+      "hy": -9.579,
       "investor_ids": [
         "grupo_insud"
       ]
@@ -19854,8 +19854,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Biosimilar",
       "cluster_keywords": "biosimilar · argentine · diseases · chronic",
       "cluster_confidence": 0.359,
-      "x": -10.762,
-      "y": -9.437,
+      "x": -10.76,
+      "y": -9.436,
       "is_outlier": true,
       "tech_codes": [
         "therapeutics"
@@ -19879,8 +19879,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -10.227,
-      "sy": -8.994,
+      "sx": -10.222,
+      "sy": -8.99,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -19904,10 +19904,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.712,
       "founded_year": 2017,
-      "ux": -5.697,
-      "uy": -2.897,
-      "hx": -10.762,
-      "hy": -9.437,
+      "ux": -5.623,
+      "uy": -2.979,
+      "hx": -10.76,
+      "hy": -9.436,
       "investor_ids": []
     },
     {
@@ -19927,7 +19927,7 @@ window.STARTUP_THEMES_DATA = {
       "cluster_keywords": "biosimilar · argentine · diseases · chronic",
       "cluster_confidence": 0.928,
       "x": -9.52,
-      "y": 6.259,
+      "y": 6.283,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -19949,8 +19949,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
-      "sx": -12.599,
-      "sy": 6.209,
+      "sx": -12.6,
+      "sy": 6.262,
       "bio_lens": [
         "biocentric",
         "planetary-boundary"
@@ -19972,10 +19972,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2020,
-      "ux": -6.517,
-      "uy": -3.009,
+      "ux": -6.434,
+      "uy": -3.115,
       "hx": -9.52,
-      "hy": 6.259,
+      "hy": 6.283,
       "investor_ids": []
     },
     {
@@ -20039,8 +20039,8 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2010,
-      "ux": -6.476,
-      "uy": -3.001,
+      "ux": -6.394,
+      "uy": -3.105,
       "hx": -9.825,
       "hy": -2.604,
       "investor_ids": [
@@ -20063,8 +20063,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Biosimilar",
       "cluster_keywords": "biosimilar · argentine · diseases · chronic",
       "cluster_confidence": 0.356,
-      "x": -10.822,
-      "y": -9.663,
+      "x": -10.819,
+      "y": -9.661,
       "is_outlier": true,
       "tech_codes": [],
       "industry_codes": [
@@ -20086,8 +20086,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
-      "sx": -10.359,
-      "sy": -9.496,
+      "sx": -10.354,
+      "sy": -9.491,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -20107,10 +20107,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2020,
-      "ux": -6.729,
-      "uy": -2.853,
-      "hx": -10.822,
-      "hy": -9.663,
+      "ux": -6.65,
+      "uy": -2.965,
+      "hx": -10.819,
+      "hy": -9.661,
       "investor_ids": []
     },
     {
@@ -20129,8 +20129,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Biosimilar",
       "cluster_keywords": "biosimilar · argentine · diseases · chronic",
       "cluster_confidence": 0.96,
-      "x": -10.862,
-      "y": -9.562,
+      "x": -10.86,
+      "y": -9.56,
       "is_outlier": false,
       "tech_codes": [
         "therapeutics",
@@ -20155,8 +20155,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -10.449,
-      "sy": -9.272,
+      "sx": -10.444,
+      "sy": -9.267,
       "bio_lens": [
         "biocentric",
         "human-health-bio",
@@ -20185,10 +20185,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.7,
       "founded_year": 2021,
-      "ux": -6.355,
-      "uy": -3.155,
-      "hx": -10.862,
-      "hy": -9.562,
+      "ux": -6.27,
+      "uy": -3.255,
+      "hx": -10.86,
+      "hy": -9.56,
       "investor_ids": [
         "SF500"
       ]
@@ -20209,8 +20209,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Biosimilar",
       "cluster_keywords": "biosimilar · argentine · diseases · chronic",
       "cluster_confidence": 0.358,
-      "x": -10.808,
-      "y": -9.492,
+      "x": -10.806,
+      "y": -9.49,
       "is_outlier": true,
       "tech_codes": [
         "bioinformatics",
@@ -20238,8 +20238,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -10.328,
-      "sy": -9.116,
+      "sx": -10.324,
+      "sy": -9.112,
       "bio_lens": [
         "biocentric",
         "human-health-bio",
@@ -20266,10 +20266,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.784,
       "founded_year": 2019,
-      "ux": -5.988,
-      "uy": -3.018,
-      "hx": -10.808,
-      "hy": -9.492,
+      "ux": -5.909,
+      "uy": -3.108,
+      "hx": -10.806,
+      "hy": -9.49,
       "investor_ids": [
         "zentynel"
       ]
@@ -20290,8 +20290,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Biosimilar",
       "cluster_keywords": "biosimilar · argentine · diseases · chronic",
       "cluster_confidence": 0.361,
-      "x": -10.833,
-      "y": -9.504,
+      "x": -10.83,
+      "y": -9.502,
       "is_outlier": true,
       "tech_codes": [
         "synbio",
@@ -20317,8 +20317,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -10.384,
-      "sy": -9.143,
+      "sx": -10.379,
+      "sy": -9.139,
       "bio_lens": [
         "biocentric",
         "human-health-bio",
@@ -20346,10 +20346,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.764,
       "founded_year": 2019,
-      "ux": -6.072,
-      "uy": -3.107,
-      "hx": -10.833,
-      "hy": -9.504,
+      "ux": -5.99,
+      "uy": -3.199,
+      "hx": -10.83,
+      "hy": -9.502,
       "investor_ids": [
         "GridX"
       ]
@@ -20370,8 +20370,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Biosimilar",
       "cluster_keywords": "biosimilar · argentine · diseases · chronic",
       "cluster_confidence": 0.557,
-      "x": -10.782,
-      "y": -9.494,
+      "x": -10.78,
+      "y": -9.492,
       "is_outlier": false,
       "tech_codes": [
         "therapeutics",
@@ -20398,8 +20398,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -10.272,
-      "sy": -9.119,
+      "sx": -10.267,
+      "sy": -9.115,
       "bio_lens": [
         "biocentric",
         "human-health-bio",
@@ -20425,10 +20425,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.7,
       "founded_year": 2019,
-      "ux": -5.961,
-      "uy": -2.909,
-      "hx": -10.782,
-      "hy": -9.494,
+      "ux": -5.885,
+      "uy": -2.999,
+      "hx": -10.78,
+      "hy": -9.492,
       "investor_ids": [
         "kptl"
       ]
@@ -20449,8 +20449,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Biosimilar",
       "cluster_keywords": "biosimilar · argentine · diseases · chronic",
       "cluster_confidence": 1.0,
-      "x": -3.833,
-      "y": -10.05,
+      "x": -3.835,
+      "y": -10.047,
       "is_outlier": false,
       "tech_codes": [
         "microbial",
@@ -20476,8 +20476,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -3.385,
-      "sy": -11.211,
+      "sx": -3.389,
+      "sy": -11.205,
       "bio_lens": [
         "biobased",
         "biocentric",
@@ -20503,10 +20503,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.776,
       "founded_year": 2021,
-      "ux": -6.439,
-      "uy": -3.014,
-      "hx": -3.833,
-      "hy": -10.05,
+      "ux": -6.357,
+      "uy": -3.117,
+      "hx": -3.835,
+      "hy": -10.047,
       "investor_ids": [
         "CITES"
       ]
@@ -20527,8 +20527,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Biosimilar",
       "cluster_keywords": "biosimilar · argentine · diseases · chronic",
       "cluster_confidence": 0.826,
-      "x": -3.851,
-      "y": -10.041,
+      "x": -3.852,
+      "y": -10.038,
       "is_outlier": false,
       "tech_codes": [
         "iot",
@@ -20555,8 +20555,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -3.424,
-      "sy": -11.191,
+      "sx": -3.427,
+      "sy": -11.185,
       "bio_lens": [
         "biobased",
         "biocentric",
@@ -20583,10 +20583,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.764,
       "founded_year": 2022,
-      "ux": -6.414,
-      "uy": -3.153,
-      "hx": -3.851,
-      "hy": -10.041,
+      "ux": -6.329,
+      "uy": -3.254,
+      "hx": -3.852,
+      "hy": -10.038,
       "investor_ids": [
         "GridX"
       ]
@@ -20607,8 +20607,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Biosimilar",
       "cluster_keywords": "biosimilar · argentine · diseases · chronic",
       "cluster_confidence": 0.837,
-      "x": -3.852,
-      "y": -10.04,
+      "x": -3.854,
+      "y": -10.037,
       "is_outlier": false,
       "tech_codes": [
         "ai_ml",
@@ -20635,8 +20635,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -3.427,
-      "sy": -11.189,
+      "sx": -3.43,
+      "sy": -11.182,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -20660,10 +20660,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.784,
       "founded_year": 2015,
-      "ux": -6.409,
-      "uy": -3.164,
-      "hx": -3.852,
-      "hy": -10.04,
+      "ux": -6.323,
+      "uy": -3.265,
+      "hx": -3.854,
+      "hy": -10.037,
       "investor_ids": [
         "aceleradora_litoral"
       ]
@@ -20684,8 +20684,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Biosimilar",
       "cluster_keywords": "biosimilar · argentine · diseases · chronic",
       "cluster_confidence": 0.641,
-      "x": -10.779,
-      "y": -9.529,
+      "x": -10.777,
+      "y": -9.527,
       "is_outlier": false,
       "tech_codes": [
         "therapeutics",
@@ -20712,8 +20712,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -10.265,
-      "sy": -9.198,
+      "sx": -10.261,
+      "sy": -9.194,
       "bio_lens": [
         "biocentric",
         "human-health-bio",
@@ -20738,10 +20738,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.712,
       "founded_year": null,
-      "ux": -6.106,
-      "uy": -2.85,
-      "hx": -10.779,
-      "hy": -9.529,
+      "ux": -6.031,
+      "uy": -2.944,
+      "hx": -10.777,
+      "hy": -9.527,
       "investor_ids": [
         "zentynel"
       ]
@@ -20762,8 +20762,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 1.0,
-      "x": -6.638,
-      "y": 6.128,
+      "x": -6.666,
+      "y": 6.154,
       "is_outlier": false,
       "tech_codes": [
         "ag_inputs"
@@ -20787,8 +20787,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -6.196,
-      "sy": 5.918,
+      "sx": -6.258,
+      "sy": 5.975,
       "bio_lens": [
         "biocentric"
       ],
@@ -20810,10 +20810,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.883,
       "founded_year": 2012,
-      "ux": -4.144,
-      "uy": 6.082,
-      "hx": -6.638,
-      "hy": 6.128,
+      "ux": -4.341,
+      "uy": 5.982,
+      "hx": -6.666,
+      "hy": 6.154,
       "investor_ids": []
     },
     {
@@ -20832,8 +20832,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 0.975,
-      "x": 0.151,
-      "y": -1.001,
+      "x": -7.094,
+      "y": 6.076,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -20843,7 +20843,7 @@ window.STARTUP_THEMES_DATA = {
       "pagerank": 0.0,
       "valuation_tier": null,
       "n_investors_mapped": 0,
-      "bio_theme": "",
+      "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
       "sub_cluster_label": "",
@@ -20852,8 +20852,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": 0.335,
-      "sy": -2.224,
+      "sx": -7.209,
+      "sy": 5.802,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -20865,10 +20865,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "medium",
       "tech_depth_confidence": 0.5,
       "founded_year": 2019,
-      "ux": -4.806,
-      "uy": 4.813,
-      "hx": 0.151,
-      "hy": -1.001,
+      "ux": -4.961,
+      "uy": 4.702,
+      "hx": -7.094,
+      "hy": 6.076,
       "investor_ids": []
     },
     {
@@ -20887,8 +20887,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 0.944,
-      "x": -6.545,
-      "y": 6.29,
+      "x": -6.573,
+      "y": 6.314,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -20910,8 +20910,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
-      "sx": -5.988,
-      "sy": 6.279,
+      "sx": -6.051,
+      "sy": 6.332,
       "bio_lens": [
         "biocentric",
         "planetary-boundary"
@@ -20930,10 +20930,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2019,
-      "ux": -3.549,
-      "uy": 6.218,
-      "hx": -6.545,
-      "hy": 6.29,
+      "ux": -3.753,
+      "uy": 6.133,
+      "hx": -6.573,
+      "hy": 6.314,
       "investor_ids": [
         "global_fund_coral_reefs"
       ]
@@ -20954,8 +20954,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 1.0,
-      "x": -6.499,
-      "y": 6.331,
+      "x": -6.528,
+      "y": 6.354,
       "is_outlier": false,
       "tech_codes": [
         "ag_inputs",
@@ -20983,8 +20983,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
-      "sx": -5.886,
-      "sy": 6.369,
+      "sx": -5.951,
+      "sy": 6.421,
       "bio_lens": [
         "biobased",
         "biocentric",
@@ -21016,10 +21016,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.728,
       "founded_year": 2015,
-      "ux": -3.379,
-      "uy": 6.321,
-      "hx": -6.499,
-      "hy": 6.331,
+      "ux": -3.588,
+      "uy": 6.24,
+      "hx": -6.528,
+      "hy": 6.354,
       "investor_ids": []
     },
     {
@@ -21038,8 +21038,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 1.0,
-      "x": -6.873,
-      "y": 6.199,
+      "x": -6.898,
+      "y": 6.224,
       "is_outlier": false,
       "tech_codes": [
         "ag_inputs"
@@ -21063,8 +21063,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 25,
       "valuation_estimate_usd": 25.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -6.717,
-      "sy": 6.076,
+      "sx": -6.774,
+      "sy": 6.131,
       "bio_lens": [
         "biocentric"
       ],
@@ -21084,10 +21084,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.883,
       "founded_year": 2008,
-      "ux": -4.149,
-      "uy": 5.284,
-      "hx": -6.873,
-      "hy": 6.199,
+      "ux": -4.322,
+      "uy": 5.189,
+      "hx": -6.898,
+      "hy": 6.224,
       "investor_ids": []
     },
     {
@@ -21106,8 +21106,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 1.0,
-      "x": -7.243,
-      "y": 6.447,
+      "x": -7.265,
+      "y": 6.469,
       "is_outlier": false,
       "tech_codes": [
         "ag_inputs",
@@ -21133,8 +21133,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
-      "sx": -7.54,
-      "sy": 6.626,
+      "sx": -7.589,
+      "sy": 6.675,
       "bio_lens": [
         "biocentric",
         "planetary-boundary"
@@ -21159,10 +21159,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2019,
-      "ux": -3.737,
-      "uy": 3.893,
-      "hx": -7.243,
-      "hy": 6.447,
+      "ux": -3.873,
+      "uy": 3.82,
+      "hx": -7.265,
+      "hy": 6.469,
       "investor_ids": []
     },
     {
@@ -21181,8 +21181,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 0.355,
-      "x": 4.034,
-      "y": 3.639,
+      "x": 4.025,
+      "y": 3.651,
       "is_outlier": true,
       "tech_codes": [
         "vertical_farming",
@@ -21209,8 +21209,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": 6.399,
-      "sy": 5.52,
+      "sx": 6.377,
+      "sy": 5.548,
       "bio_lens": [
         "biocentric",
         "planetary-boundary"
@@ -21235,10 +21235,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "enabler",
       "tech_depth_confidence": 0.705,
       "founded_year": 2018,
-      "ux": 7.561,
-      "uy": 8.161,
-      "hx": 4.034,
-      "hy": 3.639,
+      "ux": 7.223,
+      "uy": 8.383,
+      "hx": 4.025,
+      "hy": 3.651,
       "investor_ids": [
         "chileglobal_ventures"
       ]
@@ -21259,8 +21259,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 1.0,
-      "x": -7.064,
-      "y": 6.295,
+      "x": -7.088,
+      "y": 6.318,
       "is_outlier": false,
       "tech_codes": [
         "ag_inputs",
@@ -21284,8 +21284,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -7.142,
-      "sy": 6.288,
+      "sx": -7.195,
+      "sy": 6.341,
       "bio_lens": [
         "biocentric",
         "regenerative"
@@ -21309,10 +21309,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": null,
-      "ux": -4.037,
-      "uy": 4.597,
-      "hx": -7.064,
-      "hy": 6.295,
+      "ux": -4.192,
+      "uy": 4.51,
+      "hx": -7.088,
+      "hy": 6.318,
       "investor_ids": [
         "GridX"
       ]
@@ -21334,7 +21334,7 @@ window.STARTUP_THEMES_DATA = {
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 1.0,
       "x": -9.123,
-      "y": -9.487,
+      "y": -9.485,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -21353,8 +21353,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": -6.585,
-      "sy": -9.104,
+      "sx": -6.584,
+      "sy": -9.1,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -21364,10 +21364,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "unclassified",
       "tech_depth_confidence": 0.5,
       "founded_year": 2017,
-      "ux": -3.758,
-      "uy": 4.099,
+      "ux": -3.9,
+      "uy": 4.023,
       "hx": -9.123,
-      "hy": -9.487,
+      "hy": -9.485,
       "investor_ids": []
     },
     {
@@ -21386,8 +21386,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 1.0,
-      "x": -7.11,
-      "y": 6.119,
+      "x": -7.133,
+      "y": 6.144,
       "is_outlier": false,
       "tech_codes": [
         "synbio",
@@ -21412,8 +21412,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -7.244,
-      "sy": 5.898,
+      "sx": -7.295,
+      "sy": 5.954,
       "bio_lens": [
         "biocentric",
         "planetary-boundary",
@@ -21439,10 +21439,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.704,
       "founded_year": 2020,
-      "ux": -4.628,
-      "uy": 4.624,
-      "hx": -7.11,
-      "hy": 6.119,
+      "ux": -4.779,
+      "uy": 4.52,
+      "hx": -7.133,
+      "hy": 6.144,
       "investor_ids": [
         "SF500"
       ]
@@ -21463,8 +21463,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 0.99,
-      "x": -7.162,
-      "y": 6.14,
+      "x": -7.185,
+      "y": 6.165,
       "is_outlier": false,
       "tech_codes": [
         "ai_ml",
@@ -21488,8 +21488,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 25,
       "valuation_estimate_usd": 25.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -7.361,
-      "sy": 5.944,
+      "sx": -7.411,
+      "sy": 6.0,
       "bio_lens": [
         "biocentric",
         "planetary-boundary",
@@ -21516,10 +21516,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2016,
-      "ux": -4.614,
-      "uy": 4.441,
-      "hx": -7.162,
-      "hy": 6.14,
+      "ux": -4.76,
+      "uy": 4.338,
+      "hx": -7.185,
+      "hy": 6.165,
       "investor_ids": [
         "GridX",
         "SOSV_IndieBio",
@@ -21543,8 +21543,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 1.0,
-      "x": -6.655,
-      "y": 6.131,
+      "x": -6.682,
+      "y": 6.156,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -21566,8 +21566,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
-      "sx": -6.232,
-      "sy": 5.924,
+      "sx": -6.293,
+      "sy": 5.98,
       "bio_lens": [
         "biocentric",
         "planetary-boundary"
@@ -21588,10 +21588,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.883,
       "founded_year": 2016,
-      "ux": -4.152,
-      "uy": 6.029,
-      "hx": -6.655,
-      "hy": 6.131,
+      "ux": -4.347,
+      "uy": 5.929,
+      "hx": -6.682,
+      "hy": 6.156,
       "investor_ids": [
         "sumitomo_corp"
       ]
@@ -21612,8 +21612,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 1.0,
-      "x": -7.016,
-      "y": 6.323,
+      "x": -7.04,
+      "y": 6.347,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -21635,8 +21635,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
-      "sx": -7.037,
-      "sy": 6.352,
+      "sx": -7.09,
+      "sy": 6.404,
       "bio_lens": [
         "biocentric",
         "planetary-boundary"
@@ -21655,10 +21655,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2015,
-      "ux": -3.902,
-      "uy": 4.717,
-      "hx": -7.016,
-      "hy": 6.323,
+      "ux": -4.061,
+      "uy": 4.633,
+      "hx": -7.04,
+      "hy": 6.347,
       "investor_ids": []
     },
     {
@@ -21677,8 +21677,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 1.0,
-      "x": 0.141,
-      "y": -1.01,
+      "x": -7.109,
+      "y": 6.063,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -21688,7 +21688,7 @@ window.STARTUP_THEMES_DATA = {
       "pagerank": 0.0,
       "valuation_tier": null,
       "n_investors_mapped": 0,
-      "bio_theme": "",
+      "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
       "sub_cluster_label": "",
@@ -21697,8 +21697,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": 0.314,
-      "sy": -2.243,
+      "sx": -7.241,
+      "sy": 5.773,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -21708,10 +21708,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "unclassified",
       "tech_depth_confidence": 0.5,
       "founded_year": 2001,
-      "ux": -4.861,
-      "uy": 4.78,
-      "hx": 0.141,
-      "hy": -1.01,
+      "ux": -5.014,
+      "uy": 4.668,
+      "hx": -7.109,
+      "hy": 6.063,
       "investor_ids": []
     },
     {
@@ -21730,8 +21730,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 1.0,
-      "x": -7.003,
-      "y": 6.284,
+      "x": -7.027,
+      "y": 6.308,
       "is_outlier": false,
       "tech_codes": [
         "ag_inputs"
@@ -21755,8 +21755,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 500,
       "valuation_estimate_usd": 500.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -7.007,
-      "sy": 6.265,
+      "sx": -7.06,
+      "sy": 6.318,
       "bio_lens": [
         "biocentric"
       ],
@@ -21779,10 +21779,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2001,
-      "ux": -4.01,
-      "uy": 4.797,
-      "hx": -7.003,
-      "hy": 6.284,
+      "ux": -4.17,
+      "uy": 4.709,
+      "hx": -7.027,
+      "hy": 6.308,
       "investor_ids": [
         "union_acquisition_corp"
       ]
@@ -21803,8 +21803,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 1.0,
-      "x": 0.44,
-      "y": -0.938,
+      "x": -6.659,
+      "y": 6.17,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -21814,7 +21814,7 @@ window.STARTUP_THEMES_DATA = {
       "pagerank": 0.0,
       "valuation_tier": null,
       "n_investors_mapped": 0,
-      "bio_theme": "",
+      "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
       "sub_cluster_label": "",
@@ -21823,8 +21823,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": 0.977,
-      "sy": -2.085,
+      "sx": -6.242,
+      "sy": 6.011,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -21836,10 +21836,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "medium",
       "tech_depth_confidence": 0.5,
       "founded_year": 2016,
-      "ux": -4.086,
-      "uy": 6.088,
-      "hx": 0.44,
-      "hy": -0.938,
+      "ux": -4.283,
+      "uy": 5.989,
+      "hx": -6.659,
+      "hy": 6.17,
       "investor_ids": []
     },
     {
@@ -21858,8 +21858,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 1.0,
-      "x": -6.914,
-      "y": 6.225,
+      "x": -6.939,
+      "y": 6.25,
       "is_outlier": false,
       "tech_codes": [
         "microbial",
@@ -21885,8 +21885,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
-      "sx": -6.809,
-      "sy": 6.134,
+      "sx": -6.865,
+      "sy": 6.188,
       "bio_lens": [
         "biocentric",
         "planetary-boundary"
@@ -21911,10 +21911,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2015,
-      "ux": -4.108,
-      "uy": 5.13,
-      "hx": -6.914,
-      "hy": 6.225,
+      "ux": -4.277,
+      "uy": 5.037,
+      "hx": -6.939,
+      "hy": 6.25,
       "investor_ids": []
     },
     {
@@ -21933,8 +21933,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 1.0,
-      "x": -7.102,
-      "y": 6.15,
+      "x": -7.125,
+      "y": 6.175,
       "is_outlier": false,
       "tech_codes": [
         "synbio",
@@ -21958,8 +21958,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 15,
       "valuation_estimate_usd": 15.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -7.227,
-      "sy": 5.967,
+      "sx": -7.279,
+      "sy": 6.023,
       "bio_lens": [
         "biocentric",
         "regenerative"
@@ -21981,10 +21981,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.684,
       "founded_year": 2016,
-      "ux": -4.524,
-      "uy": 4.618,
-      "hx": -7.102,
-      "hy": 6.15,
+      "ux": -4.675,
+      "uy": 4.516,
+      "hx": -7.125,
+      "hy": 6.175,
       "investor_ids": [
         "aceleradora_litoral"
       ]
@@ -22005,8 +22005,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 1.0,
-      "x": -6.585,
-      "y": 6.121,
+      "x": -6.613,
+      "y": 6.146,
       "is_outlier": false,
       "tech_codes": [
         "ag_inputs",
@@ -22031,8 +22031,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 0,
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -6.077,
-      "sy": 5.902,
+      "sx": -6.14,
+      "sy": 5.959,
       "bio_lens": [
         "biocentric",
         "planetary-boundary"
@@ -22057,10 +22057,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2001,
-      "ux": -4.115,
-      "uy": 6.256,
-      "hx": -6.585,
-      "hy": 6.121,
+      "ux": -4.317,
+      "uy": 6.155,
+      "hx": -6.613,
+      "hy": 6.146,
       "investor_ids": []
     },
     {
@@ -22079,8 +22079,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 0.346,
-      "x": -0.089,
-      "y": -0.491,
+      "x": -7.457,
+      "y": 6.845,
       "is_outlier": true,
       "tech_codes": [],
       "industry_codes": [],
@@ -22090,7 +22090,7 @@ window.STARTUP_THEMES_DATA = {
       "pagerank": 0.0,
       "valuation_tier": null,
       "n_investors_mapped": 0,
-      "bio_theme": "",
+      "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
       "sub_cluster_label": "",
@@ -22099,8 +22099,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": -0.199,
-      "sy": -1.091,
+      "sx": -8.015,
+      "sy": 7.51,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -22112,10 +22112,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "medium",
       "tech_depth_confidence": 0.5,
       "founded_year": 2018,
-      "ux": -2.743,
-      "uy": 2.926,
-      "hx": -0.089,
-      "hy": -0.491,
+      "ux": -2.858,
+      "uy": 2.888,
+      "hx": -7.457,
+      "hy": 6.845,
       "investor_ids": []
     },
     {
@@ -22135,7 +22135,7 @@ window.STARTUP_THEMES_DATA = {
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 1.0,
       "x": -8.681,
-      "y": -9.73,
+      "y": -9.728,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -22155,7 +22155,7 @@ window.STARTUP_THEMES_DATA = {
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
       "sx": -5.602,
-      "sy": -9.644,
+      "sy": -9.639,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -22167,10 +22167,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "medium",
       "tech_depth_confidence": 0.5,
       "founded_year": null,
-      "ux": -4.205,
-      "uy": 6.287,
+      "ux": -4.407,
+      "uy": 6.183,
       "hx": -8.681,
-      "hy": -9.73,
+      "hy": -9.728,
       "investor_ids": []
     },
     {
@@ -22189,8 +22189,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 1.0,
-      "x": -6.564,
-      "y": 6.256,
+      "x": -6.592,
+      "y": 6.28,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -22212,8 +22212,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
-      "sx": -6.031,
-      "sy": 6.201,
+      "sx": -6.094,
+      "sy": 6.255,
       "bio_lens": [
         "biocentric",
         "planetary-boundary"
@@ -22232,10 +22232,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 1969,
-      "ux": -3.676,
-      "uy": 6.191,
-      "hx": -6.564,
-      "hy": 6.256,
+      "ux": -3.879,
+      "uy": 6.103,
+      "hx": -6.592,
+      "hy": 6.28,
       "investor_ids": []
     },
     {
@@ -22254,8 +22254,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 0.35,
-      "x": -7.5,
-      "y": 6.549,
+      "x": -7.519,
+      "y": 6.57,
       "is_outlier": true,
       "tech_codes": [
         "microbial",
@@ -22280,8 +22280,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
-      "sx": -8.111,
-      "sy": 6.854,
+      "sx": -8.154,
+      "sy": 6.901,
       "bio_lens": [
         "biocentric",
         "planetary-boundary"
@@ -22302,10 +22302,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2013,
-      "ux": -3.666,
-      "uy": 2.996,
-      "hx": -7.5,
-      "hy": 6.549,
+      "ux": -3.776,
+      "uy": 2.931,
+      "hx": -7.519,
+      "hy": 6.57,
       "investor_ids": [
         "The Ganesha Lab"
       ]
@@ -22326,8 +22326,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 1.0,
-      "x": -6.536,
-      "y": 6.16,
+      "x": -6.565,
+      "y": 6.185,
       "is_outlier": false,
       "tech_codes": [
         "plant_breeding",
@@ -22352,8 +22352,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -5.97,
-      "sy": 5.99,
+      "sx": -6.033,
+      "sy": 6.046,
       "bio_lens": [
         "biocentric",
         "regenerative"
@@ -22376,10 +22376,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.684,
       "founded_year": 2021,
-      "ux": -3.946,
-      "uy": 6.368,
-      "hx": -6.536,
-      "hy": 6.16,
+      "ux": -4.152,
+      "uy": 6.271,
+      "hx": -6.565,
+      "hy": 6.185,
       "investor_ids": [
         "GridX"
       ]
@@ -22400,8 +22400,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 1.0,
-      "x": -6.529,
-      "y": 6.176,
+      "x": -6.558,
+      "y": 6.201,
       "is_outlier": false,
       "tech_codes": [
         "ag_inputs"
@@ -22424,8 +22424,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -5.953,
-      "sy": 6.024,
+      "sx": -6.017,
+      "sy": 6.079,
       "bio_lens": [
         "biobased",
         "biocentric",
@@ -22447,10 +22447,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2017,
-      "ux": -3.891,
-      "uy": 6.377,
-      "hx": -6.529,
-      "hy": 6.176,
+      "ux": -4.097,
+      "uy": 6.281,
+      "hx": -6.558,
+      "hy": 6.201,
       "investor_ids": [
         "sp_ventures"
       ]
@@ -22546,8 +22546,8 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.96,
       "founded_year": 2019,
-      "ux": -2.77,
-      "uy": 1.696,
+      "ux": -2.849,
+      "uy": 1.666,
       "hx": -8.813,
       "hy": -2.215,
       "investor_ids": [
@@ -22570,8 +22570,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 1.0,
-      "x": -7.043,
-      "y": 6.132,
+      "x": -7.067,
+      "y": 6.158,
       "is_outlier": false,
       "tech_codes": [
         "ag_inputs",
@@ -22596,8 +22596,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -7.097,
-      "sy": 5.927,
+      "sx": -7.149,
+      "sy": 5.984,
       "bio_lens": [
         "biocentric"
       ],
@@ -22618,10 +22618,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2021,
-      "ux": -4.522,
-      "uy": 4.818,
-      "hx": -7.043,
-      "hy": 6.132,
+      "ux": -4.68,
+      "uy": 4.715,
+      "hx": -7.067,
+      "hy": 6.158,
       "investor_ids": [
         "AIR Capital",
         "astanor",
@@ -22646,8 +22646,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 1.0,
-      "x": -7.167,
-      "y": 6.39,
+      "x": -7.189,
+      "y": 6.413,
       "is_outlier": false,
       "tech_codes": [
         "carbon_tech",
@@ -22674,8 +22674,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -7.371,
-      "sy": 6.499,
+      "sx": -7.421,
+      "sy": 6.55,
       "bio_lens": [
         "biobased",
         "biocentric",
@@ -22703,10 +22703,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.684,
       "founded_year": 2019,
-      "ux": -3.841,
-      "uy": 4.186,
-      "hx": -7.167,
-      "hy": 6.39,
+      "ux": -3.984,
+      "uy": 4.107,
+      "hx": -7.189,
+      "hy": 6.413,
       "investor_ids": [
         "GridX"
       ]
@@ -22727,8 +22727,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 1.0,
-      "x": -6.727,
-      "y": 6.147,
+      "x": -6.753,
+      "y": 6.173,
       "is_outlier": false,
       "tech_codes": [
         "ag_inputs"
@@ -22752,8 +22752,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 15,
       "valuation_estimate_usd": 15.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -6.392,
-      "sy": 5.961,
+      "sx": -6.452,
+      "sy": 6.017,
       "bio_lens": [
         "biocentric"
       ],
@@ -22773,10 +22773,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.883,
       "founded_year": 2017,
-      "ux": -4.17,
-      "uy": 5.789,
-      "hx": -6.727,
-      "hy": 6.147,
+      "ux": -4.358,
+      "uy": 5.69,
+      "hx": -6.753,
+      "hy": 6.173,
       "investor_ids": [
         "hawthorne_food_ventures"
       ]
@@ -22797,8 +22797,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 0.832,
-      "x": 0.21,
-      "y": -0.995,
+      "x": -7.006,
+      "y": 6.085,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -22808,7 +22808,7 @@ window.STARTUP_THEMES_DATA = {
       "pagerank": 0.0,
       "valuation_tier": null,
       "n_investors_mapped": 0,
-      "bio_theme": "",
+      "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
       "sub_cluster_label": "",
@@ -22817,8 +22817,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": 0.466,
-      "sy": -2.211,
+      "sx": -7.013,
+      "sy": 5.821,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -22831,10 +22831,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "unclassified",
       "tech_depth_confidence": 0.5,
       "founded_year": null,
-      "ux": -4.692,
-      "uy": 5.082,
-      "hx": 0.21,
-      "hy": -0.995,
+      "ux": -4.855,
+      "uy": 4.973,
+      "hx": -7.006,
+      "hy": 6.085,
       "investor_ids": []
     },
     {
@@ -22853,8 +22853,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 1.0,
-      "x": -6.523,
-      "y": 6.194,
+      "x": -6.552,
+      "y": 6.219,
       "is_outlier": false,
       "tech_codes": [
         "ag_inputs"
@@ -22877,8 +22877,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -5.941,
-      "sy": 6.066,
+      "sx": -6.005,
+      "sy": 6.12,
       "bio_lens": [
         "biobased",
         "biocentric",
@@ -22900,10 +22900,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2020,
-      "ux": -3.827,
-      "uy": 6.376,
-      "hx": -6.523,
-      "hy": 6.194,
+      "ux": -4.034,
+      "uy": 6.282,
+      "hx": -6.552,
+      "hy": 6.219,
       "investor_ids": [
         "sp_ventures"
       ]
@@ -22924,8 +22924,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 1.0,
-      "x": -6.936,
-      "y": 6.35,
+      "x": -6.961,
+      "y": 6.373,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -22947,8 +22947,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 10,
       "valuation_estimate_usd": 10.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -6.859,
-      "sy": 6.412,
+      "sx": -6.914,
+      "sy": 6.463,
       "bio_lens": [
         "biocentric",
         "planetary-boundary"
@@ -22969,10 +22969,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2014,
-      "ux": -3.741,
-      "uy": 4.94,
-      "hx": -6.936,
-      "hy": 6.35,
+      "ux": -3.907,
+      "uy": 4.859,
+      "hx": -6.961,
+      "hy": 6.373,
       "investor_ids": [
         "sp_ventures"
       ]
@@ -22993,8 +22993,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 1.0,
-      "x": -7.177,
-      "y": 6.131,
+      "x": -7.199,
+      "y": 6.156,
       "is_outlier": false,
       "tech_codes": [
         "ag_inputs"
@@ -23018,8 +23018,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -7.393,
-      "sy": 5.924,
+      "sx": -7.443,
+      "sy": 5.98,
       "bio_lens": [
         "biocentric"
       ],
@@ -23041,10 +23041,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2018,
-      "ux": -4.656,
-      "uy": 4.405,
-      "hx": -7.177,
-      "hy": 6.131,
+      "ux": -4.8,
+      "uy": 4.301,
+      "hx": -7.199,
+      "hy": 6.156,
       "investor_ids": []
     },
     {
@@ -23063,8 +23063,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 1.0,
-      "x": -7.024,
-      "y": 6.29,
+      "x": -7.048,
+      "y": 6.314,
       "is_outlier": false,
       "tech_codes": [
         "ag_inputs"
@@ -23088,8 +23088,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -7.054,
-      "sy": 6.277,
+      "sx": -7.107,
+      "sy": 6.33,
       "bio_lens": [
         "biocentric"
       ],
@@ -23111,10 +23111,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2018,
-      "ux": -4.014,
-      "uy": 4.726,
-      "hx": -7.024,
-      "hy": 6.29,
+      "ux": -4.172,
+      "uy": 4.638,
+      "hx": -7.048,
+      "hy": 6.314,
       "investor_ids": []
     },
     {
@@ -23133,8 +23133,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 1.0,
-      "x": -7.162,
-      "y": 6.13,
+      "x": -7.185,
+      "y": 6.155,
       "is_outlier": false,
       "tech_codes": [
         "ag_inputs"
@@ -23157,8 +23157,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 10.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -7.361,
-      "sy": 5.922,
+      "sx": -7.411,
+      "sy": 5.978,
       "bio_lens": [
         "biocentric",
         "planetary-boundary",
@@ -23181,10 +23181,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2020,
-      "ux": -4.645,
-      "uy": 4.45,
-      "hx": -7.162,
-      "hy": 6.13,
+      "ux": -4.791,
+      "uy": 4.346,
+      "hx": -7.185,
+      "hy": 6.155,
       "investor_ids": [
         "Antom",
         "SF500",
@@ -23207,8 +23207,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 1.0,
-      "x": 0.291,
-      "y": -0.896,
+      "x": -6.882,
+      "y": 6.234,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -23218,7 +23218,7 @@ window.STARTUP_THEMES_DATA = {
       "pagerank": 0.0,
       "valuation_tier": null,
       "n_investors_mapped": 0,
-      "bio_theme": "",
+      "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
       "sub_cluster_label": "",
@@ -23227,8 +23227,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": 0.647,
-      "sy": -1.991,
+      "sx": -6.739,
+      "sy": 6.153,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -23240,10 +23240,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "medium",
       "tech_depth_confidence": 0.5,
       "founded_year": 2012,
-      "ux": -4.103,
-      "uy": 5.324,
-      "hx": 0.291,
-      "hy": -0.896,
+      "ux": -4.278,
+      "uy": 5.23,
+      "hx": -6.882,
+      "hy": 6.234,
       "investor_ids": []
     },
     {
@@ -23262,8 +23262,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 0.356,
-      "x": -7.376,
-      "y": 6.835,
+      "x": -7.397,
+      "y": 6.854,
       "is_outlier": true,
       "tech_codes": [],
       "industry_codes": [
@@ -23285,8 +23285,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
-      "sx": -7.836,
-      "sy": 7.489,
+      "sx": -7.882,
+      "sy": 7.53,
       "bio_lens": [
         "biocentric",
         "planetary-boundary"
@@ -23305,10 +23305,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.883,
       "founded_year": 2021,
-      "ux": -2.657,
-      "uy": 3.104,
-      "hx": -7.376,
-      "hy": 6.835,
+      "ux": -2.778,
+      "uy": 3.067,
+      "hx": -7.397,
+      "hy": 6.854,
       "investor_ids": [
         "waterlemon"
       ]
@@ -23329,8 +23329,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 1.0,
-      "x": 0.488,
-      "y": -0.945,
+      "x": -6.585,
+      "y": 6.161,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -23340,7 +23340,7 @@ window.STARTUP_THEMES_DATA = {
       "pagerank": 0.0,
       "valuation_tier": null,
       "n_investors_mapped": 0,
-      "bio_theme": "",
+      "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
       "sub_cluster_label": "",
@@ -23349,8 +23349,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": 1.085,
-      "sy": -2.099,
+      "sx": -6.079,
+      "sy": 5.99,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -23360,10 +23360,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "unclassified",
       "tech_depth_confidence": 0.5,
       "founded_year": null,
-      "ux": -4.044,
-      "uy": 6.328,
-      "hx": 0.488,
-      "hy": -0.945,
+      "ux": -4.248,
+      "uy": 6.229,
+      "hx": -6.585,
+      "hy": 6.161,
       "investor_ids": []
     },
     {
@@ -23382,8 +23382,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 1.0,
-      "x": -6.515,
-      "y": 6.312,
+      "x": -6.544,
+      "y": 6.336,
       "is_outlier": false,
       "tech_codes": [
         "ag_inputs",
@@ -23411,8 +23411,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 25,
       "valuation_estimate_usd": 25.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -5.922,
-      "sy": 6.327,
+      "sx": -5.986,
+      "sy": 6.379,
       "bio_lens": [
         "biobased",
         "biocentric",
@@ -23442,10 +23442,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.696,
       "founded_year": 2015,
-      "ux": -3.454,
-      "uy": 6.289,
-      "hx": -6.515,
-      "hy": 6.312,
+      "ux": -3.661,
+      "uy": 6.207,
+      "hx": -6.544,
+      "hy": 6.336,
       "investor_ids": [
         "agrex",
         "bb_agro_ventures",
@@ -23521,8 +23521,8 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2019,
-      "ux": -3.858,
-      "uy": 2.368,
+      "ux": -3.949,
+      "uy": 2.302,
       "hx": -8.755,
       "hy": -2.439,
       "investor_ids": [
@@ -23545,8 +23545,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 1.0,
-      "x": -7.03,
-      "y": 6.11,
+      "x": -7.054,
+      "y": 6.136,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -23568,8 +23568,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
-      "sx": -7.068,
-      "sy": 5.878,
+      "sx": -7.121,
+      "sy": 5.935,
       "bio_lens": [
         "biocentric",
         "planetary-boundary"
@@ -23590,10 +23590,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2020,
-      "ux": -4.578,
-      "uy": 4.879,
-      "hx": -7.03,
-      "hy": 6.11,
+      "ux": -4.737,
+      "uy": 4.774,
+      "hx": -7.054,
+      "hy": 6.136,
       "investor_ids": [
         "vesper_ventures"
       ]
@@ -23614,8 +23614,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 1.0,
-      "x": -6.496,
-      "y": 6.34,
+      "x": -6.525,
+      "y": 6.363,
       "is_outlier": false,
       "tech_codes": [
         "microbial",
@@ -23645,8 +23645,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
-      "sx": -5.881,
-      "sy": 6.388,
+      "sx": -5.945,
+      "sy": 6.44,
       "bio_lens": [
         "biobased",
         "biocentric",
@@ -23678,10 +23678,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.828,
       "founded_year": 2018,
-      "ux": -3.35,
-      "uy": 6.32,
-      "hx": -6.496,
-      "hy": 6.34,
+      "ux": -3.559,
+      "uy": 6.24,
+      "hx": -6.525,
+      "hy": 6.363,
       "investor_ids": []
     },
     {
@@ -23700,8 +23700,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 1.0,
-      "x": -7.187,
-      "y": 6.405,
+      "x": -7.21,
+      "y": 6.428,
       "is_outlier": false,
       "tech_codes": [
         "ai_ml",
@@ -23725,8 +23725,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -7.416,
-      "sy": 6.533,
+      "sx": -7.466,
+      "sy": 6.584,
       "bio_lens": [
         "biobased",
         "biocentric",
@@ -23754,10 +23754,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2010,
-      "ux": -3.813,
-      "uy": 4.107,
-      "hx": -7.187,
-      "hy": 6.405,
+      "ux": -3.954,
+      "uy": 4.03,
+      "hx": -7.21,
+      "hy": 6.428,
       "investor_ids": [
         "aceleradora_litoral"
       ]
@@ -23778,8 +23778,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 1.0,
-      "x": -7.125,
-      "y": 6.09,
+      "x": -7.148,
+      "y": 6.116,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -23801,8 +23801,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 10,
       "valuation_estimate_usd": 10.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -7.278,
-      "sy": 5.833,
+      "sx": -7.329,
+      "sy": 5.89,
       "bio_lens": [
         "biocentric",
         "planetary-boundary"
@@ -23823,10 +23823,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2022,
-      "ux": -4.733,
-      "uy": 4.604,
-      "hx": -7.125,
-      "hy": 6.09,
+      "ux": -4.883,
+      "uy": 4.497,
+      "hx": -7.148,
+      "hy": 6.116,
       "investor_ids": [
         "ecoa_capital",
         "vesper_ventures"
@@ -23848,8 +23848,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 1.0,
-      "x": -7.161,
-      "y": 6.348,
+      "x": -7.183,
+      "y": 6.371,
       "is_outlier": false,
       "tech_codes": [
         "plant_breeding",
@@ -23876,8 +23876,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 0,
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -7.357,
-      "sy": 6.407,
+      "sx": -7.407,
+      "sy": 6.459,
       "bio_lens": [
         "biocentric",
         "regenerative"
@@ -23899,10 +23899,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2020,
-      "ux": -3.964,
-      "uy": 4.245,
-      "hx": -7.161,
-      "hy": 6.348,
+      "ux": -4.108,
+      "uy": 4.162,
+      "hx": -7.183,
+      "hy": 6.371,
       "investor_ids": [
         "aceleradora_litoral"
       ]
@@ -23923,8 +23923,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 1.0,
-      "x": -7.082,
-      "y": 6.077,
+      "x": -7.106,
+      "y": 6.103,
       "is_outlier": false,
       "tech_codes": [
         "ag_inputs"
@@ -23948,8 +23948,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 100,
       "valuation_estimate_usd": 100.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -7.183,
-      "sy": 5.805,
+      "sx": -7.235,
+      "sy": 5.863,
       "bio_lens": [
         "biocentric"
       ],
@@ -23971,10 +23971,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2007,
-      "ux": -4.731,
-      "uy": 4.75,
-      "hx": -7.082,
-      "hy": 6.077,
+      "ux": -4.885,
+      "uy": 4.642,
+      "hx": -7.106,
+      "hy": 6.103,
       "investor_ids": [
         "horizons_ventures",
         "ifc"
@@ -23996,8 +23996,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 1.0,
-      "x": -6.542,
-      "y": 6.315,
+      "x": -6.57,
+      "y": 6.339,
       "is_outlier": false,
       "tech_codes": [
         "nanotech",
@@ -24022,8 +24022,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
-      "sx": -5.982,
-      "sy": 6.334,
+      "sx": -6.045,
+      "sy": 6.386,
       "bio_lens": [
         "biobased",
         "biocentric",
@@ -24053,10 +24053,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2019,
-      "ux": -3.47,
-      "uy": 6.203,
-      "hx": -6.542,
-      "hy": 6.315,
+      "ux": -3.674,
+      "uy": 6.12,
+      "hx": -6.57,
+      "hy": 6.339,
       "investor_ids": []
     },
     {
@@ -24075,62 +24075,7 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 0.832,
-      "x": 8.458,
-      "y": 6.3,
-      "is_outlier": false,
-      "tech_codes": [],
-      "industry_codes": [],
-      "quality_score": 5.0,
-      "quality_band": "medium",
-      "community_id": null,
-      "pagerank": 0.0,
-      "valuation_tier": null,
-      "n_investors_mapped": 0,
-      "bio_theme": "Precision Agriculture",
-      "bio_theme_secondary": "",
-      "is_bio_universe": null,
-      "sub_cluster_label": "",
-      "funding_stage": "series-a",
-      "funding_bucket_usd": null,
-      "valuation_bucket_usd": null,
-      "valuation_estimate_usd": null,
-      "valuation_estimate_source": null,
-      "sx": 6.818,
-      "sy": 3.734,
-      "bio_lens": [],
-      "domain_tags": [],
-      "tech_tags": [],
-      "scale_tags": [],
-      "market_label": "",
-      "self_cats": [
-        "Biomaterials"
-      ],
-      "tech_depth": "medium",
-      "tech_depth_confidence": 0.5,
-      "founded_year": null,
-      "ux": -4.647,
-      "uy": 5.068,
-      "hx": 8.458,
-      "hy": 6.3,
-      "investor_ids": []
-    },
-    {
-      "id": "lilliput-technologies-ltd-cr",
-      "name": "Lilliput Technologies Ltd.",
-      "country": "Costa Rica",
-      "countries": [
-        "Costa Rica"
-      ],
-      "website": "https://www.lilliputtech.com",
-      "macro_theme": "precision agriculture and resource intelligence",
-      "emergent_theme": "",
-      "summary": "Biopolymer crop protection technology for coffee and other crops. Founded April/May 2024 by Deep Science Ventures. Founder: Mauricio Herrera Rodriguez.",
-      "one_liner": "",
-      "cluster_id": 7,
-      "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
-      "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
-      "cluster_confidence": 0.832,
-      "x": 8.44,
+      "x": 8.489,
       "y": 6.279,
       "is_outlier": false,
       "tech_codes": [],
@@ -24150,8 +24095,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": 6.777,
-      "sy": 3.686,
+      "sx": 6.886,
+      "sy": 3.688,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -24163,10 +24108,65 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "medium",
       "tech_depth_confidence": 0.5,
       "founded_year": null,
-      "ux": -4.766,
-      "uy": 5.016,
-      "hx": 8.44,
+      "ux": -4.81,
+      "uy": 4.96,
+      "hx": 8.489,
       "hy": 6.279,
+      "investor_ids": []
+    },
+    {
+      "id": "lilliput-technologies-ltd-cr",
+      "name": "Lilliput Technologies Ltd.",
+      "country": "Costa Rica",
+      "countries": [
+        "Costa Rica"
+      ],
+      "website": "https://www.lilliputtech.com",
+      "macro_theme": "precision agriculture and resource intelligence",
+      "emergent_theme": "",
+      "summary": "Biopolymer crop protection technology for coffee and other crops. Founded April/May 2024 by Deep Science Ventures. Founder: Mauricio Herrera Rodriguez.",
+      "one_liner": "",
+      "cluster_id": 7,
+      "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
+      "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
+      "cluster_confidence": 0.832,
+      "x": 8.471,
+      "y": 6.259,
+      "is_outlier": false,
+      "tech_codes": [],
+      "industry_codes": [],
+      "quality_score": 5.0,
+      "quality_band": "medium",
+      "community_id": null,
+      "pagerank": 0.0,
+      "valuation_tier": null,
+      "n_investors_mapped": 0,
+      "bio_theme": "Precision Agriculture",
+      "bio_theme_secondary": "",
+      "is_bio_universe": null,
+      "sub_cluster_label": "",
+      "funding_stage": "series-a",
+      "funding_bucket_usd": null,
+      "valuation_bucket_usd": null,
+      "valuation_estimate_usd": null,
+      "valuation_estimate_source": null,
+      "sx": 6.846,
+      "sy": 3.642,
+      "bio_lens": [],
+      "domain_tags": [],
+      "tech_tags": [],
+      "scale_tags": [],
+      "market_label": "",
+      "self_cats": [
+        "Biomaterials"
+      ],
+      "tech_depth": "medium",
+      "tech_depth_confidence": 0.5,
+      "founded_year": null,
+      "ux": -4.928,
+      "uy": 4.905,
+      "hx": 8.471,
+      "hy": 6.259,
       "investor_ids": []
     },
     {
@@ -24185,8 +24185,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 1.0,
-      "x": -7.136,
-      "y": 6.175,
+      "x": -7.159,
+      "y": 6.2,
       "is_outlier": false,
       "tech_codes": [
         "iot"
@@ -24209,8 +24209,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -7.302,
-      "sy": 6.022,
+      "sx": -7.353,
+      "sy": 6.077,
       "bio_lens": [
         "biocentric",
         "regenerative"
@@ -24229,10 +24229,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2021,
-      "ux": -4.48,
-      "uy": 4.488,
-      "hx": -7.136,
-      "hy": 6.175,
+      "ux": -4.628,
+      "uy": 4.389,
+      "hx": -7.159,
+      "hy": 6.2,
       "investor_ids": [
         "SF500"
       ]
@@ -24253,8 +24253,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 0.831,
-      "x": 0.229,
-      "y": -0.981,
+      "x": -6.977,
+      "y": 6.106,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -24264,7 +24264,7 @@ window.STARTUP_THEMES_DATA = {
       "pagerank": 0.0,
       "valuation_tier": null,
       "n_investors_mapped": 0,
-      "bio_theme": "",
+      "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
       "sub_cluster_label": "",
@@ -24273,8 +24273,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": 0.508,
-      "sy": -2.179,
+      "sx": -6.948,
+      "sy": 5.87,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -24287,10 +24287,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "unclassified",
       "tech_depth_confidence": 0.5,
       "founded_year": 2022,
-      "ux": -4.595,
-      "uy": 5.152,
-      "hx": 0.229,
-      "hy": -0.981,
+      "ux": -4.761,
+      "uy": 5.045,
+      "hx": -6.977,
+      "hy": 6.106,
       "investor_ids": []
     },
     {
@@ -24309,8 +24309,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 1.0,
-      "x": -6.886,
-      "y": 6.172,
+      "x": -6.911,
+      "y": 6.197,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -24332,8 +24332,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -6.746,
-      "sy": 6.015,
+      "sx": -6.803,
+      "sy": 6.071,
       "bio_lens": [
         "biocentric",
         "planetary-boundary"
@@ -24352,10 +24352,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.883,
       "founded_year": 2022,
-      "ux": -4.247,
-      "uy": 5.27,
-      "hx": -6.886,
-      "hy": 6.172,
+      "ux": -4.419,
+      "uy": 5.172,
+      "hx": -6.911,
+      "hy": 6.197,
       "investor_ids": [
         "The Ganesha Lab"
       ]
@@ -24376,8 +24376,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 1.0,
-      "x": 0.53,
-      "y": -0.812,
+      "x": -6.522,
+      "y": 6.36,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -24387,7 +24387,7 @@ window.STARTUP_THEMES_DATA = {
       "pagerank": 0.0,
       "valuation_tier": null,
       "n_investors_mapped": 0,
-      "bio_theme": "",
+      "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
       "sub_cluster_label": "",
@@ -24396,8 +24396,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": 1.178,
-      "sy": -1.805,
+      "sx": -5.939,
+      "sy": 6.434,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -24407,10 +24407,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "medium",
       "tech_depth_confidence": 0.5,
       "founded_year": 2014,
-      "ux": -3.354,
-      "uy": 6.332,
-      "hx": 0.53,
-      "hy": -0.812,
+      "ux": -3.564,
+      "uy": 6.252,
+      "hx": -6.522,
+      "hy": 6.36,
       "investor_ids": []
     },
     {
@@ -24429,8 +24429,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 1.0,
-      "x": -6.841,
-      "y": 6.169,
+      "x": -6.867,
+      "y": 6.194,
       "is_outlier": false,
       "tech_codes": [
         "ag_inputs"
@@ -24454,8 +24454,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -6.647,
-      "sy": 6.01,
+      "sx": -6.704,
+      "sy": 6.065,
       "bio_lens": [
         "biocentric"
       ],
@@ -24477,10 +24477,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2019,
-      "ux": -4.212,
-      "uy": 5.411,
-      "hx": -6.841,
-      "hy": 6.169,
+      "ux": -4.389,
+      "uy": 5.313,
+      "hx": -6.867,
+      "hy": 6.194,
       "investor_ids": [
         "sosv"
       ]
@@ -24501,8 +24501,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 0.99,
-      "x": -6.966,
-      "y": 6.348,
+      "x": -6.99,
+      "y": 6.371,
       "is_outlier": false,
       "tech_codes": [
         "ag_inputs",
@@ -24526,8 +24526,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -6.924,
-      "sy": 6.406,
+      "sx": -6.979,
+      "sy": 6.458,
       "bio_lens": [
         "biobased",
         "biocentric",
@@ -24551,10 +24551,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2019,
-      "ux": -3.777,
-      "uy": 4.851,
-      "hx": -6.966,
-      "hy": 6.348,
+      "ux": -3.94,
+      "uy": 4.77,
+      "hx": -6.99,
+      "hy": 6.371,
       "investor_ids": [
         "GridX"
       ]
@@ -24575,8 +24575,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 1.0,
-      "x": 0.447,
-      "y": -0.955,
+      "x": -6.648,
+      "y": 6.144,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -24586,7 +24586,7 @@ window.STARTUP_THEMES_DATA = {
       "pagerank": 0.0,
       "valuation_tier": null,
       "n_investors_mapped": 0,
-      "bio_theme": "",
+      "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
       "sub_cluster_label": "",
@@ -24595,8 +24595,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": 0.993,
-      "sy": -2.123,
+      "sx": -6.217,
+      "sy": 5.954,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -24610,10 +24610,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "medium",
       "tech_depth_confidence": 0.5,
       "founded_year": 2016,
-      "ux": -4.155,
-      "uy": 6.148,
-      "hx": 0.447,
-      "hy": -0.955,
+      "ux": -4.353,
+      "uy": 6.047,
+      "hx": -6.648,
+      "hy": 6.144,
       "investor_ids": []
     },
     {
@@ -24632,8 +24632,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 0.99,
-      "x": -6.576,
-      "y": 6.341,
+      "x": -6.604,
+      "y": 6.364,
       "is_outlier": false,
       "tech_codes": [
         "nanotech",
@@ -24658,8 +24658,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -6.057,
-      "sy": 6.39,
+      "sx": -6.12,
+      "sy": 6.442,
       "bio_lens": [
         "biobased",
         "biocentric",
@@ -24684,10 +24684,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.684,
       "founded_year": 2018,
-      "ux": -3.423,
-      "uy": 6.073,
-      "hx": -6.576,
-      "hy": 6.341,
+      "ux": -3.624,
+      "uy": 5.993,
+      "hx": -6.604,
+      "hy": 6.364,
       "investor_ids": [
         "glocal",
         "la_turbina"
@@ -24709,8 +24709,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 0.734,
-      "x": 2.416,
-      "y": 1.764,
+      "x": 2.397,
+      "y": 1.765,
       "is_outlier": false,
       "tech_codes": [
         "bioinformatics",
@@ -24740,8 +24740,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": 2.803,
-      "sy": 1.353,
+      "sx": 2.76,
+      "sy": 1.355,
       "bio_lens": [
         "biobased",
         "biocentric",
@@ -24773,10 +24773,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.744,
       "founded_year": 2021,
-      "ux": -3.761,
-      "uy": 3.223,
-      "hx": 2.416,
-      "hy": 1.764,
+      "ux": -3.878,
+      "uy": 3.154,
+      "hx": 2.397,
+      "hy": 1.765,
       "investor_ids": [
         "GridX",
         "inventure"
@@ -24798,8 +24798,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 1.0,
-      "x": 0.484,
-      "y": -0.94,
+      "x": -6.591,
+      "y": 6.167,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -24809,7 +24809,7 @@ window.STARTUP_THEMES_DATA = {
       "pagerank": 0.0,
       "valuation_tier": null,
       "n_investors_mapped": 0,
-      "bio_theme": "",
+      "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
       "sub_cluster_label": "",
@@ -24818,8 +24818,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": 1.077,
-      "sy": -2.089,
+      "sx": -6.092,
+      "sy": 6.006,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -24831,10 +24831,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "medium",
       "tech_depth_confidence": 0.5,
       "founded_year": 2012,
-      "ux": -4.028,
-      "uy": 6.303,
-      "hx": 0.484,
-      "hy": -0.94,
+      "ux": -4.232,
+      "uy": 6.204,
+      "hx": -6.591,
+      "hy": 6.167,
       "investor_ids": []
     },
     {
@@ -24853,8 +24853,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 0.361,
-      "x": -7.195,
-      "y": 6.115,
+      "x": -7.217,
+      "y": 6.141,
       "is_outlier": true,
       "tech_codes": [
         "synbio",
@@ -24881,8 +24881,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -7.433,
-      "sy": 5.89,
+      "sx": -7.483,
+      "sy": 5.946,
       "bio_lens": [
         "biocentric",
         "planetary-boundary",
@@ -24909,10 +24909,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.684,
       "founded_year": 2019,
-      "ux": -4.721,
-      "uy": 4.362,
-      "hx": -7.195,
-      "hy": 6.115,
+      "ux": -4.864,
+      "uy": 4.257,
+      "hx": -7.217,
+      "hy": 6.141,
       "investor_ids": [
         "zentynel"
       ]
@@ -24933,8 +24933,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 1.0,
-      "x": 0.118,
-      "y": -1.006,
+      "x": -7.144,
+      "y": 6.068,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -24944,7 +24944,7 @@ window.STARTUP_THEMES_DATA = {
       "pagerank": 0.0,
       "valuation_tier": null,
       "n_investors_mapped": 0,
-      "bio_theme": "",
+      "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
       "sub_cluster_label": "",
@@ -24953,8 +24953,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": 0.263,
-      "sy": -2.235,
+      "sx": -7.319,
+      "sy": 5.785,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -24966,10 +24966,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "unclassified",
       "tech_depth_confidence": 0.5,
       "founded_year": 2015,
-      "ux": -4.878,
-      "uy": 4.665,
-      "hx": 0.118,
-      "hy": -1.006,
+      "ux": -5.028,
+      "uy": 4.553,
+      "hx": -7.144,
+      "hy": 6.068,
       "investor_ids": []
     },
     {
@@ -25038,8 +25038,8 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.764,
       "founded_year": 2011,
-      "ux": -3.727,
-      "uy": 2.545,
+      "ux": -3.824,
+      "uy": 2.481,
       "hx": -8.717,
       "hy": -2.426,
       "investor_ids": [
@@ -25064,8 +25064,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 1.0,
-      "x": -7.057,
-      "y": 6.312,
+      "x": -7.081,
+      "y": 6.336,
       "is_outlier": false,
       "tech_codes": [
         "microbial",
@@ -25091,8 +25091,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -7.127,
-      "sy": 6.327,
+      "sx": -7.18,
+      "sy": 6.379,
       "bio_lens": [
         "biobased",
         "biocentric",
@@ -25119,10 +25119,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2020,
-      "ux": -3.976,
-      "uy": 4.601,
-      "hx": -7.057,
-      "hy": 6.312,
+      "ux": -4.131,
+      "uy": 4.516,
+      "hx": -7.081,
+      "hy": 6.336,
       "investor_ids": [
         "GridX",
         "eatable_adventures"
@@ -25144,8 +25144,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 1.0,
-      "x": -6.993,
-      "y": 6.266,
+      "x": -7.017,
+      "y": 6.29,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -25167,8 +25167,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
-      "sx": -6.984,
-      "sy": 6.225,
+      "sx": -7.037,
+      "sy": 6.278,
       "bio_lens": [
         "biocentric",
         "planetary-boundary"
@@ -25189,10 +25189,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.883,
       "founded_year": 2019,
-      "ux": -4.057,
-      "uy": 4.847,
-      "hx": -6.993,
-      "hy": 6.266,
+      "ux": -4.218,
+      "uy": 4.757,
+      "hx": -7.017,
+      "hy": 6.29,
       "investor_ids": []
     },
     {
@@ -25211,8 +25211,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 1.0,
-      "x": -6.507,
-      "y": 6.237,
+      "x": -6.536,
+      "y": 6.261,
       "is_outlier": false,
       "tech_codes": [
         "ag_inputs"
@@ -25236,8 +25236,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 25,
       "valuation_estimate_usd": 25.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -5.904,
-      "sy": 6.16,
+      "sx": -5.968,
+      "sy": 6.214,
       "bio_lens": [
         "biobased",
         "biocentric",
@@ -25263,10 +25263,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2006,
-      "ux": -3.679,
-      "uy": 6.387,
-      "hx": -6.507,
-      "hy": 6.237,
+      "ux": -3.888,
+      "uy": 6.298,
+      "hx": -6.536,
+      "hy": 6.261,
       "investor_ids": [
         "angra_partners",
         "sp_ventures"
@@ -25288,8 +25288,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 1.0,
-      "x": -7.061,
-      "y": 6.306,
+      "x": -7.084,
+      "y": 6.33,
       "is_outlier": false,
       "tech_codes": [
         "microbial",
@@ -25315,8 +25315,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 15,
       "valuation_estimate_usd": 15.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -7.135,
-      "sy": 6.313,
+      "sx": -7.188,
+      "sy": 6.366,
       "bio_lens": [
         "biobased",
         "biocentric",
@@ -25347,10 +25347,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2020,
-      "ux": -3.999,
-      "uy": 4.596,
-      "hx": -7.061,
-      "hy": 6.306,
+      "ux": -4.153,
+      "uy": 4.51,
+      "hx": -7.084,
+      "hy": 6.33,
       "investor_ids": [
         "AIR Capital",
         "GridX",
@@ -25376,8 +25376,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 1.0,
-      "x": -7.16,
-      "y": 6.392,
+      "x": -7.183,
+      "y": 6.415,
       "is_outlier": false,
       "tech_codes": [
         "microbial",
@@ -25405,8 +25405,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -7.356,
-      "sy": 6.505,
+      "sx": -7.407,
+      "sy": 6.556,
       "bio_lens": [
         "biobased",
         "biocentric",
@@ -25437,10 +25437,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.696,
       "founded_year": 2022,
-      "ux": -3.827,
-      "uy": 4.203,
-      "hx": -7.16,
-      "hy": 6.392,
+      "ux": -3.971,
+      "uy": 4.125,
+      "hx": -7.183,
+      "hy": 6.415,
       "investor_ids": [
         "GridX"
       ]
@@ -25461,8 +25461,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 1.0,
-      "x": -6.601,
-      "y": 6.114,
+      "x": -6.629,
+      "y": 6.14,
       "is_outlier": false,
       "tech_codes": [
         "ag_inputs"
@@ -25486,8 +25486,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 5,
       "valuation_estimate_usd": 5.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -6.113,
-      "sy": 5.888,
+      "sx": -6.175,
+      "sy": 5.944,
       "bio_lens": [
         "biocentric"
       ],
@@ -25509,10 +25509,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.883,
       "founded_year": 2006,
-      "ux": -4.151,
-      "uy": 6.212,
-      "hx": -6.601,
-      "hy": 6.114,
+      "ux": -4.351,
+      "uy": 6.11,
+      "hx": -6.629,
+      "hy": 6.14,
       "investor_ids": []
     },
     {
@@ -25531,8 +25531,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 0.351,
-      "x": 2.362,
-      "y": 1.768,
+      "x": 2.342,
+      "y": 1.769,
       "is_outlier": true,
       "tech_codes": [],
       "industry_codes": [
@@ -25554,8 +25554,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
-      "sx": 2.682,
-      "sy": 1.363,
+      "sx": 2.638,
+      "sy": 1.365,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -25575,10 +25575,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": null,
-      "ux": -3.82,
-      "uy": 2.957,
-      "hx": 2.362,
-      "hy": 1.768,
+      "ux": -3.928,
+      "uy": 2.888,
+      "hx": 2.342,
+      "hy": 1.769,
       "investor_ids": []
     },
     {
@@ -25597,8 +25597,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 0.99,
-      "x": -7.204,
-      "y": 6.143,
+      "x": -7.226,
+      "y": 6.168,
       "is_outlier": true,
       "tech_codes": [
         "ai_ml"
@@ -25621,8 +25621,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -7.453,
-      "sy": 5.951,
+      "sx": -7.502,
+      "sy": 6.007,
       "bio_lens": [
         "biocentric",
         "planetary-boundary",
@@ -25647,10 +25647,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": null,
-      "ux": -4.644,
-      "uy": 4.309,
-      "hx": -7.204,
-      "hy": 6.143,
+      "ux": -4.786,
+      "uy": 4.206,
+      "hx": -7.226,
+      "hy": 6.168,
       "investor_ids": [
         "aceleradora_litoral"
       ]
@@ -25671,8 +25671,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 1.0,
-      "x": 0.129,
-      "y": -1.01,
+      "x": -7.127,
+      "y": 6.062,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -25682,7 +25682,7 @@ window.STARTUP_THEMES_DATA = {
       "pagerank": 0.0,
       "valuation_tier": null,
       "n_investors_mapped": 0,
-      "bio_theme": "",
+      "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
       "sub_cluster_label": "",
@@ -25691,8 +25691,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": 0.287,
-      "sy": -2.245,
+      "sx": -7.283,
+      "sy": 5.77,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -25704,10 +25704,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "unclassified",
       "tech_depth_confidence": 0.5,
       "founded_year": null,
-      "ux": -4.882,
-      "uy": 4.723,
-      "hx": 0.129,
-      "hy": -1.01,
+      "ux": -5.034,
+      "uy": 4.61,
+      "hx": -7.127,
+      "hy": 6.062,
       "investor_ids": []
     },
     {
@@ -25726,8 +25726,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 1.0,
-      "x": -7.111,
-      "y": 6.19,
+      "x": -7.134,
+      "y": 6.215,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -25748,8 +25748,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -7.246,
-      "sy": 6.055,
+      "sx": -7.298,
+      "sy": 6.11,
       "bio_lens": [
         "biocentric",
         "planetary-boundary",
@@ -25772,10 +25772,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": null,
-      "ux": -4.409,
-      "uy": 4.553,
-      "hx": -7.111,
-      "hy": 6.19,
+      "ux": -4.559,
+      "uy": 4.455,
+      "hx": -7.134,
+      "hy": 6.215,
       "investor_ids": [
         "GridX"
       ]
@@ -25796,8 +25796,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 1.0,
-      "x": -6.898,
-      "y": 6.198,
+      "x": -6.923,
+      "y": 6.223,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -25819,8 +25819,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
-      "sx": -6.772,
-      "sy": 6.074,
+      "sx": -6.828,
+      "sy": 6.129,
       "bio_lens": [
         "biocentric",
         "planetary-boundary"
@@ -25843,10 +25843,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": null,
-      "ux": -4.176,
-      "uy": 5.208,
-      "hx": -6.898,
-      "hy": 6.198,
+      "ux": -4.347,
+      "uy": 5.112,
+      "hx": -6.923,
+      "hy": 6.223,
       "investor_ids": []
     },
     {
@@ -25865,8 +25865,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 1.0,
-      "x": -6.528,
-      "y": 6.303,
+      "x": -6.557,
+      "y": 6.327,
       "is_outlier": false,
       "tech_codes": [
         "microbial",
@@ -25891,8 +25891,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
-      "sx": -5.951,
-      "sy": 6.307,
+      "sx": -6.015,
+      "sy": 6.359,
       "bio_lens": [
         "biobased",
         "biocentric",
@@ -25919,10 +25919,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": null,
-      "ux": -3.494,
-      "uy": 6.257,
-      "hx": -6.528,
-      "hy": 6.303,
+      "ux": -3.7,
+      "uy": 6.174,
+      "hx": -6.557,
+      "hy": 6.327,
       "investor_ids": [
         "aqua_capital",
         "sp_ventures"
@@ -25944,8 +25944,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 1.0,
-      "x": -7.158,
-      "y": 6.384,
+      "x": -7.181,
+      "y": 6.407,
       "is_outlier": false,
       "tech_codes": [
         "ag_inputs"
@@ -25969,8 +25969,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -7.352,
-      "sy": 6.486,
+      "sx": -7.402,
+      "sy": 6.537,
       "bio_lens": [
         "biobased",
         "biocentric",
@@ -25996,10 +25996,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": null,
-      "ux": -3.85,
-      "uy": 4.218,
-      "hx": -7.158,
-      "hy": 6.384,
+      "ux": -3.995,
+      "uy": 4.139,
+      "hx": -7.181,
+      "hy": 6.407,
       "investor_ids": [
         "SF500"
       ]
@@ -26020,8 +26020,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 1.0,
-      "x": -7.174,
-      "y": 6.395,
+      "x": -7.197,
+      "y": 6.418,
       "is_outlier": false,
       "tech_codes": [
         "ag_inputs",
@@ -26048,8 +26048,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -7.387,
-      "sy": 6.511,
+      "sx": -7.437,
+      "sy": 6.562,
       "bio_lens": [
         "biocentric",
         "circular",
@@ -26078,10 +26078,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2021,
-      "ux": -3.831,
-      "uy": 4.158,
-      "hx": -7.174,
-      "hy": 6.395,
+      "ux": -3.974,
+      "uy": 4.08,
+      "hx": -7.197,
+      "hy": 6.418,
       "investor_ids": [
         "AIR Capital",
         "GridX"
@@ -26103,8 +26103,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 1.0,
-      "x": -6.502,
-      "y": 6.329,
+      "x": -6.531,
+      "y": 6.352,
       "is_outlier": false,
       "tech_codes": [
         "bioinformatics",
@@ -26132,8 +26132,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 10,
       "valuation_estimate_usd": 10.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -5.893,
-      "sy": 6.364,
+      "sx": -5.957,
+      "sy": 6.416,
       "bio_lens": [
         "biobased",
         "biocentric",
@@ -26164,10 +26164,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.78,
       "founded_year": 2021,
-      "ux": -3.389,
-      "uy": 6.313,
-      "hx": -6.502,
-      "hy": 6.329,
+      "ux": -3.598,
+      "uy": 6.233,
+      "hx": -6.531,
+      "hy": 6.352,
       "investor_ids": [
         "arar_capital",
         "cazanga",
@@ -26194,8 +26194,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 0.734,
-      "x": -7.247,
-      "y": 6.477,
+      "x": -7.268,
+      "y": 6.499,
       "is_outlier": false,
       "tech_codes": [
         "synbio",
@@ -26225,8 +26225,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -7.548,
-      "sy": 6.693,
+      "sx": -7.597,
+      "sy": 6.742,
       "bio_lens": [
         "biobased",
         "biocentric",
@@ -26259,10 +26259,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.868,
       "founded_year": 2019,
-      "ux": -3.647,
-      "uy": 3.853,
-      "hx": -7.247,
-      "hy": 6.477,
+      "ux": -3.782,
+      "uy": 3.783,
+      "hx": -7.268,
+      "hy": 6.499,
       "investor_ids": [
         "GridX"
       ]
@@ -26283,8 +26283,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 1.0,
-      "x": 0.444,
-      "y": -0.957,
+      "x": -6.652,
+      "y": 6.142,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -26294,7 +26294,7 @@ window.STARTUP_THEMES_DATA = {
       "pagerank": 0.0,
       "valuation_tier": null,
       "n_investors_mapped": 0,
-      "bio_theme": "",
+      "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
       "sub_cluster_label": "",
@@ -26303,8 +26303,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": 0.987,
-      "sy": -2.126,
+      "sx": -6.226,
+      "sy": 5.949,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -26314,10 +26314,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "unclassified",
       "tech_depth_confidence": 0.5,
       "founded_year": null,
-      "ux": -4.167,
-      "uy": 6.138,
-      "hx": 0.444,
-      "hy": -0.957,
+      "ux": -4.364,
+      "uy": 6.036,
+      "hx": -6.652,
+      "hy": 6.142,
       "investor_ids": []
     },
     {
@@ -26336,8 +26336,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 1.0,
-      "x": -7.121,
-      "y": 6.18,
+      "x": -7.144,
+      "y": 6.205,
       "is_outlier": false,
       "tech_codes": [
         "biomaterials"
@@ -26361,8 +26361,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -7.269,
-      "sy": 6.034,
+      "sx": -7.32,
+      "sy": 6.089,
       "bio_lens": [
         "biocentric",
         "planetary-boundary",
@@ -26388,10 +26388,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2020,
-      "ux": -4.448,
-      "uy": 4.53,
-      "hx": -7.121,
-      "hy": 6.18,
+      "ux": -4.597,
+      "uy": 4.431,
+      "hx": -7.144,
+      "hy": 6.205,
       "investor_ids": [
         "SF500",
         "The Ganesha Lab",
@@ -26414,8 +26414,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 1.0,
-      "x": -6.982,
-      "y": 6.335,
+      "x": -7.007,
+      "y": 6.358,
       "is_outlier": false,
       "tech_codes": [
         "ag_inputs"
@@ -26439,8 +26439,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -6.961,
-      "sy": 6.378,
+      "sx": -7.015,
+      "sy": 6.43,
       "bio_lens": [
         "biobased",
         "biocentric",
@@ -26467,10 +26467,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": null,
-      "ux": -3.833,
-      "uy": 4.812,
-      "hx": -6.982,
-      "hy": 6.335,
+      "ux": -3.995,
+      "uy": 4.729,
+      "hx": -7.007,
+      "hy": 6.358,
       "investor_ids": [
         "GridX"
       ]
@@ -26491,8 +26491,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 1.0,
-      "x": -6.468,
-      "y": 6.361,
+      "x": -6.498,
+      "y": 6.384,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -26514,8 +26514,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
-      "sx": -5.818,
-      "sy": 6.436,
+      "sx": -5.883,
+      "sy": 6.487,
       "bio_lens": [
         "biocentric",
         "planetary-boundary"
@@ -26537,10 +26537,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": null,
-      "ux": -3.256,
-      "uy": 6.387,
-      "hx": -6.468,
-      "hy": 6.361,
+      "ux": -3.467,
+      "uy": 6.31,
+      "hx": -6.498,
+      "hy": 6.384,
       "investor_ids": []
     },
     {
@@ -26559,8 +26559,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Bioinputs & Crop Resilience — Crop Resilience",
       "cluster_keywords": "biologicals · crop resilience · bioinputs · crops",
       "cluster_confidence": 1.0,
-      "x": -7.175,
-      "y": 6.406,
+      "x": -7.197,
+      "y": 6.429,
       "is_outlier": false,
       "tech_codes": [
         "iot",
@@ -26587,8 +26587,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -7.388,
-      "sy": 6.536,
+      "sx": -7.438,
+      "sy": 6.586,
       "bio_lens": [
         "biobased",
         "biocentric",
@@ -26619,10 +26619,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.772,
       "founded_year": 2021,
-      "ux": -3.797,
-      "uy": 4.146,
-      "hx": -7.175,
-      "hy": 6.406,
+      "ux": -3.94,
+      "uy": 4.069,
+      "hx": -7.197,
+      "hy": 6.429,
       "investor_ids": [
         "GridX"
       ]
@@ -26643,8 +26643,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Mixed — Ecuador",
       "cluster_keywords": "ecuador · lab · democratizes · cnpq",
       "cluster_confidence": 0.356,
-      "x": -2.022,
-      "y": -1.142,
+      "x": -2.215,
+      "y": -1.113,
       "is_outlier": true,
       "tech_codes": [],
       "industry_codes": [],
@@ -26663,8 +26663,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": -4.494,
-      "sy": -2.539,
+      "sx": -4.922,
+      "sy": -2.473,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -26676,10 +26676,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "unclassified",
       "tech_depth_confidence": 0.5,
       "founded_year": null,
-      "ux": -8.667,
-      "uy": -5.272,
-      "hx": -2.022,
-      "hy": -1.142,
+      "ux": -8.504,
+      "uy": -5.423,
+      "hx": -2.215,
+      "hy": -1.113,
       "investor_ids": []
     },
     {
@@ -26698,8 +26698,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Mixed — Ecuador",
       "cluster_keywords": "ecuador · lab · democratizes · cnpq",
       "cluster_confidence": 0.355,
-      "x": -1.011,
-      "y": -0.657,
+      "x": 1.031,
+      "y": 0.445,
       "is_outlier": true,
       "tech_codes": [],
       "industry_codes": [],
@@ -26718,8 +26718,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": -2.246,
-      "sy": -1.46,
+      "sx": 2.291,
+      "sy": 0.989,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -26732,10 +26732,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "unclassified",
       "tech_depth_confidence": 0.5,
       "founded_year": null,
-      "ux": -4.882,
-      "uy": -1.194,
-      "hx": -1.011,
-      "hy": -0.657,
+      "ux": -4.864,
+      "uy": -1.264,
+      "hx": 1.031,
+      "hy": 0.445,
       "investor_ids": []
     },
     {
@@ -26754,8 +26754,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Mixed — Ecuador",
       "cluster_keywords": "ecuador · lab · democratizes · cnpq",
       "cluster_confidence": 1.0,
-      "x": -10.539,
-      "y": -9.391,
+      "x": -10.537,
+      "y": -9.389,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -26774,8 +26774,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": -9.731,
-      "sy": -8.891,
+      "sx": -9.727,
+      "sy": -8.887,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -26787,10 +26787,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "medium",
       "tech_depth_confidence": 0.5,
       "founded_year": 2005,
-      "ux": -5.207,
-      "uy": -2.014,
-      "hx": -10.539,
-      "hy": -9.391,
+      "ux": -5.162,
+      "uy": -2.088,
+      "hx": -10.537,
+      "hy": -9.389,
       "investor_ids": []
     },
     {
@@ -26809,8 +26809,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Mixed — Ecuador",
       "cluster_keywords": "ecuador · lab · democratizes · cnpq",
       "cluster_confidence": 1.0,
-      "x": -10.507,
-      "y": -9.378,
+      "x": -10.505,
+      "y": -9.377,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -26829,8 +26829,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": -9.659,
-      "sy": -8.863,
+      "sx": -9.655,
+      "sy": -8.859,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -26842,10 +26842,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "medium",
       "tech_depth_confidence": 0.5,
       "founded_year": 2020,
-      "ux": -5.111,
-      "uy": -1.894,
-      "hx": -10.507,
-      "hy": -9.378,
+      "ux": -5.071,
+      "uy": -1.966,
+      "hx": -10.505,
+      "hy": -9.377,
       "investor_ids": []
     },
     {
@@ -26864,8 +26864,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Mixed — Ecuador",
       "cluster_keywords": "ecuador · lab · democratizes · cnpq",
       "cluster_confidence": 0.346,
-      "x": -0.97,
-      "y": -0.66,
+      "x": 1.162,
+      "y": 0.437,
       "is_outlier": true,
       "tech_codes": [],
       "industry_codes": [],
@@ -26884,8 +26884,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": -2.155,
-      "sy": -1.466,
+      "sx": 2.582,
+      "sy": 0.971,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -26897,10 +26897,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "medium",
       "tech_depth_confidence": 0.5,
       "founded_year": 2018,
-      "ux": -4.834,
-      "uy": -0.996,
-      "hx": -0.97,
-      "hy": -0.66,
+      "ux": -4.822,
+      "uy": -1.067,
+      "hx": 1.162,
+      "hy": 0.437,
       "investor_ids": []
     },
     {
@@ -26919,8 +26919,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Mixed — Ecuador",
       "cluster_keywords": "ecuador · lab · democratizes · cnpq",
       "cluster_confidence": 1.0,
-      "x": -1.101,
-      "y": -0.658,
+      "x": 0.74,
+      "y": 0.443,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -26939,8 +26939,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": -2.448,
-      "sy": -1.461,
+      "sx": 1.644,
+      "sy": 0.985,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -26953,10 +26953,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "unclassified",
       "tech_depth_confidence": 0.5,
       "founded_year": null,
-      "ux": -5.018,
-      "uy": -1.623,
-      "hx": -1.101,
-      "hy": -0.658,
+      "ux": -4.986,
+      "uy": -1.694,
+      "hx": 0.74,
+      "hy": 0.443,
       "investor_ids": []
     },
     {
@@ -26975,8 +26975,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Mixed — Ecuador",
       "cluster_keywords": "ecuador · lab · democratizes · cnpq",
       "cluster_confidence": 1.0,
-      "x": -1.071,
-      "y": -0.65,
+      "x": 0.836,
+      "y": 0.468,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -26995,8 +26995,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": -2.381,
-      "sy": -1.444,
+      "sx": 1.859,
+      "sy": 1.039,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -27008,10 +27008,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "unclassified",
       "tech_depth_confidence": 0.5,
       "founded_year": null,
-      "ux": -4.938,
-      "uy": -1.491,
-      "hx": -1.071,
-      "hy": -0.65,
+      "ux": -4.91,
+      "uy": -1.561,
+      "hx": 0.836,
+      "hy": 0.468,
       "investor_ids": []
     },
     {
@@ -27030,8 +27030,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Mixed — Ecuador",
       "cluster_keywords": "ecuador · lab · democratizes · cnpq",
       "cluster_confidence": 0.349,
-      "x": -2.035,
-      "y": -1.145,
+      "x": -2.257,
+      "y": -1.12,
       "is_outlier": true,
       "tech_codes": [],
       "industry_codes": [],
@@ -27050,8 +27050,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": -4.523,
-      "sy": -2.544,
+      "sx": -5.017,
+      "sy": -2.489,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -27064,10 +27064,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "unclassified",
       "tech_depth_confidence": 0.5,
       "founded_year": 1995,
-      "ux": -8.697,
-      "uy": -5.331,
-      "hx": -2.035,
-      "hy": -1.145,
+      "ux": -8.532,
+      "uy": -5.483,
+      "hx": -2.257,
+      "hy": -1.12,
       "investor_ids": []
     },
     {
@@ -27086,8 +27086,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Mixed — Ecuador",
       "cluster_keywords": "ecuador · lab · democratizes · cnpq",
       "cluster_confidence": 1.0,
-      "x": -1.113,
-      "y": -0.659,
+      "x": 0.703,
+      "y": 0.44,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -27106,8 +27106,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": -2.473,
-      "sy": -1.463,
+      "sx": 1.563,
+      "sy": 0.978,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -27120,10 +27120,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "unclassified",
       "tech_depth_confidence": 0.5,
       "founded_year": null,
-      "ux": -5.039,
-      "uy": -1.675,
-      "hx": -1.113,
-      "hy": -0.659,
+      "ux": -5.006,
+      "uy": -1.747,
+      "hx": 0.703,
+      "hy": 0.44,
       "investor_ids": []
     },
     {
@@ -27142,8 +27142,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Mixed — Ecuador",
       "cluster_keywords": "ecuador · lab · democratizes · cnpq",
       "cluster_confidence": 1.0,
-      "x": -10.612,
-      "y": -9.405,
+      "x": -10.61,
+      "y": -9.403,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -27162,8 +27162,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": -9.894,
-      "sy": -8.922,
+      "sx": -9.889,
+      "sy": -8.919,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -27176,10 +27176,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "medium",
       "tech_depth_confidence": 0.5,
       "founded_year": 2010,
-      "ux": -5.363,
-      "uy": -2.305,
-      "hx": -10.612,
-      "hy": -9.405,
+      "ux": -5.309,
+      "uy": -2.382,
+      "hx": -10.61,
+      "hy": -9.403,
       "investor_ids": []
     },
     {
@@ -27198,8 +27198,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Biomaterials & Green Chemistry — Drug Delivery",
       "cluster_keywords": "drug delivery · antimicrobial · textile · materials",
       "cluster_confidence": 1.0,
-      "x": -3.655,
-      "y": -0.583,
+      "x": -3.653,
+      "y": -0.584,
       "is_outlier": false,
       "tech_codes": [
         "biomaterials"
@@ -27223,8 +27223,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 50,
       "valuation_estimate_usd": 50.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -5.556,
-      "sy": -3.006,
+      "sx": -5.552,
+      "sy": -3.01,
       "bio_lens": [
         "biobased",
         "bio-enabled-industrial-transition"
@@ -27245,10 +27245,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2018,
-      "ux": -10.921,
-      "uy": -4.912,
-      "hx": -3.655,
-      "hy": -0.583,
+      "ux": -10.753,
+      "uy": -5.13,
+      "hx": -3.653,
+      "hy": -0.584,
       "investor_ids": []
     },
     {
@@ -27267,8 +27267,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Biomaterials & Green Chemistry — Drug Delivery",
       "cluster_keywords": "drug delivery · antimicrobial · textile · materials",
       "cluster_confidence": 1.0,
-      "x": -3.653,
-      "y": -0.573,
+      "x": -3.651,
+      "y": -0.574,
       "is_outlier": false,
       "tech_codes": [
         "biomaterials"
@@ -27292,8 +27292,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -5.551,
-      "sy": -2.984,
+      "sx": -5.547,
+      "sy": -2.987,
       "bio_lens": [
         "biobased",
         "bio-enabled-industrial-transition"
@@ -27314,10 +27314,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2004,
-      "ux": -10.862,
-      "uy": -4.917,
-      "hx": -3.653,
-      "hy": -0.573,
+      "ux": -10.694,
+      "uy": -5.134,
+      "hx": -3.651,
+      "hy": -0.574,
       "investor_ids": []
     },
     {
@@ -27336,8 +27336,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Biomaterials & Green Chemistry — Drug Delivery",
       "cluster_keywords": "drug delivery · antimicrobial · textile · materials",
       "cluster_confidence": 1.0,
-      "x": -3.652,
-      "y": -0.581,
+      "x": -3.65,
+      "y": -0.583,
       "is_outlier": false,
       "tech_codes": [
         "biomaterials"
@@ -27361,8 +27361,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 25,
       "valuation_estimate_usd": 25.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -5.548,
-      "sy": -3.003,
+      "sx": -5.544,
+      "sy": -3.007,
       "bio_lens": [
         "biobased",
         "bio-enabled-industrial-transition"
@@ -27383,10 +27383,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2017,
-      "ux": -10.907,
-      "uy": -4.894,
-      "hx": -3.652,
-      "hy": -0.581,
+      "ux": -10.739,
+      "uy": -5.113,
+      "hx": -3.65,
+      "hy": -0.583,
       "investor_ids": []
     },
     {
@@ -27405,8 +27405,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Biomaterials & Green Chemistry — Drug Delivery",
       "cluster_keywords": "drug delivery · antimicrobial · textile · materials",
       "cluster_confidence": 1.0,
-      "x": -3.65,
-      "y": -0.578,
+      "x": -3.649,
+      "y": -0.58,
       "is_outlier": false,
       "tech_codes": [
         "biomaterials"
@@ -27430,8 +27430,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 25,
       "valuation_estimate_usd": 25.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -5.546,
-      "sy": -2.996,
+      "sx": -5.541,
+      "sy": -2.999,
       "bio_lens": [
         "biobased",
         "bio-enabled-industrial-transition"
@@ -27452,10 +27452,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2014,
-      "ux": -10.887,
-      "uy": -4.894,
-      "hx": -3.65,
-      "hy": -0.578,
+      "ux": -10.72,
+      "uy": -5.112,
+      "hx": -3.649,
+      "hy": -0.58,
       "investor_ids": [
         "aurus_capital",
         "idb_lab"
@@ -27477,8 +27477,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Biomaterials & Green Chemistry — Drug Delivery",
       "cluster_keywords": "drug delivery · antimicrobial · textile · materials",
       "cluster_confidence": 0.99,
-      "x": -3.089,
-      "y": 0.034,
+      "x": -3.095,
+      "y": 0.024,
       "is_outlier": false,
       "tech_codes": [
         "nanotech",
@@ -27506,8 +27506,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.298,
-      "sy": -1.635,
+      "sx": -4.312,
+      "sy": -1.658,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -27532,10 +27532,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.844,
       "founded_year": 2018,
-      "ux": -6.579,
-      "uy": -2.859,
-      "hx": -3.089,
-      "hy": 0.034,
+      "ux": -6.501,
+      "uy": -2.967,
+      "hx": -3.095,
+      "hy": 0.024,
       "investor_ids": []
     },
     {
@@ -27554,8 +27554,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Biomaterials & Green Chemistry — Drug Delivery",
       "cluster_keywords": "drug delivery · antimicrobial · textile · materials",
       "cluster_confidence": 0.643,
-      "x": -11.538,
-      "y": -10.341,
+      "x": -11.535,
+      "y": -10.339,
       "is_outlier": false,
       "tech_codes": [
         "nanotech",
@@ -27585,8 +27585,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -11.95,
-      "sy": -11.003,
+      "sx": -11.944,
+      "sy": -10.997,
       "bio_lens": [
         "biocentric",
         "human-health-bio",
@@ -27613,10 +27613,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.868,
       "founded_year": 2020,
-      "ux": -10.536,
-      "uy": -4.991,
-      "hx": -11.538,
-      "hy": -10.341,
+      "ux": -10.368,
+      "uy": -5.199,
+      "hx": -11.535,
+      "hy": -10.339,
       "investor_ids": [
         "GridX"
       ]
@@ -27637,8 +27637,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Biomaterials & Green Chemistry — Drug Delivery",
       "cluster_keywords": "drug delivery · antimicrobial · textile · materials",
       "cluster_confidence": 0.622,
-      "x": -3.642,
-      "y": -0.527,
+      "x": -3.641,
+      "y": -0.53,
       "is_outlier": false,
       "tech_codes": [
         "therapeutics"
@@ -27662,8 +27662,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -5.527,
-      "sy": -2.883,
+      "sx": -5.524,
+      "sy": -2.888,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -27684,10 +27684,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2014,
-      "ux": -10.596,
-      "uy": -4.935,
-      "hx": -3.642,
-      "hy": -0.527,
+      "ux": -10.429,
+      "uy": -5.145,
+      "hx": -3.641,
+      "hy": -0.53,
       "investor_ids": []
     },
     {
@@ -27706,8 +27706,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Biomaterials & Green Chemistry — Drug Delivery",
       "cluster_keywords": "drug delivery · antimicrobial · textile · materials",
       "cluster_confidence": 0.939,
-      "x": -3.635,
-      "y": -0.532,
+      "x": -3.634,
+      "y": -0.534,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -27729,8 +27729,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
-      "sx": -5.512,
-      "sy": -2.893,
+      "sx": -5.508,
+      "sy": -2.898,
       "bio_lens": [
         "biobased",
         "circular",
@@ -27753,10 +27753,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2016,
-      "ux": -10.607,
-      "uy": -4.889,
-      "hx": -3.635,
-      "hy": -0.532,
+      "ux": -10.442,
+      "uy": -5.099,
+      "hx": -3.634,
+      "hy": -0.534,
       "investor_ids": []
     },
     {
@@ -27775,8 +27775,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Biomaterials & Green Chemistry — Drug Delivery",
       "cluster_keywords": "drug delivery · antimicrobial · textile · materials",
       "cluster_confidence": 1.0,
-      "x": -3.645,
-      "y": -0.58,
+      "x": -3.644,
+      "y": -0.581,
       "is_outlier": false,
       "tech_codes": [
         "biomaterials"
@@ -27800,8 +27800,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 0,
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -5.534,
-      "sy": -2.999,
+      "sx": -5.53,
+      "sy": -3.003,
       "bio_lens": [
         "biobased",
         "bio-enabled-industrial-transition"
@@ -27822,10 +27822,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2016,
-      "ux": -10.887,
-      "uy": -4.863,
-      "hx": -3.645,
-      "hy": -0.58,
+      "ux": -10.72,
+      "uy": -5.081,
+      "hx": -3.644,
+      "hy": -0.581,
       "investor_ids": []
     },
     {
@@ -27844,8 +27844,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Biomaterials & Green Chemistry — Drug Delivery",
       "cluster_keywords": "drug delivery · antimicrobial · textile · materials",
       "cluster_confidence": 0.939,
-      "x": -3.651,
-      "y": -0.555,
+      "x": -3.649,
+      "y": -0.557,
       "is_outlier": false,
       "tech_codes": [
         "therapeutics"
@@ -27869,8 +27869,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -5.547,
-      "sy": -2.944,
+      "sx": -5.543,
+      "sy": -2.948,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -27893,10 +27893,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.696,
       "founded_year": 2008,
-      "ux": -10.761,
-      "uy": -4.937,
-      "hx": -3.651,
-      "hy": -0.555,
+      "ux": -10.593,
+      "uy": -5.151,
+      "hx": -3.649,
+      "hy": -0.557,
       "investor_ids": []
     },
     {
@@ -27915,8 +27915,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Biomaterials & Green Chemistry — Drug Delivery",
       "cluster_keywords": "drug delivery · antimicrobial · textile · materials",
       "cluster_confidence": 1.0,
-      "x": -3.66,
-      "y": -0.562,
+      "x": -3.658,
+      "y": -0.564,
       "is_outlier": false,
       "tech_codes": [
         "water_tech"
@@ -27940,8 +27940,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -5.566,
-      "sy": -2.961,
+      "sx": -5.562,
+      "sy": -2.965,
       "bio_lens": [
         "biocentric",
         "planetary-boundary"
@@ -27962,10 +27962,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2017,
-      "ux": -10.817,
-      "uy": -4.972,
-      "hx": -3.66,
-      "hy": -0.562,
+      "ux": -10.647,
+      "uy": -5.187,
+      "hx": -3.658,
+      "hy": -0.564,
       "investor_ids": []
     },
     {
@@ -27984,8 +27984,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Anid",
       "cluster_keywords": "anid · university · adapted · bioinputs",
       "cluster_confidence": 0.346,
-      "x": 2.434,
-      "y": 2.003,
+      "x": 2.415,
+      "y": 2.006,
       "is_outlier": true,
       "tech_codes": [],
       "industry_codes": [],
@@ -28004,8 +28004,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": 2.842,
-      "sy": 1.885,
+      "sx": 2.799,
+      "sy": 1.891,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -28015,10 +28015,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "unclassified",
       "tech_depth_confidence": 0.5,
       "founded_year": 2017,
-      "ux": -2.594,
-      "uy": 2.953,
-      "hx": 2.434,
-      "hy": 2.003,
+      "ux": -2.711,
+      "uy": 2.919,
+      "hx": 2.415,
+      "hy": 2.006,
       "investor_ids": [
         "The Ganesha Lab"
       ]
@@ -28039,8 +28039,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Anid",
       "cluster_keywords": "anid · university · adapted · bioinputs",
       "cluster_confidence": 1.0,
-      "x": -7.422,
-      "y": 6.88,
+      "x": -7.442,
+      "y": 6.898,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -28059,8 +28059,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": -7.937,
-      "sy": 7.59,
+      "sx": -7.982,
+      "sy": 7.63,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -28072,10 +28072,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "unclassified",
       "tech_depth_confidence": 0.5,
       "founded_year": null,
-      "ux": -2.56,
-      "uy": 2.92,
-      "hx": -7.422,
-      "hy": 6.88,
+      "ux": -2.676,
+      "uy": 2.887,
+      "hx": -7.442,
+      "hy": 6.898,
       "investor_ids": []
     },
     {
@@ -28094,8 +28094,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Anid",
       "cluster_keywords": "anid · university · adapted · bioinputs",
       "cluster_confidence": 0.355,
-      "x": -0.076,
-      "y": -0.462,
+      "x": 2.414,
+      "y": 2.008,
       "is_outlier": true,
       "tech_codes": [],
       "industry_codes": [],
@@ -28105,7 +28105,7 @@ window.STARTUP_THEMES_DATA = {
       "pagerank": 0.0,
       "valuation_tier": null,
       "n_investors_mapped": 0,
-      "bio_theme": "",
+      "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
       "sub_cluster_label": "",
@@ -28114,8 +28114,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": -0.168,
-      "sy": -1.026,
+      "sx": 2.799,
+      "sy": 1.895,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -28128,10 +28128,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "medium",
       "tech_depth_confidence": 0.5,
       "founded_year": 2018,
-      "ux": -2.585,
-      "uy": 2.948,
-      "hx": -0.076,
-      "hy": -0.462,
+      "ux": -2.702,
+      "uy": 2.915,
+      "hx": 2.414,
+      "hy": 2.008,
       "investor_ids": []
     },
     {
@@ -28150,8 +28150,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Anid",
       "cluster_keywords": "anid · university · adapted · bioinputs",
       "cluster_confidence": 0.354,
-      "x": 7.914,
-      "y": 6.945,
+      "x": 7.966,
+      "y": 6.899,
       "is_outlier": true,
       "tech_codes": [],
       "industry_codes": [],
@@ -28170,8 +28170,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": 5.608,
-      "sy": 5.168,
+      "sx": 5.725,
+      "sy": 5.063,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -28181,10 +28181,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "unclassified",
       "tech_depth_confidence": 0.5,
       "founded_year": null,
-      "ux": -2.54,
-      "uy": 1.778,
-      "hx": 7.914,
-      "hy": 6.945,
+      "ux": -2.623,
+      "uy": 1.753,
+      "hx": 7.966,
+      "hy": 6.899,
       "investor_ids": []
     },
     {
@@ -28203,8 +28203,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Anid",
       "cluster_keywords": "anid · university · adapted · bioinputs",
       "cluster_confidence": 1.0,
-      "x": -9.289,
-      "y": -9.159,
+      "x": -9.288,
+      "y": -9.157,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -28223,8 +28223,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": -6.953,
-      "sy": -8.375,
+      "sx": -6.952,
+      "sy": -8.372,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -28238,10 +28238,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "medium",
       "tech_depth_confidence": 0.5,
       "founded_year": 2021,
-      "ux": -2.587,
-      "uy": 2.969,
-      "hx": -9.289,
-      "hy": -9.159,
+      "ux": -2.705,
+      "uy": 2.935,
+      "hx": -9.288,
+      "hy": -9.157,
       "investor_ids": []
     },
     {
@@ -28260,8 +28260,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Anid",
       "cluster_keywords": "anid · university · adapted · bioinputs",
       "cluster_confidence": 0.344,
-      "x": -11.514,
-      "y": -10.312,
+      "x": -11.512,
+      "y": -10.309,
       "is_outlier": true,
       "tech_codes": [],
       "industry_codes": [],
@@ -28280,8 +28280,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": -11.899,
-      "sy": -10.937,
+      "sx": -11.892,
+      "sy": -10.931,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -28291,10 +28291,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "unclassified",
       "tech_depth_confidence": 0.5,
       "founded_year": null,
-      "ux": -10.38,
-      "uy": -4.932,
-      "hx": -11.514,
-      "hy": -10.312,
+      "ux": -10.215,
+      "uy": -5.135,
+      "hx": -11.512,
+      "hy": -10.309,
       "investor_ids": []
     },
     {
@@ -28313,8 +28313,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Anid",
       "cluster_keywords": "anid · university · adapted · bioinputs",
       "cluster_confidence": 0.347,
-      "x": -11.517,
-      "y": -10.312,
+      "x": -11.514,
+      "y": -10.309,
       "is_outlier": true,
       "tech_codes": [],
       "industry_codes": [],
@@ -28333,8 +28333,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": -11.904,
-      "sy": -10.937,
+      "sx": -11.898,
+      "sy": -10.931,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -28344,10 +28344,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "unclassified",
       "tech_depth_confidence": 0.5,
       "founded_year": null,
-      "ux": -10.382,
-      "uy": -4.942,
-      "hx": -11.517,
-      "hy": -10.312,
+      "ux": -10.217,
+      "uy": -5.146,
+      "hx": -11.514,
+      "hy": -10.309,
       "investor_ids": []
     },
     {
@@ -28366,8 +28366,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Anid",
       "cluster_keywords": "anid · university · adapted · bioinputs",
       "cluster_confidence": 0.35,
-      "x": 2.206,
-      "y": 2.046,
+      "x": 2.185,
+      "y": 2.048,
       "is_outlier": true,
       "tech_codes": [],
       "industry_codes": [],
@@ -28386,8 +28386,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": 2.336,
-      "sy": 1.979,
+      "sx": 2.29,
+      "sy": 1.985,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -28399,10 +28399,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "unclassified",
       "tech_depth_confidence": 0.5,
       "founded_year": 2018,
-      "ux": -2.729,
-      "uy": 1.805,
-      "hx": 2.206,
-      "hy": 2.046,
+      "ux": -2.812,
+      "uy": 1.775,
+      "hx": 2.185,
+      "hy": 2.048,
       "investor_ids": []
     },
     {
@@ -28421,8 +28421,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Anid",
       "cluster_keywords": "anid · university · adapted · bioinputs",
       "cluster_confidence": 0.344,
-      "x": 2.364,
-      "y": 1.811,
+      "x": 2.345,
+      "y": 1.812,
       "is_outlier": true,
       "tech_codes": [],
       "industry_codes": [],
@@ -28441,8 +28441,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": 2.687,
-      "sy": 1.457,
+      "sx": 2.644,
+      "sy": 1.46,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -28456,10 +28456,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "unclassified",
       "tech_depth_confidence": 0.5,
       "founded_year": null,
-      "ux": -3.614,
-      "uy": 2.906,
-      "hx": 2.364,
-      "hy": 1.811,
+      "ux": -3.723,
+      "uy": 2.842,
+      "hx": 2.345,
+      "hy": 1.812,
       "investor_ids": []
     },
     {
@@ -28478,8 +28478,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Anid",
       "cluster_keywords": "anid · university · adapted · bioinputs",
       "cluster_confidence": 1.0,
-      "x": 2.425,
-      "y": 2.013,
+      "x": 2.406,
+      "y": 2.016,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -28498,8 +28498,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": 2.822,
-      "sy": 1.908,
+      "sx": 2.779,
+      "sy": 1.913,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -28509,10 +28509,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "unclassified",
       "tech_depth_confidence": 0.5,
       "founded_year": null,
-      "ux": -2.559,
-      "uy": 2.895,
-      "hx": 2.425,
-      "hy": 2.013,
+      "ux": -2.675,
+      "uy": 2.862,
+      "hx": 2.406,
+      "hy": 2.016,
       "investor_ids": []
     },
     {
@@ -28564,8 +28564,8 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "unclassified",
       "tech_depth_confidence": 0.5,
       "founded_year": 2023,
-      "ux": -3.603,
-      "uy": 2.784,
+      "ux": -3.708,
+      "uy": 2.722,
       "hx": -8.669,
       "hy": -2.417,
       "investor_ids": []
@@ -28586,8 +28586,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Anid",
       "cluster_keywords": "anid · university · adapted · bioinputs",
       "cluster_confidence": 1.0,
-      "x": -7.384,
-      "y": 6.887,
+      "x": -7.404,
+      "y": 6.906,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -28606,8 +28606,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": -7.853,
-      "sy": 7.606,
+      "sx": -7.898,
+      "sy": 7.646,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -28617,10 +28617,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "unclassified",
       "tech_depth_confidence": 0.5,
       "founded_year": 2019,
-      "ux": -2.501,
-      "uy": 3.03,
-      "hx": -7.384,
-      "hy": 6.887,
+      "ux": -2.621,
+      "uy": 2.999,
+      "hx": -7.404,
+      "hy": 6.906,
       "investor_ids": []
     },
     {
@@ -28639,8 +28639,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Anid",
       "cluster_keywords": "anid · university · adapted · bioinputs",
       "cluster_confidence": 1.0,
-      "x": -0.053,
-      "y": -0.501,
+      "x": 2.437,
+      "y": 1.968,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -28650,7 +28650,7 @@ window.STARTUP_THEMES_DATA = {
       "pagerank": 0.0,
       "valuation_tier": null,
       "n_investors_mapped": 0,
-      "bio_theme": "",
+      "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
       "sub_cluster_label": "",
@@ -28659,8 +28659,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": -0.118,
-      "sy": -1.114,
+      "sx": 2.849,
+      "sy": 1.807,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -28673,10 +28673,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "medium",
       "tech_depth_confidence": 0.5,
       "founded_year": 2020,
-      "ux": -2.739,
-      "uy": 3.113,
-      "hx": -0.053,
-      "hy": -0.501,
+      "ux": -2.86,
+      "uy": 3.073,
+      "hx": 2.437,
+      "hy": 1.968,
       "investor_ids": []
     },
     {
@@ -28695,8 +28695,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Anid",
       "cluster_keywords": "anid · university · adapted · bioinputs",
       "cluster_confidence": 0.848,
-      "x": -0.094,
-      "y": -0.445,
+      "x": 2.396,
+      "y": 2.025,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -28706,7 +28706,7 @@ window.STARTUP_THEMES_DATA = {
       "pagerank": 0.0,
       "valuation_tier": null,
       "n_investors_mapped": 0,
-      "bio_theme": "",
+      "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
       "sub_cluster_label": "",
@@ -28715,8 +28715,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": -0.208,
-      "sy": -0.988,
+      "sx": 2.759,
+      "sy": 1.933,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -28729,10 +28729,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "medium",
       "tech_depth_confidence": 0.5,
       "founded_year": 2019,
-      "ux": -2.53,
-      "uy": 2.838,
-      "hx": -0.094,
-      "hy": -0.445,
+      "ux": -2.644,
+      "uy": 2.807,
+      "hx": 2.396,
+      "hy": 2.025,
       "investor_ids": []
     },
     {
@@ -28751,8 +28751,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Anid",
       "cluster_keywords": "anid · university · adapted · bioinputs",
       "cluster_confidence": 0.848,
-      "x": 8.115,
-      "y": 6.896,
+      "x": 8.16,
+      "y": 6.851,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -28771,8 +28771,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": 6.056,
-      "sy": 5.057,
+      "sx": 6.155,
+      "sy": 4.958,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -28782,10 +28782,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "medium",
       "tech_depth_confidence": 0.5,
       "founded_year": 2015,
-      "ux": -2.483,
-      "uy": 2.736,
-      "hx": 8.115,
-      "hy": 6.896,
+      "ux": -2.595,
+      "uy": 2.707,
+      "hx": 8.16,
+      "hy": 6.851,
       "investor_ids": []
     },
     {
@@ -28804,8 +28804,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Anid",
       "cluster_keywords": "anid · university · adapted · bioinputs",
       "cluster_confidence": 0.848,
-      "x": 8.112,
-      "y": 6.901,
+      "x": 8.156,
+      "y": 6.856,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -28824,8 +28824,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": 6.049,
-      "sy": 5.069,
+      "sx": 6.148,
+      "sy": 4.969,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -28838,10 +28838,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "medium",
       "tech_depth_confidence": 0.5,
       "founded_year": 2015,
-      "ux": -2.464,
-      "uy": 2.714,
-      "hx": 8.112,
-      "hy": 6.901,
+      "ux": -2.575,
+      "uy": 2.686,
+      "hx": 8.156,
+      "hy": 6.856,
       "investor_ids": []
     },
     {
@@ -28860,8 +28860,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Anid",
       "cluster_keywords": "anid · university · adapted · bioinputs",
       "cluster_confidence": 1.0,
-      "x": -0.057,
-      "y": -0.485,
+      "x": 2.433,
+      "y": 1.985,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -28871,7 +28871,7 @@ window.STARTUP_THEMES_DATA = {
       "pagerank": 0.0,
       "valuation_tier": null,
       "n_investors_mapped": 0,
-      "bio_theme": "",
+      "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
       "sub_cluster_label": "",
@@ -28880,8 +28880,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": -0.126,
-      "sy": -1.077,
+      "sx": 2.84,
+      "sy": 1.845,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -28893,10 +28893,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "medium",
       "tech_depth_confidence": 0.5,
       "founded_year": 2021,
-      "ux": -2.665,
-      "uy": 3.071,
-      "hx": -0.057,
-      "hy": -0.485,
+      "ux": -2.785,
+      "uy": 3.034,
+      "hx": 2.433,
+      "hy": 1.985,
       "investor_ids": []
     },
     {
@@ -28915,8 +28915,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Anid",
       "cluster_keywords": "anid · university · adapted · bioinputs",
       "cluster_confidence": 0.352,
-      "x": 2.37,
-      "y": 2.05,
+      "x": 2.351,
+      "y": 2.052,
       "is_outlier": true,
       "tech_codes": [],
       "industry_codes": [],
@@ -28935,8 +28935,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": 2.701,
-      "sy": 1.988,
+      "sx": 2.657,
+      "sy": 1.994,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -28946,10 +28946,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "unclassified",
       "tech_depth_confidence": 0.5,
       "founded_year": null,
-      "ux": -2.467,
-      "uy": 2.581,
-      "hx": 2.37,
-      "hy": 2.05,
+      "ux": -2.574,
+      "uy": 2.553,
+      "hx": 2.351,
+      "hy": 2.052,
       "investor_ids": []
     },
     {
@@ -28968,8 +28968,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Regenerative Medicine",
       "cluster_keywords": "wound · therapeutics · regenerative medicine · cancer",
       "cluster_confidence": 1.0,
-      "x": -11.413,
-      "y": -9.959,
+      "x": -11.41,
+      "y": -9.957,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -28991,8 +28991,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -11.673,
-      "sy": -10.154,
+      "sx": -11.667,
+      "sy": -10.149,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -29013,10 +29013,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2020,
-      "ux": -8.756,
-      "uy": -4.964,
-      "hx": -11.413,
-      "hy": -9.959,
+      "ux": -8.602,
+      "uy": -5.12,
+      "hx": -11.41,
+      "hy": -9.957,
       "investor_ids": [
         "CITES"
       ]
@@ -29037,8 +29037,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Regenerative Medicine",
       "cluster_keywords": "wound · therapeutics · regenerative medicine · cancer",
       "cluster_confidence": 0.846,
-      "x": -11.522,
-      "y": -10.239,
+      "x": -11.519,
+      "y": -10.236,
       "is_outlier": false,
       "tech_codes": [
         "nanotech",
@@ -29066,8 +29066,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -11.915,
-      "sy": -10.775,
+      "sx": -11.909,
+      "sy": -10.769,
       "bio_lens": [
         "biobased",
         "biocentric",
@@ -29096,10 +29096,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.844,
       "founded_year": 2021,
-      "ux": -10.081,
-      "uy": -5.059,
-      "hx": -11.522,
-      "hy": -10.239,
+      "ux": -9.914,
+      "uy": -5.252,
+      "hx": -11.519,
+      "hy": -10.236,
       "investor_ids": [
         "GridX"
       ]
@@ -29120,8 +29120,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Regenerative Medicine",
       "cluster_keywords": "wound · therapeutics · regenerative medicine · cancer",
       "cluster_confidence": 0.846,
-      "x": -11.525,
-      "y": -10.25,
+      "x": -11.522,
+      "y": -10.248,
       "is_outlier": false,
       "tech_codes": [
         "therapeutics",
@@ -29150,8 +29150,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -11.922,
-      "sy": -10.801,
+      "sx": -11.916,
+      "sy": -10.795,
       "bio_lens": [
         "biobased",
         "biocentric",
@@ -29183,10 +29183,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.82,
       "founded_year": 2022,
-      "ux": -10.135,
-      "uy": -5.057,
-      "hx": -11.525,
-      "hy": -10.25,
+      "ux": -9.968,
+      "uy": -5.252,
+      "hx": -11.522,
+      "hy": -10.248,
       "investor_ids": [
         "zentynel"
       ]
@@ -29207,8 +29207,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Regenerative Medicine",
       "cluster_keywords": "wound · therapeutics · regenerative medicine · cancer",
       "cluster_confidence": 0.35,
-      "x": -11.653,
-      "y": -10.015,
+      "x": -11.65,
+      "y": -10.012,
       "is_outlier": true,
       "tech_codes": [
         "ai_ml",
@@ -29235,8 +29235,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 50,
       "valuation_estimate_usd": 50.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -12.207,
-      "sy": -10.277,
+      "sx": -12.2,
+      "sy": -10.272,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -29264,10 +29264,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.804,
       "founded_year": 2019,
-      "ux": -9.305,
-      "uy": -5.907,
-      "hx": -11.653,
-      "hy": -10.015,
+      "ux": -9.12,
+      "uy": -6.072,
+      "hx": -11.65,
+      "hy": -10.012,
       "investor_ids": [
         "zentynel"
       ]
@@ -29288,8 +29288,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Regenerative Medicine",
       "cluster_keywords": "wound · therapeutics · regenerative medicine · cancer",
       "cluster_confidence": 0.346,
-      "x": -11.653,
-      "y": -10.001,
+      "x": -11.65,
+      "y": -9.999,
       "is_outlier": true,
       "tech_codes": [],
       "industry_codes": [
@@ -29311,8 +29311,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
-      "sx": -12.207,
-      "sy": -10.247,
+      "sx": -12.201,
+      "sy": -10.242,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -29332,10 +29332,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2019,
-      "ux": -9.25,
-      "uy": -5.926,
-      "hx": -11.653,
-      "hy": -10.001,
+      "ux": -9.064,
+      "uy": -6.09,
+      "hx": -11.65,
+      "hy": -9.999,
       "investor_ids": []
     },
     {
@@ -29354,8 +29354,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Regenerative Medicine",
       "cluster_keywords": "wound · therapeutics · regenerative medicine · cancer",
       "cluster_confidence": 1.0,
-      "x": -11.519,
-      "y": -10.108,
+      "x": -11.516,
+      "y": -10.106,
       "is_outlier": false,
       "tech_codes": [
         "nanotech",
@@ -29381,8 +29381,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -11.908,
-      "sy": -10.486,
+      "sx": -11.902,
+      "sy": -10.48,
       "bio_lens": [
         "biocentric",
         "human-health-bio",
@@ -29407,10 +29407,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.796,
       "founded_year": 2021,
-      "ux": -9.526,
-      "uy": -5.216,
-      "hx": -11.519,
-      "hy": -10.108,
+      "ux": -9.359,
+      "uy": -5.393,
+      "hx": -11.516,
+      "hy": -10.106,
       "investor_ids": [
         "AIR Capital",
         "DraperCygnus"
@@ -29432,8 +29432,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Regenerative Medicine",
       "cluster_keywords": "wound · therapeutics · regenerative medicine · cancer",
       "cluster_confidence": 1.0,
-      "x": -11.615,
-      "y": -10.125,
+      "x": -11.612,
+      "y": -10.122,
       "is_outlier": false,
       "tech_codes": [
         "therapeutics"
@@ -29457,8 +29457,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -12.123,
-      "sy": -10.522,
+      "sx": -12.116,
+      "sy": -10.517,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -29481,10 +29481,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.736,
       "founded_year": 2016,
-      "ux": -9.722,
-      "uy": -5.602,
-      "hx": -11.615,
-      "hy": -10.125,
+      "ux": -9.542,
+      "uy": -5.782,
+      "hx": -11.612,
+      "hy": -10.122,
       "investor_ids": []
     },
     {
@@ -29503,8 +29503,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Regenerative Medicine",
       "cluster_keywords": "wound · therapeutics · regenerative medicine · cancer",
       "cluster_confidence": 0.364,
-      "x": -11.364,
-      "y": -9.863,
+      "x": -11.361,
+      "y": -9.861,
       "is_outlier": true,
       "tech_codes": [
         "therapeutics",
@@ -29529,8 +29529,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 0,
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -11.564,
-      "sy": -9.941,
+      "sx": -11.558,
+      "sy": -9.936,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -29555,10 +29555,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.76,
       "founded_year": 2014,
-      "ux": -8.286,
-      "uy": -4.883,
-      "hx": -11.364,
-      "hy": -9.863,
+      "ux": -8.137,
+      "uy": -5.026,
+      "hx": -11.361,
+      "hy": -9.861,
       "investor_ids": []
     },
     {
@@ -29577,8 +29577,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Regenerative Medicine",
       "cluster_keywords": "wound · therapeutics · regenerative medicine · cancer",
       "cluster_confidence": 1.0,
-      "x": -11.41,
-      "y": -9.934,
+      "x": -11.407,
+      "y": -9.932,
       "is_outlier": false,
       "tech_codes": [
         "therapeutics",
@@ -29603,8 +29603,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 0,
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -11.667,
-      "sy": -10.097,
+      "sx": -11.661,
+      "sy": -10.092,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -29628,10 +29628,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.772,
       "founded_year": 2017,
-      "ux": -8.646,
-      "uy": -4.987,
-      "hx": -11.41,
-      "hy": -9.934,
+      "ux": -8.491,
+      "uy": -5.139,
+      "hx": -11.407,
+      "hy": -9.932,
       "investor_ids": []
     },
     {
@@ -29718,8 +29718,8 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.924,
       "founded_year": 2017,
-      "ux": -4.639,
-      "uy": -1.86,
+      "ux": -4.603,
+      "uy": -1.919,
       "hx": -9.529,
       "hy": -2.348,
       "investor_ids": []
@@ -29740,8 +29740,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Regenerative Medicine",
       "cluster_keywords": "wound · therapeutics · regenerative medicine · cancer",
       "cluster_confidence": 1.0,
-      "x": -11.51,
-      "y": -10.075,
+      "x": -11.507,
+      "y": -10.073,
       "is_outlier": false,
       "tech_codes": [
         "therapeutics",
@@ -29766,8 +29766,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -11.89,
-      "sy": -10.412,
+      "sx": -11.883,
+      "sy": -10.406,
       "bio_lens": [
         "biocentric",
         "human-health-bio",
@@ -29793,10 +29793,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.712,
       "founded_year": 2021,
-      "ux": -9.375,
-      "uy": -5.225,
-      "hx": -11.51,
-      "hy": -10.075,
+      "ux": -9.208,
+      "uy": -5.397,
+      "hx": -11.507,
+      "hy": -10.073,
       "investor_ids": [
         "GridX"
       ]
@@ -29817,8 +29817,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Regenerative Medicine",
       "cluster_keywords": "wound · therapeutics · regenerative medicine · cancer",
       "cluster_confidence": 1.0,
-      "x": -11.408,
-      "y": -9.937,
+      "x": -11.405,
+      "y": -9.935,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -29840,8 +29840,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 25,
       "valuation_estimate_usd": 25.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -11.663,
-      "sy": -10.105,
+      "sx": -11.656,
+      "sy": -10.1,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -29862,10 +29862,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2010,
-      "ux": -8.658,
-      "uy": -4.973,
-      "hx": -11.408,
-      "hy": -9.937,
+      "ux": -8.504,
+      "uy": -5.127,
+      "hx": -11.405,
+      "hy": -9.935,
       "investor_ids": [
         "SOSV_IndieBio"
       ]
@@ -29886,8 +29886,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Regenerative Medicine",
       "cluster_keywords": "wound · therapeutics · regenerative medicine · cancer",
       "cluster_confidence": 1.0,
-      "x": -11.57,
-      "y": -10.13,
+      "x": -11.567,
+      "y": -10.127,
       "is_outlier": false,
       "tech_codes": [
         "therapeutics"
@@ -29911,8 +29911,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -12.021,
-      "sy": -10.532,
+      "sx": -12.015,
+      "sy": -10.527,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -29936,10 +29936,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.7,
       "founded_year": 2016,
-      "ux": -9.682,
-      "uy": -5.404,
-      "hx": -11.57,
-      "hy": -10.13,
+      "ux": -9.508,
+      "uy": -5.584,
+      "hx": -11.567,
+      "hy": -10.127,
       "investor_ids": []
     },
     {
@@ -29958,8 +29958,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Regenerative Medicine",
       "cluster_keywords": "wound · therapeutics · regenerative medicine · cancer",
       "cluster_confidence": 1.0,
-      "x": -11.498,
-      "y": -10.074,
+      "x": -11.495,
+      "y": -10.072,
       "is_outlier": false,
       "tech_codes": [
         "therapeutics",
@@ -29987,8 +29987,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -11.862,
-      "sy": -10.409,
+      "sx": -11.855,
+      "sy": -10.404,
       "bio_lens": [
         "biocentric",
         "human-health-bio",
@@ -30019,10 +30019,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.804,
       "founded_year": 2022,
-      "ux": -9.354,
-      "uy": -5.173,
-      "hx": -11.498,
-      "hy": -10.074,
+      "ux": -9.189,
+      "uy": -5.345,
+      "hx": -11.495,
+      "hy": -10.072,
       "investor_ids": [
         "SF500"
       ]
@@ -30043,8 +30043,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Regenerative Medicine",
       "cluster_keywords": "wound · therapeutics · regenerative medicine · cancer",
       "cluster_confidence": 1.0,
-      "x": -11.454,
-      "y": -9.973,
+      "x": -11.452,
+      "y": -9.971,
       "is_outlier": false,
       "tech_codes": [
         "therapeutics"
@@ -30068,8 +30068,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -11.765,
-      "sy": -10.185,
+      "sx": -11.759,
+      "sy": -10.18,
       "bio_lens": [
         "biocentric",
         "human-health-bio",
@@ -30093,10 +30093,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.712,
       "founded_year": 2021,
-      "ux": -8.87,
-      "uy": -5.122,
-      "hx": -11.454,
-      "hy": -9.973,
+      "ux": -8.71,
+      "uy": -5.28,
+      "hx": -11.452,
+      "hy": -9.971,
       "investor_ids": [
         "SF500"
       ]
@@ -30117,8 +30117,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Regenerative Medicine",
       "cluster_keywords": "wound · therapeutics · regenerative medicine · cancer",
       "cluster_confidence": 1.0,
-      "x": -11.622,
-      "y": -10.123,
+      "x": -11.619,
+      "y": -10.12,
       "is_outlier": false,
       "tech_codes": [
         "therapeutics"
@@ -30142,8 +30142,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -12.137,
-      "sy": -10.518,
+      "sx": -12.131,
+      "sy": -10.512,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -30166,10 +30166,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.712,
       "founded_year": 2000,
-      "ux": -9.722,
-      "uy": -5.633,
-      "hx": -11.622,
-      "hy": -10.123,
+      "ux": -9.542,
+      "uy": -5.813,
+      "hx": -11.619,
+      "hy": -10.12,
       "investor_ids": []
     },
     {
@@ -30188,8 +30188,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Regenerative Medicine",
       "cluster_keywords": "wound · therapeutics · regenerative medicine · cancer",
       "cluster_confidence": 1.0,
-      "x": -11.621,
-      "y": -10.124,
+      "x": -11.618,
+      "y": -10.122,
       "is_outlier": false,
       "tech_codes": [
         "therapeutics"
@@ -30213,8 +30213,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -12.136,
-      "sy": -10.521,
+      "sx": -12.129,
+      "sy": -10.515,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -30235,10 +30235,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.704,
       "founded_year": 2022,
-      "ux": -9.727,
-      "uy": -5.629,
-      "hx": -11.621,
-      "hy": -10.124,
+      "ux": -9.547,
+      "uy": -5.808,
+      "hx": -11.618,
+      "hy": -10.122,
       "investor_ids": []
     },
     {
@@ -30257,8 +30257,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Regenerative Medicine",
       "cluster_keywords": "wound · therapeutics · regenerative medicine · cancer",
       "cluster_confidence": 1.0,
-      "x": -11.475,
-      "y": -10.055,
+      "x": -11.472,
+      "y": -10.053,
       "is_outlier": false,
       "tech_codes": [
         "therapeutics",
@@ -30283,8 +30283,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -11.812,
-      "sy": -10.367,
+      "sx": -11.805,
+      "sy": -10.362,
       "bio_lens": [
         "biocentric",
         "human-health-bio",
@@ -30310,10 +30310,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.724,
       "founded_year": 2022,
-      "ux": -9.244,
-      "uy": -5.102,
-      "hx": -11.475,
-      "hy": -10.055,
+      "ux": -9.082,
+      "uy": -5.271,
+      "hx": -11.472,
+      "hy": -10.053,
       "investor_ids": [
         "zentynel"
       ]
@@ -30334,8 +30334,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Regenerative Medicine",
       "cluster_keywords": "wound · therapeutics · regenerative medicine · cancer",
       "cluster_confidence": 0.99,
-      "x": -10.82,
-      "y": -9.467,
+      "x": -10.818,
+      "y": -9.465,
       "is_outlier": true,
       "tech_codes": [
         "ai_ml",
@@ -30361,8 +30361,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -10.356,
-      "sy": -9.06,
+      "sx": -10.351,
+      "sy": -9.056,
       "bio_lens": [
         "biocentric",
         "human-health-bio",
@@ -30390,10 +30390,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.724,
       "founded_year": 2021,
-      "ux": -5.899,
-      "uy": -3.104,
-      "hx": -10.82,
-      "hy": -9.467,
+      "ux": -5.818,
+      "uy": -3.19,
+      "hx": -10.818,
+      "hy": -9.465,
       "investor_ids": [
         "AIR Capital"
       ]
@@ -30414,8 +30414,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Regenerative Medicine",
       "cluster_keywords": "wound · therapeutics · regenerative medicine · cancer",
       "cluster_confidence": 0.846,
-      "x": -11.53,
-      "y": -10.206,
+      "x": -11.527,
+      "y": -10.203,
       "is_outlier": false,
       "tech_codes": [
         "therapeutics"
@@ -30439,8 +30439,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -11.932,
-      "sy": -10.701,
+      "sx": -11.926,
+      "sy": -10.696,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -30463,10 +30463,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.7,
       "founded_year": 2015,
-      "ux": -9.951,
-      "uy": -5.135,
-      "hx": -11.53,
-      "hy": -10.206,
+      "ux": -9.783,
+      "uy": -5.324,
+      "hx": -11.527,
+      "hy": -10.203,
       "investor_ids": []
     },
     {
@@ -30485,8 +30485,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Regenerative Medicine",
       "cluster_keywords": "wound · therapeutics · regenerative medicine · cancer",
       "cluster_confidence": 1.0,
-      "x": -11.53,
-      "y": -10.107,
+      "x": -11.527,
+      "y": -10.104,
       "is_outlier": false,
       "tech_codes": [
         "therapeutics",
@@ -30513,8 +30513,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -11.933,
-      "sy": -10.482,
+      "sx": -11.927,
+      "sy": -10.476,
       "bio_lens": [
         "biocentric",
         "human-health-bio",
@@ -30542,10 +30542,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.712,
       "founded_year": 2021,
-      "ux": -9.534,
-      "uy": -5.267,
-      "hx": -11.53,
-      "hy": -10.107,
+      "ux": -9.365,
+      "uy": -5.443,
+      "hx": -11.527,
+      "hy": -10.104,
       "investor_ids": [
         "SF500"
       ]
@@ -30566,8 +30566,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Regenerative Medicine",
       "cluster_keywords": "wound · therapeutics · regenerative medicine · cancer",
       "cluster_confidence": 0.996,
-      "x": -11.43,
-      "y": -9.985,
+      "x": -11.427,
+      "y": -9.982,
       "is_outlier": false,
       "tech_codes": [
         "therapeutics"
@@ -30591,8 +30591,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 25,
       "valuation_estimate_usd": 25.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -11.712,
-      "sy": -10.21,
+      "sx": -11.705,
+      "sy": -10.205,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -30613,10 +30613,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.7,
       "founded_year": 2013,
-      "ux": -8.886,
-      "uy": -5.005,
-      "hx": -11.43,
-      "hy": -9.985,
+      "ux": -8.729,
+      "uy": -5.164,
+      "hx": -11.427,
+      "hy": -9.982,
       "investor_ids": []
     },
     {
@@ -30635,8 +30635,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Regenerative Medicine",
       "cluster_keywords": "wound · therapeutics · regenerative medicine · cancer",
       "cluster_confidence": 1.0,
-      "x": -11.549,
-      "y": -10.123,
+      "x": -11.546,
+      "y": -10.121,
       "is_outlier": false,
       "tech_codes": [
         "therapeutics",
@@ -30661,8 +30661,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -11.976,
-      "sy": -10.519,
+      "sx": -11.969,
+      "sy": -10.513,
       "bio_lens": [
         "biocentric",
         "human-health-bio",
@@ -30688,10 +30688,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.724,
       "founded_year": 2020,
-      "ux": -9.629,
-      "uy": -5.325,
-      "hx": -11.549,
-      "hy": -10.123,
+      "ux": -9.458,
+      "uy": -5.503,
+      "hx": -11.546,
+      "hy": -10.121,
       "investor_ids": [
         "GridX"
       ]
@@ -30712,8 +30712,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Regenerative Medicine",
       "cluster_keywords": "wound · therapeutics · regenerative medicine · cancer",
       "cluster_confidence": 0.846,
-      "x": -11.524,
-      "y": -10.287,
+      "x": -11.521,
+      "y": -10.285,
       "is_outlier": false,
       "tech_codes": [
         "nanotech",
@@ -30743,8 +30743,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -11.919,
-      "sy": -10.883,
+      "sx": -11.913,
+      "sy": -10.877,
       "bio_lens": [
         "human-health-bio",
         "planetary-boundary"
@@ -30773,10 +30773,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.852,
       "founded_year": 2019,
-      "ux": -10.289,
-      "uy": -5.003,
-      "hx": -11.524,
-      "hy": -10.287,
+      "ux": -10.123,
+      "uy": -5.203,
+      "hx": -11.521,
+      "hy": -10.285,
       "investor_ids": [
         "GridX"
       ]
@@ -30797,8 +30797,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Regenerative Medicine",
       "cluster_keywords": "wound · therapeutics · regenerative medicine · cancer",
       "cluster_confidence": 0.846,
-      "x": -11.523,
-      "y": -10.275,
+      "x": -11.52,
+      "y": -10.273,
       "is_outlier": false,
       "tech_codes": [
         "nanotech",
@@ -30824,8 +30824,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -11.918,
-      "sy": -10.857,
+      "sx": -11.911,
+      "sy": -10.851,
       "bio_lens": [
         "biocentric",
         "human-health-bio",
@@ -30850,10 +30850,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.752,
       "founded_year": 2021,
-      "ux": -10.238,
-      "uy": -5.016,
-      "hx": -11.523,
-      "hy": -10.275,
+      "ux": -10.072,
+      "uy": -5.214,
+      "hx": -11.52,
+      "hy": -10.273,
       "investor_ids": [
         "GridX",
         "The Ganesha Lab"
@@ -30875,8 +30875,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Regenerative Medicine",
       "cluster_keywords": "wound · therapeutics · regenerative medicine · cancer",
       "cluster_confidence": 0.355,
-      "x": -3.65,
-      "y": -0.51,
+      "x": -3.648,
+      "y": -0.513,
       "is_outlier": true,
       "tech_codes": [],
       "industry_codes": [
@@ -30898,8 +30898,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
-      "sx": -5.543,
-      "sy": -2.845,
+      "sx": -5.539,
+      "sy": -2.85,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -30919,10 +30919,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.909,
       "founded_year": 2015,
-      "ux": -10.513,
-      "uy": -5.004,
-      "hx": -3.65,
-      "hy": -0.51,
+      "ux": -10.345,
+      "uy": -5.211,
+      "hx": -3.648,
+      "hy": -0.513,
       "investor_ids": []
     },
     {
@@ -31002,8 +31002,8 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.844,
       "founded_year": 2020,
-      "ux": -4.583,
-      "uy": -1.839,
+      "ux": -4.548,
+      "uy": -1.896,
       "hx": -9.522,
       "hy": -2.339,
       "investor_ids": [
@@ -31026,8 +31026,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Regenerative Medicine",
       "cluster_keywords": "wound · therapeutics · regenerative medicine · cancer",
       "cluster_confidence": 1.0,
-      "x": -11.419,
-      "y": -9.947,
+      "x": -11.416,
+      "y": -9.945,
       "is_outlier": false,
       "tech_codes": [
         "biomanufacturing",
@@ -31056,8 +31056,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -11.687,
-      "sy": -10.127,
+      "sx": -11.681,
+      "sy": -10.122,
       "bio_lens": [
         "biobased",
         "biocentric",
@@ -31088,10 +31088,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.832,
       "founded_year": 2020,
-      "ux": -8.713,
-      "uy": -5.008,
-      "hx": -11.419,
-      "hy": -9.947,
+      "ux": -8.557,
+      "uy": -5.162,
+      "hx": -11.416,
+      "hy": -9.945,
       "investor_ids": [
         "GridX"
       ]
@@ -31112,8 +31112,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Regenerative Medicine",
       "cluster_keywords": "wound · therapeutics · regenerative medicine · cancer",
       "cluster_confidence": 1.0,
-      "x": -11.595,
-      "y": -10.104,
+      "x": -11.592,
+      "y": -10.102,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -31132,8 +31132,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": -12.078,
-      "sy": -10.476,
+      "sx": -12.072,
+      "sy": -10.47,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -31145,10 +31145,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "unclassified",
       "tech_depth_confidence": 0.5,
       "founded_year": null,
-      "ux": -9.608,
-      "uy": -5.546,
-      "hx": -11.595,
-      "hy": -10.104,
+      "ux": -9.43,
+      "uy": -5.722,
+      "hx": -11.592,
+      "hy": -10.102,
       "investor_ids": []
     },
     {
@@ -31167,8 +31167,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Regenerative Medicine",
       "cluster_keywords": "wound · therapeutics · regenerative medicine · cancer",
       "cluster_confidence": 0.359,
-      "x": -10.756,
-      "y": -9.449,
+      "x": -10.754,
+      "y": -9.447,
       "is_outlier": true,
       "tech_codes": [
         "therapeutics"
@@ -31192,8 +31192,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -10.213,
-      "sy": -9.019,
+      "sx": -10.208,
+      "sy": -9.015,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -31218,10 +31218,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.724,
       "founded_year": 2017,
-      "ux": -5.736,
-      "uy": -2.855,
-      "hx": -10.756,
-      "hy": -9.449,
+      "ux": -5.663,
+      "uy": -2.939,
+      "hx": -10.754,
+      "hy": -9.447,
       "investor_ids": []
     },
     {
@@ -31240,8 +31240,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Regenerative Medicine",
       "cluster_keywords": "wound · therapeutics · regenerative medicine · cancer",
       "cluster_confidence": 0.362,
-      "x": -11.569,
-      "y": -9.885,
+      "x": -11.566,
+      "y": -9.883,
       "is_outlier": true,
       "tech_codes": [
         "therapeutics"
@@ -31265,8 +31265,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -12.019,
-      "sy": -9.988,
+      "sx": -12.013,
+      "sy": -9.983,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -31287,10 +31287,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.736,
       "founded_year": 2020,
-      "ux": -8.646,
-      "uy": -5.721,
-      "hx": -11.569,
-      "hy": -9.885,
+      "ux": -8.47,
+      "uy": -5.869,
+      "hx": -11.566,
+      "hy": -9.883,
       "investor_ids": [
         "The Ganesha Lab"
       ]
@@ -31311,8 +31311,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Regenerative Medicine",
       "cluster_keywords": "wound · therapeutics · regenerative medicine · cancer",
       "cluster_confidence": 0.99,
-      "x": -10.797,
-      "y": -9.692,
+      "x": -10.795,
+      "y": -9.69,
       "is_outlier": false,
       "tech_codes": [
         "ai_ml",
@@ -31343,8 +31343,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 100,
       "valuation_estimate_usd": 100.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -10.305,
-      "sy": -9.559,
+      "sx": -10.301,
+      "sy": -9.555,
       "bio_lens": [
         "biobased",
         "biocentric",
@@ -31376,10 +31376,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.784,
       "founded_year": 2010,
-      "ux": -6.818,
-      "uy": -2.713,
-      "hx": -10.797,
-      "hy": -9.692,
+      "ux": -6.742,
+      "uy": -2.829,
+      "hx": -10.795,
+      "hy": -9.69,
       "investor_ids": [
         "collaborative_fund",
         "nazca",
@@ -31466,8 +31466,8 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.892,
       "founded_year": 2018,
-      "ux": -10.69,
-      "uy": -4.947,
+      "ux": -10.522,
+      "uy": -5.159,
       "hx": -10.389,
       "hy": -3.23,
       "investor_ids": [
@@ -31490,8 +31490,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Regenerative Medicine",
       "cluster_keywords": "wound · therapeutics · regenerative medicine · cancer",
       "cluster_confidence": 0.866,
-      "x": -11.386,
-      "y": -9.897,
+      "x": -11.383,
+      "y": -9.895,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -31513,8 +31513,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
-      "sx": -11.612,
-      "sy": -10.015,
+      "sx": -11.606,
+      "sy": -10.01,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -31532,10 +31532,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2021,
-      "ux": -8.457,
-      "uy": -4.931,
-      "hx": -11.386,
-      "hy": -9.897,
+      "ux": -8.306,
+      "uy": -5.078,
+      "hx": -11.383,
+      "hy": -9.895,
       "investor_ids": []
     },
     {
@@ -31554,8 +31554,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Regenerative Medicine",
       "cluster_keywords": "wound · therapeutics · regenerative medicine · cancer",
       "cluster_confidence": 1.0,
-      "x": -4.253,
-      "y": -10.356,
+      "x": -4.254,
+      "y": -10.353,
       "is_outlier": false,
       "tech_codes": [
         "therapeutics",
@@ -31583,8 +31583,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -4.317,
-      "sy": -11.89,
+      "sx": -4.321,
+      "sy": -11.884,
       "bio_lens": [
         "biocentric",
         "human-health-bio",
@@ -31616,10 +31616,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.812,
       "founded_year": 2018,
-      "ux": -9.473,
-      "uy": -5.271,
-      "hx": -4.253,
-      "hy": -10.356,
+      "ux": -9.305,
+      "uy": -5.446,
+      "hx": -4.254,
+      "hy": -10.353,
       "investor_ids": [
         "CITES"
       ]
@@ -31640,8 +31640,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Regenerative Medicine",
       "cluster_keywords": "wound · therapeutics · regenerative medicine · cancer",
       "cluster_confidence": 0.358,
-      "x": -10.77,
-      "y": -9.445,
+      "x": -10.768,
+      "y": -9.443,
       "is_outlier": true,
       "tech_codes": [
         "therapeutics"
@@ -31665,8 +31665,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 15,
       "valuation_estimate_usd": 15.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -10.245,
-      "sy": -9.01,
+      "sx": -10.24,
+      "sy": -9.006,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -31690,10 +31690,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.736,
       "founded_year": 2006,
-      "ux": -5.738,
-      "uy": -2.921,
-      "hx": -10.77,
-      "hy": -9.445,
+      "ux": -5.663,
+      "uy": -3.005,
+      "hx": -10.768,
+      "hy": -9.443,
       "investor_ids": [
         "bndes"
       ]
@@ -31714,8 +31714,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Regenerative Medicine",
       "cluster_keywords": "wound · therapeutics · regenerative medicine · cancer",
       "cluster_confidence": 0.99,
-      "x": -9.548,
-      "y": -9.045,
+      "x": -9.547,
+      "y": -9.044,
       "is_outlier": false,
       "tech_codes": [
         "iot",
@@ -31744,8 +31744,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -7.528,
-      "sy": -8.122,
+      "sx": -7.526,
+      "sy": -8.119,
       "bio_lens": [
         "biobased",
         "biocentric",
@@ -31774,10 +31774,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2014,
-      "ux": -2.445,
-      "uy": 1.725,
-      "hx": -9.548,
-      "hy": -9.045,
+      "ux": -2.528,
+      "uy": 1.704,
+      "hx": -9.547,
+      "hy": -9.044,
       "investor_ids": [
         "The Ganesha Lab",
         "eatable_adventures"
@@ -31799,8 +31799,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Regenerative Medicine",
       "cluster_keywords": "wound · therapeutics · regenerative medicine · cancer",
       "cluster_confidence": 0.363,
-      "x": -11.655,
-      "y": -10.025,
+      "x": -11.652,
+      "y": -10.023,
       "is_outlier": true,
       "tech_codes": [
         "nanotech",
@@ -31828,8 +31828,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -12.21,
-      "sy": -10.3,
+      "sx": -12.203,
+      "sy": -10.295,
       "bio_lens": [
         "biobased",
         "biocentric",
@@ -31859,10 +31859,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.904,
       "founded_year": null,
-      "ux": -9.351,
-      "uy": -5.9,
-      "hx": -11.655,
-      "hy": -10.025,
+      "ux": -9.166,
+      "uy": -6.067,
+      "hx": -11.652,
+      "hy": -10.023,
       "investor_ids": [
         "GridX"
       ]
@@ -31883,8 +31883,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Regenerative Medicine",
       "cluster_keywords": "wound · therapeutics · regenerative medicine · cancer",
       "cluster_confidence": 1.0,
-      "x": -11.42,
-      "y": -9.945,
+      "x": -11.417,
+      "y": -9.942,
       "is_outlier": false,
       "tech_codes": [
         "biomanufacturing",
@@ -31914,8 +31914,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -11.689,
-      "sy": -10.121,
+      "sx": -11.683,
+      "sy": -10.116,
       "bio_lens": [
         "biobased",
         "biocentric",
@@ -31950,10 +31950,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.832,
       "founded_year": null,
-      "ux": -8.704,
-      "uy": -5.014,
-      "hx": -11.42,
-      "hy": -9.945,
+      "ux": -8.548,
+      "uy": -5.169,
+      "hx": -11.417,
+      "hy": -9.942,
       "investor_ids": [
         "GridX"
       ]
@@ -31974,8 +31974,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Regenerative Medicine",
       "cluster_keywords": "wound · therapeutics · regenerative medicine · cancer",
       "cluster_confidence": 1.0,
-      "x": -11.629,
-      "y": -10.132,
+      "x": -11.626,
+      "y": -10.13,
       "is_outlier": false,
       "tech_codes": [
         "therapeutics"
@@ -31999,8 +31999,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -12.153,
-      "sy": -10.539,
+      "sx": -12.146,
+      "sy": -10.533,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -32023,10 +32023,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.712,
       "founded_year": 2021,
-      "ux": -9.772,
-      "uy": -5.65,
-      "hx": -11.629,
-      "hy": -10.132,
+      "ux": -9.59,
+      "uy": -5.83,
+      "hx": -11.626,
+      "hy": -10.13,
       "investor_ids": []
     },
     {
@@ -32045,8 +32045,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Regenerative Medicine",
       "cluster_keywords": "wound · therapeutics · regenerative medicine · cancer",
       "cluster_confidence": 0.346,
-      "x": -2.035,
-      "y": -1.487,
+      "x": -11.484,
+      "y": -10.302,
       "is_outlier": true,
       "tech_codes": [],
       "industry_codes": [],
@@ -32056,7 +32056,7 @@ window.STARTUP_THEMES_DATA = {
       "pagerank": 0.0,
       "valuation_tier": null,
       "n_investors_mapped": 0,
-      "bio_theme": "",
+      "bio_theme": "Therapeutics",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
       "sub_cluster_label": "",
@@ -32065,8 +32065,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": -4.521,
-      "sy": -3.304,
+      "sx": -11.832,
+      "sy": -10.916,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -32076,10 +32076,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "unclassified",
       "tech_depth_confidence": 0.5,
       "founded_year": null,
-      "ux": -10.316,
-      "uy": -4.825,
-      "hx": -2.035,
-      "hy": -1.487,
+      "ux": -10.155,
+      "uy": -5.027,
+      "hx": -11.484,
+      "hy": -10.302,
       "investor_ids": []
     },
     {
@@ -32098,8 +32098,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Regenerative Medicine",
       "cluster_keywords": "wound · therapeutics · regenerative medicine · cancer",
       "cluster_confidence": 1.0,
-      "x": -11.381,
-      "y": -9.901,
+      "x": -11.378,
+      "y": -9.899,
       "is_outlier": false,
       "tech_codes": [
         "therapeutics",
@@ -32124,8 +32124,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 5,
       "valuation_estimate_usd": 5.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -11.603,
-      "sy": -10.024,
+      "sx": -11.596,
+      "sy": -10.019,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -32150,10 +32150,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.752,
       "founded_year": 2019,
-      "ux": -8.468,
-      "uy": -4.906,
-      "hx": -11.381,
-      "hy": -9.901,
+      "ux": -8.317,
+      "uy": -5.055,
+      "hx": -11.378,
+      "hy": -9.899,
       "investor_ids": [
         "biominas"
       ]
@@ -32174,8 +32174,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Regenerative Medicine",
       "cluster_keywords": "wound · therapeutics · regenerative medicine · cancer",
       "cluster_confidence": 0.35,
-      "x": -10.772,
-      "y": -9.445,
+      "x": -10.77,
+      "y": -9.443,
       "is_outlier": true,
       "tech_codes": [
         "therapeutics"
@@ -32199,8 +32199,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -10.248,
-      "sy": -9.01,
+      "sx": -10.243,
+      "sy": -9.007,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -32223,10 +32223,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.68,
       "founded_year": 2020,
-      "ux": -5.74,
-      "uy": -2.928,
-      "hx": -10.772,
-      "hy": -9.445,
+      "ux": -5.665,
+      "uy": -3.011,
+      "hx": -10.77,
+      "hy": -9.443,
       "investor_ids": []
     },
     {
@@ -32245,8 +32245,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Regenerative Medicine",
       "cluster_keywords": "wound · therapeutics · regenerative medicine · cancer",
       "cluster_confidence": 1.0,
-      "x": -11.388,
-      "y": -9.911,
+      "x": -11.385,
+      "y": -9.909,
       "is_outlier": false,
       "tech_codes": [
         "therapeutics"
@@ -32270,8 +32270,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -11.618,
-      "sy": -10.047,
+      "sx": -11.612,
+      "sy": -10.042,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -32292,10 +32292,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.7,
       "founded_year": 2013,
-      "ux": -8.521,
-      "uy": -4.923,
-      "hx": -11.388,
-      "hy": -9.911,
+      "ux": -8.369,
+      "uy": -5.073,
+      "hx": -11.385,
+      "hy": -9.909,
       "investor_ids": []
     },
     {
@@ -32314,8 +32314,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Regenerative Medicine",
       "cluster_keywords": "wound · therapeutics · regenerative medicine · cancer",
       "cluster_confidence": 1.0,
-      "x": -11.382,
-      "y": -9.898,
+      "x": -11.38,
+      "y": -9.896,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -32337,8 +32337,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 5,
       "valuation_estimate_usd": 5.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -11.605,
-      "sy": -10.017,
+      "sx": -11.599,
+      "sy": -10.012,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -32358,10 +32358,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2021,
-      "ux": -8.457,
-      "uy": -4.916,
-      "hx": -11.382,
-      "hy": -9.898,
+      "ux": -8.306,
+      "uy": -5.064,
+      "hx": -11.38,
+      "hy": -9.896,
       "investor_ids": [
         "biominas",
         "vesper_ventures"
@@ -32383,8 +32383,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Regenerative Medicine",
       "cluster_keywords": "wound · therapeutics · regenerative medicine · cancer",
       "cluster_confidence": 1.0,
-      "x": -11.382,
-      "y": -9.902,
+      "x": -11.379,
+      "y": -9.9,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -32406,8 +32406,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
-      "sx": -11.605,
-      "sy": -10.027,
+      "sx": -11.599,
+      "sy": -10.022,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -32425,10 +32425,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": null,
-      "ux": -8.474,
-      "uy": -4.91,
-      "hx": -11.382,
-      "hy": -9.902,
+      "ux": -8.323,
+      "uy": -5.058,
+      "hx": -11.379,
+      "hy": -9.9,
       "investor_ids": []
     },
     {
@@ -32447,8 +32447,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Regenerative Medicine",
       "cluster_keywords": "wound · therapeutics · regenerative medicine · cancer",
       "cluster_confidence": 1.0,
-      "x": -11.626,
-      "y": -10.137,
+      "x": -11.623,
+      "y": -10.135,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -32467,8 +32467,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": -12.147,
-      "sy": -10.549,
+      "sx": -12.14,
+      "sy": -10.544,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -32478,10 +32478,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "unclassified",
       "tech_depth_confidence": 0.5,
       "founded_year": 2021,
-      "ux": -9.788,
-      "uy": -5.633,
-      "hx": -11.626,
-      "hy": -10.137,
+      "ux": -9.607,
+      "uy": -5.814,
+      "hx": -11.623,
+      "hy": -10.135,
       "investor_ids": []
     },
     {
@@ -32500,8 +32500,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Drug Discovery",
       "cluster_keywords": "therapeutics · drug discovery · therapeutic · cancer",
       "cluster_confidence": 0.817,
-      "x": -11.594,
-      "y": -9.991,
+      "x": -11.591,
+      "y": -9.989,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -32523,8 +32523,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -12.076,
-      "sy": -10.225,
+      "sx": -12.07,
+      "sy": -10.22,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -32544,10 +32544,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2008,
-      "ux": -9.13,
-      "uy": -5.689,
-      "hx": -11.594,
-      "hy": -9.991,
+      "ux": -8.952,
+      "uy": -5.851,
+      "hx": -11.591,
+      "hy": -9.989,
       "investor_ids": [
         "fen_ventures"
       ]
@@ -32568,8 +32568,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Drug Discovery",
       "cluster_keywords": "therapeutics · drug discovery · therapeutic · cancer",
       "cluster_confidence": 0.904,
-      "x": -11.682,
-      "y": -9.897,
+      "x": -11.678,
+      "y": -9.894,
       "is_outlier": false,
       "tech_codes": [
         "diagnostics",
@@ -32598,8 +32598,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 15,
       "valuation_estimate_usd": 15.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -12.27,
-      "sy": -10.014,
+      "sx": -12.263,
+      "sy": -10.01,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -32626,10 +32626,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.776,
       "founded_year": 2017,
-      "ux": -8.843,
-      "uy": -6.183,
-      "hx": -11.682,
-      "hy": -9.897,
+      "ux": -8.653,
+      "uy": -6.333,
+      "hx": -11.678,
+      "hy": -9.894,
       "investor_ids": [
         "AIR Capital",
         "GridX"
@@ -32651,8 +32651,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Drug Discovery",
       "cluster_keywords": "therapeutics · drug discovery · therapeutic · cancer",
       "cluster_confidence": 0.765,
-      "x": -11.553,
-      "y": -9.909,
+      "x": -11.55,
+      "y": -9.907,
       "is_outlier": false,
       "tech_codes": [
         "therapeutics"
@@ -32676,8 +32676,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 15,
       "valuation_estimate_usd": 15.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -11.984,
-      "sy": -10.042,
+      "sx": -11.977,
+      "sy": -10.037,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -32700,10 +32700,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.724,
       "founded_year": 2018,
-      "ux": -8.728,
-      "uy": -5.622,
-      "hx": -11.553,
-      "hy": -9.909,
+      "ux": -8.554,
+      "uy": -5.773,
+      "hx": -11.55,
+      "hy": -9.907,
       "investor_ids": []
     },
     {
@@ -32722,8 +32722,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Drug Discovery",
       "cluster_keywords": "therapeutics · drug discovery · therapeutic · cancer",
       "cluster_confidence": 1.0,
-      "x": -11.667,
-      "y": -9.933,
+      "x": -11.664,
+      "y": -9.931,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -32745,8 +32745,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
-      "sx": -12.238,
-      "sy": -10.095,
+      "sx": -12.232,
+      "sy": -10.09,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -32766,10 +32766,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2019,
-      "ux": -8.978,
-      "uy": -6.075,
-      "hx": -11.667,
-      "hy": -9.933,
+      "ux": -8.79,
+      "uy": -6.23,
+      "hx": -11.664,
+      "hy": -9.931,
       "investor_ids": []
     },
     {
@@ -32788,8 +32788,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Drug Discovery",
       "cluster_keywords": "therapeutics · drug discovery · therapeutic · cancer",
       "cluster_confidence": 0.35,
-      "x": -2.203,
-      "y": -1.105,
+      "x": -11.672,
+      "y": -9.875,
       "is_outlier": true,
       "tech_codes": [],
       "industry_codes": [],
@@ -32799,7 +32799,7 @@ window.STARTUP_THEMES_DATA = {
       "pagerank": 0.0,
       "valuation_tier": null,
       "n_investors_mapped": 0,
-      "bio_theme": "",
+      "bio_theme": "Therapeutics",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
       "sub_cluster_label": "",
@@ -32808,8 +32808,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": -4.895,
-      "sy": -2.456,
+      "sx": -12.249,
+      "sy": -9.968,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -32822,10 +32822,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "unclassified",
       "tech_depth_confidence": 0.5,
       "founded_year": null,
-      "ux": -8.755,
-      "uy": -6.181,
-      "hx": -2.203,
-      "hy": -1.105,
+      "ux": -8.566,
+      "uy": -6.329,
+      "hx": -11.672,
+      "hy": -9.875,
       "investor_ids": []
     },
     {
@@ -32844,8 +32844,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Drug Discovery",
       "cluster_keywords": "therapeutics · drug discovery · therapeutic · cancer",
       "cluster_confidence": 0.926,
-      "x": -11.571,
-      "y": -9.914,
+      "x": -11.568,
+      "y": -9.912,
       "is_outlier": false,
       "tech_codes": [
         "microbial",
@@ -32871,8 +32871,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -12.025,
-      "sy": -10.054,
+      "sx": -12.018,
+      "sy": -10.049,
       "bio_lens": [
         "biocentric",
         "human-health-bio",
@@ -32897,10 +32897,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.772,
       "founded_year": 2019,
-      "ux": -8.774,
-      "uy": -5.692,
-      "hx": -11.571,
-      "hy": -9.914,
+      "ux": -8.598,
+      "uy": -5.844,
+      "hx": -11.568,
+      "hy": -9.912,
       "investor_ids": [
         "GridX"
       ]
@@ -32921,8 +32921,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Drug Discovery",
       "cluster_keywords": "therapeutics · drug discovery · therapeutic · cancer",
       "cluster_confidence": 1.0,
-      "x": -11.693,
-      "y": -9.889,
+      "x": -11.69,
+      "y": -9.887,
       "is_outlier": false,
       "tech_codes": [
         "synbio",
@@ -32949,8 +32949,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -12.295,
-      "sy": -9.998,
+      "sx": -12.288,
+      "sy": -9.993,
       "bio_lens": [
         "biobased",
         "biocentric",
@@ -32980,10 +32980,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.876,
       "founded_year": 2021,
-      "ux": -8.826,
-      "uy": -6.24,
-      "hx": -11.693,
-      "hy": -9.889,
+      "ux": -8.634,
+      "uy": -6.39,
+      "hx": -11.69,
+      "hy": -9.887,
       "investor_ids": [
         "GridX"
       ]
@@ -33004,8 +33004,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Drug Discovery",
       "cluster_keywords": "therapeutics · drug discovery · therapeutic · cancer",
       "cluster_confidence": 1.0,
-      "x": -11.683,
-      "y": -9.908,
+      "x": -11.679,
+      "y": -9.906,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -33027,8 +33027,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -12.272,
-      "sy": -10.04,
+      "sx": -12.265,
+      "sy": -10.035,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -33050,10 +33050,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2023,
-      "ux": -8.893,
-      "uy": -6.172,
-      "hx": -11.683,
-      "hy": -9.908,
+      "ux": -8.702,
+      "uy": -6.324,
+      "hx": -11.679,
+      "hy": -9.906,
       "investor_ids": [
         "vesper_ventures"
       ]
@@ -33074,8 +33074,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Drug Discovery",
       "cluster_keywords": "therapeutics · drug discovery · therapeutic · cancer",
       "cluster_confidence": 0.926,
-      "x": -11.572,
-      "y": -9.896,
+      "x": -11.569,
+      "y": -9.894,
       "is_outlier": false,
       "tech_codes": [
         "therapeutics"
@@ -33100,8 +33100,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -12.026,
-      "sy": -10.014,
+      "sx": -12.019,
+      "sy": -10.009,
       "bio_lens": [
         "biocentric",
         "human-health-bio",
@@ -33126,10 +33126,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.724,
       "founded_year": 2021,
-      "ux": -8.698,
-      "uy": -5.718,
-      "hx": -11.572,
-      "hy": -9.896,
+      "ux": -8.523,
+      "uy": -5.867,
+      "hx": -11.569,
+      "hy": -9.894,
       "investor_ids": [
         "CITES"
       ]
@@ -33150,8 +33150,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Drug Discovery",
       "cluster_keywords": "therapeutics · drug discovery · therapeutic · cancer",
       "cluster_confidence": 1.0,
-      "x": -11.652,
-      "y": -9.907,
+      "x": -11.649,
+      "y": -9.905,
       "is_outlier": false,
       "tech_codes": [
         "therapeutics",
@@ -33176,8 +33176,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -12.205,
-      "sy": -10.037,
+      "sx": -12.198,
+      "sy": -10.032,
       "bio_lens": [
         "biocentric",
         "human-health-bio",
@@ -33201,10 +33201,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.724,
       "founded_year": 2020,
-      "ux": -8.848,
-      "uy": -6.045,
-      "hx": -11.652,
-      "hy": -9.907,
+      "ux": -8.662,
+      "uy": -6.196,
+      "hx": -11.649,
+      "hy": -9.905,
       "investor_ids": [
         "GridX"
       ]
@@ -33225,8 +33225,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Drug Discovery",
       "cluster_keywords": "therapeutics · drug discovery · therapeutic · cancer",
       "cluster_confidence": 0.926,
-      "x": -11.609,
-      "y": -9.921,
+      "x": -11.606,
+      "y": -9.919,
       "is_outlier": false,
       "tech_codes": [
         "therapeutics"
@@ -33251,8 +33251,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 15,
       "valuation_estimate_usd": 15.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -12.11,
-      "sy": -10.07,
+      "sx": -12.103,
+      "sy": -10.065,
       "bio_lens": [
         "biocentric",
         "human-health-bio",
@@ -33278,10 +33278,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.712,
       "founded_year": 2017,
-      "ux": -8.854,
-      "uy": -5.845,
-      "hx": -11.609,
-      "hy": -9.921,
+      "ux": -8.673,
+      "uy": -5.998,
+      "hx": -11.606,
+      "hy": -9.919,
       "investor_ids": [
         "CITES"
       ]
@@ -33302,8 +33302,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Drug Discovery",
       "cluster_keywords": "therapeutics · drug discovery · therapeutic · cancer",
       "cluster_confidence": 0.358,
-      "x": -11.511,
-      "y": -9.915,
+      "x": -11.508,
+      "y": -9.913,
       "is_outlier": true,
       "tech_codes": [
         "green_chem",
@@ -33329,8 +33329,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -11.891,
-      "sy": -10.056,
+      "sx": -11.885,
+      "sy": -10.051,
       "bio_lens": [
         "biobased",
         "biocentric",
@@ -33359,10 +33359,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.772,
       "founded_year": 2021,
-      "ux": -8.699,
-      "uy": -5.437,
-      "hx": -11.511,
-      "hy": -9.915,
+      "ux": -8.531,
+      "uy": -5.589,
+      "hx": -11.508,
+      "hy": -9.913,
       "investor_ids": [
         "GridX",
         "The Ganesha Lab"
@@ -33384,8 +33384,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Drug Discovery",
       "cluster_keywords": "therapeutics · drug discovery · therapeutic · cancer",
       "cluster_confidence": 0.874,
-      "x": -11.679,
-      "y": -9.899,
+      "x": -11.676,
+      "y": -9.897,
       "is_outlier": false,
       "tech_codes": [
         "therapeutics"
@@ -33409,8 +33409,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -12.266,
-      "sy": -10.021,
+      "sx": -12.259,
+      "sy": -10.016,
       "bio_lens": [
         "biocentric",
         "human-health-bio",
@@ -33436,10 +33436,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.712,
       "founded_year": 2020,
-      "ux": -8.853,
-      "uy": -6.17,
-      "hx": -11.679,
-      "hy": -9.899,
+      "ux": -8.663,
+      "uy": -6.321,
+      "hx": -11.676,
+      "hy": -9.897,
       "investor_ids": [
         "GridX",
         "zentynel"
@@ -33461,8 +33461,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Drug Discovery",
       "cluster_keywords": "therapeutics · drug discovery · therapeutic · cancer",
       "cluster_confidence": 0.349,
-      "x": -10.791,
-      "y": -9.453,
+      "x": -10.788,
+      "y": -9.451,
       "is_outlier": true,
       "tech_codes": [
         "therapeutics"
@@ -33487,8 +33487,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -10.29,
-      "sy": -9.029,
+      "sx": -10.285,
+      "sy": -9.025,
       "bio_lens": [
         "biocentric",
         "human-health-bio",
@@ -33517,10 +33517,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.772,
       "founded_year": 2019,
-      "ux": -5.8,
-      "uy": -2.996,
-      "hx": -10.791,
-      "hy": -9.453,
+      "ux": -5.723,
+      "uy": -3.081,
+      "hx": -10.788,
+      "hy": -9.451,
       "investor_ids": [
         "GridX"
       ]
@@ -33541,8 +33541,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Drug Discovery",
       "cluster_keywords": "therapeutics · drug discovery · therapeutic · cancer",
       "cluster_confidence": 0.926,
-      "x": -11.58,
-      "y": -9.891,
+      "x": -11.577,
+      "y": -9.889,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -33561,8 +33561,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": -12.044,
-      "sy": -10.003,
+      "sx": -12.038,
+      "sy": -9.998,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -33574,10 +33574,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "medium",
       "tech_depth_confidence": 0.5,
       "founded_year": null,
-      "ux": -8.688,
-      "uy": -5.76,
-      "hx": -11.58,
-      "hy": -9.891,
+      "ux": -8.511,
+      "uy": -5.908,
+      "hx": -11.577,
+      "hy": -9.889,
       "investor_ids": []
     },
     {
@@ -33596,8 +33596,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Drug Discovery",
       "cluster_keywords": "therapeutics · drug discovery · therapeutic · cancer",
       "cluster_confidence": 0.817,
-      "x": -11.629,
-      "y": -9.976,
+      "x": -11.626,
+      "y": -9.973,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -33619,8 +33619,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -12.154,
-      "sy": -10.19,
+      "sx": -12.147,
+      "sy": -10.185,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -33638,10 +33638,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2019,
-      "ux": -9.11,
-      "uy": -5.858,
-      "hx": -11.629,
-      "hy": -9.976,
+      "ux": -8.927,
+      "uy": -6.018,
+      "hx": -11.626,
+      "hy": -9.973,
       "investor_ids": []
     },
     {
@@ -33660,8 +33660,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Drug Discovery",
       "cluster_keywords": "therapeutics · drug discovery · therapeutic · cancer",
       "cluster_confidence": 0.364,
-      "x": -11.696,
-      "y": -9.864,
+      "x": -11.693,
+      "y": -9.862,
       "is_outlier": true,
       "tech_codes": [
         "therapeutics",
@@ -33686,8 +33686,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -12.302,
-      "sy": -9.943,
+      "sx": -12.295,
+      "sy": -9.938,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -33712,10 +33712,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.748,
       "founded_year": 2018,
-      "ux": -8.726,
-      "uy": -6.286,
-      "hx": -11.696,
-      "hy": -9.864,
+      "ux": -8.534,
+      "uy": -6.432,
+      "hx": -11.693,
+      "hy": -9.862,
       "investor_ids": []
     },
     {
@@ -33734,8 +33734,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Drug Discovery",
       "cluster_keywords": "therapeutics · drug discovery · therapeutic · cancer",
       "cluster_confidence": 1.0,
-      "x": -11.705,
-      "y": -9.879,
+      "x": -11.702,
+      "y": -9.877,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -33757,8 +33757,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
-      "sx": -12.322,
-      "sy": -9.975,
+      "sx": -12.315,
+      "sy": -9.97,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -33778,10 +33778,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2020,
-      "ux": -8.799,
-      "uy": -6.304,
-      "hx": -11.705,
-      "hy": -9.879,
+      "ux": -8.606,
+      "uy": -6.452,
+      "hx": -11.702,
+      "hy": -9.877,
       "investor_ids": [
         "green_rock"
       ]
@@ -33802,8 +33802,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Drug Discovery",
       "cluster_keywords": "therapeutics · drug discovery · therapeutic · cancer",
       "cluster_confidence": 0.353,
-      "x": -11.718,
-      "y": -9.86,
+      "x": -11.715,
+      "y": -9.858,
       "is_outlier": true,
       "tech_codes": [],
       "industry_codes": [
@@ -33825,8 +33825,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 15,
       "valuation_estimate_usd": 15.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -12.352,
-      "sy": -9.934,
+      "sx": -12.345,
+      "sy": -9.929,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -33844,10 +33844,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2021,
-      "ux": -8.738,
-      "uy": -6.386,
-      "hx": -11.718,
-      "hy": -9.86,
+      "ux": -8.543,
+      "uy": -6.531,
+      "hx": -11.715,
+      "hy": -9.858,
       "investor_ids": [
         "ecoa_capital",
         "mov_investimentos",
@@ -33870,8 +33870,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Drug Discovery",
       "cluster_keywords": "therapeutics · drug discovery · therapeutic · cancer",
       "cluster_confidence": 0.364,
-      "x": -11.624,
-      "y": -10.056,
+      "x": -11.621,
+      "y": -10.054,
       "is_outlier": true,
       "tech_codes": [
         "ai_ml",
@@ -33896,8 +33896,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 15,
       "valuation_estimate_usd": 15.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -12.143,
-      "sy": -10.369,
+      "sx": -12.136,
+      "sy": -10.363,
       "bio_lens": [
         "biocentric",
         "human-health-bio",
@@ -33922,10 +33922,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.716,
       "founded_year": 2020,
-      "ux": -9.442,
-      "uy": -5.731,
-      "hx": -11.624,
-      "hy": -10.056,
+      "ux": -9.261,
+      "uy": -5.901,
+      "hx": -11.621,
+      "hy": -10.054,
       "investor_ids": [
         "AIR Capital",
         "GridX",
@@ -34012,8 +34012,8 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.864,
       "founded_year": 2021,
-      "ux": -4.705,
-      "uy": -1.905,
+      "ux": -4.667,
+      "uy": -1.965,
       "hx": -9.54,
       "hy": -2.357,
       "investor_ids": [
@@ -34036,8 +34036,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Drug Discovery",
       "cluster_keywords": "therapeutics · drug discovery · therapeutic · cancer",
       "cluster_confidence": 0.353,
-      "x": -10.0,
-      "y": -9.062,
+      "x": -9.999,
+      "y": -9.061,
       "is_outlier": true,
       "tech_codes": [],
       "industry_codes": [
@@ -34059,8 +34059,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
-      "sx": -8.534,
-      "sy": -8.161,
+      "sx": -8.531,
+      "sy": -8.158,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -34081,10 +34081,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2021,
-      "ux": -3.112,
-      "uy": -0.167,
-      "hx": -10.0,
-      "hy": -9.062,
+      "ux": -3.136,
+      "uy": -0.194,
+      "hx": -9.999,
+      "hy": -9.061,
       "investor_ids": []
     },
     {
@@ -34103,8 +34103,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Drug Discovery",
       "cluster_keywords": "therapeutics · drug discovery · therapeutic · cancer",
       "cluster_confidence": 0.817,
-      "x": -11.566,
-      "y": -9.984,
+      "x": -11.563,
+      "y": -9.981,
       "is_outlier": false,
       "tech_codes": [
         "therapeutics"
@@ -34128,8 +34128,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 0,
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -12.013,
-      "sy": -10.208,
+      "sx": -12.006,
+      "sy": -10.203,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -34152,10 +34152,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.724,
       "founded_year": 2020,
-      "ux": -9.06,
-      "uy": -5.578,
-      "hx": -11.566,
-      "hy": -9.984,
+      "ux": -8.885,
+      "uy": -5.739,
+      "hx": -11.563,
+      "hy": -9.981,
       "investor_ids": []
     },
     {
@@ -34174,8 +34174,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Drug Discovery",
       "cluster_keywords": "therapeutics · drug discovery · therapeutic · cancer",
       "cluster_confidence": 0.356,
-      "x": -11.667,
-      "y": -9.841,
+      "x": -11.664,
+      "y": -9.839,
       "is_outlier": true,
       "tech_codes": [
         "therapeutics"
@@ -34199,8 +34199,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
-      "sx": -12.237,
-      "sy": -9.891,
+      "sx": -12.23,
+      "sy": -9.887,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -34222,10 +34222,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.776,
       "founded_year": 2018,
-      "ux": -8.589,
-      "uy": -6.192,
-      "hx": -11.667,
-      "hy": -9.841,
+      "ux": -8.401,
+      "uy": -6.335,
+      "hx": -11.664,
+      "hy": -9.839,
       "investor_ids": []
     },
     {
@@ -34244,8 +34244,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Drug Discovery",
       "cluster_keywords": "therapeutics · drug discovery · therapeutic · cancer",
       "cluster_confidence": 0.355,
-      "x": -4.359,
-      "y": -10.209,
+      "x": -4.361,
+      "y": -10.207,
       "is_outlier": true,
       "tech_codes": [
         "iot",
@@ -34271,8 +34271,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -4.553,
-      "sy": -11.565,
+      "sx": -4.557,
+      "sy": -11.559,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -34296,10 +34296,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.74,
       "founded_year": 2021,
-      "ux": -8.684,
-      "uy": -6.329,
-      "hx": -4.359,
-      "hy": -10.209,
+      "ux": -8.49,
+      "uy": -6.473,
+      "hx": -4.361,
+      "hy": -10.207,
       "investor_ids": [
         "GridX"
       ]
@@ -34320,8 +34320,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Drug Discovery",
       "cluster_keywords": "therapeutics · drug discovery · therapeutic · cancer",
       "cluster_confidence": 0.348,
-      "x": -1.321,
-      "y": -0.697,
+      "x": -10.686,
+      "y": -9.419,
       "is_outlier": true,
       "tech_codes": [],
       "industry_codes": [],
@@ -34331,7 +34331,7 @@ window.STARTUP_THEMES_DATA = {
       "pagerank": 0.0,
       "valuation_tier": null,
       "n_investors_mapped": 0,
-      "bio_theme": "",
+      "bio_theme": "Therapeutics",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
       "sub_cluster_label": "",
@@ -34340,8 +34340,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": -2.937,
-      "sy": -1.549,
+      "sx": -10.058,
+      "sy": -8.952,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -34354,10 +34354,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "medium",
       "tech_depth_confidence": 0.5,
       "founded_year": 2019,
-      "ux": -5.528,
-      "uy": -2.607,
-      "hx": -1.321,
-      "hy": -0.697,
+      "ux": -5.464,
+      "uy": -2.687,
+      "hx": -10.686,
+      "hy": -9.419,
       "investor_ids": []
     },
     {
@@ -34376,8 +34376,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Drug Discovery",
       "cluster_keywords": "therapeutics · drug discovery · therapeutic · cancer",
       "cluster_confidence": 0.926,
-      "x": -11.591,
-      "y": -9.907,
+      "x": -11.588,
+      "y": -9.905,
       "is_outlier": false,
       "tech_codes": [
         "computational_bio",
@@ -34402,8 +34402,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -12.068,
-      "sy": -10.038,
+      "sx": -12.061,
+      "sy": -10.033,
       "bio_lens": [
         "biocentric",
         "human-health-bio",
@@ -34427,10 +34427,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.784,
       "founded_year": null,
-      "ux": -8.769,
-      "uy": -5.784,
-      "hx": -11.591,
-      "hy": -9.907,
+      "ux": -8.59,
+      "uy": -5.935,
+      "hx": -11.588,
+      "hy": -9.905,
       "investor_ids": [
         "GridX"
       ]
@@ -34451,8 +34451,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Drug Discovery",
       "cluster_keywords": "therapeutics · drug discovery · therapeutic · cancer",
       "cluster_confidence": 0.817,
-      "x": -11.614,
-      "y": -10.002,
+      "x": -11.611,
+      "y": -10.0,
       "is_outlier": false,
       "tech_codes": [
         "therapeutics"
@@ -34476,8 +34476,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -12.119,
-      "sy": -10.249,
+      "sx": -12.112,
+      "sy": -10.244,
       "bio_lens": [
         "biocentric",
         "human-health-bio",
@@ -34501,10 +34501,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.724,
       "founded_year": null,
-      "ux": -9.201,
-      "uy": -5.757,
-      "hx": -11.614,
-      "hy": -10.002,
+      "ux": -9.021,
+      "uy": -5.921,
+      "hx": -11.611,
+      "hy": -10.0,
       "investor_ids": [
         "CITES"
       ]
@@ -34525,8 +34525,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Drug Discovery",
       "cluster_keywords": "therapeutics · drug discovery · therapeutic · cancer",
       "cluster_confidence": 0.817,
-      "x": -11.585,
-      "y": -9.945,
+      "x": -11.582,
+      "y": -9.942,
       "is_outlier": false,
       "tech_codes": [
         "therapeutics"
@@ -34550,8 +34550,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 15,
       "valuation_estimate_usd": 15.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -12.055,
-      "sy": -10.121,
+      "sx": -12.048,
+      "sy": -10.116,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -34574,10 +34574,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.748,
       "founded_year": 2014,
-      "ux": -8.919,
-      "uy": -5.709,
-      "hx": -11.585,
-      "hy": -9.945,
+      "ux": -8.742,
+      "uy": -5.865,
+      "hx": -11.582,
+      "hy": -9.942,
       "investor_ids": []
     },
     {
@@ -34596,8 +34596,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Therapeutics — Drug Discovery",
       "cluster_keywords": "therapeutics · drug discovery · therapeutic · cancer",
       "cluster_confidence": 1.0,
-      "x": -11.663,
-      "y": -9.905,
+      "x": -11.659,
+      "y": -9.903,
       "is_outlier": false,
       "tech_codes": [
         "therapeutics",
@@ -34622,8 +34622,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -12.228,
-      "sy": -10.034,
+      "sx": -12.221,
+      "sy": -10.029,
       "bio_lens": [
         "biocentric",
         "human-health-bio",
@@ -34648,10 +34648,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.724,
       "founded_year": null,
-      "ux": -8.855,
-      "uy": -6.091,
-      "hx": -11.663,
-      "hy": -9.905,
+      "ux": -8.668,
+      "uy": -6.242,
+      "hx": -11.659,
+      "hy": -9.903,
       "investor_ids": [
         "GridX"
       ]
@@ -34672,8 +34672,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Functional Ingredients",
       "cluster_keywords": "functional ingredients · novel · metabolic · foods",
       "cluster_confidence": 0.358,
-      "x": 2.05,
-      "y": 1.832,
+      "x": 2.028,
+      "y": 1.833,
       "is_outlier": true,
       "tech_codes": [
         "biomanufacturing"
@@ -34701,8 +34701,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": 1.988,
-      "sy": 1.504,
+      "sx": 1.94,
+      "sy": 1.507,
       "bio_lens": [
         "biobased",
         "bio-enabled-industrial-transition",
@@ -34730,10 +34730,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2017,
-      "ux": -3.979,
-      "uy": 1.376,
-      "hx": 2.05,
-      "hy": 1.832,
+      "ux": -4.041,
+      "uy": 1.313,
+      "hx": 2.028,
+      "hy": 1.833,
       "investor_ids": [
         "GridX"
       ]
@@ -34754,8 +34754,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Functional Ingredients",
       "cluster_keywords": "functional ingredients · novel · metabolic · foods",
       "cluster_confidence": 0.748,
-      "x": 2.075,
-      "y": 1.71,
+      "x": 2.053,
+      "y": 1.711,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -34777,8 +34777,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": 2.044,
-      "sy": 1.234,
+      "sx": 1.996,
+      "sy": 1.236,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -34798,10 +34798,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2018,
-      "ux": -4.52,
-      "uy": 1.674,
-      "hx": 2.075,
-      "hy": 1.71,
+      "ux": -4.587,
+      "uy": 1.593,
+      "hx": 2.053,
+      "hy": 1.711,
       "investor_ids": [
         "GridX"
       ]
@@ -34822,8 +34822,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Functional Ingredients",
       "cluster_keywords": "functional ingredients · novel · metabolic · foods",
       "cluster_confidence": 1.0,
-      "x": 2.069,
-      "y": 1.758,
+      "x": 2.047,
+      "y": 1.759,
       "is_outlier": false,
       "tech_codes": [
         "ai_ml"
@@ -34847,8 +34847,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": 2.031,
-      "sy": 1.34,
+      "sx": 1.983,
+      "sy": 1.342,
       "bio_lens": [
         "biobased",
         "biocentric",
@@ -34879,10 +34879,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2018,
-      "ux": -4.302,
-      "uy": 1.576,
-      "hx": 2.069,
-      "hy": 1.758,
+      "ux": -4.367,
+      "uy": 1.502,
+      "hx": 2.047,
+      "hy": 1.759,
       "investor_ids": [
         "GridX"
       ]
@@ -34903,8 +34903,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Functional Ingredients",
       "cluster_keywords": "functional ingredients · novel · metabolic · foods",
       "cluster_confidence": 0.774,
-      "x": 2.089,
-      "y": 1.752,
+      "x": 2.068,
+      "y": 1.753,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -34926,8 +34926,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": 2.076,
-      "sy": 1.327,
+      "sx": 2.029,
+      "sy": 1.329,
       "bio_lens": [
         "planetary-boundary"
       ],
@@ -34948,10 +34948,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2020,
-      "ux": -4.3,
-      "uy": 1.682,
-      "hx": 2.089,
-      "hy": 1.752,
+      "ux": -4.368,
+      "uy": 1.607,
+      "hx": 2.068,
+      "hy": 1.753,
       "investor_ids": [
         "AIR Capital"
       ]
@@ -34972,8 +34972,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Functional Ingredients",
       "cluster_keywords": "functional ingredients · novel · metabolic · foods",
       "cluster_confidence": 0.99,
-      "x": 1.602,
-      "y": 1.869,
+      "x": 1.578,
+      "y": 1.871,
       "is_outlier": false,
       "tech_codes": [
         "fermentation",
@@ -35001,8 +35001,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": 0.994,
-      "sy": 1.587,
+      "sx": 0.94,
+      "sy": 1.59,
       "bio_lens": [
         "biobased",
         "bio-enabled-industrial-transition",
@@ -35029,10 +35029,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.728,
       "founded_year": 2019,
-      "ux": -4.462,
-      "uy": -0.811,
-      "hx": 1.602,
-      "hy": 1.869,
+      "ux": -4.457,
+      "uy": -0.873,
+      "hx": 1.578,
+      "hy": 1.871,
       "investor_ids": [
         "AIR Capital",
         "glocal",
@@ -35055,8 +35055,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Functional Ingredients",
       "cluster_keywords": "functional ingredients · novel · metabolic · foods",
       "cluster_confidence": 1.0,
-      "x": 2.073,
-      "y": 1.732,
+      "x": 2.051,
+      "y": 1.733,
       "is_outlier": false,
       "tech_codes": [
         "biomanufacturing",
@@ -35084,8 +35084,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": 2.04,
-      "sy": 1.283,
+      "sx": 1.992,
+      "sy": 1.285,
       "bio_lens": [
         "biobased",
         "biocentric",
@@ -35118,10 +35118,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2020,
-      "ux": -4.418,
-      "uy": 1.633,
-      "hx": 2.073,
-      "hy": 1.732,
+      "ux": -4.484,
+      "uy": 1.556,
+      "hx": 2.051,
+      "hy": 1.733,
       "investor_ids": [
         "CITES"
       ]
@@ -35142,8 +35142,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Functional Ingredients",
       "cluster_keywords": "functional ingredients · novel · metabolic · foods",
       "cluster_confidence": 0.629,
-      "x": 2.06,
-      "y": 1.785,
+      "x": 2.039,
+      "y": 1.786,
       "is_outlier": false,
       "tech_codes": [
         "iot",
@@ -35171,8 +35171,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": 2.012,
-      "sy": 1.4,
+      "sx": 1.964,
+      "sy": 1.403,
       "bio_lens": [
         "biobased",
         "biocentric",
@@ -35200,10 +35200,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2020,
-      "ux": -4.185,
-      "uy": 1.495,
-      "hx": 2.06,
-      "hy": 1.785,
+      "ux": -4.248,
+      "uy": 1.426,
+      "hx": 2.039,
+      "hy": 1.786,
       "investor_ids": [
         "AIR Capital"
       ]
@@ -35224,7 +35224,7 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Functional Ingredients",
       "cluster_keywords": "functional ingredients · novel · metabolic · foods",
       "cluster_confidence": 1.0,
-      "x": 2.064,
+      "x": 2.043,
       "y": 1.709,
       "is_outlier": false,
       "tech_codes": [
@@ -35252,8 +35252,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": 2.02,
-      "sy": 1.23,
+      "sx": 1.973,
+      "sy": 1.232,
       "bio_lens": [
         "biobased"
       ],
@@ -35275,9 +35275,9 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.752,
       "founded_year": 2021,
-      "ux": -4.544,
-      "uy": 1.627,
-      "hx": 2.064,
+      "ux": -4.609,
+      "uy": 1.546,
+      "hx": 2.043,
       "hy": 1.709,
       "investor_ids": [
         "GridX"
@@ -35299,8 +35299,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Functional Ingredients",
       "cluster_keywords": "functional ingredients · novel · metabolic · foods",
       "cluster_confidence": 0.99,
-      "x": 2.09,
-      "y": 1.774,
+      "x": 2.068,
+      "y": 1.775,
       "is_outlier": true,
       "tech_codes": [
         "microbial",
@@ -35328,8 +35328,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": 2.077,
-      "sy": 1.376,
+      "sx": 2.03,
+      "sy": 1.378,
       "bio_lens": [
         "biobased",
         "bio-enabled-industrial-transition",
@@ -35355,10 +35355,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.728,
       "founded_year": 2022,
-      "ux": -4.195,
-      "uy": 1.652,
-      "hx": 2.09,
-      "hy": 1.774,
+      "ux": -4.263,
+      "uy": 1.581,
+      "hx": 2.068,
+      "hy": 1.775,
       "investor_ids": [
         "GridX"
       ]
@@ -35379,8 +35379,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Functional Ingredients",
       "cluster_keywords": "functional ingredients · novel · metabolic · foods",
       "cluster_confidence": 0.774,
-      "x": 2.092,
-      "y": 1.752,
+      "x": 2.071,
+      "y": 1.753,
       "is_outlier": false,
       "tech_codes": [
         "formulation",
@@ -35406,8 +35406,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": 2.082,
-      "sy": 1.326,
+      "sx": 2.034,
+      "sy": 1.328,
       "bio_lens": [
         "biobased",
         "human-health-bio",
@@ -35429,10 +35429,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2020,
-      "ux": -4.297,
-      "uy": 1.695,
-      "hx": 2.092,
-      "hy": 1.752,
+      "ux": -4.366,
+      "uy": 1.62,
+      "hx": 2.071,
+      "hy": 1.753,
       "investor_ids": [
         "GridX"
       ]
@@ -35453,8 +35453,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Functional Ingredients",
       "cluster_keywords": "functional ingredients · novel · metabolic · foods",
       "cluster_confidence": 0.99,
-      "x": 1.601,
-      "y": 1.868,
+      "x": 1.577,
+      "y": 1.87,
       "is_outlier": false,
       "tech_codes": [
         "formulation",
@@ -35481,8 +35481,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": 0.992,
-      "sy": 1.585,
+      "sx": 0.938,
+      "sy": 1.589,
       "bio_lens": [
         "biobased",
         "bio-enabled-industrial-transition",
@@ -35511,10 +35511,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.704,
       "founded_year": 2019,
-      "ux": -4.466,
-      "uy": -0.814,
-      "hx": 1.601,
-      "hy": 1.868,
+      "ux": -4.461,
+      "uy": -0.876,
+      "hx": 1.577,
+      "hy": 1.87,
       "investor_ids": [
         "the_yield_lab_latam"
       ]
@@ -35535,8 +35535,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Functional Ingredients",
       "cluster_keywords": "functional ingredients · novel · metabolic · foods",
       "cluster_confidence": 0.359,
-      "x": 2.103,
-      "y": 1.737,
+      "x": 2.082,
+      "y": 1.738,
       "is_outlier": true,
       "tech_codes": [
         "green_chem",
@@ -35561,8 +35561,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": 2.106,
-      "sy": 1.294,
+      "sx": 2.059,
+      "sy": 1.296,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -35585,10 +35585,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2022,
-      "ux": -4.351,
-      "uy": 1.769,
-      "hx": 2.103,
-      "hy": 1.737,
+      "ux": -4.421,
+      "uy": 1.692,
+      "hx": 2.082,
+      "hy": 1.738,
       "investor_ids": [
         "The Ganesha Lab"
       ]
@@ -35609,8 +35609,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Functional Ingredients",
       "cluster_keywords": "functional ingredients · novel · metabolic · foods",
       "cluster_confidence": 0.99,
-      "x": 4.123,
-      "y": 3.603,
+      "x": 4.114,
+      "y": 3.615,
       "is_outlier": false,
       "tech_codes": [
         "ai_ml"
@@ -35635,8 +35635,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": 6.595,
-      "sy": 5.439,
+      "sx": 6.575,
+      "sy": 5.466,
       "bio_lens": [
         "circular",
         "planetary-boundary"
@@ -35656,10 +35656,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2021,
-      "ux": 7.519,
-      "uy": 8.636,
-      "hx": 4.123,
-      "hy": 3.603,
+      "ux": 7.167,
+      "uy": 8.854,
+      "hx": 4.114,
+      "hy": 3.615,
       "investor_ids": [
         "the_yield_lab_latam"
       ]
@@ -35680,8 +35680,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Functional Ingredients",
       "cluster_keywords": "functional ingredients · novel · metabolic · foods",
       "cluster_confidence": 1.0,
-      "x": 2.064,
-      "y": 1.714,
+      "x": 2.043,
+      "y": 1.715,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -35704,8 +35704,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": 2.02,
-      "sy": 1.242,
+      "sx": 1.972,
+      "sy": 1.244,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -35726,10 +35726,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2021,
-      "ux": -4.519,
-      "uy": 1.618,
-      "hx": 2.064,
-      "hy": 1.714,
+      "ux": -4.584,
+      "uy": 1.538,
+      "hx": 2.043,
+      "hy": 1.715,
       "investor_ids": [
         "GridX"
       ]
@@ -35750,7 +35750,7 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Functional Ingredients",
       "cluster_keywords": "functional ingredients · novel · metabolic · foods",
       "cluster_confidence": 1.0,
-      "x": 2.071,
+      "x": 2.049,
       "y": 1.751,
       "is_outlier": false,
       "tech_codes": [
@@ -35781,8 +35781,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": 2.034,
-      "sy": 1.323,
+      "sx": 1.987,
+      "sy": 1.326,
       "bio_lens": [
         "biobased",
         "bio-enabled-industrial-transition"
@@ -35809,9 +35809,9 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.824,
       "founded_year": 2021,
-      "ux": -4.335,
-      "uy": 1.595,
-      "hx": 2.071,
+      "ux": -4.4,
+      "uy": 1.52,
+      "hx": 2.049,
       "hy": 1.751,
       "investor_ids": [
         "GridX"
@@ -35833,8 +35833,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Functional Ingredients",
       "cluster_keywords": "functional ingredients · novel · metabolic · foods",
       "cluster_confidence": 0.664,
-      "x": 2.113,
-      "y": 1.741,
+      "x": 2.092,
+      "y": 1.742,
       "is_outlier": false,
       "tech_codes": [
         "nanotech",
@@ -35861,8 +35861,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": 2.13,
-      "sy": 1.303,
+      "sx": 2.083,
+      "sy": 1.305,
       "bio_lens": [
         "biocentric"
       ],
@@ -35885,10 +35885,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.684,
       "founded_year": 2019,
-      "ux": -4.316,
-      "uy": 1.813,
-      "hx": 2.113,
-      "hy": 1.741,
+      "ux": -4.388,
+      "uy": 1.737,
+      "hx": 2.092,
+      "hy": 1.742,
       "investor_ids": [
         "chileglobal_ventures"
       ]
@@ -35909,8 +35909,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Functional Ingredients",
       "cluster_keywords": "functional ingredients · novel · metabolic · foods",
       "cluster_confidence": 0.774,
-      "x": 2.098,
-      "y": 1.752,
+      "x": 2.076,
+      "y": 1.753,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -35933,8 +35933,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 5,
       "valuation_estimate_usd": 5.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": 2.094,
-      "sy": 1.326,
+      "sx": 2.047,
+      "sy": 1.328,
       "bio_lens": [
         "circular",
         "planetary-boundary"
@@ -35956,10 +35956,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2018,
-      "ux": -4.29,
-      "uy": 1.722,
-      "hx": 2.098,
-      "hy": 1.752,
+      "ux": -4.359,
+      "uy": 1.648,
+      "hx": 2.076,
+      "hy": 1.753,
       "investor_ids": [
         "DraperCygnus",
         "zentynel"
@@ -35981,8 +35981,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Functional Ingredients",
       "cluster_keywords": "functional ingredients · novel · metabolic · foods",
       "cluster_confidence": 0.906,
-      "x": 2.072,
-      "y": 1.79,
+      "x": 2.051,
+      "y": 1.791,
       "is_outlier": false,
       "tech_codes": [
         "nanotech",
@@ -36014,8 +36014,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": 2.038,
-      "sy": 1.412,
+      "sx": 1.99,
+      "sy": 1.414,
       "bio_lens": [
         "biobased",
         "bio-enabled-industrial-transition",
@@ -36051,10 +36051,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.804,
       "founded_year": 2022,
-      "ux": -4.143,
-      "uy": 1.543,
-      "hx": 2.072,
-      "hy": 1.79,
+      "ux": -4.209,
+      "uy": 1.474,
+      "hx": 2.051,
+      "hy": 1.791,
       "investor_ids": [
         "GridX"
       ]
@@ -36075,7 +36075,7 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Functional Ingredients",
       "cluster_keywords": "functional ingredients · novel · metabolic · foods",
       "cluster_confidence": 1.0,
-      "x": 2.059,
+      "x": 2.038,
       "y": 1.697,
       "is_outlier": false,
       "tech_codes": [
@@ -36101,8 +36101,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": 2.009,
-      "sy": 1.204,
+      "sx": 1.961,
+      "sy": 1.205,
       "bio_lens": [
         "planetary-boundary"
       ],
@@ -36124,9 +36124,9 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2020,
-      "ux": -4.608,
-      "uy": 1.62,
-      "hx": 2.059,
+      "ux": -4.673,
+      "uy": 1.537,
+      "hx": 2.038,
       "hy": 1.697,
       "investor_ids": [
         "GridX"
@@ -36148,8 +36148,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Functional Ingredients",
       "cluster_keywords": "functional ingredients · novel · metabolic · foods",
       "cluster_confidence": 0.364,
-      "x": 1.903,
-      "y": 2.063,
+      "x": 1.88,
+      "y": 2.066,
       "is_outlier": true,
       "tech_codes": [],
       "industry_codes": [
@@ -36171,8 +36171,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": 1.662,
-      "sy": 2.018,
+      "sx": 1.612,
+      "sy": 2.025,
       "bio_lens": [
         "biobased",
         "bio-enabled-industrial-transition",
@@ -36196,10 +36196,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2019,
-      "ux": -3.093,
-      "uy": 0.335,
-      "hx": 1.903,
-      "hy": 2.063,
+      "ux": -3.131,
+      "uy": 0.305,
+      "hx": 1.88,
+      "hy": 2.066,
       "investor_ids": []
     },
     {
@@ -36279,8 +36279,8 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.708,
       "founded_year": null,
-      "ux": -4.176,
-      "uy": 1.586,
+      "ux": -4.242,
+      "uy": 1.516,
       "hx": -8.907,
       "hy": -2.452,
       "investor_ids": [
@@ -36303,8 +36303,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Digital AgTech & Agrifintech — Precision Fermentation",
       "cluster_keywords": "precision fermentation · proteins · food · cultivated meat",
       "cluster_confidence": 1.0,
-      "x": 13.142,
-      "y": 3.647,
+      "x": 13.71,
+      "y": 3.962,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -36323,8 +36323,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": 12.949,
-      "sy": 2.97,
+      "sx": 14.21,
+      "sy": 3.671,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -36337,10 +36337,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "medium",
       "tech_depth_confidence": 0.5,
       "founded_year": 2018,
-      "ux": -5.172,
-      "uy": 1.764,
-      "hx": 13.142,
-      "hy": 3.647,
+      "ux": -5.237,
+      "uy": 1.664,
+      "hx": 13.71,
+      "hy": 3.962,
       "investor_ids": []
     },
     {
@@ -36359,8 +36359,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Digital AgTech & Agrifintech — Precision Fermentation",
       "cluster_keywords": "precision fermentation · proteins · food · cultivated meat",
       "cluster_confidence": 1.0,
-      "x": 13.232,
-      "y": 4.018,
+      "x": 13.715,
+      "y": 3.985,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -36379,8 +36379,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": 13.148,
-      "sy": 3.795,
+      "sx": 14.222,
+      "sy": 3.722,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -36393,10 +36393,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "unclassified",
       "tech_depth_confidence": 0.5,
       "founded_year": null,
-      "ux": -5.147,
-      "uy": 1.763,
-      "hx": 13.232,
-      "hy": 4.018,
+      "ux": -5.211,
+      "uy": 1.663,
+      "hx": 13.715,
+      "hy": 3.985,
       "investor_ids": []
     },
     {
@@ -36415,8 +36415,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Digital AgTech & Agrifintech — Precision Fermentation",
       "cluster_keywords": "precision fermentation · proteins · food · cultivated meat",
       "cluster_confidence": 0.353,
-      "x": -1.043,
-      "y": -0.573,
+      "x": 11.077,
+      "y": 5.387,
       "is_outlier": true,
       "tech_codes": [],
       "industry_codes": [],
@@ -36426,7 +36426,7 @@ window.STARTUP_THEMES_DATA = {
       "pagerank": 0.0,
       "valuation_tier": null,
       "n_investors_mapped": 0,
-      "bio_theme": "",
+      "bio_theme": "Digital AgTech & Agrifintech",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
       "sub_cluster_label": "",
@@ -36435,8 +36435,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": -2.319,
-      "sy": -1.273,
+      "sx": 8.36,
+      "sy": 6.837,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -36450,10 +36450,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "medium",
       "tech_depth_confidence": 0.5,
       "founded_year": 2018,
-      "ux": -4.532,
-      "uy": -1.472,
-      "hx": -1.043,
-      "hy": -0.573,
+      "ux": -4.508,
+      "uy": -1.531,
+      "hx": 11.077,
+      "hy": 5.387,
       "investor_ids": []
     },
     {
@@ -36472,8 +36472,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Digital AgTech & Agrifintech — Precision Fermentation",
       "cluster_keywords": "precision fermentation · proteins · food · cultivated meat",
       "cluster_confidence": 1.0,
-      "x": 12.924,
-      "y": 3.86,
+      "x": 13.696,
+      "y": 3.975,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -36492,8 +36492,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": 12.465,
-      "sy": 3.444,
+      "sx": 14.18,
+      "sy": 3.701,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -36506,10 +36506,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "medium",
       "tech_depth_confidence": 0.5,
       "founded_year": 2021,
-      "ux": -5.163,
-      "uy": 1.746,
-      "hx": 12.924,
-      "hy": 3.86,
+      "ux": -5.227,
+      "uy": 1.646,
+      "hx": 13.696,
+      "hy": 3.975,
       "investor_ids": []
     },
     {
@@ -36528,8 +36528,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Digital AgTech & Agrifintech — Precision Fermentation",
       "cluster_keywords": "precision fermentation · proteins · food · cultivated meat",
       "cluster_confidence": 1.0,
-      "x": 13.184,
-      "y": 4.186,
+      "x": 13.712,
+      "y": 3.995,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -36548,8 +36548,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": 13.043,
-      "sy": 4.17,
+      "sx": 14.216,
+      "sy": 3.745,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -36561,10 +36561,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "medium",
       "tech_depth_confidence": 0.5,
       "founded_year": 2018,
-      "ux": -5.137,
-      "uy": 1.756,
-      "hx": 13.184,
-      "hy": 4.186,
+      "ux": -5.201,
+      "uy": 1.657,
+      "hx": 13.712,
+      "hy": 3.995,
       "investor_ids": []
     },
     {
@@ -36583,8 +36583,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Digital AgTech & Agrifintech — Precision Fermentation",
       "cluster_keywords": "precision fermentation · proteins · food · cultivated meat",
       "cluster_confidence": 0.991,
-      "x": 13.528,
-      "y": 3.533,
+      "x": 13.733,
+      "y": 3.955,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -36603,8 +36603,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": 13.807,
-      "sy": 2.718,
+      "sx": 14.263,
+      "sy": 3.656,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -36614,10 +36614,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "medium",
       "tech_depth_confidence": 0.5,
       "founded_year": 2017,
-      "ux": -5.172,
-      "uy": 1.792,
-      "hx": 13.528,
-      "hy": 3.533,
+      "ux": -5.237,
+      "uy": 1.691,
+      "hx": 13.733,
+      "hy": 3.955,
       "investor_ids": []
     },
     {
@@ -36636,8 +36636,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Digital AgTech & Agrifintech — Precision Fermentation",
       "cluster_keywords": "precision fermentation · proteins · food · cultivated meat",
       "cluster_confidence": 0.873,
-      "x": 14.52,
-      "y": 6.405,
+      "x": 13.794,
+      "y": 4.132,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -36656,8 +36656,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": 16.012,
-      "sy": 9.099,
+      "sx": 14.399,
+      "sy": 4.048,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -36669,10 +36669,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "medium",
       "tech_depth_confidence": 0.5,
       "founded_year": 2019,
-      "ux": -4.966,
-      "uy": 1.798,
-      "hx": 14.52,
-      "hy": 6.405,
+      "ux": -5.033,
+      "uy": 1.704,
+      "hx": 13.794,
+      "hy": 4.132,
       "investor_ids": []
     },
     {
@@ -36691,8 +36691,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Digital AgTech & Agrifintech — Precision Fermentation",
       "cluster_keywords": "precision fermentation · proteins · food · cultivated meat",
       "cluster_confidence": 0.352,
-      "x": -0.97,
-      "y": -0.651,
+      "x": 11.407,
+      "y": 5.037,
       "is_outlier": true,
       "tech_codes": [],
       "industry_codes": [],
@@ -36702,7 +36702,7 @@ window.STARTUP_THEMES_DATA = {
       "pagerank": 0.0,
       "valuation_tier": null,
       "n_investors_mapped": 0,
-      "bio_theme": "",
+      "bio_theme": "Digital AgTech & Agrifintech",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
       "sub_cluster_label": "",
@@ -36711,8 +36711,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": -2.156,
-      "sy": -1.446,
+      "sx": 9.093,
+      "sy": 6.06,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -36724,10 +36724,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "unclassified",
       "tech_depth_confidence": 0.5,
       "founded_year": null,
-      "ux": -4.792,
-      "uy": -1.011,
-      "hx": -0.97,
-      "hy": -0.651,
+      "ux": -4.78,
+      "uy": -1.081,
+      "hx": 11.407,
+      "hy": 5.037,
       "investor_ids": []
     },
     {
@@ -36746,8 +36746,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Digital AgTech & Agrifintech — Precision Fermentation",
       "cluster_keywords": "precision fermentation · proteins · food · cultivated meat",
       "cluster_confidence": 0.351,
-      "x": -0.464,
-      "y": -0.877,
+      "x": 13.684,
+      "y": 4.02,
       "is_outlier": true,
       "tech_codes": [],
       "industry_codes": [],
@@ -36757,7 +36757,7 @@ window.STARTUP_THEMES_DATA = {
       "pagerank": 0.0,
       "valuation_tier": null,
       "n_investors_mapped": 0,
-      "bio_theme": "",
+      "bio_theme": "Digital AgTech & Agrifintech",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
       "sub_cluster_label": "",
@@ -36766,8 +36766,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": -1.031,
-      "sy": -1.948,
+      "sx": 14.154,
+      "sy": 3.8,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -36779,10 +36779,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "medium",
       "tech_depth_confidence": 0.5,
       "founded_year": null,
-      "ux": -5.12,
-      "uy": 1.719,
-      "hx": -0.464,
-      "hy": -0.877,
+      "ux": -5.183,
+      "uy": 1.621,
+      "hx": 13.684,
+      "hy": 4.02,
       "investor_ids": []
     },
     {
@@ -36801,8 +36801,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Digital AgTech & Agrifintech — Precision Fermentation",
       "cluster_keywords": "precision fermentation · proteins · food · cultivated meat",
       "cluster_confidence": 0.773,
-      "x": -0.465,
-      "y": -0.884,
+      "x": 13.678,
+      "y": 3.986,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -36812,7 +36812,7 @@ window.STARTUP_THEMES_DATA = {
       "pagerank": 0.0,
       "valuation_tier": null,
       "n_investors_mapped": 0,
-      "bio_theme": "",
+      "bio_theme": "Digital AgTech & Agrifintech",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
       "sub_cluster_label": "",
@@ -36821,8 +36821,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": -1.034,
-      "sy": -1.965,
+      "sx": 14.14,
+      "sy": 3.725,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -36834,10 +36834,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "medium",
       "tech_depth_confidence": 0.5,
       "founded_year": 2016,
-      "ux": -5.157,
-      "uy": 1.723,
-      "hx": -0.465,
-      "hy": -0.884,
+      "ux": -5.221,
+      "uy": 1.624,
+      "hx": 13.678,
+      "hy": 3.986,
       "investor_ids": []
     },
     {
@@ -36856,8 +36856,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Digital AgTech & Agrifintech — Precision Fermentation",
       "cluster_keywords": "precision fermentation · proteins · food · cultivated meat",
       "cluster_confidence": 1.0,
-      "x": 13.162,
-      "y": 3.727,
+      "x": 13.711,
+      "y": 3.967,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -36876,8 +36876,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": 12.993,
-      "sy": 3.148,
+      "sx": 14.213,
+      "sy": 3.682,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -36887,10 +36887,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "medium",
       "tech_depth_confidence": 0.5,
       "founded_year": 2019,
-      "ux": -5.167,
-      "uy": 1.764,
-      "hx": 13.162,
-      "hy": 3.727,
+      "ux": -5.231,
+      "uy": 1.664,
+      "hx": 13.711,
+      "hy": 3.967,
       "investor_ids": []
     },
     {
@@ -36909,8 +36909,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Digital AgTech & Agrifintech — Precision Fermentation",
       "cluster_keywords": "precision fermentation · proteins · food · cultivated meat",
       "cluster_confidence": 1.0,
-      "x": 12.708,
-      "y": 4.225,
+      "x": 13.683,
+      "y": 3.998,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -36929,8 +36929,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": 11.984,
-      "sy": 4.256,
+      "sx": 14.151,
+      "sy": 3.751,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -36940,10 +36940,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "unclassified",
       "tech_depth_confidence": 0.5,
       "founded_year": 2015,
-      "ux": -5.144,
-      "uy": 1.725,
-      "hx": 12.708,
-      "hy": 4.225,
+      "ux": -5.207,
+      "uy": 1.626,
+      "hx": 13.683,
+      "hy": 3.998,
       "investor_ids": []
     },
     {
@@ -36962,8 +36962,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Aquaculture",
       "cluster_keywords": "aquaculture · fish · antibiotics · salmon",
       "cluster_confidence": 0.797,
-      "x": 2.143,
-      "y": 2.133,
+      "x": 2.122,
+      "y": 2.136,
       "is_outlier": false,
       "tech_codes": [
         "ag_inputs"
@@ -36987,8 +36987,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": 2.195,
-      "sy": 2.173,
+      "sx": 2.148,
+      "sy": 2.18,
       "bio_lens": [
         "biocentric"
       ],
@@ -37011,10 +37011,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2011,
-      "ux": -2.408,
-      "uy": 1.374,
-      "hx": 2.143,
-      "hy": 2.133,
+      "ux": -2.481,
+      "uy": 1.357,
+      "hx": 2.122,
+      "hy": 2.136,
       "investor_ids": []
     },
     {
@@ -37033,8 +37033,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Aquaculture",
       "cluster_keywords": "aquaculture · fish · antibiotics · salmon",
       "cluster_confidence": 1.0,
-      "x": -0.328,
-      "y": -0.333,
+      "x": 2.162,
+      "y": 2.136,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -37044,7 +37044,7 @@ window.STARTUP_THEMES_DATA = {
       "pagerank": 0.0,
       "valuation_tier": null,
       "n_investors_mapped": 0,
-      "bio_theme": "",
+      "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
       "sub_cluster_label": "",
@@ -37053,8 +37053,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": -0.729,
-      "sy": -0.741,
+      "sx": 2.237,
+      "sy": 2.181,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -37066,10 +37066,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "unclassified",
       "tech_depth_confidence": 0.5,
       "founded_year": null,
-      "ux": -2.347,
-      "uy": 1.564,
-      "hx": -0.328,
-      "hy": -0.333,
+      "ux": -2.426,
+      "uy": 1.547,
+      "hx": 2.162,
+      "hy": 2.136,
       "investor_ids": []
     },
     {
@@ -37088,8 +37088,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Aquaculture",
       "cluster_keywords": "aquaculture · fish · antibiotics · salmon",
       "cluster_confidence": 1.0,
-      "x": -9.566,
-      "y": -9.038,
+      "x": -9.565,
+      "y": -9.037,
       "is_outlier": false,
       "tech_codes": [
         "bioinformatics",
@@ -37116,8 +37116,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -7.569,
-      "sy": -8.106,
+      "sx": -7.567,
+      "sy": -8.104,
       "bio_lens": [
         "biocentric",
         "human-health-bio",
@@ -37141,10 +37141,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.916,
       "founded_year": 2023,
-      "ux": -2.439,
-      "uy": 1.638,
-      "hx": -9.566,
-      "hy": -9.038,
+      "ux": -2.519,
+      "uy": 1.618,
+      "hx": -9.565,
+      "hy": -9.037,
       "investor_ids": [
         "GridX",
         "The Ganesha Lab"
@@ -37166,8 +37166,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Aquaculture",
       "cluster_keywords": "aquaculture · fish · antibiotics · salmon",
       "cluster_confidence": 0.797,
-      "x": 2.069,
-      "y": 2.12,
+      "x": 2.047,
+      "y": 2.123,
       "is_outlier": false,
       "tech_codes": [
         "ag_inputs"
@@ -37191,8 +37191,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": 2.031,
-      "sy": 2.144,
+      "sx": 1.983,
+      "sy": 2.151,
       "bio_lens": [
         "biocentric"
       ],
@@ -37215,10 +37215,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2011,
-      "ux": -2.579,
-      "uy": 1.042,
-      "hx": 2.069,
-      "hy": 2.12,
+      "ux": -2.641,
+      "uy": 1.022,
+      "hx": 2.047,
+      "hy": 2.123,
       "investor_ids": []
     },
     {
@@ -37237,8 +37237,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Aquaculture",
       "cluster_keywords": "aquaculture · fish · antibiotics · salmon",
       "cluster_confidence": 1.0,
-      "x": -0.343,
-      "y": -0.323,
+      "x": 2.147,
+      "y": 2.147,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -37248,7 +37248,7 @@ window.STARTUP_THEMES_DATA = {
       "pagerank": 0.0,
       "valuation_tier": null,
       "n_investors_mapped": 0,
-      "bio_theme": "",
+      "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
       "sub_cluster_label": "",
@@ -37257,8 +37257,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": -0.762,
-      "sy": -0.717,
+      "sx": 2.205,
+      "sy": 2.204,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -37270,10 +37270,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "unclassified",
       "tech_depth_confidence": 0.5,
       "founded_year": null,
-      "ux": -2.319,
-      "uy": 1.479,
-      "hx": -0.343,
-      "hy": -0.323,
+      "ux": -2.395,
+      "uy": 1.464,
+      "hx": 2.147,
+      "hy": 2.147,
       "investor_ids": []
     },
     {
@@ -37292,8 +37292,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Aquaculture",
       "cluster_keywords": "aquaculture · fish · antibiotics · salmon",
       "cluster_confidence": 1.0,
-      "x": -0.33,
-      "y": -0.334,
+      "x": 2.16,
+      "y": 2.136,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -37303,7 +37303,7 @@ window.STARTUP_THEMES_DATA = {
       "pagerank": 0.0,
       "valuation_tier": null,
       "n_investors_mapped": 0,
-      "bio_theme": "",
+      "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
       "sub_cluster_label": "",
@@ -37312,8 +37312,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": -0.734,
-      "sy": -0.742,
+      "sx": 2.233,
+      "sy": 2.18,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -37325,10 +37325,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "unclassified",
       "tech_depth_confidence": 0.5,
       "founded_year": null,
-      "ux": -2.352,
-      "uy": 1.555,
-      "hx": -0.33,
-      "hy": -0.334,
+      "ux": -2.43,
+      "uy": 1.538,
+      "hx": 2.16,
+      "hy": 2.136,
       "investor_ids": []
     },
     {
@@ -37347,8 +37347,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Aquaculture",
       "cluster_keywords": "aquaculture · fish · antibiotics · salmon",
       "cluster_confidence": 0.676,
-      "x": 1.908,
-      "y": 2.088,
+      "x": 1.886,
+      "y": 2.091,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -37370,8 +37370,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 0,
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": 1.674,
-      "sy": 2.074,
+      "sx": 1.624,
+      "sy": 2.081,
       "bio_lens": [
         "biocentric",
         "planetary-boundary"
@@ -37394,10 +37394,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2020,
-      "ux": -2.965,
-      "uy": 0.322,
-      "hx": 1.908,
-      "hy": 2.088,
+      "ux": -3.004,
+      "uy": 0.296,
+      "hx": 1.886,
+      "hy": 2.091,
       "investor_ids": []
     },
     {
@@ -37416,8 +37416,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Aquaculture",
       "cluster_keywords": "aquaculture · fish · antibiotics · salmon",
       "cluster_confidence": 0.763,
-      "x": 2.238,
-      "y": 2.101,
+      "x": 2.217,
+      "y": 2.104,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -37436,8 +37436,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": 2.406,
-      "sy": 2.103,
+      "sx": 2.361,
+      "sy": 2.109,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -37449,10 +37449,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "unclassified",
       "tech_depth_confidence": 0.5,
       "founded_year": 2013,
-      "ux": -2.417,
-      "uy": 1.874,
-      "hx": 2.238,
-      "hy": 2.101,
+      "ux": -2.505,
+      "uy": 1.852,
+      "hx": 2.217,
+      "hy": 2.104,
       "investor_ids": []
     },
     {
@@ -37471,8 +37471,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Aquaculture",
       "cluster_keywords": "aquaculture · fish · antibiotics · salmon",
       "cluster_confidence": 1.0,
-      "x": 2.203,
-      "y": 2.115,
+      "x": 2.182,
+      "y": 2.118,
       "is_outlier": false,
       "tech_codes": [
         "iot",
@@ -37498,8 +37498,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": 2.328,
-      "sy": 2.133,
+      "sx": 2.282,
+      "sy": 2.14,
       "bio_lens": [
         "biocentric",
         "human-health-bio",
@@ -37524,10 +37524,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2018,
-      "ux": -2.404,
-      "uy": 1.686,
-      "hx": 2.203,
-      "hy": 2.115,
+      "ux": -2.485,
+      "uy": 1.666,
+      "hx": 2.182,
+      "hy": 2.118,
       "investor_ids": [
         "GridX"
       ]
@@ -37548,8 +37548,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Aquaculture",
       "cluster_keywords": "aquaculture · fish · antibiotics · salmon",
       "cluster_confidence": 0.797,
-      "x": 2.038,
-      "y": 2.135,
+      "x": 2.016,
+      "y": 2.138,
       "is_outlier": false,
       "tech_codes": [
         "ag_inputs"
@@ -37573,8 +37573,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 0,
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": 1.962,
-      "sy": 2.177,
+      "sx": 1.913,
+      "sy": 2.185,
       "bio_lens": [
         "biocentric"
       ],
@@ -37595,10 +37595,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2018,
-      "ux": -2.553,
-      "uy": 0.871,
-      "hx": 2.038,
-      "hy": 2.135,
+      "ux": -2.61,
+      "uy": 0.853,
+      "hx": 2.016,
+      "hy": 2.138,
       "investor_ids": [
         "hatch_blue"
       ]
@@ -37619,8 +37619,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Aquaculture",
       "cluster_keywords": "aquaculture · fish · antibiotics · salmon",
       "cluster_confidence": 0.763,
-      "x": 7.987,
-      "y": 6.945,
+      "x": 8.037,
+      "y": 6.898,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -37639,8 +37639,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": 5.772,
-      "sy": 5.166,
+      "sx": 5.883,
+      "sy": 5.062,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -37652,10 +37652,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "unclassified",
       "tech_depth_confidence": 0.5,
       "founded_year": null,
-      "ux": -2.442,
-      "uy": 2.105,
-      "hx": 7.987,
-      "hy": 6.945,
+      "ux": -2.535,
+      "uy": 2.081,
+      "hx": 8.037,
+      "hy": 6.898,
       "investor_ids": []
     },
     {
@@ -37674,8 +37674,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Aquaculture",
       "cluster_keywords": "aquaculture · fish · antibiotics · salmon",
       "cluster_confidence": 0.797,
-      "x": 2.054,
-      "y": 2.129,
+      "x": 2.032,
+      "y": 2.132,
       "is_outlier": false,
       "tech_codes": [
         "ag_inputs"
@@ -37699,8 +37699,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": 1.997,
-      "sy": 2.165,
+      "sx": 1.949,
+      "sy": 2.172,
       "bio_lens": [
         "biocentric"
       ],
@@ -37721,10 +37721,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2014,
-      "ux": -2.556,
-      "uy": 0.956,
-      "hx": 2.054,
-      "hy": 2.129,
+      "ux": -2.616,
+      "uy": 0.937,
+      "hx": 2.032,
+      "hy": 2.132,
       "investor_ids": []
     },
     {
@@ -37743,8 +37743,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Aquaculture",
       "cluster_keywords": "aquaculture · fish · antibiotics · salmon",
       "cluster_confidence": 1.0,
-      "x": -0.332,
-      "y": -0.333,
+      "x": 2.158,
+      "y": 2.136,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -37754,7 +37754,7 @@ window.STARTUP_THEMES_DATA = {
       "pagerank": 0.0,
       "valuation_tier": null,
       "n_investors_mapped": 0,
-      "bio_theme": "",
+      "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
       "sub_cluster_label": "",
@@ -37763,8 +37763,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": -0.738,
-      "sy": -0.741,
+      "sx": 2.228,
+      "sy": 2.18,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -37776,10 +37776,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "unclassified",
       "tech_depth_confidence": 0.5,
       "founded_year": null,
-      "ux": -2.354,
-      "uy": 1.545,
-      "hx": -0.332,
-      "hy": -0.333,
+      "ux": -2.432,
+      "uy": 1.528,
+      "hx": 2.158,
+      "hy": 2.136,
       "investor_ids": []
     },
     {
@@ -37798,8 +37798,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Aquaculture",
       "cluster_keywords": "aquaculture · fish · antibiotics · salmon",
       "cluster_confidence": 0.832,
-      "x": -0.299,
-      "y": -0.34,
+      "x": 2.191,
+      "y": 2.13,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [],
@@ -37809,7 +37809,7 @@ window.STARTUP_THEMES_DATA = {
       "pagerank": 0.0,
       "valuation_tier": null,
       "n_investors_mapped": 0,
-      "bio_theme": "",
+      "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
       "sub_cluster_label": "",
@@ -37818,8 +37818,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": -0.664,
-      "sy": -0.755,
+      "sx": 2.303,
+      "sy": 2.166,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -37829,10 +37829,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "unclassified",
       "tech_depth_confidence": 0.5,
       "founded_year": null,
-      "ux": -2.334,
-      "uy": 1.713,
-      "hx": -0.299,
-      "hy": -0.34,
+      "ux": -2.417,
+      "uy": 1.695,
+      "hx": 2.191,
+      "hy": 2.13,
       "investor_ids": []
     },
     {
@@ -37851,8 +37851,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Aquaculture",
       "cluster_keywords": "aquaculture · fish · antibiotics · salmon",
       "cluster_confidence": 1.0,
-      "x": -7.785,
-      "y": 7.046,
+      "x": -7.802,
+      "y": 7.062,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -37875,8 +37875,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -8.745,
-      "sy": 7.957,
+      "sx": -8.783,
+      "sy": 7.994,
       "bio_lens": [
         "biocentric",
         "human-health-bio",
@@ -37898,10 +37898,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.916,
       "founded_year": null,
-      "ux": -2.396,
-      "uy": 1.628,
-      "hx": -7.785,
-      "hy": 7.046,
+      "ux": -2.476,
+      "uy": 1.609,
+      "hx": -7.802,
+      "hy": 7.062,
       "investor_ids": [
         "GridX"
       ]
@@ -37922,8 +37922,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Aquaculture",
       "cluster_keywords": "aquaculture · fish · antibiotics · salmon",
       "cluster_confidence": 0.797,
-      "x": 2.002,
-      "y": 2.142,
+      "x": 1.98,
+      "y": 2.145,
       "is_outlier": false,
       "tech_codes": [
         "therapeutics"
@@ -37947,8 +37947,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 0,
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": 1.881,
-      "sy": 2.193,
+      "sx": 1.833,
+      "sy": 2.2,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -37972,10 +37972,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2019,
-      "ux": -2.573,
-      "uy": 0.689,
-      "hx": 2.002,
-      "hy": 2.142,
+      "ux": -2.625,
+      "uy": 0.672,
+      "hx": 1.98,
+      "hy": 2.145,
       "investor_ids": []
     },
     {
@@ -37994,8 +37994,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Dairy",
       "cluster_keywords": "dairy · milk · brazil · brazilian",
       "cluster_confidence": 0.898,
-      "x": 1.509,
-      "y": 1.867,
+      "x": 1.484,
+      "y": 1.869,
       "is_outlier": false,
       "tech_codes": [
         "green_chem",
@@ -38024,8 +38024,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": 0.786,
-      "sy": 1.583,
+      "sx": 0.731,
+      "sy": 1.586,
       "bio_lens": [
         "biobased",
         "biocentric",
@@ -38057,10 +38057,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.712,
       "founded_year": null,
-      "ux": -4.608,
-      "uy": -1.253,
-      "hx": 1.509,
-      "hy": 1.867,
+      "ux": -4.59,
+      "uy": -1.315,
+      "hx": 1.484,
+      "hy": 1.869,
       "investor_ids": [
         "kptl"
       ]
@@ -38081,8 +38081,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Dairy",
       "cluster_keywords": "dairy · milk · brazil · brazilian",
       "cluster_confidence": 0.871,
-      "x": 1.843,
-      "y": 2.065,
+      "x": 1.82,
+      "y": 2.068,
       "is_outlier": false,
       "tech_codes": [
         "biomanufacturing",
@@ -38107,8 +38107,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": 1.529,
-      "sy": 2.022,
+      "sx": 1.479,
+      "sy": 2.029,
       "bio_lens": [
         "biobased",
         "bio-enabled-industrial-transition"
@@ -38134,10 +38134,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.704,
       "founded_year": 2009,
-      "ux": -3.172,
-      "uy": 0.048,
-      "hx": 1.843,
-      "hy": 2.065,
+      "ux": -3.202,
+      "uy": 0.017,
+      "hx": 1.82,
+      "hy": 2.068,
       "investor_ids": []
     },
     {
@@ -38223,8 +38223,8 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.812,
       "founded_year": 2017,
-      "ux": -4.576,
-      "uy": -1.614,
+      "ux": -4.547,
+      "uy": -1.673,
       "hx": -9.483,
       "hy": -2.35,
       "investor_ids": []
@@ -38305,8 +38305,8 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.96,
       "founded_year": 2021,
-      "ux": -4.66,
-      "uy": -1.553,
+      "ux": -4.633,
+      "uy": -1.615,
       "hx": -9.477,
       "hy": -2.368,
       "investor_ids": []
@@ -38327,8 +38327,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Dairy",
       "cluster_keywords": "dairy · milk · brazil · brazilian",
       "cluster_confidence": 1.0,
-      "x": 1.62,
-      "y": 1.877,
+      "x": 1.596,
+      "y": 1.879,
       "is_outlier": false,
       "tech_codes": [
         "computational_bio",
@@ -38354,8 +38354,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": 1.034,
-      "sy": 1.605,
+      "sx": 0.98,
+      "sy": 1.609,
       "bio_lens": [
         "biobased",
         "bio-enabled-industrial-transition"
@@ -38383,10 +38383,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.74,
       "founded_year": 2021,
-      "ux": -4.395,
-      "uy": -0.737,
-      "hx": 1.62,
-      "hy": 1.877,
+      "ux": -4.393,
+      "uy": -0.797,
+      "hx": 1.596,
+      "hy": 1.879,
       "investor_ids": [
         "endurance_28"
       ]
@@ -38407,8 +38407,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Dairy",
       "cluster_keywords": "dairy · milk · brazil · brazilian",
       "cluster_confidence": 0.921,
-      "x": 1.596,
-      "y": 1.859,
+      "x": 1.571,
+      "y": 1.861,
       "is_outlier": false,
       "tech_codes": [
         "formulation",
@@ -38434,8 +38434,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": 0.979,
-      "sy": 1.565,
+      "sx": 0.925,
+      "sy": 1.569,
       "bio_lens": [
         "human-health-bio"
       ],
@@ -38458,10 +38458,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "enabler",
       "tech_depth_confidence": 0.95,
       "founded_year": 2019,
-      "ux": -4.517,
-      "uy": -0.828,
-      "hx": 1.596,
-      "hy": 1.859,
+      "ux": -4.512,
+      "uy": -0.891,
+      "hx": 1.571,
+      "hy": 1.861,
       "investor_ids": [
         "sp_ventures"
       ]
@@ -38482,8 +38482,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Dairy",
       "cluster_keywords": "dairy · milk · brazil · brazilian",
       "cluster_confidence": 1.0,
-      "x": 1.564,
-      "y": 1.845,
+      "x": 1.539,
+      "y": 1.847,
       "is_outlier": false,
       "tech_codes": [
         "fermentation",
@@ -38511,8 +38511,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": 0.908,
-      "sy": 1.533,
+      "sx": 0.854,
+      "sy": 1.537,
       "bio_lens": [
         "biobased",
         "bio-enabled-industrial-transition",
@@ -38543,10 +38543,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.72,
       "founded_year": 2020,
-      "ux": -4.633,
-      "uy": -0.958,
-      "hx": 1.564,
-      "hy": 1.845,
+      "ux": -4.623,
+      "uy": -1.024,
+      "hx": 1.539,
+      "hy": 1.847,
       "investor_ids": [
         "blue_horizon"
       ]
@@ -38624,8 +38624,8 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.728,
       "founded_year": 2018,
-      "ux": -4.599,
-      "uy": -0.963,
+      "ux": -4.589,
+      "uy": -1.027,
       "hx": -9.372,
       "hy": -2.389,
       "investor_ids": [
@@ -38648,8 +38648,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Dairy",
       "cluster_keywords": "dairy · milk · brazil · brazilian",
       "cluster_confidence": 0.898,
-      "x": -10.326,
-      "y": -9.337,
+      "x": -10.324,
+      "y": -9.336,
       "is_outlier": false,
       "tech_codes": [
         "microbial",
@@ -38679,8 +38679,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -9.258,
-      "sy": -8.772,
+      "sx": -9.254,
+      "sy": -8.768,
       "bio_lens": [
         "biobased",
         "biocentric",
@@ -38709,10 +38709,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.808,
       "founded_year": 2015,
-      "ux": -4.701,
-      "uy": -1.184,
-      "hx": -10.326,
-      "hy": -9.337,
+      "ux": -4.684,
+      "uy": -1.25,
+      "hx": -10.324,
+      "hy": -9.336,
       "investor_ids": [
         "sp_ventures"
       ]
@@ -38733,8 +38733,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Dairy",
       "cluster_keywords": "dairy · milk · brazil · brazilian",
       "cluster_confidence": 1.0,
-      "x": -10.279,
-      "y": -9.34,
+      "x": -10.278,
+      "y": -9.339,
       "is_outlier": false,
       "tech_codes": [
         "iot",
@@ -38759,8 +38759,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": -9.154,
-      "sy": -8.778,
+      "sx": -9.15,
+      "sy": -8.775,
       "bio_lens": [
         "biocentric",
         "regenerative"
@@ -38782,10 +38782,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.883,
       "founded_year": 2019,
-      "ux": -4.653,
-      "uy": -0.982,
-      "hx": -10.279,
-      "hy": -9.34,
+      "ux": -4.642,
+      "uy": -1.048,
+      "hx": -10.278,
+      "hy": -9.339,
       "investor_ids": [
         "sp_ventures"
       ]
@@ -38806,8 +38806,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Dairy",
       "cluster_keywords": "dairy · milk · brazil · brazilian",
       "cluster_confidence": 0.353,
-      "x": 1.875,
-      "y": 2.073,
+      "x": 1.852,
+      "y": 2.076,
       "is_outlier": true,
       "tech_codes": [],
       "industry_codes": [
@@ -38829,8 +38829,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": 1.599,
-      "sy": 2.041,
+      "sx": 1.549,
+      "sy": 2.047,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -38853,10 +38853,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2019,
-      "ux": -3.087,
-      "uy": 0.185,
-      "hx": 1.875,
-      "hy": 2.073,
+      "ux": -3.121,
+      "uy": 0.156,
+      "hx": 1.852,
+      "hy": 2.076,
       "investor_ids": [
         "The Ganesha Lab"
       ]
@@ -38877,8 +38877,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Dairy",
       "cluster_keywords": "dairy · milk · brazil · brazilian",
       "cluster_confidence": 0.921,
-      "x": 1.633,
-      "y": 1.892,
+      "x": 1.608,
+      "y": 1.894,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -38900,8 +38900,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": 1.061,
-      "sy": 1.639,
+      "sx": 1.008,
+      "sy": 1.643,
       "bio_lens": [
         "biobased",
         "bio-enabled-industrial-transition",
@@ -38927,9 +38927,9 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth_confidence": 0.95,
       "founded_year": 2022,
       "ux": -4.306,
-      "uy": -0.701,
-      "hx": 1.633,
-      "hy": 1.892,
+      "uy": -0.758,
+      "hx": 1.608,
+      "hy": 1.894,
       "investor_ids": []
     },
     {
@@ -38948,8 +38948,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Dairy",
       "cluster_keywords": "dairy · milk · brazil · brazilian",
       "cluster_confidence": 0.356,
-      "x": 4.037,
-      "y": 3.609,
+      "x": 4.027,
+      "y": 3.621,
       "is_outlier": true,
       "tech_codes": [],
       "industry_codes": [
@@ -38972,8 +38972,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
-      "sx": 6.404,
-      "sy": 5.453,
+      "sx": 6.383,
+      "sy": 5.48,
       "bio_lens": [
         "biocentric",
         "planetary-boundary",
@@ -38994,10 +38994,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "enabler",
       "tech_depth_confidence": 0.95,
       "founded_year": 2021,
-      "ux": 7.421,
-      "uy": 8.217,
-      "hx": 4.037,
-      "hy": 3.609,
+      "ux": 7.082,
+      "uy": 8.435,
+      "hx": 4.027,
+      "hy": 3.621,
       "investor_ids": []
     },
     {
@@ -39016,8 +39016,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Dairy",
       "cluster_keywords": "dairy · milk · brazil · brazilian",
       "cluster_confidence": 0.845,
-      "x": 1.596,
-      "y": 1.859,
+      "x": 1.571,
+      "y": 1.861,
       "is_outlier": false,
       "tech_codes": [
         "formulation"
@@ -39042,8 +39042,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": 0.979,
-      "sy": 1.565,
+      "sx": 0.925,
+      "sy": 1.569,
       "bio_lens": [
         "planetary-boundary"
       ],
@@ -39063,10 +39063,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "enabler",
       "tech_depth_confidence": 0.95,
       "founded_year": 2019,
-      "ux": -4.518,
-      "uy": -0.828,
-      "hx": 1.596,
-      "hy": 1.859,
+      "ux": -4.512,
+      "uy": -0.891,
+      "hx": 1.571,
+      "hy": 1.861,
       "investor_ids": [
         "kamay_ventures"
       ]
@@ -39087,8 +39087,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Dairy",
       "cluster_keywords": "dairy · milk · brazil · brazilian",
       "cluster_confidence": 0.351,
-      "x": 1.539,
-      "y": 1.889,
+      "x": 1.514,
+      "y": 1.891,
       "is_outlier": true,
       "tech_codes": [],
       "industry_codes": [
@@ -39110,8 +39110,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
-      "sx": 0.853,
-      "sy": 1.631,
+      "sx": 0.798,
+      "sy": 1.635,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -39137,10 +39137,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2020,
-      "ux": -4.461,
-      "uy": -1.141,
-      "hx": 1.539,
-      "hy": 1.889,
+      "ux": -4.447,
+      "uy": -1.2,
+      "hx": 1.514,
+      "hy": 1.891,
       "investor_ids": []
     },
     {
@@ -39159,8 +39159,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Dairy",
       "cluster_keywords": "dairy · milk · brazil · brazilian",
       "cluster_confidence": 0.35,
-      "x": 1.913,
-      "y": 2.043,
+      "x": 1.891,
+      "y": 2.046,
       "is_outlier": true,
       "tech_codes": [],
       "industry_codes": [],
@@ -39179,8 +39179,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": null,
       "valuation_estimate_source": null,
-      "sx": 1.685,
-      "sy": 1.974,
+      "sx": 1.636,
+      "sy": 1.98,
       "bio_lens": [],
       "domain_tags": [],
       "tech_tags": [],
@@ -39192,10 +39192,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "unclassified",
       "tech_depth_confidence": 0.5,
       "founded_year": null,
-      "ux": -3.171,
-      "uy": 0.414,
-      "hx": 1.913,
-      "hy": 2.043,
+      "ux": -3.211,
+      "uy": 0.381,
+      "hx": 1.891,
+      "hy": 2.046,
       "investor_ids": []
     },
     {
@@ -39214,8 +39214,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Dairy",
       "cluster_keywords": "dairy · milk · brazil · brazilian",
       "cluster_confidence": 0.898,
-      "x": 1.527,
-      "y": 1.853,
+      "x": 1.502,
+      "y": 1.854,
       "is_outlier": false,
       "tech_codes": [
         "formulation",
@@ -39242,8 +39242,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 15,
       "valuation_estimate_usd": 15.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": 0.826,
-      "sy": 1.55,
+      "sx": 0.771,
+      "sy": 1.554,
       "bio_lens": [
         "biobased",
         "bio-enabled-industrial-transition",
@@ -39272,10 +39272,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.716,
       "founded_year": 2018,
-      "ux": -4.651,
-      "uy": -1.147,
-      "hx": 1.527,
-      "hy": 1.853,
+      "ux": -4.636,
+      "uy": -1.212,
+      "hx": 1.502,
+      "hy": 1.854,
       "investor_ids": [
         "GridX"
       ]
@@ -39296,8 +39296,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Dairy",
       "cluster_keywords": "dairy · milk · brazil · brazilian",
       "cluster_confidence": 1.0,
-      "x": 1.576,
-      "y": 1.854,
+      "x": 1.551,
+      "y": 1.856,
       "is_outlier": false,
       "tech_codes": [
         "fermentation",
@@ -39325,8 +39325,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": 0.935,
-      "sy": 1.554,
+      "sx": 0.881,
+      "sy": 1.557,
       "bio_lens": [
         "biobased",
         "biocentric",
@@ -39358,10 +39358,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.812,
       "founded_year": 2022,
-      "ux": -4.571,
-      "uy": -0.914,
-      "hx": 1.576,
-      "hy": 1.854,
+      "ux": -4.563,
+      "uy": -0.978,
+      "hx": 1.551,
+      "hy": 1.856,
       "investor_ids": [
         "GridX"
       ]
@@ -39382,8 +39382,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Food Waste",
       "cluster_keywords": "food waste · grows · aquaculture · environmental",
       "cluster_confidence": 0.857,
-      "x": 1.863,
-      "y": 2.208,
+      "x": 1.841,
+      "y": 2.212,
       "is_outlier": false,
       "tech_codes": [
         "therapeutics"
@@ -39407,8 +39407,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 5,
       "valuation_estimate_usd": 5.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": 1.574,
-      "sy": 2.34,
+      "sx": 1.523,
+      "sy": 2.348,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -39430,10 +39430,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2019,
-      "ux": -2.462,
-      "uy": -0.068,
-      "hx": 1.863,
-      "hy": 2.208,
+      "ux": -2.493,
+      "uy": -0.077,
+      "hx": 1.841,
+      "hy": 2.212,
       "investor_ids": [
         "kptl"
       ]
@@ -39454,8 +39454,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Food Waste",
       "cluster_keywords": "food waste · grows · aquaculture · environmental",
       "cluster_confidence": 1.0,
-      "x": 1.912,
-      "y": 2.159,
+      "x": 1.889,
+      "y": 2.163,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -39477,8 +39477,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": 1.682,
-      "sy": 2.232,
+      "sx": 1.632,
+      "sy": 2.239,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -39498,10 +39498,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2019,
-      "ux": -2.622,
-      "uy": 0.236,
-      "hx": 1.912,
-      "hy": 2.159,
+      "ux": -2.661,
+      "uy": 0.22,
+      "hx": 1.889,
+      "hy": 2.163,
       "investor_ids": [
         "hatch"
       ]
@@ -39522,8 +39522,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Food Waste",
       "cluster_keywords": "food waste · grows · aquaculture · environmental",
       "cluster_confidence": 0.966,
-      "x": 1.898,
-      "y": 2.17,
+      "x": 1.875,
+      "y": 2.173,
       "is_outlier": false,
       "tech_codes": [
         "water_tech"
@@ -39547,8 +39547,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": 1.651,
-      "sy": 2.255,
+      "sx": 1.601,
+      "sy": 2.263,
       "bio_lens": [
         "biocentric",
         "planetary-boundary"
@@ -39570,10 +39570,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2015,
-      "ux": -2.593,
-      "uy": 0.154,
-      "hx": 1.898,
-      "hy": 2.17,
+      "ux": -2.629,
+      "uy": 0.139,
+      "hx": 1.875,
+      "hy": 2.173,
       "investor_ids": []
     },
     {
@@ -39592,8 +39592,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Food Waste",
       "cluster_keywords": "food waste · grows · aquaculture · environmental",
       "cluster_confidence": 1.0,
-      "x": 1.913,
-      "y": 2.143,
+      "x": 1.891,
+      "y": 2.146,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -39615,8 +39615,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 1.5,
       "valuation_estimate_source": "emergente",
-      "sx": 1.685,
-      "sy": 2.195,
+      "sx": 1.636,
+      "sy": 2.203,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -39638,10 +39638,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2022,
-      "ux": -2.698,
-      "uy": 0.267,
-      "hx": 1.913,
-      "hy": 2.143,
+      "ux": -2.736,
+      "uy": 0.249,
+      "hx": 1.891,
+      "hy": 2.146,
       "investor_ids": []
     },
     {
@@ -39660,8 +39660,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Food Waste",
       "cluster_keywords": "food waste · grows · aquaculture · environmental",
       "cluster_confidence": 0.909,
-      "x": 1.921,
-      "y": 2.15,
+      "x": 1.899,
+      "y": 2.153,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -39683,8 +39683,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 25,
       "valuation_estimate_usd": 25.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": 1.702,
-      "sy": 2.211,
+      "sx": 1.653,
+      "sy": 2.218,
       "bio_lens": [
         "biobased",
         "bio-enabled-industrial-transition",
@@ -39705,10 +39705,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2017,
-      "ux": -2.654,
-      "uy": 0.293,
-      "hx": 1.921,
-      "hy": 2.15,
+      "ux": -2.694,
+      "uy": 0.276,
+      "hx": 1.899,
+      "hy": 2.153,
       "investor_ids": [
         "idb_lab"
       ]
@@ -39729,8 +39729,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Food Waste",
       "cluster_keywords": "food waste · grows · aquaculture · environmental",
       "cluster_confidence": 1.0,
-      "x": 1.92,
-      "y": 2.133,
+      "x": 1.897,
+      "y": 2.136,
       "is_outlier": false,
       "tech_codes": [
         "ai_ml",
@@ -39755,8 +39755,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 50,
       "valuation_estimate_usd": 50.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": 1.699,
-      "sy": 2.174,
+      "sx": 1.65,
+      "sy": 2.181,
       "bio_lens": [
         "biobased",
         "bio-enabled-industrial-transition",
@@ -39784,10 +39784,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2018,
-      "ux": -2.735,
-      "uy": 0.312,
-      "hx": 1.92,
-      "hy": 2.133,
+      "ux": -2.775,
+      "uy": 0.292,
+      "hx": 1.897,
+      "hy": 2.136,
       "investor_ids": [
         "plug_and_play"
       ]
@@ -39808,8 +39808,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Food Waste",
       "cluster_keywords": "food waste · grows · aquaculture · environmental",
       "cluster_confidence": 0.354,
-      "x": 2.181,
-      "y": 2.061,
+      "x": 2.16,
+      "y": 2.064,
       "is_outlier": true,
       "tech_codes": [],
       "industry_codes": [
@@ -39831,8 +39831,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": null,
       "valuation_estimate_usd": 4.0,
       "valuation_estimate_source": "investors_proxy",
-      "sx": 2.281,
-      "sy": 2.013,
+      "sx": 2.234,
+      "sy": 2.019,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -39857,10 +39857,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2016,
-      "ux": -2.693,
-      "uy": 1.664,
-      "hx": 2.181,
-      "hy": 2.061,
+      "ux": -2.772,
+      "uy": 1.636,
+      "hx": 2.16,
+      "hy": 2.064,
       "investor_ids": [
         "kayyak_ventures"
       ]
@@ -39881,8 +39881,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Food Waste",
       "cluster_keywords": "food waste · grows · aquaculture · environmental",
       "cluster_confidence": 1.0,
-      "x": 1.922,
-      "y": 2.12,
+      "x": 1.9,
+      "y": 2.123,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -39904,8 +39904,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 0,
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": 1.705,
-      "sy": 2.145,
+      "sx": 1.656,
+      "sy": 2.152,
       "bio_lens": [
         "biobased",
         "bio-enabled-industrial-transition",
@@ -39929,10 +39929,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2015,
-      "ux": -2.792,
-      "uy": 0.343,
-      "hx": 1.922,
-      "hy": 2.12,
+      "ux": -2.833,
+      "uy": 0.322,
+      "hx": 1.9,
+      "hy": 2.123,
       "investor_ids": []
     },
     {
@@ -39951,8 +39951,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Food Waste",
       "cluster_keywords": "food waste · grows · aquaculture · environmental",
       "cluster_confidence": 1.0,
-      "x": 1.889,
-      "y": 2.099,
+      "x": 1.867,
+      "y": 2.102,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -39974,8 +39974,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 10,
       "valuation_estimate_usd": 10.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": 1.632,
-      "sy": 2.098,
+      "sx": 1.582,
+      "sy": 2.104,
       "bio_lens": [
         "biobased",
         "bio-enabled-industrial-transition",
@@ -39998,10 +39998,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2021,
-      "ux": -2.943,
-      "uy": 0.217,
-      "hx": 1.889,
-      "hy": 2.099,
+      "ux": -2.978,
+      "uy": 0.192,
+      "hx": 1.867,
+      "hy": 2.102,
       "investor_ids": [
         "endurance_28"
       ]
@@ -40022,8 +40022,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Food Waste",
       "cluster_keywords": "food waste · grows · aquaculture · environmental",
       "cluster_confidence": 0.903,
-      "x": 1.895,
-      "y": 2.099,
+      "x": 1.873,
+      "y": 2.102,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -40045,8 +40045,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 100,
       "valuation_estimate_usd": 100.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": 1.646,
-      "sy": 2.099,
+      "sx": 1.595,
+      "sy": 2.105,
       "bio_lens": [
         "biobased",
         "bio-enabled-industrial-transition",
@@ -40071,10 +40071,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2020,
-      "ux": -2.932,
-      "uy": 0.246,
-      "hx": 1.895,
-      "hy": 2.099,
+      "ux": -2.968,
+      "uy": 0.221,
+      "hx": 1.873,
+      "hy": 2.102,
       "investor_ids": [
         "lightjump_acquisition"
       ]
@@ -40095,8 +40095,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Food Waste",
       "cluster_keywords": "food waste · grows · aquaculture · environmental",
       "cluster_confidence": 0.357,
-      "x": 1.816,
-      "y": 2.171,
+      "x": 1.793,
+      "y": 2.175,
       "is_outlier": true,
       "tech_codes": [
         "biomaterials"
@@ -40120,8 +40120,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": 1.469,
-      "sy": 2.259,
+      "sx": 1.418,
+      "sy": 2.266,
       "bio_lens": [
         "biobased",
         "bio-enabled-industrial-transition"
@@ -40143,10 +40143,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2018,
-      "ux": -2.705,
-      "uy": -0.238,
-      "hx": 1.816,
-      "hy": 2.171,
+      "ux": -2.73,
+      "uy": -0.253,
+      "hx": 1.793,
+      "hy": 2.175,
       "investor_ids": []
     },
     {
@@ -40215,8 +40215,8 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.874,
       "founded_year": 2020,
-      "ux": -2.569,
-      "uy": -0.084,
+      "ux": -2.599,
+      "uy": -0.096,
       "hx": -1.466,
       "hy": 9.212,
       "investor_ids": [
@@ -40239,8 +40239,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Food Waste",
       "cluster_keywords": "food waste · grows · aquaculture · environmental",
       "cluster_confidence": 0.359,
-      "x": -3.287,
-      "y": -9.654,
+      "x": -3.288,
+      "y": -9.651,
       "is_outlier": true,
       "tech_codes": [
         "diagnostics"
@@ -40264,8 +40264,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 0,
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -2.171,
-      "sy": -10.332,
+      "sx": -2.174,
+      "sy": -10.325,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -40286,10 +40286,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.68,
       "founded_year": 2015,
-      "ux": -2.504,
-      "uy": -0.062,
-      "hx": -3.287,
-      "hy": -9.654,
+      "ux": -2.535,
+      "uy": -0.073,
+      "hx": -3.288,
+      "hy": -9.651,
       "investor_ids": []
     },
     {
@@ -40308,8 +40308,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Food Waste",
       "cluster_keywords": "food waste · grows · aquaculture · environmental",
       "cluster_confidence": 0.909,
-      "x": 1.902,
-      "y": 2.169,
+      "x": 1.879,
+      "y": 2.172,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -40331,8 +40331,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": 1.659,
-      "sy": 2.253,
+      "sx": 1.609,
+      "sy": 2.261,
       "bio_lens": [
         "biobased",
         "bio-enabled-industrial-transition",
@@ -40356,10 +40356,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2013,
-      "ux": -2.591,
-      "uy": 0.172,
-      "hx": 1.902,
-      "hy": 2.169,
+      "ux": -2.628,
+      "uy": 0.158,
+      "hx": 1.879,
+      "hy": 2.172,
       "investor_ids": []
     },
     {
@@ -40378,8 +40378,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Food Waste",
       "cluster_keywords": "food waste · grows · aquaculture · environmental",
       "cluster_confidence": 1.0,
-      "x": 1.909,
-      "y": 2.12,
+      "x": 1.886,
+      "y": 2.123,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -40401,8 +40401,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 25,
       "valuation_estimate_usd": 25.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": 1.675,
-      "sy": 2.144,
+      "sx": 1.625,
+      "sy": 2.151,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -40422,10 +40422,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2019,
-      "ux": -2.815,
-      "uy": 0.28,
-      "hx": 1.909,
-      "hy": 2.12,
+      "ux": -2.853,
+      "uy": 0.258,
+      "hx": 1.886,
+      "hy": 2.123,
       "investor_ids": [
         "fondo_alerce"
       ]
@@ -40446,8 +40446,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Microalgae",
       "cluster_keywords": "microalgae · media · specializes · microbiological",
       "cluster_confidence": 1.0,
-      "x": 1.819,
-      "y": 2.194,
+      "x": 1.796,
+      "y": 2.197,
       "is_outlier": false,
       "tech_codes": [],
       "industry_codes": [
@@ -40469,8 +40469,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 0,
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": 1.475,
-      "sy": 2.308,
+      "sx": 1.424,
+      "sy": 2.316,
       "bio_lens": [
         "biobased",
         "human-health-bio"
@@ -40490,10 +40490,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.95,
       "founded_year": 2002,
-      "ux": -2.596,
-      "uy": -0.259,
-      "hx": 1.819,
-      "hy": 2.194,
+      "ux": -2.621,
+      "uy": -0.271,
+      "hx": 1.796,
+      "hy": 2.197,
       "investor_ids": []
     },
     {
@@ -40512,8 +40512,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Microalgae",
       "cluster_keywords": "microalgae · media · specializes · microbiological",
       "cluster_confidence": 1.0,
-      "x": 1.823,
-      "y": 2.192,
+      "x": 1.8,
+      "y": 2.195,
       "is_outlier": false,
       "tech_codes": [
         "biomanufacturing",
@@ -40538,8 +40538,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": 1.484,
-      "sy": 2.304,
+      "sx": 1.433,
+      "sy": 2.312,
       "bio_lens": [
         "biobased",
         "bio-enabled-industrial-transition"
@@ -40562,10 +40562,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.728,
       "founded_year": 2014,
-      "ux": -2.599,
-      "uy": -0.235,
-      "hx": 1.823,
-      "hy": 2.192,
+      "ux": -2.624,
+      "uy": -0.247,
+      "hx": 1.8,
+      "hy": 2.195,
       "investor_ids": []
     },
     {
@@ -40584,8 +40584,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Microalgae",
       "cluster_keywords": "microalgae · media · specializes · microbiological",
       "cluster_confidence": 1.0,
-      "x": 1.808,
-      "y": 2.197,
+      "x": 1.785,
+      "y": 2.201,
       "is_outlier": false,
       "tech_codes": [
         "biomanufacturing",
@@ -40610,8 +40610,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": 1.451,
-      "sy": 2.316,
+      "sx": 1.4,
+      "sy": 2.324,
       "bio_lens": [
         "biobased",
         "bio-enabled-industrial-transition"
@@ -40637,10 +40637,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.716,
       "founded_year": 2017,
-      "ux": -2.594,
-      "uy": -0.315,
-      "hx": 1.808,
-      "hy": 2.197,
+      "ux": -2.617,
+      "uy": -0.326,
+      "hx": 1.785,
+      "hy": 2.201,
       "investor_ids": []
     },
     {
@@ -40714,8 +40714,8 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.876,
       "founded_year": 2021,
-      "ux": -4.523,
-      "uy": -1.808,
+      "ux": -4.489,
+      "uy": -1.865,
       "hx": -9.514,
       "hy": -2.33,
       "investor_ids": []
@@ -40736,8 +40736,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Microalgae",
       "cluster_keywords": "microalgae · media · specializes · microbiological",
       "cluster_confidence": 1.0,
-      "x": 1.823,
-      "y": 2.195,
+      "x": 1.8,
+      "y": 2.199,
       "is_outlier": false,
       "tech_codes": [
         "biomanufacturing",
@@ -40762,8 +40762,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 15,
       "valuation_estimate_usd": 15.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": 1.485,
-      "sy": 2.311,
+      "sx": 1.434,
+      "sy": 2.32,
       "bio_lens": [
         "biobased",
         "bio-enabled-industrial-transition"
@@ -40788,10 +40788,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.728,
       "founded_year": 2007,
-      "ux": -2.582,
-      "uy": -0.239,
-      "hx": 1.823,
-      "hy": 2.195,
+      "ux": -2.607,
+      "uy": -0.25,
+      "hx": 1.8,
+      "hy": 2.199,
       "investor_ids": []
     },
     {
@@ -40862,8 +40862,8 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.696,
       "founded_year": 2019,
-      "ux": -2.573,
-      "uy": -0.44,
+      "ux": -2.593,
+      "uy": -0.45,
       "hx": -9.172,
       "hy": -2.066,
       "investor_ids": []
@@ -40884,8 +40884,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Microalgae",
       "cluster_keywords": "microalgae · media · specializes · microbiological",
       "cluster_confidence": 0.931,
-      "x": 1.8,
-      "y": 2.192,
+      "x": 1.777,
+      "y": 2.196,
       "is_outlier": false,
       "tech_codes": [
         "biomanufacturing",
@@ -40910,8 +40910,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 0,
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": 1.433,
-      "sy": 2.304,
+      "sx": 1.382,
+      "sy": 2.312,
       "bio_lens": [
         "biobased",
         "bio-enabled-industrial-transition"
@@ -40937,10 +40937,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.72,
       "founded_year": 2013,
-      "ux": -2.632,
-      "uy": -0.346,
-      "hx": 1.8,
-      "hy": 2.192,
+      "ux": -2.653,
+      "uy": -0.358,
+      "hx": 1.777,
+      "hy": 2.196,
       "investor_ids": []
     },
     {
@@ -40959,8 +40959,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Microalgae",
       "cluster_keywords": "microalgae · media · specializes · microbiological",
       "cluster_confidence": 1.0,
-      "x": 1.797,
-      "y": 2.203,
+      "x": 1.774,
+      "y": 2.207,
       "is_outlier": false,
       "tech_codes": [
         "biomanufacturing",
@@ -40985,8 +40985,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 0,
       "valuation_estimate_usd": 0.8,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": 1.427,
-      "sy": 2.329,
+      "sx": 1.376,
+      "sy": 2.337,
       "bio_lens": [
         "biobased",
         "bio-enabled-industrial-transition"
@@ -41009,10 +41009,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.704,
       "founded_year": 2016,
-      "ux": -2.583,
-      "uy": -0.375,
-      "hx": 1.797,
-      "hy": 2.203,
+      "ux": -2.604,
+      "uy": -0.385,
+      "hx": 1.774,
+      "hy": 2.207,
       "investor_ids": []
     },
     {
@@ -41094,8 +41094,8 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.96,
       "founded_year": 2011,
-      "ux": -3.108,
-      "uy": 0.329,
+      "ux": -3.145,
+      "uy": 0.299,
       "hx": -9.068,
       "hy": -2.2,
       "investor_ids": [
@@ -41192,8 +41192,8 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.96,
       "founded_year": 2021,
-      "ux": -4.508,
-      "uy": -1.54,
+      "ux": -4.482,
+      "uy": -1.598,
       "hx": -9.467,
       "hy": -2.342,
       "investor_ids": [
@@ -41277,8 +41277,8 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.812,
       "founded_year": 2022,
-      "ux": -3.764,
-      "uy": 2.527,
+      "ux": -3.861,
+      "uy": 2.462,
       "hx": -8.722,
       "hy": -2.432,
       "investor_ids": [
@@ -41301,8 +41301,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Microalgae",
       "cluster_keywords": "microalgae · media · specializes · microbiological",
       "cluster_confidence": 0.36,
-      "x": -3.352,
-      "y": -9.652,
+      "x": -3.353,
+      "y": -9.648,
       "is_outlier": true,
       "tech_codes": [
         "biomanufacturing",
@@ -41327,8 +41327,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": -2.315,
-      "sy": -10.326,
+      "sx": -2.318,
+      "sy": -10.319,
       "bio_lens": [
         "biobased",
         "bio-enabled-industrial-transition"
@@ -41352,10 +41352,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.764,
       "founded_year": 2015,
-      "ux": -2.626,
-      "uy": -0.518,
-      "hx": -3.352,
-      "hy": -9.652,
+      "ux": -2.642,
+      "uy": -0.529,
+      "hx": -3.353,
+      "hy": -9.648,
       "investor_ids": []
     },
     {
@@ -41374,8 +41374,8 @@ window.STARTUP_THEMES_DATA = {
       "cluster_label": "Food Systems & Alt Proteins — Microalgae",
       "cluster_keywords": "microalgae · media · specializes · microbiological",
       "cluster_confidence": 0.8,
-      "x": 1.819,
-      "y": 2.145,
+      "x": 1.796,
+      "y": 2.148,
       "is_outlier": false,
       "tech_codes": [
         "biomanufacturing",
@@ -41400,8 +41400,8 @@ window.STARTUP_THEMES_DATA = {
       "valuation_bucket_usd": 1,
       "valuation_estimate_usd": 1.0,
       "valuation_estimate_source": "gridx_valuation",
-      "sx": 1.477,
-      "sy": 2.199,
+      "sx": 1.425,
+      "sy": 2.207,
       "bio_lens": [
         "biobased",
         "bio-enabled-industrial-transition"
@@ -41429,10 +41429,10 @@ window.STARTUP_THEMES_DATA = {
       "tech_depth": "deep",
       "tech_depth_confidence": 0.728,
       "founded_year": 2020,
-      "ux": -2.828,
-      "uy": -0.183,
-      "hx": 1.819,
-      "hy": 2.145,
+      "ux": -2.853,
+      "uy": -0.202,
+      "hx": 1.796,
+      "hy": 2.148,
       "investor_ids": []
     }
   ],
@@ -41444,8 +41444,7 @@ window.STARTUP_THEMES_DATA = {
       "size": 113,
       "bio_themes": {
         "Therapeutics": 2,
-        "Diagnostics & Devices": 102,
-        "—": 5,
+        "Diagnostics & Devices": 107,
         "Biomanufacturing & Platform Technologies": 4
       },
       "tech_codes": {
@@ -41501,8 +41500,7 @@ window.STARTUP_THEMES_DATA = {
       "keywords": "biologicals · crop resilience · bioinputs · crops",
       "size": 83,
       "bio_themes": {
-        "Bioinputs & Crop Resilience": 59,
-        "—": 14,
+        "Bioinputs & Crop Resilience": 73,
         "Food Systems & Alt Proteins": 3,
         "Therapeutics": 2,
         "Biomanufacturing & Platform Technologies": 3,
@@ -41567,9 +41565,8 @@ window.STARTUP_THEMES_DATA = {
       "keywords": "agronomic · satellite · field · imagery",
       "size": 67,
       "bio_themes": {
-        "Precision Agriculture": 41,
+        "Precision Agriculture": 57,
         "Nature & Ecosystem Tech": 6,
-        "—": 16,
         "Biomanufacturing & Platform Technologies": 1,
         "Food Systems & Alt Proteins": 2,
         "Diagnostics & Devices": 1
@@ -41625,9 +41622,8 @@ window.STARTUP_THEMES_DATA = {
       "keywords": "materials · biomaterials · chemistry · circular",
       "size": 52,
       "bio_themes": {
-        "Biomaterials & Green Chemistry": 43,
+        "Biomaterials & Green Chemistry": 46,
         "Biomanufacturing & Platform Technologies": 4,
-        "—": 3,
         "Food Systems & Alt Proteins": 2
       },
       "tech_codes": {
@@ -41689,11 +41685,10 @@ window.STARTUP_THEMES_DATA = {
       "keywords": "wound · therapeutics · regenerative medicine · cancer",
       "size": 47,
       "bio_themes": {
-        "Therapeutics": 41,
+        "Therapeutics": 42,
         "Biomanufacturing & Platform Technologies": 3,
         "Biomaterials & Green Chemistry": 1,
-        "Diagnostics & Devices": 1,
-        "—": 1
+        "Diagnostics & Devices": 1
       },
       "tech_codes": {
         "nanotech": 7,
@@ -41742,8 +41737,7 @@ window.STARTUP_THEMES_DATA = {
       "keywords": "therapeutics · drug discovery · therapeutic · cancer",
       "size": 30,
       "bio_themes": {
-        "Therapeutics": 26,
-        "—": 2,
+        "Therapeutics": 28,
         "Biomanufacturing & Platform Technologies": 1,
         "Diagnostics & Devices": 1
       },
@@ -41911,9 +41905,8 @@ window.STARTUP_THEMES_DATA = {
       "keywords": "anid · university · adapted · bioinputs",
       "size": 18,
       "bio_themes": {
-        "Food Systems & Alt Proteins": 5,
+        "Food Systems & Alt Proteins": 9,
         "Bioinputs & Crop Resilience": 2,
-        "—": 4,
         "Precision Agriculture": 3,
         "Therapeutics": 3,
         "Biomanufacturing & Platform Technologies": 1
@@ -41984,8 +41977,7 @@ window.STARTUP_THEMES_DATA = {
       "keywords": "aquaculture · fish · antibiotics · salmon",
       "size": 16,
       "bio_themes": {
-        "Food Systems & Alt Proteins": 8,
-        "—": 5,
+        "Food Systems & Alt Proteins": 13,
         "Therapeutics": 1,
         "Precision Agriculture": 1,
         "Bioinputs & Crop Resilience": 1
@@ -42097,8 +42089,7 @@ window.STARTUP_THEMES_DATA = {
       "keywords": "precision fermentation · proteins · food · cultivated meat",
       "size": 12,
       "bio_themes": {
-        "Digital AgTech & Agrifintech": 8,
-        "—": 4
+        "Digital AgTech & Agrifintech": 12
       },
       "tech_codes": {},
       "industry_codes": {},

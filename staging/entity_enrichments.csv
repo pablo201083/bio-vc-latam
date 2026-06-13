@@ -1,55 +1,11 @@
 entity_id,table_name,field_name,new_value,source_url,confidence,notes
-bioplast-br,startup_extended,bio_theme_primary,Biomaterials & Green Chemistry,https://research.biolatam.io/clustering-inference,0.7,Inferred from cluster 0 theme mapping
-biorefinery-tech-brazil-br,startup_extended,bio_theme_primary,Biomaterials & Green Chemistry,https://research.biolatam.io/clustering-inference,0.7,Inferred from cluster 0 theme mapping
-lifepack-co,startup_extended,bio_theme_primary,Biomaterials & Green Chemistry,https://research.biolatam.io/clustering-inference,0.7,Inferred from cluster 0 theme mapping
-agricultic-do,startup_extended,bio_theme_primary,Precision Agriculture,https://research.biolatam.io/clustering-inference,0.7,Inferred from cluster 1 theme mapping
-agritech-bolivia-bo,startup_extended,bio_theme_primary,Precision Agriculture,https://research.biolatam.io/clustering-inference,0.7,Inferred from cluster 1 theme mapping
-agro-logica-co,startup_extended,bio_theme_primary,Precision Agriculture,https://research.biolatam.io/clustering-inference,0.7,Inferred from cluster 1 theme mapping
-agro360-do,startup_extended,bio_theme_primary,Precision Agriculture,https://research.biolatam.io/clustering-inference,0.7,Inferred from cluster 1 theme mapping
-agrobit-bolivia-operations-bo,startup_extended,bio_theme_primary,Precision Agriculture,https://research.biolatam.io/clustering-inference,0.7,Inferred from cluster 1 theme mapping
-agrocontrol-gt,startup_extended,bio_theme_primary,Precision Agriculture,https://research.biolatam.io/clustering-inference,0.7,Inferred from cluster 1 theme mapping
-agroguia-ve,startup_extended,bio_theme_primary,Precision Agriculture,https://research.biolatam.io/clustering-inference,0.7,Inferred from cluster 1 theme mapping
-aquabyte-cl,startup_extended,bio_theme_primary,Precision Agriculture,https://research.biolatam.io/clustering-inference,0.7,Inferred from cluster 1 theme mapping
-bontix-do,startup_extended,bio_theme_primary,Precision Agriculture,https://research.biolatam.io/clustering-inference,0.7,Inferred from cluster 1 theme mapping
-digital-twin-corporation-cr,startup_extended,bio_theme_primary,Precision Agriculture,https://research.biolatam.io/clustering-inference,0.7,Inferred from cluster 1 theme mapping
-dimitra-bolivia-operations-bo,startup_extended,bio_theme_primary,Precision Agriculture,https://research.biolatam.io/clustering-inference,0.7,Inferred from cluster 1 theme mapping
-fieldfactors-mx,startup_extended,bio_theme_primary,Precision Agriculture,https://research.biolatam.io/clustering-inference,0.7,Inferred from cluster 1 theme mapping
-geanext-cr,startup_extended,bio_theme_primary,Precision Agriculture,https://research.biolatam.io/clustering-inference,0.7,Inferred from cluster 1 theme mapping
-innovatech-bo,startup_extended,bio_theme_primary,Precision Agriculture,https://research.biolatam.io/clustering-inference,0.7,Inferred from cluster 1 theme mapping
-magic-green-cr,startup_extended,bio_theme_primary,Precision Agriculture,https://research.biolatam.io/clustering-inference,0.7,Inferred from cluster 1 theme mapping
-quipu-cr,startup_extended,bio_theme_primary,Precision Agriculture,https://research.biolatam.io/clustering-inference,0.7,Inferred from cluster 1 theme mapping
-caribbean-medtech-do,startup_extended,bio_theme_primary,Diagnostics & Devices,https://research.biolatam.io/clustering-inference,0.7,Inferred from cluster 2 theme mapping
-healthpoint-bo,startup_extended,bio_theme_primary,Diagnostics & Devices,https://research.biolatam.io/clustering-inference,0.7,Inferred from cluster 2 theme mapping
-labtronics-sas-co,startup_extended,bio_theme_primary,Diagnostics & Devices,https://research.biolatam.io/clustering-inference,0.7,Inferred from cluster 2 theme mapping
-medimarket-online-ve,startup_extended,bio_theme_primary,Diagnostics & Devices,https://research.biolatam.io/clustering-inference,0.7,Inferred from cluster 2 theme mapping
-nanomedical-cr,startup_extended,bio_theme_primary,Diagnostics & Devices,https://research.biolatam.io/clustering-inference,0.7,Inferred from cluster 2 theme mapping
-agrigenetic-ecuador-ec,startup_extended,bio_theme_primary,Bioinputs & Crop Resilience,https://research.biolatam.io/clustering-inference,0.7,Inferred from cluster 7 theme mapping
-bioceres-ar,startup_extended,bio_theme_primary,Bioinputs & Crop Resilience,https://research.biolatam.io/clustering-inference,0.7,Inferred from cluster 7 theme mapping
-biodiverso-insumos-br,startup_extended,bio_theme_primary,Bioinputs & Crop Resilience,https://research.biolatam.io/clustering-inference,0.7,Inferred from cluster 7 theme mapping
-bioram-mx,startup_extended,bio_theme_primary,Bioinputs & Crop Resilience,https://research.biolatam.io/clustering-inference,0.7,Inferred from cluster 7 theme mapping
-cropguard-cl,startup_extended,bio_theme_primary,Bioinputs & Crop Resilience,https://research.biolatam.io/clustering-inference,0.7,Inferred from cluster 7 theme mapping
-energytop-via-proinpa-bo,startup_extended,bio_theme_primary,Bioinputs & Crop Resilience,https://research.biolatam.io/clustering-inference,0.7,Inferred from cluster 7 theme mapping
-fungicontrol-co,startup_extended,bio_theme_primary,Bioinputs & Crop Resilience,https://research.biolatam.io/clustering-inference,0.7,Inferred from cluster 7 theme mapping
-metabix-uy,startup_extended,bio_theme_primary,Bioinputs & Crop Resilience,https://research.biolatam.io/clustering-inference,0.7,Inferred from cluster 7 theme mapping
-microbiota-agricola-br,startup_extended,bio_theme_primary,Bioinputs & Crop Resilience,https://research.biolatam.io/clustering-inference,0.7,Inferred from cluster 7 theme mapping
-microlabs-mx,startup_extended,bio_theme_primary,Bioinputs & Crop Resilience,https://research.biolatam.io/clustering-inference,0.7,Inferred from cluster 7 theme mapping
-nemacontrol-biologicos-br,startup_extended,bio_theme_primary,Bioinputs & Crop Resilience,https://research.biolatam.io/clustering-inference,0.7,Inferred from cluster 7 theme mapping
-neocroptech-cl,startup_extended,bio_theme_primary,Bioinputs & Crop Resilience,https://research.biolatam.io/clustering-inference,0.7,Inferred from cluster 7 theme mapping
-seedtech-cl,startup_extended,bio_theme_primary,Bioinputs & Crop Resilience,https://research.biolatam.io/clustering-inference,0.7,Inferred from cluster 7 theme mapping
-terrasos-br,startup_extended,bio_theme_primary,Bioinputs & Crop Resilience,https://research.biolatam.io/clustering-inference,0.7,Inferred from cluster 7 theme mapping
-biolife-innovations-bo,startup_extended,bio_theme_primary,Food Systems & Alt Proteins,https://research.biolatam.io/clustering-inference,0.7,Inferred from cluster 10 theme mapping
-plantverd-mx,startup_extended,bio_theme_primary,Food Systems & Alt Proteins,https://research.biolatam.io/clustering-inference,0.7,Inferred from cluster 10 theme mapping
-recombine-biotech-br,startup_extended,bio_theme_primary,Food Systems & Alt Proteins,https://research.biolatam.io/clustering-inference,0.7,Inferred from cluster 10 theme mapping
-tierra-de-monte-mx,startup_extended,bio_theme_primary,Food Systems & Alt Proteins,https://research.biolatam.io/clustering-inference,0.7,Inferred from cluster 10 theme mapping
-tissue-nova-mx,startup_extended,bio_theme_primary,Therapeutics,https://research.biolatam.io/clustering-inference,0.7,Inferred from cluster 11 theme mapping
-biiosmart-co,startup_extended,bio_theme_primary,Therapeutics,https://research.biolatam.io/clustering-inference,0.7,Inferred from cluster 12 theme mapping
-scintia-mx,startup_extended,bio_theme_primary,Therapeutics,https://research.biolatam.io/clustering-inference,0.7,Inferred from cluster 12 theme mapping
-biolinker-br,startup_extended,bio_theme_primary,Digital AgTech & Agrifintech,https://research.biolatam.io/clustering-inference,0.7,Inferred from cluster 14 theme mapping
-fermentlab-br,startup_extended,bio_theme_primary,Digital AgTech & Agrifintech,https://research.biolatam.io/clustering-inference,0.7,Inferred from cluster 14 theme mapping
-fermentlabs-co,startup_extended,bio_theme_primary,Digital AgTech & Agrifintech,https://research.biolatam.io/clustering-inference,0.7,Inferred from cluster 14 theme mapping
-myvac-bioproducts-br,startup_extended,bio_theme_primary,Digital AgTech & Agrifintech,https://research.biolatam.io/clustering-inference,0.7,Inferred from cluster 14 theme mapping
-aquabio-cl,startup_extended,bio_theme_primary,Food Systems & Alt Proteins,https://research.biolatam.io/clustering-inference,0.7,Inferred from cluster 15 theme mapping
-biomar-cr,startup_extended,bio_theme_primary,Food Systems & Alt Proteins,https://research.biolatam.io/clustering-inference,0.7,Inferred from cluster 15 theme mapping
-devalor-cl,startup_extended,bio_theme_primary,Food Systems & Alt Proteins,https://research.biolatam.io/clustering-inference,0.7,Inferred from cluster 15 theme mapping
-recirculab-cl,startup_extended,bio_theme_primary,Food Systems & Alt Proteins,https://research.biolatam.io/clustering-inference,0.7,Inferred from cluster 15 theme mapping
-salmoss-biotech-cl,startup_extended,bio_theme_primary,Food Systems & Alt Proteins,https://research.biolatam.io/clustering-inference,0.7,Inferred from cluster 15 theme mapping
+biocell-mx,startup_extended,bio_theme_primary,Biomaterials & Green Chemistry,https://research.biolatam.io/deep-research-ecuador-7,0.95,"Established (1997, 27y). HQ: Irvine, CA (mislabeled as Mexico in dataset)"
+biocell-mx,startup_extended,business_one_liner,"Manufactures patented collagen-based bioingredients (hydrolyzed collagen type II, chondroitin, hyaluronic acid) licensed to CPG manufacturers for nutr",https://research.biolatam.io/deep-research-ecuador-7,0.95,"Established (1997, 27y). HQ: Irvine, CA (mislabeled as Mexico in dataset)"
+biofactory-br,startup_extended,bio_theme_primary,Biomanufacturing & Platform Technologies,https://research.biolatam.io/deep-research-ecuador-7,0.98,Scale-up facility (2025). Joint venture: World Mosquito Program + Fiocruz. Government-backed.
+biofactory-br,startup_extended,business_one_liner,World's largest biofactory (Curitiba) breeding Aedes aegypti mosquitoes infected with Wolbachia for dengue/chikungunya control. Produces 100M eggs/wee,https://research.biolatam.io/deep-research-ecuador-7,0.98,Scale-up facility (2025). Joint venture: World Mosquito Program + Fiocruz. Government-backed.
+bioproducts-co,startup_extended,bio_theme_primary,Therapeutics,https://research.biolatam.io/deep-research-ecuador-7,0.4,"Verify if bioproducts-co is Dogma Biotech. If yes: Therapeutics, Startup (2023)"
+bioproducts-co,startup_extended,business_one_liner,"LIKELY: Dogma Biotech (Bogota) developing glycosylation technology for protein-based therapeutics. Founded 2023, in UC Berkeley Bakar Bio Labs",https://research.biolatam.io/deep-research-ecuador-7,0.4,"Verify if bioproducts-co is Dogma Biotech. If yes: Therapeutics, Startup (2023)"
+corpogen-co,startup_extended,bio_theme_primary,Diagnostics & Devices,https://research.biolatam.io/deep-research-ecuador-7,0.95,"Established research institute (30y), NOT startup. Collaborates with universities + research institutes."
+corpogen-co,startup_extended,business_one_liner,"CorpoGen (established 1995) is a non-profit research center specializing in microbiology, molecular biotechnology, genomic sequencing, and microbiolog",https://research.biolatam.io/deep-research-ecuador-7,0.95,"Established research institute (30y), NOT startup. Collaborates with universities + research institutes."
+grupo-bios-co,startup_extended,bio_theme_primary,Bioinputs & Crop Resilience,https://research.biolatam.io/deep-research-ecuador-7,0.92,"Established conglomerate (2015), NOT startup. Focus: animal genetics + agricultural biotech inputs."
+grupo-bios-co,startup_extended,business_one_liner,"Grupo Bios (Colombia) is large agro-industrial conglomerate (formed 2015) operating animal genetics (PIC swine, ABS cattle), animal feed (150K tons/mo",https://research.biolatam.io/deep-research-ecuador-7,0.92,"Established conglomerate (2015), NOT startup. Focus: animal genetics + agricultural biotech inputs."
