@@ -1,0 +1,21 @@
+investment_id,investor_id,startup_id,confidence_score,source
+VERIFIED_NO_SOURCE_antom_kigui,antom,kigui,0.95,edges_sin_source: source: https://www.antom.la/portfolio-projects-en | Antom o
+VERIFIED_NO_SOURCE_gridx_bioplaster_research,gridx,bioplaster_research,0.9,edges_sin_source: source: https://www.gridexponential.com/portfolio | CSV sugg
+VERIFIED_NO_SOURCE_gridx_monte-caldera-technology,gridx,monte-caldera-technology,0.9,edges_sin_source: source: https://www.gridexponential.com/portfolio | CSV sugg
+VERIFIED_NO_SOURCE_gridx_syocin-biotech,gridx,syocin-biotech,0.9,edges_sin_source: source: https://www.gridexponential.com/portfolio | CSV sugg
+VERIFIED_NO_SOURCE_gridx_werk-nvac,gridx,werk-nvac,0.95,edges_sin_source: source: https://www.gridexponential.com/portfolio | GridX of
+VERIFIED_NO_SOURCE_the_ganesha_lab_amplify-dynamics,the_ganesha_lab,amplify-dynamics,0.95,edges_sin_source: source: https://theganeshalab.com/startups/ | The Ganesha La
+VERIFIED_NO_SOURCE_the_ganesha_lab_botanical-solutions,the_ganesha_lab,botanical-solutions,0.95,edges_sin_source: source: https://theganeshalab.com/startups/ | The Ganesha La
+VERIFIED_NO_SOURCE_the_ganesha_lab_delee,the_ganesha_lab,delee,0.95,edges_sin_source: source: https://theganeshalab.com/startups/ | The Ganesha La
+VERIFIED_NO_SOURCE_the_ganesha_lab_innovai,the_ganesha_lab,innovai,0.95,edges_sin_source: source: https://theganeshalab.com/startups/ | The Ganesha La
+VERIFIED_NO_SOURCE_the_ganesha_lab_metabix-biotech,the_ganesha_lab,metabix-biotech,0.95,edges_sin_source: source: https://theganeshalab.com/startups/ | The Ganesha La
+VERIFIED_NO_SOURCE_the_ganesha_lab_patagon-fiber,the_ganesha_lab,patagon-fiber,0.95,edges_sin_source: source: https://theganeshalab.com/startups/ | The Ganesha La
+VERIFIED_NO_SOURCE_the_ganesha_lab_sciphage,the_ganesha_lab,sciphage,0.95,edges_sin_source: source: https://theganeshalab.com/startups/ | The Ganesha La
+VERIFIED_NO_SOURCE_the_ganesha_lab_tensor-care,the_ganesha_lab,tensor-care,0.95,edges_sin_source: source: https://theganeshalab.com/startups/ | The Ganesha La
+VERIFIED_NO_SOURCE_the_ganesha_lab_the-earth-says,the_ganesha_lab,the-earth-says,0.95,edges_sin_source: source: https://theganeshalab.com/startups/ | The Ganesha La
+VERIFIED_NO_SOURCE_sp_ventures_agroadvance,sp_ventures,agroadvance,0.94,edges_sin_source: source: https://spventures.com.br/portfolio/agroadvance/ | S
+VERIFIED_NO_SOURCE_sp_ventures_concil,sp_ventures,concil,0.94,edges_sin_source: source: https://spventures.com.br/portfolio/ | SP Ventures o
+VERIFIED_NO_SOURCE_sp_ventures_erural,sp_ventures,erural,0.94,edges_sin_source: source: https://spventures.com.br/portfolio/ | SP Ventures o
+VERIFIED_NO_SOURCE_sp_ventures_geofusion,sp_ventures,geofusion,0.94,edges_sin_source: source: https://spventures.com.br/portfolio/ | SP Ventures o
+VERIFIED_NO_SOURCE_sp_ventures_lupeon,sp_ventures,lupeon,0.94,edges_sin_source: source: https://spventures.com.br/portfolio/ | SP Ventures o
+VERIFIED_NO_SOURCE_sp_ventures_verge_ag,sp_ventures,verge_ag,0.9,edges_sin_source: source: https://vergeag.com/blog/post/sp-ventures-invests-in

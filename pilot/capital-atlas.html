@@ -687,31 +687,31 @@
     }
 
     /* ── Estructura de inversión (Frente C) ─────────────────────────── */
-    .cap-structure { max-width: 1280px; margin: 8px auto 40px; padding: 0 18px; }
-    .cs-head { margin: 18px 4px 14px; }
-    .cs-title { font-size: 1.15rem; font-weight: 700; color: var(--ink); margin: 0 0 4px; letter-spacing: -.01em; }
-    .cs-sub { font-size: .78rem; color: var(--muted); margin: 0; line-height: 1.5; max-width: 720px; }
+    .cap-structure { max-width: 1300px; margin: 8px auto 48px; padding: 0 18px; }
+    .cs-head { margin: 22px 4px 16px; }
+    .cs-title { font-size: 1.18rem; font-weight: 800; color: var(--ink); margin: 0 0 5px; letter-spacing: -.02em; }
+    .cs-sub { font-size: .76rem; color: var(--muted); margin: 0; line-height: 1.6; max-width: 760px; }
     .cs-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
-    .cs-card { background: var(--panel); border: 1px solid var(--line); border-radius: 14px;
-               box-shadow: var(--shadow); padding: 15px 17px; }
+    .cs-card { background: var(--panel); border: 1px solid var(--line); border-radius: 16px;
+               box-shadow: var(--shadow); padding: 16px 18px; }
     .cs-span2 { grid-column: 1 / -1; }
-    .cs-card-title { font-size: .82rem; font-weight: 650; color: var(--ink); margin-bottom: 12px; }
-    .cs-note, .cs-warn { font-size: .72rem; color: var(--muted); line-height: 1.45; margin-top: 9px; }
-    .cs-warn { color: var(--warm); background: var(--warm-soft); border-radius: 8px; padding: 6px 9px; margin: 0 0 10px; }
-    /* fila barra horizontal */
-    .cs-row { display: grid; grid-template-columns: 130px 1fr 46px; align-items: center; gap: 9px; margin: 5px 0; }
-    .cs-row-lbl { font-size: .72rem; color: var(--ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-    .cs-track { background: rgba(0,0,0,.05); border-radius: 6px; height: 16px; overflow: hidden; }
-    .cs-fill { height: 100%; border-radius: 6px; transition: width .4s ease; }
-    .cs-val { font-size: .72rem; color: var(--muted); text-align: right; font-variant-numeric: tabular-nums; }
-    /* pirámide centrada */
-    .cs-pyr-row { display: grid; grid-template-columns: 150px 1fr; align-items: center; gap: 12px; margin: 6px 0; }
-    .cs-pyr-bar { display: flex; align-items: center; justify-content: center; height: 26px; border-radius: 6px;
-                  color: #fff; font-size: .74rem; font-weight: 600; min-width: 30px; }
-    /* chips de sindicación */
+    .cs-card-header { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; margin-bottom: 14px; }
+    .cs-card-title { font-size: .83rem; font-weight: 700; color: var(--ink); margin-bottom: 13px; }
+    .cs-card-header .cs-card-title { margin-bottom: 0; }
+    .cs-card-tag { font-size: .68rem; color: var(--muted); background: rgba(11,143,135,.09); border: 1px solid rgba(11,143,135,.2); border-radius: 999px; padding: 2px 10px; white-space: nowrap; flex-shrink: 0; }
+    .cs-insight { margin-top: 11px; padding: 9px 13px; background: rgba(11,143,135,.06); border: 1px solid rgba(11,143,135,.18); border-radius: 10px; font-size: .75rem; color: #1a3d3b; line-height: 1.5; }
+    .cs-insight strong { color: var(--accent); }
+    .cs-note, .cs-warn { font-size: .72rem; color: var(--muted); line-height: 1.48; margin-top: 9px; }
+    .cs-warn { color: var(--warm); background: var(--warm-soft); border-radius: 8px; padding: 6px 9px; margin: 0 0 10px; font-size: .71rem; }
+    /* barra horizontal */
+    .cs-row { display: grid; grid-template-columns: 120px 1fr 44px; align-items: center; gap: 8px; margin: 5px 0; }
+    .cs-row-lbl { font-size: .71rem; color: var(--ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .cs-track { background: rgba(0,0,0,.05); border-radius: 5px; height: 14px; overflow: hidden; }
+    .cs-fill { height: 100%; border-radius: 5px; }
+    .cs-val { font-size: .71rem; color: var(--muted); text-align: right; font-variant-numeric: tabular-nums; }
+    /* chips sindicación */
     .cs-chips { display: flex; flex-wrap: wrap; gap: 7px; }
-    .cs-chip { font-size: .72rem; background: var(--accent-soft); color: #0a5a54; border-radius: 20px;
-               padding: 4px 11px; border: 1px solid rgba(11,143,135,.25); }
+    .cs-chip { font-size: .71rem; background: var(--accent-soft); color: #0a5a54; border-radius: 20px; padding: 4px 11px; border: 1px solid rgba(11,143,135,.22); }
     .cs-chip strong { font-weight: 700; }
     @media (max-width: 760px){ .cs-grid { grid-template-columns: 1fr; } .cs-span2 { grid-column: auto; } }
 

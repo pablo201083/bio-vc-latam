@@ -1,13 +1,13 @@
 window.CAPITAL_ATLAS_DATA = {
-  "generated_at": "2026-06-14T11:21:40",
+  "generated_at": "2026-06-14T11:24:23",
   "source": "pipeline:build-atlas (SQLite)",
   "summary": {
     "nodes_total": 1071,
     "funds_total": 129,
     "startups_total": 928,
     "allocators_total": 14,
-    "edges_total": 997,
-    "investment_edges_total": 971,
+    "edges_total": 1232,
+    "investment_edges_total": 1206,
     "allocator_edges_total": 26,
     "include_startups_total": 579,
     "source_backed_include_startups_total": 444,
@@ -105,8 +105,8 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": 12.0,
       "lead_behavior": "both",
       "profile_blurb": "Aceleradora Litoral is a Santa Fe-based startup accelerator affiliated with Universidad Nacional del Litoral (UNL). Provides pre-seed capital, structured mentoring, and access to UNL's research infrastructure and patent portfolio. Focus on agtech, food biotech, industrial biotech, and environmental technology. Key gateway for CONICET and UNL spinoffs in the Argentine Litoral agricultural region.",
-      "degree": 21,
-      "portfolio_valuation_usd": 79.8
+      "degree": 28,
+      "portfolio_valuation_usd": 106.4
     },
     {
       "id": "AIR Capital",
@@ -140,8 +140,8 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": 15.0,
       "lead_behavior": "lead",
       "profile_blurb": "AIR Capital es un fondo de deep tech de tesis amplia: \"innovaciones disruptivas relevantes para la humanidad\". Su portafolio abarca desde space (Outpost, Skyloom, Aptos Orbital) hasta biotecnología (Stämm, Semion Bio, Dogma Biotech, Oncoliq) y energía — una diversificación que refleja la apuesta de que el próximo ciclo de innovación será convergente y multidisciplinario.\n\nCon más de 50 empresas en portafolio, AIR Capital opera con un apetito de riesgo alto y un criterio técnico elevado: Stämm — una de las compañías más sofisticadas en biomanufactura del hemisferio sur — está en su cartera, lo que indica capacidad real de evaluación científica. El sesgo argentino es marcado pero sin restricción geográfica explícita.\n\nEn el ecosistema BIO LATAM, AIR es uno de los pocos fondos con capacidad multi-sectorial y vocación de frontera tecnológica. Su falta de transparencia sobre AUM y estructura de fondo es la principal incógnita sobre su capacidad de follow-on — una variable crítica para startups bio que planean rondas Series B y posteriores.",
-      "degree": 64,
-      "portfolio_valuation_usd": 326.5
+      "degree": 94,
+      "portfolio_valuation_usd": 564.0
     },
     {
       "id": "amador",
@@ -204,8 +204,8 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": 20.0,
       "lead_behavior": "both",
       "profile_blurb": "Antom es un fondo de impacto pre-seed y seed para proyectos regenerativos en América Latina. Su mandato es explícitamente ambiental: las métricas de decisión incluyen reducción de CO2, captura de GEI, aumento de biodiversidad y reducción de residuos. Opera con tickets de $25K a $100K vía contratos SAFE, o mediante Revenue Share (5% de ventas mensuales durante 7 años, cap en 4x) — una estructura que reduce la dilución para fundadores en etapas muy tempranas.\n\nSu foco abarca climatech, agri-foodtech agroecológico, economía circular y eficiencia energética. La combinación de equity y Revenue Share como instrumentos complementarios es una señal de adaptabilidad a los flujos de caja de startups en mercados emergentes donde el modelo estándar de VC puede no ser óptimo.\n\nPara el ecosistema BIO, Antom es un actor de nicho early pero relevante: su mandato regenerativo y su enfoque agroecológico lo conectan con bioinputs, biomateriales y foodtech alternativo. Con tickets pequeños pero procesos ágiles y criterios de impacto claros, puede ser el primer cheque institucional para startups bio-ambientales que aún no alcanzan el radar de fondos de mayor escala.",
-      "degree": 22,
-      "portfolio_valuation_usd": 142.0
+      "degree": 33,
+      "portfolio_valuation_usd": 215.0
     },
     {
       "id": "araucaria_venture",
@@ -335,8 +335,8 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": null,
       "lead_behavior": "",
       "profile_blurb": "",
-      "degree": 1,
-      "portfolio_valuation_usd": 1.0
+      "degree": 2,
+      "portfolio_valuation_usd": 2.0
     },
     {
       "id": "cantos",
@@ -429,8 +429,8 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": 30.0,
       "lead_behavior": "lead",
       "profile_blurb": "CITES (Centro de Innovación Tecnológica, Empresarial y Social) es un fondo de deep science con sede en Argentina — con presencia en Sunchales (Santa Fe), Buenos Aires y Bariloche — especializado en transformar ciencia disruptiva en negocios. Su tesis: las tecnologías que parecen imposibles hoy serán transformadoras mañana. Con 95+ patentes bajo gestión y 250+ científicos vinculados, opera como puente entre la academia argentina y el mercado.\n\nSu infraestructura física es su diferencial: fab-labs, wet-labs y espacios de co-creación integrados con el capital. Esto le permite invertir desde la idea ($25K) hasta Serie A ($3.5M), cubriendo el valle de la muerte tecnológico que elimina a la mayoría de los proyectos de deep science antes de alcanzar el mercado. Con 23 empresas en portafolio, concentra la mayor densidad de deeptech científico por capital invertido en Argentina.\n\nEn el ecosistema BIO LATAM, CITES cumple una función crítica de infraestructura: no solo invierte sino que habilita físicamente la creación de startups biotech y agtech desde la investigación básica. Su presencia en Sunchales — epicentro del agro-industrial santafesino — lo conecta directamente con el ecosistema de bioinputs y agrobiotech del Litoral argentino, uno de los clusters más relevantes del cono sur.",
-      "degree": 42,
-      "portfolio_valuation_usd": 93.0
+      "degree": 54,
+      "portfolio_valuation_usd": 117.0
     },
     {
       "id": "conservation_international",
@@ -451,8 +451,8 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": null,
       "lead_behavior": "",
       "profile_blurb": "",
-      "degree": 1,
-      "portfolio_valuation_usd": 1.0
+      "degree": 2,
+      "portfolio_valuation_usd": 2.0
     },
     {
       "id": "creative_ventures",
@@ -473,8 +473,8 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": null,
       "lead_behavior": "",
       "profile_blurb": "",
-      "degree": 1,
-      "portfolio_valuation_usd": 15.0
+      "degree": 2,
+      "portfolio_valuation_usd": 30.0
     },
     {
       "id": "dalus_capital",
@@ -506,8 +506,8 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": 60.0,
       "lead_behavior": "lead",
       "profile_blurb": "Dalus Capital is a Mexico City-based venture capital fund focused on health technology, biotech, and agtech in Mexico and LatAm. Manages two funds totaling $60M+. Strong portfolio in digital health (telemedicine, diagnostics, preventive care) and agricultural technology. Known for strong co-investment relationships with IMSS, Mexican hospital networks, and agricultural distributors as pilot customers.",
-      "degree": 3,
-      "portfolio_valuation_usd": 51.8
+      "degree": 4,
+      "portfolio_valuation_usd": 66.8
     },
     {
       "id": "DragonesVP",
@@ -538,8 +538,8 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": 20.0,
       "lead_behavior": "lead",
       "profile_blurb": "DragonesVP is a Santiago-based venture capital fund investing in science-based startups across Chile and LatAm. Focuses on food systems, agtech, biotechnology, and industrial technology. Connected to Chilean government programs (CORFO) and the Start-Up Chile alumni network. Known for bridge capital between Chilean and regional VC rounds.",
-      "degree": 17,
-      "portfolio_valuation_usd": 314.0
+      "degree": 18,
+      "portfolio_valuation_usd": 414.0
     },
     {
       "id": "draper_associates",
@@ -560,8 +560,8 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": null,
       "lead_behavior": "",
       "profile_blurb": "",
-      "degree": 1,
-      "portfolio_valuation_usd": 100.0
+      "degree": 2,
+      "portfolio_valuation_usd": 200.0
     },
     {
       "id": "draper_university",
@@ -582,8 +582,8 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": null,
       "lead_behavior": "",
       "profile_blurb": "",
-      "degree": 1,
-      "portfolio_valuation_usd": 1.0
+      "degree": 2,
+      "portfolio_valuation_usd": 2.0
     },
     {
       "id": "DraperCygnus",
@@ -615,8 +615,8 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": 50.0,
       "lead_behavior": "lead",
       "profile_blurb": "DraperCygnus is part of the Draper global network (Tim Draper/DFJ). It is one of Spain's most prominent VC funds, with a strong focus on the Ibero-American ecosystem via its Mexico City and Madrid offices. Invested in digital health, biotech, agtech, and industrial tech across Spain and Latin America. Brings access to Draper's global network for portfolio companies seeking US market entry or international expansion.",
-      "degree": 45,
-      "portfolio_valuation_usd": 487.0
+      "degree": 64,
+      "portfolio_valuation_usd": 730.0
     },
     {
       "id": "duhau",
@@ -637,8 +637,8 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": null,
       "lead_behavior": "",
       "profile_blurb": "",
-      "degree": 2,
-      "portfolio_valuation_usd": 5.0
+      "degree": 3,
+      "portfolio_valuation_usd": 6.0
     },
     {
       "id": "eatable_adventures",
@@ -724,8 +724,8 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": null,
       "lead_behavior": "",
       "profile_blurb": "",
-      "degree": 1,
-      "portfolio_valuation_usd": 100.0
+      "degree": 2,
+      "portfolio_valuation_usd": 200.0
     },
     {
       "id": "fundacion_para_el_progreso_de_la_medicina",
@@ -746,8 +746,8 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": null,
       "lead_behavior": "",
       "profile_blurb": "",
-      "degree": 1,
-      "portfolio_valuation_usd": 15.0
+      "degree": 2,
+      "portfolio_valuation_usd": 30.0
     },
     {
       "id": "future_ventures",
@@ -776,8 +776,8 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": null,
       "lead_behavior": "",
       "profile_blurb": "",
-      "degree": 1,
-      "portfolio_valuation_usd": 25.0
+      "degree": 2,
+      "portfolio_valuation_usd": 50.0
     },
     {
       "id": "gef",
@@ -828,8 +828,8 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": null,
       "lead_behavior": "",
       "profile_blurb": "",
-      "degree": 1,
-      "portfolio_valuation_usd": 15.0
+      "degree": 2,
+      "portfolio_valuation_usd": 30.0
     },
     {
       "id": "glocal",
@@ -860,8 +860,8 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": 50.0,
       "lead_behavior": "lead",
       "profile_blurb": "GLOCAL is an Argentine accelerator focused on deeptech startups with strong scientific foundations. Provides equity capital, 6-month acceleration programs, and connections to Argentine research institutions and international investors. Strong portfolio in agtech, industrial biotech, and diagnostics. Known for active mentoring from experienced biotech operators.",
-      "degree": 19,
-      "portfolio_valuation_usd": 85.5
+      "degree": 25,
+      "portfolio_valuation_usd": 114.5
     },
     {
       "id": "GridX",
@@ -893,8 +893,8 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": 41.0,
       "lead_behavior": "lead",
       "profile_blurb": "GridX es el vehículo más singular del ecosistema BIO LATAM: opera simultáneamente como aceleradora científica y fondo de capital de riesgo. Desde 2015 ha completado 9 cohortes, incorporado a más de 250 fundadores y construido un portafolio de +90 startups en 8 países latinoamericanos bajo la tesis de la \"Life-Based Age\" — la apuesta de que los sistemas vivos reemplazarán a los combustibles fósiles como motor de la economía global.\n\nSu portafolio refleja la amplitud de esa tesis: Stämm (biomanufactura), Puna Bio (bioinputs), CASPR Biotech (diagnósticos), Beeflow (polinización), Michroma (pigmentos fúngicos) y OncoPrecision (oncología). Los cuatro vectores — agri-food, bio-industria, salud humana y deep-biotech — le permiten cubrir verticales que ningún otro fondo regional puede alcanzar con la misma densidad.\n\nCon $41M AUM y +90 portafolios activos, GridX opera con una relación capital/portafolio muy comprimida: funciona más como hub de construcción de compañías que como vehículo de capital de crecimiento. Su valor estratégico en el ecosistema es insustituible como generador de deal-flow y validador científico temprano — pero las startups que escalan deberán buscar capital de seguimiento fuera de su estructura.",
-      "degree": 216,
-      "portfolio_valuation_usd": 891.3
+      "degree": 300,
+      "portfolio_valuation_usd": 1137.3
     },
     {
       "id": "grupo_insud",
@@ -950,8 +950,8 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": null,
       "lead_behavior": "",
       "profile_blurb": "",
-      "degree": 1,
-      "portfolio_valuation_usd": 1.0
+      "degree": 2,
+      "portfolio_valuation_usd": 2.0
     },
     {
       "id": "happiness",
@@ -972,8 +972,8 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": null,
       "lead_behavior": "",
       "profile_blurb": "",
-      "degree": 1,
-      "portfolio_valuation_usd": 1.0
+      "degree": 2,
+      "portfolio_valuation_usd": 2.0
     },
     {
       "id": "hatch",
@@ -1006,8 +1006,8 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": 110.0,
       "lead_behavior": "lead",
       "profile_blurb": "",
-      "degree": 2,
-      "portfolio_valuation_usd": 5.0
+      "degree": 3,
+      "portfolio_valuation_usd": 6.0
     },
     {
       "id": "idb_invest",
@@ -1183,8 +1183,8 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": 415.0,
       "lead_behavior": "lead",
       "profile_blurb": "Inventure is a Helsinki-based VC known for backing tech startups in emerging markets, particularly East Africa and LatAm. In LatAm focuses on agtech, food systems, and environmental tech companies. Provides access to Nordic LP networks and European market entry support.",
-      "degree": 24,
-      "portfolio_valuation_usd": 122.0
+      "degree": 36,
+      "portfolio_valuation_usd": 185.0
     },
     {
       "id": "jeff_wilke",
@@ -1205,8 +1205,8 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": null,
       "lead_behavior": "",
       "profile_blurb": "",
-      "degree": 1,
-      "portfolio_valuation_usd": 25.0
+      "degree": 2,
+      "portfolio_valuation_usd": 50.0
     },
     {
       "id": "jica",
@@ -1290,8 +1290,8 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": null,
       "lead_behavior": "",
       "profile_blurb": "",
-      "degree": 1,
-      "portfolio_valuation_usd": 25.0
+      "degree": 2,
+      "portfolio_valuation_usd": 50.0
     },
     {
       "id": "kamay_ventures",
@@ -1322,8 +1322,8 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": null,
       "lead_behavior": "lead",
       "profile_blurb": "Kamay Ventures es el primer fondo multi-corporate de América Latina, respaldado directamente por The Coca-Cola Company, Grupo Arcor y Grupo Bimbo — tres de las mayores corporaciones de consumo masivo de la región. Esta estructura define su propuesta de valor más allá del capital: las startups en portafolio acceden a operaciones reales, con más de 69 POCs ejecutados y reach a más de 12 millones de puntos de venta en la región.\n\nCon tickets Seed/Pre-A de hasta $600K en valuaciones menores a $25M, opera en el segmento más temprano y de mayor riesgo. Sus 21 empresas en portafolio y presencia activa en 26 países demuestran que el modelo de validación corporativa funciona: las startups reciben capital y tracción comercial real con clientes de escala global.\n\nEn el mapa BIO LATAM, Kamay es un actor de nicho CPG, pero su conexión con la cadena alimentaria lo hace relevante para startups de foodtech, agro-supply chain y bio-ingredientes. Para un fundador bio que busca probar mercado a escala, pilotar con Arcor o Coca-Cola en 26 países es una señal de validación comercial que ningún fondo de venture puede replicar.",
-      "degree": 40,
-      "portfolio_valuation_usd": 89.0
+      "degree": 60,
+      "portfolio_valuation_usd": 132.0
     },
     {
       "id": "KEM Ventures",
@@ -1399,8 +1399,8 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": null,
       "lead_behavior": "",
       "profile_blurb": "",
-      "degree": 1,
-      "portfolio_valuation_usd": 1.0
+      "degree": 2,
+      "portfolio_valuation_usd": 2.0
     },
     {
       "id": "lartirigoyen",
@@ -1421,8 +1421,8 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": null,
       "lead_behavior": "",
       "profile_blurb": "",
-      "degree": 1,
-      "portfolio_valuation_usd": 1.0
+      "degree": 2,
+      "portfolio_valuation_usd": 2.0
     },
     {
       "id": "lavca",
@@ -1467,8 +1467,8 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": null,
       "lead_behavior": "",
       "profile_blurb": "",
-      "degree": 1,
-      "portfolio_valuation_usd": 100.0
+      "degree": 2,
+      "portfolio_valuation_usd": 200.0
     },
     {
       "id": "lowercarbon_capital",
@@ -1556,8 +1556,8 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": 50.0,
       "lead_behavior": "lead",
       "profile_blurb": "Newtopia VC es un fondo early-stage de $50M construido por emprendedores detrás de unicornios latinoamericanos. Su red de co-inversores incluye a Marcos Galperin (Mercado Libre) y otros fundadores referentes de la región — lo que convierte a Newtopia en una señal de validación de primer nivel para startups que buscan acceso al ecosistema tech de mayor escala.\n\nSu modelo \"entrepreneurs supporting entrepreneurs\" apuesta a que el mejor capital para etapas tempranas viene de quienes ya recorrieron el camino. Con tickets hasta $1.5M en seguimiento de Serie A, cubre el espectro pre-seed a Serie A con una propuesta de acompañamiento operativo intensivo.\n\nEn el ecosistema BIO, Newtopia es un actor generalista — su portafolio visible (Auth0, Mural, Tiendanube, Satellogic) no muestra concentración bio. Para una startup BIO, el valor de Newtopia no es la especialización sectorial sino la red: entrar a su portafolio abre puertas a una comunidad de unicornios y co-inversores que puede acelerar significativamente las rondas posteriores.",
-      "degree": 6,
-      "portfolio_valuation_usd": 20.8
+      "degree": 9,
+      "portfolio_valuation_usd": 32.8
     },
     {
       "id": "onevc",
@@ -1619,8 +1619,8 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": null,
       "lead_behavior": "",
       "profile_blurb": "",
-      "degree": 1,
-      "portfolio_valuation_usd": 25.0
+      "degree": 2,
+      "portfolio_valuation_usd": 50.0
     },
     {
       "id": "other_angels",
@@ -1641,8 +1641,8 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": null,
       "lead_behavior": "",
       "profile_blurb": "",
-      "degree": 1,
-      "portfolio_valuation_usd": 25.0
+      "degree": 2,
+      "portfolio_valuation_usd": 50.0
     },
     {
       "id": "other_small_investors",
@@ -1663,8 +1663,8 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": null,
       "lead_behavior": "",
       "profile_blurb": "",
-      "degree": 2,
-      "portfolio_valuation_usd": 115.0
+      "degree": 3,
+      "portfolio_valuation_usd": 215.0
     },
     {
       "id": "pampa_start",
@@ -1759,8 +1759,8 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": null,
       "lead_behavior": "",
       "profile_blurb": "",
-      "degree": 1,
-      "portfolio_valuation_usd": 1.0
+      "degree": 2,
+      "portfolio_valuation_usd": 2.0
     },
     {
       "id": "photon_fund",
@@ -1845,8 +1845,8 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": 26.0,
       "lead_behavior": "both",
       "profile_blurb": "Salkantay Ventures is a Lima-based VC managing $26M AUM with investments from pre-seed to Series A. Named after Salkantay mountain (Cusco), the fund reflects Peru's regional ambition. Primary thesis: technology companies addressing climate resilience, agtech, and digital infrastructure with strong Peruvian and LatAm traction. Connected to Peruvian government programs (Startup Perú) and mining/agriculture corporate networks. Active co-investor with IDB Lab and regional LatAm funds.",
-      "degree": 1,
-      "portfolio_valuation_usd": 10.0
+      "degree": 2,
+      "portfolio_valuation_usd": 20.0
     },
     {
       "id": "savia_ventures",
@@ -1909,8 +1909,8 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": 10.0,
       "lead_behavior": "both",
       "profile_blurb": "SF500 is an accelerator and micro-fund focused on science and technology startups with LatAm founders. It provides structured programs combining mentorship, product validation, investor access, and small equity checks. Strong network connecting LatAm founders to US accelerators and international VC ecosystem.",
-      "degree": 48,
-      "portfolio_valuation_usd": 179.6
+      "degree": 69,
+      "portfolio_valuation_usd": 263.6
     },
     {
       "id": "sillicon_catalyst",
@@ -1966,8 +1966,8 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": 1500.0,
       "lead_behavior": "lead",
       "profile_blurb": "SOSV is a global VC firm with $1.1B AUM managing specialized accelerator programs: IndieBio (biotech/life sciences, NYC and SF), HAX (hardware/deeptech, NY and Newark), Chinaccelerator, and MOX. Invests $550K pre-seed in 80–100 companies per year globally. In biotech: IndieBio focuses on human health, food, materials, and environmental biotech. Strong LatAm presence through IndieBio LATAM cohorts. Provides lab access, scientific mentorship, and US market entry. 800+ companies across 82 countries.",
-      "degree": 5,
-      "portfolio_valuation_usd": 128.5
+      "degree": 9,
+      "portfolio_valuation_usd": 279.5
     },
     {
       "id": "SOSV_IndieBio",
@@ -2034,8 +2034,8 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": 80.0,
       "lead_behavior": "lead",
       "profile_blurb": "SP Ventures es el referente regional de AgFood-ClimateTech: más de 10 años de track record, +$100M invertidos en +50 empresas en LATAM. Su tesis es estructural: la crisis climática y la seguridad alimentaria son el mismo problema visto desde distintos ángulos, y la solución pasa por reinventar la cadena de valor alimentaria del suelo al estante.\n\nComo lead investor con tickets hasta $10M en Serie A, cubre el tramo de crecimiento temprano con mayor escasez de capital en el ecosistema. Sus métricas de impacto son inusuales: 54 millones de hectáreas impactadas y $571M en crédito agrícola facilitado por sus portafolios — señales de que su capital moviliza recursos mucho mayores que el fondo mismo.\n\nEmpresas como Puna Bio (bioinputs) y Gênica (microbioma del suelo) reflejan su apuesta por la biología como plataforma de solución al problema agro-climático. Con el track record más sólido del segmento y presencia en toda la región, es uno de los actores con mayor credibilidad para anclar rondas bio-agro en LATAM.",
-      "degree": 73,
-      "portfolio_valuation_usd": 367.5
+      "degree": 83,
+      "portfolio_valuation_usd": 482.5
     },
     {
       "id": "svb_financial_group",
@@ -2120,8 +2120,8 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": 50.0,
       "lead_behavior": "lead",
       "profile_blurb": "The Yield Lab LATAM es el fondo AgriFoodTech con mayor cobertura geográfica de la región: oficinas en Buenos Aires, São Paulo, Rancagua, Medellín y Ciudad de México desde 2017. Su posición como integradora de ecosistemas — conectando startups, inversores, corporaciones, agricultores y sector público — es su tesis diferenciadora central. Mapea 70+ categorías de innovación en 12 sectores de la cadena agroalimentaria.\n\nEl foco early-stage y la presencia en cinco países le permite identificar oportunidades que fondos globales no ven — especialmente en la interfaz suelo-microbioma-alimento que es el núcleo del BIO agri regional. Su equipo multinacional con raíces locales en cada mercado es una ventaja competitiva que ningún fondo global puede construir en el corto plazo.\n\nPara el ecosistema BIO, The Yield Lab es uno de los principales generadores de deal-flow en bioinputs, agro-diagnósticos y foodtech. Su limitación estructural es la ausencia de cobertura growth: las compañías que escalan deberán buscar capital de seguimiento fuera de su red. Pero como buscador y validador temprano en el agro-bio regional, su red de cinco países es uno de los activos más valiosos del ecosistema.",
-      "degree": 55,
-      "portfolio_valuation_usd": 468.0
+      "degree": 64,
+      "portfolio_valuation_usd": 503.0
     },
     {
       "id": "third_sphere",
@@ -2206,8 +2206,8 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": 2200.0,
       "lead_behavior": "lead",
       "profile_blurb": "Valor Capital Group is a New York and São Paulo-based VC firm that bridges Brazil and the US market. Manages $500M+ with a portfolio that has generated $13B+ in follow-on capital. Focus areas: fintech, enterprise SaaS, digital marketplaces, and deeptech companies with Brazil roots and global ambition. Deep LP network in the US enables portfolio companies to access US corporate partnerships and international capital.",
-      "degree": 6,
-      "portfolio_valuation_usd": 110.5
+      "degree": 7,
+      "portfolio_valuation_usd": 210.5
     },
     {
       "id": "varana_capital",
@@ -2240,8 +2240,8 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": 60.0,
       "lead_behavior": "lead",
       "profile_blurb": "Varana Capital is a Denver-based VC managing 30+ portfolio companies in deep technology sectors: advanced materials, industrial biotech, AI, and energy. Notable Israeli connection through Chai 10X accelerator network, giving access to Israeli biotech and agtech pipeline. Portfolio companies include industrial and materials science startups. Not LatAm-focused — global deep tech investor with occasional LatAm exposure through cross-portfolio networks.",
-      "degree": 2,
-      "portfolio_valuation_usd": 200.0
+      "degree": 6,
+      "portfolio_valuation_usd": 314.0
     },
     {
       "id": "vectr",
@@ -2262,8 +2262,8 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": null,
       "lead_behavior": "",
       "profile_blurb": "",
-      "degree": 1,
-      "portfolio_valuation_usd": 25.0
+      "degree": 2,
+      "portfolio_valuation_usd": 50.0
     },
     {
       "id": "veronorte",
@@ -2338,8 +2338,8 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": null,
       "lead_behavior": "",
       "profile_blurb": "",
-      "degree": 1,
-      "portfolio_valuation_usd": 100.0
+      "degree": 2,
+      "portfolio_valuation_usd": 200.0
     },
     {
       "id": "zentynel",
@@ -2505,7 +2505,7 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": 2000.0,
       "lead_behavior": "",
       "profile_blurb": "Kaszek es el fondo de venture capital más influyente de América Latina: fundado por Hernán Kazah y Nicolás Szekasy — ex-Vicepresidente y CFO de MercadoLibre respectivamente — con 9 fondos bajo gestión y 130 ventures respaldados en 20 años de historia regional. Combina Early Funds (Seed a Serie B) con Opportunity Funds (Serie C a pre-IPO), siendo uno de los pocos actores regionales con capacidad de growth capital real.\n\nSu tesis es tecnológica y horizontal: fintech, healthtech, edtech, e-commerce, enterprise SaaS — cualquier sector donde la tecnología pueda crear disrupciones significativas. No tiene un mandato bio específico, pero su presencia en healthtech y su posición como árbitro del ecosistema lo convierte en puerta de entrada para startups bio que buscan validación de mercado tech.\n\nPara el ecosistema BIO, Kaszek es estratégico no por su inversión directa en biotech sino por su rol de legitimación: cuando Kaszek co-invierte o sigue una ronda bio, el resto del ecosistema regional e internacional lo lee como señal de calidad. Con oficinas en Buenos Aires, México, Montevideo y São Paulo, es el vehículo con la red de capital más densa de la región.",
-      "degree": 6,
+      "degree": 7,
       "portfolio_valuation_usd": 85.0
     },
     {
@@ -2875,8 +2875,8 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": 0.0,
       "lead_behavior": "lead_or_follow",
       "profile_blurb": "Corteva Catalyst is the corporate venture and open innovation arm of Corteva Agriscience (NYSE: CTVA), one of the world's largest agrichemical and seed companies. Invests in 5–7 startups per year across four verticals: genome editing, biologicals and natural products, ag technology platforms, and decision science. Strategic mandate: identify and commercialize external innovations, with portfolio companies viewed as acquisition or licensing pipeline. Ticket size undisclosed; team of <10 with M&A and legal backing.",
-      "degree": 2,
-      "portfolio_valuation_usd": 25.0
+      "degree": 3,
+      "portfolio_valuation_usd": 40.0
     },
     {
       "id": "corfo",
@@ -4082,8 +4082,8 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": 40.0,
       "lead_behavior": "lead_or_follow",
       "profile_blurb": "ACE Ventures is a São Paulo-based early-stage accelerator and VC firm founded in 2012, with 150+ portfolio companies and 10+ acquisitions. Runs cohort acceleration programs (3 months) plus a direct investment fund. Active in agtech: backed 25%+ of portfolio in agriculture and sustainability-related sectors. ACE also offers innovation consulting for corporates (ACE Cortex) and a global startup scouting program. Known for rigorous selection (4% acceptance rate) and active post-investment operational support.",
-      "degree": 1,
-      "portfolio_valuation_usd": 1.5
+      "degree": 2,
+      "portfolio_valuation_usd": 16.5
     },
     {
       "id": "slc_agricola",
@@ -4275,9 +4275,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "the_yield_lab_latam",
           "label": "The Yield Lab LATAM",
           "stage": ""
+        },
+        {
+          "id": "the_yield_lab_latam",
+          "label": "The Yield Lab LATAM",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -4322,9 +4327,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "the_yield_lab_latam",
           "label": "The Yield Lab LATAM",
           "stage": ""
+        },
+        {
+          "id": "the_yield_lab_latam",
+          "label": "The Yield Lab LATAM",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -4416,9 +4426,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -4552,9 +4567,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -4651,9 +4671,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "cites",
           "label": "Cites",
           "stage": ""
+        },
+        {
+          "id": "CITES",
+          "label": "CITES",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -4782,9 +4807,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "kamay_ventures",
           "label": "Kamay Ventures",
           "stage": ""
+        },
+        {
+          "id": "kamay_ventures",
+          "label": "Kamay Ventures",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -4839,9 +4869,19 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "the_yield_lab_latam",
           "label": "The Yield Lab LATAM",
           "stage": ""
+        },
+        {
+          "id": "the_yield_lab_latam",
+          "label": "The Yield Lab LATAM",
+          "stage": ""
+        },
+        {
+          "id": "kamay_ventures",
+          "label": "Kamay Ventures",
+          "stage": ""
         }
       ],
-      "degree": 4,
+      "degree": 6,
       "capital_status": "capital_mapped"
     },
     {
@@ -4933,9 +4973,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -5074,9 +5119,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -5168,9 +5218,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "aceleradora_litoral",
           "label": "Aceleradora Litoral",
           "stage": ""
+        },
+        {
+          "id": "aceleradora_litoral",
+          "label": "Aceleradora Litoral",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -5304,9 +5359,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -5356,9 +5416,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "cites",
           "label": "Cites",
           "stage": ""
+        },
+        {
+          "id": "CITES",
+          "label": "CITES",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -5408,9 +5473,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "aceleradora_litoral",
           "label": "Aceleradora Litoral",
           "stage": ""
+        },
+        {
+          "id": "aceleradora_litoral",
+          "label": "Aceleradora Litoral",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -5502,9 +5572,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -5554,9 +5629,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -5601,9 +5681,19 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "inventure",
           "label": "Inventure",
           "stage": ""
+        },
+        {
+          "id": "inventure",
+          "label": "Inventure",
+          "stage": ""
+        },
+        {
+          "id": "AIR Capital",
+          "label": "AIR Capital",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -5747,9 +5837,19 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "brinc",
+          "label": "Brinc",
+          "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 4,
+      "degree": 6,
       "capital_status": "capital_mapped"
     },
     {
@@ -5799,9 +5899,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -5846,9 +5951,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "CITES",
           "label": "CITES",
           "stage": ""
+        },
+        {
+          "id": "CITES",
+          "label": "CITES",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -5935,9 +6045,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "the_yield_lab_latam",
           "label": "The Yield Lab LATAM",
           "stage": ""
+        },
+        {
+          "id": "the_yield_lab_latam",
+          "label": "The Yield Lab LATAM",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -6029,9 +6144,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -6096,9 +6216,24 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "inventure",
           "label": "Inventure",
           "stage": ""
+        },
+        {
+          "id": "inventure",
+          "label": "Inventure",
+          "stage": ""
+        },
+        {
+          "id": "glocal",
+          "label": "GLOCAL",
+          "stage": ""
+        },
+        {
+          "id": "the_yield_lab_latam",
+          "label": "The Yield Lab LATAM",
+          "stage": ""
         }
       ],
-      "degree": 6,
+      "degree": 9,
       "capital_status": "capital_mapped"
     },
     {
@@ -6215,9 +6350,24 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "sf500",
           "label": "Sf500",
           "stage": ""
+        },
+        {
+          "id": "Antom",
+          "label": "Antom",
+          "stage": ""
+        },
+        {
+          "id": "SF500",
+          "label": "SF500",
+          "stage": ""
+        },
+        {
+          "id": "glocal",
+          "label": "GLOCAL",
+          "stage": ""
         }
       ],
-      "degree": 8,
+      "degree": 11,
       "capital_status": "capital_mapped"
     },
     {
@@ -6287,9 +6437,19 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "the_yield_lab_latam",
           "label": "The Yield Lab LATAM",
           "stage": ""
+        },
+        {
+          "id": "inventure",
+          "label": "Inventure",
+          "stage": ""
+        },
+        {
+          "id": "the_yield_lab_latam",
+          "label": "The Yield Lab LATAM",
+          "stage": ""
         }
       ],
-      "degree": 7,
+      "degree": 9,
       "capital_status": "capital_mapped"
     },
     {
@@ -6396,9 +6556,24 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "lartirigoyen",
+          "label": "Lartirigoyen",
+          "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
+        },
+        {
+          "id": "inventure",
+          "label": "Inventure",
+          "stage": ""
         }
       ],
-      "degree": 6,
+      "degree": 9,
       "capital_status": "capital_mapped"
     },
     {
@@ -6448,9 +6623,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -6500,9 +6680,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "CITES",
           "label": "CITES",
           "stage": ""
+        },
+        {
+          "id": "CITES",
+          "label": "CITES",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -6609,9 +6794,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 5,
+      "degree": 6,
       "capital_status": "capital_mapped"
     },
     {
@@ -6760,9 +6950,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "zentynel",
           "label": "Zentynel",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 6,
+      "degree": 7,
       "capital_status": "capital_mapped"
     },
     {
@@ -6901,9 +7096,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -7116,9 +7316,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "the_yield_lab_latam",
           "label": "The Yield Lab LATAM",
           "stage": ""
+        },
+        {
+          "id": "the_yield_lab_latam",
+          "label": "The Yield Lab LATAM",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -7257,9 +7462,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "CITES",
           "label": "CITES",
           "stage": ""
+        },
+        {
+          "id": "CITES",
+          "label": "CITES",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -7309,9 +7519,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "aceleradora_litoral",
           "label": "Aceleradora Litoral",
           "stage": ""
+        },
+        {
+          "id": "aceleradora_litoral",
+          "label": "Aceleradora Litoral",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -7361,9 +7576,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "aceleradora_litoral",
           "label": "Aceleradora Litoral",
           "stage": ""
+        },
+        {
+          "id": "aceleradora_litoral",
+          "label": "Aceleradora Litoral",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -7460,9 +7680,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -7512,9 +7737,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -7564,9 +7794,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -7616,9 +7851,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "kamay_ventures",
           "label": "Kamay Ventures",
           "stage": ""
+        },
+        {
+          "id": "kamay_ventures",
+          "label": "Kamay Ventures",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -7710,9 +7950,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -7839,9 +8084,24 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "kairetsu_angels",
+          "label": "Kairetsu Angels",
+          "stage": ""
+        },
+        {
+          "id": "other_angels",
+          "label": "other angels",
+          "stage": ""
+        },
+        {
+          "id": "sosv",
+          "label": "SOSV",
+          "stage": ""
         }
       ],
-      "degree": 10,
+      "degree": 13,
       "capital_status": "capital_mapped"
     },
     {
@@ -7916,9 +8176,24 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "happiness",
+          "label": "Happiness",
+          "stage": ""
+        },
+        {
+          "id": "sosv",
+          "label": "SOSV",
+          "stage": ""
+        },
+        {
+          "id": "kwb",
+          "label": "KWB",
+          "stage": ""
         }
       ],
-      "degree": 8,
+      "degree": 11,
       "capital_status": "capital_mapped"
     },
     {
@@ -8005,9 +8280,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "kamay_ventures",
           "label": "Kamay Ventures",
           "stage": ""
+        },
+        {
+          "id": "kamay_ventures",
+          "label": "Kamay Ventures",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -8057,9 +8337,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "aceleradora_litoral",
           "label": "Aceleradora Litoral",
           "stage": ""
+        },
+        {
+          "id": "aceleradora_litoral",
+          "label": "Aceleradora Litoral",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -8193,9 +8478,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -8245,9 +8535,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -8297,9 +8592,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -8391,9 +8691,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -8527,9 +8832,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -8703,9 +9013,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "kamay_ventures",
           "label": "Kamay Ventures",
           "stage": ""
+        },
+        {
+          "id": "kamay_ventures",
+          "label": "Kamay Ventures",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -8797,9 +9112,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -9017,9 +9337,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "CITES",
           "label": "CITES",
           "stage": ""
+        },
+        {
+          "id": "CITES",
+          "label": "CITES",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -9116,9 +9441,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -9163,9 +9493,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "Antom",
           "label": "Antom",
           "stage": ""
+        },
+        {
+          "id": "Antom",
+          "label": "Antom",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -9215,9 +9550,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -9356,9 +9696,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 4,
+      "degree": 5,
       "capital_status": "capital_mapped"
     },
     {
@@ -9534,9 +9879,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -9586,9 +9936,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "aceleradora_litoral",
           "label": "Aceleradora Litoral",
           "stage": ""
+        },
+        {
+          "id": "aceleradora_litoral",
+          "label": "Aceleradora Litoral",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -9685,9 +10040,19 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "kamay_ventures",
           "label": "Kamay Ventures",
           "stage": ""
+        },
+        {
+          "id": "inventure",
+          "label": "Inventure",
+          "stage": ""
+        },
+        {
+          "id": "kamay_ventures",
+          "label": "Kamay Ventures",
+          "stage": ""
         }
       ],
-      "degree": 4,
+      "degree": 6,
       "capital_status": "capital_mapped"
     },
     {
@@ -9732,9 +10097,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "CITES",
           "label": "CITES",
           "stage": ""
+        },
+        {
+          "id": "CITES",
+          "label": "CITES",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -9915,9 +10285,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "savia_ventures",
           "label": "Savia Ventures",
           "stage": ""
+        },
+        {
+          "id": "kamay_ventures",
+          "label": "Kamay Ventures",
+          "stage": ""
         }
       ],
-      "degree": 4,
+      "degree": 5,
       "capital_status": "capital_mapped"
     },
     {
@@ -10042,9 +10417,59 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "draper_associates",
+          "label": "Draper Associates",
+          "stage": ""
+        },
+        {
+          "id": "sosv",
+          "label": "SOSV",
+          "stage": ""
+        },
+        {
+          "id": "DraperCygnus",
+          "label": "DraperCygnus",
+          "stage": ""
+        },
+        {
+          "id": "other_small_investors",
+          "label": "other small investors",
+          "stage": ""
+        },
+        {
+          "id": "flia_duhau",
+          "label": "Flia. Duhau",
+          "stage": ""
+        },
+        {
+          "id": "varana_capital",
+          "label": "Varana Capital",
+          "stage": ""
+        },
+        {
+          "id": "losa_group",
+          "label": "Losa Group",
+          "stage": ""
+        },
+        {
+          "id": "DragonesVP",
+          "label": "DragonesVP",
+          "stage": ""
+        },
+        {
+          "id": "vx_fund",
+          "label": "VX Fund",
+          "stage": ""
+        },
+        {
+          "id": "AIR Capital",
+          "label": "AIR Capital",
+          "stage": ""
         }
       ],
-      "degree": 18,
+      "degree": 28,
       "capital_status": "capital_mapped"
     },
     {
@@ -10173,9 +10598,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "the_yield_lab_latam",
           "label": "The Yield Lab LATAM",
           "stage": ""
+        },
+        {
+          "id": "the_yield_lab_latam",
+          "label": "The Yield Lab LATAM",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -10225,9 +10655,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -10272,9 +10707,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "inventure",
           "label": "Inventure",
           "stage": ""
+        },
+        {
+          "id": "inventure",
+          "label": "Inventure",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -10450,9 +10890,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "aceleradora_litoral",
           "label": "Aceleradora Litoral",
           "stage": ""
+        },
+        {
+          "id": "aceleradora_litoral",
+          "label": "Aceleradora Litoral",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -10539,9 +10984,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "kamay_ventures",
           "label": "Kamay Ventures",
           "stage": ""
+        },
+        {
+          "id": "kamay_ventures",
+          "label": "Kamay Ventures",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -10591,9 +11041,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "inventure",
           "label": "Inventure",
           "stage": ""
+        },
+        {
+          "id": "inventure",
+          "label": "Inventure",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -10914,9 +11369,19 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "glocal",
           "label": "GLOCAL",
           "stage": ""
+        },
+        {
+          "id": "Antom",
+          "label": "Antom",
+          "stage": ""
+        },
+        {
+          "id": "glocal",
+          "label": "GLOCAL",
+          "stage": ""
         }
       ],
-      "degree": 4,
+      "degree": 6,
       "capital_status": "capital_mapped"
     },
     {
@@ -11090,9 +11555,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "barn_investimentos",
           "label": "Barn Investimentos",
           "stage": ""
+        },
+        {
+          "id": "newtopia_vc",
+          "label": "Newtopia VC",
+          "stage": ""
         }
       ],
-      "degree": 6,
+      "degree": 7,
       "capital_status": "capital_mapped"
     },
     {
@@ -11293,9 +11763,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -11340,9 +11815,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -11387,9 +11867,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "The Ganesha Lab",
           "label": "The Ganesha Lab",
           "stage": ""
+        },
+        {
+          "id": "the_ganesha_lab",
+          "label": "The Ganesha Lab",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -11454,9 +11939,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 6,
+      "degree": 7,
       "capital_status": "capital_mapped"
     },
     {
@@ -11506,9 +11996,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -11558,9 +12053,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -11615,9 +12115,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "AIR Capital",
+          "label": "AIR Capital",
+          "stage": ""
         }
       ],
-      "degree": 4,
+      "degree": 5,
       "capital_status": "capital_mapped"
     },
     {
@@ -11677,9 +12182,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 5,
+      "degree": 6,
       "capital_status": "capital_mapped"
     },
     {
@@ -11796,9 +12306,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "The Ganesha Lab",
           "label": "The Ganesha Lab",
           "stage": ""
+        },
+        {
+          "id": "AIR Capital",
+          "label": "AIR Capital",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -11888,9 +12403,29 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "draper_university",
+          "label": "Draper University",
+          "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
+        },
+        {
+          "id": "DraperCygnus",
+          "label": "DraperCygnus",
+          "stage": ""
+        },
+        {
+          "id": "AIR Capital",
+          "label": "AIR Capital",
+          "stage": ""
         }
       ],
-      "degree": 11,
+      "degree": 15,
       "capital_status": "capital_mapped"
     },
     {
@@ -12054,9 +12589,19 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "DraperCygnus",
           "label": "DraperCygnus",
           "stage": ""
+        },
+        {
+          "id": "DraperCygnus",
+          "label": "DraperCygnus",
+          "stage": ""
+        },
+        {
+          "id": "AIR Capital",
+          "label": "AIR Capital",
+          "stage": ""
         }
       ],
-      "degree": 4,
+      "degree": 6,
       "capital_status": "capital_mapped"
     },
     {
@@ -12101,9 +12646,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "SF500",
           "label": "SF500",
           "stage": ""
+        },
+        {
+          "id": "SF500",
+          "label": "SF500",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -12203,9 +12753,39 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "the_yield_lab_latam",
           "label": "The Yield Lab LATAM",
           "stage": ""
+        },
+        {
+          "id": "ospraie",
+          "label": "Ospraie",
+          "stage": ""
+        },
+        {
+          "id": "vectr",
+          "label": "VECTR",
+          "stage": ""
+        },
+        {
+          "id": "future_ventures",
+          "label": "Future Ventures",
+          "stage": ""
+        },
+        {
+          "id": "sosv",
+          "label": "SOSV",
+          "stage": ""
+        },
+        {
+          "id": "jeff_wilke",
+          "label": "Jeff Wilke",
+          "stage": ""
+        },
+        {
+          "id": "AIR Capital",
+          "label": "AIR Capital",
+          "stage": ""
         }
       ],
-      "degree": 13,
+      "degree": 19,
       "capital_status": "capital_mapped"
     },
     {
@@ -12302,9 +12882,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -12349,9 +12934,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -12401,9 +12991,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -12593,9 +13188,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "SF500",
           "label": "SF500",
           "stage": ""
+        },
+        {
+          "id": "SF500",
+          "label": "SF500",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -12640,9 +13240,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -12692,9 +13297,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -12739,9 +13349,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "SF500",
           "label": "SF500",
           "stage": ""
+        },
+        {
+          "id": "SF500",
+          "label": "SF500",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -12796,9 +13411,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 4,
+      "degree": 5,
       "capital_status": "capital_mapped"
     },
     {
@@ -12952,9 +13572,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "The Ganesha Lab",
           "label": "The Ganesha Lab",
           "stage": ""
+        },
+        {
+          "id": "the_ganesha_lab",
+          "label": "The Ganesha Lab",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -13046,9 +13671,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "AIR Capital",
           "label": "AIR Capital",
           "stage": ""
+        },
+        {
+          "id": "AIR Capital",
+          "label": "AIR Capital",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -13098,9 +13728,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -13197,9 +13832,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -13249,9 +13889,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -13441,9 +14086,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -13488,9 +14138,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "AIR Capital",
           "label": "AIR Capital",
           "stage": ""
+        },
+        {
+          "id": "AIR Capital",
+          "label": "AIR Capital",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -13618,9 +14273,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "Antom",
           "label": "Antom",
           "stage": ""
+        },
+        {
+          "id": "Antom",
+          "label": "Antom",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -13670,9 +14330,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -13774,9 +14439,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -13868,9 +14538,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "The Ganesha Lab",
           "label": "The Ganesha Lab",
           "stage": ""
+        },
+        {
+          "id": "the_ganesha_lab",
+          "label": "The Ganesha Lab",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -13972,9 +14647,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -14029,9 +14709,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "AIR Capital",
           "label": "AIR Capital",
           "stage": ""
+        },
+        {
+          "id": "AIR Capital",
+          "label": "AIR Capital",
+          "stage": ""
         }
       ],
-      "degree": 4,
+      "degree": 5,
       "capital_status": "capital_mapped"
     },
     {
@@ -14175,9 +14860,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -14227,9 +14917,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -14279,9 +14974,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -14383,9 +15083,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "CITES",
           "label": "CITES",
           "stage": ""
+        },
+        {
+          "id": "CITES",
+          "label": "CITES",
+          "stage": ""
         }
       ],
-      "degree": 4,
+      "degree": 5,
       "capital_status": "capital_mapped"
     },
     {
@@ -14430,9 +15135,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "AIR Capital",
           "label": "AIR Capital",
           "stage": ""
+        },
+        {
+          "id": "AIR Capital",
+          "label": "AIR Capital",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -14477,9 +15187,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "SF500",
           "label": "SF500",
           "stage": ""
+        },
+        {
+          "id": "SF500",
+          "label": "SF500",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -14549,9 +15264,34 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "hatch",
+          "label": "Hatch",
+          "stage": ""
+        },
+        {
+          "id": "duhau",
+          "label": "Duhau",
+          "stage": ""
+        },
+        {
+          "id": "conservation_international",
+          "label": "Conservation International",
+          "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
+        },
+        {
+          "id": "AIR Capital",
+          "label": "AIR Capital",
+          "stage": ""
         }
       ],
-      "degree": 7,
+      "degree": 12,
       "capital_status": "capital_mapped"
     },
     {
@@ -14643,9 +15383,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -14690,9 +15435,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -14815,9 +15565,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "SF500",
           "label": "SF500",
           "stage": ""
+        },
+        {
+          "id": "SF500",
+          "label": "SF500",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -14981,9 +15736,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -15028,9 +15788,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "AIR Capital",
           "label": "AIR Capital",
           "stage": ""
+        },
+        {
+          "id": "AIR Capital",
+          "label": "AIR Capital",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -15080,9 +15845,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -15132,9 +15902,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -15372,9 +16147,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "Antom",
           "label": "Antom",
           "stage": ""
+        },
+        {
+          "id": "Antom",
+          "label": "Antom",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -15632,9 +16412,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "SF500",
           "label": "SF500",
           "stage": ""
+        },
+        {
+          "id": "SF500",
+          "label": "SF500",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -15679,9 +16464,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "AIR Capital",
           "label": "AIR Capital",
           "stage": ""
+        },
+        {
+          "id": "AIR Capital",
+          "label": "AIR Capital",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -15762,9 +16552,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "The Ganesha Lab",
           "label": "The Ganesha Lab",
           "stage": ""
+        },
+        {
+          "id": "the_ganesha_lab",
+          "label": "The Ganesha Lab",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -15861,9 +16656,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -16007,9 +16807,29 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "the_yield_lab_latam",
           "label": "The Yield Lab LATAM",
           "stage": ""
+        },
+        {
+          "id": "inventure",
+          "label": "Inventure",
+          "stage": ""
+        },
+        {
+          "id": "Antom",
+          "label": "Antom",
+          "stage": ""
+        },
+        {
+          "id": "newtopia_vc",
+          "label": "Newtopia VC",
+          "stage": ""
+        },
+        {
+          "id": "antom",
+          "label": "Antom",
+          "stage": ""
         }
       ],
-      "degree": 4,
+      "degree": 8,
       "capital_status": "capital_mapped"
     },
     {
@@ -16084,9 +16904,34 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "kamay_ventures",
           "label": "Kamay Ventures",
           "stage": ""
+        },
+        {
+          "id": "Antom",
+          "label": "Antom",
+          "stage": ""
+        },
+        {
+          "id": "glocal",
+          "label": "GLOCAL",
+          "stage": ""
+        },
+        {
+          "id": "kamay_ventures",
+          "label": "Kamay Ventures",
+          "stage": ""
+        },
+        {
+          "id": "salkantay_ventures",
+          "label": "Salkantay Ventures",
+          "stage": ""
+        },
+        {
+          "id": "varana_capital",
+          "label": "Varana Capital",
+          "stage": ""
         }
       ],
-      "degree": 8,
+      "degree": 13,
       "capital_status": "capital_mapped"
     },
     {
@@ -16167,9 +17012,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "AIR Capital",
           "label": "AIR Capital",
           "stage": ""
+        },
+        {
+          "id": "AIR Capital",
+          "label": "AIR Capital",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -16407,9 +17257,19 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "CITES",
           "label": "CITES",
           "stage": ""
+        },
+        {
+          "id": "SF500",
+          "label": "SF500",
+          "stage": ""
+        },
+        {
+          "id": "CITES",
+          "label": "CITES",
+          "stage": ""
         }
       ],
-      "degree": 4,
+      "degree": 6,
       "capital_status": "capital_mapped"
     },
     {
@@ -16454,9 +17314,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "SF500",
           "label": "SF500",
           "stage": ""
+        },
+        {
+          "id": "SF500",
+          "label": "SF500",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -16605,9 +17470,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "SF500",
           "label": "SF500",
           "stage": ""
+        },
+        {
+          "id": "SF500",
+          "label": "SF500",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -16652,9 +17522,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "The Ganesha Lab",
           "label": "The Ganesha Lab",
           "stage": ""
+        },
+        {
+          "id": "the_ganesha_lab",
+          "label": "The Ganesha Lab",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -16704,9 +17579,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -16802,9 +17682,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "zentynel",
           "label": "Zentynel",
           "stage": ""
+        },
+        {
+          "id": "DraperCygnus",
+          "label": "DraperCygnus",
+          "stage": ""
         }
       ],
-      "degree": 5,
+      "degree": 6,
       "capital_status": "capital_mapped"
     },
     {
@@ -16854,9 +17739,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -17005,9 +17895,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -17114,9 +18009,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "zentynel",
           "label": "Zentynel",
           "stage": ""
+        },
+        {
+          "id": "SF500",
+          "label": "SF500",
+          "stage": ""
         }
       ],
-      "degree": 5,
+      "degree": 6,
       "capital_status": "capital_mapped"
     },
     {
@@ -17161,9 +18061,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "SF500",
           "label": "SF500",
           "stage": ""
+        },
+        {
+          "id": "SF500",
+          "label": "SF500",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -17208,9 +18113,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -17260,9 +18170,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -17374,9 +18289,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 5,
+      "degree": 6,
       "capital_status": "capital_mapped"
     },
     {
@@ -17436,9 +18356,19 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
+        },
+        {
+          "id": "inventure",
+          "label": "Inventure",
+          "stage": ""
         }
       ],
-      "degree": 5,
+      "degree": 7,
       "capital_status": "capital_mapped"
     },
     {
@@ -17524,9 +18454,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -17670,9 +18605,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "Antom",
           "label": "Antom",
           "stage": ""
+        },
+        {
+          "id": "Antom",
+          "label": "Antom",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -17800,9 +18740,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "SF500",
           "label": "SF500",
           "stage": ""
+        },
+        {
+          "id": "SF500",
+          "label": "SF500",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -17862,9 +18807,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 5,
+      "degree": 6,
       "capital_status": "capital_mapped"
     },
     {
@@ -18032,9 +18982,34 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "SOSV_IndieBio",
           "label": "SOSV_IndieBio",
           "stage": ""
+        },
+        {
+          "id": "AIR Capital",
+          "label": "AIR Capital",
+          "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
+        },
+        {
+          "id": "genesis_consortium",
+          "label": "Genesis Consortium",
+          "stage": ""
+        },
+        {
+          "id": "fundacion_para_el_progreso_de_la_medicina",
+          "label": "Fundacion para el progreso de la medicina",
+          "stage": ""
+        },
+        {
+          "id": "creative_ventures",
+          "label": "creative ventures",
+          "stage": ""
         }
       ],
-      "degree": 9,
+      "degree": 14,
       "capital_status": "capital_mapped"
     },
     {
@@ -18104,9 +19079,19 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "endurance_28",
           "label": "Endurance 28",
           "stage": ""
+        },
+        {
+          "id": "SF500",
+          "label": "SF500",
+          "stage": ""
+        },
+        {
+          "id": "AIR Capital",
+          "label": "AIR Capital",
+          "stage": ""
         }
       ],
-      "degree": 7,
+      "degree": 9,
       "capital_status": "capital_mapped"
     },
     {
@@ -18151,9 +19136,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "AIR Capital",
           "label": "AIR Capital",
           "stage": ""
+        },
+        {
+          "id": "AIR Capital",
+          "label": "AIR Capital",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -18198,9 +19188,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "The Ganesha Lab",
           "label": "The Ganesha Lab",
           "stage": ""
+        },
+        {
+          "id": "the_ganesha_lab",
+          "label": "The Ganesha Lab",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -18307,9 +19302,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "SF500",
           "label": "SF500",
           "stage": ""
+        },
+        {
+          "id": "SF500",
+          "label": "SF500",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -18443,9 +19443,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -18630,9 +19635,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -18722,9 +19732,39 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "AIR Capital",
+          "label": "AIR Capital",
+          "stage": ""
+        },
+        {
+          "id": "corteva_catalyst",
+          "label": "Corteva Catalyst",
+          "stage": ""
+        },
+        {
+          "id": "dalus_capital",
+          "label": "Dalus Capital",
+          "stage": ""
+        },
+        {
+          "id": "ace_ventures",
+          "label": "ACE Ventures",
+          "stage": ""
+        },
+        {
+          "id": "sp_ventures",
+          "label": "SP Ventures",
+          "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 11,
+      "degree": 17,
       "capital_status": "capital_mapped"
     },
     {
@@ -18774,9 +19814,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -18826,9 +19871,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -18925,9 +19975,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -19086,9 +20141,19 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "glocal",
           "label": "GLOCAL",
           "stage": ""
+        },
+        {
+          "id": "Antom",
+          "label": "Antom",
+          "stage": ""
+        },
+        {
+          "id": "glocal",
+          "label": "GLOCAL",
+          "stage": ""
         }
       ],
-      "degree": 4,
+      "degree": 6,
       "capital_status": "capital_mapped"
     },
     {
@@ -19220,9 +20285,29 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "inventure",
           "label": "Inventure",
           "stage": ""
+        },
+        {
+          "id": "inventure",
+          "label": "Inventure",
+          "stage": ""
+        },
+        {
+          "id": "Antom",
+          "label": "Antom",
+          "stage": ""
+        },
+        {
+          "id": "DraperCygnus",
+          "label": "DraperCygnus",
+          "stage": ""
+        },
+        {
+          "id": "AIR Capital",
+          "label": "AIR Capital",
+          "stage": ""
         }
       ],
-      "degree": 9,
+      "degree": 13,
       "capital_status": "capital_mapped"
     },
     {
@@ -19292,9 +20377,24 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "DraperCygnus",
           "label": "DraperCygnus",
           "stage": ""
+        },
+        {
+          "id": "DraperCygnus",
+          "label": "DraperCygnus",
+          "stage": ""
+        },
+        {
+          "id": "valor_capital_group",
+          "label": "Valor Capital Group",
+          "stage": ""
+        },
+        {
+          "id": "sp_ventures",
+          "label": "SP Ventures",
+          "stage": ""
         }
       ],
-      "degree": 7,
+      "degree": 10,
       "capital_status": "capital_mapped"
     },
     {
@@ -19344,9 +20444,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "The Ganesha Lab",
           "label": "The Ganesha Lab",
           "stage": ""
+        },
+        {
+          "id": "the_ganesha_lab",
+          "label": "The Ganesha Lab",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -19438,9 +20543,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -19640,9 +20750,19 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "inventure",
           "label": "Inventure",
           "stage": ""
+        },
+        {
+          "id": "inventure",
+          "label": "Inventure",
+          "stage": ""
+        },
+        {
+          "id": "DraperCygnus",
+          "label": "DraperCygnus",
+          "stage": ""
         }
       ],
-      "degree": 4,
+      "degree": 6,
       "capital_status": "capital_mapped"
     },
     {
@@ -19682,9 +20802,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "pampa_start",
           "label": "Pampa Start",
           "stage": "series-a"
+        },
+        {
+          "id": "varana_capital",
+          "label": "Varana Capital",
+          "stage": ""
         }
       ],
-      "degree": 1,
+      "degree": 2,
       "capital_status": "capital_mapped"
     },
     {
@@ -19907,9 +21032,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "SF500",
           "label": "SF500",
           "stage": ""
+        },
+        {
+          "id": "SF500",
+          "label": "SF500",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -20038,9 +21168,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -20090,9 +21225,19 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "DraperCygnus",
           "label": "DraperCygnus",
           "stage": ""
+        },
+        {
+          "id": "DraperCygnus",
+          "label": "DraperCygnus",
+          "stage": ""
+        },
+        {
+          "id": "newtopia_vc",
+          "label": "Newtopia VC",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 5,
       "capital_status": "capital_mapped"
     },
     {
@@ -20147,9 +21292,19 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
+        },
+        {
+          "id": "AIR Capital",
+          "label": "AIR Capital",
+          "stage": ""
         }
       ],
-      "degree": 4,
+      "degree": 6,
       "capital_status": "capital_mapped"
     },
     {
@@ -20281,9 +21436,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -20338,9 +21498,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "thrive",
           "label": "Thrive",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 4,
+      "degree": 5,
       "capital_status": "capital_mapped"
     },
     {
@@ -20442,9 +21607,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "The Ganesha Lab",
           "label": "The Ganesha Lab",
           "stage": ""
+        },
+        {
+          "id": "SF500",
+          "label": "SF500",
+          "stage": ""
         }
       ],
-      "degree": 4,
+      "degree": 5,
       "capital_status": "capital_mapped"
     },
     {
@@ -20489,9 +21659,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "The Ganesha Lab",
           "label": "The Ganesha Lab",
           "stage": ""
+        },
+        {
+          "id": "the_ganesha_lab",
+          "label": "The Ganesha Lab",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -20588,9 +21763,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "The Ganesha Lab",
           "label": "The Ganesha Lab",
           "stage": ""
+        },
+        {
+          "id": "the_ganesha_lab",
+          "label": "The Ganesha Lab",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -20635,9 +21815,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "SF500",
           "label": "SF500",
           "stage": ""
+        },
+        {
+          "id": "SF500",
+          "label": "SF500",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -20707,9 +21892,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 7,
+      "degree": 8,
       "capital_status": "capital_mapped"
     },
     {
@@ -20919,9 +22109,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -21033,9 +22228,19 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "inventure",
           "label": "Inventure",
           "stage": ""
+        },
+        {
+          "id": "inventure",
+          "label": "Inventure",
+          "stage": ""
+        },
+        {
+          "id": "SF500",
+          "label": "SF500",
+          "stage": ""
         }
       ],
-      "degree": 6,
+      "degree": 8,
       "capital_status": "capital_mapped"
     },
     {
@@ -21080,9 +22285,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -21184,9 +22394,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -21382,9 +22597,19 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -21481,9 +22706,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "kamay_ventures",
+          "label": "Kamay Ventures",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -21538,9 +22768,24 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "peruanos",
           "label": "Peruanos",
           "stage": ""
+        },
+        {
+          "id": "peruanos",
+          "label": "Peruanos",
+          "stage": ""
+        },
+        {
+          "id": "grupo_peruanos",
+          "label": "Grupo Peruanos",
+          "stage": ""
+        },
+        {
+          "id": "GridX",
+          "label": "GridX",
+          "stage": ""
         }
       ],
-      "degree": 4,
+      "degree": 7,
       "capital_status": "capital_mapped"
     },
     {
@@ -58243,6 +59488,3531 @@ window.CAPITAL_ATLAS_DATA = {
       "weight": 2.32
     },
     {
+      "id": "GEPHI_agree_the_yield_lab_latam",
+      "source": "the_yield_lab_latam",
+      "target": "agree",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_agroforte_the_yield_lab_latam",
+      "source": "the_yield_lab_latam",
+      "target": "agroforte",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_agrojusto_Antom",
+      "source": "Antom",
+      "target": "agrojusto",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_agrojusto_glocal",
+      "source": "glocal",
+      "target": "agrojusto",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_agrotoken_newtopia_vc",
+      "source": "newtopia_vc",
+      "target": "agrotoken",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_algaebio_GridX",
+      "source": "GridX",
+      "target": "algaebio",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_alkemio_GridX",
+      "source": "GridX",
+      "target": "alkemio",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_alytix_GridX",
+      "source": "GridX",
+      "target": "alytix",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_antarka_GridX",
+      "source": "GridX",
+      "target": "antarka",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_apasomics_GridX",
+      "source": "GridX",
+      "target": "apasomics",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_apexzymes_GridX",
+      "source": "GridX",
+      "target": "apexzymes",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_aplife_biotech_AIR Capital",
+      "source": "AIR Capital",
+      "target": "aplife_biotech",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_aquit_GridX",
+      "source": "GridX",
+      "target": "aquit",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_arakion_GridX",
+      "source": "GridX",
+      "target": "arakion",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_arcomed_AIR Capital",
+      "source": "AIR Capital",
+      "target": "arcomed",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_ardan_CITES",
+      "source": "CITES",
+      "target": "ardan",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_argentag_draper_university",
+      "source": "draper_university",
+      "target": "argentag",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_argentag_GridX",
+      "source": "GridX",
+      "target": "argentag",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_argentag_DraperCygnus",
+      "source": "DraperCygnus",
+      "target": "argentag",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_argentag_AIR Capital",
+      "source": "AIR Capital",
+      "target": "argentag",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_arqlite_kamay_ventures",
+      "source": "kamay_ventures",
+      "target": "arqlite",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_auravant_the_yield_lab_latam",
+      "source": "the_yield_lab_latam",
+      "target": "auravant",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_auravant_kamay_ventures",
+      "source": "kamay_ventures",
+      "target": "auravant",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_avatar_medtech_GridX",
+      "source": "GridX",
+      "target": "avatar_medtech",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_ayuvant_DraperCygnus",
+      "source": "DraperCygnus",
+      "target": "ayuvant",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_ayuvant_AIR Capital",
+      "source": "AIR Capital",
+      "target": "ayuvant",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_beam_croptech_SF500",
+      "source": "SF500",
+      "target": "beam_croptech",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_beeflow_ospraie",
+      "source": "ospraie",
+      "target": "beeflow",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_beeflow_vectr",
+      "source": "vectr",
+      "target": "beeflow",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_beeflow_future_ventures",
+      "source": "future_ventures",
+      "target": "beeflow",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_beeflow_sosv",
+      "source": "sosv",
+      "target": "beeflow",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_beeflow_jeff_wilke",
+      "source": "jeff_wilke",
+      "target": "beeflow",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_beeflow_AIR Capital",
+      "source": "AIR Capital",
+      "target": "beeflow",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_bioblends_GridX",
+      "source": "GridX",
+      "target": "bioblends",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_biocle_GridX",
+      "source": "GridX",
+      "target": "biocle",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_biodiversity_intelligence_GridX",
+      "source": "GridX",
+      "target": "biodiversity_intelligence",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_bioeutectics_GridX",
+      "source": "GridX",
+      "target": "bioeutectics",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_bioheuris_aceleradora_litoral",
+      "source": "aceleradora_litoral",
+      "target": "bioheuris",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_biometallum_SF500",
+      "source": "SF500",
+      "target": "biometallum",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_bioplaster_research_inc_GridX",
+      "source": "GridX",
+      "target": "bioplaster_research_inc",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_bioplastix_GridX",
+      "source": "GridX",
+      "target": "bioplastix",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_bioseek_CITES",
+      "source": "CITES",
+      "target": "bioseek",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_biosynaptica_aceleradora_litoral",
+      "source": "aceleradora_litoral",
+      "target": "biosynaptica",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_biotalife_SF500",
+      "source": "SF500",
+      "target": "biotalife",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_bitgenia_GridX",
+      "source": "GridX",
+      "target": "bitgenia",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_branch_energy_AIR Capital",
+      "source": "AIR Capital",
+      "target": "branch_energy",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_break_pet_GridX",
+      "source": "GridX",
+      "target": "break_pet",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_bsafe_biotech_GridX",
+      "source": "GridX",
+      "target": "bsafe_biotech",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_bybug_GridX",
+      "source": "GridX",
+      "target": "bybug",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_calfix_GridX",
+      "source": "GridX",
+      "target": "calfix",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_calice_inventure",
+      "source": "inventure",
+      "target": "calice",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_calice_AIR Capital",
+      "source": "AIR Capital",
+      "target": "calice",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_caligenia_GridX",
+      "source": "GridX",
+      "target": "caligenia",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_cell_farm_brinc",
+      "source": "brinc",
+      "target": "cell_farm",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_cell_farm_GridX",
+      "source": "GridX",
+      "target": "cell_farm",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_cellco_GridX",
+      "source": "GridX",
+      "target": "cellco",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_cellrep_GridX",
+      "source": "GridX",
+      "target": "cellrep",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_cellva_AIR Capital",
+      "source": "AIR Capital",
+      "target": "cellva",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_circa_therapeutics_CITES",
+      "source": "CITES",
+      "target": "circa_therapeutics",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_circclo_Antom",
+      "source": "Antom",
+      "target": "circclo",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_courageous_land_the_yield_lab_latam",
+      "source": "the_yield_lab_latam",
+      "target": "courageous_land",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_cryosmetics_GridX",
+      "source": "GridX",
+      "target": "cryosmetics",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_cyanomin_GridX",
+      "source": "GridX",
+      "target": "cyanomin",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_cytbac_GridX",
+      "source": "GridX",
+      "target": "cytbac",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_deepagro_inventure",
+      "source": "inventure",
+      "target": "deepagro",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_deepagro_glocal",
+      "source": "glocal",
+      "target": "deepagro",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_deepagro_the_yield_lab_latam",
+      "source": "the_yield_lab_latam",
+      "target": "deepagro",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_dogma_biotech_GridX",
+      "source": "GridX",
+      "target": "dogma_biotech",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_done_properly_AIR Capital",
+      "source": "AIR Capital",
+      "target": "done_properly",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_einsted_GridX",
+      "source": "GridX",
+      "target": "einsted",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_eiru_Antom",
+      "source": "Antom",
+      "target": "eiru",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_eiru_SF500",
+      "source": "SF500",
+      "target": "eiru",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_eiru_glocal",
+      "source": "glocal",
+      "target": "eiru",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_eiwa_inventure",
+      "source": "inventure",
+      "target": "eiwa",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_eiwa_the_yield_lab_latam",
+      "source": "the_yield_lab_latam",
+      "target": "eiwa",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_elytron_biotech_lartirigoyen",
+      "source": "lartirigoyen",
+      "target": "elytron_biotech",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_elytron_biotech_GridX",
+      "source": "GridX",
+      "target": "elytron_biotech",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_elytron_biotech_inventure",
+      "source": "inventure",
+      "target": "elytron_biotech",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_embryoxite_GridX",
+      "source": "GridX",
+      "target": "embryoxite",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_enteria_GridX",
+      "source": "GridX",
+      "target": "enteria",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_enzyva_GridX",
+      "source": "GridX",
+      "target": "enzyva",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_epiliquid_CITES",
+      "source": "CITES",
+      "target": "epiliquid",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_ergo_bioscience_CITES",
+      "source": "CITES",
+      "target": "ergo_bioscience",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_ergo_foods_AIR Capital",
+      "source": "AIR Capital",
+      "target": "ergo_foods",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_exomas_SF500",
+      "source": "SF500",
+      "target": "exomas",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_eywa_biotech_GridX",
+      "source": "GridX",
+      "target": "eywa_biotech",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_fecundis_GridX",
+      "source": "GridX",
+      "target": "fecundis",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_feedvax_hatch",
+      "source": "hatch",
+      "target": "feedvax",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_feedvax_duhau",
+      "source": "duhau",
+      "target": "feedvax",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_feedvax_conservation_international",
+      "source": "conservation_international",
+      "target": "feedvax",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_feedvax_GridX",
+      "source": "GridX",
+      "target": "feedvax",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_feedvax_AIR Capital",
+      "source": "AIR Capital",
+      "target": "feedvax",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_food4you_GridX",
+      "source": "GridX",
+      "target": "food4you",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_fungi_life_GridX",
+      "source": "GridX",
+      "target": "fungi_life",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_future_biome_GridX",
+      "source": "GridX",
+      "target": "future_biome",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_gameet_SF500",
+      "source": "SF500",
+      "target": "gameet",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_geoprot_GridX",
+      "source": "GridX",
+      "target": "geoprot",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_gigablue_AIR Capital",
+      "source": "AIR Capital",
+      "target": "gigablue",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_gisens_biotech_GridX",
+      "source": "GridX",
+      "target": "gisens_biotech",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_glycox_GridX",
+      "source": "GridX",
+      "target": "glycox",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_heartbest_the_yield_lab_latam",
+      "source": "the_yield_lab_latam",
+      "target": "heartbest",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_huiro_Antom",
+      "source": "Antom",
+      "target": "huiro",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_imvalv_CITES",
+      "source": "CITES",
+      "target": "imvalv",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_inbioar_aceleradora_litoral",
+      "source": "aceleradora_litoral",
+      "target": "inbioar",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_infira_aceleradora_litoral",
+      "source": "aceleradora_litoral",
+      "target": "infira",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_inmet_SF500",
+      "source": "SF500",
+      "target": "inmet",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_inner_cosmos_AIR Capital",
+      "source": "AIR Capital",
+      "target": "inner_cosmos",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_invitrall_GridX",
+      "source": "GridX",
+      "target": "invitrall",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_kigui_inventure",
+      "source": "inventure",
+      "target": "kigui",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_kigui_Antom",
+      "source": "Antom",
+      "target": "kigui",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_kigui_newtopia_vc",
+      "source": "newtopia_vc",
+      "target": "kigui",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_kilimo_Antom",
+      "source": "Antom",
+      "target": "kilimo",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_kilimo_glocal",
+      "source": "glocal",
+      "target": "kilimo",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_kilimo_kamay_ventures",
+      "source": "kamay_ventures",
+      "target": "kilimo",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_kilimo_salkantay_ventures",
+      "source": "salkantay_ventures",
+      "target": "kilimo",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_kilimo_varana_capital",
+      "source": "varana_capital",
+      "target": "kilimo",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_kresko_rnatech_GridX",
+      "source": "GridX",
+      "target": "kresko_rnatech",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_laurus_AIR Capital",
+      "source": "AIR Capital",
+      "target": "laurus",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_levya_GridX",
+      "source": "GridX",
+      "target": "levya",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_limay_biosciences_SF500",
+      "source": "SF500",
+      "target": "limay_biosciences",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_limay_biosciences_CITES",
+      "source": "CITES",
+      "target": "limay_biosciences",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_lipock_GridX",
+      "source": "GridX",
+      "target": "lipock",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_logshare_kamay_ventures",
+      "source": "kamay_ventures",
+      "target": "logshare",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_m4life_SF500",
+      "source": "SF500",
+      "target": "m4life",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_mavios_GridX",
+      "source": "GridX",
+      "target": "mavios",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_mesenchyal_t_SF500",
+      "source": "SF500",
+      "target": "mesenchyal_t",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_michroma_kairetsu_angels",
+      "source": "kairetsu_angels",
+      "target": "michroma",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_michroma_other_angels",
+      "source": "other_angels",
+      "target": "michroma",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_michroma_sosv",
+      "source": "sosv",
+      "target": "michroma",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_microgenesis_happiness",
+      "source": "happiness",
+      "target": "microgenesis",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_microgenesis_sosv",
+      "source": "sosv",
+      "target": "microgenesis",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_microgenesis_kwb",
+      "source": "kwb",
+      "target": "microgenesis",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_microin_GridX",
+      "source": "GridX",
+      "target": "microin",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_microterra_DraperCygnus",
+      "source": "DraperCygnus",
+      "target": "microterra",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_migma_GridX",
+      "source": "GridX",
+      "target": "migma",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_multiplai_health_SF500",
+      "source": "SF500",
+      "target": "multiplai_health",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_muta_kamay_ventures",
+      "source": "kamay_ventures",
+      "target": "muta",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_mycorium_biotech_SF500",
+      "source": "SF500",
+      "target": "mycorium_biotech",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_mzp_GridX",
+      "source": "GridX",
+      "target": "mzp",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_nairotech_aceleradora_litoral",
+      "source": "aceleradora_litoral",
+      "target": "nairotech",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_nanogrow_biotech_GridX",
+      "source": "GridX",
+      "target": "nanogrow_biotech",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_nanoingreen_GridX",
+      "source": "GridX",
+      "target": "nanoingreen",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_nanojump_bio_GridX",
+      "source": "GridX",
+      "target": "nanojump_bio",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_nanoprox_GridX",
+      "source": "GridX",
+      "target": "nanoprox",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_nanotransfer_GridX",
+      "source": "GridX",
+      "target": "nanotransfer",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_nat4bio_GridX",
+      "source": "GridX",
+      "target": "nat4bio",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_nat4bio_inventure",
+      "source": "inventure",
+      "target": "nat4bio",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_naturannova_GridX",
+      "source": "GridX",
+      "target": "naturannova",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_neocell_GridX",
+      "source": "GridX",
+      "target": "neocell",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_new_organs_biotech_GridX",
+      "source": "GridX",
+      "target": "new_organs_biotech",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_nideport_Antom",
+      "source": "Antom",
+      "target": "nideport",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_notfossil_SF500",
+      "source": "SF500",
+      "target": "notfossil",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_nude_kamay_ventures",
+      "source": "kamay_ventures",
+      "target": "nude",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_nunatak_biotech_GridX",
+      "source": "GridX",
+      "target": "nunatak_biotech",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_ocular_bio_design_GridX",
+      "source": "GridX",
+      "target": "ocular_bio_design",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_onco_precision_AIR Capital",
+      "source": "AIR Capital",
+      "target": "onco_precision",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_oncoliq_SF500",
+      "source": "SF500",
+      "target": "oncoliq",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_oncoliq_AIR Capital",
+      "source": "AIR Capital",
+      "target": "oncoliq",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_onco_precision_GridX",
+      "source": "GridX",
+      "target": "onco_precision",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_onco_precision_genesis_consortium",
+      "source": "genesis_consortium",
+      "target": "onco_precision",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_onco_precision_fundacion_para_el_progreso_de_la_medicina",
+      "source": "fundacion_para_el_progreso_de_la_medicina",
+      "target": "onco_precision",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_onco_precision_creative_ventures",
+      "source": "creative_ventures",
+      "target": "onco_precision",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_outpost_AIR Capital",
+      "source": "AIR Capital",
+      "target": "outpost",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_pepton_CITES",
+      "source": "CITES",
+      "target": "pepton",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_pill_ar_SF500",
+      "source": "SF500",
+      "target": "pill_ar",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_plamic_GridX",
+      "source": "GridX",
+      "target": "plamic",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_poas_bioenergy_Antom",
+      "source": "Antom",
+      "target": "poas_bioenergy",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_polymera_GridX",
+      "source": "GridX",
+      "target": "polymera",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_pregen_GridX",
+      "source": "GridX",
+      "target": "pregen",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_protiva_GridX",
+      "source": "GridX",
+      "target": "protiva",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_puna_bio_AIR Capital",
+      "source": "AIR Capital",
+      "target": "puna_bio",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_puna_bio_corteva_catalyst",
+      "source": "corteva_catalyst",
+      "target": "puna_bio",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_puna_bio_dalus_capital",
+      "source": "dalus_capital",
+      "target": "puna_bio",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_puna_bio_ace_ventures",
+      "source": "ace_ventures",
+      "target": "puna_bio",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_puna_bio_sp_ventures",
+      "source": "sp_ventures",
+      "target": "puna_bio",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_puna_bio_GridX",
+      "source": "GridX",
+      "target": "puna_bio",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_qnity_GridX",
+      "source": "GridX",
+      "target": "qnity",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_qumir_nano_GridX",
+      "source": "GridX",
+      "target": "qumir_nano",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_radial_GridX",
+      "source": "GridX",
+      "target": "radial",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_resistia_GridX",
+      "source": "GridX",
+      "target": "resistia",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_ruuts_Antom",
+      "source": "Antom",
+      "target": "ruuts",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_ruuts_glocal",
+      "source": "glocal",
+      "target": "ruuts",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_satellites_on_fire_inventure",
+      "source": "inventure",
+      "target": "satellites_on_fire",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_satellites_on_fire_Antom",
+      "source": "Antom",
+      "target": "satellites_on_fire",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_satellites_on_fire_DraperCygnus",
+      "source": "DraperCygnus",
+      "target": "satellites_on_fire",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_satellites_on_fire_AIR Capital",
+      "source": "AIR Capital",
+      "target": "satellites_on_fire",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_satellogic_DraperCygnus",
+      "source": "DraperCygnus",
+      "target": "satellogic",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_satellogic_valor_capital_group",
+      "source": "valor_capital_group",
+      "target": "satellogic",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_satellogic_sp_ventures",
+      "source": "sp_ventures",
+      "target": "satellogic",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_scitherm_therapeutics_GridX",
+      "source": "GridX",
+      "target": "scitherm_therapeutics",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_seedmatriz_aceleradora_litoral",
+      "source": "aceleradora_litoral",
+      "target": "seedmatriz",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_semion_GridX",
+      "source": "GridX",
+      "target": "semion",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_sensify_inventure",
+      "source": "inventure",
+      "target": "sensify",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_sensify_kamay_ventures",
+      "source": "kamay_ventures",
+      "target": "sensify",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_siloreal_inventure",
+      "source": "inventure",
+      "target": "siloreal",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_siloreal_DraperCygnus",
+      "source": "DraperCygnus",
+      "target": "siloreal",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_sima_varana_capital",
+      "source": "varana_capital",
+      "target": "sima",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_single_strand_biotech_CITES",
+      "source": "CITES",
+      "target": "single_strand_biotech",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_solfium_kamay_ventures",
+      "source": "kamay_ventures",
+      "target": "solfium",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_soygreen_SF500",
+      "source": "SF500",
+      "target": "soygreen",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_spherebio_GridX",
+      "source": "GridX",
+      "target": "spherebio",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_splight_DraperCygnus",
+      "source": "DraperCygnus",
+      "target": "splight",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_splight_newtopia_vc",
+      "source": "newtopia_vc",
+      "target": "splight",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_stamm_draper_associates",
+      "source": "draper_associates",
+      "target": "stamm",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_stamm_sosv",
+      "source": "sosv",
+      "target": "stamm",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_stamm_DraperCygnus",
+      "source": "DraperCygnus",
+      "target": "stamm",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_stamm_other_small_investors",
+      "source": "other_small_investors",
+      "target": "stamm",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_stamm_flia_duhau",
+      "source": "flia_duhau",
+      "target": "stamm",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_stamm_varana_capital",
+      "source": "varana_capital",
+      "target": "stamm",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_stamm_losa_group",
+      "source": "losa_group",
+      "target": "stamm",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_stamm_DragonesVP",
+      "source": "DragonesVP",
+      "target": "stamm",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_stamm_vx_fund",
+      "source": "vx_fund",
+      "target": "stamm",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_stamm_AIR Capital",
+      "source": "AIR Capital",
+      "target": "stamm",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_sylvarum_GridX",
+      "source": "GridX",
+      "target": "sylvarum",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_sylvarum_AIR Capital",
+      "source": "AIR Capital",
+      "target": "sylvarum",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_synthetic_ocular_restoration_GridX",
+      "source": "GridX",
+      "target": "synthetic_ocular_restoration",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_tech_the_yield_lab_latam",
+      "source": "the_yield_lab_latam",
+      "target": "tech",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_tell_SF500",
+      "source": "SF500",
+      "target": "tell",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_tesabio_ai_GridX",
+      "source": "GridX",
+      "target": "tesabio_ai",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_tintte_SF500",
+      "source": "SF500",
+      "target": "tintte",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_tomorrow_foods_GridX",
+      "source": "GridX",
+      "target": "tomorrow_foods",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_tracestory_inventure",
+      "source": "inventure",
+      "target": "tracestory",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_ubique_bio_GridX",
+      "source": "GridX",
+      "target": "ubique_bio",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_unibaio_inventure",
+      "source": "inventure",
+      "target": "unibaio",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_unibaio_SF500",
+      "source": "SF500",
+      "target": "unibaio",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_untech_aceleradora_litoral",
+      "source": "aceleradora_litoral",
+      "target": "untech",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_updairy_GridX",
+      "source": "GridX",
+      "target": "updairy",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_vexxel_biotech_GridX",
+      "source": "GridX",
+      "target": "vexxel_biotech",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_werk-nvac_GridX",
+      "source": "GridX",
+      "target": "werk-nvac",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_wiagro_kamay_ventures",
+      "source": "kamay_ventures",
+      "target": "wiagro",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_zavia_bio_kamay_ventures",
+      "source": "kamay_ventures",
+      "target": "zavia_bio",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_zev_biotech_peruanos",
+      "source": "peruanos",
+      "target": "zev_biotech",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_zev_biotech_grupo_peruanos",
+      "source": "grupo_peruanos",
+      "target": "zev_biotech",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_zev_biotech_GridX",
+      "source": "GridX",
+      "target": "zev_biotech",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
+      "id": "GEPHI_zoomagri_inventure",
+      "source": "inventure",
+      "target": "zoomagri",
+      "type": "portfolio_investment",
+      "confidence": 0.85,
+      "source_url": "GEPHI_NETWORK",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.16
+    },
+    {
       "id": "idb_lab-sp_ventures",
       "source": "idb_lab",
       "target": "sp_ventures",
@@ -58883,72 +63653,77 @@ window.CAPITAL_ATLAS_DATA = {
       {
         "source": "AIR Capital",
         "theme": "Bioinputs & Crop Resilience",
-        "deal_count": 5
-      },
-      {
-        "source": "AIR Capital",
-        "theme": "Biomanufacturing & Platform Technologies",
-        "deal_count": 5
-      },
-      {
-        "source": "AIR Capital",
-        "theme": "Diagnostics & Devices",
-        "deal_count": 7
-      },
-      {
-        "source": "AIR Capital",
-        "theme": "Food Systems & Alt Proteins",
         "deal_count": 8
       },
       {
         "source": "AIR Capital",
+        "theme": "Biomanufacturing & Platform Technologies",
+        "deal_count": 8
+      },
+      {
+        "source": "AIR Capital",
+        "theme": "Diagnostics & Devices",
+        "deal_count": 10
+      },
+      {
+        "source": "AIR Capital",
+        "theme": "Food Systems & Alt Proteins",
+        "deal_count": 12
+      },
+      {
+        "source": "AIR Capital",
         "theme": "Nature & Ecosystem Tech",
-        "deal_count": 6
+        "deal_count": 9
+      },
+      {
+        "source": "AIR Capital",
+        "theme": "Precision Agriculture",
+        "deal_count": 1
       },
       {
         "source": "AIR Capital",
         "theme": "Therapeutics",
-        "deal_count": 9
+        "deal_count": 13
       },
       {
         "source": "Antom",
         "theme": "Bioinputs & Crop Resilience",
-        "deal_count": 2
+        "deal_count": 3
       },
       {
         "source": "Antom",
         "theme": "Biomaterials & Green Chemistry",
-        "deal_count": 2
+        "deal_count": 3
       },
       {
         "source": "Antom",
         "theme": "Food Systems & Alt Proteins",
-        "deal_count": 1
+        "deal_count": 2
       },
       {
         "source": "Antom",
         "theme": "Nature & Ecosystem Tech",
-        "deal_count": 14
+        "deal_count": 21
       },
       {
         "source": "CITES",
         "theme": "Diagnostics & Devices",
-        "deal_count": 18
+        "deal_count": 23
       },
       {
         "source": "CITES",
         "theme": "Food Systems & Alt Proteins",
-        "deal_count": 2
+        "deal_count": 3
       },
       {
         "source": "CITES",
         "theme": "Therapeutics",
-        "deal_count": 9
+        "deal_count": 12
       },
       {
         "source": "DragonesVP",
         "theme": "Biomanufacturing & Platform Technologies",
-        "deal_count": 1
+        "deal_count": 2
       },
       {
         "source": "DragonesVP",
@@ -58968,57 +63743,57 @@ window.CAPITAL_ATLAS_DATA = {
       {
         "source": "DraperCygnus",
         "theme": "Biomanufacturing & Platform Technologies",
-        "deal_count": 2
+        "deal_count": 3
       },
       {
         "source": "DraperCygnus",
         "theme": "Diagnostics & Devices",
-        "deal_count": 2
+        "deal_count": 3
       },
       {
         "source": "DraperCygnus",
         "theme": "Food Systems & Alt Proteins",
-        "deal_count": 2
+        "deal_count": 3
       },
       {
         "source": "DraperCygnus",
         "theme": "Nature & Ecosystem Tech",
-        "deal_count": 6
+        "deal_count": 9
       },
       {
         "source": "DraperCygnus",
         "theme": "Therapeutics",
-        "deal_count": 2
+        "deal_count": 3
       },
       {
         "source": "GridX",
         "theme": "Bioinputs & Crop Resilience",
-        "deal_count": 28
+        "deal_count": 39
       },
       {
         "source": "GridX",
         "theme": "Biomanufacturing & Platform Technologies",
-        "deal_count": 20
+        "deal_count": 28
       },
       {
         "source": "GridX",
         "theme": "Biomaterials & Green Chemistry",
-        "deal_count": 34
+        "deal_count": 47
       },
       {
         "source": "GridX",
         "theme": "Diagnostics & Devices",
-        "deal_count": 42
+        "deal_count": 58
       },
       {
         "source": "GridX",
         "theme": "Food Systems & Alt Proteins",
-        "deal_count": 30
+        "deal_count": 45
       },
       {
         "source": "GridX",
         "theme": "Nature & Ecosystem Tech",
-        "deal_count": 2
+        "deal_count": 3
       },
       {
         "source": "GridX",
@@ -59028,12 +63803,12 @@ window.CAPITAL_ATLAS_DATA = {
       {
         "source": "GridX",
         "theme": "Therapeutics",
-        "deal_count": 42
+        "deal_count": 62
       },
       {
         "source": "SF500",
         "theme": "Bioinputs & Crop Resilience",
-        "deal_count": 10
+        "deal_count": 15
       },
       {
         "source": "SF500",
@@ -59043,22 +63818,22 @@ window.CAPITAL_ATLAS_DATA = {
       {
         "source": "SF500",
         "theme": "Biomaterials & Green Chemistry",
-        "deal_count": 8
+        "deal_count": 12
       },
       {
         "source": "SF500",
         "theme": "Diagnostics & Devices",
-        "deal_count": 14
+        "deal_count": 21
       },
       {
         "source": "SF500",
         "theme": "Nature & Ecosystem Tech",
-        "deal_count": 2
+        "deal_count": 3
       },
       {
         "source": "SF500",
         "theme": "Therapeutics",
-        "deal_count": 8
+        "deal_count": 10
       },
       {
         "source": "SOSV_IndieBio",
@@ -59122,23 +63897,28 @@ window.CAPITAL_ATLAS_DATA = {
       },
       {
         "source": "ace_ventures",
+        "theme": "Bioinputs & Crop Resilience",
+        "deal_count": 1
+      },
+      {
+        "source": "ace_ventures",
         "theme": "Precision Agriculture",
         "deal_count": 1
       },
       {
         "source": "aceleradora_litoral",
         "theme": "Bioinputs & Crop Resilience",
-        "deal_count": 12
+        "deal_count": 16
       },
       {
         "source": "aceleradora_litoral",
         "theme": "Biomaterials & Green Chemistry",
-        "deal_count": 3
+        "deal_count": 4
       },
       {
         "source": "aceleradora_litoral",
         "theme": "Diagnostics & Devices",
-        "deal_count": 6
+        "deal_count": 8
       },
       {
         "source": "agrex",
@@ -59158,6 +63938,11 @@ window.CAPITAL_ATLAS_DATA = {
       {
         "source": "antom",
         "theme": "Bioinputs & Crop Resilience",
+        "deal_count": 1
+      },
+      {
+        "source": "antom",
+        "theme": "Food Systems & Alt Proteins",
         "deal_count": 1
       },
       {
@@ -59278,7 +64063,7 @@ window.CAPITAL_ATLAS_DATA = {
       {
         "source": "brinc",
         "theme": "Food Systems & Alt Proteins",
-        "deal_count": 1
+        "deal_count": 2
       },
       {
         "source": "btg_pactual",
@@ -59353,7 +64138,7 @@ window.CAPITAL_ATLAS_DATA = {
       {
         "source": "conservation_international",
         "theme": "Food Systems & Alt Proteins",
-        "deal_count": 1
+        "deal_count": 2
       },
       {
         "source": "corfo",
@@ -59363,12 +64148,12 @@ window.CAPITAL_ATLAS_DATA = {
       {
         "source": "corteva_catalyst",
         "theme": "Bioinputs & Crop Resilience",
-        "deal_count": 2
+        "deal_count": 3
       },
       {
         "source": "creative_ventures",
         "theme": "Therapeutics",
-        "deal_count": 1
+        "deal_count": 2
       },
       {
         "source": "cuna_del_mar",
@@ -59378,6 +64163,11 @@ window.CAPITAL_ATLAS_DATA = {
       {
         "source": "cventures_primus",
         "theme": "Biomanufacturing & Platform Technologies",
+        "deal_count": 1
+      },
+      {
+        "source": "dalus_capital",
+        "theme": "Bioinputs & Crop Resilience",
         "deal_count": 1
       },
       {
@@ -59403,7 +64193,7 @@ window.CAPITAL_ATLAS_DATA = {
       {
         "source": "draper_associates",
         "theme": "Biomanufacturing & Platform Technologies",
-        "deal_count": 1
+        "deal_count": 2
       },
       {
         "source": "draper_cygnus",
@@ -59413,7 +64203,7 @@ window.CAPITAL_ATLAS_DATA = {
       {
         "source": "draper_university",
         "theme": "Diagnostics & Devices",
-        "deal_count": 1
+        "deal_count": 2
       },
       {
         "source": "drapercygnus",
@@ -59428,7 +64218,7 @@ window.CAPITAL_ATLAS_DATA = {
       {
         "source": "duhau",
         "theme": "Food Systems & Alt Proteins",
-        "deal_count": 1
+        "deal_count": 2
       },
       {
         "source": "dynamo",
@@ -59498,7 +64288,7 @@ window.CAPITAL_ATLAS_DATA = {
       {
         "source": "flia_duhau",
         "theme": "Biomanufacturing & Platform Technologies",
-        "deal_count": 1
+        "deal_count": 2
       },
       {
         "source": "fondo_alerce",
@@ -59523,7 +64313,7 @@ window.CAPITAL_ATLAS_DATA = {
       {
         "source": "fundacion_para_el_progreso_de_la_medicina",
         "theme": "Therapeutics",
-        "deal_count": 1
+        "deal_count": 2
       },
       {
         "source": "fundepar",
@@ -59533,7 +64323,7 @@ window.CAPITAL_ATLAS_DATA = {
       {
         "source": "future_ventures",
         "theme": "Bioinputs & Crop Resilience",
-        "deal_count": 1
+        "deal_count": 2
       },
       {
         "source": "gavea_investimentos",
@@ -59558,7 +64348,7 @@ window.CAPITAL_ATLAS_DATA = {
       {
         "source": "genesis_consortium",
         "theme": "Therapeutics",
-        "deal_count": 1
+        "deal_count": 2
       },
       {
         "source": "ght4_group",
@@ -59573,7 +64363,7 @@ window.CAPITAL_ATLAS_DATA = {
       {
         "source": "glocal",
         "theme": "Bioinputs & Crop Resilience",
-        "deal_count": 5
+        "deal_count": 6
       },
       {
         "source": "glocal",
@@ -59583,12 +64373,12 @@ window.CAPITAL_ATLAS_DATA = {
       {
         "source": "glocal",
         "theme": "Nature & Ecosystem Tech",
-        "deal_count": 7
+        "deal_count": 10
       },
       {
         "source": "glocal",
         "theme": "Precision Agriculture",
-        "deal_count": 4
+        "deal_count": 5
       },
       {
         "source": "green_rock",
@@ -59603,7 +64393,7 @@ window.CAPITAL_ATLAS_DATA = {
       {
         "source": "gridx",
         "theme": "Bioinputs & Crop Resilience",
-        "deal_count": 8
+        "deal_count": 10
       },
       {
         "source": "gridx",
@@ -59613,7 +64403,7 @@ window.CAPITAL_ATLAS_DATA = {
       {
         "source": "gridx",
         "theme": "Biomaterials & Green Chemistry",
-        "deal_count": 13
+        "deal_count": 15
       },
       {
         "source": "gridx",
@@ -59648,7 +64438,7 @@ window.CAPITAL_ATLAS_DATA = {
       {
         "source": "grupo_peruanos",
         "theme": "Diagnostics & Devices",
-        "deal_count": 1
+        "deal_count": 2
       },
       {
         "source": "gvangels",
@@ -59658,12 +64448,12 @@ window.CAPITAL_ATLAS_DATA = {
       {
         "source": "happiness",
         "theme": "Diagnostics & Devices",
-        "deal_count": 1
+        "deal_count": 2
       },
       {
         "source": "hatch",
         "theme": "Food Systems & Alt Proteins",
-        "deal_count": 2
+        "deal_count": 3
       },
       {
         "source": "hatch_blue",
@@ -59713,57 +64503,62 @@ window.CAPITAL_ATLAS_DATA = {
       {
         "source": "inventure",
         "theme": "Bioinputs & Crop Resilience",
-        "deal_count": 2
-      },
-      {
-        "source": "inventure",
-        "theme": "Biomanufacturing & Platform Technologies",
-        "deal_count": 2
-      },
-      {
-        "source": "inventure",
-        "theme": "Food Systems & Alt Proteins",
         "deal_count": 3
       },
       {
         "source": "inventure",
+        "theme": "Biomanufacturing & Platform Technologies",
+        "deal_count": 3
+      },
+      {
+        "source": "inventure",
+        "theme": "Food Systems & Alt Proteins",
+        "deal_count": 5
+      },
+      {
+        "source": "inventure",
         "theme": "Nature & Ecosystem Tech",
-        "deal_count": 4
+        "deal_count": 6
       },
       {
         "source": "inventure",
         "theme": "Precision Agriculture",
-        "deal_count": 8
+        "deal_count": 12
       },
       {
         "source": "jeff_wilke",
         "theme": "Bioinputs & Crop Resilience",
-        "deal_count": 1
+        "deal_count": 2
       },
       {
         "source": "kairetsu_angels",
         "theme": "Biomaterials & Green Chemistry",
+        "deal_count": 2
+      },
+      {
+        "source": "kamay_ventures",
+        "theme": "Bioinputs & Crop Resilience",
         "deal_count": 1
       },
       {
         "source": "kamay_ventures",
         "theme": "Biomaterials & Green Chemistry",
-        "deal_count": 4
+        "deal_count": 6
       },
       {
         "source": "kamay_ventures",
         "theme": "Food Systems & Alt Proteins",
-        "deal_count": 2
+        "deal_count": 3
       },
       {
         "source": "kamay_ventures",
         "theme": "Nature & Ecosystem Tech",
-        "deal_count": 4
+        "deal_count": 6
       },
       {
         "source": "kamay_ventures",
         "theme": "Precision Agriculture",
-        "deal_count": 5
+        "deal_count": 7
       },
       {
         "source": "kaszek",
@@ -59808,7 +64603,7 @@ window.CAPITAL_ATLAS_DATA = {
       {
         "source": "kwb",
         "theme": "Diagnostics & Devices",
-        "deal_count": 1
+        "deal_count": 2
       },
       {
         "source": "la_turbina",
@@ -59823,7 +64618,7 @@ window.CAPITAL_ATLAS_DATA = {
       {
         "source": "lartirigoyen",
         "theme": "Biomanufacturing & Platform Technologies",
-        "deal_count": 1
+        "deal_count": 2
       },
       {
         "source": "left_lane_capital",
@@ -59848,7 +64643,7 @@ window.CAPITAL_ATLAS_DATA = {
       {
         "source": "losa_group",
         "theme": "Biomanufacturing & Platform Technologies",
-        "deal_count": 1
+        "deal_count": 2
       },
       {
         "source": "lowercarbon_capital",
@@ -59902,8 +64697,13 @@ window.CAPITAL_ATLAS_DATA = {
       },
       {
         "source": "newtopia_vc",
+        "theme": "Food Systems & Alt Proteins",
+        "deal_count": 1
+      },
+      {
+        "source": "newtopia_vc",
         "theme": "Nature & Ecosystem Tech",
-        "deal_count": 2
+        "deal_count": 3
       },
       {
         "source": "newtopia_vc",
@@ -59913,7 +64713,7 @@ window.CAPITAL_ATLAS_DATA = {
       {
         "source": "ospraie",
         "theme": "Bioinputs & Crop Resilience",
-        "deal_count": 1
+        "deal_count": 2
       },
       {
         "source": "ospraie_ag_science",
@@ -59923,12 +64723,12 @@ window.CAPITAL_ATLAS_DATA = {
       {
         "source": "other_angels",
         "theme": "Biomaterials & Green Chemistry",
-        "deal_count": 1
+        "deal_count": 2
       },
       {
         "source": "other_small_investors",
         "theme": "Biomanufacturing & Platform Technologies",
-        "deal_count": 1
+        "deal_count": 2
       },
       {
         "source": "other_small_investors",
@@ -59948,7 +64748,7 @@ window.CAPITAL_ATLAS_DATA = {
       {
         "source": "peruanos",
         "theme": "Diagnostics & Devices",
-        "deal_count": 1
+        "deal_count": 2
       },
       {
         "source": "pitanga",
@@ -59973,7 +64773,7 @@ window.CAPITAL_ATLAS_DATA = {
       {
         "source": "salkantay_ventures",
         "theme": "Nature & Ecosystem Tech",
-        "deal_count": 1
+        "deal_count": 2
       },
       {
         "source": "savia_ventures",
@@ -60023,27 +64823,27 @@ window.CAPITAL_ATLAS_DATA = {
       {
         "source": "sosv",
         "theme": "Bioinputs & Crop Resilience",
-        "deal_count": 2
+        "deal_count": 3
       },
       {
         "source": "sosv",
         "theme": "Biomanufacturing & Platform Technologies",
-        "deal_count": 1
+        "deal_count": 2
       },
       {
         "source": "sosv",
         "theme": "Biomaterials & Green Chemistry",
-        "deal_count": 1
+        "deal_count": 2
       },
       {
         "source": "sosv",
         "theme": "Diagnostics & Devices",
-        "deal_count": 1
+        "deal_count": 2
       },
       {
         "source": "sp_ventures",
         "theme": "Bioinputs & Crop Resilience",
-        "deal_count": 13
+        "deal_count": 14
       },
       {
         "source": "sp_ventures",
@@ -60063,7 +64863,7 @@ window.CAPITAL_ATLAS_DATA = {
       {
         "source": "sp_ventures",
         "theme": "Nature & Ecosystem Tech",
-        "deal_count": 2
+        "deal_count": 3
       },
       {
         "source": "sp_ventures",
@@ -60086,6 +64886,36 @@ window.CAPITAL_ATLAS_DATA = {
         "deal_count": 1
       },
       {
+        "source": "the_ganesha_lab",
+        "theme": "Bioinputs & Crop Resilience",
+        "deal_count": 1
+      },
+      {
+        "source": "the_ganesha_lab",
+        "theme": "Biomaterials & Green Chemistry",
+        "deal_count": 1
+      },
+      {
+        "source": "the_ganesha_lab",
+        "theme": "Diagnostics & Devices",
+        "deal_count": 3
+      },
+      {
+        "source": "the_ganesha_lab",
+        "theme": "Food Systems & Alt Proteins",
+        "deal_count": 1
+      },
+      {
+        "source": "the_ganesha_lab",
+        "theme": "Precision Agriculture",
+        "deal_count": 1
+      },
+      {
+        "source": "the_ganesha_lab",
+        "theme": "Therapeutics",
+        "deal_count": 2
+      },
+      {
         "source": "the_yield_lab_latam",
         "theme": "Bioinputs & Crop Resilience",
         "deal_count": 4
@@ -60093,17 +64923,17 @@ window.CAPITAL_ATLAS_DATA = {
       {
         "source": "the_yield_lab_latam",
         "theme": "Food Systems & Alt Proteins",
-        "deal_count": 4
+        "deal_count": 5
       },
       {
         "source": "the_yield_lab_latam",
         "theme": "Nature & Ecosystem Tech",
-        "deal_count": 11
+        "deal_count": 13
       },
       {
         "source": "the_yield_lab_latam",
         "theme": "Precision Agriculture",
-        "deal_count": 14
+        "deal_count": 18
       },
       {
         "source": "the_yield_lab_latam",
@@ -60133,17 +64963,27 @@ window.CAPITAL_ATLAS_DATA = {
       {
         "source": "valor_capital_group",
         "theme": "Nature & Ecosystem Tech",
-        "deal_count": 1
+        "deal_count": 2
       },
       {
         "source": "varana_capital",
         "theme": "Biomanufacturing & Platform Technologies",
-        "deal_count": 2
+        "deal_count": 3
+      },
+      {
+        "source": "varana_capital",
+        "theme": "Nature & Ecosystem Tech",
+        "deal_count": 1
+      },
+      {
+        "source": "varana_capital",
+        "theme": "Precision Agriculture",
+        "deal_count": 1
       },
       {
         "source": "vectr",
         "theme": "Bioinputs & Crop Resilience",
-        "deal_count": 1
+        "deal_count": 2
       },
       {
         "source": "venturance",
@@ -60178,7 +65018,7 @@ window.CAPITAL_ATLAS_DATA = {
       {
         "source": "vx_fund",
         "theme": "Biomanufacturing & Platform Technologies",
-        "deal_count": 1
+        "deal_count": 2
       },
       {
         "source": "water_lemon_ventures",
