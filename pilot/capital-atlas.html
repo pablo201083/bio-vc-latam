@@ -913,62 +913,74 @@
 <!-- ── Estructura de inversión (Frente C) ───────────────────────────── -->
 <section id="cap-structure" class="cap-structure">
   <div class="cs-head">
-    <h2 class="cs-title">Estructura de inversión</h2>
-    <p class="cs-sub">Cuenta <strong>empresas por stage</strong>, no dólares (solo 10% de las aristas tiene monto).
-      El stage es el más avanzado entre las rondas reales documentadas.</p>
+    <h2 class="cs-title">Estructura de inversión · BIO LATAM</h2>
+    <p class="cs-sub">536 startups con al menos un inversor documentado · Stage = el más avanzado registrado en aristas reales, no defaultea a pre-seed · Solo 10% de aristas tiene monto en USD</p>
   </div>
   <div class="cs-grid">
+
+    <!-- 1. Hero funnel -->
     <div class="cs-card cs-span2">
-      <div class="cs-card-title">Pirámide de stages — el embudo del ecosistema</div>
-      <div id="cs-pyramid"></div>
-      <div class="cs-note" id="cs-pyramid-note"></div>
+      <div class="cs-card-header">
+        <div class="cs-card-title">El embudo del ecosistema</div>
+        <div class="cs-card-tag" id="cs-funnel-tag">— empresas con capital</div>
+      </div>
+      <div id="cs-funnel-hero"></div>
+      <div class="cs-insight" id="cs-funnel-insight"></div>
     </div>
+
+    <!-- 2. País × Madurez scatter -->
     <div class="cs-card">
-      <div class="cs-card-title">¿Base sin cúspide? — progresión early→growth por tema</div>
-      <div id="cs-funnel"></div>
+      <div class="cs-card-title">País × Madurez — ¿dónde está el capital de Series A?</div>
+      <div id="cs-country-scatter"></div>
+      <div class="cs-note">X = % empresas en Series A o superior · Tamaño de burbuja = startups financiadas · Línea de corte: 25%</div>
     </div>
+
+    <!-- 3. Pipeline Series A por tema -->
     <div class="cs-card">
-      <div class="cs-card-title">Dependencia de capital extranjero</div>
+      <div class="cs-card-title">Pipeline hacia Series A — deal flow potencial por tema</div>
+      <div id="cs-pipeline"></div>
+      <div class="cs-note">Barra = startups en Pre-seed + Seed esperando capital de crecimiento. ⚡ = ratio bajo (oportunidad de capital)</div>
+    </div>
+
+    <!-- 4. Heatmap normalizado tema × país -->
+    <div class="cs-card cs-span2">
+      <div class="cs-card-title">ADN temático por país — % del portfolio nacional en cada tema</div>
+      <div id="cs-heatmap"></div>
+      <div class="cs-insight" id="cs-heatmap-insight"></div>
+    </div>
+
+    <!-- 5. Sankey transfronterizo -->
+    <div class="cs-card cs-span2">
+      <div class="cs-card-title">Flujos de capital transfronterizos</div>
+      <div id="cs-sankey"></div>
+      <div class="cs-note" id="cs-sankey-note"></div>
+    </div>
+
+    <!-- 6. Foreign + HHI -->
+    <div class="cs-card">
+      <div class="cs-card-title">Dependencia de capital extranjero por tema</div>
       <div id="cs-foreign"></div>
     </div>
     <div class="cs-card">
-      <div class="cs-card-title">Concentración por tema (HHI)</div>
+      <div class="cs-card-title">Concentración (HHI) — ¿quién domina cada tema?</div>
       <div class="cs-warn" id="cs-hhi-warn"></div>
       <div id="cs-hhi"></div>
     </div>
-    <div class="cs-card">
-      <div class="cs-card-title">Capital no documentado</div>
-      <div id="cs-gap"></div>
-    </div>
+
+    <!-- 7. Sindicación -->
     <div class="cs-card cs-span2">
-      <div class="cs-card-title">Sindicación — fondos que co-invierten</div>
+      <div class="cs-card-title">Red de co-inversión — quién sindica con quién</div>
       <div id="cs-synd"></div>
     </div>
+
+    <!-- 8. Cohortes -->
     <div class="cs-card cs-span2">
-      <div class="cs-card-title">Cohortes — startups include por año de fundación</div>
+      <div class="cs-card-title">Cohortes — startups por año de fundación</div>
       <div id="cs-cohorts"></div>
       <div class="cs-note" style="margin-top:7px">
         <span style="display:inline-block;width:11px;height:11px;border-radius:2px;background:var(--accent);opacity:.72;vertical-align:middle;margin-right:5px"></span>Con capital documentado ·
         <span style="display:inline-block;width:11px;height:11px;border-radius:2px;background:rgba(180,168,150,.4);vertical-align:middle;margin-right:5px;margin-left:8px"></span>Sin capital documentado
       </div>
-    </div>
-
-    <div class="cs-card cs-span2">
-      <div class="cs-card-title">Madurez por país — ¿dónde están atascadas las startups?</div>
-      <div id="cs-country-pyramid"></div>
-      <div class="cs-note" id="cs-country-pyramid-note"></div>
-    </div>
-
-    <div class="cs-card cs-span2">
-      <div class="cs-card-title">Especialización temática por país</div>
-      <div id="cs-country-themes"></div>
-      <div class="cs-note">Tamaño del círculo = # startups. Las especializaciones más fuertes emergen donde el ecosistema local tiene ventaja comparativa.</div>
-    </div>
-
-    <div class="cs-card cs-span2">
-      <div class="cs-card-title">Flujos de capital transfronterizos — inversor × startup por país</div>
-      <div id="cs-cross-border"></div>
-      <div class="cs-note" id="cs-cross-border-note"></div>
     </div>
   </div>
 </section>

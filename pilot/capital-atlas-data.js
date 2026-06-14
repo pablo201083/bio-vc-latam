@@ -1,16 +1,16 @@
 window.CAPITAL_ATLAS_DATA = {
-  "generated_at": "2026-06-13T23:24:24",
+  "generated_at": "2026-06-14T11:21:40",
   "source": "pipeline:build-atlas (SQLite)",
   "summary": {
     "nodes_total": 1071,
     "funds_total": 129,
     "startups_total": 928,
     "allocators_total": 14,
-    "edges_total": 901,
-    "investment_edges_total": 875,
+    "edges_total": 997,
+    "investment_edges_total": 971,
     "allocator_edges_total": 26,
     "include_startups_total": 579,
-    "source_backed_include_startups_total": 437,
+    "source_backed_include_startups_total": 444,
     "public_source_edges_total": 152
   },
   "nodes": [
@@ -105,8 +105,8 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": 12.0,
       "lead_behavior": "both",
       "profile_blurb": "Aceleradora Litoral is a Santa Fe-based startup accelerator affiliated with Universidad Nacional del Litoral (UNL). Provides pre-seed capital, structured mentoring, and access to UNL's research infrastructure and patent portfolio. Focus on agtech, food biotech, industrial biotech, and environmental technology. Key gateway for CONICET and UNL spinoffs in the Argentine Litoral agricultural region.",
-      "degree": 14,
-      "portfolio_valuation_usd": 53.2
+      "degree": 21,
+      "portfolio_valuation_usd": 79.8
     },
     {
       "id": "AIR Capital",
@@ -396,8 +396,8 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": 20.0,
       "lead_behavior": "both",
       "profile_blurb": "ChileGlobal Ventures is a Santiago-based venture capital initiative focused on connecting Chilean and LatAm technology startups with international corporate co-investors and strategic partners. Backed by Chilean business groups and CORFO. Active in agtech, food tech, cleantech, and biotech. Provides market access to Chilean agrifood companies and government-backed pilot programs.",
-      "degree": 3,
-      "portfolio_valuation_usd": 12.0
+      "degree": 6,
+      "portfolio_valuation_usd": 24.0
     },
     {
       "id": "CITES",
@@ -702,8 +702,8 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": 22.0,
       "lead_behavior": "both",
       "profile_blurb": "Endurance 28 is an Argentine micro-VC fund providing early-stage capital to deep-tech and biotech founders from Argentine universities and research centers. Known for fast term sheets and active mentoring by operating partners with startup experience. Co-invests frequently with GridX and The Ganesha Lab in the Argentine biotech ecosystem.",
-      "degree": 7,
-      "portfolio_valuation_usd": 28.0
+      "degree": 10,
+      "portfolio_valuation_usd": 40.0
     },
     {
       "id": "flia_duhau",
@@ -1377,8 +1377,8 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": 180.0,
       "lead_behavior": "lead",
       "profile_blurb": "KPTL manages impact venture capital in Brazil with a focus on environmental and social impact sectors. Manages the Forest & Climate Fund in partnership with Fundo Vale, and is known as the merger of Kria and Obvious VC funds. Invests in biotech companies with demonstrable environmental impact: biocontrol, biostimulants, forest restoration, and nature-based solutions. Ticket range BRL 3M–16M (seed to Series A).",
-      "degree": 12,
-      "portfolio_valuation_usd": 41.0
+      "degree": 17,
+      "portfolio_valuation_usd": 61.0
     },
     {
       "id": "kwb",
@@ -1556,8 +1556,8 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": 50.0,
       "lead_behavior": "lead",
       "profile_blurb": "Newtopia VC es un fondo early-stage de $50M construido por emprendedores detrás de unicornios latinoamericanos. Su red de co-inversores incluye a Marcos Galperin (Mercado Libre) y otros fundadores referentes de la región — lo que convierte a Newtopia en una señal de validación de primer nivel para startups que buscan acceso al ecosistema tech de mayor escala.\n\nSu modelo \"entrepreneurs supporting entrepreneurs\" apuesta a que el mejor capital para etapas tempranas viene de quienes ya recorrieron el camino. Con tickets hasta $1.5M en seguimiento de Serie A, cubre el espectro pre-seed a Serie A con una propuesta de acompañamiento operativo intensivo.\n\nEn el ecosistema BIO, Newtopia es un actor generalista — su portafolio visible (Auth0, Mural, Tiendanube, Satellogic) no muestra concentración bio. Para una startup BIO, el valor de Newtopia no es la especialización sectorial sino la red: entrar a su portafolio abre puertas a una comunidad de unicornios y co-inversores que puede acelerar significativamente las rondas posteriores.",
-      "degree": 4,
-      "portfolio_valuation_usd": 12.8
+      "degree": 6,
+      "portfolio_valuation_usd": 20.8
     },
     {
       "id": "onevc",
@@ -1877,8 +1877,8 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": null,
       "lead_behavior": "lead",
       "profile_blurb": "Savia Ventures es un fondo de venture capital climático enfocado en América Latina, respaldado por más de 50 líderes corporativos del sector de sostenibilidad. Invierte en etapas pre-seed y seed en compañías de climatech con operaciones o planes de expansión en LATAM — el momento de mayor riesgo y mayor potencial de impacto en el ciclo de vida de una startup.\n\nSus seis vectores — energía, movilidad, blue economy, agtech/foodtech, climate fintech y manufactura sostenible — reflejan una tesis transversal: el cambio climático requiere innovación simultánea en toda la economía. Portfolio highlights como Done Properly (ingredientes fúngicos) y Strong by Form (biocompuestos de madera) muestran su apetito por soluciones bio-industriales de nueva generación.\n\nPara el ecosistema BIO, Savia es un actor emergente con una tesis alineada con las tendencias de mayor crecimiento global: biomateriales, bio-insumos climáticos y foodtech alternativo. Su red de 50+ Climate Leaders como LPs y advisors le da acceso a pilotos corporativos y mercados que pocos fondos climáticos de la región pueden ofrecer a sus portafolios.",
-      "degree": 9,
-      "portfolio_valuation_usd": 71.0
+      "degree": 14,
+      "portfolio_valuation_usd": 112.0
     },
     {
       "id": "SF500",
@@ -2034,8 +2034,8 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": 80.0,
       "lead_behavior": "lead",
       "profile_blurb": "SP Ventures es el referente regional de AgFood-ClimateTech: más de 10 años de track record, +$100M invertidos en +50 empresas en LATAM. Su tesis es estructural: la crisis climática y la seguridad alimentaria son el mismo problema visto desde distintos ángulos, y la solución pasa por reinventar la cadena de valor alimentaria del suelo al estante.\n\nComo lead investor con tickets hasta $10M en Serie A, cubre el tramo de crecimiento temprano con mayor escasez de capital en el ecosistema. Sus métricas de impacto son inusuales: 54 millones de hectáreas impactadas y $571M en crédito agrícola facilitado por sus portafolios — señales de que su capital moviliza recursos mucho mayores que el fondo mismo.\n\nEmpresas como Puna Bio (bioinputs) y Gênica (microbioma del suelo) reflejan su apuesta por la biología como plataforma de solución al problema agro-climático. Con el track record más sólido del segmento y presencia en toda la región, es uno de los actores con mayor credibilidad para anclar rondas bio-agro en LATAM.",
-      "degree": 48,
-      "portfolio_valuation_usd": 222.5
+      "degree": 73,
+      "portfolio_valuation_usd": 367.5
     },
     {
       "id": "svb_financial_group",
@@ -2120,8 +2120,8 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": 50.0,
       "lead_behavior": "lead",
       "profile_blurb": "The Yield Lab LATAM es el fondo AgriFoodTech con mayor cobertura geográfica de la región: oficinas en Buenos Aires, São Paulo, Rancagua, Medellín y Ciudad de México desde 2017. Su posición como integradora de ecosistemas — conectando startups, inversores, corporaciones, agricultores y sector público — es su tesis diferenciadora central. Mapea 70+ categorías de innovación en 12 sectores de la cadena agroalimentaria.\n\nEl foco early-stage y la presencia en cinco países le permite identificar oportunidades que fondos globales no ven — especialmente en la interfaz suelo-microbioma-alimento que es el núcleo del BIO agri regional. Su equipo multinacional con raíces locales en cada mercado es una ventaja competitiva que ningún fondo global puede construir en el corto plazo.\n\nPara el ecosistema BIO, The Yield Lab es uno de los principales generadores de deal-flow en bioinputs, agro-diagnósticos y foodtech. Su limitación estructural es la ausencia de cobertura growth: las compañías que escalan deberán buscar capital de seguimiento fuera de su red. Pero como buscador y validador temprano en el agro-bio regional, su red de cinco países es uno de los activos más valiosos del ecosistema.",
-      "degree": 41,
-      "portfolio_valuation_usd": 295.0
+      "degree": 55,
+      "portfolio_valuation_usd": 468.0
     },
     {
       "id": "third_sphere",
@@ -2316,8 +2316,8 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": 250.0,
       "lead_behavior": "lead",
       "profile_blurb": "Vox Capital es la gestora de impacto más consolidada de Brasil: pionera del impact investing en el país, con estrategias de VC (Tech for Good), crédito privado estructurado y gestión de portafolios de impacto para familias y fundaciones. Su tesis central: toda inversión tiene impacto — la diferencia está en si ese impacto es positivo o negativo.\n\nSus cuatro pilares de decisión — riesgo, retorno, liquidez e impacto — la diferencian de los fondos ESG tradicionales que suman el impacto como capa adicional. En bioeconomía específicamente, Vox identifica el sector como uno de los vectores estratégicos para Brasil, junto con inclusión financiera y transición climática.\n\nPara el ecosistema BIO LATAM, Vox Capital es un actor de puente: no es un fondo biotech, pero su mandato de impacto positivo y su alineación con bioeconomía la convierte en un potencial inversor para startups bio que demuestren métricas de impacto claras. Su posición como creador del primer fondo de renta fija de impacto de Brasil sugiere capacidad para estructurar instrumentos financieros no convencionales.",
-      "degree": 4,
-      "portfolio_valuation_usd": 83.0
+      "degree": 7,
+      "portfolio_valuation_usd": 116.0
     },
     {
       "id": "vx_fund",
@@ -2370,8 +2370,8 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": 18.0,
       "lead_behavior": "lead",
       "profile_blurb": "Zentynel es el primer fondo de capital de riesgo especializado exclusivamente en biotecnología en América Latina, fundado desde la convergencia inusual de un instituto científico (Fundación Ciencia & Vida) y una gestora de activos alternativos (Venturance). Sus credenciales son excepcionales: Pablo Valenzuela — co-fundador de Chiron Corporation, adquirida por Novartis en $8.9B — es General Partner. Con sede en Santiago, opera con estándares de rigor técnico que ningún fondo puramente financiero de la región puede igualar.\n\nSu tesis \"One Health\" rechaza la fragmentación entre salud humana, animal y ambiental, construyendo un portafolio que refleja esa interconexión: Momentum Therapeutics y Xeptiva (terapéuticos), Fecundis (agro-diagnósticos), ViewMind (neurociencia), Biomakers (multi-ómicas). Con 18+ empresas, es el fondo con mayor concentración de ciencia de frontera por capital invertido en el ecosistema regional.\n\nLo que distingue a Zentynel no es el ticket sino la capacidad técnica del equipo: un GP con 40 años en biotech tiene una ventaja de selección científica difícil de replicar en LATAM. Su programa BioGratitud — apoyo a emprendedores fuera del portafolio sin dilución — refleja una filosofía de construcción de ecosistema más allá del retorno financiero. Es el actor más comprometido con la bioeconomía científica profunda en la región.",
-      "degree": 32,
-      "portfolio_valuation_usd": 296.0
+      "degree": 47,
+      "portfolio_valuation_usd": 442.0
     },
     {
       "id": "barn_investimentos",
@@ -2402,8 +2402,8 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": 10.0,
       "lead_behavior": "lead_or_follow",
       "profile_blurb": "Barn Investimentos is a Brazilian seed fund focused on agtech and food systems startups. Provides seed capital and acceleration-style support to early-stage founders building technology for Brazilian agribusiness, food processing, and sustainability. Connected to major Brazilian agro-industrial players as strategic co-investors.",
-      "degree": 4,
-      "portfolio_valuation_usd": 16.0
+      "degree": 6,
+      "portfolio_valuation_usd": 24.0
     },
     {
       "id": "fen_ventures",
@@ -2467,8 +2467,8 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": 600.0,
       "lead_behavior": "lead_or_follow",
       "profile_blurb": "Monashees is Brazil's largest independent VC fund with $430M AUM and 140+ portfolio companies. Founded 2005, it has backed companies across fintech, health tech, proptech, agtech, and consumer. Known for operator-friendly terms, long holding periods, and deep Brazilian ecosystem connections including ABStartups and major accelerators. Strong LP base of global institutional investors.",
-      "degree": 4,
-      "portfolio_valuation_usd": 29.0
+      "degree": 9,
+      "portfolio_valuation_usd": 94.0
     },
     {
       "id": "kaszek",
@@ -3668,8 +3668,8 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": 15.0,
       "lead_behavior": "lead",
       "profile_blurb": "Biominas Brasil operates the largest biotech hub in Latin America, located in Belo Horizonte, Minas Gerais. Manages a biotech incubator, accelerator, and early-stage fund. Portfolio spans pharma, diagnostics, medical devices, agrochemical biotech, and industrial biotech. Provides lab infrastructure, regulatory support, and seed capital to early-stage life sciences startups. Connected to UFMG, USP, and UNIFESP research programs.",
-      "degree": 4,
-      "portfolio_valuation_usd": 11.0
+      "degree": 15,
+      "portfolio_valuation_usd": 53.5
     },
     {
       "id": "oxygea",
@@ -4411,9 +4411,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -4542,9 +4547,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -4636,9 +4646,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "CITES",
           "label": "CITES",
           "stage": ""
+        },
+        {
+          "id": "cites",
+          "label": "Cites",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -4913,9 +4928,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -5049,9 +5069,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -5138,9 +5163,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "aceleradora_litoral",
           "label": "Aceleradora Litoral",
           "stage": ""
+        },
+        {
+          "id": "aceleradora_litoral",
+          "label": "Aceleradora Litoral",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -5269,9 +5299,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -5316,9 +5351,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "CITES",
           "label": "CITES",
           "stage": ""
+        },
+        {
+          "id": "cites",
+          "label": "Cites",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -5363,9 +5403,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "aceleradora_litoral",
           "label": "Aceleradora Litoral",
           "stage": ""
+        },
+        {
+          "id": "aceleradora_litoral",
+          "label": "Aceleradora Litoral",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -5452,9 +5497,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -5499,9 +5549,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -5687,9 +5742,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -5734,9 +5794,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -5959,9 +6024,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -6135,9 +6205,19 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "glocal",
           "label": "GLOCAL",
           "stage": ""
+        },
+        {
+          "id": "antom",
+          "label": "Antom",
+          "stage": ""
+        },
+        {
+          "id": "sf500",
+          "label": "Sf500",
+          "stage": ""
         }
       ],
-      "degree": 6,
+      "degree": 8,
       "capital_status": "capital_mapped"
     },
     {
@@ -6311,9 +6391,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "lartirigoyen",
           "label": "Lartirigoyen",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 5,
+      "degree": 6,
       "capital_status": "capital_mapped"
     },
     {
@@ -6358,9 +6443,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -6514,9 +6604,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "The Ganesha Lab",
           "label": "The Ganesha Lab",
           "stage": "seed"
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 4,
+      "degree": 5,
       "capital_status": "capital_mapped"
     },
     {
@@ -6655,9 +6750,19 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
+        },
+        {
+          "id": "zentynel",
+          "label": "Zentynel",
+          "stage": ""
         }
       ],
-      "degree": 4,
+      "degree": 6,
       "capital_status": "capital_mapped"
     },
     {
@@ -6791,9 +6896,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -7053,9 +7163,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -7189,9 +7304,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "aceleradora_litoral",
           "label": "Aceleradora Litoral",
           "stage": ""
+        },
+        {
+          "id": "aceleradora_litoral",
+          "label": "Aceleradora Litoral",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -7236,9 +7356,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "aceleradora_litoral",
           "label": "Aceleradora Litoral",
           "stage": ""
+        },
+        {
+          "id": "aceleradora_litoral",
+          "label": "Aceleradora Litoral",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -7330,9 +7455,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -7377,9 +7507,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -7424,9 +7559,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -7565,9 +7705,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -7689,9 +7834,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "other_angels",
           "label": "other angels",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 9,
+      "degree": 10,
       "capital_status": "capital_mapped"
     },
     {
@@ -7761,9 +7911,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "sosv",
           "label": "SOSV",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 7,
+      "degree": 8,
       "capital_status": "capital_mapped"
     },
     {
@@ -7897,9 +8052,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "aceleradora_litoral",
           "label": "Aceleradora Litoral",
           "stage": ""
+        },
+        {
+          "id": "aceleradora_litoral",
+          "label": "Aceleradora Litoral",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -8028,9 +8188,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -8075,9 +8240,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -8122,9 +8292,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -8211,9 +8386,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -8342,9 +8522,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -8607,9 +8792,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -8921,9 +9111,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -9015,9 +9210,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -9151,9 +9351,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -9324,9 +9529,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -9371,9 +9581,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "aceleradora_litoral",
           "label": "Aceleradora Litoral",
           "stage": ""
+        },
+        {
+          "id": "aceleradora_litoral",
+          "label": "Aceleradora Litoral",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -9695,9 +9910,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "kamay_ventures",
           "label": "Kamay Ventures",
           "stage": ""
+        },
+        {
+          "id": "savia_ventures",
+          "label": "Savia Ventures",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -9812,9 +10032,19 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "vx_fund",
           "label": "VX Fund",
           "stage": ""
+        },
+        {
+          "id": "drapercygnus",
+          "label": "Drapercygnus",
+          "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 16,
+      "degree": 18,
       "capital_status": "capital_mapped"
     },
     {
@@ -9990,9 +10220,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -10210,9 +10445,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "aceleradora_litoral",
           "label": "Aceleradora Litoral",
           "stage": ""
+        },
+        {
+          "id": "aceleradora_litoral",
+          "label": "Aceleradora Litoral",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -10393,9 +10633,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "sp_ventures",
           "label": "SP Ventures",
           "stage": ""
+        },
+        {
+          "id": "sp_ventures",
+          "label": "SP Ventures",
+          "stage": ""
         }
       ],
-      "degree": 1,
+      "degree": 2,
       "capital_status": "capital_mapped"
     },
     {
@@ -10435,9 +10680,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "kptl",
           "label": "KPTL",
           "stage": ""
+        },
+        {
+          "id": "kptl",
+          "label": "KPTL",
+          "stage": ""
         }
       ],
-      "degree": 1,
+      "degree": 2,
       "capital_status": "capital_mapped"
     },
     {
@@ -10477,9 +10727,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "the_yield_lab_latam",
           "label": "The Yield Lab LATAM",
           "stage": "seed"
+        },
+        {
+          "id": "the_yield_lab_latam",
+          "label": "The Yield Lab LATAM",
+          "stage": ""
         }
       ],
-      "degree": 1,
+      "degree": 2,
       "capital_status": "capital_mapped"
     },
     {
@@ -10597,9 +10852,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "sp_ventures",
           "label": "SP Ventures",
           "stage": ""
+        },
+        {
+          "id": "sp_ventures",
+          "label": "SP Ventures",
+          "stage": ""
         }
       ],
-      "degree": 1,
+      "degree": 2,
       "capital_status": "capital_mapped"
     },
     {
@@ -10711,9 +10971,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "syngenta_ventures",
           "label": "Syngenta Ventures",
           "stage": "series-c"
+        },
+        {
+          "id": "sp_ventures",
+          "label": "SP Ventures",
+          "stage": ""
         }
       ],
-      "degree": 4,
+      "degree": 5,
       "capital_status": "capital_mapped"
     },
     {
@@ -10820,9 +11085,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "base_capital",
           "label": "Base Capital",
           "stage": "series-a"
+        },
+        {
+          "id": "barn_investimentos",
+          "label": "Barn Investimentos",
+          "stage": ""
         }
       ],
-      "degree": 5,
+      "degree": 6,
       "capital_status": "capital_mapped"
     },
     {
@@ -10862,9 +11132,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "kptl",
           "label": "KPTL",
           "stage": ""
+        },
+        {
+          "id": "kptl",
+          "label": "KPTL",
+          "stage": ""
         }
       ],
-      "degree": 1,
+      "degree": 2,
       "capital_status": "capital_mapped"
     },
     {
@@ -10904,9 +11179,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "chileglobal_ventures",
           "label": "ChileGlobal Ventures",
           "stage": ""
+        },
+        {
+          "id": "chileglobal_ventures",
+          "label": "ChileGlobal Ventures",
+          "stage": ""
         }
       ],
-      "degree": 1,
+      "degree": 2,
       "capital_status": "capital_mapped"
     },
     {
@@ -10961,9 +11241,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "sillicon_catalyst",
           "label": "Sillicon Catalyst",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 4,
+      "degree": 5,
       "capital_status": "capital_mapped"
     },
     {
@@ -11159,9 +11444,19 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "zentynel",
+          "label": "Zentynel",
+          "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 4,
+      "degree": 6,
       "capital_status": "capital_mapped"
     },
     {
@@ -11206,9 +11501,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -11253,9 +11553,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -11367,9 +11672,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "The Ganesha Lab",
           "label": "The Ganesha Lab",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 4,
+      "degree": 5,
       "capital_status": "capital_mapped"
     },
     {
@@ -11434,9 +11744,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "maya_capital",
           "label": "Maya Capital",
           "stage": "series-a"
+        },
+        {
+          "id": "sp_ventures",
+          "label": "SP Ventures",
+          "stage": ""
         }
       ],
-      "degree": 6,
+      "degree": 7,
       "capital_status": "capital_mapped"
     },
     {
@@ -11568,9 +11883,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "SOSV_IndieBio",
           "label": "SOSV_IndieBio",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 10,
+      "degree": 11,
       "capital_status": "capital_mapped"
     },
     {
@@ -11620,9 +11940,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "zentynel",
           "label": "Zentynel",
           "stage": ""
+        },
+        {
+          "id": "zentynel",
+          "label": "Zentynel",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -11667,9 +11992,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "zentynel",
           "label": "Zentynel",
           "stage": "series-a"
+        },
+        {
+          "id": "zentynel",
+          "label": "Zentynel",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -11863,9 +12193,19 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "vectr",
           "label": "VECTR",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
+        },
+        {
+          "id": "the_yield_lab_latam",
+          "label": "The Yield Lab LATAM",
+          "stage": ""
         }
       ],
-      "degree": 11,
+      "degree": 13,
       "capital_status": "capital_mapped"
     },
     {
@@ -11905,9 +12245,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "the_yield_lab_latam",
           "label": "The Yield Lab LATAM",
           "stage": "seed"
+        },
+        {
+          "id": "the_yield_lab_latam",
+          "label": "The Yield Lab LATAM",
+          "stage": ""
         }
       ],
-      "degree": 1,
+      "degree": 2,
       "capital_status": "capital_mapped"
     },
     {
@@ -11952,9 +12297,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -12046,9 +12396,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -12139,9 +12494,19 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "The Ganesha Lab",
           "label": "The Ganesha Lab",
           "stage": ""
+        },
+        {
+          "id": "endurance_28",
+          "label": "Endurance 28",
+          "stage": ""
+        },
+        {
+          "id": "zentynel",
+          "label": "Zentynel",
+          "stage": ""
         }
       ],
-      "degree": 4,
+      "degree": 6,
       "capital_status": "capital_mapped"
     },
     {
@@ -12322,9 +12687,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -12421,9 +12791,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "The Ganesha Lab",
           "label": "The Ganesha Lab",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -12520,9 +12895,19 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "sp_ventures",
           "label": "SP Ventures",
           "stage": ""
+        },
+        {
+          "id": "sp_ventures",
+          "label": "SP Ventures",
+          "stage": ""
+        },
+        {
+          "id": "the_yield_lab_latam",
+          "label": "The Yield Lab LATAM",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 5,
       "capital_status": "capital_mapped"
     },
     {
@@ -12609,9 +12994,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "sp_ventures",
           "label": "SP Ventures",
           "stage": ""
+        },
+        {
+          "id": "sp_ventures",
+          "label": "SP Ventures",
+          "stage": ""
         }
       ],
-      "degree": 1,
+      "degree": 2,
       "capital_status": "capital_mapped"
     },
     {
@@ -12703,9 +13093,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -12745,9 +13140,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "sp_ventures",
           "label": "SP Ventures",
           "stage": ""
+        },
+        {
+          "id": "sp_ventures",
+          "label": "SP Ventures",
+          "stage": ""
         }
       ],
-      "degree": 1,
+      "degree": 2,
       "capital_status": "capital_mapped"
     },
     {
@@ -12792,9 +13192,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -12839,9 +13244,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -12938,9 +13348,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 4,
+      "degree": 5,
       "capital_status": "capital_mapped"
     },
     {
@@ -13021,9 +13436,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -13110,9 +13530,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "the_yield_lab_latam",
           "label": "The Yield Lab LATAM",
           "stage": "seed"
+        },
+        {
+          "id": "the_yield_lab_latam",
+          "label": "The Yield Lab LATAM",
+          "stage": ""
         }
       ],
-      "degree": 1,
+      "degree": 2,
       "capital_status": "capital_mapped"
     },
     {
@@ -13240,9 +13665,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -13287,9 +13717,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "kptl",
           "label": "KPTL",
           "stage": "seed"
+        },
+        {
+          "id": "the_yield_lab_latam",
+          "label": "The Yield Lab LATAM",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -13334,9 +13769,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -13376,9 +13816,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "sp_ventures",
           "label": "SP Ventures",
           "stage": ""
+        },
+        {
+          "id": "sp_ventures",
+          "label": "SP Ventures",
+          "stage": ""
         }
       ],
-      "degree": 1,
+      "degree": 2,
       "capital_status": "capital_mapped"
     },
     {
@@ -13522,9 +13967,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -13626,9 +14076,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "DragonesVP",
           "label": "DragonesVP",
           "stage": ""
+        },
+        {
+          "id": "endurance_28",
+          "label": "Endurance 28",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -13715,9 +14170,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -13762,9 +14222,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -13809,9 +14274,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -14074,9 +14544,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "hatch",
           "label": "Hatch",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 6,
+      "degree": 7,
       "capital_status": "capital_mapped"
     },
     {
@@ -14116,9 +14591,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "sp_ventures",
           "label": "SP Ventures",
           "stage": ""
+        },
+        {
+          "id": "sp_ventures",
+          "label": "SP Ventures",
+          "stage": ""
         }
       ],
-      "degree": 1,
+      "degree": 2,
       "capital_status": "capital_mapped"
     },
     {
@@ -14392,9 +14872,19 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "bb_agro_ventures",
           "label": "Bb Agro Ventures",
           "stage": "series-b"
+        },
+        {
+          "id": "sp_ventures",
+          "label": "SP Ventures",
+          "stage": ""
+        },
+        {
+          "id": "vox_capital",
+          "label": "Vox Capital",
+          "stage": ""
         }
       ],
-      "degree": 4,
+      "degree": 6,
       "capital_status": "capital_mapped"
     },
     {
@@ -14434,9 +14924,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "sp_ventures",
           "label": "SP Ventures",
           "stage": ""
+        },
+        {
+          "id": "sp_ventures",
+          "label": "SP Ventures",
+          "stage": ""
         }
       ],
-      "degree": 1,
+      "degree": 2,
       "capital_status": "capital_mapped"
     },
     {
@@ -14481,9 +14976,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -14575,9 +15075,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -14622,9 +15127,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -14664,9 +15174,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "sp_ventures",
           "label": "SP Ventures",
           "stage": ""
+        },
+        {
+          "id": "sp_ventures",
+          "label": "SP Ventures",
+          "stage": ""
         }
       ],
-      "degree": 1,
+      "degree": 2,
       "capital_status": "capital_mapped"
     },
     {
@@ -14711,9 +15226,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "zentynel",
           "label": "Zentynel",
           "stage": "series-a"
+        },
+        {
+          "id": "zentynel",
+          "label": "Zentynel",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -14758,9 +15278,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "zentynel",
           "label": "Zentynel",
           "stage": "seed"
+        },
+        {
+          "id": "zentynel",
+          "label": "Zentynel",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -14961,9 +15486,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "sp_ventures",
           "label": "SP Ventures",
           "stage": ""
+        },
+        {
+          "id": "sp_ventures",
+          "label": "SP Ventures",
+          "stage": ""
         }
       ],
-      "degree": 1,
+      "degree": 2,
       "capital_status": "capital_mapped"
     },
     {
@@ -15003,9 +15533,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "sp_ventures",
           "label": "SP Ventures",
           "stage": ""
+        },
+        {
+          "id": "sp_ventures",
+          "label": "SP Ventures",
+          "stage": ""
         }
       ],
-      "degree": 1,
+      "degree": 2,
       "capital_status": "capital_mapped"
     },
     {
@@ -15045,9 +15580,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "the_yield_lab_latam",
           "label": "The Yield Lab LATAM",
           "stage": "seed"
+        },
+        {
+          "id": "the_yield_lab_latam",
+          "label": "The Yield Lab LATAM",
+          "stage": ""
         }
       ],
-      "degree": 1,
+      "degree": 2,
       "capital_status": "capital_mapped"
     },
     {
@@ -15264,9 +15804,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "sp_ventures",
           "label": "SP Ventures",
           "stage": "seed"
+        },
+        {
+          "id": "sp_ventures",
+          "label": "SP Ventures",
+          "stage": ""
         }
       ],
-      "degree": 1,
+      "degree": 2,
       "capital_status": "capital_mapped"
     },
     {
@@ -15311,9 +15856,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -15353,9 +15903,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "sp_ventures",
           "label": "SP Ventures",
           "stage": "seed"
+        },
+        {
+          "id": "sp_ventures",
+          "label": "SP Ventures",
+          "stage": ""
         }
       ],
-      "degree": 1,
+      "degree": 2,
       "capital_status": "capital_mapped"
     },
     {
@@ -15447,9 +16002,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "inventure",
           "label": "Inventure",
           "stage": ""
+        },
+        {
+          "id": "the_yield_lab_latam",
+          "label": "The Yield Lab LATAM",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -15696,9 +16256,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "The Ganesha Lab",
           "label": "The Ganesha Lab",
           "stage": ""
+        },
+        {
+          "id": "sp_ventures",
+          "label": "SP Ventures",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -15936,9 +16501,19 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "vox_capital",
           "label": "Vox Capital",
           "stage": "series-b"
+        },
+        {
+          "id": "sp_ventures",
+          "label": "SP Ventures",
+          "stage": ""
+        },
+        {
+          "id": "vox_capital",
+          "label": "Vox Capital",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -15978,9 +16553,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "chileglobal_ventures",
           "label": "ChileGlobal Ventures",
           "stage": ""
+        },
+        {
+          "id": "chileglobal_ventures",
+          "label": "ChileGlobal Ventures",
+          "stage": ""
         }
       ],
-      "degree": 1,
+      "degree": 2,
       "capital_status": "capital_mapped"
     },
     {
@@ -16119,9 +16699,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -16212,9 +16797,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "DraperCygnus",
           "label": "DraperCygnus",
           "stage": ""
+        },
+        {
+          "id": "zentynel",
+          "label": "Zentynel",
+          "stage": ""
         }
       ],
-      "degree": 4,
+      "degree": 5,
       "capital_status": "capital_mapped"
     },
     {
@@ -16259,9 +16849,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -16358,9 +16953,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "zentynel",
           "label": "Zentynel",
           "stage": "series-a"
+        },
+        {
+          "id": "zentynel",
+          "label": "Zentynel",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -16447,9 +17047,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "sp_ventures",
           "label": "SP Ventures",
           "stage": ""
+        },
+        {
+          "id": "sp_ventures",
+          "label": "SP Ventures",
+          "stage": ""
         }
       ],
-      "degree": 1,
+      "degree": 2,
       "capital_status": "capital_mapped"
     },
     {
@@ -16504,9 +17109,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "SF500",
           "label": "SF500",
           "stage": ""
+        },
+        {
+          "id": "zentynel",
+          "label": "Zentynel",
+          "stage": ""
         }
       ],
-      "degree": 4,
+      "degree": 5,
       "capital_status": "capital_mapped"
     },
     {
@@ -16645,9 +17255,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -16754,9 +17369,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "The Ganesha Lab",
           "label": "The Ganesha Lab",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 4,
+      "degree": 5,
       "capital_status": "capital_mapped"
     },
     {
@@ -16811,9 +17431,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "inventure",
           "label": "Inventure",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 4,
+      "degree": 5,
       "capital_status": "capital_mapped"
     },
     {
@@ -16894,9 +17519,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -16941,9 +17571,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "zentynel",
           "label": "Zentynel",
           "stage": "seed"
+        },
+        {
+          "id": "zentynel",
+          "label": "Zentynel",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -16983,9 +17618,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "sp_ventures",
           "label": "SP Ventures",
           "stage": ""
+        },
+        {
+          "id": "sp_ventures",
+          "label": "SP Ventures",
+          "stage": ""
         }
       ],
-      "degree": 1,
+      "degree": 2,
       "capital_status": "capital_mapped"
     },
     {
@@ -17072,9 +17712,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "newtopia_vc",
           "label": "Newtopia VC",
           "stage": ""
+        },
+        {
+          "id": "newtopia_vc",
+          "label": "Newtopia VC",
+          "stage": ""
         }
       ],
-      "degree": 1,
+      "degree": 2,
       "capital_status": "capital_mapped"
     },
     {
@@ -17212,9 +17857,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "eatable_adventures",
           "label": "Eatable Adventures",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 4,
+      "degree": 5,
       "capital_status": "capital_mapped"
     },
     {
@@ -17295,9 +17945,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "AIR Capital",
           "label": "AIR Capital",
           "stage": "seed"
+        },
+        {
+          "id": "kptl",
+          "label": "KPTL",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -17444,9 +18099,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "endurance_28",
           "label": "Endurance 28",
           "stage": ""
+        },
+        {
+          "id": "endurance_28",
+          "label": "Endurance 28",
+          "stage": ""
         }
       ],
-      "degree": 6,
+      "degree": 7,
       "capital_status": "capital_mapped"
     },
     {
@@ -17595,9 +18255,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "water_lemon_ventures",
           "label": "Water Lemon Ventures",
           "stage": "series-a"
+        },
+        {
+          "id": "the_yield_lab_latam",
+          "label": "The Yield Lab LATAM",
+          "stage": ""
         }
       ],
-      "degree": 4,
+      "degree": 5,
       "capital_status": "capital_mapped"
     },
     {
@@ -17773,9 +18438,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -17851,9 +18521,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "the_yield_lab_latam",
           "label": "The Yield Lab LATAM",
           "stage": "seed"
+        },
+        {
+          "id": "the_yield_lab_latam",
+          "label": "The Yield Lab LATAM",
+          "stage": ""
         }
       ],
-      "degree": 1,
+      "degree": 2,
       "capital_status": "capital_mapped"
     },
     {
@@ -17898,9 +18573,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "angra_partners",
           "label": "Angra Partners",
           "stage": "growth"
+        },
+        {
+          "id": "sp_ventures",
+          "label": "SP Ventures",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -17945,9 +18625,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -18032,9 +18717,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "sp_ventures",
           "label": "SP Ventures",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 10,
+      "degree": 11,
       "capital_status": "capital_mapped"
     },
     {
@@ -18079,9 +18769,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -18126,9 +18821,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -18220,9 +18920,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -18319,9 +19024,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "barn_investimentos",
           "label": "Barn Investimentos",
           "stage": "seed"
+        },
+        {
+          "id": "barn_investimentos",
+          "label": "Barn Investimentos",
+          "stage": ""
         }
       ],
-      "degree": 1,
+      "degree": 2,
       "capital_status": "capital_mapped"
     },
     {
@@ -18423,9 +19133,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "zentynel",
           "label": "Zentynel",
           "stage": "seed"
+        },
+        {
+          "id": "zentynel",
+          "label": "Zentynel",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -18671,9 +19386,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "the_yield_lab_latam",
           "label": "The Yield Lab LATAM",
           "stage": ""
+        },
+        {
+          "id": "the_yield_lab_latam",
+          "label": "The Yield Lab LATAM",
+          "stage": ""
         }
       ],
-      "degree": 1,
+      "degree": 2,
       "capital_status": "capital_mapped"
     },
     {
@@ -18822,9 +19542,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "DragonesVP",
           "label": "DragonesVP",
           "stage": ""
+        },
+        {
+          "id": "sp_ventures",
+          "label": "SP Ventures",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -19041,9 +19766,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "kptl",
           "label": "KPTL",
           "stage": ""
+        },
+        {
+          "id": "kptl",
+          "label": "KPTL",
+          "stage": ""
         }
       ],
-      "degree": 1,
+      "degree": 2,
       "capital_status": "capital_mapped"
     },
     {
@@ -19499,9 +20229,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "vesper_ventures",
           "label": "Vesper Ventures",
           "stage": "seed"
+        },
+        {
+          "id": "biominas",
+          "label": "Biominas Brasil",
+          "stage": ""
         }
       ],
-      "degree": 9,
+      "degree": 10,
       "capital_status": "capital_mapped"
     },
     {
@@ -19645,9 +20380,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "kptl",
           "label": "KPTL",
           "stage": ""
+        },
+        {
+          "id": "kptl",
+          "label": "KPTL",
+          "stage": ""
         }
       ],
-      "degree": 1,
+      "degree": 2,
       "capital_status": "capital_mapped"
     },
     {
@@ -19796,9 +20536,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "onevc",
           "label": "OneVC",
           "stage": ""
+        },
+        {
+          "id": "the_yield_lab_latam",
+          "label": "The Yield Lab LATAM",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -19957,9 +20702,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "other_small_investors",
           "label": "other small investors",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 6,
+      "degree": 7,
       "capital_status": "capital_mapped"
     },
     {
@@ -20029,9 +20779,19 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "astella_investimentos",
           "label": "Astella Investimentos",
           "stage": "series-b"
+        },
+        {
+          "id": "sp_ventures",
+          "label": "SP Ventures",
+          "stage": ""
+        },
+        {
+          "id": "vox_capital",
+          "label": "Vox Capital",
+          "stage": ""
         }
       ],
-      "degree": 7,
+      "degree": 9,
       "capital_status": "capital_mapped"
     },
     {
@@ -20201,9 +20961,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "the_yield_lab_latam",
           "label": "The Yield Lab LATAM",
           "stage": ""
+        },
+        {
+          "id": "the_yield_lab_latam",
+          "label": "The Yield Lab LATAM",
+          "stage": ""
         }
       ],
-      "degree": 1,
+      "degree": 2,
       "capital_status": "capital_mapped"
     },
     {
@@ -20362,9 +21127,19 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "the_yield_lab_latam",
           "label": "The Yield Lab LATAM",
           "stage": "seed"
+        },
+        {
+          "id": "sp_ventures",
+          "label": "SP Ventures",
+          "stage": ""
+        },
+        {
+          "id": "the_yield_lab_latam",
+          "label": "The Yield Lab LATAM",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -20466,9 +21241,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "CITES",
           "label": "CITES",
           "stage": ""
+        },
+        {
+          "id": "zentynel",
+          "label": "Zentynel",
+          "stage": ""
         }
       ],
-      "degree": 4,
+      "degree": 5,
       "capital_status": "capital_mapped"
     },
     {
@@ -20550,9 +21330,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "newtopia_vc",
           "label": "Newtopia VC",
           "stage": ""
+        },
+        {
+          "id": "newtopia_vc",
+          "label": "Newtopia VC",
+          "stage": ""
         }
       ],
-      "degree": 1,
+      "degree": 2,
       "capital_status": "capital_mapped"
     },
     {
@@ -20644,9 +21429,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "zentynel",
           "label": "Zentynel",
           "stage": "seed"
+        },
+        {
+          "id": "zentynel",
+          "label": "Zentynel",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -20899,9 +21689,15 @@ window.CAPITAL_ATLAS_DATA = {
       "tech_depth": "deep",
       "trl": "",
       "valuation_usd": 1.5,
-      "investors_list": [],
-      "degree": 0,
-      "capital_status": "no_capital_edge"
+      "investors_list": [
+        {
+          "id": "biominas",
+          "label": "Biominas Brasil",
+          "stage": ""
+        }
+      ],
+      "degree": 1,
+      "capital_status": "capital_mapped"
     },
     {
       "id": "brain4care-br",
@@ -20940,9 +21736,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "green_rock",
           "label": "Green Rock",
           "stage": "series-a"
+        },
+        {
+          "id": "biominas",
+          "label": "Biominas Brasil",
+          "stage": ""
         }
       ],
-      "degree": 1,
+      "degree": 2,
       "capital_status": "capital_mapped"
     },
     {
@@ -21168,9 +21969,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "vesper_ventures",
           "label": "Vesper Ventures",
           "stage": "seed"
+        },
+        {
+          "id": "biominas",
+          "label": "Biominas Brasil",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -21220,9 +22026,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "vesper_ventures",
           "label": "Vesper Ventures",
           "stage": "seed"
+        },
+        {
+          "id": "biominas",
+          "label": "Biominas Brasil",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -22072,9 +22883,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "chileglobal_ventures",
           "label": "ChileGlobal Ventures",
           "stage": "seed"
+        },
+        {
+          "id": "chileglobal_ventures",
+          "label": "ChileGlobal Ventures",
+          "stage": ""
         }
       ],
-      "degree": 1,
+      "degree": 2,
       "capital_status": "capital_mapped"
     },
     {
@@ -22524,9 +23340,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "AIR Capital",
           "label": "AIR Capital",
           "stage": "seed"
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -22706,9 +23527,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "eb_capital",
           "label": "Eb Capital",
           "stage": "series-b"
+        },
+        {
+          "id": "monashees",
+          "label": "Monashees",
+          "stage": ""
         }
       ],
-      "degree": 2,
+      "degree": 3,
       "capital_status": "capital_mapped"
     },
     {
@@ -23008,9 +23834,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "sp_ventures",
           "label": "SP Ventures",
           "stage": "seed"
+        },
+        {
+          "id": "sp_ventures",
+          "label": "SP Ventures",
+          "stage": ""
         }
       ],
-      "degree": 1,
+      "degree": 2,
       "capital_status": "capital_mapped"
     },
     {
@@ -25136,9 +25967,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "savia_ventures",
           "label": "Savia Ventures",
           "stage": "seed"
+        },
+        {
+          "id": "savia_ventures",
+          "label": "Savia Ventures",
+          "stage": ""
         }
       ],
-      "degree": 1,
+      "degree": 2,
       "capital_status": "capital_mapped"
     },
     {
@@ -25178,9 +26014,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "savia_ventures",
           "label": "Savia Ventures",
           "stage": "seed"
+        },
+        {
+          "id": "savia_ventures",
+          "label": "Savia Ventures",
+          "stage": ""
         }
       ],
-      "degree": 1,
+      "degree": 2,
       "capital_status": "capital_mapped"
     },
     {
@@ -25220,9 +26061,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "savia_ventures",
           "label": "Savia Ventures",
           "stage": "seed"
+        },
+        {
+          "id": "savia_ventures",
+          "label": "Savia Ventures",
+          "stage": ""
         }
       ],
-      "degree": 1,
+      "degree": 2,
       "capital_status": "capital_mapped"
     },
     {
@@ -25262,9 +26108,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "savia_ventures",
           "label": "Savia Ventures",
           "stage": "seed"
+        },
+        {
+          "id": "savia_ventures",
+          "label": "Savia Ventures",
+          "stage": ""
         }
       ],
-      "degree": 1,
+      "degree": 2,
       "capital_status": "capital_mapped"
     },
     {
@@ -25304,9 +26155,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "CITES",
           "label": "CITES",
           "stage": "seed"
+        },
+        {
+          "id": "cites",
+          "label": "Cites",
+          "stage": ""
         }
       ],
-      "degree": 1,
+      "degree": 2,
       "capital_status": "capital_mapped"
     },
     {
@@ -25346,9 +26202,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "CITES",
           "label": "CITES",
           "stage": "seed"
+        },
+        {
+          "id": "cites",
+          "label": "Cites",
+          "stage": ""
         }
       ],
-      "degree": 1,
+      "degree": 2,
       "capital_status": "capital_mapped"
     },
     {
@@ -26854,9 +27715,15 @@ window.CAPITAL_ATLAS_DATA = {
       "tech_depth": "unclassified",
       "trl": "",
       "valuation_usd": 15.0,
-      "investors_list": [],
-      "degree": 0,
-      "capital_status": "no_capital_edge"
+      "investors_list": [
+        {
+          "id": "monashees",
+          "label": "Monashees",
+          "stage": ""
+        }
+      ],
+      "degree": 1,
+      "capital_status": "capital_mapped"
     },
     {
       "id": "hybrico_energy_technologies_ltd",
@@ -30114,9 +30981,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "biominas",
           "label": "Biominas Brasil",
           "stage": "pre-seed"
+        },
+        {
+          "id": "biominas",
+          "label": "Biominas Brasil",
+          "stage": ""
         }
       ],
-      "degree": 1,
+      "degree": 2,
       "capital_status": "capital_mapped"
     },
     {
@@ -35737,9 +36609,15 @@ window.CAPITAL_ATLAS_DATA = {
       "tech_depth": "medium",
       "trl": "",
       "valuation_usd": 0.0,
-      "investors_list": [],
-      "degree": 0,
-      "capital_status": "no_capital_edge"
+      "investors_list": [
+        {
+          "id": "biominas",
+          "label": "Biominas Brasil",
+          "stage": ""
+        }
+      ],
+      "degree": 1,
+      "capital_status": "capital_mapped"
     },
     {
       "id": "nutrissis-biotech-br",
@@ -35809,9 +36687,15 @@ window.CAPITAL_ATLAS_DATA = {
       "tech_depth": "medium",
       "trl": "",
       "valuation_usd": 0.0,
-      "investors_list": [],
-      "degree": 0,
-      "capital_status": "no_capital_edge"
+      "investors_list": [
+        {
+          "id": "biominas",
+          "label": "Biominas Brasil",
+          "stage": ""
+        }
+      ],
+      "degree": 1,
+      "capital_status": "capital_mapped"
     },
     {
       "id": "biorefinery-tech-brazil-br",
@@ -35953,9 +36837,15 @@ window.CAPITAL_ATLAS_DATA = {
       "tech_depth": "medium",
       "trl": "",
       "valuation_usd": 0.0,
-      "investors_list": [],
-      "degree": 0,
-      "capital_status": "no_capital_edge"
+      "investors_list": [
+        {
+          "id": "biominas",
+          "label": "Biominas Brasil",
+          "stage": ""
+        }
+      ],
+      "degree": 1,
+      "capital_status": "capital_mapped"
     },
     {
       "id": "microbiota-agricola-br",
@@ -35989,9 +36879,15 @@ window.CAPITAL_ATLAS_DATA = {
       "tech_depth": "medium",
       "trl": "",
       "valuation_usd": 0.0,
-      "investors_list": [],
-      "degree": 0,
-      "capital_status": "no_capital_edge"
+      "investors_list": [
+        {
+          "id": "biominas",
+          "label": "Biominas Brasil",
+          "stage": ""
+        }
+      ],
+      "degree": 1,
+      "capital_status": "capital_mapped"
     },
     {
       "id": "biodiverso-insumos-br",
@@ -36025,9 +36921,15 @@ window.CAPITAL_ATLAS_DATA = {
       "tech_depth": "medium",
       "trl": "",
       "valuation_usd": 0.0,
-      "investors_list": [],
-      "degree": 0,
-      "capital_status": "no_capital_edge"
+      "investors_list": [
+        {
+          "id": "biominas",
+          "label": "Biominas Brasil",
+          "stage": ""
+        }
+      ],
+      "degree": 1,
+      "capital_status": "capital_mapped"
     },
     {
       "id": "tierra-de-monte-mx",
@@ -55901,6 +56803,1446 @@ window.CAPITAL_ATLAS_DATA = {
       "weight": 2.08
     },
     {
+      "id": "AGENT_MONASHEES_hilab-br",
+      "source": "monashees",
+      "target": "hilab-br",
+      "type": "portfolio_investment",
+      "confidence": 0.769,
+      "source_url": "AGENT_RESEARCH",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.031
+    },
+    {
+      "id": "AGENT_MONASHEES_scarab",
+      "source": "monashees",
+      "target": "scarab",
+      "type": "portfolio_investment",
+      "confidence": 0.727,
+      "source_url": "AGENT_RESEARCH",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 1.964
+    },
+    {
+      "id": "AGENT_BIOMINAS_microbiota-agricola-br",
+      "source": "biominas",
+      "target": "microbiota-agricola-br",
+      "type": "portfolio_investment",
+      "confidence": 0.829,
+      "source_url": "AGENT_RESEARCH",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.127
+    },
+    {
+      "id": "AGENT_BIOMINAS_biodiverso-insumos-br",
+      "source": "biominas",
+      "target": "biodiverso-insumos-br",
+      "type": "portfolio_investment",
+      "confidence": 0.872,
+      "source_url": "AGENT_RESEARCH",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.195
+    },
+    {
+      "id": "AGENT_BIOMINAS_vyro-bio-br",
+      "source": "biominas",
+      "target": "vyro-bio-br",
+      "type": "portfolio_investment",
+      "confidence": 0.737,
+      "source_url": "AGENT_RESEARCH",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 1.979
+    },
+    {
+      "id": "AGENT_BIOMINAS_tismoo",
+      "source": "biominas",
+      "target": "tismoo",
+      "type": "portfolio_investment",
+      "confidence": 1.0,
+      "source_url": "AGENT_RESEARCH",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.4
+    },
+    {
+      "id": "AGENT_BIOMINAS_alecrim-biotech-br",
+      "source": "biominas",
+      "target": "alecrim-biotech-br",
+      "type": "portfolio_investment",
+      "confidence": 0.848,
+      "source_url": "AGENT_RESEARCH",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.158
+    },
+    {
+      "id": "AGENT_BIOMINAS_symbiomics",
+      "source": "biominas",
+      "target": "symbiomics",
+      "type": "portfolio_investment",
+      "confidence": 1.0,
+      "source_url": "AGENT_RESEARCH",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.4
+    },
+    {
+      "id": "AGENT_BIOMINAS_inedita-bio-br",
+      "source": "biominas",
+      "target": "inedita-bio-br",
+      "type": "portfolio_investment",
+      "confidence": 0.8,
+      "source_url": "AGENT_RESEARCH",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.08
+    },
+    {
+      "id": "AGENT_BIOMINAS_nemacontrol-biologicos-br",
+      "source": "biominas",
+      "target": "nemacontrol-biologicos-br",
+      "type": "portfolio_investment",
+      "confidence": 0.851,
+      "source_url": "AGENT_RESEARCH",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.162
+    },
+    {
+      "id": "AGENT_BIOMINAS_peptidus-biotech-br",
+      "source": "biominas",
+      "target": "peptidus-biotech-br",
+      "type": "portfolio_investment",
+      "confidence": 0.857,
+      "source_url": "AGENT_RESEARCH",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.171
+    },
+    {
+      "id": "AGENT_BIOMINAS_brain4care-br",
+      "source": "biominas",
+      "target": "brain4care-br",
+      "type": "portfolio_investment",
+      "confidence": 0.87,
+      "source_url": "AGENT_RESEARCH",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.191
+    },
+    {
+      "id": "AGENT_BIOMINAS_cellmeat-brasil-br",
+      "source": "biominas",
+      "target": "cellmeat-brasil-br",
+      "type": "portfolio_investment",
+      "confidence": 0.848,
+      "source_url": "AGENT_RESEARCH",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.158
+    },
+    {
+      "id": "VERIFIED_aceleradora_litoral_biosynaptica",
+      "source": "aceleradora_litoral",
+      "target": "biosynaptica",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_aceleradora_litoral_bioheuris",
+      "source": "aceleradora_litoral",
+      "target": "bioheuris",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_aceleradora_litoral_inbioar",
+      "source": "aceleradora_litoral",
+      "target": "inbioar",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_aceleradora_litoral_infira",
+      "source": "aceleradora_litoral",
+      "target": "infira",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_aceleradora_litoral_nairotech",
+      "source": "aceleradora_litoral",
+      "target": "nairotech",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_aceleradora_litoral_seedmatriz",
+      "source": "aceleradora_litoral",
+      "target": "seedmatriz",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_aceleradora_litoral_untech",
+      "source": "aceleradora_litoral",
+      "target": "untech",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_chileglobal_ventures_agrourbana",
+      "source": "chileglobal_ventures",
+      "target": "agrourbana",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_chileglobal_ventures_matchetune",
+      "source": "chileglobal_ventures",
+      "target": "matchetune",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_endurance_28_biomakers",
+      "source": "endurance_28",
+      "target": "biomakers",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_endurance_28_oncoliq",
+      "source": "endurance_28",
+      "target": "oncoliq",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_kptl_ages",
+      "source": "kptl",
+      "target": "ages",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_kptl_agrotools",
+      "source": "kptl",
+      "target": "agrotools",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_kptl_omics",
+      "source": "kptl",
+      "target": "omics",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_kptl_smartbreeder",
+      "source": "kptl",
+      "target": "smartbreeder",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_kptl_tbit",
+      "source": "kptl",
+      "target": "tbit",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_newtopia_vc_nilus",
+      "source": "newtopia_vc",
+      "target": "nilus",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_newtopia_vc_waterplan",
+      "source": "newtopia_vc",
+      "target": "waterplan",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_sp_ventures_aegro",
+      "source": "sp_ventures",
+      "target": "aegro",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_sp_ventures_agrofy",
+      "source": "sp_ventures",
+      "target": "agrofy",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_sp_ventures_arado",
+      "source": "sp_ventures",
+      "target": "arado",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_sp_ventures_bug_agentes_biologicos",
+      "source": "sp_ventures",
+      "target": "bug_agentes_biologicos",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_sp_ventures_brain_ag",
+      "source": "sp_ventures",
+      "target": "brain_ag",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_sp_ventures_decoy",
+      "source": "sp_ventures",
+      "target": "decoy",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_sp_ventures_frizata",
+      "source": "sp_ventures",
+      "target": "frizata",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_sp_ventures_genotyping",
+      "source": "sp_ventures",
+      "target": "genotyping",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_sp_ventures_imeve",
+      "source": "sp_ventures",
+      "target": "imeve",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_sp_ventures_inceres",
+      "source": "sp_ventures",
+      "target": "inceres",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_sp_ventures_leaf",
+      "source": "sp_ventures",
+      "target": "leaf",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_sp_ventures_magnamed",
+      "source": "sp_ventures",
+      "target": "magnamed",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_sp_ventures_moss",
+      "source": "sp_ventures",
+      "target": "moss",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_sp_ventures_nexxto",
+      "source": "sp_ventures",
+      "target": "nexxto",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_sp_ventures_promip",
+      "source": "sp_ventures",
+      "target": "promip",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_sp_ventures_sette",
+      "source": "sp_ventures",
+      "target": "sette",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_sp_ventures_traive",
+      "source": "sp_ventures",
+      "target": "traive",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_sp_ventures_goflux",
+      "source": "sp_ventures",
+      "target": "goflux",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_savia_ventures_solfium",
+      "source": "savia_ventures",
+      "target": "solfium",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_the_yield_lab_latam_seedz",
+      "source": "the_yield_lab_latam",
+      "target": "seedz",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_the_yield_lab_latam_terramagna",
+      "source": "the_yield_lab_latam",
+      "target": "terramagna",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_the_yield_lab_latam_um_grau_e_meio",
+      "source": "the_yield_lab_latam",
+      "target": "um_grau_e_meio",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_zentynel_asclepii",
+      "source": "zentynel",
+      "target": "asclepii",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_zentynel_autem-medical",
+      "source": "zentynel",
+      "target": "autem-medical",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_zentynel_biomakers",
+      "source": "zentynel",
+      "target": "biomakers",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_zentynel_harmony-biosciences",
+      "source": "zentynel",
+      "target": "harmony-biosciences",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_zentynel_hexembio",
+      "source": "zentynel",
+      "target": "hexembio",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_zentynel_momentum-therapeutics",
+      "source": "zentynel",
+      "target": "momentum-therapeutics",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_zentynel_neocrop-technologies",
+      "source": "zentynel",
+      "target": "neocrop-technologies",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_zentynel_samay",
+      "source": "zentynel",
+      "target": "samay",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_zentynel_xeptiva",
+      "source": "zentynel",
+      "target": "xeptiva",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_zentynel_multiplai_health",
+      "source": "zentynel",
+      "target": "multiplai_health",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_barn_investimentos_rumina",
+      "source": "barn_investimentos",
+      "target": "rumina",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_barn_investimentos_agrotoken",
+      "source": "barn_investimentos",
+      "target": "agrotoken",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_sp_ventures_genica",
+      "source": "sp_ventures",
+      "target": "genica",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_sp_ventures_agrolend",
+      "source": "sp_ventures",
+      "target": "agrolend",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_sp_ventures_verqor",
+      "source": "sp_ventures",
+      "target": "verqor",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_sp_ventures_blooms",
+      "source": "sp_ventures",
+      "target": "blooms",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_sp_ventures_jetbov",
+      "source": "sp_ventures",
+      "target": "jetbov",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_sp_ventures_inprenha",
+      "source": "sp_ventures",
+      "target": "inprenha",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_sp_ventures_decoy-smart-control-br",
+      "source": "sp_ventures",
+      "target": "decoy-smart-control-br",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_the_yield_lab_latam_bemagro",
+      "source": "the_yield_lab_latam",
+      "target": "bemagro",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_the_yield_lab_latam_culttivo",
+      "source": "the_yield_lab_latam",
+      "target": "culttivo",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_the_yield_lab_latam_cerradox",
+      "source": "the_yield_lab_latam",
+      "target": "cerradox",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_the_yield_lab_latam_phagelab",
+      "source": "the_yield_lab_latam",
+      "target": "phagelab",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_the_yield_lab_latam_kigui",
+      "source": "the_yield_lab_latam",
+      "target": "kigui",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_the_yield_lab_latam_incluirtec",
+      "source": "the_yield_lab_latam",
+      "target": "incluirtec",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_the_yield_lab_latam_produzindo-certo",
+      "source": "the_yield_lab_latam",
+      "target": "produzindo-certo",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_the_yield_lab_latam_agricapital",
+      "source": "the_yield_lab_latam",
+      "target": "agricapital",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_zentynel_antarka",
+      "source": "zentynel",
+      "target": "antarka",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_zentynel_fecundis",
+      "source": "zentynel",
+      "target": "fecundis",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_zentynel_viewmind",
+      "source": "zentynel",
+      "target": "viewmind",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_savia_ventures_strong-by-form-cl",
+      "source": "savia_ventures",
+      "target": "strong-by-form-cl",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_savia_ventures_living-ink-us",
+      "source": "savia_ventures",
+      "target": "living-ink-us",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_savia_ventures_nutrition-from-water-cl",
+      "source": "savia_ventures",
+      "target": "nutrition-from-water-cl",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_savia_ventures_mothership-materials-cl",
+      "source": "savia_ventures",
+      "target": "mothership-materials-cl",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_vox_capital_magnamed",
+      "source": "vox_capital",
+      "target": "magnamed",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_vox_capital_traive",
+      "source": "vox_capital",
+      "target": "traive",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_vox_capital_genica",
+      "source": "vox_capital",
+      "target": "genica",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_zentynel_microterra",
+      "source": "zentynel",
+      "target": "microterra",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_the_yield_lab_latam_verqor",
+      "source": "the_yield_lab_latam",
+      "target": "verqor",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_the_yield_lab_latam_blooms",
+      "source": "the_yield_lab_latam",
+      "target": "blooms",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_the_yield_lab_latam_beeflow",
+      "source": "the_yield_lab_latam",
+      "target": "beeflow",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_endurance_28_dprotein",
+      "source": "endurance_28",
+      "target": "dprotein",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "VERIFIED_chileglobal_ventures_instacrops-cl",
+      "source": "chileglobal_ventures",
+      "target": "instacrops-cl",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "INVESTMENT_ROUNDS_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
       "id": "idb_lab-sp_ventures",
       "source": "idb_lab",
       "target": "sp_ventures",
@@ -56786,17 +59128,17 @@ window.CAPITAL_ATLAS_DATA = {
       {
         "source": "aceleradora_litoral",
         "theme": "Bioinputs & Crop Resilience",
-        "deal_count": 8
+        "deal_count": 12
       },
       {
         "source": "aceleradora_litoral",
         "theme": "Biomaterials & Green Chemistry",
-        "deal_count": 2
+        "deal_count": 3
       },
       {
         "source": "aceleradora_litoral",
         "theme": "Diagnostics & Devices",
-        "deal_count": 4
+        "deal_count": 6
       },
       {
         "source": "agrex",
@@ -56810,6 +59152,11 @@ window.CAPITAL_ATLAS_DATA = {
       },
       {
         "source": "angra_partners",
+        "theme": "Bioinputs & Crop Resilience",
+        "deal_count": 1
+      },
+      {
+        "source": "antom",
         "theme": "Bioinputs & Crop Resilience",
         "deal_count": 1
       },
@@ -56856,7 +59203,7 @@ window.CAPITAL_ATLAS_DATA = {
       {
         "source": "barn_investimentos",
         "theme": "Precision Agriculture",
-        "deal_count": 2
+        "deal_count": 3
       },
       {
         "source": "bb_agro_ventures",
@@ -56870,13 +59217,23 @@ window.CAPITAL_ATLAS_DATA = {
       },
       {
         "source": "biominas",
+        "theme": "Bioinputs & Crop Resilience",
+        "deal_count": 5
+      },
+      {
+        "source": "biominas",
         "theme": "Diagnostics & Devices",
-        "deal_count": 1
+        "deal_count": 3
+      },
+      {
+        "source": "biominas",
+        "theme": "Digital AgTech & Agrifintech",
+        "deal_count": 2
       },
       {
         "source": "biominas",
         "theme": "Therapeutics",
-        "deal_count": 2
+        "deal_count": 4
       },
       {
         "source": "blue_horizon",
@@ -56961,12 +59318,22 @@ window.CAPITAL_ATLAS_DATA = {
       {
         "source": "chileglobal_ventures",
         "theme": "Food Systems & Alt Proteins",
-        "deal_count": 2
+        "deal_count": 4
       },
       {
         "source": "chileglobal_ventures",
         "theme": "Precision Agriculture",
-        "deal_count": 1
+        "deal_count": 2
+      },
+      {
+        "source": "cites",
+        "theme": "Diagnostics & Devices",
+        "deal_count": 2
+      },
+      {
+        "source": "cites",
+        "theme": "Therapeutics",
+        "deal_count": 2
       },
       {
         "source": "cj_cheiljedang",
@@ -57049,6 +59416,11 @@ window.CAPITAL_ATLAS_DATA = {
         "deal_count": 1
       },
       {
+        "source": "drapercygnus",
+        "theme": "Biomanufacturing & Platform Technologies",
+        "deal_count": 1
+      },
+      {
         "source": "duhau",
         "theme": "Biomanufacturing & Platform Technologies",
         "deal_count": 1
@@ -57106,12 +59478,12 @@ window.CAPITAL_ATLAS_DATA = {
       {
         "source": "endurance_28",
         "theme": "Diagnostics & Devices",
-        "deal_count": 3
+        "deal_count": 5
       },
       {
         "source": "endurance_28",
         "theme": "Food Systems & Alt Proteins",
-        "deal_count": 2
+        "deal_count": 3
       },
       {
         "source": "eurofarma",
@@ -57227,6 +59599,36 @@ window.CAPITAL_ATLAS_DATA = {
         "source": "green_rock",
         "theme": "Therapeutics",
         "deal_count": 1
+      },
+      {
+        "source": "gridx",
+        "theme": "Bioinputs & Crop Resilience",
+        "deal_count": 8
+      },
+      {
+        "source": "gridx",
+        "theme": "Biomanufacturing & Platform Technologies",
+        "deal_count": 10
+      },
+      {
+        "source": "gridx",
+        "theme": "Biomaterials & Green Chemistry",
+        "deal_count": 13
+      },
+      {
+        "source": "gridx",
+        "theme": "Diagnostics & Devices",
+        "deal_count": 14
+      },
+      {
+        "source": "gridx",
+        "theme": "Food Systems & Alt Proteins",
+        "deal_count": 13
+      },
+      {
+        "source": "gridx",
+        "theme": "Therapeutics",
+        "deal_count": 17
       },
       {
         "source": "grupo_insud",
@@ -57386,7 +59788,7 @@ window.CAPITAL_ATLAS_DATA = {
       {
         "source": "kptl",
         "theme": "Food Systems & Alt Proteins",
-        "deal_count": 2
+        "deal_count": 3
       },
       {
         "source": "kptl",
@@ -57396,12 +59798,12 @@ window.CAPITAL_ATLAS_DATA = {
       {
         "source": "kptl",
         "theme": "Precision Agriculture",
-        "deal_count": 2
+        "deal_count": 4
       },
       {
         "source": "kptl",
         "theme": "Therapeutics",
-        "deal_count": 1
+        "deal_count": 2
       },
       {
         "source": "kwb",
@@ -57471,7 +59873,7 @@ window.CAPITAL_ATLAS_DATA = {
       {
         "source": "monashees",
         "theme": "Diagnostics & Devices",
-        "deal_count": 1
+        "deal_count": 2
       },
       {
         "source": "monashees",
@@ -57501,7 +59903,7 @@ window.CAPITAL_ATLAS_DATA = {
       {
         "source": "newtopia_vc",
         "theme": "Nature & Ecosystem Tech",
-        "deal_count": 1
+        "deal_count": 2
       },
       {
         "source": "newtopia_vc",
@@ -57576,17 +59978,22 @@ window.CAPITAL_ATLAS_DATA = {
       {
         "source": "savia_ventures",
         "theme": "Biomaterials & Green Chemistry",
-        "deal_count": 3
+        "deal_count": 6
       },
       {
         "source": "savia_ventures",
         "theme": "Food Systems & Alt Proteins",
-        "deal_count": 2
+        "deal_count": 3
       },
       {
         "source": "savia_ventures",
         "theme": "Nature & Ecosystem Tech",
-        "deal_count": 3
+        "deal_count": 4
+      },
+      {
+        "source": "sf500",
+        "theme": "Bioinputs & Crop Resilience",
+        "deal_count": 1
       },
       {
         "source": "sf500",
@@ -57636,7 +60043,7 @@ window.CAPITAL_ATLAS_DATA = {
       {
         "source": "sp_ventures",
         "theme": "Bioinputs & Crop Resilience",
-        "deal_count": 8
+        "deal_count": 13
       },
       {
         "source": "sp_ventures",
@@ -57646,27 +60053,27 @@ window.CAPITAL_ATLAS_DATA = {
       {
         "source": "sp_ventures",
         "theme": "Diagnostics & Devices",
-        "deal_count": 3
+        "deal_count": 6
       },
       {
         "source": "sp_ventures",
         "theme": "Food Systems & Alt Proteins",
-        "deal_count": 2
+        "deal_count": 3
       },
       {
         "source": "sp_ventures",
         "theme": "Nature & Ecosystem Tech",
-        "deal_count": 1
+        "deal_count": 2
       },
       {
         "source": "sp_ventures",
         "theme": "Precision Agriculture",
-        "deal_count": 9
+        "deal_count": 12
       },
       {
         "source": "sp_ventures",
         "theme": "Therapeutics",
-        "deal_count": 2
+        "deal_count": 4
       },
       {
         "source": "sumitomo_corp",
@@ -57681,27 +60088,27 @@ window.CAPITAL_ATLAS_DATA = {
       {
         "source": "the_yield_lab_latam",
         "theme": "Bioinputs & Crop Resilience",
-        "deal_count": 3
+        "deal_count": 4
       },
       {
         "source": "the_yield_lab_latam",
         "theme": "Food Systems & Alt Proteins",
-        "deal_count": 3
+        "deal_count": 4
       },
       {
         "source": "the_yield_lab_latam",
         "theme": "Nature & Ecosystem Tech",
-        "deal_count": 9
+        "deal_count": 11
       },
       {
         "source": "the_yield_lab_latam",
         "theme": "Precision Agriculture",
-        "deal_count": 12
+        "deal_count": 14
       },
       {
         "source": "the_yield_lab_latam",
         "theme": "Therapeutics",
-        "deal_count": 1
+        "deal_count": 2
       },
       {
         "source": "thrive",
@@ -57761,12 +60168,12 @@ window.CAPITAL_ATLAS_DATA = {
       {
         "source": "vox_capital",
         "theme": "Bioinputs & Crop Resilience",
-        "deal_count": 1
+        "deal_count": 2
       },
       {
         "source": "vox_capital",
         "theme": "Diagnostics & Devices",
-        "deal_count": 2
+        "deal_count": 3
       },
       {
         "source": "vx_fund",
@@ -57796,32 +60203,32 @@ window.CAPITAL_ATLAS_DATA = {
       {
         "source": "zentynel",
         "theme": "Bioinputs & Crop Resilience",
-        "deal_count": 2
+        "deal_count": 3
       },
       {
         "source": "zentynel",
         "theme": "Biomanufacturing & Platform Technologies",
-        "deal_count": 2
+        "deal_count": 3
       },
       {
         "source": "zentynel",
         "theme": "Biomaterials & Green Chemistry",
-        "deal_count": 2
+        "deal_count": 3
       },
       {
         "source": "zentynel",
         "theme": "Diagnostics & Devices",
-        "deal_count": 8
+        "deal_count": 12
       },
       {
         "source": "zentynel",
         "theme": "Food Systems & Alt Proteins",
-        "deal_count": 2
+        "deal_count": 3
       },
       {
         "source": "zentynel",
         "theme": "Therapeutics",
-        "deal_count": 14
+        "deal_count": 20
       }
     ]
   }

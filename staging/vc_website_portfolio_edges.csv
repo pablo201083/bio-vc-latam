@@ -1,0 +1,15 @@
+investment_id,investor_id,startup_id,confidence_score,source
+WEBSITE_kaszek_compass,kaszek,compass,0.6666666666666666,kaszek website portfolio
+WEBSITE_vox_capital_inventa,vox_capital,inventa,0.6666666666666666,vox_capital website portfolio
+WEBSITE_newtopia_vc_innovai,newtopia_vc,innovai,0.6666666666666666,newtopia_vc website portfolio
+WEBSITE_newtopia_vc_ardan,newtopia_vc,ardan,0.6666666666666666,newtopia_vc website portfolio
+WEBSITE_newtopia_vc_mabloc,newtopia_vc,mabloc,0.6666666666666666,newtopia_vc website portfolio
+WEBSITE_newtopia_vc_limay,newtopia_vc,limay,0.6666666666666666,newtopia_vc website portfolio
+WEBSITE_newtopia_vc_lifit,newtopia_vc,lifit,0.8,newtopia_vc website portfolio
+WEBSITE_newtopia_vc_migma,newtopia_vc,migma,0.7272727272727273,newtopia_vc website portfolio
+WEBSITE_newtopia_vc_voltz,newtopia_vc,voltz,0.8888888888888888,newtopia_vc website portfolio
+WEBSITE_newtopia_vc_rumina,newtopia_vc,rumina,0.8333333333333334,newtopia_vc website portfolio
+WEBSITE_newtopia_vc_ini,newtopia_vc,ini,0.6666666666666666,newtopia_vc website portfolio
+WEBSITE_newtopia_vc_libera,newtopia_vc,libera,0.6666666666666666,newtopia_vc website portfolio
+WEBSITE_newtopia_vc_waterplan,newtopia_vc,waterplan,1.0,newtopia_vc website portfolio
+WEBSITE_newtopia_vc_huna,newtopia_vc,huna,0.6666666666666666,newtopia_vc website portfolio

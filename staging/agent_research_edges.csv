@@ -1,0 +1,17 @@
+investment_id,investor_id,startup_id,confidence_score,source
+AGENT_MONASHEES_ripio,monashees,ripio,0.8,agent_research: LinkedIn/Press/LAVCA
+AGENT_MONASHEES_hilab-br,monashees,hilab-br,0.7692307692307693,agent_research: LinkedIn/Press/LAVCA
+AGENT_MONASHEES_luzid,monashees,luzid,0.8,agent_research: LinkedIn/Press/LAVCA
+AGENT_MONASHEES_uala,monashees,uala,0.75,agent_research: LinkedIn/Press/LAVCA
+AGENT_MONASHEES_scarab,monashees,scarab,0.7272727272727273,agent_research: LinkedIn/Press/LAVCA
+AGENT_BIOMINAS_microbiota-agricola-br,biominas,microbiota-agricola-br,0.8292682926829268,agent_research: Directory/Portfolio
+AGENT_BIOMINAS_biodiverso-insumos-br,biominas,biodiverso-insumos-br,0.8717948717948718,agent_research: Directory/Portfolio
+AGENT_BIOMINAS_vyro-bio-br,biominas,vyro-bio-br,0.7368421052631579,agent_research: Directory/Portfolio
+AGENT_BIOMINAS_tismoo,biominas,tismoo,1.0,agent_research: Directory/Portfolio
+AGENT_BIOMINAS_alecrim-biotech-br,biominas,alecrim-biotech-br,0.8484848484848485,agent_research: Directory/Portfolio
+AGENT_BIOMINAS_symbiomics,biominas,symbiomics,1.0,agent_research: Directory/Portfolio
+AGENT_BIOMINAS_inedita-bio-br,biominas,inedita-bio-br,0.8,agent_research: Directory/Portfolio
+AGENT_BIOMINAS_nemacontrol-biologicos-br,biominas,nemacontrol-biologicos-br,0.851063829787234,agent_research: Directory/Portfolio
+AGENT_BIOMINAS_peptidus-biotech-br,biominas,peptidus-biotech-br,0.8571428571428571,agent_research: Directory/Portfolio
+AGENT_BIOMINAS_brain4care-br,biominas,brain4care-br,0.8695652173913043,agent_research: Directory/Portfolio
+AGENT_BIOMINAS_cellmeat-brasil-br,biominas,cellmeat-brasil-br,0.8484848484848485,agent_research: Directory/Portfolio
