@@ -1,0 +1,81 @@
+======================================================================================================================================================
+LATAM THERAPEUTIC & BIOTECH INVESTORS: COMPREHENSIVE DATABASE (2025-2026)
+======================================================================================================================================================
+
+======================================================================================================================================================
+SECTION 1: VENTURE CAPITAL FIRMS - BIOTECH/THERAPEUTIC FOCUSED
+======================================================================================================================================================
+
+ 1. SP Ventures                              | BR   | Portfolio:  45 | agtech;foodtech;biotech;climate
+ 2. AIR Capital                              | AR   | Portfolio:  40 | biotech;agtech;healthtech;deeptech;spacetech
+ 3. DraperCygnus                             | AR   | Portfolio:  25 | biotech;agtech;deeptech;healthtech
+ 4. CITES                                    | CL   | Portfolio:  24 | biotech;medtech;climate;deeptech
+ 5. Kamay Ventures                           | AR   | Portfolio:  22 | biotech;agtech;healthtech
+ 6. Zentynel                                 | MX   | Portfolio:  17 | biotech;healthtech;deeptech
+ 7. DragonesVP                               | CR   | Portfolio:  14 | biotech;agtech;healthtech
+ 8. GLOCAL                                   | AR   | Portfolio:  13 | biotech;agtech;deeptech
+ 9. Inventure                                | FI   | Portfolio:  13 | deeptech;biotech;healthtech;agtech
+10. Savia Ventures                           | CL   | Portfolio:   9 | agtech;biotech;climate
+11. Monashees                                | BR   | Portfolio:   8 | healthtech;agtech;fintech
+12. Newtopia VC                              | AR   | Portfolio:   7 | agtech;healthtech;fintech
+13. Endurance 28                             | AR   | Portfolio:   5 | climate;healthtech;deeptech
+14. Kaszek Ventures                          | BR   | Portfolio:   5 | fintech;healthtech;agtech;climate
+15. Valor Capital Group                      | US   | Portfolio:   5 | agtech;healthtech;climate;fintech
+16. Barn Investimentos                       | BR   | Portfolio:   4 | agtech;foodtech;agribusiness
+17. Bossa Invest                             | BR   | Portfolio:   4 | deeptech,biotech
+18. Dalus Capital                            | MX   | Portfolio:   4 | agtech;healthtech;deeptech;sustainability
+19. Varana Capital                           | US   | Portfolio:   4 | biotech;deeptech;technology
+20. ChileGlobal Ventures                     | CL   | Portfolio:   3 | agtech;biotech;healthtech
+
+======================================================================================================================================================
+SECTION 2: ACCELERATORS & COMPANY BUILDERS
+======================================================================================================================================================
+
+ 1. GridX                                    | AR   | Portfolio: 119 | biotech;agtech;healthtech;deeptech
+ 2. The Ganesha Lab                          | AR   | Portfolio:  54 | biotech;deeptech;healthtech
+ 3. SF500                                    | AR   | Portfolio:  24 | biotech;agtech;healthtech
+ 4. SOSV_IndieBio                            | US   | Portfolio:  24 | biotech;healthtech;agtech;foodtech
+ 5. Biominas Brasil                          | BR   | Portfolio:  13 | biotech,lifesciences
+ 6. Antom                                    | CR   | Portfolio:  12 | biotech;agtech;cleantech
+ 7. Vesper Ventures                          | BR   | Portfolio:   8 | biotech,agbio,diagnostics,therapeutics
+ 8. Aceleradora Litoral                      | AR   | Portfolio:   7 | biotech;agtech;healthtech
+ 9. Pampa Start                              | AR   | Portfolio:   5 | agtech;biotech
+10. ACE Ventures                             | BR   | Portfolio:   2 | agtech,deeptech,saas
+11. Eatable Adventures                       | ES   | Portfolio:   2 | foodtech;agtech;alt-protein
+12. Hatch                                    | NO   | Portfolio:   2 | aquaculture;foodtech;marinetech;biosensors
+
+======================================================================================================================================================
+SECTION 3: GOVERNMENT & DEVELOPMENT FINANCE PROGRAMS
+======================================================================================================================================================
+
+1. CORFO                | Government Program        | Chile      | Biotech, Deep Tech, Innovation      | 9+ portfolio companies
+2. FAPESP               | Research Foundation       | Brazil     | Deep Tech Science Startups          | Multiple programs
+3. CNPq                 | Research Council          | Brazil     | Science-based Startup Support       | Fellowship & grants
+4. EMBRAPA              | Agricultural Research     | Brazil     | AgriTech Biotech Programs           | 2+ portfolio companies
+5. BNDES                | Development Bank          | Brazil     | Infrastructure & Biotech            | 2+ portfolio companies
+6. IDB Lab              | Multilateral Fund         | LATAM      | Deep Tech, Agtech, Biotech          | 2+ portfolio companies
+7. CONICET              | Research Council          | Argentina  | Scientific Research Support         | Grants & spinoffs
+
+======================================================================================================================================================
+SECTION 4: CORPORATE VENTURE ARMS (PHARMA & BIOTECH)
+======================================================================================================================================================
+
+1. Grupo Insud               | Pharma CVN        | Argentina    | Pharma, Biosimilars, Biomanufacturing         | Portfolio: 4
+2. Corteva Catalyst          | Agchem CVN        | LATAM        | Ag-biologicals, Crop Protection               | Portfolio: 2
+3. Bago                      | Pharma CVN        | Argentina    | Pharma, Biotech, Healthtech                   | Portfolio: 1
+4. Eurofarma                 | Pharma CVN        | Brazil       | Pharma, Biotech                               | Portfolio: 1
+5. BioMerieux                | Diagnostics       | Global/FR    | Diagnostics, Biotech                          | Portfolio: 1
+6. MOV Investimentos         | Impact Fund       | Brazil       | Bioinputs, Biopharma, Agrotech                | Portfolio: 2
+
+======================================================================================================================================================
+SECTION 5: ACADEMIC SPINOFF PROGRAMS & UNIVERSITY ACCELERATORS
+======================================================================================================================================================
+
+1. Institut Pasteur LAB+          | Uruguay      | Synthetic Biology, Diagnostics, Oncology   | 4 companies          | $25M fund
+2. Tec de Monterrey Spin-off      | Mexico       | Gene Therapy, Tissue Engineering, Drug Discovery | 25+ startups         | TTO
+3. Patagonia Biotech Hub          | Chile        | Aquaculture, Fermentation, Biotech         | 5+ resident          | Regional Hub
+4. Startup Chile (CORFO)          | Chile        | Biotech, Healthtech, Deep Tech             | 2000+ portfolio      | Build/Ignite
+5. Ganesha Lab                    | Chile/LATAM  | Bioagriculture, Biomedicine, Biofood       | 50+ companies        | Scale-up
+6. BIOMINAS Brasil                | Brazil       | Biotech, Life Sciences Incubation          | 13+ companies        | Accelerator
+
+======================================================================================================================================================

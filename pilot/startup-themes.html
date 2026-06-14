@@ -2007,6 +2007,7 @@ const THEME_PAL={
   "Biomaterials & Green Chemistry":"#8B6D14",
   "Biomanufacturing & Platform Technologies":"#6B8C3A",
   "Biomanufacturing & Fermentation Economy":"#6B8C3A",
+  "Digital AgTech & Agrifintech":"#8C8FA3",
 };
 const THEME_ADJ="#8a7d70";
 function tcol(t){return THEME_PAL[t]||THEME_ADJ;}
@@ -2318,6 +2319,7 @@ const THEME_PAL={
   "Biomaterials & Green Chemistry":"#8B6D14",
   "Biomanufacturing & Platform Technologies":"#6B8C3A",
   "Biomanufacturing & Fermentation Economy":"#6B8C3A",
+  "Digital AgTech & Agrifintech":"#8C8FA3",
 };
 const THEME_ADJ="#8a7d70";
 function tcol(t){return THEME_PAL[t]||THEME_ADJ;}
@@ -2870,7 +2872,8 @@ function build(){
     // Label: top bigram como nombre de familia (reemplaza sub_cluster_label)
     const lblG=el("g",{"data-theme":c.theme},layerLabels);
     const maxLblChars=Math.floor(SUB_W/5.2);
-    const lblTxt=sem.label.length>maxLblChars?sem.label.slice(0,maxLblChars-1)+'…':sem.label;
+    const rawLbl=sem.label||c.label||'';
+    const lblTxt=rawLbl.length>maxLblChars?rawLbl.slice(0,maxLblChars-1)+'…':rawLbl;
     el("text",{x:X_SUB,y:c.y,"dominant-baseline":"central",
       "font-size":"9.5","font-weight":"700",fill:c.color,opacity:"0.90",
       "font-family":"DM Sans,sans-serif","pointer-events":"none"},lblG).textContent=lblTxt;

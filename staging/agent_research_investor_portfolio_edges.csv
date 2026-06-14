@@ -1,0 +1,66 @@
+investment_id,investor_id,startup_id,confidence_score,source,tema
+AGENT_RESEARCH_gridx_beeflow,gridx,beeflow,0.95,Agent research: Gridx portfolio,agtech
+AGENT_RESEARCH_gridx_puna_bio,gridx,puna_bio,0.95,Agent research: Gridx portfolio,bioinputs
+AGENT_RESEARCH_gridx_caspr_biotech,gridx,caspr_biotech,0.95,Agent research: Gridx portfolio,diagnostics
+AGENT_RESEARCH_gridx_onco_precision,gridx,onco_precision,0.95,Agent research: Gridx portfolio,therapeutics
+AGENT_RESEARCH_gridx_michroma,gridx,michroma,0.95,Agent research: Gridx portfolio,food_biotech
+AGENT_RESEARCH_gridx_biolinker,gridx,biolinker,0.9,Agent research: Gridx portfolio,biomanufacturing
+AGENT_RESEARCH_gridx_food4you,gridx,food4you,0.9,Agent research: Gridx portfolio,food_systems
+AGENT_RESEARCH_gridx_glycox,gridx,glycox,0.9,Agent research: Gridx portfolio,food_systems
+AGENT_RESEARCH_gridx_kresko_rnatech,gridx,kresko_rnatech,0.9,Agent research: Gridx portfolio,therapeutics
+AGENT_RESEARCH_gridx_naturannova,gridx,naturannova,0.9,Agent research: Gridx portfolio,food_systems
+AGENT_RESEARCH_gridx_tomorrow_foods,gridx,tomorrow_foods,0.95,Agent research: Gridx portfolio,food_systems
+AGENT_RESEARCH_gridx_updairy,gridx,updairy,0.95,Agent research: Gridx portfolio,food_biotech
+AGENT_RESEARCH_gridx_cell_farm,gridx,cell_farm,0.9,Agent research: Gridx portfolio,food_biotech
+AGENT_RESEARCH_gridx_bybug,gridx,bybug,0.9,Agent research: Gridx portfolio,biomanufacturing
+AGENT_RESEARCH_the_ganesha_lab_metabix-biotech,the_ganesha_lab,metabix-biotech,0.95,Agent research: The Ganesha Lab portfolio,therapeutics
+AGENT_RESEARCH_the_ganesha_lab_unibaio,the_ganesha_lab,unibaio,0.95,Agent research: The Ganesha Lab portfolio,therapeutics
+AGENT_RESEARCH_the_ganesha_lab_eywa_biotech,the_ganesha_lab,eywa_biotech,0.95,Agent research: The Ganesha Lab portfolio,therapeutics
+AGENT_RESEARCH_sp_ventures_genica,sp_ventures,genica,0.95,Agent research: Sp Ventures portfolio,therapeutics
+AGENT_RESEARCH_sp_ventures_symbiomics,sp_ventures,symbiomics,0.95,Agent research: Sp Ventures portfolio,bioinputs
+AGENT_RESEARCH_sp_ventures_frizata,sp_ventures,frizata,0.9,Agent research: Sp Ventures portfolio,food_systems
+AGENT_RESEARCH_sp_ventures_pink-farms,sp_ventures,pink-farms,0.9,Agent research: Sp Ventures portfolio,food_systems
+AGENT_RESEARCH_sp_ventures_puna_bio,sp_ventures,puna_bio,0.95,Agent research: Sp Ventures portfolio,bioinputs
+AGENT_RESEARCH_vesper_ventures_cellertz-bio-br,vesper_ventures,cellertz-bio-br,0.9,Agent research: Vesper Ventures portfolio,therapeutics
+AGENT_RESEARCH_the_yield_lab_latam_kilimo,the_yield_lab_latam,kilimo,0.95,Agent research: The Yield Lab Latam portfolio,precision_agriculture
+AGENT_RESEARCH_the_yield_lab_latam_verqor,the_yield_lab_latam,verqor,0.9,Agent research: The Yield Lab Latam portfolio,bioinputs
+AGENT_RESEARCH_the_yield_lab_latam_sciphage,the_yield_lab_latam,sciphage,0.95,Agent research: The Yield Lab Latam portfolio,therapeutics
+AGENT_RESEARCH_the_yield_lab_latam_heartbest,the_yield_lab_latam,heartbest,0.9,Agent research: The Yield Lab Latam portfolio,food_systems
+AGENT_RESEARCH_zentynel_xeptiva-therapeutics-uy,zentynel,xeptiva-therapeutics-uy,0.95,Agent research: Zentynel portfolio,therapeutics
+AGENT_RESEARCH_zentynel_autem-therapeutics-br,zentynel,autem-therapeutics-br,0.95,Agent research: Zentynel portfolio,therapeutics
+AGENT_RESEARCH_zentynel_antarka,zentynel,antarka,0.9,Agent research: Zentynel portfolio,therapeutics
+AGENT_RESEARCH_cites_eolo_pharma,cites,eolo_pharma,0.95,Agent research: Cites portfolio,therapeutics
+AGENT_RESEARCH_cites_limay_biosciences,cites,limay_biosciences,0.95,Agent research: Cites portfolio,diagnostics
+AGENT_RESEARCH_cites_viewmind,cites,viewmind,0.95,Agent research: Cites portfolio,diagnostics
+AGENT_RESEARCH_cites_phylumtech,cites,phylumtech,0.9,Agent research: Cites portfolio,therapeutics
+AGENT_RESEARCH_cites_ergo_bioscience,cites,ergo_bioscience,0.9,Agent research: Cites portfolio,food_systems
+AGENT_RESEARCH_institut_pasteur_lab_scaffold-biotech-uy,institut_pasteur_lab,scaffold-biotech-uy,0.95,Agent research: Institut Pasteur Lab portfolio,therapeutics
+AGENT_RESEARCH_air_capital_onco_precision,air_capital,onco_precision,0.95,Agent research: Air Capital portfolio,therapeutics
+AGENT_RESEARCH_air_capital_caspr_biotech,air_capital,caspr_biotech,0.95,Agent research: Air Capital portfolio,diagnostics
+AGENT_RESEARCH_air_capital_michroma,air_capital,michroma,0.95,Agent research: Air Capital portfolio,food_biotech
+AGENT_RESEARCH_air_capital_beeflow,air_capital,beeflow,0.95,Agent research: Air Capital portfolio,agtech
+AGENT_RESEARCH_antom_kilimo,antom,kilimo,0.95,Agent research: Antom portfolio,precision_agriculture
+AGENT_RESEARCH_antom_ruuts,antom,ruuts,0.9,Agent research: Antom portfolio,precision_agriculture
+AGENT_RESEARCH_antom_agrojusto,antom,agrojusto,0.9,Agent research: Antom portfolio,precision_agriculture
+AGENT_RESEARCH_patagonia_biotech_hub_kura-biotech-cl,patagonia_biotech_hub,kura-biotech-cl,0.95,Agent research: Patagonia Biotech Hub portfolio,precision_agriculture
+AGENT_RESEARCH_patagonia_biotech_hub_salmoss-biotech-cl,patagonia_biotech_hub,salmoss-biotech-cl,0.95,Agent research: Patagonia Biotech Hub portfolio,agtech
+AGENT_RESEARCH_patagonia_biotech_hub_acuanativa-cl,patagonia_biotech_hub,acuanativa-cl,0.9,Agent research: Patagonia Biotech Hub portfolio,food_systems
+AGENT_RESEARCH_corfo_phagelab,corfo,phagelab,0.95,Agent research: Corfo portfolio,therapeutics
+AGENT_RESEARCH_corfo_luyef-biotechnologies-cl,corfo,luyef-biotechnologies-cl,0.95,Agent research: Corfo portfolio,food_biotech
+AGENT_RESEARCH_corfo_salmoss-biotech-cl,corfo,salmoss-biotech-cl,0.95,Agent research: Corfo portfolio,agtech
+AGENT_RESEARCH_corfo_andes-biotechnologies-cl,corfo,andes-biotechnologies-cl,0.95,Agent research: Corfo portfolio,therapeutics
+AGENT_RESEARCH_corfo_botanical-solutions,corfo,botanical-solutions,0.9,Agent research: Corfo portfolio,bioinputs
+AGENT_RESEARCH_corfo_pewman-innovation-cl,corfo,pewman-innovation-cl,0.85,Agent research: Corfo portfolio,agtech
+AGENT_RESEARCH_corfo_mycoseaweed-cl,corfo,mycoseaweed-cl,0.85,Agent research: Corfo portfolio,bioinputs
+AGENT_RESEARCH_monashees_beeflow,monashees,beeflow,0.85,Agent research: Monashees portfolio,agtech
+AGENT_RESEARCH_kaszek_ventures_caspr_biotech,kaszek_ventures,caspr_biotech,0.85,Agent research: Kaszek Ventures portfolio,diagnostics
+AGENT_RESEARCH_chileglobal_ventures_puna_bio,chileglobal_ventures,puna_bio,0.85,Agent research: Chileglobal Ventures portfolio,bioinputs
+AGENT_RESEARCH_kamay_ventures_deepagro,kamay_ventures,deepagro,0.85,Agent research: Kamay Ventures portfolio,precision_agriculture
+AGENT_RESEARCH_kamay_ventures_done_properly,kamay_ventures,done_properly,0.85,Agent research: Kamay Ventures portfolio,food_systems
+AGENT_RESEARCH_gridx_avatar_medtech,gridx,avatar_medtech,0.85,Agent research: Gridx portfolio,medtech
+AGENT_RESEARCH_gridx_calfix,gridx,calfix,0.85,Agent research: Gridx portfolio,therapeutics
+AGENT_RESEARCH_air_capital_epiliquid,air_capital,epiliquid,0.85,Agent research: Air Capital portfolio,therapeutics
+AGENT_RESEARCH_air_capital_aplife_biotech,air_capital,aplife_biotech,0.85,Agent research: Air Capital portfolio,therapeutics
+AGENT_RESEARCH_blue_horizon_future_cow,blue_horizon,future_cow,0.95,Agent research: Blue Horizon portfolio,food_biotech
+AGENT_RESEARCH_sosv_indiebio_michroma,sosv_indiebio,michroma,0.95,Agent research: Sosv Indiebio portfolio,food_biotech
+AGENT_RESEARCH_sosv_indiebio_beeflow,sosv_indiebio,beeflow,0.9,Agent research: Sosv Indiebio portfolio,agtech
