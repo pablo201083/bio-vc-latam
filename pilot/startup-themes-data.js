@@ -1,11 +1,11 @@
 window.STARTUP_THEMES_DATA = {
-  "computed_at": "2026-06-14T13:53:01",
+  "computed_at": "2026-06-14T14:06:43",
   "model": "intfloat/multilingual-e5-small",
   "stats": {
     "total_startups": 579,
     "n_clusters": 30,
     "featured_count": 53,
-    "funded_count": 355
+    "funded_count": 357
   },
   "bio_theme_descriptions": {
     "Therapeutics": "Medicina regenerativa, terapia celular, biologics y desarrollo clínico de fármacos para oncología, enfermedades crónicas y neurología.",
@@ -588,7 +588,7 @@ window.STARTUP_THEMES_DATA = {
       "community_id": 7,
       "pagerank": 0.000916374716464875,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 6,
+      "n_investors_mapped": 7,
       "bio_theme": "Nature & Ecosystem Tech",
       "bio_theme_secondary": "Precision Agriculture",
       "is_bio_universe": 1,
@@ -863,7 +863,7 @@ window.STARTUP_THEMES_DATA = {
       "community_id": 11,
       "pagerank": 0.000914477051340576,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 2,
+      "n_investors_mapped": 3,
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Bioinputs & Crop Resilience",
       "is_bio_universe": 1,
@@ -994,7 +994,7 @@ window.STARTUP_THEMES_DATA = {
       "community_id": 7,
       "pagerank": 0.0007258070853337505,
       "valuation_tier": 2.0,
-      "n_investors_mapped": 6,
+      "n_investors_mapped": 7,
       "bio_theme": "Precision Agriculture",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
@@ -1549,7 +1549,7 @@ window.STARTUP_THEMES_DATA = {
       "community_id": 7,
       "pagerank": 0.0009345811843488744,
       "valuation_tier": 2.0,
-      "n_investors_mapped": 9,
+      "n_investors_mapped": 11,
       "bio_theme": "Precision Agriculture",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
@@ -2825,7 +2825,7 @@ window.STARTUP_THEMES_DATA = {
       "community_id": 7,
       "pagerank": 0.0015378247673859611,
       "valuation_tier": 3.0,
-      "n_investors_mapped": 13,
+      "n_investors_mapped": 16,
       "bio_theme": "Nature & Ecosystem Tech",
       "bio_theme_secondary": "Precision Agriculture",
       "is_bio_universe": 1,
@@ -2869,6 +2869,7 @@ window.STARTUP_THEMES_DATA = {
       "hy": 9.911,
       "investor_ids": [
         "Antom",
+        "chileglobal_ventures",
         "glocal",
         "kamay_ventures",
         "salkantay_ventures",
@@ -3300,7 +3301,7 @@ window.STARTUP_THEMES_DATA = {
       "community_id": 19,
       "pagerank": 0.0006961087298591056,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 1,
+      "n_investors_mapped": 2,
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Bioinputs & Crop Resilience",
       "is_bio_universe": 1,
@@ -5141,8 +5142,8 @@ window.STARTUP_THEMES_DATA = {
       "summary": "Cell-free protein synthesis platform for accelerated recombinant protein production",
       "one_liner": "Cell-free synthetic biology platform founded 2018 for discovery optimization and production of recombinant proteins for health agriculture cosmetics",
       "cluster_id": 1,
-      "cluster_label": "Therapeutics — Ecuador",
-      "cluster_keywords": "ecuador · innovation · medical · lab",
+      "cluster_label": "Biomanufacturing & Platform Technologies > Cell-Free SynBio",
+      "cluster_keywords": "cell-free · synthetic · recombinant · proteins",
       "cluster_confidence": 1.0,
       "x": 11.863,
       "y": 2.13,
@@ -5613,7 +5614,7 @@ window.STARTUP_THEMES_DATA = {
       "community_id": 16,
       "pagerank": 0.0007069394330731103,
       "valuation_tier": 2.0,
-      "n_investors_mapped": 4,
+      "n_investors_mapped": 5,
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Biomaterials & Green Chemistry",
       "is_bio_universe": 1,
@@ -5789,7 +5790,7 @@ window.STARTUP_THEMES_DATA = {
       "community_id": 5,
       "pagerank": 0.0006912879480158898,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 4,
+      "n_investors_mapped": 5,
       "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
@@ -6391,7 +6392,7 @@ window.STARTUP_THEMES_DATA = {
       "community_id": 12,
       "pagerank": 0.0006856025326815304,
       "valuation_tier": 1.5,
-      "n_investors_mapped": 4,
+      "n_investors_mapped": 5,
       "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "Biomaterials & Green Chemistry",
       "is_bio_universe": 1,
@@ -6613,7 +6614,7 @@ window.STARTUP_THEMES_DATA = {
       "community_id": 2,
       "pagerank": 0.0007170510764671764,
       "valuation_tier": 1.5,
-      "n_investors_mapped": 2,
+      "n_investors_mapped": 3,
       "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "Diagnostics & Devices",
       "is_bio_universe": 1,
@@ -7736,7 +7737,7 @@ window.STARTUP_THEMES_DATA = {
       "community_id": 6,
       "pagerank": 0.000731453591103399,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 6,
+      "n_investors_mapped": 10,
       "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
@@ -8804,7 +8805,7 @@ window.STARTUP_THEMES_DATA = {
       "community_id": 6,
       "pagerank": 0.00072262288396422,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 5,
+      "n_investors_mapped": 6,
       "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
@@ -10417,7 +10418,7 @@ window.STARTUP_THEMES_DATA = {
       "community_id": 14,
       "pagerank": 0.0007397069070344529,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 6,
+      "n_investors_mapped": 7,
       "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
@@ -13160,7 +13161,7 @@ window.STARTUP_THEMES_DATA = {
       "community_id": 14,
       "pagerank": 0.000743052086872884,
       "valuation_tier": 1.5,
-      "n_investors_mapped": 5,
+      "n_investors_mapped": 6,
       "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
@@ -13515,7 +13516,7 @@ window.STARTUP_THEMES_DATA = {
       "community_id": 12,
       "pagerank": 0.0007733640960530153,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 4,
+      "n_investors_mapped": 5,
       "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "Diagnostics & Devices",
       "is_bio_universe": 1,
@@ -14896,7 +14897,7 @@ window.STARTUP_THEMES_DATA = {
       "community_id": 12,
       "pagerank": 0.0007733640960530153,
       "valuation_tier": 1.5,
-      "n_investors_mapped": 4,
+      "n_investors_mapped": 5,
       "bio_theme": "Diagnostics & Devices",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
@@ -15516,7 +15517,7 @@ window.STARTUP_THEMES_DATA = {
       "community_id": 16,
       "pagerank": 0.0024520104172735383,
       "valuation_tier": 3.0,
-      "n_investors_mapped": 6,
+      "n_investors_mapped": 7,
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
@@ -15745,7 +15746,7 @@ window.STARTUP_THEMES_DATA = {
       "community_id": 5,
       "pagerank": 0.0009976984762227897,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 4,
+      "n_investors_mapped": 5,
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Food Systems & Alt Proteins",
       "is_bio_universe": 1,
@@ -15791,7 +15792,8 @@ window.STARTUP_THEMES_DATA = {
       "hy": -9.85,
       "investor_ids": [
         "The Ganesha Lab",
-        "eatable_adventures"
+        "eatable_adventures",
+        "the_yield_lab_latam"
       ]
     },
     {
@@ -17530,7 +17532,7 @@ window.STARTUP_THEMES_DATA = {
       "community_id": 7,
       "pagerank": 0.0007676391279746232,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 6,
+      "n_investors_mapped": 7,
       "bio_theme": "Nature & Ecosystem Tech",
       "bio_theme_secondary": "Precision Agriculture",
       "is_bio_universe": 1,
@@ -18100,7 +18102,7 @@ window.STARTUP_THEMES_DATA = {
       "community_id": 12,
       "pagerank": 0.0006940972798757856,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 7,
+      "n_investors_mapped": 8,
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Biomaterials & Green Chemistry",
       "is_bio_universe": 1,
@@ -19062,7 +19064,7 @@ window.STARTUP_THEMES_DATA = {
       "community_id": 6,
       "pagerank": 0.0007015807124071758,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 5,
+      "n_investors_mapped": 6,
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
@@ -19285,7 +19287,7 @@ window.STARTUP_THEMES_DATA = {
       "community_id": 20,
       "pagerank": 0.0006879583918932826,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 1,
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Biomaterials & Green Chemistry",
       "is_bio_universe": 1,
@@ -19320,7 +19322,9 @@ window.STARTUP_THEMES_DATA = {
       "uy": -3.678,
       "hx": -11.416,
       "hy": -9.611,
-      "investor_ids": []
+      "investor_ids": [
+        "zentynel"
+      ]
     },
     {
       "id": "bioseek",
@@ -19508,7 +19512,7 @@ window.STARTUP_THEMES_DATA = {
       "community_id": 20,
       "pagerank": 0.0007574114449535134,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 2,
+      "n_investors_mapped": 3,
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
@@ -20018,7 +20022,7 @@ window.STARTUP_THEMES_DATA = {
       "community_id": 9,
       "pagerank": 0.0024723873269349756,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 15,
+      "n_investors_mapped": 17,
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Biomaterials & Green Chemistry",
       "is_bio_universe": 1,
@@ -20733,7 +20737,7 @@ window.STARTUP_THEMES_DATA = {
       "community_id": 14,
       "pagerank": 0.000709740575517354,
       "valuation_tier": null,
-      "n_investors_mapped": 1,
+      "n_investors_mapped": 2,
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -20775,7 +20779,7 @@ window.STARTUP_THEMES_DATA = {
       "summary": "Precision fermentation for plant-based proteins (FAPESP-backed)",
       "one_liner": "",
       "cluster_id": 13,
-      "cluster_label": "Digital AgTech & Agrifintech — Protein Alternatives",
+      "cluster_label": "Food Systems & Alt Proteins > Protein Alternatives",
       "cluster_keywords": "fermentation · proteins · food · protein alternatives",
       "cluster_confidence": 0.623,
       "x": 13.574,
@@ -20833,7 +20837,7 @@ window.STARTUP_THEMES_DATA = {
       "summary": "Food biotechnology for preservation",
       "one_liner": "",
       "cluster_id": 13,
-      "cluster_label": "Digital AgTech & Agrifintech — Protein Alternatives",
+      "cluster_label": "Food Systems & Alt Proteins > Protein Alternatives",
       "cluster_keywords": "fermentation · proteins · food · protein alternatives",
       "cluster_confidence": 1.0,
       "x": 13.539,
@@ -20889,7 +20893,7 @@ window.STARTUP_THEMES_DATA = {
       "summary": "Cultivated meat bioreactor infrastructure",
       "one_liner": "",
       "cluster_id": 13,
-      "cluster_label": "Digital AgTech & Agrifintech — Protein Alternatives",
+      "cluster_label": "Food Systems & Alt Proteins > Protein Alternatives",
       "cluster_keywords": "fermentation · proteins · food · protein alternatives",
       "cluster_confidence": 1.0,
       "x": 13.536,
@@ -20947,7 +20951,7 @@ window.STARTUP_THEMES_DATA = {
       "summary": "Cellular agriculture for microencapsulated food ingredients",
       "one_liner": "",
       "cluster_id": 13,
-      "cluster_label": "Digital AgTech & Agrifintech — Protein Alternatives",
+      "cluster_label": "Food Systems & Alt Proteins > Protein Alternatives",
       "cluster_keywords": "fermentation · proteins · food · protein alternatives",
       "cluster_confidence": 1.0,
       "x": 13.52,
@@ -21002,7 +21006,7 @@ window.STARTUP_THEMES_DATA = {
       "summary": "Biopreservatives and natural antimicrobials for food industry",
       "one_liner": "",
       "cluster_id": 13,
-      "cluster_label": "Digital AgTech & Agrifintech — Protein Alternatives",
+      "cluster_label": "Food Systems & Alt Proteins > Protein Alternatives",
       "cluster_keywords": "fermentation · proteins · food · protein alternatives",
       "cluster_confidence": 1.0,
       "x": 13.524,
@@ -21055,7 +21059,7 @@ window.STARTUP_THEMES_DATA = {
       "summary": "Food waste redistribution platform; 42K tons redistributed, 95M meals",
       "one_liner": "",
       "cluster_id": 13,
-      "cluster_label": "Digital AgTech & Agrifintech — Protein Alternatives",
+      "cluster_label": "Food Systems & Alt Proteins > Protein Alternatives",
       "cluster_keywords": "fermentation · proteins · food · protein alternatives",
       "cluster_confidence": 1.0,
       "x": 13.516,
@@ -21110,7 +21114,7 @@ window.STARTUP_THEMES_DATA = {
       "summary": "Fermentation technology for industrial biology",
       "one_liner": "Not specifically found; Brazil has Future Cow (cellular ag/precision fermentation) and GlobalYeast (fermentation automation)",
       "cluster_id": 13,
-      "cluster_label": "Digital AgTech & Agrifintech — Protein Alternatives",
+      "cluster_label": "Food Systems & Alt Proteins > Protein Alternatives",
       "cluster_keywords": "fermentation · proteins · food · protein alternatives",
       "cluster_confidence": 0.353,
       "x": 12.262,
@@ -21165,7 +21169,7 @@ window.STARTUP_THEMES_DATA = {
       "summary": "Precision fermentation platform for sustainable leather tanning and textile dyeing compounds",
       "one_liner": "",
       "cluster_id": 13,
-      "cluster_label": "Digital AgTech & Agrifintech — Protein Alternatives",
+      "cluster_label": "Food Systems & Alt Proteins > Protein Alternatives",
       "cluster_keywords": "fermentation · proteins · food · protein alternatives",
       "cluster_confidence": 0.363,
       "x": 13.587,
@@ -21222,7 +21226,7 @@ window.STARTUP_THEMES_DATA = {
       "summary": "Industrial enzyme manufacturing and bioprocessing",
       "one_liner": "",
       "cluster_id": 13,
-      "cluster_label": "Digital AgTech & Agrifintech — Protein Alternatives",
+      "cluster_label": "Food Systems & Alt Proteins > Protein Alternatives",
       "cluster_keywords": "fermentation · proteins · food · protein alternatives",
       "cluster_confidence": 0.546,
       "x": 13.564,
@@ -21277,7 +21281,7 @@ window.STARTUP_THEMES_DATA = {
       "summary": "Biofortified proteins via strain engineering (FAPESP + CNPq)",
       "one_liner": "",
       "cluster_id": 13,
-      "cluster_label": "Digital AgTech & Agrifintech — Protein Alternatives",
+      "cluster_label": "Food Systems & Alt Proteins > Protein Alternatives",
       "cluster_keywords": "fermentation · proteins · food · protein alternatives",
       "cluster_confidence": 0.821,
       "x": 13.576,
@@ -21330,7 +21334,7 @@ window.STARTUP_THEMES_DATA = {
       "summary": "AI-designed proteins to replace artificial food additives and improve shelf-life using madi™ algorithm",
       "one_liner": "",
       "cluster_id": 13,
-      "cluster_label": "Digital AgTech & Agrifintech — Protein Alternatives",
+      "cluster_label": "Food Systems & Alt Proteins > Protein Alternatives",
       "cluster_keywords": "fermentation · proteins · food · protein alternatives",
       "cluster_confidence": 1.0,
       "x": 13.54,
@@ -21383,7 +21387,7 @@ window.STARTUP_THEMES_DATA = {
       "summary": "Creates plant-based protein alternatives for sustainable nutrition. Based in Buenos Aires.",
       "one_liner": "",
       "cluster_id": 13,
-      "cluster_label": "Digital AgTech & Agrifintech — Protein Alternatives",
+      "cluster_label": "Food Systems & Alt Proteins > Protein Alternatives",
       "cluster_keywords": "fermentation · proteins · food · protein alternatives",
       "cluster_confidence": 0.351,
       "x": 1.976,
@@ -22796,7 +22800,7 @@ window.STARTUP_THEMES_DATA = {
       "community_id": 11,
       "pagerank": 0.0013980267692726158,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 2,
+      "n_investors_mapped": 3,
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
@@ -23071,7 +23075,7 @@ window.STARTUP_THEMES_DATA = {
       "community_id": 2,
       "pagerank": 0.0007083620761435365,
       "valuation_tier": 1.5,
-      "n_investors_mapped": 2,
+      "n_investors_mapped": 3,
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
@@ -23711,7 +23715,7 @@ window.STARTUP_THEMES_DATA = {
       "community_id": 14,
       "pagerank": 0.0007202925434108779,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 7,
+      "n_investors_mapped": 8,
       "bio_theme": "Biomaterials & Green Chemistry",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
@@ -24229,7 +24233,7 @@ window.STARTUP_THEMES_DATA = {
       "community_id": 12,
       "pagerank": 0.0006856025326815304,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 4,
+      "n_investors_mapped": 5,
       "bio_theme": "Biomaterials & Green Chemistry",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
@@ -24778,7 +24782,7 @@ window.STARTUP_THEMES_DATA = {
       "community_id": 12,
       "pagerank": 0.0007733640960530153,
       "valuation_tier": 1.5,
-      "n_investors_mapped": 4,
+      "n_investors_mapped": 5,
       "bio_theme": "Biomaterials & Green Chemistry",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
@@ -26691,7 +26695,7 @@ window.STARTUP_THEMES_DATA = {
       "community_id": 6,
       "pagerank": 0.0007203557822788556,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 6,
+      "n_investors_mapped": 7,
       "bio_theme": "Therapeutics",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
@@ -28642,7 +28646,7 @@ window.STARTUP_THEMES_DATA = {
       "community_id": 9,
       "pagerank": 0.0037459383586595416,
       "valuation_tier": 3.0,
-      "n_investors_mapped": 20,
+      "n_investors_mapped": 26,
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
@@ -28690,6 +28694,7 @@ window.STARTUP_THEMES_DATA = {
         "SOSV_IndieBio",
         "future_ventures",
         "jeff_wilke",
+        "monashees",
         "ospraie",
         "ospraie_ag_science",
         "sosv",
@@ -29652,7 +29657,7 @@ window.STARTUP_THEMES_DATA = {
       "community_id": 19,
       "pagerank": 0.0017240558391276928,
       "valuation_tier": 2.0,
-      "n_investors_mapped": 7,
+      "n_investors_mapped": 8,
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
@@ -30453,7 +30458,7 @@ window.STARTUP_THEMES_DATA = {
       "community_id": 20,
       "pagerank": 0.002841328964632514,
       "valuation_tier": 1.5,
-      "n_investors_mapped": 11,
+      "n_investors_mapped": 12,
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
@@ -30506,6 +30511,7 @@ window.STARTUP_THEMES_DATA = {
         "corteva_catalyst",
         "ecoa_capital",
         "mov_investimentos",
+        "sp_ventures",
         "the_yield_lab_latam",
         "vesper_ventures"
       ]
@@ -30972,7 +30978,7 @@ window.STARTUP_THEMES_DATA = {
       "community_id": 12,
       "pagerank": 0.0007632101409272506,
       "valuation_tier": 1.5,
-      "n_investors_mapped": 4,
+      "n_investors_mapped": 5,
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
@@ -31053,7 +31059,7 @@ window.STARTUP_THEMES_DATA = {
       "community_id": 12,
       "pagerank": 0.0007733640960530153,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 4,
+      "n_investors_mapped": 5,
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
@@ -31364,7 +31370,7 @@ window.STARTUP_THEMES_DATA = {
       "community_id": 13,
       "pagerank": 0.001762158620113806,
       "valuation_tier": 3.0,
-      "n_investors_mapped": 19,
+      "n_investors_mapped": 23,
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
@@ -31415,6 +31421,7 @@ window.STARTUP_THEMES_DATA = {
         "GridX",
         "SOSV_IndieBio",
         "ace_ventures",
+        "chileglobal_ventures",
         "corfo",
         "corteva_catalyst",
         "dalus_capital",
@@ -31537,7 +31544,7 @@ window.STARTUP_THEMES_DATA = {
       "community_id": 12,
       "pagerank": 0.0007632101409272506,
       "valuation_tier": 1.5,
-      "n_investors_mapped": 4,
+      "n_investors_mapped": 5,
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
@@ -32601,7 +32608,7 @@ window.STARTUP_THEMES_DATA = {
       "community_id": 12,
       "pagerank": 0.0007733640960530153,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 4,
+      "n_investors_mapped": 5,
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Nature & Ecosystem Tech",
       "is_bio_universe": 1,
@@ -33935,7 +33942,7 @@ window.STARTUP_THEMES_DATA = {
       "community_id": 6,
       "pagerank": 0.0008065934457642527,
       "valuation_tier": 2.0,
-      "n_investors_mapped": 5,
+      "n_investors_mapped": 6,
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Biomanufacturing & Fermentation Economy",
       "is_bio_universe": 1,
@@ -33980,6 +33987,7 @@ window.STARTUP_THEMES_DATA = {
       "investor_ids": [
         "AIR Capital",
         "glocal",
+        "kamay_ventures",
         "savia_ventures"
       ]
     },
@@ -34600,7 +34608,7 @@ window.STARTUP_THEMES_DATA = {
       "community_id": 5,
       "pagerank": 0.0007052198492734877,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 1,
+      "n_investors_mapped": 2,
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Precision Agriculture",
       "is_bio_universe": 1,
@@ -34639,7 +34647,8 @@ window.STARTUP_THEMES_DATA = {
       "hx": 1.932,
       "hy": 2.282,
       "investor_ids": [
-        "The Ganesha Lab"
+        "The Ganesha Lab",
+        "corfo"
       ]
     },
     {
@@ -36216,7 +36225,7 @@ window.STARTUP_THEMES_DATA = {
       "community_id": 16,
       "pagerank": 0.0006948614001660949,
       "valuation_tier": null,
-      "n_investors_mapped": 1,
+      "n_investors_mapped": 2,
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "",
       "is_bio_universe": 1,
@@ -36271,7 +36280,7 @@ window.STARTUP_THEMES_DATA = {
       "community_id": 16,
       "pagerank": 0.0006953556575889544,
       "valuation_tier": null,
-      "n_investors_mapped": 1,
+      "n_investors_mapped": 2,
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "",
       "is_bio_universe": 1,
@@ -37388,7 +37397,7 @@ window.STARTUP_THEMES_DATA = {
       "community_id": 16,
       "pagerank": 0.0006961794199603871,
       "valuation_tier": null,
-      "n_investors_mapped": 1,
+      "n_investors_mapped": 3,
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -37904,7 +37913,7 @@ window.STARTUP_THEMES_DATA = {
       "community_id": 20,
       "pagerank": 0.0006879583918932826,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 1,
       "bio_theme": "Biomanufacturing & Platform Technologies",
       "bio_theme_secondary": "Food Systems & Alt Proteins",
       "is_bio_universe": 1,
@@ -38134,7 +38143,7 @@ window.STARTUP_THEMES_DATA = {
       "community_id": 12,
       "pagerank": 0.0006856025326815304,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 4,
+      "n_investors_mapped": 5,
       "bio_theme": "Biomanufacturing & Platform Technologies",
       "bio_theme_secondary": "Therapeutics",
       "is_bio_universe": 1,
@@ -38447,7 +38456,7 @@ window.STARTUP_THEMES_DATA = {
       "community_id": 19,
       "pagerank": 0.00069697432957888,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 2,
+      "n_investors_mapped": 3,
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Diagnostics & Devices",
       "is_bio_universe": 1,
@@ -38524,7 +38533,7 @@ window.STARTUP_THEMES_DATA = {
       "community_id": 10,
       "pagerank": 0.0008685777175572206,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 2,
+      "n_investors_mapped": 3,
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Biomanufacturing & Fermentation Economy",
       "is_bio_universe": 1,
@@ -39004,7 +39013,7 @@ window.STARTUP_THEMES_DATA = {
       "community_id": 9,
       "pagerank": 0.009790917799922517,
       "valuation_tier": 3.0,
-      "n_investors_mapped": 14,
+      "n_investors_mapped": 17,
       "bio_theme": "Biomaterials & Green Chemistry",
       "bio_theme_secondary": "Biomaterials & Green Chemistry",
       "is_bio_universe": 1,
@@ -39625,7 +39634,7 @@ window.STARTUP_THEMES_DATA = {
       "community_id": 8,
       "pagerank": 0.0022956571743733235,
       "valuation_tier": 1.5,
-      "n_investors_mapped": 8,
+      "n_investors_mapped": 9,
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Biomaterials & Green Chemistry",
       "is_bio_universe": 1,
@@ -39712,7 +39721,7 @@ window.STARTUP_THEMES_DATA = {
       "community_id": 12,
       "pagerank": 0.0006856025326815304,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 4,
+      "n_investors_mapped": 5,
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Biomanufacturing & Fermentation Economy",
       "is_bio_universe": 1,
@@ -39944,7 +39953,7 @@ window.STARTUP_THEMES_DATA = {
       "community_id": 12,
       "pagerank": 0.001274531929975884,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 6,
+      "n_investors_mapped": 7,
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Biomaterials & Green Chemistry",
       "is_bio_universe": 1,
@@ -40099,7 +40108,7 @@ window.STARTUP_THEMES_DATA = {
       "community_id": 5,
       "pagerank": 0.000726346134777775,
       "valuation_tier": 2.0,
-      "n_investors_mapped": 4,
+      "n_investors_mapped": 5,
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Biomaterials & Green Chemistry",
       "is_bio_universe": 1,
@@ -40268,7 +40277,7 @@ window.STARTUP_THEMES_DATA = {
       "community_id": 12,
       "pagerank": 0.0006856025326815304,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 4,
+      "n_investors_mapped": 5,
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Biomaterials & Green Chemistry",
       "is_bio_universe": 1,
@@ -40422,7 +40431,7 @@ window.STARTUP_THEMES_DATA = {
       "community_id": 12,
       "pagerank": 0.0006856025326815304,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 4,
+      "n_investors_mapped": 5,
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Bioinputs & Crop Resilience",
       "is_bio_universe": 1,
@@ -40497,7 +40506,7 @@ window.STARTUP_THEMES_DATA = {
       "community_id": 7,
       "pagerank": 0.0006979794824676681,
       "valuation_tier": 1.5,
-      "n_investors_mapped": 3,
+      "n_investors_mapped": 4,
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Biomaterials & Green Chemistry",
       "is_bio_universe": 1,
@@ -40791,7 +40800,7 @@ window.STARTUP_THEMES_DATA = {
       "community_id": 12,
       "pagerank": 0.0006856025326815304,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 4,
+      "n_investors_mapped": 5,
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Biomaterials & Green Chemistry",
       "is_bio_universe": 1,
@@ -41188,7 +41197,7 @@ window.STARTUP_THEMES_DATA = {
       "community_id": 12,
       "pagerank": 0.0006856025326815304,
       "valuation_tier": 1.0,
-      "n_investors_mapped": 4,
+      "n_investors_mapped": 5,
       "bio_theme": "Food Systems & Alt Proteins",
       "bio_theme_secondary": "Biomaterials & Green Chemistry",
       "is_bio_universe": 1,
@@ -41506,7 +41515,7 @@ window.STARTUP_THEMES_DATA = {
       "community_id": 7,
       "pagerank": 0.0007600511223002911,
       "valuation_tier": 1.5,
-      "n_investors_mapped": 9,
+      "n_investors_mapped": 10,
       "bio_theme": "Bioinputs & Crop Resilience",
       "bio_theme_secondary": "Bioinputs & Crop Resilience",
       "is_bio_universe": 1,
@@ -41802,7 +41811,7 @@ window.STARTUP_THEMES_DATA = {
         "Argentina": 7,
         "USA": 1
       },
-      "n_funded": 19,
+      "n_funded": 20,
       "n_featured": 3
     },
     {
@@ -42034,7 +42043,7 @@ window.STARTUP_THEMES_DATA = {
         "Colombia": 1,
         "Argentina": 4
       },
-      "n_funded": 14,
+      "n_funded": 15,
       "n_featured": 2
     },
     {
@@ -42225,7 +42234,7 @@ window.STARTUP_THEMES_DATA = {
     },
     {
       "cluster_id": 13,
-      "label": "Digital AgTech & Agrifintech — Protein Alternatives",
+      "label": "Food Systems & Alt Proteins > Protein Alternatives",
       "keywords": "fermentation · proteins · food · protein alternatives",
       "size": 12,
       "bio_themes": {
@@ -42872,7 +42881,7 @@ window.STARTUP_THEMES_DATA = {
     {
       "id": "sp_ventures",
       "name": "SP Ventures",
-      "n": 26
+      "n": 27
     },
     {
       "id": "AIR Capital",
@@ -42880,13 +42889,13 @@ window.STARTUP_THEMES_DATA = {
       "n": 25
     },
     {
-      "id": "SF500",
-      "name": "SF500",
-      "n": 22
-    },
-    {
       "id": "the_yield_lab_latam",
       "name": "The Yield Lab LATAM",
+      "n": 23
+    },
+    {
+      "id": "SF500",
+      "name": "SF500",
       "n": 22
     },
     {
@@ -42897,7 +42906,7 @@ window.STARTUP_THEMES_DATA = {
     {
       "id": "zentynel",
       "name": "Zentynel",
-      "n": 15
+      "n": 16
     },
     {
       "id": "SOSV_IndieBio",
@@ -42920,19 +42929,19 @@ window.STARTUP_THEMES_DATA = {
       "n": 10
     },
     {
+      "id": "corfo",
+      "name": "CORFO",
+      "n": 10
+    },
+    {
       "id": "inventure",
       "name": "Inventure",
       "n": 10
     },
     {
-      "id": "corfo",
-      "name": "CORFO",
-      "n": 9
-    },
-    {
       "id": "kamay_ventures",
       "name": "Kamay Ventures",
-      "n": 9
+      "n": 10
     },
     {
       "id": "kptl",
@@ -42965,6 +42974,11 @@ window.STARTUP_THEMES_DATA = {
       "n": 6
     },
     {
+      "id": "chileglobal_ventures",
+      "name": "ChileGlobal Ventures",
+      "n": 5
+    },
+    {
       "id": "DragonesVP",
       "name": "DragonesVP",
       "n": 5
@@ -42995,13 +43009,13 @@ window.STARTUP_THEMES_DATA = {
       "n": 4
     },
     {
-      "id": "blue_horizon",
-      "name": "Blue Horizon",
-      "n": 3
+      "id": "monashees",
+      "name": "Monashees",
+      "n": 4
     },
     {
-      "id": "chileglobal_ventures",
-      "name": "ChileGlobal Ventures",
+      "id": "blue_horizon",
+      "name": "Blue Horizon",
       "n": 3
     },
     {
@@ -43012,11 +43026,6 @@ window.STARTUP_THEMES_DATA = {
     {
       "id": "kaszek",
       "name": "Kaszek Ventures",
-      "n": 3
-    },
-    {
-      "id": "monashees",
-      "name": "Monashees",
       "n": 3
     },
     {
@@ -43531,7 +43540,7 @@ window.STARTUP_THEMES_DATA = {
       {
         "id": "chileglobal_ventures",
         "name": "ChileGlobal Ventures",
-        "n_investments": 3
+        "n_investments": 5
       },
       {
         "id": "cj_cheiljedang",
@@ -43556,7 +43565,7 @@ window.STARTUP_THEMES_DATA = {
       {
         "id": "corfo",
         "name": "CORFO",
-        "n_investments": 9
+        "n_investments": 10
       },
       {
         "id": "corteva_catalyst",
@@ -43816,7 +43825,7 @@ window.STARTUP_THEMES_DATA = {
       {
         "id": "kamay_ventures",
         "name": "Kamay Ventures",
-        "n_investments": 9
+        "n_investments": 10
       },
       {
         "id": "kaszek",
@@ -43901,7 +43910,7 @@ window.STARTUP_THEMES_DATA = {
       {
         "id": "monashees",
         "name": "Monashees",
-        "n_investments": 3
+        "n_investments": 4
       },
       {
         "id": "morningside_group",
@@ -44016,7 +44025,7 @@ window.STARTUP_THEMES_DATA = {
       {
         "id": "sp_ventures",
         "name": "SP Ventures",
-        "n_investments": 26
+        "n_investments": 27
       },
       {
         "id": "sumitomo_corp",
@@ -44031,7 +44040,7 @@ window.STARTUP_THEMES_DATA = {
       {
         "id": "the_yield_lab_latam",
         "name": "The Yield Lab LATAM",
-        "n_investments": 22
+        "n_investments": 23
       },
       {
         "id": "thrive",
@@ -44106,7 +44115,7 @@ window.STARTUP_THEMES_DATA = {
       {
         "id": "zentynel",
         "name": "Zentynel",
-        "n_investments": 15
+        "n_investments": 16
       }
     ],
     "edges": [
@@ -45264,7 +45273,15 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "chileglobal_ventures",
+        "startup_id": "kilimo"
+      },
+      {
+        "investor_id": "chileglobal_ventures",
         "startup_id": "matchetune"
+      },
+      {
+        "investor_id": "chileglobal_ventures",
+        "startup_id": "puna_bio"
       },
       {
         "investor_id": "cj_cheiljedang",
@@ -45293,6 +45310,10 @@ window.STARTUP_THEMES_DATA = {
       {
         "investor_id": "corfo",
         "startup_id": "botanical-solutions"
+      },
+      {
+        "investor_id": "corfo",
+        "startup_id": "luyef-biotechnologies-cl"
       },
       {
         "investor_id": "corfo",
@@ -45712,6 +45733,10 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "kamay_ventures",
+        "startup_id": "done_properly"
+      },
+      {
+        "investor_id": "kamay_ventures",
         "startup_id": "kilimo"
       },
       {
@@ -45837,6 +45862,10 @@ window.STARTUP_THEMES_DATA = {
       {
         "investor_id": "melek_capital",
         "startup_id": "movet-co"
+      },
+      {
+        "investor_id": "monashees",
+        "startup_id": "beeflow"
       },
       {
         "investor_id": "monashees",
@@ -46120,6 +46149,10 @@ window.STARTUP_THEMES_DATA = {
       },
       {
         "investor_id": "sp_ventures",
+        "startup_id": "symbiomics"
+      },
+      {
+        "investor_id": "sp_ventures",
         "startup_id": "zoomagri"
       },
       {
@@ -46189,6 +46222,10 @@ window.STARTUP_THEMES_DATA = {
       {
         "investor_id": "the_yield_lab_latam",
         "startup_id": "produzindo-certo"
+      },
+      {
+        "investor_id": "the_yield_lab_latam",
+        "startup_id": "sciphage"
       },
       {
         "investor_id": "the_yield_lab_latam",
@@ -46341,6 +46378,10 @@ window.STARTUP_THEMES_DATA = {
       {
         "investor_id": "zentynel",
         "startup_id": "autem-medical"
+      },
+      {
+        "investor_id": "zentynel",
+        "startup_id": "autem-therapeutics-br"
       },
       {
         "investor_id": "zentynel",
