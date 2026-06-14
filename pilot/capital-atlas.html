@@ -3373,13 +3373,20 @@ document.addEventListener('DOMContentLoaded', function(){
     svg.setAttribute('preserveAspectRatio', 'xMidYMid meet');
 
     // Load coinvestment network data
+    console.log('Intentando cargar coinvestment_network.json...');
     fetch('coinvestment_network.json')
-      .then(function(r) { return r.json(); })
+      .then(function(r) {
+        console.log('Response status:', r.status);
+        if (!r.ok) throw new Error('HTTP ' + r.status);
+        return r.json();
+      })
       .then(function(data) {
+        console.log('Datos cargados:', data.nodes.length, 'nodos,', data.edges.length, 'edges');
         renderCoInvestmentNetwork(svg, ttEl, wrap, W, H, data);
       })
       .catch(function(e) {
-        svg.innerHTML = '<text x="50%" y="50%" text-anchor="middle" fill="#999" font-size="13" font-family="inherit">Error cargando red de co-inversión</text>';
+        console.error('Error:', e);
+        svg.innerHTML = '<text x="50%" y="50%" text-anchor="middle" fill="#c0392b" font-size="14" font-family="inherit">Error: ' + e.message + '</text>';
       });
   }
 
