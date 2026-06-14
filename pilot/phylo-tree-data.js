@@ -1,24 +1,24 @@
 window.IQ_PHYLO_TREE = {
   "name": "BIO LATAM",
   "level": "root",
-  "n": 484,
+  "n": 579,
   "children": [
     {
       "name": "BioMedicina",
       "level": "mega",
       "color": "#5A4FCF",
-      "n": 191,
+      "n": 219,
       "children": [
         {
           "name": "Diagnóstico · Terapéutica",
           "level": "macro",
           "color": "#5A4FCF",
-          "n": 191,
+          "n": 219,
           "children": [
             {
               "name": "Diagnostics & Devices",
               "level": "theme",
-              "n": 110,
+              "n": 122,
               "children": [
                 {
                   "name": "Point Care",
@@ -968,7 +968,7 @@ window.IQ_PHYLO_TREE = {
                   "name": "Diagnostics & Devices",
                   "level": "sub",
                   "_theme": "Diagnostics & Devices",
-                  "n": 15,
+                  "n": 27,
                   "children": [
                     {
                       "level": "startup",
@@ -982,6 +982,32 @@ window.IQ_PHYLO_TREE = {
                       "country": "AR",
                       "founded_year": 2018,
                       "is_bio_universe": 1
+                    },
+                    {
+                      "level": "startup",
+                      "id": "biowit-mx",
+                      "name": "BIOWIT",
+                      "bio_theme": "Diagnostics & Devices",
+                      "sub_cluster_label": "Diagnostics & Devices",
+                      "funding_stage": null,
+                      "quality_score": null,
+                      "tech_depth": null,
+                      "country": "MX",
+                      "founded_year": null,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "biometrics-medellin-co",
+                      "name": "BioMetrics Medellin",
+                      "bio_theme": "Diagnostics & Devices",
+                      "sub_cluster_label": "Diagnostics & Devices",
+                      "funding_stage": "series-a",
+                      "quality_score": 7.0,
+                      "tech_depth": "medium",
+                      "country": "CO",
+                      "founded_year": null,
+                      "is_bio_universe": null
                     },
                     {
                       "level": "startup",
@@ -1024,6 +1050,45 @@ window.IQ_PHYLO_TREE = {
                     },
                     {
                       "level": "startup",
+                      "id": "cepha-biotech-br",
+                      "name": "CEPHA Biotech",
+                      "bio_theme": "Diagnostics & Devices",
+                      "sub_cluster_label": "Diagnostics & Devices",
+                      "funding_stage": "growth",
+                      "quality_score": 7.5,
+                      "tech_depth": "medium",
+                      "country": "BR",
+                      "founded_year": 2016,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "caribbean-medtech-do",
+                      "name": "Caribbean MedTech",
+                      "bio_theme": "Diagnostics & Devices",
+                      "sub_cluster_label": "Diagnostics & Devices",
+                      "funding_stage": "series-a",
+                      "quality_score": 7.0,
+                      "tech_depth": "medium",
+                      "country": "DO",
+                      "founded_year": null,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "corpogen-co",
+                      "name": "CorpoGen",
+                      "bio_theme": "Diagnostics & Devices",
+                      "sub_cluster_label": "Diagnostics & Devices",
+                      "funding_stage": null,
+                      "quality_score": null,
+                      "tech_depth": null,
+                      "country": "CO",
+                      "founded_year": 1995,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
                       "id": "cryosmetics",
                       "name": "Cryosmetics",
                       "bio_theme": "Diagnostics & Devices",
@@ -1063,6 +1128,58 @@ window.IQ_PHYLO_TREE = {
                     },
                     {
                       "level": "startup",
+                      "id": "healthpoint-bo",
+                      "name": "HealthPoint",
+                      "bio_theme": "Diagnostics & Devices",
+                      "sub_cluster_label": "Diagnostics & Devices",
+                      "funding_stage": "series-a",
+                      "quality_score": 7.0,
+                      "tech_depth": "medium",
+                      "country": "BO",
+                      "founded_year": 2019,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "hem-healthtech-co",
+                      "name": "Hem Healthtech",
+                      "bio_theme": "Diagnostics & Devices",
+                      "sub_cluster_label": "Diagnostics & Devices",
+                      "funding_stage": "seed",
+                      "quality_score": 6.0,
+                      "tech_depth": "medium",
+                      "country": "CO",
+                      "founded_year": 2021,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "labtronics-sas-co",
+                      "name": "Labtronics SAS",
+                      "bio_theme": "Diagnostics & Devices",
+                      "sub_cluster_label": "Diagnostics & Devices",
+                      "funding_stage": "growth",
+                      "quality_score": 7.5,
+                      "tech_depth": "medium",
+                      "country": "CO",
+                      "founded_year": 1999,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "medimarket-online-ve",
+                      "name": "Medimarket Online",
+                      "bio_theme": "Diagnostics & Devices",
+                      "sub_cluster_label": "Diagnostics & Devices",
+                      "funding_stage": "series-a",
+                      "quality_score": 7.0,
+                      "tech_depth": "medium",
+                      "country": "VE",
+                      "founded_year": null,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
                       "id": "meton",
                       "name": "Meton",
                       "bio_theme": "Diagnostics & Devices",
@@ -1086,6 +1203,19 @@ window.IQ_PHYLO_TREE = {
                       "country": "CO",
                       "founded_year": 2020,
                       "is_bio_universe": 1
+                    },
+                    {
+                      "level": "startup",
+                      "id": "nanomedical-cr",
+                      "name": "Nanomedical",
+                      "bio_theme": "Diagnostics & Devices",
+                      "sub_cluster_label": "Diagnostics & Devices",
+                      "funding_stage": "series-a",
+                      "quality_score": 7.0,
+                      "tech_depth": "medium",
+                      "country": "CR",
+                      "founded_year": null,
+                      "is_bio_universe": null
                     },
                     {
                       "level": "startup",
@@ -1141,6 +1271,19 @@ window.IQ_PHYLO_TREE = {
                     },
                     {
                       "level": "startup",
+                      "id": "respiratorydx-co",
+                      "name": "RespiratoryDx",
+                      "bio_theme": "Diagnostics & Devices",
+                      "sub_cluster_label": "Diagnostics & Devices",
+                      "funding_stage": "series-a",
+                      "quality_score": 7.0,
+                      "tech_depth": "medium",
+                      "country": "CO",
+                      "founded_year": null,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
                       "id": "untech",
                       "name": "UnTech",
                       "bio_theme": "Diagnostics & Devices",
@@ -1151,6 +1294,19 @@ window.IQ_PHYLO_TREE = {
                       "country": "AR",
                       "founded_year": 2015,
                       "is_bio_universe": 1
+                    },
+                    {
+                      "level": "startup",
+                      "id": "welii-ar",
+                      "name": "Welii",
+                      "bio_theme": "Diagnostics & Devices",
+                      "sub_cluster_label": "Diagnostics & Devices",
+                      "funding_stage": null,
+                      "quality_score": null,
+                      "tech_depth": null,
+                      "country": "AR",
+                      "founded_year": 2017,
+                      "is_bio_universe": null
                     },
                     {
                       "level": "startup",
@@ -1511,7 +1667,7 @@ window.IQ_PHYLO_TREE = {
             {
               "name": "Therapeutics",
               "level": "theme",
-              "n": 81,
+              "n": 97,
               "children": [
                 {
                   "name": "Cell Rejuvenation",
@@ -2102,6 +2258,235 @@ window.IQ_PHYLO_TREE = {
                   ]
                 },
                 {
+                  "name": "Therapeutics",
+                  "level": "sub",
+                  "_theme": "Therapeutics",
+                  "n": 17,
+                  "children": [
+                    {
+                      "level": "startup",
+                      "id": "ascribe-bio-br",
+                      "name": "Ascribe Bio",
+                      "bio_theme": "Therapeutics",
+                      "sub_cluster_label": "Therapeutics",
+                      "funding_stage": null,
+                      "quality_score": null,
+                      "tech_depth": null,
+                      "country": "BR",
+                      "founded_year": 2017,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "biiosmart-co",
+                      "name": "BIIOSMART",
+                      "bio_theme": "Therapeutics",
+                      "sub_cluster_label": "Therapeutics",
+                      "funding_stage": null,
+                      "quality_score": null,
+                      "tech_depth": null,
+                      "country": "CO",
+                      "founded_year": null,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "biohack-uio-ec",
+                      "name": "BioHack UIO",
+                      "bio_theme": "Therapeutics",
+                      "sub_cluster_label": "Therapeutics",
+                      "funding_stage": "series-a",
+                      "quality_score": 7.0,
+                      "tech_depth": "medium",
+                      "country": "EC",
+                      "founded_year": 2020,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "bioproducts-co",
+                      "name": "BioProducts",
+                      "bio_theme": "Therapeutics",
+                      "sub_cluster_label": "Therapeutics",
+                      "funding_stage": null,
+                      "quality_score": null,
+                      "tech_depth": null,
+                      "country": "CO",
+                      "founded_year": null,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "biotech-cr",
+                      "name": "BioTech",
+                      "bio_theme": "Therapeutics",
+                      "sub_cluster_label": "Therapeutics",
+                      "funding_stage": "series-a",
+                      "quality_score": 7.0,
+                      "tech_depth": "medium",
+                      "country": "CR",
+                      "founded_year": null,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "biogenesis-bago-ec",
+                      "name": "Biogenesis Bago",
+                      "bio_theme": "Therapeutics",
+                      "sub_cluster_label": "Therapeutics",
+                      "funding_stage": "growth",
+                      "quality_score": 7.5,
+                      "tech_depth": "medium",
+                      "country": "EC",
+                      "founded_year": 2005,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "ecocycle-biotech-ec",
+                      "name": "Ecocycle Biotech",
+                      "bio_theme": "Therapeutics",
+                      "sub_cluster_label": "Therapeutics",
+                      "funding_stage": "seed",
+                      "quality_score": 6.0,
+                      "tech_depth": "medium",
+                      "country": "EC",
+                      "founded_year": 2021,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "forma-foods-mx",
+                      "name": "Forma Foods",
+                      "bio_theme": "Therapeutics",
+                      "sub_cluster_label": "Therapeutics",
+                      "funding_stage": null,
+                      "quality_score": null,
+                      "tech_depth": null,
+                      "country": "MX",
+                      "founded_year": null,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "global-nano-additives-mx",
+                      "name": "Global Nano Additives",
+                      "bio_theme": "Therapeutics",
+                      "sub_cluster_label": "Therapeutics",
+                      "funding_stage": null,
+                      "quality_score": null,
+                      "tech_depth": null,
+                      "country": "MX",
+                      "founded_year": null,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "innmetec-co",
+                      "name": "Innmetec",
+                      "bio_theme": "Therapeutics",
+                      "sub_cluster_label": "Therapeutics",
+                      "funding_stage": null,
+                      "quality_score": null,
+                      "tech_depth": null,
+                      "country": "CO",
+                      "founded_year": 2020,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "krtl-biotech-bolivia-expansion-bo",
+                      "name": "KRTL Biotech (Bolivia expansion)",
+                      "bio_theme": "Therapeutics",
+                      "sub_cluster_label": "Therapeutics",
+                      "funding_stage": "growth",
+                      "quality_score": 7.5,
+                      "tech_depth": "medium",
+                      "country": "BO",
+                      "founded_year": 2010,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "magenta-biolabs-cr",
+                      "name": "Magenta Biolabs",
+                      "bio_theme": "Therapeutics",
+                      "sub_cluster_label": "Therapeutics",
+                      "funding_stage": "series-a",
+                      "quality_score": 7.0,
+                      "tech_depth": "medium",
+                      "country": "CR",
+                      "founded_year": null,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "nanoprox",
+                      "name": "NanoproX",
+                      "bio_theme": "Therapeutics",
+                      "sub_cluster_label": "Therapeutics",
+                      "funding_stage": "pre-seed",
+                      "quality_score": 9.0,
+                      "tech_depth": "deep",
+                      "country": "AR",
+                      "founded_year": 2019,
+                      "is_bio_universe": 1
+                    },
+                    {
+                      "level": "startup",
+                      "id": "oncoprecision-ar",
+                      "name": "OncoPrecision",
+                      "bio_theme": "Therapeutics",
+                      "sub_cluster_label": "Therapeutics",
+                      "funding_stage": null,
+                      "quality_score": null,
+                      "tech_depth": null,
+                      "country": "AR",
+                      "founded_year": null,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "scintia-mx",
+                      "name": "Scintia",
+                      "bio_theme": "Therapeutics",
+                      "sub_cluster_label": "Therapeutics",
+                      "funding_stage": "series-a",
+                      "quality_score": 7.0,
+                      "tech_depth": "medium",
+                      "country": "MX",
+                      "founded_year": 2019,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "tissue-nova-mx",
+                      "name": "Tissue Nova",
+                      "bio_theme": "Therapeutics",
+                      "sub_cluster_label": "Therapeutics",
+                      "funding_stage": null,
+                      "quality_score": null,
+                      "tech_depth": null,
+                      "country": "MX",
+                      "founded_year": null,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "xeptiva-therapeutics-uy",
+                      "name": "Xeptiva Therapeutics",
+                      "bio_theme": "Therapeutics",
+                      "sub_cluster_label": "Therapeutics",
+                      "funding_stage": null,
+                      "quality_score": null,
+                      "tech_depth": null,
+                      "country": "UY",
+                      "founded_year": 2021,
+                      "is_bio_universe": null
+                    }
+                  ]
+                },
+                {
                   "name": "Small Molecule",
                   "level": "sub",
                   "_theme": "Therapeutics",
@@ -2624,27 +3009,6 @@ window.IQ_PHYLO_TREE = {
                       "is_bio_universe": 1
                     }
                   ]
-                },
-                {
-                  "name": "Therapeutics",
-                  "level": "sub",
-                  "_theme": "Therapeutics",
-                  "n": 1,
-                  "children": [
-                    {
-                      "level": "startup",
-                      "id": "nanoprox",
-                      "name": "NanoproX",
-                      "bio_theme": "Therapeutics",
-                      "sub_cluster_label": "Therapeutics",
-                      "funding_stage": "pre-seed",
-                      "quality_score": 9.0,
-                      "tech_depth": "deep",
-                      "country": "AR",
-                      "founded_year": 2019,
-                      "is_bio_universe": 1
-                    }
-                  ]
                 }
               ]
             }
@@ -2656,18 +3020,18 @@ window.IQ_PHYLO_TREE = {
       "name": "BioIndustria & Territorio",
       "level": "mega",
       "color": "#2E7D52",
-      "n": 293,
+      "n": 360,
       "children": [
         {
           "name": "Bioplatforma Industrial",
           "level": "macro",
           "color": "#8B6D14",
-          "n": 156,
+          "n": 184,
           "children": [
             {
               "name": "Food Systems & Alt Proteins",
               "level": "theme",
-              "n": 75,
+              "n": 96,
               "children": [
                 {
                   "name": "Cultivated Meat",
@@ -3440,67 +3804,218 @@ window.IQ_PHYLO_TREE = {
                   ]
                 },
                 {
-                  "name": "Food Systems & Alt Proteins",
+                  "name": "Animal Free",
                   "level": "sub",
                   "_theme": "Food Systems & Alt Proteins",
-                  "n": 7,
+                  "n": 15,
                   "children": [
                     {
                       "level": "startup",
-                      "id": "Bee Technology",
-                      "name": "Bee Technology",
+                      "id": "alecrim-biotech-br",
+                      "name": "Alecrim Biotech",
                       "bio_theme": "Food Systems & Alt Proteins",
-                      "sub_cluster_label": "Food Systems & Alt Proteins",
-                      "funding_stage": null,
-                      "quality_score": null,
-                      "tech_depth": null,
-                      "country": "CL",
-                      "founded_year": 2017,
-                      "is_bio_universe": 1
-                    },
-                    {
-                      "level": "startup",
-                      "id": "ecombio-cl",
-                      "name": "Ecombio",
-                      "bio_theme": "Food Systems & Alt Proteins",
-                      "sub_cluster_label": "Food Systems & Alt Proteins",
-                      "funding_stage": null,
-                      "quality_score": null,
-                      "tech_depth": null,
-                      "country": "CL",
-                      "founded_year": 2013,
-                      "is_bio_universe": 1
-                    },
-                    {
-                      "level": "startup",
-                      "id": "infood-protein-cl",
-                      "name": "Infood Protein",
-                      "bio_theme": "Food Systems & Alt Proteins",
-                      "sub_cluster_label": "Food Systems & Alt Proteins",
-                      "funding_stage": null,
-                      "quality_score": null,
-                      "tech_depth": null,
-                      "country": "CL",
+                      "sub_cluster_label": "Animal Free",
+                      "funding_stage": "series-a",
+                      "quality_score": 7.0,
+                      "tech_depth": "medium",
+                      "country": "BR",
                       "founded_year": 2018,
                       "is_bio_universe": 1
                     },
                     {
                       "level": "startup",
-                      "id": "koji-co",
-                      "name": "Koji",
+                      "id": "biofresh-br",
+                      "name": "BioFresh",
                       "bio_theme": "Food Systems & Alt Proteins",
-                      "sub_cluster_label": "Food Systems & Alt Proteins",
+                      "sub_cluster_label": "Animal Free",
                       "funding_stage": null,
                       "quality_score": null,
                       "tech_depth": null,
+                      "country": "BR",
+                      "founded_year": null,
+                      "is_bio_universe": 1
+                    },
+                    {
+                      "level": "startup",
+                      "id": "cellculture-br",
+                      "name": "CellCulture",
+                      "bio_theme": "Food Systems & Alt Proteins",
+                      "sub_cluster_label": "Animal Free",
+                      "funding_stage": null,
+                      "quality_score": null,
+                      "tech_depth": null,
+                      "country": "BR",
+                      "founded_year": null,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "cellmeat-brasil-br",
+                      "name": "Cellmeat Brasil",
+                      "bio_theme": "Food Systems & Alt Proteins",
+                      "sub_cluster_label": "Animal Free",
+                      "funding_stage": "seed",
+                      "quality_score": 6.0,
+                      "tech_depth": "medium",
+                      "country": "BR",
+                      "founded_year": 2021,
+                      "is_bio_universe": 1
+                    },
+                    {
+                      "level": "startup",
+                      "id": "cellva-ingredients-br",
+                      "name": "Cellva Ingredients",
+                      "bio_theme": "Food Systems & Alt Proteins",
+                      "sub_cluster_label": "Animal Free",
+                      "funding_stage": "series-a",
+                      "quality_score": 7.0,
+                      "tech_depth": "medium",
+                      "country": "BR",
+                      "founded_year": 2018,
+                      "is_bio_universe": 1
+                    },
+                    {
+                      "level": "startup",
+                      "id": "consiste-br",
+                      "name": "Consiste",
+                      "bio_theme": "Food Systems & Alt Proteins",
+                      "sub_cluster_label": "Animal Free",
+                      "funding_stage": "growth",
+                      "quality_score": 7.5,
+                      "tech_depth": "medium",
+                      "country": "BR",
+                      "founded_year": 2017,
+                      "is_bio_universe": 1
+                    },
+                    {
+                      "level": "startup",
+                      "id": "done_properly",
+                      "name": "Done Properly",
+                      "bio_theme": "Food Systems & Alt Proteins",
+                      "sub_cluster_label": "Animal Free",
+                      "funding_stage": "pre-seed",
+                      "quality_score": 9.5,
+                      "tech_depth": "deep",
+                      "country": "CL",
+                      "founded_year": 2019,
+                      "is_bio_universe": 1
+                    },
+                    {
+                      "level": "startup",
+                      "id": "eatcloud-co",
+                      "name": "EatCloud",
+                      "bio_theme": "Food Systems & Alt Proteins",
+                      "sub_cluster_label": "Animal Free",
+                      "funding_stage": "series-a",
+                      "quality_score": 7.0,
+                      "tech_depth": "medium",
+                      "country": "CO",
+                      "founded_year": 2019,
+                      "is_bio_universe": 0
+                    },
+                    {
+                      "level": "startup",
+                      "id": "fermentlab-br",
+                      "name": "FermentLab",
+                      "bio_theme": "Food Systems & Alt Proteins",
+                      "sub_cluster_label": "Animal Free",
+                      "funding_stage": null,
+                      "quality_score": null,
+                      "tech_depth": null,
+                      "country": "BR",
+                      "founded_year": null,
+                      "is_bio_universe": 1
+                    },
+                    {
+                      "level": "startup",
+                      "id": "fermentlabs-co",
+                      "name": "FermentLabs",
+                      "bio_theme": "Food Systems & Alt Proteins",
+                      "sub_cluster_label": "Animal Free",
+                      "funding_stage": "series-a",
+                      "quality_score": 7.0,
+                      "tech_depth": "medium",
                       "country": "CO",
                       "founded_year": null,
                       "is_bio_universe": 1
                     },
                     {
                       "level": "startup",
-                      "id": "mycoseaweed-cl",
-                      "name": "MycoSeaweed",
+                      "id": "future_cow",
+                      "name": "Future Cow",
+                      "bio_theme": "Food Systems & Alt Proteins",
+                      "sub_cluster_label": "Animal Free",
+                      "funding_stage": "seed",
+                      "quality_score": 9.5,
+                      "tech_depth": "deep",
+                      "country": "BR",
+                      "founded_year": 2020,
+                      "is_bio_universe": 1
+                    },
+                    {
+                      "level": "startup",
+                      "id": "myvac-bioproducts-br",
+                      "name": "Myvac Bioproducts",
+                      "bio_theme": "Food Systems & Alt Proteins",
+                      "sub_cluster_label": "Animal Free",
+                      "funding_stage": "growth",
+                      "quality_score": 7.5,
+                      "tech_depth": "medium",
+                      "country": "BR",
+                      "founded_year": 2016,
+                      "is_bio_universe": 1
+                    },
+                    {
+                      "level": "startup",
+                      "id": "nutrissis-biotech-br",
+                      "name": "Nutrissis Biotech",
+                      "bio_theme": "Food Systems & Alt Proteins",
+                      "sub_cluster_label": "Animal Free",
+                      "funding_stage": "series-a",
+                      "quality_score": 7.0,
+                      "tech_depth": "medium",
+                      "country": "BR",
+                      "founded_year": 2019,
+                      "is_bio_universe": 1
+                    },
+                    {
+                      "level": "startup",
+                      "id": "protera-bio-cl",
+                      "name": "Protera Bio",
+                      "bio_theme": "Food Systems & Alt Proteins",
+                      "sub_cluster_label": "Animal Free",
+                      "funding_stage": null,
+                      "quality_score": null,
+                      "tech_depth": null,
+                      "country": "CL",
+                      "founded_year": 2015,
+                      "is_bio_universe": 1
+                    },
+                    {
+                      "level": "startup",
+                      "id": "updairy",
+                      "name": "Updairy",
+                      "bio_theme": "Food Systems & Alt Proteins",
+                      "sub_cluster_label": "Animal Free",
+                      "funding_stage": "pre-seed",
+                      "quality_score": 9.5,
+                      "tech_depth": "deep",
+                      "country": "BR",
+                      "founded_year": 2022,
+                      "is_bio_universe": 1
+                    }
+                  ]
+                },
+                {
+                  "name": "Food Systems & Alt Proteins",
+                  "level": "sub",
+                  "_theme": "Food Systems & Alt Proteins",
+                  "n": 9,
+                  "children": [
+                    {
+                      "level": "startup",
+                      "id": "aquabio-cl",
+                      "name": "AquaBio",
                       "bio_theme": "Food Systems & Alt Proteins",
                       "sub_cluster_label": "Food Systems & Alt Proteins",
                       "funding_stage": null,
@@ -3508,25 +4023,38 @@ window.IQ_PHYLO_TREE = {
                       "tech_depth": null,
                       "country": "CL",
                       "founded_year": null,
-                      "is_bio_universe": 1
+                      "is_bio_universe": null
                     },
                     {
                       "level": "startup",
-                      "id": "tomorrow-foods-ar",
-                      "name": "Tomorrow Foods",
+                      "id": "biolife-innovations-bo",
+                      "name": "BioLife Innovations",
+                      "bio_theme": "Food Systems & Alt Proteins",
+                      "sub_cluster_label": "Food Systems & Alt Proteins",
+                      "funding_stage": "series-a",
+                      "quality_score": 7.0,
+                      "tech_depth": "medium",
+                      "country": "BO",
+                      "founded_year": 2018,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "biomar-cr",
+                      "name": "BioMar",
                       "bio_theme": "Food Systems & Alt Proteins",
                       "sub_cluster_label": "Food Systems & Alt Proteins",
                       "funding_stage": null,
                       "quality_score": null,
                       "tech_depth": null,
-                      "country": "AR",
+                      "country": "CR",
                       "founded_year": null,
-                      "is_bio_universe": 1
+                      "is_bio_universe": null
                     },
                     {
                       "level": "startup",
-                      "id": "viobact-cl",
-                      "name": "VioBact",
+                      "id": "devalor-cl",
+                      "name": "DeValor",
                       "bio_theme": "Food Systems & Alt Proteins",
                       "sub_cluster_label": "Food Systems & Alt Proteins",
                       "funding_stage": null,
@@ -3534,7 +4062,72 @@ window.IQ_PHYLO_TREE = {
                       "tech_depth": null,
                       "country": "CL",
                       "founded_year": null,
-                      "is_bio_universe": 1
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "plantverd-mx",
+                      "name": "PlantVerd",
+                      "bio_theme": "Food Systems & Alt Proteins",
+                      "sub_cluster_label": "Food Systems & Alt Proteins",
+                      "funding_stage": "series-a",
+                      "quality_score": 7.0,
+                      "tech_depth": "medium",
+                      "country": "MX",
+                      "founded_year": 2020,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "recirculab-cl",
+                      "name": "ReCircuLab",
+                      "bio_theme": "Food Systems & Alt Proteins",
+                      "sub_cluster_label": "Food Systems & Alt Proteins",
+                      "funding_stage": null,
+                      "quality_score": null,
+                      "tech_depth": null,
+                      "country": "CL",
+                      "founded_year": null,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "recombine-biotech-br",
+                      "name": "Recombine Biotech",
+                      "bio_theme": "Food Systems & Alt Proteins",
+                      "sub_cluster_label": "Food Systems & Alt Proteins",
+                      "funding_stage": "series-a",
+                      "quality_score": 7.0,
+                      "tech_depth": "medium",
+                      "country": "BR",
+                      "founded_year": 2019,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "salmoss-biotech-cl",
+                      "name": "SALMOSS Biotech",
+                      "bio_theme": "Food Systems & Alt Proteins",
+                      "sub_cluster_label": "Food Systems & Alt Proteins",
+                      "funding_stage": null,
+                      "quality_score": null,
+                      "tech_depth": null,
+                      "country": "CL",
+                      "founded_year": null,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "tierra-de-monte-mx",
+                      "name": "Tierra de Monte",
+                      "bio_theme": "Food Systems & Alt Proteins",
+                      "sub_cluster_label": "Food Systems & Alt Proteins",
+                      "funding_stage": "seed",
+                      "quality_score": 6.0,
+                      "tech_depth": "medium",
+                      "country": "MX",
+                      "founded_year": 2021,
+                      "is_bio_universe": null
                     }
                   ]
                 },
@@ -3625,48 +4218,61 @@ window.IQ_PHYLO_TREE = {
                   ]
                 },
                 {
-                  "name": "Animal Free",
+                  "name": "Microbiological Proteins",
                   "level": "sub",
                   "_theme": "Food Systems & Alt Proteins",
-                  "n": 3,
+                  "n": 4,
                   "children": [
                     {
                       "level": "startup",
-                      "id": "done_properly",
-                      "name": "Done Properly",
+                      "id": "Bee Technology",
+                      "name": "Bee Technology",
                       "bio_theme": "Food Systems & Alt Proteins",
-                      "sub_cluster_label": "Animal Free",
-                      "funding_stage": "pre-seed",
-                      "quality_score": 9.5,
-                      "tech_depth": "deep",
+                      "sub_cluster_label": "Microbiological Proteins",
+                      "funding_stage": null,
+                      "quality_score": null,
+                      "tech_depth": null,
                       "country": "CL",
-                      "founded_year": 2019,
+                      "founded_year": 2017,
                       "is_bio_universe": 1
                     },
                     {
                       "level": "startup",
-                      "id": "future_cow",
-                      "name": "Future Cow",
+                      "id": "ecombio-cl",
+                      "name": "Ecombio",
                       "bio_theme": "Food Systems & Alt Proteins",
-                      "sub_cluster_label": "Animal Free",
-                      "funding_stage": "seed",
-                      "quality_score": 9.5,
-                      "tech_depth": "deep",
-                      "country": "BR",
-                      "founded_year": 2020,
+                      "sub_cluster_label": "Microbiological Proteins",
+                      "funding_stage": null,
+                      "quality_score": null,
+                      "tech_depth": null,
+                      "country": "CL",
+                      "founded_year": 2013,
                       "is_bio_universe": 1
                     },
                     {
                       "level": "startup",
-                      "id": "updairy",
-                      "name": "Updairy",
+                      "id": "mycoseaweed-cl",
+                      "name": "MycoSeaweed",
                       "bio_theme": "Food Systems & Alt Proteins",
-                      "sub_cluster_label": "Animal Free",
-                      "funding_stage": "pre-seed",
-                      "quality_score": 9.5,
-                      "tech_depth": "deep",
-                      "country": "BR",
-                      "founded_year": 2022,
+                      "sub_cluster_label": "Microbiological Proteins",
+                      "funding_stage": null,
+                      "quality_score": null,
+                      "tech_depth": null,
+                      "country": "CL",
+                      "founded_year": null,
+                      "is_bio_universe": 1
+                    },
+                    {
+                      "level": "startup",
+                      "id": "viobact-cl",
+                      "name": "VioBact",
+                      "bio_theme": "Food Systems & Alt Proteins",
+                      "sub_cluster_label": "Microbiological Proteins",
+                      "funding_stage": null,
+                      "quality_score": null,
+                      "tech_depth": null,
+                      "country": "CL",
+                      "founded_year": null,
                       "is_bio_universe": 1
                     }
                   ]
@@ -3691,13 +4297,76 @@ window.IQ_PHYLO_TREE = {
                       "is_bio_universe": 1
                     }
                   ]
+                },
+                {
+                  "name": "Alternative Proteins",
+                  "level": "sub",
+                  "_theme": "Food Systems & Alt Proteins",
+                  "n": 1,
+                  "children": [
+                    {
+                      "level": "startup",
+                      "id": "infood-protein-cl",
+                      "name": "Infood Protein",
+                      "bio_theme": "Food Systems & Alt Proteins",
+                      "sub_cluster_label": "Alternative Proteins",
+                      "funding_stage": null,
+                      "quality_score": null,
+                      "tech_depth": null,
+                      "country": "CL",
+                      "founded_year": 2018,
+                      "is_bio_universe": 1
+                    }
+                  ]
+                },
+                {
+                  "name": "Fermentation & Bioprocessing",
+                  "level": "sub",
+                  "_theme": "Food Systems & Alt Proteins",
+                  "n": 1,
+                  "children": [
+                    {
+                      "level": "startup",
+                      "id": "koji-co",
+                      "name": "Koji",
+                      "bio_theme": "Food Systems & Alt Proteins",
+                      "sub_cluster_label": "Fermentation & Bioprocessing",
+                      "funding_stage": null,
+                      "quality_score": null,
+                      "tech_depth": null,
+                      "country": "CO",
+                      "founded_year": null,
+                      "is_bio_universe": 1
+                    }
+                  ]
+                },
+                {
+                  "name": "Novel Ingredients",
+                  "level": "sub",
+                  "_theme": "Food Systems & Alt Proteins",
+                  "n": 1,
+                  "children": [
+                    {
+                      "level": "startup",
+                      "id": "tomorrow-foods-ar",
+                      "name": "Tomorrow Foods",
+                      "bio_theme": "Food Systems & Alt Proteins",
+                      "sub_cluster_label": "Novel Ingredients",
+                      "funding_stage": null,
+                      "quality_score": null,
+                      "tech_depth": null,
+                      "country": "AR",
+                      "founded_year": null,
+                      "is_bio_universe": 1
+                    }
+                  ]
                 }
               ]
             },
             {
               "name": "Biomaterials & Green Chemistry",
               "level": "theme",
-              "n": 54,
+              "n": 58,
               "children": [
                 {
                   "name": "Agro Industrial",
@@ -4239,7 +4908,7 @@ window.IQ_PHYLO_TREE = {
                   "name": "Biomaterials & Green Chemistry",
                   "level": "sub",
                   "_theme": "Biomaterials & Green Chemistry",
-                  "n": 10,
+                  "n": 14,
                   "children": [
                     {
                       "level": "startup",
@@ -4253,6 +4922,45 @@ window.IQ_PHYLO_TREE = {
                       "country": "CL",
                       "founded_year": 2018,
                       "is_bio_universe": 1
+                    },
+                    {
+                      "level": "startup",
+                      "id": "biocell-mx",
+                      "name": "BioCell",
+                      "bio_theme": "Biomaterials & Green Chemistry",
+                      "sub_cluster_label": "Biomaterials & Green Chemistry",
+                      "funding_stage": null,
+                      "quality_score": null,
+                      "tech_depth": null,
+                      "country": "MX",
+                      "founded_year": null,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "bioplast-br",
+                      "name": "BioPlast",
+                      "bio_theme": "Biomaterials & Green Chemistry",
+                      "sub_cluster_label": "Biomaterials & Green Chemistry",
+                      "funding_stage": null,
+                      "quality_score": null,
+                      "tech_depth": null,
+                      "country": "BR",
+                      "founded_year": null,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "biorefinery-tech-brazil-br",
+                      "name": "Biorefinery Tech Brazil",
+                      "bio_theme": "Biomaterials & Green Chemistry",
+                      "sub_cluster_label": "Biomaterials & Green Chemistry",
+                      "funding_stage": "growth",
+                      "quality_score": 7.5,
+                      "tech_depth": "medium",
+                      "country": "BR",
+                      "founded_year": 2017,
+                      "is_bio_universe": null
                     },
                     {
                       "level": "startup",
@@ -4292,6 +5000,19 @@ window.IQ_PHYLO_TREE = {
                       "country": "CL",
                       "founded_year": 2014,
                       "is_bio_universe": 1
+                    },
+                    {
+                      "level": "startup",
+                      "id": "lifepack-co",
+                      "name": "Lifepack",
+                      "bio_theme": "Biomaterials & Green Chemistry",
+                      "sub_cluster_label": "Biomaterials & Green Chemistry",
+                      "funding_stage": "series-a",
+                      "quality_score": 7.0,
+                      "tech_depth": "medium",
+                      "country": "CO",
+                      "founded_year": 2020,
+                      "is_bio_universe": null
                     },
                     {
                       "level": "startup",
@@ -4454,13 +5175,13 @@ window.IQ_PHYLO_TREE = {
             {
               "name": "Biomanufacturing & Platform Technologies",
               "level": "theme",
-              "n": 27,
+              "n": 30,
               "children": [
                 {
                   "name": "Biomanufacturing & Platform Technologies",
                   "level": "sub",
                   "_theme": "Biomanufacturing & Platform Technologies",
-                  "n": 21,
+                  "n": 24,
                   "children": [
                     {
                       "level": "startup",
@@ -4473,6 +5194,45 @@ window.IQ_PHYLO_TREE = {
                       "tech_depth": "deep",
                       "country": "BR",
                       "founded_year": 2019,
+                      "is_bio_universe": 1
+                    },
+                    {
+                      "level": "startup",
+                      "id": "biofactory-br",
+                      "name": "BioFactory",
+                      "bio_theme": "Biomanufacturing & Platform Technologies",
+                      "sub_cluster_label": "Biomanufacturing & Platform Technologies",
+                      "funding_stage": null,
+                      "quality_score": null,
+                      "tech_depth": null,
+                      "country": "BR",
+                      "founded_year": null,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "bioprocess-automation-brasil-br",
+                      "name": "BioProcess Automation Brasil",
+                      "bio_theme": "Biomanufacturing & Platform Technologies",
+                      "sub_cluster_label": "Biomanufacturing & Platform Technologies",
+                      "funding_stage": "series-a",
+                      "quality_score": 7.0,
+                      "tech_depth": "medium",
+                      "country": "BR",
+                      "founded_year": 2018,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "biolinker-br",
+                      "name": "Biolinker",
+                      "bio_theme": "Biomanufacturing & Platform Technologies",
+                      "sub_cluster_label": "Biomanufacturing & Platform Technologies",
+                      "funding_stage": "series-a",
+                      "quality_score": 7.0,
+                      "tech_depth": "medium",
+                      "country": "BR",
+                      "founded_year": 2018,
                       "is_bio_universe": 1
                     },
                     {
@@ -4847,13 +5607,255 @@ window.IQ_PHYLO_TREE = {
           "name": "Agroecosistemas",
           "level": "macro",
           "color": "#2A7A42",
-          "n": 98,
+          "n": 113,
           "children": [
             {
               "name": "Bioinputs & Crop Resilience",
               "level": "theme",
-              "n": 64,
+              "n": 79,
               "children": [
+                {
+                  "name": "Bioinputs & Crop Resilience",
+                  "level": "sub",
+                  "_theme": "Bioinputs & Crop Resilience",
+                  "n": 18,
+                  "children": [
+                    {
+                      "level": "startup",
+                      "id": "agrigenetic-ecuador-ec",
+                      "name": "Agrigenetic Ecuador",
+                      "bio_theme": "Bioinputs & Crop Resilience",
+                      "sub_cluster_label": "Bioinputs & Crop Resilience",
+                      "funding_stage": "series-a",
+                      "quality_score": 7.0,
+                      "tech_depth": "medium",
+                      "country": "EC",
+                      "founded_year": 2019,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "ayni-desert-interaction-cl",
+                      "name": "Ayni Desert Interaction",
+                      "bio_theme": "Bioinputs & Crop Resilience",
+                      "sub_cluster_label": "Bioinputs & Crop Resilience",
+                      "funding_stage": null,
+                      "quality_score": null,
+                      "tech_depth": null,
+                      "country": "CL",
+                      "founded_year": null,
+                      "is_bio_universe": 1
+                    },
+                    {
+                      "level": "startup",
+                      "id": "biodiverso-insumos-br",
+                      "name": "BioDiverso Insumos",
+                      "bio_theme": "Bioinputs & Crop Resilience",
+                      "sub_cluster_label": "Bioinputs & Crop Resilience",
+                      "funding_stage": "growth",
+                      "quality_score": 7.5,
+                      "tech_depth": "medium",
+                      "country": "BR",
+                      "founded_year": 2016,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "bioceres-ar",
+                      "name": "Bioceres",
+                      "bio_theme": "Bioinputs & Crop Resilience",
+                      "sub_cluster_label": "Bioinputs & Crop Resilience",
+                      "funding_stage": null,
+                      "quality_score": null,
+                      "tech_depth": null,
+                      "country": "AR",
+                      "founded_year": 2001,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "bioram-mx",
+                      "name": "Bioram",
+                      "bio_theme": "Bioinputs & Crop Resilience",
+                      "sub_cluster_label": "Bioinputs & Crop Resilience",
+                      "funding_stage": "series-a",
+                      "quality_score": 7.0,
+                      "tech_depth": "medium",
+                      "country": "MX",
+                      "founded_year": 2018,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "botanical-solutions",
+                      "name": "Botanical Solutions",
+                      "bio_theme": "Bioinputs & Crop Resilience",
+                      "sub_cluster_label": "Bioinputs & Crop Resilience",
+                      "funding_stage": "series-a",
+                      "quality_score": 8.0,
+                      "tech_depth": "deep",
+                      "country": "CL",
+                      "founded_year": 2013,
+                      "is_bio_universe": 1
+                    },
+                    {
+                      "level": "startup",
+                      "id": "cropguard-cl",
+                      "name": "CropGuard",
+                      "bio_theme": "Bioinputs & Crop Resilience",
+                      "sub_cluster_label": "Bioinputs & Crop Resilience",
+                      "funding_stage": null,
+                      "quality_score": null,
+                      "tech_depth": null,
+                      "country": "CL",
+                      "founded_year": null,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "energytop-via-proinpa-bo",
+                      "name": "Energytop (via Proinpa)",
+                      "bio_theme": "Bioinputs & Crop Resilience",
+                      "sub_cluster_label": "Bioinputs & Crop Resilience",
+                      "funding_stage": "growth",
+                      "quality_score": 7.5,
+                      "tech_depth": "medium",
+                      "country": "BO",
+                      "founded_year": 2012,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "fungicontrol-co",
+                      "name": "FungiControl",
+                      "bio_theme": "Bioinputs & Crop Resilience",
+                      "sub_cluster_label": "Bioinputs & Crop Resilience",
+                      "funding_stage": null,
+                      "quality_score": null,
+                      "tech_depth": null,
+                      "country": "CO",
+                      "founded_year": null,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "grupo-bios-co",
+                      "name": "Grupo Bios",
+                      "bio_theme": "Bioinputs & Crop Resilience",
+                      "sub_cluster_label": "Bioinputs & Crop Resilience",
+                      "funding_stage": null,
+                      "quality_score": null,
+                      "tech_depth": null,
+                      "country": "CO",
+                      "founded_year": null,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "metabix-uy",
+                      "name": "Metabix",
+                      "bio_theme": "Bioinputs & Crop Resilience",
+                      "sub_cluster_label": "Bioinputs & Crop Resilience",
+                      "funding_stage": null,
+                      "quality_score": null,
+                      "tech_depth": null,
+                      "country": "UY",
+                      "founded_year": 2022,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "microbiota-agricola-br",
+                      "name": "Microbiota Agricola",
+                      "bio_theme": "Bioinputs & Crop Resilience",
+                      "sub_cluster_label": "Bioinputs & Crop Resilience",
+                      "funding_stage": "growth",
+                      "quality_score": 7.5,
+                      "tech_depth": "medium",
+                      "country": "BR",
+                      "founded_year": 2014,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "microlabs-mx",
+                      "name": "Microlabs",
+                      "bio_theme": "Bioinputs & Crop Resilience",
+                      "sub_cluster_label": "Bioinputs & Crop Resilience",
+                      "funding_stage": "growth",
+                      "quality_score": 7.5,
+                      "tech_depth": "medium",
+                      "country": "MX",
+                      "founded_year": 2016,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "nemacontrol-biologicos-br",
+                      "name": "NemaControl Biologicos",
+                      "bio_theme": "Bioinputs & Crop Resilience",
+                      "sub_cluster_label": "Bioinputs & Crop Resilience",
+                      "funding_stage": "growth",
+                      "quality_score": 7.5,
+                      "tech_depth": "medium",
+                      "country": "BR",
+                      "founded_year": 2012,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "neocroptech-cl",
+                      "name": "NeoCropTech",
+                      "bio_theme": "Bioinputs & Crop Resilience",
+                      "sub_cluster_label": "Bioinputs & Crop Resilience",
+                      "funding_stage": null,
+                      "quality_score": null,
+                      "tech_depth": null,
+                      "country": "CL",
+                      "founded_year": 2015,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "pewman-innovation-cl",
+                      "name": "Pewman Innovation",
+                      "bio_theme": "Bioinputs & Crop Resilience",
+                      "sub_cluster_label": "Bioinputs & Crop Resilience",
+                      "funding_stage": null,
+                      "quality_score": null,
+                      "tech_depth": null,
+                      "country": "CL",
+                      "founded_year": 2019,
+                      "is_bio_universe": 1
+                    },
+                    {
+                      "level": "startup",
+                      "id": "seedtech-cl",
+                      "name": "SeedTech",
+                      "bio_theme": "Bioinputs & Crop Resilience",
+                      "sub_cluster_label": "Bioinputs & Crop Resilience",
+                      "funding_stage": null,
+                      "quality_score": null,
+                      "tech_depth": null,
+                      "country": "CL",
+                      "founded_year": null,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "terrasos-br",
+                      "name": "Terrasos",
+                      "bio_theme": "Bioinputs & Crop Resilience",
+                      "sub_cluster_label": "Bioinputs & Crop Resilience",
+                      "funding_stage": null,
+                      "quality_score": null,
+                      "tech_depth": null,
+                      "country": "BR",
+                      "founded_year": null,
+                      "is_bio_universe": null
+                    }
+                  ]
+                },
                 {
                   "name": "Gene Editing",
                   "level": "sub",
@@ -5662,53 +6664,6 @@ window.IQ_PHYLO_TREE = {
                   ]
                 },
                 {
-                  "name": "Bioinputs & Crop Resilience",
-                  "level": "sub",
-                  "_theme": "Bioinputs & Crop Resilience",
-                  "n": 3,
-                  "children": [
-                    {
-                      "level": "startup",
-                      "id": "ayni-desert-interaction-cl",
-                      "name": "Ayni Desert Interaction",
-                      "bio_theme": "Bioinputs & Crop Resilience",
-                      "sub_cluster_label": "Bioinputs & Crop Resilience",
-                      "funding_stage": null,
-                      "quality_score": null,
-                      "tech_depth": null,
-                      "country": "CL",
-                      "founded_year": null,
-                      "is_bio_universe": 1
-                    },
-                    {
-                      "level": "startup",
-                      "id": "botanical-solutions",
-                      "name": "Botanical Solutions",
-                      "bio_theme": "Bioinputs & Crop Resilience",
-                      "sub_cluster_label": "Bioinputs & Crop Resilience",
-                      "funding_stage": "series-a",
-                      "quality_score": 8.0,
-                      "tech_depth": "deep",
-                      "country": "CL",
-                      "founded_year": 2013,
-                      "is_bio_universe": 1
-                    },
-                    {
-                      "level": "startup",
-                      "id": "pewman-innovation-cl",
-                      "name": "Pewman Innovation",
-                      "bio_theme": "Bioinputs & Crop Resilience",
-                      "sub_cluster_label": "Bioinputs & Crop Resilience",
-                      "funding_stage": null,
-                      "quality_score": null,
-                      "tech_depth": null,
-                      "country": "CL",
-                      "founded_year": 2019,
-                      "is_bio_universe": 1
-                    }
-                  ]
-                },
-                {
                   "name": "Shelf Life",
                   "level": "sub",
                   "_theme": "Bioinputs & Crop Resilience",
@@ -6223,12 +7178,12 @@ window.IQ_PHYLO_TREE = {
           "name": "Inteligencia de Campo",
           "level": "macro",
           "color": "#2E4E8C",
-          "n": 39,
+          "n": 63,
           "children": [
             {
               "name": "Precision Agriculture",
               "level": "theme",
-              "n": 39,
+              "n": 63,
               "children": [
                 {
                   "name": "Crop Monitoring",
@@ -6723,8 +7678,138 @@ window.IQ_PHYLO_TREE = {
                   "name": "Precision Agriculture",
                   "level": "sub",
                   "_theme": "Precision Agriculture",
-                  "n": 2,
+                  "n": 26,
                   "children": [
+                    {
+                      "level": "startup",
+                      "id": "agritech-bolivia-bo",
+                      "name": "AgriTech Bolivia",
+                      "bio_theme": "Precision Agriculture",
+                      "sub_cluster_label": "Precision Agriculture",
+                      "funding_stage": "series-a",
+                      "quality_score": 7.0,
+                      "tech_depth": "medium",
+                      "country": "BO",
+                      "founded_year": 2018,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "agricultic-do",
+                      "name": "Agricultic",
+                      "bio_theme": "Precision Agriculture",
+                      "sub_cluster_label": "Precision Agriculture",
+                      "funding_stage": "series-a",
+                      "quality_score": 7.0,
+                      "tech_depth": "medium",
+                      "country": "DO",
+                      "founded_year": null,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "agro-logica-co",
+                      "name": "Agro-Logica",
+                      "bio_theme": "Precision Agriculture",
+                      "sub_cluster_label": "Precision Agriculture",
+                      "funding_stage": null,
+                      "quality_score": null,
+                      "tech_depth": null,
+                      "country": "CO",
+                      "founded_year": null,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "agro360-do",
+                      "name": "Agro360",
+                      "bio_theme": "Precision Agriculture",
+                      "sub_cluster_label": "Precision Agriculture",
+                      "funding_stage": "series-a",
+                      "quality_score": 7.0,
+                      "tech_depth": "medium",
+                      "country": "DO",
+                      "founded_year": null,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "agrobit-bolivia-operations-bo",
+                      "name": "Agrobit (Bolivia operations)",
+                      "bio_theme": "Precision Agriculture",
+                      "sub_cluster_label": "Precision Agriculture",
+                      "funding_stage": "growth",
+                      "quality_score": 7.5,
+                      "tech_depth": "medium",
+                      "country": "BO",
+                      "founded_year": 2015,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "agrocontrol-gt",
+                      "name": "Agrocontrol",
+                      "bio_theme": "Precision Agriculture",
+                      "sub_cluster_label": "Precision Agriculture",
+                      "funding_stage": "series-a",
+                      "quality_score": 7.0,
+                      "tech_depth": "medium",
+                      "country": "GT",
+                      "founded_year": null,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "agroguia-ve",
+                      "name": "Agroguía",
+                      "bio_theme": "Precision Agriculture",
+                      "sub_cluster_label": "Precision Agriculture",
+                      "funding_stage": "series-a",
+                      "quality_score": 7.0,
+                      "tech_depth": "medium",
+                      "country": "VE",
+                      "founded_year": null,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "agroscan-ec",
+                      "name": "Agroscan",
+                      "bio_theme": "Precision Agriculture",
+                      "sub_cluster_label": "Precision Agriculture",
+                      "funding_stage": "seed",
+                      "quality_score": 6.0,
+                      "tech_depth": "medium",
+                      "country": "EC",
+                      "founded_year": 2021,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "aquabyte-cl",
+                      "name": "Aquabyte",
+                      "bio_theme": "Precision Agriculture",
+                      "sub_cluster_label": "Precision Agriculture",
+                      "funding_stage": null,
+                      "quality_score": null,
+                      "tech_depth": null,
+                      "country": "CL",
+                      "founded_year": 2017,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "bontix-do",
+                      "name": "Bontix",
+                      "bio_theme": "Precision Agriculture",
+                      "sub_cluster_label": "Precision Agriculture",
+                      "funding_stage": "series-a",
+                      "quality_score": 7.0,
+                      "tech_depth": "medium",
+                      "country": "DO",
+                      "founded_year": null,
+                      "is_bio_universe": null
+                    },
                     {
                       "level": "startup",
                       "id": "codebreaker-bioscience-cl",
@@ -6740,6 +7825,71 @@ window.IQ_PHYLO_TREE = {
                     },
                     {
                       "level": "startup",
+                      "id": "digital-twin-corporation-cr",
+                      "name": "Digital Twin Corporation",
+                      "bio_theme": "Precision Agriculture",
+                      "sub_cluster_label": "Precision Agriculture",
+                      "funding_stage": "series-a",
+                      "quality_score": 7.0,
+                      "tech_depth": "medium",
+                      "country": "CR",
+                      "founded_year": null,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "dimitra-bolivia-operations-bo",
+                      "name": "Dimitra (Bolivia operations)",
+                      "bio_theme": "Precision Agriculture",
+                      "sub_cluster_label": "Precision Agriculture",
+                      "funding_stage": "growth",
+                      "quality_score": 7.5,
+                      "tech_depth": "medium",
+                      "country": "BO",
+                      "founded_year": 2013,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "fieldfactors-mx",
+                      "name": "FieldFactors",
+                      "bio_theme": "Precision Agriculture",
+                      "sub_cluster_label": "Precision Agriculture",
+                      "funding_stage": "growth",
+                      "quality_score": 7.5,
+                      "tech_depth": "medium",
+                      "country": "MX",
+                      "founded_year": 2017,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "geanext-cr",
+                      "name": "GeaNext",
+                      "bio_theme": "Precision Agriculture",
+                      "sub_cluster_label": "Precision Agriculture",
+                      "funding_stage": "series-a",
+                      "quality_score": 7.0,
+                      "tech_depth": "medium",
+                      "country": "CR",
+                      "founded_year": null,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "green-xpo-lab-cr",
+                      "name": "Green Xpo Lab",
+                      "bio_theme": "Precision Agriculture",
+                      "sub_cluster_label": "Precision Agriculture",
+                      "funding_stage": null,
+                      "quality_score": null,
+                      "tech_depth": null,
+                      "country": "CR",
+                      "founded_year": 2021,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
                       "id": "inkus-biotech-cl",
                       "name": "Inkus Biotech",
                       "bio_theme": "Precision Agriculture",
@@ -6750,6 +7900,123 @@ window.IQ_PHYLO_TREE = {
                       "country": "CL",
                       "founded_year": null,
                       "is_bio_universe": 1
+                    },
+                    {
+                      "level": "startup",
+                      "id": "innovatech-bo",
+                      "name": "Innovatech",
+                      "bio_theme": "Precision Agriculture",
+                      "sub_cluster_label": "Precision Agriculture",
+                      "funding_stage": "series-a",
+                      "quality_score": 7.0,
+                      "tech_depth": "medium",
+                      "country": "BO",
+                      "founded_year": 2018,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "lilliput-technologies-cr",
+                      "name": "Lilliput Technologies",
+                      "bio_theme": "Precision Agriculture",
+                      "sub_cluster_label": "Precision Agriculture",
+                      "funding_stage": "series-a",
+                      "quality_score": 7.0,
+                      "tech_depth": "medium",
+                      "country": "CR",
+                      "founded_year": null,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "lilliput-technologies-ltd-cr",
+                      "name": "Lilliput Technologies Ltd.",
+                      "bio_theme": "Precision Agriculture",
+                      "sub_cluster_label": "Precision Agriculture",
+                      "funding_stage": "series-a",
+                      "quality_score": 7.0,
+                      "tech_depth": "medium",
+                      "country": "CR",
+                      "founded_year": null,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "magic-green-cr",
+                      "name": "Magic Green",
+                      "bio_theme": "Precision Agriculture",
+                      "sub_cluster_label": "Precision Agriculture",
+                      "funding_stage": "series-a",
+                      "quality_score": 7.0,
+                      "tech_depth": "medium",
+                      "country": "CR",
+                      "founded_year": null,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "minerba-ec",
+                      "name": "MinerBA",
+                      "bio_theme": "Precision Agriculture",
+                      "sub_cluster_label": "Precision Agriculture",
+                      "funding_stage": "seed",
+                      "quality_score": 6.0,
+                      "tech_depth": "medium",
+                      "country": "EC",
+                      "founded_year": 2021,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "quipu-cr",
+                      "name": "Quipu",
+                      "bio_theme": "Precision Agriculture",
+                      "sub_cluster_label": "Precision Agriculture",
+                      "funding_stage": "series-a",
+                      "quality_score": 7.0,
+                      "tech_depth": "medium",
+                      "country": "CR",
+                      "founded_year": null,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "silicochem-ec",
+                      "name": "SilicoChem",
+                      "bio_theme": "Precision Agriculture",
+                      "sub_cluster_label": "Precision Agriculture",
+                      "funding_stage": "growth",
+                      "quality_score": 7.5,
+                      "tech_depth": "medium",
+                      "country": "EC",
+                      "founded_year": 2015,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "swebol-biotech-bo",
+                      "name": "Swebol Biotech",
+                      "bio_theme": "Precision Agriculture",
+                      "sub_cluster_label": "Precision Agriculture",
+                      "funding_stage": "growth",
+                      "quality_score": 7.5,
+                      "tech_depth": "medium",
+                      "country": "BO",
+                      "founded_year": 2015,
+                      "is_bio_universe": null
+                    },
+                    {
+                      "level": "startup",
+                      "id": "wseeds-co",
+                      "name": "WSeeds",
+                      "bio_theme": "Precision Agriculture",
+                      "sub_cluster_label": "Precision Agriculture",
+                      "funding_stage": "series-a",
+                      "quality_score": 7.0,
+                      "tech_depth": "medium",
+                      "country": "CO",
+                      "founded_year": null,
+                      "is_bio_universe": null
                     }
                   ]
                 }
