@@ -319,7 +319,7 @@
             <button id="btn-hybrid"    class="vt-btn"        type="button" title="Semántica con atracción suave hacia ejes analíticos (α=0.35)">Híbrido</button>
             <button id="btn-semantic"  class="vt-btn"        type="button" title="UMAP puro: posición = similitud semántica real">Semántico</button>
           </div>
-          <button id="btn-labels" class="lbl-btn" type="button">Nombres</button>
+          <button id="btn-labels" class="lbl-btn on" type="button" title="Cicla: Grandes → Medianas → Todas → off">▣ Medianas</button>
           <button id="btn-filter" class="lbl-btn" type="button">Filtros</button>
           <button id="btn-time"   class="lbl-btn" type="button" title="Animar por año de fundación">Tiempo</button>
           <div class="srch-wrap">
@@ -447,7 +447,7 @@
 </div>
 
 <script src="./text-clean.js?v=20260613_181300"></script>
-<script src="./startup-themes-data.js?v=20260614_135301"></script>
+<script src="./startup-themes-data.js?v=20260614_143304"></script>
 <script src="./coverage-data.js?v=20260614_004500"></script>
 <script src="./coverage-note.js?v=20260613_181300"></script>
 <script>
@@ -793,6 +793,18 @@ function nCompleto(s){return s.quality_band==="high";}
 function nFeatured(s){return nAnchor(s);}
 function nImportant(s){return nAnchor(s)||nDestacado(s);}
 
+// ── Label visibility by mode ──────────────────────────────────────────────
+// grande  = val≥$50M o tier≥2 (anchor)
+// mediana = + val≥$8M y ≥2 inv. (destacado)
+// todas   = + quality_band high (completo)
+function showLblFor(s){
+  if(labelMode==="off")   return false;
+  if(labelMode==="grande") return nAnchor(s);
+  if(labelMode==="mediana")return nAnchor(s)||nDestacado(s)||nRadius(s)>=14;
+  if(labelMode==="todas")  return nAnchor(s)||nDestacado(s)||nCompleto(s)||nRadius(s)>=14;
+  return false;
+}
+
 // ── Filter state — multi-selección con Sets ───────────────────────────────
 const activeTechs=new Set();      // OR dentro de la categoría
 const activeInds=new Set();       // OR dentro de la categoría
@@ -801,7 +813,9 @@ const activeStages=new Set();     // OR — pre-seed | seed | series-a | series-
 const activeFunds=new Set();      // OR — inversor/fondo id
 const activeLegacy=new Set();      // OR — macro_theme (taxonomía anterior)
 const activeDepths=new Set();     // OR — deep | applied | enabler | unclassified
-let searchId=null,showLabels=false;
+let searchId=null;
+let labelMode="mediana"; // "off" | "grande" | "mediana" | "todas"
+let activeSubCluster=null;
 let viewMode="map"; // "map" | "cluster" | "zoom"
 // ── Animation / time-player ──────────────────────────────────────────────
 let animMode=false,animPlaying=false,animYear=2000,animTimer=null;
@@ -811,6 +825,7 @@ function isHl(s){
   if(searchId&&s.id!==searchId)return false;
   if(activeCountries.size&&!(s.countries||[]).some(c=>activeCountries.has(c)))return false;
   if(activeTheme!==null&&(s.bio_theme||"Uncategorized")!==activeTheme)return false;
+  if(activeSubCluster!==null&&(s.sub_cluster_label||"")!==activeSubCluster)return false;
   if(activeTechs.size&&!(s.tech_codes||[]).some(c=>activeTechs.has(c)))return false;
   if(activeInds.size&&!(s.industry_codes||[]).some(c=>activeInds.has(c)))return false;
   if(activeStages.size&&!activeStages.has(s.funding_stage||"sin-dato"))return false;
@@ -819,7 +834,7 @@ function isHl(s){
   if(activeDepths.size&&!activeDepths.has(s.tech_depth||"unclassified"))return false;
   return true;
 }
-function anyFilter(){return !!(searchId||activeCountries.size||activeTheme!==null||activeTechs.size||activeInds.size||activeStages.size||activeFunds.size||activeLegacy.size||activeDepths.size)}
+function anyFilter(){return !!(searchId||activeCountries.size||activeTheme!==null||activeSubCluster!==null||activeTechs.size||activeInds.size||activeStages.size||activeFunds.size||activeLegacy.size||activeDepths.size)}
 
 // ── Build SVG ──────────────────────────────────────────────────────────────
 function buildSVG(){
@@ -862,8 +877,7 @@ function buildSVG(){
     lbl.setAttribute("pointer-events","none");
     lbl.setAttribute("opacity",anchor?"1":dest?"0.88":"0.78");
     lbl.textContent=s.name.replace(/\s*S\.?\s*[AP]\.?S?\.?$/i,"").split(/\s+/).slice(0,2).join(" ");
-    // Default: anchor + destacado visible; completo only when toggle ON
-    lbl.style.display=(anchor||dest||r>=14||(showLabels&&nCompleto(s)))?"":"none";
+    lbl.style.display=showLblFor(s)?"":"none";
     gLabels.appendChild(lbl);
     n.lblEl=lbl;
 
@@ -1187,7 +1201,7 @@ function updateHighlights(){
         n.circEl.setAttribute("r",nRadius(s));
       }
       if(n.lblEl){
-        const show=lit&&pass&&(nAnchor(s)||nDestacado(s)||(showLabels&&nCompleto(s)));
+        const show=lit&&pass&&showLblFor(s);
         n.lblEl.style.display=show?"":"none";
         n.lblEl.setAttribute("font-weight",nAnchor(s)?"700":"400");
       }
@@ -1210,9 +1224,7 @@ function updateHighlights(){
         n.circEl.setAttribute("r",hi&&searchId===s.id?nRadius(s)+3:nRadius(s));
       }
       if(n.lblEl){
-        // Default: solo anchors (puntos grandes). Toggle "Nombres" agrega destacados y completos.
-        const zBase=nAnchor(s)||nRadius(s)>=14||(showLabels&&(nDestacado(s)||nCompleto(s)));
-        const show=inTheme&&(searchId?hi:zBase);
+        const show=inTheme&&(searchId?hi:showLblFor(s));
         n.lblEl.style.display=show?"":"none";
         n.lblEl.setAttribute("font-size",nAnchor(s)?"10":"8");
         n.lblEl.setAttribute("font-weight",searchId===s.id||nAnchor(s)?"700":"400");
@@ -1234,10 +1246,8 @@ function updateHighlights(){
       n.circEl.setAttribute("r",hi&&searchId===s.id?nRadius(s)+3:nRadius(s));
     }
     if(n.lblEl){
-      const bigDot=nRadius(s)>=14;
-      const base=nAnchor(s)||nDestacado(s)||bigDot||(showLabels&&nCompleto(s));
-      // Anchors + big dots always show, others only when they pass filter
-      const show=(nAnchor(s)||bigDot)?(any?hi:true):(any?(hi&&base):base);
+      const base=showLblFor(s);
+      const show=any?(hi&&base):base;
       n.lblEl.style.display=show?"":"none";
       n.lblEl.setAttribute("font-weight",searchId===s.id||nAnchor(s)?"700":"400");
     }
@@ -1292,6 +1302,21 @@ function updateBreadcrumbs(){
       clear(){
         activeTheme=null;
         document.querySelectorAll(".cr").forEach(r=>r.classList.remove("active","dimmed"));
+        updateHighlights();updateBreadcrumbs();
+      }
+    });
+  }
+  if(activeSubCluster!==null){
+    filters.push({
+      label:"Subcluster: "+activeSubCluster,
+      clear(){
+        activeSubCluster=null;
+        const activeCard=document.querySelector(".cr.active");
+        if(activeCard){
+          const theme=activeCard.dataset.theme;
+          const tm=themeMap.get(theme);
+          if(tm) activeCard.querySelector(".cr-detail").innerHTML=buildThemeDetailHTML(tm);
+        }
         updateHighlights();updateBreadcrumbs();
       }
     });
@@ -1389,7 +1414,7 @@ function updateBreadcrumbs(){
   });
   const all=document.createElement("button");all.className="bc-pill bc-all";all.type="button";all.textContent="Limpiar todo";
   all.addEventListener("click",()=>{
-    activeTheme=null;activeTechs.clear();activeInds.clear();activeCountries.clear();activeStages.clear();activeFunds.clear();activeLegacy.clear();activeDepths.clear();searchId=null;
+    activeTheme=null;activeSubCluster=null;activeTechs.clear();activeInds.clear();activeCountries.clear();activeStages.clear();activeFunds.clear();activeLegacy.clear();activeDepths.clear();searchId=null;
     srchIn.value="";
     document.querySelectorAll(".fc").forEach(c=>c.classList.remove("active-tech","active-ind","active-country","active-stage","active-fund","active-legacy","active-depth"));
     document.querySelectorAll(".cr").forEach(r=>r.classList.remove("active","dimmed"));
@@ -1435,8 +1460,9 @@ function buildThemeDetailHTML(tm){
   if(desc) h+=`<div class="cr-det-desc">${desc}</div>`;
   if(subLabels.size){
     h+=`<div class="cr-det-sec">Sub-grupos semánticos</div><div class="cr-det-chips">`;
-    [...subLabels.entries()].forEach(([lbl,n])=>{
-      h+=`<span class="cr-det-chip cr-det-chip-teal">${lbl} <span style="opacity:.5">(${n})</span></span>`;
+    [...subLabels.entries()].sort((a,b)=>b[1]-a[1]).forEach(([lbl,n])=>{
+      const isActive=activeSubCluster===lbl;
+      h+=`<span class="cr-det-chip cr-det-chip-teal" data-subcluster="${lbl}" style="cursor:pointer;${isActive?"outline:2px solid var(--accent);font-weight:700;":""}">${lbl} <span style="opacity:.5">(${n})</span></span>`;
     });
     h+=`</div>`;
   }
@@ -1550,6 +1576,23 @@ function buildClusterList(){
     const country=chip.dataset.country;
     activeCountries.has(country)?activeCountries.delete(country):activeCountries.add(country);
     document.querySelectorAll("#country-chips .fc").forEach(c=>c.classList.toggle("active-country",activeCountries.has(c.dataset.country)));
+    updateHighlights();updateBreadcrumbs();
+  });
+
+  // Delegación de clicks en chips de sub-cluster dentro del acordeón
+  list.addEventListener("click",e=>{
+    const chip=e.target.closest("[data-subcluster]");
+    if(!chip)return;
+    e.stopPropagation(); // no trigger theme card click
+    const sub=chip.dataset.subcluster;
+    activeSubCluster=(activeSubCluster===sub)?null:sub;
+    // Refresh detail HTML to show active state
+    const activeCard=document.querySelector(".cr.active");
+    if(activeCard){
+      const theme=activeCard.dataset.theme;
+      const tm=themeMap.get(theme);
+      if(tm) activeCard.querySelector(".cr-detail").innerHTML=buildThemeDetailHTML(tm);
+    }
     updateHighlights();updateBreadcrumbs();
   });
 }
@@ -1830,7 +1873,7 @@ srchIn.addEventListener("input",()=>{
   srchRes.classList.toggle("open",hits.length>0);
 });
 function resetAll(){
-  activeTheme=null;activeTechs.clear();activeInds.clear();activeCountries.clear();activeStages.clear();activeFunds.clear();activeLegacy.clear();activeDepths.clear();searchId=null;
+  activeTheme=null;activeSubCluster=null;activeTechs.clear();activeInds.clear();activeCountries.clear();activeStages.clear();activeFunds.clear();activeLegacy.clear();activeDepths.clear();searchId=null;
   srchIn.value="";srchRes.classList.remove("open");
   document.querySelectorAll(".fc").forEach(c=>c.classList.remove("active-tech","active-ind","active-country","active-stage","active-fund","active-legacy","active-depth"));
   document.querySelectorAll(".cr").forEach(r=>r.classList.remove("active","dimmed"));
@@ -1871,8 +1914,13 @@ document.addEventListener("click",e=>{if(!srchIn.contains(e.target))srchRes.clas
   });
 });
 
+const LABEL_CYCLE=["mediana","todas","grande","off"];
+const LABEL_BTN_TEXT={off:"Nombres",grande:"▣ Grandes",mediana:"▣ Medianas",todas:"▣ Todas"};
 document.getElementById("btn-labels").addEventListener("click",function(){
-  showLabels=!showLabels;this.classList.toggle("on",showLabels);
+  const idx=LABEL_CYCLE.indexOf(labelMode);
+  labelMode=LABEL_CYCLE[(idx+1)%LABEL_CYCLE.length];
+  this.textContent=LABEL_BTN_TEXT[labelMode];
+  this.classList.toggle("on",labelMode!=="off");
   updateHighlights();
 });
 document.getElementById("btn-filter").addEventListener("click",function(){

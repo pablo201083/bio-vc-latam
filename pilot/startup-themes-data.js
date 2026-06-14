@@ -1,11 +1,11 @@
 window.STARTUP_THEMES_DATA = {
-  "computed_at": "2026-06-14T14:06:43",
+  "computed_at": "2026-06-14T14:32:59",
   "model": "intfloat/multilingual-e5-small",
   "stats": {
     "total_startups": 579,
     "n_clusters": 30,
     "featured_count": 53,
-    "funded_count": 357
+    "funded_count": 359
   },
   "bio_theme_descriptions": {
     "Therapeutics": "Medicina regenerativa, terapia celular, biologics y desarrollo clínico de fármacos para oncología, enfermedades crónicas y neurología.",
@@ -194,7 +194,7 @@ window.STARTUP_THEMES_DATA = {
       "community_id": -1,
       "pagerank": 0.0006805279349031664,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Precision Agriculture",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -222,7 +222,9 @@ window.STARTUP_THEMES_DATA = {
       "uy": 1.708,
       "hx": 9.72,
       "hy": 7.96,
-      "investor_ids": []
+      "investor_ids": [
+        "idb_lab"
+      ]
     },
     {
       "id": "agritech-bolivia-bo",
@@ -363,7 +365,7 @@ window.STARTUP_THEMES_DATA = {
       "community_id": -1,
       "pagerank": 0.0006805279349031664,
       "valuation_tier": null,
-      "n_investors_mapped": 0,
+      "n_investors_mapped": 2,
       "bio_theme": "Precision Agriculture",
       "bio_theme_secondary": "",
       "is_bio_universe": null,
@@ -392,7 +394,9 @@ window.STARTUP_THEMES_DATA = {
       "uy": 1.669,
       "hx": 9.717,
       "hy": 7.94,
-      "investor_ids": []
+      "investor_ids": [
+        "idb_lab"
+      ]
     },
     {
       "id": "agrobit-bolivia-operations-bo",
@@ -41663,7 +41667,7 @@ window.STARTUP_THEMES_DATA = {
         "Uruguay": 1,
         "Peru": 1
       },
-      "n_funded": 45,
+      "n_funded": 47,
       "n_featured": 7
     },
     {
@@ -43009,6 +43013,11 @@ window.STARTUP_THEMES_DATA = {
       "n": 4
     },
     {
+      "id": "idb_lab",
+      "name": "IDB Lab",
+      "n": 4
+    },
+    {
       "id": "monashees",
       "name": "Monashees",
       "n": 4
@@ -43121,11 +43130,6 @@ window.STARTUP_THEMES_DATA = {
     {
       "id": "idb_invest",
       "name": "IDB Invest",
-      "n": 2
-    },
-    {
-      "id": "idb_lab",
-      "name": "IDB Lab",
       "n": 2
     },
     {
@@ -43795,7 +43799,7 @@ window.STARTUP_THEMES_DATA = {
       {
         "id": "idb_lab",
         "name": "IDB Lab",
-        "n_investments": 2
+        "n_investments": 4
       },
       {
         "id": "ifc",
@@ -45654,6 +45658,14 @@ window.STARTUP_THEMES_DATA = {
       {
         "investor_id": "idb_invest",
         "startup_id": "neuralmed"
+      },
+      {
+        "investor_id": "idb_lab",
+        "startup_id": "agricultic-do"
+      },
+      {
+        "investor_id": "idb_lab",
+        "startup_id": "agro360-do"
       },
       {
         "investor_id": "idb_lab",
