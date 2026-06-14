@@ -1,5 +1,5 @@
 window.COVERAGE_DATA = {
-  "generated_at": "2026-06-14T17:09:22+00:00",
+  "generated_at": "2026-06-14T17:21:24+00:00",
   "countries": {
     "AR": {
       "tier": "well_mapped",
@@ -111,7 +111,7 @@ window.COVERAGE_DATA = {
       "n_includes": 11,
       "evidence_pct": 0.909,
       "n_patches": 1,
-      "n_local_investors": 27
+      "n_local_investors": 28
     },
     "UY": {
       "tier": "under_explored",
@@ -1542,7 +1542,7 @@ window.COVERAGE_DATA = {
       "country": "DO",
       "n_startups": 3,
       "evidence_pct": 0.0,
-      "capital_pct": 0.0,
+      "capital_pct": 0.667,
       "dominant_source": "(sin provenance)",
       "dominant_source_share": 1.0,
       "country_tier": "under_explored",
@@ -1886,7 +1886,7 @@ window.COVERAGE_DATA = {
     "parcial": 33,
     "vacio_observado": 3
   },
-  "debias_queue_size": 102,
+  "debias_queue_size": 101,
   "legend": {
     "bien_mapeado": "Volumen + evidencia externa + fuentes diversas: la celda es confiable.",
     "parcial": "Hay datos, pero con evidencia floja o dependientes de un solo parche.",

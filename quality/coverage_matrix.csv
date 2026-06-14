@@ -120,7 +120,7 @@ Precision Agriculture,BR,23,0.652,0.826,web_research_2026,0.522,well_mapped,bien
 Precision Agriculture,CL,6,0.5,0.5,(sin provenance),0.833,well_mapped,parcial
 Precision Agriculture,CO,3,0.333,0.333,(sin provenance),0.667,partial,parcial
 Precision Agriculture,CR,7,0.0,0.0,(sin provenance),1.0,partial,parcial
-Precision Agriculture,DO,3,0.0,0.0,(sin provenance),1.0,under_explored,no_explorado
+Precision Agriculture,DO,3,0.0,0.667,(sin provenance),1.0,under_explored,no_explorado
 Precision Agriculture,EC,3,0.0,0.0,(sin provenance),1.0,under_explored,no_explorado
 Precision Agriculture,GT,1,0.0,0.0,(sin provenance),1.0,under_explored,no_explorado
 Precision Agriculture,MX,1,0.0,0.0,(sin provenance),1.0,partial,parcial
