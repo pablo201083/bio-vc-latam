@@ -3373,7 +3373,7 @@ document.addEventListener('DOMContentLoaded', function(){
     svg.setAttribute('preserveAspectRatio', 'xMidYMid meet');
 
     // Load coinvestment network data
-    fetch('./coinvestment_network.json')
+    fetch('coinvestment_network.json')
       .then(function(r) { return r.json(); })
       .then(function(data) {
         renderCoInvestmentNetwork(svg, ttEl, wrap, W, H, data);
