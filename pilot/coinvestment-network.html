@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BIO LATAM — Red de Co-Inversión</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #fdf8f2 0%, rgba(23,139,135,.06) 100%);
+      color: #181714;
+    }
+    .container { display: grid; grid-template-columns: 300px 1fr 280px; gap: 0; height: 100vh; }
+
+    /* Sidebar izquierda */
+    .sidebar-left {
+      background: rgba(255,255,255,.95);
+      border-right: 1px solid #d8ccc0;
+      padding: 20px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+    }
+    .sidebar-left h2 { font-size: 1.1rem; margin-bottom: 15px; color: #0b8f87; }
+    .metric { margin-bottom: 15px; padding-bottom: 12px; border-bottom: 1px solid #e8e0d8; }
+    .metric-label { font-size: 0.75rem; text-transform: uppercase; color: #9a8278; font-weight: 600; }
+    .metric-value { font-size: 1.5rem; font-weight: 800; margin-top: 3px; }
+    .metric-sub { font-size: 0.8rem; color: #6a6258; margin-top: 2px; }
+
+    /* Canvas central */
+    #network {
+      background: #fdfaf4;
+      flex: 1;
+      position: relative;
+    }
+
+    /* Sidebar derecha */
+    .sidebar-right {
+      background: rgba(255,255,255,.95);
+      border-left: 1px solid #d8ccc0;
+      padding: 20px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      font-size: 0.85rem;
+    }
+    .sidebar-right h3 { font-size: 0.95rem; margin-bottom: 10px; color: #0b8f87; }
+
+    .node-info {
+      background: #f5f2ed;
+      padding: 10px;
+      border-radius: 8px;
+      margin-bottom: 12px;
+      border-left: 3px solid #0b8f87;
+    }
+    .node-info-name { font-weight: 700; margin-bottom: 4px; }
+    .node-info-metric { font-size: 0.75rem; color: #6a6258; margin: 2px 0; }
+
+    .legend {
+      margin-top: auto;
+      padding-top: 15px;
+      border-top: 1px solid #d8ccc0;
+    }
+    .legend-item { margin-bottom: 8px; font-size: 0.75rem; }
+    .legend-dot {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      border-radius: 2px;
+      margin-right: 6px;
+      vertical-align: middle;
+    }
+
+    /* Controles */
+    .controls {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background: rgba(255,255,255,.95);
+      border: 1px solid #d8ccc0;
+      border-radius: 10px;
+      padding: 12px 15px;
+      z-index: 100;
+      box-shadow: 0 2px 8px rgba(0,0,0,.06);
+    }
+    .controls label {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 0.85rem;
+      cursor: pointer;
+    }
+    .controls input[type="checkbox"] { margin-right: 6px; }
+
+    .info-box {
+      position: absolute;
+      bottom: 15px;
+      left: 15px;
+      background: rgba(255,255,255,.95);
+      border: 1px solid #d8ccc0;
+      border-radius: 10px;
+      padding: 12px 15px;
+      z-index: 100;
+      max-width: 280px;
+      font-size: 0.8rem;
+      color: #6a6258;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar izquierda: Métricas -->
+    <div class="sidebar-left">
+      <h2>Red de Co-Inversión</h2>
+
+      <div class="metric">
+        <div class="metric-label">Startups</div>
+        <div class="metric-value">383</div>
+        <div class="metric-sub">en ecosistema BIO</div>
+      </div>
+
+      <div class="metric">
+        <div class="metric-label">Co-inversiones</div>
+        <div class="metric-value">8.5K</div>
+        <div class="metric-sub">pares que comparten VC</div>
+      </div>
+
+      <div class="metric">
+        <div class="metric-label">Conectividad</div>
+        <div class="metric-value">63</div>
+        <div class="metric-sub">co-inversores promedio</div>
+      </div>
+
+      <div class="metric">
+        <div class="metric-label">Comunidades</div>
+        <div class="metric-value">31</div>
+        <div class="metric-sub">clusters detectados</div>
+      </div>
+
+      <div class="metric">
+        <div class="metric-label">Clustering Local</div>
+        <div class="metric-value">0.81</div>
+        <div class="metric-sub">redes densas</div>
+      </div>
+
+      <hr style="border: none; border-top: 1px solid #e8e0d8; margin: 15px 0;">
+
+      <div style="font-size: 0.75rem; color: #9a8278; line-height: 1.4;">
+        <strong>Tamaño nodo:</strong> PageRank (importancia)<br>
+        <strong>Color:</strong> Comunidad<br>
+        <strong>Espesor línea:</strong> inversores en común<br>
+        <strong>Posición:</strong> Force-directed layout
+      </div>
+    </div>
+
+    <!-- Canvas central -->
+    <div id="network"></div>
+
+    <!-- Sidebar derecha: Detalles -->
+    <div class="sidebar-right">
+      <h3>Selecciona un nodo</h3>
+      <div id="node-details" style="color: #9a8278; font-size: 0.85rem;">
+        Haz click en una startup para ver detalles
+      </div>
+
+      <div class="legend">
+        <h3>Top 5 por PageRank</h3>
+        <div class="node-info">
+          <div class="node-info-name">Puna Bio</div>
+          <div class="node-info-metric">PageRank: 1.10</div>
+          <div class="node-info-metric">Betweenness: 997.93</div>
+        </div>
+        <div class="node-info">
+          <div class="node-info-name">Symbiomics</div>
+          <div class="node-info-metric">PageRank: 1.04</div>
+          <div class="node-info-metric">Betweenness: 755.21</div>
+        </div>
+        <div class="node-info">
+          <div class="node-info-name">Re Green</div>
+          <div class="node-info-metric">PageRank: 0.89</div>
+          <div class="node-info-metric">Clustering: 0.92</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Controles -->
+  <div class="controls">
+    <label><input type="checkbox" id="physics-toggle" checked> Física</label>
+    <label><input type="checkbox" id="filter-toggle" checked> Top 50%</label>
+  </div>
+
+  <!-- Info -->
+  <div class="info-box">
+    💡 Nodos grandes = importantes en red<br>
+    🔴 Puentes = desconectan la red si fallan<br>
+    ⚙️ Arrastra para mover, scroll para zoom
+  </div>
+
+  <script>
+    // Cargar datos
+    fetch('coinvestment_network.json')
+      .then(r => r.json())
+      .then(data => initNetwork(data));
+
+    function initNetwork(data) {
+      const nodes = data.nodes.map(n => ({
+        id: n.id,
+        label: n.name.split(' ')[0],
+        title: `${n.name}<br>PageRank: ${n.pagerank}<br>Comunidad: ${n.community}<br>Co-inversores: ${n.degree}`,
+        size: 15 + n.pagerank * 15,
+        color: communityColor(n.community),
+        font: { size: 12 }
+      }));
+
+      const edges = data.edges.map(e => ({
+        from: e.source,
+        to: e.target,
+        width: e.thickness,
+        color: { color: 'rgba(200,180,160,.2)', highlight: 'rgba(11,143,135,.5)' }
+      }));
+
+      const container = document.getElementById('network');
+      const networkData = { nodes: new vis.DataSet(nodes), edges: new vis.DataSet(edges) };
+      const options = {
+        physics: {
+          enabled: true,
+          barnesHut: { gravitationalConstant: -50000, centralGravity: 0.3 }
+        },
+        interaction: { hover: true },
+        nodes: { borderWidth: 2, borderWidthSelected: 3 }
+      };
+
+      const network = new vis.Network(container, networkData, options);
+
+      network.on('selectNode', e => {
+        const nodeId = e.nodes[0];
+        const node = data.nodes.find(n => n.id === nodeId);
+        if (node) {
+          document.getElementById('node-details').innerHTML = `
+            <div class="node-info" style="border: none; background: none;">
+              <div style="font-size: 1rem; font-weight: 700; color: #181714; margin-bottom: 10px;">${node.name}</div>
+              <div class="node-info-metric"><strong>Tema:</strong> ${node.theme}</div>
+              <div class="node-info-metric"><strong>PageRank:</strong> ${node.pagerank.toFixed(4)}</div>
+              <div class="node-info-metric"><strong>Betweenness:</strong> ${node.betweenness.toFixed(2)}</div>
+              <div class="node-info-metric"><strong>Clustering:</strong> ${node.clustering.toFixed(3)}</div>
+              <div class="node-info-metric"><strong>Co-inversores:</strong> ${node.degree}</div>
+              <div class="node-info-metric"><strong>Inversores:</strong> ${node.n_investors}</div>
+              <div class="node-info-metric"><strong>Comunidad:</strong> ${node.community}</div>
+            </div>
+          `;
+        }
+      });
+
+      document.getElementById('physics-toggle').addEventListener('change', e => {
+        network.physics.enabled = e.target.checked;
+      });
+    }
+
+    function communityColor(comm) {
+      const colors = ['#e74c3c', '#3498db', '#2ecc71', '#f39c12', '#9b59b6', '#1abc9c', '#e67e22', '#34495e'];
+      return colors[comm.charCodeAt(0) % colors.length];
+    }
+  </script>
+</body>
+</html>
