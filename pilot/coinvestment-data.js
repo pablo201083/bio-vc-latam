@@ -1,0 +1,29671 @@
+var COINVESTMENT_DATA = {
+  "metadata": {
+    "total_startups": 383,
+    "total_edges": 8482,
+    "unique_communities": 31,
+    "generated_at": "2026-06-14"
+  },
+  "nodes": [
+    {
+      "id": "tech",
+      "name": "@Tech",
+      "theme": "Precision Agriculture",
+      "pagerank": 0.3205,
+      "betweenness": 103.0196,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 30,
+      "n_investors": 1
+    },
+    {
+      "id": "aegro",
+      "name": "Aegro",
+      "theme": "Precision Agriculture",
+      "pagerank": 0.4083,
+      "betweenness": 134.5907,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 37,
+      "n_investors": 1
+    },
+    {
+      "id": "agree",
+      "name": "Agree",
+      "theme": "Nature & Ecosystem Tech",
+      "pagerank": 0.3205,
+      "betweenness": 103.0196,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 30,
+      "n_investors": 1
+    },
+    {
+      "id": "agrojusto",
+      "name": "Agrojusto",
+      "theme": "Nature & Ecosystem Tech",
+      "pagerank": 0.1649,
+      "betweenness": 49.1363,
+      "clustering": 0.6912,
+      "community": "the-live-green-co-cl",
+      "degree": 24,
+      "n_investors": 3
+    },
+    {
+      "id": "agrosmart",
+      "name": "Agrosmart",
+      "theme": "Precision Agriculture",
+      "pagerank": 0.6953,
+      "betweenness": 267.1608,
+      "clustering": 0.5526,
+      "community": "the-live-green-co-cl",
+      "degree": 67,
+      "n_investors": 2
+    },
+    {
+      "id": "agrourbana",
+      "name": "Agrourbana",
+      "theme": "Food Systems & Alt Proteins",
+      "pagerank": 0.0453,
+      "betweenness": 6.4378,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 4,
+      "n_investors": 1
+    },
+    {
+      "id": "auravant",
+      "name": "Auravant",
+      "theme": "Precision Agriculture",
+      "pagerank": 0.4361,
+      "betweenness": 162.7202,
+      "clustering": 0.5869,
+      "community": "the-live-green-co-cl",
+      "degree": 47,
+      "n_investors": 3
+    },
+    {
+      "id": "bemagro",
+      "name": "BemAgro",
+      "theme": "Precision Agriculture",
+      "pagerank": 0.3205,
+      "betweenness": 103.0196,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 30,
+      "n_investors": 1
+    },
+    {
+      "id": "calice",
+      "name": "Calice",
+      "theme": "Precision Agriculture",
+      "pagerank": 0.2108,
+      "betweenness": 125.4232,
+      "clustering": 0.6639,
+      "community": "the-live-green-co-cl",
+      "degree": 36,
+      "n_investors": 2
+    },
+    {
+      "id": "cerradox",
+      "name": "CerradoX",
+      "theme": "Precision Agriculture",
+      "pagerank": 0.3205,
+      "betweenness": 103.0196,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 30,
+      "n_investors": 1
+    },
+    {
+      "id": "deepagro",
+      "name": "DeepAgro",
+      "theme": "Precision Agriculture",
+      "pagerank": 0.5568,
+      "betweenness": 241.5663,
+      "clustering": 0.3881,
+      "community": "the-live-green-co-cl",
+      "degree": 72,
+      "n_investors": 6
+    },
+    {
+      "id": "dymaxion_labs",
+      "name": "Dymaxion Labs",
+      "theme": "Precision Agriculture",
+      "pagerank": 0.1388,
+      "betweenness": 11.6755,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 6,
+      "n_investors": 1
+    },
+    {
+      "id": "eiwa",
+      "name": "Eiwa",
+      "theme": "Precision Agriculture",
+      "pagerank": 0.6801,
+      "betweenness": 837.3751,
+      "clustering": 0.4669,
+      "community": "the-live-green-co-cl",
+      "degree": 177,
+      "n_investors": 5
+    },
+    {
+      "id": "horus_aeronaves",
+      "name": "Horus Aeronaves",
+      "theme": "Precision Agriculture",
+      "pagerank": 0.4083,
+      "betweenness": 134.5907,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 37,
+      "n_investors": 1
+    },
+    {
+      "id": "inceres",
+      "name": "InCeres",
+      "theme": "Precision Agriculture",
+      "pagerank": 0.4083,
+      "betweenness": 134.5907,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 37,
+      "n_investors": 1
+    },
+    {
+      "id": "jetbov",
+      "name": "JetBov",
+      "theme": "Precision Agriculture",
+      "pagerank": 0.4083,
+      "betweenness": 134.5907,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 37,
+      "n_investors": 1
+    },
+    {
+      "id": "kilimo",
+      "name": "Kilimo",
+      "theme": "Nature & Ecosystem Tech",
+      "pagerank": 0.5932,
+      "betweenness": 231.4453,
+      "clustering": 0.3904,
+      "community": "the-live-green-co-cl",
+      "degree": 71,
+      "n_investors": 8
+    },
+    {
+      "id": "laurus_ag_tech",
+      "name": "Laurus AG Tech",
+      "theme": "Food Systems & Alt Proteins",
+      "pagerank": 0.1397,
+      "betweenness": 81.4524,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 25,
+      "n_investors": 1
+    },
+    {
+      "id": "nexxto",
+      "name": "Nexxto",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.4083,
+      "betweenness": 134.5907,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 37,
+      "n_investors": 1
+    },
+    {
+      "id": "pink-farms",
+      "name": "Pink Farms",
+      "theme": "Food Systems & Alt Proteins",
+      "pagerank": 0.4083,
+      "betweenness": 134.5907,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 37,
+      "n_investors": 1
+    },
+    {
+      "id": "produzindo-certo",
+      "name": "Produzindo Certo",
+      "theme": "Nature & Ecosystem Tech",
+      "pagerank": 0.3205,
+      "betweenness": 103.0196,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 30,
+      "n_investors": 1
+    },
+    {
+      "id": "rumina",
+      "name": "Rumina",
+      "theme": "Precision Agriculture",
+      "pagerank": 0.0498,
+      "betweenness": 4.1589,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 3,
+      "n_investors": 1
+    },
+    {
+      "id": "sensix",
+      "name": "Sensix",
+      "theme": "Precision Agriculture",
+      "pagerank": 0.1194,
+      "betweenness": 37.9127,
+      "clustering": 0.6484,
+      "community": "the-live-green-co-cl",
+      "degree": 15,
+      "n_investors": 4
+    },
+    {
+      "id": "sima",
+      "name": "Sima",
+      "theme": "Precision Agriculture",
+      "pagerank": 0.0332,
+      "betweenness": 8.9588,
+      "clustering": 0.7,
+      "community": "the-live-green-co-cl",
+      "degree": 5,
+      "n_investors": 2
+    },
+    {
+      "id": "sioma",
+      "name": "Sioma",
+      "theme": "Precision Agriculture",
+      "pagerank": 0.3205,
+      "betweenness": 103.0196,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 30,
+      "n_investors": 1
+    },
+    {
+      "id": "smartbreeder",
+      "name": "SmartBreeder",
+      "theme": "Precision Agriculture",
+      "pagerank": 0.1699,
+      "betweenness": 20.7233,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 9,
+      "n_investors": 1
+    },
+    {
+      "id": "solinftec",
+      "name": "Solinftec",
+      "theme": "Precision Agriculture",
+      "pagerank": 0.0221,
+      "betweenness": 0.6931,
+      "clustering": 0,
+      "community": "the-live-green-co-cl",
+      "degree": 1,
+      "n_investors": 1
+    },
+    {
+      "id": "spaceag",
+      "name": "SpaceAG",
+      "theme": "Precision Agriculture",
+      "pagerank": 0.3205,
+      "betweenness": 103.0196,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 30,
+      "n_investors": 1
+    },
+    {
+      "id": "tbit",
+      "name": "TBIT",
+      "theme": "Precision Agriculture",
+      "pagerank": 0.1699,
+      "betweenness": 20.7233,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 9,
+      "n_investors": 1
+    },
+    {
+      "id": "the-earth-says",
+      "name": "The Earth Says",
+      "theme": "Precision Agriculture",
+      "pagerank": 0.1839,
+      "betweenness": 103.0196,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 40,
+      "n_investors": 2
+    },
+    {
+      "id": "tracestory",
+      "name": "Tracestory",
+      "theme": "Nature & Ecosystem Tech",
+      "pagerank": 0.0789,
+      "betweenness": 27.334,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 11,
+      "n_investors": 1
+    },
+    {
+      "id": "voa",
+      "name": "Voa",
+      "theme": "Precision Agriculture",
+      "pagerank": 0.3205,
+      "betweenness": 103.0196,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 30,
+      "n_investors": 1
+    },
+    {
+      "id": "waterplan",
+      "name": "Waterplan",
+      "theme": "Nature & Ecosystem Tech",
+      "pagerank": 0.1388,
+      "betweenness": 11.6755,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 6,
+      "n_investors": 1
+    },
+    {
+      "id": "wiagro",
+      "name": "Wiagro",
+      "theme": "Precision Agriculture",
+      "pagerank": 0.1084,
+      "betweenness": 27.334,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 11,
+      "n_investors": 1
+    },
+    {
+      "id": "zoomagri",
+      "name": "ZoomAgri",
+      "theme": "Precision Agriculture",
+      "pagerank": 0.4852,
+      "betweenness": 186.8074,
+      "clustering": 0.6605,
+      "community": "the-live-green-co-cl",
+      "degree": 48,
+      "n_investors": 2
+    },
+    {
+      "id": "ucrop-it-ar",
+      "name": "ucrop.it",
+      "theme": "Nature & Ecosystem Tech",
+      "pagerank": 0.3953,
+      "betweenness": 143.8663,
+      "clustering": 0.6829,
+      "community": "the-live-green-co-cl",
+      "degree": 41,
+      "n_investors": 2
+    },
+    {
+      "id": "calice-ai-ar",
+      "name": "Calice AI",
+      "theme": "Precision Agriculture",
+      "pagerank": 0.1388,
+      "betweenness": 11.6755,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 6,
+      "n_investors": 1
+    },
+    {
+      "id": "instacrops-cl",
+      "name": "Instacrops",
+      "theme": "Precision Agriculture",
+      "pagerank": 0.0453,
+      "betweenness": 6.4378,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 4,
+      "n_investors": 1
+    },
+    {
+      "id": "tarvos-br",
+      "name": "Tarvos",
+      "theme": "Precision Agriculture",
+      "pagerank": 0.0305,
+      "betweenness": 6.4378,
+      "clustering": 0.6667,
+      "community": "the-live-green-co-cl",
+      "degree": 4,
+      "n_investors": 4
+    },
+    {
+      "id": "agronow-br",
+      "name": "Agronow",
+      "theme": "Precision Agriculture",
+      "pagerank": 0.4083,
+      "betweenness": 134.5907,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 37,
+      "n_investors": 1
+    },
+    {
+      "id": "ecotrace-br",
+      "name": "Ecotrace",
+      "theme": "Nature & Ecosystem Tech",
+      "pagerank": 0.4825,
+      "betweenness": 139.2153,
+      "clustering": 0.6714,
+      "community": "the-live-green-co-cl",
+      "degree": 39,
+      "n_investors": 2
+    },
+    {
+      "id": "wiseconn-cl",
+      "name": "Wiseconn",
+      "theme": "Precision Agriculture",
+      "pagerank": 0.0004,
+      "betweenness": 0,
+      "clustering": 0,
+      "community": "wiseconn-cl",
+      "degree": 0,
+      "n_investors": 1
+    },
+    {
+      "id": "strider-br",
+      "name": "Strider",
+      "theme": "Precision Agriculture",
+      "pagerank": 0.5081,
+      "betweenness": 157.9704,
+      "clustering": 0.7898,
+      "community": "the-live-green-co-cl",
+      "degree": 43,
+      "n_investors": 3
+    },
+    {
+      "id": "cowmed-br",
+      "name": "CowMed",
+      "theme": "Precision Agriculture",
+      "pagerank": 0.4083,
+      "betweenness": 134.5907,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 37,
+      "n_investors": 1
+    },
+    {
+      "id": "digifarmz-br",
+      "name": "DigiFarmz",
+      "theme": "Precision Agriculture",
+      "pagerank": 0.0931,
+      "betweenness": 27.334,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 11,
+      "n_investors": 1
+    },
+    {
+      "id": "agricultic-do",
+      "name": "Agricultic",
+      "theme": "Precision Agriculture",
+      "pagerank": 0.4452,
+      "betweenness": 4.1589,
+      "clustering": 1.0,
+      "community": "agricultic-do",
+      "degree": 3,
+      "n_investors": 1
+    },
+    {
+      "id": "agro360-do",
+      "name": "Agro360",
+      "theme": "Precision Agriculture",
+      "pagerank": 0.4452,
+      "betweenness": 4.1589,
+      "clustering": 1.0,
+      "community": "agricultic-do",
+      "degree": 3,
+      "n_investors": 1
+    },
+    {
+      "id": "agricapital",
+      "name": "Agricapital",
+      "theme": "Digital AgTech & Agrifintech",
+      "pagerank": 0.3205,
+      "betweenness": 103.0196,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 30,
+      "n_investors": 1
+    },
+    {
+      "id": "agrired",
+      "name": "Agrired",
+      "theme": "Digital AgTech & Agrifintech",
+      "pagerank": 0.0212,
+      "betweenness": 4.1589,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 3,
+      "n_investors": 1
+    },
+    {
+      "id": "agroforte",
+      "name": "Agroforte",
+      "theme": "Digital AgTech & Agrifintech",
+      "pagerank": 0.3205,
+      "betweenness": 103.0196,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 30,
+      "n_investors": 1
+    },
+    {
+      "id": "agrofy",
+      "name": "Agrofy",
+      "theme": "Digital AgTech & Agrifintech",
+      "pagerank": 0.4083,
+      "betweenness": 134.5907,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 37,
+      "n_investors": 1
+    },
+    {
+      "id": "agrolend",
+      "name": "Agrolend",
+      "theme": "Digital AgTech & Agrifintech",
+      "pagerank": 0.4997,
+      "betweenness": 153.2445,
+      "clustering": 0.822,
+      "community": "the-live-green-co-cl",
+      "degree": 45,
+      "n_investors": 4
+    },
+    {
+      "id": "agrotoken",
+      "name": "Agrotoken",
+      "theme": "Digital AgTech & Agrifintech",
+      "pagerank": 0.1864,
+      "betweenness": 20.7233,
+      "clustering": 0.5,
+      "community": "the-live-green-co-cl",
+      "degree": 9,
+      "n_investors": 6
+    },
+    {
+      "id": "agrotools",
+      "name": "AGROTOOLS",
+      "theme": "Digital AgTech & Agrifintech",
+      "pagerank": 0.1699,
+      "betweenness": 20.7233,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 9,
+      "n_investors": 1
+    },
+    {
+      "id": "alytix",
+      "name": "Alytix",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.1229,
+      "betweenness": 478.3723,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 103,
+      "n_investors": 1
+    },
+    {
+      "id": "arado",
+      "name": "Arado",
+      "theme": "Digital AgTech & Agrifintech",
+      "pagerank": 0.4567,
+      "betweenness": 143.8663,
+      "clustering": 0.9055,
+      "community": "the-live-green-co-cl",
+      "degree": 42,
+      "n_investors": 6
+    },
+    {
+      "id": "biotalife",
+      "name": "Biotalife",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.296,
+      "betweenness": 64.9119,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 21,
+      "n_investors": 1
+    },
+    {
+      "id": "blooms",
+      "name": "Blooms",
+      "theme": "Digital AgTech & Agrifintech",
+      "pagerank": 0.6953,
+      "betweenness": 267.1608,
+      "clustering": 0.5526,
+      "community": "the-live-green-co-cl",
+      "degree": 67,
+      "n_investors": 2
+    },
+    {
+      "id": "botanical-solutions",
+      "name": "Botanical Solutions",
+      "theme": "Bioinputs & Crop Resilience",
+      "pagerank": 0.2547,
+      "betweenness": 134.5907,
+      "clustering": 0.7192,
+      "community": "the-live-green-co-cl",
+      "degree": 49,
+      "n_investors": 3
+    },
+    {
+      "id": "brain_ag",
+      "name": "Brain.ag",
+      "theme": "Digital AgTech & Agrifintech",
+      "pagerank": 0.4083,
+      "betweenness": 134.5907,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 37,
+      "n_investors": 1
+    },
+    {
+      "id": "cryosmetics",
+      "name": "Cryosmetics",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.1249,
+      "betweenness": 484.0119,
+      "clustering": 0.9959,
+      "community": "the-live-green-co-cl",
+      "degree": 185,
+      "n_investors": 2
+    },
+    {
+      "id": "culttivo",
+      "name": "Culttivo",
+      "theme": "Digital AgTech & Agrifintech",
+      "pagerank": 0.4825,
+      "betweenness": 139.2153,
+      "clustering": 0.6714,
+      "community": "the-live-green-co-cl",
+      "degree": 39,
+      "n_investors": 2
+    },
+    {
+      "id": "goflux",
+      "name": "goFlux",
+      "theme": "Digital AgTech & Agrifintech",
+      "pagerank": 0.4083,
+      "betweenness": 134.5907,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 37,
+      "n_investors": 1
+    },
+    {
+      "id": "incluirtec",
+      "name": "Incluirtec",
+      "theme": "Digital AgTech & Agrifintech",
+      "pagerank": 0.3205,
+      "betweenness": 103.0196,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 30,
+      "n_investors": 1
+    },
+    {
+      "id": "leaf",
+      "name": "Leaf",
+      "theme": "Digital AgTech & Agrifintech",
+      "pagerank": 0.5898,
+      "betweenness": 282.707,
+      "clustering": 0.507,
+      "community": "the-live-green-co-cl",
+      "degree": 67,
+      "n_investors": 2
+    },
+    {
+      "id": "metabix-biotech",
+      "name": "metaBIX Biotech",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.1839,
+      "betweenness": 103.0196,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 40,
+      "n_investors": 2
+    },
+    {
+      "id": "nilus",
+      "name": "Nilus",
+      "theme": "Digital AgTech & Agrifintech",
+      "pagerank": 0.1388,
+      "betweenness": 11.6755,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 6,
+      "n_investors": 1
+    },
+    {
+      "id": "seedz",
+      "name": "Seedz",
+      "theme": "Digital AgTech & Agrifintech",
+      "pagerank": 0.3205,
+      "betweenness": 103.0196,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 30,
+      "n_investors": 1
+    },
+    {
+      "id": "sensify",
+      "name": "Sensify",
+      "theme": "Digital AgTech & Agrifintech",
+      "pagerank": 0.179,
+      "betweenness": 64.9119,
+      "clustering": 0.581,
+      "community": "the-live-green-co-cl",
+      "degree": 22,
+      "n_investors": 2
+    },
+    {
+      "id": "sette",
+      "name": "Sette",
+      "theme": "Digital AgTech & Agrifintech",
+      "pagerank": 0.422,
+      "betweenness": 153.2445,
+      "clustering": 0.828,
+      "community": "the-live-green-co-cl",
+      "degree": 42,
+      "n_investors": 2
+    },
+    {
+      "id": "siloreal",
+      "name": "SiloReal",
+      "theme": "Digital AgTech & Agrifintech",
+      "pagerank": 0.1304,
+      "betweenness": 49.1363,
+      "clustering": 0.6397,
+      "community": "the-live-green-co-cl",
+      "degree": 19,
+      "n_investors": 3
+    },
+    {
+      "id": "terramagna",
+      "name": "TerraMagna",
+      "theme": "Digital AgTech & Agrifintech",
+      "pagerank": 0.3205,
+      "betweenness": 103.0196,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 30,
+      "n_investors": 2
+    },
+    {
+      "id": "traive",
+      "name": "Traive",
+      "theme": "Digital AgTech & Agrifintech",
+      "pagerank": 0.5339,
+      "betweenness": 191.6891,
+      "clustering": 0.6318,
+      "community": "the-live-green-co-cl",
+      "degree": 52,
+      "n_investors": 7
+    },
+    {
+      "id": "verqor",
+      "name": "Verqor",
+      "theme": "Digital AgTech & Agrifintech",
+      "pagerank": 0.6953,
+      "betweenness": 267.1608,
+      "clustering": 0.5526,
+      "community": "the-live-green-co-cl",
+      "degree": 67,
+      "n_investors": 2
+    },
+    {
+      "id": "argentag",
+      "name": "ArgenTAG",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.3529,
+      "betweenness": 657.3068,
+      "clustering": 0.6422,
+      "community": "the-live-green-co-cl",
+      "degree": 235,
+      "n_investors": 7
+    },
+    {
+      "id": "bitgenia",
+      "name": "Bitgenia",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.3001,
+      "betweenness": 627.9119,
+      "clustering": 0.6997,
+      "community": "the-live-green-co-cl",
+      "degree": 215,
+      "n_investors": 3
+    },
+    {
+      "id": "genotyping",
+      "name": "Genotyping",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.4083,
+      "betweenness": 134.5907,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 37,
+      "n_investors": 1
+    },
+    {
+      "id": "gen-t-br",
+      "name": "Gen-t",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.223,
+      "betweenness": 0.6931,
+      "clustering": 0,
+      "community": "gen-t-br",
+      "degree": 1,
+      "n_investors": 2
+    },
+    {
+      "id": "stamm-ar",
+      "name": "Stamm",
+      "theme": "Biomanufacturing & Platform Technologies",
+      "pagerank": 0.2504,
+      "betweenness": 581.2865,
+      "clustering": 0.7742,
+      "community": "the-live-green-co-cl",
+      "degree": 210,
+      "n_investors": 3
+    },
+    {
+      "id": "avatar_medtech",
+      "name": "AVaTAR MedTech",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.1249,
+      "betweenness": 484.0119,
+      "clustering": 0.9959,
+      "community": "the-live-green-co-cl",
+      "degree": 185,
+      "n_investors": 2
+    },
+    {
+      "id": "phylumtech",
+      "name": "PhylumTech",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.1231,
+      "betweenness": 41.5888,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 23,
+      "n_investors": 2
+    },
+    {
+      "id": "plamic_biotech",
+      "name": "Plamic Biotech",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.1229,
+      "betweenness": 478.3723,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 103,
+      "n_investors": 1
+    },
+    {
+      "id": "tensor-care",
+      "name": "Tensor Care",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.1839,
+      "betweenness": 103.0196,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 40,
+      "n_investors": 2
+    },
+    {
+      "id": "baxxis-medtech-cl",
+      "name": "Baxxis Medtech",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.1231,
+      "betweenness": 41.5888,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 23,
+      "n_investors": 2
+    },
+    {
+      "id": "arcomed",
+      "name": "Arcomed",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.3216,
+      "betweenness": 221.3943,
+      "clustering": 0.5394,
+      "community": "the-live-green-co-cl",
+      "degree": 55,
+      "n_investors": 2
+    },
+    {
+      "id": "biomakers",
+      "name": "Biomakers",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.3781,
+      "betweenness": 186.8074,
+      "clustering": 0.4982,
+      "community": "the-live-green-co-cl",
+      "degree": 48,
+      "n_investors": 3
+    },
+    {
+      "id": "bleps_vision",
+      "name": "Bleps Vision",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.1823,
+      "betweenness": 103.0196,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 30,
+      "n_investors": 1
+    },
+    {
+      "id": "caspr_biotech",
+      "name": "Caspr Biotech",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.1975,
+      "betweenness": 529.4674,
+      "clustering": 0.8647,
+      "community": "the-live-green-co-cl",
+      "degree": 201,
+      "n_investors": 6
+    },
+    {
+      "id": "delee",
+      "name": "Delee",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.1839,
+      "betweenness": 103.0196,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 40,
+      "n_investors": 2
+    },
+    {
+      "id": "embryoxite",
+      "name": "Embryoxite",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.1249,
+      "betweenness": 484.0119,
+      "clustering": 0.9959,
+      "community": "the-live-green-co-cl",
+      "degree": 185,
+      "n_investors": 2
+    },
+    {
+      "id": "enteria",
+      "name": "Enteria",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.1249,
+      "betweenness": 484.0119,
+      "clustering": 0.9959,
+      "community": "the-live-green-co-cl",
+      "degree": 185,
+      "n_investors": 2
+    },
+    {
+      "id": "epiliquid",
+      "name": "Epiliquid",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.2636,
+      "betweenness": 157.9704,
+      "clustering": 0.5017,
+      "community": "the-live-green-co-cl",
+      "degree": 45,
+      "n_investors": 3
+    },
+    {
+      "id": "gameet",
+      "name": "Gameet",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.296,
+      "betweenness": 64.9119,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 21,
+      "n_investors": 1
+    },
+    {
+      "id": "gisens_biotech",
+      "name": "Gisens Biotech",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.1249,
+      "betweenness": 484.0119,
+      "clustering": 0.9959,
+      "community": "the-live-green-co-cl",
+      "degree": 185,
+      "n_investors": 2
+    },
+    {
+      "id": "imvalv",
+      "name": "Imvalv",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.1198,
+      "betweenness": 41.5888,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 15,
+      "n_investors": 1
+    },
+    {
+      "id": "limay_biosciences",
+      "name": "Limay Biosciences",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.4191,
+      "betweenness": 129.993,
+      "clustering": 0.5063,
+      "community": "the-live-green-co-cl",
+      "degree": 44,
+      "n_investors": 3
+    },
+    {
+      "id": "magnamed",
+      "name": "Magnamed",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.4253,
+      "betweenness": 139.2153,
+      "clustering": 0.9516,
+      "community": "the-live-green-co-cl",
+      "degree": 40,
+      "n_investors": 2
+    },
+    {
+      "id": "microgenesis",
+      "name": "Microgenesis",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.1632,
+      "betweenness": 529.4674,
+      "clustering": 0.8689,
+      "community": "the-live-green-co-cl",
+      "degree": 203,
+      "n_investors": 6
+    },
+    {
+      "id": "multiplai_health",
+      "name": "MultiplAI Health",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.4605,
+      "betweenness": 129.993,
+      "clustering": 0.5063,
+      "community": "the-live-green-co-cl",
+      "degree": 36,
+      "n_investors": 2
+    },
+    {
+      "id": "mzp",
+      "name": "MZP",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.1229,
+      "betweenness": 478.3723,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 103,
+      "n_investors": 1
+    },
+    {
+      "id": "nanojump_bio",
+      "name": "Nano Jump Bio",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.1249,
+      "betweenness": 484.0119,
+      "clustering": 0.9959,
+      "community": "the-live-green-co-cl",
+      "degree": 185,
+      "n_investors": 2
+    },
+    {
+      "id": "oncoliq",
+      "name": "Oncoliq",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.464,
+      "betweenness": 191.6891,
+      "clustering": 0.4498,
+      "community": "the-live-green-co-cl",
+      "degree": 49,
+      "n_investors": 3
+    },
+    {
+      "id": "pill_ar",
+      "name": "Pill.AR",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.296,
+      "betweenness": 64.9119,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 21,
+      "n_investors": 1
+    },
+    {
+      "id": "pregen",
+      "name": "PreGen",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.1249,
+      "betweenness": 484.0119,
+      "clustering": 0.9959,
+      "community": "the-live-green-co-cl",
+      "degree": 185,
+      "n_investors": 2
+    },
+    {
+      "id": "samay",
+      "name": "Samay",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.1652,
+      "betweenness": 41.5888,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 15,
+      "n_investors": 1
+    },
+    {
+      "id": "tell",
+      "name": "Tell",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.4713,
+      "betweenness": 196.5913,
+      "clustering": 0.5298,
+      "community": "the-live-green-co-cl",
+      "degree": 51,
+      "n_investors": 2
+    },
+    {
+      "id": "ubique_bio",
+      "name": "Ubique Bio",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.1229,
+      "betweenness": 478.3723,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 103,
+      "n_investors": 1
+    },
+    {
+      "id": "viewmind",
+      "name": "ViewMind",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.2892,
+      "betweenness": 103.0196,
+      "clustering": 0.4874,
+      "community": "the-live-green-co-cl",
+      "degree": 38,
+      "n_investors": 3
+    },
+    {
+      "id": "zev_biotech",
+      "name": "ZEV Biotech",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.1229,
+      "betweenness": 478.3723,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 103,
+      "n_investors": 3
+    },
+    {
+      "id": "brain4care-br",
+      "name": "Brain4care",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.2465,
+      "betweenness": 30.7794,
+      "clustering": 0.8333,
+      "community": "the-live-green-co-cl",
+      "degree": 12,
+      "n_investors": 2
+    },
+    {
+      "id": "genial-care-br",
+      "name": "Genial Care",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.1321,
+      "betweenness": 0.6931,
+      "clustering": 0,
+      "community": "the-live-green-co-cl",
+      "degree": 1,
+      "n_investors": 3
+    },
+    {
+      "id": "beep-saude-br",
+      "name": "Beep Sa\u00fade",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.2113,
+      "betweenness": 11.6755,
+      "clustering": 0.4,
+      "community": "the-live-green-co-cl",
+      "degree": 6,
+      "n_investors": 3
+    },
+    {
+      "id": "avedian-ar",
+      "name": "Avedian",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.1229,
+      "betweenness": 478.3723,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 103,
+      "n_investors": 2
+    },
+    {
+      "id": "examedi-cl",
+      "name": "Examedi",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.2489,
+      "betweenness": 2.1972,
+      "clustering": 0.0,
+      "community": "the-live-green-co-cl",
+      "degree": 2,
+      "n_investors": 2
+    },
+    {
+      "id": "eva-mx",
+      "name": "Eva",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.3379,
+      "betweenness": 11.6755,
+      "clustering": 0.2667,
+      "community": "the-live-green-co-cl",
+      "degree": 6,
+      "n_investors": 3
+    },
+    {
+      "id": "unima-mx",
+      "name": "Unima",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.1241,
+      "betweenness": 4.1589,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 3,
+      "n_investors": 1
+    },
+    {
+      "id": "kura-biotec-mx",
+      "name": "KURA Biotec",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.1241,
+      "betweenness": 4.1589,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 3,
+      "n_investors": 1
+    },
+    {
+      "id": "hilab-br",
+      "name": "Hilab",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.0863,
+      "betweenness": 11.6755,
+      "clustering": 0.6,
+      "community": "the-live-green-co-cl",
+      "degree": 6,
+      "n_investors": 3
+    },
+    {
+      "id": "reddot-bio-br",
+      "name": "Reddot Bio",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.1396,
+      "betweenness": 14.5561,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 7,
+      "n_investors": 1
+    },
+    {
+      "id": "movet-co",
+      "name": "Movet",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.0004,
+      "betweenness": 0,
+      "clustering": 0,
+      "community": "movet-co",
+      "degree": 0,
+      "n_investors": 2
+    },
+    {
+      "id": "levita-magnetics-cl",
+      "name": "Levita Magnetics",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.0004,
+      "betweenness": 0,
+      "clustering": 0,
+      "community": "levita-magnetics-cl",
+      "degree": 0,
+      "n_investors": 1
+    },
+    {
+      "id": "koltin-mx",
+      "name": "Koltin",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.0004,
+      "betweenness": 0,
+      "clustering": 0,
+      "community": "koltin-mx",
+      "degree": 0,
+      "n_investors": 2
+    },
+    {
+      "id": "thyroidprint",
+      "name": "ThyroidPrint",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.0968,
+      "betweenness": 23.979,
+      "clustering": 0.8,
+      "community": "the-live-green-co-cl",
+      "degree": 10,
+      "n_investors": 3
+    },
+    {
+      "id": "mendelics",
+      "name": "Mendelics",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.1686,
+      "betweenness": 8.9588,
+      "clustering": 0.4,
+      "community": "the-live-green-co-cl",
+      "degree": 5,
+      "n_investors": 2
+    },
+    {
+      "id": "olho_do_dono",
+      "name": "Olho do Dono",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.0004,
+      "betweenness": 0,
+      "clustering": 0,
+      "community": "olho_do_dono",
+      "degree": 0,
+      "n_investors": 1
+    },
+    {
+      "id": "neuralmed",
+      "name": "NeuralMed",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.4452,
+      "betweenness": 0.6931,
+      "clustering": 0,
+      "community": "ejido-verde-mx",
+      "degree": 1,
+      "n_investors": 2
+    },
+    {
+      "id": "caspr_biotech_acq_by_amazon",
+      "name": "Caspr Biotech (acq. by Amazon)",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.1229,
+      "betweenness": 478.3723,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 103,
+      "n_investors": 1
+    },
+    {
+      "id": "corsync",
+      "name": "Cor.Sync",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.0272,
+      "betweenness": 4.1589,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 4,
+      "n_investors": 2
+    },
+    {
+      "id": "limay",
+      "name": "Limay",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.1229,
+      "betweenness": 478.3723,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 103,
+      "n_investors": 1
+    },
+    {
+      "id": "biosens",
+      "name": "Biosens",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.1198,
+      "betweenness": 41.5888,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 15,
+      "n_investors": 1
+    },
+    {
+      "id": "grupo_diagnostico_aries",
+      "name": "Grupo Diagnostico Aries",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.0004,
+      "betweenness": 0,
+      "clustering": 0,
+      "community": "grupo_diagnostico_aries",
+      "degree": 0,
+      "n_investors": 1
+    },
+    {
+      "id": "bitmec",
+      "name": "Bitmec",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.0461,
+      "betweenness": 34.3077,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 13,
+      "n_investors": 1
+    },
+    {
+      "id": "tismoo",
+      "name": "Tismoo",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.2168,
+      "betweenness": 27.334,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 11,
+      "n_investors": 1
+    },
+    {
+      "id": "genomika_diagnosticos",
+      "name": "Genomika Diagnosticos",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.0579,
+      "betweenness": 6.4378,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 4,
+      "n_investors": 1
+    },
+    {
+      "id": "thermy",
+      "name": "Thermy",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.1229,
+      "betweenness": 478.3723,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 103,
+      "n_investors": 1
+    },
+    {
+      "id": "ardan",
+      "name": "Ardan",
+      "theme": "Therapeutics",
+      "pagerank": 0.1231,
+      "betweenness": 41.5888,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 23,
+      "n_investors": 2
+    },
+    {
+      "id": "biosynaptica",
+      "name": "BioSynaptica",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.4452,
+      "betweenness": 11.6755,
+      "clustering": 1.0,
+      "community": "bioheuris",
+      "degree": 6,
+      "n_investors": 1
+    },
+    {
+      "id": "cytbac",
+      "name": "Cytbac",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.1249,
+      "betweenness": 484.0119,
+      "clustering": 0.9959,
+      "community": "the-live-green-co-cl",
+      "degree": 185,
+      "n_investors": 2
+    },
+    {
+      "id": "mesenchyal_t",
+      "name": "Mesenchyal-T",
+      "theme": "Therapeutics",
+      "pagerank": 0.296,
+      "betweenness": 64.9119,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 21,
+      "n_investors": 1
+    },
+    {
+      "id": "momentum-therapeutics",
+      "name": "Momentum Therapeutics",
+      "theme": "Therapeutics",
+      "pagerank": 0.1652,
+      "betweenness": 41.5888,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 15,
+      "n_investors": 1
+    },
+    {
+      "id": "new_organs_biotech",
+      "name": "New Organs Biotech",
+      "theme": "Therapeutics",
+      "pagerank": 0.1249,
+      "betweenness": 484.0119,
+      "clustering": 0.9959,
+      "community": "the-live-green-co-cl",
+      "degree": 185,
+      "n_investors": 2
+    },
+    {
+      "id": "omics",
+      "name": "OMICS",
+      "theme": "Therapeutics",
+      "pagerank": 0.316,
+      "betweenness": 120.8818,
+      "clustering": 0.6025,
+      "community": "the-live-green-co-cl",
+      "degree": 34,
+      "n_investors": 2
+    },
+    {
+      "id": "pepton",
+      "name": "Pepton",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.1652,
+      "betweenness": 94.2843,
+      "clustering": 0.5,
+      "community": "the-live-green-co-cl",
+      "degree": 28,
+      "n_investors": 2
+    },
+    {
+      "id": "qnity",
+      "name": "Qnity",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.1249,
+      "betweenness": 484.0119,
+      "clustering": 0.9959,
+      "community": "the-live-green-co-cl",
+      "degree": 185,
+      "n_investors": 2
+    },
+    {
+      "id": "resistia",
+      "name": "Resistia",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.3001,
+      "betweenness": 627.9119,
+      "clustering": 0.6997,
+      "community": "the-live-green-co-cl",
+      "degree": 215,
+      "n_investors": 3
+    },
+    {
+      "id": "stamm",
+      "name": "St\u00e4mm",
+      "theme": "Biomanufacturing & Platform Technologies",
+      "pagerank": 0.373,
+      "betweenness": 675.0338,
+      "clustering": 0.6158,
+      "community": "the-live-green-co-cl",
+      "degree": 243,
+      "n_investors": 14
+    },
+    {
+      "id": "untech",
+      "name": "UnTech",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.4452,
+      "betweenness": 11.6755,
+      "clustering": 1.0,
+      "community": "bioheuris",
+      "degree": 6,
+      "n_investors": 1
+    },
+    {
+      "id": "xeptiva",
+      "name": "Xeptiva",
+      "theme": "Therapeutics",
+      "pagerank": 0.1652,
+      "betweenness": 41.5888,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 15,
+      "n_investors": 1
+    },
+    {
+      "id": "mabxience-ar",
+      "name": "mAbxience",
+      "theme": "Biomanufacturing & Platform Technologies",
+      "pagerank": 0.065,
+      "betweenness": 4.1589,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 3,
+      "n_investors": 1
+    },
+    {
+      "id": "biosidus-ar",
+      "name": "Biosidus",
+      "theme": "Therapeutics",
+      "pagerank": 0.065,
+      "betweenness": 4.1589,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 3,
+      "n_investors": 1
+    },
+    {
+      "id": "inmunova-ar",
+      "name": "Inmunova",
+      "theme": "Therapeutics",
+      "pagerank": 0.065,
+      "betweenness": 4.1589,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 3,
+      "n_investors": 1
+    },
+    {
+      "id": "invitrall",
+      "name": "Invitrall",
+      "theme": "Therapeutics",
+      "pagerank": 0.1249,
+      "betweenness": 484.0119,
+      "clustering": 0.9959,
+      "community": "the-live-green-co-cl",
+      "degree": 185,
+      "n_investors": 2
+    },
+    {
+      "id": "neocell",
+      "name": "Neocell",
+      "theme": "Biomanufacturing & Platform Technologies",
+      "pagerank": 0.1249,
+      "betweenness": 484.0119,
+      "clustering": 0.9959,
+      "community": "the-live-green-co-cl",
+      "degree": 185,
+      "n_investors": 2
+    },
+    {
+      "id": "phagelab",
+      "name": "PhageLab",
+      "theme": "Therapeutics",
+      "pagerank": 0.3968,
+      "betweenness": 143.8663,
+      "clustering": 0.6586,
+      "community": "the-live-green-co-cl",
+      "degree": 39,
+      "n_investors": 5
+    },
+    {
+      "id": "sciphage",
+      "name": "SciPhage",
+      "theme": "Therapeutics",
+      "pagerank": 0.5018,
+      "betweenness": 246.6524,
+      "clustering": 0.5045,
+      "community": "the-live-green-co-cl",
+      "degree": 71,
+      "n_investors": 4
+    },
+    {
+      "id": "recepta_biopharma",
+      "name": "RECEPTA Biopharma",
+      "theme": "Therapeutics",
+      "pagerank": 0.223,
+      "betweenness": 0.6931,
+      "clustering": 0,
+      "community": "gen-t-br",
+      "degree": 1,
+      "n_investors": 1
+    },
+    {
+      "id": "algalife",
+      "name": "Algalife",
+      "theme": "Biomanufacturing & Platform Technologies",
+      "pagerank": 0.1249,
+      "betweenness": 484.0119,
+      "clustering": 0.9959,
+      "community": "the-live-green-co-cl",
+      "degree": 186,
+      "n_investors": 4
+    },
+    {
+      "id": "apexzymes",
+      "name": "APEXzymes",
+      "theme": "Biomanufacturing & Platform Technologies",
+      "pagerank": 0.1555,
+      "betweenness": 500.988,
+      "clustering": 0.9423,
+      "community": "the-live-green-co-cl",
+      "degree": 190,
+      "n_investors": 3
+    },
+    {
+      "id": "enzyva",
+      "name": "Enzyva",
+      "theme": "Biomanufacturing & Platform Technologies",
+      "pagerank": 0.1555,
+      "betweenness": 500.988,
+      "clustering": 0.9423,
+      "community": "the-live-green-co-cl",
+      "degree": 190,
+      "n_investors": 3
+    },
+    {
+      "id": "geoprot",
+      "name": "Geoprot",
+      "theme": "Biomanufacturing & Platform Technologies",
+      "pagerank": 0.1249,
+      "betweenness": 484.0119,
+      "clustering": 0.9959,
+      "community": "the-live-green-co-cl",
+      "degree": 185,
+      "n_investors": 2
+    },
+    {
+      "id": "keclon",
+      "name": "Keclon",
+      "theme": "Biomanufacturing & Platform Technologies",
+      "pagerank": 0.0004,
+      "betweenness": 0,
+      "clustering": 0,
+      "community": "keclon",
+      "degree": 0,
+      "n_investors": 1
+    },
+    {
+      "id": "mavios",
+      "name": "Mavios",
+      "theme": "Biomanufacturing & Platform Technologies",
+      "pagerank": 0.1249,
+      "betweenness": 484.0119,
+      "clustering": 0.9959,
+      "community": "the-live-green-co-cl",
+      "degree": 185,
+      "n_investors": 2
+    },
+    {
+      "id": "neoprospecta-br",
+      "name": "Neoprospecta",
+      "theme": "Biomanufacturing & Platform Technologies",
+      "pagerank": 0.0004,
+      "betweenness": 0,
+      "clustering": 0,
+      "community": "neoprospecta-br",
+      "degree": 0,
+      "n_investors": 3
+    },
+    {
+      "id": "sistema-bio-mx",
+      "name": "Sistema.bio",
+      "theme": "Biomaterials & Green Chemistry",
+      "pagerank": 0.0221,
+      "betweenness": 0.6931,
+      "clustering": 0,
+      "community": "the-live-green-co-cl",
+      "degree": 1,
+      "n_investors": 5
+    },
+    {
+      "id": "mothership-materials-cl",
+      "name": "Mothership Materials",
+      "theme": "Biomaterials & Green Chemistry",
+      "pagerank": 0.1048,
+      "betweenness": 14.5561,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 7,
+      "n_investors": 1
+    },
+    {
+      "id": "alkemio",
+      "name": "Alkemio",
+      "theme": "Biomaterials & Green Chemistry",
+      "pagerank": 0.1229,
+      "betweenness": 478.3723,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 103,
+      "n_investors": 1
+    },
+    {
+      "id": "branch_energy",
+      "name": "Branch Energy",
+      "theme": "Nature & Ecosystem Tech",
+      "pagerank": 0.1397,
+      "betweenness": 81.4524,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 25,
+      "n_investors": 1
+    },
+    {
+      "id": "einsted",
+      "name": "Einsted",
+      "theme": "Biomaterials & Green Chemistry",
+      "pagerank": 0.1249,
+      "betweenness": 484.0119,
+      "clustering": 0.9959,
+      "community": "the-live-green-co-cl",
+      "degree": 185,
+      "n_investors": 2
+    },
+    {
+      "id": "gigablue",
+      "name": "Gigablue",
+      "theme": "Nature & Ecosystem Tech",
+      "pagerank": 0.1397,
+      "betweenness": 81.4524,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 25,
+      "n_investors": 1
+    },
+    {
+      "id": "huiro",
+      "name": "Huiro",
+      "theme": "Nature & Ecosystem Tech",
+      "pagerank": 0.0945,
+      "betweenness": 20.7233,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 9,
+      "n_investors": 1
+    },
+    {
+      "id": "muta",
+      "name": "MUTA",
+      "theme": "Biomaterials & Green Chemistry",
+      "pagerank": 0.1084,
+      "betweenness": 27.334,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 11,
+      "n_investors": 1
+    },
+    {
+      "id": "poas_bioenergy",
+      "name": "Po\u00e1s Bioenergy",
+      "theme": "Nature & Ecosystem Tech",
+      "pagerank": 0.0945,
+      "betweenness": 20.7233,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 9,
+      "n_investors": 1
+    },
+    {
+      "id": "ruuts",
+      "name": "Ruuts",
+      "theme": "Nature & Ecosystem Tech",
+      "pagerank": 0.1649,
+      "betweenness": 49.1363,
+      "clustering": 0.6912,
+      "community": "the-live-green-co-cl",
+      "degree": 24,
+      "n_investors": 3
+    },
+    {
+      "id": "solfium",
+      "name": "Solfium",
+      "theme": "Nature & Ecosystem Tech",
+      "pagerank": 0.2064,
+      "betweenness": 49.1363,
+      "clustering": 0.5809,
+      "community": "the-live-green-co-cl",
+      "degree": 18,
+      "n_investors": 2
+    },
+    {
+      "id": "hif-global-cl",
+      "name": "HIF Global",
+      "theme": "Nature & Ecosystem Tech",
+      "pagerank": 0.0004,
+      "betweenness": 0,
+      "clustering": 0,
+      "community": "hif-global-cl",
+      "degree": 0,
+      "n_investors": 1
+    },
+    {
+      "id": "earth-ocean-farms-mx",
+      "name": "Earth Ocean Farms",
+      "theme": "Nature & Ecosystem Tech",
+      "pagerank": 0.0004,
+      "betweenness": 0,
+      "clustering": 0,
+      "community": "earth-ocean-farms-mx",
+      "degree": 0,
+      "n_investors": 1
+    },
+    {
+      "id": "cellrep",
+      "name": "CellRep",
+      "theme": "Therapeutics",
+      "pagerank": 0.1249,
+      "betweenness": 484.0119,
+      "clustering": 0.9959,
+      "community": "the-live-green-co-cl",
+      "degree": 185,
+      "n_investors": 2
+    },
+    {
+      "id": "exomas",
+      "name": "Exomas",
+      "theme": "Therapeutics",
+      "pagerank": 0.296,
+      "betweenness": 64.9119,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 21,
+      "n_investors": 1
+    },
+    {
+      "id": "eywa_biotech",
+      "name": "Eywa Biotech",
+      "theme": "Therapeutics",
+      "pagerank": 0.3001,
+      "betweenness": 627.9119,
+      "clustering": 0.6997,
+      "community": "the-live-green-co-cl",
+      "degree": 225,
+      "n_investors": 4
+    },
+    {
+      "id": "hexembio",
+      "name": "HeXemBio",
+      "theme": "Therapeutics",
+      "pagerank": 0.1652,
+      "betweenness": 41.5888,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 15,
+      "n_investors": 1
+    },
+    {
+      "id": "inner_cosmos",
+      "name": "Inner Cosmos",
+      "theme": "Therapeutics",
+      "pagerank": 0.1397,
+      "betweenness": 81.4524,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 25,
+      "n_investors": 1
+    },
+    {
+      "id": "ocular_bio_design",
+      "name": "Ocular Bio Design",
+      "theme": "Therapeutics",
+      "pagerank": 0.1249,
+      "betweenness": 484.0119,
+      "clustering": 0.9959,
+      "community": "the-live-green-co-cl",
+      "degree": 185,
+      "n_investors": 2
+    },
+    {
+      "id": "synthetic_ocular_restoration",
+      "name": "Synthetic Ocular Restoration",
+      "theme": "Therapeutics",
+      "pagerank": 0.1229,
+      "betweenness": 478.3723,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 103,
+      "n_investors": 1
+    },
+    {
+      "id": "vyro-bio-br",
+      "name": "Vyro Bio",
+      "theme": "Therapeutics",
+      "pagerank": 0.3274,
+      "betweenness": 45.3314,
+      "clustering": 0.625,
+      "community": "the-live-green-co-cl",
+      "degree": 18,
+      "n_investors": 2
+    },
+    {
+      "id": "cells-for-cells-cl",
+      "name": "Cells for Cells",
+      "theme": "Therapeutics",
+      "pagerank": 0.0461,
+      "betweenness": 34.3077,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 13,
+      "n_investors": 1
+    },
+    {
+      "id": "amnova-biotech-cl",
+      "name": "Amnova Biotech",
+      "theme": "Therapeutics",
+      "pagerank": 0.1231,
+      "betweenness": 41.5888,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 23,
+      "n_investors": 2
+    },
+    {
+      "id": "tissuelabs",
+      "name": "TissueLabs",
+      "theme": "Therapeutics",
+      "pagerank": 0.4057,
+      "betweenness": 153.2445,
+      "clustering": 0.6012,
+      "community": "the-live-green-co-cl",
+      "degree": 41,
+      "n_investors": 2
+    },
+    {
+      "id": "pannex_therapeutics",
+      "name": "Pannex Therapeutics",
+      "theme": "Therapeutics",
+      "pagerank": 0.1823,
+      "betweenness": 103.0196,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 30,
+      "n_investors": 1
+    },
+    {
+      "id": "aplife_biotech",
+      "name": "Aplife Biotech",
+      "theme": "Therapeutics",
+      "pagerank": 0.2483,
+      "betweenness": 575.4949,
+      "clustering": 0.7759,
+      "community": "the-live-green-co-cl",
+      "degree": 133,
+      "n_investors": 3
+    },
+    {
+      "id": "autem-medical",
+      "name": "Autem Medical",
+      "theme": "Therapeutics",
+      "pagerank": 0.1652,
+      "betweenness": 41.5888,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 15,
+      "n_investors": 1
+    },
+    {
+      "id": "bioseek",
+      "name": "Bioseek",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.1231,
+      "betweenness": 41.5888,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 23,
+      "n_investors": 2
+    },
+    {
+      "id": "cellco",
+      "name": "CellCo",
+      "theme": "Therapeutics",
+      "pagerank": 0.1249,
+      "betweenness": 484.0119,
+      "clustering": 0.9959,
+      "community": "the-live-green-co-cl",
+      "degree": 185,
+      "n_investors": 2
+    },
+    {
+      "id": "dogma_biotech",
+      "name": "Dogma Biotech",
+      "theme": "Therapeutics",
+      "pagerank": 0.1249,
+      "betweenness": 484.0119,
+      "clustering": 0.9959,
+      "community": "the-live-green-co-cl",
+      "degree": 185,
+      "n_investors": 2
+    },
+    {
+      "id": "fecundis",
+      "name": "Fecundis",
+      "theme": "Therapeutics",
+      "pagerank": 0.2981,
+      "betweenness": 563.9366,
+      "clustering": 0.7891,
+      "community": "the-live-green-co-cl",
+      "degree": 200,
+      "n_investors": 3
+    },
+    {
+      "id": "onco_precision",
+      "name": "Onco Precision",
+      "theme": "Therapeutics",
+      "pagerank": 0.2861,
+      "betweenness": 622.056,
+      "clustering": 0.6997,
+      "community": "the-live-green-co-cl",
+      "degree": 228,
+      "n_investors": 8
+    },
+    {
+      "id": "spherebio",
+      "name": "SphereBio",
+      "theme": "Therapeutics",
+      "pagerank": 0.1229,
+      "betweenness": 478.3723,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 103,
+      "n_investors": 1
+    },
+    {
+      "id": "tesabio_ai",
+      "name": "Tesabio.ai",
+      "theme": "Therapeutics",
+      "pagerank": 0.1249,
+      "betweenness": 484.0119,
+      "clustering": 0.9959,
+      "community": "the-live-green-co-cl",
+      "degree": 185,
+      "n_investors": 2
+    },
+    {
+      "id": "peptidus-biotech-br",
+      "name": "Peptidus Biotech",
+      "theme": "Therapeutics",
+      "pagerank": 0.2168,
+      "betweenness": 27.334,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 11,
+      "n_investors": 1
+    },
+    {
+      "id": "nintx-br",
+      "name": "Nintx",
+      "theme": "Therapeutics",
+      "pagerank": 0.0327,
+      "betweenness": 2.1972,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 3,
+      "n_investors": 3
+    },
+    {
+      "id": "autem-therapeutics-br",
+      "name": "Autem Therapeutics",
+      "theme": "Therapeutics",
+      "pagerank": 0.1652,
+      "betweenness": 41.5888,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 15,
+      "n_investors": 1
+    },
+    {
+      "id": "cellertz-bio-br",
+      "name": "Cellertz Bio",
+      "theme": "Therapeutics",
+      "pagerank": 0.1396,
+      "betweenness": 14.5561,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 7,
+      "n_investors": 1
+    },
+    {
+      "id": "naiad-drug-design-br",
+      "name": "NAIAD Drug Design",
+      "theme": "Therapeutics",
+      "pagerank": 0.0235,
+      "betweenness": 0.6931,
+      "clustering": 0,
+      "community": "the-live-green-co-cl",
+      "degree": 1,
+      "n_investors": 1
+    },
+    {
+      "id": "meton",
+      "name": "Meton",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.1229,
+      "betweenness": 478.3723,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 103,
+      "n_investors": 1
+    },
+    {
+      "id": "futr_bio",
+      "name": "Futr Bio",
+      "theme": "Therapeutics",
+      "pagerank": 0.1396,
+      "betweenness": 14.5561,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 7,
+      "n_investors": 1
+    },
+    {
+      "id": "xeptiva-therapeutics-uy",
+      "name": "Xeptiva Therapeutics",
+      "theme": "Therapeutics",
+      "pagerank": 0.1652,
+      "betweenness": 41.5888,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 15,
+      "n_investors": 1
+    },
+    {
+      "id": "protera-bio-cl",
+      "name": "Protera Bio",
+      "theme": "Food Systems & Alt Proteins",
+      "pagerank": 0.0381,
+      "betweenness": 11.6755,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 6,
+      "n_investors": 1
+    },
+    {
+      "id": "cellva-ingredients-br",
+      "name": "Cellva Ingredients",
+      "theme": "Food Systems & Alt Proteins",
+      "pagerank": 0.0271,
+      "betweenness": 8.9588,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 5,
+      "n_investors": 1
+    },
+    {
+      "id": "alecrim-biotech-br",
+      "name": "Alecrim Biotech",
+      "theme": "Food Systems & Alt Proteins",
+      "pagerank": 0.2385,
+      "betweenness": 45.3314,
+      "clustering": 0.5417,
+      "community": "the-live-green-co-cl",
+      "degree": 16,
+      "n_investors": 2
+    },
+    {
+      "id": "nutrissis-biotech-br",
+      "name": "Nutrissis Biotech",
+      "theme": "Food Systems & Alt Proteins",
+      "pagerank": 0.0004,
+      "betweenness": 0,
+      "clustering": 0,
+      "community": "nutrissis-biotech-br",
+      "degree": 0,
+      "n_investors": 1
+    },
+    {
+      "id": "cellmeat-brasil-br",
+      "name": "Cellmeat Brasil",
+      "theme": "Food Systems & Alt Proteins",
+      "pagerank": 0.2168,
+      "betweenness": 27.334,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 11,
+      "n_investors": 1
+    },
+    {
+      "id": "fermentlabs-co",
+      "name": "FermentLabs",
+      "theme": "Food Systems & Alt Proteins",
+      "pagerank": 0.0461,
+      "betweenness": 34.3077,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 13,
+      "n_investors": 1
+    },
+    {
+      "id": "biodiversity_intelligence",
+      "name": "Biodiversity Intelligence",
+      "theme": "Nature & Ecosystem Tech",
+      "pagerank": 0.1229,
+      "betweenness": 478.3723,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 103,
+      "n_investors": 1
+    },
+    {
+      "id": "lemu",
+      "name": "Lemu",
+      "theme": "Nature & Ecosystem Tech",
+      "pagerank": 0.0004,
+      "betweenness": 0,
+      "clustering": 0,
+      "community": "lemu",
+      "degree": 0,
+      "n_investors": 1
+    },
+    {
+      "id": "satellites_on_fire",
+      "name": "Satellites on Fire",
+      "theme": "Nature & Ecosystem Tech",
+      "pagerank": 0.4241,
+      "betweenness": 201.5134,
+      "clustering": 0.389,
+      "community": "the-live-green-co-cl",
+      "degree": 59,
+      "n_investors": 5
+    },
+    {
+      "id": "satellogic",
+      "name": "Satellogic",
+      "theme": "Nature & Ecosystem Tech",
+      "pagerank": 0.5233,
+      "betweenness": 186.8074,
+      "clustering": 0.6277,
+      "community": "the-live-green-co-cl",
+      "degree": 53,
+      "n_investors": 6
+    },
+    {
+      "id": "splight",
+      "name": "Splight",
+      "theme": "Nature & Ecosystem Tech",
+      "pagerank": 0.2953,
+      "betweenness": 56.9189,
+      "clustering": 0.3626,
+      "community": "the-live-green-co-cl",
+      "degree": 20,
+      "n_investors": 3
+    },
+    {
+      "id": "um_grau_e_meio",
+      "name": "Um Grau e Meio",
+      "theme": "Nature & Ecosystem Tech",
+      "pagerank": 0.3205,
+      "betweenness": 103.0196,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 30,
+      "n_investors": 1
+    },
+    {
+      "id": "biomas",
+      "name": "Biomas",
+      "theme": "Nature & Ecosystem Tech",
+      "pagerank": 0.1699,
+      "betweenness": 20.7233,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 9,
+      "n_investors": 1
+    },
+    {
+      "id": "carbonext",
+      "name": "Carbonext",
+      "theme": "Nature & Ecosystem Tech",
+      "pagerank": 0.1699,
+      "betweenness": 20.7233,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 9,
+      "n_investors": 1
+    },
+    {
+      "id": "courageous_land",
+      "name": "Courageous Land",
+      "theme": "Nature & Ecosystem Tech",
+      "pagerank": 0.3205,
+      "betweenness": 103.0196,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 30,
+      "n_investors": 1
+    },
+    {
+      "id": "mombak",
+      "name": "Mombak",
+      "theme": "Nature & Ecosystem Tech",
+      "pagerank": 0.1092,
+      "betweenness": 2.1972,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 2,
+      "n_investors": 3
+    },
+    {
+      "id": "moss",
+      "name": "Moss",
+      "theme": "Nature & Ecosystem Tech",
+      "pagerank": 0.4083,
+      "betweenness": 134.5907,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 37,
+      "n_investors": 1
+    },
+    {
+      "id": "nideport",
+      "name": "Nideport",
+      "theme": "Nature & Ecosystem Tech",
+      "pagerank": 0.0945,
+      "betweenness": 20.7233,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 9,
+      "n_investors": 1
+    },
+    {
+      "id": "re_green",
+      "name": "re.green",
+      "theme": "Nature & Ecosystem Tech",
+      "pagerank": 0.8894,
+      "betweenness": 2.1972,
+      "clustering": 0.0,
+      "community": "gen-t-br",
+      "degree": 2,
+      "n_investors": 4
+    },
+    {
+      "id": "circa_therapeutics",
+      "name": "Circa Therapeutics",
+      "theme": "Therapeutics",
+      "pagerank": 0.1198,
+      "betweenness": 41.5888,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 15,
+      "n_investors": 1
+    },
+    {
+      "id": "eolo_pharma",
+      "name": "Eolo Pharma",
+      "theme": "Therapeutics",
+      "pagerank": 0.1231,
+      "betweenness": 41.5888,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 23,
+      "n_investors": 2
+    },
+    {
+      "id": "scitherm_therapeutics",
+      "name": "Scitherm Therapeutics",
+      "theme": "Therapeutics",
+      "pagerank": 0.1249,
+      "betweenness": 484.0119,
+      "clustering": 0.9959,
+      "community": "the-live-green-co-cl",
+      "degree": 185,
+      "n_investors": 2
+    },
+    {
+      "id": "single_strand_biotech",
+      "name": "Single Strand Biotech",
+      "theme": "Therapeutics",
+      "pagerank": 0.1198,
+      "betweenness": 41.5888,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 15,
+      "n_investors": 1
+    },
+    {
+      "id": "andes-biotechnologies-cl",
+      "name": "Andes Biotechnologies",
+      "theme": "Therapeutics",
+      "pagerank": 0.0768,
+      "betweenness": 20.7233,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 9,
+      "n_investors": 2
+    },
+    {
+      "id": "antarka",
+      "name": "Antarka",
+      "theme": "Biomaterials & Green Chemistry",
+      "pagerank": 0.2981,
+      "betweenness": 563.9366,
+      "clustering": 0.7891,
+      "community": "the-live-green-co-cl",
+      "degree": 200,
+      "n_investors": 3
+    },
+    {
+      "id": "arqlite",
+      "name": "Arqlite",
+      "theme": "Biomaterials & Green Chemistry",
+      "pagerank": 0.1084,
+      "betweenness": 27.334,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 11,
+      "n_investors": 1
+    },
+    {
+      "id": "bioeutectics",
+      "name": "Bioeutectics",
+      "theme": "Biomaterials & Green Chemistry",
+      "pagerank": 0.1249,
+      "betweenness": 484.0119,
+      "clustering": 0.9959,
+      "community": "the-live-green-co-cl",
+      "degree": 185,
+      "n_investors": 2
+    },
+    {
+      "id": "biometallum",
+      "name": "BioMetallum",
+      "theme": "Biomaterials & Green Chemistry",
+      "pagerank": 0.296,
+      "betweenness": 64.9119,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 21,
+      "n_investors": 1
+    },
+    {
+      "id": "bioplastix",
+      "name": "Bioplastix",
+      "theme": "Biomaterials & Green Chemistry",
+      "pagerank": 0.1249,
+      "betweenness": 484.0119,
+      "clustering": 0.9959,
+      "community": "the-live-green-co-cl",
+      "degree": 185,
+      "n_investors": 2
+    },
+    {
+      "id": "break_pet",
+      "name": "BreakPET",
+      "theme": "Biomaterials & Green Chemistry",
+      "pagerank": 0.1249,
+      "betweenness": 484.0119,
+      "clustering": 0.9959,
+      "community": "the-live-green-co-cl",
+      "degree": 185,
+      "n_investors": 2
+    },
+    {
+      "id": "calfix",
+      "name": "Calfix",
+      "theme": "Biomaterials & Green Chemistry",
+      "pagerank": 0.1249,
+      "betweenness": 484.0119,
+      "clustering": 0.9959,
+      "community": "the-live-green-co-cl",
+      "degree": 185,
+      "n_investors": 2
+    },
+    {
+      "id": "circclo",
+      "name": "CIRCCLO",
+      "theme": "Biomaterials & Green Chemistry",
+      "pagerank": 0.0945,
+      "betweenness": 20.7233,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 9,
+      "n_investors": 1
+    },
+    {
+      "id": "fungi_life",
+      "name": "Fungi Life",
+      "theme": "Biomaterials & Green Chemistry",
+      "pagerank": 0.1229,
+      "betweenness": 478.3723,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 103,
+      "n_investors": 1
+    },
+    {
+      "id": "HIAMET",
+      "name": "HIAMET",
+      "theme": "Biomaterials & Green Chemistry",
+      "pagerank": 0.1249,
+      "betweenness": 484.0119,
+      "clustering": 0.9959,
+      "community": "the-live-green-co-cl",
+      "degree": 185,
+      "n_investors": 2
+    },
+    {
+      "id": "inmet",
+      "name": "INMET",
+      "theme": "Biomaterials & Green Chemistry",
+      "pagerank": 0.296,
+      "betweenness": 64.9119,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 21,
+      "n_investors": 1
+    },
+    {
+      "id": "monte-caldera-technology",
+      "name": "Monte Caldera Technology",
+      "theme": "Biomaterials & Green Chemistry",
+      "pagerank": 0.1249,
+      "betweenness": 484.0119,
+      "clustering": 0.9959,
+      "community": "the-live-green-co-cl",
+      "degree": 185,
+      "n_investors": 2
+    },
+    {
+      "id": "mycorium_biotech",
+      "name": "Mycorium Biotech",
+      "theme": "Biomaterials & Green Chemistry",
+      "pagerank": 0.296,
+      "betweenness": 64.9119,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 21,
+      "n_investors": 1
+    },
+    {
+      "id": "nairotech",
+      "name": "Nairotech",
+      "theme": "Biomaterials & Green Chemistry",
+      "pagerank": 0.4452,
+      "betweenness": 11.6755,
+      "clustering": 1.0,
+      "community": "bioheuris",
+      "degree": 6,
+      "n_investors": 1
+    },
+    {
+      "id": "patagon-fiber",
+      "name": "Patagon Fiber",
+      "theme": "Biomaterials & Green Chemistry",
+      "pagerank": 0.1839,
+      "betweenness": 103.0196,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 40,
+      "n_investors": 2
+    },
+    {
+      "id": "polymera",
+      "name": "POLYMERA",
+      "theme": "Biomaterials & Green Chemistry",
+      "pagerank": 0.1249,
+      "betweenness": 484.0119,
+      "clustering": 0.9959,
+      "community": "the-live-green-co-cl",
+      "degree": 185,
+      "n_investors": 2
+    },
+    {
+      "id": "protiva",
+      "name": "Protiva",
+      "theme": "Biomaterials & Green Chemistry",
+      "pagerank": 0.1249,
+      "betweenness": 484.0119,
+      "clustering": 0.9959,
+      "community": "the-live-green-co-cl",
+      "degree": 185,
+      "n_investors": 2
+    },
+    {
+      "id": "radial",
+      "name": "Radial",
+      "theme": "Biomaterials & Green Chemistry",
+      "pagerank": 0.1249,
+      "betweenness": 484.0119,
+      "clustering": 0.9959,
+      "community": "the-live-green-co-cl",
+      "degree": 185,
+      "n_investors": 2
+    },
+    {
+      "id": "tintte",
+      "name": "Tintte",
+      "theme": "Biomaterials & Green Chemistry",
+      "pagerank": 0.296,
+      "betweenness": 64.9119,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 21,
+      "n_investors": 1
+    },
+    {
+      "id": "strong-by-form-cl",
+      "name": "Strong by Form",
+      "theme": "Biomaterials & Green Chemistry",
+      "pagerank": 0.1048,
+      "betweenness": 14.5561,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 7,
+      "n_investors": 1
+    },
+    {
+      "id": "living-ink-us",
+      "name": "Living Ink",
+      "theme": "Biomaterials & Green Chemistry",
+      "pagerank": 0.1048,
+      "betweenness": 14.5561,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 7,
+      "n_investors": 1
+    },
+    {
+      "id": "bioplaster_research",
+      "name": "BioPlaster Research",
+      "theme": "Biomaterials & Green Chemistry",
+      "pagerank": 0.1249,
+      "betweenness": 484.0119,
+      "clustering": 0.9959,
+      "community": "the-live-green-co-cl",
+      "degree": 185,
+      "n_investors": 2
+    },
+    {
+      "id": "bioplaster_research_inc",
+      "name": "BioPlaster Research Inc",
+      "theme": "Biomaterials & Green Chemistry",
+      "pagerank": 0.1249,
+      "betweenness": 484.0119,
+      "clustering": 0.9959,
+      "community": "the-live-green-co-cl",
+      "degree": 185,
+      "n_investors": 2
+    },
+    {
+      "id": "giraffe-bio-ar",
+      "name": "Giraffe Bio",
+      "theme": "Biomaterials & Green Chemistry",
+      "pagerank": 0.0498,
+      "betweenness": 37.9127,
+      "clustering": 0.9011,
+      "community": "the-live-green-co-cl",
+      "degree": 18,
+      "n_investors": 2
+    },
+    {
+      "id": "bioelements-cl",
+      "name": "BioElements",
+      "theme": "Biomaterials & Green Chemistry",
+      "pagerank": 0.0004,
+      "betweenness": 0,
+      "clustering": 0,
+      "community": "bioelements-cl",
+      "degree": 0,
+      "n_investors": 1
+    },
+    {
+      "id": "solubio-br",
+      "name": "SoluBio",
+      "theme": "Bioinputs & Crop Resilience",
+      "pagerank": 0.4086,
+      "betweenness": 134.5907,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 38,
+      "n_investors": 2
+    },
+    {
+      "id": "atacama-biomaterials-cl",
+      "name": "Atacama Biomaterials",
+      "theme": "Biomaterials & Green Chemistry",
+      "pagerank": 0.0004,
+      "betweenness": 0,
+      "clustering": 0,
+      "community": "atacama-biomaterials-cl",
+      "degree": 0,
+      "n_investors": 2
+    },
+    {
+      "id": "ejido-verde-mx",
+      "name": "Ejido Verde",
+      "theme": "Biomaterials & Green Chemistry",
+      "pagerank": 0.4452,
+      "betweenness": 0.6931,
+      "clustering": 0,
+      "community": "ejido-verde-mx",
+      "degree": 1,
+      "n_investors": 2
+    },
+    {
+      "id": "polybion",
+      "name": "Polybion",
+      "theme": "Biomaterials & Green Chemistry",
+      "pagerank": 0.0074,
+      "betweenness": 2.1972,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 2,
+      "n_investors": 1
+    },
+    {
+      "id": "contech_brasil",
+      "name": "Contech Brasil",
+      "theme": "Biomaterials & Green Chemistry",
+      "pagerank": 0.0004,
+      "betweenness": 0,
+      "clustering": 0,
+      "community": "contech_brasil",
+      "degree": 0,
+      "n_investors": 1
+    },
+    {
+      "id": "biosolvit",
+      "name": "Biosolvit",
+      "theme": "Biomaterials & Green Chemistry",
+      "pagerank": 0.21,
+      "betweenness": 116.3699,
+      "clustering": 0.8295,
+      "community": "the-live-green-co-cl",
+      "degree": 33,
+      "n_investors": 3
+    },
+    {
+      "id": "growpack",
+      "name": "growPack",
+      "theme": "Biomaterials & Green Chemistry",
+      "pagerank": 0.0004,
+      "betweenness": 0,
+      "clustering": 0,
+      "community": "growpack",
+      "degree": 0,
+      "n_investors": 1
+    },
+    {
+      "id": "smatter",
+      "name": "Smatter",
+      "theme": "Biomaterials & Green Chemistry",
+      "pagerank": 0.0461,
+      "betweenness": 34.3077,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 13,
+      "n_investors": 1
+    },
+    {
+      "id": "apasomics",
+      "name": "Apasomics",
+      "theme": "Therapeutics",
+      "pagerank": 0.1249,
+      "betweenness": 484.0119,
+      "clustering": 0.9959,
+      "community": "the-live-green-co-cl",
+      "degree": 185,
+      "n_investors": 2
+    },
+    {
+      "id": "asclepii",
+      "name": "Asclepii",
+      "theme": "Therapeutics",
+      "pagerank": 0.1652,
+      "betweenness": 41.5888,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 15,
+      "n_investors": 1
+    },
+    {
+      "id": "ayuvant",
+      "name": "Ayuvant",
+      "theme": "Therapeutics",
+      "pagerank": 0.1884,
+      "betweenness": 98.6347,
+      "clustering": 0.7906,
+      "community": "the-live-green-co-cl",
+      "degree": 33,
+      "n_investors": 3
+    },
+    {
+      "id": "biocle",
+      "name": "BioCl",
+      "theme": "Therapeutics",
+      "pagerank": 0.1249,
+      "betweenness": 484.0119,
+      "clustering": 0.9959,
+      "community": "the-live-green-co-cl",
+      "degree": 185,
+      "n_investors": 2
+    },
+    {
+      "id": "dharma_bioscience",
+      "name": "Dharma BioScience",
+      "theme": "Therapeutics",
+      "pagerank": 0.4388,
+      "betweenness": 94.2843,
+      "clustering": 0.6111,
+      "community": "the-live-green-co-cl",
+      "degree": 28,
+      "n_investors": 2
+    },
+    {
+      "id": "libera",
+      "name": "Libera",
+      "theme": "Therapeutics",
+      "pagerank": 0.296,
+      "betweenness": 64.9119,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 21,
+      "n_investors": 1
+    },
+    {
+      "id": "lipock",
+      "name": "Lipock",
+      "theme": "Therapeutics",
+      "pagerank": 0.1249,
+      "betweenness": 484.0119,
+      "clustering": 0.9959,
+      "community": "the-live-green-co-cl",
+      "degree": 185,
+      "n_investors": 2
+    },
+    {
+      "id": "nanogrow_biotech",
+      "name": "Nanogrow Biotech",
+      "theme": "Therapeutics",
+      "pagerank": 0.1249,
+      "betweenness": 484.0119,
+      "clustering": 0.9959,
+      "community": "the-live-green-co-cl",
+      "degree": 185,
+      "n_investors": 2
+    },
+    {
+      "id": "nanoprox",
+      "name": "NanoproX",
+      "theme": "Therapeutics",
+      "pagerank": 0.1249,
+      "betweenness": 484.0119,
+      "clustering": 0.9959,
+      "community": "the-live-green-co-cl",
+      "degree": 185,
+      "n_investors": 2
+    },
+    {
+      "id": "nanotransfer",
+      "name": "Nanotransfer",
+      "theme": "Therapeutics",
+      "pagerank": 0.3001,
+      "betweenness": 627.9119,
+      "clustering": 0.6997,
+      "community": "the-live-green-co-cl",
+      "degree": 215,
+      "n_investors": 3
+    },
+    {
+      "id": "plamic",
+      "name": "Plamic",
+      "theme": "Biomanufacturing & Platform Technologies",
+      "pagerank": 0.1249,
+      "betweenness": 484.0119,
+      "clustering": 0.9959,
+      "community": "the-live-green-co-cl",
+      "degree": 185,
+      "n_investors": 2
+    },
+    {
+      "id": "radbio",
+      "name": "Radbio",
+      "theme": "Diagnostics & Devices",
+      "pagerank": 0.1198,
+      "betweenness": 41.5888,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 15,
+      "n_investors": 1
+    },
+    {
+      "id": "copptech",
+      "name": "Copptech",
+      "theme": "Biomaterials & Green Chemistry",
+      "pagerank": 0.4452,
+      "betweenness": 4.1589,
+      "clustering": 1.0,
+      "community": "agricultic-do",
+      "degree": 3,
+      "n_investors": 2
+    },
+    {
+      "id": "arakion",
+      "name": "Arakion",
+      "theme": "Bioinputs & Crop Resilience",
+      "pagerank": 0.1249,
+      "betweenness": 484.0119,
+      "clustering": 0.9959,
+      "community": "the-live-green-co-cl",
+      "degree": 185,
+      "n_investors": 2
+    },
+    {
+      "id": "beeflow",
+      "name": "Beeflow",
+      "theme": "Bioinputs & Crop Resilience",
+      "pagerank": 0.6967,
+      "betweenness": 831.2782,
+      "clustering": 0.4692,
+      "community": "the-live-green-co-cl",
+      "degree": 273,
+      "n_investors": 15
+    },
+    {
+      "id": "bsafe_biotech",
+      "name": "Bsafe Biotech",
+      "theme": "Bioinputs & Crop Resilience",
+      "pagerank": 0.1249,
+      "betweenness": 484.0119,
+      "clustering": 0.9959,
+      "community": "the-live-green-co-cl",
+      "degree": 185,
+      "n_investors": 2
+    },
+    {
+      "id": "bug_agentes_biologicos",
+      "name": "BUG Agentes Biologicos",
+      "theme": "Bioinputs & Crop Resilience",
+      "pagerank": 0.4083,
+      "betweenness": 134.5907,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 37,
+      "n_investors": 1
+    },
+    {
+      "id": "decoy",
+      "name": "Decoy",
+      "theme": "Bioinputs & Crop Resilience",
+      "pagerank": 0.4083,
+      "betweenness": 134.5907,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 37,
+      "n_investors": 1
+    },
+    {
+      "id": "genica",
+      "name": "G\u00eanica",
+      "theme": "Bioinputs & Crop Resilience",
+      "pagerank": 0.4255,
+      "betweenness": 139.2153,
+      "clustering": 0.9516,
+      "community": "the-live-green-co-cl",
+      "degree": 41,
+      "n_investors": 4
+    },
+    {
+      "id": "microin",
+      "name": "MicroIN",
+      "theme": "Bioinputs & Crop Resilience",
+      "pagerank": 0.1249,
+      "betweenness": 484.0119,
+      "clustering": 0.9959,
+      "community": "the-live-green-co-cl",
+      "degree": 185,
+      "n_investors": 2
+    },
+    {
+      "id": "nanotica",
+      "name": "Nanotica",
+      "theme": "Bioinputs & Crop Resilience",
+      "pagerank": 0.1353,
+      "betweenness": 73.0952,
+      "clustering": 0.5771,
+      "community": "the-live-green-co-cl",
+      "degree": 24,
+      "n_investors": 3
+    },
+    {
+      "id": "promip",
+      "name": "Promip",
+      "theme": "Bioinputs & Crop Resilience",
+      "pagerank": 0.4083,
+      "betweenness": 134.5907,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 37,
+      "n_investors": 2
+    },
+    {
+      "id": "solubio",
+      "name": "Solubio Tecnologias Agricolas",
+      "theme": "Bioinputs & Crop Resilience",
+      "pagerank": 0.4086,
+      "betweenness": 134.5907,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 38,
+      "n_investors": 2
+    },
+    {
+      "id": "symbiomics",
+      "name": "Symbiomics",
+      "theme": "Bioinputs & Crop Resilience",
+      "pagerank": 1.0412,
+      "betweenness": 356.9443,
+      "clustering": 0.3682,
+      "community": "the-live-green-co-cl",
+      "degree": 89,
+      "n_investors": 9
+    },
+    {
+      "id": "vexxel_biotech",
+      "name": "Vexxel Biotech",
+      "theme": "Bioinputs & Crop Resilience",
+      "pagerank": 0.1229,
+      "betweenness": 478.3723,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 103,
+      "n_investors": 1
+    },
+    {
+      "id": "agrion-agrisolutions-br",
+      "name": "Agrion Agrisolutions",
+      "theme": "Bioinputs & Crop Resilience",
+      "pagerank": 0.0004,
+      "betweenness": 0,
+      "clustering": 0,
+      "community": "agrion-agrisolutions-br",
+      "degree": 0,
+      "n_investors": 1
+    },
+    {
+      "id": "decoy-smart-control-br",
+      "name": "Decoy Smart Control",
+      "theme": "Bioinputs & Crop Resilience",
+      "pagerank": 0.4083,
+      "betweenness": 134.5907,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 37,
+      "n_investors": 1
+    },
+    {
+      "id": "botanical-solution-inc-cl",
+      "name": "Botanical Solution Inc",
+      "theme": "Bioinputs & Crop Resilience",
+      "pagerank": 0.1823,
+      "betweenness": 103.0196,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 30,
+      "n_investors": 1
+    },
+    {
+      "id": "bio-insumos-nativa-cl",
+      "name": "Bio Insumos Nativa",
+      "theme": "Bioinputs & Crop Resilience",
+      "pagerank": 0.0004,
+      "betweenness": 0,
+      "clustering": 0,
+      "community": "bio-insumos-nativa-cl",
+      "degree": 0,
+      "n_investors": 1
+    },
+    {
+      "id": "clearleaf",
+      "name": "ClearLeaf",
+      "theme": "Bioinputs & Crop Resilience",
+      "pagerank": 0.0004,
+      "betweenness": 0,
+      "clustering": 0,
+      "community": "clearleaf",
+      "degree": 0,
+      "n_investors": 1
+    },
+    {
+      "id": "nemacontrol-biologicos-br",
+      "name": "NemaControl Biologicos",
+      "theme": "Bioinputs & Crop Resilience",
+      "pagerank": 0.2186,
+      "betweenness": 27.334,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 12,
+      "n_investors": 2
+    },
+    {
+      "id": "microbiota-agricola-br",
+      "name": "Microbiota Agricola",
+      "theme": "Bioinputs & Crop Resilience",
+      "pagerank": 0.2186,
+      "betweenness": 27.334,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 12,
+      "n_investors": 2
+    },
+    {
+      "id": "biodiverso-insumos-br",
+      "name": "BioDiverso Insumos",
+      "theme": "Bioinputs & Crop Resilience",
+      "pagerank": 0.2168,
+      "betweenness": 27.334,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 11,
+      "n_investors": 1
+    },
+    {
+      "id": "caligenia",
+      "name": "Caligenia",
+      "theme": "Bioinputs & Crop Resilience",
+      "pagerank": 0.1249,
+      "betweenness": 484.0119,
+      "clustering": 0.9959,
+      "community": "the-live-green-co-cl",
+      "degree": 185,
+      "n_investors": 2
+    },
+    {
+      "id": "cyanomin",
+      "name": "CyanoMin",
+      "theme": "Biomaterials & Green Chemistry",
+      "pagerank": 0.1249,
+      "betweenness": 484.0119,
+      "clustering": 0.9959,
+      "community": "the-live-green-co-cl",
+      "degree": 185,
+      "n_investors": 2
+    },
+    {
+      "id": "inbioar",
+      "name": "Inbioar",
+      "theme": "Bioinputs & Crop Resilience",
+      "pagerank": 0.4452,
+      "betweenness": 11.6755,
+      "clustering": 1.0,
+      "community": "bioheuris",
+      "degree": 6,
+      "n_investors": 1
+    },
+    {
+      "id": "infira",
+      "name": "Infira",
+      "theme": "Bioinputs & Crop Resilience",
+      "pagerank": 0.4452,
+      "betweenness": 11.6755,
+      "clustering": 1.0,
+      "community": "bioheuris",
+      "degree": 6,
+      "n_investors": 1
+    },
+    {
+      "id": "m4life",
+      "name": "M4Life",
+      "theme": "Bioinputs & Crop Resilience",
+      "pagerank": 0.296,
+      "betweenness": 64.9119,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 21,
+      "n_investors": 1
+    },
+    {
+      "id": "nat4bio",
+      "name": "Nat4Bio",
+      "theme": "Food Systems & Alt Proteins",
+      "pagerank": 0.2042,
+      "betweenness": 535.1904,
+      "clustering": 0.8565,
+      "community": "the-live-green-co-cl",
+      "degree": 196,
+      "n_investors": 3
+    },
+    {
+      "id": "nunatak_biotech",
+      "name": "Nunatak Biotech",
+      "theme": "Bioinputs & Crop Resilience",
+      "pagerank": 0.1325,
+      "betweenness": 489.6611,
+      "clustering": 0.9782,
+      "community": "the-live-green-co-cl",
+      "degree": 186,
+      "n_investors": 3
+    },
+    {
+      "id": "puna_bio",
+      "name": "Puna Bio",
+      "theme": "Bioinputs & Crop Resilience",
+      "pagerank": 1.0969,
+      "betweenness": 997.932,
+      "clustering": 0.3654,
+      "community": "the-live-green-co-cl",
+      "degree": 295,
+      "n_investors": 12
+    },
+    {
+      "id": "qumir_nano",
+      "name": "Qumir Nano",
+      "theme": "Bioinputs & Crop Resilience",
+      "pagerank": 0.1249,
+      "betweenness": 484.0119,
+      "clustering": 0.9959,
+      "community": "the-live-green-co-cl",
+      "degree": 185,
+      "n_investors": 2
+    },
+    {
+      "id": "seedmatriz",
+      "name": "SeedMatriz",
+      "theme": "Bioinputs & Crop Resilience",
+      "pagerank": 0.4452,
+      "betweenness": 11.6755,
+      "clustering": 1.0,
+      "community": "bioheuris",
+      "degree": 6,
+      "n_investors": 1
+    },
+    {
+      "id": "soygreen",
+      "name": "SoyGREEN",
+      "theme": "Bioinputs & Crop Resilience",
+      "pagerank": 0.296,
+      "betweenness": 64.9119,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 21,
+      "n_investors": 1
+    },
+    {
+      "id": "sylvarum",
+      "name": "Sylvarum",
+      "theme": "Bioinputs & Crop Resilience",
+      "pagerank": 0.2482,
+      "betweenness": 575.4949,
+      "clustering": 0.7759,
+      "community": "the-live-green-co-cl",
+      "degree": 128,
+      "n_investors": 2
+    },
+    {
+      "id": "zavia_bio",
+      "name": "Zavia Bio",
+      "theme": "Bioinputs & Crop Resilience",
+      "pagerank": 0.2388,
+      "betweenness": 540.9223,
+      "clustering": 0.8283,
+      "community": "the-live-green-co-cl",
+      "degree": 114,
+      "n_investors": 2
+    },
+    {
+      "id": "exacta-bioscience-cl",
+      "name": "Exacta BioScience",
+      "theme": "Bioinputs & Crop Resilience",
+      "pagerank": 0.0004,
+      "betweenness": 0,
+      "clustering": 0,
+      "community": "exacta-bioscience-cl",
+      "degree": 0,
+      "n_investors": 1
+    },
+    {
+      "id": "microendo",
+      "name": "Microendo",
+      "theme": "Bioinputs & Crop Resilience",
+      "pagerank": 0.0107,
+      "betweenness": 8.9588,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 5,
+      "n_investors": 1
+    },
+    {
+      "id": "metabix_bio",
+      "name": "Metabix Bio",
+      "theme": "Bioinputs & Crop Resilience",
+      "pagerank": 0.1823,
+      "betweenness": 103.0196,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 30,
+      "n_investors": 1
+    },
+    {
+      "id": "beam_croptech",
+      "name": "BEAM CropTech",
+      "theme": "Bioinputs & Crop Resilience",
+      "pagerank": 0.296,
+      "betweenness": 64.9119,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 21,
+      "n_investors": 1
+    },
+    {
+      "id": "bioheuris",
+      "name": "Bioheuris",
+      "theme": "Bioinputs & Crop Resilience",
+      "pagerank": 0.4452,
+      "betweenness": 11.6755,
+      "clustering": 1.0,
+      "community": "bioheuris",
+      "degree": 6,
+      "n_investors": 1
+    },
+    {
+      "id": "eiru",
+      "name": "Eir\u00fa",
+      "theme": "Bioinputs & Crop Resilience",
+      "pagerank": 0.4841,
+      "betweenness": 157.9704,
+      "clustering": 0.3914,
+      "community": "the-live-green-co-cl",
+      "degree": 51,
+      "n_investors": 5
+    },
+    {
+      "id": "neocrop-technologies",
+      "name": "Neocrop Technologies",
+      "theme": "Bioinputs & Crop Resilience",
+      "pagerank": 0.1652,
+      "betweenness": 41.5888,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 15,
+      "n_investors": 1
+    },
+    {
+      "id": "semion",
+      "name": "Semion",
+      "theme": "Bioinputs & Crop Resilience",
+      "pagerank": 0.1229,
+      "betweenness": 478.3723,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 103,
+      "n_investors": 1
+    },
+    {
+      "id": "inedita-bio-br",
+      "name": "InEdita Bio",
+      "theme": "Bioinputs & Crop Resilience",
+      "pagerank": 0.3411,
+      "betweenness": 49.1363,
+      "clustering": 0.5588,
+      "community": "the-live-green-co-cl",
+      "degree": 20,
+      "n_investors": 3
+    },
+    {
+      "id": "hapiseeds-br",
+      "name": "Hapiseeds",
+      "theme": "Bioinputs & Crop Resilience",
+      "pagerank": 0.1396,
+      "betweenness": 14.5561,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 7,
+      "n_investors": 1
+    },
+    {
+      "id": "bioceres_sa",
+      "name": "Bioceres S.A.",
+      "theme": "Bioinputs & Crop Resilience",
+      "pagerank": 0.0004,
+      "betweenness": 0,
+      "clustering": 0,
+      "community": "bioceres_sa",
+      "degree": 0,
+      "n_investors": 1
+    },
+    {
+      "id": "kaiima",
+      "name": "Kaiima",
+      "theme": "Bioinputs & Crop Resilience",
+      "pagerank": 0.0004,
+      "betweenness": 0,
+      "clustering": 0,
+      "community": "kaiima",
+      "degree": 0,
+      "n_investors": 2
+    },
+    {
+      "id": "calice_biotech",
+      "name": "Calice Biotech",
+      "theme": "Bioinputs & Crop Resilience",
+      "pagerank": 0.2213,
+      "betweenness": 120.8818,
+      "clustering": 0.6595,
+      "community": "the-live-green-co-cl",
+      "degree": 36,
+      "n_investors": 5
+    },
+    {
+      "id": "bioceres-ar",
+      "name": "Bioceres",
+      "theme": "Bioinputs & Crop Resilience",
+      "pagerank": 0.1823,
+      "betweenness": 103.0196,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 30,
+      "n_investors": 1
+    },
+    {
+      "id": "done_properly",
+      "name": "Done Properly",
+      "theme": "Food Systems & Alt Proteins",
+      "pagerank": 0.4037,
+      "betweenness": 186.8074,
+      "clustering": 0.4113,
+      "community": "the-live-green-co-cl",
+      "degree": 54,
+      "n_investors": 4
+    },
+    {
+      "id": "notfossil",
+      "name": "NotFossil",
+      "theme": "Nature & Ecosystem Tech",
+      "pagerank": 0.296,
+      "betweenness": 64.9119,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 21,
+      "n_investors": 1
+    },
+    {
+      "id": "the-live-green-co-cl",
+      "name": "The Live Green Co",
+      "theme": "Food Systems & Alt Proteins",
+      "pagerank": 0.0119,
+      "betweenness": 0.6931,
+      "clustering": 0,
+      "community": "the-live-green-co-cl",
+      "degree": 1,
+      "n_investors": 1
+    },
+    {
+      "id": "atarraya-mx",
+      "name": "Atarraya",
+      "theme": "Food Systems & Alt Proteins",
+      "pagerank": 0.0018,
+      "betweenness": 0.6931,
+      "clustering": 0,
+      "community": "the-live-green-co-cl",
+      "degree": 1,
+      "n_investors": 1
+    },
+    {
+      "id": "food-for-the-future-cl",
+      "name": "Food for the Future",
+      "theme": "Food Systems & Alt Proteins",
+      "pagerank": 0.0004,
+      "betweenness": 0,
+      "clustering": 0,
+      "community": "food-for-the-future-cl",
+      "degree": 0,
+      "n_investors": 1
+    },
+    {
+      "id": "luyef-biotechnologies-cl",
+      "name": "Luyef Biotechnologies",
+      "theme": "Food Systems & Alt Proteins",
+      "pagerank": 0.2531,
+      "betweenness": 134.5907,
+      "clustering": 0.7192,
+      "community": "the-live-green-co-cl",
+      "degree": 39,
+      "n_investors": 2
+    },
+    {
+      "id": "moolec",
+      "name": "Moolec",
+      "theme": "Food Systems & Alt Proteins",
+      "pagerank": 0.0004,
+      "betweenness": 0,
+      "clustering": 0,
+      "community": "moolec",
+      "degree": 0,
+      "n_investors": 1
+    },
+    {
+      "id": "eternal_mycofood",
+      "name": "Eternal Mycofood",
+      "theme": "Food Systems & Alt Proteins",
+      "pagerank": 0.0004,
+      "betweenness": 0,
+      "clustering": 0,
+      "community": "eternal_mycofood",
+      "degree": 0,
+      "n_investors": 1
+    },
+    {
+      "id": "ecosea",
+      "name": "EcoSea",
+      "theme": "Food Systems & Alt Proteins",
+      "pagerank": 0.4452,
+      "betweenness": 4.1589,
+      "clustering": 1.0,
+      "community": "agricultic-do",
+      "degree": 3,
+      "n_investors": 1
+    },
+    {
+      "id": "micro_meat",
+      "name": "Micro Meat",
+      "theme": "Food Systems & Alt Proteins",
+      "pagerank": 0.028,
+      "betweenness": 4.1589,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 3,
+      "n_investors": 1
+    },
+    {
+      "id": "ages_bioactive",
+      "name": "Ages Bioactive",
+      "theme": "Food Systems & Alt Proteins",
+      "pagerank": 0.1699,
+      "betweenness": 20.7233,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 9,
+      "n_investors": 1
+    },
+    {
+      "id": "mycoseaweed-cl",
+      "name": "MycoSeaweed",
+      "theme": "Food Systems & Alt Proteins",
+      "pagerank": 0.0768,
+      "betweenness": 20.7233,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 9,
+      "n_investors": 1
+    },
+    {
+      "id": "pewman-innovation-cl",
+      "name": "Pewman Innovation",
+      "theme": "Bioinputs & Crop Resilience",
+      "pagerank": 0.0768,
+      "betweenness": 20.7233,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 9,
+      "n_investors": 1
+    },
+    {
+      "id": "Bee Technology",
+      "name": "Bee Technology",
+      "theme": "Food Systems & Alt Proteins",
+      "pagerank": 0.1823,
+      "betweenness": 103.0196,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 30,
+      "n_investors": 1
+    },
+    {
+      "id": "aquit",
+      "name": "Aquit",
+      "theme": "Therapeutics",
+      "pagerank": 0.3671,
+      "betweenness": 663.2084,
+      "clustering": 0.6427,
+      "community": "the-live-green-co-cl",
+      "degree": 224,
+      "n_investors": 4
+    },
+    {
+      "id": "feedvax",
+      "name": "Feedvax",
+      "theme": "Food Systems & Alt Proteins",
+      "pagerank": 0.2525,
+      "betweenness": 587.0865,
+      "clustering": 0.7615,
+      "community": "the-live-green-co-cl",
+      "degree": 212,
+      "n_investors": 6
+    },
+    {
+      "id": "werk-nvac",
+      "name": "Werk\u00e9nVac",
+      "theme": "Bioinputs & Crop Resilience",
+      "pagerank": 0.1249,
+      "betweenness": 484.0119,
+      "clustering": 0.9959,
+      "community": "the-live-green-co-cl",
+      "degree": 185,
+      "n_investors": 2
+    },
+    {
+      "id": "activaq",
+      "name": "ActivaQ",
+      "theme": "Food Systems & Alt Proteins",
+      "pagerank": 0.1823,
+      "betweenness": 103.0196,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 30,
+      "n_investors": 1
+    },
+    {
+      "id": "ictiobiotic",
+      "name": "Ictiobiotic",
+      "theme": "Food Systems & Alt Proteins",
+      "pagerank": 0.0004,
+      "betweenness": 0,
+      "clustering": 0,
+      "community": "ictiobiotic",
+      "degree": 0,
+      "n_investors": 1
+    },
+    {
+      "id": "salmoss-biotech-cl",
+      "name": "SALMOSS Biotech",
+      "theme": "Food Systems & Alt Proteins",
+      "pagerank": 0.0768,
+      "betweenness": 20.7233,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 9,
+      "n_investors": 2
+    },
+    {
+      "id": "ages",
+      "name": "AGES",
+      "theme": "Food Systems & Alt Proteins",
+      "pagerank": 0.1699,
+      "betweenness": 20.7233,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 9,
+      "n_investors": 1
+    },
+    {
+      "id": "amplify-dynamics",
+      "name": "Amplify Dynamics",
+      "theme": "Therapeutics",
+      "pagerank": 0.1839,
+      "betweenness": 103.0196,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 40,
+      "n_investors": 2
+    },
+    {
+      "id": "biolinker",
+      "name": "Biolinker Synthetic Biology",
+      "theme": "Biomanufacturing & Platform Technologies",
+      "pagerank": 0.0867,
+      "betweenness": 362.3449,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 82,
+      "n_investors": 1
+    },
+    {
+      "id": "bybug",
+      "name": "ByBug",
+      "theme": "Biomanufacturing & Platform Technologies",
+      "pagerank": 0.1249,
+      "betweenness": 484.0119,
+      "clustering": 0.9959,
+      "community": "the-live-green-co-cl",
+      "degree": 185,
+      "n_investors": 2
+    },
+    {
+      "id": "dprotein",
+      "name": "DProtein",
+      "theme": "Food Systems & Alt Proteins",
+      "pagerank": 0.0572,
+      "betweenness": 17.5778,
+      "clustering": 0.5357,
+      "community": "the-live-green-co-cl",
+      "degree": 8,
+      "n_investors": 2
+    },
+    {
+      "id": "elytron_biotech",
+      "name": "Elytron Biotech",
+      "theme": "Biomanufacturing & Platform Technologies",
+      "pagerank": 0.2042,
+      "betweenness": 535.1904,
+      "clustering": 0.8565,
+      "community": "the-live-green-co-cl",
+      "degree": 196,
+      "n_investors": 4
+    },
+    {
+      "id": "frizata",
+      "name": "Frizata",
+      "theme": "Food Systems & Alt Proteins",
+      "pagerank": 0.4083,
+      "betweenness": 134.5907,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 37,
+      "n_investors": 1
+    },
+    {
+      "id": "future_cow",
+      "name": "Future Cow",
+      "theme": "Food Systems & Alt Proteins",
+      "pagerank": 0.0354,
+      "betweenness": 14.5561,
+      "clustering": 0.6667,
+      "community": "the-live-green-co-cl",
+      "degree": 7,
+      "n_investors": 2
+    },
+    {
+      "id": "harmony-biosciences",
+      "name": "HARMONY",
+      "theme": "Biomanufacturing & Platform Technologies",
+      "pagerank": 0.1652,
+      "betweenness": 41.5888,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 15,
+      "n_investors": 1
+    },
+    {
+      "id": "imeve",
+      "name": "Imeve",
+      "theme": "Therapeutics",
+      "pagerank": 0.4083,
+      "betweenness": 134.5907,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 37,
+      "n_investors": 1
+    },
+    {
+      "id": "inprenha",
+      "name": "Inprenha",
+      "theme": "Therapeutics",
+      "pagerank": 0.4083,
+      "betweenness": 134.5907,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 37,
+      "n_investors": 1
+    },
+    {
+      "id": "laurus",
+      "name": "Laurus",
+      "theme": "Biomanufacturing & Platform Technologies",
+      "pagerank": 0.1397,
+      "betweenness": 81.4524,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 25,
+      "n_investors": 1
+    },
+    {
+      "id": "michroma",
+      "name": "Michroma",
+      "theme": "Biomaterials & Green Chemistry",
+      "pagerank": 0.1702,
+      "betweenness": 535.1904,
+      "clustering": 0.8552,
+      "community": "the-live-green-co-cl",
+      "degree": 209,
+      "n_investors": 10
+    },
+    {
+      "id": "migma",
+      "name": "MIGMA",
+      "theme": "Food Systems & Alt Proteins",
+      "pagerank": 0.1249,
+      "betweenness": 484.0119,
+      "clustering": 0.9959,
+      "community": "the-live-green-co-cl",
+      "degree": 185,
+      "n_investors": 2
+    },
+    {
+      "id": "nude",
+      "name": "Nude",
+      "theme": "Food Systems & Alt Proteins",
+      "pagerank": 0.1084,
+      "betweenness": 27.334,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 11,
+      "n_investors": 1
+    },
+    {
+      "id": "outpost",
+      "name": "Outpost",
+      "theme": "Biomanufacturing & Platform Technologies",
+      "pagerank": 0.1397,
+      "betweenness": 81.4524,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 25,
+      "n_investors": 1
+    },
+    {
+      "id": "speclab",
+      "name": "SpecLab",
+      "theme": "Biomanufacturing & Platform Technologies",
+      "pagerank": 0.4083,
+      "betweenness": 134.5907,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 37,
+      "n_investors": 1
+    },
+    {
+      "id": "tomorrow_foods",
+      "name": "Tomorrow",
+      "theme": "Food Systems & Alt Proteins",
+      "pagerank": 0.2188,
+      "betweenness": 500.988,
+      "clustering": 0.9411,
+      "community": "the-live-green-co-cl",
+      "degree": 189,
+      "n_investors": 6
+    },
+    {
+      "id": "updairy",
+      "name": "Updairy",
+      "theme": "Food Systems & Alt Proteins",
+      "pagerank": 0.1555,
+      "betweenness": 500.988,
+      "clustering": 0.9423,
+      "community": "the-live-green-co-cl",
+      "degree": 190,
+      "n_investors": 3
+    },
+    {
+      "id": "nutrition-from-water-cl",
+      "name": "Nutrition from Water",
+      "theme": "Food Systems & Alt Proteins",
+      "pagerank": 0.1048,
+      "betweenness": 14.5561,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 7,
+      "n_investors": 1
+    },
+    {
+      "id": "algaebio",
+      "name": "algaebio+",
+      "theme": "Food Systems & Alt Proteins",
+      "pagerank": 0.1249,
+      "betweenness": 484.0119,
+      "clustering": 0.9959,
+      "community": "the-live-green-co-cl",
+      "degree": 185,
+      "n_investors": 2
+    },
+    {
+      "id": "bioblends",
+      "name": "BioBlends",
+      "theme": "Food Systems & Alt Proteins",
+      "pagerank": 0.1249,
+      "betweenness": 484.0119,
+      "clustering": 0.9959,
+      "community": "the-live-green-co-cl",
+      "degree": 185,
+      "n_investors": 2
+    },
+    {
+      "id": "cell_farm",
+      "name": "Cell Farm",
+      "theme": "Food Systems & Alt Proteins",
+      "pagerank": 0.1249,
+      "betweenness": 484.0119,
+      "clustering": 0.9959,
+      "community": "the-live-green-co-cl",
+      "degree": 185,
+      "n_investors": 3
+    },
+    {
+      "id": "cellva",
+      "name": "Cellva",
+      "theme": "Food Systems & Alt Proteins",
+      "pagerank": 0.1397,
+      "betweenness": 81.4524,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 25,
+      "n_investors": 1
+    },
+    {
+      "id": "ergo_bioscience",
+      "name": "Ergo Bioscience",
+      "theme": "Food Systems & Alt Proteins",
+      "pagerank": 0.3049,
+      "betweenness": 172.2889,
+      "clustering": 0.5495,
+      "community": "the-live-green-co-cl",
+      "degree": 53,
+      "n_investors": 3
+    },
+    {
+      "id": "ergo_foods",
+      "name": "Ergo Foods",
+      "theme": "Food Systems & Alt Proteins",
+      "pagerank": 0.1397,
+      "betweenness": 81.4524,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 25,
+      "n_investors": 1
+    },
+    {
+      "id": "food4you",
+      "name": "Food4You",
+      "theme": "Food Systems & Alt Proteins",
+      "pagerank": 0.1249,
+      "betweenness": 484.0119,
+      "clustering": 0.9959,
+      "community": "the-live-green-co-cl",
+      "degree": 185,
+      "n_investors": 2
+    },
+    {
+      "id": "future_biome",
+      "name": "Future Biome",
+      "theme": "Food Systems & Alt Proteins",
+      "pagerank": 0.1229,
+      "betweenness": 478.3723,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 103,
+      "n_investors": 1
+    },
+    {
+      "id": "glycox",
+      "name": "GlycoX",
+      "theme": "Food Systems & Alt Proteins",
+      "pagerank": 0.1249,
+      "betweenness": 484.0119,
+      "clustering": 0.9959,
+      "community": "the-live-green-co-cl",
+      "degree": 185,
+      "n_investors": 2
+    },
+    {
+      "id": "heartbest",
+      "name": "Heartbest",
+      "theme": "Food Systems & Alt Proteins",
+      "pagerank": 0.3205,
+      "betweenness": 103.0196,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 30,
+      "n_investors": 1
+    },
+    {
+      "id": "innovai",
+      "name": "Innovai",
+      "theme": "Food Systems & Alt Proteins",
+      "pagerank": 0.1839,
+      "betweenness": 103.0196,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 40,
+      "n_investors": 2
+    },
+    {
+      "id": "kigui",
+      "name": "Kig\u00fci",
+      "theme": "Food Systems & Alt Proteins",
+      "pagerank": 0.6144,
+      "betweenness": 206.4552,
+      "clustering": 0.4238,
+      "community": "the-live-green-co-cl",
+      "degree": 60,
+      "n_investors": 5
+    },
+    {
+      "id": "kresko_rnatech",
+      "name": "Kresko RNAtech",
+      "theme": "Food Systems & Alt Proteins",
+      "pagerank": 0.1249,
+      "betweenness": 484.0119,
+      "clustering": 0.9959,
+      "community": "the-live-green-co-cl",
+      "degree": 185,
+      "n_investors": 2
+    },
+    {
+      "id": "levya",
+      "name": "Levya",
+      "theme": "Food Systems & Alt Proteins",
+      "pagerank": 0.1249,
+      "betweenness": 484.0119,
+      "clustering": 0.9959,
+      "community": "the-live-green-co-cl",
+      "degree": 185,
+      "n_investors": 2
+    },
+    {
+      "id": "matchetune",
+      "name": "Matchetune",
+      "theme": "Food Systems & Alt Proteins",
+      "pagerank": 0.0453,
+      "betweenness": 6.4378,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 4,
+      "n_investors": 1
+    },
+    {
+      "id": "microterra",
+      "name": "MicroTerra",
+      "theme": "Food Systems & Alt Proteins",
+      "pagerank": 0.2221,
+      "betweenness": 68.9809,
+      "clustering": 0.5628,
+      "community": "the-live-green-co-cl",
+      "degree": 22,
+      "n_investors": 2
+    },
+    {
+      "id": "nanoingreen",
+      "name": "Nanoingreen",
+      "theme": "Food Systems & Alt Proteins",
+      "pagerank": 0.1249,
+      "betweenness": 484.0119,
+      "clustering": 0.9959,
+      "community": "the-live-green-co-cl",
+      "degree": 185,
+      "n_investors": 2
+    },
+    {
+      "id": "naturannova",
+      "name": "Naturannova",
+      "theme": "Food Systems & Alt Proteins",
+      "pagerank": 0.1249,
+      "betweenness": 484.0119,
+      "clustering": 0.9959,
+      "community": "the-live-green-co-cl",
+      "degree": 185,
+      "n_investors": 2
+    },
+    {
+      "id": "syocin-biotech",
+      "name": "Syocin Biotech",
+      "theme": "Bioinputs & Crop Resilience",
+      "pagerank": 0.1372,
+      "betweenness": 495.3199,
+      "clustering": 0.9592,
+      "community": "the-live-green-co-cl",
+      "degree": 187,
+      "n_investors": 4
+    },
+    {
+      "id": "trebe_biotech",
+      "name": "Trebe Biotech",
+      "theme": "Biomanufacturing & Platform Technologies",
+      "pagerank": 0.296,
+      "betweenness": 64.9119,
+      "clustering": 1.0,
+      "community": "the-live-green-co-cl",
+      "degree": 21,
+      "n_investors": 1
+    },
+    {
+      "id": "unibaio",
+      "name": "Unibaio",
+      "theme": "Bioinputs & Crop Resilience",
+      "pagerank": 0.5469,
+      "betweenness": 246.6524,
+      "clustering": 0.409,
+      "community": "the-live-green-co-cl",
+      "degree": 72,
+      "n_investors": 4
+    }
+  ],
+  "edges": [
+    {
+      "source": "beeflow",
+      "target": "michroma",
+      "weight": 6,
+      "thickness": 3.0
+    },
+    {
+      "source": "argentag",
+      "target": "stamm",
+      "weight": 6,
+      "thickness": 3.0
+    },
+    {
+      "source": "beeflow",
+      "target": "stamm",
+      "weight": 5,
+      "thickness": 2.5
+    },
+    {
+      "source": "beeflow",
+      "target": "onco_precision",
+      "weight": 5,
+      "thickness": 2.5
+    },
+    {
+      "source": "beeflow",
+      "target": "puna_bio",
+      "weight": 5,
+      "thickness": 2.5
+    },
+    {
+      "source": "michroma",
+      "target": "microgenesis",
+      "weight": 4,
+      "thickness": 2.0
+    },
+    {
+      "source": "michroma",
+      "target": "stamm",
+      "weight": 4,
+      "thickness": 2.0
+    },
+    {
+      "source": "michroma",
+      "target": "onco_precision",
+      "weight": 4,
+      "thickness": 2.0
+    },
+    {
+      "source": "beeflow",
+      "target": "caspr_biotech",
+      "weight": 4,
+      "thickness": 2.0
+    },
+    {
+      "source": "microgenesis",
+      "target": "stamm",
+      "weight": 4,
+      "thickness": 2.0
+    },
+    {
+      "source": "beeflow",
+      "target": "microgenesis",
+      "weight": 4,
+      "thickness": 2.0
+    },
+    {
+      "source": "onco_precision",
+      "target": "stamm",
+      "weight": 4,
+      "thickness": 2.0
+    },
+    {
+      "source": "puna_bio",
+      "target": "stamm",
+      "weight": 4,
+      "thickness": 2.0
+    },
+    {
+      "source": "argentag",
+      "target": "onco_precision",
+      "weight": 4,
+      "thickness": 2.0
+    },
+    {
+      "source": "onco_precision",
+      "target": "puna_bio",
+      "weight": 4,
+      "thickness": 2.0
+    },
+    {
+      "source": "argentag",
+      "target": "puna_bio",
+      "weight": 4,
+      "thickness": 2.0
+    },
+    {
+      "source": "argentag",
+      "target": "beeflow",
+      "weight": 4,
+      "thickness": 2.0
+    },
+    {
+      "source": "eywa_biotech",
+      "target": "resistia",
+      "weight": 3,
+      "thickness": 1.5
+    },
+    {
+      "source": "eywa_biotech",
+      "target": "nanotransfer",
+      "weight": 3,
+      "thickness": 1.5
+    },
+    {
+      "source": "aquit",
+      "target": "eywa_biotech",
+      "weight": 3,
+      "thickness": 1.5
+    },
+    {
+      "source": "bitgenia",
+      "target": "eywa_biotech",
+      "weight": 3,
+      "thickness": 1.5
+    },
+    {
+      "source": "nanotransfer",
+      "target": "resistia",
+      "weight": 3,
+      "thickness": 1.5
+    },
+    {
+      "source": "aquit",
+      "target": "resistia",
+      "weight": 3,
+      "thickness": 1.5
+    },
+    {
+      "source": "bitgenia",
+      "target": "resistia",
+      "weight": 3,
+      "thickness": 1.5
+    },
+    {
+      "source": "aquit",
+      "target": "nanotransfer",
+      "weight": 3,
+      "thickness": 1.5
+    },
+    {
+      "source": "bitgenia",
+      "target": "nanotransfer",
+      "weight": 3,
+      "thickness": 1.5
+    },
+    {
+      "source": "aquit",
+      "target": "bitgenia",
+      "weight": 3,
+      "thickness": 1.5
+    },
+    {
+      "source": "caspr_biotech",
+      "target": "michroma",
+      "weight": 3,
+      "thickness": 1.5
+    },
+    {
+      "source": "argentag",
+      "target": "michroma",
+      "weight": 3,
+      "thickness": 1.5
+    },
+    {
+      "source": "michroma",
+      "target": "puna_bio",
+      "weight": 3,
+      "thickness": 1.5
+    },
+    {
+      "source": "caspr_biotech",
+      "target": "stamm",
+      "weight": 3,
+      "thickness": 1.5
+    },
+    {
+      "source": "caspr_biotech",
+      "target": "onco_precision",
+      "weight": 3,
+      "thickness": 1.5
+    },
+    {
+      "source": "argentag",
+      "target": "caspr_biotech",
+      "weight": 3,
+      "thickness": 1.5
+    },
+    {
+      "source": "caspr_biotech",
+      "target": "puna_bio",
+      "weight": 3,
+      "thickness": 1.5
+    },
+    {
+      "source": "feedvax",
+      "target": "stamm-ar",
+      "weight": 3,
+      "thickness": 1.5
+    },
+    {
+      "source": "stamm",
+      "target": "stamm-ar",
+      "weight": 3,
+      "thickness": 1.5
+    },
+    {
+      "source": "onco_precision",
+      "target": "stamm-ar",
+      "weight": 3,
+      "thickness": 1.5
+    },
+    {
+      "source": "argentag",
+      "target": "stamm-ar",
+      "weight": 3,
+      "thickness": 1.5
+    },
+    {
+      "source": "puna_bio",
+      "target": "stamm-ar",
+      "weight": 3,
+      "thickness": 1.5
+    },
+    {
+      "source": "beeflow",
+      "target": "stamm-ar",
+      "weight": 3,
+      "thickness": 1.5
+    },
+    {
+      "source": "apexzymes",
+      "target": "enzyva",
+      "weight": 3,
+      "thickness": 1.5
+    },
+    {
+      "source": "apexzymes",
+      "target": "updairy",
+      "weight": 3,
+      "thickness": 1.5
+    },
+    {
+      "source": "aplife_biotech",
+      "target": "onco_precision",
+      "weight": 3,
+      "thickness": 1.5
+    },
+    {
+      "source": "aplife_biotech",
+      "target": "beeflow",
+      "weight": 3,
+      "thickness": 1.5
+    },
+    {
+      "source": "algalife",
+      "target": "feedvax",
+      "weight": 3,
+      "thickness": 1.5
+    },
+    {
+      "source": "feedvax",
+      "target": "stamm",
+      "weight": 3,
+      "thickness": 1.5
+    },
+    {
+      "source": "feedvax",
+      "target": "onco_precision",
+      "weight": 3,
+      "thickness": 1.5
+    },
+    {
+      "source": "argentag",
+      "target": "feedvax",
+      "weight": 3,
+      "thickness": 1.5
+    },
+    {
+      "source": "feedvax",
+      "target": "puna_bio",
+      "weight": 3,
+      "thickness": 1.5
+    },
+    {
+      "source": "beeflow",
+      "target": "feedvax",
+      "weight": 3,
+      "thickness": 1.5
+    },
+    {
+      "source": "microgenesis",
+      "target": "onco_precision",
+      "weight": 3,
+      "thickness": 1.5
+    },
+    {
+      "source": "argentag",
+      "target": "microgenesis",
+      "weight": 3,
+      "thickness": 1.5
+    },
+    {
+      "source": "microgenesis",
+      "target": "puna_bio",
+      "weight": 3,
+      "thickness": 1.5
+    },
+    {
+      "source": "antarka",
+      "target": "fecundis",
+      "weight": 3,
+      "thickness": 1.5
+    },
+    {
+      "source": "stamm",
+      "target": "tomorrow_foods",
+      "weight": 3,
+      "thickness": 1.5
+    },
+    {
+      "source": "enzyva",
+      "target": "updairy",
+      "weight": 3,
+      "thickness": 1.5
+    },
+    {
+      "source": "elytron_biotech",
+      "target": "nat4bio",
+      "weight": 3,
+      "thickness": 1.5
+    },
+    {
+      "source": "aquit",
+      "target": "puna_bio",
+      "weight": 3,
+      "thickness": 1.5
+    },
+    {
+      "source": "genica",
+      "target": "traive",
+      "weight": 3,
+      "thickness": 1.5
+    },
+    {
+      "source": "agrolend",
+      "target": "arado",
+      "weight": 3,
+      "thickness": 1.5
+    },
+    {
+      "source": "kigui",
+      "target": "kilimo",
+      "weight": 3,
+      "thickness": 1.5
+    },
+    {
+      "source": "deepagro",
+      "target": "kilimo",
+      "weight": 3,
+      "thickness": 1.5
+    },
+    {
+      "source": "auravant",
+      "target": "deepagro",
+      "weight": 3,
+      "thickness": 1.5
+    },
+    {
+      "source": "deepagro",
+      "target": "eiwa",
+      "weight": 3,
+      "thickness": 1.5
+    },
+    {
+      "source": "eiru",
+      "target": "ruuts",
+      "weight": 3,
+      "thickness": 1.5
+    },
+    {
+      "source": "kilimo",
+      "target": "ruuts",
+      "weight": 3,
+      "thickness": 1.5
+    },
+    {
+      "source": "agrojusto",
+      "target": "ruuts",
+      "weight": 3,
+      "thickness": 1.5
+    },
+    {
+      "source": "eiru",
+      "target": "kilimo",
+      "weight": 3,
+      "thickness": 1.5
+    },
+    {
+      "source": "agrojusto",
+      "target": "eiru",
+      "weight": 3,
+      "thickness": 1.5
+    },
+    {
+      "source": "agrojusto",
+      "target": "kilimo",
+      "weight": 3,
+      "thickness": 1.5
+    },
+    {
+      "source": "inedita-bio-br",
+      "target": "symbiomics",
+      "weight": 3,
+      "thickness": 1.5
+    },
+    {
+      "source": "botanical-solutions",
+      "target": "eywa_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "botanical-solutions",
+      "target": "metabix-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "botanical-solutions",
+      "target": "luyef-biotechnologies-cl",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "botanical-solutions",
+      "target": "sciphage",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "botanical-solutions",
+      "target": "unibaio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "amplify-dynamics",
+      "target": "botanical-solutions",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "botanical-solutions",
+      "target": "innovai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "botanical-solutions",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "botanical-solutions",
+      "target": "tensor-care",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "botanical-solutions",
+      "target": "the-earth-says",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "botanical-solutions",
+      "target": "patagon-fiber",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "botanical-solutions",
+      "target": "delee",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "eywa_biotech",
+      "target": "metabix-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "eywa_biotech",
+      "target": "sciphage",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "eywa_biotech",
+      "target": "unibaio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "amplify-dynamics",
+      "target": "eywa_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "eywa_biotech",
+      "target": "innovai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "eiwa",
+      "target": "eywa_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "eywa_biotech",
+      "target": "tensor-care",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "eywa_biotech",
+      "target": "the-earth-says",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "eywa_biotech",
+      "target": "patagon-fiber",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "delee",
+      "target": "eywa_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "metabix-biotech",
+      "target": "sciphage",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "metabix-biotech",
+      "target": "unibaio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "amplify-dynamics",
+      "target": "metabix-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "innovai",
+      "target": "metabix-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "metabix-biotech",
+      "target": "tensor-care",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "metabix-biotech",
+      "target": "the-earth-says",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "metabix-biotech",
+      "target": "patagon-fiber",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "delee",
+      "target": "metabix-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "luyef-biotechnologies-cl",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "sciphage",
+      "target": "unibaio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "amplify-dynamics",
+      "target": "sciphage",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "innovai",
+      "target": "sciphage",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "eiwa",
+      "target": "sciphage",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "sciphage",
+      "target": "tensor-care",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "sciphage",
+      "target": "the-earth-says",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "patagon-fiber",
+      "target": "sciphage",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "delee",
+      "target": "sciphage",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "amplify-dynamics",
+      "target": "unibaio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "innovai",
+      "target": "unibaio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "eiwa",
+      "target": "unibaio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "tensor-care",
+      "target": "unibaio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "tell",
+      "target": "unibaio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "the-earth-says",
+      "target": "unibaio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "patagon-fiber",
+      "target": "unibaio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "delee",
+      "target": "unibaio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "amplify-dynamics",
+      "target": "innovai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "amplify-dynamics",
+      "target": "tensor-care",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "amplify-dynamics",
+      "target": "the-earth-says",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "amplify-dynamics",
+      "target": "patagon-fiber",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "amplify-dynamics",
+      "target": "delee",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "eiwa",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "innovai",
+      "target": "tensor-care",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "innovai",
+      "target": "the-earth-says",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "innovai",
+      "target": "patagon-fiber",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "delee",
+      "target": "innovai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "eiwa",
+      "target": "nanotransfer",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "eiwa",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "eiwa",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "tensor-care",
+      "target": "the-earth-says",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "patagon-fiber",
+      "target": "tensor-care",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "delee",
+      "target": "tensor-care",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "patagon-fiber",
+      "target": "the-earth-says",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "delee",
+      "target": "the-earth-says",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "delee",
+      "target": "patagon-fiber",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "michroma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "glycox",
+      "target": "michroma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "geoprot",
+      "target": "michroma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "einsted",
+      "target": "michroma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "michroma",
+      "target": "nanogrow_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "michroma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "embryoxite",
+      "target": "michroma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "mavios",
+      "target": "michroma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "michroma",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bybug",
+      "target": "michroma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "michroma",
+      "target": "nanojump_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellco",
+      "target": "michroma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "calfix",
+      "target": "michroma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "michroma",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "michroma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "michroma",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "michroma",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "michroma",
+      "target": "microin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "michroma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aplife_biotech",
+      "target": "michroma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "michroma",
+      "target": "new_organs_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "feedvax",
+      "target": "michroma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "michroma",
+      "target": "ocular_bio_design",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellrep",
+      "target": "michroma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "michroma",
+      "target": "migma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "michroma",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "michroma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "michroma",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enteria",
+      "target": "michroma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "michroma",
+      "target": "nanotransfer",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "kresko_rnatech",
+      "target": "michroma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "michroma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "lipock",
+      "target": "michroma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "michroma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "michroma",
+      "target": "naturannova",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "eywa_biotech",
+      "target": "michroma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "michroma",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "michroma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enzyva",
+      "target": "michroma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "michroma",
+      "target": "nunatak_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "michroma",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "fecundis",
+      "target": "michroma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "michroma",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bsafe_biotech",
+      "target": "michroma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "gisens_biotech",
+      "target": "michroma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "michroma",
+      "target": "nanoingreen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "michroma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "michroma",
+      "target": "plamic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "elytron_biotech",
+      "target": "michroma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "michroma",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "michroma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "dogma_biotech",
+      "target": "michroma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "michroma",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "michroma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "michroma",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "michroma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cryosmetics",
+      "target": "michroma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "food4you",
+      "target": "michroma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "michroma",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "michroma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "michroma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cell_farm",
+      "target": "michroma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "michroma",
+      "target": "monte-caldera-technology",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "michroma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "levya",
+      "target": "michroma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caligenia",
+      "target": "michroma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "invitrall",
+      "target": "michroma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "michroma",
+      "target": "neocell",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "michroma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "michroma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cytbac",
+      "target": "michroma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "michroma",
+      "target": "nat4bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "michroma",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "michroma",
+      "target": "nanoprox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cyanomin",
+      "target": "michroma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "glycox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "geoprot",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "einsted",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "nanogrow_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "caspr_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "arakion",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "embryoxite",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "mavios",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "bybug",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "nanojump_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "cellco",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "calfix",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "arakion",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "microin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "bioblends",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "new_organs_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "feedvax",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "ocular_bio_design",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "cellrep",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "migma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "microgenesis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "arakion",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "enteria",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "nanotransfer",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "kresko_rnatech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "arakion",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "lipock",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "arakion",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "naturannova",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "eywa_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "bioeutectics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "enzyva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "nunatak_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "fecundis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "bsafe_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "gisens_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "nanoingreen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "bioplastix",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "plamic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "elytron_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "bioplaster_research",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "dogma_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "bitgenia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "avatar_medtech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "cryosmetics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "food4you",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "bioplaster_research_inc",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "onco_precision",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "arakion",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "cell_farm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "monte-caldera-technology",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "break_pet",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "levya",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "caligenia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "invitrall",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "neocell",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "argentag",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "arakion",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "biocle",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "cytbac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "nat4bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "nanoprox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "beeflow",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "cyanomin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "geoprot",
+      "target": "glycox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "einsted",
+      "target": "glycox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "glycox",
+      "target": "nanogrow_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caspr_biotech",
+      "target": "glycox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "glycox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "embryoxite",
+      "target": "glycox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "glycox",
+      "target": "mavios",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "glycox",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bybug",
+      "target": "glycox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "glycox",
+      "target": "nanojump_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellco",
+      "target": "glycox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "calfix",
+      "target": "glycox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "glycox",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "glycox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "glycox",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "glycox",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "glycox",
+      "target": "microin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "glycox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "glycox",
+      "target": "new_organs_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "feedvax",
+      "target": "glycox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "glycox",
+      "target": "ocular_bio_design",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellrep",
+      "target": "glycox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "glycox",
+      "target": "migma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "glycox",
+      "target": "microgenesis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "glycox",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "glycox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "glycox",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enteria",
+      "target": "glycox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "glycox",
+      "target": "nanotransfer",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "glycox",
+      "target": "kresko_rnatech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "glycox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "glycox",
+      "target": "lipock",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "glycox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "glycox",
+      "target": "naturannova",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "eywa_biotech",
+      "target": "glycox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "glycox",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "glycox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enzyva",
+      "target": "glycox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "glycox",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "glycox",
+      "target": "nunatak_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "glycox",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "fecundis",
+      "target": "glycox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "glycox",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bsafe_biotech",
+      "target": "glycox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "gisens_biotech",
+      "target": "glycox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "glycox",
+      "target": "nanoingreen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "glycox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "glycox",
+      "target": "plamic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "elytron_biotech",
+      "target": "glycox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "glycox",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "glycox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "dogma_biotech",
+      "target": "glycox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "glycox",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "glycox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "glycox",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "glycox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cryosmetics",
+      "target": "glycox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "food4you",
+      "target": "glycox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "glycox",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "glycox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "glycox",
+      "target": "onco_precision",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "glycox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cell_farm",
+      "target": "glycox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "glycox",
+      "target": "monte-caldera-technology",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "glycox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "glycox",
+      "target": "levya",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caligenia",
+      "target": "glycox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "glycox",
+      "target": "invitrall",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "glycox",
+      "target": "neocell",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "glycox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "glycox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "glycox",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "glycox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cytbac",
+      "target": "glycox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "glycox",
+      "target": "nat4bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "glycox",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "glycox",
+      "target": "nanoprox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "glycox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cyanomin",
+      "target": "glycox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "einsted",
+      "target": "geoprot",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "geoprot",
+      "target": "nanogrow_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caspr_biotech",
+      "target": "geoprot",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "geoprot",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "embryoxite",
+      "target": "geoprot",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "geoprot",
+      "target": "mavios",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "geoprot",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bybug",
+      "target": "geoprot",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "geoprot",
+      "target": "nanojump_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellco",
+      "target": "geoprot",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "calfix",
+      "target": "geoprot",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "geoprot",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "geoprot",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "geoprot",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "geoprot",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "geoprot",
+      "target": "microin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "geoprot",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "geoprot",
+      "target": "new_organs_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "feedvax",
+      "target": "geoprot",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "geoprot",
+      "target": "ocular_bio_design",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellrep",
+      "target": "geoprot",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "geoprot",
+      "target": "migma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "geoprot",
+      "target": "microgenesis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "geoprot",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "geoprot",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "geoprot",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enteria",
+      "target": "geoprot",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "geoprot",
+      "target": "nanotransfer",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "geoprot",
+      "target": "kresko_rnatech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "geoprot",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "geoprot",
+      "target": "lipock",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "geoprot",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "geoprot",
+      "target": "naturannova",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "eywa_biotech",
+      "target": "geoprot",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "geoprot",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "geoprot",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enzyva",
+      "target": "geoprot",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "geoprot",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "geoprot",
+      "target": "nunatak_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "geoprot",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "fecundis",
+      "target": "geoprot",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "geoprot",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bsafe_biotech",
+      "target": "geoprot",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "geoprot",
+      "target": "gisens_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "geoprot",
+      "target": "nanoingreen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "geoprot",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "geoprot",
+      "target": "plamic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "elytron_biotech",
+      "target": "geoprot",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "geoprot",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "geoprot",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "dogma_biotech",
+      "target": "geoprot",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "geoprot",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "geoprot",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "geoprot",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "geoprot",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cryosmetics",
+      "target": "geoprot",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "food4you",
+      "target": "geoprot",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "geoprot",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "geoprot",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "geoprot",
+      "target": "onco_precision",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "geoprot",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cell_farm",
+      "target": "geoprot",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "geoprot",
+      "target": "monte-caldera-technology",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "geoprot",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "geoprot",
+      "target": "levya",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caligenia",
+      "target": "geoprot",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "geoprot",
+      "target": "invitrall",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "geoprot",
+      "target": "neocell",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "geoprot",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "geoprot",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "geoprot",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "geoprot",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cytbac",
+      "target": "geoprot",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "geoprot",
+      "target": "nat4bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "geoprot",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "geoprot",
+      "target": "nanoprox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "geoprot",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cyanomin",
+      "target": "geoprot",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "einsted",
+      "target": "nanogrow_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caspr_biotech",
+      "target": "einsted",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "einsted",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "einsted",
+      "target": "embryoxite",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "einsted",
+      "target": "mavios",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "einsted",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bybug",
+      "target": "einsted",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "einsted",
+      "target": "nanojump_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellco",
+      "target": "einsted",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "calfix",
+      "target": "einsted",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "einsted",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "einsted",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "einsted",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "einsted",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "einsted",
+      "target": "microin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "einsted",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "einsted",
+      "target": "new_organs_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "einsted",
+      "target": "feedvax",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "einsted",
+      "target": "ocular_bio_design",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellrep",
+      "target": "einsted",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "einsted",
+      "target": "migma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "einsted",
+      "target": "microgenesis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "einsted",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "einsted",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "einsted",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "einsted",
+      "target": "enteria",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "einsted",
+      "target": "nanotransfer",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "einsted",
+      "target": "kresko_rnatech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "einsted",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "einsted",
+      "target": "lipock",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "einsted",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "einsted",
+      "target": "naturannova",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "einsted",
+      "target": "eywa_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "einsted",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "einsted",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "einsted",
+      "target": "enzyva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "einsted",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "einsted",
+      "target": "nunatak_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "einsted",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "einsted",
+      "target": "fecundis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "einsted",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bsafe_biotech",
+      "target": "einsted",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "einsted",
+      "target": "gisens_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "einsted",
+      "target": "nanoingreen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "einsted",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "einsted",
+      "target": "plamic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "einsted",
+      "target": "elytron_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "einsted",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "einsted",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "dogma_biotech",
+      "target": "einsted",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "einsted",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "einsted",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "einsted",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "einsted",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cryosmetics",
+      "target": "einsted",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "einsted",
+      "target": "food4you",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "einsted",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "einsted",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "einsted",
+      "target": "onco_precision",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "einsted",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cell_farm",
+      "target": "einsted",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "einsted",
+      "target": "monte-caldera-technology",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "einsted",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "einsted",
+      "target": "levya",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caligenia",
+      "target": "einsted",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "einsted",
+      "target": "invitrall",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "einsted",
+      "target": "neocell",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "einsted",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "einsted",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "einsted",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "einsted",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cytbac",
+      "target": "einsted",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "einsted",
+      "target": "nat4bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "einsted",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "einsted",
+      "target": "nanoprox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "einsted",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cyanomin",
+      "target": "einsted",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caspr_biotech",
+      "target": "nanogrow_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "nanogrow_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "embryoxite",
+      "target": "nanogrow_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "mavios",
+      "target": "nanogrow_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanogrow_biotech",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bybug",
+      "target": "nanogrow_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanogrow_biotech",
+      "target": "nanojump_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellco",
+      "target": "nanogrow_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "calfix",
+      "target": "nanogrow_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanogrow_biotech",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "nanogrow_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanogrow_biotech",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanogrow_biotech",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "microin",
+      "target": "nanogrow_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "nanogrow_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanogrow_biotech",
+      "target": "new_organs_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "feedvax",
+      "target": "nanogrow_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanogrow_biotech",
+      "target": "ocular_bio_design",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellrep",
+      "target": "nanogrow_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "migma",
+      "target": "nanogrow_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "microgenesis",
+      "target": "nanogrow_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanogrow_biotech",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "nanogrow_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanogrow_biotech",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enteria",
+      "target": "nanogrow_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanogrow_biotech",
+      "target": "nanotransfer",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "kresko_rnatech",
+      "target": "nanogrow_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "nanogrow_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "lipock",
+      "target": "nanogrow_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "nanogrow_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanogrow_biotech",
+      "target": "naturannova",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "eywa_biotech",
+      "target": "nanogrow_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanogrow_biotech",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "nanogrow_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enzyva",
+      "target": "nanogrow_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanogrow_biotech",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanogrow_biotech",
+      "target": "nunatak_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanogrow_biotech",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "fecundis",
+      "target": "nanogrow_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanogrow_biotech",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bsafe_biotech",
+      "target": "nanogrow_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "gisens_biotech",
+      "target": "nanogrow_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanogrow_biotech",
+      "target": "nanoingreen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "nanogrow_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanogrow_biotech",
+      "target": "plamic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "elytron_biotech",
+      "target": "nanogrow_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanogrow_biotech",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "nanogrow_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "dogma_biotech",
+      "target": "nanogrow_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanogrow_biotech",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "nanogrow_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanogrow_biotech",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "nanogrow_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cryosmetics",
+      "target": "nanogrow_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "food4you",
+      "target": "nanogrow_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanogrow_biotech",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "nanogrow_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanogrow_biotech",
+      "target": "onco_precision",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "nanogrow_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cell_farm",
+      "target": "nanogrow_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "monte-caldera-technology",
+      "target": "nanogrow_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "nanogrow_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "levya",
+      "target": "nanogrow_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caligenia",
+      "target": "nanogrow_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "invitrall",
+      "target": "nanogrow_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanogrow_biotech",
+      "target": "neocell",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "nanogrow_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "nanogrow_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanogrow_biotech",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "nanogrow_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cytbac",
+      "target": "nanogrow_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanogrow_biotech",
+      "target": "nat4bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanogrow_biotech",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanogrow_biotech",
+      "target": "nanoprox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "nanogrow_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cyanomin",
+      "target": "nanogrow_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "caspr_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caspr_biotech",
+      "target": "embryoxite",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caspr_biotech",
+      "target": "mavios",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caspr_biotech",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bybug",
+      "target": "caspr_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caspr_biotech",
+      "target": "nanojump_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caspr_biotech",
+      "target": "cellco",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "calfix",
+      "target": "caspr_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caspr_biotech",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "caspr_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caspr_biotech",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caspr_biotech",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caspr_biotech",
+      "target": "microin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "caspr_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aplife_biotech",
+      "target": "caspr_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caspr_biotech",
+      "target": "new_organs_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caspr_biotech",
+      "target": "feedvax",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caspr_biotech",
+      "target": "ocular_bio_design",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caspr_biotech",
+      "target": "cellrep",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caspr_biotech",
+      "target": "migma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caspr_biotech",
+      "target": "microgenesis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caspr_biotech",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "caspr_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caspr_biotech",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caspr_biotech",
+      "target": "enteria",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caspr_biotech",
+      "target": "nanotransfer",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caspr_biotech",
+      "target": "kresko_rnatech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "caspr_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caspr_biotech",
+      "target": "lipock",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "caspr_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caspr_biotech",
+      "target": "naturannova",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caspr_biotech",
+      "target": "eywa_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caspr_biotech",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "caspr_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caspr_biotech",
+      "target": "enzyva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caspr_biotech",
+      "target": "nunatak_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caspr_biotech",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caspr_biotech",
+      "target": "fecundis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caspr_biotech",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bsafe_biotech",
+      "target": "caspr_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caspr_biotech",
+      "target": "gisens_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caspr_biotech",
+      "target": "nanoingreen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "caspr_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caspr_biotech",
+      "target": "plamic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caspr_biotech",
+      "target": "elytron_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caspr_biotech",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "caspr_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caspr_biotech",
+      "target": "dogma_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caspr_biotech",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "caspr_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caspr_biotech",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "caspr_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caspr_biotech",
+      "target": "cryosmetics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caspr_biotech",
+      "target": "food4you",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caspr_biotech",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "caspr_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "caspr_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caspr_biotech",
+      "target": "cell_farm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caspr_biotech",
+      "target": "monte-caldera-technology",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "caspr_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caspr_biotech",
+      "target": "levya",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caligenia",
+      "target": "caspr_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caspr_biotech",
+      "target": "invitrall",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caspr_biotech",
+      "target": "neocell",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "caspr_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "caspr_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caspr_biotech",
+      "target": "cytbac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caspr_biotech",
+      "target": "nat4bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caspr_biotech",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caspr_biotech",
+      "target": "nanoprox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caspr_biotech",
+      "target": "cyanomin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "eiwa",
+      "target": "elytron_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "eiwa",
+      "target": "nat4bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "eiwa",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "embryoxite",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "mavios",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "bybug",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "nanojump_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "cellco",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "calfix",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "apexzymes",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "microin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "bioblends",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "new_organs_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "feedvax",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "ocular_bio_design",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "cellrep",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "migma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "microgenesis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "antarka",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "enteria",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "nanotransfer",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "kresko_rnatech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "algalife",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "lipock",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "apasomics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "naturannova",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "eywa_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "bioeutectics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "enzyva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "nunatak_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "fecundis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "bsafe_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "gisens_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "nanoingreen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "bioplastix",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "plamic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "elytron_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "bioplaster_research",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "dogma_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "bitgenia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "avatar_medtech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "cryosmetics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "food4you",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "bioplaster_research_inc",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "onco_precision",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "algaebio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "cell_farm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "monte-caldera-technology",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "break_pet",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "levya",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "caligenia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "invitrall",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "neocell",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "argentag",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "aquit",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "biocle",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "cytbac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "nat4bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "nanoprox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "beeflow",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "cyanomin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "embryoxite",
+      "target": "mavios",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "embryoxite",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bybug",
+      "target": "embryoxite",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "embryoxite",
+      "target": "nanojump_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellco",
+      "target": "embryoxite",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "calfix",
+      "target": "embryoxite",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "embryoxite",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "embryoxite",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "embryoxite",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "embryoxite",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "embryoxite",
+      "target": "microin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "embryoxite",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "embryoxite",
+      "target": "new_organs_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "embryoxite",
+      "target": "feedvax",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "embryoxite",
+      "target": "ocular_bio_design",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellrep",
+      "target": "embryoxite",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "embryoxite",
+      "target": "migma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "embryoxite",
+      "target": "microgenesis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "embryoxite",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "embryoxite",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "embryoxite",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "embryoxite",
+      "target": "enteria",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "embryoxite",
+      "target": "nanotransfer",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "embryoxite",
+      "target": "kresko_rnatech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "embryoxite",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "embryoxite",
+      "target": "lipock",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "embryoxite",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "embryoxite",
+      "target": "naturannova",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "embryoxite",
+      "target": "eywa_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "embryoxite",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "embryoxite",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "embryoxite",
+      "target": "enzyva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "embryoxite",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "embryoxite",
+      "target": "nunatak_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "embryoxite",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "embryoxite",
+      "target": "fecundis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "embryoxite",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bsafe_biotech",
+      "target": "embryoxite",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "embryoxite",
+      "target": "gisens_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "embryoxite",
+      "target": "nanoingreen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "embryoxite",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "embryoxite",
+      "target": "plamic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "elytron_biotech",
+      "target": "embryoxite",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "embryoxite",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "embryoxite",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "dogma_biotech",
+      "target": "embryoxite",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "embryoxite",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "embryoxite",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "embryoxite",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "embryoxite",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cryosmetics",
+      "target": "embryoxite",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "embryoxite",
+      "target": "food4you",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "embryoxite",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "embryoxite",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "embryoxite",
+      "target": "onco_precision",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "embryoxite",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cell_farm",
+      "target": "embryoxite",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "embryoxite",
+      "target": "monte-caldera-technology",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "embryoxite",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "embryoxite",
+      "target": "levya",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caligenia",
+      "target": "embryoxite",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "embryoxite",
+      "target": "invitrall",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "embryoxite",
+      "target": "neocell",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "embryoxite",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "embryoxite",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "embryoxite",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "embryoxite",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cytbac",
+      "target": "embryoxite",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "embryoxite",
+      "target": "nat4bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "embryoxite",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "embryoxite",
+      "target": "nanoprox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "embryoxite",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cyanomin",
+      "target": "embryoxite",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "mavios",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bybug",
+      "target": "mavios",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "mavios",
+      "target": "nanojump_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellco",
+      "target": "mavios",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "calfix",
+      "target": "mavios",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "mavios",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "mavios",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "mavios",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "mavios",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "mavios",
+      "target": "microin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "mavios",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "mavios",
+      "target": "new_organs_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "feedvax",
+      "target": "mavios",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "mavios",
+      "target": "ocular_bio_design",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellrep",
+      "target": "mavios",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "mavios",
+      "target": "migma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "mavios",
+      "target": "microgenesis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "mavios",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "mavios",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "mavios",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enteria",
+      "target": "mavios",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "mavios",
+      "target": "nanotransfer",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "kresko_rnatech",
+      "target": "mavios",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "mavios",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "lipock",
+      "target": "mavios",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "mavios",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "mavios",
+      "target": "naturannova",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "eywa_biotech",
+      "target": "mavios",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "mavios",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "mavios",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enzyva",
+      "target": "mavios",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "mavios",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "mavios",
+      "target": "nunatak_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "mavios",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "fecundis",
+      "target": "mavios",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "mavios",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bsafe_biotech",
+      "target": "mavios",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "gisens_biotech",
+      "target": "mavios",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "mavios",
+      "target": "nanoingreen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "mavios",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "mavios",
+      "target": "plamic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "elytron_biotech",
+      "target": "mavios",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "mavios",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "mavios",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "dogma_biotech",
+      "target": "mavios",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "mavios",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "mavios",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "mavios",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "mavios",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cryosmetics",
+      "target": "mavios",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "food4you",
+      "target": "mavios",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "mavios",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "mavios",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "mavios",
+      "target": "onco_precision",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "mavios",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cell_farm",
+      "target": "mavios",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "mavios",
+      "target": "monte-caldera-technology",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "mavios",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "levya",
+      "target": "mavios",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caligenia",
+      "target": "mavios",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "invitrall",
+      "target": "mavios",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "mavios",
+      "target": "neocell",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "mavios",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "mavios",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "mavios",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "mavios",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cytbac",
+      "target": "mavios",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "mavios",
+      "target": "nat4bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "mavios",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "mavios",
+      "target": "nanoprox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "mavios",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cyanomin",
+      "target": "mavios",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bybug",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanojump_bio",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellco",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "calfix",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "stamm-ar",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "scitherm_therapeutics",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "qumir_nano",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "microin",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "new_organs_biotech",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "feedvax",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "ocular_bio_design",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellrep",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "migma",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "microgenesis",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "tesabio_ai",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "tesabio_ai",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enteria",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanotransfer",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "kresko_rnatech",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "lipock",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "naturannova",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "eywa_biotech",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "protiva",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enzyva",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "stamm",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nunatak_biotech",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "tesabio_ai",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "fecundis",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "resistia",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bsafe_biotech",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "gisens_biotech",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanoingreen",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "plamic",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "elytron_biotech",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "polymera",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "dogma_biotech",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "pregen",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "qnity",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cryosmetics",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "food4you",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "radial",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "onco_precision",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cell_farm",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "monte-caldera-technology",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "levya",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caligenia",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "invitrall",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "neocell",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "puna_bio",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cytbac",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nat4bio",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "syocin-biotech",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanoprox",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cyanomin",
+      "target": "tesabio_ai",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bybug",
+      "target": "nanojump_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bybug",
+      "target": "cellco",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bybug",
+      "target": "calfix",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bybug",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "bybug",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bybug",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bybug",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bybug",
+      "target": "microin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "bybug",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bybug",
+      "target": "new_organs_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bybug",
+      "target": "feedvax",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bybug",
+      "target": "ocular_bio_design",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bybug",
+      "target": "cellrep",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bybug",
+      "target": "migma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bybug",
+      "target": "microgenesis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bybug",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "bybug",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bybug",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bybug",
+      "target": "enteria",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bybug",
+      "target": "nanotransfer",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bybug",
+      "target": "kresko_rnatech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "bybug",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bybug",
+      "target": "lipock",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "bybug",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bybug",
+      "target": "naturannova",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bybug",
+      "target": "eywa_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bybug",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "bybug",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bybug",
+      "target": "enzyva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bybug",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bybug",
+      "target": "nunatak_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bybug",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bybug",
+      "target": "fecundis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bybug",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bsafe_biotech",
+      "target": "bybug",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bybug",
+      "target": "gisens_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bybug",
+      "target": "nanoingreen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "bybug",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bybug",
+      "target": "plamic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bybug",
+      "target": "elytron_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bybug",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "bybug",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bybug",
+      "target": "dogma_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bybug",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "bybug",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bybug",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "bybug",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bybug",
+      "target": "cryosmetics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bybug",
+      "target": "food4you",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bybug",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "bybug",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bybug",
+      "target": "onco_precision",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "bybug",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bybug",
+      "target": "cell_farm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bybug",
+      "target": "monte-caldera-technology",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "bybug",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bybug",
+      "target": "levya",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bybug",
+      "target": "caligenia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bybug",
+      "target": "invitrall",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bybug",
+      "target": "neocell",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "bybug",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "bybug",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bybug",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "bybug",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bybug",
+      "target": "cytbac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bybug",
+      "target": "nat4bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bybug",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bybug",
+      "target": "nanoprox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "bybug",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bybug",
+      "target": "cyanomin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellco",
+      "target": "nanojump_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "calfix",
+      "target": "nanojump_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanojump_bio",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "nanojump_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanojump_bio",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanojump_bio",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "microin",
+      "target": "nanojump_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "nanojump_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanojump_bio",
+      "target": "new_organs_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "feedvax",
+      "target": "nanojump_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanojump_bio",
+      "target": "ocular_bio_design",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellrep",
+      "target": "nanojump_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "migma",
+      "target": "nanojump_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "microgenesis",
+      "target": "nanojump_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanojump_bio",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "nanojump_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanojump_bio",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enteria",
+      "target": "nanojump_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanojump_bio",
+      "target": "nanotransfer",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "kresko_rnatech",
+      "target": "nanojump_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "nanojump_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "lipock",
+      "target": "nanojump_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "nanojump_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanojump_bio",
+      "target": "naturannova",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "eywa_biotech",
+      "target": "nanojump_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanojump_bio",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "nanojump_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enzyva",
+      "target": "nanojump_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanojump_bio",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanojump_bio",
+      "target": "nunatak_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanojump_bio",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "fecundis",
+      "target": "nanojump_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanojump_bio",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bsafe_biotech",
+      "target": "nanojump_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "gisens_biotech",
+      "target": "nanojump_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanoingreen",
+      "target": "nanojump_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "nanojump_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanojump_bio",
+      "target": "plamic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "elytron_biotech",
+      "target": "nanojump_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanojump_bio",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "nanojump_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "dogma_biotech",
+      "target": "nanojump_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanojump_bio",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "nanojump_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanojump_bio",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "nanojump_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cryosmetics",
+      "target": "nanojump_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "food4you",
+      "target": "nanojump_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanojump_bio",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "nanojump_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanojump_bio",
+      "target": "onco_precision",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "nanojump_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cell_farm",
+      "target": "nanojump_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "monte-caldera-technology",
+      "target": "nanojump_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "nanojump_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "levya",
+      "target": "nanojump_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caligenia",
+      "target": "nanojump_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "invitrall",
+      "target": "nanojump_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanojump_bio",
+      "target": "neocell",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "nanojump_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "nanojump_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanojump_bio",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "nanojump_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cytbac",
+      "target": "nanojump_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanojump_bio",
+      "target": "nat4bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanojump_bio",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanojump_bio",
+      "target": "nanoprox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "nanojump_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cyanomin",
+      "target": "nanojump_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "calfix",
+      "target": "cellco",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellco",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "cellco",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellco",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellco",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellco",
+      "target": "microin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "cellco",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellco",
+      "target": "new_organs_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellco",
+      "target": "feedvax",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellco",
+      "target": "ocular_bio_design",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellco",
+      "target": "cellrep",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellco",
+      "target": "migma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellco",
+      "target": "microgenesis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellco",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "cellco",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellco",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellco",
+      "target": "enteria",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellco",
+      "target": "nanotransfer",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellco",
+      "target": "kresko_rnatech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "cellco",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellco",
+      "target": "lipock",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "cellco",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellco",
+      "target": "naturannova",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellco",
+      "target": "eywa_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellco",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "cellco",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellco",
+      "target": "enzyva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellco",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellco",
+      "target": "nunatak_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellco",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellco",
+      "target": "fecundis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellco",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bsafe_biotech",
+      "target": "cellco",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellco",
+      "target": "gisens_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellco",
+      "target": "nanoingreen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "cellco",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellco",
+      "target": "plamic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellco",
+      "target": "elytron_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellco",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "cellco",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellco",
+      "target": "dogma_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellco",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "cellco",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellco",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "cellco",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellco",
+      "target": "cryosmetics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellco",
+      "target": "food4you",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellco",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "cellco",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellco",
+      "target": "onco_precision",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "cellco",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cell_farm",
+      "target": "cellco",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellco",
+      "target": "monte-caldera-technology",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "cellco",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellco",
+      "target": "levya",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caligenia",
+      "target": "cellco",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellco",
+      "target": "invitrall",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellco",
+      "target": "neocell",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "cellco",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "cellco",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellco",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "cellco",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellco",
+      "target": "cytbac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellco",
+      "target": "nat4bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellco",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellco",
+      "target": "nanoprox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "cellco",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellco",
+      "target": "cyanomin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "calfix",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "calfix",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "calfix",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "calfix",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "calfix",
+      "target": "microin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "calfix",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "calfix",
+      "target": "new_organs_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "calfix",
+      "target": "feedvax",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "calfix",
+      "target": "ocular_bio_design",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "calfix",
+      "target": "cellrep",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "calfix",
+      "target": "migma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "calfix",
+      "target": "microgenesis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "calfix",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "calfix",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "calfix",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "calfix",
+      "target": "enteria",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "calfix",
+      "target": "nanotransfer",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "calfix",
+      "target": "kresko_rnatech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "calfix",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "calfix",
+      "target": "lipock",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "calfix",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "calfix",
+      "target": "naturannova",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "calfix",
+      "target": "eywa_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "calfix",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "calfix",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "calfix",
+      "target": "enzyva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "calfix",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "calfix",
+      "target": "nunatak_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "calfix",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "calfix",
+      "target": "fecundis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "calfix",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bsafe_biotech",
+      "target": "calfix",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "calfix",
+      "target": "gisens_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "calfix",
+      "target": "nanoingreen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "calfix",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "calfix",
+      "target": "plamic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "calfix",
+      "target": "elytron_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "calfix",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "calfix",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "calfix",
+      "target": "dogma_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "calfix",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "calfix",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "calfix",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "calfix",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "calfix",
+      "target": "cryosmetics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "calfix",
+      "target": "food4you",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "calfix",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "calfix",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "calfix",
+      "target": "onco_precision",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "calfix",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "calfix",
+      "target": "cell_farm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "calfix",
+      "target": "monte-caldera-technology",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "calfix",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "calfix",
+      "target": "levya",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "calfix",
+      "target": "caligenia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "calfix",
+      "target": "invitrall",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "calfix",
+      "target": "neocell",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "calfix",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "calfix",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "calfix",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "calfix",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "calfix",
+      "target": "cytbac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "calfix",
+      "target": "nat4bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "calfix",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "calfix",
+      "target": "nanoprox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "calfix",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "calfix",
+      "target": "cyanomin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "scitherm_therapeutics",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "qumir_nano",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "microin",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aplife_biotech",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "new_organs_biotech",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "ocular_bio_design",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellrep",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "migma",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "microgenesis",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "stamm-ar",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "stamm-ar",
+      "target": "sylvarum",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "stamm-ar",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enteria",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanotransfer",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "kresko_rnatech",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "lipock",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "naturannova",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "eywa_biotech",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "protiva",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enzyva",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nunatak_biotech",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "stamm-ar",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "fecundis",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "resistia",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bsafe_biotech",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "gisens_biotech",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanoingreen",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "plamic",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "elytron_biotech",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "polymera",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "dogma_biotech",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "pregen",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "qnity",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cryosmetics",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "food4you",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "radial",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cell_farm",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "monte-caldera-technology",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "levya",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caligenia",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "invitrall",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "neocell",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cytbac",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nat4bio",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "stamm-ar",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanoprox",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cyanomin",
+      "target": "stamm-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "microin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "bioblends",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "new_organs_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "feedvax",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "ocular_bio_design",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "cellrep",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "migma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "microgenesis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "apexzymes",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "enteria",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "nanotransfer",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "kresko_rnatech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "apexzymes",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "lipock",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "apexzymes",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "naturannova",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "eywa_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "bioeutectics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "nunatak_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "fecundis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "bsafe_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "gisens_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "nanoingreen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "bioplastix",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "plamic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "elytron_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "bioplaster_research",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "dogma_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "bitgenia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "avatar_medtech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "cryosmetics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "food4you",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "bioplaster_research_inc",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "onco_precision",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "apexzymes",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "cell_farm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "monte-caldera-technology",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "break_pet",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "levya",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "caligenia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "invitrall",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "neocell",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "argentag",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "aquit",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "biocle",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "cytbac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "nat4bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "nanoprox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "beeflow",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "cyanomin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "qumir_nano",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "microin",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "new_organs_biotech",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "feedvax",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "ocular_bio_design",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellrep",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "migma",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "microgenesis",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "scitherm_therapeutics",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "scitherm_therapeutics",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enteria",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanotransfer",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "kresko_rnatech",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "lipock",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "naturannova",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "eywa_biotech",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "protiva",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enzyva",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "scitherm_therapeutics",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nunatak_biotech",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "scitherm_therapeutics",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "fecundis",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "resistia",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bsafe_biotech",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "gisens_biotech",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanoingreen",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "plamic",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "elytron_biotech",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "polymera",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "dogma_biotech",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "pregen",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "qnity",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cryosmetics",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "food4you",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "radial",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "onco_precision",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cell_farm",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "monte-caldera-technology",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "levya",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caligenia",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "invitrall",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "neocell",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "puna_bio",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cytbac",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nat4bio",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "scitherm_therapeutics",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanoprox",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cyanomin",
+      "target": "scitherm_therapeutics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "microin",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "new_organs_biotech",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "feedvax",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "ocular_bio_design",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellrep",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "migma",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "microgenesis",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "qumir_nano",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "qumir_nano",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enteria",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanotransfer",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "kresko_rnatech",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "lipock",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "naturannova",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "eywa_biotech",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "protiva",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enzyva",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "qumir_nano",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nunatak_biotech",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "qumir_nano",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "fecundis",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "qumir_nano",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bsafe_biotech",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "gisens_biotech",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanoingreen",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "plamic",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "elytron_biotech",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "polymera",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "dogma_biotech",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "pregen",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "qnity",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cryosmetics",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "food4you",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "qumir_nano",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "onco_precision",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cell_farm",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "monte-caldera-technology",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "levya",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caligenia",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "invitrall",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "neocell",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "puna_bio",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cytbac",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nat4bio",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "qumir_nano",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanoprox",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cyanomin",
+      "target": "qumir_nano",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "microin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "microin",
+      "target": "new_organs_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "feedvax",
+      "target": "microin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "microin",
+      "target": "ocular_bio_design",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellrep",
+      "target": "microin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "microin",
+      "target": "migma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "microgenesis",
+      "target": "microin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "microin",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "microin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "microin",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enteria",
+      "target": "microin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "microin",
+      "target": "nanotransfer",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "kresko_rnatech",
+      "target": "microin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "microin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "lipock",
+      "target": "microin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "microin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "microin",
+      "target": "naturannova",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "eywa_biotech",
+      "target": "microin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "microin",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "microin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enzyva",
+      "target": "microin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "microin",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "microin",
+      "target": "nunatak_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "microin",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "fecundis",
+      "target": "microin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "microin",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bsafe_biotech",
+      "target": "microin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "gisens_biotech",
+      "target": "microin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "microin",
+      "target": "nanoingreen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "microin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "microin",
+      "target": "plamic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "elytron_biotech",
+      "target": "microin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "microin",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "microin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "dogma_biotech",
+      "target": "microin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "microin",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "microin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "microin",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "microin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cryosmetics",
+      "target": "microin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "food4you",
+      "target": "microin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "microin",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "microin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "microin",
+      "target": "onco_precision",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "microin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cell_farm",
+      "target": "microin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "microin",
+      "target": "monte-caldera-technology",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "microin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "levya",
+      "target": "microin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caligenia",
+      "target": "microin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "invitrall",
+      "target": "microin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "microin",
+      "target": "neocell",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "microin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "microin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "microin",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "microin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cytbac",
+      "target": "microin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "microin",
+      "target": "nat4bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "microin",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "microin",
+      "target": "nanoprox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "microin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cyanomin",
+      "target": "microin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "new_organs_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "feedvax",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "ocular_bio_design",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "cellrep",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "migma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "microgenesis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "bioblends",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "enteria",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "nanotransfer",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "kresko_rnatech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "bioblends",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "lipock",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "bioblends",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "naturannova",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "eywa_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "bioeutectics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "enzyva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "nunatak_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "fecundis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "bsafe_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "gisens_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "nanoingreen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "bioplastix",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "plamic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "elytron_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "bioplaster_research",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "dogma_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "bitgenia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "bioblends",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "cryosmetics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "food4you",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "bioplaster_research_inc",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "onco_precision",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "bioblends",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "cell_farm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "monte-caldera-technology",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "break_pet",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "levya",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "caligenia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "invitrall",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "neocell",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "bioblends",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "bioblends",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "biocle",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "cytbac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "nat4bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "nanoprox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "bioblends",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "cyanomin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aplife_biotech",
+      "target": "feedvax",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aplife_biotech",
+      "target": "sylvarum",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aplife_biotech",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aplife_biotech",
+      "target": "argentag",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aplife_biotech",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "feedvax",
+      "target": "new_organs_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "new_organs_biotech",
+      "target": "ocular_bio_design",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellrep",
+      "target": "new_organs_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "migma",
+      "target": "new_organs_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "microgenesis",
+      "target": "new_organs_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "new_organs_biotech",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "new_organs_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "new_organs_biotech",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enteria",
+      "target": "new_organs_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanotransfer",
+      "target": "new_organs_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "kresko_rnatech",
+      "target": "new_organs_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "new_organs_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "lipock",
+      "target": "new_organs_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "new_organs_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "naturannova",
+      "target": "new_organs_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "eywa_biotech",
+      "target": "new_organs_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "new_organs_biotech",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "new_organs_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enzyva",
+      "target": "new_organs_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "new_organs_biotech",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "new_organs_biotech",
+      "target": "nunatak_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "new_organs_biotech",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "fecundis",
+      "target": "new_organs_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "new_organs_biotech",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bsafe_biotech",
+      "target": "new_organs_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "gisens_biotech",
+      "target": "new_organs_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanoingreen",
+      "target": "new_organs_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "new_organs_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "new_organs_biotech",
+      "target": "plamic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "elytron_biotech",
+      "target": "new_organs_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "new_organs_biotech",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "new_organs_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "dogma_biotech",
+      "target": "new_organs_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "new_organs_biotech",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "new_organs_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "new_organs_biotech",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "new_organs_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cryosmetics",
+      "target": "new_organs_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "food4you",
+      "target": "new_organs_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "new_organs_biotech",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "new_organs_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "new_organs_biotech",
+      "target": "onco_precision",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "new_organs_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cell_farm",
+      "target": "new_organs_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "monte-caldera-technology",
+      "target": "new_organs_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "new_organs_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "levya",
+      "target": "new_organs_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caligenia",
+      "target": "new_organs_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "invitrall",
+      "target": "new_organs_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "neocell",
+      "target": "new_organs_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "new_organs_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "new_organs_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "new_organs_biotech",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "new_organs_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cytbac",
+      "target": "new_organs_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nat4bio",
+      "target": "new_organs_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "new_organs_biotech",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanoprox",
+      "target": "new_organs_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "new_organs_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cyanomin",
+      "target": "new_organs_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "feedvax",
+      "target": "ocular_bio_design",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellrep",
+      "target": "feedvax",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "feedvax",
+      "target": "migma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "feedvax",
+      "target": "microgenesis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "feedvax",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "feedvax",
+      "target": "sylvarum",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "feedvax",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "feedvax",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enteria",
+      "target": "feedvax",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "feedvax",
+      "target": "nanotransfer",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "feedvax",
+      "target": "kresko_rnatech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "feedvax",
+      "target": "lipock",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "feedvax",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "feedvax",
+      "target": "naturannova",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "eywa_biotech",
+      "target": "feedvax",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "feedvax",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "feedvax",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enzyva",
+      "target": "feedvax",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "feedvax",
+      "target": "nunatak_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "feedvax",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "fecundis",
+      "target": "feedvax",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "feedvax",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bsafe_biotech",
+      "target": "feedvax",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "feedvax",
+      "target": "gisens_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "feedvax",
+      "target": "nanoingreen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "feedvax",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "feedvax",
+      "target": "plamic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "elytron_biotech",
+      "target": "feedvax",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "feedvax",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "feedvax",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "dogma_biotech",
+      "target": "feedvax",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "feedvax",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "feedvax",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "feedvax",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "feedvax",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cryosmetics",
+      "target": "feedvax",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "feedvax",
+      "target": "food4you",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "feedvax",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "feedvax",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "feedvax",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cell_farm",
+      "target": "feedvax",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "feedvax",
+      "target": "monte-caldera-technology",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "feedvax",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "feedvax",
+      "target": "levya",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caligenia",
+      "target": "feedvax",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "feedvax",
+      "target": "invitrall",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "feedvax",
+      "target": "neocell",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "feedvax",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "feedvax",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cytbac",
+      "target": "feedvax",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "feedvax",
+      "target": "nat4bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "feedvax",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "feedvax",
+      "target": "nanoprox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cyanomin",
+      "target": "feedvax",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellrep",
+      "target": "ocular_bio_design",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "migma",
+      "target": "ocular_bio_design",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "microgenesis",
+      "target": "ocular_bio_design",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "ocular_bio_design",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "ocular_bio_design",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "ocular_bio_design",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enteria",
+      "target": "ocular_bio_design",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanotransfer",
+      "target": "ocular_bio_design",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "kresko_rnatech",
+      "target": "ocular_bio_design",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "ocular_bio_design",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "lipock",
+      "target": "ocular_bio_design",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "ocular_bio_design",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "naturannova",
+      "target": "ocular_bio_design",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "eywa_biotech",
+      "target": "ocular_bio_design",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "ocular_bio_design",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "ocular_bio_design",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enzyva",
+      "target": "ocular_bio_design",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "ocular_bio_design",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nunatak_biotech",
+      "target": "ocular_bio_design",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "ocular_bio_design",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "fecundis",
+      "target": "ocular_bio_design",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "ocular_bio_design",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bsafe_biotech",
+      "target": "ocular_bio_design",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "gisens_biotech",
+      "target": "ocular_bio_design",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanoingreen",
+      "target": "ocular_bio_design",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "ocular_bio_design",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "ocular_bio_design",
+      "target": "plamic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "elytron_biotech",
+      "target": "ocular_bio_design",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "ocular_bio_design",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "ocular_bio_design",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "dogma_biotech",
+      "target": "ocular_bio_design",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "ocular_bio_design",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "ocular_bio_design",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "ocular_bio_design",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "ocular_bio_design",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cryosmetics",
+      "target": "ocular_bio_design",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "food4you",
+      "target": "ocular_bio_design",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "ocular_bio_design",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "ocular_bio_design",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "ocular_bio_design",
+      "target": "onco_precision",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "ocular_bio_design",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cell_farm",
+      "target": "ocular_bio_design",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "monte-caldera-technology",
+      "target": "ocular_bio_design",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "ocular_bio_design",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "levya",
+      "target": "ocular_bio_design",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caligenia",
+      "target": "ocular_bio_design",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "invitrall",
+      "target": "ocular_bio_design",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "neocell",
+      "target": "ocular_bio_design",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "ocular_bio_design",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "ocular_bio_design",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "ocular_bio_design",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "ocular_bio_design",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cytbac",
+      "target": "ocular_bio_design",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nat4bio",
+      "target": "ocular_bio_design",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "ocular_bio_design",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanoprox",
+      "target": "ocular_bio_design",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "ocular_bio_design",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cyanomin",
+      "target": "ocular_bio_design",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellrep",
+      "target": "migma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellrep",
+      "target": "microgenesis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellrep",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "cellrep",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellrep",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellrep",
+      "target": "enteria",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellrep",
+      "target": "nanotransfer",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellrep",
+      "target": "kresko_rnatech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "cellrep",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellrep",
+      "target": "lipock",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "cellrep",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellrep",
+      "target": "naturannova",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellrep",
+      "target": "eywa_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellrep",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "cellrep",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellrep",
+      "target": "enzyva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellrep",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellrep",
+      "target": "nunatak_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellrep",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellrep",
+      "target": "fecundis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellrep",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bsafe_biotech",
+      "target": "cellrep",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellrep",
+      "target": "gisens_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellrep",
+      "target": "nanoingreen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "cellrep",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellrep",
+      "target": "plamic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellrep",
+      "target": "elytron_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellrep",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "cellrep",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellrep",
+      "target": "dogma_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellrep",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "cellrep",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellrep",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "cellrep",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellrep",
+      "target": "cryosmetics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellrep",
+      "target": "food4you",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellrep",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "cellrep",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellrep",
+      "target": "onco_precision",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "cellrep",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cell_farm",
+      "target": "cellrep",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellrep",
+      "target": "monte-caldera-technology",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "cellrep",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellrep",
+      "target": "levya",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caligenia",
+      "target": "cellrep",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellrep",
+      "target": "invitrall",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellrep",
+      "target": "neocell",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "cellrep",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "cellrep",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellrep",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "cellrep",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellrep",
+      "target": "cytbac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellrep",
+      "target": "nat4bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellrep",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellrep",
+      "target": "nanoprox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "cellrep",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cellrep",
+      "target": "cyanomin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "microgenesis",
+      "target": "migma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "migma",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "migma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "migma",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enteria",
+      "target": "migma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "migma",
+      "target": "nanotransfer",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "kresko_rnatech",
+      "target": "migma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "migma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "lipock",
+      "target": "migma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "migma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "migma",
+      "target": "naturannova",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "eywa_biotech",
+      "target": "migma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "migma",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "migma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enzyva",
+      "target": "migma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "migma",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "migma",
+      "target": "nunatak_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "migma",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "fecundis",
+      "target": "migma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "migma",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bsafe_biotech",
+      "target": "migma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "gisens_biotech",
+      "target": "migma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "migma",
+      "target": "nanoingreen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "migma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "migma",
+      "target": "plamic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "elytron_biotech",
+      "target": "migma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "migma",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "migma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "dogma_biotech",
+      "target": "migma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "migma",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "migma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "migma",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "migma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cryosmetics",
+      "target": "migma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "food4you",
+      "target": "migma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "migma",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "migma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "migma",
+      "target": "onco_precision",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "migma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cell_farm",
+      "target": "migma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "migma",
+      "target": "monte-caldera-technology",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "migma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "levya",
+      "target": "migma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caligenia",
+      "target": "migma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "invitrall",
+      "target": "migma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "migma",
+      "target": "neocell",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "migma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "migma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "migma",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "migma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cytbac",
+      "target": "migma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "migma",
+      "target": "nat4bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "migma",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "migma",
+      "target": "nanoprox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "migma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cyanomin",
+      "target": "migma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "microgenesis",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "microgenesis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "microgenesis",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enteria",
+      "target": "microgenesis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "microgenesis",
+      "target": "nanotransfer",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "kresko_rnatech",
+      "target": "microgenesis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "microgenesis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "lipock",
+      "target": "microgenesis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "microgenesis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "microgenesis",
+      "target": "naturannova",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "eywa_biotech",
+      "target": "microgenesis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "microgenesis",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "microgenesis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enzyva",
+      "target": "microgenesis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "microgenesis",
+      "target": "nunatak_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "microgenesis",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "fecundis",
+      "target": "microgenesis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "microgenesis",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bsafe_biotech",
+      "target": "microgenesis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "gisens_biotech",
+      "target": "microgenesis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "microgenesis",
+      "target": "nanoingreen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "microgenesis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "microgenesis",
+      "target": "plamic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "elytron_biotech",
+      "target": "microgenesis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "microgenesis",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "microgenesis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "dogma_biotech",
+      "target": "microgenesis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "microgenesis",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "microgenesis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "microgenesis",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "microgenesis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cryosmetics",
+      "target": "microgenesis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "food4you",
+      "target": "microgenesis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "microgenesis",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "microgenesis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "microgenesis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cell_farm",
+      "target": "microgenesis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "microgenesis",
+      "target": "monte-caldera-technology",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "microgenesis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "levya",
+      "target": "microgenesis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caligenia",
+      "target": "microgenesis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "invitrall",
+      "target": "microgenesis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "microgenesis",
+      "target": "neocell",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "microgenesis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "microgenesis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cytbac",
+      "target": "microgenesis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "microgenesis",
+      "target": "nat4bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "microgenesis",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "microgenesis",
+      "target": "nanoprox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cyanomin",
+      "target": "microgenesis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "tomorrow_foods",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enteria",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanotransfer",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "kresko_rnatech",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "lipock",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "naturannova",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "eywa_biotech",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "protiva",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enzyva",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "stamm",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nunatak_biotech",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "updairy",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "fecundis",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "resistia",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bsafe_biotech",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "gisens_biotech",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanoingreen",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "plamic",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "elytron_biotech",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "polymera",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "dogma_biotech",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "pregen",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "qnity",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cryosmetics",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "food4you",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "radial",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "onco_precision",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cell_farm",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "monte-caldera-technology",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "levya",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caligenia",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "invitrall",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "neocell",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "puna_bio",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cytbac",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nat4bio",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "syocin-biotech",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanoprox",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cyanomin",
+      "target": "werk-nvac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "stamm",
+      "target": "sylvarum",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "onco_precision",
+      "target": "sylvarum",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "sylvarum",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "puna_bio",
+      "target": "sylvarum",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "sylvarum",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "enteria",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "nanotransfer",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "kresko_rnatech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "antarka",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "lipock",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "apasomics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "naturannova",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "eywa_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "bioeutectics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "enzyva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "nunatak_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "bsafe_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "gisens_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "nanoingreen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "bioplastix",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "plamic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "elytron_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "bioplaster_research",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "dogma_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "bitgenia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "avatar_medtech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "cryosmetics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "food4you",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "bioplaster_research_inc",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "onco_precision",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "antarka",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "cell_farm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "monte-caldera-technology",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "break_pet",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "levya",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "caligenia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "invitrall",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "neocell",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "argentag",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "aquit",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "biocle",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "cytbac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "nat4bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "nanoprox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "beeflow",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "cyanomin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enteria",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanotransfer",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "kresko_rnatech",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "lipock",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "naturannova",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "eywa_biotech",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "protiva",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enzyva",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nunatak_biotech",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "tomorrow_foods",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "fecundis",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "resistia",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bsafe_biotech",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "gisens_biotech",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanoingreen",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "plamic",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "elytron_biotech",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "polymera",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "dogma_biotech",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "pregen",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "qnity",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cryosmetics",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "food4you",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "radial",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "onco_precision",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cell_farm",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "monte-caldera-technology",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "levya",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caligenia",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "invitrall",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "neocell",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "puna_bio",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cytbac",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nat4bio",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "syocin-biotech",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanoprox",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cyanomin",
+      "target": "tomorrow_foods",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enteria",
+      "target": "nanotransfer",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enteria",
+      "target": "kresko_rnatech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "enteria",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enteria",
+      "target": "lipock",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "enteria",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enteria",
+      "target": "naturannova",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enteria",
+      "target": "eywa_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enteria",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "enteria",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enteria",
+      "target": "enzyva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enteria",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enteria",
+      "target": "nunatak_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enteria",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enteria",
+      "target": "fecundis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enteria",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bsafe_biotech",
+      "target": "enteria",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enteria",
+      "target": "gisens_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enteria",
+      "target": "nanoingreen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "enteria",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enteria",
+      "target": "plamic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "elytron_biotech",
+      "target": "enteria",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enteria",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "enteria",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "dogma_biotech",
+      "target": "enteria",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enteria",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "enteria",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enteria",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "enteria",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cryosmetics",
+      "target": "enteria",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enteria",
+      "target": "food4you",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enteria",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "enteria",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enteria",
+      "target": "onco_precision",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "enteria",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cell_farm",
+      "target": "enteria",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enteria",
+      "target": "monte-caldera-technology",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "enteria",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enteria",
+      "target": "levya",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caligenia",
+      "target": "enteria",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enteria",
+      "target": "invitrall",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enteria",
+      "target": "neocell",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "enteria",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "enteria",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enteria",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "enteria",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cytbac",
+      "target": "enteria",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enteria",
+      "target": "nat4bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enteria",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enteria",
+      "target": "nanoprox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "enteria",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cyanomin",
+      "target": "enteria",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "kresko_rnatech",
+      "target": "nanotransfer",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "nanotransfer",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "lipock",
+      "target": "nanotransfer",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "nanotransfer",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanotransfer",
+      "target": "naturannova",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanotransfer",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "nanotransfer",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enzyva",
+      "target": "nanotransfer",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanotransfer",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanotransfer",
+      "target": "nunatak_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanotransfer",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "fecundis",
+      "target": "nanotransfer",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bsafe_biotech",
+      "target": "nanotransfer",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "gisens_biotech",
+      "target": "nanotransfer",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanoingreen",
+      "target": "nanotransfer",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "nanotransfer",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanotransfer",
+      "target": "plamic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "elytron_biotech",
+      "target": "nanotransfer",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanotransfer",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "nanotransfer",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "dogma_biotech",
+      "target": "nanotransfer",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanotransfer",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanotransfer",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "nanotransfer",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cryosmetics",
+      "target": "nanotransfer",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "food4you",
+      "target": "nanotransfer",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanotransfer",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "nanotransfer",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanotransfer",
+      "target": "onco_precision",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "nanotransfer",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cell_farm",
+      "target": "nanotransfer",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "monte-caldera-technology",
+      "target": "nanotransfer",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "nanotransfer",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "levya",
+      "target": "nanotransfer",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caligenia",
+      "target": "nanotransfer",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "invitrall",
+      "target": "nanotransfer",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanotransfer",
+      "target": "neocell",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "nanotransfer",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanotransfer",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "nanotransfer",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cytbac",
+      "target": "nanotransfer",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanotransfer",
+      "target": "nat4bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanotransfer",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanoprox",
+      "target": "nanotransfer",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "nanotransfer",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cyanomin",
+      "target": "nanotransfer",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "kresko_rnatech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "kresko_rnatech",
+      "target": "lipock",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "kresko_rnatech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "kresko_rnatech",
+      "target": "naturannova",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "eywa_biotech",
+      "target": "kresko_rnatech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "kresko_rnatech",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "kresko_rnatech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enzyva",
+      "target": "kresko_rnatech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "kresko_rnatech",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "kresko_rnatech",
+      "target": "nunatak_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "kresko_rnatech",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "fecundis",
+      "target": "kresko_rnatech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "kresko_rnatech",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bsafe_biotech",
+      "target": "kresko_rnatech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "gisens_biotech",
+      "target": "kresko_rnatech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "kresko_rnatech",
+      "target": "nanoingreen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "kresko_rnatech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "kresko_rnatech",
+      "target": "plamic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "elytron_biotech",
+      "target": "kresko_rnatech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "kresko_rnatech",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "kresko_rnatech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "dogma_biotech",
+      "target": "kresko_rnatech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "kresko_rnatech",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "kresko_rnatech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "kresko_rnatech",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "kresko_rnatech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cryosmetics",
+      "target": "kresko_rnatech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "food4you",
+      "target": "kresko_rnatech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "kresko_rnatech",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "kresko_rnatech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "kresko_rnatech",
+      "target": "onco_precision",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "kresko_rnatech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cell_farm",
+      "target": "kresko_rnatech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "kresko_rnatech",
+      "target": "monte-caldera-technology",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "kresko_rnatech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "kresko_rnatech",
+      "target": "levya",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caligenia",
+      "target": "kresko_rnatech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "invitrall",
+      "target": "kresko_rnatech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "kresko_rnatech",
+      "target": "neocell",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "kresko_rnatech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "kresko_rnatech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "kresko_rnatech",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "kresko_rnatech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cytbac",
+      "target": "kresko_rnatech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "kresko_rnatech",
+      "target": "nat4bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "kresko_rnatech",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "kresko_rnatech",
+      "target": "nanoprox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "kresko_rnatech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cyanomin",
+      "target": "kresko_rnatech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "lipock",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "apasomics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "naturannova",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "eywa_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "bioeutectics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "enzyva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "nunatak_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "fecundis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "bsafe_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "gisens_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "nanoingreen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "bioplastix",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "plamic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "elytron_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "bioplaster_research",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "dogma_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "bitgenia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "avatar_medtech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "cryosmetics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "food4you",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "bioplaster_research_inc",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "onco_precision",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "algalife",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "cell_farm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "monte-caldera-technology",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "break_pet",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "levya",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "caligenia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "invitrall",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "neocell",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "argentag",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "aquit",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "biocle",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "cytbac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "nat4bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "nanoprox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "beeflow",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "cyanomin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "lipock",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "lipock",
+      "target": "naturannova",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "eywa_biotech",
+      "target": "lipock",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "lipock",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "lipock",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enzyva",
+      "target": "lipock",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "lipock",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "lipock",
+      "target": "nunatak_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "lipock",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "fecundis",
+      "target": "lipock",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "lipock",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bsafe_biotech",
+      "target": "lipock",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "gisens_biotech",
+      "target": "lipock",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "lipock",
+      "target": "nanoingreen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "lipock",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "lipock",
+      "target": "plamic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "elytron_biotech",
+      "target": "lipock",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "lipock",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "lipock",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "dogma_biotech",
+      "target": "lipock",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "lipock",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "lipock",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "lipock",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "lipock",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cryosmetics",
+      "target": "lipock",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "food4you",
+      "target": "lipock",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "lipock",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "lipock",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "lipock",
+      "target": "onco_precision",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "lipock",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cell_farm",
+      "target": "lipock",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "lipock",
+      "target": "monte-caldera-technology",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "lipock",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "levya",
+      "target": "lipock",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caligenia",
+      "target": "lipock",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "invitrall",
+      "target": "lipock",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "lipock",
+      "target": "neocell",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "lipock",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "lipock",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "lipock",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "lipock",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cytbac",
+      "target": "lipock",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "lipock",
+      "target": "nat4bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "lipock",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "lipock",
+      "target": "nanoprox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "lipock",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cyanomin",
+      "target": "lipock",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "naturannova",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "eywa_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "bioeutectics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "enzyva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "nunatak_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "fecundis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "bsafe_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "gisens_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "nanoingreen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "bioplastix",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "plamic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "elytron_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "bioplaster_research",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "dogma_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "bitgenia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "avatar_medtech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "cryosmetics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "food4you",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "bioplaster_research_inc",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "onco_precision",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "apasomics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "cell_farm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "monte-caldera-technology",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "break_pet",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "levya",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "caligenia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "invitrall",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "neocell",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "argentag",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "aquit",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "biocle",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "cytbac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "nat4bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "nanoprox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "beeflow",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "cyanomin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "eywa_biotech",
+      "target": "naturannova",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "naturannova",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "naturannova",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enzyva",
+      "target": "naturannova",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "naturannova",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "naturannova",
+      "target": "nunatak_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "naturannova",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "fecundis",
+      "target": "naturannova",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "naturannova",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bsafe_biotech",
+      "target": "naturannova",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "gisens_biotech",
+      "target": "naturannova",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanoingreen",
+      "target": "naturannova",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "naturannova",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "naturannova",
+      "target": "plamic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "elytron_biotech",
+      "target": "naturannova",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "naturannova",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "naturannova",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "dogma_biotech",
+      "target": "naturannova",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "naturannova",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "naturannova",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "naturannova",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "naturannova",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cryosmetics",
+      "target": "naturannova",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "food4you",
+      "target": "naturannova",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "naturannova",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "naturannova",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "naturannova",
+      "target": "onco_precision",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "naturannova",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cell_farm",
+      "target": "naturannova",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "monte-caldera-technology",
+      "target": "naturannova",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "naturannova",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "levya",
+      "target": "naturannova",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caligenia",
+      "target": "naturannova",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "invitrall",
+      "target": "naturannova",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "naturannova",
+      "target": "neocell",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "naturannova",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "naturannova",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "naturannova",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "naturannova",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cytbac",
+      "target": "naturannova",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nat4bio",
+      "target": "naturannova",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "naturannova",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanoprox",
+      "target": "naturannova",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "naturannova",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cyanomin",
+      "target": "naturannova",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "eywa_biotech",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "eywa_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enzyva",
+      "target": "eywa_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "eywa_biotech",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "eywa_biotech",
+      "target": "nunatak_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "eywa_biotech",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "eywa_biotech",
+      "target": "fecundis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bsafe_biotech",
+      "target": "eywa_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "eywa_biotech",
+      "target": "gisens_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "eywa_biotech",
+      "target": "nanoingreen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "eywa_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "eywa_biotech",
+      "target": "plamic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "elytron_biotech",
+      "target": "eywa_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "eywa_biotech",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "eywa_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "dogma_biotech",
+      "target": "eywa_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "eywa_biotech",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "eywa_biotech",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "eywa_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cryosmetics",
+      "target": "eywa_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "eywa_biotech",
+      "target": "food4you",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "eywa_biotech",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "eywa_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "eywa_biotech",
+      "target": "onco_precision",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "eywa_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cell_farm",
+      "target": "eywa_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "eywa_biotech",
+      "target": "monte-caldera-technology",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "eywa_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "eywa_biotech",
+      "target": "levya",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caligenia",
+      "target": "eywa_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "eywa_biotech",
+      "target": "invitrall",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "eywa_biotech",
+      "target": "neocell",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "eywa_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "eywa_biotech",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "eywa_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cytbac",
+      "target": "eywa_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "eywa_biotech",
+      "target": "nat4bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "eywa_biotech",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "eywa_biotech",
+      "target": "nanoprox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "eywa_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cyanomin",
+      "target": "eywa_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enzyva",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "protiva",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nunatak_biotech",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "protiva",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "fecundis",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "protiva",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bsafe_biotech",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "gisens_biotech",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanoingreen",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "plamic",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "elytron_biotech",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "polymera",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "dogma_biotech",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "pregen",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "protiva",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cryosmetics",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "food4you",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "protiva",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "onco_precision",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cell_farm",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "monte-caldera-technology",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "levya",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caligenia",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "invitrall",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "neocell",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "protiva",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cytbac",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nat4bio",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "protiva",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanoprox",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cyanomin",
+      "target": "protiva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "enzyva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "nunatak_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "fecundis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "bsafe_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "gisens_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "nanoingreen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "bioplastix",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "plamic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "elytron_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "bioplaster_research",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "dogma_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "bitgenia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "bioeutectics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "cryosmetics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "food4you",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "bioplaster_research_inc",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "onco_precision",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "bioeutectics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "cell_farm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "monte-caldera-technology",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "break_pet",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "levya",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "caligenia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "invitrall",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "neocell",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "bioeutectics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "bioeutectics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "bioeutectics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "cytbac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "nat4bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "nanoprox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "bioeutectics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "cyanomin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enzyva",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enzyva",
+      "target": "nunatak_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enzyva",
+      "target": "fecundis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enzyva",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bsafe_biotech",
+      "target": "enzyva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enzyva",
+      "target": "gisens_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enzyva",
+      "target": "nanoingreen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "enzyva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enzyva",
+      "target": "plamic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "elytron_biotech",
+      "target": "enzyva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enzyva",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "enzyva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "dogma_biotech",
+      "target": "enzyva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enzyva",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "enzyva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enzyva",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "enzyva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cryosmetics",
+      "target": "enzyva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enzyva",
+      "target": "food4you",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enzyva",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "enzyva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enzyva",
+      "target": "onco_precision",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "enzyva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cell_farm",
+      "target": "enzyva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enzyva",
+      "target": "monte-caldera-technology",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "enzyva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enzyva",
+      "target": "levya",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caligenia",
+      "target": "enzyva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enzyva",
+      "target": "invitrall",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enzyva",
+      "target": "neocell",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "enzyva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "enzyva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enzyva",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "enzyva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cytbac",
+      "target": "enzyva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enzyva",
+      "target": "nat4bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enzyva",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "enzyva",
+      "target": "nanoprox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "enzyva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cyanomin",
+      "target": "enzyva",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nunatak_biotech",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "stamm",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "fecundis",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "resistia",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bsafe_biotech",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "gisens_biotech",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanoingreen",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "plamic",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "elytron_biotech",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "polymera",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "dogma_biotech",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "pregen",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "qnity",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cryosmetics",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "food4you",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "radial",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cell_farm",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "monte-caldera-technology",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "levya",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caligenia",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "invitrall",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "neocell",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cytbac",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nat4bio",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "stamm",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanoprox",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cyanomin",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nunatak_biotech",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "fecundis",
+      "target": "nunatak_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nunatak_biotech",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bsafe_biotech",
+      "target": "nunatak_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "gisens_biotech",
+      "target": "nunatak_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanoingreen",
+      "target": "nunatak_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "nunatak_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nunatak_biotech",
+      "target": "plamic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "elytron_biotech",
+      "target": "nunatak_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nunatak_biotech",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "nunatak_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "dogma_biotech",
+      "target": "nunatak_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nunatak_biotech",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "nunatak_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nunatak_biotech",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "nunatak_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cryosmetics",
+      "target": "nunatak_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "food4you",
+      "target": "nunatak_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nunatak_biotech",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "nunatak_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nunatak_biotech",
+      "target": "onco_precision",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "nunatak_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cell_farm",
+      "target": "nunatak_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "monte-caldera-technology",
+      "target": "nunatak_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "nunatak_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "levya",
+      "target": "nunatak_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caligenia",
+      "target": "nunatak_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "invitrall",
+      "target": "nunatak_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "neocell",
+      "target": "nunatak_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "nunatak_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "nunatak_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nunatak_biotech",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "nunatak_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cytbac",
+      "target": "nunatak_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nat4bio",
+      "target": "nunatak_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nunatak_biotech",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanoprox",
+      "target": "nunatak_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "nunatak_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cyanomin",
+      "target": "nunatak_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "fecundis",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "resistia",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bsafe_biotech",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "gisens_biotech",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanoingreen",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "plamic",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "elytron_biotech",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "polymera",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "dogma_biotech",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "pregen",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "qnity",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cryosmetics",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "food4you",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "radial",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "onco_precision",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cell_farm",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "monte-caldera-technology",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "levya",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caligenia",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "invitrall",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "neocell",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "puna_bio",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cytbac",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nat4bio",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "syocin-biotech",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanoprox",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cyanomin",
+      "target": "updairy",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "fecundis",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bsafe_biotech",
+      "target": "fecundis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "fecundis",
+      "target": "gisens_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "fecundis",
+      "target": "nanoingreen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "fecundis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "fecundis",
+      "target": "plamic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "elytron_biotech",
+      "target": "fecundis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "fecundis",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "fecundis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "dogma_biotech",
+      "target": "fecundis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "fecundis",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "fecundis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "fecundis",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "fecundis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cryosmetics",
+      "target": "fecundis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "fecundis",
+      "target": "food4you",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "fecundis",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "fecundis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "fecundis",
+      "target": "onco_precision",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "fecundis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cell_farm",
+      "target": "fecundis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "fecundis",
+      "target": "monte-caldera-technology",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "fecundis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "fecundis",
+      "target": "levya",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caligenia",
+      "target": "fecundis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "fecundis",
+      "target": "invitrall",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "fecundis",
+      "target": "neocell",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "fecundis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "fecundis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "fecundis",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "fecundis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cytbac",
+      "target": "fecundis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "fecundis",
+      "target": "nat4bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "fecundis",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "fecundis",
+      "target": "nanoprox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "fecundis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cyanomin",
+      "target": "fecundis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bsafe_biotech",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "gisens_biotech",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanoingreen",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "plamic",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "elytron_biotech",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "polymera",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "dogma_biotech",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "pregen",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "qnity",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cryosmetics",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "food4you",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "radial",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "onco_precision",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cell_farm",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "monte-caldera-technology",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "levya",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caligenia",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "invitrall",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "neocell",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "puna_bio",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cytbac",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nat4bio",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "resistia",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanoprox",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cyanomin",
+      "target": "resistia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bsafe_biotech",
+      "target": "gisens_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bsafe_biotech",
+      "target": "nanoingreen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "bsafe_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bsafe_biotech",
+      "target": "plamic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bsafe_biotech",
+      "target": "elytron_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bsafe_biotech",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "bsafe_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bsafe_biotech",
+      "target": "dogma_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bsafe_biotech",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "bsafe_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bsafe_biotech",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "bsafe_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bsafe_biotech",
+      "target": "cryosmetics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bsafe_biotech",
+      "target": "food4you",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bsafe_biotech",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "bsafe_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bsafe_biotech",
+      "target": "onco_precision",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "bsafe_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bsafe_biotech",
+      "target": "cell_farm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bsafe_biotech",
+      "target": "monte-caldera-technology",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "bsafe_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bsafe_biotech",
+      "target": "levya",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bsafe_biotech",
+      "target": "caligenia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bsafe_biotech",
+      "target": "invitrall",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bsafe_biotech",
+      "target": "neocell",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "bsafe_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "bsafe_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bsafe_biotech",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "bsafe_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bsafe_biotech",
+      "target": "cytbac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bsafe_biotech",
+      "target": "nat4bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bsafe_biotech",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bsafe_biotech",
+      "target": "nanoprox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "bsafe_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bsafe_biotech",
+      "target": "cyanomin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "gisens_biotech",
+      "target": "nanoingreen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "gisens_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "gisens_biotech",
+      "target": "plamic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "elytron_biotech",
+      "target": "gisens_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "gisens_biotech",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "gisens_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "dogma_biotech",
+      "target": "gisens_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "gisens_biotech",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "gisens_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "gisens_biotech",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "gisens_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cryosmetics",
+      "target": "gisens_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "food4you",
+      "target": "gisens_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "gisens_biotech",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "gisens_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "gisens_biotech",
+      "target": "onco_precision",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "gisens_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cell_farm",
+      "target": "gisens_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "gisens_biotech",
+      "target": "monte-caldera-technology",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "gisens_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "gisens_biotech",
+      "target": "levya",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caligenia",
+      "target": "gisens_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "gisens_biotech",
+      "target": "invitrall",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "gisens_biotech",
+      "target": "neocell",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "gisens_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "gisens_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "gisens_biotech",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "gisens_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cytbac",
+      "target": "gisens_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "gisens_biotech",
+      "target": "nat4bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "gisens_biotech",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "gisens_biotech",
+      "target": "nanoprox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "gisens_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cyanomin",
+      "target": "gisens_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "nanoingreen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanoingreen",
+      "target": "plamic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "elytron_biotech",
+      "target": "nanoingreen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanoingreen",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "nanoingreen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "dogma_biotech",
+      "target": "nanoingreen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanoingreen",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "nanoingreen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanoingreen",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "nanoingreen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cryosmetics",
+      "target": "nanoingreen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "food4you",
+      "target": "nanoingreen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanoingreen",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "nanoingreen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanoingreen",
+      "target": "onco_precision",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "nanoingreen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cell_farm",
+      "target": "nanoingreen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "monte-caldera-technology",
+      "target": "nanoingreen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "nanoingreen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "levya",
+      "target": "nanoingreen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caligenia",
+      "target": "nanoingreen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "invitrall",
+      "target": "nanoingreen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanoingreen",
+      "target": "neocell",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "nanoingreen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "nanoingreen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanoingreen",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "nanoingreen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cytbac",
+      "target": "nanoingreen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanoingreen",
+      "target": "nat4bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanoingreen",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanoingreen",
+      "target": "nanoprox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "nanoingreen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cyanomin",
+      "target": "nanoingreen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "plamic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "elytron_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "bioplastix",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "dogma_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "bitgenia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "bioplastix",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "cryosmetics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "food4you",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "bioplastix",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "onco_precision",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "bioplastix",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "cell_farm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "monte-caldera-technology",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "break_pet",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "levya",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "caligenia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "invitrall",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "neocell",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "bioplastix",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "bioplastix",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "bioplastix",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "cytbac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "nat4bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "nanoprox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "bioplastix",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "cyanomin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "elytron_biotech",
+      "target": "plamic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "plamic",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "plamic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "dogma_biotech",
+      "target": "plamic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "plamic",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "plamic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "plamic",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "plamic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cryosmetics",
+      "target": "plamic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "food4you",
+      "target": "plamic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "plamic",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "plamic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "onco_precision",
+      "target": "plamic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "plamic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cell_farm",
+      "target": "plamic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "monte-caldera-technology",
+      "target": "plamic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "plamic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "levya",
+      "target": "plamic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caligenia",
+      "target": "plamic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "invitrall",
+      "target": "plamic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "neocell",
+      "target": "plamic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "plamic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "plamic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "plamic",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "plamic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cytbac",
+      "target": "plamic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nat4bio",
+      "target": "plamic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "plamic",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanoprox",
+      "target": "plamic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "plamic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cyanomin",
+      "target": "plamic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "elytron_biotech",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "elytron_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "dogma_biotech",
+      "target": "elytron_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "elytron_biotech",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "elytron_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "elytron_biotech",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "elytron_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cryosmetics",
+      "target": "elytron_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "elytron_biotech",
+      "target": "food4you",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "elytron_biotech",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "elytron_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "elytron_biotech",
+      "target": "onco_precision",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "elytron_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cell_farm",
+      "target": "elytron_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "elytron_biotech",
+      "target": "monte-caldera-technology",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "elytron_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "elytron_biotech",
+      "target": "levya",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caligenia",
+      "target": "elytron_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "elytron_biotech",
+      "target": "invitrall",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "elytron_biotech",
+      "target": "neocell",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "elytron_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "elytron_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "elytron_biotech",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "elytron_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cytbac",
+      "target": "elytron_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "elytron_biotech",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "elytron_biotech",
+      "target": "nanoprox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "elytron_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cyanomin",
+      "target": "elytron_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "dogma_biotech",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "polymera",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "polymera",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cryosmetics",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "food4you",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "polymera",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "onco_precision",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cell_farm",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "monte-caldera-technology",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "levya",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caligenia",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "invitrall",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "neocell",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "polymera",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cytbac",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nat4bio",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "polymera",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanoprox",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cyanomin",
+      "target": "polymera",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "dogma_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "bitgenia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "bioplaster_research",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "cryosmetics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "food4you",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "bioplaster_research_inc",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "onco_precision",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "bioplaster_research",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "cell_farm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "monte-caldera-technology",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "break_pet",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "levya",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "caligenia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "invitrall",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "neocell",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "bioplaster_research",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "bioplaster_research",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "bioplaster_research",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "cytbac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "nat4bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "nanoprox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "bioplaster_research",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "cyanomin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "dogma_biotech",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "dogma_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "dogma_biotech",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "dogma_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cryosmetics",
+      "target": "dogma_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "dogma_biotech",
+      "target": "food4you",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "dogma_biotech",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "dogma_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "dogma_biotech",
+      "target": "onco_precision",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "dogma_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cell_farm",
+      "target": "dogma_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "dogma_biotech",
+      "target": "monte-caldera-technology",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "dogma_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "dogma_biotech",
+      "target": "levya",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caligenia",
+      "target": "dogma_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "dogma_biotech",
+      "target": "invitrall",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "dogma_biotech",
+      "target": "neocell",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "dogma_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "dogma_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "dogma_biotech",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "dogma_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cytbac",
+      "target": "dogma_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "dogma_biotech",
+      "target": "nat4bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "dogma_biotech",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "dogma_biotech",
+      "target": "nanoprox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "dogma_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cyanomin",
+      "target": "dogma_biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "pregen",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cryosmetics",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "food4you",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "pregen",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "onco_precision",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cell_farm",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "monte-caldera-technology",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "levya",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caligenia",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "invitrall",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "neocell",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "pregen",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cytbac",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nat4bio",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "pregen",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanoprox",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cyanomin",
+      "target": "pregen",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "bitgenia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "cryosmetics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "food4you",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "bitgenia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "onco_precision",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "bitgenia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "cell_farm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "monte-caldera-technology",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "break_pet",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "levya",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "caligenia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "invitrall",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "neocell",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "bitgenia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "bitgenia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "cytbac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "nat4bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "nanoprox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "bitgenia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "cyanomin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cryosmetics",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "food4you",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "qnity",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "onco_precision",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cell_farm",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "monte-caldera-technology",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "levya",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caligenia",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "invitrall",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "neocell",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "puna_bio",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cytbac",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nat4bio",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "qnity",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanoprox",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cyanomin",
+      "target": "qnity",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "cryosmetics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "food4you",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "bioplaster_research_inc",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "onco_precision",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "avatar_medtech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "cell_farm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "monte-caldera-technology",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "break_pet",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "levya",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "caligenia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "invitrall",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "neocell",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "avatar_medtech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "avatar_medtech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "biocle",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "cytbac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "nat4bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "nanoprox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "beeflow",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "cyanomin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cryosmetics",
+      "target": "food4you",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cryosmetics",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "cryosmetics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cryosmetics",
+      "target": "onco_precision",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "cryosmetics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cell_farm",
+      "target": "cryosmetics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cryosmetics",
+      "target": "monte-caldera-technology",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "cryosmetics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cryosmetics",
+      "target": "levya",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caligenia",
+      "target": "cryosmetics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cryosmetics",
+      "target": "invitrall",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cryosmetics",
+      "target": "neocell",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "cryosmetics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "cryosmetics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cryosmetics",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "cryosmetics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cryosmetics",
+      "target": "cytbac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cryosmetics",
+      "target": "nat4bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cryosmetics",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cryosmetics",
+      "target": "nanoprox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "cryosmetics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cryosmetics",
+      "target": "cyanomin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "food4you",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "food4you",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "food4you",
+      "target": "onco_precision",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "food4you",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cell_farm",
+      "target": "food4you",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "food4you",
+      "target": "monte-caldera-technology",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "food4you",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "food4you",
+      "target": "levya",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caligenia",
+      "target": "food4you",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "food4you",
+      "target": "invitrall",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "food4you",
+      "target": "neocell",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "food4you",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "food4you",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "food4you",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "food4you",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cytbac",
+      "target": "food4you",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "food4you",
+      "target": "nat4bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "food4you",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "food4you",
+      "target": "nanoprox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "food4you",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cyanomin",
+      "target": "food4you",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "onco_precision",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cell_farm",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "monte-caldera-technology",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "levya",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caligenia",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "invitrall",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "neocell",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "puna_bio",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cytbac",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nat4bio",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "radial",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanoprox",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cyanomin",
+      "target": "radial",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "onco_precision",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "bioplaster_research_inc",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "cell_farm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "monte-caldera-technology",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "break_pet",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "levya",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "caligenia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "invitrall",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "neocell",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "bioplaster_research_inc",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "bioplaster_research_inc",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "bioplaster_research_inc",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "cytbac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "nat4bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "nanoprox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "bioplaster_research_inc",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "cyanomin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "onco_precision",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cell_farm",
+      "target": "onco_precision",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "monte-caldera-technology",
+      "target": "onco_precision",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "onco_precision",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "levya",
+      "target": "onco_precision",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caligenia",
+      "target": "onco_precision",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "invitrall",
+      "target": "onco_precision",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "neocell",
+      "target": "onco_precision",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "onco_precision",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "onco_precision",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cytbac",
+      "target": "onco_precision",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nat4bio",
+      "target": "onco_precision",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "onco_precision",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanoprox",
+      "target": "onco_precision",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cyanomin",
+      "target": "onco_precision",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "cell_farm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "monte-caldera-technology",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "break_pet",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "levya",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "caligenia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "invitrall",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "neocell",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "argentag",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "aquit",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "biocle",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "cytbac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "nat4bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "nanoprox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "beeflow",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "cyanomin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cell_farm",
+      "target": "monte-caldera-technology",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "cell_farm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cell_farm",
+      "target": "levya",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caligenia",
+      "target": "cell_farm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cell_farm",
+      "target": "invitrall",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cell_farm",
+      "target": "neocell",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "cell_farm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "cell_farm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cell_farm",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "cell_farm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cell_farm",
+      "target": "cytbac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cell_farm",
+      "target": "nat4bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cell_farm",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cell_farm",
+      "target": "nanoprox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "cell_farm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cell_farm",
+      "target": "cyanomin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "monte-caldera-technology",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "levya",
+      "target": "monte-caldera-technology",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caligenia",
+      "target": "monte-caldera-technology",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "invitrall",
+      "target": "monte-caldera-technology",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "monte-caldera-technology",
+      "target": "neocell",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "monte-caldera-technology",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "monte-caldera-technology",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "monte-caldera-technology",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "monte-caldera-technology",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cytbac",
+      "target": "monte-caldera-technology",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "monte-caldera-technology",
+      "target": "nat4bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "monte-caldera-technology",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "monte-caldera-technology",
+      "target": "nanoprox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "monte-caldera-technology",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cyanomin",
+      "target": "monte-caldera-technology",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "levya",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "caligenia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "invitrall",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "neocell",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "break_pet",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "break_pet",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "break_pet",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "cytbac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "nat4bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "nanoprox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "break_pet",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "cyanomin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caligenia",
+      "target": "levya",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "invitrall",
+      "target": "levya",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "levya",
+      "target": "neocell",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "levya",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "levya",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "levya",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "levya",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cytbac",
+      "target": "levya",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "levya",
+      "target": "nat4bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "levya",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "levya",
+      "target": "nanoprox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "levya",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cyanomin",
+      "target": "levya",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caligenia",
+      "target": "invitrall",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caligenia",
+      "target": "neocell",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "caligenia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "caligenia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caligenia",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "caligenia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caligenia",
+      "target": "cytbac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caligenia",
+      "target": "nat4bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caligenia",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caligenia",
+      "target": "nanoprox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "caligenia",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "caligenia",
+      "target": "cyanomin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "invitrall",
+      "target": "neocell",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "invitrall",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "invitrall",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "invitrall",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "invitrall",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cytbac",
+      "target": "invitrall",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "invitrall",
+      "target": "nat4bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "invitrall",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "invitrall",
+      "target": "nanoprox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "invitrall",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cyanomin",
+      "target": "invitrall",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "neocell",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "neocell",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "neocell",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "neocell",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cytbac",
+      "target": "neocell",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nat4bio",
+      "target": "neocell",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "neocell",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanoprox",
+      "target": "neocell",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "neocell",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cyanomin",
+      "target": "neocell",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "argentag",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "biocle",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "cytbac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "nat4bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "nanoprox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "cyanomin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "biocle",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "cytbac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "nat4bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "nanoprox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "beeflow",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "cyanomin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cytbac",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nat4bio",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "puna_bio",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanoprox",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cyanomin",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "cytbac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "nat4bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "nanoprox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "biocle",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "cyanomin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cytbac",
+      "target": "nat4bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cytbac",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cytbac",
+      "target": "nanoprox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "cytbac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cyanomin",
+      "target": "cytbac",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nat4bio",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanoprox",
+      "target": "nat4bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "nat4bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cyanomin",
+      "target": "nat4bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanoprox",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cyanomin",
+      "target": "syocin-biotech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "nanoprox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "cyanomin",
+      "target": "nanoprox",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "cyanomin",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "blooms",
+      "target": "symbiomics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "blooms",
+      "target": "verqor",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "agrosmart",
+      "target": "blooms",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "symbiomics",
+      "target": "verqor",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "puna_bio",
+      "target": "symbiomics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "agrosmart",
+      "target": "symbiomics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "genica",
+      "target": "magnamed",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "agrosmart",
+      "target": "verqor",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "solubio",
+      "target": "solubio-br",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "agrolend",
+      "target": "strider-br",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "magnamed",
+      "target": "traive",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "agrolend",
+      "target": "satellogic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "arado",
+      "target": "satellogic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "satellogic",
+      "target": "sette",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "culttivo",
+      "target": "ecotrace-br",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "kilimo",
+      "target": "ucrop-it-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "deepagro",
+      "target": "ucrop-it-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "eiwa",
+      "target": "kigui",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "deepagro",
+      "target": "kigui",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "auravant",
+      "target": "kilimo",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "auravant",
+      "target": "beeflow",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "deepagro",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "kigui",
+      "target": "ruuts",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "eiru",
+      "target": "kigui",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "kigui",
+      "target": "satellites_on_fire",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "agrojusto",
+      "target": "kigui",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "done_properly",
+      "target": "kilimo",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "done_properly",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "calice_biotech",
+      "target": "done_properly",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "deepagro",
+      "target": "done_properly",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "eiru",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "deepagro",
+      "target": "eiru",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "kilimo",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "calice_biotech",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "deepagro",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nanotica",
+      "target": "puna_bio",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "inedita-bio-br",
+      "target": "vyro-bio-br",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "microbiota-agricola-br",
+      "target": "nemacontrol-biologicos-br",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "symbiomics",
+      "target": "vyro-bio-br",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "ardan",
+      "target": "baxxis-medtech-cl",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "baxxis-medtech-cl",
+      "target": "eolo_pharma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "amnova-biotech-cl",
+      "target": "baxxis-medtech-cl",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "baxxis-medtech-cl",
+      "target": "phylumtech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "baxxis-medtech-cl",
+      "target": "ergo_bioscience",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "baxxis-medtech-cl",
+      "target": "viewmind",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "baxxis-medtech-cl",
+      "target": "limay_biosciences",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "baxxis-medtech-cl",
+      "target": "bioseek",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "ardan",
+      "target": "eolo_pharma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "amnova-biotech-cl",
+      "target": "ardan",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "ardan",
+      "target": "phylumtech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "ardan",
+      "target": "ergo_bioscience",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "ardan",
+      "target": "viewmind",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "ardan",
+      "target": "limay_biosciences",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "ardan",
+      "target": "bioseek",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "amnova-biotech-cl",
+      "target": "eolo_pharma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "eolo_pharma",
+      "target": "phylumtech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "eolo_pharma",
+      "target": "ergo_bioscience",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "eolo_pharma",
+      "target": "viewmind",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "eolo_pharma",
+      "target": "limay_biosciences",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioseek",
+      "target": "eolo_pharma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "amnova-biotech-cl",
+      "target": "phylumtech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "amnova-biotech-cl",
+      "target": "ergo_bioscience",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "amnova-biotech-cl",
+      "target": "viewmind",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "amnova-biotech-cl",
+      "target": "limay_biosciences",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "amnova-biotech-cl",
+      "target": "bioseek",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "ergo_bioscience",
+      "target": "phylumtech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "phylumtech",
+      "target": "viewmind",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "limay_biosciences",
+      "target": "phylumtech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioseek",
+      "target": "phylumtech",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "ergo_bioscience",
+      "target": "viewmind",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "ergo_bioscience",
+      "target": "limay_biosciences",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioseek",
+      "target": "ergo_bioscience",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "limay_biosciences",
+      "target": "viewmind",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioseek",
+      "target": "viewmind",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "bioseek",
+      "target": "limay_biosciences",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "ayuvant",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "ayuvant",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "ayuvant",
+      "target": "satellites_on_fire",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "epiliquid",
+      "target": "onco_precision",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "satellites_on_fire",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "done_properly",
+      "target": "satellites_on_fire",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "aplife_biotech",
+      "target": "epiliquid",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "calice",
+      "target": "satellites_on_fire",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "epiliquid",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "satellites_on_fire",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "satellogic",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "satellogic",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "satellites_on_fire",
+      "target": "splight",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "ayuvant",
+      "target": "siloreal",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "satellites_on_fire",
+      "target": "siloreal",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "giraffe-bio-ar",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "giraffe-bio-ar",
+      "target": "michroma",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "giraffe-bio-ar",
+      "target": "microgenesis",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "giraffe-bio-ar",
+      "target": "stamm",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "done_properly",
+      "target": "solfium",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "deepagro",
+      "target": "sensify",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "corsync",
+      "target": "sensix",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "nintx-br",
+      "target": "symbiomics",
+      "weight": 2,
+      "thickness": 1
+    },
+    {
+      "source": "activaq",
+      "target": "bleps_vision",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bleps_vision",
+      "target": "botanical-solutions",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bleps_vision",
+      "target": "eywa_biotech",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bleps_vision",
+      "target": "pannex_therapeutics",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bleps_vision",
+      "target": "metabix-biotech",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "Bee Technology",
+      "target": "bleps_vision",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bleps_vision",
+      "target": "luyef-biotechnologies-cl",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bleps_vision",
+      "target": "sciphage",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bleps_vision",
+      "target": "unibaio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "amplify-dynamics",
+      "target": "bleps_vision",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bleps_vision",
+      "target": "resistia",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bleps_vision",
+      "target": "tissuelabs",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bleps_vision",
+      "target": "innovai",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "arcomed",
+      "target": "bleps_vision",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bleps_vision",
+      "target": "nanotransfer",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "bleps_vision",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "biosolvit",
+      "target": "bleps_vision",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bioceres-ar",
+      "target": "bleps_vision",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bleps_vision",
+      "target": "botanical-solution-inc-cl",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "bleps_vision",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bleps_vision",
+      "target": "eiwa",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bleps_vision",
+      "target": "tensor-care",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "biomakers",
+      "target": "bleps_vision",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bleps_vision",
+      "target": "tell",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bleps_vision",
+      "target": "the-earth-says",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bleps_vision",
+      "target": "patagon-fiber",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bleps_vision",
+      "target": "ergo_bioscience",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bleps_vision",
+      "target": "leaf",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bleps_vision",
+      "target": "delee",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bleps_vision",
+      "target": "metabix_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "activaq",
+      "target": "botanical-solutions",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "activaq",
+      "target": "eywa_biotech",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "activaq",
+      "target": "pannex_therapeutics",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "activaq",
+      "target": "metabix-biotech",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "Bee Technology",
+      "target": "activaq",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "activaq",
+      "target": "luyef-biotechnologies-cl",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "activaq",
+      "target": "sciphage",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "activaq",
+      "target": "unibaio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "activaq",
+      "target": "amplify-dynamics",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "activaq",
+      "target": "resistia",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "activaq",
+      "target": "tissuelabs",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "activaq",
+      "target": "innovai",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "activaq",
+      "target": "arcomed",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "activaq",
+      "target": "nanotransfer",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "activaq",
+      "target": "aquit",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "activaq",
+      "target": "biosolvit",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "activaq",
+      "target": "bioceres-ar",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "activaq",
+      "target": "botanical-solution-inc-cl",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "activaq",
+      "target": "bitgenia",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "activaq",
+      "target": "eiwa",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "activaq",
+      "target": "tensor-care",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "activaq",
+      "target": "biomakers",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "activaq",
+      "target": "tell",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "activaq",
+      "target": "the-earth-says",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "activaq",
+      "target": "patagon-fiber",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "activaq",
+      "target": "ergo_bioscience",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "activaq",
+      "target": "leaf",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "activaq",
+      "target": "delee",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "activaq",
+      "target": "metabix_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "botanical-solutions",
+      "target": "pannex_therapeutics",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "Bee Technology",
+      "target": "botanical-solutions",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "botanical-solutions",
+      "target": "resistia",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "botanical-solutions",
+      "target": "tissuelabs",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "arcomed",
+      "target": "botanical-solutions",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "botanical-solutions",
+      "target": "nanotransfer",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "biosolvit",
+      "target": "botanical-solutions",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bioceres-ar",
+      "target": "botanical-solutions",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "botanical-solution-inc-cl",
+      "target": "botanical-solutions",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "botanical-solutions",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "botanical-solutions",
+      "target": "eiwa",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "biomakers",
+      "target": "botanical-solutions",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "botanical-solutions",
+      "target": "tell",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "botanical-solutions",
+      "target": "ergo_bioscience",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "botanical-solutions",
+      "target": "leaf",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "botanical-solutions",
+      "target": "metabix_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "eywa_biotech",
+      "target": "pannex_therapeutics",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "Bee Technology",
+      "target": "eywa_biotech",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "eywa_biotech",
+      "target": "luyef-biotechnologies-cl",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "eywa_biotech",
+      "target": "tissuelabs",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "arcomed",
+      "target": "eywa_biotech",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "biosolvit",
+      "target": "eywa_biotech",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bioceres-ar",
+      "target": "eywa_biotech",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "botanical-solution-inc-cl",
+      "target": "eywa_biotech",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "biomakers",
+      "target": "eywa_biotech",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "eywa_biotech",
+      "target": "tell",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "ergo_bioscience",
+      "target": "eywa_biotech",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "eywa_biotech",
+      "target": "leaf",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "eywa_biotech",
+      "target": "metabix_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "metabix-biotech",
+      "target": "pannex_therapeutics",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "Bee Technology",
+      "target": "pannex_therapeutics",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "luyef-biotechnologies-cl",
+      "target": "pannex_therapeutics",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "pannex_therapeutics",
+      "target": "sciphage",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "pannex_therapeutics",
+      "target": "unibaio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "amplify-dynamics",
+      "target": "pannex_therapeutics",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "pannex_therapeutics",
+      "target": "resistia",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "pannex_therapeutics",
+      "target": "tissuelabs",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "innovai",
+      "target": "pannex_therapeutics",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "arcomed",
+      "target": "pannex_therapeutics",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "nanotransfer",
+      "target": "pannex_therapeutics",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "pannex_therapeutics",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "biosolvit",
+      "target": "pannex_therapeutics",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bioceres-ar",
+      "target": "pannex_therapeutics",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "botanical-solution-inc-cl",
+      "target": "pannex_therapeutics",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "pannex_therapeutics",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "eiwa",
+      "target": "pannex_therapeutics",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "pannex_therapeutics",
+      "target": "tensor-care",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "biomakers",
+      "target": "pannex_therapeutics",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "pannex_therapeutics",
+      "target": "tell",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "pannex_therapeutics",
+      "target": "the-earth-says",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "pannex_therapeutics",
+      "target": "patagon-fiber",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "ergo_bioscience",
+      "target": "pannex_therapeutics",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "leaf",
+      "target": "pannex_therapeutics",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "delee",
+      "target": "pannex_therapeutics",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "metabix_bio",
+      "target": "pannex_therapeutics",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "Bee Technology",
+      "target": "metabix-biotech",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "luyef-biotechnologies-cl",
+      "target": "metabix-biotech",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "metabix-biotech",
+      "target": "resistia",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "metabix-biotech",
+      "target": "tissuelabs",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "arcomed",
+      "target": "metabix-biotech",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "metabix-biotech",
+      "target": "nanotransfer",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "metabix-biotech",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "biosolvit",
+      "target": "metabix-biotech",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bioceres-ar",
+      "target": "metabix-biotech",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "botanical-solution-inc-cl",
+      "target": "metabix-biotech",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "metabix-biotech",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "eiwa",
+      "target": "metabix-biotech",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "biomakers",
+      "target": "metabix-biotech",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "metabix-biotech",
+      "target": "tell",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "ergo_bioscience",
+      "target": "metabix-biotech",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "leaf",
+      "target": "metabix-biotech",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "metabix-biotech",
+      "target": "metabix_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "Bee Technology",
+      "target": "luyef-biotechnologies-cl",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "Bee Technology",
+      "target": "sciphage",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "Bee Technology",
+      "target": "unibaio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "Bee Technology",
+      "target": "amplify-dynamics",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "Bee Technology",
+      "target": "resistia",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "Bee Technology",
+      "target": "tissuelabs",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "Bee Technology",
+      "target": "innovai",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "Bee Technology",
+      "target": "arcomed",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "Bee Technology",
+      "target": "nanotransfer",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "Bee Technology",
+      "target": "aquit",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "Bee Technology",
+      "target": "biosolvit",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "Bee Technology",
+      "target": "bioceres-ar",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "Bee Technology",
+      "target": "botanical-solution-inc-cl",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "Bee Technology",
+      "target": "bitgenia",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "Bee Technology",
+      "target": "eiwa",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "Bee Technology",
+      "target": "tensor-care",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "Bee Technology",
+      "target": "biomakers",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "Bee Technology",
+      "target": "tell",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "Bee Technology",
+      "target": "the-earth-says",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "Bee Technology",
+      "target": "patagon-fiber",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "Bee Technology",
+      "target": "ergo_bioscience",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "Bee Technology",
+      "target": "leaf",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "Bee Technology",
+      "target": "delee",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "Bee Technology",
+      "target": "metabix_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "luyef-biotechnologies-cl",
+      "target": "sciphage",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "luyef-biotechnologies-cl",
+      "target": "unibaio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "amplify-dynamics",
+      "target": "luyef-biotechnologies-cl",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "luyef-biotechnologies-cl",
+      "target": "resistia",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "luyef-biotechnologies-cl",
+      "target": "tissuelabs",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "innovai",
+      "target": "luyef-biotechnologies-cl",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "arcomed",
+      "target": "luyef-biotechnologies-cl",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "luyef-biotechnologies-cl",
+      "target": "nanotransfer",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "biosolvit",
+      "target": "luyef-biotechnologies-cl",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bioceres-ar",
+      "target": "luyef-biotechnologies-cl",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "botanical-solution-inc-cl",
+      "target": "luyef-biotechnologies-cl",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "luyef-biotechnologies-cl",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "eiwa",
+      "target": "luyef-biotechnologies-cl",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "luyef-biotechnologies-cl",
+      "target": "tensor-care",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "biomakers",
+      "target": "luyef-biotechnologies-cl",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "luyef-biotechnologies-cl",
+      "target": "tell",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "luyef-biotechnologies-cl",
+      "target": "the-earth-says",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "luyef-biotechnologies-cl",
+      "target": "patagon-fiber",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "ergo_bioscience",
+      "target": "luyef-biotechnologies-cl",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "leaf",
+      "target": "luyef-biotechnologies-cl",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "delee",
+      "target": "luyef-biotechnologies-cl",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "luyef-biotechnologies-cl",
+      "target": "metabix_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "resistia",
+      "target": "sciphage",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "sciphage",
+      "target": "tissuelabs",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "arcomed",
+      "target": "sciphage",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "nanotransfer",
+      "target": "sciphage",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "sciphage",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "biosolvit",
+      "target": "sciphage",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bioceres-ar",
+      "target": "sciphage",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "botanical-solution-inc-cl",
+      "target": "sciphage",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "sciphage",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "biomakers",
+      "target": "sciphage",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "sciphage",
+      "target": "tell",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "ergo_bioscience",
+      "target": "sciphage",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "leaf",
+      "target": "sciphage",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "metabix_bio",
+      "target": "sciphage",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "resistia",
+      "target": "unibaio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "tissuelabs",
+      "target": "unibaio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "arcomed",
+      "target": "unibaio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "nanotransfer",
+      "target": "unibaio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "unibaio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "biosolvit",
+      "target": "unibaio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bioceres-ar",
+      "target": "unibaio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "botanical-solution-inc-cl",
+      "target": "unibaio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "unibaio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "biomakers",
+      "target": "unibaio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "ergo_bioscience",
+      "target": "unibaio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "leaf",
+      "target": "unibaio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "metabix_bio",
+      "target": "unibaio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "amplify-dynamics",
+      "target": "resistia",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "amplify-dynamics",
+      "target": "tissuelabs",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "amplify-dynamics",
+      "target": "arcomed",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "amplify-dynamics",
+      "target": "nanotransfer",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "amplify-dynamics",
+      "target": "aquit",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "amplify-dynamics",
+      "target": "biosolvit",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "amplify-dynamics",
+      "target": "bioceres-ar",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "amplify-dynamics",
+      "target": "botanical-solution-inc-cl",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "amplify-dynamics",
+      "target": "bitgenia",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "amplify-dynamics",
+      "target": "eiwa",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "amplify-dynamics",
+      "target": "biomakers",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "amplify-dynamics",
+      "target": "tell",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "amplify-dynamics",
+      "target": "ergo_bioscience",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "amplify-dynamics",
+      "target": "leaf",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "amplify-dynamics",
+      "target": "metabix_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "resistia",
+      "target": "tissuelabs",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "innovai",
+      "target": "resistia",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "arcomed",
+      "target": "resistia",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "biosolvit",
+      "target": "resistia",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bioceres-ar",
+      "target": "resistia",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "botanical-solution-inc-cl",
+      "target": "resistia",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "resistia",
+      "target": "tensor-care",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "biomakers",
+      "target": "resistia",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "resistia",
+      "target": "tell",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "resistia",
+      "target": "the-earth-says",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "patagon-fiber",
+      "target": "resistia",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "ergo_bioscience",
+      "target": "resistia",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "leaf",
+      "target": "resistia",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "delee",
+      "target": "resistia",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "metabix_bio",
+      "target": "resistia",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "innovai",
+      "target": "tissuelabs",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "arcomed",
+      "target": "tissuelabs",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "nanotransfer",
+      "target": "tissuelabs",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "tissuelabs",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "biosolvit",
+      "target": "tissuelabs",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bioceres-ar",
+      "target": "tissuelabs",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "botanical-solution-inc-cl",
+      "target": "tissuelabs",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "tissuelabs",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "eiwa",
+      "target": "tissuelabs",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "tensor-care",
+      "target": "tissuelabs",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "biomakers",
+      "target": "tissuelabs",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "tell",
+      "target": "tissuelabs",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "the-earth-says",
+      "target": "tissuelabs",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "patagon-fiber",
+      "target": "tissuelabs",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "ergo_bioscience",
+      "target": "tissuelabs",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "leaf",
+      "target": "tissuelabs",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "delee",
+      "target": "tissuelabs",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "metabix_bio",
+      "target": "tissuelabs",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "arcomed",
+      "target": "innovai",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "innovai",
+      "target": "nanotransfer",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "innovai",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "biosolvit",
+      "target": "innovai",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bioceres-ar",
+      "target": "innovai",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "botanical-solution-inc-cl",
+      "target": "innovai",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "innovai",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "eiwa",
+      "target": "innovai",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "biomakers",
+      "target": "innovai",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "innovai",
+      "target": "tell",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "ergo_bioscience",
+      "target": "innovai",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "innovai",
+      "target": "leaf",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "innovai",
+      "target": "metabix_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "arcomed",
+      "target": "nanotransfer",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "arcomed",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "arcomed",
+      "target": "biosolvit",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "arcomed",
+      "target": "bioceres-ar",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "arcomed",
+      "target": "botanical-solution-inc-cl",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "arcomed",
+      "target": "bitgenia",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "arcomed",
+      "target": "eiwa",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "arcomed",
+      "target": "tensor-care",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "arcomed",
+      "target": "biomakers",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "arcomed",
+      "target": "tell",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "arcomed",
+      "target": "the-earth-says",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "arcomed",
+      "target": "patagon-fiber",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "arcomed",
+      "target": "ergo_bioscience",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "arcomed",
+      "target": "leaf",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "arcomed",
+      "target": "delee",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "arcomed",
+      "target": "metabix_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "biosolvit",
+      "target": "nanotransfer",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bioceres-ar",
+      "target": "nanotransfer",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "botanical-solution-inc-cl",
+      "target": "nanotransfer",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "nanotransfer",
+      "target": "tensor-care",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "biomakers",
+      "target": "nanotransfer",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "nanotransfer",
+      "target": "tell",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "nanotransfer",
+      "target": "the-earth-says",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "nanotransfer",
+      "target": "patagon-fiber",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "ergo_bioscience",
+      "target": "nanotransfer",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "leaf",
+      "target": "nanotransfer",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "delee",
+      "target": "nanotransfer",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "metabix_bio",
+      "target": "nanotransfer",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "biosolvit",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "bioceres-ar",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "botanical-solution-inc-cl",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "tensor-care",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "biomakers",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "tell",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "the-earth-says",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "patagon-fiber",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "ergo_bioscience",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "leaf",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "delee",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "metabix_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bioceres-ar",
+      "target": "biosolvit",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "biosolvit",
+      "target": "botanical-solution-inc-cl",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "biosolvit",
+      "target": "bitgenia",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "biosolvit",
+      "target": "eiwa",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "biosolvit",
+      "target": "tensor-care",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "biomakers",
+      "target": "biosolvit",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "biosolvit",
+      "target": "tell",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "biosolvit",
+      "target": "the-earth-says",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "biosolvit",
+      "target": "patagon-fiber",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "biosolvit",
+      "target": "ergo_bioscience",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "biosolvit",
+      "target": "leaf",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "biosolvit",
+      "target": "delee",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "biosolvit",
+      "target": "metabix_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bioceres-ar",
+      "target": "botanical-solution-inc-cl",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bioceres-ar",
+      "target": "bitgenia",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bioceres-ar",
+      "target": "eiwa",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bioceres-ar",
+      "target": "tensor-care",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bioceres-ar",
+      "target": "biomakers",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bioceres-ar",
+      "target": "tell",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bioceres-ar",
+      "target": "the-earth-says",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bioceres-ar",
+      "target": "patagon-fiber",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bioceres-ar",
+      "target": "ergo_bioscience",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bioceres-ar",
+      "target": "leaf",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bioceres-ar",
+      "target": "delee",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bioceres-ar",
+      "target": "metabix_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "botanical-solution-inc-cl",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "botanical-solution-inc-cl",
+      "target": "eiwa",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "botanical-solution-inc-cl",
+      "target": "tensor-care",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "biomakers",
+      "target": "botanical-solution-inc-cl",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "botanical-solution-inc-cl",
+      "target": "tell",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "botanical-solution-inc-cl",
+      "target": "the-earth-says",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "botanical-solution-inc-cl",
+      "target": "patagon-fiber",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "botanical-solution-inc-cl",
+      "target": "ergo_bioscience",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "botanical-solution-inc-cl",
+      "target": "leaf",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "botanical-solution-inc-cl",
+      "target": "delee",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "botanical-solution-inc-cl",
+      "target": "metabix_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "tensor-care",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "biomakers",
+      "target": "bitgenia",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "tell",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "the-earth-says",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "patagon-fiber",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "ergo_bioscience",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "leaf",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "delee",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "metabix_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "eiwa",
+      "target": "tensor-care",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "biomakers",
+      "target": "eiwa",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "eiwa",
+      "target": "tell",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "eiwa",
+      "target": "the-earth-says",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "eiwa",
+      "target": "patagon-fiber",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "eiwa",
+      "target": "ergo_bioscience",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "eiwa",
+      "target": "leaf",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "delee",
+      "target": "eiwa",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "eiwa",
+      "target": "metabix_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "biomakers",
+      "target": "tensor-care",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "tell",
+      "target": "tensor-care",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "ergo_bioscience",
+      "target": "tensor-care",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "leaf",
+      "target": "tensor-care",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "metabix_bio",
+      "target": "tensor-care",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "biomakers",
+      "target": "tell",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "biomakers",
+      "target": "the-earth-says",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "biomakers",
+      "target": "patagon-fiber",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "biomakers",
+      "target": "ergo_bioscience",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "biomakers",
+      "target": "leaf",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "biomakers",
+      "target": "delee",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "biomakers",
+      "target": "metabix_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "tell",
+      "target": "the-earth-says",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "patagon-fiber",
+      "target": "tell",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "ergo_bioscience",
+      "target": "tell",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "leaf",
+      "target": "tell",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "delee",
+      "target": "tell",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "metabix_bio",
+      "target": "tell",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "ergo_bioscience",
+      "target": "the-earth-says",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "leaf",
+      "target": "the-earth-says",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "metabix_bio",
+      "target": "the-earth-says",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "ergo_bioscience",
+      "target": "patagon-fiber",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "leaf",
+      "target": "patagon-fiber",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "metabix_bio",
+      "target": "patagon-fiber",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "ergo_bioscience",
+      "target": "leaf",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "delee",
+      "target": "ergo_bioscience",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "ergo_bioscience",
+      "target": "metabix_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "delee",
+      "target": "leaf",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "leaf",
+      "target": "metabix_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "delee",
+      "target": "metabix_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "future_biome",
+      "target": "michroma",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "future_biome",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "future_biome",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "future_biome",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "future_biome",
+      "target": "glycox",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "future_biome",
+      "target": "geoprot",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "einsted",
+      "target": "future_biome",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "future_biome",
+      "target": "nanogrow_biotech",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "future_biome",
+      "target": "thermy",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "future_biome",
+      "target": "meton",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "caspr_biotech",
+      "target": "future_biome",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "eiwa",
+      "target": "future_biome",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "caspr_biotech_acq_by_amazon",
+      "target": "future_biome",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "future_biome",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "embryoxite",
+      "target": "future_biome",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "future_biome",
+      "target": "mavios",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "future_biome",
+      "target": "tesabio_ai",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bybug",
+      "target": "future_biome",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "future_biome",
+      "target": "nanojump_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "cellco",
+      "target": "future_biome",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "future_biome",
+      "target": "semion",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "calfix",
+      "target": "future_biome",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "future_biome",
+      "target": "stamm-ar",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "future_biome",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "future_biome",
+      "target": "scitherm_therapeutics",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "future_biome",
+      "target": "qumir_nano",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "future_biome",
+      "target": "microin",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "alytix",
+      "target": "future_biome",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "future_biome",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "aplife_biotech",
+      "target": "future_biome",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "future_biome",
+      "target": "new_organs_biotech",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "feedvax",
+      "target": "future_biome",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "future_biome",
+      "target": "ocular_bio_design",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "cellrep",
+      "target": "future_biome",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "future_biome",
+      "target": "vexxel_biotech",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "future_biome",
+      "target": "migma",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "future_biome",
+      "target": "microgenesis",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "future_biome",
+      "target": "werk-nvac",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "future_biome",
+      "target": "sylvarum",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "future_biome",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "future_biome",
+      "target": "tomorrow_foods",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "enteria",
+      "target": "future_biome",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "future_biome",
+      "target": "limay",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "future_biome",
+      "target": "nanotransfer",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "future_biome",
+      "target": "kresko_rnatech",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "future_biome",
+      "target": "synthetic_ocular_restoration",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "future_biome",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "future_biome",
+      "target": "lipock",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "future_biome",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "future_biome",
+      "target": "ubique_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "future_biome",
+      "target": "naturannova",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "eywa_biotech",
+      "target": "future_biome",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "future_biome",
+      "target": "protiva",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "future_biome",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "enzyva",
+      "target": "future_biome",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "future_biome",
+      "target": "stamm",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "future_biome",
+      "target": "nunatak_biotech",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "future_biome",
+      "target": "updairy",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "fecundis",
+      "target": "future_biome",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "future_biome",
+      "target": "zev_biotech",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "future_biome",
+      "target": "resistia",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bsafe_biotech",
+      "target": "future_biome",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "future_biome",
+      "target": "gisens_biotech",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "future_biome",
+      "target": "nanoingreen",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "future_biome",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "future_biome",
+      "target": "plamic",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "elytron_biotech",
+      "target": "future_biome",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "future_biome",
+      "target": "polymera",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "future_biome",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "dogma_biotech",
+      "target": "future_biome",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "future_biome",
+      "target": "pregen",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "biodiversity_intelligence",
+      "target": "future_biome",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "future_biome",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "future_biome",
+      "target": "mzp",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "future_biome",
+      "target": "qnity",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "future_biome",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "cryosmetics",
+      "target": "future_biome",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "alkemio",
+      "target": "future_biome",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "food4you",
+      "target": "future_biome",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "future_biome",
+      "target": "radial",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "future_biome",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "future_biome",
+      "target": "onco_precision",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "future_biome",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "cell_farm",
+      "target": "future_biome",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "future_biome",
+      "target": "monte-caldera-technology",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "fungi_life",
+      "target": "future_biome",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "future_biome",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "future_biome",
+      "target": "plamic_biotech",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "future_biome",
+      "target": "levya",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "caligenia",
+      "target": "future_biome",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "avedian-ar",
+      "target": "future_biome",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "future_biome",
+      "target": "invitrall",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "future_biome",
+      "target": "neocell",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "future_biome",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "future_biome",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "future_biome",
+      "target": "puna_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "future_biome",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "cytbac",
+      "target": "future_biome",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "future_biome",
+      "target": "nat4bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "future_biome",
+      "target": "syocin-biotech",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "future_biome",
+      "target": "nanoprox",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "future_biome",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "cyanomin",
+      "target": "future_biome",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "michroma",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "michroma",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "michroma",
+      "target": "thermy",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "meton",
+      "target": "michroma",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "eiwa",
+      "target": "michroma",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "caspr_biotech_acq_by_amazon",
+      "target": "michroma",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "michroma",
+      "target": "semion",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "alytix",
+      "target": "michroma",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "michroma",
+      "target": "vexxel_biotech",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "michroma",
+      "target": "sylvarum",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "limay",
+      "target": "michroma",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "michroma",
+      "target": "synthetic_ocular_restoration",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "michroma",
+      "target": "ubique_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "michroma",
+      "target": "zev_biotech",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "biodiversity_intelligence",
+      "target": "michroma",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "michroma",
+      "target": "mzp",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "alkemio",
+      "target": "michroma",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "fungi_life",
+      "target": "michroma",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "michroma",
+      "target": "plamic_biotech",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "avedian-ar",
+      "target": "michroma",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "spherebio",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "glycox",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "geoprot",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "einsted",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "nanogrow_biotech",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "thermy",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "meton",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "caspr_biotech",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "eiwa",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "caspr_biotech_acq_by_amazon",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "embryoxite",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "mavios",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "tesabio_ai",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bybug",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "nanojump_bio",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "cellco",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "semion",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "calfix",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "stamm-ar",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "scitherm_therapeutics",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "qumir_nano",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "microin",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "alytix",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "aplife_biotech",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "new_organs_biotech",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "feedvax",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "ocular_bio_design",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "cellrep",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "vexxel_biotech",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "migma",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "microgenesis",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "werk-nvac",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "sylvarum",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "tomorrow_foods",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "enteria",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "limay",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "nanotransfer",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "kresko_rnatech",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "synthetic_ocular_restoration",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "lipock",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "ubique_bio",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "naturannova",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "eywa_biotech",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "protiva",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "enzyva",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "stamm",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "nunatak_biotech",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "updairy",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "fecundis",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "zavia_bio",
+      "target": "zev_biotech",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "resistia",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bsafe_biotech",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "gisens_biotech",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "nanoingreen",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "plamic",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "elytron_biotech",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "polymera",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "dogma_biotech",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "pregen",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "biodiversity_intelligence",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "mzp",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "qnity",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "cryosmetics",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "alkemio",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "food4you",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "radial",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "onco_precision",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "cell_farm",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "monte-caldera-technology",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "fungi_life",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "plamic_biotech",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "levya",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "caligenia",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "avedian-ar",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "invitrall",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "neocell",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "aquit",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "puna_bio",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "biocle",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "cytbac",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "nat4bio",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "syocin-biotech",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "nanoprox",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "beeflow",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "cyanomin",
+      "target": "zavia_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "thermy",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "meton",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "eiwa",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "caspr_biotech_acq_by_amazon",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "semion",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "alytix",
+      "target": "arakion",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "aplife_biotech",
+      "target": "arakion",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "vexxel_biotech",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "sylvarum",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "limay",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "synthetic_ocular_restoration",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "ubique_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "zev_biotech",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "biodiversity_intelligence",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "mzp",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "alkemio",
+      "target": "arakion",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "fungi_life",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "plamic_biotech",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "arakion",
+      "target": "avedian-ar",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "glycox",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "geoprot",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "einsted",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "nanogrow_biotech",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "spherebio",
+      "target": "thermy",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "meton",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "caspr_biotech",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "eiwa",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "caspr_biotech_acq_by_amazon",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "algaebio",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "embryoxite",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "mavios",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "spherebio",
+      "target": "tesabio_ai",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bybug",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "nanojump_bio",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "cellco",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "semion",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "calfix",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "spherebio",
+      "target": "stamm-ar",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "apexzymes",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "scitherm_therapeutics",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "qumir_nano",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "microin",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "alytix",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bioblends",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "aplife_biotech",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "new_organs_biotech",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "feedvax",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "ocular_bio_design",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "cellrep",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "spherebio",
+      "target": "vexxel_biotech",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "migma",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "microgenesis",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "spherebio",
+      "target": "werk-nvac",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "spherebio",
+      "target": "sylvarum",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "antarka",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "spherebio",
+      "target": "tomorrow_foods",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "enteria",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "limay",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "nanotransfer",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "kresko_rnatech",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "spherebio",
+      "target": "synthetic_ocular_restoration",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "algalife",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "lipock",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "apasomics",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "spherebio",
+      "target": "ubique_bio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "naturannova",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "eywa_biotech",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "protiva",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bioeutectics",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "enzyva",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "spherebio",
+      "target": "stamm",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "nunatak_biotech",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "spherebio",
+      "target": "updairy",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "fecundis",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "spherebio",
+      "target": "zev_biotech",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "resistia",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bsafe_biotech",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "gisens_biotech",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "nanoingreen",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bioplastix",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "plamic",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "elytron_biotech",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "polymera",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "dogma_biotech",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "pregen",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "biodiversity_intelligence",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bitgenia",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "mzp",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "qnity",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "avatar_medtech",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "cryosmetics",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "alkemio",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "food4you",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "radial",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "bioplaster_research_inc",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "onco_precision",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "HIAMET",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "cell_farm",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "monte-caldera-technology",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "fungi_life",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "break_pet",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "plamic_biotech",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "levya",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "caligenia",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "avedian-ar",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "invitrall",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "neocell",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    },
+    {
+      "source": "argentag",
+      "target": "spherebio",
+      "weight": 1,
+      "thickness": 1
+    }
+  ]
+};

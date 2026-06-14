@@ -1007,6 +1007,7 @@
 <script src="./coverage-data.js?v=20260610" defer></script>
 <script src="./coverage-note.js?v=20260610" defer></script>
 <script src="./capital-structure-data.js?v=20260613country" defer></script>
+<script src="./coinvestment-data.js?v=20260614" defer></script>
 <script>
 document.addEventListener('DOMContentLoaded', function(){
   var CS = window.CAPITAL_STRUCTURE;
@@ -3373,21 +3374,12 @@ document.addEventListener('DOMContentLoaded', function(){
     svg.setAttribute('preserveAspectRatio', 'xMidYMid meet');
 
     // Load coinvestment network data
-    console.log('Intentando cargar coinvestment_network.json...');
-    fetch('coinvestment_network.json')
-      .then(function(r) {
-        console.log('Response status:', r.status);
-        if (!r.ok) throw new Error('HTTP ' + r.status);
-        return r.json();
-      })
-      .then(function(data) {
-        console.log('Datos cargados:', data.nodes.length, 'nodos,', data.edges.length, 'edges');
-        renderCoInvestmentNetwork(svg, ttEl, wrap, W, H, data);
-      })
-      .catch(function(e) {
-        console.error('Error:', e);
-        svg.innerHTML = '<text x="50%" y="50%" text-anchor="middle" fill="#c0392b" font-size="14" font-family="inherit">Error: ' + e.message + '</text>';
-      });
+    if (typeof COINVESTMENT_DATA !== 'undefined' && COINVESTMENT_DATA && COINVESTMENT_DATA.nodes) {
+      console.log('Usando COINVESTMENT_DATA:', COINVESTMENT_DATA.nodes.length, 'nodos');
+      renderCoInvestmentNetwork(svg, ttEl, wrap, W, H, COINVESTMENT_DATA);
+    } else {
+      svg.innerHTML = '<text x="50%" y="50%" text-anchor="middle" fill="#c0392b" font-size="14" font-family="inherit">Datos de co-inversión no disponibles</text>';
+    }
   }
 
   function renderCoInvestmentNetwork(svg, ttEl, wrap, W, H, data) {
