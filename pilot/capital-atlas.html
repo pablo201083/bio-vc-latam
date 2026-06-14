@@ -1013,338 +1013,354 @@ document.addEventListener('DOMContentLoaded', function(){
   var sec = document.getElementById('cap-structure');
   if (!CS || !sec) { if (sec) sec.style.display='none'; return; }
 
+  // ── Paletas canónicas BIO LATAM ── Digital AgTech excluido (eco-adjacent, no BIO core)
   var THEME_PAL = {
-    "Therapeutics":"#7033BC","Diagnostics & Devices":"#1A6DB5",
-    "Food Systems & Alt Proteins":"#C25A2A","Bioinputs & Crop Resilience":"#2A7A42",
-    "Nature & Ecosystem Tech":"#127A6E","Precision Agriculture":"#2E4E8C",
-    "Biomaterials & Green Chemistry":"#8B6D14","Biomanufacturing & Platform Technologies":"#6B8C3A"
+    "Therapeutics":                             "#7033BC",
+    "Diagnostics & Devices":                    "#1A6DB5",
+    "Food Systems & Alt Proteins":              "#C25A2A",
+    "Bioinputs & Crop Resilience":              "#2A7A42",
+    "Nature & Ecosystem Tech":                  "#127A6E",
+    "Precision Agriculture":                    "#2E4E8C",
+    "Biomaterials & Green Chemistry":           "#8B6D14",
+    "Biomanufacturing & Platform Technologies": "#6B8C3A"
   };
+  var THEME_ORDER = Object.keys(THEME_PAL);
   var SHORT = {
     "Therapeutics":"Therapeutics","Diagnostics & Devices":"Diagnostics",
     "Food Systems & Alt Proteins":"Food Systems","Bioinputs & Crop Resilience":"Bioinputs",
     "Nature & Ecosystem Tech":"Nature Tech","Precision Agriculture":"Precision Ag",
-    "Biomaterials & Green Chemistry":"Biomaterials","Biomanufacturing & Platform Technologies":"Biomanuf"
+    "Biomaterials & Green Chemistry":"Biomaterials","Biomanufacturing & Platform Technologies":"Biomanuf."
+  };
+  var COUNTRY_PAL = {
+    AR:'#1A6DB5',BR:'#2A7A42',CL:'#C25A2A',MX:'#7033BC',
+    CO:'#127A6E',CR:'#8B6D14',UY:'#2E4E8C',BO:'#6B8C3A',EC:'#9a3412',PE:'#5b21b6'
+  };
+  var FLAGS = {
+    AR:'🇦🇷',BR:'🇧🇷',CL:'🇨🇱',MX:'🇲🇽',CO:'🇨🇴',CR:'🇨🇷',UY:'🇺🇾',
+    BO:'🇧🇴',EC:'🇪🇨',PE:'🇵🇪',US:'🇺🇸',FI:'🇫🇮',BE:'🇧🇪',HK:'🇭🇰',ES:'🇪🇸'
   };
   var ACCENT = getComputedStyle(document.documentElement).getPropertyValue('--accent').trim() || '#0B8F87';
   var WARM   = getComputedStyle(document.documentElement).getPropertyValue('--warm').trim() || '#9a3412';
-  var sh = function(t){ return SHORT[t] || t; };
+  var sh  = function(t){ return SHORT[t] || t; };
   var col = function(t){ return THEME_PAL[t] || '#888'; };
-  var esc = function(s){ var d=document.createElement('div'); d.textContent=s; return d.innerHTML; };
+  var esc = function(s){ var d=document.createElement('div'); d.textContent=String(s); return d.innerHTML; };
 
-  // helper: barra horizontal (label, valor, max, color, suffix)
   function bar(label, val, max, color, suffix){
     var w = max>0 ? Math.max(2, Math.round(val/max*100)) : 0;
     return '<div class="cs-row"><div class="cs-row-lbl" title="'+esc(label)+'">'+esc(label)+'</div>'+
-           '<div class="cs-track"><div class="cs-fill" style="width:'+w+'%;background:'+color+'"></div></div>'+
-           '<div class="cs-val">'+(suffix!=null?suffix:val)+'</div></div>';
+      '<div class="cs-track"><div class="cs-fill" style="width:'+w+'%;background:'+color+'"></div></div>'+
+      '<div class="cs-val">'+(suffix!=null?suffix:val)+'</div></div>';
   }
 
-  // ── Pirámide global — funnel SVG centrado con % de caída ─────────
+  // ── 1. Embudo hero — trapezoides con tasas de conversión ──────────
   (function(){
     var g = CS.pyramid.global, order = CS.pyramid.level_order;
-    var GRAD = ['#1A6DB5','#127A6E','#2A7A42','#8B6D14','#9a3412'];
-    var maxN = Math.max.apply(null, order.map(function(l){ return g[l]||0; }));
-    var BAR_H = 34, GAP = 14, PAD_V = 4;
-    var W = 580, CENTER = 320, MAX_W = 330;
-    var H = order.length * (BAR_H + GAP) - GAP + PAD_V * 2;
-    var parts = ['<svg viewBox="0 0 '+W+' '+H+'" style="width:100%;max-height:240px;display:block">'];
-    order.forEach(function(lvl, i) {
-      var n = g[lvl] || 0;
-      var w = maxN > 0 ? Math.max(22, Math.round(n / maxN * MAX_W)) : MAX_W;
-      var x = CENTER - w/2;
-      var y = PAD_V + i * (BAR_H + GAP);
-      var col = GRAD[i];
-      // Centered bar
-      parts.push('<rect x="'+x+'" y="'+y+'" width="'+w+'" height="'+BAR_H+'" rx="5" fill="'+col+'" opacity="0.88"/>');
-      // Count inside bar
-      parts.push('<text x="'+CENTER+'" y="'+(y+BAR_H/2+1)+'" text-anchor="middle" dominant-baseline="middle" font-size="13" font-weight="800" font-family="inherit" fill="#fff">'+n+'</text>');
-      // Stage label on left
-      parts.push('<text x="'+(x-7)+'" y="'+(y+BAR_H/2+1)+'" text-anchor="end" dominant-baseline="middle" font-size="10.5" font-family="inherit" fill="#786052">'+lvl+'</text>');
-      // Drop badge between this and next stage
-      if (i < order.length - 1) {
-        var n2 = g[order[i+1]] || 0;
-        var botY = y + BAR_H;
-        var midY = botY + GAP/2 + 1;
-        if (n > 0) {
-          var pct = Math.round((n2 - n) / n * 100);
-          var dropLabel = (pct >= 0 ? '+' : '') + pct + '%';
-          var dropCol = n2 < n ? '#9a3412' : '#2A7A42';
-          parts.push('<line x1="'+CENTER+'" y1="'+botY+'" x2="'+CENTER+'" y2="'+(botY+GAP)+'" stroke="rgba(120,96,82,.22)" stroke-width="1.5"/>');
-          parts.push('<rect x="'+(CENTER+32)+'" y="'+(midY-8)+'" width="44" height="16" rx="4" fill="'+dropCol+'" opacity="0.85"/>');
-          parts.push('<text x="'+(CENTER+54)+'" y="'+midY+'" text-anchor="middle" dominant-baseline="middle" font-size="9.5" font-weight="700" font-family="inherit" fill="#fff">'+dropLabel+'</text>');
-        }
+    var STAGE_C = ['#94a3b8','#3da89f','#0B8F87','#065f46','#1a3d3b'];
+    var total = order.reduce(function(s,l){ return s+(g[l]||0); }, 0);
+    var maxN = g[order[0]] || 1;
+    var W=700, H=235, CX=290, MAX_W=276, MIN_W=28, BAR_H=33, GAP=9, PAD_T=10;
+    var parts = ['<svg viewBox="0 0 '+W+' '+H+'" style="width:100%;max-height:235px;display:block">'];
+    order.forEach(function(lvl, i){
+      var n = g[lvl]||0;
+      var nxt = i<order.length-1 ? g[order[i+1]]||0 : Math.max(0,n-1);
+      var w  = Math.max(MIN_W, Math.round(n/maxN*MAX_W));
+      var w2 = Math.max(MIN_W, Math.round(nxt/maxN*MAX_W));
+      var y1 = PAD_T + i*(BAR_H+GAP), y2 = y1+BAR_H;
+      var c  = STAGE_C[i]||'#888';
+      parts.push('<polygon points="'+(CX-w/2)+','+y1+' '+(CX+w/2)+','+y1+' '+(CX+w2/2)+','+y2+' '+(CX-w2/2)+','+y2+'" fill="'+c+'" opacity="0.9"/>');
+      parts.push('<text x="'+CX+'" y="'+(y1+BAR_H/2+1)+'" text-anchor="middle" dominant-baseline="middle" font-size="15" font-weight="900" font-family="inherit" fill="#fff">'+n+'</text>');
+      // Label derecha
+      parts.push('<text x="'+(CX+MAX_W/2+14)+'" y="'+(y1+BAR_H/2+1)+'" dominant-baseline="middle" font-size="10" font-weight="600" font-family="inherit" fill="rgba(70,55,40,.8)">'+lvl+'</text>');
+      // % del total izquierda
+      parts.push('<text x="'+(CX-MAX_W/2-10)+'" y="'+(y1+BAR_H/2+1)+'" text-anchor="end" dominant-baseline="middle" font-size="9.5" font-family="inherit" fill="rgba(80,65,50,.5)">'+Math.round(n/total*100)+'%</text>');
+      // Badge conversión
+      if (i<order.length-1 && n>0){
+        var drop = Math.round((1-nxt/n)*100);
+        var dc = drop>45?'#9a3412':drop>25?'#b45309':'#2A7A42';
+        var my = y2+GAP/2;
+        parts.push('<rect x="'+(CX+6)+'" y="'+(my-7)+'" width="40" height="14" rx="4" fill="'+dc+'"/>');
+        parts.push('<text x="'+(CX+26)+'" y="'+my+'" text-anchor="middle" dominant-baseline="middle" font-size="8.5" font-weight="800" font-family="inherit" fill="#fff">−'+drop+'%</text>');
       }
     });
     parts.push('</svg>');
-    document.getElementById('cs-pyramid').innerHTML = parts.join('');
-    var seed = g['Seed']||0, a = g['Series A']||0;
-    var drop = seed>0 ? Math.round((1-a/seed)*100) : 0;
-    document.getElementById('cs-pyramid-note').innerHTML =
-      'Cuello de botella: Seed→Series A pierde el <strong style="color:#9a3412">'+drop+'%</strong> '+
-      '('+seed+'→'+a+' empresas). Es el "valle" donde el capital regional no alcanza para madurar las startups.';
+    var el = document.getElementById('cs-funnel-hero');
+    if (el) el.innerHTML = parts.join('');
+    var tagEl = document.getElementById('cs-funnel-tag');
+    if (tagEl) tagEl.textContent = total+' empresas BIO con capital documentado';
+    var seed=g['Seed']||0, serA=g['Series A']||0;
+    var dropPct = seed>0?Math.round((1-serA/seed)*100):0;
+    var insEl = document.getElementById('cs-funnel-insight');
+    if (insEl) insEl.innerHTML = '🎯 <strong>Cuello de botella crítico:</strong> De <strong>'+seed+' empresas en Seed</strong>, solo '+serA+
+      ' alcanzan Series A — <strong style="color:#9a3412">caída del '+dropPct+'%</strong>. '+
+      'Ahí está la brecha: hay deal flow, falta el ticket de crecimiento BIO.';
   })();
 
-  // ── Embudo por tema (ratio early→growth) ─────────────────────────
-  (function(){
-    var bt = CS.pyramid.by_theme;
-    var rows = Object.keys(bt).map(function(t){ return {t:t, r:bt[t].early_to_growth_ratio, f:bt[t].funded}; })
-      .filter(function(x){ return x.r!=null; }).sort(function(a,b){ return a.r-b.r; });
-    var max = Math.max.apply(null, rows.map(function(x){return x.r;}));
-    document.getElementById('cs-funnel').innerHTML = rows.map(function(x){
-      var stuck = x.r < 0.25;
-      return bar(sh(x.t), x.r, max, stuck?WARM:col(x.t), x.r.toFixed(2));
-    }).join('') + '<div class="cs-note">Menor ratio = más empresas atascadas en early sin llegar a Growth. '+
-      'En <span style="color:'+WARM+'">naranja</span>, los más trabados.</div>';
-  })();
-
-  // ── Dependencia extranjera ───────────────────────────────────────
-  (function(){
-    var fd = CS.foreign_dependence;
-    var rows = Object.keys(fd).map(function(t){ return {t:t, p:fd[t].foreign_pct}; })
-      .sort(function(a,b){ return b.p-a.p; });
-    document.getElementById('cs-foreign').innerHTML = rows.map(function(x){
-      return bar(sh(x.t), x.p, 1, col(x.t), Math.round(x.p*100)+'%');
-    }).join('');
-  })();
-
-  // ── Concentración HHI ────────────────────────────────────────────
-  (function(){
-    var co = CS.concentration;
-    document.getElementById('cs-hhi-warn').innerHTML =
-      '⚠️ GridX domina por sesgo de recolección (su portfolio se barrió a fondo). '+
-      'Leer junto al mapa de cobertura, no como verdad de mercado.';
-    var rows = Object.keys(co).map(function(t){ return {t:t, h:co[t].hhi, inv:co[t].top_investor, s:co[t].top_investor_share}; })
-      .sort(function(a,b){ return b.h-a.h; });
-    var max = Math.max.apply(null, rows.map(function(x){return x.h;}));
-    document.getElementById('cs-hhi').innerHTML = rows.map(function(x){
-      return bar(sh(x.t), x.h, max, col(x.t), x.h.toFixed(2));
-    }).join('');
-  })();
-
-  // ── Capital no documentado ───────────────────────────────────────
-  (function(){
-    var g = CS.capital_gap.by_theme;
-    var rows = Object.keys(g).map(function(t){ return {t:t, w:g[t].without_capital, p:g[t].pct, tot:g[t].total}; })
-      .sort(function(a,b){ return b.p-a.p; });
-    document.getElementById('cs-gap').innerHTML =
-      '<div class="cs-note" style="margin:0 0 9px">'+CS.capital_gap.total_without_capital+
-      ' startups include sin ninguna arista de capital documentada.</div>' +
-      rows.map(function(x){ return bar(sh(x.t), x.p, 1, col(x.t), x.w+'/'+x.tot); }).join('');
-  })();
-
-  // ── Sindicación ──────────────────────────────────────────────────
-  (function(){
-    var sy = CS.syndication;
-    var chips = sy.most_syndicated.map(function(p){
-      return '<span class="cs-chip"><strong>'+esc(p[0])+'</strong> · '+p[1]+'</span>';
-    }).join('');
-    var pairs = sy.pairs.slice(0,8).map(function(e){
-      return '<div class="cs-note" style="margin:2px 0">'+esc(e.source)+' + '+esc(e.target)+
-             ' · <strong>'+e.weight+'</strong> en común</div>';
-    }).join('');
-    document.getElementById('cs-synd').innerHTML =
-      '<div class="cs-note" style="margin:0 0 9px">'+sy.total_pairs+
-      ' pares de fondos co-invierten en ≥2 startups. Más sindicados (con cuántos fondos distintos):</div>'+
-      '<div class="cs-chips">'+chips+'</div>'+
-      '<div style="margin-top:11px;columns:2;column-gap:24px">'+pairs+'</div>';
-  })();
-
-  // ── Cohortes ─────────────────────────────────────────────────────
-  (function(){
-    if (!CS.cohorts || !CS.cohorts.by_year) return;
-    var data = CS.cohorts.by_year.filter(function(d){ return d.year >= 2005 && d.total > 0; });
-    if (!data.length) return;
-    var maxTotal = Math.max.apply(null, data.map(function(d){ return d.total; }));
-    var BAR_W = 28, GAP = 3, PAD_X = 10, PAD_Y = 6;
-    var BAR_MAX_H = 90, LABEL_H = 18;
-    var W = data.length * (BAR_W + GAP) - GAP + PAD_X * 2;
-    var H = BAR_MAX_H + LABEL_H + PAD_Y * 2;
-    var parts = ['<svg viewBox="0 0 '+W+' '+H+'" style="width:100%;max-height:130px;display:block">'];
-    data.forEach(function(d, i) {
-      var x = PAD_X + i * (BAR_W + GAP);
-      var totalH = maxTotal > 0 ? Math.max(2, Math.round(d.total / maxTotal * BAR_MAX_H)) : 0;
-      var fundedH = maxTotal > 0 ? Math.round(d.funded / maxTotal * BAR_MAX_H) : 0;
-      var baseY = PAD_Y + BAR_MAX_H;
-      // Unfunded portion
-      parts.push('<rect x="'+x+'" y="'+(baseY-totalH)+'" width="'+BAR_W+'" height="'+totalH+'" rx="3" fill="rgba(180,168,150,.35)"/>');
-      // Funded portion (from bottom)
-      if (fundedH > 0) {
-        parts.push('<rect x="'+x+'" y="'+(baseY-fundedH)+'" width="'+BAR_W+'" height="'+fundedH+'" rx="3" fill="'+ACCENT+'" opacity="0.72"/>');
-      }
-      // Total label on hover title (SVG title element)
-      parts.push('<title>'+d.year+': '+d.funded+'/'+d.total+' con capital ('+Math.round(d.funded/d.total*100)+'%)</title>');
-      // Year label every 3 years or always if few bars
-      if (d.year % 3 === 0 || data.length <= 14) {
-        parts.push('<text x="'+(x+BAR_W/2)+'" y="'+(baseY+LABEL_H-3)+'" text-anchor="middle" font-size="9" font-family="inherit" fill="rgba(120,96,82,.6)">'+("'"+String(d.year).slice(2))+'</text>');
-      }
-    });
-    parts.push('</svg>');
-    document.getElementById('cs-cohorts').innerHTML = parts.join('');
-  })();
-
-  // ── Madurez por país ─────────────────────────────────────────────
+  // ── 2. Scatter País × Madurez ─────────────────────────────────────
   (function(){
     if (!CS.country_pyramids) return;
     var cp = CS.country_pyramids;
-    var STAGE_COLORS = {
-      "Pre-seed / Accelerator": "rgba(180,168,150,.5)",
-      "Seed":                   "rgba(11,143,135,.42)",
-      "Series A":               "rgba(11,143,135,.76)",
-      "Growth (B–D)":     "#0B8F87",
-      "Exit / IPO":             "#065f46"
-    };
-    var COUNTRY_NAMES = {AR:'Argentina',BR:'Brasil',CL:'Chile',MX:'México',CO:'Colombia',
-                         CR:'Costa Rica',UY:'Uruguay',BO:'Bolivia',EC:'Ecuador',PE:'Perú'};
-    var legendHtml = Object.keys(STAGE_COLORS).map(function(lvl){
-      return '<span style="display:inline-flex;align-items:center;gap:4px;font-size:.68rem;color:var(--muted)">' +
-             '<span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:'+STAGE_COLORS[lvl]+'"></span>'+lvl+'</span>';
-    }).join('');
-
-    var html = '<div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:12px">'+legendHtml+'</div>';
-
-    // Sort by series_a_plus_ratio desc
-    var sorted = cp.country_order.filter(function(cc){ var d=cp.by_country[cc]; return d && d.funded>=3; })
-      .sort(function(a,b){ return cp.by_country[b].series_a_plus_ratio - cp.by_country[a].series_a_plus_ratio; });
-
-    sorted.forEach(function(cc){
-      var d = cp.by_country[cc];
-      var total = d.funded;
-      var parts = '';
-      cp.level_order.forEach(function(lvl){
-        var n = d.levels[lvl] || 0;
-        if (n === 0) return;
-        var col2 = STAGE_COLORS[lvl] || '#ccc';
-        var tip = lvl+': '+n;
-        parts += '<div title="'+tip+'" style="flex:'+n+';background:'+col2+';height:100%;min-width:2px"></div>';
-      });
-      var ratio = Math.round(d.series_a_plus_ratio * 100);
-      var ratioColor = ratio >= 25 ? ACCENT : WARM;
-      var breakdown = cp.level_order.map(function(lvl){
-        var n = d.levels[lvl] || 0;
-        return n > 0 ? '<span style="font-size:.66rem;color:var(--muted)">'+lvl.split(' ')[0]+':'+n+'</span>' : '';
-      }).filter(Boolean).join(' · ');
-      html += '<div style="display:grid;grid-template-columns:110px 1fr 120px 58px;align-items:center;gap:8px;margin:4px 0">' +
-        '<div style="font-size:.76rem;font-weight:700;color:var(--ink)">'+esc(COUNTRY_NAMES[cc]||cc)+'</div>' +
-        '<div style="height:20px;border-radius:5px;overflow:hidden;display:flex;background:rgba(0,0,0,.05)">'+parts+'</div>' +
-        '<div style="font-size:.67rem;color:var(--muted)">'+breakdown+'</div>' +
-        '<div style="font-size:.76rem;font-weight:800;text-align:right;color:'+ratioColor+'">'+ratio+'% A+</div>' +
-        '</div>';
+    var pts = cp.country_order
+      .map(function(cc){ return {cc:cc,d:cp.by_country[cc]}; })
+      .filter(function(p){ return p.d && p.d.total>=5; })
+      .map(function(p){ return {cc:p.cc, x:p.d.series_a_plus_ratio, y:p.d.total, f:p.d.funded, sA:p.d.series_a_plus}; });
+    var W=460,H=272,PAD={l:36,r:14,t:14,b:30};
+    var CW=W-PAD.l-PAD.r, CH=H-PAD.t-PAD.b;
+    var maxX=0.68, maxY=190;
+    var toX=function(v){ return PAD.l+Math.min(v/maxX,1)*CW; };
+    var toY=function(v){ return PAD.t+CH-Math.min(v/maxY,1)*CH; };
+    var toR=function(n){ return Math.max(9,Math.min(30,Math.round(Math.sqrt(n/190)*28))); };
+    var parts=['<svg viewBox="0 0 '+W+' '+H+'" style="width:100%;max-height:272px;display:block">'];
+    // Cuadrante teal (maduro+grande)
+    var qX=toX(0.25), qY=toY(45);
+    parts.push('<rect x="'+qX+'" y="'+PAD.t+'" width="'+(CW-(qX-PAD.l))+'" height="'+(qY-PAD.t)+'" fill="rgba(11,143,135,.04)" rx="3"/>');
+    // Grid
+    [50,100,150].forEach(function(v){
+      var y=toY(v);
+      parts.push('<line x1="'+PAD.l+'" y1="'+y+'" x2="'+(PAD.l+CW)+'" y2="'+y+'" stroke="rgba(0,0,0,.07)" stroke-width="1"/>');
+      parts.push('<text x="'+(PAD.l-4)+'" y="'+(y+1)+'" text-anchor="end" dominant-baseline="middle" font-size="8" font-family="inherit" fill="rgba(100,80,60,.45)">'+v+'</text>');
     });
-
-    document.getElementById('cs-country-pyramid').innerHTML = html;
-    document.getElementById('cs-country-pyramid-note').innerHTML =
-      '% A+ = proporción de empresas en Series A o superior sobre las financiadas. ' +
-      '<span style="color:'+ACCENT+';font-weight:700">Verde</span> = ≥25% · ' +
-      '<span style="color:'+WARM+';font-weight:700">Naranja</span> = por debajo. ' +
-      'Ordenado de mayor a menor madurez.';
+    [0.1,0.25,0.4,0.55].forEach(function(v){
+      var x=toX(v);
+      parts.push('<line x1="'+x+'" y1="'+PAD.t+'" x2="'+x+'" y2="'+(PAD.t+CH)+'" stroke="rgba(0,0,0,.07)" stroke-width="1"'+(v===0.25?' stroke-dasharray="4,3"':'')+'/> ');
+      parts.push('<text x="'+x+'" y="'+(PAD.t+CH+12)+'" text-anchor="middle" font-size="8" font-family="inherit" fill="rgba(100,80,60,.45)">'+(v*100)+'%</text>');
+    });
+    // Divisores de cuadrante
+    parts.push('<line x1="'+qX+'" y1="'+PAD.t+'" x2="'+qX+'" y2="'+(PAD.t+CH)+'" stroke="rgba(11,143,135,.28)" stroke-width="1.5" stroke-dasharray="5,4"/>');
+    parts.push('<line x1="'+PAD.l+'" y1="'+qY+'" x2="'+(PAD.l+CW)+'" y2="'+qY+'" stroke="rgba(11,143,135,.18)" stroke-width="1" stroke-dasharray="4,4"/>');
+    // Labels cuadrantes
+    var qs='font-size:7px;font-family:inherit;fill:rgba(100,80,60,.28);font-style:italic';
+    parts.push('<text x="'+(qX+5)+'" y="'+(PAD.t+8)+'" '+qs+'>ecosistema maduro + grande</text>');
+    parts.push('<text x="'+(PAD.l+4)+'" y="'+(PAD.t+8)+'" '+qs+'>grande sin madurar</text>');
+    parts.push('<text x="'+(qX+5)+'" y="'+(PAD.t+CH-4)+'" '+qs+'>pequeño, maduro</text>');
+    // Ejes
+    parts.push('<text x="'+(PAD.l+CW/2)+'" y="'+(H-2)+'" text-anchor="middle" font-size="8.5" font-weight="700" font-family="inherit" fill="rgba(70,55,38,.6)">Madurez  →  % startups BIO en Series A+</text>');
+    parts.push('<text x="9" y="'+(PAD.t+CH/2)+'" text-anchor="middle" dominant-baseline="middle" font-size="8.5" font-weight="700" font-family="inherit" fill="rgba(70,55,38,.6)" transform="rotate(-90,9,'+(PAD.t+CH/2)+')">Startups BIO</text>');
+    // Burbujas
+    pts.sort(function(a,b){return b.f-a.f;}).forEach(function(p){
+      var x=toX(p.x),y=toY(p.y),r=toR(p.f),c=COUNTRY_PAL[p.cc]||'#888';
+      parts.push('<circle cx="'+x+'" cy="'+y+'" r="'+r+'" fill="'+c+'" opacity="0.82" stroke="rgba(255,255,255,.85)" stroke-width="1.5"><title>'+p.cc+': '+Math.round(p.x*100)+'% SerA+ · '+p.y+' startups BIO · '+p.sA+' en Serie A+</title></circle>');
+      var lx=x, ly=y-r-5, anc='middle';
+      if(p.cc==='AR'){ ly=y+r+11; }
+      if(p.cc==='BR'){ lx=x-r-5; anc='end'; ly=y; }
+      if(p.cc==='CL'){ lx=x+r+4; anc='start'; ly=y; }
+      if(p.cc==='UY'){ lx=x+r+4; anc='start'; }
+      parts.push('<text x="'+lx+'" y="'+ly+'" text-anchor="'+anc+'" dominant-baseline="middle" font-size="9" font-weight="700" font-family="inherit" fill="'+c+'">'+(FLAGS[p.cc]||p.cc)+' '+p.cc+'</text>');
+    });
+    parts.push('</svg>');
+    var el=document.getElementById('cs-country-scatter');
+    if(el) el.innerHTML=parts.join('');
   })();
 
-  // ── Especialización temática por país ────────────────────────────
+  // ── 3. Pipeline hacia Series A por tema ───────────────────────────
+  (function(){
+    var bt = CS.pyramid.by_theme;
+    var rows = THEME_ORDER
+      .filter(function(t){ return bt[t]; })
+      .map(function(t){
+        var d=bt[t];
+        var pipeline=(d.levels['Pre-seed / Accelerator']||0)+(d.levels['Seed']||0);
+        var atA=d.levels['Series A']||0;
+        var growth=(d.levels['Growth (B–D)']||d.levels['Growth (B–D)']||0)+(d.levels['Exit / IPO']||0);
+        return {t:t, pipeline:pipeline, atA:atA, growth:growth, ratio:pipeline>0?atA/pipeline:0};
+      })
+      .filter(function(x){ return x.pipeline>0; })
+      .sort(function(a,b){ return b.pipeline-a.pipeline; });
+    var maxP=Math.max.apply(null,rows.map(function(x){return x.pipeline;}));
+    var html=rows.map(function(x){
+      var pct=Math.round(x.pipeline/maxP*100);
+      var isOpp=x.pipeline>20&&x.ratio<0.2;
+      var c=col(x.t);
+      return '<div style="margin:5px 0">'+
+        '<div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:3px">'+
+          '<span style="font-size:.74rem;font-weight:'+(isOpp?'700':'500')+';color:var(--ink)">'+esc(sh(x.t))+'</span>'+
+          '<span style="font-size:.66rem;color:var(--muted);margin-left:6px;white-space:nowrap">'+x.pipeline+' early · '+x.atA+' SerA · '+x.growth+' growth</span>'+
+        '</div>'+
+        '<div style="height:13px;background:rgba(0,0,0,.05);border-radius:4px;overflow:hidden;position:relative">'+
+          '<div style="position:absolute;inset:0 auto 0 0;width:'+pct+'%;background:'+c+';opacity:'+(isOpp?'.88':'.58')+';border-radius:4px"></div>'+
+          (x.atA>0?'<div style="position:absolute;inset:0 auto 0 0;width:'+Math.round(x.atA/maxP*100)+'%;background:#1a3d3b;opacity:.5;border-radius:4px" title="En Serie A: '+x.atA+'"></div>':'')+
+        '</div>'+
+        (isOpp?'<div style="font-size:.63rem;color:'+WARM+';margin-top:2px;font-weight:600">⚡ '+x.pipeline+' en pipeline, solo '+x.atA+' en Serie A</div>':'')+
+      '</div>';
+    }).join('');
+    var el=document.getElementById('cs-pipeline');
+    if(el) el.innerHTML=html+
+      '<div style="display:flex;gap:12px;margin-top:10px;flex-wrap:wrap">'+
+        '<span style="display:inline-flex;align-items:center;gap:4px;font-size:.67rem;color:var(--muted)"><span style="width:10px;height:8px;border-radius:2px;background:#0B8F87;opacity:.58;display:inline-block"></span>Pipeline early</span>'+
+        '<span style="display:inline-flex;align-items:center;gap:4px;font-size:.67rem;color:var(--muted)"><span style="width:10px;height:8px;border-radius:2px;background:#1a3d3b;opacity:.5;display:inline-block"></span>Ya en Serie A</span>'+
+      '</div>';
+  })();
+
+  // ── 4. Heatmap normalizado tema × país ────────────────────────────
   (function(){
     if (!CS.country_themes) return;
-    var ct = CS.country_themes;
-    var THEME_ORDER_8 = [
-      "Diagnostics & Devices","Therapeutics","Bioinputs & Crop Resilience",
-      "Food Systems & Alt Proteins","Biomaterials & Green Chemistry",
-      "Precision Agriculture","Nature & Ecosystem Tech",
-      "Biomanufacturing & Platform Technologies"
-    ];
-    var countries = ct.country_order.slice(0, 9);
-    var ROW_H = 32, COL_W = 58, PAD_L = 176, PAD_T = 28, PAD_B = 6;
-    var W = PAD_L + countries.length * COL_W + 8;
-    var H = PAD_T + THEME_ORDER_8.length * ROW_H + PAD_B;
-    var parts = ['<svg viewBox="0 0 '+W+' '+H+'" style="width:100%;display:block;max-width:900px">'];
-
-    // Column headers
-    countries.forEach(function(cc, ci){
-      var x = PAD_L + ci * COL_W + COL_W/2;
-      parts.push('<text x="'+x+'" y="'+(PAD_T-6)+'" text-anchor="middle" font-size="10" font-weight="700" font-family="inherit" fill="rgba(80,65,52,.8)">'+cc+'</text>');
+    var ct=CS.country_themes;
+    var countries=ct.country_order.slice(0,8);
+    var ROW_H=34,COL_W=66,PAD_L=178,PAD_T=40,PAD_B=8;
+    var W=PAD_L+countries.length*COL_W+8;
+    var H=PAD_T+THEME_ORDER.length*ROW_H+PAD_B;
+    var parts=['<svg viewBox="0 0 '+W+' '+H+'" style="width:100%;display:block;max-width:880px">'];
+    // Cabeceras columnas
+    countries.forEach(function(cc,ci){
+      var x=PAD_L+ci*COL_W+COL_W/2, tot=ct.country_totals[cc]||0;
+      parts.push('<text x="'+x+'" y="'+(PAD_T-17)+'" text-anchor="middle" font-size="11" font-weight="700" font-family="inherit" fill="rgba(46,35,22,.9)">'+(FLAGS[cc]||'')+' '+cc+'</text>');
+      parts.push('<text x="'+x+'" y="'+(PAD_T-4)+'" text-anchor="middle" font-size="7.5" font-family="inherit" fill="rgba(100,85,70,.48)">n='+tot+'</text>');
     });
-
-    THEME_ORDER_8.forEach(function(theme, ti){
-      if (!ct.matrix[theme]) return;
-      var y = PAD_T + ti * ROW_H;
-      var themeColor = THEME_PAL[theme] || '#888';
-      var maxN = ct.theme_max[theme] || 1;
-
-      // Alternating row bg
-      if (ti % 2 === 0) {
-        parts.push('<rect x="0" y="'+y+'" width="'+W+'" height="'+ROW_H+'" fill="rgba(0,0,0,.018)"/>');
-      }
-      // Row label
-      parts.push('<text x="'+(PAD_L-8)+'" y="'+(y+ROW_H/2+1)+'" text-anchor="end" dominant-baseline="middle" font-size="9.5" font-family="inherit" fill="rgba(60,48,38,.82)">'+sh(theme)+'</text>');
-      // Color swatch
-      parts.push('<rect x="'+(PAD_L-24)+'" y="'+(y+ROW_H/2-4)+'" width="8" height="8" rx="2" fill="'+themeColor+'" opacity=".8"/>');
-
-      countries.forEach(function(cc, ci){
-        var n = (ct.matrix[theme] || {})[cc] || 0;
-        var cx = PAD_L + ci * COL_W + COL_W/2;
-        var cy = y + ROW_H/2;
-        if (n === 0) {
-          parts.push('<circle cx="'+cx+'" cy="'+cy+'" r="2.5" fill="rgba(0,0,0,.08)"/>');
-          return;
-        }
-        var r = Math.max(5, Math.min(13, Math.round(Math.sqrt(n/maxN)*13)));
-        var opacity = (0.38 + 0.62*(n/maxN)).toFixed(2);
-        parts.push('<circle cx="'+cx+'" cy="'+cy+'" r="'+r+'" fill="'+themeColor+'" opacity="'+opacity+'"><title>'+sh(theme)+' · '+cc+': '+n+'</title></circle>');
-        if (n >= 5) {
-          parts.push('<text x="'+cx+'" y="'+(cy+1)+'" text-anchor="middle" dominant-baseline="middle" font-size="8.5" font-weight="700" font-family="inherit" fill="#fff">'+n+'</text>');
-        } else {
-          parts.push('<text x="'+cx+'" y="'+(cy+1)+'" text-anchor="middle" dominant-baseline="middle" font-size="7.5" font-weight="700" font-family="inherit" fill="#fff">'+n+'</text>');
-        }
+    parts.push('<line x1="'+PAD_L+'" y1="'+PAD_T+'" x2="'+(W-4)+'" y2="'+PAD_T+'" stroke="rgba(0,0,0,.1)" stroke-width="1"/>');
+    THEME_ORDER.forEach(function(theme,ti){
+      var y=PAD_T+ti*ROW_H, tc=THEME_PAL[theme];
+      if(ti%2===0) parts.push('<rect x="0" y="'+y+'" width="'+W+'" height="'+ROW_H+'" fill="rgba(0,0,0,.014)"/>');
+      parts.push('<rect x="'+(PAD_L-24)+'" y="'+(y+ROW_H/2-5)+'" width="9" height="9" rx="2" fill="'+tc+'"/>');
+      parts.push('<text x="'+(PAD_L-32)+'" y="'+(y+ROW_H/2+1)+'" text-anchor="end" dominant-baseline="middle" font-size="9.5" font-family="inherit" fill="rgba(50,38,24,.84)">'+sh(theme)+'</text>');
+      // Max % en esta fila para escala relativa
+      var rowVals=countries.map(function(cc){
+        var n=(ct.matrix[theme]||{})[cc]||0, tot=ct.country_totals[cc]||1;
+        return n/tot;
+      });
+      var rowMax=Math.max.apply(null,rowVals)||0.001;
+      countries.forEach(function(cc,ci){
+        var n=(ct.matrix[theme]||{})[cc]||0, tot=ct.country_totals[cc]||1;
+        var pct=n/tot;
+        var cX=PAD_L+ci*COL_W+3, cY=y+4, cW=COL_W-6, cH=ROW_H-8;
+        var cx=PAD_L+ci*COL_W+COL_W/2, cy=y+ROW_H/2;
+        if(n===0){ parts.push('<rect x="'+cX+'" y="'+cY+'" width="'+cW+'" height="'+cH+'" rx="4" fill="rgba(0,0,0,.03)"/>'); return; }
+        var intensity=pct/rowMax, alpha=(0.1+0.9*intensity).toFixed(2);
+        var txtC=intensity>0.52?'#fff':tc, txtO=intensity>0.15?'1':'0.7';
+        parts.push('<rect x="'+cX+'" y="'+cY+'" width="'+cW+'" height="'+cH+'" rx="4" fill="'+tc+'" opacity="'+alpha+'"><title>'+sh(theme)+' · '+cc+': '+n+' startups ('+Math.round(pct*100)+'% del portfolio BIO)</title></rect>');
+        parts.push('<text x="'+cx+'" y="'+(cy+1)+'" text-anchor="middle" dominant-baseline="middle" font-size="9.5" font-weight="700" font-family="inherit" fill="'+txtC+'" opacity="'+txtO+'">'+Math.round(pct*100)+'%</text>');
       });
     });
     parts.push('</svg>');
-    document.getElementById('cs-country-themes').innerHTML = parts.join('');
+    var el=document.getElementById('cs-heatmap');
+    if(el) el.innerHTML=parts.join('');
+    var ins=document.getElementById('cs-heatmap-insight');
+    if(ins) ins.innerHTML='🌐 <strong>ADN diferenciado:</strong> '+
+      '<strong>CL</strong> destina el 33% de su portfolio BIO a Food Systems (alt-proteins + acuicultura). '+
+      '<strong>CR</strong> concentra el 39% en Precision Agriculture. '+
+      '<strong>AR</strong> domina en Diagnostics (46 startups) pero sin foco sectorial claro. '+
+      '<strong>BR</strong> tiene la huella más amplia: Diagnostics + Therapeutics + Precision Ag a escala.';
   })();
 
-  // ── Flujos transfronterizos ──────────────────────────────────────
+  // ── 5. Sankey transfronterizo ─────────────────────────────────────
   (function(){
     if (!CS.cross_border) return;
-    var cb = CS.cross_border;
-    var FLAGS = {AR:'🇦🇷',BR:'🇧🇷',CL:'🇨🇱',MX:'🇲🇽',CO:'🇨🇴',CR:'🇨🇷',
-                 UY:'🇺🇾',BO:'🇧🇴',EC:'🇪🇨',PE:'🇵🇪',US:'🇺🇸',FI:'🇫🇮',BE:'🇧🇪',HK:'🇭🇰',ES:'🇪🇸'};
-
-    var flowMap = {};
-    cb.flows.forEach(function(f){ flowMap[f.from+'_'+f.to] = f.n; });
-
-    var srcCountries = cb.top_sources.slice(0,8).map(function(x){ return x[0]; });
-    var dstCountries = ['AR','BR','CL','MX','CO','CR','UY','BO','EC'];
-
-    var maxN = Math.max.apply(null, cb.flows.map(function(f){ return f.n; }));
-
-    var html = '<div style="overflow-x:auto"><table style="border-collapse:collapse;font-size:.73rem;white-space:nowrap;width:100%">';
-    html += '<thead><tr><th style="padding:5px 10px;color:var(--muted);text-align:left;border-bottom:1.5px solid var(--line);font-size:.7rem;letter-spacing:.04em;text-transform:uppercase">Inversor ↓ · Startup →</th>';
-    dstCountries.forEach(function(cc){
-      html += '<th style="padding:5px 8px;text-align:center;border-bottom:1.5px solid var(--line);font-weight:700;color:var(--muted);font-size:.72rem">'+(FLAGS[cc]||cc)+' '+cc+'</th>';
+    var cb=CS.cross_border;
+    var SRC_PAL={AR:'#1A6DB5',US:'#b45309',BR:'#2A7A42',CL:'#7033BC',MX:'#8B6D14',CR:'#127A6E',FI:'#2E4E8C',BE:'#6B8C3A'};
+    var SRC=['AR','US','BR','CL','MX','CR','FI','BE'];
+    var DST=['AR','BR','CL','MX','CO','CR','UY','BO','EC'];
+    var flowMap={};
+    cb.flows.forEach(function(f){ flowMap[f.from+'_'+f.to]=f.n; });
+    var srcAct=SRC.filter(function(s){ return DST.some(function(d){ return (flowMap[s+'_'+d]||0)>=4; }); });
+    var dstAct=DST.filter(function(d){ return SRC.some(function(s){ return (flowMap[s+'_'+d]||0)>=4; }); });
+    var W=600,H=310,PAD_V=16;
+    var srcSlot=(H-PAD_V*2)/srcAct.length, dstSlot=(H-PAD_V*2)/dstAct.length;
+    var srcY={}, dstY={};
+    srcAct.forEach(function(s,i){ srcY[s]=PAD_V+i*srcSlot+srcSlot/2; });
+    dstAct.forEach(function(d,i){ dstY[d]=PAD_V+i*dstSlot+dstSlot/2; });
+    var maxN=Math.max.apply(null,cb.flows.map(function(f){return f.n;}));
+    var parts=['<svg viewBox="0 0 '+W+' '+H+'" style="width:100%;max-height:310px;display:block">'];
+    // Flows
+    var allF=[];
+    srcAct.forEach(function(s){ dstAct.forEach(function(d){ var n=flowMap[s+'_'+d]||0; if(n>=4) allF.push({s:s,d:d,n:n}); }); });
+    allF.sort(function(a,b){return a.n-b.n;}).forEach(function(f){
+      var y1=srcY[f.s],y2=dstY[f.d];
+      var sw=Math.max(1.5,Math.round(f.n/maxN*16));
+      var c=SRC_PAL[f.s]||'#888';
+      var cp1=68+(W-136)*0.42, cp2=68+(W-136)*0.58;
+      parts.push('<path d="M68,'+y1+' C'+cp1+','+y1+' '+cp2+','+y2+' '+(W-68)+','+y2+'" stroke="'+c+'" stroke-width="'+sw+'" fill="none" opacity="'+(f.s===f.d?'0.22':'0.46')+'"><title>'+f.s+' → '+f.d+': '+f.n+'</title></path>');
     });
-    html += '<th style="padding:5px 8px;text-align:right;border-bottom:1.5px solid var(--line);color:var(--muted);font-size:.7rem">Cross-border</th></tr></thead><tbody>';
-
-    srcCountries.forEach(function(src){
-      var rowTotal = dstCountries.reduce(function(s,dst){ return s+(flowMap[src+'_'+dst]||0); },0);
-      if (rowTotal === 0) return;
-      var crossTotal = dstCountries.reduce(function(s,dst){ return src!==dst ? s+(flowMap[src+'_'+dst]||0) : s; },0);
-      html += '<tr><td style="padding:5px 10px;font-weight:700;color:var(--ink);border-bottom:1px solid rgba(217,206,190,.3)">'+(FLAGS[src]||src)+' '+src+'</td>';
-      dstCountries.forEach(function(dst){
-        var n = flowMap[src+'_'+dst] || 0;
-        var isDiag = src === dst;
-        var intensity = n > 0 ? (0.1 + 0.9*(n/maxN)) : 0;
-        var bg = n > 0 ? (isDiag ? 'rgba(42,122,66,'+intensity.toFixed(2)+')' : 'rgba(11,143,135,'+intensity.toFixed(2)+')') : '';
-        var txtColor = intensity > 0.35 ? '#fff' : (n > 0 ? 'var(--ink)' : 'rgba(120,100,80,.3)');
-        html += '<td style="padding:5px 8px;text-align:center;border-bottom:1px solid rgba(217,206,190,.3);'+(bg?'background:'+bg+';':'')+'color:'+txtColor+';font-weight:'+(n>0?'700':'400')+'">'+(n>0?n:'·')+'</td>';
-      });
-      html += '<td style="padding:5px 8px;text-align:right;border-bottom:1px solid rgba(217,206,190,.3);font-size:.72rem;color:var(--muted);font-weight:600">'+crossTotal+'</td></tr>';
+    // Nodos fuente
+    srcAct.forEach(function(s){
+      var y=srcY[s], total=DST.reduce(function(a,d){return a+(flowMap[s+'_'+d]||0);},0);
+      var cross=DST.filter(function(d){return d!==s;}).reduce(function(a,d){return a+(flowMap[s+'_'+d]||0);},0);
+      var c=SRC_PAL[s]||'#888';
+      parts.push('<rect x="2" y="'+(y-14)+'" width="62" height="27" rx="7" fill="'+c+'"/>');
+      parts.push('<text x="33" y="'+(y+1)+'" text-anchor="middle" dominant-baseline="middle" font-size="10.5" font-weight="700" font-family="inherit" fill="#fff">'+(FLAGS[s]||s)+' '+s+'</text>');
+      parts.push('<text x="67" y="'+(y-3)+'" font-size="7.5" font-family="inherit" fill="rgba(60,46,32,.5)">'+total+' tot.</text>');
+      if(cross>0) parts.push('<text x="67" y="'+(y+7)+'" font-size="7" font-family="inherit" fill="rgba(60,46,32,.4)">'+cross+' cross</text>');
     });
-    html += '</tbody></table></div>';
+    // Nodos destino
+    dstAct.forEach(function(d){
+      var y=dstY[d], total=SRC.reduce(function(a,s){return a+(flowMap[s+'_'+d]||0);},0);
+      var c=COUNTRY_PAL[d]||'#888';
+      parts.push('<rect x="'+(W-64)+'" y="'+(y-14)+'" width="62" height="27" rx="7" fill="'+c+'"/>');
+      parts.push('<text x="'+(W-33)+'" y="'+(y+1)+'" text-anchor="middle" dominant-baseline="middle" font-size="10.5" font-weight="700" font-family="inherit" fill="#fff">'+(FLAGS[d]||d)+' '+d+'</text>');
+      parts.push('<text x="'+(W-67)+'" y="'+y+'" text-anchor="end" font-size="7.5" font-family="inherit" fill="rgba(60,46,32,.5)" dominant-baseline="middle">'+total+'</text>');
+    });
+    parts.push('<text x="33" y="'+(PAD_V-4)+'" text-anchor="middle" font-size="8" font-weight="700" font-family="inherit" fill="rgba(70,55,38,.5)">INVERSOR</text>');
+    parts.push('<text x="'+(W-33)+'" y="'+(PAD_V-4)+'" text-anchor="middle" font-size="8" font-weight="700" font-family="inherit" fill="rgba(70,55,38,.5)">STARTUP</text>');
+    parts.push('</svg>');
+    var el=document.getElementById('cs-sankey');
+    if(el) el.innerHTML=parts.join('');
+    var noteEl=document.getElementById('cs-sankey-note');
+    if(noteEl){
+      var t0=cb.top_cross_border[0], t1=cb.top_cross_border[1];
+      noteEl.innerHTML='Grosor = # inversiones BIO · Flujo transparente = doméstico. '+
+        '<strong>'+(FLAGS[t0[0]]||t0[0])+' '+t0[0]+'</strong> exporta <strong>'+t0[1]+' edges transfronterizas</strong> — es el VC hub regional. '+
+        '<strong>'+(FLAGS[t1[0]]||t1[0])+' '+t1[0]+'</strong> con '+t1[1]+'.';
+    }
+  })();
 
-    document.getElementById('cs-cross-border').innerHTML = html;
-    var topSrc = cb.top_cross_border[0];
-    var topSrc2 = cb.top_cross_border[1];
-    document.getElementById('cs-cross-border-note').innerHTML =
-      '<span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:rgba(11,143,135,.7);vertical-align:middle;margin-right:4px"></span>Teal = capital transfronterizo · ' +
-      '<span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:rgba(42,122,66,.7);vertical-align:middle;margin-right:4px;margin-left:8px"></span>Verde = inversión doméstica. ' +
-      '<strong>' + (FLAGS[topSrc[0]]||topSrc[0]) + ' ' + topSrc[0] + '</strong> lidera con ' + topSrc[1] + ' edges transfronterizas · ' +
-      '<strong>' + (FLAGS[topSrc2[0]]||topSrc2[0]) + ' ' + topSrc2[0] + '</strong> con ' + topSrc2[1] + '.';
+  // ── 6. Dependencia capital extranjero (solo BIO) ──────────────────
+  (function(){
+    var fd=CS.foreign_dependence;
+    var rows=THEME_ORDER.filter(function(t){return fd[t];})
+      .map(function(t){return {t:t,p:fd[t].foreign_pct};})
+      .sort(function(a,b){return b.p-a.p;});
+    var el=document.getElementById('cs-foreign');
+    if(el) el.innerHTML=rows.map(function(x){
+      return bar(sh(x.t),x.p,1,col(x.t),Math.round(x.p*100)+'%');
+    }).join('')+'<div class="cs-note" style="margin-top:7px">% de aristas de inversión cuyo origen es capital no-LATAM.</div>';
+  })();
+
+  // ── 7. Concentración HHI (solo BIO) ──────────────────────────────
+  (function(){
+    var co=CS.concentration;
+    var wEl=document.getElementById('cs-hhi-warn');
+    if(wEl) wEl.innerHTML='⚠️ GridX aparece dominante por sesgo de recolección (portfolio barrido completo). Leer junto al mapa de cobertura.';
+    var rows=THEME_ORDER.filter(function(t){return co[t];})
+      .map(function(t){return {t:t,h:co[t].hhi};})
+      .sort(function(a,b){return b.h-a.h;});
+    var maxH=Math.max.apply(null,rows.map(function(x){return x.h;}));
+    var el=document.getElementById('cs-hhi');
+    if(el) el.innerHTML=rows.map(function(x){return bar(sh(x.t),x.h,maxH,col(x.t),x.h.toFixed(2));}).join('');
+  })();
+
+  // ── 8. Sindicación ────────────────────────────────────────────────
+  (function(){
+    var sy=CS.syndication;
+    var chips=sy.most_syndicated.map(function(p){
+      return '<span class="cs-chip"><strong>'+esc(p[0])+'</strong> · '+p[1]+' fondos</span>';
+    }).join('');
+    var pairs=sy.pairs.slice(0,8).map(function(e){
+      return '<div class="cs-note" style="margin:2px 0">'+esc(e.source)+' + '+esc(e.target)+' · <strong>'+e.weight+'</strong> co-inversiones</div>';
+    }).join('');
+    var el=document.getElementById('cs-synd');
+    if(el) el.innerHTML='<div class="cs-note" style="margin:0 0 9px"><strong>'+sy.total_pairs+
+      '</strong> pares de fondos co-invierten en ≥2 startups BIO · Fondos más conectados:</div>'+
+      '<div class="cs-chips">'+chips+'</div>'+
+      '<div style="margin-top:12px;columns:2;column-gap:24px">'+pairs+'</div>';
+  })();
+
+  // ── 9. Cohortes ───────────────────────────────────────────────────
+  (function(){
+    if(!CS.cohorts||!CS.cohorts.by_year) return;
+    var data=CS.cohorts.by_year.filter(function(d){return d.year>=2005&&d.total>0;});
+    if(!data.length) return;
+    var maxT=Math.max.apply(null,data.map(function(d){return d.total;}));
+    var BW=25,GAP=3,PX=10,PY=6,BMH=90,LH=18;
+    var W=data.length*(BW+GAP)-GAP+PX*2, H=BMH+LH+PY*2;
+    var parts=['<svg viewBox="0 0 '+W+' '+H+'" style="width:100%;max-height:130px;display:block">'];
+    data.forEach(function(d,i){
+      var x=PX+i*(BW+GAP), tH=maxT>0?Math.max(2,Math.round(d.total/maxT*BMH)):0;
+      var fH=maxT>0?Math.round(d.funded/maxT*BMH):0, bY=PY+BMH;
+      parts.push('<rect x="'+x+'" y="'+(bY-tH)+'" width="'+BW+'" height="'+tH+'" rx="3" fill="rgba(180,168,150,.3)"/>');
+      if(fH>0) parts.push('<rect x="'+x+'" y="'+(bY-fH)+'" width="'+BW+'" height="'+fH+'" rx="3" fill="'+ACCENT+'" opacity="0.68"/>');
+      parts.push('<title>'+d.year+': '+d.funded+'/'+d.total+' financiadas BIO ('+Math.round(d.funded/d.total*100)+'%)</title>');
+      if(d.year%3===0||data.length<=14) parts.push('<text x="'+(x+BW/2)+'" y="'+(bY+LH-3)+'" text-anchor="middle" font-size="9" font-family="inherit" fill="rgba(120,96,82,.55)">\''+String(d.year).slice(2)+'</text>');
+    });
+    parts.push('</svg>');
+    var el=document.getElementById('cs-cohorts');
+    if(el) el.innerHTML=parts.join('');
   })();
 });
 </script>

@@ -1,16 +1,16 @@
 window.CAPITAL_ATLAS_DATA = {
-  "generated_at": "2026-06-14T11:24:23",
+  "generated_at": "2026-06-14T12:31:12",
   "source": "pipeline:build-atlas (SQLite)",
   "summary": {
     "nodes_total": 1071,
     "funds_total": 129,
     "startups_total": 928,
     "allocators_total": 14,
-    "edges_total": 1232,
-    "investment_edges_total": 1206,
+    "edges_total": 1243,
+    "investment_edges_total": 1217,
     "allocator_edges_total": 26,
     "include_startups_total": 579,
-    "source_backed_include_startups_total": 444,
+    "source_backed_include_startups_total": 449,
     "public_source_edges_total": 152
   },
   "nodes": [
@@ -2034,8 +2034,8 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": 80.0,
       "lead_behavior": "lead",
       "profile_blurb": "SP Ventures es el referente regional de AgFood-ClimateTech: más de 10 años de track record, +$100M invertidos en +50 empresas en LATAM. Su tesis es estructural: la crisis climática y la seguridad alimentaria son el mismo problema visto desde distintos ángulos, y la solución pasa por reinventar la cadena de valor alimentaria del suelo al estante.\n\nComo lead investor con tickets hasta $10M en Serie A, cubre el tramo de crecimiento temprano con mayor escasez de capital en el ecosistema. Sus métricas de impacto son inusuales: 54 millones de hectáreas impactadas y $571M en crédito agrícola facilitado por sus portafolios — señales de que su capital moviliza recursos mucho mayores que el fondo mismo.\n\nEmpresas como Puna Bio (bioinputs) y Gênica (microbioma del suelo) reflejan su apuesta por la biología como plataforma de solución al problema agro-climático. Con el track record más sólido del segmento y presencia en toda la región, es uno de los actores con mayor credibilidad para anclar rondas bio-agro en LATAM.",
-      "degree": 83,
-      "portfolio_valuation_usd": 482.5
+      "degree": 84,
+      "portfolio_valuation_usd": 507.5
     },
     {
       "id": "svb_financial_group",
@@ -2903,8 +2903,8 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": null,
       "lead_behavior": "",
       "profile_blurb": "",
-      "degree": 1,
-      "portfolio_valuation_usd": 50.0
+      "degree": 9,
+      "portfolio_valuation_usd": 192.0
     },
     {
       "id": "ecoa_capital",
@@ -3032,8 +3032,8 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": null,
       "lead_behavior": "",
       "profile_blurb": "Vesper Ventures es un fondo de tipo venture builder fundado en Florianopolis, Brasil. A diferencia de un VC convencional, Vesper co-crea las startups desde cero, reuniendo cientificos y emprendedores para construir plataformas tecnologicas en terapeutica, diagnostico, produccion de alimentos y medioambiente.\n\nSu modelo de co-fundacion le da participacion accionaria alta y alineacion a largo plazo con las empresas de su portafolio. Entre sus inversiones: Symbiomics (biologicos agricolas), Cellertz Bio, InEdita Bio (edicion genomica), Hapiseeds y Reddot Bio. Figura consistentemente en los tres principales fondos brasileros de biotech junto a GRIDS Capital y LifelyVC.\n\nEn el contexto BIO LATAM, Vesper es un nodo de origen: muchas de las biotech brasileras mas prometedoras nacieron o pasaron por su estructura. Su presencia en el cap table de una startup suele indicar fundamentos cientificos solidos desde etapa pre-comercial.",
-      "degree": 13,
-      "portfolio_valuation_usd": 57.5
+      "degree": 14,
+      "portfolio_valuation_usd": 67.5
     },
     {
       "id": "green_rock",
@@ -3668,7 +3668,7 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": 15.0,
       "lead_behavior": "lead",
       "profile_blurb": "Biominas Brasil operates the largest biotech hub in Latin America, located in Belo Horizonte, Minas Gerais. Manages a biotech incubator, accelerator, and early-stage fund. Portfolio spans pharma, diagnostics, medical devices, agrochemical biotech, and industrial biotech. Provides lab infrastructure, regulatory support, and seed capital to early-stage life sciences startups. Connected to UFMG, USP, and UNIFESP research programs.",
-      "degree": 15,
+      "degree": 16,
       "portfolio_valuation_usd": 53.5
     },
     {
@@ -6628,9 +6628,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "fapesp",
+          "label": "Fapesp",
+          "stage": ""
         }
       ],
-      "degree": 4,
+      "degree": 5,
       "capital_status": "capital_mapped"
     },
     {
@@ -6799,9 +6804,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "the_ganesha_lab",
+          "label": "The Ganesha Lab",
+          "stage": ""
         }
       ],
-      "degree": 6,
+      "degree": 7,
       "capital_status": "capital_mapped"
     },
     {
@@ -8099,9 +8109,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "sosv",
           "label": "SOSV",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 13,
+      "degree": 14,
       "capital_status": "capital_mapped"
     },
     {
@@ -12058,9 +12073,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "fapesp",
+          "label": "Fapesp",
+          "stage": ""
         }
       ],
-      "degree": 4,
+      "degree": 5,
       "capital_status": "capital_mapped"
     },
     {
@@ -12187,9 +12207,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "corfo",
+          "label": "CORFO",
+          "stage": ""
         }
       ],
-      "degree": 6,
+      "degree": 7,
       "capital_status": "capital_mapped"
     },
     {
@@ -12783,9 +12808,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "AIR Capital",
           "label": "AIR Capital",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 19,
+      "degree": 20,
       "capital_status": "capital_mapped"
     },
     {
@@ -13577,9 +13607,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "the_ganesha_lab",
           "label": "The Ganesha Lab",
           "stage": ""
+        },
+        {
+          "id": "corfo",
+          "label": "CORFO",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -13998,9 +14033,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "gridx",
           "label": "Gridx",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 5,
+      "degree": 6,
       "capital_status": "capital_mapped"
     },
     {
@@ -15482,9 +15522,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "blue_horizon",
           "label": "Blue Horizon",
           "stage": "seed"
+        },
+        {
+          "id": "fapesp",
+          "label": "Fapesp",
+          "stage": ""
         }
       ],
-      "degree": 1,
+      "degree": 2,
       "capital_status": "capital_mapped"
     },
     {
@@ -15637,9 +15682,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "vox_capital",
           "label": "Vox Capital",
           "stage": ""
+        },
+        {
+          "id": "sp_ventures",
+          "label": "SP Ventures",
+          "stage": ""
         }
       ],
-      "degree": 6,
+      "degree": 7,
       "capital_status": "capital_mapped"
     },
     {
@@ -17527,9 +17577,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "the_ganesha_lab",
           "label": "The Ganesha Lab",
           "stage": ""
+        },
+        {
+          "id": "the_ganesha_lab",
+          "label": "The Ganesha Lab",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -19007,9 +19062,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "creative_ventures",
           "label": "creative ventures",
           "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 14,
+      "degree": 15,
       "capital_status": "capital_mapped"
     },
     {
@@ -19255,9 +19315,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "the_yield_lab_latam",
           "label": "The Yield Lab LATAM",
           "stage": ""
+        },
+        {
+          "id": "corfo",
+          "label": "CORFO",
+          "stage": ""
         }
       ],
-      "degree": 5,
+      "degree": 6,
       "capital_status": "capital_mapped"
     },
     {
@@ -19762,9 +19827,19 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "corfo",
+          "label": "CORFO",
+          "stage": ""
+        },
+        {
+          "id": "gridx",
+          "label": "Gridx",
+          "stage": ""
         }
       ],
-      "degree": 17,
+      "degree": 19,
       "capital_status": "capital_mapped"
     },
     {
@@ -21389,9 +21464,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "biominas",
           "label": "Biominas Brasil",
           "stage": ""
+        },
+        {
+          "id": "vesper_ventures",
+          "label": "Vesper Ventures",
+          "stage": ""
         }
       ],
-      "degree": 10,
+      "degree": 11,
       "capital_status": "capital_mapped"
     },
     {
@@ -22238,9 +22318,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "SF500",
           "label": "SF500",
           "stage": ""
+        },
+        {
+          "id": "the_ganesha_lab",
+          "label": "The Ganesha Lab",
+          "stage": ""
         }
       ],
-      "degree": 8,
+      "degree": 9,
       "capital_status": "capital_mapped"
     },
     {
@@ -22290,9 +22375,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "GridX",
           "label": "GridX",
           "stage": ""
+        },
+        {
+          "id": "fapesp",
+          "label": "Fapesp",
+          "stage": ""
         }
       ],
-      "degree": 3,
+      "degree": 4,
       "capital_status": "capital_mapped"
     },
     {
@@ -23930,9 +24020,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "fen_ventures",
           "label": "Fen Ventures",
           "stage": "seed"
+        },
+        {
+          "id": "corfo",
+          "label": "CORFO",
+          "stage": ""
         }
       ],
-      "degree": 1,
+      "degree": 2,
       "capital_status": "capital_mapped"
     },
     {
@@ -34584,9 +34679,15 @@ window.CAPITAL_ATLAS_DATA = {
       "tech_depth": "",
       "trl": "",
       "valuation_usd": 0.0,
-      "investors_list": [],
-      "degree": 0,
-      "capital_status": "no_capital_edge"
+      "investors_list": [
+        {
+          "id": "corfo",
+          "label": "CORFO",
+          "stage": ""
+        }
+      ],
+      "degree": 1,
+      "capital_status": "capital_mapped"
     },
     {
       "id": "infood-protein-cl",
@@ -34728,9 +34829,15 @@ window.CAPITAL_ATLAS_DATA = {
       "tech_depth": "",
       "trl": "",
       "valuation_usd": 0.0,
-      "investors_list": [],
-      "degree": 0,
-      "capital_status": "no_capital_edge"
+      "investors_list": [
+        {
+          "id": "corfo",
+          "label": "CORFO",
+          "stage": ""
+        }
+      ],
+      "degree": 1,
+      "capital_status": "capital_mapped"
     },
     {
       "id": "ecombio-cl",
@@ -35633,12 +35740,12 @@ window.CAPITAL_ATLAS_DATA = {
       "country": "BR",
       "founded_year": null,
       "scope_decision": "include",
-      "theme": "therapeutics and regenerative medicine",
+      "theme": "Food Systems & Alt Proteins",
       "theme_secondary": "",
       "legacy_macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "",
       "cluster_label": "Food Systems & Alt Proteins — Cell Culture||dairy · cell culture · milk · brazilian",
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Animal Free",
       "semantic_single_theme": "Food Systems & Alt Proteins — Cell Culture||dairy · cell culture · milk · brazilian",
       "semantic_single_confidence": "",
       "semantic_single_score": "",
@@ -35766,9 +35873,15 @@ window.CAPITAL_ATLAS_DATA = {
       "tech_depth": "",
       "trl": "",
       "valuation_usd": 0.0,
-      "investors_list": [],
-      "degree": 0,
-      "capital_status": "no_capital_edge"
+      "investors_list": [
+        {
+          "id": "corfo",
+          "label": "CORFO",
+          "stage": ""
+        }
+      ],
+      "degree": 1,
+      "capital_status": "capital_mapped"
     },
     {
       "id": "kura-biotech-cl",
@@ -37530,9 +37643,15 @@ window.CAPITAL_ATLAS_DATA = {
       "tech_depth": "medium",
       "trl": "",
       "valuation_usd": 0.0,
-      "investors_list": [],
-      "degree": 0,
-      "capital_status": "no_capital_edge"
+      "investors_list": [
+        {
+          "id": "fapesp",
+          "label": "Fapesp",
+          "stage": ""
+        }
+      ],
+      "degree": 1,
+      "capital_status": "capital_mapped"
     },
     {
       "id": "consiste-br",
@@ -37859,9 +37978,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "biominas",
           "label": "Biominas Brasil",
           "stage": ""
+        },
+        {
+          "id": "fapesp",
+          "label": "Fapesp",
+          "stage": ""
         }
       ],
-      "degree": 1,
+      "degree": 2,
       "capital_status": "capital_mapped"
     },
     {
@@ -37896,9 +38020,15 @@ window.CAPITAL_ATLAS_DATA = {
       "tech_depth": "medium",
       "trl": "",
       "valuation_usd": 0.0,
-      "investors_list": [],
-      "degree": 0,
-      "capital_status": "no_capital_edge"
+      "investors_list": [
+        {
+          "id": "cnpq",
+          "label": "Cnpq",
+          "stage": ""
+        }
+      ],
+      "degree": 1,
+      "capital_status": "capital_mapped"
     },
     {
       "id": "cellmeat-brasil-br",
@@ -38021,12 +38151,12 @@ window.CAPITAL_ATLAS_DATA = {
       "country": "BR",
       "founded_year": 2018,
       "scope_decision": "include",
-      "theme": "therapeutics and regenerative medicine",
+      "theme": "Biomanufacturing & Platform Technologies",
       "theme_secondary": "",
       "legacy_macro_theme": "therapeutics and regenerative medicine",
       "emergent_theme": "",
       "cluster_label": "Food Systems & Alt Proteins — Cell Culture||dairy · cell culture · milk · brazilian",
-      "sub_cluster_label": "",
+      "sub_cluster_label": "Biomanufacturing & Platform Technologies",
       "semantic_single_theme": "Food Systems & Alt Proteins — Cell Culture||dairy · cell culture · milk · brazilian",
       "semantic_single_confidence": "",
       "semantic_single_score": "",
@@ -38087,9 +38217,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "biominas",
           "label": "Biominas Brasil",
           "stage": ""
+        },
+        {
+          "id": "embrapa",
+          "label": "Embrapa",
+          "stage": ""
         }
       ],
-      "degree": 1,
+      "degree": 2,
       "capital_status": "capital_mapped"
     },
     {
@@ -38129,9 +38264,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "biominas",
           "label": "Biominas Brasil",
           "stage": ""
+        },
+        {
+          "id": "embrapa",
+          "label": "Embrapa",
+          "stage": ""
         }
       ],
-      "degree": 1,
+      "degree": 2,
       "capital_status": "capital_mapped"
     },
     {
@@ -38171,9 +38311,14 @@ window.CAPITAL_ATLAS_DATA = {
           "id": "biominas",
           "label": "Biominas Brasil",
           "stage": ""
+        },
+        {
+          "id": "biominas",
+          "label": "Biominas Brasil",
+          "stage": ""
         }
       ],
-      "degree": 1,
+      "degree": 2,
       "capital_status": "capital_mapped"
     },
     {
@@ -63013,6 +63158,171 @@ window.CAPITAL_ATLAS_DATA = {
       "weight": 2.16
     },
     {
+      "id": "GOV_ACCEL_corfo_puna_bio",
+      "source": "corfo",
+      "target": "puna_bio",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "GOVERNMENT_ACCELERATOR_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "GOV_ACCEL_corfo_phagelab",
+      "source": "corfo",
+      "target": "phagelab",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "GOVERNMENT_ACCELERATOR_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "GOV_ACCEL_corfo_aquit",
+      "source": "corfo",
+      "target": "aquit",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "GOVERNMENT_ACCELERATOR_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "GOV_ACCEL_corfo_pewman-innovation-cl",
+      "source": "corfo",
+      "target": "pewman-innovation-cl",
+      "type": "portfolio_investment",
+      "confidence": 0.9,
+      "source_url": "GOVERNMENT_ACCELERATOR_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.24
+    },
+    {
+      "id": "GOV_ACCEL_corfo_mycoseaweed-cl",
+      "source": "corfo",
+      "target": "mycoseaweed-cl",
+      "type": "portfolio_investment",
+      "confidence": 0.87,
+      "source_url": "GOVERNMENT_ACCELERATOR_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.192
+    },
+    {
+      "id": "GOV_ACCEL_corfo_botanical-solutions",
+      "source": "corfo",
+      "target": "botanical-solutions",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "GOVERNMENT_ACCELERATOR_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "GOV_ACCEL_biominas_biodiverso-insumos-br",
+      "source": "biominas",
+      "target": "biodiverso-insumos-br",
+      "type": "portfolio_investment",
+      "confidence": 0.79,
+      "source_url": "GOVERNMENT_ACCELERATOR_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.064
+    },
+    {
+      "id": "GOV_ACCEL_sp_ventures_genica",
+      "source": "sp_ventures",
+      "target": "genica",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "GOVERNMENT_ACCELERATOR_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "GOV_ACCEL_vesper_ventures_symbiomics",
+      "source": "vesper_ventures",
+      "target": "symbiomics",
+      "type": "portfolio_investment",
+      "confidence": 0.9,
+      "source_url": "GOVERNMENT_ACCELERATOR_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.24
+    },
+    {
+      "id": "GOV_ACCEL_corfo_salmoss-biotech-cl",
+      "source": "corfo",
+      "target": "salmoss-biotech-cl",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "GOVERNMENT_ACCELERATOR_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
+      "id": "GOV_ACCEL_corfo_andes-biotechnologies-cl",
+      "source": "corfo",
+      "target": "andes-biotechnologies-cl",
+      "type": "portfolio_investment",
+      "confidence": 0.95,
+      "source_url": "GOVERNMENT_ACCELERATOR_VERIFIED",
+      "evidence": "No public URL available.",
+      "audited": false,
+      "evidence_tier": "canonical_internal",
+      "capital_evidence_level": 0,
+      "capital_evidence_label": "missing_or_internal",
+      "capital_evidence_note": "No public URL available.",
+      "weight": 2.32
+    },
+    {
       "id": "idb_lab-sp_ventures",
       "source": "idb_lab",
       "target": "sp_ventures",
@@ -64003,7 +64313,7 @@ window.CAPITAL_ATLAS_DATA = {
       {
         "source": "biominas",
         "theme": "Bioinputs & Crop Resilience",
-        "deal_count": 5
+        "deal_count": 6
       },
       {
         "source": "biominas",
@@ -64131,6 +64441,11 @@ window.CAPITAL_ATLAS_DATA = {
         "deal_count": 1
       },
       {
+        "source": "cnpq",
+        "theme": "Digital AgTech & Agrifintech",
+        "deal_count": 1
+      },
+      {
         "source": "collaborative_fund",
         "theme": "Therapeutics",
         "deal_count": 1
@@ -64142,8 +64457,23 @@ window.CAPITAL_ATLAS_DATA = {
       },
       {
         "source": "corfo",
+        "theme": "Bioinputs & Crop Resilience",
+        "deal_count": 3
+      },
+      {
+        "source": "corfo",
         "theme": "Diagnostics & Devices",
         "deal_count": 1
+      },
+      {
+        "source": "corfo",
+        "theme": "Food Systems & Alt Proteins",
+        "deal_count": 2
+      },
+      {
+        "source": "corfo",
+        "theme": "Therapeutics",
+        "deal_count": 3
       },
       {
         "source": "corteva_catalyst",
@@ -64256,6 +64586,11 @@ window.CAPITAL_ATLAS_DATA = {
         "deal_count": 1
       },
       {
+        "source": "embrapa",
+        "theme": "Bioinputs & Crop Resilience",
+        "deal_count": 2
+      },
+      {
         "source": "endeavor_catalyst",
         "theme": "Biomaterials & Green Chemistry",
         "deal_count": 1
@@ -64279,6 +64614,21 @@ window.CAPITAL_ATLAS_DATA = {
         "source": "eurofarma",
         "theme": "Diagnostics & Devices",
         "deal_count": 1
+      },
+      {
+        "source": "fapesp",
+        "theme": "Biomanufacturing & Platform Technologies",
+        "deal_count": 2
+      },
+      {
+        "source": "fapesp",
+        "theme": "Digital AgTech & Agrifintech",
+        "deal_count": 2
+      },
+      {
+        "source": "fapesp",
+        "theme": "Food Systems & Alt Proteins",
+        "deal_count": 2
       },
       {
         "source": "fen_ventures",
@@ -64393,7 +64743,7 @@ window.CAPITAL_ATLAS_DATA = {
       {
         "source": "gridx",
         "theme": "Bioinputs & Crop Resilience",
-        "deal_count": 10
+        "deal_count": 12
       },
       {
         "source": "gridx",
@@ -64403,12 +64753,12 @@ window.CAPITAL_ATLAS_DATA = {
       {
         "source": "gridx",
         "theme": "Biomaterials & Green Chemistry",
-        "deal_count": 15
+        "deal_count": 16
       },
       {
         "source": "gridx",
         "theme": "Diagnostics & Devices",
-        "deal_count": 14
+        "deal_count": 15
       },
       {
         "source": "gridx",
@@ -64418,7 +64768,7 @@ window.CAPITAL_ATLAS_DATA = {
       {
         "source": "gridx",
         "theme": "Therapeutics",
-        "deal_count": 17
+        "deal_count": 18
       },
       {
         "source": "grupo_insud",
@@ -64843,7 +65193,7 @@ window.CAPITAL_ATLAS_DATA = {
       {
         "source": "sp_ventures",
         "theme": "Bioinputs & Crop Resilience",
-        "deal_count": 14
+        "deal_count": 15
       },
       {
         "source": "sp_ventures",
@@ -64888,7 +65238,7 @@ window.CAPITAL_ATLAS_DATA = {
       {
         "source": "the_ganesha_lab",
         "theme": "Bioinputs & Crop Resilience",
-        "deal_count": 1
+        "deal_count": 2
       },
       {
         "source": "the_ganesha_lab",
@@ -64898,7 +65248,7 @@ window.CAPITAL_ATLAS_DATA = {
       {
         "source": "the_ganesha_lab",
         "theme": "Diagnostics & Devices",
-        "deal_count": 3
+        "deal_count": 4
       },
       {
         "source": "the_ganesha_lab",
@@ -64913,7 +65263,7 @@ window.CAPITAL_ATLAS_DATA = {
       {
         "source": "the_ganesha_lab",
         "theme": "Therapeutics",
-        "deal_count": 2
+        "deal_count": 3
       },
       {
         "source": "the_yield_lab_latam",
@@ -64993,7 +65343,7 @@ window.CAPITAL_ATLAS_DATA = {
       {
         "source": "vesper_ventures",
         "theme": "Bioinputs & Crop Resilience",
-        "deal_count": 5
+        "deal_count": 6
       },
       {
         "source": "vesper_ventures",

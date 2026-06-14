@@ -1,0 +1,29 @@
+investment_id,investor_id,startup_id,confidence_score,source
+GOV_ACCEL_corfo_puna_bio,corfo,puna_bio,0.95,Corfo program/portfolio
+GOV_ACCEL_corfo_phagelab,corfo,phagelab,0.95,Corfo program/portfolio
+GOV_ACCEL_corfo_aquit,corfo,aquit,0.95,Corfo program/portfolio
+GOV_ACCEL_corfo_pewman-innovation-cl,corfo,pewman-innovation-cl,0.9,Corfo program/portfolio
+GOV_ACCEL_corfo_mycoseaweed-cl,corfo,mycoseaweed-cl,0.87,Corfo program/portfolio
+GOV_ACCEL_corfo_botanical-solutions,corfo,botanical-solutions,0.95,Corfo program/portfolio
+GOV_ACCEL_fapesp_future_cow,fapesp,future_cow,0.9,Fapesp program/portfolio
+GOV_ACCEL_fapesp_updairy,fapesp,updairy,0.9,Fapesp program/portfolio
+GOV_ACCEL_fapesp_alecrim-biotech-br,fapesp,alecrim-biotech-br,0.82,Fapesp program/portfolio
+GOV_ACCEL_cnpq_nutrissis-biotech-br,cnpq,nutrissis-biotech-br,0.8,Cnpq program/portfolio
+GOV_ACCEL_fapesp_cellva-ingredients-br,fapesp,cellva-ingredients-br,0.78,Fapesp program/portfolio
+GOV_ACCEL_embrapa_nemacontrol-biologicos-br,embrapa,nemacontrol-biologicos-br,0.83,Embrapa program/portfolio
+GOV_ACCEL_embrapa_microbiota-agricola-br,embrapa,microbiota-agricola-br,0.81,Embrapa program/portfolio
+GOV_ACCEL_biominas_biodiverso-insumos-br,biominas,biodiverso-insumos-br,0.79,Biominas program/portfolio
+GOV_ACCEL_sp_ventures_genica,sp_ventures,genica,0.95,Sp Ventures program/portfolio
+GOV_ACCEL_vesper_ventures_symbiomics,vesper_ventures,symbiomics,0.9,Vesper Ventures program/portfolio
+GOV_ACCEL_fapesp_apexzymes,fapesp,apexzymes,0.93,Fapesp program/portfolio
+GOV_ACCEL_fapesp_enzyva,fapesp,enzyva,0.9,Fapesp program/portfolio
+GOV_ACCEL_gridx_beeflow,gridx,beeflow,0.95,Gridx program/portfolio
+GOV_ACCEL_gridx_puna_bio,gridx,puna_bio,0.95,Gridx program/portfolio
+GOV_ACCEL_gridx_caspr_biotech,gridx,caspr_biotech,0.95,Gridx program/portfolio
+GOV_ACCEL_gridx_onco_precision,gridx,onco_precision,0.95,Gridx program/portfolio
+GOV_ACCEL_gridx_michroma,gridx,michroma,0.95,Gridx program/portfolio
+GOV_ACCEL_the_ganesha_lab_metabix-biotech,the_ganesha_lab,metabix-biotech,0.95,The Ganesha Lab program/portfolio
+GOV_ACCEL_the_ganesha_lab_unibaio,the_ganesha_lab,unibaio,0.95,The Ganesha Lab program/portfolio
+GOV_ACCEL_the_ganesha_lab_eywa_biotech,the_ganesha_lab,eywa_biotech,0.95,The Ganesha Lab program/portfolio
+GOV_ACCEL_corfo_salmoss-biotech-cl,corfo,salmoss-biotech-cl,0.95,Corfo program/portfolio
+GOV_ACCEL_corfo_andes-biotechnologies-cl,corfo,andes-biotechnologies-cl,0.95,Corfo program/portfolio
