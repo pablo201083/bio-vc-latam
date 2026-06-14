@@ -1226,7 +1226,8 @@ document.addEventListener('DOMContentLoaded', function(){
         var intensity=pct/rowMax, alpha=(0.1+0.9*intensity).toFixed(2);
         var txtC=intensity>0.52?'#fff':tc, txtO=intensity>0.15?'1':'0.7';
         parts.push('<rect x="'+cX+'" y="'+cY+'" width="'+cW+'" height="'+cH+'" rx="4" fill="'+tc+'" opacity="'+alpha+'"><title>'+sh(theme)+' · '+cc+': '+n+' startups ('+Math.round(pct*100)+'% del portfolio BIO)</title></rect>');
-        parts.push('<text x="'+cx+'" y="'+(cy+1)+'" text-anchor="middle" dominant-baseline="middle" font-size="9.5" font-weight="700" font-family="inherit" fill="'+txtC+'" opacity="'+txtO+'">'+Math.round(pct*100)+'%</text>');
+        parts.push('<text x="'+cx+'" y="'+(cy-3)+'" text-anchor="middle" dominant-baseline="middle" font-size="9.5" font-weight="700" font-family="inherit" fill="'+txtC+'" opacity="'+txtO+'">'+Math.round(pct*100)+'%</text>');
+        parts.push('<text x="'+cx+'" y="'+(cy+8)+'" text-anchor="middle" dominant-baseline="middle" font-size="7" font-weight="500" font-family="inherit" fill="'+txtC+'" opacity="'+(parseFloat(txtO)*0.72).toFixed(2)+'">n='+n+'</text>');
       });
     });
     parts.push('</svg>');
