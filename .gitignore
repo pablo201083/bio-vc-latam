@@ -43,6 +43,9 @@ tmp/
 *.db.bak*
 UsersPABLOA~1*
 
+# PII / private id lists (no versionar)
+*.private.txt
+
 # Staging: generated intermediate lookups (regenerables)
 staging/startup_lookup.json
 staging/startups_meta.json
