@@ -150,6 +150,23 @@
       .replace(/"/g, "&quot;");
   }
 
+  function nodeDomain(website) {
+    if (!website) return null;
+    try { return new URL(website.startsWith('http') ? website : 'https://' + website).hostname.replace(/^www\./, ''); }
+    catch (e) { return null; }
+  }
+
+  function logoHtml(label, website, opts) {
+    const imgCls = (opts && opts.imgClass) || 'node-logo';
+    const phCls  = (opts && opts.phClass)  || 'node-logo-ph';
+    const sz     = (opts && opts.size)     || 64;
+    const initials = label.split(/\s+/).map(w => w[0] || '').join('').slice(0, 2).toUpperCase();
+    const dom = nodeDomain(website);
+    if (!dom) return `<div class="${phCls}">${initials}</div>`;
+    return `<img class="${imgCls}" src="https://www.google.com/s2/favicons?domain=${dom}&sz=64" onerror="null" alt="">`
+      + `<div class="${phCls}" style="display:none">${initials}</div>`;
+  }
+
   function titleCase(value) {
     return String(value || "")
       .replace(/_/g, " ")
@@ -385,14 +402,19 @@
     }
 
     if (node.type === "fund") {
-      // Size by aggregate portfolio valuation (M USD, log scale)
-      // 10M→14  50M→18  200M→23  500M→27  1500M→32
+      // Primary: AUM real del fondo (log scale) — refleja el poder de fuego real
+      // 10M→13  50M→17  200M→22  1000M→28  20000M→40
+      const aumM = Number(node.aum_m || 0);
+      if (aumM > 0) {
+        return Math.max(13, Math.min(44, 7 + Math.log10(aumM + 1) * 10.8));
+      }
+      // Fallback 1: portfolio valuation cuando no hay AUM
       const portVal = Number(node.portfolio_valuation_usd || 0);
       if (portVal > 0) {
-        return Math.max(13, Math.min(48, 8 + Math.log10(portVal + 1) * 10.5));
+        return Math.max(12, Math.min(38, 7 + Math.log10(portVal + 1) * 9.5));
       }
-      // Fallback: degree-based when no portfolio data
-      return Math.max(15, Math.min(38, 12 + Math.sqrt(weight + 1) * 5.5));
+      // Fallback 2: degree cuando no hay ningún dato financiero
+      return Math.max(13, Math.min(32, 11 + Math.sqrt(weight + 1) * 4.8));
     }
 
     if (node.type === "allocator") return Math.max(16, Math.min(36, 13 + Math.sqrt(weight + 1) * 4.4));
@@ -961,10 +983,7 @@
     const connected = activeEdges.filter((edge) => edge.source === node.id || edge.target === node.id);
     const publicEdges = connected.filter((edge) => edge.evidence_tier === "public_url" || edge.type === "co_investment").length;
     const theme = node.type === "startup" ? themeLabel(themeKey(node)) : clean(node.investor_subtype) || titleCase(node.type);
-    const _dom1 = node.website ? (() => { try { return new URL(node.website.startsWith('http') ? node.website : 'https://'+node.website).hostname.replace(/^www\./,''); } catch(e){ return null; }})() : null;
-    const _logo1 = _dom1
-      ? `<img class="tooltip-logo" src="https://logo.clearbit.com/${_dom1}?size=128" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" alt=""><div class="tooltip-logo-ph" style="display:none">${node.label.split(/\s+/).map(w=>w[0]||'').join('').slice(0,2).toUpperCase()}</div>`
-      : `<div class="tooltip-logo-ph">${node.label.split(/\s+/).map(w=>w[0]||'').join('').slice(0,2).toUpperCase()}</div>`;
+    const _logo1 = logoHtml(node.label, node.website, { imgClass: 'tooltip-logo', phClass: 'tooltip-logo-ph', size: 128 });
     tooltipEl.innerHTML = `
       <div class="tooltip-header">
         ${_logo1}
@@ -1016,10 +1035,7 @@
       .slice(0, 3)
       .map((edge) => allNodesById.get(edge.source === node.id ? edge.target : edge.source)?.label)
       .filter(Boolean);
-    const _dom2 = node.website ? (() => { try { return new URL(node.website.startsWith('http') ? node.website : 'https://'+node.website).hostname.replace(/^www\./,''); } catch(e){ return null; }})() : null;
-    const _logo2 = _dom2
-      ? `<img class="tooltip-logo" src="https://logo.clearbit.com/${_dom2}?size=128" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" alt=""><div class="tooltip-logo-ph" style="display:none">${node.label.split(/\s+/).map(w=>w[0]||'').join('').slice(0,2).toUpperCase()}</div>`
-      : `<div class="tooltip-logo-ph">${node.label.split(/\s+/).map(w=>w[0]||'').join('').slice(0,2).toUpperCase()}</div>`;
+    const _logo2 = logoHtml(node.label, node.website, { imgClass: 'tooltip-logo', phClass: 'tooltip-logo-ph', size: 128 });
     tooltipEl.innerHTML = `
       <div class="tooltip-header">
         ${_logo2}
@@ -1610,10 +1626,16 @@
 
   function renderOrganizationHeader(node, neighbors, subtitle) {
     const description = organizationDescription(node, neighbors);
+    const orgLogo = logoHtml(node.label, node.website, { imgClass: 'org-logo', phClass: 'org-logo-ph', size: 80 });
     return `
       <div class="detail-title-card organization-card">
-        <div class="organization-kicker">${escapeHtml(organizationTypeLabel(node))}</div>
-        <h3>${escapeHtml(node.label)}</h3>
+        <div class="org-header-row">
+          ${orgLogo}
+          <div style="flex:1;min-width:0">
+            <div class="organization-kicker">${escapeHtml(organizationTypeLabel(node))}</div>
+            <h3>${escapeHtml(node.label)}</h3>
+          </div>
+        </div>
         <div class="detail-subtitle">${escapeHtml(subtitle)}</div>
         <p>${escapeHtml(description)}</p>
       </div>
@@ -1655,10 +1677,16 @@
         currentNode.type === "fund" && other.type === "startup" ? themeLabel(themeKey(other)) : "",
         currentNode.type === "startup" && other.type === "fund" ? clean(other.investor_subtype) || "fondo" : ""
       ].filter(Boolean).join(" · ");
+      const connLogo = logoHtml(other.label, other.website, { imgClass: 'conn-logo', phClass: 'conn-logo-ph', size: 48 });
       return `
         <button class="edge-item connection-card" type="button" data-node-id="${escapeHtml(other.id)}">
-          <div class="ranking-top"><span>${escapeHtml(other.label)}</span><span>${escapeHtml(edgeLabel(edge))}</span></div>
-          <div class="ranking-meta">${escapeHtml(otherTheme)}${other.country ? ` · ${escapeHtml(other.country)}` : ""}</div>
+          <div class="conn-logo-row">
+            ${connLogo}
+            <div style="flex:1;min-width:0">
+              <div class="ranking-top"><span>${escapeHtml(other.label)}</span><span>${escapeHtml(edgeLabel(edge))}</span></div>
+              <div class="ranking-meta">${escapeHtml(otherTheme)}${other.country ? ` · ${escapeHtml(other.country)}` : ""}</div>
+            </div>
+          </div>
           <div class="connection-evidence">${escapeHtml(relevance)}</div>
           ${sourceText ? `<div class="connection-source">${escapeHtml(sourceText)}</div>` : ""}
         </button>

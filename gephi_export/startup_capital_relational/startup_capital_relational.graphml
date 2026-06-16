@@ -333,50 +333,8 @@
         <viz:color r="37" g="182" b="106"/>
         <viz:size value="18"/>
       </node>
-      <node id="duhau">
-        <data key="label">Duhau</data>
-        <data key="node_type">capital</data>
-        <data key="canonical_type">investor</data>
-        <data key="slug">duhau</data>
-        <data key="integrated_sources">canonical|historical</data>
-        <data key="source_presence">graphml</data>
-        <data key="entity_confidence">0.6</data>
-        <data key="scope_decision"></data>
-        <data key="scope_status"></data>
-        <data key="quality_band"></data>
-        <data key="quality_score"></data>
-        <data key="source_url"></data>
-        <data key="semantic_theme"></data>
-        <data key="semantic_cluster_id"></data>
-        <data key="semantic_confidence"></data>
-        <data key="summary"></data>
-        <data key="one_liner"></data>
-        <data key="country"></data>
-        <viz:color r="37" g="182" b="106"/>
-        <viz:size value="18"/>
-      </node>
-      <node id="flia-duhau">
-        <data key="label">Flia. Duhau</data>
-        <data key="node_type">capital</data>
-        <data key="canonical_type">investor</data>
-        <data key="slug">flia-duhau</data>
-        <data key="integrated_sources">canonical|historical</data>
-        <data key="source_presence">graphml</data>
-        <data key="entity_confidence">0.6</data>
-        <data key="scope_decision"></data>
-        <data key="scope_status"></data>
-        <data key="quality_band"></data>
-        <data key="quality_score"></data>
-        <data key="source_url"></data>
-        <data key="semantic_theme"></data>
-        <data key="semantic_cluster_id"></data>
-        <data key="semantic_confidence"></data>
-        <data key="summary"></data>
-        <data key="one_liner"></data>
-        <data key="country"></data>
-        <viz:color r="37" g="182" b="106"/>
-        <viz:size value="18"/>
-      </node>
+      
+      
       <node id="fundacion-para-el-progreso-de-la-medicina">
         <data key="label">Fundacion para el progreso de la medicina</data>
         <data key="node_type">capital</data>
@@ -509,50 +467,8 @@
         <viz:color r="37" g="182" b="106"/>
         <viz:size value="18"/>
       </node>
-      <node id="grupo-peruanos">
-        <data key="label">Grupo Peruanos</data>
-        <data key="node_type">capital</data>
-        <data key="canonical_type">investor</data>
-        <data key="slug">grupo-peruanos</data>
-        <data key="integrated_sources">canonical|historical</data>
-        <data key="source_presence">graphml</data>
-        <data key="entity_confidence">0.6</data>
-        <data key="scope_decision"></data>
-        <data key="scope_status"></data>
-        <data key="quality_band"></data>
-        <data key="quality_score"></data>
-        <data key="source_url"></data>
-        <data key="semantic_theme"></data>
-        <data key="semantic_cluster_id"></data>
-        <data key="semantic_confidence"></data>
-        <data key="summary"></data>
-        <data key="one_liner"></data>
-        <data key="country"></data>
-        <viz:color r="37" g="182" b="106"/>
-        <viz:size value="18"/>
-      </node>
-      <node id="happiness">
-        <data key="label">Happiness</data>
-        <data key="node_type">capital</data>
-        <data key="canonical_type">investor</data>
-        <data key="slug">happiness</data>
-        <data key="integrated_sources">canonical|historical</data>
-        <data key="source_presence">graphml</data>
-        <data key="entity_confidence">0.6</data>
-        <data key="scope_decision"></data>
-        <data key="scope_status"></data>
-        <data key="quality_band"></data>
-        <data key="quality_score"></data>
-        <data key="source_url"></data>
-        <data key="semantic_theme"></data>
-        <data key="semantic_cluster_id"></data>
-        <data key="semantic_confidence"></data>
-        <data key="summary"></data>
-        <data key="one_liner"></data>
-        <data key="country"></data>
-        <viz:color r="37" g="182" b="106"/>
-        <viz:size value="18"/>
-      </node>
+      
+      
       <node id="hatch">
         <data key="label">Hatch</data>
         <data key="node_type">capital</data>
@@ -619,28 +535,7 @@
         <viz:color r="37" g="182" b="106"/>
         <viz:size value="18"/>
       </node>
-      <node id="jeff-wilke">
-        <data key="label">Jeff Wilke</data>
-        <data key="node_type">capital</data>
-        <data key="canonical_type">investor</data>
-        <data key="slug">jeff-wilke</data>
-        <data key="integrated_sources">canonical|historical</data>
-        <data key="source_presence">graphml</data>
-        <data key="entity_confidence">0.6</data>
-        <data key="scope_decision"></data>
-        <data key="scope_status"></data>
-        <data key="quality_band"></data>
-        <data key="quality_score"></data>
-        <data key="source_url"></data>
-        <data key="semantic_theme"></data>
-        <data key="semantic_cluster_id"></data>
-        <data key="semantic_confidence"></data>
-        <data key="summary"></data>
-        <data key="one_liner"></data>
-        <data key="country"></data>
-        <viz:color r="37" g="182" b="106"/>
-        <viz:size value="18"/>
-      </node>
+      
       <node id="kairetsu-angels">
         <data key="label">Kairetsu Angels</data>
         <data key="node_type">capital</data>
@@ -685,94 +580,10 @@
         <viz:color r="37" g="182" b="106"/>
         <viz:size value="18"/>
       </node>
-      <node id="kwb">
-        <data key="label">KWB</data>
-        <data key="node_type">capital</data>
-        <data key="canonical_type">investor</data>
-        <data key="slug">kwb</data>
-        <data key="integrated_sources">canonical|historical</data>
-        <data key="source_presence">graphml</data>
-        <data key="entity_confidence">0.6</data>
-        <data key="scope_decision"></data>
-        <data key="scope_status"></data>
-        <data key="quality_band"></data>
-        <data key="quality_score"></data>
-        <data key="source_url"></data>
-        <data key="semantic_theme"></data>
-        <data key="semantic_cluster_id"></data>
-        <data key="semantic_confidence"></data>
-        <data key="summary"></data>
-        <data key="one_liner"></data>
-        <data key="country"></data>
-        <viz:color r="37" g="182" b="106"/>
-        <viz:size value="18"/>
-      </node>
-      <node id="lartirigoyen">
-        <data key="label">Lartirigoyen</data>
-        <data key="node_type">capital</data>
-        <data key="canonical_type">investor</data>
-        <data key="slug">lartirigoyen</data>
-        <data key="integrated_sources">canonical|historical</data>
-        <data key="source_presence">graphml</data>
-        <data key="entity_confidence">0.6</data>
-        <data key="scope_decision"></data>
-        <data key="scope_status"></data>
-        <data key="quality_band"></data>
-        <data key="quality_score"></data>
-        <data key="source_url"></data>
-        <data key="semantic_theme"></data>
-        <data key="semantic_cluster_id"></data>
-        <data key="semantic_confidence"></data>
-        <data key="summary"></data>
-        <data key="one_liner"></data>
-        <data key="country"></data>
-        <viz:color r="37" g="182" b="106"/>
-        <viz:size value="18"/>
-      </node>
-      <node id="losa-group">
-        <data key="label">Losa Group</data>
-        <data key="node_type">capital</data>
-        <data key="canonical_type">investor</data>
-        <data key="slug">losa-group</data>
-        <data key="integrated_sources">canonical|historical</data>
-        <data key="source_presence">graphml</data>
-        <data key="entity_confidence">0.6</data>
-        <data key="scope_decision"></data>
-        <data key="scope_status"></data>
-        <data key="quality_band"></data>
-        <data key="quality_score"></data>
-        <data key="source_url"></data>
-        <data key="semantic_theme"></data>
-        <data key="semantic_cluster_id"></data>
-        <data key="semantic_confidence"></data>
-        <data key="summary"></data>
-        <data key="one_liner"></data>
-        <data key="country"></data>
-        <viz:color r="37" g="182" b="106"/>
-        <viz:size value="18"/>
-      </node>
-      <node id="managro">
-        <data key="label">ManAgro</data>
-        <data key="node_type">capital</data>
-        <data key="canonical_type">investor</data>
-        <data key="slug">managro</data>
-        <data key="integrated_sources">canonical|historical</data>
-        <data key="source_presence">graphml</data>
-        <data key="entity_confidence">0.6</data>
-        <data key="scope_decision"></data>
-        <data key="scope_status"></data>
-        <data key="quality_band"></data>
-        <data key="quality_score"></data>
-        <data key="source_url"></data>
-        <data key="semantic_theme"></data>
-        <data key="semantic_cluster_id"></data>
-        <data key="semantic_confidence"></data>
-        <data key="summary"></data>
-        <data key="one_liner"></data>
-        <data key="country"></data>
-        <viz:color r="37" g="182" b="106"/>
-        <viz:size value="18"/>
-      </node>
+      
+      
+      
+      
       <node id="nxtp-labs">
         <data key="label">Nxtp Labs</data>
         <data key="node_type">capital</data>
@@ -817,94 +628,10 @@
         <viz:color r="37" g="182" b="106"/>
         <viz:size value="18"/>
       </node>
-      <node id="other-angels">
-        <data key="label">other angels</data>
-        <data key="node_type">capital</data>
-        <data key="canonical_type">investor</data>
-        <data key="slug">other-angels</data>
-        <data key="integrated_sources">canonical|historical</data>
-        <data key="source_presence">graphml</data>
-        <data key="entity_confidence">0.6</data>
-        <data key="scope_decision"></data>
-        <data key="scope_status"></data>
-        <data key="quality_band"></data>
-        <data key="quality_score"></data>
-        <data key="source_url"></data>
-        <data key="semantic_theme"></data>
-        <data key="semantic_cluster_id"></data>
-        <data key="semantic_confidence"></data>
-        <data key="summary"></data>
-        <data key="one_liner"></data>
-        <data key="country"></data>
-        <viz:color r="37" g="182" b="106"/>
-        <viz:size value="18"/>
-      </node>
-      <node id="other-small-investors">
-        <data key="label">other small investors</data>
-        <data key="node_type">capital</data>
-        <data key="canonical_type">investor</data>
-        <data key="slug">other-small-investors</data>
-        <data key="integrated_sources">canonical|historical</data>
-        <data key="source_presence">graphml</data>
-        <data key="entity_confidence">0.6</data>
-        <data key="scope_decision"></data>
-        <data key="scope_status"></data>
-        <data key="quality_band"></data>
-        <data key="quality_score"></data>
-        <data key="source_url"></data>
-        <data key="semantic_theme"></data>
-        <data key="semantic_cluster_id"></data>
-        <data key="semantic_confidence"></data>
-        <data key="summary"></data>
-        <data key="one_liner"></data>
-        <data key="country"></data>
-        <viz:color r="37" g="182" b="106"/>
-        <viz:size value="18"/>
-      </node>
-      <node id="paul-mcewan">
-        <data key="label">Paul McEwan</data>
-        <data key="node_type">capital</data>
-        <data key="canonical_type">investor</data>
-        <data key="slug">paul-mcewan</data>
-        <data key="integrated_sources">canonical|historical</data>
-        <data key="source_presence">graphml</data>
-        <data key="entity_confidence">0.6</data>
-        <data key="scope_decision"></data>
-        <data key="scope_status"></data>
-        <data key="quality_band"></data>
-        <data key="quality_score"></data>
-        <data key="source_url"></data>
-        <data key="semantic_theme"></data>
-        <data key="semantic_cluster_id"></data>
-        <data key="semantic_confidence"></data>
-        <data key="summary"></data>
-        <data key="one_liner"></data>
-        <data key="country"></data>
-        <viz:color r="37" g="182" b="106"/>
-        <viz:size value="18"/>
-      </node>
-      <node id="peruanos">
-        <data key="label">Peruanos</data>
-        <data key="node_type">capital</data>
-        <data key="canonical_type">investor</data>
-        <data key="slug">peruanos</data>
-        <data key="integrated_sources">canonical|historical</data>
-        <data key="source_presence">graphml</data>
-        <data key="entity_confidence">0.6</data>
-        <data key="scope_decision"></data>
-        <data key="scope_status"></data>
-        <data key="quality_band"></data>
-        <data key="quality_score"></data>
-        <data key="source_url"></data>
-        <data key="semantic_theme"></data>
-        <data key="semantic_cluster_id"></data>
-        <data key="semantic_confidence"></data>
-        <data key="summary"></data>
-        <data key="one_liner"></data>
-        <data key="country"></data>
-        <viz:color r="37" g="182" b="106"/>
-        <viz:size value="18"/>
-      </node>
+      
+      
+      
+      
       <node id="photon-fund">
         <data key="label">Photon Fund</data>
         <data key="node_type">capital</data>
@@ -7835,27 +7562,9 @@
         <data key="source_kind">canonical_investment</data>
         <data key="notes">latam_coinvest_network_v3.graphml</data>
       </edge>
-      <edge id="116" source="duhau" target="aplife-biotech">
-        <data key="weight">0.9</data>
-        <data key="relation_type">funded_by</data>
-        <data key="confidence">0.9</data>
-        <data key="source_kind">canonical_investment</data>
-        <data key="notes">latam_coinvest_network_v3.graphml</data>
-      </edge>
-      <edge id="117" source="duhau" target="Feedvax">
-        <data key="weight">0.9</data>
-        <data key="relation_type">funded_by</data>
-        <data key="confidence">0.9</data>
-        <data key="source_kind">canonical_investment</data>
-        <data key="notes">latam_coinvest_network_v3.graphml</data>
-      </edge>
-      <edge id="118" source="flia-duhau" target="st-mm">
-        <data key="weight">0.9</data>
-        <data key="relation_type">funded_by</data>
-        <data key="confidence">0.9</data>
-        <data key="source_kind">canonical_investment</data>
-        <data key="notes">latam_coinvest_network_v3.graphml</data>
-      </edge>
+      
+      
+      
       <edge id="119" source="fundacion-para-el-progreso-de-la-medicina" target="onco-precision">
         <data key="weight">0.9</data>
         <data key="relation_type">funded_by</data>
@@ -8612,20 +8321,8 @@
         <data key="source_kind">canonical_investment</data>
         <data key="notes">latam_coinvest_network_v3.graphml</data>
       </edge>
-      <edge id="227" source="grupo-peruanos" target="zev-biotech">
-        <data key="weight">0.9</data>
-        <data key="relation_type">funded_by</data>
-        <data key="confidence">0.9</data>
-        <data key="source_kind">canonical_investment</data>
-        <data key="notes">latam_coinvest_network_v3.graphml</data>
-      </edge>
-      <edge id="228" source="happiness" target="microgenesis">
-        <data key="weight">0.9</data>
-        <data key="relation_type">funded_by</data>
-        <data key="confidence">0.9</data>
-        <data key="source_kind">canonical_investment</data>
-        <data key="notes">latam_coinvest_network_v3.graphml</data>
-      </edge>
+      
+      
       <edge id="229" source="hatch" target="Feedvax">
         <data key="weight">0.9</data>
         <data key="relation_type">funded_by</data>
@@ -8773,13 +8470,7 @@
         <data key="source_kind">canonical_investment</data>
         <data key="notes">latam_coinvest_network_v3.graphml</data>
       </edge>
-      <edge id="250" source="jeff-wilke" target="Beeflow">
-        <data key="weight">0.9</data>
-        <data key="relation_type">funded_by</data>
-        <data key="confidence">0.9</data>
-        <data key="source_kind">canonical_investment</data>
-        <data key="notes">latam_coinvest_network_v3.graphml</data>
-      </edge>
+      
       <edge id="251" source="kairetsu-angels" target="michroma">
         <data key="weight">0.9</data>
         <data key="relation_type">funded_by</data>
@@ -8927,34 +8618,10 @@
         <data key="source_kind">canonical_investment</data>
         <data key="notes">latam_coinvest_network_v3.graphml</data>
       </edge>
-      <edge id="272" source="kwb" target="microgenesis">
-        <data key="weight">0.9</data>
-        <data key="relation_type">funded_by</data>
-        <data key="confidence">0.9</data>
-        <data key="source_kind">canonical_investment</data>
-        <data key="notes">latam_coinvest_network_v3.graphml</data>
-      </edge>
-      <edge id="273" source="lartirigoyen" target="elytron-biotech">
-        <data key="weight">0.9</data>
-        <data key="relation_type">funded_by</data>
-        <data key="confidence">0.9</data>
-        <data key="source_kind">canonical_investment</data>
-        <data key="notes">latam_coinvest_network_v3.graphml</data>
-      </edge>
-      <edge id="274" source="losa-group" target="st-mm">
-        <data key="weight">0.9</data>
-        <data key="relation_type">funded_by</data>
-        <data key="confidence">0.9</data>
-        <data key="source_kind">canonical_investment</data>
-        <data key="notes">latam_coinvest_network_v3.graphml</data>
-      </edge>
-      <edge id="275" source="managro" target="tomorrow-foods">
-        <data key="weight">0.9</data>
-        <data key="relation_type">funded_by</data>
-        <data key="confidence">0.9</data>
-        <data key="source_kind">canonical_investment</data>
-        <data key="notes">latam_coinvest_network_v3.graphml</data>
-      </edge>
+      
+      
+      
+      
       <edge id="276" source="nxtp-labs" target="Auth0">
         <data key="weight">0.7</data>
         <data key="relation_type">funded_by</data>
@@ -8976,41 +8643,11 @@
         <data key="source_kind">canonical_investment</data>
         <data key="notes">latam_coinvest_network_v3.graphml</data>
       </edge>
-      <edge id="279" source="other-angels" target="michroma">
-        <data key="weight">0.9</data>
-        <data key="relation_type">funded_by</data>
-        <data key="confidence">0.9</data>
-        <data key="source_kind">canonical_investment</data>
-        <data key="notes">latam_coinvest_network_v3.graphml</data>
-      </edge>
-      <edge id="280" source="other-small-investors" target="st-mm">
-        <data key="weight">0.9</data>
-        <data key="relation_type">funded_by</data>
-        <data key="confidence">0.9</data>
-        <data key="source_kind">canonical_investment</data>
-        <data key="notes">latam_coinvest_network_v3.graphml</data>
-      </edge>
-      <edge id="281" source="other-small-investors" target="tomorrow-foods">
-        <data key="weight">0.9</data>
-        <data key="relation_type">funded_by</data>
-        <data key="confidence">0.9</data>
-        <data key="source_kind">canonical_investment</data>
-        <data key="notes">latam_coinvest_network_v3.graphml</data>
-      </edge>
-      <edge id="282" source="paul-mcewan" target="caspr-biotech">
-        <data key="weight">0.9</data>
-        <data key="relation_type">funded_by</data>
-        <data key="confidence">0.9</data>
-        <data key="source_kind">canonical_investment</data>
-        <data key="notes">latam_coinvest_network_v3.graphml</data>
-      </edge>
-      <edge id="283" source="peruanos" target="zev-biotech">
-        <data key="weight">0.9</data>
-        <data key="relation_type">funded_by</data>
-        <data key="confidence">0.9</data>
-        <data key="source_kind">canonical_investment</data>
-        <data key="notes">latam_coinvest_network_v3.graphml</data>
-      </edge>
+      
+      
+      
+      
+      
       <edge id="284" source="photon-fund" target="caspr-biotech">
         <data key="weight">0.9</data>
         <data key="relation_type">funded_by</data>

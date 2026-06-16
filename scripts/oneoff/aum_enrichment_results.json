@@ -1,0 +1,18 @@
+[
+  {"name": "Savia Ventures",        "investor_id": null,              "aum_usd_m": 10,     "confidence": "medium", "as_of_year": 2023, "notes": "Fund I $10M, climate-smart ag focus"},
+  {"name": "1200 VC",               "investor_id": null,              "aum_usd_m": 150,    "confidence": "high",   "as_of_year": 2024, "notes": "Fund of funds, $150-300M target range, using floor"},
+  {"name": "IDB Lab",               "investor_id": null,              "aum_usd_m": 400,    "confidence": "medium", "as_of_year": 2024, "notes": "$400M additional resources aprobados 2024"},
+  {"name": "General Catalyst",      "investor_id": null,              "aum_usd_m": 43000,  "confidence": "high",   "as_of_year": 2024, "notes": "$43B AUM dic 2024. Anterior $6B era muy antiguo."},
+  {"name": "Kaszek Ventures",       "investor_id": null,              "aum_usd_m": 975,    "confidence": "medium", "as_of_year": 2024, "notes": "Kaszek VI: $540M early + $435M late = $975M. Anterior $2B era inflado."},
+  {"name": "SP Ventures",           "investor_id": null,              "aum_usd_m": 123,    "confidence": "medium", "as_of_year": 2024, "notes": "$123M AUM total (AgVentures III $80M + otros). Anterior $80M era parcial."},
+  {"name": "KPTL",                  "investor_id": null,              "aum_usd_m": 200,    "confidence": "medium", "as_of_year": 2025, "notes": "~R$1B AUM (~$200M USD). Anterior $180M. 10mo fondo: Amazonia Regenerate."},
+  {"name": "GridX",                 "investor_id": null,              "aum_usd_m": 30,     "confidence": "high",   "as_of_year": 2025, "notes": "Fund II cerrado jun 2025 con $30M. Anterior $41M era estimado alto."},
+  {"name": "Newtopia VC",           "investor_id": null,              "aum_usd_m": 50,     "confidence": "high",   "as_of_year": 2021, "notes": "Fund I $50M (2021). Confirmado."},
+  {"name": "Hatch Blue",            "investor_id": null,              "aum_usd_m": 101,    "confidence": "high",   "as_of_year": 2024, "notes": "Blue Revolution Fund EUR 93M (~$101M). Final close 2024."},
+  {"name": "Blue Horizon",          "investor_id": null,              "aum_usd_m": 500,    "confidence": "medium", "as_of_year": 2026, "notes": "$500M AUM 2026. Anterior $220M era viejo (primer fondo EUR 183M)."},
+  {"name": "IDB Invest",            "investor_id": null,              "aum_usd_m": 22000,  "confidence": "high",   "as_of_year": 2026, "notes": "$22B AUM. Brazo privado del BID. Rating AAA S&P 2026."},
+  {"name": "BNDES",                 "investor_id": null,              "aum_usd_m": 127,    "confidence": "medium", "as_of_year": 2025, "notes": "$127M en programas VC/startups (R$638M). Total innovación $13B pero solo VC relevante."},
+  {"name": "CORFO",                 "investor_id": null,              "aum_usd_m": 515,    "confidence": "high",   "as_of_year": 2026, "notes": "$515M como LP en 42 fondos privados (32 activos). Modelo indirecto."},
+  {"name": "The Yield Lab LATAM",   "investor_id": null,              "aum_usd_m": 50,     "confidence": "high",   "as_of_year": 2025, "notes": "Fondo III $50M para agrifoodtech. Confirmado."},
+  {"name": "Vox Capital",           "investor_id": null,              "aum_usd_m": 250,    "confidence": "high",   "as_of_year": 2026, "notes": "$250M AUM, 7 fondos. Confirmado."}
+]

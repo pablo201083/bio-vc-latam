@@ -433,6 +433,12 @@
     .detail-title-card p { margin: 3px 0 0; color: var(--muted); font-size: .82rem; line-height: 1.42; }
     .organization-card { border-color: rgba(15,118,110,.22); background: radial-gradient(circle at 92% 0%, rgba(209,244,238,.66), transparent 7rem), linear-gradient(135deg, rgba(255,255,255,.92), rgba(248,243,234,.82)); }
     .organization-kicker { color: var(--accent); font-size: .7rem; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; }
+    .org-header-row { display: flex; align-items: center; gap: 10px; margin-bottom: 2px; }
+    .org-logo { width: 40px; height: 40px; border-radius: 10px; object-fit: contain; background: #f2ede6; flex-shrink: 0; border: 1px solid rgba(217,206,190,.5); display: block; }
+    .org-logo-ph { width: 40px; height: 40px; border-radius: 10px; background: linear-gradient(135deg,#ede8e0,#d8d0c4); flex-shrink: 0; display: flex; align-items: center; justify-content: center; font-size: .72rem; font-weight: 800; color: #a09080; letter-spacing: .03em; text-transform: uppercase; border: 1px solid rgba(217,206,190,.4); }
+    .conn-logo-row { display: flex; align-items: center; gap: 8px; }
+    .conn-logo { width: 24px; height: 24px; border-radius: 6px; object-fit: contain; background: #f2ede6; flex-shrink: 0; display: block; border: 1px solid rgba(217,206,190,.4); }
+    .conn-logo-ph { width: 24px; height: 24px; border-radius: 6px; background: linear-gradient(135deg,#ede8e0,#d8d0c4); flex-shrink: 0; display: flex; align-items: center; justify-content: center; font-size: .52rem; font-weight: 800; color: #a09080; text-transform: uppercase; }
     .org-insight-grid { display: grid; gap: 7px; }
     .org-insight-card { border: 1px solid rgba(217,206,190,.78); border-radius: 13px; background: rgba(255,255,255,.72); padding: 8px 9px; display: grid; gap: 3px; }
     .org-insight-card span { color: var(--muted); font-size: .72rem; }
@@ -528,7 +534,7 @@
     .ca-view { display: none; width: 100%; height: 100%; position: absolute; top: 0; left: 0; }
     .ca-view.active { display: block; }
 
-    /* ── Radial view ───────────────────────────────────────────────── */
+    /* ── Radar view ────────────────────────────────────────────────── */
     #radial-svg { display: block; width: 100%; height: 100%; }
     .radial-hint {
       position: absolute;
@@ -542,7 +548,56 @@
       border-radius: 999px;
       padding: 4px 12px;
       pointer-events: none;
+      white-space: nowrap;
     }
+    /* Compare bar */
+    #radar-compare-bar {
+      position: absolute;
+      top: 10px; left: 50%;
+      transform: translateX(-50%);
+      z-index: 5;
+      display: none;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255,252,246,.95);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 4px 10px;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 2px 12px rgba(0,0,0,.08);
+      max-width: calc(100% - 32px);
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .rdr-cmp-chip {
+      display: inline-flex; align-items: center; gap: 5px;
+      border-radius: 999px; border: 1.5px solid;
+      padding: 2px 8px; font-size: .7rem; font-weight: 700;
+      white-space: nowrap;
+    }
+    .rdr-cmp-remove {
+      background: none; border: none; cursor: pointer;
+      font-size: .68rem; opacity: 0.55; padding: 0 0 0 2px;
+      line-height: 1; color: inherit;
+    }
+    .rdr-cmp-remove:hover { opacity: 1; }
+    .rdr-cmp-hint {
+      font-size: .68rem; color: var(--muted); padding: 0 2px;
+      white-space: nowrap;
+    }
+    /* "+ Comparar" button — visible solo en vista Radar */
+    .iv-cmp-btn {
+      width: 22px; height: 22px; border-radius: 50%;
+      border: 1.5px solid rgba(200,190,178,.7); background: transparent;
+      color: #c4b9a8; font-size: .82rem; line-height: 1;
+      cursor: pointer; flex-shrink: 0;
+      display: none; align-items: center; justify-content: center;
+      transition: border-color 90ms, background 90ms, color 90ms;
+      padding: 0;
+    }
+    .iv-cmp-btn:hover { border-color: var(--accent); color: var(--accent); background: rgba(58,168,163,.08); }
+    .iv-cmp-btn.in-compare { background: var(--accent); border-color: var(--accent); color: #fff; }
+    body.radar-active .iv-cmp-btn { display: flex; }
 
     /* ── Matrix view ───────────────────────────────────────────────── */
     #view-matrix { overflow: hidden; }
@@ -809,11 +864,11 @@
         <!-- View mode switcher -->
         <div class="vs-group">
           <button class="vs-btn active" data-view="network" type="button">🕸 Red</button>
-          <button class="vs-btn"        data-view="radial"  type="button">◎ Radial</button>
+          <button class="vs-btn"        data-view="radial"  type="button">◎ Radar</button>
           <button class="vs-btn"        data-view="matrix"  type="button">▦ Matriz</button>
           <button class="vs-btn"        data-view="stages"  type="button">🪜 Etapas</button>
           <button class="vs-btn"        data-view="flow"    type="button">⟶ Flujo</button>
-          <button class="vs-btn"        data-view="syndication" type="button">⬡ Sindi</button>
+          <button class="vs-btn"        data-view="syndication" type="button">⬡ Alocators</button>
           <button class="vs-btn"        data-view="fondos"      type="button">📋 Fondos</button>
         </div>
 
@@ -865,10 +920,11 @@
           </div>
         </div>
 
-        <!-- View B: Radial -->
+        <!-- View B: Radar -->
         <div class="ca-view" id="view-radial">
           <svg id="radial-svg"></svg>
-          <div class="radial-hint" id="radial-hint">Seleccioná un inversor para ver su portfolio en detalle</div>
+          <div id="radar-compare-bar"></div>
+          <div class="radial-hint" id="radial-hint">Hacé clic en un fondo · Usá + para comparar hasta 4</div>
         </div>
 
         <!-- View C: Matrix -->
@@ -894,12 +950,17 @@
           <div id="fondos-wrap"></div>
         </div>
 
-        <!-- View F: Syndication network -->
+        <!-- View F: Capital co-investment network (investor-to-investor) -->
         <div class="ca-view" id="view-syndication">
-          <div id="syndication-wrap" style="width:100%;height:100%;position:relative;overflow:hidden">
-            <svg id="syndication-svg" style="display:block;width:100%;height:100%"></svg>
-            <div id="synd-tooltip" style="position:absolute;pointer-events:none;display:none;background:rgba(255,252,246,.97);border:1px solid var(--line);border-radius:8px;padding:8px 12px;font-size:.73rem;color:var(--ink);max-width:260px;line-height:1.5;box-shadow:0 3px 12px rgba(0,0,0,.1)"></div>
-            <div style="position:absolute;bottom:12px;left:50%;transform:translateX(-50%);font-size:.7rem;color:var(--muted);background:rgba(255,252,246,.85);border:1px solid var(--line);border-radius:999px;padding:4px 14px;pointer-events:none">Tamaño = fondos co-inversores · Grosor = startups en común · Click = ficha</div>
+          <div id="syndication-wrap" style="width:100%;height:100%;position:relative;overflow:hidden;display:flex">
+            <svg id="syndication-svg" style="display:block;flex:1;min-width:0;height:100%"></svg>
+            <!-- Detail panel -->
+            <div id="synd-detail" style="width:260px;flex-shrink:0;background:rgba(255,252,246,.97);border-left:1px solid var(--line);padding:16px;overflow-y:auto;display:flex;flex-direction:column;gap:10px">
+              <div style="font-size:.75rem;font-weight:700;text-transform:uppercase;color:var(--accent);letter-spacing:.05em">Seleccioná un fondo</div>
+              <div id="synd-detail-body" style="color:var(--muted);font-size:.82rem;line-height:1.5">Hacé click en un nodo para ver su ficha de co-inversión.</div>
+            </div>
+            <div id="synd-tooltip" style="position:absolute;pointer-events:none;display:none;background:rgba(255,252,246,.97);border:1px solid var(--line);border-radius:8px;padding:8px 12px;font-size:.73rem;color:var(--ink);max-width:240px;line-height:1.5;box-shadow:0 3px 12px rgba(0,0,0,.1)"></div>
+            <div style="position:absolute;bottom:12px;left:12px;font-size:.68rem;color:var(--muted);background:rgba(255,252,246,.85);border:1px solid var(--line);border-radius:999px;padding:3px 12px;pointer-events:none">Tamaño = PageRank · Color = comunidad · Grosor arista = startups en común</div>
           </div>
         </div>
 
@@ -1008,6 +1069,7 @@
 <script src="./coverage-note.js?v=20260610" defer></script>
 <script src="./capital-structure-data.js?v=20260613country" defer></script>
 <script src="./coinvestment-data.js?v=20260614" defer></script>
+<script src="./investor-coinvest-data.js?v=20260614h" defer></script>
 <script>
 document.addEventListener('DOMContentLoaded', function(){
   var CS = window.CAPITAL_STRUCTURE;
@@ -1445,13 +1507,17 @@ document.addEventListener('DOMContentLoaded', function(){
         label: inv.label || inv.name || e.source,
         type:  inv.type || inv.investor_type || 'fund',
         subtype: inv.investor_subtype || '',
+        website: inv.website || '',
         count: 0,
         themes: {},
         countries: {},
         startups: [],
+        _seen: new Set(),   // deduplicación: un startup cuenta una sola vez por inversor
       };
     }
     const iv = invStats[e.source];
+    if (iv._seen.has(e.target)) return;   // edge duplicado → ignorar
+    iv._seen.add(e.target);
     iv.count++;
     const t = startup.theme;
     if (t && THEME_PAL[t]) iv.themes[t] = (iv.themes[t]||0)+1;
@@ -1570,7 +1636,7 @@ document.addEventListener('DOMContentLoaded', function(){
     const ivDom = iv.website ? (() => { try { return new URL(iv.website.startsWith('http') ? iv.website : 'https://'+iv.website).hostname.replace(/^www\./,''); } catch(e){ return null; }})() : null;
     const ivInitials = iv.label.split(/\s+/).map(w=>w[0]||'').join('').slice(0,2).toUpperCase();
     const ivLogoHtml = ivDom
-      ? `<img class="iv-logo" src="https://logo.clearbit.com/${ivDom}?size=128" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" alt=""><div class="iv-logo-ph" style="display:none">${ivInitials}</div>`
+      ? `<img class="iv-logo" src="https://www.google.com/s2/favicons?domain=${ivDom}&sz=64" onerror="null" alt=""><div class="iv-logo-ph" style="display:none">${ivInitials}</div>`
       : `<div class="iv-logo-ph">${ivInitials}</div>`;
 
     card.innerHTML = `
@@ -1582,6 +1648,7 @@ document.addEventListener('DOMContentLoaded', function(){
             <span class="iv-type-chip ${typeClass(iv.type)}">${typeLabel(iv.type, iv.subtype)}</span>
           </div>
         </div>
+        <button class="iv-cmp-btn" data-id="${iv.id}" title="Agregar a comparación" type="button">+</button>
         <span class="iv-count">${iv.count}</span>
       </div>
       <div class="iv-preview">
@@ -1591,8 +1658,14 @@ document.addEventListener('DOMContentLoaded', function(){
       <div class="iv-detail">${buildInvDetail(iv)}</div>
     `;
 
-    card.addEventListener('click', () => {
+    card.addEventListener('click', (e) => {
+      if (e.target.closest('.iv-cmp-btn')) return;
       setActiveInvestor(activeInvId === iv.id ? null : iv.id);
+    });
+
+    card.querySelector('.iv-cmp-btn').addEventListener('click', (e) => {
+      e.stopPropagation();
+      toggleCompare(iv.id);
     });
 
     return card;
@@ -1645,7 +1718,12 @@ document.addEventListener('DOMContentLoaded', function(){
       v.classList.toggle('active', v.id === 'view-' + view));
     document.getElementById('net-controls').style.display =
       view === 'network' ? 'flex' : 'none';
-    if (view === 'radial')      renderRadial(activeInvId);
+    if (view === 'radial') {
+      document.body.classList.add('radar-active');
+      requestAnimationFrame(() => renderRadar(activeInvId));
+    } else {
+      document.body.classList.remove('radar-active');
+    }
     if (view === 'matrix')      renderMatrix();
     if (view === 'stages')      renderStageLadder();
     if (view === 'flow')        renderSankey();
@@ -1688,9 +1766,11 @@ document.addEventListener('DOMContentLoaded', function(){
     closeFundDrawer();
   });
 
-  // Radial hint acts as back button in focus mode
+  // Radar hint acts as back button
   document.getElementById('radial-hint').addEventListener('click', () => {
-    if (activeInvId && currentView === 'radial') setActiveInvestor(null);
+    if (currentView === 'radial') {
+      if (activeInvId) setActiveInvestor(null);
+    }
   });
 
   // ── Active investor coordinator ──────────────────────────────────────────
@@ -1706,7 +1786,7 @@ document.addEventListener('DOMContentLoaded', function(){
         else     window.AtlasAPI.zoomReset();
       }
     } else if (currentView === 'radial') {
-      renderRadial(id);
+      renderRadar(id);
     } else if (currentView === 'matrix') {
       highlightMatrixRow(id);
     } else if (currentView === 'stages') {
@@ -1719,293 +1799,378 @@ document.addEventListener('DOMContentLoaded', function(){
     openFundDrawer(id);
   }
 
-  // ── Radial view ──────────────────────────────────────────────────────────
-  function renderRadial(selectedId) {
+  // ── Radar / Compare view ─────────────────────────────────────────────────
+  const COMPARE_PAL = ['#3AA8A3', '#D97706', '#7C3AED', '#DC2626'];
+  // Escala fija absoluta: N deals en un tema = radio completo.
+  // Permite comparar pisada real entre fondos (grande = más deals).
+  const RADAR_MAX_DEALS = 30;
+  let compareSet = []; // ordered list of up to 4 fund IDs
+
+  function toggleCompare(id) {
+    const idx = compareSet.indexOf(id);
+    if (idx >= 0) {
+      compareSet.splice(idx, 1);
+    } else {
+      if (compareSet.length >= 4) return;
+      compareSet.push(id);
+    }
+    updateCompareBar();
+    updateCompareButtons();
+    // Si no estamos en Radar, cambiar automáticamente
+    if (currentView !== 'radial') {
+      switchView('radial');
+    } else {
+      renderRadar(activeInvId);
+    }
+  }
+
+  function updateCompareBar() {
+    const bar = document.getElementById('radar-compare-bar');
+    if (!bar) return;
+    if (compareSet.length === 0) { bar.style.display = 'none'; return; }
+    bar.style.display = 'flex';
+    let html = '';
+    compareSet.forEach((id, i) => {
+      const iv = invStats[id];
+      const col = COMPARE_PAL[i];
+      const lbl = iv ? (iv.label.length > 16 ? iv.label.slice(0,14)+'…' : iv.label) : id;
+      html += `<span class="rdr-cmp-chip" style="color:${col};border-color:${col}60">
+        <span style="width:7px;height:7px;border-radius:50%;background:${col};display:inline-block;flex-shrink:0"></span>
+        ${lbl}
+        <button class="rdr-cmp-remove" data-cmpid="${id}" title="Quitar">✕</button>
+      </span>`;
+    });
+    if (compareSet.length === 1) {
+      html += '<span class="rdr-cmp-hint">+ otro fondo para comparar</span>';
+    } else if (compareSet.length < 4) {
+      html += '<span class="rdr-cmp-hint">+ fondo ' + (compareSet.length+1) + '</span>';
+    }
+    bar.innerHTML = html;
+    bar.querySelectorAll('.rdr-cmp-remove').forEach(btn =>
+      btn.addEventListener('click', (e) => { e.stopPropagation(); toggleCompare(btn.dataset.cmpid); })
+    );
+  }
+
+  function updateCompareButtons() {
+    listEl.querySelectorAll('.iv-cmp-btn').forEach(btn => {
+      const id = btn.dataset.id;
+      const idx = compareSet.indexOf(id);
+      btn.classList.toggle('in-compare', idx >= 0);
+      if (idx >= 0) {
+        btn.style.background = COMPARE_PAL[idx];
+        btn.style.borderColor = COMPARE_PAL[idx];
+        btn.textContent = '✓';
+      } else {
+        btn.style.background = '';
+        btn.style.borderColor = '';
+        btn.textContent = '+';
+      }
+    });
+  }
+
+  function renderRadar(selectedId) {
     const svg   = document.getElementById('radial-svg');
     const hint  = document.getElementById('radial-hint');
     const stage = document.querySelector('.ca-stage');
     const W = stage ? stage.clientWidth  : 800;
     const H = stage ? stage.clientHeight : 600;
     svg.innerHTML = '';
+    svg.setAttribute('viewBox', '0 0 ' + W + ' ' + H);
+    svg.setAttribute('preserveAspectRatio', 'xMidYMid meet');
+    hint.style.pointerEvents = 'none';
 
-    if (!selectedId) {
-      hint.style.cursor = 'default';
-      hint.textContent  = 'Seleccioná un inversor para ver su portfolio en detalle';
-      renderRadialOverview(svg, W, H);
-    } else {
-      const iv = invStats[selectedId];
-      if (!iv) { renderRadialOverview(svg, W, H); return; }
+    if (compareSet.length >= 2 && !selectedId) {
+      hint.style.pointerEvents = 'none';
+      hint.innerHTML = 'Comparando ' + compareSet.length + ' fondos · Clic en un fondo del sidebar para ver su perfil';
+      renderRadarCompare(svg, W, H);
+    } else if (selectedId && invStats[selectedId]) {
+      hint.style.pointerEvents = 'auto';
       hint.style.cursor = 'pointer';
-      hint.innerHTML = '← Volver · <strong>' + iv.label + '</strong> · ' + iv.count + ' startups';
-      renderRadialFocus(svg, W, H, iv);
+      hint.innerHTML = '← Volver · <strong>' + invStats[selectedId].label + '</strong> · ' + invStats[selectedId].count + ' startups';
+      renderRadarFocus(svg, W, H, invStats[selectedId]);
+    } else {
+      hint.style.pointerEvents = 'none';
+      hint.innerHTML = 'Hacé clic en un fondo · Usá <strong>+</strong> para comparar hasta 4';
+      renderRadarGrid(svg, W, H);
     }
   }
 
-  // Radial overview = "Constelación de capital": los fondos se agrupan por su
-  // TESIS DOMINANTE (posición angular por tema), tamaño = deals. De un vistazo se
-  // ve qué temas concentran más/mayores fondos. Click en un fondo → ficha (drawer).
-  function renderRadialOverview(svg, W, H) {
-    svg.setAttribute('viewBox', '0 0 ' + W + ' ' + H);
-    svg.setAttribute('preserveAspectRatio', 'xMidYMid meet');
-    const cx = W / 2, cy = H / 2;
-    const topInv = investors.slice(0, 44);
+  // ── Core radar drawing primitives ────────────────────────────────────────
 
-    topInv.forEach(iv => {
-      iv._dom = Object.entries(iv.themes).sort((a,b)=>b[1]-a[1])[0]?.[0] || null;
-    });
-    const present = THEME_ORDER.filter(t => topInv.some(iv => iv._dom === t));
-    const slots = present.slice();
-    if (topInv.some(iv => !iv._dom)) slots.push('__none__');
-    const nSlots = Math.max(1, slots.length);
-    const R0 = Math.min(W, H) * 0.30;
-    const angleOf = {};
-    slots.forEach((t, i) => { angleOf[t] = -Math.PI/2 + i / nSlots * Math.PI * 2; });
-
-    const bubbles = topInv.map((iv, i) => {
-      const key = iv._dom || '__none__';
-      const th  = angleOf[key];
-      const ax  = cx + Math.cos(th) * R0, ay = cy + Math.sin(th) * R0;
-      return {
-        id: iv.id, label: iv.label, count: iv.count,
-        r: Math.max(13, Math.min(46, Math.sqrt(iv.count) * 8.5)),
-        color: iv._dom ? THEME_PAL[iv._dom] : '#9a8d7d',
-        ax, ay, x: ax + Math.cos(i*2.4)*22, y: ay + Math.sin(i*2.4)*22, vx:0, vy:0,
-      };
-    });
-
-    // Force relax: repulsión + atracción al ancla de su tema (clusters temáticos)
-    for (let iter=0; iter<260; iter++){
-      const alpha = Math.pow(1 - iter/260, 1.3);
-      for (let i=0;i<bubbles.length;i++){
-        for (let j=i+1;j<bubbles.length;j++){
-          const dx=(bubbles[j].x-bubbles[i].x)||0.01, dy=(bubbles[j].y-bubbles[i].y)||0.01;
-          const dist=Math.sqrt(dx*dx+dy*dy), minD=bubbles[i].r+bubbles[j].r+4;
-          if(dist<minD){ const f=(minD-dist)/dist*0.42*alpha;
-            bubbles[i].vx-=dx*f;bubbles[i].vy-=dy*f;bubbles[j].vx+=dx*f;bubbles[j].vy+=dy*f; }
-        }
-        bubbles[i].vx += (bubbles[i].ax - bubbles[i].x) * 0.045 * alpha;
-        bubbles[i].vy += (bubbles[i].ay - bubbles[i].y) * 0.045 * alpha;
-      }
-      bubbles.forEach(b=>{ b.x+=b.vx;b.y+=b.vy;b.vx*=0.6;b.vy*=0.6; });
-    }
-
-    const g = document.createElementNS(NS,'g');
-
-    // Guías de tema (spoke + label + # fondos) en cada slot
-    slots.forEach(t => {
-      const th = angleOf[t];
-      const col = t==='__none__' ? '#9a8d7d' : THEME_PAL[t];
-      const n = topInv.filter(iv => (iv._dom||'__none__')===t).length;
-      const lx = cx + Math.cos(th)*(R0+96), ly = cy + Math.sin(th)*(R0+96);
-      const sp = document.createElementNS(NS,'line');
-      sp.setAttribute('x1', cx+Math.cos(th)*44); sp.setAttribute('y1', cy+Math.sin(th)*44);
-      sp.setAttribute('x2', cx+Math.cos(th)*(R0+72)); sp.setAttribute('y2', cy+Math.sin(th)*(R0+72));
-      sp.setAttribute('stroke', col); sp.setAttribute('stroke-width','1'); sp.setAttribute('opacity','0.12');
-      g.appendChild(sp);
-      const tl = document.createElementNS(NS,'text');
-      tl.setAttribute('x',lx); tl.setAttribute('y',ly); tl.setAttribute('text-anchor','middle');
-      tl.setAttribute('dominant-baseline','middle'); tl.setAttribute('font-size','10.5');
-      tl.setAttribute('font-weight','800'); tl.setAttribute('font-family','inherit');
-      tl.setAttribute('fill',col); tl.setAttribute('opacity','0.92');
-      tl.textContent = t==='__none__' ? 'Sin tema' : (THEME_SHORT[t]||t);
-      g.appendChild(tl);
-      const tc = document.createElementNS(NS,'text');
-      tc.setAttribute('x',lx); tc.setAttribute('y',ly+12); tc.setAttribute('text-anchor','middle');
-      tc.setAttribute('dominant-baseline','middle'); tc.setAttribute('font-size','8');
-      tc.setAttribute('font-family','inherit'); tc.setAttribute('fill',col); tc.setAttribute('opacity','0.55');
-      tc.textContent = n + (n===1?' fondo':' fondos');
-      g.appendChild(tc);
-    });
-
-    // Caption central
-    const c1 = document.createElementNS(NS,'text');
-    c1.setAttribute('x',cx); c1.setAttribute('y',cy-6); c1.setAttribute('text-anchor','middle');
-    c1.setAttribute('dominant-baseline','middle'); c1.setAttribute('font-size','12');
-    c1.setAttribute('font-weight','800'); c1.setAttribute('fill','#5a4e3e'); c1.setAttribute('opacity','0.82');
-    c1.textContent='Constelación de capital';
-    g.appendChild(c1);
-    const c2 = document.createElementNS(NS,'text');
-    c2.setAttribute('x',cx); c2.setAttribute('y',cy+10); c2.setAttribute('text-anchor','middle');
-    c2.setAttribute('dominant-baseline','middle'); c2.setAttribute('font-size','8.5');
-    c2.setAttribute('fill','#9a8d7d');
-    c2.textContent='posición = tesis dominante · tamaño = deals';
-    g.appendChild(c2);
-
-    // Burbujas
-    bubbles.forEach(b => {
-      const circle = document.createElementNS(NS,'circle');
-      circle.setAttribute('cx',b.x); circle.setAttribute('cy',b.y); circle.setAttribute('r',b.r);
-      circle.setAttribute('fill',b.color+'24'); circle.setAttribute('stroke',b.color);
-      circle.setAttribute('stroke-width','1.5'); circle.style.cursor='pointer';
-      circle.addEventListener('click',()=>openFundDrawer(b.id));
-      circle.addEventListener('mouseenter',()=>circle.setAttribute('fill',b.color+'55'));
-      circle.addEventListener('mouseleave',()=>circle.setAttribute('fill',b.color+'24'));
-      g.appendChild(circle);
-      const fsize=Math.max(7.5,Math.min(11,b.r*0.32));
-      const maxCh=Math.max(4,Math.floor(b.r*0.26));
-      const short=b.label.length>maxCh?b.label.slice(0,maxCh)+'…':b.label;
-      const t1=document.createElementNS(NS,'text');
-      t1.setAttribute('x',b.x); t1.setAttribute('y',b.r>=24?b.y-3:b.y);
-      t1.setAttribute('text-anchor','middle'); t1.setAttribute('dominant-baseline','middle');
-      t1.setAttribute('font-size',fsize); t1.setAttribute('font-weight','700');
-      t1.setAttribute('font-family','inherit'); t1.setAttribute('fill',b.color);
-      t1.setAttribute('pointer-events','none'); t1.textContent=short;
-      g.appendChild(t1);
-      if(b.r>=24){
-        const t2=document.createElementNS(NS,'text');
-        t2.setAttribute('x',b.x); t2.setAttribute('y',b.y+fsize+1);
-        t2.setAttribute('text-anchor','middle'); t2.setAttribute('dominant-baseline','middle');
-        t2.setAttribute('font-size',Math.max(7,fsize-2)); t2.setAttribute('font-weight','600');
-        t2.setAttribute('font-family','inherit'); t2.setAttribute('fill',b.color);
-        t2.setAttribute('opacity','0.68'); t2.setAttribute('pointer-events','none');
-        t2.textContent=b.count;
-        g.appendChild(t2);
+  // Draw background rings + spokes + optional axis labels
+  function drawSpider(g, cx, cy, R, showLabels) {
+    const n = THEME_ORDER.length;
+    const ringFracs = [0.33, 0.66, 1.0];
+    ringFracs.forEach((frac, fi) => {
+      const ring = document.createElementNS(NS, 'circle');
+      ring.setAttribute('cx', cx); ring.setAttribute('cy', cy);
+      ring.setAttribute('r', R * frac);
+      ring.setAttribute('fill', 'none');
+      ring.setAttribute('stroke', '#C4B9A8');
+      ring.setAttribute('stroke-width', fi === 2 ? '0.9' : '0.5');
+      if (fi < 2) ring.setAttribute('stroke-dasharray', '2,3');
+      ring.setAttribute('opacity', '0.55');
+      g.appendChild(ring);
+      // Ring label (deal count) — solo en modos con labels
+      if (showLabels) {
+        const dealCount = Math.round(frac * RADAR_MAX_DEALS);
+        const lx = cx + R * frac + 3;   // justo a la derecha del anillo (eje 3 o'clock)
+        const ly = cy - 3;
+        const rl = document.createElementNS(NS, 'text');
+        rl.setAttribute('x', lx); rl.setAttribute('y', ly);
+        rl.setAttribute('dominant-baseline', 'auto');
+        rl.setAttribute('font-size', '7.5');
+        rl.setAttribute('font-family', 'inherit');
+        rl.setAttribute('fill', '#b0a390');
+        rl.setAttribute('pointer-events', 'none');
+        rl.textContent = dealCount;
+        g.appendChild(rl);
       }
     });
-    svg.appendChild(g);
+    THEME_ORDER.forEach((t, i) => {
+      const a = -Math.PI/2 + (i / n) * Math.PI * 2;
+      const ex = cx + Math.cos(a) * R, ey = cy + Math.sin(a) * R;
+      const spoke = document.createElementNS(NS, 'line');
+      spoke.setAttribute('x1', cx); spoke.setAttribute('y1', cy);
+      spoke.setAttribute('x2', ex); spoke.setAttribute('y2', ey);
+      spoke.setAttribute('stroke', THEME_PAL[t] || '#C4B9A8');
+      spoke.setAttribute('stroke-width', '0.8');
+      spoke.setAttribute('opacity', '0.28');
+      g.appendChild(spoke);
+      if (showLabels) {
+        const lm = R + 18;
+        const lx = cx + Math.cos(a) * lm, ly = cy + Math.sin(a) * lm;
+        const ca = Math.cos(a), sa = Math.sin(a);
+        const anchor = ca > 0.2 ? 'start' : ca < -0.2 ? 'end' : 'middle';
+        const base   = sa > 0.2 ? 'hanging' : sa < -0.2 ? 'auto' : 'middle';
+        const lab = document.createElementNS(NS, 'text');
+        lab.setAttribute('x', lx); lab.setAttribute('y', ly);
+        lab.setAttribute('text-anchor', anchor);
+        lab.setAttribute('dominant-baseline', base);
+        lab.setAttribute('font-size', '9.5');
+        lab.setAttribute('font-weight', '700');
+        lab.setAttribute('font-family', 'inherit');
+        lab.setAttribute('fill', THEME_PAL[t] || '#888');
+        lab.setAttribute('pointer-events', 'none');
+        lab.textContent = THEME_SHORT[t] || t.split(' ')[0];
+        g.appendChild(lab);
+      }
+    });
   }
 
-  function renderRadialFocus(svg, W, H, iv) {
-    svg.setAttribute('viewBox', '0 0 ' + W + ' ' + H);
-    svg.setAttribute('preserveAspectRatio', 'xMidYMid meet');
-    const cx = W / 2, cy = H / 2;
-    const innerR = 52;
-    const outerR = Math.min(W, H) * 0.36;
-
-    // Group startups by theme
-    const byTheme = {};
-    iv.startups.forEach(s => {
-      const t = s.theme || '—';
-      if (!byTheme[t]) byTheme[t] = [];
-      byTheme[t].push(s);
+  // Draw one fund's polygon on the radar (values = % of own portfolio per theme)
+  function drawRadarPolygon(g, cx, cy, R, iv, color, fillAlpha, strokeW) {
+    const n = THEME_ORDER.length;
+    const pts = THEME_ORDER.map((t, i) => {
+      const a = -Math.PI/2 + (i / n) * Math.PI * 2;
+      const v = Math.min(1.0, (iv.themes[t] || 0) / RADAR_MAX_DEALS);
+      return [cx + Math.cos(a) * v * R, cy + Math.sin(a) * v * R];
     });
-    const themes = Object.keys(byTheme).sort((a,b) => byTheme[b].length - byTheme[a].length);
-    const total  = iv.startups.length;
+    const d = pts.map((p, i) => (i===0?'M':'L') + p[0].toFixed(1) + ',' + p[1].toFixed(1)).join(' ') + ' Z';
+    const path = document.createElementNS(NS, 'path');
+    path.setAttribute('d', d);
+    const fa = Math.round(fillAlpha * 255).toString(16).padStart(2,'0');
+    path.setAttribute('fill', color + fa);
+    path.setAttribute('stroke', color);
+    path.setAttribute('stroke-width', strokeW || '1.8');
+    path.setAttribute('stroke-linejoin', 'round');
+    g.appendChild(path);
+    return path;
+  }
+
+  // ── Mini-grid: top funds at a glance ─────────────────────────────────────
+  function renderRadarGrid(svg, W, H) {
+    const PAD = 18;
+    const cellW = 168, cellH = 186;
+    const nCols = Math.max(1, Math.floor((W - PAD*2) / cellW));
+    const nRows = Math.max(1, Math.floor((H - PAD*2 - 18) / cellH));
+    const N     = Math.min(nCols * nRows, investors.length);
+    const topInv = investors.slice(0, N);
+    const R = Math.min(cellW, cellH) * 0.36;
+
+    const gridW = nCols * cellW, gridH = nRows * cellH;
+    const offX = (W - gridW) / 2, offY = (H - gridH - 18) / 2;
 
     const g = document.createElementNS(NS, 'g');
-    let angleStart = -Math.PI / 2;
 
-    themes.forEach(theme => {
-      const count  = byTheme[theme].length;
-      const sweep  = (count / total) * Math.PI * 2;
-      const midA   = angleStart + sweep / 2;
-      const color  = THEME_PAL[theme] || '#888';
-      const large  = sweep > Math.PI ? 1 : 0;
-      const r1 = outerR - 24, r2 = outerR + 22;
+    topInv.forEach((iv, idx) => {
+      const col = idx % nCols;
+      const row = Math.floor(idx / nCols);
+      const cx  = offX + col * cellW + cellW / 2;
+      const cy  = offY + row * cellH + cellH / 2 - 12;
 
-      // Annular sector
-      const c0 = Math.cos(angleStart), s0 = Math.sin(angleStart);
-      const c1 = Math.cos(angleStart + sweep), s1 = Math.sin(angleStart + sweep);
-      const d = [
-        'M', cx+c0*r1, cy+s0*r1,
-        'A', r1, r1, 0, large, 1, cx+c1*r1, cy+s1*r1,
-        'L', cx+c1*r2, cy+s1*r2,
-        'A', r2, r2, 0, large, 0, cx+c0*r2, cy+s0*r2,
-        'Z',
-      ].join(' ');
-      const sector = document.createElementNS(NS, 'path');
-      sector.setAttribute('d', d);
-      sector.setAttribute('fill', color + '1e');
-      sector.setAttribute('stroke', color + '4a');
-      sector.setAttribute('stroke-width', '0.8');
-      g.appendChild(sector);
+      const domTheme = Object.entries(iv.themes).sort((a,b)=>b[1]-a[1])[0]?.[0];
+      const color = domTheme ? THEME_PAL[domTheme] : '#9a8d7d';
+      const inCmp = compareSet.indexOf(iv.id);
 
-      // Theme label
-      const tl = document.createElementNS(NS, 'text');
-      tl.setAttribute('x', cx + Math.cos(midA) * (r2 + 16));
-      tl.setAttribute('y', cy + Math.sin(midA) * (r2 + 16));
-      tl.setAttribute('text-anchor', 'middle'); tl.setAttribute('dominant-baseline', 'middle');
-      tl.setAttribute('font-size', '9'); tl.setAttribute('font-weight', '700');
-      tl.setAttribute('font-family', 'inherit'); tl.setAttribute('fill', color);
-      tl.setAttribute('pointer-events', 'none');
-      tl.textContent = THEME_SHORT[theme] || theme.split(' ')[0];
-      g.appendChild(tl);
+      const cell = document.createElementNS(NS, 'g');
+      cell.style.cursor = 'pointer';
 
-      // Startup dots + labels
-      byTheme[theme].forEach((s, i) => {
-        const a  = angleStart + (i + 0.5) / count * sweep;
-        const sx = cx + Math.cos(a) * outerR;
-        const sy = cy + Math.sin(a) * outerR;
+      // background hit rect
+      const hit = document.createElementNS(NS, 'rect');
+      hit.setAttribute('x', offX + col * cellW + 3);
+      hit.setAttribute('y', offY + row * cellH + 3);
+      hit.setAttribute('width', cellW - 6); hit.setAttribute('height', cellH - 6);
+      hit.setAttribute('rx', '10');
+      hit.setAttribute('fill', inCmp >= 0 ? COMPARE_PAL[inCmp] + '0e' : 'transparent');
+      hit.setAttribute('stroke', inCmp >= 0 ? COMPARE_PAL[inCmp] + '50' : 'transparent');
+      hit.setAttribute('stroke-width', '1.2');
+      cell.appendChild(hit);
 
-        const line = document.createElementNS(NS, 'line');
-        line.setAttribute('x1', cx); line.setAttribute('y1', cy);
-        line.setAttribute('x2', sx); line.setAttribute('y2', sy);
-        line.setAttribute('stroke', color); line.setAttribute('stroke-width', '0.7');
-        line.setAttribute('opacity', '0.22');
-        g.appendChild(line);
+      drawSpider(cell, cx, cy, R, false);
+      const polyColor = inCmp >= 0 ? COMPARE_PAL[inCmp] : color;
+      drawRadarPolygon(cell, cx, cy, R, iv, polyColor, 0.22, '1.4');
 
-        const dot = document.createElementNS(NS, 'circle');
-        dot.setAttribute('cx', sx); dot.setAttribute('cy', sy); dot.setAttribute('r', 5);
-        dot.setAttribute('fill', color); dot.setAttribute('opacity', '0.76');
-        g.appendChild(dot);
+      // fund name
+      const label = iv.label.length > 18 ? iv.label.slice(0,16)+'…' : iv.label;
+      const nt = document.createElementNS(NS, 'text');
+      nt.setAttribute('x', cx); nt.setAttribute('y', cy + R + 10);
+      nt.setAttribute('text-anchor', 'middle'); nt.setAttribute('dominant-baseline', 'hanging');
+      nt.setAttribute('font-size', '8.5'); nt.setAttribute('font-weight', '700');
+      nt.setAttribute('font-family', 'inherit'); nt.setAttribute('fill', polyColor);
+      nt.setAttribute('pointer-events', 'none');
+      nt.textContent = label;
+      cell.appendChild(nt);
 
-        if (count <= 18 || s.valuation_tier >= 2) {
-          const anchor = Math.cos(a) >= 0 ? 'start' : 'end';
-          const st = document.createElementNS(NS, 'text');
-          st.setAttribute('x', sx + Math.cos(a) * 9);
-          st.setAttribute('y', sy + Math.sin(a) * 9);
-          st.setAttribute('text-anchor', anchor); st.setAttribute('dominant-baseline', 'middle');
-          st.setAttribute('font-size', '7.5'); st.setAttribute('font-family', 'inherit');
-          st.setAttribute('fill', color); st.setAttribute('opacity', '0.82');
-          st.setAttribute('pointer-events', 'none');
-          const nm = s.name.length > 20 ? s.name.slice(0, 18) + '…' : s.name;
-          st.textContent = nm;
-          g.appendChild(st);
-        }
+      const ct = document.createElementNS(NS, 'text');
+      ct.setAttribute('x', cx); ct.setAttribute('y', cy + R + 21);
+      ct.setAttribute('text-anchor', 'middle'); ct.setAttribute('dominant-baseline', 'hanging');
+      ct.setAttribute('font-size', '7.5'); ct.setAttribute('font-family', 'inherit');
+      ct.setAttribute('fill', '#9a8d7d'); ct.setAttribute('pointer-events', 'none');
+      ct.textContent = iv.count + ' deal' + (iv.count !== 1 ? 's' : '');
+      cell.appendChild(ct);
+
+      cell.addEventListener('mouseenter', () => {
+        if (compareSet.indexOf(iv.id) < 0)
+          hit.setAttribute('fill', color + '12');
       });
-
-      angleStart += sweep;
+      cell.addEventListener('mouseleave', () => {
+        if (compareSet.indexOf(iv.id) < 0)
+          hit.setAttribute('fill', 'transparent');
+      });
+      cell.addEventListener('click', () => setActiveInvestor(iv.id));
+      g.appendChild(cell);
     });
-
-    // Center glow
-    const domTheme = Object.entries(iv.themes).sort((a,b) => b[1]-a[1])[0]?.[0];
-    const domColor = domTheme ? THEME_PAL[domTheme] : '#3AA8A3';
-
-    const glow = document.createElementNS(NS, 'circle');
-    glow.setAttribute('cx', cx); glow.setAttribute('cy', cy); glow.setAttribute('r', innerR + 10);
-    glow.setAttribute('fill', domColor + '14');
-    glow.setAttribute('stroke', domColor + '35'); glow.setAttribute('stroke-width', '1');
-    g.appendChild(glow);
-
-    const center = document.createElementNS(NS, 'circle');
-    center.setAttribute('cx', cx); center.setAttribute('cy', cy); center.setAttribute('r', innerR);
-    center.setAttribute('fill', domColor + '1e');
-    center.setAttribute('stroke', domColor); center.setAttribute('stroke-width', '2');
-    g.appendChild(center);
-
-    // Name (word-wrapped inside circle)
-    const words = iv.label.split(' ');
-    const lines = []; let cur = '';
-    words.forEach(w => {
-      const test = cur ? cur + ' ' + w : w;
-      if (test.length > 10 && cur) { lines.push(cur); cur = w; }
-      else cur = test;
-    });
-    if (cur) lines.push(cur);
-    const lineH = 13, nameLines = lines.slice(0, 3);
-    const nameStartY = cy - (nameLines.length - 1) * lineH / 2;
-    nameLines.forEach((line, li) => {
-      const t = document.createElementNS(NS, 'text');
-      t.setAttribute('x', cx); t.setAttribute('y', nameStartY + li * lineH);
-      t.setAttribute('text-anchor', 'middle'); t.setAttribute('dominant-baseline', 'middle');
-      t.setAttribute('font-size', '11'); t.setAttribute('font-weight', '800');
-      t.setAttribute('font-family', 'inherit'); t.setAttribute('fill', domColor);
-      t.setAttribute('pointer-events', 'none');
-      t.textContent = line;
-      g.appendChild(t);
-    });
-
-    const ct = document.createElementNS(NS, 'text');
-    ct.setAttribute('x', cx); ct.setAttribute('y', nameStartY + nameLines.length * lineH + 1);
-    ct.setAttribute('text-anchor', 'middle'); ct.setAttribute('dominant-baseline', 'middle');
-    ct.setAttribute('font-size', '9'); ct.setAttribute('font-family', 'inherit');
-    ct.setAttribute('fill', domColor); ct.setAttribute('opacity', '0.62');
-    ct.setAttribute('pointer-events', 'none');
-    ct.textContent = iv.count + ' startups';
-    g.appendChild(ct);
 
     svg.appendChild(g);
   }
+
+  // ── Focus: single fund, large radar ──────────────────────────────────────
+  function renderRadarFocus(svg, W, H, iv) {
+    const domTheme = Object.entries(iv.themes).sort((a,b)=>b[1]-a[1])[0]?.[0];
+    const domColor = domTheme ? THEME_PAL[domTheme] : '#3AA8A3';
+    const R  = Math.min(W * 0.36, H * 0.42, 250);
+    const cx = W / 2, cy = H / 2;
+
+    const g = document.createElementNS(NS, 'g');
+    drawSpider(g, cx, cy, R, true);
+    drawRadarPolygon(g, cx, cy, R, iv, domColor, 0.22, '2');
+
+    // deal-count dots on each axis vertex
+    const n = THEME_ORDER.length;
+    THEME_ORDER.forEach((t, i) => {
+      const v = Math.min(1.0, (iv.themes[t] || 0) / RADAR_MAX_DEALS);
+      if (v < 0.04) return;
+      const a  = -Math.PI/2 + (i / n) * Math.PI * 2;
+      const px = cx + Math.cos(a) * v * R;
+      const py = cy + Math.sin(a) * v * R;
+      const dot = document.createElementNS(NS, 'circle');
+      dot.setAttribute('cx', px); dot.setAttribute('cy', py);
+      dot.setAttribute('r', '3.5');
+      dot.setAttribute('fill', domColor); dot.setAttribute('opacity', '0.85');
+      g.appendChild(dot);
+    });
+
+    // center label
+    const short = iv.label.split(' ').slice(0,3).join(' ');
+    const cl = document.createElementNS(NS, 'text');
+    cl.setAttribute('x', cx); cl.setAttribute('y', cy - 7);
+    cl.setAttribute('text-anchor', 'middle'); cl.setAttribute('dominant-baseline', 'auto');
+    cl.setAttribute('font-size', '11'); cl.setAttribute('font-weight', '800');
+    cl.setAttribute('font-family', 'inherit'); cl.setAttribute('fill', domColor);
+    cl.setAttribute('pointer-events', 'none');
+    cl.textContent = short.length > 18 ? short.slice(0,16)+'…' : short;
+    g.appendChild(cl);
+
+    const cs = document.createElementNS(NS, 'text');
+    cs.setAttribute('x', cx); cs.setAttribute('y', cy + 7);
+    cs.setAttribute('text-anchor', 'middle'); cs.setAttribute('dominant-baseline', 'hanging');
+    cs.setAttribute('font-size', '8.5'); cs.setAttribute('font-family', 'inherit');
+    cs.setAttribute('fill', domColor); cs.setAttribute('opacity', '0.6');
+    cs.setAttribute('pointer-events', 'none');
+    cs.textContent = iv.count + ' startups';
+    g.appendChild(cs);
+
+    svg.appendChild(g);
+  }
+
+  // ── Compare: 2-4 funds overlaid ──────────────────────────────────────────
+  function renderRadarCompare(svg, W, H) {
+    const R  = Math.min(W * 0.34, H * 0.40, 230);
+    const cx = W / 2, cy = H / 2 - 30;
+
+    const g = document.createElementNS(NS, 'g');
+    drawSpider(g, cx, cy, R, true);
+
+    compareSet.forEach((id, i) => {
+      const iv = invStats[id];
+      if (!iv) return;
+      drawRadarPolygon(g, cx, cy, R, iv, COMPARE_PAL[i], 0.13, '2');
+    });
+
+    // vertex dots per fund
+    const n = THEME_ORDER.length;
+    compareSet.forEach((id, i) => {
+      const iv = invStats[id];
+      if (!iv) return;
+      const color = COMPARE_PAL[i];
+      THEME_ORDER.forEach((t, ti) => {
+        const v = Math.min(1.0, (iv.themes[t] || 0) / RADAR_MAX_DEALS);
+        if (v < 0.03) return;
+        const a  = -Math.PI/2 + (ti / n) * Math.PI * 2;
+        const px = cx + Math.cos(a) * v * R;
+        const py = cy + Math.sin(a) * v * R;
+        const dot = document.createElementNS(NS, 'circle');
+        dot.setAttribute('cx', px); dot.setAttribute('cy', py);
+        dot.setAttribute('r', '3'); dot.setAttribute('fill', color);
+        dot.setAttribute('opacity', '0.85');
+        g.appendChild(dot);
+      });
+    });
+
+    // Legend centered below radar
+    const lY = cy + R + 36;
+    const itemW = 170;
+    const totalW = compareSet.length * itemW;
+    const lX0 = W/2 - totalW/2 + itemW/2;
+
+    compareSet.forEach((id, i) => {
+      const iv = invStats[id];
+      if (!iv) return;
+      const color = COMPARE_PAL[i];
+      const lx = lX0 + i * itemW;
+
+      const dot = document.createElementNS(NS, 'circle');
+      dot.setAttribute('cx', lx - itemW/2 + 8); dot.setAttribute('cy', lY);
+      dot.setAttribute('r', '5'); dot.setAttribute('fill', color);
+      g.appendChild(dot);
+
+      const lt = document.createElementNS(NS, 'text');
+      lt.setAttribute('x', lx - itemW/2 + 18); lt.setAttribute('y', lY);
+      lt.setAttribute('dominant-baseline', 'middle');
+      lt.setAttribute('font-size', '10'); lt.setAttribute('font-weight', '700');
+      lt.setAttribute('font-family', 'inherit'); lt.setAttribute('fill', color);
+      const lbl = iv.label.length > 20 ? iv.label.slice(0,18)+'…' : iv.label;
+      lt.textContent = lbl + ' · ' + iv.count;
+      g.appendChild(lt);
+    });
+
+    svg.appendChild(g);
+  }
+
+  // ── (old renderRadialOverview / renderRadialFocus removed) ───────────────
+  function renderRadialOverview(svg, W, H) { /* replaced by renderRadarGrid */ }
+  function renderRadialFocus(svg, W, H, iv) { /* replaced by renderRadarFocus */ }
 
   // ── Matrix view ──────────────────────────────────────────────────────────
   let matrixHighlighted = null;
@@ -3362,49 +3527,81 @@ document.addEventListener('DOMContentLoaded', function(){
   // ── Co-investment network (force-directed) ────────────────────────
   // Visualización mejorada con PageRank, comunidades, betweenness
   function renderSyndication() {
-    var svg  = document.getElementById('syndication-svg');
-    var ttEl = document.getElementById('synd-tooltip');
-    var wrap = document.getElementById('syndication-wrap');
+    var svg    = document.getElementById('syndication-svg');
+    var ttEl   = document.getElementById('synd-tooltip');
+    var wrap   = document.getElementById('syndication-wrap');
+    var detail = document.getElementById('synd-detail-body');
     if (!svg || !wrap) return;
-    var stage = document.querySelector('.ca-stage');
-    var W = stage ? stage.clientWidth  : 800;
-    var H = stage ? stage.clientHeight : 600;
+
+    if (typeof INVESTOR_COINVEST_DATA === 'undefined' || !INVESTOR_COINVEST_DATA || !INVESTOR_COINVEST_DATA.nodes) {
+      svg.innerHTML = '<text x="50%" y="50%" text-anchor="middle" fill="#c0392b" font-size="14" font-family="inherit">Datos de co-inversión no disponibles</text>';
+      return;
+    }
+
+    var data = INVESTOR_COINVEST_DATA;
+    // Coordenadas lógicas fijas — el SVG escala via viewBox/preserveAspectRatio
+    var W = 1100, H = 700;
+
     svg.innerHTML = '';
     svg.setAttribute('viewBox', '0 0 ' + W + ' ' + H);
     svg.setAttribute('preserveAspectRatio', 'xMidYMid meet');
 
-    // Load coinvestment network data
-    if (typeof COINVESTMENT_DATA !== 'undefined' && COINVESTMENT_DATA && COINVESTMENT_DATA.nodes) {
-      console.log('Usando COINVESTMENT_DATA:', COINVESTMENT_DATA.nodes.length, 'nodos');
-      renderCoInvestmentNetwork(svg, ttEl, wrap, W, H, COINVESTMENT_DATA);
-    } else {
-      svg.innerHTML = '<text x="50%" y="50%" text-anchor="middle" fill="#c0392b" font-size="14" font-family="inherit">Datos de co-inversión no disponibles</text>';
-    }
-  }
-
-  function renderCoInvestmentNetwork(svg, ttEl, wrap, W, H, data) {
-    // Community colors
-    var communityColors = [
-      '#e74c3c', '#3498db', '#2ecc71', '#f39c12', '#9b59b6', '#1abc9c', '#e67e22', '#34495e',
-      '#1e8449', '#16a085', '#c0392b', '#8e44ad', '#27ae60', '#d35400', '#2c3e50', '#7f8c8d'
+    // Community color palette:
+    // community '0' = giant mixed component → neutral
+    // communities 1-N = distinct meaningful clusters
+    var commPalette = [
+      '#aab4c4',  // 0: neutral gray-blue for giant cluster
+      '#e74c3c',  // 1: red
+      '#2980b9',  // 2: blue
+      '#27ae60',  // 3: green
+      '#e67e22',  // 4: orange
+      '#8e44ad',  // 5: purple
+      '#16a085',  // 6: teal
+      '#c0392b',  // 7: crimson
+      '#f39c12',  // 8: amber
+      '#1e8449',  // 9: dark green
     ];
 
-    var nodes = data.nodes.map(function(n, i) {
-      var angle = (i / data.nodes.length) * Math.PI * 2;
-      var cx = W / 2, cy = H / 2;
-      var circR = Math.min(W, H) * 0.32;
+    function commColor(commId) {
+      var idx = parseInt(commId, 10);
+      if (isNaN(idx)) idx = 0;
+      return commPalette[Math.min(idx, commPalette.length - 1)];
+    }
+
+    // ForceAtlas2-style layout — todos los nodos, clustering emerge de la física
+    var cx = W / 2, cy = H / 2;
+
+    // Color por investor_type (más informativo que comunidad label-propagation)
+    var typeColorMap = {
+      'investor':    '#2980b9',  // azul
+      'fund':        '#27ae60',  // verde
+      'eso':         '#e74c3c',  // rojo (alocadores estatales / ESO)
+      'accelerator': '#f39c12',  // naranja
+      'corporate':   '#8e44ad',  // púrpura
+    };
+    function typeColor(t) {
+      return typeColorMap[t] || '#6c757d';
+    }
+
+    // Inicializar nodos en círculo con jitter
+    var nodes = data.nodes.map(function(n, i, arr) {
+      var angle = (i / arr.length) * Math.PI * 2;
+      var r0 = Math.min(W, H) * 0.3;
       return {
         id: n.id,
         name: n.name,
-        theme: n.theme,
+        investor_type: n.investor_type || 'investor',
+        country: n.country || '?',
         community: n.community,
-        pagerank: n.pagerank,
-        betweenness: n.betweenness,
-        clustering: n.clustering,
-        degree: n.degree,
-        r: 12 + n.pagerank * 18,  // Tamaño basado en PageRank
-        x: cx + Math.cos(angle) * circR,
-        y: cy + Math.sin(angle) * circR,
+        pagerank: n.pagerank || 0,
+        betweenness: n.betweenness || 0,
+        degree: n.degree || 0,
+        portfolio_size: n.portfolio_size || 0,
+        top_portfolio: n.top_portfolio || [],
+        r: Math.max(4, Math.min(26, 5 + n.pagerank * 28)),
+        x: cx + Math.cos(angle) * (r0 + (Math.random()-0.5)*60),
+        y: cy + Math.sin(angle) * (r0 + (Math.random()-0.5)*60),
+        fx: 0, fy: 0,   // acumuladores de fuerza
         vx: 0, vy: 0
       };
     });
@@ -3412,156 +3609,274 @@ document.addEventListener('DOMContentLoaded', function(){
     var nodeMap = {};
     nodes.forEach(function(n) { nodeMap[n.id] = n; });
 
-    var edges = data.edges.map(function(e) {
-      return {
-        source: nodeMap[e.source],
-        target: nodeMap[e.target],
-        weight: e.weight,
-        thickness: e.thickness
-      };
-    }).filter(function(e) { return e.source && e.target; });
+    var edges = data.edges
+      .map(function(e) {
+        return {
+          source: nodeMap[e.source],
+          target: nodeMap[e.target],
+          weight: e.weight,
+          thickness: e.thickness
+        };
+      })
+      .filter(function(e) { return e.source && e.target; });
 
-    var cx = W / 2, cy = H / 2;
+    // ── ForceAtlas2 con radio de repulsión acotado ──────────────────────────
+    // Repulsión:  Kr × √(deg+1) × √(deg+1) / dist  sólo si dist < MAX_REP
+    //             → hubs repelen más dentro de su vecindad; nodos lejanos no se empujan
+    // Atracción:  Ka × peso × log(1+dist)           lin-log, pesos clave
+    // Gravedad:   Kg × (deg+1) × dist_centro        retiene todo en canvas
+    var Kr = 35, Ka = 0.6, Kg = 0.022, MAX_REP = 220;
+    var MAX_VEL = 12, DAMPING = 0.80, ITERS = 800;
 
-    // Force simulation
-    var ITERS = 500;
     for (var iter = 0; iter < ITERS; iter++) {
-      var alpha = Math.pow(1 - iter / ITERS, 1.2);
-      // Repulsion
+      var alpha = Math.pow(1 - iter / ITERS, 1.5);
+
+      // Resetear acumuladores de fuerza
+      for (var i = 0; i < nodes.length; i++) { nodes[i].fx = 0; nodes[i].fy = 0; }
+
+      // 1. Gravedad — proporcional a grado, retiene nodos cerca del centro
       for (var i = 0; i < nodes.length; i++) {
+        nodes[i].fx += (cx - nodes[i].x) * Kg * (nodes[i].degree + 1) * alpha;
+        nodes[i].fy += (cy - nodes[i].y) * Kg * (nodes[i].degree + 1) * alpha;
+      }
+
+      // 2. Repulsión pares — √grado, 1/dist, sólo dentro de MAX_REP
+      for (var i = 0; i < nodes.length; i++) {
+        var sqdi = Math.sqrt(nodes[i].degree + 1);
         for (var j = i + 1; j < nodes.length; j++) {
-          var dx = (nodes[j].x - nodes[i].x) || 0.01;
-          var dy = (nodes[j].y - nodes[i].y) || 0.01;
-          var dist = Math.sqrt(dx*dx + dy*dy) || 0.01;
-          var minD = nodes[i].r + nodes[j].r + 20;
+          var dx = nodes[i].x - nodes[j].x || 0.01;
+          var dy = nodes[i].y - nodes[j].y || 0.01;
+          var dist = Math.sqrt(dx * dx + dy * dy) || 0.01;
+          var minD = nodes[i].r + nodes[j].r + 5;
           if (dist < minD) {
-            var f = (minD - dist) / dist * 0.55 * alpha;
-            nodes[i].vx -= dx*f; nodes[i].vy -= dy*f;
-            nodes[j].vx += dx*f; nodes[j].vy += dy*f;
+            // Anti-overlap
+            var push = (minD / dist - 1) * 1.5;
+            nodes[i].fx += dx * push; nodes[i].fy += dy * push;
+            nodes[j].fx -= dx * push; nodes[j].fy -= dy * push;
+          } else if (dist < MAX_REP) {
+            var fr = Kr * sqdi * Math.sqrt(nodes[j].degree + 1) / dist * alpha;
+            nodes[i].fx += dx / dist * fr; nodes[i].fy += dy / dist * fr;
+            nodes[j].fx -= dx / dist * fr; nodes[j].fy -= dy / dist * fr;
           }
         }
-        // Centering
-        nodes[i].vx += (cx - nodes[i].x) * 0.008 * alpha;
-        nodes[i].vy += (cy - nodes[i].y) * 0.008 * alpha;
       }
-      // Link attraction
-      edges.forEach(function(e) {
+
+      // 3. Atracción aristas — lin-log × peso
+      for (var k = 0; k < edges.length; k++) {
+        var e = edges[k];
         var dx = e.target.x - e.source.x;
         var dy = e.target.y - e.source.y;
-        var dist = Math.sqrt(dx*dx + dy*dy) || 1;
-        var idealDist = 80 + (6 - Math.min(e.weight, 6)) * 15;
-        var f = (dist - idealDist) / dist * 0.08 * alpha;
-        e.source.vx += dx*f; e.source.vy += dy*f;
-        e.target.vx -= dx*f; e.target.vy -= dy*f;
-      });
-      nodes.forEach(function(n) {
-        n.x += n.vx; n.y += n.vy;
-        n.vx *= 0.65; n.vy *= 0.65;
-        n.x = Math.max(n.r + 10, Math.min(W - n.r - 10, n.x));
-        n.y = Math.max(n.r + 10, Math.min(H - n.r - 10, n.y));
-      });
+        var dist = Math.sqrt(dx * dx + dy * dy) || 1;
+        var fa = Ka * e.weight * Math.log(1 + dist) / dist * alpha;
+        e.source.fx += dx * fa; e.source.fy += dy * fa;
+        e.target.fx -= dx * fa; e.target.fy -= dy * fa;
+      }
+
+      // 4. Integrar: fx/fy → velocidad → posición
+      for (var i = 0; i < nodes.length; i++) {
+        nodes[i].vx = (nodes[i].vx + nodes[i].fx) * DAMPING;
+        nodes[i].vy = (nodes[i].vy + nodes[i].fy) * DAMPING;
+        var speed = Math.sqrt(nodes[i].vx * nodes[i].vx + nodes[i].vy * nodes[i].vy);
+        if (speed > MAX_VEL) {
+          nodes[i].vx = nodes[i].vx / speed * MAX_VEL;
+          nodes[i].vy = nodes[i].vy / speed * MAX_VEL;
+        }
+        nodes[i].x = Math.max(nodes[i].r + 12, Math.min(W - nodes[i].r - 12, nodes[i].x + nodes[i].vx));
+        nodes[i].y = Math.max(nodes[i].r + 12, Math.min(H - nodes[i].r - 12, nodes[i].y + nodes[i].vy));
+      }
     }
 
-    // Draw edges
+    // Draw edges — guardar refs para highlight interactivo
+    var lineEls = []; // {el, srcId, tgtId, defStroke, defW}
     edges.forEach(function(e) {
+      var opacity = e.weight === 1 ? 0.08 : Math.min(0.35, 0.1 + e.weight * 0.025);
       var line = document.createElementNS(NS, 'line');
-      line.setAttribute('x1', e.source.x);
-      line.setAttribute('y1', e.source.y);
-      line.setAttribute('x2', e.target.x);
-      line.setAttribute('y2', e.target.y);
-      line.setAttribute('stroke', 'rgba(100,90,80,.12)');
-      line.setAttribute('stroke-width', Math.max(0.8, e.thickness * 1.2));
+      line.setAttribute('x1', e.source.x); line.setAttribute('y1', e.source.y);
+      line.setAttribute('x2', e.target.x); line.setAttribute('y2', e.target.y);
+      var defStroke = 'rgba(80,70,60,' + opacity + ')';
+      var defW = String(Math.max(0.6, e.thickness));
+      line.setAttribute('stroke', defStroke);
+      line.setAttribute('stroke-width', defW);
       line.setAttribute('stroke-linecap', 'round');
-      line.dataset.tip = e.source.name + ' <> ' + e.target.name + ': ' + e.weight + ' inv. en común';
+      line.setAttribute('pointer-events', 'none');
       svg.appendChild(line);
+      lineEls.push({ el: line, srcId: e.source.id, tgtId: e.target.id, defStroke: defStroke, defW: defW });
     });
 
-    // Draw nodes
+    // Draw nodes + labels
+    var circleMap    = {};  // nodeId → {el, col, n}
+    var highlightEls = [];  // anillos transitorios de vecinos
+    var selectedNodeId = null;
+
+    function clearHighlight() {
+      highlightEls.forEach(function(el) { if (el.parentNode) el.parentNode.removeChild(el); });
+      highlightEls = [];
+      lineEls.forEach(function(le) {
+        le.el.setAttribute('stroke', le.defStroke);
+        le.el.setAttribute('stroke-width', le.defW);
+        le.el.removeAttribute('opacity');
+      });
+      Object.keys(circleMap).forEach(function(id) {
+        var cm = circleMap[id];
+        cm.el.setAttribute('fill', cm.col + '30');
+        cm.el.setAttribute('stroke-width', cm.n.r >= 14 ? '2' : '1.5');
+      });
+      selectedNodeId = null;
+    }
+
     nodes.forEach(function(n) {
-      var commColor = communityColors[n.community.charCodeAt(0) % communityColors.length];
-      var isBridge = n.betweenness > 500;
-      var strokeW = isBridge ? 2.5 : 1.8;
+      var col = typeColor(n.investor_type);
+      var isHub = n.betweenness > 100;
+      var showLabel = n.r >= 12;
 
-      var circle = document.createElementNS(NS, 'circle');
-      circle.setAttribute('cx', n.x);
-      circle.setAttribute('cy', n.y);
-      circle.setAttribute('r', n.r);
-      circle.setAttribute('fill', commColor + '28');
-      circle.setAttribute('stroke', commColor);
-      circle.setAttribute('stroke-width', strokeW);
-      circle.style.cursor = 'pointer';
-
-      if (isBridge) {
+      // Hub ring (bridge investor)
+      if (isHub) {
         var ring = document.createElementNS(NS, 'circle');
-        ring.setAttribute('cx', n.x);
-        ring.setAttribute('cy', n.y);
-        ring.setAttribute('r', n.r + 3);
+        ring.setAttribute('cx', n.x); ring.setAttribute('cy', n.y);
+        ring.setAttribute('r', n.r + 4);
         ring.setAttribute('fill', 'none');
-        ring.setAttribute('stroke', commColor);
-        ring.setAttribute('stroke-width', '1.2');
-        ring.setAttribute('opacity', '0.4');
+        ring.setAttribute('stroke', col);
+        ring.setAttribute('stroke-width', '1');
+        ring.setAttribute('opacity', '0.3');
+        ring.setAttribute('pointer-events', 'none');
         svg.appendChild(ring);
       }
 
-      circle.addEventListener('click', function() {
-        window.alert(n.name + '\nPageRank: ' + n.pagerank.toFixed(4) + '\nBetweenness: ' + n.betweenness.toFixed(2) + '\nClustering: ' + n.clustering.toFixed(3) + '\nCo-inversores: ' + n.degree);
-      });
+      var circle = document.createElementNS(NS, 'circle');
+      circle.setAttribute('cx', n.x); circle.setAttribute('cy', n.y);
+      circle.setAttribute('r', n.r);
+      circle.setAttribute('fill', col + '30');
+      circle.setAttribute('stroke', col);
+      circle.setAttribute('stroke-width', n.r >= 14 ? '2' : '1.5');
+      circle.style.cursor = 'pointer';
+      circle.style.transition = 'fill 0.15s';
+      circleMap[n.id] = { el: circle, col: col, n: n };
+
       circle.addEventListener('mouseenter', function() {
-        circle.setAttribute('fill', commColor + '48');
+        circle.setAttribute('fill', col + '60');
+        var typeLabel = n.investor_type === 'eso' ? 'Alocador/ESO' : n.investor_type === 'fund' ? 'Fondo' : 'Inversor VC';
+        ttEl.innerHTML = '<strong>' + n.name + '</strong><br>' +
+          typeLabel + ' · ' + n.country + '<br>' +
+          'Portfolio BIO: ' + n.portfolio_size + ' startups<br>' +
+          'Co-invierte con: ' + n.degree + ' fondos';
+        ttEl.style.display = 'block';
       });
       circle.addEventListener('mouseleave', function() {
-        circle.setAttribute('fill', commColor + '28');
+        circle.setAttribute('fill', selectedNodeId === n.id ? col + '80' : col + '30');
+        ttEl.style.display = 'none';
+      });
+
+      circle.addEventListener('click', function() {
+        clearHighlight();
+        selectedNodeId = n.id;
+        circle.setAttribute('fill', col + '80');
+        circle.setAttribute('stroke-width', '3');
+
+        // Vecinos del nodo seleccionado
+        var neighborIds = new Set();
+        lineEls.forEach(function(le) {
+          if (le.srcId === n.id) neighborIds.add(le.tgtId);
+          else if (le.tgtId === n.id) neighborIds.add(le.srcId);
+        });
+
+        // Aristas conectadas: color del nodo, más gruesas, opacas
+        lineEls.forEach(function(le) {
+          if (le.srcId === n.id || le.tgtId === n.id) {
+            le.el.setAttribute('stroke', col);
+            le.el.setAttribute('stroke-width', String(Math.max(1.5, parseFloat(le.defW) + 1.5)));
+            le.el.setAttribute('opacity', '0.7');
+          }
+        });
+
+        // Anillo punteado en cada vecino (insertado detrás del círculo)
+        neighborIds.forEach(function(nbrId) {
+          var cm = circleMap[nbrId];
+          if (!cm) return;
+          var nbrRing = document.createElementNS(NS, 'circle');
+          nbrRing.setAttribute('cx', cm.el.getAttribute('cx'));
+          nbrRing.setAttribute('cy', cm.el.getAttribute('cy'));
+          nbrRing.setAttribute('r', String(parseFloat(cm.el.getAttribute('r')) + 5));
+          nbrRing.setAttribute('fill', 'none');
+          nbrRing.setAttribute('stroke', col);
+          nbrRing.setAttribute('stroke-width', '2');
+          nbrRing.setAttribute('stroke-dasharray', '4 3');
+          nbrRing.setAttribute('opacity', '0.6');
+          nbrRing.setAttribute('pointer-events', 'none');
+          svg.insertBefore(nbrRing, cm.el);
+          highlightEls.push(nbrRing);
+        });
+
+        // Panel de detalle
+        var typeLabel = n.investor_type === 'eso' ? 'Alocador / ESO' : n.investor_type === 'fund' ? 'Fondo de inversión' : 'VC / Inversor';
+        var portHtml = n.top_portfolio.length
+          ? n.top_portfolio.map(function(p) { return '<span style="display:inline-block;background:' + col + '20;border:1px solid ' + col + '40;border-radius:4px;padding:1px 6px;margin:2px 2px 0 0;font-size:.72rem">' + p + '</span>'; }).join('')
+          : '<span style="color:var(--muted)">—</span>';
+
+        var coInvEdges = data.edges
+          .filter(function(e) { return e.source === n.id || e.target === n.id; })
+          .map(function(e) {
+            var otherId = e.source === n.id ? e.target : e.source;
+            var other = nodeMap[otherId];
+            return { name: other ? other.name : otherId, weight: e.weight };
+          })
+          .sort(function(a, b) { return b.weight - a.weight; })
+          .slice(0, 6);
+
+        var coHtml = coInvEdges.length
+          ? coInvEdges.map(function(ci) {
+              return '<div style="display:flex;justify-content:space-between;padding:3px 0;border-bottom:1px solid var(--line)">' +
+                '<span>' + ci.name + '</span><span style="color:var(--accent);font-weight:700">' + ci.weight + '</span></div>';
+            }).join('')
+          : '<span style="color:var(--muted)">Sin co-inversiones registradas</span>';
+
+        var prPct = Math.round(n.pagerank * 100);
+        detail.innerHTML =
+          '<div style="font-weight:800;font-size:1rem;color:var(--ink);margin-bottom:2px">' + n.name + '</div>' +
+          '<div style="font-size:.72rem;color:var(--muted);margin-bottom:10px">' + typeLabel + ' · ' + n.country + '</div>' +
+          '<div style="font-size:.7rem;font-weight:700;text-transform:uppercase;color:var(--accent);margin-bottom:4px">Importancia en red</div>' +
+          '<div style="background:var(--surface);border-radius:4px;height:6px;margin-bottom:6px">' +
+            '<div style="background:' + col + ';height:100%;border-radius:4px;width:' + prPct + '%"></div>' +
+          '</div>' +
+          '<div style="display:flex;gap:12px;font-size:.75rem;margin-bottom:12px">' +
+            '<span><strong>' + prPct + '%</strong> PageRank</span>' +
+            '<span><strong>' + n.degree + '</strong> co-inv.</span>' +
+            '<span><strong>' + n.portfolio_size + '</strong> startups</span>' +
+          '</div>' +
+          '<div style="font-size:.7rem;font-weight:700;text-transform:uppercase;color:var(--accent);margin-bottom:4px">Portfolio BIO (top)</div>' +
+          '<div style="margin-bottom:12px">' + portHtml + '</div>' +
+          '<div style="font-size:.7rem;font-weight:700;text-transform:uppercase;color:var(--accent);margin-bottom:4px">Co-invierte con · startups</div>' +
+          '<div style="font-size:.78rem">' + coHtml + '</div>';
       });
 
       svg.appendChild(circle);
 
-      // Label
-      var maxCh = Math.max(3, Math.floor(n.r * 0.2));
-      var shortLbl = n.name.length > maxCh ? n.name.slice(0, maxCh) + '…' : n.name;
-      var fsize = Math.max(7, Math.min(11, n.r * 0.35));
-
-      var t1 = document.createElementNS(NS, 'text');
-      t1.setAttribute('x', n.x);
-      t1.setAttribute('y', n.r >= 20 ? n.y - 3 : n.y);
-      t1.setAttribute('text-anchor', 'middle');
-      t1.setAttribute('dominant-baseline', 'middle');
-      t1.setAttribute('font-size', fsize);
-      t1.setAttribute('font-weight', '700');
-      t1.setAttribute('font-family', 'inherit');
-      t1.setAttribute('fill', commColor);
-      t1.setAttribute('pointer-events', 'none');
-      t1.textContent = shortLbl;
-      svg.appendChild(t1);
-
-      if (n.r >= 20) {
-        var t2 = document.createElementNS(NS, 'text');
-        t2.setAttribute('x', n.x);
-        t2.setAttribute('y', n.y + fsize + 1);
-        t2.setAttribute('text-anchor', 'middle');
-        t2.setAttribute('dominant-baseline', 'middle');
-        t2.setAttribute('font-size', fsize - 2);
-        t2.setAttribute('font-family', 'inherit');
-        t2.setAttribute('fill', commColor);
-        t2.setAttribute('opacity', '0.6');
-        t2.setAttribute('pointer-events', 'none');
-        t2.textContent = 'PR:' + n.pagerank.toFixed(2);
-        svg.appendChild(t2);
+      if (showLabel) {
+        var lbl = n.name.length > 14 ? n.name.slice(0, 13) + '…' : n.name;
+        var fsize = Math.max(8, Math.min(11, n.r * 0.55));
+        var ltext = document.createElementNS(NS, 'text');
+        ltext.setAttribute('x', n.x); ltext.setAttribute('y', n.y);
+        ltext.setAttribute('text-anchor', 'middle');
+        ltext.setAttribute('dominant-baseline', 'middle');
+        ltext.setAttribute('font-size', fsize);
+        ltext.setAttribute('font-weight', n.r >= 18 ? '700' : '600');
+        ltext.setAttribute('font-family', 'inherit');
+        ltext.setAttribute('fill', col);
+        ltext.setAttribute('pointer-events', 'none');
+        ltext.textContent = lbl;
+        svg.appendChild(ltext);
       }
     });
 
-    // Tooltip
-    svg.addEventListener('mouseover', function(e) {
-      var tip = e.target.dataset.tip;
-      if (!tip) { ttEl.style.display = 'none'; return; }
-      ttEl.textContent = tip;
-      ttEl.style.display = 'block';
-    });
+    // Tooltip position tracking
     svg.addEventListener('mousemove', function(e) {
       var rect = wrap.getBoundingClientRect();
-      ttEl.style.left = (e.clientX - rect.left + 14) + 'px';
-      ttEl.style.top  = (e.clientY - rect.top  - 10) + 'px';
+      var tx = e.clientX - rect.left + 14;
+      var ty = e.clientY - rect.top  - 10;
+      if (tx + 240 > W) tx = e.clientX - rect.left - 254;
+      ttEl.style.left = tx + 'px';
+      ttEl.style.top  = ty + 'px';
     });
-    svg.addEventListener('mouseout', function() { ttEl.style.display = 'none'; });
+    svg.addEventListener('mouseleave', function() { ttEl.style.display = 'none'; });
   }
 
 }); // DOMContentLoaded

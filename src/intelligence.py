@@ -30,6 +30,7 @@ from __future__ import annotations
 
 import base64
 import json
+import re
 import sqlite3
 import sys
 import time
@@ -114,6 +115,75 @@ def _theme_overlap(t1: str, t2: str) -> float:
     if t1 == t2:
         return 1.0
     return BIO_THEME_ADJACENCY.get((t1, t2), 0.0)
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+#  Structural eligibility — can this fund actually write this cheque?
+#  Theme/semantics answer "would they like it"; stage + ticket answer "could
+#  it even happen". Applied as a multiplier so a perfect thematic match at an
+#  impossible stage is demoted, not surfaced as "Encaje fuerte".
+#  Neutral (factor 1.0) whenever either side's data is missing — we never
+#  penalize a fund for an unknown.
+# ─────────────────────────────────────────────────────────────────────────────
+_STAGE_ORD = {
+    "pre-seed": 0, "accelerator": 0,
+    "seed": 1,
+    "series-a": 2,
+    "series-b": 3,
+    "series-c": 4, "series-c+": 4,
+    "growth": 5, "corporate": 5,
+    "pe": 6,
+}
+# Implied round-size band per stage (USD) — rough LATAM bio reference, used only
+# to detect a hard ticket mismatch (fund writes far bigger/smaller than the round).
+_STAGE_TICKET = {
+    "pre-seed":   (50_000, 600_000),
+    "accelerator":(20_000, 200_000),
+    "seed":       (300_000, 2_500_000),
+    "series-a":   (1_500_000, 9_000_000),
+    "series-b":   (6_000_000, 25_000_000),
+    "series-c":   (15_000_000, 60_000_000),
+    "series-c+":  (15_000_000, 60_000_000),
+    "growth":     (20_000_000, 120_000_000),
+}
+
+
+def _parse_pref_stages(s: str) -> set[int]:
+    """Parse an investor's preferred_stages string (delimiter is ';' OR ',')
+    into a set of stage ordinals."""
+    out: set[int] = set()
+    for tok in re.split(r"[;,]", (s or "").lower()):
+        tok = tok.strip()
+        if tok in _STAGE_ORD:
+            out.add(_STAGE_ORD[tok])
+    return out
+
+
+def _stage_factor(stage: str, pref_ords: set[int]) -> tuple[float, str]:
+    """Eligibility multiplier by funding-stage distance (graduated, never zero)."""
+    stage = (stage or "").lower()
+    if stage not in _STAGE_ORD or not pref_ords:
+        return 1.0, ""  # unknown on either side → neutral, no penalty
+    d = min(abs(_STAGE_ORD[stage] - p) for p in pref_ords)
+    if d == 0: return 1.0,  f"stage_fit:{stage}"
+    if d == 1: return 0.72, f"stage_near:{stage}"
+    if d == 2: return 0.48, f"stage_off:{stage}"
+    return 0.32, f"stage_mismatch:{stage}"
+
+
+def _ticket_factor(stage: str, tmin, tmax) -> tuple[float, str]:
+    """Soft penalty when the fund's ticket range is disjoint from the round size
+    implied by the startup's stage. Mild on purpose — stage already carries most
+    of the signal and ticket is only ~55% covered."""
+    rng = _STAGE_TICKET.get((stage or "").lower())
+    if not rng or not tmin or not tmax:
+        return 1.0, ""
+    lo, hi = rng
+    if tmax >= lo and tmin <= hi:
+        return 1.0, ""                       # ranges overlap → fine
+    if tmin > hi:
+        return 0.55, "ticket_too_large"      # fund writes bigger than this round
+    return 0.70, "ticket_too_small"          # fund too small to lead (can co-invest)
 
 
 def _rescale_scores(candidates: list[dict]) -> list[dict]:
@@ -409,7 +479,16 @@ def _score_pair(
         co_score = 0.5
         co_reason = f"investor_country:{startup['country']}"
 
-    raw = w_sem * sim + w_th * th_score + w_co * co_score
+    affinity = w_sem * sim + w_th * th_score + w_co * co_score
+
+    # Structural eligibility gate (can this cheque happen at all?)
+    pref_ords = _parse_pref_stages(inv.get("preferred_stages", ""))
+    stage_f, stage_reason = _stage_factor(startup.get("stage", ""), pref_ords)
+    ticket_f, ticket_reason = _ticket_factor(
+        startup.get("stage", ""), inv.get("ticket_min"), inv.get("ticket_max")
+    )
+    eligibility = max(0.30, stage_f * ticket_f)  # floor so a gem isn't fully buried
+    raw = affinity * eligibility
 
     if not return_details:
         return raw
@@ -421,8 +500,10 @@ def _score_pair(
         reasons.append(best_th_reason)
     if sim > 0.50:
         reasons.append(f"semantic:{sim:.2f}")
-    if startup.get("stage") and startup["stage"] in inv.get("preferred_stages", []):
-        reasons.append(f"stage_fit:{startup['stage']}")
+    if stage_reason:
+        reasons.append(stage_reason)
+    if ticket_reason:
+        reasons.append(ticket_reason)
 
     return {"score": raw, "reasons": reasons, "sim": sim}
 

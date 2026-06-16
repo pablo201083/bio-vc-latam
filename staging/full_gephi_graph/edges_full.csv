@@ -62,7 +62,6 @@ id,source,source_label,target,target_label,weight,directed,d12
 60,apexzymes,APEXzymes,f_lucas_parreiras,Lucas Salera Parreiras,1,true,has_founder
 61,apexzymes,APEXzymes,f_lucas_fonseca,Lucas Fonseca,1,true,has_founder
 62,apexzymes,APEXzymes,f_larissa_viana,Larissa Viana,1,true,has_founder
-63,aplife,Aplife,duhau,Duhau,1,true,funded_by
 64,aplife,Aplife,sillicon_catalyst,Sillicon Catalyst,1,true,funded_by
 65,aplife,Aplife,gridx,Gridx,1,true,funded_by
 66,aplife,Aplife,f_alan_gontmaher,Alan Gontmaher,1,true,has_founder
@@ -149,7 +148,6 @@ id,source,source_label,target,target_label,weight,directed,d12
 147,beeflow,Beeflow,vectr,Vectr,1,true,funded_by
 148,beeflow,Beeflow,future_ventures,Future Ventures,1,true,funded_by
 149,beeflow,Beeflow,sosv,Sosv,1,true,funded_by
-150,beeflow,Beeflow,jeff_wilke,Jeff Wilke,1,true,funded_by
 151,beeflow,Beeflow,gridx,Gridx,1,true,built_by
 152,beeflow,Beeflow,air_capital,Air Capital,1,true,funded_by
 153,beeflow,Beeflow,f_matias_viel,Matias Viel,1,true,has_founder
@@ -244,7 +242,6 @@ id,source,source_label,target,target_label,weight,directed,d12
 242,cargo_sapiens,Cargo Sapiens,nxtp_labs,Nxtp Labs,1,true,funded_by
 243,cargo_sapiens,Cargo Sapiens,f_david_pinheiro,David Pinheiro,1,true,has_founder
 244,caspr,CASPR,indiebio,Indiebio,1,true,funded_by
-245,caspr,CASPR,paul_mcewan,Paul Mcewan,1,true,funded_by
 246,caspr,CASPR,photon_fund,Photon Fund,1,true,funded_by
 247,caspr,CASPR,sosv,Sosv,1,true,funded_by
 248,caspr,CASPR,dragones,Dragones,1,true,funded_by
@@ -344,7 +341,6 @@ id,source,source_label,target,target_label,weight,directed,d12
 342,eiwa,Eiwa,f_luis_gerundo,Luis E. Gerundo,1,true,has_founder
 343,eiwa,Eiwa,f_nicolas_otamendi,Nicolas Otamendi,1,true,has_founder
 344,elytron,Elytron,f_juan_agustin_gomez,Juan Agustín Gómez,1,true,has_founder
-345,elytron_biotech,Elytron Biotech,lartirigoyen,Lartirigoyen,1,true,funded_by
 346,elytron_biotech,Elytron Biotech,gridx,Gridx,1,true,funded_by
 347,elytron_biotech,Elytron Biotech,inventure,Inventure,1,true,funded_by
 348,elytron_biotech,Elytron Biotech,f_tomas_strappini,Tomas Strappini,1,true,has_founder
@@ -388,7 +384,6 @@ id,source,source_label,target,target_label,weight,directed,d12
 386,fecundis,Fecundis,f_mariano_buffone,Mariano Gabriel BUFFONE,1,true,has_founder
 387,fecundis,Fecundis,asoc_cab,Cámara Argentina de Biotecnología (CAB),1,true,member_of
 388,feedvax,Feedvax,hatch,Hatch,1,true,funded_by
-389,feedvax,Feedvax,duhau,Duhau,1,true,funded_by
 390,feedvax,Feedvax,conservation_international,Conservation International,1,true,funded_by
 391,feedvax,Feedvax,gridx,Gridx,1,true,funded_by
 392,feedvax,Feedvax,air_capital,Air Capital,1,true,funded_by
@@ -526,7 +521,6 @@ id,source,source_label,target,target_label,weight,directed,d12
 524,mesenchyal_t,Mesenchyal-T,f_laura_alaniz,Laura Alaniz,1,true,has_founder
 525,michroma,Michroma,indiebio,Indiebio,1,true,funded_by
 526,michroma,Michroma,kairetsu_angels,Kairetsu Angels,1,true,funded_by
-527,michroma,Michroma,other_angels,Other Angels,1,true,funded_by
 528,michroma,Michroma,gridx,Gridx,1,true,built_by
 529,michroma,Michroma,f_ricky_cassini,Ricky Cassini,1,true,has_founder
 530,michroma,Michroma,f_mauricio_braia,Mauricio Braia,1,true,has_founder
@@ -535,9 +529,7 @@ id,source,source_label,target,target_label,weight,directed,d12
 533,michroma,Michroma,sosv,Sosv,1,true,funded_by
 534,michroma,Michroma,asoc_cab,Cámara Argentina de Biotecnología (CAB),1,true,member_of
 535,microgenesis,Microgenesis,indiebio,Indiebio,1,true,funded_by
-536,microgenesis,Microgenesis,happiness,Happiness,1,true,funded_by
 537,microgenesis,Microgenesis,sosv,Sosv,1,true,funded_by
-538,microgenesis,Microgenesis,kwb,Kwb,1,true,funded_by
 539,microgenesis,Microgenesis,gridx,Gridx,1,true,built_by
 540,microgenesis,Microgenesis,f_gabriela_gutierrez,Gabriela Gutiérrez,1,true,has_founder
 541,microgenesis,Microgenesis,asoc_cab,Cámara Argentina de Biotecnología (CAB),1,true,member_of
@@ -840,10 +832,7 @@ id,source,source_label,target,target_label,weight,directed,d12
 838,stamm,Stämm,sosv,Sosv,1,true,funded_by
 839,stamm,Stämm,draper_cygnus,Draper Cygnus,1,true,funded_by
 840,stamm,Stämm,gridx,Gridx,1,true,built_by
-841,stamm,Stämm,other_small_investors,Other Small Investors,1,true,funded_by
-842,stamm,Stämm,flia_duhau,Flia Duhau,1,true,funded_by
 843,stamm,Stämm,varana_capital,Varana Capital,1,true,funded_by
-844,stamm,Stämm,losa_group,Losa Group,1,true,funded_by
 845,stamm,Stämm,dragones,Dragones,1,true,funded_by
 846,stamm,Stämm,vx_fund,Vx Fund,1,true,funded_by
 847,stamm,Stämm,i_vista_equity,I Vista Equity,1,true,funded_by
@@ -890,9 +879,7 @@ id,source,source_label,target,target_label,weight,directed,d12
 888,tissue_dynamics,Tissue Dynamics,f_nahuel_villegas,Nahuel Villegas,1,true,has_founder
 889,tomorrow,Tomorrow,bago,Bago,1,true,funded_by
 890,tomorrow,Tomorrow,grupo_insud,Grupo Insud,1,true,funded_by
-891,tomorrow,Tomorrow,managro,Managro,1,true,funded_by
 892,tomorrow,Tomorrow,gridx,Gridx,1,true,funded_by
-893,tomorrow,Tomorrow,other_small_investors,Other Small Investors,1,true,funded_by
 894,tomorrow,Tomorrow,f_guillermo_lentz,Guillermo Lentz,1,true,has_founder
 895,tomorrow,Tomorrow,f_agustin_bellomo,Agustín Bellomo,1,true,has_founder
 896,tomorrow_foods,Tomorrow Foods,gridx,Gridx,1,true,funded_by
@@ -958,8 +945,6 @@ id,source,source_label,target,target_label,weight,directed,d12
 956,zavia_bio,Zavia Bio,f_martin_vazquez,Martin M. Vazquez,1,true,has_founder
 957,zavia_bio,Zavia Bio,f_paz_alvarez,Paz Álvarez,1,true,has_founder
 958,zavia_bio,Zavia Bio,kamay_ventures,Kamay Ventures,1,true,funded_by
-959,zev_biotech,ZEV Biotech,peruanos,Peruanos,1,true,funded_by
-960,zev_biotech,ZEV Biotech,grupo_peruanos,Grupo Peruanos,1,true,funded_by
 961,zev_biotech,ZEV Biotech,gridx,Gridx,1,true,funded_by
 962,zev_biotech,ZEV Biotech,f_maximiliano_irissari,Maximiliano Irisarri,1,true,has_founder
 963,zev_biotech,ZEV Biotech,f_gilberto_ugalde,Gilberto Ugalde,1,true,has_founder

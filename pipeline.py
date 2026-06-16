@@ -662,6 +662,17 @@ def cmd_capital_structure(args: argparse.Namespace) -> None:
     print("\n  Salidas: pilot/capital-structure-data.js, quality/capital_structure_report.md\n")
 
 
+def cmd_recompute_tiers(args: argparse.Namespace) -> None:
+    from src.recompute_tiers import recompute_tiers
+    print("\n  Recalibrando valuation_tier desde distribución real...\n")
+    r = recompute_tiers(DB_PATH)
+    print(f"  Actualizados : {r['updated']}")
+    print(f"  Locks manuales (no tocados): {r['skipped_locked']}")
+    print(f"  Sin cambio   : {r['skipped_same']}")
+    print(f"\n  Breakpoints: {r['breaks']}")
+    print(f"\n  Siguiente paso: python pipeline.py rebuild --phase clustering\n")
+
+
 def cmd_enrich_dates(args: argparse.Namespace) -> None:
     from src.enrich_dates import run as run_enrich
     dry = getattr(args, "dry_run", False)
@@ -880,6 +891,7 @@ def main() -> None:
     sub.add_parser("ecosystem-health-data", help="Genera pilot/ecosystem-health-data.js (heatmap temas × países, isolated, momentum)")
     rt = sub.add_parser("reconcile-themes", help="Frente B: tipifica conflictos bio_theme↔cluster_label, alinea sub_cluster_label, emite triage CSV")
     rt.add_argument("--dry-run", action="store_true", help="Genera triage sin tocar DB")
+    sub.add_parser("recompute-tiers", help="Recalibra valuation_tier desde valuation_estimate_usd con breakpoints naturales (200/50/10/3M). Respeta locks manuales en audit_log.")
     sub.add_parser("orphan-triage", help="Frente B: tipifica las entidades startup huérfanas (duplicado/fuera-scope/sin-procesar) → quality/orphan_entities_triage.csv")
     sub.add_parser("capital-structure", help="Frente C: pirámide de stages, cohortes, sindicación, dependencia extranjera, HHI → capital-structure-data.js + reporte")
     ed = sub.add_parser("enrich-dates", help="Propaga fechas por co-round (alta confianza) + genera quality/date_enrichment_queue.csv para curation manual")
@@ -954,6 +966,7 @@ def main() -> None:
         "reconcile-themes": cmd_reconcile_themes,
         "orphan-triage": cmd_orphan_triage,
         "capital-structure": cmd_capital_structure,
+        "recompute-tiers":   cmd_recompute_tiers,
         "enrich-dates":      cmd_enrich_dates,
         "phylo-tree": cmd_phylo_tree,
         "apply-bio-overrides": cmd_apply_bio_overrides,

@@ -213,7 +213,6 @@ RAWEDGE_the_yield_lab_latam_agree,the_yield_lab_latam,agree,investment_or_member
 RAWEDGE_the_yield_lab_latam_agroforte,the_yield_lab_latam,agroforte,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
 RAWEDGE_glocal_agrojusto,glocal,agrojusto,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
 RAWEDGE_kamay_ventures_altscore,kamay_ventures,altscore,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
-RAWEDGE_duhau_aplife,duhau,algalife,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
 RAWEDGE_sillicon_catalyst_aplife,sillicon_catalyst,algalife,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
 RAWEDGE_gridx_arakion,GridX,arakion,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
 RAWEDGE_cites_ardan,CITES,ardan,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
@@ -226,7 +225,6 @@ RAWEDGE_gridx_avatar_medtech,GridX,avatar_medtech,investment_or_membership,,,,,0
 RAWEDGE_kamay_ventures_bacu,kamay_ventures,bacu,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
 RAWEDGE_future_ventures_beeflow,future_ventures,beeflow,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
 RAWEDGE_indiebio_beeflow,SOSV_IndieBio,beeflow,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
-RAWEDGE_jeff_wilke_beeflow,jeff_wilke,beeflow,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
 RAWEDGE_ospraie_beeflow,ospraie,beeflow,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
 RAWEDGE_sosv_beeflow,sosv,beeflow,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
 RAWEDGE_vectr_beeflow,vectr,beeflow,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
@@ -253,12 +251,10 @@ RAWEDGE_inventure_eiwa,inventure,eiwa,investment_or_membership,,,,,0,0.9,EDGESEC
 RAWEDGE_the_yield_lab_latam_eiwa,the_yield_lab_latam,eiwa,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
 RAWEDGE_gridx_elytron_biotech,GridX,elytron_biotech,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
 RAWEDGE_inventure_elytron_biotech,inventure,elytron_biotech,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
-RAWEDGE_lartirigoyen_elytron_biotech,lartirigoyen,elytron_biotech,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
 RAWEDGE_gridx_enzyva,GridX,enzyva,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
 RAWEDGE_cites_ergo_bioscience,CITES,ergo_bioscience,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
 RAWEDGE_gridx_eywa_biotech,GridX,eywa_biotech,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
 RAWEDGE_conservation_international_feedvax,conservation_international,feedvax,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
-RAWEDGE_duhau_feedvax,duhau,feedvax,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
 RAWEDGE_hatch_feedvax,hatch,feedvax,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
 RAWEDGE_gridx_food4you,GridX,food4you,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
 RAWEDGE_the_yield_lab_latam_heartbest,the_yield_lab_latam,heartbest,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
@@ -276,10 +272,7 @@ RAWEDGE_kamay_ventures_logshare,kamay_ventures,logshare,investment_or_membership
 RAWEDGE_gridx_mavios,GridX,mavios,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
 RAWEDGE_indiebio_michroma,SOSV_IndieBio,michroma,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
 RAWEDGE_kairetsu_angels_michroma,kairetsu_angels,michroma,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
-RAWEDGE_other_angels_michroma,other_angels,michroma,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
-RAWEDGE_happiness_microgenesis,happiness,microgenesis,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
 RAWEDGE_indiebio_microgenesis,SOSV_IndieBio,microgenesis,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
-RAWEDGE_kwb_microgenesis,kwb,microgenesis,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
 RAWEDGE_sosv_microgenesis,sosv,microgenesis,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
 RAWEDGE_kamay_ventures_muta,kamay_ventures,muta,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
 RAWEDGE_aceleradora_litoral_nairotech,aceleradora_litoral,nairotech,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
@@ -315,11 +308,8 @@ RAWEDGE_kamay_ventures_solfium,kamay_ventures,solfium,investment_or_membership,,
 RAWEDGE_dragones_stamm,DragonesVP,stamm,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
 RAWEDGE_draper_associates_stamm,draper_associates,stamm,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
 RAWEDGE_draper_cygnus_stamm,DraperCygnus,stamm,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
-RAWEDGE_flia_duhau_stamm,flia_duhau,stamm,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
 RAWEDGE_gridx_stamm,GridX,stamm,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
 RAWEDGE_indiebio_stamm,SOSV_IndieBio,stamm,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
-RAWEDGE_losa_group_stamm,losa_group,stamm,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
-RAWEDGE_other_small_investors_stamm,other_small_investors,stamm,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
 RAWEDGE_sosv_stamm,sosv,stamm,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
 RAWEDGE_varana_capital_stamm,varana_capital,stamm,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
 RAWEDGE_vx_fund_stamm,vx_fund,stamm,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
@@ -330,16 +320,12 @@ RAWEDGE_cites_teramot,CITES,teramot,investment_or_membership,,,,,0,0.9,EDGESECO_
 RAWEDGE_gridx_tesabio_ai,GridX,tesabio_ai,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
 RAWEDGE_bago_tomorrow,bago,tomorrow_foods,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
 RAWEDGE_grupo_insud_tomorrow,grupo_insud,tomorrow_foods,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
-RAWEDGE_managro_tomorrow,managro,tomorrow_foods,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
-RAWEDGE_other_small_investors_tomorrow,other_small_investors,tomorrow_foods,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
 RAWEDGE_inventure_tracestory,inventure,tracestory,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
 RAWEDGE_inventure_unibaio,inventure,unibaio,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
 RAWEDGE_aceleradora_litoral_untech,aceleradora_litoral,untech,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
 RAWEDGE_kamay_ventures_webee,kamay_ventures,webee,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
 RAWEDGE_kamay_ventures_wiagro,kamay_ventures,wiagro,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
 RAWEDGE_kamay_ventures_wisy,kamay_ventures,wisy,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
-RAWEDGE_grupo_peruanos_zev_biotech,grupo_peruanos,zev_biotech,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
-RAWEDGE_peruanos_zev_biotech,peruanos,zev_biotech,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
 RAWEDGE_kamay_ventures_zipnova,kamay_ventures,zipnova,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
 RAWEDGE_inventure_zoomagri,inventure,zoomagri,investment_or_membership,,,,,0,0.9,EDGESECO_RAW,From investment_edges_raw.csv
 ACCEL_Ganesha_Lab_EYWA_Biotech,The Ganesha Lab,eywa_biotech,accelerator,seed,,,,0,0.75,ACCELERATOR_PORTFOLIO_2024,From accelerator portfolio: Ganesha Lab

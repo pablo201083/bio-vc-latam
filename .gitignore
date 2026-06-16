@@ -39,6 +39,8 @@ tmp/
 
 # Backups & leaked temp files
 *.bak
+*.bak_*
+*.db.bak*
 UsersPABLOA~1*
 
 # Staging: generated intermediate lookups (regenerables)

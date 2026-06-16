@@ -319,7 +319,7 @@
             <button id="btn-hybrid"    class="vt-btn"        type="button" title="Semántica con atracción suave hacia ejes analíticos (α=0.35)">Híbrido</button>
             <button id="btn-semantic"  class="vt-btn"        type="button" title="UMAP puro: posición = similitud semántica real">Semántico</button>
           </div>
-          <button id="btn-labels" class="lbl-btn on" type="button" title="Cicla: Grandes → Medianas → Todas → off">▣ Medianas</button>
+          <button id="btn-labels" class="lbl-btn" type="button" title="Cicla: off → Anclas → Grandes">Nombres ○</button>
           <button id="btn-filter" class="lbl-btn" type="button">Filtros</button>
           <button id="btn-time"   class="lbl-btn" type="button" title="Animar por año de fundación">Tiempo</button>
           <div class="srch-wrap">
@@ -328,10 +328,10 @@
           </div>
         </div>
         <div class="conf-leg">
-          <span class="cs" style="width:5px;height:5px;background:#bbb"></span>~$1M
-          <span class="cs" style="width:8px;height:8px;background:#999"></span>~$10M
-          <span class="cs" style="width:18px;height:18px;background:var(--accent)"></span>~$50M
-          <span class="cs" style="width:30px;height:30px;background:var(--accent)"></span>$100M+
+          <span class="cs" style="width:5px;height:5px;background:#bbb"></span>~$3M
+          <span class="cs" style="width:10px;height:10px;background:#999"></span>~$10M
+          <span class="cs" style="width:16px;height:16px;background:var(--accent)"></span>~$50M
+          <span class="cs" style="width:24px;height:24px;background:var(--accent)"></span>~$200M+
         </div>
       </div>
       <div id="time-player" class="time-player">
@@ -770,39 +770,45 @@ gRoot.appendChild(gNodes);
 gRoot.appendChild(gLabels);
 gRoot.appendChild(gThemeLabels);
 
+function posHovLabel(){}
+
 
 function applyTf(){gRoot.setAttribute("transform",`translate(${panX},${panY}) scale(${scale})`)}
 
-// Node visual properties — tamaño por valuation_estimate_usd (escala lineal)
-// Cap dinámico: se ajusta al máximo del dataset para que la escala sea relativa
-// Cuando llegue Pitchbook el cap sube automáticamente
-const VAL_R_MIN=5, VAL_R_MAX=30;
+// Node visual properties — tamaño por valuation_estimate_usd (escala LOG)
+// Log porque los datos van de $1.5M a $1.2B — 3 órdenes de magnitud.
+// Linear aplastaría todo al mínimo. Log da separación visual proporcional a la percepción.
+const VAL_R_MIN=4, VAL_R_MAX=32;
+const _LOG_MIN=Math.log(1), _LOG_MAX=Math.log(2000); // $1M–$2B
 function nRadius(s){
-  const v=s.valuation_estimate_usd||0.8;
-  const VAL_CAP=100;
-  return VAL_R_MIN+(VAL_R_MAX-VAL_R_MIN)*Math.min(v,VAL_CAP)/VAL_CAP;
+  const v=Math.max(s.valuation_estimate_usd||1, 1);
+  const t=(Math.log(v)-_LOG_MIN)/(_LOG_MAX-_LOG_MIN);
+  return VAL_R_MIN+(VAL_R_MAX-VAL_R_MIN)*Math.min(t,1);
 }
 function nOpacity(s){return s.quality_band==="high"?0.88:0.72}
-// Nivel 1 — Ancla: val≥$50M o tier≥2. Siempre visible, el toggle no los apaga.
-function nAnchor(s){return (s.valuation_tier!=null&&s.valuation_tier>=2)||(s.valuation_estimate_usd||0)>=50;}
-// Nivel 2 — Destacado: val≥$8M Y ≥2 inversores. Dot mediano que puede cargar un label.
-// Requiere tamaño mínimo para que el label tenga proporción visual con el punto.
-function nDestacado(s){return (s.valuation_estimate_usd||0)>=8 && s.n_investors_mapped>=2;}
-// Nivel 3 — Completo: calidad alta. Solo visible con toggle ON en cualquier modo.
-function nCompleto(s){return s.quality_band==="high";}
-function nFeatured(s){return nAnchor(s);}
-function nImportant(s){return nAnchor(s)||nDestacado(s);}
+// tier viene del pipeline (recompute-tiers) con breakpoints: 4=$1B+ 3=$50M+ 2=$10M+ 1.5=$3M+ 1=resto
+// Clave    = tier>=3  (~7 startups, $50M+)
+// Grandes  = tier>=2  (~44 startups, $10M+)
+// Medianas = tier>=1.5 (~164 startups, $3M+)
+function nClave(s){return s.valuation_tier!=null && s.valuation_tier>=3;}
+function nAnchor(s){return nClave(s);}  // alias para compatibilidad con bold/font-weight
+function nGrandes(s){return s.valuation_tier!=null && s.valuation_tier>=2;}
+function nMedianas(s){return s.valuation_tier!=null && s.valuation_tier>=1.5;}
+function nFeatured(s){return nClave(s);}
+function nImportant(s){return nGrandes(s);}
 
-// ── Label visibility by mode ──────────────────────────────────────────────
-// grande  = val≥$50M o tier≥2 (anchor)
-// mediana = + val≥$8M y ≥2 inv. (destacado)
-// todas   = + quality_band high (completo)
 function showLblFor(s){
-  if(labelMode==="off")   return false;
-  if(labelMode==="grande") return nAnchor(s);
-  if(labelMode==="mediana")return nAnchor(s)||nDestacado(s)||nRadius(s)>=14;
-  if(labelMode==="todas")  return nAnchor(s)||nDestacado(s)||nCompleto(s)||nRadius(s)>=14;
+  if(labelMode==="off")      return false;
+  if(labelMode==="clave")    return nClave(s);
+  if(labelMode==="grandes")  return nGrandes(s);
+  if(labelMode==="medianas") return nMedianas(s);
+  if(labelMode==="todas")    return true;
   return false;
+}
+// Font size escalado al radio del dot: labels de dots chicos son más chicos
+function lblFontSize(s){
+  const r=nRadius(s);
+  return Math.max(7, Math.min(11, r*0.72)).toFixed(1);
 }
 
 // ── Filter state — multi-selección con Sets ───────────────────────────────
@@ -814,7 +820,7 @@ const activeFunds=new Set();      // OR — inversor/fondo id
 const activeLegacy=new Set();      // OR — macro_theme (taxonomía anterior)
 const activeDepths=new Set();     // OR — deep | applied | enabler | unclassified
 let searchId=null;
-let labelMode="mediana"; // "off" | "grande" | "mediana" | "todas"
+let labelMode="off"; // "off" | "clave" | "grandes" | "medianas" | "todas"
 let activeSubCluster=null;
 let viewMode="map"; // "map" | "cluster" | "zoom"
 // ── Animation / time-player ──────────────────────────────────────────────
@@ -861,28 +867,28 @@ function buildSVG(){
     gNodes.appendChild(circ);
     n.circEl=circ;
 
-    // Labels — 3 tiers: Ancla (always), Destacado (default), Completo (toggle)
-    const anchor=nAnchor(s), dest=nDestacado(s);
+    // Labels — tamaño proporcional al radio del dot para coherencia con zoom
+    const anchor=nClave(s), grandes=nGrandes(s);
     const lbl=document.createElementNS(NS,"text");
     lbl.setAttribute("text-anchor","middle");
     lbl.setAttribute("dominant-baseline","middle");
-    lbl.setAttribute("font-size",anchor?"10":dest?"8.5":"7.5");
-    lbl.setAttribute("font-weight",anchor?"700":"400");
+    lbl.setAttribute("font-size",lblFontSize(s));
+    lbl.setAttribute("font-weight",anchor?"700":grandes?"500":"400");
     lbl.setAttribute("font-family","inherit");
-    lbl.setAttribute("fill","#2a2218");
+    lbl.setAttribute("fill",color);
     lbl.setAttribute("stroke","rgba(248,245,239,0.97)");
-    lbl.setAttribute("stroke-width","3.5");
+    lbl.setAttribute("stroke-width","3");
     lbl.setAttribute("stroke-linejoin","round");
     lbl.setAttribute("paint-order","stroke");
     lbl.setAttribute("pointer-events","none");
-    lbl.setAttribute("opacity",anchor?"1":dest?"0.88":"0.78");
+    lbl.setAttribute("opacity",anchor?"1":grandes?"0.9":"0.8");
     lbl.textContent=s.name.replace(/\s*S\.?\s*[AP]\.?S?\.?$/i,"").split(/\s+/).slice(0,2).join(" ");
     lbl.style.display=showLblFor(s)?"":"none";
     gLabels.appendChild(lbl);
     n.lblEl=lbl;
 
-    circ.addEventListener("mouseenter",e=>showHov(s,e));
-    circ.addEventListener("mouseleave",hideHov);
+    circ.addEventListener("mouseenter",e=>{showHov(s,e);});
+    circ.addEventListener("mouseleave",()=>{hideHov();});
     circ.addEventListener("click",()=>selectStartup(s));
   });
 }
@@ -1017,8 +1023,9 @@ function updateHalos(){
   });
 
   // ── Pasada 1: dibujar blobs y colectar candidatos de label ────────────────
+  // Ordenar por tamaño descendente: clusters grandes reclaman su anchor primero
   const lbls=[];
-  Object.entries(byTheme).forEach(([theme,cNodes])=>{
+  Object.entries(byTheme).sort((a,b)=>b[1].length-a[1].length).forEach(([theme,cNodes])=>{
     const allPts=cNodes.map(n=>[n.cx,n.cy]);
     const corePts=(()=>{
       const nonOut=cNodes.filter(n=>!n.d.is_outlier).map(n=>[n.cx,n.cy]);
@@ -1117,13 +1124,17 @@ function updateHalos(){
     lbl.x=lbl.ax; lbl.y=lbl.ay;
     if(!overlaps(lbl, placed)){placed.push(lbl);return;}
 
-    // Espiral outward: distancia r en pasos de 8px
+    // Espiral outward: empezar desde el ángulo radial del anchor (hacia fuera del canvas)
+    // para que el label se mueva en la dirección natural del cluster antes de explorar otros ángulos
     const step=8, maxR=Math.min(W,H)*0.5;
+    const baseAngle=Math.atan2(lbl.ay-H/2, lbl.ax-W/2);
     let found=false;
     outer: for(let r=step;r<=maxR;r+=step){
       const nAngles=Math.max(8, Math.round(2*Math.PI*r/step));
       for(let a=0;a<nAngles;a++){
-        const angle=2*Math.PI*a/nAngles;
+        // Explorar en abanico: ángulo base ± incrementos alternados
+        const offset=Math.ceil(a/2)*(a%2===0?1:-1)*(2*Math.PI/nAngles);
+        const angle=baseAngle+offset;
         const tx=Math.max(lbl.w/2+10,Math.min(W-lbl.w/2-10, lbl.ax+r*Math.cos(angle)));
         const ty=Math.max(lbl.h/2+10,Math.min(H-lbl.h/2-10, lbl.ay+r*Math.sin(angle)));
         lbl.x=tx; lbl.y=ty;
@@ -1136,6 +1147,23 @@ function updateHalos(){
 
   // ── Pasada 3: dibujar labels en posiciones optimizadas ────────────────────
   lbls.forEach(l=>{
+    // Leader line: solo si el label se desplazó más de 40px del anchor
+    const dist=Math.sqrt((l.x-l.ax)**2+(l.y-l.ay)**2);
+    if(dist>40){
+      // Punto de anclaje en el borde del label más cercano al centroide del cluster
+      const dx=l.ax-l.x, dy=l.ay-l.y, dlen=Math.sqrt(dx*dx+dy*dy)||1;
+      const ex=l.x+dx/dlen*l.w/2, ey=l.y+dy/dlen*l.h/2;
+      const line=document.createElementNS(NS,"line");
+      line.setAttribute("x1",ex.toFixed(1)); line.setAttribute("y1",ey.toFixed(1));
+      line.setAttribute("x2",l.ax.toFixed(1)); line.setAttribute("y2",l.ay.toFixed(1));
+      line.setAttribute("stroke",l.color);
+      line.setAttribute("stroke-width","1");
+      line.setAttribute("stroke-dasharray","3 3");
+      line.setAttribute("opacity",(parseFloat(l.alpha)*0.4).toFixed(2));
+      line.setAttribute("pointer-events","none");
+      gThemeLabels.appendChild(line);
+    }
+
     const bg=document.createElementNS(NS,"rect");
     bg.setAttribute("x",(l.x-l.w/2).toFixed(1));
     bg.setAttribute("y",(l.y-l.h/2).toFixed(1));
@@ -1218,16 +1246,19 @@ function updateHighlights(){
       const inTheme=(s.bio_theme||"Uncategorized")===activeTheme;
       const color=themeCol(s.bio_theme);
       const hi=isHl(s);
+      const dimmed=inTheme&&!hi&&(searchId||activeSubCluster!==null);
       if(n.circEl){
-        n.circEl.setAttribute("fill",inTheme?(searchId&&!hi?GRAY_FILL:color):GRAY_FILL);
-        n.circEl.setAttribute("opacity",inTheme?(searchId&&!hi?0.25:nOpacity(s)):0);
+        n.circEl.setAttribute("fill",inTheme?(dimmed?GRAY_FILL:color):GRAY_FILL);
+        n.circEl.setAttribute("opacity",inTheme?(dimmed?0.18:nOpacity(s)):0);
         n.circEl.setAttribute("r",hi&&searchId===s.id?nRadius(s)+3:nRadius(s));
       }
       if(n.lblEl){
-        const show=inTheme&&(searchId?hi:showLblFor(s));
+        // Cuando hay subcluster activo: labels solo para startups del subcluster (hi)
+        // Cuando no: comportamiento normal de labelMode
+        const show=inTheme&&(searchId?hi:(activeSubCluster!==null?hi:showLblFor(s)));
         n.lblEl.style.display=show?"":"none";
-        n.lblEl.setAttribute("font-size",nAnchor(s)?"10":"8");
-        n.lblEl.setAttribute("font-weight",searchId===s.id||nAnchor(s)?"700":"400");
+        n.lblEl.setAttribute("font-size",lblFontSize(s));
+        n.lblEl.setAttribute("font-weight",searchId===s.id||nAnchor(s)?"700":"500");
       }
     });
     return;
@@ -1246,10 +1277,13 @@ function updateHighlights(){
       n.circEl.setAttribute("r",hi&&searchId===s.id?nRadius(s)+3:nRadius(s));
     }
     if(n.lblEl){
-      const base=showLblFor(s);
-      const show=any?(hi&&base):base;
+      // Foco activo (subcluster o search) → labels solo para startups que matchean
+      // Sin foco → comportamiento normal de labelMode
+      const focusActive = activeSubCluster!==null || searchId!==null;
+      const base = focusActive ? hi : showLblFor(s);
+      const show = any ? (hi && base) : base;
       n.lblEl.style.display=show?"":"none";
-      n.lblEl.setAttribute("font-weight",searchId===s.id||nAnchor(s)?"700":"400");
+      n.lblEl.setAttribute("font-weight",searchId===s.id||nAnchor(s)?"700":"500");
     }
   });
 }
@@ -1541,7 +1575,8 @@ function buildClusterList(){
     row.appendChild(detail);
 
     // ── Click handler ────────────────────────────────────────────────────
-    row.addEventListener("click",()=>{
+    row.addEventListener("click",e=>{
+      if(e.target.closest("[data-subcluster]")||e.target.closest("[data-country]"))return;
       const isActive=row.classList.contains("active");
 
       // Clicking active theme in zoom → back to map
@@ -1565,6 +1600,7 @@ function buildClusterList(){
       startTrans("zoom");
       zoomToCluster(theme);
       updateHighlights();updateBreadcrumbs();
+      list.scrollTo({top:list.scrollTop+(row.getBoundingClientRect().top-list.getBoundingClientRect().top)-8,behavior:"smooth"});
     });
     list.appendChild(row);
   });
@@ -1914,8 +1950,8 @@ document.addEventListener("click",e=>{if(!srchIn.contains(e.target))srchRes.clas
   });
 });
 
-const LABEL_CYCLE=["mediana","todas","grande","off"];
-const LABEL_BTN_TEXT={off:"Nombres",grande:"▣ Grandes",mediana:"▣ Medianas",todas:"▣ Todas"};
+const LABEL_CYCLE=["off","clave","grandes","medianas","todas"];
+const LABEL_BTN_TEXT={off:"Nombres ○",clave:"▣ Clave (7)",grandes:"▣ Grandes (44)",medianas:"▣ Medianas (164)",todas:"▣ Todas"};
 document.getElementById("btn-labels").addEventListener("click",function(){
   const idx=LABEL_CYCLE.indexOf(labelMode);
   labelMode=LABEL_CYCLE[(idx+1)%LABEL_CYCLE.length];
