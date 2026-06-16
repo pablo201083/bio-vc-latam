@@ -1,7 +1,8 @@
 param(
-    [string]$IntegratedDir = "C:\Users\Pablo A\Documents\Codex\2026-04-18-summarize-what-s-happening-on-slack\integrated",
-    [string]$StructuredNodesPath = "C:\Users\Pablo A\Documents\Codex\2026-04-18-summarize-what-s-happening-on-slack\staging\structured_gephi\structured_nodes_426112025.csv",
-    [string]$OutputPath = "C:\Users\Pablo A\Documents\Codex\2026-04-18-summarize-what-s-happening-on-slack\pilot\ecosystem-integrated-data.js"
+    [string]$RepoRoot = (Split-Path -Parent $PSScriptRoot),
+    [string]$IntegratedDir = (Join-Path $RepoRoot 'integrated'),
+    [string]$StructuredNodesPath = (Join-Path $RepoRoot 'staging\structured_gephi\structured_nodes_426112025.csv'),
+    [string]$OutputPath = (Join-Path $RepoRoot 'pilot\ecosystem-integrated-data.js')
 )
 
 Set-StrictMode -Version Latest

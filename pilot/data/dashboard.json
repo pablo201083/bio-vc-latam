@@ -1,12 +1,12 @@
 ﻿{
-    "generated_at":  "2026-05-01T20:14:27",
+    "generated_at":  "2026-06-16T08:56:01",
     "summary":  {
-                    "entities_total":  363,
-                    "investors_total":  75,
-                    "startups_total":  288,
-                    "investment_edges_total":  522,
-                    "aliases_total":  65,
-                    "review_queue_total":  49
+                    "entities_total":  359,
+                    "investors_total":  70,
+                    "startups_total":  289,
+                    "investment_edges_total":  528,
+                    "aliases_total":  81,
+                    "review_queue_total":  34
                 },
     "top_investors":  [
                           {
@@ -45,18 +45,18 @@
                               "confidence_score":  "0.6"
                           },
                           {
+                              "entity_id":  "sp_ventures",
+                              "canonical_name":  "SP Ventures",
+                              "investment_count":  27,
+                              "source_presence":  "graphml",
+                              "confidence_score":  "0.6"
+                          },
+                          {
                               "entity_id":  "CITES",
                               "canonical_name":  "CITES",
                               "investment_count":  27,
                               "source_presence":  "nodes_csv|graphml",
                               "confidence_score":  "0.9"
-                          },
-                          {
-                              "entity_id":  "sp_ventures",
-                              "canonical_name":  "SP Ventures",
-                              "investment_count":  26,
-                              "source_presence":  "graphml",
-                              "confidence_score":  "0.6"
                           },
                           {
                               "entity_id":  "Antom",
@@ -94,13 +94,6 @@
                               "confidence_score":  "0.6"
                           },
                           {
-                              "entity_id":  "zentynel",
-                              "canonical_name":  "Zentynel",
-                              "investment_count":  10,
-                              "source_presence":  "manual_external",
-                              "confidence_score":  "0.95"
-                          },
-                          {
                               "entity_id":  "DragonesVP",
                               "canonical_name":  "DragonesVP",
                               "investment_count":  10,
@@ -108,16 +101,23 @@
                               "confidence_score":  "0.6"
                           },
                           {
-                              "entity_id":  "aceleradora_litoral",
-                              "canonical_name":  "Aceleradora Litoral",
-                              "investment_count":  7,
-                              "source_presence":  "graphml",
-                              "confidence_score":  "0.6"
+                              "entity_id":  "zentynel",
+                              "canonical_name":  "Zentynel",
+                              "investment_count":  10,
+                              "source_presence":  "manual_external",
+                              "confidence_score":  "0.95"
                           },
                           {
                               "entity_id":  "glocal",
                               "canonical_name":  "GLOCAL",
-                              "investment_count":  6,
+                              "investment_count":  8,
+                              "source_presence":  "graphml",
+                              "confidence_score":  "0.6"
+                          },
+                          {
+                              "entity_id":  "aceleradora_litoral",
+                              "canonical_name":  "Aceleradora Litoral",
+                              "investment_count":  7,
                               "source_presence":  "graphml",
                               "confidence_score":  "0.6"
                           },
@@ -143,11 +143,11 @@
                               "confidence_score":  "0.86"
                           },
                           {
-                              "entity_id":  "chileglobal_ventures",
-                              "canonical_name":  "ChileGlobal Ventures",
+                              "entity_id":  "eatable_adventures",
+                              "canonical_name":  "Eatable Adventures",
                               "investment_count":  2,
                               "source_presence":  "manual_external",
-                              "confidence_score":  "0.90"
+                              "confidence_score":  "0.92"
                           }
                       ],
     "top_startups":  [
@@ -155,6 +155,13 @@
                              "entity_id":  "Satellites On Fire",
                              "canonical_name":  "Satellites On Fire",
                              "investor_count":  7,
+                             "source_presence":  "nodes_csv",
+                             "confidence_score":  "0.6"
+                         },
+                         {
+                             "entity_id":  "Puna Bio",
+                             "canonical_name":  "Puna Bio",
+                             "investor_count":  6,
                              "source_presence":  "nodes_csv",
                              "confidence_score":  "0.6"
                          },
@@ -173,15 +180,8 @@
                              "confidence_score":  "0.6"
                          },
                          {
-                             "entity_id":  "Puna Bio",
-                             "canonical_name":  "Puna Bio",
-                             "investor_count":  4,
-                             "source_presence":  "nodes_csv",
-                             "confidence_score":  "0.6"
-                         },
-                         {
-                             "entity_id":  "Skyloom",
-                             "canonical_name":  "Skyloom",
+                             "entity_id":  "Oncoliq",
+                             "canonical_name":  "Oncoliq",
                              "investor_count":  4,
                              "source_presence":  "nodes_csv|graphml",
                              "confidence_score":  "0.9"
@@ -201,29 +201,15 @@
                              "confidence_score":  "0.9"
                          },
                          {
-                             "entity_id":  "microgenesis",
-                             "canonical_name":  "microgenesis",
-                             "investor_count":  3,
+                             "entity_id":  "Skyloom",
+                             "canonical_name":  "Skyloom",
+                             "investor_count":  4,
                              "source_presence":  "nodes_csv|graphml",
                              "confidence_score":  "0.9"
                          },
                          {
-                             "entity_id":  "Beeflow",
-                             "canonical_name":  "Beeflow",
-                             "investor_count":  3,
-                             "source_presence":  "nodes_csv|graphml",
-                             "confidence_score":  "0.9"
-                         },
-                         {
-                             "entity_id":  "deepagro",
-                             "canonical_name":  "DeepAgro",
-                             "investor_count":  3,
-                             "source_presence":  "graphml",
-                             "confidence_score":  "0.6"
-                         },
-                         {
-                             "entity_id":  "michroma",
-                             "canonical_name":  "michroma",
+                             "entity_id":  "Satellogic",
+                             "canonical_name":  "Satellogic",
                              "investor_count":  3,
                              "source_presence":  "nodes_csv|graphml",
                              "confidence_score":  "0.9"
@@ -236,32 +222,11 @@
                              "confidence_score":  "0.9"
                          },
                          {
-                             "entity_id":  "Kigui",
-                             "canonical_name":  "Kigui",
+                             "entity_id":  "Sylvarum",
+                             "canonical_name":  "Sylvarum",
                              "investor_count":  3,
                              "source_presence":  "nodes_csv|graphml",
                              "confidence_score":  "0.9"
-                         },
-                         {
-                             "entity_id":  "Agrojusto",
-                             "canonical_name":  "Agrojusto",
-                             "investor_count":  3,
-                             "source_presence":  "nodes_csv|graphml",
-                             "confidence_score":  "0.9"
-                         },
-                         {
-                             "entity_id":  "WerkénVac",
-                             "canonical_name":  "WerkénVac",
-                             "investor_count":  3,
-                             "source_presence":  "nodes_csv",
-                             "confidence_score":  "0.6"
-                         },
-                         {
-                             "entity_id":  "Novo Space",
-                             "canonical_name":  "Novo Space",
-                             "investor_count":  3,
-                             "source_presence":  "nodes_csv",
-                             "confidence_score":  "0.6"
                          },
                          {
                              "entity_id":  "stamm",
@@ -271,6 +236,20 @@
                              "confidence_score":  "0.6"
                          },
                          {
+                             "entity_id":  "Ayuvant",
+                             "canonical_name":  "Ayuvant",
+                             "investor_count":  3,
+                             "source_presence":  "nodes_csv|graphml",
+                             "confidence_score":  "0.9"
+                         },
+                         {
+                             "entity_id":  "microgenesis",
+                             "canonical_name":  "microgenesis",
+                             "investor_count":  3,
+                             "source_presence":  "nodes_csv|graphml",
+                             "confidence_score":  "0.9"
+                         },
+                         {
                              "entity_id":  "Splight",
                              "canonical_name":  "Splight",
                              "investor_count":  3,
@@ -278,32 +257,53 @@
                              "confidence_score":  "0.9"
                          },
                          {
-                             "entity_id":  "Lemon",
-                             "canonical_name":  "Lemon",
+                             "entity_id":  "Novo Space",
+                             "canonical_name":  "Novo Space",
+                             "investor_count":  3,
+                             "source_presence":  "nodes_csv",
+                             "confidence_score":  "0.6"
+                         },
+                         {
+                             "entity_id":  "Limay Biosciences",
+                             "canonical_name":  "Limay Biosciences",
+                             "investor_count":  3,
+                             "source_presence":  "nodes_csv",
+                             "confidence_score":  "0.6"
+                         },
+                         {
+                             "entity_id":  "WerkénVac",
+                             "canonical_name":  "WerkénVac",
+                             "investor_count":  3,
+                             "source_presence":  "nodes_csv",
+                             "confidence_score":  "0.6"
+                         },
+                         {
+                             "entity_id":  "Agrojusto",
+                             "canonical_name":  "Agrojusto",
                              "investor_count":  3,
                              "source_presence":  "nodes_csv|graphml",
                              "confidence_score":  "0.9"
                          },
                          {
-                             "entity_id":  "Sylvarum",
-                             "canonical_name":  "Sylvarum",
+                             "entity_id":  "Done Properly",
+                             "canonical_name":  "Done Properly",
                              "investor_count":  3,
-                             "source_presence":  "nodes_csv|graphml",
-                             "confidence_score":  "0.9"
+                             "source_presence":  "nodes_csv",
+                             "confidence_score":  "0.6"
                          }
                      ],
     "source_summary":  [
                            {
                                "metric":  "canonical_entities",
-                               "value":  "363"
+                               "value":  "372"
                            },
                            {
                                "metric":  "canonical_aliases",
-                               "value":  "65"
+                               "value":  "81"
                            },
                            {
                                "metric":  "canonical_investment_edges",
-                               "value":  "522"
+                               "value":  "528"
                            },
                            {
                                "metric":  "review_queue_items",

@@ -1,6 +1,7 @@
 param(
-    [string]$CanonicalDir = "C:\Users\Pablo A\Documents\Codex\2026-04-18-summarize-what-s-happening-on-slack\canonical",
-    [string]$OutputDir = "C:\Users\Pablo A\Documents\Codex\2026-04-18-summarize-what-s-happening-on-slack\pilot\data"
+    [string]$RepoRoot = (Split-Path -Parent $PSScriptRoot),
+    [string]$CanonicalDir = (Join-Path $RepoRoot 'canonical'),
+    [string]$OutputDir = (Join-Path $RepoRoot 'pilot\data')
 )
 
 Set-StrictMode -Version Latest
