@@ -2098,6 +2098,19 @@ document.addEventListener('DOMContentLoaded', function(){
   // Hook para recibir clicks de nodos desde el grafo (capital-atlas.js)
   window.onAtlasNodeSelected = function(id) { openFundDrawer(id); };
 
+  // ── Deep-link desde startup-themes: ?startup=ID ──────────────────────────
+  (function() {
+    const param = new URLSearchParams(window.location.search).get('startup');
+    if (!param) return;
+    // Buscar por id exacto, luego por nombre case-insensitive
+    const target = nodeById.get(param)
+      || D.nodes.find(n => n.name && n.name.toLowerCase() === param.toLowerCase())
+      || D.nodes.find(n => n.name && n.name.toLowerCase().includes(param.toLowerCase()));
+    if (!target) return;
+    // Pequeño delay para que el grafo termine de inicializar
+    setTimeout(() => openFundDrawer(target.id), 400);
+  })();
+
   // ── Sidebar collapse toggle ───────────────────────────────────────
   (function() {
     const sidebar  = document.getElementById('ca-inv-sidebar');

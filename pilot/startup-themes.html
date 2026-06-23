@@ -570,6 +570,10 @@
 
     </div><!-- /#bio-canvas-area -->
 
+    <!-- Detail panel — slide-in desde derecha al seleccionar startup o cluster -->
+    <div id="bio-detail">
+      <div id="bio-detail-inner"></div>
+    </div>
 
   </div><!-- /#bio-main -->
 </div><!-- /#bio-app -->
@@ -1788,8 +1792,73 @@ function selectStartup(s){
   searchId=s.id;
   document.getElementById("srch-in").value=s.name;
   updateHighlights();updateBreadcrumbs();
-  // El detalle de startup se muestra en el hover card al pasar el mouse.
+  openStartupDetailPanel(s);
 }
+
+window.openStartupDetailPanel = function openStartupDetailPanel(s){
+  const panel = document.getElementById('bio-detail');
+  const inner = document.getElementById('bio-detail-inner');
+  if(!panel||!inner) return;
+
+  const color = themeCol(s.bio_theme);
+  const STAGE_LBL = {
+    "pre-seed":"Pre-seed","seed":"Seed","series-a":"Serie A",
+    "series-b":"Serie B","series-c+":"Serie C+","growth":"Growth",
+    "corporate":"Corporate","public":"Público"
+  };
+  const stageLabel = s.funding_stage ? (STAGE_LBL[s.funding_stage] || s.funding_stage) : null;
+  const valM = s.valuation_estimate_usd;
+  const valLabel = valM != null
+    ? (valM>=1000 ? `~$${(valM/1000).toFixed(1)}B` : valM>=1 ? `~$${Math.round(valM)}M` : `~$${Math.round(valM*1000)}k`)
+    : null;
+  const countries = (s.countries||[]).map(c=>(window.FLAG_MAP?.[c]||'')+' '+c).join(' · ');
+  const desc = s.one_liner || (s.summary ? s.summary.replace(/\s+/g,' ').split(/(?<=\.)\s+/)[0].slice(0,220) : '');
+  const DEPTH = {
+    "deep":    {lbl:"Deep Tech",    col:"#1b5e3b"},
+    "applied": {lbl:"Applied Tech", col:"#1e3a8a"},
+    "enabler": {lbl:"Enabler",      col:"#7c3aed"},
+  };
+  const db = DEPTH[s.tech_depth];
+  const atlasUrl = `./capital-atlas.html?startup=${encodeURIComponent(s.id||s.name)}`;
+
+  inner.innerHTML = `
+    <div style="position:relative;padding-bottom:8px">
+      <button class="bdp-close" onclick="closeDetailPanel()">×</button>
+      <p class="bdp-eyebrow">Startup · ${s.scope_decision==='include'?'BIO core':'eco-adjacent'}</p>
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
+        <span style="width:10px;height:10px;border-radius:2px;background:${color};flex-shrink:0;display:inline-block"></span>
+        <h2 class="bdp-title" style="font-size:17px">${s.name}</h2>
+      </div>
+      ${countries?`<div style="font-size:10px;color:var(--muted);margin-bottom:10px;font-family:var(--sans)">${countries}</div>`:''}
+      ${desc?`<p style="font-size:11.5px;color:var(--ink);line-height:1.58;margin-bottom:14px;font-family:var(--sans)">${desc}</p>`:''}
+      <div class="bdp-stat-grid">
+        ${stageLabel?`<div class="bdp-stat-cell"><div class="bdp-stat-lbl">Etapa</div><div class="bdp-stat-val">${stageLabel}</div></div>`:''}
+        ${s.n_investors_mapped>0?`<div class="bdp-stat-cell"><div class="bdp-stat-lbl">Inversores</div><div class="bdp-stat-val">${s.n_investors_mapped}</div></div>`:''}
+        ${valLabel?`<div class="bdp-stat-cell"><div class="bdp-stat-lbl">Valoración est.</div><div class="bdp-stat-val">${valLabel}</div></div>`:''}
+        ${db?`<div class="bdp-stat-cell"><div class="bdp-stat-lbl">Tech depth</div><div class="bdp-stat-val" style="color:${db.col}">${db.lbl}</div></div>`:''}
+      </div>
+      ${s.bio_theme?`
+        <p class="bdp-sec">Tema semántico</p>
+        <span class="bdp-tag" style="display:inline-flex;align-items:center;gap:5px">
+          <span style="width:7px;height:7px;border-radius:1px;background:${color};display:inline-block;flex-shrink:0"></span>
+          ${s.bio_theme}
+        </span>
+      `:''}
+      ${(s.tech_codes||[]).length?`
+        <p class="bdp-sec">Tecnologías</p>
+        <div class="bdp-tags">${s.tech_codes.slice(0,5).map(t=>`<span class="bdp-tag bdp-tag-teal">${t}</span>`).join('')}</div>
+      `:''}
+      ${(s.sub_cluster_label)?`<p class="bdp-sec" style="margin-bottom:4px">Sub-cluster</p><div style="font-size:11px;color:var(--muted);font-family:var(--sans)">${s.sub_cluster_label}</div>`:''}
+      <a class="bdp-cta" href="${atlasUrl}" style="text-decoration:none;display:block;text-align:center;margin-top:18px">
+        Ver en Capital Atlas →
+      </a>
+    </div>
+  `;
+
+  panel.style.transition = 'none';
+  panel.style.width = '260px';
+  void panel.offsetWidth;
+};
 
 // ── Hover card ─────────────────────────────────────────────────────────────
 const hovCard=document.getElementById("hov-card");
