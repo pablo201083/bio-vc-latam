@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css?v=20260422p">
+  <script src="./i18n.js"></script>
   <style>
     /* ── Site header ── */
     .site-header{
@@ -393,22 +394,27 @@
       <span class="bio-nav-name">Ecosistema BIO</span>
     </div>
     <div class="bio-nav-links">
-      <a href="./startup-themes.html"       class="bio-nav-link active">Paradigmas</a>
-      <a href="./capital-atlas.html"         class="bio-nav-link">Capital Atlas</a>
-      <a href="./ecosystem-intelligence.html" class="bio-nav-link">Ecosystem Intel</a>
-      <a href="./cluster-quality.html"       class="bio-nav-link">Calidad</a>
+      <a href="./startup-themes.html"        class="bio-nav-link active" data-i18n="nav.paradigmas">Paradigmas</a>
+      <a href="./capital-atlas.html"          class="bio-nav-link"        data-i18n="nav.atlas">Capital Atlas</a>
+      <a href="./ecosystem-intelligence.html" class="bio-nav-link"        data-i18n="nav.intel">Ecosystem Intel</a>
+      <a href="./cluster-quality.html"        class="bio-nav-link"        data-i18n="nav.calidad">Calidad</a>
     </div>
     <div class="bio-nav-live">
       <div class="bio-nav-dot"></div>
       <span style="font-size:11px;color:var(--bio-muted);">HDBSCAN · UMAP 10D→2D</span>
     </div>
+    <div class="lang-switcher">
+      <button class="lang-btn active" data-lang="es" onclick="switchLang('es')">ES</button>
+      <button class="lang-btn"        data-lang="en" onclick="switchLang('en')">EN</button>
+      <button class="lang-btn"        data-lang="pt" onclick="switchLang('pt')">PT</button>
+    </div>
   </nav>
 
   <!-- ══ CONTEXT STRIP 36px (reemplaza header ~180px) ══ -->
   <div id="bio-strip">
-    <span id="bio-strip-title">Paradigmas Emergentes</span>
+    <span id="bio-strip-title" data-i18n="strip.paradigmas">Paradigmas Emergentes</span>
     <span id="bio-strip-stats">
-      <span id="meta-total">—</span> startups · <span id="meta-clusters">—</span> temas semánticos
+      <span id="meta-total">—</span> startups · <span id="meta-clusters">—</span> <span data-i18n="meta.temas">temas semánticos</span>
     </span>
     <span id="bio-strip-meta"><span id="meta-model">—</span></span>
   </div>
@@ -423,17 +429,17 @@
       <div id="bio-mode-btns">
         <span class="bio-mode-label">Modo de análisis</span>
         <div class="bio-mode-grid">
-          <button id="mode-paradigmas" class="bio-mode-btn active" type="button">Paradigmas</button>
-          <button id="mode-arbol"      class="bio-mode-btn"        type="button">Árbol</button>
-          <button id="mode-escala"     class="bio-mode-btn"        type="button">Escala</button>
-          <button id="mode-catalogo"   class="bio-mode-btn"        type="button">Catálogo</button>
+          <button id="mode-paradigmas" class="bio-mode-btn active" type="button" data-i18n="mode.paradigmas">Paradigmas</button>
+          <button id="mode-arbol"      class="bio-mode-btn"        type="button" data-i18n="mode.arbol">Árbol</button>
+          <button id="mode-escala"     class="bio-mode-btn"        type="button" data-i18n="mode.escala">Escala</button>
+          <button id="mode-catalogo"   class="bio-mode-btn"        type="button" data-i18n="mode.catalogo">Catálogo</button>
         </div>
       </div>
 
       <!-- Clusters (visible en Paradigmas/Catálogo) -->
       <div id="sb-clusters">
         <div class="sidebar-head">
-          <div class="item-title">Temas semánticos</div>
+          <div class="item-title" data-i18n="meta.temas" style="text-transform:capitalize">Temas semánticos</div>
           <div class="sidebar-stats">
             <span id="s-total"    class="s-chip s-chip-teal">—</span>
             <span id="s-featured" class="s-chip s-chip-teal">—</span>
@@ -455,9 +461,9 @@
       <div id="sb-escala" style="display:none;">
         <span class="asb-section-lbl">Ejes</span>
         <div class="asb-axis-key">
-          <div class="asb-axis-row"><span class="asb-axis-arrow">→</span><span class="asb-axis-name">Escala de la Materia</span></div>
+          <div class="asb-axis-row"><span class="asb-axis-arrow">→</span><span class="asb-axis-name" data-i18n="axis.materia">Escala de la Materia</span></div>
           <div class="asb-axis-sub">Molecular · Celular · Organismo · Lote/Prod · Campo/Sist · Paisaje</div>
-          <div class="asb-axis-row" style="margin-top:8px"><span class="asb-axis-arrow">↑</span><span class="asb-axis-name">Paradigma Tecnológico</span></div>
+          <div class="asb-axis-row" style="margin-top:8px"><span class="asb-axis-arrow">↑</span><span class="asb-axis-name" data-i18n="axis.paradigma">Paradigma Tecnológico</span></div>
           <div class="asb-axis-sub">Material/Biológico → Digital/Computacional</div>
         </div>
         <span class="asb-section-lbl" style="margin-top:14px">Temas</span>
@@ -472,15 +478,15 @@
       <!-- Sub-toolbar (Paradigmas mode) — layout modes + filters + search -->
       <div id="bio-sub-toolbar">
         <div class="vt-group" title="Modo de posicionamiento en el mapa">
-          <button id="btn-editorial" class="vt-btn active" type="button" title="Ejes fijos: bio→digital × molecular→ecosistema">Editorial</button>
-          <button id="btn-hybrid"    class="vt-btn"        type="button" title="Semántica con atracción suave hacia ejes analíticos (α=0.35)">Híbrido</button>
-          <button id="btn-semantic"  class="vt-btn"        type="button" title="UMAP puro: posición = similitud semántica real">Semántico</button>
+          <button id="btn-editorial" class="vt-btn active" type="button" data-i18n="layout.editorial">Editorial</button>
+          <button id="btn-hybrid"    class="vt-btn"        type="button" data-i18n="layout.hibrido">Híbrido</button>
+          <button id="btn-semantic"  class="vt-btn"        type="button" data-i18n="layout.semantico">Semántico</button>
         </div>
-        <button id="btn-labels" class="lbl-btn" type="button" title="Cicla: off → Anclas → Grandes">Nombres ○</button>
-        <button id="btn-filter" class="lbl-btn" type="button">Filtros</button>
-        <button id="btn-time"   class="lbl-btn" type="button" title="Animar por año de fundación">Tiempo</button>
+        <button id="btn-labels" class="lbl-btn" type="button">Nombres ○</button>
+        <button id="btn-filter" class="lbl-btn" type="button" data-i18n="layout.filtros">Filtros</button>
+        <button id="btn-time"   class="lbl-btn" type="button" data-i18n="layout.tiempo">Tiempo</button>
         <div class="srch-wrap">
-          <input id="srch-in" class="themes-select" type="search" placeholder="Buscar startup…" autocomplete="off" style="min-width:150px">
+          <input id="srch-in" class="themes-select" type="search" placeholder="Buscar startup…" data-i18n="search.startup" data-i18n-attr="placeholder" autocomplete="off" style="min-width:150px">
           <div id="srch-res" class="srch-res"></div>
         </div>
         <div class="conf-leg" style="margin-left:auto;">
@@ -1825,7 +1831,7 @@ window.openStartupDetailPanel = function openStartupDetailPanel(s){
   inner.innerHTML = `
     <div style="position:relative;padding-bottom:8px">
       <button class="bdp-close" onclick="closeDetailPanel()">×</button>
-      <p class="bdp-eyebrow">Startup · ${s.scope_decision==='include'?'BIO core':'eco-adjacent'}</p>
+      <p class="bdp-eyebrow">Startup · ${s.scope_decision==='include'?t('detail.bio_core'):t('detail.eco_adj')}</p>
       <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
         <span style="width:10px;height:10px;border-radius:2px;background:${color};flex-shrink:0;display:inline-block"></span>
         <h2 class="bdp-title" style="font-size:17px">${s.name}</h2>
@@ -1833,25 +1839,25 @@ window.openStartupDetailPanel = function openStartupDetailPanel(s){
       ${countries?`<div style="font-size:10px;color:var(--muted);margin-bottom:10px;font-family:var(--sans)">${countries}</div>`:''}
       ${desc?`<p style="font-size:11.5px;color:var(--ink);line-height:1.58;margin-bottom:14px;font-family:var(--sans)">${desc}</p>`:''}
       <div class="bdp-stat-grid">
-        ${stageLabel?`<div class="bdp-stat-cell"><div class="bdp-stat-lbl">Etapa</div><div class="bdp-stat-val">${stageLabel}</div></div>`:''}
-        ${s.n_investors_mapped>0?`<div class="bdp-stat-cell"><div class="bdp-stat-lbl">Inversores</div><div class="bdp-stat-val">${s.n_investors_mapped}</div></div>`:''}
-        ${valLabel?`<div class="bdp-stat-cell"><div class="bdp-stat-lbl">Valoración est.</div><div class="bdp-stat-val">${valLabel}</div></div>`:''}
-        ${db?`<div class="bdp-stat-cell"><div class="bdp-stat-lbl">Tech depth</div><div class="bdp-stat-val" style="color:${db.col}">${db.lbl}</div></div>`:''}
+        ${stageLabel?`<div class="bdp-stat-cell"><div class="bdp-stat-lbl">${t('detail.stage')}</div><div class="bdp-stat-val">${stageLabel}</div></div>`:''}
+        ${s.n_investors_mapped>0?`<div class="bdp-stat-cell"><div class="bdp-stat-lbl">${t('detail.investors')}</div><div class="bdp-stat-val">${s.n_investors_mapped}</div></div>`:''}
+        ${valLabel?`<div class="bdp-stat-cell"><div class="bdp-stat-lbl">${t('detail.valuation')}</div><div class="bdp-stat-val">${valLabel}</div></div>`:''}
+        ${db?`<div class="bdp-stat-cell"><div class="bdp-stat-lbl">${t('detail.tech_depth')}</div><div class="bdp-stat-val" style="color:${db.col}">${db.lbl}</div></div>`:''}
       </div>
       ${s.bio_theme?`
-        <p class="bdp-sec">Tema semántico</p>
+        <p class="bdp-sec">${t('detail.theme')}</p>
         <span class="bdp-tag" style="display:inline-flex;align-items:center;gap:5px">
           <span style="width:7px;height:7px;border-radius:1px;background:${color};display:inline-block;flex-shrink:0"></span>
           ${s.bio_theme}
         </span>
       `:''}
       ${(s.tech_codes||[]).length?`
-        <p class="bdp-sec">Tecnologías</p>
-        <div class="bdp-tags">${s.tech_codes.slice(0,5).map(t=>`<span class="bdp-tag bdp-tag-teal">${t}</span>`).join('')}</div>
+        <p class="bdp-sec">${t('detail.tech_codes')}</p>
+        <div class="bdp-tags">${s.tech_codes.slice(0,5).map(tc=>`<span class="bdp-tag bdp-tag-teal">${tc}</span>`).join('')}</div>
       `:''}
-      ${(s.sub_cluster_label)?`<p class="bdp-sec" style="margin-bottom:4px">Sub-cluster</p><div style="font-size:11px;color:var(--muted);font-family:var(--sans)">${s.sub_cluster_label}</div>`:''}
+      ${(s.sub_cluster_label)?`<p class="bdp-sec" style="margin-bottom:4px">${t('detail.subcluster')}</p><div style="font-size:11px;color:var(--muted);font-family:var(--sans)">${s.sub_cluster_label}</div>`:''}
       <a class="bdp-cta" href="${atlasUrl}" style="text-decoration:none;display:block;text-align:center;margin-top:18px">
-        Ver en Capital Atlas →
+        ${t('detail.cta_atlas')}
       </a>
     </div>
   `;
@@ -2346,20 +2352,20 @@ function el(tag,attrs,parent){
 // Explica la posición en cada eje en lenguaje natural
 // whyX usa la posición px (nueva clasificación, rango ±12)
 function whyX(px){
-  if(px<-9.5) return"Escala Molecular — trabaja con genes, proteínas, moléculas o compuestos activos.";
-  if(px<-4.5) return"Escala Celular — células, microorganismos y bioprocesos son su materia de trabajo.";
-  if(px< 0.5) return"Escala Organismo — la planta individual, el animal o el paciente es su unidad operativa.";
-  if(px< 4.8) return"Escala Lote/Producto — opera a nivel de alimento, formulación o input manufacturado.";
-  if(px< 9.5) return"Escala Campo/Sistema — su unidad es el campo, la finca, el suelo o la cuenca.";
-  return"Escala Paisaje/Planeta — ecosistemas, carbono, satélites y ciclos biogeoquímicos globales.";
+  if(px<-9.5) return t('scale.molecular');
+  if(px<-4.5) return t('scale.celular');
+  if(px< 0.5) return t('scale.organismo');
+  if(px< 4.8) return t('scale.lote');
+  if(px< 9.5) return t('scale.campo');
+  return t('scale.paisaje');
 }
 // whyY usa mpar (1.0 = Bio-Material, 3.0 = Digital) → mapeado a py = (mpar-2)*9
 function whyY(py){
-  if(py<-6.5) return"Bio-Material puro: el IP vive en la biología — una molécula, organismo o formulación.";
-  if(py<-2)   return"Predominantemente biológico, con herramientas digitales de soporte.";
-  if(py< 2)   return"Bio·Digital: combina procesos vivos con plataformas de datos en proporciones similares.";
-  if(py< 6.5) return"Predominantemente digital aplicado a sistemas biológicos.";
-  return"Digital-Computacional: el IP es informacional — datos, algoritmos o plataforma.";
+  if(py<-6.5) return t('paradigm.bio_mat');
+  if(py<-2)   return t('paradigm.bio_mat_soft');
+  if(py< 2)   return t('paradigm.bio_dig');
+  if(py< 6.5) return t('paradigm.digital_soft');
+  return t('paradigm.digital');
 }
 
 function build(){
@@ -2424,7 +2430,7 @@ function build(){
     t.textContent=lbl;
   });
   // ── Axis tick labels — Y (Paradigma, gradiente 1→3) ──────────────────────
-  [[-9,"Bio\nMaterial"],[0,"Bio·Digital"],[9,"Digital\nComp."]].forEach(([v,lbl])=>{
+  [[-9,t('axis.bio_mat')],[0,t('axis.bio_dig')],[9,t('axis.digital')]].forEach(([v,lbl])=>{
     const gy=scY(v);
     const lines=lbl.split("\n");
     const isCenter=v===0;
@@ -2443,12 +2449,12 @@ function build(){
   const axLbl=el("text",{x:PAD.l+CW/2,y:PAD.t+CH+52,
     "text-anchor":"middle","font-size":"9.5","font-weight":"600",
     fill:"#8a7d70","font-family":"DM Sans,sans-serif"},svg);
-  axLbl.textContent="← Escala de la Materia →";
+  axLbl.textContent="← "+t('axis.materia')+" →";
   const ayLbl=el("text",{x:12,y:PAD.t+CH/2,
     "text-anchor":"middle","font-size":"9.5","font-weight":"600",
     fill:"#8a7d70","font-family":"DM Sans,sans-serif",
     transform:`rotate(-90,12,${PAD.t+CH/2})`},svg);
-  ayLbl.textContent="← Paradigma →";
+  ayLbl.textContent="← "+t('axis.paradigma').split(' ')[0]+" →";
 
   // ── Plot area border ─────────────────────────────────────────────────
   el("rect",{x:PAD.l,y:PAD.t,width:CW,height:CH,fill:"none",
@@ -3369,34 +3375,34 @@ window.openDetailPanel = function openDetailPanel(tm, theme){
   inner.innerHTML=`
     <div style="position:relative;padding-bottom:4px;">
       <button class="bdp-close" onclick="closeDetailPanel()">×</button>
-      <p class="bdp-eyebrow">Tema semántico</p>
+      <p class="bdp-eyebrow">${t('detail.theme')}</p>
       <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px;">
         <span style="width:10px;height:10px;border-radius:50%;background:${color};flex-shrink:0;display:inline-block;"></span>
         <h2 class="bdp-title">${theme}</h2>
       </div>
-      <span class="bdp-count">${tm.count} startups mapeadas</span>
+      <span class="bdp-count">${tm.count} startups</span>
       ${desc ? `<p style="font-size:12px;color:var(--ink);line-height:1.55;margin-bottom:12px;font-family:var(--sans);">${desc}</p>` : ''}
       <div class="bdp-stat-grid">
-        <div class="bdp-stat-cell"><div class="bdp-stat-lbl">Con inversión</div><div class="bdp-stat-val">${tm.n_funded} (${pct}%)</div></div>
-        <div class="bdp-stat-cell"><div class="bdp-stat-lbl">Destacadas</div><div class="bdp-stat-val">${tm.n_featured}</div></div>
-        <div class="bdp-stat-cell"><div class="bdp-stat-lbl">Sub-clusters</div><div class="bdp-stat-val">${tm.subClusters.size}</div></div>
-        <div class="bdp-stat-cell"><div class="bdp-stat-lbl">Países</div><div class="bdp-stat-val">${Object.keys(tm.countries).length}</div></div>
+        <div class="bdp-stat-cell"><div class="bdp-stat-lbl">${t('detail.funded')}</div><div class="bdp-stat-val">${tm.n_funded} (${pct}%)</div></div>
+        <div class="bdp-stat-cell"><div class="bdp-stat-lbl">${t('stats.destacadas')}</div><div class="bdp-stat-val">${tm.n_featured}</div></div>
+        <div class="bdp-stat-cell"><div class="bdp-stat-lbl">${t('detail.subclusters')}</div><div class="bdp-stat-val">${tm.subClusters.size}</div></div>
+        <div class="bdp-stat-cell"><div class="bdp-stat-lbl">${t('fund.countries')}</div><div class="bdp-stat-val">${Object.keys(tm.countries).length}</div></div>
       </div>
-      <p class="bdp-sec">Sub-clusters principales</p>
+      <p class="bdp-sec">${t('detail.subclusters')}</p>
       <div class="bdp-tags">
         ${topSubs.map(([lbl,cnt])=>{
           const kw=(lbl.split(" — ")[1]||lbl).replace(/^\w+ — /,"");
           return `<span class="bdp-tag bdp-tag-teal">${kw} <span style="opacity:.6">${cnt}</span></span>`;
         }).join('')}
       </div>
-      <p class="bdp-sec">Presencia geográfica</p>
+      <p class="bdp-sec">${t('fund.countries')}</p>
       <div class="bdp-tags">
         ${topCtrs.map(([cc,cnt])=>{
           const flag=(window.FLAG_MAP&&window.FLAG_MAP[cc])||"";
           return `<span class="bdp-tag">${flag?flag+" ":""}${cc} <span style="opacity:.6">${cnt}</span></span>`;
         }).join('')}
       </div>
-      <button class="bdp-cta" onclick="closeDetailPanel()">Ver en Capital Atlas →</button>
+      <button class="bdp-cta" onclick="closeDetailPanel()">${t('detail.cta_atlas')}</button>
     </div>
   `;
 

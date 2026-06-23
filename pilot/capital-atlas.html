@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,700;1,400&family=Overpass+Mono:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css?v=20260422p">
+  <script src="./i18n.js"></script>
   <style>
     html, body.capital-atlas-page {
       height: 100%;
@@ -1101,16 +1102,21 @@
 
   <!-- ── Hero strip ──────────────────────────────────────────────────── -->
   <div class="ca-strip">
-    <span class="ca-strip-title">Capital Atlas · Ecosistema BIO</span>
+    <span class="ca-strip-title" data-i18n="strip.atlas">Capital Atlas · Ecosistema BIO</span>
     <div class="ca-strip-stats">
       <span class="ca-strip-stat"><strong id="stat-funds">—</strong> fondos</span>
-      <span class="ca-strip-stat"><strong id="stat-funded">—</strong> startups con capital</span>
+      <span class="ca-strip-stat"><strong id="stat-funded">—</strong> startups <span data-i18n="stats.funded">con capital</span></span>
       <span class="ca-strip-stat"><strong id="stat-coverage">—</strong> cobertura</span>
       <span class="ca-strip-stat"><strong id="stat-edges">—</strong> edges</span>
     </div>
-    <div style="margin-left:auto">
-      <a href="./ecosystem-graph.html" style="font-size:.7rem;color:var(--muted);text-decoration:none;border:1px solid var(--line);border-radius:8px;padding:3px 9px;background:rgba(255,255,255,.7)">Ecosystem Graph →</a>
-      <a href="./ecosystem-intelligence.html" style="font-size:.7rem;color:var(--muted);text-decoration:none;border:1px solid var(--line);border-radius:8px;padding:3px 9px;background:rgba(255,255,255,.7);margin-left:6px">Inteligencia →</a>
+    <div style="display:flex;align-items:center;gap:8px;margin-left:auto">
+      <a href="./startup-themes.html"        style="font-size:.7rem;color:var(--muted);text-decoration:none;border:1px solid var(--line);border-radius:8px;padding:3px 9px;background:rgba(255,255,255,.7)" data-i18n="nav.paradigmas">Paradigmas</a>
+      <a href="./ecosystem-intelligence.html" style="font-size:.7rem;color:var(--muted);text-decoration:none;border:1px solid var(--line);border-radius:8px;padding:3px 9px;background:rgba(255,255,255,.7)" data-i18n="nav.intel">Ecosystem Intel</a>
+      <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="es" onclick="switchLang('es')">ES</button>
+        <button class="lang-btn"        data-lang="en" onclick="switchLang('en')">EN</button>
+        <button class="lang-btn"        data-lang="pt" onclick="switchLang('pt')">PT</button>
+      </div>
     </div>
   </div>
 
@@ -1175,11 +1181,11 @@
         <!-- Sub-lentes ANÁLISIS -->
         <div class="ca-sub-lentes" id="sub-analisis" style="display:none">
           <button class="ca-sub active" data-sub-view="matrix"      type="button">Matriz</button>
-          <button class="ca-sub"        data-sub-view="embudo"      type="button">Embudo</button>
-          <button class="ca-sub"        data-sub-view="pais"        type="button">País</button>
+          <button class="ca-sub"        data-sub-view="embudo"      data-i18n="view.funnel"  type="button">Embudo</button>
+          <button class="ca-sub"        data-sub-view="pais"        data-i18n="view.country" type="button">País</button>
           <button class="ca-sub"        data-sub-view="scatter"     type="button">Posicionamiento</button>
-          <button class="ca-sub"        data-sub-view="flow"        type="button">Flujo</button>
-          <button class="ca-sub"        data-sub-view="stages"      type="button">Etapas</button>
+          <button class="ca-sub"        data-sub-view="flow"        data-i18n="view.flow"    type="button">Flujo</button>
+          <button class="ca-sub"        data-sub-view="stages"      data-i18n="view.stages"  type="button">Etapas</button>
         </div>
 
         <div class="tb-divider"></div>

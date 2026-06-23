@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,700;1,400&family=Overpass+Mono:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css?v=20260524">
+  <script src="./i18n.js"></script>
   <style>
     html, body { height: 100%; }
     body {
@@ -1045,17 +1046,21 @@
 
 <!-- TOP BAR -->
 <div class="iq-topbar">
-  <span class="iq-title">Inteligencia · Ecosistema BIO</span>
+  <span class="iq-title" data-i18n="strip.intel">Inteligencia · Ecosistema BIO</span>
   <div class="iq-nav-links">
-    <a href="./index.html">Inicio</a>
-    <a href="./capital-atlas.html">Capital Atlas</a>
-    <a href="./startup-themes.html">Mapa de Paradigmas</a>
+    <a href="./startup-themes.html"  data-i18n="nav.paradigmas">Paradigmas</a>
+    <a href="./capital-atlas.html"   data-i18n="nav.atlas">Capital Atlas</a>
     <a href="./ecosystem-graph.html">Grafo</a>
   </div>
   <div id="apiBadge" class="iq-api-badge">Búsqueda local</div>
   <div class="iq-role-wrap">
     <button class="iq-role-btn" id="roleBtn" title="Cambiar rol">⚙ Rol: <span id="roleBtnLabel">CAB Staff</span></button>
     <div class="iq-role-dropdown" id="roleDropdown" style="display:none"></div>
+  </div>
+  <div class="lang-switcher">
+    <button class="lang-btn active" data-lang="es" onclick="switchLang('es')">ES</button>
+    <button class="lang-btn"        data-lang="en" onclick="switchLang('en')">EN</button>
+    <button class="lang-btn"        data-lang="pt" onclick="switchLang('pt')">PT</button>
   </div>
 </div>
 
@@ -1068,6 +1073,7 @@
       id="searchInput"
       class="iq-search-input"
       type="text"
+      data-i18n="search.query" data-i18n-attr="placeholder"
       placeholder="¿Qué conexión querés activar? Startup, inversor, vertical…"
       autocomplete="off"
       spellcheck="false"
