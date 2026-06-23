@@ -1167,7 +1167,6 @@ HEALTH_OUT_PATH = ROOT / "pilot" / "ecosystem-health-data.js"
 
 _ALL_THEMES = [
     "Bioinputs & Crop Resilience",
-    "Bioinputs & Soil Health",
     "Precision Agriculture",
     "Nature & Ecosystem Tech",
     "Food Systems & Alt Proteins",

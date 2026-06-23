@@ -32925,7 +32925,7 @@ window.CAPITAL_ATLAS_DATA = {
       "country": "MX",
       "founded_year": 2018,
       "scope_decision": "include",
-      "theme": "Bioinputs & Soil Health",
+      "theme": "Diagnostics & Devices",
       "theme_secondary": "Therapeutics",
       "legacy_macro_theme": "diagnostics and medtech",
       "emergent_theme": "Therapeutics",
