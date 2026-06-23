@@ -344,10 +344,11 @@
     #canvas-paradigmas .canvas-wrap{
       border-radius:0!important;border:none!important;flex:1 1 auto;min-height:0;
     }
-    #canvas-arbol,#canvas-escala{flex:1;min-height:0;}
-    #canvas-arbol .analysis-stage,#canvas-escala .analysis-stage{
-      height:100%;border-radius:0!important;border:none!important;
-    }
+    #canvas-arbol{flex:1;min-height:0;overflow-y:auto;overflow-x:hidden;}
+    #canvas-arbol .analysis-stage{width:100%;border-radius:0!important;border:none!important;}
+    #canvas-escala{flex:1;min-height:0;overflow:hidden;flex-direction:column;}
+    #canvas-escala .analysis-stage{flex:1;min-height:0;width:100%;display:flex;flex-direction:column;border-radius:0!important;border:none!important;}
+    #scatter-svg{flex:1;min-height:0;width:100%;display:block;}
     /* Detail panel slide-in */
     #bio-detail{
       flex-shrink:0;border-left:1px solid var(--line);background:var(--panel);
@@ -554,7 +555,7 @@
 
       <!-- CANVAS: Árbol (filogenia — oculto por default) -->
       <div id="canvas-arbol" style="display:none;">
-        <div class="analysis-stage" style="height:100%;">
+        <div class="analysis-stage">
           <svg id="dendro-svg"></svg>
           <div id="dendro-tt" class="a-tooltip"></div>
         </div>
@@ -562,7 +563,7 @@
 
       <!-- CANVAS: Escala (paradigmas scatter — oculto por default) -->
       <div id="canvas-escala" style="display:none;">
-        <div class="analysis-stage" style="height:100%;">
+        <div class="analysis-stage">
           <svg id="scatter-svg"></svg>
           <div id="scatter-tt" class="a-tooltip"></div>
         </div>
@@ -2362,9 +2363,11 @@ function whyY(py){
 }
 
 function build(){
+  // Defer if container not yet visible
+  const W=svg.parentElement.clientWidth||svg.getBoundingClientRect().width;
+  const H=svg.parentElement.clientHeight||svg.getBoundingClientRect().height;
+  if(!W||!H) return;
   svg.innerHTML="";
-  const W=svg.parentElement.clientWidth||600;
-  const H=svg.parentElement.clientHeight||460;
   svg.setAttribute("viewBox",`0 0 ${W} ${H}`);
 
   const PAD={t:36,r:24,b:68,l:70};
@@ -2552,6 +2555,7 @@ function applyVisibility(){
   });
 }
 
+window.scatterBuild = build;
 build();
 const ro=new ResizeObserver(()=>build());
 ro.observe(svg.parentElement);
@@ -2786,8 +2790,10 @@ function el(tag,attrs,parent){
   return e;
 }
 function build(){
+  // Defer if container is hidden — ResizeObserver will re-trigger when visible
+  const W=svg.parentElement.clientWidth;
+  if(!W) return;
   svg.innerHTML="";
-  const W=svg.parentElement.clientWidth||800;
   const PAD={t:20,r:20,b:20,l:20};
   const CW=W-PAD.l-PAD.r;
 
@@ -2859,7 +2865,7 @@ function build(){
   const totalGap=nMegaGaps*GAP_MEGA + (MACRO_ORDER.length-1-nMegaGaps)*GAP_MACRO;
   const MIN_ROW=20;
   const H=Math.max(520, N*MIN_ROW+totalGap+PAD.t+PAD.b);
-  svg.parentElement.style.height=H+"px";
+  svg.style.cssText="width:100%;display:block;height:"+H+"px";
   svg.setAttribute("viewBox",`0 0 ${W} ${H}`);
   el("rect",{x:0,y:0,width:W,height:H,fill:"#f7f4ee"},svg);
   const CH=H-PAD.t-PAD.b;
@@ -3229,6 +3235,7 @@ function build(){
   });
 }
 
+window.treeBuild = build;
 build();
 const ro=new ResizeObserver(()=>build());
 ro.observe(svg.parentElement);
@@ -3303,10 +3310,11 @@ function switchCanvasMode(mode){
     if(btn) btn.classList.toggle('active', m===mode);
   });
 
-  // Mostrar/ocultar canvas
+  // Mostrar/ocultar canvas (árbol usa block para que overflow-y scroll funcione)
   const showCanv = (id, show) => {
     const el=document.getElementById(id);
-    if(el) el.style.display = show ? 'flex' : 'none';
+    if(!el) return;
+    el.style.display = show ? (id==='canvas-arbol' ? 'block' : 'flex') : 'none';
   };
   showCanv('canvas-paradigmas', mode==='paradigmas'||mode==='catalogo');
   showCanv('canvas-arbol',       mode==='arbol');
@@ -3330,8 +3338,13 @@ function switchCanvasMode(mode){
     switchLayoutMode('editorial');
   }
 
-  // Trigger resize en el SVG visible para que se redimensione correctamente
-  setTimeout(()=>window.dispatchEvent(new Event('resize')), 50);
+  // Trigger rebuild en el SVG visible — los ResizeObservers ya hacen esto,
+  // pero un setTimeout garantiza que el layout haya calculado dimensiones reales
+  setTimeout(()=>{
+    if(mode==='escala'   && typeof scatterBuild==='function') scatterBuild();
+    if(mode==='arbol'    && typeof treeBuild   ==='function') treeBuild();
+    window.dispatchEvent(new Event('resize'));
+  }, 60);
 }
 
 // Event listeners para los 4 botones de modo
