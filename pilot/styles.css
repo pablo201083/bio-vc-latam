@@ -1,15 +1,19 @@
 :root {
-  --bg: #f2ede3;
-  --panel: #fdfaf4;
-  --ink: #181714;
-  --muted: #6a6258;
-  --line: #d8ccc0;
-  --accent: #0B8F87;
-  --accent-soft: #d2f0ee;
-  --warm: #9a3412;
-  --warm-soft: #ffe6d9;
-  --shadow: 0 12px 28px rgba(30, 22, 12, 0.09);
-  --sans: 'DM Sans', system-ui, -apple-system, sans-serif;
+  --bg:          #F5F2EC;
+  --panel:       #FFFFFF;
+  --ink:         #1B1B19;
+  --muted:       #6B6560;
+  --line:        #D4CCC2;
+  --line-s:      #A09890;
+  --accent:      #0B5C58;
+  --accent-soft: rgba(11,92,88,.09);
+  --accent-mid:  rgba(11,92,88,.18);
+  --warm:        #8A3620;
+  --warm-soft:   rgba(138,54,32,.08);
+  --warm-mid:    rgba(138,54,32,.45);
+  --shadow:      none;
+  --sans:        'Overpass Mono', 'Courier New', monospace;
+  --serif:       'EB Garamond', Georgia, serif;
 }
 
 * {
