@@ -79,7 +79,8 @@
     .cr{padding:9px 11px;border:1px solid rgba(217,206,190,.65);border-left:3px solid var(--cr-color,rgba(217,206,190,.65));border-radius:9px;background:rgba(255,255,255,.78);cursor:pointer;transition:background .13s,box-shadow .13s,opacity .13s}
     .cr:hover{background:rgba(255,255,255,.98);box-shadow:0 2px 8px rgba(0,0,0,.07)}
     .cr.active{background:rgba(255,255,255,.98);box-shadow:0 3px 14px rgba(0,0,0,.1)}
-    .cr.dimmed{opacity:.25}
+    .cr.dimmed{opacity:.35}
+    .cr.dimmed .cr-tags,.cr.dimmed .cr-count{display:none}
     .cr-top{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:7px;align-items:center;margin-bottom:4px}
     .cr-dot{display:none}
     .cr-name{font-size:.875rem;font-weight:700;color:var(--ink);line-height:1.2;letter-spacing:-.01em}
@@ -99,8 +100,15 @@
     .cr-det-chips{display:flex;flex-wrap:wrap;gap:3px;margin-bottom:4px}
     .cr-det-chip{border-radius:4px;border:1px solid var(--line);background:#fff;padding:2px 7px;font-size:.69rem;color:var(--muted)}
     .cr-det-chip-teal{background:rgba(11,143,135,.09);color:var(--accent);border-color:rgba(11,143,135,.3)}
-    .cr-det-row{display:flex;justify-content:space-between;gap:8px;font-size:.75rem;color:var(--ink);padding:1px 0}
-    .cr-det-row span:last-child{color:var(--muted);white-space:nowrap;font-size:.7rem}
+    .cr-det-body{padding-bottom:4px}
+    .cr-det-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:6px;overflow:hidden;margin-bottom:10px}
+    .cr-det-cell{padding:7px 9px;background:var(--panel)}
+    .cr-det-lbl{font-size:.6rem;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);margin-bottom:2px}
+    .cr-det-val{font-size:.85rem;font-weight:700;color:var(--ink);line-height:1}
+    .cr-det-pct{font-size:.7rem;font-weight:400;color:var(--muted);margin-left:3px}
+    .cr-det-row{display:flex;justify-content:space-between;gap:8px;font-size:.75rem;color:var(--ink);padding:2px 0}
+    .cr-det-co{font-weight:500}
+    .cr-det-meta{color:var(--muted);white-space:nowrap;font-size:.68rem}
 
     .themes-stage{padding:14px;display:flex;flex-direction:column;gap:10px;position:relative;overflow:visible}
     .tb-row{display:flex;flex-wrap:wrap;gap:7px;align-items:center}
@@ -259,81 +267,230 @@
       .sh-theme-pills{display:none;}
       .sh-foot{display:none;}
     }
+
+    /* ── Nuevo layout viewport (rediseño estructural jun 2026) ─────────────── */
+    :root{
+      --bio-teal:#0B5C58;--bio-teal-soft:rgba(11,92,88,.09);
+      --bio-ink:#1B1B19;--bio-muted:#6B6560;--bio-line:#D4CCC2;
+      --bio-bg:#F5F2EC;--bio-panel:#fff;--bio-line-s:#A09890;
+    }
+    #bio-app{display:flex;flex-direction:column;height:100vh;overflow:hidden;}
+    /* Topnav */
+    #bio-topnav{
+      height:48px;flex-shrink:0;background:var(--panel);border-bottom:1px solid var(--line);
+      display:flex;align-items:center;padding:0 20px;gap:0;font-family:var(--sans);
+    }
+    .bio-nav-brand{
+      display:flex;align-items:center;gap:9px;padding-right:20px;
+      border-right:1px solid var(--line);margin-right:14px;flex-shrink:0;
+    }
+    .bio-nav-logo{
+      width:26px;height:26px;background:var(--ink);border-radius:2px;
+      display:flex;align-items:center;justify-content:center;flex-shrink:0;
+    }
+    .bio-nav-logo span{color:#fff;font-family:Georgia,serif;font-size:14px;font-weight:600;line-height:1;letter-spacing:-.02em;}
+    .bio-nav-name{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink);white-space:nowrap;}
+    .bio-nav-links{display:flex;align-items:stretch;gap:2px;flex:1;}
+    .bio-nav-link{
+      font-size:11px;letter-spacing:.07em;text-transform:uppercase;padding:5px 14px;
+      border:none;border-radius:4px;cursor:pointer;transition:background .15s;
+      text-decoration:none;display:inline-flex;align-items:center;font-family:var(--sans);
+    }
+    .bio-nav-link.active{background:var(--bio-ink);color:#fff;}
+    .bio-nav-link:not(.active){background:transparent;color:var(--bio-muted);}
+    .bio-nav-link:not(.active):hover{background:rgba(0,0,0,.05);color:var(--bio-ink);}
+    .bio-nav-live{display:flex;align-items:center;gap:6px;padding-left:20px;border-left:1px solid var(--line);flex-shrink:0;font-family:var(--sans);}
+    .bio-nav-dot{width:5px;height:5px;border-radius:50%;background:var(--bio-teal);}
+    /* Context strip 36px (reemplaza header 180px) */
+    #bio-strip{
+      height:36px;flex-shrink:0;background:var(--panel);border-bottom:1px solid var(--line);
+      display:flex;align-items:center;padding:0 16px;gap:16px;font-family:var(--sans);
+    }
+    #bio-strip-title{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--bio-ink);}
+    #bio-strip-stats{font-size:11px;color:var(--bio-muted);}
+    #bio-strip-meta{font-size:10px;color:var(--bio-muted);font-style:italic;margin-left:auto;}
+    /* Main flex row */
+    #bio-main{flex:1;min-height:0;display:flex;overflow:hidden;}
+    /* Sidebar */
+    #bio-sidebar{
+      width:260px;flex-shrink:0;border-right:1px solid var(--line);background:var(--panel);
+      display:flex;flex-direction:column;overflow:hidden;
+    }
+    /* Mode selector en sidebar */
+    #bio-mode-btns{
+      flex-shrink:0;padding:10px;border-bottom:2px solid var(--line);font-family:var(--sans);
+    }
+    .bio-mode-label{font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--bio-muted);margin-bottom:7px;display:block;}
+    .bio-mode-grid{display:grid;grid-template-columns:1fr 1fr;gap:3px;}
+    .bio-mode-btn{
+      font-family:var(--sans);font-size:10px;letter-spacing:.04em;text-transform:uppercase;
+      padding:5px 0;border:1px solid var(--line);border-radius:2px;cursor:pointer;
+      transition:all .15s;background:transparent;color:var(--bio-muted);
+    }
+    .bio-mode-btn.active{background:var(--bio-ink);color:#fff;border-color:var(--bio-ink);}
+    .bio-mode-btn:not(.active):hover{background:rgba(0,0,0,.04);color:var(--bio-ink);}
+    /* Sidebar sections */
+    #sb-clusters{display:flex;flex-direction:column;flex:1;min-height:0;overflow:hidden;}
+    #sb-arbol,#sb-escala{flex:1;overflow-y:auto;padding:12px 14px;font-family:var(--sans);}
+    /* Canvas area */
+    #bio-canvas-area{flex:1;min-width:0;display:flex;flex-direction:column;overflow:hidden;position:relative;}
+    /* Sub-toolbar en canvas area */
+    #bio-sub-toolbar{
+      flex-shrink:0;padding:7px 12px;border-bottom:1px solid var(--line);
+      display:flex;flex-wrap:wrap;gap:7px;align-items:center;background:var(--panel);
+    }
+    /* Canvas wrappers como modos */
+    #canvas-paradigmas{flex:1;display:flex;flex-direction:column;min-height:0;}
+    #canvas-paradigmas .canvas-wrap{
+      border-radius:0!important;border:none!important;flex:1 1 auto;min-height:0;
+    }
+    #canvas-arbol,#canvas-escala{flex:1;min-height:0;}
+    #canvas-arbol .analysis-stage,#canvas-escala .analysis-stage{
+      height:100%;border-radius:0!important;border:none!important;
+    }
+    /* Detail panel slide-in */
+    #bio-detail{
+      flex-shrink:0;border-left:1px solid var(--line);background:var(--panel);
+      overflow:hidden;display:flex;flex-direction:column;
+      width:0;
+    }
+    #bio-detail-inner{width:260px;min-width:260px;padding:20px;overflow-y:auto;}
+    @keyframes slideR{from{transform:translateX(20px);opacity:0}to{transform:translateX(0);opacity:1}}
+    /* Detail panel content styles */
+    .bdp-eyebrow{font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--bio-muted);margin-bottom:8px;font-family:var(--sans);}
+    .bdp-title{font-family:Georgia,"Times New Roman",serif;font-size:20px;font-weight:400;color:var(--bio-ink);line-height:1.2;margin-bottom:4px;}
+    .bdp-count{font-size:11px;color:var(--bio-muted);margin-bottom:14px;display:block;font-family:var(--sans);}
+    .bdp-stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);margin-bottom:14px;}
+    .bdp-stat-cell{padding:9px;background:var(--panel);}
+    .bdp-stat-lbl{font-size:10px;color:var(--bio-muted);margin-bottom:2px;font-family:var(--sans);}
+    .bdp-stat-val{font-size:12px;color:var(--bio-ink);font-family:var(--sans);}
+    .bdp-sec{font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--bio-muted);margin:12px 0 6px;font-family:var(--sans);}
+    .bdp-tags{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:14px;}
+    .bdp-tag{font-size:11px;padding:3px 8px;border:1px solid var(--line);border-radius:2px;color:var(--bio-ink);background:#fff;font-family:var(--sans);}
+    .bdp-tag-teal{border-color:rgba(11,92,88,.3);background:rgba(11,92,88,.06);color:var(--bio-teal);}
+    .bdp-cta{
+      font-family:var(--sans);width:100%;font-size:11px;letter-spacing:.08em;text-transform:uppercase;
+      padding:9px;border:1.5px solid var(--bio-ink);border-radius:2px;background:transparent;
+      color:var(--bio-ink);cursor:pointer;margin-top:8px;
+    }
+    .bdp-close{
+      position:absolute;top:12px;right:12px;width:22px;height:22px;border-radius:50%;
+      border:1px solid var(--line);background:transparent;cursor:pointer;
+      font-size:12px;color:var(--bio-muted);display:flex;align-items:center;justify-content:center;
+      font-family:var(--sans);
+    }
+    .bdp-close:hover{background:rgba(0,0,0,.05);}
   </style>
 </head>
 <body>
-<div class="page-shell">
-  <header class="site-header">
-    <div class="sh-band">
-      <div class="sh-left">
-        <p class="sh-eyebrow">Ecosistema BioTech Latinoamericano</p>
-        <h1 class="sh-title">BIO LATAM</h1>
-        <p class="sh-sub">Mapa semántico de startups, inversores y tecnologías</p>
-      </div>
-      <div class="sh-sep"></div>
-      <div class="sh-legend">
-        <div class="sh-theme-pills" id="sh-theme-legend"><!-- populated by JS --></div>
-      </div>
-      <div class="sh-right">
-        <div class="sh-stats">
-          <div class="sh-stat">
-            <span class="sh-sv" id="meta-total">—</span>
-            <span class="sh-sl">startups</span>
-          </div>
-          <div class="sh-stat">
-            <span class="sh-sv" id="meta-clusters">—</span>
-            <span class="sh-sl">temas</span>
-          </div>
-        </div>
-        <div class="sh-nav">
-          <a href="./cluster-quality.html" class="sh-link">Calidad →</a>
-          <a href="./index.html" class="sh-link">← Piloto</a>
-        </div>
-      </div>
-    </div>
-    <div class="sh-foot">
-      <span class="sh-foot-dot"></span>
-      <span id="meta-model">—</span>
-      · HDBSCAN min_cluster_size=8 · UMAP 10D→2D · reclassify_v2
-    </div>
-  </header>
+<div id="bio-app">
 
-  <section class="themes-layout">
-    <aside class="themes-sidebar">
-      <div class="sidebar-head">
-        <div class="item-title">Clusters semánticos</div>
-        <div class="sidebar-stats">
-          <span id="s-total" class="s-chip s-chip-teal">—</span>
-          <span id="s-featured" class="s-chip s-chip-teal">—</span>
-          <span id="s-funded" class="s-chip s-chip-muted">—</span>
+  <!-- ══ TOPNAV 48px ══ -->
+  <nav id="bio-topnav">
+    <div class="bio-nav-brand">
+      <div class="bio-nav-logo"><span>b</span></div>
+      <span class="bio-nav-name">BIO VC LATAM</span>
+    </div>
+    <div class="bio-nav-links">
+      <a href="./startup-themes.html"       class="bio-nav-link active">Paradigmas</a>
+      <a href="./capital-atlas.html"         class="bio-nav-link">Capital Atlas</a>
+      <a href="./ecosystem-intelligence.html" class="bio-nav-link">Ecosystem Intel</a>
+      <a href="./cluster-quality.html"       class="bio-nav-link">Calidad</a>
+    </div>
+    <div class="bio-nav-live">
+      <div class="bio-nav-dot"></div>
+      <span style="font-size:11px;color:var(--bio-muted);">HDBSCAN · UMAP 10D→2D</span>
+    </div>
+  </nav>
+
+  <!-- ══ CONTEXT STRIP 36px (reemplaza header ~180px) ══ -->
+  <div id="bio-strip">
+    <span id="bio-strip-title">Paradigmas Emergentes</span>
+    <span id="bio-strip-stats">
+      <span id="meta-total">—</span> startups · <span id="meta-clusters">—</span> temas semánticos
+    </span>
+    <span id="bio-strip-meta"><span id="meta-model">—</span></span>
+  </div>
+
+  <!-- ══ MAIN AREA ══ -->
+  <div id="bio-main">
+
+    <!-- ── SIDEBAR 260px ── -->
+    <aside id="bio-sidebar">
+
+      <!-- Mode selector (en sidebar, no en canvas) -->
+      <div id="bio-mode-btns">
+        <span class="bio-mode-label">Modo de análisis</span>
+        <div class="bio-mode-grid">
+          <button id="mode-paradigmas" class="bio-mode-btn active" type="button">Paradigmas</button>
+          <button id="mode-arbol"      class="bio-mode-btn"        type="button">Árbol</button>
+          <button id="mode-escala"     class="bio-mode-btn"        type="button">Escala</button>
+          <button id="mode-catalogo"   class="bio-mode-btn"        type="button">Catálogo</button>
         </div>
       </div>
-      <div id="cluster-list" class="cluster-list"></div>
+
+      <!-- Clusters (visible en Paradigmas/Catálogo) -->
+      <div id="sb-clusters">
+        <div class="sidebar-head">
+          <div class="item-title">Temas semánticos</div>
+          <div class="sidebar-stats">
+            <span id="s-total"    class="s-chip s-chip-teal">—</span>
+            <span id="s-featured" class="s-chip s-chip-teal">—</span>
+            <span id="s-funded"   class="s-chip s-chip-muted">—</span>
+          </div>
+        </div>
+        <div id="cluster-list" class="cluster-list"></div>
+      </div>
+
+      <!-- Árbol legend (visible en modo Árbol) -->
+      <div id="sb-arbol" style="display:none;">
+        <span class="asb-section-lbl">Grandes grupos</span>
+        <div id="dendro-macro-legend"></div>
+        <span class="asb-section-lbl" style="margin-top:14px">Temas</span>
+        <div id="dendro-theme-legend"></div>
+      </div>
+
+      <!-- Escala legend (visible en modo Escala) -->
+      <div id="sb-escala" style="display:none;">
+        <span class="asb-section-lbl">Ejes</span>
+        <div class="asb-axis-key">
+          <div class="asb-axis-row"><span class="asb-axis-arrow">→</span><span class="asb-axis-name">Escala de la Materia</span></div>
+          <div class="asb-axis-sub">Molecular · Celular · Organismo · Lote/Prod · Campo/Sist · Paisaje</div>
+          <div class="asb-axis-row" style="margin-top:8px"><span class="asb-axis-arrow">↑</span><span class="asb-axis-name">Paradigma Tecnológico</span></div>
+          <div class="asb-axis-sub">Material/Biológico → Digital/Computacional</div>
+        </div>
+        <span class="asb-section-lbl" style="margin-top:14px">Temas</span>
+        <div id="scatter-legend"></div>
+      </div>
+
     </aside>
 
-    <main class="themes-stage">
-      <div class="tb-between">
-        <div class="tb-row">
-          <div class="vt-group" title="Modo de posicionamiento en el mapa">
-            <button id="btn-editorial" class="vt-btn active" type="button" title="Ejes fijos: bio→digital × molecular→ecosistema">Editorial</button>
-            <button id="btn-hybrid"    class="vt-btn"        type="button" title="Semántica con atracción suave hacia ejes analíticos (α=0.35)">Híbrido</button>
-            <button id="btn-semantic"  class="vt-btn"        type="button" title="UMAP puro: posición = similitud semántica real">Semántico</button>
-          </div>
-          <button id="btn-labels" class="lbl-btn" type="button" title="Cicla: off → Anclas → Grandes">Nombres ○</button>
-          <button id="btn-filter" class="lbl-btn" type="button">Filtros</button>
-          <button id="btn-time"   class="lbl-btn" type="button" title="Animar por año de fundación">Tiempo</button>
-          <div class="srch-wrap">
-            <input id="srch-in" class="themes-select" type="search" placeholder="Buscar startup…" autocomplete="off" style="min-width:150px">
-            <div id="srch-res" class="srch-res"></div>
-          </div>
+    <!-- ── CANVAS AREA flex:1 ── -->
+    <div id="bio-canvas-area">
+
+      <!-- Sub-toolbar (Paradigmas mode) — layout modes + filters + search -->
+      <div id="bio-sub-toolbar">
+        <div class="vt-group" title="Modo de posicionamiento en el mapa">
+          <button id="btn-editorial" class="vt-btn active" type="button" title="Ejes fijos: bio→digital × molecular→ecosistema">Editorial</button>
+          <button id="btn-hybrid"    class="vt-btn"        type="button" title="Semántica con atracción suave hacia ejes analíticos (α=0.35)">Híbrido</button>
+          <button id="btn-semantic"  class="vt-btn"        type="button" title="UMAP puro: posición = similitud semántica real">Semántico</button>
         </div>
-        <div class="conf-leg">
+        <button id="btn-labels" class="lbl-btn" type="button" title="Cicla: off → Anclas → Grandes">Nombres ○</button>
+        <button id="btn-filter" class="lbl-btn" type="button">Filtros</button>
+        <button id="btn-time"   class="lbl-btn" type="button" title="Animar por año de fundación">Tiempo</button>
+        <div class="srch-wrap">
+          <input id="srch-in" class="themes-select" type="search" placeholder="Buscar startup…" autocomplete="off" style="min-width:150px">
+          <div id="srch-res" class="srch-res"></div>
+        </div>
+        <div class="conf-leg" style="margin-left:auto;">
           <span class="cs" style="width:5px;height:5px;background:#bbb"></span>~$3M
           <span class="cs" style="width:10px;height:10px;background:#999"></span>~$10M
           <span class="cs" style="width:16px;height:16px;background:var(--accent)"></span>~$50M
           <span class="cs" style="width:24px;height:24px;background:var(--accent)"></span>~$200M+
         </div>
       </div>
+
+      <!-- Time player (solo visible cuando se activa) -->
       <div id="time-player" class="time-player">
         <button id="tp-play" class="tp-play" type="button" title="Reproducir / Pausar">▶</button>
         <span id="tp-year" class="tp-year">2000</span>
@@ -341,6 +498,8 @@
         <span class="tp-range">2000 — 2023</span>
         <span id="tp-count" class="tp-count"></span>
       </div>
+
+      <!-- Filter panel (overlay posicionado relativo a bio-canvas-area) -->
       <div id="filter-panel" class="filter-panel">
         <div class="fp-row">
           <div class="fp-sec-head"><span class="fp-sec-lbl">Fondo / Inversor</span><button id="clr-fund" class="fp-sec-clr" type="button">limpiar selección</button></div>
@@ -375,76 +534,55 @@
           <div id="legacy-chips" class="fp-chips" style="flex-wrap:wrap;overflow-x:visible"></div>
         </div>
       </div>
+
+      <!-- Breadcrumbs overlay -->
       <div id="breadcrumbs" class="breadcrumbs"></div>
-      <div class="canvas-wrap" id="canvas-wrap">
-        <svg id="themes-svg"></svg>
-        <div id="hov-card" class="hov"></div>
-        <div id="anim-overlay" class="anim-overlay"></div>
-        <div class="z-ctrl">
-          <button id="z-in" class="z-btn" type="button">+</button>
-          <button id="z-out" class="z-btn" type="button">−</button>
-          <button id="z-reset" class="z-btn" type="button" title="Reset">↺</button>
-        </div>
-      </div>
-    </main>
-  </section>
 
-  <!-- ── Analysis: Scatter + Dendrogram ───────────────────────────────── -->
-  <section class="analysis-section">
-
-    <!-- Espacio de Paradigmas -->
-    <div class="analysis-module">
-      <aside class="analysis-sidebar">
-        <div class="analysis-sidebar-head">
-          <div class="analysis-eyebrow">Dimensión Conceptual</div>
-          <h2 class="analysis-title">Espacio de Paradigmas</h2>
-          <p class="analysis-desc">Cada startup posicionada según la <strong>escala de la materia</strong> sobre la que opera — de átomos y moléculas a ecosistemas — y su <strong>paradigma tecnológico</strong>, de lo biológico-material a lo digital-computacional.</p>
-        </div>
-        <div class="analysis-sidebar-body">
-          <span class="asb-section-lbl">Ejes</span>
-          <div class="asb-axis-key">
-            <div class="asb-axis-row"><span class="asb-axis-arrow">→</span><span class="asb-axis-name">Escala de la Materia</span></div>
-            <div class="asb-axis-sub">Molecular · Celular · Organismo · Lote/Producto · Campo/Sistema · Paisaje/Planeta</div>
-            <div class="asb-axis-row" style="margin-top:8px"><span class="asb-axis-arrow">↑</span><span class="asb-axis-name">Paradigma Tecnológico</span></div>
-            <div class="asb-axis-sub">Material / Biológico → Digital / Computacional</div>
+      <!-- CANVAS: Paradigmas (UMAP scatter — default) -->
+      <div id="canvas-paradigmas">
+        <div class="canvas-wrap" id="canvas-wrap">
+          <svg id="themes-svg"></svg>
+          <div id="hov-card" class="hov"></div>
+          <div id="anim-overlay" class="anim-overlay"></div>
+          <div class="z-ctrl">
+            <button id="z-in"    class="z-btn" type="button">+</button>
+            <button id="z-out"   class="z-btn" type="button">−</button>
+            <button id="z-reset" class="z-btn" type="button" title="Reset">↺</button>
           </div>
-          <span class="asb-section-lbl" style="margin-top:14px">Temas</span>
-          <div id="scatter-legend"></div>
-        </div>
-      </aside>
-      <div class="analysis-main">
-        <div class="analysis-stage" style="height:520px">
-          <svg id="scatter-svg"></svg>
-          <div id="scatter-tt" class="a-tooltip"></div>
         </div>
       </div>
-    </div>
 
-    <!-- Árbol Evolutivo -->
-    <div class="analysis-module">
-      <aside class="analysis-sidebar">
-        <div class="analysis-sidebar-head">
-          <div class="analysis-eyebrow">Filogenia del Ecosistema</div>
-          <h2 class="analysis-title">Árbol Evolutivo</h2>
-          <p class="analysis-desc">El ecosistema como árbol de vida. <strong>Reinos, clases, órdenes y familias</strong> de innovación conectadas por herencia tecnológica — de la biología molecular a la inteligencia de campo.</p>
-        </div>
-        <div class="analysis-sidebar-body">
-          <span class="asb-section-lbl">Grandes grupos</span>
-          <div id="dendro-macro-legend"></div>
-          <span class="asb-section-lbl" style="margin-top:14px">Temas</span>
-          <div id="dendro-theme-legend"></div>
-        </div>
-      </aside>
-      <div class="analysis-main">
-        <div class="analysis-stage" style="height:520px">
+      <!-- CANVAS: Árbol (filogenia — oculto por default) -->
+      <div id="canvas-arbol" style="display:none;">
+        <div class="analysis-stage" style="height:100%;">
           <svg id="dendro-svg"></svg>
           <div id="dendro-tt" class="a-tooltip"></div>
         </div>
       </div>
-    </div>
 
-  </section>
-</div>
+      <!-- CANVAS: Escala (paradigmas scatter — oculto por default) -->
+      <div id="canvas-escala" style="display:none;">
+        <div class="analysis-stage" style="height:100%;">
+          <svg id="scatter-svg"></svg>
+          <div id="scatter-tt" class="a-tooltip"></div>
+        </div>
+      </div>
+
+    </div><!-- /#bio-canvas-area -->
+
+
+  </div><!-- /#bio-main -->
+</div><!-- /#bio-app -->
+
+<!-- ══ STUBS para IDs que el JS original referencia (header removed) ══ -->
+<span id="sh-theme-legend" style="display:none"></span>
+
+<!-- ══ Análisis: Scatter sidebar info ya vive en #sb-escala arriba ══ -->
+<!-- El antiguo .analysis-sidebar-head ahora está inlined en #sb-escala -->
+<!-- Los SVGs #scatter-svg y #dendro-svg ahora viven en los canvas-modes -->
+
+<!-- LEGACY SHIM: el JS del scatter busca analysis-sidebar-body para la leyenda -->
+<!-- Esos IDs (#scatter-legend, #dendro-macro-legend, #dendro-theme-legend) ya están en los sidebars de arriba -->
 
 <script src="./text-clean.js?v=20260613_181300"></script>
 <script src="./startup-themes-data.js?v=20260614_143304"></script>
@@ -526,6 +664,8 @@ startups.forEach(s=>{
 
 // Active theme filter (replaces activeCluster for primary navigation)
 let activeTheme=null;
+// Expose themeMap globally for detail panel
+window._themeMap=themeMap;
 
 // Stats header
 document.getElementById("meta-model").textContent=D.model;
@@ -996,18 +1136,6 @@ function updateHalos(){
           }
         }
 
-        // Conteo pequeño centrado en el blob — solo si el sub-cluster tiene ≥4 nodos
-        // para no saturar los grupos chicos. Sin pills, sin fondo, texto mínimo.
-        if(e.nodes.length>=4){
-          const ct=document.createElementNS(NS,"text");
-          ct.setAttribute("x",cx.toFixed(1));ct.setAttribute("y",(cy+2).toFixed(1));
-          ct.setAttribute("text-anchor","middle");ct.setAttribute("dominant-baseline","middle");
-          ct.setAttribute("font-size","7");ct.setAttribute("font-weight","500");
-          ct.setAttribute("fill",themeColor);ct.setAttribute("opacity","0.45");
-          ct.setAttribute("pointer-events","none");
-          ct.textContent=`${e.nodes.length}`;
-          gThemeLabels.appendChild(ct);
-        }
       });
     }
     return;
@@ -1490,31 +1618,51 @@ function buildThemeDetailHTML(tm){
   themeNodes.forEach(n=>{const sl=n.d.sub_cluster_label;if(sl)subLabels.set(sl,(subLabels.get(sl)||0)+1);});
   const topCountries=Object.entries(tm.countries).sort((a,b)=>b[1]-a[1]).slice(0,4);
   const desc=THEME_DESC[tm.name]||"";
-  let h="";
-  if(desc) h+=`<div class="cr-det-desc">${desc}</div>`;
+  const pct=tm.count>0?Math.round(tm.n_funded/tm.count*100):0;
+  let h=`<div class="cr-det-body">`;
+
+  // descripción
+  if(desc) h+=`<p class="cr-det-desc">${desc}</p>`;
+
+  // stat grid 2×2
+  h+=`<div class="cr-det-grid">
+    <div class="cr-det-cell"><div class="cr-det-lbl">Con inversión</div><div class="cr-det-val">${tm.n_funded} <span class="cr-det-pct">${pct}%</span></div></div>
+    <div class="cr-det-cell"><div class="cr-det-lbl">Destacadas</div><div class="cr-det-val">${tm.n_featured}</div></div>
+    <div class="cr-det-cell"><div class="cr-det-lbl">Sub-clusters</div><div class="cr-det-val">${tm.subClusters.size}</div></div>
+    <div class="cr-det-cell"><div class="cr-det-lbl">Países</div><div class="cr-det-val">${Object.keys(tm.countries).length}</div></div>
+  </div>`;
+
+  // sub-clusters como chips teal clicables
   if(subLabels.size){
-    h+=`<div class="cr-det-sec">Sub-grupos semánticos</div><div class="cr-det-chips">`;
+    h+=`<div class="cr-det-sec">Sub-clusters</div><div class="cr-det-chips">`;
     [...subLabels.entries()].sort((a,b)=>b[1]-a[1]).forEach(([lbl,n])=>{
+      const kw=(lbl.split(" — ")[1]||lbl).replace(/^\w+ — /,"");
       const isActive=activeSubCluster===lbl;
-      h+=`<span class="cr-det-chip cr-det-chip-teal" data-subcluster="${lbl}" style="cursor:pointer;${isActive?"outline:2px solid var(--accent);font-weight:700;":""}">${lbl} <span style="opacity:.5">(${n})</span></span>`;
+      h+=`<span class="cr-det-chip cr-det-chip-teal" data-subcluster="${lbl}" style="cursor:pointer;${isActive?"outline:2px solid var(--accent);font-weight:700;":""}">${kw} <span style="opacity:.5">${n}</span></span>`;
     });
     h+=`</div>`;
   }
+
+  // top startups
   if(topCompanies.length){
     h+=`<div class="cr-det-sec">Top startups</div>`;
     topCompanies.forEach(n=>{
       const t=n.d.valuation_tier;
       const inv=n.d.n_investors_mapped;
-      h+=`<div class="cr-det-row"><span>${n.d.name}</span><span>${t!=null?"T"+t:"—"}${inv>0?" · "+inv+" inv.":""}</span></div>`;
+      h+=`<div class="cr-det-row"><span class="cr-det-co">${n.d.name}</span><span class="cr-det-meta">${t!=null?"T"+t:"—"}${inv>0?" · "+inv+"inv":""}</span></div>`;
     });
   }
+
+  // geografía
   if(topCountries.length){
     h+=`<div class="cr-det-sec">Geografía</div><div class="cr-det-chips">`;
     topCountries.forEach(([cc,n])=>{
-      h+=`<span class="cr-det-chip" style="cursor:pointer" data-country="${cc}">${FLAG_MAP[cc]||""} ${cc} <span style="opacity:.5">(${n})</span></span>`;
+      h+=`<span class="cr-det-chip" style="cursor:pointer" data-country="${cc}">${FLAG_MAP[cc]||""} ${cc} <span style="opacity:.5">${n}</span></span>`;
     });
     h+=`</div>`;
   }
+
+  h+=`</div>`;
   return h;
 }
 
@@ -1596,7 +1744,8 @@ function buildClusterList(){
         r.querySelector(".cr-detail").innerHTML="";
       });
       row.classList.add("active");row.classList.remove("dimmed");
-      detail.innerHTML=buildThemeDetailHTML(tm);
+      const detailEl=row.querySelector(".cr-detail");
+      if(detailEl) detailEl.innerHTML=buildThemeDetailHTML(tm);
       startTrans("zoom");
       zoomToCluster(theme);
       updateHighlights();updateBreadcrumbs();
@@ -1628,7 +1777,7 @@ function buildClusterList(){
       const theme=activeCard.dataset.theme;
       const tm=themeMap.get(theme);
       if(tm) activeCard.querySelector(".cr-detail").innerHTML=buildThemeDetailHTML(tm);
-    }
+      }
     updateHighlights();updateBreadcrumbs();
   });
 }
@@ -1701,6 +1850,7 @@ const FLAG_MAP={
   'Venezuela':'🇻🇪','Costa Rica':'🇨🇷','Panama':'🇵🇦','Guatemala':'🇬🇹',
   'USA':'🇺🇸','US':'🇺🇸','UK':'🇬🇧','Spain':'🇪🇸','España':'🇪🇸'
 };
+window.FLAG_MAP=FLAG_MAP; // expose for detail panel
 
 function buildChips(){
   const tc={},ic={},cc={};
@@ -1926,6 +2076,7 @@ function resetAll(){
     startTrans("map");
   }
   updateHighlights();updateBreadcrumbs();
+  if(typeof window.closeDetailPanel==='function') window.closeDetailPanel();
 }
 document.addEventListener("keydown",e=>{if(e.key==="Escape")resetAll()});
 document.addEventListener("click",e=>{if(!srchIn.contains(e.target))srchRes.classList.remove("open")});
@@ -3014,6 +3165,12 @@ build();
 const ro=new ResizeObserver(()=>build());
 ro.observe(svg.parentElement);
 
+// ── Resize observer para dendro (re-renderiza al aparecer) ────────────────
+const roD=new ResizeObserver(()=>{
+  if(document.getElementById("canvas-arbol").style.display!=="none") build();
+});
+roD.observe(document.getElementById("canvas-arbol"));
+
 // ── Sidebar legends ─────────────────────────────────────────────────────
 (function(){
   // Mega + Macro groups legend
@@ -3061,6 +3218,126 @@ ro.observe(svg.parentElement);
     });
   }
 })();
+
+// ══════════════════════════════════════════════════════════════════════════
+// MODO DE CANVAS + DETAIL PANEL (rediseño estructural jun 2026)
+// ══════════════════════════════════════════════════════════════════════════
+
+let canvasMode = 'paradigmas';
+
+function switchCanvasMode(mode){
+  if(mode===canvasMode) return;
+  canvasMode = mode;
+
+  // Actualizar botones de modo
+  ['paradigmas','arbol','escala','catalogo'].forEach(m=>{
+    const btn=document.getElementById('mode-'+m);
+    if(btn) btn.classList.toggle('active', m===mode);
+  });
+
+  // Mostrar/ocultar canvas
+  const showCanv = (id, show) => {
+    const el=document.getElementById(id);
+    if(el) el.style.display = show ? 'flex' : 'none';
+  };
+  showCanv('canvas-paradigmas', mode==='paradigmas'||mode==='catalogo');
+  showCanv('canvas-arbol',       mode==='arbol');
+  showCanv('canvas-escala',      mode==='escala');
+
+  // Mostrar/ocultar sidebar sections
+  const showSb = (id, show) => {
+    const el=document.getElementById(id);
+    if(el) el.style.display = show ? 'flex' : 'none';
+  };
+  showSb('sb-clusters', mode==='paradigmas'||mode==='catalogo');
+  showSb('sb-arbol',    mode==='arbol');
+  showSb('sb-escala',   mode==='escala');
+
+  // Mostrar/ocultar sub-toolbar (solo en paradigmas/catalogo)
+  const tb=document.getElementById('bio-sub-toolbar');
+  if(tb) tb.style.display = (mode==='paradigmas'||mode==='catalogo') ? 'flex' : 'none';
+
+  // En modo Catálogo: forzar layoutMode=editorial para ver los temas en grid
+  if(mode==='catalogo' && typeof switchLayoutMode==='function'){
+    switchLayoutMode('editorial');
+  }
+
+  // Trigger resize en el SVG visible para que se redimensione correctamente
+  setTimeout(()=>window.dispatchEvent(new Event('resize')), 50);
+}
+
+// Event listeners para los 4 botones de modo
+['paradigmas','arbol','escala','catalogo'].forEach(m=>{
+  const btn=document.getElementById('mode-'+m);
+  if(btn) btn.addEventListener('click', ()=>switchCanvasMode(m));
+});
+
+// ── Detail panel ─────────────────────────────────────────────────────────
+
+window.openDetailPanel = function openDetailPanel(tm, theme){
+  const panel  = document.getElementById('bio-detail');
+  const inner  = document.getElementById('bio-detail-inner');
+  if(!panel||!inner) return;
+
+  const color  = tm.color;
+  const pct    = tm.count>0 ? Math.round(tm.n_funded/tm.count*100) : 0;
+  const topSubs= [...tm.subClusters.entries()].sort((a,b)=>b[1]-a[1]).slice(0,5);
+  const topCtrs= Object.entries(tm.countries).sort((a,b)=>b[1]-a[1]).slice(0,4);
+  const desc   = (window.STARTUP_THEMES_DATA && window.STARTUP_THEMES_DATA.bio_theme_descriptions && window.STARTUP_THEMES_DATA.bio_theme_descriptions[theme]) || '';
+
+  inner.innerHTML=`
+    <div style="position:relative;padding-bottom:4px;">
+      <button class="bdp-close" onclick="closeDetailPanel()">×</button>
+      <p class="bdp-eyebrow">Tema semántico</p>
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px;">
+        <span style="width:10px;height:10px;border-radius:50%;background:${color};flex-shrink:0;display:inline-block;"></span>
+        <h2 class="bdp-title">${theme}</h2>
+      </div>
+      <span class="bdp-count">${tm.count} startups mapeadas</span>
+      ${desc ? `<p style="font-size:12px;color:var(--ink);line-height:1.55;margin-bottom:12px;font-family:var(--sans);">${desc}</p>` : ''}
+      <div class="bdp-stat-grid">
+        <div class="bdp-stat-cell"><div class="bdp-stat-lbl">Con inversión</div><div class="bdp-stat-val">${tm.n_funded} (${pct}%)</div></div>
+        <div class="bdp-stat-cell"><div class="bdp-stat-lbl">Destacadas</div><div class="bdp-stat-val">${tm.n_featured}</div></div>
+        <div class="bdp-stat-cell"><div class="bdp-stat-lbl">Sub-clusters</div><div class="bdp-stat-val">${tm.subClusters.size}</div></div>
+        <div class="bdp-stat-cell"><div class="bdp-stat-lbl">Países</div><div class="bdp-stat-val">${Object.keys(tm.countries).length}</div></div>
+      </div>
+      <p class="bdp-sec">Sub-clusters principales</p>
+      <div class="bdp-tags">
+        ${topSubs.map(([lbl,cnt])=>{
+          const kw=(lbl.split(" — ")[1]||lbl).replace(/^\w+ — /,"");
+          return `<span class="bdp-tag bdp-tag-teal">${kw} <span style="opacity:.6">${cnt}</span></span>`;
+        }).join('')}
+      </div>
+      <p class="bdp-sec">Presencia geográfica</p>
+      <div class="bdp-tags">
+        ${topCtrs.map(([cc,cnt])=>{
+          const flag=(window.FLAG_MAP&&window.FLAG_MAP[cc])||"";
+          return `<span class="bdp-tag">${flag?flag+" ":""}${cc} <span style="opacity:.6">${cnt}</span></span>`;
+        }).join('')}
+      </div>
+      <button class="bdp-cta" onclick="closeDetailPanel()">Ver en Capital Atlas →</button>
+    </div>
+  `;
+
+  panel.style.transition = 'none';
+  panel.style.width = '260px';
+  void panel.offsetWidth;
+}
+
+window.closeDetailPanel = function closeDetailPanel(){
+  const panel=document.getElementById('bio-detail');
+  if(panel){ panel.style.transition='none'; panel.style.width='0'; }
+  // Deselect theme in sidebar
+  document.querySelectorAll('.cr').forEach(r=>r.classList.remove('active','dimmed'));
+}
+
+// Exponer FLAG_MAP globalmente para el detail panel
+// (ya está definido en el scope del IIFE principal, así que lo reexponemos)
+window.FLAG_MAP = window.FLAG_MAP || {};
+
+// openDetailPanel / closeDetailPanel son llamados directamente desde buildClusterList y resetAll
+// (hooks inyectados en el IIFE principal)
+
 })();
 </script>
 </body>

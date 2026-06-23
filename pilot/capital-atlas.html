@@ -4,6 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Capital Network Atlas · BIO LATAM</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,700;1,400&family=Overpass+Mono:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css?v=20260422p">
   <style>
     html, body.capital-atlas-page {
@@ -813,6 +816,284 @@
     .fo-grid tr.fo-active td { background: rgba(11,143,135,.08); }
     .fo-name { font-weight: 700; color: var(--ink); max-width: 180px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: inline-block; vertical-align: middle; }
     .fo-muted { color: var(--muted); font-size: .7rem; white-space: nowrap; }
+
+    /* ══════════════════════════════════════════════════════════════════
+       ETAPA 1 — Design brief tokens (scoped, no afecta otros dashboards)
+       ══════════════════════════════════════════════════════════════════ */
+
+    /* 1. Variables y tipografía base */
+    body.capital-atlas-page {
+      --bg:         #F5F2EC;
+      --panel:      #FFFFFF;
+      --ink:        #1B1B19;
+      --muted:      #6B6560;
+      --line:       #D4CCC2;
+      --accent:     #0B5C58;
+      --accent-soft:rgba(11,92,88,.09);
+      --warm:       #8A3620;
+      --warm-soft:  rgba(138,54,32,.08);
+      --shadow:     none;
+      font-family: 'Overpass Mono', 'Courier New', monospace;
+      background: #F5F2EC;
+    }
+
+    /* 2. Sin gradiente radial en el fondo */
+    body.capital-atlas-page { background: #F5F2EC !important; }
+
+    /* 3. EB Garamond para nombres/títulos de display */
+    body.capital-atlas-page .tooltip-title,
+    body.capital-atlas-page .ca-inv-head-title,
+    body.capital-atlas-page .iv-name,
+    body.capital-atlas-page .detail-title-card h3,
+    body.capital-atlas-page .detail-block h3,
+    body.capital-atlas-page .fp-name {
+      font-family: 'EB Garamond', Georgia, serif;
+      letter-spacing: -0.01em;
+    }
+    /* Overpass Mono heredado en todos los demás elementos */
+    body.capital-atlas-page input,
+    body.capital-atlas-page button,
+    body.capital-atlas-page select {
+      font-family: 'Overpass Mono', 'Courier New', monospace;
+    }
+
+    /* 4. Sin shadows */
+    body.capital-atlas-page .ca-inv-sidebar,
+    body.capital-atlas-page .ca-canvas-area,
+    body.capital-atlas-page .atlas-zoom,
+    body.capital-atlas-page .atlas-search-results,
+    body.capital-atlas-page .atlas-tooltip,
+    body.capital-atlas-page #radar-compare-bar,
+    body.capital-atlas-page .sk-tooltip,
+    body.capital-atlas-page .iv:hover { box-shadow: none !important; }
+
+    /* 5. Border-radius → 2px en todos los componentes */
+    body.capital-atlas-page .ca-strip-stat,
+    body.capital-atlas-page .ca-inv-sidebar,
+    body.capital-atlas-page .ca-inv-head,
+    body.capital-atlas-page .ca-inv-search,
+    body.capital-atlas-page .ca-canvas-area,
+    body.capital-atlas-page .iv,
+    body.capital-atlas-page .iv-logo,
+    body.capital-atlas-page .iv-logo-ph,
+    body.capital-atlas-page .iv-count,
+    body.capital-atlas-page .iv-theme-bar,
+    body.capital-atlas-page .iv-theme-seg,
+    body.capital-atlas-page .iv-country,
+    body.capital-atlas-page .iv-type-chip,
+    body.capital-atlas-page .iv-type-chip,
+    body.capital-atlas-page .iv-det-theme-bar,
+    body.capital-atlas-page .iv-det-theme-bar span,
+    body.capital-atlas-page .atlas-button,
+    body.capital-atlas-page .atlas-select,
+    body.capital-atlas-page .atlas-input,
+    body.capital-atlas-page .atlas-search-results,
+    body.capital-atlas-page .atlas-search-result,
+    body.capital-atlas-page .atlas-tooltip,
+    body.capital-atlas-page .tooltip-logo,
+    body.capital-atlas-page .tooltip-logo-ph,
+    body.capital-atlas-page .tooltip-chip,
+    body.capital-atlas-page .tooltip-chip-dot,
+    body.capital-atlas-page .tooltip-stat,
+    body.capital-atlas-page .atlas-zoom,
+    body.capital-atlas-page .stat-card,
+    body.capital-atlas-page .theme-mix-bar,
+    body.capital-atlas-page .theme-mix-fill,
+    body.capital-atlas-page .ranking-row,
+    body.capital-atlas-page .detail-title-card,
+    body.capital-atlas-page .detail-chip,
+    body.capital-atlas-page .edge-item,
+    body.capital-atlas-page .detail-callout,
+    body.capital-atlas-page .detail-bar-track,
+    body.capital-atlas-page .detail-bar-track span,
+    body.capital-atlas-page .detail-country-line span,
+    body.capital-atlas-page .detail-empty,
+    body.capital-atlas-page .detail-metric,
+    body.capital-atlas-page .org-logo,
+    body.capital-atlas-page .org-logo-ph,
+    body.capital-atlas-page .conn-logo,
+    body.capital-atlas-page .conn-logo-ph,
+    body.capital-atlas-page .org-insight-card,
+    body.capital-atlas-page .vs-group,
+    body.capital-atlas-page .tb-toggle-group,
+    body.capital-atlas-page .rdr-cmp-chip,
+    body.capital-atlas-page #radar-compare-bar,
+    body.capital-atlas-page .sk-tooltip,
+    body.capital-atlas-page .sl-badge,
+    body.capital-atlas-page .sl-gap-banner,
+    body.capital-atlas-page #fund-profile-card,
+    body.capital-atlas-page .fp-theme-bar-lg,
+    body.capital-atlas-page .radial-hint,
+    body.capital-atlas-page .detail-bar-track,
+    body.capital-atlas-page .detail-bar-track span { border-radius: 2px !important; }
+
+    /* El sidebar border-top-left-radius debe acompañar al 2px del panel */
+    body.capital-atlas-page .ca-inv-head { border-radius: 2px 2px 0 0 !important; }
+
+    /* 6. Colores hardcodeados del accent viejo → nuevo teal */
+    body.capital-atlas-page .iv.active { border-color: #0B5C58; background: rgba(11,92,88,.06); }
+    body.capital-atlas-page .iv.active .iv-count { background: rgba(11,92,88,.14); color: #0B5C58; }
+    body.capital-atlas-page .atlas-button:hover,
+    body.capital-atlas-page .atlas-button.active { border-color: #0B5C58; background: rgba(11,92,88,.10); }
+    body.capital-atlas-page .atlas-search-result:hover { background: rgba(11,92,88,.10); }
+    body.capital-atlas-page .ranking-row:hover,
+    body.capital-atlas-page .ranking-row.active { border-color: #0B5C58; }
+    body.capital-atlas-page .ranking-row.active { background: rgba(11,92,88,.08); }
+    body.capital-atlas-page .detail-metric.primary { border-color: rgba(11,92,88,.28); background: rgba(11,92,88,.08); }
+    body.capital-atlas-page .detail-metric.primary strong { color: #0B5C58; }
+    body.capital-atlas-page .detail-callout { border-color: rgba(11,92,88,.22); background: rgba(11,92,88,.06); }
+    body.capital-atlas-page .detail-callout strong { color: #0B5C58; }
+    body.capital-atlas-page .fo-grid tr:hover td { background: rgba(11,92,88,.04); }
+    body.capital-atlas-page .fo-grid tr.fo-active td { background: rgba(11,92,88,.08); }
+    body.capital-atlas-page .sl-grid tr:hover td { background: rgba(11,92,88,.04); }
+    body.capital-atlas-page .vs-btn.active { background: #0B5C58; }
+    body.capital-atlas-page .tb-toggle.active { background: rgba(11,92,88,.10); color: #0B5C58; }
+    body.capital-atlas-page .organization-card { border-color: rgba(11,92,88,.22); }
+
+    /* ══════════════════════════════════════════════════════════════════
+       ETAPA 2 — Sidebar colapsable + Fund drawer rediseñado
+       ══════════════════════════════════════════════════════════════════ */
+
+    /* 1. Sidebar: 240px, sin gradiente en cabecera */
+    body.capital-atlas-page .ca-inv-sidebar {
+      width: 240px;
+      border: 1px solid var(--line);
+      position: relative;
+    }
+    body.capital-atlas-page .ca-inv-sidebar.collapsed {
+      width: 40px;
+      overflow: hidden;
+    }
+    body.capital-atlas-page .ca-inv-sidebar.collapsed .ca-inv-search-wrap,
+    body.capital-atlas-page .ca-inv-sidebar.collapsed .ca-inv-type-filter,
+    body.capital-atlas-page .ca-inv-sidebar.collapsed .ca-inv-list,
+    body.capital-atlas-page .ca-inv-sidebar.collapsed .ca-inv-head-sub,
+    body.capital-atlas-page .ca-inv-sidebar.collapsed .ca-inv-head-title { display: none; }
+    body.capital-atlas-page .ca-inv-head {
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      padding: 10px 10px 10px 12px;
+    }
+    /* Botón toggle sidebar */
+    body.capital-atlas-page #ca-sidebar-toggle {
+      flex-shrink: 0;
+      width: 22px; height: 22px;
+      border: 1px solid var(--line);
+      border-radius: 2px;
+      background: transparent;
+      color: var(--muted);
+      font-size: .75rem;
+      cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      font-family: inherit;
+      line-height: 1;
+    }
+    body.capital-atlas-page #ca-sidebar-toggle:hover { border-color: var(--accent); color: var(--accent); }
+    body.capital-atlas-page .ca-inv-sidebar.collapsed #ca-sidebar-toggle { margin: 9px auto; }
+
+    /* 2. Tooltip hover → minimal (nombre + tipo solamente) */
+    body.capital-atlas-page .atlas-tooltip {
+      width: auto !important;
+      min-width: 0 !important;
+      padding: 6px 10px !important;
+      gap: 3px !important;
+      backdrop-filter: none !important;
+    }
+    body.capital-atlas-page .atlas-tooltip .tooltip-chip-row,
+    body.capital-atlas-page .atlas-tooltip .tooltip-stats { display: none !important; }
+    body.capital-atlas-page .atlas-tooltip .tooltip-logo,
+    body.capital-atlas-page .atlas-tooltip .tooltip-logo-ph { width: 24px !important; height: 24px !important; }
+    body.capital-atlas-page .atlas-tooltip .tooltip-title { font-size: 1rem !important; }
+    body.capital-atlas-page .atlas-tooltip .tooltip-meta { font-size: .68rem !important; }
+    body.capital-atlas-page .atlas-tooltip .tooltip-kicker { font-size: .6rem !important; }
+
+    /* 3. Fund drawer: tokens del brief */
+    body.capital-atlas-page #fund-drawer {
+      width: 280px !important;
+      background: #fff !important;
+      border-left: 1px solid #D4CCC2 !important;
+      box-shadow: none !important;
+      padding: 16px 18px !important;
+      font-family: 'Overpass Mono', 'Courier New', monospace !important;
+    }
+    body.capital-atlas-page #fund-drawer-close {
+      font-family: 'Overpass Mono', monospace !important;
+      font-size: .7rem !important;
+      background: transparent !important;
+      border: 1px solid #D4CCC2 !important;
+      border-radius: 2px !important;
+      padding: 2px 7px !important;
+      color: var(--muted) !important;
+      top: 14px !important; right: 14px !important;
+    }
+    body.capital-atlas-page #fund-drawer-close:hover { color: var(--ink) !important; border-color: var(--ink) !important; }
+    /* Garamond para el nombre del fondo en el drawer */
+    body.capital-atlas-page #fund-drawer .fp-name,
+    body.capital-atlas-page #fund-drawer h3 {
+      font-family: 'EB Garamond', Georgia, serif !important;
+      letter-spacing: -0.01em;
+    }
+
+    /* ══════════════════════════════════════════════════════════════════
+       ETAPA 3 — 3 tabs + sub-lentes
+       ══════════════════════════════════════════════════════════════════ */
+
+    /* Ocultar la toolbar legacy */
+    body.capital-atlas-page .vs-group { display: none !important; }
+    /* Ocultar el #atlas-mode select (reemplazado por sub-lentes) */
+    body.capital-atlas-page #atlas-mode { display: none !important; }
+
+    /* Main tabs */
+    .ca-main-tabs {
+      display: flex;
+      border: 1px solid var(--line);
+      border-radius: 2px;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+    .ca-tab {
+      border: 0;
+      border-right: 1px solid var(--line);
+      background: transparent;
+      color: var(--muted);
+      font: inherit;
+      font-family: 'Overpass Mono', monospace;
+      font-size: .68rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      padding: 5px 13px;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: background 80ms, color 80ms;
+    }
+    .ca-tab:last-child { border-right: 0; }
+    .ca-tab:hover { color: var(--ink); background: rgba(255,255,255,.7); }
+    .ca-tab.active { background: #1B1B19; color: #fff; }
+
+    /* Sub-lentes */
+    .ca-sub-lentes { display: flex; gap: 4px; align-items: center; flex-shrink: 0; }
+    .ca-sub {
+      border: 1px solid var(--line);
+      border-radius: 2px;
+      background: transparent;
+      color: var(--muted);
+      font: inherit;
+      font-family: 'Overpass Mono', monospace;
+      font-size: .63rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      padding: 4px 9px;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: border-color 80ms, color 80ms, background 80ms;
+    }
+    .ca-sub:hover { border-color: var(--ink); color: var(--ink); }
+    .ca-sub.active { border-color: var(--accent); color: var(--accent); background: rgba(11,92,88,.06); }
   </style>
 </head>
 <body class="capital-atlas-page">
@@ -837,10 +1118,13 @@
   <div class="ca-layout">
 
     <!-- ── Investor sidebar ──────────────────────────────────────────── -->
-    <aside class="ca-inv-sidebar">
+    <aside class="ca-inv-sidebar" id="ca-inv-sidebar">
       <div class="ca-inv-head">
-        <div class="ca-inv-head-title">Inversores</div>
-        <div class="ca-inv-head-sub" id="inv-head-sub">Seleccioná un fondo para ver su portfolio</div>
+        <div>
+          <div class="ca-inv-head-title">Inversores</div>
+          <div class="ca-inv-head-sub" id="inv-head-sub">Seleccioná un fondo para ver su portfolio</div>
+        </div>
+        <button id="ca-sidebar-toggle" title="Colapsar sidebar" type="button">‹</button>
       </div>
       <div class="ca-inv-search-wrap">
         <input id="inv-filter" class="ca-inv-search" type="search" placeholder="Filtrar inversores…" autocomplete="off">
@@ -861,15 +1145,41 @@
     <!-- ── Canvas area ────────────────────────────────────────────────── -->
     <div class="ca-canvas-area">
       <div class="ca-toolbar">
-        <!-- View mode switcher -->
-        <div class="vs-group">
-          <button class="vs-btn active" data-view="network" type="button">🕸 Red</button>
-          <button class="vs-btn"        data-view="radial"  type="button">◎ Radar</button>
-          <button class="vs-btn"        data-view="matrix"  type="button">▦ Matriz</button>
-          <button class="vs-btn"        data-view="stages"  type="button">🪜 Etapas</button>
-          <button class="vs-btn"        data-view="flow"    type="button">⟶ Flujo</button>
-          <button class="vs-btn"        data-view="syndication" type="button">⬡ Alocators</button>
-          <button class="vs-btn"        data-view="fondos"      type="button">📋 Fondos</button>
+        <!-- View mode switcher legacy (oculto, requerido por switchView()) -->
+        <div class="vs-group" aria-hidden="true">
+          <button class="vs-btn active" data-view="network"     type="button">Red</button>
+          <button class="vs-btn"        data-view="radial"      type="button">Radar</button>
+          <button class="vs-btn"        data-view="matrix"      type="button">Matriz</button>
+          <button class="vs-btn"        data-view="stages"      type="button">Etapas</button>
+          <button class="vs-btn"        data-view="flow"        type="button">Flujo</button>
+          <button class="vs-btn"        data-view="syndication" type="button">Co-inversión</button>
+          <button class="vs-btn"        data-view="fondos"      type="button">Fondos</button>
+        </div>
+
+        <!-- 3 tabs principales -->
+        <div class="ca-main-tabs" id="ca-main-tabs">
+          <button class="ca-tab active" data-tab="red"        type="button">Red</button>
+          <button class="ca-tab"        data-tab="analisis"   type="button">Análisis</button>
+          <button class="ca-tab"        data-tab="directorio" type="button">Directorio</button>
+        </div>
+
+        <div class="tb-divider"></div>
+
+        <!-- Sub-lentes RED -->
+        <div class="ca-sub-lentes" id="sub-red">
+          <button class="ca-sub active" data-sub-view="network" data-sub-mode="capital_core"   type="button">Capital &amp; ST</button>
+          <button class="ca-sub"        data-sub-view="network" data-sub-mode="co_investment" type="button">Co-inversión</button>
+          <button class="ca-sub"        data-sub-view="network" data-sub-mode="full_network"  type="button">Full graph</button>
+        </div>
+
+        <!-- Sub-lentes ANÁLISIS -->
+        <div class="ca-sub-lentes" id="sub-analisis" style="display:none">
+          <button class="ca-sub active" data-sub-view="matrix"      type="button">Matriz</button>
+          <button class="ca-sub"        data-sub-view="embudo"      type="button">Embudo</button>
+          <button class="ca-sub"        data-sub-view="pais"        type="button">País</button>
+          <button class="ca-sub"        data-sub-view="scatter"     type="button">Posicionamiento</button>
+          <button class="ca-sub"        data-sub-view="flow"        type="button">Flujo</button>
+          <button class="ca-sub"        data-sub-view="stages"      type="button">Etapas</button>
         </div>
 
         <div class="tb-divider"></div>
@@ -937,12 +1247,53 @@
           <div id="stages-wrap"></div>
         </div>
 
-        <!-- View E: Capital Flow (Sankey) -->
-        <div class="ca-view" id="view-flow">
-          <div id="flow-wrap">
-            <svg id="flow-svg"></svg>
+        <!-- View E: Flujo transfronterizo -->
+        <div class="ca-view" id="view-flow" style="overflow:auto;padding:28px 36px;box-sizing:border-box">
+          <div style="margin-bottom:10px">
+            <div style="font-size:.72rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)">Flujos de capital transfronterizos</div>
+            <div style="font-size:.68rem;color:var(--muted);margin-top:3px">Grosor = # inversiones BIO · Flujo transparente = doméstico</div>
           </div>
-          <div id="sk-tooltip" class="sk-tooltip"></div>
+          <div id="cs-sankey" style="width:100%"></div>
+          <div id="cs-sankey-note" class="cs-note" style="width:100%;margin-top:12px"></div>
+          <!-- legacy Sankey hidden, kept for renderSankey() null-check -->
+          <div id="flow-wrap" style="display:none"><svg id="flow-svg"></svg></div>
+        </div>
+
+        <!-- View F: Posicionamiento scatter -->
+        <div class="ca-view" id="view-scatter">
+          <svg id="scatter-svg" style="display:block;width:100%;height:100%"></svg>
+        </div>
+
+        <!-- View H: Embudo del ecosistema -->
+        <div class="ca-view" id="view-embudo" style="overflow:auto;padding:28px 36px;box-sizing:border-box">
+          <div style="display:flex;gap:48px;align-items:flex-start;width:100%;height:100%">
+            <div style="flex:1;min-width:0">
+              <div style="font-size:.72rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin-bottom:4px">El embudo del ecosistema</div>
+              <div id="cs-funnel-tag" style="font-size:.68rem;color:var(--muted);margin-bottom:14px"></div>
+              <div id="cs-funnel-hero"></div>
+              <div id="cs-funnel-insight" class="cs-insight" style="margin-top:14px"></div>
+            </div>
+            <div style="flex:1;min-width:0">
+              <div style="font-size:.72rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin-bottom:14px">Pipeline hacia Series A — por tema</div>
+              <div id="cs-pipeline"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- View I: País — ADN temático + scatter madurez -->
+        <div class="ca-view" id="view-pais" style="overflow:auto;padding:28px 36px;box-sizing:border-box">
+          <div style="display:flex;gap:48px;align-items:flex-start;width:100%">
+            <div style="flex:3;min-width:0">
+              <div style="font-size:.72rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin-bottom:4px">ADN temático por país — % del portfolio BIO nacional</div>
+              <div id="cs-heatmap" style="width:100%"></div>
+              <div id="cs-heatmap-insight" class="cs-insight" style="margin-top:10px"></div>
+            </div>
+            <div style="flex:2;min-width:0">
+              <div style="font-size:.72rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin-bottom:4px">País × Madurez</div>
+              <div style="font-size:.67rem;color:var(--muted);margin-bottom:10px">X = % en Serie A+ · Tamaño = financiadas · Corte: 25%</div>
+              <div id="cs-country-scatter" style="width:100%"></div>
+            </div>
+          </div>
         </div>
 
         <!-- View G: Investor profile table -->
@@ -971,80 +1322,6 @@
 
 </div><!-- .page-shell -->
 
-<!-- ── Estructura de inversión (Frente C) ───────────────────────────── -->
-<section id="cap-structure" class="cap-structure">
-  <div class="cs-head">
-    <h2 class="cs-title">Estructura de inversión · BIO LATAM</h2>
-    <p class="cs-sub">536 startups con al menos un inversor documentado · Stage = el más avanzado registrado en aristas reales, no defaultea a pre-seed · Solo 10% de aristas tiene monto en USD</p>
-  </div>
-  <div class="cs-grid">
-
-    <!-- 1. Hero funnel -->
-    <div class="cs-card cs-span2">
-      <div class="cs-card-header">
-        <div class="cs-card-title">El embudo del ecosistema</div>
-        <div class="cs-card-tag" id="cs-funnel-tag">— empresas con capital</div>
-      </div>
-      <div id="cs-funnel-hero"></div>
-      <div class="cs-insight" id="cs-funnel-insight"></div>
-    </div>
-
-    <!-- 2. País × Madurez scatter -->
-    <div class="cs-card">
-      <div class="cs-card-title">País × Madurez — ¿dónde está el capital de Series A?</div>
-      <div id="cs-country-scatter"></div>
-      <div class="cs-note">X = % empresas en Series A o superior · Tamaño de burbuja = startups financiadas · Línea de corte: 25%</div>
-    </div>
-
-    <!-- 3. Pipeline Series A por tema -->
-    <div class="cs-card">
-      <div class="cs-card-title">Pipeline hacia Series A — deal flow potencial por tema</div>
-      <div id="cs-pipeline"></div>
-      <div class="cs-note">Barra = startups en Pre-seed + Seed esperando capital de crecimiento. ⚡ = ratio bajo (oportunidad de capital)</div>
-    </div>
-
-    <!-- 4. Heatmap normalizado tema × país -->
-    <div class="cs-card cs-span2">
-      <div class="cs-card-title">ADN temático por país — % del portfolio nacional en cada tema</div>
-      <div id="cs-heatmap"></div>
-      <div class="cs-insight" id="cs-heatmap-insight"></div>
-    </div>
-
-    <!-- 5. Sankey transfronterizo -->
-    <div class="cs-card cs-span2">
-      <div class="cs-card-title">Flujos de capital transfronterizos</div>
-      <div id="cs-sankey"></div>
-      <div class="cs-note" id="cs-sankey-note"></div>
-    </div>
-
-    <!-- 6. Foreign + HHI -->
-    <div class="cs-card">
-      <div class="cs-card-title">Dependencia de capital extranjero por tema</div>
-      <div id="cs-foreign"></div>
-    </div>
-    <div class="cs-card">
-      <div class="cs-card-title">Concentración (HHI) — ¿quién domina cada tema?</div>
-      <div class="cs-warn" id="cs-hhi-warn"></div>
-      <div id="cs-hhi"></div>
-    </div>
-
-    <!-- 7. Sindicación -->
-    <div class="cs-card cs-span2">
-      <div class="cs-card-title">Red de co-inversión — quién sindica con quién</div>
-      <div id="cs-synd"></div>
-    </div>
-
-    <!-- 8. Cohortes -->
-    <div class="cs-card cs-span2">
-      <div class="cs-card-title">Cohortes — startups por año de fundación</div>
-      <div id="cs-cohorts"></div>
-      <div class="cs-note" style="margin-top:7px">
-        <span style="display:inline-block;width:11px;height:11px;border-radius:2px;background:var(--accent);opacity:.72;vertical-align:middle;margin-right:5px"></span>Con capital documentado ·
-        <span style="display:inline-block;width:11px;height:11px;border-radius:2px;background:rgba(180,168,150,.4);vertical-align:middle;margin-right:5px;margin-left:8px"></span>Sin capital documentado
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- ── Backstage: required by capital-atlas.js, hidden ───────────── -->
 <div style="display:none" aria-hidden="true">
@@ -1073,8 +1350,7 @@
 <script>
 document.addEventListener('DOMContentLoaded', function(){
   var CS = window.CAPITAL_STRUCTURE;
-  var sec = document.getElementById('cap-structure');
-  if (!CS || !sec) { if (sec) sec.style.display='none'; return; }
+  if (!CS) return;
 
   // ── Paletas canónicas BIO LATAM ── Digital AgTech excluido (eco-adjacent, no BIO core)
   var THEME_PAL = {
@@ -1115,316 +1391,324 @@ document.addEventListener('DOMContentLoaded', function(){
       '<div class="cs-val">'+(suffix!=null?suffix:val)+'</div></div>';
   }
 
-  // ── 1. Embudo hero — trapezoides con tasas de conversión ──────────
+  // tokens
+  var TK = { ink:'#1B1B19', muted:'#6B6560', line:'#D4CCC2', bg:'#F5F2EC',
+             accent:'#0B5C58', warm:'#8A3620', panel:'#FFFFFF' };
+  var FM = 'Overpass Mono, monospace';
+
+  // ── 1. Embudo — barras horizontales con drop badges ───────────────
   (function(){
     var g = CS.pyramid.global, order = CS.pyramid.level_order;
-    var STAGE_C = ['#94a3b8','#3da89f','#0B8F87','#065f46','#1a3d3b'];
     var total = order.reduce(function(s,l){ return s+(g[l]||0); }, 0);
-    var maxN = g[order[0]] || 1;
-    var W=700, H=235, CX=290, MAX_W=276, MIN_W=28, BAR_H=33, GAP=9, PAD_T=10;
-    var parts = ['<svg viewBox="0 0 '+W+' '+H+'" style="width:100%;max-height:235px;display:block">'];
+    var maxN  = g[order[0]] || 1;
+    var W=720, BAR_H=38, GAP=3, PAD_L=20, PAD_R=220, PAD_T=10;
+    var H = PAD_T + order.length*(BAR_H+GAP) - GAP + 20;
+    var BAR_MAX = W - PAD_L - PAD_R;
+    var parts=['<svg viewBox="0 0 '+W+' '+H+'" style="width:100%;display:block">'];
+
+    // background
+    parts.push('<rect width="'+W+'" height="'+H+'" fill="'+TK.bg+'"/>');
+
     order.forEach(function(lvl, i){
-      var n = g[lvl]||0;
-      var nxt = i<order.length-1 ? g[order[i+1]]||0 : Math.max(0,n-1);
-      var w  = Math.max(MIN_W, Math.round(n/maxN*MAX_W));
-      var w2 = Math.max(MIN_W, Math.round(nxt/maxN*MAX_W));
-      var y1 = PAD_T + i*(BAR_H+GAP), y2 = y1+BAR_H;
-      var c  = STAGE_C[i]||'#888';
-      parts.push('<polygon points="'+(CX-w/2)+','+y1+' '+(CX+w/2)+','+y1+' '+(CX+w2/2)+','+y2+' '+(CX-w2/2)+','+y2+'" fill="'+c+'" opacity="0.9"/>');
-      parts.push('<text x="'+CX+'" y="'+(y1+BAR_H/2+1)+'" text-anchor="middle" dominant-baseline="middle" font-size="15" font-weight="900" font-family="inherit" fill="#fff">'+n+'</text>');
-      // Label derecha
-      parts.push('<text x="'+(CX+MAX_W/2+14)+'" y="'+(y1+BAR_H/2+1)+'" dominant-baseline="middle" font-size="10" font-weight="600" font-family="inherit" fill="rgba(70,55,40,.8)">'+lvl+'</text>');
-      // % del total izquierda
-      parts.push('<text x="'+(CX-MAX_W/2-10)+'" y="'+(y1+BAR_H/2+1)+'" text-anchor="end" dominant-baseline="middle" font-size="9.5" font-family="inherit" fill="rgba(80,65,50,.5)">'+Math.round(n/total*100)+'%</text>');
-      // Badge conversión
-      if (i<order.length-1 && n>0){
+      var n   = g[lvl]||0;
+      var nxt = i < order.length-1 ? g[order[i+1]]||0 : 0;
+      var y   = PAD_T + i*(BAR_H+GAP);
+      var bW  = n>0 ? Math.max(4, Math.round(n/maxN*BAR_MAX)) : 4;
+      var pct = total>0 ? Math.round(n/total*100) : 0;
+      // opacity: full at top, lighter toward bottom
+      var opBase = 1 - i*0.16;
+
+      // track
+      parts.push('<rect x="'+PAD_L+'" y="'+y+'" width="'+BAR_MAX+'" height="'+BAR_H+'" rx="2" fill="'+TK.line+'" opacity="0.28"/>');
+      // fill
+      parts.push('<rect x="'+PAD_L+'" y="'+y+'" width="'+bW+'" height="'+BAR_H+'" rx="2" fill="'+TK.accent+'" opacity="'+opBase.toFixed(2)+'"/>');
+
+      // count inside bar
+      var lblInside = bW > 38;
+      parts.push('<text x="'+(lblInside ? PAD_L+bW-8 : PAD_L+bW+8)+'" y="'+(y+BAR_H/2)+'" dominant-baseline="middle" text-anchor="'+(lblInside?'end':'start')+'" font-size="13" font-weight="700" font-family="'+FM+'" fill="'+(lblInside?'#fff':TK.accent)+'">'+n+'</text>');
+
+      // stage label
+      parts.push('<text x="'+(PAD_L+BAR_MAX+12)+'" y="'+(y+BAR_H/2-5)+'" dominant-baseline="middle" font-size="9" font-weight="700" font-family="'+FM+'" fill="'+TK.ink+'" letter-spacing="0.04em">'+lvl.toUpperCase()+'</text>');
+      // pct
+      parts.push('<text x="'+(PAD_L+BAR_MAX+12)+'" y="'+(y+BAR_H/2+9)+'" dominant-baseline="middle" font-size="8" font-family="'+FM+'" fill="'+TK.muted+'">'+pct+'% del total</text>');
+
+      // drop between stages
+      if(i < order.length-1 && n>0){
         var drop = Math.round((1-nxt/n)*100);
-        var dc = drop>45?'#9a3412':drop>25?'#b45309':'#2A7A42';
-        var my = y2+GAP/2;
-        parts.push('<rect x="'+(CX+6)+'" y="'+(my-7)+'" width="40" height="14" rx="4" fill="'+dc+'"/>');
-        parts.push('<text x="'+(CX+26)+'" y="'+my+'" text-anchor="middle" dominant-baseline="middle" font-size="8.5" font-weight="800" font-family="inherit" fill="#fff">−'+drop+'%</text>');
+        var dc   = drop>45 ? TK.warm : drop>25 ? '#8B6D14' : '#2A7A42';
+        var gy   = y + BAR_H + GAP/2;
+        parts.push('<line x1="'+PAD_L+'" y1="'+(y+BAR_H)+'" x2="'+PAD_L+'" y2="'+(y+BAR_H+GAP)+'" stroke="'+TK.line+'" stroke-width="1"/>');
+        parts.push('<rect x="'+(PAD_L+4)+'" y="'+(gy-6)+'" width="46" height="12" rx="2" fill="'+dc+'"/>');
+        parts.push('<text x="'+(PAD_L+27)+'" y="'+gy+'" text-anchor="middle" dominant-baseline="middle" font-size="8" font-weight="700" font-family="'+FM+'" fill="#fff">−'+drop+'%</text>');
       }
     });
     parts.push('</svg>');
-    var el = document.getElementById('cs-funnel-hero');
-    if (el) el.innerHTML = parts.join('');
-    var tagEl = document.getElementById('cs-funnel-tag');
-    if (tagEl) tagEl.textContent = total+' empresas BIO con capital documentado';
-    var seed=g['Seed']||0, serA=g['Series A']||0;
-    var dropPct = seed>0?Math.round((1-serA/seed)*100):0;
-    var insEl = document.getElementById('cs-funnel-insight');
-    if (insEl) insEl.innerHTML = '🎯 <strong>Cuello de botella crítico:</strong> De <strong>'+seed+' empresas en Seed</strong>, solo '+serA+
-      ' alcanzan Series A — <strong style="color:#9a3412">caída del '+dropPct+'%</strong>. '+
-      'Ahí está la brecha: hay deal flow, falta el ticket de crecimiento BIO.';
-  })();
 
-  // ── 2. Scatter País × Madurez ─────────────────────────────────────
-  (function(){
-    if (!CS.country_pyramids) return;
-    var cp = CS.country_pyramids;
-    var pts = cp.country_order
-      .map(function(cc){ return {cc:cc,d:cp.by_country[cc]}; })
-      .filter(function(p){ return p.d && p.d.total>=5; })
-      .map(function(p){ return {cc:p.cc, x:p.d.series_a_plus_ratio, y:p.d.total, f:p.d.funded, sA:p.d.series_a_plus}; });
-    var W=460,H=272,PAD={l:36,r:14,t:14,b:30};
-    var CW=W-PAD.l-PAD.r, CH=H-PAD.t-PAD.b;
-    var maxX=0.68, maxY=190;
-    var toX=function(v){ return PAD.l+Math.min(v/maxX,1)*CW; };
-    var toY=function(v){ return PAD.t+CH-Math.min(v/maxY,1)*CH; };
-    var toR=function(n){ return Math.max(9,Math.min(30,Math.round(Math.sqrt(n/190)*28))); };
-    var parts=['<svg viewBox="0 0 '+W+' '+H+'" style="width:100%;max-height:272px;display:block">'];
-    // Cuadrante teal (maduro+grande)
-    var qX=toX(0.25), qY=toY(45);
-    parts.push('<rect x="'+qX+'" y="'+PAD.t+'" width="'+(CW-(qX-PAD.l))+'" height="'+(qY-PAD.t)+'" fill="rgba(11,143,135,.04)" rx="3"/>');
-    // Grid
-    [50,100,150].forEach(function(v){
-      var y=toY(v);
-      parts.push('<line x1="'+PAD.l+'" y1="'+y+'" x2="'+(PAD.l+CW)+'" y2="'+y+'" stroke="rgba(0,0,0,.07)" stroke-width="1"/>');
-      parts.push('<text x="'+(PAD.l-4)+'" y="'+(y+1)+'" text-anchor="end" dominant-baseline="middle" font-size="8" font-family="inherit" fill="rgba(100,80,60,.45)">'+v+'</text>');
-    });
-    [0.1,0.25,0.4,0.55].forEach(function(v){
-      var x=toX(v);
-      parts.push('<line x1="'+x+'" y1="'+PAD.t+'" x2="'+x+'" y2="'+(PAD.t+CH)+'" stroke="rgba(0,0,0,.07)" stroke-width="1"'+(v===0.25?' stroke-dasharray="4,3"':'')+'/> ');
-      parts.push('<text x="'+x+'" y="'+(PAD.t+CH+12)+'" text-anchor="middle" font-size="8" font-family="inherit" fill="rgba(100,80,60,.45)">'+(v*100)+'%</text>');
-    });
-    // Divisores de cuadrante
-    parts.push('<line x1="'+qX+'" y1="'+PAD.t+'" x2="'+qX+'" y2="'+(PAD.t+CH)+'" stroke="rgba(11,143,135,.28)" stroke-width="1.5" stroke-dasharray="5,4"/>');
-    parts.push('<line x1="'+PAD.l+'" y1="'+qY+'" x2="'+(PAD.l+CW)+'" y2="'+qY+'" stroke="rgba(11,143,135,.18)" stroke-width="1" stroke-dasharray="4,4"/>');
-    // Labels cuadrantes
-    var qs='font-size:7px;font-family:inherit;fill:rgba(100,80,60,.28);font-style:italic';
-    parts.push('<text x="'+(qX+5)+'" y="'+(PAD.t+8)+'" '+qs+'>ecosistema maduro + grande</text>');
-    parts.push('<text x="'+(PAD.l+4)+'" y="'+(PAD.t+8)+'" '+qs+'>grande sin madurar</text>');
-    parts.push('<text x="'+(qX+5)+'" y="'+(PAD.t+CH-4)+'" '+qs+'>pequeño, maduro</text>');
-    // Ejes
-    parts.push('<text x="'+(PAD.l+CW/2)+'" y="'+(H-2)+'" text-anchor="middle" font-size="8.5" font-weight="700" font-family="inherit" fill="rgba(70,55,38,.6)">Madurez  →  % startups BIO en Series A+</text>');
-    parts.push('<text x="9" y="'+(PAD.t+CH/2)+'" text-anchor="middle" dominant-baseline="middle" font-size="8.5" font-weight="700" font-family="inherit" fill="rgba(70,55,38,.6)" transform="rotate(-90,9,'+(PAD.t+CH/2)+')">Startups BIO</text>');
-    // Burbujas
-    pts.sort(function(a,b){return b.f-a.f;}).forEach(function(p){
-      var x=toX(p.x),y=toY(p.y),r=toR(p.f),c=COUNTRY_PAL[p.cc]||'#888';
-      parts.push('<circle cx="'+x+'" cy="'+y+'" r="'+r+'" fill="'+c+'" opacity="0.82" stroke="rgba(255,255,255,.85)" stroke-width="1.5"><title>'+p.cc+': '+Math.round(p.x*100)+'% SerA+ · '+p.y+' startups BIO · '+p.sA+' en Serie A+</title></circle>');
-      var lx=x, ly=y-r-5, anc='middle';
-      if(p.cc==='AR'){ ly=y+r+11; }
-      if(p.cc==='BR'){ lx=x-r-5; anc='end'; ly=y; }
-      if(p.cc==='CL'){ lx=x+r+4; anc='start'; ly=y; }
-      if(p.cc==='UY'){ lx=x+r+4; anc='start'; }
-      parts.push('<text x="'+lx+'" y="'+ly+'" text-anchor="'+anc+'" dominant-baseline="middle" font-size="9" font-weight="700" font-family="inherit" fill="'+c+'">'+(FLAGS[p.cc]||p.cc)+' '+p.cc+'</text>');
-    });
-    parts.push('</svg>');
-    var el=document.getElementById('cs-country-scatter');
-    if(el) el.innerHTML=parts.join('');
+    var el = document.getElementById('cs-funnel-hero');
+    if(el) el.innerHTML = parts.join('');
+    var tagEl = document.getElementById('cs-funnel-tag');
+    if(tagEl) tagEl.textContent = total+' empresas BIO con capital documentado';
+    var seed=g['Seed']||0, serA=g['Series A']||0;
+    var dropPct = seed>0 ? Math.round((1-serA/seed)*100) : 0;
+    var insEl = document.getElementById('cs-funnel-insight');
+    if(insEl) insEl.innerHTML =
+      '<span style="font-size:.72rem;font-family:'+FM+';color:'+TK.muted+'">Cuello de botella — </span>'+
+      '<span style="font-size:.72rem;font-family:'+FM+';color:'+TK.ink+'">'+seed+' en Seed · solo '+serA+' alcanzan Serie A · caída del </span>'+
+      '<span style="font-size:.72rem;font-family:'+FM+';color:'+TK.warm+';font-weight:700">'+dropPct+'%</span>';
   })();
 
   // ── 3. Pipeline hacia Series A por tema ───────────────────────────
   (function(){
-    var bt = CS.pyramid.by_theme;
+    var bt  = CS.pyramid.by_theme;
     var rows = THEME_ORDER
       .filter(function(t){ return bt[t]; })
       .map(function(t){
         var d=bt[t];
         var pipeline=(d.levels['Pre-seed / Accelerator']||0)+(d.levels['Seed']||0);
         var atA=d.levels['Series A']||0;
-        var growth=(d.levels['Growth (B–D)']||d.levels['Growth (B–D)']||0)+(d.levels['Exit / IPO']||0);
-        return {t:t, pipeline:pipeline, atA:atA, growth:growth, ratio:pipeline>0?atA/pipeline:0};
+        return {t:t, pipeline:pipeline, atA:atA, ratio:pipeline>0?atA/pipeline:0};
       })
       .filter(function(x){ return x.pipeline>0; })
       .sort(function(a,b){ return b.pipeline-a.pipeline; });
-    var maxP=Math.max.apply(null,rows.map(function(x){return x.pipeline;}));
-    var html=rows.map(function(x){
-      var pct=Math.round(x.pipeline/maxP*100);
+    var maxP = Math.max.apply(null, rows.map(function(x){ return x.pipeline; }));
+    var ROW=34, PAD_L=100, PAD_R=72, PAD_T=6, W=520;
+    var H=PAD_T+rows.length*ROW+20;
+    var BAR_MAX=W-PAD_L-PAD_R;
+    var parts=['<svg viewBox="0 0 '+W+' '+H+'" style="width:100%;display:block">'];
+    parts.push('<rect width="'+W+'" height="'+H+'" fill="'+TK.bg+'"/>');
+
+    rows.forEach(function(x,i){
+      var y=PAD_T+i*ROW, c=THEME_PAL[x.t];
+      var pW=Math.max(2, Math.round(x.pipeline/maxP*BAR_MAX));
+      var aW=x.atA>0 ? Math.round(x.atA/maxP*BAR_MAX) : 0;
       var isOpp=x.pipeline>20&&x.ratio<0.2;
-      var c=col(x.t);
-      return '<div style="margin:5px 0">'+
-        '<div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:3px">'+
-          '<span style="font-size:.74rem;font-weight:'+(isOpp?'700':'500')+';color:var(--ink)">'+esc(sh(x.t))+'</span>'+
-          '<span style="font-size:.66rem;color:var(--muted);margin-left:6px;white-space:nowrap">'+x.pipeline+' early · '+x.atA+' SerA · '+x.growth+' growth</span>'+
-        '</div>'+
-        '<div style="height:13px;background:rgba(0,0,0,.05);border-radius:4px;overflow:hidden;position:relative">'+
-          '<div style="position:absolute;inset:0 auto 0 0;width:'+pct+'%;background:'+c+';opacity:'+(isOpp?'.88':'.58')+';border-radius:4px"></div>'+
-          (x.atA>0?'<div style="position:absolute;inset:0 auto 0 0;width:'+Math.round(x.atA/maxP*100)+'%;background:#1a3d3b;opacity:.5;border-radius:4px" title="En Serie A: '+x.atA+'"></div>':'')+
-        '</div>'+
-        (isOpp?'<div style="font-size:.63rem;color:'+WARM+';margin-top:2px;font-weight:600">⚡ '+x.pipeline+' en pipeline, solo '+x.atA+' en Serie A</div>':'')+
-      '</div>';
-    }).join('');
+
+      // label
+      parts.push('<text x="'+(PAD_L-6)+'" y="'+(y+ROW/2)+'" text-anchor="end" dominant-baseline="middle" font-size="8.5" font-weight="'+(isOpp?'700':'500')+'" font-family="'+FM+'" fill="'+(isOpp?TK.ink:TK.muted)+'">'+sh(x.t)+'</text>');
+      // track
+      parts.push('<rect x="'+PAD_L+'" y="'+(y+8)+'" width="'+BAR_MAX+'" height="12" rx="2" fill="'+TK.line+'" opacity="0.35"/>');
+      // pipeline bar
+      parts.push('<rect x="'+PAD_L+'" y="'+(y+8)+'" width="'+pW+'" height="12" rx="2" fill="'+c+'" opacity="'+(isOpp?'0.7':'0.45')+'"/>');
+      // serie A overlay
+      if(aW>0) parts.push('<rect x="'+PAD_L+'" y="'+(y+8)+'" width="'+aW+'" height="12" rx="2" fill="'+TK.accent+'" opacity="0.85"/>');
+
+      // counts
+      parts.push('<text x="'+(PAD_L+BAR_MAX+8)+'" y="'+(y+ROW/2)+'" dominant-baseline="middle" font-size="8" font-family="'+FM+'" fill="'+TK.muted+'">'+x.pipeline+' / '+x.atA+'</text>');
+
+      // opp flag
+      if(isOpp) parts.push('<text x="'+PAD_L+'" y="'+(y+ROW-3)+'" font-size="7" font-family="'+FM+'" fill="'+TK.warm+'">⚡ oportunidad</text>');
+    });
+
+    // legend
+    var ly=H-5;
+    parts.push('<rect x="'+PAD_L+'" y="'+(ly-7)+'" width="10" height="7" rx="1" fill="'+TK.muted+'" opacity="0.45"/>');
+    parts.push('<text x="'+(PAD_L+13)+'" y="'+(ly-1)+'" font-size="7" font-family="'+FM+'" fill="'+TK.muted+'">pipeline early</text>');
+    parts.push('<rect x="'+(PAD_L+88)+'" y="'+(ly-7)+'" width="10" height="7" rx="1" fill="'+TK.accent+'" opacity="0.85"/>');
+    parts.push('<text x="'+(PAD_L+101)+'" y="'+(ly-1)+'" font-size="7" font-family="'+FM+'" fill="'+TK.muted+'">en Serie A</text>');
+    parts.push('</svg>');
+
     var el=document.getElementById('cs-pipeline');
-    if(el) el.innerHTML=html+
-      '<div style="display:flex;gap:12px;margin-top:10px;flex-wrap:wrap">'+
-        '<span style="display:inline-flex;align-items:center;gap:4px;font-size:.67rem;color:var(--muted)"><span style="width:10px;height:8px;border-radius:2px;background:#0B8F87;opacity:.58;display:inline-block"></span>Pipeline early</span>'+
-        '<span style="display:inline-flex;align-items:center;gap:4px;font-size:.67rem;color:var(--muted)"><span style="width:10px;height:8px;border-radius:2px;background:#1a3d3b;opacity:.5;display:inline-block"></span>Ya en Serie A</span>'+
-      '</div>';
+    if(el) el.innerHTML=parts.join('');
   })();
 
-  // ── 4. Heatmap normalizado tema × país ────────────────────────────
+  // ── 2. Scatter País × Madurez ─────────────────────────────────────
   (function(){
-    if (!CS.country_themes) return;
+    if(!CS.country_pyramids) return;
+    var cp=CS.country_pyramids;
+    var pts=cp.country_order
+      .map(function(cc){ return {cc:cc,d:cp.by_country[cc]}; })
+      .filter(function(p){ return p.d && p.d.total>=5; })
+      .map(function(p){ return {cc:p.cc, x:p.d.series_a_plus_ratio, y:p.d.total, f:p.d.funded, sA:p.d.series_a_plus}; });
+    var W=560,H=380,PAD={l:48,r:20,t:22,b:42};
+    var CW=W-PAD.l-PAD.r, CH=H-PAD.t-PAD.b;
+    var maxX=0.68, maxY=190;
+    var toX=function(v){ return PAD.l+Math.min(v/maxX,1)*CW; };
+    var toY=function(v){ return PAD.t+CH-Math.min(v/maxY,1)*CH; };
+    var toR=function(n){ return Math.max(8,Math.min(28,Math.round(Math.sqrt(n/190)*26))); };
+    var parts=['<svg viewBox="0 0 '+W+' '+H+'" style="width:100%;display:block">'];
+    parts.push('<rect width="'+W+'" height="'+H+'" fill="'+TK.bg+'"/>');
+
+    // Cuadrante highlight
+    var qX=toX(0.25), qY=toY(40);
+    parts.push('<rect x="'+qX+'" y="'+PAD.t+'" width="'+(PAD.l+CW-qX)+'" height="'+(qY-PAD.t)+'" rx="2" fill="rgba(11,92,88,.04)"/>');
+
+    // Grid horizontales
+    [50,100,150].forEach(function(v){
+      var y=toY(v);
+      parts.push('<line x1="'+PAD.l+'" y1="'+y+'" x2="'+(PAD.l+CW)+'" y2="'+y+'" stroke="'+TK.line+'" stroke-width="0.75"/>');
+      parts.push('<text x="'+(PAD.l-5)+'" y="'+(y+1)+'" text-anchor="end" dominant-baseline="middle" font-size="8" font-family="'+FM+'" fill="'+TK.muted+'">'+v+'</text>');
+    });
+    // Grid verticales
+    [0.1,0.25,0.4,0.55].forEach(function(v){
+      var x=toX(v);
+      var isDash=v===0.25;
+      parts.push('<line x1="'+x+'" y1="'+PAD.t+'" x2="'+x+'" y2="'+(PAD.t+CH)+'" stroke="'+(isDash?TK.accent:TK.line)+'" stroke-width="'+(isDash?'1':'0.75')+'"'+(isDash?' stroke-dasharray="5,4"':'')+' opacity="'+(isDash?'0.35':'1')+'"/>');
+      parts.push('<text x="'+x+'" y="'+(PAD.t+CH+14)+'" text-anchor="middle" font-size="8" font-family="'+FM+'" fill="'+TK.muted+'">'+(v*100)+'%</text>');
+    });
+
+    // Ejes labels
+    parts.push('<text x="'+(PAD.l+CW/2)+'" y="'+(H-4)+'" text-anchor="middle" font-size="8.5" font-weight="700" font-family="'+FM+'" fill="'+TK.muted+'" letter-spacing="0.05em">MADUREZ — % EN SERIE A+</text>');
+    parts.push('<text x="10" y="'+(PAD.t+CH/2)+'" text-anchor="middle" dominant-baseline="middle" font-size="8.5" font-weight="700" font-family="'+FM+'" fill="'+TK.muted+'" letter-spacing="0.05em" transform="rotate(-90,10,'+(PAD.t+CH/2)+')">STARTUPS BIO</text>');
+
+    // Quadrant label
+    parts.push('<text x="'+(qX+6)+'" y="'+(PAD.t+11)+'" font-size="7.5" font-family="'+FM+'" fill="'+TK.accent+'" opacity="0.55">maduro + grande</text>');
+
+    // Burbujas — render grande a pequeño
+    pts.sort(function(a,b){return b.f-a.f;}).forEach(function(p){
+      var x=toX(p.x),y=toY(p.y),r=toR(p.f);
+      parts.push('<circle cx="'+x+'" cy="'+y+'" r="'+r+'" fill="'+TK.accent+'" fill-opacity="0.65" stroke="'+TK.panel+'" stroke-width="1.5"><title>'+p.cc+': '+Math.round(p.x*100)+'% SerA+ · '+p.y+' startups · '+p.sA+' en Serie A+</title></circle>');
+      var lx=x, ly=y-r-6, anc='middle';
+      if(p.cc==='AR'){ ly=y+r+12; }
+      if(p.cc==='BR'){ lx=x-r-6; anc='end'; ly=y+3; }
+      if(p.cc==='CL'){ lx=x+r+6; anc='start'; ly=y+3; }
+      if(p.cc==='UY'){ lx=x+r+6; anc='start'; }
+      parts.push('<text x="'+lx+'" y="'+ly+'" text-anchor="'+anc+'" dominant-baseline="middle" font-size="9" font-weight="700" font-family="'+FM+'" fill="'+TK.ink+'">'+p.cc+'</text>');
+    });
+    parts.push('</svg>');
+    var el=document.getElementById('cs-country-scatter');
+    if(el) el.innerHTML=parts.join('');
+  })();
+
+  // ── 4. Heatmap ADN temático × país ────────────────────────────────
+  (function(){
+    if(!CS.country_themes) return;
     var ct=CS.country_themes;
     var countries=ct.country_order.slice(0,8);
-    var ROW_H=34,COL_W=66,PAD_L=178,PAD_T=40,PAD_B=8;
+    var ROW_H=38, COL_W=82, PAD_L=132, PAD_T=52, PAD_B=8;
     var W=PAD_L+countries.length*COL_W+8;
     var H=PAD_T+THEME_ORDER.length*ROW_H+PAD_B;
-    var parts=['<svg viewBox="0 0 '+W+' '+H+'" style="width:100%;display:block;max-width:880px">'];
-    // Cabeceras columnas
+    var parts=['<svg viewBox="0 0 '+W+' '+H+'" style="width:100%;display:block">'];
+    parts.push('<rect width="'+W+'" height="'+H+'" fill="'+TK.bg+'"/>');
+
+    // Column headers
     countries.forEach(function(cc,ci){
-      var x=PAD_L+ci*COL_W+COL_W/2, tot=ct.country_totals[cc]||0;
-      parts.push('<text x="'+x+'" y="'+(PAD_T-17)+'" text-anchor="middle" font-size="11" font-weight="700" font-family="inherit" fill="rgba(46,35,22,.9)">'+(FLAGS[cc]||'')+' '+cc+'</text>');
-      parts.push('<text x="'+x+'" y="'+(PAD_T-4)+'" text-anchor="middle" font-size="7.5" font-family="inherit" fill="rgba(100,85,70,.48)">n='+tot+'</text>');
+      var x=PAD_L+ci*COL_W+COL_W/2;
+      var tot=ct.country_totals[cc]||0;
+      parts.push('<text x="'+x+'" y="'+(PAD_T-18)+'" text-anchor="middle" font-size="11" font-weight="700" font-family="'+FM+'" fill="'+TK.ink+'">'+(FLAGS[cc]||'')+' '+cc+'</text>');
+      parts.push('<text x="'+x+'" y="'+(PAD_T-5)+'" text-anchor="middle" font-size="7" font-family="'+FM+'" fill="'+TK.muted+'">n='+tot+'</text>');
     });
-    parts.push('<line x1="'+PAD_L+'" y1="'+PAD_T+'" x2="'+(W-4)+'" y2="'+PAD_T+'" stroke="rgba(0,0,0,.1)" stroke-width="1"/>');
+
+    // Header separator
+    parts.push('<line x1="'+PAD_L+'" y1="'+PAD_T+'" x2="'+(W-4)+'" y2="'+PAD_T+'" stroke="'+TK.line+'" stroke-width="1"/>');
+
     THEME_ORDER.forEach(function(theme,ti){
       var y=PAD_T+ti*ROW_H, tc=THEME_PAL[theme];
-      if(ti%2===0) parts.push('<rect x="0" y="'+y+'" width="'+W+'" height="'+ROW_H+'" fill="rgba(0,0,0,.014)"/>');
-      parts.push('<rect x="'+(PAD_L-24)+'" y="'+(y+ROW_H/2-5)+'" width="9" height="9" rx="2" fill="'+tc+'"/>');
-      parts.push('<text x="'+(PAD_L-32)+'" y="'+(y+ROW_H/2+1)+'" text-anchor="end" dominant-baseline="middle" font-size="9.5" font-family="inherit" fill="rgba(50,38,24,.84)">'+sh(theme)+'</text>');
-      // Max % en esta fila para escala relativa
+
+      // Row separator
+      if(ti>0) parts.push('<line x1="0" y1="'+y+'" x2="'+W+'" y2="'+y+'" stroke="'+TK.line+'" stroke-width="0.5" opacity="0.5"/>');
+
+      // Theme dot + label
+      parts.push('<rect x="'+(PAD_L-16)+'" y="'+(y+ROW_H/2-4)+'" width="8" height="8" rx="1" fill="'+tc+'"/>');
+      parts.push('<text x="'+(PAD_L-22)+'" y="'+(y+ROW_H/2+1)+'" text-anchor="end" dominant-baseline="middle" font-size="8.5" font-family="'+FM+'" fill="'+TK.ink+'">'+sh(theme)+'</text>');
+
+      // Row max for relative intensity
       var rowVals=countries.map(function(cc){
         var n=(ct.matrix[theme]||{})[cc]||0, tot=ct.country_totals[cc]||1;
         return n/tot;
       });
       var rowMax=Math.max.apply(null,rowVals)||0.001;
+
       countries.forEach(function(cc,ci){
         var n=(ct.matrix[theme]||{})[cc]||0, tot=ct.country_totals[cc]||1;
         var pct=n/tot;
-        var cX=PAD_L+ci*COL_W+3, cY=y+4, cW=COL_W-6, cH=ROW_H-8;
+        var cX=PAD_L+ci*COL_W+2, cY=y+3, cW=COL_W-4, cH=ROW_H-6;
         var cx=PAD_L+ci*COL_W+COL_W/2, cy=y+ROW_H/2;
-        if(n===0){ parts.push('<rect x="'+cX+'" y="'+cY+'" width="'+cW+'" height="'+cH+'" rx="4" fill="rgba(0,0,0,.03)"/>'); return; }
-        var intensity=pct/rowMax, alpha=(0.1+0.9*intensity).toFixed(2);
-        var txtC=intensity>0.52?'#fff':tc, txtO=intensity>0.15?'1':'0.7';
-        parts.push('<rect x="'+cX+'" y="'+cY+'" width="'+cW+'" height="'+cH+'" rx="4" fill="'+tc+'" opacity="'+alpha+'"><title>'+sh(theme)+' · '+cc+': '+n+' startups ('+Math.round(pct*100)+'% del portfolio BIO)</title></rect>');
-        parts.push('<text x="'+cx+'" y="'+(cy-3)+'" text-anchor="middle" dominant-baseline="middle" font-size="9.5" font-weight="700" font-family="inherit" fill="'+txtC+'" opacity="'+txtO+'">'+Math.round(pct*100)+'%</text>');
-        parts.push('<text x="'+cx+'" y="'+(cy+8)+'" text-anchor="middle" dominant-baseline="middle" font-size="7" font-weight="500" font-family="inherit" fill="'+txtC+'" opacity="'+(parseFloat(txtO)*0.72).toFixed(2)+'">n='+n+'</text>');
+        // vertical column separator
+        if(ci>0) parts.push('<line x1="'+(PAD_L+ci*COL_W)+'" y1="'+y+'" x2="'+(PAD_L+ci*COL_W)+'" y2="'+(y+ROW_H)+'" stroke="'+TK.line+'" stroke-width="0.5" opacity="0.4"/>');
+        if(n===0){
+          parts.push('<rect x="'+cX+'" y="'+cY+'" width="'+cW+'" height="'+cH+'" rx="2" fill="'+TK.line+'" opacity="0.18"/>');
+          return;
+        }
+        var intensity=pct/rowMax;
+        var alpha=(0.12+0.88*intensity).toFixed(2);
+        var onDark=intensity>0.5;
+        parts.push('<rect x="'+cX+'" y="'+cY+'" width="'+cW+'" height="'+cH+'" rx="2" fill="'+tc+'" opacity="'+alpha+'"><title>'+sh(theme)+' · '+cc+': '+n+' startups ('+Math.round(pct*100)+'%)</title></rect>');
+        parts.push('<text x="'+cx+'" y="'+cy+'" text-anchor="middle" dominant-baseline="middle" font-size="9" font-weight="700" font-family="'+FM+'" fill="'+(onDark?'#fff':tc)+'" opacity="'+(onDark?'0.95':'0.9')+'">'+Math.round(pct*100)+'%</text>');
       });
     });
     parts.push('</svg>');
     var el=document.getElementById('cs-heatmap');
     if(el) el.innerHTML=parts.join('');
     var ins=document.getElementById('cs-heatmap-insight');
-    if(ins) ins.innerHTML='🌐 <strong>ADN diferenciado:</strong> '+
-      '<strong>CL</strong> destina el 33% de su portfolio BIO a Food Systems (alt-proteins + acuicultura). '+
-      '<strong>CR</strong> concentra el 39% en Precision Agriculture. '+
-      '<strong>AR</strong> domina en Diagnostics (46 startups) pero sin foco sectorial claro. '+
-      '<strong>BR</strong> tiene la huella más amplia: Diagnostics + Therapeutics + Precision Ag a escala.';
+    if(ins) ins.innerHTML=
+      '<span style="font-family:'+FM+';font-size:.69rem;color:'+TK.muted+'">'+
+      '<strong style="color:'+TK.ink+'">CL</strong> 33% Food Systems · '+
+      '<strong style="color:'+TK.ink+'">CR</strong> 39% Precision Ag · '+
+      '<strong style="color:'+TK.ink+'">AR</strong> domina Diagnostics · '+
+      '<strong style="color:'+TK.ink+'">BR</strong> huella más amplia</span>';
   })();
 
   // ── 5. Sankey transfronterizo ─────────────────────────────────────
   (function(){
-    if (!CS.cross_border) return;
+    if(!CS.cross_border) return;
     var cb=CS.cross_border;
-    var SRC_PAL={AR:'#1A6DB5',US:'#b45309',BR:'#2A7A42',CL:'#7033BC',MX:'#8B6D14',CR:'#127A6E',FI:'#2E4E8C',BE:'#6B8C3A'};
+    // Paleta monocromática: country como tono del accent
+    var SRC_PAL={AR:TK.accent,US:'#5B3A8C',BR:'#2A7A42',CL:'#8B6D14',MX:'#C25A2A',CR:'#127A6E',FI:'#2E4E8C',BE:'#1A6DB5'};
     var SRC=['AR','US','BR','CL','MX','CR','FI','BE'];
     var DST=['AR','BR','CL','MX','CO','CR','UY','BO','EC'];
     var flowMap={};
     cb.flows.forEach(function(f){ flowMap[f.from+'_'+f.to]=f.n; });
     var srcAct=SRC.filter(function(s){ return DST.some(function(d){ return (flowMap[s+'_'+d]||0)>=4; }); });
     var dstAct=DST.filter(function(d){ return SRC.some(function(s){ return (flowMap[s+'_'+d]||0)>=4; }); });
-    var W=600,H=310,PAD_V=16;
-    var srcSlot=(H-PAD_V*2)/srcAct.length, dstSlot=(H-PAD_V*2)/dstAct.length;
+    var W=820, PAD_V=24, NODE_W=88, NODE_H=30, GAP_SRC=10, GAP_DST=10;
+    var totalSrcH=srcAct.length*(NODE_H+GAP_SRC)-GAP_SRC;
+    var totalDstH=dstAct.length*(NODE_H+GAP_DST)-GAP_DST;
+    var H=Math.max(totalSrcH,totalDstH)+PAD_V*2+24;
+    var srcOffY=(H-PAD_V*2-totalSrcH)/2+PAD_V;
+    var dstOffY=(H-PAD_V*2-totalDstH)/2+PAD_V;
     var srcY={}, dstY={};
-    srcAct.forEach(function(s,i){ srcY[s]=PAD_V+i*srcSlot+srcSlot/2; });
-    dstAct.forEach(function(d,i){ dstY[d]=PAD_V+i*dstSlot+dstSlot/2; });
+    srcAct.forEach(function(s,i){ srcY[s]=srcOffY+i*(NODE_H+GAP_SRC)+NODE_H/2; });
+    dstAct.forEach(function(d,i){ dstY[d]=dstOffY+i*(NODE_H+GAP_DST)+NODE_H/2; });
     var maxN=Math.max.apply(null,cb.flows.map(function(f){return f.n;}));
-    var parts=['<svg viewBox="0 0 '+W+' '+H+'" style="width:100%;max-height:310px;display:block">'];
-    // Flows
+    var parts=['<svg viewBox="0 0 '+W+' '+H+'" style="width:100%;display:block">'];
+    parts.push('<rect width="'+W+'" height="'+H+'" fill="'+TK.bg+'"/>');
+
+    // Column labels
+    var lY=PAD_V-4;
+    parts.push('<text x="'+(NODE_W/2)+'" y="'+lY+'" text-anchor="middle" font-size="8" font-weight="700" font-family="'+FM+'" fill="'+TK.muted+'" letter-spacing="0.08em">INVERSOR</text>');
+    parts.push('<text x="'+(W-NODE_W/2)+'" y="'+lY+'" text-anchor="middle" font-size="8" font-weight="700" font-family="'+FM+'" fill="'+TK.muted+'" letter-spacing="0.08em">STARTUP</text>');
+
+    // Flows (render small first)
     var allF=[];
     srcAct.forEach(function(s){ dstAct.forEach(function(d){ var n=flowMap[s+'_'+d]||0; if(n>=4) allF.push({s:s,d:d,n:n}); }); });
     allF.sort(function(a,b){return a.n-b.n;}).forEach(function(f){
-      var y1=srcY[f.s],y2=dstY[f.d];
-      var sw=Math.max(1.5,Math.round(f.n/maxN*16));
-      var c=SRC_PAL[f.s]||'#888';
-      var cp1=68+(W-136)*0.42, cp2=68+(W-136)*0.58;
-      parts.push('<path d="M68,'+y1+' C'+cp1+','+y1+' '+cp2+','+y2+' '+(W-68)+','+y2+'" stroke="'+c+'" stroke-width="'+sw+'" fill="none" opacity="'+(f.s===f.d?'0.22':'0.46')+'"><title>'+f.s+' → '+f.d+': '+f.n+'</title></path>');
+      var y1=srcY[f.s], y2=dstY[f.d];
+      var sw=Math.max(1.5, Math.round(f.n/maxN*12));
+      var c=SRC_PAL[f.s]||TK.muted;
+      var isDomestic=f.s===f.d;
+      var cp1=NODE_W+(W-NODE_W*2)*0.38, cp2=NODE_W+(W-NODE_W*2)*0.62;
+      parts.push('<path d="M'+NODE_W+','+y1+' C'+cp1+','+y1+' '+cp2+','+y2+' '+(W-NODE_W)+','+y2+'" stroke="'+c+'" stroke-width="'+sw+'" fill="none" opacity="'+(isDomestic?'0.15':'0.38')+'"><title>'+f.s+' → '+f.d+': '+f.n+'</title></path>');
     });
-    // Nodos fuente
+
+    // Source nodes
     srcAct.forEach(function(s){
-      var y=srcY[s], total=DST.reduce(function(a,d){return a+(flowMap[s+'_'+d]||0);},0);
-      var cross=DST.filter(function(d){return d!==s;}).reduce(function(a,d){return a+(flowMap[s+'_'+d]||0);},0);
-      var c=SRC_PAL[s]||'#888';
-      parts.push('<rect x="2" y="'+(y-14)+'" width="62" height="27" rx="7" fill="'+c+'"/>');
-      parts.push('<text x="33" y="'+(y+1)+'" text-anchor="middle" dominant-baseline="middle" font-size="10.5" font-weight="700" font-family="inherit" fill="#fff">'+(FLAGS[s]||s)+' '+s+'</text>');
-      parts.push('<text x="67" y="'+(y-3)+'" font-size="7.5" font-family="inherit" fill="rgba(60,46,32,.5)">'+total+' tot.</text>');
-      if(cross>0) parts.push('<text x="67" y="'+(y+7)+'" font-size="7" font-family="inherit" fill="rgba(60,46,32,.4)">'+cross+' cross</text>');
+      var y=srcY[s], c=SRC_PAL[s]||TK.muted;
+      var total=DST.reduce(function(a,d){return a+(flowMap[s+'_'+d]||0);},0);
+      parts.push('<rect x="2" y="'+(y-NODE_H/2)+'" width="'+(NODE_W-4)+'" height="'+NODE_H+'" rx="2" fill="'+c+'"/>');
+      parts.push('<text x="'+(NODE_W/2)+'" y="'+y+'" text-anchor="middle" dominant-baseline="middle" font-size="9.5" font-weight="700" font-family="'+FM+'" fill="#fff">'+(FLAGS[s]||s)+' '+s+'</text>');
+      parts.push('<text x="'+(NODE_W+4)+'" y="'+(y+1)+'" dominant-baseline="middle" font-size="7.5" font-family="'+FM+'" fill="'+TK.muted+'">'+total+'</text>');
     });
-    // Nodos destino
+
+    // Destination nodes
     dstAct.forEach(function(d){
-      var y=dstY[d], total=SRC.reduce(function(a,s){return a+(flowMap[s+'_'+d]||0);},0);
-      var c=COUNTRY_PAL[d]||'#888';
-      parts.push('<rect x="'+(W-64)+'" y="'+(y-14)+'" width="62" height="27" rx="7" fill="'+c+'"/>');
-      parts.push('<text x="'+(W-33)+'" y="'+(y+1)+'" text-anchor="middle" dominant-baseline="middle" font-size="10.5" font-weight="700" font-family="inherit" fill="#fff">'+(FLAGS[d]||d)+' '+d+'</text>');
-      parts.push('<text x="'+(W-67)+'" y="'+y+'" text-anchor="end" font-size="7.5" font-family="inherit" fill="rgba(60,46,32,.5)" dominant-baseline="middle">'+total+'</text>');
+      var y=dstY[d], c=SRC_PAL[d]||TK.muted;
+      var total=SRC.reduce(function(a,s){return a+(flowMap[s+'_'+d]||0);},0);
+      parts.push('<rect x="'+(W-NODE_W+2)+'" y="'+(y-NODE_H/2)+'" width="'+(NODE_W-4)+'" height="'+NODE_H+'" rx="2" fill="'+TK.ink+'" opacity="0.82"/>');
+      parts.push('<text x="'+(W-NODE_W/2)+'" y="'+y+'" text-anchor="middle" dominant-baseline="middle" font-size="9.5" font-weight="700" font-family="'+FM+'" fill="#fff">'+(FLAGS[d]||d)+' '+d+'</text>');
+      parts.push('<text x="'+(W-NODE_W-4)+'" y="'+(y+1)+'" text-anchor="end" dominant-baseline="middle" font-size="7.5" font-family="'+FM+'" fill="'+TK.muted+'">'+total+'</text>');
     });
-    parts.push('<text x="33" y="'+(PAD_V-4)+'" text-anchor="middle" font-size="8" font-weight="700" font-family="inherit" fill="rgba(70,55,38,.5)">INVERSOR</text>');
-    parts.push('<text x="'+(W-33)+'" y="'+(PAD_V-4)+'" text-anchor="middle" font-size="8" font-weight="700" font-family="inherit" fill="rgba(70,55,38,.5)">STARTUP</text>');
     parts.push('</svg>');
+
     var el=document.getElementById('cs-sankey');
     if(el) el.innerHTML=parts.join('');
     var noteEl=document.getElementById('cs-sankey-note');
-    if(noteEl){
+    if(noteEl && cb.top_cross_border && cb.top_cross_border.length>=2){
       var t0=cb.top_cross_border[0], t1=cb.top_cross_border[1];
-      noteEl.innerHTML='Grosor = # inversiones BIO · Flujo transparente = doméstico. '+
-        '<strong>'+(FLAGS[t0[0]]||t0[0])+' '+t0[0]+'</strong> exporta <strong>'+t0[1]+' edges transfronterizas</strong> — es el VC hub regional. '+
-        '<strong>'+(FLAGS[t1[0]]||t1[0])+' '+t1[0]+'</strong> con '+t1[1]+'.';
+      noteEl.innerHTML='<span style="font-size:.69rem;font-family:'+FM+';color:'+TK.muted+'">'+
+        'Grosor = # inversiones · flujo claro = doméstico · '+
+        '<strong style="color:'+TK.ink+'">'+(FLAGS[t0[0]]||t0[0])+' '+t0[0]+'</strong> exporta '+t0[1]+' edges transfronterizas — hub regional · '+
+        '<strong style="color:'+TK.ink+'">'+(FLAGS[t1[0]]||t1[0])+' '+t1[0]+'</strong> '+t1[1]+'</span>';
     }
-  })();
-
-  // ── 6. Dependencia capital extranjero (solo BIO) ──────────────────
-  (function(){
-    var fd=CS.foreign_dependence;
-    var rows=THEME_ORDER.filter(function(t){return fd[t];})
-      .map(function(t){return {t:t,p:fd[t].foreign_pct};})
-      .sort(function(a,b){return b.p-a.p;});
-    var el=document.getElementById('cs-foreign');
-    if(el) el.innerHTML=rows.map(function(x){
-      return bar(sh(x.t),x.p,1,col(x.t),Math.round(x.p*100)+'%');
-    }).join('')+'<div class="cs-note" style="margin-top:7px">% de aristas de inversión cuyo origen es capital no-LATAM.</div>';
-  })();
-
-  // ── 7. Concentración HHI (solo BIO) ──────────────────────────────
-  (function(){
-    var co=CS.concentration;
-    var wEl=document.getElementById('cs-hhi-warn');
-    if(wEl) wEl.innerHTML='⚠️ GridX aparece dominante por sesgo de recolección (portfolio barrido completo). Leer junto al mapa de cobertura.';
-    var rows=THEME_ORDER.filter(function(t){return co[t];})
-      .map(function(t){return {t:t,h:co[t].hhi};})
-      .sort(function(a,b){return b.h-a.h;});
-    var maxH=Math.max.apply(null,rows.map(function(x){return x.h;}));
-    var el=document.getElementById('cs-hhi');
-    if(el) el.innerHTML=rows.map(function(x){return bar(sh(x.t),x.h,maxH,col(x.t),x.h.toFixed(2));}).join('');
-  })();
-
-  // ── 8. Sindicación ────────────────────────────────────────────────
-  (function(){
-    var sy=CS.syndication;
-    var chips=sy.most_syndicated.map(function(p){
-      return '<span class="cs-chip"><strong>'+esc(p[0])+'</strong> · '+p[1]+' fondos</span>';
-    }).join('');
-    var pairs=sy.pairs.slice(0,8).map(function(e){
-      return '<div class="cs-note" style="margin:2px 0">'+esc(e.source)+' + '+esc(e.target)+' · <strong>'+e.weight+'</strong> co-inversiones</div>';
-    }).join('');
-    var el=document.getElementById('cs-synd');
-    if(el) el.innerHTML='<div class="cs-note" style="margin:0 0 9px"><strong>'+sy.total_pairs+
-      '</strong> pares de fondos co-invierten en ≥2 startups BIO · Fondos más conectados:</div>'+
-      '<div class="cs-chips">'+chips+'</div>'+
-      '<div style="margin-top:12px;columns:2;column-gap:24px">'+pairs+'</div>';
-  })();
-
-  // ── 9. Cohortes ───────────────────────────────────────────────────
-  (function(){
-    if(!CS.cohorts||!CS.cohorts.by_year) return;
-    var data=CS.cohorts.by_year.filter(function(d){return d.year>=2005&&d.total>0;});
-    if(!data.length) return;
-    var maxT=Math.max.apply(null,data.map(function(d){return d.total;}));
-    var BW=25,GAP=3,PX=10,PY=6,BMH=90,LH=18;
-    var W=data.length*(BW+GAP)-GAP+PX*2, H=BMH+LH+PY*2;
-    var parts=['<svg viewBox="0 0 '+W+' '+H+'" style="width:100%;max-height:130px;display:block">'];
-    data.forEach(function(d,i){
-      var x=PX+i*(BW+GAP), tH=maxT>0?Math.max(2,Math.round(d.total/maxT*BMH)):0;
-      var fH=maxT>0?Math.round(d.funded/maxT*BMH):0, bY=PY+BMH;
-      parts.push('<rect x="'+x+'" y="'+(bY-tH)+'" width="'+BW+'" height="'+tH+'" rx="3" fill="rgba(180,168,150,.3)"/>');
-      if(fH>0) parts.push('<rect x="'+x+'" y="'+(bY-fH)+'" width="'+BW+'" height="'+fH+'" rx="3" fill="'+ACCENT+'" opacity="0.68"/>');
-      parts.push('<title>'+d.year+': '+d.funded+'/'+d.total+' financiadas BIO ('+Math.round(d.funded/d.total*100)+'%)</title>');
-      if(d.year%3===0||data.length<=14) parts.push('<text x="'+(x+BW/2)+'" y="'+(bY+LH-3)+'" text-anchor="middle" font-size="9" font-family="inherit" fill="rgba(120,96,82,.55)">\''+String(d.year).slice(2)+'</text>');
-    });
-    parts.push('</svg>');
-    var el=document.getElementById('cs-cohorts');
-    if(el) el.innerHTML=parts.join('');
   })();
 });
 </script>
@@ -1726,13 +2010,69 @@ document.addEventListener('DOMContentLoaded', function(){
     }
     if (view === 'matrix')      renderMatrix();
     if (view === 'stages')      renderStageLadder();
+    if (view === 'scatter')     renderScatter();
     if (view === 'flow')        renderSankey();
+    // embudo + pais: rendered on DOMContentLoaded, no re-render needed
     if (view === 'syndication') renderSyndication();
     if (view === 'fondos')      renderFondos();
   }
 
   document.querySelectorAll('.vs-btn').forEach(btn =>
     btn.addEventListener('click', () => switchView(btn.dataset.view)));
+
+  // ── Navegación 3 tabs + sub-lentes (Etapa 3) ─────────────────────
+  (function() {
+    const TAB_DEFAULTS = {
+      red:        { view: 'network', mode: 'capital_core' },
+      analisis:   { view: 'matrix',  mode: null },
+      directorio: { view: 'fondos',  mode: null },
+    };
+
+    function activateSublente(btn) {
+      const group = btn.closest('.ca-sub-lentes');
+      group.querySelectorAll('.ca-sub').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const view = btn.dataset.subView;
+      const mode = btn.dataset.subMode;
+      switchView(view);
+      if (mode) {
+        const sel = document.getElementById('atlas-mode');
+        if (sel && sel.value !== mode) {
+          sel.value = mode;
+          sel.dispatchEvent(new Event('change'));
+        }
+      }
+    }
+
+    function activateTab(tab) {
+      document.querySelectorAll('.ca-tab').forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      const tabKey = tab.dataset.tab;
+      // Show/hide sub-lentes groups
+      document.getElementById('sub-red').style.display     = tabKey === 'red'      ? 'flex' : 'none';
+      document.getElementById('sub-analisis').style.display = tabKey === 'analisis' ? 'flex' : 'none';
+      // Net controls visible only on RED+network
+      const def = TAB_DEFAULTS[tabKey];
+      switchView(def.view);
+      if (def.mode) {
+        const sel = document.getElementById('atlas-mode');
+        if (sel) { sel.value = def.mode; sel.dispatchEvent(new Event('change')); }
+      }
+      // Activate first sub-lente of the group
+      const subGroup = document.getElementById('sub-' + tabKey);
+      if (subGroup) {
+        subGroup.querySelectorAll('.ca-sub').forEach(b => b.classList.remove('active'));
+        const first = subGroup.querySelector('.ca-sub');
+        if (first) first.classList.add('active');
+      }
+    }
+
+    document.querySelectorAll('.ca-tab').forEach(tab =>
+      tab.addEventListener('click', () => activateTab(tab)));
+
+    document.querySelectorAll('.ca-sub').forEach(btn =>
+      btn.addEventListener('click', () => activateSublente(btn)));
+  })();
 
   // ── Drawer global de ficha de fondo (la ficha rica de Etapas, accesible desde
   //    cualquier vista: matriz, radial, red) ──────────────────────────────────
@@ -1758,6 +2098,19 @@ document.addEventListener('DOMContentLoaded', function(){
   document.addEventListener('keydown', e => { if(e.key === 'Escape') closeFundDrawer(); });
   // Hook para recibir clicks de nodos desde el grafo (capital-atlas.js)
   window.onAtlasNodeSelected = function(id) { openFundDrawer(id); };
+
+  // ── Sidebar collapse toggle ───────────────────────────────────────
+  (function() {
+    const sidebar  = document.getElementById('ca-inv-sidebar');
+    const btn      = document.getElementById('ca-sidebar-toggle');
+    if (!sidebar || !btn) return;
+    btn.addEventListener('click', function() {
+      const collapsed = sidebar.classList.toggle('collapsed');
+      btn.textContent = collapsed ? '›' : '‹';
+      btn.title = collapsed ? 'Expandir sidebar' : 'Colapsar sidebar';
+    });
+  })();
+
   // Click fuera del drawer → cerrar (el flag evita flicker cuando se abre otro fondo)
   document.addEventListener('click', function(e) {
     if (!fundDrawer.classList.contains('open')) return;
@@ -2174,35 +2527,48 @@ document.addEventListener('DOMContentLoaded', function(){
 
   // ── Matrix view ──────────────────────────────────────────────────────────
   let matrixHighlighted = null;
+  let matrixSortTheme   = null; // null = sort by total deals
 
   function renderMatrix() {
-    const view  = document.getElementById('view-matrix');
-    const svg   = document.getElementById('matrix-svg');
-    const stage = document.querySelector('.ca-stage');
+    const viewEl = document.getElementById('view-matrix');
+    const svg    = document.getElementById('matrix-svg');
+    const stage  = document.querySelector('.ca-stage');
     svg.innerHTML = '';
     matrixHighlighted = null;
-    view.style.overflow = 'hidden';
 
-    // ── Dimensions: fill the stage exactly ──────────────────────────────
-    const PAD    = 14;   // outer margin
+    // Remove any lingering tooltip
+    viewEl.querySelectorAll('.mx-tt').forEach(el => el.remove());
+
+    const PAD    = 20;
     const W      = (stage ? stage.clientWidth  : 900) - PAD * 2;
-    const H      = (stage ? stage.clientHeight : 600) - PAD * 2;
-    const HEADER = 40;   // header row height
-    const FOOTER = 46;   // marginal "theme depth" band (Σ deals + # investors)
-    const labelW = 148;  // investor name column
+    const H      = (stage ? stage.clientHeight : 620) - PAD * 2;
+    const HEADER = 48;
+    const FOOTER = 52;
+    const labelW = 156;
     const nTheme = THEME_ORDER.length;
     const colW   = Math.floor((W - labelW) / nTheme);
-    // How many investors we can fit cleanly
     const maxRows  = Math.max(1, Math.floor((H - HEADER - FOOTER) / 22));
-    const minRowH  = 19, maxRowH = 32;
-    const topInv   = investors.slice(0, Math.min(maxRows, investors.length));
-    const nRows    = Math.max(1, topInv.length);
-    const rowH     = Math.max(minRowH, Math.min(maxRowH, Math.floor((H - HEADER - FOOTER) / nRows)));
-    const gridW    = labelW + nTheme * colW;
-    const bodyH    = HEADER + topInv.length * rowH;
-    const gridH    = bodyH + FOOTER;
-    const totalW   = gridW + PAD * 2;
-    const totalH   = gridH + PAD * 2;
+    const minRowH  = 20, maxRowH = 34;
+
+    // Sort rows
+    const sorted = [...investors].sort((a, b) => {
+      if (matrixSortTheme) {
+        const diff = (b.themes[matrixSortTheme] || 0) - (a.themes[matrixSortTheme] || 0);
+        if (diff !== 0) return diff;
+      }
+      const totA = THEME_ORDER.reduce((s, t) => s + (a.themes[t] || 0), 0);
+      const totB = THEME_ORDER.reduce((s, t) => s + (b.themes[t] || 0), 0);
+      return totB - totA;
+    });
+    const topInv = sorted.slice(0, Math.min(maxRows, sorted.length));
+    const nRows  = Math.max(1, topInv.length);
+    const rowH   = Math.max(minRowH, Math.min(maxRowH, Math.floor((H - HEADER - FOOTER) / nRows)));
+
+    const gridW  = labelW + nTheme * colW;
+    const bodyH  = HEADER + topInv.length * rowH;
+    const gridH  = bodyH + FOOTER;
+    const totalW = gridW + PAD * 2;
+    const totalH = gridH + PAD * 2;
 
     svg.setAttribute('width',  totalW);
     svg.setAttribute('height', totalH);
@@ -2214,94 +2580,146 @@ document.addEventListener('DOMContentLoaded', function(){
     const g = document.createElementNS(NS, 'g');
     g.setAttribute('transform', `translate(${PAD},${PAD})`);
 
-    // ── Background panel ────────────────────────────────────────────────
+    // ── Panel background ────────────────────────────────────────────────
     const panelBg = document.createElementNS(NS, 'rect');
     panelBg.setAttribute('x', 0); panelBg.setAttribute('y', 0);
     panelBg.setAttribute('width', gridW); panelBg.setAttribute('height', gridH);
-    panelBg.setAttribute('rx', '10');
-    panelBg.setAttribute('fill', 'rgba(255,252,246,.72)');
-    panelBg.setAttribute('stroke', 'rgba(217,206,190,.42)');
+    panelBg.setAttribute('rx', '2');
+    panelBg.setAttribute('fill', '#FFFFFF');
+    panelBg.setAttribute('stroke', '#D4CCC2');
     panelBg.setAttribute('stroke-width', '1');
     g.appendChild(panelBg);
 
-    // ── Column headers (horizontal, colored pill background) ────────────
-    // Header bg strip
+    // ── Header bg ───────────────────────────────────────────────────────
     const hdrBg = document.createElementNS(NS, 'rect');
-    hdrBg.setAttribute('x', labelW); hdrBg.setAttribute('y', 0);
-    hdrBg.setAttribute('width', nTheme * colW); hdrBg.setAttribute('height', HEADER);
-    hdrBg.setAttribute('rx', '0'); hdrBg.setAttribute('fill', 'rgba(240,234,222,.55)');
+    hdrBg.setAttribute('x', 0); hdrBg.setAttribute('y', 0);
+    hdrBg.setAttribute('width', gridW); hdrBg.setAttribute('height', HEADER);
+    hdrBg.setAttribute('rx', '2'); hdrBg.setAttribute('fill', '#F5F2EC');
     g.appendChild(hdrBg);
+    // Clip bottom corners of header rect
+    const hdrCover = document.createElementNS(NS, 'rect');
+    hdrCover.setAttribute('x', 0); hdrCover.setAttribute('y', HEADER - 2);
+    hdrCover.setAttribute('width', gridW); hdrCover.setAttribute('height', 2);
+    hdrCover.setAttribute('fill', '#F5F2EC');
+    g.appendChild(hdrCover);
 
+    // ── Column sort indicator + label column header ──────────────────────
+    const lblHead = document.createElementNS(NS, 'text');
+    lblHead.setAttribute('x', 10); lblHead.setAttribute('y', HEADER / 2);
+    lblHead.setAttribute('dominant-baseline', 'middle');
+    lblHead.setAttribute('font-size', '9'); lblHead.setAttribute('font-weight', '700');
+    lblHead.setAttribute('font-family', 'inherit');
+    lblHead.setAttribute('fill', '#6B6560');
+    lblHead.setAttribute('letter-spacing', '0.07em');
+    lblHead.setAttribute('pointer-events', 'none');
+    lblHead.textContent = `${topInv.length} INVERSORES`;
+    g.appendChild(lblHead);
+
+    // Sort-by-total chip (right of label col header)
+    const sortAllG = document.createElementNS(NS, 'g');
+    sortAllG.style.cursor = 'pointer';
+    const chipBg = document.createElementNS(NS, 'rect');
+    chipBg.setAttribute('x', labelW - 38); chipBg.setAttribute('y', HEADER/2 - 8);
+    chipBg.setAttribute('width', 32); chipBg.setAttribute('height', 14); chipBg.setAttribute('rx', '2');
+    chipBg.setAttribute('fill', !matrixSortTheme ? '#0B5C58' : '#F5F2EC');
+    chipBg.setAttribute('stroke', !matrixSortTheme ? '#0B5C58' : '#D4CCC2');
+    chipBg.setAttribute('stroke-width', '1');
+    sortAllG.appendChild(chipBg);
+    const chipTxt = document.createElementNS(NS, 'text');
+    chipTxt.setAttribute('x', labelW - 22); chipTxt.setAttribute('y', HEADER/2);
+    chipTxt.setAttribute('text-anchor', 'middle'); chipTxt.setAttribute('dominant-baseline', 'middle');
+    chipTxt.setAttribute('font-size', '7.5'); chipTxt.setAttribute('font-weight', '700');
+    chipTxt.setAttribute('font-family', 'inherit');
+    chipTxt.setAttribute('fill', !matrixSortTheme ? '#fff' : '#6B6560');
+    chipTxt.setAttribute('pointer-events', 'none');
+    chipTxt.textContent = 'TOTAL';
+    sortAllG.appendChild(chipTxt);
+    sortAllG.addEventListener('click', () => { matrixSortTheme = null; renderMatrix(); });
+    g.appendChild(sortAllG);
+
+    // ── Column headers ───────────────────────────────────────────────────
     THEME_ORDER.forEach((theme, ci) => {
       const x   = labelW + ci * colW;
       const col = THEME_PAL[theme];
       const lbl = THEME_SHORT[theme] || theme.split(' ')[0];
-      // Colored indicator bar at top of each column header
+      const isActive = matrixSortTheme === theme;
+
+      // Colored top bar
       const bar = document.createElementNS(NS, 'rect');
-      bar.setAttribute('x', x + 2); bar.setAttribute('y', 0);
-      bar.setAttribute('width', colW - 4); bar.setAttribute('height', 3);
-      bar.setAttribute('rx', '1.5');
-      bar.setAttribute('fill', col);
+      bar.setAttribute('x', x + 1); bar.setAttribute('y', 0);
+      bar.setAttribute('width', colW - 2); bar.setAttribute('height', isActive ? 4 : 2);
+      bar.setAttribute('fill', col); bar.setAttribute('opacity', isActive ? '1' : '0.7');
       g.appendChild(bar);
+
       // Vertical divider
       if (ci > 0) {
         const vd = document.createElementNS(NS, 'line');
         vd.setAttribute('x1', x); vd.setAttribute('y1', 0);
         vd.setAttribute('x2', x); vd.setAttribute('y2', HEADER);
-        vd.setAttribute('stroke', 'rgba(217,206,190,.3)'); vd.setAttribute('stroke-width', '0.5');
+        vd.setAttribute('stroke', '#D4CCC2'); vd.setAttribute('stroke-width', '0.5');
         g.appendChild(vd);
       }
-      // Theme label — two-line if needed
+
+      // Clickable header label
       const words = lbl.split(' ');
-      const line1 = words[0];
-      const line2 = words.slice(1).join(' ');
-      const fontSize = colW >= 72 ? 9.5 : 8.5;
+      const line1 = words[0], line2 = words.slice(1).join(' ');
+      const fontSize = colW >= 68 ? 9 : 8;
+      const hdrG = document.createElementNS(NS, 'g');
+      hdrG.style.cursor = 'pointer';
+
       const t1 = document.createElementNS(NS, 'text');
       t1.setAttribute('x', x + colW / 2);
-      t1.setAttribute('y', line2 ? HEADER / 2 - 1 : HEADER / 2 + 4);
+      t1.setAttribute('y', line2 ? HEADER / 2 - 3 : HEADER / 2 + 2);
       t1.setAttribute('text-anchor', 'middle');
       t1.setAttribute('dominant-baseline', line2 ? 'auto' : 'middle');
       t1.setAttribute('font-size', fontSize);
-      t1.setAttribute('font-weight', '800');
+      t1.setAttribute('font-weight', isActive ? '800' : '700');
       t1.setAttribute('font-family', 'inherit');
-      t1.setAttribute('fill', col);
+      t1.setAttribute('fill', isActive ? col : '#6B6560');
       t1.setAttribute('pointer-events', 'none');
       t1.textContent = line1;
-      g.appendChild(t1);
+      hdrG.appendChild(t1);
+
       if (line2) {
         const t2 = document.createElementNS(NS, 'text');
         t2.setAttribute('x', x + colW / 2);
-        t2.setAttribute('y', HEADER / 2 + 9);
+        t2.setAttribute('y', HEADER / 2 + 8);
         t2.setAttribute('text-anchor', 'middle');
-        t2.setAttribute('font-size', fontSize - 0.5);
-        t2.setAttribute('font-weight', '700');
+        t2.setAttribute('font-size', fontSize - 1);
+        t2.setAttribute('font-weight', '600');
         t2.setAttribute('font-family', 'inherit');
-        t2.setAttribute('fill', col);
-        t2.setAttribute('opacity', '0.82');
+        t2.setAttribute('fill', isActive ? col : '#9A9690');
         t2.setAttribute('pointer-events', 'none');
         t2.textContent = line2;
-        g.appendChild(t2);
+        hdrG.appendChild(t2);
       }
+
+      // Sort arrow
+      if (isActive) {
+        const arr = document.createElementNS(NS, 'text');
+        arr.setAttribute('x', x + colW / 2);
+        arr.setAttribute('y', HEADER - 6);
+        arr.setAttribute('text-anchor', 'middle');
+        arr.setAttribute('font-size', '7');
+        arr.setAttribute('fill', col);
+        arr.setAttribute('pointer-events', 'none');
+        arr.textContent = '▼';
+        hdrG.appendChild(arr);
+      }
+
+      hdrG.addEventListener('click', () => {
+        matrixSortTheme = (matrixSortTheme === theme) ? null : theme;
+        renderMatrix();
+      });
+      g.appendChild(hdrG);
     });
 
-    // Header/body separator
+    // Header separator
     const hdrLine = document.createElementNS(NS, 'line');
     hdrLine.setAttribute('x1', 0); hdrLine.setAttribute('y1', HEADER);
     hdrLine.setAttribute('x2', gridW); hdrLine.setAttribute('y2', HEADER);
-    hdrLine.setAttribute('stroke', 'rgba(217,206,190,.55)'); hdrLine.setAttribute('stroke-width', '1');
+    hdrLine.setAttribute('stroke', '#D4CCC2'); hdrLine.setAttribute('stroke-width', '1');
     g.appendChild(hdrLine);
-
-    // Label column header
-    const lblHead = document.createElementNS(NS, 'text');
-    lblHead.setAttribute('x', 10); lblHead.setAttribute('y', HEADER / 2 + 1);
-    lblHead.setAttribute('dominant-baseline', 'middle');
-    lblHead.setAttribute('font-size', '8.5'); lblHead.setAttribute('font-weight', '800');
-    lblHead.setAttribute('font-family', 'inherit');
-    lblHead.setAttribute('fill', 'rgba(90,78,62,.55)');
-    lblHead.setAttribute('letter-spacing', '0.08em');
-    lblHead.setAttribute('pointer-events', 'none');
-    lblHead.textContent = `${topInv.length} INVERSORES`;
-    g.appendChild(lblHead);
 
     // ── Per-theme max for relative opacity ──────────────────────────────
     const themeMaxes = {};
@@ -2309,200 +2727,275 @@ document.addEventListener('DOMContentLoaded', function(){
       themeMaxes[t] = Math.max(1, ...topInv.map(iv => iv.themes[t] || 0));
     });
 
+    // ── Tooltip (HTML overlay, follows mouse) ───────────────────────────
+    const tt = document.createElement('div');
+    tt.className = 'mx-tt';
+    tt.style.cssText = 'position:absolute;pointer-events:none;display:none;background:#fff;border:1px solid #D4CCC2;padding:7px 10px;font-size:.7rem;line-height:1.55;border-radius:2px;max-width:190px;z-index:30;font-family:Overpass Mono,monospace';
+    viewEl.style.position = 'relative';
+    viewEl.appendChild(tt);
+
+    function showTt(e, html) {
+      tt.innerHTML = html;
+      tt.style.display = 'block';
+      moveTt(e);
+    }
+    function moveTt(e) {
+      const r = viewEl.getBoundingClientRect();
+      let lx = e.clientX - r.left + 14;
+      let ly = e.clientY - r.top  - 10;
+      if (lx + 195 > viewEl.clientWidth)  lx = e.clientX - r.left - 200;
+      tt.style.left = lx + 'px';
+      tt.style.top  = ly + 'px';
+    }
+    function hideTt() { tt.style.display = 'none'; }
+
     // ── Investor rows ────────────────────────────────────────────────────
     topInv.forEach((iv, ri) => {
-      const y  = HEADER + ri * rowH;
+      const y     = HEADER + ri * rowH;
+      const total = THEME_ORDER.reduce((s, t) => s + (iv.themes[t] || 0), 0);
+      const isSelected = matrixHighlighted === iv.id;
+
       const rg = document.createElementNS(NS, 'g');
       rg.setAttribute('data-inv', iv.id);
       rg.style.cursor = 'pointer';
 
-      // Row background (transparent by default, colored on hover/select)
+      // Row background
       const bg = document.createElementNS(NS, 'rect');
       bg.setAttribute('x', 0); bg.setAttribute('y', y);
       bg.setAttribute('width', gridW); bg.setAttribute('height', rowH);
-      bg.setAttribute('fill', 'transparent');
+      bg.setAttribute('fill', isSelected ? 'rgba(11,92,88,.06)' : 'transparent');
       rg.appendChild(bg);
 
-      // Investor name
-      const lbl = document.createElementNS(NS, 'text');
-      lbl.setAttribute('x', 9); lbl.setAttribute('y', y + rowH / 2);
-      lbl.setAttribute('dominant-baseline', 'middle');
-      lbl.setAttribute('font-size', rowH >= 26 ? '10' : '9');
-      lbl.setAttribute('font-weight', '700');
-      lbl.setAttribute('font-family', 'inherit');
-      lbl.setAttribute('fill', '#332b22');
-      const maxLblChars = Math.floor(labelW / 6.8);
-      lbl.textContent = iv.label.length > maxLblChars ? iv.label.slice(0, maxLblChars - 1) + '…' : iv.label;
-      rg.appendChild(lbl);
+      // Left accent bar (visible when selected)
+      const accent = document.createElementNS(NS, 'rect');
+      accent.setAttribute('x', 0); accent.setAttribute('y', y + 1);
+      accent.setAttribute('width', 2); accent.setAttribute('height', rowH - 2);
+      accent.setAttribute('fill', '#0B5C58');
+      accent.setAttribute('opacity', isSelected ? '1' : '0');
+      rg.appendChild(accent);
 
-      // Total count badge (right edge of label column)
-      const total = THEME_ORDER.reduce((s, t) => s + (iv.themes[t] || 0), 0);
+      // Investor name
+      const nameLbl = document.createElementNS(NS, 'text');
+      nameLbl.setAttribute('x', 10); nameLbl.setAttribute('y', y + rowH / 2);
+      nameLbl.setAttribute('dominant-baseline', 'middle');
+      nameLbl.setAttribute('font-size', rowH >= 26 ? '10' : '9');
+      nameLbl.setAttribute('font-weight', isSelected ? '700' : '600');
+      nameLbl.setAttribute('font-family', 'inherit');
+      nameLbl.setAttribute('fill', isSelected ? '#0B5C58' : '#1B1B19');
+      nameLbl.setAttribute('pointer-events', 'none');
+      const maxCh = Math.floor((labelW - 42) / 6.4);
+      nameLbl.textContent = iv.label.length > maxCh ? iv.label.slice(0, maxCh - 1) + '…' : iv.label;
+      rg.appendChild(nameLbl);
+
+      // Total badge
       if (total > 0) {
         const badge = document.createElementNS(NS, 'text');
-        badge.setAttribute('x', labelW - 5); badge.setAttribute('y', y + rowH / 2);
+        badge.setAttribute('x', labelW - 8); badge.setAttribute('y', y + rowH / 2);
         badge.setAttribute('text-anchor', 'end'); badge.setAttribute('dominant-baseline', 'middle');
-        badge.setAttribute('font-size', '7.5'); badge.setAttribute('font-weight', '800');
+        badge.setAttribute('font-size', '8'); badge.setAttribute('font-weight', '700');
         badge.setAttribute('font-family', 'inherit');
-        badge.setAttribute('fill', 'rgba(90,78,62,.42)');
+        badge.setAttribute('fill', isSelected ? '#0B5C58' : '#9A9690');
         badge.setAttribute('pointer-events', 'none');
         badge.textContent = total;
         rg.appendChild(badge);
       }
 
-      // Label column right border
-      const lblBorder = document.createElementNS(NS, 'line');
-      lblBorder.setAttribute('x1', labelW); lblBorder.setAttribute('y1', y);
-      lblBorder.setAttribute('x2', labelW); lblBorder.setAttribute('y2', y + rowH);
-      lblBorder.setAttribute('stroke', 'rgba(217,206,190,.28)'); lblBorder.setAttribute('stroke-width', '0.5');
-      rg.appendChild(lblBorder);
+      // Label column separator
+      const sep = document.createElementNS(NS, 'line');
+      sep.setAttribute('x1', labelW); sep.setAttribute('y1', y);
+      sep.setAttribute('x2', labelW); sep.setAttribute('y2', y + rowH);
+      sep.setAttribute('stroke', '#D4CCC2'); sep.setAttribute('stroke-width', '0.5');
+      rg.appendChild(sep);
 
       // Theme cells
       THEME_ORDER.forEach((theme, ci) => {
         const count = iv.themes[theme] || 0;
         const cx    = labelW + ci * colW;
         const color = THEME_PAL[theme];
+        const ratio = count > 0 ? count / themeMaxes[theme] : 0;
 
         const cell = document.createElementNS(NS, 'rect');
         cell.setAttribute('x', cx + 2); cell.setAttribute('y', y + 2);
         cell.setAttribute('width', colW - 4); cell.setAttribute('height', rowH - 4);
-        cell.setAttribute('rx', '4');
+        cell.setAttribute('rx', '2');
         if (count === 0) {
-          cell.setAttribute('fill', 'rgba(210,200,185,.09)');
+          cell.setAttribute('fill', '#F5F2EC');
         } else {
-          const ratio = count / themeMaxes[theme];
-          const op = 0.13 + ratio * 0.74;
+          const op = 0.14 + ratio * 0.76;
           cell.setAttribute('fill', color);
           cell.setAttribute('opacity', String(op));
         }
         rg.appendChild(cell);
 
-        if (count > 0 && colW >= 28) {
-          const ratio   = count / themeMaxes[theme];
-          const darkBg  = ratio > 0.52;
+        // Count label inside cell
+        if (count > 0 && colW >= 26) {
+          const darkBg = ratio > 0.5;
           const ct = document.createElementNS(NS, 'text');
           ct.setAttribute('x', cx + colW / 2); ct.setAttribute('y', y + rowH / 2);
           ct.setAttribute('text-anchor', 'middle'); ct.setAttribute('dominant-baseline', 'middle');
           ct.setAttribute('font-size', rowH >= 26 ? '8.5' : '7.5');
-          ct.setAttribute('font-weight', '800');
+          ct.setAttribute('font-weight', '700');
           ct.setAttribute('font-family', 'inherit');
           ct.setAttribute('fill', darkBg ? '#fff' : color);
           ct.setAttribute('pointer-events', 'none');
           ct.textContent = count;
           rg.appendChild(ct);
         }
+
+        // Cell tooltip target (invisible, covers the cell)
+        const hitArea = document.createElementNS(NS, 'rect');
+        hitArea.setAttribute('x', cx + 2); hitArea.setAttribute('y', y + 2);
+        hitArea.setAttribute('width', colW - 4); hitArea.setAttribute('height', rowH - 4);
+        hitArea.setAttribute('fill', 'transparent');
+        hitArea.addEventListener('mouseenter', (e) => {
+          const shortTheme = THEME_SHORT[theme] || theme;
+          if (count === 0) {
+            showTt(e, `<span style="color:#9A9690">${iv.label}</span><br><span style="color:#9A9690">${shortTheme}: sin deals</span>`);
+          } else {
+            const pct = Math.round(ratio * 100);
+            showTt(e, `<strong style="font-family:EB Garamond,serif;font-size:.95rem">${iv.label}</strong><br><span style="color:${color};font-weight:700">${shortTheme}</span><br>${count} deal${count > 1?'s':''} · ${pct}% del máximo`);
+          }
+        });
+        hitArea.addEventListener('mousemove', moveTt);
+        hitArea.addEventListener('mouseleave', hideTt);
+        rg.appendChild(hitArea);
       });
 
-      rg.addEventListener('click', () =>
-        setActiveInvestor(activeInvId === iv.id ? null : iv.id));
+      rg.addEventListener('click', () => {
+        hideTt();
+        setActiveInvestor(activeInvId === iv.id ? null : iv.id);
+      });
 
-      rg.addEventListener('mouseenter', () => {
+      rg.addEventListener('mouseenter', (e) => {
         if (matrixHighlighted !== iv.id) {
-          bg.setAttribute('fill', 'rgba(58,168,163,.07)');
-          lbl.setAttribute('fill', '#0a6b63');
+          bg.setAttribute('fill', 'rgba(11,92,88,.04)');
+          nameLbl.setAttribute('fill', '#0B5C58');
         }
+        // Row tooltip (left label area)
+        const topThemes = THEME_ORDER
+          .filter(t => iv.themes[t] > 0)
+          .sort((a, b) => (iv.themes[b]||0) - (iv.themes[a]||0))
+          .slice(0, 3)
+          .map(t => `<span style="color:${THEME_PAL[t]};font-weight:700">${THEME_SHORT[t]||t}</span> ${iv.themes[t]}`)
+          .join('  ·  ');
+        showTt(e, `<strong style="font-family:EB Garamond,serif;font-size:.95rem">${iv.label}</strong><br>${total} deals BIO · ${topThemes || 'sin deals'}`);
       });
+      rg.addEventListener('mousemove', moveTt);
       rg.addEventListener('mouseleave', () => {
         if (matrixHighlighted !== iv.id) {
           bg.setAttribute('fill', 'transparent');
-          lbl.setAttribute('fill', '#332b22');
+          nameLbl.setAttribute('fill', '#1B1B19');
         }
+        hideTt();
       });
 
       g.appendChild(rg);
     });
 
-    // ── Row dividers ────────────────────────────────────────────────────
+    // ── Row & column dividers ────────────────────────────────────────────
     for (let ri = 1; ri < topInv.length; ri++) {
       const y = HEADER + ri * rowH;
       const d = document.createElementNS(NS, 'line');
       d.setAttribute('x1', 0); d.setAttribute('y1', y);
       d.setAttribute('x2', gridW); d.setAttribute('y2', y);
-      d.setAttribute('stroke', 'rgba(217,206,190,.18)'); d.setAttribute('stroke-width', '0.5');
+      d.setAttribute('stroke', '#D4CCC2'); d.setAttribute('stroke-width', '0.4');
+      d.setAttribute('opacity', '0.5');
       g.insertBefore(d, g.firstChild);
     }
-
-    // ── Column vertical dividers through rows ───────────────────────────
     THEME_ORDER.forEach((_, ci) => {
       if (ci === 0) return;
       const x = labelW + ci * colW;
       const vd = document.createElementNS(NS, 'line');
       vd.setAttribute('x1', x); vd.setAttribute('y1', HEADER);
       vd.setAttribute('x2', x); vd.setAttribute('y2', gridH);
-      vd.setAttribute('stroke', 'rgba(217,206,190,.18)'); vd.setAttribute('stroke-width', '0.5');
+      vd.setAttribute('stroke', '#D4CCC2'); vd.setAttribute('stroke-width', '0.4');
+      vd.setAttribute('opacity', '0.5');
       g.insertBefore(vd, g.firstChild);
     });
 
-    // ── Marginal band: theme capital depth (Σ deals + # fondos, TODOS los fondos) ──
+    // ── Footer — Σ deals + # fondos por tema ────────────────────────────
     const yF = bodyH;
     const colDeals = {}, colInv = {};
     THEME_ORDER.forEach(t => {
       colDeals[t] = investors.reduce((s, iv) => s + (iv.themes[t] || 0), 0);
-      colInv[t]   = investors.reduce((s, iv) => s + (((iv.themes[t] || 0) > 0) ? 1 : 0), 0);
+      colInv[t]   = investors.reduce((s, iv) => s + ((iv.themes[t] || 0) > 0 ? 1 : 0), 0);
     });
     const maxColDeals = Math.max(1, ...THEME_ORDER.map(t => colDeals[t]));
 
     const fBg = document.createElementNS(NS, 'rect');
     fBg.setAttribute('x', 0); fBg.setAttribute('y', yF);
     fBg.setAttribute('width', gridW); fBg.setAttribute('height', FOOTER);
-    fBg.setAttribute('fill', 'rgba(240,234,222,.5)');
+    fBg.setAttribute('fill', '#F5F2EC');
     g.appendChild(fBg);
     const fLine = document.createElementNS(NS, 'line');
     fLine.setAttribute('x1', 0); fLine.setAttribute('y1', yF);
     fLine.setAttribute('x2', gridW); fLine.setAttribute('y2', yF);
-    fLine.setAttribute('stroke', 'rgba(217,206,190,.55)'); fLine.setAttribute('stroke-width', '1');
+    fLine.setAttribute('stroke', '#D4CCC2'); fLine.setAttribute('stroke-width', '1');
     g.appendChild(fLine);
 
+    // Footer label
     const fLab = document.createElementNS(NS, 'text');
-    fLab.setAttribute('x', 9); fLab.setAttribute('y', yF + 15);
+    fLab.setAttribute('x', 10); fLab.setAttribute('y', yF + 17);
     fLab.setAttribute('dominant-baseline', 'middle');
-    fLab.setAttribute('font-size', '8.5'); fLab.setAttribute('font-weight', '800');
-    fLab.setAttribute('font-family', 'inherit'); fLab.setAttribute('fill', 'rgba(90,78,62,.62)');
-    fLab.setAttribute('letter-spacing', '0.05em');
-    fLab.textContent = 'PROFUNDIDAD';
+    fLab.setAttribute('font-size', '8'); fLab.setAttribute('font-weight', '700');
+    fLab.setAttribute('font-family', 'inherit'); fLab.setAttribute('fill', '#6B6560');
+    fLab.setAttribute('letter-spacing', '0.07em');
+    fLab.setAttribute('pointer-events', 'none');
+    fLab.textContent = 'Σ DEALS';
     g.appendChild(fLab);
     const fLab2 = document.createElementNS(NS, 'text');
-    fLab2.setAttribute('x', 9); fLab2.setAttribute('y', yF + 29);
+    fLab2.setAttribute('x', 10); fLab2.setAttribute('y', yF + 32);
     fLab2.setAttribute('dominant-baseline', 'middle');
     fLab2.setAttribute('font-size', '7'); fLab2.setAttribute('font-family', 'inherit');
-    fLab2.setAttribute('fill', 'rgba(90,78,62,.45)');
-    fLab2.textContent = 'deals · # fondos';
+    fLab2.setAttribute('fill', '#9A9690');
+    fLab2.setAttribute('pointer-events', 'none');
+    fLab2.textContent = '# fondos activos';
     g.appendChild(fLab2);
 
     THEME_ORDER.forEach((theme, ci) => {
-      const x = labelW + ci * colW;
-      const col = THEME_PAL[theme];
-      const deals = colDeals[theme], inv = colInv[theme];
-      const thin = inv > 0 && inv <= 2;   // tema "delgado": riesgo de concentración / dependencia
+      const x      = labelW + ci * colW;
+      const col    = THEME_PAL[theme];
+      const deals  = colDeals[theme];
+      const inv    = colInv[theme];
+      const thin   = inv > 0 && inv <= 2;
+      const barW   = Math.max(8, colW - 10);
 
+      // Σ deals number
       const dt = document.createElementNS(NS, 'text');
-      dt.setAttribute('x', x + colW / 2); dt.setAttribute('y', yF + 14);
+      dt.setAttribute('x', x + colW / 2); dt.setAttribute('y', yF + 17);
       dt.setAttribute('text-anchor', 'middle'); dt.setAttribute('dominant-baseline', 'middle');
-      dt.setAttribute('font-size', '12.5'); dt.setAttribute('font-weight', '800');
-      dt.setAttribute('font-family', 'inherit'); dt.setAttribute('fill', deals ? col : 'rgba(150,140,128,.5)');
-      dt.textContent = deals;
+      dt.setAttribute('font-size', '13'); dt.setAttribute('font-weight', '700');
+      dt.setAttribute('font-family', 'inherit');
+      dt.setAttribute('fill', deals ? col : '#D4CCC2');
+      dt.setAttribute('pointer-events', 'none');
+      dt.textContent = deals || '—';
       g.appendChild(dt);
 
+      // # fondos
       const it = document.createElementNS(NS, 'text');
-      it.setAttribute('x', x + colW / 2); it.setAttribute('y', yF + 28);
+      it.setAttribute('x', x + colW / 2); it.setAttribute('y', yF + 32);
       it.setAttribute('text-anchor', 'middle'); it.setAttribute('dominant-baseline', 'middle');
       it.setAttribute('font-size', '7.5'); it.setAttribute('font-weight', thin ? '800' : '600');
       it.setAttribute('font-family', 'inherit');
-      it.setAttribute('fill', thin ? '#c2410c' : 'rgba(90,78,62,.6)');
-      it.textContent = (thin ? '⚠ ' : '') + inv + (inv === 1 ? ' fondo' : ' fondos');
+      it.setAttribute('fill', thin ? '#8A3620' : '#9A9690');
+      it.setAttribute('pointer-events', 'none');
+      it.textContent = (thin ? '⚠ ' : '') + (inv > 0 ? inv + (inv === 1 ? ' fondo' : ' fondos') : '—');
       g.appendChild(it);
 
-      const barMaxW = Math.max(8, colW - 12);
-      const trk = document.createElementNS(NS, 'rect');
-      trk.setAttribute('x', x + (colW - barMaxW) / 2); trk.setAttribute('y', yF + FOOTER - 9);
-      trk.setAttribute('width', barMaxW); trk.setAttribute('height', 4); trk.setAttribute('rx', '2');
+      // Mini bar
+      const barX = x + (colW - barW) / 2;
+      const barY = yF + FOOTER - 8;
+      const trk  = document.createElementNS(NS, 'rect');
+      trk.setAttribute('x', barX); trk.setAttribute('y', barY);
+      trk.setAttribute('width', barW); trk.setAttribute('height', 3); trk.setAttribute('rx', '1');
       trk.setAttribute('fill', col); trk.setAttribute('opacity', '0.12');
       g.appendChild(trk);
-      const bar = document.createElementNS(NS, 'rect');
-      bar.setAttribute('x', x + (colW - barMaxW) / 2); bar.setAttribute('y', yF + FOOTER - 9);
-      bar.setAttribute('width', Math.max(2, (deals / maxColDeals) * barMaxW));
-      bar.setAttribute('height', 4); bar.setAttribute('rx', '2');
-      bar.setAttribute('fill', col); bar.setAttribute('opacity', '0.6');
-      g.appendChild(bar);
+      const fill = document.createElementNS(NS, 'rect');
+      fill.setAttribute('x', barX); fill.setAttribute('y', barY);
+      fill.setAttribute('width', Math.max(2, (deals / maxColDeals) * barW));
+      fill.setAttribute('height', 3); fill.setAttribute('rx', '1');
+      fill.setAttribute('fill', col); fill.setAttribute('opacity', '0.65');
+      g.appendChild(fill);
     });
 
     svg.appendChild(g);
@@ -2512,11 +3005,14 @@ document.addEventListener('DOMContentLoaded', function(){
     matrixHighlighted = id;
     const svg = document.getElementById('matrix-svg');
     svg.querySelectorAll('[data-inv]').forEach(rg => {
-      const isA = rg.dataset.inv === id;
-      const bg  = rg.querySelector('rect');
-      const lbl = rg.querySelector('text');
-      if (bg)  bg.setAttribute('fill',  isA ? 'rgba(58,168,163,.10)' : 'transparent');
-      if (lbl) lbl.setAttribute('fill', isA ? '#0a6b63' : '#332b22');
+      const isA    = rg.dataset.inv === id;
+      const rects  = rg.querySelectorAll('rect');
+      const bg     = rects[0];
+      const accent = rects[1];
+      const lbl    = rg.querySelector('text');
+      if (bg)     bg.setAttribute('fill',    isA ? 'rgba(11,92,88,.06)' : 'transparent');
+      if (accent) accent.setAttribute('opacity', isA ? '1' : '0');
+      if (lbl)    lbl.setAttribute('fill',   isA ? '#0B5C58' : '#1B1B19');
     });
   }
 
@@ -2545,6 +3041,171 @@ document.addEventListener('DOMContentLoaded', function(){
     return '$' + Math.round(v) + 'M';
   }
 
+  // ── Posicionamiento scatter ─────────────────────────────────────────────────
+  // Eje X: madurez de etapa (temprana → tardía)  Eje Y: ratio bio (alto → bajo)
+  // Tamaño: deals BIO  Color: bio-focused (#0B5C58) vs generalista (#9A9690)
+  function renderScatter() {
+    const svgEl = document.getElementById('scatter-svg');
+    if (!svgEl) return;
+    const stage = svgEl.closest('.ca-view');
+    const W = Math.max(600, stage ? stage.clientWidth  : 820);
+    const H = Math.max(400, stage ? stage.clientHeight : 480);
+    svgEl.setAttribute('viewBox', '0 0 ' + W + ' ' + H);
+    svgEl.setAttribute('preserveAspectRatio', 'xMidYMid meet');
+    svgEl.innerHTML = '';
+    const NS = 'http://www.w3.org/2000/svg';
+
+    const PAD = { t: 36, b: 48, l: 32, r: 20 };
+    const cW = W - PAD.l - PAD.r;
+    const cH = H - PAD.t - PAD.b;
+
+    // Stage → X position score (0=temprana, 1=tardía)
+    const STAGE_X = { 'pre-seed':0,'seed':.2,'series-a':.45,'series-b':.65,'series-c':.80,'growth':.90,'public':1,'late':1 };
+    function stageScore(stages) {
+      if (!stages || !stages.length) return 0.5;
+      return stages.reduce((s, st) => s + (STAGE_X[st.toLowerCase()] ?? 0.5), 0) / stages.length;
+    }
+
+    const funds = D.nodes.filter(n => n.type === 'fund' || n.type === 'allocator');
+    if (!funds.length) {
+      const t = document.createElementNS(NS, 'text');
+      t.setAttribute('x', W/2); t.setAttribute('y', H/2);
+      t.setAttribute('text-anchor','middle'); t.setAttribute('fill','#999');
+      t.setAttribute('font-size','13'); t.textContent = 'Sin datos de fondos';
+      svgEl.appendChild(t); return;
+    }
+
+    // Compute per-fund bio ratio from capital_flow.fund_theme
+    const fundBioDeals = {}, fundTotalDeals = {};
+    const BIO_THEMES = new Set(Object.keys(THEME_SHORT));
+    ((D.capital_flow && D.capital_flow.fund_theme) || []).forEach(ft => {
+      fundTotalDeals[ft.source] = (fundTotalDeals[ft.source]||0) + ft.deal_count;
+      if (BIO_THEMES.has(ft.theme)) fundBioDeals[ft.source] = (fundBioDeals[ft.source]||0) + ft.deal_count;
+    });
+
+    const maxDeals = Math.max(1, ...funds.map(n => fundTotalDeals[n.id] || 1));
+
+    // Build plot points
+    const pts = funds.map(n => {
+      const totalD = fundTotalDeals[n.id] || 0;
+      const bioD   = fundBioDeals[n.id]   || 0;
+      const bioRatio = totalD > 0 ? bioD / totalD : 0;
+      const xScore   = stageScore(n.stages);
+      return { n, xScore, bioRatio, totalD, bioD };
+    });
+
+    // Grid lines + axes
+    function line(x1,y1,x2,y2,col,dash) {
+      const el = document.createElementNS(NS,'line');
+      el.setAttribute('x1',x1);el.setAttribute('y1',y1);el.setAttribute('x2',x2);el.setAttribute('y2',y2);
+      el.setAttribute('stroke', col||'#D4CCC2'); el.setAttribute('stroke-width','0.75');
+      if (dash) el.setAttribute('stroke-dasharray','4,4');
+      svgEl.appendChild(el); return el;
+    }
+    function txt(x,y,str,opts) {
+      const el = document.createElementNS(NS,'text');
+      el.setAttribute('x',x);el.setAttribute('y',y);
+      el.setAttribute('font-size', opts&&opts.size||'10');
+      el.setAttribute('fill', opts&&opts.fill||'#9A9690');
+      el.setAttribute('font-family','Overpass Mono, monospace');
+      el.setAttribute('letter-spacing','0.04em');
+      if (opts&&opts.anchor) el.setAttribute('text-anchor',opts.anchor);
+      if (opts&&opts.rotate) el.setAttribute('transform','rotate('+opts.rotate+','+x+','+y+')');
+      el.textContent = str;
+      svgEl.appendChild(el); return el;
+    }
+
+    // Background
+    const bg = document.createElementNS(NS,'rect');
+    bg.setAttribute('width',W); bg.setAttribute('height',H); bg.setAttribute('fill','#F5F2EC');
+    svgEl.appendChild(bg);
+
+    // Mid crosshairs
+    const midX = PAD.l + cW * 0.5;
+    const midY = PAD.t + cH * 0.5;
+    line(midX, PAD.t, midX, PAD.t+cH, '#D4CCC2', true);
+    line(PAD.l, midY, PAD.l+cW, midY, '#D4CCC2', true);
+
+    // Quadrant labels
+    txt(PAD.l + cW*0.25, PAD.t+14, 'ETAPA TEMPRANA', {anchor:'middle'});
+    txt(PAD.l + cW*0.75, PAD.t+14, 'ETAPA TARDÍA',   {anchor:'middle'});
+    txt(PAD.l-6, PAD.t + cH*0.25, 'BIO ALTO', {anchor:'end', rotate:'-90,'+(PAD.l-6)+','+(PAD.t+cH*0.25)});
+    txt(PAD.l-6, PAD.t + cH*0.75, 'BIO BAJO',  {anchor:'end', rotate:'-90,'+(PAD.l-6)+','+(PAD.t+cH*0.75)});
+
+    // Tooltip element
+    const ttDiv = document.createElement('div');
+    ttDiv.style.cssText = 'position:absolute;pointer-events:none;display:none;background:#fff;border:1px solid #D4CCC2;padding:8px 11px;font-size:.72rem;line-height:1.5;border-radius:2px;max-width:200px;z-index:20';
+    stage.style.position = 'relative';
+    stage.appendChild(ttDiv);
+
+    // Draw nodes
+    pts.forEach(({ n, xScore, bioRatio, totalD }) => {
+      const cx = PAD.l + xScore * cW;
+      const cy = PAD.t + (1 - bioRatio) * cH;  // bioRatio alto → arriba
+      const r  = Math.max(5, Math.sqrt(Math.max(totalD,1) / maxDeals) * 22);
+      const isBio = bioRatio >= 0.5;
+      const fill  = isBio ? '#0B5C58' : '#9A9690';
+
+      const g = document.createElementNS(NS,'g');
+      g.style.cursor = 'pointer';
+
+      const circ = document.createElementNS(NS,'circle');
+      circ.setAttribute('cx', cx); circ.setAttribute('cy', cy); circ.setAttribute('r', r);
+      circ.setAttribute('fill', fill); circ.setAttribute('fill-opacity','0.72');
+      circ.setAttribute('stroke', isBio ? '#0B5C58' : '#9A9690');
+      circ.setAttribute('stroke-width','1');
+      g.appendChild(circ);
+
+      // Label (only if r >= 9 or always)
+      const lbl = document.createElementNS(NS,'text');
+      lbl.setAttribute('x', cx); lbl.setAttribute('y', cy + r + 11);
+      lbl.setAttribute('text-anchor','middle'); lbl.setAttribute('font-size','9');
+      lbl.setAttribute('fill','#6B6560'); lbl.setAttribute('font-family','Overpass Mono,monospace');
+      lbl.setAttribute('pointer-events','none');
+      lbl.textContent = (n.label||'').length > 14 ? (n.label||'').slice(0,13)+'…' : (n.label||'');
+      g.appendChild(lbl);
+
+      // Hover
+      g.addEventListener('mouseenter', (e) => {
+        circ.setAttribute('stroke-width','2');
+        circ.setAttribute('fill-opacity','0.92');
+        const bio = Math.round(bioRatio*100);
+        const topThemes = Object.entries(fundThemesOf(n.id)).sort((a,b)=>b[1]-a[1]).slice(0,3);
+        ttDiv.innerHTML = '<strong style="font-family:EB Garamond,serif;font-size:.95rem">' + (n.label||n.id) + '</strong>' +
+          (n.country ? '<br>'+n.country : '') +
+          '<br>Deals BIO: ' + totalD +
+          '<br>Ratio bio: ' + bio + '%' +
+          (topThemes.length ? '<br>Temas: ' + topThemes.map(([t,c])=>(THEME_SHORT[t]||t)+' ('+c+')').join(', ') : '');
+        ttDiv.style.display = 'block';
+      });
+      g.addEventListener('mousemove', (e) => {
+        const rect = stage.getBoundingClientRect();
+        ttDiv.style.left = (e.clientX - rect.left + 14) + 'px';
+        ttDiv.style.top  = (e.clientY - rect.top  - 10) + 'px';
+      });
+      g.addEventListener('mouseleave', () => {
+        circ.setAttribute('stroke-width','1');
+        circ.setAttribute('fill-opacity','0.72');
+        ttDiv.style.display = 'none';
+      });
+      g.addEventListener('click', () => setActiveInvestor(n.id === activeInvId ? null : n.id));
+
+      svgEl.appendChild(g);
+    });
+
+    // Legend
+    function legendRect(x,y,fill,opacity,label) {
+      const r = document.createElementNS(NS,'rect');
+      r.setAttribute('x',x);r.setAttribute('y',y);r.setAttribute('width',10);r.setAttribute('height',10);
+      r.setAttribute('rx','1');r.setAttribute('fill',fill);r.setAttribute('fill-opacity',opacity);
+      svgEl.appendChild(r);
+      txt(x+14, y+9, label, {fill:'#6B6560'});
+    }
+    legendRect(PAD.l, H-PAD.b+20, '#0B5C58','0.8','Bio-focused');
+    legendRect(PAD.l+90, H-PAD.b+20, '#9A9690','0.75','Generalista');
+    txt(W-PAD.r, H-PAD.b+28, 'Tamaño = deals BIO · posición = etapa vs. ratio bio', {anchor:'end', fill:'#9A9690'});
+  }
+
   function renderStageLadder() {
     const wrap = document.getElementById('stages-wrap');
     wrap.innerHTML = '';
@@ -2553,12 +3214,6 @@ document.addEventListener('DOMContentLoaded', function(){
     const left = document.createElement('div');
     left.className = 'sl-left';
     wrap.appendChild(left);
-
-    // Profile card — always present as right column
-    const card = document.createElement('div');
-    card.id = 'fund-profile-card';
-    card.innerHTML = `<div class="fp-placeholder"><span class="fp-placeholder-icon">↖</span><span>Hacé click en un fondo<br>para ver su ficha</span></div>`;
-    wrap.appendChild(card);
 
     const allFundNodes = D.nodes.filter(n =>
       (n.type === 'fund' || n.type === 'allocator') && n.stages && n.stages.length > 0
@@ -2790,7 +3445,6 @@ document.addEventListener('DOMContentLoaded', function(){
     wrap.querySelectorAll('tr[data-id]').forEach(tr => {
       tr.style.background = (tr.dataset.id === id) ? 'rgba(11,143,135,.07)' : '';
     });
-    renderFundProfile(id);
   }
 
   function countryName(iso) {
@@ -3088,6 +3742,7 @@ document.addEventListener('DOMContentLoaded', function(){
   function renderSankey() {
     const wrap = document.getElementById('flow-wrap');
     const svg  = document.getElementById('flow-svg');
+    if (!wrap || !svg) return;
     const ttEl = document.getElementById('sk-tooltip');
     const stage = document.querySelector('.ca-stage');
     const W = Math.max(700, (stage ? stage.clientWidth  : 900) - 44);

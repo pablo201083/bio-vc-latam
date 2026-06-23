@@ -4,6 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Inteligencia de Ecosistema · BIO LATAM</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,700;1,400&family=Overpass+Mono:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css?v=20260524">
   <style>
     html, body { height: 100%; }
@@ -20,6 +23,47 @@
       background: rgba(253,250,244,.97);
       backdrop-filter: blur(8px);
       display: flex; align-items: center; gap: 14px;
+    }
+
+    /* ── search bar (full-width, above shell) ─────────────────── */
+    .iq-searchbar {
+      flex-shrink: 0;
+      background: var(--panel);
+      border-bottom: 1px solid var(--line);
+      padding: 12px 20px 10px;
+    }
+    .iq-searchbar-eyebrow {
+      font-size: .62rem; letter-spacing: .1em; text-transform: uppercase;
+      color: var(--muted); margin-bottom: 7px;
+    }
+    .iq-searchbar-row {
+      display: flex; gap: 8px; align-items: center; margin-bottom: 8px;
+      position: relative;
+    }
+    .iq-searchbar-arrow {
+      position: absolute; left: 11px; top: 50%; transform: translateY(-50%);
+      font-size: .85rem; color: var(--muted); pointer-events: none;
+    }
+    /* override search input styles for full-width bar */
+    .iq-searchbar .iq-search-input {
+      border-radius: 3px;
+      padding-left: 30px;
+      border-color: #A09890;
+      background: var(--bg);
+      font-size: .82rem;
+    }
+    .iq-searchbar .iq-btn-primary {
+      border-radius: 3px;
+      font-size: .68rem; letter-spacing: .06em; text-transform: uppercase;
+      padding: 9px 20px;
+      background: var(--ink);
+    }
+    .iq-searchbar .iq-btn-primary:hover { background: #333; }
+    .iq-searchbar .iq-filter-row {
+      padding: 0;
+    }
+    .iq-searchbar .iq-filter-pill {
+      border-radius: 2px;
     }
     .iq-title {
       font-size: .72rem; font-weight: 800; letter-spacing: .07em;
@@ -70,7 +114,7 @@
     .iq-search-input {
       flex: 1;
       font-family: var(--sans); font-size: .78rem;
-      padding: 7px 11px; border-radius: 10px;
+      padding: 7px 11px; border-radius: 3px;
       border: 1.5px solid var(--line);
       background: rgba(255,255,255,.9);
       color: var(--ink); outline: none;
@@ -80,7 +124,7 @@
     .iq-search-input::placeholder { color: var(--muted); opacity: .7; }
     .iq-btn {
       font-family: var(--sans); font-size: .72rem; font-weight: 700;
-      padding: 7px 13px; border-radius: 9px; cursor: pointer;
+      padding: 7px 13px; border-radius: 3px; cursor: pointer;
       border: none; transition: background .15s, transform .1s;
     }
     .iq-btn:active { transform: scale(.97); }
@@ -100,49 +144,103 @@
       padding: 6px 12px 0; flex-shrink: 0;
     }
     .iq-filter-pill {
-      font-size: .65rem; font-weight: 600;
-      padding: 3px 8px; border-radius: 999px;
+      font-size: .62rem; font-weight: 600; letter-spacing: .04em;
+      padding: 3px 9px; border-radius: 2px;
       border: 1px solid var(--line);
       background: rgba(255,255,255,.8); color: var(--muted);
-      cursor: pointer; transition: background .12s, color .12s;
-      white-space: nowrap;
+      cursor: pointer; transition: background .12s, color .12s, border-color .12s;
+      white-space: nowrap; text-transform: uppercase;
     }
     .iq-filter-pill.active {
-      background: var(--accent); color: #fff; border-color: var(--accent);
+      background: var(--ink); color: #fff; border-color: var(--ink);
     }
 
-    /* mode tabs */
-    .iq-mode-tabs {
-      display: flex; gap: 0; flex-shrink: 0;
+    /* ── eco mode tabs (Descubrir | Conectar | Activar) ─────── */
+    .iq-eco-tabs {
+      flex-shrink: 0;
+      display: flex; align-items: stretch; height: 40px;
+      background: var(--panel);
+      border-bottom: 2px solid var(--line);
+      padding: 0 20px;
+    }
+    .iq-eco-tab {
+      font-size: .68rem; font-weight: 700; letter-spacing: .06em;
+      text-transform: uppercase; padding: 0 18px;
+      display: flex; align-items: center;
+      color: var(--muted); cursor: pointer; user-select: none;
+      border-bottom: 2px solid transparent; margin-bottom: -2px;
+      transition: color .12s, border-color .12s; white-space: nowrap;
+    }
+    .iq-eco-tab.active { color: var(--ink); border-bottom-color: var(--ink); }
+    .iq-eco-tab:hover:not(.active) { color: var(--ink); }
+
+    /* ── list sub-tabs (inside sidebar, Descubrir mode) ──── */
+    .iq-list-subtabs {
+      display: flex; flex-shrink: 0;
       border-bottom: 1px solid var(--line);
-      padding: 8px 12px 0;
     }
-    .iq-tab {
-      font-size: .71rem; font-weight: 700; padding: 5px 11px;
-      border-radius: 8px 8px 0 0; cursor: pointer;
-      color: var(--muted); border: 1px solid transparent;
-      border-bottom: none; transition: background .12s, color .12s;
-      user-select: none;
+    .iq-list-subtab {
+      flex: 1; padding: 7px 0; text-align: center; cursor: pointer;
+      font-size: .63rem; font-weight: 700; letter-spacing: .04em;
+      text-transform: uppercase; color: var(--muted);
+      border-bottom: 2px solid transparent;
+      transition: color .12s, background .12s; user-select: none;
     }
-    .iq-tab.active {
-      background: var(--bg); color: var(--accent);
-      border-color: var(--line); border-bottom: 1px solid var(--bg);
-      margin-bottom: -1px;
-    }
-    .iq-tab:hover:not(.active) { background: rgba(11,143,135,.07); }
+    .iq-list-subtab.active { color: var(--ink); border-bottom-color: var(--ink); background: rgba(11,143,135,.04); }
+    .iq-list-subtab:hover:not(.active) { color: var(--ink); }
 
     /* results list */
     .iq-results {
       flex: 1; overflow-y: auto; padding: 6px 0;
     }
     .iq-result-item {
-      padding: 8px 14px 8px; cursor: pointer;
+      padding: 10px 16px 10px 13px; cursor: pointer;
       border-bottom: 1px solid rgba(216,204,192,.4);
-      transition: background .1s;
-      display: flex; align-items: center; gap: 10px;
+      border-left: 4px solid transparent;
+      transition: background .1s, border-left-color .1s;
+      display: flex; flex-direction: column; gap: 0;
     }
-    .iq-result-item:hover { background: rgba(11,143,135,.05); }
-    .iq-result-item.selected { background: var(--accent-soft); }
+    .iq-result-item-top { display: flex; align-items: center; gap: 10px; width: 100%; }
+    .iq-result-item:hover { background: rgba(11,143,135,.04); }
+    .iq-result-item.selected {
+      background: rgba(11,143,135,.06);
+      border-left-color: #0B8F87 !important;
+    }
+    /* Primera expansión — peek inline */
+    .iq-row-peek {
+      max-height: 0; overflow: hidden;
+      transition: max-height .22s ease, opacity .18s ease;
+      opacity: 0; padding-left: 38px;
+    }
+    .iq-result-item.expanded .iq-row-peek {
+      max-height: 260px; opacity: 1;
+    }
+    .iq-peek-text {
+      font-size: .72rem; color: var(--muted); line-height: 1.5;
+      padding: 8px 0 10px; border-top: 1px solid rgba(216,204,192,.5); margin-top: 4px;
+    }
+    .iq-peek-stats {
+      display: flex; gap: 12px; margin-bottom: 8px; flex-wrap: wrap;
+    }
+    .iq-peek-stat { font-size: .65rem; color: var(--muted); }
+    .iq-peek-stat strong { color: var(--ink); font-weight: 600; }
+    .iq-peek-actions {
+      display: flex; gap: 6px; padding-bottom: 10px;
+    }
+    .iq-peek-btn-primary {
+      font-family: var(--sans); font-size: .65rem; letter-spacing: .06em;
+      text-transform: uppercase; padding: 5px 12px;
+      border: 1px solid var(--accent); border-radius: 2px;
+      background: rgba(11,143,135,.08); color: var(--accent); cursor: pointer;
+      transition: background .1s;
+    }
+    .iq-peek-btn-primary:hover { background: var(--accent); color: #fff; }
+    .iq-peek-btn-secondary {
+      font-family: var(--sans); font-size: .65rem; letter-spacing: .06em;
+      text-transform: uppercase; padding: 5px 12px;
+      border: 1px solid var(--line); border-radius: 2px;
+      background: transparent; color: var(--ink); cursor: pointer;
+    }
     .iq-result-logo {
       width: 28px; height: 28px; border-radius: 6px;
       object-fit: contain; background: #f0ede8;
@@ -157,10 +255,10 @@
       white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
     }
     .iq-result-score {
-      font-size: .65rem; font-weight: 700;
-      padding: 2px 6px; border-radius: 999px;
-      background: rgba(11,143,135,.12); color: var(--accent);
-      flex-shrink: 0;
+      font-size: .6rem; font-weight: 700;
+      padding: 1px 6px; border-radius: 2px;
+      background: rgba(11,143,135,.1); color: var(--accent);
+      flex-shrink: 0; letter-spacing: .03em;
     }
     .iq-result-meta {
       font-size: .67rem; color: var(--muted); margin-top: 2px;
@@ -170,9 +268,9 @@
       display: flex; gap: 4px; margin-top: 4px; flex-wrap: wrap;
     }
     .iq-chip {
-      font-size: .62rem; padding: 1px 7px; border-radius: 999px;
+      font-size: .6rem; padding: 1px 6px; border-radius: 2px;
       border: 1px solid var(--line); background: rgba(255,255,255,.7);
-      color: var(--muted); white-space: nowrap;
+      color: var(--muted); white-space: nowrap; letter-spacing: .02em;
     }
     .iq-chip.funded { background: rgba(11,143,135,.1); color: var(--accent); border-color: rgba(11,143,135,.25); }
     .iq-chip.investor { background: rgba(59,130,246,.08); color: #2563eb; border-color: rgba(59,130,246,.2); }
@@ -183,9 +281,9 @@
 
     /* ── score bands (traducción de cosine crudo → lenguaje humano) ───────── */
     .iq-band {
-      font-size: .62rem; font-weight: 700; padding: 2px 8px;
-      border-radius: 999px; white-space: nowrap; cursor: help;
-      display: inline-block;
+      font-size: .6rem; font-weight: 700; padding: 2px 7px;
+      border-radius: 2px; white-space: nowrap; cursor: help;
+      display: inline-block; letter-spacing: .03em;
     }
     .iq-band-strong  { background: rgba(22,163,74,.12); color: #15803d; border: 1px solid rgba(22,163,74,.25); }
     .iq-band-mod     { background: rgba(11,143,135,.1); color: var(--accent); border: 1px solid rgba(11,143,135,.22); }
@@ -194,7 +292,7 @@
     /* ── provenance chips (honestidad de cobertura por entidad) ───────────── */
     .iq-prov-row { display: flex; gap: 5px; flex-wrap: wrap; margin-top: 6px; }
     .iq-prov {
-      font-size: .6rem; font-weight: 600; padding: 2px 8px; border-radius: 999px;
+      font-size: .6rem; font-weight: 600; padding: 2px 7px; border-radius: 2px;
       white-space: nowrap; cursor: help;
       background: var(--warm-soft); color: var(--warm);
       border: 1px dashed rgba(154,52,18,.3);
@@ -221,41 +319,252 @@
       display: flex; flex-direction: column; gap: 16px;
     }
 
+    /* ── entity detail main (center, Descubrir mode) ─────────── */
+    .iq-entity-main {
+      flex: 1; overflow-y: auto;
+      padding: 28px 32px;
+    }
+    .iq-entity-main::-webkit-scrollbar { width: 5px; }
+    .iq-entity-main::-webkit-scrollbar-thumb { background: rgba(106,98,88,.2); border-radius: 3px; }
+    .iq-entity-type-eyebrow {
+      font-size: .6rem; font-weight: 700; letter-spacing: .13em;
+      text-transform: uppercase; color: var(--muted); margin-bottom: 8px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .iq-entity-name {
+      font-size: 1.85rem; font-weight: 300; color: var(--ink);
+      line-height: 1.08; margin-bottom: 12px;
+      letter-spacing: -.025em;
+    }
+    .iq-entity-meta-row {
+      display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 12px;
+    }
+    .iq-entity-meta-item {
+      font-size: .72rem; color: var(--muted);
+    }
+    .iq-entity-meta-item strong { color: var(--ink); }
+    .iq-entity-oneliner {
+      font-size: .86rem; line-height: 1.65; color: var(--ink);
+      margin-bottom: 14px; opacity: .75;
+      padding-left: 14px; border-left: 2px solid var(--line);
+    }
+    .iq-entity-summary {
+      font-size: .82rem; line-height: 1.7; color: var(--ink);
+      margin-bottom: 16px;
+    }
+    .iq-entity-divider {
+      border: none; border-top: 1px solid var(--line); margin: 16px 0;
+    }
+    /* Portfolio table grid: bar | name | stage | quality | country | theme | status */
+    .iq-portfolio-header,
+    .iq-portfolio-row {
+      display: grid;
+      grid-template-columns: 3px 1fr 72px 38px 36px 108px 68px;
+      align-items: center; gap: 0 8px;
+    }
+    .iq-portfolio-header {
+      padding: 3px 6px 5px; border-bottom: 1px solid var(--line);
+    }
+    .iq-portfolio-header [data-sort] {
+      font-size: .57rem; font-weight: 700; letter-spacing: .07em;
+      text-transform: uppercase; color: var(--muted);
+      cursor: pointer; user-select: none; white-space: nowrap;
+    }
+    .iq-portfolio-header [data-sort]:hover { color: var(--ink); }
+    .iq-portfolio-header [data-sort].active { color: var(--ink); }
+    .iq-portfolio-row {
+      padding: 4px 6px; border-radius: 2px; cursor: pointer;
+      transition: background .1s;
+    }
+    .iq-portfolio-row:hover { background: var(--bg); }
+    .iq-portfolio-row-bar {
+      width: 3px; height: 13px; border-radius: 2px;
+    }
+    .iq-portfolio-row-name {
+      font-size: .72rem; font-weight: 600; color: var(--ink);
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    }
+    .iq-portfolio-row-cell {
+      font-size: .63rem; color: var(--muted); white-space: nowrap;
+      overflow: hidden; text-overflow: ellipsis;
+    }
+    .iq-portfolio-row-badge {
+      font-size: .53rem; padding: 1px 4px; border-radius: 2px;
+      background: rgba(194,90,42,.1); color: #C25A2A;
+      border: 1px solid rgba(194,90,42,.25); white-space: nowrap;
+    }
+    .iq-entity-section-label {
+      font-size: .6rem; font-weight: 700; letter-spacing: .1em;
+      text-transform: uppercase; color: var(--muted); margin-bottom: 8px;
+    }
+    .iq-entity-thesis {
+      font-size: .78rem; line-height: 1.6; color: var(--ink);
+      background: rgba(11,143,135,.04); border-left: 3px solid var(--accent);
+      padding: 8px 12px; border-radius: 0 3px 3px 0;
+    }
+    .iq-entity-stats-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 1px; background: var(--line);
+      border: 1px solid var(--line); margin-bottom: 14px;
+    }
+    .iq-entity-stat {
+      background: var(--panel); padding: 10px 12px;
+    }
+    .iq-entity-stat-val {
+      font-size: .95rem; font-weight: 700; color: var(--ink); line-height: 1;
+    }
+    .iq-entity-stat-lbl {
+      font-size: .6rem; color: var(--muted); margin-top: 3px; text-transform: uppercase; letter-spacing: .04em;
+    }
+    /* bio ratio bar */
+    .iq-bio-bar-wrap {
+      display: flex; align-items: center; gap: 8px; margin-top: 6px;
+    }
+    .iq-bio-bar-track {
+      flex: 1; height: 4px; border-radius: 2px;
+      background: rgba(216,204,192,.5); overflow: hidden;
+    }
+    .iq-bio-bar-fill {
+      height: 100%; border-radius: 2px; background: var(--accent);
+      transition: width 0.3s ease;
+    }
+
+    /* ── slide-in detail panel (right rail) ───────────────────── */
+    .iq-detail-slide {
+      width: 0; flex-shrink: 0; overflow: hidden;
+      border-left: 1px solid transparent;
+      display: flex; flex-direction: column;
+      background: var(--panel);
+      transition: width 0.2s ease;
+    }
+    .iq-detail-slide.open {
+      width: 320px;
+      border-left-color: var(--line);
+    }
+    .iq-detail-slide-header {
+      height: 40px; flex-shrink: 0;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 14px;
+      border-bottom: 1px solid var(--line);
+    }
+    .iq-detail-slide-label {
+      font-size: .6rem; font-weight: 700; letter-spacing: .1em;
+      text-transform: uppercase; color: var(--muted);
+    }
+    .iq-detail-slide-close {
+      font-size: .7rem; cursor: pointer; color: var(--muted);
+      background: transparent; border: none; padding: 3px 8px;
+      border-radius: 2px; transition: color .12s, background .12s;
+      font-family: var(--sans);
+    }
+    .iq-detail-slide-close:hover { color: var(--ink); background: rgba(11,143,135,.08); }
+    .iq-detail-slide-scroll {
+      flex: 1; overflow-y: auto; padding: 14px;
+    }
+    .iq-detail-slide-scroll::-webkit-scrollbar { width: 4px; }
+    .iq-detail-slide-scroll::-webkit-scrollbar-thumb { background: rgba(106,98,88,.2); border-radius: 2px; }
+
     /* welcome / empty state */
     .iq-welcome {
-      display: flex; flex-direction: column; align-items: center;
-      justify-content: center; flex: 1; gap: 12px;
-      padding: 40px 20px; text-align: center;
+      flex: 1; overflow-y: auto; padding: 24px 28px 32px;
     }
-    .iq-welcome-icon {
-      font-size: 3rem; opacity: .25;
+    .iq-welcome-stat-row {
+      display: flex; gap: 0; margin-bottom: 20px;
+      border: 1px solid var(--line); border-radius: 3px; overflow: hidden;
     }
-    .iq-welcome-title {
-      font-size: 1.1rem; font-weight: 800; color: var(--ink);
+    .iq-welcome-stat {
+      flex: 1; padding: 10px 14px; border-right: 1px solid var(--line);
+      display: flex; flex-direction: column; gap: 3px;
     }
-    .iq-welcome-sub {
-      font-size: .78rem; color: var(--muted); max-width: 420px; line-height: 1.55;
+    .iq-welcome-stat:last-child { border-right: none; }
+    .iq-welcome-stat-val {
+      font-size: 1.35rem; font-weight: 800; color: var(--ink); line-height: 1;
+      letter-spacing: -.02em;
     }
-    .iq-welcome-examples {
-      display: flex; flex-direction: column; gap: 6px; margin-top: 8px;
+    .iq-welcome-stat-lbl {
+      font-size: .58rem; letter-spacing: .07em; text-transform: uppercase;
+      color: var(--muted);
     }
+    .iq-welcome-section-label {
+      font-size: .62rem; letter-spacing: .1em; text-transform: uppercase;
+      color: var(--muted); font-weight: 700; margin-bottom: 10px;
+    }
+    .iq-welcome-theme-row {
+      display: flex; align-items: center; gap: 8px; padding: 5px 0;
+      cursor: pointer; border-radius: 2px; transition: background .1s;
+    }
+    .iq-welcome-theme-row:hover { background: var(--bg); }
+    .iq-welcome-theme-dot {
+      width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0;
+    }
+    .iq-welcome-theme-name {
+      font-size: .73rem; color: var(--ink); flex: 1; min-width: 0;
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    }
+    .iq-welcome-theme-bar-wrap {
+      width: 80px; height: 4px; background: var(--line);
+      border-radius: 2px; flex-shrink: 0;
+    }
+    .iq-welcome-theme-bar { height: 100%; border-radius: 2px; }
+    .iq-welcome-theme-count {
+      font-size: .65rem; color: var(--muted); width: 24px;
+      text-align: right; flex-shrink: 0;
+    }
+    .iq-opp-grid {
+      display: grid; grid-template-columns: repeat(3,1fr); gap: 10px;
+      margin-bottom: 20px;
+    }
+    .iq-opp-card {
+      border: 1px solid var(--line); border-radius: 3px;
+      padding: 9px 11px; display: flex; flex-direction: column;
+      background: var(--panel); transition: border-color .1s, box-shadow .1s;
+    }
+    .iq-opp-card:hover { border-color: var(--accent); box-shadow: 0 0 0 2px rgba(11,143,135,.08); }
+    .iq-opp-startup { font-size: .8rem; font-weight: 700; color: var(--ink); line-height: 1.2; }
+    .iq-opp-theme-chip {
+      display: inline-block; font-size: .57rem; padding: 1px 5px; border-radius: 2px;
+      font-weight: 700; letter-spacing: .04em;
+    }
+    .iq-opp-activate {
+      margin-top: auto; font-family: var(--sans); font-size: .62rem;
+      letter-spacing: .06em; text-transform: uppercase; padding: 5px 0;
+      border: 1px solid var(--accent); border-radius: 2px;
+      background: transparent; color: var(--accent); cursor: pointer; width: 100%;
+      transition: background .1s, color .1s;
+    }
+    .iq-opp-activate:hover { background: var(--accent); color: #fff; }
+    .iq-quicklinks {
+      display: grid; grid-template-columns: repeat(4,1fr); gap: 8px;
+    }
+    .iq-quicklink {
+      padding: 10px 12px; border: 1px solid var(--line); border-radius: 3px;
+      cursor: pointer; transition: border-color .1s, background .1s;
+      background: var(--panel);
+    }
+    .iq-quicklink:hover { border-color: var(--accent); background: var(--accent-soft); }
+    .iq-quicklink-icon { font-size: 1rem; margin-bottom: 4px; }
+    .iq-quicklink-label {
+      font-size: .65rem; font-weight: 700; letter-spacing: .05em;
+      text-transform: uppercase; color: var(--ink);
+    }
+    .iq-quicklink-desc { font-size: .6rem; color: var(--muted); margin-top: 2px; line-height: 1.3; }
     .iq-example-query {
-      font-size: .74rem; padding: 7px 14px; border-radius: 10px;
-      border: 1.5px dashed var(--line); color: var(--muted);
-      cursor: pointer; transition: background .12s, border-color .12s;
+      font-size: .73rem; padding: 7px 14px; border-radius: 2px;
+      border: 1px solid var(--line); color: var(--muted);
+      cursor: pointer; transition: background .12s, border-color .12s, color .12s;
       text-align: left;
     }
     .iq-example-query:hover { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); }
 
     /* entity detail card */
     .iq-detail-card {
-      border: 1px solid var(--line); border-radius: 16px;
-      background: var(--panel); box-shadow: var(--shadow);
+      border: 1px solid var(--line); border-radius: 3px;
+      background: var(--panel);
       overflow: hidden;
     }
     .iq-detail-head {
       padding: 16px 20px 12px;
-      background: linear-gradient(180deg,rgba(255,255,255,.95),rgba(248,243,234,.7));
+      background: var(--bg);
       border-bottom: 1px solid var(--line);
     }
     .iq-detail-type-badge {
@@ -280,7 +589,7 @@
       margin-bottom: 12px;
     }
     .iq-section-title {
-      font-size: .63rem; font-weight: 700; letter-spacing: .08em;
+      font-size: .6rem; font-weight: 700; letter-spacing: .1em;
       text-transform: uppercase; color: var(--muted); margin: 14px 0 8px;
     }
 
@@ -290,13 +599,23 @@
       gap: 8px; margin-top: 4px;
     }
     .iq-latent-card {
-      border: 1px solid var(--line); border-radius: 12px;
+      border: 1px solid var(--line); border-radius: 3px;
       padding: 10px 12px;
       background: rgba(255,255,255,.7);
-      cursor: pointer; transition: background .12s, box-shadow .12s;
+      cursor: pointer; transition: background .12s, border-color .12s;
     }
     .iq-latent-card:hover {
-      background: var(--accent-soft); box-shadow: 0 4px 12px rgba(11,143,135,.12);
+      background: var(--accent-soft); border-color: rgba(11,143,135,.3);
+    }
+    .iq-activar-inline {
+      font-family: var(--sans); margin-top: 6px; display: block; width: 100%;
+      font-size: .65rem; letter-spacing: .06em; text-transform: uppercase;
+      padding: 4px 0; border: 1px solid var(--accent); border-radius: 3px;
+      background: transparent; color: var(--accent); cursor: pointer;
+      transition: background .1s, color .1s;
+    }
+    .iq-activar-inline:hover {
+      background: var(--accent); color: #fff;
     }
     .iq-latent-card-name {
       font-size: .76rem; font-weight: 700; color: var(--ink);
@@ -323,12 +642,12 @@
       display: flex; gap: 5px; flex-wrap: wrap; margin-top: 4px;
     }
     .iq-portfolio-chip {
-      font-size: .65rem; padding: 2px 8px; border-radius: 999px;
-      background: rgba(59,130,246,.07); color: #2563eb;
-      border: 1px solid rgba(59,130,246,.2);
+      font-size: .65rem; padding: 2px 8px; border-radius: 2px;
+      background: rgba(59,130,246,.06); color: #2563eb;
+      border: 1px solid rgba(59,130,246,.18);
       cursor: pointer; transition: background .12s;
     }
-    .iq-portfolio-chip:hover { background: rgba(59,130,246,.15); }
+    .iq-portfolio-chip:hover { background: rgba(59,130,246,.13); }
 
     /* quality bar */
     .iq-quality-bar {
@@ -346,8 +665,9 @@
     /* API status */
     .iq-api-badge {
       margin-left: auto; flex-shrink: 0;
-      font-size: .62rem; padding: 3px 8px; border-radius: 999px;
+      font-size: .6rem; padding: 2px 7px; border-radius: 2px;
       border: 1px solid var(--line); color: var(--muted);
+      letter-spacing: .04em;
     }
     .iq-api-badge.ready { color: #15803d; background: rgba(22,163,74,.08); border-color: rgba(22,163,74,.2); }
     .iq-api-badge.loading { color: #d97706; background: rgba(217,119,6,.08); border-color: rgba(217,119,6,.2); }
@@ -373,19 +693,19 @@
       align-items: center; margin-bottom: 14px;
     }
     .iq-intro-slot {
-      border: 2px dashed var(--line); border-radius: 14px;
+      border: 1.5px dashed rgba(212,204,194,.8); border-radius: 3px;
       padding: 11px 14px; cursor: pointer; min-height: 76px;
       transition: border-color .15s, background .15s;
-      background: rgba(255,255,255,.6);
+      background: rgba(255,255,255,.5);
     }
     .iq-intro-slot:hover { border-color: var(--accent); background: var(--accent-soft); }
     .iq-intro-slot.focused {
       border-color: var(--accent); border-style: solid;
-      background: rgba(11,143,135,.06);
-      box-shadow: 0 0 0 3px rgba(11,143,135,.12);
+      background: rgba(11,143,135,.05);
+      box-shadow: 0 0 0 2px rgba(11,143,135,.1);
     }
-    .iq-intro-slot.filled { border-style: solid; border-color: var(--accent); }
-    .iq-intro-slot.filled:hover { background: rgba(11,143,135,.1); }
+    .iq-intro-slot.filled { border-style: solid; border-color: rgba(11,143,135,.5); }
+    .iq-intro-slot.filled:hover { background: rgba(11,143,135,.06); }
     .iq-intro-arrow {
       text-align: center; font-size: 1.1rem; color: var(--muted);
       user-select: none;
@@ -413,9 +733,10 @@
     .iq-intro-slot-clear:hover { opacity: 1; }
 
     .iq-intro-generate {
-      width: 100%; padding: 10px; border-radius: 11px;
-      font-family: var(--sans); font-size: .8rem; font-weight: 700;
-      background: var(--accent); color: #fff; border: none;
+      width: 100%; padding: 10px; border-radius: 3px;
+      font-family: var(--sans); font-size: .72rem; font-weight: 700;
+      letter-spacing: .06em; text-transform: uppercase;
+      background: var(--ink); color: #fff; border: none;
       cursor: pointer; transition: background .15s, opacity .15s;
     }
     .iq-intro-generate:hover { background: #0a7a73; }
@@ -424,12 +745,12 @@
 
     /* brief panel */
     .iq-brief-card {
-      border: 1px solid var(--line); border-radius: 16px;
-      background: var(--panel); box-shadow: var(--shadow); overflow: hidden;
+      border: 1px solid var(--line); border-radius: 3px;
+      background: var(--panel); overflow: hidden;
     }
     .iq-brief-head {
       padding: 16px 20px 12px;
-      background: linear-gradient(180deg,rgba(255,255,255,.95),rgba(248,243,234,.7));
+      background: var(--bg);
       border-bottom: 1px solid var(--line);
       display: flex; align-items: flex-start; gap: 12px;
     }
@@ -443,7 +764,7 @@
       line-height: 1.25; margin-top: 3px;
     }
     .iq-brief-score-badge {
-      flex-shrink: 0; padding: 8px 14px; border-radius: 12px;
+      flex-shrink: 0; padding: 8px 14px; border-radius: 3px;
       text-align: center;
     }
     .iq-brief-score-badge .score-num {
@@ -460,8 +781,8 @@
     .iq-brief-body { padding: 16px 20px; }
     .iq-brief-rationale {
       font-size: .8rem; line-height: 1.65; color: var(--ink);
-      background: rgba(11,143,135,.04); border-left: 3px solid var(--accent);
-      border-radius: 0 10px 10px 0; padding: 10px 14px; margin-bottom: 14px;
+      background: rgba(11,143,135,.04); border-left: 2px solid var(--accent);
+      border-radius: 0 2px 2px 0; padding: 10px 14px; margin-bottom: 14px;
     }
     .iq-brief-tp-list {
       list-style: none; margin: 0; padding: 0;
@@ -474,7 +795,8 @@
     .iq-brief-tp-list li::before { content: "•"; color: var(--accent); flex-shrink: 0; }
     .iq-brief-ask {
       font-size: .77rem; color: var(--ink); font-style: italic;
-      background: rgba(248,243,234,.8); border-radius: 10px;
+      background: rgba(248,243,234,.8); border-radius: 2px;
+      border: 1px solid var(--line);
       padding: 10px 14px; margin-top: 6px;
     }
     .iq-brief-signals {
@@ -681,6 +1003,42 @@
     .iq-isolated-card-quality {
       font-size: .68rem; font-weight: 700; color: var(--accent); margin-top: 4px;
     }
+
+    /* ── Tipografía editorial (brief de diseño) ────────────────────────
+       EB Garamond para nombres/títulos de display
+       Overpass Mono para UI, datos y etiquetas
+       ────────────────────────────────────────────────────────────────── */
+
+    /* Overpass Mono en toda la UI */
+    body, input, button, select, textarea {
+      font-family: 'Overpass Mono', 'Courier New', monospace;
+    }
+
+    /* EB Garamond para nombres de entidades (el display más grande) */
+    .iq-entity-name {
+      font-family: 'EB Garamond', Georgia, serif;
+      font-weight: 400;
+      font-size: 2rem;
+      letter-spacing: -0.02em;
+      line-height: 1.05;
+    }
+    /* Nombre en el slide-in detail */
+    .iq-detail-name {
+      font-family: 'EB Garamond', Georgia, serif;
+      font-weight: 400;
+      font-size: 1.35rem;
+      letter-spacing: -0.01em;
+      line-height: 1.1;
+    }
+    /* Nombre del par en el brief */
+    .iq-brief-pair-name {
+      font-family: 'EB Garamond', Georgia, serif;
+      font-weight: 400;
+      font-size: 1.25rem;
+      letter-spacing: -0.01em;
+    }
+    /* Stats grandes del welcome (números — Overpass Mono, ya heredado) */
+    /* Eyebrows y section labels — Overpass Mono ya heredado */
   </style>
 </head>
 <body>
@@ -691,7 +1049,8 @@
   <div class="iq-nav-links">
     <a href="./index.html">Inicio</a>
     <a href="./capital-atlas.html">Capital Atlas</a>
-    <a href="./ecosystem-graph.html">Ecosystem Graph</a>
+    <a href="./startup-themes.html">Mapa de Paradigmas</a>
+    <a href="./ecosystem-graph.html">Grafo</a>
   </div>
   <div id="apiBadge" class="iq-api-badge">Búsqueda local</div>
   <div class="iq-role-wrap">
@@ -700,45 +1059,47 @@
   </div>
 </div>
 
+<!-- SEARCH BAR (full-width, primer elemento) -->
+<div class="iq-searchbar">
+  <div class="iq-searchbar-eyebrow" id="sbStats">Ecosystem Intelligence · BIO LATAM</div>
+  <div class="iq-searchbar-row">
+    <span class="iq-searchbar-arrow">→</span>
+    <input
+      id="searchInput"
+      class="iq-search-input"
+      type="text"
+      placeholder="¿Qué conexión querés activar? Startup, inversor, vertical…"
+      autocomplete="off"
+      spellcheck="false"
+    />
+    <button class="iq-btn iq-btn-primary" id="searchBtn" title="Búsqueda semántica">Buscar</button>
+  </div>
+  <div class="iq-filter-row" id="filterRow">
+    <span class="iq-filter-pill active" data-filter="all">Todo</span>
+    <span class="iq-filter-pill" data-filter="startup">Startups</span>
+    <span class="iq-filter-pill" data-filter="investor">Inversores</span>
+    <span class="iq-filter-pill" data-filter="eso">ESOs</span>
+    <span class="iq-filter-pill" data-filter="organization">Gremiales</span>
+    <span class="iq-filter-pill" data-filter="corporate">Corporates</span>
+  </div>
+</div>
+
+<!-- ECO MODE TABS -->
+<div class="iq-eco-tabs" id="ecoTabs">
+  <span class="iq-eco-tab active" data-ecomode="descubrir">Descubrir</span>
+  <span class="iq-eco-tab" data-ecomode="conectar">Conectar</span>
+  <span class="iq-eco-tab" data-ecomode="activar">Activar</span>
+</div>
+
 <!-- SHELL -->
 <div class="iq-shell">
 
   <!-- SIDEBAR -->
   <div class="iq-sidebar">
-    <div class="iq-sb-head">
-      <div class="iq-sb-head-title">Ecosistema</div>
-      <div class="iq-sb-head-sub" id="sbStats">Cargando…</div>
-    </div>
-
-    <div class="iq-search-wrap">
-      <div class="iq-search-row">
-        <input
-          id="searchInput"
-          class="iq-search-input"
-          type="text"
-          placeholder="startup que hace… | nombre del fondo…"
-          autocomplete="off"
-          spellcheck="false"
-        />
-        <button class="iq-btn iq-btn-primary" id="searchBtn" title="Búsqueda semántica (usa IA)">IA</button>
-      </div>
-    </div>
-
-    <div class="iq-filter-row" id="filterRow">
-      <span class="iq-filter-pill active" data-filter="all">Todo</span>
-      <span class="iq-filter-pill" data-filter="startup">Startups</span>
-      <span class="iq-filter-pill" data-filter="investor">Inversores</span>
-      <span class="iq-filter-pill" data-filter="eso">ESOs</span>
-      <span class="iq-filter-pill" data-filter="organization">Gremiales</span>
-      <span class="iq-filter-pill" data-filter="corporate">Corporates</span>
-    </div>
-
-    <div class="iq-mode-tabs" id="modeTabs">
-      <span class="iq-tab active" data-mode="search">Buscar</span>
-      <span class="iq-tab" data-mode="latent">Potencial</span>
-      <span class="iq-tab" data-mode="funded">Sin Capital</span>
-      <span class="iq-tab" data-mode="intro">Presentar</span>
-      <span class="iq-tab" data-mode="health">Salud</span>
+    <div class="iq-list-subtabs" id="listSubtabs">
+      <span class="iq-list-subtab active" data-submode="search">Todos</span>
+      <span class="iq-list-subtab" data-submode="latent">Potencial</span>
+      <span class="iq-list-subtab" data-submode="funded">Sin Capital</span>
     </div>
 
     <div class="iq-followup-row" id="followupRow" style="display:none"></div>
@@ -754,22 +1115,8 @@
 
   <!-- MAIN -->
   <div class="iq-main" id="mainPanel">
-    <div class="iq-welcome" id="welcomePanel">
-      <div class="iq-welcome-icon">◎</div>
-      <div class="iq-welcome-title">Inteligencia de Ecosistema BIO LATAM</div>
-      <div class="iq-welcome-sub">
-        Buscá cualquier actor del ecosistema, encontrá startups por descripción,
-        o descubrí qué conexiones tienen mayor potencial latente.
-      </div>
-      <div class="iq-welcome-examples" id="exampleQueries">
-        <div class="iq-example-query" data-q="startup que hace biopesticidas o biocontrol">🌱 startup que hace biopesticidas o biocontrol</div>
-        <div class="iq-example-query" data-q="empresa de diagnóstico molecular en Brasil">🔬 empresa de diagnóstico molecular en Brasil</div>
-        <div class="iq-example-query" data-q="plataforma de agricultura de precisión con sensores">📡 plataforma de agricultura de precisión con sensores</div>
-        <div class="iq-example-query" data-q="fermentación de precisión proteínas alternativas">🧫 fermentación de precisión proteínas alternativas</div>
-        <div class="iq-example-query" data-q="terapias oncológicas inmunoterapia latinoamérica">💊 terapias oncológicas inmunoterapia latinoamérica</div>
-      </div>
-    </div>
-    <div id="detailPanel" style="display:none"></div>
+    <div class="iq-welcome" id="welcomePanel"></div>
+    <div class="iq-entity-main" id="entityDetailMain" style="display:none"></div>
     <div id="introPanel" style="display:none">
       <!-- two-entity picker -->
       <div id="introPicker">
@@ -803,15 +1150,26 @@
     </div>
   </div>
 
+  <!-- DETAIL SLIDE-IN (right rail) -->
+  <div class="iq-detail-slide" id="detailSlide">
+    <div class="iq-detail-slide-header">
+      <span class="iq-detail-slide-label">Detalle</span>
+      <button class="iq-detail-slide-close" id="detailSlideClose">✕ cerrar</button>
+    </div>
+    <div class="iq-detail-slide-scroll">
+      <div id="detailPanel"></div>
+    </div>
+  </div>
+
 </div>
 
 <!-- DATA + LOGIC ──────────────────────────────────────────────────────── -->
-<script src="./intelligence-data.js?v=20260615elig"></script>
+<script src="./intelligence-data.js?v=20260622portfolio"></script>
 <script>
 // Load ecosystem-health-data.js if available (generated by pipeline.py ecosystem-health-data)
 // Falls back gracefully if file not present
 </script>
-<script src="./ecosystem-health-data.js?v=20260524" onerror="window._healthDataMissing=true"></script>
+<script src="./ecosystem-health-data.js?v=20260622" onerror="window._healthDataMissing=true"></script>
 <script>
 "use strict";
 
@@ -843,6 +1201,78 @@ let currentMode    = "search";
 let activeFilter   = "all";
 let currentResults = [];
 let apiAvailable   = null; // null=unknown, true=yes, false=no
+
+// ── Pre-computed latent maps (built once, O(1) lookup at render) ──────────
+const LATENT_BY_STARTUP  = {}; // startupId → [{ id, name, score }] inversores latentes
+const LATENT_BY_INVESTOR = {}; // investorId → [{ id, name, score }] startups gap
+(function buildLatentMaps() {
+  IQ_INVESTORS.forEach(inv => {
+    if (!inv.gap || !inv.gap.length) return;
+    LATENT_BY_INVESTOR[inv.id] = inv.gap;
+    inv.gap.forEach(g => {
+      if (!LATENT_BY_STARTUP[g.id]) LATENT_BY_STARTUP[g.id] = [];
+      LATENT_BY_STARTUP[g.id].push({ id: inv.id, name: inv.name, score: g.score });
+    });
+  });
+})();
+
+// ── Latent connection quality scoring ────────────────────────────────────
+function connectionQuality(g) {
+  const r = g.reasons || [];
+  let q = 0;
+  if (r.some(x => x.startsWith("theme_exact:")))      q += 4;
+  if (r.some(x => x.startsWith("stage_fit:")))        q += 3;
+  const sem = r.find(x => x.startsWith("semantic:"));
+  if (sem) { const v = parseFloat(sem.split(":")[1]); if (v >= 0.93) q += 2; else if (v >= 0.90) q += 1; }
+  // Geo: only counts when investor is NOT blanket-LATAM (has < 4 countries)
+  const inv = IQ_INVESTORS.find(i => (i.gap||[]).some(gg => gg.id === g.id));
+  if (r.some(x => x.startsWith("geographic_match:")) && inv && inv.countries.length < 4) q += 2;
+  if (r.includes("ticket_too_small")) q -= 4;
+  // Must have theme_exact as base
+  if (!r.some(x => x.startsWith("theme_exact:"))) return { level: null, score: q };
+  return { level: "raw", score: q }; // level assigned after percentile calibration
+}
+
+// Best connection for a startup
+function bestLatentForStartup(startupId) {
+  const invs = LATENT_BY_STARTUP[startupId] || [];
+  let best = null; let bestScore = -99;
+  invs.forEach(x => {
+    const inv = IQ_INVESTORS.find(i => i.id === x.id);
+    const gapEntry = (inv?.gap || []).find(g => g.id === startupId);
+    if (!gapEntry) return;
+    const q = connectionQuality(gapEntry);
+    if (q.score > bestScore) { best = { inv, gap: gapEntry, score: q.score }; bestScore = q.score; }
+  });
+  return best;
+}
+
+// Best connection for an investor
+function bestLatentForInvestor(investorId) {
+  const inv = IQ_INVESTORS.find(i => i.id === investorId);
+  if (!inv?.gap?.length) return null;
+  let best = null; let bestScore = -99;
+  inv.gap.forEach(g => {
+    const q = connectionQuality(g);
+    if (q.score > bestScore) { best = { gap: g, score: q.score }; bestScore = q.score; }
+  });
+  return best;
+}
+
+// Hard thresholds derived from score distribution:
+// 11 = theme(4)+stage(3)+sem≥0.93(2)+selective-geo(2) → ~6% of startups
+// 10 = theme+stage+sem≥0.93+geo(broad) OR theme+stage+sem≥0.93+selective-geo → ~11%
+// ≤9 = theme+stage+sem only → silent (too common to be meaningful)
+function latentLevel(score) {
+  if (score >= 11) return "exceptional";
+  if (score >= 10) return "strong";
+  return null;
+}
+
+const LATENT_LABELS = {
+  exceptional: { text: "encaje excepcional", color: "#0B5C58", dot: "#0B5C58" },
+  strong:      { text: "encaje fuerte",      color: "#0B8F87", dot: "#0B8F87" },
+};
 
 // ── DOM refs ──────────────────────────────────────────────────────────────
 const searchInput  = document.getElementById("searchInput");
@@ -924,29 +1354,50 @@ document.getElementById("filterRow").addEventListener("click", e => {
   triggerSearch();
 });
 
-// ── Mode tabs ─────────────────────────────────────────────────────────────
-document.getElementById("modeTabs").addEventListener("click", e => {
-  const tab = e.target.closest(".iq-tab");
+// ── Eco mode tabs (Descubrir | Conectar | Activar) ───────────────────────
+const ECO_MODE_MAP = { descubrir: "search", conectar: "health", activar: "intro" };
+let currentEcoMode = "descubrir";
+
+document.getElementById("ecoTabs").addEventListener("click", e => {
+  const tab = e.target.closest(".iq-eco-tab");
   if (!tab) return;
-  currentMode = tab.dataset.mode;
-  document.querySelectorAll(".iq-tab").forEach(t => t.classList.remove("active"));
+  currentEcoMode = tab.dataset.ecomode;
+  document.querySelectorAll(".iq-eco-tab").forEach(t => t.classList.remove("active"));
   tab.classList.add("active");
-  if (currentMode !== "intro") {
-    introPanel.style.display = "none";
-    introHint.style.display  = "none";
+
+  // Sub-tabs only visible in Descubrir
+  const listSubtabs = document.getElementById("listSubtabs");
+  if (listSubtabs) listSubtabs.style.display = currentEcoMode === "descubrir" ? "flex" : "none";
+
+  if (currentEcoMode === "descubrir") {
+    const activeSub = document.querySelector(".iq-list-subtab.active");
+    currentMode = activeSub ? activeSub.dataset.submode : "search";
+  } else {
+    currentMode = ECO_MODE_MAP[currentEcoMode];
   }
-  if (currentMode !== "health") {
-    healthPanel.style.display = "none";
-  }
+
+  if (currentMode !== "intro") { introPanel.style.display = "none"; introHint.style.display = "none"; }
+  if (currentMode !== "health") { healthPanel.style.display = "none"; }
   triggerSearch();
 });
 
-// ── Example queries ───────────────────────────────────────────────────────
-document.getElementById("exampleQueries").addEventListener("click", e => {
+// ── List sub-tabs (Todos | Potencial | Sin Capital) ───────────────────────
+document.getElementById("listSubtabs").addEventListener("click", e => {
+  const tab = e.target.closest(".iq-list-subtab");
+  if (!tab) return;
+  document.querySelectorAll(".iq-list-subtab").forEach(t => t.classList.remove("active"));
+  tab.classList.add("active");
+  currentMode = tab.dataset.submode;
+  triggerSearch();
+});
+
+// ── Example queries (legacy static panel — now delegated to renderWelcome) ─
+const _exQ = document.getElementById("exampleQueries");
+if (_exQ) _exQ.addEventListener("click", e => {
   const eq = e.target.closest(".iq-example-query");
   if (!eq) return;
   searchInput.value = eq.dataset.q;
-  triggerSearch(true); // force semantic
+  triggerSearch(true);
 });
 
 // ── Search trigger ────────────────────────────────────────────────────────
@@ -1072,7 +1523,7 @@ function localSearch(q) {
   }
 
   results.sort((a, b) => b.score - a.score);
-  renderResults(results.slice(0, 40));
+  renderResults(results);
 }
 
 // ── Semantic search via API ───────────────────────────────────────────────
@@ -1231,35 +1682,47 @@ function localVectorSearch(qIdx) {
   // qIdx: index into IQ_STARTUPS (pre-encoded). Used for "find similar" from detail view.
   const qVec = getVec(qIdx);
   const scored = IQ_STARTUPS.map((st, i) => ({
-    id: st.id, name: st.name, type: "startup",
-    country: st.country, focus: st.theme, detail: st.one_liner,
-    score: dotProduct(qVec, getVec(i)), _mode: "similar",
+    ..._stItem(st, "similar"),
+    score: dotProduct(qVec, getVec(i)),
   })).filter((_, i) => i !== qIdx);
   scored.sort((a, b) => b.score - a.score);
   return scored.slice(0, 15);
 }
 
 // ── Default browse / modes ────────────────────────────────────────────────
+function _stItem(s, mode="browse") {
+  return { id: s.id, name: s.name, type: "startup", country: s.country,
+    focus: s.theme, detail: s.one_liner, website: s.website || "", _mode: mode };
+}
+const _ITYPE_LABELS = {
+  vc: "Venture Capital", cvc: "Corporate VC", company_builder: "Company Builder",
+  accelerator: "Aceleradora", family_office: "Family Office",
+  impact_fund: "Impact Fund", government: "Gobierno", angel: "Ángel"
+};
+function _invItem(inv, mode="browse") {
+  const itypeLbl = _ITYPE_LABELS[inv.itype] || inv.itype || "Fondo";
+  const focusShort = inv.themes.slice(0,2).map(t => THEME_SHORT[t] || t.split(" & ")[0]).join(", ");
+  // meta line: type + portfolio size (more scannable than themes)
+  // themes go as the "detail" chip below the name
+  return { id: inv.id, name: inv.name, type: "investor", country: inv.country,
+    focus: `${itypeLbl} · ${inv.portfolio_size || "?"} portafolio`,
+    detail: focusShort,
+    website: inv.website || "", _mode: mode };
+}
+
 function showDefaultBrowse() {
   let pool;
   if (activeFilter === "all") {
-    // Show top-quality funded startups by default
-    pool = IQ_STARTUPS
-      .filter(s => s.funded)
-      .sort((a, b) => b.quality - a.quality)
-      .slice(0, 30)
-      .map(s => ({ id: s.id, name: s.name, type: "startup", country: s.country, focus: s.theme, detail: s.one_liner, _mode: "browse" }));
+    pool = [
+      ...IQ_STARTUPS.sort((a,b) => b.quality - a.quality).map(s => _stItem(s)),
+      ...IQ_INVESTORS.map(inv => _invItem(inv)),
+    ];
   } else if (activeFilter === "investor") {
-    pool = IQ_INVESTORS
-      .slice(0, 30)
-      .map(inv => ({ id: inv.id, name: inv.name, type: "investor", country: inv.country, focus: inv.themes.slice(0,2).join(", "), detail: `${inv.portfolio_size} portfolio · ${inv.itype}`, _mode: "browse" }));
+    pool = IQ_INVESTORS.map(inv => _invItem(inv));
   } else if (activeFilter === "startup") {
-    pool = IQ_STARTUPS
-      .sort((a, b) => b.quality - a.quality)
-      .slice(0, 40)
-      .map(s => ({ id: s.id, name: s.name, type: "startup", country: s.country, focus: s.theme, detail: s.one_liner, _mode: "browse" }));
+    pool = IQ_STARTUPS.sort((a,b) => b.quality - a.quality).map(s => _stItem(s));
   } else {
-    pool = IQ_ALL_ENTITIES.filter(e => e.type === activeFilter).slice(0, 30).map(e => ({ ...e, _mode: "browse" }));
+    pool = IQ_ALL_ENTITIES.filter(e => e.type === activeFilter).map(e => ({ ...e, _mode: "browse" }));
   }
   renderResults(pool);
 }
@@ -1267,24 +1730,47 @@ function showDefaultBrowse() {
 function showUnfunded() {
   const pool = IQ_STARTUPS
     .filter(s => !s.funded && s.theme)
-    .sort((a, b) => b.quality - a.quality)
-    .slice(0, 50);
-  const items = pool.map(s => ({
-    id: s.id, name: s.name, type: "startup",
-    country: s.country, focus: s.theme, detail: s.one_liner || `Calidad: ${s.quality}`,
-    _mode: "unfunded",
-  }));
+    .sort((a, b) => b.quality - a.quality);
+  const items = pool.map(s => _stItem(s, "unfunded"));
   renderResults(items);
   if (items.length === 0) {
     resultsList.innerHTML = '<div class="iq-empty"><strong>✓</strong>Todas las startups tienen capital!</div>';
   }
 }
 
+function _genericLatentMatches(entity) {
+  const themes = (entity.bio_themes || "").split(";").map(t => t.trim()).filter(Boolean);
+  return IQ_STARTUPS
+    .filter(s => themes.some(t => s.theme === t))
+    .sort((a, b) => (b.quality || 0) - (a.quality || 0));
+}
+
 function showTopLatent() {
-  // Show investors sorted by gap (pre-computed)
+  const genericTypes = ["corporate", "organization", "eso"];
+
+  if (genericTypes.includes(activeFilter)) {
+    const pool = IQ_ALL_ENTITIES
+      .filter(e => e.type === activeFilter)
+      .map(e => {
+        const matches = _genericLatentMatches(e);
+        return { ...e, _matchCount: matches.length, _mode: "latent" };
+      })
+      .filter(e => e._matchCount > 0)
+      .sort((a, b) => b._matchCount - a._matchCount);
+
+    const items = pool.map(e => ({
+      id: e.id, name: e.name, type: e.type,
+      country: e.country, focus: e.focus,
+      detail: `${e._matchCount} startups afines · ${(e.demand||"").split(";").slice(0,2).map(d=>d.trim().replace(/_/g," ")).join(", ")}`,
+      _mode: "latent",
+    }));
+    renderResults(items);
+    return;
+  }
+
+  // Default: investors with gap entries
   const pool = IQ_INVESTORS
-    .filter(inv => inv.gap && inv.gap.length > 0)
-    .slice(0, 25);
+    .filter(inv => inv.gap && inv.gap.length > 0);
   const items = pool.map(inv => ({
     id: inv.id, name: inv.name, type: "investor",
     country: inv.country, focus: inv.themes.slice(0,2).join(", "),
@@ -1294,8 +1780,75 @@ function showTopLatent() {
   renderResults(items);
 }
 
+// ── Bio theme palette (shared with other dashboards) ─────────────────────
+// Dominios correctos para entidades cuyo campo website está sucio o ausente
+const LOGO_DOMAIN_OVERRIDES = {
+  "sf500":            "sf500.org",
+  "gridx":            "gridexponential.com",
+  "glocal":           "glocalfund.com",
+  "inventure":        "inventure.fi",
+  "kaszek":           "kaszek.com",
+  "monashees":        "monashees.com.br",
+  "atlantico":        "atlantico.vc",
+  "bossanova":        "bossanova.vc",
+  "onevc":            "onevc.vc",
+  "araucaria":        "araucaria.vc",
+  "sosv":             "sosv.com",
+  "indiebio":         "indiebio.co",
+  "draper_cygnus":    "drapercygnus.com",
+  "sp_ventures":      "spventures.com.br",
+  "hatch_blue":       "hatch.blue",
+  "the_yield_lab_latam": "theyieldlablatam.com",
+  "aqua_capital":     "aquacapital.com.br",
+  "lowercarbon":      "lowercarbon.com",
+  "corfo":            "corfo.cl",
+  "idb_lab":          "idbinvest.org",
+  "caf":              "caf.com",
+  "ecoa":             "ecoa.capital",
+  "kamay":            "kamayventures.com",
+  "salkantay":        "salkantay.vc",
+  "chile_global_ventures": "chileglobalventures.cl",
+  "fenix_ventures":   "fenventures.com",
+  "greenrock":        "greenrock.vc",
+  "the_ganesha_lab":  "theganeshalab.com",
+  "endurance":        "endurance28.vc",
+  "waterlemon":       "waterlemon.vc",
+  "dalus":            "daluscapital.com",
+  "newtopia":         "newtopia.vc",
+  "vesper":           "vesperventures.com.br",
+};
+
+const THEME_PAL = {
+  "Therapeutics":                             "#7033BC",
+  "Diagnostics & Devices":                    "#1A6DB5",
+  "Food Systems & Alt Proteins":              "#C25A2A",
+  "Bioinputs & Crop Resilience":              "#2A7A42",
+  "Bioinputs & Soil Health":                  "#3A8A3A",
+  "Nature & Ecosystem Tech":                  "#127A6E",
+  "Precision Agriculture":                    "#2E4E8C",
+  "Biomaterials & Green Chemistry":           "#8B6D14",
+  "Biomanufacturing & Platform Technologies": "#6B8C3A",
+};
+
+const THEME_SHORT = {
+  "Therapeutics":                             "Therapeutics",
+  "Diagnostics & Devices":                    "Diagnostics",
+  "Food Systems & Alt Proteins":              "Food Systems",
+  "Bioinputs & Crop Resilience":              "Bioinputs · Cultivos",
+  "Bioinputs & Soil Health":                  "Bioinputs · Suelo",
+  "Nature & Ecosystem Tech":                  "Nature Tech",
+  "Precision Agriculture":                    "Precision Ag",
+  "Biomaterials & Green Chemistry":           "Biomaterials",
+  "Biomanufacturing & Platform Technologies": "Biomanufacturing",
+};
+
 // ── Render results list ───────────────────────────────────────────────────
 function renderResults(items) {
+  welcomePanel.style.display = "none";
+  // Restore sidebar when showing results
+  const sidebar = document.querySelector(".iq-sidebar");
+  if (sidebar) sidebar.style.display = "";
+  resultsList.style.display  = "";
   currentResults = items;
   if (items.length === 0) {
     resultsList.innerHTML = '<div class="iq-empty"><strong>∅</strong>Sin resultados para esta búsqueda.</div>';
@@ -1307,30 +1860,160 @@ function renderResults(items) {
       : "";
     const chips = buildResultChips(item);
     const _logoTag = buildLogoTag(item);
+
+    // Latent signal — percentile-calibrated, ~25% coverage max
+    let latentSignal = "";
+    if (item.type === "startup") {
+      const best = bestLatentForStartup(item.id);
+      const level = best ? latentLevel(best.score) : null;
+      if (level) {
+        const lbl = LATENT_LABELS[level];
+        latentSignal = `<div style="font-size:.63rem;color:${lbl.color};margin-top:3px;display:flex;align-items:center;gap:4px;"><span style="width:5px;height:5px;border-radius:50%;background:${lbl.dot};flex-shrink:0;display:inline-block"></span><strong>${escHtml(best.inv.name)}</strong>&nbsp;· ${lbl.text}</div>`;
+      }
+    } else if (item.type === "investor") {
+      const best = bestLatentForInvestor(item.id);
+      const level = best ? latentLevel(best.score) : null;
+      if (level) {
+        const lbl = LATENT_LABELS[level];
+        latentSignal = `<div style="font-size:.63rem;color:${lbl.color};margin-top:3px;display:flex;align-items:center;gap:4px;"><span style="width:5px;height:5px;border-radius:50%;background:${lbl.dot};flex-shrink:0;display:inline-block"></span><strong>${escHtml(best.gap.name)}</strong>&nbsp;· ${lbl.text}</div>`;
+      }
+    }
+
+    // BIO chip for investors
+    const bioChip = item.type === "investor"
+      ? (() => { const inv = IQ_INVESTORS.find(x => x.id === item.id); return (inv && (inv.bio_ratio||0) >= 0.5) ? `<span style="font-size:.58rem;letter-spacing:.06em;background:rgba(11,143,135,.1);color:var(--accent);padding:1px 5px;border-radius:2px;margin-left:4px;font-weight:700">BIO</span>` : ""; })()
+      : "";
+
+    // ── Peek content (primera expansión) ──────────────────────────────────
+    const peekText = item.detail || item.one_liner || item.profile_blurb || "";
+    let peekStats = "";
+    if (item.type === "startup") {
+      const st = IQ_STARTUPS.find(s => s.id === item.id);
+      if (st) {
+        peekStats = `
+          ${st.stage ? `<span class="iq-peek-stat"><strong>${escHtml(st.stage)}</strong></span>` : ""}
+          ${st.founded ? `<span class="iq-peek-stat">Fundada <strong>${escHtml(String(st.founded))}</strong></span>` : ""}
+          ${st.country ? `<span class="iq-peek-stat"><strong>${escHtml(st.country)}</strong></span>` : ""}`;
+      }
+    } else if (item.type === "investor") {
+      const inv = IQ_INVESTORS.find(x => x.id === item.id);
+      if (inv) {
+        peekStats = `
+          ${inv.itype ? `<span class="iq-peek-stat"><strong>${escHtml(inv.itype)}</strong></span>` : ""}
+          ${inv.portfolio_size ? `<span class="iq-peek-stat">Portfolio <strong>${inv.portfolio_size}</strong></span>` : ""}
+          ${inv.country ? `<span class="iq-peek-stat"><strong>${escHtml(inv.country)}</strong></span>` : ""}`;
+      }
+    } else {
+      const ent = IQ_ALL_ENTITIES.find(e => e.id === item.id);
+      if (ent) {
+        peekStats = `
+          ${ent.country ? `<span class="iq-peek-stat"><strong>${escHtml(ent.country)}</strong></span>` : ""}
+          ${ent.presence ? `<span class="iq-peek-stat">Presencia <strong>${escHtml(ent.presence.replace(/_/g," "))}</strong></span>` : ""}`;
+      }
+    }
+
+    const themeBorderColor = item.type === "startup"
+      ? (THEME_PAL[item.focus] || "rgba(216,204,192,.6)")
+      : null;
+    const borderStyle = themeBorderColor ? ` style="border-left-color:${themeBorderColor}"` : "";
+
     return `
-      <div class="iq-result-item" data-idx="${i}" data-id="${item.id}" data-type="${item.type}">
-        ${_logoTag}
-        <div class="iq-result-body">
-          <div class="iq-result-top">
-            <span class="iq-result-name">${escHtml(item.name)}</span>
-            ${scoreHtml}
+      <div class="iq-result-item" data-idx="${i}" data-id="${item.id}" data-type="${item.type}"${borderStyle}>
+        <div class="iq-result-item-top">
+          ${_logoTag}
+          <div class="iq-result-body">
+            <div class="iq-result-top">
+              <span class="iq-result-name">${escHtml(item.name)}${bioChip}</span>
+              ${scoreHtml}
+            </div>
+            <div class="iq-result-meta">${escHtml(item.country || "")}${item.country && item.focus ? " · " : ""}${escHtml((item.focus || "").slice(0,48))}</div>
+            ${chips ? `<div class="iq-result-chips">${chips}</div>` : ""}
+            ${latentSignal}
           </div>
-          <div class="iq-result-meta">${escHtml(item.country || "")}${item.country && item.focus ? " · " : ""}${escHtml((item.focus || "").slice(0,48))}</div>
-          ${chips ? `<div class="iq-result-chips">${chips}</div>` : ""}
+        </div>
+        <div class="iq-row-peek">
+          ${peekStats ? `<div class="iq-peek-stats">${peekStats}</div>` : ""}
+          ${peekText ? `<div class="iq-peek-text">${escHtml(peekText.slice(0,160))}${peekText.length > 160 ? "…" : ""}</div>` : ""}
+          <div class="iq-peek-actions">
+            <button class="iq-peek-btn-primary" data-action="detail">Ver conexiones →</button>
+            ${item.type !== "startup" && item.type !== "investor" ? "" :
+              `<button class="iq-peek-btn-secondary" data-action="activar">Activar vínculo</button>`}
+          </div>
         </div>
       </div>`;
   }).join("");
   resultsList.innerHTML = html;
 
+  let _expandedEl = null;
+
   resultsList.querySelectorAll(".iq-result-item").forEach(el => {
-    el.addEventListener("click", () => {
-      resultsList.querySelectorAll(".iq-result-item").forEach(e => e.classList.remove("selected"));
-      el.classList.add("selected");
+    el.addEventListener("click", e => {
       const idx = +el.dataset.idx;
+      const item = currentResults[idx];
+
+      // Button inside peek — handle separately
+      const actionBtn = e.target.closest("[data-action]");
+      if (actionBtn) {
+        if (actionBtn.dataset.action === "detail") {
+          resultsList.querySelectorAll(".iq-result-item").forEach(x => x.classList.remove("selected"));
+          el.classList.add("selected");
+          showDetail(item);
+        } else if (actionBtn.dataset.action === "activar") {
+          if (currentMode === "intro") { setIntroEntity(item); return; }
+          // Quick activar: pre-fill best pair and go to intro
+          if (item.type === "startup") {
+            const potInvs = IQ_INVESTORS.filter(inv => (inv.gap||[]).some(g => g.id === item.id))
+              .sort((a,b) => { const ga = (a.gap||[]).find(g=>g.id===item.id); const gb=(b.gap||[]).find(g=>g.id===item.id); return (gb?.score||0)-(ga?.score||0); });
+            const st = IQ_STARTUPS.find(s => s.id === item.id);
+            const topInv = potInvs[0];
+            if (st && topInv) {
+              _activarVinculo(
+                { id: st.id, name: st.name, type: "startup", country: st.country, focus: st.theme, detail: st.one_liner },
+                { id: topInv.id, name: topInv.name, type: "investor", country: topInv.country, focus: topInv.itype, detail: topInv.profile_blurb }
+              );
+            }
+          } else if (item.type === "investor") {
+            const inv = IQ_INVESTORS.find(i => i.id === item.id);
+            const topGap = (inv?.gap||[])[0];
+            const st = topGap ? IQ_STARTUPS.find(s => s.id === topGap.id) : null;
+            if (inv && st) {
+              _activarVinculo(
+                { id: st.id, name: st.name, type: "startup", country: st.country, focus: st.theme, detail: st.one_liner },
+                { id: inv.id, name: inv.name, type: "investor", country: inv.country, focus: inv.itype, detail: inv.profile_blurb }
+              );
+            }
+          }
+        }
+        return;
+      }
+
       if (currentMode === "intro") {
-        setIntroEntity(currentResults[idx]);
+        setIntroEntity(item);
+        return;
+      }
+
+      // Primera expansión: perfil completo en centro (sin slide-in aún)
+      const alreadyExpanded = el.classList.contains("expanded");
+      if (_expandedEl && _expandedEl !== el) {
+        _expandedEl.classList.remove("expanded", "selected");
+      }
+      if (alreadyExpanded) {
+        el.classList.remove("expanded", "selected");
+        _expandedEl = null;
+        // Collapse: restore welcome if no other entity is showing
+        welcomePanel.style.display = "block";
+        entityDetailMain.style.display = "none";
+        document.getElementById("detailSlide").classList.remove("open");
+        detailPanel.innerHTML = "";
       } else {
-        showDetail(currentResults[idx]);
+        el.classList.add("expanded", "selected");
+        _expandedEl = el;
+        // Show full profile in center — no slide-in yet
+        welcomePanel.style.display = "none";
+        introPanel.style.display   = "none";
+        healthPanel.style.display  = "none";
+        entityDetailMain.style.display = "block";
+        renderEntityMain(item);
       }
     });
   });
@@ -1347,17 +2030,16 @@ function renderResults(items) {
   }
 }
 
-// ── Logo con fallback robusto ─────────────────────────────────────────────
-// Cadena: Clearbit → Google Favicons → iniciales coloreadas
-// Clearbit (logo.clearbit.com) es gratuito pero no tiene todos los dominios.
-// Google favicons (sz=128) es confiable pero pequeño — sirve como puente.
-// Iniciales: siempre disponible, nunca muestra vacío.
+// ── Logo con fallback a iniciales coloreadas ─────────────────────────────
+// Clearbit logo.clearbit.com es la fuente principal (logos limpios, vectoriales).
+// Google Favicons se omite: devuelve HTTP 200 con globo genérico cuando no
+// tiene el favicon, por lo que nunca dispara onerror → ícono borroso e inútil.
+// Fallback directo a iniciales: limpio, siempre consistente.
 function _logoInitials(name) {
   const words = (name || "?").trim().split(/\s+/);
   const initials = words.length >= 2
     ? (words[0][0] + words[1][0]).toUpperCase()
     : (words[0] || "?").slice(0, 2).toUpperCase();
-  // Color determinista basado en el nombre (palette cálida del design system)
   const palette = ["#7C9E6B","#5B8FA8","#C17E3C","#8B6BAE","#C25E5E","#4A9080","#A07850","#3D7A8A"];
   let hash = 0;
   for (let i = 0; i < name.length; i++) hash = (hash * 31 + name.charCodeAt(i)) & 0xffff;
@@ -1366,19 +2048,27 @@ function _logoInitials(name) {
 }
 
 function buildLogoTag(item) {
-  const w = item.website || "";
-  let dom = null;
-  if (w) {
-    try { dom = new URL(w.startsWith("http") ? w : "https://" + w).hostname.replace(/^www\./, ""); }
-    catch(e) {}
+  // Prioridad 1: override manual por ID
+  let dom = LOGO_DOMAIN_OVERRIDES[item.id] || null;
+
+  if (!dom) {
+    const w = item.website || "";
+    if (w) {
+      // Extraer primera URL válida (el campo puede tener notas de texto)
+      const urlMatch = w.match(/https?:\/\/[^\s,]+/);
+      const clean = urlMatch ? urlMatch[0].replace(/[.)]+$/, "") : w.split(/[\s,]/)[0];
+      try { dom = new URL(clean.startsWith("http") ? clean : "https://" + clean).hostname.replace(/^www\./, ""); }
+      catch(e) {}
+      // Descartar dominios de terceros
+      if (dom && /linkedin|crunchbase|twitter|instagram|facebook/.test(dom)) dom = null;
+    }
   }
   if (!dom) return _logoInitials(item.name || "");
   const initFallback = _logoInitials(item.name || "").replace(/"/g, "&quot;");
-  // onerror chain: Clearbit → Google Favicons 128px → iniciales inline
-  return `<img class="iq-result-logo" `
-    + `src="https://logo.clearbit.com/${dom}" `
-    + `onerror="if(this.dataset.step==='0'){this.dataset.step='1';this.src='https://www.google.com/s2/favicons?domain=${dom}&sz=128';}else{this.outerHTML='${initFallback}';}" `
-    + `data-step="0" alt="">`;
+  // unavatar.io agrega múltiples fuentes (Clearbit, DuckDuckGo, etc.) + caché robusto
+  return `<img class="iq-result-logo" loading="lazy" `
+    + `src="https://unavatar.io/${dom}?fallback=false" `
+    + `onerror="this.outerHTML='${initFallback}';" alt="">`;
 }
 
 function buildResultChips(item) {
@@ -1403,21 +2093,784 @@ function buildResultChips(item) {
   return chips.join("");
 }
 
+// ── Slide-in panel helpers ─────────────────────────────────────────────────
+const entityDetailMain = document.getElementById("entityDetailMain");
+
+function openDetailPanel() {
+  document.getElementById("detailSlide").classList.add("open");
+}
+function closeDetailPanel() {
+  document.getElementById("detailSlide").classList.remove("open");
+  detailPanel.innerHTML = "";
+  if (entityDetailMain) {
+    entityDetailMain.style.display = "none";
+    entityDetailMain.innerHTML = "";
+  }
+  selectedEntity = null;
+  resultsList.querySelectorAll(".iq-result-item").forEach(e => e.classList.remove("selected"));
+  // Restore welcome if nothing else is showing
+  if (welcomePanel && welcomePanel.style.display === "none" &&
+      introPanel.style.display === "none" && healthPanel.style.display === "none") {
+    welcomePanel.style.display = "block";
+  }
+}
+
+document.getElementById("detailSlideClose").addEventListener("click", closeDetailPanel);
+
 // ── Detail panel ──────────────────────────────────────────────────────────
 function showDetail(item) {
-  welcomePanel.style.display  = "none";
-  detailPanel.style.display   = "block";
-  introPanel.style.display    = "none";
-  healthPanel.style.display   = "none";
   selectedEntity = item;
 
-  if (item.type === "startup") {
-    renderStartupDetail(item.id);
-  } else if (item.type === "investor") {
-    renderInvestorDetail(item.id);
+  if (currentEcoMode === "descubrir") {
+    // Center: full entity profile
+    welcomePanel.style.display = "none";
+    introPanel.style.display   = "none";
+    healthPanel.style.display  = "none";
+    entityDetailMain.style.display = "block";
+    renderEntityMain(item);
+
+    // Right slide-in: relational context
+    if (item.type === "startup") {
+      openDetailPanel();
+      renderStartupRelational(item.id);
+    } else if (item.type === "investor") {
+      openDetailPanel();
+      renderInvestorRelational(item.id);
+    } else {
+      // For ESO/org/corporate: center = profile, slide-in = potential intros
+      welcomePanel.style.display = "none";
+      entityDetailMain.style.display = "block";
+      renderEntityMain(item);
+      renderGenericRelational(item);
+    }
   } else {
-    renderGenericDetail(item);
+    // Conectar / Activar: main content stays, slide-in shows full detail
+    openDetailPanel();
+    if (item.type === "startup")       renderStartupDetail(item.id);
+    else if (item.type === "investor") renderInvestorDetail(item.id);
+    else                               renderGenericDetail(item);
   }
+}
+
+// ── Entity main panel (center, Descubrir mode) ────────────────────────────
+function renderPreviewMain(item) {
+  // Show lightweight center preview on first click — no slide-in
+  welcomePanel.style.display  = "none";
+  introPanel.style.display    = "none";
+  healthPanel.style.display   = "none";
+  entityDetailMain.style.display = "block";
+
+  const typeLabels = {
+    startup: "Startup", investor: "Inversor",
+    organization: "Gremial", eso: "ESO", corporate: "Corporate",
+  };
+  const typeLabel = typeLabels[item.type] || item.type;
+
+  // Resolve full data
+  let detail = item.detail || "";
+  let extraStats = [];
+  let latentHtml = "";
+  let themeDot = "";
+
+  if (item.type === "startup") {
+    const st = IQ_STARTUPS.find(s => s.id === item.id);
+    if (st) {
+      detail = st.one_liner || st.summary || detail;
+      if (st.stage)   extraStats.push({ label: "Etapa",   value: st.stage });
+      if (st.founded) extraStats.push({ label: "Fundada", value: st.founded });
+      if (st.country) extraStats.push({ label: "País",    value: st.country });
+      if (st.theme)   extraStats.push({ label: "Vertical", value: st.theme });
+      const best = bestLatentForStartup(item.id);
+      const level = best ? latentLevel(best.score) : null;
+      if (level) {
+        const lbl = LATENT_LABELS[level];
+        latentHtml = `<div style="margin-top:20px;padding:12px 14px;background:rgba(11,92,88,.07);border:1px solid rgba(11,92,88,.18);border-radius:3px">
+          <div style="font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:4px">Conexión latente detectada</div>
+          <div style="font-size:.78rem;color:var(--ink)"><strong>${escHtml(best.inv.name)}</strong> · ${lbl.text}</div>
+        </div>`;
+      }
+    }
+  } else if (item.type === "investor") {
+    const inv = IQ_INVESTORS.find(i => i.id === item.id);
+    if (inv) {
+      detail = inv.profile_blurb || detail;
+      if (inv.itype)          extraStats.push({ label: "Tipo",      value: inv.itype });
+      if (inv.portfolio_size) extraStats.push({ label: "Portfolio",  value: inv.portfolio_size });
+      if (inv.country)        extraStats.push({ label: "País",       value: inv.country });
+      if ((inv.gap||[]).length) {
+        latentHtml = `<div style="margin-top:20px;padding:12px 14px;background:rgba(11,92,88,.07);border:1px solid rgba(11,92,88,.18);border-radius:3px">
+          <div style="font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:4px">Potencial latente</div>
+          <div style="font-size:.78rem;color:var(--ink)">${inv.gap.length} startup${inv.gap.length>1?"s":""} con encaje sin inversión registrada</div>
+        </div>`;
+      }
+    }
+  } else {
+    const ent = IQ_ALL_ENTITIES.find(e => e.id === item.id);
+    if (ent) {
+      detail = ent.detail || ent.description_en || detail;
+      if (ent.country)  extraStats.push({ label: "País",      value: ent.country });
+      if (ent.presence) extraStats.push({ label: "Presencia", value: ent.presence.replace(/_/g," ") });
+      const matches = _genericLatentMatches(ent);
+      if (matches.length) {
+        latentHtml = `<div style="margin-top:20px;padding:12px 14px;background:rgba(11,92,88,.07);border:1px solid rgba(11,92,88,.18);border-radius:3px">
+          <div style="font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:4px">Startups afines</div>
+          <div style="font-size:.78rem;color:var(--ink)">${matches.length} startup${matches.length>1?"s":""} con afinidad temática</div>
+        </div>`;
+      }
+    }
+  }
+
+  const statsGrid = extraStats.length ? `
+    <div style="display:grid;grid-template-columns:repeat(${Math.min(extraStats.length,2)},1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin:16px 0;">
+      ${extraStats.map(s => `<div style="padding:9px 12px;background:var(--panel)">
+        <div style="font-size:.6rem;color:var(--muted);margin-bottom:2px;text-transform:uppercase;letter-spacing:.06em">${escHtml(s.label)}</div>
+        <div style="font-size:.82rem;color:var(--ink);font-weight:600">${escHtml(String(s.value))}</div>
+      </div>`).join("")}
+    </div>` : "";
+
+  entityDetailMain.innerHTML = `
+    <div style="animation:fadeUp .18s ease">
+      <div class="iq-entity-type-eyebrow"><span>${escHtml(typeLabel)}${item.focus ? " · " + escHtml(item.focus) : ""}</span></div>
+      <div class="iq-entity-name" style="margin-bottom:4px">${escHtml(item.name)}</div>
+      ${statsGrid}
+      ${detail ? `<div style="font-size:.82rem;color:var(--muted);line-height:1.6">${escHtml(detail)}</div>` : ""}
+      ${latentHtml}
+      <div style="margin-top:24px;padding-top:16px;border-top:1px solid var(--line);font-size:.68rem;color:var(--muted);text-align:center;letter-spacing:.04em">
+        Click en <strong>Ver conexiones →</strong> para ver el perfil completo y los vínculos relacionales
+      </div>
+    </div>`;
+}
+
+function renderEntityMain(item) {
+  if (item.type === "startup")  renderStartupMain(item.id);
+  else if (item.type === "investor") renderInvestorMain(item.id);
+  else renderGenericMain(item);
+}
+
+function renderGenericMain(item) {
+  // Look up full data from IQ_ALL_ENTITIES
+  const full = IQ_ALL_ENTITIES.find(e => e.id === item.id) || item;
+
+  const typeLabels = {
+    organization: "Gremial / Asociación",
+    eso:          "Ecosistema de Soporte (ESO)",
+    corporate:    "Corporate / Adquirente",
+  };
+  const typeLabel = typeLabels[full.type] || full.type;
+
+  const websiteLink = full.website
+    ? `<a href="${escHtml(full.website)}" target="_blank" rel="noopener">${escHtml(full.website.replace(/^https?:\/\//, ""))}</a>`
+    : "—";
+
+  const themes = (full.bio_themes || "").split(";").map(t => t.trim()).filter(Boolean);
+  const themeChips = themes.map(t => `<span class="iq-chip">${escHtml(t)}</span>`).join("");
+
+  const demands = (full.demand || "").split(";").map(d => d.trim().replace(/_/g, " ")).filter(Boolean);
+  const demandChips = demands.map(d => `<span class="iq-chip">${escHtml(d)}</span>`).join("");
+
+  const presence = (full.presence || "").replace(/_/g, " ");
+
+  entityDetailMain.innerHTML = `
+    <div class="iq-entity-type-eyebrow">
+      <span>${escHtml(typeLabel)}</span>
+    </div>
+    <div class="iq-entity-name">${escHtml(full.name)}</div>
+    <div class="iq-entity-meta-row">
+      <span class="iq-entity-meta-item"><strong>País</strong> ${escHtml(full.country || "—")}</span>
+      ${presence ? `<span class="iq-entity-meta-item"><strong>Presencia</strong> ${escHtml(presence)}</span>` : ""}
+      <span class="iq-entity-meta-item"><strong>Web</strong> ${websiteLink}</span>
+    </div>
+    ${full.detail ? `<div class="iq-entity-summary">${escHtml(full.detail)}</div>` : ""}
+    ${themes.length ? `
+      <hr class="iq-entity-divider">
+      <div class="iq-entity-section-label">Verticales bio</div>
+      <div class="iq-result-chips" style="margin-bottom:12px">${themeChips}</div>` : ""}
+    ${demands.length ? `
+      <div class="iq-entity-section-label">Servicios / demanda</div>
+      <div class="iq-result-chips">${demandChips}</div>` : ""}
+    ${full.description_en ? `
+      <hr class="iq-entity-divider">
+      <div class="iq-entity-section-label">Perfil extendido</div>
+      <div class="iq-entity-summary" style="color:var(--muted)">${escHtml(full.description_en)}</div>` : ""}`;
+}
+
+function renderGenericRelational(item) {
+  const full = IQ_ALL_ENTITIES.find(e => e.id === item.id) || item;
+  const matches = _genericLatentMatches(full).slice(0, 12);
+
+  if (!matches.length) {
+    document.getElementById("detailSlide").classList.remove("open");
+    detailPanel.innerHTML = "";
+    return;
+  }
+
+  const typeLabels = { organization: "Gremial", eso: "ESO", corporate: "Corporate" };
+  const entityLabel = typeLabels[full.type] || full.type;
+
+  const rows = matches.map(st => {
+    const stageTag = st.stage ? `<span style="font-size:.6rem;padding:1px 5px;background:var(--line);border-radius:2px;color:var(--muted)">${escHtml(st.stage)}</span>` : "";
+    return `
+      <div style="padding:10px 0;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:4px">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:6px">
+          <span style="font-size:.82rem;font-weight:600;color:var(--ink);line-height:1.2">${escHtml(st.name)}</span>
+          ${stageTag}
+        </div>
+        <div style="font-size:.72rem;color:var(--muted)">${escHtml(st.country||"")}${st.country && st.theme?" · ":""}${escHtml(THEME_SHORT[st.theme]||(st.theme||""))}</div>
+        ${st.one_liner ? `<div style="font-size:.72rem;color:var(--ink);opacity:.75;line-height:1.35">${escHtml(st.one_liner.slice(0,90))}…</div>` : ""}
+        <button class="iq-activar-btn" style="margin-top:2px;font-size:.68rem;padding:3px 8px;border:1px solid var(--accent);border-radius:3px;background:transparent;color:var(--accent);cursor:pointer"
+          data-startup-id="${escHtml(st.id)}" data-entity-id="${escHtml(full.id)}">
+          Activar vínculo →
+        </button>
+      </div>`;
+  }).join("");
+
+  detailPanel.innerHTML = `
+    <div style="padding:16px 14px 8px">
+      <div style="font-size:.65rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:4px">${escHtml(entityLabel)}</div>
+      <div style="font-size:1rem;font-weight:600;color:var(--ink);margin-bottom:2px">${escHtml(full.name)}</div>
+      <div style="font-size:.75rem;color:var(--muted);margin-bottom:12px">${matches.length} startups con afinidad temática</div>
+      <div style="font-size:.65rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);border-top:1px solid var(--line);padding-top:10px;margin-bottom:0">Presentaciones potenciales</div>
+    </div>
+    <div style="padding:0 14px 16px">${rows}</div>`;
+
+  openDetailPanel();
+
+  // Wire "Activar vínculo" buttons
+  detailPanel.querySelectorAll(".iq-activar-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const st = IQ_STARTUPS.find(s => s.id === btn.dataset.startupId);
+      const entity = IQ_ALL_ENTITIES.find(e => e.id === btn.dataset.entityId);
+      if (!st || !entity) return;
+      switchMode("intro");
+      introEntityA = { id: st.id, name: st.name, type: "startup", country: st.country, focus: st.theme, detail: st.one_liner };
+      renderSlot("a", introEntityA);
+      introEntityB = { id: entity.id, name: entity.name, type: entity.type, country: entity.country, focus: entity.focus, detail: entity.detail };
+      renderSlot("b", introEntityB);
+      introFocused = null;
+      updateGenerateBtn();
+      showIntroMode();
+    });
+  });
+}
+
+function renderStartupMain(id) {
+  const st = IQ_STARTUPS.find(s => s.id === id);
+  if (!st) return;
+
+  const uniqueInvestors = [...new Set((st.investors || []).filter(Boolean))];
+  const themeColor = THEME_PAL[st.theme] || "var(--muted)";
+  const qualityPct = Math.round((st.quality || 0) * 10);
+
+  // Stage ladder
+  const STAGES = ["pre-seed","seed","series-a","series-b","growth","public"];
+  const stageIdx = STAGES.indexOf((st.stage || "").toLowerCase().replace(/\s+/g,"-"));
+  const stageDotsHtml = STAGES.map((s, i) => {
+    const active = i <= stageIdx && stageIdx >= 0;
+    const current = i === stageIdx;
+    return `<div style="display:flex;flex-direction:column;align-items:center;gap:3px;flex:1;min-width:0">
+      <div style="width:${current?10:7}px;height:${current?10:7}px;border-radius:50%;
+        background:${active ? themeColor : "var(--line)"};
+        border:${current?`2px solid ${themeColor}`:"none"};
+        transition:background .2s"></div>
+      <div style="font-size:.55rem;letter-spacing:.04em;text-transform:uppercase;color:${active?themeColor:"var(--muted)"};
+        white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%;text-align:center">
+        ${s.replace("series-","S").replace("pre-seed","pre")}
+      </div>
+    </div>`;
+  }).join(`<div style="flex:1;height:1px;background:var(--line);margin-bottom:13px;margin-top:4px"></div>`);
+
+  // Website
+  const websiteLink = st.website
+    ? `<a href="${escHtml(st.website)}" target="_blank" rel="noopener" style="color:var(--accent)">${escHtml(st.website.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, ""))}</a>`
+    : null;
+
+  // Investors
+  const investorsList = uniqueInvestors.length
+    ? uniqueInvestors.map(n => `<span class="iq-portfolio-chip" data-search="${escHtml(n)}">${escHtml(n)}</span>`).join("")
+    : `<span style="color:var(--muted);font-size:.75rem">Sin inversores registrados</span>`;
+
+  const logoTag = buildLogoTag({ name: st.name, website: st.website || "", type: "startup" });
+
+  entityDetailMain.innerHTML = `
+    <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:14px">
+      <div style="display:flex;align-items:center;gap:12px;min-width:0">
+        <div style="width:44px;height:44px;border-radius:3px;overflow:hidden;flex-shrink:0;display:flex;align-items:center;justify-content:center;background:var(--bg)">${logoTag.replace('class="iq-result-logo', 'class="iq-result-logo" style="width:44px;height:44px;font-size:.8rem')}</div>
+        <div style="min-width:0">
+          <div class="iq-entity-name" style="margin-bottom:4px">${escHtml(st.name)}</div>
+          <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap">
+            <span style="font-size:.65rem;letter-spacing:.06em;text-transform:uppercase;padding:2px 7px;border-radius:2px;font-weight:700;
+              background:${themeColor}18;color:${themeColor};border:1px solid ${themeColor}40">${escHtml(st.theme || "—")}</span>
+            ${st.country ? `<span style="font-size:.68rem;color:var(--muted)">${escHtml(st.country)}</span>` : ""}
+            ${st.founded ? `<span style="font-size:.68rem;color:var(--muted)">· ${escHtml(String(st.founded))}</span>` : ""}
+            ${websiteLink ? `<span style="font-size:.68rem">· ${websiteLink}</span>` : ""}
+          </div>
+        </div>
+      </div>
+      <button class="iq-saved-btn${isSaved(st.id) ? " saved" : ""}" style="flex-shrink:0" data-save-id="${escHtml(st.id)}" data-save-name="${escHtml(st.name)}" data-save-type="startup">${isSaved(st.id) ? "⭐ Guardado" : "☆ Guardar"}</button>
+    </div>
+
+    ${st.one_liner ? `<div class="iq-entity-oneliner">${escHtml(st.one_liner)}</div>` : ""}
+    ${st.summary   ? `<div class="iq-entity-summary" style="margin-top:10px">${escHtml(st.summary)}</div>` : ""}
+
+    <hr class="iq-entity-divider">
+    <div class="iq-entity-section-label">Etapa de desarrollo</div>
+    <div style="display:flex;align-items:flex-end;gap:0;margin:8px 0 4px">${stageDotsHtml}</div>
+
+    <hr class="iq-entity-divider">
+    <div class="iq-entity-section-label">Inversores (${uniqueInvestors.length})</div>
+    <div class="iq-portfolio-chips" style="margin-top:6px">${investorsList}</div>
+
+    <hr class="iq-entity-divider">
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:12px">
+      <div style="flex:1">
+        <div class="iq-entity-section-label" style="margin-bottom:4px">Calidad de datos</div>
+        <div class="iq-quality-bar">
+          <div class="iq-quality-track"><div class="iq-quality-fill" style="width:${qualityPct}%"></div></div>
+          <span style="font-size:.68rem;color:var(--muted);white-space:nowrap">${st.quality}/10</span>
+        </div>
+      </div>
+      <div style="flex-shrink:0">${provenanceChips(st)}</div>
+    </div>`;
+
+  // Wire save + investor chips
+  entityDetailMain.querySelectorAll(".iq-saved-btn[data-save-id]").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const entity = { id: btn.dataset.saveId, name: btn.dataset.saveName, type: "startup" };
+      toggleSaved(entity);
+      btn.textContent = isSaved(entity.id) ? "⭐ Guardado" : "☆ Guardar";
+      btn.classList.toggle("saved", isSaved(entity.id));
+    });
+  });
+  entityDetailMain.querySelectorAll(".iq-portfolio-chip[data-search]").forEach(el => {
+    el.addEventListener("click", () => {
+      searchInput.value = el.dataset.search;
+      localSearch(el.dataset.search);
+    });
+  });
+}
+
+// ── Portfolio sort state ──────────────────────────────────────────────────
+let _portSortKey = "quality";
+let _portSortDir = -1;
+
+const _STAGE_ORD = { "pre-seed":1, "seed":2, "series-a":3, "series-b":4,
+                     "series-c":5, "growth":6, "public":7 };
+
+function _renderPortfolioRows(inv, container) {
+  const portfolioIds = inv.portfolio_ids || [];
+  let rows = portfolioIds.map(pid => IQ_STARTUPS.find(s => s.id === pid)).filter(Boolean);
+  rows.sort((a, b) => {
+    let va, vb;
+    switch (_portSortKey) {
+      case "name":    va = a.name;              vb = b.name; break;
+      case "stage":   va = _STAGE_ORD[a.stage]||99; vb = _STAGE_ORD[b.stage]||99; break;
+      case "quality": va = a.quality||0;        vb = b.quality||0; break;
+      case "country": va = a.country||"";       vb = b.country||""; break;
+      case "theme":   va = a.theme||"";         vb = b.theme||""; break;
+      case "funded":  va = a.funded ? 1 : 0;   vb = b.funded ? 1 : 0; break;
+      default:        va = ""; vb = "";
+    }
+    const cmp = typeof va === "string" ? va.localeCompare(vb) : va - vb;
+    return _portSortDir * cmp || a.name.localeCompare(b.name);
+  });
+  container.innerHTML = rows.map(st => {
+    const col  = THEME_PAL[st.theme] || "#888";
+    const short = THEME_SHORT[st.theme] || (st.theme||"").split(" & ")[0];
+    const stage = (st.stage||"—").replace(/-/g," ");
+    const qv    = st.quality || 0;
+    const qcol  = qv >= 8 ? "var(--accent)" : qv >= 6 ? "var(--ink)" : "var(--muted)";
+    return `<div class="iq-portfolio-row" data-startup-id="${escHtml(st.id)}">
+      <div class="iq-portfolio-row-bar" style="background:${col}"></div>
+      <div class="iq-portfolio-row-name">${escHtml(st.name)}</div>
+      <div class="iq-portfolio-row-cell">${escHtml(stage)}</div>
+      <div class="iq-portfolio-row-cell" style="color:${qcol};font-weight:600">${qv||"—"}</div>
+      <div class="iq-portfolio-row-cell">${escHtml(st.country||"—")}</div>
+      <div class="iq-portfolio-row-cell" style="color:${col}">${escHtml(short)}</div>
+      <div class="iq-portfolio-row-cell">${st.funded ? "" : `<span class="iq-portfolio-row-badge">sin capital</span>`}</div>
+    </div>`;
+  }).join("");
+  container.querySelectorAll(".iq-portfolio-row").forEach(row =>
+    row.addEventListener("click", () => renderStartupDetail(row.dataset.startupId))
+  );
+  // Update sort indicators
+  const header = entityDetailMain.querySelector(".iq-portfolio-header");
+  if (header) header.querySelectorAll("[data-sort]").forEach(h => {
+    const active = h.dataset.sort === _portSortKey;
+    h.classList.toggle("active", active);
+    h.querySelector(".sort-ind").textContent = active ? (_portSortDir === 1 ? "▲" : "▼") : "·";
+  });
+}
+
+function _sortPortfolio(key, defDir = 1) {
+  if (_portSortKey === key) _portSortDir *= -1;
+  else { _portSortKey = key; _portSortDir = defDir; }
+  const container = document.getElementById("iq-portfolio-rows");
+  if (!container) return;
+  const invId = container.dataset.invId;
+  const inv = IQ_INVESTORS.find(i => i.id === invId);
+  if (inv) _renderPortfolioRows(inv, container);
+}
+
+function renderInvestorMain(id) {
+  const inv = IQ_INVESTORS.find(i => i.id === id);
+  if (!inv) return;
+
+  // ── Helpers ───────────────────────────────────────────────
+  function fmtM(v) {
+    if (!v) return null;
+    if (v >= 1000) return `$${(v/1000).toFixed(1)}B`;
+    return `$${v}M`;
+  }
+  function fmtTicket(v) {
+    if (!v) return null;
+    if (v >= 1e6) return `$${(v/1e6).toFixed(v%1e6===0?0:1)}M`;
+    if (v >= 1e3) return `$${Math.round(v/1e3)}K`;
+    return `$${v}`;
+  }
+
+  const bioRatioPct = Math.round((inv.bio_ratio || 0) * 100);
+  const preferredStages = (inv.preferred_stages || "").split(";").map(s => s.trim()).filter(Boolean);
+  const geoFocusArr = (inv.geo_focus || "").split(";").map(s => s.trim()).filter(Boolean);
+  const logoTag = buildLogoTag({ name: inv.name, website: inv.website || "", type: "investor" });
+  const websiteDisplay = inv.website
+    ? `<a href="${escHtml(inv.website)}" target="_blank" rel="noopener" style="color:var(--accent)">${escHtml(inv.website.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, ""))}</a>`
+    : null;
+
+  // ── itype label ───────────────────────────────────────────
+  const ITYPE_LABELS = {
+    vc: "Venture Capital", cvc: "Corporate VC", company_builder: "Company Builder",
+    accelerator: "Aceleradora", family_office: "Family Office",
+    impact_fund: "Impact Fund", government: "Gobierno", angel: "Ángel"
+  };
+  const itypeLabel = ITYPE_LABELS[inv.itype] || inv.itype || "Fondo";
+
+  // ── Stage dots ────────────────────────────────────────────
+  const STAGES = ["pre-seed","seed","series-a","series-b","growth"];
+  const stageDotsHtml = STAGES.map(s => {
+    const active = preferredStages.includes(s);
+    return `<div style="display:flex;flex-direction:column;align-items:center;gap:3px;flex:1">
+      <div style="width:${active?10:7}px;height:${active?10:7}px;border-radius:50%;
+        background:${active?"var(--accent)":"var(--line)"};
+        outline:${active?"2px solid rgba(11,143,135,.25)":"none"};outline-offset:2px"></div>
+      <div style="font-size:.55rem;letter-spacing:.04em;text-transform:uppercase;
+        color:${active?"var(--accent)":"var(--muted)"};font-weight:${active?700:400}">
+        ${s.replace("series-","S").replace("pre-seed","pre")}
+      </div>
+    </div>`;
+  }).join(`<div style="flex:1;height:1px;background:var(--line);margin-bottom:13px;margin-top:4px"></div>`);
+
+  // ── Ticket range bar (log scale $10K–$10M) ───────────────
+  let ticketBarHtml = "";
+  if (inv.ticket_min || inv.ticket_max) {
+    const LOG_MIN = Math.log10(10000), LOG_MAX = Math.log10(10000000);
+    const toPos = v => Math.max(0, Math.min(100, ((Math.log10(v) - LOG_MIN) / (LOG_MAX - LOG_MIN)) * 100));
+    const minPos = inv.ticket_min ? toPos(inv.ticket_min) : 0;
+    const maxPos = inv.ticket_max ? toPos(inv.ticket_max) : 100;
+    ticketBarHtml = `
+      <div style="margin-top:6px">
+        <div style="display:flex;justify-content:space-between;font-size:.6rem;color:var(--muted);margin-bottom:3px">
+          <span>$10K</span><span>$100K</span><span>$1M</span><span>$10M</span>
+        </div>
+        <div style="position:relative;height:4px;background:var(--line);border-radius:2px">
+          <div style="position:absolute;left:${minPos}%;right:${100-maxPos}%;height:100%;background:var(--accent);border-radius:2px;opacity:.8"></div>
+        </div>
+        <div style="display:flex;justify-content:space-between;font-size:.68rem;color:var(--ink);margin-top:4px;font-weight:600">
+          <span>${fmtTicket(inv.ticket_min) || "—"}</span>
+          <span style="color:var(--muted);font-weight:400;font-size:.6rem">ticket ${inv.lead_behavior === "lead" ? "· lidera rondas" : inv.lead_behavior === "follow" ? "· co-invierte" : ""}</span>
+          <span>${fmtTicket(inv.ticket_max) || "—"}</span>
+        </div>
+      </div>`;
+  }
+
+  // ── Theme coverage chips ──────────────────────────────────
+  const coveredThemes = new Set(inv.themes || []);
+  const ALL_THEMES_ORDER = Object.keys(THEME_PAL);
+  const themeCoverageHtml = ALL_THEMES_ORDER.map(t => {
+    const covered = coveredThemes.has(t);
+    const col = THEME_PAL[t];
+    const short = THEME_SHORT[t] || t.split(" & ")[0];
+    return `<span style="font-size:.6rem;padding:2px 6px;border-radius:2px;
+      background:${covered ? col+"20" : "transparent"};
+      color:${covered ? col : "var(--muted)"};
+      border:1px solid ${covered ? col+"50" : "var(--line)"};
+      font-weight:${covered?700:400};white-space:nowrap">${escHtml(short)}</span>`;
+  }).join("");
+
+  // ── Gap by theme mini-bars ────────────────────────────────
+  const gapByTheme = {};
+  (inv.gap || []).forEach(g => {
+    if (!gapByTheme[g.theme]) gapByTheme[g.theme] = { count: 0, unfunded: 0 };
+    gapByTheme[g.theme].count++;
+    if (!g.funded) gapByTheme[g.theme].unfunded++;
+  });
+  const gapSorted = Object.entries(gapByTheme).sort((a,b) => b[1].count - a[1].count);
+  const maxGap = gapSorted[0]?.[1]?.count || 1;
+  const gapBarsHtml = gapSorted.map(([theme, d]) => {
+    const col = THEME_PAL[theme] || "#888";
+    const pct = Math.round((d.count / maxGap) * 100);
+    const short = THEME_SHORT[theme] || theme.split(" & ")[0];
+    return `<div style="display:flex;align-items:center;gap:8px;margin-bottom:5px">
+      <div style="width:110px;font-size:.6rem;color:var(--muted);text-align:right;flex-shrink:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${escHtml(short)}</div>
+      <div style="flex:1;height:5px;background:var(--line);border-radius:2px;position:relative">
+        <div style="position:absolute;left:0;top:0;height:100%;width:${pct}%;background:${col};border-radius:2px;opacity:.85"></div>
+      </div>
+      <div style="width:28px;font-size:.63rem;color:var(--ink);font-weight:600;text-align:right">${d.count}</div>
+      ${d.unfunded > 0 ? `<div style="font-size:.58rem;color:var(--muted)">(${d.unfunded} libre${d.unfunded>1?"s":""})</div>` : ""}
+    </div>`;
+  }).join("");
+
+  // ── Portfolio sortable table ──────────────────────────────
+  const portfolioIds = inv.portfolio_ids || [];
+  const portfolioStartups = portfolioIds
+    .map(pid => IQ_STARTUPS.find(s => s.id === pid))
+    .filter(Boolean);
+
+  const COLS = [
+    { key:"name",    label:"Nombre",   dir: 1  },
+    { key:"stage",   label:"Etapa",    dir: 1  },
+    { key:"quality", label:"Cal.",     dir:-1  },
+    { key:"country", label:"País",     dir: 1  },
+    { key:"theme",   label:"Vertical", dir: 1  },
+    { key:"funded",  label:"Capital",  dir: 1  },
+  ];
+  const headerCells = COLS.map(c => {
+    const active = _portSortKey === c.key;
+    const ind = active ? (_portSortDir === 1 ? "▲" : "▼") : "·";
+    return `<div data-sort="${c.key}" data-def-dir="${c.dir}" class="${active?"active":""}">${c.label} <span class="sort-ind">${ind}</span></div>`;
+  }).join("");
+
+  const portfolioHtml = portfolioStartups.length ? `
+    <hr class="iq-entity-divider">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px">
+      <div class="iq-entity-section-label" style="margin-bottom:0">Portfolio mapeado</div>
+      <span style="font-size:.62rem;color:var(--muted)">${portfolioStartups.length} startups</span>
+    </div>
+    <div class="iq-portfolio-header">
+      <div></div>
+      ${headerCells}
+    </div>
+    <div id="iq-portfolio-rows" data-inv-id="${escHtml(inv.id)}"></div>` : "";
+
+  // ── Profile blurb (first paragraph only) ─────────────────
+  const blurbFirst = (inv.profile_blurb || "").split("\n\n")[0] || "";
+  // Cut at sentence boundary (period + space) within 500 chars, otherwise word boundary
+  let blurbTrunc = blurbFirst;
+  if (blurbFirst.length > 480) {
+    const sentEnd = blurbFirst.slice(0, 480).lastIndexOf(". ");
+    blurbTrunc = sentEnd > 120
+      ? blurbFirst.slice(0, sentEnd + 1)
+      : blurbFirst.slice(0, blurbFirst.slice(0, 480).lastIndexOf(" ")) + "…";
+  }
+
+  entityDetailMain.innerHTML = `
+    <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:14px">
+      <div style="display:flex;align-items:center;gap:12px;min-width:0">
+        <div style="width:44px;height:44px;border-radius:3px;overflow:hidden;flex-shrink:0;display:flex;align-items:center;justify-content:center;background:var(--bg)">${logoTag.replace('class="iq-result-logo', 'class="iq-result-logo" style="width:44px;height:44px;font-size:.8rem')}</div>
+        <div style="min-width:0">
+          <div class="iq-entity-name" style="margin-bottom:4px">${escHtml(inv.name)}</div>
+          <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap">
+            <span style="font-size:.65rem;letter-spacing:.06em;text-transform:uppercase;padding:2px 7px;border-radius:2px;font-weight:700;background:rgba(11,143,135,.1);color:var(--accent);border:1px solid rgba(11,143,135,.25)">${escHtml(itypeLabel)}</span>
+            ${inv.country ? `<span style="font-size:.68rem;color:var(--muted)">${escHtml(inv.country)}</span>` : ""}
+            ${inv.aum_usd_m ? `<span style="font-size:.68rem;color:var(--muted)">· ${fmtM(inv.aum_usd_m)} AUM</span>` : ""}
+            ${websiteDisplay ? `<span style="font-size:.68rem">· ${websiteDisplay}</span>` : ""}
+          </div>
+        </div>
+      </div>
+      <button class="iq-saved-btn${isSaved(inv.id) ? " saved" : ""}" style="flex-shrink:0" data-save-id="${escHtml(inv.id)}" data-save-name="${escHtml(inv.name)}" data-save-type="investor">${isSaved(inv.id) ? "⭐ Guardado" : "☆ Guardar"}</button>
+    </div>
+
+    ${blurbTrunc ? `<div class="iq-entity-oneliner" style="font-style:normal">${escHtml(blurbTrunc)}</div>` : inv.thesis ? `<div class="iq-entity-oneliner" style="font-style:normal">${escHtml(inv.thesis)}</div>` : ""}
+
+    <hr class="iq-entity-divider">
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:10px">
+      <div class="iq-entity-stat">
+        <div class="iq-entity-stat-val">${inv.portfolio_size || "—"}</div>
+        <div class="iq-entity-stat-lbl">Portafolio</div>
+      </div>
+      ${inv.aum_usd_m ? `<div class="iq-entity-stat"><div class="iq-entity-stat-val">${fmtM(inv.aum_usd_m)}</div><div class="iq-entity-stat-lbl">AUM</div></div>` : ""}
+      ${(inv.gap||[]).length > 0 ? `<div class="iq-entity-stat"><div class="iq-entity-stat-val" style="color:var(--accent)">${inv.gap.length}</div><div class="iq-entity-stat-lbl">Oportunidades</div></div>` : ""}
+    </div>
+
+    ${ticketBarHtml}
+
+    <hr class="iq-entity-divider">
+    <div class="iq-entity-section-label">Etapas preferidas</div>
+    <div style="display:flex;align-items:flex-end;gap:0;margin:8px 0 4px">${stageDotsHtml}</div>
+
+    ${bioRatioPct > 0 ? `
+    <hr class="iq-entity-divider">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:5px">
+      <div class="iq-entity-section-label" style="margin-bottom:0">Intensidad BIO del portafolio</div>
+      <span style="font-size:.75rem;font-weight:700;color:${bioRatioPct>=60?"var(--accent)":bioRatioPct>=30?"#8B6D14":"var(--muted)"}">${bioRatioPct}%</span>
+    </div>
+    <div class="iq-bio-bar-track" style="height:6px"><div class="iq-bio-bar-fill" style="width:${bioRatioPct}%;height:6px"></div></div>` : ""}
+
+    <hr class="iq-entity-divider">
+    <div class="iq-entity-section-label" style="margin-bottom:6px">Cobertura de verticales</div>
+    <div style="display:flex;flex-wrap:wrap;gap:4px">${themeCoverageHtml}</div>
+    <div style="font-size:.62rem;color:var(--muted);margin-top:4px">${geoFocusArr.join(" · ") || ""}</div>
+
+    ${gapBarsHtml ? `
+    <hr class="iq-entity-divider">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px">
+      <div class="iq-entity-section-label" style="margin-bottom:0">Oportunidades sin mapear</div>
+      <span style="font-size:.62rem;color:var(--muted)">${(inv.gap||[]).length} startups</span>
+    </div>
+    ${gapBarsHtml}` : ""}
+
+    ${portfolioHtml}`;
+
+  // ── Portfolio: fill rows + wire sort headers ──────────────────────────
+  const _portRowsEl = entityDetailMain.querySelector("#iq-portfolio-rows");
+  if (_portRowsEl) {
+    _renderPortfolioRows(inv, _portRowsEl);
+    entityDetailMain.querySelectorAll(".iq-portfolio-header [data-sort]").forEach(btn => {
+      btn.addEventListener("click", () => _sortPortfolio(btn.dataset.sort, Number(btn.dataset.defDir)));
+    });
+  }
+
+  entityDetailMain.querySelectorAll(".iq-saved-btn[data-save-id]").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const entity = { id: btn.dataset.saveId, name: btn.dataset.saveName, type: "investor" };
+      toggleSaved(entity);
+      btn.textContent = isSaved(entity.id) ? "⭐ Guardado" : "☆ Guardar";
+      btn.classList.toggle("saved", isSaved(entity.id));
+    });
+  });
+}
+
+// ── Relational content (slide-in, Descubrir mode) ─────────────────────────
+function _activarVinculo(entityA, entityB) {
+  switchMode("intro");
+  introEntityA = entityA;
+  introEntityB = entityB;
+  renderSlot("a", introEntityA);
+  renderSlot("b", introEntityB);
+  introFocused = null;
+  updateGenerateBtn();
+  showIntroMode();
+}
+
+function _activarBtn(dataAttrs) {
+  const attrs = Object.entries(dataAttrs).map(([k,v]) => `data-${k}="${escHtml(v)}"`).join(" ");
+  return `<button class="iq-activar-inline" ${attrs}>Activar vínculo →</button>`;
+}
+
+function renderStartupRelational(id) {
+  const st = IQ_STARTUPS.find(s => s.id === id);
+  if (!st) { detailPanel.innerHTML = ""; return; }
+  const stIdx = IQ_STARTUPS.indexOf(st);
+  const similar = stIdx >= 0 ? localVectorSearch(stIdx) : [];
+
+  const potentialInvestors = [];
+  IQ_INVESTORS.forEach(inv => {
+    const match = (inv.gap || []).find(g => g.id === id);
+    if (match) potentialInvestors.push({ ...inv, gap_score: match.score, gap_reasons: match.reasons });
+  });
+  potentialInvestors.sort((a, b) => b.gap_score - a.gap_score);
+
+  const potentialHtml = potentialInvestors.slice(0, 8).map(inv => `
+    <div class="iq-latent-card" data-investor-id="${escHtml(inv.id)}">
+      <div class="iq-latent-card-name">${escHtml(inv.name)}</div>
+      <div class="iq-latent-card-sub">${escHtml(inv.country)} · ${escHtml(inv.itype || "")} · ${inv.portfolio_size} portfolio</div>
+      <div class="iq-latent-card-score">${bandTag(inv.gap_score, "Encaje")} ${eligibilityChip(inv.gap_reasons)}</div>
+      ${_activarBtn({ "startup-id": st.id, "investor-id": inv.id })}
+    </div>`).join("");
+
+  const similarHtml = similar.slice(0, 5).map(s => `
+    <div class="iq-latent-card" data-startup-id="${escHtml(s.id)}">
+      <div class="iq-latent-card-name">${escHtml(s.name)}</div>
+      <div class="iq-latent-card-sub">${escHtml(s.country)} · ${escHtml((s.focus || "").slice(0, 36))}</div>
+      <div class="iq-latent-card-score">${bandTag(s.score, "Similitud")}</div>
+    </div>`).join("");
+
+  const latentBlock = potentialInvestors.length > 0 ? `
+    <div style="background:rgba(11,92,88,.09);border:1px solid rgba(11,92,88,.2);border-radius:3px;padding:10px 12px;margin-bottom:12px">
+      <div style="font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:3px">Conexión latente detectada</div>
+      <div style="font-size:.72rem;color:var(--ink)">${potentialInvestors.length} inversor${potentialInvestors.length>1?"es":""} con encaje temático sin inversión registrada.</div>
+    </div>` : "";
+
+  detailPanel.innerHTML = `
+    ${latentBlock}
+    ${potentialInvestors.length ? `
+      <div class="iq-section-title">Potencial latente (${Math.min(potentialInvestors.length,8)} de ${potentialInvestors.length})</div>
+      <div class="iq-latent-grid">${potentialHtml}</div>` : ""}
+    ${similar.length ? `
+      <div class="iq-section-title" style="margin-top:14px">Startups similares</div>
+      <div class="iq-latent-grid">${similarHtml}</div>` : ""}
+    ${!potentialInvestors.length && !similar.length ? `<div style="padding:20px 0;text-align:center;color:var(--muted);font-size:.75rem">Sin conexiones calculadas para esta entidad.</div>` : ""}`;
+
+  // Wire card clicks (navigate)
+  detailPanel.querySelectorAll(".iq-latent-card[data-investor-id]").forEach(el => {
+    el.addEventListener("click", e => {
+      if (e.target.closest(".iq-activar-inline")) return;
+      showDetail(IQ_INVESTORS.find(i => i.id === el.dataset.investorId) || { id: el.dataset.investorId, type: "investor" });
+    });
+  });
+  detailPanel.querySelectorAll(".iq-latent-card[data-startup-id]").forEach(el => {
+    el.addEventListener("click", e => {
+      if (e.target.closest(".iq-activar-inline")) return;
+      const s = IQ_STARTUPS.find(x => x.id === el.dataset.startupId);
+      if (s) showDetail({ id: s.id, name: s.name, type: "startup", country: s.country, focus: s.theme, detail: s.one_liner });
+    });
+  });
+  // Wire "Activar vínculo" buttons (startup × investor pair)
+  detailPanel.querySelectorAll(".iq-activar-inline[data-startup-id][data-investor-id]").forEach(btn => {
+    btn.addEventListener("click", e => {
+      e.stopPropagation();
+      const inv = IQ_INVESTORS.find(i => i.id === btn.dataset.investorId);
+      if (!inv) return;
+      _activarVinculo(
+        { id: st.id, name: st.name, type: "startup", country: st.country, focus: st.theme, detail: st.one_liner },
+        { id: inv.id, name: inv.name, type: "investor", country: inv.country, focus: inv.itype, detail: inv.profile_blurb }
+      );
+    });
+  });
+}
+
+function renderInvestorRelational(id) {
+  const inv = IQ_INVESTORS.find(i => i.id === id);
+  if (!inv) { detailPanel.innerHTML = ""; return; }
+
+  const gapHtml = (inv.gap || []).slice(0, 12).map(g => `
+    <div class="iq-latent-card" data-startup-id="${escHtml(g.id)}">
+      <div class="iq-latent-card-name">${escHtml(g.name)}</div>
+      <div class="iq-latent-card-sub">${escHtml(g.country)} · ${escHtml(THEME_SHORT[g.theme] || (g.theme||"").split(" & ")[0])}</div>
+      <div class="iq-latent-card-score">${bandTag(g.score, "Encaje")} ${eligibilityChip(g.reasons)}${g.funded ? ' <span style="color:var(--muted);font-weight:600">· con capital</span>' : ""}</div>
+      ${_activarBtn({ "startup-id": g.id, "investor-id": inv.id })}
+    </div>`).join("");
+
+  const latentBlock = (inv.gap || []).length > 0 ? `
+    <div style="background:rgba(11,92,88,.09);border:1px solid rgba(11,92,88,.2);border-radius:3px;padding:10px 12px;margin-bottom:12px">
+      <div style="font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:3px">Potencial latente</div>
+      <div style="font-size:.72rem;color:var(--ink)">${inv.gap.length} startup${inv.gap.length>1?"s":""} con encaje temático sin inversión registrada.</div>
+    </div>` : "";
+
+  detailPanel.innerHTML = `
+    ${latentBlock}
+    ${(inv.gap || []).length ? `
+      <div class="iq-section-title">Startups con mayor fit (${inv.gap.length} total)</div>
+      <div class="iq-latent-grid">${gapHtml}</div>` : `
+      <div style="padding:20px 0;text-align:center;color:var(--muted);font-size:.75rem">Sin gaps identificados.</div>`}`;
+
+  detailPanel.querySelectorAll(".iq-latent-card[data-startup-id]").forEach(el => {
+    el.addEventListener("click", e => {
+      if (e.target.closest(".iq-activar-inline")) return;
+      const s = IQ_STARTUPS.find(x => x.id === el.dataset.startupId);
+      if (s) showDetail({ id: s.id, name: s.name, type: "startup", country: s.country, focus: s.theme, detail: s.one_liner });
+    });
+  });
+  detailPanel.querySelectorAll(".iq-activar-inline[data-startup-id][data-investor-id]").forEach(btn => {
+    btn.addEventListener("click", e => {
+      e.stopPropagation();
+      const s = IQ_STARTUPS.find(x => x.id === btn.dataset.startupId);
+      if (!s) return;
+      _activarVinculo(
+        { id: s.id, name: s.name, type: "startup", country: s.country, focus: s.theme, detail: s.one_liner },
+        { id: inv.id, name: inv.name, type: "investor", country: inv.country, focus: inv.itype, detail: inv.profile_blurb }
+      );
+    });
+  });
 }
 
 function renderStartupDetail(id) {
@@ -1549,7 +3002,7 @@ function renderInvestorDetail(id) {
   const gapHtml = (inv.gap || []).slice(0, 12).map(g => `
     <div class="iq-latent-card" data-startup-id="${escHtml(g.id)}">
       <div class="iq-latent-card-name">${escHtml(g.name)}</div>
-      <div class="iq-latent-card-sub">${escHtml(g.country)} · ${escHtml((g.theme || "").slice(0, 40))}</div>
+      <div class="iq-latent-card-sub">${escHtml(g.country)} · ${escHtml(THEME_SHORT[g.theme] || (g.theme||"").split(" & ")[0])}</div>
       <div class="iq-latent-card-score">${bandTag(g.score, "Encaje")} ${eligibilityChip(g.reasons)}${g.funded ? ' <span style="color:var(--muted);font-weight:600">· con capital</span>' : ""}</div>
     </div>`).join("");
 
@@ -1746,8 +3199,10 @@ let introEntityB = null;
 let introFocused = "a"; // "a" | "b"
 
 function showIntroMode() {
-  welcomePanel.style.display  = "none";
-  detailPanel.style.display   = "none";
+  welcomePanel.style.display      = "none";
+  entityDetailMain.style.display  = "none";
+  healthPanel.style.display       = "none";
+  closeDetailPanel();
   introPanel.style.display    = "block";
   introHint.style.display     = "block";
   updateSlotFocus();
@@ -1847,21 +3302,76 @@ document.addEventListener("keydown", e => {
   }
 });
 
+function buildDummyBrief(entityA, entityB) {
+  const st   = entityA.type === "startup"  ? IQ_STARTUPS.find(x => x.id === entityA.id)  : IQ_STARTUPS.find(x => x.id === entityB.id);
+  const inv  = entityA.type === "investor" ? IQ_INVESTORS.find(x => x.id === entityA.id) : IQ_INVESTORS.find(x => x.id === entityB.id);
+  const stEnt  = entityA.type === "startup" ? entityA : entityB;
+  const invEnt = entityA.type === "investor" ? entityA : entityB;
+
+  const stName  = st  ? st.name  : stEnt.name;
+  const invName = inv ? inv.name : invEnt.name;
+  const stFocus = st  ? (st.theme || st.focus || "") : (stEnt.focus || "");
+  const stCountry = st ? st.country : stEnt.country;
+  const stStage   = st ? st.stage  : "";
+  const stOneliner = st ? (st.one_liner || "") : "";
+  const invCountry = inv ? inv.country : invEnt.country;
+  const invThesis  = inv ? (inv.thesis || inv.profile_blurb || "") : "";
+  const invStages  = inv ? (inv.preferred_stages || "") : "";
+  const bioRatio   = inv ? Math.round((inv.bio_ratio || 0) * 100) : "—";
+
+  const pairType = (entityA.type === "startup" && entityB.type === "investor") ||
+                   (entityA.type === "investor" && entityB.type === "startup")
+    ? "startup_investor" : "generic";
+
+  const synergyScore = 0.72 + Math.random() * 0.15;
+
+  const talkingPoints = [
+    `${stName} opera en ${stFocus} desde ${stCountry} — vertical con alta densidad de deals en el portfolio de ${invName}.`,
+    invStages ? `${invName} invierte en ${invStages}; ${stName} está en etapa ${stStage}, dentro de esa ventana.` : `Alineación de etapa ${stStage} con el perfil histórico de ${invName}.`,
+    stOneliner ? `Propuesta de valor diferenciada: "${stOneliner}"` : `Enfoque técnico diferenciado en ${stFocus}.`,
+    `${bioRatio}% del portfolio de ${invName} es bio-intensivo — ${stName} refuerza esa tesis sin solaparse con inversiones existentes.`,
+    invThesis ? `Tesis declarada de ${invName}: "${invThesis.slice(0, 120)}${invThesis.length > 120 ? "…" : ""}"` : null,
+  ].filter(Boolean);
+
+  const emailSubject = `Presentación: ${stName} × ${invName} — BIO LATAM`;
+  const emailBody = `Hola,
+
+Te escribo desde el ecosistema BIO LATAM para presentarte a ${stName}, una startup de ${stCountry} trabajando en ${stFocus}.
+
+${stOneliner ? `En sus propias palabras: "${stOneliner}"\n\n` : ""}Creemos que hay una alineación real entre la tesis de ${invName} y lo que están construyendo. ${bioRatio !== "—" ? `El ${bioRatio}% de tu portfolio es bio-intensivo — ${stName} cae directo en esa línea.` : ""}
+
+¿Tiene sentido coordinar una llamada de 20 minutos para explorar si hay fit?
+
+Saludos,
+Equipo BIO LATAM`;
+
+  return {
+    entity_a: { id: stEnt.id, name: stName, entity_type: "startup", country: stCountry, theme: stFocus, one_liner: stOneliner },
+    entity_b: { id: invEnt.id, name: invName, entity_type: "investor", country: invCountry, thesis: invThesis },
+    pair_type: pairType,
+    synergy_score: synergyScore,
+    synergy_rationale: `${stName} trabaja en ${stFocus}, una vertical con presencia creciente en el ecosistema BIO LATAM. ${invName} tiene historial de deals en ese espacio${invStages ? ` y opera en etapas ${invStages}` : ""}. La conexión no está registrada — es potencial latente puro.`,
+    talking_points: talkingPoints,
+    suggested_ask: `Proponer una llamada exploratoria de 20 min para validar fit antes de avanzar con materiales formales.`,
+    context_signals: [
+      `${stFocus} · ${stCountry}`,
+      stStage ? `Etapa ${stStage}` : null,
+      `Bio ratio ${invName}: ${bioRatio}%`,
+    ].filter(Boolean),
+    data_quality_notes: ["Brief generado localmente — sin LLM. Activar servidor para versión completa."],
+    email_subject: emailSubject,
+    email_body: emailBody,
+    generated_at: new Date().toISOString(),
+  };
+}
+
 async function generateBrief() {
   if (!introEntityA || !introEntityB) return;
   briefResult.innerHTML = '<div class="iq-brief-loading">Generando brief… ⌛</div>';
   introPicker.scrollIntoView({ behavior: "smooth" });
 
   if (!apiAvailable) {
-    briefResult.innerHTML = `
-      <div class="iq-brief-server-warn">
-        <strong>⚠ Servidor no disponible</strong><br>
-        Para generar briefs se necesita <code>node pilot/server.js</code> corriendo.<br><br>
-        Desde la terminal del proyecto:<br>
-        <code>node pilot/server.js</code><br><br>
-        O usar el CLI directamente:<br>
-        <code>python pipeline.py intro ${escHtml(introEntityA.id)} ${escHtml(introEntityB.id)}</code>
-      </div>`;
+    renderBriefPanel(buildDummyBrief(introEntityA, introEntityB));
     return;
   }
 
@@ -2072,22 +3582,32 @@ function setRole(roleId) {
   applyRole();
 }
 
+// ── switchMode: activate a sub-mode (search/latent/funded/intro/health) ───
+// Updates eco tabs + list sub-tabs consistently.
+function switchMode(mode) {
+  currentMode = mode;
+  // Sync list sub-tabs (for sub-modes within Descubrir)
+  document.querySelectorAll(".iq-list-subtab").forEach(t => {
+    t.classList.toggle("active", t.dataset.submode === mode);
+  });
+  // Sync eco tab
+  const ecoMode = (mode === "health") ? "conectar" : (mode === "intro") ? "activar" : "descubrir";
+  currentEcoMode = ecoMode;
+  document.querySelectorAll(".iq-eco-tab").forEach(t => {
+    t.classList.toggle("active", t.dataset.ecomode === ecoMode);
+  });
+  const listSubtabs = document.getElementById("listSubtabs");
+  if (listSubtabs) listSubtabs.style.display = ecoMode === "descubrir" ? "flex" : "none";
+  if (mode !== "intro") { introPanel.style.display = "none"; introHint.style.display = "none"; }
+  if (mode !== "health") { healthPanel.style.display = "none"; }
+}
+
 function applyRole() {
   const role = getCurrentRole();
   document.getElementById("roleBtnLabel").textContent = role.name;
-
-  // Show/hide tabs based on role
-  document.querySelectorAll(".iq-tab").forEach(tab => {
-    const mode = tab.dataset.mode;
-    tab.style.display = role.tabs.includes(mode) ? "" : "none";
-  });
-
-  // If current mode not in role, switch to default
+  // With new 3-tab structure, roles just set the default mode
   if (!role.tabs.includes(currentMode)) {
-    currentMode = role.defaultMode;
-    document.querySelectorAll(".iq-tab").forEach(t => t.classList.remove("active"));
-    const defaultTab = document.querySelector(`.iq-tab[data-mode="${currentMode}"]`);
-    if (defaultTab) defaultTab.classList.add("active");
+    switchMode(role.defaultMode);
   }
 }
 
@@ -2220,63 +3740,193 @@ function _renderSavedBriefsSection() {
   });
 }
 
-// ── Welcome state improvements ────────────────────────────────────────────
+// ── Welcome ───────────────────────────────────────────────────────────────
 
 function showWelcome() {
-  welcomePanel.style.display  = "block";
-  detailPanel.style.display   = "none";
-  introPanel.style.display    = "none";
-  healthPanel.style.display   = "none";
+  // Hide sidebar so welcome panel can use full width
+  const sidebar = document.querySelector(".iq-sidebar");
+  if (sidebar) sidebar.style.display = "none";
+  welcomePanel.style.display = "flex";
+  welcomePanel.style.flexDirection = "column";
+  resultsList.style.display  = "none";
+  introPanel.style.display   = "none";
+  healthPanel.style.display  = "none";
+  entityDetailMain.style.display = "none";
+  closeDetailPanel();
+  renderWelcome();
+}
 
-  const hist = getQueryHistory();
-  const saved = getSaved();
+function renderWelcome() {
+  // ── Stats ─────────────────────────────────────────────────────────────
+  const totalSt   = IQ_STARTUPS.length;
+  const totalInv  = IQ_INVESTORS.length;
+  const funded    = IQ_STARTUPS.filter(s => s.funded).length;
+  const fundedPct = Math.round(funded / totalSt * 100);
+  const topQuality = IQ_STARTUPS.filter(s => !s.funded && s.quality >= 8).length;
 
-  // Replace example queries with history pills if available
-  const examplesEl = document.getElementById("exampleQueries");
-  if (hist.length > 0) {
-    examplesEl.innerHTML = `
-      <div style="font-size:.67rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:4px">Búsquedas recientes</div>
-      <div class="iq-history-pills">
-        ${hist.slice(0, 5).map(h => `<div class="iq-history-pill" data-q="${escHtml(h)}">🕐 ${escHtml(h)}</div>`).join("")}
-      </div>`;
-    examplesEl.querySelectorAll(".iq-history-pill").forEach(el => {
-      el.addEventListener("click", () => {
-        searchInput.value = el.dataset.q;
-        triggerSearch(true);
-      });
+  // ── Theme counts ──────────────────────────────────────────────────────
+  const themeCounts = {};
+  IQ_STARTUPS.forEach(s => { if (s.theme) themeCounts[s.theme] = (themeCounts[s.theme]||0)+1; });
+  const themesSorted = Object.keys(THEME_PAL).map(t => ({ t, n: themeCounts[t]||0 }))
+    .sort((a,b) => b.n - a.n);
+  const maxTheme = themesSorted[0]?.n || 1;
+
+  // ── Top opportunities (latent: unfunded, high quality, high score) ────
+  const opps = [];
+  IQ_INVESTORS.forEach(inv => {
+    (inv.gap || []).forEach(g => {
+      const st = IQ_STARTUPS.find(s => s.id === g.id);
+      if (st && !st.funded && st.quality >= 7.5) {
+        opps.push({ inv, st, score: g.score });
+      }
     });
+  });
+  opps.sort((a,b) => b.score - a.score);
+  // Deduplicate: at most 1 per startup and 1 per investor
+  const seenInv = new Set(), seenSt = new Set();
+  const topOpps = [];
+  for (const o of opps) {
+    if (seenInv.has(o.inv.id) || seenSt.has(o.st.id)) continue;
+    seenInv.add(o.inv.id); seenSt.add(o.st.id);
+    topOpps.push(o);
+    if (topOpps.length >= 3) break;
   }
 
-  // Show saved entities if any
-  if (saved.length > 0) {
-    let savedSection = document.getElementById("welcomeSavedSection");
-    if (!savedSection) {
-      savedSection = document.createElement("div");
-      savedSection.id = "welcomeSavedSection";
-      welcomePanel.appendChild(savedSection);
-    }
-    savedSection.innerHTML = `
-      <div class="iq-saved-section">
-        <div class="iq-section-title">Guardados (${saved.length})</div>
-        <div class="iq-portfolio-chips">
-          ${saved.slice(0, 10).map(e => `
-            <span class="iq-portfolio-chip" data-id="${escHtml(e.id)}" data-type="${escHtml(e.type || "startup")}">
-              ⭐ ${escHtml(e.name)}
-            </span>`).join("")}
-        </div>
-      </div>`;
-    savedSection.querySelectorAll(".iq-portfolio-chip[data-id]").forEach(el => {
-      el.addEventListener("click", () => {
-        const id = el.dataset.id;
-        const type = el.dataset.type || "startup";
+  // ── Theme bars HTML ───────────────────────────────────────────────────
+  const themeBarsHtml = themesSorted.map(({ t, n }) => {
+    const col = THEME_PAL[t] || "#888";
+    const pct = Math.round((n / maxTheme) * 100);
+    const short = THEME_SHORT[t] || t;
+    return `<div class="iq-welcome-theme-row" data-theme="${escHtml(t)}">
+      <div class="iq-welcome-theme-dot" style="background:${col}"></div>
+      <div class="iq-welcome-theme-name">${escHtml(short)}</div>
+      <div class="iq-welcome-theme-bar-wrap">
+        <div class="iq-welcome-theme-bar" style="width:${pct}%;background:${col}"></div>
+      </div>
+      <div class="iq-welcome-theme-count">${n}</div>
+    </div>`;
+  }).join("");
+
+  // ── Opportunity cards HTML ────────────────────────────────────────────
+  const oppCardsHtml = topOpps.map(({ inv, st, score }) => {
+    const col = THEME_PAL[st.theme] || "#888";
+    const scorePct = Math.round(score * 100);
+    const short = THEME_SHORT[st.theme] || (st.theme||"").split(" & ")[0];
+    return `<div class="iq-opp-card">
+      <div style="display:flex;align-items:baseline;gap:6px;flex-wrap:wrap;margin-bottom:3px">
+        <span class="iq-opp-startup">${escHtml(st.name)}</span>
+        <span style="font-size:.62rem;color:var(--muted)">${escHtml(st.country||"")}</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:6px;margin-bottom:6px">
+        <span class="iq-opp-theme-chip" style="background:${col}18;color:${col};border:1px solid ${col}40">${escHtml(short)}</span>
+        <span style="font-size:.6rem;color:var(--muted)">${scorePct}% encaje · sin capital</span>
+      </div>
+      <div style="font-size:.63rem;color:var(--muted);margin-bottom:8px">
+        → <strong style="color:var(--ink)">${escHtml(inv.name)}</strong>
+      </div>
+      <button class="iq-opp-activate"
+        data-startup-id="${escHtml(st.id)}" data-investor-id="${escHtml(inv.id)}">
+        Activar vínculo →
+      </button>
+    </div>`;
+  }).join("");
+
+  // ── Quick links ────────────────────────────────────────────────────────
+  const quickLinks = [
+    { icon:"◉", label:"Startups", desc:"Explorar por vertical y etapa", action:"browse-startups" },
+    { icon:"◈", label:"Inversores", desc:"Ver gaps y tesis", action:"browse-investors" },
+    { icon:"◌", label:"Sin capital", desc:`${topQuality} con calidad ≥8`, action:"unfunded" },
+    { icon:"↔",  label:"Modo intro", desc:"Preparar una presentación", action:"intro" },
+  ];
+  const quickLinksHtml = quickLinks.map(l =>
+    `<div class="iq-quicklink" data-action="${l.action}">
+      <div class="iq-quicklink-icon">${l.icon}</div>
+      <div class="iq-quicklink-label">${l.label}</div>
+      <div class="iq-quicklink-desc">${l.desc}</div>
+    </div>`
+  ).join("");
+
+  welcomePanel.innerHTML = `
+    <div class="iq-welcome-stat-row">
+      <div class="iq-welcome-stat">
+        <div class="iq-welcome-stat-val">${totalSt}</div>
+        <div class="iq-welcome-stat-lbl">Startups</div>
+      </div>
+      <div class="iq-welcome-stat">
+        <div class="iq-welcome-stat-val">${totalInv}</div>
+        <div class="iq-welcome-stat-lbl">Inversores</div>
+      </div>
+      <div class="iq-welcome-stat">
+        <div class="iq-welcome-stat-val">${fundedPct}%</div>
+        <div class="iq-welcome-stat-lbl">Con capital</div>
+      </div>
+      <div class="iq-welcome-stat">
+        <div class="iq-welcome-stat-val" style="color:var(--accent)">${topQuality}</div>
+        <div class="iq-welcome-stat-lbl">Sin capital · calidad ≥8</div>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:minmax(0,5fr) minmax(0,4fr);gap:28px;margin-bottom:18px;align-items:start">
+      <div>
+        <div class="iq-welcome-section-label">Verticales del ecosistema</div>
+        ${themeBarsHtml}
+      </div>
+      <div>
+        <div class="iq-welcome-section-label">Oportunidades sin mapear</div>
+        <div style="display:flex;flex-direction:column;gap:8px">${oppCardsHtml}</div>
+      </div>
+    </div>
+
+    <div class="iq-welcome-section-label">Accesos rápidos</div>
+    <div class="iq-quicklinks">${quickLinksHtml}</div>`;
+
+  // Wire theme rows
+  welcomePanel.querySelectorAll(".iq-welcome-theme-row[data-theme]").forEach(el => {
+    el.addEventListener("click", () => {
+      const theme = el.dataset.theme;
+      const pool = IQ_STARTUPS.filter(s => s.theme === theme)
+        .sort((a,b) => b.quality - a.quality)
+        .map(s => _stItem(s));
+      renderResults(pool);
+      welcomePanel.style.display = "none";
+      entityDetailMain.style.display = "none";
+    });
+  });
+
+  // Wire opportunity cards
+  welcomePanel.querySelectorAll(".iq-opp-activate").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const st  = IQ_STARTUPS.find(s => s.id === btn.dataset.startupId);
+      const inv = IQ_INVESTORS.find(i => i.id === btn.dataset.investorId);
+      if (!st || !inv) return;
+      _activarVinculo(_stItem(st), _invItem(inv));
+    });
+  });
+
+  // Wire quick links
+  welcomePanel.querySelectorAll(".iq-quicklink[data-action]").forEach(el => {
+    el.addEventListener("click", () => {
+      const a = el.dataset.action;
+      if (a === "browse-startups") {
+        activeFilter = "startup";
+        document.querySelectorAll(".iq-filter-pill").forEach(p => p.classList.toggle("active", p.dataset.filter==="startup"));
         welcomePanel.style.display = "none";
-        detailPanel.style.display = "block";
-        if (type === "investor") renderInvestorDetail(id);
-        else if (type === "startup") renderStartupDetail(id);
-        else renderGenericDetail({ id, name: el.textContent.trim().replace("⭐ ",""), type });
-      });
+        showDefaultBrowse();
+      } else if (a === "browse-investors") {
+        activeFilter = "investor";
+        document.querySelectorAll(".iq-filter-pill").forEach(p => p.classList.toggle("active", p.dataset.filter==="investor"));
+        welcomePanel.style.display = "none";
+        showTopLatent();
+      } else if (a === "unfunded") {
+        welcomePanel.style.display = "none";
+        showUnfunded();
+      } else if (a === "intro") {
+        welcomePanel.style.display = "none";
+        switchMode("intro");
+        showIntroMode();
+      }
     });
-  }
+  });
 }
 
 // ── HEALTH / SALUD MODE ───────────────────────────────────────────────────
@@ -2285,7 +3935,6 @@ const healthContent= document.getElementById("healthContent");
 
 function showHealthMode() {
   welcomePanel.style.display  = "none";
-  detailPanel.style.display   = "none";
   introPanel.style.display    = "none";
   healthPanel.style.display   = "block";
   renderHealth();
@@ -2295,10 +3944,7 @@ function showHealthMode() {
     .filter(s => !s.funded && s.theme)
     .sort((a,b) => b.quality - a.quality)
     .slice(0,30)
-    .map(s => ({
-      id: s.id, name: s.name, type: "startup",
-      country: s.country, focus: s.theme, detail: s.one_liner, _mode: "browse"
-    }));
+    .map(s => _stItem(s));
   renderResults(pool);
 }
 
@@ -2407,7 +4053,7 @@ function renderHealth() {
   const isolatedCards = (IQ_ISOLATED || []).slice(0, 20).map(s => `
     <div class="iq-isolated-card" data-startup-id="${escHtml(s.id)}">
       <div class="iq-isolated-card-name">${escHtml(s.name)}</div>
-      <div class="iq-isolated-card-meta">${escHtml(s.country)} · ${escHtml((s.theme || "").slice(0,36))}</div>
+      <div class="iq-isolated-card-meta">${escHtml(s.country)} · ${escHtml(THEME_SHORT[s.theme]||(s.theme||""))}</div>
       <div class="iq-isolated-card-quality">Calidad: ${s.quality}/10${s.stage ? " · " + escHtml(s.stage) : ""}</div>
       ${s.one_liner ? `<div style="font-size:.65rem;color:var(--muted);margin-top:3px">${escHtml(s.one_liner.slice(0,80))}</div>` : ""}
     </div>`).join("");
@@ -2448,7 +4094,7 @@ function renderHealth() {
         const pool = ids.map(id => {
           const st = IQ_STARTUPS.find(s => s.id === id);
           if (!st) return null;
-          return { id: st.id, name: st.name, type: "startup", country: st.country, focus: st.theme, detail: st.one_liner, _mode: "browse" };
+          return _stItem(st);
         }).filter(Boolean);
         if (pool.length) renderResults(pool);
       } catch(e) { /* ignore */ }
@@ -2461,13 +4107,9 @@ function renderHealth() {
       const id = el.dataset.startupId;
       const st = IQ_STARTUPS.find(s => s.id === id);
       if (st) {
-        currentMode = "search"; // switch mode so detail shows
-        document.querySelectorAll(".iq-tab").forEach(t => t.classList.remove("active"));
-        document.querySelector('.iq-tab[data-mode="search"]').classList.add("active");
-        healthPanel.style.display = "none";
-        introHint.style.display   = "none";
+        switchMode("search");
+        openDetailPanel();
         renderStartupDetail(id);
-        detailPanel.style.display = "block";
       }
     });
   });
@@ -2475,14 +4117,9 @@ function renderHealth() {
   // Wire depth table startup chips
   healthContent.querySelectorAll(".iq-portfolio-chip[data-startup-id]").forEach(el => {
     el.addEventListener("click", () => {
-      const id = el.dataset.startupId;
-      currentMode = "search";
-      document.querySelectorAll(".iq-tab").forEach(t => t.classList.remove("active"));
-      document.querySelector('.iq-tab[data-mode="search"]').classList.add("active");
-      healthPanel.style.display = "none";
-      introHint.style.display   = "none";
-      renderStartupDetail(id);
-      detailPanel.style.display = "block";
+      switchMode("search");
+      openDetailPanel();
+      renderStartupDetail(el.dataset.startupId);
     });
   });
 }
@@ -2523,13 +4160,7 @@ function showFollowups(items, query) {
   if (unfunded.length >= 2 && currentMode !== "funded") {
     suggestions.push({
       label: `${unfunded.length} sin capital`,
-      action: () => {
-        currentMode = "funded";
-        document.querySelectorAll(".iq-tab").forEach(t => t.classList.remove("active"));
-        const t = document.querySelector('.iq-tab[data-mode="funded"]');
-        if (t) t.classList.add("active");
-        showUnfunded();
-      }
+      action: () => { switchMode("funded"); showUnfunded(); }
     });
   }
 
@@ -2545,25 +4176,16 @@ function showFollowups(items, query) {
   if (selectedEntity && selectedEntity.type === "startup") {
     suggestions.push({
       label: `Inversores para ${selectedEntity.name.split(" ")[0]}`,
-      action: () => {
-        currentMode = "latent";
-        document.querySelectorAll(".iq-tab").forEach(t => t.classList.remove("active"));
-        const t = document.querySelector('.iq-tab[data-mode="latent"]');
-        if (t) t.classList.add("active");
-        showTopLatent();
-      }
+      action: () => { switchMode("latent"); showTopLatent(); }
     });
   }
 
   // Suggest intro if entity is selected
-  if (selectedEntity && !suggestions.find(s => s.label.startsWith("Presentar"))) {
+  if (selectedEntity && !suggestions.find(s => s.label.startsWith("Activar"))) {
     suggestions.push({
-      label: `Presentar ${selectedEntity.name.split(" ")[0]}…`,
+      label: `Activar ${selectedEntity.name.split(" ")[0]}…`,
       action: () => {
-        currentMode = "intro";
-        document.querySelectorAll(".iq-tab").forEach(t => t.classList.remove("active"));
-        const t = document.querySelector('.iq-tab[data-mode="intro"]');
-        if (t) t.classList.add("active");
+        switchMode("intro");
         introEntityA = selectedEntity;
         renderSlot("a", selectedEntity);
         introFocused = "b";
@@ -2757,7 +4379,6 @@ function tfidfScore(startup, queryTokens) {
 // ── Initial render ────────────────────────────────────────────────────────
 applyRole();
 showWelcome();
-showDefaultBrowse();
 </script>
 </body>
 </html>

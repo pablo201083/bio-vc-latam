@@ -361,11 +361,13 @@ def _load_investor_meta(conn: sqlite3.Connection) -> dict[str, dict]:
         JOIN investors i ON i.investor_id = e.entity_id
         WHERE e.status != 'excluded'
     """).fetchall()
-    portfolio = {}
+    portfolio: dict[str, set] = {}
     for e in conn.execute(
         "SELECT investor_id, startup_id FROM investment_edges"
     ).fetchall():
-        portfolio.setdefault(e[0], []).append(e[1])
+        portfolio.setdefault(e[0], set()).add(e[1])
+    # Convert sets to sorted lists for deterministic output
+    portfolio = {k: sorted(v) for k, v in portfolio.items()}
     out = {}
     for r in rows:
         iid = r[0]
@@ -621,6 +623,7 @@ def build_intelligence_data(
             "lead_behavior":   inv["lead_behavior"],
             "preferred_stages": inv["preferred_stages"],
             "portfolio_size":  prof["size"],
+            "portfolio_ids":   sorted(prof["mapped"]),
             "themes":          sorted(prof["themes"]),
             "countries":       sorted(prof["countries"]),
             "centroid_b64":    centroid_b64,
@@ -1164,10 +1167,11 @@ HEALTH_OUT_PATH = ROOT / "pilot" / "ecosystem-health-data.js"
 
 _ALL_THEMES = [
     "Bioinputs & Crop Resilience",
+    "Bioinputs & Soil Health",
     "Precision Agriculture",
     "Nature & Ecosystem Tech",
     "Food Systems & Alt Proteins",
-    "Biomanufacturing & Fermentation Economy",
+    "Biomanufacturing & Platform Technologies",
     "Biomaterials & Green Chemistry",
     "Therapeutics",
     "Diagnostics & Devices",
