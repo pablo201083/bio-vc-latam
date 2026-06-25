@@ -50,6 +50,23 @@ SUB_MIN = 5
 CROSS_CUTTING_THEMES = {"Biomanufacturing & Platform Technologies"}
 
 
+_CONF_MAP = {"low": 0.25, "medium": 0.55, "high": 0.85}
+
+
+def _to_float(val) -> float:
+    if val is None:
+        return 0.0
+    if isinstance(val, (int, float)):
+        return float(val)
+    s = str(val).strip().lower()
+    if s in _CONF_MAP:
+        return _CONF_MAP[s]
+    try:
+        return float(s)
+    except (ValueError, TypeError):
+        return 0.0
+
+
 def _cl_prefix(cluster_label: str | None) -> str:
     if not cluster_label:
         return ""
@@ -108,8 +125,8 @@ def analyze(conn: sqlite3.Connection) -> list[dict]:
             "cluster_id": cid,
             "n_same_theme_in_cluster": n_same,
             "theme_share_in_cluster": share,
-            "bio_theme_confidence": round(float(r["bio_theme_confidence"] or 0), 3),
-            "cluster_confidence": round(float(r["cluster_confidence"] or 0), 3),
+            "bio_theme_confidence": round(_to_float(r["bio_theme_confidence"]), 3),
+            "cluster_confidence": round(_to_float(r["cluster_confidence"]), 3),
             "scope_basis": r["scope_basis"] or "",
             "verdict": verdict,
             "suggested_action": action,
