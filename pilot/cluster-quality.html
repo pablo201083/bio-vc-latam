@@ -3,19 +3,54 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Calidad de Clusters — BIO LATAM</title>
+  <title>Calidad Taxonómica — BIO LATAM</title>
   <link rel="stylesheet" href="./styles.css?v=20260422l">
   <style>
-    .metric-grid {
-      display: grid;
-      grid-template-columns: repeat(5, minmax(0,1fr));
-      gap: 14px;
-      margin-bottom: 20px;
+    /* ── App shell (same pattern as startup-themes) ── */
+    :root{
+      --bio-teal:#0B5C58;--bio-teal-soft:rgba(11,92,88,.09);
+      --bio-ink:#1B1B19;--bio-muted:#6B6560;--bio-line:#D4CCC2;
+      --bio-bg:#EAEAEA;--bio-panel:#fff;--bio-line-s:#A09890;
     }
-    .kpi-card { border:1px solid var(--line);border-radius:18px;background:#fff;padding:14px; }
-    .kpi-label { font-size:.82rem;color:var(--muted);margin-bottom:8px; }
-    .kpi-value { font-size:1.7rem;font-weight:700;line-height:1.05; }
-    .kpi-sub   { font-size:.72rem;color:var(--muted);margin-top:4px; }
+    #bio-app{display:flex;flex-direction:column;height:100vh;overflow:hidden;}
+    #bio-topnav{
+      height:48px;flex-shrink:0;background:var(--panel);border-bottom:1px solid var(--line);
+      display:flex;align-items:center;padding:0 20px;gap:0;font-family:var(--sans);
+    }
+    .bio-nav-brand{
+      display:flex;align-items:center;gap:9px;padding-right:20px;
+      border-right:1px solid var(--line);margin-right:14px;flex-shrink:0;
+    }
+    .bio-nav-logo{
+      width:26px;height:26px;background:var(--ink);border-radius:2px;
+      display:flex;align-items:center;justify-content:center;flex-shrink:0;
+    }
+    .bio-nav-logo span{color:#fff;font-family:Georgia,serif;font-size:14px;font-weight:600;line-height:1;letter-spacing:-.02em;}
+    .bio-nav-name{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink);white-space:nowrap;}
+    .bio-nav-links{display:flex;align-items:stretch;gap:2px;flex:1;}
+    .bio-nav-link{
+      font-size:11px;letter-spacing:.07em;text-transform:uppercase;padding:5px 14px;
+      border:none;border-radius:4px;cursor:pointer;transition:background .15s;
+      text-decoration:none;display:inline-flex;align-items:center;font-family:var(--sans);
+    }
+    .bio-nav-link.active{background:var(--bio-ink);color:#fff;}
+    .bio-nav-link:not(.active){background:transparent;color:var(--bio-muted);}
+    .bio-nav-link:not(.active):hover{background:rgba(0,0,0,.05);color:var(--bio-ink);}
+    .bio-nav-live{display:flex;align-items:center;gap:6px;padding-left:20px;border-left:1px solid var(--line);flex-shrink:0;font-family:var(--sans);}
+    .bio-nav-dot{width:5px;height:5px;border-radius:50%;background:var(--bio-teal);}
+
+    /* ── Context strip 36px ── */
+    #bio-strip{
+      height:36px;flex-shrink:0;background:var(--panel);border-bottom:1px solid var(--line);
+      display:flex;align-items:center;padding:0 16px;gap:16px;font-family:var(--sans);
+    }
+    #bio-strip-title{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--bio-ink);}
+    #bio-strip-stats{font-size:11px;color:var(--bio-muted);}
+    #bio-strip-meta{font-size:10px;color:var(--bio-muted);font-style:italic;margin-left:auto;}
+
+    /* ── Scrollable content area ── */
+    #bio-content{flex:1;overflow-y:auto;overflow-x:hidden;}
+    .cq-shell{max-width:1380px;margin:0 auto;padding:24px 28px 48px;}
 
     /* ── Theme grid ── */
     .theme-grid {
@@ -190,223 +225,130 @@
       .hero-foot{ flex-direction:column;gap:4px; }
     }
 
-    /* ── Header — compact horizontal band ── */
-    .hero {
-      display: flex !important;           /* override base 2-col grid */
-      flex-direction: column;
-      background: linear-gradient(158deg, #fdf8f2 0%, rgba(23,139,135,.06) 100%);
-      border: 1px solid var(--line);
-      border-radius: 18px;
-      box-shadow: var(--shadow);
-      position: relative;
-      overflow: hidden;
-      padding: 0;
-      margin-bottom: 22px;
-      gap: 0;
-    }
-    /* Left accent stripe */
-    .hero::before {
-      content:''; position:absolute; left:0; top:0; bottom:0; width:4px;
-      background: linear-gradient(180deg, var(--accent) 0%, rgba(23,139,135,.15) 100%);
-      border-radius: 0 2px 2px 0;
-      z-index:1;
-    }
-    /* hide the base hero-copy / hero-meta panels — we use .hero-band instead */
-    .hero .hero-copy, .hero .hero-meta { display: none !important; }
-
-    /* Single horizontal band */
-    .hero-band {
-      display: flex;
-      align-items: center;
-      gap: 28px;
-      padding: 20px 28px 20px 32px;
-    }
-
-    /* Left: brand + title block */
-    .hb-left { flex: 1; min-width: 0; }
-    .hb-eyebrow {
-      font-size: .65rem; text-transform: uppercase; letter-spacing: .18em;
-      color: var(--accent); font-weight: 700; margin: 0 0 5px;
-    }
-    .hb-title {
-      font-size: clamp(1.55rem, 2vw, 2.05rem);
-      font-weight: 800;
-      line-height: 1.05;
-      letter-spacing: -.025em;
-      margin: 0 0 6px;
-      color: var(--ink);
-    }
-    .hb-desc {
-      font-size: .78rem;
-      color: var(--muted);
-      line-height: 1.55;
-      margin: 0;
-      max-width: 55ch;
-    }
-    .hb-desc strong { color: var(--ink); font-weight: 600; }
-
-    /* Right: KPI strip + back link */
-    .hb-right {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      gap: 12px;
-      flex-shrink: 0;
-    }
-    .hb-kpis {
-      display: flex;
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      overflow: hidden;
-      background: rgba(255,255,255,.85);
-    }
-    .hb-kpi {
-      display: flex; flex-direction: column; align-items: center;
-      padding: 10px 18px;
-      border-right: 1px solid var(--line);
-      min-width: 72px;
-    }
-    .hb-kpi:last-child { border-right: none; }
-    .hb-kpi-val { font-size: 1.45rem; font-weight: 800; line-height: 1; color: var(--ink); }
-    .hb-kpi-lbl { font-size: .59rem; text-transform: uppercase; letter-spacing: .09em; color: var(--muted); margin-top: 4px; font-weight: 600; }
-    .hb-back {
-      font-size: .72rem; color: var(--muted); text-decoration: none;
-      padding: 5px 13px; border: 1px solid var(--line); border-radius: 8px;
-      background: rgba(255,255,255,.6); transition: border-color .12s, color .12s;
-      white-space: nowrap;
-    }
-    .hb-back:hover { color: var(--accent); border-color: var(--accent); }
-
-    /* Divider bar below the band — shows page last-updated or nothing */
-    .hero-foot {
-      border-top: 1px solid var(--line);
-      padding: 7px 32px;
-      display: flex; gap: 20px; align-items: center;
-      background: rgba(247,243,236,.6);
-    }
-    .hero-foot-item {
-      font-size: .63rem; color: var(--muted);
-      display: flex; align-items: center; gap: 5px;
-    }
-    .hero-foot-dot { width:6px; height:6px; border-radius:50%; background:var(--accent); flex-shrink:0; }
-
     /* ── Global KPI bar (slim, above themes) ── */
     .gkpi-bar {
-      display:flex;gap:0;border:1px solid var(--line);border-radius:14px;
-      background:#fff;overflow:hidden;margin-bottom:20px;
+      display:flex;gap:0;border:1px solid var(--line);border-radius:10px;
+      background:var(--panel);overflow:hidden;margin-bottom:20px;
     }
     .gkpi-cell {
-      flex:1;padding:12px 16px;border-right:1px solid var(--line);
+      flex:1;padding:10px 14px;border-right:1px solid var(--line);
       display:flex;flex-direction:column;gap:3px;
     }
     .gkpi-cell:last-child { border-right:none; }
     .gkpi-lbl { font-size:.60rem;text-transform:uppercase;letter-spacing:.09em;color:var(--muted);font-weight:700; }
-    .gkpi-val { font-size:1.15rem;font-weight:700;line-height:1; }
-    .gkpi-sub { font-size:.63rem;color:var(--muted); }
+    .gkpi-val { font-size:1.1rem;font-weight:700;line-height:1; }
+    .gkpi-sub { font-size:.62rem;color:var(--muted); }
+
+    /* panel overrides for this page */
+    .panel { border-radius:10px; }
+    .panel-head { padding:14px 18px 0; }
+    .panel-head h2 { font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--bio-ink);margin:0 0 4px; }
+    .theme-grid,.sc-grid,.alert-list,.theme-agg,.detail-panel { padding:0 18px 18px; }
+    .sc-grid { padding-top:4px; }
   </style>
 </head>
 <body>
-<div class="page-shell">
+<div id="bio-app">
 
-  <header class="hero">
-    <!-- compact horizontal band -->
-    <div class="hero-band">
-      <div class="hb-left">
-        <p class="hb-eyebrow">BIO LATAM · Taxonomía · Curación</p>
-        <h1 class="hb-title">Calidad Taxonómica</h1>
-        <p class="hb-desc">
-          Dos niveles de análisis: los <strong>8 temas editoriales</strong> con
-          confianza, cobertura y distribución de calidad, y los
-          <strong>24 sub-clusters semánticos</strong> con vocabulario TF-IDF y
-          lista de startups para curaduría.
-        </p>
+  <!-- ══ TOPNAV 48px ══ -->
+  <nav id="bio-topnav">
+    <div class="bio-nav-brand">
+      <div class="bio-nav-logo"><span>b</span></div>
+      <span class="bio-nav-name">Ecosistema BIO</span>
+    </div>
+    <div class="bio-nav-links">
+      <a href="./startup-themes.html"        class="bio-nav-link"        data-i18n="nav.paradigmas">Paradigmas</a>
+      <a href="./capital-atlas.html"          class="bio-nav-link"        data-i18n="nav.atlas">Capital Atlas</a>
+      <a href="./ecosystem-intelligence.html" class="bio-nav-link"        data-i18n="nav.intel">Ecosystem Intel</a>
+      <a href="./cluster-quality.html"        class="bio-nav-link active" data-i18n="nav.calidad">Calidad</a>
+    </div>
+    <div class="bio-nav-live">
+      <div class="bio-nav-dot"></div>
+      <span style="font-size:11px;color:var(--bio-muted);">HDBSCAN · UMAP 10D→2D</span>
+    </div>
+    <div class="lang-switcher">
+      <button class="lang-btn active" data-lang="es" onclick="switchLang('es')">ES</button>
+      <button class="lang-btn"        data-lang="en" onclick="switchLang('en')">EN</button>
+      <button class="lang-btn"        data-lang="pt" onclick="switchLang('pt')">PT</button>
+    </div>
+  </nav>
+
+  <!-- ══ CONTEXT STRIP 36px ══ -->
+  <div id="bio-strip">
+    <span id="bio-strip-title">Calidad Taxonómica</span>
+    <span id="bio-strip-stats">
+      <span id="kpi-total">—</span> startups ·
+      <span id="kpi-themes">8</span> temas ·
+      <span id="kpi-clusters">—</span> sub-clusters ·
+      conf. global <span id="kpi-conf">—</span>
+    </span>
+    <span id="bio-strip-meta">HDBSCAN min_cluster_size=8 · reclassify_v2</span>
+  </div>
+
+  <!-- ══ SCROLLABLE CONTENT ══ -->
+  <div id="bio-content">
+  <div class="cq-shell">
+
+    <!-- Global KPI breakdown bar -->
+    <div class="gkpi-bar" id="global-kpis"></div>
+
+    <!-- ① Bio-themes con métricas completas -->
+    <section class="panel" style="margin-bottom:16px">
+      <div class="panel-head">
+        <h2>Los 8 temas — métricas por tema</h2>
+        <span class="pill" id="theme-pill" style="font-size:.72rem;color:var(--muted)">Seleccioná un tema para ver sub-clusters</span>
       </div>
-      <div class="hb-right">
-        <div class="hb-kpis">
-          <div class="hb-kpi">
-            <span class="hb-kpi-val" id="kpi-total">—</span>
-            <span class="hb-kpi-lbl">startups</span>
-          </div>
-          <div class="hb-kpi">
-            <span class="hb-kpi-val" id="kpi-themes">8</span>
-            <span class="hb-kpi-lbl">temas</span>
-          </div>
-          <div class="hb-kpi">
-            <span class="hb-kpi-val" id="kpi-clusters">—</span>
-            <span class="hb-kpi-lbl">sub-cl.</span>
-          </div>
-          <div class="hb-kpi">
-            <span class="hb-kpi-val" id="kpi-conf">—</span>
-            <span class="hb-kpi-lbl">conf. global</span>
-          </div>
+      <div class="theme-grid" id="theme-grid" style="padding:12px 18px 18px"></div>
+    </section>
+
+    <!-- ② Cola de revisión (debajo de los temas) -->
+    <section class="panel" id="alerts-panel" style="display:none;margin-bottom:16px">
+      <div class="panel-head">
+        <h2>Cola de revisión — sub-clusters <span class="pill muted" id="alerts-pill" style="font-size:.7rem;margin-left:6px">—</span></h2>
+        <p style="font-size:.75rem;color:var(--muted);margin:4px 0 0">Ordenados por prioridad: % baja confianza × tamaño. Los que más se benefician de re-curaduría.</p>
+      </div>
+      <div id="alerts-list" class="alert-list" style="padding:12px 18px 18px"></div>
+    </section>
+
+    <!-- ③ Detalle de tema + sub-clusters -->
+    <section class="panel" id="theme-detail" style="display:none">
+      <div class="panel-head">
+        <h2 id="detail-theme-name">—</h2>
+        <span class="pill muted" id="detail-theme-pill" style="font-size:.72rem;color:var(--muted)">—</span>
+      </div>
+
+      <!-- Métricas agregadas del tema -->
+      <div id="theme-agg-panel" class="theme-agg" style="margin-bottom:0"></div>
+
+      <!-- Sub-cluster explorer -->
+      <div style="font-size:.65rem;text-transform:uppercase;letter-spacing:.09em;color:var(--muted);
+                  font-weight:700;border-top:1px solid var(--line);margin:0 18px;padding-top:14px;margin-bottom:10px">
+        Sub-clusters — seleccioná para ver vocabulario y startups
+      </div>
+      <div class="sc-grid">
+        <div>
+          <div class="sc-list" id="sc-list"></div>
         </div>
-        <a href="./startup-themes.html" class="hb-back">← Mapa de temas</a>
+        <div id="sc-detail"><div class="empty-state">Seleccioná un sub-cluster</div></div>
       </div>
-    </div>
-    <!-- thin footer strip with provenance -->
-    <div class="hero-foot">
-      <div class="hero-foot-item">
-        <span class="hero-foot-dot"></span>
-        <span id="hf-total-startups">—</span> startups · <span id="hf-conf-global">—</span> confianza promedio
-      </div>
-      <div class="hero-foot-item">HDBSCAN min_cluster_size=8 · multilingual-e5-small 384d · reclassify_v2</div>
-    </div>
-  </header>
+    </section>
 
-  <!-- Detailed breakdown bar (conf distribution, quality, outliers) -->
-  <div class="gkpi-bar" id="global-kpis" style="margin-bottom:16px"></div>
+  </div><!-- /cq-shell -->
+  </div><!-- /bio-content -->
 
-  <!-- ① Bio-themes con métricas completas -->
-  <section class="panel">
-    <div class="panel-head">
-      <h2>Los 8 temas — métricas por tema</h2>
-      <span class="pill" id="theme-pill">Seleccioná un tema para ver sub-clusters</span>
-    </div>
-    <div class="theme-grid" id="theme-grid"></div>
-  </section>
-
-  <!-- ② Cola de revisión (debajo de los temas) -->
-  <section class="panel" id="alerts-panel" style="display:none">
-    <div class="panel-head">
-      <h2>Cola de revisión — sub-clusters</h2>
-      <span class="pill muted" id="alerts-pill">—</span>
-    </div>
-    <div style="font-size:.78rem;color:var(--muted);margin-bottom:12px">
-      Ordenados por prioridad: % baja confianza × tamaño. Los que más se benefician de re-curaduría.
-    </div>
-    <div id="alerts-list" class="alert-list"></div>
-  </section>
-
-  <section class="panel" id="theme-detail" style="display:none">
-    <div class="panel-head">
-      <h2 id="detail-theme-name">—</h2>
-      <span class="pill muted" id="detail-theme-pill">—</span>
-    </div>
-
-    <!-- ① Métricas agregadas del tema (siempre visible al seleccionar) -->
-    <div id="theme-agg-panel" class="theme-agg" style="margin-bottom:24px"></div>
-
-    <!-- ② Sub-cluster explorer (debajo de las métricas del tema) -->
-    <div style="font-size:.67rem;text-transform:uppercase;letter-spacing:.09em;color:var(--muted);
-                font-weight:700;border-top:1px solid var(--line);padding-top:16px;margin-bottom:10px">
-      Sub-clusters — seleccioná para ver vocabulario y startups
-    </div>
-    <div class="sc-grid">
-      <div>
-        <div class="sc-list" id="sc-list"></div>
-      </div>
-      <div id="sc-detail"><div class="empty-state">Seleccioná un sub-cluster</div></div>
-    </div>
-  </section>
-
-</div>
+</div><!-- /bio-app -->
 
 <script src="./startup-themes-data.js?v=20260528b"></script>
 <script>
+// ── i18n stub (lang switcher wiring) ────────────────────────────────────────
+function switchLang(lang){
+  document.querySelectorAll(".lang-btn").forEach(b=>b.classList.toggle("active",b.dataset.lang===lang));
+}
+
 (function(){
 "use strict";
 const D = window.STARTUP_THEMES_DATA;
-if(!D||!D.startups){ document.querySelector("h1").textContent="Sin datos"; return; }
+if(!D||!D.startups){ document.getElementById("bio-strip-title").textContent="Sin datos"; return; }
 const startups = D.startups;
 
 // ── Paleta ────────────────────────────────────────────────────────────────
@@ -524,12 +466,6 @@ const allSubClusters = new Set(startups.map(s=>s.cluster_label).filter(Boolean))
 document.getElementById("kpi-total").textContent    = gm.n;
 document.getElementById("kpi-clusters").textContent = allSubClusters.size;
 document.getElementById("kpi-conf").textContent     = (gm.avgConf*100).toFixed(0)+"%";
-// Hero footer strip
-const _hfTotal = document.getElementById("hf-total-startups");
-const _hfConf  = document.getElementById("hf-conf-global");
-if (_hfTotal) _hfTotal.textContent = gm.n;
-if (_hfConf)  _hfConf.textContent  = (gm.avgConf*100).toFixed(0)+"% confianza";
-
 // Global KPI bar — horizontal slim cells
 const confColor = gm.avgConf>=0.8?"#16a34a":gm.avgConf>=0.65?"#d97706":"#dc2626";
 [

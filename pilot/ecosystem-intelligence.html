@@ -70,14 +70,18 @@
       font-size: .72rem; font-weight: 800; letter-spacing: .07em;
       text-transform: uppercase; color: var(--muted); white-space: nowrap;
     }
-    .iq-nav-links { display: flex; gap: 6px; }
-    .iq-nav-links a {
-      font-size: .69rem; padding: 3px 9px; border-radius: 999px;
-      border: 1px solid var(--line); color: var(--muted);
-      text-decoration: none; white-space: nowrap;
-      transition: background .15s, color .15s;
-    }
-    .iq-nav-links a:hover { background: var(--accent-soft); color: var(--accent); }
+    #bio-topnav{height:48px;flex-shrink:0;background:var(--panel);border-bottom:1px solid var(--line);display:flex;align-items:center;padding:0 20px;gap:0;font-family:var(--sans);}
+    .bio-nav-brand{display:flex;align-items:center;gap:9px;padding-right:20px;border-right:1px solid var(--line);margin-right:14px;flex-shrink:0;}
+    .bio-nav-logo{width:26px;height:26px;background:var(--ink);border-radius:2px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+    .bio-nav-logo span{color:#fff;font-family:Georgia,serif;font-size:14px;font-weight:600;line-height:1;letter-spacing:-.02em;}
+    .bio-nav-name{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink);white-space:nowrap;}
+    .bio-nav-links{display:flex;align-items:stretch;gap:2px;flex:1;}
+    .bio-nav-link{font-size:11px;letter-spacing:.07em;text-transform:uppercase;padding:5px 14px;border:none;border-radius:4px;cursor:pointer;transition:background .15s;text-decoration:none;display:inline-flex;align-items:center;font-family:var(--sans);}
+    .bio-nav-link.active{background:var(--ink);color:#fff;}
+    .bio-nav-link:not(.active){background:transparent;color:var(--muted);}
+    .bio-nav-link:not(.active):hover{background:rgba(0,0,0,.05);color:var(--ink);}
+    .bio-nav-live{display:flex;align-items:center;gap:6px;padding-left:20px;border-left:1px solid var(--line);flex-shrink:0;font-family:var(--sans);}
+    .bio-nav-dot{width:5px;height:5px;border-radius:50%;background:#22c55e;}
 
     /* ── layout ───────────────────────────────────────────────── */
     .iq-shell {
@@ -796,7 +800,7 @@
     .iq-brief-tp-list li::before { content: "•"; color: var(--accent); flex-shrink: 0; }
     .iq-brief-ask {
       font-size: .77rem; color: var(--ink); font-style: italic;
-      background: rgba(248,243,234,.8); border-radius: 2px;
+      background: rgba(234,234,234,.8); border-radius: 2px;
       border: 1px solid var(--line);
       padding: 10px 14px; margin-top: 6px;
     }
@@ -815,7 +819,7 @@
     .iq-brief-email-head {
       display: flex; align-items: center; gap: 8px;
       padding: 9px 14px;
-      background: rgba(248,243,234,.8);
+      background: rgba(234,234,234,.8);
       border-bottom: 1px solid var(--line);
     }
     .iq-brief-email-subject {
@@ -962,7 +966,7 @@
     .iq-heatmap td:hover { opacity: .75; }
     .iq-heatmap td.theme-cell {
       text-align: left; font-size: .72rem; font-weight: 600;
-      color: var(--ink); background: rgba(248,243,234,.6); cursor: default;
+      color: var(--ink); background: rgba(234,234,234,.6); cursor: default;
       white-space: nowrap; padding-right: 14px;
     }
     /* depth table */
@@ -1045,15 +1049,22 @@
 <body>
 
 <!-- TOP BAR -->
-<div class="iq-topbar">
-  <span class="iq-title" data-i18n="strip.intel">Inteligencia · Ecosistema BIO</span>
-  <div class="iq-nav-links">
-    <a href="./startup-themes.html"  data-i18n="nav.paradigmas">Paradigmas</a>
-    <a href="./capital-atlas.html"   data-i18n="nav.atlas">Capital Atlas</a>
-    <a href="./ecosystem-graph.html">Grafo</a>
+<nav id="bio-topnav">
+  <div class="bio-nav-brand">
+    <div class="bio-nav-logo"><span>b</span></div>
+    <span class="bio-nav-name">Ecosistema BIO</span>
   </div>
-  <div id="apiBadge" class="iq-api-badge">Búsqueda local</div>
-  <div class="iq-role-wrap">
+  <div class="bio-nav-links">
+    <a href="./startup-themes.html"        class="bio-nav-link"        data-i18n="nav.paradigmas">Paradigmas</a>
+    <a href="./capital-atlas.html"          class="bio-nav-link"        data-i18n="nav.atlas">Capital Atlas</a>
+    <a href="./ecosystem-intelligence.html" class="bio-nav-link active" data-i18n="nav.intel">Ecosystem Intel</a>
+    <a href="./cluster-quality.html"        class="bio-nav-link"        data-i18n="nav.calidad">Calidad</a>
+  </div>
+  <div class="bio-nav-live">
+    <div class="bio-nav-dot"></div>
+    <span style="font-size:11px;color:var(--muted);" id="apiBadge">Búsqueda local</span>
+  </div>
+  <div class="iq-role-wrap" style="margin-left:12px;">
     <button class="iq-role-btn" id="roleBtn" title="Cambiar rol">⚙ Rol: <span id="roleBtnLabel">CAB Staff</span></button>
     <div class="iq-role-dropdown" id="roleDropdown" style="display:none"></div>
   </div>
@@ -1062,7 +1073,7 @@
     <button class="lang-btn"        data-lang="en" onclick="switchLang('en')">EN</button>
     <button class="lang-btn"        data-lang="pt" onclick="switchLang('pt')">PT</button>
   </div>
-</div>
+</nav>
 
 <!-- SEARCH BAR (full-width, primer elemento) -->
 <div class="iq-searchbar">
@@ -1707,12 +1718,13 @@ const _ITYPE_LABELS = {
 };
 function _invItem(inv, mode="browse") {
   const itypeLbl = _ITYPE_LABELS[inv.itype] || inv.itype || "Fondo";
-  const focusShort = inv.themes.slice(0,2).map(t => THEME_SHORT[t] || t.split(" & ")[0]).join(", ");
-  // meta line: type + portfolio size (more scannable than themes)
-  // themes go as the "detail" chip below the name
+  // Segunda línea: geo focus + etapas preferidas (más útil que los temas)
+  const geo = (inv.geo_focus || "").split(";")[0].trim();
+  const stages = (inv.preferred_stages || "").split(";").map(s=>s.trim().replace("pre-seed","Pre").replace("seed","Seed").replace("series-a","A").replace("series-b","B").replace("growth","Growth")).filter(Boolean).slice(0,3).join(" · ");
+  const detail = [geo, stages].filter(Boolean).join(" · ") || null;
   return { id: inv.id, name: inv.name, type: "investor", country: inv.country,
     focus: `${itypeLbl} · ${inv.portfolio_size || "?"} portafolio`,
-    detail: focusShort,
+    detail,
     website: inv.website || "", _mode: mode };
 }
 
@@ -1825,14 +1837,16 @@ const LOGO_DOMAIN_OVERRIDES = {
 };
 
 const THEME_PAL = {
-  "Therapeutics":                             "#7033BC",
-  "Diagnostics & Devices":                    "#1A6DB5",
-  "Food Systems & Alt Proteins":              "#C25A2A",
-  "Bioinputs & Crop Resilience":              "#246838",
-  "Nature & Ecosystem Tech":                  "#0A7060",
-  "Precision Agriculture":                    "#2E4E8C",
-  "Biomaterials & Green Chemistry":           "#8B6D14",
-  "Biomanufacturing & Platform Technologies": "#6B8C3A",
+  "Therapeutics":                              "#a78bfa",
+  "Diagnostics & Devices":                    "#60a5fa",
+  "Food Systems & Alt Proteins":              "#22d3ee",
+  "Bioinputs & Crop Resilience":              "#2dd4bf",
+  "Nature & Ecosystem Tech":                  "#4ade80",
+  "Precision Agriculture":                    "#facc15",
+  "Biomaterials & Green Chemistry":           "#fb923c",
+  "Biomanufacturing & Platform Technologies": "#fb7185",
+  "Digital AgTech & Agrifintech":             "#f472b6",
+  "Biomanufacturing & Fermentation Economy":  "#fb7185",
 };
 
 const THEME_SHORT = {
@@ -2711,7 +2725,7 @@ function renderInvestorMain(id) {
 
     <hr class="iq-entity-divider">
     <div class="iq-entity-section-label" style="margin-bottom:6px">Cobertura de verticales</div>
-    <div style="display:flex;flex-wrap:wrap;gap:4px">${themeCoverageHtml}</div>
+    ${buildThemeBarcode(inv)}
     <div style="font-size:.62rem;color:var(--muted);margin-top:4px">${geoFocusArr.join(" · ") || ""}</div>
 
     ${gapBarsHtml ? `
@@ -2983,6 +2997,43 @@ function renderStartupDetail(id) {
   });
 }
 
+// ── Barcode de verticales BIO ─────────────────────────────────────────────
+// 8 columnas = 8 temas canónicos. Llenas si el inversor tiene ese vertical,
+// vacías si no. La altura proporcional al rank en inv.themes (primera = mayor).
+function buildThemeBarcode(inv) {
+  const ALL_THEMES = Object.keys(THEME_PAL);
+  const coveredSet = new Set(inv.themes || []);
+  const themeRank  = {};
+  (inv.themes || []).forEach((t, i) => { themeRank[t] = 1 - i / Math.max(1, inv.themes.length - 1); });
+
+  const W = 320, H = 64, LABEL_H = 28, BAR_AREA = H - LABEL_H;
+  const cellW = W / ALL_THEMES.length;
+  const GAP   = 2;
+
+  const cells = ALL_THEMES.map((t, i) => {
+    const covered = coveredSet.has(t);
+    const rank    = covered ? (themeRank[t] ?? 0.4) : 0;
+    const barH    = covered ? Math.max(10, Math.round(BAR_AREA * (0.35 + rank * 0.65))) : 4;
+    const col     = THEME_PAL[t] || '#888';
+    const x       = i * cellW + GAP / 2;
+    const barY    = BAR_AREA - barH;
+    const short   = (THEME_SHORT[t] || t).split(/[\s·&]/)[0];
+    const opacity = covered ? 1 : 0.18;
+
+    return `
+      <rect x="${x.toFixed(1)}" y="${barY.toFixed(1)}" width="${(cellW-GAP).toFixed(1)}" height="${barH}"
+        rx="2" fill="${col}" opacity="${opacity}"/>
+      <text x="${(x + (cellW-GAP)/2).toFixed(1)}" y="${(BAR_AREA + LABEL_H - 2).toFixed(1)}"
+        text-anchor="middle" font-size="7.5" font-family="inherit"
+        fill="${covered ? col : '#aaa'}" font-weight="${covered ? '700' : '400'}"
+        opacity="${covered ? 1 : 0.5}">${escHtml(short)}</text>`;
+  }).join('');
+
+  return `<svg viewBox="0 0 ${W} ${H}" width="${W}" height="${H}"
+    style="display:block;overflow:visible;margin-bottom:6px"
+    xmlns="http://www.w3.org/2000/svg">${cells}</svg>`;
+}
+
 function renderInvestorDetail(id) {
   const inv = IQ_INVESTORS.find(i => i.id === id);
   if (!inv) return;
@@ -3040,10 +3091,10 @@ function renderInvestorDetail(id) {
           ${inv.preferred_stages ? `<div style="font-size:.72rem;color:var(--muted)"><strong style="color:var(--ink)">Etapas</strong> ${escHtml(inv.preferred_stages)}</div>` : ""}
         </div>
 
-        <div class="iq-section-title">Temas del portfolio</div>
-        <div class="iq-result-chips" style="margin-bottom:4px">${themeChips}</div>
+        <div class="iq-section-title">Verticales</div>
+        ${buildThemeBarcode(inv)}
 
-        <div class="iq-section-title">Países del portfolio</div>
+        <div class="iq-section-title" style="margin-top:12px">Países del portfolio</div>
         <div class="iq-result-chips">${inv.countries.map(c => `<span class="iq-chip">${escHtml(c)}</span>`).join("")}</div>
 
         ${inv.gap && inv.gap.length > 0 ? `
@@ -4047,7 +4098,7 @@ function renderHealth() {
       <table class="iq-depth-table">
         <tr>
           <th>Tema</th><th>Total</th><th>Financiadas</th><th>%</th>
-          <th>Calidad Prom.</th><th>Top Inversor</th><th>Top Startup</th>
+          <th>Calidad Prom.</th><th>Inversor + activo</th><th title="Startup con mayor quality score del ecosistema en este tema">Mayor calidad ↗</th>
         </tr>
         ${depthRows}
       </table>

@@ -1,38 +1,38 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>BIO LATAM — Red de Co-Inversión</title>
+  <title>BIO LATAM â€” Red de Co-InversiÃ³n</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #fdf8f2 0%, rgba(23,139,135,.06) 100%);
-      color: #181714;
+      background: linear-gradient(135deg, var(--bg) 0%, rgba(23,139,135,.06) 100%);
+      color: #1a1a1a;
     }
     .container { display: grid; grid-template-columns: 300px 1fr 280px; gap: 0; height: 100vh; }
 
     /* Sidebar izquierda */
     .sidebar-left {
       background: rgba(255,255,255,.95);
-      border-right: 1px solid #d8ccc0;
+      border-right: 1px solid #d4d4d4;
       padding: 20px;
       overflow-y: auto;
       display: flex;
       flex-direction: column;
     }
     .sidebar-left h2 { font-size: 1.1rem; margin-bottom: 15px; color: #0b8f87; }
-    .metric { margin-bottom: 15px; padding-bottom: 12px; border-bottom: 1px solid #e8e0d8; }
-    .metric-label { font-size: 0.75rem; text-transform: uppercase; color: #9a8278; font-weight: 600; }
+    .metric { margin-bottom: 15px; padding-bottom: 12px; border-bottom: 1px solid #e4e4e4; }
+    .metric-label { font-size: 0.75rem; text-transform: uppercase; color: #737373; font-weight: 600; }
     .metric-value { font-size: 1.5rem; font-weight: 800; margin-top: 3px; }
-    .metric-sub { font-size: 0.8rem; color: #6a6258; margin-top: 2px; }
+    .metric-sub { font-size: 0.8rem; color: #525252; margin-top: 2px; }
 
     /* Canvas central */
     #network {
-      background: #fdfaf4;
+      background: #f5f5f5;
       flex: 1;
       position: relative;
     }
@@ -40,7 +40,7 @@
     /* Sidebar derecha */
     .sidebar-right {
       background: rgba(255,255,255,.95);
-      border-left: 1px solid #d8ccc0;
+      border-left: 1px solid #d4d4d4;
       padding: 20px;
       overflow-y: auto;
       display: flex;
@@ -50,19 +50,19 @@
     .sidebar-right h3 { font-size: 0.95rem; margin-bottom: 10px; color: #0b8f87; }
 
     .node-info {
-      background: #f5f2ed;
+      background: #f0f0f0;
       padding: 10px;
       border-radius: 8px;
       margin-bottom: 12px;
       border-left: 3px solid #0b8f87;
     }
     .node-info-name { font-weight: 700; margin-bottom: 4px; }
-    .node-info-metric { font-size: 0.75rem; color: #6a6258; margin: 2px 0; }
+    .node-info-metric { font-size: 0.75rem; color: #525252; margin: 2px 0; }
 
     .legend {
       margin-top: auto;
       padding-top: 15px;
-      border-top: 1px solid #d8ccc0;
+      border-top: 1px solid #d4d4d4;
     }
     .legend-item { margin-bottom: 8px; font-size: 0.75rem; }
     .legend-dot {
@@ -80,7 +80,7 @@
       top: 15px;
       right: 15px;
       background: rgba(255,255,255,.95);
-      border: 1px solid #d8ccc0;
+      border: 1px solid #d4d4d4;
       border-radius: 10px;
       padding: 12px 15px;
       z-index: 100;
@@ -99,21 +99,21 @@
       bottom: 15px;
       left: 15px;
       background: rgba(255,255,255,.95);
-      border: 1px solid #d8ccc0;
+      border: 1px solid #d4d4d4;
       border-radius: 10px;
       padding: 12px 15px;
       z-index: 100;
       max-width: 280px;
       font-size: 0.8rem;
-      color: #6a6258;
+      color: #525252;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <!-- Sidebar izquierda: Métricas -->
+    <!-- Sidebar izquierda: MÃ©tricas -->
     <div class="sidebar-left">
-      <h2>Red de Co-Inversión</h2>
+      <h2>Red de Co-InversiÃ³n</h2>
 
       <div class="metric">
         <div class="metric-label">Startups</div>
@@ -145,13 +145,13 @@
         <div class="metric-sub">redes densas</div>
       </div>
 
-      <hr style="border: none; border-top: 1px solid #e8e0d8; margin: 15px 0;">
+      <hr style="border: none; border-top: 1px solid #e4e4e4; margin: 15px 0;">
 
-      <div style="font-size: 0.75rem; color: #9a8278; line-height: 1.4;">
-        <strong>Tamaño nodo:</strong> PageRank (importancia)<br>
+      <div style="font-size: 0.75rem; color: #737373; line-height: 1.4;">
+        <strong>TamaÃ±o nodo:</strong> PageRank (importancia)<br>
         <strong>Color:</strong> Comunidad<br>
-        <strong>Espesor línea:</strong> inversores en común<br>
-        <strong>Posición:</strong> Force-directed layout
+        <strong>Espesor lÃ­nea:</strong> inversores en comÃºn<br>
+        <strong>PosiciÃ³n:</strong> Force-directed layout
       </div>
     </div>
 
@@ -161,7 +161,7 @@
     <!-- Sidebar derecha: Detalles -->
     <div class="sidebar-right">
       <h3>Selecciona un nodo</h3>
-      <div id="node-details" style="color: #9a8278; font-size: 0.85rem;">
+      <div id="node-details" style="color: #737373; font-size: 0.85rem;">
         Haz click en una startup para ver detalles
       </div>
 
@@ -188,15 +188,15 @@
 
   <!-- Controles -->
   <div class="controls">
-    <label><input type="checkbox" id="physics-toggle" checked> Física</label>
+    <label><input type="checkbox" id="physics-toggle" checked> FÃ­sica</label>
     <label><input type="checkbox" id="filter-toggle" checked> Top 50%</label>
   </div>
 
   <!-- Info -->
   <div class="info-box">
-    💡 Nodos grandes = importantes en red<br>
-    🔴 Puentes = desconectan la red si fallan<br>
-    ⚙️ Arrastra para mover, scroll para zoom
+    ðŸ’¡ Nodos grandes = importantes en red<br>
+    ðŸ”´ Puentes = desconectan la red si fallan<br>
+    âš™ï¸ Arrastra para mover, scroll para zoom
   </div>
 
   <script>
@@ -219,7 +219,7 @@
         from: e.source,
         to: e.target,
         width: e.thickness,
-        color: { color: 'rgba(200,180,160,.2)', highlight: 'rgba(11,143,135,.5)' }
+        color: { color: 'rgba(160,160,160,.2)', highlight: 'rgba(11,143,135,.5)' }
       }));
 
       const container = document.getElementById('network');
@@ -241,7 +241,7 @@
         if (node) {
           document.getElementById('node-details').innerHTML = `
             <div class="node-info" style="border: none; background: none;">
-              <div style="font-size: 1rem; font-weight: 700; color: #181714; margin-bottom: 10px;">${node.name}</div>
+              <div style="font-size: 1rem; font-weight: 700; color: #1a1a1a; margin-bottom: 10px;">${node.name}</div>
               <div class="node-info-metric"><strong>Tema:</strong> ${node.theme}</div>
               <div class="node-info-metric"><strong>PageRank:</strong> ${node.pagerank.toFixed(4)}</div>
               <div class="node-info-metric"><strong>Betweenness:</strong> ${node.betweenness.toFixed(2)}</div>
@@ -266,3 +266,4 @@
   </script>
 </body>
 </html>
+

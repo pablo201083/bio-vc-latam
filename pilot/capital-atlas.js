@@ -45,21 +45,30 @@
       svg.setAttribute("viewBox", `0 0 ${WIDTH} ${HEIGHT}`);
     }
   }
-  const FUND_COLOR = "#d97706";       // amber — clearly distinct from all bio-theme colors
-  const ALLOCATOR_COLOR = "#6d28d9"; // deep violet — LP tier
+  const FUND_COLOR        = "#d97706"; // amber — fondos LatAm (HQ o foco en región)
+  const FUND_COLOR_GLOBAL = "#94a3b8"; // gris pizarra — fondos externos sin foco LatAm
+  const ALLOCATOR_COLOR   = "#6d28d9"; // deep violet — LP tier
+  const _LATAM_CC = new Set(["AR","BR","MX","CL","CO","PE","UY","EC","BO","PY","CR","PA","GT","HN","NI","SV","DO","VE"]);
+  function fundColor(node) {
+    const isLatam = typeof node.is_latam === "boolean"
+      ? node.is_latam
+      : _LATAM_CC.has((node.country||"").toUpperCase()) ||
+        (node.geography||[]).some(g => g.toUpperCase().includes("LATAM"));
+    return isLatam ? FUND_COLOR : FUND_COLOR_GLOBAL;
+  }
   const STARTUP_FALLBACK = "#7c83fd";
   // Paleta canónica de bio-themes — idéntica a startup-themes.html
   const THEME_PAL = {
-    "Therapeutics":                           "#7033BC",
-    "Diagnostics & Devices":            "#1A6DB5",
-    "Food Systems & Alt Proteins":            "#C25A2A",
-    "Bioinputs & Crop Resilience":            "#2A7A42",
-    "Nature & Ecosystem Tech":               "#127A6E",
-    "Precision Agriculture":                      "#2E4E8C",
-    "Biomaterials & Green Chemistry":          "#8B6D14",
-    "Biomanufacturing & Platform Technologies":  "#6B8C3A",
-    // legacy alias — keeps old data working during transition
-    "Biomanufacturing & Fermentation Economy":   "#6B8C3A",
+    "Therapeutics":                              "#a78bfa",
+    "Diagnostics & Devices":                    "#60a5fa",
+    "Food Systems & Alt Proteins":              "#22d3ee",
+    "Bioinputs & Crop Resilience":              "#2dd4bf",
+    "Nature & Ecosystem Tech":                  "#4ade80",
+    "Precision Agriculture":                    "#facc15",
+    "Biomaterials & Green Chemistry":           "#fb923c",
+    "Biomanufacturing & Platform Technologies": "#fb7185",
+    "Digital AgTech & Agrifintech":             "#f472b6",
+    "Biomanufacturing & Fermentation Economy":  "#fb7185",
   };
   // Orden canónico del selector (mismo que startup-themes.html)
   const THEME_ORDER = [
@@ -278,7 +287,7 @@
   }
 
   function nodeColor(node) {
-    if (node.type === "fund") return FUND_COLOR;
+    if (node.type === "fund") return fundColor(node);
     if (node.type === "allocator") return ALLOCATOR_COLOR;
     if (node.type === "startup" && node.scope_decision !== "include") return "#999";
     const key = themeKey(node);
@@ -1116,7 +1125,7 @@
         "font-family": "Georgia, serif",
         "font-weight": "900",
         fill: themeColor(theme),
-        stroke: "rgba(255,252,246,0.98)",
+        stroke: "rgba(252,252,252,0.98)",
         "stroke-width": "5",
         "paint-order": "stroke",
         "pointer-events": "none"
@@ -1254,7 +1263,7 @@
             "font-family": "system-ui, -apple-system, sans-serif",
             "font-weight": isFund ? "800" : "700",
             fill: isFund ? nodeColor(node) : "#3a312a",
-            stroke: "rgba(255,252,246,0.95)",
+            stroke: "rgba(252,252,252,0.95)",
             "stroke-width": selected || hovered ? 7 : 5.5,
             "stroke-linejoin": "round",
             "paint-order": "stroke",
@@ -1266,6 +1275,7 @@
         }
       });
     renderGapThemeLabels();
+    renderLegend();
   }
 
   function fitToGraph() {
@@ -1306,6 +1316,52 @@
 
   function updateViewport() {
     viewport.setAttribute("transform", `translate(${transform.x} ${transform.y}) scale(${transform.k})`);
+  }
+
+  // ── Leyenda de codificación de color ──────────────────────────────────────
+  let legendEl = null;
+  function renderLegend() {
+    if (legendEl) legendEl.remove();
+    legendEl = makeSvg("g", { "pointer-events": "none" });
+
+    const modeVal = document.getElementById("atlas-mode")?.value || "";
+    const showFundLegend = modeVal === "co_investment" || modeVal === "capital_core" || modeVal === "";
+
+    const items = [];
+    if (showFundLegend) {
+      items.push({ col: FUND_COLOR,        label: "Fondo LatAm (HQ o foco)" });
+      items.push({ col: FUND_COLOR_GLOBAL, label: "Fondo global / externo" });
+      items.push({ col: ALLOCATOR_COLOR,   label: "LP / Alocador" });
+    }
+    items.push({ col: "#7c83fd", label: "Startup BIO", shape: "square" });
+
+    const PAD = 14, DOT = 6, ROW = 18, FONT = 10;
+    const boxH = PAD * 2 + items.length * ROW;
+    const boxW = 188;
+    const bx = 10, by = HEIGHT - boxH - 10;
+
+    const bg = makeSvg("rect", { x: bx, y: by, width: boxW, height: boxH, rx: "6",
+      fill: "rgba(234,234,234,0.88)", stroke: "#D4CCC2", "stroke-width": "1" });
+    legendEl.append(bg);
+
+    items.forEach((item, i) => {
+      const cy = by + PAD + i * ROW + DOT;
+      if (item.shape === "square") {
+        const sq = makeSvg("rect", { x: bx + PAD - DOT, y: cy - DOT, width: DOT * 2, height: DOT * 2, rx: "2",
+          fill: item.col + "40", stroke: item.col, "stroke-width": "1.5" });
+        legendEl.append(sq);
+      } else {
+        const dot = makeSvg("circle", { cx: bx + PAD, cy, r: DOT,
+          fill: item.col + "40", stroke: item.col, "stroke-width": "1.5" });
+        legendEl.append(dot);
+      }
+      const txt = makeSvg("text", { x: bx + PAD + DOT + 8, y: cy + 3.5,
+        "font-size": FONT, "font-family": "inherit", fill: "#6B6560" });
+      txt.textContent = item.label;
+      legendEl.append(txt);
+    });
+
+    svg.append(legendEl);
   }
 
   function renderSummary() {
@@ -2208,6 +2264,23 @@
       selectedId = id;
       renderGraph();
       renderDetail(id);
+    },
+    // Selecciona un nodo y hace zoom a su vecindario (startup + sus inversores)
+    focusNode(id) {
+      this.selectNode(id);
+      const connectedEdges = activeEdges.filter(e => e.source === id || e.target === id);
+      const nodeIds = new Set([id]);
+      connectedEdges.forEach(e => { nodeIds.add(e.source); nodeIds.add(e.target); });
+      const pts = [];
+      nodeIds.forEach(nid => { const pos = positions.get(nid); if (pos) pts.push(pos); });
+      if (!pts.length) { fitToGraph(); return; }
+      const xs = pts.map(p => p.x), ys = pts.map(p => p.y);
+      const minX = Math.min(...xs), maxX = Math.max(...xs);
+      const minY = Math.min(...ys), maxY = Math.max(...ys);
+      const gw = Math.max(80, maxX - minX), gh = Math.max(80, maxY - minY);
+      const pad = 100;
+      const k = Math.min((WIDTH - pad*2) / gw, (HEIGHT - pad*2) / gh, 3.5);
+      animateCameraTo(WIDTH/2 - ((minX + maxX)/2)*k, HEIGHT/2 - ((minY + maxY)/2)*k, k);
     },
     zoomToInvestor(id) {
       const connectedEdges = activeEdges.filter(e => e.source === id || e.target === id);

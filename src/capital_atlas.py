@@ -168,6 +168,11 @@ def run(db_path: Path = DB_PATH, out_path: Path = OUT_PATH) -> dict:
         else:
             node_type = "fund"
 
+        _LATAM_CC = {"AR","BR","MX","CL","CO","PE","UY","EC","BO","PY","CR","PA","GT","HN","NI","SV","DO","VE"}
+        country_up = _clean(r["country_code"]).upper()
+        geo_focus  = _clean(r["geography_focus"]).upper()
+        is_latam   = (country_up in _LATAM_CC) or ("LATAM" in geo_focus)
+
         investor_nodes.append({
             "id": eid,
             "type": node_type,
@@ -177,7 +182,8 @@ def run(db_path: Path = DB_PATH, out_path: Path = OUT_PATH) -> dict:
             "entity_confidence": 0.9,
             "source_presence": "db_investors",
             "thesis": _clean(r["thesis"]),
-            "country": _clean(r["country_code"]).upper(),
+            "country": country_up,
+            "is_latam": is_latam,
             "website": _clean(r["website"]),
             "stages": _split_csv(r["preferred_stages"]),
             "verticals": _split_csv(r["vertical_focus"]),

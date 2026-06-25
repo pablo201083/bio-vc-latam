@@ -1,5 +1,5 @@
 window.CAPITAL_ATLAS_DATA = {
-  "generated_at": "2026-06-15T21:34:44",
+  "generated_at": "2026-06-23T22:49:14",
   "source": "pipeline:build-atlas (SQLite)",
   "summary": {
     "nodes_total": 1049,
@@ -24,6 +24,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Fund-of-funds investing in LATAM biotech and deep tech VCs",
       "country": "US",
+      "is_latam": false,
       "website": "https://www.1200.vc",
       "stages": [
         "series-a",
@@ -55,6 +56,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "LATAM-focused program of 500 Global (formerly 500 Startups). Pre-seed and seed stage. Backed by IDB Lab. Invests across tech sectors in Latin America.",
       "country": "US",
+      "is_latam": true,
       "website": "https://500.co",
       "stages": [
         "pre-seed",
@@ -87,6 +89,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Argentine university-linked accelerator based in Santa Fe backing deeptech biotech agtech and health startups from universities in the Litoral and Paraná river corridor region.",
       "country": "AR",
+      "is_latam": true,
       "website": "https://www.aceleradoralitoral.com.ar",
       "stages": [
         "pre-seed",
@@ -118,6 +121,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Argentine deep tech VC investing pre-seed to Series A in science-based biotech, agtech, healthtech and frontier technology startups across Argentina and Latin America. Focuses on disruptive innovation with global potential: AI, space tech, brain-computer interfaces, biotech and advanced materials.",
       "country": "AR",
+      "is_latam": true,
       "website": "https://www.aircapital.vc",
       "stages": [
         "pre-seed",
@@ -153,6 +157,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Costa Rican early-stage VC backed by IDB Lab. Invests in technology and innovation startups in Central America and broader Latin America.",
       "country": "CR",
+      "is_latam": true,
       "website": "https://amador.vc",
       "stages": [
         "pre-seed",
@@ -185,6 +190,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Costa Rican accelerator and early-stage investor backing biotech agtech and innovation-driven startups across Central America and Latin America. Runs structured acceleration programs with equity.",
       "country": "CR",
+      "is_latam": true,
       "website": "https://antom.la",
       "stages": [
         "pre-seed",
@@ -217,6 +223,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Chilean VC fund based in Temuco (La Araucanía), led by women, backing Foodtech, Agtech and Climatech startups. Fund size ~$18M. Focus on aquaculture, fruit, livestock and seed industries in southern Chile and broader LATAM. Seed to late-seed.",
       "country": "CL",
+      "is_latam": true,
       "website": "https://www.araucaria.vc",
       "stages": [
         "seed",
@@ -250,6 +257,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Argentine pharmaceutical company Laboratorio Bagó with strategic investments in biotech and health innovation startups in Argentina and Latin America.",
       "country": "AR",
+      "is_latam": true,
       "website": "https://www.bago.com.ar",
       "stages": [
         "seed",
@@ -282,6 +290,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Swiss impact VC (Zurich) backing the future of sustainable food systems. Fund I closed at EUR 183M; expanding with a planned $750M growth fund. Invests in alt proteins, cell-based food, fermentation and food waste reduction ventures globally including Latin America.",
       "country": "CH",
+      "is_latam": true,
       "website": "https://www.bluehorizonventures.com",
       "stages": [
         "seed",
@@ -317,6 +326,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "HK",
+      "is_latam": false,
       "website": "https://brinc.io",
       "stages": [
         "pre-seed",
@@ -348,6 +358,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "US deep tech VC backing founders transforming physical industries: defense, energy, biotech, climate, advanced manufacturing, and sustainable food systems.",
       "country": "US",
+      "is_latam": false,
       "website": "https://cantos.vc",
       "stages": [
         "pre-seed",
@@ -377,6 +388,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Chilean VC backed by Endeavor Chile supporting high-growth startups in agtech biotech and innovation-driven sectors across Chile and Latin America. Active portfolio of 20+ companies.",
       "country": "CL",
+      "is_latam": true,
       "website": "https://chileglobalventures.cl",
       "stages": [
         "seed",
@@ -409,6 +421,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Chilean deeptech VC backing biotech medtech and climate ventures with a scientific foundation. Active in university spinout investment across Latin America.",
       "country": "AR",
+      "is_latam": true,
       "website": "https://cites-gss.com",
       "stages": [
         "seed",
@@ -442,6 +455,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "US",
+      "is_latam": false,
       "website": "https://www.conservation.org",
       "stages": [],
       "verticals": [],
@@ -464,6 +478,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "US",
+      "is_latam": false,
       "website": "",
       "stages": [],
       "verticals": [],
@@ -486,6 +501,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Mexican VC focused on deeptech agtech healthtech and sustainability ventures in Mexico and Latin America. Backs science-based founders building the next generation of transformative companies.",
       "country": "MX",
+      "is_latam": true,
       "website": "https://www.daluscapital.com",
       "stages": [
         "seed",
@@ -519,6 +535,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Central American and Latin American VC backing biotech agtech and science-based founders across Costa Rica and the broader LATAM region.",
       "country": "AR",
+      "is_latam": true,
       "website": "https://www.dragones.vc",
       "stages": [
         "seed",
@@ -551,6 +568,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "US",
+      "is_latam": false,
       "website": "https://draper.vc",
       "stages": [],
       "verticals": [],
@@ -573,6 +591,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "US",
+      "is_latam": false,
       "website": "https://draperuniversity.com",
       "stages": [],
       "verticals": [],
@@ -595,6 +614,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Latin American deeptech VC with Argentine roots investing in science-based biotech agtech and innovation-driven ventures. Part of the Draper Venture Network.",
       "country": "AR",
+      "is_latam": true,
       "website": "https://www.drapercygnus.com",
       "stages": [
         "seed",
@@ -628,6 +648,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Spanish agrifood accelerator and investor specializing in food systems innovation alternative proteins fermentation and sustainable foodtech. Strong programming in Latin America through Spanish-language cohorts.",
       "country": "ES",
+      "is_latam": true,
       "website": "https://eatableadventures.com",
       "stages": [
         "pre-seed",
@@ -661,6 +682,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Argentine VC fund investing in climate health and technology ventures in Argentina and Latin America. Backed by 1200 VC as part of its LATAM emerging fund portfolio.",
       "country": "AR",
+      "is_latam": true,
       "website": "https://endurance28.vc",
       "stages": [
         "seed",
@@ -693,6 +715,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "",
+      "is_latam": false,
       "website": "",
       "stages": [],
       "verticals": [],
@@ -715,6 +738,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "US",
+      "is_latam": false,
       "website": "https://future.ventures",
       "stages": [
         "seed",
@@ -745,6 +769,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "The Global Environment Facility provides grants and concessional financing for biodiversity climate and ecosystem sustainability. Committed $6M to The Yield Lab LATAM Opportunity Fund for decarbonized food systems.",
       "country": "US",
+      "is_latam": false,
       "website": "https://www.thegef.org",
       "stages": [
         "seed",
@@ -775,6 +800,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "",
+      "is_latam": false,
       "website": "",
       "stages": [],
       "verticals": [],
@@ -797,6 +823,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Argentine VC investing in science-based deeptech biotech and agtech ventures in Latin America. Backs founders at seed and series-A with follow-on capacity.",
       "country": "AR",
+      "is_latam": true,
       "website": "https://www.glocalfund.com",
       "stages": [
         "seed",
@@ -829,6 +856,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Deeptech company builder and early-stage fund based in Buenos Aires accelerating biotech climate health and science-based ventures across Latin America. Manages GridX II fund backed by IDB Lab.",
       "country": "AR",
+      "is_latam": true,
       "website": "https://www.gridexponential.com",
       "stages": [
         "pre-seed",
@@ -862,6 +890,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Argentine pharmaceutical and biotech conglomerate (Insud Pharma + mAbxience). Founded 1977 by Hugo Sigman & Silvia Gold. Operations in 50 countries, 20 production plants. Makes strategic investments in biotech and pharma startups aligned with its industrial capabilities.",
       "country": "AR",
+      "is_latam": true,
       "website": "https://www.grupoinsud.com",
       "stages": [
         "seed",
@@ -897,6 +926,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "World's first aquaculture-focused accelerator. Bergen, Norway. 3 funds totaling >€100M AUM, 60+ portfolio companies. Backs early-stage ventures reinventing aquaculture: nutrition, breeding, health, processing and monitoring technology. $130K ticket per cohort company ($75K cash + $55K in-kind).",
       "country": "NO",
+      "is_latam": true,
       "website": "https://www.hatch.blue",
       "stages": [
         "pre-seed",
@@ -931,6 +961,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "IDB Invest is the private sector arm of the Inter-American Development Bank Group providing equity and debt financing to companies and VC funds in Latin America. Backed Valor Growth Americas III and Partners for Growth.",
       "country": "US",
+      "is_latam": true,
       "website": "https://idbinvest.org",
       "stages": [
         "series-a",
@@ -964,6 +995,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "IDB Lab is the innovation lab of the Inter-American Development Bank Group backing high-impact entrepreneurship in Latin America through direct investments LP commitments and ecosystem support. LP in GridX SP Ventures The Yield Lab Amador 500 LatAm Kaete and others.",
       "country": "US",
+      "is_latam": true,
       "website": "https://bidlab.org",
       "stages": [
         "seed",
@@ -997,6 +1029,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "IDB Group lab focused on natural capital and biodiversity finance in Latin America. LP in Kaete Investimentos (Amazonia ReGenerate). Provides early-stage catalytic capital for ecosystem-positive ventures.",
       "country": "US",
+      "is_latam": true,
       "website": "https://bidlab.org",
       "stages": [
         "seed",
@@ -1029,6 +1062,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "",
+      "is_latam": false,
       "website": "https://www.innogen.capital",
       "stages": [],
       "verticals": [],
@@ -1051,6 +1085,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "",
+      "is_latam": false,
       "website": "",
       "stages": [],
       "verticals": [],
@@ -1073,6 +1108,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Finnish early-stage VC investing in science and technology startups across the Nordics and selectively in emerging markets including Latin America. Backs biotech agtech and healthtech founders.",
       "country": "FI",
+      "is_latam": false,
       "website": "https://www.inventure.fi",
       "stages": [
         "pre-seed",
@@ -1110,6 +1146,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Japan International Cooperation Agency supports agricultural development and innovation in Latin America through LP commitments to regional VC funds. Named LP partner in SP Ventures AgVentures III alongside IDB Lab.",
       "country": "JP",
+      "is_latam": true,
       "website": "https://www.jica.go.jp",
       "stages": [
         "seed",
@@ -1140,6 +1177,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Brazilian impact investor managing the Amazonia ReGenerate Accelerator and Investment Trust. Focuses on Amazon bioeconomy biodiversity-positive ventures and regenerative agriculture. Backed by IDB Lab and IDB Natural Capital Lab.",
       "country": "BR",
+      "is_latam": true,
       "website": "https://kaete.com.br",
       "stages": [
         "seed",
@@ -1173,6 +1211,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "",
+      "is_latam": false,
       "website": "",
       "stages": [],
       "verticals": [],
@@ -1195,6 +1234,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Argentine VC focused on biotech agtech and deep-science ventures building sustainable solutions for agriculture food systems and human health across Latin America.",
       "country": "AR",
+      "is_latam": true,
       "website": "https://www.kamayventures.com",
       "stages": [
         "seed",
@@ -1227,6 +1267,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "",
+      "is_latam": false,
       "website": "",
       "stages": [],
       "verticals": [],
@@ -1249,6 +1290,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Brazilian impact VC and fund manager focused on the Amazon bioeconomy biodiversity-positive ventures and sustainable agriculture across Brazil and the Amazon basin. Co-manages Amazonia ReGenerate with IDB Lab.",
       "country": "BR",
+      "is_latam": true,
       "website": "https://kptl.com.br",
       "stages": [
         "seed",
@@ -1282,6 +1324,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Latin American Venture Capital Association — industry body for VC/PE in Latin America. Not a direct investor; provides advocacy, research and LP/GP networking for the LATAM private capital ecosystem.",
       "country": "US",
+      "is_latam": true,
       "website": "https://lavca.org",
       "stages": [],
       "verticals": [],
@@ -1306,6 +1349,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "US-based climate-focused VC backing companies that cut and capture carbon including biotech agtech synthetic biology and clean energy ventures globally. Has invested in LATAM climate-bio crossovers.",
       "country": "US",
+      "is_latam": true,
       "website": "https://lowercarbon.com",
       "stages": [
         "seed",
@@ -1341,6 +1385,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Argentine VC investing in frontier-tech agtech health and consumer startups across Latin America. Focus on founders building platform businesses with network effects and scalable models.",
       "country": "AR",
+      "is_latam": true,
       "website": "https://newtopia.vc",
       "stages": [
         "seed",
@@ -1373,6 +1418,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Brazilian seed and Series A VC run by former operators backing technology startups in Latin America. 50+ portfolio companies. Provides capital plus talent and people-strategy support.",
       "country": "BR",
+      "is_latam": true,
       "website": "https://www.onevc.vc",
       "stages": [
         "seed",
@@ -1406,6 +1452,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "US",
+      "is_latam": false,
       "website": "https://ospraie.com",
       "stages": [
         "seed",
@@ -1436,6 +1483,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Argentine accelerator focused on agtech biotech and rural technology startups primarily from Córdoba and the Pampas agricultural region. Pre-seed focused with university linkages.",
       "country": "AR",
+      "is_latam": true,
       "website": "https://pampastart.com",
       "stages": [
         "pre-seed",
@@ -1466,6 +1514,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "US",
+      "is_latam": false,
       "website": "https://pfgrowth.com",
       "stages": [],
       "verticals": [],
@@ -1488,6 +1537,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "",
+      "is_latam": false,
       "website": "",
       "stages": [],
       "verticals": [],
@@ -1510,6 +1560,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "ES",
+      "is_latam": false,
       "website": "https://www.positiveventures.com",
       "stages": [
         "seed",
@@ -1540,6 +1591,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Peru-based early-stage VC (est. 2012) investing in technology founders building solutions for Latin America. Pre-seed through Series A. Pioneer institutional VC fund in Peru, backed by Swiss EP program.",
       "country": "PE",
+      "is_latam": true,
       "website": "https://www.salkantay.vc",
       "stages": [
         "pre-seed",
@@ -1574,6 +1626,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Chilean VC focused on impact-driven agtech biotech and climate innovation. Backs science-based founders in sustainable agriculture food systems and environmental tech across Chile and Latin America.",
       "country": "CL",
+      "is_latam": true,
       "website": "https://saviaventures.com",
       "stages": [
         "seed",
@@ -1606,6 +1659,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Argentine accelerator for science and deeptech startups from Latin American universities. Focuses on biotech agtech and health. Backed portfolio of 24+ LATAM science-based ventures.",
       "country": "AR",
+      "is_latam": true,
       "website": "https://sf500.org",
       "stages": [
         "pre-seed",
@@ -1638,6 +1692,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "",
+      "is_latam": false,
       "website": "",
       "stages": [],
       "verticals": [],
@@ -1660,6 +1715,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "New York-based multi-program VC ($1B+ AUM). Runs IndieBio (life sciences), HAX (hardware), dlab (China) and other accelerator programs. Pre-seed and seed focus globally. Parent entity — SOSV_IndieBio handles the biotech/LATAM pipeline specifically.",
       "country": "US",
+      "is_latam": true,
       "website": "https://sosv.com",
       "stages": [
         "pre-seed",
@@ -1695,6 +1751,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "IndieBio is SOSV's life sciences accelerator backing founders using biology to solve the greatest challenges in disease agriculture and climate. Program based in SF and NYC with global reach including LATAM.",
       "country": "US",
+      "is_latam": true,
       "website": "https://indiebio.co",
       "stages": [
         "pre-seed",
@@ -1729,6 +1786,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Brazilian agtech and foodtech VC managing the AgVentures fund series focused on food agriculture and climate-resilient biotechnology in Latin America. Backed by IDB Lab IDB Invest and JICA.",
       "country": "BR",
+      "is_latam": true,
       "website": "https://spventures.com.br",
       "stages": [
         "seed",
@@ -1763,6 +1821,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "US",
+      "is_latam": false,
       "website": "https://www.svb.com",
       "stages": [],
       "verticals": [],
@@ -1785,6 +1844,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Argentine biotech and deeptech accelerator building the pipeline of science-based startups from universities and research institutes across Latin America. Focuses on pre-seed biotechnology translation.",
       "country": "CL",
+      "is_latam": true,
       "website": "https://www.theganeshalab.com",
       "stages": [
         "pre-seed",
@@ -1817,6 +1877,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Agrifoodtech impact VC focused on food agriculture and climate-resilient innovation in Latin America. Manages the Opportunity Fund backed by IDB Lab and GEF. Targets 30 agrifoodtech companies per fund.",
       "country": "US",
+      "is_latam": true,
       "website": "https://theyieldlablatam.com",
       "stages": [
         "seed",
@@ -1849,6 +1910,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "US",
+      "is_latam": false,
       "website": "https://www.thirdsphere.com",
       "stages": [
         "seed",
@@ -1879,6 +1941,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "",
+      "is_latam": false,
       "website": "",
       "stages": [],
       "verticals": [],
@@ -1901,6 +1964,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "US-Brazil VC focused on growth-stage technology companies across Brazil including climate AI fintech healthcare and agtech. Manages Valor Growth Americas III backed by IDB Invest ($30M).",
       "country": "US",
+      "is_latam": false,
       "website": "https://www.valorcapitalgroup.com",
       "stages": [
         "series-a",
@@ -1935,6 +1999,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "US-based asset manager (Denver, est. 2012) investing across VC, PE and public markets. Led Stämm Biotech's $17M Series A (2022). Active in global deeptech and biotech with selective LATAM exposure.",
       "country": "US",
+      "is_latam": false,
       "website": "https://varanacapital.com",
       "stages": [
         "series-a",
@@ -1969,6 +2034,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "",
+      "is_latam": false,
       "website": "",
       "stages": [],
       "verticals": [],
@@ -1991,6 +2057,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "",
+      "is_latam": false,
       "website": "",
       "stages": [],
       "verticals": [],
@@ -2013,6 +2080,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Brazilian impact VC investing in technology-enabled solutions that serve low-income populations in Brazil across health education financial inclusion and climate sectors.",
       "country": "BR",
+      "is_latam": true,
       "website": "https://voxcapital.com.br",
       "stages": [
         "seed",
@@ -2045,6 +2113,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "",
+      "is_latam": false,
       "website": "",
       "stages": [],
       "verticals": [],
@@ -2067,6 +2136,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Mexican VC supporting deeptech biotech and health innovation startups across Mexico and Latin America. Focus on science-based founders building scalable solutions.",
       "country": "CL",
+      "is_latam": true,
       "website": "https://zentynel.com",
       "stages": [
         "seed",
@@ -2099,6 +2169,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Brazilian agtech VC backing founders building the future of food and agriculture in Latin America with focus on rural economy digitization and sustainable ag inputs.",
       "country": "BR",
+      "is_latam": true,
       "website": "https://www.barn.ag",
       "stages": [
         "seed",
@@ -2131,6 +2202,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Chilean early-stage VC investing in biotech agtech and deeptech ventures across Latin America with a scientific-founder focus.",
       "country": "CL",
+      "is_latam": true,
       "website": "https://fenventures.com",
       "stages": [
         "seed",
@@ -2163,6 +2235,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "One of Brazil's leading early-stage VCs with a diversified portfolio spanning healthtech agtech and digital infrastructure across LATAM.",
       "country": "BR",
+      "is_latam": true,
       "website": "https://www.monashees.com.br",
       "stages": [
         "seed",
@@ -2196,6 +2269,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "One of Latin America's largest and most active early-stage VC funds with 130+ portfolio companies including 13 unicorns; invests in technology companies from seed to growth across the region.",
       "country": "BR",
+      "is_latam": true,
       "website": "https://kaszek.com",
       "stages": [
         "seed",
@@ -2234,6 +2308,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "New York-based thematic VC fund investing in large networks of engaged users with growing focus on climate tech and nature-based solutions.",
       "country": "US",
+      "is_latam": true,
       "website": "https://usv.com",
       "stages": [
         "series-a",
@@ -2267,6 +2342,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Climate adaptation technology investor backing companies that help the world adapt to climate change through data analytics and digital solutions for agriculture water and infrastructure.",
       "country": "US",
+      "is_latam": true,
       "website": "https://www.lightsmith.com",
       "stages": [
         "series-a",
@@ -2300,6 +2376,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "German automotive manufacturer making strategic corporate investments in sustainable mobility and clean energy including eFuels production technology.",
       "country": "DE",
+      "is_latam": false,
       "website": "https://www.porsche.com",
       "stages": [
         "growth",
@@ -2332,6 +2409,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Brazilian private equity and venture capital firm focused on agribusiness food and beverage value chains with investments across the agricultural input production and distribution sectors.",
       "country": "BR",
+      "is_latam": true,
       "website": "https://www.aquacapital.com.br",
       "stages": [
         "series-a",
@@ -2366,6 +2444,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Early-stage VC firm founded in 2012 in San Jose Costa Rica investing in technology companies across Spanish-speaking Latin America with focus on smaller markets in Central America and Andean region.",
       "country": "CR",
+      "is_latam": true,
       "website": "https://www.caraov.com",
       "stages": [
         "seed",
@@ -2400,6 +2479,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Argentine early-stage technology venture capital fund managed by Ax Ventures backed by IDB Multilateral Investment Fund and Spanish COFIDES; invested in biotech deeptech and software companies in Argentina targeting global markets.",
       "country": "AR",
+      "is_latam": true,
       "website": "https://www.axventures.com",
       "stages": [
         "pre-seed",
@@ -2432,6 +2512,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Corporate venture capital arm of ARAUCO the Chilean forestry and pulp giant; invests in nature-tech forestry innovation and sustainability companies with focus on Chilean startups and global green economy.",
       "country": "CL",
+      "is_latam": true,
       "website": "https://arauco.com",
       "stages": [
         "series-a",
@@ -2465,6 +2546,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Chilean-Mexican early-stage VC firm founded in 2020 investing in seed and Series A technology companies across Latin America; focus on foodtech fintech healthtech and climate.",
       "country": "CL",
+      "is_latam": true,
       "website": "https://www.kayyakventures.com",
       "stages": [
         "seed",
@@ -2499,6 +2581,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Hong Kong-based family office and technology investor making strategic investments in science and technology companies globally including Latin America.",
       "country": "HK",
+      "is_latam": true,
       "website": "https://www.morningside.com",
       "stages": [
         "series-a",
@@ -2533,6 +2616,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Chilean venture capital fund (FIP ALERCE VC) created in 2016 by Endurance Investments and Pontificia Universidad Católica de Chile with CORFO support; focuses on deep technology in mining agriculture aquaculture food and forest industries.",
       "country": "CL",
+      "is_latam": true,
       "website": "https://endinv.com/fondo-alerce-vc/",
       "stages": [
         "seed",
@@ -2567,6 +2651,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Corporate venture capital arm of Corteva Agriscience (formerly DowDuPont Agriculture) investing in ag biologicals crop protection digital agriculture and sustainability startups globally.",
       "country": "US",
+      "is_latam": true,
       "website": "https://www.corteva.com/who-we-are/corteva-catalyst.html",
       "stages": [
         "seed",
@@ -2604,6 +2689,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "CL",
+      "is_latam": true,
       "website": "https://www.corfo.cl",
       "stages": [],
       "verticals": [
@@ -2632,6 +2718,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Brazilian VC backing deep-tech and biotech startups in drug discovery, agbio and synthetic biology.",
       "country": "BR",
+      "is_latam": true,
       "website": "https://www.ecoa.capital",
       "stages": [
         "pre-seed",
@@ -2664,6 +2751,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Impact investment in companies reducing social inequality and environmental degradation; bioeconomy focus including agbio and biopharma.",
       "country": "BR",
+      "is_latam": true,
       "website": "https://www.movinvestimentos.com.br",
       "stages": [
         "seed",
@@ -2697,6 +2785,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Brazil's national development bank. Provides equity, debt, and grants to innovative companies through BNDES Garagem, Fundo Criatec, and BNDES Inovação programs.",
       "country": "BR",
+      "is_latam": true,
       "website": "https://www.bndes.gov.br",
       "stages": [
         "seed",
@@ -2729,6 +2818,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Venture builder model: co-creates and co-owns biotech companies at intersection of science and business, focusing on therapeutics, diagnostics, agbio.",
       "country": "BR",
+      "is_latam": true,
       "website": "https://www.vesperventures.com.br",
       "stages": [
         "pre-seed",
@@ -2761,6 +2851,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Deep-tech and healthtech VC; portfolio includes neurotechnology and medtech companies.",
       "country": "BR",
+      "is_latam": true,
       "website": "https://www.greenrock.vc",
       "stages": [
         "seed",
@@ -2792,6 +2883,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Global VC with LATAM health and digital health focus; leads Series A/B in transformative technology companies.",
       "country": "US",
+      "is_latam": true,
       "website": "https://www.generalcatalyst.com",
       "stages": [
         "series-a",
@@ -2825,6 +2917,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Pre-seed accelerator investing $500K in exchange for 7% equity; backs the most ambitious founders globally.",
       "country": "US",
+      "is_latam": false,
       "website": "https://www.ycombinator.com",
       "stages": [
         "pre-seed"
@@ -2853,6 +2946,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Seed-stage agbiotech and bioeconomy investing in Brazil.",
       "country": "BR",
+      "is_latam": true,
       "website": "",
       "stages": [
         "pre-seed",
@@ -2883,6 +2977,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Agribusiness and agbiotech acceleration and seed investing in Brazil.",
       "country": "BR",
+      "is_latam": true,
       "website": "",
       "stages": [
         "pre-seed",
@@ -2913,6 +3008,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Veterinary health focused VC; invests in animal care platforms and diagnostics.",
       "country": "US",
+      "is_latam": true,
       "website": "",
       "stages": [
         "series-a"
@@ -2944,6 +3040,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Animal health and veterinary early-stage investing.",
       "country": "US",
+      "is_latam": true,
       "website": "",
       "stages": [
         "seed",
@@ -2975,6 +3072,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "LATAM-focused seed and pre-seed investor in healthtech, insurtech and digital health.",
       "country": "AR",
+      "is_latam": true,
       "website": "",
       "stages": [
         "pre-seed",
@@ -3007,6 +3105,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Pre-seed/seed VC backing ambitious Brazilian and LATAM founders in tech and healthtech.",
       "country": "BR",
+      "is_latam": true,
       "website": "https://www.canary.com.br",
       "stages": [
         "pre-seed",
@@ -3039,6 +3138,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Brazilian growth VC investing in companies scaling technology-driven businesses across LATAM.",
       "country": "BR",
+      "is_latam": true,
       "website": "https://www.atlantico.vc",
       "stages": [
         "series-a",
@@ -3071,6 +3171,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "BR",
+      "is_latam": true,
       "website": "https://www.dynamo.com.br",
       "stages": [],
       "verticals": [
@@ -3098,6 +3199,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Brazilian independent asset manager combining macro hedge funds and private equity. PE division takes minority growth positions in mid-to-large Brazilian companies.",
       "country": "BR",
+      "is_latam": true,
       "website": "https://www.gaveainvest.com.br",
       "stages": [
         "growth",
@@ -3129,6 +3231,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Brazilian PE and VC firm founded by former Banco Garantia partners. Invests in private equity, venture capital, and real estate with focus on healthcare, education, and agtech.",
       "country": "BR",
+      "is_latam": true,
       "website": "https://lanxcapital.com.br",
       "stages": [
         "series-a",
@@ -3160,6 +3263,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Latin America's development bank. Provides equity co-investment in VC funds and direct project financing to catalyze innovation and sustainable development across 18 member countries.",
       "country": "CO",
+      "is_latam": true,
       "website": "https://www.caf.com",
       "stages": [
         "series-a",
@@ -3191,6 +3295,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "New York VC investing in high-growth consumer and internet companies during their breakout phase. $2.65B AUM, $5-50M initial checks.",
       "country": "US",
+      "is_latam": true,
       "website": "https://www.leftlane.com",
       "stages": [
         "series-a",
@@ -3222,6 +3327,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "BR",
+      "is_latam": true,
       "website": "",
       "stages": [],
       "verticals": [
@@ -3249,6 +3355,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Brazilian early-stage VC (BossaNova Investimentos). Invests in seed and pre-seed startups across technology sectors including biotech, healthtech, and agtech.",
       "country": "BR",
+      "is_latam": true,
       "website": "https://bossanova.vc",
       "stages": [
         "pre-seed",
@@ -3279,6 +3386,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "BR",
+      "is_latam": true,
       "website": "",
       "stages": [],
       "verticals": [
@@ -3306,6 +3414,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Chilean alternative asset manager with $250M+ AUM across real estate, PE, private debt, and venture capital. VC component focuses on Chilean tech and deeptech.",
       "country": "CL",
+      "is_latam": true,
       "website": "https://venturance.cl",
       "stages": [
         "seed",
@@ -3336,6 +3445,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "World Bank Group's private sector arm. $3B+ in venture capital commitments to tech startups and VC funds in emerging markets, including agtech, health, and climate in LatAm.",
       "country": "US",
+      "is_latam": false,
       "website": "https://www.ifc.org",
       "stages": [
         "seed",
@@ -3367,6 +3477,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Brazilian biotech ecosystem organization and fund (Biominas Brasil). Manages the largest Brazilian biotech hub in Belo Horizonte and provides seed investment to life sciences startups.",
       "country": "BR",
+      "is_latam": true,
       "website": "https://biominas.org.br",
       "stages": [
         "pre-seed",
@@ -3397,6 +3508,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Braskem's corporate venture arm. $150M committed to startups in circular economy, carbon neutrality, biotechnology, new materials, and smart manufacturing.",
       "country": "BE",
+      "is_latam": false,
       "website": "https://oxygea.com.br",
       "stages": [
         "seed",
@@ -3427,6 +3539,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Brazilian concentrated-portfolio VC investing in AI-native and software-driven companies built by exceptional LatAm founders.",
       "country": "BR",
+      "is_latam": true,
       "website": "https://alexia.vc",
       "stages": [
         "seed",
@@ -3457,6 +3570,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Li Ka-shing's Hong Kong-based family office VC. Backs transformative deep science and technology including AI, biotech, synthetic biology, and food systems.",
       "country": "HK",
+      "is_latam": false,
       "website": "https://www.horizonsventures.com",
       "stages": [
         "seed",
@@ -3489,6 +3603,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "US",
+      "is_latam": false,
       "website": "https://www.hawthornefoodventures.com",
       "stages": [],
       "verticals": [
@@ -3516,6 +3631,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "BR",
+      "is_latam": true,
       "website": "",
       "stages": [],
       "verticals": [
@@ -3543,6 +3659,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "French diagnostics company (IVD leader) investing in innovative diagnostic, genomics, and infectious disease startups through a corporate venture program.",
       "country": "FR",
+      "is_latam": false,
       "website": "https://www.biomerieux.com",
       "stages": [
         "seed",
@@ -3574,6 +3691,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Brazilian early-stage VC investing in best-in-class founders across enterprise software, agtech, climate, and consumer sectors.",
       "country": "BR",
+      "is_latam": true,
       "website": "https://www.domoinvest.com.br",
       "stages": [
         "seed",
@@ -3604,6 +3722,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "BR",
+      "is_latam": true,
       "website": "https://www.bradesco.com.br",
       "stages": [],
       "verticals": [
@@ -3630,6 +3749,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Brussels-based family-backed VC investing in climate entrepreneurs across agtech, foodtech, and cleantech from pre-seed to Series A.",
       "country": "BE",
+      "is_latam": true,
       "website": "https://www.waterlemon.vc",
       "stages": [
         "pre-seed",
@@ -3663,6 +3783,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Global aquaculture and seafood VC. Invests in technology companies transforming sustainable seafood production across the full aquaculture value chain.",
       "country": "IE",
+      "is_latam": false,
       "website": "https://www.hatch.blue",
       "stages": [
         "seed",
@@ -3693,6 +3814,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Brazilian pharmaceutical company with $100M corporate venture fund targeting early-stage biotech in drug discovery: rare diseases, oncology, neurodegeneration, and autoimmune.",
       "country": "BR",
+      "is_latam": true,
       "website": "https://eurofarma.com",
       "stages": [
         "seed",
@@ -3724,6 +3846,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Argentine accelerator and seed fund based in Resistencia, Chaco. Backs early-stage agtech and edtech startups from underrepresented regions of Argentina.",
       "country": "AR",
+      "is_latam": true,
       "website": "https://laturbina.com.ar",
       "stages": [
         "pre-seed"
@@ -3753,6 +3876,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "BR",
+      "is_latam": true,
       "website": "https://primatec.com.br",
       "stages": [],
       "verticals": [
@@ -3780,6 +3904,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Brazilian early-stage accelerator and VC investing in Brazilian founders across enterprise software, agtech, and consumer tech sectors.",
       "country": "BR",
+      "is_latam": true,
       "website": "https://www.ace.vc",
       "stages": [
         "pre-seed",
@@ -3811,6 +3936,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "BR",
+      "is_latam": true,
       "website": "https://www.slcagricola.com.br",
       "stages": [],
       "verticals": [
@@ -3838,6 +3964,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "BR",
+      "is_latam": true,
       "website": "https://www.gvangels.com.br",
       "stages": [],
       "verticals": [
@@ -3865,6 +3992,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "",
       "country": "BR",
+      "is_latam": true,
       "website": "",
       "stages": [],
       "verticals": [
@@ -3892,6 +4020,7 @@ window.CAPITAL_ATLAS_DATA = {
       "source_presence": "db_investors",
       "thesis": "Latin America's largest and pioneering fund of funds for Private Equity and Venture Capital. Multi-pillar strategy: secondaries (40%), anchor LP in selected VC funds (30%), and direct co-investments alongside search funds and angel investors (30%). Fund VII target: R$1.6B. Invests across VC, growth, buyout, biotech, mining, and special situations.",
       "country": "BR",
+      "is_latam": true,
       "website": "https://spectrainvest.com",
       "stages": [
         "seed",

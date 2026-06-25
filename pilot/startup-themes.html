@@ -11,7 +11,7 @@
   <style>
     /* ── Site header ── */
     .site-header{
-      background:linear-gradient(158deg,#fdf8f2 0%,rgba(23,139,135,.06) 100%);
+      background:linear-gradient(158deg,#EAEAEA 0%,rgba(23,139,135,.06) 100%);
       border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);
       position:relative;overflow:hidden;margin-bottom:18px;
     }
@@ -148,7 +148,7 @@
     .fp-sec-clr.vis{display:inline}
     .fp-sec-clr:hover{text-decoration:underline}
 
-    .canvas-wrap{border:1px solid var(--line);border-radius:16px;background:radial-gradient(circle at 20% 20%,rgba(11,143,135,.04),transparent 18rem),radial-gradient(circle at 80% 15%,rgba(154,52,18,.04),transparent 20rem),#f7f4ee;overflow:hidden;position:relative;flex:1 1 auto;min-height:640px}
+    .canvas-wrap{border:1px solid var(--line);border-radius:16px;background:radial-gradient(circle at 20% 20%,rgba(11,143,135,.04),transparent 18rem),radial-gradient(circle at 80% 15%,rgba(154,52,18,.04),transparent 20rem),#EAEAEA;overflow:hidden;position:relative;flex:1 1 auto;min-height:640px}
     #themes-svg{display:block;width:100%;height:100%}
     .z-ctrl{position:absolute;right:12px;bottom:12px;display:grid;gap:5px;z-index:2}
     .z-btn{width:34px;height:34px;border-radius:9px;border:1px solid var(--line);background:rgba(255,255,255,.95);box-shadow:var(--shadow);font:inherit;font-size:.95rem;cursor:pointer}
@@ -164,7 +164,7 @@
     .hov-small{font-size:.68rem;color:var(--muted);margin-top:3px}
 
     .srch-wrap{position:relative}
-    .srch-res{position:absolute;z-index:6;top:calc(100% + 4px);left:0;right:0;display:none;max-height:200px;overflow:auto;border:1px solid var(--line);border-radius:11px;background:rgba(255,252,246,.98);box-shadow:var(--shadow);padding:3px}
+    .srch-res{position:absolute;z-index:6;top:calc(100% + 4px);left:0;right:0;display:none;max-height:200px;overflow:auto;border:1px solid var(--line);border-radius:11px;background:rgba(252,252,252,.98);box-shadow:var(--shadow);padding:3px}
     .srch-res.open{display:grid;gap:2px}
     .srch-item{border:0;border-radius:8px;background:transparent;color:var(--ink);cursor:pointer;display:grid;gap:1px;padding:5px 8px;text-align:left;font:inherit;font-size:.83rem}
     .srch-item:hover{background:rgba(11,143,135,.09)}
@@ -176,7 +176,7 @@
     .cs{width:9px;height:9px;border-radius:999px;border:1px solid rgba(0,0,0,.12)}
 
     /* ── Time Player ─────────────────────────────────────────────────────── */
-    .time-player{display:none;align-items:center;gap:10px;padding:6px 14px;background:rgba(255,252,246,.97);border-top:1px solid var(--line)}
+    .time-player{display:none;align-items:center;gap:10px;padding:6px 14px;background:rgba(252,252,252,.97);border-top:1px solid var(--line)}
     .time-player.open{display:flex}
     .tp-play{width:28px;height:28px;border-radius:50%;border:1.5px solid var(--accent);background:rgba(11,143,135,.08);color:var(--accent);font-size:.8rem;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background .12s;padding:0;line-height:1}
     .tp-play:hover{background:rgba(11,143,135,.2)}
@@ -228,7 +228,7 @@
     .analysis-eyebrow{font-size:.6rem;text-transform:uppercase;letter-spacing:.18em;color:var(--accent);font-weight:700;font-family:var(--sans);margin-bottom:3px}
     .analysis-title{font-size:1.12rem;font-weight:700;color:var(--ink);margin:0 0 6px;letter-spacing:-.02em;line-height:1.2}
     .analysis-desc{font-size:.74rem;color:var(--muted);line-height:1.5;margin:0}
-    .analysis-stage{position:relative;border:1px solid var(--line);border-radius:14px;background:radial-gradient(circle at 50% 50%,rgba(11,143,135,.03),transparent 60%),#f7f4ee;overflow:hidden}
+    .analysis-stage{position:relative;border:1px solid var(--line);border-radius:14px;background:radial-gradient(circle at 50% 50%,rgba(11,143,135,.03),transparent 60%),#EAEAEA;overflow:hidden}
     .analysis-stage svg{display:block;width:100%;height:100%}
     .asb-section-lbl{font-size:.58rem;text-transform:uppercase;letter-spacing:.15em;color:var(--accent);font-weight:700;font-family:var(--sans);margin:0 0 7px;display:block}
     .asb-axis-key{border:1px solid var(--line);border-radius:9px;padding:9px 11px;background:rgba(255,255,255,.6);margin-bottom:4px}
@@ -346,17 +346,21 @@
       border-radius:0!important;border:none!important;flex:1 1 auto;min-height:0;
     }
     #canvas-arbol{flex:1;min-height:0;overflow-y:auto;overflow-x:hidden;}
+    #dendro-legend-bar{position:sticky;top:0;z-index:10;background:var(--panel);border-bottom:1px solid var(--line);}
+    #dendro-legend-bar-inner{scrollbar-width:none;}
+    #dendro-legend-bar-inner::-webkit-scrollbar{display:none;}
     #canvas-arbol .analysis-stage{width:100%;border-radius:0!important;border:none!important;}
     #canvas-escala{flex:1;min-height:0;overflow:hidden;flex-direction:column;}
     #canvas-escala .analysis-stage{flex:1;min-height:0;width:100%;display:flex;flex-direction:column;border-radius:0!important;border:none!important;}
     #scatter-svg{flex:1;min-height:0;width:100%;display:block;}
     /* Detail panel slide-in */
     #bio-detail{
-      flex-shrink:0;border-left:1px solid var(--line);background:var(--panel);
+      position:absolute;top:0;right:0;bottom:0;
+      border-left:1px solid var(--line);background:var(--panel);
       overflow:hidden;display:flex;flex-direction:column;
-      width:0;
+      width:0;z-index:5;
     }
-    #bio-detail-inner{width:260px;min-width:260px;padding:20px;overflow-y:auto;}
+    #bio-detail-inner{width:280px;min-width:280px;padding:20px;overflow-y:auto;}
     @keyframes slideR{from{transform:translateX(20px);opacity:0}to{transform:translateX(0);opacity:1}}
     /* Detail panel content styles */
     .bdp-eyebrow{font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--bio-muted);margin-bottom:8px;font-family:var(--sans);}
@@ -470,6 +474,12 @@
         <div id="scatter-legend"></div>
       </div>
 
+      <!-- Catálogo nav — mismo sidebar, visible en modo Catálogo -->
+      <div id="cat-nav-wrapper" style="display:none;flex:1;min-height:0;flex-direction:column;overflow:hidden;border-top:1px solid var(--line);">
+        <div style="padding:10px 14px 8px;font-size:.62rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--bio-muted);font-family:var(--sans);flex-shrink:0;">Temas Bio</div>
+        <div id="cat-nav" style="flex:1;min-height:0;overflow-y:auto;"></div>
+      </div>
+
     </aside>
 
     <!-- ── CANVAS AREA flex:1 ── -->
@@ -477,11 +487,7 @@
 
       <!-- Sub-toolbar (Paradigmas mode) — layout modes + filters + search -->
       <div id="bio-sub-toolbar">
-        <div class="vt-group" title="Modo de posicionamiento en el mapa">
-          <button id="btn-editorial" class="vt-btn active" type="button" data-i18n="layout.editorial">Editorial</button>
-          <button id="btn-hybrid"    class="vt-btn"        type="button" data-i18n="layout.hibrido">Híbrido</button>
-          <button id="btn-semantic"  class="vt-btn"        type="button" data-i18n="layout.semantico">Semántico</button>
-        </div>
+        <!-- layout buttons eliminados — editorial es el único modo, fijo -->
         <button id="btn-labels" class="lbl-btn" type="button">Nombres ○</button>
         <button id="btn-filter" class="lbl-btn" type="button" data-i18n="layout.filtros">Filtros</button>
         <button id="btn-time"   class="lbl-btn" type="button" data-i18n="layout.tiempo">Tiempo</button>
@@ -548,7 +554,7 @@
       <!-- CANVAS: Paradigmas (UMAP scatter — default) -->
       <div id="canvas-paradigmas">
         <div class="canvas-wrap" id="canvas-wrap">
-          <svg id="themes-svg"></svg>
+          <svg id="themes-svg" preserveAspectRatio="xMidYMid meet"></svg>
           <div id="hov-card" class="hov"></div>
           <div id="anim-overlay" class="anim-overlay"></div>
           <div class="z-ctrl">
@@ -561,6 +567,10 @@
 
       <!-- CANVAS: Árbol (filogenia — oculto por default) -->
       <div id="canvas-arbol" style="display:none;">
+        <!-- Barra de leyenda horizontal sticky -->
+        <div id="dendro-legend-bar" style="position:sticky;top:0;z-index:10;background:var(--panel);border-bottom:1px solid var(--line);flex-shrink:0;min-height:36px;">
+          <div id="dendro-legend-bar-inner" style="display:flex;align-items:center;width:100%;height:36px;overflow-x:auto;scrollbar-width:none;padding:0 14px;gap:0;box-sizing:border-box;"></div>
+        </div>
         <div class="analysis-stage">
           <svg id="dendro-svg"></svg>
           <div id="dendro-tt" class="a-tooltip"></div>
@@ -575,12 +585,18 @@
         </div>
       </div>
 
-    </div><!-- /#bio-canvas-area -->
+      <!-- CANVAS: Catálogo por tema -->
+      <div id="canvas-catalogo" style="display:none;flex:1;min-height:0;width:100%;overflow:hidden;">
+        <!-- cat-nav vive en el sidebar (#sb-catalogo), aquí solo el scroll principal -->
+        <div id="cat-main" style="flex:1;min-width:0;width:100%;height:100%;overflow-y:auto;display:block;background:var(--bg);"></div>
+      </div>
 
-    <!-- Detail panel — slide-in desde derecha al seleccionar startup o cluster -->
-    <div id="bio-detail">
-      <div id="bio-detail-inner"></div>
-    </div>
+      <!-- Detail panel — position:absolute dentro del canvas, no afecta el layout -->
+      <div id="bio-detail">
+        <div id="bio-detail-inner"></div>
+      </div>
+
+    </div><!-- /#bio-canvas-area -->
 
   </div><!-- /#bio-main -->
 </div><!-- /#bio-app -->
@@ -613,20 +629,18 @@ const THEME_DESC = D.bio_theme_descriptions || {};
 
 // ── Editorial category palette — 7 bottom-up categories ─────────────────────
 const THEME_PAL={
-  "Therapeutics":                              "#6428A8",
-  "Diagnostics & Devices":                    "#1A6DB5",
-  "Food Systems & Alt Proteins":              "#B24A1C",
-  "Bioinputs & Crop Resilience":              "#246838",
-  "Nature & Ecosystem Tech":                  "#0A7060",
-  "Precision Agriculture":                    "#1F3D8A",
-  "Biomaterials & Green Chemistry":           "#8B6D14",
-  "Biomanufacturing & Platform Technologies": "#507A24",
-  // Eco-adjacent layer — muted slate signals "pertenece pero no es bio-core"
-  "Digital AgTech & Agrifintech":             "#8C8FA3",
-  // legacy alias — keeps old data working during transition
-  "Biomanufacturing & Fermentation Economy":  "#507A24",
+  "Therapeutics":                              "#a78bfa",
+  "Diagnostics & Devices":                    "#60a5fa",
+  "Food Systems & Alt Proteins":              "#22d3ee",
+  "Bioinputs & Crop Resilience":              "#2dd4bf",
+  "Nature & Ecosystem Tech":                  "#4ade80",
+  "Precision Agriculture":                    "#facc15",
+  "Biomaterials & Green Chemistry":           "#fb923c",
+  "Biomanufacturing & Platform Technologies": "#fb7185",
+  "Digital AgTech & Agrifintech":             "#f472b6",
+  "Biomanufacturing & Fermentation Economy":  "#fb7185",
 };
-const THEME_ADJ="#8a7d70"; // eco-adjacent / unclassified
+const THEME_ADJ="#94a3b8"; // eco-adjacent / unclassified
 
 // Ordered list for sidebar + theme-grid view (eco-adjacent al final)
 const THEME_ORDER=[
@@ -640,6 +654,9 @@ const THEME_ORDER=[
 function themeCol(bio_theme){
   return THEME_PAL[bio_theme]||THEME_ADJ;
 }
+// Exponer paleta globalmente para IIFEs posteriores (catálogo, árbol)
+window.THEME_PAL=THEME_PAL;
+window.THEME_ORDER_GLOBAL=THEME_ORDER;
 // Legacy alias (for graph edges that still use cluster_id)
 function clCol(cid){ return THEME_ADJ; }
 
@@ -710,7 +727,11 @@ document.getElementById("s-featured").textContent=D.stats.featured_count+" desta
 document.getElementById("s-funded").textContent=D.stats.funded_count+" con inversión";
 
 // ── Node objects ──────────────────────────────────────────────────────────
-const W0=900,H0=600;
+// Canvas lógico fijo — los nodos se mapean a este espacio invariante.
+// El SVG escala visualmente al tamaño del contenedor (preserveAspectRatio meet)
+// pero los XY de los nodos son siempre los mismos: misma imagen a cualquier tamaño de ventana.
+const W_CANVAS=1400,H_CANVAS=880;
+const W0=W_CANVAS,H0=H_CANVAS;
 let W=W0,H=H0;
 const nodes=startups.map(s=>({
   d:s,
@@ -747,8 +768,8 @@ function computeMapPos(mode){
   const rx=maxX-minX||1,ry=maxY-minY||1;
   nodes.forEach(n=>{
     const p=_posForMode(n.d,mode);
-    n.mx=pad+(p.x-minX)/rx*(W-pad*2);
-    n.my=pad+(p.y-minY)/ry*(H-pad*2);
+    n.mx=pad+(p.x-minX)/rx*(W_CANVAS-pad*2);
+    n.my=pad+(p.y-minY)/ry*(H_CANVAS-pad*2);
   });
 }
 
@@ -764,12 +785,7 @@ function switchLayoutMode(newMode){
 }
 
 // Actualizar botones de modo
-function updateLayoutButtons(mode){
-  ['editorial','hybrid','semantic'].forEach(m=>{
-    const btn=document.getElementById('btn-'+m);
-    if(btn) btn.classList.toggle('active', m===mode);
-  });
-}
+function updateLayoutButtons(mode){ /* noop — botones de modo eliminados; layout fijo en editorial */ }
 
 // ── Zoom-by-theme: camera zoom, no node movement ────────────────────────────
 // zx/zy always mirrors mx/my so nodes stay in UMAP positions.
@@ -802,7 +818,7 @@ function zoomClusterEntries(theme){
 
 // Collision repulsion + gentle gravity toward canvas center
 function relaxMapPos(iters=140){
-  const gcx=W*0.5, gcy=H*0.48; // ligeramente arriba del centro geométrico
+  const gcx=W_CANVAS*0.5, gcy=H_CANVAS*0.48; // ligeramente arriba del centro geométrico
   for(let it=0;it<iters;it++){
     // 1. Repulsión entre nodos solapados
     for(let i=0;i<nodes.length;i++){
@@ -829,8 +845,8 @@ function relaxMapPos(iters=140){
   }
   const pad=24;
   nodes.forEach(n=>{
-    n.mx=Math.max(pad,Math.min(W-pad,n.mx));
-    n.my=Math.max(pad,Math.min(H-pad,n.my));
+    n.mx=Math.max(pad,Math.min(W_CANVAS-pad,n.mx));
+    n.my=Math.max(pad,Math.min(H_CANVAS-pad,n.my));
   });
 }
 
@@ -889,10 +905,10 @@ function computeClusterPos(){
   const allKx=nodes.map(n=>n.kx),allKy=nodes.map(n=>n.ky);
   const mnX=Math.min(...allKx),mxX=Math.max(...allKx);
   const mnY=Math.min(...allKy),mxY=Math.max(...allKy);
-  const scX=(W-pad*2)/(mxX-mnX||1),scY=(H-pad*2)/(mxY-mnY||1);
+  const scX=(W_CANVAS-pad*2)/(mxX-mnX||1),scY=(H_CANVAS-pad*2)/(mxY-mnY||1);
   const sc=Math.min(scX,scY);
-  const ox=pad+(W-pad*2-(mxX-mnX)*sc)/2-mnX*sc;
-  const oy=pad+(H-pad*2-(mxY-mnY)*sc)/2-mnY*sc;
+  const ox=pad+(W_CANVAS-pad*2-(mxX-mnX)*sc)/2-mnX*sc;
+  const oy=pad+(H_CANVAS-pad*2-(mxY-mnY)*sc)/2-mnY*sc;
   nodes.forEach(n=>{n.kx=n.kx*sc+ox;n.ky=n.ky*sc+oy});
 }
 
@@ -904,8 +920,8 @@ let panX=0,panY=0,scale=1;
 let isPan=false,panSX=0,panSY=0,panSPX=0,panSPY=0;
 
 function setDims(){
-  W=wrap.clientWidth||W0;H=wrap.clientHeight||H0;
-  svgEl.setAttribute("viewBox",`0 0 ${W} ${H}`);
+  // viewBox siempre fijo — el SVG escala como imagen (preserveAspectRatio meet)
+  svgEl.setAttribute("viewBox","0 0 "+W_CANVAS+" "+H_CANVAS);
 }
 setDims();
 
@@ -924,6 +940,14 @@ function posHovLabel(){}
 
 
 function applyTf(){gRoot.setAttribute("transform",`translate(${panX},${panY}) scale(${scale})`)}
+
+// Convierte coordenadas CSS del mouse a coordenadas del canvas SVG lógico (0–W_CANVAS × 0–H_CANVAS)
+// Necesario porque el SVG escala con preserveAspectRatio="xMidYMid meet" y puede tener letterbox
+function clientToSVG(cx,cy){
+  const pt=svgEl.createSVGPoint();
+  pt.x=cx;pt.y=cy;
+  return pt.matrixTransform(svgEl.getScreenCTM().inverse());
+}
 
 // Node visual properties — tamaño por valuation_estimate_usd (escala LOG)
 // Log porque los datos van de $1.5M a $1.2B — 3 órdenes de magnitud.
@@ -958,7 +982,8 @@ function showLblFor(s){
 // Font size escalado al radio del dot: labels de dots chicos son más chicos
 function lblFontSize(s){
   const r=nRadius(s);
-  return Math.max(7, Math.min(11, r*0.72)).toFixed(1);
+  const minSz=nClave(s)?7:nGrandes(s)?6:5.5;
+  return Math.max(minSz, Math.min(11, r*0.72)).toFixed(1);
 }
 
 // ── Filter state — multi-selección con Sets ───────────────────────────────
@@ -1450,9 +1475,9 @@ function zoomToCluster(theme){
   const minX=Math.min(...xs)-40,maxX=Math.max(...xs)+40;
   const minY=Math.min(...ys)-40,maxY=Math.max(...ys)+40;
   const bW=maxX-minX||80,bH=maxY-minY||80;
-  const tScale=Math.min(8,Math.min(W/bW,H/bH)*0.82);
-  const tPX=W/2-((minX+maxX)/2)*tScale;
-  const tPY=H/2-((minY+maxY)/2)*tScale;
+  const tScale=Math.min(8,Math.min(W_CANVAS/bW,H_CANVAS/bH)*0.82);
+  const tPX=W_CANVAS/2-((minX+maxX)/2)*tScale;
+  const tPY=H_CANVAS/2-((minY+maxY)/2)*tScale;
   const s0=scale,px0=panX,py0=panY;
   const dur=420,t0=performance.now();
   function step(t){
@@ -2127,7 +2152,7 @@ srchIn.addEventListener("input",()=>{
       srchIn.value=s.name;srchRes.classList.remove("open");
       searchId=s.id;updateHighlights();updateBreadcrumbs();selectStartup(s);
       const n=nodeMap.get(s.id);
-      if(n){panX=W/2-n.cx*scale;panY=H/2-n.cy*scale;applyTf()}
+      if(n){panX=W_CANVAS/2-n.cx*scale;panY=H_CANVAS/2-n.cy*scale;applyTf()}
     });
     srchRes.appendChild(btn);
   });
@@ -2193,16 +2218,20 @@ document.getElementById("btn-filter").addEventListener("click",function(){
 // Pan + zoom
 svgEl.addEventListener("mousedown",e=>{
   if(e.target.tagName==="circle")return;
-  isPan=true;panSX=e.clientX;panSY=e.clientY;panSPX=panX;panSPY=panY;svgEl.style.cursor="grabbing";
+  isPan=true;
+  const sp=clientToSVG(e.clientX,e.clientY);
+  panSX=sp.x;panSY=sp.y;panSPX=panX;panSPY=panY;svgEl.style.cursor="grabbing";
 });
 window.addEventListener("mousemove",e=>{
-  if(!isPan)return;panX=panSPX+(e.clientX-panSX);panY=panSPY+(e.clientY-panSY);applyTf();
+  if(!isPan)return;
+  const sp=clientToSVG(e.clientX,e.clientY);
+  panX=panSPX+(sp.x-panSX);panY=panSPY+(sp.y-panSY);applyTf();
 });
 window.addEventListener("mouseup",()=>{isPan=false;svgEl.style.cursor=""});
 svgEl.addEventListener("wheel",e=>{
   e.preventDefault();
-  const rect=svgEl.getBoundingClientRect();
-  const mx=e.clientX-rect.left,my=e.clientY-rect.top;
+  const sp=clientToSVG(e.clientX,e.clientY);
+  const mx=sp.x,my=sp.y;
   const f=e.deltaY<0?1.12:.89;
   const ns=Math.max(.25,Math.min(8,scale*f));
   panX=mx-(mx-panX)*(ns/scale);panY=my-(my-panY)*(ns/scale);scale=ns;applyTf();
@@ -2259,26 +2288,15 @@ tpSlider.addEventListener("input",function(){
   syncTpYear();
 });
 
-// Resize — debounced para evitar recálculo por apertura de filtros/breadcrumbs
-let roLastW=0,roLastH=0,roTmr=null;
+// Resize — solo actualiza viewport (W/H/viewBox), NUNCA reposiciona nodos.
+// Las posiciones UMAP→pixel se calculan UNA vez al inicio y son canónicas.
+// #bio-detail es position:absolute, así que abrir/cerrar el panel no dispara este observer.
+let roTmr=null;
 const ro=new ResizeObserver(()=>{
+  // viewBox es fijo — solo re-aplica zoom-to-cluster si estaba activo
   clearTimeout(roTmr);
   roTmr=setTimeout(()=>{
-    const nW=wrap.clientWidth||W0,nH=wrap.clientHeight||H0;
-    if(nW===roLastW&&nH===roLastH)return; // sin cambio real
-    // Preservar posición del viewport ajustando el pan proporcionalmente
-    if(roLastW&&roLastH){
-      panX=panX*nW/roLastW;
-      panY=panY*nH/roLastH;
-    }
-    roLastW=nW;roLastH=nH;
-    setDims();computeMapPos();relaxMapPos();pushThemeCentroids();computeClusterPos();computeZoomPos();
-    nodes.forEach(n=>{
-      n.cx=viewMode==="map"?n.mx:viewMode==="cluster"?n.kx:n.zx;
-      n.cy=viewMode==="map"?n.my:viewMode==="cluster"?n.ky:n.zy;
-    });
-    updatePositions();updateHighlights();
-    applyTf();
+    if(viewMode==="zoom"&&activeTheme) zoomToCluster(activeTheme);
   },120);
 });
 ro.observe(wrap);
@@ -2308,11 +2326,11 @@ const D=window.STARTUP_THEMES_DATA;
 if(!D||!D.startups)return;
 
 const THEME_PAL={
-  "Therapeutics":"#6428A8",
-  "Diagnostics & Devices":"#1A6DB5",
-  "Food Systems & Alt Proteins":"#B24A1C",
-  "Bioinputs & Crop Resilience":"#246838",
-  "Nature & Ecosystem Tech":"#0A7060",
+  "Therapeutics":"#a78bfa",
+  "Diagnostics & Devices":"#60a5fa",
+  "Food Systems & Alt Proteins":"#22d3ee",
+  "Bioinputs & Crop Resilience":"#2dd4bf",
+  "Nature & Ecosystem Tech":"#4ade80",
   "Precision Agriculture":"#1F3D8A",
   "Biomaterials & Green Chemistry":"#8B6D14",
   "Biomanufacturing & Platform Technologies":"#507A24",
@@ -2398,7 +2416,7 @@ function build(){
   el("feGaussianBlur",{in:"SourceGraphic",stdDeviation:"13"},flt);
 
   // ── Plot area fill ───────────────────────────────────────────────────
-  el("rect",{x:PAD.l,y:PAD.t,width:CW,height:CH,fill:"#f7f4ee",rx:"10"},svg);
+  el("rect",{x:PAD.l,y:PAD.t,width:CW,height:CH,fill:"#EAEAEA",rx:"10"},svg);
 
   // ── Grid lines — X at each of 6 scale levels, Y at paradigm thirds ──────
   // X: 6 scale levels at -12, -7.2, -2.4, +2.4, +7.2, +12
@@ -2623,11 +2641,11 @@ const D=window.STARTUP_THEMES_DATA;
 if(!D||!D.startups)return;
 
 const THEME_PAL={
-  "Therapeutics":"#6428A8",
-  "Diagnostics & Devices":"#1A6DB5",
-  "Food Systems & Alt Proteins":"#B24A1C",
-  "Bioinputs & Crop Resilience":"#246838",
-  "Nature & Ecosystem Tech":"#0A7060",
+  "Therapeutics":"#a78bfa",
+  "Diagnostics & Devices":"#60a5fa",
+  "Food Systems & Alt Proteins":"#22d3ee",
+  "Bioinputs & Crop Resilience":"#2dd4bf",
+  "Nature & Ecosystem Tech":"#4ade80",
   "Precision Agriculture":"#1F3D8A",
   "Biomaterials & Green Chemistry":"#8B6D14",
   "Biomanufacturing & Platform Technologies":"#507A24",
@@ -2873,7 +2891,7 @@ function build(){
   const H=Math.max(520, N*MIN_ROW+totalGap+PAD.t+PAD.b);
   svg.style.cssText="width:100%;display:block;height:"+H+"px";
   svg.setAttribute("viewBox",`0 0 ${W} ${H}`);
-  el("rect",{x:0,y:0,width:W,height:H,fill:"#f7f4ee"},svg);
+  el("rect",{x:0,y:0,width:W,height:H,fill:"#EAEAEA"},svg);
   const CH=H-PAD.t-PAD.b;
 
   // ── Assign Y to cluster rows ──────────────────────────────────────
@@ -2990,7 +3008,7 @@ function build(){
       const k3lx=(X_MEGA+X_K3)/2;
       const k3LblW=K3_NODE.name.length*6.2+14;
       el("rect",{x:k3lx-k3LblW/2,y:k3MidY-8,width:k3LblW,height:16,
-        fill:"#f7f4ee",opacity:"0.90",rx:"3",
+        fill:"#EAEAEA",opacity:"0.90",rx:"3",
         transform:`rotate(-90,${k3lx},${k3MidY})`},layerLabels);
       el("text",{x:k3lx,y:k3MidY,"text-anchor":"middle","dominant-baseline":"central",
         "font-size":"10","font-weight":"700",fill:K3_NODE.color,opacity:"0.90",
@@ -3011,7 +3029,7 @@ function build(){
     const mlx=(X_ROOT+X_MEGA)/2;
     const mgLblW=mega.name.length*7.2+14;
     const mgHit=el("rect",{x:mlx-mgLblW/2,y:mgData.midY-9,width:mgLblW,height:18,
-      fill:"#f7f4ee",opacity:"0.90",rx:"3",cursor:"pointer",
+      fill:"#EAEAEA",opacity:"0.90",rx:"3",cursor:"pointer",
       transform:`rotate(-90,${mlx},${mgData.midY})`},layerLabels);
     const mgLbl=el("text",{x:mlx,y:mgData.midY,"text-anchor":"middle","dominant-baseline":"central",
       "font-size":"12","font-weight":"800",fill:mega.color,opacity:"0.92",
@@ -3058,7 +3076,7 @@ function build(){
     const lx=isThroughK3?(X_K3+X_MACRO)/2:(X_MEGA+X_MACRO)/2;
     const macroLblW=macro.name.length*6.6+14;
     const mcHit=el("rect",{x:lx-macroLblW/2,y:mData.midY-8,width:macroLblW,height:16,
-      fill:"#f7f4ee",opacity:"0.90",rx:"3",cursor:"pointer",
+      fill:"#EAEAEA",opacity:"0.90",rx:"3",cursor:"pointer",
       transform:`rotate(-90,${lx},${mData.midY})`},layerLabels);
     const mlbl=el("text",{x:lx,y:mData.midY,"text-anchor":"middle","dominant-baseline":"central",
       "font-size":"11","font-weight":"700",fill:macro.color,opacity:"0.90",
@@ -3114,7 +3132,7 @@ function build(){
     const themeTxt=SHORT_THEME[theme]||theme;
     const themeLblW=themeTxt.length*5.9+10;
     el("rect",{x:X_THEME-12-themeLblW,y:tData.midY-7,width:themeLblW,height:14,
-      fill:"#f7f4ee",opacity:"0.90",rx:"2"},layerLabels);
+      fill:"#EAEAEA",opacity:"0.90",rx:"2"},layerLabels);
     const tl=el("text",{x:X_THEME-12,y:tData.midY,"text-anchor":"end","dominant-baseline":"central",
       "font-size":"10","font-weight":"700",fill:tData.color,opacity:"0.90",
       "font-family":"DM Sans,sans-serif","pointer-events":"none"},layerLabels);
@@ -3167,7 +3185,7 @@ function build(){
   }
   // Click on SVG background resets — but NOT clicks on content elements
   svg.addEventListener("click",(e)=>{
-    if(e.target===svg || e.target.getAttribute("fill")==="#f7f4ee" && !e.target.getAttribute("cursor"))resetHL();
+    if(e.target===svg || e.target.getAttribute("fill")==="#EAEAEA" && !e.target.getAttribute("cursor"))resetHL();
   });
 
   // ── Cluster rows: ecológico — label + strip de etapa + tokens + count ──
@@ -3181,19 +3199,29 @@ function build(){
     el("circle",{cx:X_CLUST,cy:c.y,r:"3",fill:c.color,opacity:"0.90",
       stroke:"rgba(255,255,255,.72)","stroke-width":"0.9"},layerNodes);
 
-    // ── Síntesis semántica: nombre y descripción desde bigrams colectivos ──
+    // ── Anchor names: top-3 startups por quality_score como identificador primario ──
     const sem=clusterSemantic(c.startups);
+    const topSorted=c.startups.slice().sort((a,b)=>(b.quality_score||0)-(a.quality_score||0));
+    const topNames=topSorted.slice(0,3).map(s=>s.name.replace(/\s+S\.?A\.?S?\.?$/i,'').replace(/\s+S\.?R\.?L\.?$/i,'').replace(/\s+Inc\.?$/i,'').trim());
+    const anchorLabel=topNames.join(' - ');
 
-    // Label: top bigram como nombre de familia (reemplaza sub_cluster_label)
     const lblG=el("g",{"data-theme":c.theme},layerLabels);
-    const maxLblChars=Math.floor(SUB_W/5.2);
-    const rawLbl=sem.label||c.label||'';
-    const lblTxt=rawLbl.length>maxLblChars?rawLbl.slice(0,maxLblChars-1)+'…':rawLbl;
-    el("text",{x:X_SUB,y:c.y,"dominant-baseline":"central",
-      "font-size":"9.5","font-weight":"700",fill:c.color,opacity:"0.90",
+    const maxLblChars=Math.floor(SUB_W/5.0);
+    const lblTxt=anchorLabel.length>maxLblChars?anchorLabel.slice(0,maxLblChars-1)+'...':anchorLabel;
+    el("text",{x:X_SUB,y:c.y-4,"dominant-baseline":"central",
+      "font-size":"9","font-weight":"700",fill:c.color,opacity:"0.90",
       "font-family":"DM Sans,sans-serif","pointer-events":"none"},lblG).textContent=lblTxt;
 
-    // Grupo de datos (descripción: bigrams 2-3)
+    // Subtitulo: bigram semantico
+    const semDesc=sem.label||'';
+    if(semDesc){
+      const maxSub=Math.floor(SUB_W/4.8);
+      const subTxt=semDesc.length>maxSub?semDesc.slice(0,maxSub-1)+'...':semDesc;
+      el("text",{x:X_SUB,y:c.y+5,"dominant-baseline":"central",
+        "font-size":"7.5","font-style":"italic",fill:c.color,opacity:"0.55",
+        "font-family":"DM Sans,sans-serif","pointer-events":"none"},lblG).textContent=subTxt;
+    }
+
     const dataG=el("g",{"data-theme":c.theme},layerDots);
     const stageCounts={};
     c.startups.forEach(s=>{
@@ -3202,23 +3230,13 @@ function build(){
     });
     const total=c.startups.length;
 
-    const phraseW=W-PAD.r-X_STRIP-38;
-    if(sem.desc&&phraseW>50){
-      const maxChars=Math.max(8,Math.floor(phraseW/5.2));
-      const phraseTxt=sem.desc.length>maxChars?sem.desc.slice(0,maxChars-1)+'…':sem.desc;
-      el("text",{x:X_STRIP,y:c.y,"dominant-baseline":"central",
-        "font-size":"8.5","font-style":"italic",fill:"#9a8f85",
-        "font-family":"DM Sans,sans-serif","pointer-events":"none"},dataG)
-        .textContent=phraseTxt;
-    }
-
     // ── Count ──
     el("text",{x:W-PAD.r-4,y:c.y,"dominant-baseline":"central","text-anchor":"end",
       "font-size":"10","font-weight":"700",fill:c.color,opacity:"0.55",
       "font-family":"DM Sans,sans-serif","pointer-events":"none"},lblG)
       .textContent=total;
 
-    // Tooltip
+    // Tooltip enriquecido: lista de startups + contexto semantico
     dataG.style.cursor="default";
     dataG.addEventListener("mousemove",e=>{
       e.stopPropagation();
@@ -3231,10 +3249,13 @@ function build(){
       const breakdown=STAGE_ORDER_BAR
         .filter(st=>stageCounts[st])
         .map(st=>'<span style="color:'+( STAGE_COL[st]||'#aaa' )+'">'+( STAGE_LBL[st]||st )+' '+stageCounts[st]+'</span>')
-        .join(" · ");
-      tt.innerHTML='<div class="a-tt-name">'+c.label+'</div>'+
-        '<div class="a-tt-theme" style="color:'+c.color+'">'+( SHORT_THEME[c.theme]||c.theme )+'</div>'+
-        '<div class="a-tt-body">'+total+' startups · '+breakdown+'</div>';
+        .join(" \xB7 ");
+      const nameList=topSorted.slice(0,6).map(s=>'<div style="color:var(--ink);font-size:10px;padding:1px 0">• '+s.name+'</div>').join('');
+      const more=total>6?'<div style="color:var(--muted);font-size:9px">+ '+(total-6)+' mas...</div>':'';
+      tt.innerHTML='<div class="a-tt-name">'+(sem.label||c.label)+'</div>'+
+        '<div class="a-tt-theme" style="color:'+c.color+'">'+( SHORT_THEME[c.theme]||c.theme )+' &middot; '+total+' startups</div>'+
+        '<div style="margin:5px 0 3px;border-top:1px solid var(--line);padding-top:4px">'+nameList+more+'</div>'+
+        '<div class="a-tt-body">'+breakdown+'</div>';
       tt.classList.add("vis");
     });
     dataG.addEventListener("mouseleave",()=>tt.classList.remove("vis"));
@@ -3252,52 +3273,52 @@ const roD=new ResizeObserver(()=>{
 });
 roD.observe(document.getElementById("canvas-arbol"));
 
-// ── Sidebar legends ─────────────────────────────────────────────────────
+// ── Leyenda horizontal (barra sticky en canvas-arbol) ───────────────────
 (function(){
-  // Mega + Macro groups legend
-  const macroLeg=document.getElementById("dendro-macro-legend");
-  if(macroLeg){
-    const macroCounts={};
-    startups.forEach(s=>{
-      const m=MACRO_ORDER.find(m=>m.themes.includes(s.bio_theme));
-      if(m)macroCounts[m.name]=(macroCounts[m.name]||0)+1;
+  const bar=document.getElementById("dendro-legend-bar-inner");
+  if(!bar)return;
+  const tc={};
+  startups.forEach(s=>{if(s.bio_theme)tc[s.bio_theme]=(tc[s.bio_theme]||0)+1;});
+  // Mega sections
+  MEGA_ORDER.forEach((mg,mi)=>{
+    if(mi>0){
+      const sep=document.createElement("span");
+      sep.style.cssText="display:inline-block;width:1px;background:var(--line);flex-shrink:0;align-self:stretch;margin:0 10px;";
+      bar.appendChild(sep);
+    }
+    const lbl=document.createElement("span");
+    lbl.style.cssText="font-family:var(--sans);font-size:7.5px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:"+mg.color+";padding-right:8px;border-right:2px solid "+mg.color+";margin-right:8px;flex-shrink:0;white-space:nowrap;";
+    lbl.textContent=mg.name==="BioIndustria & Territorio"?"BioIndustria":mg.name;
+    bar.appendChild(lbl);
+    const themes=mg.macros.flatMap(mn=>{const m=MACRO_ORDER.find(o=>o.name===mn);return m?m.themes:[];}).filter(t=>THEME_ORDER_DENDRO.includes(t));
+    themes.forEach(theme=>{
+      const cnt=tc[theme]||0; if(!cnt)return;
+      const col=tcol(theme);
+      const chip=document.createElement("span");
+      chip.style.cssText="display:inline-flex;align-items:center;gap:4px;font-family:var(--sans);font-size:9px;white-space:nowrap;margin-right:10px;flex-shrink:0;";
+      chip.innerHTML='<span style="width:7px;height:7px;border-radius:50%;background:'+col+';flex-shrink:0;display:inline-block"></span>'+'<span style="color:var(--ink)">'+(SHORT_THEME[theme]||theme)+'</span>'+'<span style="color:var(--muted);font-size:8px">'+cnt+'</span>';
+      bar.appendChild(chip);
     });
-    MEGA_ORDER.forEach(mg=>{
-      // Mega header
-      const mgd=document.createElement("div");
-      mgd.style.cssText=`margin:6px 0 2px 0;padding:3px 6px 3px 8px;border-left:3px solid ${mg.color};background:${mg.color}14;border-radius:0 5px 5px 0`;
-      mgd.innerHTML=`<div style="font-size:.78rem;font-weight:800;color:${mg.color}">${mg.name} <span style="font-size:.63rem;font-weight:400;color:var(--muted)">${startups.filter(s=>MEGA_MAP[s.bio_theme]===mg.name).length}</span></div>`;
-      macroLeg.appendChild(mgd);
-      // Macro items under this mega
-      mg.macros.forEach(mn=>{
-        const m=MACRO_ORDER.find(o=>o.name===mn); if(!m)return;
-        const d=document.createElement("div");
-        d.className="asb-macro-item";
-        d.style.cssText=`border-left-color:${m.color};margin-left:8px`;
-        const themeNames=m.themes.map(t=>SHORT_THEME[t]||t).join(", ");
-        const cnt=macroCounts[m.name]||0;
-        d.innerHTML=`<div class="asb-macro-name" style="color:${m.color}">${m.name} <span style="font-size:.63rem;font-weight:400;color:var(--muted)">${cnt}</span></div>`+
-          `<div class="asb-macro-themes">${themeNames}</div>`;
-        macroLeg.appendChild(d);
-      });
-    });
-  }
-  // Theme legend
-  const themeLeg=document.getElementById("dendro-theme-legend");
-  if(themeLeg){
-    const counts={};
-    startups.forEach(s=>{if(s.bio_theme)counts[s.bio_theme]=(counts[s.bio_theme]||0)+1;});
-    THEME_ORDER_DENDRO.forEach(theme=>{
-      const cnt=counts[theme]||0;
-      if(!cnt)return;
-      const d=document.createElement("div");
-      d.className="asb-legend-item";
-      d.innerHTML=`<span class="asb-legend-dot" style="background:${tcol(theme)}"></span>`+
-        `<span class="asb-legend-name">${SHORT_THEME[theme]||theme}</span>`+
-        `<span class="asb-legend-cnt">${cnt}</span>`;
-      themeLeg.appendChild(d);
-    });
-  }
+  });
+  // Etapa legend
+  const ssep=document.createElement("span");
+  ssep.style.cssText="margin-left:auto;display:inline-block;width:1px;background:var(--line);flex-shrink:0;align-self:stretch;margin-right:0;";
+  bar.appendChild(ssep);
+  const sw=document.createElement("div");
+  sw.style.cssText="display:flex;align-items:center;gap:9px;padding:0 14px;flex-shrink:0;";
+  const sl=document.createElement("span");
+  sl.style.cssText="font-family:var(--sans);font-size:7px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);";
+  sl.textContent="Etapa"; sw.appendChild(sl);
+  const SC={};
+  startups.forEach(s=>{if(s.funding_stage)SC[s.funding_stage]=(SC[s.funding_stage]||0)+1;});
+  [["pre-seed","#C8D5E8","Pre"],["seed","#7EB8F5","Seed"],["series-a","#4ADE80","Serie A"],["series-b","#16A34A","Serie B"],["growth","#F59E0B","Growth"]].forEach(([k,col,lbl])=>{
+    if(!SC[k])return;
+    const c=document.createElement("span");
+    c.style.cssText="display:inline-flex;align-items:center;gap:4px;font-family:var(--sans);font-size:8.5px;white-space:nowrap;";
+    c.innerHTML='<span style="width:7px;height:7px;border-radius:50%;background:'+col+';display:inline-block;flex-shrink:0"></span><span style="color:var(--muted)">'+lbl+'</span>';
+    sw.appendChild(c);
+  });
+  bar.appendChild(sw);
 })();
 
 // ══════════════════════════════════════════════════════════════════════════
@@ -3322,34 +3343,30 @@ function switchCanvasMode(mode){
     if(!el) return;
     el.style.display = show ? (id==='canvas-arbol' ? 'block' : 'flex') : 'none';
   };
-  showCanv('canvas-paradigmas', mode==='paradigmas'||mode==='catalogo');
+  showCanv('canvas-paradigmas', mode==='paradigmas');
   showCanv('canvas-arbol',       mode==='arbol');
   showCanv('canvas-escala',      mode==='escala');
+  showCanv('canvas-catalogo',    mode==='catalogo');
 
   // Mostrar/ocultar sidebar sections
   const showSb = (id, show) => {
     const el=document.getElementById(id);
     if(el) el.style.display = show ? 'flex' : 'none';
   };
-  showSb('sb-clusters', mode==='paradigmas'||mode==='catalogo');
-  showSb('sb-arbol',    mode==='arbol');
+  showSb('sb-clusters', mode==='paradigmas');
+  showSb('sb-arbol',    false);
   showSb('sb-escala',   mode==='escala');
+  showSb('cat-nav-wrapper', mode==='catalogo');
 
   // Mostrar/ocultar sub-toolbar (solo en paradigmas/catalogo)
   const tb=document.getElementById('bio-sub-toolbar');
-  if(tb) tb.style.display = (mode==='paradigmas'||mode==='catalogo') ? 'flex' : 'none';
+  if(tb) tb.style.display = mode==='paradigmas' ? 'flex' : 'none';
 
-  // En modo Catálogo: forzar layoutMode=editorial para ver los temas en grid
-  if(mode==='catalogo' && typeof switchLayoutMode==='function'){
-    switchLayoutMode('editorial');
-  }
-
-  // Trigger rebuild en el SVG visible — los ResizeObservers ya hacen esto,
-  // pero un setTimeout garantiza que el layout haya calculado dimensiones reales
+  // Trigger rebuild en el SVG visible
   setTimeout(()=>{
     if(mode==='escala'   && typeof scatterBuild==='function') scatterBuild();
     if(mode==='arbol'    && typeof treeBuild   ==='function') treeBuild();
-    window.dispatchEvent(new Event('resize'));
+    if(mode==='catalogo' && typeof buildCatalog==='function') buildCatalog();
   }, 60);
 }
 
@@ -3424,6 +3441,560 @@ window.FLAG_MAP = window.FLAG_MAP || {};
 
 // openDetailPanel / closeDetailPanel son llamados directamente desde buildClusterList y resetAll
 // (hooks inyectados en el IIFE principal)
+
+})();
+
+// ══════════════════════════════════════════════════════════════════════════
+// CANVAS: CATÁLOGO — página de recepción por tema (master-detail, click nav)
+// ══════════════════════════════════════════════════════════════════════════
+(function(){
+"use strict";
+
+const D=window.STARTUP_THEMES_DATA;
+if(!D)return;
+const startups=D.startups||[];
+const THEME_PAL=window.THEME_PAL||{};
+const THEME_ORDER_CAT=[
+  'Diagnostics & Devices','Therapeutics','Food Systems & Alt Proteins',
+  'Biomaterials & Green Chemistry','Biomanufacturing & Platform Technologies',
+  'Bioinputs & Crop Resilience','Nature & Ecosystem Tech','Precision Agriculture',
+  'Digital AgTech & Agrifintech'
+];
+const SHORT_THEME_CAT={
+  'Diagnostics & Devices':'Diagnóstico',
+  'Therapeutics':'Terapéutica',
+  'Food Systems & Alt Proteins':'Food Systems',
+  'Biomaterials & Green Chemistry':'Biomateriales',
+  'Biomanufacturing & Platform Technologies':'Biomanufactura',
+  'Bioinputs & Crop Resilience':'Bioinsumos',
+  'Nature & Ecosystem Tech':'Nature Tech',
+  'Precision Agriculture':'Agricultura de Precisión',
+  'Digital AgTech & Agrifintech':'Digital AgTech'
+};
+// Descripciones editoriales por tema
+const THEME_DESC={
+  'Diagnostics & Devices':'Tecnologías de diagnóstico in vitro, dispositivos médicos, biosensores y herramientas de monitoreo para detección temprana y seguimiento de enfermedades.',
+  'Therapeutics':'Medicina regenerativa, terapia celular, biologics y desarrollo clínico de fármacos para oncología, enfermedades crónicas y neurología.',
+  'Food Systems & Alt Proteins':'Proteínas alternativas, fermentación de precisión, cultivo celular e innovación en sistemas alimentarios sostenibles y nutrición funcional.',
+  'Biomaterials & Green Chemistry':'Materiales biológicos, biopolímeros, química verde y economía circular para reemplazar plásticos y materiales de origen fósil.',
+  'Biomanufacturing & Platform Technologies':'Plataformas de bioproducción, fermentación industrial, biorreactores y tecnologías habilitadoras para escalar la bioeconomía.',
+  'Bioinputs & Crop Resilience':'Bioinsumos microbianos, bioestimulantes y soluciones de protección de cultivos que reemplazan agroquímicos convencionales.',
+  'Nature & Ecosystem Tech':'Tecnologías para restauración de ecosistemas, monitoreo ambiental, conservación de biodiversidad y mitigación del cambio climático.',
+  'Precision Agriculture':'Sensores, drones, sistemas de información geográfica y analytics para optimización de rendimientos y gestión de recursos en campo.',
+  'Digital AgTech & Agrifintech':'Software agrícola, fintech para el agro, trazabilidad, marketplaces y herramientas digitales para la cadena de valor agropecuaria.'
+};
+const FLAG_MAP=window.FLAG_MAP||{};
+// Abreviatura de 2 letras para mostrar en barras
+const CC2={Argentina:'AR',Brasil:'BR',Brazil:'BR',Chile:'CL',Colombia:'CO',Mexico:'MX',México:'MX',Uruguay:'UY',Peru:'PE',Perú:'PE',Ecuador:'EC','Costa Rica':'CR',Panama:'PA',Paraguay:'PY',Bolivia:'BO',Venezuela:'VE',Spain:'ES',España:'ES',UK:'UK',US:'US',USA:'US',Guatemala:'GT'};
+
+// ── Scatter grande con ejes etiquetados ──────────────────────────────────
+// Usa rango GLOBAL del ecosistema (no auto por tema) para que la posición
+// del cluster dentro del mapa sea interpretable cross-tema.
+function buildThemeScatter(ss, col){
+  const W=560, H=190;
+  const PAD={t:20,b:36,l:44,r:16};
+  const CW=W-PAD.l-PAD.r, CH=H-PAD.t-PAD.b;
+  const ns='http://www.w3.org/2000/svg';
+  const svg=document.createElementNS(ns,'svg');
+  svg.setAttribute('viewBox','0 0 '+W+' '+H);
+  svg.style.cssText='width:100%;height:'+H+'px;display:block;';
+  const mk=(tag,attr,p)=>{const e=document.createElementNS(ns,tag);Object.entries(attr||{}).forEach(([k,v])=>e.setAttribute(k,v));(p||svg).appendChild(e);return e;};
+  // Rango global fijo — cubre el 99% del ecosistema BIO LATAM
+  const xMin=-14, xMax=14, yMin=-14, yMax=14;
+  const scX=v=>PAD.l+CW*(v-xMin)/(xMax-xMin);
+  const scY=v=>PAD.t+CH*(1-(v-yMin)/(yMax-yMin));
+  // Fondo
+  mk('rect',{x:PAD.l,y:PAD.t,width:CW,height:CH,fill:'rgba(0,0,0,.04)',rx:'6'});
+  // Ejes centrados en 0
+  mk('line',{x1:scX(0),y1:PAD.t,x2:scX(0),y2:PAD.t+CH,stroke:'rgba(0,0,0,.13)','stroke-width':'0.8'});
+  mk('line',{x1:PAD.l,y1:scY(0),x2:PAD.l+CW,y2:scY(0),stroke:'rgba(0,0,0,.13)','stroke-width':'0.8'});
+  // Dots
+  ss.forEach(s=>{
+    if(typeof s.sx!=='number'||typeof s.sy!=='number')return;
+    const px=scX(s.sx), py=scY(s.sy);
+    if(px<PAD.l||px>PAD.l+CW||py<PAD.t||py>PAD.t+CH)return;
+    const r=s.valuation_tier>=3?5:s.valuation_tier>=2?3.5:2.2;
+    const op=s.quality_band==='high'?0.85:0.55;
+    mk('circle',{cx:px.toFixed(1),cy:py.toFixed(1),r:r.toString(),fill:col,opacity:op.toString()});
+  });
+  // Etiquetas de ejes — en los bordes del área de plot
+  const F='font-family:var(--sans);';
+  // Eje X — abajo, centrado
+  mk('text',{x:PAD.l+CW/2,y:PAD.t+CH+24,'text-anchor':'middle','font-size':'8.5',fill:'rgba(0,0,0,.38)',style:F}).textContent='← Molecular · Escala de la Materia · Ecosistema →';
+  // Eje Y — rotado, en el margen izquierdo
+  const yMid=PAD.t+CH/2;
+  mk('text',{x:10,y:yMid,'text-anchor':'middle','font-size':'8.5',fill:'rgba(0,0,0,.38)',transform:'rotate(-90,10,'+yMid+')',style:F}).textContent='Bio-Material · Paradigma · Digital';
+  // Etiquetas de esquina dentro del plot
+  mk('text',{x:PAD.l+5,y:PAD.t+11,'font-size':'7',fill:'rgba(0,0,0,.28)',style:F}).textContent='Digital';
+  mk('text',{x:PAD.l+5,y:PAD.t+CH-4,'font-size':'7',fill:'rgba(0,0,0,.28)',style:F}).textContent='Bio-Material';
+  mk('text',{x:PAD.l+3,y:PAD.t+CH+1,'font-size':'5.5',fill:'rgba(0,0,0,.22)',style:F}).textContent='Molecular';
+  mk('text',{x:PAD.l+CW-3,y:PAD.t+CH+1,'text-anchor':'end','font-size':'5.5',fill:'rgba(0,0,0,.22)',style:F}).textContent='Ecosistema';
+  return svg;
+}
+
+// ── Mini scatter compacto (sin ejes) ─────────────────────────────────────
+function buildMiniScatter(ss, col, W, H){
+  const PAD={t:10,b:10,l:10,r:10};
+  const CW=W-PAD.l-PAD.r, CH=H-PAD.t-PAD.b;
+  const ns='http://www.w3.org/2000/svg';
+  const svg=document.createElementNS(ns,'svg');
+  svg.setAttribute('viewBox','0 0 '+W+' '+H);
+  svg.style.cssText='width:'+W+'px;height:'+H+'px;flex-shrink:0;display:block;border-radius:8px;background:rgba(0,0,0,.03);';
+  const mk=(tag,attr,p)=>{const e=document.createElementNS(ns,tag);Object.entries(attr||{}).forEach(([k,v])=>e.setAttribute(k,v));if(p)p.appendChild(e);return e;};
+  // Auto-range: usar los datos del tema + 15% de margen
+  const sxVals=ss.map(s=>s.sx).filter(v=>typeof v==='number');
+  const syVals=ss.map(s=>s.sy).filter(v=>typeof v==='number');
+  if(!sxVals.length){return svg;}
+  const sxMin=Math.min(...sxVals),sxMax=Math.max(...sxVals);
+  const syMin=Math.min(...syVals),syMax=Math.max(...syVals);
+  const mxR=(sxMax-sxMin)*0.18||1, myR=(syMax-syMin)*0.18||1;
+  const x0=sxMin-mxR, x1=sxMax+mxR;
+  const y0=syMin-myR, y1=syMax+myR;
+  // Eje central (si 0 está dentro del rango)
+  if(x0<0&&x1>0){const gx=PAD.l+CW*(0-x0)/(x1-x0);mk('line',{x1:gx,y1:PAD.t,x2:gx,y2:PAD.t+CH,stroke:'rgba(0,0,0,.12)','stroke-width':'0.6'},svg);}
+  if(y0<0&&y1>0){const gy=PAD.t+CH*(1-(0-y0)/(y1-y0));mk('line',{x1:PAD.l,y1:gy,x2:PAD.l+CW,y2:gy,stroke:'rgba(0,0,0,.12)','stroke-width':'0.6'},svg);}
+  // Dots
+  ss.forEach(s=>{
+    const sx=typeof s.sx==='number'?s.sx:null;
+    const sy=typeof s.sy==='number'?s.sy:null;
+    if(sx===null||sy===null)return;
+    const px=PAD.l+CW*(sx-x0)/(x1-x0);
+    const py=PAD.t+CH*(1-(sy-y0)/(y1-y0));
+    const r=s.valuation_tier>=3?4:s.valuation_tier>=2?3:2;
+    const op=s.quality_band==='high'?0.82:0.55;
+    mk('circle',{cx:px.toFixed(1),cy:py.toFixed(1),r,fill:col,opacity:op},svg);
+  });
+  return svg;
+}
+
+// ── PRESENCIA — barras de países con flag+code ───────────────────────────
+function buildPresencia(ss, col){
+  const counts={};
+  ss.forEach(s=>{if(s.country)counts[s.country]=(counts[s.country]||0)+1;});
+  const top=Object.entries(counts).sort((a,b)=>b[1]-a[1]).slice(0,8);
+  const max=top[0]?top[0][1]:1;
+  const wrap=document.createElement('div');
+  wrap.style.cssText='display:grid;gap:5px;min-width:220px;';
+  const hdr=document.createElement('div');
+  hdr.style.cssText='font-size:.62rem;font-weight:700;text-transform:uppercase;letter-spacing:.13em;color:var(--muted);margin-bottom:4px;font-family:var(--sans);';
+  hdr.textContent='Presencia';
+  wrap.appendChild(hdr);
+  top.forEach(([cc,n])=>{
+    const row=document.createElement('div');
+    row.style.cssText='display:flex;align-items:center;gap:6px;font-size:.68rem;font-family:var(--sans);';
+    const flag=FLAG_MAP[cc]||'';
+    const code=CC2[cc]||cc.slice(0,2).toUpperCase();
+    const lbl=document.createElement('span');
+    lbl.style.cssText='width:52px;flex-shrink:0;color:var(--muted);white-space:nowrap;';
+    lbl.textContent=(flag?flag+' ':'')+code;
+    const barWrap=document.createElement('div');
+    barWrap.style.cssText='flex:1;background:rgba(0,0,0,.07);border-radius:3px;height:9px;overflow:hidden;';
+    const bar=document.createElement('div');
+    bar.style.cssText='height:100%;border-radius:3px;background:'+col+';opacity:.5;width:'+Math.round(n/max*100)+'%;transition:width .3s;';
+    barWrap.appendChild(bar);
+    const cnt=document.createElement('span');
+    cnt.style.cssText='width:24px;text-align:right;font-weight:700;color:'+col+';flex-shrink:0;font-size:.72rem;';
+    cnt.textContent=n;
+    row.appendChild(lbl);row.appendChild(barWrap);row.appendChild(cnt);
+    wrap.appendChild(row);
+  });
+  return wrap;
+}
+
+// ── Startup card completa ─────────────────────────────────────────────────
+function buildStartupCard(s, col){
+  const card=document.createElement('div');
+  card.style.cssText='border:1px solid var(--line);border-radius:10px;background:#fff;padding:14px;display:flex;flex-direction:column;gap:6px;cursor:pointer;transition:box-shadow .13s;';
+  card.addEventListener('mouseenter',()=>card.style.boxShadow='0 2px 10px rgba(0,0,0,.09)');
+  card.addEventListener('mouseleave',()=>card.style.boxShadow='');
+  card.addEventListener('click',()=>{
+    if(typeof window.openStartupDetailPanel==='function') window.openStartupDetailPanel(s);
+    else if(typeof window.selectStartup==='function') window.selectStartup(s.id||s.entity_id);
+  });
+  // Top: name + badges
+  const top=document.createElement('div');
+  top.style.cssText='display:flex;align-items:center;gap:5px;flex-wrap:wrap;';
+  const name=document.createElement('span');
+  name.style.cssText='font-weight:700;color:var(--ink);font-size:.84rem;flex:1;min-width:0;';
+  name.textContent=s.name||'—';
+  top.appendChild(name);
+  // Badges
+  const mkBadge=(lbl,teal,warm)=>{
+    const b=document.createElement('span');
+    b.style.cssText='border-radius:3px;padding:1px 5px;font-size:.6rem;font-weight:700;letter-spacing:.06em;font-family:var(--sans);flex-shrink:0;background:'+(warm?'rgba(138,54,32,.10)':teal?'rgba(11,143,135,.11)':'rgba(0,0,0,.07)')+';color:'+(warm?'var(--warm)':teal?'var(--accent)':'var(--muted)')+';';
+    b.textContent=lbl;
+    return b;
+  };
+  if(s.valuation_tier>=3) top.appendChild(mkBadge('DEST.',false,true));
+  if(s.funding_stage&&s.funding_stage!=='unknown') top.appendChild(mkBadge('CAPITAL',true,false));
+  if(s.funding_stage) top.appendChild(mkBadge(s.funding_stage.toUpperCase().replace('_',' ').slice(0,10),false,false));
+  card.appendChild(top);
+  // Country
+  if(s.country){
+    const ctry=document.createElement('div');
+    const flag=FLAG_MAP[s.country]||'';
+    const code=CC2[s.country]||s.country.slice(0,2).toUpperCase();
+    ctry.style.cssText='font-size:.68rem;color:var(--muted);font-family:var(--sans);';
+    ctry.textContent=(flag?flag+' ':'')+code+' '+s.country;
+    card.appendChild(ctry);
+  }
+  // One-liner
+  if(s.one_liner){
+    const ol=document.createElement('div');
+    ol.style.cssText='font-size:.75rem;color:var(--ink);line-height:1.42;font-style:italic;';
+    ol.textContent=s.one_liner.length>100?s.one_liner.slice(0,100)+'…':s.one_liner;
+    card.appendChild(ol);
+  }
+  // Keyword chips
+  const icStr=Array.isArray(s.industry_codes)?s.industry_codes.join(','):(s.industry_codes||'');
+  const kws=icStr.split(',').concat((s.cluster_keywords||'').split(',')).map(k=>k.trim().toLowerCase()).filter(Boolean);
+  const uniq=[...new Set(kws)].slice(0,5);
+  if(uniq.length){
+    const chips=document.createElement('div');
+    chips.style.cssText='display:flex;flex-wrap:wrap;gap:3px;margin-top:2px;';
+    uniq.forEach(kw=>{
+      const ch=document.createElement('span');
+      ch.style.cssText='border-radius:4px;border:1px solid rgba(200,192,180,.8);background:rgba(255,255,255,.9);color:var(--muted);font-size:.62rem;padding:1px 5px;font-family:var(--sans);';
+      ch.textContent=kw;
+      chips.appendChild(ch);
+    });
+    card.appendChild(chips);
+  }
+  return card;
+}
+
+// ── Render de la página de recepción de un tema ───────────────────────────
+function renderThemePage(theme, main){
+  const ss=startups.filter(s=>s.bio_theme===theme);
+  const col=THEME_PAL[theme]||'#888';
+  const shortName=SHORT_THEME_CAT[theme]||theme;
+  const desc=THEME_DESC[theme]||'';
+  main.innerHTML='';
+  main.scrollTop=0;
+
+  // ── HERO ──────────────────────────────────────────────────────────────
+  const hero=document.createElement('div');
+  hero.style.cssText='padding:36px 40px 28px;';
+  // Eyebrow
+  const eyebrow=document.createElement('div');
+  eyebrow.style.cssText='font-size:.62rem;font-weight:700;text-transform:uppercase;letter-spacing:.09em;color:var(--muted);margin-bottom:8px;font-family:var(--sans);';
+  eyebrow.textContent='Tema BIO · '+ss.length+' startups';
+  // Título grande en color del tema — Overpass Mono bold
+  const title=document.createElement('div');
+  title.style.cssText='font-size:2.6rem;font-weight:700;color:'+col+';line-height:1.0;margin-bottom:12px;letter-spacing:-.01em;font-family:"EB Garamond",Georgia,serif;';
+  title.textContent=shortName;
+  // Descripción en itálica — fuente serif más elegante
+  const descEl=document.createElement('div');
+  descEl.style.cssText='font-size:1.08rem;font-style:italic;color:#3a3028;line-height:1.65;max-width:620px;margin-bottom:24px;font-family:"EB Garamond",Georgia,serif;';
+  descEl.textContent=desc;
+  hero.appendChild(eyebrow);hero.appendChild(title);hero.appendChild(descEl);
+
+  // Stats grid (6 cajas)
+  const funded=ss.filter(s=>s.funding_stage&&s.funding_stage!=='unknown').length;
+  const featured=ss.filter(s=>s.valuation_tier!=null&&s.valuation_tier>=3).length;
+  const countries=new Set(ss.map(s=>s.country).filter(Boolean)).size;
+  const pct=ss.length?Math.round(funded/ss.length*100):0;
+  // Stage modal
+  const stageCounts={};
+  ss.forEach(s=>{if(s.funding_stage&&s.funding_stage!=='unknown')stageCounts[s.funding_stage]=(stageCounts[s.funding_stage]||0)+1;});
+  const stageModal=Object.entries(stageCounts).sort((a,b)=>b[1]-a[1])[0]?.[0]||'—';
+  const subCount=new Set(ss.map(s=>s.sub_cluster_label).filter(Boolean)).size;
+  const statsGrid=document.createElement('div');
+  statsGrid.style.cssText='display:flex;gap:10px;flex-wrap:wrap;margin-bottom:22px;';
+  [
+    [ss.length,'STARTUPS',true],
+    [countries,'PAÍSES',false],
+    [funded,'CON CAPITAL',false],
+    [pct+'%','COBERTURA',false],
+    [stageModal.replace(/_/g,' ').replace(/\b\w/g,c=>c.toUpperCase()),'STAGE MODAL',false],
+    [subCount,'SUB-CLUSTERS',false]
+  ].forEach(([val,lbl,accent])=>{
+    const box=document.createElement('div');
+    box.style.cssText='border:1px solid var(--line);border-radius:9px;background:#fff;padding:14px 18px;min-width:88px;';
+    const valEl=document.createElement('div');
+    valEl.style.cssText='font-size:1.55rem;font-weight:700;color:'+(accent?col:'var(--ink)')+';letter-spacing:-.01em;line-height:1;margin-bottom:5px;font-family:"EB Garamond",Georgia,serif;';
+    valEl.textContent=val;
+    const lblEl=document.createElement('div');
+    lblEl.style.cssText='font-size:.63rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);font-family:var(--sans);';
+    lblEl.textContent=lbl;
+    box.appendChild(valEl);box.appendChild(lblEl);
+    statsGrid.appendChild(box);
+  });
+  hero.appendChild(statsGrid);
+
+  // Keywords row — de cluster_keywords únicos del tema
+  const allKw=[...new Set(
+    ss.flatMap(s=>(s.cluster_keywords||'').split(',').map(k=>k.trim().toLowerCase()).filter(k=>k&&k.length>2&&k.length<20))
+  )].slice(0,10);
+  if(allKw.length){
+    const kwRow=document.createElement('div');
+    kwRow.style.cssText='display:flex;flex-wrap:wrap;gap:6px;margin-bottom:4px;';
+    allKw.forEach(kw=>{
+      const ch=document.createElement('span');
+      ch.style.cssText='border-radius:5px;border:1px solid '+col+'44;background:'+col+'0d;color:'+col+';font-size:.7rem;padding:3px 9px;font-family:var(--sans);';
+      ch.textContent=kw;
+      kwRow.appendChild(ch);
+    });
+    hero.appendChild(kwRow);
+  }
+  main.appendChild(hero);
+
+  // ── SCATTER + PRESENCIA ───────────────────────────────────────────────
+  const vizRow=document.createElement('div');
+  vizRow.style.cssText='display:flex;gap:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);';
+  const scatterWrap=document.createElement('div');
+  scatterWrap.style.cssText='flex:1;min-width:0;padding:18px 20px;';
+  scatterWrap.appendChild(buildThemeScatter(ss,col));
+  const presenciaWrap=document.createElement('div');
+  presenciaWrap.style.cssText='flex-shrink:0;padding:18px 24px;border-left:1px solid var(--line);';
+  presenciaWrap.appendChild(buildPresencia(ss,col));
+  vizRow.appendChild(scatterWrap);vizRow.appendChild(presenciaWrap);
+  main.appendChild(vizRow);
+
+  // ── SUB-CLUSTERS ─────────────────────────────────────────────────────
+  const subMap=new Map();
+  ss.forEach(s=>{
+    const k=s.sub_cluster_label||'Sin clasificar';
+    if(!subMap.has(k))subMap.set(k,[]);
+    subMap.get(k).push(s);
+  });
+  const subEntries=[...subMap.entries()].sort((a,b)=>b[1].length-a[1].length);
+
+  const subSection=document.createElement('div');
+  subSection.style.cssText='padding:28px 40px 40px;';
+  const subHdr=document.createElement('div');
+  subHdr.style.cssText='font-size:.67rem;font-weight:700;text-transform:uppercase;letter-spacing:.18em;color:var(--muted);margin-bottom:28px;padding-bottom:10px;border-bottom:1px solid var(--line);font-family:var(--sans);';
+  subHdr.textContent=subCount+' Sub-clusters';
+  subSection.appendChild(subHdr);
+
+  subEntries.forEach(([lbl,subs])=>{
+    const kw=lbl.replace(/^cluster\s*\d+\s*[—\-]\s*/i,'').replace(/^\w+\s*[—\-]\s*/,'');
+    // Sub-cluster heading
+    const subId='sub-'+kw.replace(/\W+/g,'-').toLowerCase().slice(0,32);
+    const scHead=document.createElement('div');
+    scHead.id=subId;
+    scHead.style.cssText='display:flex;align-items:baseline;gap:12px;margin-bottom:14px;scroll-margin-top:16px;';
+    const scName=document.createElement('div');
+    scName.style.cssText='font-size:1.4rem;font-weight:700;color:var(--ink);letter-spacing:-.01em;font-family:"EB Garamond",Georgia,serif;';
+    scName.textContent=kw;
+    const scCount=document.createElement('div');
+    scCount.style.cssText='font-size:.67rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);font-family:var(--sans);white-space:nowrap;';
+    scCount.textContent=subs.length+' startups';
+    scHead.appendChild(scName);scHead.appendChild(scCount);
+    subSection.appendChild(scHead);
+    // Cards grid
+    const grid=document.createElement('div');
+    grid.style.cssText='display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px;margin-bottom:32px;';
+    subs.sort((a,b)=>(b.valuation_tier||0)-(a.valuation_tier||0)).forEach(s=>{
+      grid.appendChild(buildStartupCard(s,col));
+    });
+    subSection.appendChild(grid);
+  });
+  main.appendChild(subSection);
+}
+
+function buildCatalog(){
+  const nav=document.getElementById('cat-nav');
+  const main=document.getElementById('cat-main');
+  if(!nav||!main)return;
+
+  main.innerHTML='';
+
+  const themes=THEME_ORDER_CAT.filter(t=>startups.some(s=>s.bio_theme===t));
+  let activeThemeCat=themes[0]||null;
+
+  function setActive(theme){
+    activeThemeCat=theme;
+    const scrollTop=nav.scrollTop;
+    nav.innerHTML='';
+    themes.forEach(t=>{
+      const ss2=startups.filter(s=>s.bio_theme===t);
+      const col2=THEME_PAL[t]||'#888';
+      const short=SHORT_THEME_CAT[t]||t;
+      const isActive=t===theme;
+      const item=document.createElement('div');
+      item.style.cssText='padding:8px 12px;font-size:.75rem;font-family:var(--sans);cursor:pointer;border-left:3px solid '+(isActive?col2:'transparent')+';background:'+(isActive?'rgba(0,0,0,.04)':'transparent')+';display:flex;align-items:center;gap:7px;';
+      item.innerHTML='<span style="width:7px;height:7px;border-radius:50%;background:'+col2+';flex-shrink:0"></span><span style="flex:1;color:'+(isActive?'var(--ink)':'var(--muted)')+'">'+short+'</span><span style="font-size:.65rem;background:rgba(0,0,0,.06);border-radius:4px;padding:1px 5px;font-weight:600;color:var(--muted)">'+ss2.length+'</span>';
+      item.addEventListener('click',()=>{ setActive(t); renderThemePage(t,main); });
+      nav.appendChild(item);
+      if(isActive){
+        const subMap2=new Map();
+        ss2.forEach(s=>{const k=s.sub_cluster_label||'Sin clasificar';if(!subMap2.has(k))subMap2.set(k,[]);subMap2.get(k).push(s);});
+        [...subMap2.entries()].sort((a,b)=>b[1].length-a[1].length).forEach(([lbl])=>{
+          const kw=lbl.replace(/^cluster\s*\d+\s*[—\-]\s*/i,'').replace(/^\w+\s*[—\-]\s*/,'');
+          const subId='sub-'+kw.replace(/\W+/g,'-').toLowerCase().slice(0,32);
+          const sub=document.createElement('div');
+          sub.style.cssText='padding:3px 12px 3px 26px;font-size:.68rem;color:var(--muted);font-family:var(--sans);line-height:1.3;cursor:pointer;';
+          sub.textContent=kw;
+          sub.addEventListener('mouseenter',()=>sub.style.color='var(--ink)');
+          sub.addEventListener('mouseleave',()=>sub.style.color='var(--muted)');
+          sub.addEventListener('click',()=>{
+            const target=document.getElementById(subId);
+            if(target) target.scrollIntoView({behavior:'smooth',block:'start'});
+          });
+          nav.appendChild(sub);
+        });
+      }
+    });
+    nav.scrollTop=scrollTop;
+  }
+
+  setActive(activeThemeCat);
+  renderThemePage(activeThemeCat,main);
+
+  // Legacy block below: kept as dead-code guard, replaced by renderThemePage
+  if(false){
+  const themes_UNUSED=THEME_ORDER_CAT.filter(t=>startups.some(s=>s.bio_theme===t));
+  const navLinks={};
+
+  // IntersectionObserver — resalta nav item del tema visible
+  const obs=new IntersectionObserver(entries=>{
+    entries.forEach(e=>{
+      if(!e.isIntersecting)return;
+      Object.entries(navLinks).forEach(([id,{el,col}])=>{
+        const active=id===e.target.id;
+        el.style.borderLeftColor=active?col:'transparent';
+        el.style.background=active?'rgba(0,0,0,.04)':'transparent';
+        el.style.color=active?'var(--ink)':'var(--muted)';
+      });
+    });
+  },{rootMargin:'-5% 0px -82% 0px'});
+
+  themes.forEach(theme=>{
+    const ss=startups.filter(s=>s.bio_theme===theme);
+    const col=THEME_PAL[theme]||'#888';
+    const shortName=SHORT_THEME_CAT[theme]||theme;
+    const secId='cat-sec-'+theme.replace(/\W+/g,'-');
+
+    // ── Nav item ──────────────────────────────────────────────
+    const navItem=document.createElement('a');
+    navItem.href='#'+secId;
+    navItem.style.cssText='display:flex;align-items:center;gap:7px;padding:8px 12px;font-size:.75rem;font-family:var(--sans);color:var(--muted);text-decoration:none;border-left:2px solid transparent;transition:border-color .13s,background .13s,color .13s;';
+    navItem.innerHTML=
+      '<span style="width:7px;height:7px;border-radius:50%;background:'+col+';flex-shrink:0"></span>'+
+      '<span style="flex:1;line-height:1.3">'+shortName+'</span>'+
+      '<span style="font-size:.65rem;background:rgba(0,0,0,.06);border-radius:4px;padding:1px 5px;font-weight:600">'+ss.length+'</span>';
+    navLinks[secId]={el:navItem,col};
+    nav.appendChild(navItem);
+
+    // ── Section card ──────────────────────────────────────────
+    const section=document.createElement('div');
+    section.id=secId;
+    section.style.cssText='background:var(--panel);border:1px solid var(--line);border-radius:16px;overflow:hidden;margin-bottom:28px;';
+
+    // Barra de color superior (acento temático)
+    const bar=document.createElement('div');
+    bar.style.cssText='height:4px;background:'+col+';';
+    section.appendChild(bar);
+
+    // Header
+    const header=document.createElement('div');
+    header.style.cssText='padding:18px 22px 14px;border-bottom:1px solid var(--line);display:flex;align-items:flex-start;gap:16px;';
+
+    // Bloque izquierdo: eyebrow + título + chips
+    const titleBlock=document.createElement('div');
+    titleBlock.style.cssText='flex:1;min-width:0;';
+    const eyebrow=document.createElement('div');
+    eyebrow.style.cssText='font-size:.62rem;font-weight:700;text-transform:uppercase;letter-spacing:.15em;color:'+col+';margin-bottom:5px;font-family:var(--sans);';
+    eyebrow.textContent='Tema semántico';
+    const titleEl=document.createElement('div');
+    titleEl.style.cssText='font-size:1.05rem;font-weight:700;color:var(--ink);letter-spacing:-.01em;line-height:1.2;margin-bottom:8px;';
+    titleEl.textContent=shortName;
+    const funded=ss.filter(s=>s.funding_stage&&s.funding_stage!=='unknown').length;
+    const featured=ss.filter(s=>s.valuation_tier!=null&&s.valuation_tier>=3).length;
+    const countries=new Set(ss.map(s=>s.country).filter(Boolean)).size;
+    const chips=document.createElement('div');
+    chips.style.cssText='display:flex;flex-wrap:wrap;gap:4px;';
+    const mkChip=(val,lbl,teal)=>{
+      const c=document.createElement('span');
+      c.style.cssText='border-radius:4px;padding:2px 7px;font-size:.67rem;font-weight:600;letter-spacing:.04em;font-family:var(--sans);background:'+(teal?'rgba(11,143,135,.11)':'rgba(0,0,0,.06)')+';color:'+(teal?'var(--accent)':'var(--muted)')+';';
+      c.textContent=val+' '+lbl;
+      return c;
+    };
+    chips.appendChild(mkChip(ss.length,'startups',true));
+    chips.appendChild(mkChip(funded,'con inv.',false));
+    if(featured>0)chips.appendChild(mkChip(featured,'destacadas',true));
+    chips.appendChild(mkChip(countries,'países',false));
+    titleBlock.appendChild(eyebrow);
+    titleBlock.appendChild(titleEl);
+    titleBlock.appendChild(chips);
+    header.appendChild(titleBlock);
+
+    // Bloque derecho: mini scatter
+    const scatterWrap=document.createElement('div');
+    scatterWrap.style.cssText='flex-shrink:0;';
+    scatterWrap.appendChild(buildMiniScatter(ss,col,180,120));
+    header.appendChild(scatterWrap);
+    section.appendChild(header);
+
+    // Barras de país
+    const cRow=document.createElement('div');
+    cRow.style.cssText='padding:10px 22px 12px;border-bottom:1px solid var(--line);';
+    const cLbl=document.createElement('div');
+    cLbl.style.cssText='font-size:.62rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:6px;font-family:var(--sans);';
+    cLbl.textContent='Por país';
+    cRow.appendChild(cLbl);
+    cRow.appendChild(buildCountryBars(ss,col));
+    section.appendChild(cRow);
+
+    // Sub-clusters — styled como .cr cards del sidebar
+    const subMap=new Map();
+    ss.forEach(s=>{
+      const k=s.sub_cluster_label||'Sin clasificar';
+      if(!subMap.has(k))subMap.set(k,[]);
+      subMap.get(k).push(s);
+    });
+    const subBody=document.createElement('div');
+    subBody.style.cssText='padding:12px 14px 14px;display:grid;gap:5px;';
+
+    [...subMap.entries()].sort((a,b)=>b[1].length-a[1].length).forEach(([lbl,subs])=>{
+      const kw=lbl.replace(/^cluster\s*\d+\s*[—\-]\s*/i,'').replace(/^\w+\s*[—\-]\s*/,'');
+      const card=document.createElement('div');
+      // Exactamente el estilo .cr del sidebar
+      card.style.cssText='padding:9px 11px;border:1px solid rgba(200,200,200,.65);border-left:3px solid '+col+';border-radius:9px;background:rgba(255,255,255,.78);';
+      // top: nombre + count badge
+      const top=document.createElement('div');
+      top.style.cssText='display:flex;align-items:center;gap:7px;margin-bottom:5px;';
+      const nameEl=document.createElement('div');
+      nameEl.style.cssText='font-size:.95rem;font-weight:700;color:#1a1614;letter-spacing:-.01em;line-height:1.15;flex:1;min-width:0;font-family:"EB Garamond",Georgia,serif;';
+      nameEl.textContent=kw;
+      const countBadge=document.createElement('div');
+      countBadge.style.cssText='font-size:.67rem;color:var(--muted);background:rgba(0,0,0,.06);border-radius:5px;padding:1px 6px;white-space:nowrap;font-weight:600;font-variant-numeric:tabular-nums;flex-shrink:0;';
+      countBadge.textContent=subs.length;
+      top.appendChild(nameEl);top.appendChild(countBadge);
+      card.appendChild(top);
+      // startup chips — estilo .ct / .ct-tech
+      const chipRow=document.createElement('div');
+      chipRow.style.cssText='display:flex;flex-wrap:wrap;gap:3px;';
+      const sorted=subs.slice().sort((a,b)=>(b.valuation_tier||0)-(a.valuation_tier||0));
+      sorted.slice(0,12).forEach(s=>{
+        const isTech=s.valuation_tier>=2;
+        const ch=document.createElement('span');
+        ch.style.cssText='border-radius:5px;border:1px solid '+(isTech?'rgba(11,143,135,.3)':'rgba(200,192,180,.84)')+';background:'+(isTech?'rgba(11,143,135,.07)':'rgba(255,255,255,.88)')+';color:'+(isTech?'var(--accent)':'var(--muted)')+';font-size:.66rem;padding:2px 6px;line-height:1.3;cursor:pointer;font-family:var(--sans);';
+        const flag=s.country&&FLAG_MAP[s.country]?FLAG_MAP[s.country]+' ':'';
+        ch.textContent=flag+s.name;
+        ch.title=s.one_liner||'';
+        ch.addEventListener('click',()=>{if(typeof window.selectStartup==='function')window.selectStartup(s.id||s.entity_id);});
+        chipRow.appendChild(ch);
+      });
+      if(subs.length>12){
+        const more=document.createElement('span');
+        more.style.cssText='font-size:.66rem;padding:2px 5px;color:var(--muted);';
+        more.textContent='+'+(subs.length-12);
+        chipRow.appendChild(more);
+      }
+      card.appendChild(chipRow);
+      subBody.appendChild(card);
+    });
+
+    section.appendChild(subBody);
+    main.appendChild(section);
+    obs.observe(section);
+  });
+  } // end if(false)
+}
+
+window.buildCatalog=buildCatalog;
 
 })();
 </script>
