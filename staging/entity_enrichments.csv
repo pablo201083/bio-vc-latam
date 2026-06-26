@@ -560,3 +560,564 @@ biometrics-medellin-co,startup_extended,startup_summary_en,"BioMetrics Medellín
 agroguia-ve,startup_extended,startup_summary_en,"Agroguía is a Venezuelan precision agriculture startup providing GPS-based field mapping, tractor path optimization, and data-driven planting recommendations to smallholder farmers via a mobile application accessible on basic smartphones. The company maps field geometry and soil variability to generate zone-specific input recommendations for crop planting density, fertilization, and irrigation scheduling, improving land use efficiency and yield predictability for Venezuelan grain and vegetable producers operating under constrained access to agrochemical inputs and technical advisory services.",swarm_inline_sonnet_v1,0.78,swarm_inline_summary 2026-06-25
 agricultic-do,startup_extended,startup_summary_en,"Agricultic modernizes Dominican Republic agriculture through AI-powered commodity pricing tools, market intelligence platforms, and precision input advisory systems that connect smallholder and commercial farmers with real-time market data and decision support. The company applies machine learning to agricultural commodity price forecasting and crop input optimization, helping Dominican growers make evidence-based planting and selling decisions in volatile commodity markets. Agricultic targets cacao, coffee, and avocado producers whose export market access depends on timely market intelligence and certified quality production practices.",swarm_inline_sonnet_v1,0.75,swarm_inline_summary 2026-06-25
 agro360-do,startup_extended,startup_summary_en,"Agro360 develops AI-powered IoT platforms combining wireless soil sensors, weather stations, and satellite imagery to provide Dominican Republic farmers with automated precision agriculture management across diverse tropical crop systems. The company's cloud platform processes multi-source environmental data to trigger automated irrigation systems, generate pest risk alerts, and optimize fertilizer application timing, offering an exponential technology approach to Dominican agriculture productivity gaps that constrain the country's food security and agricultural export potential.",swarm_inline_sonnet_v1,0.78,swarm_inline_summary 2026-06-25
+terrasos-br,startup_extended,bio_theme_primary,Nature & Ecosystem Tech,swarm_inline_theme_fix_2026-06-26,0.9,"reclassify:Bioinputs & Crop Resilience→Nature & Ecosystem Tech | Terrasos designs biodiversity credit instruments and habitat banking — environmental finance, not bioinputs"
+ascribe-bio-br,startup_extended,bio_theme_primary,Bioinputs & Crop Resilience,swarm_inline_theme_fix_2026-06-26,0.88,"reclassify:Therapeutics→Bioinputs & Crop Resilience | Phytalix is a Trichoderma-based biofungicide for crop protection — textbook bioinput, not therapeutic"
+biotech-cr,startup_extended,bio_theme_primary,Bioinputs & Crop Resilience,swarm_inline_theme_fix_2026-06-26,0.85,reclassify:Therapeutics→Bioinputs & Crop Resilience | BioTech CR develops biocontrol solutions as natural alternatives to agrochemicals — bioinput
+ecocycle-biotech-ec,startup_extended,bio_theme_primary,Bioinputs & Crop Resilience,swarm_inline_theme_fix_2026-06-26,0.85,reclassify:Therapeutics→Bioinputs & Crop Resilience | Ecocycle Biotech produces agricultural bioinputs from native Ecuadorian microorganisms — not therapeutics
+forma-foods-mx,startup_extended,bio_theme_primary,Food Systems & Alt Proteins,swarm_inline_theme_fix_2026-06-26,0.92,"reclassify:Therapeutics→Food Systems & Alt Proteins | Forma Foods produces cultivated meat — output is food, not a therapeutic intervention"
+plantverd-mx,startup_extended,bio_theme_primary,Bioinputs & Crop Resilience,swarm_inline_theme_fix_2026-06-26,0.87,"reclassify:Food Systems & Alt Proteins→Bioinputs & Crop Resilience | PlantVerd applies biotechnology to ecosystem restoration using native microbial species — bioinputs, not food"
+tierra-de-monte-mx,startup_extended,bio_theme_primary,Bioinputs & Crop Resilience,swarm_inline_theme_fix_2026-06-26,0.87,"reclassify:Food Systems & Alt Proteins→Bioinputs & Crop Resilience | Tierra de Monte produces microbial consortia and biostimulants for soil — bioinputs, not food"
+hemoalgae,startup_extended,bio_theme_primary,Therapeutics,swarm_inline_theme_fix_2026-06-26,0.9,"reclassify:Food Systems & Alt Proteins→Therapeutics | Hemoalgae bio-manufactures hirudin (anticoagulant drug) using microalgae — therapeutic compound, not food"
+movet-co,startup_extended,bio_theme_primary,Therapeutics,swarm_inline_theme_fix_2026-06-26,0.83,"reclassify:Diagnostics & Devices→Therapeutics | Movet is a veterinary clinic network providing medical treatment — therapeutic services, not diagnostics"
+kran-nanobubble-cl,startup_extended,bio_theme_primary,Nature & Ecosystem Tech,swarm_inline_theme_fix_2026-06-26,0.82,"reclassify:Food Systems & Alt Proteins→Nature & Ecosystem Tech | Kran Nanobubble uses nanobubble tech to save water in agriculture — water resource management, not food"
+nexxto,startup_extended,bio_theme_primary,Precision Agriculture,swarm_inline_theme_fix_2026-06-26,0.86,"reclassify:Diagnostics & Devices→Precision Agriculture | Nexxto provides IoT temp/humidity monitoring for supply chain — precision agriculture tech, not medical diagnostics"
+agrigenetic-ecuador-ec,startup_extended,startup_summary_en,"Agrigenetic Ecuador provides reproductive biotechnology services for livestock improvement, applying genomic selection, embryo transfer, and assisted reproduction to accelerate genetic gain in cattle herds. Its bioinput focus is breeding efficiency and genetic trait propagation at farm scale across Ecuador.",swarm_inline_theme_fix_2026-06-26,0.82,summary_rewrite_theme_alignment 2026-06-26
+kheiron-biotech-ar,startup_extended,startup_summary_en,Kheiron Biotech applies precision animal cloning and reproductive biotechnology to preserve and propagate elite livestock genetics in Argentina. Its core output is genetic material and reproductive services that function as biological inputs for cattle breeders seeking performance-optimized herds.,swarm_inline_theme_fix_2026-06-26,0.8,summary_rewrite_theme_alignment 2026-06-26
+grupo-bios-co,startup_extended,startup_summary_en,"Grupo Bios is a Colombian biotechnology company producing and commercializing biological inputs — biofertilizers, biocontrol agents, and microbial inoculants — for use in crop production systems across Colombia, helping farmers reduce synthetic agrochemical dependency.",swarm_inline_theme_fix_2026-06-26,0.82,summary_rewrite_theme_alignment 2026-06-26
+werk-nvac,startup_extended,startup_summary_en,"WerkénVac develops biological disease-control inputs for aquaculture, specifically biologically derived vaccine alternatives and immunostimulant compounds that reduce antibiotic use in salmon and shrimp farming. Its products are bioinputs targeting aquatic crop health, not food products.",swarm_inline_theme_fix_2026-06-26,0.83,summary_rewrite_theme_alignment 2026-06-26
+biolife-innovations-bo,startup_extended,startup_summary_en,"BioLife Innovations develops two biological technology products for Bolivian agriculture: a biofertilizer based on nitrogen-fixing microorganisms and a bioinsecticide derived from native entomopathogenic strains, providing bioinputs for smallholder crop systems in the Bolivian altiplano and lowlands.",swarm_inline_theme_fix_2026-06-26,0.75,summary_rewrite_theme_alignment 2026-06-26
+circclo,startup_extended,startup_summary_en,"CIRCCLO is an Argentine biomaterials startup building closed-loop reusable packaging systems made from bio-based polymers, enabling brands to replace single-use plastic packaging with durable, compostable material circuits. Its core output is bio-based packaging as a materials solution.",swarm_inline_theme_fix_2026-06-26,0.78,summary_rewrite_theme_alignment 2026-06-26
+migma,startup_extended,startup_summary_en,"Mendoza-based Migma uses AI-driven chemistry and fermentation R&D to design customized industrial bioformulations — biopolymers, biosurfactants, and enzymatic compounds — for the agrochemical, cosmetics, and specialty chemicals industries. Its output is bio-based functional materials, not food.",swarm_inline_theme_fix_2026-06-26,0.76,summary_rewrite_theme_alignment 2026-06-26
+notfossil,startup_extended,startup_summary_en,"NotFossil engineers biofilter systems using proprietary hydrocarbon-degrading microorganisms to remediate contaminated water and soil, providing biological environmental cleanup services for industrial and urban sites. Its focus is bioremediation and environmental restoration, not food production.",swarm_inline_theme_fix_2026-06-26,0.82,summary_rewrite_theme_alignment 2026-06-26
+pixed,startup_extended,startup_summary_en,"Pixed develops AI-powered portable diagnostic devices and myoelectric biomechanical sensors for real-time clinical assessment of neuromuscular and musculoskeletal conditions. Its core product is a diagnostic measurement tool for clinical and rehabilitation settings, distinct from therapeutic intervention.",swarm_inline_theme_fix_2026-06-26,0.79,summary_rewrite_theme_alignment 2026-06-26
+corpogen-co,startup_extended,startup_summary_en,"CorpoGen is a Colombian non-profit genomics research center founded in 1995, specializing in molecular diagnostics, genetic sequencing, and biomedical research services. Its primary output is diagnostic genomic data and biological characterization assays for clinical and public health applications.",swarm_inline_theme_fix_2026-06-26,0.77,summary_rewrite_theme_alignment 2026-06-26
+aquabyte-cl,startup_extended,startup_summary_en,"Aquabyte deploys underwater computer vision and AI in salmon net pens to deliver precision aquaculture intelligence — automating lice counting, biomass estimation, and feeding optimization. Its technology is precision monitoring and data-driven resource management for aquaculture farm operations.",swarm_inline_theme_fix_2026-06-26,0.83,summary_rewrite_theme_alignment 2026-06-26
+inkus-biotech-cl,startup_extended,startup_summary_en,"Inkus Biotech applies advanced genomics, SNP genotyping, and machine learning to accelerate the genetic improvement of cattle and salmon in Chile. Its platform delivers precision breeding tools and genetic prediction services that increase productive efficiency in livestock and aquaculture production systems.",swarm_inline_theme_fix_2026-06-26,0.83,summary_rewrite_theme_alignment 2026-06-26
+silicochem-ec,startup_extended,startup_summary_en,SilicoChem is a UTPL university spinout that engineers Saccharomyces cerevisiae strains expressing silicon-binding proteins to produce bio-silica nanoparticles as next-generation biostimulants and soil conditioners for precision crop management in Ecuador's agricultural export sector.,swarm_inline_theme_fix_2026-06-26,0.75,summary_rewrite_theme_alignment 2026-06-26
+aquit,startup_extended,startup_summary_en,"Aquit is a Chilean aquaculture biotech developing biological therapeutic interventions — immunostimulant compounds and prophylactic treatments — to activate and strengthen fish immune response against bacterial and viral pathogens, reducing antibiotic use in salmon and trout farming.",swarm_inline_theme_fix_2026-06-26,0.8,summary_rewrite_theme_alignment 2026-06-26
+imeve,startup_extended,startup_summary_en,"Imeve is a Brazilian animal-health biopharmaceutical company producing therapeutic biologics for livestock: probiotic-based gut health treatments, medicated feed additives with therapeutic action, and veterinary vaccines for cattle, swine, and poultry — all regulated as veterinary medicines.",swarm_inline_theme_fix_2026-06-26,0.8,summary_rewrite_theme_alignment 2026-06-26
+inprenha,startup_extended,startup_summary_en,Inprenha is a Brazilian animal-reproduction biotechnology company developing a protein-based therapeutic protocol to improve embryo implantation rates in bovine reproductive programs. Its core product is a biologically active treatment compound used in assisted reproduction for cattle breeding.,swarm_inline_theme_fix_2026-06-26,0.8,summary_rewrite_theme_alignment 2026-06-26
+bioproducts-co,startup_extended,startup_summary_en,"BioProducts Colombia provides contract biomanufacturing and fermentation-based production services for biological therapeutics, including monoclonal antibody intermediates, recombinant proteins, and biologic active pharmaceutical ingredients for pharmaceutical clients across Latin America.",swarm_inline_theme_fix_2026-06-26,0.76,summary_rewrite_theme_alignment 2026-06-26
+sistema-bio-mx,startup_extended,bio_theme_primary,Bioinputs & Crop Resilience,swarm_inline_theme_fix2_2026-06-26,0.85,"reclassify_wave2: Sistema.bio biodigesters produce biofertilizer digestate as primary agricultural bioinput — output is crop nutrition, not a material or chemistry product"
+biolife-innovations-bo,startup_extended,bio_theme_primary,Bioinputs & Crop Resilience,swarm_inline_theme_fix2_2026-06-26,0.86,"reclassify_wave2: BioLife develops biofertilizer and bioinsecticide for Bolivian smallholders — bioinputs, not food products"
+migma,startup_extended,bio_theme_primary,Biomaterials & Green Chemistry,swarm_inline_theme_fix2_2026-06-26,0.83,"reclassify_wave2: Migma designs industrial bioformulations (biopolymers, biosurfactants, enzymes) for agrochemical/cosmetics/specialty chemicals — Biomaterials output, not food"
+bioproducts-co,startup_extended,bio_theme_primary,Biomanufacturing & Platform Technologies,swarm_inline_theme_fix2_2026-06-26,0.82,"reclassify_wave2: BioProducts Colombia provides contract fermentation and biomanufacturing services for biologics — Biomanufacturing platform, not a therapeutic developer"
+krtl-biotech-bolivia-expansion-bo,startup_extended,bio_theme_primary,Bioinputs & Crop Resilience,swarm_inline_theme_fix2_2026-06-26,0.8,"reclassify_wave2: KRTL Bolivia is the Bolivian expansion of a bioinputs company — bio-agro inputs, not pharmaceuticals"
+innmetec-co,startup_extended,bio_theme_primary,Diagnostics & Devices,swarm_inline_theme_fix2_2026-06-26,0.82,"reclassify_wave2: Innmetec develops digital surgical planning software and custom patient-specific implants — medical device / medtech, correctly in Diagnostics & Devices"
+hemoalgae,startup_extended,bio_theme_primary,Biomanufacturing & Platform Technologies,swarm_inline_theme_fix2_2026-06-26,0.8,reclassify_wave2: Hemoalgae uses microalgae as bioproduction platform to manufacture hirudin — the core is the biomanufacturing process; therapeutic output is secondary to the production platform
+aquabyte-cl,startup_extended,bio_theme_primary,Food Systems & Alt Proteins,swarm_inline_theme_fix2_2026-06-26,0.78,reclassify_wave2: Aquabyte's precision monitoring optimizes salmon farming for food production — aquaculture is food production; cluster correctly identifies end-market
+inkus-biotech-cl,startup_extended,bio_theme_primary,Food Systems & Alt Proteins,swarm_inline_theme_fix2_2026-06-26,0.78,reclassify_wave2: Inkus genomics improves cattle and salmon genetics for meat and fish food production — end output is food; Food Systems cluster is correct
+silicochem-ec,startup_extended,bio_theme_primary,Food Systems & Alt Proteins,swarm_inline_theme_fix2_2026-06-26,0.76,reclassify_wave2: SilicoChem develops biostimulants derived from engineered yeast for crop production — primary output supports food crop yields; cluster alignment with Food Systems is reasonable
+notfossil,startup_extended,startup_summary_en,"NotFossil engineers bioremediation systems using proprietary microbial consortia to degrade hydrocarbon pollutants in contaminated industrial water and soil. Its core technology is environmental biofilter installation for petrochemical and mining site cleanup — environmental restoration, not food or agriculture.",swarm_inline_theme_fix2_2026-06-26,0.84,summary_rewrite_wave2_2026-06-26
+magenta-biolabs-cr,startup_extended,startup_summary_en,Magenta Biolabs is a Costa Rican therapeutics startup accelerated by IndieBio developing biologically active therapeutic compounds targeting metabolic and inflammatory disease pathways. Its pipeline is focused on molecular drug candidates and biological therapeutic agents for clinical applications.,swarm_inline_theme_fix2_2026-06-26,0.76,summary_rewrite_wave2_2026-06-26
+nutrition-from-water-cl,startup_extended,startup_summary_en,"Nutrition from Water is a Chilean food biotech company producing microalgae-derived protein concentrates as sustainable, high-nutrition food ingredients for human consumption and functional food formulations, directly substituting conventional animal and soy protein in the food supply chain.",swarm_inline_theme_fix2_2026-06-26,0.8,summary_rewrite_wave2_2026-06-26
+circclo,startup_extended,startup_summary_en,CIRCCLO designs and deploys closed-loop reusable packaging circuits using durable bio-based polymer containers. Its business model is industrial packaging-as-a-service — replacing single-use plastic in consumer goods supply chains with bio-material based reuse systems.,swarm_inline_theme_fix2_2026-06-26,0.8,summary_rewrite_wave2_2026-06-26
+ejido-verde-mx,startup_extended,startup_summary_en,"Ejido Verde works with indigenous Mexican pine forest communities to produce certified sustainable pine resin, which is processed into rosin and turpentine — high-value bio-based chemical raw materials for adhesives, inks, coatings, and specialty chemistry industries.",swarm_inline_theme_fix2_2026-06-26,0.79,summary_rewrite_wave2_2026-06-26
+biorefinery-tech-brazil-br,startup_extended,startup_summary_en,"Biorefinery Tech Brazil converts sugarcane bagasse, orange peel, and other agroindustrial residues into cellulosic biopolymers, bioactive compounds, and bio-based industrial chemicals using enzymatic fractionation. Its output is industrial biomaterial intermediates and specialty green chemistry ingredients, not food.",swarm_inline_theme_fix2_2026-06-26,0.79,summary_rewrite_wave2_2026-06-26
+biocell-mx,startup_extended,startup_summary_en,"BioCell Mexico manufactures collagen-based bioingredients — hydrolyzed collagen peptides, gelatin, and collagen hydrolysate — for use as food supplements, nutraceuticals, and functional food ingredients. Its products are consumed as nutritional food components, placing its output squarely in Food Systems.",swarm_inline_theme_fix2_2026-06-26,0.8,summary_rewrite_wave2_2026-06-26
+einsted,startup_extended,startup_summary_en,"Einsted uses plasma pyrolysis technology to convert methane and hydrocarbon gases into clean hydrogen and solid carbon nanostructures for use as industrial materials. Its output is bio-industrial materials and clean energy chemicals — an industrial deep-tech play in green chemistry, not an ecosystem service.",swarm_inline_theme_fix2_2026-06-26,0.78,summary_rewrite_wave2_2026-06-26
+muta,startup_extended,startup_summary_en,"MUTA is a Colombian circular economy platform connecting industrial waste generators, collectors, and material processors to enable secondary raw material recovery and bio-based material upcycling. Its core is biomaterial recovery and industrial symbiosis — not precision agriculture.",swarm_inline_theme_fix2_2026-06-26,0.77,summary_rewrite_wave2_2026-06-26
+grupo-bios-co,startup_extended,startup_summary_en,"Grupo Bios manufactures and markets biological crop inputs — nitrogen-fixing biofertilizers, mycorrhizal inoculants, and microbial biocontrol agents — for use in Colombian agricultural production systems. Its products are applied to soil and crops as biological alternatives to synthetic fertilizers and pesticides.",swarm_inline_theme_fix2_2026-06-26,0.82,summary_rewrite_wave2_2026-06-26
+agrigenetic-ecuador-ec,startup_extended,startup_summary_en,"Agrigenetic Ecuador provides genomic selection and reproductive biotechnology services — embryo transfer, artificial insemination, and SNP genotyping — as biological service inputs to Ecuadorian livestock breeders seeking to accelerate genetic improvement in their cattle herds without therapeutic or veterinary treatment scope.",swarm_inline_theme_fix2_2026-06-26,0.8,summary_rewrite_wave2_2026-06-26
+kheiron-biotech-ar,startup_extended,startup_summary_en,"Kheiron Biotech applies somatic cell nuclear transfer cloning to replicate genetically elite Argentine cattle and polo horses, producing biological material — embryos, germplasm, and cloned animals — that function as premium genetic inputs for performance livestock breeding programs. Not a veterinary therapeutic company.",swarm_inline_theme_fix2_2026-06-26,0.78,summary_rewrite_wave2_2026-06-26
+biocell-mx,startup_extended,bio_theme_primary,Food Systems & Alt Proteins,swarm_inline_theme_fix2_2026-06-26,0.79,reclassify_wave2: collagen hydrolysate for food/nutraceutical consumption = Food Systems
+gen-t-br,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+ucrop-it-ar,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+giraffe-bio-ar,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+bioelements-cl,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+geneprodx-mx,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+kura-biotec-mx,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+neoprospecta-br,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+biocentis-br,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+cellertz-bio-br,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+hapiseeds-br,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+pharmalens-br,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+aimirim-br,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+patagonia-biotechnology-cl,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+nchemi-br,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+mirscience-therapeutics-br,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+cowmed-br,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+terragene-ar,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+rnatech-ar,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+merken-biotech-cl,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+ejido-verde-mx,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+strong-by-form-cl,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+living-ink-us,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+nutrition-from-water-cl,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+mothership-materials-cl,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+amnova-biotech-cl,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+baxxis-medtech-cl,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+bioceres_sa,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+moolec,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+aintech,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+thyroidprint,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+eternal_mycofood,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+linda_lifetech,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+ecosea,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+polybion,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+agrorganica,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+copptech,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+copper3d,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+contech_brasil,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+mendelics,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+lizarbio,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+aptah,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+clearleaf,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+speratum,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+recepta_biopharma,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+odd_industries,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+neuralmed,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+caspr_biotech_acq_by_amazon,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+heritas,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+prosperia,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+micro_meat,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+huna,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+glucogear,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+growpack,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+corsync,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+carigenetics,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+celer_biotecnologia,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+rizoflora_biotechnology_acq_by_stoller,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+tissuelabs,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+vaxinz,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+celluris,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+insitu,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+limay,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+biosens,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+selectivity,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+hoobox_one,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+biorgani,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+pannex_therapeutics,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+microendo,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+biotecnofe,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+spora_biotech,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+ecosativa,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+calice_biotech,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+grupo_diagnostico_aries,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+brtc,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+pathovet,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+dioxd,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+bitmec,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+by_my_cell,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+diagnosis_biotech,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+dart_by_teledx,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+advanced_biocontrollers,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+pow_foods,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+fk_biotecnologia,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+panarum,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+tismoo,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+genomika_diagnosticos,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+vetpix,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+virtech_bio,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+naiad,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+pickcells,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+futr_bio,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+theravax,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+detx_mol,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+isla_pharmaceuticals,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+progal,startup_extended,bio_theme_confidence,0.8,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:external_auditable_source
+fabns,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+bentenbiotech,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+moondo,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+novagenic_affinity,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+smatter,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+pixed,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+epicca,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+cutting_edge_superconductors,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+biomimetic_solutions,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+biofab,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+php_biotech,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+inpulse_medical,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+diagtech,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+gentec,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+gricha,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+neurognos,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+thermy,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+mirai_3d,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+nanotropic_tecnologia,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:None
+green-xpo-lab-cr,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+xeptiva-therapeutics-uy,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+innmetec-co,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+biiosmart-co,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+corpogen-co,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+ascribe-bio-br,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+neocroptech-cl,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+welii-ar,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+aquabyte-cl,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+bioceres-ar,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+bioplast-br,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+biofactory-br,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+salmoss-biotech-cl,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+aquabio-cl,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+cropguard-cl,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+seedtech-cl,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+agro-logica-co,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+fungicontrol-co,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+bioproducts-co,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+biomar-cr,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+biocell-mx,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+oncoprecision-ar,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+devalor-cl,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+recirculab-cl,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+tissue-nova-mx,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+global-nano-additives-mx,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+forma-foods-mx,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+biowit-mx,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+grupo-bios-co,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+terrasos-br,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+recombine-biotech-br,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+cepha-biotech-br,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+hem-healthtech-co,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+labtronics-sas-co,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+lifepack-co,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+biorefinery-tech-brazil-br,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+nemacontrol-biologicos-br,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+microbiota-agricola-br,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+biodiverso-insumos-br,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+tierra-de-monte-mx,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+plantverd-mx,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+scintia-mx,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+bioram-mx,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+fieldfactors-mx,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+microlabs-mx,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+biolife-innovations-bo,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+swebol-biotech-bo,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+agritech-bolivia-bo,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+dimitra-bolivia-operations-bo,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+agrobit-bolivia-operations-bo,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+healthpoint-bo,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+krtl-biotech-bolivia-expansion-bo,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+energytop-via-proinpa-bo,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+innovatech-bo,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+ecocycle-biotech-ec,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+biohack-uio-ec,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+silicochem-ec,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+agroscan-ec,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+biogenesis-bago-ec,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+agrigenetic-ecuador-ec,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+minerba-ec,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+digital-twin-corporation-cr,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+magenta-biolabs-cr,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+magic-green-cr,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+geanext-cr,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+biotech-cr,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+lilliput-technologies-cr,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+quipu-cr,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+nanomedical-cr,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+wseeds-co,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+agrocontrol-gt,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+lilliput-technologies-ltd-cr,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+biometrics-medellin-co,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+respiratorydx-co,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+medimarket-online-ve,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+agroguia-ve,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+bontix-do,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+agricultic-do,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+agro360-do,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+caribbean-medtech-do,startup_extended,bio_theme_confidence,0.55,swarm_inline_trl_conf_2026-06-26,0.9,inferred_from_scope_basis:auto_discovery
+agrion-agrisolutions-br,startup_extended,trl_current_status,8,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+vitales-br,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+inspectral-br,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+peptidus-biotech-br,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+brain4care-br,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+genial-care-br,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+beep-saude-br,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+vyro-bio-br,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+inedita-bio-br,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+taugc-bioinformatics-br,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+nintx-br,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+gen-t-br,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+autem-therapeutics-br,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+quantis-br,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+ucrop-it-ar,startup_extended,trl_current_status,5,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:enabler+summary_keywords
+calice-ai-ar,startup_extended,trl_current_status,5,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:enabler+summary_keywords
+giraffe-bio-ar,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+motivia-ar,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+avedian-ar,startup_extended,trl_current_status,5,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:enabler+summary_keywords
+the-live-green-co-cl,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+andes-biotechnologies-cl,startup_extended,trl_current_status,5,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+daeki-cl,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+algenis-cl,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+bioelements-cl,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+exacta-bioscience-cl,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+instacrops-cl,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+hif-global-cl,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+examedi-cl,startup_extended,trl_current_status,8,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+bruna-by-altum-lab-cl,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+eva-mx,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+unima-mx,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+geneprodx-mx,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+nanopharmacia-group-mx,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+savefruit-mx,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+kura-biotec-mx,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+webio-ar,startup_extended,trl_current_status,3,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+tarvos-br,startup_extended,trl_current_status,5,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:enabler+summary_keywords
+agronow-br,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+neoprospecta-br,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+biocentis-br,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+cellertz-bio-br,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+hapiseeds-br,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+reddot-bio-br,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+aptah-bio-br,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+decoy-smart-control-br,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+neomed-br,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+bloomcare-br,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+pharmalens-br,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+botanical-solution-inc-cl,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+movet-co,startup_extended,trl_current_status,8,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+mzp-tecnologia-ar,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+biotrop-br,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+atarraya-mx,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+solena-mx,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+earth-ocean-farms-mx,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+aimirim-br,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+ecotrace-br,startup_extended,trl_current_status,5,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:enabler+summary_keywords
+levita-magnetics-cl,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+praxis-biotech-cl,startup_extended,trl_current_status,3,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+isobar-br,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+patagonia-biotechnology-cl,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+food-for-the-future-cl,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+wiseconn-cl,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+strider-br,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+nchemi-br,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+mirscience-therapeutics-br,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+biofabrica-siglo-xxi-mx,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+bio-insumos-nativa-cl,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+bioin-br,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+treevia-br,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+cowmed-br,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+naiad-drug-design-br,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+mabxience-ar,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+terragene-ar,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+rnatech-ar,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+sistema-bio-mx,startup_extended,trl_current_status,8,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+koltin-mx,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+cells-for-cells-cl,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+atacama-biomaterials-cl,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+merken-biotech-cl,startup_extended,trl_current_status,3,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+kheiron-biotech-ar,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+biosidus-ar,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+kran-nanobubble-cl,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+cellter-cl,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+luyef-biotechnologies-cl,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+inmunova-ar,startup_extended,trl_current_status,5,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+digifarmz-br,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+farmbox-br,startup_extended,trl_current_status,8,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+agrosustain-mx,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+ecoshell-mx,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+ejido-verde-mx,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+strong-by-form-cl,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+living-ink-us,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+nutrition-from-water-cl,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+mothership-materials-cl,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+amnova-biotech-cl,startup_extended,trl_current_status,3,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+baxxis-medtech-cl,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+bioceres_sa,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+moolec,startup_extended,trl_current_status,8,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+biotimize,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+aintech,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+thyroidprint,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+eternal_mycofood,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+linda_lifetech,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+ecosea,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+polybion,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+agrorganica,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+copptech,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+copper3d,startup_extended,trl_current_status,8,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+contech_brasil,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+mendelics,startup_extended,trl_current_status,3,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+lizarbio,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+aptah,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+olho_do_dono,startup_extended,trl_current_status,5,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:enabler+summary_keywords
+clearleaf,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+speratum,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+recepta_biopharma,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+odd_industries,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+cenibiot,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+biosolvit,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+neuralmed,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+caspr_biotech_acq_by_amazon,startup_extended,trl_current_status,3,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+heritas,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+prosperia,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+micro_meat,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+huna,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+glucogear,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+growpack,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+corsync,startup_extended,trl_current_status,3,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+carigenetics,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+celer_biotecnologia,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+rizoflora_biotechnology_acq_by_stoller,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+ages_bioactive,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+tissuelabs,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+vaxinz,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+celluris,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+insitu,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+bio_bureau_biotechnology,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+wayakit,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+limay,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+biosens,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+selectivity,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+hoobox_one,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+biorgani,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+pannex_therapeutics,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+nanofreeze,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.65,inferred_from_tech_depth:deep+summary_keywords
+microendo,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+biotecnofe,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+spora_biotech,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+ecosativa,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+calice_biotech,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+veloz_bio,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+meton,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+grupo_diagnostico_aries,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+siquimia,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+brtc,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+nanovetores_group,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+pathovet,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+novalact,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+dioxd,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+bitmec,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+nanoblast,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+by_my_cell,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+diagnosis_biotech,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+dart_by_teledx,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+advanced_biocontrollers,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+pow_foods,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+fk_biotecnologia,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+panarum,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+tismoo,startup_extended,trl_current_status,3,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+genomika_diagnosticos,startup_extended,trl_current_status,3,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+vetpix,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+photio,startup_extended,trl_current_status,8,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+virtech_bio,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+naiad,startup_extended,trl_current_status,3,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+aravan_labs,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+pickcells,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+futr_bio,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+theravax,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+detx_mol,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+granatum_bioworks,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+isla_pharmaceuticals,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+progal,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.65,inferred_from_tech_depth:applied+summary_keywords
+fabns,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+bentenbiotech,startup_extended,trl_current_status,3,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+biotic,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+activaq,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+biobreyer,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+moondo,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+novagenic_affinity,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+bialtec,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.65,inferred_from_tech_depth:applied+summary_keywords
+ictiobiotic,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+ymmunobio,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+smatter,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+pixed,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+epicca,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+cutting_edge_superconductors,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+biomimetic_solutions,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+biofab,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+php_biotech,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+green_biofactory,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+inpulse_medical,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+diagtech,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+hemoalgae,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+gentec,startup_extended,trl_current_status,3,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+gricha,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+neurognos,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+thermy,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+mirai_3d,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+domolif,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+nanotropic_tecnologia,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+nalca-biotech-cl,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.65,inferred_from_tech_depth:deep+summary_keywords
+codebreaker-bioscience-cl,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.65,inferred_from_tech_depth:applied+summary_keywords
+viobact-cl,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.65,inferred_from_tech_depth:applied+summary_keywords
+mycoseaweed-cl,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.65,inferred_from_tech_depth:applied+summary_keywords
+infood-protein-cl,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.65,inferred_from_tech_depth:applied+summary_keywords
+inkus-biotech-cl,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.65,inferred_from_tech_depth:applied+summary_keywords
+ayni-desert-interaction-cl,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.65,inferred_from_tech_depth:applied+summary_keywords
+pewman-innovation-cl,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.65,inferred_from_tech_depth:applied+summary_keywords
+ecombio-cl,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.65,inferred_from_tech_depth:applied+summary_keywords
+koji-co,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.65,inferred_from_tech_depth:applied+summary_keywords
+Bee Technology,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.65,inferred_from_tech_depth:applied+summary_keywords
+green-xpo-lab-cr,startup_extended,trl_current_status,8,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+xeptiva-therapeutics-uy,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+innmetec-co,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+biiosmart-co,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+corpogen-co,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+ascribe-bio-br,startup_extended,trl_current_status,5,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+protera-bio-cl,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+neocroptech-cl,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+welii-ar,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+aquabyte-cl,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+bioceres-ar,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+biofresh-br,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+fermentlab-br,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+bioplast-br,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+cellculture-br,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+biofactory-br,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+salmoss-biotech-cl,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+aquabio-cl,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+cropguard-cl,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+seedtech-cl,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+agro-logica-co,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+fungicontrol-co,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+bioproducts-co,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+biomar-cr,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+biocell-mx,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+oncoprecision-ar,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+devalor-cl,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+recirculab-cl,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+tissue-nova-mx,startup_extended,trl_current_status,3,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+global-nano-additives-mx,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+forma-foods-mx,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+biowit-mx,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+grupo-bios-co,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+terrasos-br,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+cellva-ingredients-br,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+consiste-br,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+biolinker-br,startup_extended,trl_current_status,3,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+recombine-biotech-br,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+cepha-biotech-br,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+eatcloud-co,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+hem-healthtech-co,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+labtronics-sas-co,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+lifepack-co,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+alecrim-biotech-br,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+nutrissis-biotech-br,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+cellmeat-brasil-br,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+biorefinery-tech-brazil-br,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+myvac-bioproducts-br,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+bioprocess-automation-brasil-br,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+nemacontrol-biologicos-br,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+microbiota-agricola-br,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+biodiverso-insumos-br,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+tierra-de-monte-mx,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+plantverd-mx,startup_extended,trl_current_status,8,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+scintia-mx,startup_extended,trl_current_status,3,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+bioram-mx,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+fieldfactors-mx,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+microlabs-mx,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+biolife-innovations-bo,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+swebol-biotech-bo,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+agritech-bolivia-bo,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+dimitra-bolivia-operations-bo,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+agrobit-bolivia-operations-bo,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+healthpoint-bo,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+krtl-biotech-bolivia-expansion-bo,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+energytop-via-proinpa-bo,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+innovatech-bo,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+ecocycle-biotech-ec,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+biohack-uio-ec,startup_extended,trl_current_status,3,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+silicochem-ec,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+agroscan-ec,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+biogenesis-bago-ec,startup_extended,trl_current_status,5,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+agrigenetic-ecuador-ec,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+minerba-ec,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+digital-twin-corporation-cr,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+magenta-biolabs-cr,startup_extended,trl_current_status,4,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+magic-green-cr,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+geanext-cr,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+biotech-cr,startup_extended,trl_current_status,5,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:deep+summary_keywords
+lilliput-technologies-cr,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+quipu-cr,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+nanomedical-cr,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+wseeds-co,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+agrocontrol-gt,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+lilliput-technologies-ltd-cr,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+fermentlabs-co,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+biometrics-medellin-co,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+respiratorydx-co,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+medimarket-online-ve,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+agroguia-ve,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+bontix-do,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+agricultic-do,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+agro360-do,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+caribbean-medtech-do,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords

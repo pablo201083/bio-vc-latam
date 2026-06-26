@@ -613,6 +613,7 @@
 
 <script src="./text-clean.js?v=20260613_181300"></script>
 <script src="./startup-themes-data.js?v=20260614_143304"></script>
+<script src="./theme-cluster-descriptions.js"></script>
 <script src="./coverage-data.js?v=20260614_004500"></script>
 <script>
 (function(){
@@ -624,8 +625,19 @@ if(!D||!D.startups||!D.startups.length){
   return;
 }
 
-// ── Bio-theme descriptions (curated, editorial) ───────────────────────────────
-const THEME_DESC = D.bio_theme_descriptions || {};
+// ── Curated theme + cluster descriptions (theme-cluster-descriptions.js) ──────
+const _TCD = (window.THEME_CLUSTER_DESCRIPTIONS && window.THEME_CLUSTER_DESCRIPTIONS.theme_descriptions) || {};
+const _CCD = (window.THEME_CLUSTER_DESCRIPTIONS && window.THEME_CLUSTER_DESCRIPTIONS.cluster_descriptions) || {};
+
+// ── Bio-theme descriptions — prefer rich curated copy, fallback to data file ──
+const THEME_DESC = Object.fromEntries(
+  Object.entries({
+    'Diagnostics & Devices':1,'Therapeutics':1,'Food Systems & Alt Proteins':1,
+    'Biomaterials & Green Chemistry':1,'Biomanufacturing & Platform Technologies':1,
+    'Bioinputs & Crop Resilience':1,'Nature & Ecosystem Tech':1,
+    'Precision Agriculture':1,'Digital AgTech & Agrifintech':1
+  }).map(([k])=>[k, (_TCD[k]||{}).description || (D.bio_theme_descriptions||{})[k] || ''])
+);
 
 // ── Editorial category palette — 7 bottom-up categories ─────────────────────
 const THEME_PAL={
@@ -1653,11 +1665,14 @@ function buildThemeDetailHTML(tm){
   themeNodes.forEach(n=>{const sl=n.d.sub_cluster_label;if(sl)subLabels.set(sl,(subLabels.get(sl)||0)+1);});
   const topCountries=Object.entries(tm.countries).sort((a,b)=>b[1]-a[1]).slice(0,4);
   const desc=THEME_DESC[tm.name]||"";
+  const _thd=_TCD[tm.name]||{};
   const pct=tm.count>0?Math.round(tm.n_funded/tm.count*100):0;
   let h=`<div class="cr-det-body">`;
 
-  // descripción
+  // tagline + descripción + boundary
+  if(_thd.tagline) h+=`<p style="font-size:11px;font-weight:700;color:var(--accent);letter-spacing:.04em;text-transform:uppercase;margin:0 0 6px">${_thd.tagline}</p>`;
   if(desc) h+=`<p class="cr-det-desc">${desc}</p>`;
+  if(_thd.boundary) h+=`<p style="font-size:10.5px;color:var(--muted);font-style:italic;margin:6px 0 10px;line-height:1.5">${_thd.boundary}</p>`;
 
   // stat grid 2×2
   h+=`<div class="cr-det-grid">
@@ -1667,15 +1682,25 @@ function buildThemeDetailHTML(tm){
     <div class="cr-det-cell"><div class="cr-det-lbl">Países</div><div class="cr-det-val">${Object.keys(tm.countries).length}</div></div>
   </div>`;
 
-  // sub-clusters como chips teal clicables
+  // sub-clusters como chips teal clicables + descripción del activo
   if(subLabels.size){
     h+=`<div class="cr-det-sec">Sub-clusters</div><div class="cr-det-chips">`;
     [...subLabels.entries()].sort((a,b)=>b[1]-a[1]).forEach(([lbl,n])=>{
       const kw=(lbl.split(" — ")[1]||lbl).replace(/^\w+ — /,"");
       const isActive=activeSubCluster===lbl;
-      h+=`<span class="cr-det-chip cr-det-chip-teal" data-subcluster="${lbl}" style="cursor:pointer;${isActive?"outline:2px solid var(--accent);font-weight:700;":""}">${kw} <span style="opacity:.5">${n}</span></span>`;
+      const tip=(_CCD[lbl]||{}).tagline||"";
+      h+=`<span class="cr-det-chip cr-det-chip-teal" data-subcluster="${lbl}" title="${tip}" style="cursor:pointer;${isActive?"outline:2px solid var(--accent);font-weight:700;":""}">${kw} <span style="opacity:.5">${n}</span></span>`;
     });
     h+=`</div>`;
+    // si hay un sub-cluster activo, mostrar su descripción
+    if(activeSubCluster && _CCD[activeSubCluster]){
+      const cd=_CCD[activeSubCluster];
+      h+=`<div style="margin-top:8px;padding:8px 10px;background:var(--surface2,rgba(255,255,255,.04));border-radius:6px;border-left:2px solid var(--accent)">`;
+      if(cd.tagline) h+=`<p style="font-size:10.5px;font-weight:700;color:var(--accent);margin:0 0 4px;letter-spacing:.03em">${cd.tagline}</p>`;
+      if(cd.description) h+=`<p style="font-size:10.5px;color:var(--ink);line-height:1.5;margin:0 0 4px">${cd.description}</p>`;
+      if(cd.boundary) h+=`<p style="font-size:10px;color:var(--muted);font-style:italic;line-height:1.45;margin:0">${cd.boundary}</p>`;
+      h+=`</div>`;
+    }
   }
 
   // top startups
@@ -3387,7 +3412,8 @@ window.openDetailPanel = function openDetailPanel(tm, theme){
   const pct    = tm.count>0 ? Math.round(tm.n_funded/tm.count*100) : 0;
   const topSubs= [...tm.subClusters.entries()].sort((a,b)=>b[1]-a[1]).slice(0,5);
   const topCtrs= Object.entries(tm.countries).sort((a,b)=>b[1]-a[1]).slice(0,4);
-  const desc   = (window.STARTUP_THEMES_DATA && window.STARTUP_THEMES_DATA.bio_theme_descriptions && window.STARTUP_THEMES_DATA.bio_theme_descriptions[theme]) || '';
+  const _thd2 = _TCD[theme] || {};
+  const desc   = _thd2.description || (window.STARTUP_THEMES_DATA && window.STARTUP_THEMES_DATA.bio_theme_descriptions && window.STARTUP_THEMES_DATA.bio_theme_descriptions[theme]) || '';
 
   inner.innerHTML=`
     <div style="position:relative;padding-bottom:4px;">
@@ -3398,7 +3424,9 @@ window.openDetailPanel = function openDetailPanel(tm, theme){
         <h2 class="bdp-title">${theme}</h2>
       </div>
       <span class="bdp-count">${tm.count} startups</span>
-      ${desc ? `<p style="font-size:12px;color:var(--ink);line-height:1.55;margin-bottom:12px;font-family:var(--sans);">${desc}</p>` : ''}
+      ${_thd2.tagline ? `<p style="font-size:11px;font-weight:700;color:var(--accent);letter-spacing:.04em;text-transform:uppercase;margin:8px 0 4px;font-family:var(--sans);">${_thd2.tagline}</p>` : ''}
+      ${desc ? `<p style="font-size:12px;color:var(--ink);line-height:1.55;margin-bottom:8px;font-family:var(--sans);">${desc}</p>` : ''}
+      ${_thd2.boundary ? `<p style="font-size:11px;color:var(--muted);font-style:italic;line-height:1.5;margin-bottom:12px;font-family:var(--sans);">${_thd2.boundary}</p>` : ''}
       <div class="bdp-stat-grid">
         <div class="bdp-stat-cell"><div class="bdp-stat-lbl">${t('detail.funded')}</div><div class="bdp-stat-val">${tm.n_funded} (${pct}%)</div></div>
         <div class="bdp-stat-cell"><div class="bdp-stat-lbl">${t('stats.destacadas')}</div><div class="bdp-stat-val">${tm.n_featured}</div></div>
@@ -3471,18 +3499,9 @@ const SHORT_THEME_CAT={
   'Precision Agriculture':'Agricultura de Precisión',
   'Digital AgTech & Agrifintech':'Digital AgTech'
 };
-// Descripciones editoriales por tema
-const THEME_DESC={
-  'Diagnostics & Devices':'Tecnologías de diagnóstico in vitro, dispositivos médicos, biosensores y herramientas de monitoreo para detección temprana y seguimiento de enfermedades.',
-  'Therapeutics':'Medicina regenerativa, terapia celular, biologics y desarrollo clínico de fármacos para oncología, enfermedades crónicas y neurología.',
-  'Food Systems & Alt Proteins':'Proteínas alternativas, fermentación de precisión, cultivo celular e innovación en sistemas alimentarios sostenibles y nutrición funcional.',
-  'Biomaterials & Green Chemistry':'Materiales biológicos, biopolímeros, química verde y economía circular para reemplazar plásticos y materiales de origen fósil.',
-  'Biomanufacturing & Platform Technologies':'Plataformas de bioproducción, fermentación industrial, biorreactores y tecnologías habilitadoras para escalar la bioeconomía.',
-  'Bioinputs & Crop Resilience':'Bioinsumos microbianos, bioestimulantes y soluciones de protección de cultivos que reemplazan agroquímicos convencionales.',
-  'Nature & Ecosystem Tech':'Tecnologías para restauración de ecosistemas, monitoreo ambiental, conservación de biodiversidad y mitigación del cambio climático.',
-  'Precision Agriculture':'Sensores, drones, sistemas de información geográfica y analytics para optimización de rendimientos y gestión de recursos en campo.',
-  'Digital AgTech & Agrifintech':'Software agrícola, fintech para el agro, trazabilidad, marketplaces y herramientas digitales para la cadena de valor agropecuaria.'
-};
+const _TCD=(window.THEME_CLUSTER_DESCRIPTIONS&&window.THEME_CLUSTER_DESCRIPTIONS.theme_descriptions)||{};
+const _CCD=(window.THEME_CLUSTER_DESCRIPTIONS&&window.THEME_CLUSTER_DESCRIPTIONS.cluster_descriptions)||{};
+const THEME_DESC=Object.fromEntries(THEME_ORDER_CAT.map(k=>[k,(_TCD[k]||{}).description||(D.bio_theme_descriptions||{})[k]||'']));
 const FLAG_MAP=window.FLAG_MAP||{};
 // Abreviatura de 2 letras para mostrar en barras
 const CC2={Argentina:'AR',Brasil:'BR',Brazil:'BR',Chile:'CL',Colombia:'CO',Mexico:'MX',México:'MX',Uruguay:'UY',Peru:'PE',Perú:'PE',Ecuador:'EC','Costa Rica':'CR',Panama:'PA',Paraguay:'PY',Bolivia:'BO',Venezuela:'VE',Spain:'ES',España:'ES',UK:'UK',US:'US',USA:'US',Guatemala:'GT'};
@@ -3754,7 +3773,8 @@ function renderThemePage(theme, main){
   // ── SUB-CLUSTERS ─────────────────────────────────────────────────────
   const subMap=new Map();
   ss.forEach(s=>{
-    const k=s.sub_cluster_label||'Sin clasificar';
+    if(!s.sub_cluster_label)return;
+    const k=s.sub_cluster_label;
     if(!subMap.has(k))subMap.set(k,[]);
     subMap.get(k).push(s);
   });
@@ -3819,9 +3839,9 @@ function buildCatalog(){
       nav.appendChild(item);
       if(isActive){
         const subMap2=new Map();
-        ss2.forEach(s=>{const k=s.sub_cluster_label||'Sin clasificar';if(!subMap2.has(k))subMap2.set(k,[]);subMap2.get(k).push(s);});
+        ss2.forEach(s=>{if(!s.sub_cluster_label)return;const k=s.sub_cluster_label;if(!subMap2.has(k))subMap2.set(k,[]);subMap2.get(k).push(s);});
         [...subMap2.entries()].sort((a,b)=>b[1].length-a[1].length).forEach(([lbl])=>{
-          const kw=lbl.replace(/^cluster\s*\d+\s*[—\-]\s*/i,'').replace(/^\w+\s*[—\-]\s*/,'');
+          const kw=lbl.replace(/^cluster\s*\d+\s*[—\-]\s*/i,'').replace(/^\w+\s+[—\-]\s+/,'');
           const subId='sub-'+kw.replace(/\W+/g,'-').toLowerCase().slice(0,32);
           const sub=document.createElement('div');
           sub.style.cssText='padding:3px 12px 3px 26px;font-size:.68rem;color:var(--muted);font-family:var(--sans);line-height:1.3;cursor:pointer;';
@@ -3940,7 +3960,8 @@ function buildCatalog(){
     // Sub-clusters — styled como .cr cards del sidebar
     const subMap=new Map();
     ss.forEach(s=>{
-      const k=s.sub_cluster_label||'Sin clasificar';
+      if(!s.sub_cluster_label)return;
+      const k=s.sub_cluster_label;
       if(!subMap.has(k))subMap.set(k,[]);
       subMap.get(k).push(s);
     });
@@ -3948,7 +3969,7 @@ function buildCatalog(){
     subBody.style.cssText='padding:12px 14px 14px;display:grid;gap:5px;';
 
     [...subMap.entries()].sort((a,b)=>b[1].length-a[1].length).forEach(([lbl,subs])=>{
-      const kw=lbl.replace(/^cluster\s*\d+\s*[—\-]\s*/i,'').replace(/^\w+\s*[—\-]\s*/,'');
+      const kw=lbl.replace(/^cluster\s*\d+\s*[—\-]\s*/i,'').replace(/^\w+\s+[—\-]\s+/,'');
       const card=document.createElement('div');
       // Exactamente el estilo .cr del sidebar
       card.style.cssText='padding:9px 11px;border:1px solid rgba(200,200,200,.65);border-left:3px solid '+col+';border-radius:9px;background:rgba(255,255,255,.78);';
