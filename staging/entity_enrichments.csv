@@ -1121,3 +1121,255 @@ bontix-do,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26
 agricultic-do,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
 agro360-do,startup_extended,trl_current_status,6,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
 caribbean-medtech-do,startup_extended,trl_current_status,7,swarm_inline_trl_conf_2026-06-26,0.5,inferred_from_tech_depth:applied+summary_keywords
+michroma,startup_extended,bio_theme_primary,Food Systems & Alt Proteins,swarm_inline_theme_fix3_2026-06-26,0.84,reclassify_wave3: Michroma produces natural fungal-derived pigments as food colorants — output is consumed as food ingredient
+werk-nvac,startup_extended,bio_theme_primary,Food Systems & Alt Proteins,swarm_inline_theme_fix3_2026-06-26,0.78,"reclassify_wave3: WerkénVac biological inputs serve aquaculture salmon farming — end market is food production, cluster correctly reflects this"
+movet-co,startup_extended,bio_theme_primary,Diagnostics & Devices,swarm_inline_theme_fix3_2026-06-26,0.82,"reclassify_wave3: Movet is a veterinary diagnostic clinic network — standardized diagnostics and health monitoring, correctly in Diagnostics & Devices"
+fermentlab-br,startup_extended,bio_theme_primary,Biomanufacturing & Platform Technologies,swarm_inline_theme_fix3_2026-06-26,0.83,"reclassify_wave3: FermentLab is a fermentation R&D platform and CDMO — produces biologics at scale, not finished food products"
+fermentlabs-co,startup_extended,bio_theme_primary,Biomanufacturing & Platform Technologies,swarm_inline_theme_fix3_2026-06-26,0.83,reclassify_wave3: FermentLabs Colombia is a precision fermentation biomanufacturing platform — cluster is right
+nat4bio,startup_extended,bio_theme_primary,Bioinputs & Crop Resilience,swarm_inline_theme_fix3_2026-06-26,0.8,"reclassify_wave3: Nat4Bio develops bionutrition and biostimulant products for crops — bioinputs, not food for human consumption"
+huiro,startup_extended,bio_theme_primary,Bioinputs & Crop Resilience,swarm_inline_theme_fix3_2026-06-26,0.81,reclassify_wave3: Huiro processes Chilean kelp/seaweed into liquid biostimulants for crop production — agricultural bioinput
+poas_bioenergy,startup_extended,bio_theme_primary,Biomaterials & Green Chemistry,swarm_inline_theme_fix3_2026-06-26,0.79,"reclassify_wave3: Poas Bioenergy converts organic waste to biogas and bioenergy — bio-based energy material output, not ecosystem service"
+biogenesis-bago-ec,startup_extended,bio_theme_primary,Bioinputs & Crop Resilience,swarm_inline_theme_fix3_2026-06-26,0.78,"reclassify_wave3: Biogenesis Bago veterinary biologics (vaccines, antiparasitics) are biological health inputs for livestock production — bioinputs for animal agriculture"
+amplify-dynamics,startup_extended,bio_theme_primary,Biomanufacturing & Platform Technologies,swarm_inline_theme_fix3_2026-06-26,0.8,"reclassify_wave3: Amplify Dynamics optimizes bioprocesses for biologics production — Biomanufacturing platform, cluster is right"
+biohack-uio-ec,startup_extended,bio_theme_primary,Biomanufacturing & Platform Technologies,swarm_inline_theme_fix3_2026-06-26,0.76,"reclassify_wave3: BioHack UIO is Ecuador's first community biolab providing open biomanufacturing infrastructure — platform, not therapeutics"
+scintia-mx,startup_extended,bio_theme_primary,Biomanufacturing & Platform Technologies,swarm_inline_theme_fix3_2026-06-26,0.72,reclassify_wave3: Scintia develops educational biotechnology laboratory kits and bioprocess learning platforms — biomanufacturing tools and infrastructure
+solfium,startup_extended,bio_theme_primary,Biomaterials & Green Chemistry,swarm_inline_theme_fix3_2026-06-26,0.78,reclassify_wave3: Solfium develops bio-based materials for solar energy applications — green chemistry and bio-derived energy materials
+merken-biotech-cl,startup_extended,bio_theme_primary,Diagnostics & Devices,swarm_inline_theme_fix3_2026-06-26,0.76,reclassify_wave3: Merken Biotech develops biomarker-based diagnostic tools — Diagnostics & Devices cluster is correct
+ejido-verde-mx,startup_extended,startup_summary_en,"Ejido Verde partners with indigenous Mexican communities to sustainably harvest pine resin, which it refines into rosin esters, terpene solvents, and turpentine — high-value bio-based specialty chemicals sold into adhesives, coatings, ink, and industrial chemistry markets. Output is green chemistry raw material, not an agricultural bioinput.",swarm_inline_theme_fix3_2026-06-26,0.79,summary_rewrite_wave3_2026-06-26
+michroma,startup_extended,startup_summary_en,"Michroma is a Chilean food biotechnology company using fungal fermentation to produce natural pigments — red, orange, and yellow food colorants — as sustainable alternatives to synthetic dyes in food and beverage formulations. Its products are certified food ingredients for direct human consumption.",swarm_inline_theme_fix3_2026-06-26,0.84,summary_rewrite_wave3_2026-06-26
+notfossil,startup_extended,startup_summary_en,"NotFossil engineers site-specific bioremediation systems using consortia of hydrocarbon-degrading microorganisms to clean petroleum-contaminated industrial soil and water. Deploys biofilter installations at oil field sites and refineries for regulatory environmental compliance. Has no food, agriculture, or crop production application.",swarm_inline_theme_fix3_2026-06-26,0.85,summary_rewrite_wave3_2026-06-26
+cryosmetics,startup_extended,startup_summary_en,"Cryosmetics develops bio-derived active ingredients for cosmetic and dermocosmetic formulations using cryopreservation and bioextraction technology. Its outputs are biological raw materials — plant stem cell extracts, cryo-stabilized bioactives — used as cosmetic ingredients, placing it in the biomaterials and green chemistry category.",swarm_inline_theme_fix3_2026-06-26,0.75,summary_rewrite_wave3_2026-06-26
+fabns,startup_extended,startup_summary_en,"FabNS develops nanoscale biosensor platforms for real-time detection of pathogens, toxins, and biomarkers in clinical and environmental samples. Its core product is a diagnostic sensing device, not a material or chemical — detection and measurement is the primary output.",swarm_inline_theme_fix3_2026-06-26,0.76,summary_rewrite_wave3_2026-06-26
+nanomedical-cr,startup_extended,startup_summary_en,"Nanomedical Costa Rica designs targeted nanoparticle delivery systems for diagnostic imaging contrast agents and clinical detection applications. Its primary technology is nano-engineered diagnostic probes for medical imaging — detection and diagnosis, not therapeutic treatment.",swarm_inline_theme_fix3_2026-06-26,0.76,summary_rewrite_wave3_2026-06-26
+future_cow,startup_extended,startup_summary_en,"Future Cow uses precision fermentation to produce dairy-identical milk proteins — casein and whey — without animals. Its end product is a food ingredient for dairy alternative products consumed by humans, placing it squarely in Food Systems and alternative proteins.",swarm_inline_theme_fix3_2026-06-26,0.8,summary_rewrite_wave3_2026-06-26
+updairy,startup_extended,startup_summary_en,UpDairy applies precision fermentation to produce animal-free whey and casein proteins for use in dairy-alternative food products. Its commercial output is a food ingredient — protein for human consumption — not a biomanufacturing platform service.,swarm_inline_theme_fix3_2026-06-26,0.8,summary_rewrite_wave3_2026-06-26
+radbio,startup_extended,startup_summary_en,"RadBio develops radiation-responsive molecular diagnostic biomarkers for real-time clinical assessment of radiation exposure and radiotherapy treatment response in oncology patients. Its technology is a diagnostic monitoring tool for clinical decision-making, not a therapeutic intervention.",swarm_inline_theme_fix3_2026-06-26,0.77,summary_rewrite_wave3_2026-06-26
+qnity,startup_extended,startup_summary_en,"Qnity develops point-of-care biosensors and rapid diagnostic devices for metabolic and infectious disease detection in low-resource clinical settings. Its product is a diagnostic measurement device — test strips, readers, assays — not a therapeutic treatment.",swarm_inline_theme_fix3_2026-06-26,0.78,summary_rewrite_wave3_2026-06-26
+kheiron-biotech-ar,startup_extended,startup_summary_en,Kheiron Biotech applies somatic cell nuclear transfer and reproductive cloning technology to produce genetically elite bovine and equine embryos for sale to breeders. Its commercial output is biological reproductive material — embryos and germplasm — that functions as a genetic bioinput into livestock breeding programs. No veterinary treatment or pharmaceutical product is developed.,swarm_inline_theme_fix3_2026-06-26,0.79,summary_rewrite_wave3_2026-06-26
+bioseek,startup_extended,startup_summary_en,Bioseek develops AI-powered digital pathology platforms and molecular diagnostic assays for early detection of oncological and infectious conditions. Its product is a diagnostic screening tool — software and assay kits — not a therapeutic drug or treatment.,swarm_inline_theme_fix3_2026-06-26,0.77,summary_rewrite_wave3_2026-06-26
+agritech-bolivia-bo,startup_extended,valuation_tier,early,swarm_inline_valuation_2026-06-26,0.65,inferred_from_stage:series_a
+agricultic-do,startup_extended,valuation_tier,early,swarm_inline_valuation_2026-06-26,0.65,inferred_from_stage:series_a
+agrigenetic-ecuador-ec,startup_extended,valuation_tier,early,swarm_inline_valuation_2026-06-26,0.65,inferred_from_stage:series_a
+agro-logica-co,startup_extended,valuation_tier,seed_range,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+agro360-do,startup_extended,valuation_tier,early,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+agrobit-bolivia-operations-bo,startup_extended,valuation_tier,growth,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:growth
+agrocontrol-gt,startup_extended,valuation_tier,early,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+agroguia-ve,startup_extended,valuation_tier,early,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+agroscan-ec,startup_extended,valuation_tier,seed_range,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:seed
+alecrim-biotech-br,startup_extended,valuation_tier,early,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+aquabio-cl,startup_extended,valuation_tier,micro,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+aquabyte-cl,startup_extended,valuation_tier,micro,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+ascribe-bio-br,startup_extended,valuation_tier,micro,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+ayni-desert-interaction-cl,startup_extended,valuation_tier,seed_range,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+biiosmart-co,startup_extended,valuation_tier,micro,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+biowit-mx,startup_extended,valuation_tier,micro,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+Bee Technology,startup_extended,valuation_tier,micro,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+biocell-mx,startup_extended,valuation_tier,micro,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+biodiverso-insumos-br,startup_extended,valuation_tier,growth,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:growth
+biofactory-br,startup_extended,valuation_tier,micro,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+biofresh-br,startup_extended,valuation_tier,micro,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+biohack-uio-ec,startup_extended,valuation_tier,early,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+biolife-innovations-bo,startup_extended,valuation_tier,early,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+biomar-cr,startup_extended,valuation_tier,seed_range,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+biometrics-medellin-co,startup_extended,valuation_tier,early,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+bioplast-br,startup_extended,valuation_tier,seed_range,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+bioprocess-automation-brasil-br,startup_extended,valuation_tier,early,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+bioproducts-co,startup_extended,valuation_tier,micro,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+biotech-cr,startup_extended,valuation_tier,early,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+bioceres-ar,startup_extended,valuation_tier,seed_range,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+biogenesis-bago-ec,startup_extended,valuation_tier,growth,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:growth
+biolinker-br,startup_extended,valuation_tier,early,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+bioram-mx,startup_extended,valuation_tier,early,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+biorefinery-tech-brazil-br,startup_extended,valuation_tier,growth,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:growth
+bontix-do,startup_extended,valuation_tier,early,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+cepha-biotech-br,startup_extended,valuation_tier,growth,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:growth
+caribbean-medtech-do,startup_extended,valuation_tier,early,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+cellculture-br,startup_extended,valuation_tier,seed_range,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+cellmeat-brasil-br,startup_extended,valuation_tier,seed_range,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:seed
+cellva-ingredients-br,startup_extended,valuation_tier,early,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+codebreaker-bioscience-cl,startup_extended,valuation_tier,micro,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+consiste-br,startup_extended,valuation_tier,growth,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:growth
+corpogen-co,startup_extended,valuation_tier,micro,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+cropguard-cl,startup_extended,valuation_tier,seed_range,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+devalor-cl,startup_extended,valuation_tier,seed_range,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+digital-twin-corporation-cr,startup_extended,valuation_tier,early,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+dimitra-bolivia-operations-bo,startup_extended,valuation_tier,growth,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:growth
+eatcloud-co,startup_extended,valuation_tier,early,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+ecocycle-biotech-ec,startup_extended,valuation_tier,seed_range,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:seed
+ecombio-cl,startup_extended,valuation_tier,micro,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+energytop-via-proinpa-bo,startup_extended,valuation_tier,growth,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:growth
+fermentlab-br,startup_extended,valuation_tier,seed_range,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+fermentlabs-co,startup_extended,valuation_tier,early,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+fieldfactors-mx,startup_extended,valuation_tier,growth,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:growth
+forma-foods-mx,startup_extended,valuation_tier,micro,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+fungicontrol-co,startup_extended,valuation_tier,seed_range,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+geanext-cr,startup_extended,valuation_tier,early,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+global-nano-additives-mx,startup_extended,valuation_tier,micro,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+green-xpo-lab-cr,startup_extended,valuation_tier,seed_range,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+grupo-bios-co,startup_extended,valuation_tier,seed_range,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+healthpoint-bo,startup_extended,valuation_tier,early,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+hem-healthtech-co,startup_extended,valuation_tier,seed_range,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:seed
+infood-protein-cl,startup_extended,valuation_tier,seed_range,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+inkus-biotech-cl,startup_extended,valuation_tier,seed_range,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+innmetec-co,startup_extended,valuation_tier,micro,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+innovatech-bo,startup_extended,valuation_tier,early,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+krtl-biotech-bolivia-expansion-bo,startup_extended,valuation_tier,growth,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:growth
+koji-co,startup_extended,valuation_tier,micro,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+labtronics-sas-co,startup_extended,valuation_tier,growth,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:growth
+lifepack-co,startup_extended,valuation_tier,early,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+lilliput-technologies-cr,startup_extended,valuation_tier,early,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+lilliput-technologies-ltd-cr,startup_extended,valuation_tier,early,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+magenta-biolabs-cr,startup_extended,valuation_tier,early,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+magic-green-cr,startup_extended,valuation_tier,early,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+medimarket-online-ve,startup_extended,valuation_tier,early,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+microbiota-agricola-br,startup_extended,valuation_tier,growth,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:growth
+microlabs-mx,startup_extended,valuation_tier,growth,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:growth
+minerba-ec,startup_extended,valuation_tier,seed_range,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:seed
+mycoseaweed-cl,startup_extended,valuation_tier,micro,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+myvac-bioproducts-br,startup_extended,valuation_tier,growth,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:growth
+nalca-biotech-cl,startup_extended,valuation_tier,micro,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+nanomedical-cr,startup_extended,valuation_tier,early,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+nemacontrol-biologicos-br,startup_extended,valuation_tier,growth,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:growth
+neocroptech-cl,startup_extended,valuation_tier,micro,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+nutrissis-biotech-br,startup_extended,valuation_tier,early,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+oncoprecision-ar,startup_extended,valuation_tier,micro,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+pewman-innovation-cl,startup_extended,valuation_tier,micro,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+plantverd-mx,startup_extended,valuation_tier,early,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+protera-bio-cl,startup_extended,valuation_tier,seed_range,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+quipu-cr,startup_extended,valuation_tier,early,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+recirculab-cl,startup_extended,valuation_tier,seed_range,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+recombine-biotech-br,startup_extended,valuation_tier,early,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+respiratorydx-co,startup_extended,valuation_tier,early,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+salmoss-biotech-cl,startup_extended,valuation_tier,micro,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+scintia-mx,startup_extended,valuation_tier,early,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+seedtech-cl,startup_extended,valuation_tier,seed_range,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+silicochem-ec,startup_extended,valuation_tier,growth,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:growth
+swebol-biotech-bo,startup_extended,valuation_tier,growth,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:growth
+terrasos-br,startup_extended,valuation_tier,seed_range,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+tierra-de-monte-mx,startup_extended,valuation_tier,seed_range,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:seed
+tissue-nova-mx,startup_extended,valuation_tier,micro,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+viobact-cl,startup_extended,valuation_tier,micro,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+wseeds-co,startup_extended,valuation_tier,early,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+welii-ar,startup_extended,valuation_tier,micro,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+xeptiva-therapeutics-uy,startup_extended,valuation_tier,micro,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+agritech-bolivia-bo,startup_extended,valuation_tier,2,swarm_inline_valuation_2026-06-26,0.65,inferred_from_stage:series_a
+agricultic-do,startup_extended,valuation_tier,2,swarm_inline_valuation_2026-06-26,0.65,inferred_from_stage:series_a
+agrigenetic-ecuador-ec,startup_extended,valuation_tier,2,swarm_inline_valuation_2026-06-26,0.65,inferred_from_stage:series_a
+agro-logica-co,startup_extended,valuation_tier,1.5,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+agro360-do,startup_extended,valuation_tier,2,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+agrobit-bolivia-operations-bo,startup_extended,valuation_tier,4,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:growth
+agrocontrol-gt,startup_extended,valuation_tier,2,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+agroguia-ve,startup_extended,valuation_tier,2,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+agroscan-ec,startup_extended,valuation_tier,1.5,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:seed
+alecrim-biotech-br,startup_extended,valuation_tier,2,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+aquabio-cl,startup_extended,valuation_tier,1,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+aquabyte-cl,startup_extended,valuation_tier,1,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+ascribe-bio-br,startup_extended,valuation_tier,1,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+ayni-desert-interaction-cl,startup_extended,valuation_tier,1.5,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+biiosmart-co,startup_extended,valuation_tier,1,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+biowit-mx,startup_extended,valuation_tier,1,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+Bee Technology,startup_extended,valuation_tier,1,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+biocell-mx,startup_extended,valuation_tier,1,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+biodiverso-insumos-br,startup_extended,valuation_tier,4,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:growth
+biofactory-br,startup_extended,valuation_tier,1,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+biofresh-br,startup_extended,valuation_tier,1,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+biohack-uio-ec,startup_extended,valuation_tier,2,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+biolife-innovations-bo,startup_extended,valuation_tier,2,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+biomar-cr,startup_extended,valuation_tier,1.5,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+biometrics-medellin-co,startup_extended,valuation_tier,2,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+bioplast-br,startup_extended,valuation_tier,1.5,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+bioprocess-automation-brasil-br,startup_extended,valuation_tier,2,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+bioproducts-co,startup_extended,valuation_tier,1,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+biotech-cr,startup_extended,valuation_tier,2,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+bioceres-ar,startup_extended,valuation_tier,1.5,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+biogenesis-bago-ec,startup_extended,valuation_tier,4,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:growth
+biolinker-br,startup_extended,valuation_tier,2,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+bioram-mx,startup_extended,valuation_tier,2,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+biorefinery-tech-brazil-br,startup_extended,valuation_tier,4,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:growth
+bontix-do,startup_extended,valuation_tier,2,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+cepha-biotech-br,startup_extended,valuation_tier,4,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:growth
+caribbean-medtech-do,startup_extended,valuation_tier,2,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+cellculture-br,startup_extended,valuation_tier,1.5,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+cellmeat-brasil-br,startup_extended,valuation_tier,1.5,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:seed
+cellva-ingredients-br,startup_extended,valuation_tier,2,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+codebreaker-bioscience-cl,startup_extended,valuation_tier,1,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+consiste-br,startup_extended,valuation_tier,4,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:growth
+corpogen-co,startup_extended,valuation_tier,1,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+cropguard-cl,startup_extended,valuation_tier,1.5,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+devalor-cl,startup_extended,valuation_tier,1.5,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+digital-twin-corporation-cr,startup_extended,valuation_tier,2,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+dimitra-bolivia-operations-bo,startup_extended,valuation_tier,4,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:growth
+eatcloud-co,startup_extended,valuation_tier,2,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+ecocycle-biotech-ec,startup_extended,valuation_tier,1.5,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:seed
+ecombio-cl,startup_extended,valuation_tier,1,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+energytop-via-proinpa-bo,startup_extended,valuation_tier,4,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:growth
+fermentlab-br,startup_extended,valuation_tier,1.5,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+fermentlabs-co,startup_extended,valuation_tier,2,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+fieldfactors-mx,startup_extended,valuation_tier,4,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:growth
+forma-foods-mx,startup_extended,valuation_tier,1,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+fungicontrol-co,startup_extended,valuation_tier,1.5,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+geanext-cr,startup_extended,valuation_tier,2,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+global-nano-additives-mx,startup_extended,valuation_tier,1,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+green-xpo-lab-cr,startup_extended,valuation_tier,1.5,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+grupo-bios-co,startup_extended,valuation_tier,1.5,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+healthpoint-bo,startup_extended,valuation_tier,2,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+hem-healthtech-co,startup_extended,valuation_tier,1.5,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:seed
+infood-protein-cl,startup_extended,valuation_tier,1.5,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+inkus-biotech-cl,startup_extended,valuation_tier,1.5,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+innmetec-co,startup_extended,valuation_tier,1,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+innovatech-bo,startup_extended,valuation_tier,2,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+krtl-biotech-bolivia-expansion-bo,startup_extended,valuation_tier,4,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:growth
+koji-co,startup_extended,valuation_tier,1,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+labtronics-sas-co,startup_extended,valuation_tier,4,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:growth
+lifepack-co,startup_extended,valuation_tier,2,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+lilliput-technologies-cr,startup_extended,valuation_tier,2,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+lilliput-technologies-ltd-cr,startup_extended,valuation_tier,2,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+magenta-biolabs-cr,startup_extended,valuation_tier,2,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+magic-green-cr,startup_extended,valuation_tier,2,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+medimarket-online-ve,startup_extended,valuation_tier,2,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+microbiota-agricola-br,startup_extended,valuation_tier,4,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:growth
+microlabs-mx,startup_extended,valuation_tier,4,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:growth
+minerba-ec,startup_extended,valuation_tier,1.5,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:seed
+mycoseaweed-cl,startup_extended,valuation_tier,1,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+myvac-bioproducts-br,startup_extended,valuation_tier,4,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:growth
+nalca-biotech-cl,startup_extended,valuation_tier,1,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+nanomedical-cr,startup_extended,valuation_tier,2,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+nemacontrol-biologicos-br,startup_extended,valuation_tier,4,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:growth
+neocroptech-cl,startup_extended,valuation_tier,1,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+nutrissis-biotech-br,startup_extended,valuation_tier,2,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+oncoprecision-ar,startup_extended,valuation_tier,1,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+pewman-innovation-cl,startup_extended,valuation_tier,1,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+plantverd-mx,startup_extended,valuation_tier,2,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+protera-bio-cl,startup_extended,valuation_tier,1.5,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+quipu-cr,startup_extended,valuation_tier,2,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+recirculab-cl,startup_extended,valuation_tier,1.5,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+recombine-biotech-br,startup_extended,valuation_tier,2,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+respiratorydx-co,startup_extended,valuation_tier,2,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+salmoss-biotech-cl,startup_extended,valuation_tier,1,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+scintia-mx,startup_extended,valuation_tier,2,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+seedtech-cl,startup_extended,valuation_tier,1.5,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+silicochem-ec,startup_extended,valuation_tier,4,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:growth
+swebol-biotech-bo,startup_extended,valuation_tier,4,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:growth
+terrasos-br,startup_extended,valuation_tier,1.5,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+tierra-de-monte-mx,startup_extended,valuation_tier,1.5,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:seed
+tissue-nova-mx,startup_extended,valuation_tier,1,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+viobact-cl,startup_extended,valuation_tier,1,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+wseeds-co,startup_extended,valuation_tier,2,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:series_a
+welii-ar,startup_extended,valuation_tier,1,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+xeptiva-therapeutics-uy,startup_extended,valuation_tier,1,swarm_inline_valuation_2026-06-26,0.5,inferred_from_stage:none
+poas_bioenergy,startup_extended,bio_theme_primary,Nature & Ecosystem Tech,swarm_inline_theme_fix4_2026-06-26,0.79,"wave4_revert: Poas Bioenergy converts organic waste into biogas for rural energy — circular waste-to-energy ecosystem service, Nature cluster is correct"
+solfium,startup_extended,bio_theme_primary,Nature & Ecosystem Tech,swarm_inline_theme_fix4_2026-06-26,0.77,wave4_revert: Solfium develops biological processes for solar energy capture and environmental remediation — Nature & Ecosystem Tech cluster correctly reflects this
+inkus-biotech-cl,startup_extended,bio_theme_primary,Precision Agriculture,swarm_inline_theme_fix4_2026-06-26,0.82,"wave4_revert: Inkus Biotech delivers genomic breeding precision tools for cattle and salmon producers — precision input to farm management, not a food product"
+salmoss-biotech-cl,startup_extended,bio_theme_primary,Precision Agriculture,swarm_inline_theme_fix4_2026-06-26,0.8,"wave4_revert: SALMOSS Biotech applies genomic selection to improve salmon production performance — precision aquaculture genetics, not a food product"
+michroma,startup_extended,bio_theme_primary,Biomaterials & Green Chemistry,swarm_inline_theme_fix4_2026-06-26,0.82,"wave4_revert: Michroma produces fungal-derived pigments as industrial colorants and dye alternatives for use in textiles, cosmetics, and industrial applications — bio-based colorant materials, not food-grade ingredients"
+recirculab-cl,startup_extended,bio_theme_primary,Biomaterials & Green Chemistry,swarm_inline_theme_fix4_2026-06-26,0.78,"wave4_revert: Recirculab upcycles food and agricultural waste streams into bio-based packaging materials and circular material inputs — biomaterials from waste, not a food product company"
+exacta-bioscience-cl,startup_extended,startup_summary_en,"Exacta BioScience develops precision bioinputs — microbial inoculants, biofungicides, and biostimulants — specifically formulated for Chilean fruit and vegetable export crops. Its products are applied pre-harvest as biological crop protection and nutrition inputs, not sold as food products.",swarm_inline_theme_fix4_2026-06-26,0.85,summary_wave4_2026-06-26
+pewman-innovation-cl,startup_extended,startup_summary_en,"Pewman Innovation develops CRIOPROTECT, a cryoprotective bacterial biostimulant applied to crops to prevent frost damage in Chilean berry and vegetable production. Its product is an agricultural biological input applied to the crop before harvest — a bioinput, not a food product.",swarm_inline_theme_fix4_2026-06-26,0.82,summary_wave4_2026-06-26
+cropguard-cl,startup_extended,startup_summary_en,"CropGuard develops bio-based crop protection inputs using microbial antagonists and botanical extracts to control fungal and bacterial plant diseases in Chilean fruit orchards. Its products are field-applied biological pesticide alternatives — bioinputs for crop protection, not food products.",swarm_inline_theme_fix4_2026-06-26,0.8,summary_wave4_2026-06-26
+agrourbana,startup_extended,startup_summary_en,"Agrourbana operates and sells modular vertical indoor farming systems for urban leafy green and herb production in Chile. Its core output is fresh food — lettuce, herbs, microgreens — grown hydroponically for direct sale to urban consumers and restaurants. Food production is the primary activity.",swarm_inline_theme_fix4_2026-06-26,0.82,summary_wave4_2026-06-26
+koji-co,startup_extended,startup_summary_en,"Koji is a Colombian precision fermentation company using Aspergillus oryzae koji cultures to produce fermented food ingredients — umami compounds, flavor enhancers, and functional food additives — for the Colombian food and beverage industry. Its output is a food ingredient consumed by humans.",swarm_inline_theme_fix4_2026-06-26,0.8,summary_wave4_2026-06-26
+huiro,startup_extended,startup_summary_en,"Huiro harvests and processes Chilean giant kelp (Macrocystis pyrifera) into liquid biostimulant extracts applied to agricultural crops as foliar sprays and soil conditioners. Its product is a seaweed-derived biological input for crop nutrition and stress tolerance — a bioinput, not an ecosystem restoration service.",swarm_inline_theme_fix4_2026-06-26,0.81,summary_wave4_2026-06-26
+alkemio,startup_extended,startup_summary_en,Alkemio develops bio-based green chemistry solutions using biotransformation and enzymatic processes to produce sustainable materials and chemical intermediates from renewable biological feedstocks. Its output is bio-derived industrial materials and specialty chemicals — Biomaterials and Green Chemistry.,swarm_inline_theme_fix4_2026-06-26,0.76,summary_wave4_2026-06-26
+ideelab,startup_extended,startup_summary_en,"IDeelab develops microbial biotechnology tools and biological input formulations for sustainable crop production, combining bioprocess development with agricultural bioinput commercialization. Its core commercial products are biological crop inputs delivered as ready-to-apply field formulations.",swarm_inline_theme_fix4_2026-06-26,0.75,summary_wave4_2026-06-26
+symbiomics,startup_extended,startup_summary_en,Symbiomics studies and applies plant microbiome interactions to develop bioinoculant products that enhance crop nutrient uptake and disease resistance through beneficial microbial symbiosis. Its products are field-applied biological inputs for crop production.,swarm_inline_theme_fix4_2026-06-26,0.77,summary_wave4_2026-06-26
+biorefinery-tech-brazil-br,startup_extended,startup_summary_en,Biorefinery Tech Brazil converts agricultural residues into cellulosic biopolymers and bio-based specialty chemicals using enzymatic hydrolysis. Its output is green chemistry industrial raw materials — biopolymers and chemical intermediates for non-food industrial applications.,swarm_inline_theme_fix4_2026-06-26,0.78,summary_wave4_2026-06-26
