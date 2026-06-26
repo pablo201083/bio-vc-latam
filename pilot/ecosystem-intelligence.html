@@ -4434,6 +4434,17 @@ function tfidfScore(startup, queryTokens) {
 // ── Initial render ────────────────────────────────────────────────────────
 applyRole();
 showWelcome();
+
+// ── Deep-link: ?startup=NAME abre directamente esa startup ───────────────
+(function () {
+  const params = new URLSearchParams(window.location.search);
+  const startupName = params.get("startup");
+  if (!startupName) return;
+  // Match by id (slug), then fallback to name
+  const st = IQ_STARTUPS.find(s => s.id === startupName)
+          || IQ_STARTUPS.find(s => s.name.toLowerCase() === startupName.toLowerCase());
+  if (st) renderStartupDetail(st.id);
+})();
 </script>
 </body>
 </html>

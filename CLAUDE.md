@@ -42,6 +42,10 @@ python pipeline.py graph --refresh            # PageRank/communities/bridges
 python pipeline.py ingest-outcomes            # leer staging/outcomes_incoming.csv
 python pipeline.py calibrate-matchmaker       # precision por bucket
 python pipeline.py intelligence-data          # genera pilot/intelligence-data.js (vectores + potencial latente)
+python scripts/enrich_profiles.py             # Fase 2+3: scraping de webs + taglines → data/website_scrapes/
+python scripts/enrich_profiles.py --limit N  # primeros N startups
+python scripts/enrich_profiles.py --startup-id <id> --force  # re-procesar uno
+python scripts/enrich_profiles.py --show-taglines  # imprimir taglines extraídos
 python pipeline.py query "texto libre"        # búsqueda semántica de startups (requiere venv)
 python pipeline.py latent <entity_id>         # potencial latente para inversor o startup
 datasette serve db/bio_latam.db --metadata datasette/metadata.json --port 8001
