@@ -1,56 +1,26 @@
 # Fichas de Taxonomía — Universo BIO VC LATAM
 
-_Generado 2026-06-10 desde `src/reclassify.py` (THEMES) + la DB. Regenerar con `python pipeline.py taxonomy-cards`._
+_Generado 2026-06-25 desde `src/reclassify.py` (THEMES) + la DB. Regenerar con `python pipeline.py taxonomy-cards`._
 
-La taxonomía operativa es **single-level**: un tema primario por startup. Estas fichas son la referencia legible para terceros y el estándar contra el que se valida cada clasificación. El principio de desambiguación es **el destino del output**, no el mecanismo biológico.
+La taxonomía operativa es **single-level**: un tema primario por startup. Estas 8 fichas son la referencia legible para terceros y el estándar contra el que se valida cada clasificación. El principio de desambiguación es **el destino del output**, no el mecanismo biológico.
 
-**484 startups `include`** distribuidas en 8 temas bio-core/coupled. (El corpus default
-**excluye** la capa eco-adjacent Digital AgTech & Agrifintech por recorte estratégico — ver nota abajo.)
+**573 startups `include`** distribuidas en 8 temas.
 
-| Tema | n | bio=0 | Intensidad |
-|------|---|-------|------------|
-| Diagnostics & Devices | 110 | 2 | bio-core |
-| Therapeutics | 81 | 0 | bio-core |
-| Food Systems & Alt Proteins | 74 | 0 | bio-core |
-| Bioinputs & Crop Resilience | 64 | 0 | bio-core |
-| Biomaterials & Green Chemistry | 54 | 3 | bio-core |
-| Precision Agriculture *(rearmado)* | 39 | **0** | bio-coupled (B1/B2) |
-| Nature & Ecosystem Tech | 34 | 2 | bio-core |
-| Biomanufacturing & Platform Technologies | 27 | 1 | transversal |
-| ~~Digital AgTech & Agrifintech~~ *(excluido)* | 24 | — | **fuera del corpus · scope=exclude** |
-
-> 🚫 **Recorte estratégico — Digital AgTech & Agrifintech excluido del corpus (2026-06-12).**
-> El curador sacó las 24 empresas de agrifintech/crédito/marketplace/tokenización/logística del
-> universo `include` (`scope_decision=exclude`, `scripts/oneoff/exclude_digital_agtech.py`). Razón:
-> **dinámica de financiamiento distinta** (deuda/crédito/fintech vs equity biotech) que sesga toda
-> lectura de capital del corpus bio. No es un juicio de "no-bio" (ya eran eco-adjacent is_bio=0): es
-> un recorte de corpus **por encima** del eje de intensidad. Reversible re-incluyendo. El tema sigue
-> registrado en `reclassify.py` (para identificar y excluir futuro agrifintech) pero removido de las
-> vistas (phylo, dendrograma). Corpus include: 508 → **484**.
-
-> ✅ **Re-audit del flag `is_bio_universe` (P1, 2026-06-12).** El rearme reveló que el flag estaba
-> mal puesto de forma sistémica. 17 empresas bio-core estaban marcadas bio=0 (genómica, diagnóstico
-> molecular, biomoléculas, fagos, indicadores biológicos) → corregidas a 1
-> (`scripts/oneoff/reaudit_is_bio_universe.py`). Universo `is_bio=0`: 56 → 32. Resultado: **todos los
-> temas bio quedan ≤6% bio=0** y *Digital AgTech & Agrifintech* es la única capa eco-adjacent. Con el
-> flag limpio, Biomaterials (3) y Diagnostics (2) **no necesitan partirse** — sus colas eran ruido,
-> no clusters. Los 8 eco-adjacent dispersos (Nexxto, Pixed, CIRCCLO, MUTA, nChemi, Ecotrace, ucrop.it,
-> Pharmalens) quedan in-theme con flag (decisión "híbrido").
-
-> ✅ **Rearme ejecutado (2026-06-12).** El viejo Precision Agriculture catch-all (66, 47% bio=0) se
-> partió bajo el **gate de acople B1**: 39 quedan (acople a cultivo/hato; **0% bio=0**, homogéneo),
-> 24 salen a *Digital AgTech & Agrifintech* (eco-adjacent, is_bio=0), 3 (vertical farming) van a
-> Food Systems por destino del output. Reasignación en DB vía `diff_and_log_update`
-> (`scripts/oneoff/rearm_farm_intelligence.py`). Todos los temas bio quedan ≤11% bio=0.
->
-> ⚠️ El clasificador `src/reclassify.py` todavía tiene un solo "Precision Agriculture" con
-> `is_bio_default: False` y keywords de agrifintech — **debe partirse o un `reclassify-themes`
-> revierte el rearme.** Mismo estado pendiente que Biomanufacturing.
+| Tema | n | Cross-cutting |
+|------|---|---------------|
+| Diagnostics & Devices | 121 | — |
+| Therapeutics | 97 | — |
+| Food Systems & Alt Proteins | 95 | — |
+| Bioinputs & Crop Resilience | 76 | — |
+| Precision Agriculture | 62 | — |
+| Biomaterials & Green Chemistry | 58 | — |
+| Nature & Ecosystem Tech | 34 | — |
+| Biomanufacturing & Platform Technologies | 30 | transversal |
 
 
 ---
 
-## Diagnostics & Devices  ·  110 startups
+## Diagnostics & Devices  ·  121 startups
 
 **Definición.** Companies applying biology to detect, monitor, or measure human disease. Includes molecular diagnostics, point-of-care testing, biosensors, medical devices with biological components, fertility diagnostics, spectral/imaging diagnostics, and digital health platforms where a biological assay is the core component.
 
@@ -75,7 +45,7 @@ La taxonomía operativa es **single-level**: un tema primario por startup. Estas
 
 ---
 
-## Therapeutics  ·  82 startups
+## Therapeutics  ·  97 startups
 
 **Definición.** Companies developing treatments that intervene in human or animal biology to cure, manage, or prevent disease: drug discovery, biologics, monoclonal antibodies, biosimilars, cell/gene therapy, mRNA therapeutics, oncology, rare diseases, regenerative medicine, nanomedicine, veterinary therapeutics, and drug delivery systems.
 
@@ -100,7 +70,7 @@ La taxonomía operativa es **single-level**: un tema primario por startup. Estas
 
 ---
 
-## Food Systems & Alt Proteins  ·  65 startups
+## Food Systems & Alt Proteins  ·  95 startups
 
 **Definición.** Companies whose OUTPUT goes into human or animal food/nutrition: precision fermentation for food proteins/dairy/fats, novel food ingredients, functional foods, nutraceuticals, prebiotics/probiotics (food context), plant-based food products, cultivated/cell-based meat, insect protein, aquaculture biotech, and food biopreservation.
 Key distinction from Biomaterials: the END PRODUCT is ingested (food, supplement, ingredient) — not a material, packaging, or industrial chemical.
@@ -114,9 +84,9 @@ Key distinction from Biomaterials: the END PRODUCT is ingested (food, supplement
 
 - **BioBlends** (AR) — Food preservation biotech for clean-label shelf-life extension.
 - **Cellva** (BR) — Microencapsulated functional ingredients for food and beverage.
+- **Nanofreeze** (CO) — Develops a novel bio-nano compound that enables natural refrigeration, freezing water at up to 4°C.
 - **Future Cow** (BR) — Produces animal-free casein and whey dairy proteins via precision fermentation by inserting cow protein genes into microorganisms, delivering dried powder ingredients for ice cream, cheese, and dairy applications. São Paulo, Brazil.
 - **Innovai** (CL) — Seafood shelf-life bioactive coating platform.
-- **Food4You** (AR) — Bacteria-enabled plant-based food enhancement.
 
 **Queda explícitamente afuera.**
 
@@ -126,67 +96,7 @@ Key distinction from Biomaterials: the END PRODUCT is ingested (food, supplement
 
 ---
 
-## Precision Agriculture  ·  ~35 startups *(angostado 2026-06-12)*
-
-**Definición.** Inteligencia digital **bio-coupled / TechBio** para agricultura: software, sensores o IA cuyo objeto es un sistema vivo específico — este cultivo, este patógeno, este hato. Cubre agronomía de precisión, fenotipado, genómica/microbioma aplicada, modelos de resistencia a enfermedad, sanidad de hato y riego de precisión atado a la biología del cultivo.
-
-**Gate de admisión (3 condiciones, todas obligatorias)** — `bio_definition_operativa.md` §4:
-1. **Foco bio específico** — un organismo/sistema vivo concreto, no "el agro" en general.
-2. **Entendimiento bio clave** — incorpora conocimiento biológico real (genómica, fisiología, microbioma, patología, fenotipo).
-3. **Soporte tech = representación de la biología** (clase Isomorphic/AlphaFold) — modela/predice/representa el estado biológico. Sensar o rociar un campo, o mover datos, **no** alcanza sin modelo biológico detrás.
-
-Si no cumple las tres → **Digital AgTech & Agrifintech** (eco-adjacent). Un puro sistema de telemetría IoT o data-infrastructure sin modelo biológico es plomería, no TechBio.
-
-> ⚠️ Tema **angostado**. Antes incluía toda la capa digital del agro (agrifintech, marketplaces, ERP). Esa cola eco-adjacent se movió a **Digital AgTech & Agrifintech** (`is_bio_universe=0`). Ver split en `bio_definition_operativa.md`.
-
-**Fronteras (cómo se decide en casos límite).**
-
-- vs **Digital AgTech & Agrifintech**: si el software lee/modula un sistema vivo específico (agronomía de precisión, sanidad de hato) → Precision Agriculture (bio-coupled); si es financiero/marketplace/logístico/ERP sin lectura biológica → Digital AgTech (eco-adjacent). El dominio `agri-food` **no** basta para acople.
-- vs **Bioinputs & Crop Resilience**: Precision Agriculture es *software/datos* acoplados al cultivo; Bioinputs es un *producto biológico* aplicado al cultivo.
-- vs **Nature & Ecosystem Tech**: si el objeto es el rendimiento del productor → Precision Agriculture; si el objeto es el ecosistema/carbono/biodiversidad → Nature.
-
-**Startups arquetípicas** (bio-coupled, con fuente externa):
-
-- **Agrosmart** (BR) — Climate-smart agronomic and irrigation intelligence platform (acople al cultivo).
-- **DeepAgro** (AR) — Computer vision para spraying selectivo sobre maleza/cultivo específico.
-- **BemAgro** (BR) — AI and drone-imagery SaaS for high-resolution crop intelligence.
-- **Rumina** (BR) — Inteligencia de sanidad y producción de hato lechero.
-- **Inspectral** (BR) — Multispectral/hyperspectral imagery para leer estado fisiológico del cultivo.
-
-**Queda explícitamente afuera** (→ Digital AgTech & Agrifintech).
-
-- Agrifintech: crédito/seguro rural, trade-finance, bancos digitales (Agrolend, Agricapital, TerraMagna).
-- Marketplaces, tokenización, trazabilidad/logística, ERP de gestión sin lectura biológica.
-
-
----
-
-## Digital AgTech & Agrifintech  ·  ~31 startups *(nuevo 2026-06-12 · eco-adjacent · is_bio_universe=0)*
-
-**Definición.** Capa **digital y financiera** que habilita al agro sin acople biológico directo: agrifintech (crédito, seguro, trade-finance), marketplaces y plataformas B2B de insumos/granos, tokenización de commodities, trazabilidad/logística, ERP y farm-management de gestión. Pertenece a la tesis amplia BIO LATAM por el vínculo con la transición del sistema agroalimentario, pero **la biología no es el motor** — es `eco-adjacent` (`scope_decision=include`, `is_bio_universe=0`). No se esconde ni se fuerza a un tema bio.
-
-**Fronteras (cómo se decide en casos límite).**
-
-- vs **Precision Agriculture**: falla el **test de acople** — el software no lee ni modula un sistema vivo específico; sirve a cualquier transacción/gestión agrícola.
-- **Crédito/seguro puro sin tesis material** → candidato a `review`/`exclude` (falla *pertenencia*, no solo intensidad). Distinguir del agrifintech que financia la transición agroecológica.
-
-**Startups arquetípicas** (eco-adjacent, con fuente externa):
-
-- **Agrolend** (BR) — Agricultural credit / agfintech (banco digital agro).
-- **Agrotoken** (AR) — Tokenización de granos como colateral.
-- **Agrofy** (AR) — Marketplace y ecosistema digital de agronegocios.
-- **TerraMagna** (BR) — Crédito, receivables e infraestructura de fondos agro.
-- **goFlux** (BR) — Freight SaaS B2B para logística agrícola.
-
-**Queda explícitamente afuera.**
-
-- Cualquier empresa con acople biológico directo → Precision Agriculture o Bioinputs.
-- Fintech horizontal sin vertical agro → fuera de la tesis (`exclude`).
-
-
----
-
-## Bioinputs & Crop Resilience  ·  61 startups
+## Bioinputs & Crop Resilience  ·  76 startups
 
 **Definición.** Biological inputs for agriculture and biological interventions in crop/plant systems: biofertilizers, biostimulants, biopesticides, biocontrol agents, CRISPR/gene-edited crop varieties, precision breeding, seed treatments, plant tissue culture, entomopathogenic solutions.
 
@@ -210,7 +120,32 @@ Si no cumple las tres → **Digital AgTech & Agrifintech** (eco-adjacent). Un pu
 
 ---
 
-## Biomaterials & Green Chemistry  ·  54 startups
+## Precision Agriculture  ·  62 startups
+
+**Definición.** Bio-coupled digital intelligence for agriculture: precision farming, agronomic decision tools, phenotyping, crop/disease monitoring, herd health, and precision irrigation that senses or acts on a specific living crop/animal.
+
+**Fronteras (cómo se decide en casos límite).**
+
+- vs **Bioinputs & Crop Resilience**: Precision Agriculture es *software/datos* (sensores, satélite, agrofintech); Bioinputs es un *producto biológico* aplicado al cultivo.
+- vs **Nature & Ecosystem Tech**: si el objeto es el rendimiento del productor → Farm Intelligence; si el objeto es el ecosistema/carbono/biodiversidad → Nature.
+
+**Startups arquetípicas** (mayor confianza, con fuente externa):
+
+- **Aegro** (BR) — Farm operations and financial management platform.
+- **Agrosmart** (BR) — Climate-smart agronomic and irrigation intelligence platform.
+- **BemAgro** (BR) — AI and drone-imagery SaaS for high-resolution crop intelligence.
+- **Precision Ag** (BR) — Agricultural drone spraying and crop-monitoring services.
+- **Eiwa** (AR) — Agronomic trial data platform that standardizes, automates, and analyzes field experiment data for seed companies and agronomists, processing over 1 million trial plots annually across Argentina, Brazil, and North America.
+
+**Queda explícitamente afuera.**
+
+- Fintech agrícola sin acople biológico ni de recursos (crédito puro, marketplace).
+- Logística/trading de commodities como software horizontal.
+
+
+---
+
+## Biomaterials & Green Chemistry  ·  58 startups
 
 **Definición.** Companies using biological processes to produce materials, chemicals, or energy carriers replacing petrochemical equivalents. The OUTPUT is a material, industrial chemical, or energy product — not food.
 Covers bioplastics, biopolymers, mycelium materials, biobased packaging, industrial enzymes (non-food), green chemistry, e-fuels, biogas for energy.
@@ -261,7 +196,7 @@ Covers bioplastics, biopolymers, mycelium materials, biobased packaging, industr
 
 ---
 
-## Biomanufacturing & Platform Technologies  ·  26 startups
+## Biomanufacturing & Platform Technologies  ·  30 startups
 
 **Definición.** Plataformas y capacidades de producción biológica que sirven a múltiples verticales: fermentación de precisión, biología sintética/cell-free, enzimas, escalado de bioprocesos, biofoundries y digital twins de bioproceso. El valor es la capacidad de *producir* lo biológico, no un producto final de consumo.
 

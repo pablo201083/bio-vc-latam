@@ -1,82 +1,82 @@
 {
-  "investors_evaluated": 25,
-  "portfolio_startups_scored": 345,
-  "precision@3": 0.116,
-  "precision@5": 0.171,
-  "precision@10": 0.264,
-  "mean_rank": 63.2,
+  "investors_evaluated": 36,
+  "portfolio_startups_scored": 450,
+  "precision@3": 0.133,
+  "precision@5": 0.164,
+  "precision@10": 0.22,
+  "mean_rank": 152.1,
   "worst_investors": [
     {
-      "investor_id": "DraperCygnus",
-      "investor_name": "DraperCygnus",
-      "portfolio_size": 8,
+      "investor_id": "Antom",
+      "investor_name": "Antom",
+      "portfolio_size": 10,
       "precision@5": 0.0,
-      "mean_rank": 25.1
+      "mean_rank": 225.0
     },
     {
-      "investor_id": "kptl",
-      "investor_name": "KPTL",
-      "portfolio_size": 9,
+      "investor_id": "kamay_ventures",
+      "investor_name": "Kamay Ventures",
+      "portfolio_size": 10,
       "precision@5": 0.0,
-      "mean_rank": 17.2
-    },
-    {
-      "investor_id": "the_yield_lab_latam",
-      "investor_name": "The Yield Lab LATAM",
-      "portfolio_size": 28,
-      "precision@5": 0.0,
-      "mean_rank": 50.7
-    },
-    {
-      "investor_id": "GridX",
-      "investor_name": "GridX",
-      "portfolio_size": 96,
-      "precision@5": 0.031,
-      "mean_rank": 116.9
+      "mean_rank": 141.4
     },
     {
       "investor_id": "SF500",
       "investor_name": "SF500",
-      "portfolio_size": 22,
-      "precision@5": 0.045,
-      "mean_rank": 64.4
+      "portfolio_size": 28,
+      "precision@5": 0.0,
+      "mean_rank": 297.1
+    },
+    {
+      "investor_id": "GridX",
+      "investor_name": "GridX",
+      "portfolio_size": 104,
+      "precision@5": 0.029,
+      "mean_rank": 155.0
+    },
+    {
+      "investor_id": "AIR Capital",
+      "investor_name": "AIR Capital",
+      "portfolio_size": 27,
+      "precision@5": 0.037,
+      "mean_rank": 175.2
     }
   ],
   "best_investors": [
     {
-      "investor_id": "barn_investimentos",
-      "investor_name": "Barn Investimentos",
-      "portfolio_size": 4,
-      "precision@5": 0.75,
-      "mean_rank": 4.8
-    },
-    {
-      "investor_id": "chileglobal_ventures",
-      "investor_name": "ChileGlobal Ventures",
-      "portfolio_size": 3,
-      "precision@5": 1.0,
-      "mean_rank": 2.0
-    },
-    {
-      "investor_id": "endurance_28",
-      "investor_name": "Endurance 28",
-      "portfolio_size": 3,
-      "precision@5": 1.0,
-      "mean_rank": 2.0
-    },
-    {
-      "investor_id": "grupo_insud",
-      "investor_name": "Grupo Insud",
-      "portfolio_size": 3,
-      "precision@5": 1.0,
-      "mean_rank": 2.0
-    },
-    {
       "investor_id": "newtopia_vc",
       "investor_name": "Newtopia VC",
       "portfolio_size": 4,
+      "precision@5": 0.75,
+      "mean_rank": 78.2
+    },
+    {
+      "investor_id": "kaszek",
+      "investor_name": "Kaszek Ventures",
+      "portfolio_size": 4,
+      "precision@5": 0.75,
+      "mean_rank": 4.2
+    },
+    {
+      "investor_id": "bossa_invest",
+      "investor_name": "Bossa Invest",
+      "portfolio_size": 4,
+      "precision@5": 0.75,
+      "mean_rank": 104.2
+    },
+    {
+      "investor_id": "idb_lab",
+      "investor_name": "IDB Lab",
+      "portfolio_size": 4,
       "precision@5": 1.0,
-      "mean_rank": 2.5
+      "mean_rank": 2.8
+    },
+    {
+      "investor_id": "ecoa_capital",
+      "investor_name": "Ecoa Capital",
+      "portfolio_size": 3,
+      "precision@5": 1.0,
+      "mean_rank": 2.0
     }
   ]
 }
