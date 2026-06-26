@@ -1,8 +1,8 @@
 window.ECOSYSTEM_DIAGNOSTICS_DATA = {
-  "computed_at": "2026-06-15T21:35:43+00:00",
+  "computed_at": "2026-06-26T01:17:56+00:00",
   "stats": {
     "total_nodes": 1233,
-    "total_edges": 1625,
+    "total_edges": 1619,
     "communities": 34,
     "isolated_startups": 402,
     "bridges": 25,

@@ -1,5 +1,5 @@
-priority,kind,target,evidence,action
-alta,country_sweep,UY,"14 includes, 2 parches, 0 inversores locales con edges",Barrido dirigido de portfolios y aceleradoras bio de UY. Puntos de entrada ya en DB: (sin inversores locales en DB)
+﻿priority,kind,target,evidence,action
+alta,country_sweep,UY,"12 includes, 2 parches, 0 inversores locales con edges",Barrido dirigido de portfolios y aceleradoras bio de UY. Puntos de entrada ya en DB: (sin inversores locales en DB)
 alta,country_sweep,BO,"9 includes, 0 parches, 0 inversores locales con edges",Barrido dirigido de portfolios y aceleradoras bio de BO. Puntos de entrada ya en DB: (sin inversores locales en DB)
 alta,country_sweep,EC,"7 includes, 0 parches, 0 inversores locales con edges",Barrido dirigido de portfolios y aceleradoras bio de EC. Puntos de entrada ya en DB: (sin inversores locales en DB)
 alta,country_sweep,DO,"4 includes, 0 parches, 0 inversores locales con edges",Barrido dirigido de portfolios y aceleradoras bio de DO. Puntos de entrada ya en DB: (sin inversores locales en DB)
@@ -23,6 +23,7 @@ media,portfolio_sweep,grupo_insud,solo 4 edge(s) en DB; país AR (well_mapped),R
 media,portfolio_sweep,oxygea,solo 1 edge(s) en DB; país BE (fuera_de_foco),Revisar portfolio público completo de oxygea y mapear startups bio faltantes
 media,portfolio_sweep,waterlemon,solo 1 edge(s) en DB; país BE (fuera_de_foco),Revisar portfolio público completo de waterlemon y mapear startups bio faltantes
 media,portfolio_sweep,alexia_ventures,solo 1 edge(s) en DB; país BR (well_mapped),Revisar portfolio público completo de alexia_ventures y mapear startups bio faltantes
+media,portfolio_sweep,aqua_capital,solo 1 edge(s) en DB; país BR (well_mapped),Revisar portfolio público completo de aqua_capital y mapear startups bio faltantes
 media,portfolio_sweep,arar_capital,solo 1 edge(s) en DB; país BR (well_mapped),Revisar portfolio público completo de arar_capital y mapear startups bio faltantes
 media,portfolio_sweep,atlantico,solo 1 edge(s) en DB; país BR (well_mapped),Revisar portfolio público completo de atlantico y mapear startups bio faltantes
 media,portfolio_sweep,canary_vc,solo 1 edge(s) en DB; país BR (well_mapped),Revisar portfolio público completo de canary_vc y mapear startups bio faltantes
@@ -38,7 +39,6 @@ media,portfolio_sweep,lanx_capital,solo 1 edge(s) en DB; país BR (well_mapped),
 media,portfolio_sweep,primatec,solo 1 edge(s) en DB; país BR (well_mapped),Revisar portfolio público completo de primatec y mapear startups bio faltantes
 media,portfolio_sweep,slc_agricola,solo 1 edge(s) en DB; país BR (well_mapped),Revisar portfolio público completo de slc_agricola y mapear startups bio faltantes
 media,portfolio_sweep,ace_ventures,solo 2 edge(s) en DB; país BR (well_mapped),Revisar portfolio público completo de ace_ventures y mapear startups bio faltantes
-media,portfolio_sweep,aqua_capital,solo 2 edge(s) en DB; país BR (well_mapped),Revisar portfolio público completo de aqua_capital y mapear startups bio faltantes
 media,portfolio_sweep,bndes,solo 2 edge(s) en DB; país BR (well_mapped),Revisar portfolio público completo de bndes y mapear startups bio faltantes
 media,portfolio_sweep,domo_invest,solo 2 edge(s) en DB; país BR (well_mapped),Revisar portfolio público completo de domo_invest y mapear startups bio faltantes
 media,portfolio_sweep,gavea_investimentos,solo 2 edge(s) en DB; país BR (well_mapped),Revisar portfolio público completo de gavea_investimentos y mapear startups bio faltantes
@@ -86,5 +86,6 @@ media,portfolio_sweep,lightsmith_group,solo 2 edge(s) en DB; país US (fuera_de_
 media,portfolio_sweep,ospraie,solo 2 edge(s) en DB; país US (fuera_de_foco),Revisar portfolio público completo de ospraie y mapear startups bio faltantes
 media,portfolio_sweep,y_combinator,solo 2 edge(s) en DB; país US (fuera_de_foco),Revisar portfolio público completo de y_combinator y mapear startups bio faltantes
 media,portfolio_sweep,corteva_catalyst,solo 3 edge(s) en DB; país US (fuera_de_foco),Revisar portfolio público completo de corteva_catalyst y mapear startups bio faltantes
+media,diversify_sources,Precision Agriculture × AR,"8 startups, 87% viene de '(sin provenance)'","Buscar la celda vía fuentes independientes del parche dominante (medios, otras carteras, registros)"
 media,diversify_sources,Precision Agriculture × CR,"7 startups, 100% viene de '(sin provenance)'","Buscar la celda vía fuentes independientes del parche dominante (medios, otras carteras, registros)"
 media,diversify_sources,Therapeutics × MX,"5 startups, 100% viene de '(sin provenance)'","Buscar la celda vía fuentes independientes del parche dominante (medios, otras carteras, registros)"

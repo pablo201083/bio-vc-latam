@@ -19,39 +19,47 @@ audit:2026-05:web:scrape,2026-05,web:scrape,audit_log,24,8,AR;BR;CL;MX,1 tabla(s
 audit:2026-05:graph_analytics,2026-05,graph_analytics,audit_log,20,0,,1 tabla(s) tocadas
 audit:2026-05:pipeline:fix_domain_tags,2026-05,pipeline:fix_domain_tags,audit_log,10,10,AR;BR;CL;CO;MX,0 tabla(s) tocadas
 audit:2026-05:portfolio_sweep,2026-05,portfolio_sweep,audit_log,6,6,,1 tabla(s) tocadas
-audit:2026-05:merge_duplicate_entities,2026-05,merge_duplicate_entities,audit_log,4,2,AR;BR,0 tabla(s) tocadas
+audit:2026-05:merge_duplicate_entities,2026-05,merge_duplicate_entities,audit_log,4,2,AR,0 tabla(s) tocadas
 audit:2026-05:pipeline:discovery_fix,2026-05,pipeline:discovery_fix,audit_log,3,3,BR,0 tabla(s) tocadas
-audit:2026-05:pipeline,2026-05,pipeline,audit_log,1,1,MX,1 tabla(s) tocadas
-audit:2026-06:human:curador,2026-06,human:curador,audit_log,506,171,AR;BO;BR;BS;CA;CL;CO;CR;DO;EC;GT;IL;MX;NI;PE;UY;VE,0 tabla(s) tocadas
+audit:2026-05:pipeline,2026-05,pipeline,audit_log,1,1,CL,1 tabla(s) tocadas
+audit:2026-06:human:curador,2026-06,human:curador,audit_log,2042,968,AR;BM;BO;BR;BS;CA;CL;CO;CR;DO;EC;FR;GT;IL;MX;NI;NL;PA;PE;PR;PY;RE;US;UY;VE,1 tabla(s) tocadas
 audit:2026-06:taxonomy/rename-canonical,2026-06,taxonomy/rename-canonical,audit_log,373,341,AR;BM;BR;CL;CO;CR;GT;MX;NL;PE;PR;US;UY,0 tabla(s) tocadas
 audit:2026-06:pipeline:discovery,2026-06,pipeline:discovery,audit_log,290,290,AR;BO;BR;CL;CO;CR;DO;EC;GT;MX;PA;PE;PY;RE;UY;VE,0 tabla(s) tocadas
 audit:2026-06:pipeline:web_research_claude_opus,2026-06,pipeline:web_research_claude_opus,audit_log,189,189,AR;BR;CL;CO;CR;MX;NL;US;UY,0 tabla(s) tocadas
 audit:2026-06:curator:enrich_capital_atlas,2026-06,curator:enrich_capital_atlas,audit_log,133,41,AR;BR;CH;CL;CR;NO;PE;US,0 tabla(s) tocadas
 audit:2026-06:pipeline:enrich_founded_year,2026-06,pipeline:enrich_founded_year,audit_log,111,111,AR;BR;CL;CO;MX;US;UY,0 tabla(s) tocadas
+audit:2026-06:pipeline:recompute_tiers,2026-06,pipeline:recompute_tiers,audit_log,109,109,AR;BR;CL;CO;CR;MX;NL;US;UY,0 tabla(s) tocadas
 audit:2026-06:pipeline:reconcile_themes,2026-06,pipeline:reconcile_themes,audit_log,78,78,AR;BR;CL;CO;CR;MX;US;UY,0 tabla(s) tocadas
 audit:2026-06:pipeline/infer-tier,2026-06,pipeline/infer-tier,audit_log,68,68,AR;BR;BS;CA;CL;CO;GT;MX;NI;PE,0 tabla(s) tocadas
-audit:2026-06:curator,2026-06,curator,audit_log,67,15,AR;BR;CL;CO,0 tabla(s) tocadas
+audit:2026-06:curator,2026-06,curator,audit_log,67,15,BR;CL;CO,0 tabla(s) tocadas
 audit:2026-06:taxonomy/rearm-farm-intelligence,2026-06,taxonomy/rearm-farm-intelligence,audit_log,62,48,AR;BR;CL;CO;MX;PE;US,0 tabla(s) tocadas
+audit:2026-06:claude_haiku_swarm,2026-06,claude_haiku_swarm,audit_log,62,53,AR;BR;CH;CL;CR;IE;MX;US,0 tabla(s) tocadas
 audit:2026-06:coverage/assign-themes-cl06-co02,2026-06,coverage/assign-themes-cl06-co02,audit_log,33,11,CL;CO,0 tabla(s) tocadas
+audit:2026-06:haiku_enrichment_batch5,2026-06,haiku_enrichment_batch5,audit_log,31,14,AR;BR;CL;CR;PE;US,2 tabla(s) tocadas
+audit:2026-06:clustering,2026-06,clustering,audit_log,25,0,,1 tabla(s) tocadas
 audit:2026-06:taxonomy/strategic-cut-digital-agtech,2026-06,taxonomy/strategic-cut-digital-agtech,audit_log,24,24,AR;BR;CO;MX;US,0 tabla(s) tocadas
 audit:2026-06:curator:aum_research_2026,2026-06,curator:aum_research_2026,audit_log,22,22,AR;BR;CL;CR;ES;PE;US,0 tabla(s) tocadas
+audit:2026-06:haiku_enrichment_batch5c,2026-06,haiku_enrichment_batch5c,audit_log,21,10,AR;BR;US,2 tabla(s) tocadas
 audit:2026-06:coverage/fix-cl06-co02-scope,2026-06,coverage/fix-cl06-co02-scope,audit_log,19,11,CL;CO,0 tabla(s) tocadas
 audit:2026-06:curator:bio_theme_override,2026-06,curator:bio_theme_override,audit_log,18,17,AR;BR;CL;CO;MX;PE;US,0 tabla(s) tocadas
 audit:2026-06:taxonomy/reaudit-is-bio,2026-06,taxonomy/reaudit-is-bio,audit_log,17,17,AR;BR;CL;MX,0 tabla(s) tocadas
-audit:2026-06:pablo202083,2026-06,pablo202083,audit_log,17,15,AR;BR;CL;CR;MX;US,0 tabla(s) tocadas
-audit:2026-06:clustering,2026-06,clustering,audit_log,17,0,,1 tabla(s) tocadas
+audit:2026-06:pablo202083,2026-06,pablo202083,audit_log,17,15,AR;BR;CL;CR;US,0 tabla(s) tocadas
+audit:2026-06:haiku_enrichment_batch3,2026-06,haiku_enrichment_batch3,audit_log,16,5,BR;FI;US,2 tabla(s) tocadas
 audit:2026-06:editorial/rewrite-high-risk-summaries,2026-06,editorial/rewrite-high-risk-summaries,audit_log,16,11,AR;NL;US,0 tabla(s) tocadas
+audit:2026-06:haiku_enrichment_batch2,2026-06,haiku_enrichment_batch2,audit_log,14,5,AR;BR;US,2 tabla(s) tocadas
 audit:2026-06:curator:biomanuf_data_fix,2026-06,curator:biomanuf_data_fix,audit_log,14,6,AR;BR;CL;CR,0 tabla(s) tocadas
+audit:2026-06:haiku_enrichment_batch4,2026-06,haiku_enrichment_batch4,audit_log,12,4,BR;CH;MX,2 tabla(s) tocadas
+audit:2026-06:haiku_enrichment_batch1,2026-06,haiku_enrichment_batch1,audit_log,12,5,AR;CL,2 tabla(s) tocadas
 audit:2026-06:enrich_dates,2026-06,enrich_dates,audit_log,9,9,,0 tabla(s) tocadas
-audit:2026-06:curator:enrich_capital_atlas_aum,2026-06,curator:enrich_capital_atlas_aum,audit_log,8,8,AR;BR;FI;MX;US,0 tabla(s) tocadas
+audit:2026-06:curator:enrich_capital_atlas_aum,2026-06,curator:enrich_capital_atlas_aum,audit_log,8,8,AR;BR;CL;FI;US,0 tabla(s) tocadas
 audit:2026-06:curator:manual,2026-06,curator:manual,audit_log,7,1,AR,0 tabla(s) tocadas
+audit:2026-06:graph_analytics,2026-06,graph_analytics,audit_log,6,0,,1 tabla(s) tocadas
 audit:2026-06:blurbs_new_investors,2026-06,blurbs_new_investors,audit_log,6,6,BR;US,0 tabla(s) tocadas
-audit:2026-06:graph_analytics,2026-06,graph_analytics,audit_log,5,0,,1 tabla(s) tocadas
-audit:2026-06:taxonomy/fix-uncategorized,2026-06,taxonomy/fix-uncategorized,audit_log,3,1,AR,0 tabla(s) tocadas
+audit:2026-06:taxonomy/fix-uncategorized,2026-06,taxonomy/fix-uncategorized,audit_log,3,1,,0 tabla(s) tocadas
 audit:2026-06:pipeline:merge_duplicate_entities,2026-06,pipeline:merge_duplicate_entities,audit_log,3,2,AR;CL,0 tabla(s) tocadas
 audit:2026-06:coverage/fix-co-scope-basis,2026-06,coverage/fix-co-scope-basis,audit_log,3,3,CO,0 tabla(s) tocadas
 audit:2026-06:curator:biomanuf_classification,2026-06,curator:biomanuf_classification,audit_log,2,1,CR,0 tabla(s) tocadas
-provenance:(sin provenance),(histórico),(sin provenance),funding_source,,248,AR;BO;BR;CL;CO;CR;DO;EC;GT;MX;NL;US;UY;VE,origen declarado en startup_extended.funding_source (includes)
-provenance:gridx,(histórico),gridx,funding_source,,230,AR;BM;BR;CL;CO;CR;GT;MX;PA;PE;PR;US;UY,origen declarado en startup_extended.funding_source (includes)
+provenance:(sin provenance),(histórico),(sin provenance),funding_source,,246,AR;BO;BR;CL;CO;CR;DO;EC;GT;MX;NL;US;UY;VE,origen declarado en startup_extended.funding_source (includes)
+provenance:gridx,(histórico),gridx,funding_source,,226,AR;BM;BR;CL;CO;CR;GT;MX;PA;PE;PR;US;UY,origen declarado en startup_extended.funding_source (includes)
 provenance:web_research_2026,(histórico),web_research_2026,funding_source,,95,AR;BR;CL;CO;CR;MX;PE;UY,origen declarado en startup_extended.funding_source (includes)
 provenance:summary_extraction,(histórico),summary_extraction,funding_source,,6,AR;BR;CL;CO,origen declarado en startup_extended.funding_source (includes)

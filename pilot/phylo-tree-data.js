@@ -1,30 +1,30 @@
 window.IQ_PHYLO_TREE = {
   "name": "BIO LATAM",
   "level": "root",
-  "n": 579,
+  "n": 573,
   "children": [
     {
       "name": "BioMedicina",
       "level": "mega",
       "color": "#5A4FCF",
-      "n": 219,
+      "n": 218,
       "children": [
         {
           "name": "Diagnóstico · Terapéutica",
           "level": "macro",
           "color": "#5A4FCF",
-          "n": 219,
+          "n": 218,
           "children": [
             {
               "name": "Diagnostics & Devices",
               "level": "theme",
-              "n": 122,
+              "n": 121,
               "children": [
                 {
                   "name": "Point Care",
                   "level": "sub",
                   "_theme": "Diagnostics & Devices",
-                  "n": 72,
+                  "n": 71,
                   "children": [
                     {
                       "level": "startup",
@@ -34,7 +34,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Point Care",
                       "funding_stage": "pre-seed",
                       "quality_score": 7.5,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "CL",
                       "founded_year": 2012,
                       "is_bio_universe": 1
@@ -60,7 +60,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Point Care",
                       "funding_stage": "pre-seed",
                       "quality_score": 6.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": 2020,
                       "is_bio_universe": 1
@@ -86,7 +86,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Point Care",
                       "funding_stage": "pre-seed",
                       "quality_score": 7.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "GT",
                       "founded_year": 2018,
                       "is_bio_universe": 1
@@ -99,7 +99,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Point Care",
                       "funding_stage": "pre-seed",
                       "quality_score": 8.5,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "CL",
                       "founded_year": 2022,
                       "is_bio_universe": 1
@@ -112,7 +112,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Point Care",
                       "funding_stage": "series-a",
                       "quality_score": 5.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": 2014,
                       "is_bio_universe": 1
@@ -164,7 +164,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Point Care",
                       "funding_stage": "seed",
                       "quality_score": 6.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": 2004,
                       "is_bio_universe": 1
@@ -177,7 +177,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Point Care",
                       "funding_stage": "pre-seed",
                       "quality_score": 8.5,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "AR",
                       "founded_year": 2014,
                       "is_bio_universe": 1
@@ -203,7 +203,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Point Care",
                       "funding_stage": "pre-seed",
                       "quality_score": 6.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "PR",
                       "founded_year": 2011,
                       "is_bio_universe": 1
@@ -216,7 +216,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Point Care",
                       "funding_stage": "pre-seed",
                       "quality_score": 7.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "CL",
                       "founded_year": 2012,
                       "is_bio_universe": 1
@@ -229,7 +229,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Point Care",
                       "funding_stage": "pre-seed",
                       "quality_score": 5.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "CL",
                       "founded_year": 2021,
                       "is_bio_universe": 1
@@ -255,7 +255,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Point Care",
                       "funding_stage": "pre-seed",
                       "quality_score": 6.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "CL",
                       "founded_year": 2021,
                       "is_bio_universe": 1
@@ -307,7 +307,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Point Care",
                       "funding_stage": "series-a",
                       "quality_score": 6.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "MX",
                       "founded_year": 2015,
                       "is_bio_universe": 1
@@ -320,7 +320,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Point Care",
                       "funding_stage": "series-a",
                       "quality_score": 6.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "MX",
                       "founded_year": 2015,
                       "is_bio_universe": 1
@@ -359,7 +359,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Point Care",
                       "funding_stage": "seed",
                       "quality_score": 6.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": 2016,
                       "is_bio_universe": 1
@@ -372,7 +372,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Point Care",
                       "funding_stage": "pre-seed",
                       "quality_score": 6.5,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "MX",
                       "founded_year": 2012,
                       "is_bio_universe": 1
@@ -385,7 +385,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Point Care",
                       "funding_stage": "pre-seed",
                       "quality_score": 6.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": 2016,
                       "is_bio_universe": 1
@@ -405,26 +405,13 @@ window.IQ_PHYLO_TREE = {
                     },
                     {
                       "level": "startup",
-                      "id": "hilab-br",
-                      "name": "Hilab",
-                      "bio_theme": "Diagnostics & Devices",
-                      "sub_cluster_label": "Point Care",
-                      "funding_stage": "series-b",
-                      "quality_score": 5.5,
-                      "tech_depth": "deep",
-                      "country": "BR",
-                      "founded_year": 2004,
-                      "is_bio_universe": 1
-                    },
-                    {
-                      "level": "startup",
                       "id": "huna",
                       "name": "Huna",
                       "bio_theme": "Diagnostics & Devices",
                       "sub_cluster_label": "Point Care",
                       "funding_stage": "pre-seed",
                       "quality_score": 6.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": 2021,
                       "is_bio_universe": 1
@@ -437,7 +424,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Point Care",
                       "funding_stage": "pre-seed",
                       "quality_score": 6.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": 2011,
                       "is_bio_universe": 1
@@ -450,7 +437,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Point Care",
                       "funding_stage": "pre-seed",
                       "quality_score": 6.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "MX",
                       "founded_year": 2013,
                       "is_bio_universe": 1
@@ -463,7 +450,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Point Care",
                       "funding_stage": "series-b",
                       "quality_score": 6.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "CL",
                       "founded_year": 2011,
                       "is_bio_universe": 1
@@ -502,7 +489,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Point Care",
                       "funding_stage": "pre-seed",
                       "quality_score": 5.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": 2019,
                       "is_bio_universe": 1
@@ -515,7 +502,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Point Care",
                       "funding_stage": "pre-seed",
                       "quality_score": 9.5,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "AR",
                       "founded_year": 2014,
                       "is_bio_universe": 1
@@ -528,7 +515,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Point Care",
                       "funding_stage": "pre-seed",
                       "quality_score": 5.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "AR",
                       "founded_year": 2014,
                       "is_bio_universe": 1
@@ -567,7 +554,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Point Care",
                       "funding_stage": "pre-seed",
                       "quality_score": 6.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "AR",
                       "founded_year": 2017,
                       "is_bio_universe": 1
@@ -606,7 +593,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Point Care",
                       "funding_stage": "pre-seed",
                       "quality_score": 5.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": 2016,
                       "is_bio_universe": 1
@@ -619,7 +606,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Point Care",
                       "funding_stage": "seed",
                       "quality_score": 5.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": 2018,
                       "is_bio_universe": 1
@@ -645,7 +632,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Point Care",
                       "funding_stage": "series-a",
                       "quality_score": 8.5,
-                      "tech_depth": "deep",
+                      "tech_depth": "enabler",
                       "country": "BR",
                       "founded_year": 2010,
                       "is_bio_universe": 0
@@ -658,7 +645,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Point Care",
                       "funding_stage": "pre-seed",
                       "quality_score": 6.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "MX",
                       "founded_year": 2018,
                       "is_bio_universe": 1
@@ -671,7 +658,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Point Care",
                       "funding_stage": "seed",
                       "quality_score": 5.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "enabler",
                       "country": "BR",
                       "founded_year": 2015,
                       "is_bio_universe": 1
@@ -697,7 +684,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Point Care",
                       "funding_stage": "pre-seed",
                       "quality_score": 8.5,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "AR",
                       "founded_year": 2021,
                       "is_bio_universe": 1
@@ -710,7 +697,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Point Care",
                       "funding_stage": "seed",
                       "quality_score": 7.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "MX",
                       "founded_year": 2020,
                       "is_bio_universe": 1
@@ -723,7 +710,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Point Care",
                       "funding_stage": "pre-seed",
                       "quality_score": 7.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "CL",
                       "founded_year": 2012,
                       "is_bio_universe": 1
@@ -736,7 +723,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Point Care",
                       "funding_stage": "pre-seed",
                       "quality_score": 6.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": 2014,
                       "is_bio_universe": 1
@@ -749,7 +736,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Point Care",
                       "funding_stage": "pre-seed",
                       "quality_score": 7.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "PE",
                       "founded_year": 2015,
                       "is_bio_universe": 0
@@ -775,7 +762,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Point Care",
                       "funding_stage": "pre-seed",
                       "quality_score": 6.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": 2020,
                       "is_bio_universe": 1
@@ -788,7 +775,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Point Care",
                       "funding_stage": "seed",
                       "quality_score": 8.5,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "CO",
                       "founded_year": 2018,
                       "is_bio_universe": 1
@@ -801,7 +788,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Point Care",
                       "funding_stage": "pre-seed",
                       "quality_score": 6.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "AR",
                       "founded_year": 2020,
                       "is_bio_universe": 1
@@ -827,7 +814,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Point Care",
                       "funding_stage": "pre-seed",
                       "quality_score": 4.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": null,
                       "is_bio_universe": 1
@@ -840,7 +827,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Point Care",
                       "funding_stage": "seed",
                       "quality_score": 8.5,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "AR",
                       "founded_year": null,
                       "is_bio_universe": 1
@@ -853,7 +840,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Point Care",
                       "funding_stage": "pre-seed",
                       "quality_score": 5.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "AR",
                       "founded_year": 2006,
                       "is_bio_universe": 1
@@ -866,7 +853,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Point Care",
                       "funding_stage": "pre-seed",
                       "quality_score": 7.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "MX",
                       "founded_year": 2016,
                       "is_bio_universe": 1
@@ -918,7 +905,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Point Care",
                       "funding_stage": "seed",
                       "quality_score": 6.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "MX",
                       "founded_year": 2016,
                       "is_bio_universe": 1
@@ -931,7 +918,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Point Care",
                       "funding_stage": "pre-seed",
                       "quality_score": 6.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": 2018,
                       "is_bio_universe": 1
@@ -944,7 +931,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Point Care",
                       "funding_stage": "pre-seed",
                       "quality_score": 9.5,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "AR",
                       "founded_year": 2017,
                       "is_bio_universe": 1
@@ -957,7 +944,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Point Care",
                       "funding_stage": "pre-seed",
                       "quality_score": 8.5,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "AR",
                       "founded_year": 2021,
                       "is_bio_universe": 1
@@ -991,7 +978,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Diagnostics & Devices",
                       "funding_stage": null,
                       "quality_score": null,
-                      "tech_depth": null,
+                      "tech_depth": "applied",
                       "country": "MX",
                       "founded_year": null,
                       "is_bio_universe": null
@@ -1004,7 +991,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Diagnostics & Devices",
                       "funding_stage": "series-a",
                       "quality_score": 7.0,
-                      "tech_depth": "medium",
+                      "tech_depth": "applied",
                       "country": "CO",
                       "founded_year": null,
                       "is_bio_universe": null
@@ -1030,7 +1017,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Diagnostics & Devices",
                       "funding_stage": "seed",
                       "quality_score": 9.5,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": 2019,
                       "is_bio_universe": 1
@@ -1056,7 +1043,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Diagnostics & Devices",
                       "funding_stage": "growth",
                       "quality_score": 7.5,
-                      "tech_depth": "medium",
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": 2016,
                       "is_bio_universe": null
@@ -1069,7 +1056,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Diagnostics & Devices",
                       "funding_stage": "series-a",
                       "quality_score": 7.0,
-                      "tech_depth": "medium",
+                      "tech_depth": "applied",
                       "country": "DO",
                       "founded_year": null,
                       "is_bio_universe": null
@@ -1082,7 +1069,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Diagnostics & Devices",
                       "funding_stage": null,
                       "quality_score": null,
-                      "tech_depth": null,
+                      "tech_depth": "applied",
                       "country": "CO",
                       "founded_year": 1995,
                       "is_bio_universe": null
@@ -1134,9 +1121,9 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Diagnostics & Devices",
                       "funding_stage": "series-a",
                       "quality_score": 7.0,
-                      "tech_depth": "medium",
+                      "tech_depth": "applied",
                       "country": "BO",
-                      "founded_year": 2019,
+                      "founded_year": 2018,
                       "is_bio_universe": null
                     },
                     {
@@ -1147,7 +1134,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Diagnostics & Devices",
                       "funding_stage": "seed",
                       "quality_score": 6.0,
-                      "tech_depth": "medium",
+                      "tech_depth": "applied",
                       "country": "CO",
                       "founded_year": 2021,
                       "is_bio_universe": null
@@ -1160,7 +1147,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Diagnostics & Devices",
                       "funding_stage": "growth",
                       "quality_score": 7.5,
-                      "tech_depth": "medium",
+                      "tech_depth": "applied",
                       "country": "CO",
                       "founded_year": 1999,
                       "is_bio_universe": null
@@ -1173,7 +1160,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Diagnostics & Devices",
                       "funding_stage": "series-a",
                       "quality_score": 7.0,
-                      "tech_depth": "medium",
+                      "tech_depth": "applied",
                       "country": "VE",
                       "founded_year": null,
                       "is_bio_universe": null
@@ -1186,7 +1173,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Diagnostics & Devices",
                       "funding_stage": "pre-seed",
                       "quality_score": 6.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "AR",
                       "founded_year": 2019,
                       "is_bio_universe": 1
@@ -1212,7 +1199,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Diagnostics & Devices",
                       "funding_stage": "series-a",
                       "quality_score": 7.0,
-                      "tech_depth": "medium",
+                      "tech_depth": "applied",
                       "country": "CR",
                       "founded_year": null,
                       "is_bio_universe": null
@@ -1277,7 +1264,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Diagnostics & Devices",
                       "funding_stage": "series-a",
                       "quality_score": 7.0,
-                      "tech_depth": "medium",
+                      "tech_depth": "applied",
                       "country": "CO",
                       "founded_year": null,
                       "is_bio_universe": null
@@ -1303,7 +1290,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Diagnostics & Devices",
                       "funding_stage": null,
                       "quality_score": null,
-                      "tech_depth": null,
+                      "tech_depth": "applied",
                       "country": "AR",
                       "founded_year": 2017,
                       "is_bio_universe": null
@@ -1316,7 +1303,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Diagnostics & Devices",
                       "funding_stage": "pre-seed",
                       "quality_score": 8.5,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "UY",
                       "founded_year": 2021,
                       "is_bio_universe": 1
@@ -1363,7 +1350,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Liquid Biopsy",
                       "funding_stage": "seed",
                       "quality_score": 6.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "CL",
                       "founded_year": 2021,
                       "is_bio_universe": null
@@ -1376,7 +1363,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Liquid Biopsy",
                       "funding_stage": "pre-seed",
                       "quality_score": 5.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "CL",
                       "founded_year": 2016,
                       "is_bio_universe": 1
@@ -1389,7 +1376,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Liquid Biopsy",
                       "funding_stage": "pre-seed",
                       "quality_score": 8.5,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "MX",
                       "founded_year": 2020,
                       "is_bio_universe": 1
@@ -1402,7 +1389,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Liquid Biopsy",
                       "funding_stage": "pre-seed",
                       "quality_score": 9.5,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "AR",
                       "founded_year": 2021,
                       "is_bio_universe": 1
@@ -1415,7 +1402,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Liquid Biopsy",
                       "funding_stage": "series-a",
                       "quality_score": 9.5,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "AR",
                       "founded_year": 2021,
                       "is_bio_universe": 1
@@ -1454,7 +1441,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Liquid Biopsy",
                       "funding_stage": "series-b",
                       "quality_score": 9.5,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": 2009,
                       "is_bio_universe": 1
@@ -1480,7 +1467,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Liquid Biopsy",
                       "funding_stage": "pre-seed",
                       "quality_score": 9.5,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "CL",
                       "founded_year": 2019,
                       "is_bio_universe": 1
@@ -1514,7 +1501,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Digital Health & Medtech",
                       "funding_stage": "series-a",
                       "quality_score": 0.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "enabler",
                       "country": "AR",
                       "founded_year": 2022,
                       "is_bio_universe": 1
@@ -1600,7 +1587,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Point-of-Care & Home Diagnostics",
                       "funding_stage": "series-a",
                       "quality_score": 0.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "CL",
                       "founded_year": 2021,
                       "is_bio_universe": 1
@@ -1655,7 +1642,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Genomics & Precision Medicine",
                       "funding_stage": "seed",
                       "quality_score": 5.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": 2021,
                       "is_bio_universe": 1
@@ -2055,7 +2042,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Cancer Neurodegenerative",
                       "funding_stage": "pre-seed",
                       "quality_score": 6.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": 2023,
                       "is_bio_universe": 1
@@ -2271,7 +2258,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Therapeutics",
                       "funding_stage": null,
                       "quality_score": null,
-                      "tech_depth": null,
+                      "tech_depth": "deep",
                       "country": "BR",
                       "founded_year": 2017,
                       "is_bio_universe": null
@@ -2284,7 +2271,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Therapeutics",
                       "funding_stage": null,
                       "quality_score": null,
-                      "tech_depth": null,
+                      "tech_depth": "deep",
                       "country": "CO",
                       "founded_year": null,
                       "is_bio_universe": null
@@ -2297,7 +2284,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Therapeutics",
                       "funding_stage": "series-a",
                       "quality_score": 7.0,
-                      "tech_depth": "medium",
+                      "tech_depth": "deep",
                       "country": "EC",
                       "founded_year": 2020,
                       "is_bio_universe": null
@@ -2310,7 +2297,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Therapeutics",
                       "funding_stage": null,
                       "quality_score": null,
-                      "tech_depth": null,
+                      "tech_depth": "deep",
                       "country": "CO",
                       "founded_year": null,
                       "is_bio_universe": null
@@ -2323,7 +2310,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Therapeutics",
                       "funding_stage": "series-a",
                       "quality_score": 7.0,
-                      "tech_depth": "medium",
+                      "tech_depth": "deep",
                       "country": "CR",
                       "founded_year": null,
                       "is_bio_universe": null
@@ -2336,9 +2323,9 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Therapeutics",
                       "funding_stage": "growth",
                       "quality_score": 7.5,
-                      "tech_depth": "medium",
+                      "tech_depth": "deep",
                       "country": "EC",
-                      "founded_year": 2005,
+                      "founded_year": 1999,
                       "is_bio_universe": null
                     },
                     {
@@ -2349,7 +2336,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Therapeutics",
                       "funding_stage": "seed",
                       "quality_score": 6.0,
-                      "tech_depth": "medium",
+                      "tech_depth": "deep",
                       "country": "EC",
                       "founded_year": 2021,
                       "is_bio_universe": null
@@ -2362,7 +2349,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Therapeutics",
                       "funding_stage": null,
                       "quality_score": null,
-                      "tech_depth": null,
+                      "tech_depth": "deep",
                       "country": "MX",
                       "founded_year": null,
                       "is_bio_universe": null
@@ -2375,7 +2362,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Therapeutics",
                       "funding_stage": null,
                       "quality_score": null,
-                      "tech_depth": null,
+                      "tech_depth": "deep",
                       "country": "MX",
                       "founded_year": null,
                       "is_bio_universe": null
@@ -2388,7 +2375,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Therapeutics",
                       "funding_stage": null,
                       "quality_score": null,
-                      "tech_depth": null,
+                      "tech_depth": "deep",
                       "country": "CO",
                       "founded_year": 2020,
                       "is_bio_universe": null
@@ -2401,7 +2388,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Therapeutics",
                       "funding_stage": "growth",
                       "quality_score": 7.5,
-                      "tech_depth": "medium",
+                      "tech_depth": "deep",
                       "country": "BO",
                       "founded_year": 2010,
                       "is_bio_universe": null
@@ -2414,7 +2401,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Therapeutics",
                       "funding_stage": "series-a",
                       "quality_score": 7.0,
-                      "tech_depth": "medium",
+                      "tech_depth": "deep",
                       "country": "CR",
                       "founded_year": null,
                       "is_bio_universe": null
@@ -2440,7 +2427,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Therapeutics",
                       "funding_stage": null,
                       "quality_score": null,
-                      "tech_depth": null,
+                      "tech_depth": "deep",
                       "country": "AR",
                       "founded_year": null,
                       "is_bio_universe": null
@@ -2453,9 +2440,9 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Therapeutics",
                       "funding_stage": "series-a",
                       "quality_score": 7.0,
-                      "tech_depth": "medium",
+                      "tech_depth": "deep",
                       "country": "MX",
-                      "founded_year": 2019,
+                      "founded_year": 2017,
                       "is_bio_universe": null
                     },
                     {
@@ -2466,7 +2453,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Therapeutics",
                       "funding_stage": null,
                       "quality_score": null,
-                      "tech_depth": null,
+                      "tech_depth": "deep",
                       "country": "MX",
                       "founded_year": null,
                       "is_bio_universe": null
@@ -2479,7 +2466,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Therapeutics",
                       "funding_stage": null,
                       "quality_score": null,
-                      "tech_depth": null,
+                      "tech_depth": "deep",
                       "country": "UY",
                       "founded_year": 2021,
                       "is_bio_universe": null
@@ -2591,7 +2578,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Small Molecule",
                       "funding_stage": "seed",
                       "quality_score": 5.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": 2020,
                       "is_bio_universe": 1
@@ -2961,7 +2948,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Animal Health & Bioinputs",
                       "funding_stage": "seed",
                       "quality_score": 9.5,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": 2019,
                       "is_bio_universe": 1
@@ -3020,18 +3007,18 @@ window.IQ_PHYLO_TREE = {
       "name": "BioIndustria & Territorio",
       "level": "mega",
       "color": "#2E7D52",
-      "n": 360,
+      "n": 355,
       "children": [
         {
           "name": "Bioplatforma Industrial",
           "level": "macro",
           "color": "#8B6D14",
-          "n": 184,
+          "n": 183,
           "children": [
             {
               "name": "Food Systems & Alt Proteins",
               "level": "theme",
-              "n": 96,
+              "n": 95,
               "children": [
                 {
                   "name": "Cultivated Meat",
@@ -3047,7 +3034,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Cultivated Meat",
                       "funding_stage": "pre-seed",
                       "quality_score": 7.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "CL",
                       "founded_year": 2011,
                       "is_bio_universe": 1
@@ -3060,7 +3047,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Cultivated Meat",
                       "funding_stage": "pre-seed",
                       "quality_score": 6.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "CL",
                       "founded_year": 2002,
                       "is_bio_universe": 1
@@ -3086,7 +3073,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Cultivated Meat",
                       "funding_stage": "seed",
                       "quality_score": 6.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "MX",
                       "founded_year": 2019,
                       "is_bio_universe": 1
@@ -3099,7 +3086,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Cultivated Meat",
                       "funding_stage": "pre-seed",
                       "quality_score": 7.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "CO",
                       "founded_year": 2011,
                       "is_bio_universe": 1
@@ -3151,7 +3138,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Cultivated Meat",
                       "funding_stage": "pre-seed",
                       "quality_score": 5.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "CL",
                       "founded_year": 2022,
                       "is_bio_universe": 1
@@ -3177,7 +3164,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Cultivated Meat",
                       "funding_stage": "pre-seed",
                       "quality_score": 5.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "CL",
                       "founded_year": 2020,
                       "is_bio_universe": 1
@@ -3190,7 +3177,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Cultivated Meat",
                       "funding_stage": "series-a",
                       "quality_score": 6.5,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "CL",
                       "founded_year": 2017,
                       "is_bio_universe": 1
@@ -3216,7 +3203,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Cultivated Meat",
                       "funding_stage": "seed",
                       "quality_score": 8.5,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "US",
                       "founded_year": 2018,
                       "is_bio_universe": 1
@@ -3229,7 +3216,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Cultivated Meat",
                       "funding_stage": "series-a",
                       "quality_score": 6.5,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "CL",
                       "founded_year": 2016,
                       "is_bio_universe": 1
@@ -3255,7 +3242,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Cultivated Meat",
                       "funding_stage": "pre-seed",
                       "quality_score": 6.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "MX",
                       "founded_year": 2015,
                       "is_bio_universe": 1
@@ -3281,7 +3268,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Cultivated Meat",
                       "funding_stage": "pre-seed",
                       "quality_score": 7.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "CL",
                       "founded_year": 2018,
                       "is_bio_universe": 1
@@ -3294,7 +3281,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Cultivated Meat",
                       "funding_stage": "pre-seed",
                       "quality_score": 5.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "CL",
                       "founded_year": 2019,
                       "is_bio_universe": 1
@@ -3307,7 +3294,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Cultivated Meat",
                       "funding_stage": "seed",
                       "quality_score": 5.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "MX",
                       "founded_year": 2021,
                       "is_bio_universe": 1
@@ -3320,7 +3307,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Cultivated Meat",
                       "funding_stage": "series-c+",
                       "quality_score": 6.5,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "AR",
                       "founded_year": 2020,
                       "is_bio_universe": 1
@@ -3333,7 +3320,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Cultivated Meat",
                       "funding_stage": "pre-seed",
                       "quality_score": 5.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": 2022,
                       "is_bio_universe": 1
@@ -3346,7 +3333,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Cultivated Meat",
                       "funding_stage": "pre-seed",
                       "quality_score": 6.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "CL",
                       "founded_year": 2014,
                       "is_bio_universe": 1
@@ -3359,7 +3346,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Cultivated Meat",
                       "funding_stage": "pre-seed",
                       "quality_score": 6.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "CL",
                       "founded_year": 2019,
                       "is_bio_universe": 1
@@ -3372,7 +3359,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Cultivated Meat",
                       "funding_stage": "pre-seed",
                       "quality_score": 5.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "CO",
                       "founded_year": 2013,
                       "is_bio_universe": 1
@@ -3385,7 +3372,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Cultivated Meat",
                       "funding_stage": "series-a",
                       "quality_score": 6.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "CL",
                       "founded_year": 2019,
                       "is_bio_universe": 1
@@ -3411,7 +3398,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Cultivated Meat",
                       "funding_stage": "pre-seed",
                       "quality_score": 7.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "MX",
                       "founded_year": 2018,
                       "is_bio_universe": 1
@@ -3458,7 +3445,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Shelf Life",
                       "funding_stage": "pre-seed",
                       "quality_score": 8.5,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "AR",
                       "founded_year": 2018,
                       "is_bio_universe": 1
@@ -3471,7 +3458,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Shelf Life",
                       "funding_stage": "pre-seed",
                       "quality_score": 9.5,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "AR",
                       "founded_year": 2018,
                       "is_bio_universe": 1
@@ -3484,7 +3471,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Shelf Life",
                       "funding_stage": "seed",
                       "quality_score": 8.5,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": 2020,
                       "is_bio_universe": 1
@@ -3510,7 +3497,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Shelf Life",
                       "funding_stage": "pre-seed",
                       "quality_score": 8.5,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "AR",
                       "founded_year": 2020,
                       "is_bio_universe": 1
@@ -3562,7 +3549,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Shelf Life",
                       "funding_stage": "pre-seed",
                       "quality_score": 9.5,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "AR",
                       "founded_year": 2020,
                       "is_bio_universe": 1
@@ -3601,7 +3588,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Shelf Life",
                       "funding_stage": "seed",
                       "quality_score": 9.5,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "MX",
                       "founded_year": 2021,
                       "is_bio_universe": 1
@@ -3614,7 +3601,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Shelf Life",
                       "funding_stage": "pre-seed",
                       "quality_score": 4.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "CL",
                       "founded_year": 2020,
                       "is_bio_universe": 1
@@ -3627,7 +3614,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Shelf Life",
                       "funding_stage": "pre-seed",
                       "quality_score": 7.5,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "AR",
                       "founded_year": 2021,
                       "is_bio_universe": 1
@@ -3679,7 +3666,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Shelf Life",
                       "funding_stage": "seed",
                       "quality_score": 8.5,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "MX",
                       "founded_year": 2018,
                       "is_bio_universe": 1
@@ -3744,7 +3731,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Shelf Life",
                       "funding_stage": "seed",
                       "quality_score": 5.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "CL",
                       "founded_year": 2021,
                       "is_bio_universe": null
@@ -3757,7 +3744,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Shelf Life",
                       "funding_stage": "pre-seed",
                       "quality_score": 5.5,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "AR",
                       "founded_year": 2020,
                       "is_bio_universe": 1
@@ -3770,7 +3757,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Shelf Life",
                       "funding_stage": "pre-seed",
                       "quality_score": 5.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "MX",
                       "founded_year": null,
                       "is_bio_universe": 1
@@ -3817,7 +3804,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Animal Free",
                       "funding_stage": "series-a",
                       "quality_score": 7.0,
-                      "tech_depth": "medium",
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": 2018,
                       "is_bio_universe": 1
@@ -3830,7 +3817,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Animal Free",
                       "funding_stage": null,
                       "quality_score": null,
-                      "tech_depth": null,
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": null,
                       "is_bio_universe": 1
@@ -3843,7 +3830,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Animal Free",
                       "funding_stage": null,
                       "quality_score": null,
-                      "tech_depth": null,
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": null,
                       "is_bio_universe": null
@@ -3856,7 +3843,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Animal Free",
                       "funding_stage": "seed",
                       "quality_score": 6.0,
-                      "tech_depth": "medium",
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": 2021,
                       "is_bio_universe": 1
@@ -3869,7 +3856,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Animal Free",
                       "funding_stage": "series-a",
                       "quality_score": 7.0,
-                      "tech_depth": "medium",
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": 2018,
                       "is_bio_universe": 1
@@ -3882,7 +3869,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Animal Free",
                       "funding_stage": "growth",
                       "quality_score": 7.5,
-                      "tech_depth": "medium",
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": 2017,
                       "is_bio_universe": 1
@@ -3908,7 +3895,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Animal Free",
                       "funding_stage": "series-a",
                       "quality_score": 7.0,
-                      "tech_depth": "medium",
+                      "tech_depth": "applied",
                       "country": "CO",
                       "founded_year": 2019,
                       "is_bio_universe": 0
@@ -3921,7 +3908,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Animal Free",
                       "funding_stage": null,
                       "quality_score": null,
-                      "tech_depth": null,
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": null,
                       "is_bio_universe": 1
@@ -3934,7 +3921,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Animal Free",
                       "funding_stage": "series-a",
                       "quality_score": 7.0,
-                      "tech_depth": "medium",
+                      "tech_depth": "applied",
                       "country": "CO",
                       "founded_year": null,
                       "is_bio_universe": 1
@@ -3960,7 +3947,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Animal Free",
                       "funding_stage": "growth",
                       "quality_score": 7.5,
-                      "tech_depth": "medium",
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": 2016,
                       "is_bio_universe": 1
@@ -3973,7 +3960,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Animal Free",
                       "funding_stage": "series-a",
                       "quality_score": 7.0,
-                      "tech_depth": "medium",
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": 2019,
                       "is_bio_universe": 1
@@ -3986,7 +3973,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Animal Free",
                       "funding_stage": null,
                       "quality_score": null,
-                      "tech_depth": null,
+                      "tech_depth": "applied",
                       "country": "CL",
                       "founded_year": 2015,
                       "is_bio_universe": 1
@@ -4020,7 +4007,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Food Systems & Alt Proteins",
                       "funding_stage": null,
                       "quality_score": null,
-                      "tech_depth": null,
+                      "tech_depth": "applied",
                       "country": "CL",
                       "founded_year": null,
                       "is_bio_universe": null
@@ -4033,7 +4020,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Food Systems & Alt Proteins",
                       "funding_stage": "series-a",
                       "quality_score": 7.0,
-                      "tech_depth": "medium",
+                      "tech_depth": "applied",
                       "country": "BO",
                       "founded_year": 2018,
                       "is_bio_universe": null
@@ -4046,7 +4033,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Food Systems & Alt Proteins",
                       "funding_stage": null,
                       "quality_score": null,
-                      "tech_depth": null,
+                      "tech_depth": "applied",
                       "country": "CR",
                       "founded_year": null,
                       "is_bio_universe": null
@@ -4059,7 +4046,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Food Systems & Alt Proteins",
                       "funding_stage": null,
                       "quality_score": null,
-                      "tech_depth": null,
+                      "tech_depth": "applied",
                       "country": "CL",
                       "founded_year": null,
                       "is_bio_universe": null
@@ -4072,7 +4059,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Food Systems & Alt Proteins",
                       "funding_stage": "series-a",
                       "quality_score": 7.0,
-                      "tech_depth": "medium",
+                      "tech_depth": "applied",
                       "country": "MX",
                       "founded_year": 2020,
                       "is_bio_universe": null
@@ -4085,7 +4072,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Food Systems & Alt Proteins",
                       "funding_stage": null,
                       "quality_score": null,
-                      "tech_depth": null,
+                      "tech_depth": "applied",
                       "country": "CL",
                       "founded_year": null,
                       "is_bio_universe": null
@@ -4098,7 +4085,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Food Systems & Alt Proteins",
                       "funding_stage": "series-a",
                       "quality_score": 7.0,
-                      "tech_depth": "medium",
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": 2019,
                       "is_bio_universe": null
@@ -4111,9 +4098,9 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Food Systems & Alt Proteins",
                       "funding_stage": null,
                       "quality_score": null,
-                      "tech_depth": null,
+                      "tech_depth": "applied",
                       "country": "CL",
-                      "founded_year": null,
+                      "founded_year": 2022,
                       "is_bio_universe": null
                     },
                     {
@@ -4124,9 +4111,9 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Food Systems & Alt Proteins",
                       "funding_stage": "seed",
                       "quality_score": 6.0,
-                      "tech_depth": "medium",
+                      "tech_depth": "applied",
                       "country": "MX",
-                      "founded_year": 2021,
+                      "founded_year": 2015,
                       "is_bio_universe": null
                     }
                   ]
@@ -4158,7 +4145,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Crop Monitoring",
                       "funding_stage": "series-a",
                       "quality_score": 8.5,
-                      "tech_depth": "enabler",
+                      "tech_depth": "applied",
                       "country": "AR",
                       "founded_year": 2019,
                       "is_bio_universe": 1
@@ -4171,7 +4158,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Crop Monitoring",
                       "funding_stage": "pre-seed",
                       "quality_score": 9.5,
-                      "tech_depth": "enabler",
+                      "tech_depth": "applied",
                       "country": "AR",
                       "founded_year": 2017,
                       "is_bio_universe": 1
@@ -4184,7 +4171,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Crop Monitoring",
                       "funding_stage": "pre-seed",
                       "quality_score": 7.5,
-                      "tech_depth": "enabler",
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": 2021,
                       "is_bio_universe": 1
@@ -4197,7 +4184,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Crop Monitoring",
                       "funding_stage": "seed",
                       "quality_score": 9.0,
-                      "tech_depth": "enabler",
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": 2019,
                       "is_bio_universe": 1
@@ -4210,7 +4197,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Crop Monitoring",
                       "funding_stage": "seed",
                       "quality_score": 8.5,
-                      "tech_depth": "enabler",
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": 2020,
                       "is_bio_universe": 1
@@ -4231,7 +4218,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Microbiological Proteins",
                       "funding_stage": null,
                       "quality_score": null,
-                      "tech_depth": null,
+                      "tech_depth": "applied",
                       "country": "CL",
                       "founded_year": 2017,
                       "is_bio_universe": 1
@@ -4244,7 +4231,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Microbiological Proteins",
                       "funding_stage": null,
                       "quality_score": null,
-                      "tech_depth": null,
+                      "tech_depth": "applied",
                       "country": "CL",
                       "founded_year": 2013,
                       "is_bio_universe": 1
@@ -4257,7 +4244,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Microbiological Proteins",
                       "funding_stage": null,
                       "quality_score": null,
-                      "tech_depth": null,
+                      "tech_depth": "applied",
                       "country": "CL",
                       "founded_year": null,
                       "is_bio_universe": 1
@@ -4270,7 +4257,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Microbiological Proteins",
                       "funding_stage": null,
                       "quality_score": null,
-                      "tech_depth": null,
+                      "tech_depth": "applied",
                       "country": "CL",
                       "founded_year": null,
                       "is_bio_universe": 1
@@ -4312,7 +4299,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Alternative Proteins",
                       "funding_stage": null,
                       "quality_score": null,
-                      "tech_depth": null,
+                      "tech_depth": "applied",
                       "country": "CL",
                       "founded_year": 2018,
                       "is_bio_universe": 1
@@ -4333,29 +4320,8 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Fermentation & Bioprocessing",
                       "funding_stage": null,
                       "quality_score": null,
-                      "tech_depth": null,
+                      "tech_depth": "applied",
                       "country": "CO",
-                      "founded_year": null,
-                      "is_bio_universe": 1
-                    }
-                  ]
-                },
-                {
-                  "name": "Novel Ingredients",
-                  "level": "sub",
-                  "_theme": "Food Systems & Alt Proteins",
-                  "n": 1,
-                  "children": [
-                    {
-                      "level": "startup",
-                      "id": "tomorrow-foods-ar",
-                      "name": "Tomorrow Foods",
-                      "bio_theme": "Food Systems & Alt Proteins",
-                      "sub_cluster_label": "Novel Ingredients",
-                      "funding_stage": null,
-                      "quality_score": null,
-                      "tech_depth": null,
-                      "country": "AR",
                       "founded_year": null,
                       "is_bio_universe": 1
                     }
@@ -4382,7 +4348,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Agro Industrial",
                       "funding_stage": "series-a",
                       "quality_score": 9.5,
-                      "tech_depth": "deep",
+                      "tech_depth": "enabler",
                       "country": "NL",
                       "founded_year": 2020,
                       "is_bio_universe": 1
@@ -4525,7 +4491,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Agro Industrial",
                       "funding_stage": "accelerator",
                       "quality_score": 6.5,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "AR",
                       "founded_year": 2022,
                       "is_bio_universe": 1
@@ -4538,7 +4504,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Agro Industrial",
                       "funding_stage": "pre-seed",
                       "quality_score": 9.5,
-                      "tech_depth": "deep",
+                      "tech_depth": "enabler",
                       "country": "AR",
                       "founded_year": 2019,
                       "is_bio_universe": 1
@@ -4629,7 +4595,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Agro Industrial",
                       "funding_stage": "pre-seed",
                       "quality_score": 8.5,
-                      "tech_depth": "deep",
+                      "tech_depth": "enabler",
                       "country": "CL",
                       "founded_year": 2021,
                       "is_bio_universe": 1
@@ -4676,7 +4642,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Packaging Materials",
                       "funding_stage": "seed",
                       "quality_score": 5.5,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "CL",
                       "founded_year": 2020,
                       "is_bio_universe": 1
@@ -4689,7 +4655,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Packaging Materials",
                       "funding_stage": "series-a",
                       "quality_score": 6.5,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "CL",
                       "founded_year": 2020,
                       "is_bio_universe": 1
@@ -4728,7 +4694,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Packaging Materials",
                       "funding_stage": "pre-seed",
                       "quality_score": 6.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "GT",
                       "founded_year": 2017,
                       "is_bio_universe": 1
@@ -4741,7 +4707,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Packaging Materials",
                       "funding_stage": "series-a",
                       "quality_score": 6.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": 2014,
                       "is_bio_universe": 1
@@ -4754,7 +4720,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Packaging Materials",
                       "funding_stage": "series-a",
                       "quality_score": 6.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": 2009,
                       "is_bio_universe": 1
@@ -4767,7 +4733,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Packaging Materials",
                       "funding_stage": "pre-seed",
                       "quality_score": 5.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "MX",
                       "founded_year": 2020,
                       "is_bio_universe": 1
@@ -4780,7 +4746,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Packaging Materials",
                       "funding_stage": "pre-seed",
                       "quality_score": 4.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "MX",
                       "founded_year": 2016,
                       "is_bio_universe": 1
@@ -4806,7 +4772,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Packaging Materials",
                       "funding_stage": "seed",
                       "quality_score": 5.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "US",
                       "founded_year": 2014,
                       "is_bio_universe": null
@@ -4819,7 +4785,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Packaging Materials",
                       "funding_stage": "seed",
                       "quality_score": 5.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "CL",
                       "founded_year": 2022,
                       "is_bio_universe": null
@@ -4858,7 +4824,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Packaging Materials",
                       "funding_stage": "pre-seed",
                       "quality_score": 7.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "CR",
                       "founded_year": 2020,
                       "is_bio_universe": 1
@@ -4871,7 +4837,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Packaging Materials",
                       "funding_stage": "pre-seed",
                       "quality_score": 6.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "CL",
                       "founded_year": 2017,
                       "is_bio_universe": 1
@@ -4884,7 +4850,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Packaging Materials",
                       "funding_stage": "series-a",
                       "quality_score": 5.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "CL",
                       "founded_year": 2018,
                       "is_bio_universe": null
@@ -4897,7 +4863,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Packaging Materials",
                       "funding_stage": "seed",
                       "quality_score": 7.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "AR",
                       "founded_year": 2017,
                       "is_bio_universe": 1
@@ -4918,7 +4884,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Biomaterials & Green Chemistry",
                       "funding_stage": "pre-seed",
                       "quality_score": 5.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "CL",
                       "founded_year": 2018,
                       "is_bio_universe": 1
@@ -4931,7 +4897,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Biomaterials & Green Chemistry",
                       "funding_stage": null,
                       "quality_score": null,
-                      "tech_depth": null,
+                      "tech_depth": "applied",
                       "country": "MX",
                       "founded_year": null,
                       "is_bio_universe": null
@@ -4944,7 +4910,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Biomaterials & Green Chemistry",
                       "funding_stage": null,
                       "quality_score": null,
-                      "tech_depth": null,
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": null,
                       "is_bio_universe": null
@@ -4957,7 +4923,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Biomaterials & Green Chemistry",
                       "funding_stage": "growth",
                       "quality_score": 7.5,
-                      "tech_depth": "medium",
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": 2017,
                       "is_bio_universe": null
@@ -4970,7 +4936,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Biomaterials & Green Chemistry",
                       "funding_stage": "pre-seed",
                       "quality_score": 7.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": 2004,
                       "is_bio_universe": 1
@@ -4983,7 +4949,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Biomaterials & Green Chemistry",
                       "funding_stage": "series-a",
                       "quality_score": 6.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "CL",
                       "founded_year": 2017,
                       "is_bio_universe": 1
@@ -4996,7 +4962,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Biomaterials & Green Chemistry",
                       "funding_stage": "series-a",
                       "quality_score": 7.5,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "CL",
                       "founded_year": 2014,
                       "is_bio_universe": 1
@@ -5009,7 +4975,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Biomaterials & Green Chemistry",
                       "funding_stage": "series-a",
                       "quality_score": 7.0,
-                      "tech_depth": "medium",
+                      "tech_depth": "applied",
                       "country": "CO",
                       "founded_year": 2020,
                       "is_bio_universe": null
@@ -5022,7 +4988,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Biomaterials & Green Chemistry",
                       "funding_stage": "pre-seed",
                       "quality_score": 7.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": 2016,
                       "is_bio_universe": 1
@@ -5035,7 +5001,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Biomaterials & Green Chemistry",
                       "funding_stage": "pre-seed",
                       "quality_score": 7.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "MX",
                       "founded_year": 2014,
                       "is_bio_universe": 1
@@ -5048,7 +5014,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Biomaterials & Green Chemistry",
                       "funding_stage": "pre-seed",
                       "quality_score": 5.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "MX",
                       "founded_year": 2016,
                       "is_bio_universe": 1
@@ -5074,7 +5040,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Biomaterials & Green Chemistry",
                       "funding_stage": "pre-seed",
                       "quality_score": 7.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "CL",
                       "founded_year": 2017,
                       "is_bio_universe": 1
@@ -5087,7 +5053,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Biomaterials & Green Chemistry",
                       "funding_stage": "pre-seed",
                       "quality_score": 4.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": 2015,
                       "is_bio_universe": 0
@@ -5108,7 +5074,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Circular Economy & Packaging",
                       "funding_stage": "seed",
                       "quality_score": 9.5,
-                      "tech_depth": "deep",
+                      "tech_depth": "enabler",
                       "country": "AR",
                       "founded_year": 2020,
                       "is_bio_universe": 0
@@ -5121,7 +5087,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Circular Economy & Packaging",
                       "funding_stage": "seed",
                       "quality_score": 9.5,
-                      "tech_depth": "deep",
+                      "tech_depth": "enabler",
                       "country": "CO",
                       "founded_year": 2019,
                       "is_bio_universe": 0
@@ -5163,7 +5129,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Carbon Credit",
                       "funding_stage": "series-a",
                       "quality_score": 7.5,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "MX",
                       "founded_year": 2010,
                       "is_bio_universe": 1
@@ -5204,7 +5170,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Biomanufacturing & Platform Technologies",
                       "funding_stage": null,
                       "quality_score": null,
-                      "tech_depth": null,
+                      "tech_depth": "deep",
                       "country": "BR",
                       "founded_year": null,
                       "is_bio_universe": null
@@ -5217,7 +5183,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Biomanufacturing & Platform Technologies",
                       "funding_stage": "series-a",
                       "quality_score": 7.0,
-                      "tech_depth": "medium",
+                      "tech_depth": "deep",
                       "country": "BR",
                       "founded_year": 2018,
                       "is_bio_universe": null
@@ -5230,7 +5196,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Biomanufacturing & Platform Technologies",
                       "funding_stage": "series-a",
                       "quality_score": 7.0,
-                      "tech_depth": "medium",
+                      "tech_depth": "deep",
                       "country": "BR",
                       "founded_year": 2018,
                       "is_bio_universe": 1
@@ -5386,7 +5352,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Biomanufacturing & Platform Technologies",
                       "funding_stage": null,
                       "quality_score": null,
-                      "tech_depth": null,
+                      "tech_depth": "deep",
                       "country": "CL",
                       "founded_year": 2023,
                       "is_bio_universe": 1
@@ -5425,7 +5391,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Biomanufacturing & Platform Technologies",
                       "funding_stage": "pre-seed",
                       "quality_score": 6.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": 2018,
                       "is_bio_universe": 0
@@ -5511,7 +5477,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Precision Fermentation",
                       "funding_stage": "seed",
                       "quality_score": 6.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": 2019,
                       "is_bio_universe": 1
@@ -5592,7 +5558,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Biologics Manufacturing",
                       "funding_stage": "pre-seed",
                       "quality_score": 9.5,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "AR",
                       "founded_year": 2019,
                       "is_bio_universe": 1
@@ -5607,18 +5573,18 @@ window.IQ_PHYLO_TREE = {
           "name": "Agroecosistemas",
           "level": "macro",
           "color": "#2A7A42",
-          "n": 113,
+          "n": 110,
           "children": [
             {
               "name": "Bioinputs & Crop Resilience",
               "level": "theme",
-              "n": 79,
+              "n": 76,
               "children": [
                 {
                   "name": "Bioinputs & Crop Resilience",
                   "level": "sub",
                   "_theme": "Bioinputs & Crop Resilience",
-                  "n": 18,
+                  "n": 17,
                   "children": [
                     {
                       "level": "startup",
@@ -5628,7 +5594,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Bioinputs & Crop Resilience",
                       "funding_stage": "series-a",
                       "quality_score": 7.0,
-                      "tech_depth": "medium",
+                      "tech_depth": "applied",
                       "country": "EC",
                       "founded_year": 2019,
                       "is_bio_universe": null
@@ -5641,7 +5607,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Bioinputs & Crop Resilience",
                       "funding_stage": null,
                       "quality_score": null,
-                      "tech_depth": null,
+                      "tech_depth": "applied",
                       "country": "CL",
                       "founded_year": null,
                       "is_bio_universe": 1
@@ -5654,7 +5620,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Bioinputs & Crop Resilience",
                       "funding_stage": "growth",
                       "quality_score": 7.5,
-                      "tech_depth": "medium",
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": 2016,
                       "is_bio_universe": null
@@ -5667,7 +5633,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Bioinputs & Crop Resilience",
                       "funding_stage": null,
                       "quality_score": null,
-                      "tech_depth": null,
+                      "tech_depth": "applied",
                       "country": "AR",
                       "founded_year": 2001,
                       "is_bio_universe": null
@@ -5680,7 +5646,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Bioinputs & Crop Resilience",
                       "funding_stage": "series-a",
                       "quality_score": 7.0,
-                      "tech_depth": "medium",
+                      "tech_depth": "applied",
                       "country": "MX",
                       "founded_year": 2018,
                       "is_bio_universe": null
@@ -5693,7 +5659,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Bioinputs & Crop Resilience",
                       "funding_stage": "series-a",
                       "quality_score": 8.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "CL",
                       "founded_year": 2013,
                       "is_bio_universe": 1
@@ -5706,7 +5672,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Bioinputs & Crop Resilience",
                       "funding_stage": null,
                       "quality_score": null,
-                      "tech_depth": null,
+                      "tech_depth": "applied",
                       "country": "CL",
                       "founded_year": null,
                       "is_bio_universe": null
@@ -5719,7 +5685,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Bioinputs & Crop Resilience",
                       "funding_stage": "growth",
                       "quality_score": 7.5,
-                      "tech_depth": "medium",
+                      "tech_depth": "applied",
                       "country": "BO",
                       "founded_year": 2012,
                       "is_bio_universe": null
@@ -5732,7 +5698,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Bioinputs & Crop Resilience",
                       "funding_stage": null,
                       "quality_score": null,
-                      "tech_depth": null,
+                      "tech_depth": "applied",
                       "country": "CO",
                       "founded_year": null,
                       "is_bio_universe": null
@@ -5745,22 +5711,9 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Bioinputs & Crop Resilience",
                       "funding_stage": null,
                       "quality_score": null,
-                      "tech_depth": null,
+                      "tech_depth": "applied",
                       "country": "CO",
                       "founded_year": null,
-                      "is_bio_universe": null
-                    },
-                    {
-                      "level": "startup",
-                      "id": "metabix-uy",
-                      "name": "Metabix",
-                      "bio_theme": "Bioinputs & Crop Resilience",
-                      "sub_cluster_label": "Bioinputs & Crop Resilience",
-                      "funding_stage": null,
-                      "quality_score": null,
-                      "tech_depth": null,
-                      "country": "UY",
-                      "founded_year": 2022,
                       "is_bio_universe": null
                     },
                     {
@@ -5771,7 +5724,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Bioinputs & Crop Resilience",
                       "funding_stage": "growth",
                       "quality_score": 7.5,
-                      "tech_depth": "medium",
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": 2014,
                       "is_bio_universe": null
@@ -5784,7 +5737,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Bioinputs & Crop Resilience",
                       "funding_stage": "growth",
                       "quality_score": 7.5,
-                      "tech_depth": "medium",
+                      "tech_depth": "applied",
                       "country": "MX",
                       "founded_year": 2016,
                       "is_bio_universe": null
@@ -5797,7 +5750,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Bioinputs & Crop Resilience",
                       "funding_stage": "growth",
                       "quality_score": 7.5,
-                      "tech_depth": "medium",
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": 2012,
                       "is_bio_universe": null
@@ -5810,9 +5763,9 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Bioinputs & Crop Resilience",
                       "funding_stage": null,
                       "quality_score": null,
-                      "tech_depth": null,
+                      "tech_depth": "applied",
                       "country": "CL",
-                      "founded_year": 2015,
+                      "founded_year": 2020,
                       "is_bio_universe": null
                     },
                     {
@@ -5823,7 +5776,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Bioinputs & Crop Resilience",
                       "funding_stage": null,
                       "quality_score": null,
-                      "tech_depth": null,
+                      "tech_depth": "applied",
                       "country": "CL",
                       "founded_year": 2019,
                       "is_bio_universe": 1
@@ -5836,7 +5789,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Bioinputs & Crop Resilience",
                       "funding_stage": null,
                       "quality_score": null,
-                      "tech_depth": null,
+                      "tech_depth": "applied",
                       "country": "CL",
                       "founded_year": null,
                       "is_bio_universe": null
@@ -5849,7 +5802,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Bioinputs & Crop Resilience",
                       "funding_stage": null,
                       "quality_score": null,
-                      "tech_depth": null,
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": null,
                       "is_bio_universe": null
@@ -5857,10 +5810,239 @@ window.IQ_PHYLO_TREE = {
                   ]
                 },
                 {
+                  "name": "Crop Protection",
+                  "level": "sub",
+                  "_theme": "Bioinputs & Crop Resilience",
+                  "n": 17,
+                  "children": [
+                    {
+                      "level": "startup",
+                      "id": "agrion-agrisolutions-br",
+                      "name": "Agrion Agrisolutions",
+                      "bio_theme": "Bioinputs & Crop Resilience",
+                      "sub_cluster_label": "Crop Protection",
+                      "funding_stage": "series-a",
+                      "quality_score": 6.5,
+                      "tech_depth": "applied",
+                      "country": "BR",
+                      "founded_year": 2019,
+                      "is_bio_universe": 1
+                    },
+                    {
+                      "level": "startup",
+                      "id": "agrivalle",
+                      "name": "Agrivalle",
+                      "bio_theme": "Bioinputs & Crop Resilience",
+                      "sub_cluster_label": "Crop Protection",
+                      "funding_stage": "pre-seed",
+                      "quality_score": 8.5,
+                      "tech_depth": "deep",
+                      "country": "BR",
+                      "founded_year": 2015,
+                      "is_bio_universe": 1
+                    },
+                    {
+                      "level": "startup",
+                      "id": "agrosustain-mx",
+                      "name": "AgroSustain",
+                      "bio_theme": "Bioinputs & Crop Resilience",
+                      "sub_cluster_label": "Crop Protection",
+                      "funding_stage": "pre-seed",
+                      "quality_score": 5.0,
+                      "tech_depth": "deep",
+                      "country": "MX",
+                      "founded_year": 2019,
+                      "is_bio_universe": 1
+                    },
+                    {
+                      "level": "startup",
+                      "id": "arakion",
+                      "name": "Arakion",
+                      "bio_theme": "Bioinputs & Crop Resilience",
+                      "sub_cluster_label": "Crop Protection",
+                      "funding_stage": "pre-seed",
+                      "quality_score": 8.5,
+                      "tech_depth": "applied",
+                      "country": "AR",
+                      "founded_year": null,
+                      "is_bio_universe": 1
+                    },
+                    {
+                      "level": "startup",
+                      "id": "bioin-br",
+                      "name": "BIoIn",
+                      "bio_theme": "Bioinputs & Crop Resilience",
+                      "sub_cluster_label": "Crop Protection",
+                      "funding_stage": "pre-seed",
+                      "quality_score": 7.0,
+                      "tech_depth": "applied",
+                      "country": "BR",
+                      "founded_year": 2001,
+                      "is_bio_universe": 1
+                    },
+                    {
+                      "level": "startup",
+                      "id": "bug_agentes_biologicos",
+                      "name": "BUG Agentes Biologicos",
+                      "bio_theme": "Bioinputs & Crop Resilience",
+                      "sub_cluster_label": "Crop Protection",
+                      "funding_stage": "series-a",
+                      "quality_score": 8.5,
+                      "tech_depth": "applied",
+                      "country": "BR",
+                      "founded_year": 2017,
+                      "is_bio_universe": 1
+                    },
+                    {
+                      "level": "startup",
+                      "id": "biocentis-br",
+                      "name": "Biocentis",
+                      "bio_theme": "Bioinputs & Crop Resilience",
+                      "sub_cluster_label": "Crop Protection",
+                      "funding_stage": "pre-seed",
+                      "quality_score": 5.0,
+                      "tech_depth": "applied",
+                      "country": "BR",
+                      "founded_year": 2015,
+                      "is_bio_universe": 1
+                    },
+                    {
+                      "level": "startup",
+                      "id": "biofabrica-siglo-xxi-mx",
+                      "name": "Biofabrica Siglo XXI",
+                      "bio_theme": "Bioinputs & Crop Resilience",
+                      "sub_cluster_label": "Crop Protection",
+                      "funding_stage": "pre-seed",
+                      "quality_score": 5.0,
+                      "tech_depth": "applied",
+                      "country": "MX",
+                      "founded_year": 2015,
+                      "is_bio_universe": 1
+                    },
+                    {
+                      "level": "startup",
+                      "id": "biotrop-br",
+                      "name": "Biotrop",
+                      "bio_theme": "Bioinputs & Crop Resilience",
+                      "sub_cluster_label": "Crop Protection",
+                      "funding_stage": "pre-seed",
+                      "quality_score": 5.0,
+                      "tech_depth": "applied",
+                      "country": "BR",
+                      "founded_year": 1969,
+                      "is_bio_universe": 1
+                    },
+                    {
+                      "level": "startup",
+                      "id": "botanical-solution-inc-cl",
+                      "name": "Botanical Solution Inc",
+                      "bio_theme": "Bioinputs & Crop Resilience",
+                      "sub_cluster_label": "Crop Protection",
+                      "funding_stage": "seed",
+                      "quality_score": 6.0,
+                      "tech_depth": "applied",
+                      "country": "CL",
+                      "founded_year": 2013,
+                      "is_bio_universe": 1
+                    },
+                    {
+                      "level": "startup",
+                      "id": "decoy",
+                      "name": "Decoy",
+                      "bio_theme": "Bioinputs & Crop Resilience",
+                      "sub_cluster_label": "Crop Protection",
+                      "funding_stage": "pre-seed",
+                      "quality_score": 8.5,
+                      "tech_depth": "applied",
+                      "country": "BR",
+                      "founded_year": 2020,
+                      "is_bio_universe": 1
+                    },
+                    {
+                      "level": "startup",
+                      "id": "decoy-smart-control-br",
+                      "name": "Decoy Smart Control",
+                      "bio_theme": "Bioinputs & Crop Resilience",
+                      "sub_cluster_label": "Crop Protection",
+                      "funding_stage": "seed",
+                      "quality_score": 6.0,
+                      "tech_depth": "applied",
+                      "country": "BR",
+                      "founded_year": 2014,
+                      "is_bio_universe": 1
+                    },
+                    {
+                      "level": "startup",
+                      "id": "krilltech",
+                      "name": "Krilltech",
+                      "bio_theme": "Bioinputs & Crop Resilience",
+                      "sub_cluster_label": "Crop Protection",
+                      "funding_stage": "pre-seed",
+                      "quality_score": 8.5,
+                      "tech_depth": "applied",
+                      "country": "BR",
+                      "founded_year": 2019,
+                      "is_bio_universe": 1
+                    },
+                    {
+                      "level": "startup",
+                      "id": "promip",
+                      "name": "Promip",
+                      "bio_theme": "Bioinputs & Crop Resilience",
+                      "sub_cluster_label": "Crop Protection",
+                      "funding_stage": "series-a",
+                      "quality_score": 10.0,
+                      "tech_depth": "applied",
+                      "country": "BR",
+                      "founded_year": 2006,
+                      "is_bio_universe": 1
+                    },
+                    {
+                      "level": "startup",
+                      "id": "solubio",
+                      "name": "Solubio Tecnologias Agricolas",
+                      "bio_theme": "Bioinputs & Crop Resilience",
+                      "sub_cluster_label": "Crop Protection",
+                      "funding_stage": "seed",
+                      "quality_score": 8.5,
+                      "tech_depth": "applied",
+                      "country": "BR",
+                      "founded_year": null,
+                      "is_bio_universe": 1
+                    },
+                    {
+                      "level": "startup",
+                      "id": "syocin-biotech",
+                      "name": "Syocin Biotech",
+                      "bio_theme": "Bioinputs & Crop Resilience",
+                      "sub_cluster_label": "Crop Protection",
+                      "funding_stage": "pre-seed",
+                      "quality_score": 9.5,
+                      "tech_depth": "deep",
+                      "country": "AR",
+                      "founded_year": 2019,
+                      "is_bio_universe": 1
+                    },
+                    {
+                      "level": "startup",
+                      "id": "vitales-br",
+                      "name": "Vitales",
+                      "bio_theme": "Bioinputs & Crop Resilience",
+                      "sub_cluster_label": "Crop Protection",
+                      "funding_stage": "pre-seed",
+                      "quality_score": 5.0,
+                      "tech_depth": "applied",
+                      "country": "BR",
+                      "founded_year": null,
+                      "is_bio_universe": 1
+                    }
+                  ]
+                },
+                {
                   "name": "Gene Editing",
                   "level": "sub",
                   "_theme": "Bioinputs & Crop Resilience",
-                  "n": 18,
+                  "n": 17,
                   "children": [
                     {
                       "level": "startup",
@@ -5883,7 +6065,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Gene Editing",
                       "funding_stage": "series-a",
                       "quality_score": 10.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "US",
                       "founded_year": 2016,
                       "is_bio_universe": 1
@@ -5896,7 +6078,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Gene Editing",
                       "funding_stage": "series-c+",
                       "quality_score": 7.5,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "AR",
                       "founded_year": 2001,
                       "is_bio_universe": 1
@@ -5948,7 +6130,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Gene Editing",
                       "funding_stage": "pre-seed",
                       "quality_score": 6.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": 2018,
                       "is_bio_universe": 1
@@ -5961,7 +6143,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Gene Editing",
                       "funding_stage": "seed",
                       "quality_score": 8.5,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "AR",
                       "founded_year": 2020,
                       "is_bio_universe": 1
@@ -5974,7 +6156,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Gene Editing",
                       "funding_stage": "pre-seed",
                       "quality_score": 5.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": 2020,
                       "is_bio_universe": 1
@@ -5987,22 +6169,9 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Gene Editing",
                       "funding_stage": "seed",
                       "quality_score": 5.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": 2022,
-                      "is_bio_universe": 1
-                    },
-                    {
-                      "level": "startup",
-                      "id": "kaiima",
-                      "name": "Kaiima",
-                      "bio_theme": "Bioinputs & Crop Resilience",
-                      "sub_cluster_label": "Gene Editing",
-                      "funding_stage": "series-c+",
-                      "quality_score": 6.0,
-                      "tech_depth": "deep",
-                      "country": "BR",
-                      "founded_year": 2007,
                       "is_bio_universe": 1
                     },
                     {
@@ -6013,7 +6182,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Gene Editing",
                       "funding_stage": "seed",
                       "quality_score": 8.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "AR",
                       "founded_year": 2021,
                       "is_bio_universe": 1
@@ -6039,7 +6208,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Gene Editing",
                       "funding_stage": "pre-seed",
                       "quality_score": 7.5,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "MX",
                       "founded_year": 2019,
                       "is_bio_universe": 1
@@ -6065,7 +6234,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Gene Editing",
                       "funding_stage": "seed",
                       "quality_score": 8.5,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "AR",
                       "founded_year": null,
                       "is_bio_universe": 1
@@ -6078,7 +6247,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Gene Editing",
                       "funding_stage": "pre-seed",
                       "quality_score": 5.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "MX",
                       "founded_year": null,
                       "is_bio_universe": 1
@@ -6094,235 +6263,6 @@ window.IQ_PHYLO_TREE = {
                       "tech_depth": "deep",
                       "country": "AR",
                       "founded_year": 2020,
-                      "is_bio_universe": 1
-                    }
-                  ]
-                },
-                {
-                  "name": "Crop Protection",
-                  "level": "sub",
-                  "_theme": "Bioinputs & Crop Resilience",
-                  "n": 17,
-                  "children": [
-                    {
-                      "level": "startup",
-                      "id": "agrion-agrisolutions-br",
-                      "name": "Agrion Agrisolutions",
-                      "bio_theme": "Bioinputs & Crop Resilience",
-                      "sub_cluster_label": "Crop Protection",
-                      "funding_stage": "series-a",
-                      "quality_score": 6.5,
-                      "tech_depth": "deep",
-                      "country": "BR",
-                      "founded_year": 2019,
-                      "is_bio_universe": 1
-                    },
-                    {
-                      "level": "startup",
-                      "id": "agrivalle",
-                      "name": "Agrivalle",
-                      "bio_theme": "Bioinputs & Crop Resilience",
-                      "sub_cluster_label": "Crop Protection",
-                      "funding_stage": "pre-seed",
-                      "quality_score": 8.5,
-                      "tech_depth": "deep",
-                      "country": "BR",
-                      "founded_year": 2015,
-                      "is_bio_universe": 1
-                    },
-                    {
-                      "level": "startup",
-                      "id": "agrosustain-mx",
-                      "name": "AgroSustain",
-                      "bio_theme": "Bioinputs & Crop Resilience",
-                      "sub_cluster_label": "Crop Protection",
-                      "funding_stage": "pre-seed",
-                      "quality_score": 5.0,
-                      "tech_depth": "deep",
-                      "country": "MX",
-                      "founded_year": 2019,
-                      "is_bio_universe": 1
-                    },
-                    {
-                      "level": "startup",
-                      "id": "arakion",
-                      "name": "Arakion",
-                      "bio_theme": "Bioinputs & Crop Resilience",
-                      "sub_cluster_label": "Crop Protection",
-                      "funding_stage": "pre-seed",
-                      "quality_score": 8.5,
-                      "tech_depth": "deep",
-                      "country": "AR",
-                      "founded_year": null,
-                      "is_bio_universe": 1
-                    },
-                    {
-                      "level": "startup",
-                      "id": "bioin-br",
-                      "name": "BIoIn",
-                      "bio_theme": "Bioinputs & Crop Resilience",
-                      "sub_cluster_label": "Crop Protection",
-                      "funding_stage": "pre-seed",
-                      "quality_score": 7.0,
-                      "tech_depth": "deep",
-                      "country": "BR",
-                      "founded_year": 2001,
-                      "is_bio_universe": 1
-                    },
-                    {
-                      "level": "startup",
-                      "id": "bug_agentes_biologicos",
-                      "name": "BUG Agentes Biologicos",
-                      "bio_theme": "Bioinputs & Crop Resilience",
-                      "sub_cluster_label": "Crop Protection",
-                      "funding_stage": "series-a",
-                      "quality_score": 8.5,
-                      "tech_depth": "deep",
-                      "country": "BR",
-                      "founded_year": 2017,
-                      "is_bio_universe": 1
-                    },
-                    {
-                      "level": "startup",
-                      "id": "biocentis-br",
-                      "name": "Biocentis",
-                      "bio_theme": "Bioinputs & Crop Resilience",
-                      "sub_cluster_label": "Crop Protection",
-                      "funding_stage": "pre-seed",
-                      "quality_score": 5.0,
-                      "tech_depth": "deep",
-                      "country": "BR",
-                      "founded_year": 2015,
-                      "is_bio_universe": 1
-                    },
-                    {
-                      "level": "startup",
-                      "id": "biofabrica-siglo-xxi-mx",
-                      "name": "Biofabrica Siglo XXI",
-                      "bio_theme": "Bioinputs & Crop Resilience",
-                      "sub_cluster_label": "Crop Protection",
-                      "funding_stage": "pre-seed",
-                      "quality_score": 5.0,
-                      "tech_depth": "deep",
-                      "country": "MX",
-                      "founded_year": 2015,
-                      "is_bio_universe": 1
-                    },
-                    {
-                      "level": "startup",
-                      "id": "biotrop-br",
-                      "name": "Biotrop",
-                      "bio_theme": "Bioinputs & Crop Resilience",
-                      "sub_cluster_label": "Crop Protection",
-                      "funding_stage": "pre-seed",
-                      "quality_score": 5.0,
-                      "tech_depth": "deep",
-                      "country": "BR",
-                      "founded_year": 1969,
-                      "is_bio_universe": 1
-                    },
-                    {
-                      "level": "startup",
-                      "id": "botanical-solution-inc-cl",
-                      "name": "Botanical Solution Inc",
-                      "bio_theme": "Bioinputs & Crop Resilience",
-                      "sub_cluster_label": "Crop Protection",
-                      "funding_stage": "seed",
-                      "quality_score": 6.0,
-                      "tech_depth": "deep",
-                      "country": "CL",
-                      "founded_year": 2013,
-                      "is_bio_universe": 1
-                    },
-                    {
-                      "level": "startup",
-                      "id": "decoy",
-                      "name": "Decoy",
-                      "bio_theme": "Bioinputs & Crop Resilience",
-                      "sub_cluster_label": "Crop Protection",
-                      "funding_stage": "pre-seed",
-                      "quality_score": 8.5,
-                      "tech_depth": "deep",
-                      "country": "BR",
-                      "founded_year": 2020,
-                      "is_bio_universe": 1
-                    },
-                    {
-                      "level": "startup",
-                      "id": "decoy-smart-control-br",
-                      "name": "Decoy Smart Control",
-                      "bio_theme": "Bioinputs & Crop Resilience",
-                      "sub_cluster_label": "Crop Protection",
-                      "funding_stage": "seed",
-                      "quality_score": 6.0,
-                      "tech_depth": "deep",
-                      "country": "BR",
-                      "founded_year": 2014,
-                      "is_bio_universe": 1
-                    },
-                    {
-                      "level": "startup",
-                      "id": "krilltech",
-                      "name": "Krilltech",
-                      "bio_theme": "Bioinputs & Crop Resilience",
-                      "sub_cluster_label": "Crop Protection",
-                      "funding_stage": "pre-seed",
-                      "quality_score": 8.5,
-                      "tech_depth": "deep",
-                      "country": "BR",
-                      "founded_year": 2019,
-                      "is_bio_universe": 1
-                    },
-                    {
-                      "level": "startup",
-                      "id": "promip",
-                      "name": "Promip",
-                      "bio_theme": "Bioinputs & Crop Resilience",
-                      "sub_cluster_label": "Crop Protection",
-                      "funding_stage": "series-a",
-                      "quality_score": 10.0,
-                      "tech_depth": "deep",
-                      "country": "BR",
-                      "founded_year": 2006,
-                      "is_bio_universe": 1
-                    },
-                    {
-                      "level": "startup",
-                      "id": "solubio",
-                      "name": "Solubio Tecnologias Agricolas",
-                      "bio_theme": "Bioinputs & Crop Resilience",
-                      "sub_cluster_label": "Crop Protection",
-                      "funding_stage": "seed",
-                      "quality_score": 8.5,
-                      "tech_depth": "deep",
-                      "country": "BR",
-                      "founded_year": null,
-                      "is_bio_universe": 1
-                    },
-                    {
-                      "level": "startup",
-                      "id": "syocin-biotech",
-                      "name": "Syocin Biotech",
-                      "bio_theme": "Bioinputs & Crop Resilience",
-                      "sub_cluster_label": "Crop Protection",
-                      "funding_stage": "pre-seed",
-                      "quality_score": 9.5,
-                      "tech_depth": "deep",
-                      "country": "AR",
-                      "founded_year": 2019,
-                      "is_bio_universe": 1
-                    },
-                    {
-                      "level": "startup",
-                      "id": "vitales-br",
-                      "name": "Vitales",
-                      "bio_theme": "Bioinputs & Crop Resilience",
-                      "sub_cluster_label": "Crop Protection",
-                      "funding_stage": "pre-seed",
-                      "quality_score": 5.0,
-                      "tech_depth": "deep",
-                      "country": "BR",
-                      "founded_year": null,
                       "is_bio_universe": 1
                     }
                   ]
@@ -6354,7 +6294,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Crop Soil",
                       "funding_stage": "pre-seed",
                       "quality_score": 7.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "UY",
                       "founded_year": 2018,
                       "is_bio_universe": 1
@@ -6367,7 +6307,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Crop Soil",
                       "funding_stage": "pre-seed",
                       "quality_score": 9.5,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "AR",
                       "founded_year": 2010,
                       "is_bio_universe": 1
@@ -6393,7 +6333,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Crop Soil",
                       "funding_stage": "pre-seed",
                       "quality_score": 4.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "AR",
                       "founded_year": 2020,
                       "is_bio_universe": 1
@@ -6406,7 +6346,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Crop Soil",
                       "funding_stage": "series-b",
                       "quality_score": 10.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "AR",
                       "founded_year": 2020,
                       "is_bio_universe": 1
@@ -6432,7 +6372,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Crop Soil",
                       "funding_stage": "seed",
                       "quality_score": 9.5,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "AR",
                       "founded_year": null,
                       "is_bio_universe": 1
@@ -6445,9 +6385,9 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Crop Soil",
                       "funding_stage": "seed",
                       "quality_score": 9.5,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "AR",
-                      "founded_year": null,
+                      "founded_year": 2023,
                       "is_bio_universe": 1
                     },
                     {
@@ -6458,7 +6398,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Crop Soil",
                       "funding_stage": "pre-seed",
                       "quality_score": 9.5,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "AR",
                       "founded_year": 2021,
                       "is_bio_universe": 1
@@ -6482,7 +6422,7 @@ window.IQ_PHYLO_TREE = {
                   "name": "Agricultural Inputs",
                   "level": "sub",
                   "_theme": "Bioinputs & Crop Resilience",
-                  "n": 9,
+                  "n": 8,
                   "children": [
                     {
                       "level": "startup",
@@ -6492,7 +6432,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Agricultural Inputs",
                       "funding_stage": "pre-seed",
                       "quality_score": 6.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "PA",
                       "founded_year": 2012,
                       "is_bio_universe": 1
@@ -6505,7 +6445,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Agricultural Inputs",
                       "funding_stage": "series-a",
                       "quality_score": 7.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "MX",
                       "founded_year": 2008,
                       "is_bio_universe": 1
@@ -6518,7 +6458,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Agricultural Inputs",
                       "funding_stage": "pre-seed",
                       "quality_score": 5.5,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "CL",
                       "founded_year": 2016,
                       "is_bio_universe": 1
@@ -6531,7 +6471,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Agricultural Inputs",
                       "funding_stage": "seed",
                       "quality_score": 6.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "CR",
                       "founded_year": 2017,
                       "is_bio_universe": 1
@@ -6544,22 +6484,9 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Agricultural Inputs",
                       "funding_stage": "pre-seed",
                       "quality_score": 5.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "CL",
                       "founded_year": 2021,
-                      "is_bio_universe": 1
-                    },
-                    {
-                      "level": "startup",
-                      "id": "metabix_bio",
-                      "name": "Metabix Bio",
-                      "bio_theme": "Bioinputs & Crop Resilience",
-                      "sub_cluster_label": "Agricultural Inputs",
-                      "funding_stage": "pre-seed",
-                      "quality_score": 6.0,
-                      "tech_depth": "deep",
-                      "country": "UY",
-                      "founded_year": 2022,
                       "is_bio_universe": 1
                     },
                     {
@@ -6583,7 +6510,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Agricultural Inputs",
                       "funding_stage": "pre-seed",
                       "quality_score": 5.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "CL",
                       "founded_year": 2019,
                       "is_bio_universe": 1
@@ -6596,7 +6523,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Agricultural Inputs",
                       "funding_stage": "seed",
                       "quality_score": 6.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": 2006,
                       "is_bio_universe": 1
@@ -6677,7 +6604,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Shelf Life",
                       "funding_stage": "seed",
                       "quality_score": 9.5,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "AR",
                       "founded_year": null,
                       "is_bio_universe": 1
@@ -6698,7 +6625,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Aquaculture Biologicals",
                       "funding_stage": "pre-seed",
                       "quality_score": 7.5,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "AR",
                       "founded_year": null,
                       "is_bio_universe": 1
@@ -6752,7 +6679,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Nature & Ecosystem Tech",
                       "funding_stage": "seed",
                       "quality_score": 9.5,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "AR",
                       "founded_year": 2020,
                       "is_bio_universe": 1
@@ -6765,7 +6692,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Nature & Ecosystem Tech",
                       "funding_stage": "series-a",
                       "quality_score": 9.5,
-                      "tech_depth": "applied",
+                      "tech_depth": "deep",
                       "country": "BR",
                       "founded_year": 2022,
                       "is_bio_universe": 1
@@ -6791,7 +6718,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Nature & Ecosystem Tech",
                       "funding_stage": "seed",
                       "quality_score": 9.5,
-                      "tech_depth": "enabler",
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": 2010,
                       "is_bio_universe": 1
@@ -6817,7 +6744,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Nature & Ecosystem Tech",
                       "funding_stage": "pre-seed",
                       "quality_score": 5.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "MX",
                       "founded_year": 2019,
                       "is_bio_universe": 1
@@ -6843,7 +6770,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Nature & Ecosystem Tech",
                       "funding_stage": "seed",
                       "quality_score": 9.5,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "AR",
                       "founded_year": 2021,
                       "is_bio_universe": 1
@@ -6869,7 +6796,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Nature & Ecosystem Tech",
                       "funding_stage": "seed",
                       "quality_score": 8.5,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "CL",
                       "founded_year": 2021,
                       "is_bio_universe": 1
@@ -6882,7 +6809,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Nature & Ecosystem Tech",
                       "funding_stage": "pre-seed",
                       "quality_score": 9.5,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "AR",
                       "founded_year": 2019,
                       "is_bio_universe": 1
@@ -6908,7 +6835,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Nature & Ecosystem Tech",
                       "funding_stage": "series-a",
                       "quality_score": 9.5,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "CL",
                       "founded_year": 2018,
                       "is_bio_universe": 1
@@ -6934,7 +6861,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Nature & Ecosystem Tech",
                       "funding_stage": "series-a",
                       "quality_score": 8.5,
-                      "tech_depth": "enabler",
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": 2021,
                       "is_bio_universe": 1
@@ -7012,7 +6939,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Nature & Ecosystem Tech",
                       "funding_stage": "seed",
                       "quality_score": 9.5,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "CL",
                       "founded_year": 2021,
                       "is_bio_universe": 1
@@ -7025,7 +6952,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Nature & Ecosystem Tech",
                       "funding_stage": "seed",
                       "quality_score": 9.5,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "AR",
                       "founded_year": 2019,
                       "is_bio_universe": 1
@@ -7038,7 +6965,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Nature & Ecosystem Tech",
                       "funding_stage": "series-c+",
                       "quality_score": 10.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "AR",
                       "founded_year": 2010,
                       "is_bio_universe": 1
@@ -7077,9 +7004,9 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Nature & Ecosystem Tech",
                       "funding_stage": "seed",
                       "quality_score": 8.5,
-                      "tech_depth": "enabler",
+                      "tech_depth": "applied",
                       "country": "AR",
-                      "founded_year": null,
+                      "founded_year": 2021,
                       "is_bio_universe": 1
                     },
                     {
@@ -7090,7 +7017,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Nature & Ecosystem Tech",
                       "funding_stage": "seed",
                       "quality_score": 5.0,
-                      "tech_depth": "deep",
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": null,
                       "is_bio_universe": 1
@@ -7103,7 +7030,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Nature & Ecosystem Tech",
                       "funding_stage": "pre-seed",
                       "quality_score": 8.5,
-                      "tech_depth": "applied",
+                      "tech_depth": "deep",
                       "country": "BR",
                       "founded_year": null,
                       "is_bio_universe": 1
@@ -7118,7 +7045,7 @@ window.IQ_PHYLO_TREE = {
                       "quality_score": 8.5,
                       "tech_depth": "enabler",
                       "country": "AR",
-                      "founded_year": null,
+                      "founded_year": 2020,
                       "is_bio_universe": 1
                     },
                     {
@@ -7129,7 +7056,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Nature & Ecosystem Tech",
                       "funding_stage": "growth",
                       "quality_score": 8.5,
-                      "tech_depth": "enabler",
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": 2022,
                       "is_bio_universe": 1
@@ -7178,18 +7105,18 @@ window.IQ_PHYLO_TREE = {
           "name": "Inteligencia de Campo",
           "level": "macro",
           "color": "#2E4E8C",
-          "n": 63,
+          "n": 62,
           "children": [
             {
               "name": "Precision Agriculture",
               "level": "theme",
-              "n": 63,
+              "n": 62,
               "children": [
                 {
                   "name": "Crop Monitoring",
                   "level": "sub",
                   "_theme": "Precision Agriculture",
-                  "n": 37,
+                  "n": 36,
                   "children": [
                     {
                       "level": "startup",
@@ -7199,7 +7126,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Crop Monitoring",
                       "funding_stage": "series-a",
                       "quality_score": 9.5,
-                      "tech_depth": "enabler",
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": null,
                       "is_bio_universe": 1
@@ -7225,7 +7152,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Crop Monitoring",
                       "funding_stage": "seed",
                       "quality_score": 6.0,
-                      "tech_depth": "enabler",
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": 2016,
                       "is_bio_universe": 1
@@ -7277,7 +7204,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Crop Monitoring",
                       "funding_stage": "seed",
                       "quality_score": 9.5,
-                      "tech_depth": "enabler",
+                      "tech_depth": "applied",
                       "country": "AR",
                       "founded_year": 2020,
                       "is_bio_universe": 1
@@ -7316,7 +7243,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Crop Monitoring",
                       "funding_stage": "seed",
                       "quality_score": 6.0,
-                      "tech_depth": "enabler",
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": 2010,
                       "is_bio_universe": 1
@@ -7342,22 +7269,9 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Crop Monitoring",
                       "funding_stage": "seed",
                       "quality_score": 5.0,
-                      "tech_depth": "enabler",
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": 2017,
-                      "is_bio_universe": 1
-                    },
-                    {
-                      "level": "startup",
-                      "id": "dymaxion_labs",
-                      "name": "Dymaxion Labs",
-                      "bio_theme": "Precision Agriculture",
-                      "sub_cluster_label": "Crop Monitoring",
-                      "funding_stage": "pre-seed",
-                      "quality_score": 9.5,
-                      "tech_depth": "enabler",
-                      "country": "AR",
-                      "founded_year": 2018,
                       "is_bio_universe": 1
                     },
                     {
@@ -7394,7 +7308,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Crop Monitoring",
                       "funding_stage": "seed",
                       "quality_score": 8.5,
-                      "tech_depth": "enabler",
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": 2012,
                       "is_bio_universe": 1
@@ -7420,7 +7334,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Crop Monitoring",
                       "funding_stage": "pre-seed",
                       "quality_score": 5.0,
-                      "tech_depth": "enabler",
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": 2019,
                       "is_bio_universe": 1
@@ -7433,7 +7347,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Crop Monitoring",
                       "funding_stage": "seed",
                       "quality_score": 6.0,
-                      "tech_depth": "enabler",
+                      "tech_depth": "applied",
                       "country": "CL",
                       "founded_year": 2014,
                       "is_bio_universe": 1
@@ -7472,7 +7386,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Crop Monitoring",
                       "funding_stage": "pre-seed",
                       "quality_score": 8.5,
-                      "tech_depth": "enabler",
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": 2015,
                       "is_bio_universe": 1
@@ -7485,7 +7399,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Crop Monitoring",
                       "funding_stage": "seed",
                       "quality_score": 9.5,
-                      "tech_depth": "enabler",
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": 2019,
                       "is_bio_universe": 1
@@ -7537,7 +7451,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Crop Monitoring",
                       "funding_stage": "seed",
                       "quality_score": 7.5,
-                      "tech_depth": "enabler",
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": null,
                       "is_bio_universe": 1
@@ -7552,7 +7466,7 @@ window.IQ_PHYLO_TREE = {
                       "quality_score": 9.5,
                       "tech_depth": "enabler",
                       "country": "BR",
-                      "founded_year": null,
+                      "founded_year": 2012,
                       "is_bio_universe": 1
                     },
                     {
@@ -7563,7 +7477,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Crop Monitoring",
                       "funding_stage": "pre-seed",
                       "quality_score": 8.5,
-                      "tech_depth": "enabler",
+                      "tech_depth": "applied",
                       "country": "PE",
                       "founded_year": null,
                       "is_bio_universe": 1
@@ -7576,7 +7490,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Crop Monitoring",
                       "funding_stage": "growth",
                       "quality_score": 5.5,
-                      "tech_depth": "enabler",
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": null,
                       "is_bio_universe": 1
@@ -7628,7 +7542,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Crop Monitoring",
                       "funding_stage": "pre-seed",
                       "quality_score": 8.5,
-                      "tech_depth": "enabler",
+                      "tech_depth": "applied",
                       "country": "BR",
                       "founded_year": null,
                       "is_bio_universe": 1
@@ -7667,9 +7581,9 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Crop Monitoring",
                       "funding_stage": "series-a",
                       "quality_score": 9.5,
-                      "tech_depth": "enabler",
+                      "tech_depth": "applied",
                       "country": "AR",
-                      "founded_year": null,
+                      "founded_year": 2020,
                       "is_bio_universe": 1
                     }
                   ]
@@ -7688,7 +7602,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Precision Agriculture",
                       "funding_stage": "series-a",
                       "quality_score": 7.0,
-                      "tech_depth": "medium",
+                      "tech_depth": "applied",
                       "country": "BO",
                       "founded_year": 2018,
                       "is_bio_universe": null
@@ -7701,7 +7615,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Precision Agriculture",
                       "funding_stage": "series-a",
                       "quality_score": 7.0,
-                      "tech_depth": "medium",
+                      "tech_depth": "applied",
                       "country": "DO",
                       "founded_year": null,
                       "is_bio_universe": null
@@ -7714,7 +7628,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Precision Agriculture",
                       "funding_stage": null,
                       "quality_score": null,
-                      "tech_depth": null,
+                      "tech_depth": "applied",
                       "country": "CO",
                       "founded_year": null,
                       "is_bio_universe": null
@@ -7727,7 +7641,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Precision Agriculture",
                       "funding_stage": "series-a",
                       "quality_score": 7.0,
-                      "tech_depth": "medium",
+                      "tech_depth": "applied",
                       "country": "DO",
                       "founded_year": null,
                       "is_bio_universe": null
@@ -7740,7 +7654,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Precision Agriculture",
                       "funding_stage": "growth",
                       "quality_score": 7.5,
-                      "tech_depth": "medium",
+                      "tech_depth": "applied",
                       "country": "BO",
                       "founded_year": 2015,
                       "is_bio_universe": null
@@ -7753,7 +7667,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Precision Agriculture",
                       "funding_stage": "series-a",
                       "quality_score": 7.0,
-                      "tech_depth": "medium",
+                      "tech_depth": "applied",
                       "country": "GT",
                       "founded_year": null,
                       "is_bio_universe": null
@@ -7766,7 +7680,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Precision Agriculture",
                       "funding_stage": "series-a",
                       "quality_score": 7.0,
-                      "tech_depth": "medium",
+                      "tech_depth": "applied",
                       "country": "VE",
                       "founded_year": null,
                       "is_bio_universe": null
@@ -7779,7 +7693,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Precision Agriculture",
                       "funding_stage": "seed",
                       "quality_score": 6.0,
-                      "tech_depth": "medium",
+                      "tech_depth": "applied",
                       "country": "EC",
                       "founded_year": 2021,
                       "is_bio_universe": null
@@ -7792,7 +7706,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Precision Agriculture",
                       "funding_stage": null,
                       "quality_score": null,
-                      "tech_depth": null,
+                      "tech_depth": "applied",
                       "country": "CL",
                       "founded_year": 2017,
                       "is_bio_universe": null
@@ -7805,7 +7719,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Precision Agriculture",
                       "funding_stage": "series-a",
                       "quality_score": 7.0,
-                      "tech_depth": "medium",
+                      "tech_depth": "applied",
                       "country": "DO",
                       "founded_year": null,
                       "is_bio_universe": null
@@ -7818,7 +7732,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Precision Agriculture",
                       "funding_stage": null,
                       "quality_score": null,
-                      "tech_depth": null,
+                      "tech_depth": "applied",
                       "country": "CL",
                       "founded_year": null,
                       "is_bio_universe": 1
@@ -7831,7 +7745,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Precision Agriculture",
                       "funding_stage": "series-a",
                       "quality_score": 7.0,
-                      "tech_depth": "medium",
+                      "tech_depth": "applied",
                       "country": "CR",
                       "founded_year": null,
                       "is_bio_universe": null
@@ -7844,7 +7758,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Precision Agriculture",
                       "funding_stage": "growth",
                       "quality_score": 7.5,
-                      "tech_depth": "medium",
+                      "tech_depth": "applied",
                       "country": "BO",
                       "founded_year": 2013,
                       "is_bio_universe": null
@@ -7857,7 +7771,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Precision Agriculture",
                       "funding_stage": "growth",
                       "quality_score": 7.5,
-                      "tech_depth": "medium",
+                      "tech_depth": "applied",
                       "country": "MX",
                       "founded_year": 2017,
                       "is_bio_universe": null
@@ -7870,7 +7784,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Precision Agriculture",
                       "funding_stage": "series-a",
                       "quality_score": 7.0,
-                      "tech_depth": "medium",
+                      "tech_depth": "applied",
                       "country": "CR",
                       "founded_year": null,
                       "is_bio_universe": null
@@ -7883,7 +7797,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Precision Agriculture",
                       "funding_stage": null,
                       "quality_score": null,
-                      "tech_depth": null,
+                      "tech_depth": "applied",
                       "country": "CR",
                       "founded_year": 2021,
                       "is_bio_universe": null
@@ -7896,7 +7810,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Precision Agriculture",
                       "funding_stage": null,
                       "quality_score": null,
-                      "tech_depth": null,
+                      "tech_depth": "applied",
                       "country": "CL",
                       "founded_year": null,
                       "is_bio_universe": 1
@@ -7909,7 +7823,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Precision Agriculture",
                       "funding_stage": "series-a",
                       "quality_score": 7.0,
-                      "tech_depth": "medium",
+                      "tech_depth": "applied",
                       "country": "BO",
                       "founded_year": 2018,
                       "is_bio_universe": null
@@ -7922,9 +7836,9 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Precision Agriculture",
                       "funding_stage": "series-a",
                       "quality_score": 7.0,
-                      "tech_depth": "medium",
+                      "tech_depth": "applied",
                       "country": "CR",
-                      "founded_year": null,
+                      "founded_year": 2024,
                       "is_bio_universe": null
                     },
                     {
@@ -7935,9 +7849,9 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Precision Agriculture",
                       "funding_stage": "series-a",
                       "quality_score": 7.0,
-                      "tech_depth": "medium",
+                      "tech_depth": "applied",
                       "country": "CR",
-                      "founded_year": null,
+                      "founded_year": 2024,
                       "is_bio_universe": null
                     },
                     {
@@ -7948,7 +7862,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Precision Agriculture",
                       "funding_stage": "series-a",
                       "quality_score": 7.0,
-                      "tech_depth": "medium",
+                      "tech_depth": "applied",
                       "country": "CR",
                       "founded_year": null,
                       "is_bio_universe": null
@@ -7961,7 +7875,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Precision Agriculture",
                       "funding_stage": "seed",
                       "quality_score": 6.0,
-                      "tech_depth": "medium",
+                      "tech_depth": "applied",
                       "country": "EC",
                       "founded_year": 2021,
                       "is_bio_universe": null
@@ -7974,7 +7888,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Precision Agriculture",
                       "funding_stage": "series-a",
                       "quality_score": 7.0,
-                      "tech_depth": "medium",
+                      "tech_depth": "applied",
                       "country": "CR",
                       "founded_year": null,
                       "is_bio_universe": null
@@ -7987,7 +7901,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Precision Agriculture",
                       "funding_stage": "growth",
                       "quality_score": 7.5,
-                      "tech_depth": "medium",
+                      "tech_depth": "applied",
                       "country": "EC",
                       "founded_year": 2015,
                       "is_bio_universe": null
@@ -8000,7 +7914,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Precision Agriculture",
                       "funding_stage": "growth",
                       "quality_score": 7.5,
-                      "tech_depth": "medium",
+                      "tech_depth": "applied",
                       "country": "BO",
                       "founded_year": 2015,
                       "is_bio_universe": null
@@ -8013,7 +7927,7 @@ window.IQ_PHYLO_TREE = {
                       "sub_cluster_label": "Precision Agriculture",
                       "funding_stage": "series-a",
                       "quality_score": 7.0,
-                      "tech_depth": "medium",
+                      "tech_depth": "applied",
                       "country": "CO",
                       "founded_year": null,
                       "is_bio_universe": null

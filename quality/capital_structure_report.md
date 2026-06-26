@@ -1,42 +1,40 @@
 # Estructura de Inversión — BIO VC LATAM
 
-_Generado 2026-06-13 con `python pipeline.py capital-structure`. Cuenta EMPRESAS por stage (no dólares: solo 10% de aristas tiene monto). El stage es el más avanzado entre las aristas reales con round_stage._
+_Generado 2026-06-25 con `python pipeline.py capital-structure`. Cuenta EMPRESAS por stage (no dólares: solo 10% de aristas tiene monto). El stage es el más avanzado entre las aristas reales con round_stage._
 
 ## Pirámide de stages (global)
 
-- **Pre-seed / Accelerator**: 234 ████████████████████████████████████████
-- **Seed**: 178 ███████████████████████████████████
-- **Series A**: 82 ████████████████
-- **Growth (B–D)**: 37 ███████
+- **Pre-seed / Accelerator**: 61 ████████████
+- **Seed**: 164 ████████████████████████████████
+- **Series A**: 42 ████████
+- **Growth (B–D)**: 17 ███
 - **Exit / IPO**: 5 █
 
 ## Pirámide por tema — ¿base sin cúspide?
 
 | Tema | Pre-seed | Seed | Ser.A | Growth | Exit | Sin capital | A→Growth |
 |------|---------|------|-------|--------|------|-------------|----------|
-| Diagnostics & Devices | 51 | 40 | 19 | 7 | 0 | 5 | 0.29 |
-| Therapeutics | 47 | 33 | 10 | 3 | 0 | 4 | 0.16 |
-| Food Systems & Alt Proteins | 46 | 22 | 8 | 0 | 1 | 7 | 0.13 |
-| Bioinputs & Crop Resilience | 34 | 22 | 6 | 9 | 2 | 6 | 0.3 |
-| Precision Agriculture | 9 | 17 | 20 | 7 | 1 | 9 | 1.08 |
-| Biomaterials & Green Chemistry | 27 | 16 | 7 | 3 | 0 | 5 | 0.23 |
-| Nature & Ecosystem Tech | 2 | 19 | 5 | 3 | 1 | 4 | 0.43 |
-| Biomanufacturing & Platform Technologies | 15 | 8 | 1 | 3 | 0 | 1 | 0.17 |
-| Digital AgTech & Agrifintech | 3 | 1 | 6 | 2 | 0 | 0 | 2.0 |
+| Diagnostics & Devices | 12 | 35 | 12 | 4 | 0 | 58 | 0.34 |
+| Therapeutics | 12 | 33 | 6 | 1 | 0 | 45 | 0.16 |
+| Food Systems & Alt Proteins | 11 | 21 | 4 | 0 | 1 | 58 | 0.16 |
+| Bioinputs & Crop Resilience | 8 | 21 | 3 | 3 | 2 | 39 | 0.28 |
+| Biomaterials & Green Chemistry | 11 | 16 | 5 | 2 | 0 | 24 | 0.26 |
+| Nature & Ecosystem Tech | 0 | 17 | 5 | 3 | 1 | 8 | 0.53 |
+| Precision Agriculture | 0 | 14 | 6 | 2 | 1 | 39 | 0.64 |
+| Biomanufacturing & Platform Technologies | 7 | 7 | 1 | 2 | 0 | 13 | 0.21 |
 
 ## Dependencia de capital extranjero por tema
 
 | Tema | Aristas | Extranjeras | % extranjero |
 |------|---------|-------------|--------------|
-| Precision Agriculture | 114 | 52 | 45% |
-| Digital AgTech & Agrifintech | 27 | 12 | 44% |
-| Nature & Ecosystem Tech | 59 | 20 | 33% |
-| Biomaterials & Green Chemistry | 93 | 19 | 20% |
-| Bioinputs & Crop Resilience | 157 | 23 | 14% |
-| Diagnostics & Devices | 212 | 28 | 13% |
-| Biomanufacturing & Platform Technologies | 48 | 4 | 8% |
-| Food Systems & Alt Proteins | 140 | 10 | 7% |
-| Therapeutics | 168 | 6 | 3% |
+| Precision Agriculture | 91 | 37 | 40% |
+| Nature & Ecosystem Tech | 117 | 29 | 24% |
+| Biomanufacturing & Platform Technologies | 80 | 13 | 16% |
+| Biomaterials & Green Chemistry | 135 | 21 | 15% |
+| Food Systems & Alt Proteins | 161 | 25 | 15% |
+| Bioinputs & Crop Resilience | 216 | 33 | 15% |
+| Diagnostics & Devices | 247 | 24 | 9% |
+| Therapeutics | 205 | 11 | 5% |
 
 ## Concentración de capital por tema (HHI)
 
@@ -44,45 +42,52 @@ _Generado 2026-06-13 con `python pipeline.py capital-structure`. Cuenta EMPRESAS
 
 | Tema | HHI | # inversores | Inversor dominante | Share |
 |------|-----|--------------|--------------------|-------|
-| Digital AgTech & Agrifintech | 0.204 | 7 | the_yield_lab_latam | 33% |
-| Biomaterials & Green Chemistry | 0.183 | 29 | GridX | 37% |
-| Food Systems & Alt Proteins | 0.146 | 23 | GridX | 27% |
-| Biomanufacturing & Platform Technologies | 0.144 | 14 | GridX | 27% |
-| Therapeutics | 0.114 | 24 | The Ganesha Lab | 18% |
-| Precision Agriculture | 0.103 | 20 | the_yield_lab_latam | 23% |
-| Diagnostics & Devices | 0.092 | 44 | The Ganesha Lab | 18% |
-| Bioinputs & Crop Resilience | 0.083 | 37 | GridX | 15% |
-| Nature & Ecosystem Tech | 0.074 | 28 | the_yield_lab_latam | 18% |
+| Biomanufacturing & Platform Technologies | 0.259 | 20 | GridX | 48% |
+| Biomaterials & Green Chemistry | 0.25 | 31 | GridX | 48% |
+| Therapeutics | 0.182 | 29 | GridX | 38% |
+| Food Systems & Alt Proteins | 0.169 | 37 | GridX | 38% |
+| Diagnostics & Devices | 0.128 | 45 | GridX | 30% |
+| Precision Agriculture | 0.096 | 25 | the_yield_lab_latam | 19% |
+| Bioinputs & Crop Resilience | 0.095 | 48 | GridX | 25% |
+| Nature & Ecosystem Tech | 0.087 | 30 | Antom | 20% |
 
 ## Sindicación (co-inversión)
 
-91 pares de fondos co-invierten en ≥2 startups. Más sindicados:
+322 pares de fondos co-invierten en ≥2 startups. Más sindicados:
 
-- **the_yield_lab_latam**: co-invierte con 15 fondos distintos
-- **GridX**: co-invierte con 10 fondos distintos
-- **DraperCygnus**: co-invierte con 9 fondos distintos
-- **sp_ventures**: co-invierte con 9 fondos distintos
-- **AIR Capital**: co-invierte con 8 fondos distintos
-- **zentynel**: co-invierte con 7 fondos distintos
-- **SOSV_IndieBio**: co-invierte con 6 fondos distintos
-- **inventure**: co-invierte con 6 fondos distintos
-- **The Ganesha Lab**: co-invierte con 5 fondos distintos
-- **vesper_ventures**: co-invierte con 5 fondos distintos
-- **Antom**: co-invierte con 5 fondos distintos
-- **kaszek**: co-invierte con 5 fondos distintos
+- **GridX**: co-invierte con 44 fondos distintos
+- **AIR Capital**: co-invierte con 38 fondos distintos
+- **the_yield_lab_latam**: co-invierte con 34 fondos distintos
+- **SOSV_IndieBio**: co-invierte con 32 fondos distintos
+- **sp_ventures**: co-invierte con 31 fondos distintos
+- **SF500**: co-invierte con 21 fondos distintos
+- **DraperCygnus**: co-invierte con 19 fondos distintos
+- **DragonesVP**: co-invierte con 17 fondos distintos
+- **sosv**: co-invierte con 17 fondos distintos
+- **kamay_ventures**: co-invierte con 15 fondos distintos
+- **glocal**: co-invierte con 14 fondos distintos
+- **inventure**: co-invierte con 14 fondos distintos
 
 Top pares:
 
-- The Ganesha Lab + vesper_ventures: 75 startups en común
-- GridX + The Ganesha Lab: 43 startups en común
-- AIR Capital + DraperCygnus: 30 startups en común
-- AIR Capital + CITES: 24 startups en común
-- AIR Capital + GridX: 21 startups en común
-- CITES + DraperCygnus: 20 startups en común
-- morningside_group + the_yield_lab_latam: 14 startups en común
-- Antom + GridX: 12 startups en común
+- AIR Capital + GridX: 104 startups en común
+- GridX + SOSV_IndieBio: 73 startups en común
+- AIR Capital + DraperCygnus: 69 startups en común
+- Antom + glocal: 57 startups en común
+- DragonesVP + DraperCygnus: 35 startups en común
+- AIR Capital + SOSV_IndieBio: 33 startups en común
+- GridX + zentynel: 28 startups en común
+- GridX + The Ganesha Lab: 27 startups en común
 
 ## Capital no documentado
 
-0 startups include sin ninguna arista de capital. Por tema:
+218 startups include sin ninguna arista de capital. Por tema:
 
+- **Diagnostics & Devices**: 48/121 (39%)
+- **Food Systems & Alt Proteins**: 42/95 (44%)
+- **Therapeutics**: 39/97 (40%)
+- **Precision Agriculture**: 28/62 (45%)
+- **Bioinputs & Crop Resilience**: 28/76 (36%)
+- **Biomaterials & Green Chemistry**: 18/58 (31%)
+- **Biomanufacturing & Platform Technologies**: 11/30 (36%)
+- **Nature & Ecosystem Tech**: 4/34 (11%)

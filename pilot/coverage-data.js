@@ -1,12 +1,12 @@
 window.COVERAGE_DATA = {
-  "generated_at": "2026-06-14T17:21:24+00:00",
+  "generated_at": "2026-06-26T01:16:28+00:00",
   "countries": {
     "AR": {
       "tier": "well_mapped",
-      "n_includes": 174,
-      "evidence_pct": 0.816,
+      "n_includes": 172,
+      "evidence_pct": 0.82,
       "n_patches": 3,
-      "n_local_investors": 16
+      "n_local_investors": 17
     },
     "BM": {
       "tier": "fuera_de_foco",
@@ -24,8 +24,8 @@ window.COVERAGE_DATA = {
     },
     "BR": {
       "tier": "well_mapped",
-      "n_includes": 163,
-      "evidence_pct": 0.35,
+      "n_includes": 161,
+      "evidence_pct": 0.354,
       "n_patches": 3,
       "n_local_investors": 33
     },
@@ -34,7 +34,7 @@ window.COVERAGE_DATA = {
       "n_includes": 89,
       "evidence_pct": 0.36,
       "n_patches": 3,
-      "n_local_investors": 9
+      "n_local_investors": 10
     },
     "CO": {
       "tier": "partial",
@@ -48,7 +48,7 @@ window.COVERAGE_DATA = {
       "n_includes": 18,
       "evidence_pct": 0.111,
       "n_patches": 2,
-      "n_local_investors": 3
+      "n_local_investors": 2
     },
     "DO": {
       "tier": "under_explored",
@@ -76,7 +76,7 @@ window.COVERAGE_DATA = {
       "n_includes": 50,
       "evidence_pct": 0.18,
       "n_patches": 2,
-      "n_local_investors": 2
+      "n_local_investors": 1
     },
     "NL": {
       "tier": "fuera_de_foco",
@@ -115,8 +115,8 @@ window.COVERAGE_DATA = {
     },
     "UY": {
       "tier": "under_explored",
-      "n_includes": 14,
-      "evidence_pct": 0.5,
+      "n_includes": 12,
+      "evidence_pct": 0.583,
       "n_patches": 2,
       "n_local_investors": 0
     },
@@ -132,7 +132,7 @@ window.COVERAGE_DATA = {
       "n_includes": 0,
       "evidence_pct": 0.0,
       "n_patches": 0,
-      "n_local_investors": 19
+      "n_local_investors": 7
     },
     "BE": {
       "tier": "fuera_de_foco",
@@ -242,11 +242,11 @@ window.COVERAGE_DATA = {
     {
       "theme": "Bioinputs & Crop Resilience",
       "country": "BR",
-      "n_startups": 25,
-      "evidence_pct": 0.4,
-      "capital_pct": 0.6,
+      "n_startups": 24,
+      "evidence_pct": 0.417,
+      "capital_pct": 0.583,
       "dominant_source": "web_research_2026",
-      "dominant_source_share": 0.4,
+      "dominant_source_share": 0.417,
       "country_tier": "well_mapped",
       "coverage_label": "parcial"
     },
@@ -396,11 +396,11 @@ window.COVERAGE_DATA = {
     {
       "theme": "Bioinputs & Crop Resilience",
       "country": "UY",
-      "n_startups": 3,
+      "n_startups": 1,
       "evidence_pct": 0.0,
-      "capital_pct": 0.333,
+      "capital_pct": 0.0,
       "dominant_source": "gridx",
-      "dominant_source_share": 0.667,
+      "dominant_source_share": 1.0,
       "country_tier": "under_explored",
       "coverage_label": "no_explorado"
     },
@@ -869,11 +869,11 @@ window.COVERAGE_DATA = {
     {
       "theme": "Diagnostics & Devices",
       "country": "BR",
-      "n_startups": 32,
-      "evidence_pct": 0.188,
-      "capital_pct": 0.594,
+      "n_startups": 31,
+      "evidence_pct": 0.194,
+      "capital_pct": 0.581,
       "dominant_source": "gridx",
-      "dominant_source_share": 0.531,
+      "dominant_source_share": 0.516,
       "country_tier": "well_mapped",
       "coverage_label": "parcial"
     },
@@ -1045,11 +1045,11 @@ window.COVERAGE_DATA = {
     {
       "theme": "Food Systems & Alt Proteins",
       "country": "AR",
-      "n_startups": 20,
-      "evidence_pct": 0.8,
-      "capital_pct": 0.9,
+      "n_startups": 19,
+      "evidence_pct": 0.842,
+      "capital_pct": 0.947,
       "dominant_source": "gridx",
-      "dominant_source_share": 0.6,
+      "dominant_source_share": 0.632,
       "country_tier": "well_mapped",
       "coverage_label": "bien_mapeado"
     },
@@ -1463,13 +1463,13 @@ window.COVERAGE_DATA = {
     {
       "theme": "Precision Agriculture",
       "country": "AR",
-      "n_startups": 9,
-      "evidence_pct": 0.889,
+      "n_startups": 8,
+      "evidence_pct": 0.875,
       "capital_pct": 1.0,
       "dominant_source": "(sin provenance)",
-      "dominant_source_share": 0.778,
+      "dominant_source_share": 0.875,
       "country_tier": "well_mapped",
-      "coverage_label": "bien_mapeado"
+      "coverage_label": "parcial"
     },
     {
       "theme": "Precision Agriculture",
@@ -1880,13 +1880,13 @@ window.COVERAGE_DATA = {
     }
   ],
   "label_counts": {
-    "bien_mapeado": 12,
+    "bien_mapeado": 11,
     "fuera_de_foco": 32,
     "no_explorado": 72,
-    "parcial": 33,
+    "parcial": 34,
     "vacio_observado": 3
   },
-  "debias_queue_size": 101,
+  "debias_queue_size": 90,
   "legend": {
     "bien_mapeado": "Volumen + evidencia externa + fuentes diversas: la celda es confiable.",
     "parcial": "Hay datos, pero con evidencia floja o dependientes de un solo parche.",
