@@ -843,39 +843,40 @@ def enrich_rounds_from_valuation_tier(db_path: Path = DB_PATH) -> dict[str, int]
 
 def dedup_investment_edges(db_path: Path = DB_PATH) -> dict[str, int]:
     """
-    Elimina edges duplicadas (mismo investor_id + startup_id).
+    Elimina edges duplicadas (mismo investor_id + startup_id + round_stage).
 
-    Estrategia de resolución por prioridad:
-    1. Mantener la edge con round_stage IS NOT NULL
-    2. Si empate → mantener la de mayor confidence_score
-    3. Si empate → mantener la de mayor investment_id (más reciente)
+    Un mismo par investor→startup con round_stage DISTINTO (ej. seed y luego
+    series-a) es legítimo y NO se colapsa — la clave de dedup incluye round_stage.
+
+    Estrategia de resolución por prioridad dentro de cada clave:
+    1. Mantener la edge con mayor confidence_score
+    2. Si empate → mantener la de mayor investment_id (más reciente)
 
     Retorna: {pairs_found, edges_deleted, pairs_ok}
     """
     conn = sqlite3.connect(db_path)
     conn.execute("PRAGMA journal_mode=WAL")
 
-    # Encontrar pares duplicados
+    # Encontrar claves duplicadas (investor, startup, round_stage)
     dups = conn.execute("""
-        SELECT investor_id, startup_id, count(*) as n
+        SELECT investor_id, startup_id, COALESCE(round_stage, '') as rs, count(*) as n
         FROM investment_edges
-        GROUP BY investor_id, startup_id
+        GROUP BY investor_id, startup_id, rs
         HAVING count(*) > 1
     """).fetchall()
 
     stats = {"pairs_found": len(dups), "edges_deleted": 0, "pairs_ok": 0}
 
-    for investor_id, startup_id, n_edges in dups:
-        # Traer todas las edges del par, ordenadas por prioridad
+    for investor_id, startup_id, round_stage, n_edges in dups:
+        # Traer todas las edges de la clave, ordenadas por prioridad
         edges = conn.execute("""
-            SELECT investment_id, round_stage, confidence_score, notes
+            SELECT investment_id, confidence_score, notes
             FROM investment_edges
-            WHERE investor_id=? AND startup_id=?
+            WHERE investor_id=? AND startup_id=? AND COALESCE(round_stage, '')=?
             ORDER BY
-                CASE WHEN round_stage IS NOT NULL THEN 0 ELSE 1 END,
                 COALESCE(confidence_score, 0) DESC,
                 investment_id DESC
-        """, (investor_id, startup_id)).fetchall()
+        """, (investor_id, startup_id, round_stage)).fetchall()
 
         # Mantener el primero (mayor prioridad), eliminar el resto
         keep_id = edges[0][0]
@@ -888,9 +889,9 @@ def dedup_investment_edges(db_path: Path = DB_PATH) -> dict[str, int]:
                 actor="pipeline:dedup_investment_edges",
                 entity_id=startup_id,
                 field="investment_edges.DELETE",
-                old_value=f"{investor_id}→{startup_id} [{del_id}]",
+                old_value=f"{investor_id}→{startup_id} [{del_id}] round_stage={round_stage or None}",
                 new_value=f"kept:{keep_id}",
-                reason=f"dedup — {n_edges} edges para mismo par",
+                reason=f"dedup — {n_edges} edges para misma clave (investor, startup, round_stage)",
                 evidence_url=None,
             )
             stats["edges_deleted"] += 1

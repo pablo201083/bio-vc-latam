@@ -1,0 +1,4 @@
+investment_id,investor_id,startup_id,round_name,source_id
+AGENT_RESEARCH_patagonia_biotech_hub_acuanativa-cl,patagonia_biotech_hub,acuanativa-cl,portfolio,AGENT_RESEARCH_PORTFOLIO
+AGENT_RESEARCH_patagonia_biotech_hub_kura-biotech-cl,patagonia_biotech_hub,kura-biotech-cl,portfolio,AGENT_RESEARCH_PORTFOLIO
+AGENT_RESEARCH_patagonia_biotech_hub_salmoss-biotech-cl,patagonia_biotech_hub,salmoss-biotech-cl,portfolio,AGENT_RESEARCH_PORTFOLIO

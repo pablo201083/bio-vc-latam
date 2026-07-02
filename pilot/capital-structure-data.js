@@ -23,26 +23,26 @@ window.CAPITAL_STRUCTURE = {
       "Nature & Ecosystem Tech": {
         "levels": {
           "Pre-seed / Accelerator": 0,
-          "Seed": 17,
+          "Seed": 16,
           "Series A": 5,
           "Growth (B–D)": 3,
           "Exit / IPO": 1
         },
-        "funded": 26,
-        "no_capital_documented": 8,
-        "early_to_growth_ratio": 0.53
+        "funded": 25,
+        "no_capital_documented": 10,
+        "early_to_growth_ratio": 0.56
       },
       "Food Systems & Alt Proteins": {
         "levels": {
-          "Pre-seed / Accelerator": 11,
-          "Seed": 21,
+          "Pre-seed / Accelerator": 10,
+          "Seed": 20,
           "Series A": 4,
           "Growth (B–D)": 0,
           "Exit / IPO": 1
         },
-        "funded": 37,
-        "no_capital_documented": 58,
-        "early_to_growth_ratio": 0.16
+        "funded": 35,
+        "no_capital_documented": 54,
+        "early_to_growth_ratio": 0.17
       },
       "Biomanufacturing & Platform Technologies": {
         "levels": {
@@ -53,20 +53,20 @@ window.CAPITAL_STRUCTURE = {
           "Exit / IPO": 0
         },
         "funded": 17,
-        "no_capital_documented": 13,
+        "no_capital_documented": 20,
         "early_to_growth_ratio": 0.21
       },
       "Biomaterials & Green Chemistry": {
         "levels": {
-          "Pre-seed / Accelerator": 11,
+          "Pre-seed / Accelerator": 12,
           "Seed": 16,
           "Series A": 5,
-          "Growth (B–D)": 2,
+          "Growth (B–D)": 1,
           "Exit / IPO": 0
         },
         "funded": 34,
         "no_capital_documented": 24,
-        "early_to_growth_ratio": 0.26
+        "early_to_growth_ratio": 0.21
       },
       "Diagnostics & Devices": {
         "levels": {
@@ -77,7 +77,7 @@ window.CAPITAL_STRUCTURE = {
           "Exit / IPO": 0
         },
         "funded": 63,
-        "no_capital_documented": 58,
+        "no_capital_documented": 59,
         "early_to_growth_ratio": 0.34
       },
       "Therapeutics": {
@@ -89,20 +89,20 @@ window.CAPITAL_STRUCTURE = {
           "Exit / IPO": 0
         },
         "funded": 52,
-        "no_capital_documented": 45,
+        "no_capital_documented": 33,
         "early_to_growth_ratio": 0.16
       },
       "Bioinputs & Crop Resilience": {
         "levels": {
           "Pre-seed / Accelerator": 8,
-          "Seed": 21,
+          "Seed": 23,
           "Series A": 3,
-          "Growth (B–D)": 3,
+          "Growth (B–D)": 4,
           "Exit / IPO": 2
         },
-        "funded": 37,
-        "no_capital_documented": 39,
-        "early_to_growth_ratio": 0.28
+        "funded": 40,
+        "no_capital_documented": 45,
+        "early_to_growth_ratio": 0.29
       }
     },
     "level_order": [
@@ -252,475 +252,475 @@ window.CAPITAL_STRUCTURE = {
       {
         "source": "AIR Capital",
         "target": "GridX",
-        "weight": 104
-      },
-      {
-        "source": "GridX",
-        "target": "SOSV_IndieBio",
-        "weight": 73
-      },
-      {
-        "source": "AIR Capital",
-        "target": "DraperCygnus",
-        "weight": 69
-      },
-      {
-        "source": "Antom",
-        "target": "glocal",
-        "weight": 57
-      },
-      {
-        "source": "DragonesVP",
-        "target": "DraperCygnus",
         "weight": 35
       },
       {
         "source": "AIR Capital",
-        "target": "SOSV_IndieBio",
+        "target": "DraperCygnus",
         "weight": 33
       },
       {
         "source": "GridX",
-        "target": "zentynel",
-        "weight": 28
+        "target": "SOSV_IndieBio",
+        "weight": 29
+      },
+      {
+        "source": "AIR Capital",
+        "target": "SOSV_IndieBio",
+        "weight": 20
+      },
+      {
+        "source": "Antom",
+        "target": "glocal",
+        "weight": 20
+      },
+      {
+        "source": "DragonesVP",
+        "target": "DraperCygnus",
+        "weight": 20
       },
       {
         "source": "GridX",
         "target": "The Ganesha Lab",
-        "weight": 27
-      },
-      {
-        "source": "GridX",
-        "target": "inventure",
-        "weight": 27
-      },
-      {
-        "source": "GridX",
-        "target": "sosv",
-        "weight": 27
-      },
-      {
-        "source": "DraperCygnus",
-        "target": "GridX",
-        "weight": 24
-      },
-      {
-        "source": "GridX",
-        "target": "sp_ventures",
-        "weight": 24
-      },
-      {
-        "source": "DragonesVP",
-        "target": "GridX",
-        "weight": 20
+        "weight": 15
       },
       {
         "source": "AIR Capital",
         "target": "DragonesVP",
-        "weight": 18
+        "weight": 12
       },
       {
-        "source": "DraperCygnus",
+        "source": "sp_ventures",
+        "target": "the_yield_lab_latam",
+        "weight": 11
+      },
+      {
+        "source": "GridX",
         "target": "inventure",
-        "weight": 18
+        "weight": 10
       },
       {
-        "source": "SF500",
-        "target": "The Ganesha Lab",
-        "weight": 18
+        "source": "kamay_ventures",
+        "target": "the_yield_lab_latam",
+        "weight": 10
       },
       {
         "source": "SOSV_IndieBio",
         "target": "sosv",
-        "weight": 18
-      },
-      {
-        "source": "kamay_ventures",
-        "target": "the_yield_lab_latam",
-        "weight": 17
-      },
-      {
-        "source": "Antom",
-        "target": "SF500",
-        "weight": 16
-      },
-      {
-        "source": "Antom",
-        "target": "inventure",
-        "weight": 16
-      },
-      {
-        "source": "GridX",
-        "target": "SF500",
-        "weight": 16
-      },
-      {
-        "source": "SF500",
-        "target": "glocal",
-        "weight": 16
+        "weight": 9
       },
       {
         "source": "glocal",
         "target": "kamay_ventures",
-        "weight": 16
+        "weight": 9
       },
       {
-        "source": "inventure",
-        "target": "the_yield_lab_latam",
-        "weight": 16
-      },
-      {
-        "source": "sp_ventures",
-        "target": "vox_capital",
-        "weight": 16
+        "source": "kaszek",
+        "target": "l_catterton",
+        "weight": 9
       },
       {
         "source": "AIR Capital",
         "target": "SF500",
-        "weight": 15
+        "weight": 8
       },
       {
-        "source": "The Ganesha Lab",
-        "target": "inventure",
-        "weight": 15
+        "source": "DragonesVP",
+        "target": "GridX",
+        "weight": 8
       },
       {
-        "source": "inventure",
-        "target": "kamay_ventures",
-        "weight": 15
-      },
-      {
-        "source": "sp_ventures",
-        "target": "the_yield_lab_latam",
-        "weight": 15
-      },
-      {
-        "source": "Antom",
-        "target": "the_yield_lab_latam",
-        "weight": 14
+        "source": "DraperCygnus",
+        "target": "GridX",
+        "weight": 8
       },
       {
         "source": "DraperCygnus",
         "target": "SOSV_IndieBio",
-        "weight": 14
-      },
-      {
-        "source": "GridX",
-        "target": "the_yield_lab_latam",
-        "weight": 13
-      },
-      {
-        "source": "AIR Capital",
-        "target": "inventure",
-        "weight": 12
-      },
-      {
-        "source": "AIR Capital",
-        "target": "sp_ventures",
-        "weight": 12
-      },
-      {
-        "source": "Antom",
-        "target": "kamay_ventures",
-        "weight": 12
-      },
-      {
-        "source": "CITES",
-        "target": "SF500",
-        "weight": 12
+        "weight": 8
       },
       {
         "source": "DraperCygnus",
-        "target": "varana_capital",
-        "weight": 12
+        "target": "inventure",
+        "weight": 8
       },
       {
         "source": "GridX",
-        "target": "corteva_catalyst",
-        "weight": 12
+        "target": "sosv",
+        "weight": 8
       },
       {
         "source": "GridX",
-        "target": "fapesp",
-        "weight": 12
+        "target": "zentynel",
+        "weight": 8
       },
       {
         "source": "SF500",
-        "target": "inventure",
-        "weight": 12
+        "target": "The Ganesha Lab",
+        "weight": 8
       },
       {
-        "source": "GridX",
-        "target": "brinc",
-        "weight": 10
+        "source": "inventure",
+        "target": "kamay_ventures",
+        "weight": 8
       },
       {
-        "source": "GridX",
-        "target": "cj_cheiljedang",
-        "weight": 10
+        "source": "inventure",
+        "target": "the_yield_lab_latam",
+        "weight": 8
       },
       {
-        "source": "GridX",
-        "target": "corfo",
-        "weight": 10
+        "source": "sp_ventures",
+        "target": "vox_capital",
+        "weight": 8
       },
       {
-        "source": "GridX",
-        "target": "creative_ventures",
-        "weight": 10
+        "source": "SF500",
+        "target": "glocal",
+        "weight": 7
       },
       {
-        "source": "GridX",
-        "target": "fundacion_para_el_progreso_de_la_medicina",
-        "weight": 10
-      },
-      {
-        "source": "GridX",
-        "target": "future_ventures",
-        "weight": 10
-      },
-      {
-        "source": "GridX",
-        "target": "genesis_consortium",
-        "weight": 10
-      },
-      {
-        "source": "GridX",
-        "target": "kairetsu_angels",
-        "weight": 10
-      },
-      {
-        "source": "GridX",
-        "target": "monashees",
-        "weight": 10
-      },
-      {
-        "source": "GridX",
-        "target": "ospraie",
-        "weight": 10
-      },
-      {
-        "source": "GridX",
-        "target": "vectr",
-        "weight": 10
+        "source": "biominas",
+        "target": "vesper_ventures",
+        "weight": 7
       },
       {
         "source": "glocal",
         "target": "the_yield_lab_latam",
-        "weight": 10
+        "weight": 7
       },
       {
         "source": "kamay_ventures",
         "target": "savia_ventures",
-        "weight": 10
+        "weight": 7
       },
       {
         "source": "AIR Capital",
-        "target": "Antom",
-        "weight": 9
-      },
-      {
-        "source": "AIR Capital",
-        "target": "CITES",
-        "weight": 9
-      },
-      {
-        "source": "AIR Capital",
-        "target": "endurance_28",
-        "weight": 9
-      },
-      {
-        "source": "AIR Capital",
-        "target": "sosv",
-        "weight": 9
+        "target": "inventure",
+        "weight": 6
       },
       {
         "source": "Antom",
-        "target": "DraperCygnus",
-        "weight": 9
+        "target": "inventure",
+        "weight": 6
+      },
+      {
+        "source": "Antom",
+        "target": "the_yield_lab_latam",
+        "weight": 6
       },
       {
         "source": "CITES",
         "target": "zentynel",
-        "weight": 9
+        "weight": 6
+      },
+      {
+        "source": "GridX",
+        "target": "SF500",
+        "weight": 6
+      },
+      {
+        "source": "GridX",
+        "target": "fapesp",
+        "weight": 6
+      },
+      {
+        "source": "GridX",
+        "target": "the_yield_lab_latam",
+        "weight": 6
+      },
+      {
+        "source": "SF500",
+        "target": "inventure",
+        "weight": 6
+      },
+      {
+        "source": "The Ganesha Lab",
+        "target": "inventure",
+        "weight": 6
+      },
+      {
+        "source": "the_yield_lab_latam",
+        "target": "vesper_ventures",
+        "weight": 6
+      },
+      {
+        "source": "AIR Capital",
+        "target": "glocal",
+        "weight": 5
+      },
+      {
+        "source": "SF500",
+        "target": "the_yield_lab_latam",
+        "weight": 5
+      },
+      {
+        "source": "corteva_catalyst",
+        "target": "sp_ventures",
+        "weight": 5
+      },
+      {
+        "source": "ecoa_capital",
+        "target": "vesper_ventures",
+        "weight": 5
+      },
+      {
+        "source": "pampa_start",
+        "target": "the_yield_lab_latam",
+        "weight": 5
+      },
+      {
+        "source": "AIR Capital",
+        "target": "Antom",
+        "weight": 4
+      },
+      {
+        "source": "AIR Capital",
+        "target": "CITES",
+        "weight": 4
+      },
+      {
+        "source": "AIR Capital",
+        "target": "corteva_catalyst",
+        "weight": 4
+      },
+      {
+        "source": "AIR Capital",
+        "target": "endurance_28",
+        "weight": 4
+      },
+      {
+        "source": "AIR Capital",
+        "target": "savia_ventures",
+        "weight": 4
+      },
+      {
+        "source": "AIR Capital",
+        "target": "sosv",
+        "weight": 4
+      },
+      {
+        "source": "AIR Capital",
+        "target": "sp_ventures",
+        "weight": 4
+      },
+      {
+        "source": "AIR Capital",
+        "target": "varana_capital",
+        "weight": 4
+      },
+      {
+        "source": "Antom",
+        "target": "DraperCygnus",
+        "weight": 4
+      },
+      {
+        "source": "Antom",
+        "target": "SF500",
+        "weight": 4
+      },
+      {
+        "source": "Antom",
+        "target": "kamay_ventures",
+        "weight": 4
+      },
+      {
+        "source": "CITES",
+        "target": "SF500",
+        "weight": 4
+      },
+      {
+        "source": "DragonesVP",
+        "target": "SOSV_IndieBio",
+        "weight": 4
       },
       {
         "source": "DraperCygnus",
-        "target": "zentynel",
-        "weight": 9
+        "target": "savia_ventures",
+        "weight": 4
+      },
+      {
+        "source": "DraperCygnus",
+        "target": "sp_ventures",
+        "weight": 4
+      },
+      {
+        "source": "DraperCygnus",
+        "target": "varana_capital",
+        "weight": 4
       }
     ],
-    "total_pairs": 322,
+    "total_pairs": 254,
     "most_syndicated": [
       [
         "GridX",
-        44
-      ],
-      [
-        "AIR Capital",
-        38
+        42
       ],
       [
         "the_yield_lab_latam",
-        34
+        33
       ],
       [
         "SOSV_IndieBio",
         32
       ],
       [
-        "sp_ventures",
-        31
+        "AIR Capital",
+        29
       ],
       [
-        "SF500",
-        21
+        "sp_ventures",
+        22
       ],
       [
         "DraperCygnus",
-        19
+        18
       ],
       [
-        "DragonesVP",
-        17
-      ],
-      [
-        "sosv",
-        17
-      ],
-      [
-        "kamay_ventures",
-        15
+        "SF500",
+        16
       ],
       [
         "glocal",
         14
       ],
       [
-        "inventure",
+        "kamay_ventures",
         14
+      ],
+      [
+        "DragonesVP",
+        13
+      ],
+      [
+        "inventure",
+        13
+      ],
+      [
+        "corteva_catalyst",
+        12
       ]
     ]
   },
   "foreign_dependence": {
     "Diagnostics & Devices": {
-      "edges": 247,
-      "foreign_edges": 24,
-      "foreign_pct": 0.097
+      "edges": 168,
+      "foreign_edges": 22,
+      "foreign_pct": 0.131
     },
     "Therapeutics": {
-      "edges": 205,
-      "foreign_edges": 11,
-      "foreign_pct": 0.054
+      "edges": 132,
+      "foreign_edges": 10,
+      "foreign_pct": 0.076
     },
     "Bioinputs & Crop Resilience": {
-      "edges": 216,
-      "foreign_edges": 33,
-      "foreign_pct": 0.153
+      "edges": 152,
+      "foreign_edges": 34,
+      "foreign_pct": 0.224
     },
     "Nature & Ecosystem Tech": {
-      "edges": 117,
-      "foreign_edges": 29,
-      "foreign_pct": 0.248
+      "edges": 83,
+      "foreign_edges": 23,
+      "foreign_pct": 0.277
     },
     "Precision Agriculture": {
-      "edges": 91,
-      "foreign_edges": 37,
-      "foreign_pct": 0.407
+      "edges": 75,
+      "foreign_edges": 28,
+      "foreign_pct": 0.373
     },
     "Food Systems & Alt Proteins": {
-      "edges": 161,
-      "foreign_edges": 25,
-      "foreign_pct": 0.155
+      "edges": 95,
+      "foreign_edges": 15,
+      "foreign_pct": 0.158
     },
     "Biomanufacturing & Platform Technologies": {
-      "edges": 80,
-      "foreign_edges": 13,
-      "foreign_pct": 0.163
+      "edges": 54,
+      "foreign_edges": 10,
+      "foreign_pct": 0.185
     },
     "Biomaterials & Green Chemistry": {
-      "edges": 135,
-      "foreign_edges": 21,
-      "foreign_pct": 0.156
+      "edges": 82,
+      "foreign_edges": 16,
+      "foreign_pct": 0.195
     }
   },
   "concentration": {
     "Diagnostics & Devices": {
-      "hhi": 0.128,
+      "hhi": 0.098,
       "n_investors": 45,
-      "top_investor": "GridX",
-      "top_investor_share": 0.304
-    },
-    "Therapeutics": {
-      "hhi": 0.182,
-      "n_investors": 29,
-      "top_investor": "GridX",
-      "top_investor_share": 0.385
-    },
-    "Bioinputs & Crop Resilience": {
-      "hhi": 0.095,
-      "n_investors": 48,
       "top_investor": "GridX",
       "top_investor_share": 0.25
     },
+    "Therapeutics": {
+      "hhi": 0.133,
+      "n_investors": 29,
+      "top_investor": "GridX",
+      "top_investor_share": 0.311
+    },
+    "Bioinputs & Crop Resilience": {
+      "hhi": 0.059,
+      "n_investors": 53,
+      "top_investor": "GridX",
+      "top_investor_share": 0.178
+    },
     "Nature & Ecosystem Tech": {
-      "hhi": 0.087,
+      "hhi": 0.07,
       "n_investors": 30,
       "top_investor": "Antom",
-      "top_investor_share": 0.205
+      "top_investor_share": 0.145
     },
     "Precision Agriculture": {
-      "hhi": 0.096,
-      "n_investors": 25,
+      "hhi": 0.092,
+      "n_investors": 26,
       "top_investor": "the_yield_lab_latam",
-      "top_investor_share": 0.198
+      "top_investor_share": 0.2
     },
     "Food Systems & Alt Proteins": {
-      "hhi": 0.169,
-      "n_investors": 37,
+      "hhi": 0.104,
+      "n_investors": 35,
+      "top_investor": "GridX",
+      "top_investor_share": 0.284
+    },
+    "Biomanufacturing & Platform Technologies": {
+      "hhi": 0.179,
+      "n_investors": 21,
       "top_investor": "GridX",
       "top_investor_share": 0.389
     },
-    "Biomanufacturing & Platform Technologies": {
-      "hhi": 0.259,
-      "n_investors": 20,
-      "top_investor": "GridX",
-      "top_investor_share": 0.488
-    },
     "Biomaterials & Green Chemistry": {
-      "hhi": 0.25,
-      "n_investors": 31,
+      "hhi": 0.187,
+      "n_investors": 26,
       "top_investor": "GridX",
-      "top_investor_share": 0.481
+      "top_investor_share": 0.402
     }
   },
   "capital_gap": {
     "total_without_capital": 218,
     "by_theme": {
       "Precision Agriculture": {
-        "without_capital": 28,
+        "without_capital": 26,
         "total": 62,
-        "pct": 0.452
+        "pct": 0.419
       },
       "Food Systems & Alt Proteins": {
-        "without_capital": 42,
-        "total": 95,
-        "pct": 0.442
+        "without_capital": 39,
+        "total": 89,
+        "pct": 0.438
       },
       "Nature & Ecosystem Tech": {
-        "without_capital": 4,
-        "total": 34,
-        "pct": 0.118
+        "without_capital": 6,
+        "total": 35,
+        "pct": 0.171
       },
       "Bioinputs & Crop Resilience": {
-        "without_capital": 28,
-        "total": 76,
-        "pct": 0.368
+        "without_capital": 35,
+        "total": 85,
+        "pct": 0.412
       },
       "Biomanufacturing & Platform Technologies": {
-        "without_capital": 11,
-        "total": 30,
-        "pct": 0.367
+        "without_capital": 16,
+        "total": 37,
+        "pct": 0.432
       },
       "Biomaterials & Green Chemistry": {
         "without_capital": 18,
@@ -728,14 +728,14 @@ window.CAPITAL_STRUCTURE = {
         "pct": 0.31
       },
       "Diagnostics & Devices": {
-        "without_capital": 48,
-        "total": 121,
-        "pct": 0.397
+        "without_capital": 50,
+        "total": 122,
+        "pct": 0.41
       },
       "Therapeutics": {
-        "without_capital": 39,
-        "total": 97,
-        "pct": 0.402
+        "without_capital": 28,
+        "total": 85,
+        "pct": 0.329
       }
     }
   },
@@ -854,54 +854,57 @@ window.CAPITAL_STRUCTURE = {
     "matrix": {
       "Bioinputs & Crop Resilience": {
         "AR": 26,
-        "BO": 1,
+        "BO": 3,
         "BR": 24,
-        "CL": 11,
+        "CL": 12,
         "CO": 2,
-        "CR": 1,
-        "EC": 1,
-        "MX": 7,
+        "CR": 2,
+        "EC": 3,
+        "MX": 10,
         "UY": 1
       },
       "Biomanufacturing & Platform Technologies": {
         "AR": 12,
-        "BR": 13,
+        "BR": 14,
         "CL": 2,
-        "MX": 2
+        "CO": 3,
+        "CR": 1,
+        "EC": 1,
+        "MX": 3
       },
       "Biomaterials & Green Chemistry": {
-        "AR": 21,
+        "AR": 22,
         "BR": 8,
-        "CL": 12,
+        "CL": 13,
         "CO": 2,
         "CR": 1,
-        "MX": 9,
+        "MX": 7,
         "UY": 2
       },
       "Diagnostics & Devices": {
         "AR": 46,
         "BO": 1,
-        "BR": 31,
-        "CL": 14,
-        "CO": 7,
+        "BR": 30,
+        "CL": 15,
+        "CO": 8,
         "CR": 1,
         "MX": 12,
         "PE": 1,
         "UY": 3
       },
       "Food Systems & Alt Proteins": {
-        "AR": 19,
-        "BO": 1,
-        "BR": 22,
-        "CL": 30,
-        "CO": 6,
-        "CR": 3,
+        "AR": 18,
+        "BR": 21,
+        "CL": 28,
+        "CO": 5,
+        "CR": 2,
+        "EC": 1,
         "MX": 12,
         "UY": 1
       },
       "Nature & Ecosystem Tech": {
         "AR": 14,
-        "BR": 10,
+        "BR": 11,
         "CL": 5,
         "CR": 1,
         "MX": 2
@@ -909,23 +912,21 @@ window.CAPITAL_STRUCTURE = {
       "Precision Agriculture": {
         "AR": 8,
         "BO": 5,
-        "BR": 23,
+        "BR": 24,
         "CL": 6,
         "CO": 3,
         "CR": 7,
-        "EC": 3,
+        "EC": 2,
         "MX": 1,
         "PE": 1
       },
       "Therapeutics": {
         "AR": 26,
-        "BO": 1,
-        "BR": 30,
-        "CL": 9,
-        "CO": 6,
-        "CR": 4,
-        "EC": 3,
-        "MX": 5,
+        "BR": 29,
+        "CL": 8,
+        "CO": 3,
+        "CR": 3,
+        "MX": 3,
         "PE": 1,
         "UY": 5
       }
@@ -956,13 +957,13 @@ window.CAPITAL_STRUCTURE = {
     },
     "theme_max": {
       "Bioinputs & Crop Resilience": 26,
-      "Biomanufacturing & Platform Technologies": 13,
-      "Biomaterials & Green Chemistry": 21,
+      "Biomanufacturing & Platform Technologies": 14,
+      "Biomaterials & Green Chemistry": 22,
       "Diagnostics & Devices": 46,
-      "Food Systems & Alt Proteins": 30,
+      "Food Systems & Alt Proteins": 28,
       "Nature & Ecosystem Tech": 14,
-      "Precision Agriculture": 23,
-      "Therapeutics": 30
+      "Precision Agriculture": 24,
+      "Therapeutics": 29
     }
   },
   "cross_border": {
@@ -970,127 +971,117 @@ window.CAPITAL_STRUCTURE = {
       {
         "from": "AR",
         "to": "AR",
-        "n": 508
+        "n": 298
       },
       {
         "from": "BR",
         "to": "BR",
-        "n": 132
+        "n": 121
       },
       {
         "from": "CL",
         "to": "CL",
-        "n": 69
+        "n": 47
       },
       {
         "from": "US",
         "to": "AR",
-        "n": 52
+        "n": 42
       },
       {
         "from": "AR",
         "to": "BR",
-        "n": 48
+        "n": 29
       },
       {
         "from": "AR",
         "to": "CL",
-        "n": 46
+        "n": 28
+      },
+      {
+        "from": "US",
+        "to": "BR",
+        "n": 27
+      },
+      {
+        "from": "CL",
+        "to": "AR",
+        "n": 26
       },
       {
         "from": "AR",
         "to": "US",
-        "n": 40
-      },
-      {
-        "from": "CL",
-        "to": "AR",
-        "n": 31
-      },
-      {
-        "from": "US",
-        "to": "BR",
-        "n": 30
+        "n": 22
       },
       {
         "from": "FI",
         "to": "AR",
-        "n": 27
+        "n": 18
       },
       {
         "from": "AR",
         "to": "MX",
-        "n": 24
+        "n": 15
       },
       {
         "from": "CR",
         "to": "AR",
-        "n": 21
-      },
-      {
-        "from": "AR",
-        "to": "UY",
-        "n": 19
-      },
-      {
-        "from": "US",
-        "to": "US",
-        "n": 18
-      },
-      {
-        "from": "CL",
-        "to": "UY",
-        "n": 14
+        "n": 12
       },
       {
         "from": "US",
         "to": "MX",
-        "n": 14
+        "n": 12
       },
       {
-        "from": "BR",
-        "to": "AR",
-        "n": 11
+        "from": "US",
+        "to": "US",
+        "n": 12
       },
       {
         "from": "US",
         "to": "CL",
         "n": 11
+      },
+      {
+        "from": "AR",
+        "to": "UY",
+        "n": 10
       },
       {
         "from": "AR",
         "to": "NL",
-        "n": 10
+        "n": 7
       },
       {
-        "from": "CL",
-        "to": "US",
-        "n": 10
+        "from": "BR",
+        "to": "AR",
+        "n": 7
       },
       {
         "from": "CL",
         "to": "BR",
-        "n": 9
+        "n": 7
       },
       {
         "from": "CL",
-        "to": "CO",
-        "n": 9
+        "to": "US",
+        "n": 7
+      },
+      {
+        "from": "CL",
+        "to": "UY",
+        "n": 6
       },
       {
         "from": "CL",
         "to": "MX",
-        "n": 8
+        "n": 5
       },
       {
         "from": "CR",
         "to": "CL",
-        "n": 8
-      },
-      {
-        "from": "AR",
-        "to": "CO",
-        "n": 7
+        "n": 5
       },
       {
         "from": "US",
@@ -1099,7 +1090,12 @@ window.CAPITAL_STRUCTURE = {
       },
       {
         "from": "AR",
-        "to": "CR",
+        "to": "CO",
+        "n": 4
+      },
+      {
+        "from": "CL",
+        "to": "CO",
         "n": 4
       },
       {
@@ -1108,19 +1104,9 @@ window.CAPITAL_STRUCTURE = {
         "n": 4
       },
       {
-        "from": "US",
-        "to": "DO",
-        "n": 4
-      },
-      {
-        "from": "CR",
+        "from": "AR",
         "to": "CR",
-        "n": 3
-      },
-      {
-        "from": "CR",
-        "to": "MX",
-        "n": 3
+        "n": 2
       },
       {
         "from": "BE",
@@ -1133,27 +1119,17 @@ window.CAPITAL_STRUCTURE = {
         "n": 2
       },
       {
-        "from": "BR",
-        "to": "US",
-        "n": 2
-      },
-      {
         "from": "CH",
         "to": "BR",
         "n": 2
       },
       {
+        "from": "CR",
+        "to": "CR",
+        "n": 2
+      },
+      {
         "from": "ES",
-        "to": "AR",
-        "n": 2
-      },
-      {
-        "from": "FI",
-        "to": "MX",
-        "n": 2
-      },
-      {
-        "from": "HK",
         "to": "AR",
         "n": 2
       },
@@ -1163,18 +1139,13 @@ window.CAPITAL_STRUCTURE = {
         "n": 2
       },
       {
-        "from": "NO",
-        "to": "US",
-        "n": 2
-      },
-      {
-        "from": "PE",
-        "to": "AR",
+        "from": "US",
+        "to": "CR",
         "n": 2
       },
       {
         "from": "US",
-        "to": "CR",
+        "to": "DO",
         "n": 2
       },
       {
@@ -1190,6 +1161,11 @@ window.CAPITAL_STRUCTURE = {
       {
         "from": "BR",
         "to": "MX",
+        "n": 1
+      },
+      {
+        "from": "BR",
+        "to": "US",
         "n": 1
       },
       {
@@ -1213,6 +1189,11 @@ window.CAPITAL_STRUCTURE = {
         "n": 1
       },
       {
+        "from": "CR",
+        "to": "MX",
+        "n": 1
+      },
+      {
         "from": "DE",
         "to": "CL",
         "n": 1
@@ -1223,6 +1204,11 @@ window.CAPITAL_STRUCTURE = {
         "n": 1
       },
       {
+        "from": "FI",
+        "to": "MX",
+        "n": 1
+      },
+      {
         "from": "FR",
         "to": "BR",
         "n": 1
@@ -1230,6 +1216,11 @@ window.CAPITAL_STRUCTURE = {
       {
         "from": "GB",
         "to": "MX",
+        "n": 1
+      },
+      {
+        "from": "HK",
+        "to": "AR",
         "n": 1
       },
       {
@@ -1263,6 +1254,16 @@ window.CAPITAL_STRUCTURE = {
         "n": 1
       },
       {
+        "from": "NO",
+        "to": "US",
+        "n": 1
+      },
+      {
+        "from": "PE",
+        "to": "AR",
+        "n": 1
+      },
+      {
         "from": "US",
         "to": "GT",
         "n": 1
@@ -1276,27 +1277,27 @@ window.CAPITAL_STRUCTURE = {
     "top_sources": [
       [
         "AR",
-        706
-      ],
-      [
-        "CL",
-        150
+        415
       ],
       [
         "BR",
-        148
+        132
       ],
       [
         "US",
-        138
+        115
+      ],
+      [
+        "CL",
+        102
       ],
       [
         "CR",
-        35
+        20
       ],
       [
         "FI",
-        29
+        19
       ],
       [
         "MX",
@@ -1318,69 +1319,69 @@ window.CAPITAL_STRUCTURE = {
     "top_destinations": [
       [
         "AR",
-        662
+        413
       ],
       [
         "BR",
-        223
+        188
       ],
       [
         "CL",
-        141
-      ],
-      [
-        "US",
-        72
+        98
       ],
       [
         "MX",
-        62
+        45
+      ],
+      [
+        "US",
+        43
       ],
       [
         "UY",
-        33
+        16
       ],
       [
         "CO",
-        22
+        14
       ],
       [
         "NL",
-        10
+        7
       ],
       [
         "CR",
-        9
+        6
       ],
       [
         "DO",
-        4
+        2
       ]
     ],
     "top_cross_border": [
       [
         "AR",
-        198
+        117
       ],
       [
         "US",
-        120
+        103
       ],
       [
         "CL",
-        81
-      ],
-      [
-        "CR",
-        32
+        55
       ],
       [
         "FI",
-        29
+        19
+      ],
+      [
+        "CR",
+        18
       ],
       [
         "BR",
-        16
+        11
       ],
       [
         "BE",
@@ -1395,10 +1396,10 @@ window.CAPITAL_STRUCTURE = {
         3
       ],
       [
-        "HK",
-        3
+        "KR",
+        2
       ]
     ]
   },
-  "generated_at": "2026-06-25"
+  "generated_at": "2026-07-02"
 };
