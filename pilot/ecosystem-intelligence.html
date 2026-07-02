@@ -2602,7 +2602,7 @@ function renderInvestorMain(id) {
 
   // ── Theme coverage chips ──────────────────────────────────
   const coveredThemes = new Set(inv.themes || []);
-  const ALL_THEMES_ORDER = Object.keys(THEME_PAL);
+  const ALL_THEMES_ORDER = Object.keys(THEME_PAL).filter(t => t !== 'Biomanufacturing & Fermentation Economy' && t !== 'Digital AgTech & Agrifintech');
   const themeCoverageHtml = ALL_THEMES_ORDER.map(t => {
     const covered = coveredThemes.has(t);
     const col = THEME_PAL[t];
@@ -3001,7 +3001,7 @@ function renderStartupDetail(id) {
 // 8 columnas = 8 temas canónicos. Llenas si el inversor tiene ese vertical,
 // vacías si no. La altura proporcional al rank en inv.themes (primera = mayor).
 function buildThemeBarcode(inv) {
-  const ALL_THEMES = Object.keys(THEME_PAL);
+  const ALL_THEMES = Object.keys(THEME_PAL).filter(t => t !== 'Biomanufacturing & Fermentation Economy' && t !== 'Digital AgTech & Agrifintech');
   const coveredSet = new Set(inv.themes || []);
   const themeRank  = {};
   (inv.themes || []).forEach((t, i) => { themeRank[t] = 1 - i / Math.max(1, inv.themes.length - 1); });
@@ -3822,7 +3822,9 @@ function renderWelcome() {
   // ── Theme counts ──────────────────────────────────────────────────────
   const themeCounts = {};
   IQ_STARTUPS.forEach(s => { if (s.theme) themeCounts[s.theme] = (themeCounts[s.theme]||0)+1; });
-  const themesSorted = Object.keys(THEME_PAL).map(t => ({ t, n: themeCounts[t]||0 }))
+  const themesSorted = Object.keys(THEME_PAL)
+    .filter(t => t !== 'Biomanufacturing & Fermentation Economy' && t !== 'Digital AgTech & Agrifintech')
+    .map(t => ({ t, n: themeCounts[t]||0 }))
     .sort((a,b) => b.n - a.n);
   const maxTheme = themesSorted[0]?.n || 1;
 

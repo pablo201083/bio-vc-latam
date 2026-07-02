@@ -1,45 +1,45 @@
 {
-  "investors_evaluated": 36,
-  "portfolio_startups_scored": 450,
-  "precision@3": 0.133,
-  "precision@5": 0.164,
-  "precision@10": 0.22,
-  "mean_rank": 152.1,
+  "investors_evaluated": 37,
+  "portfolio_startups_scored": 456,
+  "precision@3": 0.134,
+  "precision@5": 0.169,
+  "precision@10": 0.235,
+  "mean_rank": 150.7,
   "worst_investors": [
     {
       "investor_id": "Antom",
       "investor_name": "Antom",
       "portfolio_size": 10,
       "precision@5": 0.0,
-      "mean_rank": 225.0
+      "mean_rank": 229.7
     },
     {
       "investor_id": "kamay_ventures",
       "investor_name": "Kamay Ventures",
       "portfolio_size": 10,
       "precision@5": 0.0,
-      "mean_rank": 141.4
+      "mean_rank": 148.8
     },
     {
       "investor_id": "SF500",
       "investor_name": "SF500",
       "portfolio_size": 28,
       "precision@5": 0.0,
-      "mean_rank": 297.1
+      "mean_rank": 295.4
     },
     {
       "investor_id": "GridX",
       "investor_name": "GridX",
       "portfolio_size": 104,
-      "precision@5": 0.029,
-      "mean_rank": 155.0
+      "precision@5": 0.019,
+      "mean_rank": 154.5
     },
     {
       "investor_id": "AIR Capital",
       "investor_name": "AIR Capital",
       "portfolio_size": 27,
       "precision@5": 0.037,
-      "mean_rank": 175.2
+      "mean_rank": 174.3
     }
   ],
   "best_investors": [
@@ -48,7 +48,7 @@
       "investor_name": "Newtopia VC",
       "portfolio_size": 4,
       "precision@5": 0.75,
-      "mean_rank": 78.2
+      "mean_rank": 82.0
     },
     {
       "investor_id": "kaszek",
@@ -62,7 +62,7 @@
       "investor_name": "Bossa Invest",
       "portfolio_size": 4,
       "precision@5": 0.75,
-      "mean_rank": 104.2
+      "mean_rank": 103.8
     },
     {
       "investor_id": "idb_lab",

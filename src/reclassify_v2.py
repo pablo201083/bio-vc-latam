@@ -46,7 +46,7 @@ BIO_THEMES = [
     "Therapeutics",
     "Bioinputs & Crop Resilience",
     "Food Systems & Alt Proteins",
-    "Biomanufacturing & Fermentation Economy",
+    "Biomanufacturing & Platform Technologies",
     "Biomaterials & Circular Economy",
     "Nature & Ecosystem Tech",
     "Farm Intelligence",

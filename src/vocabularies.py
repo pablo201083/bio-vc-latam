@@ -31,6 +31,22 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 VOCAB_TECH = ROOT / "quality" / "vocab_technologies.csv"
 VOCAB_INDUSTRY = ROOT / "quality" / "vocab_industries.csv"
 
+# Los 8 temas sellados — nombre EXACTO como vive en startup_extended.bio_theme_primary.
+BIO_THEMES = (
+    "Bioinputs & Crop Resilience",
+    "Precision Agriculture",
+    "Nature & Ecosystem Tech",
+    "Food Systems & Alt Proteins",
+    "Biomanufacturing & Platform Technologies",
+    "Biomaterials & Green Chemistry",
+    "Therapeutics",
+    "Diagnostics & Devices",
+)
+# Alias legacy → canónico (para ingestas viejas / código que aún lo emita)
+BIO_THEME_ALIASES = {
+    "Biomanufacturing & Fermentation Economy": "Biomanufacturing & Platform Technologies",
+}
+
 
 @dataclass(frozen=True)
 class VocabEntry:

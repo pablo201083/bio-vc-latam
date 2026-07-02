@@ -1395,9 +1395,10 @@ document.addEventListener('DOMContentLoaded', function(){
     "Biomaterials & Green Chemistry":           "#fb923c",
     "Biomanufacturing & Platform Technologies": "#fb7185",
     "Digital AgTech & Agrifintech":             "#f472b6",
-    "Biomanufacturing & Fermentation Economy":  "#fb7185",
+    "Biomanufacturing & Fermentation Economy":  "#fb7185", // legacy alias
   };
-  var THEME_ORDER = Object.keys(THEME_PAL);
+  // 8 temas canónicos del corpus — excluye el alias legacy (evita columna fantasma)
+  var THEME_ORDER = Object.keys(THEME_PAL).filter(function(t){ return t !== 'Biomanufacturing & Fermentation Economy'; });
   var SHORT = {
     "Therapeutics":"Therapeutics","Diagnostics & Devices":"Diagnostics",
     "Food Systems & Alt Proteins":"Food Systems","Bioinputs & Crop Resilience":"Bioinputs",

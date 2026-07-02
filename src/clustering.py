@@ -95,7 +95,7 @@ CLUSTER_OVERRIDES: dict[str, tuple[str, str]] = {
     "sciphage":      ("Therapeutics",                            "biopharm"),
     # ── Otros ───────────────────────────────────────────────────────────────
     "inner_cosmos":  ("Therapeutics",                            "regenerat"),
-    "geoprot":       ("Biomanufacturing & Fermentation Economy", "precis"),
+    "geoprot":       ("Biomanufacturing & Platform Technologies", "precis"),
 }
 
 
@@ -1288,7 +1288,7 @@ def write_dashboard_data(conn: sqlite3.Connection) -> None:
             "Biomateriales avanzados, química verde y bioprocesos circulares que reemplazan "
             "petroquímicos en packaging, textiles e industria."
         ),
-        "Biomanufacturing & Fermentation Economy": (
+        "Biomanufacturing & Platform Technologies": (
             "Fermentación de precisión, plataformas de síntesis biológica y biofabricación "
             "industrial para producir moléculas, ingredientes y materiales a escala."
         ),
