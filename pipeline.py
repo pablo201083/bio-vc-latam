@@ -418,6 +418,44 @@ def cmd_rebuild(args: argparse.Namespace) -> None:
         except Exception as e:
             print(f"  [clustering] ERROR: {e}")
 
+    # Rebuild completo: encadenar los generadores de bundles derivados de
+    # investment_edges / startup_extended para que nunca queden stale.
+    if phase is None:
+        bundle_steps = [
+            ("build-atlas", "src.capital_atlas", "run", (DB_PATH,)),
+            ("build-ecosystem-graph", "src.ecosystem_graph", "run", (DB_PATH,)),
+            ("intelligence-data", "src.intelligence", "build_intelligence_data", (DB_PATH,)),
+            ("ecosystem-health-data", "src.intelligence", "build_ecosystem_health_data", (DB_PATH,)),
+            ("capital-structure", "src.capital_structure", "run", (DB_PATH,)),
+            ("phylo-tree", "src.phylo_tree", "run", (DB_PATH,)),
+        ]
+        for label, module_name, func_name, call_args in bundle_steps:
+            try:
+                import importlib
+                mod = importlib.import_module(module_name)
+                print(f"  [{label}] regenerando...")
+                getattr(mod, func_name)(*call_args)
+            except Exception as e:
+                print(f"  [{label}] ERROR: {e}")
+
+        try:
+            from src.bump_cache import bump_cache
+            stats = bump_cache()
+            print(f"  [bump-cache] {stats['refs_updated']} referencias actualizadas en "
+                  f"{stats['html_updated']}/{stats['html_scanned']} archivos HTML")
+        except Exception as e:
+            print(f"  [bump-cache] ERROR: {e}")
+
+    print()
+
+
+def cmd_bump_cache(args: argparse.Namespace) -> None:
+    from src.bump_cache import bump_cache
+    print("\n  Actualizando cache-busting de pilot/*.html...\n")
+    stats = bump_cache()
+    print(f"  HTML escaneados  : {stats['html_scanned']}")
+    print(f"  HTML actualizados: {stats['html_updated']}")
+    print(f"  Referencias ?v=  : {stats['refs_updated']}")
     print()
 
 
@@ -929,6 +967,8 @@ def main() -> None:
         help="Solo una fase del rebuild",
     )
 
+    sub.add_parser("bump-cache", help="Actualiza ?v= de pilot/*.html al hash de contenido de cada bundle .js")
+
     gp = sub.add_parser("graph", help="Calcular métricas de grafo")
     gp.add_argument("--refresh", action="store_true", help="Forzar recálculo")
 
@@ -978,6 +1018,7 @@ def main() -> None:
         "intro": cmd_intro,
         "reclassify-themes": cmd_reclassify,
         "rebuild": cmd_rebuild,
+        "bump-cache": cmd_bump_cache,
         "graph": cmd_graph,
         "audit-cluster": cmd_audit_cluster,
     }
