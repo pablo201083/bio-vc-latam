@@ -50,3 +50,12 @@ UsersPABLOA~1*
 staging/startup_lookup.json
 staging/startups_meta.json
 staging/gridx_match_results.csv
+
+# Logs de ejecucion (regenerables)
+logs/
+
+# Corpus de scraping + logs de enrich_profiles.py (regenerable via scripts/enrich_profiles.py)
+data/
+
+# Handoff de diseno externo (no es fuente de verdad del repo)
+tmp_design_handoff/

@@ -1,14 +1,14 @@
 window.CAPITAL_ATLAS_DATA = {
-  "generated_at": "2026-07-03T00:13:01",
+  "generated_at": "2026-07-03T00:15:55",
   "source": "pipeline:build-atlas (SQLite)",
   "summary": {
     "nodes_total": 1053,
     "funds_total": 115,
     "startups_total": 920,
     "allocators_total": 18,
-    "edges_total": 980,
+    "edges_total": 981,
     "investment_edges_total": 954,
-    "allocator_edges_total": 26,
+    "allocator_edges_total": 27,
     "include_startups_total": 573,
     "source_backed_include_startups_total": 459,
     "public_source_edges_total": 146
@@ -1738,7 +1738,7 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": 1500.0,
       "lead_behavior": "lead",
       "profile_blurb": "SOSV is a global VC firm with $1.1B AUM managing specialized accelerator programs: IndieBio (biotech/life sciences, NYC and SF), HAX (hardware/deeptech, NY and Newark), Chinaccelerator, and MOX. Invests $550K pre-seed in 80–100 companies per year globally. In biotech: IndieBio focuses on human health, food, materials, and environmental biotech. Strong LatAm presence through IndieBio LATAM cohorts. Provides lab access, scientific mentorship, and US market entry. 800+ companies across 82 countries.\n\n**Historia y equipo (enriquecido 2025):** Fundado en 1995 por Sean O'Sullivan como vehiculo personal tras IPO de MapInfo; formalizado con LPs externos en 2015. GPs: Sean O'Sullivan (Founder/MGP), Cyril Ebersweiler (HAX), William Bao Bean (Orbit Startups), Po Bronson (IndieBio SF), Paresh Parekh (IndieBio NY), Duncan Turner (CIO). Fund III 50M (2016), Fund IV 77M (2019), Fund V 06M (abril 2024). 1.000+ portafolios, 5 unicornios, 6 IPOs. 2024: portafolios levantaron B en capital nuevo. Instalaciones 2024: IndieBio NY (25K sqft), IndieBio SF (25K sqft), HAX Newark (35K sqft). Portfolio bio global: Upside Foods, MycoWorks, NotCo (CL, unicornio), Opentrons, Prolific Machines. Conexion LATAM: GridX como partner regional.",
-      "degree": 6,
+      "degree": 7,
       "portfolio_valuation_usd": 153.5
     },
     {
@@ -1773,7 +1773,7 @@ window.CAPITAL_ATLAS_DATA = {
       "aum_m": 1500.0,
       "lead_behavior": "lead",
       "profile_blurb": "SOSV es la organización global detrás de IndieBio, el primer programa de aceleración para biotech con laboratorios físicos integrados. En 2026, IndieBio fue absorbida bajo la marca SOSV (escindida en SOSV NY y SOSV SF), reflejo de una evolución desde biotech puro hacia deep tech integral: alimentos, clima, diagnósticos, IA, química y terapéuticos.\n\nEl modelo SOSV es distinto al VC tradicional: invierte en volumen con capital pre-seed, proporciona acceso a laboratorios físicos y co-construye compañías desde la hipótesis científica. Entre 2015 y 2025, sus graduados levantaron $3.6B en rondas posteriores — una tasa de tracción que pocos aceleradores globales pueden mostrar.\n\nPara LATAM, SOSV/IndieBio tiene presencia indirecta pero significativa: varias startups de la región han completado sus programas globales. Para una startup BIO latinoamericana, entrar a SOSV sigue siendo uno de los saltos de validación más relevantes — no por el capital inicial sino por la señalización que implica para rondas Serie A y B en mercados de EE.UU. y Europa.\n\n**Historia y equipo (enriquecido 2025):** IndieBio fundada en 2015 por Arvind Gupta (GP SOSV) en San Francisco — primera aceleradora biotech del mundo con labs BSL in-situ. Sean O'Sullivan (Founder/Managing GP SOSV), Stephen Chambers (MD IndieBio NY, lanzada 2022 en 25.000 sqft/7 Penn Plaza), Sabriya Stukes (Chief Science Officer NY). SOSV Fund V (06M) cerrado abril 2024. A 2025: 310 graduadas acumulan .6B en follow-on. 2026: rebranding a SOSV SF + SOSV NY (mandato ampliado a todo deep tech). Portfolio LATAM destacado: Beeflow (polinización, AR/PE/MX/US), PunaBio (biofertilizantes extremófilos), Michroma (tintas fúngicas), Unibaio (IndieBio NY 2023). Argentina = 2do mercado de origen tras EEUU.",
-      "degree": 31,
+      "degree": 32,
       "portfolio_valuation_usd": 398.1
     },
     {
@@ -57563,6 +57563,22 @@ window.CAPITAL_ATLAS_DATA = {
       "capital_evidence_note": "Kaete Investimentos is an IDB Lab-backed bioeconomy fund aligned with Spectra's stated biotech vertical. Spectra's Fund VII reserves 30% for specialized VC anchors in niche segments — bioeconomy is an explicit candidate. Lower confidence: no public documentation of this specific relationship.",
       "weight": 1.792,
       "year": "2024"
+    },
+    {
+      "id": "sosv-SOSV_IndieBio",
+      "source": "sosv",
+      "target": "SOSV_IndieBio",
+      "type": "parent_firm_to_accelerator_program",
+      "confidence": 0.95,
+      "source_url": "https://sosv.com",
+      "evidence": "SOSV (fund_of_funds, AUM 1.1B+, multiples programas: IndieBio, HAX, dlab) es la firma matriz. SOSV_IndieBio es su programa/aceleradora especifica de life sciences (fundada 2015) que maneja el pipeline biotech/LATAM. No son duplicados: relacion documentada explicitamente en el profile_blurb existente de la entidad sosv (\"Parent entity -> SOSV_IndieBio handles the biotech/LATAM pipeline specifically\"). Triage Fase 5, plan evaluacion julio 2026.",
+      "audited": true,
+      "evidence_tier": "public_url",
+      "capital_evidence_level": 2,
+      "capital_evidence_label": "fund_portfolio_page",
+      "capital_evidence_note": "SOSV (fund_of_funds, AUM 1.1B+, multiples programas: IndieBio, HAX, dlab) es la firma matriz. SOSV_IndieBio es su programa/aceleradora especifica de life sciences (fundada 2015) que maneja el pipeline biotech/LATAM. No son duplicados: relacion documentada explicitamente en el profile_blurb existente de la entidad sosv (\"Parent entity -> SOSV_IndieBio handles the biotech/LATAM pipeline specifically\"). Triage Fase 5, plan evaluacion julio 2026.",
+      "weight": 2.32,
+      "year": "2015"
     }
   ],
   "capital_flow": {
@@ -57774,6 +57790,14 @@ window.CAPITAL_ATLAS_DATA = {
         "year": 2024,
         "vehicle": "Kaete Bioeconomy Fund I",
         "relation_type": "fund_of_funds_commitment_or_exposure"
+      },
+      {
+        "source": "sosv",
+        "target": "SOSV_IndieBio",
+        "amount_usd": null,
+        "year": 2015,
+        "vehicle": "IndieBio",
+        "relation_type": "parent_firm_to_accelerator_program"
       }
     ],
     "fund_theme": [

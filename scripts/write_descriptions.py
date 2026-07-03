@@ -1,0 +1,634 @@
+"""
+scripts/write_descriptions.py — Genera pilot/theme-cluster-descriptions.js con
+descripciones funcionales curadas para los 8 themes y los clusters principales.
+
+Sin API. Las descripciones son contenido curado basado en los miembros reales
+de cada grupo. Regenerar con:
+    python scripts/write_descriptions.py
+"""
+import datetime
+import json
+import pathlib
+
+ROOT = pathlib.Path(__file__).resolve().parent.parent
+OUT  = ROOT / "pilot" / "theme-cluster-descriptions.js"
+
+# ── THEMES ───────────────────────────────────────────────────────────────────
+# tagline   : badge corto (<=15 palabras) — qué hace el grupo
+# description: 2-3 oraciones funcionales — output compartido, mecanismo, mercado
+# boundary  : frontera con el theme vecino más confundible
+THEME_DESCRIPTIONS = {
+    "Diagnostics & Devices": {
+        "tagline": "Biological assays and clinical devices that detect, measure, and monitor disease",
+        "description": (
+            "Startups applying molecular biology, genomics, nanotechnology, and AI to diagnose "
+            "human and animal disease earlier, faster, and at lower cost. The group spans "
+            "molecular assay developers, liquid biopsy platforms, point-of-care testing devices, "
+            "AI-powered medical imaging, clinical genomics laboratories, and reproductive diagnostics. "
+            "The shared output is a diagnostic signal — a measurement that informs a clinical "
+            "decision, not an intervention that treats the disease."
+        ),
+        "boundary": (
+            "Not to be confused with Therapeutics: Diagnostics produces a measurement or biomarker "
+            "signal; Therapeutics delivers a treatment that intervenes in the biological process "
+            "causing disease."
+        ),
+    },
+    "Therapeutics": {
+        "tagline": "Drug discovery, biologics, and advanced cell therapies that intervene in disease",
+        "description": (
+            "Startups developing treatments that intervene in human or animal biology to cure, "
+            "control, or prevent disease. The group spans small-molecule and AI-designed drug "
+            "discovery, biologic therapies (monoclonal antibodies, biosimilars, vaccines), advanced "
+            "therapies (CAR-T, cell therapy, gene therapy, exosomes), and regenerative medicine "
+            "(stem cells, tissue engineering, bioprinting). The common thread is a therapeutic "
+            "output — a molecule, cell, or device whose mechanism of action modifies a biological "
+            "disease process."
+        ),
+        "boundary": (
+            "Not to be confused with Diagnostics & Devices: Therapeutics produces a treatment "
+            "that changes biology; Diagnostics measures or detects biological state without "
+            "direct therapeutic intent."
+        ),
+    },
+    "Food Systems & Alt Proteins": {
+        "tagline": "Biotechnology producing, preserving, and improving food for human and animal consumption",
+        "description": (
+            "Startups using fermentation, cellular agriculture, enzyme engineering, and food "
+            "biotechnology to produce, enhance, or preserve food ingredients and products. The "
+            "group spans precision fermentation for dairy and protein analogs, cultivated meat "
+            "infrastructure, functional food ingredients, bioactives and nutraceuticals, food "
+            "biopreservation systems, insect-based protein, and aquaculture biotech. The shared "
+            "output is something ingested — a food product, ingredient, or nutritional compound "
+            "intended for human or animal consumption."
+        ),
+        "boundary": (
+            "Not to be confused with Biomaterials & Green Chemistry: both may use fermentation, "
+            "but Food Systems produces an ingested output (food, ingredient, supplement); "
+            "Biomaterials produces a material, chemical, or energy carrier that is not consumed."
+        ),
+    },
+    "Bioinputs & Crop Resilience": {
+        "tagline": "Biological products applied to crops and soils to replace synthetic agrochemicals",
+        "description": (
+            "Startups producing biological inputs — microorganisms, bioactive compounds, "
+            "gene-edited crop traits, and formulated bioproducts — applied to crop and livestock "
+            "systems to replace or reduce synthetic chemistry. The group spans biopesticides, "
+            "biofertilizers, biostimulants, biocontrol agents, CRISPR crop trait development, "
+            "microbial seed treatments, and plant microbiome platforms. The shared output is a "
+            "biological product applied at the farm level to improve crop yield, protection, "
+            "or resilience."
+        ),
+        "boundary": (
+            "Not to be confused with Precision Agriculture: Bioinputs produces a physical "
+            "biological product applied to the crop or soil; Precision Agriculture produces "
+            "software, sensors, or models that read and interpret biological state without "
+            "applying a biological input."
+        ),
+    },
+    "Biomaterials & Green Chemistry": {
+        "tagline": "Biological processes replacing petrochemical materials, chemicals, and packaging",
+        "description": (
+            "Startups using fermentation, enzymatic processes, mycelium, and biological engineering "
+            "to produce materials, chemicals, and industrial inputs that replace fossil-fuel-derived "
+            "equivalents. The group spans bioplastics and biopolymers, mycelium-based materials, "
+            "biodegradable packaging, industrial enzymes, biosurfactants, biomining, and green "
+            "chemistry platforms. What unites them is an industrial or material output — a "
+            "substance or object with physical properties, not a food or therapeutic."
+        ),
+        "boundary": (
+            "Not to be confused with Food Systems & Alt Proteins: Biomaterials produces a "
+            "material, chemical, or energy vector; Food Systems produces something ingested. "
+            "The same fermentation technology may appear in both — the distinction is the "
+            "end use of the output."
+        ),
+    },
+    "Precision Agriculture": {
+        "tagline": "Software and sensor systems that read living agricultural systems to optimize decisions",
+        "description": (
+            "Startups deploying software, IoT sensors, satellite imagery, computer vision, and AI "
+            "models specifically coupled to the biology of crops, herds, or soils to generate "
+            "agronomic intelligence. The group spans crop monitoring platforms, irrigation "
+            "decision systems, pest and disease prediction models, livestock health monitoring, "
+            "and drone-based field analytics. What distinguishes this group is bio-coupling — "
+            "the software reads and models a living system (this crop, this pathogen, this herd), "
+            "not generic farm operations."
+        ),
+        "boundary": (
+            "Not to be confused with Bioinputs & Crop Resilience (which delivers a physical "
+            "biological product) or with Digital AgTech (financial platforms and generic farm "
+            "ERP without biological modeling). Precision Agriculture requires a living system "
+            "as the object of computational modeling."
+        ),
+    },
+    "Nature & Ecosystem Tech": {
+        "tagline": "Technology platforms protecting, restoring, and measuring natural ecosystems",
+        "description": (
+            "Startups applying remote sensing, molecular monitoring, bioremediation, and carbon "
+            "quantification technology to natural ecosystems — forests, soils, water bodies, "
+            "and oceans. The group spans voluntary carbon market infrastructure, satellite-based "
+            "forest monitoring, biodiversity measurement platforms, water stewardship tools, "
+            "bioremediation systems, and nature-based solution finance. The object of intervention "
+            "is the natural ecosystem or planetary boundary, not the agricultural field "
+            "or human body."
+        ),
+        "boundary": (
+            "Not to be confused with Precision Agriculture: Nature & Ecosystem Tech targets "
+            "natural or restored ecosystems (forests, watersheds, ocean, biodiversity); "
+            "Precision Agriculture targets managed agricultural production systems. "
+            "Bioremediation belongs here; biological crop inputs belong to Bioinputs."
+        ),
+    },
+    "Biomanufacturing & Platform Technologies": {
+        "tagline": "Fermentation, synthetic biology, and bioprocess platforms producing biological molecules at scale",
+        "description": (
+            "Startups building transversal production capabilities — precision fermentation "
+            "systems, synthetic biology platforms, cell-free expression, bioreactor engineering, "
+            "digital twins for bioprocess, and enzyme engineering — that enable the biological "
+            "production of molecules, ingredients, and materials across multiple vertical markets. "
+            "What distinguishes this group is that the company sells the capacity or platform, "
+            "not a specific end product: clients may be in food, pharma, agriculture, or "
+            "materials; the common thread is the ability to engineer and scale a biological "
+            "production system."
+        ),
+        "boundary": (
+            "Not to be confused with Biomaterials, Food Systems, or Therapeutics: "
+            "Biomanufacturing sells the production platform or service; the other themes sell "
+            "the end product (material, food, therapy). When the company is primarily building "
+            "biological production infrastructure — not competing on a specific product market "
+            "— it belongs here."
+        ),
+    },
+}
+
+# ── CLUSTERS ─────────────────────────────────────────────────────────────────
+# Same three-field structure. Keys match the sub_cluster_label values in the DB.
+CLUSTER_DESCRIPTIONS = {
+    # ── Bioinputs & Crop Resilience ──────────────────────────────────────────
+    "Agricultural Inputs": {
+        "tagline": "Formulated biological crop protection and biostimulant products ready for field application",
+        "description": (
+            "Companies that formulate, manufacture, and distribute ready-to-apply biological "
+            "inputs for crop protection, pest control, and plant stimulation. The cluster spans "
+            "biopesticide formulators, Trichoderma-based biocontrol products, bacteriophage "
+            "crop protection agents, nematocide biologicals, and seaweed-derived biostimulants. "
+            "Unlike discovery-stage biocontrol platforms, these companies have commercially "
+            "formulated products targeting growers and distributors directly."
+        ),
+        "boundary": (
+            "Differentiated from Crop Protection (which centers on novel mode-of-action "
+            "discovery and macrobial biocontrol at scale) by a stronger emphasis on product "
+            "formulation, delivery formats, and commercial distribution of established or "
+            "near-commercial biological inputs."
+        ),
+    },
+    "Ag Biologicals & CDMO": {
+        "tagline": "Microbial discovery and ag-biologicals CDMO platforms for next-generation bioinputs",
+        "description": (
+            "Companies building the research and production infrastructure for agricultural "
+            "biologicals: microbial discovery through bioprospection and molecular biology, "
+            "soil microbiome platforms for plant resilience, and contract development and "
+            "manufacturing (CDMO) capabilities for bioinput producers. This cluster sits "
+            "upstream of commercial bioinput markets — these companies discover, develop, "
+            "and produce microbial strains and biological intermediates for other bioinput "
+            "companies rather than selling finished inputs to farmers."
+        ),
+        "boundary": (
+            "Differentiated from Crop Protection and Soil Health & Seed Biotech (which sell "
+            "finished bioinput products to farmers or distributors) by operating upstream as "
+            "platforms for biologicals R&D and CDMO services."
+        ),
+    },
+    "Crop Protection": {
+        "tagline": "Microbial and macrobial biocontrol agents protecting crops from pests and disease",
+        "description": (
+            "Companies producing biological pest control agents, biopesticides, biofungicides, "
+            "and microbial inoculants that protect crops from insects, pathogens, nematodes, "
+            "and weeds without synthetic chemistry. The cluster spans macrobial biocontrol "
+            "(predatory insects, Trichogramma parasitoids), Bacillus and Trichoderma-based "
+            "biopesticides, fungal entomopathogenic agents, bacteriophage crop protection, "
+            "arachnid-derived bioinsecticides, and on-farm biological input production "
+            "systems. The shared output is a biological agent that suppresses or eliminates "
+            "a specific crop threat."
+        ),
+        "boundary": (
+            "Differentiated from Agricultural Inputs (which emphasizes formulation and "
+            "distribution of established biological inputs across multiple use cases) by "
+            "centering on novel biocontrol discovery, mode-of-action development, and "
+            "production specifically for pest and disease suppression."
+        ),
+    },
+    "Soil Health & Seed Biotech": {
+        "tagline": "Soil microbiome, seed treatment, and plant physiology platforms for crop resilience",
+        "description": (
+            "Companies improving crop system resilience through soil microbiome engineering, "
+            "seed-applied biological technologies, and plant physiology enhancement platforms. "
+            "The cluster spans extremophile-derived soil inoculants, biochar-bacteria soil "
+            "amendments, microbial nanodelivery systems, seed encapsulation technology, "
+            "GHG-mitigating microbial seed treatments, plasma-based seed stimulation, and "
+            "designer protein biostimulants. The shared focus is the soil-plant interface "
+            "— biological interventions that improve how crops establish, root, and respond "
+            "to environmental stress."
+        ),
+        "boundary": (
+            "Differentiated from Crop Protection (which targets biotic pest and disease "
+            "suppression) by focusing on soil health, plant establishment, and abiotic stress "
+            "tolerance. Seed treatments here are physiological enhancers; Crop Protection "
+            "seed treatments are biocontrol agents against specific pests or pathogens."
+        ),
+    },
+    "Crop Genetics & Precision Biotech": {
+        "tagline": "CRISPR crop traits, precision breeding, and pollination biotech for next-generation seeds",
+        "description": (
+            "Companies applying molecular genetics, gene editing, precision breeding, and "
+            "biological seed technology to develop crops with improved yield, disease resistance, "
+            "herbicide tolerance, and abiotic stress resilience. The cluster spans CRISPR-based "
+            "non-GMO trait development for broad-acre crops, cisgenesis for photosynthesis "
+            "optimization, AI-guided genomic seed improvement, pollination optimization through "
+            "bee biotech, soil microbiome AI for precision biofertilizer prescription, and "
+            "microencapsulation for bioinput bioavailability. The shared focus is engineering "
+            "the genetic and biological potential of the crop or pollination system itself."
+        ),
+        "boundary": (
+            "Differentiated from Crop Protection (biological agents applied externally to "
+            "suppress pests) and Soil Health & Seed Biotech (soil and microbiome interventions) "
+            "by centering on the genetic and physiological engineering of the crop plant or its "
+            "reproductive system."
+        ),
+    },
+    # ── Biomaterials & Green Chemistry ───────────────────────────────────────
+    "Industrial Biotech & Green Chemistry": {
+        "tagline": "Biobased industrial inputs replacing fossil-derived materials, chemicals, and processes",
+        "description": (
+            "A broad cluster of companies using fermentation, enzymatic processes, extremophile "
+            "biology, and green chemistry to replace petrochemical-derived industrial materials "
+            "and chemical inputs. The group includes fungal pigments for food and textiles, "
+            "PHB biopolymers, fungal biosurfactants, biomining and lithium extraction platforms, "
+            "enzymatic plastic recycling, biogas-to-energy systems, concrete biorepair, and "
+            "AI-designed biomolecules for industrial replacement. The unifying logic is "
+            "industrial displacement — each company targets a specific fossil-derived material, "
+            "chemical, or process and offers a biological or circular alternative."
+        ),
+        "boundary": (
+            "Differentiated from Packaging Materials (which focuses on compostable packaging "
+            "and consumer-facing biomaterials) by targeting industrial input markets — "
+            "surfactants, polymers for manufacturing, pigments, mining chemicals, construction "
+            "materials, and energy."
+        ),
+    },
+    "Packaging Materials": {
+        "tagline": "Mycelium, seaweed, and agri-waste biomaterials replacing single-use plastic packaging",
+        "description": (
+            "Companies converting agricultural waste, seaweed biomass, mycelium, and biobased "
+            "feedstocks into compostable or biodegradable packaging, materials, and biomass-based "
+            "products that replace fossil-plastic equivalents. The cluster spans mycelium-based "
+            "leather and packaging, seaweed-derived compostable containers, bioplastic "
+            "formulations from agri-waste, biocomposites from timber waste, algae-based pigments, "
+            "and agri-waste feedstock conversion platforms. The shared market is the replacement "
+            "of single-use plastics in food packaging, agriculture, and consumer applications "
+            "where circularity and end-of-life compostability are the core value proposition."
+        ),
+        "boundary": (
+            "Differentiated from Agro Industrial (which targets industrial input markets — "
+            "surfactants, polymers for manufacturing, mining chemicals, construction materials) "
+            "by focusing specifically on packaging, consumer-facing biomaterials, and "
+            "end-of-life compostability as the primary market driver."
+        ),
+    },
+    # ── Diagnostics & Devices ────────────────────────────────────────────────
+    "Molecular & Clinical Diagnostics": {
+        "tagline": "Molecular assays, AI diagnostics, and clinical testing across the full diagnostic spectrum",
+        "description": (
+            "The core diagnostics cluster, covering the broadest range of biological detection "
+            "and clinical measurement tools in Latin America's health system. It spans molecular "
+            "diagnostics for infectious and oncological disease, AI-powered medical imaging "
+            "analysis, clinical genomics laboratories, point-of-care rapid testing devices, "
+            "genomic cancer prognosis tests, reproductive diagnostics, veterinary diagnostics, "
+            "biosensor platforms, and specialized clinical laboratory instruments. What unites "
+            "them is the biological assay or clinical measurement at the center of their value "
+            "proposition — a tool that detects, classifies, or quantifies a biological signal "
+            "to inform a clinical decision."
+        ),
+        "boundary": (
+            "Differentiated from Digital Health & Medtech (which uses behavioral and clinical "
+            "record data rather than biological assays) and from Liquid Biopsy (advanced clinical "
+            "hardware and high-complexity molecular platforms in specialized settings) by "
+            "covering the broader spectrum of biological detection across primary care, "
+            "POC, clinical labs, and specialized diagnostic settings."
+        ),
+    },
+    "Medical Devices & Precision Diagnostics": {
+        "tagline": "Advanced medical devices and precision molecular platforms for specialist clinical settings",
+        "description": (
+            "Companies developing sophisticated medical devices and high-complexity molecular "
+            "diagnostic tools for specialist or surgical clinical applications. The cluster "
+            "spans liquid biopsy platforms for early cancer detection, single-cell RNA sequencing "
+            "systems, quantitative MRI analytics for joint diagnostics, implantable ophthalmic "
+            "microvalves, mechanical ventilation systems, microfluidic reproductive medicine "
+            "devices, intelligent orthopedic prostheses with embedded sensors, and 3D-printed "
+            "personalized medicines. What unites them is the requirement for clinical-grade "
+            "precision in high-acuity settings where diagnostic accuracy or physical device "
+            "performance is life-critical."
+        ),
+        "boundary": (
+            "Differentiated from Molecular & Clinical Diagnostics (broader spectrum of molecular "
+            "assays and POC tools across primary care and labs) by requiring specialized clinical "
+            "hardware — implants, imaging systems, microfluidic devices — or high-complexity "
+            "molecular platforms deployed in surgical, critical care, or reproductive medicine settings."
+        ),
+    },
+    "Point-of-Care & Home Diagnostics": {
+        "tagline": "Rapid, self-administered diagnostic tools for decentralized and home care settings",
+        "description": (
+            "Companies developing rapid diagnostic tests and connected monitoring devices "
+            "designed for use outside traditional clinical laboratories — at the point of care, "
+            "in pharmacies, or in the home. The shared proposition is accessible diagnostics: "
+            "tests that produce actionable results without requiring specialized laboratory "
+            "infrastructure or trained technicians."
+        ),
+        "boundary": (
+            "Differentiated from Molecular & Clinical Diagnostics (laboratory-grade assays "
+            "requiring trained staff) by centering on decentralized use, simplicity of "
+            "operation, and accessibility as the primary design constraint."
+        ),
+    },
+    "Digital Health & Medtech": {
+        "tagline": "AI platforms for chronic disease management and clinical care navigation",
+        "description": (
+            "Software and AI platforms that augment clinical care management for patients with "
+            "chronic or complex conditions. The cluster spans ABA-based autism care coordination, "
+            "AI medication adherence for chronic disease, predictive analytics for health record "
+            "interoperability, remote maternal health monitoring, and AI diabetes management "
+            "platforms. Unlike the broader Diagnostics theme which centers on biological assays, "
+            "these companies' core value is care pathway optimization and patient engagement "
+            "enabled by AI and digital connectivity."
+        ),
+        "boundary": (
+            "Differentiated from Molecular & Clinical Diagnostics by operating without a "
+            "biological assay as the primary value driver — their insight comes from behavioral "
+            "data, clinical records, and connected device monitoring rather than molecular "
+            "measurement of a biological sample."
+        ),
+    },
+    # ── Food Systems & Alt Proteins ──────────────────────────────────────────
+    "Animal Free": {
+        "tagline": "Precision fermentation producing animal-free dairy proteins, enzymes, and food ingredients",
+        "description": (
+            "Companies producing dairy proteins, functional enzymes, biopreservatives, and "
+            "food ingredients through microbial fermentation — without animal inputs. The "
+            "cluster centers on precision fermentation platforms producing casein, whey, and "
+            "protein analogs; natural biopreservation and antimicrobial formulations that "
+            "extend shelf life; AI-designed proteins that replace synthetic food additives; "
+            "and bioprocess engineering for alternative protein ingredient production. The "
+            "shared proposition is functional food performance equivalent to animal-derived "
+            "inputs, produced through microbial metabolism."
+        ),
+        "boundary": (
+            "Differentiated from Cultivated Meat (which requires mammalian cell culture "
+            "bioreactor infrastructure for animal muscle tissue) by relying on microbial "
+            "fermentation rather than cell culture, and by targeting ingredient markets "
+            "(dairy proteins, enzymes, preservatives) rather than whole meat product formats."
+        ),
+    },
+    "Alternative Proteins & Aquaculture": {
+        "tagline": "Alternative protein systems and sustainable aquaculture across cell culture, insects, and biotech",
+        "description": (
+            "A broad cluster developing diverse alternative protein sources and sustainable "
+            "aquaculture systems. It spans cultivated meat cell culture platforms, insect-based "
+            "protein bioconversion, molecular farming for food-grade proteins in crops, "
+            "recombinant protein production in microalgae, veterinary biotherapeutics and "
+            "probiotics enabling healthier aquaculture, AI-optimized ingredient formulation, "
+            "plant-based meat substitutes, and containerized zero-discharge shrimp farming. "
+            "What unites them is an output that feeds people or animals using less land, water, "
+            "or conventional livestock infrastructure."
+        ),
+        "boundary": (
+            "Differentiated from Animal Free (precision fermentation for dairy and food protein "
+            "analogs via microbial metabolism) and from Functional Ingredients & Novel Foods "
+            "(preservation and functional ingredient enhancement) by encompassing the full "
+            "alternative protein production system — cultivated meat, insect protein, aquaculture "
+            "biotech, and the veterinary health stack enabling sustainable protein systems."
+        ),
+    },
+    "Functional Ingredients & Novel Foods": {
+        "tagline": "Fermentation-derived ingredients, bioactives, and natural biopreservation for food systems",
+        "description": (
+            "Companies developing novel food ingredients, bioactives, and biopreservation "
+            "systems that improve nutritional profile, extend shelf life, or replace synthetic "
+            "additives using biological processes. The cluster spans precision fermentation for "
+            "alternative proteins and flavor ingredients, AI-designed antioxidant systems, "
+            "nanoencapsulated functional ingredients, edible antimicrobial coatings for fresh "
+            "produce, microalgae-derived proteins and astaxanthin, RNA-based bioactive extracts, "
+            "plant-cell biotechnology for food ingredients, and natural prebiotic compounds. "
+            "The shared proposition is biological or natural functional performance inside "
+            "the food formulation — added nutritional value, cleaner label, or longer freshness."
+        ),
+        "boundary": (
+            "Differentiated from Animal Free (specifically fermentation-produced animal-free "
+            "proteins and dairy analogs) and from Cultivated Meat (whole meat alternative "
+            "formats) by centering on functional food ingredient enhancement and biopreservation "
+            "across a broader range of food application areas."
+        ),
+    },
+    "Marine Biotech & Aquaculture Ingredients": {
+        "tagline": "Marine biology and microbial fermentation producing bioactives and proteins for aquaculture",
+        "description": (
+            "A tight cluster of companies, predominantly Chilean, applying marine biology, "
+            "fungal fermentation, and probiotic science to the aquaculture and food ingredient "
+            "markets. The group produces antimicrobial peptides from bee biology for food "
+            "biopreservation, marine probiotic consortia for salmon larval health, mycoprotein "
+            "ingredients from Chilean macroalgae, and probiotic bacterial consortia reducing "
+            "antibiotic use in salmon and sea bass farming. Latin America's aquaculture "
+            "intensity — especially Chile's salmon industry — creates a localized market for "
+            "marine-derived biological inputs and bioactives that few other ecosystems address."
+        ),
+        "boundary": (
+            "Differentiated from Animal Free (which targets fermentation-produced dairy and "
+            "protein ingredients for human food markets) by centering on marine-derived and "
+            "aquaculture-specific biologicals where the end market is fish health and aquafeed "
+            "rather than direct human food ingredients."
+        ),
+    },
+    # ── Precision Agriculture ────────────────────────────────────────────────
+    "Digital Crop & Livestock Intelligence": {
+        "tagline": "AI, satellite, and sensor platforms for real-time agronomic decision intelligence",
+        "description": (
+            "Companies deploying software, drone imagery, satellite analytics, IoT sensors, "
+            "and AI models to generate real-time agronomic intelligence for crop and livestock "
+            "producers. The cluster spans precision irrigation management, AI-powered pest and "
+            "disease detection, livestock health and production monitoring, drone-based crop "
+            "scouting, satellite yield forecasting, farm operations analytics, and computer "
+            "vision for commodity inspection. These are digital companies whose value creation "
+            "is grounded in reading and interpreting living agricultural systems — specific "
+            "crops, pathogens, or herds — rather than generic farm data infrastructure."
+        ),
+        "boundary": (
+            "Differentiated from Digital AgTech & Agrifintech (farm ERP, agri-credit, and "
+            "logistics without biological coupling) by the requirement that the software "
+            "model reads and interprets a specific living system. Crop physiology monitoring "
+            "belongs here; field financial management software does not."
+        ),
+    },
+    # ── Therapeutics ─────────────────────────────────────────────────────────
+    "Biologics & Drug Delivery": {
+        "tagline": "Biologic drug delivery systems, established immunotherapies, and CRO services for complex therapeutics",
+        "description": (
+            "Companies at the intersection of biologic drug manufacturing and delivery "
+            "engineering: lipid nanoparticle (LNP) formulation platforms for mRNA and gene "
+            "therapy delivery, established biosimilar and monoclonal antibody developers, "
+            "immunotherapy programs targeting cancer via galectin modulation, gene-edited "
+            "organ regeneration approaches, CRO services for biotech R&D, and bioprinting "
+            "systems for pharmaceutical manufacturing. The cluster bridges biologic drug "
+            "production with the delivery and formulation infrastructure enabling "
+            "clinical application."
+        ),
+        "boundary": (
+            "Differentiated from Oncology & CNS Therapeutics (novel therapeutic programs "
+            "targeting specific oncology or neurodegeneration indications) by centering on "
+            "delivery platform technology, established biologic manufacturing, and CRO services "
+            "rather than novel therapeutic mechanism development."
+        ),
+    },
+    "Oncology & CNS Therapeutics": {
+        "tagline": "Novel oncology and neurodegeneration programs across RNA, oligonucleotide, and immunotherapy",
+        "description": (
+            "Companies developing therapeutic programs specifically targeting cancer and "
+            "neurodegenerative diseases using advanced molecular modalities. The cluster spans "
+            "RNA interference and antisense oligonucleotide drugs, cancer immunotherapy "
+            "(therapeutic vaccines, CAR-T, dendritic cell therapy, oncolytic viruses), targeted "
+            "protein degradation, AI-designed peptide and small molecule drug candidates, "
+            "mRNA vaccine platforms, and electromagnetic cancer treatment devices. Most "
+            "companies are at preclinical to Phase II stage, targeting indications where "
+            "Latin America has scientific depth: oncology, neurodegeneration, and "
+            "rare inflammatory disease."
+        ),
+        "boundary": (
+            "Differentiated from Drug Discovery Platforms (AI-driven molecular discovery across "
+            "multiple indication areas) by concentrating specifically on oncology and "
+            "neurodegeneration indications, and by leveraging advanced biologic modalities "
+            "(RNA, oligonucleotides, cell therapy, oncolytic viruses) rather than "
+            "conventional chemistry alone."
+        ),
+    },
+    "Cell Rejuvenation": {
+        "tagline": "Cell therapy, extracellular vesicles, and tissue engineering for regenerative medicine",
+        "description": (
+            "Companies building regenerative medicine capabilities using live cells, extracellular "
+            "vesicles, engineered tissues, and biologic scaffolds. The cluster spans mesenchymal "
+            "stem cell therapies for bone and joint repair, exosome and vesicle-based delivery "
+            "systems for inflammatory and neurological disease, corneal and cardiac tissue "
+            "engineering, bioengineered wound care matrices, nanobody therapeutics, reproductive "
+            "biotech, and psychedelic API production for psychiatric applications. What unites "
+            "these companies is the use of biological cells or cell-derived materials — rather "
+            "than synthetic small molecules — as the therapeutic agent or scaffold."
+        ),
+        "boundary": (
+            "Differentiated from Cancer Neurodegenerative (which may also use cell therapy but "
+            "centers on specific oncology/neurodegeneration indications) by centering on the "
+            "regenerative and tissue repair modality — healing, replacing, or rebuilding damaged "
+            "tissue or organ function — across ophthalmology, cardiology, orthopedics, "
+            "wound care, and chronic inflammatory disease."
+        ),
+    },
+    "Drug Discovery Platforms": {
+        "tagline": "AI-driven small molecule discovery, gene delivery, and first-in-class therapeutic programs",
+        "description": (
+            "Companies developing novel small molecule drugs and gene delivery systems through "
+            "AI-guided molecular design, bioinformatics, and computational chemistry. The "
+            "cluster spans first-in-class TMEM-channel modulators, AI microRNA-regulating "
+            "compounds, plant-knowledge-graph-assisted drug discovery, deep learning-based "
+            "virtual screening platforms, glycan-drug conjugates, metal oxide nanoparticle "
+            "gene delivery, adenoviral vector vaccines for neglected tropical diseases, and "
+            "recombinant biologic drugs. The common thread is molecular engineering — designing "
+            "specific chemical entities to interact with defined biological targets."
+        ),
+        "boundary": (
+            "Differentiated from Oncology & CNS Therapeutics (which includes small molecules "
+            "within specific oncology/neurodegeneration indications and biologic modalities) "
+            "by spanning multiple indication areas and centering on the molecular discovery "
+            "platform and chemistry methodology rather than a specific therapeutic area."
+        ),
+    },
+    "Neurotechnology & Phage Therapy": {
+        "tagline": "Bacteriophage therapeutics and neuromodulation bypassing conventional pharmacology",
+        "description": (
+            "A small cluster spanning two frontier therapeutic modalities that bypass "
+            "conventional drug chemistry: bacteriophage-based products for controlling bacterial "
+            "infections in agriculture and food systems, and an embedded brain-computer interface "
+            "for treatment-resistant depression. Phage therapy uses viruses to precisely target "
+            "bacteria without antibiotics; the BCI uses electrical stimulation to directly "
+            "modulate neural circuits. Both replace pharmacological compounds with biological "
+            "or bioelectronic mechanisms to achieve therapeutic outcomes."
+        ),
+        "boundary": (
+            "Differentiated from Small Molecule and Cancer Neurodegenerative by operating "
+            "outside conventional drug chemistry — neither phage therapy nor brain-computer "
+            "interfaces rely on a pharmacological compound binding to a receptor; they use "
+            "biological agents or bioelectronic signals directly."
+        ),
+    },
+    "Tissue Engineering & Bioprinting": {
+        "tagline": "Tissue engineering, bioprinting, and ex-vivo organ systems for transplantation and surgery",
+        "description": (
+            "Companies engineering functional tissue and organ constructs using bioprinting, "
+            "biomimetic scaffolds, extracellular matrix biofabrication, and ex-vivo organ "
+            "preservation systems. The cluster spans 3D bioprinting platforms for prosthetics "
+            "and implantable tissue, biomimetic tissue engineering for regenerative medicine, "
+            "lyophilized extracellular matrix biofabrication for surgical use, and bioprocesses "
+            "for organ preservation and ex-vivo organ management. The shared goal is replicating "
+            "or preserving the structural and functional complexity of human tissue — beyond "
+            "simple cell therapies to engineered tissue architecture."
+        ),
+        "boundary": (
+            "Differentiated from Cell Rejuvenation (which uses cells, vesicles, and biologic "
+            "scaffolds in injectable or systemic therapeutic formats) by requiring 3D structural "
+            "integrity: these companies engineer tissue constructs that replicate organ-level "
+            "architecture for implantation, surgical use, or transplantation."
+        ),
+    },
+    # ── Biomanufacturing ─────────────────────────────────────────────────────
+    "Precision Fermentation": {
+        "tagline": "Digital twins, AI models, and programmable biology platforms for industrial bioprocess optimization",
+        "description": (
+            "Companies building the software and AI infrastructure that makes industrial "
+            "fermentation and bioprocessing more predictable, scalable, and efficient. The "
+            "cluster spans AI-powered digital twins for bioprocess scale-up, IoT-integrated "
+            "fermentation monitoring systems, programmable biological platforms for rapid "
+            "protein and molecule prototyping, and DNA sequencing-based microbial risk mapping "
+            "for food and pharmaceutical manufacturing. These companies provide the intelligence "
+            "layer for biological production — enabling operators to anticipate process "
+            "deviations, optimize yield, and reduce the time from lab to commercial scale."
+        ),
+        "boundary": (
+            "Differentiated from the broader Biomanufacturing theme (which includes cell-free "
+            "expression, enzyme platforms, and physical bioreactor infrastructure) by focusing "
+            "specifically on the computational and data layer — AI, digital twins, and analytics "
+            "— rather than biological production capability itself."
+        ),
+    },
+}
+
+# ── Write output ──────────────────────────────────────────────────────────────
+def main():
+    payload = {
+        "generated_at": datetime.datetime.now().isoformat(),
+        "source": "curated — scripts/write_descriptions.py",
+        "theme_descriptions": THEME_DESCRIPTIONS,
+        "cluster_descriptions": CLUSTER_DESCRIPTIONS,
+    }
+
+    js = (
+        "// Auto-generated by scripts/write_descriptions.py — do not edit manually.\n"
+        "// To update: edit the dictionaries in the script and re-run.\n"
+        "window.THEME_CLUSTER_DESCRIPTIONS = "
+        + json.dumps(payload, ensure_ascii=False, indent=2)
+        + ";\n"
+    )
+
+    OUT.write_text(js, encoding="utf-8")
+    print(f"Written: {OUT}")
+    print(f"  {len(THEME_DESCRIPTIONS)} themes, {len(CLUSTER_DESCRIPTIONS)} clusters")
+
+
+if __name__ == "__main__":
+    main()
