@@ -14,6 +14,7 @@ from __future__ import annotations
 
 import json
 import pathlib
+import re
 import sqlite3
 from datetime import datetime, timezone
 
@@ -38,6 +39,33 @@ def _verdict(value: float, ok: float, warn: float, higher_is_better: bool = True
 def _line(verdict: str, label: str, detail: str) -> None:
     icon = {GREEN: "+", AMBER: "!", RED: "X"}[verdict]
     print(f"  {icon} [{verdict.strip():<4}] {label:<46} {detail}")
+
+
+def _find_zombie_pages(root: pathlib.Path, db_mtime: float) -> list[str]:
+    """Pages linked from pilot/index.html that serve a *-data.js bundle more
+    than 30 days older than the DB, without a `<!-- LEGACY-FROZEN -->` marker
+    telling the reader the data is a frozen snapshot on purpose."""
+    index_html = root / "pilot" / "index.html"
+    if not index_html.exists():
+        return []
+    index_text = index_html.read_text(encoding="utf-8", errors="replace")
+    linked_pages = sorted(set(re.findall(r'href="\./([\w.-]+\.html)"', index_text)))
+    warnings: list[str] = []
+    for page_name in linked_pages:
+        page_path = root / "pilot" / page_name
+        if not page_path.exists():
+            continue
+        page_text = page_path.read_text(encoding="utf-8", errors="replace")
+        if "<!-- LEGACY-FROZEN -->" in page_text:
+            continue
+        for bundle_name in re.findall(r'<script src="\./([\w.-]+-data\.js)', page_text):
+            bundle_path = root / "pilot" / bundle_name
+            if not bundle_path.exists():
+                continue
+            age_d = (db_mtime - bundle_path.stat().st_mtime) / 86400
+            if age_d > 30:
+                warnings.append(f"{page_name}→{bundle_name} ({age_d:.0f}d)")
+    return warnings
 
 
 def run(db_path: pathlib.Path) -> None:
@@ -121,6 +149,11 @@ def run(db_path: pathlib.Path) -> None:
         _line(_verdict(len(stale), 0, 2, higher_is_better=False),
               "Bundles JS desactualizados (>7d vs DB)", f"{len(stale)}" + (f" — {', '.join(stale[:4])}…" if stale else ""))
     _line(GREEN, "Última entrada de audit_log", last_audit[:16] or "(vacío)")
+    zombies = _find_zombie_pages(ROOT, db_mtime)
+    if zombies:
+        _line(AMBER, "Páginas con bundle >30d sin marca legacy", f"{len(zombies)} — {', '.join(zombies[:4])}" + ("…" if len(zombies) > 4 else ""))
+    else:
+        _line(GREEN, "Páginas con bundle >30d sin marca legacy", "0")
 
     # ── Matchmaker ───────────────────────────────────────────────────────
     print("\n  Matchmaker")

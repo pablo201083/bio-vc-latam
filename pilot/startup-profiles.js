@@ -1,8 +1,6 @@
 (function () {
   const payload = window.deepRepairData ? window.deepRepairData(window.STARTUP_PROFILES_DATA || {}) : (window.STARTUP_PROFILES_DATA || {});
   const themeSystem = window.THEME_SYSTEM || null;
-  const semanticSingle = window.deepRepairData ? window.deepRepairData(window.SEMANTIC_SINGLE_LEVEL_DATA || {}) : (window.SEMANTIC_SINGLE_LEVEL_DATA || {});
-  const semanticAssignments = (semanticSingle.recommended && semanticSingle.recommended.assignmentsById) || {};
   const profiles = payload.profiles || [];
   const queue = payload.queue || [];
   const summary = payload.summary || {};
@@ -75,8 +73,7 @@
   }
 
   function profileTheme(profile) {
-    const semantic = semanticAssignments[profile.startup_id];
-    return semantic ? semantic.semantic_single_theme : profile.macro_theme;
+    return profile.macro_theme;
   }
 
   function addMetric(label, value) {
