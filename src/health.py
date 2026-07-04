@@ -22,7 +22,7 @@ from src.utils import load_csv
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 
-GREEN, AMBER, RED = "OK ", "WARN", "BAD "
+GREEN, AMBER, RED, INFO = "OK ", "WARN", "BAD ", "INFO"
 
 
 def _verdict(value: float, ok: float, warn: float, higher_is_better: bool = True) -> str:
@@ -37,7 +37,7 @@ def _verdict(value: float, ok: float, warn: float, higher_is_better: bool = True
 
 
 def _line(verdict: str, label: str, detail: str) -> None:
-    icon = {GREEN: "+", AMBER: "!", RED: "X"}[verdict]
+    icon = {GREEN: "+", AMBER: "!", RED: "X", INFO: "i"}[verdict]
     print(f"  {icon} [{verdict.strip():<4}] {label:<46} {detail}")
 
 
@@ -117,7 +117,7 @@ def run(db_path: pathlib.Path) -> None:
     )
     _line(_verdict(n_mm, 25, 60, higher_is_better=False), "Conflictos theme↔cluster aislados", f"{n_mm} genuinos (+{n_expected} sub-cluster esperados; meta <25)")
     _line(_verdict(n_orphans, 15, 40, higher_is_better=False), "Orphan entities (sin startup_extended)", str(n_orphans))
-    _line(_verdict(n_missing_core, 0, 50, higher_is_better=False), "Includes sin fila en tabla startups", f"{n_missing_core} (gap de schema: el universo vive solo en startup_extended)")
+    _line(INFO, "Includes sin fila en tabla startups", f"{n_missing_core} — universo vive en startup_extended (decisión 2026-07, ver quality/decision_startup_extended_master.md)")
 
     # ── Frescura ─────────────────────────────────────────────────────────
     print("\n  Frescura")
