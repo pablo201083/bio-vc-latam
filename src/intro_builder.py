@@ -253,6 +253,18 @@ def _compute_synergy_startup_investor(startup: dict, inv: dict) -> dict:
     return {"score": round(score, 3), "signals": signals}
 
 
+_THEME_ORG_KEYWORDS = {
+    "Bioinputs & Crop Resilience": ["biotech","agtech","agro","bio","crop","agriculture"],
+    "Precision Agriculture": ["agro","farm","tech","precision","agriculture"],
+    "Nature & Ecosystem Tech": ["biotech","climate","nature","eco","ambiente"],
+    "Food Systems & Alt Proteins": ["food","aliment","biotech","agtech"],
+    "Biomanufacturing & Platform Technologies": ["biotech","industrial","bio","manufactur"],
+    "Biomaterials & Green Chemistry": ["biotech","bio","material","circular"],
+    "Therapeutics": ["pharma","biotech","medicina","health","terapia"],
+    "Diagnostics & Devices": ["health","diagnos","medtech","biotech"],
+}
+
+
 def _compute_synergy_startup_org(startup: dict, org: dict) -> dict:
     signals = []
     score = 0.0
@@ -261,16 +273,6 @@ def _compute_synergy_startup_org(startup: dict, org: dict) -> dict:
     focus_area = org.get("focus_area", "").lower()
 
     # Theme-focus alignment
-    _THEME_ORG_KEYWORDS = {
-        "Bioinputs & Crop Resilience": ["biotech","agtech","agro","bio","crop","agriculture"],
-        "Precision Agriculture": ["agro","farm","tech","precision","agriculture"],
-        "Nature & Ecosystem Tech": ["biotech","climate","nature","eco","ambiente"],
-        "Food Systems & Alt Proteins": ["food","aliment","biotech","agtech"],
-        "Biomanufacturing & Platform Technologies": ["biotech","industrial","bio","manufactur"],
-        "Biomaterials & Green Chemistry": ["biotech","bio","material","circular"],
-        "Therapeutics": ["pharma","biotech","medicina","health","terapia"],
-        "Diagnostics & Devices": ["health","diagnos","medtech","biotech"],
-    }
     kws = _THEME_ORG_KEYWORDS.get(st_theme, [])
     matches = sum(1 for kw in kws if kw in focus_area)
     if matches >= 2:
@@ -347,6 +349,18 @@ def _compute_synergy_startup_eso(startup: dict, eso: dict) -> dict:
     return {"score": round(score, 3), "signals": signals}
 
 
+_CORP_THEME_KEYWORDS = {
+    "Bioinputs & Crop Resilience": ["biocontrol","biostimul","crop","agriculture","agri","biopestic","biofert","semilla","seed"],
+    "Precision Agriculture": ["precision","sensor","agri","crop monitoring","data farm"],
+    "Nature & Ecosystem Tech": ["sustainable","carbon","regenerat","resource","environment"],
+    "Food Systems & Alt Proteins": ["ingredient","food","protein","ferment","novel","cellular"],
+    "Biomanufacturing & Platform Technologies": ["bioproces","enzyme","ferment","industrial","manufactur"],
+    "Biomaterials & Green Chemistry": ["material","plastic","biobased","polymer","circular"],
+    "Therapeutics": ["drug","therapeut","pharma","biologic","gene","cell therapy"],
+    "Diagnostics & Devices": ["diagnos","test","detection","biomark","molecular"],
+}
+
+
 def _compute_synergy_startup_corporate(startup: dict, corp: dict) -> dict:
     signals = []
     score = 0.0
@@ -356,16 +370,6 @@ def _compute_synergy_startup_corporate(startup: dict, corp: dict) -> dict:
     combined = f"{demand_profile} {industry}"
 
     st_theme = startup.get("theme", "")
-    _CORP_THEME_KEYWORDS = {
-        "Bioinputs & Crop Resilience": ["biocontrol","biostimul","crop","agriculture","agri","biopestic","biofert","semilla","seed"],
-        "Precision Agriculture": ["precision","sensor","agri","crop monitoring","data farm"],
-        "Nature & Ecosystem Tech": ["sustainable","carbon","regenerat","resource","environment"],
-        "Food Systems & Alt Proteins": ["ingredient","food","protein","ferment","novel","cellular"],
-        "Biomanufacturing & Platform Technologies": ["bioproces","enzyme","ferment","industrial","manufactur"],
-        "Biomaterials & Green Chemistry": ["material","plastic","biobased","polymer","circular"],
-        "Therapeutics": ["drug","therapeut","pharma","biologic","gene","cell therapy"],
-        "Diagnostics & Devices": ["diagnos","test","detection","biomark","molecular"],
-    }
     kws = _CORP_THEME_KEYWORDS.get(st_theme, [])
     matches = sum(1 for kw in kws if kw in combined)
     if matches >= 3:

@@ -1,5 +1,4 @@
 # Core data
-duckdb>=1.1.0
 pandas>=2.2.0
 ftfy>=6.2.0
 
@@ -7,11 +6,12 @@ ftfy>=6.2.0
 networkx>=3.3
 python-louvain>=0.16
 
-# Semantic intelligence (T3) — embeddings + clustering
+# Semantic intelligence (T3) - embeddings + clustering
 numpy>=1.26
 umap-learn>=0.5.6
 hdbscan>=0.8.40
 scikit-learn>=1.5
+sentence-transformers>=3.0
 
 # Anthropic SDK (only for one-shot embedding in T3, no agents)
 anthropic>=0.40.0
@@ -20,3 +20,6 @@ anthropic>=0.40.0
 datasette>=0.65
 datasette-cluster-map>=0.18
 datasette-vega>=0.6
+
+# Dev
+pytest>=8

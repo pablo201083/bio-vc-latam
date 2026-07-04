@@ -326,23 +326,25 @@ def _load_org_meta(conn: sqlite3.Connection) -> dict[str, dict]:
     return orgs
 
 
+# Direct theme keyword matching for org focus-text fit — map theme → relevant keywords
+_ORG_FOCUS_THEME_KEYWORDS: dict[str, list[str]] = {
+    "Bioinputs & Crop Resilience":             ["bioinputs","biocontrol","agro","agtech","crop","biostimulant","biologicos","semilla","agriculture","agri"],
+    "Precision Agriculture":                        ["farm","agro","precision","sensing","datos agro","agriculture","crop monitoring"],
+    "Nature & Ecosystem Tech":                  ["climate","nature","ecosystem","regenerat","resource","carbon","water","biodiversidad","ambiental"],
+    "Food Systems & Alt Proteins":              ["food","aliment","proteina","ferment","alt protein","novel ingredient","foodtech","cellular"],
+    "Biomanufacturing & Platform Technologies":  ["biomanuf","ferment","bioprocess","enzima","biorefin","metabolic","industrial biotech","synthetic bio"],
+    "Biomaterials & Green Chemistry":          ["biomaterial","bioplastic","circular","sustainable material","biobased","polymer","bioquimica"],
+    "Therapeutics":                             ["therapeut","terapia","drug","oncolog","cancer","cell therapy","gene","immunother","regenerat","farmaco"],
+    "Diagnostics & Devices":              ["diagnost","medtech","health","clinical","molecular","genomi","sequencing","salud","biomark"],
+}
+
+
 def _org_theme_overlap(startup_theme: str, focus_text: str) -> float:
     """Score how well a startup's bio_theme_primary fits an org's focus text."""
     if not startup_theme or not focus_text:
         return 0.0
     focus_lower = focus_text.lower()
-    # Direct theme keyword matching — map theme → relevant keywords
-    _THEME_KEYWORDS: dict[str, list[str]] = {
-        "Bioinputs & Crop Resilience":             ["bioinputs","biocontrol","agro","agtech","crop","biostimulant","biologicos","semilla","agriculture","agri"],
-        "Precision Agriculture":                        ["farm","agro","precision","sensing","datos agro","agriculture","crop monitoring"],
-        "Nature & Ecosystem Tech":                  ["climate","nature","ecosystem","regenerat","resource","carbon","water","biodiversidad","ambiental"],
-        "Food Systems & Alt Proteins":              ["food","aliment","proteina","ferment","alt protein","novel ingredient","foodtech","cellular"],
-        "Biomanufacturing & Platform Technologies":  ["biomanuf","ferment","bioprocess","enzima","biorefin","metabolic","industrial biotech","synthetic bio"],
-        "Biomaterials & Green Chemistry":          ["biomaterial","bioplastic","circular","sustainable material","biobased","polymer","bioquimica"],
-        "Therapeutics":                             ["therapeut","terapia","drug","oncolog","cancer","cell therapy","gene","immunother","regenerat","farmaco"],
-        "Diagnostics & Devices":              ["diagnost","medtech","health","clinical","molecular","genomi","sequencing","salud","biomark"],
-    }
-    keywords = _THEME_KEYWORDS.get(startup_theme, [])
+    keywords = _ORG_FOCUS_THEME_KEYWORDS.get(startup_theme, [])
     matches = sum(1 for kw in keywords if kw in focus_lower)
     if matches >= 3: return 0.90
     if matches == 2: return 0.65

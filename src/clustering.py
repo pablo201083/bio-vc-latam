@@ -474,18 +474,6 @@ def run_hdbscan(reduced_10d: np.ndarray, params: dict) -> tuple[np.ndarray, np.n
     return labels, probs.astype(np.float32)
 
 
-_BIO_THEME_SHORT: dict[str | None, str] = {
-    "Soil & Microbiome":          "Soil & Microbiome",
-    "Crop & Plant Engineering":   "Crop & Plant Eng.",
-    "Fermentation Economy":       "Fermentation Economy",
-    "Protein Transition":         "Protein Transition",
-    "Human Diagnostics & Access": "Human Diagnostics",
-    "Therapeutics":               "Therapeutics",
-    "Planetary Biology":          "Planetary Biology",
-    "Bio x Data":                 "Bio x Data",
-}
-
-
 def auto_label_clusters(
     labels: np.ndarray,
     texts: list[str],
@@ -585,7 +573,7 @@ def auto_label_clusters(
             dominant_theme, dominant_n = most_common[0]
             dominant_pct = dominant_n / total
 
-            base = _BIO_THEME_SHORT.get(dominant_theme, dominant_theme or "Mixed")
+            base = dominant_theme or "Mixed"
 
             # Top TF-IDF term as disambiguator (prefer bigrams — more specific)
             bigrams = [t for t in selected if " " in t]
