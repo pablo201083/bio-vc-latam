@@ -392,21 +392,43 @@ def _load_investor_meta(conn: sqlite3.Connection) -> dict[str, dict]:
     return out
 
 
+def _normalize_rows(m: np.ndarray) -> np.ndarray:
+    norms = np.linalg.norm(m, axis=1, keepdims=True)
+    norms[norms < 1e-9] = 1.0
+    return (m / norms).astype(np.float32)
+
+
 def _build_portfolio_profile(
     inv: dict,
     startups: dict[str, dict],
     vecs: np.ndarray,
     idx: dict[str, int],
 ) -> dict:
-    """Compute portfolio centroid + theme/country sets for one investor."""
+    """Compute portfolio centroid + theme/country sets for one investor.
+
+    Portfolios with more than 8 startups also get sub-centroids (k-means on
+    the portfolio's own vectors): a single global mean blurs together
+    distinct thematic sub-bets (e.g. a fund with both an agro sleeve and a
+    health sleeve), which is exactly what makes large-portfolio matches look
+    diffuse. `_score_pair` takes the best-fitting sub-centroid instead of the
+    one blurred average.
+    """
     mapped = [s for s in inv["portfolio"] if s in startups]
     vec_rows = [vecs[idx[s]] for s in mapped if s in idx]
 
     centroid: np.ndarray | None = None
+    sub_centroids: list[np.ndarray] | None = None
     if vec_rows:
-        c = np.mean(np.stack(vec_rows), axis=0)
+        stacked = np.stack(vec_rows)
+        c = np.mean(stacked, axis=0)
         norm = float(np.linalg.norm(c))
         centroid = (c / norm).astype(np.float32) if norm > 1e-9 else c.astype(np.float32)
+
+        if len(vec_rows) > 8:
+            k = min(4, max(2, len(vec_rows) // 8))
+            from sklearn.cluster import KMeans
+            km = KMeans(n_clusters=k, n_init=10, random_state=42).fit(stacked)
+            sub_centroids = list(_normalize_rows(km.cluster_centers_))
 
     themes: set[str] = set()
     countries: set[str] = set()
@@ -419,6 +441,7 @@ def _build_portfolio_profile(
     return {
         "mapped":    set(mapped),
         "centroid":  centroid,
+        "sub_centroids": sub_centroids,
         "themes":    themes,
         "countries": countries,
         "size":      len(mapped),
@@ -440,11 +463,18 @@ def _score_pair(
     """
     w_sem, w_th, w_co = _get_weights(profile["size"])
 
-    # Semantic similarity vs portfolio centroid
+    # Semantic similarity vs portfolio centroid — best-fitting sub-centroid
+    # when the portfolio is large enough to have been split (>8 startups),
+    # otherwise the single global centroid.
     sim = 0.0
-    if profile["centroid"] is not None and startup["id"] in idx:
+    sim_is_subportfolio = False
+    if startup["id"] in idx:
         sv = vecs[idx[startup["id"]]]
-        sim = float(np.dot(sv, profile["centroid"]))
+        if profile.get("sub_centroids"):
+            sim = max(float(np.dot(sv, c)) for c in profile["sub_centroids"])
+            sim_is_subportfolio = True
+        elif profile["centroid"] is not None:
+            sim = float(np.dot(sv, profile["centroid"]))
         sim = max(0.0, sim)
 
     # Theme score — graduated via adjacency table
@@ -503,7 +533,8 @@ def _score_pair(
     if best_th_reason:
         reasons.append(best_th_reason)
     if sim > 0.50:
-        reasons.append(f"semantic:{sim:.2f}")
+        reasons.append(f"semantic_fit_subportfolio:{sim:.2f}" if sim_is_subportfolio
+                        else f"semantic_fit:{sim:.2f}")
     if stage_reason:
         reasons.append(stage_reason)
     if ticket_reason:
@@ -1088,13 +1119,31 @@ def _print_latent(result: dict) -> None:
 #  4. CALIBRATION AUDIT
 # ─────────────────────────────────────────────────────────────────────────────
 
+_PORTFOLIO_BUCKETS = [
+    ("2-5", 2, 5),
+    ("6-15", 6, 15),
+    ("16-40", 16, 40),
+    (">40", 41, None),
+]
+
+
+def _portfolio_bucket(size: int) -> str:
+    for label, lo, hi in _PORTFOLIO_BUCKETS:
+        if size >= lo and (hi is None or size <= hi):
+            return label
+    return "<2"
+
+
 def _calibration_audit(db_path: Path = DB_PATH) -> dict:
     """Self-test: for each investor, verify their own portfolio startups
     rank highly among all candidates.
 
     For each investor with portfolio_size >= 3, scores their actual portfolio
     startups against all include startups, then checks what rank each portfolio
-    startup achieves. Outputs precision@k and mean_rank.
+    startup achieves. Outputs precision@k and mean_rank, overall and broken
+    down by portfolio-size bucket (2-5, 6-15, 16-40, >40) so improvements can
+    be measured where they matter — large funds, not the trivially-easy
+    3-4-startup portfolios.
     """
     conn = sqlite3.connect(db_path)
     startups = _load_startup_meta(conn)
@@ -1115,6 +1164,7 @@ def _calibration_audit(db_path: Path = DB_PATH) -> dict:
     sum_rank = 0
     top3 = top5 = top10 = 0
     per_investor = []
+    bucket_stats: dict[str, dict] = {}
 
     for iid, inv in qualified.items():
         prof = _build_portfolio_profile(inv, startups, vecs, idx)
@@ -1129,12 +1179,20 @@ def _calibration_audit(db_path: Path = DB_PATH) -> dict:
         rank_map = {sid: i + 1 for i, (sid, _) in enumerate(all_scores)}
 
         ranks = [rank_map.get(s, len(startups)) for s in mapped_in_include]
+        bucket = _portfolio_bucket(prof["size"])
+        bstat = bucket_stats.setdefault(bucket, {
+            "investors": 0, "portfolio_startups_scored": 0,
+            "sum_rank": 0, "top3": 0, "top5": 0, "top10": 0,
+        })
+        bstat["investors"] += 1
         for r in ranks:
             sum_rank += r
             total_portfolio_startups += 1
-            if r <= 3:  top3 += 1
-            if r <= 5:  top5 += 1
-            if r <= 10: top10 += 1
+            bstat["sum_rank"] += r
+            bstat["portfolio_startups_scored"] += 1
+            if r <= 3:  top3 += 1; bstat["top3"] += 1
+            if r <= 5:  top5 += 1; bstat["top5"] += 1
+            if r <= 10: top10 += 1; bstat["top10"] += 1
 
         inv_prec5 = sum(1 for r in ranks if r <= 5) / len(ranks)
         per_investor.append({
@@ -1150,6 +1208,21 @@ def _calibration_audit(db_path: Path = DB_PATH) -> dict:
     if total_portfolio_startups == 0:
         return {"error": "No qualified investors found."}
 
+    by_bucket = {}
+    for label, _, _ in _PORTFOLIO_BUCKETS:
+        b = bucket_stats.get(label)
+        if not b or b["portfolio_startups_scored"] == 0:
+            continue
+        n = b["portfolio_startups_scored"]
+        by_bucket[label] = {
+            "investors":     b["investors"],
+            "portfolio_startups_scored": n,
+            "precision@3":   round(b["top3"] / n, 3),
+            "precision@5":   round(b["top5"] / n, 3),
+            "precision@10":  round(b["top10"] / n, 3),
+            "mean_rank":     round(b["sum_rank"] / n, 1),
+        }
+
     report = {
         "investors_evaluated": len(qualified),
         "portfolio_startups_scored": total_portfolio_startups,
@@ -1157,6 +1230,7 @@ def _calibration_audit(db_path: Path = DB_PATH) -> dict:
         "precision@5":  round(top5  / total_portfolio_startups, 3),
         "precision@10": round(top10 / total_portfolio_startups, 3),
         "mean_rank":    round(sum_rank / total_portfolio_startups, 1),
+        "by_portfolio_size_bucket": by_bucket,
         "worst_investors": per_investor[:5],
         "best_investors":  per_investor[-5:],
     }

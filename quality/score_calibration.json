@@ -1,45 +1,79 @@
 {
   "investors_evaluated": 37,
   "portfolio_startups_scored": 456,
-  "precision@3": 0.134,
-  "precision@5": 0.169,
-  "precision@10": 0.235,
-  "mean_rank": 150.7,
+  "precision@3": 0.162,
+  "precision@5": 0.226,
+  "precision@10": 0.285,
+  "mean_rank": 136.4,
+  "by_portfolio_size_bucket": {
+    "2-5": {
+      "investors": 14,
+      "portfolio_startups_scored": 51,
+      "precision@3": 0.608,
+      "precision@5": 0.647,
+      "precision@10": 0.647,
+      "mean_rank": 103.0
+    },
+    "6-15": {
+      "investors": 15,
+      "portfolio_startups_scored": 135,
+      "precision@3": 0.215,
+      "precision@5": 0.326,
+      "precision@10": 0.4,
+      "mean_rank": 135.8
+    },
+    "16-40": {
+      "investors": 7,
+      "portfolio_startups_scored": 166,
+      "precision@3": 0.066,
+      "precision@5": 0.127,
+      "precision@10": 0.211,
+      "mean_rank": 145.1
+    },
+    ">40": {
+      "investors": 1,
+      "portfolio_startups_scored": 104,
+      "precision@3": 0.029,
+      "precision@5": 0.048,
+      "precision@10": 0.077,
+      "mean_rank": 139.6
+    }
+  },
   "worst_investors": [
     {
       "investor_id": "Antom",
       "investor_name": "Antom",
       "portfolio_size": 10,
       "precision@5": 0.0,
-      "mean_rank": 229.7
-    },
-    {
-      "investor_id": "kamay_ventures",
-      "investor_name": "Kamay Ventures",
-      "portfolio_size": 10,
-      "precision@5": 0.0,
-      "mean_rank": 148.8
+      "mean_rank": 224.9
     },
     {
       "investor_id": "SF500",
       "investor_name": "SF500",
       "portfolio_size": 28,
-      "precision@5": 0.0,
-      "mean_rank": 295.4
+      "precision@5": 0.036,
+      "mean_rank": 279.6
     },
     {
       "investor_id": "GridX",
       "investor_name": "GridX",
       "portfolio_size": 104,
-      "precision@5": 0.019,
-      "mean_rank": 154.5
+      "precision@5": 0.048,
+      "mean_rank": 139.6
     },
     {
-      "investor_id": "AIR Capital",
-      "investor_name": "AIR Capital",
+      "investor_id": "the_yield_lab_latam",
+      "investor_name": "The Yield Lab LATAM",
+      "portfolio_size": 23,
+      "precision@5": 0.087,
+      "mean_rank": 134.9
+    },
+    {
+      "investor_id": "sp_ventures",
+      "investor_name": "SP Ventures",
       "portfolio_size": 27,
-      "precision@5": 0.037,
-      "mean_rank": 174.3
+      "precision@5": 0.111,
+      "mean_rank": 102.3
     }
   ],
   "best_investors": [

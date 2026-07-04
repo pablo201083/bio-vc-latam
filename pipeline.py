@@ -649,6 +649,11 @@ def cmd_calibrate_scores(args: argparse.Namespace) -> None:
     print(f"  Precision@5                : {report['precision@5']:.1%}")
     print(f"  Precision@10               : {report['precision@10']:.1%}")
     print(f"  Mean rank portfolio startup: {report['mean_rank']:.1f}")
+    print(f"\n  Por tamano de portfolio:")
+    print(f"    {'bucket':<8} {'inversores':>10} {'p@3':>7} {'p@5':>7} {'p@10':>7} {'mean_rank':>10}")
+    for label, b in report.get("by_portfolio_size_bucket", {}).items():
+        print(f"    {label:<8} {b['investors']:>10} {b['precision@3']:>7.1%} {b['precision@5']:>7.1%} "
+              f"{b['precision@10']:>7.1%} {b['mean_rank']:>10.1f}")
     print(f"\n  Peores inversores (menor precision@5):")
     for inv in report["worst_investors"]:
         print(f"    {inv['investor_name']:<35} P@5={inv['precision@5']:.2f}  mean_rank={inv['mean_rank']}")
