@@ -4,17 +4,17 @@ alta,country_sweep,BO,"9 includes, 0 parches, 0 inversores locales con edges",Ba
 alta,country_sweep,EC,"7 includes, 0 parches, 0 inversores locales con edges",Barrido dirigido de portfolios y aceleradoras bio de EC. Puntos de entrada ya en DB: (sin inversores locales en DB)
 alta,country_sweep,DO,"4 includes, 0 parches, 0 inversores locales con edges",Barrido dirigido de portfolios y aceleradoras bio de DO. Puntos de entrada ya en DB: (sin inversores locales en DB)
 alta,country_sweep,GT,"3 includes, 1 parches, 0 inversores locales con edges",Barrido dirigido de portfolios y aceleradoras bio de GT. Puntos de entrada ya en DB: (sin inversores locales en DB)
-alta,country_sweep,PE,"3 includes, 2 parches, 1 inversores locales con edges",Barrido dirigido de portfolios y aceleradoras bio de PE. Puntos de entrada ya en DB: salkantay_ventures (5 edges)
+alta,country_sweep,PE,"3 includes, 2 parches, 1 inversores locales con edges",Barrido dirigido de portfolios y aceleradoras bio de PE. Puntos de entrada ya en DB: salkantay_ventures (3 edges)
 alta,country_sweep,VE,"2 includes, 0 parches, 0 inversores locales con edges",Barrido dirigido de portfolios y aceleradoras bio de VE. Puntos de entrada ya en DB: (sin inversores locales en DB)
 alta,country_sweep,PA,"1 includes, 1 parches, 0 inversores locales con edges",Barrido dirigido de portfolios y aceleradoras bio de PA. Puntos de entrada ya en DB: (sin inversores locales en DB)
 alta,country_sweep,PY,"0 includes, 0 parches, 0 inversores locales con edges",Barrido dirigido de portfolios y aceleradoras bio de PY. Puntos de entrada ya en DB: (sin inversores locales en DB)
+media,portfolio_sweep,fundacion_para_el_progreso_de_la_medicina,solo 1 edge(s) en DB; país ?? (fuera_de_foco),Revisar portfolio público completo de fundacion_para_el_progreso_de_la_medicina y mapear startups bio faltantes
+media,portfolio_sweep,genesis_consortium,solo 1 edge(s) en DB; país ?? (fuera_de_foco),Revisar portfolio público completo de genesis_consortium y mapear startups bio faltantes
+media,portfolio_sweep,kairetsu_angels,solo 1 edge(s) en DB; país ?? (fuera_de_foco),Revisar portfolio público completo de kairetsu_angels y mapear startups bio faltantes
 media,portfolio_sweep,sillicon_catalyst,solo 1 edge(s) en DB; país ?? (fuera_de_foco),Revisar portfolio público completo de sillicon_catalyst y mapear startups bio faltantes
 media,portfolio_sweep,thrive,solo 1 edge(s) en DB; país ?? (fuera_de_foco),Revisar portfolio público completo de thrive y mapear startups bio faltantes
-media,portfolio_sweep,fundacion_para_el_progreso_de_la_medicina,solo 2 edge(s) en DB; país ?? (fuera_de_foco),Revisar portfolio público completo de fundacion_para_el_progreso_de_la_medicina y mapear startups bio faltantes
-media,portfolio_sweep,genesis_consortium,solo 2 edge(s) en DB; país ?? (fuera_de_foco),Revisar portfolio público completo de genesis_consortium y mapear startups bio faltantes
-media,portfolio_sweep,kairetsu_angels,solo 2 edge(s) en DB; país ?? (fuera_de_foco),Revisar portfolio público completo de kairetsu_angels y mapear startups bio faltantes
-media,portfolio_sweep,vectr,solo 2 edge(s) en DB; país ?? (fuera_de_foco),Revisar portfolio público completo de vectr y mapear startups bio faltantes
-media,portfolio_sweep,vx_fund,solo 2 edge(s) en DB; país ?? (fuera_de_foco),Revisar portfolio público completo de vx_fund y mapear startups bio faltantes
+media,portfolio_sweep,vectr,solo 1 edge(s) en DB; país ?? (fuera_de_foco),Revisar portfolio público completo de vectr y mapear startups bio faltantes
+media,portfolio_sweep,vx_fund,solo 1 edge(s) en DB; país ?? (fuera_de_foco),Revisar portfolio público completo de vx_fund y mapear startups bio faltantes
 media,portfolio_sweep,axventures_pymar,solo 1 edge(s) en DB; país AR (well_mapped),Revisar portfolio público completo de axventures_pymar y mapear startups bio faltantes
 media,portfolio_sweep,bago,solo 1 edge(s) en DB; país AR (well_mapped),Revisar portfolio público completo de bago y mapear startups bio faltantes
 media,portfolio_sweep,la_turbina,solo 1 edge(s) en DB; país AR (well_mapped),Revisar portfolio público completo de la_turbina y mapear startups bio faltantes
@@ -28,6 +28,7 @@ media,portfolio_sweep,arar_capital,solo 1 edge(s) en DB; país BR (well_mapped),
 media,portfolio_sweep,atlantico,solo 1 edge(s) en DB; país BR (well_mapped),Revisar portfolio público completo de atlantico y mapear startups bio faltantes
 media,portfolio_sweep,canary_vc,solo 1 edge(s) en DB; país BR (well_mapped),Revisar portfolio público completo de canary_vc y mapear startups bio faltantes
 media,portfolio_sweep,cazanga,solo 1 edge(s) en DB; país BR (well_mapped),Revisar portfolio público completo de cazanga y mapear startups bio faltantes
+media,portfolio_sweep,cnpq,solo 1 edge(s) en DB; país BR (well_mapped),Revisar portfolio público completo de cnpq y mapear startups bio faltantes
 media,portfolio_sweep,cventures_primus,solo 1 edge(s) en DB; país BR (well_mapped),Revisar portfolio público completo de cventures_primus y mapear startups bio faltantes
 media,portfolio_sweep,dynamo,solo 1 edge(s) en DB; país BR (well_mapped),Revisar portfolio público completo de dynamo y mapear startups bio faltantes
 media,portfolio_sweep,eurofarma,solo 1 edge(s) en DB; país BR (well_mapped),Revisar portfolio público completo de eurofarma y mapear startups bio faltantes
@@ -54,17 +55,25 @@ media,portfolio_sweep,kayyak_ventures,solo 1 edge(s) en DB; país CL (well_mappe
 media,portfolio_sweep,venturance,solo 1 edge(s) en DB; país CL (well_mapped),Revisar portfolio público completo de venturance y mapear startups bio faltantes
 media,portfolio_sweep,fondo_alerce,solo 2 edge(s) en DB; país CL (well_mapped),Revisar portfolio público completo de fondo_alerce y mapear startups bio faltantes
 media,portfolio_sweep,caf,solo 1 edge(s) en DB; país CO (partial),Revisar portfolio público completo de caf y mapear startups bio faltantes
-media,portfolio_sweep,carao_ventures,solo 4 edge(s) en DB; país CR (partial),Revisar portfolio público completo de carao_ventures y mapear startups bio faltantes
+media,portfolio_sweep,carao_ventures,solo 3 edge(s) en DB; país CR (partial),Revisar portfolio público completo de carao_ventures y mapear startups bio faltantes
 media,portfolio_sweep,porsche_ag,solo 1 edge(s) en DB; país DE (fuera_de_foco),Revisar portfolio público completo de porsche_ag y mapear startups bio faltantes
 media,portfolio_sweep,eatable_adventures,solo 3 edge(s) en DB; país ES (fuera_de_foco),Revisar portfolio público completo de eatable_adventures y mapear startups bio faltantes
+media,portfolio_sweep,afd_france,solo 1 edge(s) en DB; país FR (fuera_de_foco),Revisar portfolio público completo de afd_france y mapear startups bio faltantes
 media,portfolio_sweep,biomerieux,solo 1 edge(s) en DB; país FR (fuera_de_foco),Revisar portfolio público completo de biomerieux y mapear startups bio faltantes
+media,portfolio_sweep,institut_pasteur_lab,solo 1 edge(s) en DB; país FR (fuera_de_foco),Revisar portfolio público completo de institut_pasteur_lab y mapear startups bio faltantes
+media,portfolio_sweep,brinc,solo 1 edge(s) en DB; país HK (fuera_de_foco),Revisar portfolio público completo de brinc y mapear startups bio faltantes
 media,portfolio_sweep,horizons_ventures,solo 1 edge(s) en DB; país HK (fuera_de_foco),Revisar portfolio público completo de horizons_ventures y mapear startups bio faltantes
 media,portfolio_sweep,morningside_group,solo 1 edge(s) en DB; país HK (fuera_de_foco),Revisar portfolio público completo de morningside_group y mapear startups bio faltantes
-media,portfolio_sweep,brinc,solo 2 edge(s) en DB; país HK (fuera_de_foco),Revisar portfolio público completo de brinc y mapear startups bio faltantes
 media,portfolio_sweep,hatch_blue,solo 1 edge(s) en DB; país IE (fuera_de_foco),Revisar portfolio público completo de hatch_blue y mapear startups bio faltantes
 media,portfolio_sweep,dalus_capital,solo 4 edge(s) en DB; país MX (partial),Revisar portfolio público completo de dalus_capital y mapear startups bio faltantes
-media,portfolio_sweep,hatch,solo 3 edge(s) en DB; país NO (fuera_de_foco),Revisar portfolio público completo de hatch y mapear startups bio faltantes
+media,portfolio_sweep,hatch,solo 2 edge(s) en DB; país NO (fuera_de_foco),Revisar portfolio público completo de hatch y mapear startups bio faltantes
+media,portfolio_sweep,salkantay_ventures,solo 3 edge(s) en DB; país PE (under_explored),Revisar portfolio público completo de salkantay_ventures y mapear startups bio faltantes
 media,portfolio_sweep,500_latam,solo 1 edge(s) en DB; país US (fuera_de_foco),Revisar portfolio público completo de 500_latam y mapear startups bio faltantes
+media,portfolio_sweep,conservation_international,solo 1 edge(s) en DB; país US (fuera_de_foco),Revisar portfolio público completo de conservation_international y mapear startups bio faltantes
+media,portfolio_sweep,creative_ventures,solo 1 edge(s) en DB; país US (fuera_de_foco),Revisar portfolio público completo de creative_ventures y mapear startups bio faltantes
+media,portfolio_sweep,draper_associates,solo 1 edge(s) en DB; país US (fuera_de_foco),Revisar portfolio público completo de draper_associates y mapear startups bio faltantes
+media,portfolio_sweep,draper_university,solo 1 edge(s) en DB; país US (fuera_de_foco),Revisar portfolio público completo de draper_university y mapear startups bio faltantes
+media,portfolio_sweep,future_ventures,solo 1 edge(s) en DB; país US (fuera_de_foco),Revisar portfolio público completo de future_ventures y mapear startups bio faltantes
 media,portfolio_sweep,gef,solo 1 edge(s) en DB; país US (fuera_de_foco),Revisar portfolio público completo de gef y mapear startups bio faltantes
 media,portfolio_sweep,hawthorne_food_ventures,solo 1 edge(s) en DB; país US (fuera_de_foco),Revisar portfolio público completo de hawthorne_food_ventures y mapear startups bio faltantes
 media,portfolio_sweep,ifc,solo 1 edge(s) en DB; país US (fuera_de_foco),Revisar portfolio público completo de ifc y mapear startups bio faltantes
@@ -72,20 +81,14 @@ media,portfolio_sweep,lavca,solo 1 edge(s) en DB; país US (fuera_de_foco),Revis
 media,portfolio_sweep,left_lane_capital,solo 1 edge(s) en DB; país US (fuera_de_foco),Revisar portfolio público completo de left_lane_capital y mapear startups bio faltantes
 media,portfolio_sweep,lowercarbon_capital,solo 1 edge(s) en DB; país US (fuera_de_foco),Revisar portfolio público completo de lowercarbon_capital y mapear startups bio faltantes
 media,portfolio_sweep,melek_capital,solo 1 edge(s) en DB; país US (fuera_de_foco),Revisar portfolio público completo de melek_capital y mapear startups bio faltantes
+media,portfolio_sweep,ospraie,solo 1 edge(s) en DB; país US (fuera_de_foco),Revisar portfolio público completo de ospraie y mapear startups bio faltantes
 media,portfolio_sweep,union_square_ventures,solo 1 edge(s) en DB; país US (fuera_de_foco),Revisar portfolio público completo de union_square_ventures y mapear startups bio faltantes
 media,portfolio_sweep,wivet,solo 1 edge(s) en DB; país US (fuera_de_foco),Revisar portfolio público completo de wivet y mapear startups bio faltantes
 media,portfolio_sweep,1200_vc,solo 2 edge(s) en DB; país US (fuera_de_foco),Revisar portfolio público completo de 1200_vc y mapear startups bio faltantes
-media,portfolio_sweep,conservation_international,solo 2 edge(s) en DB; país US (fuera_de_foco),Revisar portfolio público completo de conservation_international y mapear startups bio faltantes
-media,portfolio_sweep,creative_ventures,solo 2 edge(s) en DB; país US (fuera_de_foco),Revisar portfolio público completo de creative_ventures y mapear startups bio faltantes
-media,portfolio_sweep,draper_associates,solo 2 edge(s) en DB; país US (fuera_de_foco),Revisar portfolio público completo de draper_associates y mapear startups bio faltantes
-media,portfolio_sweep,draper_university,solo 2 edge(s) en DB; país US (fuera_de_foco),Revisar portfolio público completo de draper_university y mapear startups bio faltantes
-media,portfolio_sweep,future_ventures,solo 2 edge(s) en DB; país US (fuera_de_foco),Revisar portfolio público completo de future_ventures y mapear startups bio faltantes
 media,portfolio_sweep,general_catalyst,solo 2 edge(s) en DB; país US (fuera_de_foco),Revisar portfolio público completo de general_catalyst y mapear startups bio faltantes
 media,portfolio_sweep,idb_invest,solo 2 edge(s) en DB; país US (fuera_de_foco),Revisar portfolio público completo de idb_invest y mapear startups bio faltantes
 media,portfolio_sweep,lightsmith_group,solo 2 edge(s) en DB; país US (fuera_de_foco),Revisar portfolio público completo de lightsmith_group y mapear startups bio faltantes
-media,portfolio_sweep,ospraie,solo 2 edge(s) en DB; país US (fuera_de_foco),Revisar portfolio público completo de ospraie y mapear startups bio faltantes
 media,portfolio_sweep,y_combinator,solo 2 edge(s) en DB; país US (fuera_de_foco),Revisar portfolio público completo de y_combinator y mapear startups bio faltantes
 media,portfolio_sweep,corteva_catalyst,solo 3 edge(s) en DB; país US (fuera_de_foco),Revisar portfolio público completo de corteva_catalyst y mapear startups bio faltantes
 media,diversify_sources,Precision Agriculture × AR,"8 startups, 87% viene de '(sin provenance)'","Buscar la celda vía fuentes independientes del parche dominante (medios, otras carteras, registros)"
 media,diversify_sources,Precision Agriculture × CR,"7 startups, 100% viene de '(sin provenance)'","Buscar la celda vía fuentes independientes del parche dominante (medios, otras carteras, registros)"
-media,diversify_sources,Therapeutics × MX,"5 startups, 100% viene de '(sin provenance)'","Buscar la celda vía fuentes independientes del parche dominante (medios, otras carteras, registros)"
